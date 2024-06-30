@@ -1,0 +1,1247 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc9040a --dep-file=Appl\\GenData\\src\\.Mcu_PBcfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\mak -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Make -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteAnalyzer -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteAnalyzer\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache\\-148438436 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Platform -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Platform\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=Appl\\GenData\\src\\Mcu_PBcfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\src\\Mcu_PBcfg.src ..\\Appl\\GenData\\src\\Mcu_PBcfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\GenData\\src\\Mcu_PBcfg.c'
+
+	
+$TC162
+	
+	.sdecl	'.rodata.Mcu_PBcfg.Mcu_kPllDistributionConfiguration_Config_0',data,rom,cluster('Mcu_kPllDistributionConfiguration_Config_0')
+	.sect	'.rodata.Mcu_PBcfg.Mcu_kPllDistributionConfiguration_Config_0'
+	.align	4
+Mcu_kPllDistributionConfiguration_Config_0:	.type	object
+	.size	Mcu_kPllDistributionConfiguration_Config_0,24
+	.word	388170003,768,83886081,50
+	.space	8
+	.sdecl	'.rodata.Mcu_PBcfg.Mcu_kClockConfiguration_Config',data,rom,cluster('Mcu_kClockConfiguration_Config')
+	.sect	'.rodata.Mcu_PBcfg.Mcu_kClockConfiguration_Config'
+	.align	4
+Mcu_kClockConfiguration_Config:	.type	object
+	.size	Mcu_kClockConfiguration_Config,44
+	.byte	161,19
+	.space	2
+	.byte	31,36
+	.space	2
+	.word	10,10,10,10
+	.word	10,10,Mcu_kPllDistributionConfiguration_Config_0
+	.space	4
+	.half	805
+	.space	2
+	.sdecl	'.rodata.Mcu_PBcfg.Mcu_kLowPowerModeConfiguration_Config',data,rom,cluster('Mcu_kLowPowerModeConfiguration_Config')
+	.sect	'.rodata.Mcu_PBcfg.Mcu_kLowPowerModeConfiguration_Config'
+	.align	4
+Mcu_kLowPowerModeConfiguration_Config:	.type	object
+	.size	Mcu_kLowPowerModeConfiguration_Config,28
+	.byte	1
+	.space	27
+	.sdecl	'.rodata.Mcu_PBcfg.Mcu_kGtmClockConfigPtr_Config',data,rom,cluster('Mcu_kGtmClockConfigPtr_Config')
+	.sect	'.rodata.Mcu_PBcfg.Mcu_kGtmClockConfigPtr_Config'
+	.align	4
+Mcu_kGtmClockConfigPtr_Config:	.type	object
+	.size	Mcu_kGtmClockConfigPtr_Config,76
+	.word	8432298,1,1
+	.space	36
+	.word	170,1,1,1
+	.word	1,1,1
+	.sdecl	'.rodata.Mcu_PBcfg.Mcu_kGtmClusterConfigPtr_Config',data,rom,cluster('Mcu_kGtmClusterConfigPtr_Config')
+	.sect	'.rodata.Mcu_PBcfg.Mcu_kGtmClusterConfigPtr_Config'
+	.align	4
+Mcu_kGtmClusterConfigPtr_Config:	.type	object
+	.size	Mcu_kGtmClusterConfigPtr_Config,48
+	.space	48
+	.sdecl	'.rodata.Mcu_PBcfg.Mcu_kGtmConfiguration_Config',data,rom,cluster('Mcu_kGtmConfiguration_Config')
+	.sect	'.rodata.Mcu_PBcfg.Mcu_kGtmConfiguration_Config'
+	.align	4
+Mcu_kGtmConfiguration_Config:	.type	object
+	.size	Mcu_kGtmConfiguration_Config,304
+	.word	Mcu_kGtmClockConfigPtr_Config,Mcu_kGtmClusterConfigPtr_Config,1431655765,1
+	.word	1431655765,1,1431655765,1
+	.word	1431655765,1,1431655765,1
+	.word	1431655765,1,1431655765,1
+	.word	1431655765,1
+	.space	232
+	.sdecl	'.rodata.Mcu_PBcfg.Mcu_Config',data,rom,cluster('Mcu_Config')
+	.sect	'.rodata.Mcu_PBcfg.Mcu_Config'
+	.global	Mcu_Config
+	.align	4
+Mcu_Config:	.type	object
+	.size	Mcu_Config,40
+	.word	Mcu_kClockConfiguration_Config
+	.space	4
+	.word	Mcu_kGtmConfiguration_Config,Mcu_kLowPowerModeConfiguration_Config
+	.space	8
+	.word	-1
+	.space	4
+	.word	1
+	.space	4
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	3557
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\Appl\\GenData\\src\\Mcu_PBcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2,1,3
+	.word	143
+	.byte	4
+	.byte	'__codeptr',0,1,1,1
+	.word	145
+	.byte	5
+	.byte	'unsigned char',0,1,8,4
+	.byte	'boolean',0,2,101,31
+	.word	168
+	.byte	4
+	.byte	'uint8',0,2,104,31
+	.word	168
+	.byte	5
+	.byte	'unsigned short int',0,2,7,4
+	.byte	'uint16',0,2,106,31
+	.word	215
+	.byte	5
+	.byte	'unsigned long int',0,4,7,4
+	.byte	'uint32',0,2,108,31
+	.word	252
+	.byte	5
+	.byte	'unsigned long long int',0,8,7,4
+	.byte	'uint64',0,2,121,30
+	.word	288
+	.byte	4
+	.byte	'Std_ReturnType',0,3,124,15
+	.word	168
+	.byte	4
+	.byte	'Std_TransformerErrorCode',0,3,135,1,15
+	.word	168
+	.byte	4
+	.byte	'Std_TransformerClass',0,3,137,1,15
+	.word	168
+	.byte	5
+	.byte	'unsigned int',0,4,7,4
+	.byte	'unsigned_int',0,4,75,22
+	.word	416
+	.byte	4
+	.byte	'Mcu_ExternalClockConfigType',0,5,212,1,18
+	.word	252
+	.byte	4
+	.byte	'Mcu_ClockType',0,5,217,1,18
+	.word	252
+	.byte	4
+	.byte	'Mcu_RamSectionType',0,5,222,1,18
+	.word	252
+	.byte	6
+	.byte	'void',0,3
+	.word	541
+	.byte	4
+	.byte	'Mcu_RamBaseAdrType',0,5,233,1,18
+	.word	547
+	.byte	4
+	.byte	'Mcu_RamSizeType',0,5,237,1,18
+	.word	252
+	.byte	4
+	.byte	'Mcu_RamPrstDatType',0,5,245,1,19
+	.word	288
+	.byte	7,5,226,2,9,4,8
+	.byte	'Insel',0,1
+	.word	168
+	.byte	2,6,2,35,0,8
+	.byte	'SysPllPDiv',0,1
+	.word	168
+	.byte	3,3,2,35,0,8
+	.byte	'SysPllNDiv',0,2
+	.word	215
+	.byte	7,4,2,35,0,8
+	.byte	'SysPllK2Div',0,1
+	.word	168
+	.byte	3,1,2,35,1,8
+	.byte	'FmPllEn',0,1
+	.word	168
+	.byte	1,0,2,35,1,8
+	.byte	'ModulationAmplitude',0,2
+	.word	215
+	.byte	16,0,2,35,2,0,4
+	.byte	'Mcu_SystemPllConfigType',0,5,235,2,3
+	.word	633
+	.byte	7,5,243,2,9,4,8
+	.byte	'PerPllNDiv',0,1
+	.word	168
+	.byte	7,1,2,35,0,8
+	.byte	'PerPllPDiv',0,2
+	.word	215
+	.byte	3,6,2,35,0,8
+	.byte	'PerPllK2Div',0,1
+	.word	168
+	.byte	3,3,2,35,1,8
+	.byte	'PerPllK3Div',0,1
+	.word	168
+	.byte	3,0,2,35,1,8
+	.byte	'K3DivByPass',0,1
+	.word	168
+	.byte	1,7,2,35,2,8
+	.byte	'Reserved',0,2
+	.word	215
+	.byte	15,0,2,35,2,0,4
+	.byte	'Mcu_PeripheralPllConfigType',0,5,251,2,3
+	.word	807
+	.byte	9,8
+	.word	252
+	.byte	10,1,0,7,5,131,3,9,24,11
+	.byte	'Ccucon0',0
+	.word	252
+	.byte	4,2,35,0,11
+	.byte	'Ccucon1',0
+	.word	252
+	.byte	4,2,35,4,11
+	.byte	'Ccucon2',0
+	.word	252
+	.byte	4,2,35,8,11
+	.byte	'Ccucon5',0
+	.word	252
+	.byte	4,2,35,12,11
+	.byte	'CcuconCpu',0
+	.word	984
+	.byte	8,2,35,16,0,4
+	.byte	'Mcu_PllDistributionConfigType',0,5,143,3,3
+	.word	993
+	.byte	12
+	.word	993
+	.byte	3
+	.word	1126
+	.byte	7,5,151,3,9,44,11
+	.byte	'SystemPllCfg',0
+	.word	633
+	.byte	4,2,35,0,11
+	.byte	'PeripheralPllCfg',0
+	.word	807
+	.byte	4,2,35,4,11
+	.byte	'SysPllK2DivStepUpChangeDelay',0
+	.word	252
+	.byte	4,2,35,8,11
+	.byte	'SysPllK2DivStepDownChangeDelay',0
+	.word	252
+	.byte	4,2,35,12,11
+	.byte	'PeripheralPllK2StepUpChangeDelay',0
+	.word	252
+	.byte	4,2,35,16,11
+	.byte	'PeripheralPllK2StepDownChangeDelay',0
+	.word	252
+	.byte	4,2,35,20,11
+	.byte	'PeripheralPllK3StepUpChangeDelay',0
+	.word	252
+	.byte	4,2,35,24,11
+	.byte	'PeripheralPllK3StepDownChangeDelay',0
+	.word	252
+	.byte	4,2,35,28,11
+	.byte	'PllDistributionCfgPtr',0
+	.word	1131
+	.byte	4,2,35,32,11
+	.byte	'ExternalClockCfg',0
+	.word	252
+	.byte	4,2,35,36,11
+	.byte	'BackupFreqKDiv',0
+	.word	215
+	.byte	2,2,35,40,11
+	.byte	'ConvCtrlBlockConf',0
+	.word	168
+	.byte	1,2,35,42,0,4
+	.byte	'Mcu_ClockConfigType',0,5,177,3,3
+	.word	1136
+	.byte	7,5,184,3,9,16,11
+	.byte	'RamBaseAdrPtr',0
+	.word	552
+	.byte	4,2,35,0,11
+	.byte	'RamSize',0
+	.word	252
+	.byte	4,2,35,4,11
+	.byte	'RamPrstData',0
+	.word	288
+	.byte	8,2,35,8,0,4
+	.byte	'Mcu_RamConfigType',0,5,193,3,3
+	.word	1578
+	.byte	3
+	.word	541
+	.byte	7,5,201,3,9,4,8
+	.byte	'McuMode',0,1
+	.word	168
+	.byte	3,5,2,35,0,8
+	.byte	'EvrcLowPowerMode',0,1
+	.word	168
+	.byte	1,4,2,35,0,8
+	.byte	'Reserved',0,4
+	.word	416
+	.byte	28,0,2,35,0,0,4
+	.byte	'Mcu_ModeEvrcCtrlType',0,5,206,3,3
+	.word	1678
+	.byte	7,5,223,3,9,28,11
+	.byte	'MaxModeEvrcCtrl',0
+	.word	1678
+	.byte	4,2,35,0,11
+	.byte	'Pmswcr0',0
+	.word	252
+	.byte	4,2,35,4,11
+	.byte	'Pmswcr3',0
+	.word	252
+	.byte	4,2,35,8,11
+	.byte	'Pmswcr4',0
+	.word	252
+	.byte	4,2,35,12,11
+	.byte	'Pmswcr5',0
+	.word	252
+	.byte	4,2,35,16,11
+	.byte	'Evruvmon',0
+	.word	252
+	.byte	4,2,35,20,11
+	.byte	'EvrmonCtrl',0
+	.word	252
+	.byte	4,2,35,24,0,4
+	.byte	'Mcu_LowPowerModeType',0,5,242,3,3
+	.word	1782
+	.byte	7,5,250,3,9,8,11
+	.byte	'GtmCmuExtClockNum',0
+	.word	252
+	.byte	4,2,35,0,11
+	.byte	'GtmCmuExtClockDen',0
+	.word	252
+	.byte	4,2,35,4,0,4
+	.byte	'Mcu_GtmExtClkType',0,5,128,4,3
+	.word	1950
+	.byte	9,32
+	.word	252
+	.byte	10,7,0,9,24
+	.word	1950
+	.byte	10,2,0,7,5,135,4,9,76,11
+	.byte	'GtmCmuClockEnable',0
+	.word	252
+	.byte	4,2,35,0,11
+	.byte	'GtmCmuGlobalNumerator',0
+	.word	252
+	.byte	4,2,35,4,11
+	.byte	'GtmCmuGlobalDenominator',0
+	.word	252
+	.byte	4,2,35,8,11
+	.byte	'GtmCmuConfClkCtrl',0
+	.word	2038
+	.byte	32,2,35,12,11
+	.byte	'GtmCmuFixedClkCtrl',0
+	.word	252
+	.byte	4,2,35,44,11
+	.byte	'GtmCmuClsInDiv',0
+	.word	252
+	.byte	4,2,35,48,11
+	.byte	'GtmEclkCtrl',0
+	.word	2047
+	.byte	24,2,35,52,0,4
+	.byte	'Mcu_GtmClockSettingType',0,5,151,4,3
+	.word	2056
+	.byte	7,5,158,4,9,12,11
+	.byte	'GtmCcmCfg',0
+	.word	252
+	.byte	4,2,35,0,11
+	.byte	'GtmCcmConfClockCfg',0
+	.word	252
+	.byte	4,2,35,4,11
+	.byte	'GtmCcmFixedClockCfg',0
+	.word	252
+	.byte	4,2,35,8,0,4
+	.byte	'Mcu_GtmClusterConfigType',0,5,166,4,3
+	.word	2287
+	.byte	7,5,173,4,9,8,11
+	.byte	'TomTgcIntTrigRstCn0',0
+	.word	252
+	.byte	4,2,35,0,11
+	.byte	'TomTgcActTb',0
+	.word	252
+	.byte	4,2,35,4,0,4
+	.byte	'Mcu_GtmTomConfigType',0,5,188,4,3
+	.word	2404
+	.byte	7,5,195,4,9,8,11
+	.byte	'AtomAgcIntTrigRstCn0',0
+	.word	252
+	.byte	4,2,35,0,11
+	.byte	'AtomAgcActTb',0
+	.word	252
+	.byte	4,2,35,4,0,4
+	.byte	'Mcu_GtmAtomConfigType',0,5,210,4,3
+	.word	2491
+	.byte	7,5,217,4,9,8,11
+	.byte	'GtmAdcTrigOut0',0
+	.word	252
+	.byte	4,2,35,0,11
+	.byte	'GtmAdcTrigOut1',0
+	.word	252
+	.byte	4,2,35,4,0,4
+	.byte	'Mcu_GtmAdcTrigType',0,5,221,4,3
+	.word	2581
+	.byte	7,5,225,4,9,8,11
+	.byte	'GtmDsadcTrigOut0',0
+	.word	252
+	.byte	4,2,35,0,11
+	.byte	'GtmDsadcTrigOut1',0
+	.word	252
+	.byte	4,2,35,4,0,4
+	.byte	'Mcu_GtmDsadcTrigType',0,5,229,4,3
+	.word	2664
+	.byte	12
+	.word	2056
+	.byte	3
+	.word	2753
+	.byte	12
+	.word	2287
+	.byte	3
+	.word	2763
+	.byte	9,32
+	.word	2404
+	.byte	10,3,0,9,32
+	.word	2491
+	.byte	10,3,0,9,40
+	.word	2581
+	.byte	10,4,0,9,32
+	.word	2664
+	.byte	10,3,0,9,68
+	.word	252
+	.byte	10,16,0,9,12
+	.word	252
+	.byte	10,2,0,7,5,237,4,9,176,2,11
+	.byte	'GtmClockCfgPtr',0
+	.word	2758
+	.byte	4,2,35,0,11
+	.byte	'GtmClusterCfgPtr',0
+	.word	2768
+	.byte	4,2,35,4,11
+	.byte	'GtmTomCfg',0
+	.word	2773
+	.byte	32,2,35,8,11
+	.byte	'GtmAtomCfg',0
+	.word	2782
+	.byte	32,2,35,40,11
+	.byte	'GtmAdcTrigCfg',0
+	.word	2791
+	.byte	40,2,35,72,11
+	.byte	'GtmDsadcTrigCfg',0
+	.word	2800
+	.byte	32,2,35,112,11
+	.byte	'GtmToutSelCfg',0
+	.word	2809
+	.byte	68,3,35,144,1,11
+	.byte	'GtmToutSelCfgMsk',0
+	.word	2809
+	.byte	68,3,35,212,1,11
+	.byte	'GtmTimInSelCfg',0
+	.word	2818
+	.byte	12,3,35,152,2,11
+	.byte	'GtmTbuCfg',0
+	.word	252
+	.byte	4,3,35,164,2,11
+	.byte	'GtmTomModuleUsage',0
+	.word	215
+	.byte	2,3,35,168,2,11
+	.byte	'GtmAtomModuleUsage',0
+	.word	215
+	.byte	2,3,35,170,2,11
+	.byte	'IsGtmSleepModeEnabled',0
+	.word	168
+	.byte	1,3,35,172,2,0,4
+	.byte	'Mcu_GtmConfigType',0,5,137,5,3
+	.word	2827
+	.byte	12
+	.word	1136
+	.byte	3
+	.word	3184
+	.byte	12
+	.word	1578
+	.byte	3
+	.word	3194
+	.byte	12
+	.word	2827
+	.byte	3
+	.word	3204
+	.byte	12
+	.word	1782
+	.byte	3
+	.word	3214
+	.byte	7,5,147,5,9,40,11
+	.byte	'McuClockSettingPtr',0
+	.word	3189
+	.byte	4,2,35,0,11
+	.byte	'McuRamCfgPtr',0
+	.word	3199
+	.byte	4,2,35,4,11
+	.byte	'McuGtmConfigPtr',0
+	.word	3209
+	.byte	4,2,35,8,11
+	.byte	'McuLowPowerModeCfgPtr',0
+	.word	3219
+	.byte	4,2,35,12,11
+	.byte	'McuResetCfg',0
+	.word	252
+	.byte	4,2,35,16,11
+	.byte	'McuArstDisCfg',0
+	.word	252
+	.byte	4,2,35,20,11
+	.byte	'McuTrapSettingConf0',0
+	.word	252
+	.byte	4,2,35,24,11
+	.byte	'McuEruEiFiltCfg',0
+	.word	252
+	.byte	4,2,35,28,11
+	.byte	'McuNoOfClockCfg',0
+	.word	252
+	.byte	4,2,35,32,11
+	.byte	'McuNoOfRamCfg',0
+	.word	252
+	.byte	4,2,35,36,0,4
+	.byte	'Mcu_ConfigType',0,5,190,5,3
+	.word	3224
+.L20:
+	.byte	12
+	.word	3224
+.L21:
+	.byte	12
+	.word	993
+	.byte	9,44
+	.word	1136
+	.byte	10,0,0
+.L22:
+	.byte	12
+	.word	3517
+.L23:
+	.byte	12
+	.word	1782
+.L24:
+	.byte	12
+	.word	2056
+	.byte	9,48
+	.word	2287
+	.byte	10,3,0
+.L25:
+	.byte	12
+	.word	3541
+.L26:
+	.byte	12
+	.word	2827
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,0,0,3,15,0,73,19,0,0,4,22,0,3,8,58,15,59,15
+	.byte	57,15,73,19,0,0,5,36,0,3,8,11,15,62,15,0,0,6,59,0,3,8,0,0,7,19,1,58,15,59,15,57,15,11,15,0,0,8,13,0,3
+	.byte	8,11,15,73,19,13,15,12,15,56,9,0,0,9,1,1,11,15,73,19,0,0,10,33,0,47,15,0,0,11,13,0,3,8,73,19,11,15,56
+	.byte	9,0,0,12,38,0,73,19,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L28-.L27
+.L27:
+	.half	3
+	.word	.L30-.L29
+.L29:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc',0,0
+	.byte	'..\\Appl\\GenData\\src\\Mcu_PBcfg.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Std_Types.h',0,1,0,0
+	.byte	'Mcal_Compiler.h',0,2,0,0
+	.byte	'Mcu.h',0,3,0,0,0
+.L30:
+.L28:
+	.sdecl	'.debug_info',debug,cluster('Mcu_Config')
+	.sect	'.debug_info'
+.L6:
+	.word	168
+	.half	3
+	.word	.L7
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\src\\Mcu_PBcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'Mcu_Config',0,1,238,3,22
+	.word	.L20
+	.byte	1,5,3
+	.word	Mcu_Config
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Mcu_Config')
+	.sect	'.debug_abbrev'
+.L7:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Mcu_kPllDistributionConfiguration_Config_0')
+	.sect	'.debug_info'
+.L8:
+	.word	198
+	.half	3
+	.word	.L9
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\src\\Mcu_PBcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'Mcu_kPllDistributionConfiguration_Config_0',0,1,69,44
+	.word	.L21
+	.byte	5,3
+	.word	Mcu_kPllDistributionConfiguration_Config_0
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Mcu_kPllDistributionConfiguration_Config_0')
+	.sect	'.debug_abbrev'
+.L9:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('Mcu_kClockConfiguration_Config')
+	.sect	'.debug_info'
+.L10:
+	.word	186
+	.half	3
+	.word	.L11
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\src\\Mcu_PBcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'Mcu_kClockConfiguration_Config',0,1,93,34
+	.word	.L22
+	.byte	5,3
+	.word	Mcu_kClockConfiguration_Config
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Mcu_kClockConfiguration_Config')
+	.sect	'.debug_abbrev'
+.L11:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('Mcu_kLowPowerModeConfiguration_Config')
+	.sect	'.debug_info'
+.L12:
+	.word	194
+	.half	3
+	.word	.L13
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\src\\Mcu_PBcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'Mcu_kLowPowerModeConfiguration_Config',0,1,150,1,36
+	.word	.L23
+	.byte	5,3
+	.word	Mcu_kLowPowerModeConfiguration_Config
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Mcu_kLowPowerModeConfiguration_Config')
+	.sect	'.debug_abbrev'
+.L13:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('Mcu_kGtmClockConfigPtr_Config')
+	.sect	'.debug_info'
+.L14:
+	.word	186
+	.half	3
+	.word	.L15
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\src\\Mcu_PBcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'Mcu_kGtmClockConfigPtr_Config',0,1,172,1,54
+	.word	.L24
+	.byte	5,3
+	.word	Mcu_kGtmClockConfigPtr_Config
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Mcu_kGtmClockConfigPtr_Config')
+	.sect	'.debug_abbrev'
+.L15:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('Mcu_kGtmClusterConfigPtr_Config')
+	.sect	'.debug_info'
+.L16:
+	.word	188
+	.half	3
+	.word	.L17
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\src\\Mcu_PBcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'Mcu_kGtmClusterConfigPtr_Config',0,1,210,1,39
+	.word	.L25
+	.byte	5,3
+	.word	Mcu_kGtmClusterConfigPtr_Config
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Mcu_kGtmClusterConfigPtr_Config')
+	.sect	'.debug_abbrev'
+.L17:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('Mcu_kGtmConfiguration_Config')
+	.sect	'.debug_info'
+.L18:
+	.word	185
+	.half	3
+	.word	.L19
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\src\\Mcu_PBcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'Mcu_kGtmConfiguration_Config',0,1,128,2,32
+	.word	.L26
+	.byte	5,3
+	.word	Mcu_kGtmConfiguration_Config
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Mcu_kGtmConfiguration_Config')
+	.sect	'.debug_abbrev'
+.L19:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+
+; ..\Appl\GenData\src\Mcu_PBcfg.c	     1  /*******************************************************************************
+; ..\Appl\GenData\src\Mcu_PBcfg.c	     2  **                                                                            **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	     3  ** Copyright (C) Infineon Technologies (2021)                                 **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	     4  **                                                                            **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	     5  ** All rights reserved.                                                       **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	     6  **                                                                            **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	     7  ** This document contains proprietary information belonging to Infineon       **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	     8  ** Technologies. Passing on and copying of this document, and communication   **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	     9  ** of its contents is not permitted without prior written authorization.      **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    10  **                                                                            **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    11  ********************************************************************************
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    12  **                                                                            **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    13  **  FILENAME  : Mcu_PBcfg.c                                                   **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    14  **                                                                            **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    15  **  VERSION   : 32.0.0                                                        **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    16  **                                                                            **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    17  **  DATE, TIME: 2024-06-30, 13:45:43       !!!IGNORE-LINE!!!                  **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    18  **                                                                            **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    19  **  GENERATOR : Build b191017-0938           !!!IGNORE-LINE!!!                **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    20  **                                                                            **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    21  **  BSW MODULE DECRIPTION : Mcu.bmd                                           **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    22  **                                                                            **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    23  **  VARIANT   : Variant PB                                                    **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    24  **                                                                            **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    25  **  PLATFORM  : Infineon AURIX2G                                              **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    26  **                                                                            **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    27  **  AUTHOR    : DL-AUTOSAR-Engineering                                        **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    28  **                                                                            **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    29  **  VENDOR    : Infineon Technologies                                         **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    30  **                                                                            **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    31  **  DESCRIPTION  : Mcu configuration generated out of ECUC file               **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    32  **                                                                            **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    33  **  SPECIFICATION(S) : Specification of Mcu Driver, AUTOSAR Release 4.2.2     **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    34  **                     and 4.4.0                                              **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    35  **                                                                            **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    36  **  MAY BE CHANGED BY USER : no                                               **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    37  **                                                                            **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    38  *******************************************************************************/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    39  
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    40  /*******************************************************************************
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    41  **                       Includes                                             **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    42  *******************************************************************************/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    43  /* Include module header file */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    44  #include "Mcu.h"
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    45  /*******************************************************************************
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    46  **                      Private Macro Definitions                             **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    47  *******************************************************************************/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    48  
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    49  /*******************************************************************************
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    50  **                      Global Constant Definitions                           **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    51  *******************************************************************************/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    52  #define MCU_START_SEC_CONFIG_DATA_ASIL_B_GLOBAL_UNSPECIFIED
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    53  /* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    54     without safegaurd. It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    55  #include "Mcu_MemMap.h"
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    56  
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    57  /*
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    58    PLL Distribution configuration structure(s)
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    59    for each clock setting configurations
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    60  */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    61  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    62     in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    63  /* MISRA2012_RULE_5_2_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    64     in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    65  /* MISRA2012_RULE_5_4_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    66     in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    67  /* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    68     in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    69  static const Mcu_PllDistributionConfigType Mcu_kPllDistributionConfiguration_Config_0 =
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    70  {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    71    /* CCUCON0 value */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    72    0x17230113U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    73    /* CCUCON1 value */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    74    0x00000300U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    75    /* CCUCON2 value */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    76    0x05000001U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    77    /* CCUCON5 value */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    78    0x00000032U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    79    /* CCUCON6...CCUCON7 value */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    80    {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    81      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    82      0x00000000U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    83    }
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    84  };
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    85  /*
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    86     Configuration : Mcu_ConfigType
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    87     For Mcu_ConfigType: MCU specific configuration ID
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    88     This id corresponds to the container name of the McuConfiguration.
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    89     Use this as the parameter for API: Mcu_Init
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    90     Container: McuClockSettingConfig
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    91     Multilplicity : 1 - *
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    92  */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    93  static const Mcu_ClockConfigType Mcu_kClockConfiguration_Config[1] =
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    94  {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    95    /*McuClockSettingConfig_0*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    96    {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    97      /* System PLL configuration value */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    98      {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	    99        1U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   100        0U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   101        29U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   102        1U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   103        0U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   104        0U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   105      },
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   106      /* Peripheral PLL configuration value */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   107      {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   108        31U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   109        0U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   110        1U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   111        1U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   112        0U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   113        0U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   114      },
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   115      /* System PLL K2 divider increment step change delay */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   116      10U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   117      /* System PLL K2 divider decrement step change delay */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   118      10U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   119      /* Peripheral PLL K2 divider step change increment */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   120      10U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   121      /* Peripheral PLL K2 divider step change decrement */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   122      10U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   123      /* Peripheral PLL K3 divider step change increment */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   124      10U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   125      /* Peripheral PLL K3 divider step change decrement */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   126      10U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   127      /* PLL clock divider configuration pointer */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   128      &Mcu_kPllDistributionConfiguration_Config_0,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   129      /* External Clock configuration */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   130      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   131      /* Backup frequency K Divider value for both PLLs */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   132      0x0325U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   133      /* Converter Control Phase Synchronization configuration */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   134      0x00U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   135    },/*McuClockReferencePointConfig*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   136  };
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   137  /*
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   138    Ptr to RAM Section in config structure
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   139    Container: McuRamSectorSettingConf
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   140    Multiplicity: 1 - *
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   141    Configuration: RAM Section Id
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   142    This id corresponds to the container name of the McuRAMSettingConfiguration.
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   143    Use this as the parameter for API: Mcu_InitRamSection
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   144  */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   145  
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   146  /*
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   147    Standby Mode config structure for Low Power (Standby) Mode Configuration:
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   148    
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   149  */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   150  static const Mcu_LowPowerModeType  Mcu_kLowPowerModeConfiguration_Config =
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   151  {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   152    /*MaxModeEvrcCtrl value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   153    {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   154      0x1U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   155      0x0U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   156      0U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   157    },
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   158    /* PMSWCR0 Register value */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   159    0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   160    /* PMSWCR3Value  */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   161    0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   162    /* PMSWCR4Value  */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   163    0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   164    /* PMSWCR5Value  */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   165    0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   166    /* EVRUVMONValue  */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   167    0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   168    /* EVRMONCTRLValue  */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   169    0x00000000U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   170  };
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   171  /*Generate configuration structure for GTM Clock config*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   172                  static const Mcu_GtmClockSettingType Mcu_kGtmClockConfigPtr_Config =
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   173  {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   174    /*CMU config clock, external and fixed clock enable - GtmCmuClockEnable*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   175    0x0080aaaaU,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   176    /*CMU global clock numerator - GtmCmuGlobalNumerator*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   177    0x00000001U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   178    /*CMU global clock denominator - GtmCmuGlobalDenominator*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   179    0x00000001U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   180  
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   181    /*CMU config clock_0...7 Numerator and Denominator - GtmCmuConfClkCtrl*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   182    {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   183      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   184      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   185      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   186      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   187      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   188      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   189      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   190      0x00000000U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   191    },
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   192  
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   193    /*CMU fixed clock Divider selection - GtmCmuFixedClkCtrl*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   194      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   195  
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   196    /*GTM cluster input clock divider configuration - GtmCmuClusterInputClockDividerEnable */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   197    0x000000aaU,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   198  
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   199    /* External clock settings - GtmEclkCtrl*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   200    {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   201      /*External Clock_0 disabled - reset value of numerator and denominator*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   202      {1U, 1U},
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   203      /*External Clock_1 disabled - reset value of numerator and denominator*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   204      {1U, 1U},
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   205      /*External Clock_2 disabled - reset value of numerator and denominator*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   206      {1U, 1U}
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   207    }
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   208  };
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   209  /*Generate configuration structure for GTM cluster config*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   210  static const Mcu_GtmClusterConfigType Mcu_kGtmClusterConfigPtr_Config[4] =
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   211  {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   212              
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   213    /*GTM Cluster_0 configuration*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   214    {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   215      /*GTM cluster TIM/TOM/ATOM enable settings*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   216      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   217      /*GTM cluster config clock settings*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   218      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   219      /*GTM cluster fixed clock settings*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   220      0x00000000U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   221    },            
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   222    /*GTM Cluster_1 configuration*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   223    {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   224      /*GTM cluster TIM/TOM/ATOM enable settings*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   225      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   226      /*GTM cluster config clock settings*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   227      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   228      /*GTM cluster fixed clock settings*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   229      0x00000000U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   230    },            
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   231    /*GTM Cluster_2 configuration*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   232    {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   233      /*GTM cluster TIM/TOM/ATOM enable settings*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   234      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   235      /*GTM cluster config clock settings*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   236      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   237      /*GTM cluster fixed clock settings*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   238      0x00000000U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   239    },            
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   240    /*GTM Cluster_3 configuration*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   241    {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   242      /*GTM cluster TIM/TOM/ATOM enable settings*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   243      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   244      /*GTM cluster config clock settings*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   245      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   246      /*GTM cluster fixed clock settings*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   247      0x00000000U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   248    }
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   249  };
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   250  
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   251  /*
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   252   Gtm Configuration structure for module
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   253    Container: Mcu_kGtmConfiguration
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   254    Multiplicity: 1 - *
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   255  */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   256  static const Mcu_GtmConfigType Mcu_kGtmConfiguration_Config =
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   257  {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   258    /* Ptr to GTM clock configuration -  GtmClockCfgPtr */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   259    &Mcu_kGtmClockConfigPtr_Config,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   260    /* Ptr to GTM cluster configuration -  GtmClusterCfgPtr */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   261    Mcu_kGtmClusterConfigPtr_Config,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   262    /*Configuration for TOM global settings*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   263    {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   264      /*Configuration for Tom global settings -  GtmTomCfg*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   265          /*GtmTomGlobalConf_0*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   266          {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   267            /*TomTgcIntTrigRstCn0 value for group0*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   268            0x55555555U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   269            /*TomTgcActTb value for group0*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   270            0x00000001U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   271          },
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   272          {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   273            /*TomTgcIntTrigRstCn1 value for group1*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   274            0x55555555U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   275            /*TomTgcActTb value for group1*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   276            0x00000001U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   277          },        /*GtmTomGlobalConf_1*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   278          {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   279            /*TomTgcIntTrigRstCn0 value for group0*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   280            0x55555555U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   281            /*TomTgcActTb value for group0*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   282            0x00000001U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   283          },
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   284          {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   285            /*TomTgcIntTrigRstCn1 value for group1*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   286            0x55555555U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   287            /*TomTgcActTb value for group1*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   288            0x00000001U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   289          }
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   290    },
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   291    /*Configuration for ATOM global settings*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   292    {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   293      /*Configuration for Atom global settings -  GtmAtomCfg*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   294  
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   295          /*GtmAtomGlobalConf_0*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   296          {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   297            /*AtomTgcIntTrigRstCn0 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   298            0x55555555U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   299            /*AtomTgcActTb value */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   300            0x00000001U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   301          },
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   302          /*GtmAtomGlobalConf_1*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   303          {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   304            /*AtomTgcIntTrigRstCn0 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   305            0x55555555U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   306            /*AtomTgcActTb value */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   307            0x00000001U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   308          },
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   309          /*GtmAtomGlobalConf_2*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   310          {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   311            /*AtomTgcIntTrigRstCn0 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   312            0x55555555U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   313            /*AtomTgcActTb value */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   314            0x00000001U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   315          },
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   316          /*GtmAtomGlobalConf_3*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   317          {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   318            /*AtomTgcIntTrigRstCn0 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   319            0x55555555U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   320            /*AtomTgcActTb value */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   321            0x00000001U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   322          }
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   323    },
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   324  
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   325    /*Configuration for Gtm to Adc trigger settings*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   326    {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   327      /*Configuration of Gtm Adc trigger 0*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   328      {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   329        /*GtmAdcOut0 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   330        0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   331        /*GtmAdcOut1 value */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   332        0x00000000U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   333      },    /*Configuration of Gtm Adc trigger 1*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   334      {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   335        /*GtmAdcOut0 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   336        0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   337        /*GtmAdcOut1 value */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   338        0x00000000U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   339      },    /*Configuration of Gtm Adc trigger 2*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   340      {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   341        /*GtmAdcOut0 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   342        0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   343        /*GtmAdcOut1 value */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   344        0x00000000U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   345      },    /*Configuration of Gtm Adc trigger 3*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   346      {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   347        /*GtmAdcOut0 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   348        0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   349        /*GtmAdcOut1 value */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   350        0x00000000U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   351      },    /*Configuration of Gtm Adc trigger 4*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   352      {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   353        /*GtmAdcOut0 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   354        0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   355        /*GtmAdcOut1 value */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   356        0x00000000U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   357      }  },
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   358    /*Configuration for Gtm to Dsadc trigger settings*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   359    {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   360      /*Configuration of Gtm Dsadc trigger 0*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   361      {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   362        /*GtmDsadcOut0 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   363        0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   364        /*GtmDsadcOut1 value */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   365        0x00000000U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   366      },    /*Configuration of Gtm Dsadc trigger 1*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   367      {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   368        /*GtmDsadcOut0 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   369        0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   370        /*GtmDsadcOut1 value */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   371        0x00000000U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   372      },    /*Configuration of Gtm Dsadc trigger 2*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   373      {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   374        /*GtmDsadcOut0 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   375        0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   376        /*GtmDsadcOut1 value */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   377        0x00000000U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   378      },    /*Configuration of Gtm Dsadc trigger 3*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   379      {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   380        /*GtmDsadcOut0 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   381        0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   382        /*GtmDsadcOut1 value */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   383        0x00000000U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   384      }
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   385    },
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   386    /*Configuration for Timer to Port connections*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   387    {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   388      /*Configuration of ToutSel*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   389      /*Toutsel 0 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   390      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   391      /*Toutsel 1 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   392      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   393      /*Toutsel 2 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   394      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   395      /*Toutsel 3 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   396      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   397      /*Toutsel 4 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   398      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   399      /*Toutsel 5 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   400      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   401      /*Toutsel 6 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   402      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   403      /*Toutsel 7 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   404      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   405      /*Toutsel 8 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   406      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   407      /*Toutsel 9 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   408      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   409      /*Toutsel 10 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   410      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   411      /*Toutsel 11 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   412      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   413      /*Toutsel 12 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   414      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   415      /*Toutsel 13 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   416      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   417      /*Toutsel 14 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   418      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   419      /*Toutsel 15 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   420      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   421      /*Toutsel 16 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   422      0x00000000U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   423    },
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   424    /*Mask for TOUTSEL configuration. SELx used will be generated as 0xF*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   425    {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   426      /*Toutsel 0 mask value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   427      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   428      /*Toutsel 1 mask value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   429      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   430      /*Toutsel 2 mask value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   431      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   432      /*Toutsel 3 mask value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   433      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   434      /*Toutsel 4 mask value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   435      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   436      /*Toutsel 5 mask value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   437      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   438      /*Toutsel 6 mask value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   439      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   440      /*Toutsel 7 mask value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   441      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   442      /*Toutsel 8 mask value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   443      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   444      /*Toutsel 9 mask value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   445      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   446      /*Toutsel 10 mask value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   447      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   448      /*Toutsel 11 mask value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   449      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   450      /*Toutsel 12 mask value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   451      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   452      /*Toutsel 13 mask value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   453      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   454      /*Toutsel 14 mask value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   455      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   456      /*Toutsel 15 mask value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   457      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   458      /*Toutsel 16 mask value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   459      0x00000000U    
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   460    },
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   461    /*Configuration for Port to Timer Connections*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   462    {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   463      /*Configuration of TimInSel*/   
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   464      /*TimInsel 0 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   465      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   466      /*TimInsel 1 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   467      0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   468      /*TimInsel 2 value*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   469      0x00000000U    
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   470    },
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   471    /*Configuration for TBU channel - GtmTbuCfg (GtmTbuChannelConf)*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   472    0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   473    /* TOM modules used configuration */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   474    0x0000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   475    /* ATOM modules used configuration */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   476    0x0000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   477    /* Gtm sleep mode configuration */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   478    (boolean)FALSE
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   479  };
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   480  
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   481  #if (MCU_GPT1_USED == STD_ON) || (MCU_GPT2_USED == STD_ON)
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   482  /* GPT12 Prescalar configuration structure */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   483  static const Mcu_Gpt12ConfigType Mcu_kGpt12PrescalerConfiguration_Config =
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   484  {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   485    /*GPT Block 1 Prescalar */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   486    0x00U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   487    /*GPT Block 2 Prescalar */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   488    0x00U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   489    /*Reserved field initialized to 0*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   490    0x0U
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   491  };
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   492  #endif
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   493  /* Main MCU Configuration Structure */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   494  const Mcu_ConfigType Mcu_Config =
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   495  {
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   496    /*McuModuleConfiguration*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   497    /* MCU clock Configuration Pointer*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   498    Mcu_kClockConfiguration_Config,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   499    /* Ram Section configuration Pointer*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   500    NULL_PTR,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   501    #if (MCU_GTM_USED == STD_ON)
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   502    /* GTM Global Configuration Pointer*/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   503    &Mcu_kGtmConfiguration_Config,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   504    #endif
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   505    /*Ptr to GPT12 Prescaler config structure */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   506    #if ((MCU_GPT1_USED == STD_ON) || (MCU_GPT2_USED == STD_ON))
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   507    &Mcu_kGpt12PrescalerConfiguration_Config,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   508    #endif
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   509    /* Ptr to Standby Mode in config structure */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   510    &Mcu_kLowPowerModeConfiguration_Config,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   511    /* Reset configuration */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   512    0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   513    /* Application Reset Disable configuration */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   514    0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   515    /* Trap configuration */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   516    0xffffffffU,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   517    /*Eru global input filter configuration */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   518    0x00000000U,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   519    /* Total number of Clock settings */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   520    ((Mcu_ClockType)1U),
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   521    /* Total number of RAM Sectors */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   522    ((Mcu_RamSectionType)0U),
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   523    /*GPT12 sleep mode setting */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   524    #if ((MCU_GPT1_USED == STD_ON) || (MCU_GPT2_USED == STD_ON))
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   525    (boolean)FALSE,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   526    #endif
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   527    #if (MCU_CCU60_USED == STD_ON)
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   528    (boolean)FALSE,
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   529    #endif
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   530    #if (MCU_CCU61_USED == STD_ON)
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   531    (boolean)FALSE
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   532    #endif
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   533  };
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   534  /*******************************************************************************
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   535  **                      Global Inline Function Definitions                    **
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   536  *******************************************************************************/
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   537  
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   538  #define MCU_STOP_SEC_CONFIG_DATA_ASIL_B_GLOBAL_UNSPECIFIED
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   539  /* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   540     without safegaurd. It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   541  /* MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header included as per Autosar
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   542     guidelines. */
+; ..\Appl\GenData\src\Mcu_PBcfg.c	   543  #include "Mcu_MemMap.h"
+
+	; Module end

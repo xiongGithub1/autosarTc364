@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="ff55d029-386d-43a2-b3c2-dfef4c7a5e36">
+      <SHORT-NAME>MICROSAR</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="3867323d-21de-486a-ae14-40871ce85127">
+          <SHORT-NAME>BswM_swc</SHORT-NAME>
+          <ELEMENTS>
+            <DATA-TYPE-MAPPING-SET UUID="511b6e88-e6b3-4a64-a631-2ce0803332de">
+              <SHORT-NAME>BswMMappingSet</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">Contains Mapping for ModeDeclarations Groups which are provided by BswM.</L-2>
+              </DESC>
+            </DATA-TYPE-MAPPING-SET>
+          </ELEMENTS>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="b58ac756-17c4-453d-a3ca-04462ca7af45">
+              <SHORT-NAME>ComponentTypes</SHORT-NAME>
+              <ELEMENTS>
+                <SERVICE-SW-COMPONENT-TYPE UUID="d7f08b5b-0112-4004-9af2-910e0bb762b2">
+                  <SHORT-NAME>BswM</SHORT-NAME>
+                  <CATEGORY>SERVICE_COMPONENT</CATEGORY>
+                  <INTERNAL-BEHAVIORS>
+                    <SWC-INTERNAL-BEHAVIOR UUID="b799a903-8eca-4314-ab8d-12eecac095e1">
+                      <SHORT-NAME>BswMInternalBehavior</SHORT-NAME>
+                      <DATA-TYPE-MAPPING-REFS>
+                        <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/MICROSAR/BswM_swc/BswMMappingSet</DATA-TYPE-MAPPING-REF>
+                      </DATA-TYPE-MAPPING-REFS>
+                      <EVENTS>
+                        <TIMING-EVENT UUID="c24bad6e-3939-45e4-96b8-963f71792ece">
+                          <SHORT-NAME>Timer_BswM_MainFunction</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior/BswM_MainFunction</START-ON-EVENT-REF>
+                          <PERIOD>0.01</PERIOD>
+                        </TIMING-EVENT>
+                      </EVENTS>
+                      <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                      <RUNNABLES>
+                        <RUNNABLE-ENTITY UUID="54cd0a5d-28ea-41ba-afe6-f10a5749d3eb">
+                          <SHORT-NAME>BswM_MainFunction</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>BswM_MainFunction</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                      </RUNNABLES>
+                      <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                    </SWC-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </SERVICE-SW-COMPONENT-TYPE>
+                <SWC-IMPLEMENTATION UUID="38784ef3-049b-48c3-a3c8-fb69d07d80e7">
+                  <SHORT-NAME>BswMImplementation</SHORT-NAME>
+                  <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+                  <RESOURCE-CONSUMPTION UUID="e249cf08-b190-4c95-8df4-3e04bd950406">
+                    <SHORT-NAME>BswMResourceConsumption</SHORT-NAME>
+                    <MEMORY-SECTIONS>
+                      <MEMORY-SECTION UUID="c53725e6-851e-4592-92d7-74fb9e768353">
+                        <SHORT-NAME>BswM_START_SEC_CODE</SHORT-NAME>
+                        <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/CODE</SW-ADDRMETHOD-REF>
+                        <SYMBOL>CODE</SYMBOL>
+                      </MEMORY-SECTION>
+                      <MEMORY-SECTION UUID="790c6e35-3cc1-4f52-93eb-65fabf886df9">
+                        <SHORT-NAME>BswM_START_SEC_CONST_UNSPECIFIED</SHORT-NAME>
+                        <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
+                        <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/CONST</SW-ADDRMETHOD-REF>
+                        <SYMBOL>CONST_UNSPECIFIED</SYMBOL>
+                      </MEMORY-SECTION>
+                      <MEMORY-SECTION UUID="10a471f3-7dfb-4ee8-b24d-3e6fec45ce63">
+                        <SHORT-NAME>BswM_START_SEC_VAR_NOINIT_UNSPECIFIED</SHORT-NAME>
+                        <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
+                        <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NO_INIT</SW-ADDRMETHOD-REF>
+                        <SYMBOL>VAR_NOINIT_UNSPECIFIED</SYMBOL>
+                      </MEMORY-SECTION>
+                      <MEMORY-SECTION UUID="2dfe0c3f-22b1-40a2-82e4-eb6a8878c5a2">
+                        <SHORT-NAME>BswM_START_SEC_VAR_INIT_UNSPECIFIED</SHORT-NAME>
+                        <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
+                        <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_INIT</SW-ADDRMETHOD-REF>
+                        <SYMBOL>VAR_INIT_UNSPECIFIED</SYMBOL>
+                      </MEMORY-SECTION>
+                      <MEMORY-SECTION UUID="103938d3-c981-489d-994e-e77787446bf2">
+                        <SHORT-NAME>BswM_START_SEC_VAR_ZERO_INIT_UNSPECIFIED</SHORT-NAME>
+                        <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
+                        <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_CLEARED</SW-ADDRMETHOD-REF>
+                        <SYMBOL>VAR_ZERO_INIT_UNSPECIFIED</SYMBOL>
+                      </MEMORY-SECTION>
+                    </MEMORY-SECTIONS>
+                  </RESOURCE-CONSUMPTION>
+                  <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior</BEHAVIOR-REF>
+                </SWC-IMPLEMENTATION>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

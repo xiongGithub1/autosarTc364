@@ -1,0 +1,433 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc16648a --dep-file=Appl\\Source\\.BswM_Callout_Stubs.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\mak -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Make -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteAnalyzer -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteAnalyzer\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache\\-148438436 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Platform -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Platform\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=Appl\\Source\\BswM_Callout_Stubs.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\Source\\BswM_Callout_Stubs.src ..\\Appl\\Source\\BswM_Callout_Stubs.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\Source\\BswM_Callout_Stubs.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.BswM_Callout_Stubs.BswM_AL_SetProgrammableInterrupts',code,cluster('BswM_AL_SetProgrammableInterrupts')
+	.sect	'.text.BswM_Callout_Stubs.BswM_AL_SetProgrammableInterrupts'
+	.align	2
+	
+	.global	BswM_AL_SetProgrammableInterrupts
+
+; ..\Appl\Source\BswM_Callout_Stubs.c	     1  /**********************************************************************************************************************
+; ..\Appl\Source\BswM_Callout_Stubs.c	     2   *  COPYRIGHT
+; ..\Appl\Source\BswM_Callout_Stubs.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\Source\BswM_Callout_Stubs.c	     4   *  \verbatim
+; ..\Appl\Source\BswM_Callout_Stubs.c	     5   *
+; ..\Appl\Source\BswM_Callout_Stubs.c	     6   *                 This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\Appl\Source\BswM_Callout_Stubs.c	     7   *                 Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\Appl\Source\BswM_Callout_Stubs.c	     8   *                 All other rights remain with Vector Informatik GmbH.
+; ..\Appl\Source\BswM_Callout_Stubs.c	     9   *  \endverbatim
+; ..\Appl\Source\BswM_Callout_Stubs.c	    10   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\Source\BswM_Callout_Stubs.c	    11   *  LICENSE
+; ..\Appl\Source\BswM_Callout_Stubs.c	    12   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\Source\BswM_Callout_Stubs.c	    13   *            Module: BswM
+; ..\Appl\Source\BswM_Callout_Stubs.c	    14   *           Program: MSR_Vector_SLP4
+; ..\Appl\Source\BswM_Callout_Stubs.c	    15   *          Customer: China Lithium Battery Technology Co., Ltd.
+; ..\Appl\Source\BswM_Callout_Stubs.c	    16   *       Expiry Date: 2025-08-26
+; ..\Appl\Source\BswM_Callout_Stubs.c	    17   *  Ordered Derivat.: SAK-TC387QP-160F300S AE
+; ..\Appl\Source\BswM_Callout_Stubs.c	    18   *    License Scope : The usage is restricted to CBD2200508_D00
+; ..\Appl\Source\BswM_Callout_Stubs.c	    19   *
+; ..\Appl\Source\BswM_Callout_Stubs.c	    20   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\Source\BswM_Callout_Stubs.c	    21   *  FILE DESCRIPTION
+; ..\Appl\Source\BswM_Callout_Stubs.c	    22   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\Source\BswM_Callout_Stubs.c	    23   *              File: BswM_Callout_Stubs.c
+; ..\Appl\Source\BswM_Callout_Stubs.c	    24   *   Generation Time: 2024-06-29 19:55:15
+; ..\Appl\Source\BswM_Callout_Stubs.c	    25   *           Project: last364 - Version 1.0
+; ..\Appl\Source\BswM_Callout_Stubs.c	    26   *          Delivery: CBD2200508_D00
+; ..\Appl\Source\BswM_Callout_Stubs.c	    27   *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
+; ..\Appl\Source\BswM_Callout_Stubs.c	    28   *
+; ..\Appl\Source\BswM_Callout_Stubs.c	    29   *
+; ..\Appl\Source\BswM_Callout_Stubs.c	    30   *********************************************************************************************************************/
+; ..\Appl\Source\BswM_Callout_Stubs.c	    31  
+; ..\Appl\Source\BswM_Callout_Stubs.c	    32  /**********************************************************************************************************************
+; ..\Appl\Source\BswM_Callout_Stubs.c	    33   ! BETA VERSION                                                                                                       !
+; ..\Appl\Source\BswM_Callout_Stubs.c	    34   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\Appl\Source\BswM_Callout_Stubs.c	    35   ! This version of DaVinci Configurator Classic and/or the related Basic Software Package is BETA software.               !
+; ..\Appl\Source\BswM_Callout_Stubs.c	    36   ! BETA Software is basically operable, but not sufficiently tested, verified and/or qualified for use in series      !
+; ..\Appl\Source\BswM_Callout_Stubs.c	    37   ! production and/or in vehicles operating on public or non-public roads.                                             !
+; ..\Appl\Source\BswM_Callout_Stubs.c	    38   ! In particular, without limitation, BETA Software may cause unpredictable ECU behavior, may not provide all         !
+; ..\Appl\Source\BswM_Callout_Stubs.c	    39   ! functions necessary for use in series production and/or may not comply with quality requirements which are         !
+; ..\Appl\Source\BswM_Callout_Stubs.c	    40   ! necessary according to the state of the art. BETA Software must not be used in series production.                  !
+; ..\Appl\Source\BswM_Callout_Stubs.c	    41   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\Appl\Source\BswM_Callout_Stubs.c	    42  **********************************************************************************************************************/
+; ..\Appl\Source\BswM_Callout_Stubs.c	    43  
+; ..\Appl\Source\BswM_Callout_Stubs.c	    44  
+; ..\Appl\Source\BswM_Callout_Stubs.c	    45  /**********************************************************************************************************************
+; ..\Appl\Source\BswM_Callout_Stubs.c	    46   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK User Version>                           DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\BswM_Callout_Stubs.c	    47   *********************************************************************************************************************/
+; ..\Appl\Source\BswM_Callout_Stubs.c	    48  
+; ..\Appl\Source\BswM_Callout_Stubs.c	    49  /**********************************************************************************************************************
+; ..\Appl\Source\BswM_Callout_Stubs.c	    50   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\BswM_Callout_Stubs.c	    51   *********************************************************************************************************************/
+; ..\Appl\Source\BswM_Callout_Stubs.c	    52  
+; ..\Appl\Source\BswM_Callout_Stubs.c	    53  /*********************************************************************************************************************
+; ..\Appl\Source\BswM_Callout_Stubs.c	    54      INCLUDES
+; ..\Appl\Source\BswM_Callout_Stubs.c	    55   *********************************************************************************************************************/
+; ..\Appl\Source\BswM_Callout_Stubs.c	    56  /* PRQA S 0857 EOF */ /* MD_MSR_1.1_857 */
+; ..\Appl\Source\BswM_Callout_Stubs.c	    57  #define BSWM_CALLOUT_STUBS_SOURCE
+; ..\Appl\Source\BswM_Callout_Stubs.c	    58  #include "BswM.h"
+; ..\Appl\Source\BswM_Callout_Stubs.c	    59  #include "BswM_Private_Cfg.h"
+; ..\Appl\Source\BswM_Callout_Stubs.c	    60  
+; ..\Appl\Source\BswM_Callout_Stubs.c	    61  
+; ..\Appl\Source\BswM_Callout_Stubs.c	    62  
+; ..\Appl\Source\BswM_Callout_Stubs.c	    63  /**********************************************************************************************************************
+; ..\Appl\Source\BswM_Callout_Stubs.c	    64   *  Additional configured User includes
+; ..\Appl\Source\BswM_Callout_Stubs.c	    65   *********************************************************************************************************************/
+; ..\Appl\Source\BswM_Callout_Stubs.c	    66  
+; ..\Appl\Source\BswM_Callout_Stubs.c	    67  /**********************************************************************************************************************
+; ..\Appl\Source\BswM_Callout_Stubs.c	    68   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK User Includes>                          DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\BswM_Callout_Stubs.c	    69   *********************************************************************************************************************/
+; ..\Appl\Source\BswM_Callout_Stubs.c	    70   
+; ..\Appl\Source\BswM_Callout_Stubs.c	    71  /**********************************************************************************************************************
+; ..\Appl\Source\BswM_Callout_Stubs.c	    72   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\BswM_Callout_Stubs.c	    73   *********************************************************************************************************************/
+; ..\Appl\Source\BswM_Callout_Stubs.c	    74  
+; ..\Appl\Source\BswM_Callout_Stubs.c	    75  
+; ..\Appl\Source\BswM_Callout_Stubs.c	    76  
+; ..\Appl\Source\BswM_Callout_Stubs.c	    77  /**********************************************************************************************************************
+; ..\Appl\Source\BswM_Callout_Stubs.c	    78   *  CALLOUT FUNCTIONS
+; ..\Appl\Source\BswM_Callout_Stubs.c	    79   *********************************************************************************************************************/
+; ..\Appl\Source\BswM_Callout_Stubs.c	    80  #define BSWM_START_SEC_CODE
+; ..\Appl\Source\BswM_Callout_Stubs.c	    81  #include "BswM_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\Source\BswM_Callout_Stubs.c	    82  
+; ..\Appl\Source\BswM_Callout_Stubs.c	    83  /**********************************************************************************************************************
+; ..\Appl\Source\BswM_Callout_Stubs.c	    84   *  GENERIC CALLOUTS
+; ..\Appl\Source\BswM_Callout_Stubs.c	    85   *********************************************************************************************************************/
+; ..\Appl\Source\BswM_Callout_Stubs.c	    86  FUNC(void, BSWM_CODE) BswM_AL_SetProgrammableInterrupts(void)
+; Function BswM_AL_SetProgrammableInterrupts
+.L3:
+BswM_AL_SetProgrammableInterrupts:	.type	func
+
+; ..\Appl\Source\BswM_Callout_Stubs.c	    87  {
+; ..\Appl\Source\BswM_Callout_Stubs.c	    88  /**********************************************************************************************************************
+; ..\Appl\Source\BswM_Callout_Stubs.c	    89   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK BswM_AL_SetProgrammableInterrupts>      DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\BswM_Callout_Stubs.c	    90   *********************************************************************************************************************/
+; ..\Appl\Source\BswM_Callout_Stubs.c	    91  
+; ..\Appl\Source\BswM_Callout_Stubs.c	    92  
+; ..\Appl\Source\BswM_Callout_Stubs.c	    93  /**********************************************************************************************************************
+; ..\Appl\Source\BswM_Callout_Stubs.c	    94   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\BswM_Callout_Stubs.c	    95   *********************************************************************************************************************/
+; ..\Appl\Source\BswM_Callout_Stubs.c	    96  
+; ..\Appl\Source\BswM_Callout_Stubs.c	    97  } /* End of BswM_AL_SetProgrammableInterrupts */
+	ret
+.L13:
+	
+__BswM_AL_SetProgrammableInterrupts_function_end:
+	.size	BswM_AL_SetProgrammableInterrupts,__BswM_AL_SetProgrammableInterrupts_function_end-BswM_AL_SetProgrammableInterrupts
+.L12:
+	; End of function
+	
+	.calls	'BswM_AL_SetProgrammableInterrupts','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L5:
+	.word	2187
+	.half	3
+	.word	.L6
+	.byte	4
+.L4:
+	.byte	1
+	.byte	'..\\Appl\\Source\\BswM_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L7
+	.byte	2,1,3
+	.word	147
+	.byte	4
+	.byte	'__codeptr',0,1,1,1
+	.word	149
+	.byte	5
+	.byte	'unsigned char',0,1,8,4
+	.byte	'boolean',0,2,101,31
+	.word	172
+	.byte	4
+	.byte	'uint8',0,2,104,31
+	.word	172
+	.byte	5
+	.byte	'unsigned short int',0,2,7,4
+	.byte	'uint16',0,2,106,31
+	.word	219
+	.byte	5
+	.byte	'unsigned long int',0,4,7,4
+	.byte	'uint32',0,2,108,31
+	.word	256
+	.byte	4
+	.byte	'uint8_least',0,2,111,31
+	.word	172
+	.byte	4
+	.byte	'Std_ReturnType',0,3,124,15
+	.word	172
+	.byte	4
+	.byte	'Std_TransformerErrorCode',0,3,135,1,15
+	.word	172
+	.byte	4
+	.byte	'Std_TransformerClass',0,3,137,1,15
+	.word	172
+	.byte	4
+	.byte	'EcuM_ModeType',0,4,54,15
+	.word	172
+	.byte	4
+	.byte	'EcuM_StateType',0,4,60,15
+	.word	172
+	.byte	4
+	.byte	'EcuM_UserType',0,4,63,15
+	.word	172
+	.byte	6,1,1,3
+	.word	466
+	.byte	4
+	.byte	'EcuM_DriverFuncType',0,5,142,3,9
+	.word	469
+	.byte	4
+	.byte	'EcuM_DefaultAppModeType',0,5,213,3,16
+	.word	256
+	.byte	4
+	.byte	'EcuM_KillAllInProgressType',0,5,228,3,15
+	.word	172
+	.byte	4
+	.byte	'EcuM_NormalMcuModeType',0,5,234,3,16
+	.word	256
+	.byte	4
+	.byte	'EcuM_PostRunRequestCounterType',0,5,240,3,15
+	.word	172
+	.byte	4
+	.byte	'EcuM_RunRequestCounterType',0,5,243,3,15
+	.word	172
+	.byte	4
+	.byte	'EcuM_TimerType',0,5,249,3,16
+	.word	219
+	.byte	7
+	.byte	'sEcuM_DriverInitOneType',0,5,137,4,16,4,8
+	.byte	'FunctionOfDriverInitOne',0
+	.word	474
+	.byte	4,2,35,0,0,4
+	.byte	'EcuM_DriverInitOneType',0,5,140,4,3
+	.word	704
+	.byte	3
+	.word	466
+	.byte	7
+	.byte	'sEcuM_DriverInitThreeType',0,5,143,4,16,4,8
+	.byte	'FunctionOfDriverInitThree',0
+	.word	474
+	.byte	4,2,35,0,0,4
+	.byte	'EcuM_DriverInitThreeType',0,5,146,4,3
+	.word	805
+	.byte	7
+	.byte	'sEcuM_DriverInitTwoType',0,5,149,4,16,4,8
+	.byte	'FunctionOfDriverInitTwo',0
+	.word	474
+	.byte	4,2,35,0,0,4
+	.byte	'EcuM_DriverInitTwoType',0,5,152,4,3
+	.word	907
+	.byte	7
+	.byte	'sEcuM_PCConfigType',0,5,209,4,16,1,8
+	.byte	'EcuM_PCConfigNeverUsed',0
+	.word	172
+	.byte	1,2,35,0,0,4
+	.byte	'EcuM_PCConfigType',0,5,212,4,3
+	.word	1003
+	.byte	4
+	.byte	'BswM_ActionListsIterType',0,6,139,5,21
+	.word	172
+	.byte	4
+	.byte	'BswM_ActionListQueueType',0,6,172,5,15
+	.word	172
+	.byte	4
+	.byte	'BswM_ForcedActionListPriorityType',0,6,175,5,15
+	.word	172
+	.byte	4
+	.byte	'BswM_InitializedType',0,6,178,5,17
+	.word	172
+	.byte	4
+	.byte	'BswM_PCPartitionConfigIdxOfPartitionIdentifiersType',0,6,181,5,15
+	.word	172
+	.byte	4
+	.byte	'BswM_PartitionSNVOfPartitionIdentifiersType',0,6,184,5,16
+	.word	256
+	.byte	4
+	.byte	'BswM_QueueSemaphoreType',0,6,187,5,15
+	.word	172
+	.byte	4
+	.byte	'BswM_QueueWrittenType',0,6,190,5,17
+	.word	172
+	.byte	4
+	.byte	'BswM_HandleType',0,6,204,5,15
+	.word	172
+	.byte	9,1,1,10
+	.word	172
+	.byte	0,3
+	.word	1432
+	.byte	4
+	.byte	'BswM_InitGenVarAndInitALType',0,6,205,5,9
+	.word	1441
+	.byte	11
+	.word	172
+	.byte	1,1,10
+	.word	172
+	.byte	0,3
+	.word	1484
+	.byte	4
+	.byte	'BswM_ActionListFuncType',0,6,207,5,9
+	.word	1497
+	.byte	7
+	.byte	'sBswM_ActionListsType',0,6,222,5,16,4,8
+	.byte	'FctPtrOfActionLists',0
+	.word	1502
+	.byte	4,2,35,0,0,4
+	.byte	'BswM_ActionListsType',0,6,225,5,3
+	.word	1535
+	.byte	3
+	.word	1484
+	.byte	7
+	.byte	'sBswM_PartitionIdentifiersType',0,6,228,5,16,6,8
+	.byte	'PartitionSNVOfPartitionIdentifiers',0
+	.word	256
+	.byte	4,2,35,0,8
+	.byte	'PCPartitionConfigIdxOfPartitionIdentifiers',0
+	.word	172
+	.byte	1,2,35,4,0,4
+	.byte	'BswM_PartitionIdentifiersType',0,6,232,5,3
+	.word	1628
+	.byte	7
+	.byte	'BswM_ActionListQueueStructSTag',0,6,244,5,16,1,8
+	.byte	'AL_INIT_AL_Initialize',0
+	.word	172
+	.byte	1,2,35,0,0,4
+	.byte	'BswM_ActionListQueueStructSType',0,6,247,5,3
+	.word	1801
+	.byte	7
+	.byte	'sBswM_PCPartitionConfigType',0,6,180,6,16,1,8
+	.byte	'BswM_PCPartitionConfigNeverUsed',0
+	.word	172
+	.byte	1,2,35,0,0,4
+	.byte	'BswM_PCPartitionConfigType',0,6,183,6,3
+	.word	1911
+	.byte	7
+	.byte	'sBswM_PCConfigType',0,6,198,6,16,1,8
+	.byte	'BswM_PCConfigNeverUsed',0
+	.word	172
+	.byte	1,2,35,0,0,4
+	.byte	'BswM_PCConfigType',0,6,201,6,3
+	.word	2023
+	.byte	7
+	.byte	'sDet_PCConfigType',0,7,238,1,16,1,8
+	.byte	'Det_PCConfigNeverUsed',0
+	.word	172
+	.byte	1,2,35,0,0,4
+	.byte	'Det_PCConfigType',0,7,241,1,3
+	.word	2108
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L6:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,0,0,3,15,0,73,19,0,0,4,22,0,3,8,58,15,59,15
+	.byte	57,15,73,19,0,0,5,36,0,3,8,11,15,62,15,0,0,6,21,0,54,15,39,12,0,0,7,19,1,3,8,58,15,59,15,57,15,11,15,0
+	.byte	0,8,13,0,3,8,73,19,11,15,56,9,0,0,9,21,1,54,15,39,12,0,0,10,5,0,73,19,0,0,11,21,1,73,19,54,15,39,12,0
+	.byte	0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L7:
+	.word	.L15-.L14
+.L14:
+	.half	3
+	.word	.L17-.L16
+.L16:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData',0,0
+	.byte	'..\\Appl\\Source\\BswM_Callout_Stubs.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Std_Types.h',0,1,0,0
+	.byte	'Rte_Type.h',0,2,0,0
+	.byte	'EcuM_Cfg.h',0,2,0,0
+	.byte	'BswM_Cfg.h',0,2,0,0
+	.byte	'Det_Cfg.h',0,2,0,0,0
+.L17:
+.L15:
+	.sdecl	'.debug_info',debug,cluster('BswM_AL_SetProgrammableInterrupts')
+	.sect	'.debug_info'
+.L8:
+	.word	216
+	.half	3
+	.word	.L9
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\BswM_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L11,.L10
+	.byte	2
+	.word	.L4
+	.byte	3
+	.byte	'BswM_AL_SetProgrammableInterrupts',0,1,86,23,1,1,1
+	.word	.L3,.L13,.L2
+	.byte	4
+	.word	.L3,.L13
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('BswM_AL_SetProgrammableInterrupts')
+	.sect	'.debug_abbrev'
+.L9:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('BswM_AL_SetProgrammableInterrupts')
+	.sect	'.debug_line'
+.L10:
+	.word	.L19-.L18
+.L18:
+	.half	3
+	.word	.L21-.L20
+.L20:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Appl\\Source\\BswM_Callout_Stubs.c',0,0,0,0,0
+.L21:
+	.byte	5,1,7,0,5,2
+	.word	.L3
+	.byte	3,224,0,1,7,9
+	.half	.L12-.L3
+	.byte	0,1,1
+.L19:
+	.sdecl	'.debug_ranges',debug,cluster('BswM_AL_SetProgrammableInterrupts')
+	.sect	'.debug_ranges'
+.L11:
+	.word	-1,.L3,0,.L12-.L3,0,0
+	.sdecl	'.debug_loc',debug,cluster('BswM_AL_SetProgrammableInterrupts')
+	.sect	'.debug_loc'
+.L2:
+	.word	-1,.L3,0,.L13-.L3
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L22:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('BswM_AL_SetProgrammableInterrupts')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L22,.L3,.L13-.L3
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+; ..\Appl\Source\BswM_Callout_Stubs.c	    98  
+; ..\Appl\Source\BswM_Callout_Stubs.c	    99  
+; ..\Appl\Source\BswM_Callout_Stubs.c	   100  
+; ..\Appl\Source\BswM_Callout_Stubs.c	   101  
+; ..\Appl\Source\BswM_Callout_Stubs.c	   102  #define BSWM_STOP_SEC_CODE
+; ..\Appl\Source\BswM_Callout_Stubs.c	   103  #include "BswM_MemMap.h"  /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\Source\BswM_Callout_Stubs.c	   104  
+; ..\Appl\Source\BswM_Callout_Stubs.c	   105  #if 0
+; ..\Appl\Source\BswM_Callout_Stubs.c	   106  #endif
+; ..\Appl\Source\BswM_Callout_Stubs.c	   107  
+; ..\Appl\Source\BswM_Callout_Stubs.c	   108  
+; ..\Appl\Source\BswM_Callout_Stubs.c	   109  /**********************************************************************************************************************
+; ..\Appl\Source\BswM_Callout_Stubs.c	   110   *  END OF FILE: BSWM_CALLOUT_STUBS.C
+; ..\Appl\Source\BswM_Callout_Stubs.c	   111   *********************************************************************************************************************/
+; ..\Appl\Source\BswM_Callout_Stubs.c	   112  
+; ..\Appl\Source\BswM_Callout_Stubs.c	   113  
+
+	; Module end

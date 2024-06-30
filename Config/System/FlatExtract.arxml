@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="10829c81-b9d6-4884-b5ca-5e683f63d931">
+      <SHORT-NAME>COM</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="704a9429-2eb0-4bd3-8cb7-73b6c5c0bf13">
+          <SHORT-NAME>VECTOR</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="bf44138d-6ccd-47d5-9ad5-18d0623edf6e">
+              <SHORT-NAME>CFG</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE UUID="a6d6e6ea-9603-42a7-9994-950dfd3ffc1d">
+                  <SHORT-NAME>WORKFLOW</SHORT-NAME>
+                  <AR-PACKAGES>
+                    <AR-PACKAGE UUID="c8921d47-5f39-429f-8075-1c0d43dc70b3">
+                      <SHORT-NAME>SYSDESC</SHORT-NAME>
+                      <AR-PACKAGES>
+                        <AR-PACKAGE UUID="bc1e9593-4452-4f7a-96ee-182478f1f1c7">
+                          <SHORT-NAME>SYNC</SHORT-NAME>
+                          <ELEMENTS>
+                            <SYSTEM UUID="047fd99a-ad86-45be-83f4-6b8d0441468d">
+                              <SHORT-NAME>SYSTEM</SHORT-NAME>
+                              <CATEGORY>ECU_EXTRACT</CATEGORY>
+                              <MAPPINGS>
+                                <SYSTEM-MAPPING UUID="6e87d97f-d0c1-4fff-8ac7-0e3f0737b8ac">
+                                  <SHORT-NAME>MAPPINGS</SHORT-NAME>
+                                </SYSTEM-MAPPING>
+                              </MAPPINGS>
+                              <ROOT-SOFTWARE-COMPOSITIONS>
+                                <ROOT-SW-COMPOSITION-PROTOTYPE UUID="71662b86-9618-4a49-8583-d1f3bd194430">
+                                  <SHORT-NAME>COMPOSITIONTYPE</SHORT-NAME>
+                                  <FLAT-MAP-REF DEST="FLAT-MAP">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/FLATMAP</FLAT-MAP-REF>
+                                  <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE</SOFTWARE-COMPOSITION-TREF>
+                                </ROOT-SW-COMPOSITION-PROTOTYPE>
+                              </ROOT-SOFTWARE-COMPOSITIONS>
+                            </SYSTEM>
+                            <COMPOSITION-SW-COMPONENT-TYPE UUID="9545fe9e-3389-4b58-a7c5-529393280d37">
+                              <SHORT-NAME>COMPOSITIONTYPE</SHORT-NAME>
+                              <ANNOTATIONS>
+                                <ANNOTATION>
+                                  <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                </ANNOTATION>
+                                <ANNOTATION>
+                                  <LABEL>
+                                    <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                  </LABEL>
+                                  <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                </ANNOTATION>
+                              </ANNOTATIONS>
+                              <COMPONENTS>
+                                <SW-COMPONENT-PROTOTYPE UUID="1d01c276-c949-40ad-b899-b7a0bca03263">
+                                  <SHORT-NAME>Det</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/Det_swc/ComponentTypes/Det</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="2943cb7f-62ba-4aa6-ae4d-2b8cbf690de4">
+                                  <SHORT-NAME>EcuM</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/EcuM_swc/ComponentTypes/EcuM</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="8dad7314-b692-48a2-83bc-54c1373e5ddd">
+                                  <SHORT-NAME>Os_OsCore0_swc</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="2ecfeaa2-6c30-4d7d-8e6e-2421a5350db7">
+                                  <SHORT-NAME>BswM</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/BswM_swc/ComponentTypes/BswM</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="1bfb6dfb-0bf9-4ea2-8053-c39a6d0b22f7">
+                                  <SHORT-NAME>StartApp</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/StartApp</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                              </COMPONENTS>
+                            </COMPOSITION-SW-COMPONENT-TYPE>
+                            <END-TO-END-PROTECTION-SET UUID="a4e3eb1b-8c6e-4ff7-b0ed-a62ec0c16680">
+                              <SHORT-NAME>E2EPROTECTIONSET</SHORT-NAME>
+                              <ANNOTATIONS>
+                                <ANNOTATION>
+                                  <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                </ANNOTATION>
+                              </ANNOTATIONS>
+                            </END-TO-END-PROTECTION-SET>
+                            <PORT-INTERFACE-MAPPING-SET UUID="20b235a4-b043-4e67-b1c7-e77d739134e3">
+                              <SHORT-NAME>PORTINTERFACEMAPPINGSET</SHORT-NAME>
+                              <ANNOTATIONS>
+                                <ANNOTATION>
+                                  <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                </ANNOTATION>
+                              </ANNOTATIONS>
+                            </PORT-INTERFACE-MAPPING-SET>
+                          </ELEMENTS>
+                          <AR-PACKAGES>
+                            <AR-PACKAGE UUID="eb789966-7af5-46eb-853c-fa1ff1d1f487">
+                              <SHORT-NAME>REFERENCES</SHORT-NAME>
+                              <ADMIN-DATA>
+                                <SDGS>
+                                  <SDG GID="DV:CfgReferences">
+                                    <SD GID="1b4aa02f-ad59-4b2e-9689-a9993b599ef1">/AURIX2G/EcucDefs/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior</SD>
+                                    <SD GID="00735e78-e66a-4ac5-a6f3-4aba76b473ea">/AURIX2G/EcucDefs/McalLib_ib_bswmd</SD>
+                                    <SD GID="85714933-eb83-41b8-92d6-dda91c636f30">/AURIX2G/EcucDefs/McalLib_ib_bswmd/BswModuleDescriptions</SD>
+                                    <SD GID="ac2c1286-9e2e-4cb6-8a15-e213ad61e13a">/AURIX2G/EcucDefs/McalLib_ib_bswmd/BswModuleDescriptions/McalLib/McalLibBehavior</SD>
+                                    <SD GID="9c2f72bf-7533-4f19-b8bd-680f7653b1a7">/AURIX2G/EcucDefs/McalLib_ib_bswmd/BswModuleDescriptions/McalLib/McalLibBehavior/CpuEndInit</SD>
+                                    <SD GID="1c582e16-c951-490c-8bb7-1e23315c1ee4">/AURIX2G/EcucDefs/McalLib_ib_bswmd/BswModuleDescriptions/McalLib/McalLibBehavior/PeripheralEndInit</SD>
+                                    <SD GID="aedd61d5-de30-4b7c-82a0-d676bb1742bd">/AURIX2G/EcucDefs/McalLib_ib_bswmd/BswModuleDescriptions/McalLib/McalLibBehavior/SafetyEndInit</SD>
+                                    <SD GID="b0cfa80b-b049-48d9-a841-9880a01fc4de">/AURIX2G/EcucDefs/McalLib_ib_bswmd/BswModuleDescriptions/McalLib/McalLibBehavior/StmTimerResolution</SD>
+                                    <SD GID="2a13dc07-4c50-4710-aff0-588d043040d8">/AURIX2G/EcucDefs/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior</SD>
+                                    <SD GID="578d94ba-dc5e-435c-ba18-0f150b02b98e">/AURIX2G/EcucDefs/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/AtomAgcReg</SD>
+                                    <SD GID="e9f967ad-4151-4062-bd5b-5913f743d445">/AURIX2G/EcucDefs/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/TomTgcReg</SD>
+                                    <SD GID="ea7bc7a3-2198-4b85-9b65-6638413d6561">/AURIX2G/EcucDefs/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior</SD>
+                                    <SD GID="9545fe9e-3389-4b58-a7c5-529393280d37">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE</SD>
+                                    <SD GID="2ecfeaa2-6c30-4d7d-8e6e-2421a5350db7">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</SD>
+                                    <SD GID="1d01c276-c949-40ad-b899-b7a0bca03263">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Det</SD>
+                                    <SD GID="2943cb7f-62ba-4aa6-ae4d-2b8cbf690de4">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/EcuM</SD>
+                                    <SD GID="8dad7314-b692-48a2-83bc-54c1373e5ddd">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Os_OsCore0_swc</SD>
+                                    <SD GID="1bfb6dfb-0bf9-4ea2-8053-c39a6d0b22f7">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/StartApp</SD>
+                                    <SD GID="f7f3ba40-5fcb-4bee-afcf-5ea567163e04">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/FLATMAP</SD>
+                                    <SD GID="047fd99a-ad86-45be-83f4-6b8d0441468d">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM</SD>
+                                    <SD GID="71662b86-9618-4a49-8583-d1f3bd194430">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</SD>
+                                    <SD GID="29CEE414-8C92-4098-9D33-043FB99C2C62">/ComponentTypes/StartApp</SD>
+                                    <SD GID="4B91D2A3-5D8E-47D6-8D7E-568156A99AA3">/ComponentTypes/StartApp/StartApp_InternalBehavior/StartApp_InitEvent</SD>
+                                    <SD GID="8ABA4657-4CC2-4B2E-896E-0B9892AF4B05">/ComponentTypes/StartApp/StartApp_InternalBehavior/TMT_StartApp_Cyclic1ms</SD>
+                                    <SD GID="39B6632A-DEA1-420C-A573-5EB0B92EEFE5">/ComponentTypes/StartApp/StartApp_InternalBehavior/TMT_StartApp_Cyclic500ms</SD>
+                                    <SD GID="D1421BB5-E67D-49C5-8029-41F2582E4A38">/ComponentTypes/StartApp_Implementation</SD>
+                                    <SD GID="FE2C5E2A-0151-4321-8D4B-BAD3E52BE0CA">/ECUCompositionTypes/ECU_Composition</SD>
+                                    <SD GID="A4CAE317-8087-4975-B747-EA330DE14F16">/ECUCompositionTypes/ECU_Composition/StartApp</SD>
+                                    <SD GID="b2b44b86-f8e4-4180-bedb-ca490492052a">/MICROSAR/BswM_ib_bswmd</SD>
+                                    <SD GID="c40864d3-11b1-493a-8649-115d81527cad">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions</SD>
+                                    <SD GID="f10f3aeb-1a4a-4470-9118-fb07af0b8602">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior</SD>
+                                    <SD GID="3c88a083-4574-4fad-8483-3d10013b5e22">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BSWM_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="457b3482-8695-49ce-a718-81e78e971d5a">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BswM_MainFunction</SD>
+                                    <SD GID="b71381d1-6655-4267-b1b4-16b671be09c2">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BswM_MainFunctionTimingEvent0</SD>
+                                    <SD GID="15497d4e-4409-4f4b-86c5-019c6b1b48ac">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM_MainFunction</SD>
+                                    <SD GID="d6fbb6e1-1cad-4f0d-bfea-ff995597a610">/MICROSAR/BswM_ib_bswmd/XcpEvents</SD>
+                                    <SD GID="3867323d-21de-486a-ae14-40871ce85127">/MICROSAR/BswM_swc</SD>
+                                    <SD GID="511b6e88-e6b3-4a64-a631-2ce0803332de">/MICROSAR/BswM_swc/BswMMappingSet</SD>
+                                    <SD GID="b58ac756-17c4-453d-a3ca-04462ca7af45">/MICROSAR/BswM_swc/ComponentTypes</SD>
+                                    <SD GID="d7f08b5b-0112-4004-9af2-910e0bb762b2">/MICROSAR/BswM_swc/ComponentTypes/BswM</SD>
+                                    <SD GID="b799a903-8eca-4314-ab8d-12eecac095e1">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior</SD>
+                                    <SD GID="54cd0a5d-28ea-41ba-afe6-f10a5749d3eb">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior/BswM_MainFunction</SD>
+                                    <SD GID="c24bad6e-3939-45e4-96b8-963f71792ece">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior/Timer_BswM_MainFunction</SD>
+                                    <SD GID="c53725e6-851e-4592-92d7-74fb9e768353">/MICROSAR/BswM_swc/ComponentTypes/BswMImplementation/BswMResourceConsumption/BswM_START_SEC_CODE</SD>
+                                    <SD GID="790c6e35-3cc1-4f52-93eb-65fabf886df9">/MICROSAR/BswM_swc/ComponentTypes/BswMImplementation/BswMResourceConsumption/BswM_START_SEC_CONST_UNSPECIFIED</SD>
+                                    <SD GID="2dfe0c3f-22b1-40a2-82e4-eb6a8878c5a2">/MICROSAR/BswM_swc/ComponentTypes/BswMImplementation/BswMResourceConsumption/BswM_START_SEC_VAR_INIT_UNSPECIFIED</SD>
+                                    <SD GID="10a471f3-7dfb-4ee8-b24d-3e6fec45ce63">/MICROSAR/BswM_swc/ComponentTypes/BswMImplementation/BswMResourceConsumption/BswM_START_SEC_VAR_NOINIT_UNSPECIFIED</SD>
+                                    <SD GID="103938d3-c981-489d-994e-e77787446bf2">/MICROSAR/BswM_swc/ComponentTypes/BswMImplementation/BswMResourceConsumption/BswM_START_SEC_VAR_ZERO_INIT_UNSPECIFIED</SD>
+                                    <SD GID="77b715e9-edbd-45d8-bc4e-3258d97aed7c">/MICROSAR/Det_ib_bswmd</SD>
+                                    <SD GID="75cf75a9-b79e-4cce-ac8e-67f37638fe4b">/MICROSAR/Det_ib_bswmd/BswModuleDescriptions</SD>
+                                    <SD GID="ab9d8a3f-be73-4201-b1b3-f6e528ffcc39">/MICROSAR/Det_ib_bswmd/BswModuleDescriptions/Det/DetBehavior</SD>
+                                    <SD GID="0cbd8868-9985-437e-9c36-06d58d5f88a9">/MICROSAR/Det_ib_bswmd/BswModuleDescriptions/Det/DetBehavior/DET_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="2b3fa143-da2b-45f6-8c4d-ad884d84373f">/MICROSAR/Det_swc</SD>
+                                    <SD GID="1f2a72de-222b-441a-aaf3-b075bc91b79b">/MICROSAR/Det_swc/ComponentTypes</SD>
+                                    <SD GID="ee449f67-7bd0-4079-a241-35c0b20425ac">/MICROSAR/Det_swc/ComponentTypes/Det</SD>
+                                    <SD GID="d3bbf1e6-eba6-4110-9c55-42921e38f902">/MICROSAR/Det_swc/ComponentTypes/Det/DetInternalBehavior</SD>
+                                    <SD GID="a2b710d5-8b9e-4d8b-997b-08ee8f269930">/MICROSAR/Det_swc/Interfaces</SD>
+                                    <SD GID="7c881323-c6a9-43b8-838b-2bc75c085023">/MICROSAR/Det_swc/Interfaces/DETService/E_OK</SD>
+                                    <SD GID="756e2b02-6b4a-4e90-8e24-b6fd0fb6100a">/MICROSAR/Det_swc/Interfaces/DETService/ReportError</SD>
+                                    <SD GID="e516fa9c-e5f3-4e7b-aa0d-851ca31af775">/MICROSAR/Det_swc/Interfaces/DETService/ReportError/ApiId</SD>
+                                    <SD GID="8f7380b2-d2b5-445f-96b0-d5832ac1a947">/MICROSAR/Det_swc/Interfaces/DETService/ReportError/ErrorId</SD>
+                                    <SD GID="615a4dd5-24a3-4dd1-9384-28c0db98f0e5">/MICROSAR/Det_swc/Interfaces/DETService/ReportRuntimeError</SD>
+                                    <SD GID="844e8fdc-2594-419b-af98-cf7a598c8628">/MICROSAR/Det_swc/Interfaces/DETService/ReportRuntimeError/ApiId</SD>
+                                    <SD GID="65a1a1eb-d9c3-4811-aa42-f242511e0680">/MICROSAR/Det_swc/Interfaces/DETService/ReportRuntimeError/ErrorId</SD>
+                                    <SD GID="a7c3156d-bf22-44db-afec-b0d61bf1bf22">/MICROSAR/Det_swc/Interfaces/DETServiceLegacy/E_OK</SD>
+                                    <SD GID="21a203df-e488-4b3b-9b3a-6854b3575f51">/MICROSAR/Det_swc/Interfaces/DETServiceLegacy/ReportError</SD>
+                                    <SD GID="588023ff-91e3-4230-9d9b-deaf092cd394">/MICROSAR/Det_swc/Interfaces/DETServiceLegacy/ReportError/ApiId</SD>
+                                    <SD GID="66def444-96ba-4b18-88c2-51c6c8861769">/MICROSAR/Det_swc/Interfaces/DETServiceLegacy/ReportError/ErrorId</SD>
+                                    <SD GID="7e6d360a-6fef-4a74-9534-ab049f672372">/MICROSAR/Det_swc/Interfaces/DETServiceLegacy/ReportError/InstanceId</SD>
+                                    <SD GID="66089a65-abe2-42e8-9763-ff71798c7da8">/MICROSAR/EcuM_ib_bswmd</SD>
+                                    <SD GID="1b74ee97-fa1d-41b0-b408-661cb9fad5d8">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions</SD>
+                                    <SD GID="ff982f37-436f-48b8-ba16-1900ef6a61e8">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior</SD>
+                                    <SD GID="65855926-710e-4523-a7c0-d53f3b0b9be9">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/ECUM_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="bba9a21b-05e6-4c83-af8e-fa232b740eaa">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/ECUM_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="02074a7c-b344-4c12-8fa2-a6ae8cc04de9">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/ECUM_EXCLUSIVE_AREA_2</SD>
+                                    <SD GID="21e66814-cc11-4aad-92e7-f8c75ed197fa">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/ECUM_EXCLUSIVE_AREA_3</SD>
+                                    <SD GID="fc07fee8-a351-4737-9773-35a193a39b54">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/EcuM_MainFunction</SD>
+                                    <SD GID="76278b42-c95a-442b-9901-497a05dabc43">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/EcuM_MainFunctionTimingEvent0</SD>
+                                    <SD GID="7b30c12a-a8ba-4ca9-ab4c-b83377d4e724">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM_MainFunction</SD>
+                                    <SD GID="535abe7f-b615-4edf-80ab-0900a939131b">/MICROSAR/EcuM_ib_bswmd/XcpEvents</SD>
+                                    <SD GID="3f7383f1-a7d4-4275-abc7-b96a759acebd">/MICROSAR/EcuM_swc</SD>
+                                    <SD GID="584a768c-30a3-41ee-b51d-abc8b50136b1">/MICROSAR/EcuM_swc/ComponentTypes</SD>
+                                    <SD GID="0c6397dd-8abf-4f59-b541-d64d6e3b5e10">/MICROSAR/EcuM_swc/ComponentTypes/EcuM</SD>
+                                    <SD GID="f231a1cd-d763-487b-8621-97df70e05b10">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior</SD>
+                                    <SD GID="3d3b397e-37a0-4252-9382-5ed4fdf52cb2">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/EcuM_MainFunction</SD>
+                                    <SD GID="29658356-9e83-494c-931e-51940bec4bd5">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/EcuM_MainFunction/ModeSwitchPointEcuM_MainFunction_currentMode_currentMode</SD>
+                                    <SD GID="48635ea4-1afc-40c0-b434-dfc835c0a408">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/GetBootTarget</SD>
+                                    <SD GID="7793d127-c25d-4c6c-9fa9-b32552ba873b">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/GetLastShutdownTarget</SD>
+                                    <SD GID="b5f6636c-d468-485d-8b3d-131456e80d2d">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/GetShutdownCause</SD>
+                                    <SD GID="3cdf2cfa-35fb-47bd-948b-df9a2fa5de9a">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/GetShutdownTarget</SD>
+                                    <SD GID="8aca0f01-0579-4a5e-8ed1-3abee5d9aec1">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/GetStateWrapper</SD>
+                                    <SD GID="b6d7f2cb-afdb-4ec8-b1fe-ed5908030dd3">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventGetBootTarget_GetBootTarget_EcuM_BootTarget</SD>
+                                    <SD GID="e309dffd-c829-47cf-a5ed-c560f5e7c0c6">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventGetLastShutdownTarget_GetLastShutdownTarget_EcuM_ShutdownTarget</SD>
+                                    <SD GID="0c613be9-fe5a-469d-bd46-42f72fb08408">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventGetShutdownCause_GetShutdownCause_EcuM_ShutdownTarget</SD>
+                                    <SD GID="21046619-8312-4fe4-a02b-4598134ba585">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventGetShutdownTarget_GetShutdownTarget_EcuM_ShutdownTarget</SD>
+                                    <SD GID="28fde163-72cb-44cb-905a-1b13368b5be4">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventGetStateWrapper_GetStateWrapper_StateRequest_EcuMConf_EcuMFixedUserConfig_EcuMFixedUserConfig</SD>
+                                    <SD GID="fa55c6ca-9caa-4971-8b02-1de4d81cd62f">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventReleasePOSTRUN_ReleasePOSTRUN_StateRequest_EcuMConf_EcuMFixedUserConfig_EcuMFixedUserConfig</SD>
+                                    <SD GID="8b6c5d02-2609-44e8-8c8a-501badd213fe">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventReleaseRUN_ReleaseRUN_StateRequest_EcuMConf_EcuMFixedUserConfig_EcuMFixedUserConfig</SD>
+                                    <SD GID="4b9cef65-de5e-4057-ac53-5a4caf699295">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventRequestPOSTRUN_RequestPOSTRUN_StateRequest_EcuMConf_EcuMFixedUserConfig_EcuMFixedUserConfig</SD>
+                                    <SD GID="afd80e0d-6aba-44b3-acfd-ca01c66cf757">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventRequestRUN_RequestRUN_StateRequest_EcuMConf_EcuMFixedUserConfig_EcuMFixedUserConfig</SD>
+                                    <SD GID="ac214f90-0991-4258-a446-90542fd3742d">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventSelectBootTarget_SelectBootTarget_EcuM_BootTarget</SD>
+                                    <SD GID="d3c1a7c9-1a24-4ee7-bcf8-5db16c932802">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventSelectShutdownCause_SelectShutdownCause_EcuM_ShutdownTarget</SD>
+                                    <SD GID="9f065b21-8d5f-4e07-bc2e-aa86c6d86baa">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventSelectShutdownTarget_SelectShutdownTarget_EcuM_ShutdownTarget</SD>
+                                    <SD GID="c348b0a4-1641-41b7-8de9-b7be35ed25c9">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/ReleasePOSTRUN</SD>
+                                    <SD GID="c53a6743-d253-48b9-aa41-54b36d6626e6">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/ReleaseRUN</SD>
+                                    <SD GID="1bf81326-fb68-499e-87c8-a387a40880f2">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/RequestPOSTRUN</SD>
+                                    <SD GID="df1cf778-355f-4021-8678-f0eb58b41f69">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/RequestRUN</SD>
+                                    <SD GID="5bf0246a-d9b9-4e84-a023-4e41aeb3b3ee">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/SelectBootTarget</SD>
+                                    <SD GID="1827b8ea-b748-45fa-940e-0cabffbaa202">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/SelectShutdownCause</SD>
+                                    <SD GID="24c6ac0a-801f-4c3b-84de-c7cc2b514c32">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/SelectShutdownTarget</SD>
+                                    <SD GID="065bc107-84cb-4f76-a28b-b7d480bfa240">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/Timer_EcuM_MainFunction</SD>
+                                    <SD GID="b27813a4-57eb-46cb-8dd6-5b082225ab6c">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuM_BootTarget</SD>
+                                    <SD GID="6a518186-6d36-40f3-862c-3fdf7113dc7b">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuM_ShutdownTarget</SD>
+                                    <SD GID="e4140862-dd9d-4a61-9f09-cd368284baff">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/StateRequest_EcuMConf_EcuMFixedUserConfig_EcuMFixedUserConfig</SD>
+                                    <SD GID="8418ab50-13a0-4b36-ae8f-b274e59b2b5c">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/currentMode</SD>
+                                    <SD GID="64c4dc35-a17b-4635-83da-1ea640450b01">/MICROSAR/EcuM_swc/ComponentTypes/EcuMImplementation/EcuMResourceConsumption/EcuM_START_SEC_CODE</SD>
+                                    <SD GID="bfe3015e-84c2-4189-9123-68d0feb6bac7">/MICROSAR/EcuM_swc/ComponentTypes/EcuMImplementation/EcuMResourceConsumption/EcuM_START_SEC_CONST_UNSPECIFIED</SD>
+                                    <SD GID="f7939fbf-196d-4b2d-9d60-ab89adf66e56">/MICROSAR/EcuM_swc/ComponentTypes/EcuMImplementation/EcuMResourceConsumption/EcuM_START_SEC_VAR_INIT_UNSPECIFIED</SD>
+                                    <SD GID="4b2d7e97-f0db-4fa3-a470-8313f8ae7526">/MICROSAR/EcuM_swc/ComponentTypes/EcuMImplementation/EcuMResourceConsumption/EcuM_START_SEC_VAR_NOINIT_UNSPECIFIED</SD>
+                                    <SD GID="f8220b93-075b-4ae1-aff5-6edef3ea1372">/MICROSAR/EcuM_swc/ComponentTypes/EcuMImplementation/EcuMResourceConsumption/EcuM_START_SEC_VAR_ZERO_INIT_UNSPECIFIED</SD>
+                                    <SD GID="2a399b2d-c3e9-4388-ba12-e5c48cb01327">/MICROSAR/EcuM_swc/DataTypes</SD>
+                                    <SD GID="96f6e73b-8d98-4295-803a-9b48a70bfdb6">/MICROSAR/EcuM_swc/DataTypes/CompuMethods</SD>
+                                    <SD GID="2326131c-cdb4-4d7f-83dd-3bf80bd342b7">/MICROSAR/EcuM_swc/DataTypes/CompuMethods/EcuM_BootTargetType</SD>
+                                    <SD GID="bc184612-8489-442b-ac9b-24bfbf2dda32">/MICROSAR/EcuM_swc/DataTypes/CompuMethods/EcuM_ModeType</SD>
+                                    <SD GID="c055457f-197d-4a86-b214-602b9cac7552">/MICROSAR/EcuM_swc/DataTypes/CompuMethods/EcuM_ShutdownCauseType</SD>
+                                    <SD GID="a731c6c0-11c4-4168-9fcd-12c2a4bc9903">/MICROSAR/EcuM_swc/DataTypes/CompuMethods/EcuM_StateType</SD>
+                                    <SD GID="2e07e792-7319-4130-82c4-67229276309d">/MICROSAR/EcuM_swc/DataTypes/CompuMethods/EcuM_UserType</SD>
+                                    <SD GID="b47d634b-d3a5-4653-a12b-8de0e1e78940">/MICROSAR/EcuM_swc/DataTypes/DataConstrs</SD>
+                                    <SD GID="16b4da3e-7806-4f31-90e9-760ecb23d41e">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_BootTargetType_Constr</SD>
+                                    <SD GID="752ff5e9-f634-4632-b9b2-02cc4c9e4037">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_ModeType_Constr</SD>
+                                    <SD GID="af5c6846-484b-4614-a2c6-acb072ab6cc4">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_ShutdownCauseType_Constr</SD>
+                                    <SD GID="bc7e7dbf-a30a-40e0-b890-80644fde6d31">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_StateType_Constr</SD>
+                                    <SD GID="4fc805dd-3265-443f-8baf-8bdbcf896784">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_TimeType_Constr</SD>
+                                    <SD GID="eb6aa201-c1ad-4881-bd1f-4267aaebdf14">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_UserType_Constr</SD>
+                                    <SD GID="9c8632a1-84b8-49a6-9b6d-b914bd2782da">/MICROSAR/EcuM_swc/DataTypes/EcuM_BootTargetType</SD>
+                                    <SD GID="973792c1-a8ff-4fa2-9c7d-f478948616e7">/MICROSAR/EcuM_swc/DataTypes/EcuM_ModeType</SD>
+                                    <SD GID="0e5ab0ae-f154-4eaa-8ed9-9df011e67781">/MICROSAR/EcuM_swc/DataTypes/EcuM_ShutdownCauseType</SD>
+                                    <SD GID="cdf2a96f-6806-45d2-9703-1b707747ee2d">/MICROSAR/EcuM_swc/DataTypes/EcuM_StateType</SD>
+                                    <SD GID="ff181759-8e0b-4d6b-a41c-5e69c14ac342">/MICROSAR/EcuM_swc/DataTypes/EcuM_TimeType</SD>
+                                    <SD GID="532dbe3b-5e69-4688-be47-f0aa32223d9e">/MICROSAR/EcuM_swc/DataTypes/EcuM_UserType</SD>
+                                    <SD GID="c6da2e1b-957b-43cc-b413-64e8c218ca23">/MICROSAR/EcuM_swc/EcuMMode_DataTypeMappingSet</SD>
+                                    <SD GID="ab16b6e7-f583-4027-ae94-ff5ad3c293a3">/MICROSAR/EcuM_swc/EcuM_Mode</SD>
+                                    <SD GID="0e43a7a1-9f72-46f9-a5bc-2f8e280783c8">/MICROSAR/EcuM_swc/EcuM_Mode/POST_RUN</SD>
+                                    <SD GID="e278820c-7e5a-4668-9b7a-b98fbbf729ba">/MICROSAR/EcuM_swc/EcuM_Mode/RUN</SD>
+                                    <SD GID="106cb6bb-dba4-4b98-8b7c-5d00dfea63b0">/MICROSAR/EcuM_swc/EcuM_Mode/SHUTDOWN</SD>
+                                    <SD GID="25640d8b-3378-40b1-9742-f5bb94113c33">/MICROSAR/EcuM_swc/EcuM_Mode/SLEEP</SD>
+                                    <SD GID="0f3e6ca0-7b84-4c20-b413-3bfda6b1f9ef">/MICROSAR/EcuM_swc/EcuM_Mode/STARTUP</SD>
+                                    <SD GID="f2d301ff-9ce7-455e-8bc9-02bcc74ba9bd">/MICROSAR/EcuM_swc/EcuM_Mode/WAKE_SLEEP</SD>
+                                    <SD GID="976b1599-a61a-4145-b808-fa9b06809558">/MICROSAR/EcuM_swc/Interfaces</SD>
+                                    <SD GID="5540c6ae-8cf9-426e-8020-a59b7242b0d4">/MICROSAR/EcuM_swc/Interfaces/EcuM_BootTarget</SD>
+                                    <SD GID="a128d3c7-5d59-4a5a-8c5d-3928250427f3">/MICROSAR/EcuM_swc/Interfaces/EcuM_BootTarget/E_NOT_OK</SD>
+                                    <SD GID="5f4fd8a6-119d-497f-a6b2-a251986755a3">/MICROSAR/EcuM_swc/Interfaces/EcuM_BootTarget/GetBootTarget</SD>
+                                    <SD GID="0d0a4a10-e3ea-41b6-9bbd-5163c623d93d">/MICROSAR/EcuM_swc/Interfaces/EcuM_BootTarget/GetBootTarget/BootTarget</SD>
+                                    <SD GID="93eff570-76d0-4ba0-b8f4-1d07b1a9951d">/MICROSAR/EcuM_swc/Interfaces/EcuM_BootTarget/SelectBootTarget</SD>
+                                    <SD GID="c185379e-e1de-4842-be15-f4cd478459bd">/MICROSAR/EcuM_swc/Interfaces/EcuM_BootTarget/SelectBootTarget/BootTarget</SD>
+                                    <SD GID="fbff85cf-ba25-43ae-92a1-5ccf90116da1">/MICROSAR/EcuM_swc/Interfaces/EcuM_CurrentMode</SD>
+                                    <SD GID="0ef55d85-03c6-4e4b-96fc-bf9779922fcf">/MICROSAR/EcuM_swc/Interfaces/EcuM_CurrentMode/currentMode</SD>
+                                    <SD GID="8e94ab31-19be-4b90-afa5-f4892d94a8a2">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget</SD>
+                                    <SD GID="4b35292d-ce19-4117-948c-ee4abf881155">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/E_NOT_OK</SD>
+                                    <SD GID="f14d777d-b886-46f2-991c-06da5472e053">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/GetLastShutdownTarget</SD>
+                                    <SD GID="83a88f58-7270-4d77-827b-21572033dae6">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/GetLastShutdownTarget/resetSleepMode</SD>
+                                    <SD GID="ef234c62-8914-4fb2-8e4e-0bf74b754014">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/GetLastShutdownTarget/target</SD>
+                                    <SD GID="312cf0b2-daaf-46dc-a0c9-67c5f8b05e29">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/GetShutdownCause</SD>
+                                    <SD GID="638fc860-a946-4fea-88c4-627a23e268b4">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/GetShutdownCause/shutdownCause</SD>
+                                    <SD GID="da734548-2897-4ff9-95b2-6528d5866a02">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/GetShutdownTarget</SD>
+                                    <SD GID="280ecb99-46ff-4abd-bf72-36c3c3fbbb76">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/GetShutdownTarget/resetSleepMode</SD>
+                                    <SD GID="90d64f38-874d-4d28-975a-fb250c67b208">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/GetShutdownTarget/target</SD>
+                                    <SD GID="73bddb47-dea4-44b8-a2da-5bf933f713dc">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/SelectShutdownCause</SD>
+                                    <SD GID="333dfad7-a8a7-480a-a744-e7f56cb40158">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/SelectShutdownCause/shutdownCause</SD>
+                                    <SD GID="a1b8be4f-b8c6-4852-92c2-57d4cef9f7aa">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/SelectShutdownTarget</SD>
+                                    <SD GID="aee42a34-ffab-42e9-97da-1414322cb711">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/SelectShutdownTarget/resetSleepMode</SD>
+                                    <SD GID="1733e668-8a1d-45b7-8c10-af193542841b">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/SelectShutdownTarget/targetState</SD>
+                                    <SD GID="238fa570-4bbb-459e-acf9-2237767c2ec2">/MICROSAR/EcuM_swc/Interfaces/EcuM_StateRequest</SD>
+                                    <SD GID="289d4d64-38db-4d93-b529-8ae1564a8823">/MICROSAR/EcuM_swc/Interfaces/EcuM_StateRequest/E_NOT_OK</SD>
+                                    <SD GID="3dd9366a-3009-460f-aa98-a124f8b78669">/MICROSAR/EcuM_swc/Interfaces/EcuM_StateRequest/GetStateWrapper</SD>
+                                    <SD GID="d86e5b6b-b226-49a7-ab1f-87aa3544d632">/MICROSAR/EcuM_swc/Interfaces/EcuM_StateRequest/GetStateWrapper/state</SD>
+                                    <SD GID="c26d3da9-31a5-4816-b823-7751ea42cf9e">/MICROSAR/EcuM_swc/Interfaces/EcuM_StateRequest/ReleasePOSTRUN</SD>
+                                    <SD GID="4155e438-9ae8-416a-be82-29b3a41d5bcb">/MICROSAR/EcuM_swc/Interfaces/EcuM_StateRequest/ReleaseRUN</SD>
+                                    <SD GID="11e332e1-b15e-4b6b-8f21-cbe2017acb46">/MICROSAR/EcuM_swc/Interfaces/EcuM_StateRequest/RequestPOSTRUN</SD>
+                                    <SD GID="fceb5b33-85a2-406f-bf9d-b12c49781bfe">/MICROSAR/EcuM_swc/Interfaces/EcuM_StateRequest/RequestRUN</SD>
+                                    <SD GID="fa2990b8-d74a-4e5e-935f-e85f9b2dfda2">/MICROSAR/Os_ib_bswmd</SD>
+                                    <SD GID="c4feda35-c6ef-4d82-9dc2-5f2327b534ba">/MICROSAR/Os_ib_bswmd/SwAddrMethods</SD>
+                                    <SD GID="99efcadb-d3f4-4af9-aa23-2d8b317bb35b">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_CONST</SD>
+                                    <SD GID="cd6cf001-9508-409f-8065-c2882fcfc63c">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_CONST_FAST</SD>
+                                    <SD GID="74eff785-12c1-4eb2-8d23-4f14e4aac4de">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_VAR_CLEARED</SD>
+                                    <SD GID="3777986e-7d9f-40ec-a027-25ec4b1f29a3">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_VAR_FAST_CLEARED</SD>
+                                    <SD GID="d1919104-f0b5-49b7-9b88-cd41890aa36b">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_VAR_FAST_INIT</SD>
+                                    <SD GID="bebab0b0-38bf-438c-904f-374e54f07a1f">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_VAR_FAST_NO_INIT</SD>
+                                    <SD GID="5b8bf768-6ac9-4a6f-8e9c-d9b16b939501">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_VAR_INIT</SD>
+                                    <SD GID="420ae3cb-4d95-47ca-b1b6-ed71a701b97c">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_VAR_NOCACHE_CLEARED</SD>
+                                    <SD GID="a3c6403f-a7bf-4117-998b-5d2a6e55767a">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_VAR_NOCACHE_INIT</SD>
+                                    <SD GID="90ee681a-1434-40c7-8b65-46105182dc59">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_VAR_NOCACHE_NO_INIT</SD>
+                                    <SD GID="751119fe-25f3-451a-84d5-46e75435fe5f">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_VAR_NO_INIT</SD>
+                                    <SD GID="e2edd780-9ed2-4baa-b4c0-b1502ca5f573">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_VAR_SAVED_ZONE</SD>
+                                    <SD GID="058afbba-2331-4aee-8ff3-98475c440872">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_CONST</SD>
+                                    <SD GID="fb7605b8-e558-4794-af17-52e31f1d76e7">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_CONST_FAST</SD>
+                                    <SD GID="87d040a9-d9ea-429d-8ede-a9d6e5f1a048">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_CLEARED</SD>
+                                    <SD GID="c87ff2f5-22ce-4057-8df0-7f59334fb855">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_FAST_CLEARED</SD>
+                                    <SD GID="e0d54eef-0c9f-4efb-8a40-fd60431a1fcc">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_FAST_INIT</SD>
+                                    <SD GID="283ff052-789d-43b9-ab74-d1e17a199a0f">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_FAST_NO_INIT</SD>
+                                    <SD GID="914dc8c1-db89-46dd-a216-97aa3dbcf074">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_INIT</SD>
+                                    <SD GID="4fcf5a96-4a2a-45db-b576-4236d0cd856e">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_NOCACHE_CLEARED</SD>
+                                    <SD GID="89f90ba1-c1a8-40c1-a591-2f1114fd530f">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_NOCACHE_INIT</SD>
+                                    <SD GID="3cec2ba5-f44c-4eb3-9b35-16bb045e13ce">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_NOCACHE_NO_INIT</SD>
+                                    <SD GID="ac136996-688e-47fc-a72e-fcc6d0f9b439">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_NO_INIT</SD>
+                                    <SD GID="56658d1f-65d5-4cfa-a80d-9ae64b3cd1e5">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_SAVED_ZONE</SD>
+                                    <SD GID="c3f467b7-8028-43e2-9ee2-b44ee6fac9b3">/MICROSAR/Os_swc</SD>
+                                    <SD GID="d6ddb15c-fde4-457c-ac0b-e174b619400d">/MICROSAR/Os_swc/ComponentTypes</SD>
+                                    <SD GID="5d007c92-d39a-4a08-a92a-ca65be3d0f7f">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc</SD>
+                                    <SD GID="7147381b-15cc-44c1-ab52-0e4440dfbf89">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc/OsService_SystemTimer</SD>
+                                    <SD GID="db152e4e-cf32-4f36-81b6-284e60d23dbc">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc/Os_OsCore0_swcInternalBehavior</SD>
+                                    <SD GID="1bf61a01-39c9-430b-b8a8-840d7b7caebf">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc/Os_OsCore0_swcInternalBehavior/GetCounterValue</SD>
+                                    <SD GID="a6deaba5-cfa2-488e-9882-5e6e7b76f269">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc/Os_OsCore0_swcInternalBehavior/GetElapsedValue</SD>
+                                    <SD GID="1944a046-6139-4122-8f85-9741e20327ff">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc/Os_OsCore0_swcInternalBehavior/OpEventGetCounterValue_GetCounterValue_OsService_SystemTimer</SD>
+                                    <SD GID="e5d0d8de-b472-403e-9b7c-c9841ca66b98">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc/Os_OsCore0_swcInternalBehavior/OpEventGetElapsedValue_GetElapsedValue_OsService_SystemTimer</SD>
+                                    <SD GID="4e4f2145-ef17-4943-bcce-f3e039699f1a">/MICROSAR/Os_swc/DataTypes</SD>
+                                    <SD GID="6b336702-eedd-4c4f-9839-c15dd91e3950">/MICROSAR/Os_swc/DataTypes/CounterType</SD>
+                                    <SD GID="ab5052d3-2cb3-44f6-9a97-a0ba866a75d6">/MICROSAR/Os_swc/DataTypes/DataConstrs</SD>
+                                    <SD GID="29df0b9a-6cff-423b-b45c-117c920bafcf">/MICROSAR/Os_swc/DataTypes/DataConstrs/CounterType_Constr</SD>
+                                    <SD GID="fc9ec8a9-51f6-4f11-941e-2b50e8b3a069">/MICROSAR/Os_swc/DataTypes/DataConstrs/TimeInMicrosecondsType_Constr</SD>
+                                    <SD GID="e2f53853-d67a-46f6-a371-231bb23b6092">/MICROSAR/Os_swc/DataTypes/TimeInMicrosecondsType</SD>
+                                    <SD GID="e2c381b1-463f-48b8-88cd-c9d18b6fd311">/MICROSAR/Os_swc/Interfaces</SD>
+                                    <SD GID="6b1c6474-8c64-447d-9e30-64f603f9fe81">/MICROSAR/Os_swc/Interfaces/Os_Service</SD>
+                                    <SD GID="f02142da-1832-4c48-b254-25b2f971e1a3">/MICROSAR/Os_swc/Interfaces/Os_Service/E_OK</SD>
+                                    <SD GID="24f803aa-ff2a-44ca-8b2d-05d2658f45bf">/MICROSAR/Os_swc/Interfaces/Os_Service/E_OS_ACCESS</SD>
+                                    <SD GID="944c2c93-d0af-4276-bd7d-239424747a53">/MICROSAR/Os_swc/Interfaces/Os_Service/E_OS_ID</SD>
+                                    <SD GID="993fd511-169e-4db2-b046-a51c9391e247">/MICROSAR/Os_swc/Interfaces/Os_Service/E_OS_STATE</SD>
+                                    <SD GID="d59259ac-1551-4d6f-a6e1-656fe84a52dd">/MICROSAR/Os_swc/Interfaces/Os_Service/E_OS_VALUE</SD>
+                                    <SD GID="6f204299-360b-46a7-9c35-c98b389a3589">/MICROSAR/Os_swc/Interfaces/Os_Service/GetCounterValue</SD>
+                                    <SD GID="77f5a925-2693-4549-90ff-d26f8e7c0c15">/MICROSAR/Os_swc/Interfaces/Os_Service/GetCounterValue/Value</SD>
+                                    <SD GID="74463be2-a1c7-4640-8ea6-fd8380aeafbc">/MICROSAR/Os_swc/Interfaces/Os_Service/GetElapsedValue</SD>
+                                    <SD GID="3351999b-1042-44a1-b701-cae708289900">/MICROSAR/Os_swc/Interfaces/Os_Service/GetElapsedValue/ElapsedValue</SD>
+                                    <SD GID="6584e995-986f-4158-8658-d83b06e9af82">/MICROSAR/Os_swc/Interfaces/Os_Service/GetElapsedValue/Value</SD>
+                                    <SD GID="a9397272-c515-47c8-96e4-da460bf384ab">/MICROSAR/Rte_ib_bswmd</SD>
+                                    <SD GID="726965ce-f677-4f50-8998-ce8262418949">/MICROSAR/Rte_ib_bswmd/BswModuleDescriptions</SD>
+                                    <SD GID="29555de6-b57c-4359-9b66-0d416c7cd1a9">/MICROSAR/Rte_ib_bswmd/BswModuleDescriptions/Rte/RteBehavior</SD>
+                                    <SD GID="3cfc2e14-d192-4090-8c37-ba1ace7a550e">/MICROSAR/Rte_ib_bswmd/XcpEvents</SD>
+                                    <SD GID="{AF35D1D4-4362-4055-B014-780FA6F9E75B}">/Predefined_DEV/CompuMethods/Dem_UdsStatusByteType</SD>
+                                    <SD GID="F2570AA0-D6E5-4217-80F7-5F60B8778133">/Predefined_DEV/CompuMethods/NvM_RequestResultType</SD>
+                                    <SD GID="007B24D3-5C46-4986-B3CA-31D71FEDD510">/Predefined_DEV/CompuMethods/NvM_ServiceIdType</SD>
+                                    <SD GID="B61F75E9-1D25-4985-8CF8-884D2270DC77">/Predefined_DEV/DataConstraints/Dem_UdsStatusByteType</SD>
+                                    <SD GID="{BFD05982-482E-4C42-9D53-AEC2E5E9005D}">/Predefined_DEV/ImplementationDataTypes/Dem_UdsStatusByteType</SD>
+                                    <SD GID="91037BEA-8260-4D81-AF92-D77F36795EEF">/Predefined_DEV/ImplementationDataTypes/NvM_RequestResultType</SD>
+                                    <SD GID="E8567FAC-3DF7-4B9A-AE12-961DD3DAE8F3">/Predefined_DEV/ImplementationDataTypes/NvM_ServiceIdType</SD>
+                                    <SD GID="{4C2A25CC-37AD-475E-9DBB-130FFB6A501C}">/Predefined_DEV/PortInterfaces/CallbackDTCStatusChange/E_NOT_OK</SD>
+                                    <SD GID="74CED587-616F-4D06-917E-3F53B5BEEA2D">/Predefined_DEV/PortInterfaces/NvMAdministration/E_NOT_OK</SD>
+                                    <SD GID="A7AFD599-1333-460B-8602-E5B8D38BC232">/Predefined_DEV/PortInterfaces/NvMService/E_NOT_OK</SD>
+                                    <SD GID="955CA27E-4944-411C-BAAE-69B1FC02E735">/Predefined_DEV/PortInterfaces/NvMService_AC2/E_NOT_OK</SD>
+                                    <SD GID="AE7C0F3C-1FF2-4885-AC24-720F2C4803CC">/Predefined_DEV/PortInterfaces/NvMService_AC2_DS/E_NOT_OK</SD>
+                                    <SD GID="6972E423-93E3-412A-B274-623A39FD4885">/Predefined_DEV/PortInterfaces/NvMService_AC2_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="F57D208E-3B24-44B1-85E2-6DE677CE2E4C">/Predefined_DEV/PortInterfaces/NvMService_AC2_Defs/E_NOT_OK</SD>
+                                    <SD GID="AC97B486-472E-4E26-9095-534043BD6059">/Predefined_DEV/PortInterfaces/NvMService_AC2_SRBS/E_NOT_OK</SD>
+                                    <SD GID="DD49315B-E90D-42DE-84EB-9038C40AC0F4">/Predefined_DEV/PortInterfaces/NvMService_AC2_SRBS_DS/E_NOT_OK</SD>
+                                    <SD GID="35C3D373-0A95-48FB-A7E8-C6547D847643">/Predefined_DEV/PortInterfaces/NvMService_AC2_SRBS_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="3A6380A3-5689-4BF4-8130-4077BF42A783">/Predefined_DEV/PortInterfaces/NvMService_AC2_SRBS_Defs/E_NOT_OK</SD>
+                                    <SD GID="411B4EE7-B370-4551-84C5-F2CBA01BEF63">/Predefined_DEV/PortInterfaces/NvMService_AC3/E_NOT_OK</SD>
+                                    <SD GID="E970E446-1330-433C-92DD-02B1B320873E">/Predefined_DEV/PortInterfaces/NvMService_AC3_DS/E_NOT_OK</SD>
+                                    <SD GID="37C797B4-27EB-423F-A6B1-ACFC4F2468BA">/Predefined_DEV/PortInterfaces/NvMService_AC3_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="3A6983A4-9F58-4C23-856C-E88B9E309311">/Predefined_DEV/PortInterfaces/NvMService_AC3_Defs/E_NOT_OK</SD>
+                                    <SD GID="0FB784A8-81A7-4D73-A273-2637B6C95B77">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS/E_NOT_OK</SD>
+                                    <SD GID="85EB2C6E-0E4E-4FD7-81B6-0A478E1FDCE9">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS_DS/E_NOT_OK</SD>
+                                    <SD GID="B317254F-A1D4-4ABA-B790-A9B56185F29F">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="5D147234-5CAA-49EC-92C2-8599A89FC2ED">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS_Defs/E_NOT_OK</SD>
+                                    <SD GID="C25D8A75-6B98-417F-AE89-B977A098FAE3">/Predefined_DEV/PortInterfaces/NvMService_SRBS/E_NOT_OK</SD>
+                                    <SD GID="6B9A70AB-B127-4BE0-815D-B29710D5293F">/Predefined_DEV/PortInterfaces/NvSWC_NvMAdministration/E_NOT_OK</SD>
+                                    <SD GID="7E3CE6B8-1997-44D8-B698-F6983653F390">/Predefined_DEV/PortInterfaces/NvSWC_NvMService/E_NOT_OK</SD>
+                                    <SD GID="87E31B18-FBF9-45FB-AE02-54D03CC44410">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2/E_NOT_OK</SD>
+                                    <SD GID="86679F7A-9112-41EA-8CE9-7B0B64F8F10E">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2_DS/E_NOT_OK</SD>
+                                    <SD GID="2CD9C18B-1508-4E06-AE5B-55EB6ED4AE1E">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="38196A38-C113-403E-8710-D9A4DB2DCB7C">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2_Defs/E_NOT_OK</SD>
+                                    <SD GID="212FF34E-F98B-4B8F-A93C-806D768CCA6B">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2_SRBS/E_NOT_OK</SD>
+                                    <SD GID="4B0CB611-845A-46B4-8804-A72E3DDBC280">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2_SRBS_DS/E_NOT_OK</SD>
+                                    <SD GID="F8510316-D4F5-4099-8C4B-8B535F0DC637">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2_SRBS_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="8D4913EF-2DCA-499E-B61F-7A0C820299B6">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2_SRBS_Defs/E_NOT_OK</SD>
+                                    <SD GID="C3F8628D-F73F-4A7A-839D-42D24BF6C335">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3/E_NOT_OK</SD>
+                                    <SD GID="A406FAE2-1978-4E73-835D-ACE055CE3276">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_DS/E_NOT_OK</SD>
+                                    <SD GID="F6CF58F3-F332-4C16-8B77-3B3431B7291B">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="91D780B3-A8A2-4E9B-842F-B5946B451CCC">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_Defs/E_NOT_OK</SD>
+                                    <SD GID="419091BB-CC3F-4518-9B87-F2C428DE884F">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_SRBS/E_NOT_OK</SD>
+                                    <SD GID="E2B7EDDF-443E-4066-8CC0-428C08FE9932">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_SRBS_DS/E_NOT_OK</SD>
+                                    <SD GID="29D8C45D-AD65-4ADB-A8C0-9051D3BA8EB3">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_SRBS_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="B0DF499C-5446-40C9-BA84-69FE6BBA9AFA">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_SRBS_Defs/E_NOT_OK</SD>
+                                    <SD GID="6C11D3FD-1F97-4F18-9F28-AEBD06095420">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_SRBS/E_NOT_OK</SD>
+                                    <SD GID="B033F6B0-3907-4AE7-BCF3-1AE356C3C7FE">/Systems/last364/EcuSwComposition</SD>
+                                  </SDG>
+                                </SDGS>
+                              </ADMIN-DATA>
+                            </AR-PACKAGE>
+                          </AR-PACKAGES>
+                        </AR-PACKAGE>
+                      </AR-PACKAGES>
+                    </AR-PACKAGE>
+                  </AR-PACKAGES>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,1448 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc4416a --dep-file=Appl\\GenData\\.BswM_Lcfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\mak -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Make -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteAnalyzer -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteAnalyzer\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache\\-148438436 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Platform -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Platform\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=Appl\\GenData\\BswM_Lcfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\BswM_Lcfg.src ..\\Appl\\GenData\\BswM_Lcfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\GenData\\BswM_Lcfg.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.BswM_Lcfg.BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION',code,cluster('BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION')
+	.sect	'.text.BswM_Lcfg.BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION'
+	.align	2
+	
+
+; ..\Appl\GenData\BswM_Lcfg.c	     1  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	     2   *  COPYRIGHT
+; ..\Appl\GenData\BswM_Lcfg.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\BswM_Lcfg.c	     4   *  \verbatim
+; ..\Appl\GenData\BswM_Lcfg.c	     5   *
+; ..\Appl\GenData\BswM_Lcfg.c	     6   *                 This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\Appl\GenData\BswM_Lcfg.c	     7   *                 Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\Appl\GenData\BswM_Lcfg.c	     8   *                 All other rights remain with Vector Informatik GmbH.
+; ..\Appl\GenData\BswM_Lcfg.c	     9   *  \endverbatim
+; ..\Appl\GenData\BswM_Lcfg.c	    10   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\BswM_Lcfg.c	    11   *  LICENSE
+; ..\Appl\GenData\BswM_Lcfg.c	    12   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\BswM_Lcfg.c	    13   *            Module: BswM
+; ..\Appl\GenData\BswM_Lcfg.c	    14   *           Program: MSR_Vector_SLP4
+; ..\Appl\GenData\BswM_Lcfg.c	    15   *          Customer: China Lithium Battery Technology Co., Ltd.
+; ..\Appl\GenData\BswM_Lcfg.c	    16   *       Expiry Date: 2025-08-26
+; ..\Appl\GenData\BswM_Lcfg.c	    17   *  Ordered Derivat.: SAK-TC387QP-160F300S AE
+; ..\Appl\GenData\BswM_Lcfg.c	    18   *    License Scope : The usage is restricted to CBD2200508_D00
+; ..\Appl\GenData\BswM_Lcfg.c	    19   *
+; ..\Appl\GenData\BswM_Lcfg.c	    20   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\BswM_Lcfg.c	    21   *  FILE DESCRIPTION
+; ..\Appl\GenData\BswM_Lcfg.c	    22   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\BswM_Lcfg.c	    23   *              File: BswM_Lcfg.c
+; ..\Appl\GenData\BswM_Lcfg.c	    24   *   Generation Time: 2024-06-29 19:55:15
+; ..\Appl\GenData\BswM_Lcfg.c	    25   *           Project: last364 - Version 1.0
+; ..\Appl\GenData\BswM_Lcfg.c	    26   *          Delivery: CBD2200508_D00
+; ..\Appl\GenData\BswM_Lcfg.c	    27   *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
+; ..\Appl\GenData\BswM_Lcfg.c	    28   *
+; ..\Appl\GenData\BswM_Lcfg.c	    29   *
+; ..\Appl\GenData\BswM_Lcfg.c	    30   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	    31  
+; ..\Appl\GenData\BswM_Lcfg.c	    32  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	    33   ! BETA VERSION                                                                                                       !
+; ..\Appl\GenData\BswM_Lcfg.c	    34   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\Appl\GenData\BswM_Lcfg.c	    35   ! This version of DaVinci Configurator Classic and/or the related Basic Software Package is BETA software.               !
+; ..\Appl\GenData\BswM_Lcfg.c	    36   ! BETA Software is basically operable, but not sufficiently tested, verified and/or qualified for use in series      !
+; ..\Appl\GenData\BswM_Lcfg.c	    37   ! production and/or in vehicles operating on public or non-public roads.                                             !
+; ..\Appl\GenData\BswM_Lcfg.c	    38   ! In particular, without limitation, BETA Software may cause unpredictable ECU behavior, may not provide all         !
+; ..\Appl\GenData\BswM_Lcfg.c	    39   ! functions necessary for use in series production and/or may not comply with quality requirements which are         !
+; ..\Appl\GenData\BswM_Lcfg.c	    40   ! necessary according to the state of the art. BETA Software must not be used in series production.                  !
+; ..\Appl\GenData\BswM_Lcfg.c	    41   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\Appl\GenData\BswM_Lcfg.c	    42  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	    43  
+; ..\Appl\GenData\BswM_Lcfg.c	    44  #define BSWM_LCFG_SOURCE
+; ..\Appl\GenData\BswM_Lcfg.c	    45  
+; ..\Appl\GenData\BswM_Lcfg.c	    46  /* -----------------------------------------------------------------------------
+; ..\Appl\GenData\BswM_Lcfg.c	    47      &&&~ MISRA JUSTIFICATION
+; ..\Appl\GenData\BswM_Lcfg.c	    48   ----------------------------------------------------------------------------- */
+; ..\Appl\GenData\BswM_Lcfg.c	    49  /* PRQA S 0785, 0786 EOF */ /* MD_CSL_DistinctIdentifiers */
+; ..\Appl\GenData\BswM_Lcfg.c	    50  
+; ..\Appl\GenData\BswM_Lcfg.c	    51  /* -----------------------------------------------------------------------------
+; ..\Appl\GenData\BswM_Lcfg.c	    52      &&&~ INCLUDE
+; ..\Appl\GenData\BswM_Lcfg.c	    53   ----------------------------------------------------------------------------- */
+; ..\Appl\GenData\BswM_Lcfg.c	    54  /* PRQA S 0857 EOF */ /* MD_MSR_1.1_857 */
+; ..\Appl\GenData\BswM_Lcfg.c	    55  #include "BswM.h"
+; ..\Appl\GenData\BswM_Lcfg.c	    56  #include "BswM_Private_Cfg.h"
+; ..\Appl\GenData\BswM_Lcfg.c	    57  #include "SchM_BswM.h"
+; ..\Appl\GenData\BswM_Lcfg.c	    58  
+; ..\Appl\GenData\BswM_Lcfg.c	    59  #if !defined (BSWM_LOCAL)
+; ..\Appl\GenData\BswM_Lcfg.c	    60  # define BSWM_LOCAL static
+; ..\Appl\GenData\BswM_Lcfg.c	    61  #endif
+; ..\Appl\GenData\BswM_Lcfg.c	    62  
+; ..\Appl\GenData\BswM_Lcfg.c	    63  #if !defined (BSWM_LOCAL_INLINE) /* COV_BSWM_LOCAL_INLINE */
+; ..\Appl\GenData\BswM_Lcfg.c	    64  # define BSWM_LOCAL_INLINE LOCAL_INLINE
+; ..\Appl\GenData\BswM_Lcfg.c	    65  #endif
+; ..\Appl\GenData\BswM_Lcfg.c	    66  
+; ..\Appl\GenData\BswM_Lcfg.c	    67  
+; ..\Appl\GenData\BswM_Lcfg.c	    68  
+; ..\Appl\GenData\BswM_Lcfg.c	    69  #define BSWM_START_SEC_CODE
+; ..\Appl\GenData\BswM_Lcfg.c	    70  /* PRQA S 5087 1 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	    71  #include "BswM_MemMap.h"
+; ..\Appl\GenData\BswM_Lcfg.c	    72  
+; ..\Appl\GenData\BswM_Lcfg.c	    73  /* -----------------------------------------------------------------------------
+; ..\Appl\GenData\BswM_Lcfg.c	    74      &&&~ LOCAL FUNCTION DECLARATIONS
+; ..\Appl\GenData\BswM_Lcfg.c	    75   ----------------------------------------------------------------------------- */
+; ..\Appl\GenData\BswM_Lcfg.c	    76  
+; ..\Appl\GenData\BswM_Lcfg.c	    77  
+; ..\Appl\GenData\BswM_Lcfg.c	    78  
+; ..\Appl\GenData\BswM_Lcfg.c	    79  /*! \addtogroup    BswMGeneratedFunctions BswM Generated Functions
+; ..\Appl\GenData\BswM_Lcfg.c	    80   * \{
+; ..\Appl\GenData\BswM_Lcfg.c	    81   */
+; ..\Appl\GenData\BswM_Lcfg.c	    82  /* PRQA S 0779 FUNCTIONDECLARATIONS */ /* MD_MSR_Rule5.2_0779 */
+; ..\Appl\GenData\BswM_Lcfg.c	    83  
+; ..\Appl\GenData\BswM_Lcfg.c	    84  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	    85   *  Init
+; ..\Appl\GenData\BswM_Lcfg.c	    86   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	    87  /*! \defgroup    Init
+; ..\Appl\GenData\BswM_Lcfg.c	    88   * \{
+; ..\Appl\GenData\BswM_Lcfg.c	    89   */
+; ..\Appl\GenData\BswM_Lcfg.c	    90  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	    91   *  BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION
+; ..\Appl\GenData\BswM_Lcfg.c	    92   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	    93  /*!
+; ..\Appl\GenData\BswM_Lcfg.c	    94   * \brief       Initializes BswM.
+; ..\Appl\GenData\BswM_Lcfg.c	    95   * \details     Part of the BswM_Init. Initializes all generated variables and executes action lists for initialization.
+; ..\Appl\GenData\BswM_Lcfg.c	    96   * \pre         -
+; ..\Appl\GenData\BswM_Lcfg.c	    97   * \reentrant   FALSE
+; ..\Appl\GenData\BswM_Lcfg.c	    98   * \synchronous TRUE
+; ..\Appl\GenData\BswM_Lcfg.c	    99   * \note        May only be called by BswM_Init.
+; ..\Appl\GenData\BswM_Lcfg.c	   100   */
+; ..\Appl\GenData\BswM_Lcfg.c	   101  BSWM_LOCAL FUNC(void, BSWM_CODE) BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx);
+; ..\Appl\GenData\BswM_Lcfg.c	   102  /*! \} */ /* End of group Init */
+; ..\Appl\GenData\BswM_Lcfg.c	   103  
+; ..\Appl\GenData\BswM_Lcfg.c	   104  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   105   *  BswMActionListFunctions
+; ..\Appl\GenData\BswM_Lcfg.c	   106   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   107  /*! \defgroup    BswMActionListFunctions
+; ..\Appl\GenData\BswM_Lcfg.c	   108   * \{
+; ..\Appl\GenData\BswM_Lcfg.c	   109   */
+; ..\Appl\GenData\BswM_Lcfg.c	   110  
+; ..\Appl\GenData\BswM_Lcfg.c	   111  /*!
+; ..\Appl\GenData\BswM_Lcfg.c	   112   * \{
+; ..\Appl\GenData\BswM_Lcfg.c	   113   * \brief       Execute actions of action list.
+; ..\Appl\GenData\BswM_Lcfg.c	   114   * \details     Generated function which depends on the configuration. Executes the actions of the action list in the
+; ..\Appl\GenData\BswM_Lcfg.c	   115   *              configured order.
+; ..\Appl\GenData\BswM_Lcfg.c	   116   * \return      E_OK      Action list was completely executed.
+; ..\Appl\GenData\BswM_Lcfg.c	   117   * \return      E_NOT_OK  Action list was aborted because an action failed.
+; ..\Appl\GenData\BswM_Lcfg.c	   118   * \pre         -
+; ..\Appl\GenData\BswM_Lcfg.c	   119   * \context     ANY
+; ..\Appl\GenData\BswM_Lcfg.c	   120   * \reentrant   TRUE
+; ..\Appl\GenData\BswM_Lcfg.c	   121   * \synchronous TRUE
+; ..\Appl\GenData\BswM_Lcfg.c	   122   */
+; ..\Appl\GenData\BswM_Lcfg.c	   123  BSWM_LOCAL FUNC(Std_ReturnType, BSWM_CODE) BswM_ActionList_INIT_AL_Initialize(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx);
+; ..\Appl\GenData\BswM_Lcfg.c	   124  /*! \} */ /* End of sharing description for BswMActionListFunctions */
+; ..\Appl\GenData\BswM_Lcfg.c	   125  /*! \} */ /* End of group BswMActionListFunctions */
+; ..\Appl\GenData\BswM_Lcfg.c	   126  /* PRQA L:FUNCTIONDECLARATIONS */
+; ..\Appl\GenData\BswM_Lcfg.c	   127  /*! \} */ /* End of group BswMGeneratedFunctions */
+; ..\Appl\GenData\BswM_Lcfg.c	   128  
+; ..\Appl\GenData\BswM_Lcfg.c	   129  #define BSWM_STOP_SEC_CODE
+; ..\Appl\GenData\BswM_Lcfg.c	   130  /* PRQA S 5087 1 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   131  #include "BswM_MemMap.h"
+; ..\Appl\GenData\BswM_Lcfg.c	   132  
+; ..\Appl\GenData\BswM_Lcfg.c	   133  
+; ..\Appl\GenData\BswM_Lcfg.c	   134  /* -----------------------------------------------------------------------------
+; ..\Appl\GenData\BswM_Lcfg.c	   135      &&&~ LOCAL VARIABLE DECLARATIONS
+; ..\Appl\GenData\BswM_Lcfg.c	   136   ----------------------------------------------------------------------------- */
+; ..\Appl\GenData\BswM_Lcfg.c	   137  
+; ..\Appl\GenData\BswM_Lcfg.c	   138  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   139   *  LOCAL DATA PROTOTYPES
+; ..\Appl\GenData\BswM_Lcfg.c	   140  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   141  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   142    CONFIGURATION CLASS: PRE_COMPILE
+; ..\Appl\GenData\BswM_Lcfg.c	   143    SECTION: LOCAL DATA PROTOTYPES
+; ..\Appl\GenData\BswM_Lcfg.c	   144  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   145  
+; ..\Appl\GenData\BswM_Lcfg.c	   146  
+; ..\Appl\GenData\BswM_Lcfg.c	   147  
+; ..\Appl\GenData\BswM_Lcfg.c	   148  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   149   *  LOCAL DATA
+; ..\Appl\GenData\BswM_Lcfg.c	   150  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   151  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   152    CONFIGURATION CLASS: PRE_COMPILE
+; ..\Appl\GenData\BswM_Lcfg.c	   153    SECTION: LOCAL DATA
+; ..\Appl\GenData\BswM_Lcfg.c	   154  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   155  
+; ..\Appl\GenData\BswM_Lcfg.c	   156  
+; ..\Appl\GenData\BswM_Lcfg.c	   157  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   158   *  GLOBAL DATA
+; ..\Appl\GenData\BswM_Lcfg.c	   159  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   160  
+; ..\Appl\GenData\BswM_Lcfg.c	   161  
+; ..\Appl\GenData\BswM_Lcfg.c	   162  /* PRQA S 0310 GLOBALDATADECLARATIONS */ /* MD_BSWM_0310 */ 
+; ..\Appl\GenData\BswM_Lcfg.c	   163  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   164    CONFIGURATION CLASS: PRE_COMPILE
+; ..\Appl\GenData\BswM_Lcfg.c	   165    SECTION: GLOBAL DATA
+; ..\Appl\GenData\BswM_Lcfg.c	   166  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   167  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   168    BswM_ActionLists
+; ..\Appl\GenData\BswM_Lcfg.c	   169  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   170  /** 
+; ..\Appl\GenData\BswM_Lcfg.c	   171    \var    BswM_ActionLists
+; ..\Appl\GenData\BswM_Lcfg.c	   172    \details
+; ..\Appl\GenData\BswM_Lcfg.c	   173    Element    Description
+; ..\Appl\GenData\BswM_Lcfg.c	   174    FctPtr     Pointer to the array list function.
+; ..\Appl\GenData\BswM_Lcfg.c	   175  */ 
+; ..\Appl\GenData\BswM_Lcfg.c	   176  #define BSWM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\BswM_Lcfg.c	   177  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   178  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   179  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   180  CONST(BswM_ActionListsType, BSWM_CONST) BswM_ActionLists[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\BswM_Lcfg.c	   181      /* Index    FctPtr                                    Comment                   Referable Keys */
+; ..\Appl\GenData\BswM_Lcfg.c	   182    { /*     0 */ BswM_ActionList_INIT_AL_Initialize }   /* [Priority: 0] */  /* [AL_INIT_AL_Initialize] */
+; ..\Appl\GenData\BswM_Lcfg.c	   183  };
+; ..\Appl\GenData\BswM_Lcfg.c	   184  #define BSWM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\BswM_Lcfg.c	   185  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   186  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   187  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   188  
+; ..\Appl\GenData\BswM_Lcfg.c	   189  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   190    BswM_InitGenVarAndInitAL
+; ..\Appl\GenData\BswM_Lcfg.c	   191  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   192  #define BSWM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\BswM_Lcfg.c	   193  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   194  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   195  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   196  CONST(BswM_InitGenVarAndInitALType, BSWM_CONST) BswM_InitGenVarAndInitAL[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\BswM_Lcfg.c	   197    /* Index     InitGenVarAndInitAL                            */
+; ..\Appl\GenData\BswM_Lcfg.c	   198    /*     0 */ BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION 
+; ..\Appl\GenData\BswM_Lcfg.c	   199  };
+; ..\Appl\GenData\BswM_Lcfg.c	   200  #define BSWM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\BswM_Lcfg.c	   201  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   202  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   203  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   204  
+; ..\Appl\GenData\BswM_Lcfg.c	   205  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   206    BswM_PartitionIdentifiers
+; ..\Appl\GenData\BswM_Lcfg.c	   207  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   208  /** 
+; ..\Appl\GenData\BswM_Lcfg.c	   209    \var    BswM_PartitionIdentifiers
+; ..\Appl\GenData\BswM_Lcfg.c	   210    \brief  the partition context in Config
+; ..\Appl\GenData\BswM_Lcfg.c	   211    \details
+; ..\Appl\GenData\BswM_Lcfg.c	   212    Element                 Description
+; ..\Appl\GenData\BswM_Lcfg.c	   213    PartitionSNV        
+; ..\Appl\GenData\BswM_Lcfg.c	   214    PCPartitionConfigIdx    the index of the 1:1 relation pointing to BswM_PCPartitionConfig
+; ..\Appl\GenData\BswM_Lcfg.c	   215  */ 
+; ..\Appl\GenData\BswM_Lcfg.c	   216  #define BSWM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\BswM_Lcfg.c	   217  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   218  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   219  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   220  CONST(BswM_PartitionIdentifiersType, BSWM_CONST) BswM_PartitionIdentifiers[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\BswM_Lcfg.c	   221      /* Index    PartitionSNV          PCPartitionConfigIdx */
+; ..\Appl\GenData\BswM_Lcfg.c	   222    { /*     0 */ BSWM_SINGLEPARTITION,                   0u }
+; ..\Appl\GenData\BswM_Lcfg.c	   223  };
+; ..\Appl\GenData\BswM_Lcfg.c	   224  #define BSWM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\BswM_Lcfg.c	   225  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   226  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   227  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   228  
+; ..\Appl\GenData\BswM_Lcfg.c	   229  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   230    BswM_ActionListQueue
+; ..\Appl\GenData\BswM_Lcfg.c	   231  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   232  /** 
+; ..\Appl\GenData\BswM_Lcfg.c	   233    \var    BswM_ActionListQueue
+; ..\Appl\GenData\BswM_Lcfg.c	   234    \brief  Variable to store action lists which shall be executed.
+; ..\Appl\GenData\BswM_Lcfg.c	   235  */ 
+; ..\Appl\GenData\BswM_Lcfg.c	   236  #define BSWM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   237  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   238  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   239  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   240  VAR(BswM_ActionListQueueUType, BSWM_VAR_NO_INIT) BswM_ActionListQueue;  /* PRQA S 0759, 1514, 1533 */  /* MD_CSL_Union, MD_CSL_ObjectOnlyAccessedOnce, MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\BswM_Lcfg.c	   241    /* Index        Referable Keys */
+; ..\Appl\GenData\BswM_Lcfg.c	   242    /*     0 */  /* [AL_INIT_AL_Initialize] */
+; ..\Appl\GenData\BswM_Lcfg.c	   243  
+; ..\Appl\GenData\BswM_Lcfg.c	   244  #define BSWM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   245  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   246  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   247  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   248  
+; ..\Appl\GenData\BswM_Lcfg.c	   249  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   250    BswM_ForcedActionListPriority
+; ..\Appl\GenData\BswM_Lcfg.c	   251  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   252  #define BSWM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   253  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   254  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   255  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   256  VAR(BswM_ForcedActionListPriorityType, BSWM_VAR_NO_INIT) BswM_ForcedActionListPriority;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\BswM_Lcfg.c	   257  #define BSWM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   258  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   259  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   260  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   261  
+; ..\Appl\GenData\BswM_Lcfg.c	   262  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   263    BswM_Initialized
+; ..\Appl\GenData\BswM_Lcfg.c	   264  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   265  #define BSWM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   266  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   267  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   268  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   269  VAR(BswM_InitializedType, BSWM_VAR_NO_INIT) BswM_Initialized;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\BswM_Lcfg.c	   270  #define BSWM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   271  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   272  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   273  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   274  
+; ..\Appl\GenData\BswM_Lcfg.c	   275  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   276    BswM_QueueSemaphore
+; ..\Appl\GenData\BswM_Lcfg.c	   277  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   278  #define BSWM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   279  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   280  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   281  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   282  VAR(BswM_QueueSemaphoreType, BSWM_VAR_NO_INIT) BswM_QueueSemaphore;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\BswM_Lcfg.c	   283  #define BSWM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   284  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   285  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   286  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   287  
+; ..\Appl\GenData\BswM_Lcfg.c	   288  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   289    BswM_QueueWritten
+; ..\Appl\GenData\BswM_Lcfg.c	   290  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   291  #define BSWM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   292  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   293  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   294  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   295  VAR(BswM_QueueWrittenType, BSWM_VAR_NO_INIT) BswM_QueueWritten;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\BswM_Lcfg.c	   296  #define BSWM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   297  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   298  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   299  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   300  
+; ..\Appl\GenData\BswM_Lcfg.c	   301  
+; ..\Appl\GenData\BswM_Lcfg.c	   302  /* PRQA L:GLOBALDATADECLARATIONS */
+; ..\Appl\GenData\BswM_Lcfg.c	   303  
+; ..\Appl\GenData\BswM_Lcfg.c	   304  #define BSWM_START_SEC_VAR_NO_INIT_UNSPECIFIED
+; ..\Appl\GenData\BswM_Lcfg.c	   305  /* PRQA S 5087 1 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   306  #include "BswM_MemMap.h"
+; ..\Appl\GenData\BswM_Lcfg.c	   307  
+; ..\Appl\GenData\BswM_Lcfg.c	   308  
+; ..\Appl\GenData\BswM_Lcfg.c	   309  
+; ..\Appl\GenData\BswM_Lcfg.c	   310  
+; ..\Appl\GenData\BswM_Lcfg.c	   311  VAR(boolean, BSWM_VAR_NO_INIT) BswM_PreInitialized;
+; ..\Appl\GenData\BswM_Lcfg.c	   312  #define BSWM_STOP_SEC_VAR_NO_INIT_UNSPECIFIED
+; ..\Appl\GenData\BswM_Lcfg.c	   313  /* PRQA S 5087 1 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   314  #include "BswM_MemMap.h"
+; ..\Appl\GenData\BswM_Lcfg.c	   315  
+; ..\Appl\GenData\BswM_Lcfg.c	   316  
+; ..\Appl\GenData\BswM_Lcfg.c	   317  #define BSWM_START_SEC_CODE
+; ..\Appl\GenData\BswM_Lcfg.c	   318  /* PRQA S 5087 1 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   319  #include "BswM_MemMap.h"
+; ..\Appl\GenData\BswM_Lcfg.c	   320  
+; ..\Appl\GenData\BswM_Lcfg.c	   321  /* -----------------------------------------------------------------------------
+; ..\Appl\GenData\BswM_Lcfg.c	   322      &&&~ FUNCTIONS
+; ..\Appl\GenData\BswM_Lcfg.c	   323   ----------------------------------------------------------------------------- */
+; ..\Appl\GenData\BswM_Lcfg.c	   324   
+; ..\Appl\GenData\BswM_Lcfg.c	   325  
+; ..\Appl\GenData\BswM_Lcfg.c	   326  
+; ..\Appl\GenData\BswM_Lcfg.c	   327  
+; ..\Appl\GenData\BswM_Lcfg.c	   328  
+; ..\Appl\GenData\BswM_Lcfg.c	   329  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   330   *  BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION
+; ..\Appl\GenData\BswM_Lcfg.c	   331   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   332  BSWM_LOCAL FUNC(void, BSWM_CODE) BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx)
+; Function BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION
+.L4:
+BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION:	.type	func
+
+; ..\Appl\GenData\BswM_Lcfg.c	   333  {
+; ..\Appl\GenData\BswM_Lcfg.c	   334  
+; ..\Appl\GenData\BswM_Lcfg.c	   335    (void)BswM_ActionList_INIT_AL_Initialize(partitionIdx);
+	j	BswM_ActionList_INIT_AL_Initialize
+.L39:
+	
+__BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION_function_end:
+	.size	BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION,__BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION_function_end-BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION
+.L15:
+	; End of function
+	
+	.sdecl	'.text.BswM_Lcfg.BswM_ActionList_INIT_AL_Initialize',code,cluster('BswM_ActionList_INIT_AL_Initialize')
+	.sect	'.text.BswM_Lcfg.BswM_ActionList_INIT_AL_Initialize'
+	.align	2
+	
+
+; ..\Appl\GenData\BswM_Lcfg.c	   336    BSWM_DUMMY_STATEMENT(partitionIdx); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\Appl\GenData\BswM_Lcfg.c	   337  }
+; ..\Appl\GenData\BswM_Lcfg.c	   338  
+; ..\Appl\GenData\BswM_Lcfg.c	   339  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   340   *  BswMActionListFunctions
+; ..\Appl\GenData\BswM_Lcfg.c	   341   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   342  
+; ..\Appl\GenData\BswM_Lcfg.c	   343  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   344   *  BswM_ActionList_INIT_AL_Initialize
+; ..\Appl\GenData\BswM_Lcfg.c	   345   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   346  BSWM_LOCAL FUNC(Std_ReturnType, BSWM_CODE) BswM_ActionList_INIT_AL_Initialize(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx)
+; Function BswM_ActionList_INIT_AL_Initialize
+.L6:
+BswM_ActionList_INIT_AL_Initialize:	.type	func
+
+; ..\Appl\GenData\BswM_Lcfg.c	   347  {
+; ..\Appl\GenData\BswM_Lcfg.c	   348    /*lint -save -e534 *//* PRQA S 3109, 3200 1 */ /* MD_MSR_14.3, MD_BSWM_3200 */
+; ..\Appl\GenData\BswM_Lcfg.c	   349    Det_Init(Det_Config_Ptr);
+	mov.a	a4,#0
+	call	Det_Init
+.L48:
+
+; ..\Appl\GenData\BswM_Lcfg.c	   350    /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   351    BswM_AL_SetProgrammableInterrupts();
+	call	BswM_AL_SetProgrammableInterrupts
+.L61:
+
+; ..\Appl\GenData\BswM_Lcfg.c	   352    BSWM_DUMMY_STATEMENT(partitionIdx); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\Appl\GenData\BswM_Lcfg.c	   353    return E_OK;
+; ..\Appl\GenData\BswM_Lcfg.c	   354  }/* PRQA S 6010, 6030, 6050 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL */
+	mov	d2,#0
+	ret
+.L42:
+	
+__BswM_ActionList_INIT_AL_Initialize_function_end:
+	.size	BswM_ActionList_INIT_AL_Initialize,__BswM_ActionList_INIT_AL_Initialize_function_end-BswM_ActionList_INIT_AL_Initialize
+.L20:
+	; End of function
+	
+	.sdecl	'.zrodata.BswM_Lcfg.BswM_ActionLists',data,rom,cluster('BswM_ActionLists')
+	.sect	'.zrodata.BswM_Lcfg.BswM_ActionLists'
+	.global	BswM_ActionLists
+	.align	4
+BswM_ActionLists:	.type	object
+	.size	BswM_ActionLists,4
+	.word	BswM_ActionList_INIT_AL_Initialize
+	.sdecl	'.zrodata.BswM_Lcfg.BswM_InitGenVarAndInitAL',data,rom,cluster('BswM_InitGenVarAndInitAL')
+	.sect	'.zrodata.BswM_Lcfg.BswM_InitGenVarAndInitAL'
+	.global	BswM_InitGenVarAndInitAL
+	.align	4
+BswM_InitGenVarAndInitAL:	.type	object
+	.size	BswM_InitGenVarAndInitAL,4
+	.word	BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION
+	.sdecl	'.zrodata.BswM_Lcfg.BswM_PartitionIdentifiers',data,rom,cluster('BswM_PartitionIdentifiers')
+	.sect	'.zrodata.BswM_Lcfg.BswM_PartitionIdentifiers'
+	.global	BswM_PartitionIdentifiers
+	.align	2
+BswM_PartitionIdentifiers:	.type	object
+	.size	BswM_PartitionIdentifiers,6
+	.space	6
+	.sdecl	'.zbss.BswM_Lcfg.BswM_ActionListQueue',data,cluster('BswM_ActionListQueue')
+	.sect	'.zbss.BswM_Lcfg.BswM_ActionListQueue'
+	.global	BswM_ActionListQueue
+BswM_ActionListQueue:	.type	object
+	.size	BswM_ActionListQueue,1
+	.space	1
+	.sdecl	'.zbss.BswM_Lcfg.BswM_ForcedActionListPriority',data,cluster('BswM_ForcedActionListPriority')
+	.sect	'.zbss.BswM_Lcfg.BswM_ForcedActionListPriority'
+	.global	BswM_ForcedActionListPriority
+BswM_ForcedActionListPriority:	.type	object
+	.size	BswM_ForcedActionListPriority,1
+	.space	1
+	.sdecl	'.zbss.BswM_Lcfg.BswM_Initialized',data,cluster('BswM_Initialized')
+	.sect	'.zbss.BswM_Lcfg.BswM_Initialized'
+	.global	BswM_Initialized
+BswM_Initialized:	.type	object
+	.size	BswM_Initialized,1
+	.space	1
+	.sdecl	'.zbss.BswM_Lcfg.BswM_QueueSemaphore',data,cluster('BswM_QueueSemaphore')
+	.sect	'.zbss.BswM_Lcfg.BswM_QueueSemaphore'
+	.global	BswM_QueueSemaphore
+BswM_QueueSemaphore:	.type	object
+	.size	BswM_QueueSemaphore,1
+	.space	1
+	.sdecl	'.zbss.BswM_Lcfg.BswM_QueueWritten',data,cluster('BswM_QueueWritten')
+	.sect	'.zbss.BswM_Lcfg.BswM_QueueWritten'
+	.global	BswM_QueueWritten
+BswM_QueueWritten:	.type	object
+	.size	BswM_QueueWritten,1
+	.space	1
+	.sdecl	'.zbss.BswM_Lcfg.BswM_PreInitialized',data,cluster('BswM_PreInitialized')
+	.sect	'.zbss.BswM_Lcfg.BswM_PreInitialized'
+	.global	BswM_PreInitialized
+BswM_PreInitialized:	.type	object
+	.size	BswM_PreInitialized,1
+	.space	1
+	.calls	'__INDIRECT__','BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION'
+	.calls	'__INDIRECT__','BswM_ActionList_INIT_AL_Initialize'
+	.calls	'BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION','BswM_ActionList_INIT_AL_Initialize'
+	.calls	'BswM_ActionList_INIT_AL_Initialize','Det_Init'
+	.calls	'BswM_ActionList_INIT_AL_Initialize','BswM_AL_SetProgrammableInterrupts'
+	.calls	'BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION','',0
+	.extern	BswM_AL_SetProgrammableInterrupts
+	.extern	Det_Init
+	.extern	__INDIRECT__
+	.calls	'BswM_ActionList_INIT_AL_Initialize','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L8:
+	.word	10048
+	.half	3
+	.word	.L9
+	.byte	4
+.L7:
+	.byte	1
+	.byte	'..\\Appl\\GenData\\BswM_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L10
+	.byte	2
+	.byte	'BswM_AL_SetProgrammableInterrupts',0,1,144,7,30,1,1,1,1
+.L40:
+	.byte	3
+	.byte	'unsigned char',0,1,8,4
+	.byte	'sDet_PCConfigType',0,3,238,1,16,1,5
+	.byte	'Det_PCConfigNeverUsed',0
+	.word	182
+	.byte	1,2,35,0,0,6
+	.word	199
+	.byte	7
+	.word	255
+	.byte	6
+	.word	260
+	.byte	8
+	.byte	'Det_Init',0,2,226,1,22,1,1,1,1,9
+	.byte	'ConfigPtr',0,2,226,1,85
+	.word	265
+	.byte	0,10
+	.byte	'__INDIRECT__',0,4,1,1,1,1,1,11,1,7
+	.word	328
+	.byte	12
+	.byte	'__codeptr',0,4,1,1
+	.word	330
+	.byte	12
+	.byte	'boolean',0,5,101,31
+	.word	182
+	.byte	12
+	.byte	'uint8',0,5,104,31
+	.word	182
+	.byte	3
+	.byte	'unsigned short int',0,2,7,12
+	.byte	'uint16',0,5,106,31
+	.word	383
+	.byte	3
+	.byte	'long int',0,4,5,12
+	.byte	'sint32',0,5,107,31
+	.word	420
+	.byte	3
+	.byte	'unsigned long int',0,4,7,12
+	.byte	'uint32',0,5,108,31
+	.word	447
+	.byte	12
+	.byte	'uint8_least',0,5,111,31
+	.word	182
+	.byte	3
+	.byte	'unsigned long long int',0,8,7,12
+	.byte	'uint64',0,5,121,30
+	.word	503
+	.byte	12
+	.byte	'StatusType',0,6,119,23
+	.word	182
+	.byte	12
+	.byte	'Std_ReturnType',0,6,124,15
+	.word	182
+	.byte	12
+	.byte	'Std_TransformerErrorCode',0,6,135,1,15
+	.word	182
+	.byte	12
+	.byte	'Std_TransformerClass',0,6,137,1,15
+	.word	182
+	.byte	12
+	.byte	'EcuM_ModeType',0,7,54,15
+	.word	182
+	.byte	12
+	.byte	'EcuM_StateType',0,7,60,15
+	.word	182
+	.byte	12
+	.byte	'EcuM_UserType',0,7,63,15
+	.word	182
+	.byte	13,1,1,7
+	.word	717
+	.byte	12
+	.byte	'EcuM_DriverFuncType',0,8,142,3,9
+	.word	720
+	.byte	12
+	.byte	'EcuM_DefaultAppModeType',0,8,213,3,16
+	.word	447
+	.byte	12
+	.byte	'EcuM_KillAllInProgressType',0,8,228,3,15
+	.word	182
+	.byte	12
+	.byte	'EcuM_NormalMcuModeType',0,8,234,3,16
+	.word	447
+	.byte	12
+	.byte	'EcuM_PostRunRequestCounterType',0,8,240,3,15
+	.word	182
+	.byte	12
+	.byte	'EcuM_RunRequestCounterType',0,8,243,3,15
+	.word	182
+	.byte	12
+	.byte	'EcuM_TimerType',0,8,249,3,16
+	.word	383
+	.byte	4
+	.byte	'sEcuM_DriverInitOneType',0,8,137,4,16,4,5
+	.byte	'FunctionOfDriverInitOne',0
+	.word	725
+	.byte	4,2,35,0,0,12
+	.byte	'EcuM_DriverInitOneType',0,8,140,4,3
+	.word	955
+	.byte	7
+	.word	717
+	.byte	4
+	.byte	'sEcuM_DriverInitThreeType',0,8,143,4,16,4,5
+	.byte	'FunctionOfDriverInitThree',0
+	.word	725
+	.byte	4,2,35,0,0,12
+	.byte	'EcuM_DriverInitThreeType',0,8,146,4,3
+	.word	1056
+	.byte	4
+	.byte	'sEcuM_DriverInitTwoType',0,8,149,4,16,4,5
+	.byte	'FunctionOfDriverInitTwo',0
+	.word	725
+	.byte	4,2,35,0,0,12
+	.byte	'EcuM_DriverInitTwoType',0,8,152,4,3
+	.word	1158
+	.byte	4
+	.byte	'sEcuM_PCConfigType',0,8,209,4,16,1,5
+	.byte	'EcuM_PCConfigNeverUsed',0
+	.word	182
+	.byte	1,2,35,0,0,12
+	.byte	'EcuM_PCConfigType',0,8,212,4,3
+	.word	1254
+	.byte	12
+	.byte	'BswM_ActionListsIterType',0,1,139,5,21
+	.word	182
+	.byte	12
+	.byte	'BswM_ActionListQueueType',0,1,172,5,15
+	.word	182
+	.byte	12
+	.byte	'BswM_ForcedActionListPriorityType',0,1,175,5,15
+	.word	182
+	.byte	12
+	.byte	'BswM_InitializedType',0,1,178,5,17
+	.word	182
+	.byte	12
+	.byte	'BswM_PCPartitionConfigIdxOfPartitionIdentifiersType',0,1,181,5,15
+	.word	182
+	.byte	12
+	.byte	'BswM_PartitionSNVOfPartitionIdentifiersType',0,1,184,5,16
+	.word	447
+	.byte	12
+	.byte	'BswM_QueueSemaphoreType',0,1,187,5,15
+	.word	182
+	.byte	12
+	.byte	'BswM_QueueWrittenType',0,1,190,5,17
+	.word	182
+	.byte	12
+	.byte	'BswM_HandleType',0,1,204,5,15
+	.word	182
+	.byte	14,1,1,15
+	.word	182
+	.byte	0,7
+	.word	1683
+	.byte	12
+	.byte	'BswM_InitGenVarAndInitALType',0,1,205,5,9
+	.word	1692
+	.byte	16
+	.word	182
+	.byte	1,1,15
+	.word	182
+	.byte	0,7
+	.word	1735
+	.byte	12
+	.byte	'BswM_ActionListFuncType',0,1,207,5,9
+	.word	1748
+	.byte	4
+	.byte	'sBswM_ActionListsType',0,1,222,5,16,4,5
+	.byte	'FctPtrOfActionLists',0
+	.word	1753
+	.byte	4,2,35,0,0,12
+	.byte	'BswM_ActionListsType',0,1,225,5,3
+	.word	1786
+	.byte	7
+	.word	1735
+	.byte	4
+	.byte	'sBswM_PartitionIdentifiersType',0,1,228,5,16,6,5
+	.byte	'PartitionSNVOfPartitionIdentifiers',0
+	.word	447
+	.byte	4,2,35,0,5
+	.byte	'PCPartitionConfigIdxOfPartitionIdentifiers',0
+	.word	182
+	.byte	1,2,35,4,0,12
+	.byte	'BswM_PartitionIdentifiersType',0,1,232,5,3
+	.word	1879
+	.byte	4
+	.byte	'BswM_ActionListQueueStructSTag',0,1,244,5,16,1,5
+	.byte	'AL_INIT_AL_Initialize',0
+	.word	182
+	.byte	1,2,35,0,0,12
+	.byte	'BswM_ActionListQueueStructSType',0,1,247,5,3
+	.word	2052
+	.byte	17,1
+	.word	182
+	.byte	18,0,0
+.L47:
+	.byte	19
+	.byte	'BswM_ActionListQueueUTag',0,1,131,6,15,1,5
+	.byte	'raw',0
+	.word	2162
+	.byte	1,2,35,0,5
+	.byte	'str',0
+	.word	2052
+	.byte	1,2,35,0,0,12
+	.byte	'BswM_ActionListQueueUType',0,1,135,6,3
+	.word	2171
+	.byte	4
+	.byte	'sBswM_PCPartitionConfigType',0,1,180,6,16,1,5
+	.byte	'BswM_PCPartitionConfigNeverUsed',0
+	.word	182
+	.byte	1,2,35,0,0,12
+	.byte	'BswM_PCPartitionConfigType',0,1,183,6,3
+	.word	2264
+	.byte	4
+	.byte	'sBswM_PCConfigType',0,1,198,6,16,1,5
+	.byte	'BswM_PCConfigNeverUsed',0
+	.word	182
+	.byte	1,2,35,0,0,12
+	.byte	'BswM_PCConfigType',0,1,201,6,3
+	.word	2376
+	.byte	12
+	.byte	'Det_PCConfigType',0,3,241,1,3
+	.word	199
+	.byte	12
+	.byte	'Det_ConfigType',0,3,243,1,26
+	.word	199
+	.byte	17,4
+	.word	1786
+	.byte	18,0,0
+.L44:
+	.byte	6
+	.word	2511
+	.byte	17,4
+	.word	1697
+	.byte	18,0,0
+.L45:
+	.byte	6
+	.word	2525
+	.byte	7
+	.word	1683
+	.byte	17,6
+	.word	1879
+	.byte	18,0,0
+.L46:
+	.byte	6
+	.word	2544
+	.byte	20,9,145,1,9,1,21
+	.byte	'Default_Appl_Init_Task',0,0,21
+	.byte	'Default_Appl_Task',0,1,21
+	.byte	'Default_BSW_ASync_Task',0,2,21
+	.byte	'Default_Init_Task',0,3,21
+	.byte	'Default_Init_Task_Trusted',0,4,21
+	.byte	'IdleTask_OsCore0',0,5,21
+	.byte	'INVALID_TASK',0,6,21
+	.byte	'OS_TASKID_COUNT',0,6,0,12
+	.byte	'TaskType',0,9,155,1,3
+	.word	2558
+	.byte	17,64
+	.word	447
+	.byte	18,15,0,4
+	.byte	'Os_ExceptionContextType_Tag',0,10,71,8,160,1,5
+	.byte	'AddressRegisters',0
+	.word	2753
+	.byte	64,2,35,0,5
+	.byte	'DataRegisters',0
+	.word	2753
+	.byte	64,2,35,64,5
+	.byte	'Ra',0
+	.word	447
+	.byte	4,3,35,128,1,5
+	.byte	'Psw',0
+	.word	447
+	.byte	4,3,35,132,1,5
+	.byte	'ExceptionSource',0
+	.word	447
+	.byte	4,3,35,136,1,5
+	.byte	'Pcpn',0
+	.word	447
+	.byte	4,3,35,140,1,5
+	.byte	'Pie',0
+	.word	447
+	.byte	4,3,35,144,1,5
+	.byte	'MpuRegionForStackLow',0
+	.word	447
+	.byte	4,3,35,148,1,5
+	.byte	'MpuRegionForStackUpper',0
+	.word	447
+	.byte	4,3,35,152,1,5
+	.byte	'RawPCXI',0
+	.word	447
+	.byte	4,3,35,156,1,0,12
+	.byte	'Os_ExceptionContextType',0,11,59,44
+	.word	2762
+	.byte	12
+	.byte	'Os_InterruptSourceIdType',0,12,236,1,16
+	.word	447
+	.byte	12
+	.byte	'Os_ExceptionSourceIdType',0,12,244,1,16
+	.word	447
+	.byte	20,12,159,2,9,1,21
+	.byte	'RUNNING',0,0,21
+	.byte	'READY',0,1,21
+	.byte	'WAITING',0,2,21
+	.byte	'SUSPENDED',0,3,0,12
+	.byte	'TaskStateType',0,12,173,2,3
+	.word	3110
+	.byte	12
+	.byte	'EventMaskType',0,12,180,2,16
+	.word	503
+	.byte	12
+	.byte	'Os_TickType',0,12,198,2,19
+	.word	447
+	.byte	12
+	.byte	'TickType',0,12,204,2,21
+	.word	447
+	.byte	22,12,218,2,9,12,5
+	.byte	'maxallowedvalue',0
+	.word	447
+	.byte	4,2,35,0,5
+	.byte	'ticksperbase',0
+	.word	447
+	.byte	4,2,35,4,5
+	.byte	'mincycle',0
+	.word	447
+	.byte	4,2,35,8,0,12
+	.byte	'AlarmBaseType',0,12,226,2,2
+	.word	3242
+	.byte	20,12,254,2,9,1,21
+	.byte	'APPLICATION_TERMINATED',0,0,21
+	.byte	'APPLICATION_RESTARTING',0,1,21
+	.byte	'APPLICATION_ACCESSIBLE',0,2,0,12
+	.byte	'ApplicationStateType',0,12,131,3,3
+	.word	3337
+	.byte	20,12,175,3,9,1,21
+	.byte	'OSServiceId_GetApplicationID',0,0,21
+	.byte	'OSServiceId_GetISRID',0,1,21
+	.byte	'OSServiceId_CallTrustedFunction',0,2,21
+	.byte	'OSServiceId_CheckISRMemoryAccess',0,3,21
+	.byte	'OSServiceId_CheckTaskMemoryAccess',0,4,21
+	.byte	'OSServiceId_CheckObjectAccess',0,5,21
+	.byte	'OSServiceId_CheckObjectOwnership',0,6,21
+	.byte	'OSServiceId_StartScheduleTableRel',0,7,21
+	.byte	'OSServiceId_StartScheduleTableAbs',0,8,21
+	.byte	'OSServiceId_StopScheduleTable',0,9,21
+	.byte	'OSServiceId_NextScheduleTable',0,10,21
+	.byte	'OSServiceId_StartScheduleTableSynchron',0,11,21
+	.byte	'OSServiceId_SyncScheduleTable',0,12,21
+	.byte	'OSServiceId_SetScheduleTableAsync',0,13,21
+	.byte	'OSServiceId_GetScheduleTableStatus',0,14,21
+	.byte	'OSServiceId_IncrementCounter',0,15,21
+	.byte	'OSServiceId_GetCounterValue',0,16,21
+	.byte	'OSServiceId_GetElapsedValue',0,17,21
+	.byte	'OSServiceId_TerminateApplication',0,18,21
+	.byte	'OSServiceId_AllowAccess',0,19,21
+	.byte	'OSServiceId_GetApplicationState',0,20,21
+	.byte	'OSServiceId_GetNumberOfActivatedCores',0,21,21
+	.byte	'OSServiceId_GetCoreID',0,22,21
+	.byte	'OSServiceId_StartCore',0,23,21
+	.byte	'OSServiceId_StartNonAutosarCore',0,24,21
+	.byte	'OSServiceId_GetSpinlock',0,25,21
+	.byte	'OSServiceId_ReleaseSpinlock',0,26,21
+	.byte	'OSServiceId_TryToGetSpinlock',0,27,21
+	.byte	'OSServiceId_ShutdownAllCores',0,28,21
+	.byte	'OSServiceId_ControlIdle',0,29,21
+	.byte	'OSServiceId_IocSend',0,30,21
+	.byte	'OSServiceId_IocWrite',0,31,21
+	.byte	'OSServiceId_IocSendGroup',0,32,21
+	.byte	'OSServiceId_IocWriteGroup',0,33,21
+	.byte	'OSServiceId_IocReceive',0,34,21
+	.byte	'OSServiceId_IocRead',0,35,21
+	.byte	'OSServiceId_IocReceiveGroup',0,36,21
+	.byte	'OSServiceId_IocReadGroup',0,37,21
+	.byte	'OSServiceId_IocEmptyQueue',0,38,21
+	.byte	'OSServiceId_GetCurrentApplicationID',0,39,21
+	.byte	'OSServiceId_GetExceptionContext',0,160,1,21
+	.byte	'OSServiceId_SetExceptionContext',0,161,1,21
+	.byte	'OSServiceId_CallNonTrustedFunction',0,162,1,21
+	.byte	'OSServiceId_AppKill',0,163,1,21
+	.byte	'OSServiceId_AlarmActionSetEvent',0,164,1,21
+	.byte	'OSServiceId_AlarmActionActivateTask',0,165,1,21
+	.byte	'OSServiceId_AlarmActionIncrementCounter',0,166,1,21
+	.byte	'OSServiceId_AlarmActionCallback',0,167,1,21
+	.byte	'OSServiceId_TimerIsr',0,168,1,21
+	.byte	'OSServiceId_IsrWrapper',0,169,1,21
+	.byte	'OSServiceId_GetTaskStackUsage',0,170,1,21
+	.byte	'OSServiceId_GetISRStackUsage',0,171,1,21
+	.byte	'OSServiceId_GetKernelStackUsage',0,172,1,21
+	.byte	'OSServiceId_GetStartupHookStackUsage',0,173,1,21
+	.byte	'OSServiceId_GetErrorHookStackUsage',0,174,1,21
+	.byte	'OSServiceId_GetShutdownHookStackUsage',0,175,1,21
+	.byte	'OSServiceId_GetProtectionHookStackUsage',0,176,1,21
+	.byte	'OSServiceId_GetSemaphore',0,177,1,21
+	.byte	'OSServiceId_ReleaseSemaphore',0,178,1,21
+	.byte	'OSServiceId_ScheduleTableActivateTask',0,179,1,21
+	.byte	'OSServiceId_ScheduleTableSetEvent',0,180,1,21
+	.byte	'OSServiceId_DisableInterruptSource',0,181,1,21
+	.byte	'OSServiceId_EnableInterruptSource',0,182,1,21
+	.byte	'OSServiceId_ClearPendingInterrupt',0,183,1,21
+	.byte	'OSServiceId_GetUnhandledIrq',0,184,1,21
+	.byte	'OSServiceId_GetUnhandledExc',0,185,1,21
+	.byte	'OSServiceId_HookCallCallback',0,186,1,21
+	.byte	'OSServiceId_IsInterruptSourceEnabled',0,187,1,21
+	.byte	'OSServiceId_IsInterruptPending',0,188,1,21
+	.byte	'OSServiceId_CallFastTrustedFunction',0,189,1,21
+	.byte	'OSServiceId_BarrierSynchronize',0,190,1,21
+	.byte	'OSServiceId_InitialEnableInterruptSources',0,191,1,21
+	.byte	'OSServiceId_GetCoreStartState',0,192,1,21
+	.byte	'OSServiceId_GetNonTrustedFunctionStackUsage',0,193,1,21
+	.byte	'OSServiceId_StartOS',0,208,1,21
+	.byte	'OSServiceId_GetActiveApplicationMode',0,210,1,21
+	.byte	'OSServiceId_DisableAllInterrupts',0,211,1,21
+	.byte	'OSServiceId_EnableAllInterrupts',0,212,1,21
+	.byte	'OSServiceId_SuspendAllInterrupts',0,213,1,21
+	.byte	'OSServiceId_ResumeAllInterrupts',0,214,1,21
+	.byte	'OSServiceId_SuspendOSInterrupts',0,215,1,21
+	.byte	'OSServiceId_ResumeOSInterrupts',0,216,1,21
+	.byte	'OSServiceId_ActivateTask',0,217,1,21
+	.byte	'OSServiceId_TerminateTask',0,218,1,21
+	.byte	'OSServiceId_ChainTask',0,219,1,21
+	.byte	'OSServiceId_GetTaskID',0,220,1,21
+	.byte	'OSServiceId_GetTaskState',0,221,1,21
+	.byte	'OSServiceId_Schedule',0,222,1,21
+	.byte	'OSServiceId_SetEvent',0,223,1,21
+	.byte	'OSServiceId_ClearEvent',0,224,1,21
+	.byte	'OSServiceId_GetEvent',0,225,1,21
+	.byte	'OSServiceId_WaitEvent',0,226,1,21
+	.byte	'OSServiceId_GetAlarmBase',0,227,1,21
+	.byte	'OSServiceId_GetAlarm',0,228,1,21
+	.byte	'OSServiceId_SetRelAlarm',0,229,1,21
+	.byte	'OSServiceId_SetAbsAlarm',0,230,1,21
+	.byte	'OSServiceId_CancelAlarm',0,231,1,21
+	.byte	'OSServiceId_GetResource',0,232,1,21
+	.byte	'OSServiceId_ReleaseResource',0,233,1,21
+	.byte	'OSSERVICEID_COUNT',0,255,1,0,12
+	.byte	'OSServiceIdType',0,12,155,4,3
+	.word	3449
+	.byte	20,12,171,4,9,2,21
+	.byte	'OS_STATUS_OK',0,0,21
+	.byte	'OS_STATUS_CALLEVEL',0,2,21
+	.byte	'OS_STATUS_LIMIT',0,4,21
+	.byte	'OS_STATUS_RESOURCE',0,6,21
+	.byte	'OS_STATUS_SERVICEID',0,9,21
+	.byte	'OS_STATUS_ILLEGAL_ADDRESS',0,10,21
+	.byte	'OS_STATUS_MISSINGEND',0,11,21
+	.byte	'OS_STATUS_DISABLEDINT',0,12,21
+	.byte	'OS_STATUS_STACKFAULT',0,13,21
+	.byte	'OS_STATUS_PROTECTION_MEMORY',0,14,21
+	.byte	'OS_STATUS_PROTECTION_TIME',0,15,21
+	.byte	'OS_STATUS_PROTECTION_ARRIVAL',0,16,21
+	.byte	'OS_STATUS_PROTECTION_LOCKED',0,17,21
+	.byte	'OS_STATUS_PROTECTION_EXCEPTION',0,18,21
+	.byte	'OS_STATUS_INTERFERENCE_DEADLOCK',0,19,21
+	.byte	'OS_STATUS_NESTING_DEADLOCK',0,20,21
+	.byte	'OS_STATUS_SPINLOCK',0,21,21
+	.byte	'OS_STATUS_CORE',0,22,21
+	.byte	'OS_STATUS_OVERFLOW',0,245,1,21
+	.byte	'OS_STATUS_KILL_KERNEL_OBJ',0,246,1,21
+	.byte	'OS_STATUS_NO_RESTARTTASK',0,247,1,21
+	.byte	'OS_STATUS_CALL_NOT_ALLOWED',0,248,1,21
+	.byte	'OS_STATUS_FUNCTION_UNAVAILABLE',0,249,1,21
+	.byte	'OS_STATUS_PROTECTION_SYSCALL',0,250,1,21
+	.byte	'OS_STATUS_PROTECTION_IRQ',0,251,1,21
+	.byte	'OS_STATUS_API_ERROR',0,252,1,21
+	.byte	'OS_STATUS_ASSERTION',0,253,1,21
+	.byte	'OS_STATUS_OVERLOAD',0,254,1,21
+	.byte	'OS_STATUS_ACCESSRIGHTS_1',0,129,2,21
+	.byte	'OS_STATUS_CALLEVEL_SHARED_STACK',0,130,2,21
+	.byte	'OS_STATUS_ID_1',0,131,2,21
+	.byte	'OS_STATUS_UNLOCKED',0,133,2,21
+	.byte	'OS_STATUS_STATE_1',0,135,2,21
+	.byte	'OS_STATUS_VALUE_IS_ZERO_1',0,136,2,21
+	.byte	'OS_STATUS_CORE_CROSS_DATA',0,150,2,21
+	.byte	'OS_STATUS_PARAM_POINTER_1',0,151,2,21
+	.byte	'OS_STATUS_STACKUSAGE_DISABLED_BY_CONFIG',0,241,3,21
+	.byte	'OS_STATUS_NO_BARRIER_PARTICIPANT',0,242,3,21
+	.byte	'OS_STATUS_UNIMPLEMENTED_CLEARPENDING',0,243,3,21
+	.byte	'OS_STATUS_NO_NTFSTACK_POOL_EMPTY',0,244,3,21
+	.byte	'OS_STATUS_ACCESSRIGHTS_2',0,129,4,21
+	.byte	'OS_STATUS_CALLEVEL_CROSS_CORE_SYNC',0,130,4,21
+	.byte	'OS_STATUS_ID_2',0,131,4,21
+	.byte	'OS_STATUS_NOFUNC_1',0,133,4,21
+	.byte	'OS_STATUS_STATE_2',0,135,4,21
+	.byte	'OS_STATUS_VALUE_IS_ZERO_2',0,136,4,21
+	.byte	'OS_STATUS_PARAM_POINTER_2',0,151,4,21
+	.byte	'OS_STATUS_EVENT_DISABLED_BY_CONFIG',0,241,5,21
+	.byte	'OS_STATUS_UNIMPLEMENTED_EXCEPTIONCONTEXT',0,243,5,21
+	.byte	'OS_STATUS_NO_NTFSTACK_APPLIMIT_EXCEEDED',0,244,5,21
+	.byte	'OS_STATUS_NOTACCESSIBLE_1',0,129,6,21
+	.byte	'OS_STATUS_ID_TYPE_1',0,131,6,21
+	.byte	'OS_STATUS_NOFUNC_2',0,133,6,21
+	.byte	'OS_STATUS_STATE_STOPPED',0,135,6,21
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_1',0,136,6,21
+	.byte	'OS_STATUS_PARAM_POINTER_3',0,151,6,21
+	.byte	'OS_STATUS_NOTACCESSIBLE_2',0,129,8,21
+	.byte	'OS_STATUS_ID_DIFFERENT_COUNTER',0,131,8,21
+	.byte	'OS_STATUS_SPINLOCK_ORDER',0,133,8,21
+	.byte	'OS_STATUS_STATE_RUNNING',0,135,8,21
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_2',0,136,8,21
+	.byte	'OS_STATUS_NOEXTENDEDTASK_1',0,129,10,21
+	.byte	'OS_STATUS_ID_DIFFERENT_SYNC',0,131,10,21
+	.byte	'OS_STATUS_STOPPED_1',0,133,10,21
+	.byte	'OS_STATUS_STATE_NEXTED',0,135,10,21
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_3',0,136,10,21
+	.byte	'OS_STATUS_NOEXTENDEDTASK_2',0,129,12,21
+	.byte	'OS_STATUS_HOOK_NOT_AVAILABLE',0,131,12,21
+	.byte	'OS_STATUS_NOT_STOPPED_2',0,133,12,21
+	.byte	'OS_STATUS_STATE_WAITING',0,135,12,21
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_1',0,136,12,21
+	.byte	'OS_STATUS_NOEXTENDEDTASK_CALLER',0,129,14,21
+	.byte	'OS_STATUS_NEXTED_1',0,133,14,21
+	.byte	'OS_STATUS_STATE_NO_RESTART',0,135,14,21
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_2',0,136,14,21
+	.byte	'OS_STATUS_LOCKED',0,129,16,21
+	.byte	'OS_STATUS_KILLING_IS_DISABLED',0,133,16,21
+	.byte	'OS_STATUS_STATE_ALREADY_TERMINATED',0,135,16,21
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_1',0,136,16,21
+	.byte	'OS_STATUS_PRIORITY',0,129,18,21
+	.byte	'OS_STATUS_ORDER',0,133,18,21
+	.byte	'OS_STATUS_STATE_RESTARTING_NO_MEMBER',0,135,18,21
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_2',0,136,18,21
+	.byte	'OS_STATUS_NOT_THE_OWNER_1',0,129,20,21
+	.byte	'OS_STATUS_STATE_ALREADY_RESTARTING',0,135,20,21
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,21
+	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0,12
+	.byte	'Os_StatusType',0,12,231,5,3
+	.word	6666
+	.byte	22,12,132,6,9,4,5
+	.byte	'Service',0
+	.word	3449
+	.byte	1,2,35,0,5
+	.byte	'Error',0
+	.word	182
+	.byte	1,2,35,1,5
+	.byte	'DetailedError',0
+	.word	6666
+	.byte	2,2,35,2,0,12
+	.byte	'Os_ErrorInformationType',0,12,142,6,3
+	.word	9196
+	.byte	20,12,174,6,9,1,21
+	.byte	'SCHEDULETABLE_STOPPED',0,0,21
+	.byte	'SCHEDULETABLE_NEXT',0,1,21
+	.byte	'SCHEDULETABLE_WAITING',0,2,21
+	.byte	'SCHEDULETABLE_RUNNING',0,3,21
+	.byte	'SCHEDULETABLE_RUNNING_AND_SYNCHRONOUS',0,4,0,12
+	.byte	'ScheduleTableStatusType',0,12,191,6,3
+	.word	9291
+	.byte	20,12,203,6,9,1,21
+	.byte	'OS_MEM_ACCESS_TYPE_NON',0,0,21
+	.byte	'OS_MEM_ACCESS_TYPE_R',0,1,21
+	.byte	'OS_MEM_ACCESS_TYPE_READ',0,1,21
+	.byte	'OS_MEM_ACCESS_TYPE_W',0,2,21
+	.byte	'OS_MEM_ACCESS_TYPE_WRITE',0,2,21
+	.byte	'OS_MEM_ACCESS_TYPE_RW',0,3,21
+	.byte	'OS_MEM_ACCESS_TYPE_EXECUTE',0,4,21
+	.byte	'OS_MEM_ACCESS_TYPE_X',0,4,21
+	.byte	'OS_MEM_ACCESS_TYPE_RX',0,5,21
+	.byte	'OS_MEM_ACCESS_TYPE_WX',0,6,21
+	.byte	'OS_MEM_ACCESS_TYPE_RWX',0,7,21
+	.byte	'OS_MEM_ACCESS_TYPE_S',0,8,21
+	.byte	'OS_MEM_ACCESS_TYPE_STACK',0,8,21
+	.byte	'OS_MEM_ACCESS_TYPE_RS',0,9,21
+	.byte	'OS_MEM_ACCESS_TYPE_WS',0,10,21
+	.byte	'OS_MEM_ACCESS_TYPE_RWS',0,11,21
+	.byte	'OS_MEM_ACCESS_TYPE_XS',0,12,21
+	.byte	'OS_MEM_ACCESS_TYPE_RXS',0,13,21
+	.byte	'OS_MEM_ACCESS_TYPE_WXS',0,14,21
+	.byte	'OS_MEM_ACCESS_TYPE_RWXS',0,15,0,12
+	.byte	'Os_MemAccessType',0,12,225,6,3
+	.word	9464
+	.byte	12
+	.byte	'Os_Hal_AddressType',0,13,97,16
+	.word	447
+	.byte	12
+	.byte	'Os_AccessCheckAddress',0,14,150,2,29
+	.word	447
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L9:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,46,0,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0
+	.byte	3,36,0,3,8,11,15,62,15,0,0,4,19,1,3,8,58,15,59,15,57,15,11,15,0,0,5,13,0,3,8,73,19,11,15,56,9,0,0,6,38
+	.byte	0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,9,5,0,3,8,58,15
+	.byte	59,15,57,15,73,19,0,0,10,46,0,3,8,58,15,59,15,57,15,54,15,63,12,60,12,0,0,11,21,0,54,15,0,0,12,22,0,3
+	.byte	8,58,15,59,15,57,15,73,19,0,0,13,21,0,54,15,39,12,0,0,14,21,1,54,15,39,12,0,0,15,5,0,73,19,0,0,16,21,1
+	.byte	73,19,54,15,39,12,0,0,17,1,1,11,15,73,19,0,0,18,33,0,47,15,0,0,19,23,1,3,8,58,15,59,15,57,15,11,15,0,0
+	.byte	20,4,1,58,15,59,15,57,15,11,15,0,0,21,40,0,3,8,28,13,0,0,22,19,1,58,15,59,15,57,15,11,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L10:
+	.word	.L50-.L49
+.L49:
+	.half	3
+	.word	.L52-.L51
+.L51:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation',0,0
+	.byte	'BswM_Cfg.h',0,1,0,0
+	.byte	'Det.h',0,2,0,0
+	.byte	'Det_Cfg.h',0,1,0,0
+	.byte	'..\\Appl\\GenData\\BswM_Lcfg.c',0,0,0,0
+	.byte	'Platform_Types.h',0,3,0,0
+	.byte	'Std_Types.h',0,3,0,0
+	.byte	'Rte_Type.h',0,1,0,0
+	.byte	'EcuM_Cfg.h',0,1,0,0
+	.byte	'Os_Types_Lcfg.h',0,1,0,0
+	.byte	'Os_Hal_OsInt.h',0,4,0,0
+	.byte	'Os_Hal_Os_Types.h',0,4,0,0
+	.byte	'Os_Types.h',0,4,0,0
+	.byte	'Os_Hal_Lcfg.h',0,1,0,0
+	.byte	'OsInt.h',0,4,0,0,0
+.L52:
+.L50:
+	.sdecl	'.debug_info',debug,cluster('BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION')
+	.sect	'.debug_info'
+.L11:
+	.word	247
+	.half	3
+	.word	.L12
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\BswM_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L14,.L13
+	.byte	2
+	.word	.L7
+	.byte	3
+	.byte	'BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION',0,1,204,2,34,1,1
+	.word	.L4,.L39,.L3
+	.byte	4
+	.byte	'partitionIdx',0,1,204,2,132,1
+	.word	.L40,.L41
+	.byte	5
+	.word	.L4,.L39
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION')
+	.sect	'.debug_abbrev'
+.L12:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION')
+	.sect	'.debug_line'
+.L13:
+	.word	.L54-.L53
+.L53:
+	.half	3
+	.word	.L56-.L55
+.L55:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Appl\\GenData\\BswM_Lcfg.c',0,0,0,0,0
+.L56:
+	.byte	5,44,7,0,5,2
+	.word	.L4
+	.byte	3,206,2,1,5,1,7,9
+	.half	.L15-.L4
+	.byte	3,2,0,1,1
+.L54:
+	.sdecl	'.debug_ranges',debug,cluster('BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION')
+	.sect	'.debug_ranges'
+.L14:
+	.word	-1,.L4,0,.L15-.L4,0,0
+	.sdecl	'.debug_info',debug,cluster('BswM_ActionList_INIT_AL_Initialize')
+	.sect	'.debug_info'
+.L16:
+	.word	240
+	.half	3
+	.word	.L17
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\BswM_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L19,.L18
+	.byte	2
+	.word	.L7
+	.byte	3
+	.byte	'BswM_ActionList_INIT_AL_Initialize',0,1,218,2,44
+	.word	.L40
+	.byte	1,1
+	.word	.L6,.L42,.L5
+	.byte	4
+	.byte	'partitionIdx',0,1,218,2,131,1
+	.word	.L40,.L43
+	.byte	5
+	.word	.L6,.L42
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('BswM_ActionList_INIT_AL_Initialize')
+	.sect	'.debug_abbrev'
+.L17:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('BswM_ActionList_INIT_AL_Initialize')
+	.sect	'.debug_line'
+.L18:
+	.word	.L58-.L57
+.L57:
+	.half	3
+	.word	.L60-.L59
+.L59:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Appl\\GenData\\BswM_Lcfg.c',0,0,0,0,0
+.L60:
+	.byte	5,12,7,0,5,2
+	.word	.L6
+	.byte	3,220,2,1,5,36,9
+	.half	.L48-.L6
+	.byte	3,2,1,5,10,9
+	.half	.L61-.L48
+	.byte	3,2,1,5,1,3,1,1,7,9
+	.half	.L20-.L61
+	.byte	0,1,1
+.L58:
+	.sdecl	'.debug_ranges',debug,cluster('BswM_ActionList_INIT_AL_Initialize')
+	.sect	'.debug_ranges'
+.L19:
+	.word	-1,.L6,0,.L20-.L6,0,0
+	.sdecl	'.debug_info',debug,cluster('BswM_PreInitialized')
+	.sect	'.debug_info'
+.L21:
+	.word	173
+	.half	3
+	.word	.L22
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\BswM_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L7
+	.byte	3
+	.byte	'BswM_PreInitialized',0,4,183,2,32
+	.word	.L40
+	.byte	1,5,3
+	.word	BswM_PreInitialized
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('BswM_PreInitialized')
+	.sect	'.debug_abbrev'
+.L22:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('BswM_ActionLists')
+	.sect	'.debug_info'
+.L23:
+	.word	170
+	.half	3
+	.word	.L24
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\BswM_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L7
+	.byte	3
+	.byte	'BswM_ActionLists',0,4,180,1,41
+	.word	.L44
+	.byte	1,5,3
+	.word	BswM_ActionLists
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('BswM_ActionLists')
+	.sect	'.debug_abbrev'
+.L24:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('BswM_InitGenVarAndInitAL')
+	.sect	'.debug_info'
+.L25:
+	.word	178
+	.half	3
+	.word	.L26
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\BswM_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L7
+	.byte	3
+	.byte	'BswM_InitGenVarAndInitAL',0,4,196,1,49
+	.word	.L45
+	.byte	1,5,3
+	.word	BswM_InitGenVarAndInitAL
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('BswM_InitGenVarAndInitAL')
+	.sect	'.debug_abbrev'
+.L26:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('BswM_PartitionIdentifiers')
+	.sect	'.debug_info'
+.L27:
+	.word	179
+	.half	3
+	.word	.L28
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\BswM_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L7
+	.byte	3
+	.byte	'BswM_PartitionIdentifiers',0,4,220,1,50
+	.word	.L46
+	.byte	1,5,3
+	.word	BswM_PartitionIdentifiers
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('BswM_PartitionIdentifiers')
+	.sect	'.debug_abbrev'
+.L28:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('BswM_ActionListQueue')
+	.sect	'.debug_info'
+.L29:
+	.word	174
+	.half	3
+	.word	.L30
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\BswM_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L7
+	.byte	3
+	.byte	'BswM_ActionListQueue',0,4,240,1,50
+	.word	.L47
+	.byte	1,5,3
+	.word	BswM_ActionListQueue
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('BswM_ActionListQueue')
+	.sect	'.debug_abbrev'
+.L30:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('BswM_ForcedActionListPriority')
+	.sect	'.debug_info'
+.L31:
+	.word	183
+	.half	3
+	.word	.L32
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\BswM_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L7
+	.byte	3
+	.byte	'BswM_ForcedActionListPriority',0,4,128,2,58
+	.word	.L40
+	.byte	1,5,3
+	.word	BswM_ForcedActionListPriority
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('BswM_ForcedActionListPriority')
+	.sect	'.debug_abbrev'
+.L32:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('BswM_Initialized')
+	.sect	'.debug_info'
+.L33:
+	.word	170
+	.half	3
+	.word	.L34
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\BswM_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L7
+	.byte	3
+	.byte	'BswM_Initialized',0,4,141,2,45
+	.word	.L40
+	.byte	1,5,3
+	.word	BswM_Initialized
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('BswM_Initialized')
+	.sect	'.debug_abbrev'
+.L34:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('BswM_QueueSemaphore')
+	.sect	'.debug_info'
+.L35:
+	.word	173
+	.half	3
+	.word	.L36
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\BswM_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L7
+	.byte	3
+	.byte	'BswM_QueueSemaphore',0,4,154,2,48
+	.word	.L40
+	.byte	1,5,3
+	.word	BswM_QueueSemaphore
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('BswM_QueueSemaphore')
+	.sect	'.debug_abbrev'
+.L36:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('BswM_QueueWritten')
+	.sect	'.debug_info'
+.L37:
+	.word	171
+	.half	3
+	.word	.L38
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\BswM_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L7
+	.byte	3
+	.byte	'BswM_QueueWritten',0,4,167,2,46
+	.word	.L40
+	.byte	1,5,3
+	.word	BswM_QueueWritten
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('BswM_QueueWritten')
+	.sect	'.debug_abbrev'
+.L38:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_loc',debug,cluster('BswM_ActionList_INIT_AL_Initialize')
+	.sect	'.debug_loc'
+.L5:
+	.word	-1,.L6,0,.L42-.L6
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L43:
+	.word	-1,.L6,0,.L48-.L6
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION')
+	.sect	'.debug_loc'
+.L3:
+	.word	-1,.L4,0,.L39-.L4
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L41:
+	.word	-1,.L4,0,.L39-.L4
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L62:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L62,.L4,.L39-.L4
+	.sdecl	'.debug_frame',debug,cluster('BswM_ActionList_INIT_AL_Initialize')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L62,.L6,.L42-.L6
+
+; ..\Appl\GenData\BswM_Lcfg.c	   355  
+; ..\Appl\GenData\BswM_Lcfg.c	   356  
+; ..\Appl\GenData\BswM_Lcfg.c	   357  #define BSWM_STOP_SEC_CODE
+; ..\Appl\GenData\BswM_Lcfg.c	   358  /* PRQA S 5087 1 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   359  #include "BswM_MemMap.h"
+; ..\Appl\GenData\BswM_Lcfg.c	   360  
+
+	; Module end

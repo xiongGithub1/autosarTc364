@@ -1,0 +1,660 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc14688a --dep-file=Appl\\Source\\.StartApp.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\mak -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Make -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteAnalyzer -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteAnalyzer\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache\\-148438436 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Platform -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Platform\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=Appl\\Source\\StartApp.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\Source\\StartApp.src ..\\Appl\\Source\\StartApp.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\Source\\StartApp.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.StartApp.StartApp_Cyclic1ms',code,cluster('StartApp_Cyclic1ms')
+	.sect	'.text.StartApp.StartApp_Cyclic1ms'
+	.align	2
+	
+	.global	StartApp_Cyclic1ms
+
+; ..\Appl\Source\StartApp.c	     1  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	     2   *  FILE DESCRIPTION
+; ..\Appl\Source\StartApp.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\Source\StartApp.c	     4   *             File:  StartApp.c
+; ..\Appl\Source\StartApp.c	     5   *           Config:  last364.dpa
+; ..\Appl\Source\StartApp.c	     6   *        SW-C Type:  StartApp
+; ..\Appl\Source\StartApp.c	     7   *
+; ..\Appl\Source\StartApp.c	     8   *        Generator:  MICROSAR RTE Generator Version 4.29.0
+; ..\Appl\Source\StartApp.c	     9   *                    RTE Core Version 1.29.0
+; ..\Appl\Source\StartApp.c	    10   *          License:  CBD2200508
+; ..\Appl\Source\StartApp.c	    11   *
+; ..\Appl\Source\StartApp.c	    12   *      Description:  C-Code implementation template for SW-C <StartApp>
+; ..\Appl\Source\StartApp.c	    13   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	    14  
+; ..\Appl\Source\StartApp.c	    15  
+; ..\Appl\Source\StartApp.c	    16  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	    17   * DO NOT CHANGE THIS COMMENT!           << Start of version logging area >>                DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\StartApp.c	    18   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	    19  
+; ..\Appl\Source\StartApp.c	    20  /* PRQA S 0777, 0779 EOF */ /* MD_MSR_Rule5.1, MD_MSR_Rule5.2 */
+; ..\Appl\Source\StartApp.c	    21  /* PRQA S 0857 EOF */ /* MD_MSR_Dir1.1 */
+; ..\Appl\Source\StartApp.c	    22  /* PRQA S 0614 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\StartApp.c	    23  
+; ..\Appl\Source\StartApp.c	    24  /* PRQA S 3109 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\StartApp.c	    25  /* PRQA S 3112 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\StartApp.c	    26  /* PRQA S 2982 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\StartApp.c	    27  /* PRQA S 2983 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\StartApp.c	    28  /* PRQA S 2880 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\StartApp.c	    29  /* PRQA S 3203 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\StartApp.c	    30  /* PRQA S 3205 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\StartApp.c	    31  /* PRQA S 3206 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\StartApp.c	    32  /* PRQA S 3218 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\StartApp.c	    33  /* PRQA S 3229 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\StartApp.c	    34  /* PRQA S 2002 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\StartApp.c	    35  /* PRQA S 3334 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\StartApp.c	    36  /* PRQA S 3417 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\StartApp.c	    37  /* PRQA S 3426 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\StartApp.c	    38  
+; ..\Appl\Source\StartApp.c	    39  
+; ..\Appl\Source\StartApp.c	    40  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	    41   * DO NOT CHANGE THIS COMMENT!           << End of version logging area >>                  DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\StartApp.c	    42   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	    43  
+; ..\Appl\Source\StartApp.c	    44  #include "Rte_StartApp.h"
+; ..\Appl\Source\StartApp.c	    45  #include "TSC_StartApp.h"
+; ..\Appl\Source\StartApp.c	    46  
+; ..\Appl\Source\StartApp.c	    47  #include "Dio.h"
+; ..\Appl\Source\StartApp.c	    48  #include "EcuM.h"
+; ..\Appl\Source\StartApp.c	    49  #include "Rte_EcuM_Type.h"
+; ..\Appl\Source\StartApp.c	    50  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	    51   * DO NOT CHANGE THIS COMMENT!           << Start of include and declaration area >>        DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\StartApp.c	    52   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	    53  
+; ..\Appl\Source\StartApp.c	    54  #include "string.h"
+; ..\Appl\Source\StartApp.c	    55  
+; ..\Appl\Source\StartApp.c	    56  
+; ..\Appl\Source\StartApp.c	    57  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	    58   * DO NOT CHANGE THIS COMMENT!           << End of include and declaration area >>          DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\StartApp.c	    59   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	    60  
+; ..\Appl\Source\StartApp.c	    61  
+; ..\Appl\Source\StartApp.c	    62  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	    63   *
+; ..\Appl\Source\StartApp.c	    64   * Used AUTOSAR Data Types
+; ..\Appl\Source\StartApp.c	    65   *
+; ..\Appl\Source\StartApp.c	    66   **********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	    67   *
+; ..\Appl\Source\StartApp.c	    68   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	    69  
+; ..\Appl\Source\StartApp.c	    70  
+; ..\Appl\Source\StartApp.c	    71  #define StartApp_START_SEC_CODE
+; ..\Appl\Source\StartApp.c	    72  #include "StartApp_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\Source\StartApp.c	    73  
+; ..\Appl\Source\StartApp.c	    74  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	    75   *
+; ..\Appl\Source\StartApp.c	    76   * Runnable Entity Name: StartApp_Cyclic1ms
+; ..\Appl\Source\StartApp.c	    77   *
+; ..\Appl\Source\StartApp.c	    78   *---------------------------------------------------------------------------------------------------------------------
+; ..\Appl\Source\StartApp.c	    79   *
+; ..\Appl\Source\StartApp.c	    80   * Executed if at least one of the following trigger conditions occurred:
+; ..\Appl\Source\StartApp.c	    81   *   - triggered on TimingEvent every 1ms
+; ..\Appl\Source\StartApp.c	    82   *
+; ..\Appl\Source\StartApp.c	    83   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	    84  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	    85   * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\StartApp.c	    86   * Symbol: StartApp_Cyclic1ms_doc
+; ..\Appl\Source\StartApp.c	    87   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	    88  
+; ..\Appl\Source\StartApp.c	    89  
+; ..\Appl\Source\StartApp.c	    90  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	    91   * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\StartApp.c	    92   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	    93  
+; ..\Appl\Source\StartApp.c	    94  FUNC(void, StartApp_CODE) StartApp_Cyclic1ms(void) /* PRQA S 0624, 3206 */ /* MD_Rte_0624, MD_Rte_3206 */
+; Function StartApp_Cyclic1ms
+.L3:
+StartApp_Cyclic1ms:	.type	func
+
+; ..\Appl\Source\StartApp.c	    95  {
+; ..\Appl\Source\StartApp.c	    96  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	    97   * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\StartApp.c	    98   * Symbol: StartApp_Cyclic1ms
+; ..\Appl\Source\StartApp.c	    99   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	   100  
+; ..\Appl\Source\StartApp.c	   101  
+; ..\Appl\Source\StartApp.c	   102  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	   103   * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\StartApp.c	   104   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	   105  }
+	ret
+.L27:
+	
+__StartApp_Cyclic1ms_function_end:
+	.size	StartApp_Cyclic1ms,__StartApp_Cyclic1ms_function_end-StartApp_Cyclic1ms
+.L16:
+	; End of function
+	
+	.sdecl	'.text.StartApp.StartApp_Cyclic500ms',code,cluster('StartApp_Cyclic500ms')
+	.sect	'.text.StartApp.StartApp_Cyclic500ms'
+	.align	2
+	
+	.global	StartApp_Cyclic500ms
+
+; ..\Appl\Source\StartApp.c	   106  
+; ..\Appl\Source\StartApp.c	   107  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	   108   *
+; ..\Appl\Source\StartApp.c	   109   * Runnable Entity Name: StartApp_Cyclic500ms
+; ..\Appl\Source\StartApp.c	   110   *
+; ..\Appl\Source\StartApp.c	   111   *---------------------------------------------------------------------------------------------------------------------
+; ..\Appl\Source\StartApp.c	   112   *
+; ..\Appl\Source\StartApp.c	   113   * Executed if at least one of the following trigger conditions occurred:
+; ..\Appl\Source\StartApp.c	   114   *   - triggered on TimingEvent every 500ms
+; ..\Appl\Source\StartApp.c	   115   *
+; ..\Appl\Source\StartApp.c	   116   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	   117  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	   118   * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\StartApp.c	   119   * Symbol: StartApp_Cyclic500ms_doc
+; ..\Appl\Source\StartApp.c	   120   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	   121  
+; ..\Appl\Source\StartApp.c	   122  
+; ..\Appl\Source\StartApp.c	   123  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	   124   * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\StartApp.c	   125   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	   126  
+; ..\Appl\Source\StartApp.c	   127  FUNC(void, StartApp_CODE) StartApp_Cyclic500ms(void) /* PRQA S 0624, 3206 */ /* MD_Rte_0624, MD_Rte_3206 */
+; Function StartApp_Cyclic500ms
+.L5:
+StartApp_Cyclic500ms:	.type	func
+
+; ..\Appl\Source\StartApp.c	   128  {
+; ..\Appl\Source\StartApp.c	   129  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	   130   * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\StartApp.c	   131   * Symbol: StartApp_Cyclic500ms
+; ..\Appl\Source\StartApp.c	   132   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	   133  	Dio_FlipChannel(DioConf_DioChannel_DioChannel_Led2);
+	mov	d4,#529
+	call	Dio_FlipChannel
+.L42:
+
+; ..\Appl\Source\StartApp.c	   134  	Dio_FlipChannel(DioConf_DioChannel_DioChannel_led1);
+	mov	d4,#528
+	j	Dio_FlipChannel
+.L28:
+	
+__StartApp_Cyclic500ms_function_end:
+	.size	StartApp_Cyclic500ms,__StartApp_Cyclic500ms_function_end-StartApp_Cyclic500ms
+.L21:
+	; End of function
+	
+	.sdecl	'.text.StartApp.StartApp_Init',code,cluster('StartApp_Init')
+	.sect	'.text.StartApp.StartApp_Init'
+	.align	2
+	
+	.global	StartApp_Init
+
+; ..\Appl\Source\StartApp.c	   135  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	   136   * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\StartApp.c	   137   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	   138  }
+; ..\Appl\Source\StartApp.c	   139  
+; ..\Appl\Source\StartApp.c	   140  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	   141   *
+; ..\Appl\Source\StartApp.c	   142   * Runnable Entity Name: StartApp_Init
+; ..\Appl\Source\StartApp.c	   143   *
+; ..\Appl\Source\StartApp.c	   144   *---------------------------------------------------------------------------------------------------------------------
+; ..\Appl\Source\StartApp.c	   145   *
+; ..\Appl\Source\StartApp.c	   146   * Executed once after the RTE is started
+; ..\Appl\Source\StartApp.c	   147   *
+; ..\Appl\Source\StartApp.c	   148   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	   149  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	   150   * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\StartApp.c	   151   * Symbol: StartApp_Init_doc
+; ..\Appl\Source\StartApp.c	   152   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	   153  
+; ..\Appl\Source\StartApp.c	   154  
+; ..\Appl\Source\StartApp.c	   155  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	   156   * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\StartApp.c	   157   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	   158  
+; ..\Appl\Source\StartApp.c	   159  FUNC(void, StartApp_CODE) StartApp_Init(void) /* PRQA S 0624, 3206 */ /* MD_Rte_0624, MD_Rte_3206 */
+; Function StartApp_Init
+.L7:
+StartApp_Init:	.type	func
+
+; ..\Appl\Source\StartApp.c	   160  {
+; ..\Appl\Source\StartApp.c	   161  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	   162   * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\StartApp.c	   163   * Symbol: StartApp_Init
+; ..\Appl\Source\StartApp.c	   164   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	   165    (void)EcuM_RequestRUN(EcuMConf_EcuMFixedUserConfig_EcuMFixedUserConfig);
+	mov	d4,#0
+	j	EcuM_RequestRUN
+.L29:
+	
+__StartApp_Init_function_end:
+	.size	StartApp_Init,__StartApp_Init_function_end-StartApp_Init
+.L26:
+	; End of function
+	
+	.calls	'StartApp_Cyclic500ms','Dio_FlipChannel'
+	.calls	'StartApp_Init','EcuM_RequestRUN'
+	.calls	'StartApp_Cyclic1ms','',0
+	.calls	'StartApp_Cyclic500ms','',0
+	.extern	Dio_FlipChannel
+	.extern	EcuM_RequestRUN
+	.calls	'StartApp_Init','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L9:
+	.word	1458
+	.half	3
+	.word	.L10
+	.byte	4
+.L8:
+	.byte	1
+	.byte	'..\\Appl\\Source\\StartApp.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L11
+	.byte	2
+	.byte	'unsigned char',0,1,8,2
+	.byte	'unsigned short int',0,2,7,3
+	.word	154
+	.byte	4
+	.byte	'Dio_FlipChannel',0,1,185,3,22
+	.word	137
+	.byte	1,1,1,1,5
+	.byte	'ChannelId',0,1,187,3,25
+	.word	176
+	.byte	0,4
+	.byte	'EcuM_RequestRUN',0,2,128,7,33
+	.word	137
+	.byte	1,1,1,1,5
+	.byte	'User',0,2,128,7,63
+	.word	137
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.byte	'__size_t',0,3,1,1
+	.word	274
+	.byte	7,1,8
+	.word	307
+	.byte	6
+	.byte	'__codeptr',0,3,1,1
+	.word	309
+	.byte	6
+	.byte	'uint8',0,4,104,31
+	.word	137
+	.byte	6
+	.byte	'uint16',0,4,106,31
+	.word	154
+	.byte	2
+	.byte	'unsigned long int',0,4,7,6
+	.byte	'uint32',0,4,108,31
+	.word	361
+	.byte	6
+	.byte	'uint8_least',0,4,111,31
+	.word	137
+	.byte	6
+	.byte	'Std_ReturnType',0,5,124,15
+	.word	137
+	.byte	6
+	.byte	'Std_TransformerErrorCode',0,5,135,1,15
+	.word	137
+	.byte	6
+	.byte	'Std_TransformerClass',0,5,137,1,15
+	.word	137
+	.byte	6
+	.byte	'EcuM_ModeType',0,6,54,15
+	.word	137
+	.byte	6
+	.byte	'EcuM_StateType',0,6,60,15
+	.word	137
+	.byte	6
+	.byte	'EcuM_UserType',0,6,63,15
+	.word	137
+	.byte	6
+	.byte	'Dio_ChannelType',0,1,127,16
+	.word	154
+	.byte	6
+	.byte	'Dio_LevelType',0,1,133,1,15
+	.word	137
+	.byte	6
+	.byte	'Dio_PortType',0,1,138,1,15
+	.word	137
+	.byte	6
+	.byte	'Dio_PortLevelType',0,1,143,1,16
+	.word	154
+	.byte	9,1,148,1,9,4,10
+	.byte	'mask',0
+	.word	154
+	.byte	2,2,35,0,10
+	.byte	'offset',0
+	.word	137
+	.byte	1,2,35,2,10
+	.byte	'port',0
+	.word	137
+	.byte	1,2,35,3,0,6
+	.byte	'Dio_ChannelGroupType',0,1,158,1,3
+	.word	667
+	.byte	9,1,163,1,9,4,10
+	.byte	'Dio_PortIdConfig',0
+	.word	137
+	.byte	1,2,35,0,10
+	.byte	'Dio_ChannelConfig',0
+	.word	154
+	.byte	2,2,35,2,0,6
+	.byte	'Dio_PortChannelIdType',0,1,171,1,3
+	.word	748
+	.byte	11,1,1,8
+	.word	839
+	.byte	6
+	.byte	'EcuM_DriverFuncType',0,7,142,3,9
+	.word	842
+	.byte	6
+	.byte	'EcuM_DefaultAppModeType',0,7,213,3,16
+	.word	361
+	.byte	6
+	.byte	'EcuM_KillAllInProgressType',0,7,228,3,15
+	.word	137
+	.byte	6
+	.byte	'EcuM_NormalMcuModeType',0,7,234,3,16
+	.word	361
+	.byte	6
+	.byte	'EcuM_PostRunRequestCounterType',0,7,240,3,15
+	.word	137
+	.byte	6
+	.byte	'EcuM_RunRequestCounterType',0,7,243,3,15
+	.word	137
+	.byte	6
+	.byte	'EcuM_TimerType',0,7,249,3,16
+	.word	154
+	.byte	12
+	.byte	'sEcuM_DriverInitOneType',0,7,137,4,16,4,10
+	.byte	'FunctionOfDriverInitOne',0
+	.word	847
+	.byte	4,2,35,0,0,6
+	.byte	'EcuM_DriverInitOneType',0,7,140,4,3
+	.word	1077
+	.byte	8
+	.word	839
+	.byte	12
+	.byte	'sEcuM_DriverInitThreeType',0,7,143,4,16,4,10
+	.byte	'FunctionOfDriverInitThree',0
+	.word	847
+	.byte	4,2,35,0,0,6
+	.byte	'EcuM_DriverInitThreeType',0,7,146,4,3
+	.word	1178
+	.byte	12
+	.byte	'sEcuM_DriverInitTwoType',0,7,149,4,16,4,10
+	.byte	'FunctionOfDriverInitTwo',0
+	.word	847
+	.byte	4,2,35,0,0,6
+	.byte	'EcuM_DriverInitTwoType',0,7,152,4,3
+	.word	1280
+	.byte	12
+	.byte	'sEcuM_PCConfigType',0,7,209,4,16,1,10
+	.byte	'EcuM_PCConfigNeverUsed',0
+	.word	137
+	.byte	1,2,35,0,0,6
+	.byte	'EcuM_PCConfigType',0,7,212,4,3
+	.word	1376
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L10:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,58
+	.byte	15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,22,0,3,8,58,15
+	.byte	59,15,57,15,73,19,0,0,7,21,0,54,15,0,0,8,15,0,73,19,0,0,9,19,1,58,15,59,15,57,15,11,15,0,0,10,13,0,3,8
+	.byte	73,19,11,15,56,9,0,0,11,21,0,54,15,39,12,0,0,12,19,1,3,8,58,15,59,15,57,15,11,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L11:
+	.word	.L31-.L30
+.L30:
+	.half	3
+	.word	.L33-.L32
+.L32:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData',0,0
+	.byte	'Dio.h',0,1,0,0
+	.byte	'EcuM.h',0,2,0,0
+	.byte	'..\\Appl\\Source\\StartApp.c',0,0,0,0
+	.byte	'Platform_Types.h',0,3,0,0
+	.byte	'Std_Types.h',0,3,0,0
+	.byte	'Rte_Type.h',0,4,0,0
+	.byte	'EcuM_Cfg.h',0,4,0,0,0
+.L33:
+.L31:
+	.sdecl	'.debug_info',debug,cluster('StartApp_Cyclic1ms')
+	.sect	'.debug_info'
+.L12:
+	.word	191
+	.half	3
+	.word	.L13
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\StartApp.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L15,.L14
+	.byte	2
+	.word	.L8
+	.byte	3
+	.byte	'StartApp_Cyclic1ms',0,1,94,27,1,1,1
+	.word	.L3,.L27,.L2
+	.byte	4
+	.word	.L3,.L27
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('StartApp_Cyclic1ms')
+	.sect	'.debug_abbrev'
+.L13:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('StartApp_Cyclic1ms')
+	.sect	'.debug_line'
+.L14:
+	.word	.L35-.L34
+.L34:
+	.half	3
+	.word	.L37-.L36
+.L36:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Appl\\Source\\StartApp.c',0,0,0,0,0
+.L37:
+	.byte	5,1,7,0,5,2
+	.word	.L3
+	.byte	3,232,0,1,7,9
+	.half	.L16-.L3
+	.byte	0,1,1
+.L35:
+	.sdecl	'.debug_ranges',debug,cluster('StartApp_Cyclic1ms')
+	.sect	'.debug_ranges'
+.L15:
+	.word	-1,.L3,0,.L16-.L3,0,0
+	.sdecl	'.debug_info',debug,cluster('StartApp_Cyclic500ms')
+	.sect	'.debug_info'
+.L17:
+	.word	193
+	.half	3
+	.word	.L18
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\StartApp.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L20,.L19
+	.byte	2
+	.word	.L8
+	.byte	3
+	.byte	'StartApp_Cyclic500ms',0,1,127,27,1,1,1
+	.word	.L5,.L28,.L4
+	.byte	4
+	.word	.L5,.L28
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('StartApp_Cyclic500ms')
+	.sect	'.debug_abbrev'
+.L18:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('StartApp_Cyclic500ms')
+	.sect	'.debug_line'
+.L19:
+	.word	.L39-.L38
+.L38:
+	.half	3
+	.word	.L41-.L40
+.L40:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Appl\\Source\\StartApp.c',0,0,0,0,0
+.L41:
+	.byte	5,18,7,0,5,2
+	.word	.L5
+	.byte	3,132,1,1,9
+	.half	.L42-.L5
+	.byte	3,1,1,5,1,9
+	.half	.L21-.L42
+	.byte	3,4,0,1,1
+.L39:
+	.sdecl	'.debug_ranges',debug,cluster('StartApp_Cyclic500ms')
+	.sect	'.debug_ranges'
+.L20:
+	.word	-1,.L5,0,.L21-.L5,0,0
+	.sdecl	'.debug_info',debug,cluster('StartApp_Init')
+	.sect	'.debug_info'
+.L22:
+	.word	187
+	.half	3
+	.word	.L23
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\StartApp.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L25,.L24
+	.byte	2
+	.word	.L8
+	.byte	3
+	.byte	'StartApp_Init',0,1,159,1,27,1,1,1
+	.word	.L7,.L29,.L6
+	.byte	4
+	.word	.L7,.L29
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('StartApp_Init')
+	.sect	'.debug_abbrev'
+.L23:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('StartApp_Init')
+	.sect	'.debug_line'
+.L24:
+	.word	.L44-.L43
+.L43:
+	.half	3
+	.word	.L46-.L45
+.L45:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Appl\\Source\\StartApp.c',0,0,0,0,0
+.L46:
+	.byte	5,25,7,0,5,2
+	.word	.L7
+	.byte	3,164,1,1,5,1,9
+	.half	.L26-.L7
+	.byte	3,5,0,1,1
+.L44:
+	.sdecl	'.debug_ranges',debug,cluster('StartApp_Init')
+	.sect	'.debug_ranges'
+.L25:
+	.word	-1,.L7,0,.L26-.L7,0,0
+	.sdecl	'.debug_loc',debug,cluster('StartApp_Cyclic1ms')
+	.sect	'.debug_loc'
+.L2:
+	.word	-1,.L3,0,.L27-.L3
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('StartApp_Cyclic500ms')
+	.sect	'.debug_loc'
+.L4:
+	.word	-1,.L5,0,.L28-.L5
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('StartApp_Init')
+	.sect	'.debug_loc'
+.L6:
+	.word	-1,.L7,0,.L29-.L7
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L47:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('StartApp_Cyclic1ms')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L47,.L3,.L27-.L3
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('StartApp_Cyclic500ms')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L47,.L5,.L28-.L5
+	.sdecl	'.debug_frame',debug,cluster('StartApp_Init')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L47,.L7,.L29-.L7
+
+; ..\Appl\Source\StartApp.c	   166  
+; ..\Appl\Source\StartApp.c	   167  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	   168   * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\StartApp.c	   169   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	   170  }
+; ..\Appl\Source\StartApp.c	   171  
+; ..\Appl\Source\StartApp.c	   172  
+; ..\Appl\Source\StartApp.c	   173  #define StartApp_STOP_SEC_CODE
+; ..\Appl\Source\StartApp.c	   174  #include "StartApp_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\Source\StartApp.c	   175  
+; ..\Appl\Source\StartApp.c	   176  
+; ..\Appl\Source\StartApp.c	   177  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	   178   * DO NOT CHANGE THIS COMMENT!           << Start of function definition area >>            DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\StartApp.c	   179   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	   180  
+; ..\Appl\Source\StartApp.c	   181  
+; ..\Appl\Source\StartApp.c	   182  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	   183   * DO NOT CHANGE THIS COMMENT!           << End of function definition area >>              DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\StartApp.c	   184   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	   185  
+; ..\Appl\Source\StartApp.c	   186  
+; ..\Appl\Source\StartApp.c	   187  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	   188   * DO NOT CHANGE THIS COMMENT!           << Start of removed code area >>                   DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\StartApp.c	   189   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	   190  
+; ..\Appl\Source\StartApp.c	   191  
+; ..\Appl\Source\StartApp.c	   192  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	   193   * DO NOT CHANGE THIS COMMENT!           << End of removed code area >>                     DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\StartApp.c	   194   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	   195  
+; ..\Appl\Source\StartApp.c	   196  /**********************************************************************************************************************
+; ..\Appl\Source\StartApp.c	   197   MISRA 2012 violations and justifications
+; ..\Appl\Source\StartApp.c	   198   *********************************************************************************************************************/
+; ..\Appl\Source\StartApp.c	   199  
+; ..\Appl\Source\StartApp.c	   200  /* module specific MISRA deviations:
+; ..\Appl\Source\StartApp.c	   201     MD_Rte_0624:  MISRA rule: Rule8.3
+; ..\Appl\Source\StartApp.c	   202       Reason:     This MISRA violation is a consequence from the RTE requirements [SWS_Rte_01007] [SWS_Rte_01150].
+; ..\Appl\Source\StartApp.c	   203                   The typedefs are never used in the same context.
+; ..\Appl\Source\StartApp.c	   204       Risk:       No functional risk. Only a cast to uint8* is performed.
+; ..\Appl\Source\StartApp.c	   205       Prevention: Not required.
+; ..\Appl\Source\StartApp.c	   206  
+; ..\Appl\Source\StartApp.c	   207     MD_Rte_3206:  MISRA rule: Rule2.7
+; ..\Appl\Source\StartApp.c	   208       Reason:     The parameter are not used by the code in all possible code variants.
+; ..\Appl\Source\StartApp.c	   209       Risk:       No functional risk.
+; ..\Appl\Source\StartApp.c	   210       Prevention: Not required.
+; ..\Appl\Source\StartApp.c	   211  
+; ..\Appl\Source\StartApp.c	   212     MD_Rte_TestCode:
+; ..\Appl\Source\StartApp.c	   213       Reason:     This justification is used as summary justification for all deviations caused by wrong analysis tool results.
+; ..\Appl\Source\StartApp.c	   214                   The used analysis tool QAC 9.0 sometimes creates wrong messages. Those deviations are no issues in the RTE code.
+; ..\Appl\Source\StartApp.c	   215       Risk:       No functional risk.
+; ..\Appl\Source\StartApp.c	   216       Prevention: Not required.
+; ..\Appl\Source\StartApp.c	   217  
+; ..\Appl\Source\StartApp.c	   218  */
+
+	; Module end
