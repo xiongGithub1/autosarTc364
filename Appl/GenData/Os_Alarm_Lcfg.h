@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Alarm_Lcfg.h
- *   Generation Time: 2024-06-29 19:54:30
+ *   Generation Time: 2026-06-30 18:16:14
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -87,13 +87,22 @@
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 /*! Alarm configuration data: Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms */
-extern CONST(Os_AlarmActivateTaskConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms;
+extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms;
+
+/*! Alarm configuration data: Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms */
+extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms;
+
+/*! Alarm configuration data: Rte_Al_TE_StartApp_StartApp_Cyclic1000ms */
+extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic1000ms;
+
+/*! Alarm configuration data: Rte_Al_TE_StartApp_StartApp_Cyclic10ms */
+extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic10ms;
 
 /*! Alarm configuration data: Rte_Al_TE_StartApp_StartApp_Cyclic1ms */
 extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic1ms;
 
-/*! Alarm configuration data: Rte_Al_TE_StartApp_StartApp_Cyclic500ms */
-extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic500ms;
+/*! Alarm configuration data: Rte_Al_TE_StartApp_StartApp_Cyclic250ms */
+extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic250ms;
 
 # define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */

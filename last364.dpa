@@ -46,8 +46,11 @@
     </Folders>
     <Tools>
         <DEV>E:\Program Files (x86)\Vector DaVinci Developer 4.6\Bin\DaVinciDEV.exe</DEV>
+        <LegacyConverter Version="1.8.67.0"/>
+        <DDM Version="21.2.1.12"/>
     </Tools>
     <Input>
+        <ECUEX>Config\System\SystemExtract.arxml</ECUEX>
         <Options>
             <IgnoreUuidsSystemDescriptionFiles>false</IgnoreUuidsSystemDescriptionFiles>
             <IgnoreUuidsStandardConfigurationFiles>false</IgnoreUuidsStandardConfigurationFiles>
@@ -57,23 +60,13 @@
     </Input>
     <References>
         <DVWorkspace>.\Config\Developer\last364.dcf</DVWorkspace>
-        <FlatMap>.\Config\System\FlatMap.arxml</FlatMap>
-        <FlatECUEX>.\Config\System\FlatExtract.arxml</FlatECUEX>
+        <FlatMap>Config\System\FlatMap.arxml</FlatMap>
+        <FlatECUEX>Config\System\FlatExtract.arxml</FlatECUEX>
+        <OEMCommunicationExtract>Config\System\Communication.arxml</OEMCommunicationExtract>
+        <EcucFileReferences/>
     </References>
     <EcucSplitter>
-        <Configuration>.\Config\ECUC\last364.ecuc.arxml</Configuration>
-        <Splitter File=".\Config\ECUC\last364_ResourceM_ResourceM_ecuc.arxml">
-            <Module Name="ResourceM"/>
-        </Splitter>
-        <Splitter File=".\Config\ECUC\last364_Dio_Dio_ecuc.arxml">
-            <Module Name="Dio"/>
-        </Splitter>
-        <Splitter File=".\Config\ECUC\last364_Mcu_Mcu_ecuc.arxml">
-            <Module Name="Mcu"/>
-        </Splitter>
-        <Splitter File=".\Config\ECUC\last364_Port_Port_ecuc.arxml">
-            <Module Name="Port"/>
-        </Splitter>
+        <Configuration>Config\ECUC\last364.ecuc.arxml</Configuration>
         <Splitter File=".\Config\ECUC\last364_MemMap_MemMap_ecuc.arxml">
             <Module Name="MemMap"/>
         </Splitter>
@@ -82,9 +75,6 @@
         </Splitter>
         <Splitter File=".\Config\ECUC\last364_BswM_BswM_ecuc.arxml">
             <Module Name="BswM"/>
-        </Splitter>
-        <Splitter File=".\Config\ECUC\last364_EcuM_EcuM_ecuc.arxml">
-            <Module Name="EcuM"/>
         </Splitter>
         <Splitter File=".\Config\ECUC\last364_vSet_vSet_ecuc.arxml">
             <Module Name="vSet"/>
@@ -101,17 +91,67 @@
         <Splitter File=".\Config\ECUC\last364_Os_Os_ecuc.arxml">
             <Module Name="Os"/>
         </Splitter>
+        <Splitter File=".\Config\ECUC\last364_McalLib_McalLib_ecuc.arxml">
+            <Module Name="McalLib"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\last364_ComXf_ComXf_ecuc.arxml">
+            <Module Name="ComXf"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\last364_E2EXf_E2EXf_ecuc.arxml">
+            <Module Name="E2EXf"/>
+        </Splitter>
         <Splitter File=".\Config\ECUC\last364_EcuC_EcuC_ecuc.arxml">
             <Module Name="EcuC"/>
         </Splitter>
-        <Splitter File=".\Config\ECUC\last364_McalLib_McalLib_ecuc.arxml">
-            <Module Name="McalLib"/>
+        <Splitter File=".\Config\ECUC\last364_EcuM_EcuM_ecuc.arxml">
+            <Module Name="EcuM"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\last364_PduR_PduR_ecuc.arxml">
+            <Module Name="PduR"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\last364_CanIf_CanIf_ecuc.arxml">
+            <Module Name="CanIf"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\last364_Can_Can_ecuc.arxml">
+            <Module Name="Can"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\last364_ComM_ComM_ecuc.arxml">
+            <Module Name="ComM"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\last364_CanSM_CanSM_ecuc.arxml">
+            <Module Name="CanSM"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\last364_Com_Com_ecuc.arxml">
+            <Module Name="Com"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\last364_ResourceM_ResourceM_ecuc.arxml">
+            <Module Name="ResourceM"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\last364_Dio_Dio_ecuc.arxml">
+            <Module Name="Dio"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\last364_Port_Port_ecuc.arxml">
+            <Module Name="Port"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\last364_Mcu_Mcu_ecuc.arxml">
+            <Module Name="Mcu"/>
         </Splitter>
         <OwnFolderForEachSplitter>false</OwnFolderForEachSplitter>
         <OwnFileForEachInstance>true</OwnFileForEachInstance>
     </EcucSplitter>
+    <Display LastVersion="5.25.37 SP2">
+        <FileSet Id="" CS="9b051214">
+            <File Order="0" EcuInstance="MyECU" Hash="7bb0a8940b416fbbc309469e43a6854f" FileCategory="legacy_communication_data">$(DpaProjectFolder)\Config_Vector\CANFD364.dbc</File>
+        </FileSet>
+        <Merge>
+            <Path Id="ECU-INSTANCE" ARPath="/ECU/MyECU"/>
+            <Path Id="SYSTEM" ARPath="/VehicleProject/System"/>
+        </Merge>
+        <SelectiveUpdate Active="false" CS="ecd6502d"/>
+    </Display>
     <ECUC>
-        <Active RootPackageName="/ActiveEcuC/ActiveEcuC">.\Config\ECUC\last364.ecuc.arxml</Active>
+        <Active RootPackageName="/ActiveEcuC/ActiveEcuC">Config\ECUC\last364.ecuc.arxml</Active>
+        <Derived RootPackageName="/InitialEcuC/InitialEcuC">Config\ECUC\last364.ecuc.Initial.arxml</Derived>
     </ECUC>
     <PostBuildLoadable RTEDataFreezeChecksum="" CurrentConfigurationPhase="PRE_COMPILE"/>
     <DEVSettings>

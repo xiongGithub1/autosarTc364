@@ -1,7 +1,27 @@
 last364.elf : .\Appl\GenData\BswM_Lcfg.o
 .\Appl\GenData\BswM_Lcfg.o :
+last364.elf : .\Appl\GenData\CanIf_Lcfg.o
+.\Appl\GenData\CanIf_Lcfg.o :
+last364.elf : .\Appl\GenData\CanIf_PBcfg.o
+.\Appl\GenData\CanIf_PBcfg.o :
+last364.elf : .\Appl\GenData\CanSM_Lcfg.o
+.\Appl\GenData\CanSM_Lcfg.o :
+last364.elf : .\Appl\GenData\Can_Lcfg.o
+.\Appl\GenData\Can_Lcfg.o :
+last364.elf : .\Appl\GenData\Can_PBcfg.o
+.\Appl\GenData\Can_PBcfg.o :
+last364.elf : .\Appl\GenData\ComM_Lcfg.o
+.\Appl\GenData\ComM_Lcfg.o :
+last364.elf : .\Appl\GenData\ComXf.o
+.\Appl\GenData\ComXf.o :
+last364.elf : .\Appl\GenData\Com_Lcfg.o
+.\Appl\GenData\Com_Lcfg.o :
+last364.elf : .\Appl\GenData\Com_PBcfg.o
+.\Appl\GenData\Com_PBcfg.o :
 last364.elf : .\Appl\GenData\Det_Cfg.o
 .\Appl\GenData\Det_Cfg.o :
+last364.elf : .\Appl\GenData\E2EXf_LCfg.o
+.\Appl\GenData\E2EXf_LCfg.o :
 last364.elf : .\Appl\GenData\EcuM_Cfg.o
 .\Appl\GenData\EcuM_Cfg.o :
 last364.elf : .\Appl\GenData\EcuM_Init_Cfg.o
@@ -68,6 +88,10 @@ last364.elf : .\Appl\GenData\Os_Trace_Lcfg.o
 .\Appl\GenData\Os_Trace_Lcfg.o :
 last364.elf : .\Appl\GenData\Os_XSignal_Lcfg.o
 .\Appl\GenData\Os_XSignal_Lcfg.o :
+last364.elf : .\Appl\GenData\PduR_Lcfg.o
+.\Appl\GenData\PduR_Lcfg.o :
+last364.elf : .\Appl\GenData\PduR_PBcfg.o
+.\Appl\GenData\PduR_PBcfg.o :
 last364.elf : .\Appl\GenData\Rte.o
 .\Appl\GenData\Rte.o :
 last364.elf : .\Appl\GenData\src\Dio_Lcfg.o
@@ -86,6 +110,8 @@ last364.elf : .\Appl\Source\Autosar_Startup.o
 .\Appl\Source\Autosar_Startup.o :
 last364.elf : .\Appl\Source\BswM_Callout_Stubs.o
 .\Appl\Source\BswM_Callout_Stubs.o :
+last364.elf : .\Appl\Source\Can_Callout_Stubs.o
+.\Appl\Source\Can_Callout_Stubs.o :
 last364.elf : .\Appl\Source\EcuM_Callout_Stubs.o
 .\Appl\Source\EcuM_Callout_Stubs.o :
 last364.elf : .\Appl\Source\Os_Callout_Stubs.o
@@ -94,8 +120,60 @@ last364.elf : .\Appl\Source\StartApp.o
 .\Appl\Source\StartApp.o :
 last364.elf : .\BSW364\BswM\Implementation\BswM.o
 .\BSW364\BswM\Implementation\BswM.o :
+last364.elf : .\BSW364\CanIf\Implementation\CanIf.o
+.\BSW364\CanIf\Implementation\CanIf.o :
+last364.elf : .\BSW364\CanSM\Implementation\CanSM.o
+.\BSW364\CanSM\Implementation\CanSM.o :
+last364.elf : .\BSW364\Can\Implementation\Can.o
+.\BSW364\Can\Implementation\Can.o :
+last364.elf : .\BSW364\Can\Implementation\Can_Irq.o
+.\BSW364\Can\Implementation\Can_Irq.o :
+last364.elf : .\BSW364\ComM\Implementation\ComM.o
+.\BSW364\ComM\Implementation\ComM.o :
+last364.elf : .\BSW364\Com\Implementation\Com.o
+.\BSW364\Com\Implementation\Com.o :
+last364.elf : .\BSW364\Com\Implementation\Com_Buffers.o
+.\BSW364\Com\Implementation\Com_Buffers.o :
+last364.elf : .\BSW364\Com\Implementation\Com_CprQueue.o
+.\BSW364\Com\Implementation\Com_CprQueue.o :
+last364.elf : .\BSW364\Com\Implementation\Com_CprQueueDescrGw.o
+.\BSW364\Com\Implementation\Com_CprQueueDescrGw.o :
+last364.elf : .\BSW364\Com\Implementation\Com_CprQueueSigGw.o
+.\BSW364\Com\Implementation\Com_CprQueueSigGw.o :
+last364.elf : .\BSW364\Com\Implementation\Com_DescriptionGateway.o
+.\BSW364\Com\Implementation\Com_DescriptionGateway.o :
+last364.elf : .\BSW364\Com\Implementation\Com_Deserializer.o
+.\BSW364\Com\Implementation\Com_Deserializer.o :
+last364.elf : .\BSW364\Com\Implementation\Com_IPduGroupHdlr.o
+.\BSW364\Com\Implementation\Com_IPduGroupHdlr.o :
+last364.elf : .\BSW364\Com\Implementation\Com_LLIf.o
+.\BSW364\Com\Implementation\Com_LLIf.o :
+last364.elf : .\BSW364\Com\Implementation\Com_LMgt.o
+.\BSW364\Com\Implementation\Com_LMgt.o :
+last364.elf : .\BSW364\Com\Implementation\Com_MainFunctions.o
+.\BSW364\Com\Implementation\Com_MainFunctions.o :
+last364.elf : .\BSW364\Com\Implementation\Com_Notifications.o
+.\BSW364\Com\Implementation\Com_Notifications.o :
+last364.elf : .\BSW364\Com\Implementation\Com_RxInv.o
+.\BSW364\Com\Implementation\Com_RxInv.o :
+last364.elf : .\BSW364\Com\Implementation\Com_RxProcessing.o
+.\BSW364\Com\Implementation\Com_RxProcessing.o :
+last364.elf : .\BSW364\Com\Implementation\Com_Serializer.o
+.\BSW364\Com\Implementation\Com_Serializer.o :
+last364.elf : .\BSW364\Com\Implementation\Com_SignalFilterHdlr.o
+.\BSW364\Com\Implementation\Com_SignalFilterHdlr.o :
+last364.elf : .\BSW364\Com\Implementation\Com_SignalGateway.o
+.\BSW364\Com\Implementation\Com_SignalGateway.o :
+last364.elf : .\BSW364\Com\Implementation\Com_SignalIf.o
+.\BSW364\Com\Implementation\Com_SignalIf.o :
+last364.elf : .\BSW364\Com\Implementation\Com_Timer.o
+.\BSW364\Com\Implementation\Com_Timer.o :
+last364.elf : .\BSW364\Com\Implementation\Com_TxModeHdlr.o
+.\BSW364\Com\Implementation\Com_TxModeHdlr.o :
 last364.elf : .\BSW364\Det\Implementation\Det.o
 .\BSW364\Det\Implementation\Det.o :
+last364.elf : .\BSW364\E2EXf\Implementation\E2EXf.o
+.\BSW364\E2EXf\Implementation\E2EXf.o :
 last364.elf : .\BSW364\EcuM\Implementation\EcuM.o
 .\BSW364\EcuM\Implementation\EcuM.o :
 last364.elf : .\BSW364\Os\Implementation\Os_AccessCheck.o
@@ -190,6 +268,26 @@ last364.elf : .\BSW364\Os\Implementation\Os_Trap.o
 .\BSW364\Os\Implementation\Os_Trap.o :
 last364.elf : .\BSW364\Os\Implementation\Os_XSignal.o
 .\BSW364\Os\Implementation\Os_XSignal.o :
+last364.elf : .\BSW364\PduR\Implementation\PduR.o
+.\BSW364\PduR\Implementation\PduR.o :
+last364.elf : .\BSW364\PduR\Implementation\PduR_Bm.o
+.\BSW364\PduR\Implementation\PduR_Bm.o :
+last364.elf : .\BSW364\PduR\Implementation\PduR_Fm.o
+.\BSW364\PduR\Implementation\PduR_Fm.o :
+last364.elf : .\BSW364\PduR\Implementation\PduR_IFQ.o
+.\BSW364\PduR\Implementation\PduR_IFQ.o :
+last364.elf : .\BSW364\PduR\Implementation\PduR_Lock.o
+.\BSW364\PduR\Implementation\PduR_Lock.o :
+last364.elf : .\BSW364\PduR\Implementation\PduR_McQ.o
+.\BSW364\PduR\Implementation\PduR_McQ.o :
+last364.elf : .\BSW364\PduR\Implementation\PduR_RmIf.o
+.\BSW364\PduR\Implementation\PduR_RmIf.o :
+last364.elf : .\BSW364\PduR\Implementation\PduR_RmTp.o
+.\BSW364\PduR\Implementation\PduR_RmTp.o :
+last364.elf : .\BSW364\PduR\Implementation\PduR_RmTp_TxInst.o
+.\BSW364\PduR\Implementation\PduR_RmTp_TxInst.o :
+last364.elf : .\BSW364\PduR\Implementation\PduR_Sm.o
+.\BSW364\PduR\Implementation\PduR_Sm.o :
 last364.elf : .\BSW364\VStdLib\Implementation\vstdlib.o
 .\BSW364\VStdLib\Implementation\vstdlib.o :
 last364.elf : .\MCAL364\Dio\ssc\src\Dio.o

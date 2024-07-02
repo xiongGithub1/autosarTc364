@@ -149,15 +149,15 @@ typedef P2FUNC(Std_ReturnType, RTE_CODE, FncPtrType)(void);
  *   ECUM_BOOT_TARGET_OEM_BOOTLOADER (1U)
  *   ECUM_BOOT_TARGET_SYS_BOOTLOADER (2U)
  * EcuM_ModeType: Enumeration of integer in interval [0...3] with enumerators
- *   EcuMConf_EcuMResetMode_ECUM_RESET_MCU (0U)
- *   EcuMConf_EcuMResetMode_ECUM_RESET_WDG (1U)
  *   EcuMConf_EcuMResetMode_ECUM_RESET_IO (2U)
+ *   EcuMConf_EcuMResetMode_ECUM_RESET_MCU (0U)
  *   EcuMConf_EcuMResetMode_ECUM_RESET_WAKEUP (3U)
+ *   EcuMConf_EcuMResetMode_ECUM_RESET_WDG (1U)
  * EcuM_ShutdownCauseType: Enumeration of integer in interval [0...3] with enumerators
  *   EcuMConf_EcuMShutdownCause_ECUM_CAUSE_UNKNOWN (0U)
+ *   EcuMConf_EcuMShutdownCause_ECUM_CAUSE_DCM (3U)
  *   EcuMConf_EcuMShutdownCause_ECUM_CAUSE_ECU_STATE (1U)
  *   EcuMConf_EcuMShutdownCause_ECUM_CAUSE_WDGM (2U)
- *   EcuMConf_EcuMShutdownCause_ECUM_CAUSE_DCM (3U)
  * EcuM_StateType: Enumeration of integer in interval [0...144] with enumerators
  *   ECUM_STATE_SLEEP (80U)
  *   ECUM_STATE_OFF (128U)
@@ -870,15 +870,15 @@ static void EcuM_TestDefines(void)
   EcuM_BootTargetType Test_EcuM_BootTargetType_V_2 = ECUM_BOOT_TARGET_OEM_BOOTLOADER;
   EcuM_BootTargetType Test_EcuM_BootTargetType_V_3 = ECUM_BOOT_TARGET_SYS_BOOTLOADER;
 
-  EcuM_ModeType Test_EcuM_ModeType_V_1 = EcuMConf_EcuMResetMode_ECUM_RESET_MCU;
-  EcuM_ModeType Test_EcuM_ModeType_V_2 = EcuMConf_EcuMResetMode_ECUM_RESET_WDG;
-  EcuM_ModeType Test_EcuM_ModeType_V_3 = EcuMConf_EcuMResetMode_ECUM_RESET_IO;
-  EcuM_ModeType Test_EcuM_ModeType_V_4 = EcuMConf_EcuMResetMode_ECUM_RESET_WAKEUP;
+  EcuM_ModeType Test_EcuM_ModeType_V_1 = EcuMConf_EcuMResetMode_ECUM_RESET_IO;
+  EcuM_ModeType Test_EcuM_ModeType_V_2 = EcuMConf_EcuMResetMode_ECUM_RESET_MCU;
+  EcuM_ModeType Test_EcuM_ModeType_V_3 = EcuMConf_EcuMResetMode_ECUM_RESET_WAKEUP;
+  EcuM_ModeType Test_EcuM_ModeType_V_4 = EcuMConf_EcuMResetMode_ECUM_RESET_WDG;
 
   EcuM_ShutdownCauseType Test_EcuM_ShutdownCauseType_V_1 = EcuMConf_EcuMShutdownCause_ECUM_CAUSE_UNKNOWN;
-  EcuM_ShutdownCauseType Test_EcuM_ShutdownCauseType_V_2 = EcuMConf_EcuMShutdownCause_ECUM_CAUSE_ECU_STATE;
-  EcuM_ShutdownCauseType Test_EcuM_ShutdownCauseType_V_3 = EcuMConf_EcuMShutdownCause_ECUM_CAUSE_WDGM;
-  EcuM_ShutdownCauseType Test_EcuM_ShutdownCauseType_V_4 = EcuMConf_EcuMShutdownCause_ECUM_CAUSE_DCM;
+  EcuM_ShutdownCauseType Test_EcuM_ShutdownCauseType_V_2 = EcuMConf_EcuMShutdownCause_ECUM_CAUSE_DCM;
+  EcuM_ShutdownCauseType Test_EcuM_ShutdownCauseType_V_3 = EcuMConf_EcuMShutdownCause_ECUM_CAUSE_ECU_STATE;
+  EcuM_ShutdownCauseType Test_EcuM_ShutdownCauseType_V_4 = EcuMConf_EcuMShutdownCause_ECUM_CAUSE_WDGM;
 
   EcuM_StateType Test_EcuM_StateType_V_1 = ECUM_STATE_SLEEP;
   EcuM_StateType Test_EcuM_StateType_V_2 = ECUM_STATE_OFF;

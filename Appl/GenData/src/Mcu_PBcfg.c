@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 32.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-06-30, 13:45:43       !!!IGNORE-LINE!!!                  **
+**  DATE, TIME: 2024-07-02, 17:51:28       !!!IGNORE-LINE!!!                  **
 **                                                                            **
 **  GENERATOR : Build b191017-0938           !!!IGNORE-LINE!!!                **
 **                                                                            **
@@ -71,7 +71,7 @@ static const Mcu_PllDistributionConfigType Mcu_kPllDistributionConfiguration_Con
   /* CCUCON0 value */
   0x17230113U,
   /* CCUCON1 value */
-  0x00000300U,
+  0x00000312U,
   /* CCUCON2 value */
   0x05000001U,
   /* CCUCON5 value */

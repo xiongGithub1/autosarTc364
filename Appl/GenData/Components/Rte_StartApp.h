@@ -54,13 +54,17 @@ extern "C"
  *********************************************************************************************************************/
 
 # ifndef RTE_CORE
+#  define RTE_RUNNABLE_StartApp_Cyclic1000ms StartApp_Cyclic1000ms
+#  define RTE_RUNNABLE_StartApp_Cyclic10ms StartApp_Cyclic10ms
 #  define RTE_RUNNABLE_StartApp_Cyclic1ms StartApp_Cyclic1ms
-#  define RTE_RUNNABLE_StartApp_Cyclic500ms StartApp_Cyclic500ms
+#  define RTE_RUNNABLE_StartApp_Cyclic250ms StartApp_Cyclic250ms
 #  define RTE_RUNNABLE_StartApp_Init StartApp_Init
 # endif
 
+FUNC(void, StartApp_CODE) StartApp_Cyclic1000ms(void); /* PRQA S 3451, 0786, 3449 */ /* MD_Rte_3451, MD_Rte_0786, MD_Rte_3449 */
+FUNC(void, StartApp_CODE) StartApp_Cyclic10ms(void); /* PRQA S 3451, 0786, 3449 */ /* MD_Rte_3451, MD_Rte_0786, MD_Rte_3449 */
 FUNC(void, StartApp_CODE) StartApp_Cyclic1ms(void); /* PRQA S 3451, 0786, 3449 */ /* MD_Rte_3451, MD_Rte_0786, MD_Rte_3449 */
-FUNC(void, StartApp_CODE) StartApp_Cyclic500ms(void); /* PRQA S 3451, 0786, 3449 */ /* MD_Rte_3451, MD_Rte_0786, MD_Rte_3449 */
+FUNC(void, StartApp_CODE) StartApp_Cyclic250ms(void); /* PRQA S 3451, 0786, 3449 */ /* MD_Rte_3451, MD_Rte_0786, MD_Rte_3449 */
 FUNC(void, StartApp_CODE) StartApp_Init(void); /* PRQA S 3451, 0786, 3449 */ /* MD_Rte_3451, MD_Rte_0786, MD_Rte_3449 */
 
 # define StartApp_STOP_SEC_CODE

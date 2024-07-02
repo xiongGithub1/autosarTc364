@@ -1,0 +1,350 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc21912a --dep-file=Appl\\GenData\\.ComXf.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\mak -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Make -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteAnalyzer -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache\\-148438436 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -g2 --make-target=Appl\\GenData\\ComXf.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\ComXf.src ..\\Appl\\GenData\\ComXf.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\GenData\\ComXf.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.ComXf.ComXf_Init',code,cluster('ComXf_Init')
+	.sect	'.text.ComXf.ComXf_Init'
+	.align	2
+	
+	.global	ComXf_Init
+
+; ..\Appl\GenData\ComXf.c	     1  /**********************************************************************************************************************
+; ..\Appl\GenData\ComXf.c	     2   *  COPYRIGHT
+; ..\Appl\GenData\ComXf.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\ComXf.c	     4   *  \verbatim
+; ..\Appl\GenData\ComXf.c	     5   *
+; ..\Appl\GenData\ComXf.c	     6   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\Appl\GenData\ComXf.c	     7   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\Appl\GenData\ComXf.c	     8   *                All other rights remain with Vector Informatik GmbH.
+; ..\Appl\GenData\ComXf.c	     9   *  \endverbatim
+; ..\Appl\GenData\ComXf.c	    10   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\ComXf.c	    11   *  FILE DESCRIPTION
+; ..\Appl\GenData\ComXf.c	    12   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\ComXf.c	    13   *             File:  ComXf.c
+; ..\Appl\GenData\ComXf.c	    14   *           Config:  last364.dpa
+; ..\Appl\GenData\ComXf.c	    15   *      ECU-Project:  last364
+; ..\Appl\GenData\ComXf.c	    16   *
+; ..\Appl\GenData\ComXf.c	    17   *        Generator:  MICROSAR ComXf Generator Version 1.21.0
+; ..\Appl\GenData\ComXf.c	    18   *                    RTE Core Version 1.29.0
+; ..\Appl\GenData\ComXf.c	    19   *          License:  CBD2200508
+; ..\Appl\GenData\ComXf.c	    20   *
+; ..\Appl\GenData\ComXf.c	    21   *      Description:  MICROSAR ComXf implementation file
+; ..\Appl\GenData\ComXf.c	    22   *********************************************************************************************************************/
+; ..\Appl\GenData\ComXf.c	    23  
+; ..\Appl\GenData\ComXf.c	    24  /* PRQA S 0777, 0779, 0715, 0857 EOF */ /* MD_MSR_Rule5.1, MD_MSR_Rule5.2, MD_MSR_Dir1.1, MD_MSR_Dir1.1 */
+; ..\Appl\GenData\ComXf.c	    25  
+; ..\Appl\GenData\ComXf.c	    26  #include "ComXf.h" /* PRQA S 0828, 0810 */ /* MD_MSR_Dir1.1, MD_MSR_Dir1.1 */
+; ..\Appl\GenData\ComXf.c	    27  
+; ..\Appl\GenData\ComXf.c	    28  /**********************************************************************************************************************
+; ..\Appl\GenData\ComXf.c	    29   *  LOCAL FUNCTION MACROS
+; ..\Appl\GenData\ComXf.c	    30   *********************************************************************************************************************/
+; ..\Appl\GenData\ComXf.c	    31  
+; ..\Appl\GenData\ComXf.c	    32  #if !defined(COMXF_LOCAL_INLINE)
+; ..\Appl\GenData\ComXf.c	    33  # define COMXF_LOCAL_INLINE LOCAL_INLINE
+; ..\Appl\GenData\ComXf.c	    34  #endif
+; ..\Appl\GenData\ComXf.c	    35  
+; ..\Appl\GenData\ComXf.c	    36  #ifndef COMXF_DUMMY_STATEMENT
+; ..\Appl\GenData\ComXf.c	    37  # define COMXF_DUMMY_STATEMENT(v)
+; ..\Appl\GenData\ComXf.c	    38  #endif
+; ..\Appl\GenData\ComXf.c	    39  #ifndef COMXF_DUMMY_STATEMENT_CONST
+; ..\Appl\GenData\ComXf.c	    40  # define COMXF_DUMMY_STATEMENT_CONST(v)
+; ..\Appl\GenData\ComXf.c	    41  #endif
+; ..\Appl\GenData\ComXf.c	    42  
+; ..\Appl\GenData\ComXf.c	    43  #define COMXF_START_SEC_CODE
+; ..\Appl\GenData\ComXf.c	    44  #include "ComXf_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\ComXf.c	    45  
+; ..\Appl\GenData\ComXf.c	    46  COMXF_LOCAL_INLINE FUNC(void, COMXF_CODE) ComXf_Copy16Bit(P2VAR(uint8, AUTOMATIC, COMXF_APPL_VAR) dst, P2CONST(uint8, AUTOMATIC, COMXF_APPL_DATA) src);
+; ..\Appl\GenData\ComXf.c	    47  
+; ..\Appl\GenData\ComXf.c	    48  COMXF_LOCAL_INLINE FUNC(void, COMXF_CODE) ComXf_Copy32Bit(P2VAR(uint8, AUTOMATIC, COMXF_APPL_VAR) dst, P2CONST(uint8, AUTOMATIC, COMXF_APPL_DATA) src);
+; ..\Appl\GenData\ComXf.c	    49  
+; ..\Appl\GenData\ComXf.c	    50  COMXF_LOCAL_INLINE FUNC(void, COMXF_CODE) ComXf_Copy64Bit(P2VAR(uint8, AUTOMATIC, COMXF_APPL_VAR) dst, P2CONST(uint8, AUTOMATIC, COMXF_APPL_DATA) src);
+; ..\Appl\GenData\ComXf.c	    51  
+; ..\Appl\GenData\ComXf.c	    52  COMXF_LOCAL_INLINE FUNC(void, COMXF_CODE) ComXf_Copy16BitEndConv(P2VAR(uint8, AUTOMATIC, COMXF_APPL_VAR) dst, P2CONST(uint8, AUTOMATIC, COMXF_APPL_DATA) src);
+; ..\Appl\GenData\ComXf.c	    53  
+; ..\Appl\GenData\ComXf.c	    54  COMXF_LOCAL_INLINE FUNC(void, COMXF_CODE) ComXf_Copy32BitEndConv(P2VAR(uint8, AUTOMATIC, COMXF_APPL_VAR) dst, P2CONST(uint8, AUTOMATIC, COMXF_APPL_DATA) src);
+; ..\Appl\GenData\ComXf.c	    55  
+; ..\Appl\GenData\ComXf.c	    56  COMXF_LOCAL_INLINE FUNC(void, COMXF_CODE) ComXf_Copy64BitEndConv(P2VAR(uint8, AUTOMATIC, COMXF_APPL_VAR) dst, P2CONST(uint8, AUTOMATIC, COMXF_APPL_DATA) src);
+; ..\Appl\GenData\ComXf.c	    57  
+; ..\Appl\GenData\ComXf.c	    58  /**********************************************************************************************************************
+; ..\Appl\GenData\ComXf.c	    59   * ComXf Init/DeInit API
+; ..\Appl\GenData\ComXf.c	    60   *********************************************************************************************************************/
+; ..\Appl\GenData\ComXf.c	    61  
+; ..\Appl\GenData\ComXf.c	    62  FUNC(void, COMXF_CODE) ComXf_Init(P2CONST(ComXf_ConfigType, AUTOMATIC, COMXF_APPL_DATA) config) /* PRQA S 3206 */ /* MD_ComXf_3206 */
+; Function ComXf_Init
+.L3:
+ComXf_Init:	.type	func
+
+; ..\Appl\GenData\ComXf.c	    63  {
+; ..\Appl\GenData\ComXf.c	    64    COMXF_DUMMY_STATEMENT(config); /* PRQA S 1338, 2983 */ /* MD_MSR_DummyStmt, MD_MSR_DummyStmt */
+; ..\Appl\GenData\ComXf.c	    65  }
+	ret
+.L20:
+	
+__ComXf_Init_function_end:
+	.size	ComXf_Init,__ComXf_Init_function_end-ComXf_Init
+.L14:
+	; End of function
+	
+	.sdecl	'.text.ComXf.ComXf_DeInit',code,cluster('ComXf_DeInit')
+	.sect	'.text.ComXf.ComXf_DeInit'
+	.align	2
+	
+	.global	ComXf_DeInit
+
+; ..\Appl\GenData\ComXf.c	    66  
+; ..\Appl\GenData\ComXf.c	    67  FUNC(void, COMXF_CODE) ComXf_DeInit(void)
+; Function ComXf_DeInit
+.L5:
+ComXf_DeInit:	.type	func
+
+; ..\Appl\GenData\ComXf.c	    68  {
+; ..\Appl\GenData\ComXf.c	    69  }
+	ret
+.L23:
+	
+__ComXf_DeInit_function_end:
+	.size	ComXf_DeInit,__ComXf_DeInit_function_end-ComXf_DeInit
+.L19:
+	; End of function
+	
+	.calls	'ComXf_Init','',0
+	.calls	'ComXf_DeInit','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L7:
+	.word	512
+	.half	3
+	.word	.L8
+	.byte	4
+.L6:
+	.byte	1
+	.byte	'..\\Appl\\GenData\\ComXf.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L9
+	.byte	2
+	.byte	'unsigned char',0,1,8,3
+	.word	135
+.L21:
+	.byte	4
+	.word	152
+	.byte	5,1,4
+	.word	162
+	.byte	6
+	.byte	'__codeptr',0,1,1,1
+	.word	164
+	.byte	6
+	.byte	'uint8',0,2,104,31
+	.word	135
+	.byte	2
+	.byte	'unsigned short int',0,2,7,6
+	.byte	'uint16',0,2,106,31
+	.word	201
+	.byte	2
+	.byte	'unsigned long int',0,4,7,6
+	.byte	'uint32',0,2,108,31
+	.word	238
+	.byte	6
+	.byte	'Std_ReturnType',0,3,124,15
+	.word	135
+	.byte	6
+	.byte	'Std_TransformerErrorCode',0,3,135,1,15
+	.word	135
+	.byte	6
+	.byte	'Std_TransformerClass',0,3,137,1,15
+	.word	135
+	.byte	6
+	.byte	'PduLengthType',0,4,65,15
+	.word	135
+	.byte	4
+	.word	135
+	.byte	6
+	.byte	'SduDataPtrType',0,5,196,1,54
+	.word	383
+	.byte	7,5,219,1,9,1,8
+	.byte	'TP_DATACONF',0,0,8
+	.byte	'TP_DATARETRY',0,1,8
+	.byte	'TP_CONFPENDING',0,2,0,6
+	.byte	'TpDataStateType',0,5,226,1,3
+	.word	412
+	.byte	6
+	.byte	'ComXf_ConfigType',0,6,49,15
+	.word	135
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L8:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,15,0,73,19
+	.byte	0,0,5,21,0,54,15,0,0,6,22,0,3,8,58,15,59,15,57,15,73,19,0,0,7,4,1,58,15,59,15,57,15,11,15,0,0,8,40,0,3
+	.byte	8,28,13,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L9:
+	.word	.L25-.L24
+.L24:
+	.half	3
+	.word	.L27-.L26
+.L26:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData',0,0
+	.byte	'..\\Appl\\GenData\\ComXf.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Std_Types.h',0,1,0,0
+	.byte	'ComStack_Cfg.h',0,2,0,0
+	.byte	'ComStack_Types.h',0,1,0,0
+	.byte	'..\\Appl\\GenData\\ComXf.h',0,0,0,0,0
+.L27:
+.L25:
+	.sdecl	'.debug_info',debug,cluster('ComXf_Init')
+	.sect	'.debug_info'
+.L10:
+	.word	200
+	.half	3
+	.word	.L11
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\ComXf.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L13,.L12
+	.byte	2
+	.word	.L6
+	.byte	3
+	.byte	'ComXf_Init',0,1,62,24,1,1,1
+	.word	.L3,.L20,.L2
+	.byte	4
+	.byte	'config',0,1,62,89
+	.word	.L21,.L22
+	.byte	5
+	.word	.L3,.L20
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('ComXf_Init')
+	.sect	'.debug_abbrev'
+.L11:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('ComXf_Init')
+	.sect	'.debug_line'
+.L12:
+	.word	.L29-.L28
+.L28:
+	.half	3
+	.word	.L31-.L30
+.L30:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Appl\\GenData\\ComXf.c',0,0,0,0,0
+.L31:
+	.byte	5,1,7,0,5,2
+	.word	.L3
+	.byte	3,192,0,1,7,9
+	.half	.L14-.L3
+	.byte	0,1,1
+.L29:
+	.sdecl	'.debug_ranges',debug,cluster('ComXf_Init')
+	.sect	'.debug_ranges'
+.L13:
+	.word	-1,.L3,0,.L14-.L3,0,0
+	.sdecl	'.debug_info',debug,cluster('ComXf_DeInit')
+	.sect	'.debug_info'
+.L15:
+	.word	183
+	.half	3
+	.word	.L16
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\ComXf.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L18,.L17
+	.byte	2
+	.word	.L6
+	.byte	3
+	.byte	'ComXf_DeInit',0,1,67,24,1,1,1
+	.word	.L5,.L23,.L4
+	.byte	4
+	.word	.L5,.L23
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('ComXf_DeInit')
+	.sect	'.debug_abbrev'
+.L16:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('ComXf_DeInit')
+	.sect	'.debug_line'
+.L17:
+	.word	.L33-.L32
+.L32:
+	.half	3
+	.word	.L35-.L34
+.L34:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Appl\\GenData\\ComXf.c',0,0,0,0,0
+.L35:
+	.byte	5,1,7,0,5,2
+	.word	.L5
+	.byte	3,196,0,1,7,9
+	.half	.L19-.L5
+	.byte	0,1,1
+.L33:
+	.sdecl	'.debug_ranges',debug,cluster('ComXf_DeInit')
+	.sect	'.debug_ranges'
+.L18:
+	.word	-1,.L5,0,.L19-.L5,0,0
+	.sdecl	'.debug_loc',debug,cluster('ComXf_DeInit')
+	.sect	'.debug_loc'
+.L4:
+	.word	-1,.L5,0,.L23-.L5
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('ComXf_Init')
+	.sect	'.debug_loc'
+.L2:
+	.word	-1,.L3,0,.L20-.L3
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L22:
+	.word	-1,.L3,0,.L20-.L3
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L36:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('ComXf_Init')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L36,.L3,.L20-.L3
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('ComXf_DeInit')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L36,.L5,.L23-.L5
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+; ..\Appl\GenData\ComXf.c	    70  
+; ..\Appl\GenData\ComXf.c	    71  #define COMXF_STOP_SEC_CODE
+; ..\Appl\GenData\ComXf.c	    72  #include "ComXf_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\ComXf.c	    73  
+; ..\Appl\GenData\ComXf.c	    74  /**********************************************************************************************************************
+; ..\Appl\GenData\ComXf.c	    75   MISRA 2012 violations and justifications
+; ..\Appl\GenData\ComXf.c	    76   *********************************************************************************************************************/
+; ..\Appl\GenData\ComXf.c	    77  
+; ..\Appl\GenData\ComXf.c	    78  /* module specific MISRA deviations:
+; ..\Appl\GenData\ComXf.c	    79     MD_ComXf_3206:  MISRA rule: Rule2.7
+; ..\Appl\GenData\ComXf.c	    80       Reason:       The parameters are not used by the code in all possible code variants.
+; ..\Appl\GenData\ComXf.c	    81       Risk:         No functional risk.
+; ..\Appl\GenData\ComXf.c	    82       Prevention:   Not required.
+; ..\Appl\GenData\ComXf.c	    83  
+; ..\Appl\GenData\ComXf.c	    84  */
+
+	; Module end

@@ -1,0 +1,77 @@
+2024-07-02 - 17:34:32
+17:34:32 - Workflow Step 'Update workflow' started.
+Using DaVinci Configurator Classic (beta) 5.25.37 SP2 (x86_64).
+17:34:32 - Workflow Step 'Validate workflow environment' started.
+17:34:32 - Workflow Step 'Validate dpa file' started.
+17:34:32 - Workflow Step 'Validate dpa file' finished.
+17:34:32 - Workflow Step 'SLP conformance check' started.
+17:34:32 - Workflow Step 'SLP conformance check' finished.
+17:34:32 - Workflow Step 'Validate workflow environment' finished.
+17:34:32 - Workflow Step 'Input File Pre-Processing' started.
+17:34:32 - Workflow Step 'Converting legacy file(s) to AUTOSAR files' started.
+              [ERROR] Legacy Converter finished with errors.
+Convert legacy file(s) to System Description
+Used executable: E:\workFiles\TC367\TC367\CBD2200508_D00\CBD2200508_D00\Misc\LegacyDb2SystemDescrConverter\Application\LegacyDb2SystemDescrConverter.exe
+Arguments: E:\workFiles\TC367\TC367\workspace\last364\Config_Vector\CANFD364.dbc -o "C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-1691085\LegacyConverterResults\1719912873251-0\ConvertedLegacy" -r 00048 -e -v 19
+Vector Legacy Database Converter
+Version: 1.8.67.0
+Copyright (c) 2018 Vector Informatik GmbH.
+SIP License found as E:\workFiles\TC367\TC367\CBD2200508_D00\CBD2200508_D00\DaVinciConfigurator\ComponentLicense_DaVinciConfigurator.lic
+Command line: E:\workFiles\TC367\TC367\CBD2200508_D00\CBD2200508_D00\Misc\LegacyDb2SystemDescrConverter\Application\LegacyDb2SystemDescrConverter.exe E:\workFiles\TC367\TC367\workspace\last364\Config_Vector\CANFD364.dbc -o "C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-1691085\LegacyConverterResults\1719912873251-0\ConvertedLegacy" -r 00048 -e -v 19
+Converting DBC file E:\workFiles\TC367\TC367\workspace\last364\Config_Vector\CANFD364.dbc
+              [ERROR] DBC attribute definition GenMsgSendType has unknown default value cyclicX
+              [ERROR] DBC attribute definition GenSigSendType has unknown default value cyclicX
+Writing System Description...
+Writing 3 ECU Extracts...
+C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-1691085\LegacyConverterResults\1719912873251-0\ConvertedLegacy.arxml
+C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-1691085\LegacyConverterResults\1719912873251-0\ConvertedLegacy_MyECU.arxml
+C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-1691085\LegacyConverterResults\1719912873251-0\ConvertedLegacy_RearECU.arxml
+C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-1691085\LegacyConverterResults\1719912873251-0\ConvertedLegacy_Tester.arxml
+Elapsed time: 1.180 seconds
+2 Errors
+0 Warnings
+17:34:34 - Workflow Step 'Converting legacy file(s) to AUTOSAR files' finished.
+17:34:34 - Workflow Step 'Load arxml file after preprocessing' started.
+Load arxml file from path: C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-1691085\LegacyConverterResults\1719912873251-0\ConvertedLegacy_MyECU.arxml
+17:34:34 - Workflow Step 'Load arxml file after preprocessing' finished.
+17:34:34 - Workflow Step 'Evaluate system extract paths' started.
+17:34:34 - Workflow Step 'Evaluate system extract paths' finished.
+Checking if the file preprocessing result is a valid ECU extract...
+Input File Pre-Processing finished with error(s).
+17:34:34 - Workflow Step 'Input File Pre-Processing' finished.
+17:34:35 - Workflow Step 'Create copy of the Project' started.
+Copy project 'E:\workFiles\TC367\TC367\workspace\last364' to 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-1691085\Workflow\1719912875074-0'...
+Adjusting DPA file of copied project...
+17:34:35 - Workflow Step 'Create copy of the Project' finished.
+17:34:35 - Workflow Step 'Analyse Bswmd's of the current project' started.
+17:34:35 - Workflow Step 'Analyse Bswmd's of the current project' finished.
+17:34:35 - Workflow Step 'Close Project' started.
+17:34:35 - Workflow Step 'Close Project' finished.
+17:34:43 - Workflow Step 'Prepare System Extract' started.
+17:34:43 - Workflow Step 'Preprocessing System Extract' started.
+17:34:43 - Workflow Step 'Preprocessing System Extract' finished.
+17:34:43 - Workflow Step 'Create OEM Communication Extract' started.
+17:34:44 - Workflow Step 'Create OEM Communication Extract' finished.
+17:34:44 - Workflow Step 'Prepare System Extract' finished.
+17:34:44 - Workflow Step 'Updating the project' started.
+17:34:47 - Workflow Step 'Create ECU configuration' started.
+17:34:52 - Workflow Step 'Create ECU configuration' finished.
+17:34:52 - Workflow Step 'Update ECU configuration' started.
+17:35:02 - Workflow Step 'Update ECU configuration' finished.
+17:35:02 - Workflow Step 'Updating the project' finished.
+17:35:02 - Workflow Step 'Generate update report' started.
+17:35:19 - Workflow Step 'Generate update report' finished.
+17:35:19 - Workflow Step 'Execute Solving Actions' started.
+Executing Auto-Solving-Actions...
+Auto-Solving-Actions done.
+Executing update specific Preferred-Solving-Actions...
+Update specific Preferred-Solving-Actions done.
+17:35:24 - Workflow Step 'Execute Solving Actions' finished.
+17:35:24 - Workflow Step 'Update RTE configuration' started.
+17:35:25 - Workflow Step 'Update RTE configuration' finished.
+17:35:25 - Workflow Step 'Align differences after successful update' started.
+17:35:25 - Workflow Step 'Align differences after successful update' finished.
+17:35:25 - Workflow Step 'Clean up update data' started.
+17:35:25 - Workflow Step 'Clean up update data' finished.
+Update workflow finished with error(s).
+17:35:35 - Workflow Step 'Update workflow' finished.

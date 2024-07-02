@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Types_Lcfg.h
- *   Generation Time: 2024-06-29 19:54:30
+ *   Generation Time: 2024-07-01 09:01:46
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -79,12 +79,16 @@
 #define IdleTask_OsCore0 IdleTask_OsCore0
 
 /* Category 2 ISR identifiers. */
+#define CanIsr_0 CanIsr_0
 #define CounterIsr_SystemTimer CounterIsr_SystemTimer
 
 /* Alarm identifiers. */
 #define Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms
+#define Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms
+#define Rte_Al_TE_StartApp_StartApp_Cyclic1000ms Rte_Al_TE_StartApp_StartApp_Cyclic1000ms
+#define Rte_Al_TE_StartApp_StartApp_Cyclic10ms Rte_Al_TE_StartApp_StartApp_Cyclic10ms
 #define Rte_Al_TE_StartApp_StartApp_Cyclic1ms Rte_Al_TE_StartApp_StartApp_Cyclic1ms
-#define Rte_Al_TE_StartApp_StartApp_Cyclic500ms Rte_Al_TE_StartApp_StartApp_Cyclic500ms
+#define Rte_Al_TE_StartApp_StartApp_Cyclic250ms Rte_Al_TE_StartApp_StartApp_Cyclic250ms
 
 /* Counter identifiers. */
 #define SystemTimer SystemTimer
@@ -157,8 +161,9 @@ typedef enum
 /*! Category 2 ISR identifiers. */
 typedef enum
 {
-  CounterIsr_SystemTimer = 0,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  OS_ISRID_COUNT = 1,
+  CanIsr_0 = 0,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  CounterIsr_SystemTimer = 1,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  OS_ISRID_COUNT = 2,
   INVALID_ISR = OS_ISRID_COUNT
 } ISRType;
 
@@ -166,9 +171,12 @@ typedef enum
 typedef enum
 {
   Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms = 0,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Rte_Al_TE_StartApp_StartApp_Cyclic1ms = 1,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Rte_Al_TE_StartApp_StartApp_Cyclic500ms = 2,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  OS_ALARMID_COUNT = 3
+  Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms = 1,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE_StartApp_StartApp_Cyclic1000ms = 2,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE_StartApp_StartApp_Cyclic10ms = 3,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE_StartApp_StartApp_Cyclic1ms = 4,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE_StartApp_StartApp_Cyclic250ms = 5,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  OS_ALARMID_COUNT = 6
 } AlarmType;
 
 /*! Counter identifiers. */

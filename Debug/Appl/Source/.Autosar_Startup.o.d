@@ -24,10 +24,18 @@ Appl\Source\Autosar_Startup.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW3
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_Compiler_cfg.h" :
 Appl\Source\Autosar_Startup.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_Compiler_Cfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_Compiler_Cfg.h" :
+Appl\Source\Autosar_Startup.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComXf_Compiler_Cfg.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComXf_Compiler_Cfg.h" :
+Appl\Source\Autosar_Startup.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\E2EXf_Compiler_Cfg.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\E2EXf_Compiler_Cfg.h" :
 Appl\Source\Autosar_Startup.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Compiler_Cfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Compiler_Cfg.h" :
 Appl\Source\Autosar_Startup.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_UserTypes.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_UserTypes.h" :
+Appl\Source\Autosar_Startup.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\ComStack_Types.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\ComStack_Types.h" :
+Appl\Source\Autosar_Startup.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComStack_Cfg.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComStack_Cfg.h" :
 Appl\Source\Autosar_Startup.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_DataHandleType.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_DataHandleType.h" :
 Appl\Source\Autosar_Startup.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\EcuM_Cfg.h"
@@ -58,6 +66,14 @@ Appl\Source\Autosar_Startup.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW3
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Os_Types.h" :
 Appl\Source\Autosar_Startup.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Lcfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Lcfg.h" :
+Appl\Source\Autosar_Startup.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\Source\Autosar_Startup.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\Source\Autosar_Startup.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\Source\Autosar_Startup.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 Appl\Source\Autosar_Startup.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
 Appl\Source\Autosar_Startup.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"

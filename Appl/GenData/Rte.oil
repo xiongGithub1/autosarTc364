@@ -42,8 +42,30 @@
       SCHEDULE = NON:"@RO@";
 // TIMING_PROTECTION = FALSE|TRUE; (AUTOSAR OS only)
       AUTOSTART = FALSE:"@RO@";
+      EVENT = Rte_Ev_Run_StartApp_StartApp_Cyclic1000ms:"@RO@";
+      EVENT = Rte_Ev_Run_StartApp_StartApp_Cyclic10ms:"@RO@";
       EVENT = Rte_Ev_Run_StartApp_StartApp_Cyclic1ms:"@RO@";
-      EVENT = Rte_Ev_Run_StartApp_StartApp_Cyclic500ms:"@RO@";
+      EVENT = Rte_Ev_Run_StartApp_StartApp_Cyclic250ms:"@RO@";
+   }:"@RO@@NR@";
+
+   ALARM Rte_Al_TE_StartApp_StartApp_Cyclic1000ms {
+      COUNTER = SystemTimer;
+      ACTION = SETEVENT
+      {
+         TASK = Default_Appl_Task;
+         EVENT = Rte_Ev_Run_StartApp_StartApp_Cyclic1000ms;
+      }:"@ROC@";
+      AUTOSTART = FALSE:"@RO@";
+   }:"@RO@@NR@";
+
+   ALARM Rte_Al_TE_StartApp_StartApp_Cyclic10ms {
+      COUNTER = SystemTimer;
+      ACTION = SETEVENT
+      {
+         TASK = Default_Appl_Task;
+         EVENT = Rte_Ev_Run_StartApp_StartApp_Cyclic10ms;
+      }:"@ROC@";
+      AUTOSTART = FALSE:"@RO@";
    }:"@RO@@NR@";
 
    ALARM Rte_Al_TE_StartApp_StartApp_Cyclic1ms {
@@ -56,12 +78,12 @@
       AUTOSTART = FALSE:"@RO@";
    }:"@RO@@NR@";
 
-   ALARM Rte_Al_TE_StartApp_StartApp_Cyclic500ms {
+   ALARM Rte_Al_TE_StartApp_StartApp_Cyclic250ms {
       COUNTER = SystemTimer;
       ACTION = SETEVENT
       {
          TASK = Default_Appl_Task;
-         EVENT = Rte_Ev_Run_StartApp_StartApp_Cyclic500ms;
+         EVENT = Rte_Ev_Run_StartApp_StartApp_Cyclic250ms;
       }:"@ROC@";
       AUTOSTART = FALSE:"@RO@";
    }:"@RO@@NR@";
@@ -72,21 +94,50 @@
       SCHEDULE = NON:"@RO@";
 // TIMING_PROTECTION = FALSE|TRUE; (AUTOSAR OS only)
       AUTOSTART = FALSE:"@RO@";
+      EVENT = Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms:"@RO@";
+      EVENT = Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_20ms:"@RO@";
    }:"@RO@@NR@";
 
    ALARM Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms {
       COUNTER = SystemTimer;
-      ACTION = ACTIVATETASK
+      ACTION = SETEVENT
       {
          TASK = Default_BSW_ASync_Task;
+         EVENT = Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms;
       }:"@ROC@";
       AUTOSTART = FALSE:"@RO@";
    }:"@RO@@NR@";
+
+   ALARM Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms {
+      COUNTER = SystemTimer;
+      ACTION = SETEVENT
+      {
+         TASK = Default_BSW_ASync_Task;
+         EVENT = Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_20ms;
+      }:"@ROC@";
+      AUTOSTART = FALSE:"@RO@";
+   }:"@RO@@NR@";
+
+   EVENT Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms {
+      MASK = AUTO;
+   }:"@ROC@@NR@";
+
+   EVENT Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_20ms {
+      MASK = AUTO;
+   }:"@ROC@@NR@";
+
+   EVENT Rte_Ev_Run_StartApp_StartApp_Cyclic1000ms {
+      MASK = AUTO;
+   }:"@ROC@@NR@";
+
+   EVENT Rte_Ev_Run_StartApp_StartApp_Cyclic10ms {
+      MASK = AUTO;
+   }:"@ROC@@NR@";
 
    EVENT Rte_Ev_Run_StartApp_StartApp_Cyclic1ms {
       MASK = AUTO;
    }:"@ROC@@NR@";
 
-   EVENT Rte_Ev_Run_StartApp_StartApp_Cyclic500ms {
+   EVENT Rte_Ev_Run_StartApp_StartApp_Cyclic250ms {
       MASK = AUTO;
    }:"@ROC@@NR@";

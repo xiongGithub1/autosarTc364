@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Generated_Types.h
- *   Generation Time: 2024-06-29 19:53:52
+ *   Generation Time: 2026-06-30 18:16:14
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -65,16 +65,18 @@
 #define EcuMConf_EcuMWakeupSource_ECUM_WKSOURCE_INTERNAL_RESET (2u) 
 #define EcuMConf_EcuMWakeupSource_ECUM_WKSOURCE_INTERNAL_WDG   (3u) 
 #define EcuMConf_EcuMWakeupSource_ECUM_WKSOURCE_EXTERNAL_WDG   (4u) 
+#define EcuMConf_EcuMWakeupSource_CN_CAN00_5e566ad9            (5u) 
 
  
 /* ------------------------------------- Range of EcuM_WakeupSourceType -------------------------------------------- */
-#define ECUM_WKSOURCE_NONE           (EcuM_WakeupSourceType)(0x00000000u) 
-#define ECUM_WKSOURCE_ALL_SOURCES    (EcuM_WakeupSourceType)(~((EcuM_WakeupSourceType)0x00UL)) 
-#define ECUM_WKSOURCE_POWER          (EcuM_WakeupSourceType)(1u) 
-#define ECUM_WKSOURCE_RESET          (EcuM_WakeupSourceType)(2u) 
-#define ECUM_WKSOURCE_INTERNAL_RESET (EcuM_WakeupSourceType)(4u) 
-#define ECUM_WKSOURCE_INTERNAL_WDG   (EcuM_WakeupSourceType)(8u) 
-#define ECUM_WKSOURCE_EXTERNAL_WDG   (EcuM_WakeupSourceType)(16u) 
+#define ECUM_WKSOURCE_NONE              (EcuM_WakeupSourceType)(0x00000000u) 
+#define ECUM_WKSOURCE_ALL_SOURCES       (EcuM_WakeupSourceType)(~((EcuM_WakeupSourceType)0x00UL)) 
+#define ECUM_WKSOURCE_POWER             (EcuM_WakeupSourceType)(1u) 
+#define ECUM_WKSOURCE_RESET             (EcuM_WakeupSourceType)(2u) 
+#define ECUM_WKSOURCE_INTERNAL_RESET    (EcuM_WakeupSourceType)(4u) 
+#define ECUM_WKSOURCE_INTERNAL_WDG      (EcuM_WakeupSourceType)(8u) 
+#define ECUM_WKSOURCE_EXTERNAL_WDG      (EcuM_WakeupSourceType)(16u) 
+#define ECUM_WKSOURCE_CN_CAN00_5e566ad9 (EcuM_WakeupSourceType)(32u) 
 
 
 

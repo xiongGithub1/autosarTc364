@@ -22,13 +22,23 @@
                 </TIMING-EVENT>
                 <TIMING-EVENT UUID="39B6632A-DEA1-420C-A573-5EB0B92EEFE5">
                   <SHORT-NAME>TMT_StartApp_Cyclic500ms</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/StartApp/StartApp_InternalBehavior/StartApp_Cyclic500ms</START-ON-EVENT-REF>
-                  <PERIOD>0.5</PERIOD>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/StartApp/StartApp_InternalBehavior/StartApp_Cyclic250ms</START-ON-EVENT-REF>
+                  <PERIOD>0.25</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT UUID="234C70B8-B8B0-44AA-92AB-BB05A13F7A80">
+                  <SHORT-NAME>TMT_StartApp_Cyclic10ms</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/StartApp/StartApp_InternalBehavior/StartApp_Cyclic10ms</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT UUID="2CB13980-9513-4715-8BB3-44E46DD2B497">
+                  <SHORT-NAME>TMT_StartApp_Cyclic1000ms</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/StartApp/StartApp_InternalBehavior/StartApp_Cyclic1000ms</START-ON-EVENT-REF>
+                  <PERIOD>1</PERIOD>
                 </TIMING-EVENT>
               </EVENTS>
               <RUNNABLES>
                 <RUNNABLE-ENTITY UUID="BAFC9269-4E5B-4716-890C-5DB0FA05E31C">
-                  <SHORT-NAME>StartApp_Cyclic500ms</SHORT-NAME>
+                  <SHORT-NAME>StartApp_Cyclic250ms</SHORT-NAME>
                 </RUNNABLE-ENTITY>
                 <RUNNABLE-ENTITY UUID="40220649-369F-425D-9DCF-642C526CAC6E">
                   <SHORT-NAME>StartApp_Cyclic1ms</SHORT-NAME>
@@ -42,6 +52,12 @@
                       </SDG>
                     </SDGS>
                   </ADMIN-DATA>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="98369017-3A86-41D0-ADCC-365D54A4AD94">
+                  <SHORT-NAME>StartApp_Cyclic10ms</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="DA81AEF9-C199-4247-8F33-E91CBFA882B9">
+                  <SHORT-NAME>StartApp_Cyclic1000ms</SHORT-NAME>
                 </RUNNABLE-ENTITY>
               </RUNNABLES>
               <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>

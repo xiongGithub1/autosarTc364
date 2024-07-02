@@ -7,6 +7,7 @@
  **********************************************************************************************************************/
 
 #include "Appl_HwStartup.h"
+#include "Os.h"
 #include "Mcal_Compiler.h"
 #include "Ifx_reg.h"
 #include "IfxScu_bf.h"
@@ -240,6 +241,33 @@ static void Appl_HwStartup_lInitCpuVectors(void)
 
   (void)Appl_HwStartup_lUpdateWdtEndinit(APPL_HWSTARTUP_WDT_CPU0, ctx.TimerRelValAtReset, TRUE);
   ENABLE();
+}
+
+static Appl_HwStartup_WdtCtxType Appl_HwStartup_CanEndinitCtx;
+
+void Appl_UnlockEndinit(void)
+{
+  Appl_HwStartup_CanEndinitCtx = Appl_HwStartup_lUpdateWdtEndinit(APPL_HWSTARTUP_WDT_CPU0, 0U, FALSE);
+}
+
+void Appl_LockEndinit(void)
+{
+  (void)Appl_HwStartup_lUpdateWdtEndinit(APPL_HWSTARTUP_WDT_CPU0, Appl_HwStartup_CanEndinitCtx.TimerRelValAtReset, TRUE);
+}
+
+volatile uint32 ApplCanInterruptDisableCounter;
+volatile uint32 ApplCanInterruptRestoreCounter;
+
+void ApplCanInterruptDisable(uint8 Controller)
+{
+  (void)Controller;
+  ApplCanInterruptDisableCounter++;
+}
+
+void ApplCanInterruptRestore(uint8 Controller)
+{
+  (void)Controller;
+  ApplCanInterruptRestoreCounter++;
 }
 
 void Appl_HwStartup_Init(void)

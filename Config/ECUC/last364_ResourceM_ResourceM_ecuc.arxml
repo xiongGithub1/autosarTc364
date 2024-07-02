@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
   <AR-PACKAGES>
-    <AR-PACKAGE UUID="5ed7f926-906c-4166-b3b2-f09024187d69">
+    <AR-PACKAGE>
       <SHORT-NAME>ResourceM</SHORT-NAME>
       <ELEMENTS>
         <ECUC-MODULE-CONFIGURATION-VALUES>
@@ -16,7 +16,7 @@
           <DEFINITION-REF DEST="ECUC-MODULE-DEF">/AURIX2G/EcucDefs/ResourceM</DEFINITION-REF>
           <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-PRE-COMPILE</IMPLEMENTATION-CONFIG-VARIANT>
           <CONTAINERS>
-            <ECUC-CONTAINER-VALUE UUID="51a57056-cc22-46be-8891-e53915fdbd0b">
+            <ECUC-CONTAINER-VALUE UUID="5a4ca750-3b9c-4aa2-a9d2-cd7f01dafcff">
               <SHORT-NAME>ResourceMMcalConfig_0</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/ResourceM/ResourceMMcalConfig</DEFINITION-REF>
               <PARAMETER-VALUES>
@@ -26,7 +26,7 @@
                 </ECUC-TEXTUAL-PARAM-VALUE>
               </PARAMETER-VALUES>
               <SUB-CONTAINERS>
-                <ECUC-CONTAINER-VALUE UUID="7f375e7e-6b19-4068-8934-beb819c35380">
+                <ECUC-CONTAINER-VALUE UUID="1e00ae57-6883-4cfe-ab80-32c69eff5229">
                   <SHORT-NAME>ResourceMMcalCore_0</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/ResourceM/ResourceMMcalConfig/ResourceMMcalCore</DEFINITION-REF>
                   <PARAMETER-VALUES>

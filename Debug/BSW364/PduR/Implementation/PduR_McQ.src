@@ -1,0 +1,3320 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc18808a --dep-file=BSW364\\PduR\\Implementation\\.PduR_McQ.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\mak -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Make -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteAnalyzer -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache\\-148438436 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -g2 --make-target=BSW364\\PduR\\Implementation\\PduR_McQ.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW364\\PduR\\Implementation\\PduR_McQ.src ..\\BSW364\\PduR\\Implementation\\PduR_McQ.c"
+	.compiler_name		"ctc"
+	;source	'..\\BSW364\\PduR\\Implementation\\PduR_McQ.c'
+
+	
+$TC162
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	28371
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\BSW364\\PduR\\Implementation\\PduR_McQ.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2,1,3
+	.word	152
+	.byte	4
+	.byte	'__codeptr',0,1,1,1
+	.word	154
+	.byte	5
+	.byte	'unsigned char',0,1,8,4
+	.byte	'boolean',0,2,101,31
+	.word	177
+	.byte	4
+	.byte	'uint8',0,2,104,31
+	.word	177
+	.byte	5
+	.byte	'short int',0,2,5,4
+	.byte	'sint16',0,2,105,31
+	.word	224
+	.byte	5
+	.byte	'unsigned short int',0,2,7,4
+	.byte	'uint16',0,2,106,31
+	.word	252
+	.byte	5
+	.byte	'long int',0,4,5,4
+	.byte	'sint32',0,2,107,31
+	.word	289
+	.byte	5
+	.byte	'unsigned long int',0,4,7,4
+	.byte	'uint32',0,2,108,31
+	.word	316
+	.byte	4
+	.byte	'uint8_least',0,2,111,31
+	.word	177
+	.byte	4
+	.byte	'uint32_least',0,2,115,31
+	.word	316
+	.byte	5
+	.byte	'unsigned long long int',0,8,7,4
+	.byte	'uint64',0,2,121,30
+	.word	393
+	.byte	4
+	.byte	'StatusType',0,3,119,23
+	.word	177
+	.byte	4
+	.byte	'Std_ReturnType',0,3,124,15
+	.word	177
+	.byte	6,3,126,9,8,7
+	.byte	'vendorID',0
+	.word	252
+	.byte	2,2,35,0,7
+	.byte	'moduleID',0
+	.word	252
+	.byte	2,2,35,2,7
+	.byte	'sw_major_version',0
+	.word	177
+	.byte	1,2,35,4,7
+	.byte	'sw_minor_version',0
+	.word	177
+	.byte	1,2,35,5,7
+	.byte	'sw_patch_version',0
+	.word	177
+	.byte	1,2,35,6,0,4
+	.byte	'Std_VersionInfoType',0,3,133,1,3
+	.word	476
+	.byte	4
+	.byte	'Std_TransformerErrorCode',0,3,135,1,15
+	.word	177
+	.byte	4
+	.byte	'Std_TransformerClass',0,3,137,1,15
+	.word	177
+	.byte	4
+	.byte	'PduIdType',0,4,63,15
+	.word	177
+	.byte	4
+	.byte	'PduLengthType',0,4,65,15
+	.word	177
+	.byte	3
+	.word	177
+	.byte	4
+	.byte	'SduDataPtrType',0,5,196,1,54
+	.word	729
+	.byte	6,5,197,1,9,8,7
+	.byte	'SduDataPtr',0
+	.word	734
+	.byte	4,2,35,0,7
+	.byte	'SduLength',0
+	.word	177
+	.byte	1,2,35,4,0,4
+	.byte	'PduInfoType',0,5,201,1,3
+	.word	758
+	.byte	3
+	.word	177
+	.byte	8,5,203,1,9,1,9
+	.byte	'BUFREQ_OK',0,0,9
+	.byte	'BUFREQ_E_NOT_OK',0,1,9
+	.byte	'BUFREQ_E_BUSY',0,2,9
+	.byte	'BUFREQ_E_OVFL',0,3,0,4
+	.byte	'BufReq_ReturnType',0,5,209,1,3
+	.word	830
+	.byte	8,5,219,1,9,1,9
+	.byte	'TP_DATACONF',0,0,9
+	.byte	'TP_DATARETRY',0,1,9
+	.byte	'TP_CONFPENDING',0,2,0,4
+	.byte	'TpDataStateType',0,5,226,1,3
+	.word	926
+	.byte	10
+	.byte	'sDet_PCConfigType',0,6,238,1,16,1,7
+	.byte	'Det_PCConfigNeverUsed',0
+	.word	177
+	.byte	1,2,35,0,0,4
+	.byte	'Det_PCConfigType',0,6,241,1,3
+	.word	1004
+	.byte	8,7,149,1,9,1,9
+	.byte	'Default_Appl_Init_Task',0,0,9
+	.byte	'Default_Appl_Task',0,1,9
+	.byte	'Default_BSW_ASync_Task',0,2,9
+	.byte	'Default_Init_Task',0,3,9
+	.byte	'Default_Init_Task_Trusted',0,4,9
+	.byte	'IdleTask_OsCore0',0,5,9
+	.byte	'INVALID_TASK',0,6,9
+	.byte	'OS_TASKID_COUNT',0,6,0,4
+	.byte	'TaskType',0,7,159,1,3
+	.word	1086
+	.byte	11,64
+	.word	316
+	.byte	12,15,0,10
+	.byte	'Os_ExceptionContextType_Tag',0,8,71,8,160,1,7
+	.byte	'AddressRegisters',0
+	.word	1281
+	.byte	64,2,35,0,7
+	.byte	'DataRegisters',0
+	.word	1281
+	.byte	64,2,35,64,7
+	.byte	'Ra',0
+	.word	316
+	.byte	4,3,35,128,1,7
+	.byte	'Psw',0
+	.word	316
+	.byte	4,3,35,132,1,7
+	.byte	'ExceptionSource',0
+	.word	316
+	.byte	4,3,35,136,1,7
+	.byte	'Pcpn',0
+	.word	316
+	.byte	4,3,35,140,1,7
+	.byte	'Pie',0
+	.word	316
+	.byte	4,3,35,144,1,7
+	.byte	'MpuRegionForStackLow',0
+	.word	316
+	.byte	4,3,35,148,1,7
+	.byte	'MpuRegionForStackUpper',0
+	.word	316
+	.byte	4,3,35,152,1,7
+	.byte	'RawPCXI',0
+	.word	316
+	.byte	4,3,35,156,1,0,4
+	.byte	'Os_ExceptionContextType',0,9,59,44
+	.word	1290
+	.byte	4
+	.byte	'Os_InterruptSourceIdType',0,10,236,1,16
+	.word	316
+	.byte	4
+	.byte	'Os_ExceptionSourceIdType',0,10,244,1,16
+	.word	316
+	.byte	8,10,159,2,9,1,9
+	.byte	'RUNNING',0,0,9
+	.byte	'READY',0,1,9
+	.byte	'WAITING',0,2,9
+	.byte	'SUSPENDED',0,3,0,4
+	.byte	'TaskStateType',0,10,173,2,3
+	.word	1638
+	.byte	4
+	.byte	'EventMaskType',0,10,180,2,16
+	.word	393
+	.byte	4
+	.byte	'Os_TickType',0,10,198,2,19
+	.word	316
+	.byte	4
+	.byte	'TickType',0,10,204,2,21
+	.word	316
+	.byte	6,10,218,2,9,12,7
+	.byte	'maxallowedvalue',0
+	.word	316
+	.byte	4,2,35,0,7
+	.byte	'ticksperbase',0
+	.word	316
+	.byte	4,2,35,4,7
+	.byte	'mincycle',0
+	.word	316
+	.byte	4,2,35,8,0,4
+	.byte	'AlarmBaseType',0,10,226,2,2
+	.word	1770
+	.byte	8,10,254,2,9,1,9
+	.byte	'APPLICATION_TERMINATED',0,0,9
+	.byte	'APPLICATION_RESTARTING',0,1,9
+	.byte	'APPLICATION_ACCESSIBLE',0,2,0,4
+	.byte	'ApplicationStateType',0,10,131,3,3
+	.word	1865
+	.byte	8,10,175,3,9,1,9
+	.byte	'OSServiceId_GetApplicationID',0,0,9
+	.byte	'OSServiceId_GetISRID',0,1,9
+	.byte	'OSServiceId_CallTrustedFunction',0,2,9
+	.byte	'OSServiceId_CheckISRMemoryAccess',0,3,9
+	.byte	'OSServiceId_CheckTaskMemoryAccess',0,4,9
+	.byte	'OSServiceId_CheckObjectAccess',0,5,9
+	.byte	'OSServiceId_CheckObjectOwnership',0,6,9
+	.byte	'OSServiceId_StartScheduleTableRel',0,7,9
+	.byte	'OSServiceId_StartScheduleTableAbs',0,8,9
+	.byte	'OSServiceId_StopScheduleTable',0,9,9
+	.byte	'OSServiceId_NextScheduleTable',0,10,9
+	.byte	'OSServiceId_StartScheduleTableSynchron',0,11,9
+	.byte	'OSServiceId_SyncScheduleTable',0,12,9
+	.byte	'OSServiceId_SetScheduleTableAsync',0,13,9
+	.byte	'OSServiceId_GetScheduleTableStatus',0,14,9
+	.byte	'OSServiceId_IncrementCounter',0,15,9
+	.byte	'OSServiceId_GetCounterValue',0,16,9
+	.byte	'OSServiceId_GetElapsedValue',0,17,9
+	.byte	'OSServiceId_TerminateApplication',0,18,9
+	.byte	'OSServiceId_AllowAccess',0,19,9
+	.byte	'OSServiceId_GetApplicationState',0,20,9
+	.byte	'OSServiceId_GetNumberOfActivatedCores',0,21,9
+	.byte	'OSServiceId_GetCoreID',0,22,9
+	.byte	'OSServiceId_StartCore',0,23,9
+	.byte	'OSServiceId_StartNonAutosarCore',0,24,9
+	.byte	'OSServiceId_GetSpinlock',0,25,9
+	.byte	'OSServiceId_ReleaseSpinlock',0,26,9
+	.byte	'OSServiceId_TryToGetSpinlock',0,27,9
+	.byte	'OSServiceId_ShutdownAllCores',0,28,9
+	.byte	'OSServiceId_ControlIdle',0,29,9
+	.byte	'OSServiceId_IocSend',0,30,9
+	.byte	'OSServiceId_IocWrite',0,31,9
+	.byte	'OSServiceId_IocSendGroup',0,32,9
+	.byte	'OSServiceId_IocWriteGroup',0,33,9
+	.byte	'OSServiceId_IocReceive',0,34,9
+	.byte	'OSServiceId_IocRead',0,35,9
+	.byte	'OSServiceId_IocReceiveGroup',0,36,9
+	.byte	'OSServiceId_IocReadGroup',0,37,9
+	.byte	'OSServiceId_IocEmptyQueue',0,38,9
+	.byte	'OSServiceId_GetCurrentApplicationID',0,39,9
+	.byte	'OSServiceId_GetExceptionContext',0,160,1,9
+	.byte	'OSServiceId_SetExceptionContext',0,161,1,9
+	.byte	'OSServiceId_CallNonTrustedFunction',0,162,1,9
+	.byte	'OSServiceId_AppKill',0,163,1,9
+	.byte	'OSServiceId_AlarmActionSetEvent',0,164,1,9
+	.byte	'OSServiceId_AlarmActionActivateTask',0,165,1,9
+	.byte	'OSServiceId_AlarmActionIncrementCounter',0,166,1,9
+	.byte	'OSServiceId_AlarmActionCallback',0,167,1,9
+	.byte	'OSServiceId_TimerIsr',0,168,1,9
+	.byte	'OSServiceId_IsrWrapper',0,169,1,9
+	.byte	'OSServiceId_GetTaskStackUsage',0,170,1,9
+	.byte	'OSServiceId_GetISRStackUsage',0,171,1,9
+	.byte	'OSServiceId_GetKernelStackUsage',0,172,1,9
+	.byte	'OSServiceId_GetStartupHookStackUsage',0,173,1,9
+	.byte	'OSServiceId_GetErrorHookStackUsage',0,174,1,9
+	.byte	'OSServiceId_GetShutdownHookStackUsage',0,175,1,9
+	.byte	'OSServiceId_GetProtectionHookStackUsage',0,176,1,9
+	.byte	'OSServiceId_GetSemaphore',0,177,1,9
+	.byte	'OSServiceId_ReleaseSemaphore',0,178,1,9
+	.byte	'OSServiceId_ScheduleTableActivateTask',0,179,1,9
+	.byte	'OSServiceId_ScheduleTableSetEvent',0,180,1,9
+	.byte	'OSServiceId_DisableInterruptSource',0,181,1,9
+	.byte	'OSServiceId_EnableInterruptSource',0,182,1,9
+	.byte	'OSServiceId_ClearPendingInterrupt',0,183,1,9
+	.byte	'OSServiceId_GetUnhandledIrq',0,184,1,9
+	.byte	'OSServiceId_GetUnhandledExc',0,185,1,9
+	.byte	'OSServiceId_HookCallCallback',0,186,1,9
+	.byte	'OSServiceId_IsInterruptSourceEnabled',0,187,1,9
+	.byte	'OSServiceId_IsInterruptPending',0,188,1,9
+	.byte	'OSServiceId_CallFastTrustedFunction',0,189,1,9
+	.byte	'OSServiceId_BarrierSynchronize',0,190,1,9
+	.byte	'OSServiceId_InitialEnableInterruptSources',0,191,1,9
+	.byte	'OSServiceId_GetCoreStartState',0,192,1,9
+	.byte	'OSServiceId_GetNonTrustedFunctionStackUsage',0,193,1,9
+	.byte	'OSServiceId_StartOS',0,208,1,9
+	.byte	'OSServiceId_GetActiveApplicationMode',0,210,1,9
+	.byte	'OSServiceId_DisableAllInterrupts',0,211,1,9
+	.byte	'OSServiceId_EnableAllInterrupts',0,212,1,9
+	.byte	'OSServiceId_SuspendAllInterrupts',0,213,1,9
+	.byte	'OSServiceId_ResumeAllInterrupts',0,214,1,9
+	.byte	'OSServiceId_SuspendOSInterrupts',0,215,1,9
+	.byte	'OSServiceId_ResumeOSInterrupts',0,216,1,9
+	.byte	'OSServiceId_ActivateTask',0,217,1,9
+	.byte	'OSServiceId_TerminateTask',0,218,1,9
+	.byte	'OSServiceId_ChainTask',0,219,1,9
+	.byte	'OSServiceId_GetTaskID',0,220,1,9
+	.byte	'OSServiceId_GetTaskState',0,221,1,9
+	.byte	'OSServiceId_Schedule',0,222,1,9
+	.byte	'OSServiceId_SetEvent',0,223,1,9
+	.byte	'OSServiceId_ClearEvent',0,224,1,9
+	.byte	'OSServiceId_GetEvent',0,225,1,9
+	.byte	'OSServiceId_WaitEvent',0,226,1,9
+	.byte	'OSServiceId_GetAlarmBase',0,227,1,9
+	.byte	'OSServiceId_GetAlarm',0,228,1,9
+	.byte	'OSServiceId_SetRelAlarm',0,229,1,9
+	.byte	'OSServiceId_SetAbsAlarm',0,230,1,9
+	.byte	'OSServiceId_CancelAlarm',0,231,1,9
+	.byte	'OSServiceId_GetResource',0,232,1,9
+	.byte	'OSServiceId_ReleaseResource',0,233,1,9
+	.byte	'OSSERVICEID_COUNT',0,255,1,0,4
+	.byte	'OSServiceIdType',0,10,155,4,3
+	.word	1977
+	.byte	8,10,171,4,9,2,9
+	.byte	'OS_STATUS_OK',0,0,9
+	.byte	'OS_STATUS_CALLEVEL',0,2,9
+	.byte	'OS_STATUS_LIMIT',0,4,9
+	.byte	'OS_STATUS_RESOURCE',0,6,9
+	.byte	'OS_STATUS_SERVICEID',0,9,9
+	.byte	'OS_STATUS_ILLEGAL_ADDRESS',0,10,9
+	.byte	'OS_STATUS_MISSINGEND',0,11,9
+	.byte	'OS_STATUS_DISABLEDINT',0,12,9
+	.byte	'OS_STATUS_STACKFAULT',0,13,9
+	.byte	'OS_STATUS_PROTECTION_MEMORY',0,14,9
+	.byte	'OS_STATUS_PROTECTION_TIME',0,15,9
+	.byte	'OS_STATUS_PROTECTION_ARRIVAL',0,16,9
+	.byte	'OS_STATUS_PROTECTION_LOCKED',0,17,9
+	.byte	'OS_STATUS_PROTECTION_EXCEPTION',0,18,9
+	.byte	'OS_STATUS_INTERFERENCE_DEADLOCK',0,19,9
+	.byte	'OS_STATUS_NESTING_DEADLOCK',0,20,9
+	.byte	'OS_STATUS_SPINLOCK',0,21,9
+	.byte	'OS_STATUS_CORE',0,22,9
+	.byte	'OS_STATUS_OVERFLOW',0,245,1,9
+	.byte	'OS_STATUS_KILL_KERNEL_OBJ',0,246,1,9
+	.byte	'OS_STATUS_NO_RESTARTTASK',0,247,1,9
+	.byte	'OS_STATUS_CALL_NOT_ALLOWED',0,248,1,9
+	.byte	'OS_STATUS_FUNCTION_UNAVAILABLE',0,249,1,9
+	.byte	'OS_STATUS_PROTECTION_SYSCALL',0,250,1,9
+	.byte	'OS_STATUS_PROTECTION_IRQ',0,251,1,9
+	.byte	'OS_STATUS_API_ERROR',0,252,1,9
+	.byte	'OS_STATUS_ASSERTION',0,253,1,9
+	.byte	'OS_STATUS_OVERLOAD',0,254,1,9
+	.byte	'OS_STATUS_ACCESSRIGHTS_1',0,129,2,9
+	.byte	'OS_STATUS_CALLEVEL_SHARED_STACK',0,130,2,9
+	.byte	'OS_STATUS_ID_1',0,131,2,9
+	.byte	'OS_STATUS_UNLOCKED',0,133,2,9
+	.byte	'OS_STATUS_STATE_1',0,135,2,9
+	.byte	'OS_STATUS_VALUE_IS_ZERO_1',0,136,2,9
+	.byte	'OS_STATUS_CORE_CROSS_DATA',0,150,2,9
+	.byte	'OS_STATUS_PARAM_POINTER_1',0,151,2,9
+	.byte	'OS_STATUS_STACKUSAGE_DISABLED_BY_CONFIG',0,241,3,9
+	.byte	'OS_STATUS_NO_BARRIER_PARTICIPANT',0,242,3,9
+	.byte	'OS_STATUS_UNIMPLEMENTED_CLEARPENDING',0,243,3,9
+	.byte	'OS_STATUS_NO_NTFSTACK_POOL_EMPTY',0,244,3,9
+	.byte	'OS_STATUS_ACCESSRIGHTS_2',0,129,4,9
+	.byte	'OS_STATUS_CALLEVEL_CROSS_CORE_SYNC',0,130,4,9
+	.byte	'OS_STATUS_ID_2',0,131,4,9
+	.byte	'OS_STATUS_NOFUNC_1',0,133,4,9
+	.byte	'OS_STATUS_STATE_2',0,135,4,9
+	.byte	'OS_STATUS_VALUE_IS_ZERO_2',0,136,4,9
+	.byte	'OS_STATUS_PARAM_POINTER_2',0,151,4,9
+	.byte	'OS_STATUS_EVENT_DISABLED_BY_CONFIG',0,241,5,9
+	.byte	'OS_STATUS_UNIMPLEMENTED_EXCEPTIONCONTEXT',0,243,5,9
+	.byte	'OS_STATUS_NO_NTFSTACK_APPLIMIT_EXCEEDED',0,244,5,9
+	.byte	'OS_STATUS_NOTACCESSIBLE_1',0,129,6,9
+	.byte	'OS_STATUS_ID_TYPE_1',0,131,6,9
+	.byte	'OS_STATUS_NOFUNC_2',0,133,6,9
+	.byte	'OS_STATUS_STATE_STOPPED',0,135,6,9
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_1',0,136,6,9
+	.byte	'OS_STATUS_PARAM_POINTER_3',0,151,6,9
+	.byte	'OS_STATUS_NOTACCESSIBLE_2',0,129,8,9
+	.byte	'OS_STATUS_ID_DIFFERENT_COUNTER',0,131,8,9
+	.byte	'OS_STATUS_SPINLOCK_ORDER',0,133,8,9
+	.byte	'OS_STATUS_STATE_RUNNING',0,135,8,9
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_2',0,136,8,9
+	.byte	'OS_STATUS_NOEXTENDEDTASK_1',0,129,10,9
+	.byte	'OS_STATUS_ID_DIFFERENT_SYNC',0,131,10,9
+	.byte	'OS_STATUS_STOPPED_1',0,133,10,9
+	.byte	'OS_STATUS_STATE_NEXTED',0,135,10,9
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_3',0,136,10,9
+	.byte	'OS_STATUS_NOEXTENDEDTASK_2',0,129,12,9
+	.byte	'OS_STATUS_HOOK_NOT_AVAILABLE',0,131,12,9
+	.byte	'OS_STATUS_NOT_STOPPED_2',0,133,12,9
+	.byte	'OS_STATUS_STATE_WAITING',0,135,12,9
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_1',0,136,12,9
+	.byte	'OS_STATUS_NOEXTENDEDTASK_CALLER',0,129,14,9
+	.byte	'OS_STATUS_NEXTED_1',0,133,14,9
+	.byte	'OS_STATUS_STATE_NO_RESTART',0,135,14,9
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_2',0,136,14,9
+	.byte	'OS_STATUS_LOCKED',0,129,16,9
+	.byte	'OS_STATUS_KILLING_IS_DISABLED',0,133,16,9
+	.byte	'OS_STATUS_STATE_ALREADY_TERMINATED',0,135,16,9
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_1',0,136,16,9
+	.byte	'OS_STATUS_PRIORITY',0,129,18,9
+	.byte	'OS_STATUS_ORDER',0,133,18,9
+	.byte	'OS_STATUS_STATE_RESTARTING_NO_MEMBER',0,135,18,9
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_2',0,136,18,9
+	.byte	'OS_STATUS_NOT_THE_OWNER_1',0,129,20,9
+	.byte	'OS_STATUS_STATE_ALREADY_RESTARTING',0,135,20,9
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,9
+	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0,4
+	.byte	'Os_StatusType',0,10,231,5,3
+	.word	5194
+	.byte	6,10,132,6,9,4,7
+	.byte	'Service',0
+	.word	1977
+	.byte	1,2,35,0,7
+	.byte	'Error',0
+	.word	177
+	.byte	1,2,35,1,7
+	.byte	'DetailedError',0
+	.word	5194
+	.byte	2,2,35,2,0,4
+	.byte	'Os_ErrorInformationType',0,10,142,6,3
+	.word	7724
+	.byte	8,10,174,6,9,1,9
+	.byte	'SCHEDULETABLE_STOPPED',0,0,9
+	.byte	'SCHEDULETABLE_NEXT',0,1,9
+	.byte	'SCHEDULETABLE_WAITING',0,2,9
+	.byte	'SCHEDULETABLE_RUNNING',0,3,9
+	.byte	'SCHEDULETABLE_RUNNING_AND_SYNCHRONOUS',0,4,0,4
+	.byte	'ScheduleTableStatusType',0,10,191,6,3
+	.word	7819
+	.byte	8,10,203,6,9,1,9
+	.byte	'OS_MEM_ACCESS_TYPE_NON',0,0,9
+	.byte	'OS_MEM_ACCESS_TYPE_R',0,1,9
+	.byte	'OS_MEM_ACCESS_TYPE_READ',0,1,9
+	.byte	'OS_MEM_ACCESS_TYPE_W',0,2,9
+	.byte	'OS_MEM_ACCESS_TYPE_WRITE',0,2,9
+	.byte	'OS_MEM_ACCESS_TYPE_RW',0,3,9
+	.byte	'OS_MEM_ACCESS_TYPE_EXECUTE',0,4,9
+	.byte	'OS_MEM_ACCESS_TYPE_X',0,4,9
+	.byte	'OS_MEM_ACCESS_TYPE_RX',0,5,9
+	.byte	'OS_MEM_ACCESS_TYPE_WX',0,6,9
+	.byte	'OS_MEM_ACCESS_TYPE_RWX',0,7,9
+	.byte	'OS_MEM_ACCESS_TYPE_S',0,8,9
+	.byte	'OS_MEM_ACCESS_TYPE_STACK',0,8,9
+	.byte	'OS_MEM_ACCESS_TYPE_RS',0,9,9
+	.byte	'OS_MEM_ACCESS_TYPE_WS',0,10,9
+	.byte	'OS_MEM_ACCESS_TYPE_RWS',0,11,9
+	.byte	'OS_MEM_ACCESS_TYPE_XS',0,12,9
+	.byte	'OS_MEM_ACCESS_TYPE_RXS',0,13,9
+	.byte	'OS_MEM_ACCESS_TYPE_WXS',0,14,9
+	.byte	'OS_MEM_ACCESS_TYPE_RWXS',0,15,0,4
+	.byte	'Os_MemAccessType',0,10,225,6,3
+	.word	7992
+	.byte	4
+	.byte	'Os_Hal_AddressType',0,11,97,16
+	.word	316
+	.byte	4
+	.byte	'Os_AccessCheckAddress',0,12,150,2,29
+	.word	316
+	.byte	4
+	.byte	'Can_IdType',0,13,55,30
+	.word	252
+	.byte	4
+	.byte	'Can_HwHandleType',0,13,58,29
+	.word	177
+	.byte	4
+	.byte	'Can_SduPtrType',0,13,61,45
+	.word	729
+	.byte	10
+	.byte	'Can_PduTypeTag',0,13,64,16,12,7
+	.byte	'id',0
+	.word	252
+	.byte	2,2,35,0,7
+	.byte	'length',0
+	.word	177
+	.byte	1,2,35,2,7
+	.byte	'sdu',0
+	.word	8623
+	.byte	4,2,35,4,7
+	.byte	'swPduHandle',0
+	.word	177
+	.byte	1,2,35,8,0,4
+	.byte	'Can_PduType',0,13,70,3
+	.word	8646
+	.byte	3
+	.word	177
+	.byte	8,13,80,9,1,9
+	.byte	'CAN_CS_UNINIT',0,0,9
+	.byte	'CAN_CS_STARTED',0,1,9
+	.byte	'CAN_CS_STOPPED',0,2,9
+	.byte	'CAN_CS_SLEEP',0,3,0,4
+	.byte	'Can_ControllerStateType',0,13,85,3
+	.word	8754
+	.byte	8,13,87,9,1,9
+	.byte	'CAN_ERRORSTATE_ACTIVE',0,0,9
+	.byte	'CAN_ERRORSTATE_PASSIVE',0,1,9
+	.byte	'CAN_ERRORSTATE_BUSOFF',0,2,0,4
+	.byte	'Can_ErrorStateType',0,13,91,3
+	.word	8857
+	.byte	8,13,94,9,1,9
+	.byte	'CAN_NOT_OK',0,0,9
+	.byte	'CAN_OK',0,1,9
+	.byte	'CAN_BUSY',0,2,9
+	.byte	'CAN_NOT_SUPPORTED',0,3,9
+	.byte	'CAN_REQUESTED',0,4,0,4
+	.byte	'Can_ReturnType',0,13,101,3
+	.word	8963
+	.byte	4
+	.byte	'tCanLLCanIntOld',0,14,163,3,37
+	.word	316
+	.byte	4
+	.byte	'Can_ExternalTickType',0,14,182,3,16
+	.word	316
+	.byte	11,32
+	.word	316
+	.byte	12,7,0,4
+	.byte	'Can_LoopTimeout_dim_type',0,14,185,3,44
+	.word	9116
+	.byte	4
+	.byte	'Can_ControllerConfigIterType',0,14,246,13,21
+	.word	177
+	.byte	4
+	.byte	'Can_PduOfActiveSendObjectType',0,14,199,14,19
+	.word	177
+	.byte	4
+	.byte	'Can_StateOfActiveSendObjectType',0,14,202,14,16
+	.word	252
+	.byte	4
+	.byte	'Can_BTPType',0,14,205,14,16
+	.word	316
+	.byte	4
+	.byte	'Can_RXBCOfBufferConfigType',0,14,211,14,15
+	.word	177
+	.byte	4
+	.byte	'Can_RXF0COfBufferConfigType',0,14,214,14,16
+	.word	316
+	.byte	4
+	.byte	'Can_RXF1COfBufferConfigType',0,14,217,14,15
+	.word	177
+	.byte	4
+	.byte	'Can_TXBCOfBufferConfigType',0,14,220,14,16
+	.word	316
+	.byte	4
+	.byte	'Can_TXEFCOfBufferConfigType',0,14,223,14,15
+	.word	177
+	.byte	4
+	.byte	'Can_CanIfChannelIdType',0,14,241,14,15
+	.word	177
+	.byte	4
+	.byte	'Can_CanSubSystemBaseAdrType',0,14,244,14,16
+	.word	316
+	.byte	4
+	.byte	'Can_BasisAdrOfControllerConfigType',0,14,247,14,16
+	.word	316
+	.byte	4
+	.byte	'Can_CanControllerDefaultBaudrateIdxOfControllerConfigType',0,14,250,14,15
+	.word	177
+	.byte	4
+	.byte	'Can_CanControllerDefaultBaudrateOfControllerConfigType',0,14,253,14,16
+	.word	252
+	.byte	4
+	.byte	'Can_IsTTCanOfControllerConfigType',0,14,128,15,17
+	.word	177
+	.byte	4
+	.byte	'Can_MailboxRxBasicEndIdxOfControllerConfigType',0,14,131,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_MailboxRxBasicLengthOfControllerConfigType',0,14,134,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_MailboxRxBasicStartIdxOfControllerConfigType',0,14,137,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_MailboxTxBasicEndIdxOfControllerConfigType',0,14,143,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_MailboxTxBasicLengthOfControllerConfigType',0,14,146,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_MailboxTxBasicStartIdxOfControllerConfigType',0,14,149,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_RxBasicHwStartOfControllerConfigType',0,14,155,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_RxBasicHwStopOfControllerConfigType',0,14,158,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_RxFullHwStartOfControllerConfigType',0,14,161,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_RxFullHwStopOfControllerConfigType',0,14,164,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_RxSelectionOfControllerConfigType',0,14,167,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_TxBasicHwStartOfControllerConfigType',0,14,170,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_TxBasicHwStopOfControllerConfigType',0,14,173,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_TxFullHwStartOfControllerConfigType',0,14,176,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_TxFullHwStopOfControllerConfigType',0,14,179,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_UnusedHwStartOfControllerConfigType',0,14,182,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_UnusedHwStopOfControllerConfigType',0,14,185,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_BusOffNotificationOfControllerDataType',0,14,188,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_BusOffTransitionRequestOfControllerDataType',0,14,191,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_CanInterruptCounterOfControllerDataType',0,14,194,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_IntEnableOfControllerDataType',0,14,197,15,16
+	.word	316
+	.byte	4
+	.byte	'Can_IsBusOffOfControllerDataType',0,14,200,15,17
+	.word	177
+	.byte	4
+	.byte	'Can_LastInitObjectOfControllerDataType',0,14,203,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_LastStateOfControllerDataType',0,14,206,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_LogStatusOfControllerDataType',0,14,209,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_ModeTransitionRequestOfControllerDataType',0,14,212,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_NonFdObjectsPendingFlagOfControllerDataType',0,14,215,15,16
+	.word	316
+	.byte	4
+	.byte	'Can_PrevModeOfControllerDataType',0,14,218,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_RamCheckTransitionRequestOfControllerDataType',0,14,221,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_TXBCROfControllerDataType',0,14,224,15,16
+	.word	316
+	.byte	4
+	.byte	'Can_TXBCRWaitOfControllerDataType',0,14,227,15,16
+	.word	316
+	.byte	4
+	.byte	'Can_TXBRPOfControllerDataType',0,14,230,15,16
+	.word	316
+	.byte	4
+	.byte	'Can_FBTPType',0,14,233,15,16
+	.word	316
+	.byte	4
+	.byte	'Can_GFCType',0,14,236,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_INT_PriorityType',0,14,239,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_INT_RoutingGroupType',0,14,242,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_InitObjectBaudrateType',0,14,245,15,16
+	.word	252
+	.byte	4
+	.byte	'Can_InitObjectFdBrsConfigType',0,14,248,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_InitObjectStartIndexType',0,14,251,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_ActiveSendObjectOfMailboxType',0,14,254,15,15
+	.word	177
+	.byte	4
+	.byte	'Can_ControllerConfigIdxOfMailboxType',0,14,129,16,15
+	.word	177
+	.byte	4
+	.byte	'Can_FdPaddingOfMailboxType',0,14,132,16,15
+	.word	177
+	.byte	4
+	.byte	'Can_HwHandleOfMailboxType',0,14,135,16,15
+	.word	177
+	.byte	4
+	.byte	'Can_IDValueOfMailboxType',0,14,138,16,15
+	.word	177
+	.byte	4
+	.byte	'Can_MailboxSizeOfMailboxType',0,14,141,16,15
+	.word	177
+	.byte	4
+	.byte	'Can_MailboxTypeOfMailboxType',0,14,144,16,15
+	.word	177
+	.byte	4
+	.byte	'Can_MaxDataLenOfMailboxType',0,14,147,16,15
+	.word	177
+	.byte	4
+	.byte	'Can_MemorySectionsIndexOfMailboxType',0,14,150,16,15
+	.word	177
+	.byte	4
+	.byte	'Can_MemorySectionStartOfMemorySectionInfoType',0,14,153,16,15
+	.word	177
+	.byte	4
+	.byte	'Can_HwHandleOfMemorySectionObjectsType',0,14,156,16,15
+	.word	177
+	.byte	4
+	.byte	'Can_MailboxElementOfMemorySectionObjectsType',0,14,159,16,15
+	.word	177
+	.byte	4
+	.byte	'Can_MailboxHandleOfMemorySectionObjectsType',0,14,162,16,15
+	.word	177
+	.byte	4
+	.byte	'Can_FLSSAOfSIDFCType',0,14,168,16,15
+	.word	177
+	.byte	4
+	.byte	'Can_LSSOfSIDFCType',0,14,171,16,15
+	.word	177
+	.byte	4
+	.byte	'Can_SIDFEEndIdxOfSIDFCType',0,14,174,16,15
+	.word	177
+	.byte	4
+	.byte	'Can_SIDFEStartIdxOfSIDFCType',0,14,177,16,15
+	.word	177
+	.byte	4
+	.byte	'Can_SIDFEType',0,14,183,16,16
+	.word	316
+	.byte	4
+	.byte	'Can_SRN_AddressType',0,14,186,16,16
+	.word	316
+	.byte	4
+	.byte	'Can_RXBAOfShmAdrType',0,14,189,16,16
+	.word	316
+	.byte	4
+	.byte	'Can_RXF0AOfShmAdrType',0,14,192,16,16
+	.word	316
+	.byte	4
+	.byte	'Can_RXF1AOfShmAdrType',0,14,195,16,16
+	.word	316
+	.byte	4
+	.byte	'Can_SIDFAOfShmAdrType',0,14,198,16,16
+	.word	316
+	.byte	4
+	.byte	'Can_StartAdrOfShmAdrType',0,14,201,16,16
+	.word	316
+	.byte	4
+	.byte	'Can_StopAdrOfShmAdrType',0,14,204,16,16
+	.word	316
+	.byte	4
+	.byte	'Can_TXBAOfShmAdrType',0,14,207,16,16
+	.word	316
+	.byte	4
+	.byte	'Can_TXEFAOfShmAdrType',0,14,210,16,16
+	.word	316
+	.byte	4
+	.byte	'Can_XIDFAOfShmAdrType',0,14,213,16,16
+	.word	316
+	.byte	4
+	.byte	'Can_F0DSOfShmElementSizeType',0,14,216,16,15
+	.word	177
+	.byte	4
+	.byte	'Can_F1DSOfShmElementSizeType',0,14,219,16,15
+	.word	177
+	.byte	4
+	.byte	'Can_RBDSOfShmElementSizeType',0,14,222,16,15
+	.word	177
+	.byte	4
+	.byte	'Can_TBDSOfShmElementSizeType',0,14,225,16,15
+	.word	177
+	.byte	4
+	.byte	'Can_TEFBDSOfShmElementSizeType',0,14,228,16,15
+	.word	177
+	.byte	4
+	.byte	'Can_TDCRType',0,14,181,17,16
+	.word	252
+	.byte	4
+	.byte	'Can_XIDAMType',0,14,184,17,16
+	.word	316
+	.byte	4
+	.byte	'Can_FLESAOfXIDFCType',0,14,187,17,15
+	.word	177
+	.byte	4
+	.byte	'Can_LSEOfXIDFCType',0,14,190,17,15
+	.word	177
+	.byte	4
+	.byte	'Can_EIDFE_0OfXIDFEType',0,14,193,17,15
+	.word	177
+	.byte	4
+	.byte	'Can_EIDFE_1OfXIDFEType',0,14,196,17,15
+	.word	177
+	.byte	10
+	.byte	'sCan_ActiveSendObjectType',0,14,215,17,16,4,7
+	.byte	'StateOfActiveSendObject',0
+	.word	252
+	.byte	2,2,35,0,7
+	.byte	'PduOfActiveSendObject',0
+	.word	177
+	.byte	1,2,35,2,0,4
+	.byte	'Can_ActiveSendObjectType',0,14,219,17,3
+	.word	12967
+	.byte	10
+	.byte	'sCan_BufferConfigType',0,14,222,17,16,12,7
+	.byte	'RXF0COfBufferConfig',0
+	.word	316
+	.byte	4,2,35,0,7
+	.byte	'TXBCOfBufferConfig',0
+	.word	316
+	.byte	4,2,35,4,7
+	.byte	'RXBCOfBufferConfig',0
+	.word	177
+	.byte	1,2,35,8,7
+	.byte	'RXF1COfBufferConfig',0
+	.word	177
+	.byte	1,2,35,9,7
+	.byte	'TXEFCOfBufferConfig',0
+	.word	177
+	.byte	1,2,35,10,0,4
+	.byte	'Can_BufferConfigType',0,14,229,17,3
+	.word	13098
+	.byte	10
+	.byte	'sCan_ControllerConfigType',0,14,238,17,16,28,7
+	.byte	'BasisAdrOfControllerConfig',0
+	.word	316
+	.byte	4,2,35,0,7
+	.byte	'CanControllerDefaultBaudrateOfControllerConfig',0
+	.word	252
+	.byte	2,2,35,4,7
+	.byte	'IsTTCanOfControllerConfig',0
+	.word	177
+	.byte	1,2,35,6,7
+	.byte	'CanControllerDefaultBaudrateIdxOfControllerConfig',0
+	.word	177
+	.byte	1,2,35,7,7
+	.byte	'MailboxRxBasicEndIdxOfControllerConfig',0
+	.word	177
+	.byte	1,2,35,8,7
+	.byte	'MailboxRxBasicLengthOfControllerConfig',0
+	.word	177
+	.byte	1,2,35,9,7
+	.byte	'MailboxRxBasicStartIdxOfControllerConfig',0
+	.word	177
+	.byte	1,2,35,10,7
+	.byte	'MailboxTxBasicEndIdxOfControllerConfig',0
+	.word	177
+	.byte	1,2,35,11,7
+	.byte	'MailboxTxBasicLengthOfControllerConfig',0
+	.word	177
+	.byte	1,2,35,12,7
+	.byte	'MailboxTxBasicStartIdxOfControllerConfig',0
+	.word	177
+	.byte	1,2,35,13,7
+	.byte	'RxBasicHwStartOfControllerConfig',0
+	.word	177
+	.byte	1,2,35,14,7
+	.byte	'RxBasicHwStopOfControllerConfig',0
+	.word	177
+	.byte	1,2,35,15,7
+	.byte	'RxFullHwStartOfControllerConfig',0
+	.word	177
+	.byte	1,2,35,16,7
+	.byte	'RxFullHwStopOfControllerConfig',0
+	.word	177
+	.byte	1,2,35,17,7
+	.byte	'RxSelectionOfControllerConfig',0
+	.word	177
+	.byte	1,2,35,18,7
+	.byte	'TxBasicHwStartOfControllerConfig',0
+	.word	177
+	.byte	1,2,35,19,7
+	.byte	'TxBasicHwStopOfControllerConfig',0
+	.word	177
+	.byte	1,2,35,20,7
+	.byte	'TxFullHwStartOfControllerConfig',0
+	.word	177
+	.byte	1,2,35,21,7
+	.byte	'TxFullHwStopOfControllerConfig',0
+	.word	177
+	.byte	1,2,35,22,7
+	.byte	'UnusedHwStartOfControllerConfig',0
+	.word	177
+	.byte	1,2,35,23,7
+	.byte	'UnusedHwStopOfControllerConfig',0
+	.word	177
+	.byte	1,2,35,24,0,4
+	.byte	'Can_ControllerConfigType',0,14,133,18,3
+	.word	13300
+	.byte	10
+	.byte	'sCan_ControllerDataType',0,14,136,18,16,68,7
+	.byte	'IntEnableOfControllerData',0
+	.word	316
+	.byte	4,2,35,0,7
+	.byte	'NonFdObjectsPendingFlagOfControllerData',0
+	.word	316
+	.byte	4,2,35,4,7
+	.byte	'TXBCROfControllerData',0
+	.word	316
+	.byte	4,2,35,8,7
+	.byte	'TXBCRWaitOfControllerData',0
+	.word	316
+	.byte	4,2,35,12,7
+	.byte	'TXBRPOfControllerData',0
+	.word	316
+	.byte	4,2,35,16,7
+	.byte	'BusOffNotificationOfControllerData',0
+	.word	177
+	.byte	1,2,35,20,7
+	.byte	'BusOffTransitionRequestOfControllerData',0
+	.word	177
+	.byte	1,2,35,21,7
+	.byte	'CanInterruptCounterOfControllerData',0
+	.word	177
+	.byte	1,2,35,22,7
+	.byte	'IsBusOffOfControllerData',0
+	.word	177
+	.byte	1,2,35,23,7
+	.byte	'LastInitObjectOfControllerData',0
+	.word	177
+	.byte	1,2,35,24,7
+	.byte	'LastStateOfControllerData',0
+	.word	177
+	.byte	1,2,35,25,7
+	.byte	'LogStatusOfControllerData',0
+	.word	177
+	.byte	1,2,35,26,7
+	.byte	'ModeTransitionRequestOfControllerData',0
+	.word	177
+	.byte	1,2,35,27,7
+	.byte	'PrevModeOfControllerData',0
+	.word	177
+	.byte	1,2,35,28,7
+	.byte	'RamCheckTransitionRequestOfControllerData',0
+	.word	177
+	.byte	1,2,35,29,7
+	.byte	'CanInterruptOldStatusOfControllerData',0
+	.word	316
+	.byte	4,2,35,30,7
+	.byte	'LoopTimeoutOfControllerData',0
+	.word	9125
+	.byte	32,2,35,34,0,4
+	.byte	'Can_ControllerDataType',0,14,155,18,3
+	.word	14293
+	.byte	11,32
+	.word	316
+	.byte	12,7,0,10
+	.byte	'sCan_MailboxType',0,14,161,18,16,12,7
+	.byte	'ActiveSendObjectOfMailbox',0
+	.word	177
+	.byte	1,2,35,0,7
+	.byte	'ControllerConfigIdxOfMailbox',0
+	.word	177
+	.byte	1,2,35,1,7
+	.byte	'FdPaddingOfMailbox',0
+	.word	177
+	.byte	1,2,35,2,7
+	.byte	'HwHandleOfMailbox',0
+	.word	177
+	.byte	1,2,35,3,7
+	.byte	'IDValueOfMailbox',0
+	.word	177
+	.byte	1,2,35,4,7
+	.byte	'MailboxSizeOfMailbox',0
+	.word	177
+	.byte	1,2,35,5,7
+	.byte	'MailboxTypeOfMailbox',0
+	.word	177
+	.byte	1,2,35,6,7
+	.byte	'MaxDataLenOfMailbox',0
+	.word	177
+	.byte	1,2,35,7,7
+	.byte	'MemorySectionsIndexOfMailbox',0
+	.word	177
+	.byte	1,2,35,8,0,4
+	.byte	'Can_MailboxType',0,14,172,18,3
+	.word	15044
+	.byte	10
+	.byte	'sCan_MemorySectionInfoType',0,14,175,18,16,1,7
+	.byte	'MemorySectionStartOfMemorySectionInfo',0
+	.word	177
+	.byte	1,2,35,0,0,4
+	.byte	'Can_MemorySectionInfoType',0,14,178,18,3
+	.word	15374
+	.byte	10
+	.byte	'sCan_MemorySectionObjectsType',0,14,181,18,16,4,7
+	.byte	'HwHandleOfMemorySectionObjects',0
+	.word	177
+	.byte	1,2,35,0,7
+	.byte	'MailboxElementOfMemorySectionObjects',0
+	.word	177
+	.byte	1,2,35,1,7
+	.byte	'MailboxHandleOfMemorySectionObjects',0
+	.word	177
+	.byte	1,2,35,2,0,4
+	.byte	'Can_MemorySectionObjectsType',0,14,186,18,3
+	.word	15490
+	.byte	10
+	.byte	'sCan_SIDFCType',0,14,193,18,16,4,7
+	.byte	'FLSSAOfSIDFC',0
+	.word	177
+	.byte	1,2,35,0,7
+	.byte	'LSSOfSIDFC',0
+	.word	177
+	.byte	1,2,35,1,7
+	.byte	'SIDFEEndIdxOfSIDFC',0
+	.word	177
+	.byte	1,2,35,2,7
+	.byte	'SIDFEStartIdxOfSIDFC',0
+	.word	177
+	.byte	1,2,35,3,0,4
+	.byte	'Can_SIDFCType',0,14,199,18,3
+	.word	15696
+	.byte	10
+	.byte	'sCan_ShmAdrType',0,14,202,18,16,36,7
+	.byte	'RXBAOfShmAdr',0
+	.word	316
+	.byte	4,2,35,0,7
+	.byte	'RXF0AOfShmAdr',0
+	.word	316
+	.byte	4,2,35,4,7
+	.byte	'RXF1AOfShmAdr',0
+	.word	316
+	.byte	4,2,35,8,7
+	.byte	'SIDFAOfShmAdr',0
+	.word	316
+	.byte	4,2,35,12,7
+	.byte	'StartAdrOfShmAdr',0
+	.word	316
+	.byte	4,2,35,16,7
+	.byte	'StopAdrOfShmAdr',0
+	.word	316
+	.byte	4,2,35,20,7
+	.byte	'TXBAOfShmAdr',0
+	.word	316
+	.byte	4,2,35,24,7
+	.byte	'TXEFAOfShmAdr',0
+	.word	316
+	.byte	4,2,35,28,7
+	.byte	'XIDFAOfShmAdr',0
+	.word	316
+	.byte	4,2,35,32,0,4
+	.byte	'Can_ShmAdrType',0,14,213,18,3
+	.word	15841
+	.byte	10
+	.byte	'sCan_ShmElementSizeType',0,14,216,18,16,6,7
+	.byte	'F0DSOfShmElementSize',0
+	.word	177
+	.byte	1,2,35,0,7
+	.byte	'F1DSOfShmElementSize',0
+	.word	177
+	.byte	1,2,35,1,7
+	.byte	'RBDSOfShmElementSize',0
+	.word	177
+	.byte	1,2,35,2,7
+	.byte	'TBDSOfShmElementSize',0
+	.word	177
+	.byte	1,2,35,3,7
+	.byte	'TEFBDSOfShmElementSize',0
+	.word	177
+	.byte	1,2,35,4,0,4
+	.byte	'Can_ShmElementSizeType',0,14,223,18,3
+	.word	16098
+	.byte	10
+	.byte	'sCan_XIDFCType',0,14,226,18,16,2,7
+	.byte	'FLESAOfXIDFC',0
+	.word	177
+	.byte	1,2,35,0,7
+	.byte	'LSEOfXIDFC',0
+	.word	177
+	.byte	1,2,35,1,0,4
+	.byte	'Can_XIDFCType',0,14,230,18,3
+	.word	16313
+	.byte	10
+	.byte	'sCan_XIDFEType',0,14,233,18,16,2,7
+	.byte	'EIDFE_0OfXIDFE',0
+	.word	177
+	.byte	1,2,35,0,7
+	.byte	'EIDFE_1OfXIDFE',0
+	.word	177
+	.byte	1,2,35,1,0,4
+	.byte	'Can_XIDFEType',0,14,237,18,3
+	.word	16400
+	.byte	10
+	.byte	'sCan_PCConfigType',0,14,208,19,16,1,7
+	.byte	'Can_PCConfigNeverUsed',0
+	.word	177
+	.byte	1,2,35,0,0,4
+	.byte	'Can_PCConfigType',0,14,211,19,3
+	.word	16493
+	.byte	4
+	.byte	'Can_ConfigType',0,14,213,19,26
+	.word	16493
+	.byte	13
+	.word	316
+	.byte	13
+	.word	316
+	.byte	13
+	.word	1281
+	.byte	10
+	.byte	'tElmTypeTag',0,15,189,9,25,72,7
+	.byte	'E0',0
+	.word	16599
+	.byte	4,2,35,0,7
+	.byte	'E1',0
+	.word	16604
+	.byte	4,2,35,4,7
+	.byte	'data',0
+	.word	16609
+	.byte	64,2,35,8,0,13
+	.word	16614
+	.byte	4
+	.byte	'tElmType',0,15,206,9,3
+	.word	16671
+	.byte	13
+	.word	316
+	.byte	13
+	.word	177
+	.byte	13
+	.word	177
+	.byte	13
+	.word	177
+	.byte	6,15,144,10,5,4,14
+	.byte	'ID',0,4
+	.word	16694
+	.byte	29,3,2,35,0,14
+	.byte	'RTR',0,1
+	.word	16699
+	.byte	1,2,2,35,3,14
+	.byte	'XTD',0,1
+	.word	16704
+	.byte	1,1,2,35,3,14
+	.byte	'ESI',0,1
+	.word	16709
+	.byte	1,0,2,35,3,0,13
+	.word	316
+	.byte	15,15,142,10,3,4,7
+	.byte	'b0',0
+	.word	16714
+	.byte	4,2,35,0,7
+	.byte	'B0',0
+	.word	16780
+	.byte	4,2,35,0,0,13
+	.word	252
+	.byte	13
+	.word	177
+	.byte	13
+	.word	177
+	.byte	13
+	.word	177
+	.byte	13
+	.word	177
+	.byte	13
+	.word	177
+	.byte	13
+	.word	177
+	.byte	6,15,155,10,5,4,14
+	.byte	'RXTS',0,2
+	.word	16816
+	.byte	16,0,2,35,0,14
+	.byte	'DLC',0,1
+	.word	16821
+	.byte	4,4,2,35,2,14
+	.byte	'BRS',0,1
+	.word	16826
+	.byte	1,3,2,35,2,14
+	.byte	'FDF',0,1
+	.word	16831
+	.byte	1,2,2,35,2,14
+	.byte	'r0',0,1
+	.word	16836
+	.byte	2,0,2,35,2,14
+	.byte	'FIDX',0,1
+	.word	16841
+	.byte	7,1,2,35,3,14
+	.byte	'ANMF',0,1
+	.word	16846
+	.byte	1,0,2,35,3,0,13
+	.word	252
+	.byte	13
+	.word	177
+	.byte	13
+	.word	177
+	.byte	13
+	.word	177
+	.byte	13
+	.word	177
+	.byte	13
+	.word	177
+	.byte	13
+	.word	177
+	.byte	6,15,165,10,5,4,14
+	.byte	'r1',0,2
+	.word	16965
+	.byte	16,0,2,35,0,14
+	.byte	'DLC',0,1
+	.word	16970
+	.byte	4,4,2,35,2,14
+	.byte	'BRS',0,1
+	.word	16975
+	.byte	1,3,2,35,2,14
+	.byte	'FDF',0,1
+	.word	16980
+	.byte	1,2,2,35,2,14
+	.byte	'r0',0,1
+	.word	16985
+	.byte	1,1,2,35,2,14
+	.byte	'EFC',0,1
+	.word	16990
+	.byte	1,0,2,35,2,14
+	.byte	'MM',0,1
+	.word	16995
+	.byte	8,0,2,35,3,0,15,15,153,10,3,4,7
+	.byte	'rb1',0
+	.word	16851
+	.byte	4,2,35,0,7
+	.byte	'tb1',0
+	.word	17000
+	.byte	4,2,35,0,7
+	.byte	'B1',0
+	.word	316
+	.byte	4,2,35,0,0,13
+	.word	1281
+	.byte	10
+	.byte	'tCanChipMsgPtrTag',0,15,140,10,25,72,7
+	.byte	'uB0',0
+	.word	16785
+	.byte	4,2,35,0,7
+	.byte	'uB1',0
+	.word	17109
+	.byte	4,2,35,4,7
+	.byte	'data',0
+	.word	17154
+	.byte	64,2,35,8,0,13
+	.word	17159
+	.byte	4
+	.byte	'tCanChipMsgPtr',0,15,182,10,3
+	.word	17224
+	.byte	6,15,189,10,3,4,14
+	.byte	'FnFL',0,1
+	.word	177
+	.byte	7,1,2,35,0,14
+	.byte	'r2',0,1
+	.word	177
+	.byte	1,0,2,35,0,14
+	.byte	'FnGI',0,1
+	.word	177
+	.byte	6,2,2,35,1,14
+	.byte	'r1',0,4
+	.word	316
+	.byte	10,8,2,35,0,14
+	.byte	'FnF',0,1
+	.word	177
+	.byte	1,7,2,35,3,14
+	.byte	'RFnL',0,1
+	.word	177
+	.byte	1,6,2,35,3,14
+	.byte	'r0',0,1
+	.word	177
+	.byte	6,0,2,35,3,0,16
+	.byte	'tRXFnSTag',0,15,186,10,15,4,7
+	.byte	'R',0
+	.word	316
+	.byte	4,2,35,0,7
+	.byte	'B',0
+	.word	17253
+	.byte	4,2,35,0,0,4
+	.byte	'tRXFnS',0,15,199,10,3
+	.word	17365
+	.byte	6,15,204,10,3,4,17,1
+	.word	177
+	.byte	2,6,2,35,0,14
+	.byte	'FOSA',0,2
+	.word	252
+	.byte	14,0,2,35,0,14
+	.byte	'F0S',0,1
+	.word	177
+	.byte	7,1,2,35,2,17,1
+	.word	177
+	.byte	1,0,2,35,2,14
+	.byte	'F0WM',0,1
+	.word	177
+	.byte	7,1,2,35,3,17,1
+	.word	177
+	.byte	1,0,2,35,3,0,16
+	.byte	'tRXFnCTag',0,15,201,10,15,4,7
+	.byte	'R',0
+	.word	316
+	.byte	4,2,35,0,7
+	.byte	'B',0
+	.word	17420
+	.byte	4,2,35,0,0,4
+	.byte	'tRXFnC',0,15,213,10,3
+	.word	17507
+	.byte	6,15,219,10,3,4,14
+	.byte	'F0DS',0,1
+	.word	177
+	.byte	3,5,2,35,0,17,1
+	.word	177
+	.byte	1,4,2,35,0,14
+	.byte	'F1DS',0,1
+	.word	177
+	.byte	3,1,2,35,0,17,1
+	.word	177
+	.byte	1,0,2,35,0,14
+	.byte	'RBDS',0,1
+	.word	177
+	.byte	3,5,2,35,1,17,4
+	.word	316
+	.byte	21,0,2,35,0,0,16
+	.byte	'tRXESCTag',0,15,216,10,15,4,7
+	.byte	'R',0
+	.word	316
+	.byte	4,2,35,0,7
+	.byte	'B',0
+	.word	17562
+	.byte	4,2,35,0,0,4
+	.byte	'tRXESC',0,15,228,10,3
+	.word	17650
+	.byte	6,15,233,10,3,4,14
+	.byte	'TFFL',0,1
+	.word	177
+	.byte	6,2,2,35,0,17,1
+	.word	177
+	.byte	2,0,2,35,0,14
+	.byte	'TFGI',0,1
+	.word	177
+	.byte	5,3,2,35,1,17,1
+	.word	177
+	.byte	3,0,2,35,1,14
+	.byte	'TFQPI',0,1
+	.word	177
+	.byte	5,3,2,35,2,14
+	.byte	'TFQF',0,1
+	.word	177
+	.byte	1,2,2,35,2,17,2
+	.word	252
+	.byte	10,0,2,35,2,0,16
+	.byte	'tTXFQSTag',0,15,230,10,15,4,7
+	.byte	'R',0
+	.word	316
+	.byte	4,2,35,0,7
+	.byte	'B',0
+	.word	17705
+	.byte	4,2,35,0,0,4
+	.byte	'tTXFQS',0,15,243,10,3
+	.word	17810
+	.byte	6,15,248,10,3,4,14
+	.byte	'EFFL',0,1
+	.word	177
+	.byte	6,2,2,35,0,14
+	.byte	'r1',0,1
+	.word	177
+	.byte	2,0,2,35,0,14
+	.byte	'EFGI',0,1
+	.word	177
+	.byte	5,3,2,35,1,17,4
+	.word	316
+	.byte	11,8,2,35,0,14
+	.byte	'EFF',0,1
+	.word	177
+	.byte	1,7,2,35,3,14
+	.byte	'TEFL',0,1
+	.word	177
+	.byte	1,6,2,35,3,14
+	.byte	'r0',0,1
+	.word	177
+	.byte	6,0,2,35,3,0,16
+	.byte	'tTXEFSTag',0,15,245,10,15,4,7
+	.byte	'R',0
+	.word	316
+	.byte	4,2,35,0,7
+	.byte	'B',0
+	.word	17865
+	.byte	4,2,35,0,0,4
+	.byte	'tTXEFS',0,15,130,11,3
+	.word	17974
+	.byte	4
+	.byte	'CanIf_TxBufferSizeType',0,16,185,1,15
+	.word	177
+	.byte	8,17,186,2,9,1,9
+	.byte	'CANIF_CS_UNINIT',0,0,9
+	.byte	'CANIF_CS_STOPPED',0,1,9
+	.byte	'CANIF_CS_STARTED',0,2,9
+	.byte	'CANIF_CS_SLEEP',0,3,0,4
+	.byte	'CanIf_ControllerModeType',0,17,192,2,3
+	.word	18061
+	.byte	8,17,212,2,9,1,9
+	.byte	'CANIF_GET_OFFLINE',0,0,9
+	.byte	'CANIF_GET_RX_ONLINE',0,1,9
+	.byte	'CANIF_GET_TX_ONLINE',0,2,9
+	.byte	'CANIF_GET_ONLINE',0,3,9
+	.byte	'CANIF_GET_OFFLINE_ACTIVE',0,4,9
+	.byte	'CANIF_GET_OFFLINE_ACTIVE_RX_ONLINE',0,5,9
+	.byte	'CANIF_NO_MODE_PDU_GET_MODE_TYPE_END',0,6,0,4
+	.byte	'CanIf_PduGetModeType',0,17,225,2,3
+	.word	18175
+	.byte	8,17,228,2,9,1,9
+	.byte	'CANIF_RxBasicCANMailbox',0,0,9
+	.byte	'CANIF_RxFullCANMailbox',0,1,9
+	.byte	'CANIF_TxBasicCANMailbox',0,2,9
+	.byte	'CANIF_TxFullCANMailbox',0,3,9
+	.byte	'CANIF_UnusedCANMailbox',0,4,0,4
+	.byte	'CanIf_MailBoxTypeType',0,17,235,2,3
+	.word	18397
+	.byte	8,17,238,2,9,1,9
+	.byte	'CanIf_SimpleRxIndicationLayout',0,0,9
+	.byte	'CanIf_AdvancedRxIndicationLayout',0,1,9
+	.byte	'CanIf_NmOsekRxIndicationLayout',0,2,9
+	.byte	'CanIf_CddRxIndicationLayout',0,3,0,4
+	.byte	'CanIf_RxIndicationLayoutType',0,17,244,2,3
+	.word	18562
+	.byte	18,1,1,19
+	.word	177
+	.byte	0,3
+	.word	18738
+	.byte	4
+	.byte	'CanIf_TxConfirmationFctType',0,17,172,3,9
+	.word	18747
+	.byte	20
+	.word	177
+	.byte	3
+	.word	18789
+	.byte	18,1,1,19
+	.word	177
+	.byte	19
+	.word	18794
+	.byte	0,3
+	.word	18799
+	.byte	4
+	.byte	'CanIf_SimpleRxIndicationFctType',0,17,178,3,9
+	.word	18813
+	.byte	20
+	.word	758
+	.byte	3
+	.word	18859
+	.byte	18,1,1,19
+	.word	177
+	.byte	19
+	.word	18864
+	.byte	0,3
+	.word	18869
+	.byte	4
+	.byte	'CanIf_AdvancedRxIndicationFctType',0,17,183,3,9
+	.word	18883
+	.byte	18,1,1,19
+	.word	177
+	.byte	19
+	.word	18794
+	.byte	19
+	.word	252
+	.byte	0,3
+	.word	18931
+	.byte	4
+	.byte	'CanIf_NmOsekRxIndicationFctType',0,17,187,3,9
+	.word	18950
+	.byte	18,1,1,19
+	.word	177
+	.byte	19
+	.word	18864
+	.byte	19
+	.word	252
+	.byte	0,3
+	.word	18996
+	.byte	4
+	.byte	'CanIf_CddRxIndicationFctType',0,17,191,3,9
+	.word	19015
+	.byte	18,1,1,19
+	.word	177
+	.byte	19
+	.word	18061
+	.byte	0,3
+	.word	19058
+	.byte	4
+	.byte	'CanIf_CtrlModeIndicationFctType',0,17,195,3,9
+	.word	19072
+	.byte	4
+	.byte	'CanIf_BusOffNotificationFctType',0,17,199,3,9
+	.word	18747
+	.byte	15,17,210,4,9,4,7
+	.byte	'eSimpleRxIndicationType',0
+	.word	18818
+	.byte	4,2,35,0,7
+	.byte	'eAdvancedRxIndicationType',0
+	.word	18888
+	.byte	4,2,35,0,7
+	.byte	'eNmOsekRxIndicationType',0
+	.word	18955
+	.byte	4,2,35,0,7
+	.byte	'eCddRxIndicationType',0
+	.word	19020
+	.byte	4,2,35,0,0,4
+	.byte	'CanIf_RxIndicationFctType',0,17,216,4,3
+	.word	19159
+	.byte	3
+	.word	18799
+	.byte	3
+	.word	18869
+	.byte	3
+	.word	18931
+	.byte	3
+	.word	18996
+	.byte	10
+	.byte	'sCanIf_TxQueueBaseType',0,17,221,4,16,1,7
+	.byte	'eSduLength',0
+	.word	177
+	.byte	1,2,35,0,0,4
+	.byte	'CanIf_TxQueueBaseType',0,17,227,4,3
+	.word	19352
+	.byte	10
+	.byte	'sCanIf_TxQueueBaseWithDataType',0,17,230,4,16,1,7
+	.byte	'eBaseParams',0
+	.word	19352
+	.byte	1,2,35,0,0,4
+	.byte	'CanIf_TxQueueBaseWithDataType',0,17,236,4,3
+	.word	19433
+	.byte	10
+	.byte	'sCanIf_TxPrioByCanIdByteQueueType',0,17,241,4,16,2,7
+	.byte	'eQueueParams',0
+	.word	19433
+	.byte	1,2,35,0,7
+	.byte	'eQueued',0
+	.word	177
+	.byte	1,2,35,1,0,4
+	.byte	'CanIf_TxPrioByCanIdByteQueueType',0,17,245,4,3
+	.word	19531
+	.byte	10
+	.byte	'sCanIf_TxBufferPrioByCanIdBaseType',0,17,255,4,16,1,7
+	.byte	'eQueueCounter',0
+	.word	177
+	.byte	1,2,35,0,0,4
+	.byte	'CanIf_TxBufferPrioByCanIdBaseType',0,17,130,5,3
+	.word	19653
+	.byte	4
+	.byte	'CanIf_MappedTxBuffersConfigEndIdxOfCanIfCtrlId2MappedTxBuffersConfigType',0,16,148,9,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_MappedTxBuffersConfigStartIdxOfCanIfCtrlId2MappedTxBuffersConfigType',0,16,151,9,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_CtrlStatesIdxOfMailBoxConfigType',0,16,160,9,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_PduIdFirstOfMailBoxConfigType',0,16,163,9,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_PduIdLastOfMailBoxConfigType',0,16,166,9,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_TxBufferCfgIdxOfMailBoxConfigType',0,16,169,9,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_TxBufferCfgOfMailBoxConfigType',0,16,172,9,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_TxBufferHandlingTypeOfMailBoxConfigType',0,16,178,9,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_MailBoxConfigIdxOfMappedTxBuffersConfigType',0,16,181,9,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_RxIndicationFctListIdxOfRxPduConfigType',0,16,184,9,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_RxPduCanIdOfRxPduConfigType',0,16,187,9,16
+	.word	252
+	.byte	4
+	.byte	'CanIf_RxPduDlcOfRxPduConfigType',0,16,190,9,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_RxPduMaskOfRxPduConfigType',0,16,193,9,16
+	.word	252
+	.byte	4
+	.byte	'CanIf_UpperPduIdOfRxPduConfigType',0,16,196,9,19
+	.word	177
+	.byte	4
+	.byte	'CanIf_TxBufferPrioByCanIdBaseIdxOfTxBufferPrioByCanIdByteQueueConfigType',0,16,244,9,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusEndIdxOfTxBufferPrioByCanIdByteQueueConfigType',0,16,247
+	.byte	9,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusLengthOfTxBufferPrioByCanIdByteQueueConfigType',0,16,250
+	.byte	9,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusStartIdxOfTxBufferPrioByCanIdByteQueueConfigType',0,16
+	.byte	253,9,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_TxPduConfigIdxOfTxBufferPrioByCanIdByteQueueMappedTxPdusType',0,16,128,10,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_CanIdOfTxPduConfigType',0,16,131,10,16
+	.word	252
+	.byte	4
+	.byte	'CanIf_CtrlStatesIdxOfTxPduConfigType',0,16,134,10,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_IsTxPduTruncationOfTxPduConfigType',0,16,137,10,17
+	.word	177
+	.byte	4
+	.byte	'CanIf_MailBoxConfigIdxOfTxPduConfigType',0,16,140,10,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_TxConfirmationFctListIdxOfTxPduConfigType',0,16,143,10,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_TxPduLengthOfTxPduConfigType',0,16,146,10,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_UpperLayerTxPduIdOfTxPduConfigType',0,16,149,10,19
+	.word	177
+	.byte	4
+	.byte	'CanIf_TxQueueIdxOfTxPduQueueIndexType',0,16,152,10,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_TxQueueIndex2DataStartStopIdxOfTxPduQueueIndexType',0,16,155,10,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_TxQueueOfTxPduQueueIndexType',0,16,161,10,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_TxQueueDataType',0,16,167,10,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_TxQueueDataEndIdxOfTxQueueIndex2DataStartStopType',0,16,170,10,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_TxQueueDataLengthOfTxQueueIndex2DataStartStopType',0,16,173,10,15
+	.word	177
+	.byte	4
+	.byte	'CanIf_TxQueueDataStartIdxOfTxQueueIndex2DataStartStopType',0,16,176,10,15
+	.word	177
+	.byte	10
+	.byte	'sCanIf_CanIfCtrlId2MappedTxBuffersConfigType',0,16,199,10,16,2,7
+	.byte	'MappedTxBuffersConfigEndIdxOfCanIfCtrlId2MappedTxBuffersConfig',0
+	.word	177
+	.byte	1,2,35,0,7
+	.byte	'MappedTxBuffersConfigStartIdxOfCanIfCtrlId2MappedTxBuffersConfig',0
+	.word	177
+	.byte	1,2,35,1,0,4
+	.byte	'CanIf_CanIfCtrlId2MappedTxBuffersConfigType',0,16,203,10,3
+	.word	21682
+	.byte	10
+	.byte	'sCanIf_CtrlStatesType',0,16,206,10,16,2,7
+	.byte	'CtrlModeOfCtrlStates',0
+	.word	18061
+	.byte	1,2,35,0,7
+	.byte	'PduModeOfCtrlStates',0
+	.word	18175
+	.byte	1,2,35,1,0,4
+	.byte	'CanIf_CtrlStatesType',0,16,210,10,3
+	.word	21933
+	.byte	10
+	.byte	'sCanIf_MailBoxConfigType',0,16,217,10,16,8,7
+	.byte	'CtrlStatesIdxOfMailBoxConfig',0
+	.word	177
+	.byte	1,2,35,0,7
+	.byte	'PduIdFirstOfMailBoxConfig',0
+	.word	177
+	.byte	1,2,35,1,7
+	.byte	'PduIdLastOfMailBoxConfig',0
+	.word	177
+	.byte	1,2,35,2,7
+	.byte	'TxBufferCfgOfMailBoxConfig',0
+	.word	177
+	.byte	1,2,35,3,7
+	.byte	'TxBufferCfgIdxOfMailBoxConfig',0
+	.word	177
+	.byte	1,2,35,4,7
+	.byte	'TxBufferHandlingTypeOfMailBoxConfig',0
+	.word	177
+	.byte	1,2,35,5,7
+	.byte	'MailBoxTypeOfMailBoxConfig',0
+	.word	18397
+	.byte	1,2,35,6,0,4
+	.byte	'CanIf_MailBoxConfigType',0,16,226,10,3
+	.word	22051
+	.byte	10
+	.byte	'sCanIf_MappedTxBuffersConfigType',0,16,232,10,16,1,7
+	.byte	'MailBoxConfigIdxOfMappedTxBuffersConfig',0
+	.word	177
+	.byte	1,2,35,0,0,4
+	.byte	'CanIf_MappedTxBuffersConfigType',0,16,235,10,3
+	.word	22379
+	.byte	10
+	.byte	'sCanIf_RxIndicationFctListType',0,16,238,10,16,8,7
+	.byte	'RxIndicationFctOfRxIndicationFctList',0
+	.word	19159
+	.byte	4,2,35,0,7
+	.byte	'RxIndicationLayoutOfRxIndicationFctList',0
+	.word	18562
+	.byte	1,2,35,4,0,4
+	.byte	'CanIf_RxIndicationFctListType',0,16,242,10,3
+	.word	22509
+	.byte	10
+	.byte	'sCanIf_RxPduConfigType',0,16,248,10,16,8,7
+	.byte	'RxPduCanIdOfRxPduConfig',0
+	.word	252
+	.byte	2,2,35,0,7
+	.byte	'RxPduMaskOfRxPduConfig',0
+	.word	252
+	.byte	2,2,35,2,7
+	.byte	'UpperPduIdOfRxPduConfig',0
+	.word	177
+	.byte	1,2,35,4,7
+	.byte	'RxIndicationFctListIdxOfRxPduConfig',0
+	.word	177
+	.byte	1,2,35,5,7
+	.byte	'RxPduDlcOfRxPduConfig',0
+	.word	177
+	.byte	1,2,35,6,0,4
+	.byte	'CanIf_RxPduConfigType',0,16,255,10,3
+	.word	22681
+	.byte	10
+	.byte	'sCanIf_TxBufferPrioByCanIdByteQueueConfigType',0,16,135,11,16,4,7
+	.byte	'TxBufferPrioByCanIdBaseIdxOfTxBufferPrioByCanIdByteQueueConfig',0
+	.word	177
+	.byte	1,2,35,0,7
+	.byte	'TxBufferPrioByCanIdByteQueueMappedTxPdusEndIdxOfTxBufferPrioByCanIdByteQueueConfig',0
+	.word	177
+	.byte	1,2,35,1,7
+	.byte	'TxBufferPrioByCanIdByteQueueMappedTxPdusLengthOfTxBufferPrioByCanIdByteQueueConfig',0
+	.word	177
+	.byte	1,2,35,2,7
+	.byte	'TxBufferPrioByCanIdByteQueueMappedTxPdusStartIdxOfTxBufferPrioByCanIdByteQueueConfig',0
+	.word	177
+	.byte	1,2,35,3,0,4
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueConfigType',0,16,141,11,3
+	.word	22916
+	.byte	10
+	.byte	'sCanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusType',0,16,147,11,16,1,7
+	.byte	'TxPduConfigIdxOfTxBufferPrioByCanIdByteQueueMappedTxPdus',0
+	.word	177
+	.byte	1,2,35,0,0,4
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusType',0,16,150,11,3
+	.word	23373
+	.byte	10
+	.byte	'sCanIf_TxPduConfigType',0,16,158,11,16,8,7
+	.byte	'CanIdOfTxPduConfig',0
+	.word	252
+	.byte	2,2,35,0,7
+	.byte	'UpperLayerTxPduIdOfTxPduConfig',0
+	.word	177
+	.byte	1,2,35,2,7
+	.byte	'IsTxPduTruncationOfTxPduConfig',0
+	.word	177
+	.byte	1,2,35,3,7
+	.byte	'CtrlStatesIdxOfTxPduConfig',0
+	.word	177
+	.byte	1,2,35,4,7
+	.byte	'MailBoxConfigIdxOfTxPduConfig',0
+	.word	177
+	.byte	1,2,35,5,7
+	.byte	'TxConfirmationFctListIdxOfTxPduConfig',0
+	.word	177
+	.byte	1,2,35,6,7
+	.byte	'TxPduLengthOfTxPduConfig',0
+	.word	177
+	.byte	1,2,35,7,0,4
+	.byte	'CanIf_TxPduConfigType',0,16,167,11,3
+	.word	23558
+	.byte	10
+	.byte	'sCanIf_TxPduQueueIndexType',0,16,174,11,16,4,7
+	.byte	'TxQueueOfTxPduQueueIndex',0
+	.word	177
+	.byte	1,2,35,0,7
+	.byte	'TxQueueIdxOfTxPduQueueIndex',0
+	.word	177
+	.byte	1,2,35,1,7
+	.byte	'TxQueueIndex2DataStartStopIdxOfTxPduQueueIndex',0
+	.word	177
+	.byte	1,2,35,2,0,4
+	.byte	'CanIf_TxPduQueueIndexType',0,16,179,11,3
+	.word	23883
+	.byte	10
+	.byte	'sCanIf_TxQueueIndex2DataStartStopType',0,16,186,11,16,4,7
+	.byte	'TxQueueDataEndIdxOfTxQueueIndex2DataStartStop',0
+	.word	177
+	.byte	1,2,35,0,7
+	.byte	'TxQueueDataLengthOfTxQueueIndex2DataStartStop',0
+	.word	177
+	.byte	1,2,35,1,7
+	.byte	'TxQueueDataStartIdxOfTxQueueIndex2DataStartStop',0
+	.word	177
+	.byte	1,2,35,2,0,4
+	.byte	'CanIf_TxQueueIndex2DataStartStopType',0,16,191,11,3
+	.word	24079
+	.byte	10
+	.byte	'CanIf_CtrlStatesStructSTag',0,16,203,11,16,2,7
+	.byte	'CT_CAN00_9df8a959',0
+	.word	21933
+	.byte	2,2,35,0,0,4
+	.byte	'CanIf_CtrlStatesStructSType',0,16,206,11,3
+	.word	24337
+	.byte	10
+	.byte	'CanIf_TxBufferPrioByCanIdBaseStructSTag',0,16,209,11,16,1,7
+	.byte	'CHNL_0fb271d2',0
+	.word	19653
+	.byte	1,2,35,0,0,4
+	.byte	'CanIf_TxBufferPrioByCanIdBaseStructSType',0,16,212,11,3
+	.word	24435
+	.byte	10
+	.byte	'CanIf_TxQueueStructSTag',0,16,215,11,16,4,7
+	.byte	'msg_MyECU_Lamp_oCAN00_41befc25_Tx',0
+	.word	19531
+	.byte	2,2,35,0,7
+	.byte	'msg_Transmit_oCAN00_29db34a4_Tx',0
+	.word	19531
+	.byte	2,2,35,2,0,4
+	.byte	'CanIf_TxQueueStructSType',0,16,219,11,3
+	.word	24555
+	.byte	11,32
+	.word	177
+	.byte	12,31,0,10
+	.byte	'CanIf_TxQueueDataStructSTag',0,16,222,11,16,36,7
+	.byte	'msg_MyECU_Lamp_oCAN00_41befc25_Tx',0
+	.word	24704
+	.byte	32,2,35,0,7
+	.byte	'msg_Transmit_oCAN00_29db34a4_Tx',0
+	.word	177
+	.byte	1,2,35,32,0,4
+	.byte	'CanIf_TxQueueDataStructSType',0,16,226,11,3
+	.word	24713
+	.byte	10
+	.byte	'sCanIf_PCConfigType',0,16,207,12,16,1,7
+	.byte	'CanIf_PCConfigNeverUsed',0
+	.word	177
+	.byte	1,2,35,0,0,4
+	.byte	'CanIf_PCConfigType',0,16,210,12,3
+	.word	24870
+	.byte	21,1,1,3
+	.word	24958
+	.byte	4
+	.byte	'PduR_LockFunctionType',0,18,164,8,9
+	.word	24961
+	.byte	22
+	.word	177
+	.byte	1,1,19
+	.word	177
+	.byte	19
+	.word	18864
+	.byte	0,3
+	.word	24997
+	.byte	4
+	.byte	'PduR_TransmitFctPtrType',0,18,168,8,9
+	.word	25015
+	.byte	4
+	.byte	'PduR_IfRxIndicationType',0,18,170,8,9
+	.word	18883
+	.byte	4
+	.byte	'PduR_IfTxConfirmationFctPtrType',0,18,171,8,9
+	.word	18747
+	.byte	4
+	.byte	'PduR_RmGDestRomStartIdxOfDestApplicationManagerRomType',0,18,147,9,15
+	.word	177
+	.byte	4
+	.byte	'PduR_hasIfRoutingOfGeneralPropertiesRomType',0,18,159,9,17
+	.word	177
+	.byte	4
+	.byte	'PduR_InitializedRamType',0,18,162,9,17
+	.word	177
+	.byte	4
+	.byte	'PduR_ExclusiveAreaRomIdxOfLockRomType',0,18,165,9,15
+	.word	177
+	.byte	4
+	.byte	'PduR_MaskedBitsOfMmRomType',0,18,174,9,15
+	.word	177
+	.byte	4
+	.byte	'PduR_PartitionSNVOfPartitionIdentifiersType',0,18,183,9,16
+	.word	316
+	.byte	4
+	.byte	'PduR_PduLengthHandlingStrategyOfRmDestRomType',0,18,186,9,15
+	.word	177
+	.byte	4
+	.byte	'PduR_RmGDestRomIdxOfRmDestRomType',0,18,189,9,15
+	.word	177
+	.byte	4
+	.byte	'PduR_RmSrcRomIdxOfRmDestRomType',0,18,192,9,15
+	.word	177
+	.byte	4
+	.byte	'PduR_RoutingTypeOfRmDestRomType',0,18,195,9,15
+	.word	177
+	.byte	4
+	.byte	'PduR_DestHndOfRmGDestRomType',0,18,201,9,15
+	.word	177
+	.byte	4
+	.byte	'PduR_DirectionOfRmGDestRomType',0,18,204,9,15
+	.word	177
+	.byte	4
+	.byte	'PduR_LockRomIdxOfRmGDestRomType',0,18,207,9,15
+	.word	177
+	.byte	4
+	.byte	'PduR_MaxPduLengthOfRmGDestRomType',0,18,210,9,15
+	.word	177
+	.byte	4
+	.byte	'PduR_MmRomIdxOfRmGDestRomType',0,18,213,9,15
+	.word	177
+	.byte	4
+	.byte	'PduR_RmDestRomIdxOfRmGDestRomType',0,18,219,9,15
+	.word	177
+	.byte	4
+	.byte	'PduR_LockRomIdxOfRmSrcRomType',0,18,228,9,15
+	.word	177
+	.byte	4
+	.byte	'PduR_MmRomIdxOfRmSrcRomType',0,18,231,9,15
+	.word	177
+	.byte	4
+	.byte	'PduR_RmDestRomStartIdxOfRmSrcRomType',0,18,240,9,15
+	.word	177
+	.byte	4
+	.byte	'PduR_SrcHndOfRmSrcRomType',0,18,243,9,15
+	.word	177
+	.byte	4
+	.byte	'PduR_RmSrcRomIdxOfTx2LoType',0,18,172,10,15
+	.word	177
+	.byte	4
+	.byte	'PduR_RmTransmitFctPtrIdxOfTx2LoType',0,18,178,10,15
+	.word	177
+	.byte	4
+	.byte	'PduR_RmGDestRomIdxOfTxIf2UpType',0,18,181,10,15
+	.word	177
+	.byte	4
+	.byte	'PduR_TxConfirmationUsedOfTxIf2UpType',0,18,184,10,17
+	.word	177
+	.byte	4
+	.byte	'PduR_RmTransmitFctPtrType',0,18,197,10,9
+	.word	25015
+	.byte	10
+	.byte	'sPduR_DestApplicationManagerRomType',0,18,235,10,16,1,7
+	.byte	'RmGDestRomStartIdxOfDestApplicationManagerRom',0
+	.word	177
+	.byte	1,2,35,0,0,4
+	.byte	'PduR_DestApplicationManagerRomType',0,18,238,10,3
+	.word	26198
+	.byte	10
+	.byte	'sPduR_ExclusiveAreaRomType',0,18,241,10,16,8,7
+	.byte	'LockOfExclusiveAreaRom',0
+	.word	24966
+	.byte	4,2,35,0,7
+	.byte	'UnlockOfExclusiveAreaRom',0
+	.word	24966
+	.byte	4,2,35,4,0,4
+	.byte	'PduR_ExclusiveAreaRomType',0,18,245,10,3
+	.word	26340
+	.byte	3
+	.word	24958
+	.byte	10
+	.byte	'sPduR_GeneralPropertiesRomType',0,18,248,10,16,1,7
+	.byte	'hasIfRoutingOfGeneralPropertiesRom',0
+	.word	177
+	.byte	1,2,35,0,0,4
+	.byte	'PduR_GeneralPropertiesRomType',0,18,251,10,3
+	.word	26480
+	.byte	10
+	.byte	'sPduR_LockRomType',0,18,254,10,16,1,7
+	.byte	'ExclusiveAreaRomIdxOfLockRom',0
+	.word	177
+	.byte	1,2,35,0,0,4
+	.byte	'PduR_LockRomType',0,18,129,11,3
+	.word	26601
+	.byte	10
+	.byte	'sPduR_MmRomType',0,18,132,11,16,16,7
+	.byte	'MaskedBitsOfMmRom',0
+	.word	177
+	.byte	1,2,35,0,7
+	.byte	'UpIfRxIndicationFctPtrOfMmRom',0
+	.word	25053
+	.byte	4,2,35,4,7
+	.byte	'UpIfTxConfirmationFctPtrOfMmRom',0
+	.word	25086
+	.byte	4,2,35,8,7
+	.byte	'LoIfTransmitFctPtrOfMmRom',0
+	.word	25020
+	.byte	4,2,35,12,0,4
+	.byte	'PduR_MmRomType',0,18,138,11,3
+	.word	26690
+	.byte	3
+	.word	18869
+	.byte	3
+	.word	18738
+	.byte	3
+	.word	24997
+	.byte	10
+	.byte	'sPduR_PartitionIdentifiersType',0,18,141,11,16,4,7
+	.byte	'PartitionSNVOfPartitionIdentifiers',0
+	.word	316
+	.byte	4,2,35,0,0,4
+	.byte	'PduR_PartitionIdentifiersType',0,18,144,11,3
+	.word	26894
+	.byte	10
+	.byte	'sPduR_RmDestRomType',0,18,147,11,16,4,7
+	.byte	'PduLengthHandlingStrategyOfRmDestRom',0
+	.word	177
+	.byte	1,2,35,0,7
+	.byte	'RmGDestRomIdxOfRmDestRom',0
+	.word	177
+	.byte	1,2,35,1,7
+	.byte	'RmSrcRomIdxOfRmDestRom',0
+	.word	177
+	.byte	1,2,35,2,7
+	.byte	'RoutingTypeOfRmDestRom',0
+	.word	177
+	.byte	1,2,35,3,0,4
+	.byte	'PduR_RmDestRomType',0,18,153,11,3
+	.word	27015
+	.byte	10
+	.byte	'sPduR_RmGDestRomType',0,18,156,11,16,6,7
+	.byte	'DestHndOfRmGDestRom',0
+	.word	177
+	.byte	1,2,35,0,7
+	.byte	'DirectionOfRmGDestRom',0
+	.word	177
+	.byte	1,2,35,1,7
+	.byte	'LockRomIdxOfRmGDestRom',0
+	.word	177
+	.byte	1,2,35,2,7
+	.byte	'MaxPduLengthOfRmGDestRom',0
+	.word	177
+	.byte	1,2,35,3,7
+	.byte	'MmRomIdxOfRmGDestRom',0
+	.word	177
+	.byte	1,2,35,4,7
+	.byte	'RmDestRomIdxOfRmGDestRom',0
+	.word	177
+	.byte	1,2,35,5,0,4
+	.byte	'PduR_RmGDestRomType',0,18,164,11,3
+	.word	27214
+	.byte	10
+	.byte	'sPduR_RmSrcRomType',0,18,167,11,16,4,7
+	.byte	'LockRomIdxOfRmSrcRom',0
+	.word	177
+	.byte	1,2,35,0,7
+	.byte	'MmRomIdxOfRmSrcRom',0
+	.word	177
+	.byte	1,2,35,1,7
+	.byte	'RmDestRomStartIdxOfRmSrcRom',0
+	.word	177
+	.byte	1,2,35,2,7
+	.byte	'SrcHndOfRmSrcRom',0
+	.word	177
+	.byte	1,2,35,3,0,4
+	.byte	'PduR_RmSrcRomType',0,18,173,11,3
+	.word	27461
+	.byte	10
+	.byte	'sPduR_RxIf2DestType',0,18,176,11,16,1,7
+	.byte	'PduR_RxIf2DestNeverUsed',0
+	.word	177
+	.byte	1,2,35,0,0,4
+	.byte	'PduR_RxIf2DestType',0,18,179,11,3
+	.word	27635
+	.byte	10
+	.byte	'sPduR_SrcApplicationRomType',0,18,182,11,16,1,7
+	.byte	'PduR_SrcApplicationRomNeverUsed',0
+	.word	177
+	.byte	1,2,35,0,0,4
+	.byte	'PduR_SrcApplicationRomType',0,18,185,11,3
+	.word	27723
+	.byte	10
+	.byte	'sPduR_Tx2LoType',0,18,188,11,16,2,7
+	.byte	'RmSrcRomIdxOfTx2Lo',0
+	.word	177
+	.byte	1,2,35,0,7
+	.byte	'RmTransmitFctPtrIdxOfTx2Lo',0
+	.word	177
+	.byte	1,2,35,1,0,4
+	.byte	'PduR_Tx2LoType',0,18,192,11,3
+	.word	27835
+	.byte	10
+	.byte	'sPduR_TxIf2UpType',0,18,195,11,16,2,7
+	.byte	'TxConfirmationUsedOfTxIf2Up',0
+	.word	177
+	.byte	1,2,35,0,7
+	.byte	'RmGDestRomIdxOfTxIf2Up',0
+	.word	177
+	.byte	1,2,35,1,0,4
+	.byte	'PduR_TxIf2UpType',0,18,199,11,3
+	.word	27946
+	.byte	10
+	.byte	'PduR_InitializedRamStructSTag',0,18,211,11,16,1,7
+	.byte	'PduRSinglePartitionDummy',0
+	.word	177
+	.byte	1,2,35,0,0,4
+	.byte	'PduR_InitializedRamStructSType',0,18,214,11,3
+	.word	28066
+	.byte	10
+	.byte	'sPduR_PCPartitionConfigType',0,18,168,12,16,1,7
+	.byte	'PduR_PCPartitionConfigNeverUsed',0
+	.word	177
+	.byte	1,2,35,0,0,4
+	.byte	'PduR_PCPartitionConfigType',0,18,171,12,3
+	.word	28177
+	.byte	10
+	.byte	'sPduR_PCConfigType',0,18,186,12,16,1,7
+	.byte	'PduR_PCConfigNeverUsed',0
+	.word	177
+	.byte	1,2,35,0,0,4
+	.byte	'PduR_PCConfigType',0,18,189,12,3
+	.word	28289
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,0,0,3,15,0,73,19,0,0,4,22,0,3,8,58,15,59,15
+	.byte	57,15,73,19,0,0,5,36,0,3,8,11,15,62,15,0,0,6,19,1,58,15,59,15,57,15,11,15,0,0,7,13,0,3,8,73,19,11,15,56
+	.byte	9,0,0,8,4,1,58,15,59,15,57,15,11,15,0,0,9,40,0,3,8,28,13,0,0,10,19,1,3,8,58,15,59,15,57,15,11,15,0,0,11
+	.byte	1,1,11,15,73,19,0,0,12,33,0,47,15,0,0,13,53,0,73,19,0,0,14,13,0,3,8,11,15,73,19,13,15,12,15,56,9,0,0,15
+	.byte	23,1,58,15,59,15,57,15,11,15,0,0,16,23,1,3,8,58,15,59,15,57,15,11,15,0,0,17,13,0,11,15,73,19,13,15,12
+	.byte	15,56,9,0,0,18,21,1,54,15,39,12,0,0,19,5,0,73,19,0,0,20,38,0,73,19,0,0,21,21,0,54,15,39,12,0,0,22,21,1
+	.byte	73,19,54,15,39,12,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L7-.L6
+.L6:
+	.half	3
+	.word	.L9-.L8
+.L8:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation',0,0
+	.byte	'..\\BSW364\\PduR\\Implementation\\PduR_McQ.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Std_Types.h',0,1,0,0
+	.byte	'ComStack_Cfg.h',0,2,0,0
+	.byte	'ComStack_Types.h',0,1,0,0
+	.byte	'Det_Cfg.h',0,2,0,0
+	.byte	'Os_Types_Lcfg.h',0,2,0,0
+	.byte	'Os_Hal_OsInt.h',0,3,0,0
+	.byte	'Os_Hal_Os_Types.h',0,3,0,0
+	.byte	'Os_Types.h',0,3,0,0
+	.byte	'Os_Hal_Lcfg.h',0,2,0,0
+	.byte	'OsInt.h',0,3,0,0
+	.byte	'Can_DrvGeneralTypes.h',0,2,0,0
+	.byte	'Can_Cfg.h',0,2,0,0
+	.byte	'Can.h',0,4,0,0
+	.byte	'CanIf_Cfg.h',0,2,0,0
+	.byte	'CanIf_Types.h',0,5,0,0
+	.byte	'PduR_Lcfg.h',0,2,0,0,0
+.L9:
+.L7:
+
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	     1  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	     2   *  COPYRIGHT
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	     4   *  \verbatim
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	     5   *  Copyright (c) 2021 by Vector Informatik GmbH.                                                  All rights reserved.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	     6   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    10   *  \endverbatim
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    11   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    12   *  FILE DESCRIPTION
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    13   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    14   *         File:  PduR_McQ.c
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    15   *      Project:  Gw_AsrPduRCfg5
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    16   *       Module:  MICROSAR PDU Router
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    17   *    Generator:  Configurator 5
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    18   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    19   *  Description:  Vector implementation of AUTOSAR PDU Router
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    20   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    21   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    22  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    23   *  REVISION HISTORY
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    24   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    25   *  Refer to the module's header file.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    26   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    27   *  FILE VERSION
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    28   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    29   *  Refer to the module's header file.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    30   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    31  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    32  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    33   * LOCAL MISRA / PCLINT JUSTIFICATION
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    34   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    35  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    36  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    37  #define PDUR_MCQ_SOURCE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    38  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    39   * INCLUDES
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    40   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    41  #include "PduR.h"
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    42  #include "PduR_McQ.h"
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    43  #include "PduR_RmIf.h"
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    44  #include "SchM_PduR.h"
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    45  #if (PDUR_DEV_ERROR_REPORT == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    46  # include "Det.h"
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    47  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    48  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    49  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    50   *  LOCAL CONSTANT MACROS
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    51   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    52  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    53  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    54   *  LOCAL FUNCTION MACROS
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    55   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    56  #if !defined (PDUR_LOCAL_INLINE)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    57  # define PDUR_LOCAL_INLINE LOCAL_INLINE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    58  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    59  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    60  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    61   *  LOCAL DATA TYPES AND STRUCTURES
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    62   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    63  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    64  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    65   *  LOCAL DATA PROTOTYPES
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    66   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    67  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    68  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    69   *  GLOBAL DATA
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    70   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    71  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    72  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    73   *  LOCAL FUNCTION PROTOTYPES
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    74   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    75  #define PDUR_START_SEC_CODE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    76  #include "PduR_MemMap.h" /* PRQA S 5087 */   /* MD_MSR_MemMap */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    77  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    78  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    79  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    80  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    81   * PduR_McQ_GetMcQBufferArrayRamReadIdxSafe
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    82   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    83  /*! \brief      Gets the current read idx for the McQ buffer.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    84   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    85   *  \param[in]  mcqBufferRomIdx    id of the McQ Buffer
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    86   *  \param[in]  memIdx             memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    87   *  \return     the read index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    88   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    89   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    90  PDUR_LOCAL_INLINE FUNC(PduR_McQBufferArrayRamReadIdxOfMcQBufferRamType, PDUR_CODE) PduR_McQ_GetMcQBufferArrayRamReadIdxSafe(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    91  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    92  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    93  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    94  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    95   * PduR_McQ_GetMcQBufferArrayRamWriteIdxSafe
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    96   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    97  /*! \brief      Sets the current write idx for the McQ buffer.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    98   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    99   *  \param[in]  mcqBufferRomIdx    id of the McQ Buffer
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   100   *  \param[in]  memIdx             memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   101   *  \return     the write index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   102   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   103   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   104  PDUR_LOCAL_INLINE FUNC(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType, PDUR_CODE) PduR_McQ_GetMcQBufferArrayRamWriteIdxSafe(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   105  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   106  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   107  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   108  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   109   * PduR_McQ_GetMcQBufferArrayRamPendingReadIdxSafe
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   110   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   111  /*! \brief      Get the current Read idx for the pending McQ buffer.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   112   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   113   *  \param[in]  mcqBufferRomIdx    id of the McQ Buffer
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   114   *  \param[in]  memIdx             memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   115   *  \return     the read index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   116   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   117   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   118  PDUR_LOCAL_INLINE FUNC(PduR_McQBufferArrayRamPendingReadIdxOfMcQBufferRamType, PDUR_CODE) PduR_McQ_GetMcQBufferArrayRamPendingReadIdxSafe(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   119  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   120  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   121  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   122  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   123   * PduR_McQ_GetMcQBufferArrayRamPendingWriteIdxSafe
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   124   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   125  /*! \brief      Set the current Write idx for the pending McQ buffer.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   126   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   127   *  \param[in]  mcqBufferRomIdx    id of the McQ Buffer
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   128   *  \return     the read index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   129   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   130   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   131  PDUR_LOCAL_INLINE FUNC(PduR_McQBufferArrayRamPendingWriteIdxOfMcQBufferRamType, PDUR_CODE) PduR_McQ_GetMcQBufferArrayRamPendingWriteIdxSafe(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   132  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   133  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   134  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   135  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   136   * PduR_McQ_GetTxConfirmationSize
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   137   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   138  /*! \brief      This function returns the size of the TxConfirmation Handle which will be put in the McQ.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   139   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   140   *  \return     the size
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   141   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   142   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   143  PDUR_LOCAL_INLINE FUNC(uint8, PDUR_CODE) PduR_McQ_GetTxConfirmationSize(void);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   144  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   145  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   146  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   147  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   148   * PduR_McQ_GetDataHeaderSize
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   149   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   150  /*! \brief      This function returns the size of the header which is put in front of the Pdu in the McQ.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   151   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   152   *  \return     the header size
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   153   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   154   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   155  PDUR_LOCAL_INLINE FUNC(uint8, PDUR_CODE) PduR_McQ_GetDataHeaderSize(void);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   156  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   157  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   158  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   159  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   160   * PduR_McQ_WriteUnusedHeader
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   161   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   162  /*! \brief      This function write an unused value to the write position.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   163   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   164   *  \param[in]  writeIdx  Index to the position in the queue where the unused Entry shall be written
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   165   *  \param[in]  memIdx    memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   166   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   167   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   168  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_WriteUnusedHeader(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   169  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   170  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   171  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   172  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   173   * PduR_McQ_SerializeData
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   174   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   175  /*! \brief      This function serializes the parameter into the queue starting at the writeIdx position.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   176   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   177   *  \param[in]  writeIdx      Index to the position in the queue where the data shall be written
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   178   *  \param[in]  rmDestRomIdx  internal Handle Id of the Pdu to be serialized
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   179   *  \param[in]  data          pointer to the data to be serialized
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   180   *  \param[in]  memIdx        memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   181   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   182   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   183  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_SerializeData(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx, PduR_RmDestRomEndIdxOfRmSrcRomType rmDestRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   184                                                            CONSTP2CONST(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) data, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   185  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   186  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   187  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   188  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   189   * PduR_McQ_SerializeTxConfirmation
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   190   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   191  /*! \brief      This function serializes the tx Confirmation handle into the queue starting at the writeIdx position.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   192   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   193   *  \param[in]  writeIdx      Index to the position in the queue where the data shall be written
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   194   *  \param[in]  rmSrcRomIdx   internal Handle Id of the Pdu to be serialized
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   195   *  \param[in]  memIdx        memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   196   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   197   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   198  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_SerializeTxConfirmation(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx, PduR_RmSrcRomIdxOfRmDestRomType rmSrcRomIdx, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   199  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   200  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   201  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   202  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   203   * PduR_McQ_GetWriteIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   204   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   205  /*! \brief      Returns a valid write Idx if the data fits into the buffer
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   206   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   207   *  \param[in]  mcqBufferRomIdx      Id of the queue to be used
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   208   *  \param[out] writeIdx             The returned writeIdx. Only valid for successful return value.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   209   *  \param[in]  pduLengthWithHeader  length of the data to be put into the queue
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   210   *  \param[in]  memIdx               memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   211   *  \return     E_OK                Data fits into the buffer.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   212   *              E_NOT_OK            Data does not fit into the buffer.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   213   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   214   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   215  PDUR_LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_McQ_GetWriteIdx(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   216                                                                    P2VAR(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType, AUTOMATIC, PDUR_APPL_DATA) writeIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   217                                                                    PduLengthType pduLengthWithHeader,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   218                                                                    PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   219  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   220  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   221  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   222  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   223   * PduR_McQ_DeserializeData
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   224   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   225  /*! \brief       This function deserializes the data which can be found at the readIdx position.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   226   *  \details     -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   227   *  \param[in]   readIdx       Index to the position in the queue where the data shall be read
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   228   *  \param[out]  rmDestRomIdx  Internal Handle Id of the deserialized Pdu
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   229   *  \param[out]  data          Data of the deserialized Pdu
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   230   *  \param[in]   memIdx        memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   231   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   232   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   233  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_DeserializeData(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType readIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   234                                                              P2VAR(PduR_RmDestRomEndIdxOfRmSrcRomType, AUTOMATIC, PDUR_APPL_DATA) rmDestRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   235                                                              P2VAR(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) data,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   236                                                              PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   237  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   238  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   239  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   240  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   241   * PduR_McQ_UpdateWriteIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   242   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   243  /*! \brief       Update the write pointer after a successful write operation.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   244   *  \details -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   245   *  \param[in]   mcQBufferRomIdx              Id of the queue to be used
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   246   *  \param[in]   memIdx                       memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   247   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   248   *  \context     TASK|ISR1|ISR2
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   249   *  \reentrant   TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   250   *  \synchronous TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   251   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   252  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_UpdateWriteIdx(PduR_McQBufferRomIdxOfSrcApplicationRomType mcQBufferRomIdx, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   253  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   254  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   255  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   256  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   257   * PduR_McQ_ReadTxConfirmation
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   258   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   259  /*! \brief       This function deserializes the tx confirmation handle which can be found at the readIdx position.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   260   *  \details     -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   261   *  \param[in]   mcQBufferRomIdx        Id of the queue to be used
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   262   *  \param[in]   readIdx       Index to the position in the queue where the data shall be read
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   263   *  \param[in]   memIdx        memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   264   *  \return      the RmSrcRomIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   265   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   266   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   267  PDUR_LOCAL_INLINE FUNC(PduR_RmSrcRomIdxOfRmDestRomType, PDUR_CODE) PduR_McQ_ReadTxConfirmation(PduR_McQBufferRomIdxOfSrcApplicationRomType mcQBufferRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   268                                                                                            PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType readIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   269                                                                                            PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   270  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   271  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   272  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   273  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   274   * PduR_McQ_ReadData
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   275   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   276  /*! \brief       Read data from the multicore queue.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   277   *  \details -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   278   *  \param[in]   mcQBufferRomIdx          Id of the queue to be used
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   279   *  \param[in]   readIdx                  Index to the position in the queue where the data shall be read
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   280   *  \param[out]  rmDestRomIdx             Index to the destination Pdu to be queued
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   281   *  \param[out]  data                     pointer to the data
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   282   *  \param[in]   memIdx                   memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   283   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   284   *  \context     TASK
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   285   *  \reentrant   TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   286   *  \synchronous TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   287   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   288  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_ReadData(PduR_McQBufferRomIdxOfSrcApplicationRomType mcQBufferRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   289                                                       PduR_McQBufferArrayRamReadIdxOfMcQBufferRamType readIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   290                                                       P2VAR(PduR_RmDestRomEndIdxOfRmSrcRomType, AUTOMATIC, PDUR_APPL_DATA) rmDestRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   291                                                       P2VAR(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) data,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   292                                                       PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   293  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   294  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   295  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   296  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   297   * PduR_McQ_GetReadIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   298   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   299  /*! \brief       Get a valid readIdx.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   300   *  \details -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   301   *  \param[in]   mcqBufferRomIdx          Id of the queue to be used
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   302   *  \param[out]  readIdx                  the valid readIdx.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   303   *  \param[in]   memIdx                   memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   304   *  \return      E_OK                     Some data is available to be read.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   305   *               E_NOT_OK                 No data is available to be read.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   306   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   307   *  \context     TASK
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   308   *  \reentrant   TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   309   *  \synchronous TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   310   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   311  PDUR_LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_McQ_GetReadIdx(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   312                                                                   P2VAR(PduR_McQBufferArrayRamReadIdxOfMcQBufferRamType, AUTOMATIC, PDUR_APPL_DATA) readIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   313                                                                   PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   314  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   315  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   316  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   317  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   318   * PduR_McQ_UpdateReadIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   319   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   320  /*! \brief       Update the read pointer after a successful read operation.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   321   *  \details -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   322   *  \param[in]   mcQBufferRomIdx        Id of the queue to be used
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   323   *  \param[in]   memIdx                 memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   324   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   325   *  \context     TASK|ISR1|ISR2
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   326   *  \reentrant   TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   327   *  \synchronous TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   328   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   329  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_UpdateReadIdx(PduR_McQBufferRomIdxOfSrcApplicationRomType mcQBufferRomIdx, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   330  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   331  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   332  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   333  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   334   * PduR_McQBufferArrayRamWrite
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   335   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   336  /*! \brief       Write the provided byte into the McQBufferArrayRam
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   337   *  \details -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   338   *  \param[in]   writeIdx               Index of McQBufferArrayRam
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   339   *  \param[in]   byteToBeWritten        Byte to be written into the McQBufferArrayRam
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   340   *  \param[in]   memIdx                 memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   341   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   342   *  \context     TASK|ISR1|ISR2
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   343   *  \reentrant   TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   344   *  \synchronous TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   345   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   346  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQBufferArrayRamWrite(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx, uint8 byteToBeWritten, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   347  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   348  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   349  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   350  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   351   * PduR_SetMcQBufferArrayRamPendingReadIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   352   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   353  /*! \brief       Set the provided readIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   354   *  \details -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   355   *  \param[in]   mcQBufferRomIdx         Id of the queue to be used
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   356   *  \param[in]   readIdx                 Value of the read index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   357   *  \param[in]   memIdx                  memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   358   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   359   *  \context     TASK|ISR1|ISR2
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   360   *  \reentrant   TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   361   *  \synchronous TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   362   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   363  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_SetMcQBufferArrayRamPendingReadIdx(PduR_McQBufferRomIterType mcQBufferRomIdx, PduR_McQBufferArrayRamPendingReadIdxOfMcQBufferRamType readIdx, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   364  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   365  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   366  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   367   *  LOCAL FUNCTIONS
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   368   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   369  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   370  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   371   * PduR_McQ_Init
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   372   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   373  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   374   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   375   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   376   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   377   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   378  FUNC(void, PDUR_CODE) PduR_McQ_Init(PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   379  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   380    PduR_McQBufferRomIterType mcqBufferRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   381    for(mcqBufferRomIdx = 0u; mcqBufferRomIdx < PduR_GetSizeOfMcQBufferRom(memIdx); mcqBufferRomIdx++)  /* FETA_PDUR_01 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   382    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   383      PduR_McQBufferArrayRamStartIdxOfMcQBufferRomType startIdxOfBuffer = PduR_GetMcQBufferArrayRamStartIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   384  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   385      PduR_SetMcQBufferArrayRamPendingWriteIdxOfMcQBufferRam(mcqBufferRomIdx, startIdxOfBuffer, memIdx);  /* SBSW_PDUR_CSL02 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   386      PduR_SetMcQBufferArrayRamPendingReadIdx(mcqBufferRomIdx, startIdxOfBuffer, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   387      PduR_SetMcQBufferArrayRamReadIdxOfMcQBufferRam(mcqBufferRomIdx, startIdxOfBuffer, memIdx);  /* SBSW_PDUR_CSL02 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   388      PduR_SetMcQBufferArrayRamWriteIdxOfMcQBufferRam(mcqBufferRomIdx, startIdxOfBuffer, memIdx); /* SBSW_PDUR_CSL02 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   389    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   390  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   391  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   392  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   393  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   394  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   395   * PduR_McQ_WriteTxConfirmation
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   396   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   397  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   398   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   399   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   400   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   401   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   402   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   403   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   404   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   405  FUNC(Std_ReturnType, PDUR_CODE) PduR_McQ_WriteTxConfirmation(PduR_McQBufferRomIdxOfSrcApplicationRomType mcQBufferRomIdx, PduR_RmSrcRomIdxOfRmDestRomType rmSrcRomIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   406  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   407    Std_ReturnType retVal = E_NOT_OK;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   408    PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx = PduR_GetMcQBufferArrayRamStartIdxOfMcQBufferRom(mcQBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   409  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   410    SchM_Enter_PduR_PDUR_EXCLUSIVE_AREA_0();
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   411    /* #10 If confirmation fits into the multicore queue */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   412    if(PduR_McQ_GetWriteIdx(mcQBufferRomIdx, &writeIdx, PduR_McQ_GetTxConfirmationSize(), memIdx) == E_OK)        /* SBSW_PDUR_IDX_PARAM_INTERNAL_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   413    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   414      /* #20 Serialize tx Confirmation handle into the queue starting at the writeIdx position */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   415      PduR_McQ_SerializeTxConfirmation(writeIdx, rmSrcRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   416  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   417      /* #30 Update writeIdx and return E_OK */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   418      PduR_McQ_UpdateWriteIdx(mcQBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   419      retVal = E_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   420    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   421    /* #40 Otherwise return E_NOT_OK */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   422    else
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   423    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   424      retVal = E_NOT_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   425    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   426    SchM_Exit_PduR_PDUR_EXCLUSIVE_AREA_0();
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   427    return retVal;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   428  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   429  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   430  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   431  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   432  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   433   * PduR_McQ_WriteData
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   434   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   435  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   436   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   437   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   438   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   439   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   440   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   441   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   442   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   443   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   444  FUNC(Std_ReturnType, PDUR_CODE) PduR_McQ_WriteData(PduR_McQBufferRomIdxOfSrcApplicationRomType mcQBufferRomIdx, PduR_RmDestRomEndIdxOfRmSrcRomType rmDestRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   445                                                     CONSTP2CONST(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) data, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   446  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   447    uint8 errorId = PDUR_E_NO_ERROR;      /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   448    Std_ReturnType retVal = E_NOT_OK;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   449    PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx = PduR_GetMcQBufferArrayRamStartIdxOfMcQBufferRom(mcQBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   450  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   451    /* ----- Development Error Checks ------------------------------------- */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   452    /* #10 Check input parameters */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   453  # if (PDUR_DEV_ERROR_DETECT == STD_ON)  /* COV_PDUR_VAR_DEV_ERROR_DETECT */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   454    if(data == NULL_PTR)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   455    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   456      errorId = PDUR_E_PARAM_POINTER;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   457    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   458    else if(data->SduDataPtr == NULL_PTR)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   459    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   460      errorId = PDUR_E_PARAM_POINTER;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   461    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   462    /* #20 If no error occurred */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   463    else
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   464  # endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   465    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   466      SchM_Enter_PduR_PDUR_EXCLUSIVE_AREA_0();
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   467      /* #30 If data fits into the multicore queue, serialize data, update write index and return E_OK */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   468      if(PduR_McQ_GetWriteIdx(mcQBufferRomIdx, &writeIdx, data->SduLength + PduR_McQ_GetDataHeaderSize(), memIdx) == E_OK)        /* SBSW_PDUR_IDX_PARAM_INTERNAL_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   469      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   470        PduR_McQ_SerializeData(writeIdx, rmDestRomIdx, data, memIdx);     /* SBSW_PDUR_FCT_CALL_P2CONST */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   471        PduR_McQ_UpdateWriteIdx(mcQBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   472        retVal = E_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   473      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   474      /* #40 Otherwise return E_NOT_OK */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   475      else
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   476      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   477        retVal = E_NOT_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   478      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   479      SchM_Exit_PduR_PDUR_EXCLUSIVE_AREA_0();
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   480    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   481  /* ----- Development Error Report --------------------------------------- */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   482  # if (PDUR_DEV_ERROR_REPORT == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   483    /* #50 Otherwise, report DET error */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   484    if(errorId != PDUR_E_NO_ERROR)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   485    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   486      PduR_Det_ReportError(PDUR_MCQ_WRITE_DATA, errorId);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   487    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   488  # endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   489    PDUR_DUMMY_STATEMENT(errorId);        /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   490  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   491    return retVal;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   492  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   493  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   494  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   495  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   496  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   497   * PduR_McQ_GetWriteIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   498   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   499  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   500   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   501   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   502   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   503   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   504   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   505   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   506   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   507   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   508   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   509   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   510   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   511   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   512   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   513   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   514   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   515  PDUR_LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_McQ_GetWriteIdx(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   516                                                                    P2VAR(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType, AUTOMATIC, PDUR_APPL_DATA) writeIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   517                                                                    PduLengthType pduLengthWithHeader,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   518                                                                    PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   519  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   520    Std_ReturnType retVal = E_NOT_OK;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   521  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   522    PduR_McQBufferArrayRamReadIdxOfMcQBufferRamType readIdx = PduR_McQ_GetMcQBufferArrayRamReadIdxSafe(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   523    PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType localWriteIdx = PduR_McQ_GetMcQBufferArrayRamWriteIdxSafe(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   524  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   525    PduR_McQBufferArrayRamStartIdxOfMcQBufferRomType startIdxOfBuffer = PduR_GetMcQBufferArrayRamStartIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   526    PduR_McQBufferArrayRamEndIdxOfMcQBufferRomType endIdxOfBuffer = PduR_GetMcQBufferArrayRamEndIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx) - 1u;  /* ComStackLibs EndIdx is actually the first out of bounds index */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   527  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   528    /* #10 If buffer is full, return E_NOT_OK */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   529    if(((localWriteIdx + 1u) == readIdx) || ((readIdx == startIdxOfBuffer) && (localWriteIdx == endIdxOfBuffer)))
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   530    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   531      /* Buffer is full */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   532      retVal = E_NOT_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   533    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   534    /* #20 else if write index < read index */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   535    else if(localWriteIdx < readIdx)      /* write is possible until read Idx is reached. Could be too small though */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   536    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   537      PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType linearBufferSize = readIdx - localWriteIdx - 1u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   538      /* #30 If multicore queue has enough space */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   539      if(linearBufferSize >= pduLengthWithHeader)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   540      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   541        *writeIdx = localWriteIdx;        /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   542        /* #40 Set write index to internal write index and increase pending-write-index to next slot */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   543        PduR_SetMcQBufferArrayRamPendingWriteIdxOfMcQBufferRam(mcqBufferRomIdx, localWriteIdx + pduLengthWithHeader, memIdx);     /* SBSW_PDUR_IDX_PARAM_INTERNAL_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   544        retVal = E_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   545      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   546      /* #50 Otherwise, return E_NOT_OK */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   547      else
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   548      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   549        retVal = E_NOT_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   550      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   551    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   552    /* #60 else */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   553    else
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   554    {     /* readIdx < localWriteIdx OR readIdx == localWriteIdx */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   555      PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType linearBufferSizeAtEnd;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   556      PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType linearBufferSizeAtFront;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   557  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   558      linearBufferSizeAtEnd = (localWriteIdx == endIdxOfBuffer) ? 0u : (endIdxOfBuffer - localWriteIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   559      linearBufferSizeAtFront = (readIdx == startIdxOfBuffer) ? 0u : (readIdx - startIdxOfBuffer - 1u);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   560      /* #70 If there is enough space at the end of the queue, set write index to internal write index and increase pending-write-index to next slot and return E_OK */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   561      if(linearBufferSizeAtEnd >= pduLengthWithHeader)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   562      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   563        *writeIdx = localWriteIdx;        /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   564        /* Update write Idx */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   565        PduR_SetMcQBufferArrayRamPendingWriteIdxOfMcQBufferRam(mcqBufferRomIdx, localWriteIdx + pduLengthWithHeader, memIdx);     /* SBSW_PDUR_IDX_PARAM_INTERNAL_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   566        retVal = E_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   567      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   568      /* #80 Otherwise, if there is enough space at the beginning of the queue */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   569      else if(linearBufferSizeAtFront >= pduLengthWithHeader)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   570      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   571        /* #90 Mark remaining bytes at end as unused */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   572        PduR_McQ_WriteUnusedHeader(localWriteIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   573  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   574        /* #100 Set write index to start index and increase pending-write-index to next slot */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   575        *writeIdx = startIdxOfBuffer;     /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   576  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   577        /* Update write Idx */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   578        PduR_SetMcQBufferArrayRamPendingWriteIdxOfMcQBufferRam(mcqBufferRomIdx, (PduR_McQBufferArrayRamPendingWriteIdxOfMcQBufferRamType) startIdxOfBuffer + pduLengthWithHeader, memIdx);        /* SBSW_PDUR_IDX_PARAM_INTERNAL_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   579  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   580        /* #110 Return E_OK */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   581        retVal = E_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   582      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   583      /* #120 Otherwise, return E_NOT_OK */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   584      else
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   585      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   586        /* neither fits at the end nor the beginning: do nothing */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   587        retVal = E_NOT_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   588      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   589    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   590  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   591    return retVal;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   592  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   593  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   594  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   595  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   596  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   597   * PduR_McQ_GetDataHeaderSize
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   598   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   599  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   600   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   601   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   602   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   603   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   604  PDUR_LOCAL_INLINE FUNC(uint8, PDUR_CODE) PduR_McQ_GetDataHeaderSize(void)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   605  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   606    return PDUR_MCQ_SIZE_OF_HEADER + sizeof(PduR_RmDestRomEndIdxOfRmSrcRomType) + sizeof(PduLengthType);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   607  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   608  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   609  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   610  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   611  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   612   * PduR_McQ_GetTxConfirmationSize
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   613   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   614  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   615   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   616   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   617   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   618   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   619  PDUR_LOCAL_INLINE FUNC(uint8, PDUR_CODE) PduR_McQ_GetTxConfirmationSize(void)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   620  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   621    return PDUR_MCQ_SIZE_OF_HEADER + sizeof(PduR_RmSrcRomIdxOfRmDestRomType);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   622  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   623  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   624  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   625  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   626  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   627   * PduR_McQ_WriteUnusedHeader
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   628   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   629  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   630   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   631   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   632   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   633   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   634  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_WriteUnusedHeader(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   635  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   636    PduR_McQBufferArrayRamWrite(writeIdx, PDUR_MCQ_UNUSED_HEADER, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   637  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   638  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   639  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   640  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   641  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   642   * PduR_McQ_SerializeData
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   643   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   644  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   645   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   646   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   647   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   648   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   649   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   650   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   651   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   652  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_SerializeData(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx, PduR_RmDestRomEndIdxOfRmSrcRomType rmDestRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   653                                                            CONSTP2CONST(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) data, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   654  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   655    PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdxIntern = writeIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   656    /* #10 Set Header Value */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   657    PduR_McQBufferArrayRamWrite(writeIdxIntern, PDUR_MCQ_DATA_HEADER, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   658    writeIdxIntern++;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   659    /* #20 Serialize rmDestRomIdx */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   660    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   661      uint8 rmDestRomIterator = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   662      PduR_RmDestRomEndIdxOfRmSrcRomType tempRmDestRomIdx = rmDestRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   663      uint8 shiftOperand = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   664      for(; rmDestRomIterator < sizeof(PduR_RmDestRomEndIdxOfRmSrcRomType); rmDestRomIterator++)  /* FETA_PDUR_04 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   665      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   666        tempRmDestRomIdx = tempRmDestRomIdx >> shiftOperand;      /* PRQA S 2985 */ /* MD_PduR_2985 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   667        PduR_McQBufferArrayRamWrite(writeIdxIntern, (uint8) tempRmDestRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   668        shiftOperand = 8u;        /* PRQA S 2983 */ /* MD_PduR_2983 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   669        writeIdxIntern++;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   670      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   671    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   672    /* #30 Serialize PduLengthType */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   673    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   674      uint8 pduLengthTypeIterator = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   675      PduLengthType tempPduLength = data->SduLength;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   676      for(; pduLengthTypeIterator < sizeof(PduLengthType); pduLengthTypeIterator++)  /* FETA_PDUR_04 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   677      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   678        PduR_McQBufferArrayRamWrite(writeIdxIntern, (uint8) tempPduLength, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   679        tempPduLength = tempPduLength >> 8u;      /* PRQA S 2983 */ /* MD_PduR_2983 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   680        writeIdxIntern++;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   681      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   682    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   683    /* #40 Serialize Payload */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   684    if((writeIdxIntern + data->SduLength) < PduR_GetSizeOfMcQBufferArrayRam(memIdx))    /* COV_PDUR_VAR_FATAL_ERROR */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   685    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   686      VStdMemCpyRamToRam(PduR_GetAddrMcQBufferArrayRam(writeIdxIntern, memIdx), data->SduDataPtr, data->SduLength);       /* SBSW_PDUR_MCQ_RAMARRAY_RTCHECK_FCTCALL */ /* PRQA S 0315 */ /* MD_MSR_VStdLibCopy */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   687    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   688    else
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   689    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   690      PduR_Det_ReportError(PDUR_MCQ_WRITE_DATA, PDUR_E_FATAL);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   691    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   692  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   693  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   694  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   695  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   696  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   697   * PduR_McQ_SerializeTxConfirmation
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   698   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   699  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   700   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   701   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   702   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   703   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   704   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   705  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_SerializeTxConfirmation(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx, PduR_RmSrcRomIdxOfRmDestRomType rmSrcRomIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   706  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   707    PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdxIntern = writeIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   708    /* #10 Set Header Value */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   709    PduR_McQBufferArrayRamWrite(writeIdxIntern, PDUR_MCQ_TXCONFIRMATION_HEADER, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   710    writeIdxIntern++;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   711    /* #20 Serialize rmSrcRomIdx */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   712    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   713      uint8 rmSrcRomIterator = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   714      uint8 shiftOperand = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   715      PduR_RmSrcRomIdxOfRmDestRomType tempRmSrcRomIdx = rmSrcRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   716      for(; rmSrcRomIterator < sizeof(PduR_RmSrcRomIdxOfRmDestRomType); rmSrcRomIterator++)  /* FETA_PDUR_04 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   717      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   718        tempRmSrcRomIdx = tempRmSrcRomIdx >> shiftOperand;        /* PRQA S 2985 */ /* MD_PduR_2985 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   719        PduR_McQBufferArrayRamWrite(writeIdxIntern, (uint8) tempRmSrcRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   720        shiftOperand = 8u;        /* PRQA S 2983 */ /* MD_PduR_2983 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   721        writeIdxIntern++; /* PRQA S 2983 */ /* MD_PduR_2983 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   722      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   723    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   724  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   725  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   726  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   727  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   728  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   729   * PduR_McQ_DeserializeData
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   730   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   731  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   732   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   733   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   734   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   735   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   736   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   737   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   738  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_DeserializeData(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType readIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   739                                                              P2VAR(PduR_RmDestRomEndIdxOfRmSrcRomType, AUTOMATIC, PDUR_APPL_DATA) rmDestRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   740                                                              P2VAR(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) data,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   741                                                              PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   742  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   743    PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType readIdxIntern = readIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   744    /* skip Header */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   745    readIdxIntern += PDUR_MCQ_SIZE_OF_HEADER;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   746    /* #10 Deserialize rmDestRomIdx */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   747    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   748      uint8 rmDestRomIterator = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   749      PduR_RmDestRomEndIdxOfRmSrcRomType tempRmDestRomIdx = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   750      uint8 offset = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   751      for(; rmDestRomIterator < sizeof(PduR_RmDestRomEndIdxOfRmSrcRomType); rmDestRomIterator++)  /* FETA_PDUR_04 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   752      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   753        tempRmDestRomIdx = tempRmDestRomIdx | (((PduR_RmDestRomEndIdxOfRmSrcRomType) PduR_GetMcQBufferArrayRam(readIdxIntern, memIdx)) << offset);        /* PRQA S 2985 */ /* MD_PduR_2985 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   754        offset += 8u;     /* PRQA S 2983 */ /* MD_PduR_2983 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   755        readIdxIntern++;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   756      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   757      *rmDestRomIdx = tempRmDestRomIdx;   /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   758    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   759    /* #20 Deserialize PduLengthType */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   760    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   761      uint8 pduLengthTypeIterator = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   762      PduLengthType tempPduLength = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   763      uint8 offset = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   764      for(; pduLengthTypeIterator < sizeof(PduLengthType); pduLengthTypeIterator++)  /* FETA_PDUR_04 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   765      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   766        tempPduLength = tempPduLength | (((PduLengthType) PduR_GetMcQBufferArrayRam(readIdxIntern, memIdx)) << offset);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   767        offset += 8u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   768        readIdxIntern++;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   769      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   770      data->SduLength = tempPduLength;    /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   771    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   772    /* #30 Return pointer point to payload */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   773    data->SduDataPtr = PduR_GetAddrMcQBufferArrayRam(readIdxIntern, memIdx);      /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   774  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   775  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   776  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   777  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   778  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   779   * PduR_McQ_ReadTxConfirmation
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   780   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   781  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   782   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   783   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   784   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   785   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   786   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   787  PDUR_LOCAL_INLINE FUNC(PduR_RmSrcRomIdxOfRmDestRomType, PDUR_CODE) PduR_McQ_ReadTxConfirmation(PduR_McQBufferRomIdxOfSrcApplicationRomType mcQBufferRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   788                                                                                            PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType readIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   789                                                                                            PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   790  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   791    PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType readIdxIntern = readIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   792    /* skip Header */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   793    readIdxIntern += PDUR_MCQ_SIZE_OF_HEADER;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   794    /* #10 Deserialize rmSrcRomIdx */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   795    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   796      uint8 rmSrcRomIterator = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   797      PduR_RmSrcRomIdxOfRmDestRomType tempRmSrcRomIdx = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   798      uint8 offset = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   799      for(; rmSrcRomIterator < sizeof(PduR_RmSrcRomIdxOfRmDestRomType); rmSrcRomIterator++)  /* FETA_PDUR_04 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   800      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   801        tempRmSrcRomIdx = tempRmSrcRomIdx | (((PduR_RmSrcRomIdxOfRmDestRomType) PduR_GetMcQBufferArrayRam(readIdxIntern, memIdx)) << offset);     /* PRQA S 2985 */ /* MD_PduR_2985 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   802        offset += 8u;     /* PRQA S 2983 */ /* MD_PduR_2983 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   803        readIdxIntern++;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   804      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   805  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   806      /* #20 Set pending-read-idx to next element to be read */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   807      PduR_SetMcQBufferArrayRamPendingReadIdx(mcQBufferRomIdx, readIdxIntern, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   808      return tempRmSrcRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   809    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   810  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   811  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   812  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   813  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   814  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   815   * PduR_McQ_ReadData
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   816   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   817  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   818   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   819   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   820   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   821   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   822   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   823  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_ReadData(PduR_McQBufferRomIdxOfSrcApplicationRomType mcQBufferRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   824                                                       PduR_McQBufferArrayRamReadIdxOfMcQBufferRamType readIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   825                                                       P2VAR(PduR_RmDestRomEndIdxOfRmSrcRomType, AUTOMATIC, PDUR_APPL_DATA) rmDestRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   826                                                       P2VAR(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) data,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   827                                                       PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   828  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   829    /* #10 Deserialize Data */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   830    PduR_McQ_DeserializeData(readIdx, rmDestRomIdx, data, memIdx);        /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   831    /* #20 Set the returned ReadIdx as pending ReadIdx: the readIdx will be set to this value if the read is finished */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   832    PduR_SetMcQBufferArrayRamPendingReadIdx(mcQBufferRomIdx, readIdx + PduR_McQ_GetDataHeaderSize() + data->SduLength, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   833  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   834  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   835  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   836  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   837  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   838   * PduR_McQ_GetReadIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   839   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   840  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   841   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   842   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   843   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   844   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   845   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   846  PDUR_LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_McQ_GetReadIdx(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   847                                                                   P2VAR(PduR_McQBufferArrayRamReadIdxOfMcQBufferRamType, AUTOMATIC, PDUR_APPL_DATA) readIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   848                                                                   PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   849  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   850    Std_ReturnType retVal = E_NOT_OK;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   851  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   852    PduR_McQBufferArrayRamReadIdxOfMcQBufferRamType localReadIdx = PduR_McQ_GetMcQBufferArrayRamReadIdxSafe(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   853    PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx = PduR_McQ_GetMcQBufferArrayRamWriteIdxSafe(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   854  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   855    /* #10 If multicore Queue is empty, return E_NOT_OK */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   856    if(localReadIdx == writeIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   857    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   858      retVal = E_NOT_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   859    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   860    /* #20 If the current element is marked with the unused pattern, return the start index of the queue, otherwise return the stored read index */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   861    else
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   862    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   863      if(PduR_GetMcQBufferArrayRam(localReadIdx, memIdx) == PDUR_MCQ_UNUSED_HEADER)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   864      {   /* adjust localReadIdx if the end of the buffer is not used */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   865        localReadIdx = PduR_GetMcQBufferArrayRamStartIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   866      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   867      *readIdx = localReadIdx;    /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   868      retVal = E_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   869    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   870  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   871    return retVal;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   872  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   873  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   874  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   875  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   876  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   877   * PduR_McQ_UpdateReadIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   878   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   879  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   880   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   881   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   882   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   883   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   884  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_UpdateReadIdx(PduR_McQBufferRomIdxOfSrcApplicationRomType mcQBufferRomIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   885  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   886    PduR_SetMcQBufferArrayRamReadIdxOfMcQBufferRam(mcQBufferRomIdx, PduR_McQ_GetMcQBufferArrayRamPendingReadIdxSafe(mcQBufferRomIdx, memIdx), memIdx);      /* SBSW_PDUR_IDX_PARAM_INTERNAL_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   887  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   888  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   889  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   890  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   891  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   892   * PduR_McQBufferArrayRamWrite
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   893   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   894  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   895   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   896   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   897   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   898   */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   899  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQBufferArrayRamWrite(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx, uint8 byteToBeWritten, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   900  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   901    if(writeIdx < PduR_GetSizeOfMcQBufferArrayRam(memIdx))      /* COV_PDUR_VAR_FATAL_ERROR */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   902    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   903      PduR_SetMcQBufferArrayRam(writeIdx, byteToBeWritten, memIdx);       /* SBSW_PDUR_MCQ_RAMARRAY_RTCHECK */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   904    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   905    else
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   906    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   907      PduR_Det_ReportError(PDUR_MCQ_WRITE_DATA, PDUR_E_FATAL);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   908    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   909  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   910  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   911  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   912  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   913  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   914   * PduR_McQ_UpdateWriteIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   915   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   916  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   917   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   918   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   919   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   920   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   921  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_UpdateWriteIdx(PduR_McQBufferRomIdxOfSrcApplicationRomType mcQBufferRomIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   922  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   923    PduR_SetMcQBufferArrayRamWriteIdxOfMcQBufferRam(mcQBufferRomIdx, PduR_McQ_GetMcQBufferArrayRamPendingWriteIdxSafe(mcQBufferRomIdx, memIdx), memIdx);    /* SBSW_PDUR_IDX_PARAM_INTERNAL_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   924  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   925  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   926  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   927  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   928  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   929   * PduR_SetMcQBufferArrayRamPendingReadIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   930   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   931  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   932   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   933   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   934   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   935   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   936  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_SetMcQBufferArrayRamPendingReadIdx(PduR_McQBufferRomIterType mcQBufferRomIdx, PduR_McQBufferArrayRamPendingReadIdxOfMcQBufferRamType readIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   937  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   938    if(readIdx < PduR_GetMcQBufferArrayRamEndIdxOfMcQBufferRom(mcQBufferRomIdx, memIdx))  /* COV_PDUR_VAR_FATAL_ERROR */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   939    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   940      PduR_SetMcQBufferArrayRamPendingReadIdxOfMcQBufferRam(mcQBufferRomIdx, readIdx, memIdx);    /* SBSW_PDUR_IDX_PARAM_INTERNAL_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   941    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   942    else
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   943    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   944      PduR_Det_ReportError(PDUR_MCQ_PENDING_READ_IDX, PDUR_E_FATAL);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   945    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   946  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   947  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   948  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   949  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   950  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   951   * PduR_McQ_MainFunction
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   952   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   953  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   954   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   955   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   956   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   957   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   958   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   959   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   960   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   961   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   962   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   963  /* PRQA S 6050 1 */ /* MD_MSR_STCAL */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   964  FUNC(void, PDUR_CODE) PduR_McQ_MainFunction(PduR_DestApplicationManagerRomIterType destApplicationManagerRomIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   965  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   966    PduR_SrcApplicationRomEndIdxOfDestApplicationManagerRomType srcApplicationRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   967  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   968    /* #10 For each configured MultiCore Queues */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   969    for(srcApplicationRomIdx = PduR_GetSrcApplicationRomStartIdxOfDestApplicationManagerRom(destApplicationManagerRomIdx); srcApplicationRomIdx < PduR_GetSrcApplicationRomEndIdxOfDestApplicationManagerRom(destApplicationManagerRomIdx); srcApplicationRomIdx++)  /* FETA_PDUR_01 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   970    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   971      if(PduR_IsMcQBufferRomUsedOfSrcApplicationRom(srcApplicationRomIdx))
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   972      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   973        PduR_McQBufferArrayRamReadIdxOfMcQBufferRamType readIdx = 0;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   974        PduR_McQBufferRomIdxOfSrcApplicationRomType mcQBufferRomIdx = PduR_GetMcQBufferRomIdxOfSrcApplicationRom(srcApplicationRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   975        PduR_McQBufferRomPartitionIdxOfSrcApplicationRomType memIdx = PduR_GetMcQBufferRomPartitionIdxOfSrcApplicationRom(srcApplicationRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   976  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   977        /* Max. number of bytes to be read before stalling to next main function call */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   978        PduR_McQBufferArrayRamLengthOfMcQBufferRomType readThreshold = PduR_GetMcQBufferArrayRamLengthOfMcQBufferRom(mcQBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   979        PduLengthType numberOfReadBytes = 0;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   980  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   981        /* #20 While MultiCore Queue has stored elements */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   982        while(PduR_McQ_GetReadIdx(mcQBufferRomIdx, &readIdx, memIdx) == E_OK)     /* SBSW_PDUR_STACK_VARIABLE */ /* FETA_PDUR_02 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   983        {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   984          switch (PduR_GetMcQBufferArrayRam(readIdx, memIdx))
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   985          {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   986              /* #30 If element is type of data, read Pdu, dispatch If-Pdu to destination and update read Index */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   987            case PDUR_MCQ_DATA_HEADER:
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   988            {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   989              PduR_RmDestRomEndIdxOfRmSrcRomType rmDestRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   990              PduInfoType info;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   991  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   992              PduR_McQ_ReadData(mcQBufferRomIdx, readIdx, &rmDestRomIdx, &info, memIdx);  /* SBSW_PDUR_STACK_VARIABLE */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   993              (void) PduR_RmIf_ProcessDestPdu(rmDestRomIdx, &info);    /* SBSW_PDUR_API_CALL_FORWARDING_ID_AND_PTR */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   994              PduR_McQ_UpdateReadIdx(mcQBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   995  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   996              numberOfReadBytes += ((PduLengthType) PduR_McQ_GetDataHeaderSize()) + info.SduLength;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   997              break;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   998            }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   999              /* #40 If element is type of TxConfirmation, read confirmation from Queue, update read Index and call upper layer confirmation */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1000            case PDUR_MCQ_TXCONFIRMATION_HEADER:
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1001            {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1002              PduR_RmSrcRomIdxOfRmDestRomType rmSrcRomIdx = PduR_McQ_ReadTxConfirmation(mcQBufferRomIdx, readIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1003              PduR_McQ_UpdateReadIdx(mcQBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1004              PduR_GetUpIfTxConfirmationFctPtrOfMmRom(PduR_GetMmRomIdxOfRmSrcRom(rmSrcRomIdx)) (PduR_GetSrcHndOfRmSrcRom(rmSrcRomIdx));   /* SBSW_PDUR_API_CALL_FORWARDING_ID_ONLY */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1005  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1006              numberOfReadBytes += ((PduLengthType) PduR_McQ_GetTxConfirmationSize());
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1007              break;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1008            }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1009              /* #50 Report an error otherwise */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1010            default:     /* COV_PDUR_MISRA */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1011              PduR_Det_ReportError(PDUR_MCQ_MAINFUNCTION, PDUR_E_FATAL);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1012              /* Nothing to do: When Det report error is switched off */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1013              break;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1014          }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1015  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1016          /* #60 If number of read bytes increases the the queue size, stall processing to next main function call */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1017          if(numberOfReadBytes > readThreshold)   /* COV_PDUR_MCQ_MAIN_FUNCTION_THRESHOLD */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1018          {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1019            break;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1020          }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1021        }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1022      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1023    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1024  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1025  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1026  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1027  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1028  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1029  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1030   * PduR_McQ_GetMcQBufferArrayRamReadIdxSafe
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1031   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1032  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1033   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1034   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1035   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1036   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1037  PDUR_LOCAL_INLINE FUNC(PduR_McQBufferArrayRamReadIdxOfMcQBufferRamType, PDUR_CODE) PduR_McQ_GetMcQBufferArrayRamReadIdxSafe(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1038  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1039    PduR_McQBufferArrayRamReadIdxOfMcQBufferRamType readIdx = PduR_GetMcQBufferArrayRamReadIdxOfMcQBufferRam(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1040  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1041  # if (PDUR_EXTENDED_ERROR_CHECKS == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1042    PduR_McQBufferArrayRamStartIdxOfMcQBufferRomType startIdxOfQueue = PduR_GetMcQBufferArrayRamStartIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1043    PduR_McQBufferArrayRamEndIdxOfMcQBufferRomType     endIdxOfQueue = PduR_GetMcQBufferArrayRamEndIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1044  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1045    if(readIdx >= endIdxOfQueue) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1046    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1047      readIdx = ((PduR_McQBufferArrayRamReadIdxOfMcQBufferRamType) endIdxOfQueue) - 1u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1048      PduR_ReportRuntimeDetError(PDUR_FCT_GETMCQREADIDX, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1049    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1050    if(readIdx < startIdxOfQueue) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1051    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1052      readIdx = startIdxOfQueue;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1053      PduR_ReportRuntimeDetError(PDUR_FCT_GETMCQREADIDX, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1054    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1055  # endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1056  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1057    return readIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1058  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1059  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1060  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1061  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1062  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1063   * PduR_McQ_GetMcQBufferArrayRamWriteIdxSafe
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1064   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1065  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1066   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1067   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1068   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1069   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1070  PDUR_LOCAL_INLINE FUNC(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType, PDUR_CODE) PduR_McQ_GetMcQBufferArrayRamWriteIdxSafe(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1071  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1072    PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx = PduR_GetMcQBufferArrayRamWriteIdxOfMcQBufferRam(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1073  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1074  # if (PDUR_EXTENDED_ERROR_CHECKS == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1075    PduR_McQBufferArrayRamStartIdxOfMcQBufferRomType startIdxOfQueue = PduR_GetMcQBufferArrayRamStartIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1076    PduR_McQBufferArrayRamEndIdxOfMcQBufferRomType     endIdxOfQueue = PduR_GetMcQBufferArrayRamEndIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1077  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1078    if(writeIdx >= endIdxOfQueue) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1079    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1080      writeIdx = ((PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType) endIdxOfQueue) - 1u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1081      PduR_ReportRuntimeDetError(PDUR_FCT_GETMCQWRITEIDX, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1082    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1083    if(writeIdx < startIdxOfQueue) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1084    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1085      writeIdx = startIdxOfQueue;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1086      PduR_ReportRuntimeDetError(PDUR_FCT_GETMCQWRITEIDX, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1087    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1088  # endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1089  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1090    return writeIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1091  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1092  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1093  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1094  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1095  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1096   * PduR_McQ_GetMcQBufferArrayRamPendingReadIdxSafe
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1097   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1098  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1099   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1100   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1101   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1102   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1103  PDUR_LOCAL_INLINE FUNC(PduR_McQBufferArrayRamPendingReadIdxOfMcQBufferRamType, PDUR_CODE) PduR_McQ_GetMcQBufferArrayRamPendingReadIdxSafe(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1104  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1105    PduR_McQBufferArrayRamPendingReadIdxOfMcQBufferRamType readIdx = PduR_GetMcQBufferArrayRamPendingReadIdxOfMcQBufferRam(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1106  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1107  # if (PDUR_EXTENDED_ERROR_CHECKS == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1108    PduR_McQBufferArrayRamStartIdxOfMcQBufferRomType startIdxOfQueue = PduR_GetMcQBufferArrayRamStartIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1109    PduR_McQBufferArrayRamEndIdxOfMcQBufferRomType     endIdxOfQueue = PduR_GetMcQBufferArrayRamEndIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1110  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1111    if(readIdx >= endIdxOfQueue) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1112    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1113      readIdx = ((PduR_McQBufferArrayRamPendingReadIdxOfMcQBufferRamType) endIdxOfQueue) - 1u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1114      PduR_ReportRuntimeDetError(PDUR_FCT_GETMCQPENDINGREADIDX, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1115    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1116    if(readIdx < startIdxOfQueue) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1117    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1118      readIdx = startIdxOfQueue;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1119      PduR_ReportRuntimeDetError(PDUR_FCT_GETMCQPENDINGREADIDX, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1120    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1121  # endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1122  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1123    return readIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1124  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1125  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1126  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1127  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1128  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1129   * PduR_McQ_GetMcQBufferArrayRamPendingWriteIdxSafe
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1130   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1131  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1132   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1133   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1134   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1135   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1136  PDUR_LOCAL_INLINE FUNC(PduR_McQBufferArrayRamPendingWriteIdxOfMcQBufferRamType, PDUR_CODE) PduR_McQ_GetMcQBufferArrayRamPendingWriteIdxSafe(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1137  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1138    PduR_McQBufferArrayRamPendingWriteIdxOfMcQBufferRamType writeIdx = PduR_GetMcQBufferArrayRamPendingWriteIdxOfMcQBufferRam(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1139  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1140  # if (PDUR_EXTENDED_ERROR_CHECKS == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1141    PduR_McQBufferArrayRamStartIdxOfMcQBufferRomType startIdxOfQueue = PduR_GetMcQBufferArrayRamStartIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1142    PduR_McQBufferArrayRamEndIdxOfMcQBufferRomType endIdxOfQueue   = PduR_GetMcQBufferArrayRamEndIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1143  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1144    if(writeIdx >= endIdxOfQueue) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1145    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1146      writeIdx = ((PduR_McQBufferArrayRamPendingWriteIdxOfMcQBufferRamType) endIdxOfQueue) - 1u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1147      PduR_ReportRuntimeDetError(PDUR_FCT_GETMCQPENDINGWRITEIDX, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1148    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1149    if(writeIdx < startIdxOfQueue) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1150    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1151      writeIdx = startIdxOfQueue;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1152      PduR_ReportRuntimeDetError(PDUR_FCT_GETMCQPENDINGWRITEIDX, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1153    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1154  # endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1155  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1156    return writeIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1157  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1158  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1159  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1160  #define PDUR_STOP_SEC_CODE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1161  #include "PduR_MemMap.h" /* PRQA S 5087 */   /* MD_MSR_MemMap */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1162  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1163  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1164   *  END OF FILE: PduR_McQ.c
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1165   *********************************************************************************************************************/
+
+	; Module end

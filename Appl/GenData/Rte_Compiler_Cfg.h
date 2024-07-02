@@ -46,6 +46,8 @@
 #ifndef RTE_COMPILER_CFG_H
 # define RTE_COMPILER_CFG_H
 
+# include "ComXf_Compiler_Cfg.h"
+# include "E2EXf_Compiler_Cfg.h"
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of include and declaration area >>        DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -163,6 +165,65 @@
 
 /* used for global or static SWC specific variables that are initialized with zero by the startup code of the compiler */
 # define BswM_VAR_ZERO_INIT
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
+ * Symbol: RTE_COMM_APPL
+ *********************************************************************************************************************/
+
+/* used for references on application variables */
+# define RTE_COMM_APPL_VAR
+
+/* used for references on application data (constants or variables) */
+# define RTE_COMM_APPL_DATA
+
+/* used for references on application functions */
+# define RTE_COMM_APPL_CODE
+
+/* used for references on application constants */
+# define RTE_COMM_APPL_CONST
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
+ * Symbol: ComM_CODE
+ *********************************************************************************************************************/
+
+/* used for SWC specific code */
+# define ComM_CODE
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
+ * Symbol: ComM_CONST
+ *********************************************************************************************************************/
+
+/* used for global or static SWC specific constants */
+# define ComM_CONST
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
+ * Symbol: ComM_VAR
+ *********************************************************************************************************************/
+
+/* used for all global or static SWC specific variables that are not initialized by the startup code of the compiler */
+# define ComM_VAR_NOINIT
+
+/* used for global or static SWC specific variables that are initialized by the startup code of the compiler */
+# define ComM_VAR_INIT
+
+/* used for global or static SWC specific variables that are initialized with zero by the startup code of the compiler */
+# define ComM_VAR_ZERO_INIT
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!

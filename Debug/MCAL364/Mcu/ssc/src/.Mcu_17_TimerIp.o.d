@@ -14,6 +14,10 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"E:\workFiles\TC367\TC367\workspace\last3
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_Compiler_cfg.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_Compiler_Cfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_Compiler_Cfg.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComXf_Compiler_Cfg.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComXf_Compiler_Cfg.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\E2EXf_Compiler_Cfg.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\E2EXf_Compiler_Cfg.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Compiler_Cfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Compiler_Cfg.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"E:\workFiles\TC367\TC367\workspace\last364\MCAL364\McalLib\ssc\inc\McalLib.h"
@@ -246,6 +250,10 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"E:\workFiles\TC367\TC367\workspace\last3
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_UserTypes.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_UserTypes.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\ComStack_Types.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\ComStack_Types.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComStack_Cfg.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComStack_Cfg.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_DataHandleType.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_DataHandleType.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h"

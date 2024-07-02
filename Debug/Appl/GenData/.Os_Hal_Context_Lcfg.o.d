@@ -12,6 +12,10 @@ Appl\GenData\Os_Hal_Context_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_Compiler_cfg.h" :
 Appl\GenData\Os_Hal_Context_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_Compiler_Cfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_Compiler_Cfg.h" :
+Appl\GenData\Os_Hal_Context_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComXf_Compiler_Cfg.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComXf_Compiler_Cfg.h" :
+Appl\GenData\Os_Hal_Context_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\E2EXf_Compiler_Cfg.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\E2EXf_Compiler_Cfg.h" :
 Appl\GenData\Os_Hal_Context_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Compiler_Cfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Compiler_Cfg.h" :
 Appl\GenData\Os_Hal_Context_Lcfg.o :	..\Appl\GenData\Os_Hal_Context_Lcfg.h
@@ -70,6 +74,14 @@ Appl\GenData\Os_Hal_Context_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Types_Lcfg.h" :
 Appl\GenData\Os_Hal_Context_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Lcfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Lcfg.h" :
+Appl\GenData\Os_Hal_Context_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_Hal_Context_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_Hal_Context_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_Hal_Context_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 Appl\GenData\Os_Hal_Context_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
 Appl\GenData\Os_Hal_Context_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"

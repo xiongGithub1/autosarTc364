@@ -41,11 +41,20 @@ typedef EventMaskType Rte_EventMaskType;
  * Data type definitions
  *********************************************************************************************************************/
 
+# define Rte_TypeDef_ComM_InhibitionStatusType
+typedef uint8 ComM_InhibitionStatusType;
+
+# define Rte_TypeDef_ComM_UserHandleType
+typedef uint16 ComM_UserHandleType;
+
 # define Rte_TypeDef_EcuM_TimeType
 typedef uint32 EcuM_TimeType;
 
 # define Rte_TypeDef_TimeInMicrosecondsType
 typedef uint32 TimeInMicrosecondsType;
+
+# define Rte_TypeDef_ComM_ModeType
+typedef uint8 ComM_ModeType;
 
 # define Rte_TypeDef_EcuM_BootTargetType
 typedef uint8 EcuM_BootTargetType;

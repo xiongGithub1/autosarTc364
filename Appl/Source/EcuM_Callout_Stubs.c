@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Callout_Stubs.c
- *   Generation Time: 2024-06-30 12:58:18
+ *   Generation Time: 2024-07-01 09:20:39
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -66,20 +66,27 @@
  *  All configured EcuM Wakeup Sources (as bitmasks) for usage in Callouts
  *********************************************************************************************************************/
 /*
- * ECUM_WKSOURCE_NONE           (EcuM_WakeupSourceType)(0x00000000u) 
- * ECUM_WKSOURCE_ALL_SOURCES    (EcuM_WakeupSourceType)(~((EcuM_WakeupSourceType)0x00UL)) 
- * ECUM_WKSOURCE_POWER          (EcuM_WakeupSourceType)(1u) 
- * ECUM_WKSOURCE_RESET          (EcuM_WakeupSourceType)(2u) 
- * ECUM_WKSOURCE_INTERNAL_RESET (EcuM_WakeupSourceType)(4u) 
- * ECUM_WKSOURCE_INTERNAL_WDG   (EcuM_WakeupSourceType)(8u) 
- * ECUM_WKSOURCE_EXTERNAL_WDG   (EcuM_WakeupSourceType)(16u) 
+ * ECUM_WKSOURCE_NONE              (EcuM_WakeupSourceType)(0x00000000u) 
+ * ECUM_WKSOURCE_ALL_SOURCES       (EcuM_WakeupSourceType)(~((EcuM_WakeupSourceType)0x00UL)) 
+ * ECUM_WKSOURCE_POWER             (EcuM_WakeupSourceType)(1u) 
+ * ECUM_WKSOURCE_RESET             (EcuM_WakeupSourceType)(2u) 
+ * ECUM_WKSOURCE_INTERNAL_RESET    (EcuM_WakeupSourceType)(4u) 
+ * ECUM_WKSOURCE_INTERNAL_WDG      (EcuM_WakeupSourceType)(8u) 
+ * ECUM_WKSOURCE_EXTERNAL_WDG      (EcuM_WakeupSourceType)(16u) 
+ * ECUM_WKSOURCE_CN_CAN00_5e566ad9 (EcuM_WakeupSourceType)(32u) 
  */
 
 /**********************************************************************************************************************
  *  Additional configured User includes
  *********************************************************************************************************************/
 #include "BswM.h" 
+#include "Can.h" 
+#include "CanIf.h" 
+#include "CanSM_EcuM.h" 
+#include "Com.h" 
+#include "ComM.h" 
 #include "Det.h" 
+#include "PduR.h" 
 #include "Rte_Main.h" 
 #include "Mcu.h" 
 #include "Port.h" 
@@ -240,8 +247,15 @@ FUNC(void, ECUM_CODE) EcuM_AL_Reset(EcuM_ResetType Reset) /* PRQA S 3206 */ /* M
 FUNC(void, ECUM_CODE) EcuM_AL_DriverInitZero(void) 
 {
   BswM_InitMemory();
+  Can_InitMemory();
+  CanIf_InitMemory();
+  CanSM_InitMemory();
+  Com_InitMemory();
+  ComM_InitMemory();
   Det_InitMemory();
+  PduR_InitMemory();
   Rte_InitMemory();
+  BswM_PreInit( BswM_Config_Ptr );
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_AL_DriverInitZero>                 DO NOT CHANGE THIS COMMENT!
@@ -276,11 +290,13 @@ FUNC(void, ECUM_CODE) EcuM_AL_DriverInitOne(void)
  *********************************************************************************************************************/
 }
 
+#if (ECUM_SLEEPMODELIST == STD_ON)
 /**********************************************************************************************************************
 * EcuM_AL_DriverRestartList
 **********************************************************************************************************************/
 FUNC(void, ECUM_CODE) EcuM_AL_DriverRestartList(void) 
 {
+  /* DriverRestartList will not be called () because no sleepmode is configured - So don't use this function! */
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_AL_DriverRestartList>              DO NOT CHANGE THIS COMMENT!
@@ -292,6 +308,7 @@ FUNC(void, ECUM_CODE) EcuM_AL_DriverRestartList(void)
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
 }
+#endif
 
 /**********************************************************************************************************************
 * EcuM_AL_DriverInitTwo

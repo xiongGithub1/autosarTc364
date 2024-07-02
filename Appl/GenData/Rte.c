@@ -33,16 +33,25 @@
 #include "Rte_Main.h"
 
 #include "Rte_BswM.h"
+#include "Rte_ComM.h"
 #include "Rte_Det.h"
 #include "Rte_EcuM.h"
 #include "Rte_Os_OsCore0_swc.h"
 #include "Rte_StartApp.h"
 #include "SchM_BswM.h"
+#include "SchM_Can.h"
+#include "SchM_CanIf.h"
+#include "SchM_CanSM.h"
+#include "SchM_Com.h"
+#include "SchM_ComM.h"
+#include "SchM_ComXf.h"
 #include "SchM_Det.h"
 #include "SchM_Dio.h"
+#include "SchM_E2EXf.h"
 #include "SchM_EcuM.h"
 #include "SchM_McalLib.h"
 #include "SchM_Mcu.h"
+#include "SchM_PduR.h"
 #include "SchM_Port.h"
 
 #include "Rte_Hook.h"
@@ -85,19 +94,6 @@
 # define Rte_EnableOSInterrupts() ResumeOSInterrupts()   /* AUTOSAR OS */
 #endif
 
-/**********************************************************************************************************************
- * Rte Init State Variable
- *********************************************************************************************************************/
-
-#define RTE_START_SEC_VAR_ZERO_INIT_8BIT
-#include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-
-volatile VAR(uint8, RTE_VAR_ZERO_INIT) Rte_InitState = RTE_STATE_UNINIT; /* PRQA S 3408 */ /* MD_Rte_3408 */
-volatile VAR(uint8, RTE_VAR_ZERO_INIT) Rte_StartTiming_InitState = RTE_STATE_UNINIT; /* PRQA S 0850, 3408, 1514 */ /* MD_MSR_MacroArgumentEmpty, MD_Rte_3408, MD_Rte_1514 */
-
-#define RTE_STOP_SEC_VAR_ZERO_INIT_8BIT
-#include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-
 
 #define RTE_START_SEC_VAR_NOINIT_UNSPECIFIED
 #include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
@@ -136,7 +132,11 @@ volatile VAR(uint8, RTE_VAR_ZERO_INIT) Rte_StartTiming_InitState = RTE_STATE_UNI
 #define RTE_CONST_MSEC_SystemTimer_0U (0UL)
 #define RTE_CONST_MSEC_SystemTimer_1U (1UL)
 #define RTE_CONST_MSEC_SystemTimer_10U (10UL)
-#define RTE_CONST_MSEC_SystemTimer_500U (500UL)
+#define RTE_CONST_MSEC_SystemTimer_20U (20UL)
+#define RTE_CONST_MSEC_SystemTimer_250U (250UL)
+
+#define RTE_CONST_SEC_SystemTimer_0U (0UL)
+#define RTE_CONST_SEC_SystemTimer_1U (1000UL)
 
 
 /**********************************************************************************************************************
@@ -155,18 +155,20 @@ volatile VAR(uint8, RTE_VAR_ZERO_INIT) Rte_StartTiming_InitState = RTE_STATE_UNI
 
 FUNC(void, RTE_CODE) SchM_Start(void)
 {
-  Rte_InitState = RTE_STATE_SCHM_START;
 }
 
 FUNC(void, RTE_CODE) SchM_Init(void)
 {
-  Rte_InitState = RTE_STATE_SCHM_INIT;
+  /* activate the tasks */
+  (void)ActivateTask(Default_BSW_ASync_Task); /* PRQA S 3417 */ /* MD_Rte_Os */
+
 }
 
 FUNC(void, RTE_CODE) SchM_StartTiming(void)
 {
   /* activate the alarms used for TimingEvents */
   (void)SetRelAlarm(Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(10U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
+  (void)SetRelAlarm(Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(20U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
 
 }
 
@@ -179,23 +181,21 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Start(void)
   (void)ActivateTask(Default_Appl_Task); /* PRQA S 3417 */ /* MD_Rte_Os */
 
   /* activate the alarms used for TimingEvents */
+  (void)SetRelAlarm(Rte_Al_TE_StartApp_StartApp_Cyclic1000ms, RTE_SEC_SystemTimer(0U) + (TickType)1U, RTE_SEC_SystemTimer(1U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
+  (void)SetRelAlarm(Rte_Al_TE_StartApp_StartApp_Cyclic10ms, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(10U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
   (void)SetRelAlarm(Rte_Al_TE_StartApp_StartApp_Cyclic1ms, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(1U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
-  (void)SetRelAlarm(Rte_Al_TE_StartApp_StartApp_Cyclic500ms, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(500U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
-
-  Rte_StartTiming_InitState = RTE_STATE_INIT;
-  Rte_InitState = RTE_STATE_INIT;
+  (void)SetRelAlarm(Rte_Al_TE_StartApp_StartApp_Cyclic250ms, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(250U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
 
   return RTE_E_OK;
 } /* PRQA S 6050 */ /* MD_MSR_STCAL */
 
 FUNC(Std_ReturnType, RTE_CODE) Rte_Stop(void)
 {
-  Rte_StartTiming_InitState = RTE_STATE_UNINIT;
   /* deactivate alarms */
+  (void)CancelAlarm(Rte_Al_TE_StartApp_StartApp_Cyclic1000ms); /* PRQA S 3417 */ /* MD_Rte_Os */
+  (void)CancelAlarm(Rte_Al_TE_StartApp_StartApp_Cyclic10ms); /* PRQA S 3417 */ /* MD_Rte_Os */
   (void)CancelAlarm(Rte_Al_TE_StartApp_StartApp_Cyclic1ms); /* PRQA S 3417 */ /* MD_Rte_Os */
-  (void)CancelAlarm(Rte_Al_TE_StartApp_StartApp_Cyclic500ms); /* PRQA S 3417 */ /* MD_Rte_Os */
-
-  Rte_InitState = RTE_STATE_SCHM_INIT;
+  (void)CancelAlarm(Rte_Al_TE_StartApp_StartApp_Cyclic250ms); /* PRQA S 3417 */ /* MD_Rte_Os */
 
   return RTE_E_OK;
 }
@@ -204,15 +204,12 @@ FUNC(void, RTE_CODE) SchM_Deinit(void)
 {
   /* deactivate alarms */
   (void)CancelAlarm(Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms); /* PRQA S 3417 */ /* MD_Rte_Os */
+  (void)CancelAlarm(Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms); /* PRQA S 3417 */ /* MD_Rte_Os */
 
-  Rte_InitState = RTE_STATE_UNINIT;
 }
 
 FUNC(void, RTE_CODE) Rte_InitMemory(void)
 {
-  Rte_InitState = RTE_STATE_UNINIT;
-  Rte_StartTiming_InitState = RTE_STATE_UNINIT;
-
 }
 
 
@@ -311,9 +308,9 @@ TASK(Default_Appl_Task) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unreachab
 
   for(;;)
   {
-    (void)WaitEvent(Rte_Ev_Run_StartApp_StartApp_Cyclic1ms | Rte_Ev_Run_StartApp_StartApp_Cyclic500ms); /* PRQA S 3417 */ /* MD_Rte_Os */
+    (void)WaitEvent(Rte_Ev_Run_StartApp_StartApp_Cyclic1000ms | Rte_Ev_Run_StartApp_StartApp_Cyclic10ms | Rte_Ev_Run_StartApp_StartApp_Cyclic1ms | Rte_Ev_Run_StartApp_StartApp_Cyclic250ms); /* PRQA S 3417 */ /* MD_Rte_Os */
     (void)GetEvent(Default_Appl_Task, &ev); /* PRQA S 3417 */ /* MD_Rte_Os */
-    (void)ClearEvent(ev & (Rte_Ev_Run_StartApp_StartApp_Cyclic1ms | Rte_Ev_Run_StartApp_StartApp_Cyclic500ms)); /* PRQA S 3417 */ /* MD_Rte_Os */
+    (void)ClearEvent(ev & (Rte_Ev_Run_StartApp_StartApp_Cyclic1000ms | Rte_Ev_Run_StartApp_StartApp_Cyclic10ms | Rte_Ev_Run_StartApp_StartApp_Cyclic1ms | Rte_Ev_Run_StartApp_StartApp_Cyclic250ms)); /* PRQA S 3417 */ /* MD_Rte_Os */
 
     if ((ev & Rte_Ev_Run_StartApp_StartApp_Cyclic1ms) != (EventMaskType)0)
     {
@@ -321,10 +318,22 @@ TASK(Default_Appl_Task) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unreachab
       StartApp_Cyclic1ms(); /* PRQA S 2987 */ /* MD_Rte_2987 */
     }
 
-    if ((ev & Rte_Ev_Run_StartApp_StartApp_Cyclic500ms) != (EventMaskType)0)
+    if ((ev & Rte_Ev_Run_StartApp_StartApp_Cyclic10ms) != (EventMaskType)0)
     {
       /* call runnable */
-      StartApp_Cyclic500ms(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+      StartApp_Cyclic10ms(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+    }
+
+    if ((ev & Rte_Ev_Run_StartApp_StartApp_Cyclic250ms) != (EventMaskType)0)
+    {
+      /* call runnable */
+      StartApp_Cyclic250ms(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+    }
+
+    if ((ev & Rte_Ev_Run_StartApp_StartApp_Cyclic1000ms) != (EventMaskType)0)
+    {
+      /* call runnable */
+      StartApp_Cyclic1000ms(); /* PRQA S 2987 */ /* MD_Rte_2987 */
     }
   }
 } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */
@@ -339,18 +348,56 @@ TASK(Default_Appl_Task) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unreachab
  * Task:     Default_BSW_ASync_Task
  * Priority: 30
  * Schedule: NON
- * Alarm:    Cycle Time 0.01 s Alarm Offset 0 s
  *********************************************************************************************************************/
 TASK(Default_BSW_ASync_Task) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unreachable */
 {
+  EventMaskType ev;
 
-  /* call runnable */
-  BswM_MainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+  for(;;)
+  {
+    (void)WaitEvent(Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms | Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_20ms); /* PRQA S 3417 */ /* MD_Rte_Os */
+    (void)GetEvent(Default_BSW_ASync_Task, &ev); /* PRQA S 3417 */ /* MD_Rte_Os */
+    (void)ClearEvent(ev & (Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms | Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_20ms)); /* PRQA S 3417 */ /* MD_Rte_Os */
 
-  /* call runnable */
-  EcuM_MainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+    if ((ev & Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms) != (EventMaskType)0)
+    {
+      /* call runnable */
+      BswM_MainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
 
-  (void)TerminateTask(); /* PRQA S 3417 */ /* MD_Rte_Os */
+      /* call runnable */
+      EcuM_MainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+
+      /* call schedulable entity */
+      CanSM_MainFunction();
+
+      /* call schedulable entity */
+      Can_MainFunction_Mode();
+
+      /* call schedulable entity */
+      Can_MainFunction_BusOff();
+
+      /* call schedulable entity */
+      Can_MainFunction_Write();
+
+      /* call schedulable entity */
+      Can_MainFunction_Read();
+    }
+
+    if ((ev & Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_20ms) != (EventMaskType)0)
+    {
+      /* call runnable */
+      ComM_MainFunction_0(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+    }
+
+    if ((ev & Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms) != (EventMaskType)0)
+    {
+      /* call schedulable entity */
+      Com_MainFunctionRx_ComMainFunctionRx();
+
+      /* call schedulable entity */
+      Com_MainFunctionTx_ComMainFunctionTx();
+    }
+  }
 } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */
 
 #define RTE_STOP_SEC_DEFAULT_BSW_ASYNC_TASK_CODE
@@ -362,11 +409,6 @@ TASK(Default_BSW_ASync_Task) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unre
  *********************************************************************************************************************/
 
 /* module specific MISRA deviations:
-   MD_Rte_1514:  MISRA rule: Rule8.9
-     Reason:     Because of external definition, misra does not see the call.
-     Risk:       No functional risk. There is no side effect.
-     Prevention: Not required.
-
    MD_Rte_2987:  MISRA rule: Rule2.2
      Reason:     Used to simplify code generation.
      Risk:       No functional risk. There is no side effect.

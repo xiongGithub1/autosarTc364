@@ -1,0 +1,231 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc20388a --dep-file=Appl\\GenData\\.E2EXf_LCfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\mak -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Make -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteAnalyzer -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache\\-148438436 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -g2 --make-target=Appl\\GenData\\E2EXf_LCfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\E2EXf_LCfg.src ..\\Appl\\GenData\\E2EXf_LCfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\GenData\\E2EXf_LCfg.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.E2EXf_LCfg.E2EXf_Init_Calls',code,cluster('E2EXf_Init_Calls')
+	.sect	'.text.E2EXf_LCfg.E2EXf_Init_Calls'
+	.align	2
+	
+	.global	E2EXf_Init_Calls
+
+; ..\Appl\GenData\E2EXf_LCfg.c	     1  /**********************************************************************************************************************
+; ..\Appl\GenData\E2EXf_LCfg.c	     2   *  COPYRIGHT
+; ..\Appl\GenData\E2EXf_LCfg.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\E2EXf_LCfg.c	     4   *  \verbatim
+; ..\Appl\GenData\E2EXf_LCfg.c	     5   *
+; ..\Appl\GenData\E2EXf_LCfg.c	     6   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\Appl\GenData\E2EXf_LCfg.c	     7   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\Appl\GenData\E2EXf_LCfg.c	     8   *                All other rights remain with Vector Informatik GmbH.
+; ..\Appl\GenData\E2EXf_LCfg.c	     9   *  \endverbatim
+; ..\Appl\GenData\E2EXf_LCfg.c	    10   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\E2EXf_LCfg.c	    11   *  FILE DESCRIPTION
+; ..\Appl\GenData\E2EXf_LCfg.c	    12   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\E2EXf_LCfg.c	    13   *             File:  E2EXf_LCfg.c
+; ..\Appl\GenData\E2EXf_LCfg.c	    14   *           Config:  last364.dpa
+; ..\Appl\GenData\E2EXf_LCfg.c	    15   *      ECU-Project:  last364
+; ..\Appl\GenData\E2EXf_LCfg.c	    16   *
+; ..\Appl\GenData\E2EXf_LCfg.c	    17   *        Generator:  MICROSAR E2EXf Generator Version 1.16.0
+; ..\Appl\GenData\E2EXf_LCfg.c	    18   *                    RTE Core Version 1.29.0
+; ..\Appl\GenData\E2EXf_LCfg.c	    19   *          License:  CBD2200508
+; ..\Appl\GenData\E2EXf_LCfg.c	    20   *
+; ..\Appl\GenData\E2EXf_LCfg.c	    21   *      Description:  MICROSAR E2EXf implementation file for link-time variant
+; ..\Appl\GenData\E2EXf_LCfg.c	    22   *********************************************************************************************************************/
+; ..\Appl\GenData\E2EXf_LCfg.c	    23  
+; ..\Appl\GenData\E2EXf_LCfg.c	    24  /* PRQA S 0777, 0779, 0857 EOF */ /* MD_MSR_Rule5.1, MD_MSR_Rule5.2, MD_MSR_Dir1.1 */
+; ..\Appl\GenData\E2EXf_LCfg.c	    25  
+; ..\Appl\GenData\E2EXf_LCfg.c	    26  /**********************************************************************************************************************
+; ..\Appl\GenData\E2EXf_LCfg.c	    27   *  INCLUDES
+; ..\Appl\GenData\E2EXf_LCfg.c	    28   *********************************************************************************************************************/
+; ..\Appl\GenData\E2EXf_LCfg.c	    29  
+; ..\Appl\GenData\E2EXf_LCfg.c	    30  #include "E2EXf_LCfg.h"
+; ..\Appl\GenData\E2EXf_LCfg.c	    31  
+; ..\Appl\GenData\E2EXf_LCfg.c	    32  #if !defined (E2EXF_LOCAL)
+; ..\Appl\GenData\E2EXf_LCfg.c	    33  # define E2EXF_LOCAL static
+; ..\Appl\GenData\E2EXf_LCfg.c	    34  #endif
+; ..\Appl\GenData\E2EXf_LCfg.c	    35  
+; ..\Appl\GenData\E2EXf_LCfg.c	    36  /**********************************************************************************************************************
+; ..\Appl\GenData\E2EXf_LCfg.c	    37   *  LOCAL DATA PROTOTYPES
+; ..\Appl\GenData\E2EXf_LCfg.c	    38   *********************************************************************************************************************/
+; ..\Appl\GenData\E2EXf_LCfg.c	    39  
+; ..\Appl\GenData\E2EXf_LCfg.c	    40  /**********************************************************************************************************************
+; ..\Appl\GenData\E2EXf_LCfg.c	    41   *  GLOBAL FUNCTIONS
+; ..\Appl\GenData\E2EXf_LCfg.c	    42   *********************************************************************************************************************/
+; ..\Appl\GenData\E2EXf_LCfg.c	    43  
+; ..\Appl\GenData\E2EXf_LCfg.c	    44  #define E2EXF_START_SEC_CODE
+; ..\Appl\GenData\E2EXf_LCfg.c	    45  #include "E2EXf_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\E2EXf_LCfg.c	    46  
+; ..\Appl\GenData\E2EXf_LCfg.c	    47  /***********************************************************************************************************************
+; ..\Appl\GenData\E2EXf_LCfg.c	    48   *  E2EXf_Init_Calls()
+; ..\Appl\GenData\E2EXf_LCfg.c	    49   **********************************************************************************************************************/
+; ..\Appl\GenData\E2EXf_LCfg.c	    50  FUNC(void, E2EXF_CODE) E2EXf_Init_Calls(void)
+; Function E2EXf_Init_Calls
+.L3:
+E2EXf_Init_Calls:	.type	func
+
+; ..\Appl\GenData\E2EXf_LCfg.c	    51  {
+; ..\Appl\GenData\E2EXf_LCfg.c	    52  } /* PRQA S 6050 */ /* MD_MSR_STCAL */
+	ret
+.L13:
+	
+__E2EXf_Init_Calls_function_end:
+	.size	E2EXf_Init_Calls,__E2EXf_Init_Calls_function_end-E2EXf_Init_Calls
+.L12:
+	; End of function
+	
+	.calls	'E2EXf_Init_Calls','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L5:
+	.word	498
+	.half	3
+	.word	.L6
+	.byte	4
+.L4:
+	.byte	1
+	.byte	'..\\Appl\\GenData\\E2EXf_LCfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L7
+	.byte	2,1,3
+	.word	140
+	.byte	4
+	.byte	'__codeptr',0,1,1,1
+	.word	142
+	.byte	5
+	.byte	'unsigned char',0,1,8,4
+	.byte	'boolean',0,2,101,31
+	.word	165
+	.byte	4
+	.byte	'uint8',0,2,104,31
+	.word	165
+	.byte	5
+	.byte	'unsigned short int',0,2,7,4
+	.byte	'uint16',0,2,106,31
+	.word	212
+	.byte	5
+	.byte	'unsigned long int',0,4,7,4
+	.byte	'uint32',0,2,108,31
+	.word	249
+	.byte	4
+	.byte	'Std_ReturnType',0,3,124,15
+	.word	165
+	.byte	4
+	.byte	'Std_TransformerErrorCode',0,3,135,1,15
+	.word	165
+	.byte	4
+	.byte	'Std_TransformerClass',0,3,137,1,15
+	.word	165
+	.byte	4
+	.byte	'PduLengthType',0,4,65,15
+	.word	165
+	.byte	3
+	.word	165
+	.byte	4
+	.byte	'SduDataPtrType',0,5,196,1,54
+	.word	394
+	.byte	6,5,219,1,9,1,7
+	.byte	'TP_DATACONF',0,0,7
+	.byte	'TP_DATARETRY',0,1,7
+	.byte	'TP_CONFPENDING',0,2,0,4
+	.byte	'TpDataStateType',0,5,226,1,3
+	.word	423
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L6:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,0,0,3,15,0,73,19,0,0,4,22,0,3,8,58,15,59,15
+	.byte	57,15,73,19,0,0,5,36,0,3,8,11,15,62,15,0,0,6,4,1,58,15,59,15,57,15,11,15,0,0,7,40,0,3,8,28,13,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L7:
+	.word	.L15-.L14
+.L14:
+	.half	3
+	.word	.L17-.L16
+.L16:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData',0,0
+	.byte	'..\\Appl\\GenData\\E2EXf_LCfg.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Std_Types.h',0,1,0,0
+	.byte	'ComStack_Cfg.h',0,2,0,0
+	.byte	'ComStack_Types.h',0,1,0,0,0
+.L17:
+.L15:
+	.sdecl	'.debug_info',debug,cluster('E2EXf_Init_Calls')
+	.sect	'.debug_info'
+.L8:
+	.word	192
+	.half	3
+	.word	.L9
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\E2EXf_LCfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L11,.L10
+	.byte	2
+	.word	.L4
+	.byte	3
+	.byte	'E2EXf_Init_Calls',0,1,50,24,1,1,1
+	.word	.L3,.L13,.L2
+	.byte	4
+	.word	.L3,.L13
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('E2EXf_Init_Calls')
+	.sect	'.debug_abbrev'
+.L9:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('E2EXf_Init_Calls')
+	.sect	'.debug_line'
+.L10:
+	.word	.L19-.L18
+.L18:
+	.half	3
+	.word	.L21-.L20
+.L20:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Appl\\GenData\\E2EXf_LCfg.c',0,0,0,0,0
+.L21:
+	.byte	5,1,7,0,5,2
+	.word	.L3
+	.byte	3,51,1,7,9
+	.half	.L12-.L3
+	.byte	0,1,1
+.L19:
+	.sdecl	'.debug_ranges',debug,cluster('E2EXf_Init_Calls')
+	.sect	'.debug_ranges'
+.L11:
+	.word	-1,.L3,0,.L12-.L3,0,0
+	.sdecl	'.debug_loc',debug,cluster('E2EXf_Init_Calls')
+	.sect	'.debug_loc'
+.L2:
+	.word	-1,.L3,0,.L13-.L3
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L22:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('E2EXf_Init_Calls')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L22,.L3,.L13-.L3
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+; ..\Appl\GenData\E2EXf_LCfg.c	    53  
+; ..\Appl\GenData\E2EXf_LCfg.c	    54  #define E2EXF_STOP_SEC_CODE
+; ..\Appl\GenData\E2EXf_LCfg.c	    55  #include "E2EXf_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\E2EXf_LCfg.c	    56  
+
+	; Module end

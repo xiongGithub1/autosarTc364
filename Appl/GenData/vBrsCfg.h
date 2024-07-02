@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: .\vBrsCfg.h
- *   Generation Time: 2024-06-30 13:45:45
+ *   Generation Time: 2026-06-30 18:16:14
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -136,6 +136,12 @@
    (e.g. vBRSHwConfig/vBRSDriverHandlingCAN/vBRSDriverHandlingCAN_Clock). */
 /* Peripheral Clock (MHz) */
 #define BRS_PERIPH_CLOCK 100
+
+/*******************************************************************************
+ BRS software modules
+*******************************************************************************/
+/* Enable the handling of Watchdog configuration inside BrsHw. */
+#define BRS_ENABLE_WATCHDOG
 
 /*******************************************************************************
  Tested Derivative: Infineon Aurix 2G TC36x Family
@@ -254,5 +260,38 @@
    The pattern must be 32-bit aligned. Default value is 0x0. */
 #define BRS_INIT_PATTERN_HARDRESET_AREAS (0x0UL)
 
+/*******************************************************************************
+ DrvCan Handling
+*******************************************************************************/
+/* These are macros to also support DrvCan modules with infixing 
+   (e.g. Can_30_Mcan). 
+   They are used by the UserDefined ExclusiveArea handling for CAN channels 
+   in BrsMain.c. 
+   The implementation is according to CanDriver ApplicationNote AN-ISC-8-1149 */
+#define BRS_DRVCAN_HEADER_FILENAME "Can.h"
+#define BRS_DRVCAN_EXCLUSIVE_AREA_INFIX(a, b) void SchM_##a##_Can_CAN_##b(void)
+#define BRS_DRVCAN_ControllerInterrupts_INFIX(a) Can_##a##ControllerInterrupts
+
 #endif /*_VBRSCFG_H_*/
+
+/* The following lines are needed for the UserDefined ExclusiveArea handling
+   for CAN channels , according to AN-ISC-8-1149, implemented in BrsMain.c. 
+   To support drivers with infix and there name specific MemMap sections, 
+   this will forward the correct MemMap defines to the MemMap.h file. */
+   
+#ifdef CAN_START_SEC_CODE
+#include "MemMap.h"
+#endif
+
+#ifdef CAN_STOP_SEC_CODE
+#include "MemMap.h"
+#endif
+
+#ifdef CAN_START_SEC_VAR_NOINIT_8BIT
+#include "MemMap.h"
+#endif
+
+#ifdef CAN_STOP_SEC_VAR_NOINIT_8BIT
+#include "MemMap.h"
+#endif
 

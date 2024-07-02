@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
   <AR-PACKAGES>
     <AR-PACKAGE UUID="ff55d029-386d-43a2-b3c2-dfef4c7a5e36">
       <SHORT-NAME>MICROSAR</SHORT-NAME>
@@ -8,313 +8,313 @@
           <SHORT-NAME>EcuM_Impl</SHORT-NAME>
           <MC-SUPPORT/>
           <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
-          <RESOURCE-CONSUMPTION UUID="87118cff-45f0-4ddd-a966-aaf2159d9a4e">
+          <RESOURCE-CONSUMPTION UUID="012ef97b-d254-4609-a506-14429ecdc5f7">
             <SHORT-NAME>ResourceConsumption</SHORT-NAME>
             <MEMORY-SECTIONS>
-              <MEMORY-SECTION UUID="1153e989-9bc7-46b1-8cd2-a5d1b7508732">
+              <MEMORY-SECTION UUID="5043eaf8-0259-4180-86de-34185c69c9a1">
                 <SHORT-NAME>PBCFG_GLOBALROOT</SHORT-NAME>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/PBCFG_GLOBALROOT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="2c74eb47-3597-4122-a23b-700db5c898cd">
+              <MEMORY-SECTION UUID="0b152b54-dd04-4eff-a1c4-2dac855f3f61">
                 <SHORT-NAME>VAR_NOCACHE_CLEARED_UNSPECIFIED</SHORT-NAME>
                 <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_CLEARED</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="fe57eaa2-2487-43fe-8471-d822efe139f9">
+              <MEMORY-SECTION UUID="8aea2ff7-0f25-45c5-b046-d1958d03798a">
                 <SHORT-NAME>VAR_FAST_INIT_64</SHORT-NAME>
                 <ALIGNMENT>64</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="93d37cf8-1fe4-4714-ac2d-c75b0ddff4a0">
+              <MEMORY-SECTION UUID="4d8f1d03-2625-424e-a570-4369c2d8965a">
                 <SHORT-NAME>VAR_FAST_CLEARED_UNSPECIFIED</SHORT-NAME>
                 <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_CLEARED</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="a0b354eb-ff52-4a8b-9de2-9bbd5630b971">
+              <MEMORY-SECTION UUID="e272ad8e-1c19-4d5d-b51a-b4c5922b2ef0">
                 <SHORT-NAME>VAR_NO_INIT_8</SHORT-NAME>
                 <ALIGNMENT>8</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NO_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="42db8659-e37e-4ce7-8988-1177c82e175e">
+              <MEMORY-SECTION UUID="5ee7db90-d9af-43e0-b6b8-dc1b42a36f06">
                 <SHORT-NAME>VAR_NOCACHE_CLEARED_16</SHORT-NAME>
                 <ALIGNMENT>16</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_CLEARED</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="72af24a6-3543-4130-8f20-291ab079f040">
+              <MEMORY-SECTION UUID="aac8eb92-e3e7-4c1d-8a81-202be3a36f4f">
                 <SHORT-NAME>VAR_NO_INIT_16</SHORT-NAME>
                 <ALIGNMENT>16</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NO_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="b7749dc3-fbb2-44c9-95e9-ff95680b839c">
+              <MEMORY-SECTION UUID="ab052638-35cf-47a8-8e39-26a797a358c3">
                 <SHORT-NAME>CONST_16</SHORT-NAME>
                 <ALIGNMENT>16</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/CONST</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="f17575e4-5f50-4a70-8bec-6ccaf0d6c9e2">
+              <MEMORY-SECTION UUID="3a47e4d2-f5b3-4238-82db-242971d0871a">
                 <SHORT-NAME>VAR_FAST_CLEARED_8</SHORT-NAME>
                 <ALIGNMENT>8</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_CLEARED</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="b981e437-ac95-443f-98df-85accb042c1e">
+              <MEMORY-SECTION UUID="6339be19-415a-43d5-a145-e02de444f187">
                 <SHORT-NAME>CODE</SHORT-NAME>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/CODE</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="2a3e403b-560b-496d-b762-b8ccf51f7e98">
+              <MEMORY-SECTION UUID="0e89e28a-525a-4682-bffb-4b5c912f4f27">
                 <SHORT-NAME>CONST_64</SHORT-NAME>
                 <ALIGNMENT>64</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/CONST</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="7b5f17bd-f4e2-4c11-9bb9-782843022e0b">
+              <MEMORY-SECTION UUID="0ac96254-b45e-4243-b7f2-fa76a22a4acf">
                 <SHORT-NAME>VAR_NOCACHE_CLEARED_8</SHORT-NAME>
                 <ALIGNMENT>8</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_CLEARED</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="44cc44dc-2202-488a-b445-e5118d7f133d">
+              <MEMORY-SECTION UUID="e4939b51-c729-418a-ab7b-0058e1820d30">
                 <SHORT-NAME>VAR_CLEARED_16</SHORT-NAME>
                 <ALIGNMENT>16</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_CLEARED</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="3c44c56d-8da6-43c2-ae7f-6d1f9bb90cd2">
+              <MEMORY-SECTION UUID="ab2b29d5-d3ec-4972-b60b-d61972aa4c71">
                 <SHORT-NAME>VAR_NOCACHE_CLEARED_BOOLEAN</SHORT-NAME>
                 <ALIGNMENT>BOOLEAN</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_CLEARED</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="d7df862c-ba75-4e6b-bfdb-0848c78259bb">
+              <MEMORY-SECTION UUID="10f28a1b-8f45-4d7a-8f79-02a72c1be3f1">
                 <SHORT-NAME>VAR_FAST_NO_INIT_16</SHORT-NAME>
                 <ALIGNMENT>16</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_NO_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="21949f82-8def-40d6-9f30-774941aaf26a">
+              <MEMORY-SECTION UUID="0f4466ba-8395-4e59-9e0d-7f391b81ac78">
                 <SHORT-NAME>VAR_NO_INIT_64</SHORT-NAME>
                 <ALIGNMENT>64</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NO_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="50537455-d01d-456e-9262-c3c676e3348c">
+              <MEMORY-SECTION UUID="b14ee38e-a063-486e-acff-79085c8631ad">
                 <SHORT-NAME>VAR_NOCACHE_CLEARED_64</SHORT-NAME>
                 <ALIGNMENT>64</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_CLEARED</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="801a425b-6b29-44fc-80e8-1ab1ea06f887">
+              <MEMORY-SECTION UUID="b1697ac6-f03f-417a-aedd-d722ff743dc4">
                 <SHORT-NAME>VAR_NOCACHE_INIT_32</SHORT-NAME>
                 <ALIGNMENT>32</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="1ceaf731-4a62-4cb7-826f-7e5d1aa9c523">
+              <MEMORY-SECTION UUID="71a6c918-0b6b-485c-b35e-b1ddc60861dc">
                 <SHORT-NAME>VAR_FAST_INIT_32</SHORT-NAME>
                 <ALIGNMENT>32</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="844d2a37-23d2-42ce-bcaf-3017ee3226bd">
+              <MEMORY-SECTION UUID="456440f1-0634-4751-a9ee-bb2348383bf2">
                 <SHORT-NAME>VAR_NO_INIT_UNSPECIFIED</SHORT-NAME>
                 <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NO_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="45f9068f-ad82-4784-81f9-df5e8413eb3d">
+              <MEMORY-SECTION UUID="e8cc49fa-5a98-46e7-9d2e-a5aa677110fd">
                 <SHORT-NAME>VAR_CLEARED_8</SHORT-NAME>
                 <ALIGNMENT>8</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_CLEARED</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="50e9c32a-a221-4fcd-b68e-8d909ce76ad0">
+              <MEMORY-SECTION UUID="7ccfd1de-8616-49b8-bc4d-2db360416022">
                 <SHORT-NAME>VAR_FAST_CLEARED_16</SHORT-NAME>
                 <ALIGNMENT>16</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_CLEARED</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="f2e868ee-6a3c-4063-8f4a-89c6552c8dd6">
+              <MEMORY-SECTION UUID="8bd72c60-da65-4dd8-9763-c4b0a5c20294">
                 <SHORT-NAME>VAR_NOCACHE_INIT_8</SHORT-NAME>
                 <ALIGNMENT>8</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="9db0640d-5dde-4426-9920-688cae644aed">
+              <MEMORY-SECTION UUID="32952dd1-fd8e-4cf5-b339-a098a01a97ba">
                 <SHORT-NAME>CONST_UNSPECIFIED</SHORT-NAME>
                 <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/CONST</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="50adcdc9-476e-4e38-a086-e0ff59aa34c1">
+              <MEMORY-SECTION UUID="d80ea53a-3677-4375-a480-a51534819c80">
                 <SHORT-NAME>VAR_NOCACHE_NO_INIT_32</SHORT-NAME>
                 <ALIGNMENT>32</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_NO_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="34ece456-1463-4e9a-995f-1b576730b801">
+              <MEMORY-SECTION UUID="5f78a327-4eb6-4a97-90ba-c622ed799e9d">
                 <SHORT-NAME>CONST_32</SHORT-NAME>
                 <ALIGNMENT>32</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/CONST</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="ff925ee7-0dea-4cb8-90aa-186056c5e63f">
+              <MEMORY-SECTION UUID="3a266582-9c75-495d-a608-98aba5f3b440">
                 <SHORT-NAME>VAR_FAST_CLEARED_64</SHORT-NAME>
                 <ALIGNMENT>64</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_CLEARED</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="1cca9081-1943-4144-a7c8-128eaa503237">
+              <MEMORY-SECTION UUID="b9978007-16ee-4ee0-8577-2d9eb0e6881b">
                 <SHORT-NAME>VAR_INIT_32</SHORT-NAME>
                 <ALIGNMENT>32</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="07e5feb4-4cc5-4af4-9500-26c0d3a668c2">
+              <MEMORY-SECTION UUID="a0269d6e-f067-4efb-a6f9-22e398b97560">
                 <SHORT-NAME>VAR_FAST_NO_INIT_64</SHORT-NAME>
                 <ALIGNMENT>64</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_NO_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="5780153f-af9c-48fd-b527-013231651f80">
+              <MEMORY-SECTION UUID="6959771d-de7d-43aa-ad92-7f520a6bf62e">
                 <SHORT-NAME>VAR_INIT_8</SHORT-NAME>
                 <ALIGNMENT>8</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="903401be-d82a-4294-8242-f92e68dea826">
+              <MEMORY-SECTION UUID="729083c2-0514-43f3-9018-f13a52c9dd0d">
                 <SHORT-NAME>VAR_CLEARED_64</SHORT-NAME>
                 <ALIGNMENT>64</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_CLEARED</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="bc78ebfa-bd75-4fbe-9e22-0345c256a004">
+              <MEMORY-SECTION UUID="194693ef-ee8f-4044-8aca-57cafe81cfdb">
                 <SHORT-NAME>VAR_NO_INIT_32</SHORT-NAME>
                 <ALIGNMENT>32</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NO_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="8e9923a6-eeb7-4132-b610-8ff87c25aa2d">
+              <MEMORY-SECTION UUID="bb5a73b8-d44c-4e8e-a122-e47f3f5ded2a">
                 <SHORT-NAME>VAR_NOCACHE_INIT_64</SHORT-NAME>
                 <ALIGNMENT>64</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="40162666-bfac-4469-bbf0-2abafcd04b54">
+              <MEMORY-SECTION UUID="b7604ac7-0cb4-4ca4-acd7-4bcfe733de3a">
                 <SHORT-NAME>VAR_NOCACHE_CLEARED_32</SHORT-NAME>
                 <ALIGNMENT>32</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_CLEARED</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="14c75a9c-d16b-43d5-a1e4-58a83486ba86">
+              <MEMORY-SECTION UUID="49384098-fcc4-495f-8bf4-da2e05adb37f">
                 <SHORT-NAME>VAR_NOCACHE_INIT_BOOLEAN</SHORT-NAME>
                 <ALIGNMENT>BOOLEAN</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="adb742dc-879d-4296-9e40-c17756945b76">
+              <MEMORY-SECTION UUID="aa5121c7-446c-408f-a2bd-bc7fe7d8a9ae">
                 <SHORT-NAME>VAR_FAST_NO_INIT_BOOLEAN</SHORT-NAME>
                 <ALIGNMENT>BOOLEAN</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_NO_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="b99fe2d5-a0b1-48fc-9db0-b0568b7291b0">
+              <MEMORY-SECTION UUID="c8a6cc6b-e77d-4aa7-a828-234ea6b39046">
                 <SHORT-NAME>VAR_FAST_CLEARED_BOOLEAN</SHORT-NAME>
                 <ALIGNMENT>BOOLEAN</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_CLEARED</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="f3f5cac2-a4f0-4b85-8266-7164971cf642">
+              <MEMORY-SECTION UUID="29bd0f04-02b7-427c-ba0c-6881a7357d19">
                 <SHORT-NAME>VAR_CLEARED_BOOLEAN</SHORT-NAME>
                 <ALIGNMENT>BOOLEAN</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_CLEARED</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="47b0aa53-28dd-44fb-99c7-19a291678e44">
+              <MEMORY-SECTION UUID="bdc4dddb-096b-4727-bf3e-12f0ac8e9dd6">
                 <SHORT-NAME>VAR_NO_INIT_BOOLEAN</SHORT-NAME>
                 <ALIGNMENT>BOOLEAN</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NO_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="d1c4ce90-d926-4a8e-8d00-1f74d10d626d">
+              <MEMORY-SECTION UUID="29517c02-a3eb-467d-91cc-5f6837940aec">
                 <SHORT-NAME>VAR_NOCACHE_NO_INIT_64</SHORT-NAME>
                 <ALIGNMENT>64</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_NO_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="c51388fd-a59d-4a56-84a0-3d4ac2f27ae3">
+              <MEMORY-SECTION UUID="2ef94770-1a82-4fdf-a46a-bdd4c9549258">
                 <SHORT-NAME>VAR_FAST_CLEARED_32</SHORT-NAME>
                 <ALIGNMENT>32</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_CLEARED</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="a0ceeed8-abba-4827-958d-14f90e78d878">
+              <MEMORY-SECTION UUID="2cc434f3-ad8d-4678-8b11-cb99af707cd5">
                 <SHORT-NAME>VAR_NOCACHE_NO_INIT_UNSPECIFIED</SHORT-NAME>
                 <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_NO_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="d0f9470b-f528-4068-9cbd-6766219e068f">
+              <MEMORY-SECTION UUID="0ab72ab6-f0b4-4f01-b218-93419cd78866">
                 <SHORT-NAME>VAR_INIT_64</SHORT-NAME>
                 <ALIGNMENT>64</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="35be5285-c4af-4a78-a0c1-aed30762106c">
+              <MEMORY-SECTION UUID="8eaa4571-3a9c-4bf6-9208-510e4dab42c4">
                 <SHORT-NAME>VAR_CLEARED_UNSPECIFIED</SHORT-NAME>
                 <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_CLEARED</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="57595941-621a-4a14-b2c2-2ee1964afa66">
+              <MEMORY-SECTION UUID="d0a1d9af-f0d9-4df7-b481-915a4692b830">
                 <SHORT-NAME>VAR_INIT_UNSPECIFIED</SHORT-NAME>
                 <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="745cedc9-d756-49c5-8c57-144566c5bc17">
+              <MEMORY-SECTION UUID="bade1ccf-729b-4cac-8fc9-db413cfcdcf3">
                 <SHORT-NAME>CONST_8</SHORT-NAME>
                 <ALIGNMENT>8</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/CONST</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="712d1f71-18b9-49dd-bed1-25f4883ce1f6">
+              <MEMORY-SECTION UUID="43800114-fe99-48e7-a356-729b1469d647">
                 <SHORT-NAME>VAR_FAST_NO_INIT_32</SHORT-NAME>
                 <ALIGNMENT>32</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_NO_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="f029aae2-5142-4dfa-a2bb-52de00288662">
+              <MEMORY-SECTION UUID="57acbd71-0da9-41aa-b9bb-69590787b292">
                 <SHORT-NAME>VAR_CLEARED_32</SHORT-NAME>
                 <ALIGNMENT>32</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_CLEARED</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="f9db43f3-43b5-49eb-a0e4-94ffec4228a0">
+              <MEMORY-SECTION UUID="7ac4a0b4-1aa3-4b9e-ad1d-ae59ae125317">
                 <SHORT-NAME>VAR_NOCACHE_NO_INIT_BOOLEAN</SHORT-NAME>
                 <ALIGNMENT>BOOLEAN</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_NO_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="3283752e-8520-4075-80e3-e81f19705a31">
+              <MEMORY-SECTION UUID="0c905e8e-751b-438e-a8ac-97eb69ad32a9">
                 <SHORT-NAME>VAR_INIT_BOOLEAN</SHORT-NAME>
                 <ALIGNMENT>BOOLEAN</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="e7823319-4bea-4c5c-9772-7266e62b7494">
+              <MEMORY-SECTION UUID="ed8fc99c-10f0-4df1-865d-e9107dcdaf96">
                 <SHORT-NAME>VAR_NOCACHE_INIT_UNSPECIFIED</SHORT-NAME>
                 <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="d1c4a7be-1a8f-40fa-bbc5-d30864059fb9">
+              <MEMORY-SECTION UUID="d24716a6-9f8e-4a6c-b407-3e18b80ecee9">
                 <SHORT-NAME>VAR_FAST_INIT_UNSPECIFIED</SHORT-NAME>
                 <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="44a53447-fa73-44a7-9752-96b24181d6a3">
+              <MEMORY-SECTION UUID="16272970-2e27-4b9d-b0b2-fca26e8673c4">
                 <SHORT-NAME>VAR_FAST_NO_INIT_8</SHORT-NAME>
                 <ALIGNMENT>8</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_NO_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="88d57bed-13fe-4819-a7d5-c0ef68728a2f">
+              <MEMORY-SECTION UUID="94fa0699-1c41-48e6-b854-b8b52a895a86">
                 <SHORT-NAME>VAR_FAST_INIT_8</SHORT-NAME>
                 <ALIGNMENT>8</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="d1295ac7-3f12-4049-87f3-978a6769fba9">
+              <MEMORY-SECTION UUID="3e1eec9d-9a67-4497-acb3-34262c8e6613">
                 <SHORT-NAME>VAR_NOCACHE_INIT_16</SHORT-NAME>
                 <ALIGNMENT>16</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="4ef2ea45-3b92-4423-bb3c-b47ddcaa42af">
+              <MEMORY-SECTION UUID="10bea11e-10dd-4f00-a0b8-1183ee31a9a3">
                 <SHORT-NAME>VAR_FAST_NO_INIT_UNSPECIFIED</SHORT-NAME>
                 <ALIGNMENT>UNSPECIFIED</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_NO_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="e7f502f4-8c78-4e86-876d-5759b1bda936">
+              <MEMORY-SECTION UUID="7c5d8d61-184d-4e8c-bde3-520d53ff12b6">
                 <SHORT-NAME>VAR_FAST_INIT_BOOLEAN</SHORT-NAME>
                 <ALIGNMENT>BOOLEAN</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="15a523bc-5980-4840-89be-dfe9bf25964e">
+              <MEMORY-SECTION UUID="c0c81422-9c4b-4f77-a725-0bb42f82e99d">
                 <SHORT-NAME>VAR_FAST_INIT_16</SHORT-NAME>
                 <ALIGNMENT>16</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_FAST_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="3d017054-8017-4d24-8629-dcbcc5411d2e">
+              <MEMORY-SECTION UUID="db7b39d7-f1b4-4729-b174-f21040ff3ad5">
                 <SHORT-NAME>VAR_NOCACHE_NO_INIT_8</SHORT-NAME>
                 <ALIGNMENT>8</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_NO_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="c410013c-9843-41cf-ab9b-c6e637ed708f">
+              <MEMORY-SECTION UUID="9e9d1296-c12f-45d5-9d5f-675200c81cb2">
                 <SHORT-NAME>CONST_BOOLEAN</SHORT-NAME>
                 <ALIGNMENT>BOOLEAN</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/CONST</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="6860aeae-1da9-4561-b859-909e3e5fc9ed">
+              <MEMORY-SECTION UUID="68c9e3b7-9701-4a6e-bffa-e9646cefbe42">
                 <SHORT-NAME>VAR_INIT_16</SHORT-NAME>
                 <ALIGNMENT>16</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
-              <MEMORY-SECTION UUID="e89773fc-1a90-4f1d-a836-656fce9542bf">
+              <MEMORY-SECTION UUID="502fd93c-c1b8-4bc6-97bf-51b94312b599">
                 <SHORT-NAME>VAR_NOCACHE_NO_INIT_16</SHORT-NAME>
                 <ALIGNMENT>16</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_NO_INIT</SW-ADDRMETHOD-REF>
@@ -331,10 +331,13 @@
         <AR-PACKAGE UUID="66089a65-abe2-42e8-9763-ff71798c7da8">
           <SHORT-NAME>EcuM_ib_bswmd</SHORT-NAME>
           <AR-PACKAGES>
-            <AR-PACKAGE UUID="1b74ee97-fa1d-41b0-b408-661cb9fad5d8">
+            <AR-PACKAGE UUID="535abe7f-b615-4edf-80ab-0900a939131b">
+              <SHORT-NAME>XcpEvents</SHORT-NAME>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="fe27ba8f-6dd7-42f2-84c7-fa1d9545d3cb">
               <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
               <ELEMENTS>
-                <BSW-MODULE-DESCRIPTION UUID="d3a796ad-bffa-4aca-983e-137675d6c27b">
+                <BSW-MODULE-DESCRIPTION UUID="208c2b37-bad5-46ea-8029-c694d29ea59d">
                   <SHORT-NAME>EcuM</SHORT-NAME>
                   <PROVIDED-ENTRYS>
                     <BSW-MODULE-ENTRY-REF-CONDITIONAL>
@@ -342,28 +345,28 @@
                     </BSW-MODULE-ENTRY-REF-CONDITIONAL>
                   </PROVIDED-ENTRYS>
                   <INTERNAL-BEHAVIORS>
-                    <BSW-INTERNAL-BEHAVIOR UUID="ff982f37-436f-48b8-ba16-1900ef6a61e8">
+                    <BSW-INTERNAL-BEHAVIOR UUID="cb1d5028-0757-4f89-b1ac-ebb9933b1c8e">
                       <SHORT-NAME>EcuMBehavior</SHORT-NAME>
                       <EXCLUSIVE-AREAS>
-                        <EXCLUSIVE-AREA UUID="65855926-710e-4523-a7c0-d53f3b0b9be9">
+                        <EXCLUSIVE-AREA UUID="e30654bf-217d-4271-b8df-f5b82395387f">
                           <SHORT-NAME>ECUM_EXCLUSIVE_AREA_0</SHORT-NAME>
                           <DESC>
                             <L-2 L="FOR-ALL">This exclusive area shall disable all wake up interrupts to prevent overwriting of some global variables.</L-2>
                           </DESC>
                         </EXCLUSIVE-AREA>
-                        <EXCLUSIVE-AREA UUID="bba9a21b-05e6-4c83-af8e-fa232b740eaa">
+                        <EXCLUSIVE-AREA UUID="1cb49a2b-c7e1-409a-9cdd-c2f9685a63e0">
                           <SHORT-NAME>ECUM_EXCLUSIVE_AREA_1</SHORT-NAME>
                           <DESC>
                             <L-2 L="FOR-ALL">This exclusive area is only used in case of multi core and if the the EcuM is configured to handle also the slave cores. It must be configured as a spinlock to allow access to some variables simultaneously from multiple cores.</L-2>
                           </DESC>
                         </EXCLUSIVE-AREA>
-                        <EXCLUSIVE-AREA UUID="02074a7c-b344-4c12-8fa2-a6ae8cc04de9">
+                        <EXCLUSIVE-AREA UUID="14eb84d6-905b-4d22-8749-bc4487bfa5ec">
                           <SHORT-NAME>ECUM_EXCLUSIVE_AREA_2</SHORT-NAME>
                           <DESC>
                             <L-2 L="FOR-ALL">This exclusive area is used for accessing the clock variable. It shall disable GPT interrupts and task changes. Only necessary if 32 Bit access is not atomic and Alarm Clock is present.</L-2>
                           </DESC>
                         </EXCLUSIVE-AREA>
-                        <EXCLUSIVE-AREA UUID="21e66814-cc11-4aad-92e7-f8c75ed197fa">
+                        <EXCLUSIVE-AREA UUID="cfa25297-caff-466c-9eed-fa8df581c493">
                           <SHORT-NAME>ECUM_EXCLUSIVE_AREA_3</SHORT-NAME>
                           <DESC>
                             <L-2 L="FOR-ALL">This This exclusive area must be configured as a spin lock to protect access on global shutdown target variables.</L-2>
@@ -371,13 +374,13 @@
                         </EXCLUSIVE-AREA>
                       </EXCLUSIVE-AREAS>
                       <ENTITYS>
-                        <BSW-SCHEDULABLE-ENTITY UUID="fc07fee8-a351-4737-9773-35a193a39b54">
+                        <BSW-SCHEDULABLE-ENTITY UUID="b1fbc879-9ea2-4a62-9321-51f4e7694f05">
                           <SHORT-NAME>EcuM_MainFunction</SHORT-NAME>
                           <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM_MainFunction</IMPLEMENTED-ENTRY-REF>
                         </BSW-SCHEDULABLE-ENTITY>
                       </ENTITYS>
                       <EVENTS>
-                        <BSW-TIMING-EVENT UUID="76278b42-c95a-442b-9901-497a05dabc43">
+                        <BSW-TIMING-EVENT UUID="6ffb5cf5-4b8a-40f7-9473-f46fa37d7e83">
                           <SHORT-NAME>EcuM_MainFunctionTimingEvent0</SHORT-NAME>
                           <STARTS-ON-EVENT-REF DEST="BSW-SCHEDULABLE-ENTITY">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/EcuM_MainFunction</STARTS-ON-EVENT-REF>
                           <PERIOD>0.01</PERIOD>
@@ -386,15 +389,12 @@
                     </BSW-INTERNAL-BEHAVIOR>
                   </INTERNAL-BEHAVIORS>
                 </BSW-MODULE-DESCRIPTION>
-                <BSW-MODULE-ENTRY UUID="7b30c12a-a8ba-4ca9-ab4c-b83377d4e724">
+                <BSW-MODULE-ENTRY UUID="f0d73013-8418-436f-9cfa-b8eb5e9d0827">
                   <SHORT-NAME>EcuM_MainFunction</SHORT-NAME>
                   <CALL-TYPE>SCHEDULED</CALL-TYPE>
                   <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
                 </BSW-MODULE-ENTRY>
               </ELEMENTS>
-            </AR-PACKAGE>
-            <AR-PACKAGE UUID="535abe7f-b615-4edf-80ab-0900a939131b">
-              <SHORT-NAME>XcpEvents</SHORT-NAME>
             </AR-PACKAGE>
           </AR-PACKAGES>
         </AR-PACKAGE>

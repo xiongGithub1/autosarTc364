@@ -1,0 +1,3230 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc21520a --dep-file=Appl\\GenData\\.Com_Lcfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\mak -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Make -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteAnalyzer -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache\\-148438436 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -g2 --make-target=Appl\\GenData\\Com_Lcfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\Com_Lcfg.src ..\\Appl\\GenData\\Com_Lcfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\GenData\\Com_Lcfg.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.Com_Lcfg.Com_MainFunctionRx_ComMainFunctionRx',code,cluster('Com_MainFunctionRx_ComMainFunctionRx')
+	.sect	'.text.Com_Lcfg.Com_MainFunctionRx_ComMainFunctionRx'
+	.align	2
+	
+	.global	Com_MainFunctionRx_ComMainFunctionRx
+
+; ..\Appl\GenData\Com_Lcfg.c	     1  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	     2   *  COPYRIGHT
+; ..\Appl\GenData\Com_Lcfg.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Com_Lcfg.c	     4   *  \verbatim
+; ..\Appl\GenData\Com_Lcfg.c	     5   *
+; ..\Appl\GenData\Com_Lcfg.c	     6   *                 This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\Appl\GenData\Com_Lcfg.c	     7   *                 Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\Appl\GenData\Com_Lcfg.c	     8   *                 All other rights remain with Vector Informatik GmbH.
+; ..\Appl\GenData\Com_Lcfg.c	     9   *  \endverbatim
+; ..\Appl\GenData\Com_Lcfg.c	    10   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Com_Lcfg.c	    11   *  LICENSE
+; ..\Appl\GenData\Com_Lcfg.c	    12   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Com_Lcfg.c	    13   *            Module: Com
+; ..\Appl\GenData\Com_Lcfg.c	    14   *           Program: MSR_Vector_SLP4
+; ..\Appl\GenData\Com_Lcfg.c	    15   *          Customer: China Lithium Battery Technology Co., Ltd.
+; ..\Appl\GenData\Com_Lcfg.c	    16   *       Expiry Date: 2025-08-26
+; ..\Appl\GenData\Com_Lcfg.c	    17   *  Ordered Derivat.: SAK-TC387QP-160F300S AE
+; ..\Appl\GenData\Com_Lcfg.c	    18   *    License Scope : The usage is restricted to CBD2200508_D00
+; ..\Appl\GenData\Com_Lcfg.c	    19   *
+; ..\Appl\GenData\Com_Lcfg.c	    20   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Com_Lcfg.c	    21   *  FILE DESCRIPTION
+; ..\Appl\GenData\Com_Lcfg.c	    22   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Com_Lcfg.c	    23   *              File: Com_Lcfg.c
+; ..\Appl\GenData\Com_Lcfg.c	    24   *   Generation Time: 2024-07-01 10:35:18
+; ..\Appl\GenData\Com_Lcfg.c	    25   *           Project: last364 - Version 1.0
+; ..\Appl\GenData\Com_Lcfg.c	    26   *          Delivery: CBD2200508_D00
+; ..\Appl\GenData\Com_Lcfg.c	    27   *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
+; ..\Appl\GenData\Com_Lcfg.c	    28   *
+; ..\Appl\GenData\Com_Lcfg.c	    29   *
+; ..\Appl\GenData\Com_Lcfg.c	    30   *********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    31  
+; ..\Appl\GenData\Com_Lcfg.c	    32  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    33   ! BETA VERSION                                                                                                       !
+; ..\Appl\GenData\Com_Lcfg.c	    34   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\Appl\GenData\Com_Lcfg.c	    35   ! This version of DaVinci Configurator Classic and/or the related Basic Software Package is BETA software.               !
+; ..\Appl\GenData\Com_Lcfg.c	    36   ! BETA Software is basically operable, but not sufficiently tested, verified and/or qualified for use in series      !
+; ..\Appl\GenData\Com_Lcfg.c	    37   ! production and/or in vehicles operating on public or non-public roads.                                             !
+; ..\Appl\GenData\Com_Lcfg.c	    38   ! In particular, without limitation, BETA Software may cause unpredictable ECU behavior, may not provide all         !
+; ..\Appl\GenData\Com_Lcfg.c	    39   ! functions necessary for use in series production and/or may not comply with quality requirements which are         !
+; ..\Appl\GenData\Com_Lcfg.c	    40   ! necessary according to the state of the art. BETA Software must not be used in series production.                  !
+; ..\Appl\GenData\Com_Lcfg.c	    41   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\Appl\GenData\Com_Lcfg.c	    42  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    43  
+; ..\Appl\GenData\Com_Lcfg.c	    44  
+; ..\Appl\GenData\Com_Lcfg.c	    45  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    46    MISRA / PClint JUSTIFICATIONS
+; ..\Appl\GenData\Com_Lcfg.c	    47  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    48  
+; ..\Appl\GenData\Com_Lcfg.c	    49  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    50    INCLUDES
+; ..\Appl\GenData\Com_Lcfg.c	    51  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    52  #define V_IL_ASRCOMCFG5_LCFG_SOURCE
+; ..\Appl\GenData\Com_Lcfg.c	    53  
+; ..\Appl\GenData\Com_Lcfg.c	    54  #include "Com.h"
+; ..\Appl\GenData\Com_Lcfg.c	    55  #include "Com_Timer.h"
+; ..\Appl\GenData\Com_Lcfg.c	    56  #include "Com_TxModeHdlr.h"
+; ..\Appl\GenData\Com_Lcfg.c	    57  #include "Com_LLIf.h"
+; ..\Appl\GenData\Com_Lcfg.c	    58  #include "Com_MainFunctions.h"
+; ..\Appl\GenData\Com_Lcfg.c	    59  
+; ..\Appl\GenData\Com_Lcfg.c	    60  
+; ..\Appl\GenData\Com_Lcfg.c	    61  #include "SchM_Com.h"
+; ..\Appl\GenData\Com_Lcfg.c	    62  
+; ..\Appl\GenData\Com_Lcfg.c	    63  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    64    LOCAL CONSTANT MACROS
+; ..\Appl\GenData\Com_Lcfg.c	    65  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    66  
+; ..\Appl\GenData\Com_Lcfg.c	    67  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    68    LOCAL FUNCTION MACROS
+; ..\Appl\GenData\Com_Lcfg.c	    69  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    70  
+; ..\Appl\GenData\Com_Lcfg.c	    71  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    72    LOCAL DATA TYPES AND STRUCTURES
+; ..\Appl\GenData\Com_Lcfg.c	    73  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    74  
+; ..\Appl\GenData\Com_Lcfg.c	    75  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    76    LOCAL DATA PROTOTYPES
+; ..\Appl\GenData\Com_Lcfg.c	    77  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    78  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    79    CONFIGURATION CLASS: PRE_COMPILE
+; ..\Appl\GenData\Com_Lcfg.c	    80    SECTION: LOCAL DATA PROTOTYPES
+; ..\Appl\GenData\Com_Lcfg.c	    81  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    82  
+; ..\Appl\GenData\Com_Lcfg.c	    83  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    84    CONFIGURATION CLASS: LINK
+; ..\Appl\GenData\Com_Lcfg.c	    85    SECTION: LOCAL DATA PROTOTYPES
+; ..\Appl\GenData\Com_Lcfg.c	    86  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    87  
+; ..\Appl\GenData\Com_Lcfg.c	    88  
+; ..\Appl\GenData\Com_Lcfg.c	    89  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    90    LOCAL DATA
+; ..\Appl\GenData\Com_Lcfg.c	    91  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    92  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    93    CONFIGURATION CLASS: PRE_COMPILE
+; ..\Appl\GenData\Com_Lcfg.c	    94    SECTION: LOCAL DATA
+; ..\Appl\GenData\Com_Lcfg.c	    95  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    96  
+; ..\Appl\GenData\Com_Lcfg.c	    97  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    98    CONFIGURATION CLASS: LINK
+; ..\Appl\GenData\Com_Lcfg.c	    99    SECTION: LOCAL DATA
+; ..\Appl\GenData\Com_Lcfg.c	   100  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   101  
+; ..\Appl\GenData\Com_Lcfg.c	   102  
+; ..\Appl\GenData\Com_Lcfg.c	   103  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   104    GLOBAL DATA
+; ..\Appl\GenData\Com_Lcfg.c	   105  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   106  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   107    CONFIGURATION CLASS: PRE_COMPILE
+; ..\Appl\GenData\Com_Lcfg.c	   108    SECTION: GLOBAL DATA
+; ..\Appl\GenData\Com_Lcfg.c	   109  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   110  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   111    Com_ConstValueUInt8
+; ..\Appl\GenData\Com_Lcfg.c	   112  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   113  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   114    \var    Com_ConstValueUInt8
+; ..\Appl\GenData\Com_Lcfg.c	   115    \brief  Optimized array of commonly used values like initial or invalid values. (BOOLEAN, UINT8)
+; ..\Appl\GenData\Com_Lcfg.c	   116  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   117  #define COM_START_SEC_CONST_8
+; ..\Appl\GenData\Com_Lcfg.c	   118  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   119  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   120  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   121  CONST(Com_ConstValueUInt8Type, COM_CONST) Com_ConstValueUInt8[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   122    /* Index     ConstValueUInt8      Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   123    /*     0 */            0x00u   /* [/ActiveEcuC/Com/ComConfig/sig_State_RearLeftDoor_omsg_Receive_oCAN00_84ad4140_RxInitValue, /ActiveEcuC/Com/ComConfig/sig_State_RearRightDoor_omsg_Receive_oCAN00_a8945098_RxInitValue] */
+; ..\Appl\GenData\Com_Lcfg.c	   124  };
+; ..\Appl\GenData\Com_Lcfg.c	   125  #define COM_STOP_SEC_CONST_8
+; ..\Appl\GenData\Com_Lcfg.c	   126  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   127  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   128  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   129  
+; ..\Appl\GenData\Com_Lcfg.c	   130  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   131    Com_IPduGroupInfo
+; ..\Appl\GenData\Com_Lcfg.c	   132  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   133  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   134    \var    Com_IPduGroupInfo
+; ..\Appl\GenData\Com_Lcfg.c	   135    \brief  Contains all I-Pdu Group relevant information
+; ..\Appl\GenData\Com_Lcfg.c	   136    \details
+; ..\Appl\GenData\Com_Lcfg.c	   137    Element                                    Description
+; ..\Appl\GenData\Com_Lcfg.c	   138    IPduGroupInfoToSubIPduGroupsIndStartIdx    the start index of the 0:n relation pointing to Com_IPduGroupInfoToSubIPduGroupsInd
+; ..\Appl\GenData\Com_Lcfg.c	   139    PartitionsRxStructIdx                      the index of the 0:1 relation pointing to Com_PartitionsRxStruct
+; ..\Appl\GenData\Com_Lcfg.c	   140    PartitionsTxStructIdx                      the index of the 0:1 relation pointing to Com_PartitionsTxStruct
+; ..\Appl\GenData\Com_Lcfg.c	   141    RxPduInfoIndEndIdx                         the end index of the 0:n relation pointing to Com_RxPduInfoInd
+; ..\Appl\GenData\Com_Lcfg.c	   142    RxPduInfoIndStartIdx                       the start index of the 0:n relation pointing to Com_RxPduInfoInd
+; ..\Appl\GenData\Com_Lcfg.c	   143    TxPduInfoIndEndIdx                         the end index of the 0:n relation pointing to Com_TxPduInfoInd
+; ..\Appl\GenData\Com_Lcfg.c	   144    TxPduInfoIndStartIdx                       the start index of the 0:n relation pointing to Com_TxPduInfoInd
+; ..\Appl\GenData\Com_Lcfg.c	   145  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   146  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   147  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   148  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   149  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   150  CONST(Com_IPduGroupInfoType, COM_CONST) Com_IPduGroupInfo[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   151      /* Index    IPduGroupInfoToSubIPduGroupsIndStartIdx  PartitionsRxStructIdx  PartitionsTxStructIdx  RxPduInfoIndEndIdx                        RxPduInfoIndStartIdx                        TxPduInfoIndEndIdx                        TxPduInfoIndStartIdx                              Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   152    { /*     0 */                                      0u,                    0u,                    0u,                                       1u,                                         0u, COM_NO_TXPDUINFOINDENDIDXOFIPDUGROUPINFO, COM_NO_TXPDUINFOINDSTARTIDXOFIPDUGROUPINFO },  /* [/ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Rx_4cbf71f7, /ActiveEcuC/Com/ComConfig/msg_Receive_oCAN00_2b456e3f_Rx] */
+; ..\Appl\GenData\Com_Lcfg.c	   153    { /*     1 */                                      1u,                    0u,                    0u, COM_NO_RXPDUINFOINDENDIDXOFIPDUGROUPINFO, COM_NO_RXPDUINFOINDSTARTIDXOFIPDUGROUPINFO,                                       2u,                                         0u }   /* [/ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, /ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx, /ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   154  };
+; ..\Appl\GenData\Com_Lcfg.c	   155  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   156  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   157  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   158  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   159  
+; ..\Appl\GenData\Com_Lcfg.c	   160  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   161    Com_IPduGroupInfoOfTxPduInfoInd
+; ..\Appl\GenData\Com_Lcfg.c	   162  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   163  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   164    \var    Com_IPduGroupInfoOfTxPduInfoInd
+; ..\Appl\GenData\Com_Lcfg.c	   165    \brief  the indexes of the 1:1 sorted relation pointing to Com_IPduGroupInfo
+; ..\Appl\GenData\Com_Lcfg.c	   166  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   167  #define COM_START_SEC_CONST_8
+; ..\Appl\GenData\Com_Lcfg.c	   168  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   169  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   170  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   171  CONST(Com_IPduGroupInfoOfTxPduInfoIndType, COM_CONST) Com_IPduGroupInfoOfTxPduInfoInd[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   172    /* Index     IPduGroupInfoOfTxPduInfoInd      Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   173    /*     0 */                           1u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   174    /*     1 */                           1u   /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   175  };
+; ..\Appl\GenData\Com_Lcfg.c	   176  #define COM_STOP_SEC_CONST_8
+; ..\Appl\GenData\Com_Lcfg.c	   177  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   178  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   179  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   180  
+; ..\Appl\GenData\Com_Lcfg.c	   181  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   182    Com_MainFunctionRxStruct
+; ..\Appl\GenData\Com_Lcfg.c	   183  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   184  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   185    \var    Com_MainFunctionRxStruct
+; ..\Appl\GenData\Com_Lcfg.c	   186    \details
+; ..\Appl\GenData\Com_Lcfg.c	   187    Element                                 Description
+; ..\Appl\GenData\Com_Lcfg.c	   188    RxPduInfoOfMainFunctionRxIndStartIdx    the start index of the 0:n relation pointing to Com_RxPduInfoOfMainFunctionRxInd
+; ..\Appl\GenData\Com_Lcfg.c	   189  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   190  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   191  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   192  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   193  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   194  CONST(Com_MainFunctionRxStructType, COM_CONST) Com_MainFunctionRxStruct[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   195      /* Index    RxPduInfoOfMainFunctionRxIndStartIdx        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   196    { /*     0 */                                   0u }   /* [ComMainFunctionRx] */
+; ..\Appl\GenData\Com_Lcfg.c	   197  };
+; ..\Appl\GenData\Com_Lcfg.c	   198  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   199  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   200  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   201  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   202  
+; ..\Appl\GenData\Com_Lcfg.c	   203  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   204    Com_MainFunctionTxStruct
+; ..\Appl\GenData\Com_Lcfg.c	   205  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   206  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   207    \var    Com_MainFunctionTxStruct
+; ..\Appl\GenData\Com_Lcfg.c	   208    \details
+; ..\Appl\GenData\Com_Lcfg.c	   209    Element                                   Description
+; ..\Appl\GenData\Com_Lcfg.c	   210    TxCyclicPduOfMainFunctionTxIndStartIdx    the start index of the 0:n relation pointing to Com_TxCyclicPduOfMainFunctionTxInd
+; ..\Appl\GenData\Com_Lcfg.c	   211    TxPduInfoOfMainFunctionTxIndStartIdx      the start index of the 0:n relation pointing to Com_TxPduInfoOfMainFunctionTxInd
+; ..\Appl\GenData\Com_Lcfg.c	   212  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   213  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   214  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   215  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   216  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   217  CONST(Com_MainFunctionTxStructType, COM_CONST) Com_MainFunctionTxStruct[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   218      /* Index    TxCyclicPduOfMainFunctionTxIndStartIdx  TxPduInfoOfMainFunctionTxIndStartIdx        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   219    { /*     0 */                                     0u,                                   0u }   /* [ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	   220  };
+; ..\Appl\GenData\Com_Lcfg.c	   221  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   222  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   223  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   224  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   225  
+; ..\Appl\GenData\Com_Lcfg.c	   226  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   227    Com_RxAccessInfo
+; ..\Appl\GenData\Com_Lcfg.c	   228  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   229  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   230    \var    Com_RxAccessInfo
+; ..\Appl\GenData\Com_Lcfg.c	   231    \brief  Contains all signal layout information necessary for signal access within an I-PDU.
+; ..\Appl\GenData\Com_Lcfg.c	   232    \details
+; ..\Appl\GenData\Com_Lcfg.c	   233    Element               Description
+; ..\Appl\GenData\Com_Lcfg.c	   234    DynSignal             TRUE if the Signal is a dynamic length signal (UINT8_DYN), FALSE otherwise.
+; ..\Appl\GenData\Com_Lcfg.c	   235    Buffer                the enum value of the according target of the 0:1 relation pointing to Com_RxSigBufferUInt8,Com_RxSigBufferUInt16,Com_RxSigBufferUInt32,Com_RxSigBufferUInt64,Com_RxSigBufferZeroBit,Com_RxSigBufferSInt8,Com_RxSigBufferSInt16,Com_RxSigBufferSInt32,Com_RxSigBufferSInt64,Com_RxSigBufferFloat32,Com_RxSigBufferFloat64
+; ..\Appl\GenData\Com_Lcfg.c	   236    BufferIdx             the index of the 0:1 relation pointing to Com_RxSigBufferUInt8,Com_RxSigBufferUInt16,Com_RxSigBufferUInt32,Com_RxSigBufferUInt64,Com_RxSigBufferZeroBit,Com_RxSigBufferSInt8,Com_RxSigBufferSInt16,Com_RxSigBufferSInt32,Com_RxSigBufferSInt64,Com_RxSigBufferFloat32,Com_RxSigBufferFloat64
+; ..\Appl\GenData\Com_Lcfg.c	   237    InitValueIdx          the index of the 0:1 relation pointing to Com_ConstValueUInt8,Com_ConstValueUInt16,Com_ConstValueUInt32,Com_ConstValueUInt64,Com_ConstValueSInt8,Com_ConstValueSInt16,Com_ConstValueSInt32,Com_ConstValueSInt64,Com_ConstValueFloat32,Com_ConstValueFloat64
+; ..\Appl\GenData\Com_Lcfg.c	   238    SignalLengthInByte    The length of the Signal/GroupSignal in Byte
+; ..\Appl\GenData\Com_Lcfg.c	   239  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   240  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   241  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   242  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   243  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   244  CONST(Com_RxAccessInfoType, COM_CONST) Com_RxAccessInfo[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   245      /* Index    DynSignal  Buffer                                     BufferIdx  InitValueIdx  SignalLengthInByte        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   246    { /*     0 */     FALSE, COM_RXSIGBUFFERUINT8_BUFFEROFRXACCESSINFO,        0u,           0u,                 1u },  /* [/ActiveEcuC/Com/ComConfig/sig_State_RearLeftDoor_omsg_Receive_oCAN00_84ad4140_Rx, /ActiveEcuC/Com/ComConfig/msg_Receive_oCAN00_2b456e3f_Rx] */
+; ..\Appl\GenData\Com_Lcfg.c	   247    { /*     1 */     FALSE, COM_RXSIGBUFFERUINT8_BUFFEROFRXACCESSINFO,        1u,           0u,                 1u }   /* [/ActiveEcuC/Com/ComConfig/sig_State_RearRightDoor_omsg_Receive_oCAN00_a8945098_Rx, /ActiveEcuC/Com/ComConfig/msg_Receive_oCAN00_2b456e3f_Rx] */
+; ..\Appl\GenData\Com_Lcfg.c	   248  };
+; ..\Appl\GenData\Com_Lcfg.c	   249  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   250  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   251  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   252  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   253  
+; ..\Appl\GenData\Com_Lcfg.c	   254  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   255    Com_RxPduInfo
+; ..\Appl\GenData\Com_Lcfg.c	   256  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   257  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   258    \var    Com_RxPduInfo
+; ..\Appl\GenData\Com_Lcfg.c	   259    \brief  Contains all relevant common information for Rx I-PDUs.
+; ..\Appl\GenData\Com_Lcfg.c	   260    \details
+; ..\Appl\GenData\Com_Lcfg.c	   261    Element                                Description
+; ..\Appl\GenData\Com_Lcfg.c	   262    HandleRxPduDeferredIdx                 the index of the 0:1 relation pointing to Com_HandleRxPduDeferred
+; ..\Appl\GenData\Com_Lcfg.c	   263    IPduGroupInfoOfRxPduInfoIndStartIdx    the start index of the 0:n relation pointing to Com_IPduGroupInfoOfRxPduInfoInd
+; ..\Appl\GenData\Com_Lcfg.c	   264    MainFunctionRxStructIdx                the index of the 0:1 relation pointing to Com_MainFunctionRxStruct
+; ..\Appl\GenData\Com_Lcfg.c	   265    RxAccessInfoIndStartIdx                the start index of the 0:n relation pointing to Com_RxAccessInfoInd
+; ..\Appl\GenData\Com_Lcfg.c	   266    RxDefPduBufferLength                   the number of relations pointing to Com_RxDefPduBuffer
+; ..\Appl\GenData\Com_Lcfg.c	   267    RxSigInfoStartIdx                      the start index of the 0:n relation pointing to Com_RxSigInfo
+; ..\Appl\GenData\Com_Lcfg.c	   268  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   269  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   270  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   271  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   272  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   273  CONST(Com_RxPduInfoType, COM_CONST) Com_RxPduInfo[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   274      /* Index    HandleRxPduDeferredIdx  IPduGroupInfoOfRxPduInfoIndStartIdx  MainFunctionRxStructIdx  RxAccessInfoIndStartIdx  RxDefPduBufferLength  RxSigInfoStartIdx        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   275    { /*     0 */                     0u,                                  0u,                      0u,                      0u,                   1u,                0u }   /* [/ActiveEcuC/Com/ComConfig/msg_Receive_oCAN00_2b456e3f_Rx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Rx_4cbf71f7, ComMainFunctionRx] */
+; ..\Appl\GenData\Com_Lcfg.c	   276  };
+; ..\Appl\GenData\Com_Lcfg.c	   277  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   278  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   279  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   280  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   281  
+; ..\Appl\GenData\Com_Lcfg.c	   282  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   283    Com_RxSigInfo
+; ..\Appl\GenData\Com_Lcfg.c	   284  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   285  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   286    \var    Com_RxSigInfo
+; ..\Appl\GenData\Com_Lcfg.c	   287    \brief  Contains all relevant information for Rx signals.
+; ..\Appl\GenData\Com_Lcfg.c	   288    \details
+; ..\Appl\GenData\Com_Lcfg.c	   289    Element     Description
+; ..\Appl\GenData\Com_Lcfg.c	   290    ValidDlc    Minimum length of PDU required to completely receive the signal or signal group.
+; ..\Appl\GenData\Com_Lcfg.c	   291  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   292  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   293  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   294  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   295  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   296  CONST(Com_RxSigInfoType, COM_CONST) Com_RxSigInfo[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   297      /* Index    ValidDlc        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   298    { /*     0 */       1u },  /* [/ActiveEcuC/Com/ComConfig/msg_Receive_oCAN00_2b456e3f_Rx] */
+; ..\Appl\GenData\Com_Lcfg.c	   299    { /*     1 */       1u }   /* [/ActiveEcuC/Com/ComConfig/msg_Receive_oCAN00_2b456e3f_Rx] */
+; ..\Appl\GenData\Com_Lcfg.c	   300  };
+; ..\Appl\GenData\Com_Lcfg.c	   301  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   302  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   303  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   304  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   305  
+; ..\Appl\GenData\Com_Lcfg.c	   306  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   307    Com_TxAccessInfo
+; ..\Appl\GenData\Com_Lcfg.c	   308  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   309  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   310    \var    Com_TxAccessInfo
+; ..\Appl\GenData\Com_Lcfg.c	   311    \brief  Contains all signal layout information necessary for signal access within an I-PDU.
+; ..\Appl\GenData\Com_Lcfg.c	   312    \details
+; ..\Appl\GenData\Com_Lcfg.c	   313    Element         Description
+; ..\Appl\GenData\Com_Lcfg.c	   314    TxSigInfoIdx    the index of the 0:1 relation pointing to Com_TxSigInfo
+; ..\Appl\GenData\Com_Lcfg.c	   315  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   316  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   317  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   318  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   319  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   320  CONST(Com_TxAccessInfoType, COM_CONST) Com_TxAccessInfo[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   321      /* Index    TxSigInfoIdx        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   322    { /*     0 */           0u },  /* [/ActiveEcuC/Com/ComConfig/sig_LampCnt_omsg_MyECU_Lamp_oCAN00_f37e68ea_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   323    { /*     1 */           1u }   /* [/ActiveEcuC/Com/ComConfig/sig_RearInteriorLight_omsg_Transmit_oCAN00_49a633c1_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   324  };
+; ..\Appl\GenData\Com_Lcfg.c	   325  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   326  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   327  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   328  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   329  
+; ..\Appl\GenData\Com_Lcfg.c	   330  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   331    Com_TxModeFalse
+; ..\Appl\GenData\Com_Lcfg.c	   332  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   333  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   334    \var    Com_TxModeFalse
+; ..\Appl\GenData\Com_Lcfg.c	   335    \brief  Contains all relevant information for transmission mode false.
+; ..\Appl\GenData\Com_Lcfg.c	   336    \details
+; ..\Appl\GenData\Com_Lcfg.c	   337    Element     Description
+; ..\Appl\GenData\Com_Lcfg.c	   338    Periodic    TRUE if transmission mode contains a cyclic part.
+; ..\Appl\GenData\Com_Lcfg.c	   339  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   340  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   341  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   342  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   343  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   344  CONST(Com_TxModeFalseType, COM_CONST) Com_TxModeFalse[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   345      /* Index    Periodic        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   346    { /*     0 */     TRUE }   /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx, /ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   347  };
+; ..\Appl\GenData\Com_Lcfg.c	   348  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   349  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   350  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   351  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   352  
+; ..\Appl\GenData\Com_Lcfg.c	   353  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   354    Com_TxModeInfo
+; ..\Appl\GenData\Com_Lcfg.c	   355  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   356  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   357    \var    Com_TxModeInfo
+; ..\Appl\GenData\Com_Lcfg.c	   358    \brief  Contains all relevant information for transmission mode handling.
+; ..\Appl\GenData\Com_Lcfg.c	   359    \details
+; ..\Appl\GenData\Com_Lcfg.c	   360    Element          Description
+; ..\Appl\GenData\Com_Lcfg.c	   361    InitMode         Initial transmission mode selector of the Tx I-PDU.
+; ..\Appl\GenData\Com_Lcfg.c	   362    TxModeTrueIdx    the index of the 1:1 relation pointing to Com_TxModeTrue
+; ..\Appl\GenData\Com_Lcfg.c	   363  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   364  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   365  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   366  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   367  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   368  CONST(Com_TxModeInfoType, COM_CONST) Com_TxModeInfo[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   369      /* Index    InitMode  TxModeTrueIdx        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   370    { /*     0 */     TRUE,            0u },  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   371    { /*     1 */     TRUE,            0u }   /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   372  };
+; ..\Appl\GenData\Com_Lcfg.c	   373  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   374  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   375  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   376  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   377  
+; ..\Appl\GenData\Com_Lcfg.c	   378  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   379    Com_TxModeTrue
+; ..\Appl\GenData\Com_Lcfg.c	   380  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   381  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   382    \var    Com_TxModeTrue
+; ..\Appl\GenData\Com_Lcfg.c	   383    \brief  Contains all relevant information for transmission mode true.
+; ..\Appl\GenData\Com_Lcfg.c	   384    \details
+; ..\Appl\GenData\Com_Lcfg.c	   385    Element     Description
+; ..\Appl\GenData\Com_Lcfg.c	   386    Periodic    TRUE if transmission mode contains a cyclic part.
+; ..\Appl\GenData\Com_Lcfg.c	   387  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   388  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   389  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   390  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   391  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   392  CONST(Com_TxModeTrueType, COM_CONST) Com_TxModeTrue[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   393      /* Index    Periodic        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   394    { /*     0 */     TRUE }   /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx, /ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   395  };
+; ..\Appl\GenData\Com_Lcfg.c	   396  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   397  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   398  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   399  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   400  
+; ..\Appl\GenData\Com_Lcfg.c	   401  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   402    Com_TxPduInfo
+; ..\Appl\GenData\Com_Lcfg.c	   403  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   404  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   405    \var    Com_TxPduInfo
+; ..\Appl\GenData\Com_Lcfg.c	   406    \brief  Contains all relevant information for Tx I-PDUs.
+; ..\Appl\GenData\Com_Lcfg.c	   407    \details
+; ..\Appl\GenData\Com_Lcfg.c	   408    Element                                Description
+; ..\Appl\GenData\Com_Lcfg.c	   409    IPduGroupInfoOfTxPduInfoIndStartIdx    the start index of the 0:n relation pointing to Com_IPduGroupInfoOfTxPduInfoInd
+; ..\Appl\GenData\Com_Lcfg.c	   410    PartitionsTxStructIdx                  the index of the 1:1 relation pointing to Com_PartitionsTxStruct
+; ..\Appl\GenData\Com_Lcfg.c	   411    TxBufferLength                         the number of relations pointing to Com_TxBuffer
+; ..\Appl\GenData\Com_Lcfg.c	   412    TxPduInitValueStartIdx                 the start index of the 0:n relation pointing to Com_TxPduInitValue
+; ..\Appl\GenData\Com_Lcfg.c	   413  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   414  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   415  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   416  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   417  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   418  CONST(Com_TxPduInfoType, COM_CONST) Com_TxPduInfo[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   419      /* Index    IPduGroupInfoOfTxPduInfoIndStartIdx  PartitionsTxStructIdx  TxBufferLength  TxPduInitValueStartIdx        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   420    { /*     0 */                                  0u,                    0u,            32u,                     0u },  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	   421    { /*     1 */                                  1u,                    0u,             1u,                    32u }   /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	   422  };
+; ..\Appl\GenData\Com_Lcfg.c	   423  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   424  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   425  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   426  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   427  
+; ..\Appl\GenData\Com_Lcfg.c	   428  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   429    Com_TxPduInitValue
+; ..\Appl\GenData\Com_Lcfg.c	   430  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   431  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   432    \var    Com_TxPduInitValue
+; ..\Appl\GenData\Com_Lcfg.c	   433    \brief  Initial values used for Tx I-PDU buffer initialization.
+; ..\Appl\GenData\Com_Lcfg.c	   434  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   435  #define COM_START_SEC_CONST_8
+; ..\Appl\GenData\Com_Lcfg.c	   436  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   437  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   438  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   439  CONST(Com_TxPduInitValueType, COM_CONST) Com_TxPduInitValue[33] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   440    /* Index     TxPduInitValue      Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   441    /*     0 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   442    /*     1 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   443    /*     2 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   444    /*     3 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   445    /*     4 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   446    /*     5 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   447    /*     6 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   448    /*     7 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   449    /*     8 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   450    /*     9 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   451    /*    10 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   452    /*    11 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   453    /*    12 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   454    /*    13 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   455    /*    14 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   456    /*    15 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   457    /*    16 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   458    /*    17 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   459    /*    18 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   460    /*    19 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   461    /*    20 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   462    /*    21 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   463    /*    22 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   464    /*    23 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   465    /*    24 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   466    /*    25 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   467    /*    26 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   468    /*    27 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   469    /*    28 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   470    /*    29 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   471    /*    30 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   472    /*    31 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   473    /*    32 */           0x00u   /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   474  };
+; ..\Appl\GenData\Com_Lcfg.c	   475  #define COM_STOP_SEC_CONST_8
+; ..\Appl\GenData\Com_Lcfg.c	   476  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   477  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   478  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   479  
+; ..\Appl\GenData\Com_Lcfg.c	   480  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   481    Com_TxSigInfo
+; ..\Appl\GenData\Com_Lcfg.c	   482  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   483  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   484    \var    Com_TxSigInfo
+; ..\Appl\GenData\Com_Lcfg.c	   485    \brief  Contains all relevant information for Tx signals signals.
+; ..\Appl\GenData\Com_Lcfg.c	   486    \details
+; ..\Appl\GenData\Com_Lcfg.c	   487    Element             Description
+; ..\Appl\GenData\Com_Lcfg.c	   488    DynSignal           TRUE if the Signal is a dynamic length signal (UINT8_DYN), FALSE otherwise.
+; ..\Appl\GenData\Com_Lcfg.c	   489    BitLength           Bit length of the signal or group signal.
+; ..\Appl\GenData\Com_Lcfg.c	   490    BitPosition         Little endian bit position of the signal or group signal within the I-PDU.
+; ..\Appl\GenData\Com_Lcfg.c	   491    ByteLength          Byte length of the signal or group signal.
+; ..\Appl\GenData\Com_Lcfg.c	   492    TxBufferLength      the number of relations pointing to Com_TxBuffer
+; ..\Appl\GenData\Com_Lcfg.c	   493    TxBufferStartIdx    the start index of the 0:n relation pointing to Com_TxBuffer
+; ..\Appl\GenData\Com_Lcfg.c	   494  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   495  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   496  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   497  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   498  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   499  CONST(Com_TxSigInfoType, COM_CONST) Com_TxSigInfo[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   500      /* Index    DynSignal  BitLength  BitPosition  ByteLength  TxBufferLength  TxBufferStartIdx        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   501    { /*     0 */     FALSE,        8u,          0u,         1u,             1u,               0u },  /* [/ActiveEcuC/Com/ComConfig/sig_LampCnt_omsg_MyECU_Lamp_oCAN00_f37e68ea_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   502    { /*     1 */     FALSE,        1u,          0u,         0u,             1u,              32u }   /* [/ActiveEcuC/Com/ComConfig/sig_RearInteriorLight_omsg_Transmit_oCAN00_49a633c1_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   503  };
+; ..\Appl\GenData\Com_Lcfg.c	   504  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   505  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   506  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   507  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   508  
+; ..\Appl\GenData\Com_Lcfg.c	   509  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   510    Com_CurrentTxMode
+; ..\Appl\GenData\Com_Lcfg.c	   511  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   512  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   513    \var    Com_CurrentTxMode
+; ..\Appl\GenData\Com_Lcfg.c	   514    \brief  Current transmission mode state of all Tx I-PDUs.
+; ..\Appl\GenData\Com_Lcfg.c	   515  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   516  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   517  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   518  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   519  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   520  VAR(Com_CurrentTxModeUType, COM_VAR_NO_INIT) Com_CurrentTxMode;  /* PRQA S 0759, 1514, 1533 */  /* MD_CSL_Union, MD_CSL_ObjectOnlyAccessedOnce, MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   521    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   522    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   523    /*     1 */  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   524  
+; ..\Appl\GenData\Com_Lcfg.c	   525  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   526  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   527  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   528  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   529  
+; ..\Appl\GenData\Com_Lcfg.c	   530  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   531    Com_CycleTimeCnt
+; ..\Appl\GenData\Com_Lcfg.c	   532  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   533  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   534    \var    Com_CycleTimeCnt
+; ..\Appl\GenData\Com_Lcfg.c	   535    \brief  Current counter value of cyclic transmission.
+; ..\Appl\GenData\Com_Lcfg.c	   536  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   537  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   538  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   539  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   540  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   541  VAR(Com_CycleTimeCntUType, COM_VAR_NO_INIT) Com_CycleTimeCnt;  /* PRQA S 0759, 1514, 1533 */  /* MD_CSL_Union, MD_CSL_ObjectOnlyAccessedOnce, MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   542    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   543    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   544    /*     1 */  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   545  
+; ..\Appl\GenData\Com_Lcfg.c	   546  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   547  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   548  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   549  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   550  
+; ..\Appl\GenData\Com_Lcfg.c	   551  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   552    Com_CyclicSendRequest
+; ..\Appl\GenData\Com_Lcfg.c	   553  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   554  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   555    \var    Com_CyclicSendRequest
+; ..\Appl\GenData\Com_Lcfg.c	   556    \brief  Cyclic send request flag used to indicate cyclic transmission mode for all Tx I-PDU.
+; ..\Appl\GenData\Com_Lcfg.c	   557  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   558  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   559  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   560  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   561  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   562  VAR(Com_CyclicSendRequestUType, COM_VAR_NO_INIT) Com_CyclicSendRequest;  /* PRQA S 0759, 1514, 1533 */  /* MD_CSL_Union, MD_CSL_ObjectOnlyAccessedOnce, MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   563    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   564    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   565    /*     1 */  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   566  
+; ..\Appl\GenData\Com_Lcfg.c	   567  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   568  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   569  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   570  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   571  
+; ..\Appl\GenData\Com_Lcfg.c	   572  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   573    Com_HandleRxPduDeferred
+; ..\Appl\GenData\Com_Lcfg.c	   574  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   575  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   576    \var    Com_HandleRxPduDeferred
+; ..\Appl\GenData\Com_Lcfg.c	   577    \brief  Array indicating received Rx I-PDUs to be processed deferred within the next call of Com_MainfunctionRx().
+; ..\Appl\GenData\Com_Lcfg.c	   578  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   579  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   580  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   581  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   582  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   583  VAR(Com_HandleRxPduDeferredUType, COM_VAR_NO_INIT) Com_HandleRxPduDeferred;  /* PRQA S 0759, 1514, 1533 */  /* MD_CSL_Union, MD_CSL_ObjectOnlyAccessedOnce, MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   584    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   585    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_Receive_oCAN00_2b456e3f_Rx] */
+; ..\Appl\GenData\Com_Lcfg.c	   586  
+; ..\Appl\GenData\Com_Lcfg.c	   587  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   588  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   589  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   590  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   591  
+; ..\Appl\GenData\Com_Lcfg.c	   592  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   593    Com_IPduGroupState
+; ..\Appl\GenData\Com_Lcfg.c	   594  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   595  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   596  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   597  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   598  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   599  VAR(Com_IPduGroupStateType, COM_VAR_NO_INIT) Com_IPduGroupState[2];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   600    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   601    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Rx_4cbf71f7, /ActiveEcuC/Com/ComConfig/msg_Receive_oCAN00_2b456e3f_Rx] */
+; ..\Appl\GenData\Com_Lcfg.c	   602    /*     1 */  /* [/ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, /ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx, /ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   603  
+; ..\Appl\GenData\Com_Lcfg.c	   604  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   605  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   606  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   607  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   608  
+; ..\Appl\GenData\Com_Lcfg.c	   609  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   610    Com_Initialized
+; ..\Appl\GenData\Com_Lcfg.c	   611  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   612  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   613    \var    Com_Initialized
+; ..\Appl\GenData\Com_Lcfg.c	   614    \brief  Initialization state of Com. TRUE, if Com_Init() has been called, else FALSE.
+; ..\Appl\GenData\Com_Lcfg.c	   615  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   616  #define COM_START_SEC_VAR_CLEARED_8
+; ..\Appl\GenData\Com_Lcfg.c	   617  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   618  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   619  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   620  VAR(Com_InitializedType, COM_VAR_CLEARED) Com_Initialized = FALSE;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   621  #define COM_STOP_SEC_VAR_CLEARED_8
+; ..\Appl\GenData\Com_Lcfg.c	   622  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   623  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   624  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   625  
+; ..\Appl\GenData\Com_Lcfg.c	   626  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   627    Com_RxDefPduBuffer
+; ..\Appl\GenData\Com_Lcfg.c	   628  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   629  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   630    \var    Com_RxDefPduBuffer
+; ..\Appl\GenData\Com_Lcfg.c	   631    \brief  Rx I-PDU buffer for deferred signal processing.
+; ..\Appl\GenData\Com_Lcfg.c	   632  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   633  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   634  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   635  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   636  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   637  VAR(Com_RxDefPduBufferUType, COM_VAR_NO_INIT) Com_RxDefPduBuffer;  /* PRQA S 0759, 1514, 1533 */  /* MD_CSL_Union, MD_CSL_ObjectOnlyAccessedOnce, MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   638    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   639    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_Receive_oCAN00_2b456e3f_Rx] */
+; ..\Appl\GenData\Com_Lcfg.c	   640  
+; ..\Appl\GenData\Com_Lcfg.c	   641  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   642  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   643  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   644  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   645  
+; ..\Appl\GenData\Com_Lcfg.c	   646  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   647    Com_RxIPduGroupISRLockCounter
+; ..\Appl\GenData\Com_Lcfg.c	   648  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   649  #define COM_START_SEC_VAR_NO_INIT_16
+; ..\Appl\GenData\Com_Lcfg.c	   650  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   651  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   652  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   653  VAR(Com_RxIPduGroupISRLockCounterUType, COM_VAR_NO_INIT) Com_RxIPduGroupISRLockCounter;  /* PRQA S 0759, 1514, 1533 */  /* MD_CSL_Union, MD_CSL_ObjectOnlyAccessedOnce, MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   654    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   655    /*     0 */  /* [noPartition] */
+; ..\Appl\GenData\Com_Lcfg.c	   656  
+; ..\Appl\GenData\Com_Lcfg.c	   657  #define COM_STOP_SEC_VAR_NO_INIT_16
+; ..\Appl\GenData\Com_Lcfg.c	   658  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   659  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   660  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   661  
+; ..\Appl\GenData\Com_Lcfg.c	   662  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   663    Com_RxMainFunctionProcessingISRLockCounter
+; ..\Appl\GenData\Com_Lcfg.c	   664  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   665  #define COM_START_SEC_VAR_NO_INIT_16
+; ..\Appl\GenData\Com_Lcfg.c	   666  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   667  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   668  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   669  VAR(Com_RxMainFunctionProcessingISRLockCounterUType, COM_VAR_NO_INIT) Com_RxMainFunctionProcessingISRLockCounter;  /* PRQA S 0759, 1514, 1533 */  /* MD_CSL_Union, MD_CSL_ObjectOnlyAccessedOnce, MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   670    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   671    /*     0 */  /* [ComMainFunctionRx] */
+; ..\Appl\GenData\Com_Lcfg.c	   672  
+; ..\Appl\GenData\Com_Lcfg.c	   673  #define COM_STOP_SEC_VAR_NO_INIT_16
+; ..\Appl\GenData\Com_Lcfg.c	   674  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   675  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   676  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   677  
+; ..\Appl\GenData\Com_Lcfg.c	   678  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   679    Com_RxPduGrpActive
+; ..\Appl\GenData\Com_Lcfg.c	   680  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   681  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   682    \var    Com_RxPduGrpActive
+; ..\Appl\GenData\Com_Lcfg.c	   683    \brief  Rx I-PDU based state (started/stopped) of the corresponding I-PDU-Group.
+; ..\Appl\GenData\Com_Lcfg.c	   684  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   685  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   686  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   687  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   688  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   689  VAR(Com_RxPduGrpActiveType, COM_VAR_NO_INIT) Com_RxPduGrpActive[1];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   690    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   691    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_Receive_oCAN00_2b456e3f_Rx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Rx_4cbf71f7, ComMainFunctionRx] */
+; ..\Appl\GenData\Com_Lcfg.c	   692  
+; ..\Appl\GenData\Com_Lcfg.c	   693  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   694  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   695  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   696  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   697  
+; ..\Appl\GenData\Com_Lcfg.c	   698  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   699    Com_RxSigBufferUInt8
+; ..\Appl\GenData\Com_Lcfg.c	   700  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   701  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   702    \var    Com_RxSigBufferUInt8
+; ..\Appl\GenData\Com_Lcfg.c	   703    \brief  Rx Signal and Group Signal Buffer. (BOOLEAN, UINT8)
+; ..\Appl\GenData\Com_Lcfg.c	   704  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   705  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   706  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   707  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   708  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   709  VAR(Com_RxSigBufferUInt8Type, COM_VAR_NO_INIT) Com_RxSigBufferUInt8[2];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   710    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   711    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/sig_State_RearLeftDoor_omsg_Receive_oCAN00_84ad4140_Rx, /ActiveEcuC/Com/ComConfig/sig_State_RearLeftDoor_omsg_Receive_oCAN00_84ad4140_Rx_RxSignalBufferRouting] */
+; ..\Appl\GenData\Com_Lcfg.c	   712    /*     1 */  /* [/ActiveEcuC/Com/ComConfig/sig_State_RearRightDoor_omsg_Receive_oCAN00_a8945098_Rx, /ActiveEcuC/Com/ComConfig/sig_State_RearRightDoor_omsg_Receive_oCAN00_a8945098_Rx_RxSignalBufferRouting] */
+; ..\Appl\GenData\Com_Lcfg.c	   713  
+; ..\Appl\GenData\Com_Lcfg.c	   714  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   715  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   716  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   717  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   718  
+; ..\Appl\GenData\Com_Lcfg.c	   719  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   720    Com_TransmitRequest
+; ..\Appl\GenData\Com_Lcfg.c	   721  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   722  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   723    \var    Com_TransmitRequest
+; ..\Appl\GenData\Com_Lcfg.c	   724    \brief  Transmit request flag used for decoupled Tx I-PDU tranmission.
+; ..\Appl\GenData\Com_Lcfg.c	   725  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   726  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   727  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   728  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   729  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   730  VAR(Com_TransmitRequestUType, COM_VAR_NO_INIT) Com_TransmitRequest;  /* PRQA S 0759, 1514, 1533 */  /* MD_CSL_Union, MD_CSL_ObjectOnlyAccessedOnce, MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   731    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   732    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   733    /*     1 */  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   734  
+; ..\Appl\GenData\Com_Lcfg.c	   735  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   736  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   737  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   738  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   739  
+; ..\Appl\GenData\Com_Lcfg.c	   740  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   741    Com_TxBuffer
+; ..\Appl\GenData\Com_Lcfg.c	   742  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   743  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   744    \var    Com_TxBuffer
+; ..\Appl\GenData\Com_Lcfg.c	   745    \brief  Shared uint8 buffer for Tx I-PDUs and ComSignalGroup shadow buffer.
+; ..\Appl\GenData\Com_Lcfg.c	   746  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   747  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   748  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   749  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   750  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   751  VAR(Com_TxBufferType, COM_VAR_NO_INIT) Com_TxBuffer[33];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   752    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   753    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx, /ActiveEcuC/Com/ComConfig/sig_LampCnt_omsg_MyECU_Lamp_oCAN00_f37e68ea_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   754    /*     1 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   755    /*   ... */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   756    /*    31 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   757    /*    32 */  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx, /ActiveEcuC/Com/ComConfig/sig_RearInteriorLight_omsg_Transmit_oCAN00_49a633c1_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   758  
+; ..\Appl\GenData\Com_Lcfg.c	   759  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   760  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   761  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   762  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   763  
+; ..\Appl\GenData\Com_Lcfg.c	   764  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   765    Com_TxIPduGroupISRLockCounter
+; ..\Appl\GenData\Com_Lcfg.c	   766  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   767  #define COM_START_SEC_VAR_NO_INIT_16
+; ..\Appl\GenData\Com_Lcfg.c	   768  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   769  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   770  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   771  VAR(Com_TxIPduGroupISRLockCounterUType, COM_VAR_NO_INIT) Com_TxIPduGroupISRLockCounter;  /* PRQA S 0759, 1514, 1533 */  /* MD_CSL_Union, MD_CSL_ObjectOnlyAccessedOnce, MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   772    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   773    /*     0 */  /* [noPartition] */
+; ..\Appl\GenData\Com_Lcfg.c	   774  
+; ..\Appl\GenData\Com_Lcfg.c	   775  #define COM_STOP_SEC_VAR_NO_INIT_16
+; ..\Appl\GenData\Com_Lcfg.c	   776  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   777  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   778  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   779  
+; ..\Appl\GenData\Com_Lcfg.c	   780  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   781    Com_TxPduGrpActive
+; ..\Appl\GenData\Com_Lcfg.c	   782  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   783  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   784    \var    Com_TxPduGrpActive
+; ..\Appl\GenData\Com_Lcfg.c	   785    \brief  Tx I-PDU based state (started/stopped) of the corresponding I-PDU-Group.
+; ..\Appl\GenData\Com_Lcfg.c	   786  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   787  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   788  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   789  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   790  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   791  VAR(Com_TxPduGrpActiveType, COM_VAR_NO_INIT) Com_TxPduGrpActive[2];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   792    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   793    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	   794    /*     1 */  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	   795  
+; ..\Appl\GenData\Com_Lcfg.c	   796  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   797  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   798  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   799  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   800  
+; ..\Appl\GenData\Com_Lcfg.c	   801  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   802    Com_TxProcessingISRLockCounter
+; ..\Appl\GenData\Com_Lcfg.c	   803  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   804  #define COM_START_SEC_VAR_NO_INIT_16
+; ..\Appl\GenData\Com_Lcfg.c	   805  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   806  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   807  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   808  VAR(Com_TxProcessingISRLockCounterUType, COM_VAR_NO_INIT) Com_TxProcessingISRLockCounter;  /* PRQA S 0759, 1514, 1533 */  /* MD_CSL_Union, MD_CSL_ObjectOnlyAccessedOnce, MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   809    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   810    /*     0 */  /* [ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	   811  
+; ..\Appl\GenData\Com_Lcfg.c	   812  #define COM_STOP_SEC_VAR_NO_INIT_16
+; ..\Appl\GenData\Com_Lcfg.c	   813  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   814  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   815  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   816  
+; ..\Appl\GenData\Com_Lcfg.c	   817  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   818    Com_TxSduLength
+; ..\Appl\GenData\Com_Lcfg.c	   819  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   820  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   821    \var    Com_TxSduLength
+; ..\Appl\GenData\Com_Lcfg.c	   822    \brief  This var Array contains the Com Ipdu Length.
+; ..\Appl\GenData\Com_Lcfg.c	   823  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   824  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   825  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   826  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   827  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   828  VAR(Com_TxSduLengthType, COM_VAR_NO_INIT) Com_TxSduLength[2];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   829    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   830    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_oCAN00_818e1651_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	   831    /*     1 */  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	   832  
+; ..\Appl\GenData\Com_Lcfg.c	   833  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   834  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   835  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   836  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   837  
+; ..\Appl\GenData\Com_Lcfg.c	   838  
+; ..\Appl\GenData\Com_Lcfg.c	   839  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   840    CONFIGURATION CLASS: LINK
+; ..\Appl\GenData\Com_Lcfg.c	   841    SECTION: GLOBAL DATA
+; ..\Appl\GenData\Com_Lcfg.c	   842  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   843  
+; ..\Appl\GenData\Com_Lcfg.c	   844  
+; ..\Appl\GenData\Com_Lcfg.c	   845  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   846    LOCAL FUNCTION PROTOTYPES
+; ..\Appl\GenData\Com_Lcfg.c	   847  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   848  
+; ..\Appl\GenData\Com_Lcfg.c	   849  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   850    LOCAL FUNCTIONS
+; ..\Appl\GenData\Com_Lcfg.c	   851  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   852  
+; ..\Appl\GenData\Com_Lcfg.c	   853  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   854    GLOBAL FUNCTIONS
+; ..\Appl\GenData\Com_Lcfg.c	   855  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   856  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   857    CONFIGURATION CLASS: PRE_COMPILE
+; ..\Appl\GenData\Com_Lcfg.c	   858    SECTION: GLOBAL FUNCTIONS
+; ..\Appl\GenData\Com_Lcfg.c	   859  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   860  
+; ..\Appl\GenData\Com_Lcfg.c	   861  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   862    CONFIGURATION CLASS: LINK
+; ..\Appl\GenData\Com_Lcfg.c	   863    SECTION: GLOBAL FUNCTIONS
+; ..\Appl\GenData\Com_Lcfg.c	   864  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   865  
+; ..\Appl\GenData\Com_Lcfg.c	   866  
+; ..\Appl\GenData\Com_Lcfg.c	   867  
+; ..\Appl\GenData\Com_Lcfg.c	   868  #define COM_START_SEC_CODE
+; ..\Appl\GenData\Com_Lcfg.c	   869  #include "MemMap.h"    /* PRQA S 5087 */        /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   870  
+; ..\Appl\GenData\Com_Lcfg.c	   871  
+; ..\Appl\GenData\Com_Lcfg.c	   872  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   873   * Com_MainFunctionRx_ComMainFunctionRx
+; ..\Appl\GenData\Com_Lcfg.c	   874   *********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   875   /*!
+; ..\Appl\GenData\Com_Lcfg.c	   876   * \internal
+; ..\Appl\GenData\Com_Lcfg.c	   877   * - call Com_MainFunctionRx with the id referencing this main function.
+; ..\Appl\GenData\Com_Lcfg.c	   878   * \endinternal
+; ..\Appl\GenData\Com_Lcfg.c	   879   *********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   880  FUNC(void, COM_CODE) Com_MainFunctionRx_ComMainFunctionRx(void)
+; Function Com_MainFunctionRx_ComMainFunctionRx
+.L3:
+Com_MainFunctionRx_ComMainFunctionRx:	.type	func
+
+; ..\Appl\GenData\Com_Lcfg.c	   881  {
+; ..\Appl\GenData\Com_Lcfg.c	   882  #if ((COM_EXISTS_DEFERRED_SIGNALPROCESSINGOFRXPDUINFO == STD_ON)||(COM_RXTOUTINFO == STD_ON))
+; ..\Appl\GenData\Com_Lcfg.c	   883    Com_MainFunctionRxStructIterType id = 0;
+; ..\Appl\GenData\Com_Lcfg.c	   884    Com_MainFunctionRxInternal(id);
+	mov	d4,#0
+	j	Com_MainFunctionRxInternal
+.L84:
+	
+__Com_MainFunctionRx_ComMainFunctionRx_function_end:
+	.size	Com_MainFunctionRx_ComMainFunctionRx,__Com_MainFunctionRx_ComMainFunctionRx_function_end-Com_MainFunctionRx_ComMainFunctionRx
+.L14:
+	; End of function
+	
+	.sdecl	'.text.Com_Lcfg.Com_MainFunctionTx_ComMainFunctionTx',code,cluster('Com_MainFunctionTx_ComMainFunctionTx')
+	.sect	'.text.Com_Lcfg.Com_MainFunctionTx_ComMainFunctionTx'
+	.align	2
+	
+	.global	Com_MainFunctionTx_ComMainFunctionTx
+
+; ..\Appl\GenData\Com_Lcfg.c	   885  #endif
+; ..\Appl\GenData\Com_Lcfg.c	   886  }
+; ..\Appl\GenData\Com_Lcfg.c	   887  
+; ..\Appl\GenData\Com_Lcfg.c	   888  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   889   * Com_MainFunctionTx_ComMainFunctionTx
+; ..\Appl\GenData\Com_Lcfg.c	   890   *********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   891   /*!
+; ..\Appl\GenData\Com_Lcfg.c	   892   * \internal
+; ..\Appl\GenData\Com_Lcfg.c	   893   * - call Com_MainFunctionTx with the id referencing this main function.
+; ..\Appl\GenData\Com_Lcfg.c	   894   * \endinternal
+; ..\Appl\GenData\Com_Lcfg.c	   895   *********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   896  FUNC(void, COM_CODE) Com_MainFunctionTx_ComMainFunctionTx(void)
+; Function Com_MainFunctionTx_ComMainFunctionTx
+.L5:
+Com_MainFunctionTx_ComMainFunctionTx:	.type	func
+
+; ..\Appl\GenData\Com_Lcfg.c	   897  {
+; ..\Appl\GenData\Com_Lcfg.c	   898  #if (COM_TXMODEINFO == STD_ON)
+; ..\Appl\GenData\Com_Lcfg.c	   899    Com_MainFunctionTxStructIterType id = 0;
+; ..\Appl\GenData\Com_Lcfg.c	   900    Com_MainFunctionTxInternal(id);
+	mov	d4,#0
+	j	Com_MainFunctionTxInternal
+.L85:
+	
+__Com_MainFunctionTx_ComMainFunctionTx_function_end:
+	.size	Com_MainFunctionTx_ComMainFunctionTx,__Com_MainFunctionTx_ComMainFunctionTx_function_end-Com_MainFunctionTx_ComMainFunctionTx
+.L19:
+	; End of function
+	
+	.sdecl	'.zrodata.Com_Lcfg.Com_ConstValueUInt8',data,rom,cluster('Com_ConstValueUInt8')
+	.sect	'.zrodata.Com_Lcfg.Com_ConstValueUInt8'
+	.global	Com_ConstValueUInt8
+Com_ConstValueUInt8:	.type	object
+	.size	Com_ConstValueUInt8,1
+	.space	1
+	.sdecl	'.rodata.Com_Lcfg.Com_IPduGroupInfo',data,rom,cluster('Com_IPduGroupInfo')
+	.sect	'.rodata.Com_Lcfg.Com_IPduGroupInfo'
+	.global	Com_IPduGroupInfo
+	.align	4
+Com_IPduGroupInfo:	.type	object
+	.size	Com_IPduGroupInfo,16
+	.space	3
+	.byte	1
+	.space	1
+	.byte	255,255
+	.space	1
+	.byte	1
+	.space	2
+	.byte	255,255,2
+	.space	2
+	.sdecl	'.zrodata.Com_Lcfg.Com_IPduGroupInfoOfTxPduInfoInd',data,rom,cluster('Com_IPduGroupInfoOfTxPduInfoInd')
+	.sect	'.zrodata.Com_Lcfg.Com_IPduGroupInfoOfTxPduInfoInd'
+	.global	Com_IPduGroupInfoOfTxPduInfoInd
+Com_IPduGroupInfoOfTxPduInfoInd:	.type	object
+	.size	Com_IPduGroupInfoOfTxPduInfoInd,2
+	.byte	1,1
+	.sdecl	'.zrodata.Com_Lcfg.Com_MainFunctionRxStruct',data,rom,cluster('Com_MainFunctionRxStruct')
+	.sect	'.zrodata.Com_Lcfg.Com_MainFunctionRxStruct'
+	.global	Com_MainFunctionRxStruct
+Com_MainFunctionRxStruct:	.type	object
+	.size	Com_MainFunctionRxStruct,1
+	.space	1
+	.sdecl	'.zrodata.Com_Lcfg.Com_MainFunctionTxStruct',data,rom,cluster('Com_MainFunctionTxStruct')
+	.sect	'.zrodata.Com_Lcfg.Com_MainFunctionTxStruct'
+	.global	Com_MainFunctionTxStruct
+	.align	2
+Com_MainFunctionTxStruct:	.type	object
+	.size	Com_MainFunctionTxStruct,2
+	.space	2
+	.sdecl	'.rodata.Com_Lcfg.Com_RxAccessInfo',data,rom,cluster('Com_RxAccessInfo')
+	.sect	'.rodata.Com_Lcfg.Com_RxAccessInfo'
+	.global	Com_RxAccessInfo
+	.align	2
+Com_RxAccessInfo:	.type	object
+	.size	Com_RxAccessInfo,12
+	.space	4
+	.byte	1
+	.space	3
+	.byte	1
+	.space	1
+	.byte	1
+	.space	1
+	.sdecl	'.zrodata.Com_Lcfg.Com_RxPduInfo',data,rom,cluster('Com_RxPduInfo')
+	.sect	'.zrodata.Com_Lcfg.Com_RxPduInfo'
+	.global	Com_RxPduInfo
+	.align	2
+Com_RxPduInfo:	.type	object
+	.size	Com_RxPduInfo,6
+	.space	4
+	.byte	1
+	.space	1
+	.sdecl	'.zrodata.Com_Lcfg.Com_RxSigInfo',data,rom,cluster('Com_RxSigInfo')
+	.sect	'.zrodata.Com_Lcfg.Com_RxSigInfo'
+	.global	Com_RxSigInfo
+Com_RxSigInfo:	.type	object
+	.size	Com_RxSigInfo,2
+	.byte	1,1
+	.sdecl	'.zrodata.Com_Lcfg.Com_TxAccessInfo',data,rom,cluster('Com_TxAccessInfo')
+	.sect	'.zrodata.Com_Lcfg.Com_TxAccessInfo'
+	.global	Com_TxAccessInfo
+Com_TxAccessInfo:	.type	object
+	.size	Com_TxAccessInfo,2
+	.space	1
+	.byte	1
+	.sdecl	'.zrodata.Com_Lcfg.Com_TxModeFalse',data,rom,cluster('Com_TxModeFalse')
+	.sect	'.zrodata.Com_Lcfg.Com_TxModeFalse'
+	.global	Com_TxModeFalse
+Com_TxModeFalse:	.type	object
+	.size	Com_TxModeFalse,1
+	.byte	1
+	.sdecl	'.zrodata.Com_Lcfg.Com_TxModeInfo',data,rom,cluster('Com_TxModeInfo')
+	.sect	'.zrodata.Com_Lcfg.Com_TxModeInfo'
+	.global	Com_TxModeInfo
+	.align	2
+Com_TxModeInfo:	.type	object
+	.size	Com_TxModeInfo,4
+	.byte	1
+	.space	1
+	.byte	1
+	.space	1
+	.sdecl	'.zrodata.Com_Lcfg.Com_TxModeTrue',data,rom,cluster('Com_TxModeTrue')
+	.sect	'.zrodata.Com_Lcfg.Com_TxModeTrue'
+	.global	Com_TxModeTrue
+Com_TxModeTrue:	.type	object
+	.size	Com_TxModeTrue,1
+	.byte	1
+	.sdecl	'.zrodata.Com_Lcfg.Com_TxPduInfo',data,rom,cluster('Com_TxPduInfo')
+	.sect	'.zrodata.Com_Lcfg.Com_TxPduInfo'
+	.global	Com_TxPduInfo
+	.align	2
+Com_TxPduInfo:	.type	object
+	.size	Com_TxPduInfo,8
+	.space	2
+	.byte	32
+	.space	1
+	.byte	1
+	.space	1
+	.byte	1,32
+	.sdecl	'.rodata.Com_Lcfg.Com_TxPduInitValue',data,rom,cluster('Com_TxPduInitValue')
+	.sect	'.rodata.Com_Lcfg.Com_TxPduInitValue'
+	.global	Com_TxPduInitValue
+Com_TxPduInitValue:	.type	object
+	.size	Com_TxPduInitValue,33
+	.space	33
+	.sdecl	'.rodata.Com_Lcfg.Com_TxSigInfo',data,rom,cluster('Com_TxSigInfo')
+	.sect	'.rodata.Com_Lcfg.Com_TxSigInfo'
+	.global	Com_TxSigInfo
+	.align	2
+Com_TxSigInfo:	.type	object
+	.size	Com_TxSigInfo,12
+	.space	1
+	.byte	8
+	.space	1
+	.byte	1,1
+	.space	2
+	.byte	1
+	.space	2
+	.byte	1,32
+	.sdecl	'.zbss.Com_Lcfg.Com_CurrentTxMode',data,cluster('Com_CurrentTxMode')
+	.sect	'.zbss.Com_Lcfg.Com_CurrentTxMode'
+	.global	Com_CurrentTxMode
+	.align	2
+Com_CurrentTxMode:	.type	object
+	.size	Com_CurrentTxMode,2
+	.space	2
+	.sdecl	'.zbss.Com_Lcfg.Com_CycleTimeCnt',data,cluster('Com_CycleTimeCnt')
+	.sect	'.zbss.Com_Lcfg.Com_CycleTimeCnt'
+	.global	Com_CycleTimeCnt
+	.align	2
+Com_CycleTimeCnt:	.type	object
+	.size	Com_CycleTimeCnt,2
+	.space	2
+	.sdecl	'.zbss.Com_Lcfg.Com_CyclicSendRequest',data,cluster('Com_CyclicSendRequest')
+	.sect	'.zbss.Com_Lcfg.Com_CyclicSendRequest'
+	.global	Com_CyclicSendRequest
+	.align	2
+Com_CyclicSendRequest:	.type	object
+	.size	Com_CyclicSendRequest,2
+	.space	2
+	.sdecl	'.zbss.Com_Lcfg.Com_HandleRxPduDeferred',data,cluster('Com_HandleRxPduDeferred')
+	.sect	'.zbss.Com_Lcfg.Com_HandleRxPduDeferred'
+	.global	Com_HandleRxPduDeferred
+Com_HandleRxPduDeferred:	.type	object
+	.size	Com_HandleRxPduDeferred,1
+	.space	1
+	.sdecl	'.zbss.Com_Lcfg.Com_IPduGroupState',data,cluster('Com_IPduGroupState')
+	.sect	'.zbss.Com_Lcfg.Com_IPduGroupState'
+	.global	Com_IPduGroupState
+Com_IPduGroupState:	.type	object
+	.size	Com_IPduGroupState,2
+	.space	2
+	.sdecl	'.zdata.Com_Lcfg.Com_Initialized',data,cluster('Com_Initialized')
+	.sect	'.zdata.Com_Lcfg.Com_Initialized'
+	.global	Com_Initialized
+Com_Initialized:	.type	object
+	.size	Com_Initialized,1
+	.space	1
+	.sdecl	'.zbss.Com_Lcfg.Com_RxDefPduBuffer',data,cluster('Com_RxDefPduBuffer')
+	.sect	'.zbss.Com_Lcfg.Com_RxDefPduBuffer'
+	.global	Com_RxDefPduBuffer
+Com_RxDefPduBuffer:	.type	object
+	.size	Com_RxDefPduBuffer,1
+	.space	1
+	.sdecl	'.zbss.Com_Lcfg.Com_RxIPduGroupISRLockCounter',data,cluster('Com_RxIPduGroupISRLockCounter')
+	.sect	'.zbss.Com_Lcfg.Com_RxIPduGroupISRLockCounter'
+	.global	Com_RxIPduGroupISRLockCounter
+	.align	2
+Com_RxIPduGroupISRLockCounter:	.type	object
+	.size	Com_RxIPduGroupISRLockCounter,2
+	.space	2
+	.sdecl	'.zbss.Com_Lcfg.Com_RxMainFunctionProcessingISRLockCounter',data,cluster('Com_RxMainFunctionProcessingISRLockCounter')
+	.sect	'.zbss.Com_Lcfg.Com_RxMainFunctionProcessingISRLockCounter'
+	.global	Com_RxMainFunctionProcessingISRLockCounter
+	.align	2
+Com_RxMainFunctionProcessingISRLockCounter:	.type	object
+	.size	Com_RxMainFunctionProcessingISRLockCounter,2
+	.space	2
+	.sdecl	'.zbss.Com_Lcfg.Com_RxPduGrpActive',data,cluster('Com_RxPduGrpActive')
+	.sect	'.zbss.Com_Lcfg.Com_RxPduGrpActive'
+	.global	Com_RxPduGrpActive
+Com_RxPduGrpActive:	.type	object
+	.size	Com_RxPduGrpActive,1
+	.space	1
+	.sdecl	'.zbss.Com_Lcfg.Com_RxSigBufferUInt8',data,cluster('Com_RxSigBufferUInt8')
+	.sect	'.zbss.Com_Lcfg.Com_RxSigBufferUInt8'
+	.global	Com_RxSigBufferUInt8
+Com_RxSigBufferUInt8:	.type	object
+	.size	Com_RxSigBufferUInt8,2
+	.space	2
+	.sdecl	'.zbss.Com_Lcfg.Com_TransmitRequest',data,cluster('Com_TransmitRequest')
+	.sect	'.zbss.Com_Lcfg.Com_TransmitRequest'
+	.global	Com_TransmitRequest
+	.align	2
+Com_TransmitRequest:	.type	object
+	.size	Com_TransmitRequest,2
+	.space	2
+	.sdecl	'.bss.Com_Lcfg.Com_TxBuffer',data,cluster('Com_TxBuffer')
+	.sect	'.bss.Com_Lcfg.Com_TxBuffer'
+	.global	Com_TxBuffer
+Com_TxBuffer:	.type	object
+	.size	Com_TxBuffer,33
+	.space	33
+	.sdecl	'.zbss.Com_Lcfg.Com_TxIPduGroupISRLockCounter',data,cluster('Com_TxIPduGroupISRLockCounter')
+	.sect	'.zbss.Com_Lcfg.Com_TxIPduGroupISRLockCounter'
+	.global	Com_TxIPduGroupISRLockCounter
+	.align	2
+Com_TxIPduGroupISRLockCounter:	.type	object
+	.size	Com_TxIPduGroupISRLockCounter,2
+	.space	2
+	.sdecl	'.zbss.Com_Lcfg.Com_TxPduGrpActive',data,cluster('Com_TxPduGrpActive')
+	.sect	'.zbss.Com_Lcfg.Com_TxPduGrpActive'
+	.global	Com_TxPduGrpActive
+Com_TxPduGrpActive:	.type	object
+	.size	Com_TxPduGrpActive,2
+	.space	2
+	.sdecl	'.zbss.Com_Lcfg.Com_TxProcessingISRLockCounter',data,cluster('Com_TxProcessingISRLockCounter')
+	.sect	'.zbss.Com_Lcfg.Com_TxProcessingISRLockCounter'
+	.global	Com_TxProcessingISRLockCounter
+	.align	2
+Com_TxProcessingISRLockCounter:	.type	object
+	.size	Com_TxProcessingISRLockCounter,2
+	.space	2
+	.sdecl	'.zbss.Com_Lcfg.Com_TxSduLength',data,cluster('Com_TxSduLength')
+	.sect	'.zbss.Com_Lcfg.Com_TxSduLength'
+	.global	Com_TxSduLength
+Com_TxSduLength:	.type	object
+	.size	Com_TxSduLength,2
+	.space	2
+	.calls	'Com_MainFunctionRx_ComMainFunctionRx','Com_MainFunctionRxInternal'
+	.calls	'Com_MainFunctionTx_ComMainFunctionTx','Com_MainFunctionTxInternal'
+	.calls	'Com_MainFunctionRx_ComMainFunctionRx','',0
+	.extern	Com_MainFunctionRxInternal
+	.extern	Com_MainFunctionTxInternal
+	.calls	'Com_MainFunctionTx_ComMainFunctionTx','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L7:
+	.word	16880
+	.half	3
+	.word	.L8
+	.byte	4
+.L6:
+	.byte	1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L9
+.L106:
+	.byte	2
+	.byte	'unsigned char',0,1,8,3
+	.byte	'Com_MainFunctionRxInternal',0,1,84,22,1,1,1,1,4
+	.byte	'mainFunctionId',0,1,84,82
+	.word	138
+	.byte	0,3
+	.byte	'Com_MainFunctionTxInternal',0,1,103,22,1,1,1,1,4
+	.byte	'mainFunctionId',0,1,103,82
+	.word	138
+	.byte	0,5,1,6
+	.word	273
+	.byte	7
+	.byte	'__codeptr',0,2,1,1
+	.word	275
+	.byte	7
+	.byte	'boolean',0,3,101,31
+	.word	138
+	.byte	7
+	.byte	'uint8',0,3,104,31
+	.word	138
+	.byte	2
+	.byte	'unsigned short int',0,2,7,7
+	.byte	'uint16',0,3,106,31
+	.word	328
+	.byte	2
+	.byte	'long int',0,4,5,7
+	.byte	'sint32',0,3,107,31
+	.word	365
+	.byte	2
+	.byte	'unsigned long int',0,4,7,7
+	.byte	'uint32',0,3,108,31
+	.word	392
+	.byte	7
+	.byte	'uint8_least',0,3,111,31
+	.word	138
+	.byte	7
+	.byte	'uint16_least',0,3,113,31
+	.word	328
+	.byte	2
+	.byte	'unsigned long long int',0,8,7,7
+	.byte	'uint64',0,3,121,30
+	.word	469
+	.byte	7
+	.byte	'StatusType',0,4,119,23
+	.word	138
+	.byte	7
+	.byte	'Std_ReturnType',0,4,124,15
+	.word	138
+	.byte	7
+	.byte	'Std_TransformerErrorCode',0,4,135,1,15
+	.word	138
+	.byte	7
+	.byte	'Std_TransformerClass',0,4,137,1,15
+	.word	138
+	.byte	7
+	.byte	'PduLengthType',0,5,65,15
+	.word	138
+	.byte	6
+	.word	138
+	.byte	7
+	.byte	'SduDataPtrType',0,6,196,1,54
+	.word	638
+	.byte	8,6,197,1,9,8,9
+	.byte	'SduDataPtr',0
+	.word	643
+	.byte	4,2,35,0,9
+	.byte	'SduLength',0
+	.word	138
+	.byte	1,2,35,4,0,7
+	.byte	'PduInfoType',0,6,201,1,3
+	.word	667
+	.byte	6
+	.word	138
+	.byte	10,6,219,1,9,1,11
+	.byte	'TP_DATACONF',0,0,11
+	.byte	'TP_DATARETRY',0,1,11
+	.byte	'TP_CONFPENDING',0,2,0,7
+	.byte	'TpDataStateType',0,6,226,1,3
+	.word	739
+	.byte	7
+	.byte	'Com_IPduGroupInfoIterType',0,7,247,22,21
+	.word	138
+	.byte	7
+	.byte	'Com_MainFunctionRxStructIterType',0,7,131,23,21
+	.word	138
+	.byte	7
+	.byte	'Com_MainFunctionTxStructIterType',0,7,134,23,21
+	.word	138
+	.byte	7
+	.byte	'Com_RxPduInfoIterType',0,7,158,23,21
+	.word	138
+	.byte	7
+	.byte	'Com_TxModeInfoIterType',0,7,191,23,21
+	.word	138
+	.byte	7
+	.byte	'Com_TxPduInfoIterType',0,7,197,23,22
+	.word	328
+	.byte	7
+	.byte	'Com_ConstValueUInt8Type',0,7,132,24,15
+	.word	138
+	.byte	7
+	.byte	'Com_CurrentTxModeType',0,7,135,24,17
+	.word	138
+	.byte	7
+	.byte	'Com_CycleTimeCntType',0,7,138,24,15
+	.word	138
+	.byte	7
+	.byte	'Com_CyclicSendRequestType',0,7,141,24,17
+	.word	138
+	.byte	7
+	.byte	'Com_HandleRxPduDeferredType',0,7,144,24,23
+	.word	138
+	.byte	7
+	.byte	'Com_IPduGroupInfoToSubIPduGroupsIndStartIdxOfIPduGroupInfoType',0,7,150,24,15
+	.word	138
+	.byte	7
+	.byte	'Com_PartitionsRxStructIdxOfIPduGroupInfoType',0,7,156,24,15
+	.word	138
+	.byte	7
+	.byte	'Com_PartitionsTxStructIdxOfIPduGroupInfoType',0,7,162,24,15
+	.word	138
+	.byte	7
+	.byte	'Com_RxPduInfoIndEndIdxOfIPduGroupInfoType',0,7,168,24,15
+	.word	138
+	.byte	7
+	.byte	'Com_RxPduInfoIndStartIdxOfIPduGroupInfoType',0,7,171,24,15
+	.word	138
+	.byte	7
+	.byte	'Com_TxPduInfoIndEndIdxOfIPduGroupInfoType',0,7,177,24,15
+	.word	138
+	.byte	7
+	.byte	'Com_TxPduInfoIndStartIdxOfIPduGroupInfoType',0,7,180,24,15
+	.word	138
+	.byte	7
+	.byte	'Com_IPduGroupInfoOfRxPduInfoIndType',0,7,186,24,15
+	.word	138
+	.byte	7
+	.byte	'Com_IPduGroupInfoOfTxPduInfoIndType',0,7,189,24,15
+	.word	138
+	.byte	7
+	.byte	'Com_IPduGroupInfoToSubIPduGroupsIndType',0,7,192,24,15
+	.word	138
+	.byte	7
+	.byte	'Com_IPduGroupStateType',0,7,195,24,15
+	.word	138
+	.byte	7
+	.byte	'Com_InitializedType',0,7,198,24,17
+	.word	138
+	.byte	7
+	.byte	'Com_RxPduInfoOfMainFunctionRxIndStartIdxOfMainFunctionRxStructType',0,7,207,24,15
+	.word	138
+	.byte	7
+	.byte	'Com_TxCyclicPduOfMainFunctionTxIndStartIdxOfMainFunctionTxStructType',0,7,216,24,15
+	.word	138
+	.byte	7
+	.byte	'Com_TxPduInfoOfMainFunctionTxIndStartIdxOfMainFunctionTxStructType',0,7,225,24,15
+	.word	138
+	.byte	7
+	.byte	'Com_BufferIdxOfRxAccessInfoType',0,7,252,24,15
+	.word	138
+	.byte	7
+	.byte	'Com_BufferOfRxAccessInfoType',0,7,255,24,15
+	.word	138
+	.byte	7
+	.byte	'Com_DynSignalOfRxAccessInfoType',0,7,142,25,17
+	.word	138
+	.byte	7
+	.byte	'Com_InitValueIdxOfRxAccessInfoType',0,7,145,25,15
+	.word	138
+	.byte	7
+	.byte	'Com_SignalLengthInByteOfRxAccessInfoType',0,7,157,25,15
+	.word	138
+	.byte	7
+	.byte	'Com_RxAccessInfoIndType',0,7,163,25,15
+	.word	138
+	.byte	7
+	.byte	'Com_RxDefPduBufferType',0,7,166,25,15
+	.word	138
+	.byte	7
+	.byte	'Com_RxIPduGroupISRLockCounterType',0,7,169,25,16
+	.word	328
+	.byte	7
+	.byte	'Com_RxMainFunctionProcessingISRLockCounterType',0,7,175,25,16
+	.word	328
+	.byte	7
+	.byte	'Com_RxPduGrpActiveType',0,7,181,25,17
+	.word	138
+	.byte	7
+	.byte	'Com_HandleRxPduDeferredIdxOfRxPduInfoType',0,7,184,25,15
+	.word	138
+	.byte	7
+	.byte	'Com_IPduGroupInfoOfRxPduInfoIndStartIdxOfRxPduInfoType',0,7,193,25,15
+	.word	138
+	.byte	7
+	.byte	'Com_MainFunctionRxStructIdxOfRxPduInfoType',0,7,199,25,15
+	.word	138
+	.byte	7
+	.byte	'Com_RxAccessInfoIndStartIdxOfRxPduInfoType',0,7,211,25,15
+	.word	138
+	.byte	7
+	.byte	'Com_RxDefPduBufferLengthOfRxPduInfoType',0,7,220,25,15
+	.word	138
+	.byte	7
+	.byte	'Com_RxSigInfoStartIdxOfRxPduInfoType',0,7,232,25,15
+	.word	138
+	.byte	7
+	.byte	'Com_RxPduInfoIndType',0,7,244,25,15
+	.word	138
+	.byte	7
+	.byte	'Com_RxPduInfoOfMainFunctionRxIndType',0,7,247,25,15
+	.word	138
+	.byte	7
+	.byte	'Com_RxSigBufferUInt8Type',0,7,250,25,15
+	.word	138
+	.byte	7
+	.byte	'Com_ValidDlcOfRxSigInfoType',0,7,131,26,15
+	.word	138
+	.byte	7
+	.byte	'Com_TransmitRequestType',0,7,134,26,17
+	.word	138
+	.byte	7
+	.byte	'Com_TxSigInfoIdxOfTxAccessInfoType',0,7,137,26,15
+	.word	138
+	.byte	7
+	.byte	'Com_TxBufferType',0,7,143,26,15
+	.word	138
+	.byte	7
+	.byte	'Com_TxCyclicPduOfMainFunctionTxIndType',0,7,149,26,15
+	.word	138
+	.byte	7
+	.byte	'Com_TxIPduGroupISRLockCounterType',0,7,152,26,16
+	.word	328
+	.byte	7
+	.byte	'Com_PeriodicOfTxModeFalseType',0,7,158,26,17
+	.word	138
+	.byte	7
+	.byte	'Com_InitModeOfTxModeInfoType',0,7,164,26,17
+	.word	138
+	.byte	7
+	.byte	'Com_TxModeTrueIdxOfTxModeInfoType',0,7,170,26,15
+	.word	138
+	.byte	7
+	.byte	'Com_PeriodicOfTxModeTrueType',0,7,173,26,17
+	.word	138
+	.byte	7
+	.byte	'Com_TxPduGrpActiveType',0,7,179,26,17
+	.word	138
+	.byte	7
+	.byte	'Com_IPduGroupInfoOfTxPduInfoIndStartIdxOfTxPduInfoType',0,7,188,26,15
+	.word	138
+	.byte	7
+	.byte	'Com_PartitionsTxStructIdxOfTxPduInfoType',0,7,197,26,15
+	.word	138
+	.byte	7
+	.byte	'Com_TxBufferLengthOfTxPduInfoType',0,7,206,26,15
+	.word	138
+	.byte	7
+	.byte	'Com_TxPduInitValueStartIdxOfTxPduInfoType',0,7,221,26,15
+	.word	138
+	.byte	7
+	.byte	'Com_TxPduInfoIndType',0,7,230,26,15
+	.word	138
+	.byte	7
+	.byte	'Com_TxPduInfoOfMainFunctionTxIndType',0,7,233,26,15
+	.word	138
+	.byte	7
+	.byte	'Com_TxPduInitValueType',0,7,236,26,15
+	.word	138
+	.byte	7
+	.byte	'Com_TxProcessingISRLockCounterType',0,7,239,26,16
+	.word	328
+	.byte	7
+	.byte	'Com_TxSduLengthType',0,7,245,26,23
+	.word	138
+	.byte	7
+	.byte	'Com_BitLengthOfTxSigInfoType',0,7,251,26,15
+	.word	138
+	.byte	7
+	.byte	'Com_BitPositionOfTxSigInfoType',0,7,254,26,15
+	.word	138
+	.byte	7
+	.byte	'Com_ByteLengthOfTxSigInfoType',0,7,132,27,15
+	.word	138
+	.byte	7
+	.byte	'Com_DynSignalOfTxSigInfoType',0,7,138,27,17
+	.word	138
+	.byte	7
+	.byte	'Com_TxBufferLengthOfTxSigInfoType',0,7,150,27,15
+	.word	138
+	.byte	7
+	.byte	'Com_TxBufferStartIdxOfTxSigInfoType',0,7,153,27,15
+	.word	138
+	.byte	12
+	.byte	'sCom_IPduGroupInfoType',0,7,175,27,16,8,9
+	.byte	'IPduGroupInfoToSubIPduGroupsIndStartIdxOfIPduGroupInfo',0
+	.word	138
+	.byte	1,2,35,0,9
+	.byte	'PartitionsRxStructIdxOfIPduGroupInfo',0
+	.word	138
+	.byte	1,2,35,1,9
+	.byte	'PartitionsTxStructIdxOfIPduGroupInfo',0
+	.word	138
+	.byte	1,2,35,2,9
+	.byte	'RxPduInfoIndEndIdxOfIPduGroupInfo',0
+	.word	138
+	.byte	1,2,35,3,9
+	.byte	'RxPduInfoIndStartIdxOfIPduGroupInfo',0
+	.word	138
+	.byte	1,2,35,4,9
+	.byte	'TxPduInfoIndEndIdxOfIPduGroupInfo',0
+	.word	138
+	.byte	1,2,35,5,9
+	.byte	'TxPduInfoIndStartIdxOfIPduGroupInfo',0
+	.word	138
+	.byte	1,2,35,6,0,7
+	.byte	'Com_IPduGroupInfoType',0,7,184,27,3
+	.word	3901
+	.byte	12
+	.byte	'sCom_MainFunctionRxStructType',0,7,187,27,16,1,9
+	.byte	'RxPduInfoOfMainFunctionRxIndStartIdxOfMainFunctionRxStruct',0
+	.word	138
+	.byte	1,2,35,0,0,7
+	.byte	'Com_MainFunctionRxStructType',0,7,190,27,3
+	.word	4294
+	.byte	12
+	.byte	'sCom_MainFunctionTxStructType',0,7,193,27,16,2,9
+	.byte	'TxCyclicPduOfMainFunctionTxIndStartIdxOfMainFunctionTxStruct',0
+	.word	138
+	.byte	1,2,35,0,9
+	.byte	'TxPduInfoOfMainFunctionTxIndStartIdxOfMainFunctionTxStruct',0
+	.word	138
+	.byte	1,2,35,1,0,7
+	.byte	'Com_MainFunctionTxStructType',0,7,197,27,3
+	.word	4437
+	.byte	12
+	.byte	'sCom_PartitionsRxStructType',0,7,200,27,16,1,9
+	.byte	'Com_PartitionsRxStructNeverUsed',0
+	.word	138
+	.byte	1,2,35,0,0,7
+	.byte	'Com_PartitionsRxStructType',0,7,203,27,3
+	.word	4650
+	.byte	12
+	.byte	'sCom_PartitionsTxStructType',0,7,206,27,16,1,9
+	.byte	'Com_PartitionsTxStructNeverUsed',0
+	.word	138
+	.byte	1,2,35,0,0,7
+	.byte	'Com_PartitionsTxStructType',0,7,209,27,3
+	.word	4762
+	.byte	12
+	.byte	'sCom_RxAccessInfoType',0,7,212,27,16,6,9
+	.byte	'DynSignalOfRxAccessInfo',0
+	.word	138
+	.byte	1,2,35,0,9
+	.byte	'BufferOfRxAccessInfo',0
+	.word	138
+	.byte	1,2,35,1,9
+	.byte	'BufferIdxOfRxAccessInfo',0
+	.word	138
+	.byte	1,2,35,2,9
+	.byte	'InitValueIdxOfRxAccessInfo',0
+	.word	138
+	.byte	1,2,35,3,9
+	.byte	'SignalLengthInByteOfRxAccessInfo',0
+	.word	138
+	.byte	1,2,35,4,0,7
+	.byte	'Com_RxAccessInfoType',0,7,219,27,3
+	.word	4874
+	.byte	12
+	.byte	'sCom_RxPduInfoType',0,7,222,27,16,6,9
+	.byte	'HandleRxPduDeferredIdxOfRxPduInfo',0
+	.word	138
+	.byte	1,2,35,0,9
+	.byte	'IPduGroupInfoOfRxPduInfoIndStartIdxOfRxPduInfo',0
+	.word	138
+	.byte	1,2,35,1,9
+	.byte	'MainFunctionRxStructIdxOfRxPduInfo',0
+	.word	138
+	.byte	1,2,35,2,9
+	.byte	'RxAccessInfoIndStartIdxOfRxPduInfo',0
+	.word	138
+	.byte	1,2,35,3,9
+	.byte	'RxDefPduBufferLengthOfRxPduInfo',0
+	.word	138
+	.byte	1,2,35,4,9
+	.byte	'RxSigInfoStartIdxOfRxPduInfo',0
+	.word	138
+	.byte	1,2,35,5,0,7
+	.byte	'Com_RxPduInfoType',0,7,230,27,3
+	.word	5107
+	.byte	12
+	.byte	'sCom_RxSigInfoType',0,7,233,27,16,1,9
+	.byte	'ValidDlcOfRxSigInfo',0
+	.word	138
+	.byte	1,2,35,0,0,7
+	.byte	'Com_RxSigInfoType',0,7,236,27,3
+	.word	5426
+	.byte	12
+	.byte	'sCom_TxAccessInfoType',0,7,239,27,16,1,9
+	.byte	'TxSigInfoIdxOfTxAccessInfo',0
+	.word	138
+	.byte	1,2,35,0,0,7
+	.byte	'Com_TxAccessInfoType',0,7,242,27,3
+	.word	5508
+	.byte	12
+	.byte	'sCom_TxCyclicPduType',0,7,245,27,16,1,9
+	.byte	'Com_TxCyclicPduNeverUsed',0
+	.word	138
+	.byte	1,2,35,0,0,7
+	.byte	'Com_TxCyclicPduType',0,7,248,27,3
+	.word	5603
+	.byte	12
+	.byte	'sCom_TxModeFalseType',0,7,251,27,16,1,9
+	.byte	'PeriodicOfTxModeFalse',0
+	.word	138
+	.byte	1,2,35,0,0,7
+	.byte	'Com_TxModeFalseType',0,7,254,27,3
+	.word	5694
+	.byte	12
+	.byte	'sCom_TxModeInfoType',0,7,129,28,16,2,9
+	.byte	'InitModeOfTxModeInfo',0
+	.word	138
+	.byte	1,2,35,0,9
+	.byte	'TxModeTrueIdxOfTxModeInfo',0
+	.word	138
+	.byte	1,2,35,1,0,7
+	.byte	'Com_TxModeInfoType',0,7,133,28,3
+	.word	5782
+	.byte	12
+	.byte	'sCom_TxModeTrueType',0,7,136,28,16,1,9
+	.byte	'PeriodicOfTxModeTrue',0
+	.word	138
+	.byte	1,2,35,0,0,7
+	.byte	'Com_TxModeTrueType',0,7,139,28,3
+	.word	5902
+	.byte	12
+	.byte	'sCom_TxPduInfoType',0,7,142,28,16,4,9
+	.byte	'IPduGroupInfoOfTxPduInfoIndStartIdxOfTxPduInfo',0
+	.word	138
+	.byte	1,2,35,0,9
+	.byte	'PartitionsTxStructIdxOfTxPduInfo',0
+	.word	138
+	.byte	1,2,35,1,9
+	.byte	'TxBufferLengthOfTxPduInfo',0
+	.word	138
+	.byte	1,2,35,2,9
+	.byte	'TxPduInitValueStartIdxOfTxPduInfo',0
+	.word	138
+	.byte	1,2,35,3,0,7
+	.byte	'Com_TxPduInfoType',0,7,148,28,3
+	.word	5987
+	.byte	12
+	.byte	'sCom_TxSigInfoType',0,7,151,28,16,6,9
+	.byte	'DynSignalOfTxSigInfo',0
+	.word	138
+	.byte	1,2,35,0,9
+	.byte	'BitLengthOfTxSigInfo',0
+	.word	138
+	.byte	1,2,35,1,9
+	.byte	'BitPositionOfTxSigInfo',0
+	.word	138
+	.byte	1,2,35,2,9
+	.byte	'ByteLengthOfTxSigInfo',0
+	.word	138
+	.byte	1,2,35,3,9
+	.byte	'TxBufferLengthOfTxSigInfo',0
+	.word	138
+	.byte	1,2,35,4,9
+	.byte	'TxBufferStartIdxOfTxSigInfo',0
+	.word	138
+	.byte	1,2,35,5,0,7
+	.byte	'Com_TxSigInfoType',0,7,159,28,3
+	.word	6216
+	.byte	12
+	.byte	'Com_CurrentTxModeStructSTag',0,7,171,28,16,2,9
+	.byte	'msg_MyECU_Lamp_oCAN00_818e1651_Tx',0
+	.word	138
+	.byte	1,2,35,0,9
+	.byte	'msg_Transmit_oCAN00_0723e95e_Tx',0
+	.word	138
+	.byte	1,2,35,1,0,7
+	.byte	'Com_CurrentTxModeStructSType',0,7,175,28,3
+	.word	6464
+	.byte	12
+	.byte	'Com_CycleTimeCntStructSTag',0,7,178,28,16,2,9
+	.byte	'msg_MyECU_Lamp_oCAN00_818e1651_Tx',0
+	.word	138
+	.byte	1,2,35,0,9
+	.byte	'msg_Transmit_oCAN00_0723e95e_Tx',0
+	.word	138
+	.byte	1,2,35,1,0,7
+	.byte	'Com_CycleTimeCntStructSType',0,7,182,28,3
+	.word	6621
+	.byte	12
+	.byte	'Com_CyclicSendRequestStructSTag',0,7,185,28,16,2,9
+	.byte	'msg_MyECU_Lamp_oCAN00_818e1651_Tx',0
+	.word	138
+	.byte	1,2,35,0,9
+	.byte	'msg_Transmit_oCAN00_0723e95e_Tx',0
+	.word	138
+	.byte	1,2,35,1,0,7
+	.byte	'Com_CyclicSendRequestStructSType',0,7,189,28,3
+	.word	6776
+	.byte	12
+	.byte	'Com_HandleRxPduDeferredStructSTag',0,7,192,28,16,1,9
+	.byte	'msg_Receive_oCAN00_2b456e3f_Rx',0
+	.word	138
+	.byte	1,2,35,0,0,7
+	.byte	'Com_HandleRxPduDeferredStructSType',0,7,195,28,3
+	.word	6941
+	.byte	12
+	.byte	'Com_RxDefPduBufferStructSTag',0,7,198,28,16,1,9
+	.byte	'msg_Receive_oCAN00_2b456e3f_Rx',0
+	.word	138
+	.byte	1,2,35,0,0,7
+	.byte	'Com_RxDefPduBufferStructSType',0,7,201,28,3
+	.word	7066
+	.byte	12
+	.byte	'Com_RxIPduGroupISRLockCounterStructSTag',0,7,204,28,16,2,9
+	.byte	'noPartition',0
+	.word	328
+	.byte	2,2,35,0,0,7
+	.byte	'Com_RxIPduGroupISRLockCounterStructSType',0,7,207,28,3
+	.word	7181
+	.byte	12
+	.byte	'Com_RxMainFunctionProcessingISRLockCounterStructSTag',0,7,210,28,16,2,9
+	.byte	'ComMainFunctionRx',0
+	.word	328
+	.byte	2,2,35,0,0,7
+	.byte	'Com_RxMainFunctionProcessingISRLockCounterStructSType',0,7,213,28,3
+	.word	7299
+	.byte	12
+	.byte	'Com_TransmitRequestStructSTag',0,7,216,28,16,2,9
+	.byte	'msg_MyECU_Lamp_oCAN00_818e1651_Tx',0
+	.word	138
+	.byte	1,2,35,0,9
+	.byte	'msg_Transmit_oCAN00_0723e95e_Tx',0
+	.word	138
+	.byte	1,2,35,1,0,7
+	.byte	'Com_TransmitRequestStructSType',0,7,220,28,3
+	.word	7449
+	.byte	12
+	.byte	'Com_TxIPduGroupISRLockCounterStructSTag',0,7,223,28,16,2,9
+	.byte	'noPartition',0
+	.word	328
+	.byte	2,2,35,0,0,7
+	.byte	'Com_TxIPduGroupISRLockCounterStructSType',0,7,226,28,3
+	.word	7610
+	.byte	12
+	.byte	'Com_TxProcessingISRLockCounterStructSTag',0,7,229,28,16,2,9
+	.byte	'ComMainFunctionTx',0
+	.word	328
+	.byte	2,2,35,0,0,7
+	.byte	'Com_TxProcessingISRLockCounterStructSType',0,7,232,28,3
+	.word	7728
+	.byte	13,2
+	.word	138
+	.byte	14,1,0
+.L101:
+	.byte	15
+	.byte	'Com_CurrentTxModeUTag',0,7,244,28,15,2,9
+	.byte	'raw',0
+	.word	7854
+	.byte	2,2,35,0,9
+	.byte	'str',0
+	.word	6464
+	.byte	2,2,35,0,0,7
+	.byte	'Com_CurrentTxModeUType',0,7,248,28,3
+	.word	7863
+	.byte	13,2
+	.word	138
+	.byte	14,1,0
+.L102:
+	.byte	15
+	.byte	'Com_CycleTimeCntUTag',0,7,251,28,15,2,9
+	.byte	'raw',0
+	.word	7950
+	.byte	2,2,35,0,9
+	.byte	'str',0
+	.word	6621
+	.byte	2,2,35,0,0,7
+	.byte	'Com_CycleTimeCntUType',0,7,255,28,3
+	.word	7959
+	.byte	13,2
+	.word	138
+	.byte	14,1,0
+.L103:
+	.byte	15
+	.byte	'Com_CyclicSendRequestUTag',0,7,130,29,15,2,9
+	.byte	'raw',0
+	.word	8044
+	.byte	2,2,35,0,9
+	.byte	'str',0
+	.word	6776
+	.byte	2,2,35,0,0,7
+	.byte	'Com_CyclicSendRequestUType',0,7,134,29,3
+	.word	8053
+	.byte	13,1
+	.word	138
+	.byte	14,0,0
+.L104:
+	.byte	15
+	.byte	'Com_HandleRxPduDeferredUTag',0,7,137,29,15,1,9
+	.byte	'raw',0
+	.word	8148
+	.byte	1,2,35,0,9
+	.byte	'str',0
+	.word	6941
+	.byte	1,2,35,0,0,7
+	.byte	'Com_HandleRxPduDeferredUType',0,7,141,29,3
+	.word	8157
+	.byte	13,1
+	.word	138
+	.byte	14,0,0
+.L107:
+	.byte	15
+	.byte	'Com_RxDefPduBufferUTag',0,7,144,29,15,1,9
+	.byte	'raw',0
+	.word	8256
+	.byte	1,2,35,0,9
+	.byte	'str',0
+	.word	7066
+	.byte	1,2,35,0,0,7
+	.byte	'Com_RxDefPduBufferUType',0,7,148,29,3
+	.word	8265
+	.byte	13,2
+	.word	328
+	.byte	14,0,0
+.L108:
+	.byte	15
+	.byte	'Com_RxIPduGroupISRLockCounterUTag',0,7,151,29,15,2,9
+	.byte	'raw',0
+	.word	8354
+	.byte	2,2,35,0,9
+	.byte	'str',0
+	.word	7181
+	.byte	2,2,35,0,0,7
+	.byte	'Com_RxIPduGroupISRLockCounterUType',0,7,155,29,3
+	.word	8363
+	.byte	13,2
+	.word	328
+	.byte	14,0,0
+.L109:
+	.byte	15
+	.byte	'Com_RxMainFunctionProcessingISRLockCounterUTag',0,7,158,29,15,2,9
+	.byte	'raw',0
+	.word	8474
+	.byte	2,2,35,0,9
+	.byte	'str',0
+	.word	7299
+	.byte	2,2,35,0,0,7
+	.byte	'Com_RxMainFunctionProcessingISRLockCounterUType',0,7,162,29,3
+	.word	8483
+	.byte	13,2
+	.word	138
+	.byte	14,1,0
+.L112:
+	.byte	15
+	.byte	'Com_TransmitRequestUTag',0,7,165,29,15,2,9
+	.byte	'raw',0
+	.word	8620
+	.byte	2,2,35,0,9
+	.byte	'str',0
+	.word	7449
+	.byte	2,2,35,0,0,7
+	.byte	'Com_TransmitRequestUType',0,7,169,29,3
+	.word	8629
+	.byte	13,2
+	.word	328
+	.byte	14,0,0
+.L114:
+	.byte	15
+	.byte	'Com_TxIPduGroupISRLockCounterUTag',0,7,172,29,15,2,9
+	.byte	'raw',0
+	.word	8720
+	.byte	2,2,35,0,9
+	.byte	'str',0
+	.word	7610
+	.byte	2,2,35,0,0,7
+	.byte	'Com_TxIPduGroupISRLockCounterUType',0,7,176,29,3
+	.word	8729
+	.byte	13,2
+	.word	328
+	.byte	14,0,0
+.L116:
+	.byte	15
+	.byte	'Com_TxProcessingISRLockCounterUTag',0,7,179,29,15,2,9
+	.byte	'raw',0
+	.word	8840
+	.byte	2,2,35,0,9
+	.byte	'str',0
+	.word	7728
+	.byte	2,2,35,0,0,7
+	.byte	'Com_TxProcessingISRLockCounterUType',0,7,183,29,3
+	.word	8849
+	.byte	12
+	.byte	'sCom_PCConfigType',0,7,205,30,16,1,9
+	.byte	'Com_PCConfigNeverUsed',0
+	.word	138
+	.byte	1,2,35,0,0,7
+	.byte	'Com_PCConfigType',0,7,208,30,3
+	.word	8962
+	.byte	13,1
+	.word	138
+	.byte	14,0,0
+.L86:
+	.byte	16
+	.word	9044
+	.byte	13,16
+	.word	3901
+	.byte	14,1,0
+.L87:
+	.byte	16
+	.word	9058
+	.byte	13,2
+	.word	138
+	.byte	14,1,0
+.L88:
+	.byte	16
+	.word	9072
+	.byte	13,1
+	.word	4294
+	.byte	14,0,0
+.L89:
+	.byte	16
+	.word	9086
+	.byte	13,2
+	.word	4437
+	.byte	14,0,0
+.L90:
+	.byte	16
+	.word	9100
+	.byte	13,12
+	.word	4874
+	.byte	14,1,0
+.L91:
+	.byte	16
+	.word	9114
+	.byte	13,6
+	.word	5107
+	.byte	14,0,0
+.L92:
+	.byte	16
+	.word	9128
+	.byte	13,2
+	.word	5426
+	.byte	14,1,0
+.L93:
+	.byte	16
+	.word	9142
+	.byte	13,2
+	.word	5508
+	.byte	14,1,0
+.L94:
+	.byte	16
+	.word	9156
+	.byte	13,1
+	.word	5694
+	.byte	14,0,0
+.L95:
+	.byte	16
+	.word	9170
+	.byte	13,4
+	.word	5782
+	.byte	14,1,0
+.L96:
+	.byte	16
+	.word	9184
+	.byte	13,1
+	.word	5902
+	.byte	14,0,0
+.L97:
+	.byte	16
+	.word	9198
+	.byte	13,8
+	.word	5987
+	.byte	14,1,0
+.L98:
+	.byte	16
+	.word	9212
+	.byte	13,33
+	.word	138
+	.byte	14,32,0
+.L99:
+	.byte	16
+	.word	9226
+	.byte	13,12
+	.word	6216
+	.byte	14,1,0
+.L100:
+	.byte	16
+	.word	9240
+.L105:
+	.byte	13,2
+	.word	138
+	.byte	14,1,0
+.L110:
+	.byte	13,1
+	.word	138
+	.byte	14,0,0
+.L111:
+	.byte	13,2
+	.word	138
+	.byte	14,1,0
+.L113:
+	.byte	13,33
+	.word	138
+	.byte	14,32,0
+.L115:
+	.byte	13,2
+	.word	138
+	.byte	14,1,0
+.L117:
+	.byte	13,2
+	.word	138
+	.byte	14,1,0,12
+	.byte	'sDet_PCConfigType',0,8,238,1,16,1,9
+	.byte	'Det_PCConfigNeverUsed',0
+	.word	138
+	.byte	1,2,35,0,0,7
+	.byte	'Det_PCConfigType',0,8,241,1,3
+	.word	9308
+	.byte	10,9,149,1,9,1,11
+	.byte	'Default_Appl_Init_Task',0,0,11
+	.byte	'Default_Appl_Task',0,1,11
+	.byte	'Default_BSW_ASync_Task',0,2,11
+	.byte	'Default_Init_Task',0,3,11
+	.byte	'Default_Init_Task_Trusted',0,4,11
+	.byte	'IdleTask_OsCore0',0,5,11
+	.byte	'INVALID_TASK',0,6,11
+	.byte	'OS_TASKID_COUNT',0,6,0,7
+	.byte	'TaskType',0,9,159,1,3
+	.word	9390
+	.byte	13,64
+	.word	392
+	.byte	14,15,0,12
+	.byte	'Os_ExceptionContextType_Tag',0,10,71,8,160,1,9
+	.byte	'AddressRegisters',0
+	.word	9585
+	.byte	64,2,35,0,9
+	.byte	'DataRegisters',0
+	.word	9585
+	.byte	64,2,35,64,9
+	.byte	'Ra',0
+	.word	392
+	.byte	4,3,35,128,1,9
+	.byte	'Psw',0
+	.word	392
+	.byte	4,3,35,132,1,9
+	.byte	'ExceptionSource',0
+	.word	392
+	.byte	4,3,35,136,1,9
+	.byte	'Pcpn',0
+	.word	392
+	.byte	4,3,35,140,1,9
+	.byte	'Pie',0
+	.word	392
+	.byte	4,3,35,144,1,9
+	.byte	'MpuRegionForStackLow',0
+	.word	392
+	.byte	4,3,35,148,1,9
+	.byte	'MpuRegionForStackUpper',0
+	.word	392
+	.byte	4,3,35,152,1,9
+	.byte	'RawPCXI',0
+	.word	392
+	.byte	4,3,35,156,1,0,7
+	.byte	'Os_ExceptionContextType',0,11,59,44
+	.word	9594
+	.byte	7
+	.byte	'Os_InterruptSourceIdType',0,12,236,1,16
+	.word	392
+	.byte	7
+	.byte	'Os_ExceptionSourceIdType',0,12,244,1,16
+	.word	392
+	.byte	10,12,159,2,9,1,11
+	.byte	'RUNNING',0,0,11
+	.byte	'READY',0,1,11
+	.byte	'WAITING',0,2,11
+	.byte	'SUSPENDED',0,3,0,7
+	.byte	'TaskStateType',0,12,173,2,3
+	.word	9942
+	.byte	7
+	.byte	'EventMaskType',0,12,180,2,16
+	.word	469
+	.byte	7
+	.byte	'Os_TickType',0,12,198,2,19
+	.word	392
+	.byte	7
+	.byte	'TickType',0,12,204,2,21
+	.word	392
+	.byte	8,12,218,2,9,12,9
+	.byte	'maxallowedvalue',0
+	.word	392
+	.byte	4,2,35,0,9
+	.byte	'ticksperbase',0
+	.word	392
+	.byte	4,2,35,4,9
+	.byte	'mincycle',0
+	.word	392
+	.byte	4,2,35,8,0,7
+	.byte	'AlarmBaseType',0,12,226,2,2
+	.word	10074
+	.byte	10,12,254,2,9,1,11
+	.byte	'APPLICATION_TERMINATED',0,0,11
+	.byte	'APPLICATION_RESTARTING',0,1,11
+	.byte	'APPLICATION_ACCESSIBLE',0,2,0,7
+	.byte	'ApplicationStateType',0,12,131,3,3
+	.word	10169
+	.byte	10,12,175,3,9,1,11
+	.byte	'OSServiceId_GetApplicationID',0,0,11
+	.byte	'OSServiceId_GetISRID',0,1,11
+	.byte	'OSServiceId_CallTrustedFunction',0,2,11
+	.byte	'OSServiceId_CheckISRMemoryAccess',0,3,11
+	.byte	'OSServiceId_CheckTaskMemoryAccess',0,4,11
+	.byte	'OSServiceId_CheckObjectAccess',0,5,11
+	.byte	'OSServiceId_CheckObjectOwnership',0,6,11
+	.byte	'OSServiceId_StartScheduleTableRel',0,7,11
+	.byte	'OSServiceId_StartScheduleTableAbs',0,8,11
+	.byte	'OSServiceId_StopScheduleTable',0,9,11
+	.byte	'OSServiceId_NextScheduleTable',0,10,11
+	.byte	'OSServiceId_StartScheduleTableSynchron',0,11,11
+	.byte	'OSServiceId_SyncScheduleTable',0,12,11
+	.byte	'OSServiceId_SetScheduleTableAsync',0,13,11
+	.byte	'OSServiceId_GetScheduleTableStatus',0,14,11
+	.byte	'OSServiceId_IncrementCounter',0,15,11
+	.byte	'OSServiceId_GetCounterValue',0,16,11
+	.byte	'OSServiceId_GetElapsedValue',0,17,11
+	.byte	'OSServiceId_TerminateApplication',0,18,11
+	.byte	'OSServiceId_AllowAccess',0,19,11
+	.byte	'OSServiceId_GetApplicationState',0,20,11
+	.byte	'OSServiceId_GetNumberOfActivatedCores',0,21,11
+	.byte	'OSServiceId_GetCoreID',0,22,11
+	.byte	'OSServiceId_StartCore',0,23,11
+	.byte	'OSServiceId_StartNonAutosarCore',0,24,11
+	.byte	'OSServiceId_GetSpinlock',0,25,11
+	.byte	'OSServiceId_ReleaseSpinlock',0,26,11
+	.byte	'OSServiceId_TryToGetSpinlock',0,27,11
+	.byte	'OSServiceId_ShutdownAllCores',0,28,11
+	.byte	'OSServiceId_ControlIdle',0,29,11
+	.byte	'OSServiceId_IocSend',0,30,11
+	.byte	'OSServiceId_IocWrite',0,31,11
+	.byte	'OSServiceId_IocSendGroup',0,32,11
+	.byte	'OSServiceId_IocWriteGroup',0,33,11
+	.byte	'OSServiceId_IocReceive',0,34,11
+	.byte	'OSServiceId_IocRead',0,35,11
+	.byte	'OSServiceId_IocReceiveGroup',0,36,11
+	.byte	'OSServiceId_IocReadGroup',0,37,11
+	.byte	'OSServiceId_IocEmptyQueue',0,38,11
+	.byte	'OSServiceId_GetCurrentApplicationID',0,39,11
+	.byte	'OSServiceId_GetExceptionContext',0,160,1,11
+	.byte	'OSServiceId_SetExceptionContext',0,161,1,11
+	.byte	'OSServiceId_CallNonTrustedFunction',0,162,1,11
+	.byte	'OSServiceId_AppKill',0,163,1,11
+	.byte	'OSServiceId_AlarmActionSetEvent',0,164,1,11
+	.byte	'OSServiceId_AlarmActionActivateTask',0,165,1,11
+	.byte	'OSServiceId_AlarmActionIncrementCounter',0,166,1,11
+	.byte	'OSServiceId_AlarmActionCallback',0,167,1,11
+	.byte	'OSServiceId_TimerIsr',0,168,1,11
+	.byte	'OSServiceId_IsrWrapper',0,169,1,11
+	.byte	'OSServiceId_GetTaskStackUsage',0,170,1,11
+	.byte	'OSServiceId_GetISRStackUsage',0,171,1,11
+	.byte	'OSServiceId_GetKernelStackUsage',0,172,1,11
+	.byte	'OSServiceId_GetStartupHookStackUsage',0,173,1,11
+	.byte	'OSServiceId_GetErrorHookStackUsage',0,174,1,11
+	.byte	'OSServiceId_GetShutdownHookStackUsage',0,175,1,11
+	.byte	'OSServiceId_GetProtectionHookStackUsage',0,176,1,11
+	.byte	'OSServiceId_GetSemaphore',0,177,1,11
+	.byte	'OSServiceId_ReleaseSemaphore',0,178,1,11
+	.byte	'OSServiceId_ScheduleTableActivateTask',0,179,1,11
+	.byte	'OSServiceId_ScheduleTableSetEvent',0,180,1,11
+	.byte	'OSServiceId_DisableInterruptSource',0,181,1,11
+	.byte	'OSServiceId_EnableInterruptSource',0,182,1,11
+	.byte	'OSServiceId_ClearPendingInterrupt',0,183,1,11
+	.byte	'OSServiceId_GetUnhandledIrq',0,184,1,11
+	.byte	'OSServiceId_GetUnhandledExc',0,185,1,11
+	.byte	'OSServiceId_HookCallCallback',0,186,1,11
+	.byte	'OSServiceId_IsInterruptSourceEnabled',0,187,1,11
+	.byte	'OSServiceId_IsInterruptPending',0,188,1,11
+	.byte	'OSServiceId_CallFastTrustedFunction',0,189,1,11
+	.byte	'OSServiceId_BarrierSynchronize',0,190,1,11
+	.byte	'OSServiceId_InitialEnableInterruptSources',0,191,1,11
+	.byte	'OSServiceId_GetCoreStartState',0,192,1,11
+	.byte	'OSServiceId_GetNonTrustedFunctionStackUsage',0,193,1,11
+	.byte	'OSServiceId_StartOS',0,208,1,11
+	.byte	'OSServiceId_GetActiveApplicationMode',0,210,1,11
+	.byte	'OSServiceId_DisableAllInterrupts',0,211,1,11
+	.byte	'OSServiceId_EnableAllInterrupts',0,212,1,11
+	.byte	'OSServiceId_SuspendAllInterrupts',0,213,1,11
+	.byte	'OSServiceId_ResumeAllInterrupts',0,214,1,11
+	.byte	'OSServiceId_SuspendOSInterrupts',0,215,1,11
+	.byte	'OSServiceId_ResumeOSInterrupts',0,216,1,11
+	.byte	'OSServiceId_ActivateTask',0,217,1,11
+	.byte	'OSServiceId_TerminateTask',0,218,1,11
+	.byte	'OSServiceId_ChainTask',0,219,1,11
+	.byte	'OSServiceId_GetTaskID',0,220,1,11
+	.byte	'OSServiceId_GetTaskState',0,221,1,11
+	.byte	'OSServiceId_Schedule',0,222,1,11
+	.byte	'OSServiceId_SetEvent',0,223,1,11
+	.byte	'OSServiceId_ClearEvent',0,224,1,11
+	.byte	'OSServiceId_GetEvent',0,225,1,11
+	.byte	'OSServiceId_WaitEvent',0,226,1,11
+	.byte	'OSServiceId_GetAlarmBase',0,227,1,11
+	.byte	'OSServiceId_GetAlarm',0,228,1,11
+	.byte	'OSServiceId_SetRelAlarm',0,229,1,11
+	.byte	'OSServiceId_SetAbsAlarm',0,230,1,11
+	.byte	'OSServiceId_CancelAlarm',0,231,1,11
+	.byte	'OSServiceId_GetResource',0,232,1,11
+	.byte	'OSServiceId_ReleaseResource',0,233,1,11
+	.byte	'OSSERVICEID_COUNT',0,255,1,0,7
+	.byte	'OSServiceIdType',0,12,155,4,3
+	.word	10281
+	.byte	10,12,171,4,9,2,11
+	.byte	'OS_STATUS_OK',0,0,11
+	.byte	'OS_STATUS_CALLEVEL',0,2,11
+	.byte	'OS_STATUS_LIMIT',0,4,11
+	.byte	'OS_STATUS_RESOURCE',0,6,11
+	.byte	'OS_STATUS_SERVICEID',0,9,11
+	.byte	'OS_STATUS_ILLEGAL_ADDRESS',0,10,11
+	.byte	'OS_STATUS_MISSINGEND',0,11,11
+	.byte	'OS_STATUS_DISABLEDINT',0,12,11
+	.byte	'OS_STATUS_STACKFAULT',0,13,11
+	.byte	'OS_STATUS_PROTECTION_MEMORY',0,14,11
+	.byte	'OS_STATUS_PROTECTION_TIME',0,15,11
+	.byte	'OS_STATUS_PROTECTION_ARRIVAL',0,16,11
+	.byte	'OS_STATUS_PROTECTION_LOCKED',0,17,11
+	.byte	'OS_STATUS_PROTECTION_EXCEPTION',0,18,11
+	.byte	'OS_STATUS_INTERFERENCE_DEADLOCK',0,19,11
+	.byte	'OS_STATUS_NESTING_DEADLOCK',0,20,11
+	.byte	'OS_STATUS_SPINLOCK',0,21,11
+	.byte	'OS_STATUS_CORE',0,22,11
+	.byte	'OS_STATUS_OVERFLOW',0,245,1,11
+	.byte	'OS_STATUS_KILL_KERNEL_OBJ',0,246,1,11
+	.byte	'OS_STATUS_NO_RESTARTTASK',0,247,1,11
+	.byte	'OS_STATUS_CALL_NOT_ALLOWED',0,248,1,11
+	.byte	'OS_STATUS_FUNCTION_UNAVAILABLE',0,249,1,11
+	.byte	'OS_STATUS_PROTECTION_SYSCALL',0,250,1,11
+	.byte	'OS_STATUS_PROTECTION_IRQ',0,251,1,11
+	.byte	'OS_STATUS_API_ERROR',0,252,1,11
+	.byte	'OS_STATUS_ASSERTION',0,253,1,11
+	.byte	'OS_STATUS_OVERLOAD',0,254,1,11
+	.byte	'OS_STATUS_ACCESSRIGHTS_1',0,129,2,11
+	.byte	'OS_STATUS_CALLEVEL_SHARED_STACK',0,130,2,11
+	.byte	'OS_STATUS_ID_1',0,131,2,11
+	.byte	'OS_STATUS_UNLOCKED',0,133,2,11
+	.byte	'OS_STATUS_STATE_1',0,135,2,11
+	.byte	'OS_STATUS_VALUE_IS_ZERO_1',0,136,2,11
+	.byte	'OS_STATUS_CORE_CROSS_DATA',0,150,2,11
+	.byte	'OS_STATUS_PARAM_POINTER_1',0,151,2,11
+	.byte	'OS_STATUS_STACKUSAGE_DISABLED_BY_CONFIG',0,241,3,11
+	.byte	'OS_STATUS_NO_BARRIER_PARTICIPANT',0,242,3,11
+	.byte	'OS_STATUS_UNIMPLEMENTED_CLEARPENDING',0,243,3,11
+	.byte	'OS_STATUS_NO_NTFSTACK_POOL_EMPTY',0,244,3,11
+	.byte	'OS_STATUS_ACCESSRIGHTS_2',0,129,4,11
+	.byte	'OS_STATUS_CALLEVEL_CROSS_CORE_SYNC',0,130,4,11
+	.byte	'OS_STATUS_ID_2',0,131,4,11
+	.byte	'OS_STATUS_NOFUNC_1',0,133,4,11
+	.byte	'OS_STATUS_STATE_2',0,135,4,11
+	.byte	'OS_STATUS_VALUE_IS_ZERO_2',0,136,4,11
+	.byte	'OS_STATUS_PARAM_POINTER_2',0,151,4,11
+	.byte	'OS_STATUS_EVENT_DISABLED_BY_CONFIG',0,241,5,11
+	.byte	'OS_STATUS_UNIMPLEMENTED_EXCEPTIONCONTEXT',0,243,5,11
+	.byte	'OS_STATUS_NO_NTFSTACK_APPLIMIT_EXCEEDED',0,244,5,11
+	.byte	'OS_STATUS_NOTACCESSIBLE_1',0,129,6,11
+	.byte	'OS_STATUS_ID_TYPE_1',0,131,6,11
+	.byte	'OS_STATUS_NOFUNC_2',0,133,6,11
+	.byte	'OS_STATUS_STATE_STOPPED',0,135,6,11
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_1',0,136,6,11
+	.byte	'OS_STATUS_PARAM_POINTER_3',0,151,6,11
+	.byte	'OS_STATUS_NOTACCESSIBLE_2',0,129,8,11
+	.byte	'OS_STATUS_ID_DIFFERENT_COUNTER',0,131,8,11
+	.byte	'OS_STATUS_SPINLOCK_ORDER',0,133,8,11
+	.byte	'OS_STATUS_STATE_RUNNING',0,135,8,11
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_2',0,136,8,11
+	.byte	'OS_STATUS_NOEXTENDEDTASK_1',0,129,10,11
+	.byte	'OS_STATUS_ID_DIFFERENT_SYNC',0,131,10,11
+	.byte	'OS_STATUS_STOPPED_1',0,133,10,11
+	.byte	'OS_STATUS_STATE_NEXTED',0,135,10,11
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_3',0,136,10,11
+	.byte	'OS_STATUS_NOEXTENDEDTASK_2',0,129,12,11
+	.byte	'OS_STATUS_HOOK_NOT_AVAILABLE',0,131,12,11
+	.byte	'OS_STATUS_NOT_STOPPED_2',0,133,12,11
+	.byte	'OS_STATUS_STATE_WAITING',0,135,12,11
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_1',0,136,12,11
+	.byte	'OS_STATUS_NOEXTENDEDTASK_CALLER',0,129,14,11
+	.byte	'OS_STATUS_NEXTED_1',0,133,14,11
+	.byte	'OS_STATUS_STATE_NO_RESTART',0,135,14,11
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_2',0,136,14,11
+	.byte	'OS_STATUS_LOCKED',0,129,16,11
+	.byte	'OS_STATUS_KILLING_IS_DISABLED',0,133,16,11
+	.byte	'OS_STATUS_STATE_ALREADY_TERMINATED',0,135,16,11
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_1',0,136,16,11
+	.byte	'OS_STATUS_PRIORITY',0,129,18,11
+	.byte	'OS_STATUS_ORDER',0,133,18,11
+	.byte	'OS_STATUS_STATE_RESTARTING_NO_MEMBER',0,135,18,11
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_2',0,136,18,11
+	.byte	'OS_STATUS_NOT_THE_OWNER_1',0,129,20,11
+	.byte	'OS_STATUS_STATE_ALREADY_RESTARTING',0,135,20,11
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,11
+	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0,7
+	.byte	'Os_StatusType',0,12,231,5,3
+	.word	13498
+	.byte	8,12,132,6,9,4,9
+	.byte	'Service',0
+	.word	10281
+	.byte	1,2,35,0,9
+	.byte	'Error',0
+	.word	138
+	.byte	1,2,35,1,9
+	.byte	'DetailedError',0
+	.word	13498
+	.byte	2,2,35,2,0,7
+	.byte	'Os_ErrorInformationType',0,12,142,6,3
+	.word	16028
+	.byte	10,12,174,6,9,1,11
+	.byte	'SCHEDULETABLE_STOPPED',0,0,11
+	.byte	'SCHEDULETABLE_NEXT',0,1,11
+	.byte	'SCHEDULETABLE_WAITING',0,2,11
+	.byte	'SCHEDULETABLE_RUNNING',0,3,11
+	.byte	'SCHEDULETABLE_RUNNING_AND_SYNCHRONOUS',0,4,0,7
+	.byte	'ScheduleTableStatusType',0,12,191,6,3
+	.word	16123
+	.byte	10,12,203,6,9,1,11
+	.byte	'OS_MEM_ACCESS_TYPE_NON',0,0,11
+	.byte	'OS_MEM_ACCESS_TYPE_R',0,1,11
+	.byte	'OS_MEM_ACCESS_TYPE_READ',0,1,11
+	.byte	'OS_MEM_ACCESS_TYPE_W',0,2,11
+	.byte	'OS_MEM_ACCESS_TYPE_WRITE',0,2,11
+	.byte	'OS_MEM_ACCESS_TYPE_RW',0,3,11
+	.byte	'OS_MEM_ACCESS_TYPE_EXECUTE',0,4,11
+	.byte	'OS_MEM_ACCESS_TYPE_X',0,4,11
+	.byte	'OS_MEM_ACCESS_TYPE_RX',0,5,11
+	.byte	'OS_MEM_ACCESS_TYPE_WX',0,6,11
+	.byte	'OS_MEM_ACCESS_TYPE_RWX',0,7,11
+	.byte	'OS_MEM_ACCESS_TYPE_S',0,8,11
+	.byte	'OS_MEM_ACCESS_TYPE_STACK',0,8,11
+	.byte	'OS_MEM_ACCESS_TYPE_RS',0,9,11
+	.byte	'OS_MEM_ACCESS_TYPE_WS',0,10,11
+	.byte	'OS_MEM_ACCESS_TYPE_RWS',0,11,11
+	.byte	'OS_MEM_ACCESS_TYPE_XS',0,12,11
+	.byte	'OS_MEM_ACCESS_TYPE_RXS',0,13,11
+	.byte	'OS_MEM_ACCESS_TYPE_WXS',0,14,11
+	.byte	'OS_MEM_ACCESS_TYPE_RWXS',0,15,0,7
+	.byte	'Os_MemAccessType',0,12,225,6,3
+	.word	16296
+	.byte	7
+	.byte	'Os_Hal_AddressType',0,13,97,16
+	.word	392
+	.byte	7
+	.byte	'Os_AccessCheckAddress',0,14,150,2,29
+	.word	392
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L8:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,46,1,3,8,58,15,59,15,57,15
+	.byte	54,15,39,12,63,12,60,12,0,0,4,5,0,3,8,58,15,59,15,57,15,73,19,0,0,5,21,0,54,15,0,0,6,15,0,73,19,0,0,7
+	.byte	22,0,3,8,58,15,59,15,57,15,73,19,0,0,8,19,1,58,15,59,15,57,15,11,15,0,0,9,13,0,3,8,73,19,11,15,56,9,0
+	.byte	0,10,4,1,58,15,59,15,57,15,11,15,0,0,11,40,0,3,8,28,13,0,0,12,19,1,3,8,58,15,59,15,57,15,11,15,0,0,13
+	.byte	1,1,11,15,73,19,0,0,14,33,0,47,15,0,0,15,23,1,3,8,58,15,59,15,57,15,11,15,0,0,16,38,0,73,19,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L9:
+	.word	.L119-.L118
+.L118:
+	.half	3
+	.word	.L121-.L120
+.L120:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation',0,0
+	.byte	'Com_MainFunctions.h',0,1,0,0
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0,0,0,0
+	.byte	'Platform_Types.h',0,2,0,0
+	.byte	'Std_Types.h',0,2,0,0
+	.byte	'ComStack_Cfg.h',0,3,0,0
+	.byte	'ComStack_Types.h',0,2,0,0
+	.byte	'Com_Lcfg.h',0,3,0,0
+	.byte	'Det_Cfg.h',0,3,0,0
+	.byte	'Os_Types_Lcfg.h',0,3,0,0
+	.byte	'Os_Hal_OsInt.h',0,4,0,0
+	.byte	'Os_Hal_Os_Types.h',0,4,0,0
+	.byte	'Os_Types.h',0,4,0,0
+	.byte	'Os_Hal_Lcfg.h',0,3,0,0
+	.byte	'OsInt.h',0,4,0,0,0
+.L121:
+.L119:
+	.sdecl	'.debug_info',debug,cluster('Com_MainFunctionRx_ComMainFunctionRx')
+	.sect	'.debug_info'
+.L10:
+	.word	211
+	.half	3
+	.word	.L11
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L13,.L12
+	.byte	2
+	.word	.L6
+	.byte	3
+	.byte	'Com_MainFunctionRx_ComMainFunctionRx',0,1,240,6,22,1,1,1
+	.word	.L3,.L84,.L2
+	.byte	4
+	.word	.L3,.L84
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_MainFunctionRx_ComMainFunctionRx')
+	.sect	'.debug_abbrev'
+.L11:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Com_MainFunctionRx_ComMainFunctionRx')
+	.sect	'.debug_line'
+.L12:
+	.word	.L123-.L122
+.L122:
+	.half	3
+	.word	.L125-.L124
+.L124:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0,0,0,0,0
+.L125:
+	.byte	5,30,7,0,5,2
+	.word	.L3
+	.byte	3,243,6,1,5,1,9
+	.half	.L14-.L3
+	.byte	3,2,0,1,1
+.L123:
+	.sdecl	'.debug_ranges',debug,cluster('Com_MainFunctionRx_ComMainFunctionRx')
+	.sect	'.debug_ranges'
+.L13:
+	.word	-1,.L3,0,.L14-.L3,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_MainFunctionTx_ComMainFunctionTx')
+	.sect	'.debug_info'
+.L15:
+	.word	211
+	.half	3
+	.word	.L16
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L18,.L17
+	.byte	2
+	.word	.L6
+	.byte	3
+	.byte	'Com_MainFunctionTx_ComMainFunctionTx',0,1,128,7,22,1,1,1
+	.word	.L5,.L85,.L4
+	.byte	4
+	.word	.L5,.L85
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_MainFunctionTx_ComMainFunctionTx')
+	.sect	'.debug_abbrev'
+.L16:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Com_MainFunctionTx_ComMainFunctionTx')
+	.sect	'.debug_line'
+.L17:
+	.word	.L127-.L126
+.L126:
+	.half	3
+	.word	.L129-.L128
+.L128:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0,0,0,0,0
+.L129:
+	.byte	5,30,7,0,5,2
+	.word	.L5
+	.byte	3,131,7,1,5,1,9
+	.half	.L19-.L5
+	.byte	3,2,0,1,1
+.L127:
+	.sdecl	'.debug_ranges',debug,cluster('Com_MainFunctionTx_ComMainFunctionTx')
+	.sect	'.debug_ranges'
+.L18:
+	.word	-1,.L5,0,.L19-.L5,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_ConstValueUInt8')
+	.sect	'.debug_info'
+.L20:
+	.word	171
+	.half	3
+	.word	.L21
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_ConstValueUInt8',0,2,121,43
+	.word	.L86
+	.byte	1,5,3
+	.word	Com_ConstValueUInt8
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_ConstValueUInt8')
+	.sect	'.debug_abbrev'
+.L21:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_IPduGroupInfo')
+	.sect	'.debug_info'
+.L22:
+	.word	170
+	.half	3
+	.word	.L23
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_IPduGroupInfo',0,2,150,1,41
+	.word	.L87
+	.byte	1,5,3
+	.word	Com_IPduGroupInfo
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_IPduGroupInfo')
+	.sect	'.debug_abbrev'
+.L23:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_IPduGroupInfoOfTxPduInfoInd')
+	.sect	'.debug_info'
+.L24:
+	.word	184
+	.half	3
+	.word	.L25
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_IPduGroupInfoOfTxPduInfoInd',0,2,171,1,55
+	.word	.L88
+	.byte	1,5,3
+	.word	Com_IPduGroupInfoOfTxPduInfoInd
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_IPduGroupInfoOfTxPduInfoInd')
+	.sect	'.debug_abbrev'
+.L25:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_MainFunctionRxStruct')
+	.sect	'.debug_info'
+.L26:
+	.word	177
+	.half	3
+	.word	.L27
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_MainFunctionRxStruct',0,2,194,1,48
+	.word	.L89
+	.byte	1,5,3
+	.word	Com_MainFunctionRxStruct
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_MainFunctionRxStruct')
+	.sect	'.debug_abbrev'
+.L27:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_MainFunctionTxStruct')
+	.sect	'.debug_info'
+.L28:
+	.word	177
+	.half	3
+	.word	.L29
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_MainFunctionTxStruct',0,2,217,1,48
+	.word	.L90
+	.byte	1,5,3
+	.word	Com_MainFunctionTxStruct
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_MainFunctionTxStruct')
+	.sect	'.debug_abbrev'
+.L29:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_RxAccessInfo')
+	.sect	'.debug_info'
+.L30:
+	.word	169
+	.half	3
+	.word	.L31
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_RxAccessInfo',0,2,244,1,40
+	.word	.L91
+	.byte	1,5,3
+	.word	Com_RxAccessInfo
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_RxAccessInfo')
+	.sect	'.debug_abbrev'
+.L31:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_RxPduInfo')
+	.sect	'.debug_info'
+.L32:
+	.word	166
+	.half	3
+	.word	.L33
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_RxPduInfo',0,2,145,2,37
+	.word	.L92
+	.byte	1,5,3
+	.word	Com_RxPduInfo
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_RxPduInfo')
+	.sect	'.debug_abbrev'
+.L33:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_RxSigInfo')
+	.sect	'.debug_info'
+.L34:
+	.word	166
+	.half	3
+	.word	.L35
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_RxSigInfo',0,2,168,2,37
+	.word	.L93
+	.byte	1,5,3
+	.word	Com_RxSigInfo
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_RxSigInfo')
+	.sect	'.debug_abbrev'
+.L35:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_TxAccessInfo')
+	.sect	'.debug_info'
+.L36:
+	.word	169
+	.half	3
+	.word	.L37
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_TxAccessInfo',0,2,192,2,40
+	.word	.L94
+	.byte	1,5,3
+	.word	Com_TxAccessInfo
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_TxAccessInfo')
+	.sect	'.debug_abbrev'
+.L37:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_TxModeFalse')
+	.sect	'.debug_info'
+.L38:
+	.word	168
+	.half	3
+	.word	.L39
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_TxModeFalse',0,2,216,2,39
+	.word	.L95
+	.byte	1,5,3
+	.word	Com_TxModeFalse
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_TxModeFalse')
+	.sect	'.debug_abbrev'
+.L39:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_TxModeInfo')
+	.sect	'.debug_info'
+.L40:
+	.word	167
+	.half	3
+	.word	.L41
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_TxModeInfo',0,2,240,2,38
+	.word	.L96
+	.byte	1,5,3
+	.word	Com_TxModeInfo
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_TxModeInfo')
+	.sect	'.debug_abbrev'
+.L41:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_TxModeTrue')
+	.sect	'.debug_info'
+.L42:
+	.word	167
+	.half	3
+	.word	.L43
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_TxModeTrue',0,2,136,3,38
+	.word	.L97
+	.byte	1,5,3
+	.word	Com_TxModeTrue
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_TxModeTrue')
+	.sect	'.debug_abbrev'
+.L43:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_TxPduInfo')
+	.sect	'.debug_info'
+.L44:
+	.word	166
+	.half	3
+	.word	.L45
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_TxPduInfo',0,2,162,3,37
+	.word	.L98
+	.byte	1,5,3
+	.word	Com_TxPduInfo
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_TxPduInfo')
+	.sect	'.debug_abbrev'
+.L45:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_TxPduInitValue')
+	.sect	'.debug_info'
+.L46:
+	.word	171
+	.half	3
+	.word	.L47
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_TxPduInitValue',0,2,183,3,42
+	.word	.L99
+	.byte	1,5,3
+	.word	Com_TxPduInitValue
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_TxPduInitValue')
+	.sect	'.debug_abbrev'
+.L47:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_TxSigInfo')
+	.sect	'.debug_info'
+.L48:
+	.word	166
+	.half	3
+	.word	.L49
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_TxSigInfo',0,2,243,3,37
+	.word	.L100
+	.byte	1,5,3
+	.word	Com_TxSigInfo
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_TxSigInfo')
+	.sect	'.debug_abbrev'
+.L49:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_CurrentTxMode')
+	.sect	'.debug_info'
+.L50:
+	.word	170
+	.half	3
+	.word	.L51
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_CurrentTxMode',0,2,136,4,46
+	.word	.L101
+	.byte	1,5,3
+	.word	Com_CurrentTxMode
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_CurrentTxMode')
+	.sect	'.debug_abbrev'
+.L51:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_CycleTimeCnt')
+	.sect	'.debug_info'
+.L52:
+	.word	169
+	.half	3
+	.word	.L53
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_CycleTimeCnt',0,2,157,4,45
+	.word	.L102
+	.byte	1,5,3
+	.word	Com_CycleTimeCnt
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_CycleTimeCnt')
+	.sect	'.debug_abbrev'
+.L53:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_CyclicSendRequest')
+	.sect	'.debug_info'
+.L54:
+	.word	174
+	.half	3
+	.word	.L55
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_CyclicSendRequest',0,2,178,4,50
+	.word	.L103
+	.byte	1,5,3
+	.word	Com_CyclicSendRequest
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_CyclicSendRequest')
+	.sect	'.debug_abbrev'
+.L55:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_HandleRxPduDeferred')
+	.sect	'.debug_info'
+.L56:
+	.word	176
+	.half	3
+	.word	.L57
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_HandleRxPduDeferred',0,2,199,4,52
+	.word	.L104
+	.byte	1,5,3
+	.word	Com_HandleRxPduDeferred
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_HandleRxPduDeferred')
+	.sect	'.debug_abbrev'
+.L57:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_IPduGroupState')
+	.sect	'.debug_info'
+.L58:
+	.word	171
+	.half	3
+	.word	.L59
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_IPduGroupState',0,2,215,4,46
+	.word	.L105
+	.byte	1,5,3
+	.word	Com_IPduGroupState
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_IPduGroupState')
+	.sect	'.debug_abbrev'
+.L59:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_Initialized')
+	.sect	'.debug_info'
+.L60:
+	.word	168
+	.half	3
+	.word	.L61
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_Initialized',0,2,236,4,43
+	.word	.L106
+	.byte	1,5,3
+	.word	Com_Initialized
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_Initialized')
+	.sect	'.debug_abbrev'
+.L61:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_RxDefPduBuffer')
+	.sect	'.debug_info'
+.L62:
+	.word	171
+	.half	3
+	.word	.L63
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_RxDefPduBuffer',0,2,253,4,47
+	.word	.L107
+	.byte	1,5,3
+	.word	Com_RxDefPduBuffer
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_RxDefPduBuffer')
+	.sect	'.debug_abbrev'
+.L63:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_RxIPduGroupISRLockCounter')
+	.sect	'.debug_info'
+.L64:
+	.word	182
+	.half	3
+	.word	.L65
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_RxIPduGroupISRLockCounter',0,2,141,5,58
+	.word	.L108
+	.byte	1,5,3
+	.word	Com_RxIPduGroupISRLockCounter
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_RxIPduGroupISRLockCounter')
+	.sect	'.debug_abbrev'
+.L65:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_RxMainFunctionProcessingISRLockCounter')
+	.sect	'.debug_info'
+.L66:
+	.word	195
+	.half	3
+	.word	.L67
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_RxMainFunctionProcessingISRLockCounter',0,2,157,5,71
+	.word	.L109
+	.byte	1,5,3
+	.word	Com_RxMainFunctionProcessingISRLockCounter
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_RxMainFunctionProcessingISRLockCounter')
+	.sect	'.debug_abbrev'
+.L67:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_RxPduGrpActive')
+	.sect	'.debug_info'
+.L68:
+	.word	171
+	.half	3
+	.word	.L69
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_RxPduGrpActive',0,2,177,5,46
+	.word	.L110
+	.byte	1,5,3
+	.word	Com_RxPduGrpActive
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_RxPduGrpActive')
+	.sect	'.debug_abbrev'
+.L69:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_RxSigBufferUInt8')
+	.sect	'.debug_info'
+.L70:
+	.word	173
+	.half	3
+	.word	.L71
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_RxSigBufferUInt8',0,2,197,5,48
+	.word	.L111
+	.byte	1,5,3
+	.word	Com_RxSigBufferUInt8
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_RxSigBufferUInt8')
+	.sect	'.debug_abbrev'
+.L71:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_TransmitRequest')
+	.sect	'.debug_info'
+.L72:
+	.word	172
+	.half	3
+	.word	.L73
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_TransmitRequest',0,2,218,5,48
+	.word	.L112
+	.byte	1,5,3
+	.word	Com_TransmitRequest
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_TransmitRequest')
+	.sect	'.debug_abbrev'
+.L73:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_TxBuffer')
+	.sect	'.debug_info'
+.L74:
+	.word	165
+	.half	3
+	.word	.L75
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_TxBuffer',0,2,239,5,40
+	.word	.L113
+	.byte	1,5,3
+	.word	Com_TxBuffer
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_TxBuffer')
+	.sect	'.debug_abbrev'
+.L75:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_TxIPduGroupISRLockCounter')
+	.sect	'.debug_info'
+.L76:
+	.word	182
+	.half	3
+	.word	.L77
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_TxIPduGroupISRLockCounter',0,2,131,6,58
+	.word	.L114
+	.byte	1,5,3
+	.word	Com_TxIPduGroupISRLockCounter
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_TxIPduGroupISRLockCounter')
+	.sect	'.debug_abbrev'
+.L77:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_TxPduGrpActive')
+	.sect	'.debug_info'
+.L78:
+	.word	171
+	.half	3
+	.word	.L79
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_TxPduGrpActive',0,2,151,6,46
+	.word	.L115
+	.byte	1,5,3
+	.word	Com_TxPduGrpActive
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_TxPduGrpActive')
+	.sect	'.debug_abbrev'
+.L79:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_TxProcessingISRLockCounter')
+	.sect	'.debug_info'
+.L80:
+	.word	183
+	.half	3
+	.word	.L81
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_TxProcessingISRLockCounter',0,2,168,6,59
+	.word	.L116
+	.byte	1,5,3
+	.word	Com_TxProcessingISRLockCounter
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_TxProcessingISRLockCounter')
+	.sect	'.debug_abbrev'
+.L81:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Com_TxSduLength')
+	.sect	'.debug_info'
+.L82:
+	.word	168
+	.half	3
+	.word	.L83
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\Com_Lcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'Com_TxSduLength',0,2,188,6,43
+	.word	.L117
+	.byte	1,5,3
+	.word	Com_TxSduLength
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Com_TxSduLength')
+	.sect	'.debug_abbrev'
+.L83:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_loc',debug,cluster('Com_MainFunctionRx_ComMainFunctionRx')
+	.sect	'.debug_loc'
+.L2:
+	.word	-1,.L3,0,.L84-.L3
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Com_MainFunctionTx_ComMainFunctionTx')
+	.sect	'.debug_loc'
+.L4:
+	.word	-1,.L5,0,.L85-.L5
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L130:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Com_MainFunctionRx_ComMainFunctionRx')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L130,.L3,.L84-.L3
+	.sdecl	'.debug_frame',debug,cluster('Com_MainFunctionTx_ComMainFunctionTx')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L130,.L5,.L85-.L5
+
+; ..\Appl\GenData\Com_Lcfg.c	   901  #endif
+; ..\Appl\GenData\Com_Lcfg.c	   902  }
+; ..\Appl\GenData\Com_Lcfg.c	   903  
+; ..\Appl\GenData\Com_Lcfg.c	   904  #define COM_STOP_SEC_CODE
+; ..\Appl\GenData\Com_Lcfg.c	   905  #include "MemMap.h" /* PRQA S 5087 */   /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   906  
+; ..\Appl\GenData\Com_Lcfg.c	   907  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   908    END OF FILE: Com_Lcfg.c
+; ..\Appl\GenData\Com_Lcfg.c	   909  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   910  
+
+	; Module end

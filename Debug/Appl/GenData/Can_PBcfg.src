@@ -1,0 +1,787 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc3188a --dep-file=Appl\\GenData\\.Can_PBcfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\mak -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Make -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteAnalyzer -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache\\-148438436 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -g2 --make-target=Appl\\GenData\\Can_PBcfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\Can_PBcfg.src ..\\Appl\\GenData\\Can_PBcfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\GenData\\Can_PBcfg.c'
+
+	
+$TC162
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	8144
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\Appl\\GenData\\Can_PBcfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2,1,3
+	.word	139
+	.byte	4
+	.byte	'__codeptr',0,1,1,1
+	.word	141
+	.byte	5
+	.byte	'unsigned char',0,1,8,4
+	.byte	'boolean',0,2,101,31
+	.word	164
+	.byte	4
+	.byte	'uint8',0,2,104,31
+	.word	164
+	.byte	5
+	.byte	'short int',0,2,5,4
+	.byte	'sint16',0,2,105,31
+	.word	211
+	.byte	5
+	.byte	'unsigned short int',0,2,7,4
+	.byte	'uint16',0,2,106,31
+	.word	239
+	.byte	5
+	.byte	'unsigned long int',0,4,7,4
+	.byte	'uint32',0,2,108,31
+	.word	276
+	.byte	4
+	.byte	'uint8_least',0,2,111,31
+	.word	164
+	.byte	4
+	.byte	'Std_ReturnType',0,3,124,15
+	.word	164
+	.byte	4
+	.byte	'Std_TransformerErrorCode',0,3,135,1,15
+	.word	164
+	.byte	4
+	.byte	'Std_TransformerClass',0,3,137,1,15
+	.word	164
+	.byte	4
+	.byte	'PduIdType',0,4,63,15
+	.word	164
+	.byte	4
+	.byte	'PduLengthType',0,4,65,15
+	.word	164
+	.byte	3
+	.word	164
+	.byte	4
+	.byte	'SduDataPtrType',0,5,196,1,54
+	.word	459
+	.byte	6,5,219,1,9,1,7
+	.byte	'TP_DATACONF',0,0,7
+	.byte	'TP_DATARETRY',0,1,7
+	.byte	'TP_CONFPENDING',0,2,0,4
+	.byte	'TpDataStateType',0,5,226,1,3
+	.word	488
+	.byte	4
+	.byte	'Can_IdType',0,6,55,30
+	.word	239
+	.byte	4
+	.byte	'Can_HwHandleType',0,6,58,29
+	.word	164
+	.byte	4
+	.byte	'Can_SduPtrType',0,6,61,45
+	.word	459
+	.byte	4
+	.byte	'tCanLLCanIntOld',0,7,163,3,37
+	.word	276
+	.byte	4
+	.byte	'Can_ExternalTickType',0,7,182,3,16
+	.word	276
+	.byte	8,32
+	.word	276
+	.byte	9,7,0,4
+	.byte	'Can_LoopTimeout_dim_type',0,7,185,3,44
+	.word	688
+	.byte	4
+	.byte	'Can_ControllerConfigIterType',0,7,246,13,21
+	.word	164
+	.byte	4
+	.byte	'Can_PduOfActiveSendObjectType',0,7,199,14,19
+	.word	164
+	.byte	4
+	.byte	'Can_StateOfActiveSendObjectType',0,7,202,14,16
+	.word	239
+	.byte	4
+	.byte	'Can_BTPType',0,7,205,14,16
+	.word	276
+	.byte	4
+	.byte	'Can_RXBCOfBufferConfigType',0,7,211,14,15
+	.word	164
+	.byte	4
+	.byte	'Can_RXF0COfBufferConfigType',0,7,214,14,16
+	.word	276
+	.byte	4
+	.byte	'Can_RXF1COfBufferConfigType',0,7,217,14,15
+	.word	164
+	.byte	4
+	.byte	'Can_TXBCOfBufferConfigType',0,7,220,14,16
+	.word	276
+	.byte	4
+	.byte	'Can_TXEFCOfBufferConfigType',0,7,223,14,15
+	.word	164
+	.byte	4
+	.byte	'Can_CanIfChannelIdType',0,7,241,14,15
+	.word	164
+	.byte	4
+	.byte	'Can_CanSubSystemBaseAdrType',0,7,244,14,16
+	.word	276
+	.byte	4
+	.byte	'Can_BasisAdrOfControllerConfigType',0,7,247,14,16
+	.word	276
+	.byte	4
+	.byte	'Can_CanControllerDefaultBaudrateIdxOfControllerConfigType',0,7,250,14,15
+	.word	164
+	.byte	4
+	.byte	'Can_CanControllerDefaultBaudrateOfControllerConfigType',0,7,253,14,16
+	.word	239
+	.byte	4
+	.byte	'Can_IsTTCanOfControllerConfigType',0,7,128,15,17
+	.word	164
+	.byte	4
+	.byte	'Can_MailboxRxBasicEndIdxOfControllerConfigType',0,7,131,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_MailboxRxBasicLengthOfControllerConfigType',0,7,134,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_MailboxRxBasicStartIdxOfControllerConfigType',0,7,137,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_MailboxTxBasicEndIdxOfControllerConfigType',0,7,143,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_MailboxTxBasicLengthOfControllerConfigType',0,7,146,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_MailboxTxBasicStartIdxOfControllerConfigType',0,7,149,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_RxBasicHwStartOfControllerConfigType',0,7,155,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_RxBasicHwStopOfControllerConfigType',0,7,158,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_RxFullHwStartOfControllerConfigType',0,7,161,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_RxFullHwStopOfControllerConfigType',0,7,164,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_RxSelectionOfControllerConfigType',0,7,167,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_TxBasicHwStartOfControllerConfigType',0,7,170,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_TxBasicHwStopOfControllerConfigType',0,7,173,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_TxFullHwStartOfControllerConfigType',0,7,176,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_TxFullHwStopOfControllerConfigType',0,7,179,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_UnusedHwStartOfControllerConfigType',0,7,182,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_UnusedHwStopOfControllerConfigType',0,7,185,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_BusOffNotificationOfControllerDataType',0,7,188,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_BusOffTransitionRequestOfControllerDataType',0,7,191,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_CanInterruptCounterOfControllerDataType',0,7,194,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_IntEnableOfControllerDataType',0,7,197,15,16
+	.word	276
+	.byte	4
+	.byte	'Can_IsBusOffOfControllerDataType',0,7,200,15,17
+	.word	164
+	.byte	4
+	.byte	'Can_LastInitObjectOfControllerDataType',0,7,203,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_LastStateOfControllerDataType',0,7,206,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_LogStatusOfControllerDataType',0,7,209,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_ModeTransitionRequestOfControllerDataType',0,7,212,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_NonFdObjectsPendingFlagOfControllerDataType',0,7,215,15,16
+	.word	276
+	.byte	4
+	.byte	'Can_PrevModeOfControllerDataType',0,7,218,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_RamCheckTransitionRequestOfControllerDataType',0,7,221,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_TXBCROfControllerDataType',0,7,224,15,16
+	.word	276
+	.byte	4
+	.byte	'Can_TXBCRWaitOfControllerDataType',0,7,227,15,16
+	.word	276
+	.byte	4
+	.byte	'Can_TXBRPOfControllerDataType',0,7,230,15,16
+	.word	276
+	.byte	4
+	.byte	'Can_FBTPType',0,7,233,15,16
+	.word	276
+	.byte	4
+	.byte	'Can_GFCType',0,7,236,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_INT_PriorityType',0,7,239,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_INT_RoutingGroupType',0,7,242,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_InitObjectBaudrateType',0,7,245,15,16
+	.word	239
+	.byte	4
+	.byte	'Can_InitObjectFdBrsConfigType',0,7,248,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_InitObjectStartIndexType',0,7,251,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_ActiveSendObjectOfMailboxType',0,7,254,15,15
+	.word	164
+	.byte	4
+	.byte	'Can_ControllerConfigIdxOfMailboxType',0,7,129,16,15
+	.word	164
+	.byte	4
+	.byte	'Can_FdPaddingOfMailboxType',0,7,132,16,15
+	.word	164
+	.byte	4
+	.byte	'Can_HwHandleOfMailboxType',0,7,135,16,15
+	.word	164
+	.byte	4
+	.byte	'Can_IDValueOfMailboxType',0,7,138,16,15
+	.word	164
+	.byte	4
+	.byte	'Can_MailboxSizeOfMailboxType',0,7,141,16,15
+	.word	164
+	.byte	4
+	.byte	'Can_MailboxTypeOfMailboxType',0,7,144,16,15
+	.word	164
+	.byte	4
+	.byte	'Can_MaxDataLenOfMailboxType',0,7,147,16,15
+	.word	164
+	.byte	4
+	.byte	'Can_MemorySectionsIndexOfMailboxType',0,7,150,16,15
+	.word	164
+	.byte	4
+	.byte	'Can_MemorySectionStartOfMemorySectionInfoType',0,7,153,16,15
+	.word	164
+	.byte	4
+	.byte	'Can_HwHandleOfMemorySectionObjectsType',0,7,156,16,15
+	.word	164
+	.byte	4
+	.byte	'Can_MailboxElementOfMemorySectionObjectsType',0,7,159,16,15
+	.word	164
+	.byte	4
+	.byte	'Can_MailboxHandleOfMemorySectionObjectsType',0,7,162,16,15
+	.word	164
+	.byte	4
+	.byte	'Can_FLSSAOfSIDFCType',0,7,168,16,15
+	.word	164
+	.byte	4
+	.byte	'Can_LSSOfSIDFCType',0,7,171,16,15
+	.word	164
+	.byte	4
+	.byte	'Can_SIDFEEndIdxOfSIDFCType',0,7,174,16,15
+	.word	164
+	.byte	4
+	.byte	'Can_SIDFEStartIdxOfSIDFCType',0,7,177,16,15
+	.word	164
+	.byte	4
+	.byte	'Can_SIDFEType',0,7,183,16,16
+	.word	276
+	.byte	4
+	.byte	'Can_SRN_AddressType',0,7,186,16,16
+	.word	276
+	.byte	4
+	.byte	'Can_RXBAOfShmAdrType',0,7,189,16,16
+	.word	276
+	.byte	4
+	.byte	'Can_RXF0AOfShmAdrType',0,7,192,16,16
+	.word	276
+	.byte	4
+	.byte	'Can_RXF1AOfShmAdrType',0,7,195,16,16
+	.word	276
+	.byte	4
+	.byte	'Can_SIDFAOfShmAdrType',0,7,198,16,16
+	.word	276
+	.byte	4
+	.byte	'Can_StartAdrOfShmAdrType',0,7,201,16,16
+	.word	276
+	.byte	4
+	.byte	'Can_StopAdrOfShmAdrType',0,7,204,16,16
+	.word	276
+	.byte	4
+	.byte	'Can_TXBAOfShmAdrType',0,7,207,16,16
+	.word	276
+	.byte	4
+	.byte	'Can_TXEFAOfShmAdrType',0,7,210,16,16
+	.word	276
+	.byte	4
+	.byte	'Can_XIDFAOfShmAdrType',0,7,213,16,16
+	.word	276
+	.byte	4
+	.byte	'Can_F0DSOfShmElementSizeType',0,7,216,16,15
+	.word	164
+	.byte	4
+	.byte	'Can_F1DSOfShmElementSizeType',0,7,219,16,15
+	.word	164
+	.byte	4
+	.byte	'Can_RBDSOfShmElementSizeType',0,7,222,16,15
+	.word	164
+	.byte	4
+	.byte	'Can_TBDSOfShmElementSizeType',0,7,225,16,15
+	.word	164
+	.byte	4
+	.byte	'Can_TEFBDSOfShmElementSizeType',0,7,228,16,15
+	.word	164
+	.byte	4
+	.byte	'Can_TDCRType',0,7,181,17,16
+	.word	239
+	.byte	4
+	.byte	'Can_XIDAMType',0,7,184,17,16
+	.word	276
+	.byte	4
+	.byte	'Can_FLESAOfXIDFCType',0,7,187,17,15
+	.word	164
+	.byte	4
+	.byte	'Can_LSEOfXIDFCType',0,7,190,17,15
+	.word	164
+	.byte	4
+	.byte	'Can_EIDFE_0OfXIDFEType',0,7,193,17,15
+	.word	164
+	.byte	4
+	.byte	'Can_EIDFE_1OfXIDFEType',0,7,196,17,15
+	.word	164
+	.byte	10
+	.byte	'sCan_ActiveSendObjectType',0,7,215,17,16,4,11
+	.byte	'StateOfActiveSendObject',0
+	.word	239
+	.byte	2,2,35,0,11
+	.byte	'PduOfActiveSendObject',0
+	.word	164
+	.byte	1,2,35,2,0,4
+	.byte	'Can_ActiveSendObjectType',0,7,219,17,3
+	.word	4539
+	.byte	10
+	.byte	'sCan_BufferConfigType',0,7,222,17,16,12,11
+	.byte	'RXF0COfBufferConfig',0
+	.word	276
+	.byte	4,2,35,0,11
+	.byte	'TXBCOfBufferConfig',0
+	.word	276
+	.byte	4,2,35,4,11
+	.byte	'RXBCOfBufferConfig',0
+	.word	164
+	.byte	1,2,35,8,11
+	.byte	'RXF1COfBufferConfig',0
+	.word	164
+	.byte	1,2,35,9,11
+	.byte	'TXEFCOfBufferConfig',0
+	.word	164
+	.byte	1,2,35,10,0,4
+	.byte	'Can_BufferConfigType',0,7,229,17,3
+	.word	4670
+	.byte	10
+	.byte	'sCan_ControllerConfigType',0,7,238,17,16,28,11
+	.byte	'BasisAdrOfControllerConfig',0
+	.word	276
+	.byte	4,2,35,0,11
+	.byte	'CanControllerDefaultBaudrateOfControllerConfig',0
+	.word	239
+	.byte	2,2,35,4,11
+	.byte	'IsTTCanOfControllerConfig',0
+	.word	164
+	.byte	1,2,35,6,11
+	.byte	'CanControllerDefaultBaudrateIdxOfControllerConfig',0
+	.word	164
+	.byte	1,2,35,7,11
+	.byte	'MailboxRxBasicEndIdxOfControllerConfig',0
+	.word	164
+	.byte	1,2,35,8,11
+	.byte	'MailboxRxBasicLengthOfControllerConfig',0
+	.word	164
+	.byte	1,2,35,9,11
+	.byte	'MailboxRxBasicStartIdxOfControllerConfig',0
+	.word	164
+	.byte	1,2,35,10,11
+	.byte	'MailboxTxBasicEndIdxOfControllerConfig',0
+	.word	164
+	.byte	1,2,35,11,11
+	.byte	'MailboxTxBasicLengthOfControllerConfig',0
+	.word	164
+	.byte	1,2,35,12,11
+	.byte	'MailboxTxBasicStartIdxOfControllerConfig',0
+	.word	164
+	.byte	1,2,35,13,11
+	.byte	'RxBasicHwStartOfControllerConfig',0
+	.word	164
+	.byte	1,2,35,14,11
+	.byte	'RxBasicHwStopOfControllerConfig',0
+	.word	164
+	.byte	1,2,35,15,11
+	.byte	'RxFullHwStartOfControllerConfig',0
+	.word	164
+	.byte	1,2,35,16,11
+	.byte	'RxFullHwStopOfControllerConfig',0
+	.word	164
+	.byte	1,2,35,17,11
+	.byte	'RxSelectionOfControllerConfig',0
+	.word	164
+	.byte	1,2,35,18,11
+	.byte	'TxBasicHwStartOfControllerConfig',0
+	.word	164
+	.byte	1,2,35,19,11
+	.byte	'TxBasicHwStopOfControllerConfig',0
+	.word	164
+	.byte	1,2,35,20,11
+	.byte	'TxFullHwStartOfControllerConfig',0
+	.word	164
+	.byte	1,2,35,21,11
+	.byte	'TxFullHwStopOfControllerConfig',0
+	.word	164
+	.byte	1,2,35,22,11
+	.byte	'UnusedHwStartOfControllerConfig',0
+	.word	164
+	.byte	1,2,35,23,11
+	.byte	'UnusedHwStopOfControllerConfig',0
+	.word	164
+	.byte	1,2,35,24,0,4
+	.byte	'Can_ControllerConfigType',0,7,133,18,3
+	.word	4872
+	.byte	10
+	.byte	'sCan_ControllerDataType',0,7,136,18,16,68,11
+	.byte	'IntEnableOfControllerData',0
+	.word	276
+	.byte	4,2,35,0,11
+	.byte	'NonFdObjectsPendingFlagOfControllerData',0
+	.word	276
+	.byte	4,2,35,4,11
+	.byte	'TXBCROfControllerData',0
+	.word	276
+	.byte	4,2,35,8,11
+	.byte	'TXBCRWaitOfControllerData',0
+	.word	276
+	.byte	4,2,35,12,11
+	.byte	'TXBRPOfControllerData',0
+	.word	276
+	.byte	4,2,35,16,11
+	.byte	'BusOffNotificationOfControllerData',0
+	.word	164
+	.byte	1,2,35,20,11
+	.byte	'BusOffTransitionRequestOfControllerData',0
+	.word	164
+	.byte	1,2,35,21,11
+	.byte	'CanInterruptCounterOfControllerData',0
+	.word	164
+	.byte	1,2,35,22,11
+	.byte	'IsBusOffOfControllerData',0
+	.word	164
+	.byte	1,2,35,23,11
+	.byte	'LastInitObjectOfControllerData',0
+	.word	164
+	.byte	1,2,35,24,11
+	.byte	'LastStateOfControllerData',0
+	.word	164
+	.byte	1,2,35,25,11
+	.byte	'LogStatusOfControllerData',0
+	.word	164
+	.byte	1,2,35,26,11
+	.byte	'ModeTransitionRequestOfControllerData',0
+	.word	164
+	.byte	1,2,35,27,11
+	.byte	'PrevModeOfControllerData',0
+	.word	164
+	.byte	1,2,35,28,11
+	.byte	'RamCheckTransitionRequestOfControllerData',0
+	.word	164
+	.byte	1,2,35,29,11
+	.byte	'CanInterruptOldStatusOfControllerData',0
+	.word	276
+	.byte	4,2,35,30,11
+	.byte	'LoopTimeoutOfControllerData',0
+	.word	697
+	.byte	32,2,35,34,0,4
+	.byte	'Can_ControllerDataType',0,7,155,18,3
+	.word	5865
+	.byte	8,32
+	.word	276
+	.byte	9,7,0,10
+	.byte	'sCan_MailboxType',0,7,161,18,16,12,11
+	.byte	'ActiveSendObjectOfMailbox',0
+	.word	164
+	.byte	1,2,35,0,11
+	.byte	'ControllerConfigIdxOfMailbox',0
+	.word	164
+	.byte	1,2,35,1,11
+	.byte	'FdPaddingOfMailbox',0
+	.word	164
+	.byte	1,2,35,2,11
+	.byte	'HwHandleOfMailbox',0
+	.word	164
+	.byte	1,2,35,3,11
+	.byte	'IDValueOfMailbox',0
+	.word	164
+	.byte	1,2,35,4,11
+	.byte	'MailboxSizeOfMailbox',0
+	.word	164
+	.byte	1,2,35,5,11
+	.byte	'MailboxTypeOfMailbox',0
+	.word	164
+	.byte	1,2,35,6,11
+	.byte	'MaxDataLenOfMailbox',0
+	.word	164
+	.byte	1,2,35,7,11
+	.byte	'MemorySectionsIndexOfMailbox',0
+	.word	164
+	.byte	1,2,35,8,0,4
+	.byte	'Can_MailboxType',0,7,172,18,3
+	.word	6616
+	.byte	10
+	.byte	'sCan_MemorySectionInfoType',0,7,175,18,16,1,11
+	.byte	'MemorySectionStartOfMemorySectionInfo',0
+	.word	164
+	.byte	1,2,35,0,0,4
+	.byte	'Can_MemorySectionInfoType',0,7,178,18,3
+	.word	6946
+	.byte	10
+	.byte	'sCan_MemorySectionObjectsType',0,7,181,18,16,4,11
+	.byte	'HwHandleOfMemorySectionObjects',0
+	.word	164
+	.byte	1,2,35,0,11
+	.byte	'MailboxElementOfMemorySectionObjects',0
+	.word	164
+	.byte	1,2,35,1,11
+	.byte	'MailboxHandleOfMemorySectionObjects',0
+	.word	164
+	.byte	1,2,35,2,0,4
+	.byte	'Can_MemorySectionObjectsType',0,7,186,18,3
+	.word	7062
+	.byte	10
+	.byte	'sCan_SIDFCType',0,7,193,18,16,4,11
+	.byte	'FLSSAOfSIDFC',0
+	.word	164
+	.byte	1,2,35,0,11
+	.byte	'LSSOfSIDFC',0
+	.word	164
+	.byte	1,2,35,1,11
+	.byte	'SIDFEEndIdxOfSIDFC',0
+	.word	164
+	.byte	1,2,35,2,11
+	.byte	'SIDFEStartIdxOfSIDFC',0
+	.word	164
+	.byte	1,2,35,3,0,4
+	.byte	'Can_SIDFCType',0,7,199,18,3
+	.word	7268
+	.byte	10
+	.byte	'sCan_ShmAdrType',0,7,202,18,16,36,11
+	.byte	'RXBAOfShmAdr',0
+	.word	276
+	.byte	4,2,35,0,11
+	.byte	'RXF0AOfShmAdr',0
+	.word	276
+	.byte	4,2,35,4,11
+	.byte	'RXF1AOfShmAdr',0
+	.word	276
+	.byte	4,2,35,8,11
+	.byte	'SIDFAOfShmAdr',0
+	.word	276
+	.byte	4,2,35,12,11
+	.byte	'StartAdrOfShmAdr',0
+	.word	276
+	.byte	4,2,35,16,11
+	.byte	'StopAdrOfShmAdr',0
+	.word	276
+	.byte	4,2,35,20,11
+	.byte	'TXBAOfShmAdr',0
+	.word	276
+	.byte	4,2,35,24,11
+	.byte	'TXEFAOfShmAdr',0
+	.word	276
+	.byte	4,2,35,28,11
+	.byte	'XIDFAOfShmAdr',0
+	.word	276
+	.byte	4,2,35,32,0,4
+	.byte	'Can_ShmAdrType',0,7,213,18,3
+	.word	7413
+	.byte	10
+	.byte	'sCan_ShmElementSizeType',0,7,216,18,16,6,11
+	.byte	'F0DSOfShmElementSize',0
+	.word	164
+	.byte	1,2,35,0,11
+	.byte	'F1DSOfShmElementSize',0
+	.word	164
+	.byte	1,2,35,1,11
+	.byte	'RBDSOfShmElementSize',0
+	.word	164
+	.byte	1,2,35,2,11
+	.byte	'TBDSOfShmElementSize',0
+	.word	164
+	.byte	1,2,35,3,11
+	.byte	'TEFBDSOfShmElementSize',0
+	.word	164
+	.byte	1,2,35,4,0,4
+	.byte	'Can_ShmElementSizeType',0,7,223,18,3
+	.word	7670
+	.byte	10
+	.byte	'sCan_XIDFCType',0,7,226,18,16,2,11
+	.byte	'FLESAOfXIDFC',0
+	.word	164
+	.byte	1,2,35,0,11
+	.byte	'LSEOfXIDFC',0
+	.word	164
+	.byte	1,2,35,1,0,4
+	.byte	'Can_XIDFCType',0,7,230,18,3
+	.word	7885
+	.byte	10
+	.byte	'sCan_XIDFEType',0,7,233,18,16,2,11
+	.byte	'EIDFE_0OfXIDFE',0
+	.word	164
+	.byte	1,2,35,0,11
+	.byte	'EIDFE_1OfXIDFE',0
+	.word	164
+	.byte	1,2,35,1,0,4
+	.byte	'Can_XIDFEType',0,7,237,18,3
+	.word	7972
+	.byte	10
+	.byte	'sCan_PCConfigType',0,7,208,19,16,1,11
+	.byte	'Can_PCConfigNeverUsed',0
+	.word	164
+	.byte	1,2,35,0,0,4
+	.byte	'Can_PCConfigType',0,7,211,19,3
+	.word	8065
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,0,0,3,15,0,73,19,0,0,4,22,0,3,8,58,15,59,15
+	.byte	57,15,73,19,0,0,5,36,0,3,8,11,15,62,15,0,0,6,4,1,58,15,59,15,57,15,11,15,0,0,7,40,0,3,8,28,13,0,0,8,1
+	.byte	1,11,15,73,19,0,0,9,33,0,47,15,0,0,10,19,1,3,8,58,15,59,15,57,15,11,15,0,0,11,13,0,3,8,73,19,11,15,56
+	.byte	9,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L7-.L6
+.L6:
+	.half	3
+	.word	.L9-.L8
+.L8:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData',0,0
+	.byte	'..\\Appl\\GenData\\Can_PBcfg.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Std_Types.h',0,1,0,0
+	.byte	'ComStack_Cfg.h',0,2,0,0
+	.byte	'ComStack_Types.h',0,1,0,0
+	.byte	'Can_DrvGeneralTypes.h',0,2,0,0
+	.byte	'..\\Appl\\GenData\\Can_Cfg.h',0,0,0,0,0
+.L9:
+.L7:
+
+; ..\Appl\GenData\Can_PBcfg.c	     1  /**********************************************************************************************************************
+; ..\Appl\GenData\Can_PBcfg.c	     2   *  COPYRIGHT
+; ..\Appl\GenData\Can_PBcfg.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Can_PBcfg.c	     4   *  \verbatim
+; ..\Appl\GenData\Can_PBcfg.c	     5   *
+; ..\Appl\GenData\Can_PBcfg.c	     6   *                 This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\Appl\GenData\Can_PBcfg.c	     7   *                 Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\Appl\GenData\Can_PBcfg.c	     8   *                 All other rights remain with Vector Informatik GmbH.
+; ..\Appl\GenData\Can_PBcfg.c	     9   *  \endverbatim
+; ..\Appl\GenData\Can_PBcfg.c	    10   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Can_PBcfg.c	    11   *  LICENSE
+; ..\Appl\GenData\Can_PBcfg.c	    12   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Can_PBcfg.c	    13   *            Module: Can
+; ..\Appl\GenData\Can_PBcfg.c	    14   *           Program: MSR_Vector_SLP4
+; ..\Appl\GenData\Can_PBcfg.c	    15   *          Customer: China Lithium Battery Technology Co., Ltd.
+; ..\Appl\GenData\Can_PBcfg.c	    16   *       Expiry Date: 2025-08-26
+; ..\Appl\GenData\Can_PBcfg.c	    17   *  Ordered Derivat.: SAK-TC387QP-160F300S AE
+; ..\Appl\GenData\Can_PBcfg.c	    18   *    License Scope : The usage is restricted to CBD2200508_D00
+; ..\Appl\GenData\Can_PBcfg.c	    19   *
+; ..\Appl\GenData\Can_PBcfg.c	    20   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Can_PBcfg.c	    21   *  FILE DESCRIPTION
+; ..\Appl\GenData\Can_PBcfg.c	    22   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Can_PBcfg.c	    23   *              File: Can_PBcfg.c
+; ..\Appl\GenData\Can_PBcfg.c	    24   *   Generation Time: 2024-06-30 18:52:33
+; ..\Appl\GenData\Can_PBcfg.c	    25   *           Project: last364 - Version 1.0
+; ..\Appl\GenData\Can_PBcfg.c	    26   *          Delivery: CBD2200508_D00
+; ..\Appl\GenData\Can_PBcfg.c	    27   *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
+; ..\Appl\GenData\Can_PBcfg.c	    28   *
+; ..\Appl\GenData\Can_PBcfg.c	    29   *
+; ..\Appl\GenData\Can_PBcfg.c	    30   *********************************************************************************************************************/
+; ..\Appl\GenData\Can_PBcfg.c	    31  
+; ..\Appl\GenData\Can_PBcfg.c	    32  /**********************************************************************************************************************
+; ..\Appl\GenData\Can_PBcfg.c	    33   ! BETA VERSION                                                                                                       !
+; ..\Appl\GenData\Can_PBcfg.c	    34   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\Appl\GenData\Can_PBcfg.c	    35   ! This version of DaVinci Configurator Classic and/or the related Basic Software Package is BETA software.               !
+; ..\Appl\GenData\Can_PBcfg.c	    36   ! BETA Software is basically operable, but not sufficiently tested, verified and/or qualified for use in series      !
+; ..\Appl\GenData\Can_PBcfg.c	    37   ! production and/or in vehicles operating on public or non-public roads.                                             !
+; ..\Appl\GenData\Can_PBcfg.c	    38   ! In particular, without limitation, BETA Software may cause unpredictable ECU behavior, may not provide all         !
+; ..\Appl\GenData\Can_PBcfg.c	    39   ! functions necessary for use in series production and/or may not comply with quality requirements which are         !
+; ..\Appl\GenData\Can_PBcfg.c	    40   ! necessary according to the state of the art. BETA Software must not be used in series production.                  !
+; ..\Appl\GenData\Can_PBcfg.c	    41   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\Appl\GenData\Can_PBcfg.c	    42  **********************************************************************************************************************/
+; ..\Appl\GenData\Can_PBcfg.c	    43  
+; ..\Appl\GenData\Can_PBcfg.c	    44  
+; ..\Appl\GenData\Can_PBcfg.c	    45  #define CAN_PBCFG_SOURCE
+; ..\Appl\GenData\Can_PBcfg.c	    46  
+; ..\Appl\GenData\Can_PBcfg.c	    47  /* PRQA S 0779 EOF */ /* MD_MSR_Rule5.2 */
+; ..\Appl\GenData\Can_PBcfg.c	    48  
+; ..\Appl\GenData\Can_PBcfg.c	    49  /* -----------------------------------------------------------------------------
+; ..\Appl\GenData\Can_PBcfg.c	    50      Includes
+; ..\Appl\GenData\Can_PBcfg.c	    51   ----------------------------------------------------------------------------- */
+; ..\Appl\GenData\Can_PBcfg.c	    52  
+; ..\Appl\GenData\Can_PBcfg.c	    53  #include "Can_Cfg.h"
+; ..\Appl\GenData\Can_PBcfg.c	    54  
+; ..\Appl\GenData\Can_PBcfg.c	    55  /**********************************************************************************************************************
+; ..\Appl\GenData\Can_PBcfg.c	    56    ComStackLib
+; ..\Appl\GenData\Can_PBcfg.c	    57  **********************************************************************************************************************/
+; ..\Appl\GenData\Can_PBcfg.c	    58  /**********************************************************************************************************************
+; ..\Appl\GenData\Can_PBcfg.c	    59    LOCAL DATA PROTOTYPES
+; ..\Appl\GenData\Can_PBcfg.c	    60  **********************************************************************************************************************/
+; ..\Appl\GenData\Can_PBcfg.c	    61  /**********************************************************************************************************************
+; ..\Appl\GenData\Can_PBcfg.c	    62    CONFIGURATION CLASS: POST_BUILD
+; ..\Appl\GenData\Can_PBcfg.c	    63    SECTION: LOCAL DATA PROTOTYPES
+; ..\Appl\GenData\Can_PBcfg.c	    64  **********************************************************************************************************************/
+; ..\Appl\GenData\Can_PBcfg.c	    65  
+; ..\Appl\GenData\Can_PBcfg.c	    66  
+; ..\Appl\GenData\Can_PBcfg.c	    67  /**********************************************************************************************************************
+; ..\Appl\GenData\Can_PBcfg.c	    68    LOCAL DATA
+; ..\Appl\GenData\Can_PBcfg.c	    69  **********************************************************************************************************************/
+; ..\Appl\GenData\Can_PBcfg.c	    70  /**********************************************************************************************************************
+; ..\Appl\GenData\Can_PBcfg.c	    71    CONFIGURATION CLASS: POST_BUILD
+; ..\Appl\GenData\Can_PBcfg.c	    72    SECTION: LOCAL DATA
+; ..\Appl\GenData\Can_PBcfg.c	    73  **********************************************************************************************************************/
+; ..\Appl\GenData\Can_PBcfg.c	    74  
+; ..\Appl\GenData\Can_PBcfg.c	    75  
+; ..\Appl\GenData\Can_PBcfg.c	    76  /**********************************************************************************************************************
+; ..\Appl\GenData\Can_PBcfg.c	    77    GLOBAL DATA
+; ..\Appl\GenData\Can_PBcfg.c	    78  **********************************************************************************************************************/
+; ..\Appl\GenData\Can_PBcfg.c	    79  /**********************************************************************************************************************
+; ..\Appl\GenData\Can_PBcfg.c	    80    CONFIGURATION CLASS: POST_BUILD
+; ..\Appl\GenData\Can_PBcfg.c	    81    SECTION: GLOBAL DATA
+; ..\Appl\GenData\Can_PBcfg.c	    82  **********************************************************************************************************************/
+; ..\Appl\GenData\Can_PBcfg.c	    83  
+; ..\Appl\GenData\Can_PBcfg.c	    84  
+; ..\Appl\GenData\Can_PBcfg.c	    85  
+
+	; Module end

@@ -35,13 +35,20 @@
 # define SystemTimer (0U)
 
 /* Alarms */
-# define Rte_Al_TE_StartApp_StartApp_Cyclic1ms (0U)
-# define Rte_Al_TE_StartApp_StartApp_Cyclic500ms (1U)
-# define Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms (2U)
+# define Rte_Al_TE_StartApp_StartApp_Cyclic1000ms (0U)
+# define Rte_Al_TE_StartApp_StartApp_Cyclic10ms (1U)
+# define Rte_Al_TE_StartApp_StartApp_Cyclic1ms (2U)
+# define Rte_Al_TE_StartApp_StartApp_Cyclic250ms (3U)
+# define Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms (4U)
+# define Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms (5U)
 
 /* Events */
-# define Rte_Ev_Run_StartApp_StartApp_Cyclic1ms (0x01ULL)
-# define Rte_Ev_Run_StartApp_StartApp_Cyclic500ms (0x02ULL)
+# define Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms (0x01ULL)
+# define Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_20ms (0x02ULL)
+# define Rte_Ev_Run_StartApp_StartApp_Cyclic1000ms (0x01ULL)
+# define Rte_Ev_Run_StartApp_StartApp_Cyclic10ms (0x02ULL)
+# define Rte_Ev_Run_StartApp_StartApp_Cyclic1ms (0x04ULL)
+# define Rte_Ev_Run_StartApp_StartApp_Cyclic250ms (0x08ULL)
 
 /* Spinlocks */
 

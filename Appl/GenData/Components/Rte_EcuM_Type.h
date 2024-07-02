@@ -50,24 +50,28 @@ extern "C"
 #   define ECUM_BOOT_TARGET_SYS_BOOTLOADER (2U)
 #  endif
 
-#  ifndef EcuMConf_EcuMResetMode_ECUM_RESET_MCU
-#   define EcuMConf_EcuMResetMode_ECUM_RESET_MCU (0U)
-#  endif
-
-#  ifndef EcuMConf_EcuMResetMode_ECUM_RESET_WDG
-#   define EcuMConf_EcuMResetMode_ECUM_RESET_WDG (1U)
-#  endif
-
 #  ifndef EcuMConf_EcuMResetMode_ECUM_RESET_IO
 #   define EcuMConf_EcuMResetMode_ECUM_RESET_IO (2U)
+#  endif
+
+#  ifndef EcuMConf_EcuMResetMode_ECUM_RESET_MCU
+#   define EcuMConf_EcuMResetMode_ECUM_RESET_MCU (0U)
 #  endif
 
 #  ifndef EcuMConf_EcuMResetMode_ECUM_RESET_WAKEUP
 #   define EcuMConf_EcuMResetMode_ECUM_RESET_WAKEUP (3U)
 #  endif
 
+#  ifndef EcuMConf_EcuMResetMode_ECUM_RESET_WDG
+#   define EcuMConf_EcuMResetMode_ECUM_RESET_WDG (1U)
+#  endif
+
 #  ifndef EcuMConf_EcuMShutdownCause_ECUM_CAUSE_UNKNOWN
 #   define EcuMConf_EcuMShutdownCause_ECUM_CAUSE_UNKNOWN (0U)
+#  endif
+
+#  ifndef EcuMConf_EcuMShutdownCause_ECUM_CAUSE_DCM
+#   define EcuMConf_EcuMShutdownCause_ECUM_CAUSE_DCM (3U)
 #  endif
 
 #  ifndef EcuMConf_EcuMShutdownCause_ECUM_CAUSE_ECU_STATE
@@ -76,10 +80,6 @@ extern "C"
 
 #  ifndef EcuMConf_EcuMShutdownCause_ECUM_CAUSE_WDGM
 #   define EcuMConf_EcuMShutdownCause_ECUM_CAUSE_WDGM (2U)
-#  endif
-
-#  ifndef EcuMConf_EcuMShutdownCause_ECUM_CAUSE_DCM
-#   define EcuMConf_EcuMShutdownCause_ECUM_CAUSE_DCM (3U)
 #  endif
 
 #  ifndef ECUM_STATE_SLEEP
