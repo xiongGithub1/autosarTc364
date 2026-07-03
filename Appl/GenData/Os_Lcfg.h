@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Lcfg.h
- *   Generation Time: 2024-07-01 09:01:45
+ *   Generation Time: 2024-07-03 19:23:27
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -145,6 +145,18 @@ extern FUNC(void, OS_DEFAULT_INIT_TASK_CODE) Os_Task_Default_Init_Task(void);
 extern FUNC(void, OS_DEFAULT_INIT_TASK_TRUSTED_CODE) Os_Task_Default_Init_Task_Trusted(void);
 
 # define OS_STOP_SEC_Default_Init_Task_Trusted_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_Adc_RS0EventInterruptHandler_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/**********************************************************************************************************************
+ *  Adc_RS0EventInterruptHandler()
+ *********************************************************************************************************************/
+extern FUNC(void, OS_ADC_RS0EVENTINTERRUPTHANDLER_CODE) Os_Isr_Adc_RS0EventInterruptHandler(void);
+
+# define OS_STOP_SEC_Adc_RS0EventInterruptHandler_CODE
 # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 

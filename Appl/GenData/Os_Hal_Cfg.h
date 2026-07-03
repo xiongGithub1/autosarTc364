@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Cfg.h
- *   Generation Time: 2024-07-01 09:01:45
+ *   Generation Time: 2024-07-03 19:23:27
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -62,6 +62,12 @@
 # define OS_CFG_HAL_MINOR_VERSION                (34u)
 
 /* ISR core and level definitions */
+# define OS_ISR_ADCISR_G0_CORE      (0)
+# define OS_ISR_ADCISR_G0_LEVEL     (3)
+# define OS_ISR_ADCISR_G2_CORE      (0)
+# define OS_ISR_ADCISR_G2_LEVEL     (4)
+# define OS_ISR_ADCISR_G3_CORE      (0)
+# define OS_ISR_ADCISR_G3_LEVEL     (5)
 # define OS_ISR_CANISR_0_CORE      (0)
 # define OS_ISR_CANISR_0_LEVEL     (2)
 # define OS_ISR_COUNTERISR_SYSTEMTIMER_CORE      (0)

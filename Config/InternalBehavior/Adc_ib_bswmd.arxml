@@ -6,6 +6,34 @@
       <AR-PACKAGES>
         <AR-PACKAGE UUID="7e118c10-0a18-49f2-9978-33759fe5e7c2">
           <SHORT-NAME>EcucDefs</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="b34853ab-6fa2-4b38-8ef9-136a9bf22714">
+              <SHORT-NAME>Adc_ib_bswmd</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE UUID="4598ed4e-478e-4a54-96e6-66bb8cc9c87c">
+                  <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+                  <ELEMENTS>
+                    <BSW-MODULE-DESCRIPTION UUID="36852f77-92e1-4255-a472-4931074dc017">
+                      <SHORT-NAME>Adc</SHORT-NAME>
+                      <INTERNAL-BEHAVIORS>
+                        <BSW-INTERNAL-BEHAVIOR UUID="2566e571-4653-48d0-8dc1-721bb5606fa1">
+                          <SHORT-NAME>AdcBehavior</SHORT-NAME>
+                          <EXCLUSIVE-AREAS>
+                            <EXCLUSIVE-AREA UUID="62e50bda-2382-4c0f-adae-54d419143c09">
+                              <SHORT-NAME>KernelData</SHORT-NAME>
+                            </EXCLUSIVE-AREA>
+                            <EXCLUSIVE-AREA UUID="1db713c9-cff3-4de4-bc8d-789dff97ff97">
+                              <SHORT-NAME>SrcRegAccess</SHORT-NAME>
+                            </EXCLUSIVE-AREA>
+                          </EXCLUSIVE-AREAS>
+                        </BSW-INTERNAL-BEHAVIOR>
+                      </INTERNAL-BEHAVIORS>
+                    </BSW-MODULE-DESCRIPTION>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
         </AR-PACKAGE>
       </AR-PACKAGES>
     </AR-PACKAGE>

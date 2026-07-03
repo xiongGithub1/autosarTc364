@@ -103,6 +103,10 @@
  *  Rte_Task_Terminate
  *  Rte_Task_WaitEvent
  *  Rte_Task_WaitEventRet
+ *  SchM_EnterHook_Adc_KernelData_Return
+ *  SchM_EnterHook_Adc_KernelData_Start
+ *  SchM_EnterHook_Adc_SrcRegAccess_Return
+ *  SchM_EnterHook_Adc_SrcRegAccess_Start
  *  SchM_EnterHook_BswM_BSWM_EXCLUSIVE_AREA_0_Return
  *  SchM_EnterHook_BswM_BSWM_EXCLUSIVE_AREA_0_Start
  *  SchM_EnterHook_CanIf_CANIF_EXCLUSIVE_AREA_0_Return
@@ -173,6 +177,24 @@
  *  SchM_EnterHook_Com_COM_EXCLUSIVE_AREA_TX_Start
  *  SchM_EnterHook_Det_DET_EXCLUSIVE_AREA_0_Return
  *  SchM_EnterHook_Det_DET_EXCLUSIVE_AREA_0_Start
+ *  SchM_EnterHook_Dma_ChEventStatus_Return
+ *  SchM_EnterHook_Dma_ChEventStatus_Start
+ *  SchM_EnterHook_Dma_ChannelConfigUpdate_Return
+ *  SchM_EnterHook_Dma_ChannelConfigUpdate_Start
+ *  SchM_EnterHook_Dma_ChannelFreezeResume_Return
+ *  SchM_EnterHook_Dma_ChannelFreezeResume_Start
+ *  SchM_EnterHook_Dma_ChannelHWTrigger_Return
+ *  SchM_EnterHook_Dma_ChannelHWTrigger_Start
+ *  SchM_EnterHook_Dma_ChannelInitDeinit_Return
+ *  SchM_EnterHook_Dma_ChannelInitDeinit_Start
+ *  SchM_EnterHook_Dma_ChannelStartStop_Return
+ *  SchM_EnterHook_Dma_ChannelStartStop_Start
+ *  SchM_EnterHook_Dma_ChannelSwitchBuffer_Return
+ *  SchM_EnterHook_Dma_ChannelSwitchBuffer_Start
+ *  SchM_EnterHook_Dma_InterruptStatus_Return
+ *  SchM_EnterHook_Dma_InterruptStatus_Start
+ *  SchM_EnterHook_Dma_MEErrorStatus_Return
+ *  SchM_EnterHook_Dma_MEErrorStatus_Start
  *  SchM_EnterHook_EcuM_ECUM_EXCLUSIVE_AREA_0_Return
  *  SchM_EnterHook_EcuM_ECUM_EXCLUSIVE_AREA_0_Start
  *  SchM_EnterHook_EcuM_ECUM_EXCLUSIVE_AREA_1_Return
@@ -217,6 +239,10 @@
  *  SchM_EnterHook_Spi_Queue_Update_Start
  *  SchM_EnterHook_Spi_SyncLock_Return
  *  SchM_EnterHook_Spi_SyncLock_Start
+ *  SchM_ExitHook_Adc_KernelData_Return
+ *  SchM_ExitHook_Adc_KernelData_Start
+ *  SchM_ExitHook_Adc_SrcRegAccess_Return
+ *  SchM_ExitHook_Adc_SrcRegAccess_Start
  *  SchM_ExitHook_BswM_BSWM_EXCLUSIVE_AREA_0_Return
  *  SchM_ExitHook_BswM_BSWM_EXCLUSIVE_AREA_0_Start
  *  SchM_ExitHook_CanIf_CANIF_EXCLUSIVE_AREA_0_Return
@@ -287,6 +313,24 @@
  *  SchM_ExitHook_Com_COM_EXCLUSIVE_AREA_TX_Start
  *  SchM_ExitHook_Det_DET_EXCLUSIVE_AREA_0_Return
  *  SchM_ExitHook_Det_DET_EXCLUSIVE_AREA_0_Start
+ *  SchM_ExitHook_Dma_ChEventStatus_Return
+ *  SchM_ExitHook_Dma_ChEventStatus_Start
+ *  SchM_ExitHook_Dma_ChannelConfigUpdate_Return
+ *  SchM_ExitHook_Dma_ChannelConfigUpdate_Start
+ *  SchM_ExitHook_Dma_ChannelFreezeResume_Return
+ *  SchM_ExitHook_Dma_ChannelFreezeResume_Start
+ *  SchM_ExitHook_Dma_ChannelHWTrigger_Return
+ *  SchM_ExitHook_Dma_ChannelHWTrigger_Start
+ *  SchM_ExitHook_Dma_ChannelInitDeinit_Return
+ *  SchM_ExitHook_Dma_ChannelInitDeinit_Start
+ *  SchM_ExitHook_Dma_ChannelStartStop_Return
+ *  SchM_ExitHook_Dma_ChannelStartStop_Start
+ *  SchM_ExitHook_Dma_ChannelSwitchBuffer_Return
+ *  SchM_ExitHook_Dma_ChannelSwitchBuffer_Start
+ *  SchM_ExitHook_Dma_InterruptStatus_Return
+ *  SchM_ExitHook_Dma_InterruptStatus_Start
+ *  SchM_ExitHook_Dma_MEErrorStatus_Return
+ *  SchM_ExitHook_Dma_MEErrorStatus_Start
  *  SchM_ExitHook_EcuM_ECUM_EXCLUSIVE_AREA_0_Return
  *  SchM_ExitHook_EcuM_ECUM_EXCLUSIVE_AREA_0_Start
  *  SchM_ExitHook_EcuM_ECUM_EXCLUSIVE_AREA_1_Return

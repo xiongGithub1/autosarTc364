@@ -84,6 +84,14 @@ Appl\GenData\Rte.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Imple
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
 Appl\GenData\Rte.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Rte.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Rte.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Rte.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Rte.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 Appl\GenData\Rte.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_OsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_OsInt.h" :
 Appl\GenData\Rte.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Lcfg.h"
@@ -226,6 +234,14 @@ Appl\GenData\Rte.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Imple
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
 Appl\GenData\Rte.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Rte.o :	..\Appl\GenData\SchM_Adc.h
+..\Appl\GenData\SchM_Adc.h :
+Appl\GenData\Rte.o :	..\Appl\GenData\SchM_Adc_Type.h
+..\Appl\GenData\SchM_Adc_Type.h :
+Appl\GenData\Rte.o :	..\Appl\GenData\Rte_MemMap.h
+..\Appl\GenData\Rte_MemMap.h :
+Appl\GenData\Rte.o :	..\Appl\GenData\Rte_MemMap.h
+..\Appl\GenData\Rte_MemMap.h :
 Appl\GenData\Rte.o :	..\Appl\GenData\SchM_BswM.h
 ..\Appl\GenData\SchM_BswM.h :
 Appl\GenData\Rte.o :	..\Appl\GenData\SchM_BswM_Type.h
@@ -356,6 +372,14 @@ Appl\GenData\Rte.o :	..\Appl\GenData\SchM_Dio.h
 ..\Appl\GenData\SchM_Dio.h :
 Appl\GenData\Rte.o :	..\Appl\GenData\SchM_Dio_Type.h
 ..\Appl\GenData\SchM_Dio_Type.h :
+Appl\GenData\Rte.o :	..\Appl\GenData\SchM_Dma.h
+..\Appl\GenData\SchM_Dma.h :
+Appl\GenData\Rte.o :	..\Appl\GenData\SchM_Dma_Type.h
+..\Appl\GenData\SchM_Dma_Type.h :
+Appl\GenData\Rte.o :	..\Appl\GenData\Rte_MemMap.h
+..\Appl\GenData\Rte_MemMap.h :
+Appl\GenData\Rte.o :	..\Appl\GenData\Rte_MemMap.h
+..\Appl\GenData\Rte_MemMap.h :
 Appl\GenData\Rte.o :	..\Appl\GenData\SchM_E2EXf.h
 ..\Appl\GenData\SchM_E2EXf.h :
 Appl\GenData\Rte.o :	..\Appl\GenData\SchM_E2EXf_Type.h
@@ -370,6 +394,10 @@ Appl\GenData\Rte.o :	..\Appl\GenData\EcuM_MemMap.h
 ..\Appl\GenData\EcuM_MemMap.h :
 Appl\GenData\Rte.o :	..\Appl\GenData\EcuM_MemMap.h
 ..\Appl\GenData\EcuM_MemMap.h :
+Appl\GenData\Rte.o :	..\Appl\GenData\SchM_Irq.h
+..\Appl\GenData\SchM_Irq.h :
+Appl\GenData\Rte.o :	..\Appl\GenData\SchM_Irq_Type.h
+..\Appl\GenData\SchM_Irq_Type.h :
 Appl\GenData\Rte.o :	..\Appl\GenData\SchM_McalLib.h
 ..\Appl\GenData\SchM_McalLib.h :
 Appl\GenData\Rte.o :	..\Appl\GenData\SchM_McalLib_Type.h

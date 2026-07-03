@@ -94,8 +94,12 @@ last364.elf : .\Appl\GenData\PduR_PBcfg.o
 .\Appl\GenData\PduR_PBcfg.o :
 last364.elf : .\Appl\GenData\Rte.o
 .\Appl\GenData\Rte.o :
+last364.elf : .\Appl\GenData\src\Adc_PBcfg.o
+.\Appl\GenData\src\Adc_PBcfg.o :
 last364.elf : .\Appl\GenData\src\Dio_Lcfg.o
 .\Appl\GenData\src\Dio_Lcfg.o :
+last364.elf : .\Appl\GenData\src\Dma_PBcfg.o
+.\Appl\GenData\src\Dma_PBcfg.o :
 last364.elf : .\Appl\GenData\src\Mcu_17_TimerIp_Cfg.o
 .\Appl\GenData\src\Mcu_17_TimerIp_Cfg.o :
 last364.elf : .\Appl\GenData\src\Mcu_PBcfg.o
@@ -106,6 +110,8 @@ last364.elf : .\Appl\GenData\src\Spi_PBcfg.o
 .\Appl\GenData\src\Spi_PBcfg.o :
 last364.elf : .\Appl\GenData\vBrs_Lcfg.o
 .\Appl\GenData\vBrs_Lcfg.o :
+last364.elf : .\Appl\Source\Adc_Irq.o
+.\Appl\Source\Adc_Irq.o :
 last364.elf : .\Appl\Source\Appl_HwStartup.o
 .\Appl\Source\Appl_HwStartup.o :
 last364.elf : .\Appl\Source\Autosar_Startup.o
@@ -122,6 +128,12 @@ last364.elf : .\Appl\Source\StartApp.o
 .\Appl\Source\StartApp.o :
 last364.elf : .\Appl\Source\Tle9183.o
 .\Appl\Source\Tle9183.o :
+last364.elf : .\Appl\Source\adc_test.o
+.\Appl\Source\adc_test.o :
+last364.elf : .\Appl\Source\can_test.o
+.\Appl\Source\can_test.o :
+last364.elf : .\Appl\Source\spi_test.o
+.\Appl\Source\spi_test.o :
 last364.elf : .\BSW364\BswM\Implementation\BswM.o
 .\BSW364\BswM\Implementation\BswM.o :
 last364.elf : .\BSW364\CanIf\Implementation\CanIf.o
@@ -294,8 +306,12 @@ last364.elf : .\BSW364\PduR\Implementation\PduR_Sm.o
 .\BSW364\PduR\Implementation\PduR_Sm.o :
 last364.elf : .\BSW364\VStdLib\Implementation\vstdlib.o
 .\BSW364\VStdLib\Implementation\vstdlib.o :
+last364.elf : .\MCAL364\Adc\ssc\src\Adc.o
+.\MCAL364\Adc\ssc\src\Adc.o :
 last364.elf : .\MCAL364\Dio\ssc\src\Dio.o
 .\MCAL364\Dio\ssc\src\Dio.o :
+last364.elf : .\MCAL364\Dma\ssc\src\Dma.o
+.\MCAL364\Dma\ssc\src\Dma.o :
 last364.elf : .\MCAL364\McalLib\ssc\src\McalLib.o
 .\MCAL364\McalLib\ssc\src\McalLib.o :
 last364.elf : .\MCAL364\Mcu\ssc\src\Mcu.o

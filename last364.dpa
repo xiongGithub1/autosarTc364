@@ -139,6 +139,15 @@
         <Splitter File=".\Config\ECUC\last364_Spi_Spi_ecuc.arxml">
             <Module Name="Spi"/>
         </Splitter>
+        <Splitter File=".\Config\ECUC\last364_Adc_Adc_ecuc.arxml">
+            <Module Name="Adc"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\last364_Dma_Dma_ecuc.arxml">
+            <Module Name="Dma"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\last364_Irq_Irq_ecuc.arxml">
+            <Module Name="Irq"/>
+        </Splitter>
         <OwnFolderForEachSplitter>false</OwnFolderForEachSplitter>
         <OwnFileForEachInstance>true</OwnFileForEachInstance>
     </EcucSplitter>
