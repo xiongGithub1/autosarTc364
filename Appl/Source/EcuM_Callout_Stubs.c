@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Callout_Stubs.c
- *   Generation Time: 2024-07-01 09:20:39
+ *   Generation Time: 2024-07-03 11:46:45
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -90,6 +90,7 @@
 #include "Rte_Main.h" 
 #include "Mcu.h" 
 #include "Port.h" 
+#include "Spi.h" 
 
 
 /**********************************************************************************************************************
@@ -278,6 +279,7 @@ FUNC(void, ECUM_CODE) EcuM_AL_DriverInitOne(void)
   while (Mcu_GetPllStatus() != MCU_PLL_LOCKED);
   Mcu_DistributePllClock();
   Port_Init( &Port_Config );
+  Spi_Init( &Spi_Config );
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_AL_DriverInitOne>                  DO NOT CHANGE THIS COMMENT!

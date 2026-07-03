@@ -1,0 +1,3152 @@
+--- page 1 ---
+TLE9183QK
+Bridge Driver IC
+Features
+• High Power 3 Phase Bridge Driver for low RDSON N-channel FETs
+• 0...100% duty cycle, adjustable without restrictions
+• Specified supply voltage range of 5.5 V to 40 V
+• Logic operation down to 3 V supply voltage
+• High robustness of motor connection pins of -15 V to 40 V
+• Extended protection and supervision functionality
+• Serial Peripheral Interface (SPI), control of supervision
+• Supervision read out by SPI
+• Reverse diode measurement of external FET for temperature detection
+• Limp-home functionality of diagnostic and failure behavior with SPI
+configurable content
+• 3 current sense amplifiers for shunt signal conditioning
+• 2 switch off paths by pins ENA and SOFF
+• Low quiescent current mode by pin INH
+• Compatible to 3.3 V µCs and TTL logic
+• Phase voltage feedback with SPI programmable voltage thresholds
+• Output for phase cut off circuit activation
+• Green Product (RoHS compliant)
+• AEC Qualified
+ 
+PRO-SIL™ features
+• According to ISO26262 ASIL-D workflow
+• Safety Manual and Safety Analysis Summary Report up to VVS ≤ 28 V and VVDHP, VVDHx ≤ 28 V available
+• Safety Barrier to µC interface up to VVS ≤ 28 V and VVDHP, VVDHx ≤ 28 V
+• High voltage rated digital input and output pins
+• Fast and functional independent disable functionality via pin SOFF
+• Functional redundant disable paths via pin SOFF and ENA
+• Monitoring of system relevant voltages and dedicated self-test functionality
+• Secure SPI interface with CRC check over data and address
+• Integrated window watchdog for µC supervision
+• Functional independent current sense amplifier
+• Functional independent phase feedback with SPI programmable threshold
+• Passive clamping of external FETs
+Product validation
+Qualified for automotive applications.
+Product validation according to AEC-Q100.
+Datasheet Please read the sections "Important notice" and "Warnings" at the end of this document Rev. 1.21
+www.infineon.com 2023-04-30
+
+
+--- page 2 ---
+Description
+The TLE9183QK is an advanced gate driver IC dedicated to control 6 external N-channel MOSFETs forming an
+inverter for high current 3 phase motor drives application in the automotive sector.
+A sophisticated high voltage technology allows the TLE9183QK to support applications for 12 V battery systems
+even within tough automotive environments in combination with high motor currents. Therefore bridge, motor
+and supply related pins can withstand voltages of up to 40 V. Motor related pins can even withstand negative
+voltage transients down to - 15 V without damage.
+All low- and high-side output stages are based on a floating concept and its driver strength allows to drive
+lowest RDSON MOSFETs common on the market.
+An integrated SPI interface is used to configure the TLE9183QK for the application after power-up. After
+successful power-up parameters can be adjusted by SPI, monitoring data, configuration and error registers can
+be read. Cyclic redundancy check over data and address bits ensures safe communication and data integrity.
+GND related bridge currents can be measured with 3 integrated current sense amplifiers. The outputs of the
+current sense amplifiers support 5 V ADCs and the robust inputs can withstand negative transients down to
+-10 V without damage. Gain and zero current voltage offset can be adjusted by SPI. The offset can be calibrated.
+Diagnostic coverage and redundancy have increased steadily in recent years in automotive drive applications.
+Therefore the TLE9183QK offers a wide range of diagnostic features, like monitoring of power supply voltages
+as well as system parameters. A testability of safety relevant supervision functions has been integrated. Failure
+behavior, threshold voltages and filter times of the supervisions of the device are adjustable via SPI.
+The TLE9183QK is integrated in a LQFP64 package with an exposed pad. Due to its exposed pad the gate driver
+IC provides an excellent thermal characteristic.
+Table 1 Device Marking
+Product Type Package Marking
+TLE9183QK LQFP-64 TLE9183QK
+TLE9183QK
+Bridge Driver IC
+Description
+Datasheet 2 Rev. 1.21
+2023-04-30
+
+
+--- page 3 ---
+Table of contents
+Features . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+Product validation  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+Description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+Table of contents . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+1 Block Diagram  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+2 Pin Configuration  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+2.1 Pin Assignment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+2.2 Pin Definitions and Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+3 General Product Characteristics  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+3.1 Absolute Maximum Ratings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+3.2 Thermal Resistance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+3.3 Functional Range . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+3.4 Typical Behavior Figures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+4 Input and Output Characteristics  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+4.1 Digital Inputs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+4.2 General Inputs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+4.3 VCC - I/O Supply and µC Supply Monitoring . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+4.4 Digital Outputs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+4.5 General Output . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+4.6 SPI Interface . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+4.7 Electrical Characteristics IOs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+5 Serial Peripheral Interface - SPI  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+5.1 IO-Buffer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+5.2 Shift Registers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+5.3 Address and Command Decoder . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .20
+5.4 Cyclic Redundancy Check - CRC Generation and Detection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+5.5 Electrical Characteristics SPI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+6 Clock  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+6.1 Clock Programming . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+6.2 Electrical Characteristics Clock . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+7 Power Supply  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+7.1 Output Stage Supply Concept . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+7.2 Internal Supply Voltages . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+7.3 Electrical Characteristics Power Supply . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+7.4 Typical Behavior Figures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+8 Floating MOSFET Driver  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+TLE9183QK
+Bridge Driver IC
+Table of contents
+Datasheet 3 Rev. 1.21
+2023-04-30
+
+
+--- page 4 ---
+8.1 Driver Output Stage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+8.2 Input to Output Information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+8.3 Shoot Through Protection and Dead Time Generation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+8.4 Electrical Characteristics Floating MOSFET Driver . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+8.5 Typical Timings and Behavior Figures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+9 Shunt Signal Conditioning  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+9.1 Gain Programming . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+9.2 Setting VRO Voltage and VOx Voltage for Zero SSC Differential Input Voltage  . . . . . . . . . . . . . . . . . 36
+9.3 Auto Calibration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+9.4 Overcurrent Detection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+9.5 Self-tests of Shunt Signal Conditioning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+9.5.1 Gain Test . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+9.5.2 Power Supply Monitoring of SSC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+9.6 Electrical Parameter Shunt Signal Conditioning (SSC) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .38
+10 Protection and Diagnostics  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+10.1 Supervision Overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+10.1.1 Diagnosis in Configuration Mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+10.1.2 Disabled Functions in Reduced Operation Mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+10.1.3 Disabled Functions in Safe Off Mode  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+10.2 Failure Detection Handling . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+10.2.1 Failure Flags . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+10.2.2 Failure Behavior Configuration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47
+10.2.3 Parallel Failure Occurrence . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+10.3 Diagnostic Test Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+10.4 LIMP Functionality . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+10.5 Detailed Supervision Description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+10.5.1 Vs Voltage Monitoring . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+10.5.1.1 SPI Register Reference for VS Supervision . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .51
+10.5.2 VDHP Voltage Monitoring . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .52
+10.5.2.1 SPI Register Reference for VDHP Supervision . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .53
+10.5.3 Charge Pump Monitoring . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .53
+10.5.3.1 SPI Register Reference for CB Undervoltage Supervision . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+10.5.3.2 Overload and Overvoltage of Charge Pumps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+10.5.4 High-side Buffer Capacitor Voltage Monitoring . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
+10.5.4.1 Overvoltage Detection of High-side Buffer Capacitor at High Negative Voltage at the
+Pins SHx . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
+10.5.4.2 SPI Register Reference for High-side Buffer Capacitor UV Monitoring . . . . . . . . . . . . . . . . . . . . 55
+10.5.5 VCC Monitoring . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .56
+10.5.5.1 SPI Register Reference for VCC Supervision . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 56
+10.5.6 Internal Power Supply Monitoring . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .56
+10.5.7 Internal CLK Supervision . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 56
+TLE9183QK
+Bridge Driver IC
+Table of contents
+Datasheet 4 Rev. 1.21
+2023-04-30
+
+
+--- page 5 ---
+10.5.8 Temperature Detection and Shutdown . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 56
+10.5.8.1 SPI Register Reference for Overtemperature Detection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57
+10.5.8.2 Temperature Read Out . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57
+10.5.9 Output Stage Status Feedback . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .57
+10.5.10 Digital Driving Path Monitoring . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57
+10.5.11 Short Circuit Detection - SCD . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57
+10.5.11.1 SPI Register Reference for SCD Voltage Threshold . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58
+10.5.12 FET Drain Source Voltage Read Out . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .59
+10.5.13 FET Reverse Diode Forward Voltage Read Out . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 59
+10.5.14 Drain Source Voltage Measurement of External FETs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+10.5.15 Input Pattern Violation Monitoring . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+10.5.16 Overload Digital Output Pins . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+10.5.17 Configuration Errors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+10.5.17.1 Configuration Signature Invalid . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .60
+10.5.17.2 Configuration Time-out . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .61
+10.5.18 Control Register Error Monitoring . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+10.5.19 State Machine Error Monitoring  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+10.5.20 SPI Communication Errors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+10.5.20.1 SPI Frame Error . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+10.5.20.2 SPI Frame Time-out . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+10.5.20.3 SPI Window Watchdog . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .62
+10.5.20.3.1 SPI Register Reference for Window Watchdog . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .62
+10.5.20.4 CRC Error . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .63
+10.5.20.5 Invalid Address Access Monitoring . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 63
+10.6 Electrical Characteristics Protection and Diagnostic Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .64
+10.7 Typical Behavior Figures  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 72
+11 Digital Phase Voltage Feedback  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 73
+11.1 Phase Voltage Feedback Programming . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 73
+11.2 Electrical Parameter Phase Feedback . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 73
+12 Phase Cut Off Activation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 74
+13 Operation Modes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 75
+13.1 Normal Operation Mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 75
+13.1.1 Driving Mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .75
+13.1.2 Limp Mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 75
+13.2 Reduced Operation Mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76
+13.3 Sleep Mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .76
+13.4 Idle Mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76
+13.5 Configuration Mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
+13.6 Configuration Lock Mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
+13.7 Safe-Off Mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
+13.8 Error Mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
+TLE9183QK
+Bridge Driver IC
+Table of contents
+Datasheet 5 Rev. 1.21
+2023-04-30
+
+
+--- page 7 ---
+1 Block Diagram
+VS
+SOFF
+SHx
+GHx
+SLx
+GLx
+Diagnostics
+Failure DetectionDiagnosticTest(s)andError Logic
+VOx
+ILx
+VDHPINH
+ERR
+IHx
+Floating HS driverincl. diagnostics
+Floating LS driverincl. diagnostics
+Power Supplyincl. Diagnostic & Safety Functions
+Current Sense Block(OpAmps for GND-related shunt measurement)
+LEVEL
+SHIFT
+Direct InputControlInput LogicShoot Through,Dead Time
+SPI Interface
+MOSI
+MISOCSNCLK_SPI
+3* 3*
+3*
+ISPx
+ISNx
+ENA
+VCC
+Configuration RegistersControl RegistersRead Registers
+BHx
+CL1 CH1 CB CL2 CH2
+CB
+GND
+VRO
+PFBx
+AGND
+SHx
+SHx
+BHx
+CP_GND
+VCC
+APC
+I/Oports
+VDHx
+Figure 1 Block Diagram
+TLE9183QK
+Bridge Driver IC
+1  Block Diagram
+Datasheet 7 Rev. 1.21
+2023-04-30
+
+
+--- page 8 ---
+2 Pin Configuration
+2.1 Pin Assignment
+SL3
+GL3
+GND
+N.C.
+PFB3
+PFB2
+PFB1
+ISN2
+ISP2
+VO2
+VRO
+VO1
+ISP1
+ISN1
+AGND
+ENA
+VO3
+GND
+APC
+ERR
+IH1
+IL1
+IL2
+IH2
+IH3
+IL3
+MISO
+MOSI
+CSN
+CLK_SPI
+VCC
+SOFF
+ISP3
+N.C.
+VDHP
+CH2
+CL2
+N.C.
+INH
+Vs
+N.C.
+CH1
+CL1
+CP_GND
+CB
+GL1
+SL1
+ISN3
+BH1
+SH1
+GH1
+VDH1
+SL2
+GL2
+N.C.
+VDH2
+BH2
+SH2
+GH2
+N.C.
+VDH3
+BH3
+SH3
+GH3
+32
+31
+30
+29
+28
+27
+26
+25
+24
+23
+22
+21
+20
+19
+18
+17
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+48
+47
+46
+45
+44
+43
+42
+41
+40
+39
+38
+37
+36
+35
+34
+33
+Figure 2 Pin Configuration
+2.2 Pin Definitions and Functions
+Pin Symbol Function
+1 GND Ground
+2 APC Activation Phase Cut off Circuit
+3 ERR Error Not
+4 IH1 Input High-side 1 Not
+5 IL1 Input Low-side 1
+6 IL2 Input Low-side 2
+7 IH2 Input High-side 2 Not
+8 IH3 Input High-side 3 Not
+9 IL3 Input Low-side 3
+10 MISO Master In Slave Out
+TLE9183QK
+Bridge Driver IC
+2  Pin Configuration
+Datasheet 8 Rev. 1.21
+2023-04-30
+
+
+--- page 9 ---
+Pin Symbol Function
+11 MOSI Master Out Slave In
+12 CSN Chip Select Not
+13 CLK_SPI Clock Serial Peripheral Interface
+14 VCC VCC Supply Voltage
+15 VO3 Voltage Output of CSA 3
+16 SOFF Safe Off Not
+17 ISN3 Input Shunt Negative of CSA 3
+18 ISP3 Input Shunt Positive of CSA 3
+19 N.C. Not Connected
+20 VDHP Voltage Drain High-side Power
+21 CH2 Charge Pump 2 High
+22 CL2 Charge Pump 2 Low
+23 N.C. Not Connected
+24 INH Inhibit Not
+25 Vs Voltage Supply
+26 N.C. Not Connected
+27 CH1 Charge Pump 1 High
+28 CL1 Charge Pump 1 Low
+29 CP_GND Charge Pump Ground
+30 CB Charge Pump Buffer
+31 GL1 Gate Low-side 1
+32 SL1 Source Low-side 1
+33 BH1 Bootstrap High-side 1
+34 SH1 Source High-side 1
+35 GH1 Gate High-side 1
+36 VDH1 Voltage Drain High-side 1
+37 SL2 Source Low-side 2
+38 GL2 Gate Low-side 2
+39 N.C. Not Connected
+40 VDH2 Voltage Drain High-side 2
+41 BH2 Bootstrap High-side 2
+42 SH2 Source High-side 2
+43 GH2 Gate High-side 2
+44 N.C. Not Connected
+45 VDH3 Voltage Drain High-side 3
+TLE9183QK
+Bridge Driver IC
+2  Pin Configuration
+Datasheet 9 Rev. 1.21
+2023-04-30
+
+
+--- page 12 ---
+Table 2 (continued) Absolute Maximum Ratings
+Tj = -40°C to +150°C; all voltages with respect to GND, positive current flowing into pin (unless otherwise
+specified)
+Parameter Symbol Values Unit Note or Test
+Condition
+Number
+Min. Typ. Max.
+Voltage Difference Gxx-Sxx, BHx-
+SHx, CB-SLx
+VMR_flOS -0.3 – 28 V 7) P_4.1.26
+Inputs and Outputs
+Voltage Range IHx, ILx, ENA,
+VCC, INH, SOFF, PFBx, ERR, APC,
+CLK_SPI, CSN, MOSI, MISO
+VMR_IO -0.3 – 40 V 8) P_4.1.34
+Shunt Signal Conditioning
+Voltage Range ISPx, ISNx1) VISx2 -10 – 10 V RISP ≥ 18 Ω
+RISN ≥ 18 Ω9)
+P_4.1.43
+Voltage Difference ISPx-ISNx VdISx -5.0 – 5.0 V – P_4.1.44
+Voltage Range VOx1), VRO VVOx3 -0.3 – 5.5 V INH = High;
+Vs supplied
+P_4.1.46
+Voltage Range VOx, VRO VVOx2 -0.3 – 18 V 1 kΩ in series P_4.1.47
+Current Range VOx1), VRO IVOx -10 – 18 mA – P_4.1.48
+GND
+Voltage Range CP_GND, AGND,
+GND, EPAD
+VISx -0.3 – 0.3 V – P_4.1.53
+Temperatures
+Storage Temperature Tstg -55 – 150 °C – P_4.1.54
+Junction Temperature TJ1 -40 – 150 °C – P_4.1.55
+ESD Susceptibility
+ESD Resistivity HBM all Pins10) VESDHBM2 -1.5 – 1.5 kV – P_4.1.58
+ESD Resistivity all Pins (charged
+device model)11)
+VESDCDM – – 500 V – P_4.1.59
+ESD Resistivity Corner Pins
+(charged device model)11)
+VESDCDMc – – 750 V – P_4.1.60
+Notes:
+7 For a duration of t = 50 µs with 400 mA
+8 A short circuit at APC for > 10 hours might damage the device
+1 Not subject to production test, specified by design
+9 For a duration of t_on = 500 ns; t_on/t_off = 1% per 20 kHz PWM frequency
+10 ESD robustness according to Human Body Model (HBM) ANSI/ESDA/JEDEC JS-001
+11 ESD robustness according to Charged Device Model (CDM) JESD22-C101
+TLE9183QK
+Bridge Driver IC
+3  General Product Characteristics
+Datasheet 12 Rev. 1.21
+2023-04-30
+
+
+--- page 14 ---
+Table 4 (continued) Functional Range 13)
+Tj = -40°C to +150°C; all voltages with respect to GND, positive current flowing into pin (unless otherwise
+specified)
+Parameter Symbol Values Unit Note or Test
+Condition
+Number
+Min. Typ. Max.
+Duty Cycle Range Output Stages D.C. 0 – 100 % – P_4.3.12
+Voltage Range INH18), SOFF18),
+IHx, ILx, ENA, CLK_SPI, CSN, MOSI
+VFR_IO -0.3 – VVCCxOVx V – P_4.3.13
+Note: Within the functional or operating range, the IC operates as described in the circuit description. The
+electrical characteristics are specified within the conditions given in the Electrical Characteristics
+table.
+3.4 Typical Behavior Figures
+0,0
+0,5
+1,0
+1,5
+2,0
+2,5
+3,0
+3,5
+4,0
+4,5
+5,0
+5,5
+6,0
+0,01 0,1 1 10
+Ipeak[A]
+tpulse[us]
+Figure 3 Max. Peak Pulse Currents between Pin CB and Pins BHx
+Notes:
+1. Characteristic is valid for rectangular pulse shapes at a PWM frequency up to 20 kHz.
+2. Please refer to Figure 7 for further current limitation with external components. If pulse currents has been
+observed higher than the maximum peak pulse currents please contact Infineon.
+13 Not subject to production test, specified by design
+16 At minimum limit charge pumps are operational even if freewheeling current flows via the reverse diode of the external high-side
+FET
+17 Negative voltages applied to VDHP might end up into a transition to idle mode with loss of configuration data
+18 Functional range up to its maximum ratings possible but specified by design, not subject to production test
+TLE9183QK
+Bridge Driver IC
+3  General Product Characteristics
+Datasheet 14 Rev. 1.21
+2023-04-30
+
+
+--- page 15 ---
+4 Input and Output Characteristics
+The input and output pins of the TLE9183QK drive the output stages and give feedback to the µC about the
+state of the gate driver IC, the µC and the state of the inverter stage. Digital in- and outputs are supplied out
+of VCC and refer to the VCC voltage, general in- and outputs have fixed input threshold and fixed output high
+levels. Every output stage driving an external FET has its own input pin. Additionally there are 3 different pins
+to activate or deactivate the output stages. The impact of the 3 pins ENA, INH and SOFF differs from each
+other regarding to the gate driver IC’s reaction. With the SPI interface the TLE9183QK can be configured and
+diagnostics can be read out by the µC. The ERR pin indicates a failure of the TLE9183QK or the system.
+Table 5 I/Os functionality
+Name of I/O Definition Functionality Default State
+INH General Input Sleep Mode Internal pull-down, FETs off passive clamping,
+Power up/down of device
+SOFF General Input Safe switch off Internal pull-down, FETs off without reset of
+error registers, SOFF mode
+ILx Digital Input Driver input for LS FETs Internal pull-down, Affected FET off
+IHx Digital Input Driver input for HS FETs Internal pull-up to VCC, Affected FET off
+ENA Digital Input Enable and Reset Internal pull-down, All FETs off
+CLK_SPI Digital Input SPI Internal pull-down
+MOSI Digital Input SPI Internal pull-down
+CSN Digital Input SPI Internal pull-up to VCC
+MISO Digital Output SPI Push-pull stage to VCC, Tri-state (Hi-Z) in case
+of no supply or if deactivated
+PFBx Digital Output Phase Feedback Push-pull stage to VCC with internal pull-down
+APC General Output Driving Phase Cut Off Circuit Push-pull stage to 5 V with internal pull-down
+ERR Digital Output Diagnostic Output Push-pull stage to VCC with internal pull-down
+4.1 Digital Inputs
+This chapter describes the basic functions of the digital input pins, which control the output stages. Due to
+safety requirements the robustness of the input pins is 40 V.
+IHx, ILx
+The TLE9183QK uses the active-low inputs IHx to drive the high-side output stages and the active-high input
+pins ILx for the low-side output stages. In combination with a configurable internal dead time it is possible to
+drive six external FETs with only three µC outputs.
+ENA
+If the ENA pin is set to high the output stages of the gate driver IC will be enabled. It is also used to clear latched
+errors. Clearing the latched errors is falling edge driven. If ENA is set to high after a low phase, the output stages
+are activated again. As long as ENA is set to low all FETs are off. Error bits of the error registers are not cleared
+by ENA but by SPI readout only.
+An ENA reset can be performed by applying a falling edge at the pin ENA and keeping the input level low for
+minimum tclear.
+TLE9183QK
+Bridge Driver IC
+4  Input and Output Characteristics
+Datasheet 15 Rev. 1.21
+2023-04-30
+
+
+--- page 16 ---
+MOSI, CLK_SPI, CSN
+For detailed description please refer to Chapter 4.6.
+4.2 General Inputs
+The chapter describes the basic functions of the general input pins. General input pins are not referred to VCC
+voltage.
+INH - Inhibit Switch
+If the INH pin is set to low the internal power down sequence will be initiated and the gate driver IC will enter
+sleep mode after undervoltage shutdown at pin CB has been detected. If the pin is set to low the output stages
+will turn off the external MOSFETs actively. The power supplies will be deactivated too so after a power down
+sequence the entire driver IC is discharged completely. Then the external FETs are kept off by the passive
+clamping. Every time the INH is set to low the gate driver IC has to be reconfigured at next power-up cycle.
+SOFF - Safe Off Switch
+The TLE9183QK has a safety switch off path included. This path is intended to switch off the external MOSFETs
+via the SOFF input pin by the µC or an alternative monitoring IC in case a failure has been detected during
+operation. Power Supply, Logic, Current Measurement and SPI communication is not affected. Additionally the
+safe state switch off path is designed completely redundant to the logic and the ENA disable path. Hence if the
+device is in safe off state it will be possible to read out the failure registers to determine the root cause of the
+failure.
+4.3 VCC - I/O Supply and µC Supply Monitoring
+The VCC is the supply pin for the I/O ports. Additionally the VCC voltage is monitored. Under- and overvoltage
+can be detected for 5 V and 3.3 V systems. The threshold levels can be set at configuration mode. If the VCC
+under- and overvoltage detection is not required it can be deactivated during configuration.
+4.4 Digital Outputs
+The digital outputs are push-pull stages and supplied out of VCC, so the output levels are referred to VCC. The
+digital output ports are protected against shorts to GND and shorts to voltages higher or equal to the pin VCC. If
+an output is shorted the affected output pad will be disconnected and a dedicated error register bit will be set.
+ERR
+The ERR pin indicates a fault detected by the gate driver IC to the µC. The output has an integrated pull-down
+resistor. In the case of a tri-stated ERR pin cross coupling from neighboured pins occur and in the case voltage
+lower than 4.0 V at pin VDHP please refer to Chapter 11.
+PFB1, PFB2, PFB3
+The PFB1, PFB2 and PFB3 pins indicate the transition point of each half bridge to the µC. The analog voltage
+of the pins SH1, SH2 and SH3 will be converted into a digital signal by PFB1, PFB2 and PFB3 respectively. The
+output has an integrated pull-down resistor.
+MISO
+For detailed description please refer to Chapter 4.6.
+TLE9183QK
+Bridge Driver IC
+4  Input and Output Characteristics
+Datasheet 16 Rev. 1.21
+2023-04-30
+
+
+--- page 17 ---
+4.5 General Output
+The general output pin is not supplied out of VCC and do not refer to VCC. But if VCC voltage is below 1.0 V pin
+APC will not work as specified. The high level output voltage is typically 5 V. The output port is short circuit
+robust.
+APC - Activation of Phase Cut OFF Circuit
+The TLE9183QK has an integrated control logic which can be used to drive a phase cut off circuit in case of
+an emergency shutdown is required. The pin APC is the output of this control logic. For detailed information
+regarding the APC functionality please refer to Chapter 12. The output has an integrated pull-down resistor. If
+the APC function is not used, the pin shall be kept open.
+4.6 SPI Interface
+This chapter describes the basic functions of the SPI interface pins. All SPI pins are digital I/O pins. For detailed
+information regarding the SPI interface please refer to .
+MOSI - Master-Out Slave-In
+The MOSI input is the serial data input into the SPI shift register.
+MISO - Master-In Slave-Out
+The MISO pin is the serial data slave output of the SPI shift register. The output is tri-state in case of no supply
+or if CSN is high or the port is deactivated, e.g: an overload of the pin has been detected. It is recommended to
+apply a pull-down resistor either externally or configured at the µC port to avoid a floating node caused by the
+tri-stated MISO output.
+CLK_SPI
+The Clock input CLK_SPI is the shift clock for the shift register as well as the clock to read data from the data
+stream. After a negative edge of CSN a positive edge of CLK_SPI is expected as shown in Chapter 5.5.
+CSN - Chip Select Not
+The device acts as a slave and can be selected by the CSN input pin. With a negative edge of CSN the shift
+function is enabled. The incoming data will be processed with CSN rising edge.
+4.7 Electrical Characteristics IOs
+Table 6 Electrical Characteristics IOs
+VS = 5.5 V to 40 V, Tj = -40°C to +150°C, all voltages with respect to GND, positive current flowing into pin (unless
+otherwise specified)
+Parameter Symbol Values Unit Note or Test
+Condition
+Number
+Min. Typ. Max.
+Digital Input Pins with Pull-Up – IHx, CSN
+Low Level Input Voltage VIL1 – – 0.7 V   P_5.7.1
+High Level Input Voltage VIH1 2.5 – – V   P_5.7.2
+Input Hysteresis dVI1 150 270 – mV   P_5.7.3
+Pull-up Resistor RIPU – 50 – kΩ – P_5.7.7
+(table continues...)
+TLE9183QK
+Bridge Driver IC
+4  Input and Output Characteristics
+Datasheet 17 Rev. 1.21
+2023-04-30
+
+
+--- page 18 ---
+Table 6 (continued) Electrical Characteristics IOs
+VS = 5.5 V to 40 V, Tj = -40°C to +150°C, all voltages with respect to GND, positive current flowing into pin (unless
+otherwise specified)
+Parameter Symbol Values Unit Note or Test
+Condition
+Number
+Min. Typ. Max.
+Input Capacitance19) CIP1 – – 10 pF   P_5.7.8
+Digital Input Pins with Pull-Down – ILx, ENA, MOSI, CLK_SPI
+Low Level Input Voltage VIL3 – – 0.7 V   P_5.7.9
+High Level Input Voltage VIH3 2.5 – – V   P_5.7.10
+Input Hysteresis dVI3 150 270 – mV   P_5.7.11
+Input Pull-down Resistor RIPD1 – 50 – kΩ – P_5.7.15
+Input Capacitance19) CIPD1 – – 10 pF   P_5.7.16
+General Input Pin – INH, SOFF
+INH, SOFF Low Level Input Voltage VGIP_LL – – 0.7 V – P_5.7.18
+INH, SOFF High Level Input
+Voltage19)
+VGIP_HL 2.1 – – V – P_5.7.19
+INH, SOFF Input Hysteresis19) dVGIP 100 200 – mV VVS = 5.5 V;
+Slew
+rate = 250 mV/µs
+P_5.7.20
+INH, SOFF Pull-down Resistor RGIP 30 100 250 kΩ – P_5.7.21
+INH, SOFF Analog Input Filter
+Time19)
+tGIP_FIL_f 0.6 – 2.5 µs – P_5.7.23
+Minimum INH High Pulse Length at
+Power-up19)20)
+tINH_minp 5 – – ms INH Low to High;
+CCPx = 1.0 µF;
+CCB = 4.7 µF
+P_5.7.25
+Wake-up Time - Ready for
+Configuration21)
+tINH_cfg – – 2.5 ms INH Low to High;
+VVDHP = VVs > VVsWU;
+VVCC > VVCCROP
+P_5.7.26
+Wake-up Time - Ready for
+Operation19)22)
+tINH_Pen1 – – 5 ms INH Low to High;
+VVDHP = VVs;
+VBS > VBSUV;
+VCB > VCBUVSD;
+CBHx = 330 nF;
+CCPx = 1.0 µF;
+CCB = 4.7 µF
+P_5.7.27
+(table continues...)
+19 Not subject to production test, specified by design
+20 For details please refer to Chapter 14.2.9
+21 Digital core and I/O ports operational, device in idle mode
+22 All blocks operational (indicated by VBS > VBSUV and VCB > VCBUVSD) in tINH_Pen1
+TLE9183QK
+Bridge Driver IC
+4  Input and Output Characteristics
+Datasheet 18 Rev. 1.21
+2023-04-30
+
+
+--- page 19 ---
+Table 6 (continued) Electrical Characteristics IOs
+VS = 5.5 V to 40 V, Tj = -40°C to +150°C, all voltages with respect to GND, positive current flowing into pin (unless
+otherwise specified)
+Parameter Symbol Values Unit Note or Test
+Condition
+Number
+Min. Typ. Max.
+INH, SOFF Propagation Time
+External FETs Active OFF
+tGIP_FEToff – – 3.0 µs RLoad = 2 kΩ P_5.7.28
+Digital Output Pins with Pull-Down ERR, PFBx, Tri-state MISO
+High Level Output Voltage VDOP_HL_3 VVCC -
+0.3 V
+– VVCC V VVCC = 3.3 V;
+Iload = -0.2 mA
+P_5.7.37
+High Level Output Voltage23) VDOP_HL_5 3.35 – VVCC V VVCC = 5.0 V;
+Iload = -0.2 mA;
+All Digital I/Os
+= static
+P_5.7.38
+Low Level Output Voltage VDOP_LL -0.1 – 0.4 V ILoad = 0.2 mA P_5.7.39
+Output Pull-down Resistor RDOP 60 100 140 kΩ – P_5.7.40
+Output Rise Time / Fall Time tDOP_RIFA – – 20 ns CLoad = 20 pF;
+10 to 90%
+P_5.7.41
+Output Impedance PFBx, ERR RDOP – 50 – Ω – P_4.3.17
+Output Impedance MISO RDOPMISO – 130 – Ω – P_3.3.1
+General Output Pin – APC
+High Level Output Voltage VAOPH1 3.9 5.0 6.0 V Iload = -1 mA P_5.7.47
+High Level Output Voltage VAOPH2 – VVs -
+0.2
+– V Iload = -1 mA;
+VVs < 5.5 V
+P_5.7.48
+Low Level Output Voltage VAOPL -0.1 – 0.4 V ILoad = 1 mA P_5.7.49
+Pull-down Resistor RAOPPD2 120 200 280 kΩ – P_5.7.50
+Output Rise Time / Fall Time tGOP_RIFA – – 60 ns CLoad = 20 pF;
+20 to 80%
+P_5.7.51
+Current Range APC IAOP2 -1 – 1 mA – P_4.3.19
+23 For details please refer to Chapter 14.2.1
+TLE9183QK
+Bridge Driver IC
+4  Input and Output Characteristics
+Datasheet 19 Rev. 1.21
+2023-04-30
+
+
+--- page 20 ---
+5 Serial Peripheral Interface - SPI
+The 24-bit Serial Peripheral Interface (SPI) enables a communication link of the µC as SPI-master and the
+TLE9183QK. The SPI interface is used to configure and to control the gate driver IC and to read out of the status
+registers.
+The SPI interface in the TLE9183QK is a SPI-Slave. It always requires a SPI-Master. This is usually a µC. The
+master generates the CLK_SPI and CSN signals used for data transfer and its synchronization.
+The SPI interface can operate in bus application mode with additional SPI-Slave devices. Daisy Chain is not
+possible, as incoming data is not passed directly to the output port. The transmission format of incoming and
+outcoming SPI frames differ. The SPI frame format is shown the TLE9183QK user manual.
+Interface                    
+...
+SPI_MRST
+SPI_MTSR
+SPI_CLK
+CSN_1
+CSN_2
+SPI Master
+(Microcontroller)
+MOSI
+CSN
+CLK_SPI
+TLE9183
+MISO
+SPI_MRST
+SPI_MTSR
+SPI_CSN
+SPI_CLK
+Other SPI slave
+SPI  
+Configuration Registers, 
+Control Registers,
+ Read out Registers
+1)
+1) Floating of MISO connection node shall be avoided.
+Figure 4 Principle for SPI-Bus Architecture
+The SPI Block contains different sub-blocks and functions as described below.
+5.1 IO-Buffer
+The input buffer characteristics for CSN, MOSI, CLK_SPI and the tri-state output buffer MISO are described in
+Chapter 4.
+5.2 Shift Registers
+The SPI interface consists of two independent 24 bit shift registers. These two independent shift registers are
+used, one for received data and one for the data to be transmitted. MSB is shifted in/out first. Received data are
+shifted in with the rising edge of CLK_SPI, and the transmit shift register bits are shifted with the falling edge of
+CLK_SPI.
+5.3 Address and Command Decoder
+The incoming data is read after the rising edge of CSN and if there is no SPI communication error detected the
+data is decoded according to the tables in the document "TLE9183 Registers".
+Status flags shows always the current status.
+TLE9183QK
+Bridge Driver IC
+5  Serial Peripheral Interface - SPI
+Datasheet 20 Rev. 1.21
+2023-04-30
+
+
+--- page 21 ---
+5.4 Cyclic Redundancy Check - CRC Generation and Detection
+The CRC is added to any data transmitted. It is calculated for the whole SPI frame, CRC bits excluded. The CRC
+check for incoming data is performed over the complete SPI frame. In case of a CRC3 Error Detection on the
+MISO line by the µC, the message should be discarded and the register access should be repeated.
+Bit 2 Bit 1 Bit 0 +
+1*X^3       +             0*X^2             +             1*X^1             +             1*X^0
+data_in (spi_miso _i, or spi_mosi_o)
++
+Figure 5 CRC Shift Registers
+The CRC generator polynomial is x^3+x^1+1. The seed value is ‘101’ , hence the start value results in ‘100’ .
+5.5 Electrical Characteristics SPI
+DC Parameters are described in Chapter 4.
+All timings are related to the timing information shown in Figure 6 below.
+MOSI
+SPI_CLK
+MISO
+CSN
+MSB
+MSB
+LSB
+LSB
+H
+L
+F G
+A
+C
+B
+I
+D E
+N
+K
+M
+A: t SPI_wscklh  
+B: t SPI_wsckl  
+C: t SPI_clk  
+D: t SPI_clkf  
+E: t SPI_clkr  
+F: t SPI_su  
+G: t SPI_hi  
+H: t SPI_a  
+I: t SPI_v  
+K: t SPI_dis  
+L: t SPI_lead  
+M: t SPI_lag  
+N: t SPI_td
+O: t SPI_csf
+O P
+P: t SPI_csr  
+Q: t SPI_dr
+R: t SPI_df
+R Q
+Hi-Z Hi-Z
+Figure 6 SPI Timing Parameters
+Table 7 Electrical Characteristics: Timing
+Tj = -40°C to +150°C, VS = 5.5 V to 40 V, all voltages with respect to GND, positive current flowing into pin (unless
+otherwise specified). Timings valid for 10 MHz operation.
+Parameter Symbol Values Unit Note or Test
+Condition
+Number
+Min. Typ. Max.
+SPI Operating Frequency fSPI_clk –24) – 10 MHz 25) P_6.5.1
+CLK_SPI Operating Period tSPI_clk 100 – – ns 25)Figure 6, C P_6.5.2
+24 For calculation of minimum SPI operating frequency and maximum SPI clk period tSPI-timeout has to be taken into account
+25 Not subject to production test; verified by design or characterization; measured between 10% and 90%
+TLE9183QK
+Bridge Driver IC
+5  Serial Peripheral Interface - SPI
+Datasheet 21 Rev. 1.21
+2023-04-30
+
+
+--- page 22 ---
+Table 7 (continued) Electrical Characteristics: Timing
+Tj = -40°C to +150°C, VS = 5.5 V to 40 V, all voltages with respect to GND, positive current flowing into pin (unless
+otherwise specified). Timings valid for 10 MHz operation.
+Parameter Symbol Values Unit Note or Test
+Condition
+Number
+Min. Typ. Max.
+CLK_SPI High Time tSPI_wscklh 37 – – ns 25)Figure 6, A P_6.5.3
+CLK_SPI Low Time tSPI_wsckll 37 – – ns 25)Figure 6, B P_6.5.4
+CLK_SPI Fall Time tSPI_clkf – – 13 ns 25)Figure 6, D P_6.5.5
+CLK_SPI Rise Time tSPI_clkr – – 13 ns 25)Figure 6, E P_6.5.6
+SPI Data Output (MISO) Rise Time tSPI_dr – – 20 ns 26)Figure 6, Q P_6.5.7
+SPI Data Output (MISO) Fall Time tSPI_df – – 20 ns 26)Figure 6, R P_6.5.8
+SPI Chip Select (CS) Rise Time tSPI_csr – – 50 ns 25)Figure 6, P P_6.5.9
+SPI Chip Select (CS) Fall Time tSPI_csf – – 50 ns 25)Figure 6, O P_6.5.10
+SPI Data Input (MOSI) Setup tSPI_su 20 – – ns 25)Figure 6, F P_6.5.11
+SPI Data Input (MOSI) Hold time tSPI_hi 20 – – ns 25)Figure 6, G P_6.5.12
+SPI Data Output (MISO) Valid after
+CLK_SPI
+tSPI_v 0 – 30 ns 26)Figure 6, I P_6.5.13
+SPI Data Output (MISO) Access tSPI_a 0 – 50 ns 26)Figure 6, H P_6.5.14
+Enable (SS) Lag Time tSPI_lag 25 – – ns 25)Figure 6, M P_6.5.15
+SPI Data Output (MISO) Disable
+Time
+tSPI_dis – – 100 ns 25)Figure 6, K P_6.5.16
+Enable (SS) Lead Time tSPI_lead 35 – – ns 25)Figure 6, L P_6.5.17
+Sequential Transfer Delay27) tSPI_td 330 – – ns 25)Figure 6, N P_6.5.19
+25 Not subject to production test; verified by design or characterization; measured between 10% and 90%
+26 Not subject to production test; verified by design or characterization; measured between 10% and 80%; output load capacitance
+on MISO pin is ≤ 25 pF
+27 Sequential Transfer Delay at transition from configuration to normal operation increases to 1.2 µs. Please refer to Chapter 13.5
+TLE9183QK
+Bridge Driver IC
+5  Serial Peripheral Interface - SPI
+Datasheet 22 Rev. 1.21
+2023-04-30
+
+
+--- page 31 ---
+8 Floating MOSFET Driver
+The TLE9183QK provides 6 identical output stages to drive external N-channel MOSFETs in a brushless DC
+motor configuration. The driving signal for each FET given by the µC will be referenced to the source of every
+single FET by the integrated level shifters. The pins SLx/SHx are the reference for the floating gate driver output
+stages. A shoot through protection and dead time control is integrated into the logic. Violation of the input
+patterns and the correct conversion of the GND related input signal into floating signal by the level shifter will
+be monitored. Additionally the design and layout of the 6 internal signal paths for gate driving are integrated
+similar to each other to minimize switching and propagation delay time differences.
+8.1 Driver Output Stage
+As mentioned above the 6 output stages are identical. They are configured as three low-side and three
+high-side floating driver stages, every stage with its own external MOSFET source connection. So the switching
+transition behavior among every output stage to each other is optimized inside the TLE9183QK. External
+measures regarding to layout and identical wire length have to be considered as well to enable an adjustment
+of duty cycles ranges higher than 95% to ensure highest motor performance.
+The six driver stages are designed to drive low on-resistance N-channel MOSFETs. They are able to supply high
+currents which are required for fast charging and discharging of the gate of the external FETs to minimize the
+power dissipation caused by switching. The high current capability also allows to increase the PWM frequency
+or to adjust high duty cycle ranges. Applying higher PWM frequency will lead to higher current consumption.
+8.2 Input to Output Information
+The electrical characteristics of ILx, IHx and ENA are described in Chapter 4.
+8.3 Shoot Through Protection and Dead Time Generation
+In bridge applications it has to be assured that the external high-side and low-side MOSFETs are not “on” at the
+same time, connecting directly the battery voltage to GND.
+The implemented locking mechanism, (i.e. shoot through protection) avoids that the external low-side and
+high-side MOSFETs of a half bridge can be turned on at the same time. So a short circuit of the bridge due to
+faulty input signals or faulty input driving sequences will not occur.
+An additional cross conduction protection is offered by the dead time protection. The dead time defines the
+time frame between one MOSFET is turned off and the complementary MOSFET of the half bridge is turned
+on. The dead time generated by TLE9183QK can be programmed. Two dead times can be set, one for each
+transition, high-side off to low-side on and low-side off to high-side on. For high-side off to low-side on please
+refer to register Dt_ls and for low-side off to high-side on please refer to register Dt_hs. So short circuit of the
+bridge will not occur which would be caused by long propagation delay times or long switching on/off times of
+external FETs. There is always a minimum dead time ensured, independent of the programmed value.
+A supervision function has been integrated to check if the output pattern of the µC will violate the shoot
+through restriction and the adjusted dead time. The input pattern violation bit is set indicating the affected
+output stage. During configuration the failure behavior is adjustable via SPI. If low-side and high-side input
+pins are connected together to drive the FETs only with 3 µC output pins it is recommended to deactivate this
+supervision feature.
+TLE9183QK
+Bridge Driver IC
+8  Floating MOSFET Driver
+Datasheet 31 Rev. 1.21
+2023-04-30
+
+
+--- page 34 ---
+8.5 Typical Timings and Behavior Figures
+ILx
+IHx
+LS FET on3)
+HS FET on3)
+1)
+2) Internal Dead time (SPI cfg.: a) refers to dead time low -side and b) to dead time high -side register )
+2a)
+1) Shoot through protection
+1) 2b)
+3) Not to scale: propagation delay times and rise or fall times not taken into account
+on
+on
+off
+off
+off
+on
+Figure 12 Shoot Through Protection and Dead Time Generation in Normal Operation Mode
+TLE9183QK
+Bridge Driver IC
+8  Floating MOSFET Driver
+Datasheet 34 Rev. 1.21
+2023-04-30
+
+
+--- page 35 ---
+9 Shunt Signal Conditioning
+The shunt signal conditioning (SSC) incorporates 3 precise current sense amplifiers (CSAs) to amplify the
+voltage drop at the shunt resistors caused by the motor currents and a voltage reference output buffer (RB), see
+Figure 13.
+The signal conditioning refers to GND. Due to high common mode input voltage range (see VISx2) it is robust
+against sense voltage ringing caused by stray inductances during fast PWM current switching. Due to high
+common mode functional input voltage range (see VSSC_CM) it is robust against high common mode shifts
+between the GNDs of the shunts and the common GND of the ECU.
+High equivalent input resistances (see RSSC_iCM and RSSC_iDIFF), low input offset voltages (see VSSC_Oofscal)
+and low gain error (see ASSC_diff) provide an excellent DC performance of the CSAs and therefore minimizes
+the total error of the shunt signal conditioning.
+Additionally, high common mode rejection ratio (see CMRRSSC_CSA), high power supply rejection ratio (see
+PSRRSSC_CSA_CB, PSRRSSC_CSA_Vs, PSRRSCC_RB_CB and PSRRSSC_RB_Vs) and a low noise figure (see
+VSSC_ONsd) of the CSAs contribute to minimize the total error of the SSC.
+In order to optimize the shunt signal conditioning - especially in systems designed for a wide motor current
+range with high accuracy requirements at high and low motor currents - different gains can be programmed,
+see Table 13.
+The DC output voltage at the outputs of the CSAs (VOx) for zero differential input voltage is defined by the
+output of the reference buffer at pin VRO. Therefore, positive and negative currents through the shunt resistor
+can be amplified by the CSAs and thus measured by the ADC of µC. Two different VRO voltages can be set at the
+reference buffer RB, see Table 14. Each of the two VRO voltage settings can be fine tuned, see Table 15.
+CSA 1 + RB, CSA 2 and CSA 3 can be deactivated at configuration. Therefore if CSA 2 and/or CSA 3 is required
+CSA 1 + RB shall stay activated. In the case of deactivation of CSAs it is not recommended to deactivate CSA2
+alone.If the CSA is not used the input pins ISPx and ISNx of the CSA shall be connected to GND and the output
+pins VRO and VOx shall be left open. Additionally, the supplies of the not used CSA shall be turned off via SPI.
+If the third current sense amplifier is activated at configuration overcurrent CSA3 can be detected once after
+normal operation mode has been entered although overcurrent condition is not applied.
+ISPx
+ISNx
+Shunt
+VOx
+CHx
+µC
+CDIFFRVOx
+CHx
+Vref
+AGND
+GND
+PGND
+ADCx
+VRO
+VREFext
+RVRO
+AGND
+RSPx
+RSNx
+18W
+18W
+CVOx
+CVRO
+-
++
+VSSC_SUP5V0
+GND
+CSA  
+RB
++
+VREFintTLE9183
+Shunt Signal 
+Conditioning (SSC)
+VSSC_GTIxV
+Calibration and Gain test
+CISNx
+CISPx
+Recommended range RVRO, RVOx: 100W … 1kW; Pins short cicuit proof to 18V only with 1kW
+Recommended range CVRO, CVOx: 220pF … 2.2nF
+CISNx, CISPx, CDIFF shall be adjusted 
+according to application requirements
+x16 … x60x1
+VSSC_SUP1V5
+VOx
+VOUTx
+Figure 13 Simplified Block- and Application Diagram of the Shunt Signal Conditioning
+9.1 Gain Programming
+The gain of the CSAs is configurable to 8 different settings, please refer to Table 13. In applications with high
+requirements to the dynamic range of shunt current it makes sense to configure higher gain settings at low
+TLE9183QK
+Bridge Driver IC
+9  Shunt Signal Conditioning
+Datasheet 35 Rev. 1.21
+2023-04-30
+
+
+--- page 36 ---
+shunt currents compared to higher shunt currents to utilise the full range of the ADC in the µC. So it is possible
+to re-configure the gain registers of all CSAs in run-time, but the altered gain setting is not calibrated.
+Table 13 Gain Definition
+Field Bit Value ASSC_diff, typ Bit Value ASSC_diff, typ
+opX_gainY49) 000 15.71 001 19.56
+010 23.35 011 26.90
+100 30.81 101 34.45
+110 38.13 111 83.19
+9.2 Setting VRO Voltage and VOx Voltage for Zero SSC Differential Input
+Voltage
+The VRO output voltage VSSC_OVRO can be programmed with 2 bits, see Table 14. The VOx voltages with
+respect to AGND at zero (ISPx - ISNx = 0 V, VSSC_CM, min ≤ ISPx = ISNx ≤ VSSC_CM, max ) SSC differential input
+voltage follow VSSC_OVRO.
+Table 14 VRO Output Voltage Level
+Field Bit Value VSSC_OVRO, typ Bit Value VSSC_OVRO, typ
+zcl 00 Reserved 10 2.5 V
+01 (default) 1.65 V 11 Reserved
+Additionally, VSSC_OVRO can be trimmed with 6 bits, see Table 15.
+Table 15 Trim Range of VRO Output Voltage Level VSSC_OVRO
+Field Bit Value (6bit) VRO Output Voltage Description
+ofs 0x00 VSSC_OVRO + VSSC_OVRO_TRN Most negative offset adjustment
+0x1F (default) VSSC_OVRO Default value
+0x3F VSSC_OVRO + VSSC_OVRO_TRP Most positive offset adjustment
+Note: Example: The field ‘zcl’ is set to 0b10 ( VSSC_OVRO, typ  = 2.5 V). µC ADC measures voltage at pin VRO
+of 2.475 V (VOVROmeasured). The typical trim step VSSC_OVRO_LSB, typ for ‘zcl’ = 0b10 is 2.66 mV. The
+difference between VSSC_OVRO, typ = 2.5 V and VOVROmeasured = 2.475 V is 25 mV. The typical trim step
+of 2.66 mV times 9 results in a delta of 23.94 mV. The default VRO trimming has to be increased by 9,
+resulting in 0x1F + 9 = 0x28. After writing 0x28 into the field ‘ofs’ µC ADC should measure 2.475 V + 9 ×
+2,66 mV = 2,4989 V at pin VRO.
+9.3 Auto Calibration
+An auto calibration can be triggered via SPI to compensate the output voltage offset of the current sense
+amplifiers at pin VOx with respect to VSSC_OVRO. The calibration takes maximum tSSC_ofscal for each CSA.
+Calibration can be selected separately for each CSA, e.g., CSA 1 is in calibration mode, CSA 2 is normal
+operation. If the calibration fails an error will be reported. It is recommended to perform an auto calibration
+after power-up. Auto calibration shall only be performed with gain register 1. Auto calibration is deactivated
+in configuration mode. If the auto calibration is aborted or fails calibration stops and the last valid calibration
+49 X defines the affected CSA and Y defines gain register 1 or gain register 2
+TLE9183QK
+Bridge Driver IC
+9  Shunt Signal Conditioning
+Datasheet 36 Rev. 1.21
+2023-04-30
+
+
+--- page 38 ---
+9.5 Self-tests of Shunt Signal Conditioning
+The CSAs have two different self-test mechanisms. (1) gain test with two different differential input voltages and
+(2) over- and undervoltage test of the internal power supplies for the current sense amplifiers. For details see
+Chapter 9.5.1, Chapter 9.5.2.
+9.5.1 Gain Test
+Gain test can only be activated in self-test mode, for details see Table 30. Two different internal generated
+self-test voltages VSSC_GTILV and VSSC_GTIHV for gain test can be selected at the inputs of the CSAs. The input
+voltage VSSC_GTILV is always applied to gain register 1 of the CSAs. The input voltage VSSC_GTIHV is always
+applied to gain register 2 of the CSAs. By changing a dedicated bit sh_op_gain the gain of the CSA toggles
+between both gain register settings. Reading the bit will indicate which gain is selected. Toggling sh_op_gain
+will affect always all CSAs. The resulting output voltage shall be measured by the ADC of the µC and compared
+to the configured gain. The µC can rate if the CSA output voltage matches the programmed gain. Thereby, the
+accuracy of the gain, see ASSC_diff AND GSSC_Gdacc, the input offset voltage, see VSSC_Oofscal or VSSC_Oofs
+the accuracy of the self-test, see VSSC_GTILV and VSSC_GTIHV and the accuracy of the VRO output voltage, see
+VSSC_OVRO have to be taken into account. Amplification of differential input voltage ISP - ISN is not possible
+for the CSA which is selected for gain test.
+Table 18 Gain Tests Availability
+CSA CSA 1 CSA 2 CSA 3
+Gain Register
+enabled
+op1_gain1 op1_gain2 op2_gain1 op2_gain2 op3_gain1 op3_gain2
+Gain Test
+enabled
+en_opX_gt1
+(gain test
+with 20 mV)
+en_opX_gt2
+(gain test
+with 100 mV)
+en_opX_gt1
+(gain test
+with 20 mV)
+en_opX_gt2
+(gain test
+with 100 mV)
+en_opX_gt1
+(gain test with
+20 mV)
+en_opX_gt2
+(gain test with
+100 mV)
+9.5.2 Power Supply Monitoring of SSC
+The power supply monitoring of the SSC detects over- or undervoltage of the 1.5 V and 5 V supply voltage of the
+CSAs and the VRO if activated in self-test mode or after leaving configuration mode. Register Err_op_12 bit 6, 5,
+2 and bit 1 and register Err_op_3 bit 2 and 1 indicates the reult of the power supply monitoring test. Under- or
+overvoltage does not provide any further failure behavior except setting the specific bits into the register, hence
+it is the responsibility of the µC to react accordingly. In normal operation mode it is recommended that the µC
+triggers the power supply monitoring (via SPI).
+Automatic temperature read out is deactivated during power supply voltage monitoring. In this case
+temperature read out register temp_ls1, temp_ls2, temp_ls3, temp_hs1, temp_hs2 and temp_hs3 will not
+be updated. Details for temperature readout see Chapter 10.5.8.2.
+9.6 Electrical Parameter Shunt Signal Conditioning (SSC)
+Table 19 Electrical Characteristics - Current Sense Amplifier
+VS = 5.5 V to 40 V, Tj = -40°C to +150°C, all voltages with respect to GND, positive current flowing into pin (unless
+otherwise specified)
+Parameter Symbol Values Unit Note or Test Condition Number
+Min. Typ. Max.
+Current Sense Amplifier - Input
+(table continues...)
+TLE9183QK
+Bridge Driver IC
+9  Shunt Signal Conditioning
+Datasheet 38 Rev. 1.21
+2023-04-30
+
+
+--- page 43 ---
+10 Protection and Diagnostics
+The TLE9183QK provides extended protection and monitoring functions. All detected errors and warnings can
+be read by SPI, most of the thresholds are selectable by SPI configuration or SPI command. Safety relevant
+diagnostics can be tested during operation in a dedicated self-test mode.
+10.1 Supervision Overview
+The following diagnostics and read out functions are available. Details are provided in Chapter 10.5.
+Table 21 Diagnostic overview
+Diagnostic Availability in
+Configuration56
+)
+Availability
+in reduced
+operation56
+)
+Availability
+with
+SOFF=low
+Test of
+Diagnosis
+Function
+Failure
+Behavior
+Reference
+Power Supply Supervision and Diagnostics
+Overvoltage VS
+(Programmable
+Threshold)
+yes (default
+value)
+no57) yes no Table 25 Chapter 10.5.1
+Undervoltage VS
+(Programmable
+Threshold)
+yes (default
+value)
+no57) yes no Table 25 Chapter 10.5.1
+VS Read Out yes no yes no read out Chapter 10.5.1
+Overvoltage VDHP
+(Programmable
+Threshold)
+yes (default
+value)
+no57) yes no Table 28 Chapter 10.5.2
+Undervoltage VDHP
+(Programmable
+Threshold)
+yes (default
+value)
+no57) yes no Table 25 Chapter 10.5.2
+VDHP Read Out yes no yes no read out Chapter 10.5.2
+VCC Under- and
+Over Monitoring
+yes no57) yes yes Table
+2558)59)
+Chapter 10.5.5
+VCC Read Out yes no yes no read out Chapter 10.5.5
+Output Stage Power Supply Supervision
+Undervoltage
+Charge Pump CB
+Shutdown
+yes no57) yes no Table 24 Chapter 10.5.3
+Undervoltage
+Charge Pump CB
+(prog. threshold)
+yes (default
+value)
+no57) yes no Table 25 Chapter 10.5.3
+CB Read Out yes no yes no read out Chapter 10.5.3
+(table continues...)
+56 Not subject to production test, specified by design
+57 Detector may work, but readout via SPI or pin ERR is not possible; due to reduced operation mode I/O ports are off.
+58 Failure behavior can be linked to APC activation
+59 Supervision function can be disabled at configuration
+TLE9183QK
+Bridge Driver IC
+10  Protection and Diagnostics
+Datasheet 43 Rev. 1.21
+2023-04-30
+
+
+--- page 44 ---
+Table 21 (continued) Diagnostic overview
+Diagnostic Availability in
+Configuration56
+)
+Availability
+in reduced
+operation56
+)
+Availability
+with
+SOFF=low
+Test of
+Diagnosis
+Function
+Failure
+Behavior
+Reference
+Overvoltage Charge
+Pump 1
+yes no57) yes no Table 24 Chapter 10.5.3.2
+Overvoltage Charge
+Pump 2 CH2-CL2
+yes no57) yes no Table 24 Chapter 10.5.3.2
+Overload Vs yes no57) yes no Table 2460) Chapter 10.5.3.2
+Overload Charge
+Pump 161)
+yes no57) yes no LE60) Chapter 10.5.3.2
+Overload Charge
+Pump 2
+yes no57) yes no LE62) Chapter 10.5.3.2
+Undervoltage High-
+side Buffer
+Capacitor BHx-SHx
+yes no57) yes no Table 27 Chapter 10.5.4
+Overvoltage High-
+side Buffer
+Capacitor BHx-SHx
+yes no57) yes no LE63)59) Chapter 10.5.4
+Gate Driver Internal Supervisions
+Internal Power
+Supply Monitoring
+yes no57) yes no ARE, LE Chapter 10.5.6
+Clock Supervision
+(internal clock)
+yes no57) yes no Table 24 Chapter 10.5.7
+Overtemperature
+Shutdown
+yes no57) yes no Table 24 Chapter 10.5.8
+Overtemperature
+Detection
+(Programmable
+Threshold)
+yes (default
+value)
+no57) yes no Table 25 Chapter 10.5.8
+Temperature Read
+out
+yes no57) yes no read out Chapter 10.5.8
+CSA Diagnostics no no no n.a. read out  
+Output Stage
+Status Feedback
+Information
+no no yes no Table 25 Chapter 10.5.9
+(table continues...)
+56 Not subject to production test, specified by design
+57 Detector may work, but readout via SPI or pin ERR is not possible; due to reduced operation mode I/O ports are off.
+60 In addition to fault reaction shown in Table 24, Vs switch is on in case of OL_CP1 and off for OL_VS
+61 Monitoring function limited, for details please refer to Chapter 14.2.5
+62 Charge pump 2 turned off in latched condition. Failure behavior of output stages is configurable
+63 Charge pump 2 turned off in latched error condition. Output stages remain active
+59 Supervision function can be disabled at configuration
+TLE9183QK
+Bridge Driver IC
+10  Protection and Diagnostics
+Datasheet 44 Rev. 1.21
+2023-04-30
+
+
+--- page 45 ---
+Table 21 (continued) Diagnostic overview
+Diagnostic Availability in
+Configuration56
+)
+Availability
+in reduced
+operation56
+)
+Availability
+with
+SOFF=low
+Test of
+Diagnosis
+Function
+Failure
+Behavior
+Reference
+Digital Driving Path
+Monitoring
+yes no57) yes no Table 24 Chapter 10.5.10
+Latent Fault
+Warning Monitoring
+yes no57) yes no sets bit in
+SER reg.
+-
+Bridge and FET Diagnostics and Protection
+Shoot Through
+Protection
+n.a. n.a. n.a. n.a. Influences
+Driver
+State
+Chapter 8.3
+SCD Failure no no no yes Table 26 Chapter 10.5.11
+FET Drain Source
+Voltage Read out
+n.a. n.a. n.a. n.a. read out Chapter 10.5.12
+FET Reverse Diode
+Forward Voltage
+Read out
+n.a. n.a. n.a. n.a. read out Chapter 10.5.13
+Overcurrent
+Detection
+yes no57) yes no Table 25  
+Drain Source
+Measurement
+no no no n.a. read out Chapter 10.5.14
+Interface to µC Supervision
+Input Pattern
+Violation
+Monitoring
+n.a. n.a. n.a. no Table 2559) Chapter 8.3
+Overload Digital
+Output Pins
+yes no57) yes no Table 2964) Chapter 10.5.16
+Configuration
+Signature Invalid
+yes yes yes no LE Config
+Flag
+Chapter 10.5.17
+Configuration Time-
+out
+yes no   no Lock65) Chapter 10.5.17
+SPI Frame Error yes n.a. yes no W66) Chapter 10.5.20
+SPI Frame Time-out yes n.a. yes no W66) Chapter 10.5.20
+SPI Window
+Watchdog Time-out
+no no yes n.a. Table
+2558)59)
+Chapter 10.5.20
+(table continues...)
+56 Not subject to production test, specified by design
+57 Detector may work, but readout via SPI or pin ERR is not possible; due to reduced operation mode I/O ports are off.
+59 Supervision function can be disabled at configuration
+64 In addition to fault reaction shown in Table 29 affected digital output pin turned to a latched tri-sate condition
+65 To unlock restart with pin INH required
+66 SPI-Error status flag set in status register
+58 Failure behavior can be linked to APC activation
+TLE9183QK
+Bridge Driver IC
+10  Protection and Diagnostics
+Datasheet 45 Rev. 1.21
+2023-04-30
+
+
+--- page 46 ---
+Table 21 (continued) Diagnostic overview
+Diagnostic Availability in
+Configuration56
+)
+Availability
+in reduced
+operation56
+)
+Availability
+with
+SOFF=low
+Test of
+Diagnosis
+Function
+Failure
+Behavior
+Reference
+CRC error (incoming
+data)
+yes n.a. yes no W66) Chapter 10.5.20
+Invalid Address
+Access
+yes n.a. yes no W66) Chapter 10.5.20
+10.1.1 Diagnosis in Configuration Mode
+All diagnostics and protection features with a configurable failure behavior are in the default state after the INH
+pin is set to High and configuration mode is entered. The ERR pin does not respond to error messages until
+normal operation mode has been entered. The configured failure behavior is activated and the error registers
+are cleared after configuration has been completed successfully. To read out failures that have occurred in
+configuration mode, error registers should be read before sending the configuration signature byte.
+10.1.2 Disabled Functions in Reduced Operation Mode
+In reduced operation mode some diagnostics are disabled. Hence most of the detectors of the diagnosis are
+functional, but readout capability is limited due to deactivated I/O ports.
+10.1.3 Disabled Functions in Safe Off Mode
+In safe off mode most diagnostics are active. The register content of disabled diagnostics will remain
+unchanged, until the device enters normal mode again.
+10.2 Failure Detection Handling
+The TLE9183QK provides high flexibility according to the error handling to support the approach of a
+performance optimized ECU. So most of the diagnosis has the option to be handled either as internal or
+external safety mechanism.
+10.2.1 Failure Flags
+An ERR pin and two failure flags are available to differentiate failure behavior according to the system
+requirements. Additional flags are available for special operation modes and SPI communication errors. For
+details please refer to "TLE9183 Registers".
+Warning Flag
+The warning flag information is the summary of all detected failures for which failure behavior has been
+configured as a warning. All conditions are logically ORed. The warning flag is cleared if the failure has
+disappeared and the dedicated error register has been read out by the µC.
+56 Not subject to production test, specified by design
+66 SPI-Error status flag set in status register
+TLE9183QK
+Bridge Driver IC
+10  Protection and Diagnostics
+Datasheet 46 Rev. 1.21
+2023-04-30
+
+
+--- page 48 ---
+Table 24 (continued) Shutdown Error Overview 67)
+Bit
+Position
+Bit Name Description Output
+Stages
+Charge
+Pumps
+ERR Pin
+1 sd_cp1 Overload at Path Vs Charge Pump Input LE Off (LE) Low (LE)
+0 sd_ddp_stuck Digital Driving Path Output Violation LE Active Low (LE)
+The detection features are provided with configurable failure behaviors. At configuration mode the µC is able
+to program a preferred behavior. In general four different failure behavior can be configured. The detection
+thresholds should be adapted to the system restrictions which shall be below the gate driver IC max. ratings.
+Table 25 Failure Behavior Configuration
+Bit Value Failure Behavior Failure Register Status Bit in SPI
+Frame
+ERR Pin Output Stages
+00 W: Warning Set Warning flag High Not affected
+01 ERR: Error Set Error flag Low Not affected
+10 ARE: Auto Restart
+Error
+Set Error flag Low All external FETs off
+11 LE: Latched Error67) Set Error flag Low (LE) All external FETs off
+The short circuit detection of the external FETs have two more possibilities to configure. Failure behavior
+latched error is divided into three alternative reactions, either latch and all external MOSFETs will be turned off,
+latch and the affected half bridge will be turned off or latch and only the affected output stage will be turned
+off. It is not recommended to adjust auto restart failure behavior for the short circuit detection.
+Table 26 Failure Behavior Configuration for Short Circuit Detection
+Bit Value Failure Behavior Failure Register Status Bit in SPI Frame ERR Pin Output Stages
+000 W: Warning Set Warning flag High Not affected
+001 ERR: Error Set Error flag Low Not affected
+010 ARE: Auto Restart
+Error
+Set Error flag Low All external FETs off
+011 LE: Latched Error67) Set Error flag Low (LE) All external FETs off
+110 LE1: Latched Error67) Set Error flag Low (LE) Affected 2 FETs off
+111 LE2: Latched Error67) Set Error flag Low (LE) Affected FET off
+The failure reaction auto restart and latched error of the high-side buffer capacitor undervoltage monitoring
+differs from the standard failure reaction. If ARE or LE occurs only the affected high-side output stage will turn
+off the external FET .
+Table 27 Failure Behavior Configuration for High-side Buffer Capacitor Undervoltage
+Monitoring
+Bit Value Failure Behavior Failure Register Status Bit in SPI Frame ERR Pin Output Stages
+00 W: Warning Set Warning flag High Not affected
+01 ERR: Error Set Error flag Low Not affected
+67 For fault reaction in combination with reduced operation mode occurrence please refer to Chapter 13.2
+TLE9183QK
+Bridge Driver IC
+10  Protection and Diagnostics
+Datasheet 48 Rev. 1.21
+2023-04-30
+
+
+--- page 49 ---
+Table 27 (continued) Failure Behavior Configuration for High-side Buffer Capacitor
+Undervoltage Monitoring
+Bit Value Failure Behavior Failure Register Status Bit in SPI Frame ERR Pin Output Stages
+10 ARE: Auto Restart
+Error
+Set Error flag Low Affected high-side
+FET off
+11 LE: Latched Error67) Set Error flag Low (LE) Affected high-side
+FET off
+The failure reaction of overvoltage detection at pin VDHP has some particular failure behavior concerning the
+low-side FET failure reaction.
+Table 28 Failure Behavior Configuration for VDHP Overvoltage detection
+Bit Value Failure Behavior Failure Register Status Bit in SPI Frame ERR Pin Output Stages
+000 W: Warning Set Warning flag High Not affected
+001 ERR: Error Set Error flag Low Not affected
+010 ARE: Auto Restart
+Error
+Set Error flag Low All external FETs off
+110 ARE1: Auto Restart
+Error
+Set Error flag Low All high-side FETs off
+011 LE: Latched Error67) Set Error flag Low (LE) All external FETs off
+111 LE1: Latched Error67) Set Error flag Low (LE) All high-side FETs off
+Table 29 Failure Behavior Configuration for Overload Digital Output Pin Detection
+Bit Value Failure Behavior Failure Register Status Bit in SPI Frame ERR Pin Output Stages
+0 ERR: Error Set Error flag Low Not affected
+1 LE: Latched Error67) Set Error flag Low (LE) All external FETs off
+10.2.3 Parallel Failure Occurrence
+Error priority does not exist. All errors will be processed independently and in parallel to each other.
+10.3 Diagnostic Test Functions
+Diagnostic functions which are important for the safety concept or relevant for system integrity are integrated
+with a self-test functionality. In general the functionality of system supervisions, e.g. short circuit detection
+or power supply monitoring shall be testable. Details of the self-test functionality of each supervision are
+described in its dedicated chapter. Self-tests can only be performed in the self-test mode. For safety reasons
+several dedicated SPI commands are required to start the self-test mode. Details of the entry and exit sequence
+are described at Self-test documentation. Only one self-test shall be activated at once. Avoid activating two or
+more self-tests at the same time. The highest priority is 1.
+67 For fault reaction in combination with reduced operation mode occurrence please refer to Chapter 13.2
+TLE9183QK
+Bridge Driver IC
+10  Protection and Diagnostics
+Datasheet 49 Rev. 1.21
+2023-04-30
+
+
+--- page 50 ---
+Table 30 Self-test Functionality and SPI Register Reference
+Reg. Bit Bit Name Self-test Description Priority Reference
+1 7 st_uv_vcc Self-test of VCC check will be initiated 1 Refer to Self-test
+documentation
+1 6 st_scd_hs Self-test of SCD at high-side will be initiated 2 Refer to Self-test
+documentation
+1 5 st_scd_ls Self-test of SCD at low-side will be initiated 3 Refer to Self-test
+documentation
+1 4 Res Reserved - -
+1 3 Res Reserved - -
+1 2 st_hs Drain source voltage measurement of external
+high-side FETs
+5 Chapter 10.5.14
+1 1 st_ls Drain source voltage measurement of external low-
+side FETs
+6 Chapter 10.5.14
+1 0 Res Reserved - -
+2 7 Res Reserved - -
+2 6 en_op3_gt2 Self-test of CSA3 gain test high voltage VSSC_GTIHV
+with gain register op3gain2
+1 Chapter 9.5.1
+2 5 en_op3_gt1 Self-test of CSA3 gain test low voltage VSSC_GTILV
+with gain register op3gain1
+2 Chapter 9.5.1
+2 4 en_op2_gt2 Self-test of CSA2 gain test high voltage VSSC_GTIHV
+with gain register op2gain2
+3 Chapter 9.5.1
+2 3 en_op2_gt1 Self-test of CSA2 gain test low voltage VSSC_GTILV
+with gain register op2gain1
+4 Chapter 9.5.1
+2 2 en_op1_gt2 Self-test of CSA1 gain test high voltage VSSC_GTIHV
+with gain register op1gain2
+5 Chapter 9.5.1
+2 1 en_op1_gt1 Self-test of CSA1 gain test low voltage VSSC_GTILV
+with gain register op1gain1
+6 Chapter 9.5.1
+2 0 en_vreg_op Self-test of CSA and VRO power supplies 7 Chapter 9.5.2
+Table 31 Self-test Functionality and Device Behavior
+Bit Name Description Output Stages Charge Pumps CSAs
+st_uv_vcc Self-test of VCC Active Active Active
+st_scd_hs Self-test of SCD at high-side Active Active Active
+st_scd_ls Self-test of SCD at low-side Active Active Active
+st_hs Drain source voltage measurement of
+external high-side FETs
+Active Active Active
+st_ls Drain source voltage measurement of
+external low-side FETs
+Active Active Active
+en_op3_gt2 Self-test of CSA3 gain test high voltage
+VSSC_GTIHV with gain register op3gain2
+Active Active Affected CSA
+Off
+TLE9183QK
+Bridge Driver IC
+10  Protection and Diagnostics
+Datasheet 50 Rev. 1.21
+2023-04-30
+
+
+--- page 51 ---
+Table 31 (continued) Self-test Functionality and Device Behavior
+Bit Name Description Output Stages Charge Pumps CSAs
+en_op3_gt1 Self-test of CSA3 gain test low voltage
+VSSC_GTILV with gain register op3gain1
+Active Active Affected CSA
+Off
+en_op2_gt2 Self-test of CSA2 gain test high voltage
+VSSC_GTIHV with gain register op2gain2
+Active Active Affected CSA
+Off
+en_op2_gt1 Self-test of CSA2 gain test low voltage
+VSSC_GTILV with gain register op2gain1
+Active Active Affected CSA
+Off
+en_op1_gt2 Self-test of CSA1 gain test high voltage
+VSSC_GTIHV with gain register op1gain2
+Active Active Affected CSA
+Off
+en_op1_st1 Self-test of CSA1 gain test low voltage
+VSSC_GTILV with gain register op1gain1
+Active Active Affected CSA
+Off
+en_vreg_op Self-test of CSA and VRO power supplies Active Active Active
+10.4 LIMP Functionality
+Under certain circumstances it is important to keep the possibility to drive the motor for a short time frame
+even a failure has been occurred and detected at the power inverter stage. The limp functionality offers the
+possibility to deactivate the faulty half bridge. The µC has to decide to set the TLE9183QK in limp mode. It is
+recommended to set the gate driver IC in limp mode only if µC assures that only one half bridge has a defect. In
+limp home mode selected diagnosis will change their failure reaction behavior. Failure registers of the affected
+half bridge will be deactivated and the input signal at the pins ILx and IHx according to the affected half bridge
+will be ignored. The short circuit detection, the high-side buffer capacitor undervoltage monitoring and output
+stage feedback will be ignored.
+10.5 Detailed Supervision Description
+This chapter describes in detail the diagnostics and the protection features of the TLE9183QK.
+10.5.1 Vs Voltage Monitoring
+The Vs supply voltage is monitored (under- and overvoltage detection). The threshold, the error reaction and
+the filter time can be adjusted via SPI.
+Register Err_sd bit 6 indicates overvoltage Vs shutdown and register Err_e bit 3 and bit 2 for undervoltage and
+overvoltage detection at pin Vs.
+Additionally the VS voltage is stored in register res_vs and can be read out via SPI.
+10.5.1.1 SPI Register Reference for VS Supervision
+The overvoltage threshold can be adjusted.
+Table 32 VS Overvoltage Threshold Program
+Bit Name Bit Value Overvoltage Threshold Vs Bit Value Overvoltage Threshold Vs
+tl_ov_vs 0000 (default) 18.00 V 1000 Reserved
+0001 20.13 V 1001 Reserved
+0010 24.09 V 1010 Reserved
+TLE9183QK
+Bridge Driver IC
+10  Protection and Diagnostics
+Datasheet 51 Rev. 1.21
+2023-04-30
+
+
+--- page 52 ---
+Table 32 (continued) VS Overvoltage Threshold Program
+Bit Name Bit Value Overvoltage Threshold Vs Bit Value Overvoltage Threshold Vs
+0011 28.05 V 1011 Reserved
+0100 32.02 V 1100 Reserved
+0101 34.15 V 1101 Reserved
+0110 35.98 V 1110 Reserved
+0111 39.95 V 1111 Reserved
+The undervoltage threshold can be adjusted.
+Table 33 VS Undervoltage Threshold Program
+Bit Name Bit Value Undervoltage Threshold Vs Bit Value Undervoltage Threshold Vs
+tl_uv_vs 0000 4.88 V 1000 7.32 V
+0001 5.18 V 1001 7.62 V
+0010 5.49 V 1010 7.93 V
+0011 5.79 V 1011 8.23 V
+0100 6.10 V 1100 8.54 V
+0101 6.40 V 1101 8.84 V
+0110 6.71 V 1110 9.15 V
+0111 (default) 7.01 V 1111 9.45 V
+The under- and overvoltage filter times can be adjusted.
+Table 34 VS UV/OV Filter Time Program
+Bit Name Bit Value Filter Time Bit Value Filter Time
+f_uv_vs &
+f_ov_vs
+00 (default OV) 10 µs 10 50 µs
+01 (default UV) 25 µs 11 100 µs
+10.5.2 VDHP Voltage Monitoring
+In bridge application monitoring of the supply voltage of the power inverter is indispensable. The voltage at
+pin VDHP is monitored (under- and overvoltage detection). The threshold, the error reaction and the filter times
+can be adjusted via SPI. Two additional failure behaviors for VDHP overvoltage detection can be adjusted, for
+details please refer to Table 28.
+Additionally to the overvoltage detection a maximum overvoltage threshold, the so called overvoltage
+shutdown, is set to signalize the µC that a maximum rating violation might has been occurred at the pin VDHP .
+The failure behavior and the threshold of the shutdown are not adjustable. The shutdown is configured fix as
+a latched error. The charge pumps will be deactivated as long as the error is present. In specific applications
+the overvoltage shutdown at pin VDHP is not beneficial. In this case the overvoltage shutdown VDHP can be
+deactivated via SPI in configuration mode.
+Register Err_e bit 1 and bit 0 indicates undervoltage and overvoltage detection at pin VDHP .
+Additionally the VDHP voltage is stored in register res_vdh and can be read out via SPI.
+TLE9183QK
+Bridge Driver IC
+10  Protection and Diagnostics
+Datasheet 52 Rev. 1.21
+2023-04-30
+
+
+--- page 53 ---
+10.5.2.1 SPI Register Reference for VDHP Supervision
+The overvoltage threshold can be adjusted.
+Table 35 VDHP Overvoltage Threshold Program Table
+Bit Name Bit Value OV Threshold VDHP Bit Value OV Threshold VDHP
+tl_ov_vdh 0000 18.00 V 1000 Reserved
+0001 20.13 V 1001 Reserved
+0010 24.09 V 1010 (default) 56.11 V
+0011 28.05 V 1011 Reserved
+0100 32.02 V 1100 Reserved
+0101 35.98 V 1101 Reserved
+0110 39.95 V 1110 Reserved
+0111 48.18 V 1111 Reserved
+The undervoltage threshold can be adjusted.
+Table 36 VDHP Undervoltage Threshold Program Table
+Bit Name Bit Value UV Threshold VDHP Bit Value UV Threshold VDHP
+tl_uv_vdh 0000 (default) 3.96 V 1000 Reserved
+0001 4.88 V 1001 Reserved
+0010 5.49 V 1010 Reserved
+0011 6.10 V 1011 Reserved
+0100 7.01 V 1100 Reserved
+0101 7.93 V 1101 Reserved
+0110 9.15 V 1110 Reserved
+0111 10.06 V 1111 Reserved
+The under- and overvoltage filter times can be adjusted.
+Table 37 VDHP UV/OV Filter Time Program Table
+Bit Name Bit Value Filter Time Bit Value Filter Time
+f_uv_vdh &
+f_ov_vdh
+00 (default OV) 10 µs 10 50 µs
+01 (default UV) 25 µs 11 100 µs
+10.5.3 Charge Pump Monitoring
+The output voltage of the charge pump 1 is monitored at pin CB, the buffer capacitor connection. The voltage
+regulators for the CSAs and all output stages are connected to the buffer capacitor at the pin CB. Monitoring
+the CB supply voltage for undervoltage events indicates correct behavior of the TLE9183QK supervisions and
+correct control of the external FETs. The detection is operational unless reduced operation mode has been
+entered. The threshold, the error reaction and the filter times of the undervoltage CB detection is adjustable via
+SPI.
+Additionally an undervoltage, overvoltage and overload shutdown is implemented to avoid destructive
+voltages or currents at the gates of the external FETs. The failure behavior and the threshold of the shutdowns
+TLE9183QK
+Bridge Driver IC
+10  Protection and Diagnostics
+Datasheet 53 Rev. 1.21
+2023-04-30
+
+
+--- page 54 ---
+are not adjustable. The undervoltage shutdown is configured fix as an auto restart error and the overvoltage
+shutdown as latched error.
+Register Err_sd bit 4 indicates undervoltage CB shutdown and register Err_i_1 bit 6 for undervoltage detection
+at pin CB.
+Additionally the CB voltage is stored in register res_cb and can be read out via SPI.
+TLE9183QK provides an overvoltage and overload shutdown detection of charge pump 2. The thresholds of the
+shutdowns are not adjustable. For details please refer to Chapter 10.5.3.2.
+10.5.3.1 SPI Register Reference for CB Undervoltage Supervision
+The undervoltage threshold can be adjusted.
+Table 38 CB Undervoltage Threshold Program Table
+Bit Name Bit Value Undervoltage Threshold CB Bit Value Undervoltage Threshold CB
+tl_uv_cb 0000 7.01 V 1000 8.84 V
+0001 7.24 V 1001 (default) 9.07 V
+0010 7.47 V 1010 9.30 V
+0011 7.70 V 1011 9.53 V
+0100 7.93 V 1100 9.76 V
+0101 8.16 V 1101 9.99 V
+0110 8.39 V 1110 10.22 V
+0111 8.61 V 1111 10.44 V
+The undervoltage filter times can be adjusted.
+Table 39 CB UV Filter Time Program Table
+Bit Name Bit Value Filter Time Bit Value Filter Time
+f_uv_cb 00 (default) 10 µs 10 50 µs
+01 25 µs 11 100 µs
+10.5.3.2 Overload and Overvoltage of Charge Pumps
+Both Charge Pumps are overload protected. Overload Vs and Overload CP1 switches off both charge pumps and
+the output stages as latched error.
+Overload CP2 shuts down CP2 but output stage failure behavior is configurable. A reset via ENA is necessary
+for reactivation of charge pump 2. If overload CP2 has been detected duty cycle operation higher than typically
+95% is not recommended and might end up in undervoltage high-side buffer capacitor detection. If charge
+pumps are deactivated the overload detections are not operative.
+All overload detectors are specified to a supply voltage range of VVS ≤ 28 V and VVDHP,VVDHx ≤ 28 V.
+Diagnosis overload CP1 functions is limited, for details please refer to Chapter 14.2.5.
+Register Err_sd bit 1 indicates overload Vs (charge pump input) fault detected, register Err_i_2 bit 4 and bit 3
+indicates overload CP1 and overload CP2.
+Overvoltage at pin CB and at the pins (CH2 - CL2) will be detected. Overvoltage at pin CB switches off both
+charge pumps and the output stages as latched error.
+TLE9183QK
+Bridge Driver IC
+10  Protection and Diagnostics
+Datasheet 54 Rev. 1.21
+2023-04-30
+
+
+--- page 55 ---
+Overvoltage CH2-CL2 shuts down CP2 but output stages remains active. A reset via ENA is necessary for
+reactivation of charge pump 2. If overvoltage CP2 has been detected duty cycle operation higher than typically
+95% is not recommended and might end up in undervoltage high-side buffer capacitor detection.
+Register Err_sd bit 2 indicates overvoltage at pin CB and/or at the pins (CH2 - CL2).
+10.5.4 High-side Buffer Capacitor Voltage Monitoring
+An integrated undervoltage monitoring for the external high-side buffer capacitor ensures a sufficient supply
+for the high-side output stages. Additionally the external high-side FETs are protected not to turn on into linear
+mode if failure behavior is configured either as latched or auto restart error. The high-side buffer capacitor
+voltage will be monitored at pin BHx referred to pin SHx. If the voltage of the high-side buffer capacitor is
+below a certain threshold undervoltage will be detected at the affected output stage. The high-side buffer
+undervoltage threshold is not programmable. The detection is operational unless reduced operation mode has
+been entered.
+An overvoltage monitoring for the external high-side buffer capacitor detects too high gate source voltages for
+the external FET . The failure behavior and filter time are not configurable. In case of an overvoltage detection,
+the ERR pin is set low and the dedicated error bit in the register is set. The 2nd charge pump is deactivated and
+all output stages remain active. A reset via ENA is necessary for the reactivation of the 2nd charge pump. If the
+2nd charge pump is deactivated, an undervoltage high-side buffer detection might occur mainly at operation
+with high duty cycles. The overvoltage monitoring for the external high-side buffer capacitor can be deactivated
+at configuration.
+Overvoltage detection in limp mode behaves different for the selected phase. In case of overvoltage detection
+in limp mode, ERR pin will be set to low and charge pump 2 will be deactivated in latched condition, but the
+dedicated error bit will not be set.
+Register Err_i_2 bit 7, bit 6 and bit 5 indicate an overvoltage condition detected, bit 2, bit 1 and bit 0 indicate an
+undervoltage detection.
+10.5.4.1 Overvoltage Detection of High-side Buffer Capacitor at High
+Negative Voltage at the Pins SHx
+At high negative repetitive transients at pin SHx it may happen that the high-side buffer capacitor will be
+charged repetitively. This repetitive charging may charge the buffer capacitor above the regular output voltage
+of the charge pump 1 or charge pump 2. The charge pump 1 output voltage corresponds to the voltage at pin
+CB. The charge pump 2 output voltage corresponds to the differential voltage between pin CH2 and pin CL2.
+If the charging of the high-side buffer capacitor via the negative transients reaches the overvoltage high-side
+buffer capacitor threshold, overvoltage high-side buffer capacitor will be detected. The voltage level of the
+high-side buffer capacitor in the case of negative transient is defined by the output voltages of the charge
+pumps, the voltage at the high-side buffer supply capacitor, the min. voltage and the duration of the negative
+SHx transients and the internal as well as the external resistance of the high-side buffer capacitor charging
+path. For more details please contact Infineon.
+10.5.4.2 SPI Register Reference for High-side Buffer Capacitor UV Monitoring
+The undervoltage filter times can be adjusted.
+Table 40 High-side Buffer Capacitor UV Filter Time Program Table
+Bit Name Bit Value Filter Time Bit Value Filter Time
+f_uv_bs 00 1 µs 10 (default) 5 µs
+01 3 µs 11 10 µs
+TLE9183QK
+Bridge Driver IC
+10  Protection and Diagnostics
+Datasheet 55 Rev. 1.21
+2023-04-30
+
+
+--- page 56 ---
+10.5.5 VCC Monitoring
+To assure a high level of system integrity, the TLE9183QK provides a VCC check. The VCC voltage is monitored
+for under- and overvoltage. The threshold are configurable and it can be applied to a 3.3 V or as well to a 5 V
+system supply. If system supply monitoring is not required it can be deactivated. The failure behavior of the VCC
+monitoring is configurable.
+The failure behavior of the VCC Monitoring can be configured as warning, error, auto-restart and latch. Next to
+the standard failure behavior the VCC monitoring can activate the APC pin. For details of the activation of phase
+cut off function please see Chapter 12.
+Register Err_e bit 5 and bit 4 indicate an overvoltage and undervoltage at pin VCC.
+Additionally the VCC voltage is stored in register res_vcc and can be read out via SPI.
+10.5.5.1 SPI Register Reference for VCC Supervision
+The under- and overvoltage filter times can be adjusted.
+Table 41 VCC Filter Time Program Table
+Bit Name Bit Value Filter Time Bit Value Filter Time
+f_uv_vcc &
+f_ov_vcc
+00 10 µs 10 50 µs
+01 (default) 25 µs 11 100 µs
+The under- and overvoltage threshold can be adjusted.
+Table 42 VCC Threshold Level Accuracy Program Table
+Bit Name Bit Value Threshold Level Bit Value Threshold Level
+tl_uv_vcc &
+tl_ov_vcc
+00 Reserved 10 10% of initialized sys. supply
+01 (default) 4% of initialized sys. supply 11 Reserved
+10.5.6 Internal Power Supply Monitoring
+Internal power supplies will be monitored and are indicated via the register Err_i_1 bit 5 to bit 0. Bit 5 or bit
+1 indicates a reduced operation mode event either at pin VCC or at pin Vs. If reduced operation mode occurs
+caused by too low Vs voltage bit 5 and bit 1 are set. Reduced operation mode by too low VCC voltage sets
+bit 1 only. The failure behavior is auto restart. Bit 4, bit 3 and bit 2 indicate an internal failure with an auto
+restart failure behavior. The failure behavior of bit 0 is latched error, a reset via pin INH has to be performed and
+re-configuration is required, in this case a reset via pin ENA is not recommended.
+10.5.7 Internal CLK Supervision
+The internal clock frequency will be monitored. An error bit will be set and the external FETs are turned off as
+long as the fault is present. The error bit triggers the status flag error and warning.
+Register Err_sd bit 3 indicates an internal clk fault.
+10.5.8 Temperature Detection and Shutdown
+The TLE9183QK is equipped with temperature monitoring. If the temperature rises above the configurable
+temperature threshold a failure condition is set. The reaction of the overtemperature detection is configurable
+as well. However if the temperature exceeds the overtemperature shutdown threshold all output stages and
+the charge pumps will be switched off independent on the input signals and pin ERR is set to low. The
+overtemperature shutdown threshold is fix.
+TLE9183QK
+Bridge Driver IC
+10  Protection and Diagnostics
+Datasheet 56 Rev. 1.21
+2023-04-30
+
+
+--- page 57 ---
+Register Err_sd bit 7 indicates an overtemperature shutdown, register Ser bit 7 an overtemperature detection.
+The SPI status flag Special Event will be set and dependent on the configured fault behavior either SPI status
+flag Error or the SPI status flag Warning.
+In case of overtemperature shutdown detection fast discharging path at pin CB is not activated.
+10.5.8.1 SPI Register Reference for Overtemperature Detection
+The overtemperature detection threshold and the failure behavior are configurable.
+Table 43 Overtemperature Detection Threshold Level
+Bit Name Bit Value Overtemperature
+Threshold
+Bit Value Overtemperature
+Threshold
+tl_ot_w 000 160°C 100 (default) 140°C
+001 155°C 101 135°C
+010 150°C 110 130°C
+011 145°C 111 125°C
+10.5.8.2 Temperature Read Out
+The absolute temperature can be read in the related SPI register in steps of TTread_step per LSB.
+Six sensors are integrated monitoring all output stages. So the temperature of every output stage can be read
+out. The signal is filtered with a moving average filter. After transition from configuration mode to normal
+operation mode it is required to wait 1 ms before first temperature readout will be performed. A significant
+higher temperature at one output stage with a regular PWM pattern applied will indicate some irregularities
+at the affected output stage, either internally or caused by external circuit. The six temperature sensors are
+independent to the sensor used for temperature detection and shutdown.
+Measurement results are stored in the registers called temp_ls1, temp_ls2, temp_ls3, temp_hs1, temp_hs2 and
+temp_hs3.
+10.5.9 Output Stage Status Feedback
+The driver output stage feedback function provides information that each floating output stage is functional
+and signal path between the input pin and the output of the output stage is not corrupted. This function
+compares the level of the input pin to the switching condition of its dedicated output stage. If the levels do not
+correspond a failure will be detected.
+Register Err_osf bit 7 to bit 2 indicate an output stage feedback fault has occurred.
+10.5.10 Digital Driving Path Monitoring
+The digital driving path monitoring tracks the output signals of the digital core which will drive the output
+stages. Monitoring the digital output signals will detect in the digital core stucked signal wires or shorts
+between the signals of each half bridge.
+Register Err_sd bit 0 indicates a shutdown of the digital driving paths.
+10.5.11 Short Circuit Detection - SCD
+The external FETs controlled by the driver IC are supervised for short circuit. The short circuit detection SCD
+measures the drain source voltage of the external MOSFETs by detecting the voltage difference VDHxVDHP-SHx
+and SHx-SLx compared to the programmed voltage level. The short circuit detection can be configured in
+TLE9183QK
+Bridge Driver IC
+10  Protection and Diagnostics
+Datasheet 57 Rev. 1.21
+2023-04-30
+
+
+--- page 58 ---
+a wide range. The threshold levels, the filter-, blanking times and the failure behavior are adjustable. Two
+additional failure behaviors can be adjusted, for details please refer to Table 26. Short circuit will not be
+detected if a duty cycle range at the external FET is applied which is shorter than the SCD filter- and the
+SCD blank time70). Short circuit detection is operational as long as no undervoltage of the high-side buffer
+capacitors is detected.
+Register Err_scd bit 7 to bit 2 indicate a short circuit at the external FET has occurred.
+GLx
+Vdsglx
+Error Flag (SPI Status bit)
+Short Circuit
+tSCDfilter
+ILx
+Normal behavior
+Latched error
+Normal behavior
+tSCDblank
+SCD threhold
+Figure 15 Timing Diagram Short Circuit Detection at Low-side Output Stage
+10.5.11.1 SPI Register Reference for SCD Voltage Threshold
+The SCD voltage threshold is configurable for each output stage. Configuration of negative thresholds levels
+shall be avoided under normal operation condition. Applying the threshold 0xEE will activate the short circuit
+detection if the affected output stage is turned on, the blank- and filter time has expired and no current
+is freewheeling via the affected FET . Thus it is recommended to apply only positive values for short circuit
+threshold levels. Configuration with the maximum positive threshold will deactivate the short circuit detection.
+The voltage must be higher than the adjusted threshold level for short circuit detection. Max. level of 0x7F will
+deactivate short circuit detection.
+Table 44 SCD Threshold level
+Bit Name Bit Value Short Circuit Threshold Level
+sc_Xs_X 0x01 11.7 mV
+0x02 23.4 mV
+0xXX 11.7 mV*X
+0x1A (default) 304 mV
+0x7E 1.472 V
+0x7F  > 1.472 V71)
+The SCD filter- and blank time can be adjusted.
+70 E.g.: tSCDf = 2.0 µs; tSCDb = 1.0 µs; fPWM = 20 kHz; tFETonw/oSCD < tSCDx;
+D.C.FETonw/oSC < tFETonw/oSCD/tPWM = 3.0 µs/(1/(20 kHz) = 6.0%
+71 applying 0x7F will deactivate the short circuit detection
+TLE9183QK
+Bridge Driver IC
+10  Protection and Diagnostics
+Datasheet 58 Rev. 1.21
+2023-04-30
+
+
+--- page 59 ---
+Table 45 SCD Filter Time
+Bit Name Bit Value Filter Time
+f_fi_scd 00 1.25 µs
+01 2.0 µs
+10 (default) 3.8 µs
+11 5.8 µs
+Table 46 SCD Blank Time
+Bit Name Bit Value Blank Time
+f_bl_scd 000 0.7 µs
+001 1.0 µs
+010 1.5 µs
+011 (default) 2 µs
+100 3.5 µs
+101 5 µs
+110 10 µs
+111 15 µs
+10.5.12 FET Drain Source Voltage Read Out
+The drain source voltage of the external FETs can be read out. A dedicated SPI command has to be sent to
+detect voltage drop across the FET . If FET is marked the voltage drop will be stored into a register at the next
+turn on cycle of the dedicated FET . If turn on cycle is too short or the read-out via SPI was too early to detect the
+voltage drop 0x80 will be written into the register. High-side and low-side FET can not be marked at the same
+time. High-side measurement will have priority.
+FET drain source voltage read out shall only be performed if the dead time configured by the µC is higher as the
+internal dead time.
+Measurement results are stored in the registers called dsm_ls1, dsm_ls2, dsm_ls3, dsm_hs1, dsm_hs2 and
+dsm_hs3.
+10.5.13 FET Reverse Diode Forward Voltage Read Out
+The FET diode forward voltage of the external FETs can be read out. A dedicated SPI command has to be sent
+to detect voltage drop across the reverse diode of the FET . The FET has to be marked via SPI. At the next turn
+off cycle of the complementary FET of the same half bridge the dead time will be extended until the end of
+measurement and the voltage drop will be detected and stored into a register. If turn on cycle is too short or
+the read-out via SPI was too early to detect the voltage drop 0x7F will be written into the register. The accuracy
+of the measurement can be programmed. The sample time of high accuracy measurement is longer than
+the low accuracy measurement. High-side and low-side FET can not be marked at the same time. High-side
+measurement will have priority.
+FET reverse diode voltage read out is limited and shall only be performed if the dead time configured by the µC
+or the internal dead time is higher than 800 ns (typ. 400 ns), please refer to Chapter 14.2.7 and Chapter 14.2.8.
+Measurement results are stored in the registers called Rdm_ls1, Rdm_ls2, Rdm_ls3, Rdm_hs1, Rdm_hs2 and
+Rdm_hs3.
+TLE9183QK
+Bridge Driver IC
+10  Protection and Diagnostics
+Datasheet 59 Rev. 1.21
+2023-04-30
+
+
+--- page 60 ---
+10.5.14 Drain Source Voltage Measurement of External FETs
+In self-test mode the drain source voltage of the external FETs can be measured. Two dedicated bits have to be
+set one for all high-side FETs measurements and the other for all low-sides. All high-side voltages or all low-side
+voltages are detected at the same time. It is recommended to keep the external FEts off if self-test is activated.
+After the drain source voltage has been detected the self-test bits will be self-cleared.
+Measurement results are stored in the registers called dsm_ls1, dsm_ls2, dsm_ls3, dsm_hs1, dsm_hs2 and
+dsm_hs3.
+10.5.15 Input Pattern Violation Monitoring
+A monitoring of the PWM input pins has been integrated to check if the output pattern of the µC violates the
+shoot through restriction or the adjusted dead time for a minimum filter time. A dedicated failure bit is set
+indicating the affected output stage. Failure behavior is adjustable via SPI during configuration. If not needed
+the input pattern monitoring can be deactivated in the configuration mode. Additionally the supervision should
+be deactivated if the input pins between low- and high-side IHx to ILx are connected together and internal dead
+time is used for dead time generation.
+Register Err_indiag bit 7 to bit 2 indicate a shoot through or a dead time violation has been occurred.
+10.5.16 Overload Digital Output Pins
+The digital outputs are protected against short to GND and battery. If one output is shorted the output pad
+will be disconnected, a dedicated error register bit will be set. The pin ERR will be set to low in case ERR is not
+the affected pin. To unlock the output pin reset with ENA has to be performed. The failure behavior of the gate
+driver IC is adjustable at configuration mode, either the output stages will turn all external FETs off or not.
+Functionality of the overload detection of the digital output pins is limited, for details please refer to Chapter
+14.2.6.
+Register Err_outp bit 4 to bit 0 indicate a short of a digital output pin.
+10.5.17 Configuration Errors
+The configuration mode and the data of the configuration registers are monitored. After Configuration has been
+completed successfully the configuration register bank will be checked by a CRC.
+10.5.17.1 Configuration Signature Invalid
+The configuration register bank will be monitored with a CRC during normal operation-, reduced operation-,
+self-test-, error- and safe off mode. A CRC check will be performed every 5 ms. In case of calculated CRC does
+not match to the byte configuration signature the flag config valid of the SPI status flags will be reset and the
+configuration register bank or the CRC signature byte will be restored. After successful recovery the config valid
+flag of the SPI status flags will be set. If the calculated CRC of the rebuild fails too ERR pin will be set and
+the output stages will be switched off. To get out of configuration signature invalid error the µC has to rewrite
+a valid CRC into the register configuration signature or a reconfiguration sequence might be possible. A reset
+performed by INH will initiate reconfiguration.
+Bit 6 Bit 5 +
+1*X^8       +             0*X^7             +             1*X^6             +             0*X^5              +
++ Bit 3
+0*X^4         +             1*X^3             +             1*X^2             +             0*X^1               +
+Bit 4 Bit 2 + Bit 1 +Bit 0
+1*X^0
+Bit 7
+Figure 16 CRC Shift Registers
+The CRC generator polynomial x^8+x^6+x^3+x^2+1 is used for calculation.
+TLE9183QK
+Bridge Driver IC
+10  Protection and Diagnostics
+Datasheet 60 Rev. 1.21
+2023-04-30
+
+
+--- page 61 ---
+Table 47 Configuration Truth Table
+Status Bit Name Flag Status Description
+Config Valid 0 Configuration signature invalid
+1 Configuration signature valid
+At configuration mode the status bit is always low. If the calculated configuration CRC does not match to
+configuration signature byte sent by the µC the error bit conf_sig_invalid and the flag error of the status flag will
+be set. So µC can resend signature byte via SPI unless configuration time-out has not been detected.
+10.5.17.2 Configuration Time-out
+Activating the configuration mode will start a 100 ms timer. The configuration timer starts after pin INH is set
+to high and the first valid SPI configuration write command has been received. If the correct configuration
+signature has not been sent by the µC yet and the timer exceeds configuration time-out will be detected. Bit
+config time out and the flag error of the SPI status flag will be set. Only a reset performed by INH can reset the
+configuration time-out.
+10.5.18 Control Register Error Monitoring
+The control register bank is protected against bit errors. Every control register has an error correction based on
+hamming code. 1 bit error per register is detected and corrected automatically without notification. The control
+register invalid bit will be set if the correction of a single bit error fails for 16 clock cycles. 2 bit errors will be
+detected and the control register invalid bit is set after 16 clock cycles.
+Register Ser bit 5 indicates a if control register is invalid.
+10.5.19 State Machine Error Monitoring
+A special detection and correction function is integrated to protect the internal state machines against
+unmotivated state changes. 2oo3 voters are implemented at every bit of the main functional state machine,
+power up functional state machine, clock trimming and the configuration OK bit.
+10.5.20 SPI Communication Errors
+For a safe SPI communication several communication diagnostics are required. Every SPI failure has its own
+bit in the register SPI Communication and Configuration Error. The detections SPI framer error, SPI time-out,
+SPI CRC error and the invalid address monitoring are logic ORed and highlighted in the status flag SPI-Error.
+Configuration signature invalid, SPI window watchdog and configuration time-out will trigger the error flag of
+the SPI status flag instead. For details please refer to TE9183 registers.
+Table 48 SPI Error Truth Table
+Status Bit Name Flag Status Description
+SPI-Error 0 No failure in register SPI Communication and Configuration Errors
+1 SPI Communication failure detected
+10.5.20.1 SPI Frame Error
+A counter checks, if exact 24 rising and 24 falling clock edges are received between the negative edge of CSN
+and the positive edge of CSN. In case the number is not equal to 24, the data is discarded. No data is taken over
+TLE9183QK
+Bridge Driver IC
+10  Protection and Diagnostics
+Datasheet 61 Rev. 1.21
+2023-04-30
+
+
+--- page 62 ---
+into the address and command decoder. At the next data transmission the data stored in the shift register is
+transmitted again.
+10.5.20.2 SPI Frame Time-out
+In addition to the frame counter a time-out function is included in the frame supervision. In case the rising edge
+of CSN won’t come in time SPI-Time-out is detected.
+A timer starts at the falling edge of CSN. If the 24 clock cycles and the CSN rising edge is not received within
+tSPI-timeout, the dedicated error bit and status flag SPI-Error will be set.
+10.5.20.3 SPI Window Watchdog
+The purpose of the window watchdog is the improvement of the system integrity. With this function the
+availability of the external µC can be checked and if it fails a configurable failure behavior will be executed by
+the TLE9183QK.
+Three separated counters are available. The window watchdog period counter determines the period of the
+watchdog window itself. The window watchdog counter counts the internal clk cycles between the two SPI
+commands triggering the watchdog. The loop counter counts failed or missed servicing SPI commands. The
+result of the loop counter and the clock counter is stored in the registers wwlc, res_cc1, res_cc2 and res_cc3.
+The first incorrect service command will cause the SPI Window Watchdog error. The error bit is cleared after a
+correct service command will be sent.
+After the driver IC has been configured successfully the 24 bit the loop counter and the period timer start
+from 0. It can be serviced while the counter value of the period counter is within the window boundary. The
+boundary conditions are fully configurable, like the absolute value of the window watchdog period TWWD and
+the ratio between the window watchdog period and locked window TLW/TWWD. A correct SPI read command
+of the configuration signature byte during evaluation window is open is a successful servicing of the watchdog
+timer. The period counter will be restarted and the loop counter will be decremented by 1. At the same time
+the final value of the clock counter will be stored into the registers watchdog clock counter and the clock
+counter will automatically restarted. If servicing failed, by reading during locked window, a wrong or no read
+SPI command has been sent during complete window watchdog period the period counter will be restarted
+and the loop counter will be incremented by 2. As soon as the first service fails the bit SPI window watchdog
+time-out will be set. The limit of the loop counter can be configured as well at configuration mode. If the loop
+counter reaches the configured limit the configured fault reaction behavior will be executed.
+The failure behavior of the window watchdog can be configured as warning, error, auto-restart and latched
+error.
+Next to the standard failure behavior the window watchdog failure can activate the APC pin. For details of the
+activation of phase cut off function please see Chapter 12.
+If the SPI window watchdog function is not requested it has to be deactivated at configuration.
+Figure 17 Window Watchdog Timing
+10.5.20.3.1 SPI Register Reference for Window Watchdog
+The window watchdog functionality is configurable.
+TLE9183QK
+Bridge Driver IC
+10  Protection and Diagnostics
+Datasheet 62 Rev. 1.21
+2023-04-30
+
+
+--- page 63 ---
+Table 49 Window Watchdog Period Counter TWWD
+Bit Name Bit Value Period Bit Value Period
+wwd_tp 00 1 ms 10 (default) 5 ms
+01 2 ms 11 10 ms
+Table 50 Window Watchdog Ratio TLW/TWWD
+Bit Name Bit Value Ratio Bit Value Ratio
+wwd_ratio 000 50% 100 80%
+001 60% 101 (default) 90%
+010 70% 110 92%
+011 75% 111 95%
+Table 51 Window Watchdog Loop Counter
+Bit Name Bit Value Activation Threshold Bit Value Activation Threshold
+wwd_count 000 2 100 10
+001 4 101 12
+010 6 (default) 110 14
+011 8 111 16
+The value of the window watchdog loop counter can be read at register wwlc.
+Table 52 Result of Window Watchdog Clock Counter
+Reg. Name Description
+res_cc1 Low Byte of internal clock counter
+res_cc2 Middle Byte of internal clock counter
+res_cc3 High Byte of internal clock counter
+The window watchdog clock counter read out registers store the number of clk cycles between two SPI.
+10.5.20.4 CRC Error
+The CRC is a 3 bit CRC related to the data sent out or received over the whole SPI frame including address, data
+and status. If CRC fails status flag SPI-Error is set, CRC error is detected and the invalid received data will be
+ignored.
+10.5.20.5 Invalid Address Access Monitoring
+In case of the SPI Master tries to access any reserved read or write register, the command or request will be
+ignored and the SPI-Error status flag is set. Once Configuration mode has been left any write command into the
+configuration register bank will lead to an invalid address error. A write access to self-test mode registers in any
+mode except self-test mode will lead to an invalid address access error.
+TLE9183QK
+Bridge Driver IC
+10  Protection and Diagnostics
+Datasheet 63 Rev. 1.21
+2023-04-30
+
+
+--- page 71 ---
+Table 53 (continued) Electrical Characteristics - Protection and Diagnostic Functions
+VS = 5.5 V to 40 V, Tj = -40°C to +150°C, all voltages with respect to GND, positive current flowing into pin (unless
+otherwise specified)
+Parameter Symbol Values Unit Note or Test
+Condition
+Number
+Min. Typ. Max.
+Detection Threshold Short to
+Supply78)
+VOPOLL 0.5 – – V Output pin = Low
+Short to any
+voltage
+P_11.6.96
+Filter and Reaction Time75) tOPf – 4 – µs – P_11.6.97
+Configuration Supervision
+Configuration Time-out73) tcfg-timeout – 100 – ms – P_11.6.98
+SPI Supervisions
+SPI-Frame Time-out73) tSPI-timeout 35 – – µs – P_11.6.99
+SPI WIndow Watchdog Period73) tWWD 1 – 10 ms 4 steps
+programmable
+P_11.6.100
+SPI Window Watchdog Ratio tWWDratio 50 – 95 % 8 steps
+programmable
+P_11.6.101
+SPI Window Watchdog Loop
+Counter
+tWWDLC 2 – 16 # 8 steps
+programmable
+P_11.6.102
+Timing Error Handling
+Fault Reaction Time75) tFRT 20 – 500 ns – P_11.6.103
+ENA Low Time Threshold for
+Clearing Latched Errors
+tclear 2.2 3.0 3.8 µs ENA falling edge P_11.6.104
+Return Time to Normal
+Operation for ARE Fault Behavior
+Configuration73)
+tRT – – 1.0 µs – P_11.6.106
+Extension Time Fault Signaling at
+Pin ERR73)
+text – 10 – µs – P_11.6.107
+78 For details please refer to Chapter 14.2.6
+75 Not subject to production test, specified by design
+73 Internal clock frequency accuracy has to be added to the specified values, please see Chapter 6.2
+TLE9183QK
+Bridge Driver IC
+10  Protection and Diagnostics
+Datasheet 71 Rev. 1.21
+2023-04-30
+
+
+--- page 75 ---
+13 Operation Modes
+This chapter describes the different operation modes. The register indicates which operation mode is currently
+active.
+Reduced 
+Operation 
+Mode
+Safe Off 
+Mode
+Normal 
+Operation 
+Mode
+Error Mode
+Self Test 
+Mode
+Config. 
+Mode
+INH_N=’1'  
+Vs>V
+VsROP 
+& VCC>V
+VCCROP
+Config. Lock flag=’1'
+1*
+2
+First valid SPI write command into conf. 
+register
+INH_N=’1'  
+Vs>5.5V & VCC>V
+VCCROP
+ 
+Config. flag=’0'ERR_N=’0'
+INH_N=’1'
+ Vs>5.5V & VCC>3.0VConfiguration successful
+SOFF_N=’1' ERR_N=’1'Self test flag =’0’
+ERR_N=’0'
+ERR_N=’1'
+Enter self test sequence  
+Exit self testsequence
+1
+1
+1
+INH_N=’0’
+ERR_N=’0'
+2
+2
+1
+2
+2
+INH_N=’1'
+ Vs>5.5V & VCC>V
+VCCROP
+SOFF flag=’1'
+INH_N=’1’
+Vs>5.5V
+Configuration 
+time out
+SOFF_N=’1'ERR_N=’0'
+Self test flag =’0’
+SOFF_N=’0'
+1
+SOFF_N=’0'
+SOFF_N=’0'
+SOFF_N=’0'
+2
+Vs>5.5V & VCC>V
+VCCROP
+ 
+ERR_N=’0'1: INH_N=’0' via idle mode to sleep mode
+2: Vs<VVsROP OR VCC<VVCCROP to ROP mode
+*: VCB > VCBUVSD, additional information in Application
+Note Z8F65543081
+INH_N=’1'
+Vs>5.5V & VCC>VVCCROP 
+Config. flag=’1'
+Config. 
+Lock Mode
+INH_N=’0’
+Sleep 
+Mode
+Vs>VVsWU
+VCC > VVCCROP  
+INH_N=’1';
+INH_N=’0’
+Idle 
+Mode
+SOFF_N=’1' Self test flag =’1’
+2
+Figure 19 Overview of Digital Operation Modes
+13.1 Normal Operation Mode
+In normal operation mode all functions and all diagnostics are available. If no error conditions are detected, the
+output drivers will follow the signals provided at the digital inputs of the TLE9183QK.
+13.1.1 Driving Mode
+If no error conditions are detected, the output drivers follow the signals provided at the digital inputs of the
+TLE9183QK. All protection and diagnosis features are working as specified.
+13.1.2 Limp Mode
+The option to go into to limp mode is available only if enabled in configuration mode before. If TLE9183QK is in
+limp mode bit 1 in Ser is set. For detailed description of limp mode please refer to Chapter 10.4.
+TLE9183QK
+Bridge Driver IC
+13  Operation Modes
+Datasheet 75 Rev. 1.21
+2023-04-30
+
+
+--- page 76 ---
+Operation modes1)
+Limp Mode
+Set bit limp_act inregister Conf_gen_1
+Config.Mode
+Send SPI Data “x E8”to register Li_ctr
+1): Operation modes includes normal operation -, error- and safe off - mode
+Send SPI Data “x 12” to register Li_ctrto enter limp modeand to deactivate- HB1 send “xD1”- HB2 send “xB2”- HB3 send “x74”
+Figure 20 LIMP Mode Enter and Exit Sequence
+13.2 Reduced Operation Mode
+In the reduced operation mode the logic is operational. So digital registers keep their states and supervision
+functions don’t stop. However the I/Os are not properly supplied and therefore SPI communication does not
+work. All digital pins are disabled and the output stage of the operational amplifier is not supplied. At transition
+from reduced operation mode to normal operation all latched errors will be cleared. After reduced operation
+mode of VCC has been ended, an ENA reset has to be performed to release output pin overload detection which
+might be detected unintentionally. If TLE9183QK has been in reduced operation mode bit 0 in Ser is set.
+13.3 Sleep Mode
+If the INH pin is set to low the internal power down sequence will be initiated. After detection of the low
+transition changes at the INH pin will be ignored until the sleep mode has been reached. The gate driver IC
+will enter sleep mode after undervoltage shutdown at pin CB has been detected. First the INH pin switches off
+the external FETs actively with the output stages. The undervoltage shutdown at pin CB will be checked after
+the internal blocks – output stages, OPAMPs, internal 5 V voltage regulator, charge pumps, PFB blocks, output
+stages logic blocks and SCD blocks – are switched off. Afterwards the remaining clocks, the VCC supervision, all
+digital pads, the temperature sensors and the HV ADC will be deactivated. Then the digital core will be reset and
+the internal 3.3 V and 1.5 V regulators will be deactivated. If the charge pump and high-side buffer capacitors
+are discharged the gate of the external FET will be clamped to its source with an internal passive clamping
+circuit. Once set to sleep mode the TLE9183QK has to be reconfigured.
+13.4 Idle Mode
+Idle mode is entered via sleep mode. After Vs is applied and the INH pin is set to high, the internal logic
+is operational and power up is initiated. As soon as ERR pin is high the digital ports are supplied and the
+TLE9183QK is ready for configuration.
+TLE9183QK
+Bridge Driver IC
+13  Operation Modes
+Datasheet 76 Rev. 1.21
+2023-04-30
+
+
+--- page 77 ---
+13.5 Configuration Mode
+The TLE9183QK has to be configured. Failure behavior, diagnosis thresholds and filter times have to be
+adjusted at configuration mode. The configuration mode will be entered from idle mode if the first valid SPI
+write command into the configuration registers has been received. As soon as the first valid SPI command has
+been received the configuration timer starts and the ERR pin is set to low. If the configuration is completed
+successfully the gate driver IC will enter normal operation mode automatically. Entering normal operation
+mode resets all errors and error filters. The correct configuration signature byte has to be sent to enter normal
+operation mode before the configuration timer has elapsed. The calculation if the transmitted configuration
+signature byte matches to the correct internal CRC8 requires max. 1.2 µs. After 1.2 µs the SPI status flag bit 3 is
+set to high. If no changes of default values of the configuration registers are required the default configuration
+signature shall be sent to enter normal operation mode directly. A transition to reduced operation mode
+will stop the configuration and the configuration timer. As soon as the external supply voltage recovers
+configuration mode will be entered again and the configuration timer will be reset.
+13.6 Configuration Lock Mode
+If configuration timer expires the TLE9183QK will pass from configuration mode to configuration lock mode. A
+reset via INH has to be performed to restart configuration.
+13.7 Safe-Off Mode
+If SOFF is set to low the output stages will turn off the external MOSFETs independent on the input signal at the
+pins IHx and ILx. SPI interface and the CSAs are still working. For details concerning the availability of diagnostic
+features refer to Chapter 10.1.
+13.8 Error Mode
+As soon as the ERR pin is low the driver IC enters the error mode. A supervision which has been configured as
+warning, will not lead into error mode if the failure condition of the supervision is met. Leaving the error mode
+depends on the adjusted failure behavior during configuration mode. Supervisions adjusted as latched error
+need a reset by the ENA pin. ARE or ERR failures will stay in error mode as long as the failure occurs and will
+leave the error mode automatically if the error is not present anymore.
+13.9 Overview of Operation Modes and Transition States
+Table 56 Operation Modes
+Mode Comment Logic Power
+Supply
+Output
+Stages
+Shunt Signal
+Conditioning
+Diagnosis SPI
+Access
+ERR Pin
+Normal
+Operation
+ENA = INH = SO
+FF = High;
+Power-up
+successful
+Operation
+as
+specified
+Operation
+as specified
+Operation
+as
+specified
+Operation as
+specified
+All
+available
+Yes High
+TLE9183QK
+Bridge Driver IC
+13  Operation Modes
+Datasheet 77 Rev. 1.21
+2023-04-30
+
+
+--- page 78 ---
+Table 56 (continued) Operation Modes
+Mode Comment Logic Power
+Supply
+Output
+Stages
+Shunt Signal
+Conditioning
+Diagnosis SPI
+Access
+ERR Pin
+Reduced
+Operation
+INH = High and
+Vs < VVsROP or
+VCC < VVCCROP79
+)
+ENA = SOFF = X
+Digital
+core
+operative,
+no loss of
+Config.
+data
+Operation
+as specified
+or off80)
+Outputs
+active off
+-> passive
+clamping
+CSAs off,
+outputs low
+See Table
+21
+No Low
+(passive)
+Sleep INH = Low or
+VS < 3 V;
+ENA = SOFF = X
+Digital
+core off,
+loss of
+data
+Off, caps
+are
+discharging
+Outputs
+active off
+->  passive
+clamping
+CSAs off,
+outputs low
+None No Low
+(passive)
+Idle INH = High and
+Vs > VVsWU and
+VCC > VVCCROP;
+ENA = SOFF = X
+Digital
+core
+operative
+Operation
+as specified
+Outputs
+active off
+Operation as
+specified
+See Table
+21
+Yes High
+Config-
+uration
+INH = High and
+first valid SPI
+write access
+into config.
+register;
+ENA = SOFF = X
+Operation
+as
+specified
+Operation
+as specified
+Outputs
+active off
+Operation as
+specified
+Depends
+on default
+setting
+Yes Low
+Config-
+uration
+lock
+INH = High and
+configuration
+timer expired;
+ENA = SOFF = X
+Operation
+as
+specified
+Operation
+as specified
+Outputs
+active off
+Operation as
+specified
+Depends
+on default
+setting
+Yes Low
+Safe Off INH = High and
+SOFF = Low;
+ENA = X
+Operation
+as
+specified
+Operation
+as specified
+Outputs
+active off
+Operation as
+specified
+See Table
+21
+Yes Low/
+High81)
+Error INH = SOFF =
+ENA = High and
+error detected
+Operation
+as
+specified
+Operation
+as specified
+Depends
+on failure
+reaction
+Operation as
+specified
+All
+available
+Yes Low
+Self-test INH = SOFF =
+ENA = High and
+entry by SPI
+command
+depends
+on
+dedicated
+self test
+Depends on
+dedicated
+self test
+depends
+on
+dedicated
+self-test
+Depends on
+dedicated
+self test
+See Table
+21
+Yes Result of
+self-test
+79 If reduced operation mode occurs caused by too low Vs voltage bit 5 and bit 1 of register 0x43 is set. Reduced operation mode by
+too low VCC voltage sets bit 1 only
+80 If Vs drops too low the charge pumps turn off
+81 Depends if fault has been detected or not
+TLE9183QK
+Bridge Driver IC
+13  Operation Modes
+Datasheet 78 Rev. 1.21
+2023-04-30
+
+
+--- page 80 ---
+sleep 
+mode
+idle
+mode
+VCC>VVCCROP
+Vs>VVsWU
+set Pins ENA & SOFF_N= ‘0‘1) set Pin INH_N=‘1‘
+(if voltage at VDHx is below 4V, PFBx pin shorted error 
+may be detected)
+conf. 
+mode 
+(timer 
+starts)
+normal  mode
+(error bits are 
+cleared)5)
+configuration timer elapsed?
+conf.
+lock
+mode
+pin
+ERR_N=`1`
+?
+read all error registers and special event register twice3) 
+(addr 0x42 – 0x4D) and operation mode (addr 0x40)7)
+device configuration with valid SPI write access to one 
+of the configuration registers
+µC
+TLE9183
+ENA reset
+overload or
+overtemperature error bit set? (err_cp1, 
+err_cp2, sd_cp1, sd_ot)
+set pins INH_N & ENA 
+& SOFF_N=‘0‘
+write to remaining configuration registers, finalized by 
+writing valid configuration signature to register at addr 
+0x0
+SPI communication ok?2) 
+e.g. CRC3 in MISO frames valid?
+read „No Operation“ register at addr 0x32,
+do NOT read error registers
+wait min. 5 ms
+ENA reset
+no
+wait min. 5 ms
+previous_spi_fail
+==true?
+yes
+read „Shutdown errors“ register at addr 0x46
+CB voltage below the 
+sd_uv_cb shutdown 
+threshold?
+yes
+yes
+no
+no
+yes
+yes
+yes
+no
+any unacceptable error bits set? 6)yes
+no
+wait min. 500 us
+yes
+sd_uv_cb (bit #4 in register 0x46) set?
+no
+yes 4)
+read all error registers and special event register twice3)  
+(addr 0x42 – 0x4D) and operation mode (addr 0x40)7)
+wait min. 5ms
+no
+(optional) write operations to the desired control 
+registers
+charge pump overvoltage 
+Shutdown at Pin CB or Pin 
+CH2-CL2 set? (sd_ov_cp)
+yes
+no
+set internal variable 
+previous_spi_fail=false
+set internal variable 
+previous_spi_fail=true
+no
+set pins INH_N & ENA 
+& SOFF_N=‘0‘ Power down
+Figure 21 Recommended Power-Up Sequence
+Notes:
+1. Do not perform an ENA reset unless specified. For details see Chapter 4.1, ENA.
+TLE9183QK
+Bridge Driver IC
+13  Operation Modes
+Datasheet 80 Rev. 1.21
+2023-04-30
+
+
+--- page 81 ---
+2. General note: It is assumed that SPI communication is checked for errors (validate CRC3 of MISO frames,
+check if addr/data of write access SPI MOSI frame matches the next MISO frame, check if addr of read access
+SPI MOSI frame matches addr in next MISO frame). If SPI errors do occur, apply chosen retry strategy and
+abort after a limited number of tries.
+3. Note: It is expected that there are at least 500us (enough time for the overload detections to trigger again)
+between the ENA reset to clear „MISO Pin shorted error“ detection and the first read operation of all error
+registers.
+4. Note: The chosen strategy is optimized for speed by polling the status of sd_uv_cb. Error sd_uv_cb must
+disappear in less than tINH_Pen1 ms after the minimum of (time after last ENA reset) and (time after INH_N
+transition to high). If it does not, it is ok to proceed with the other path (which will not lead to a direct path
+to normal mode 2 steps later).
+5. Note: Please be aware of the increased SPI sequential transfer delay for the transition to normal mode.
+6. Note: Unacceptable bits are: global test mode (gtm), Overvoltage Internal Regulator 6 Error (err_ov_reg6),
+Charge Pump 1 Overload Error (err_cp1), Charge Pump 2 Overload Error (err_cp2), Overtemperature
+Shutdown (sd_ot), Charge Pump Overvoltage Shutdown at Pin CB or Pin CH2-CL2 (sd_ov_cp), Vs Path
+Charge Pump Input Overload (sd_cp1), CB Undervoltage Shutdown (sd_uv_cb). It is up to the customer
+to define if the following bits are acceptable: Overtemperature Detection (err_ot_w), Latent Fault Warning
+(lfw), Error Correction of Control Register Failed (ctrl_reg_invalid), all bits in register 0x45 (External Errors).
+With the exception of the bits in register 0x4A “SPI Communication and Configuration Errors” (which need
+to be dealt with according to Note2)), all other bits should be ignored and dealt with after finalizing the
+transition to normal mode.
+7. Note: Operation Mode must be idle mode. If it is not, abort.
+TLE9183QK
+Bridge Driver IC
+13  Operation Modes
+Datasheet 81 Rev. 1.21
+2023-04-30
+
+
+--- page 82 ---
+14 Application Information
+In this application 3 phase motors, synchronous and asynchronous, are used, combining high output
+performance, low space requirements and high reliability.
+Note: The following information is given as a hint for the implementation of the device only and shall not be
+regarded as a description or warranty of a certain functionality, condition or quality of the device.
+GND
+P-GND
+RSHUNT2
+CBSx
+CCP2CCP1 CCB1
+VBAT
+CVs
+GNDGND
+CPI2 CPI1
+LPI
+THS1 THS2 THS3
+TLS3TLS2TLS1
+VS
+SOFF
+SHx
+GHx
+SLx
+GLx
+VOx
+ILx
+VDHPINH
+ERR
+IHx
+MOSI
+MISOCSNCLK_SPI
+ISPx
+ISNx
+ENA
+BHx
+CL1
+CH1
+CB
+CL2
+CH2
+GND
+VRO
+AGND
+µC- supply IC (e.g.  TLF 35584)
+CPGND
+PFBx
+Diagnostics   
+Failure Detection Diagnostic Test(s) and  Error Logic
+Floating HS driver  incl. diagnostics
+Floating LS driver  incl. diagnostics
+Power Supply   incl. Diagnostic & Safety Functions
+Current Sense Block (OpAmps for GND-related shunt measurement)
+LEVEL   SHIFT
+Direct Input Control  Input Logic  Shoot Through, Dead Time 
+SPI Interface
+3* 3*
+3*
+Configuration Registers Control Registers Read Registers
+CB
+SHx
+SHx
+BHx
+I/O ports
+VCC
+APC
+RSHUNT1
+APC
+APC
+RSHUNT3
+VDHx
+µC  (e.g.: TC23x)
+VCC
+CVCC
+RSPx
+RSNx
+RGHx
+RGLx
+CVOx RVOx
+RVRO
+CVRO
+D*
+*) Optional reverse battery protection diode
+RSPI
+CVDHP
+Cdiff
+CISPx
+CISNx
+CELKOCCeramic
+C1 C3C2 Cx
+Figure 22 Simplified Application Circuit
+Note: This is a very simplified example of an application circuit. The function must be verified in the real
+application.
+14.1 Layout Guide Lines
+Please refer also to the simplified application example.
+• Three separated bulk capacitors CBridge1 should be used - one per half bridge
+• Three separated ceramic capacitors CBridge2 should be used - one per half bridge
+• Each of the 3 bulk capacitors CBridge1 and each of the 3 ceramic capacitors Cbridge2 should be assigned to
+one of the half bridges and should be placed very close to it
+• The components within one half bridge should be placed close to each other to reduce stray inductance to
+a minimum: high-side MOSFET , low-side MOSFET , bulk capacitor CBridge1 and ceramic capacitor CBridge2
+(CBridge1 and CBridge2 are in parallel) and the shunt resistor form a loop that should be as small and tight
+as possible. The traces should be short and wide.
+• The three half bridges can be separated; yet, when there is one common GND referenced shunt resistor for
+the three half bridges the sources of the three low-side MOSFETs should be close to each other and close to
+the common shunt resistor
+TLE9183QK
+Bridge Driver IC
+14  Application Information
+Datasheet 82 Rev. 1.21
+2023-04-30
+
+
+--- page 83 ---
+• Additional R-C snubber circuits (R and C in series) can be placed to attenuate/suppress oscillations during
+switching of the MOSFETs, there may be one or two snubber circuits per half bridge, R (several Ohm) and C
+(several nF) must be low inductive in terms of routing and packaging (ceramic capacitors)
+• The exposed pad on the backside of the package is recommended to connect to GND
+• The ground pins GND, CP_GND, A_GND have to be connected together to the PCB GND closely to the chip
+• VDHP has to be connected and referenced to a common point of the drains of the high-side MOSFETs
+• External components see "Additional Application Information"
+• For further information you may contact http://www.infineon.com/
+14.2 Additional Application Hints
+Additional external components might be recommended to increase robustness.
+14.2.1 High Level Output Voltage of Digital Output Pins
+Please refer to Chapter 4.7.
+The min. value of the high level output voltage of the digital output pins ERR, PFBx and MISO might be too low
+for 5 V µC ports are used. In this case please configure ports to TTL.
+µC with 3.3 V ports are not affected.
+14.2.2 Quiescent Current Consumption at Pin Vs
+Please refer to Table 10.
+After pulling INH to low the quiescent current can be up to 20 µA at pin Vs for a short period of time. The effect
+is strongly temperature dependent. Under hot conditions the decay time is in the range of seconds, at ambient
+conditions in the range of minutes and at cold up to 1h.
+14.2.3 Minimum Input Pulses at Pins IHx and ILx
+Please refer to Chapter 8.4.
+Input turn on pulses at the pins IHx and ILx shorter than 50 ns may cause an increase of the turn on time of the
+external FET to maximum 1000 ns. Short voltage glitches at the pin CB have been observed.
+If 6 µC output ports are used to drive 6 FETs and dead time is generated by the µC avoid input pulses at IHx and
+ILx shorter than tPulse_in.
+If 3 µC output ports are used to drive 6 FETs using the internal dead time of the TLE9183QK avoid input pulses
+at IHx and ILx shorter than the internal dead + tPulse_in.
+In case of glitches at pin CB has been identified please contact Infineon.
+14.2.4 CSA Cross Talk
+Cross talk of CP2 to current sense amplifier output 3 has been identified. Voltage spikes at pin VO3 according to
+charge pump 2 charging pulses will influence current measurement of current sense amplifier 3.
+Additionally APC, ERR and PFBx signal toggling will induce voltage spikes on CSA 2 and CSA 1.
+Voltage spike caused by Charge pump 2 is typical +/-55 mV.
+Voltage spike caused by PFBx pins toggling is typical +/-35-600 mV.
+Voltage spike caused by APC and ERR pin toggling is typical +/-25 mV.
+Work Around
+Current measurement by ADC of µC shall not be performed if PFBx ports are toggling. Output filter bandwidth
+shall be decreased and oversampling of the ADC shall be activated. Please contact Infineon
+TLE9183QK
+Bridge Driver IC
+14  Application Information
+Datasheet 83 Rev. 1.21
+2023-04-30
+
+
+--- page 84 ---
+14.2.5 Overload CP1
+Please refer to Table 21.
+If a short happens at the CB pin, the overload protection shall prevent the IC from destruction.
+Connecting pin CB directly to GND via 0 Ohm will end up in loss of configuration but all output stages will keep
+external FETs off. CB capacitor discharging slopes higher as typ. 100 µs does not end up in loss of configuration.
+Work Around
+In case of loss of configuration the TLE9183QK will be in idle mode and a restart by pulling INH to low is
+required. In this case an ENA reset shall be performed before the pin INH is set to low. If TLE9183QK does not
+loose configuration, error bit overload CP1 is set a reset via ENA instead of INH is required to clear the error.
+14.2.6 Digital Output Pin Overload Detection
+Please refer to Chapter 10.5.16.
+The overload protection for digital output pins protects the IC against destruction if this pin has a short to
+higher voltages than VCC.
+This protection is too sensitive at cold temperatures if VCC is supplied with 5 V. In case the pin is pulled up to
+VCC externally an overload might be detected.
+If VCC is 3.3 V the overload protection is working as specified.
+The affected pins are: ERR, PFBx and MISO. Usually ERR and PFBx are not pulled up to VCC by external circuit,
+so no overload detection will occur.
+If the SPI is shared with other ICs, the MISO pin of the TLE9183QK might be pulled to 5 V by the MISO-Output of
+the other IC and might cause on overload detection.
+Connecting more than one TLE9183QK as slaves to the SPI bus does not cause the unexpected behavior.
+14.2.7 FET Reverse Diode Forward Voltage Read Out - Short Dead Time
+Please refer to Chapter 10.5.13.
+A fault in the measurement sequence of the reverse diode readout will occur if the configured dead time is
+shorter than typical 400 ns and maximum 800 ns. If dead time is higher than 800 ns sequence is as specified.
+FET reverse diode measurement shall not be performed if a dead time shorter than 800 ns has been configured.
+14.2.8 FET Reverse Diode Forward Voltage Read Out - No Dead time
+Generation in µC
+Please refer to Chapter 10.5.13.
+If 3 µC output ports are used to drive 6 FETs (ILx connected to IHx) using the internal dead time of the
+TLE9183QK the FET Reverse Diode Forward Voltage measurement might cause wrong results in the read out
+registers.
+Dead time shall be generated at µC and shall be higher than 800 ns.
+14.2.9 Minimum INH Pulse Length at Power Up Sequence
+Please refer to tINH_minp.
+If power up sequence is initiated via rising edge of INH and falling edge at INH occurs before CB voltage has
+been ramped up (indicated by undervoltage CB shutdown bit is 0) the device will stay in idle mode. If device
+stays in idle mode and will not enter configuration mode INH shall be set to high again.
+TLE9183QK
+Bridge Driver IC
+14  Application Information
+Datasheet 84 Rev. 1.21
+2023-04-30
+
+
+--- page 87 ---
+16 Revision History
+Revision Date Changes
+1.21 2023-04-30 Editorial change
+1.20 2022-03-08 Changed footnotes of table "Electrical Characteristics: Timing"
+Note 3 in chapter "Absolute Maximum Ratings" removed
+P_11.6.67, P_11.6.109, P_11.6.110, P_11.6.116 added
+Updated figure "Overview of Digital Operation Modes"
+P_4.1.57 and P_4.1.65 removed
+P_4.1.58 values updated
+Figure "Package outlines" updated
+1.10 2021-05-06 Editorial changes
+Changed min. value of P_9.4.19
+Table 21: line"overvoltage VS shut down" removed
+Chapter 10.5.1 modified
+Changed min. value of P_5.7.47
+Changed max. value of P_12.2.6
+P_5.7.24 and P_5.7.57 removed, P_5.7.38 updated
+Chapter 7.1 updated
+Updated figure Principle for SPI-Bus Architecture
+Table 7 header updated
+Chapter 13.3 updated
+Changed symbol in P_11.6.115, P_11.6.78 and P_11.6.79
+Chapter 9.5.1 updated
+Changed test condition for P_11.6.12
+Table 24 and footnote updated
+Chapter 10.5.4 and P_8.3.38 updated
+Changed footnote for P_6.5.1 - P_6.5.17 and P_6.5.19
+Updated footnote for P_11.6.5, P_11.6.14, P_11.6.19, P_11.6.23, P_11.6.29,
+P_11.6.35, P_11.6.43, P_11.6.52, P_11.6.47, P_11.6.68, P_11.6.69, P_11.6.72,
+P_11.6.75, P_11.6.85, P_11.6.89, P_11.6.90, P_11.6.92, P_11.6.93, P_11.6.98,
+P_11.6.99, P_11.6.100, P_11.6.106, P_11.6.107, P_9.6.20, P_9.6.37, P_9.4.30,
+P_13.2.1
+Chapter 10.5.16 updated
+Added comment for path 1 in "Overview of Digital Operation Modes" , figure updated
+Added Chapter "Reduced Operation Mode INH set to low"
+Changed footnote for Table 7
+P_4.1.56 removed and added footnote for P_4.1.55
+Updated figure Simplified Application Circuit
+Chapter 14.1 updated
+Corrected voltage ratings for Chapter 4.1, P_8.3.20, P_8.3.22, P_12.2.1, P_12.2.2,
+P_12.2.3, P_12.2.4, P_12.2.5, P_11.6.32, Chapter 11
+TLE9183QK
+Bridge Driver IC
+16  Revision History
+Datasheet 87 Rev. 1.21
+2023-04-30
+
+

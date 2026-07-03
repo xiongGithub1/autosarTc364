@@ -21,7 +21,7 @@
  #  FILE DESCRIPTION
  #  -------------------------------------------------------------------------------------------------------------------
  #              File: PduR_rules_generated.mak
- #   Generation Time: 2024-07-02 17:51:31
+ #   Generation Time: 2024-07-03 11:51:39
  #           Project: last364 - Version 1.0
  #          Delivery: CBD2200508_D00
  #      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2

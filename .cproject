@@ -26,6 +26,8 @@
 								<option id="com.tasking.ctc.cc.noTaskingSfr.1001861997" name="Automatic inclusion of '.sfr' file" superClass="com.tasking.ctc.cc.noTaskingSfr" value="false" valueType="boolean"/>
 								<option id="com.tasking.ctc.cc.includePaths.1439296800" name="Include paths" superClass="com.tasking.ctc.cc.includePaths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/MCAL364/Spi/ssc/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/MCAL364/Spi/ssc/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/MCAL364/Can_17_McmCan/ssc/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/MCAL364/Can_17_McmCan/ssc/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/BSW364}&quot;"/>
@@ -110,18 +112,14 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="Config_Vector|tc234Autosar|Appl/GenData/RteAnalyzer|Appl/GenData/RteAnalyzer/Source" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="note|DefRestrict|Config|Log|Config_Vector|tc234Autosar|Appl/GenData/RteAnalyzer|Appl/GenData/RteAnalyzer/Source" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
 			<storageModule addStartupFiles="false" moduleId="com.tasking.processor"/>
 			<storageModule moduleId="com.tasking.toolInfo">
-				<toolInfo>TASKING VX-toolset for TriCore: control program v6.2r2 Build 19032145</toolInfo>
 				<toolInfo>TASKING program builder v6.2r2 Build 18041957</toolInfo>
-				<toolInfo>TASKING VX-toolset for TriCore: object link v6.2r2 Build 18041957 SN 53216552</toolInfo>
-				<toolInfo>TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552</toolInfo>
-				<toolInfo>TASKING VX-toolset for TriCore: assembler v6.2r2 Build 19032145</toolInfo>
 			</storageModule>
 		</cconfiguration>
 		<cconfiguration id="com.tasking.config.ctc.abs.release.888454730">
@@ -161,7 +159,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="Config_Vector|tc234Autosar|Appl/GenData/RteAnalyzer|Appl/GenData/RteAnalyzer/Source" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="note|DefRestrict|Config|Log|Config_Vector|tc234Autosar|Appl/GenData/RteAnalyzer|Appl/GenData/RteAnalyzer/Source" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

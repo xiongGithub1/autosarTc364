@@ -195,6 +195,28 @@
  *  SchM_EnterHook_Mcu_TomTgcReg_Start
  *  SchM_EnterHook_PduR_PDUR_EXCLUSIVE_AREA_0_Return
  *  SchM_EnterHook_PduR_PDUR_EXCLUSIVE_AREA_0_Start
+ *  SchM_EnterHook_Spi_Buffer_Update_Return
+ *  SchM_EnterHook_Spi_Buffer_Update_Start
+ *  SchM_EnterHook_Spi_Cancel_Seq_Return
+ *  SchM_EnterHook_Spi_Cancel_Seq_Start
+ *  SchM_EnterHook_Spi_ChannelLock_Return
+ *  SchM_EnterHook_Spi_ChannelLock_Start
+ *  SchM_EnterHook_Spi_Queue_Update_QSPI0_Return
+ *  SchM_EnterHook_Spi_Queue_Update_QSPI0_Start
+ *  SchM_EnterHook_Spi_Queue_Update_QSPI1_Return
+ *  SchM_EnterHook_Spi_Queue_Update_QSPI1_Start
+ *  SchM_EnterHook_Spi_Queue_Update_QSPI2_Return
+ *  SchM_EnterHook_Spi_Queue_Update_QSPI2_Start
+ *  SchM_EnterHook_Spi_Queue_Update_QSPI3_Return
+ *  SchM_EnterHook_Spi_Queue_Update_QSPI3_Start
+ *  SchM_EnterHook_Spi_Queue_Update_QSPI4_Return
+ *  SchM_EnterHook_Spi_Queue_Update_QSPI4_Start
+ *  SchM_EnterHook_Spi_Queue_Update_QSPI5_Return
+ *  SchM_EnterHook_Spi_Queue_Update_QSPI5_Start
+ *  SchM_EnterHook_Spi_Queue_Update_Return
+ *  SchM_EnterHook_Spi_Queue_Update_Start
+ *  SchM_EnterHook_Spi_SyncLock_Return
+ *  SchM_EnterHook_Spi_SyncLock_Start
  *  SchM_ExitHook_BswM_BSWM_EXCLUSIVE_AREA_0_Return
  *  SchM_ExitHook_BswM_BSWM_EXCLUSIVE_AREA_0_Start
  *  SchM_ExitHook_CanIf_CANIF_EXCLUSIVE_AREA_0_Return
@@ -287,6 +309,28 @@
  *  SchM_ExitHook_Mcu_TomTgcReg_Start
  *  SchM_ExitHook_PduR_PDUR_EXCLUSIVE_AREA_0_Return
  *  SchM_ExitHook_PduR_PDUR_EXCLUSIVE_AREA_0_Start
+ *  SchM_ExitHook_Spi_Buffer_Update_Return
+ *  SchM_ExitHook_Spi_Buffer_Update_Start
+ *  SchM_ExitHook_Spi_Cancel_Seq_Return
+ *  SchM_ExitHook_Spi_Cancel_Seq_Start
+ *  SchM_ExitHook_Spi_ChannelLock_Return
+ *  SchM_ExitHook_Spi_ChannelLock_Start
+ *  SchM_ExitHook_Spi_Queue_Update_QSPI0_Return
+ *  SchM_ExitHook_Spi_Queue_Update_QSPI0_Start
+ *  SchM_ExitHook_Spi_Queue_Update_QSPI1_Return
+ *  SchM_ExitHook_Spi_Queue_Update_QSPI1_Start
+ *  SchM_ExitHook_Spi_Queue_Update_QSPI2_Return
+ *  SchM_ExitHook_Spi_Queue_Update_QSPI2_Start
+ *  SchM_ExitHook_Spi_Queue_Update_QSPI3_Return
+ *  SchM_ExitHook_Spi_Queue_Update_QSPI3_Start
+ *  SchM_ExitHook_Spi_Queue_Update_QSPI4_Return
+ *  SchM_ExitHook_Spi_Queue_Update_QSPI4_Start
+ *  SchM_ExitHook_Spi_Queue_Update_QSPI5_Return
+ *  SchM_ExitHook_Spi_Queue_Update_QSPI5_Start
+ *  SchM_ExitHook_Spi_Queue_Update_Return
+ *  SchM_ExitHook_Spi_Queue_Update_Start
+ *  SchM_ExitHook_Spi_SyncLock_Return
+ *  SchM_ExitHook_Spi_SyncLock_Start
  *  SchM_Schedulable_BswM_BswM_MainFunction_Return
  *  SchM_Schedulable_BswM_BswM_MainFunction_Start
  *  SchM_Schedulable_CanSM_CanSM_MainFunction_Return
@@ -309,6 +353,8 @@
  *  SchM_Schedulable_Com_Com_MainFunctionTx_ComMainFunctionTx_Start
  *  SchM_Schedulable_EcuM_EcuM_MainFunction_Return
  *  SchM_Schedulable_EcuM_EcuM_MainFunction_Start
+ *  SchM_Schedulable_Spi_Spi_MainFunction_Handling_Return
+ *  SchM_Schedulable_Spi_Spi_MainFunction_Handling_Start
  *
  *********************************************************************************************************************/
 

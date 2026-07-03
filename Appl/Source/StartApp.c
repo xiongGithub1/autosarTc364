@@ -49,8 +49,32 @@
 #include "ComM.h"
 #include "ComM_EcuMBswM.h"
 #include "Dio.h"
+#include "Dio_Cfg.h"
 #include "EcuM.h"
 #include "Rte_EcuM_Type.h"
+#include "Spi.h"
+#include "Spi_Cfg.h"
+#include "Spi_PBcfg.h"
+#include "IfxPort_reg.h"
+#include "IfxQspi_bf.h"
+#include "IfxQspi_reg.h"
+#include "Tle9183.h"
+
+/* Set to TRUE: loopback test without TLE9183. FALSE: normal 9183 register test. */
+#define STARTAPP_QSPI3_LOOPBACK_TEST           (False)
+/* 1 = internal loopback (QSPI GLOBALCON.LB, no wire).
+ * 0 = external loopback (short P22.0 to P22.1). */
+#define STARTAPP_QSPI3_LOOPBACK_USE_INTERNAL   (0U)
+/* 1 = use 8-bit frame (change Spi_PBcfg DataConfig to 0x88U manually). */
+#define STARTAPP_QSPI3_LOOPBACK_USE_8BIT       (0U)
+
+#define STARTAPP_QSPI3_SPI_FRAME_MASK          (0x00FFFFFFU)
+#if (STARTAPP_QSPI3_LOOPBACK_USE_8BIT == 1U)
+#define STARTAPP_QSPI3_LOOPBACK_TX_PATTERN     (0x000000A5U)
+#else
+#define STARTAPP_QSPI3_LOOPBACK_TX_PATTERN     (0x00A5A5A5U)
+#endif
+
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of include and declaration area >>        DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -82,6 +106,44 @@ uint8 Can1_Nstb=0;
 CanIf_PduGetModeType StartApp_CanIfPduMode;
 Std_ReturnType StartApp_CanIfPduModeResult;
 
+uint32 StartApp_9183SpiTxWord = 0u;
+uint32 StartApp_9183SpiRxWord = 0u;
+uint32 StartApp_9183SpiPrevRxWord = 0u;
+boolean StartApp_9183HwInited = FALSE;
+Std_ReturnType StartApp_9183SpiSetupResult = E_NOT_OK;
+Std_ReturnType StartApp_9183SpiTransmitResult = E_NOT_OK;
+Std_ReturnType StartApp_9183SpiInitCheckResult = E_NOT_OK;
+Spi_StatusType StartApp_9183SpiStatusBefore = SPI_UNINIT;
+Spi_StatusType StartApp_9183SpiStatusAfter = SPI_UNINIT;
+Spi_JobResultType StartApp_9183SpiJobResultBefore = SPI_JOB_FAILED;
+Spi_JobResultType StartApp_9183SpiJobResultAfter = SPI_JOB_FAILED;
+Spi_SeqResultType StartApp_9183SpiSeqResult = SPI_SEQ_FAILED;
+Spi_SeqResultType StartApp_9183SpiSeqResultBefore = SPI_SEQ_FAILED;
+uint32 StartApp_9183SpiTestCounter = 0u;
+uint32 StartApp_9183SpiOkCounter = 0u;
+uint32 StartApp_9183SpiFailCounter = 0u;
+boolean StartApp_9183SpiRxChanged = FALSE;
+boolean StartApp_9183SpiTestEnabled = TRUE;
+boolean StartApp_9183SpiLoopbackMatch = FALSE;
+boolean StartApp_9183SpiLoopbackInternal = FALSE;
+boolean StartApp_9183MrstPinLevel = FALSE;
+uint8 StartApp_Qspi3BitCount = 0U;
+uint32 StartApp_Qspi3GlobalconLb = 0U;
+uint32 StartApp_Qspi3GlobalconLbBeforeTx = 0U;
+Std_ReturnType StartApp_Qspi3LoopbackCtrlResult = E_NOT_OK;
+uint32 StartApp_Qspi3Clc = 0u;
+uint32 StartApp_Qspi3Pisel = 0u;
+uint32 StartApp_Qspi3Globalcon = 0u;
+uint32 StartApp_Qspi3Globalcon1 = 0u;
+uint32 StartApp_Qspi3Bacon = 0u;
+uint32 StartApp_Qspi3Status = 0u;
+uint32 StartApp_Qspi3Status1 = 0u;
+uint32 StartApp_Qspi3Ssoc = 0u;
+
+static FUNC(void, StartApp_CODE) StartApp_Test9183Spi(void);
+static FUNC(void, StartApp_CODE) StartApp_Qspi3LoopbackTest(void);
+static FUNC(void, StartApp_CODE) StartApp_SampleQspi3Regs(void);
+
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of include and declaration area >>          DO NOT CHANGE THIS COMMENT!
@@ -99,6 +161,162 @@ Std_ReturnType StartApp_CanIfPduModeResult;
 
 #define StartApp_START_SEC_CODE
 #include "StartApp_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+static FUNC(void, StartApp_CODE) StartApp_SampleQspi3Regs(void)
+{
+  StartApp_Qspi3Clc = QSPI3_CLC.U;
+  StartApp_Qspi3Pisel = QSPI3_PISEL.U;
+  StartApp_Qspi3Globalcon = QSPI3_GLOBALCON.U;
+  StartApp_Qspi3Globalcon1 = QSPI3_GLOBALCON1.U;
+  StartApp_Qspi3Bacon = QSPI3_BACON.U;
+  StartApp_Qspi3Status = QSPI3_STATUS.U;
+  StartApp_Qspi3Status1 = QSPI3_STATUS1.U;
+  StartApp_Qspi3Ssoc = QSPI3_SSOC.U;
+}
+
+static FUNC(void, StartApp_CODE) StartApp_Qspi3LoopbackTest(void)
+{
+  uint32 txWord = STARTAPP_QSPI3_LOOPBACK_TX_PATTERN;
+  uint32 rxWord = 0U;
+
+  StartApp_SampleQspi3Regs();
+  StartApp_9183SpiStatusBefore = Spi_GetStatus();
+  StartApp_9183SpiJobResultBefore =
+      Spi_GetJobResult(SpiConf_SpiJob_SpiJob_9183);
+  StartApp_9183SpiSeqResultBefore =
+      Spi_GetSequenceResult(SpiConf_SpiSequence_SpiSequence);
+
+  if (Spi_GetStatus() != SPI_IDLE)
+  {
+    return;
+  }
+
+#if (STARTAPP_QSPI3_LOOPBACK_USE_INTERNAL == 1U)
+  StartApp_9183SpiLoopbackInternal = TRUE;
+  StartApp_Qspi3LoopbackCtrlResult =
+      Spi_ControlLoopBack(SPI_QSPI3_INDEX, SPI_LOOPBACK_ENABLE);
+#else
+  StartApp_9183SpiLoopbackInternal = FALSE;
+  StartApp_Qspi3LoopbackCtrlResult =
+      Spi_ControlLoopBack(SPI_QSPI3_INDEX, SPI_LOOPBACK_DISABLE);
+#endif
+
+  StartApp_Qspi3GlobalconLbBeforeTx = (uint32)QSPI3_GLOBALCON.B.LB;
+
+  StartApp_9183SpiSetupResult = Spi_SetupEB(
+      SpiConf_SpiChannel_SpiChannel_9183,
+      (const Spi_DataBufferType *)&txWord,
+      (Spi_DataBufferType *)&rxWord,
+      1U);
+
+  if (StartApp_9183SpiSetupResult == E_OK)
+  {
+    StartApp_9183SpiTransmitResult =
+        Spi_SyncTransmit(SpiConf_SpiSequence_SpiSequence);
+    StartApp_9183SpiSeqResult =
+        Spi_GetSequenceResult(SpiConf_SpiSequence_SpiSequence);
+  }
+  else
+  {
+    StartApp_9183SpiTransmitResult = E_NOT_OK;
+    StartApp_9183SpiSeqResult = SPI_SEQ_FAILED;
+  }
+
+  (void)Spi_ControlLoopBack(SPI_QSPI3_INDEX, SPI_LOOPBACK_DISABLE);
+
+  StartApp_9183SpiTxWord = txWord & STARTAPP_QSPI3_SPI_FRAME_MASK;
+  StartApp_9183SpiRxWord = rxWord & STARTAPP_QSPI3_SPI_FRAME_MASK;
+  StartApp_9183MrstPinLevel =
+      (boolean)((P22_IN.U & 0x00000002U) != 0U);
+  StartApp_9183SpiLoopbackMatch =
+      (boolean)((StartApp_9183SpiSetupResult == E_OK) &&
+                (StartApp_9183SpiTransmitResult == E_OK) &&
+                (StartApp_9183SpiSeqResult == SPI_SEQ_OK) &&
+                (StartApp_Qspi3LoopbackCtrlResult == E_OK) &&
+                (StartApp_Qspi3GlobalconLbBeforeTx == 1U) &&
+                (StartApp_9183SpiTxWord == StartApp_9183SpiRxWord));
+
+  StartApp_9183SpiStatusAfter = Spi_GetStatus();
+  StartApp_9183SpiJobResultAfter =
+      Spi_GetJobResult(SpiConf_SpiJob_SpiJob_9183);
+  StartApp_SampleQspi3Regs();
+  StartApp_Qspi3BitCount = (uint8)(StartApp_Qspi3Status1 & 0x000000FFU);
+  StartApp_Qspi3GlobalconLb = (uint32)QSPI3_GLOBALCON.B.LB;
+
+  StartApp_9183SpiRxChanged =
+      (boolean)(StartApp_9183SpiPrevRxWord != StartApp_9183SpiRxWord);
+  StartApp_9183SpiPrevRxWord = StartApp_9183SpiRxWord;
+
+  StartApp_9183SpiTestCounter++;
+  if (StartApp_9183SpiLoopbackMatch == TRUE)
+  {
+    StartApp_9183SpiOkCounter++;
+  }
+  else
+  {
+    StartApp_9183SpiFailCounter++;
+  }
+}
+
+static FUNC(void, StartApp_CODE) StartApp_Test9183Spi(void)
+{
+#if (STARTAPP_QSPI3_LOOPBACK_TEST == TRUE)
+  StartApp_Qspi3LoopbackTest();
+#else
+  uint8 nopData = 0U;
+
+  StartApp_SampleQspi3Regs();
+  StartApp_9183SpiStatusBefore = Spi_GetStatus();
+  StartApp_9183SpiJobResultBefore =
+      Spi_GetJobResult(SpiConf_SpiJob_SpiJob_9183);
+  StartApp_9183SpiSeqResultBefore =
+      Spi_GetSequenceResult(SpiConf_SpiSequence_SpiSequence);
+
+  Tle9183_MainFunction();
+
+  if (Tle9183_Status.PowerUpDone == FALSE)
+  {
+    return;
+  }
+
+  StartApp_9183SpiSetupResult = Tle9183_ReadRegister(TLE9183_REG_NOP, &nopData);
+  StartApp_9183SpiTxWord = Tle9183_Status.LastTxFrame;
+  StartApp_9183SpiRxWord = Tle9183_Status.LastRxFrame;
+
+  if (StartApp_9183SpiSetupResult == E_OK)
+  {
+    StartApp_9183SpiTransmitResult = E_OK;
+    StartApp_9183SpiSeqResult = SPI_SEQ_OK;
+  }
+  else
+  {
+    StartApp_9183SpiTransmitResult = E_NOT_OK;
+    StartApp_9183SpiSeqResult = SPI_SEQ_FAILED;
+  }
+
+  StartApp_9183SpiStatusAfter = Spi_GetStatus();
+  StartApp_9183SpiJobResultAfter =
+      Spi_GetJobResult(SpiConf_SpiJob_SpiJob_9183);
+  StartApp_SampleQspi3Regs();
+
+  StartApp_9183SpiRxChanged =
+      (boolean)(StartApp_9183SpiPrevRxWord != StartApp_9183SpiRxWord);
+  StartApp_9183SpiPrevRxWord = StartApp_9183SpiRxWord;
+
+  StartApp_9183SpiTestCounter++;
+  if ((StartApp_9183SpiSetupResult == E_OK) &&
+      (StartApp_9183SpiTransmitResult == E_OK) &&
+      (StartApp_9183SpiSeqResult == SPI_SEQ_OK) &&
+      (Tle9183_Status.LastCrcOk == TRUE))
+  {
+    StartApp_9183SpiOkCounter++;
+  }
+  else
+  {
+    StartApp_9183SpiFailCounter++;
+  }
+#endif
+}
 
 
 /**********************************************************************************************************************
@@ -236,6 +454,11 @@ FUNC(void, StartApp_CODE) StartApp_Cyclic250ms(void) /* PRQA S 0624, 3206 */ /* 
 	{
 		StartApp_CanTxSkipCounter++;
 	}
+
+	if (StartApp_9183SpiTestEnabled == TRUE)
+	{
+		StartApp_Test9183Spi();
+	}
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -270,6 +493,12 @@ FUNC(void, StartApp_CODE) StartApp_Init(void) /* PRQA S 0624, 3206 */ /* MD_Rte_
   ComM_CommunicationAllowed(ComMConf_ComMChannel_CN_CAN00_5e566ad9, TRUE);
   StartApp_ComMCommunicationAllowed = TRUE;
   StartApp_ComMRequestResult = ComM_RequestComMode(ComMConf_ComMUser_CN_CAN00_06ecbb07, COMM_FULL_COMMUNICATION);
+  StartApp_9183SpiStatusBefore = Spi_GetStatus();
+#if (STARTAPP_QSPI3_LOOPBACK_TEST != TRUE)
+  Tle9183_Init();
+  StartApp_9183HwInited = (boolean)(Tle9183_GetState() != TLE9183_STATE_UNINIT);
+#endif
+  StartApp_Test9183Spi();
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/

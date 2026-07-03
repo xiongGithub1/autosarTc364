@@ -102,6 +102,8 @@ last364.elf : .\Appl\GenData\src\Mcu_PBcfg.o
 .\Appl\GenData\src\Mcu_PBcfg.o :
 last364.elf : .\Appl\GenData\src\Port_PBcfg.o
 .\Appl\GenData\src\Port_PBcfg.o :
+last364.elf : .\Appl\GenData\src\Spi_PBcfg.o
+.\Appl\GenData\src\Spi_PBcfg.o :
 last364.elf : .\Appl\GenData\vBrs_Lcfg.o
 .\Appl\GenData\vBrs_Lcfg.o :
 last364.elf : .\Appl\Source\Appl_HwStartup.o
@@ -118,6 +120,8 @@ last364.elf : .\Appl\Source\Os_Callout_Stubs.o
 .\Appl\Source\Os_Callout_Stubs.o :
 last364.elf : .\Appl\Source\StartApp.o
 .\Appl\Source\StartApp.o :
+last364.elf : .\Appl\Source\Tle9183.o
+.\Appl\Source\Tle9183.o :
 last364.elf : .\BSW364\BswM\Implementation\BswM.o
 .\BSW364\BswM\Implementation\BswM.o :
 last364.elf : .\BSW364\CanIf\Implementation\CanIf.o
@@ -300,6 +304,8 @@ last364.elf : .\MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o
 .\MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :
 last364.elf : .\MCAL364\Port\ssc\src\Port.o
 .\MCAL364\Port\ssc\src\Port.o :
+last364.elf : .\MCAL364\Spi\ssc\src\Spi.o
+.\MCAL364\Spi\ssc\src\Spi.o :
 last364.elf : "D:\Program Files (x86)\TASKING\TriCore v6.2r2\ctc\include.lsl\arch51.lsl"
 "D:\Program Files (x86)\TASKING\TriCore v6.2r2\ctc\include.lsl\arch51.lsl" :
 last364.elf : "D:\Program Files (x86)\TASKING\TriCore v6.2r2\ctc\include.lsl\arch_scr2g.lsl"

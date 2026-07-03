@@ -29,6 +29,7 @@ all :
 -include "MCAL364\McalLib\ssc\src\subdir.mk"
 -include "MCAL364\Mcu\ssc\src\subdir.mk"
 -include "MCAL364\Port\ssc\src\subdir.mk"
+-include "MCAL364\Spi\ssc\src\subdir.mk"
 -include "..\makefile.defs"
 
 PCP_FILES :=
