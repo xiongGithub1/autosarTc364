@@ -13,6 +13,7 @@ all :
 -include "Appl\GenData\subdir.mk"
 -include "Appl\GenData\src\subdir.mk"
 -include "Appl\Source\subdir.mk"
+-include "Appl\Source\CDD\subdir.mk"
 -include "BSW364\BswM\Implementation\subdir.mk"
 -include "BSW364\Can\Implementation\subdir.mk"
 -include "BSW364\CanIf\Implementation\subdir.mk"

@@ -101,7 +101,7 @@ static void SpiTest_Qspi3LoopbackTest(void)
   SpiTest_9183SpiJobResultBefore =
       Spi_GetJobResult(SpiConf_SpiJob_SpiJob_9183);
   SpiTest_9183SpiSeqResultBefore =
-      Spi_GetSequenceResult(SpiConf_SpiSequence_SpiSequence);
+      Spi_GetSequenceResult(SpiConf_SpiSequence_SpiSequence_9183);
 
   if (Spi_GetStatus() != SPI_IDLE)
   {
@@ -129,9 +129,9 @@ static void SpiTest_Qspi3LoopbackTest(void)
   if (SpiTest_9183SpiSetupResult == E_OK)
   {
     SpiTest_9183SpiTransmitResult =
-        Spi_SyncTransmit(SpiConf_SpiSequence_SpiSequence);
+        Spi_SyncTransmit(SpiConf_SpiSequence_SpiSequence_9183);
     SpiTest_9183SpiSeqResult =
-        Spi_GetSequenceResult(SpiConf_SpiSequence_SpiSequence);
+        Spi_GetSequenceResult(SpiConf_SpiSequence_SpiSequence_9183);
   }
   else
   {
@@ -187,7 +187,7 @@ static void SpiTest_Test9183Spi(void)
   SpiTest_9183SpiJobResultBefore =
       Spi_GetJobResult(SpiConf_SpiJob_SpiJob_9183);
   SpiTest_9183SpiSeqResultBefore =
-      Spi_GetSequenceResult(SpiConf_SpiSequence_SpiSequence);
+      Spi_GetSequenceResult(SpiConf_SpiSequence_SpiSequence_9183);
 
   Tle9183_MainFunction();
 

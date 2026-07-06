@@ -2,6 +2,20 @@
 <!--This file was saved with a tool from Vector Informatik GmbH-->
 <AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <AR-PACKAGES>
+    <AR-PACKAGE UUID="909A4B56-E46E-43F0-B9C7-1199C001704C">
+      <SHORT-NAME>VehicleProject</SHORT-NAME>
+      <ELEMENTS>
+        <SYSTEM UUID="F828D80B-4BAF-48D2-AF59-FD6962A0C9F9">
+          <SHORT-NAME>System</SHORT-NAME>
+          <ROOT-SOFTWARE-COMPOSITIONS>
+            <ROOT-SW-COMPOSITION-PROTOTYPE UUID="B033F6B0-3907-4AE7-BCF3-1AE356C3C7FE">
+              <SHORT-NAME>EcuSwComposition</SHORT-NAME>
+              <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/ECUCompositionTypes/ECU_Composition</SOFTWARE-COMPOSITION-TREF>
+            </ROOT-SW-COMPOSITION-PROTOTYPE>
+          </ROOT-SOFTWARE-COMPOSITIONS>
+        </SYSTEM>
+      </ELEMENTS>
+    </AR-PACKAGE>
     <AR-PACKAGE UUID="C9DDA1CB-3B7B-4876-A9A9-36223772C0FF">
       <SHORT-NAME>ECUCompositionTypes</SHORT-NAME>
       <ELEMENTS>
@@ -19,6 +33,39 @@
               </ADMIN-DATA>
               <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/StartApp</TYPE-TREF>
             </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="AB32B20F-4632-4988-A2B6-850B953BB4ED">
+              <SHORT-NAME>MotorControll</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/MotorControll</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="9EBFEAD1-54F7-44F1-8673-CB0F0C838F65">
+              <SHORT-NAME>tle5012BD_CDD</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <TYPE-TREF DEST="COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE">/ComponentTypes/tle5012BD_CDD</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="DF774B9A-DBCB-40ED-BC2E-CE4F3D96646D">
+              <SHORT-NAME>tle9183_CDD</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <TYPE-TREF DEST="COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE">/ComponentTypes/tle9183_CDD</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
           </COMPONENTS>
         </COMPOSITION-SW-COMPONENT-TYPE>
       </ELEMENTS>
@@ -33,20 +80,6 @@
     </AR-PACKAGE>
     <AR-PACKAGE UUID="9AF0C9D2-B3C7-454A-9355-B8A55B841AEA">
       <SHORT-NAME>Systems</SHORT-NAME>
-    </AR-PACKAGE>
-    <AR-PACKAGE UUID="909A4B56-E46E-43F0-B9C7-1199C001704C">
-      <SHORT-NAME>VehicleProject</SHORT-NAME>
-      <ELEMENTS>
-        <SYSTEM UUID="F828D80B-4BAF-48D2-AF59-FD6962A0C9F9">
-          <SHORT-NAME>System</SHORT-NAME>
-          <ROOT-SOFTWARE-COMPOSITIONS>
-            <ROOT-SW-COMPOSITION-PROTOTYPE UUID="B033F6B0-3907-4AE7-BCF3-1AE356C3C7FE">
-              <SHORT-NAME>EcuSwComposition</SHORT-NAME>
-              <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/ECUCompositionTypes/ECU_Composition</SOFTWARE-COMPOSITION-TREF>
-            </ROOT-SW-COMPOSITION-PROTOTYPE>
-          </ROOT-SOFTWARE-COMPOSITIONS>
-        </SYSTEM>
-      </ELEMENTS>
     </AR-PACKAGE>
   </AR-PACKAGES>
 </AUTOSAR>

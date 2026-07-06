@@ -497,6 +497,10 @@
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcPrescale</DEFINITION-REF>
                       <VALUE>4</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcClockSource</DEFINITION-REF>
+                      <VALUE>ADC_SYSTEM_CLK</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <SUB-CONTAINERS>
                     <ECUC-CONTAINER-VALUE UUID="a812c422-ce7b-4c13-97cf-ffc20c287bc5">
@@ -685,13 +689,71 @@
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcResRegDefinition</DEFINITION-REF>
                           <VALUE>0</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcResRegDefinition</DEFINITION-REF>
+                          <VALUE>1</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                       <REFERENCE-VALUES>
                         <ECUC-REFERENCE-VALUE>
                           <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcGroupDefinition</DEFINITION-REF>
                           <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Adc/AdcConfigSet/AdcHwUnit_ADC2/AdcChannel_9183_VO2</VALUE-REF>
                         </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcGroupDefinition</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Adc/AdcConfigSet/AdcHwUnit_ADC2/AdcChannel_V_INV</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
                       </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="bd2fc8ea-dbe3-4b5a-9967-e55d32f14db6">
+                      <SHORT-NAME>AdcChannel_V_INV</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcChannelId</DEFINITION-REF>
+                          <VALUE>1</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcAnChannelNum</DEFINITION-REF>
+                          <VALUE>G2CH1</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcInputClassSelection</DEFINITION-REF>
+                          <VALUE>ADC_HWUNIT_CLASS_0</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcSyncConvChannelEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcBWDEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcBWDPrechargeLevel</DEFINITION-REF>
+                          <VALUE>ADC_BWD_PRECH_VAGND</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcPullDownDiagnosticEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcMultiplexerDiagnosticEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcMultiplexerDiagnosticLevel</DEFINITION-REF>
+                          <VALUE>ADC_MD_PULL_DOWN</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcConverterDiagnosticEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcConverterDiagnosticsLevel</DEFINITION-REF>
+                          <VALUE>ADC_CD_PULL_DEVICE_VDDM</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
                   </SUB-CONTAINERS>
                 </ECUC-CONTAINER-VALUE>
@@ -759,6 +821,10 @@
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcPrescale</DEFINITION-REF>
                       <VALUE>4</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcClockSource</DEFINITION-REF>
+                      <VALUE>ADC_SYSTEM_CLK</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <SUB-CONTAINERS>
                     <ECUC-CONTAINER-VALUE UUID="e30978c6-85d9-4a66-a013-f38499b14422">
@@ -952,6 +1018,272 @@
                         <ECUC-REFERENCE-VALUE>
                           <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcGroupDefinition</DEFINITION-REF>
                           <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Adc/AdcConfigSet/AdcHwUnit_ADC3/AdcChannel_9183_VO3</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="0fd57b2d-9672-453b-bab9-68e0206362d5">
+                  <SHORT-NAME>AdcHwUnit_ADC8</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcHwUnitId</DEFINITION-REF>
+                      <VALUE>HWUNIT_ADC8</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcIdlePrechargeEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcInputBufferEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcPrechargeReference</DEFINITION-REF>
+                      <VALUE>ADC_VDD_VSM_USED</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcReferencePrechargePhases</DEFINITION-REF>
+                      <VALUE>ADC_PRECHARGE_PHASE_1</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcCalibrationSampleTime</DEFINITION-REF>
+                      <VALUE>ADC_CAL_TIME_2_TIMES_TADCI</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcPostCalibrationDisable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcAnalogClockSyncDelay</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcSampleSyncEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcMSBDoubleClkEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcRequestSource0ConvMode</DEFINITION-REF>
+                      <VALUE>ADC_WAIT_FOR_START_MODE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcRequestSource1ConvMode</DEFINITION-REF>
+                      <VALUE>ADC_WAIT_FOR_START_MODE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcRequestSource2ConvMode</DEFINITION-REF>
+                      <VALUE>ADC_WAIT_FOR_START_MODE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcSyncConvMode</DEFINITION-REF>
+                      <VALUE>ADC_STAND_ALONE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcPrescale</DEFINITION-REF>
+                      <VALUE>4</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcClockSource</DEFINITION-REF>
+                      <VALUE>ADC_SYSTEM_CLK</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="548a5af5-715d-48d3-8220-ea2e35123e8b">
+                      <SHORT-NAME>AdcHwUnitInputClass</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcHwUnitInputClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcHwUnitInputClass/AdcChSampleTime</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcHwUnitInputClass/AdcChPreChargeClkCycles</DEFINITION-REF>
+                          <VALUE>ADC_INPUT_PRECHARGE_CYCLES_0</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcHwUnitInputClass/AdcChConvMode</DEFINITION-REF>
+                          <VALUE>ADC_NOISE_REDUCTION_STEPS_0</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcHwUnitInputClass/AdcChSESPSEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcHwUnitInputClass/AdcEmuxChSampleTime</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcHwUnitInputClass/AdcEmuxChPreChargeClkCycles</DEFINITION-REF>
+                          <VALUE>ADC_INPUT_PRECHARGE_CYCLES_0</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcHwUnitInputClass/AdcEmuxChConvMode</DEFINITION-REF>
+                          <VALUE>ADC_NOISE_REDUCTION_STEPS_0</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcHwUnitInputClass/AdcEmuxChSESPSEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="f196fb3f-3438-479e-9b93-2ccd17185017">
+                      <SHORT-NAME>AdcHwUnitInputClass_1</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcHwUnitInputClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcHwUnitInputClass/AdcChSampleTime</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcHwUnitInputClass/AdcChPreChargeClkCycles</DEFINITION-REF>
+                          <VALUE>ADC_INPUT_PRECHARGE_CYCLES_0</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcHwUnitInputClass/AdcChConvMode</DEFINITION-REF>
+                          <VALUE>ADC_NOISE_REDUCTION_STEPS_0</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcHwUnitInputClass/AdcChSESPSEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcHwUnitInputClass/AdcEmuxChSampleTime</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcHwUnitInputClass/AdcEmuxChPreChargeClkCycles</DEFINITION-REF>
+                          <VALUE>ADC_INPUT_PRECHARGE_CYCLES_0</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcHwUnitInputClass/AdcEmuxChConvMode</DEFINITION-REF>
+                          <VALUE>ADC_NOISE_REDUCTION_STEPS_0</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcHwUnitInputClass/AdcEmuxChSESPSEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="8a892591-29da-4734-a723-986699768c50">
+                      <SHORT-NAME>AdcChannel_SS_BatteryCheck</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcChannelId</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcAnChannelNum</DEFINITION-REF>
+                          <VALUE>G8CH3</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcInputClassSelection</DEFINITION-REF>
+                          <VALUE>ADC_HWUNIT_CLASS_0</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcSyncConvChannelEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcBWDEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcBWDPrechargeLevel</DEFINITION-REF>
+                          <VALUE>ADC_BWD_PRECH_VAGND</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcPullDownDiagnosticEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcMultiplexerDiagnosticEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcMultiplexerDiagnosticLevel</DEFINITION-REF>
+                          <VALUE>ADC_MD_PULL_DOWN</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcConverterDiagnosticEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcConverterDiagnosticsLevel</DEFINITION-REF>
+                          <VALUE>ADC_CD_PULL_DEVICE_VDDM</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="63c2ddea-50b5-4a67-a738-a9d4f2e73fec">
+                      <SHORT-NAME>AdcGroup_2</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcGroupAccessMode</DEFINITION-REF>
+                          <VALUE>ADC_ACCESS_MODE_SINGLE</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcGroupConversionMode</DEFINITION-REF>
+                          <VALUE>ADC_CONV_MODE_ONESHOT</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcGroupId</DEFINITION-REF>
+                          <VALUE>256</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcGroupTriggSrc</DEFINITION-REF>
+                          <VALUE>ADC_TRIGG_SRC_SW</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcStreamingBufferMode</DEFINITION-REF>
+                          <VALUE>ADC_STREAM_BUFFER_LINEAR</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcStreamingNumSamples</DEFINITION-REF>
+                          <VALUE>1</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcHwExtTrigSelect</DEFINITION-REF>
+                          <VALUE>ADC_TRIG_NONE</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcHwExtGateSelect</DEFINITION-REF>
+                          <VALUE>ADC_GATE_NONE</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcHwGateSignal</DEFINITION-REF>
+                          <VALUE>ADC_GATE_LVL_HIGH</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcChannel0Alias</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcChannel1Alias</DEFINITION-REF>
+                          <VALUE>1</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcEmuxChGroup</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcEmuxStartSelection</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcResRegDefinition</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcGroupDefinition</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Adc/AdcConfigSet/AdcHwUnit_ADC8/AdcChannel_SS_BatteryCheck</VALUE-REF>
                         </ECUC-REFERENCE-VALUE>
                       </REFERENCE-VALUES>
                     </ECUC-CONTAINER-VALUE>

@@ -1,11 +1,29 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
-	.compiler_invocation	"ctc -f cc19912a --dep-file=Appl\\Source\\.adc_test.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\mak -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Make -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteAnalyzer -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache\\-148438436 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -g2 --make-target=Appl\\Source\\adc_test.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\Source\\adc_test.src ..\\Appl\\Source\\adc_test.c"
+	.compiler_invocation	"ctc -f cc11280a --dep-file=Appl\\Source\\.adc_test.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\mak -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Make -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteAnalyzer -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache\\-148438436 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -g2 --make-target=Appl\\Source\\adc_test.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\Source\\adc_test.src ..\\Appl\\Source\\adc_test.c"
 	.compiler_name		"ctc"
 	;source	'..\\Appl\\Source\\adc_test.c'
 
 	
 $TC162
+	.sdecl	'.zrodata.adc_test..1.cnt',data,rom
+	.sect	'.zrodata.adc_test..1.cnt'
+	.align	2
+.1.cnt:	.type	object
+	.size	.1.cnt,4
+	.word	983566849
+	.sdecl	'.zrodata.adc_test..2.cnt',data,rom
+	.sect	'.zrodata.adc_test..2.cnt'
+	.align	2
+.2.cnt:	.type	object
+	.size	.2.cnt,4
+	.word	1023323477
+	.sdecl	'.zrodata.adc_test..3.cnt',data,rom
+	.sect	'.zrodata.adc_test..3.cnt'
+	.align	2
+.3.cnt:	.type	object
+	.size	.3.cnt,4
+	.word	1008470465
 	
 	.sdecl	'.text.adc_test.AdcTest_Init',code,cluster('AdcTest_Init')
 	.sect	'.text.adc_test.AdcTest_Init'
@@ -21,175 +39,226 @@ $TC162
 ; ..\Appl\Source\adc_test.c	     6  #include <string.h>
 ; ..\Appl\Source\adc_test.c	     7  
 ; ..\Appl\Source\adc_test.c	     8  #define ADC_TEST_GROUP0_CHANNEL_COUNT   (2U)
-; ..\Appl\Source\adc_test.c	     9  #define ADC_TEST_GROUP2_CHANNEL_COUNT   (1U)
+; ..\Appl\Source\adc_test.c	     9  #define ADC_TEST_GROUP2_CHANNEL_COUNT   (2U)
 ; ..\Appl\Source\adc_test.c	    10  #define ADC_TEST_GROUP3_CHANNEL_COUNT   (1U)
-; ..\Appl\Source\adc_test.c	    11  #define ADC_TEST_RES_VALUE_MASK         (0x00000FFFU)
-; ..\Appl\Source\adc_test.c	    12  #define ADC_TEST_GROUP0_VO1_BUF_IDX     (0U)
-; ..\Appl\Source\adc_test.c	    13  #define ADC_TEST_GROUP0_VRO_BUF_IDX     (1U)
-; ..\Appl\Source\adc_test.c	    14  #define ADC_TEST_PENDING_MAX_CYCLES     (4U)
-; ..\Appl\Source\adc_test.c	    15  
-; ..\Appl\Source\adc_test.c	    16  Std_ReturnType AdcTest_InitResult = E_NOT_OK;
-; ..\Appl\Source\adc_test.c	    17  Std_ReturnType AdcTest_LastSampleResult = E_NOT_OK;
-; ..\Appl\Source\adc_test.c	    18  uint32 AdcTest_SampleCounter = 0U;
-; ..\Appl\Source\adc_test.c	    19  uint32 AdcTest_SampleOkCounter = 0U;
-; ..\Appl\Source\adc_test.c	    20  uint32 AdcTest_SampleFailCounter = 0U;
-; ..\Appl\Source\adc_test.c	    21  uint32 AdcTest_BusySkipCounter = 0U;
-; ..\Appl\Source\adc_test.c	    22  uint32 AdcTest_TimeoutCounter = 0U;
-; ..\Appl\Source\adc_test.c	    23  uint32 AdcTest_HandlerPollCounter = 0U;
-; ..\Appl\Source\adc_test.c	    24  uint8 AdcTest_SevFlagG0 = 0U;
-; ..\Appl\Source\adc_test.c	    25  uint8 AdcTest_SevFlagG2 = 0U;
-; ..\Appl\Source\adc_test.c	    26  uint8 AdcTest_SevFlagG3 = 0U;
-; ..\Appl\Source\adc_test.c	    27  
-; ..\Appl\Source\adc_test.c	    28  Adc_StatusType AdcTest_Group9183SenseStatus = ADC_IDLE;
-; ..\Appl\Source\adc_test.c	    29  Adc_StatusType AdcTest_Group9183Vo2Status = ADC_IDLE;
-; ..\Appl\Source\adc_test.c	    30  Adc_StatusType AdcTest_Group9183Vo3Status = ADC_IDLE;
+; ..\Appl\Source\adc_test.c	    11  #define ADC_TEST_GROUP8_CHANNEL_COUNT   (1U)
+; ..\Appl\Source\adc_test.c	    12  #define ADC_TEST_RES_VALUE_MASK         (0x00000FFFU)
+; ..\Appl\Source\adc_test.c	    13  #define ADC_TEST_GROUP0_VO1_BUF_IDX     (0U)
+; ..\Appl\Source\adc_test.c	    14  #define ADC_TEST_GROUP0_VRO_BUF_IDX     (1U)
+; ..\Appl\Source\adc_test.c	    15  #define ADC_TEST_GROUP2_VO2_BUF_IDX     (0U)
+; ..\Appl\Source\adc_test.c	    16  #define ADC_TEST_GROUP2_SSBC_BUF_IDX     (1U)
+; ..\Appl\Source\adc_test.c	    17  #define ADC_TEST_PENDING_MAX_CYCLES     (4U)
+; ..\Appl\Source\adc_test.c	    18  
+; ..\Appl\Source\adc_test.c	    19  #define SAMPLE_RESISTANCE                  (double)(0.0025f)
+; ..\Appl\Source\adc_test.c	    20  #define AMP_GAIN                    (double)(15.71f)  	/* Modify the value according to phaseCurrentSense->curVO1.gain */
+; ..\Appl\Source\adc_test.c	    21  #define SAMPLE_CURR_CON_FACTOR      0.0310885097645123 //(double)(ADC_REF_V/4095.0f/AMP_GAIN/SAMPLE_RESISTANCE)
+; ..\Appl\Source\adc_test.c	    22  
+; ..\Appl\Source\adc_test.c	    23  
+; ..\Appl\Source\adc_test.c	    24  #define ADC_REF_V                   (float)(5.0f)
+; ..\Appl\Source\adc_test.c	    25  #define VBUS_UP_RES                 (float)(68.0f)
+; ..\Appl\Source\adc_test.c	    26  #define VBUS_DOWN_RES               (float)(10.0f)
+; ..\Appl\Source\adc_test.c	    27  //#define VBUS_CONVERSION_FACTOR      (float)(ADC_REF_V*(VBUS_UP_RES+VBUS_DOWN_RES)/VBUS_DOWN_RES/4095.0f)
+; ..\Appl\Source\adc_test.c	    28  #define VBUS_CONVERSION_FACTOR		0.0095238095238095
+; ..\Appl\Source\adc_test.c	    29  
+; ..\Appl\Source\adc_test.c	    30  #define VRO_CONVERSION_FACTOR 0.0012210012210012
 ; ..\Appl\Source\adc_test.c	    31  
-; ..\Appl\Source\adc_test.c	    32  Adc_ValueGroupType AdcTest_Group9183SenseRaw[ADC_TEST_GROUP0_CHANNEL_COUNT];
-; ..\Appl\Source\adc_test.c	    33  Adc_ValueGroupType AdcTest_Group9183Vo2Raw[ADC_TEST_GROUP2_CHANNEL_COUNT];
-; ..\Appl\Source\adc_test.c	    34  Adc_ValueGroupType AdcTest_Group9183Vo3Raw[ADC_TEST_GROUP3_CHANNEL_COUNT];
-; ..\Appl\Source\adc_test.c	    35  
-; ..\Appl\Source\adc_test.c	    36  Adc_ValueGroupType AdcTest_VroRaw = 0U;
-; ..\Appl\Source\adc_test.c	    37  Adc_ValueGroupType AdcTest_Vo1Raw = 0U;
-; ..\Appl\Source\adc_test.c	    38  Adc_ValueGroupType AdcTest_Vo2Raw = 0U;
-; ..\Appl\Source\adc_test.c	    39  Adc_ValueGroupType AdcTest_Vo3Raw = 0U;
-; ..\Appl\Source\adc_test.c	    40  
-; ..\Appl\Source\adc_test.c	    41  uint32 AdcTest_EvadcClc = 0U;
-; ..\Appl\Source\adc_test.c	    42  uint32 AdcTest_EvadcG0Arbcfg = 0U;
-; ..\Appl\Source\adc_test.c	    43  uint32 AdcTest_EvadcG2Arbcfg = 0U;
-; ..\Appl\Source\adc_test.c	    44  uint32 AdcTest_EvadcG3Arbcfg = 0U;
-; ..\Appl\Source\adc_test.c	    45  uint32 AdcTest_EvadcG0Q0Qsr = 0U;
-; ..\Appl\Source\adc_test.c	    46  uint32 AdcTest_EvadcG2Q0Qsr = 0U;
-; ..\Appl\Source\adc_test.c	    47  uint32 AdcTest_EvadcG3Q0Qsr = 0U;
-; ..\Appl\Source\adc_test.c	    48  uint32 AdcTest_EvadcG0Res0 = 0U;
-; ..\Appl\Source\adc_test.c	    49  uint32 AdcTest_EvadcG0Res1 = 0U;
-; ..\Appl\Source\adc_test.c	    50  uint32 AdcTest_EvadcG2Res0 = 0U;
-; ..\Appl\Source\adc_test.c	    51  uint32 AdcTest_EvadcG3Res0 = 0U;
-; ..\Appl\Source\adc_test.c	    52  Adc_ValueGroupType AdcTest_VroResDirect = 0U;
-; ..\Appl\Source\adc_test.c	    53  Adc_ValueGroupType AdcTest_Vo1ResDirect = 0U;
-; ..\Appl\Source\adc_test.c	    54  Adc_ValueGroupType AdcTest_Vo2ResDirect = 0U;
-; ..\Appl\Source\adc_test.c	    55  Adc_ValueGroupType AdcTest_Vo3ResDirect = 0U;
-; ..\Appl\Source\adc_test.c	    56  uint8 AdcTest_VroResValid = 0U;
-; ..\Appl\Source\adc_test.c	    57  uint8 AdcTest_Vo1ResValid = 0U;
-; ..\Appl\Source\adc_test.c	    58  uint8 AdcTest_Vo2ResValid = 0U;
-; ..\Appl\Source\adc_test.c	    59  uint8 AdcTest_Vo3ResValid = 0U;
-; ..\Appl\Source\adc_test.c	    60  
-; ..\Appl\Source\adc_test.c	    61  static boolean AdcTest_Group9183SensePending = FALSE;
-; ..\Appl\Source\adc_test.c	    62  static boolean AdcTest_Group9183Vo2Pending = FALSE;
-; ..\Appl\Source\adc_test.c	    63  static boolean AdcTest_Group9183Vo3Pending = FALSE;
-; ..\Appl\Source\adc_test.c	    64  static uint8 AdcTest_Group9183SensePendingCycles = 0U;
-; ..\Appl\Source\adc_test.c	    65  static uint8 AdcTest_Group9183Vo2PendingCycles = 0U;
-; ..\Appl\Source\adc_test.c	    66  static uint8 AdcTest_Group9183Vo3PendingCycles = 0U;
-; ..\Appl\Source\adc_test.c	    67  
-; ..\Appl\Source\adc_test.c	    68  static Std_ReturnType AdcTest_StartGroup(Adc_GroupType group,
-; ..\Appl\Source\adc_test.c	    69      Adc_StatusType *lastStatus, boolean *pendingFlag);
-; ..\Appl\Source\adc_test.c	    70  static Std_ReturnType AdcTest_ReadPendingGroup(Adc_GroupType group,
-; ..\Appl\Source\adc_test.c	    71      Adc_ValueGroupType *buffer, uint8 channelCount, Adc_StatusType *lastStatus,
-; ..\Appl\Source\adc_test.c	    72      boolean *pendingFlag);
-; ..\Appl\Source\adc_test.c	    73  static void AdcTest_UpdateNamedValues(void);
-; ..\Appl\Source\adc_test.c	    74  static void AdcTest_SampleHwRegs(void);
-; ..\Appl\Source\adc_test.c	    75  static void AdcTest_PollResultHandlers(void);
-; ..\Appl\Source\adc_test.c	    76  static void AdcTest_ManageStalePending(boolean *pendingFlag, uint8 *pendingCycles,
-; ..\Appl\Source\adc_test.c	    77      Adc_StatusType groupStatus);
-; ..\Appl\Source\adc_test.c	    78  
-; ..\Appl\Source\adc_test.c	    79  void AdcTest_Init(void)
+; ..\Appl\Source\adc_test.c	    32  
+; ..\Appl\Source\adc_test.c	    33  Std_ReturnType AdcTest_InitResult = E_NOT_OK;
+; ..\Appl\Source\adc_test.c	    34  Std_ReturnType AdcTest_LastSampleResult = E_NOT_OK;
+; ..\Appl\Source\adc_test.c	    35  uint32 AdcTest_SampleCounter = 0U;
+; ..\Appl\Source\adc_test.c	    36  uint32 AdcTest_SampleOkCounter = 0U;
+; ..\Appl\Source\adc_test.c	    37  uint32 AdcTest_SampleFailCounter = 0U;
+; ..\Appl\Source\adc_test.c	    38  uint32 AdcTest_BusySkipCounter = 0U;
+; ..\Appl\Source\adc_test.c	    39  uint32 AdcTest_TimeoutCounter = 0U;
+; ..\Appl\Source\adc_test.c	    40  uint32 AdcTest_HandlerPollCounter = 0U;
+; ..\Appl\Source\adc_test.c	    41  uint8 AdcTest_SevFlagG0 = 0U;
+; ..\Appl\Source\adc_test.c	    42  uint8 AdcTest_SevFlagG2 = 0U;
+; ..\Appl\Source\adc_test.c	    43  uint8 AdcTest_SevFlagG3 = 0U;
+; ..\Appl\Source\adc_test.c	    44  uint8 AdcTest_SevFlagG8 = 0U;
+; ..\Appl\Source\adc_test.c	    45  Adc_StatusType AdcTest_Group9183SenseStatus = ADC_IDLE;
+; ..\Appl\Source\adc_test.c	    46  Adc_StatusType AdcTest_Group9183Vo2Status = ADC_IDLE;
+; ..\Appl\Source\adc_test.c	    47  Adc_StatusType AdcTest_Group9183Vo3Status = ADC_IDLE;
+; ..\Appl\Source\adc_test.c	    48  Adc_StatusType AdcTest_Group8Status = ADC_IDLE;
+; ..\Appl\Source\adc_test.c	    49  
+; ..\Appl\Source\adc_test.c	    50  Adc_ValueGroupType AdcTest_Group9183SenseRaw[ADC_TEST_GROUP0_CHANNEL_COUNT];
+; ..\Appl\Source\adc_test.c	    51  Adc_ValueGroupType AdcTest_Group9183Vo2Raw[ADC_TEST_GROUP2_CHANNEL_COUNT];
+; ..\Appl\Source\adc_test.c	    52  Adc_ValueGroupType AdcTest_Group9183Vo3Raw[ADC_TEST_GROUP3_CHANNEL_COUNT];
+; ..\Appl\Source\adc_test.c	    53  Adc_ValueGroupType AdcTest_Group8Raw[ADC_TEST_GROUP8_CHANNEL_COUNT];
+; ..\Appl\Source\adc_test.c	    54  
+; ..\Appl\Source\adc_test.c	    55  Adc_ValueGroupType AdcTest_VroRaw = 0U;
+; ..\Appl\Source\adc_test.c	    56  Adc_ValueGroupType AdcTest_Vo1Raw = 0U;
+; ..\Appl\Source\adc_test.c	    57  Adc_ValueGroupType AdcTest_Vo2Raw = 0U;
+; ..\Appl\Source\adc_test.c	    58  Adc_ValueGroupType AdcTest_Vo3Raw = 0U;
+; ..\Appl\Source\adc_test.c	    59  Adc_ValueGroupType AdcTest_SSbc=0u;
+; ..\Appl\Source\adc_test.c	    60  Adc_ValueGroupType AdcTest_vinv=0u;
+; ..\Appl\Source\adc_test.c	    61  
+; ..\Appl\Source\adc_test.c	    62  float VroAct=0;
+; ..\Appl\Source\adc_test.c	    63  float Vo1Act=0;
+; ..\Appl\Source\adc_test.c	    64  float Vo2Act=0;
+; ..\Appl\Source\adc_test.c	    65  float Vo3Act=0;
+; ..\Appl\Source\adc_test.c	    66  float SSbcAct=0;
+; ..\Appl\Source\adc_test.c	    67  float VinvAct=0;
+; ..\Appl\Source\adc_test.c	    68  
+; ..\Appl\Source\adc_test.c	    69  
+; ..\Appl\Source\adc_test.c	    70  uint32 AdcTest_EvadcClc = 0U;
+; ..\Appl\Source\adc_test.c	    71  uint32 AdcTest_EvadcG0Arbcfg = 0U;
+; ..\Appl\Source\adc_test.c	    72  uint32 AdcTest_EvadcG2Arbcfg = 0U;
+; ..\Appl\Source\adc_test.c	    73  uint32 AdcTest_EvadcG3Arbcfg = 0U;
+; ..\Appl\Source\adc_test.c	    74  uint32 AdcTest_EvadcG0Q0Qsr = 0U;
+; ..\Appl\Source\adc_test.c	    75  uint32 AdcTest_EvadcG2Q0Qsr = 0U;
+; ..\Appl\Source\adc_test.c	    76  uint32 AdcTest_EvadcG3Q0Qsr = 0U;
+; ..\Appl\Source\adc_test.c	    77  uint32 AdcTest_EvadcG0Res0 = 0U;
+; ..\Appl\Source\adc_test.c	    78  uint32 AdcTest_EvadcG0Res1 = 0U;
+; ..\Appl\Source\adc_test.c	    79  uint32 AdcTest_EvadcG2Res0 = 0U;
+; ..\Appl\Source\adc_test.c	    80  uint32 AdcTest_EvadcG3Res0 = 0U;
+; ..\Appl\Source\adc_test.c	    81  Adc_ValueGroupType AdcTest_VroResDirect = 0U;
+; ..\Appl\Source\adc_test.c	    82  Adc_ValueGroupType AdcTest_Vo1ResDirect = 0U;
+; ..\Appl\Source\adc_test.c	    83  Adc_ValueGroupType AdcTest_Vo2ResDirect = 0U;
+; ..\Appl\Source\adc_test.c	    84  Adc_ValueGroupType AdcTest_Vo3ResDirect = 0U;
+; ..\Appl\Source\adc_test.c	    85  uint8 AdcTest_VroResValid = 0U;
+; ..\Appl\Source\adc_test.c	    86  uint8 AdcTest_Vo1ResValid = 0U;
+; ..\Appl\Source\adc_test.c	    87  uint8 AdcTest_Vo2ResValid = 0U;
+; ..\Appl\Source\adc_test.c	    88  uint8 AdcTest_Vo3ResValid = 0U;
+; ..\Appl\Source\adc_test.c	    89  
+; ..\Appl\Source\adc_test.c	    90  static boolean AdcTest_Group9183SensePending = FALSE;
+; ..\Appl\Source\adc_test.c	    91  static boolean AdcTest_Group9183Vo2Pending = FALSE;
+; ..\Appl\Source\adc_test.c	    92  static boolean AdcTest_Group9183Vo3Pending = FALSE;
+; ..\Appl\Source\adc_test.c	    93  static boolean AdcTest_Group8Pending = FALSE;
+; ..\Appl\Source\adc_test.c	    94  static uint8 AdcTest_Group9183SensePendingCycles = 0U;
+; ..\Appl\Source\adc_test.c	    95  static uint8 AdcTest_Group9183Vo2PendingCycles = 0U;
+; ..\Appl\Source\adc_test.c	    96  static uint8 AdcTest_Group9183Vo3PendingCycles = 0U;
+; ..\Appl\Source\adc_test.c	    97  static uint8 AdcTest_Group8PendingCycles = 0U;
+; ..\Appl\Source\adc_test.c	    98  
+; ..\Appl\Source\adc_test.c	    99  static Std_ReturnType AdcTest_StartGroup(Adc_GroupType group,
+; ..\Appl\Source\adc_test.c	   100      Adc_StatusType *lastStatus, boolean *pendingFlag);
+; ..\Appl\Source\adc_test.c	   101  static Std_ReturnType AdcTest_ReadPendingGroup(Adc_GroupType group,
+; ..\Appl\Source\adc_test.c	   102      Adc_ValueGroupType *buffer, uint8 channelCount, Adc_StatusType *lastStatus,
+; ..\Appl\Source\adc_test.c	   103      boolean *pendingFlag);
+; ..\Appl\Source\adc_test.c	   104  static void AdcTest_UpdateNamedValues(void);
+; ..\Appl\Source\adc_test.c	   105  static void AdcTest_SampleHwRegs(void);
+; ..\Appl\Source\adc_test.c	   106  static void AdcTest_PollResultHandlers(void);
+; ..\Appl\Source\adc_test.c	   107  static void AdcTest_ManageStalePending(boolean *pendingFlag, uint8 *pendingCycles,
+; ..\Appl\Source\adc_test.c	   108      Adc_StatusType groupStatus);
+; ..\Appl\Source\adc_test.c	   109  
+; ..\Appl\Source\adc_test.c	   110  void AdcTest_Init(void)
 ; Function AdcTest_Init
-.L38:
+.L40:
 AdcTest_Init:	.type	func
 
-; ..\Appl\Source\adc_test.c	    80  {
-; ..\Appl\Source\adc_test.c	    81    Std_ReturnType result0;
-; ..\Appl\Source\adc_test.c	    82    Std_ReturnType result2;
-; ..\Appl\Source\adc_test.c	    83    Std_ReturnType result3;
-; ..\Appl\Source\adc_test.c	    84  
-; ..\Appl\Source\adc_test.c	    85  
-; ..\Appl\Source\adc_test.c	    86  
-; ..\Appl\Source\adc_test.c	    87    (void)memset(AdcTest_Group9183SenseRaw, 0, sizeof(AdcTest_Group9183SenseRaw));
+; ..\Appl\Source\adc_test.c	   111  {
+; ..\Appl\Source\adc_test.c	   112    Std_ReturnType result0;
+; ..\Appl\Source\adc_test.c	   113    Std_ReturnType result2;
+; ..\Appl\Source\adc_test.c	   114    Std_ReturnType result3;
+; ..\Appl\Source\adc_test.c	   115    Std_ReturnType result4;
+; ..\Appl\Source\adc_test.c	   116  
+; ..\Appl\Source\adc_test.c	   117  
+; ..\Appl\Source\adc_test.c	   118    (void)memset(AdcTest_Group9183SenseRaw, 0, sizeof(AdcTest_Group9183SenseRaw));
 	mov	d4,#0
 	lea	a4,AdcTest_Group9183SenseRaw
-.L268:
+.L304:
 	mov	d5,#4
 	call	memset
-.L269:
+.L305:
 
-; ..\Appl\Source\adc_test.c	    88    (void)memset(AdcTest_Group9183Vo2Raw, 0, sizeof(AdcTest_Group9183Vo2Raw));
+; ..\Appl\Source\adc_test.c	   119    (void)memset(AdcTest_Group9183Vo2Raw, 0, sizeof(AdcTest_Group9183Vo2Raw));
 	mov	d4,#0
 	lea	a4,AdcTest_Group9183Vo2Raw
-.L270:
-	mov	d5,#2
+.L306:
+	mov	d5,#4
 	call	memset
-.L271:
+.L307:
 
-; ..\Appl\Source\adc_test.c	    89    (void)memset(AdcTest_Group9183Vo3Raw, 0, sizeof(AdcTest_Group9183Vo3Raw));
+; ..\Appl\Source\adc_test.c	   120    (void)memset(AdcTest_Group9183Vo3Raw, 0, sizeof(AdcTest_Group9183Vo3Raw));
 	mov	d4,#0
 	lea	a4,AdcTest_Group9183Vo3Raw
-.L272:
+.L308:
 	mov	d5,#2
 	call	memset
-.L273:
+.L309:
 
-; ..\Appl\Source\adc_test.c	    90  
-; ..\Appl\Source\adc_test.c	    91    result0 = Adc_SetupResultBuffer(
-; ..\Appl\Source\adc_test.c	    92        AdcConf_AdcGroup_AdcGroup_9183Sense,
-; ..\Appl\Source\adc_test.c	    93        AdcTest_Group9183SenseRaw);
+; ..\Appl\Source\adc_test.c	   121    (void)memset(AdcTest_Group8Raw, 0, sizeof(AdcTest_Group8Raw));
+	mov	d4,#0
+	lea	a4,AdcTest_Group8Raw
+.L310:
+	mov	d5,#2
+	call	memset
+.L311:
+
+; ..\Appl\Source\adc_test.c	   122  
+; ..\Appl\Source\adc_test.c	   123    result0 = Adc_SetupResultBuffer(
+; ..\Appl\Source\adc_test.c	   124        AdcConf_AdcGroup_AdcGroup_9183Sense,
+; ..\Appl\Source\adc_test.c	   125        AdcTest_Group9183SenseRaw);
 	mov	d4,#0
 	lea	a4,AdcTest_Group9183SenseRaw
 	call	Adc_SetupResultBuffer
-.L228:
+.L259:
 
-; ..\Appl\Source\adc_test.c	    94    result2 = Adc_SetupResultBuffer(
-; ..\Appl\Source\adc_test.c	    95        AdcConf_AdcGroup_AdcGroup,
-; ..\Appl\Source\adc_test.c	    96        AdcTest_Group9183Vo2Raw);
+; ..\Appl\Source\adc_test.c	   126    result2 = Adc_SetupResultBuffer(
+; ..\Appl\Source\adc_test.c	   127        AdcConf_AdcGroup_AdcGroup,
+; ..\Appl\Source\adc_test.c	   128        AdcTest_Group9183Vo2Raw);
 	mov	d15,d2
 	lea	a4,AdcTest_Group9183Vo2Raw
-.L230:
+.L261:
 	mov	d4,#64
 	call	Adc_SetupResultBuffer
-.L229:
+.L260:
 
-; ..\Appl\Source\adc_test.c	    97    result3 = Adc_SetupResultBuffer(
-; ..\Appl\Source\adc_test.c	    98        AdcConf_AdcGroup_AdcGroup_1,
-; ..\Appl\Source\adc_test.c	    99        AdcTest_Group9183Vo3Raw);
+; ..\Appl\Source\adc_test.c	   129    result3 = Adc_SetupResultBuffer(
+; ..\Appl\Source\adc_test.c	   130        AdcConf_AdcGroup_AdcGroup_1,
+; ..\Appl\Source\adc_test.c	   131        AdcTest_Group9183Vo3Raw);
 	mov	d8,d2
 	lea	a4,AdcTest_Group9183Vo3Raw
-.L232:
+.L263:
 	mov	d4,#96
 	call	Adc_SetupResultBuffer
-.L231:
+.L262:
 
-; ..\Appl\Source\adc_test.c	   100  
-; ..\Appl\Source\adc_test.c	   101    if ((result0 == E_OK) && (result2 == E_OK) && (result3 == E_OK))
+; ..\Appl\Source\adc_test.c	   132    result4=Adc_SetupResultBuffer(
+; ..\Appl\Source\adc_test.c	   133  	  AdcConf_AdcGroup_AdcGroup_2,
+; ..\Appl\Source\adc_test.c	   134  	  AdcTest_Group8Raw);
+	mov	d9,d2
+	lea	a4,AdcTest_Group8Raw
+.L265:
+	mov	d4,#256
+	call	Adc_SetupResultBuffer
+.L264:
+
+; ..\Appl\Source\adc_test.c	   135    if ((result0 == E_OK) && (result2 == E_OK) && (result3 == E_OK)&&(result4 == E_OK))
 	jne	d15,#0,.L2
-.L274:
+.L312:
 	jne	d8,#0,.L3
-.L275:
-	jeq	d2,#0,.L5
+.L313:
+	jne	d9,#0,.L4
+.L314:
+	jeq	d2,#0,.L6
+.L4:
 .L3:
 .L2:
 
-; ..\Appl\Source\adc_test.c	   102    {
-; ..\Appl\Source\adc_test.c	   103      AdcTest_InitResult = E_OK;
-; ..\Appl\Source\adc_test.c	   104    }
-; ..\Appl\Source\adc_test.c	   105    else
-; ..\Appl\Source\adc_test.c	   106    {
-; ..\Appl\Source\adc_test.c	   107      AdcTest_InitResult = E_NOT_OK;
+; ..\Appl\Source\adc_test.c	   136    {
+; ..\Appl\Source\adc_test.c	   137      AdcTest_InitResult = E_OK;
+; ..\Appl\Source\adc_test.c	   138    }
+; ..\Appl\Source\adc_test.c	   139    else
+; ..\Appl\Source\adc_test.c	   140    {
+; ..\Appl\Source\adc_test.c	   141      AdcTest_InitResult = E_NOT_OK;
 	mov	d15,#1
-.L5:
+.L6:
 
-; ..\Appl\Source\adc_test.c	   108    }
-; ..\Appl\Source\adc_test.c	   109  
-; ..\Appl\Source\adc_test.c	   110    AdcTest_SampleHwRegs();
+; ..\Appl\Source\adc_test.c	   142    }
+; ..\Appl\Source\adc_test.c	   143  
+; ..\Appl\Source\adc_test.c	   144    AdcTest_SampleHwRegs();
 	st.b	AdcTest_InitResult,d15
-.L276:
+.L315:
 	call	AdcTest_SampleHwRegs
-.L233:
+.L266:
 
-; ..\Appl\Source\adc_test.c	   111    AdcTest_UpdateNamedValues();
+; ..\Appl\Source\adc_test.c	   145    AdcTest_UpdateNamedValues();
 	j	AdcTest_UpdateNamedValues
-.L189:
+.L217:
 	
 __AdcTest_Init_function_end:
 	.size	AdcTest_Init,__AdcTest_Init_function_end-AdcTest_Init
-.L61:
+.L63:
 	; End of function
 	
 	.sdecl	'.text.adc_test.AdcTest_RunOnce',code,cluster('AdcTest_RunOnce')
@@ -198,297 +267,356 @@ __AdcTest_Init_function_end:
 	
 	.global	AdcTest_RunOnce
 
-; ..\Appl\Source\adc_test.c	   112  }
-; ..\Appl\Source\adc_test.c	   113  
-; ..\Appl\Source\adc_test.c	   114  void AdcTest_RunOnce(void)
+; ..\Appl\Source\adc_test.c	   146  }
+; ..\Appl\Source\adc_test.c	   147  
+; ..\Appl\Source\adc_test.c	   148  void AdcTest_RunOnce(void)
 ; Function AdcTest_RunOnce
-.L40:
+.L42:
 AdcTest_RunOnce:	.type	func
 
-; ..\Appl\Source\adc_test.c	   115  {
-; ..\Appl\Source\adc_test.c	   116    Std_ReturnType result0;
-; ..\Appl\Source\adc_test.c	   117    Std_ReturnType result2;
-; ..\Appl\Source\adc_test.c	   118    Std_ReturnType result3;
-; ..\Appl\Source\adc_test.c	   119    Std_ReturnType start0;
-; ..\Appl\Source\adc_test.c	   120    Std_ReturnType start2;
-; ..\Appl\Source\adc_test.c	   121    Std_ReturnType start3;
-; ..\Appl\Source\adc_test.c	   122  
-; ..\Appl\Source\adc_test.c	   123    AdcTest_SampleCounter++;
+; ..\Appl\Source\adc_test.c	   149  {
+; ..\Appl\Source\adc_test.c	   150    Std_ReturnType result0;
+; ..\Appl\Source\adc_test.c	   151    Std_ReturnType result2;
+; ..\Appl\Source\adc_test.c	   152    Std_ReturnType result3;
+; ..\Appl\Source\adc_test.c	   153    Std_ReturnType result4;
+; ..\Appl\Source\adc_test.c	   154    Std_ReturnType start0;
+; ..\Appl\Source\adc_test.c	   155    Std_ReturnType start2;
+; ..\Appl\Source\adc_test.c	   156    Std_ReturnType start3;
+; ..\Appl\Source\adc_test.c	   157    Std_ReturnType start4;
+; ..\Appl\Source\adc_test.c	   158    AdcTest_SampleCounter++;
 	ld.w	d15,AdcTest_SampleCounter
-.L281:
+.L320:
 	add	d15,#1
 	st.w	AdcTest_SampleCounter,d15
-.L282:
+.L321:
 
-; ..\Appl\Source\adc_test.c	   124  
-; ..\Appl\Source\adc_test.c	   125    if (AdcTest_InitResult != E_OK)
+; ..\Appl\Source\adc_test.c	   159  
+; ..\Appl\Source\adc_test.c	   160    if (AdcTest_InitResult != E_OK)
 	ld.bu	d15,AdcTest_InitResult
-.L283:
-	jeq	d15,#0,.L6
-.L284:
+.L322:
+	jeq	d15,#0,.L7
+.L323:
 
-; ..\Appl\Source\adc_test.c	   126    {
-; ..\Appl\Source\adc_test.c	   127      AdcTest_SampleHwRegs();
+; ..\Appl\Source\adc_test.c	   161    {
+; ..\Appl\Source\adc_test.c	   162      AdcTest_SampleHwRegs();
 	call	AdcTest_SampleHwRegs
-.L285:
+.L324:
 
-; ..\Appl\Source\adc_test.c	   128      AdcTest_LastSampleResult = E_NOT_OK;
-; ..\Appl\Source\adc_test.c	   129      AdcTest_SampleFailCounter++;
-; ..\Appl\Source\adc_test.c	   130      return;
-	j	.L7
-.L6:
+; ..\Appl\Source\adc_test.c	   163      AdcTest_LastSampleResult = E_NOT_OK;
+; ..\Appl\Source\adc_test.c	   164      AdcTest_SampleFailCounter++;
+; ..\Appl\Source\adc_test.c	   165      return;
+	j	.L8
+.L7:
 
-; ..\Appl\Source\adc_test.c	   131    }
-; ..\Appl\Source\adc_test.c	   132  
-; ..\Appl\Source\adc_test.c	   133    AdcTest_PollResultHandlers();
+; ..\Appl\Source\adc_test.c	   166    }
+; ..\Appl\Source\adc_test.c	   167  
+; ..\Appl\Source\adc_test.c	   168    AdcTest_PollResultHandlers();
 	call	AdcTest_PollResultHandlers
-.L286:
+.L325:
 
-; ..\Appl\Source\adc_test.c	   134  
-; ..\Appl\Source\adc_test.c	   135    result0 = AdcTest_ReadPendingGroup(
-; ..\Appl\Source\adc_test.c	   136        AdcConf_AdcGroup_AdcGroup_9183Sense,
-; ..\Appl\Source\adc_test.c	   137        AdcTest_Group9183SenseRaw,
-; ..\Appl\Source\adc_test.c	   138        ADC_TEST_GROUP0_CHANNEL_COUNT,
-; ..\Appl\Source\adc_test.c	   139        &AdcTest_Group9183SenseStatus,
+; ..\Appl\Source\adc_test.c	   169  
+; ..\Appl\Source\adc_test.c	   170    result0 = AdcTest_ReadPendingGroup(
+; ..\Appl\Source\adc_test.c	   171        AdcConf_AdcGroup_AdcGroup_9183Sense,
+; ..\Appl\Source\adc_test.c	   172        AdcTest_Group9183SenseRaw,
+; ..\Appl\Source\adc_test.c	   173        ADC_TEST_GROUP0_CHANNEL_COUNT,
+; ..\Appl\Source\adc_test.c	   174        &AdcTest_Group9183SenseStatus,
 	lea	a5,AdcTest_Group9183SenseStatus
-.L287:
+.L326:
 	mov	d4,#0
 	lea	a4,AdcTest_Group9183SenseRaw
-.L288:
+.L327:
 
-; ..\Appl\Source\adc_test.c	   140        &AdcTest_Group9183SensePending);
+; ..\Appl\Source\adc_test.c	   175        &AdcTest_Group9183SensePending);
 	mov	d5,#2
 	lea	a6,AdcTest_Group9183SensePending
 	call	AdcTest_ReadPendingGroup
-.L234:
+.L267:
 
-; ..\Appl\Source\adc_test.c	   141    result2 = AdcTest_ReadPendingGroup(
-; ..\Appl\Source\adc_test.c	   142        AdcConf_AdcGroup_AdcGroup,
-; ..\Appl\Source\adc_test.c	   143        AdcTest_Group9183Vo2Raw,
-; ..\Appl\Source\adc_test.c	   144        ADC_TEST_GROUP2_CHANNEL_COUNT,
-; ..\Appl\Source\adc_test.c	   145        &AdcTest_Group9183Vo2Status,
-; ..\Appl\Source\adc_test.c	   146        &AdcTest_Group9183Vo2Pending);
-	mov	d8,d2
-	lea	a15,AdcTest_Group9183Vo2Pending
-.L236:
-	lea	a12,AdcTest_Group9183Vo2Status
-.L289:
+; ..\Appl\Source\adc_test.c	   176    result2 = AdcTest_ReadPendingGroup(
+; ..\Appl\Source\adc_test.c	   177        AdcConf_AdcGroup_AdcGroup,
+; ..\Appl\Source\adc_test.c	   178        AdcTest_Group9183Vo2Raw,
+; ..\Appl\Source\adc_test.c	   179        ADC_TEST_GROUP2_CHANNEL_COUNT,
+; ..\Appl\Source\adc_test.c	   180        &AdcTest_Group9183Vo2Status,
+	mov	d9,d2
+	lea	a5,AdcTest_Group9183Vo2Status
+.L269:
 	mov	d4,#64
 	lea	a4,AdcTest_Group9183Vo2Raw
-.L290:
+.L328:
+
+; ..\Appl\Source\adc_test.c	   181        &AdcTest_Group9183Vo2Pending);
+	mov	d5,#2
+	lea	a6,AdcTest_Group9183Vo2Pending
+	call	AdcTest_ReadPendingGroup
+.L268:
+
+; ..\Appl\Source\adc_test.c	   182    result3 = AdcTest_ReadPendingGroup(
+; ..\Appl\Source\adc_test.c	   183        AdcConf_AdcGroup_AdcGroup_1,
+; ..\Appl\Source\adc_test.c	   184        AdcTest_Group9183Vo3Raw,
+; ..\Appl\Source\adc_test.c	   185        ADC_TEST_GROUP3_CHANNEL_COUNT,
+; ..\Appl\Source\adc_test.c	   186        &AdcTest_Group9183Vo3Status,
+; ..\Appl\Source\adc_test.c	   187        &AdcTest_Group9183Vo3Pending);
+	mov	d10,d2
+	lea	a15,AdcTest_Group9183Vo3Pending
+.L271:
+	lea	a12,AdcTest_Group9183Vo3Status
+.L329:
+	mov	d4,#96
+	lea	a4,AdcTest_Group9183Vo3Raw
+.L330:
 	mov	d5,#1
 	mov.aa	a5,a12
 	mov.aa	a6,a15
 	call	AdcTest_ReadPendingGroup
-.L235:
+.L270:
 
-; ..\Appl\Source\adc_test.c	   147    result3 = AdcTest_ReadPendingGroup(
-; ..\Appl\Source\adc_test.c	   148        AdcConf_AdcGroup_AdcGroup_1,
-; ..\Appl\Source\adc_test.c	   149        AdcTest_Group9183Vo3Raw,
-; ..\Appl\Source\adc_test.c	   150        ADC_TEST_GROUP3_CHANNEL_COUNT,
-; ..\Appl\Source\adc_test.c	   151        &AdcTest_Group9183Vo3Status,
-; ..\Appl\Source\adc_test.c	   152        &AdcTest_Group9183Vo3Pending);
-	mov	d9,d2
-	lea	a13,AdcTest_Group9183Vo3Pending
-.L238:
-	lea	a14,AdcTest_Group9183Vo3Status
-.L291:
-	mov	d4,#96
-	lea	a4,AdcTest_Group9183Vo3Raw
-.L292:
-	mov	d5,#1
+; ..\Appl\Source\adc_test.c	   188    result4 = AdcTest_ReadPendingGroup(
+; ..\Appl\Source\adc_test.c	   189          AdcConf_AdcGroup_AdcGroup_2,
+; ..\Appl\Source\adc_test.c	   190  		AdcTest_Group8Raw,
+; ..\Appl\Source\adc_test.c	   191          ADC_TEST_GROUP8_CHANNEL_COUNT,
+; ..\Appl\Source\adc_test.c	   192          &AdcTest_Group8Status,
+; ..\Appl\Source\adc_test.c	   193          &AdcTest_Group8Pending);
+	mov	d8,#256
+	lea	a13,AdcTest_Group8Pending
+.L331:
+	mov	d4,d8
+	lea	a14,AdcTest_Group8Status
+.L332:
+	mov	d11,d2
 	mov.aa	a5,a14
+.L273:
+	mov	d5,#1
 	mov.aa	a6,a13
+.L333:
+	lea	a4,AdcTest_Group8Raw
+.L334:
 	call	AdcTest_ReadPendingGroup
-.L237:
+.L272:
 
-; ..\Appl\Source\adc_test.c	   153  
-; ..\Appl\Source\adc_test.c	   154    AdcTest_ManageStalePending(
-; ..\Appl\Source\adc_test.c	   155        &AdcTest_Group9183SensePending,
-; ..\Appl\Source\adc_test.c	   156        &AdcTest_Group9183SensePendingCycles,
-	mov	d10,d2
+; ..\Appl\Source\adc_test.c	   194  
+; ..\Appl\Source\adc_test.c	   195    AdcTest_ManageStalePending(
+; ..\Appl\Source\adc_test.c	   196        &AdcTest_Group9183SensePending,
+; ..\Appl\Source\adc_test.c	   197        &AdcTest_Group9183SensePendingCycles,
+	mov	d12,d2
 	lea	a5,AdcTest_Group9183SensePendingCycles
-.L240:
+.L275:
 
-; ..\Appl\Source\adc_test.c	   157        AdcTest_Group9183SenseStatus);
+; ..\Appl\Source\adc_test.c	   198        AdcTest_Group9183SenseStatus);
 	ld.bu	d4,AdcTest_Group9183SenseStatus
-.L293:
+.L335:
 	lea	a4,AdcTest_Group9183SensePending
-.L294:
+.L336:
 	call	AdcTest_ManageStalePending
-.L239:
+.L274:
 
-; ..\Appl\Source\adc_test.c	   158    AdcTest_ManageStalePending(
-; ..\Appl\Source\adc_test.c	   159        &AdcTest_Group9183Vo2Pending,
-; ..\Appl\Source\adc_test.c	   160        &AdcTest_Group9183Vo2PendingCycles,
+; ..\Appl\Source\adc_test.c	   199    AdcTest_ManageStalePending(
+; ..\Appl\Source\adc_test.c	   200        &AdcTest_Group9183Vo2Pending,
+; ..\Appl\Source\adc_test.c	   201        &AdcTest_Group9183Vo2PendingCycles,
 	lea	a5,AdcTest_Group9183Vo2PendingCycles
-.L295:
+.L337:
 
-; ..\Appl\Source\adc_test.c	   161        AdcTest_Group9183Vo2Status);
+; ..\Appl\Source\adc_test.c	   202        AdcTest_Group9183Vo2Status);
+	ld.bu	d4,AdcTest_Group9183Vo2Status
+.L338:
+	lea	a4,AdcTest_Group9183Vo2Pending
+.L339:
+	call	AdcTest_ManageStalePending
+.L340:
+
+; ..\Appl\Source\adc_test.c	   203    AdcTest_ManageStalePending(
+; ..\Appl\Source\adc_test.c	   204        &AdcTest_Group9183Vo3Pending,
+; ..\Appl\Source\adc_test.c	   205        &AdcTest_Group9183Vo3PendingCycles,
+	lea	a5,AdcTest_Group9183Vo3PendingCycles
+.L341:
+
+; ..\Appl\Source\adc_test.c	   206        AdcTest_Group9183Vo3Status);
 	ld.bu	d4,[a12]
 	mov.aa	a4,a15
 	call	AdcTest_ManageStalePending
-.L296:
+.L342:
 
-; ..\Appl\Source\adc_test.c	   162    AdcTest_ManageStalePending(
-; ..\Appl\Source\adc_test.c	   163        &AdcTest_Group9183Vo3Pending,
-; ..\Appl\Source\adc_test.c	   164        &AdcTest_Group9183Vo3PendingCycles,
-	lea	a5,AdcTest_Group9183Vo3PendingCycles
-.L297:
+; ..\Appl\Source\adc_test.c	   207    AdcTest_ManageStalePending(
+; ..\Appl\Source\adc_test.c	   208        &AdcTest_Group8Pending,
+; ..\Appl\Source\adc_test.c	   209        &AdcTest_Group8PendingCycles,
+	lea	a5,AdcTest_Group8PendingCycles
+.L343:
 
-; ..\Appl\Source\adc_test.c	   165        AdcTest_Group9183Vo3Status);
+; ..\Appl\Source\adc_test.c	   210  	  AdcTest_Group8Status);
 	ld.bu	d4,[a14]
 	mov.aa	a4,a13
 	call	AdcTest_ManageStalePending
-.L298:
+.L344:
 
-; ..\Appl\Source\adc_test.c	   166  
-; ..\Appl\Source\adc_test.c	   167    start0 = AdcTest_StartGroup(
-; ..\Appl\Source\adc_test.c	   168        AdcConf_AdcGroup_AdcGroup_9183Sense,
+; ..\Appl\Source\adc_test.c	   211  
+; ..\Appl\Source\adc_test.c	   212    start0 = AdcTest_StartGroup(
+; ..\Appl\Source\adc_test.c	   213        AdcConf_AdcGroup_AdcGroup_9183Sense,
 	mov	d4,#0
 	lea	a4,AdcTest_Group9183SenseStatus
-.L299:
+.L345:
 	lea	a5,AdcTest_Group9183SensePending
-.L300:
+.L346:
 
-; ..\Appl\Source\adc_test.c	   169        &AdcTest_Group9183SenseStatus,
-; ..\Appl\Source\adc_test.c	   170        &AdcTest_Group9183SensePending);
+; ..\Appl\Source\adc_test.c	   214        &AdcTest_Group9183SenseStatus,
+; ..\Appl\Source\adc_test.c	   215        &AdcTest_Group9183SensePending);
 	call	AdcTest_StartGroup
-.L241:
-
-; ..\Appl\Source\adc_test.c	   171    start2 = AdcTest_StartGroup(
-; ..\Appl\Source\adc_test.c	   172        AdcConf_AdcGroup_AdcGroup,
-; ..\Appl\Source\adc_test.c	   173        &AdcTest_Group9183Vo2Status,
-; ..\Appl\Source\adc_test.c	   174        &AdcTest_Group9183Vo2Pending);
+.L276:
 	mov	d15,d2
-	mov.aa	a4,a12
-.L243:
+	lea	a4,AdcTest_Group9183Vo2Status
+.L278:
+
+; ..\Appl\Source\adc_test.c	   216    start2 = AdcTest_StartGroup(
+; ..\Appl\Source\adc_test.c	   217        AdcConf_AdcGroup_AdcGroup,
 	mov	d4,#64
+	lea	a5,AdcTest_Group9183Vo2Pending
+.L347:
+
+; ..\Appl\Source\adc_test.c	   218        &AdcTest_Group9183Vo2Status,
+; ..\Appl\Source\adc_test.c	   219        &AdcTest_Group9183Vo2Pending);
+	call	AdcTest_StartGroup
+.L277:
+
+; ..\Appl\Source\adc_test.c	   220    start3 = AdcTest_StartGroup(
+; ..\Appl\Source\adc_test.c	   221        AdcConf_AdcGroup_AdcGroup_1,
+; ..\Appl\Source\adc_test.c	   222        &AdcTest_Group9183Vo3Status,
+; ..\Appl\Source\adc_test.c	   223        &AdcTest_Group9183Vo3Pending);
+	mov	d13,d2
+	mov.aa	a4,a12
+.L281:
+	mov	d4,#96
 	mov.aa	a5,a15
 	call	AdcTest_StartGroup
-.L242:
+.L280:
 
-; ..\Appl\Source\adc_test.c	   175    start3 = AdcTest_StartGroup(
-; ..\Appl\Source\adc_test.c	   176        AdcConf_AdcGroup_AdcGroup_1,
-; ..\Appl\Source\adc_test.c	   177        &AdcTest_Group9183Vo3Status,
-; ..\Appl\Source\adc_test.c	   178        &AdcTest_Group9183Vo3Pending);
-	mov	d11,d2
+; ..\Appl\Source\adc_test.c	   224    start3 = AdcTest_StartGroup(
+; ..\Appl\Source\adc_test.c	   225        AdcConf_AdcGroup_AdcGroup_2,
+; ..\Appl\Source\adc_test.c	   226        &AdcTest_Group8Status,
+; ..\Appl\Source\adc_test.c	   227        &AdcTest_Group8Pending);
+	mov	d4,d8
 	mov.aa	a4,a14
-.L246:
-	mov	d4,#96
 	mov.aa	a5,a13
 	call	AdcTest_StartGroup
-.L245:
-	mov	d12,d2
-.L248:
+.L282:
+	mov	d8,d2
+.L284:
 
-; ..\Appl\Source\adc_test.c	   179  
-; ..\Appl\Source\adc_test.c	   180    if (start0 == E_OK)
-	jne	d15,#0,.L8
-.L301:
+; ..\Appl\Source\adc_test.c	   228  
+; ..\Appl\Source\adc_test.c	   229    if (start0 == E_OK)
+	jne	d15,#0,.L9
+.L348:
 
-; ..\Appl\Source\adc_test.c	   181    {
-; ..\Appl\Source\adc_test.c	   182      AdcTest_Group9183SensePendingCycles = 0U;
+; ..\Appl\Source\adc_test.c	   230    {
+; ..\Appl\Source\adc_test.c	   231      AdcTest_Group9183SensePendingCycles = 0U;
 	mov	d0,#0
 	st.b	AdcTest_Group9183SensePendingCycles,d0
-.L8:
-
-; ..\Appl\Source\adc_test.c	   183    }
-; ..\Appl\Source\adc_test.c	   184    if (start2 == E_OK)
-	jne	d11,#0,.L9
-.L302:
-
-; ..\Appl\Source\adc_test.c	   185    {
-; ..\Appl\Source\adc_test.c	   186      AdcTest_Group9183Vo2PendingCycles = 0U;
-	mov	d0,#0
-	st.b	AdcTest_Group9183Vo2PendingCycles,d0
 .L9:
 
-; ..\Appl\Source\adc_test.c	   187    }
-; ..\Appl\Source\adc_test.c	   188    if (start3 == E_OK)
-	jne	d12,#0,.L10
-.L303:
+; ..\Appl\Source\adc_test.c	   232    }
+; ..\Appl\Source\adc_test.c	   233    if (start2 == E_OK)
+	jne	d13,#0,.L10
+.L349:
 
-; ..\Appl\Source\adc_test.c	   189    {
-; ..\Appl\Source\adc_test.c	   190      AdcTest_Group9183Vo3PendingCycles = 0U;
+; ..\Appl\Source\adc_test.c	   234    {
+; ..\Appl\Source\adc_test.c	   235      AdcTest_Group9183Vo2PendingCycles = 0U;
 	mov	d0,#0
-	st.b	AdcTest_Group9183Vo3PendingCycles,d0
+	st.b	AdcTest_Group9183Vo2PendingCycles,d0
 .L10:
 
-; ..\Appl\Source\adc_test.c	   191    }
-; ..\Appl\Source\adc_test.c	   192  
-; ..\Appl\Source\adc_test.c	   193    AdcTest_SampleHwRegs();
-	call	AdcTest_SampleHwRegs
-.L247:
-
-; ..\Appl\Source\adc_test.c	   194    AdcTest_UpdateNamedValues();
-	call	AdcTest_UpdateNamedValues
-.L304:
-
-; ..\Appl\Source\adc_test.c	   195  
-; ..\Appl\Source\adc_test.c	   196    if ((result0 == E_OK) && (result2 == E_OK) && (result3 == E_OK))
+; ..\Appl\Source\adc_test.c	   236    }
+; ..\Appl\Source\adc_test.c	   237    if (start3 == E_OK)
 	jne	d8,#0,.L11
-.L305:
-	jne	d9,#0,.L12
-.L306:
-	jne	d10,#0,.L13
-.L307:
+.L350:
 
-; ..\Appl\Source\adc_test.c	   197    {
-; ..\Appl\Source\adc_test.c	   198      AdcTest_LastSampleResult = E_OK;
+; ..\Appl\Source\adc_test.c	   238    {
+; ..\Appl\Source\adc_test.c	   239      AdcTest_Group9183Vo3PendingCycles = 0U;
+	mov	d0,#0
+	st.b	AdcTest_Group9183Vo3PendingCycles,d0
+.L11:
+
+; ..\Appl\Source\adc_test.c	   240    }
+; ..\Appl\Source\adc_test.c	   241    if (start4 == E_OK)
+; ..\Appl\Source\adc_test.c	   242    {
+; ..\Appl\Source\adc_test.c	   243      AdcTest_Group8PendingCycles = 0U;
+	mov	d0,#0
+	st.b	AdcTest_Group8PendingCycles,d0
+.L351:
+
+; ..\Appl\Source\adc_test.c	   244    }
+; ..\Appl\Source\adc_test.c	   245  
+; ..\Appl\Source\adc_test.c	   246    AdcTest_SampleHwRegs();
+	call	AdcTest_SampleHwRegs
+.L283:
+
+; ..\Appl\Source\adc_test.c	   247    AdcTest_UpdateNamedValues();
+	call	AdcTest_UpdateNamedValues
+.L352:
+
+; ..\Appl\Source\adc_test.c	   248  
+; ..\Appl\Source\adc_test.c	   249    if ((result0 == E_OK) && (result2 == E_OK) && (result3 == E_OK)&&(result4==E_OK))
+	jne	d9,#0,.L12
+.L353:
+	jne	d10,#0,.L13
+.L354:
+	jne	d11,#0,.L14
+.L355:
+	jne	d12,#0,.L15
+.L356:
+
+; ..\Appl\Source\adc_test.c	   250    {
+; ..\Appl\Source\adc_test.c	   251      AdcTest_LastSampleResult = E_OK;
 	mov	d15,#0
 	st.b	AdcTest_LastSampleResult,d15
-.L244:
+.L279:
 
-; ..\Appl\Source\adc_test.c	   199      AdcTest_SampleOkCounter++;
+; ..\Appl\Source\adc_test.c	   252      AdcTest_SampleOkCounter++;
 	ld.w	d15,AdcTest_SampleOkCounter
-.L308:
+.L357:
 	add	d15,#1
 	st.w	AdcTest_SampleOkCounter,d15
-.L309:
+.L358:
 
-; ..\Appl\Source\adc_test.c	   200    }
-; ..\Appl\Source\adc_test.c	   201    else if ((start0 == E_OK) && (start2 == E_OK) && (start3 == E_OK))
-; ..\Appl\Source\adc_test.c	   202    {
-; ..\Appl\Source\adc_test.c	   203      AdcTest_LastSampleResult = E_OK;
-; ..\Appl\Source\adc_test.c	   204    }
-; ..\Appl\Source\adc_test.c	   205    else
-; ..\Appl\Source\adc_test.c	   206    {
-; ..\Appl\Source\adc_test.c	   207      AdcTest_LastSampleResult = E_NOT_OK;
-; ..\Appl\Source\adc_test.c	   208      AdcTest_SampleFailCounter++;
-; ..\Appl\Source\adc_test.c	   209    }
-; ..\Appl\Source\adc_test.c	   210  }
+; ..\Appl\Source\adc_test.c	   253    }
+; ..\Appl\Source\adc_test.c	   254    else if ((start0 == E_OK) && (start2 == E_OK) && (start3 == E_OK)&&(start4==E_OK))
+; ..\Appl\Source\adc_test.c	   255    {
+; ..\Appl\Source\adc_test.c	   256      AdcTest_LastSampleResult = E_OK;
+; ..\Appl\Source\adc_test.c	   257    }
+; ..\Appl\Source\adc_test.c	   258    else
+; ..\Appl\Source\adc_test.c	   259    {
+; ..\Appl\Source\adc_test.c	   260      AdcTest_LastSampleResult = E_NOT_OK;
+; ..\Appl\Source\adc_test.c	   261      AdcTest_SampleFailCounter++;
+; ..\Appl\Source\adc_test.c	   262    }
+; ..\Appl\Source\adc_test.c	   263  }
 	ret
+.L15:
+.L14:
 .L13:
 .L12:
-.L11:
-	jne	d15,#0,.L15
-.L310:
-	jne	d11,#0,.L16
-.L311:
-	jne	d12,#0,.L17
-.L312:
+	jne	d15,#0,.L17
+.L359:
+	jne	d13,#0,.L18
+.L360:
+	jne	d8,#0,.L19
+.L361:
 	st.b	AdcTest_LastSampleResult,d15
-.L313:
+.L362:
 	ret
+.L19:
+.L18:
 .L17:
-.L16:
-.L15:
-.L7:
+.L8:
 	mov	d15,#1
 	st.b	AdcTest_LastSampleResult,d15
-.L314:
+.L363:
 	ld.w	d15,AdcTest_SampleFailCounter
-.L315:
+.L364:
 	add	d15,#1
 	st.w	AdcTest_SampleFailCounter,d15
-.L316:
+.L365:
 	ret
-.L194:
+.L223:
 	
 __AdcTest_RunOnce_function_end:
 	.size	AdcTest_RunOnce,__AdcTest_RunOnce_function_end-AdcTest_RunOnce
-.L66:
+.L68:
 	; End of function
 	
 	.sdecl	'.text.adc_test.AdcTest_PollResultHandlers',code,cluster('AdcTest_PollResultHandlers')
@@ -496,61 +624,72 @@ __AdcTest_RunOnce_function_end:
 	.align	2
 	
 
-; ..\Appl\Source\adc_test.c	   211  
-; ..\Appl\Source\adc_test.c	   212  static void AdcTest_PollResultHandlers(void)
+; ..\Appl\Source\adc_test.c	   264  
+; ..\Appl\Source\adc_test.c	   265  static void AdcTest_PollResultHandlers(void)
 ; Function AdcTest_PollResultHandlers
-.L42:
+.L44:
 AdcTest_PollResultHandlers:	.type	func
 
-; ..\Appl\Source\adc_test.c	   213  {
-; ..\Appl\Source\adc_test.c	   214    AdcTest_HandlerPollCounter++;
+; ..\Appl\Source\adc_test.c	   266  {
+; ..\Appl\Source\adc_test.c	   267    AdcTest_HandlerPollCounter++;
 	ld.w	d15,AdcTest_HandlerPollCounter
-.L389:
+.L451:
 
-; ..\Appl\Source\adc_test.c	   215    AdcTest_SevFlagG0 = (uint8)MODULE_EVADC.G[0].SEFLAG.B.SEV0;
+; ..\Appl\Source\adc_test.c	   268    AdcTest_SevFlagG0 = (uint8)MODULE_EVADC.G[0].SEFLAG.B.SEV0;
 	movh.a	a15,#61442
-.L390:
+.L452:
 	add	d15,#1
 	st.w	AdcTest_HandlerPollCounter,d15
-.L391:
+.L453:
 
-; ..\Appl\Source\adc_test.c	   216    AdcTest_SevFlagG2 = (uint8)MODULE_EVADC.G[2].SEFLAG.B.SEV0;
-; ..\Appl\Source\adc_test.c	   217    AdcTest_SevFlagG3 = (uint8)MODULE_EVADC.G[3].SEFLAG.B.SEV0;
-; ..\Appl\Source\adc_test.c	   218  
-; ..\Appl\Source\adc_test.c	   219    Adc_RS0EventInterruptHandler(0U);
+; ..\Appl\Source\adc_test.c	   269    AdcTest_SevFlagG2 = (uint8)MODULE_EVADC.G[2].SEFLAG.B.SEV0;
+; ..\Appl\Source\adc_test.c	   270    AdcTest_SevFlagG3 = (uint8)MODULE_EVADC.G[3].SEFLAG.B.SEV0;
+; ..\Appl\Source\adc_test.c	   271    AdcTest_SevFlagG8 = (uint8)MODULE_EVADC.G[8].SEFLAG.B.SEV0;
+; ..\Appl\Source\adc_test.c	   272  
+; ..\Appl\Source\adc_test.c	   273    Adc_RS0EventInterruptHandler(0U);
 	mov	d4,#0
-.L392:
+.L454:
 	ld.bu	d15,[a15]@los(0xf0020588)
-.L393:
+.L455:
 	and	d15,#1
 	st.b	AdcTest_SevFlagG0,d15
-.L394:
+.L456:
 	ld.bu	d15,[a15]@los(0xf0020d88)
-.L395:
+.L457:
 	and	d15,#1
 	st.b	AdcTest_SevFlagG2,d15
-.L396:
+.L458:
 	ld.bu	d15,[a15]@los(0xf0021188)
-.L397:
+.L459:
 	and	d15,#1
 	st.b	AdcTest_SevFlagG3,d15
-.L398:
+.L460:
+	ld.bu	d15,[a15]@los(0xf0022588)
+.L461:
+	and	d15,#1
+	st.b	AdcTest_SevFlagG8,d15
+.L462:
 	call	Adc_RS0EventInterruptHandler
-.L399:
+.L463:
 
-; ..\Appl\Source\adc_test.c	   220    Adc_RS0EventInterruptHandler(2U);
+; ..\Appl\Source\adc_test.c	   274    Adc_RS0EventInterruptHandler(2U);
 	mov	d4,#2
 	call	Adc_RS0EventInterruptHandler
-.L400:
+.L464:
 
-; ..\Appl\Source\adc_test.c	   221    Adc_RS0EventInterruptHandler(3U);
+; ..\Appl\Source\adc_test.c	   275    Adc_RS0EventInterruptHandler(3U);
 	mov	d4,#3
+	call	Adc_RS0EventInterruptHandler
+.L465:
+
+; ..\Appl\Source\adc_test.c	   276    Adc_RS0EventInterruptHandler(8U);
+	mov	d4,#8
 	j	Adc_RS0EventInterruptHandler
-.L219:
+.L249:
 	
 __AdcTest_PollResultHandlers_function_end:
 	.size	AdcTest_PollResultHandlers,__AdcTest_PollResultHandlers_function_end-AdcTest_PollResultHandlers
-.L91:
+.L93:
 	; End of function
 	
 	.sdecl	'.text.adc_test.AdcTest_ManageStalePending',code,cluster('AdcTest_ManageStalePending')
@@ -558,94 +697,94 @@ __AdcTest_PollResultHandlers_function_end:
 	.align	2
 	
 
-; ..\Appl\Source\adc_test.c	   222  }
-; ..\Appl\Source\adc_test.c	   223  
-; ..\Appl\Source\adc_test.c	   224  static void AdcTest_ManageStalePending(boolean *pendingFlag, uint8 *pendingCycles,
+; ..\Appl\Source\adc_test.c	   277  }
+; ..\Appl\Source\adc_test.c	   278  
+; ..\Appl\Source\adc_test.c	   279  static void AdcTest_ManageStalePending(boolean *pendingFlag, uint8 *pendingCycles,
 ; Function AdcTest_ManageStalePending
-.L44:
+.L46:
 AdcTest_ManageStalePending:	.type	func
 
-; ..\Appl\Source\adc_test.c	   225      Adc_StatusType groupStatus)
-; ..\Appl\Source\adc_test.c	   226  {
-; ..\Appl\Source\adc_test.c	   227    if ((pendingFlag == NULL_PTR) || (*pendingFlag == FALSE))
+; ..\Appl\Source\adc_test.c	   280      Adc_StatusType groupStatus)
+; ..\Appl\Source\adc_test.c	   281  {
+; ..\Appl\Source\adc_test.c	   282    if ((pendingFlag == NULL_PTR) || (*pendingFlag == FALSE))
 	ld.bu	d15,[a4]
-.L405:
-	jne	d15,#0,.L19
-.L406:
+.L470:
+	jne	d15,#0,.L21
+.L471:
 
-; ..\Appl\Source\adc_test.c	   228    {
-; ..\Appl\Source\adc_test.c	   229      if (pendingCycles != NULL_PTR)
-; ..\Appl\Source\adc_test.c	   230      {
-; ..\Appl\Source\adc_test.c	   231        *pendingCycles = 0U;
+; ..\Appl\Source\adc_test.c	   283    {
+; ..\Appl\Source\adc_test.c	   284      if (pendingCycles != NULL_PTR)
+; ..\Appl\Source\adc_test.c	   285      {
+; ..\Appl\Source\adc_test.c	   286        *pendingCycles = 0U;
 	st.b	[a5],d15
-.L407:
+.L472:
 
-; ..\Appl\Source\adc_test.c	   232      }
-; ..\Appl\Source\adc_test.c	   233      return;
-; ..\Appl\Source\adc_test.c	   234    }
-; ..\Appl\Source\adc_test.c	   235  
-; ..\Appl\Source\adc_test.c	   236    if ((groupStatus == ADC_COMPLETED) || (groupStatus == ADC_STREAM_COMPLETED))
-; ..\Appl\Source\adc_test.c	   237    {
-; ..\Appl\Source\adc_test.c	   238      return;
-; ..\Appl\Source\adc_test.c	   239    }
-; ..\Appl\Source\adc_test.c	   240  
-; ..\Appl\Source\adc_test.c	   241    if (groupStatus == ADC_IDLE)
-; ..\Appl\Source\adc_test.c	   242    {
-; ..\Appl\Source\adc_test.c	   243      *pendingFlag = FALSE;
-; ..\Appl\Source\adc_test.c	   244      if (pendingCycles != NULL_PTR)
-; ..\Appl\Source\adc_test.c	   245      {
-; ..\Appl\Source\adc_test.c	   246        *pendingCycles = 0U;
-; ..\Appl\Source\adc_test.c	   247      }
-; ..\Appl\Source\adc_test.c	   248      AdcTest_TimeoutCounter++;
-; ..\Appl\Source\adc_test.c	   249      return;
-; ..\Appl\Source\adc_test.c	   250    }
-; ..\Appl\Source\adc_test.c	   251  
-; ..\Appl\Source\adc_test.c	   252    if (pendingCycles != NULL_PTR)
-; ..\Appl\Source\adc_test.c	   253    {
-; ..\Appl\Source\adc_test.c	   254      (*pendingCycles)++;
-; ..\Appl\Source\adc_test.c	   255      if (*pendingCycles >= ADC_TEST_PENDING_MAX_CYCLES)
-; ..\Appl\Source\adc_test.c	   256      {
-; ..\Appl\Source\adc_test.c	   257        *pendingFlag = FALSE;
-; ..\Appl\Source\adc_test.c	   258        *pendingCycles = 0U;
-; ..\Appl\Source\adc_test.c	   259        AdcTest_TimeoutCounter++;
-; ..\Appl\Source\adc_test.c	   260      }
-; ..\Appl\Source\adc_test.c	   261    }
-; ..\Appl\Source\adc_test.c	   262  }
+; ..\Appl\Source\adc_test.c	   287      }
+; ..\Appl\Source\adc_test.c	   288      return;
+; ..\Appl\Source\adc_test.c	   289    }
+; ..\Appl\Source\adc_test.c	   290  
+; ..\Appl\Source\adc_test.c	   291    if ((groupStatus == ADC_COMPLETED) || (groupStatus == ADC_STREAM_COMPLETED))
+; ..\Appl\Source\adc_test.c	   292    {
+; ..\Appl\Source\adc_test.c	   293      return;
+; ..\Appl\Source\adc_test.c	   294    }
+; ..\Appl\Source\adc_test.c	   295  
+; ..\Appl\Source\adc_test.c	   296    if (groupStatus == ADC_IDLE)
+; ..\Appl\Source\adc_test.c	   297    {
+; ..\Appl\Source\adc_test.c	   298      *pendingFlag = FALSE;
+; ..\Appl\Source\adc_test.c	   299      if (pendingCycles != NULL_PTR)
+; ..\Appl\Source\adc_test.c	   300      {
+; ..\Appl\Source\adc_test.c	   301        *pendingCycles = 0U;
+; ..\Appl\Source\adc_test.c	   302      }
+; ..\Appl\Source\adc_test.c	   303      AdcTest_TimeoutCounter++;
+; ..\Appl\Source\adc_test.c	   304      return;
+; ..\Appl\Source\adc_test.c	   305    }
+; ..\Appl\Source\adc_test.c	   306  
+; ..\Appl\Source\adc_test.c	   307    if (pendingCycles != NULL_PTR)
+; ..\Appl\Source\adc_test.c	   308    {
+; ..\Appl\Source\adc_test.c	   309      (*pendingCycles)++;
+; ..\Appl\Source\adc_test.c	   310      if (*pendingCycles >= ADC_TEST_PENDING_MAX_CYCLES)
+; ..\Appl\Source\adc_test.c	   311      {
+; ..\Appl\Source\adc_test.c	   312        *pendingFlag = FALSE;
+; ..\Appl\Source\adc_test.c	   313        *pendingCycles = 0U;
+; ..\Appl\Source\adc_test.c	   314        AdcTest_TimeoutCounter++;
+; ..\Appl\Source\adc_test.c	   315      }
+; ..\Appl\Source\adc_test.c	   316    }
+; ..\Appl\Source\adc_test.c	   317  }
 	ret
-.L19:
-	jeq	d4,#2,.L21
-.L408:
-	jeq	d4,#3,.L22
-.L409:
-	jeq	d4,#0,.L23
-.L410:
+.L21:
+	jeq	d4,#2,.L23
+.L473:
+	jeq	d4,#3,.L24
+.L474:
+	jeq	d4,#0,.L25
+.L475:
 	ld.bu	d15,[a5]
-.L411:
+.L476:
 	add	d15,#1
 	st.b	[a5],d15
-.L412:
+.L477:
 	ld.bu	d15,[a5]
-.L413:
-	jlt.u	d15,#4,.L24
-.L23:
+.L478:
+	jlt.u	d15,#4,.L26
+.L25:
 	mov	d15,#0
 	st.b	[a4],d15
-.L414:
+.L479:
 	st.b	[a5],d15
-.L415:
+.L480:
 	ld.w	d15,AdcTest_TimeoutCounter
-.L416:
+.L481:
 	add	d15,#1
 	st.w	AdcTest_TimeoutCounter,d15
+.L26:
 .L24:
-.L22:
-.L21:
+.L23:
 	ret
-.L220:
+.L250:
 	
 __AdcTest_ManageStalePending_function_end:
 	.size	AdcTest_ManageStalePending,__AdcTest_ManageStalePending_function_end-AdcTest_ManageStalePending
-.L96:
+.L98:
 	; End of function
 	
 	.sdecl	'.text.adc_test.AdcTest_StartGroup',code,cluster('AdcTest_StartGroup')
@@ -653,84 +792,84 @@ __AdcTest_ManageStalePending_function_end:
 	.align	2
 	
 
-; ..\Appl\Source\adc_test.c	   263  
-; ..\Appl\Source\adc_test.c	   264  static Std_ReturnType AdcTest_StartGroup(Adc_GroupType group,
+; ..\Appl\Source\adc_test.c	   318  
+; ..\Appl\Source\adc_test.c	   319  static Std_ReturnType AdcTest_StartGroup(Adc_GroupType group,
 ; Function AdcTest_StartGroup
-.L46:
+.L48:
 AdcTest_StartGroup:	.type	func
 	mov	d8,d4
 	mov.aa	a15,a4
-.L250:
+.L286:
 	mov.aa	a12,a5
-.L251:
+.L287:
 
-; ..\Appl\Source\adc_test.c	   265      Adc_StatusType *lastStatus, boolean *pendingFlag)
-; ..\Appl\Source\adc_test.c	   266  {
-; ..\Appl\Source\adc_test.c	   267    Adc_StatusType groupStatus;
-; ..\Appl\Source\adc_test.c	   268  
-; ..\Appl\Source\adc_test.c	   269    groupStatus = Adc_GetGroupStatus(group);
+; ..\Appl\Source\adc_test.c	   320      Adc_StatusType *lastStatus, boolean *pendingFlag)
+; ..\Appl\Source\adc_test.c	   321  {
+; ..\Appl\Source\adc_test.c	   322    Adc_StatusType groupStatus;
+; ..\Appl\Source\adc_test.c	   323  
+; ..\Appl\Source\adc_test.c	   324    groupStatus = Adc_GetGroupStatus(group);
 	call	Adc_GetGroupStatus
-.L249:
+.L285:
 
-; ..\Appl\Source\adc_test.c	   270    if (lastStatus != NULL_PTR)
-; ..\Appl\Source\adc_test.c	   271    {
-; ..\Appl\Source\adc_test.c	   272      *lastStatus = groupStatus;
+; ..\Appl\Source\adc_test.c	   325    if (lastStatus != NULL_PTR)
+; ..\Appl\Source\adc_test.c	   326    {
+; ..\Appl\Source\adc_test.c	   327      *lastStatus = groupStatus;
 	st.b	[a15],d2
-.L321:
+.L370:
 
-; ..\Appl\Source\adc_test.c	   273    }
-; ..\Appl\Source\adc_test.c	   274  
-; ..\Appl\Source\adc_test.c	   275    if (groupStatus == ADC_BUSY)
-	jne	d2,#1,.L25
-.L322:
+; ..\Appl\Source\adc_test.c	   328    }
+; ..\Appl\Source\adc_test.c	   329  
+; ..\Appl\Source\adc_test.c	   330    if (groupStatus == ADC_BUSY)
+	jne	d2,#1,.L27
+.L371:
 
-; ..\Appl\Source\adc_test.c	   276    {
-; ..\Appl\Source\adc_test.c	   277      AdcTest_BusySkipCounter++;
+; ..\Appl\Source\adc_test.c	   331    {
+; ..\Appl\Source\adc_test.c	   332      AdcTest_BusySkipCounter++;
 	ld.w	d15,AdcTest_BusySkipCounter
-.L323:
+.L372:
 	add	d15,#1
 	st.w	AdcTest_BusySkipCounter,d15
-.L324:
+.L373:
 
-; ..\Appl\Source\adc_test.c	   278      return E_NOT_OK;
-	j	.L26
-.L25:
+; ..\Appl\Source\adc_test.c	   333      return E_NOT_OK;
+	j	.L28
+.L27:
 
-; ..\Appl\Source\adc_test.c	   279    }
-; ..\Appl\Source\adc_test.c	   280  
-; ..\Appl\Source\adc_test.c	   281    if ((pendingFlag != NULL_PTR) && (*pendingFlag == TRUE))
+; ..\Appl\Source\adc_test.c	   334    }
+; ..\Appl\Source\adc_test.c	   335  
+; ..\Appl\Source\adc_test.c	   336    if ((pendingFlag != NULL_PTR) && (*pendingFlag == TRUE))
 	ld.bu	d15,[a12]
-.L325:
-	jne	d15,#1,.L27
+.L374:
+	jne	d15,#1,.L29
 
-; ..\Appl\Source\adc_test.c	   282    {
-; ..\Appl\Source\adc_test.c	   283      return E_NOT_OK;
-; ..\Appl\Source\adc_test.c	   284    }
-; ..\Appl\Source\adc_test.c	   285  
-; ..\Appl\Source\adc_test.c	   286    Adc_StartGroupConversion(group);
-; ..\Appl\Source\adc_test.c	   287    if (pendingFlag != NULL_PTR)
-; ..\Appl\Source\adc_test.c	   288    {
-; ..\Appl\Source\adc_test.c	   289      *pendingFlag = TRUE;
-; ..\Appl\Source\adc_test.c	   290    }
-; ..\Appl\Source\adc_test.c	   291    return E_OK;
-; ..\Appl\Source\adc_test.c	   292  }
-.L26:
+; ..\Appl\Source\adc_test.c	   337    {
+; ..\Appl\Source\adc_test.c	   338      return E_NOT_OK;
+; ..\Appl\Source\adc_test.c	   339    }
+; ..\Appl\Source\adc_test.c	   340  
+; ..\Appl\Source\adc_test.c	   341    Adc_StartGroupConversion(group);
+; ..\Appl\Source\adc_test.c	   342    if (pendingFlag != NULL_PTR)
+; ..\Appl\Source\adc_test.c	   343    {
+; ..\Appl\Source\adc_test.c	   344      *pendingFlag = TRUE;
+; ..\Appl\Source\adc_test.c	   345    }
+; ..\Appl\Source\adc_test.c	   346    return E_OK;
+; ..\Appl\Source\adc_test.c	   347  }
+.L28:
 	mov	d2,#1
 	ret
-.L27:
+.L29:
 	mov	d4,d8
 	call	Adc_StartGroupConversion
-.L252:
+.L288:
 	mov	d15,#1
 	st.b	[a12],d15
-.L326:
+.L375:
 	mov	d2,#0
 	ret
-.L201:
+.L231:
 	
 __AdcTest_StartGroup_function_end:
 	.size	AdcTest_StartGroup,__AdcTest_StartGroup_function_end-AdcTest_StartGroup
-.L71:
+.L73:
 	; End of function
 	
 	.sdecl	'.text.adc_test.AdcTest_ReadPendingGroup',code,cluster('AdcTest_ReadPendingGroup')
@@ -738,105 +877,105 @@ __AdcTest_StartGroup_function_end:
 	.align	2
 	
 
-; ..\Appl\Source\adc_test.c	   293  
-; ..\Appl\Source\adc_test.c	   294  static Std_ReturnType AdcTest_ReadPendingGroup(Adc_GroupType group,
+; ..\Appl\Source\adc_test.c	   348  
+; ..\Appl\Source\adc_test.c	   349  static Std_ReturnType AdcTest_ReadPendingGroup(Adc_GroupType group,
 ; Function AdcTest_ReadPendingGroup
-.L48:
+.L50:
 AdcTest_ReadPendingGroup:	.type	func
 	mov.aa	a13,a6
-.L254:
+.L290:
 
-; ..\Appl\Source\adc_test.c	   295      Adc_ValueGroupType *buffer, uint8 channelCount, Adc_StatusType *lastStatus,
-; ..\Appl\Source\adc_test.c	   296      boolean *pendingFlag)
-; ..\Appl\Source\adc_test.c	   297  {
-; ..\Appl\Source\adc_test.c	   298    Adc_StatusType groupStatus;
-; ..\Appl\Source\adc_test.c	   299  
-; ..\Appl\Source\adc_test.c	   300    if ((pendingFlag == NULL_PTR) || (*pendingFlag == FALSE))
+; ..\Appl\Source\adc_test.c	   350      Adc_ValueGroupType *buffer, uint8 channelCount, Adc_StatusType *lastStatus,
+; ..\Appl\Source\adc_test.c	   351      boolean *pendingFlag)
+; ..\Appl\Source\adc_test.c	   352  {
+; ..\Appl\Source\adc_test.c	   353    Adc_StatusType groupStatus;
+; ..\Appl\Source\adc_test.c	   354  
+; ..\Appl\Source\adc_test.c	   355    if ((pendingFlag == NULL_PTR) || (*pendingFlag == FALSE))
 	mov	d8,d4
 	ld.bu	d15,[a13]
-.L255:
+.L291:
 	mov.aa	a15,a4
-.L256:
+.L292:
 	mov.aa	a12,a5
-.L257:
-	jeq	d15,#0,.L30
-.L331:
+.L293:
+	jeq	d15,#0,.L32
+.L380:
 
-; ..\Appl\Source\adc_test.c	   301    {
-; ..\Appl\Source\adc_test.c	   302      return E_NOT_OK;
-; ..\Appl\Source\adc_test.c	   303    }
-; ..\Appl\Source\adc_test.c	   304  
-; ..\Appl\Source\adc_test.c	   305    groupStatus = Adc_GetGroupStatus(group);
+; ..\Appl\Source\adc_test.c	   356    {
+; ..\Appl\Source\adc_test.c	   357      return E_NOT_OK;
+; ..\Appl\Source\adc_test.c	   358    }
+; ..\Appl\Source\adc_test.c	   359  
+; ..\Appl\Source\adc_test.c	   360    groupStatus = Adc_GetGroupStatus(group);
 	call	Adc_GetGroupStatus
-.L253:
+.L289:
 
-; ..\Appl\Source\adc_test.c	   306  
-; ..\Appl\Source\adc_test.c	   307    if (lastStatus != NULL_PTR)
-; ..\Appl\Source\adc_test.c	   308    {
-; ..\Appl\Source\adc_test.c	   309      *lastStatus = groupStatus;
+; ..\Appl\Source\adc_test.c	   361  
+; ..\Appl\Source\adc_test.c	   362    if (lastStatus != NULL_PTR)
+; ..\Appl\Source\adc_test.c	   363    {
+; ..\Appl\Source\adc_test.c	   364      *lastStatus = groupStatus;
 	st.b	[a12],d2
-.L332:
+.L381:
 
-; ..\Appl\Source\adc_test.c	   310    }
-; ..\Appl\Source\adc_test.c	   311  
-; ..\Appl\Source\adc_test.c	   312    if (groupStatus == ADC_BUSY)
-	jeq	d2,#1,.L31
-.L333:
+; ..\Appl\Source\adc_test.c	   365    }
+; ..\Appl\Source\adc_test.c	   366  
+; ..\Appl\Source\adc_test.c	   367    if (groupStatus == ADC_BUSY)
+	jeq	d2,#1,.L33
+.L382:
 
-; ..\Appl\Source\adc_test.c	   313    {
-; ..\Appl\Source\adc_test.c	   314      return E_NOT_OK;
-; ..\Appl\Source\adc_test.c	   315    }
-; ..\Appl\Source\adc_test.c	   316  
-; ..\Appl\Source\adc_test.c	   317    if ((groupStatus != ADC_COMPLETED) && (groupStatus != ADC_STREAM_COMPLETED))
-	jeq	d2,#2,.L32
-.L334:
-	jne	d2,#3,.L33
-.L32:
+; ..\Appl\Source\adc_test.c	   368    {
+; ..\Appl\Source\adc_test.c	   369      return E_NOT_OK;
+; ..\Appl\Source\adc_test.c	   370    }
+; ..\Appl\Source\adc_test.c	   371  
+; ..\Appl\Source\adc_test.c	   372    if ((groupStatus != ADC_COMPLETED) && (groupStatus != ADC_STREAM_COMPLETED))
+	jeq	d2,#2,.L34
+.L383:
+	jne	d2,#3,.L35
+.L34:
 
-; ..\Appl\Source\adc_test.c	   318    {
-; ..\Appl\Source\adc_test.c	   319      return E_NOT_OK;
-; ..\Appl\Source\adc_test.c	   320    }
-; ..\Appl\Source\adc_test.c	   321  
-; ..\Appl\Source\adc_test.c	   322    if (Adc_ReadGroup(group, buffer) != E_OK)
+; ..\Appl\Source\adc_test.c	   373    {
+; ..\Appl\Source\adc_test.c	   374      return E_NOT_OK;
+; ..\Appl\Source\adc_test.c	   375    }
+; ..\Appl\Source\adc_test.c	   376  
+; ..\Appl\Source\adc_test.c	   377    if (Adc_ReadGroup(group, buffer) != E_OK)
 	mov	d4,d8
 	mov.aa	a4,a15
-.L259:
+.L295:
 	call	Adc_ReadGroup
-.L258:
-	jne	d2,#0,.L34
-.L335:
+.L294:
+	jne	d2,#0,.L36
+.L384:
 
-; ..\Appl\Source\adc_test.c	   323    {
-; ..\Appl\Source\adc_test.c	   324      *pendingFlag = FALSE;
-; ..\Appl\Source\adc_test.c	   325      return E_NOT_OK;
-; ..\Appl\Source\adc_test.c	   326    }
-; ..\Appl\Source\adc_test.c	   327  
-; ..\Appl\Source\adc_test.c	   328    if (channelCount == 0U)
-; ..\Appl\Source\adc_test.c	   329    {
-; ..\Appl\Source\adc_test.c	   330      *pendingFlag = FALSE;
-; ..\Appl\Source\adc_test.c	   331      return E_NOT_OK;
-; ..\Appl\Source\adc_test.c	   332    }
-; ..\Appl\Source\adc_test.c	   333  
-; ..\Appl\Source\adc_test.c	   334    *pendingFlag = FALSE;
+; ..\Appl\Source\adc_test.c	   378    {
+; ..\Appl\Source\adc_test.c	   379      *pendingFlag = FALSE;
+; ..\Appl\Source\adc_test.c	   380      return E_NOT_OK;
+; ..\Appl\Source\adc_test.c	   381    }
+; ..\Appl\Source\adc_test.c	   382  
+; ..\Appl\Source\adc_test.c	   383    if (channelCount == 0U)
+; ..\Appl\Source\adc_test.c	   384    {
+; ..\Appl\Source\adc_test.c	   385      *pendingFlag = FALSE;
+; ..\Appl\Source\adc_test.c	   386      return E_NOT_OK;
+; ..\Appl\Source\adc_test.c	   387    }
+; ..\Appl\Source\adc_test.c	   388  
+; ..\Appl\Source\adc_test.c	   389    *pendingFlag = FALSE;
 	st.b	[a13],d2
-.L336:
+.L385:
 
-; ..\Appl\Source\adc_test.c	   335    return E_OK;
-; ..\Appl\Source\adc_test.c	   336  }
+; ..\Appl\Source\adc_test.c	   390    return E_OK;
+; ..\Appl\Source\adc_test.c	   391  }
 	ret
-.L34:
+.L36:
 	mov	d15,#0
 	st.b	[a13],d15
+.L35:
 .L33:
-.L31:
-.L30:
+.L32:
 	mov	d2,#1
 	ret
-.L209:
+.L239:
 	
 __AdcTest_ReadPendingGroup_function_end:
 	.size	AdcTest_ReadPendingGroup,__AdcTest_ReadPendingGroup_function_end-AdcTest_ReadPendingGroup
-.L76:
+.L78:
 	; End of function
 	
 	.sdecl	'.text.adc_test.AdcTest_UpdateNamedValues',code,cluster('AdcTest_UpdateNamedValues')
@@ -844,44 +983,94 @@ __AdcTest_ReadPendingGroup_function_end:
 	.align	2
 	
 
-; ..\Appl\Source\adc_test.c	   337  
-; ..\Appl\Source\adc_test.c	   338  static void AdcTest_UpdateNamedValues(void)
+; ..\Appl\Source\adc_test.c	   392  
+; ..\Appl\Source\adc_test.c	   393  static void AdcTest_UpdateNamedValues(void)
 ; Function AdcTest_UpdateNamedValues
-.L50:
+.L52:
 AdcTest_UpdateNamedValues:	.type	func
 
-; ..\Appl\Source\adc_test.c	   339  {
-; ..\Appl\Source\adc_test.c	   340    AdcTest_Vo1Raw = AdcTest_Group9183SenseRaw[ADC_TEST_GROUP0_VO1_BUF_IDX];
+; ..\Appl\Source\adc_test.c	   394  {
+; ..\Appl\Source\adc_test.c	   395    AdcTest_Vo1Raw = AdcTest_Group9183SenseRaw[ADC_TEST_GROUP0_VO1_BUF_IDX];
+; ..\Appl\Source\adc_test.c	   396    AdcTest_VroRaw = AdcTest_Group9183SenseRaw[ADC_TEST_GROUP0_VRO_BUF_IDX];
+	ld.hu	d0,AdcTest_Group9183SenseRaw+2
+.L390:
+	st.h	AdcTest_VroRaw,d0
+.L391:
+
+; ..\Appl\Source\adc_test.c	   397    AdcTest_Vo2Raw = AdcTest_Group9183Vo2Raw[0];
+; ..\Appl\Source\adc_test.c	   398    AdcTest_SSbc =AdcTest_Group9183Vo2Raw[ADC_TEST_GROUP2_SSBC_BUF_IDX];
+; ..\Appl\Source\adc_test.c	   399    AdcTest_Vo3Raw = AdcTest_Group9183Vo3Raw[0];
+; ..\Appl\Source\adc_test.c	   400    AdcTest_vinv =AdcTest_Group8Raw[0];
+; ..\Appl\Source\adc_test.c	   401  
+; ..\Appl\Source\adc_test.c	   402    VroAct=AdcTest_VroRaw*VRO_CONVERSION_FACTOR;
+	utof	d0,d0
 	ld.hu	d15,AdcTest_Group9183SenseRaw
-.L341:
+.L392:
+	ld.w	d3,.1.cnt
+.L393:
 	st.h	AdcTest_Vo1Raw,d15
-.L342:
+.L394:
+	mul.f	d0,d0,d3
+	st.w	VroAct,d0
+.L395:
 
-; ..\Appl\Source\adc_test.c	   341    AdcTest_VroRaw = AdcTest_Group9183SenseRaw[ADC_TEST_GROUP0_VRO_BUF_IDX];
-	ld.hu	d15,AdcTest_Group9183SenseRaw+2
-.L343:
-	st.h	AdcTest_VroRaw,d15
-.L344:
+; ..\Appl\Source\adc_test.c	   403    Vo1Act=AdcTest_Vo1Raw*SAMPLE_CURR_CON_FACTOR;
+	utof	d15,d15
+	ld.w	d0,.2.cnt
+.L396:
+	ld.hu	d1,AdcTest_Group9183Vo2Raw
+.L397:
+	mul.f	d15,d15,d0
+	st.w	Vo1Act,d15
+.L398:
 
-; ..\Appl\Source\adc_test.c	   342    AdcTest_Vo2Raw = AdcTest_Group9183Vo2Raw[0];
-	ld.hu	d15,AdcTest_Group9183Vo2Raw
-.L345:
-	st.h	AdcTest_Vo2Raw,d15
-.L346:
+; ..\Appl\Source\adc_test.c	   404    Vo2Act=AdcTest_Vo2Raw*SAMPLE_CURR_CON_FACTOR;
+	utof	d15,d1
+	ld.hu	d2,AdcTest_Group9183Vo3Raw
+.L399:
+	ld.hu	d4,AdcTest_Group9183Vo2Raw+2
+.L400:
+	mul.f	d15,d15,d0
+	st.w	Vo2Act,d15
+.L401:
 
-; ..\Appl\Source\adc_test.c	   343    AdcTest_Vo3Raw = AdcTest_Group9183Vo3Raw[0];
-	ld.hu	d15,AdcTest_Group9183Vo3Raw
-.L347:
-	st.h	AdcTest_Vo3Raw,d15
-.L348:
+; ..\Appl\Source\adc_test.c	   405    Vo3Act=AdcTest_Vo3Raw*SAMPLE_CURR_CON_FACTOR;
+	utof	d15,d2
+	ld.hu	d5,AdcTest_Group8Raw
+.L402:
+	st.h	AdcTest_Vo2Raw,d1
+.L403:
+	mul.f	d15,d15,d0
+	st.w	Vo3Act,d15
+.L404:
 
-; ..\Appl\Source\adc_test.c	   344  }
+; ..\Appl\Source\adc_test.c	   406    SSbcAct=AdcTest_SSbc*VBUS_CONVERSION_FACTOR;
+	utof	d0,d4
+	ld.w	d15,.3.cnt
+.L405:
+	st.h	AdcTest_SSbc,d4
+.L406:
+	mul.f	d0,d0,d15
+	st.w	SSbcAct,d0
+.L407:
+
+; ..\Appl\Source\adc_test.c	   407    VinvAct=AdcTest_vinv*VBUS_CONVERSION_FACTOR;
+	utof	d0,d5
+	st.h	AdcTest_Vo3Raw,d2
+.L408:
+	st.h	AdcTest_vinv,d5
+.L409:
+	mul.f	d15,d0,d15
+	st.w	VinvAct,d15
+.L410:
+
+; ..\Appl\Source\adc_test.c	   408  }
 	ret
-.L217:
+.L247:
 	
 __AdcTest_UpdateNamedValues_function_end:
 	.size	AdcTest_UpdateNamedValues,__AdcTest_UpdateNamedValues_function_end-AdcTest_UpdateNamedValues
-.L81:
+.L83:
 	; End of function
 	
 	.sdecl	'.text.adc_test.AdcTest_SampleHwRegs',code,cluster('AdcTest_SampleHwRegs')
@@ -889,137 +1078,137 @@ __AdcTest_UpdateNamedValues_function_end:
 	.align	2
 	
 
-; ..\Appl\Source\adc_test.c	   345  
-; ..\Appl\Source\adc_test.c	   346  static void AdcTest_SampleHwRegs(void)
+; ..\Appl\Source\adc_test.c	   409  
+; ..\Appl\Source\adc_test.c	   410  static void AdcTest_SampleHwRegs(void)
 ; Function AdcTest_SampleHwRegs
-.L52:
+.L54:
 AdcTest_SampleHwRegs:	.type	func
 
-; ..\Appl\Source\adc_test.c	   347  {
-; ..\Appl\Source\adc_test.c	   348    AdcTest_EvadcClc = MODULE_EVADC.CLC.U;
+; ..\Appl\Source\adc_test.c	   411  {
+; ..\Appl\Source\adc_test.c	   412    AdcTest_EvadcClc = MODULE_EVADC.CLC.U;
 	movh.a	a15,#61442
 	ld.w	d15,[a15]
-.L353:
+.L415:
 	st.w	AdcTest_EvadcClc,d15
-.L354:
+.L416:
 
-; ..\Appl\Source\adc_test.c	   349    AdcTest_EvadcG0Arbcfg = MODULE_EVADC.G[0].ARBCFG.U;
+; ..\Appl\Source\adc_test.c	   413    AdcTest_EvadcG0Arbcfg = MODULE_EVADC.G[0].ARBCFG.U;
 	ld.w	d15,[a15]@los(0xf0020480)
-.L355:
+.L417:
 	st.w	AdcTest_EvadcG0Arbcfg,d15
-.L356:
+.L418:
 
-; ..\Appl\Source\adc_test.c	   350    AdcTest_EvadcG2Arbcfg = MODULE_EVADC.G[2].ARBCFG.U;
+; ..\Appl\Source\adc_test.c	   414    AdcTest_EvadcG2Arbcfg = MODULE_EVADC.G[2].ARBCFG.U;
 	ld.w	d15,[a15]@los(0xf0020c80)
-.L357:
+.L419:
 	st.w	AdcTest_EvadcG2Arbcfg,d15
-.L358:
+.L420:
 
-; ..\Appl\Source\adc_test.c	   351    AdcTest_EvadcG3Arbcfg = MODULE_EVADC.G[3].ARBCFG.U;
+; ..\Appl\Source\adc_test.c	   415    AdcTest_EvadcG3Arbcfg = MODULE_EVADC.G[3].ARBCFG.U;
 	ld.w	d15,[a15]@los(0xf0021080)
-.L359:
+.L421:
 	st.w	AdcTest_EvadcG3Arbcfg,d15
-.L360:
+.L422:
 
-; ..\Appl\Source\adc_test.c	   352    AdcTest_EvadcG0Q0Qsr = MODULE_EVADC.G[0].Q[0].QSR.U;
+; ..\Appl\Source\adc_test.c	   416    AdcTest_EvadcG0Q0Qsr = MODULE_EVADC.G[0].Q[0].QSR.U;
 	ld.w	d15,[a15]@los(0xf0020508)
-.L361:
+.L423:
 	st.w	AdcTest_EvadcG0Q0Qsr,d15
-.L362:
+.L424:
 
-; ..\Appl\Source\adc_test.c	   353    AdcTest_EvadcG2Q0Qsr = MODULE_EVADC.G[2].Q[0].QSR.U;
+; ..\Appl\Source\adc_test.c	   417    AdcTest_EvadcG2Q0Qsr = MODULE_EVADC.G[2].Q[0].QSR.U;
 	ld.w	d15,[a15]@los(0xf0020d08)
-.L363:
+.L425:
 	st.w	AdcTest_EvadcG2Q0Qsr,d15
-.L364:
+.L426:
 
-; ..\Appl\Source\adc_test.c	   354    AdcTest_EvadcG3Q0Qsr = MODULE_EVADC.G[3].Q[0].QSR.U;
+; ..\Appl\Source\adc_test.c	   418    AdcTest_EvadcG3Q0Qsr = MODULE_EVADC.G[3].Q[0].QSR.U;
 	ld.w	d15,[a15]@los(0xf0021108)
-.L365:
+.L427:
 	st.w	AdcTest_EvadcG3Q0Qsr,d15
-.L366:
+.L428:
 
-; ..\Appl\Source\adc_test.c	   355    AdcTest_EvadcG0Res0 = MODULE_EVADC.G[0].RES[0].U;
+; ..\Appl\Source\adc_test.c	   419    AdcTest_EvadcG0Res0 = MODULE_EVADC.G[0].RES[0].U;
 	ld.w	d15,[a15]@los(0xf0020700)
-.L367:
+.L429:
 	st.w	AdcTest_EvadcG0Res0,d15
-.L368:
+.L430:
 
-; ..\Appl\Source\adc_test.c	   356    AdcTest_EvadcG0Res1 = MODULE_EVADC.G[0].RES[1].U;
-; ..\Appl\Source\adc_test.c	   357    AdcTest_EvadcG2Res0 = MODULE_EVADC.G[2].RES[0].U;
-; ..\Appl\Source\adc_test.c	   358    AdcTest_EvadcG3Res0 = MODULE_EVADC.G[3].RES[0].U;
-; ..\Appl\Source\adc_test.c	   359  
-; ..\Appl\Source\adc_test.c	   360    AdcTest_Vo1ResDirect =
-; ..\Appl\Source\adc_test.c	   361        (Adc_ValueGroupType)(AdcTest_EvadcG0Res0 & ADC_TEST_RES_VALUE_MASK);
+; ..\Appl\Source\adc_test.c	   420    AdcTest_EvadcG0Res1 = MODULE_EVADC.G[0].RES[1].U;
+; ..\Appl\Source\adc_test.c	   421    AdcTest_EvadcG2Res0 = MODULE_EVADC.G[2].RES[0].U;
+; ..\Appl\Source\adc_test.c	   422    AdcTest_EvadcG3Res0 = MODULE_EVADC.G[3].RES[0].U;
+; ..\Appl\Source\adc_test.c	   423  
+; ..\Appl\Source\adc_test.c	   424    AdcTest_Vo1ResDirect =
+; ..\Appl\Source\adc_test.c	   425        (Adc_ValueGroupType)(AdcTest_EvadcG0Res0 & ADC_TEST_RES_VALUE_MASK);
 	insert	d3,d15,#0,#12,#20
-.L369:
+.L431:
 	ld.w	d0,[a15]@los(0xf0020704)
-.L370:
+.L432:
 	st.w	AdcTest_EvadcG0Res1,d0
-.L371:
+.L433:
 
-; ..\Appl\Source\adc_test.c	   362    AdcTest_VroResDirect =
-; ..\Appl\Source\adc_test.c	   363        (Adc_ValueGroupType)(AdcTest_EvadcG0Res1 & ADC_TEST_RES_VALUE_MASK);
-; ..\Appl\Source\adc_test.c	   364    AdcTest_Vo2ResDirect =
-; ..\Appl\Source\adc_test.c	   365        (Adc_ValueGroupType)(AdcTest_EvadcG2Res0 & ADC_TEST_RES_VALUE_MASK);
-; ..\Appl\Source\adc_test.c	   366    AdcTest_Vo3ResDirect =
-; ..\Appl\Source\adc_test.c	   367        (Adc_ValueGroupType)(AdcTest_EvadcG3Res0 & ADC_TEST_RES_VALUE_MASK);
-; ..\Appl\Source\adc_test.c	   368  
-; ..\Appl\Source\adc_test.c	   369    AdcTest_Vo1ResValid =
-; ..\Appl\Source\adc_test.c	   370        (uint8)((AdcTest_EvadcG0Res0 >> IFX_EVADC_G_RES_VF_OFF) &
+; ..\Appl\Source\adc_test.c	   426    AdcTest_VroResDirect =
+; ..\Appl\Source\adc_test.c	   427        (Adc_ValueGroupType)(AdcTest_EvadcG0Res1 & ADC_TEST_RES_VALUE_MASK);
+; ..\Appl\Source\adc_test.c	   428    AdcTest_Vo2ResDirect =
+; ..\Appl\Source\adc_test.c	   429        (Adc_ValueGroupType)(AdcTest_EvadcG2Res0 & ADC_TEST_RES_VALUE_MASK);
+; ..\Appl\Source\adc_test.c	   430    AdcTest_Vo3ResDirect =
+; ..\Appl\Source\adc_test.c	   431        (Adc_ValueGroupType)(AdcTest_EvadcG3Res0 & ADC_TEST_RES_VALUE_MASK);
+; ..\Appl\Source\adc_test.c	   432  
+; ..\Appl\Source\adc_test.c	   433    AdcTest_Vo1ResValid =
+; ..\Appl\Source\adc_test.c	   434        (uint8)((AdcTest_EvadcG0Res0 >> IFX_EVADC_G_RES_VF_OFF) &
 	sh	d15,d15,#-31
-.L372:
+.L434:
 	ld.w	d1,[a15]@los(0xf0020f00)
-.L373:
+.L435:
 	st.w	AdcTest_EvadcG2Res0,d1
-.L374:
+.L436:
 	ld.w	d2,[a15]@los(0xf0021300)
-.L375:
+.L437:
 	st.w	AdcTest_EvadcG3Res0,d2
-.L376:
+.L438:
 	st.h	AdcTest_Vo1ResDirect,d3
-.L377:
+.L439:
 	insert	d3,d0,#0,#12,#20
 	st.h	AdcTest_VroResDirect,d3
-.L378:
+.L440:
 	insert	d3,d1,#0,#12,#20
 	st.h	AdcTest_Vo2ResDirect,d3
-.L379:
+.L441:
 	insert	d3,d2,#0,#12,#20
 	st.h	AdcTest_Vo3ResDirect,d3
-.L380:
+.L442:
 	st.b	AdcTest_Vo1ResValid,d15
-.L381:
+.L443:
 
-; ..\Appl\Source\adc_test.c	   371                IFX_EVADC_G_RES_VF_MSK);
-; ..\Appl\Source\adc_test.c	   372    AdcTest_VroResValid =
-; ..\Appl\Source\adc_test.c	   373        (uint8)((AdcTest_EvadcG0Res1 >> IFX_EVADC_G_RES_VF_OFF) &
+; ..\Appl\Source\adc_test.c	   435                IFX_EVADC_G_RES_VF_MSK);
+; ..\Appl\Source\adc_test.c	   436    AdcTest_VroResValid =
+; ..\Appl\Source\adc_test.c	   437        (uint8)((AdcTest_EvadcG0Res1 >> IFX_EVADC_G_RES_VF_OFF) &
 	sh	d15,d0,#-31
 	st.b	AdcTest_VroResValid,d15
-.L382:
+.L444:
 
-; ..\Appl\Source\adc_test.c	   374                IFX_EVADC_G_RES_VF_MSK);
-; ..\Appl\Source\adc_test.c	   375    AdcTest_Vo2ResValid =
-; ..\Appl\Source\adc_test.c	   376        (uint8)((AdcTest_EvadcG2Res0 >> IFX_EVADC_G_RES_VF_OFF) &
+; ..\Appl\Source\adc_test.c	   438                IFX_EVADC_G_RES_VF_MSK);
+; ..\Appl\Source\adc_test.c	   439    AdcTest_Vo2ResValid =
+; ..\Appl\Source\adc_test.c	   440        (uint8)((AdcTest_EvadcG2Res0 >> IFX_EVADC_G_RES_VF_OFF) &
 	sh	d15,d1,#-31
 	st.b	AdcTest_Vo2ResValid,d15
-.L383:
+.L445:
 
-; ..\Appl\Source\adc_test.c	   377                IFX_EVADC_G_RES_VF_MSK);
-; ..\Appl\Source\adc_test.c	   378    AdcTest_Vo3ResValid =
-; ..\Appl\Source\adc_test.c	   379        (uint8)((AdcTest_EvadcG3Res0 >> IFX_EVADC_G_RES_VF_OFF) &
+; ..\Appl\Source\adc_test.c	   441                IFX_EVADC_G_RES_VF_MSK);
+; ..\Appl\Source\adc_test.c	   442    AdcTest_Vo3ResValid =
+; ..\Appl\Source\adc_test.c	   443        (uint8)((AdcTest_EvadcG3Res0 >> IFX_EVADC_G_RES_VF_OFF) &
 	sh	d15,d2,#-31
 	st.b	AdcTest_Vo3ResValid,d15
-.L384:
+.L446:
 
-; ..\Appl\Source\adc_test.c	   380                IFX_EVADC_G_RES_VF_MSK);
-; ..\Appl\Source\adc_test.c	   381  }
+; ..\Appl\Source\adc_test.c	   444                IFX_EVADC_G_RES_VF_MSK);
+; ..\Appl\Source\adc_test.c	   445  }
 	ret
-.L218:
+.L248:
 	
 __AdcTest_SampleHwRegs_function_end:
 	.size	AdcTest_SampleHwRegs,__AdcTest_SampleHwRegs_function_end-AdcTest_SampleHwRegs
-.L86:
+.L88:
 	; End of function
 	
 	.sdecl	'.zdata.adc_test.AdcTest_InitResult',data,cluster('AdcTest_InitResult')
@@ -1094,6 +1283,12 @@ AdcTest_SevFlagG2:	.type	object
 AdcTest_SevFlagG3:	.type	object
 	.size	AdcTest_SevFlagG3,1
 	.space	1
+	.sdecl	'.zdata.adc_test.AdcTest_SevFlagG8',data,cluster('AdcTest_SevFlagG8')
+	.sect	'.zdata.adc_test.AdcTest_SevFlagG8'
+	.global	AdcTest_SevFlagG8
+AdcTest_SevFlagG8:	.type	object
+	.size	AdcTest_SevFlagG8,1
+	.space	1
 	.sdecl	'.zdata.adc_test.AdcTest_Group9183SenseStatus',data,cluster('AdcTest_Group9183SenseStatus')
 	.sect	'.zdata.adc_test.AdcTest_Group9183SenseStatus'
 	.global	AdcTest_Group9183SenseStatus
@@ -1112,6 +1307,12 @@ AdcTest_Group9183Vo2Status:	.type	object
 AdcTest_Group9183Vo3Status:	.type	object
 	.size	AdcTest_Group9183Vo3Status,1
 	.space	1
+	.sdecl	'.zdata.adc_test.AdcTest_Group8Status',data,cluster('AdcTest_Group8Status')
+	.sect	'.zdata.adc_test.AdcTest_Group8Status'
+	.global	AdcTest_Group8Status
+AdcTest_Group8Status:	.type	object
+	.size	AdcTest_Group8Status,1
+	.space	1
 	.sdecl	'.zbss.adc_test.AdcTest_Group9183SenseRaw',data,cluster('AdcTest_Group9183SenseRaw')
 	.sect	'.zbss.adc_test.AdcTest_Group9183SenseRaw'
 	.global	AdcTest_Group9183SenseRaw
@@ -1124,14 +1325,21 @@ AdcTest_Group9183SenseRaw:	.type	object
 	.global	AdcTest_Group9183Vo2Raw
 	.align	2
 AdcTest_Group9183Vo2Raw:	.type	object
-	.size	AdcTest_Group9183Vo2Raw,2
-	.space	2
+	.size	AdcTest_Group9183Vo2Raw,4
+	.space	4
 	.sdecl	'.zbss.adc_test.AdcTest_Group9183Vo3Raw',data,cluster('AdcTest_Group9183Vo3Raw')
 	.sect	'.zbss.adc_test.AdcTest_Group9183Vo3Raw'
 	.global	AdcTest_Group9183Vo3Raw
 	.align	2
 AdcTest_Group9183Vo3Raw:	.type	object
 	.size	AdcTest_Group9183Vo3Raw,2
+	.space	2
+	.sdecl	'.zbss.adc_test.AdcTest_Group8Raw',data,cluster('AdcTest_Group8Raw')
+	.sect	'.zbss.adc_test.AdcTest_Group8Raw'
+	.global	AdcTest_Group8Raw
+	.align	2
+AdcTest_Group8Raw:	.type	object
+	.size	AdcTest_Group8Raw,2
 	.space	2
 	.sdecl	'.zdata.adc_test.AdcTest_VroRaw',data,cluster('AdcTest_VroRaw')
 	.sect	'.zdata.adc_test.AdcTest_VroRaw'
@@ -1161,6 +1369,62 @@ AdcTest_Vo2Raw:	.type	object
 AdcTest_Vo3Raw:	.type	object
 	.size	AdcTest_Vo3Raw,2
 	.space	2
+	.sdecl	'.zdata.adc_test.AdcTest_SSbc',data,cluster('AdcTest_SSbc')
+	.sect	'.zdata.adc_test.AdcTest_SSbc'
+	.global	AdcTest_SSbc
+	.align	2
+AdcTest_SSbc:	.type	object
+	.size	AdcTest_SSbc,2
+	.space	2
+	.sdecl	'.zdata.adc_test.AdcTest_vinv',data,cluster('AdcTest_vinv')
+	.sect	'.zdata.adc_test.AdcTest_vinv'
+	.global	AdcTest_vinv
+	.align	2
+AdcTest_vinv:	.type	object
+	.size	AdcTest_vinv,2
+	.space	2
+	.sdecl	'.zdata.adc_test.VroAct',data,cluster('VroAct')
+	.sect	'.zdata.adc_test.VroAct'
+	.global	VroAct
+	.align	2
+VroAct:	.type	object
+	.size	VroAct,4
+	.space	4
+	.sdecl	'.zdata.adc_test.Vo1Act',data,cluster('Vo1Act')
+	.sect	'.zdata.adc_test.Vo1Act'
+	.global	Vo1Act
+	.align	2
+Vo1Act:	.type	object
+	.size	Vo1Act,4
+	.space	4
+	.sdecl	'.zdata.adc_test.Vo2Act',data,cluster('Vo2Act')
+	.sect	'.zdata.adc_test.Vo2Act'
+	.global	Vo2Act
+	.align	2
+Vo2Act:	.type	object
+	.size	Vo2Act,4
+	.space	4
+	.sdecl	'.zdata.adc_test.Vo3Act',data,cluster('Vo3Act')
+	.sect	'.zdata.adc_test.Vo3Act'
+	.global	Vo3Act
+	.align	2
+Vo3Act:	.type	object
+	.size	Vo3Act,4
+	.space	4
+	.sdecl	'.zdata.adc_test.SSbcAct',data,cluster('SSbcAct')
+	.sect	'.zdata.adc_test.SSbcAct'
+	.global	SSbcAct
+	.align	2
+SSbcAct:	.type	object
+	.size	SSbcAct,4
+	.space	4
+	.sdecl	'.zdata.adc_test.VinvAct',data,cluster('VinvAct')
+	.sect	'.zdata.adc_test.VinvAct'
+	.global	VinvAct
+	.align	2
+VinvAct:	.type	object
+	.size	VinvAct,4
+	.space	4
 	.sdecl	'.zdata.adc_test.AdcTest_EvadcClc',data,cluster('AdcTest_EvadcClc')
 	.sect	'.zdata.adc_test.AdcTest_EvadcClc'
 	.global	AdcTest_EvadcClc
@@ -1305,6 +1569,11 @@ AdcTest_Group9183Vo2Pending:	.type	object
 AdcTest_Group9183Vo3Pending:	.type	object
 	.size	AdcTest_Group9183Vo3Pending,1
 	.space	1
+	.sdecl	'.zdata.adc_test.AdcTest_Group8Pending',data,cluster('AdcTest_Group8Pending')
+	.sect	'.zdata.adc_test.AdcTest_Group8Pending'
+AdcTest_Group8Pending:	.type	object
+	.size	AdcTest_Group8Pending,1
+	.space	1
 	.sdecl	'.zdata.adc_test.AdcTest_Group9183SensePendingCycles',data,cluster('AdcTest_Group9183SensePendingCycles')
 	.sect	'.zdata.adc_test.AdcTest_Group9183SensePendingCycles'
 AdcTest_Group9183SensePendingCycles:	.type	object
@@ -1319,6 +1588,11 @@ AdcTest_Group9183Vo2PendingCycles:	.type	object
 	.sect	'.zdata.adc_test.AdcTest_Group9183Vo3PendingCycles'
 AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.size	AdcTest_Group9183Vo3PendingCycles,1
+	.space	1
+	.sdecl	'.zdata.adc_test.AdcTest_Group8PendingCycles',data,cluster('AdcTest_Group8PendingCycles')
+	.sect	'.zdata.adc_test.AdcTest_Group8PendingCycles'
+AdcTest_Group8PendingCycles:	.type	object
+	.size	AdcTest_Group8PendingCycles,1
 	.space	1
 	.calls	'AdcTest_Init','memset'
 	.calls	'AdcTest_Init','Adc_SetupResultBuffer'
@@ -1351,21 +1625,21 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.calls	'AdcTest_SampleHwRegs','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L54:
-	.word	156669
+.L56:
+	.word	156678
 	.half	3
-	.word	.L55
+	.word	.L57
 	.byte	4
-.L53:
+.L55:
 	.byte	1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
-	.word	.L56
-.L190:
+	.word	.L58
+.L218:
 	.byte	2
 	.byte	'unsigned char',0,1,8
-.L202:
+.L232:
 	.byte	2
 	.byte	'unsigned short int',0,2,7,3
 	.word	154
@@ -1392,7 +1666,7 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.word	270
 	.byte	0,3
 	.word	154
-.L211:
+.L241:
 	.byte	4
 	.word	154
 	.byte	3
@@ -1415,7 +1689,7 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	'Group',0,1,230,6,62
 	.word	406
 	.byte	0
-.L225:
+.L255:
 	.byte	2
 	.byte	'unsigned long int',0,4,7,3
 	.word	459
@@ -1438,13 +1712,13 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	9,2,56,41
 	.word	560
 	.byte	0
-.L204:
+.L234:
 	.byte	4
 	.word	137
-.L206:
+.L236:
 	.byte	4
 	.word	137
-.L222:
+.L252:
 	.byte	4
 	.word	137
 	.byte	10
@@ -19641,11 +19915,11 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	40,2,35,0,0,10
 	.byte	'Adc_CoreConfigType',0,1,165,3,3
 	.word	137084
-.L226:
+.L256:
 	.byte	17,4
 	.word	154
 	.byte	18,1,0
-.L227:
+.L257:
 	.byte	17,2
 	.word	154
 	.byte	18,0,0,12
@@ -22540,10 +22814,12 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	10
 	.byte	'size_t',0,2,29,25
 	.word	560
-	.byte	0
+.L258:
+	.byte	2
+	.byte	'float',0,4,4,0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L55:
+.L57:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,15,0,73,19
 	.byte	0,0,5,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,6,5,0,3,8,58,15,59,15,57,15,73,19,0
 	.byte	0,7,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,8,59,0,3,8,0,0,9,5,0,58,15,59,15,57,15,73,19
@@ -22553,12 +22829,12 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	19,1,58,15,59,15,57,15,11,15,0,0,21,21,0,54,15,39,12,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L56:
-	.word	.L261-.L260
-.L260:
+.L58:
+	.word	.L297-.L296
+.L296:
 	.half	3
-	.word	.L263-.L262
-.L262:
+	.word	.L299-.L298
+.L298:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc',0
 	.byte	'D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\include\\',0
@@ -22576,973 +22852,1025 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	'IfxGtm_regdef.h',0,5,0,0
 	.byte	'Mcu_17_TimerIp.h',0,6,0,0
 	.byte	'IfxEvadc_regdef.h',0,5,0,0,0
-.L263:
-.L261:
+.L299:
+.L297:
 	.sdecl	'.debug_info',debug,cluster('AdcTest_Init')
 	.sect	'.debug_info'
-.L57:
-	.word	246
+.L59:
+	.word	266
 	.half	3
-	.word	.L58
+	.word	.L60
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
-	.word	.L60,.L59
+	.word	.L62,.L61
 	.byte	2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_Init',0,1,79,6,1,1,1
-	.word	.L38,.L189,.L37
+	.byte	'AdcTest_Init',0,1,110,6,1,1,1
+	.word	.L40,.L217,.L39
 	.byte	4
-	.word	.L38,.L189
+	.word	.L40,.L217
 	.byte	5
-	.byte	'result0',0,1,81,18
-	.word	.L190,.L191
+	.byte	'result0',0,1,112,18
+	.word	.L218,.L219
 	.byte	5
-	.byte	'result2',0,1,82,18
-	.word	.L190,.L192
+	.byte	'result2',0,1,113,18
+	.word	.L218,.L220
 	.byte	5
-	.byte	'result3',0,1,83,18
-	.word	.L190,.L193
+	.byte	'result3',0,1,114,18
+	.word	.L218,.L221
+	.byte	5
+	.byte	'result4',0,1,115,18
+	.word	.L218,.L222
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Init')
 	.sect	'.debug_abbrev'
-.L58:
+.L60:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('AdcTest_Init')
 	.sect	'.debug_line'
-.L59:
-	.word	.L265-.L264
-.L264:
+.L61:
+	.word	.L301-.L300
+.L300:
 	.half	3
-	.word	.L267-.L266
-.L266:
+	.word	.L303-.L302
+.L302:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\Appl\\Source\\adc_test.c',0,0,0,0,0
-.L267:
+.L303:
 	.byte	5,43,7,0,5,2
-	.word	.L38
-	.byte	3,214,0,1,5,16,1,5,46,9
-	.half	.L268-.L38
+	.word	.L40
+	.byte	3,245,0,1,5,16,1,5,46,9
+	.half	.L304-.L40
 	.byte	1,5,41,9
-	.half	.L269-.L268
+	.half	.L305-.L304
 	.byte	3,1,1,5,16,1,5,44,9
-	.half	.L270-.L269
+	.half	.L306-.L305
 	.byte	1,5,41,9
-	.half	.L271-.L270
+	.half	.L307-.L306
 	.byte	3,1,1,5,16,1,5,44,9
-	.half	.L272-.L271
+	.half	.L308-.L307
+	.byte	1,5,35,9
+	.half	.L309-.L308
+	.byte	3,1,1,5,16,1,5,38,9
+	.half	.L310-.L309
 	.byte	1,5,7,9
-	.half	.L273-.L272
+	.half	.L311-.L310
 	.byte	3,3,1,3,1,1,5,11,9
-	.half	.L228-.L273
+	.half	.L259-.L311
 	.byte	3,126,1,5,7,3,5,1,9
-	.half	.L230-.L228
+	.half	.L261-.L259
 	.byte	3,127,1,3,1,1,5,11,9
-	.half	.L229-.L230
+	.half	.L260-.L261
 	.byte	3,126,1,5,7,3,5,1,9
-	.half	.L232-.L229
-	.byte	3,127,1,3,1,1,9
-	.half	.L231-.L232
-	.byte	3,2,1,5,37,7,9
-	.half	.L274-.L231
+	.half	.L263-.L260
+	.byte	3,127,1,3,1,1,5,11,9
+	.half	.L262-.L263
+	.byte	3,126,1,5,4,3,5,1,9
+	.half	.L265-.L262
+	.byte	3,127,1,3,1,1,5,7,9
+	.half	.L264-.L265
+	.byte	3,1,1,5,37,7,9
+	.half	.L312-.L264
 	.byte	1,5,58,7,9
-	.half	.L275-.L274
+	.half	.L313-.L312
+	.byte	1,5,77,7,9
+	.half	.L314-.L313
 	.byte	1,5,24,7,9
-	.half	.L2-.L275
+	.half	.L2-.L314
 	.byte	3,6,1,5,25,9
-	.half	.L5-.L2
+	.half	.L6-.L2
 	.byte	3,3,1,5,23,9
-	.half	.L276-.L5
+	.half	.L315-.L6
 	.byte	1,5,28,9
-	.half	.L233-.L276
+	.half	.L266-.L315
 	.byte	3,1,1,5,1,7,9
-	.half	.L61-.L233
+	.half	.L63-.L266
 	.byte	3,1,0,1,1
-.L265:
+.L301:
 	.sdecl	'.debug_ranges',debug,cluster('AdcTest_Init')
 	.sect	'.debug_ranges'
-.L60:
-	.word	-1,.L38,0,.L61-.L38,0,0
+.L62:
+	.word	-1,.L40,0,.L63-.L40,0,0
 	.sdecl	'.debug_info',debug,cluster('AdcTest_RunOnce')
 	.sect	'.debug_info'
-.L62:
-	.word	306
+.L64:
+	.word	334
 	.half	3
-	.word	.L63
+	.word	.L65
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
-	.word	.L65,.L64
+	.word	.L67,.L66
 	.byte	2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_RunOnce',0,1,114,6,1,1,1
-	.word	.L40,.L194,.L39
+	.byte	'AdcTest_RunOnce',0,1,148,1,6,1,1,1
+	.word	.L42,.L223,.L41
 	.byte	4
-	.word	.L40,.L194
+	.word	.L42,.L223
 	.byte	5
-	.byte	'result0',0,1,116,18
-	.word	.L190,.L195
+	.byte	'result0',0,1,150,1,18
+	.word	.L218,.L224
 	.byte	5
-	.byte	'result2',0,1,117,18
-	.word	.L190,.L196
+	.byte	'result2',0,1,151,1,18
+	.word	.L218,.L225
 	.byte	5
-	.byte	'result3',0,1,118,18
-	.word	.L190,.L197
+	.byte	'result3',0,1,152,1,18
+	.word	.L218,.L226
 	.byte	5
-	.byte	'start0',0,1,119,18
-	.word	.L190,.L198
+	.byte	'result4',0,1,153,1,18
+	.word	.L218,.L227
 	.byte	5
-	.byte	'start2',0,1,120,18
-	.word	.L190,.L199
+	.byte	'start0',0,1,154,1,18
+	.word	.L218,.L228
 	.byte	5
-	.byte	'start3',0,1,121,18
-	.word	.L190,.L200
+	.byte	'start2',0,1,155,1,18
+	.word	.L218,.L229
+	.byte	5
+	.byte	'start3',0,1,156,1,18
+	.word	.L218,.L230
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_RunOnce')
 	.sect	'.debug_abbrev'
-.L63:
+.L65:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('AdcTest_RunOnce')
 	.sect	'.debug_line'
-.L64:
-	.word	.L278-.L277
-.L277:
+.L66:
+	.word	.L317-.L316
+.L316:
 	.half	3
-	.word	.L280-.L279
-.L279:
+	.word	.L319-.L318
+.L318:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\Appl\\Source\\adc_test.c',0,0,0,0,0
-.L280:
+.L319:
 	.byte	5,3,7,0,5,2
-	.word	.L40
-	.byte	3,250,0,1,5,24,9
-	.half	.L281-.L40
+	.word	.L42
+	.byte	3,157,1,1,5,24,9
+	.half	.L320-.L42
 	.byte	1,5,7,9
-	.half	.L282-.L281
+	.half	.L321-.L320
 	.byte	3,2,1,5,3,9
-	.half	.L283-.L282
+	.half	.L322-.L321
 	.byte	1,5,25,7,9
-	.half	.L284-.L283
+	.half	.L323-.L322
 	.byte	3,2,1,5,5,9
-	.half	.L285-.L284
+	.half	.L324-.L323
 	.byte	3,3,1,5,29,9
-	.half	.L6-.L285
+	.half	.L7-.L324
 	.byte	3,3,1,5,8,9
-	.half	.L286-.L6
+	.half	.L325-.L7
 	.byte	3,6,1,5,7,9
-	.half	.L287-.L286
+	.half	.L326-.L325
 	.byte	3,125,1,3,1,1,9
-	.half	.L288-.L287
+	.half	.L327-.L326
 	.byte	3,1,1,5,8,3,2,1,5,11,9
-	.half	.L234-.L288
+	.half	.L267-.L327
+	.byte	3,123,1,5,8,3,10,1,5,7,9
+	.half	.L269-.L267
+	.byte	3,125,1,3,1,1,9
+	.half	.L328-.L269
+	.byte	3,1,1,5,8,3,2,1,5,11,9
+	.half	.L268-.L328
 	.byte	3,123,1,5,8,3,11,1,9
-	.half	.L236-.L234
+	.half	.L271-.L268
 	.byte	3,127,1,5,7,9
-	.half	.L289-.L236
+	.half	.L329-.L271
 	.byte	3,125,1,3,1,1,9
-	.half	.L290-.L289
-	.byte	3,1,1,5,8,3,2,1,5,11,9
-	.half	.L235-.L290
-	.byte	3,123,1,5,8,3,11,1,9
-	.half	.L238-.L235
-	.byte	3,127,1,5,7,9
-	.half	.L291-.L238
-	.byte	3,125,1,3,1,1,9
-	.half	.L292-.L291
-	.byte	3,1,1,5,8,3,2,1,5,11,9
-	.half	.L237-.L292
+	.half	.L330-.L329
+	.byte	3,1,1,5,8,3,2,1,5,9,9
+	.half	.L270-.L330
+	.byte	3,2,1,5,10,3,4,1,9
+	.half	.L331-.L270
+	.byte	3,127,1,5,11,9
+	.half	.L332-.L331
+	.byte	3,118,1,5,10,3,11,1,5,9,9
+	.half	.L273-.L332
+	.byte	3,126,1,5,10,3,2,1,5,3,9
+	.half	.L333-.L273
+	.byte	3,125,1,5,10,9
+	.half	.L334-.L333
+	.byte	3,3,1,5,11,9
+	.half	.L272-.L334
 	.byte	3,123,1,5,8,3,9,1,5,7,9
-	.half	.L240-.L237
+	.half	.L275-.L272
 	.byte	3,1,1,5,8,9
-	.half	.L293-.L240
-	.byte	3,111,1,5,7,9
-	.half	.L294-.L293
-	.byte	3,17,1,5,8,9
-	.half	.L239-.L294
+	.half	.L335-.L275
+	.byte	3,105,1,5,7,9
+	.half	.L336-.L335
+	.byte	3,23,1,5,8,9
+	.half	.L274-.L336
 	.byte	3,3,1,5,7,9
-	.half	.L295-.L239
+	.half	.L337-.L274
 	.byte	3,1,1,5,8,9
-	.half	.L296-.L295
+	.half	.L338-.L337
+	.byte	3,107,1,5,7,9
+	.half	.L339-.L338
+	.byte	3,21,1,5,8,9
+	.half	.L340-.L339
 	.byte	3,3,1,5,7,9
-	.half	.L297-.L296
-	.byte	3,1,1,9
-	.half	.L298-.L297
-	.byte	3,3,1,5,8,3,99,1,9
-	.half	.L299-.L298
-	.byte	3,1,1,9
-	.half	.L300-.L299
-	.byte	3,30,1,5,10,9
-	.half	.L241-.L300
-	.byte	3,125,1,5,8,3,7,1,5,7,9
-	.half	.L243-.L241
-	.byte	3,126,1,5,8,3,2,1,5,10,9
-	.half	.L242-.L243
-	.byte	3,125,1,5,8,3,7,1,5,7,9
-	.half	.L246-.L242
-	.byte	3,126,1,5,8,3,2,1,5,10,9
-	.half	.L245-.L246
-	.byte	3,125,1,5,3,9
-	.half	.L248-.L245
-	.byte	3,5,1,5,43,7,9
-	.half	.L301-.L248
-	.byte	3,2,1,5,41,1,5,3,9
-	.half	.L8-.L301
-	.byte	3,2,1,5,41,7,9
-	.half	.L302-.L8
-	.byte	3,2,1,5,39,1,5,3,9
-	.half	.L9-.L302
-	.byte	3,2,1,5,41,7,9
-	.half	.L303-.L9
-	.byte	3,2,1,5,39,1,5,23,9
-	.half	.L10-.L303
-	.byte	3,3,1,5,28,9
-	.half	.L247-.L10
+	.half	.L341-.L340
+	.byte	3,1,1,5,8,9
+	.half	.L342-.L341
+	.byte	3,3,1,5,4,9
+	.half	.L343-.L342
 	.byte	3,1,1,5,7,9
-	.half	.L304-.L247
+	.half	.L344-.L343
+	.byte	3,3,1,5,8,3,89,1,9
+	.half	.L345-.L344
+	.byte	3,1,1,9
+	.half	.L346-.L345
+	.byte	3,40,1,5,10,9
+	.half	.L276-.L346
+	.byte	3,125,1,5,8,3,96,1,5,7,9
+	.half	.L278-.L276
+	.byte	3,37,1,5,8,3,92,1,9
+	.half	.L347-.L278
+	.byte	3,38,1,5,10,9
+	.half	.L277-.L347
+	.byte	3,125,1,5,8,3,7,1,5,7,9
+	.half	.L281-.L277
+	.byte	3,126,1,5,8,3,2,1,9
+	.half	.L280-.L281
+	.byte	3,4,1,5,10,9
+	.half	.L282-.L280
+	.byte	3,125,1,5,3,9
+	.half	.L284-.L282
+	.byte	3,5,1,5,43,7,9
+	.half	.L348-.L284
+	.byte	3,2,1,5,41,1,5,3,9
+	.half	.L9-.L348
+	.byte	3,2,1,5,41,7,9
+	.half	.L349-.L9
+	.byte	3,2,1,5,39,1,5,3,9
+	.half	.L10-.L349
+	.byte	3,2,1,5,41,7,9
+	.half	.L350-.L10
+	.byte	3,2,1,5,39,1,5,35,9
+	.half	.L11-.L350
+	.byte	3,4,1,5,33,1,5,23,9
+	.half	.L351-.L11
+	.byte	3,3,1,5,28,9
+	.half	.L283-.L351
+	.byte	3,1,1,5,7,9
+	.half	.L352-.L283
 	.byte	3,2,1,5,37,7,9
-	.half	.L305-.L304
+	.half	.L353-.L352
 	.byte	1,5,58,7,9
-	.half	.L306-.L305
+	.half	.L354-.L353
+	.byte	1,5,76,7,9
+	.half	.L355-.L354
 	.byte	1,5,32,7,9
-	.half	.L307-.L306
+	.half	.L356-.L355
 	.byte	3,2,1,5,30,1,5,5,9
-	.half	.L244-.L307
+	.half	.L279-.L356
 	.byte	3,1,1,5,28,9
-	.half	.L308-.L244
+	.half	.L357-.L279
 	.byte	1,5,1,9
-	.half	.L309-.L308
+	.half	.L358-.L357
 	.byte	3,11,1,5,12,7,9
-	.half	.L11-.L309
+	.half	.L12-.L358
 	.byte	3,119,1,5,40,7,9
-	.half	.L310-.L11
+	.half	.L359-.L12
 	.byte	1,5,60,7,9
-	.half	.L311-.L310
+	.half	.L360-.L359
 	.byte	1,5,30,7,9
-	.half	.L312-.L311
+	.half	.L361-.L360
 	.byte	3,2,1,5,1,9
-	.half	.L313-.L312
+	.half	.L362-.L361
 	.byte	3,7,1,5,32,7,9
-	.half	.L7-.L313
+	.half	.L8-.L362
 	.byte	3,125,1,5,30,1,5,5,9
-	.half	.L314-.L7
+	.half	.L363-.L8
 	.byte	3,1,1,5,30,9
-	.half	.L315-.L314
+	.half	.L364-.L363
 	.byte	1,5,1,9
-	.half	.L316-.L315
+	.half	.L365-.L364
 	.byte	3,2,1,7,9
-	.half	.L66-.L316
+	.half	.L68-.L365
 	.byte	0,1,1
-.L278:
+.L317:
 	.sdecl	'.debug_ranges',debug,cluster('AdcTest_RunOnce')
 	.sect	'.debug_ranges'
-.L65:
-	.word	-1,.L40,0,.L66-.L40,0,0
+.L67:
+	.word	-1,.L42,0,.L68-.L42,0,0
 	.sdecl	'.debug_info',debug,cluster('AdcTest_StartGroup')
 	.sect	'.debug_info'
-.L67:
+.L69:
 	.word	289
 	.half	3
-	.word	.L68
+	.word	.L70
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
-	.word	.L70,.L69
+	.word	.L72,.L71
 	.byte	2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_StartGroup',0,1,136,2,23
-	.word	.L190
+	.byte	'AdcTest_StartGroup',0,1,191,2,23
+	.word	.L218
 	.byte	1,1
-	.word	.L46,.L201,.L45
+	.word	.L48,.L231,.L47
 	.byte	4
-	.byte	'group',0,1,136,2,56
-	.word	.L202,.L203
+	.byte	'group',0,1,191,2,56
+	.word	.L232,.L233
 	.byte	4
-	.byte	'lastStatus',0,1,137,2,21
-	.word	.L204,.L205
+	.byte	'lastStatus',0,1,192,2,21
+	.word	.L234,.L235
 	.byte	4
-	.byte	'pendingFlag',0,1,137,2,42
-	.word	.L206,.L207
+	.byte	'pendingFlag',0,1,192,2,42
+	.word	.L236,.L237
 	.byte	5
-	.word	.L46,.L201
+	.word	.L48,.L231
 	.byte	6
-	.byte	'groupStatus',0,1,139,2,18
-	.word	.L190,.L208
+	.byte	'groupStatus',0,1,194,2,18
+	.word	.L218,.L238
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_StartGroup')
 	.sect	'.debug_abbrev'
-.L68:
+.L70:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
 	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('AdcTest_StartGroup')
 	.sect	'.debug_line'
-.L69:
-	.word	.L318-.L317
-.L317:
+.L71:
+	.word	.L367-.L366
+.L366:
 	.half	3
-	.word	.L320-.L319
-.L319:
+	.word	.L369-.L368
+.L368:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\Appl\\Source\\adc_test.c',0,0,0,0,0
-.L320:
+.L369:
 	.byte	5,23,7,0,5,2
-	.word	.L46
-	.byte	3,135,2,1,5,36,9
-	.half	.L251-.L46
+	.word	.L48
+	.byte	3,190,2,1,5,36,9
+	.half	.L287-.L48
 	.byte	3,5,1,5,17,9
-	.half	.L249-.L251
+	.half	.L285-.L287
 	.byte	3,3,1,5,3,9
-	.half	.L321-.L249
+	.half	.L370-.L285
 	.byte	3,3,1,5,5,7,9
-	.half	.L322-.L321
+	.half	.L371-.L370
 	.byte	3,2,1,5,28,9
-	.half	.L323-.L322
+	.half	.L372-.L371
 	.byte	1,5,5,9
-	.half	.L324-.L323
+	.half	.L373-.L372
 	.byte	3,1,1,5,37,9
-	.half	.L25-.L324
+	.half	.L27-.L373
 	.byte	3,3,1,5,50,9
-	.half	.L325-.L25
+	.half	.L374-.L27
 	.byte	1,5,12,7,9
-	.half	.L26-.L325
+	.half	.L28-.L374
 	.byte	3,2,1,5,1,3,9,1,5,28,7,9
-	.half	.L27-.L26
+	.half	.L29-.L28
 	.byte	3,122,1,5,20,9
-	.half	.L252-.L27
+	.half	.L288-.L29
 	.byte	3,3,1,5,18,1,5,10,9
-	.half	.L326-.L252
+	.half	.L375-.L288
 	.byte	3,2,1,5,1,3,1,1,7,9
-	.half	.L71-.L326
+	.half	.L73-.L375
 	.byte	0,1,1
-.L318:
+.L367:
 	.sdecl	'.debug_ranges',debug,cluster('AdcTest_StartGroup')
 	.sect	'.debug_ranges'
-.L70:
-	.word	-1,.L46,0,.L71-.L46,0,0
+.L72:
+	.word	-1,.L48,0,.L73-.L48,0,0
 	.sdecl	'.debug_info',debug,cluster('AdcTest_ReadPendingGroup')
 	.sect	'.debug_info'
-.L72:
+.L74:
 	.word	341
 	.half	3
-	.word	.L73
+	.word	.L75
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
-	.word	.L75,.L74
+	.word	.L77,.L76
 	.byte	2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_ReadPendingGroup',0,1,166,2,23
-	.word	.L190
+	.byte	'AdcTest_ReadPendingGroup',0,1,221,2,23
+	.word	.L218
 	.byte	1,1
-	.word	.L48,.L209,.L47
+	.word	.L50,.L239,.L49
 	.byte	4
-	.byte	'group',0,1,166,2,62
-	.word	.L202,.L210
+	.byte	'group',0,1,221,2,62
+	.word	.L232,.L240
 	.byte	4
-	.byte	'buffer',0,1,167,2,25
-	.word	.L211,.L212
+	.byte	'buffer',0,1,222,2,25
+	.word	.L241,.L242
 	.byte	4
-	.byte	'channelCount',0,1,167,2,39
-	.word	.L190,.L213
+	.byte	'channelCount',0,1,222,2,39
+	.word	.L218,.L243
 	.byte	4
-	.byte	'lastStatus',0,1,167,2,69
-	.word	.L204,.L214
+	.byte	'lastStatus',0,1,222,2,69
+	.word	.L234,.L244
 	.byte	4
-	.byte	'pendingFlag',0,1,168,2,14
-	.word	.L206,.L215
+	.byte	'pendingFlag',0,1,223,2,14
+	.word	.L236,.L245
 	.byte	5
-	.word	.L48,.L209
+	.word	.L50,.L239
 	.byte	6
-	.byte	'groupStatus',0,1,170,2,18
-	.word	.L190,.L216
+	.byte	'groupStatus',0,1,225,2,18
+	.word	.L218,.L246
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_ReadPendingGroup')
 	.sect	'.debug_abbrev'
-.L73:
+.L75:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
 	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('AdcTest_ReadPendingGroup')
 	.sect	'.debug_line'
-.L74:
-	.word	.L328-.L327
-.L327:
+.L76:
+	.word	.L377-.L376
+.L376:
 	.half	3
-	.word	.L330-.L329
-.L329:
+	.word	.L379-.L378
+.L378:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\Appl\\Source\\adc_test.c',0,0,0,0,0
-.L330:
+.L379:
 	.byte	5,23,7,0,5,2
-	.word	.L48
-	.byte	3,165,2,1,5,37,9
-	.half	.L254-.L48
+	.word	.L50
+	.byte	3,220,2,1,5,37,9
+	.half	.L290-.L50
 	.byte	3,6,1,5,23,9
-	.half	.L255-.L254
+	.half	.L291-.L290
 	.byte	3,122,1,5,50,9
-	.half	.L257-.L255
+	.half	.L293-.L291
 	.byte	3,6,1,5,36,7,9
-	.half	.L331-.L257
+	.half	.L380-.L293
 	.byte	3,5,1,5,17,9
-	.half	.L253-.L331
+	.half	.L289-.L380
 	.byte	3,4,1,5,3,9
-	.half	.L332-.L253
+	.half	.L381-.L289
 	.byte	3,3,1,5,7,7,9
-	.half	.L333-.L332
+	.half	.L382-.L381
 	.byte	3,5,1,5,54,7,9
-	.half	.L334-.L333
+	.half	.L383-.L382
 	.byte	1,5,28,7,9
-	.half	.L32-.L334
+	.half	.L34-.L383
 	.byte	3,5,1,5,3,9
-	.half	.L258-.L32
+	.half	.L294-.L34
 	.byte	1,5,16,7,9
-	.half	.L335-.L258
+	.half	.L384-.L294
 	.byte	3,12,1,5,1,9
-	.half	.L336-.L335
+	.half	.L385-.L384
 	.byte	3,2,1,5,20,7,9
-	.half	.L34-.L336
+	.half	.L36-.L385
 	.byte	3,122,1,5,18,1,5,12,9
-	.half	.L30-.L34
+	.half	.L32-.L36
 	.byte	3,1,1,5,1,3,5,1,7,9
-	.half	.L76-.L30
+	.half	.L78-.L32
 	.byte	0,1,1
-.L328:
+.L377:
 	.sdecl	'.debug_ranges',debug,cluster('AdcTest_ReadPendingGroup')
 	.sect	'.debug_ranges'
-.L75:
-	.word	-1,.L48,0,.L76-.L48,0,0
+.L77:
+	.word	-1,.L50,0,.L78-.L50,0,0
 	.sdecl	'.debug_info',debug,cluster('AdcTest_UpdateNamedValues')
 	.sect	'.debug_info'
-.L77:
+.L79:
 	.word	198
 	.half	3
-	.word	.L78
+	.word	.L80
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
-	.word	.L80,.L79
+	.word	.L82,.L81
 	.byte	2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_UpdateNamedValues',0,1,210,2,13,1,1
-	.word	.L50,.L217,.L49
+	.byte	'AdcTest_UpdateNamedValues',0,1,137,3,13,1,1
+	.word	.L52,.L247,.L51
 	.byte	4
-	.word	.L50,.L217
+	.word	.L52,.L247
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_UpdateNamedValues')
 	.sect	'.debug_abbrev'
-.L78:
+.L80:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('AdcTest_UpdateNamedValues')
 	.sect	'.debug_line'
-.L79:
-	.word	.L338-.L337
-.L337:
+.L81:
+	.word	.L387-.L386
+.L386:
 	.half	3
-	.word	.L340-.L339
-.L339:
+	.word	.L389-.L388
+.L388:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\Appl\\Source\\adc_test.c',0,0,0,0,0
-.L340:
+.L389:
 	.byte	5,45,7,0,5,2
-	.word	.L50
-	.byte	3,211,2,1,5,18,9
-	.half	.L341-.L50
-	.byte	1,5,45,9
-	.half	.L342-.L341
-	.byte	3,1,1,5,18,9
-	.half	.L343-.L342
-	.byte	1,5,43,9
-	.half	.L344-.L343
-	.byte	3,1,1,5,18,9
-	.half	.L345-.L344
-	.byte	1,5,43,9
-	.half	.L346-.L345
-	.byte	3,1,1,5,18,9
-	.half	.L347-.L346
-	.byte	1,5,1,9
-	.half	.L348-.L347
+	.word	.L52
+	.byte	3,139,3,1,5,18,9
+	.half	.L390-.L52
+	.byte	1,5,10,9
+	.half	.L391-.L390
+	.byte	3,6,1,5,45,3,121,1,5,25,9
+	.half	.L392-.L391
+	.byte	3,7,1,5,18,9
+	.half	.L393-.L392
+	.byte	3,121,1,5,24,9
+	.half	.L394-.L393
+	.byte	3,7,1,5,9,1,5,10,9
+	.half	.L395-.L394
+	.byte	3,1,1,5,25,1,5,43,9
+	.half	.L396-.L395
+	.byte	3,122,1,5,24,9
+	.half	.L397-.L396
+	.byte	3,6,1,5,9,1,5,10,9
+	.half	.L398-.L397
+	.byte	3,1,1,5,43,3,123,1,5,40,9
+	.half	.L399-.L398
+	.byte	3,127,1,5,24,9
+	.half	.L400-.L399
+	.byte	3,6,1,5,9,1,5,10,9
+	.half	.L401-.L400
+	.byte	3,1,1,5,34,3,123,1,5,18,9
+	.half	.L402-.L401
+	.byte	3,125,1,5,24,9
+	.half	.L403-.L402
+	.byte	3,8,1,5,9,1,5,11,9
+	.half	.L404-.L403
+	.byte	3,1,1,5,24,1,5,16,9
+	.half	.L405-.L404
+	.byte	3,120,1,5,23,9
+	.half	.L406-.L405
+	.byte	3,8,1,5,10,1,5,11,9
+	.half	.L407-.L406
+	.byte	3,1,1,5,18,3,120,1,5,16,9
+	.half	.L408-.L407
+	.byte	3,1,1,5,23,9
+	.half	.L409-.L408
+	.byte	3,7,1,5,10,1,5,1,9
+	.half	.L410-.L409
 	.byte	3,1,1,7,9
-	.half	.L81-.L348
+	.half	.L83-.L410
 	.byte	0,1,1
-.L338:
+.L387:
 	.sdecl	'.debug_ranges',debug,cluster('AdcTest_UpdateNamedValues')
 	.sect	'.debug_ranges'
-.L80:
-	.word	-1,.L50,0,.L81-.L50,0,0
+.L82:
+	.word	-1,.L52,0,.L83-.L52,0,0
 	.sdecl	'.debug_info',debug,cluster('AdcTest_SampleHwRegs')
 	.sect	'.debug_info'
-.L82:
+.L84:
 	.word	193
 	.half	3
-	.word	.L83
+	.word	.L85
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
-	.word	.L85,.L84
+	.word	.L87,.L86
 	.byte	2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_SampleHwRegs',0,1,218,2,13,1,1
-	.word	.L52,.L218,.L51
+	.byte	'AdcTest_SampleHwRegs',0,1,154,3,13,1,1
+	.word	.L54,.L248,.L53
 	.byte	4
-	.word	.L52,.L218
+	.word	.L54,.L248
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_SampleHwRegs')
 	.sect	'.debug_abbrev'
-.L83:
+.L85:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('AdcTest_SampleHwRegs')
 	.sect	'.debug_line'
-.L84:
-	.word	.L350-.L349
-.L349:
+.L86:
+	.word	.L412-.L411
+.L411:
 	.half	3
-	.word	.L352-.L351
-.L351:
+	.word	.L414-.L413
+.L413:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\Appl\\Source\\adc_test.c',0,0,0,0,0
-.L352:
+.L414:
 	.byte	5,38,7,0,5,2
-	.word	.L52
-	.byte	3,219,2,1,5,20,9
-	.half	.L353-.L52
+	.word	.L54
+	.byte	3,155,3,1,5,20,9
+	.half	.L415-.L54
 	.byte	1,5,51,9
-	.half	.L354-.L353
+	.half	.L416-.L415
 	.byte	3,1,1,5,25,9
-	.half	.L355-.L354
+	.half	.L417-.L416
 	.byte	1,5,51,9
-	.half	.L356-.L355
+	.half	.L418-.L417
 	.byte	3,1,1,5,25,9
-	.half	.L357-.L356
+	.half	.L419-.L418
 	.byte	1,5,51,9
-	.half	.L358-.L357
+	.half	.L420-.L419
 	.byte	3,1,1,5,25,9
-	.half	.L359-.L358
+	.half	.L421-.L420
 	.byte	1,5,52,9
-	.half	.L360-.L359
+	.half	.L422-.L421
 	.byte	3,1,1,5,24,9
-	.half	.L361-.L360
+	.half	.L423-.L422
 	.byte	1,5,52,9
-	.half	.L362-.L361
+	.half	.L424-.L423
 	.byte	3,1,1,5,24,9
-	.half	.L363-.L362
+	.half	.L425-.L424
 	.byte	1,5,52,9
-	.half	.L364-.L363
+	.half	.L426-.L425
 	.byte	3,1,1,5,24,9
-	.half	.L365-.L364
+	.half	.L427-.L426
 	.byte	1,5,49,9
-	.half	.L366-.L365
+	.half	.L428-.L427
 	.byte	3,1,1,5,23,9
-	.half	.L367-.L366
+	.half	.L429-.L428
 	.byte	1,5,48,9
-	.half	.L368-.L367
+	.half	.L430-.L429
 	.byte	3,6,1,5,49,9
-	.half	.L369-.L368
+	.half	.L431-.L430
 	.byte	3,123,1,5,23,9
-	.half	.L370-.L369
+	.half	.L432-.L431
 	.byte	1,5,36,9
-	.half	.L371-.L370
+	.half	.L433-.L432
 	.byte	3,14,1,5,49,9
-	.half	.L372-.L371
+	.half	.L434-.L433
 	.byte	3,115,1,5,23,9
-	.half	.L373-.L372
+	.half	.L435-.L434
 	.byte	1,5,49,9
-	.half	.L374-.L373
+	.half	.L436-.L435
 	.byte	3,1,1,5,23,9
-	.half	.L375-.L374
+	.half	.L437-.L436
 	.byte	1,5,24,9
-	.half	.L376-.L375
+	.half	.L438-.L437
 	.byte	3,2,1,5,48,9
-	.half	.L377-.L376
+	.half	.L439-.L438
 	.byte	3,3,1,5,24,3,127,1,5,48,9
-	.half	.L378-.L377
+	.half	.L440-.L439
 	.byte	3,3,1,5,24,3,127,1,5,48,9
-	.half	.L379-.L378
+	.half	.L441-.L440
 	.byte	3,3,1,5,24,3,127,1,5,23,9
-	.half	.L380-.L379
+	.half	.L442-.L441
 	.byte	3,3,1,5,36,9
-	.half	.L381-.L380
+	.half	.L443-.L442
 	.byte	3,4,1,5,23,3,127,1,5,36,9
-	.half	.L382-.L381
+	.half	.L444-.L443
 	.byte	3,4,1,5,23,3,127,1,5,36,9
-	.half	.L383-.L382
+	.half	.L445-.L444
 	.byte	3,4,1,5,23,3,127,1,5,1,9
-	.half	.L384-.L383
+	.half	.L446-.L445
 	.byte	3,3,1,7,9
-	.half	.L86-.L384
+	.half	.L88-.L446
 	.byte	0,1,1
-.L350:
+.L412:
 	.sdecl	'.debug_ranges',debug,cluster('AdcTest_SampleHwRegs')
 	.sect	'.debug_ranges'
-.L85:
-	.word	-1,.L52,0,.L86-.L52,0,0
+.L87:
+	.word	-1,.L54,0,.L88-.L54,0,0
 	.sdecl	'.debug_info',debug,cluster('AdcTest_PollResultHandlers')
 	.sect	'.debug_info'
-.L87:
+.L89:
 	.word	199
 	.half	3
-	.word	.L88
+	.word	.L90
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
-	.word	.L90,.L89
+	.word	.L92,.L91
 	.byte	2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_PollResultHandlers',0,1,212,1,13,1,1
-	.word	.L42,.L219,.L41
+	.byte	'AdcTest_PollResultHandlers',0,1,137,2,13,1,1
+	.word	.L44,.L249,.L43
 	.byte	4
-	.word	.L42,.L219
+	.word	.L44,.L249
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_PollResultHandlers')
 	.sect	'.debug_abbrev'
-.L88:
+.L90:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('AdcTest_PollResultHandlers')
 	.sect	'.debug_line'
-.L89:
-	.word	.L386-.L385
-.L385:
+.L91:
+	.word	.L448-.L447
+.L447:
 	.half	3
-	.word	.L388-.L387
-.L387:
+	.word	.L450-.L449
+.L449:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\Appl\\Source\\adc_test.c',0,0,0,0,0
-.L388:
+.L450:
 	.byte	5,3,7,0,5,2
-	.word	.L42
-	.byte	3,213,1,1,5,56,9
-	.half	.L389-.L42
+	.word	.L44
+	.byte	3,138,2,1,5,56,9
+	.half	.L451-.L44
 	.byte	3,1,1,5,29,9
-	.half	.L390-.L389
+	.half	.L452-.L451
 	.byte	3,127,1,5,32,9
-	.half	.L391-.L390
-	.byte	3,5,1,5,56,9
-	.half	.L392-.L391
-	.byte	3,124,1,5,21,9
-	.half	.L393-.L392
+	.half	.L453-.L452
+	.byte	3,6,1,5,56,9
+	.half	.L454-.L453
+	.byte	3,123,1,5,21,9
+	.half	.L455-.L454
 	.byte	1,5,56,9
-	.half	.L394-.L393
+	.half	.L456-.L455
 	.byte	3,1,1,5,21,9
-	.half	.L395-.L394
+	.half	.L457-.L456
 	.byte	1,5,56,9
-	.half	.L396-.L395
+	.half	.L458-.L457
 	.byte	3,1,1,5,21,9
-	.half	.L397-.L396
+	.half	.L459-.L458
+	.byte	1,5,56,9
+	.half	.L460-.L459
+	.byte	3,1,1,5,21,9
+	.half	.L461-.L460
 	.byte	1,5,32,9
-	.half	.L398-.L397
+	.half	.L462-.L461
 	.byte	3,2,1,9
-	.half	.L399-.L398
+	.half	.L463-.L462
 	.byte	3,1,1,9
-	.half	.L400-.L399
+	.half	.L464-.L463
+	.byte	3,1,1,9
+	.half	.L465-.L464
 	.byte	3,1,1,5,1,9
-	.half	.L91-.L400
+	.half	.L93-.L465
 	.byte	3,1,0,1,1
-.L386:
+.L448:
 	.sdecl	'.debug_ranges',debug,cluster('AdcTest_PollResultHandlers')
 	.sect	'.debug_ranges'
-.L90:
-	.word	-1,.L42,0,.L91-.L42,0,0
+.L92:
+	.word	-1,.L44,0,.L93-.L44,0,0
 	.sdecl	'.debug_info',debug,cluster('AdcTest_ManageStalePending')
 	.sect	'.debug_info'
-.L92:
+.L94:
 	.word	276
 	.half	3
-	.word	.L93
+	.word	.L95
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
-	.word	.L95,.L94
+	.word	.L97,.L96
 	.byte	2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_ManageStalePending',0,1,224,1,13,1,1
-	.word	.L44,.L220,.L43
+	.byte	'AdcTest_ManageStalePending',0,1,151,2,13,1,1
+	.word	.L46,.L250,.L45
 	.byte	4
-	.byte	'pendingFlag',0,1,224,1,49
-	.word	.L206,.L221
+	.byte	'pendingFlag',0,1,151,2,49
+	.word	.L236,.L251
 	.byte	4
-	.byte	'pendingCycles',0,1,224,1,69
-	.word	.L222,.L223
+	.byte	'pendingCycles',0,1,151,2,69
+	.word	.L252,.L253
 	.byte	4
-	.byte	'groupStatus',0,1,225,1,20
-	.word	.L190,.L224
+	.byte	'groupStatus',0,1,152,2,20
+	.word	.L218,.L254
 	.byte	5
-	.word	.L44,.L220
+	.word	.L46,.L250
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_ManageStalePending')
 	.sect	'.debug_abbrev'
-.L93:
+.L95:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('AdcTest_ManageStalePending')
 	.sect	'.debug_line'
-.L94:
-	.word	.L402-.L401
-.L401:
+.L96:
+	.word	.L467-.L466
+.L466:
 	.half	3
-	.word	.L404-.L403
-.L403:
+	.word	.L469-.L468
+.L468:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\Appl\\Source\\adc_test.c',0,0,0,0,0
-.L404:
+.L469:
 	.byte	5,37,7,0,5,2
-	.word	.L44
-	.byte	3,226,1,1,5,50,9
-	.half	.L405-.L44
+	.word	.L46
+	.byte	3,153,2,1,5,50,9
+	.half	.L470-.L46
 	.byte	1,5,22,7,9
-	.half	.L406-.L405
+	.half	.L471-.L470
 	.byte	3,4,1,5,1,9
-	.half	.L407-.L406
+	.half	.L472-.L471
 	.byte	3,31,1,5,7,7,9
-	.half	.L19-.L407
+	.half	.L21-.L472
 	.byte	3,102,1,5,54,7,9
-	.half	.L408-.L19
+	.half	.L473-.L21
 	.byte	1,5,3,7,9
-	.half	.L409-.L408
+	.half	.L474-.L473
 	.byte	3,5,1,5,7,7,9
-	.half	.L410-.L409
+	.half	.L475-.L474
 	.byte	3,13,1,5,21,9
-	.half	.L411-.L410
+	.half	.L476-.L475
 	.byte	1,5,9,9
-	.half	.L412-.L411
+	.half	.L477-.L476
 	.byte	3,1,1,5,5,9
-	.half	.L413-.L412
+	.half	.L478-.L477
 	.byte	1,5,22,7,9
-	.half	.L23-.L413
+	.half	.L25-.L478
 	.byte	3,2,1,5,20,1,5,22,9
-	.half	.L414-.L23
+	.half	.L479-.L25
 	.byte	3,1,1,5,7,9
-	.half	.L415-.L414
+	.half	.L480-.L479
 	.byte	3,1,1,5,29,9
-	.half	.L416-.L415
+	.half	.L481-.L480
 	.byte	1,5,1,9
-	.half	.L21-.L416
+	.half	.L23-.L481
 	.byte	3,3,1,7,9
-	.half	.L96-.L21
+	.half	.L98-.L23
 	.byte	0,1,1
-.L402:
+.L467:
 	.sdecl	'.debug_ranges',debug,cluster('AdcTest_ManageStalePending')
 	.sect	'.debug_ranges'
-.L95:
-	.word	-1,.L44,0,.L96-.L44,0,0
+.L97:
+	.word	-1,.L46,0,.L98-.L46,0,0
 	.sdecl	'.debug_info',debug,cluster('AdcTest_InitResult')
 	.sect	'.debug_info'
-.L97:
-	.word	169
-	.half	3
-	.word	.L98
-	.byte	4,1
-	.byte	'..\\Appl\\Source\\adc_test.c',0
-	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
-	.byte	3
-	.byte	'AdcTest_InitResult',0,3,16,16
-	.word	.L190
-	.byte	1,5,3
-	.word	AdcTest_InitResult
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_InitResult')
-	.sect	'.debug_abbrev'
-.L98:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
-	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_LastSampleResult')
-	.sect	'.debug_info'
 .L99:
-	.word	175
+	.word	169
 	.half	3
 	.word	.L100
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_LastSampleResult',0,3,17,16
-	.word	.L190
+	.byte	'AdcTest_InitResult',0,3,33,16
+	.word	.L218
 	.byte	1,5,3
-	.word	AdcTest_LastSampleResult
+	.word	AdcTest_InitResult
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_LastSampleResult')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_InitResult')
 	.sect	'.debug_abbrev'
 .L100:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_SampleCounter')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_LastSampleResult')
 	.sect	'.debug_info'
 .L101:
-	.word	172
+	.word	175
 	.half	3
 	.word	.L102
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_SampleCounter',0,3,18,8
-	.word	.L225
+	.byte	'AdcTest_LastSampleResult',0,3,34,16
+	.word	.L218
 	.byte	1,5,3
-	.word	AdcTest_SampleCounter
+	.word	AdcTest_LastSampleResult
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_SampleCounter')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_LastSampleResult')
 	.sect	'.debug_abbrev'
 .L102:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_SampleOkCounter')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_SampleCounter')
 	.sect	'.debug_info'
 .L103:
-	.word	174
+	.word	172
 	.half	3
 	.word	.L104
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_SampleOkCounter',0,3,19,8
-	.word	.L225
+	.byte	'AdcTest_SampleCounter',0,3,35,8
+	.word	.L255
 	.byte	1,5,3
-	.word	AdcTest_SampleOkCounter
+	.word	AdcTest_SampleCounter
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_SampleOkCounter')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_SampleCounter')
 	.sect	'.debug_abbrev'
 .L104:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_SampleFailCounter')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_SampleOkCounter')
 	.sect	'.debug_info'
 .L105:
-	.word	176
+	.word	174
 	.half	3
 	.word	.L106
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_SampleFailCounter',0,3,20,8
-	.word	.L225
+	.byte	'AdcTest_SampleOkCounter',0,3,36,8
+	.word	.L255
 	.byte	1,5,3
-	.word	AdcTest_SampleFailCounter
+	.word	AdcTest_SampleOkCounter
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_SampleFailCounter')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_SampleOkCounter')
 	.sect	'.debug_abbrev'
 .L106:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_BusySkipCounter')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_SampleFailCounter')
 	.sect	'.debug_info'
 .L107:
-	.word	174
+	.word	176
 	.half	3
 	.word	.L108
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_BusySkipCounter',0,3,21,8
-	.word	.L225
+	.byte	'AdcTest_SampleFailCounter',0,3,37,8
+	.word	.L255
 	.byte	1,5,3
-	.word	AdcTest_BusySkipCounter
+	.word	AdcTest_SampleFailCounter
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_BusySkipCounter')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_SampleFailCounter')
 	.sect	'.debug_abbrev'
 .L108:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_TimeoutCounter')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_BusySkipCounter')
 	.sect	'.debug_info'
 .L109:
-	.word	173
+	.word	174
 	.half	3
 	.word	.L110
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_TimeoutCounter',0,3,22,8
-	.word	.L225
+	.byte	'AdcTest_BusySkipCounter',0,3,38,8
+	.word	.L255
 	.byte	1,5,3
-	.word	AdcTest_TimeoutCounter
+	.word	AdcTest_BusySkipCounter
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_TimeoutCounter')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_BusySkipCounter')
 	.sect	'.debug_abbrev'
 .L110:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_HandlerPollCounter')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_TimeoutCounter')
 	.sect	'.debug_info'
 .L111:
-	.word	177
+	.word	173
 	.half	3
 	.word	.L112
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_HandlerPollCounter',0,3,23,8
-	.word	.L225
+	.byte	'AdcTest_TimeoutCounter',0,3,39,8
+	.word	.L255
 	.byte	1,5,3
-	.word	AdcTest_HandlerPollCounter
+	.word	AdcTest_TimeoutCounter
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_HandlerPollCounter')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_TimeoutCounter')
 	.sect	'.debug_abbrev'
 .L112:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_SevFlagG0')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_HandlerPollCounter')
 	.sect	'.debug_info'
 .L113:
-	.word	168
+	.word	177
 	.half	3
 	.word	.L114
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_SevFlagG0',0,3,24,7
-	.word	.L190
+	.byte	'AdcTest_HandlerPollCounter',0,3,40,8
+	.word	.L255
 	.byte	1,5,3
-	.word	AdcTest_SevFlagG0
+	.word	AdcTest_HandlerPollCounter
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_SevFlagG0')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_HandlerPollCounter')
 	.sect	'.debug_abbrev'
 .L114:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_SevFlagG2')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_SevFlagG0')
 	.sect	'.debug_info'
 .L115:
 	.word	168
@@ -23552,19 +23880,19 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_SevFlagG2',0,3,25,7
-	.word	.L190
+	.byte	'AdcTest_SevFlagG0',0,3,41,7
+	.word	.L218
 	.byte	1,5,3
-	.word	AdcTest_SevFlagG2
+	.word	AdcTest_SevFlagG0
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_SevFlagG2')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_SevFlagG0')
 	.sect	'.debug_abbrev'
 .L116:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_SevFlagG3')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_SevFlagG2')
 	.sect	'.debug_info'
 .L117:
 	.word	168
@@ -23574,63 +23902,63 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_SevFlagG3',0,3,26,7
-	.word	.L190
+	.byte	'AdcTest_SevFlagG2',0,3,42,7
+	.word	.L218
 	.byte	1,5,3
-	.word	AdcTest_SevFlagG3
+	.word	AdcTest_SevFlagG2
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_SevFlagG3')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_SevFlagG2')
 	.sect	'.debug_abbrev'
 .L118:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183SenseStatus')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_SevFlagG3')
 	.sect	'.debug_info'
 .L119:
-	.word	179
+	.word	168
 	.half	3
 	.word	.L120
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_Group9183SenseStatus',0,3,28,16
-	.word	.L190
+	.byte	'AdcTest_SevFlagG3',0,3,43,7
+	.word	.L218
 	.byte	1,5,3
-	.word	AdcTest_Group9183SenseStatus
+	.word	AdcTest_SevFlagG3
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group9183SenseStatus')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_SevFlagG3')
 	.sect	'.debug_abbrev'
 .L120:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183Vo2Status')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183SenseStatus')
 	.sect	'.debug_info'
 .L121:
-	.word	177
+	.word	179
 	.half	3
 	.word	.L122
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_Group9183Vo2Status',0,3,29,16
-	.word	.L190
+	.byte	'AdcTest_Group9183SenseStatus',0,3,45,16
+	.word	.L218
 	.byte	1,5,3
-	.word	AdcTest_Group9183Vo2Status
+	.word	AdcTest_Group9183SenseStatus
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group9183Vo2Status')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group9183SenseStatus')
 	.sect	'.debug_abbrev'
 .L122:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183Vo3Status')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183Vo2Status')
 	.sect	'.debug_info'
 .L123:
 	.word	177
@@ -23640,63 +23968,63 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_Group9183Vo3Status',0,3,30,16
-	.word	.L190
+	.byte	'AdcTest_Group9183Vo2Status',0,3,46,16
+	.word	.L218
 	.byte	1,5,3
-	.word	AdcTest_Group9183Vo3Status
+	.word	AdcTest_Group9183Vo2Status
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group9183Vo3Status')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group9183Vo2Status')
 	.sect	'.debug_abbrev'
 .L124:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183SenseRaw')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183Vo3Status')
 	.sect	'.debug_info'
 .L125:
-	.word	176
+	.word	177
 	.half	3
 	.word	.L126
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_Group9183SenseRaw',0,3,32,20
-	.word	.L226
+	.byte	'AdcTest_Group9183Vo3Status',0,3,47,16
+	.word	.L218
 	.byte	1,5,3
-	.word	AdcTest_Group9183SenseRaw
+	.word	AdcTest_Group9183Vo3Status
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group9183SenseRaw')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group9183Vo3Status')
 	.sect	'.debug_abbrev'
 .L126:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183Vo2Raw')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183SenseRaw')
 	.sect	'.debug_info'
 .L127:
-	.word	174
+	.word	176
 	.half	3
 	.word	.L128
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_Group9183Vo2Raw',0,3,33,20
-	.word	.L227
+	.byte	'AdcTest_Group9183SenseRaw',0,3,50,20
+	.word	.L256
 	.byte	1,5,3
-	.word	AdcTest_Group9183Vo2Raw
+	.word	AdcTest_Group9183SenseRaw
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group9183Vo2Raw')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group9183SenseRaw')
 	.sect	'.debug_abbrev'
 .L128:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183Vo3Raw')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183Vo2Raw')
 	.sect	'.debug_info'
 .L129:
 	.word	174
@@ -23706,41 +24034,41 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_Group9183Vo3Raw',0,3,34,20
-	.word	.L227
+	.byte	'AdcTest_Group9183Vo2Raw',0,3,51,20
+	.word	.L256
 	.byte	1,5,3
-	.word	AdcTest_Group9183Vo3Raw
+	.word	AdcTest_Group9183Vo2Raw
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group9183Vo3Raw')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group9183Vo2Raw')
 	.sect	'.debug_abbrev'
 .L130:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_VroRaw')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183Vo3Raw')
 	.sect	'.debug_info'
 .L131:
-	.word	165
+	.word	174
 	.half	3
 	.word	.L132
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_VroRaw',0,3,36,20
-	.word	.L202
+	.byte	'AdcTest_Group9183Vo3Raw',0,3,52,20
+	.word	.L257
 	.byte	1,5,3
-	.word	AdcTest_VroRaw
+	.word	AdcTest_Group9183Vo3Raw
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_VroRaw')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group9183Vo3Raw')
 	.sect	'.debug_abbrev'
 .L132:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_Vo1Raw')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_VroRaw')
 	.sect	'.debug_info'
 .L133:
 	.word	165
@@ -23750,19 +24078,19 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_Vo1Raw',0,3,37,20
-	.word	.L202
+	.byte	'AdcTest_VroRaw',0,3,55,20
+	.word	.L232
 	.byte	1,5,3
-	.word	AdcTest_Vo1Raw
+	.word	AdcTest_VroRaw
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Vo1Raw')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_VroRaw')
 	.sect	'.debug_abbrev'
 .L134:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_Vo2Raw')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Vo1Raw')
 	.sect	'.debug_info'
 .L135:
 	.word	165
@@ -23772,19 +24100,19 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_Vo2Raw',0,3,38,20
-	.word	.L202
+	.byte	'AdcTest_Vo1Raw',0,3,56,20
+	.word	.L232
 	.byte	1,5,3
-	.word	AdcTest_Vo2Raw
+	.word	AdcTest_Vo1Raw
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Vo2Raw')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Vo1Raw')
 	.sect	'.debug_abbrev'
 .L136:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_Vo3Raw')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Vo2Raw')
 	.sect	'.debug_info'
 .L137:
 	.word	165
@@ -23794,63 +24122,63 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_Vo3Raw',0,3,39,20
-	.word	.L202
+	.byte	'AdcTest_Vo2Raw',0,3,57,20
+	.word	.L232
 	.byte	1,5,3
-	.word	AdcTest_Vo3Raw
+	.word	AdcTest_Vo2Raw
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Vo3Raw')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Vo2Raw')
 	.sect	'.debug_abbrev'
 .L138:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_EvadcClc')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Vo3Raw')
 	.sect	'.debug_info'
 .L139:
-	.word	167
+	.word	165
 	.half	3
 	.word	.L140
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_EvadcClc',0,3,41,8
-	.word	.L225
+	.byte	'AdcTest_Vo3Raw',0,3,58,20
+	.word	.L232
 	.byte	1,5,3
-	.word	AdcTest_EvadcClc
+	.word	AdcTest_Vo3Raw
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_EvadcClc')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Vo3Raw')
 	.sect	'.debug_abbrev'
 .L140:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_EvadcG0Arbcfg')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_EvadcClc')
 	.sect	'.debug_info'
 .L141:
-	.word	172
+	.word	167
 	.half	3
 	.word	.L142
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_EvadcG0Arbcfg',0,3,42,8
-	.word	.L225
+	.byte	'AdcTest_EvadcClc',0,3,70,8
+	.word	.L255
 	.byte	1,5,3
-	.word	AdcTest_EvadcG0Arbcfg
+	.word	AdcTest_EvadcClc
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_EvadcG0Arbcfg')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_EvadcClc')
 	.sect	'.debug_abbrev'
 .L142:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_EvadcG2Arbcfg')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_EvadcG0Arbcfg')
 	.sect	'.debug_info'
 .L143:
 	.word	172
@@ -23860,19 +24188,19 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_EvadcG2Arbcfg',0,3,43,8
-	.word	.L225
+	.byte	'AdcTest_EvadcG0Arbcfg',0,3,71,8
+	.word	.L255
 	.byte	1,5,3
-	.word	AdcTest_EvadcG2Arbcfg
+	.word	AdcTest_EvadcG0Arbcfg
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_EvadcG2Arbcfg')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_EvadcG0Arbcfg')
 	.sect	'.debug_abbrev'
 .L144:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_EvadcG3Arbcfg')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_EvadcG2Arbcfg')
 	.sect	'.debug_info'
 .L145:
 	.word	172
@@ -23882,41 +24210,41 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_EvadcG3Arbcfg',0,3,44,8
-	.word	.L225
+	.byte	'AdcTest_EvadcG2Arbcfg',0,3,72,8
+	.word	.L255
 	.byte	1,5,3
-	.word	AdcTest_EvadcG3Arbcfg
+	.word	AdcTest_EvadcG2Arbcfg
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_EvadcG3Arbcfg')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_EvadcG2Arbcfg')
 	.sect	'.debug_abbrev'
 .L146:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_EvadcG0Q0Qsr')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_EvadcG3Arbcfg')
 	.sect	'.debug_info'
 .L147:
-	.word	171
+	.word	172
 	.half	3
 	.word	.L148
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_EvadcG0Q0Qsr',0,3,45,8
-	.word	.L225
+	.byte	'AdcTest_EvadcG3Arbcfg',0,3,73,8
+	.word	.L255
 	.byte	1,5,3
-	.word	AdcTest_EvadcG0Q0Qsr
+	.word	AdcTest_EvadcG3Arbcfg
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_EvadcG0Q0Qsr')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_EvadcG3Arbcfg')
 	.sect	'.debug_abbrev'
 .L148:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_EvadcG2Q0Qsr')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_EvadcG0Q0Qsr')
 	.sect	'.debug_info'
 .L149:
 	.word	171
@@ -23926,19 +24254,19 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_EvadcG2Q0Qsr',0,3,46,8
-	.word	.L225
+	.byte	'AdcTest_EvadcG0Q0Qsr',0,3,74,8
+	.word	.L255
 	.byte	1,5,3
-	.word	AdcTest_EvadcG2Q0Qsr
+	.word	AdcTest_EvadcG0Q0Qsr
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_EvadcG2Q0Qsr')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_EvadcG0Q0Qsr')
 	.sect	'.debug_abbrev'
 .L150:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_EvadcG3Q0Qsr')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_EvadcG2Q0Qsr')
 	.sect	'.debug_info'
 .L151:
 	.word	171
@@ -23948,41 +24276,41 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_EvadcG3Q0Qsr',0,3,47,8
-	.word	.L225
+	.byte	'AdcTest_EvadcG2Q0Qsr',0,3,75,8
+	.word	.L255
 	.byte	1,5,3
-	.word	AdcTest_EvadcG3Q0Qsr
+	.word	AdcTest_EvadcG2Q0Qsr
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_EvadcG3Q0Qsr')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_EvadcG2Q0Qsr')
 	.sect	'.debug_abbrev'
 .L152:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_EvadcG0Res0')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_EvadcG3Q0Qsr')
 	.sect	'.debug_info'
 .L153:
-	.word	170
+	.word	171
 	.half	3
 	.word	.L154
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_EvadcG0Res0',0,3,48,8
-	.word	.L225
+	.byte	'AdcTest_EvadcG3Q0Qsr',0,3,76,8
+	.word	.L255
 	.byte	1,5,3
-	.word	AdcTest_EvadcG0Res0
+	.word	AdcTest_EvadcG3Q0Qsr
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_EvadcG0Res0')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_EvadcG3Q0Qsr')
 	.sect	'.debug_abbrev'
 .L154:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_EvadcG0Res1')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_EvadcG0Res0')
 	.sect	'.debug_info'
 .L155:
 	.word	170
@@ -23992,19 +24320,19 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_EvadcG0Res1',0,3,49,8
-	.word	.L225
+	.byte	'AdcTest_EvadcG0Res0',0,3,77,8
+	.word	.L255
 	.byte	1,5,3
-	.word	AdcTest_EvadcG0Res1
+	.word	AdcTest_EvadcG0Res0
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_EvadcG0Res1')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_EvadcG0Res0')
 	.sect	'.debug_abbrev'
 .L156:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_EvadcG2Res0')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_EvadcG0Res1')
 	.sect	'.debug_info'
 .L157:
 	.word	170
@@ -24014,19 +24342,19 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_EvadcG2Res0',0,3,50,8
-	.word	.L225
+	.byte	'AdcTest_EvadcG0Res1',0,3,78,8
+	.word	.L255
 	.byte	1,5,3
-	.word	AdcTest_EvadcG2Res0
+	.word	AdcTest_EvadcG0Res1
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_EvadcG2Res0')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_EvadcG0Res1')
 	.sect	'.debug_abbrev'
 .L158:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_EvadcG3Res0')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_EvadcG2Res0')
 	.sect	'.debug_info'
 .L159:
 	.word	170
@@ -24036,41 +24364,41 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_EvadcG3Res0',0,3,51,8
-	.word	.L225
+	.byte	'AdcTest_EvadcG2Res0',0,3,79,8
+	.word	.L255
 	.byte	1,5,3
-	.word	AdcTest_EvadcG3Res0
+	.word	AdcTest_EvadcG2Res0
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_EvadcG3Res0')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_EvadcG2Res0')
 	.sect	'.debug_abbrev'
 .L160:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_VroResDirect')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_EvadcG3Res0')
 	.sect	'.debug_info'
 .L161:
-	.word	171
+	.word	170
 	.half	3
 	.word	.L162
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_VroResDirect',0,3,52,20
-	.word	.L202
+	.byte	'AdcTest_EvadcG3Res0',0,3,80,8
+	.word	.L255
 	.byte	1,5,3
-	.word	AdcTest_VroResDirect
+	.word	AdcTest_EvadcG3Res0
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_VroResDirect')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_EvadcG3Res0')
 	.sect	'.debug_abbrev'
 .L162:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_Vo1ResDirect')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_VroResDirect')
 	.sect	'.debug_info'
 .L163:
 	.word	171
@@ -24080,19 +24408,19 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_Vo1ResDirect',0,3,53,20
-	.word	.L202
+	.byte	'AdcTest_VroResDirect',0,3,81,20
+	.word	.L232
 	.byte	1,5,3
-	.word	AdcTest_Vo1ResDirect
+	.word	AdcTest_VroResDirect
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Vo1ResDirect')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_VroResDirect')
 	.sect	'.debug_abbrev'
 .L164:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_Vo2ResDirect')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Vo1ResDirect')
 	.sect	'.debug_info'
 .L165:
 	.word	171
@@ -24102,19 +24430,19 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_Vo2ResDirect',0,3,54,20
-	.word	.L202
+	.byte	'AdcTest_Vo1ResDirect',0,3,82,20
+	.word	.L232
 	.byte	1,5,3
-	.word	AdcTest_Vo2ResDirect
+	.word	AdcTest_Vo1ResDirect
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Vo2ResDirect')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Vo1ResDirect')
 	.sect	'.debug_abbrev'
 .L166:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_Vo3ResDirect')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Vo2ResDirect')
 	.sect	'.debug_info'
 .L167:
 	.word	171
@@ -24124,41 +24452,41 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_Vo3ResDirect',0,3,55,20
-	.word	.L202
+	.byte	'AdcTest_Vo2ResDirect',0,3,83,20
+	.word	.L232
 	.byte	1,5,3
-	.word	AdcTest_Vo3ResDirect
+	.word	AdcTest_Vo2ResDirect
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Vo3ResDirect')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Vo2ResDirect')
 	.sect	'.debug_abbrev'
 .L168:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_VroResValid')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Vo3ResDirect')
 	.sect	'.debug_info'
 .L169:
-	.word	170
+	.word	171
 	.half	3
 	.word	.L170
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_VroResValid',0,3,56,7
-	.word	.L190
+	.byte	'AdcTest_Vo3ResDirect',0,3,84,20
+	.word	.L232
 	.byte	1,5,3
-	.word	AdcTest_VroResValid
+	.word	AdcTest_Vo3ResDirect
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_VroResValid')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Vo3ResDirect')
 	.sect	'.debug_abbrev'
 .L170:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_Vo1ResValid')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_VroResValid')
 	.sect	'.debug_info'
 .L171:
 	.word	170
@@ -24168,19 +24496,19 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_Vo1ResValid',0,3,57,7
-	.word	.L190
+	.byte	'AdcTest_VroResValid',0,3,85,7
+	.word	.L218
 	.byte	1,5,3
-	.word	AdcTest_Vo1ResValid
+	.word	AdcTest_VroResValid
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Vo1ResValid')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_VroResValid')
 	.sect	'.debug_abbrev'
 .L172:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_Vo2ResValid')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Vo1ResValid')
 	.sect	'.debug_info'
 .L173:
 	.word	170
@@ -24190,19 +24518,19 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_Vo2ResValid',0,3,58,7
-	.word	.L190
+	.byte	'AdcTest_Vo1ResValid',0,3,86,7
+	.word	.L218
 	.byte	1,5,3
-	.word	AdcTest_Vo2ResValid
+	.word	AdcTest_Vo1ResValid
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Vo2ResValid')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Vo1ResValid')
 	.sect	'.debug_abbrev'
 .L174:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_Vo3ResValid')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Vo2ResValid')
 	.sect	'.debug_info'
 .L175:
 	.word	170
@@ -24212,367 +24540,689 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_Vo3ResValid',0,3,59,7
-	.word	.L190
+	.byte	'AdcTest_Vo2ResValid',0,3,87,7
+	.word	.L218
 	.byte	1,5,3
-	.word	AdcTest_Vo3ResValid
+	.word	AdcTest_Vo2ResValid
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Vo3ResValid')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Vo2ResValid')
 	.sect	'.debug_abbrev'
 .L176:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183SensePending')
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Vo3ResValid')
 	.sect	'.debug_info'
 .L177:
-	.word	179
+	.word	170
 	.half	3
 	.word	.L178
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_Group9183SensePending',0,3,61,16
-	.word	.L190
-	.byte	5,3
-	.word	AdcTest_Group9183SensePending
+	.byte	'AdcTest_Vo3ResValid',0,3,88,7
+	.word	.L218
+	.byte	1,5,3
+	.word	AdcTest_Vo3ResValid
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group9183SensePending')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Vo3ResValid')
 	.sect	'.debug_abbrev'
 .L178:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183Vo2Pending')
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('AdcTest_SevFlagG8')
 	.sect	'.debug_info'
 .L179:
-	.word	177
+	.word	168
 	.half	3
 	.word	.L180
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_Group9183Vo2Pending',0,3,62,16
-	.word	.L190
-	.byte	5,3
-	.word	AdcTest_Group9183Vo2Pending
+	.byte	'AdcTest_SevFlagG8',0,3,44,7
+	.word	.L218
+	.byte	1,5,3
+	.word	AdcTest_SevFlagG8
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group9183Vo2Pending')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_SevFlagG8')
 	.sect	'.debug_abbrev'
 .L180:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183Vo3Pending')
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Group8Status')
 	.sect	'.debug_info'
 .L181:
-	.word	177
+	.word	171
 	.half	3
 	.word	.L182
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_Group9183Vo3Pending',0,3,63,16
-	.word	.L190
-	.byte	5,3
-	.word	AdcTest_Group9183Vo3Pending
+	.byte	'AdcTest_Group8Status',0,3,48,16
+	.word	.L218
+	.byte	1,5,3
+	.word	AdcTest_Group8Status
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group9183Vo3Pending')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group8Status')
 	.sect	'.debug_abbrev'
 .L182:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183SensePendingCycles')
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Group8Raw')
 	.sect	'.debug_info'
 .L183:
-	.word	185
+	.word	168
 	.half	3
 	.word	.L184
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_Group9183SensePendingCycles',0,3,64,14
-	.word	.L190
-	.byte	5,3
-	.word	AdcTest_Group9183SensePendingCycles
+	.byte	'AdcTest_Group8Raw',0,3,53,20
+	.word	.L257
+	.byte	1,5,3
+	.word	AdcTest_Group8Raw
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group9183SensePendingCycles')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group8Raw')
 	.sect	'.debug_abbrev'
 .L184:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183Vo2PendingCycles')
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('AdcTest_SSbc')
 	.sect	'.debug_info'
 .L185:
-	.word	183
+	.word	163
 	.half	3
 	.word	.L186
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_Group9183Vo2PendingCycles',0,3,65,14
-	.word	.L190
-	.byte	5,3
-	.word	AdcTest_Group9183Vo2PendingCycles
+	.byte	'AdcTest_SSbc',0,3,59,20
+	.word	.L232
+	.byte	1,5,3
+	.word	AdcTest_SSbc
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group9183Vo2PendingCycles')
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_SSbc')
 	.sect	'.debug_abbrev'
 .L186:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
-	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183Vo3PendingCycles')
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('AdcTest_vinv')
 	.sect	'.debug_info'
 .L187:
-	.word	183
+	.word	163
 	.half	3
 	.word	.L188
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\adc_test.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L53
+	.word	.L55
 	.byte	3
-	.byte	'AdcTest_Group9183Vo3PendingCycles',0,3,66,14
+	.byte	'AdcTest_vinv',0,3,60,20
+	.word	.L232
+	.byte	1,5,3
+	.word	AdcTest_vinv
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_vinv')
+	.sect	'.debug_abbrev'
+.L188:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('VroAct')
+	.sect	'.debug_info'
+.L189:
+	.word	157
+	.half	3
 	.word	.L190
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\adc_test.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L55
+	.byte	3
+	.byte	'VroAct',0,3,62,7
+	.word	.L258
+	.byte	1,5,3
+	.word	VroAct
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('VroAct')
+	.sect	'.debug_abbrev'
+.L190:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Vo1Act')
+	.sect	'.debug_info'
+.L191:
+	.word	157
+	.half	3
+	.word	.L192
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\adc_test.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L55
+	.byte	3
+	.byte	'Vo1Act',0,3,63,7
+	.word	.L258
+	.byte	1,5,3
+	.word	Vo1Act
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Vo1Act')
+	.sect	'.debug_abbrev'
+.L192:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Vo2Act')
+	.sect	'.debug_info'
+.L193:
+	.word	157
+	.half	3
+	.word	.L194
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\adc_test.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L55
+	.byte	3
+	.byte	'Vo2Act',0,3,64,7
+	.word	.L258
+	.byte	1,5,3
+	.word	Vo2Act
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Vo2Act')
+	.sect	'.debug_abbrev'
+.L194:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Vo3Act')
+	.sect	'.debug_info'
+.L195:
+	.word	157
+	.half	3
+	.word	.L196
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\adc_test.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L55
+	.byte	3
+	.byte	'Vo3Act',0,3,65,7
+	.word	.L258
+	.byte	1,5,3
+	.word	Vo3Act
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Vo3Act')
+	.sect	'.debug_abbrev'
+.L196:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('SSbcAct')
+	.sect	'.debug_info'
+.L197:
+	.word	158
+	.half	3
+	.word	.L198
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\adc_test.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L55
+	.byte	3
+	.byte	'SSbcAct',0,3,66,7
+	.word	.L258
+	.byte	1,5,3
+	.word	SSbcAct
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('SSbcAct')
+	.sect	'.debug_abbrev'
+.L198:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('VinvAct')
+	.sect	'.debug_info'
+.L199:
+	.word	158
+	.half	3
+	.word	.L200
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\adc_test.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L55
+	.byte	3
+	.byte	'VinvAct',0,3,67,7
+	.word	.L258
+	.byte	1,5,3
+	.word	VinvAct
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('VinvAct')
+	.sect	'.debug_abbrev'
+.L200:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183SensePending')
+	.sect	'.debug_info'
+.L201:
+	.word	179
+	.half	3
+	.word	.L202
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\adc_test.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L55
+	.byte	3
+	.byte	'AdcTest_Group9183SensePending',0,3,90,16
+	.word	.L218
+	.byte	5,3
+	.word	AdcTest_Group9183SensePending
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group9183SensePending')
+	.sect	'.debug_abbrev'
+.L202:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183Vo2Pending')
+	.sect	'.debug_info'
+.L203:
+	.word	177
+	.half	3
+	.word	.L204
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\adc_test.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L55
+	.byte	3
+	.byte	'AdcTest_Group9183Vo2Pending',0,3,91,16
+	.word	.L218
+	.byte	5,3
+	.word	AdcTest_Group9183Vo2Pending
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group9183Vo2Pending')
+	.sect	'.debug_abbrev'
+.L204:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183Vo3Pending')
+	.sect	'.debug_info'
+.L205:
+	.word	177
+	.half	3
+	.word	.L206
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\adc_test.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L55
+	.byte	3
+	.byte	'AdcTest_Group9183Vo3Pending',0,3,92,16
+	.word	.L218
+	.byte	5,3
+	.word	AdcTest_Group9183Vo3Pending
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group9183Vo3Pending')
+	.sect	'.debug_abbrev'
+.L206:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Group8Pending')
+	.sect	'.debug_info'
+.L207:
+	.word	171
+	.half	3
+	.word	.L208
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\adc_test.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L55
+	.byte	3
+	.byte	'AdcTest_Group8Pending',0,3,93,16
+	.word	.L218
+	.byte	5,3
+	.word	AdcTest_Group8Pending
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group8Pending')
+	.sect	'.debug_abbrev'
+.L208:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183SensePendingCycles')
+	.sect	'.debug_info'
+.L209:
+	.word	185
+	.half	3
+	.word	.L210
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\adc_test.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L55
+	.byte	3
+	.byte	'AdcTest_Group9183SensePendingCycles',0,3,94,14
+	.word	.L218
+	.byte	5,3
+	.word	AdcTest_Group9183SensePendingCycles
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group9183SensePendingCycles')
+	.sect	'.debug_abbrev'
+.L210:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183Vo2PendingCycles')
+	.sect	'.debug_info'
+.L211:
+	.word	183
+	.half	3
+	.word	.L212
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\adc_test.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L55
+	.byte	3
+	.byte	'AdcTest_Group9183Vo2PendingCycles',0,3,95,14
+	.word	.L218
+	.byte	5,3
+	.word	AdcTest_Group9183Vo2PendingCycles
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group9183Vo2PendingCycles')
+	.sect	'.debug_abbrev'
+.L212:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Group9183Vo3PendingCycles')
+	.sect	'.debug_info'
+.L213:
+	.word	183
+	.half	3
+	.word	.L214
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\adc_test.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L55
+	.byte	3
+	.byte	'AdcTest_Group9183Vo3PendingCycles',0,3,96,14
+	.word	.L218
 	.byte	5,3
 	.word	AdcTest_Group9183Vo3PendingCycles
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group9183Vo3PendingCycles')
 	.sect	'.debug_abbrev'
-.L188:
+.L214:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('AdcTest_Group8PendingCycles')
+	.sect	'.debug_info'
+.L215:
+	.word	177
+	.half	3
+	.word	.L216
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\adc_test.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L55
+	.byte	3
+	.byte	'AdcTest_Group8PendingCycles',0,3,97,14
+	.word	.L218
+	.byte	5,3
+	.word	AdcTest_Group8PendingCycles
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('AdcTest_Group8PendingCycles')
+	.sect	'.debug_abbrev'
+.L216:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
 	.sdecl	'.debug_loc',debug,cluster('AdcTest_Init')
 	.sect	'.debug_loc'
-.L37:
-	.word	-1,.L38,0,.L189-.L38
+.L39:
+	.word	-1,.L40,0,.L217-.L40
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L191:
-	.word	-1,.L38,.L228-.L38,.L229-.L38
+.L219:
+	.word	-1,.L40,.L259-.L40,.L260-.L40
 	.half	1
 	.byte	82
-	.word	.L230-.L38,.L5-.L38
+	.word	.L261-.L40,.L6-.L40
 	.half	1
 	.byte	95
 	.word	0,0
-.L192:
-	.word	-1,.L38,.L229-.L38,.L231-.L38
+.L220:
+	.word	-1,.L40,.L260-.L40,.L262-.L40
 	.half	1
 	.byte	82
-	.word	.L232-.L38,.L189-.L38
+	.word	.L263-.L40,.L217-.L40
 	.half	1
 	.byte	88
 	.word	0,0
-.L193:
-	.word	-1,.L38,.L231-.L38,.L233-.L38
+.L221:
+	.word	-1,.L40,.L262-.L40,.L264-.L40
+	.half	1
+	.byte	82
+	.word	.L265-.L40,.L217-.L40
+	.half	1
+	.byte	89
+	.word	0,0
+.L222:
+	.word	-1,.L40,.L264-.L40,.L266-.L40
 	.half	1
 	.byte	82
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('AdcTest_ManageStalePending')
 	.sect	'.debug_loc'
-.L43:
-	.word	-1,.L44,0,.L220-.L44
+.L45:
+	.word	-1,.L46,0,.L250-.L46
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L224:
-	.word	-1,.L44,0,.L220-.L44
+.L254:
+	.word	-1,.L46,0,.L250-.L46
 	.half	1
 	.byte	84
 	.word	0,0
-.L223:
-	.word	-1,.L44,0,.L220-.L44
+.L253:
+	.word	-1,.L46,0,.L250-.L46
 	.half	1
 	.byte	101
 	.word	0,0
-.L221:
-	.word	-1,.L44,0,.L220-.L44
+.L251:
+	.word	-1,.L46,0,.L250-.L46
 	.half	1
 	.byte	100
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('AdcTest_PollResultHandlers')
 	.sect	'.debug_loc'
-.L41:
-	.word	-1,.L42,0,.L219-.L42
+.L43:
+	.word	-1,.L44,0,.L249-.L44
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('AdcTest_ReadPendingGroup')
 	.sect	'.debug_loc'
-.L47:
-	.word	-1,.L48,0,.L209-.L48
+.L49:
+	.word	-1,.L50,0,.L239-.L50
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L212:
-	.word	-1,.L48,0,.L253-.L48
+.L242:
+	.word	-1,.L50,0,.L289-.L50
 	.half	1
 	.byte	100
-	.word	.L256-.L48,.L209-.L48
+	.word	.L292-.L50,.L239-.L50
 	.half	1
 	.byte	111
-	.word	.L259-.L48,.L258-.L48
+	.word	.L295-.L50,.L294-.L50
 	.half	1
 	.byte	100
 	.word	0,0
-.L213:
-	.word	-1,.L48,0,.L253-.L48
+.L243:
+	.word	-1,.L50,0,.L289-.L50
 	.half	1
 	.byte	85
 	.word	0,0
-.L210:
-	.word	-1,.L48,0,.L253-.L48
+.L240:
+	.word	-1,.L50,0,.L289-.L50
 	.half	1
 	.byte	84
-	.word	.L255-.L48,.L209-.L48
+	.word	.L291-.L50,.L239-.L50
 	.half	1
 	.byte	88
-	.word	.L259-.L48,.L258-.L48
+	.word	.L295-.L50,.L294-.L50
 	.half	1
 	.byte	84
 	.word	0,0
-.L216:
-	.word	-1,.L48,.L253-.L48,.L258-.L48
+.L246:
+	.word	-1,.L50,.L289-.L50,.L294-.L50
 	.half	1
 	.byte	82
 	.word	0,0
-.L214:
-	.word	-1,.L48,0,.L253-.L48
+.L244:
+	.word	-1,.L50,0,.L289-.L50
 	.half	1
 	.byte	101
-	.word	.L257-.L48,.L209-.L48
+	.word	.L293-.L50,.L239-.L50
 	.half	1
 	.byte	108
 	.word	0,0
-.L215:
-	.word	-1,.L48,0,.L253-.L48
+.L245:
+	.word	-1,.L50,0,.L289-.L50
 	.half	1
 	.byte	102
-	.word	.L254-.L48,.L209-.L48
+	.word	.L290-.L50,.L239-.L50
 	.half	1
 	.byte	109
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('AdcTest_RunOnce')
 	.sect	'.debug_loc'
-.L39:
-	.word	-1,.L40,0,.L194-.L40
+.L41:
+	.word	-1,.L42,0,.L223-.L42
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L195:
-	.word	-1,.L40,.L234-.L40,.L235-.L40
+.L224:
+	.word	-1,.L42,.L267-.L42,.L268-.L42
 	.half	1
 	.byte	82
-	.word	.L236-.L40,.L7-.L40
-	.half	1
-	.byte	88
-	.word	0,0
-.L196:
-	.word	-1,.L40,.L235-.L40,.L237-.L40
-	.half	1
-	.byte	82
-	.word	.L238-.L40,.L7-.L40
+	.word	.L269-.L42,.L8-.L42
 	.half	1
 	.byte	89
 	.word	0,0
-.L197:
-	.word	-1,.L40,.L237-.L40,.L239-.L40
+.L225:
+	.word	-1,.L42,.L268-.L42,.L270-.L42
 	.half	1
 	.byte	82
-	.word	.L240-.L40,.L7-.L40
+	.word	.L271-.L42,.L8-.L42
 	.half	1
 	.byte	90
 	.word	0,0
-.L198:
-	.word	-1,.L40,.L241-.L40,.L242-.L40
+.L226:
+	.word	-1,.L42,.L270-.L42,.L272-.L42
 	.half	1
 	.byte	82
-	.word	.L243-.L40,.L244-.L40
-	.half	1
-	.byte	95
-	.word	.L11-.L40,.L7-.L40
-	.half	1
-	.byte	95
-	.word	0,0
-.L199:
-	.word	-1,.L40,.L242-.L40,.L245-.L40
-	.half	1
-	.byte	82
-	.word	.L246-.L40,.L7-.L40
+	.word	.L273-.L42,.L8-.L42
 	.half	1
 	.byte	91
 	.word	0,0
-.L200:
-	.word	-1,.L40,.L245-.L40,.L247-.L40
+.L227:
+	.word	-1,.L42,.L272-.L42,.L274-.L42
 	.half	1
 	.byte	82
-	.word	.L248-.L40,.L7-.L40
+	.word	.L275-.L42,.L8-.L42
 	.half	1
 	.byte	92
 	.word	0,0
+.L228:
+	.word	-1,.L42,.L276-.L42,.L277-.L42
+	.half	1
+	.byte	82
+	.word	.L278-.L42,.L279-.L42
+	.half	1
+	.byte	95
+	.word	.L12-.L42,.L8-.L42
+	.half	1
+	.byte	95
+	.word	0,0
+.L229:
+	.word	-1,.L42,.L277-.L42,.L280-.L42
+	.half	1
+	.byte	82
+	.word	.L281-.L42,.L8-.L42
+	.half	1
+	.byte	93
+	.word	0,0
+.L230:
+	.word	-1,.L42,.L282-.L42,.L283-.L42
+	.half	1
+	.byte	82
+	.word	.L284-.L42,.L8-.L42
+	.half	1
+	.byte	88
+	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('AdcTest_SampleHwRegs')
 	.sect	'.debug_loc'
-.L51:
-	.word	-1,.L52,0,.L218-.L52
+.L53:
+	.word	-1,.L54,0,.L248-.L54
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('AdcTest_StartGroup')
 	.sect	'.debug_loc'
-.L45:
-	.word	-1,.L46,0,.L201-.L46
+.L47:
+	.word	-1,.L48,0,.L231-.L48
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L203:
-	.word	-1,.L46,0,.L249-.L46
+.L233:
+	.word	-1,.L48,0,.L285-.L48
 	.half	1
 	.byte	84
-	.word	.L250-.L46,.L201-.L46
+	.word	.L286-.L48,.L231-.L48
 	.half	1
 	.byte	88
 	.word	0,0
-.L208:
-	.word	-1,.L46,.L249-.L46,.L252-.L46
+.L238:
+	.word	-1,.L48,.L285-.L48,.L288-.L48
 	.half	1
 	.byte	82
 	.word	0,0
-.L205:
-	.word	-1,.L46,0,.L249-.L46
+.L235:
+	.word	-1,.L48,0,.L285-.L48
 	.half	1
 	.byte	100
-	.word	.L250-.L46,.L201-.L46
+	.word	.L286-.L48,.L231-.L48
 	.half	1
 	.byte	111
 	.word	0,0
-.L207:
-	.word	-1,.L46,0,.L249-.L46
+.L237:
+	.word	-1,.L48,0,.L285-.L48
 	.half	1
 	.byte	101
-	.word	.L251-.L46,.L201-.L46
+	.word	.L287-.L48,.L231-.L48
 	.half	1
 	.byte	108
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('AdcTest_UpdateNamedValues')
 	.sect	'.debug_loc'
-.L49:
-	.word	-1,.L50,0,.L217-.L50
+.L51:
+	.word	-1,.L52,0,.L247-.L52
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L417:
+.L482:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
@@ -24580,37 +25230,37 @@ AdcTest_Group9183Vo3PendingCycles:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('AdcTest_Init')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L417,.L38,.L189-.L38
+	.word	.L482,.L40,.L217-.L40
 	.sdecl	'.debug_frame',debug,cluster('AdcTest_RunOnce')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L417,.L40,.L194-.L40
+	.word	.L482,.L42,.L223-.L42
 	.sdecl	'.debug_frame',debug,cluster('AdcTest_PollResultHandlers')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L417,.L42,.L219-.L42
+	.word	.L482,.L44,.L249-.L44
 	.sdecl	'.debug_frame',debug,cluster('AdcTest_ManageStalePending')
 	.sect	'.debug_frame'
 	.word	20
-	.word	.L417,.L44,.L220-.L44
+	.word	.L482,.L46,.L250-.L46
 	.byte	8,18,8,19,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('AdcTest_StartGroup')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L417,.L46,.L201-.L46
+	.word	.L482,.L48,.L231-.L48
 	.sdecl	'.debug_frame',debug,cluster('AdcTest_ReadPendingGroup')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L417,.L48,.L209-.L48
+	.word	.L482,.L50,.L239-.L50
 	.sdecl	'.debug_frame',debug,cluster('AdcTest_UpdateNamedValues')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L417,.L50,.L217-.L50
+	.word	.L482,.L52,.L247-.L52
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('AdcTest_SampleHwRegs')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L417,.L52,.L218-.L52
+	.word	.L482,.L54,.L248-.L54
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 
 

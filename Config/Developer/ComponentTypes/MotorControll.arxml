@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was saved with a tool from Vector Informatik GmbH-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="3433654A-40AF-4F1C-B6CF-A768EF928CA1">
+      <SHORT-NAME>ComponentTypes</SHORT-NAME>
+      <ELEMENTS>
+        <APPLICATION-SW-COMPONENT-TYPE UUID="2B51A08D-E8A1-4F7F-9F34-43B4105735B6">
+          <SHORT-NAME>MotorControll</SHORT-NAME>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="7CDFC0E3-A582-44D7-96BA-2CCA6774F388">
+              <SHORT-NAME>MotorControll_InternalBehavior</SHORT-NAME>
+              <EVENTS>
+                <INIT-EVENT UUID="6C950CDE-BEB0-463F-891E-D1F92727C467">
+                  <SHORT-NAME>MotorControll_InitEvent</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/MotorControll/MotorControll_InternalBehavior/MotorControll_Init</START-ON-EVENT-REF>
+                </INIT-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="4A2DBA33-317B-4F31-998F-00D9F5A4D321">
+                  <SHORT-NAME>MotorControll_Init</SHORT-NAME>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="edve:RunnableKind">
+                        <SD>InitRunnable</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </APPLICATION-SW-COMPONENT-TYPE>
+        <SWC-IMPLEMENTATION UUID="73EC42D7-3EB6-44A8-8C2C-771753EEC94B">
+          <SHORT-NAME>MotorControll_Implementation</SHORT-NAME>
+          <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ComponentTypes/MotorControll/MotorControll_InternalBehavior</BEHAVIOR-REF>
+        </SWC-IMPLEMENTATION>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

@@ -2,10 +2,260 @@
 **** Build of configuration Debug for project last364 ****
 
 "D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
+Compiling BswM_Lcfg.c
+Compiling Can_Lcfg.c
+Compiling Can_PBcfg.c
+Compiling CanIf_Lcfg.c
+Compiling CanIf_PBcfg.c
+Compiling CanSM_Lcfg.c
+Compiling Com_Lcfg.c
+Compiling Com_PBcfg.c
+Compiling ComM_Lcfg.c
+Compiling ComXf.c
+Compiling Det_Cfg.c
+Compiling E2EXf_LCfg.c
+Compiling EcuM_Cfg.c
+Compiling EcuM_Init_Cfg.c
+Compiling EcuM_Init_PBcfg.c
+Compiling EcuM_PBcfg.c
+Compiling Os_AccessCheck_Lcfg.c
+Compiling Os_Alarm_Lcfg.c
+Compiling Os_Application_Lcfg.c
+Compiling Os_Barrier_Lcfg.c
+Compiling Os_Core_Lcfg.c
+Compiling Os_Counter_Lcfg.c
+Compiling Os_Error_Lcfg.c
+Compiling Os_Hal_Context_Lcfg.c
+Compiling Os_Hal_Core_Lcfg.c
+Compiling Os_Hal_Entry_Lcfg.c
+Compiling Os_Hal_Interrupt_Lcfg.c
+Compiling Os_Hal_Kernel_Lcfg.c
+Compiling Os_Hal_MemoryProtection_Lcfg.c
+Compiling Os_Hal_Timer_Lcfg.c
+Compiling Os_Hook_Lcfg.c
+Compiling Os_Ioc_Lcfg.c
+Compiling Os_Isr_Lcfg.c
+Compiling Os_MemoryProtection_Lcfg.c
+Compiling Os_Peripheral_Lcfg.c
+Compiling Os_Resource_Lcfg.c
+Compiling Os_Scheduler_Lcfg.c
+Compiling Os_ScheduleTable_Lcfg.c
+Compiling Os_ServiceFunction_Lcfg.c
+Compiling Os_Spinlock_Lcfg.c
+Compiling Os_Stack_Lcfg.c
+Compiling Os_Task_Lcfg.c
+Compiling Os_TimingProtection_Lcfg.c
+Compiling Os_Trace_Lcfg.c
+Compiling Os_XSignal_Lcfg.c
+Compiling PduR_Lcfg.c
+Compiling PduR_PBcfg.c
+Compiling Rte.c
+Compiling vBrs_Lcfg.c
+Compiling Adc_PBcfg.c
+Compiling Dio_Lcfg.c
+Compiling Dma_PBcfg.c
+Compiling Mcu_17_TimerIp_Cfg.c
+Compiling Mcu_PBcfg.c
+Compiling Port_PBcfg.c
+Compiling Pwm_17_GtmCcu6_PBcfg.c
+Compiling Spi_PBcfg.c
+Compiling adc_test.c
+Compiling Appl_HwStartup.c
+Compiling Autosar_Startup.c
+Compiling BswM_Callout_Stubs.c
+Compiling Can_Callout_Stubs.c
+Compiling can_test.c
+Compiling EcuM_Callout_Stubs.c
+ctc W557: ["..\Appl\Source\Autosar_Startup.c" 12/9] possible infinite loop
+0 errors, 1 warnings
+Compiling Os_Callout_Stubs.c
+Compiling pwm_test.c
+ctc W588: ["..\Appl\Source\adc_test.c" 220/10] dead assignment to "start3" eliminated
+ctc W548: ["..\Appl\Source\adc_test.c" 241/7] uninitialized variable "start4" replaced by zero
+ctc W549: ["..\Appl\Source\adc_test.c" 241/14] condition is always true
+ctc W541: ["..\Appl\Source\adc_test.c" 254/71] possibly uninitialized variable "start4" replaced by "0u"
+ctc W549: ["..\Appl\Source\adc_test.c" 254/77] condition is always true
+0 errors, 5 warnings
+Compiling spi_test.c
 Compiling StartApp.c
+ctc W537: ["..\Appl\Source\Os_Callout_Stubs.c" 125/27] unused variable "CurrentError"
+0 errors, 1 warnings
+Compiling Tle9183.c
+Compiling tle5012BD_CDD.c
+Compiling tle9183_CDD.c
+ctc W536: ["..\Appl\Source\spi_test.c" 94/13] unused static function "SpiTest_Qspi3LoopbackTest"
+0 errors, 1 warnings
+Compiling BswM.c
+Compiling Can.c
+Compiling Can_Irq.c
+Compiling CanIf.c
+Compiling CanSM.c
+Compiling Com.c
+Compiling Com_Buffers.c
+ctc W557: ["..\Appl\Source\EcuM_Callout_Stubs.c" 136/12] possible infinite loop
+ctc W557: ["..\Appl\Source\EcuM_Callout_Stubs.c" 808/12] possible infinite loop
+0 errors, 2 warnings
+Compiling Com_CprQueue.c
+ctc W549: ["..\BSW364\CanIf\Implementation\CanIf.c" 1649/15] condition is always false
+ctc W549: ["..\BSW364\CanIf\Implementation\CanIf.c" 1738/15] condition is always false
+ctc W549: ["..\BSW364\CanIf\Implementation\CanIf.c" 2163/15] condition is always false
+0 errors, 3 warnings
+Compiling Com_CprQueueDescrGw.c
+Compiling Com_CprQueueSigGw.c
+ctc W588: ["..\BSW364\Can\Implementation\Can.c" 2146/14] dead assignment to "llretval" eliminated
+ctc W588: ["..\BSW364\Can\Implementation\Can.c" 5677/10] dead assignment to "tmpECR" eliminated
+ctc W588: ["..\BSW364\Can\Implementation\Can.c" 7572/21] dead assignment to "transitionRequest" eliminated
+ctc W588: ["..\BSW364\Can\Implementation\Can.c" 7727/11] dead assignment to "errorId" eliminated
+ctc W588: ["..\BSW364\Can\Implementation\Can.c" 9020/13] dead assignment to "ConfigPtr" eliminated
+ctc W588: ["..\BSW364\Can\Implementation\Can.c" 10009/23] dead assignment to "canIsRxTaskLocked" eliminated
+0 errors, 6 warnings
+Compiling Com_DescriptionGateway.c
+ctc W537: ["..\BSW364\CanSM\Implementation\CanSM.c" 2390/9] unused variable "CanSM_DetErrorId"
+0 errors, 1 warnings
+Compiling Com_Deserializer.c
+ctc W537: ["..\BSW364\BswM\Implementation\BswM.c" 1202/9] unused variable "errorId"
+ctc W537: ["..\BSW364\BswM\Implementation\BswM.c" 1681/55] unused variable "partitionIdx"
+ctc W537: ["..\BSW364\BswM\Implementation\BswM.c" 1765/55] unused variable "partitionIdx"
+ctc W537: ["..\BSW364\BswM\Implementation\BswM.c" 1906/55] unused variable "partitionIdx"
+ctc W537: ["..\BSW364\BswM\Implementation\BswM.c" 3034/55] unused variable "partitionIdx"
+ctc W537: ["..\BSW364\BswM\Implementation\BswM.c" 3130/55] unused variable "partitionIdx"
+ctc W537: ["..\BSW364\BswM\Implementation\BswM.c" 3203/55] unused variable "partitionIdx"
+ctc W549: ["..\BSW364\BswM\Implementation\BswM.c" 2302/77] condition is always true
+ctc W549: ["..\BSW364\BswM\Implementation\BswM.c" 2300/38] condition is always true
+0 errors, 9 warnings
+Compiling Com_IPduGroupHdlr.c
+ctc W549: ["..\BSW364\Com\Implementation\Com.c" 987/14] condition is always true
+ctc W549: ["..\BSW364\Com\Implementation\Com.c" 1143/14] condition is always true
+ctc W549: ["..\BSW364\Com\Implementation\Com.c" 1219/14] condition is always true
+ctc W549: ["..\BSW364\Com\Implementation\Com.c" 1301/14] condition is always true
+0 errors, 4 warnings
+Compiling Com_LLIf.c
+Compiling Com_LMgt.c
+Compiling Com_MainFunctions.c
+Compiling Com_Notifications.c
+Compiling Com_RxInv.c
+Compiling Com_RxProcessing.c
+Compiling Com_Serializer.c
+Compiling Com_SignalFilterHdlr.c
+ctc W588: ["..\BSW364\Com\Implementation\Com_LLIf.c" 585/32] dead assignment to "doNotificationProcessing" eliminated
+0 errors, 1 warnings
+Compiling Com_SignalGateway.c
+Compiling Com_SignalIf.c
+Compiling Com_Timer.c
+Compiling Com_TxModeHdlr.c
+Compiling ComM.c
+Compiling Det.c
+ctc W549: ["..\BSW364\Com\Implementation\Com_RxProcessing.c" 2336/11] condition is always true
+0 errors, 1 warnings
+Compiling E2EXf.c
+Compiling EcuM.c
+ctc W557: ["..\BSW364\Det\Implementation\Det.c" 404/10] possible infinite loop
+0 errors, 1 warnings
+Compiling IFX_Os.c
+ctc W549: ["..\BSW364\ComM\Implementation\ComM.c" 6140/22] condition is always false
+ctc W549: ["..\BSW364\ComM\Implementation\ComM.c" 3902/3] condition is always true
+ctc W549: ["..\BSW364\ComM\Implementation\ComM.c" 6174/29] condition is always false
+0 errors, 3 warnings
+Compiling Os_AccessCheck.c
+Compiling Os_Alarm.c
+ctc W537: ["..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c" 84/23] unused variable "Os_IntSaveDisableCounter"
+ctc W537: ["..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c" 85/24] unused variable "Os_SavedIntLevelNested"
+0 errors, 2 warnings
+Compiling Os_Application.c
+Compiling Os_Barrier.c
+ctc W537: ["..\BSW364\EcuM\Implementation\EcuM.c" 3147/9] unused variable "errorId"
+ctc W537: ["..\BSW364\EcuM\Implementation\EcuM.c" 5118/9] unused variable "errorId"
+0 errors, 2 warnings
+Compiling Os_Bit.c
+Compiling Os_BitArray.c
+ctc W537: ["..\BSW364\Com\Implementation\Com_SignalIf.c" 1214/39] unused variable "newValuePtr"
+ctc W549: ["..\BSW364\Com\Implementation\Com_SignalIf.c" 1235/15] condition is always true
+0 errors, 2 warnings
+Compiling Os_Core.c
+Compiling Os_Counter.c
+Compiling Os_Deque.c
+Compiling Os_Error.c
+Compiling Os_Event.c
+Compiling Os_Fifo.c
+Compiling Os_Fifo08.c
+Compiling Os_Fifo16.c
+Compiling Os_Fifo32.c
+ctc W549: ["..\BSW364\Os\Implementation\Os_Core.c" 1829/15] condition is always false
+ctc W549: ["..\BSW364\Os\Implementation\Os_Core.c" 1858/15] condition is always false
+ctc W549: ["..\BSW364\Os\Implementation\Os_Core.c" 1222/28] condition is always false
+0 errors, 3 warnings
+Compiling Os_FifoRef.c
+Compiling Os_Hal_Compiler_Diab.c
+Compiling Os_Hal_Compiler_Greenhills.c
+Compiling Os_Hal_Compiler_HighTec.c
+Compiling Os_Hal_Compiler_Tasking.c
+Compiling Os_Hal_Context.c
+Compiling Os_Hal_Core.c
+Compiling Os_Hal_Entry.c
+Compiling Os_Hal_Trap.c
+Compiling Os_Hook.c
+Compiling Os_Interrupt.c
+Compiling Os_Ioc.c
+Compiling Os_Isr.c
+Compiling Os_Job.c
+Compiling Os_Lock.c
+Compiling Os_MemoryProtection.c
+Compiling Os_Peripheral.c
+Compiling Os_PriorityQueue.c
+ctc W549: ["..\BSW364\Os\Implementation\Os_Ioc.c" 1995/6] condition is always false
+0 errors, 1 warnings
+Compiling Os_Resource.c
+Compiling Os_Scheduler.c
+Compiling Os_ScheduleTable.c
+Compiling Os_ServiceFunction.c
+ctc W544: ["..\BSW364\Os\Implementation\Os_Isr.c" 570/22] unreachable code
+ctc W544: ["..\BSW364\Os\Implementation\Os_Isr.c" 640/22] unreachable code
+0 errors, 2 warnings
+Compiling Os_Spinlock.c
+Compiling Os_Stack.c
+Compiling Os_Task.c
+Compiling Os_Thread.c
+Compiling Os_Timer.c
+Compiling Os_TimingProtection.c
+Compiling Os_Trace.c
+Compiling Os_Trap.c
+Compiling Os_XSignal.c
+Compiling PduR.c
+ctc W544: ["..\BSW364\Os\Implementation\Os_Task.c" 1232/22] unreachable code
+ctc W588: ["..\BSW364\Os\Implementation\Os_Task.c" 574/10] dead assignment to "status" eliminated
+0 errors, 2 warnings
+Compiling PduR_Bm.c
+Compiling PduR_Fm.c
+Compiling PduR_IFQ.c
+Compiling PduR_Lock.c
+Compiling PduR_McQ.c
+ctc W549: ["..\BSW364\Os\Implementation\Os_XSignal.c" 936/55] condition is always false
+0 errors, 1 warnings
+Compiling PduR_RmIf.c
+Compiling PduR_RmTp.c
+Compiling PduR_RmTp_TxInst.c
+Compiling PduR_Sm.c
+Compiling vstdlib.c
+Compiling Adc.c
+Compiling Dio.c
+Compiling Dma.c
+Compiling Adc_Irq.c
+Compiling Irq.c
+Compiling McalLib.c
+ctc W588: ["..\BSW364\VStdLib\Implementation\vstdlib.c" 2482/13] dead assignment to "errorId" eliminated
+0 errors, 1 warnings
+Compiling Mcu.c
+Compiling Mcu_17_TimerIp.c
+Compiling Port.c
+Compiling Pwm_17_GtmCcu6.c
+Compiling Spi.c
 Linking to last364.elf
+ltc E106: unresolved external: MotorControll_Init - (Rte.o)
+ltc F019: unrecoverable error: fatal link error
+amk E452: ["makefile" 49/0] target 'last364.elf' returned exit code 1
+amk E451: make stopped
 
-Time consumed: 8627 ms
+Time consumed: 118853 ms
 **** End of build ****
 
 Tool info: 

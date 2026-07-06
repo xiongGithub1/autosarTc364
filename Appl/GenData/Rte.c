@@ -36,8 +36,11 @@
 #include "Rte_ComM.h"
 #include "Rte_Det.h"
 #include "Rte_EcuM.h"
+#include "Rte_MotorControll.h"
 #include "Rte_Os_OsCore0_swc.h"
 #include "Rte_StartApp.h"
+#include "Rte_tle5012BD_CDD.h"
+#include "Rte_tle9183_CDD.h"
 #include "SchM_Adc.h"
 #include "SchM_BswM.h"
 #include "SchM_Can.h"
@@ -604,6 +607,15 @@ TASK(Default_Appl_Init_Task) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unre
 
   /* call runnable */
   StartApp_Init(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+
+  /* call runnable */
+  tle5012BD_CDD_Init(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+
+  /* call runnable */
+  MotorControll_Init(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+
+  /* call runnable */
+  tle9183_CDD_Init(); /* PRQA S 2987 */ /* MD_Rte_2987 */
 
   (void)TerminateTask(); /* PRQA S 3417 */ /* MD_Rte_Os */
 } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */

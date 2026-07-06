@@ -195,8 +195,8 @@ static Std_ReturnType Tle9183_SpiExchange(uint32 txFrame, uint32 *rxFrame)
     return E_NOT_OK;
   }
 
-  txResult = Spi_SyncTransmit(SpiConf_SpiSequence_SpiSequence);
-  seqResult = Spi_GetSequenceResult(SpiConf_SpiSequence_SpiSequence);
+  txResult = Spi_SyncTransmit(SpiConf_SpiSequence_SpiSequence_9183);
+  seqResult = Spi_GetSequenceResult(SpiConf_SpiSequence_SpiSequence_9183);
 
   Tle9183_SampleQspiHw();
   Tle9183_SampleMrstPin();

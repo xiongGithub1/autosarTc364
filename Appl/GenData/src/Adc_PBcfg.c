@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 13.0.0                                                         **
 **                                                                            **
-**  DATE, TIME: 2024-07-06, 09:43:43            !!!IGNORE-LINE!!!             **
+**  DATE, TIME: 2024-07-06, 16:21:28            !!!IGNORE-LINE!!!             **
 **                                                                            **
 **  GENERATOR : Build b191017-0938              !!!IGNORE-LINE!!!             **
 **                                                                            **
@@ -101,10 +101,11 @@ static const Adc_GroupDefType Adc_kHwUnit0GrpAdcGroup_9183Sense_Config[2]=
    without safegaurd. It complies to Autosar guidelines. */ 
 #include "Adc_MemMap.h"
 /**Group Definition of AdcGroup- ID64 of HW Unit 2 */
-static const Adc_GroupDefType Adc_kHwUnit2GrpAdcGroup_Config[1]=
+static const Adc_GroupDefType Adc_kHwUnit2GrpAdcGroup_Config[2]=
 {
   /*AS Logical Channel*/ /*Analog Channel*/ /*Result Register*/ /*Channel Diagnostic Data*/
-        {  0U,                   4U,                0U,                0x00000000U}
+        {  0U,                   4U,                0U,                0x00000000U},
+        {  1U,                   1U,                1U,                0x00000000U}
 };
 /* MISRA2012_RULE_5_1_JUSTIFICATION: Memmap macros are defined as per Autosar
    naming convention, hence it goes beyond 32 characters.*/
@@ -141,6 +142,42 @@ static const Adc_GroupDefType Adc_kHwUnit3GrpAdcGroup_1_Config[1]=
 {
   /*AS Logical Channel*/ /*Analog Channel*/ /*Result Register*/ /*Channel Diagnostic Data*/
         {  0U,                   4U,                0U,                0x00000000U}
+};
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+
+#define ADC_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_UNSPECIFIED
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header usage as per Autosar 
+   guideline. */
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+   without safegaurd. It complies to Autosar guidelines. */ 
+#include "Adc_MemMap.h"
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+
+#define ADC_START_SEC_CONFIG_DATA_ASIL_B_CORE0_UNSPECIFIED
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header usage as per Autosar 
+   guideline. */
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+   without safegaurd. It complies to Autosar guidelines. */ 
+#include "Adc_MemMap.h"
+/**Group Definition of AdcGroup_2- ID256 of HW Unit 8 */
+static const Adc_GroupDefType Adc_kHwUnit8GrpAdcGroup_2_Config[1]=
+{
+  /*AS Logical Channel*/ /*Analog Channel*/ /*Result Register*/ /*Channel Diagnostic Data*/
+        {  0U,                   3U,                0U,                0x00000000U}
 };
 /* MISRA2012_RULE_5_1_JUSTIFICATION: Memmap macros are defined as per Autosar
    naming convention, hence it goes beyond 32 characters.*/
@@ -296,9 +333,9 @@ static const Adc_GroupCfgType Adc_kHwUnit2Grp_Config[1]=
     /* Configuration value for G2REQTM register*/
     0x00000000U,
     /*Bit Mask for all the analog channels configured for the group*/
-    0x0010U,
+    0x0012U,
     /*Bit Mask for all the result registers configured for the group*/
-    0x0001U,
+    0x0003U,
     /*Bit Mask for all the analog channels configured for synchronous conversion*/
     0x0000U,
     /*Bit Mask for all the result registers configured for synchronous conversion*/
@@ -311,7 +348,7 @@ static const Adc_GroupCfgType Adc_kHwUnit2Grp_Config[1]=
     ADC_OTHER_HW_USED, /*HW peripheral used for Trigger*/
     ADC_OTHER_HW_USED, /*HW peripheral used for Gate*/
     0U, /*Priority Level for the group*/
-    1U, /*Channel Count for the group*/
+    2U, /*Channel Count for the group*/
     0U, /*Limit Check enabled for the group*/
     0x00U, /* EMUX configuration of the Group */
     0U /* Diagnostic channels configured for the Group */
@@ -420,6 +457,93 @@ static const Adc_GroupCfgType Adc_kHwUnit3Grp_Config[1]=
    without safegaurd. It complies to Autosar guidelines. */ 
 #include "Adc_MemMap.h"
 
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/ 
+
+#define ADC_START_SEC_CONFIG_DATA_ASIL_B_CORE0_UNSPECIFIED
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header usage as per Autosar 
+   guideline. */
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+   without safegaurd. It complies to Autosar guidelines. */ 
+#include "Adc_MemMap.h"
+
+/*****Group Configuration Definition of HW Unit 8 ******/
+static const Adc_GroupCfgType Adc_kHwUnit8Grp_Config[1]=
+{
+
+  {/*Group Configuration structure for AdcGroup_2 - ID256*/
+    /*
+      Group Properties:
+      Trigger Source: ADC_TRIGG_SRC_SW
+      Trigger Edge: 
+      HW Trigger Source: ADC_TRIG_NONE
+      HW Gate Source: ADC_GATE_NONE
+      Gate Level: ADC_GATE_LVL_HIGH
+    */
+    /* Notification Function Address */
+    (Adc_NotifyFnPtrType)0U,
+    /*Address for Group Definition Structure*/
+    &Adc_kHwUnit8GrpAdcGroup_2_Config[0U],
+    /*Address for the GTM trigger configuration structure*/
+    (const Mcu_17_Gtm_TomAtomChConfigType *)0U,
+    /*Address for the GTM gate configuration structure*/
+    (const Mcu_17_Gtm_TomAtomChConfigType *)0U,
+    /*Address for the ERU trigger configuration structure*/
+    (const Adc_EruChannelCfgType *)0U,
+    /*Address for the ERU gate configuration structure*/
+    (const Adc_EruChannelCfgType *)0U,
+    /*Configuration value for the G8QCTRL register*/
+    0x00000000U,
+    /*Configuration value for the G8QMR register*/
+    0x00000001U,
+    /*Configuration value for the G8ALIAS register*/
+    0x00000100U,
+    /* Configuration value for G8REQTM register*/
+    0x00000000U,
+    /*Bit Mask for all the analog channels configured for the group*/
+    0x0008U,
+    /*Bit Mask for all the result registers configured for the group*/
+    0x0001U,
+    /*Bit Mask for all the analog channels configured for synchronous conversion*/
+    0x0000U,
+    /*Bit Mask for all the result registers configured for synchronous conversion*/
+    0x0000U,
+    ADC_TRIGG_SRC_SW,
+    ADC_CONV_MODE_ONESHOT,
+    ADC_ACCESS_MODE_SINGLE,
+    ADC_STREAM_BUFFER_LINEAR,
+    1U, /*Number of streaming samples for the group*/
+    ADC_OTHER_HW_USED, /*HW peripheral used for Trigger*/
+    ADC_OTHER_HW_USED, /*HW peripheral used for Gate*/
+    0U, /*Priority Level for the group*/
+    1U, /*Channel Count for the group*/
+    0U, /*Limit Check enabled for the group*/
+    0x00U, /* EMUX configuration of the Group */
+    0U /* Diagnostic channels configured for the Group */
+  }
+};
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+
+#define ADC_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_UNSPECIFIED
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header usage as per Autosar 
+   guideline. */
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+   without safegaurd. It complies to Autosar guidelines. */ 
+#include "Adc_MemMap.h"
+
 
 /***********************Channel Configuration Definition***********************/
 /*****Channel Configuration Definition of HW Unit 0 *****/
@@ -486,13 +610,20 @@ static const Adc_ChannelCfgType Adc_kHwUnit0Ch_Config[2]=
 /* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
    without safegaurd. It complies to Autosar guidelines. */ 
 #include "Adc_MemMap.h"
-static const Adc_ChannelCfgType Adc_kHwUnit2Ch_Config[1]=
+static const Adc_ChannelCfgType Adc_kHwUnit2Ch_Config[2]=
 {
 
   {
     0x00000000U, /*Configuration value for the G2CHCTR4 register*/
     0x00000000U, /*Configuration value for the G2BOUND register*/
     4U, /*Analog Channel number for the corresponding Logical Channel*/
+    0U /*Limit Check channel or not */
+  },
+
+  {
+    0x00000000U, /*Configuration value for the G2CHCTR1 register*/
+    0x00000000U, /*Configuration value for the G2BOUND register*/
+    1U, /*Analog Channel number for the corresponding Logical Channel*/
     0U /*Limit Check channel or not */
   }
 };
@@ -534,6 +665,47 @@ static const Adc_ChannelCfgType Adc_kHwUnit3Ch_Config[1]=
     0x00000000U, /*Configuration value for the G3CHCTR4 register*/
     0x00000000U, /*Configuration value for the G3BOUND register*/
     4U, /*Analog Channel number for the corresponding Logical Channel*/
+    0U /*Limit Check channel or not */
+  }
+};
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+#define ADC_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_UNSPECIFIED
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header usage as per Autosar 
+   guideline. */
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+   without safegaurd. It complies to Autosar guidelines. */ 
+#include "Adc_MemMap.h"
+
+/*****Channel Configuration Definition of HW Unit 8 *****/
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+
+#define ADC_START_SEC_CONFIG_DATA_ASIL_B_CORE0_UNSPECIFIED
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header usage as per Autosar 
+   guideline. */
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+   without safegaurd. It complies to Autosar guidelines. */ 
+#include "Adc_MemMap.h"
+static const Adc_ChannelCfgType Adc_kHwUnit8Ch_Config[1]=
+{
+
+  {
+    0x00000000U, /*Configuration value for the G8CHCTR3 register*/
+    0x00000000U, /*Configuration value for the G8BOUND register*/
+    3U, /*Analog Channel number for the corresponding Logical Channel*/
     0U /*Limit Check channel or not */
   }
 };
@@ -657,6 +829,46 @@ static const Adc_HwCfgType Adc_kHwUnit3Hw_Config=
   0x0000000aU, /*Configuration value for G3ICLASS0 register*/
   0x00000000U, /*Configuration value for G3ICLASS1 register*/
   0x00000000U /*Configuration value for G3SYNCTR register*/
+};
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+#define ADC_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_UNSPECIFIED
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header usage as per Autosar 
+   guideline. */
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+   without safegaurd. It complies to Autosar guidelines. */ 
+#include "Adc_MemMap.h"
+
+
+/**HW Unit 8 Converter Configurations **/
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+#define ADC_START_SEC_CONFIG_DATA_ASIL_B_CORE0_UNSPECIFIED
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header usage as per Autosar 
+   guideline. */
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+   without safegaurd. It complies to Autosar guidelines. */ 
+#include "Adc_MemMap.h"
+static const Adc_HwCfgType Adc_kHwUnit8Hw_Config=
+{
+  0x00300004U, /*Configuration value for G8ANCFG register*/
+  0x00000003U, /*Configuration value for G8ARBCFG register*/
+  0x01000000U, /*Configuration value for G8ARBPR register*/
+  0x00000000U, /*Configuration value for G8ICLASS0 register*/
+  0x00000000U, /*Configuration value for G8ICLASS1 register*/
+  0x00000000U /*Configuration value for G8SYNCTR register*/
 };
 /* MISRA2012_RULE_5_1_JUSTIFICATION: Memmap macros are defined as per Autosar
    naming convention, hence it goes beyond 32 characters.*/
@@ -805,6 +1017,49 @@ static const Adc_HwUnitCfgType Adc_kHwUnit3_Config=
 #include "Adc_MemMap.h"
 
 
+/*************HW Unit 8 Configuration **************/
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+   #define ADC_START_SEC_CONFIG_DATA_ASIL_B_CORE0_UNSPECIFIED
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header usage as per Autosar 
+   guideline. */
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+   without safegaurd. It complies to Autosar guidelines. */ 
+#include "Adc_MemMap.h"
+static const Adc_HwUnitCfgType Adc_kHwUnit8_Config=
+{
+  &Adc_kHwUnit8Hw_Config, /*Analog Converter Configuration*/
+  &Adc_kHwUnit8Ch_Config[0U], /*Channel Configuration structure*/
+  &Adc_kHwUnit8Grp_Config[0U], /*Group Configuration structure*/
+  0x00000001U, /* Mask for SW triggered groups*/
+  0x00000000U,/* Mask for HW triggered groups*/
+  ADC_SYNC_CONV_MODE_NONE, /* Synchronous conversion mode */
+  { 0xffU, 0xffU, 0xffU }, /* Slave Kernels */
+  1U, /* Group Count for HW Unit 8*/
+  1U /* Bit Mask for SRNs used for HW Unit 8*/
+};
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+#define ADC_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_UNSPECIFIED
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header usage as per Autosar 
+   guideline. */
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+   without safegaurd. It complies to Autosar guidelines. */ 
+#include "Adc_MemMap.h"
+
+
 /* MISRA2012_RULE_5_1_JUSTIFICATION: Memmap macros are defined as per Autosar
    naming convention, hence it goes beyond 32 characters.*/
 /* MISRA2012_RULE_5_2_JUSTIFICATION: Memmap macros are defined as per Autosar
@@ -874,7 +1129,7 @@ static const Adc_CoreConfigType Adc_kCore0_Config=
     (Adc_HwUnitCfgType*)0U, /* HW Unit 6 Configuration */
     (Adc_HwUnitCfgType*)0U, /* HW Unit 7 Configuration */
     (Adc_HwUnitCfgType*)0U, /* HW Unit 8 Configuration */
-    (Adc_HwUnitCfgType*)0U, /* HW Unit 9 Configuration */
+    &Adc_kHwUnit8_Config, /* HW Unit 9 Configuration */
     (Adc_HwUnitCfgType*)0U /* HW Unit 10 Configuration */
   }
 };

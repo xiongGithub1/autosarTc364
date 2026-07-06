@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Entry_Lcfg.c
- *   Generation Time: 2024-07-03 19:23:27
+ *   Generation Time: 2024-07-06 14:46:49
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -130,7 +130,7 @@ Os_Hal_Cat2InterruptEntry(0, 2, OS_CFG_HAL_ISR2_DISABLE_LEVEL, OsCfg_Isr_CanIsr_
 Os_Hal_Cat2InterruptEntry(0, 3, OS_CFG_HAL_ISR2_DISABLE_LEVEL, OsCfg_Isr_AdcIsr_G0)
 Os_Hal_Cat2InterruptEntry(0, 4, OS_CFG_HAL_ISR2_DISABLE_LEVEL, OsCfg_Isr_AdcIsr_G2)
 Os_Hal_Cat2InterruptEntry(0, 5, OS_CFG_HAL_ISR2_DISABLE_LEVEL, OsCfg_Isr_AdcIsr_G3)
-Os_Hal_UnhandledInterruptEntry(0, 6) 
+Os_Hal_Cat2InterruptEntry(0, 6, OS_CFG_HAL_ISR2_DISABLE_LEVEL, OsCfg_Isr_AdcIsr_G8)
 Os_Hal_UnhandledInterruptEntry(0, 7) 
 Os_Hal_UnhandledInterruptEntry(0, 8) 
 Os_Hal_UnhandledInterruptEntry(0, 9) 

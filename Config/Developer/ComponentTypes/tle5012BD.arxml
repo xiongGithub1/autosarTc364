@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was saved with a tool from Vector Informatik GmbH-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="3433654A-40AF-4F1C-B6CF-A768EF928CA1">
+      <SHORT-NAME>ComponentTypes</SHORT-NAME>
+      <ELEMENTS>
+        <COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE UUID="46684E88-BD3D-44EB-A769-23F002805BB1">
+          <SHORT-NAME>tle5012BD_CDD</SHORT-NAME>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="C3C900B3-F614-46A0-8435-E523100DFE37">
+              <SHORT-NAME>tle5012BD_CDD_InternalBehavior</SHORT-NAME>
+              <EVENTS>
+                <INIT-EVENT UUID="37027E7D-058C-48BF-A32D-2968D416A7D4">
+                  <SHORT-NAME>tle5012BD_CDD_InitEvent</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/tle5012BD_CDD/tle5012BD_CDD_InternalBehavior/tle5012BD_CDD_Init</START-ON-EVENT-REF>
+                </INIT-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="43DB7A8A-AF77-41C6-AC1C-EB8589C3EE08">
+                  <SHORT-NAME>tle5012BD_CDD_Init</SHORT-NAME>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="edve:RunnableKind">
+                        <SD>InitRunnable</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE>
+        <SWC-IMPLEMENTATION UUID="EA2AD472-F606-4058-A7E3-4F321DCA2864">
+          <SHORT-NAME>tle5012BD_CDD_Implementation</SHORT-NAME>
+          <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ComponentTypes/tle5012BD_CDD/tle5012BD_CDD_InternalBehavior</BEHAVIOR-REF>
+        </SWC-IMPLEMENTATION>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

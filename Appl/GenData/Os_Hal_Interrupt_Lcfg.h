@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Interrupt_Lcfg.h
- *   Generation Time: 2024-07-03 19:23:27
+ *   Generation Time: 2024-07-06 14:46:49
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -99,6 +99,10 @@ extern CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_AdcIsr_G2
 /*! HAL ISR configuration data: AdcIsr_G3 */
 extern CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_AdcIsr_G3;
 extern CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_AdcIsr_G3;
+
+/*! HAL ISR configuration data: AdcIsr_G8 */
+extern CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_AdcIsr_G8;
+extern CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_AdcIsr_G8;
 
 /*! HAL ISR configuration data: CanIsr_0 */
 extern CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_CanIsr_0;

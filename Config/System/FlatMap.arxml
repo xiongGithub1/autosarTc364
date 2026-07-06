@@ -47,6 +47,54 @@
                                     <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/StartApp</TARGET-REF>
                                   </ECU-EXTRACT-REFERENCE-IREF>
                                 </FLAT-INSTANCE-DESCRIPTOR>
+                                <FLAT-INSTANCE-DESCRIPTOR UUID="c27a26c5-8b55-4107-9eeb-cc7e1657dd61">
+                                  <SHORT-NAME>MotorControll</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <UPSTREAM-REFERENCE-IREF>
+                                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VehicleProject/System/EcuSwComposition</CONTEXT-ELEMENT-REF>
+                                    <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/MotorControll</TARGET-REF>
+                                  </UPSTREAM-REFERENCE-IREF>
+                                  <ECU-EXTRACT-REFERENCE-IREF>
+                                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-ELEMENT-REF>
+                                    <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/MotorControll</TARGET-REF>
+                                  </ECU-EXTRACT-REFERENCE-IREF>
+                                </FLAT-INSTANCE-DESCRIPTOR>
+                                <FLAT-INSTANCE-DESCRIPTOR UUID="42e15121-2644-4f72-b6b1-01a5a019cd66">
+                                  <SHORT-NAME>tle5012BD_CDD</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <UPSTREAM-REFERENCE-IREF>
+                                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VehicleProject/System/EcuSwComposition</CONTEXT-ELEMENT-REF>
+                                    <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/tle5012BD_CDD</TARGET-REF>
+                                  </UPSTREAM-REFERENCE-IREF>
+                                  <ECU-EXTRACT-REFERENCE-IREF>
+                                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-ELEMENT-REF>
+                                    <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/tle5012BD_CDD</TARGET-REF>
+                                  </ECU-EXTRACT-REFERENCE-IREF>
+                                </FLAT-INSTANCE-DESCRIPTOR>
+                                <FLAT-INSTANCE-DESCRIPTOR UUID="b22b50be-2ef2-4ad8-9d54-6f622741bd06">
+                                  <SHORT-NAME>tle9183_CDD</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <UPSTREAM-REFERENCE-IREF>
+                                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VehicleProject/System/EcuSwComposition</CONTEXT-ELEMENT-REF>
+                                    <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/tle9183_CDD</TARGET-REF>
+                                  </UPSTREAM-REFERENCE-IREF>
+                                  <ECU-EXTRACT-REFERENCE-IREF>
+                                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-ELEMENT-REF>
+                                    <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/tle9183_CDD</TARGET-REF>
+                                  </ECU-EXTRACT-REFERENCE-IREF>
+                                </FLAT-INSTANCE-DESCRIPTOR>
                               </INSTANCES>
                             </FLAT-MAP>
                           </ELEMENTS>

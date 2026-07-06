@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Types_Lcfg.h
- *   Generation Time: 2024-07-03 19:24:24
+ *   Generation Time: 2024-07-06 14:46:49
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -82,6 +82,7 @@
 #define AdcIsr_G0 AdcIsr_G0
 #define AdcIsr_G2 AdcIsr_G2
 #define AdcIsr_G3 AdcIsr_G3
+#define AdcIsr_G8 AdcIsr_G8
 #define CanIsr_0 CanIsr_0
 #define CounterIsr_SystemTimer CounterIsr_SystemTimer
 
@@ -167,9 +168,10 @@ typedef enum
   AdcIsr_G0 = 0,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
   AdcIsr_G2 = 1,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
   AdcIsr_G3 = 2,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  CanIsr_0 = 3,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  CounterIsr_SystemTimer = 4,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  OS_ISRID_COUNT = 5,
+  AdcIsr_G8 = 3,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  CanIsr_0 = 4,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  CounterIsr_SystemTimer = 5,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  OS_ISRID_COUNT = 6,
   INVALID_ISR = OS_ISRID_COUNT
 } ISRType;
 

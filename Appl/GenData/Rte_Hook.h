@@ -80,6 +80,8 @@
  *  Rte_Runnable_EcuM_SelectShutdownCause_Start
  *  Rte_Runnable_EcuM_SelectShutdownTarget_Return
  *  Rte_Runnable_EcuM_SelectShutdownTarget_Start
+ *  Rte_Runnable_MotorControll_MotorControll_Init_Return
+ *  Rte_Runnable_MotorControll_MotorControll_Init_Start
  *  Rte_Runnable_Os_OsCore0_swc_GetCounterValue_Return
  *  Rte_Runnable_Os_OsCore0_swc_GetCounterValue_Start
  *  Rte_Runnable_Os_OsCore0_swc_GetElapsedValue_Return
@@ -94,6 +96,10 @@
  *  Rte_Runnable_StartApp_StartApp_Cyclic250ms_Start
  *  Rte_Runnable_StartApp_StartApp_Init_Return
  *  Rte_Runnable_StartApp_StartApp_Init_Start
+ *  Rte_Runnable_tle5012BD_CDD_tle5012BD_CDD_Init_Return
+ *  Rte_Runnable_tle5012BD_CDD_tle5012BD_CDD_Init_Start
+ *  Rte_Runnable_tle9183_CDD_tle9183_CDD_Init_Return
+ *  Rte_Runnable_tle9183_CDD_tle9183_CDD_Init_Start
  *  Rte_SwitchAckHook_EcuM_currentMode_currentMode_Return
  *  Rte_SwitchAckHook_EcuM_currentMode_currentMode_Start
  *  Rte_SwitchHook_EcuM_currentMode_currentMode_Return

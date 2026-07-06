@@ -132,6 +132,54 @@
                                   <SHORT-NAME>EcuM</SHORT-NAME>
                                   <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/EcuM_swc/ComponentTypes/EcuM</TYPE-TREF>
                                 </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="5b71db1c-5482-4880-9de4-87a61bb32127">
+                                  <SHORT-NAME>MotorControll</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/MotorControll</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="cefe1d7d-89bb-4a2a-8c66-991d07503246">
+                                  <SHORT-NAME>tle5012BD_CDD</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <TYPE-TREF DEST="COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE">/ComponentTypes/tle5012BD_CDD</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="b620182b-3b3b-4176-a0df-51ddebf379d7">
+                                  <SHORT-NAME>tle9183_CDD</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <TYPE-TREF DEST="COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE">/ComponentTypes/tle9183_CDD</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
                               </COMPONENTS>
                             </COMPOSITION-SW-COMPONENT-TYPE>
                             <END-TO-END-PROTECTION-SET UUID="a4e3eb1b-8c6e-4ff7-b0ed-a62ec0c16680">
@@ -213,11 +261,17 @@
                                     <SD GID="9545fe9e-3389-4b58-a7c5-529393280d37">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE</SD>
                                     <SD GID="2ecfeaa2-6c30-4d7d-8e6e-2421a5350db7">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</SD>
                                     <SD GID="1d01c276-c949-40ad-b899-b7a0bca03263">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Det</SD>
+                                    <SD GID="5b71db1c-5482-4880-9de4-87a61bb32127">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/MotorControll</SD>
                                     <SD GID="8dad7314-b692-48a2-83bc-54c1373e5ddd">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Os_OsCore0_swc</SD>
                                     <SD GID="1bfb6dfb-0bf9-4ea2-8053-c39a6d0b22f7">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/StartApp</SD>
+                                    <SD GID="cefe1d7d-89bb-4a2a-8c66-991d07503246">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/tle5012BD_CDD</SD>
+                                    <SD GID="b620182b-3b3b-4176-a0df-51ddebf379d7">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/tle9183_CDD</SD>
                                     <SD GID="f7f3ba40-5fcb-4bee-afcf-5ea567163e04">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/FLATMAP</SD>
                                     <SD GID="047fd99a-ad86-45be-83f4-6b8d0441468d">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM</SD>
                                     <SD GID="71662b86-9618-4a49-8583-d1f3bd194430">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</SD>
+                                    <SD GID="2B51A08D-E8A1-4F7F-9F34-43B4105735B6">/ComponentTypes/MotorControll</SD>
+                                    <SD GID="6C950CDE-BEB0-463F-891E-D1F92727C467">/ComponentTypes/MotorControll/MotorControll_InternalBehavior/MotorControll_InitEvent</SD>
+                                    <SD GID="73EC42D7-3EB6-44A8-8C2C-771753EEC94B">/ComponentTypes/MotorControll_Implementation</SD>
                                     <SD GID="29CEE414-8C92-4098-9D33-043FB99C2C62">/ComponentTypes/StartApp</SD>
                                     <SD GID="4B91D2A3-5D8E-47D6-8D7E-568156A99AA3">/ComponentTypes/StartApp/StartApp_InternalBehavior/StartApp_InitEvent</SD>
                                     <SD GID="2CB13980-9513-4715-8BB3-44E46DD2B497">/ComponentTypes/StartApp/StartApp_InternalBehavior/TMT_StartApp_Cyclic1000ms</SD>
@@ -225,8 +279,17 @@
                                     <SD GID="8ABA4657-4CC2-4B2E-896E-0B9892AF4B05">/ComponentTypes/StartApp/StartApp_InternalBehavior/TMT_StartApp_Cyclic1ms</SD>
                                     <SD GID="39B6632A-DEA1-420C-A573-5EB0B92EEFE5">/ComponentTypes/StartApp/StartApp_InternalBehavior/TMT_StartApp_Cyclic500ms</SD>
                                     <SD GID="D1421BB5-E67D-49C5-8029-41F2582E4A38">/ComponentTypes/StartApp_Implementation</SD>
+                                    <SD GID="46684E88-BD3D-44EB-A769-23F002805BB1">/ComponentTypes/tle5012BD_CDD</SD>
+                                    <SD GID="37027E7D-058C-48BF-A32D-2968D416A7D4">/ComponentTypes/tle5012BD_CDD/tle5012BD_CDD_InternalBehavior/tle5012BD_CDD_InitEvent</SD>
+                                    <SD GID="EA2AD472-F606-4058-A7E3-4F321DCA2864">/ComponentTypes/tle5012BD_CDD_Implementation</SD>
+                                    <SD GID="0CF1B17E-0882-4F6F-B3CC-5186078C632B">/ComponentTypes/tle9183_CDD</SD>
+                                    <SD GID="EE0B1A51-50B6-4DA9-8E79-84F0AFCD42E1">/ComponentTypes/tle9183_CDD/tle9183_CDD_InternalBehavior/tle9183_CDD_InitEvent</SD>
+                                    <SD GID="F47D540A-A6A5-4EE3-B1AC-A5839CF0210C">/ComponentTypes/tle9183_CDD_Implementation</SD>
                                     <SD GID="FE2C5E2A-0151-4321-8D4B-BAD3E52BE0CA">/ECUCompositionTypes/ECU_Composition</SD>
+                                    <SD GID="AB32B20F-4632-4988-A2B6-850B953BB4ED">/ECUCompositionTypes/ECU_Composition/MotorControll</SD>
                                     <SD GID="A4CAE317-8087-4975-B747-EA330DE14F16">/ECUCompositionTypes/ECU_Composition/StartApp</SD>
+                                    <SD GID="9EBFEAD1-54F7-44F1-8673-CB0F0C838F65">/ECUCompositionTypes/ECU_Composition/tle5012BD_CDD</SD>
+                                    <SD GID="DF774B9A-DBCB-40ED-BC2E-CE4F3D96646D">/ECUCompositionTypes/ECU_Composition/tle9183_CDD</SD>
                                     <SD GID="b1545062-8cf6-4fa3-9032-294d95e2977d">/Irq</SD>
                                     <SD GID="f10f3aeb-1a4a-4470-9118-fb07af0b8602">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior</SD>
                                     <SD GID="3c88a083-4574-4fad-8483-3d10013b5e22">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BSWM_EXCLUSIVE_AREA_0</SD>

@@ -1,0 +1,326 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc10536a --dep-file=Appl\\Source\\CDD\\.tle9183_CDD.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\mak -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Make -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteAnalyzer -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache\\-148438436 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -g2 --make-target=Appl\\Source\\CDD\\tle9183_CDD.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\Source\\CDD\\tle9183_CDD.src ..\\Appl\\Source\\CDD\\tle9183_CDD.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\Source\\CDD\\tle9183_CDD.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.tle9183_CDD.tle9183_CDD_Init',code,cluster('tle9183_CDD_Init')
+	.sect	'.text.tle9183_CDD.tle9183_CDD_Init'
+	.align	2
+	
+	.global	tle9183_CDD_Init
+
+; ..\Appl\Source\CDD\tle9183_CDD.c	     1  /**********************************************************************************************************************
+; ..\Appl\Source\CDD\tle9183_CDD.c	     2   *  FILE DESCRIPTION
+; ..\Appl\Source\CDD\tle9183_CDD.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\Source\CDD\tle9183_CDD.c	     4   *             File:  tle9183_CDD.c
+; ..\Appl\Source\CDD\tle9183_CDD.c	     5   *           Config:  last364.dpa
+; ..\Appl\Source\CDD\tle9183_CDD.c	     6   *        SW-C Type:  tle9183_CDD
+; ..\Appl\Source\CDD\tle9183_CDD.c	     7   *
+; ..\Appl\Source\CDD\tle9183_CDD.c	     8   *        Generator:  MICROSAR RTE Generator Version 4.29.0
+; ..\Appl\Source\CDD\tle9183_CDD.c	     9   *                    RTE Core Version 1.29.0
+; ..\Appl\Source\CDD\tle9183_CDD.c	    10   *          License:  CBD2200508
+; ..\Appl\Source\CDD\tle9183_CDD.c	    11   *
+; ..\Appl\Source\CDD\tle9183_CDD.c	    12   *      Description:  C-Code implementation template for SW-C <tle9183_CDD>
+; ..\Appl\Source\CDD\tle9183_CDD.c	    13   *********************************************************************************************************************/
+; ..\Appl\Source\CDD\tle9183_CDD.c	    14  
+; ..\Appl\Source\CDD\tle9183_CDD.c	    15  
+; ..\Appl\Source\CDD\tle9183_CDD.c	    16  /**********************************************************************************************************************
+; ..\Appl\Source\CDD\tle9183_CDD.c	    17   * DO NOT CHANGE THIS COMMENT!           << Start of version logging area >>                DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\CDD\tle9183_CDD.c	    18   *********************************************************************************************************************/
+; ..\Appl\Source\CDD\tle9183_CDD.c	    19  
+; ..\Appl\Source\CDD\tle9183_CDD.c	    20  /* PRQA S 0777, 0779 EOF */ /* MD_MSR_Rule5.1, MD_MSR_Rule5.2 */
+; ..\Appl\Source\CDD\tle9183_CDD.c	    21  /* PRQA S 0857 EOF */ /* MD_MSR_Dir1.1 */
+; ..\Appl\Source\CDD\tle9183_CDD.c	    22  /* PRQA S 0614 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\CDD\tle9183_CDD.c	    23  
+; ..\Appl\Source\CDD\tle9183_CDD.c	    24  /* PRQA S 3109 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\CDD\tle9183_CDD.c	    25  /* PRQA S 3112 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\CDD\tle9183_CDD.c	    26  /* PRQA S 2982 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\CDD\tle9183_CDD.c	    27  /* PRQA S 2983 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\CDD\tle9183_CDD.c	    28  /* PRQA S 2880 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\CDD\tle9183_CDD.c	    29  /* PRQA S 3203 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\CDD\tle9183_CDD.c	    30  /* PRQA S 3205 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\CDD\tle9183_CDD.c	    31  /* PRQA S 3206 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\CDD\tle9183_CDD.c	    32  /* PRQA S 3218 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\CDD\tle9183_CDD.c	    33  /* PRQA S 3229 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\CDD\tle9183_CDD.c	    34  /* PRQA S 2002 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\CDD\tle9183_CDD.c	    35  /* PRQA S 3334 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\CDD\tle9183_CDD.c	    36  /* PRQA S 3417 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\CDD\tle9183_CDD.c	    37  /* PRQA S 3426 EOF */ /* MD_Rte_TestCode */
+; ..\Appl\Source\CDD\tle9183_CDD.c	    38  
+; ..\Appl\Source\CDD\tle9183_CDD.c	    39  
+; ..\Appl\Source\CDD\tle9183_CDD.c	    40  /**********************************************************************************************************************
+; ..\Appl\Source\CDD\tle9183_CDD.c	    41   * DO NOT CHANGE THIS COMMENT!           << End of version logging area >>                  DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\CDD\tle9183_CDD.c	    42   *********************************************************************************************************************/
+; ..\Appl\Source\CDD\tle9183_CDD.c	    43  
+; ..\Appl\Source\CDD\tle9183_CDD.c	    44  #include "Rte_tle9183_CDD.h"
+; ..\Appl\Source\CDD\tle9183_CDD.c	    45  
+; ..\Appl\Source\CDD\tle9183_CDD.c	    46  
+; ..\Appl\Source\CDD\tle9183_CDD.c	    47  
+; ..\Appl\Source\CDD\tle9183_CDD.c	    48  /**********************************************************************************************************************
+; ..\Appl\Source\CDD\tle9183_CDD.c	    49   * DO NOT CHANGE THIS COMMENT!           << Start of include and declaration area >>        DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\CDD\tle9183_CDD.c	    50   *********************************************************************************************************************/
+; ..\Appl\Source\CDD\tle9183_CDD.c	    51  
+; ..\Appl\Source\CDD\tle9183_CDD.c	    52  #include "string.h"
+; ..\Appl\Source\CDD\tle9183_CDD.c	    53  
+; ..\Appl\Source\CDD\tle9183_CDD.c	    54  
+; ..\Appl\Source\CDD\tle9183_CDD.c	    55  /**********************************************************************************************************************
+; ..\Appl\Source\CDD\tle9183_CDD.c	    56   * DO NOT CHANGE THIS COMMENT!           << End of include and declaration area >>          DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\CDD\tle9183_CDD.c	    57   *********************************************************************************************************************/
+; ..\Appl\Source\CDD\tle9183_CDD.c	    58  
+; ..\Appl\Source\CDD\tle9183_CDD.c	    59  
+; ..\Appl\Source\CDD\tle9183_CDD.c	    60  /**********************************************************************************************************************
+; ..\Appl\Source\CDD\tle9183_CDD.c	    61   *
+; ..\Appl\Source\CDD\tle9183_CDD.c	    62   * Used AUTOSAR Data Types
+; ..\Appl\Source\CDD\tle9183_CDD.c	    63   *
+; ..\Appl\Source\CDD\tle9183_CDD.c	    64   **********************************************************************************************************************
+; ..\Appl\Source\CDD\tle9183_CDD.c	    65   *
+; ..\Appl\Source\CDD\tle9183_CDD.c	    66   *********************************************************************************************************************/
+; ..\Appl\Source\CDD\tle9183_CDD.c	    67  
+; ..\Appl\Source\CDD\tle9183_CDD.c	    68  
+; ..\Appl\Source\CDD\tle9183_CDD.c	    69  #define tle9183_CDD_START_SEC_CODE
+; ..\Appl\Source\CDD\tle9183_CDD.c	    70  #include "tle9183_CDD_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\Source\CDD\tle9183_CDD.c	    71  
+; ..\Appl\Source\CDD\tle9183_CDD.c	    72  /**********************************************************************************************************************
+; ..\Appl\Source\CDD\tle9183_CDD.c	    73   *
+; ..\Appl\Source\CDD\tle9183_CDD.c	    74   * Runnable Entity Name: tle9183_CDD_Init
+; ..\Appl\Source\CDD\tle9183_CDD.c	    75   *
+; ..\Appl\Source\CDD\tle9183_CDD.c	    76   *---------------------------------------------------------------------------------------------------------------------
+; ..\Appl\Source\CDD\tle9183_CDD.c	    77   *
+; ..\Appl\Source\CDD\tle9183_CDD.c	    78   * Executed once after the RTE is started
+; ..\Appl\Source\CDD\tle9183_CDD.c	    79   *
+; ..\Appl\Source\CDD\tle9183_CDD.c	    80   *********************************************************************************************************************/
+; ..\Appl\Source\CDD\tle9183_CDD.c	    81  /**********************************************************************************************************************
+; ..\Appl\Source\CDD\tle9183_CDD.c	    82   * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\CDD\tle9183_CDD.c	    83   * Symbol: tle9183_CDD_Init_doc
+; ..\Appl\Source\CDD\tle9183_CDD.c	    84   *********************************************************************************************************************/
+; ..\Appl\Source\CDD\tle9183_CDD.c	    85  
+; ..\Appl\Source\CDD\tle9183_CDD.c	    86  
+; ..\Appl\Source\CDD\tle9183_CDD.c	    87  /**********************************************************************************************************************
+; ..\Appl\Source\CDD\tle9183_CDD.c	    88   * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\CDD\tle9183_CDD.c	    89   *********************************************************************************************************************/
+; ..\Appl\Source\CDD\tle9183_CDD.c	    90  
+; ..\Appl\Source\CDD\tle9183_CDD.c	    91  FUNC(void, tle9183_CDD_CODE) tle9183_CDD_Init(void) /* PRQA S 0624, 3206 */ /* MD_Rte_0624, MD_Rte_3206 */
+; Function tle9183_CDD_Init
+.L3:
+tle9183_CDD_Init:	.type	func
+
+; ..\Appl\Source\CDD\tle9183_CDD.c	    92  {
+; ..\Appl\Source\CDD\tle9183_CDD.c	    93  /**********************************************************************************************************************
+; ..\Appl\Source\CDD\tle9183_CDD.c	    94   * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\CDD\tle9183_CDD.c	    95   * Symbol: tle9183_CDD_Init
+; ..\Appl\Source\CDD\tle9183_CDD.c	    96   *********************************************************************************************************************/
+; ..\Appl\Source\CDD\tle9183_CDD.c	    97  
+; ..\Appl\Source\CDD\tle9183_CDD.c	    98  
+; ..\Appl\Source\CDD\tle9183_CDD.c	    99  /**********************************************************************************************************************
+; ..\Appl\Source\CDD\tle9183_CDD.c	   100   * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\CDD\tle9183_CDD.c	   101   *********************************************************************************************************************/
+; ..\Appl\Source\CDD\tle9183_CDD.c	   102  }
+	ret
+.L13:
+	
+__tle9183_CDD_Init_function_end:
+	.size	tle9183_CDD_Init,__tle9183_CDD_Init_function_end-tle9183_CDD_Init
+.L12:
+	; End of function
+	
+	.calls	'tle9183_CDD_Init','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L5:
+	.word	519
+	.half	3
+	.word	.L6
+	.byte	4
+.L4:
+	.byte	1
+	.byte	'..\\Appl\\Source\\CDD\\tle9183_CDD.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L7
+	.byte	2
+	.byte	'unsigned int',0,4,7,3
+	.byte	'__size_t',0,1,1,1
+	.word	144
+	.byte	4,1,5
+	.word	177
+	.byte	3
+	.byte	'__codeptr',0,1,1,1
+	.word	179
+	.byte	2
+	.byte	'unsigned char',0,1,8,3
+	.byte	'uint8',0,2,104,31
+	.word	202
+	.byte	2
+	.byte	'unsigned short int',0,2,7,3
+	.byte	'uint16',0,2,106,31
+	.word	233
+	.byte	2
+	.byte	'unsigned long int',0,4,7,3
+	.byte	'uint32',0,2,108,31
+	.word	270
+	.byte	3
+	.byte	'Std_ReturnType',0,3,124,15
+	.word	202
+	.byte	3
+	.byte	'Std_TransformerErrorCode',0,3,135,1,15
+	.word	202
+	.byte	3
+	.byte	'Std_TransformerClass',0,3,137,1,15
+	.word	202
+	.byte	3
+	.byte	'PduLengthType',0,4,65,15
+	.word	202
+	.byte	5
+	.word	202
+	.byte	3
+	.byte	'SduDataPtrType',0,5,196,1,54
+	.word	415
+	.byte	6,5,219,1,9,1,7
+	.byte	'TP_DATACONF',0,0,7
+	.byte	'TP_DATARETRY',0,1,7
+	.byte	'TP_CONFPENDING',0,2,0,3
+	.byte	'TpDataStateType',0,5,226,1,3
+	.word	444
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L6:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,22,0,3,8,58,15,59,15,57,15
+	.byte	73,19,0,0,4,21,0,54,15,0,0,5,15,0,73,19,0,0,6,4,1,58,15,59,15,57,15,11,15,0,0,7,40,0,3,8,28,13,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L7:
+	.word	.L15-.L14
+.L14:
+	.half	3
+	.word	.L17-.L16
+.L16:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData',0,0
+	.byte	'..\\Appl\\Source\\CDD\\tle9183_CDD.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Std_Types.h',0,1,0,0
+	.byte	'ComStack_Cfg.h',0,2,0,0
+	.byte	'ComStack_Types.h',0,1,0,0,0
+.L17:
+.L15:
+	.sdecl	'.debug_info',debug,cluster('tle9183_CDD_Init')
+	.sect	'.debug_info'
+.L8:
+	.word	196
+	.half	3
+	.word	.L9
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\CDD\\tle9183_CDD.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L11,.L10
+	.byte	2
+	.word	.L4
+	.byte	3
+	.byte	'tle9183_CDD_Init',0,1,91,30,1,1,1
+	.word	.L3,.L13,.L2
+	.byte	4
+	.word	.L3,.L13
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('tle9183_CDD_Init')
+	.sect	'.debug_abbrev'
+.L9:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('tle9183_CDD_Init')
+	.sect	'.debug_line'
+.L10:
+	.word	.L19-.L18
+.L18:
+	.half	3
+	.word	.L21-.L20
+.L20:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Appl\\Source\\CDD\\tle9183_CDD.c',0,0,0,0,0
+.L21:
+	.byte	5,1,7,0,5,2
+	.word	.L3
+	.byte	3,229,0,1,7,9
+	.half	.L12-.L3
+	.byte	0,1,1
+.L19:
+	.sdecl	'.debug_ranges',debug,cluster('tle9183_CDD_Init')
+	.sect	'.debug_ranges'
+.L11:
+	.word	-1,.L3,0,.L12-.L3,0,0
+	.sdecl	'.debug_loc',debug,cluster('tle9183_CDD_Init')
+	.sect	'.debug_loc'
+.L2:
+	.word	-1,.L3,0,.L13-.L3
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L22:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('tle9183_CDD_Init')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L22,.L3,.L13-.L3
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+; ..\Appl\Source\CDD\tle9183_CDD.c	   103  
+; ..\Appl\Source\CDD\tle9183_CDD.c	   104  
+; ..\Appl\Source\CDD\tle9183_CDD.c	   105  #define tle9183_CDD_STOP_SEC_CODE
+; ..\Appl\Source\CDD\tle9183_CDD.c	   106  #include "tle9183_CDD_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\Source\CDD\tle9183_CDD.c	   107  
+; ..\Appl\Source\CDD\tle9183_CDD.c	   108  
+; ..\Appl\Source\CDD\tle9183_CDD.c	   109  /**********************************************************************************************************************
+; ..\Appl\Source\CDD\tle9183_CDD.c	   110   * DO NOT CHANGE THIS COMMENT!           << Start of function definition area >>            DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\CDD\tle9183_CDD.c	   111   *********************************************************************************************************************/
+; ..\Appl\Source\CDD\tle9183_CDD.c	   112  
+; ..\Appl\Source\CDD\tle9183_CDD.c	   113  
+; ..\Appl\Source\CDD\tle9183_CDD.c	   114  /**********************************************************************************************************************
+; ..\Appl\Source\CDD\tle9183_CDD.c	   115   * DO NOT CHANGE THIS COMMENT!           << End of function definition area >>              DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\CDD\tle9183_CDD.c	   116   *********************************************************************************************************************/
+; ..\Appl\Source\CDD\tle9183_CDD.c	   117  
+; ..\Appl\Source\CDD\tle9183_CDD.c	   118  
+; ..\Appl\Source\CDD\tle9183_CDD.c	   119  /**********************************************************************************************************************
+; ..\Appl\Source\CDD\tle9183_CDD.c	   120   * DO NOT CHANGE THIS COMMENT!           << Start of removed code area >>                   DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\CDD\tle9183_CDD.c	   121   *********************************************************************************************************************/
+; ..\Appl\Source\CDD\tle9183_CDD.c	   122  
+; ..\Appl\Source\CDD\tle9183_CDD.c	   123  
+; ..\Appl\Source\CDD\tle9183_CDD.c	   124  /**********************************************************************************************************************
+; ..\Appl\Source\CDD\tle9183_CDD.c	   125   * DO NOT CHANGE THIS COMMENT!           << End of removed code area >>                     DO NOT CHANGE THIS COMMENT!
+; ..\Appl\Source\CDD\tle9183_CDD.c	   126   *********************************************************************************************************************/
+; ..\Appl\Source\CDD\tle9183_CDD.c	   127  
+; ..\Appl\Source\CDD\tle9183_CDD.c	   128  /**********************************************************************************************************************
+; ..\Appl\Source\CDD\tle9183_CDD.c	   129   MISRA 2012 violations and justifications
+; ..\Appl\Source\CDD\tle9183_CDD.c	   130   *********************************************************************************************************************/
+; ..\Appl\Source\CDD\tle9183_CDD.c	   131  
+; ..\Appl\Source\CDD\tle9183_CDD.c	   132  /* module specific MISRA deviations:
+; ..\Appl\Source\CDD\tle9183_CDD.c	   133     MD_Rte_0624:  MISRA rule: Rule8.3
+; ..\Appl\Source\CDD\tle9183_CDD.c	   134       Reason:     This MISRA violation is a consequence from the RTE requirements [SWS_Rte_01007] [SWS_Rte_01150].
+; ..\Appl\Source\CDD\tle9183_CDD.c	   135                   The typedefs are never used in the same context.
+; ..\Appl\Source\CDD\tle9183_CDD.c	   136       Risk:       No functional risk. Only a cast to uint8* is performed.
+; ..\Appl\Source\CDD\tle9183_CDD.c	   137       Prevention: Not required.
+; ..\Appl\Source\CDD\tle9183_CDD.c	   138  
+; ..\Appl\Source\CDD\tle9183_CDD.c	   139     MD_Rte_3206:  MISRA rule: Rule2.7
+; ..\Appl\Source\CDD\tle9183_CDD.c	   140       Reason:     The parameter are not used by the code in all possible code variants.
+; ..\Appl\Source\CDD\tle9183_CDD.c	   141       Risk:       No functional risk.
+; ..\Appl\Source\CDD\tle9183_CDD.c	   142       Prevention: Not required.
+; ..\Appl\Source\CDD\tle9183_CDD.c	   143  
+; ..\Appl\Source\CDD\tle9183_CDD.c	   144     MD_Rte_TestCode:
+; ..\Appl\Source\CDD\tle9183_CDD.c	   145       Reason:     This justification is used as summary justification for all deviations caused by wrong analysis tool results.
+; ..\Appl\Source\CDD\tle9183_CDD.c	   146                   The used analysis tool QAC 9.0 sometimes creates wrong messages. Those deviations are no issues in the RTE code.
+; ..\Appl\Source\CDD\tle9183_CDD.c	   147       Risk:       No functional risk.
+; ..\Appl\Source\CDD\tle9183_CDD.c	   148       Prevention: Not required.
+; ..\Appl\Source\CDD\tle9183_CDD.c	   149  
+; ..\Appl\Source\CDD\tle9183_CDD.c	   150  */
+
+	; Module end

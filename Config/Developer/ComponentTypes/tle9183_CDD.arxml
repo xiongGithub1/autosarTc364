@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was saved with a tool from Vector Informatik GmbH-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="3433654A-40AF-4F1C-B6CF-A768EF928CA1">
+      <SHORT-NAME>ComponentTypes</SHORT-NAME>
+      <ELEMENTS>
+        <COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE UUID="0CF1B17E-0882-4F6F-B3CC-5186078C632B">
+          <SHORT-NAME>tle9183_CDD</SHORT-NAME>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="D18715E0-03B7-4F6F-973E-34AB58FCBEF0">
+              <SHORT-NAME>tle9183_CDD_InternalBehavior</SHORT-NAME>
+              <EVENTS>
+                <INIT-EVENT UUID="EE0B1A51-50B6-4DA9-8E79-84F0AFCD42E1">
+                  <SHORT-NAME>tle9183_CDD_InitEvent</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/tle9183_CDD/tle9183_CDD_InternalBehavior/tle9183_CDD_Init</START-ON-EVENT-REF>
+                </INIT-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="0B1778A1-1DE1-4B47-9A33-F8CBE3C5EEF7">
+                  <SHORT-NAME>tle9183_CDD_Init</SHORT-NAME>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="edve:RunnableKind">
+                        <SD>InitRunnable</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE>
+        <SWC-IMPLEMENTATION UUID="F47D540A-A6A5-4EE3-B1AC-A5839CF0210C">
+          <SHORT-NAME>tle9183_CDD_Implementation</SHORT-NAME>
+          <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ComponentTypes/tle9183_CDD/tle9183_CDD_InternalBehavior</BEHAVIOR-REF>
+        </SWC-IMPLEMENTATION>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

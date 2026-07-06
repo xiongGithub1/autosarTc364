@@ -24,7 +24,7 @@ extern Adc_StatusType AdcTest_Group9183Vo2Status;
 extern Adc_StatusType AdcTest_Group9183Vo3Status;
 
 extern Adc_ValueGroupType AdcTest_Group9183SenseRaw[2];
-extern Adc_ValueGroupType AdcTest_Group9183Vo2Raw[1];
+extern Adc_ValueGroupType AdcTest_Group9183Vo2Raw[2];
 extern Adc_ValueGroupType AdcTest_Group9183Vo3Raw[1];
 
 extern Adc_ValueGroupType AdcTest_VroRaw;
