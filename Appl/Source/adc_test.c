@@ -82,7 +82,7 @@ void AdcTest_Init(void)
   Std_ReturnType result2;
   Std_ReturnType result3;
 
-  Adc_SrcEnableInit();
+
 
   (void)memset(AdcTest_Group9183SenseRaw, 0, sizeof(AdcTest_Group9183SenseRaw));
   (void)memset(AdcTest_Group9183Vo2Raw, 0, sizeof(AdcTest_Group9183Vo2Raw));

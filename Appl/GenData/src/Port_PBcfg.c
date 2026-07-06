@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 14.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-07-03, 19:24:20          !!!IGNORE-LINE!!!               **
+**  DATE, TIME: 2024-07-06, 09:43:44          !!!IGNORE-LINE!!!               **
 **                                                                            **
 **  GENERATOR : Build b191017-0938            !!!IGNORE-LINE!!!               **
 **                                                                            **
@@ -385,7 +385,7 @@ static const Port_n_ConfigType Port_kConfiguration[] =
     /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
     control bit field for each port pin located  as register bytes. Hence
     typecasting is done for each port pin to uint8*/
-    ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 4*/
+    ((uint8)PORT_PIN_IN | PORT_PIN_IN_NO_PULL | PORT_PIN_MODE_GPIO),/*Pin 4*/
     /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
     control bit field for each port pin located  as register bytes. Hence
     typecasting is done for each port pin to uint8*/
@@ -492,27 +492,27 @@ static const Port_n_ConfigType Port_kConfiguration[] =
     /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
     control bit field for each port pin located  as register bytes. Hence
     typecasting is done for each port pin to uint8*/
-    ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT7),/*Pin 1*/
+    ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT1),/*Pin 1*/
     /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
     control bit field for each port pin located  as register bytes. Hence
     typecasting is done for each port pin to uint8*/
-    ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT7),/*Pin 2*/
+    ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT1),/*Pin 2*/
     /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
     control bit field for each port pin located  as register bytes. Hence
     typecasting is done for each port pin to uint8*/
-    ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT7),/*Pin 3*/
+    ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT1),/*Pin 3*/
     /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
     control bit field for each port pin located  as register bytes. Hence
     typecasting is done for each port pin to uint8*/
-    ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT7),/*Pin 4*/
+    ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT1),/*Pin 4*/
     /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
     control bit field for each port pin located  as register bytes. Hence
     typecasting is done for each port pin to uint8*/
-    ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT7),/*Pin 5*/
+    ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT1),/*Pin 5*/
     /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
     control bit field for each port pin located  as register bytes. Hence
     typecasting is done for each port pin to uint8*/
-    ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT7),/*Pin 6*/
+    ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT1),/*Pin 6*/
     /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
     control bit field for each port pin located  as register bytes. Hence
     typecasting is done for each port pin to uint8*/
@@ -1360,7 +1360,7 @@ static const Port_n_ConfigType Port_kConfiguration[] =
     /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
     control bit field for each port pin located  as register bytes. Hence
     typecasting is done for each port pin to uint8*/
-    ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 1*/
+    ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_DOWN | PORT_PIN_MODE_GPIO),/*Pin 1*/
     /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
     control bit field for each port pin located  as register bytes. Hence
     typecasting is done for each port pin to uint8*/

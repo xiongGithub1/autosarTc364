@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 11.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-07-03, 19:24:20       !!!IGNORE-LINE!!!                  **
+**  DATE, TIME: 2024-07-06, 09:43:43       !!!IGNORE-LINE!!!                  **
 **                                                                            **
 **  GENERATOR : Build b191017-0938           !!!IGNORE-LINE!!!                **
 **                                                                            **
@@ -84,7 +84,7 @@
 
 #define MCU_17_TIMERIP_ADC_USER       (STD_OFF)
 #define MCU_17_TIMERIP_WDG_USER       (STD_OFF)
-#define MCU_17_TIMERIP_PWM_USER       (STD_OFF)
+#define MCU_17_TIMERIP_PWM_USER       (STD_ON)
 #define MCU_17_TIMERIP_GPT_USER       (STD_OFF)
 #define MCU_17_TIMERIP_OCU_USER       (STD_OFF)
 #define MCU_17_TIMERIP_ICU_USER       (STD_OFF)

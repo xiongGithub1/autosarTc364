@@ -106,12 +106,12 @@ last364.elf : .\Appl\GenData\src\Mcu_PBcfg.o
 .\Appl\GenData\src\Mcu_PBcfg.o :
 last364.elf : .\Appl\GenData\src\Port_PBcfg.o
 .\Appl\GenData\src\Port_PBcfg.o :
+last364.elf : .\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.o
+.\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.o :
 last364.elf : .\Appl\GenData\src\Spi_PBcfg.o
 .\Appl\GenData\src\Spi_PBcfg.o :
 last364.elf : .\Appl\GenData\vBrs_Lcfg.o
 .\Appl\GenData\vBrs_Lcfg.o :
-last364.elf : .\Appl\Source\Adc_Irq.o
-.\Appl\Source\Adc_Irq.o :
 last364.elf : .\Appl\Source\Appl_HwStartup.o
 .\Appl\Source\Appl_HwStartup.o :
 last364.elf : .\Appl\Source\Autosar_Startup.o
@@ -132,6 +132,8 @@ last364.elf : .\Appl\Source\adc_test.o
 .\Appl\Source\adc_test.o :
 last364.elf : .\Appl\Source\can_test.o
 .\Appl\Source\can_test.o :
+last364.elf : .\Appl\Source\pwm_test.o
+.\Appl\Source\pwm_test.o :
 last364.elf : .\Appl\Source\spi_test.o
 .\Appl\Source\spi_test.o :
 last364.elf : .\BSW364\BswM\Implementation\BswM.o
@@ -192,6 +194,8 @@ last364.elf : .\BSW364\E2EXf\Implementation\E2EXf.o
 .\BSW364\E2EXf\Implementation\E2EXf.o :
 last364.elf : .\BSW364\EcuM\Implementation\EcuM.o
 .\BSW364\EcuM\Implementation\EcuM.o :
+last364.elf : .\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.o
+.\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.o :
 last364.elf : .\BSW364\Os\Implementation\Os_AccessCheck.o
 .\BSW364\Os\Implementation\Os_AccessCheck.o :
 last364.elf : .\BSW364\Os\Implementation\Os_Alarm.o
@@ -312,6 +316,10 @@ last364.elf : .\MCAL364\Dio\ssc\src\Dio.o
 .\MCAL364\Dio\ssc\src\Dio.o :
 last364.elf : .\MCAL364\Dma\ssc\src\Dma.o
 .\MCAL364\Dma\ssc\src\Dma.o :
+last364.elf : .\MCAL364\Irq\Adc_Irq\Adc_Irq.o
+.\MCAL364\Irq\Adc_Irq\Adc_Irq.o :
+last364.elf : .\MCAL364\Irq\ssc\src\Irq.o
+.\MCAL364\Irq\ssc\src\Irq.o :
 last364.elf : .\MCAL364\McalLib\ssc\src\McalLib.o
 .\MCAL364\McalLib\ssc\src\McalLib.o :
 last364.elf : .\MCAL364\Mcu\ssc\src\Mcu.o
@@ -320,6 +328,8 @@ last364.elf : .\MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o
 .\MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :
 last364.elf : .\MCAL364\Port\ssc\src\Port.o
 .\MCAL364\Port\ssc\src\Port.o :
+last364.elf : .\MCAL364\Pwm_17_GtmCcu6\ssc\src\Pwm_17_GtmCcu6.o
+.\MCAL364\Pwm_17_GtmCcu6\ssc\src\Pwm_17_GtmCcu6.o :
 last364.elf : .\MCAL364\Spi\ssc\src\Spi.o
 .\MCAL364\Spi\ssc\src\Spi.o :
 last364.elf : "D:\Program Files (x86)\TASKING\TriCore v6.2r2\ctc\include.lsl\arch51.lsl"

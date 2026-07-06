@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Callout_Stubs.c
- *   Generation Time: 2024-07-03 19:23:27
+ *   Generation Time: 2024-07-05 20:54:00
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -92,7 +92,7 @@
 #include "Port.h" 
 #include "Spi.h" 
 #include "Adc.h" 
-
+#include "Pwm_17_GtmCcu6.h" 
 
 
 /**********************************************************************************************************************
@@ -283,6 +283,7 @@ FUNC(void, ECUM_CODE) EcuM_AL_DriverInitOne(void)
   Port_Init( &Port_Config );
   Spi_Init( &Spi_Config );
   Adc_Init( &Adc_Config );
+  Pwm_17_GtmCcu6_Init( &Pwm_17_GtmCcu6_Config );
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_AL_DriverInitOne>                  DO NOT CHANGE THIS COMMENT!

@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
-	.compiler_invocation	"ctc -f cc22644a --dep-file=Appl\\GenData\\src\\.Port_PBcfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\mak -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Make -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteAnalyzer -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache\\-148438436 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -g2 --make-target=Appl\\GenData\\src\\Port_PBcfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\src\\Port_PBcfg.src ..\\Appl\\GenData\\src\\Port_PBcfg.c"
+	.compiler_invocation	"ctc -f cc20216a --dep-file=Appl\\GenData\\src\\.Port_PBcfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\mak -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Make -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteAnalyzer -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache\\-148438436 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -g2 --make-target=Appl\\GenData\\src\\Port_PBcfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\src\\Port_PBcfg.src ..\\Appl\\GenData\\src\\Port_PBcfg.c"
 	.compiler_name		"ctc"
 	;source	'..\\Appl\\GenData\\src\\Port_PBcfg.c'
 
@@ -14,14 +14,13 @@ Port_kConfiguration:	.type	object
 	.size	Port_kConfiguration,448
 	.space	2
 	.byte	128
-	.space	1
+	.space	2
 	.byte	16,16,16,16
-	.byte	16,16,16,16
-	.byte	128,16,16,16
-	.byte	4
+	.byte	16,16,16,128
+	.byte	16,16,16,4
 	.space	15
-	.byte	16,184,184,184
-	.byte	184,184,184,16
+	.byte	16,136,136,136
+	.byte	136,136,136,16
 	.byte	128,16,16,16
 	.byte	16,16,16,16
 	.space	16
@@ -63,7 +62,7 @@ Port_kConfiguration:	.type	object
 	.byte	16,16,16,16
 	.byte	16,16,16,16
 	.space	16
-	.byte	152,16,152,152
+	.byte	152,8,152,152
 	.byte	16,16,16,16
 	.byte	16,16,16,16
 	.byte	16,16,16,16
@@ -517,7 +516,7 @@ Port_Config:	.type	object
 ; ..\Appl\GenData\src\Port_PBcfg.c	    14  **                                                                            **
 ; ..\Appl\GenData\src\Port_PBcfg.c	    15  **  VERSION   : 14.0.0                                                        **
 ; ..\Appl\GenData\src\Port_PBcfg.c	    16  **                                                                            **
-; ..\Appl\GenData\src\Port_PBcfg.c	    17  **  DATE, TIME: 2024-07-03, 19:24:20          !!!IGNORE-LINE!!!               **
+; ..\Appl\GenData\src\Port_PBcfg.c	    17  **  DATE, TIME: 2024-07-06, 09:43:44          !!!IGNORE-LINE!!!               **
 ; ..\Appl\GenData\src\Port_PBcfg.c	    18  **                                                                            **
 ; ..\Appl\GenData\src\Port_PBcfg.c	    19  **  GENERATOR : Build b191017-0938            !!!IGNORE-LINE!!!               **
 ; ..\Appl\GenData\src\Port_PBcfg.c	    20  **                                                                            **
@@ -888,7 +887,7 @@ Port_Config:	.type	object
 ; ..\Appl\GenData\src\Port_PBcfg.c	   385      /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
 ; ..\Appl\GenData\src\Port_PBcfg.c	   386      control bit field for each port pin located  as register bytes. Hence
 ; ..\Appl\GenData\src\Port_PBcfg.c	   387      typecasting is done for each port pin to uint8*/
-; ..\Appl\GenData\src\Port_PBcfg.c	   388      ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 4*/
+; ..\Appl\GenData\src\Port_PBcfg.c	   388      ((uint8)PORT_PIN_IN | PORT_PIN_IN_NO_PULL | PORT_PIN_MODE_GPIO),/*Pin 4*/
 ; ..\Appl\GenData\src\Port_PBcfg.c	   389      /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
 ; ..\Appl\GenData\src\Port_PBcfg.c	   390      control bit field for each port pin located  as register bytes. Hence
 ; ..\Appl\GenData\src\Port_PBcfg.c	   391      typecasting is done for each port pin to uint8*/
@@ -995,27 +994,27 @@ Port_Config:	.type	object
 ; ..\Appl\GenData\src\Port_PBcfg.c	   492      /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
 ; ..\Appl\GenData\src\Port_PBcfg.c	   493      control bit field for each port pin located  as register bytes. Hence
 ; ..\Appl\GenData\src\Port_PBcfg.c	   494      typecasting is done for each port pin to uint8*/
-; ..\Appl\GenData\src\Port_PBcfg.c	   495      ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT7),/*Pin 1*/
+; ..\Appl\GenData\src\Port_PBcfg.c	   495      ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT1),/*Pin 1*/
 ; ..\Appl\GenData\src\Port_PBcfg.c	   496      /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
 ; ..\Appl\GenData\src\Port_PBcfg.c	   497      control bit field for each port pin located  as register bytes. Hence
 ; ..\Appl\GenData\src\Port_PBcfg.c	   498      typecasting is done for each port pin to uint8*/
-; ..\Appl\GenData\src\Port_PBcfg.c	   499      ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT7),/*Pin 2*/
+; ..\Appl\GenData\src\Port_PBcfg.c	   499      ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT1),/*Pin 2*/
 ; ..\Appl\GenData\src\Port_PBcfg.c	   500      /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
 ; ..\Appl\GenData\src\Port_PBcfg.c	   501      control bit field for each port pin located  as register bytes. Hence
 ; ..\Appl\GenData\src\Port_PBcfg.c	   502      typecasting is done for each port pin to uint8*/
-; ..\Appl\GenData\src\Port_PBcfg.c	   503      ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT7),/*Pin 3*/
+; ..\Appl\GenData\src\Port_PBcfg.c	   503      ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT1),/*Pin 3*/
 ; ..\Appl\GenData\src\Port_PBcfg.c	   504      /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
 ; ..\Appl\GenData\src\Port_PBcfg.c	   505      control bit field for each port pin located  as register bytes. Hence
 ; ..\Appl\GenData\src\Port_PBcfg.c	   506      typecasting is done for each port pin to uint8*/
-; ..\Appl\GenData\src\Port_PBcfg.c	   507      ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT7),/*Pin 4*/
+; ..\Appl\GenData\src\Port_PBcfg.c	   507      ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT1),/*Pin 4*/
 ; ..\Appl\GenData\src\Port_PBcfg.c	   508      /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
 ; ..\Appl\GenData\src\Port_PBcfg.c	   509      control bit field for each port pin located  as register bytes. Hence
 ; ..\Appl\GenData\src\Port_PBcfg.c	   510      typecasting is done for each port pin to uint8*/
-; ..\Appl\GenData\src\Port_PBcfg.c	   511      ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT7),/*Pin 5*/
+; ..\Appl\GenData\src\Port_PBcfg.c	   511      ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT1),/*Pin 5*/
 ; ..\Appl\GenData\src\Port_PBcfg.c	   512      /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
 ; ..\Appl\GenData\src\Port_PBcfg.c	   513      control bit field for each port pin located  as register bytes. Hence
 ; ..\Appl\GenData\src\Port_PBcfg.c	   514      typecasting is done for each port pin to uint8*/
-; ..\Appl\GenData\src\Port_PBcfg.c	   515      ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT7),/*Pin 6*/
+; ..\Appl\GenData\src\Port_PBcfg.c	   515      ((uint8)PORT_PIN_OUT | PORT_PIN_OUT_PUSHPULL | PORT_PIN_MODE_ALT1),/*Pin 6*/
 ; ..\Appl\GenData\src\Port_PBcfg.c	   516      /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
 ; ..\Appl\GenData\src\Port_PBcfg.c	   517      control bit field for each port pin located  as register bytes. Hence
 ; ..\Appl\GenData\src\Port_PBcfg.c	   518      typecasting is done for each port pin to uint8*/
@@ -1863,7 +1862,7 @@ Port_Config:	.type	object
 ; ..\Appl\GenData\src\Port_PBcfg.c	  1360      /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
 ; ..\Appl\GenData\src\Port_PBcfg.c	  1361      control bit field for each port pin located  as register bytes. Hence
 ; ..\Appl\GenData\src\Port_PBcfg.c	  1362      typecasting is done for each port pin to uint8*/
-; ..\Appl\GenData\src\Port_PBcfg.c	  1363      ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 1*/
+; ..\Appl\GenData\src\Port_PBcfg.c	  1363      ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_DOWN | PORT_PIN_MODE_GPIO),/*Pin 1*/
 ; ..\Appl\GenData\src\Port_PBcfg.c	  1364      /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
 ; ..\Appl\GenData\src\Port_PBcfg.c	  1365      control bit field for each port pin located  as register bytes. Hence
 ; ..\Appl\GenData\src\Port_PBcfg.c	  1366      typecasting is done for each port pin to uint8*/

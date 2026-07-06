@@ -4,7 +4,7 @@
 #include "Adc.h"
 #include "Std_Types.h"
 
-extern void Adc_SrcEnableInit(void);
+
 
 extern Std_ReturnType AdcTest_InitResult;
 extern Std_ReturnType AdcTest_LastSampleResult;

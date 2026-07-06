@@ -17,7 +17,7 @@
 **                                                                            **
 **  VERSION   : 21.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-07-03, 19:24:20          !!!IGNORE-LINE!!!               **
+**  DATE, TIME: 2024-07-06, 09:43:43          !!!IGNORE-LINE!!!               **
 **                                                                            **
 **  GENERATOR : Build b191017-0938            !!!IGNORE-LINE!!!               **
 **                                                                            **
@@ -285,6 +285,15 @@
                   </BSW-MODULE-ENTRY-REF-CONDITIONAL>
                   <BSW-MODULE-ENTRY-REF-CONDITIONAL>
                     <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_McalLib/BswModuleEntrys/Mcal_ReleaseSpinlock</BSW-MODULE-ENTRY-REF>
+                  </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                </REQUIRED-ENTRYS>
+              </BSW-MODULE-DEPENDENCY>
+              <BSW-MODULE-DEPENDENCY>
+                <SHORT-NAME>PwmDependency</SHORT-NAME>
+                <TARGET-MODULE-ID>121</TARGET-MODULE-ID>
+                <REQUIRED-ENTRYS>
+                  <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                    <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Pwm_17_GtmCcu6/BswModuleEntrys/Pwm_Isr</BSW-MODULE-ENTRY-REF>
                   </BSW-MODULE-ENTRY-REF-CONDITIONAL>
                 </REQUIRED-ENTRYS>
               </BSW-MODULE-DEPENDENCY>

@@ -466,14 +466,29 @@
                     <SDX-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSet/vSetBswInitialization/Dma_Init/vSetInitFunctionInstance</SDX-REF>
                   </SDG>
                 </SDG>
-                <SDG GID=".ActiveEcuC.Irq">
+                <SDG GID=".ActiveEcuC.Irq.Irq_Init">
+                  <SDG GID="vSetInitFunctionInstance">
+                    <SDX-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSet/vSetBswInitialization/Irq_Init/vSetInitFunctionInstance</SDX-REF>
+                  </SDG>
+                </SDG>
+                <SDG GID=".Irq.Irq">
                   <SDG GID="Irq_Init">
                     <SDX-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSet/vSetBswInitialization/Irq_Init</SDX-REF>
                   </SDG>
                 </SDG>
-                <SDG GID=".ActiveEcuC.Irq.Irq_Init">
+                <SDG GID=".Irq.Irq.Irq_Init">
                   <SDG GID="vSetInitFunctionInstance">
                     <SDX-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSet/vSetBswInitialization/Irq_Init/vSetInitFunctionInstance</SDX-REF>
+                  </SDG>
+                </SDG>
+                <SDG GID=".ActiveEcuC.Pwm">
+                  <SDG GID="Pwm_17_GtmCcu6_Init">
+                    <SDX-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSet/vSetBswInitialization/Pwm_17_GtmCcu6_Init</SDX-REF>
+                  </SDG>
+                </SDG>
+                <SDG GID=".ActiveEcuC.Pwm.Pwm_17_GtmCcu6_Init">
+                  <SDG GID="vSetInitFunctionInstance">
+                    <SDX-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSet/vSetBswInitialization/Pwm_17_GtmCcu6_Init/vSetInitFunctionInstance</SDX-REF>
                   </SDG>
                 </SDG>
               </SDG>
@@ -2915,12 +2930,12 @@
                     </ECUC-CONTAINER-VALUE>
                   </SUB-CONTAINERS>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="63c14b6c-9ab2-4629-8327-28df080a7d34">
+                <ECUC-CONTAINER-VALUE UUID="a7bdac5f-3c81-49e1-a5f0-ac0d8424cbbc">
                   <SHORT-NAME>Irq_Init</SHORT-NAME>
                   <ANNOTATIONS>
                     <ANNOTATION>
                       <LABEL>
-                        <L-4 L="FOR-ALL">/ActiveEcuC/Irq</L-4>
+                        <L-4 L="FOR-ALL">/Irq/Irq</L-4>
                       </LABEL>
                       <ANNOTATION-ORIGIN>DV:vSetBswInitFunction</ANNOTATION-ORIGIN>
                       <ANNOTATION-TEXT>
@@ -2943,17 +2958,73 @@
                   <REFERENCE-VALUES>
                     <ECUC-REFERENCE-VALUE>
                       <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetModuleRef</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-MODULE-CONFIGURATION-VALUES">/ActiveEcuC/Irq</VALUE-REF>
+                      <VALUE-REF DEST="ECUC-MODULE-CONFIGURATION-VALUES">/Irq/Irq</VALUE-REF>
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                   <SUB-CONTAINERS>
-                    <ECUC-CONTAINER-VALUE UUID="0bc9edd1-4735-4c8c-ba50-56eedf87036b">
+                    <ECUC-CONTAINER-VALUE UUID="49ffb100-1bde-43cd-bf48-485590773de2">
                       <SHORT-NAME>vSetInitFunctionInstance</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetInitFunctionInstance</DEFINITION-REF>
                       <PARAMETER-VALUES>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetInitFunctionInstance/vSetInitPhase</DEFINITION-REF>
                           <VALUE>NO_INIT</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="c2fd2101-a0cf-49af-bbf1-f21317d59ce2">
+                  <SHORT-NAME>Pwm_17_GtmCcu6_Init</SHORT-NAME>
+                  <ANNOTATIONS>
+                    <ANNOTATION>
+                      <LABEL>
+                        <L-4 L="FOR-ALL">/ActiveEcuC/Pwm</L-4>
+                      </LABEL>
+                      <ANNOTATION-ORIGIN>DV:vSetBswInitFunction</ANNOTATION-ORIGIN>
+                      <ANNOTATION-TEXT>
+                        <P>
+                          <L-1 L="FOR-ALL">PLAIN_TEXT</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="FOR-ALL">Created Pwm_17_GtmCcu6_Init by Extended Init XML Service</L-1>
+                        </P>
+                      </ANNOTATION-TEXT>
+                    </ANNOTATION>
+                  </ANNOTATIONS>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetHeader</DEFINITION-REF>
+                      <VALUE>Pwm_17_GtmCcu6.h</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetConfigType</DEFINITION-REF>
+                      <VALUE>Pwm_17_GtmCcu6_ConfigType</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetConfigPtrClass</DEFINITION-REF>
+                      <VALUE>AUTOMATIC</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetModuleRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-MODULE-CONFIGURATION-VALUES">/ActiveEcuC/Pwm</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="ed6fc701-eee0-4a37-b976-8098adcdeadc">
+                      <SHORT-NAME>vSetInitFunctionInstance</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetInitFunctionInstance</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetInitFunctionInstance/vSetInitPhase</DEFINITION-REF>
+                          <VALUE>INIT_ONE</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetInitFunctionInstance/vSetConfigPtrName</DEFINITION-REF>
+                          <VALUE>&amp;Pwm_17_GtmCcu6_Config</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>

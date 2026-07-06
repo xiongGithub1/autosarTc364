@@ -16,7 +16,7 @@
 **                                                                           **
 **  VERSION   : 11.0.0                                                       **
 **                                                                           **
-**  DATE, TIME: 2024-07-03, 19:24:20      !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2024-07-06, 09:43:44      !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  GENERATOR : Build b191017-0938        !!!IGNORE-LINE!!!                   **
 **                                                                           **
@@ -63,6 +63,9 @@
                   <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Irq/BswModuleEntrys/IrqAdc_Init</BSW-MODULE-ENTRY-REF>
                 </BSW-MODULE-ENTRY-REF-CONDITIONAL>
                 <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Irq/BswModuleEntrys/IrqCcu6_Init</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
                   <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Irq/BswModuleEntrys/IrqDma_Init</BSW-MODULE-ENTRY-REF>
                 </BSW-MODULE-ENTRY-REF-CONDITIONAL>
                 <BSW-MODULE-ENTRY-REF-CONDITIONAL>
@@ -79,6 +82,11 @@
                 <BSW-INTERNAL-BEHAVIOR>
                   <SHORT-NAME>IrqBehavior</SHORT-NAME>
                   <ENTITYS>
+                    <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>IrqCcu6_Init</SHORT-NAME>
+                      <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Irq/BswModuleEntrys/IrqCcu6_Init</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
                     <BSW-CALLED-ENTITY>
                       <SHORT-NAME>IrqGtm_Init</SHORT-NAME>
                       <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
@@ -129,6 +137,14 @@
             </BSW-MODULE-ENTRY>
             <BSW-MODULE-ENTRY>
               <SHORT-NAME>IrqAdc_Init</SHORT-NAME>
+              <IS-REENTRANT>false</IS-REENTRANT>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>REGULAR</CALL-TYPE>
+              <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>IrqCcu6_Init</SHORT-NAME>
               <IS-REENTRANT>false</IS-REENTRANT>
               <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
               <CALL-TYPE>REGULAR</CALL-TYPE>

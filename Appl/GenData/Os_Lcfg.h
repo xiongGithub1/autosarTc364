@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Lcfg.h
- *   Generation Time: 2024-07-03 19:23:27
+ *   Generation Time: 2024-07-05 18:01:42
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -148,15 +148,39 @@ extern FUNC(void, OS_DEFAULT_INIT_TASK_TRUSTED_CODE) Os_Task_Default_Init_Task_T
 # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
-# define OS_START_SEC_Adc_RS0EventInterruptHandler_CODE
+# define OS_START_SEC_ADC0SR0_ISR_CODE
 # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 /**********************************************************************************************************************
- *  Adc_RS0EventInterruptHandler()
+ *  ADC0SR0_ISR()
  *********************************************************************************************************************/
-extern FUNC(void, OS_ADC_RS0EVENTINTERRUPTHANDLER_CODE) Os_Isr_Adc_RS0EventInterruptHandler(void);
+extern FUNC(void, OS_ADC0SR0_ISR_CODE) Os_Isr_ADC0SR0_ISR(void);
 
-# define OS_STOP_SEC_Adc_RS0EventInterruptHandler_CODE
+# define OS_STOP_SEC_ADC0SR0_ISR_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_ADC2SR0_ISR_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/**********************************************************************************************************************
+ *  ADC2SR0_ISR()
+ *********************************************************************************************************************/
+extern FUNC(void, OS_ADC2SR0_ISR_CODE) Os_Isr_ADC2SR0_ISR(void);
+
+# define OS_STOP_SEC_ADC2SR0_ISR_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_ADC3SR0_ISR_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/**********************************************************************************************************************
+ *  ADC3SR0_ISR()
+ *********************************************************************************************************************/
+extern FUNC(void, OS_ADC3SR0_ISR_CODE) Os_Isr_ADC3SR0_ISR(void);
+
+# define OS_STOP_SEC_ADC3SR0_ISR_CODE
 # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 

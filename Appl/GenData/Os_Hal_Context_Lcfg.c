@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Context_Lcfg.c
- *   Generation Time: 2024-07-03 19:23:27
+ *   Generation Time: 2024-07-05 18:01:42
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -179,7 +179,7 @@ CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_AdcIsr_G0 =
   /* .StackStartAddr   = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore0_Isr_Core_Dyn),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
   /* .ProgramStatus    = */ (uint32)OS_HAL_PSW_IS_MASK | OS_HAL_PSW_CDE_MASK | OS_HAL_PSW_IO_SUPERVISOR | OS_HAL_PSW_S_MASK,
   /* .ProtectionSet    = */ (uint32)OS_HAL_PSW_PRS_PS0,
-  /* .Entry            = */ (uint32)&Os_Isr_Adc_RS0EventInterruptHandler,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .Entry            = */ (uint32)&Os_Isr_ADC0SR0_ISR,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
   /* .ReturnAddress    = */ (uint32)&Os_TrapIsrEpilogue,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
   /* .IntStatus        = */ ((uint32)5<<OS_HAL_PCXI_PCPN_BIT_POSITION) | OS_HAL_PCXI_PIE_ENABLED
 };
@@ -191,7 +191,7 @@ CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_AdcIsr_G2 =
   /* .StackStartAddr   = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore0_Isr_Core_Dyn),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
   /* .ProgramStatus    = */ (uint32)OS_HAL_PSW_IS_MASK | OS_HAL_PSW_CDE_MASK | OS_HAL_PSW_IO_SUPERVISOR | OS_HAL_PSW_S_MASK,
   /* .ProtectionSet    = */ (uint32)OS_HAL_PSW_PRS_PS0,
-  /* .Entry            = */ (uint32)&Os_Isr_Adc_RS0EventInterruptHandler,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .Entry            = */ (uint32)&Os_Isr_ADC2SR0_ISR,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
   /* .ReturnAddress    = */ (uint32)&Os_TrapIsrEpilogue,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
   /* .IntStatus        = */ ((uint32)5<<OS_HAL_PCXI_PCPN_BIT_POSITION) | OS_HAL_PCXI_PIE_ENABLED
 };
@@ -203,7 +203,7 @@ CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_AdcIsr_G3 =
   /* .StackStartAddr   = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore0_Isr_Core_Dyn),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
   /* .ProgramStatus    = */ (uint32)OS_HAL_PSW_IS_MASK | OS_HAL_PSW_CDE_MASK | OS_HAL_PSW_IO_SUPERVISOR | OS_HAL_PSW_S_MASK,
   /* .ProtectionSet    = */ (uint32)OS_HAL_PSW_PRS_PS0,
-  /* .Entry            = */ (uint32)&Os_Isr_Adc_RS0EventInterruptHandler,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .Entry            = */ (uint32)&Os_Isr_ADC3SR0_ISR,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
   /* .ReturnAddress    = */ (uint32)&Os_TrapIsrEpilogue,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
   /* .IntStatus        = */ ((uint32)5<<OS_HAL_PCXI_PCPN_BIT_POSITION) | OS_HAL_PCXI_PIE_ENABLED
 };

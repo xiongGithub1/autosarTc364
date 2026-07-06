@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="33022ff3-f082-4548-ab3c-90793765f2d3">
+      <SHORT-NAME>AURIX2G</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="7e118c10-0a18-49f2-9978-33759fe5e7c2">
+          <SHORT-NAME>EcucDefs</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="c9337ea1-b1c8-4350-85e1-f385d44aabe8">
+              <SHORT-NAME>Pwm_ib_bswmd</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE UUID="36b13279-afdd-49ec-a785-6b5b9006b507">
+                  <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+                  <ELEMENTS>
+                    <BSW-MODULE-DESCRIPTION UUID="c9082701-ef63-4ba5-8f21-ebcf638dddd6">
+                      <SHORT-NAME>Pwm</SHORT-NAME>
+                      <INTERNAL-BEHAVIORS>
+                        <BSW-INTERNAL-BEHAVIOR UUID="657b3d36-f533-41ee-a92d-aa98d688fe8e">
+                          <SHORT-NAME>PwmBehavior</SHORT-NAME>
+                          <EXCLUSIVE-AREAS>
+                            <EXCLUSIVE-AREA UUID="fd700847-574f-40bc-a632-5c18f7a3a112">
+                              <SHORT-NAME>HandleNotification</SHORT-NAME>
+                            </EXCLUSIVE-AREA>
+                            <EXCLUSIVE-AREA UUID="e15e3bfc-27ee-4db4-b458-6bf2a8ba5761">
+                              <SHORT-NAME>PeriodAndDutyUpdate</SHORT-NAME>
+                            </EXCLUSIVE-AREA>
+                          </EXCLUSIVE-AREAS>
+                        </BSW-INTERNAL-BEHAVIOR>
+                      </INTERNAL-BEHAVIORS>
+                    </BSW-MODULE-DESCRIPTION>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

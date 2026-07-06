@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Link_Core0.lsl
- *   Generation Time: 2024-07-03 19:23:27
+ *   Generation Time: 2024-07-05 18:01:42
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -84,21 +84,53 @@ else
 #endif
 
 #if defined ( OS_LINK_CALLOUT_CODE )
-if (exists(".text.OS_Adc_RS0EventInterruptHandler_CODE"))
+if (exists(".text.OS_ADC0SR0_ISR_CODE"))
 {
-  group OS_Adc_RS0EventInterruptHandler_CODE_GROUP(align=8)
+  group OS_ADC0SR0_ISR_CODE_GROUP(align=8)
   {
-    select "[.]text.OS_Adc_RS0EventInterruptHandler_CODE";
+    select "[.]text.OS_ADC0SR0_ISR_CODE";
   }
-  "_OS_Adc_RS0EventInterruptHandler_CODE_START" = "_lc_gb_OS_Adc_RS0EventInterruptHandler_CODE_GROUP";
-  "_OS_Adc_RS0EventInterruptHandler_CODE_END" = "_lc_ge_OS_Adc_RS0EventInterruptHandler_CODE_GROUP" - 1;
-  "_OS_Adc_RS0EventInterruptHandler_CODE_LIMIT" = "_lc_ge_OS_Adc_RS0EventInterruptHandler_CODE_GROUP";
+  "_OS_ADC0SR0_ISR_CODE_START" = "_lc_gb_OS_ADC0SR0_ISR_CODE_GROUP";
+  "_OS_ADC0SR0_ISR_CODE_END" = "_lc_ge_OS_ADC0SR0_ISR_CODE_GROUP" - 1;
+  "_OS_ADC0SR0_ISR_CODE_LIMIT" = "_lc_ge_OS_ADC0SR0_ISR_CODE_GROUP";
 }
 else
 {
-  "_OS_Adc_RS0EventInterruptHandler_CODE_START" = 0;
-  "_OS_Adc_RS0EventInterruptHandler_CODE_END" = 0;
-  "_OS_Adc_RS0EventInterruptHandler_CODE_LIMIT" = 0;
+  "_OS_ADC0SR0_ISR_CODE_START" = 0;
+  "_OS_ADC0SR0_ISR_CODE_END" = 0;
+  "_OS_ADC0SR0_ISR_CODE_LIMIT" = 0;
+}
+if (exists(".text.OS_ADC2SR0_ISR_CODE"))
+{
+  group OS_ADC2SR0_ISR_CODE_GROUP(align=8)
+  {
+    select "[.]text.OS_ADC2SR0_ISR_CODE";
+  }
+  "_OS_ADC2SR0_ISR_CODE_START" = "_lc_gb_OS_ADC2SR0_ISR_CODE_GROUP";
+  "_OS_ADC2SR0_ISR_CODE_END" = "_lc_ge_OS_ADC2SR0_ISR_CODE_GROUP" - 1;
+  "_OS_ADC2SR0_ISR_CODE_LIMIT" = "_lc_ge_OS_ADC2SR0_ISR_CODE_GROUP";
+}
+else
+{
+  "_OS_ADC2SR0_ISR_CODE_START" = 0;
+  "_OS_ADC2SR0_ISR_CODE_END" = 0;
+  "_OS_ADC2SR0_ISR_CODE_LIMIT" = 0;
+}
+if (exists(".text.OS_ADC3SR0_ISR_CODE"))
+{
+  group OS_ADC3SR0_ISR_CODE_GROUP(align=8)
+  {
+    select "[.]text.OS_ADC3SR0_ISR_CODE";
+  }
+  "_OS_ADC3SR0_ISR_CODE_START" = "_lc_gb_OS_ADC3SR0_ISR_CODE_GROUP";
+  "_OS_ADC3SR0_ISR_CODE_END" = "_lc_ge_OS_ADC3SR0_ISR_CODE_GROUP" - 1;
+  "_OS_ADC3SR0_ISR_CODE_LIMIT" = "_lc_ge_OS_ADC3SR0_ISR_CODE_GROUP";
+}
+else
+{
+  "_OS_ADC3SR0_ISR_CODE_START" = 0;
+  "_OS_ADC3SR0_ISR_CODE_END" = 0;
+  "_OS_ADC3SR0_ISR_CODE_LIMIT" = 0;
 }
 if (exists(".text.OS_CanIsr_0_CODE"))
 {

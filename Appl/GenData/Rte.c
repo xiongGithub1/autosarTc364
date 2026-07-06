@@ -56,6 +56,7 @@
 #include "SchM_Mcu.h"
 #include "SchM_PduR.h"
 #include "SchM_Port.h"
+#include "SchM_Pwm_17_GtmCcu6.h"
 #include "SchM_Spi.h"
 
 #include "Rte_Hook.h"
@@ -384,6 +385,32 @@ FUNC(void, RTE_CODE) SchM_Enter_Mcu_TomTgcReg(void)
 }
 
 FUNC(void, RTE_CODE) SchM_Exit_Mcu_TomTgcReg(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  ResumeAllInterrupts();
+}
+
+
+FUNC(void, RTE_CODE) SchM_Enter_Pwm_17_GtmCcu6_HandleNotification(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  SuspendAllInterrupts();
+}
+
+FUNC(void, RTE_CODE) SchM_Exit_Pwm_17_GtmCcu6_HandleNotification(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  ResumeAllInterrupts();
+}
+
+
+FUNC(void, RTE_CODE) SchM_Enter_Pwm_17_GtmCcu6_PeriodAndDutyUpdate(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  SuspendAllInterrupts();
+}
+
+FUNC(void, RTE_CODE) SchM_Exit_Pwm_17_GtmCcu6_PeriodAndDutyUpdate(void)
 {
   /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
   ResumeAllInterrupts();

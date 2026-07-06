@@ -2988,7 +2988,7 @@
                 </ECUC-CONTAINER-VALUE>
               </SUB-CONTAINERS>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="e7c8fc08-64f7-46a5-a29d-a9b9f7be3767">
+            <ECUC-CONTAINER-VALUE UUID="bdc5d88c-850f-443d-a4bc-e6bbbd11c0a1">
               <SHORT-NAME>Irq</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance</DEFINITION-REF>
               <REFERENCE-VALUES>
@@ -2998,9 +2998,57 @@
                 </ECUC-REFERENCE-VALUE>
                 <ECUC-REFERENCE-VALUE>
                   <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswModuleConfigurationRef</DEFINITION-REF>
-                  <VALUE-REF DEST="ECUC-MODULE-CONFIGURATION-VALUES">/ActiveEcuC/Irq</VALUE-REF>
+                  <VALUE-REF DEST="ECUC-MODULE-CONFIGURATION-VALUES">/Irq/Irq</VALUE-REF>
                 </ECUC-REFERENCE-VALUE>
               </REFERENCE-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="b5118b80-a819-486e-90d8-f617f1c0e987">
+              <SHORT-NAME>Pwm</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance</DEFINITION-REF>
+              <REFERENCE-VALUES>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswImplementationRef</DEFINITION-REF>
+                  <VALUE-REF DEST="BSW-IMPLEMENTATION">/AURIX2G/EcucDefs/Pwm_Impl</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswModuleConfigurationRef</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-MODULE-CONFIGURATION-VALUES">/ActiveEcuC/Pwm</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+              </REFERENCE-VALUES>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="bbc27997-a053-44c4-a8ca-e0ee8074429e">
+                  <SHORT-NAME>HandleNotification</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl/RteExclusiveAreaImplMechanism</DEFINITION-REF>
+                      <VALUE>ALL_INTERRUPT_BLOCKING</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl/RteBswExclusiveAreaRef</DEFINITION-REF>
+                      <VALUE-REF DEST="EXCLUSIVE-AREA">/AURIX2G/EcucDefs/Pwm_ib_bswmd/BswModuleDescriptions/Pwm/PwmBehavior/HandleNotification</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="f1733e2c-387d-44d0-9ad4-83f651569f99">
+                  <SHORT-NAME>PeriodAndDutyUpdate</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl/RteExclusiveAreaImplMechanism</DEFINITION-REF>
+                      <VALUE>ALL_INTERRUPT_BLOCKING</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl/RteBswExclusiveAreaRef</DEFINITION-REF>
+                      <VALUE-REF DEST="EXCLUSIVE-AREA">/AURIX2G/EcucDefs/Pwm_ib_bswmd/BswModuleDescriptions/Pwm/PwmBehavior/PeriodAndDutyUpdate</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
             </ECUC-CONTAINER-VALUE>
           </CONTAINERS>
         </ECUC-MODULE-CONFIGURATION-VALUES>

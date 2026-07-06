@@ -47,6 +47,7 @@
 #include "Dio_Cfg.h"
 #include "adc_test.h"
 #include "can_test.h"
+#include "pwm_test.h"
 #include "Spi_test.h"
 
 /**********************************************************************************************************************
@@ -141,7 +142,7 @@ FUNC(void, StartApp_CODE) StartApp_Cyclic1ms(void) /* PRQA S 0624, 3206 */ /* MD
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
  * Symbol: StartApp_Cyclic1ms
  *********************************************************************************************************************/
-
+	PwmTest_RunOnce();
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
@@ -175,7 +176,7 @@ FUNC(void, StartApp_CODE) StartApp_Cyclic250ms(void) /* PRQA S 0624, 3206 */ /* 
  * Symbol: StartApp_Cyclic500ms
  *********************************************************************************************************************/
 
-	Dio_FlipChannel(DioConf_DioChannel_DioChannel_led1);
+ Dio_FlipChannel(DioConf_DioChannel_DioChannel_led1);
   CanTest_RunOnce();
 
   if (SpiTest_9183SpiTestEnabled == TRUE)
@@ -184,6 +185,7 @@ FUNC(void, StartApp_CODE) StartApp_Cyclic250ms(void) /* PRQA S 0624, 3206 */ /* 
   }
 
   AdcTest_RunOnce();
+
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -217,7 +219,9 @@ FUNC(void, StartApp_CODE) StartApp_Init(void) /* PRQA S 0624, 3206 */ /* MD_Rte_
   CanTest_Init();
   SpiTest_Init();
   AdcTest_Init();
+  PwmTest_Init();
   AdcTest_RunOnce();
+  PwmTest_RunOnce();
   SpiTest_RunOnce();
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
@@ -271,5 +275,7 @@ FUNC(void, StartApp_CODE) StartApp_Init(void) /* PRQA S 0624, 3206 */ /* MD_Rte_
      Prevention: Not required.
 
 */
+
+
 
 

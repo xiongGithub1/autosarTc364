@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
-	.compiler_invocation	"ctc -f cc23396a --dep-file=MCAL364\\Adc\\ssc\\src\\.Adc.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\mak -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Make -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteAnalyzer -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache\\-148438436 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -g2 --make-target=MCAL364\\Adc\\ssc\\src\\Adc.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o MCAL364\\Adc\\ssc\\src\\Adc.src ..\\MCAL364\\Adc\\ssc\\src\\Adc.c"
+	.compiler_invocation	"ctc -f cc12296a --dep-file=MCAL364\\Adc\\ssc\\src\\.Adc.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\mak -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Make -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteAnalyzer -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache\\-148438436 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -g2 --make-target=MCAL364\\Adc\\ssc\\src\\Adc.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o MCAL364\\Adc\\ssc\\src\\Adc.src ..\\MCAL364\\Adc\\ssc\\src\\Adc.c"
 	.compiler_name		"ctc"
 	;source	'..\\MCAL364\\Adc\\ssc\\src\\Adc.c'
 
@@ -55939,16 +55939,16 @@ Adc_kKernelData:	.type	object
 	.half	1
 	.byte	88
 	.word	0,0
+.L1249:
+	.word	-1,.L311,.L1761-.L311,.L518-.L311
+	.half	1
+	.byte	81
+	.word	0,0
 .L1261:
 	.word	-1,.L311,.L1769-.L311,.L518-.L311
 	.half	1
 	.byte	81
 	.word	.L1770-.L311,.L1771-.L311
-	.half	1
-	.byte	81
-	.word	0,0
-.L1249:
-	.word	-1,.L311,.L1761-.L311,.L518-.L311
 	.half	1
 	.byte	81
 	.word	0,0
@@ -56129,19 +56129,19 @@ Adc_kKernelData:	.type	object
 	.half	1
 	.byte	89
 	.word	0,0
-.L1264:
-	.word	-1,.L311,.L1765-.L311,.L618-.L311
-	.half	1
-	.byte	88
-	.word	.L1772-.L311,.L126-.L311
-	.half	1
-	.byte	88
-	.word	0,0
 .L1257:
 	.word	-1,.L311,.L1765-.L311,.L1766-.L311
 	.half	1
 	.byte	88
 	.word	.L1763-.L311,.L128-.L311
+	.half	1
+	.byte	88
+	.word	0,0
+.L1264:
+	.word	-1,.L311,.L1765-.L311,.L618-.L311
+	.half	1
+	.byte	88
+	.word	.L1772-.L311,.L126-.L311
 	.half	1
 	.byte	88
 	.word	0,0
@@ -57916,19 +57916,19 @@ Adc_kKernelData:	.type	object
 	.half	1
 	.byte	92
 	.word	0,0
-.L1511:
-	.word	-1,.L339,.L1803-.L339,.L1802-.L339
-	.half	1
-	.byte	91
-	.word	.L1804-.L339,.L206-.L339
-	.half	1
-	.byte	91
-	.word	0,0
 .L1516:
 	.word	-1,.L339,.L1803-.L339,.L628-.L339
 	.half	1
 	.byte	91
 	.word	.L1807-.L339,.L203-.L339
+	.half	1
+	.byte	91
+	.word	0,0
+.L1511:
+	.word	-1,.L339,.L1803-.L339,.L1802-.L339
+	.half	1
+	.byte	91
+	.word	.L1804-.L339,.L206-.L339
 	.half	1
 	.byte	91
 	.word	0,0
@@ -58409,19 +58409,19 @@ Adc_kKernelData:	.type	object
 	.half	1
 	.byte	91
 	.word	0,0
-.L1572:
-	.word	-1,.L357,.L1845-.L357,.L643-.L357
-	.half	1
-	.byte	90
-	.word	.L1849-.L357,.L224-.L357
-	.half	1
-	.byte	90
-	.word	0,0
 .L1567:
 	.word	-1,.L357,.L1845-.L357,.L1844-.L357
 	.half	1
 	.byte	90
 	.word	.L1847-.L357,.L228-.L357
+	.half	1
+	.byte	90
+	.word	0,0
+.L1572:
+	.word	-1,.L357,.L1845-.L357,.L643-.L357
+	.half	1
+	.byte	90
+	.word	.L1849-.L357,.L224-.L357
 	.half	1
 	.byte	90
 	.word	0,0

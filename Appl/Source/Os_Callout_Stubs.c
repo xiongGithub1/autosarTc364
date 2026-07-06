@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Callout_Stubs.c
- *   Generation Time: 2024-07-01 09:01:45
+ *   Generation Time: 2024-07-06 09:43:48
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -125,11 +125,11 @@ FUNC(void, OS_ERRORHOOK_CODE) ErrorHook(StatusType Error)
   Os_ErrorInformationType CurrentError;
   volatile uint8 endless = 1u;
 //  Os_Callout_LastError = Error;
-//  Os_Callout_ErrorHookCounter++;
+//  Os_ErrorHookCounter++;
 //  (void)Os_GetDetailedError(&CurrentError);
 //  Os_Callout_LastErrorService = CurrentError.Service;
 //  Os_Callout_LastErrorStatus = CurrentError.Error;
-//  Os_Callout_LastDetailedError = CurrentError.DetailedError;
+//  Os_LastDetailedError = CurrentError.DetailedError;
   while(endless)
   {
     

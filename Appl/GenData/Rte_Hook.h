@@ -217,6 +217,10 @@
  *  SchM_EnterHook_Mcu_TomTgcReg_Start
  *  SchM_EnterHook_PduR_PDUR_EXCLUSIVE_AREA_0_Return
  *  SchM_EnterHook_PduR_PDUR_EXCLUSIVE_AREA_0_Start
+ *  SchM_EnterHook_Pwm_17_GtmCcu6_HandleNotification_Return
+ *  SchM_EnterHook_Pwm_17_GtmCcu6_HandleNotification_Start
+ *  SchM_EnterHook_Pwm_17_GtmCcu6_PeriodAndDutyUpdate_Return
+ *  SchM_EnterHook_Pwm_17_GtmCcu6_PeriodAndDutyUpdate_Start
  *  SchM_EnterHook_Spi_Buffer_Update_Return
  *  SchM_EnterHook_Spi_Buffer_Update_Start
  *  SchM_EnterHook_Spi_Cancel_Seq_Return
@@ -353,6 +357,10 @@
  *  SchM_ExitHook_Mcu_TomTgcReg_Start
  *  SchM_ExitHook_PduR_PDUR_EXCLUSIVE_AREA_0_Return
  *  SchM_ExitHook_PduR_PDUR_EXCLUSIVE_AREA_0_Start
+ *  SchM_ExitHook_Pwm_17_GtmCcu6_HandleNotification_Return
+ *  SchM_ExitHook_Pwm_17_GtmCcu6_HandleNotification_Start
+ *  SchM_ExitHook_Pwm_17_GtmCcu6_PeriodAndDutyUpdate_Return
+ *  SchM_ExitHook_Pwm_17_GtmCcu6_PeriodAndDutyUpdate_Start
  *  SchM_ExitHook_Spi_Buffer_Update_Return
  *  SchM_ExitHook_Spi_Buffer_Update_Start
  *  SchM_ExitHook_Spi_Cancel_Seq_Return
