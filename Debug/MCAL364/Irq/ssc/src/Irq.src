@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
-	.compiler_invocation	"ctc -f cc17456a --dep-file=MCAL364\\Irq\\ssc\\src\\.Irq.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\TestFiles -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\mak -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Make -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteAnalyzer -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache\\-148438436 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -g2 --make-target=MCAL364\\Irq\\ssc\\src\\Irq.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --cache=E:\\workFiles\\TC367\\TC367\\workspace\\last364\\.cache --compact-max-size=200 --switch=auto --error-limit=42 -o MCAL364\\Irq\\ssc\\src\\Irq.src ..\\MCAL364\\Irq\\ssc\\src\\Irq.c"
+	.compiler_invocation	"ctc -f cc6660a --dep-file=MCAL364\\Irq\\ssc\\src\\.Irq.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\TestFiles -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\mak -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Make -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteAnalyzer -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\RteCache\\-148438436 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -g2 --make-target=MCAL364\\Irq\\ssc\\src\\Irq.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --cache=E:\\workFiles\\TC367\\TC367\\workspace\\last364\\.cache --compact-max-size=200 --switch=auto --error-limit=42 -o MCAL364\\Irq\\ssc\\src\\Irq.src ..\\MCAL364\\Irq\\ssc\\src\\Irq.c"
 	.compiler_name		"ctc"
 	;source	'..\\MCAL364\\Irq\\ssc\\src\\Irq.c'
 
@@ -7272,33 +7272,25 @@ IrqSpi_Init:	.type	func
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3741    #if (IRQ_QSPI1_EXIST == STD_ON)
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3742    IRQ_SFR_MODIFY32 (SRC_QSPI1TX.U,  IRQ_CLEAR_MASK, \ 
 	ld.w	d15,.170.cnt
-	fcall	.cocofun_289
-	mov	d15,#2054
-	st.w	[a15],d15
+	fcall	.cocofun_285
 .L357:
 
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3743                      ((uint32)IRQ_QSPI1_TX_TOS | (uint32) IRQ_QSPI1_TX_PRIO));
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3744    IRQ_SFR_MODIFY32 (SRC_QSPI1RX.U,  IRQ_CLEAR_MASK, \ 
 	ld.w	d15,.171.cnt
-	fcall	.cocofun_289
-	mov	d15,#2053
-	st.w	[a15],d15
+	fcall	.cocofun_285
 .L358:
 
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3745                      ((uint32)IRQ_QSPI1_RX_TOS | (uint32) IRQ_QSPI1_RX_PRIO));
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3746    IRQ_SFR_MODIFY32 (SRC_QSPI1ERR.U,  IRQ_CLEAR_MASK, \ 
 	ld.w	d15,.172.cnt
-	fcall	.cocofun_289
-	mov	d15,#22
-	st.w	[a15],d15
+	fcall	.cocofun_285
 .L359:
 
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3747                      ((uint32)IRQ_QSPI1_ERR_TOS | (uint32) IRQ_QSPI1_ERR_PRIO));
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3748    IRQ_SFR_MODIFY32 (SRC_QSPI1PT.U,  IRQ_CLEAR_MASK, \ 
 	ld.w	d15,.173.cnt
-	fcall	.cocofun_289
-	mov	d15,#19
-	st.w	[a15],d15
+	fcall	.cocofun_285
 .L360:
 
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3749                      ((uint32)IRQ_QSPI1_PT_TOS | (uint32) IRQ_QSPI1_PT_PRIO));
@@ -7313,33 +7305,25 @@ IrqSpi_Init:	.type	func
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3754    #if (IRQ_QSPI2_EXIST == STD_ON)
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3755    IRQ_SFR_MODIFY32 (SRC_QSPI2TX.U,  IRQ_CLEAR_MASK, \ 
 	ld.w	d15,.175.cnt
-	fcall	.cocofun_289
-	mov	d15,#2050
-	st.w	[a15],d15
+	fcall	.cocofun_285
 .L362:
 
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3756                      ((uint32)IRQ_QSPI2_TX_TOS | (uint32) IRQ_QSPI2_TX_PRIO));
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3757    IRQ_SFR_MODIFY32 (SRC_QSPI2RX.U,  IRQ_CLEAR_MASK, \ 
 	ld.w	d15,.176.cnt
-	fcall	.cocofun_289
-	mov	d15,#2049
-	st.w	[a15],d15
+	fcall	.cocofun_285
 .L363:
 
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3758                      ((uint32)IRQ_QSPI2_RX_TOS | (uint32) IRQ_QSPI2_RX_PRIO));
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3759    IRQ_SFR_MODIFY32 (SRC_QSPI2ERR.U,  IRQ_CLEAR_MASK, \ 
 	ld.w	d15,.177.cnt
-	fcall	.cocofun_289
-	mov	d15,#23
-	st.w	[a15],d15
+	fcall	.cocofun_285
 .L364:
 
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3760                      ((uint32)IRQ_QSPI2_ERR_TOS | (uint32) IRQ_QSPI2_ERR_PRIO));
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3761    IRQ_SFR_MODIFY32 (SRC_QSPI2PT.U,  IRQ_CLEAR_MASK, \ 
 	ld.w	d15,.178.cnt
-	fcall	.cocofun_289
-	mov	d15,#20
-	st.w	[a15],d15
+	fcall	.cocofun_285
 .L365:
 
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3762                      ((uint32)IRQ_QSPI2_PT_TOS | (uint32) IRQ_QSPI2_PT_PRIO));
@@ -7358,33 +7342,25 @@ IrqSpi_Init:	.type	func
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3771    #if (IRQ_QSPI3_EXIST == STD_ON)
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3772    IRQ_SFR_MODIFY32 (SRC_QSPI3TX.U,  IRQ_CLEAR_MASK, \ 
 	ld.w	d15,.180.cnt
-	fcall	.cocofun_289
-	mov	d15,#2052
-	st.w	[a15],d15
+	fcall	.cocofun_285
 .L367:
 
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3773                      ((uint32)IRQ_QSPI3_TX_TOS | (uint32) IRQ_QSPI3_TX_PRIO));
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3774    IRQ_SFR_MODIFY32 (SRC_QSPI3RX.U,  IRQ_CLEAR_MASK, \ 
 	ld.w	d15,.181.cnt
-	fcall	.cocofun_289
-	mov	d15,#2051
-	st.w	[a15],d15
+	fcall	.cocofun_285
 .L368:
 
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3775                      ((uint32)IRQ_QSPI3_RX_TOS | (uint32) IRQ_QSPI3_RX_PRIO));
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3776    IRQ_SFR_MODIFY32 (SRC_QSPI3ERR.U,  IRQ_CLEAR_MASK, \ 
 	ld.w	d15,.182.cnt
-	fcall	.cocofun_289
-	mov	d15,#24
-	st.w	[a15],d15
+	fcall	.cocofun_285
 .L369:
 
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3777                      ((uint32)IRQ_QSPI3_ERR_TOS | (uint32) IRQ_QSPI3_ERR_PRIO));
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3778    IRQ_SFR_MODIFY32 (SRC_QSPI3PT.U,  IRQ_CLEAR_MASK, \ 
 	ld.w	d15,.183.cnt
-	fcall	.cocofun_289
-	mov	d15,#21
-	st.w	[a15],d15
+	fcall	.cocofun_285
 .L370:
 
 ; ..\MCAL364\Irq\ssc\src\Irq.c	  3779                      ((uint32)IRQ_QSPI3_PT_TOS | (uint32) IRQ_QSPI3_PT_PRIO));
@@ -9538,7 +9514,6 @@ __Irq_ClearAllInterruptFlags_function_end:
 	.calls	'IrqGpsrGroup_Init','.cocofun_285'
 	.calls	'IrqSpi_Init','.cocofun_288'
 	.calls	'IrqSpi_Init','.cocofun_285'
-	.calls	'IrqSpi_Init','.cocofun_289'
 	.calls	'IrqAdc_Init','.cocofun_289'
 	.calls	'IrqAdc_Init','.cocofun_288'
 	.calls	'IrqAdc_Init','.cocofun_285'
@@ -13531,6 +13506,38 @@ __Irq_ClearAllInterruptFlags_function_end:
 	.word	.L31
 	.byte	3,222,17,1,9
 	.half	.L814-.L31
+	.byte	3,191,11,1,9
+	.half	.L815-.L814
+	.byte	3,193,116,1,7,9
+	.half	.L125-.L815
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L31
+	.byte	3,222,17,1,9
+	.half	.L814-.L31
+	.byte	3,193,11,1,9
+	.half	.L815-.L814
+	.byte	3,191,116,1,7,9
+	.half	.L125-.L815
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L31
+	.byte	3,222,17,1,9
+	.half	.L814-.L31
+	.byte	3,195,11,1,9
+	.half	.L815-.L814
+	.byte	3,189,116,1,7,9
+	.half	.L125-.L815
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L31
+	.byte	3,222,17,1,9
+	.half	.L814-.L31
+	.byte	3,197,11,1,9
+	.half	.L815-.L814
+	.byte	3,187,116,1,7,9
+	.half	.L125-.L815
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L31
+	.byte	3,222,17,1,9
+	.half	.L814-.L31
 	.byte	3,199,11,1,9
 	.half	.L815-.L814
 	.byte	3,185,116,1,7,9
@@ -13539,9 +13546,73 @@ __Irq_ClearAllInterruptFlags_function_end:
 	.word	.L31
 	.byte	3,222,17,1,9
 	.half	.L814-.L31
+	.byte	3,204,11,1,9
+	.half	.L815-.L814
+	.byte	3,180,116,1,7,9
+	.half	.L125-.L815
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L31
+	.byte	3,222,17,1,9
+	.half	.L814-.L31
+	.byte	3,206,11,1,9
+	.half	.L815-.L814
+	.byte	3,178,116,1,7,9
+	.half	.L125-.L815
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L31
+	.byte	3,222,17,1,9
+	.half	.L814-.L31
+	.byte	3,208,11,1,9
+	.half	.L815-.L814
+	.byte	3,176,116,1,7,9
+	.half	.L125-.L815
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L31
+	.byte	3,222,17,1,9
+	.half	.L814-.L31
+	.byte	3,210,11,1,9
+	.half	.L815-.L814
+	.byte	3,174,116,1,7,9
+	.half	.L125-.L815
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L31
+	.byte	3,222,17,1,9
+	.half	.L814-.L31
 	.byte	3,216,11,1,9
 	.half	.L815-.L814
 	.byte	3,168,116,1,7,9
+	.half	.L125-.L815
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L31
+	.byte	3,222,17,1,9
+	.half	.L814-.L31
+	.byte	3,221,11,1,9
+	.half	.L815-.L814
+	.byte	3,163,116,1,7,9
+	.half	.L125-.L815
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L31
+	.byte	3,222,17,1,9
+	.half	.L814-.L31
+	.byte	3,223,11,1,9
+	.half	.L815-.L814
+	.byte	3,161,116,1,7,9
+	.half	.L125-.L815
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L31
+	.byte	3,222,17,1,9
+	.half	.L814-.L31
+	.byte	3,225,11,1,9
+	.half	.L815-.L814
+	.byte	3,159,116,1,7,9
+	.half	.L125-.L815
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L31
+	.byte	3,222,17,1,9
+	.half	.L814-.L31
+	.byte	3,227,11,1,9
+	.half	.L815-.L814
+	.byte	3,157,116,1,7,9
 	.half	.L125-.L815
 	.byte	0,1,1,5,3,0,5,2
 	.word	.L31
@@ -15567,15 +15638,87 @@ __Irq_ClearAllInterruptFlags_function_end:
 	.half	.L145-.L836
 	.byte	0,1,1,5,3,0,5,2
 	.word	.L21
+	.byte	3,157,29,1,9
+	.half	.L836-.L21
+	.byte	3,223,115,1,7,9
+	.half	.L145-.L836
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L21
+	.byte	3,159,29,1,9
+	.half	.L836-.L21
+	.byte	3,221,115,1,7,9
+	.half	.L145-.L836
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L21
+	.byte	3,161,29,1,9
+	.half	.L836-.L21
+	.byte	3,219,115,1,7,9
+	.half	.L145-.L836
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L21
+	.byte	3,163,29,1,9
+	.half	.L836-.L21
+	.byte	3,217,115,1,7,9
+	.half	.L145-.L836
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L21
 	.byte	3,165,29,1,9
 	.half	.L836-.L21
 	.byte	3,215,115,1,7,9
 	.half	.L145-.L836
 	.byte	0,1,1,5,3,0,5,2
 	.word	.L21
+	.byte	3,170,29,1,9
+	.half	.L836-.L21
+	.byte	3,210,115,1,7,9
+	.half	.L145-.L836
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L21
+	.byte	3,172,29,1,9
+	.half	.L836-.L21
+	.byte	3,208,115,1,7,9
+	.half	.L145-.L836
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L21
+	.byte	3,174,29,1,9
+	.half	.L836-.L21
+	.byte	3,206,115,1,7,9
+	.half	.L145-.L836
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L21
+	.byte	3,176,29,1,9
+	.half	.L836-.L21
+	.byte	3,204,115,1,7,9
+	.half	.L145-.L836
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L21
 	.byte	3,182,29,1,9
 	.half	.L836-.L21
 	.byte	3,198,115,1,7,9
+	.half	.L145-.L836
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L21
+	.byte	3,187,29,1,9
+	.half	.L836-.L21
+	.byte	3,193,115,1,7,9
+	.half	.L145-.L836
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L21
+	.byte	3,189,29,1,9
+	.half	.L836-.L21
+	.byte	3,191,115,1,7,9
+	.half	.L145-.L836
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L21
+	.byte	3,191,29,1,9
+	.half	.L836-.L21
+	.byte	3,189,115,1,7,9
+	.half	.L145-.L836
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L21
+	.byte	3,193,29,1,9
+	.half	.L836-.L21
+	.byte	3,187,115,1,7,9
 	.half	.L145-.L836
 	.byte	0,1,1,5,3,0,5,2
 	.word	.L21
@@ -16152,78 +16295,6 @@ __Irq_ClearAllInterruptFlags_function_end:
 	.byte	3,225,38,1,9
 	.half	.L836-.L21
 	.byte	3,155,106,1,7,9
-	.half	.L145-.L836
-	.byte	0,1,1,5,3,0,5,2
-	.word	.L21
-	.byte	3,157,29,1,9
-	.half	.L836-.L21
-	.byte	3,223,115,1,7,9
-	.half	.L145-.L836
-	.byte	0,1,1,5,3,0,5,2
-	.word	.L21
-	.byte	3,159,29,1,9
-	.half	.L836-.L21
-	.byte	3,221,115,1,7,9
-	.half	.L145-.L836
-	.byte	0,1,1,5,3,0,5,2
-	.word	.L21
-	.byte	3,161,29,1,9
-	.half	.L836-.L21
-	.byte	3,219,115,1,7,9
-	.half	.L145-.L836
-	.byte	0,1,1,5,3,0,5,2
-	.word	.L21
-	.byte	3,163,29,1,9
-	.half	.L836-.L21
-	.byte	3,217,115,1,7,9
-	.half	.L145-.L836
-	.byte	0,1,1,5,3,0,5,2
-	.word	.L21
-	.byte	3,170,29,1,9
-	.half	.L836-.L21
-	.byte	3,210,115,1,7,9
-	.half	.L145-.L836
-	.byte	0,1,1,5,3,0,5,2
-	.word	.L21
-	.byte	3,172,29,1,9
-	.half	.L836-.L21
-	.byte	3,208,115,1,7,9
-	.half	.L145-.L836
-	.byte	0,1,1,5,3,0,5,2
-	.word	.L21
-	.byte	3,174,29,1,9
-	.half	.L836-.L21
-	.byte	3,206,115,1,7,9
-	.half	.L145-.L836
-	.byte	0,1,1,5,3,0,5,2
-	.word	.L21
-	.byte	3,176,29,1,9
-	.half	.L836-.L21
-	.byte	3,204,115,1,7,9
-	.half	.L145-.L836
-	.byte	0,1,1,5,3,0,5,2
-	.word	.L21
-	.byte	3,187,29,1,9
-	.half	.L836-.L21
-	.byte	3,193,115,1,7,9
-	.half	.L145-.L836
-	.byte	0,1,1,5,3,0,5,2
-	.word	.L21
-	.byte	3,189,29,1,9
-	.half	.L836-.L21
-	.byte	3,191,115,1,7,9
-	.half	.L145-.L836
-	.byte	0,1,1,5,3,0,5,2
-	.word	.L21
-	.byte	3,191,29,1,9
-	.half	.L836-.L21
-	.byte	3,189,115,1,7,9
-	.half	.L145-.L836
-	.byte	0,1,1,5,3,0,5,2
-	.word	.L21
-	.byte	3,193,29,1,9
-	.half	.L836-.L21
-	.byte	3,187,115,1,7,9
 	.half	.L145-.L836
 	.byte	0,1,1,5,3,0,5,2
 	.word	.L21

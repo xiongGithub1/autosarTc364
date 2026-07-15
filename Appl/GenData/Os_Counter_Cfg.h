@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Counter_Cfg.h
- *   Generation Time: 2024-07-14 19:14:51
+ *   Generation Time: 2024-07-15 16:30:36
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -69,7 +69,7 @@
 # define OS_CFG_COUNTER_PFRT_USED                (STD_ON)
 
 /*! Number of counter jobs: SystemTimer */
-# define OS_CFG_NUM_COUNTER_SYSTEMTIMER_JOBS     (9u)
+# define OS_CFG_NUM_COUNTER_SYSTEMTIMER_JOBS     (8u)
 
 
 /**********************************************************************************************************************

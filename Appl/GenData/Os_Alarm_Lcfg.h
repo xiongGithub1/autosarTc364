@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Alarm_Lcfg.h
- *   Generation Time: 2024-07-14 19:14:51
+ *   Generation Time: 2024-07-15 16:30:36
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -97,9 +97,6 @@ extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_MotorCd
 
 /*! Alarm configuration data: Rte_Al_TE_MotorControll_MotorControll_MainFunction */
 extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_MotorControll_MotorControll_MainFunction;
-
-/*! Alarm configuration data: Rte_Al_TE_Spi_Spi_MainFunction_Handling */
-extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_Spi_Spi_MainFunction_Handling;
 
 /*! Alarm configuration data: Rte_Al_TE_StartApp_StartApp_Cyclic1000ms */
 extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic1000ms;

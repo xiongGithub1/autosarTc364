@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Cfg.h
- *   Generation Time: 2024-07-14 19:14:51
+ *   Generation Time: 2024-07-15 16:30:36
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -128,7 +128,6 @@
 # define Rte_Ev_Run_MotorCdd_MotorCDDMainFunction     ((EventMaskType)1uLL)
 # define Rte_Ev_Run_MotorCdd_MotorCdd_AdcOnSampleReady_Rp_AdcSampleReady_AdcSampleReady     ((EventMaskType)2uLL)
 # define Rte_Ev_Run_MotorControll_MotorControll_MainFunction     ((EventMaskType)4uLL)
-# define Rte_Ev_Run_Spi_Spi_MainFunction_Handling     ((EventMaskType)4uLL)
 # define Rte_Ev_Run_StartApp_StartApp_Cyclic1000ms     ((EventMaskType)1uLL)
 # define Rte_Ev_Run_StartApp_StartApp_Cyclic10ms     ((EventMaskType)2uLL)
 # define Rte_Ev_Run_StartApp_StartApp_Cyclic1ms     ((EventMaskType)4uLL)

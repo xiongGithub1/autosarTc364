@@ -53,7 +53,6 @@
 #include "Tle5012bd_Driver.h"
 #include "MotorCdd_Foc.h"
 #include "IfxGtm_reg.h"
-#include "Appl_BringupCfg.h"
 
 #define MOTORCDD_DTM_CDTM_INDEX             (0U)
 #define MOTORCDD_DTM_INDEX                  (4U)
@@ -113,10 +112,8 @@ FUNC(void, MotorCdd_CODE) MotorCDDMainFunction(void) /* PRQA S 0624, 3206 */ /* 
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
  * Symbol: MotorCDDMainFunction
  *********************************************************************************************************************/
-#if (APPL_SPI9180_BRINGUP == 0)
-  Tle9180_Driver_MainFunction();
+  /* Backup cmd mirror only. 9180 Sync Init/steps run in StartApp 1 ms — not MotorTask. */
   MotorCdd_FocUpdateCmdMirror();
-#endif
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
@@ -148,15 +145,13 @@ FUNC(void, MotorCdd_CODE) MotorCdd_Init(void) /* PRQA S 0624, 3206 */ /* MD_Rte_
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
  * Symbol: MotorCdd_Init
  *********************************************************************************************************************/
-#if (APPL_SPI9180_BRINGUP == 0)
   MotorCdd_AdcInit();
-  /* 9180 first (QSPI3): alone已经验证可通；5012 Init 不再做 SPI。 */
+  /* 9180 first (QSPI3 Sync Init steps continue in MotorCDDMainFunction). */
   Tle9180_Driver_Init();
   Tle5012bd_Driver_Init();
   MotorCdd_PwmComplementaryInit();
   MotorCdd_AdcHwTriggerInit();
   MotorCdd_FocInit();
-#endif
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!

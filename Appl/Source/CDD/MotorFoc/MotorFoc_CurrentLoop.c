@@ -1,8 +1,9 @@
 #include "MotorFoc_CurrentLoop.h"
 #include "MotorFoc_Pid.h"
+#include "MotorFoc_SinCosTable.h"
 #include "Pwm_17_GtmCcu6.h"
 #include "Pwm_17_GtmCcu6_Cfg.h"
-#include "math.h"
+#include <math.h> /* sqrtf for SVPWM magnitude limit */
 
 #define MOTORFOC_PWM_DUTY_MAX      (0x8000U)
 #define MOTORFOC_SQRT3_3           (0.5773502691896257645F)
@@ -40,8 +41,23 @@ static const Pwm_17_GtmCcu6_ChannelType MotorFoc_PwmChannel[3] =
 
 static void MotorFoc_UpdateSinCos(MotorFoc_ContextType* ctx)
 {
-  ctx->angle.sin = sinf(ctx->angle.electricalAngleRad);
-  ctx->angle.cos = cosf(ctx->angle.electricalAngleRad);
+  uint32 idx;
+
+  /* Prefer discrete 8192-count angle (TLE5012 / open-loop raw); else map rad. */
+  if ((ctx->angle.angleRaw >= 0.0F) &&
+      (ctx->angle.angleRaw < (float32)MOTORFOC_SINCOS_TABLE_SIZE))
+  {
+    idx = (uint32)ctx->angle.angleRaw;
+  }
+  else
+  {
+    sint32 sidx = (sint32)(ctx->angle.electricalAngleRad * MOTORFOC_SINCOS_RAD_TO_IDX);
+    idx = (uint32)sidx;
+  }
+
+  idx &= MOTORFOC_SINCOS_IDX_MASK;
+  ctx->angle.sin = MotorFoc_SinCosTable[idx];
+  ctx->angle.cos = MotorFoc_SinCosTable[idx + MOTORFOC_SINCOS_COS_OFFSET];
 }
 
 static void MotorFoc_DoClarke(MotorFoc_ContextType* ctx)

@@ -9,6 +9,7 @@
 #include "TLE9180/Tle9180_Driver.h"
 #include "MotorFoc_CurrentLoop.h"
 #include "MotorFoc_SpeedLoop.h"
+#include "MotorFoc_SinCosTable.h"
 
 typedef struct
 {
@@ -104,10 +105,15 @@ static void MotorCdd_ApplyAngleCache(uint8 useForcedAngle, float32 forcedAngleRa
 {
   if (useForcedAngle != 0U)
   {
-    MotorFoc_SetAngleFromTle5012(&MotorCdd_FocContext, 0.0F, forcedAngleRad);
+    /* Map forced rad → 8192-count index for sin/cos table (open-loop / zero-cal). */
+    sint32 sidx = (sint32)(forcedAngleRad * MOTORFOC_SINCOS_RAD_TO_IDX);
+    float32 angleRaw = (float32)((uint32)sidx & MOTORFOC_SINCOS_IDX_MASK);
+
+    MotorFoc_SetAngleFromTle5012(&MotorCdd_FocContext, angleRaw, forcedAngleRad);
   }
   else if (MotorCdd_AngleCache.valid != 0U)
   {
+    /* angleDeg field carries TLE5012 Angle counts (0..8191), not degrees. */
     MotorFoc_SetAngleFromTle5012(&MotorCdd_FocContext,
                                  MotorCdd_AngleCache.angleDeg,
                                  MotorCdd_AngleCache.angleRad);

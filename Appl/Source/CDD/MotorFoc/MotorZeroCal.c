@@ -41,7 +41,8 @@ static void MotorZeroCal_DelayUs(uint32 delayUs)
   else
   {
     const uint32 startTick = Mcal_DelayGetTick();
-    const uint32 targetTicks = (delayUs * 1000000UL) / resolution;
+    /* Resolution is ns/tick → ticks = (µs * 1000) / ns */
+    const uint32 targetTicks = (delayUs * 1000UL) / resolution;
 
     while ((Mcal_DelayGetTick() - startTick) < targetTicks)
     {

@@ -172,7 +172,6 @@ VAR(float32, RTE_VAR_NOINIT) Rte_MotorControll_Pp_MotorCurrentRef_Iq_Ref;
 #define RTE_CONST_MSEC_SystemTimer_10U (100UL)
 #define RTE_CONST_MSEC_SystemTimer_20U (200UL)
 #define RTE_CONST_MSEC_SystemTimer_250U (2500UL)
-#define RTE_CONST_MSEC_SystemTimer_5U (50UL)
 
 #define RTE_CONST_SEC_SystemTimer_0U (0UL)
 #define RTE_CONST_SEC_SystemTimer_1U (10000UL)
@@ -208,7 +207,6 @@ FUNC(void, RTE_CODE) SchM_StartTiming(void)
   /* activate the alarms used for TimingEvents */
   (void)SetRelAlarm(Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(10U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
   (void)SetRelAlarm(Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(20U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
-  (void)SetRelAlarm(Rte_Al_TE_Spi_Spi_MainFunction_Handling, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(5U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
 
 }
 
@@ -258,7 +256,6 @@ FUNC(void, RTE_CODE) SchM_Deinit(void)
   /* deactivate alarms */
   (void)CancelAlarm(Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms); /* PRQA S 3417 */ /* MD_Rte_Os */
   (void)CancelAlarm(Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms); /* PRQA S 3417 */ /* MD_Rte_Os */
-  (void)CancelAlarm(Rte_Al_TE_Spi_Spi_MainFunction_Handling); /* PRQA S 3417 */ /* MD_Rte_Os */
 
 }
 
@@ -727,9 +724,9 @@ TASK(Default_BSW_ASync_Task) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unre
 
   for(;;)
   {
-    (void)WaitEvent(Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms | Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_20ms | Rte_Ev_Run_Spi_Spi_MainFunction_Handling); /* PRQA S 3417 */ /* MD_Rte_Os */
+    (void)WaitEvent(Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms | Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_20ms); /* PRQA S 3417 */ /* MD_Rte_Os */
     (void)GetEvent(Default_BSW_ASync_Task, &ev); /* PRQA S 3417 */ /* MD_Rte_Os */
-    (void)ClearEvent(ev & (Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms | Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_20ms | Rte_Ev_Run_Spi_Spi_MainFunction_Handling)); /* PRQA S 3417 */ /* MD_Rte_Os */
+    (void)ClearEvent(ev & (Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms | Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_20ms)); /* PRQA S 3417 */ /* MD_Rte_Os */
 
     if ((ev & Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms) != (EventMaskType)0)
     {
@@ -768,12 +765,6 @@ TASK(Default_BSW_ASync_Task) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unre
 
       /* call schedulable entity */
       Com_MainFunctionTx_ComMainFunctionTx();
-    }
-
-    if ((ev & Rte_Ev_Run_Spi_Spi_MainFunction_Handling) != (EventMaskType)0)
-    {
-      /* call schedulable entity */
-      Spi_MainFunction_Handling();
     }
   }
 } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */

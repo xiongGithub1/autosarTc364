@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Context_Lcfg.h
- *   Generation Time: 2024-07-14 20:32:32
+ *   Generation Time: 2024-07-15 15:44:50
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -101,27 +101,6 @@ extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Leve
 /*! HAL dynamic ISR2 level context data: Level4 */
 extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level4_Dyn;
 
-/*! HAL dynamic ISR2 level context data: Level5 */
-extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level5_Dyn;
-
-/*! HAL dynamic ISR2 level context data: Level6 */
-extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level6_Dyn;
-
-/*! HAL dynamic ISR2 level context data: Level7 */
-extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level7_Dyn;
-
-/*! HAL dynamic ISR2 level context data: Level8 */
-extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level8_Dyn;
-
-/*! HAL dynamic ISR2 level context data: Level9 */
-extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level9_Dyn;
-
-/*! HAL dynamic ISR2 level context data: Level10 */
-extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level10_Dyn;
-
-/*! HAL dynamic ISR2 level context data: Level11 */
-extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level11_Dyn;
-
 /*! HAL dynamic task context data: Default_Appl_Init_Task */
 extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Default_Appl_Init_Task_Dyn;
 
@@ -181,27 +160,6 @@ extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CanIsr_0;
 
 /*! HAL ISR2 context configuration data: CounterIsr_SystemTimer */
 extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CounterIsr_SystemTimer;
-
-/*! HAL ISR2 context configuration data: OsIsr_DMA_ERR */
-extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_OsIsr_DMA_ERR;
-
-/*! HAL ISR2 context configuration data: OsIsr_QSPI1_ERR */
-extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_OsIsr_QSPI1_ERR;
-
-/*! HAL ISR2 context configuration data: OsIsr_QSPI1_PT */
-extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_OsIsr_QSPI1_PT;
-
-/*! HAL ISR2 context configuration data: OsIsr_QSPI2_ERR */
-extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_OsIsr_QSPI2_ERR;
-
-/*! HAL ISR2 context configuration data: OsIsr_QSPI2_PT */
-extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_OsIsr_QSPI2_PT;
-
-/*! HAL ISR2 context configuration data: OsIsr_QSPI3_ERR */
-extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_OsIsr_QSPI3_ERR;
-
-/*! HAL ISR2 context configuration data: OsIsr_QSPI3_PT */
-extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_OsIsr_QSPI3_PT;
 
 /*! HAL task context configuration data: Default_Appl_Init_Task */
 extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Default_Appl_Init_Task;

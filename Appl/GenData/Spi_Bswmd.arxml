@@ -17,7 +17,7 @@
 **                                                                            **
 **  VERSION   : 24.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-07-15, 14:43:55          !!!IGNORE-LINE!!!           **
+**  DATE, TIME: 2024-07-15, 16:43:12          !!!IGNORE-LINE!!!           **
 **                                                                            **
 **  GENERATOR : Build b191017-0938            !!!IGNORE-LINE!!!             **
 **                                                                            **
@@ -62,9 +62,6 @@
                 <BSW-MODULE-ENTRY-REF-CONDITIONAL>
                   <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_DeInit</BSW-MODULE-ENTRY-REF>
                 </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                  <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_AsyncTransmit</BSW-MODULE-ENTRY-REF>
-                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
 
                 <BSW-MODULE-ENTRY-REF-CONDITIONAL>
                   <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_SetupEB</BSW-MODULE-ENTRY-REF>
@@ -88,25 +85,7 @@
                   <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_Cancel</BSW-MODULE-ENTRY-REF>
                 </BSW-MODULE-ENTRY-REF-CONDITIONAL>
                 <BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                  <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_SetAsyncMode</BSW-MODULE-ENTRY-REF>
-                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
                   <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_ControlLoopBack</BSW-MODULE-ENTRY-REF>
-                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                  <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_IsrQspiPT2</BSW-MODULE-ENTRY-REF>
-                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                  <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_IsrQspiError</BSW-MODULE-ENTRY-REF>
-                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                  <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_QspiDmaCallout</BSW-MODULE-ENTRY-REF>
-                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                  <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_QspiDmaErrCallout</BSW-MODULE-ENTRY-REF>
-                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                  <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_MainFunction_Handling</BSW-MODULE-ENTRY-REF>
                 </BSW-MODULE-ENTRY-REF-CONDITIONAL>
               </PROVIDED-ENTRYS>
               <BSW-MODULE-DEPENDENCYS>
@@ -127,27 +106,6 @@
                       <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_McalLib/BswModuleEntrys/Mcal_WritePeripEndInitProtReg</BSW-MODULE-ENTRY-REF>
                     </BSW-MODULE-ENTRY-REF-CONDITIONAL>
                   </REQUIRED-ENTRYS>
-                </BSW-MODULE-DEPENDENCY>
-                <BSW-MODULE-DEPENDENCY>
-                  <SHORT-NAME>DmaDependency</SHORT-NAME>
-                  <TARGET-MODULE-ID>101</TARGET-MODULE-ID>
-                  <EXPECTED-CALLBACKS>
-                    <BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                      <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_ChEnableHardwareTrigger</BSW-MODULE-ENTRY-REF>
-                    </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                    <BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                      <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_ChUpdate</BSW-MODULE-ENTRY-REF>
-                    </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                    <BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                      <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_ChStopTransfer</BSW-MODULE-ENTRY-REF>
-                    </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                    <BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                      <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_GetEvents</BSW-MODULE-ENTRY-REF>
-                    </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                    <BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                      <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_ChStatusClear</BSW-MODULE-ENTRY-REF>
-                    </BSW-MODULE-ENTRY-REF-CONDITIONAL>
-                  </EXPECTED-CALLBACKS>
                 </BSW-MODULE-DEPENDENCY>
               </BSW-MODULE-DEPENDENCYS>
               <INTERNAL-BEHAVIORS>
@@ -177,14 +135,6 @@
                       <SHORT-NAME>Spi_DeInit</SHORT-NAME>
                       <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                       <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_DeInit</IMPLEMENTED-ENTRY-REF>
-                    </BSW-CALLED-ENTITY>
-                    <BSW-CALLED-ENTITY>
-                      <SHORT-NAME>Spi_AsyncTransmit</SHORT-NAME>
-                      <CAN-ENTER-EXCLUSIVE-AREA-REFS>
-                        <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AUTOSAR_Spi/BswModuleDescriptions/Spi/SpiBehavior/Queue_Update</CAN-ENTER-EXCLUSIVE-AREA-REF>
-                      </CAN-ENTER-EXCLUSIVE-AREA-REFS>
-                      <REENTRANCY-LEVEL>MULTICORE-REENTRANT</REENTRANCY-LEVEL>
-                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_AsyncTransmit</IMPLEMENTED-ENTRY-REF>
                     </BSW-CALLED-ENTITY>
                     <BSW-CALLED-ENTITY>
                       <SHORT-NAME>Spi_SetupEB</SHORT-NAME>
@@ -228,51 +178,12 @@
                       <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_Cancel</IMPLEMENTED-ENTRY-REF>
                     </BSW-CALLED-ENTITY>
                     <BSW-CALLED-ENTITY>
-                      <SHORT-NAME>Spi_SetAsyncMode</SHORT-NAME>
-                      <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
-                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_SetAsyncMode</IMPLEMENTED-ENTRY-REF>
-                    </BSW-CALLED-ENTITY>
-                    <BSW-CALLED-ENTITY>
                       <SHORT-NAME>Spi_ControlLoopBack</SHORT-NAME>
                       <REENTRANCY-LEVEL>MULTICORE-REENTRANT</REENTRANCY-LEVEL>
                       <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_ControlLoopBack</IMPLEMENTED-ENTRY-REF>
                     </BSW-CALLED-ENTITY>
-                    <BSW-SCHEDULABLE-ENTITY>
-                      <SHORT-NAME>Spi_MainFunction_Handling</SHORT-NAME>
-                      <MINIMUM-START-INTERVAL>0.005</MINIMUM-START-INTERVAL>
-                      <REENTRANCY-LEVEL>MULTICORE-REENTRANT</REENTRANCY-LEVEL>
-                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_MainFunction_Handling</IMPLEMENTED-ENTRY-REF>
-                    </BSW-SCHEDULABLE-ENTITY>
-                    <BSW-INTERRUPT-ENTITY>
-                      <SHORT-NAME>Spi_IsrQspiPT2</SHORT-NAME>
-                      <CAN-ENTER-EXCLUSIVE-AREA-REFS>
-                        <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AUTOSAR_Spi/BswModuleDescriptions/Spi/SpiBehavior/Queue_Update</CAN-ENTER-EXCLUSIVE-AREA-REF>
-                      </CAN-ENTER-EXCLUSIVE-AREA-REFS>
-                      <REENTRANCY-LEVEL>MULTICORE-REENTRANT</REENTRANCY-LEVEL>
-                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_IsrQspiPT2</IMPLEMENTED-ENTRY-REF>
-                    </BSW-INTERRUPT-ENTITY>
-                    <BSW-INTERRUPT-ENTITY>
-                      <SHORT-NAME>Spi_IsrQspiError</SHORT-NAME>
-                      <REENTRANCY-LEVEL>MULTICORE-REENTRANT</REENTRANCY-LEVEL>
-                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_IsrQspiError</IMPLEMENTED-ENTRY-REF>
-                    </BSW-INTERRUPT-ENTITY>
-                    <BSW-CALLED-ENTITY>
-                      <SHORT-NAME>Spi_QspiDmaCallout</SHORT-NAME>
-                      <REENTRANCY-LEVEL>MULTICORE-REENTRANT</REENTRANCY-LEVEL>
-                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_QspiDmaCallout</IMPLEMENTED-ENTRY-REF>
-                    </BSW-CALLED-ENTITY>
-                    <BSW-CALLED-ENTITY>
-                      <SHORT-NAME>Spi_QspiDmaErrCallout</SHORT-NAME>
-                      <REENTRANCY-LEVEL>MULTICORE-REENTRANT</REENTRANCY-LEVEL>
-                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Spi/BswModuleEntrys/Spi_QspiDmaErrCallout</IMPLEMENTED-ENTRY-REF>
-                    </BSW-CALLED-ENTITY>
                   </ENTITYS>
                   <EVENTS>
-                    <BSW-TIMING-EVENT>
-                      <SHORT-NAME>TimingEvent_Spi_MainFunction_Handling</SHORT-NAME>
-                      <STARTS-ON-EVENT-REF DEST="BSW-SCHEDULABLE-ENTITY">/AUTOSAR_Spi/BswModuleDescriptions/Spi/SpiBehavior/Spi_MainFunction_Handling</STARTS-ON-EVENT-REF>
-                      <PERIOD>0.005</PERIOD>
-                    </BSW-TIMING-EVENT>
                   </EVENTS>
                   <SERVICE-DEPENDENCYS>
                     <BSW-SERVICE-DEPENDENCY>
@@ -342,42 +253,6 @@
                   </SW-DATA-DEF-PROPS-VARIANTS>
                 </SW-DATA-DEF-PROPS>
               </RETURN-TYPE>
-            </BSW-MODULE-ENTRY>
-            <BSW-MODULE-ENTRY>
-              <SHORT-NAME>Spi_AsyncTransmit</SHORT-NAME>
-              <INTRODUCTION>
-                <NOTE SI="Spi_AsyncTransmit is reentrant for different core" NOTE-TYPE="HINT" />
-              </INTRODUCTION>
-              <SERVICE-ID>3</SERVICE-ID>
-              <IS-REENTRANT>true</IS-REENTRANT>
-              <IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
-              <CALL-TYPE>REGULAR</CALL-TYPE>
-              <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
-              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
-              <RETURN-TYPE>
-                <SHORT-NAME>Return</SHORT-NAME>
-                <CATEGORY>TYPE_REFERENCE</CATEGORY>
-                <SW-DATA-DEF-PROPS>
-                  <SW-DATA-DEF-PROPS-VARIANTS>
-                    <SW-DATA-DEF-PROPS-CONDITIONAL>
-                      <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Std/ImplementationDataTypes/Std_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
-                    </SW-DATA-DEF-PROPS-CONDITIONAL>
-                  </SW-DATA-DEF-PROPS-VARIANTS>
-                </SW-DATA-DEF-PROPS>
-              </RETURN-TYPE>
-              <ARGUMENTS>
-                <SW-SERVICE-ARG>
-                  <SHORT-NAME>Sequence</SHORT-NAME>
-                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
-                  <SW-DATA-DEF-PROPS>
-                    <SW-DATA-DEF-PROPS-VARIANTS>
-                      <SW-DATA-DEF-PROPS-CONDITIONAL>
-                        <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Spi/ImplementationDataTypes/Spi_SequenceType</IMPLEMENTATION-DATA-TYPE-REF>
-                      </SW-DATA-DEF-PROPS-CONDITIONAL>
-                    </SW-DATA-DEF-PROPS-VARIANTS>
-                  </SW-DATA-DEF-PROPS>
-                </SW-SERVICE-ARG>
-              </ARGUMENTS>
             </BSW-MODULE-ENTRY>
             <BSW-MODULE-ENTRY>
               <SHORT-NAME>Spi_SetupEB</SHORT-NAME>
@@ -659,42 +534,6 @@
               </ARGUMENTS>
             </BSW-MODULE-ENTRY>
             <BSW-MODULE-ENTRY>
-              <SHORT-NAME>Spi_SetAsyncMode</SHORT-NAME>
-              <INTRODUCTION>
-                <NOTE SI="Spi_SetAsyncMode is reentrant for different channel or core" NOTE-TYPE="HINT" />
-              </INTRODUCTION>
-              <SERVICE-ID>13</SERVICE-ID>
-              <IS-REENTRANT>false</IS-REENTRANT>
-              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
-              <CALL-TYPE>REGULAR</CALL-TYPE>
-              <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
-              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
-              <RETURN-TYPE>
-                <SHORT-NAME>Return</SHORT-NAME>
-                <CATEGORY>TYPE_REFERENCE</CATEGORY>
-                <SW-DATA-DEF-PROPS>
-                  <SW-DATA-DEF-PROPS-VARIANTS>
-                    <SW-DATA-DEF-PROPS-CONDITIONAL>
-                      <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Std/ImplementationDataTypes/Std_ReturnType</IMPLEMENTATION-DATA-TYPE-REF>
-                    </SW-DATA-DEF-PROPS-CONDITIONAL>
-                  </SW-DATA-DEF-PROPS-VARIANTS>
-                </SW-DATA-DEF-PROPS>
-              </RETURN-TYPE>
-              <ARGUMENTS>
-                <SW-SERVICE-ARG>
-                  <SHORT-NAME>Mode</SHORT-NAME>
-                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
-                  <SW-DATA-DEF-PROPS>
-                    <SW-DATA-DEF-PROPS-VARIANTS>
-                      <SW-DATA-DEF-PROPS-CONDITIONAL>
-                        <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Spi/ImplementationDataTypes/Spi_AsyncModeType</IMPLEMENTATION-DATA-TYPE-REF>
-                      </SW-DATA-DEF-PROPS-CONDITIONAL>
-                    </SW-DATA-DEF-PROPS-VARIANTS>
-                  </SW-DATA-DEF-PROPS>
-                </SW-SERVICE-ARG>
-              </ARGUMENTS>
-            </BSW-MODULE-ENTRY>
-            <BSW-MODULE-ENTRY>
               <SHORT-NAME>Spi_ControlLoopBack</SHORT-NAME>
               <INTRODUCTION>
                 <NOTE SI="Spi_ControlLoopBack is reentrant for different channel or core" NOTE-TYPE="HINT" />
@@ -740,136 +579,6 @@
                   </SW-DATA-DEF-PROPS>
                 </SW-SERVICE-ARG>
               </ARGUMENTS>
-            </BSW-MODULE-ENTRY>
-            <BSW-MODULE-ENTRY>
-              <SHORT-NAME>Spi_IsrQspiPT2</SHORT-NAME>
-              <INTRODUCTION>
-                <NOTE SI="Spi_IsrQspiPT2 is reentrant for different channel" NOTE-TYPE="HINT" />
-              </INTRODUCTION>
-              <IS-REENTRANT>true</IS-REENTRANT>
-              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
-              <CALL-TYPE>INTERRUPT</CALL-TYPE>
-              <EXECUTION-CONTEXT>INTERRUPT-CAT-1</EXECUTION-CONTEXT>
-              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
-              <ARGUMENTS>
-                <SW-SERVICE-ARG>
-                  <SHORT-NAME>Module</SHORT-NAME>
-                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
-                  <SW-DATA-DEF-PROPS>
-                    <SW-DATA-DEF-PROPS-VARIANTS>
-                      <SW-DATA-DEF-PROPS-CONDITIONAL>
-                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
-                      </SW-DATA-DEF-PROPS-CONDITIONAL>
-                    </SW-DATA-DEF-PROPS-VARIANTS>
-                  </SW-DATA-DEF-PROPS>
-                </SW-SERVICE-ARG>
-              </ARGUMENTS>
-            </BSW-MODULE-ENTRY>
-            <BSW-MODULE-ENTRY>
-              <SHORT-NAME>Spi_IsrQspiError</SHORT-NAME>
-              <INTRODUCTION>
-                <NOTE SI="Spi_IsrQspiError is reentrant for different channel" NOTE-TYPE="HINT" />
-              </INTRODUCTION>
-              <IS-REENTRANT>true</IS-REENTRANT>
-              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
-              <CALL-TYPE>INTERRUPT</CALL-TYPE>
-              <EXECUTION-CONTEXT>INTERRUPT-CAT-1</EXECUTION-CONTEXT>
-              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
-              <ARGUMENTS>
-                <SW-SERVICE-ARG>
-                  <SHORT-NAME>Module</SHORT-NAME>
-                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
-                  <SW-DATA-DEF-PROPS>
-                    <SW-DATA-DEF-PROPS-VARIANTS>
-                      <SW-DATA-DEF-PROPS-CONDITIONAL>
-                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
-                      </SW-DATA-DEF-PROPS-CONDITIONAL>
-                    </SW-DATA-DEF-PROPS-VARIANTS>
-                  </SW-DATA-DEF-PROPS>
-                </SW-SERVICE-ARG>
-              </ARGUMENTS>
-            </BSW-MODULE-ENTRY>
-            <BSW-MODULE-ENTRY>
-              <SHORT-NAME>Spi_QspiDmaCallout</SHORT-NAME>
-              <INTRODUCTION>
-                <NOTE SI="Spi_QspiDmaCallout is reentrant for different channel" NOTE-TYPE="HINT" />
-              </INTRODUCTION>
-              <IS-REENTRANT>true</IS-REENTRANT>
-              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
-              <CALL-TYPE>CALLBACK</CALL-TYPE>
-              <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
-              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
-              <ARGUMENTS>
-                <SW-SERVICE-ARG>
-                  <SHORT-NAME>Channel</SHORT-NAME>
-                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
-                  <SW-DATA-DEF-PROPS>
-                    <SW-DATA-DEF-PROPS-VARIANTS>
-                      <SW-DATA-DEF-PROPS-CONDITIONAL>
-                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
-                      </SW-DATA-DEF-PROPS-CONDITIONAL>
-                    </SW-DATA-DEF-PROPS-VARIANTS>
-                  </SW-DATA-DEF-PROPS>
-                </SW-SERVICE-ARG>
-                <SW-SERVICE-ARG>
-                  <SHORT-NAME>Event</SHORT-NAME>
-                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
-                  <SW-DATA-DEF-PROPS>
-                    <SW-DATA-DEF-PROPS-VARIANTS>
-                      <SW-DATA-DEF-PROPS-CONDITIONAL>
-                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AURIX2G_Dma/ImplementationDataTypes/Dma_EventsType</IMPLEMENTATION-DATA-TYPE-REF>
-                      </SW-DATA-DEF-PROPS-CONDITIONAL>
-                    </SW-DATA-DEF-PROPS-VARIANTS>
-                  </SW-DATA-DEF-PROPS>
-                </SW-SERVICE-ARG>
-              </ARGUMENTS>
-            </BSW-MODULE-ENTRY>
-            <BSW-MODULE-ENTRY>
-              <SHORT-NAME>Spi_QspiDmaErrCallout</SHORT-NAME>
-              <INTRODUCTION>
-                <NOTE SI="Spi_QspiDmaErrCallout is reentrant for different channel" NOTE-TYPE="HINT" />
-              </INTRODUCTION>
-              <IS-REENTRANT>true</IS-REENTRANT>
-              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
-              <CALL-TYPE>CALLBACK</CALL-TYPE>
-              <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
-              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
-              <ARGUMENTS>
-                <SW-SERVICE-ARG>
-                  <SHORT-NAME>Channel</SHORT-NAME>
-                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
-                  <SW-DATA-DEF-PROPS>
-                    <SW-DATA-DEF-PROPS-VARIANTS>
-                      <SW-DATA-DEF-PROPS-CONDITIONAL>
-                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
-                      </SW-DATA-DEF-PROPS-CONDITIONAL>
-                    </SW-DATA-DEF-PROPS-VARIANTS>
-                  </SW-DATA-DEF-PROPS>
-                </SW-SERVICE-ARG>
-                <SW-SERVICE-ARG>
-                  <SHORT-NAME>Event</SHORT-NAME>
-                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
-                  <SW-DATA-DEF-PROPS>
-                    <SW-DATA-DEF-PROPS-VARIANTS>
-                      <SW-DATA-DEF-PROPS-CONDITIONAL>
-                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AURIX2G_Dma/ImplementationDataTypes/Dma_EventsType</IMPLEMENTATION-DATA-TYPE-REF>
-                      </SW-DATA-DEF-PROPS-CONDITIONAL>
-                    </SW-DATA-DEF-PROPS-VARIANTS>
-                  </SW-DATA-DEF-PROPS>
-                </SW-SERVICE-ARG>
-              </ARGUMENTS>
-            </BSW-MODULE-ENTRY>
-            <BSW-MODULE-ENTRY>
-              <SHORT-NAME>Spi_MainFunction_Handling</SHORT-NAME>
-              <INTRODUCTION>
-                <NOTE SI="Spi_MainFunction_Handling is reentrant for different channel or core" NOTE-TYPE="HINT" />
-              </INTRODUCTION>
-              <SERVICE-ID>16</SERVICE-ID>
-              <IS-REENTRANT>true</IS-REENTRANT>
-              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
-              <CALL-TYPE>SCHEDULED</CALL-TYPE>
-              <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
-              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
             </BSW-MODULE-ENTRY>
           </ELEMENTS>
         </AR-PACKAGE>
@@ -1006,21 +715,6 @@
           <SHORT-NAME>ImplementationDataTypes</SHORT-NAME>
           <CATEGORY>STANDARD</CATEGORY>
           <ELEMENTS>
-            <IMPLEMENTATION-DATA-TYPE>
-              <SHORT-NAME>Spi_AsyncModeType</SHORT-NAME>
-              <CATEGORY>TYPE_REFERENCE</CATEGORY>
-              <SW-DATA-DEF-PROPS>
-                <SW-DATA-DEF-PROPS-VARIANTS>
-                  <SW-DATA-DEF-PROPS-CONDITIONAL>
-                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR_Spi/CompuMethods/Spi_AsyncModeType</COMPU-METHOD-REF>
-                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/sint32</IMPLEMENTATION-DATA-TYPE-REF>
-                    <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
-                    <ADDITIONAL-NATIVE-TYPE-QUALIFIER>enum</ADDITIONAL-NATIVE-TYPE-QUALIFIER>
-                  </SW-DATA-DEF-PROPS-CONDITIONAL>
-                </SW-DATA-DEF-PROPS-VARIANTS>
-              </SW-DATA-DEF-PROPS>
-              <TYPE-EMITTER>BSW</TYPE-EMITTER>
-            </IMPLEMENTATION-DATA-TYPE>
             <IMPLEMENTATION-DATA-TYPE>
               <SHORT-NAME>Spi_JobEndNotification</SHORT-NAME>
               <CATEGORY>FUNCTION_REFERENCE</CATEGORY>
@@ -1595,17 +1289,6 @@
                   </SW-DATA-DEF-PROPS>
                 </IMPLEMENTATION-DATA-TYPE-ELEMENT>
                 <IMPLEMENTATION-DATA-TYPE-ELEMENT>
-                  <SHORT-NAME>JobNotification</SHORT-NAME>
-                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
-                  <SW-DATA-DEF-PROPS>
-                    <SW-DATA-DEF-PROPS-VARIANTS>
-                      <SW-DATA-DEF-PROPS-CONDITIONAL>
-                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Spi/ImplementationDataTypes/Spi_JobEndNotification</IMPLEMENTATION-DATA-TYPE-REF>
-                      </SW-DATA-DEF-PROPS-CONDITIONAL>
-                    </SW-DATA-DEF-PROPS-VARIANTS>
-                  </SW-DATA-DEF-PROPS>
-                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
-                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
                   <SHORT-NAME>BaudRateAndClockParam</SHORT-NAME>
                   <CATEGORY>TYPE_REFERENCE</CATEGORY>
                   <SW-DATA-DEF-PROPS>
@@ -1743,39 +1426,6 @@
                   </SW-DATA-DEF-PROPS>
                 </IMPLEMENTATION-DATA-TYPE-ELEMENT>
                 <IMPLEMENTATION-DATA-TYPE-ELEMENT>
-                  <SHORT-NAME>DMARxChannel</SHORT-NAME>
-                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
-                  <SW-DATA-DEF-PROPS>
-                    <SW-DATA-DEF-PROPS-VARIANTS>
-                      <SW-DATA-DEF-PROPS-CONDITIONAL>
-                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
-                      </SW-DATA-DEF-PROPS-CONDITIONAL>
-                    </SW-DATA-DEF-PROPS-VARIANTS>
-                  </SW-DATA-DEF-PROPS>
-                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
-                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
-                  <SHORT-NAME>DMATxChannel</SHORT-NAME>
-                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
-                  <SW-DATA-DEF-PROPS>
-                    <SW-DATA-DEF-PROPS-VARIANTS>
-                      <SW-DATA-DEF-PROPS-CONDITIONAL>
-                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
-                      </SW-DATA-DEF-PROPS-CONDITIONAL>
-                    </SW-DATA-DEF-PROPS-VARIANTS>
-                  </SW-DATA-DEF-PROPS>
-                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
-                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
-                  <SHORT-NAME>DMATCSCount</SHORT-NAME>
-                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
-                  <SW-DATA-DEF-PROPS>
-                    <SW-DATA-DEF-PROPS-VARIANTS>
-                      <SW-DATA-DEF-PROPS-CONDITIONAL>
-                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
-                      </SW-DATA-DEF-PROPS-CONDITIONAL>
-                    </SW-DATA-DEF-PROPS-VARIANTS>
-                  </SW-DATA-DEF-PROPS>
-                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
-                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
                   <SHORT-NAME>ClockSetting</SHORT-NAME>
                   <CATEGORY>TYPE_REFERENCE</CATEGORY>
                   <SW-DATA-DEF-PROPS>
@@ -1849,17 +1499,6 @@
                   </SW-DATA-DEF-PROPS>
                 </IMPLEMENTATION-DATA-TYPE-ELEMENT>
                 <IMPLEMENTATION-DATA-TYPE-ELEMENT>
-                  <SHORT-NAME>SeqNotification</SHORT-NAME>
-                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
-                  <SW-DATA-DEF-PROPS>
-                    <SW-DATA-DEF-PROPS-VARIANTS>
-                      <SW-DATA-DEF-PROPS-CONDITIONAL>
-                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Spi/ImplementationDataTypes/Spi_SeqEndNotification</IMPLEMENTATION-DATA-TYPE-REF>
-                      </SW-DATA-DEF-PROPS-CONDITIONAL>
-                    </SW-DATA-DEF-PROPS-VARIANTS>
-                  </SW-DATA-DEF-PROPS>
-                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
-                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
                   <SHORT-NAME>JobLinkPtrPhysical</SHORT-NAME>
                   <CATEGORY>DATA_REFERENCE</CATEGORY>
                   <SW-DATA-DEF-PROPS>
@@ -1880,43 +1519,12 @@
                   </SW-DATA-DEF-PROPS>
                 </IMPLEMENTATION-DATA-TYPE-ELEMENT>
                 <IMPLEMENTATION-DATA-TYPE-ELEMENT>
-                  <SHORT-NAME>SeqSharePtr</SHORT-NAME>
-                  <CATEGORY>DATA_REFERENCE</CATEGORY>
-                  <SW-DATA-DEF-PROPS>
-                    <SW-DATA-DEF-PROPS-VARIANTS>
-                      <SW-DATA-DEF-PROPS-CONDITIONAL>
-                        <SW-POINTER-TARGET-PROPS>
-                          <TARGET-CATEGORY>TYPE_REFERENCE</TARGET-CATEGORY>
-                          <SW-DATA-DEF-PROPS>
-                            <SW-DATA-DEF-PROPS-VARIANTS>
-                              <SW-DATA-DEF-PROPS-CONDITIONAL>
-                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
-                              </SW-DATA-DEF-PROPS-CONDITIONAL>
-                            </SW-DATA-DEF-PROPS-VARIANTS>
-                          </SW-DATA-DEF-PROPS>
-                        </SW-POINTER-TARGET-PROPS>
-                      </SW-DATA-DEF-PROPS-CONDITIONAL>
-                    </SW-DATA-DEF-PROPS-VARIANTS>
-                  </SW-DATA-DEF-PROPS>
-                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
-                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
                   <SHORT-NAME>NoOfJobInSeq</SHORT-NAME>
                   <CATEGORY>TYPE_REFERENCE</CATEGORY>
                   <SW-DATA-DEF-PROPS>
                     <SW-DATA-DEF-PROPS-VARIANTS>
                       <SW-DATA-DEF-PROPS-CONDITIONAL>
                         <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
-                      </SW-DATA-DEF-PROPS-CONDITIONAL>
-                    </SW-DATA-DEF-PROPS-VARIANTS>
-                  </SW-DATA-DEF-PROPS>
-                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
-                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
-                  <SHORT-NAME>SeqInterruptible</SHORT-NAME>
-                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
-                  <SW-DATA-DEF-PROPS>
-                    <SW-DATA-DEF-PROPS-VARIANTS>
-                      <SW-DATA-DEF-PROPS-CONDITIONAL>
-                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
                       </SW-DATA-DEF-PROPS-CONDITIONAL>
                     </SW-DATA-DEF-PROPS-VARIANTS>
                   </SW-DATA-DEF-PROPS>
@@ -1952,28 +1560,6 @@
           <SHORT-NAME>CompuMethods</SHORT-NAME>
           <CATEGORY>STANDARD</CATEGORY>
           <ELEMENTS>
-            <COMPU-METHOD>
-              <SHORT-NAME>Spi_AsyncModeType</SHORT-NAME>
-              <CATEGORY>TEXTTABLE</CATEGORY>
-              <COMPU-INTERNAL-TO-PHYS>
-                <COMPU-SCALES>
-                  <COMPU-SCALE>
-                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
-                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
-                    <COMPU-CONST>
-                      <VT>SPI_POLLING_MODE</VT>
-                    </COMPU-CONST>
-                  </COMPU-SCALE>
-                  <COMPU-SCALE>
-                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
-                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
-                    <COMPU-CONST>
-                      <VT>SPI_INTERRUPT_MODE</VT>
-                    </COMPU-CONST>
-                  </COMPU-SCALE>
-                </COMPU-SCALES>
-              </COMPU-INTERNAL-TO-PHYS>
-            </COMPU-METHOD>
             <COMPU-METHOD>
               <SHORT-NAME>Spi_LoopBackType</SHORT-NAME>
               <CATEGORY>TEXTTABLE</CATEGORY>

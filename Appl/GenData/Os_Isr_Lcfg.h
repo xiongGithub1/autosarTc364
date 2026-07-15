@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Isr_Lcfg.h
- *   Generation Time: 2024-07-14 20:32:32
+ *   Generation Time: 2024-07-15 15:44:50
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -100,34 +100,6 @@ extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_CanIsr_0;
 /*! ISR configuration data: CounterIsr_SystemTimer */
 extern CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Isr_CounterIsr_SystemTimer_HwConfig;
 extern CONST(Os_TimerIsrConfigType, OS_CONST) OsCfg_Isr_CounterIsr_SystemTimer;
-
-/*! ISR configuration data: OsIsr_DMA_ERR */
-extern CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Isr_OsIsr_DMA_ERR_HwConfig;
-extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_OsIsr_DMA_ERR;
-
-/*! ISR configuration data: OsIsr_QSPI1_ERR */
-extern CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Isr_OsIsr_QSPI1_ERR_HwConfig;
-extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_OsIsr_QSPI1_ERR;
-
-/*! ISR configuration data: OsIsr_QSPI1_PT */
-extern CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Isr_OsIsr_QSPI1_PT_HwConfig;
-extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_OsIsr_QSPI1_PT;
-
-/*! ISR configuration data: OsIsr_QSPI2_ERR */
-extern CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Isr_OsIsr_QSPI2_ERR_HwConfig;
-extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_OsIsr_QSPI2_ERR;
-
-/*! ISR configuration data: OsIsr_QSPI2_PT */
-extern CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Isr_OsIsr_QSPI2_PT_HwConfig;
-extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_OsIsr_QSPI2_PT;
-
-/*! ISR configuration data: OsIsr_QSPI3_ERR */
-extern CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Isr_OsIsr_QSPI3_ERR_HwConfig;
-extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_OsIsr_QSPI3_ERR;
-
-/*! ISR configuration data: OsIsr_QSPI3_PT */
-extern CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Isr_OsIsr_QSPI3_PT_HwConfig;
-extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_OsIsr_QSPI3_PT;
 
 # define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */

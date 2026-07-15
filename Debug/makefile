@@ -19,7 +19,6 @@ all :
 -include "Appl\Source\CDD\TLE5012\subdir.mk"
 -include "Appl\Source\CDD\TLE5012\TLE5012\subdir.mk"
 -include "Appl\Source\CDD\TLE9180\subdir.mk"
--include "Appl\Source\TestFiles\subdir.mk"
 -include "BSW364\BswM\Implementation\subdir.mk"
 -include "BSW364\Can\Implementation\subdir.mk"
 -include "BSW364\CanIf\Implementation\subdir.mk"

@@ -1,6 +1,5 @@
 #include "MotorCdd_Adc.h"
 #include "MotorCdd_Foc.h"
-#include "Appl_BringupCfg.h"
 #include "Adc_Cfg.h"
 #include "Os.h"
 #include "Mcu_17_TimerIp.h"
@@ -313,7 +312,6 @@ void MotorCdd_AdcGroup0Notification(void)
    * is starved by Motortask (prio 200, NON) spinning FOC.
    * Latest frame is always kept in RawSnap[ReadyIdx].
    */
-#if (APPL_SPI9180_BRINGUP == 0)
   if (MotorCdd_AdcFastLoopPending == 0U)
   {
     MotorCdd_AdcFastLoopPending = 1U;
@@ -324,21 +322,16 @@ void MotorCdd_AdcGroup0Notification(void)
   {
     MotorCdd_AdcMissedWakeCounter++;
   }
-#endif
 }
 
 void MotorCdd_AdcOnSampleReady(void)
 {
-#if (APPL_SPI9180_BRINGUP == 1)
-  MotorCdd_AdcFastLoopPending = 0U;
-#else
-  /* Runs in MotorTask after RTE OsEvent for AdcSampleReady. */
+  /* Runs in MotorTask after RTE OsEvent for AdcSampleReady. Cache angle only — no SPI. */
   MotorCdd_AdcLatchFrozenRaw();
   MotorCdd_AdcConvertToPhysical();
   MotorCdd_FocFastLoop();
   /* Allow next ISR to wake Motortask; Motortask can then WaitEvent / yield. */
   MotorCdd_AdcFastLoopPending = 0U;
-#endif
 }
 
 void MotorCdd_AdcConvertToPhysical(void)

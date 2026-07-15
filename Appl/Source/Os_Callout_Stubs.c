@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Callout_Stubs.c
- *   Generation Time: 2024-07-06 09:43:48
+ *   Generation Time: 2024-07-15 16:43:16
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -53,6 +53,15 @@
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK OS_Callout_Stubs_Include>
  *********************************************************************************************************************/
 #include "EcuM.h"
+
+/* Watch these in debugger when stuck in ErrorHook / CoreFreeze. */
+volatile StatusType Os_Callout_LastError = E_OK;
+volatile OSServiceIdType Os_Callout_LastErrorService = OSServiceId_GetApplicationID;
+volatile Os_StatusType Os_Callout_LastErrorStatus = OS_STATUS_OK;
+volatile uint32 Os_Callout_LastDetailedError = 0U;
+volatile uint32 Os_ErrorHookCounter = 0U;
+volatile Os_InterruptSourceIdType Os_Callout_UnhandledIrq = 0U;
+volatile Os_ExceptionSourceIdType Os_Callout_UnhandledExc = 0U;
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>
  *********************************************************************************************************************/
@@ -124,15 +133,22 @@ FUNC(void, OS_ERRORHOOK_CODE) ErrorHook(StatusType Error)
  *********************************************************************************************************************/
   Os_ErrorInformationType CurrentError;
   volatile uint8 endless = 1u;
-//  Os_Callout_LastError = Error;
-//  Os_ErrorHookCounter++;
-//  (void)Os_GetDetailedError(&CurrentError);
-//  Os_Callout_LastErrorService = CurrentError.Service;
-//  Os_Callout_LastErrorStatus = CurrentError.Error;
-//  Os_LastDetailedError = CurrentError.DetailedError;
-  while(endless)
+
+  Os_Callout_LastError = Error;
+  Os_ErrorHookCounter++;
+  if (Os_GetDetailedError(&CurrentError) == E_OK)
   {
-    
+    Os_Callout_LastErrorService = CurrentError.Service;
+    Os_Callout_LastError = CurrentError.Error;
+    Os_Callout_LastErrorStatus = CurrentError.DetailedError;
+    Os_Callout_LastDetailedError = (uint32)CurrentError.DetailedError;
+  }
+  (void)Os_GetUnhandledIrq(&Os_Callout_UnhandledIrq);
+  (void)Os_GetUnhandledExc(&Os_Callout_UnhandledExc);
+
+  while (endless != 0u)
+  {
+    /* breakpoint here for OS API / status errors (NOT KernelPanic) */
   }
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>

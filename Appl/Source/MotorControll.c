@@ -53,7 +53,6 @@
 #include "MotorFoc_SpeedLoop.h"
 #include "MotorZeroCal.h"
 #include "MotorFoc_OpenLoop.h"
-#include "Appl_BringupCfg.h"
 
 #include "CDD/TLE9180/Tle9180_Driver.h"
 #include "CDD/MotorFoc/MotorCdd_Adc.h"
@@ -177,22 +176,15 @@ void MotorControll_StopPwm(void)
 
 static void MotorControll_UpdateSensorObservation(void)
 {
-  /* One Sync SPI only: read_angle already derives speed/RPM (no second ASPD xfer). */
-  Tle5012bd_Driver_ReadAngle(&Tle5012bd_Sensor);
+  /* Angle SPI runs in StartApp 1 ms → Tle5012bd_Sensor / angle_cache. Controll: mirror only. */
   MotorControll_SensorElectricalAngleRad = Tle5012bd_Sensor.anglePi;
   MotorControll_SensorMechanicalRpm = Tle5012bd_Sensor.RPM;
-  /* Fast loop uses this cache only — no SPI on the ADC path. */
-  MotorCdd_FocPublishAngleCache(Tle5012bd_Sensor.Angle, Tle5012bd_Sensor.anglePi);
   MotorControll_ForcedElectricalAngleDeg = MotorFoc_OpenLoop_GetForcedAngleDeg();
 }
 
 static void MotorControll_UpdateGateDriverObservation(void)
 {
-  /* Gate-driver SPI poll at 10 ms — not every Motortask Controll cycle. */
-  if ((MotorControll_MainCounter % 10U) == 0U)
-  {
-    (void)Tle9180_Driver_ReadOperationMode();
-  }
+  /* No SPI here (MotorTask). 9180 Sync is Init + MotorCDDMainFunction only. */
   MotorControll_GateDriverState = (uint8)Tle9180_Driver_GetState();
   MotorControll_GateDriverLastInitError = Tle9180_Driver_GetLastInitError();
   MotorControll_GateDriverOpModeRaw = Tle9180_Driver_GetOperationModeRaw();
@@ -286,10 +278,6 @@ uint8 MotorControll_IsOutputEnabled(void)
 
 void MotorControll_MainFunction(void)
 {
-#if (APPL_SPI9180_BRINGUP == 1)
-  /* SPI bring-up (APPL_SPI_BRINGUP_TEST): do not run motor control / 5012 SPI. */
-  return;
-#else
   MotorMode_Type motorMode;
 
   MotorControll_MainCounter++;
@@ -334,7 +322,6 @@ void MotorControll_MainFunction(void)
   MotorCdd_FocSetCmdMirror((uint8)motorMode,
                            MotorControll_IdRefOut,
                            MotorControll_IqRefOut);
-  MotorZeroCal_MainFunction();
 
   if (MotorControll_OpenLoopEnable != 0U)
   {
@@ -376,7 +363,6 @@ void MotorControll_MainFunction(void)
     Tle9180_Driver_EnableOutput(TRUE);
     MotorControll_OutputEnabled = 1U;
   }
-#endif
 }
 
 #define MotorControll_STOP_SEC_CODE

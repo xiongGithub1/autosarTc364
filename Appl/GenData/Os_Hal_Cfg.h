@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Cfg.h
- *   Generation Time: 2024-07-14 20:43:32
+ *   Generation Time: 2024-07-15 15:44:50
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -70,20 +70,6 @@
 # define OS_ISR_CANISR_0_LEVEL     (60)
 # define OS_ISR_COUNTERISR_SYSTEMTIMER_CORE      (0)
 # define OS_ISR_COUNTERISR_SYSTEMTIMER_LEVEL     (80)
-# define OS_ISR_OSISR_DMA_ERR_CORE      (0)
-# define OS_ISR_OSISR_DMA_ERR_LEVEL     (90)
-# define OS_ISR_OSISR_QSPI1_ERR_CORE      (0)
-# define OS_ISR_OSISR_QSPI1_ERR_LEVEL     (22)
-# define OS_ISR_OSISR_QSPI1_PT_CORE      (0)
-# define OS_ISR_OSISR_QSPI1_PT_LEVEL     (19)
-# define OS_ISR_OSISR_QSPI2_ERR_CORE      (0)
-# define OS_ISR_OSISR_QSPI2_ERR_LEVEL     (23)
-# define OS_ISR_OSISR_QSPI2_PT_CORE      (0)
-# define OS_ISR_OSISR_QSPI2_PT_LEVEL     (20)
-# define OS_ISR_OSISR_QSPI3_ERR_CORE      (0)
-# define OS_ISR_OSISR_QSPI3_ERR_LEVEL     (24)
-# define OS_ISR_OSISR_QSPI3_PT_CORE      (0)
-# define OS_ISR_OSISR_QSPI3_PT_LEVEL     (21)
 
 /* Hardware counter timing macros */
 

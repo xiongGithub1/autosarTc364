@@ -15,7 +15,7 @@
 **                                                                            **
 **  VERSION   : 16.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-07-15, 14:43:55  !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2024-07-15, 16:43:12  !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  GENERATOR : Build b191017-0938       !!!IGNORE-LINE!!!                  **
 **                                                                            **
@@ -73,10 +73,7 @@
 1 - Only Asynchronous Transmission(Interrupt mode only)
 2 - Both Sync and Async(Both Interrupt and Polling Mode) Transmission */
 
-#define SPI_LEVEL_DELIVERED                   (2U)
-/* Main function period - Used by application to poll the SPI Hw module */
-
-#define SPI_MAIN_FUNCTION_PERIOD              (0.005U)
+#define SPI_LEVEL_DELIVERED                   (0U)
 /* Kind of Channele buffers allowed
 0 - Only Internal buffers allowed
 1 - Only External buffers allowed
@@ -97,7 +94,7 @@
 /* Specifies if Sequences can be interrupted during
 transmission. For Level = 0, its value is STD_OFF by default */
 
-#define SPI_INTERRUPTIBLE_SEQ_ALLOWED         (STD_ON)
+#define SPI_INTERRUPTIBLE_SEQ_ALLOWED         (STD_OFF)
 /* Configuration Options:
 SPI Sequence Interruptible Options */
 #define SPI_SEQ_INT_FALSE                     ((uint8)0U)
@@ -118,19 +115,19 @@ sequences are allowed. For Level = 1, its value is STD_OFF by default */
 /* Index for QSPI1module */
 #define SPI_QSPI1_INDEX                       (1U)
 /* Sync/Async */
-#define SPI_QSPI1_HWTYPE                      (SPI_ASYNC_BUS)
+#define SPI_QSPI1_HWTYPE                      (SPI_SYNC_BUS)
 /* Is QSPI2 Used */
 #define SPI_HW_QSPI2_USED                     (STD_ON)
 /* Index for QSPI2 module */
 #define SPI_QSPI2_INDEX                       (2U)
 /* Sync/Async */
-#define SPI_QSPI2_HWTYPE                      (SPI_ASYNC_BUS)
+#define SPI_QSPI2_HWTYPE                      (SPI_SYNC_BUS)
 /* Is QSPI3 Used */
 #define SPI_HW_QSPI3_USED                     (STD_ON)
 /* Index for QSPI3 module */
 #define SPI_QSPI3_INDEX                       (3U)
 /* Sync/Async */
-#define SPI_QSPI3_HWTYPE                      (SPI_ASYNC_BUS)
+#define SPI_QSPI3_HWTYPE                      (SPI_SYNC_BUS)
 /* Timeout value to wait for trail delay to be completed.
 Should be atleast greater than the Trail delay
 (also to avoid possible infinite loops) */
@@ -198,12 +195,9 @@ Module enters sleep mode upon sleep request         */
 
 #define SPI_NUM_EB_CHANNELS_CORE0            (3U)
 
-/* DMA Transaction control set per channel for QSPI1 */
-#define SPI_DMA_MAX_TCS_NUM_QSPI1             (1U)
-/* DMA Transaction control set per channel for QSPI2 */
-#define SPI_DMA_MAX_TCS_NUM_QSPI2             (1U)
-/* DMA Transaction control set per channel for QSPI3 */
-#define SPI_DMA_MAX_TCS_NUM_QSPI3             (1U)
+#define SPI_DMA_MAX_TCS_NUM_QSPI1 (0U)
+#define SPI_DMA_MAX_TCS_NUM_QSPI2 (0U)
+#define SPI_DMA_MAX_TCS_NUM_QSPI3 (0U)
 /* Indicates no CS to be done */
 #define SPI_CS_VIA_HW_OR_NONE                 (0xFFFFU)
 #define SPI_PARITY_EVEN                       (0U)

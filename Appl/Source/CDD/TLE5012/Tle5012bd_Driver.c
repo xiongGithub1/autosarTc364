@@ -18,11 +18,10 @@ void Tle5012bd_Driver_Init(void)
   Tle5012bd_Sensor.Direction = FALSE;
   Tle5012bd_Sensor.ANG_BASE = 0U;
   Tle5012bd_Sensor.Temperature = 0.0F;
-  Tle5012bd_Sensor.DisTimer = 0.0001F; /* 100 us default sample period */
+  Tle5012bd_Sensor.DisTimer = 0.001F; /* 1 ms angle update period (StartApp_Cyclic1ms) */
   Tle5012bd_Sensor.polePairs = 4U;
 
-  /* Do not SPI here: MotorCdd_Init must bring up TLE9180 first.
-   * First angle read happens in MotorControll cyclic path. */
+  /* Do not SPI here: 9180 Init first. Angle Sync is StartApp_Cyclic1ms → angle_cache. */
   Tle5012bd_State = TLE5012BD_STATE_READY;
 }
 
@@ -49,7 +48,7 @@ void Tle5012bd_Driver_ReadAngleSpeed(Tle5012 *sensor)
 
 float32 Tle5012bd_Driver_GetElectricalAngleRad(void)
 {
-  tle5012b_read_angle(&Tle5012bd_Sensor);
+  /* Caller must use StartApp-updated sensor / MotorCdd angle_cache — no SPI here. */
   return Tle5012bd_Sensor.anglePi;
 }
 
