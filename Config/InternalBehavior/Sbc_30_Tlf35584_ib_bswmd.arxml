@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="ff55d029-386d-43a2-b3c2-dfef4c7a5e36">
+      <SHORT-NAME>MICROSAR</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="a1459db2-f33d-4a8b-b1f6-c5904ffdb790">
+          <SHORT-NAME>Sbc_ib_bswmd</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="633b34ce-7ca8-4e0b-9b68-dec1874a1682">
+              <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+              <ELEMENTS>
+                <BSW-MODULE-DESCRIPTION UUID="701c1aa6-7922-473e-a1db-89aed8fe6a96">
+                  <SHORT-NAME>Sbc</SHORT-NAME>
+                  <INTERNAL-BEHAVIORS>
+                    <BSW-INTERNAL-BEHAVIOR UUID="21f299e7-9656-44a6-a06c-cad4fbbcaf5e">
+                      <SHORT-NAME>Sbc_Behavior</SHORT-NAME>
+                      <EXCLUSIVE-AREAS>
+                        <EXCLUSIVE-AREA UUID="2e1771a2-bd8b-4d93-bb00-9d634f272f56">
+                          <SHORT-NAME>SBC_EXCLUSIVE_AREA_0</SHORT-NAME>
+                        </EXCLUSIVE-AREA>
+                        <EXCLUSIVE-AREA UUID="8554f757-e57a-4140-85b6-0734bbfd833c">
+                          <SHORT-NAME>SBC_EXCLUSIVE_AREA_1</SHORT-NAME>
+                        </EXCLUSIVE-AREA>
+                        <EXCLUSIVE-AREA UUID="938f993f-b885-4bac-90cb-00bf183b2141">
+                          <SHORT-NAME>SBC_EXCLUSIVE_AREA_2</SHORT-NAME>
+                        </EXCLUSIVE-AREA>
+                        <EXCLUSIVE-AREA UUID="2be0f6d7-83ce-4e5b-be07-fb69cfd7ce49">
+                          <SHORT-NAME>SBC_EXCLUSIVE_AREA_3</SHORT-NAME>
+                        </EXCLUSIVE-AREA>
+                        <EXCLUSIVE-AREA UUID="76d404ef-996c-47fc-8c1c-8eb6234aa018">
+                          <SHORT-NAME>SBC_EXCLUSIVE_AREA_4</SHORT-NAME>
+                        </EXCLUSIVE-AREA>
+                      </EXCLUSIVE-AREAS>
+                    </BSW-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </BSW-MODULE-DESCRIPTION>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

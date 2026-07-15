@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Can_Lcfg.c
- *   Generation Time: 2024-07-02 17:40:32
+ *   Generation Time: 2024-07-09 14:04:09
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -357,6 +357,26 @@ CONST(Can_InitObjectStartIndexType, CAN_CONST) Can_InitObjectStartIndex[2] = {  
   /*     1 */                    1u   /* [stop index] */
 };
 #define CAN_STOP_SEC_CONST_8BIT
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  Can_IsrOsId
+**********************************************************************************************************************/
+/** 
+  \var    Can_IsrOsId
+  \brief  OS Symbolic Name Value for Service Request Nodes.
+*/ 
+#define CAN_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+CONST(Can_OsIsrType, CAN_CONST) Can_IsrOsId[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+  /* Index     IsrOsId       Comment */
+  /*     0 */ CanIsr_0    /* [CT_CAN00_9df8a959 [Node | Channel] 0] */
+};
+#define CAN_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
@@ -712,7 +732,6 @@ VAR(Can_ActiveSendObjectType, CAN_VAR_NOINIT) Can_ActiveSendObject[1];  /* PRQA 
   IntEnable                    CAN Interrupt Enable state for each controller
   NonFdObjectsPendingFlag      CAN Tx Objects pending with CAN-FD format
   TXBCR                        CAN Tx Buffer Cancellation Request for each controller
-  TXBCRWait                    CAN Tx Buffer Cancellation Request Confirmation for each controller
   TXBRP                        CAN Tx Buffer request Pending for each controller
   BusOffNotification           CAN state for each controller: busoff occur
   BusOffTransitionRequest      CAN state request for each controller: ContinueBusOffRecovery=0x00, FinishBusOffRecovery=0x01

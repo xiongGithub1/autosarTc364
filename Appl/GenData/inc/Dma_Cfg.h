@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 9.0.0                                                         **
 **                                                                            **
-**  DATE, TIME: 2024-07-06, 16:21:29            !!!IGNORE-LINE!!!             **
+**  DATE, TIME: 2024-07-14, 21:03:43            !!!IGNORE-LINE!!!             **
 **                                                                            **
 **  GENERATOR : Build b191017-0938              !!!IGNORE-LINE!!!             **
 **                                                                            **
@@ -65,7 +65,7 @@ reporting.
 - if STD_ON, DET is Enabled
 - if STD_OFF,DET is Disabled
 */
-#define DMA_DEV_ERROR_DETECT                (STD_OFF)
+#define DMA_DEV_ERROR_DETECT                (STD_ON)
 
 
 /* Configuration: DMA_CHDEINIT_API
@@ -73,7 +73,7 @@ Deinit API configuration
 - if STD_ON, Dma_ChDeInit API is available
 - if STD_OFF, Dma_ChDeInit API is not available
 */
-#define DMA_CHDEINIT_API                    (STD_OFF)
+#define DMA_CHDEINIT_API                    (STD_ON)
 
 /* Configuration: DMA_SUSPEND_API
 Suspend and freeze API configuration
@@ -81,7 +81,7 @@ Suspend and freeze API configuration
 - if STD_OFF, Dma_ChTransferFreeze and Dma_ChTransferResume APIs are not
 available
 */
-#define DMA_SUSPEND_API                     (STD_OFF)
+#define DMA_SUSPEND_API                     (STD_ON)
 
 /* Configuration: DMA_TRIGGER_API
 Channel hardware trigger API configuration
@@ -90,7 +90,7 @@ are available
 - if STD_OFF, Dma_ChEnableHardwareTrigger and Dma_ChDisableHardwareTrigger APIs
 are not available
 */
-#define DMA_TRIGGER_API                     (STD_OFF)
+#define DMA_TRIGGER_API                     (STD_ON)
 
 /* Configuration: DMA_DATA_PENDING_API
 Get remaining data API configuration
@@ -133,7 +133,7 @@ of linked list
 #define DMA_DOUBLE_BUFFER_ENABLE            (STD_OFF)
 
 /* No of DMA channels used in the configuration */
-#define DMA_NUM_OF_CHANNELS                 (1U)
+#define DMA_NUM_OF_CHANNELS                 (6U)
 
 
 /* ******************** USER/SUPERVISOR MODE CONFIGURATIONS ***************** */
@@ -175,7 +175,7 @@ Preprocessor switch for enabling the multicore error checks and error reporting.
 
 
 /* Total number of DMA channels in core 0 */
-#define DMA_ALLOCATED_CHANNELS_CORE0 (1U)
+#define DMA_ALLOCATED_CHANNELS_CORE0 (6U)
 /* Total number of DMA channels in core 1 */
 #define DMA_ALLOCATED_CHANNELS_CORE1 (0U)
 
@@ -205,7 +205,7 @@ Deinit API configuration
 - if STD_ON,  DeInit API is available
 - if STD_OFF, DeInit API is not available
 */
-#define DMA_DEINIT_API                   (STD_OFF)
+#define DMA_DEINIT_API                   (STD_ON)
 
 /* Configuration: DMA_SETPATTERN_API
 Set_Pattern API configuration

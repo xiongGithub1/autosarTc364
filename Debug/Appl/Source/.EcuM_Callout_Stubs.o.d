@@ -154,6 +154,54 @@ Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\B
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
 Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_OsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_OsInt.h" :
 Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Lcfg.h"
@@ -458,14 +506,36 @@ Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\B
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Can\Implementation\Can.h" :
 Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Can_Cfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Can_Cfg.h" :
-Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Can_GeneralTypes.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Can_GeneralTypes.h" :
 Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\Can_GeneralTypes.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\Can_GeneralTypes.h" :
 Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Can_DrvGeneralTypes.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Can_DrvGeneralTypes.h" :
 Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\CanIf\Implementation\CanIf_GeneralTypes.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\CanIf\Implementation\CanIf_GeneralTypes.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
@@ -2400,6 +2470,72 @@ Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\A
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\inc\Spi_Cfg.h" :
 Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\MCAL364\McalLib\ssc\inc\McalLib.h"
 "E:\workFiles\TC367\TC367\workspace\last364\MCAL364\McalLib\ssc\inc\McalLib.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\MCAL364\Dma\ssc\inc\Dma.h"
+"E:\workFiles\TC367\TC367\workspace\last364\MCAL364\Dma\ssc\inc\Dma.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\MCAL364\McalLib\ssc\inc\McalLib.h"
+"E:\workFiles\TC367\TC367\workspace\last364\MCAL364\McalLib\ssc\inc\McalLib.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\inc\Dma_Cfg.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\inc\Dma_Cfg.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dma_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dma_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dma_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dma_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\inc\Dma_PBcfg.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\inc\Dma_PBcfg.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\MCAL364\Dma\ssc\inc\Dma.h"
+"E:\workFiles\TC367\TC367\workspace\last364\MCAL364\Dma\ssc\inc\Dma.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dma_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dma_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dma_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dma_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Spi_MemMap.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Spi_MemMap.h" :
 Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
@@ -2652,6 +2788,8 @@ Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\B
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
 Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\Appl_SpiDmaHwInit.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\Appl_SpiDmaHwInit.h" :
 Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\EcuM_MemMap.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\EcuM_MemMap.h" :
 Appl\Source\EcuM_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\EcuM_MemMap.h"

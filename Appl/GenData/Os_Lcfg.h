@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Lcfg.h
- *   Generation Time: 2024-07-06 14:54:17
+ *   Generation Time: 2024-07-14 20:32:32
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -148,6 +148,18 @@ extern FUNC(void, OS_DEFAULT_INIT_TASK_TRUSTED_CODE) Os_Task_Default_Init_Task_T
 # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
+# define OS_START_SEC_MotorTask_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/**********************************************************************************************************************
+ *  MotorTask()
+ *********************************************************************************************************************/
+extern FUNC(void, OS_MOTORTASK_CODE) Os_Task_MotorTask(void);
+
+# define OS_STOP_SEC_MotorTask_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
 # define OS_START_SEC_ADC0SR0_ISR_CODE
 # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
@@ -157,30 +169,6 @@ extern FUNC(void, OS_DEFAULT_INIT_TASK_TRUSTED_CODE) Os_Task_Default_Init_Task_T
 extern FUNC(void, OS_ADC0SR0_ISR_CODE) Os_Isr_ADC0SR0_ISR(void);
 
 # define OS_STOP_SEC_ADC0SR0_ISR_CODE
-# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-
-
-# define OS_START_SEC_ADC2SR0_ISR_CODE
-# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-
-/**********************************************************************************************************************
- *  ADC2SR0_ISR()
- *********************************************************************************************************************/
-extern FUNC(void, OS_ADC2SR0_ISR_CODE) Os_Isr_ADC2SR0_ISR(void);
-
-# define OS_STOP_SEC_ADC2SR0_ISR_CODE
-# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-
-
-# define OS_START_SEC_ADC3SR0_ISR_CODE
-# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-
-/**********************************************************************************************************************
- *  ADC3SR0_ISR()
- *********************************************************************************************************************/
-extern FUNC(void, OS_ADC3SR0_ISR_CODE) Os_Isr_ADC3SR0_ISR(void);
-
-# define OS_STOP_SEC_ADC3SR0_ISR_CODE
 # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
@@ -205,6 +193,90 @@ extern FUNC(void, OS_ADC8SR0_ISR_CODE) Os_Isr_ADC8SR0_ISR(void);
 extern FUNC(void, OS_CANISR_0_CODE) Os_Isr_CanIsr_0(void);
 
 # define OS_STOP_SEC_CanIsr_0_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_DMAERR0SR_ISR_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/**********************************************************************************************************************
+ *  DMAERR0SR_ISR()
+ *********************************************************************************************************************/
+extern FUNC(void, OS_DMAERR0SR_ISR_CODE) Os_Isr_DMAERR0SR_ISR(void);
+
+# define OS_STOP_SEC_DMAERR0SR_ISR_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_QSPI1ERR_ISR_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/**********************************************************************************************************************
+ *  QSPI1ERR_ISR()
+ *********************************************************************************************************************/
+extern FUNC(void, OS_QSPI1ERR_ISR_CODE) Os_Isr_QSPI1ERR_ISR(void);
+
+# define OS_STOP_SEC_QSPI1ERR_ISR_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_QSPI1PT_ISR_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/**********************************************************************************************************************
+ *  QSPI1PT_ISR()
+ *********************************************************************************************************************/
+extern FUNC(void, OS_QSPI1PT_ISR_CODE) Os_Isr_QSPI1PT_ISR(void);
+
+# define OS_STOP_SEC_QSPI1PT_ISR_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_QSPI2ERR_ISR_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/**********************************************************************************************************************
+ *  QSPI2ERR_ISR()
+ *********************************************************************************************************************/
+extern FUNC(void, OS_QSPI2ERR_ISR_CODE) Os_Isr_QSPI2ERR_ISR(void);
+
+# define OS_STOP_SEC_QSPI2ERR_ISR_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_QSPI2PT_ISR_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/**********************************************************************************************************************
+ *  QSPI2PT_ISR()
+ *********************************************************************************************************************/
+extern FUNC(void, OS_QSPI2PT_ISR_CODE) Os_Isr_QSPI2PT_ISR(void);
+
+# define OS_STOP_SEC_QSPI2PT_ISR_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_QSPI3ERR_ISR_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/**********************************************************************************************************************
+ *  QSPI3ERR_ISR()
+ *********************************************************************************************************************/
+extern FUNC(void, OS_QSPI3ERR_ISR_CODE) Os_Isr_QSPI3ERR_ISR(void);
+
+# define OS_STOP_SEC_QSPI3ERR_ISR_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_QSPI3PT_ISR_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/**********************************************************************************************************************
+ *  QSPI3PT_ISR()
+ *********************************************************************************************************************/
+extern FUNC(void, OS_QSPI3PT_ISR_CODE) Os_Isr_QSPI3PT_ISR(void);
+
+# define OS_STOP_SEC_QSPI3PT_ISR_CODE
 # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 

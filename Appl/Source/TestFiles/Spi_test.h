@@ -4,27 +4,25 @@
 #include "Spi.h"
 #include "Std_Types.h"
 
-extern uint32 SpiTest_9183SpiTxWord;
-extern uint32 SpiTest_9183SpiRxWord;
-extern uint32 SpiTest_9183SpiPrevRxWord;
-extern boolean SpiTest_9183HwInited;
-extern Std_ReturnType SpiTest_9183SpiSetupResult;
-extern Std_ReturnType SpiTest_9183SpiTransmitResult;
-extern Std_ReturnType SpiTest_9183SpiInitCheckResult;
-extern Spi_StatusType SpiTest_9183SpiStatusBefore;
-extern Spi_StatusType SpiTest_9183SpiStatusAfter;
-extern Spi_JobResultType SpiTest_9183SpiJobResultBefore;
-extern Spi_JobResultType SpiTest_9183SpiJobResultAfter;
-extern Spi_SeqResultType SpiTest_9183SpiSeqResult;
-extern Spi_SeqResultType SpiTest_9183SpiSeqResultBefore;
-extern uint32 SpiTest_9183SpiTestCounter;
-extern uint32 SpiTest_9183SpiOkCounter;
-extern uint32 SpiTest_9183SpiFailCounter;
-extern boolean SpiTest_9183SpiRxChanged;
-extern boolean SpiTest_9183SpiTestEnabled;
-extern boolean SpiTest_9183SpiLoopbackMatch;
-extern boolean SpiTest_9183SpiLoopbackInternal;
-extern boolean SpiTest_9183MrstPinLevel;
+extern uint32 SpiTest_TxWord;
+extern uint32 SpiTest_RxWord;
+extern uint32 SpiTest_PrevRxWord;
+extern Std_ReturnType SpiTest_SetupResult;
+extern Std_ReturnType SpiTest_TransmitResult;
+extern Spi_StatusType SpiTest_StatusBefore;
+extern Spi_StatusType SpiTest_StatusAfter;
+extern Spi_JobResultType SpiTest_JobResultBefore;
+extern Spi_JobResultType SpiTest_JobResultAfter;
+extern Spi_SeqResultType SpiTest_SeqResult;
+extern Spi_SeqResultType SpiTest_SeqResultBefore;
+extern uint32 SpiTest_TestCounter;
+extern uint32 SpiTest_OkCounter;
+extern uint32 SpiTest_FailCounter;
+extern boolean SpiTest_RxChanged;
+extern boolean SpiTest_Enabled;
+extern boolean SpiTest_LoopbackMatch;
+extern boolean SpiTest_LoopbackInternal;
+extern boolean SpiTest_MrstPinLevel;
 extern uint8 SpiTest_Qspi3BitCount;
 extern uint32 SpiTest_Qspi3GlobalconLb;
 extern uint32 SpiTest_Qspi3GlobalconLbBeforeTx;

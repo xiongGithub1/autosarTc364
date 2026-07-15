@@ -877,6 +877,28 @@
             "Source",
             "..",
             "../Components",
+            "../Components/Sbc_30_Tlf35584"
+         ],
+         "SourceFile" : "Source/Sbc_30_Tlf35584.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_SchM_Sbc_30_Tlf35584"
+         ],
+         "SourceFile" : "Source/TSC_SchM_Sbc_30_Tlf35584.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
+            "Source",
+            "..",
+            "../Components",
             "../Components/Spi"
          ],
          "SourceFile" : "Source/Spi.c"
@@ -1009,9 +1031,9 @@
             "Source",
             "..",
             "../Components",
-            "../Components/tle5012BD_CDD"
+            "../Components/MotorCdd"
          ],
-         "SourceFile" : "Source/tle5012BD_CDD.c"
+         "SourceFile" : "Source/MotorCdd.c"
       },
       {
          "IncludeDirectoryList" : [
@@ -1020,31 +1042,9 @@
             "Source",
             "..",
             "../Components",
-            "../Components/TSC_tle5012BD_CDD"
+            "../Components/TSC_MotorCdd"
          ],
-         "SourceFile" : "Source/TSC_tle5012BD_CDD.c"
-      },
-      {
-         "IncludeDirectoryList" : [
-            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
-            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
-            "Source",
-            "..",
-            "../Components",
-            "../Components/tle9183_CDD"
-         ],
-         "SourceFile" : "Source/tle9183_CDD.c"
-      },
-      {
-         "IncludeDirectoryList" : [
-            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
-            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
-            "Source",
-            "..",
-            "../Components",
-            "../Components/TSC_tle9183_CDD"
-         ],
-         "SourceFile" : "Source/TSC_tle9183_CDD.c"
+         "SourceFile" : "Source/TSC_MotorCdd.c"
       }
    ],
    "TaskList" : [
@@ -1083,6 +1083,12 @@
          "Preemptive" : "1",
          "Priority" : "4294967295",
          "TaskName" : "IdleTask_OsCore0"
+      },
+      {
+         "OsApplication" : "",
+         "Preemptive" : "0",
+         "Priority" : "200",
+         "TaskName" : "MotorTask"
       }
    ],
    "TemplateDataBaseDirectory" : "E:\\workFiles\\TC367\\TC367\\CBD2200508_D00\\CBD2200508_D00\\Components\\Rte\\Generator"

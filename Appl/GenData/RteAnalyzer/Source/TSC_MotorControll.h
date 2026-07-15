@@ -22,6 +22,19 @@
  *********************************************************************************************************************/
 
 
+/** Sender receiver - explicit read services */
+Std_ReturnType TSC_MotorControll_Rte_Read_Pp_MotorDcBusVoltage_Vbus(float32 *data);
+Std_ReturnType TSC_MotorControll_Rte_Read_Pp_MotorElectricalAngle_ElectricAngle(float32 *data);
+Std_ReturnType TSC_MotorControll_Rte_Read_Pp_MotorFaultStatus_tle9180_Ov_Fault(boolean *data);
+
+/** Sender receiver - explicit write services */
+Std_ReturnType TSC_MotorControll_Rte_Write_Pp_MotorCtrlCmd_MotorMode(uint8 data);
+Std_ReturnType TSC_MotorControll_Rte_Write_Pp_MotorCurrentRef_Id_Ref(float32 data);
+Std_ReturnType TSC_MotorControll_Rte_Write_Pp_MotorCurrentRef_Iq_Ref(float32 data);
+
+/** Service interfaces */
+Std_ReturnType TSC_MotorControll_Rte_Call_Pp_MotorCdd_EnableInverter_EnableInverter(boolean arg);
+
 
 
 

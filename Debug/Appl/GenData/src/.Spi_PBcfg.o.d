@@ -58,6 +58,72 @@ Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW36
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
 Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\MCAL364\Dma\ssc\inc\Dma.h"
+"E:\workFiles\TC367\TC367\workspace\last364\MCAL364\Dma\ssc\inc\Dma.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\MCAL364\McalLib\ssc\inc\McalLib.h"
+"E:\workFiles\TC367\TC367\workspace\last364\MCAL364\McalLib\ssc\inc\McalLib.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\inc\Dma_Cfg.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\inc\Dma_Cfg.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dma_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dma_MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dma_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dma_MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\inc\Dma_PBcfg.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\inc\Dma_PBcfg.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\MCAL364\Dma\ssc\inc\Dma.h"
+"E:\workFiles\TC367\TC367\workspace\last364\MCAL364\Dma\ssc\inc\Dma.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dma_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dma_MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dma_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dma_MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Spi_MemMap.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Spi_MemMap.h" :
 Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
@@ -88,6 +154,34 @@ Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\inc\Spi_PBcfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\inc\Spi_PBcfg.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Spi_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Spi_MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Spi_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Spi_MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Spi_MemMap.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Spi_MemMap.h" :
 Appl\GenData\src\Spi_PBcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"

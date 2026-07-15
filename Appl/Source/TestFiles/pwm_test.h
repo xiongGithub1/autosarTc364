@@ -4,13 +4,13 @@
 #include "Pwm_17_GtmCcu6.h"
 #include "Std_Types.h"
 
-#define PWM_TEST_CHANNEL_COUNT       (6U)
+#define PWM_TEST_CHANNEL_COUNT       (3U)
 #define PWM_TEST_DUTY_0_PERCENT      (0x0000U)
-#define PWM_TEST_DUTY_10_PERCENT     (0x0CCDU)
-#define PWM_TEST_DUTY_20_PERCENT     (0x199AU)
-#define PWM_TEST_DUTY_30_PERCENT     (0x2666U)
-#define PWM_TEST_DUTY_50_PERCENT     (0x4000U)
-#define PWM_TEST_DUTY_100_PERCENT    (0x8000U)
+#define PWM_TEST_DUTY_10_PERCENT     (0x0333U)
+#define PWM_TEST_DUTY_20_PERCENT     (0x0666U)
+#define PWM_TEST_DUTY_30_PERCENT     (0x0999U)
+#define PWM_TEST_DUTY_50_PERCENT     (0x1000U)
+#define PWM_TEST_DUTY_100_PERCENT    (0x2000U)
 
 extern volatile uint8 PwmTest_Enable;
 extern volatile uint8 PwmTest_Mode;

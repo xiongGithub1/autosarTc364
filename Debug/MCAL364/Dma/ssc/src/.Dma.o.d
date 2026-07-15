@@ -132,6 +132,18 @@ MCAL364\Dma\ssc\src\Dma.o :	"E:\workFiles\TC367\TC367\workspace\last364\MCAL364\
 "E:\workFiles\TC367\TC367\workspace\last364\MCAL364\TC36xA\_Reg\IfxSrc_regdef.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"E:\workFiles\TC367\TC367\workspace\last364\MCAL364\TC36xA\_Reg\IfxSrc_bf.h"
 "E:\workFiles\TC367\TC367\workspace\last364\MCAL364\TC36xA\_Reg\IfxSrc_bf.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Det\Implementation\Det.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Det\Implementation\Det.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Det_Cfg.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Det_Cfg.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Det_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Det_MemMap.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Det_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Det_MemMap.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Det_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Det_MemMap.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Det_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Det_MemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\SchM_Dma.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\SchM_Dma.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\SchM_Dma_Type.h"

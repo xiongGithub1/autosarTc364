@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Com_Cot.h
- *   Generation Time: 2024-06-30 18:32:55
+ *   Generation Time: 2024-07-09 14:04:08
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2

@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 16.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-07-06, 16:21:29               !!!IGNORE-LINE!!!          **
+**  DATE, TIME: 2024-07-14, 21:03:43               !!!IGNORE-LINE!!!          **
 **                                                                            **
 **  GENERATOR : Build b191017-0938                 !!!IGNORE-LINE!!!          **
 **                                                                            **
@@ -53,6 +53,16 @@
 /* User defined move engine error notification functions to be called by DMA driver in case
  * of error  */
 /* Channel specific Error notification function for Channel 0  */ 
+/* <**No notification function is configured for this Channel**> */
+/* Channel specific Error notification function for Channel 1  */ 
+/* <**No notification function is configured for this Channel**> */
+/* Channel specific Error notification function for Channel 2  */ 
+/* <**No notification function is configured for this Channel**> */
+/* Channel specific Error notification function for Channel 3  */ 
+/* <**No notification function is configured for this Channel**> */
+/* Channel specific Error notification function for Channel 4  */ 
+/* <**No notification function is configured for this Channel**> */
+/* Channel specific Error notification function for Channel 5  */ 
 /* <**No notification function is configured for this Channel**> */
   
 /* ************************************************************************** */
@@ -148,6 +158,406 @@ static const Dma_TransactionCtrlSetType Dma_kChannel_0_TcsConfigRoot[]=
 * before #include memap.h - Accepted deviation in AUTOSAR */
 #include "Dma_MemMap.h"
 
+                    
+          
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going
+* beyond 32 chars because of naming convention*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: External identifiers going
+* beyond 32 chars because of naming convention*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: External identifiers going
+* beyond 32 chars because of naming convention*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going
+* beyond 32 chars because of naming convention*/
+#define DMA_START_SEC_CONFIG_DATA_ASIL_B_CORE0_256
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Dma_Memmap.h is
+* repeatedly included without include guard. This is
+* as per AUTOSAR */
+/* MISRA2012_RULE_20_1_JUSTIFICATION: declaration of
+* MoveEngine Notification before #include memap.h
+* - Accepted deviation in AUTOSAR */
+
+
+#include "Dma_MemMap.h"
+
+/* DMA channel 1 Transaction set control Configuration */
+static const Dma_TransactionCtrlSetType Dma_kChannel_1_TcsConfigRoot[]=
+{
+  /* Dma Channel 1 TCS 0 */
+  {
+    /* Configuration for DMA source address register DMA_SADRz */
+    /* MISRA2012_RULE_11_6_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_4_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_3_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */                  
+    (uint32 *)NULL_PTR,
+    /* Configuration for DMA destination address register DMA_DADRz */
+    /* MISRA2012_RULE_11_6_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_4_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_3_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */ 
+    (uint32 *)NULL_PTR,
+    /* Configuration for DMA Channel Address and Interrupt Control
+    * Register DMA_ADICRz */
+    0x00000088U,
+    /* Configuration for DMA Channel Configuration Register DMA_CHCFGRz */
+    0x00000000U,
+    /* Configuration for DMA Channel Shadow Address Register DMA_SHADRz */
+    /* MISRA2012_RULE_11_6_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_4_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_3_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */ 
+  }
+};
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going beyond 32 chars
+* because of naming convention*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: External identifiers going beyond 32 chars
+* because of naming convention*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: External identifiers going beyond 32 chars
+* because of naming convention*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going beyond 32 chars
+* because of naming convention*/
+#define DMA_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_256
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Dma_Memmap.h is repeatedly included
+* without include guard. This is as per AUTOSAR */
+/* MISRA2012_RULE_20_1_JUSTIFICATION: declaration of MoveEngine Notification
+* before #include memap.h - Accepted deviation in AUTOSAR */
+#include "Dma_MemMap.h"
+
+                    
+          
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going
+* beyond 32 chars because of naming convention*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: External identifiers going
+* beyond 32 chars because of naming convention*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: External identifiers going
+* beyond 32 chars because of naming convention*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going
+* beyond 32 chars because of naming convention*/
+#define DMA_START_SEC_CONFIG_DATA_ASIL_B_CORE0_256
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Dma_Memmap.h is
+* repeatedly included without include guard. This is
+* as per AUTOSAR */
+/* MISRA2012_RULE_20_1_JUSTIFICATION: declaration of
+* MoveEngine Notification before #include memap.h
+* - Accepted deviation in AUTOSAR */
+
+
+#include "Dma_MemMap.h"
+
+/* DMA channel 2 Transaction set control Configuration */
+static const Dma_TransactionCtrlSetType Dma_kChannel_2_TcsConfigRoot[]=
+{
+  /* Dma Channel 2 TCS 0 */
+  {
+    /* Configuration for DMA source address register DMA_SADRz */
+    /* MISRA2012_RULE_11_6_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_4_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_3_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */                  
+    (uint32 *)NULL_PTR,
+    /* Configuration for DMA destination address register DMA_DADRz */
+    /* MISRA2012_RULE_11_6_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_4_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_3_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */ 
+    (uint32 *)NULL_PTR,
+    /* Configuration for DMA Channel Address and Interrupt Control
+    * Register DMA_ADICRz */
+    0x00000088U,
+    /* Configuration for DMA Channel Configuration Register DMA_CHCFGRz */
+    0x00000000U,
+    /* Configuration for DMA Channel Shadow Address Register DMA_SHADRz */
+    /* MISRA2012_RULE_11_6_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_4_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_3_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */ 
+  }
+};
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going beyond 32 chars
+* because of naming convention*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: External identifiers going beyond 32 chars
+* because of naming convention*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: External identifiers going beyond 32 chars
+* because of naming convention*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going beyond 32 chars
+* because of naming convention*/
+#define DMA_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_256
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Dma_Memmap.h is repeatedly included
+* without include guard. This is as per AUTOSAR */
+/* MISRA2012_RULE_20_1_JUSTIFICATION: declaration of MoveEngine Notification
+* before #include memap.h - Accepted deviation in AUTOSAR */
+#include "Dma_MemMap.h"
+
+                    
+          
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going
+* beyond 32 chars because of naming convention*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: External identifiers going
+* beyond 32 chars because of naming convention*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: External identifiers going
+* beyond 32 chars because of naming convention*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going
+* beyond 32 chars because of naming convention*/
+#define DMA_START_SEC_CONFIG_DATA_ASIL_B_CORE0_256
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Dma_Memmap.h is
+* repeatedly included without include guard. This is
+* as per AUTOSAR */
+/* MISRA2012_RULE_20_1_JUSTIFICATION: declaration of
+* MoveEngine Notification before #include memap.h
+* - Accepted deviation in AUTOSAR */
+
+
+#include "Dma_MemMap.h"
+
+/* DMA channel 3 Transaction set control Configuration */
+static const Dma_TransactionCtrlSetType Dma_kChannel_3_TcsConfigRoot[]=
+{
+  /* Dma Channel 3 TCS 0 */
+  {
+    /* Configuration for DMA source address register DMA_SADRz */
+    /* MISRA2012_RULE_11_6_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_4_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_3_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */                  
+    (uint32 *)NULL_PTR,
+    /* Configuration for DMA destination address register DMA_DADRz */
+    /* MISRA2012_RULE_11_6_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_4_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_3_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */ 
+    (uint32 *)NULL_PTR,
+    /* Configuration for DMA Channel Address and Interrupt Control
+    * Register DMA_ADICRz */
+    0x00000088U,
+    /* Configuration for DMA Channel Configuration Register DMA_CHCFGRz */
+    0x00000000U,
+    /* Configuration for DMA Channel Shadow Address Register DMA_SHADRz */
+    /* MISRA2012_RULE_11_6_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_4_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_3_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */ 
+  }
+};
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going beyond 32 chars
+* because of naming convention*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: External identifiers going beyond 32 chars
+* because of naming convention*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: External identifiers going beyond 32 chars
+* because of naming convention*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going beyond 32 chars
+* because of naming convention*/
+#define DMA_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_256
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Dma_Memmap.h is repeatedly included
+* without include guard. This is as per AUTOSAR */
+/* MISRA2012_RULE_20_1_JUSTIFICATION: declaration of MoveEngine Notification
+* before #include memap.h - Accepted deviation in AUTOSAR */
+#include "Dma_MemMap.h"
+
+                    
+          
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going
+* beyond 32 chars because of naming convention*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: External identifiers going
+* beyond 32 chars because of naming convention*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: External identifiers going
+* beyond 32 chars because of naming convention*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going
+* beyond 32 chars because of naming convention*/
+#define DMA_START_SEC_CONFIG_DATA_ASIL_B_CORE0_256
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Dma_Memmap.h is
+* repeatedly included without include guard. This is
+* as per AUTOSAR */
+/* MISRA2012_RULE_20_1_JUSTIFICATION: declaration of
+* MoveEngine Notification before #include memap.h
+* - Accepted deviation in AUTOSAR */
+
+
+#include "Dma_MemMap.h"
+
+/* DMA channel 4 Transaction set control Configuration */
+static const Dma_TransactionCtrlSetType Dma_kChannel_4_TcsConfigRoot[]=
+{
+  /* Dma Channel 4 TCS 0 */
+  {
+    /* Configuration for DMA source address register DMA_SADRz */
+    /* MISRA2012_RULE_11_6_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_4_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_3_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */                  
+    (uint32 *)NULL_PTR,
+    /* Configuration for DMA destination address register DMA_DADRz */
+    /* MISRA2012_RULE_11_6_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_4_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_3_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */ 
+    (uint32 *)NULL_PTR,
+    /* Configuration for DMA Channel Address and Interrupt Control
+    * Register DMA_ADICRz */
+    0x00000088U,
+    /* Configuration for DMA Channel Configuration Register DMA_CHCFGRz */
+    0x00000000U,
+    /* Configuration for DMA Channel Shadow Address Register DMA_SHADRz */
+    /* MISRA2012_RULE_11_6_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_4_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_3_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */ 
+  }
+};
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going beyond 32 chars
+* because of naming convention*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: External identifiers going beyond 32 chars
+* because of naming convention*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: External identifiers going beyond 32 chars
+* because of naming convention*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going beyond 32 chars
+* because of naming convention*/
+#define DMA_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_256
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Dma_Memmap.h is repeatedly included
+* without include guard. This is as per AUTOSAR */
+/* MISRA2012_RULE_20_1_JUSTIFICATION: declaration of MoveEngine Notification
+* before #include memap.h - Accepted deviation in AUTOSAR */
+#include "Dma_MemMap.h"
+
+                    
+          
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going
+* beyond 32 chars because of naming convention*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: External identifiers going
+* beyond 32 chars because of naming convention*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: External identifiers going
+* beyond 32 chars because of naming convention*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going
+* beyond 32 chars because of naming convention*/
+#define DMA_START_SEC_CONFIG_DATA_ASIL_B_CORE0_256
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Dma_Memmap.h is
+* repeatedly included without include guard. This is
+* as per AUTOSAR */
+/* MISRA2012_RULE_20_1_JUSTIFICATION: declaration of
+* MoveEngine Notification before #include memap.h
+* - Accepted deviation in AUTOSAR */
+
+
+#include "Dma_MemMap.h"
+
+/* DMA channel 5 Transaction set control Configuration */
+static const Dma_TransactionCtrlSetType Dma_kChannel_5_TcsConfigRoot[]=
+{
+  /* Dma Channel 5 TCS 0 */
+  {
+    /* Configuration for DMA source address register DMA_SADRz */
+    /* MISRA2012_RULE_11_6_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_4_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_3_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */                  
+    (uint32 *)NULL_PTR,
+    /* Configuration for DMA destination address register DMA_DADRz */
+    /* MISRA2012_RULE_11_6_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_4_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_3_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */ 
+    (uint32 *)NULL_PTR,
+    /* Configuration for DMA Channel Address and Interrupt Control
+    * Register DMA_ADICRz */
+    0x00000088U,
+    /* Configuration for DMA Channel Configuration Register DMA_CHCFGRz */
+    0x00000000U,
+    /* Configuration for DMA Channel Shadow Address Register DMA_SHADRz */
+    /* MISRA2012_RULE_11_6_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_4_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */
+    /* MISRA2012_RULE_11_3_JUSTIFICATION: Memory address is generated as a numerical value 
+    configuration and in code, it is accessed as a pointer to the RAM address. Hence an 
+    explicit typecast from integer to uint32 based pointer. */ 
+  }
+};
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going beyond 32 chars
+* because of naming convention*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: External identifiers going beyond 32 chars
+* because of naming convention*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: External identifiers going beyond 32 chars
+* because of naming convention*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going beyond 32 chars
+* because of naming convention*/
+#define DMA_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_256
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Dma_Memmap.h is repeatedly included
+* without include guard. This is as per AUTOSAR */
+/* MISRA2012_RULE_20_1_JUSTIFICATION: declaration of MoveEngine Notification
+* before #include memap.h - Accepted deviation in AUTOSAR */
+#include "Dma_MemMap.h"
+
 /* ************************************************************** */
 
 /* *************** Channel root configuration list ************** */
@@ -175,6 +585,46 @@ static const Dma_ChConfigType Dma_kChConfigRoot_Core0[]=
     NULL_PTR, /* Channel Notification */
     0x00000000U, /* TSR configuration */
     (uint8)0U, /* Dma Channel ID */
+    (uint8)0x0U, /* Channel Assigned partition */
+    NULL_PTR /* Error Notification */
+  },
+  {
+    &Dma_kChannel_1_TcsConfigRoot[0U], /* TCS config Root */
+    NULL_PTR, /* Channel Notification */
+    0x00000000U, /* TSR configuration */
+    (uint8)1U, /* Dma Channel ID */
+    (uint8)0x0U, /* Channel Assigned partition */
+    NULL_PTR /* Error Notification */
+  },
+  {
+    &Dma_kChannel_2_TcsConfigRoot[0U], /* TCS config Root */
+    NULL_PTR, /* Channel Notification */
+    0x00000000U, /* TSR configuration */
+    (uint8)2U, /* Dma Channel ID */
+    (uint8)0x0U, /* Channel Assigned partition */
+    NULL_PTR /* Error Notification */
+  },
+  {
+    &Dma_kChannel_3_TcsConfigRoot[0U], /* TCS config Root */
+    NULL_PTR, /* Channel Notification */
+    0x00000000U, /* TSR configuration */
+    (uint8)3U, /* Dma Channel ID */
+    (uint8)0x0U, /* Channel Assigned partition */
+    NULL_PTR /* Error Notification */
+  },
+  {
+    &Dma_kChannel_4_TcsConfigRoot[0U], /* TCS config Root */
+    NULL_PTR, /* Channel Notification */
+    0x00000000U, /* TSR configuration */
+    (uint8)4U, /* Dma Channel ID */
+    (uint8)0x0U, /* Channel Assigned partition */
+    NULL_PTR /* Error Notification */
+  },
+  {
+    &Dma_kChannel_5_TcsConfigRoot[0U], /* TCS config Root */
+    NULL_PTR, /* Channel Notification */
+    0x00000000U, /* TSR configuration */
+    (uint8)5U, /* Dma Channel ID */
     (uint8)0x0U, /* Channel Assigned partition */
     NULL_PTR /* Error Notification */
   }};
@@ -214,7 +664,7 @@ static const Dma_CoreSpecificChConfigType Dma_ChConfigRootCore0=
   /* Core specific config pointer */
   &Dma_kChConfigRoot_Core0[0],
   /* Total number of DMA channels in core 0 */
-  1
+  6
 };
 /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going beyond 32 chars
 * because of naming convention*/
@@ -271,11 +721,11 @@ const Dma_ConfigType Dma_Config=
   /* { Channel Position Index, Channel Core Map } - The mapping data of channels */
   {
     {0, 0 }, /* Channel 0 */
-    {255, 255 }, /* Channel 1 */
-    {255, 255 }, /* Channel 2 */
-    {255, 255 }, /* Channel 3 */
-    {255, 255 }, /* Channel 4 */
-    {255, 255 }, /* Channel 5 */
+    {1, 0 }, /* Channel 1 */
+    {2, 0 }, /* Channel 2 */
+    {3, 0 }, /* Channel 3 */
+    {4, 0 }, /* Channel 4 */
+    {5, 0 }, /* Channel 5 */
     {255, 255 }, /* Channel 6 */
     {255, 255 }, /* Channel 7 */
     {255, 255 }, /* Channel 8 */
@@ -341,7 +791,7 @@ const Dma_ConfigType Dma_Config=
     0x0U,
   },
   /* Total number of DMA channels */
-  0X00000001U,
+  0X00000006U,
 };
 /* ************************************************************** */
 

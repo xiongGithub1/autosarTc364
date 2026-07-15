@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Core_Lcfg.c
- *   Generation Time: 2024-07-06 14:46:49
+ *   Generation Time: 2024-07-14 20:32:32
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -164,11 +164,16 @@ CONSTP2CONST(Os_IsrHwConfigType, OS_CONST, OS_CONST)
   OsCfg_Hal_System_InterruptSourceRefs[OS_CFG_NUM_SYSTEM_INTERRUPTSOURCEREFS + 1u] =
 {
   &OsCfg_Isr_AdcIsr_G0_HwConfig,
-  &OsCfg_Isr_AdcIsr_G2_HwConfig,
-  &OsCfg_Isr_AdcIsr_G3_HwConfig,
   &OsCfg_Isr_AdcIsr_G8_HwConfig,
   &OsCfg_Isr_CanIsr_0_HwConfig,
   &OsCfg_Isr_CounterIsr_SystemTimer_HwConfig,
+  &OsCfg_Isr_OsIsr_DMA_ERR_HwConfig,
+  &OsCfg_Isr_OsIsr_QSPI1_ERR_HwConfig,
+  &OsCfg_Isr_OsIsr_QSPI1_PT_HwConfig,
+  &OsCfg_Isr_OsIsr_QSPI2_ERR_HwConfig,
+  &OsCfg_Isr_OsIsr_QSPI2_PT_HwConfig,
+  &OsCfg_Isr_OsIsr_QSPI3_ERR_HwConfig,
+  &OsCfg_Isr_OsIsr_QSPI3_PT_HwConfig,
   NULL_PTR
 };
 

@@ -519,6 +519,33 @@
 
 #define SBC_30_FS6500_APPL_DATA
 
+#define SBC_30_TLF35584_CODE
+#define SBC_30_TLF35584_CODE_FAST
+#define SBC_30_TLF35584_CODE_ISR
+
+#define SBC_30_TLF35584_CONST
+#define SBC_30_TLF35584_CONST_FAST
+#define SBC_30_TLF35584_PBCFG
+
+/* NOTE: Use the next keyword for the PBCFG-root-struct only in case of a ASR3.x till ASR4.0.1 implementation.
+   In case of a ASR4.0.3 (CFG5) implementation use for the PBCFG-root-struct the keyword SBC_PBCFG as well and remove the following keyword from this template. */
+#define SBC_30_TLF35584_PBCFG_ROOT
+
+#define SBC_30_TLF35584_VAR_PBCFG
+
+#define SBC_30_TLF35584_VAR_INIT
+#define SBC_30_TLF35584_VAR_NOINIT
+#define SBC_30_TLF35584_VAR_ZERO_INIT
+#define SBC_30_TLF35584_VAR_INIT_FAST
+#define SBC_30_TLF35584_VAR_NOINIT_FAST
+#define SBC_30_TLF35584_VAR_ZERO_INIT_FAST
+
+#define SBC_30_TLF35584_VAR_INIT_NOCACHE
+#define SBC_30_TLF35584_VAR_NOINIT_NOCACHE
+#define SBC_30_TLF35584_VAR_ZERO_INIT_NOCACHE
+
+#define SBC_30_TLF35584_APPL_DATA
+
 /**********************************************************************************************************************
  *  SBC END
  *********************************************************************************************************************/

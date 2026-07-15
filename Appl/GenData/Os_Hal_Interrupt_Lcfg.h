@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Interrupt_Lcfg.h
- *   Generation Time: 2024-07-06 14:46:49
+ *   Generation Time: 2024-07-14 20:32:32
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -92,14 +92,6 @@
 extern CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_AdcIsr_G0;
 extern CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_AdcIsr_G0;
 
-/*! HAL ISR configuration data: AdcIsr_G2 */
-extern CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_AdcIsr_G2;
-extern CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_AdcIsr_G2;
-
-/*! HAL ISR configuration data: AdcIsr_G3 */
-extern CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_AdcIsr_G3;
-extern CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_AdcIsr_G3;
-
 /*! HAL ISR configuration data: AdcIsr_G8 */
 extern CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_AdcIsr_G8;
 extern CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_AdcIsr_G8;
@@ -111,6 +103,34 @@ extern CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_CanIsr_0;
 /*! HAL ISR configuration data: CounterIsr_SystemTimer */
 extern CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_CounterIsr_SystemTimer;
 extern CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_CounterIsr_SystemTimer;
+
+/*! HAL ISR configuration data: OsIsr_DMA_ERR */
+extern CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_OsIsr_DMA_ERR;
+extern CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_OsIsr_DMA_ERR;
+
+/*! HAL ISR configuration data: OsIsr_QSPI1_ERR */
+extern CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_OsIsr_QSPI1_ERR;
+extern CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_OsIsr_QSPI1_ERR;
+
+/*! HAL ISR configuration data: OsIsr_QSPI1_PT */
+extern CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_OsIsr_QSPI1_PT;
+extern CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_OsIsr_QSPI1_PT;
+
+/*! HAL ISR configuration data: OsIsr_QSPI2_ERR */
+extern CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_OsIsr_QSPI2_ERR;
+extern CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_OsIsr_QSPI2_ERR;
+
+/*! HAL ISR configuration data: OsIsr_QSPI2_PT */
+extern CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_OsIsr_QSPI2_PT;
+extern CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_OsIsr_QSPI2_PT;
+
+/*! HAL ISR configuration data: OsIsr_QSPI3_ERR */
+extern CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_OsIsr_QSPI3_ERR;
+extern CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_OsIsr_QSPI3_ERR;
+
+/*! HAL ISR configuration data: OsIsr_QSPI3_PT */
+extern CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_OsIsr_QSPI3_PT;
+extern CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_OsIsr_QSPI3_PT;
 
 # define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */

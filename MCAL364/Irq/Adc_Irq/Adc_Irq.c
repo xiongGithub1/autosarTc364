@@ -38,6 +38,7 @@
 #include "Adc.h"
 #include "Os.h"
 #include "Irq.h"
+#include "Dio.h"
 //#include "IFX_Os.h"
 #ifdef  APP_SW
 #if (APP_SW == TEST_APP)
@@ -119,6 +120,7 @@ ISR(ADC0SR0_ISR)
   #endif
   /* Call Adc Interrupt function*/
   Adc_RS0EventInterruptHandler(0U);
+  Dio_FlipChannel(DioConf_DioChannel_DioChannel_test);
 }
 #endif
 #endif

@@ -26,6 +26,18 @@
 								<option id="com.tasking.ctc.cc.noTaskingSfr.1001861997" name="Automatic inclusion of '.sfr' file" superClass="com.tasking.ctc.cc.noTaskingSfr" value="false" valueType="boolean"/>
 								<option id="com.tasking.ctc.cc.includePaths.1439296800" name="Include paths" superClass="com.tasking.ctc.cc.includePaths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/MCAL364/Irq/Dma_Irq}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/MCAL364/Irq/Spi_Irq}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/BSW364/Sbc_30_Tlf35584/Implementation}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl/Source/CDD/MotorFoc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl/Source/Adc_Irq}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl/Source/Can_Irq}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl/Source/CDD}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl/Source/CDD/TLE5012}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl/Source/CDD/TLE5012/TLE5012}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl/Source/CDD/TLE5012/TLE5012/tle5012b_reg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl/Source/CDD/TLE9180}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl/Source/CDD/TLE9180/TLE9180_reg}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl/Source/TestFiles}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl/Source/CDD}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/MCAL364/Pwm_17_GtmCcu6/ssc/inc}&quot;"/>
@@ -124,6 +136,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl/GenDataVtt}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl/Source}&quot;"/>
 								</option>
+								<option id="com.tasking.ctc.cc.enableCache.1309564060" name="Cache generated code to improve the compilation speed" superClass="com.tasking.ctc.cc.enableCache" value="true" valueType="boolean"/>
 								<inputType id="com.tasking.ctc.cppInputType.2018539661" name="C++" superClass="com.tasking.ctc.cppInputType"/>
 								<inputType id="com.tasking.ctc.cpp.cInputType.384961694" name="C" superClass="com.tasking.ctc.cpp.cInputType"/>
 								<inputType id="com.tasking.ctc.cc.msInputType.994567686" name="MS" superClass="com.tasking.ctc.cc.msInputType"/>
@@ -141,7 +154,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="Log|tc234Autosar|DefRestrict|Config|Config_Vector|note|Appl/GenData/RteAnalyzer/Source|Appl/GenData/RteAnalyzer" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="Appl/Source/TestFiles|Appl/Source/CDD/TLE9180/TLE9180.c|Appl/Source/CDD/TLE9180/TLE9180.h|Appl/Source/CDD/TLE9180/TLE9180_Cfg.c|Log|tc234Autosar|DefRestrict|Config|Config_Vector|note|Appl/GenData/RteAnalyzer/Source|Appl/GenData/RteAnalyzer" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -149,6 +162,7 @@
 			<storageModule addStartupFiles="false" moduleId="com.tasking.processor"/>
 			<storageModule moduleId="com.tasking.toolInfo">
 				<toolInfo>TASKING VX-toolset for TriCore: control program v6.2r2 Build 19032145</toolInfo>
+				<toolInfo>TASKING VX-toolset for TriCore: expire cache utility v6.2r2 Build 18041957</toolInfo>
 				<toolInfo>TASKING program builder v6.2r2 Build 18041957</toolInfo>
 				<toolInfo>TASKING VX-toolset for TriCore: object link v6.2r2 Build 18041957 SN 53216552</toolInfo>
 				<toolInfo>TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552</toolInfo>
@@ -192,7 +206,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="Log|tc234Autosar|DefRestrict|Config|Config_Vector|note|Appl/GenData/RteAnalyzer/Source|Appl/GenData/RteAnalyzer" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="Appl/Source/TestFiles|Appl/Source/CDD/TLE9180/TLE9180.c|Appl/Source/CDD/TLE9180/TLE9180.h|Appl/Source/CDD/TLE9180/TLE9180_Cfg.c|Log|tc234Autosar|DefRestrict|Config|Config_Vector|note|Appl/GenData/RteAnalyzer/Source|Appl/GenData/RteAnalyzer" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

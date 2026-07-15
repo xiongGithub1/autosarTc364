@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 20.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-07-06, 16:21:29              !!!IGNORE-LINE!!!           **
+**  DATE, TIME: 2024-07-14, 21:03:46              !!!IGNORE-LINE!!!           **
 **                                                                            **
 **  GENERATOR : Build b191017-0938                !!!IGNORE-LINE!!!           **
 **                                                                            **
@@ -128,14 +128,12 @@ without safegaurd. It complies to Autosar guidelines. */
 before MemMap inclusion. It complies to Autosar guidelines. */
 #include "Pwm_17_GtmCcu6_MemMap.h"
   
-static const uint8 Pwm_ChannelIndexMap [6] =
+static const uint8 Pwm_ChannelIndexMap [4] =
 {
   0x0U,
   0x1U,
   0x2U,
   0x3U,
-  0x4U,
-  0x5U,
 };
 /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going beyond 32 chars.
 in generated code due to Autosar Naming constraints.*/
@@ -167,78 +165,54 @@ without safegaurd. It complies to Autosar guidelines. */
 before MemMap inclusion It complies to Autosar guidelines. */
 #include "Pwm_17_GtmCcu6_MemMap.h"
         
-static const Mcu_17_Gtm_TomAtomChConfigType Pwm_kChannelConfigGtm_Core0[6] = 
+static const Mcu_17_Gtm_TomAtomChConfigType Pwm_kChannelConfigGtm_Core0[4] = 
 {
   {
-    MCU_GTM_TIMER_TOM, /* Timer Type (TOM/ATOM)*/
+    MCU_GTM_TIMER_ATOM, /* Timer Type (TOM/ATOM)*/
     /* Bit[15:8] - Module number Bit[7:0] - Channel number*/
-    0x9U,
-    0x80000000U, /* Channel Control Register*/
-    0x9c40U, /* CN0 in ticks */
-    0x9c40U, /* CM0 in ticks */
-    0x5f5eU, /* CM1 in ticks */
-    0x9c40U, /* SR0 in ticks */
-    0x5f5eU, /* SR1 in ticks */
+    0x0U,
+    0x81000002U, /* Channel Control Register*/
+    0x2710U, /* CN0 in ticks */
+    0x2710U, /* CM0 in ticks */
+    0x0U, /* CM1 in ticks */
+    0x2710U, /* SR0 in ticks */
+    0x0U, /* SR1 in ticks */
     0x80U /* Period,Duty Interrupt and mode*/
   },
   {
-    MCU_GTM_TIMER_TOM, /* Timer Type (TOM/ATOM)*/
+    MCU_GTM_TIMER_ATOM, /* Timer Type (TOM/ATOM)*/
     /* Bit[15:8] - Module number Bit[7:0] - Channel number*/
-    0xaU,
-    0x80000000U, /* Channel Control Register*/
-    0x9c40U, /* CN0 in ticks */
-    0x9c40U, /* CM0 in ticks */
-    0x5f5eU, /* CM1 in ticks */
-    0x9c40U, /* SR0 in ticks */
-    0x5f5eU, /* SR1 in ticks */
+    0x1U,
+    0x80100002U, /* Channel Control Register*/
+    0x0U, /* CN0 in ticks */
+    0xffffffU, /* CM0 in ticks */
+    0x0U, /* CM1 in ticks */
+    0xffffffU, /* SR0 in ticks */
+    0x0U, /* SR1 in ticks */
     0x80U /* Period,Duty Interrupt and mode*/
   },
   {
-    MCU_GTM_TIMER_TOM, /* Timer Type (TOM/ATOM)*/
+    MCU_GTM_TIMER_ATOM, /* Timer Type (TOM/ATOM)*/
     /* Bit[15:8] - Module number Bit[7:0] - Channel number*/
-    0xbU,
-    0x80000000U, /* Channel Control Register*/
-    0x9c40U, /* CN0 in ticks */
-    0x9c40U, /* CM0 in ticks */
-    0x5f5eU, /* CM1 in ticks */
-    0x9c40U, /* SR0 in ticks */
-    0x5f5eU, /* SR1 in ticks */
+    0x2U,
+    0x80100002U, /* Channel Control Register*/
+    0x0U, /* CN0 in ticks */
+    0xffffffU, /* CM0 in ticks */
+    0x0U, /* CM1 in ticks */
+    0xffffffU, /* SR0 in ticks */
+    0x0U, /* SR1 in ticks */
     0x80U /* Period,Duty Interrupt and mode*/
   },
   {
-    MCU_GTM_TIMER_TOM, /* Timer Type (TOM/ATOM)*/
+    MCU_GTM_TIMER_ATOM, /* Timer Type (TOM/ATOM)*/
     /* Bit[15:8] - Module number Bit[7:0] - Channel number*/
-    0xcU,
-    0x80000000U, /* Channel Control Register*/
-    0x9c40U, /* CN0 in ticks */
-    0x9c40U, /* CM0 in ticks */
-    0x5f5eU, /* CM1 in ticks */
-    0x9c40U, /* SR0 in ticks */
-    0x5f5eU, /* SR1 in ticks */
-    0x80U /* Period,Duty Interrupt and mode*/
-  },
-  {
-    MCU_GTM_TIMER_TOM, /* Timer Type (TOM/ATOM)*/
-    /* Bit[15:8] - Module number Bit[7:0] - Channel number*/
-    0xdU,
-    0x80000000U, /* Channel Control Register*/
-    0x9c40U, /* CN0 in ticks */
-    0x9c40U, /* CM0 in ticks */
-    0x5f5eU, /* CM1 in ticks */
-    0x9c40U, /* SR0 in ticks */
-    0x5f5eU, /* SR1 in ticks */
-    0x80U /* Period,Duty Interrupt and mode*/
-  },
-  {
-    MCU_GTM_TIMER_TOM, /* Timer Type (TOM/ATOM)*/
-    /* Bit[15:8] - Module number Bit[7:0] - Channel number*/
-    0xeU,
-    0x80000000U, /* Channel Control Register*/
-    0x9c40U, /* CN0 in ticks */
-    0x9c40U, /* CM0 in ticks */
-    0x5f5eU, /* CM1 in ticks */
-    0x9c40U, /* SR0 in ticks */
-    0x5f5eU, /* SR1 in ticks */
+    0x3U,
+    0x80100002U, /* Channel Control Register*/
+    0x0U, /* CN0 in ticks */
+    0xffffffU, /* CM0 in ticks */
+    0x0U, /* CM1 in ticks */
+    0xffffffU, /* SR0 in ticks */
+    0x0U, /* SR1 in ticks */
     0x80U /* Period,Duty Interrupt and mode*/
   },
 };
@@ -247,7 +221,7 @@ static const Pwm_17_GtmCcu6_ChannelConfigType Pwm_kChannelConfigurationCore0[] =
 {
 /*******************************************************************************
 *  Channel Number        : 0
-*  Channel Symbolic Name : Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9183IH1
+*  Channel Symbolic Name : Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9180REF
 *  Channel Class         : PWM_FIXED_PERIOD
 *******************************************************************************/
   {
@@ -261,8 +235,8 @@ static const Pwm_17_GtmCcu6_ChannelConfigType Pwm_kChannelConfigurationCore0[] =
       PWM_17_GTMCCU6_LOW, /* channel Idle state */
       PWM_17_GTMCCU6_LOW  /* channel polarity */
     ),
-    (Pwm_17_GtmCcu6_PeriodType)0x9c40, /* Default Period */
-    (uint32)0x5f5e, /* Default Duty Cycle */
+    (Pwm_17_GtmCcu6_PeriodType)0x2710, /* Default Period */
+    (uint32)0x0, /* Default Duty Cycle */
     (uint32)0x0, /* Shift Value */
     (const void*)&Pwm_kChannelConfigGtm_Core0[0]
     /* MISRA2012_RULE_11_3_JUSTIFICATION: SFR access. No side effects foreseen
@@ -270,116 +244,70 @@ static const Pwm_17_GtmCcu6_ChannelConfigType Pwm_kChannelConfigurationCore0[] =
   },
 /*******************************************************************************
 *  Channel Number        : 1
-*  Channel Symbolic Name : Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9183IH2
-*  Channel Class         : PWM_FIXED_PERIOD
+*  Channel Symbolic Name : Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9180IH1
+*  Channel Class         : PWM_FIXED_PERIOD_CENTER_ALIGNED
 *******************************************************************************/
   {
     1, /* Pwm logical channel ID */
     0, /* Timer used GTM:0/CCU6:1 */
     Pwm_lConfigChannel(
       0U,/* The notification flag to enable GTM interrupts to trigger DSADC */
-      0U,/* Channel reset from other channel or not*/
-      PWM_17_GTMCCU6_FIXED_PERIOD,/* Channel Class */
-      PWM_17_GTMCCU6_NON_COHERENT,/* Coherency */
+      1U,/* Channel reset from other channel or not*/
+      PWM_17_GTMCCU6_FIXED_PERIOD_CENTER_ALIGNED,/* Channel Class */
+      PWM_17_GTMCCU6_COHERENT,/* Coherency */
       PWM_17_GTMCCU6_LOW, /* channel Idle state */
       PWM_17_GTMCCU6_LOW  /* channel polarity */
     ),
-    (Pwm_17_GtmCcu6_PeriodType)0x9c40, /* Default Period */
-    (uint32)0x5f5e, /* Default Duty Cycle */
-    (uint32)0x0, /* Shift Value */
+    (Pwm_17_GtmCcu6_PeriodType)0x2710, /* Default Period */
+    (uint32)0x0, /* Default Duty Cycle */
+    (uint32)0x1388, /* Shift Value */
     (const void*)&Pwm_kChannelConfigGtm_Core0[1]
     /* MISRA2012_RULE_11_3_JUSTIFICATION: SFR access. No side effects foreseen
     * by violating this MISRA rule. */
   },
 /*******************************************************************************
 *  Channel Number        : 2
-*  Channel Symbolic Name : Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9183IH3
-*  Channel Class         : PWM_FIXED_PERIOD
+*  Channel Symbolic Name : Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9180IH2
+*  Channel Class         : PWM_FIXED_PERIOD_CENTER_ALIGNED
 *******************************************************************************/
   {
     2, /* Pwm logical channel ID */
     0, /* Timer used GTM:0/CCU6:1 */
     Pwm_lConfigChannel(
       0U,/* The notification flag to enable GTM interrupts to trigger DSADC */
-      0U,/* Channel reset from other channel or not*/
-      PWM_17_GTMCCU6_FIXED_PERIOD,/* Channel Class */
-      PWM_17_GTMCCU6_NON_COHERENT,/* Coherency */
+      1U,/* Channel reset from other channel or not*/
+      PWM_17_GTMCCU6_FIXED_PERIOD_CENTER_ALIGNED,/* Channel Class */
+      PWM_17_GTMCCU6_COHERENT,/* Coherency */
       PWM_17_GTMCCU6_LOW, /* channel Idle state */
       PWM_17_GTMCCU6_LOW  /* channel polarity */
     ),
-    (Pwm_17_GtmCcu6_PeriodType)0x9c40, /* Default Period */
-    (uint32)0x5f5e, /* Default Duty Cycle */
-    (uint32)0x0, /* Shift Value */
+    (Pwm_17_GtmCcu6_PeriodType)0x2710, /* Default Period */
+    (uint32)0x0, /* Default Duty Cycle */
+    (uint32)0x1388, /* Shift Value */
     (const void*)&Pwm_kChannelConfigGtm_Core0[2]
     /* MISRA2012_RULE_11_3_JUSTIFICATION: SFR access. No side effects foreseen
     * by violating this MISRA rule. */
   },
 /*******************************************************************************
 *  Channel Number        : 3
-*  Channel Symbolic Name : Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9183IL1
-*  Channel Class         : PWM_FIXED_PERIOD
+*  Channel Symbolic Name : Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9180IH3
+*  Channel Class         : PWM_FIXED_PERIOD_CENTER_ALIGNED
 *******************************************************************************/
   {
     3, /* Pwm logical channel ID */
     0, /* Timer used GTM:0/CCU6:1 */
     Pwm_lConfigChannel(
       0U,/* The notification flag to enable GTM interrupts to trigger DSADC */
-      0U,/* Channel reset from other channel or not*/
-      PWM_17_GTMCCU6_FIXED_PERIOD,/* Channel Class */
-      PWM_17_GTMCCU6_NON_COHERENT,/* Coherency */
+      1U,/* Channel reset from other channel or not*/
+      PWM_17_GTMCCU6_FIXED_PERIOD_CENTER_ALIGNED,/* Channel Class */
+      PWM_17_GTMCCU6_COHERENT,/* Coherency */
       PWM_17_GTMCCU6_LOW, /* channel Idle state */
       PWM_17_GTMCCU6_LOW  /* channel polarity */
     ),
-    (Pwm_17_GtmCcu6_PeriodType)0x9c40, /* Default Period */
-    (uint32)0x5f5e, /* Default Duty Cycle */
-    (uint32)0x0, /* Shift Value */
+    (Pwm_17_GtmCcu6_PeriodType)0x2710, /* Default Period */
+    (uint32)0x0, /* Default Duty Cycle */
+    (uint32)0x1388, /* Shift Value */
     (const void*)&Pwm_kChannelConfigGtm_Core0[3]
-    /* MISRA2012_RULE_11_3_JUSTIFICATION: SFR access. No side effects foreseen
-    * by violating this MISRA rule. */
-  },
-/*******************************************************************************
-*  Channel Number        : 4
-*  Channel Symbolic Name : Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9183IL2
-*  Channel Class         : PWM_FIXED_PERIOD
-*******************************************************************************/
-  {
-    4, /* Pwm logical channel ID */
-    0, /* Timer used GTM:0/CCU6:1 */
-    Pwm_lConfigChannel(
-      0U,/* The notification flag to enable GTM interrupts to trigger DSADC */
-      0U,/* Channel reset from other channel or not*/
-      PWM_17_GTMCCU6_FIXED_PERIOD,/* Channel Class */
-      PWM_17_GTMCCU6_NON_COHERENT,/* Coherency */
-      PWM_17_GTMCCU6_LOW, /* channel Idle state */
-      PWM_17_GTMCCU6_LOW  /* channel polarity */
-    ),
-    (Pwm_17_GtmCcu6_PeriodType)0x9c40, /* Default Period */
-    (uint32)0x5f5e, /* Default Duty Cycle */
-    (uint32)0x0, /* Shift Value */
-    (const void*)&Pwm_kChannelConfigGtm_Core0[4]
-    /* MISRA2012_RULE_11_3_JUSTIFICATION: SFR access. No side effects foreseen
-    * by violating this MISRA rule. */
-  },
-/*******************************************************************************
-*  Channel Number        : 5
-*  Channel Symbolic Name : Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9183IL3
-*  Channel Class         : PWM_FIXED_PERIOD
-*******************************************************************************/
-  {
-    5, /* Pwm logical channel ID */
-    0, /* Timer used GTM:0/CCU6:1 */
-    Pwm_lConfigChannel(
-      0U,/* The notification flag to enable GTM interrupts to trigger DSADC */
-      0U,/* Channel reset from other channel or not*/
-      PWM_17_GTMCCU6_FIXED_PERIOD,/* Channel Class */
-      PWM_17_GTMCCU6_NON_COHERENT,/* Coherency */
-      PWM_17_GTMCCU6_LOW, /* channel Idle state */
-      PWM_17_GTMCCU6_LOW  /* channel polarity */
-    ),
-    (Pwm_17_GtmCcu6_PeriodType)0x9c40, /* Default Period */
-    (uint32)0x5f5e, /* Default Duty Cycle */
-    (uint32)0x0, /* Shift Value */
-    (const void*)&Pwm_kChannelConfigGtm_Core0[5]
     /* MISRA2012_RULE_11_3_JUSTIFICATION: SFR access. No side effects foreseen
     * by violating this MISRA rule. */
   },
@@ -387,7 +315,7 @@ static const Pwm_17_GtmCcu6_ChannelConfigType Pwm_kChannelConfigurationCore0[] =
       
 static const Pwm_17_GtmCcu6_CoreConfigType Pwm_CoreConfigCore0 =
 { 
-  (Pwm_17_GtmCcu6_ChannelType)6U,
+  (Pwm_17_GtmCcu6_ChannelType)4U,
   (const Pwm_17_GtmCcu6_ChannelConfigType*)&Pwm_kChannelConfigurationCore0[0]
 };
 /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going beyond 32 chars.

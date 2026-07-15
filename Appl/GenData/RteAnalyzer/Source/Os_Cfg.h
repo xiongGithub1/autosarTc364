@@ -30,6 +30,7 @@
 # define Default_Appl_Init_Task (0U)
 # define Default_Appl_Task (1U)
 # define Default_BSW_ASync_Task (2U)
+# define MotorTask (3U)
 
 /* Counters */
 # define SystemTimer (0U)
@@ -41,10 +42,17 @@
 # define Rte_Al_TE_StartApp_StartApp_Cyclic250ms (3U)
 # define Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms (4U)
 # define Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms (5U)
+# define Rte_Al_TE_Spi_Spi_MainFunction_Handling (6U)
+# define Rte_Al_TE_MotorCdd_MotorCDDMainFunction (7U)
+# define Rte_Al_TE_MotorControll_MotorControll_MainFunction (8U)
 
 /* Events */
 # define Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms (0x01ULL)
 # define Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_20ms (0x02ULL)
+# define Rte_Ev_Run_MotorCdd_MotorCDDMainFunction (0x01ULL)
+# define Rte_Ev_Run_MotorCdd_MotorCdd_AdcOnSampleReady_Rp_AdcSampleReady_AdcSampleReady (0x02ULL)
+# define Rte_Ev_Run_MotorControll_MotorControll_MainFunction (0x04ULL)
+# define Rte_Ev_Run_Spi_Spi_MainFunction_Handling (0x04ULL)
 # define Rte_Ev_Run_StartApp_StartApp_Cyclic1000ms (0x01ULL)
 # define Rte_Ev_Run_StartApp_StartApp_Cyclic10ms (0x02ULL)
 # define Rte_Ev_Run_StartApp_StartApp_Cyclic1ms (0x04ULL)

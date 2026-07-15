@@ -17,7 +17,7 @@
 **                                                                            **
 **  VERSION   : 20.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-07-06, 16:21:30               !!!IGNORE-LINE!!!          **
+**  DATE, TIME: 2024-07-14, 21:03:43               !!!IGNORE-LINE!!!          **
 **                                                                            **
 **  GENERATOR : Build b191017-0938                 !!!IGNORE-LINE!!!          **
 **                                                                            **
@@ -60,6 +60,12 @@
                   <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_Init</BSW-MODULE-ENTRY-REF>
                 </BSW-MODULE-ENTRY-REF-CONDITIONAL>
                 <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_DeInit</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_ChDeInit</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
                   <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_IsInitDone</BSW-MODULE-ENTRY-REF>
                 </BSW-MODULE-ENTRY-REF-CONDITIONAL>
                 <BSW-MODULE-ENTRY-REF-CONDITIONAL>
@@ -67,6 +73,18 @@
                 </BSW-MODULE-ENTRY-REF-CONDITIONAL>
                 <BSW-MODULE-ENTRY-REF-CONDITIONAL>
                   <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_ChUpdate</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_ChTransferFreeze</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_ChTransferResume</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_ChEnableHardwareTrigger</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_ChDisableHardwareTrigger</BSW-MODULE-ENTRY-REF>
                 </BSW-MODULE-ENTRY-REF-CONDITIONAL>
                 <BSW-MODULE-ENTRY-REF-CONDITIONAL>
                   <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_ChStartTransfer</BSW-MODULE-ENTRY-REF>
@@ -107,6 +125,15 @@
               </PROVIDED-ENTRYS>
               <BSW-MODULE-DEPENDENCYS>
                 <BSW-MODULE-DEPENDENCY>
+                  <SHORT-NAME>DetDependency</SHORT-NAME>
+                  <TARGET-MODULE-ID>15</TARGET-MODULE-ID>
+                  <REQUIRED-ENTRYS>
+                    <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                      <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Det/BswModuleEntrys/Det_ReportError</BSW-MODULE-ENTRY-REF>
+                    </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  </REQUIRED-ENTRYS>
+                </BSW-MODULE-DEPENDENCY>
+                <BSW-MODULE-DEPENDENCY>
                   <SHORT-NAME>McalLibDependency</SHORT-NAME>
                   <TARGET-MODULE-ID>255</TARGET-MODULE-ID>
                   <REQUIRED-ENTRYS>
@@ -146,6 +173,19 @@
                       <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_Init</IMPLEMENTED-ENTRY-REF>
                     </BSW-CALLED-ENTITY>
                     <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>Dma_DeInit</SHORT-NAME>
+                       <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_DeInit</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                    <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>Dma_ChDeInit</SHORT-NAME>
+                      <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                        <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AURIX2G_Dma/BswModuleDescriptions/Dma/DmaBehavior/ChannelConfigUpdate</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                      </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                      <REENTRANCY-LEVEL>MULTICORE-REENTRANT</REENTRANCY-LEVEL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_ChDeInit</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                    <BSW-CALLED-ENTITY>
                       <SHORT-NAME>Dma_IsInitDone</SHORT-NAME>
                       <REENTRANCY-LEVEL>MULTICORE-REENTRANT</REENTRANCY-LEVEL>
                       <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_IsInitDone</IMPLEMENTED-ENTRY-REF>
@@ -165,6 +205,38 @@
                       </CAN-ENTER-EXCLUSIVE-AREA-REFS>
                       <REENTRANCY-LEVEL>MULTICORE-REENTRANT</REENTRANCY-LEVEL>
                       <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_ChUpdate</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                    <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>Dma_ChTransferFreeze</SHORT-NAME>
+                      <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                        <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AURIX2G_Dma/BswModuleDescriptions/Dma/DmaBehavior/ChannelConfigUpdate</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                      </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                      <REENTRANCY-LEVEL>MULTICORE-REENTRANT</REENTRANCY-LEVEL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_ChTransferFreeze</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                    <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>Dma_ChTransferResume</SHORT-NAME>
+                      <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                        <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AURIX2G_Dma/BswModuleDescriptions/Dma/DmaBehavior/ChannelConfigUpdate</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                      </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                      <REENTRANCY-LEVEL>MULTICORE-REENTRANT</REENTRANCY-LEVEL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_ChTransferResume</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                    <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>Dma_ChEnableHardwareTrigger</SHORT-NAME>
+                      <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                        <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AURIX2G_Dma/BswModuleDescriptions/Dma/DmaBehavior/ChannelConfigUpdate</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                      </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                      <REENTRANCY-LEVEL>MULTICORE-REENTRANT</REENTRANCY-LEVEL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_ChEnableHardwareTrigger</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                    <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>Dma_ChDisableHardwareTrigger</SHORT-NAME>
+                      <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                        <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/AURIX2G_Dma/BswModuleDescriptions/Dma/DmaBehavior/ChannelConfigUpdate</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                      </CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                      <REENTRANCY-LEVEL>MULTICORE-REENTRANT</REENTRANCY-LEVEL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Dma/BswModuleEntrys/Dma_ChDisableHardwareTrigger</IMPLEMENTED-ENTRY-REF>
                     </BSW-CALLED-ENTITY>
                     <BSW-CALLED-ENTITY>
                       <SHORT-NAME>Dma_ChInterruptEnable</SHORT-NAME>
@@ -293,6 +365,40 @@
               </ARGUMENTS>
             </BSW-MODULE-ENTRY>
             <BSW-MODULE-ENTRY>
+              <SHORT-NAME>Dma_DeInit</SHORT-NAME>
+              <SERVICE-ID>24</SERVICE-ID>
+              <IS-REENTRANT>false</IS-REENTRANT>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>REGULAR</CALL-TYPE>
+              <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>Dma_ChDeInit</SHORT-NAME>
+              <INTRODUCTION>
+                <NOTE SI="Dma_ChDeInit is reentrant for different DMA channels" NOTE-TYPE="HINT" />
+              </INTRODUCTION>
+              <SERVICE-ID>5</SERVICE-ID>
+              <IS-REENTRANT>true</IS-REENTRANT>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>REGULAR</CALL-TYPE>
+              <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+              <ARGUMENTS>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>Channel</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+              </ARGUMENTS>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
               <SHORT-NAME>Dma_IsInitDone</SHORT-NAME>
               <SERVICE-ID>2</SERVICE-ID>
               <IS-REENTRANT>true</IS-REENTRANT>
@@ -396,6 +502,106 @@
                             </SW-DATA-DEF-PROPS-VARIANTS>
                           </SW-DATA-DEF-PROPS>
                         </SW-POINTER-TARGET-PROPS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+              </ARGUMENTS>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>Dma_ChTransferFreeze</SHORT-NAME>
+              <INTRODUCTION>
+                <NOTE SI="Dma_ChTransferFreeze is reentrant for different DMA channels" NOTE-TYPE="HINT" />
+              </INTRODUCTION>
+              <SERVICE-ID>6</SERVICE-ID>
+              <IS-REENTRANT>true</IS-REENTRANT>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>REGULAR</CALL-TYPE>
+              <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+              <ARGUMENTS>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>Channel</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+              </ARGUMENTS>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>Dma_ChTransferResume</SHORT-NAME>
+              <INTRODUCTION>
+                <NOTE SI="Dma_ChTransferResume is reentrant for different DMA channels" NOTE-TYPE="HINT" />
+              </INTRODUCTION>
+              <SERVICE-ID>7</SERVICE-ID>
+              <IS-REENTRANT>true</IS-REENTRANT>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>REGULAR</CALL-TYPE>
+              <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+              <ARGUMENTS>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>Channel</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+              </ARGUMENTS>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>Dma_ChEnableHardwareTrigger</SHORT-NAME>
+              <INTRODUCTION>
+                <NOTE SI="Dma_ChEnableHardwareTrigger is reentrant for different DMA channels" NOTE-TYPE="HINT" />
+              </INTRODUCTION>
+              <SERVICE-ID>8</SERVICE-ID>
+              <IS-REENTRANT>true</IS-REENTRANT>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>REGULAR</CALL-TYPE>
+              <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+              <ARGUMENTS>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>Channel</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+              </ARGUMENTS>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>Dma_ChDisableHardwareTrigger</SHORT-NAME>
+              <INTRODUCTION>
+                <NOTE SI="Dma_ChDisableHardwareTrigger is reentrant for different DMA channels" NOTE-TYPE="HINT" />
+              </INTRODUCTION>
+              <SERVICE-ID>9</SERVICE-ID>
+              <IS-REENTRANT>true</IS-REENTRANT>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>REGULAR</CALL-TYPE>
+              <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+              <ARGUMENTS>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>Channel</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
                       </SW-DATA-DEF-PROPS-CONDITIONAL>
                     </SW-DATA-DEF-PROPS-VARIANTS>
                   </SW-DATA-DEF-PROPS>

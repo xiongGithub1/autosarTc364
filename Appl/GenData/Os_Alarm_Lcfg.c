@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Alarm_Lcfg.c
- *   Generation Time: 2024-07-02 20:30:46
+ *   Generation Time: 2024-07-14 19:14:51
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -92,6 +92,15 @@ OS_LOCAL VAR(Os_AlarmType, OS_VAR_NOINIT) OsCfg_Alarm_Rte_Al_TE2_Default_BSW_ASy
 
 /*! Dynamic alarm data: Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms */
 OS_LOCAL VAR(Os_AlarmType, OS_VAR_NOINIT) OsCfg_Alarm_Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms_Dyn;
+
+/*! Dynamic alarm data: Rte_Al_TE_MotorCdd_MotorCDDMainFunction */
+OS_LOCAL VAR(Os_AlarmType, OS_VAR_NOINIT) OsCfg_Alarm_Rte_Al_TE_MotorCdd_MotorCDDMainFunction_Dyn;
+
+/*! Dynamic alarm data: Rte_Al_TE_MotorControll_MotorControll_MainFunction */
+OS_LOCAL VAR(Os_AlarmType, OS_VAR_NOINIT) OsCfg_Alarm_Rte_Al_TE_MotorControll_MotorControll_MainFunction_Dyn;
+
+/*! Dynamic alarm data: Rte_Al_TE_Spi_Spi_MainFunction_Handling */
+OS_LOCAL VAR(Os_AlarmType, OS_VAR_NOINIT) OsCfg_Alarm_Rte_Al_TE_Spi_Spi_MainFunction_Handling_Dyn;
 
 /*! Dynamic alarm data: Rte_Al_TE_StartApp_StartApp_Cyclic1000ms */
 OS_LOCAL VAR(Os_AlarmType, OS_VAR_NOINIT) OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic1000ms_Dyn;
@@ -170,6 +179,84 @@ CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE2_Default_BSW_A
   },
   /* .Task  = */ &OsCfg_Task_Default_BSW_ASync_Task,
   /* .Mask  = */ Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_20ms
+};
+
+
+/*! Alarm configuration data: Rte_Al_TE_MotorCdd_MotorCDDMainFunction */
+CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_MotorCdd_MotorCDDMainFunction =
+{
+  /* .Alarm = */
+  {
+    /* .Job                   = */
+    {
+      /* .Dyn      = */ OS_ALARM_CASTDYN_ALARM_2_JOB(OsCfg_Alarm_Rte_Al_TE_MotorCdd_MotorCDDMainFunction_Dyn),
+      /* .Counter  = */ OS_COUNTER_CASTCONFIG_TIMERPFRT_2_COUNTER(OsCfg_Counter_SystemTimer),
+      /* .Callback = */ Os_AlarmActionSetEvent
+    },
+    /* .Autostart             = */
+    {
+      /* .AlarmTime        = */ 0u, /* 0.0 sec */
+      /* .Cycle            = */ 0u, /* 0.0 sec */
+      /* .ApplicationModes = */ OS_APPMODE_NONE,
+      /* .AlarmMode        = */ OS_ALARMMODE_ABSOLUTE
+    },
+    /* .AccessingApplications = */ OS_APPID2MASK(SystemApplication_OsCore0),  /* PRQA S 0410 */ /* MD_MSR_Dir1.1 */
+    /* .OwnerApplication      = */ &OsCfg_App_SystemApplication_OsCore0
+  },
+  /* .Task  = */ &OsCfg_Task_MotorTask,
+  /* .Mask  = */ Rte_Ev_Run_MotorCdd_MotorCDDMainFunction
+};
+
+
+/*! Alarm configuration data: Rte_Al_TE_MotorControll_MotorControll_MainFunction */
+CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_MotorControll_MotorControll_MainFunction =
+{
+  /* .Alarm = */
+  {
+    /* .Job                   = */
+    {
+      /* .Dyn      = */ OS_ALARM_CASTDYN_ALARM_2_JOB(OsCfg_Alarm_Rte_Al_TE_MotorControll_MotorControll_MainFunction_Dyn),
+      /* .Counter  = */ OS_COUNTER_CASTCONFIG_TIMERPFRT_2_COUNTER(OsCfg_Counter_SystemTimer),
+      /* .Callback = */ Os_AlarmActionSetEvent
+    },
+    /* .Autostart             = */
+    {
+      /* .AlarmTime        = */ 0u, /* 0.0 sec */
+      /* .Cycle            = */ 0u, /* 0.0 sec */
+      /* .ApplicationModes = */ OS_APPMODE_NONE,
+      /* .AlarmMode        = */ OS_ALARMMODE_ABSOLUTE
+    },
+    /* .AccessingApplications = */ OS_APPID2MASK(SystemApplication_OsCore0),  /* PRQA S 0410 */ /* MD_MSR_Dir1.1 */
+    /* .OwnerApplication      = */ &OsCfg_App_SystemApplication_OsCore0
+  },
+  /* .Task  = */ &OsCfg_Task_MotorTask,
+  /* .Mask  = */ Rte_Ev_Run_MotorControll_MotorControll_MainFunction
+};
+
+
+/*! Alarm configuration data: Rte_Al_TE_Spi_Spi_MainFunction_Handling */
+CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_Spi_Spi_MainFunction_Handling =
+{
+  /* .Alarm = */
+  {
+    /* .Job                   = */
+    {
+      /* .Dyn      = */ OS_ALARM_CASTDYN_ALARM_2_JOB(OsCfg_Alarm_Rte_Al_TE_Spi_Spi_MainFunction_Handling_Dyn),
+      /* .Counter  = */ OS_COUNTER_CASTCONFIG_TIMERPFRT_2_COUNTER(OsCfg_Counter_SystemTimer),
+      /* .Callback = */ Os_AlarmActionSetEvent
+    },
+    /* .Autostart             = */
+    {
+      /* .AlarmTime        = */ 0u, /* 0.0 sec */
+      /* .Cycle            = */ 0u, /* 0.0 sec */
+      /* .ApplicationModes = */ OS_APPMODE_NONE,
+      /* .AlarmMode        = */ OS_ALARMMODE_ABSOLUTE
+    },
+    /* .AccessingApplications = */ OS_APPID2MASK(SystemApplication_OsCore0),  /* PRQA S 0410 */ /* MD_MSR_Dir1.1 */
+    /* .OwnerApplication      = */ &OsCfg_App_SystemApplication_OsCore0
+  },
+  /* .Task  = */ &OsCfg_Task_Default_BSW_ASync_Task,
+  /* .Mask  = */ Rte_Ev_Run_Spi_Spi_MainFunction_Handling
 };
 
 
@@ -288,6 +375,9 @@ CONSTP2CONST(Os_AlarmConfigType, OS_CONST, OS_CONST) OsCfg_AlarmRefs[OS_ALARMID_
 {
   OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms),
   OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms),
+  OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_MotorCdd_MotorCDDMainFunction),
+  OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_MotorControll_MotorControll_MainFunction),
+  OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_Spi_Spi_MainFunction_Handling),
   OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic1000ms),
   OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic10ms),
   OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic1ms),

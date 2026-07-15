@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was saved with a tool from Vector Informatik GmbH-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="3433654A-40AF-4F1C-B6CF-A768EF928CA1">
+      <SHORT-NAME>ComponentTypes</SHORT-NAME>
+      <ELEMENTS>
+        <ECU-ABSTRACTION-SW-COMPONENT-TYPE UUID="16B82D5C-4EBA-453C-BFD2-416056A2E284">
+          <SHORT-NAME>IowHa</SHORT-NAME>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="3503DB4B-F4EA-4999-95FD-9495AF824853">
+              <SHORT-NAME>IowHa_InternalBehavior</SHORT-NAME>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </ECU-ABSTRACTION-SW-COMPONENT-TYPE>
+        <SWC-IMPLEMENTATION UUID="B2F6623F-0043-449F-8805-C81BADEA277F">
+          <SHORT-NAME>IowHa_Implementation</SHORT-NAME>
+          <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ComponentTypes/IowHa/IowHa_InternalBehavior</BEHAVIOR-REF>
+        </SWC-IMPLEMENTATION>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

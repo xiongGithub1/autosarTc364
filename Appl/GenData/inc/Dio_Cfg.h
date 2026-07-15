@@ -15,7 +15,7 @@
 **                                                                            **
 **  VERSION   : 8.0.0                                                         **
 **                                                                            **
-**  DATE, TIME: 2024-07-06, 16:21:30         !!!IGNORE-LINE!!!                **
+**  DATE, TIME: 2024-07-14, 21:03:45         !!!IGNORE-LINE!!!                **
 **                                                                            **
 **  GENERATOR : Build b191017-0938             !!!IGNORE-LINE!!!              **
 **                                                                            **
@@ -553,6 +553,32 @@ according to requirement ecuc_sws_2108*/
 /* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers are defined
 according to requirement ecuc_sws_2108*/
 #define DioConf_DioChannel_DioChannel_9183ENA (DIO_CHANNEL_2_8)
+#endif
+/*
+DIO PORT : (DioPort_P15)
+*/
+#ifndef DioConf_DioPort_DioPort_P15
+#define DioConf_DioPort_DioPort_P15 (DIO_PORT_15)
+#endif
+/* DIO Channel : (DioChannel_test) */
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers are defined
+according to requirement ecuc_sws_2108*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: External identifiers are defined
+according to requirement ecuc_sws_2108*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: External identifiers are defined
+according to requirement ecuc_sws_2108*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers are defined
+according to requirement ecuc_sws_2108*/
+#ifndef DioConf_DioChannel_DioChannel_test
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers are defined
+according to requirement ecuc_sws_2108*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: External identifiers are defined
+according to requirement ecuc_sws_2108*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: External identifiers are defined
+according to requirement ecuc_sws_2108*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers are defined
+according to requirement ecuc_sws_2108*/
+#define DioConf_DioChannel_DioChannel_test (DIO_CHANNEL_15_2)
 #endif
 
 

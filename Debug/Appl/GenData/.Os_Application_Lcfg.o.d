@@ -118,6 +118,54 @@ Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
 Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
@@ -426,6 +474,14 @@ Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Derivative_TC36x_Types.h" :
 Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Stack_Lcfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Stack_Lcfg.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
 Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
 Appl\GenData\Os_Application_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"

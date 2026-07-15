@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Stack_Lcfg.h
- *   Generation Time: 2024-07-06 14:46:49
+ *   Generation Time: 2024-07-14 20:32:32
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -99,6 +99,17 @@ extern OS_STACK_DECLARE(OsCfg_Stack_Default_BSW_ASync_Task_Dyn, OS_CFG_SIZE_DEFA
 # include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
+# define OS_START_SEC_STACK_MOTORTASK_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/* Task stack: MotorTask */
+/* User: [MotorTask] */
+extern OS_STACK_DECLARE(OsCfg_Stack_MotorTask_Dyn, OS_CFG_SIZE_MOTORTASK_STACK);
+
+# define OS_STOP_SEC_STACK_MOTORTASK_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
 # define OS_START_SEC_STACK_OSCORE0_ERROR_VAR_NOINIT_UNSPECIFIED
 # include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
@@ -125,7 +136,7 @@ extern OS_STACK_DECLARE(OsCfg_Stack_OsCore0_Init_Dyn, OS_CFG_SIZE_OSCORE0_INIT_S
 # include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 /* ISR core global stack: OsCore0_Isr_Core */
-/* User: [AdcIsr_G0, AdcIsr_G2, AdcIsr_G3, AdcIsr_G8, CanIsr_0, CounterIsr_SystemTimer] */
+/* User: [AdcIsr_G0, AdcIsr_G8, CanIsr_0, CounterIsr_SystemTimer, OsIsr_DMA_ERR, OsIsr_QSPI1_ERR, OsIsr_QSPI1_PT, OsIsr_QSPI2_ERR, OsIsr_QSPI2_PT, OsIsr_QSPI3_ERR, OsIsr_QSPI3_PT] */
 extern OS_STACK_DECLARE(OsCfg_Stack_OsCore0_Isr_Core_Dyn, OS_CFG_SIZE_OSCORE0_ISR_CORE_STACK);
 
 # define OS_STOP_SEC_STACK_OSCORE0_ISR_CORE_VAR_NOINIT_UNSPECIFIED
@@ -199,6 +210,9 @@ extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_Default_Appl_Task;
 
 /*! Stack configuration data: Default_BSW_ASync_Task */
 extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_Default_BSW_ASync_Task;
+
+/*! Stack configuration data: MotorTask */
+extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_MotorTask;
 
 /*! Stack configuration data: OsCore0_Error */
 extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore0_Error;

@@ -67,14 +67,18 @@ FUNC(void, CAN_CODE) Can_MainFunction_Write(void); /* PRQA S 3451, 3449 */ /* MD
 
 # define SchM_Exit_Can_CAN_EXCLUSIVE_AREA_5() ResumeAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
 
-# define SchM_Enter_Can_CAN_EXCLUSIVE_AREA_6() SuspendAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
-
-# define SchM_Exit_Can_CAN_EXCLUSIVE_AREA_6() ResumeAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
-
 # define SchM_Enter_Can_CAN_EXCLUSIVE_AREA_7() SuspendAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
 
 # define SchM_Exit_Can_CAN_EXCLUSIVE_AREA_7() ResumeAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
 
+# define RTE_START_SEC_CODE
+# include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+FUNC(void, RTE_CODE) SchM_Enter_Can_CAN_EXCLUSIVE_AREA_6(void);
+FUNC(void, RTE_CODE) SchM_Exit_Can_CAN_EXCLUSIVE_AREA_6(void);
+
+# define RTE_STOP_SEC_CODE
+# include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 # ifdef __cplusplus
 } /* extern "C" */

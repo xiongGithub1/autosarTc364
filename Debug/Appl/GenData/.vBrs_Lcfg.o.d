@@ -20,7 +20,7 @@ Appl\GenData\vBrs_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenD
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\E2EXf_Compiler_Cfg.h" :
 Appl\GenData\vBrs_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Compiler_Cfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Compiler_Cfg.h" :
-Appl\GenData\vBrs_Lcfg.o :	..\Appl\GenData\BrsMain_Types.h
-..\Appl\GenData\BrsMain_Types.h :
-Appl\GenData\vBrs_Lcfg.o :	..\Appl\GenData\BrsHw.h
-..\Appl\GenData\BrsHw.h :
+Appl\GenData\vBrs_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\BrsMain_Types.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\BrsMain_Types.h" :
+Appl\GenData\vBrs_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\BrsHw.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\BrsHw.h" :

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Task_Lcfg.c
- *   Generation Time: 2026-06-30 18:16:15
+ *   Generation Time: 2024-07-10 20:18:18
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -114,6 +114,9 @@ OS_LOCAL VAR(Os_TaskType, OS_VAR_NOINIT) OsCfg_Task_Default_Init_Task_Trusted_Dy
 /*! Dynamic task data: IdleTask_OsCore0 */
 OS_LOCAL VAR(Os_TaskType, OS_VAR_NOINIT) OsCfg_Task_IdleTask_OsCore0_Dyn;
 
+/*! Dynamic task data: MotorTask */
+OS_LOCAL VAR(Os_TaskType, OS_VAR_NOINIT) OsCfg_Task_MotorTask_Dyn;
+
 #define OS_STOP_SEC_CORE0_VAR_NOINIT_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
@@ -152,7 +155,7 @@ CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_Default_Appl_Init_Task =
     /* .InitDuringStartUp     = */ TRUE,
     /* .UsesFpu               = */ FALSE
   },
-  /* .HomePriority           = */ (Os_TaskPrioType)2u,
+  /* .HomePriority           = */ (Os_TaskPrioType)3u,
   /* .TaskId                 = */ Default_Appl_Init_Task,
   /* .RunningPriority        = */ (Os_TaskPrioType)0u,
   /* .MaxActivations         = */ (Os_ActivationCntType)1u,
@@ -187,7 +190,7 @@ CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_Default_Appl_Task =
     /* .InitDuringStartUp     = */ TRUE,
     /* .UsesFpu               = */ FALSE
   },
-  /* .HomePriority           = */ (Os_TaskPrioType)4u,
+  /* .HomePriority           = */ (Os_TaskPrioType)5u,
   /* .TaskId                 = */ Default_Appl_Task,
   /* .RunningPriority        = */ (Os_TaskPrioType)0u,
   /* .MaxActivations         = */ (Os_ActivationCntType)1u,
@@ -222,7 +225,7 @@ CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_Default_BSW_ASync_Task =
     /* .InitDuringStartUp     = */ TRUE,
     /* .UsesFpu               = */ FALSE
   },
-  /* .HomePriority           = */ (Os_TaskPrioType)3u,
+  /* .HomePriority           = */ (Os_TaskPrioType)4u,
   /* .TaskId                 = */ Default_BSW_ASync_Task,
   /* .RunningPriority        = */ (Os_TaskPrioType)0u,
   /* .MaxActivations         = */ (Os_ActivationCntType)1u,
@@ -257,7 +260,7 @@ CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_Default_Init_Task =
     /* .InitDuringStartUp     = */ TRUE,
     /* .UsesFpu               = */ FALSE
   },
-  /* .HomePriority           = */ (Os_TaskPrioType)0u,
+  /* .HomePriority           = */ (Os_TaskPrioType)1u,
   /* .TaskId                 = */ Default_Init_Task,
   /* .RunningPriority        = */ (Os_TaskPrioType)0u,
   /* .MaxActivations         = */ (Os_ActivationCntType)1u,
@@ -292,7 +295,7 @@ CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_Default_Init_Task_Trusted =
     /* .InitDuringStartUp     = */ TRUE,
     /* .UsesFpu               = */ FALSE
   },
-  /* .HomePriority           = */ (Os_TaskPrioType)1u,
+  /* .HomePriority           = */ (Os_TaskPrioType)2u,
   /* .TaskId                 = */ Default_Init_Task_Trusted,
   /* .RunningPriority        = */ (Os_TaskPrioType)0u,
   /* .MaxActivations         = */ (Os_ActivationCntType)1u,
@@ -327,15 +330,50 @@ CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_IdleTask_OsCore0 =
     /* .InitDuringStartUp     = */ TRUE,
     /* .UsesFpu               = */ FALSE
   },
-  /* .HomePriority           = */ (Os_TaskPrioType)5u,
+  /* .HomePriority           = */ (Os_TaskPrioType)6u,
   /* .TaskId                 = */ IdleTask_OsCore0,
-  /* .RunningPriority        = */ (Os_TaskPrioType)5u,
+  /* .RunningPriority        = */ (Os_TaskPrioType)6u,
   /* .MaxActivations         = */ (Os_ActivationCntType)1u,
   /* .AutostartModes         = */ OS_APPMODE_ANY,
     /* .AccessingApplications = */ OS_APPID2MASK(SystemApplication_OsCore0),  /* PRQA S 0410 */ /* MD_MSR_Dir1.1 */
   /* .NumSchEventsRoundRobin = */ 0u,
   /* .RoundRobinEnabled      = */ FALSE,
   /* .IsExtended             = */ (boolean)FALSE,
+  /* .StackSharing           = */ OS_TASKSCHEDULE_ALLOWED
+};
+
+
+/*! Task configuration data: MotorTask */
+CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_MotorTask =
+{
+  /* .Thread                 = */
+  {
+    /* .ContextConfig         = */ &OsCfg_Hal_Context_MotorTask,
+    /* .Context               = */ &OsCfg_Hal_Context_MotorTask_Dyn,
+    /* .Stack                 = */ &OsCfg_Stack_MotorTask,
+    /* .Dyn                   = */ OS_TASK_CASTDYN_TASK_2_THREAD(OsCfg_Task_MotorTask_Dyn),
+    /* .OwnerApplication      = */ &OsCfg_App_SystemApplication_OsCore0,
+    /* .Core                  = */ &OsCfg_Core_OsCore0,
+    /* .IntApiState           = */ &OsCfg_Core_OsCore0_Dyn.IntApiState,
+    /* .TimeProtConfig        = */ NULL_PTR,
+    /* .MpAccessRightsInitial = */ NULL_PTR,
+    /* .AccessRights          = */ &OsCfg_AccessCheck_NoAccess,
+    /* .Trace                 = */ NULL_PTR,
+    /* .FpuContext            = */ NULL_PTR,
+    /* .InitialCallContext    = */ OS_CALLCONTEXT_TASK,
+    /* .PreThreadHook         = */ &Os_TaskCallPreTaskHook,
+    /* .InitDuringStartUp     = */ TRUE,
+    /* .UsesFpu               = */ FALSE
+  },
+  /* .HomePriority           = */ (Os_TaskPrioType)0u,
+  /* .TaskId                 = */ MotorTask,
+  /* .RunningPriority        = */ (Os_TaskPrioType)0u,
+  /* .MaxActivations         = */ (Os_ActivationCntType)1u,
+  /* .AutostartModes         = */ OS_APPMODE_NONE,
+    /* .AccessingApplications = */ OS_APPID2MASK(SystemApplication_OsCore0),  /* PRQA S 0410 */ /* MD_MSR_Dir1.1 */
+  /* .NumSchEventsRoundRobin = */ 0u,
+  /* .RoundRobinEnabled      = */ FALSE,
+  /* .IsExtended             = */ (boolean)TRUE,
   /* .StackSharing           = */ OS_TASKSCHEDULE_ALLOWED
 };
 
@@ -355,6 +393,7 @@ CONSTP2CONST(Os_TaskConfigType, OS_CONST, OS_CONST) OsCfg_TaskRefs[OS_TASKID_COU
   OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_Default_Init_Task),
   OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_Default_Init_Task_Trusted),
   OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_IdleTask_OsCore0),
+  OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_MotorTask),
   NULL_PTR
 };
 

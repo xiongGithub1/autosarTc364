@@ -42,18 +42,18 @@
  *********************************************************************************************************************/
 
 #include "Rte_StartApp.h"
-
+#include "ComM_Cfg.h"
 #include "Dio.h"
 #include "Dio_Cfg.h"
-#include "adc_test.h"
-#include "can_test.h"
-#include "pwm_test.h"
-#include "Spi_test.h"
+#include "Rte_EcuM_Type.h"
+uint32 StartApp_Cyclic1msCounter = 0U;
+uint32 StartApp_Cyclic250msCounter = 0U;
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of include and declaration area >>        DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
-
+#include "tle9180_test.h"
+#include "Appl_BringupCfg.h"
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of include and declaration area >>          DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -110,7 +110,6 @@ FUNC(void, StartApp_CODE) StartApp_Cyclic10ms(void) /* PRQA S 0624, 3206 */ /* M
  * Symbol: StartApp_Cyclic10ms
  *********************************************************************************************************************/
 
-
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -138,12 +137,15 @@ FUNC(void, StartApp_CODE) StartApp_Cyclic10ms(void) /* PRQA S 0624, 3206 */ /* M
 
 FUNC(void, StartApp_CODE) StartApp_Cyclic1ms(void) /* PRQA S 0624, 3206 */ /* MD_Rte_0624, MD_Rte_3206 */
 {
+  StartApp_Cyclic1msCounter++;
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
  * Symbol: StartApp_Cyclic1ms
  *********************************************************************************************************************/
-	PwmTest_RunOnce();
-
+  /* SPI bring-up: poll 9180 + update Tle9180Test_* watch vars. */
+#if (APPL_SPI9180_BRINGUP == 1)
+  Tle9180Test_RunOnce();
+#endif
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -171,20 +173,13 @@ FUNC(void, StartApp_CODE) StartApp_Cyclic1ms(void) /* PRQA S 0624, 3206 */ /* MD
 
 FUNC(void, StartApp_CODE) StartApp_Cyclic250ms(void) /* PRQA S 0624, 3206 */ /* MD_Rte_0624, MD_Rte_3206 */
 {
+  StartApp_Cyclic250msCounter++;
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
  * Symbol: StartApp_Cyclic500ms
  *********************************************************************************************************************/
 
  Dio_FlipChannel(DioConf_DioChannel_DioChannel_led1);
-  CanTest_RunOnce();
-
-  if (SpiTest_9183SpiTestEnabled == TRUE)
-  {
-    SpiTest_RunOnce();
-  }
-
-  AdcTest_RunOnce();
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
@@ -216,13 +211,15 @@ FUNC(void, StartApp_CODE) StartApp_Init(void) /* PRQA S 0624, 3206 */ /* MD_Rte_
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
  * Symbol: StartApp_Init
  *********************************************************************************************************************/
-  CanTest_Init();
-  SpiTest_Init();
-  AdcTest_Init();
-  PwmTest_Init();
-  AdcTest_RunOnce();
-  PwmTest_RunOnce();
-  SpiTest_RunOnce();
+	(void)EcuM_RequestRUN(EcuMConf_EcuMFixedUserConfig_EcuMFixedUserConfig);
+	ComM_CommunicationAllowed(ComMConf_ComMChannel_CN_CAN00_5e566ad9, TRUE);
+	(void)ComM_RequestComMode(ComMConf_ComMUser_CN_CAN00_06ecbb07,
+	          COMM_FULL_COMMUNICATION);
+
+  /* TLE9180 SPI bring-up only; set APPL_SPI9180_BRINGUP=0 to restore motor path. */
+#if (APPL_SPI9180_BRINGUP == 1)
+  Tle9180Test_Init();
+#endif
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -275,6 +272,8 @@ FUNC(void, StartApp_CODE) StartApp_Init(void) /* PRQA S 0624, 3206 */ /* MD_Rte_
      Prevention: Not required.
 
 */
+
+
 
 
 

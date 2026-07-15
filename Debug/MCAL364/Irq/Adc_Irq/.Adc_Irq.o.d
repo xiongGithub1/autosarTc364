@@ -282,6 +282,54 @@ MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW3
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
 MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_OsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_OsInt.h" :
 MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Lcfg.h"
@@ -328,6 +376,66 @@ MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Irq_MemMap.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Irq_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\MCAL364\Dio\ssc\inc\Dio.h"
+"E:\workFiles\TC367\TC367\workspace\last364\MCAL364\Dio\ssc\inc\Dio.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\inc\Dio_Cfg.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\inc\Dio_Cfg.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dio_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dio_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dio_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dio_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dio_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dio_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dio_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Dio_MemMap.h" :
 MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Irq\Adc_Irq\Adc_Irq.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"

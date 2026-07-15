@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 22.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-07-06, 16:21:29     !!!IGNORE-LINE!!!                    **
+**  DATE, TIME: 2024-07-14, 21:03:43     !!!IGNORE-LINE!!!                    **
 **                                                                            **
 **  GENERATOR : Build b191017-0938         !!!IGNORE-LINE!!!                  **
 **                                                                            **
@@ -74,14 +74,14 @@ Mcu_17_Gtm_AtomChUserData[MCU_17_GTM_NO_OF_ATOM_MODULES][MCU_17_GTM_NO_OF_ATOM_C
 {
   /* ATOM Module 0 */
   {
+    0x00000003,
+    0x00000103,
+    0x00000203,
+    0x00000303,
     0x00000000,
     0x00000000,
     0x00000000,
-    0x00000000,
-    0x00000000,
-    0x00000000,
-    0x00000000,
-    0x00000000
+    0x00000001
   },
   /* ATOM Module 1 */
   {
@@ -137,12 +137,12 @@ Mcu_17_Gtm_TomChUserData[MCU_17_GTM_NO_OF_TOM_MODULES][MCU_17_GTM_NO_OF_TOM_CHAN
     0x00000000,
     0x00000000,
     0x00000000,
-    0x00000003,
-    0x00000103,
-    0x00000203,
-    0x00000303,
-    0x00000403,
-    0x00000503,
+    0x00000000,
+    0x00000000,
+    0x00000000,
+    0x00000000,
+    0x00000000,
+    0x00000000,
     0x00000000
   },
   /* TOM Module 1 */

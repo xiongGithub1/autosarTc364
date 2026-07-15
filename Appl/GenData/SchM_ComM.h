@@ -43,10 +43,6 @@ FUNC(void, COMM_CODE) ComM_MainFunction_0(void); /* PRQA S 3451, 3449 */ /* MD_R
 
 # define SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_0() ResumeAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
 
-# define SchM_Enter_ComM_COMM_EXCLUSIVE_AREA_1() SuspendAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
-
-# define SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_1() ResumeAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
-
 # define SchM_Enter_ComM_COMM_EXCLUSIVE_AREA_2() SuspendAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
 
 # define SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_2() ResumeAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
@@ -71,6 +67,14 @@ FUNC(void, COMM_CODE) ComM_MainFunction_0(void); /* PRQA S 3451, 3449 */ /* MD_R
 
 # define SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_7() ResumeAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
 
+# define RTE_START_SEC_CODE
+# include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+FUNC(void, RTE_CODE) SchM_Enter_ComM_COMM_EXCLUSIVE_AREA_1(void);
+FUNC(void, RTE_CODE) SchM_Exit_ComM_COMM_EXCLUSIVE_AREA_1(void);
+
+# define RTE_STOP_SEC_CODE
+# include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 # ifdef __cplusplus
 } /* extern "C" */

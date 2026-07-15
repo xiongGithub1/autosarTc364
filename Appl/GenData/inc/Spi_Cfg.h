@@ -15,7 +15,7 @@
 **                                                                            **
 **  VERSION   : 16.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-07-06, 16:21:29  !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2024-07-14, 21:03:47  !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  GENERATOR : Build b191017-0938       !!!IGNORE-LINE!!!                  **
 **                                                                            **
@@ -73,7 +73,10 @@
 1 - Only Asynchronous Transmission(Interrupt mode only)
 2 - Both Sync and Async(Both Interrupt and Polling Mode) Transmission */
 
-#define SPI_LEVEL_DELIVERED                   (0U)
+#define SPI_LEVEL_DELIVERED                   (2U)
+/* Main function period - Used by application to poll the SPI Hw module */
+
+#define SPI_MAIN_FUNCTION_PERIOD              (0.005U)
 /* Kind of Channele buffers allowed
 0 - Only Internal buffers allowed
 1 - Only External buffers allowed
@@ -94,7 +97,7 @@
 /* Specifies if Sequences can be interrupted during
 transmission. For Level = 0, its value is STD_OFF by default */
 
-#define SPI_INTERRUPTIBLE_SEQ_ALLOWED         (STD_OFF)
+#define SPI_INTERRUPTIBLE_SEQ_ALLOWED         (STD_ON)
 /* Configuration Options:
 SPI Sequence Interruptible Options */
 #define SPI_SEQ_INT_FALSE                     ((uint8)0U)
@@ -111,19 +114,23 @@ sequences are allowed. For Level = 1, its value is STD_OFF by default */
 /* Is QSPI0 Used */
 #define SPI_HW_QSPI0_USED                     (STD_OFF)
 /* Is QSPI1 Used */
-#define SPI_HW_QSPI1_USED                     (STD_OFF)
+#define SPI_HW_QSPI1_USED                     (STD_ON)
+/* Index for QSPI1module */
+#define SPI_QSPI1_INDEX                       (1U)
+/* Sync/Async */
+#define SPI_QSPI1_HWTYPE                      (SPI_ASYNC_BUS)
 /* Is QSPI2 Used */
 #define SPI_HW_QSPI2_USED                     (STD_ON)
 /* Index for QSPI2 module */
 #define SPI_QSPI2_INDEX                       (2U)
 /* Sync/Async */
-#define SPI_QSPI2_HWTYPE                      (SPI_SYNC_BUS)
+#define SPI_QSPI2_HWTYPE                      (SPI_ASYNC_BUS)
 /* Is QSPI3 Used */
 #define SPI_HW_QSPI3_USED                     (STD_ON)
 /* Index for QSPI3 module */
 #define SPI_QSPI3_INDEX                       (3U)
 /* Sync/Async */
-#define SPI_QSPI3_HWTYPE                      (SPI_SYNC_BUS)
+#define SPI_QSPI3_HWTYPE                      (SPI_ASYNC_BUS)
 /* Timeout value to wait for trail delay to be completed.
 Should be atleast greater than the Trail delay
 (also to avoid possible infinite loops) */
@@ -150,7 +157,7 @@ Module enters sleep mode upon sleep request         */
 
 #define SPI_JOB_QUEUE_LENGTH_QSPI0            (0U)
 /* Job Queue Length for QSPI1 */
-#define SPI_JOB_QUEUE_LENGTH_QSPI1            (0U)
+#define SPI_JOB_QUEUE_LENGTH_QSPI1            (3U)
 /* Job Queue Length for QSPI2 */
 #define SPI_JOB_QUEUE_LENGTH_QSPI2            (3U)
 /* Job Queue Length for QSPI3 */
@@ -173,6 +180,7 @@ Module enters sleep mode upon sleep request         */
 #define SPI_QSPI_CHANNEL14                    ((uint8)14U)
 #define SPI_QSPI_CHANNEL15                    ((uint8)15U)
 /* Number of IB channels on Async Hw */
+/*Kernel 1*/
 /*Kernel 2*/
 /*Kernel 3*/
 
@@ -184,13 +192,18 @@ Module enters sleep mode upon sleep request         */
 #define SPI_CORE1_ENABLE     STD_OFF
 
 /* Number of EB channels */
+/*kernel 1*/
 /*Kernel 2*/
 /*Kernel 3*/
 
-#define SPI_NUM_EB_CHANNELS_CORE0            (2U)
+#define SPI_NUM_EB_CHANNELS_CORE0            (3U)
 
-#define SPI_DMA_MAX_TCS_NUM_QSPI2 (0U)
-#define SPI_DMA_MAX_TCS_NUM_QSPI3 (0U)
+/* DMA Transaction control set per channel for QSPI1 */
+#define SPI_DMA_MAX_TCS_NUM_QSPI1             (1U)
+/* DMA Transaction control set per channel for QSPI2 */
+#define SPI_DMA_MAX_TCS_NUM_QSPI2             (1U)
+/* DMA Transaction control set per channel for QSPI3 */
+#define SPI_DMA_MAX_TCS_NUM_QSPI3             (1U)
 /* Indicates no CS to be done */
 #define SPI_CS_VIA_HW_OR_NONE                 (0xFFFFU)
 #define SPI_PARITY_EVEN                       (0U)
@@ -224,10 +237,22 @@ convention followed for symbolic names, defined as per AUTOSAR  */
 convention followed for symbolic names, defined as per AUTOSAR  */
 
 #define SpiConf_SpiSequence_SpiSequence_5012BD      (1U)
+/* MISRA2012_RULE_5_1_JUSTIFICATION: The macro is generated as per the naming
+convention followed for symbolic names, defined as per AUTOSAR  */
+/* MISRA2012_RULE_5_2_JUSTIFICATION: The macro is generated as per the naming
+convention followed for symbolic names, defined as per AUTOSAR  */
+/* MISRA2012_RULE_5_4_JUSTIFICATION: The macro is generated as per the naming
+convention followed for symbolic names, defined as per AUTOSAR  */
+/* MISRA2012_RULE_5_5_JUSTIFICATION: The macro is generated as per the naming
+convention followed for symbolic names, defined as per AUTOSAR  */
+
+#define SpiConf_SpiSequence_SpiSequence_35584      (2U)
 /* Job ID */
 #define SpiConf_SpiJob_SpiJob_9183      (0U)
 
 #define SpiConf_SpiJob_SpiJob_5012BD      (1U)
+
+#define SpiConf_SpiJob_SpiJob_35584      (2U)
 /* Channel ID *//* MISRA2012_RULE_5_1_JUSTIFICATION: The macro is generated as per the naming
 convention followed for symbolic names, defined as per AUTOSAR  */
 /* MISRA2012_RULE_5_2_JUSTIFICATION: The macro is generated as per the naming
@@ -248,20 +273,31 @@ convention followed for symbolic names, defined as per AUTOSAR  */
 convention followed for symbolic names, defined as per AUTOSAR  */
 
 #define SpiConf_SpiChannel_SpiChannel_5012BD1      (1U)
+/* MISRA2012_RULE_5_1_JUSTIFICATION: The macro is generated as per the naming
+convention followed for symbolic names, defined as per AUTOSAR  */
+/* MISRA2012_RULE_5_2_JUSTIFICATION: The macro is generated as per the naming
+convention followed for symbolic names, defined as per AUTOSAR  */
+/* MISRA2012_RULE_5_4_JUSTIFICATION: The macro is generated as per the naming
+convention followed for symbolic names, defined as per AUTOSAR  */
+/* MISRA2012_RULE_5_5_JUSTIFICATION: The macro is generated as per the naming
+convention followed for symbolic names, defined as per AUTOSAR  */
+
+#define SpiConf_SpiChannel_SpiChannel_35584      (2U)
 /*Physical sequence ID*/
 /* Physical Job ID *//* Channel ID *//*end Physical*/
 
 
-#define SPI_SEQUENCE_COUNT_CORE0      2U
+#define SPI_SEQUENCE_COUNT_CORE0      3U
 
 
 #define SPI_SEQUENCE_COUNT_CORE1      0U
 
 
-#define SPI_JOB_COUNT_CORE0       2U
+#define SPI_JOB_COUNT_CORE0       3U
 
 
 #define SPI_JOB_COUNT_CORE1       0U
+#define SPI_QSPI1_CORE          0
 #define SPI_QSPI2_CORE          0
 #define SPI_QSPI3_CORE          0
 

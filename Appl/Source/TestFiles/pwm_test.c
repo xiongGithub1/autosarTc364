@@ -19,35 +19,29 @@ volatile uint32 PwmTest_DisabledCounter = 0U;
 volatile Std_ReturnType PwmTest_InitCheckResult = E_NOT_OK;
 volatile uint16 PwmTest_Duty[PWM_TEST_CHANNEL_COUNT] =
 {
-  PWM_TEST_DUTY_0_PERCENT,
-  PWM_TEST_DUTY_0_PERCENT,
-  PWM_TEST_DUTY_0_PERCENT,
   PWM_TEST_DUTY_10_PERCENT,
   PWM_TEST_DUTY_20_PERCENT,
-  PWM_TEST_DUTY_30_PERCENT
+  PWM_TEST_DUTY_30_PERCENT,
+
 };
 volatile uint16 PwmTest_LastAppliedDuty[PWM_TEST_CHANNEL_COUNT] =
 {
-  0U, 0U, 0U, 0U, 0U, 0U
+  0U, 0U, 0U,
 };
 volatile Pwm_17_GtmCcu6_OutputStateType PwmTest_OutputState[PWM_TEST_CHANNEL_COUNT] =
 {
   PWM_17_GTMCCU6_LOW,
   PWM_17_GTMCCU6_LOW,
   PWM_17_GTMCCU6_LOW,
-  PWM_17_GTMCCU6_LOW,
-  PWM_17_GTMCCU6_LOW,
-  PWM_17_GTMCCU6_LOW
+
 };
 
 static const Pwm_17_GtmCcu6_ChannelType PwmTest_Channel[PWM_TEST_CHANNEL_COUNT] =
 {
-  Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9183IH1,
-  Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9183IH2,
-  Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9183IH3,
-  Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9183IL1,
-  Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9183IL2,
-  Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9183IL3
+  Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9180IH1,
+  Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9180IH2,
+  Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9180IH3,
+
 };
 
 static uint16 PwmTest_RampDuty = PWM_TEST_DUTY_0_PERCENT;

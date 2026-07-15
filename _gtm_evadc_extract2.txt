@@ -1,0 +1,995 @@
+=== PAGE 548 score 4 ===
+User’s Manual 26-200 V2.0.0 
+GTMV2.2.24  2021-02
+AURIX™ TC36x
+ 
+Generic Timer Module (GTM)
+26.3.9 GTM to EVADC Connections
+Figure 20 GTM to EVADC Connections Overview
+Figure 21 GTM to EVADC Connections Registers Overview
+ 
+GTM_ADCTRIG_TC36x.vsd
+16
+16
+ADCTRIG0OUT0.SEL7..SEL0
+16:1
+16:1
+8
+Muxes
+ADC_TRIG0[0]
+ADC_TRIG0[7]TOM/ATOM/
+CDTM Outputs
+(8 * 16 lines)
+16
+16
+ADCTRIG0OUT1.SEL3..SEL0
+4
+Muxes
+16:1 ADC_TRIG0[8]
+ADC_TRIG0[11]TOM/ATOM/
+CDTM Outputs
+(4 * 16 lines)
+GTM
+to  
+EVADC and DSADC 
+Trigger Inp uts
+ ADC_TRIG1[7:0]
+ADC_TRIG1[11:8]
+ADCTRIG1OUT0.SEL7..SEL0
+ADCTRIG1OUT1.SEL3..SEL0
+TOM/ATOM/
+CDTM Outputs
+((8+4) * 16 lines)
+ ADC_TRIG2[7:0]
+ADC_TRIG2[11:8]
+ADCTRIG2OUT0.SEL7..SEL0
+ADCTRIG2OUT1.SEL3..SEL0
+TOM/ATOM/
+CDTM Outputs
+((8+4) * 16 lines)
+ ADC_TRIG3[7:0]
+ADC_TRIG3[11:8]
+ADCTRIG3OUT0.SEL7..SEL0
+ADCTRIG3OUT1.SEL3..SEL0
+TOM/ATOM/
+CDTM Outputs
+((8+4) * 16 lines)
+ ADC_TRIG4[7:0]
+ADC_TRIG4[11:8]
+ADCTRIG4OUT0.SEL7..SEL0
+ADCTRIG4OUT1.SEL3..SEL0
+TOM/ATOM/
+CDTM Outputs
+((8+4) * 16 lines)
+to  S ENT_TRIG[11:0],
+EVADC and DSADC 
+Trigger Inp uts
+to  
+EVADC  
+Trigger Inp uts
+GTM_ADCTRIG_Register s_TC36x.vsd
+ADC TR IG1OUT 0
+ADC TR IG1OUT 1
+TRIG0
+GTM to EVADC Connections:  Tr igger Selection
+TRIG1 TRIG2 TRIG3
+ADC TRIG0OUT 0
+ADC TRIG0OUT 1
+TRIG4
+ADC TRIG2OUT 0
+ADC TRIG2OUT 1
+ADC TRIG3OUT 0
+ADC TRIG3OUT 1
+ADC TRIG4OUT 0
+ADC TRIG4OUT 1
+OPEN MARKET VERSION
+
+=== PAGE 542 score 3 ===
+User’s Manual 26-194 V2.0.0 
+GTMV2.2.24  2021-02
+AURIX™ TC36x
+ 
+Generic Timer Module (GTM)
+26.3.7 GTM to EDSADC Connections
+Figure 18 GTM to EDSADC Connections Overview
+Figure 19 GTM to EDSADC Connections Registers Overview
+Table 224 GTM to EDSADC Connections Registers Overview
+Register Long Name Selection Bitfields Page
+DSADCOUTSEL00 DSADC Output Sele ct 00 Register (i=0) SEL0..SEL3 Page 195
+DSADCOUTSEL10 DSADC Output Sele ct 10 Register (i=1) SEL0..SEL3 Page 196
+DSADCOUTSEL20 DSADC Output Sele ct 20 Register (i=2) SEL0..SEL3 Page 197
+DSADCOUTSEL30 DSADC Output Sele ct 30 Register (i=3) SEL0..SEL3 Page 198
+GTM_DSAD COU TSEL_TC36x.vsd
+ 
+ 
+DSADC_TRIG0[0]
+DSADC_TRIG0[3]
+TOM/ATOM/
+CDTM Outputs
+(4 * 16 lines)
+ 
+ 
+DSADC_TRIG1[3:0]
+DSADC_TRIG2[3:0]
+DSADC_TRIG3[3:0]
+TOM/ATOM/
+CDTM Outputs
+(4 * 16 lines)
+GTM
+to  
+EDSADC 
+Trigger 
+Inpu ts
+16
+16
+DSAD COU TSEL00.SEL3..SEL0
+16:1
+4
+Muxes
+DSAD COU TSEL10.SEL3..SEL0
+DSAD COU TSEL20.SEL3..SEL0
+DSAD COU TSEL30.SEL3..SEL0
+TOM/ATOM/
+CDTM Outputs
+(4 * 16 lines)
+TOM/ATOM/
+CDTM Outputs
+(4 * 16 lines)
+To  SENT_TRIG[15:12], 
+EDSADC Trigge r Inputs
+GTM_DSADCOUTSEL_Register s_TC36x.vsd
+DSAD COU TSEL00 DSAD COU TSEL10 DSAD COU TSEL20 DSA DCOU TSEL30
+TRIG0
+GTM to EDSADC Connections:  Tr igger Selection
+TRIG1 TRIG2 TRIG3
+OPEN MARKET VERSION
+
+=== PAGE 549 score 3 ===
+User’s Manual 26-201 V2.0.0 
+GTMV2.2.24  2021-02
+AURIX™ TC36x
+ 
+Generic Timer Module (GTM)
+Table 227 GTM to EVADC Connections Registers Overview
+Register Long Name Selection Bitfields Page
+ADCTRIG0OUT0 ADC Trigger 0 Output Select 0 Register (i=0) SEL0..SEL7 Page 202
+ADCTRIG0OUT1 ADC Trigger 0 Output Select 1 Register (i=0) SEL0..SEL3 Page 205
+ADCTRIG1OUT0 ADC Trigger 1 Output Select 0 Register (i=1) SEL0..SEL7 Page 206
+ADCTRIG1OUT1 ADC Trigger 1 Output Select 1 Register (i=1) SEL0..SEL3 Page 209
+ADCTRIG2OUT0 ADC Trigger 2 Output Select 0 Register (i=2) SEL0..SEL7 Page 210
+ADCTRIG2OUT1 ADC Trigger 2 Output Select 1 Register (i=2) SEL0..SEL3 Page 212
+ADCTRIG3OUT0 ADC Trigger 3 Output Select 0 Register (i=3) SEL0..SEL7 Page 213
+ADCTRIG3OUT1 ADC Trigger 3 Output Select 1 Register (i=3) SEL0..SEL3 Page 215
+ADCTRIG4OUT0 ADC Trigger 4 Output Select 0 Register (i=4) SEL0..SEL7 Page 216
+ADCTRIG4OUT1 ADC Trigger 4 Output Select 1 Register (i=4) SEL0..SEL3 Page 216
+Table 228 Connections of ADC_TRIG x Signals to ADC/SENT Modules
+GTM Trigger 
+Signal
+EVADC EDSADC SENT
+ADC_TRIG0
+ADC_TRIG0_[1:0] FC[1:0]REQTRI G[1:0]RE QGTA G[1:0]REQTRI ITR[1:0]C TRIG[1:0]
+ADC_TRIG0_[3:2] - G[3:2]REQGTA G[ 3:2]REQTRI ITR[3:2]C TRIG[3:2]
+ADC_TRIG0_[7:4] - - - - TRIG[7:4]
+ADC_TRIG0_[9:8] - G[9:8]REQGTA G[9:8]REQTRI - TRIG[9:8]
+ADC_TRIG0_[11:10] - - - - TRIG[11:10]
+ADC_TRIG1
+ADC_TRIG1_[1:0] FC[1:0]REQTRJ G[1:0]REQGTB G[1:0]REQTRJ ITR[1:0]D -
+ADC_TRIG1_[3:2] - G[3:2]REQG TB G[3:2]REQTRJ ITR[3:2]D -
+ADC_TRIG1_[7:4] - - - - -
+ADC_TRIG1_[9:8] - G[9:8]REQGTB G[9:8]REQTRJ - -
+ADC_TRIG1_[11:10] - - - - -
+ADC_TRIG2
+ADC_TRIG2_[1:0] FC[1:0]REQTRK G[1:0]REQGTK G[1:0]REQTRK ITR[1:0]K -
+ADC_TRIG2_[3:2] - G[3:2]REQG TK G[3:2]REQTRK ITR[3:2]K -
+ADC_TRIG2_[7:4] - - - - -
+ADC_TRIG2_[9:8] - G[9:8]REQGTK G[9:8]REQTRK - -
+ADC_TRIG2_[11:10] - - - - -
+ADC_TRIG3
+ADC_TRIG3_[3:0] - G[3:0]REQG TL G[3:0]REQTRL ITR[3:0]L -
+ADC_TRIG3_[7:4] - - - - -
+ADC_TRIG3_[9:8] FC[1:0]REQTRL G[9:8]REQGTL G[9:8]REQTRL - -
+ADC_TRIG3_[11:10] - - - - -
+OPEN MARKET VERSION
+
+=== PAGE 398 score 2 ===
+User’s Manual 26-50 V2.0.0 
+GTMV2.2.24  2021-02
+AURIX™ TC36x
+ 
+Generic Timer Module (GTM)
+Trigger Output Register n
+MCS Interrupt Status Register
+Field Bits Type Description
+OUTx (x=0-2) xr w Output 0x Control
+This bit defines whether register TRIGOUTx/INTOUTx is accessible from 
+the MCS instead of RAM0 or not.
+0B RAM0 memory is accessed
+1B Register TRIGOUTx/INTOUTx is accessed
+0 31:3 r Reserved
+Read as 0, shall be written with 0.
+GTM_TRIGOUTn (n=0-2)
+Trigger Output Register n (09FE74 H+n*4) Application Reset Value: 0000 0000 H
+31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+0
+r
+1 5 1 4 1 3 1 2 1 1 1 0 9876543210
+0 TRIG3 TRIG2 TRIG1 TRIG0
+r wwww
+Field Bits Type Description
+TRIGx (x=0-3) 2*x+1:2*x w Trigger x
+This bit field defines whether a trigger x request is generated or not. In 
+case of read, the value 0x00000000 is returned.
+00B No modification of current state
+01B Pending trigger x is cleared
+10B Trigger x is set
+11B No modification of current state
+0 31:8 r Reserved
+Read as 0, shall be written with 0.
+GTM_MCSINTSTAT
+MCS Interrupt Status Register (09FEC8 H) Application Reset Value: 0000 0000 H
+31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+0
+r
+1 5 1 4 1 3 1 2 1 1 1 0 9876543210
+0 MCS20 MCS10 MCS00
+rr h r h r h
+OPEN MARKET VERSION
+
+=== PAGE 427 score 2 ===
+User’s Manual 26-79 V2.0.0 
+GTMV2.2.24  2021-02
+AURIX™ TC36x
+ 
+Generic Timer Module (GTM)
+SELx (x=7) 4*x+3:4*x rw TOUT(n*8 + x) Output Selection
+This bit field defines which timer output is connected as TOUT(n*8+x).
+Note: SELx values not explicitly defined here are equivalent to the 
+last defined SELx setting.
+0H TOM0_15, Output of TOM0, channel 15
+1H TOM1_15, Output of TOM1, channel 15
+2H CDTM0_DTM5_3, ATOM0_7, Dead-time output of ATOM0, channel 
+7
+3H CDTM1_DTM5_3, ATOM1_7, Dead-time output of ATOM1, channel 
+7
+4H CDTM0_DTM0_0_N, TOM0_0_N, Inverted dead-time output of 
+TOM0, channel 0
+5H CDTM1_DTM0_0_N, TOM1_0_N, Inverted dead-time output of 
+TOM1, channel 0
+6H CDTM0_DTM1_3_N, TOM0_7_N, Inverted dead-time output of 
+TOM0, channel 7
+7H CDTM1_DTM1_3_N, TOM1_7_N, Inverted dead-time output of 
+TOM1, channel 7
+8H CDTM0_DTM4_0_N, ATOM0_0_N, Inverted dead-time output of 
+ATOM0, channel 0
+9H CDTM1_DTM4_0_N, ATOM1_0_N, Inverted dead-time output of 
+ATOM1, channel 0
+AH Reserved, do not use
+BH Reserved, do not use
+GTM_TOUTSELn (n=1)
+Timer Output Select Register (09FD60 H+n*4) Application Reset Value: 0000 0000 H
+31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+SEL7 SEL6 SEL5 SEL4
+rw rw rw rw
+1 5 1 4 1 3 1 2 1 1 1 0 9876543210
+SEL3 SEL2 SEL1 SEL0
+rw rw rw rw
+Field Bits Type Description
+OPEN MARKET VERSION
+
+=== PAGE 437 score 2 ===
+User’s Manual 26-89 V2.0.0 
+GTMV2.2.24  2021-02
+AURIX™ TC36x
+ 
+Generic Timer Module (GTM)
+SELx (x=1) 4*x+3:4*x rw TOUT(n*8 + x) Output Selection
+This bit field defines which timer output is connected as TOUT(n*8+x).
+Note: SELx values not explicitly defined here are equivalent to the 
+last defined SELx setting.
+0H TOM0_15, Output of TOM0, channel 15
+1H CDTM1_DTM1_3, TOM1_7, Dead-time output of TOM1, channel 7
+2H CDTM0_DTM5_3, ATOM0_7, Dead-time output of ATOM0, channel 
+7
+3H CDTM1_DTM5_3, ATOM1_7, Dead-time output of ATOM1, channel 
+7
+4H CDTM0_DTM0_0_N, TOM0_0_N, Inverted dead-time output of 
+TOM0, channel 0
+5H CDTM1_DTM0_0_N, TOM1_0_N, Inverted dead-time output of 
+TOM1, channel 0
+6H Reserved, do not use
+7H Reserved, do not use
+8H CDTM0_DTM4_0_N, ATOM0_0_N, Inverted dead-time output of 
+ATOM0, channel 0
+9H CDTM1_DTM4_0_N, ATOM1_0_N, Inverted dead-time output of 
+ATOM1, channel 0
+AH CDTM3_DTM4_0_N, ATOM3_0_N, Inverted dead-time output of 
+ATOM3, channel 0
+BH Reserved, do not use
+SELx (x=2) 4*x+3:4*x rw TOUT(n*8 + x) Output Selection
+This bit field defines which timer output is connected as TOUT(n*8+x).
+Note: SELx values not explicitly defined here are equivalent to the 
+last defined SELx setting.
+0H CDTM0_DTM0_0, TOM0_0, Dead-time output of TOM0, channel 0
+1H CDTM1_DTM0_0, TOM1_0, Dead-time output of TOM1, channel 0
+2H CDTM2_DTM4_0, ATOM2_0, Dead-time output of ATOM2, channel 
+0
+3H CDTM3_DTM4_0, ATOM3_0, Dead-time output of ATOM3, channel 
+0
+4H Reserved, do not use
+5H CDTM1_DTM1_1_N, TOM1_5_N, Inverted dead-time output of 
+TOM1, channel 5
+6H Reserved, do not use
+7H Reserved, do not use
+8H CDTM3_DTM5_1_N, ATOM3_5_N, Inverted dead-time output of 
+ATOM3, channel 5
+9H Reserved, do not use
+…
+BH Reserved, do not use
+Field Bits Type Description
+OPEN MARKET VERSION
+
+=== PAGE 442 score 2 ===
+User’s Manual 26-94 V2.0.0 
+GTMV2.2.24  2021-02
+AURIX™ TC36x
+ 
+Generic Timer Module (GTM)
+SELx (x=1) 4*x+3:4*x rw TOUT(n*8 + x) Output Selection
+This bit field defines which timer output is connected as TOUT(n*8+x).
+Note: SELx values not explicitly defined here are equivalent to the 
+last defined SELx setting.
+0H CDTM0_DTM1_3, TOM0_7, Dead-time output of TOM0, channel 7
+1H CDTM1_DTM1_3, TOM1_7, Dead-time output of TOM1, channel 7
+2H CDTM0_DTM5_3, ATOM0_7, Dead-time output of ATOM0, channel 
+7
+3H CDTM1_DTM5_3, ATOM1_7, Dead-time output of ATOM1, channel 
+7
+4H CDTM0_DTM0_0_N, TOM0_0_N, Inverted dead-time output of 
+TOM0, channel 0
+5H CDTM1_DTM0_0_N, TOM1_0_N, Inverted dead-time output of 
+TOM1, channel 0
+6H Reserved, do not use
+7H Reserved, do not use
+8H CDTM2_DTM4_0_N, ATOM2_0_N, Inverted dead-time output of 
+ATOM2, channel 0
+9H CDTM3_DTM4_0_N, ATOM3_0_N, Inverted dead-time output of 
+ATOM3, channel 0
+AH Reserved, do not use
+BH Reserved, do not use
+Field Bits Type Description
+OPEN MARKET VERSION
+
+=== PAGE 449 score 2 ===
+User’s Manual 26-101 V2.0.0 
+GTMV2.2.24  2021-02
+AURIX™ TC36x
+ 
+Generic Timer Module (GTM)
+Field Bits Type Description
+SELx (x=0) 4*x+3:4*x rw TOUT(n*8 + x) Output Selection
+This bit field defines which timer output is connected as TOUT(n*8+x).
+Note: SELx values not explicitly defined here are equivalent to the 
+last defined SELx setting.
+0H CDTM0_DTM0_0, TOM0_0, Dead-time output of TOM0, channel 0
+1H CDTM1_DTM0_0, TOM1_0, Dead-time output of TOM1, channel 0
+2H CDTM2_DTM4_0, ATOM2_0, Dead-time output of ATOM2, channel 
+0
+3H CDTM3_DTM4_0, ATOM3_0, Dead-time output of ATOM3, channel 
+0
+4H CDTM0_DTM1_1_N, TOM0_5_N, Inverted dead-time output of 
+TOM0, channel 5
+5H CDTM1_DTM1_1_N, TOM1_5_N, Inverted dead-time output of 
+TOM1, channel 5
+6H CDTM0_DTM1_3_N, TOM0_7_N, Inverted dead-time output of 
+TOM0, channel 7
+7H CDTM1_DTM1_3_N, TOM1_7_N, Inverted dead-time output of 
+TOM1, channel 7
+8H CDTM2_DTM4_0_N, ATOM2_0_N, Inverted dead-time output of 
+ATOM2, channel 0
+9H CDTM3_DTM4_0_N, ATOM3_0_N, Inverted dead-time output of 
+ATOM3, channel 0
+AH Reserved, do not use
+BH Reserved, do not use
+OPEN MARKET VERSION
+
+=== PAGE 450 score 2 ===
+User’s Manual 26-102 V2.0.0 
+GTMV2.2.24  2021-02
+AURIX™ TC36x
+ 
+Generic Timer Module (GTM)
+SELx (x=1) 4*x+3:4*x rw TOUT(n*8 + x) Output Selection
+This bit field defines which timer output is connected as TOUT(n*8+x).
+Note: SELx values not explicitly defined here are equivalent to the 
+last defined SELx setting.
+0H CDTM0_DTM0_2, TOM0_2, Dead-time output of TOM0, channel 2
+1H CDTM1_DTM0_2, TOM1_2, Dead-time output of TOM1, channel 2
+2H CDTM0_DTM4_2, ATOM0_2, Dead-time output of ATOM0, channel 
+2
+3H CDTM1_DTM4_2, ATOM1_2, Dead-time output of ATOM1, channel 
+2
+4H CDTM0_DTM1_3_N, TOM0_7_N, Inverted dead-time output of 
+TOM0, channel 7
+5H CDTM1_DTM1_3_N, TOM1_7_N, Inverted dead-time output of 
+TOM1, channel 7
+6H Reserved, do not use
+7H Reserved, do not use
+8H CDTM2_DTM4_3_N, ATOM2_3_N, Inverted dead-time output of 
+ATOM2, channel 3
+9H CDTM3_DTM4_3_N, ATOM3_3_N, Inverted dead-time output of 
+ATOM3, channel 3
+AH Reserved, do not use
+BH Reserved, do not use
+SELx (x=2) 4*x+3:4*x rw TOUT(n*8 + x) Output Selection
+This bit field defines which timer output is connected as TOUT(n*8+x).
+Note: SELx values not explicitly defined here are equivalent to the 
+last defined SELx setting.
+0H TOM1_12, Output of TOM1, channel 12
+1H Reserved, do not use
+2H CDTM2_DTM5_0, ATOM2_4, Dead-time output of ATOM2, channel 
+4
+3H CDTM3_DTM5_0, ATOM3_4, Dead-time output of ATOM3, channel 
+4
+4H CDTM0_DTM0_0_N, TOM0_0_N, Inverted dead-time output of 
+TOM0, channel 0
+5H CDTM1_DTM0_0_N, TOM1_0_N, Inverted dead-time output of 
+TOM1, channel 0
+6H Reserved, do not use
+7H Reserved, do not use
+8H CDTM2_DTM4_1_N, ATOM2_1_N, Inverted dead-time output of 
+ATOM2, channel 1
+9H CDTM3_DTM4_1_N, ATOM3_1_N, Inverted dead-time output of 
+ATOM3, channel 1
+AH Reserved, do not use
+BH Reserved, do not use
+Field Bits Type Description
+OPEN MARKET VERSION
+
+=== PAGE 456 score 2 ===
+User’s Manual 26-108 V2.0.0 
+GTMV2.2.24  2021-02
+AURIX™ TC36x
+ 
+Generic Timer Module (GTM)
+SELx (x=2) 4*x+3:4*x rw TOUT(n*8 + x) Output Selection
+This bit field defines which timer output is connected as TOUT(n*8+x).
+Note: SELx values not explicitly defined here are equivalent to the 
+last defined SELx setting.
+0H CDTM0_DTM1_2, TOM0_6, Dead-time output of TOM0, channel 6
+1H TOM0_15, Output of TOM0, channel 15
+2H CDTM0_DTM5_2, ATOM0_6, Dead-time output of ATOM0, channel 
+6
+3H CDTM1_DTM5_2, ATOM1_6, Dead-time output of ATOM1, channel 
+6
+4H CDTM0_DTM1_3_N, TOM0_7_N, Inverted dead-time output of 
+TOM0, channel 7
+5H CDTM1_DTM1_3_N, TOM1_7_N, Inverted dead-time output of 
+TOM1, channel 7
+6H CDTM0_DTM0_3_N, TOM0_3_N, Inverted dead-time output of 
+TOM0, channel 3
+7H Reserved, do not use
+8H CDTM0_DTM4_2, ATOM0_2, Dead-time output of ATOM0, channel 
+2
+9H Reserved, do not use
+AH CDTM0_DTM4_3_N, ATOM0_3_N, Inverted dead-time output of 
+ATOM0, channel 3
+BH CDTM1_DTM4_3_N, ATOM1_3_N, Inverted dead-time output of 
+ATOM1, channel 3
+SELx (x=3) 4*x+3:4*x rw TOUT(n*8 + x) Output Selection
+This bit field defines which timer output is connected as TOUT(n*8+x).
+Note: SELx values not explicitly defined here are equivalent to the 
+last defined SELx setting.
+0H TOM0_11, Output of TOM0, channel 11
+1H CDTM1_DTM1_2, TOM1_6, Dead-time output of TOM1, channel 6
+2H CDTM2_DTM4_1, ATOM2_1, Dead-time output of ATOM2, channel 
+1
+3H CDTM3_DTM4_1, ATOM3_1, Dead-time output of ATOM3, channel 
+1
+4H Reserved, do not use
+5H Reserved, do not use
+6H CDTM1_DTM0_3_N, TOM1_3_N, Inverted dead-time output of 
+TOM1, channel 3
+7H Reserved, do not use
+8H CDTM0_DTM4_0_N, ATOM0_0_N, Inverted dead-time output of 
+ATOM0, channel 0
+9H Reserved, do not use
+…
+BH Reserved, do not use
+Field Bits Type Description
+OPEN MARKET VERSION
+
+=== PAGE 460 score 2 ===
+User’s Manual 26-112 V2.0.0 
+GTMV2.2.24  2021-02
+AURIX™ TC36x
+ 
+Generic Timer Module (GTM)
+SELx (x=2) 4*x+3:4*x rw TOUT(n*8 + x) Output Selection
+This bit field defines which timer output is connected as TOUT(n*8+x).
+Note: SELx values not explicitly defined here are equivalent to the 
+last defined SELx setting.
+0H TOM0_12, Output of TOM0, channel 12
+1H Reserved, do not use
+2H CDTM0_DTM5_0, ATOM0_4, Dead-time output of ATOM0, channel 
+4
+3H Reserved, do not use
+…
+5H Reserved, do not use
+6H CDTM0_DTM1_3, TOM0_7, Dead-time output of TOM0, channel 7
+7H CDTM1_DTM1_3, TOM1_7, Dead-time output of TOM1, channel 7
+8H Reserved, do not use
+9H Reserved, do not use
+AH CDTM0_DTM4_1_N, ATOM0_1_N, Inverted dead-time output of 
+ATOM0, channel 1
+BH Reserved, do not use
+SELx (x=3) 4*x+3:4*x rw TOUT(n*8 + x) Output Selection
+This bit field defines which timer output is connected as TOUT(n*8+x).
+Note: SELx values not explicitly defined here are equivalent to the 
+last defined SELx setting.
+0H TOM0_8, Output of TOM0, channel 8
+1H Reserved, do not use
+2H CDTM2_DTM5_0, ATOM2_4, Dead-time output of ATOM2, channel 
+4
+3H CDTM3_DTM5_0, ATOM3_4, Dead-time output of ATOM3, channel 
+4
+4H Reserved, do not use
+5H CDTM0_DTM0_0_N, TOM0_0_N, Inverted dead-time output of 
+TOM0, channel 0
+6H Reserved, do not use
+7H Reserved, do not use
+8H CDTM2_DTM4_1_N, ATOM2_1_N, Inverted dead-time output of 
+ATOM2, channel 1
+9H Reserved, do not use
+AH CDTM3_DTM4_1_N, ATOM3_1_N, Inverted dead-time output of 
+ATOM3, channel 1
+BH Reserved, do not use
+Field Bits Type Description
+OPEN MARKET VERSION
+
+=== PAGE 462 score 2 ===
+User’s Manual 26-114 V2.0.0 
+GTMV2.2.24  2021-02
+AURIX™ TC36x
+ 
+Generic Timer Module (GTM)
+SELx (x=6) 4*x+3:4*x rw TOUT(n*8 + x) Output Selection
+This bit field defines which timer output is connected as TOUT(n*8+x).
+Note: SELx values not explicitly defined here are equivalent to the 
+last defined SELx setting.
+0H CDTM0_DTM0_1, TOM0_1, Dead-time output of TOM0, channel 1
+1H Reserved, do not use
+2H CDTM0_DTM4_1, ATOM0_1, Dead-time output of ATOM0, channel 
+1
+3H Reserved, do not use
+4H CDTM0_DTM1_2_N, TOM0_6_N, Inverted dead-time output of 
+TOM0, channel 6
+5H Reserved, do not use
+6H CDTM0_DTM1_0_N, TOM0_4_N, Inverted dead-time output of 
+TOM0, channel 4
+7H CDTM1_DTM1_0_N, TOM1_4_N, Inverted dead-time output of 
+TOM1, channel 4
+8H CDTM0_DTM4_0_N, ATOM0_0_N, Inverted dead-time output of 
+ATOM0, channel 0
+9H Reserved, do not use
+…
+BH Reserved, do not use
+SELx (x=7) 4*x+3:4*x rw TOUT(n*8 + x) Output Selection
+This bit field defines which timer output is connected as TOUT(n*8+x).
+Note: SELx values not explicitly defined here are equivalent to the 
+last defined SELx setting.
+0H CDTM0_DTM0_2, TOM0_2, Dead-time output of TOM0, channel 2
+1H Reserved, do not use
+2H CDTM0_DTM4_2, ATOM0_2, Dead-time output of ATOM0, channel 
+2
+3H Reserved, do not use
+4H CDTM0_DTM1_3_N, TOM0_7_N, Inverted dead-time output of 
+TOM0, channel 7
+5H Reserved, do not use
+6H CDTM0_DTM1_1, TOM0_5, Dead-time output of TOM0, channel 5
+7H CDTM1_DTM1_1, TOM1_5, Dead-time output of TOM1, channel 5
+8H CDTM0_DTM4_1_N, ATOM0_1_N, Inverted dead-time output of 
+ATOM0, channel 1
+9H Reserved, do not use
+…
+BH Reserved, do not use
+Field Bits Type Description
+OPEN MARKET VERSION
+
+=== PAGE 479 score 2 ===
+User’s Manual 26-131 V2.0.0 
+GTMV2.2.24  2021-02
+AURIX™ TC36x
+ 
+Generic Timer Module (GTM)
+SELx (x=4) 4*x+3:4*x rw TOUT(n*8 + x) Output Selection
+This bit field defines which timer output is connected as TOUT(n*8+x).
+Note: SELx values not explicitly defined here are equivalent to the 
+last defined SELx setting.
+0H CDTM0_DTM1_3, TOM0_7, Dead-time output of TOM0, channel 7
+1H CDTM1_DTM1_3, TOM1_7, Dead-time output of TOM1, channel 7
+2H CDTM0_DTM4_1, ATOM0_1, Dead-time output of ATOM0, channel 
+1
+3H Reserved, do not use
+4H CDTM0_DTM1_3_N, TOM0_7_N, Inverted dead-time output of 
+TOM0, channel 7
+5H CDTM1_DTM1_3_N, TOM1_7_N, Inverted dead-time output of 
+TOM1, channel 7
+6H Reserved, do not use
+…
+BH Reserved, do not use
+SELx (x=5) 4*x+3:4*x rw TOUT(n*8 + x) Output Selection
+This bit field defines which timer output is connected as TOUT(n*8+x).
+Note: SELx values not explicitly defined here are equivalent to the 
+last defined SELx setting.
+0H CDTM0_DTM0_0, TOM0_0, Dead-time output of TOM0, channel 0
+1H CDTM1_DTM0_0, TOM1_0, Dead-time output of TOM1, channel 0
+2H CDTM0_DTM4_0, ATOM0_0, Dead-time output of ATOM0, channel 
+0
+3H Reserved, do not use
+…
+BH Reserved, do not use
+Field Bits Type Description
+OPEN MARKET VERSION
+
+=== PAGE 511 score 2 ===
+User’s Manual 26-163 V2.0.0 
+GTMV2.2.24  2021-02
+AURIX™ TC36x
+ 
+Generic Timer Module (GTM)
+Field Bits Type Description
+SELk (k=0-3) 8*k+4:8*k rw Set 0[k] Input Selection
+This bit field defines the GTM timer source configured as Set i signal k out.
+00H CDTM0_DTM0_0, TOM0_0, Dead-time output of TOM0, channel 0
+01H CDTM0_DTM0_1, TOM0_1, Dead-time output of TOM0, channel 1
+02H CDTM0_DTM0_2, TOM0_2, Dead-time output of TOM0, channel 2
+03H CDTM0_DTM0_3, TOM0_3, Dead-time output of TOM0, channel 3
+04H CDTM0_DTM1_0, TOM0_4, Dead-time output of TOM0, channel 4
+05H CDTM0_DTM1_1, TOM0_5, Dead-time output of TOM0, channel 5
+06H CDTM0_DTM1_2, TOM0_6, Dead-time output of TOM0, channel 6
+07H CDTM0_DTM1_3, TOM0_7, Dead-time output of TOM0, channel 7
+08H TOM0_8, Output of TOM0, channel 8
+09H TOM0_9, Output of TOM0, channel 9
+0AH TOM0_10, Output of TOM0, channel 10
+0BH TOM0_11, Output of TOM0, channel 11
+0CH TOM0_12, Output of TOM0, channel 12
+0DH TOM0_13, Output of TOM0, channel 13
+0EH TOM0_14, Output of TOM0, channel 14
+0FH TOM0_15, Output of TOM0, channel 15
+10H CDTM0_DTM4_0, ATOM0_0, Dead-time output of ATOM0, channel 0
+11H CDTM0_DTM4_1, ATOM0_1, Dead-time output of ATOM0, channel 1
+12H CDTM0_DTM4_2, ATOM0_2, Dead-time output of ATOM0, channel 2
+13H CDTM0_DTM4_3, ATOM0_3, Dead-time output of ATOM0, channel 3
+14H CDTM0_DTM5_0, ATOM0_4, Dead-time output of ATOM0, channel 4
+15H CDTM0_DTM5_1, ATOM0_5, Dead-time output of ATOM0, channel 5
+16H CDTM0_DTM5_2, ATOM0_6, Dead-time output of ATOM0, channel 6
+17H CDTM0_DTM5_3, ATOM0_7, Dead-time output of ATOM0, channel 7
+18H CDTM2_DTM4_0, ATOM2_0, Dead-time output of ATOM2, channel 0
+19H CDTM2_DTM4_1, ATOM2_1, Dead-time output of ATOM2, channel 1
+1AH CDTM2_DTM4_2, ATOM2_2, Dead-time output of ATOM2, channel 2
+1BH CDTM2_DTM4_3, ATOM2_3, Dead-time output of ATOM2, channel 3
+1CH CDTM2_DTM5_0, ATOM2_4, Dead-time output of ATOM2, channel 4
+1DH CDTM2_DTM5_1, ATOM2_5, Dead-time output of ATOM2, channel 5
+1EH CDTM2_DTM5_2, ATOM2_6, Dead-time output of ATOM2, channel 6
+1FH CDTM2_DTM5_3, ATOM2_7, Dead-time output of ATOM2, channel 7
+0 31:29, 
+23:21, 
+15:13, 7:5
+r Reserved
+Read as 0, shall be written with 0.
+OPEN MARKET VERSION
+
+=== PAGE 512 score 2 ===
+User’s Manual 26-164 V2.0.0 
+GTMV2.2.24  2021-02
+AURIX™ TC36x
+ 
+Generic Timer Module (GTM)
+GTM_MSCSETiCONj (i=0;j=1)
+MSC Set i Control j Register (09FF00 H+i*10H+j*4) Application Reset Value: 0000 0000 H
+31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+0S E L 70S E L 6
+rr wrr w
+1 5 1 4 1 3 1 2 1 1 1 0 9876543210
+0S E L 50S E L 4
+rr wrr w
+Field Bits Type Description
+SELk (k=4-7) 8*k-28:8*k-
+32
+rw Set 0[k] Input Selection
+This bit field defines the GTM timer source configured as Set i signal k out.
+00H CDTM0_DTM0_0, TOM0_0, Dead-time output of TOM0, channel 0
+01H CDTM0_DTM0_1, TOM0_1, Dead-time output of TOM0, channel 1
+02H CDTM0_DTM0_2, TOM0_2, Dead-time output of TOM0, channel 2
+03H CDTM0_DTM0_3, TOM0_3, Dead-time output of TOM0, channel 3
+04H CDTM0_DTM1_0, TOM0_4, Dead-time output of TOM0, channel 4
+05H CDTM0_DTM1_1, TOM0_5, Dead-time output of TOM0, channel 5
+06H CDTM0_DTM1_2, TOM0_6, Dead-time output of TOM0, channel 6
+07H CDTM0_DTM1_3, TOM0_7, Dead-time output of TOM0, channel 7
+08H TOM0_8, Output of TOM0, channel 8
+09H TOM0_9, Output of TOM0, channel 9
+0AH TOM0_10, Output of TOM0, channel 10
+0BH TOM0_11, Output of TOM0, channel 11
+0CH TOM0_12, Output of TOM0, channel 12
+0DH TOM0_13, Output of TOM0, channel 13
+0EH TOM0_14, Output of TOM0, channel 14
+0FH TOM0_15, Output of TOM0, channel 15
+10H CDTM0_DTM4_0, ATOM0_0, Dead-time output of ATOM0, channel 0
+11H CDTM0_DTM4_1, ATOM0_1, Dead-time output of ATOM0, channel 1
+12H CDTM0_DTM4_2, ATOM0_2, Dead-time output of ATOM0, channel 2
+13H CDTM0_DTM4_3, ATOM0_3, Dead-time output of ATOM0, channel 3
+14H CDTM0_DTM5_0, ATOM0_4, Dead-time output of ATOM0, channel 4
+15H CDTM0_DTM5_1, ATOM0_5, Dead-time output of ATOM0, channel 5
+16H CDTM0_DTM5_2, ATOM0_6, Dead-time output of ATOM0, channel 6
+17H CDTM0_DTM5_3, ATOM0_7, Dead-time output of ATOM0, channel 7
+18H CDTM2_DTM4_0, ATOM2_0, Dead-time output of ATOM2, channel 0
+19H CDTM2_DTM4_1, ATOM2_1, Dead-time output of ATOM2, channel 1
+1AH CDTM2_DTM4_2, ATOM2_2, Dead-time output of ATOM2, channel 2
+1BH CDTM2_DTM4_3, ATOM2_3, Dead-time output of ATOM2, channel 3
+1CH CDTM2_DTM5_0, ATOM2_4, Dead-time output of ATOM2, channel 4
+1DH CDTM2_DTM5_1, ATOM2_5, Dead-time output of ATOM2, channel 5
+1EH CDTM2_DTM5_2, ATOM2_6, Dead-time output of ATOM2, channel 6
+1FH CDTM2_DTM5_3, ATOM2_7, Dead-time output of ATOM2, channel 7
+OPEN MARKET VERSION
+
+=== PAGE 514 score 2 ===
+User’s Manual 26-166 V2.0.0 
+GTMV2.2.24  2021-02
+AURIX™ TC36x
+ 
+Generic Timer Module (GTM)
+Field Bits Type Description
+SELk (k=8-11) 8*k-60:8*k-
+64
+rw Set 0[k] Input Selection
+This bit field defines the GTM timer source configured as Set i signal k out.
+00H CDTM0_DTM0_0, TOM0_0, Dead-time output of TOM0, channel 0
+01H CDTM0_DTM0_1, TOM0_1, Dead-time output of TOM0, channel 1
+02H CDTM0_DTM0_2, TOM0_2, Dead-time output of TOM0, channel 2
+03H CDTM0_DTM0_3, TOM0_3, Dead-time output of TOM0, channel 3
+04H CDTM0_DTM1_0, TOM0_4, Dead-time output of TOM0, channel 4
+05H CDTM0_DTM1_1, TOM0_5, Dead-time output of TOM0, channel 5
+06H CDTM0_DTM1_2, TOM0_6, Dead-time output of TOM0, channel 6
+07H CDTM0_DTM1_3, TOM0_7, Dead-time output of TOM0, channel 7
+08H TOM0_8, Output of TOM0, channel 8
+09H TOM0_9, Output of TOM0, channel 9
+0AH TOM0_10, Output of TOM0, channel 10
+0BH TOM0_11, Output of TOM0, channel 11
+0CH TOM0_12, Output of TOM0, channel 12
+0DH TOM0_13, Output of TOM0, channel 13
+0EH TOM0_14, Output of TOM0, channel 14
+0FH TOM0_15, Output of TOM0, channel 15
+10H CDTM0_DTM4_0, ATOM0_0, Dead-time output of ATOM0, channel 0
+11H CDTM0_DTM4_1, ATOM0_1, Dead-time output of ATOM0, channel 1
+12H CDTM0_DTM4_2, ATOM0_2, Dead-time output of ATOM0, channel 2
+13H CDTM0_DTM4_3, ATOM0_3, Dead-time output of ATOM0, channel 3
+14H CDTM0_DTM5_0, ATOM0_4, Dead-time output of ATOM0, channel 4
+15H CDTM0_DTM5_1, ATOM0_5, Dead-time output of ATOM0, channel 5
+16H CDTM0_DTM5_2, ATOM0_6, Dead-time output of ATOM0, channel 6
+17H CDTM0_DTM5_3, ATOM0_7, Dead-time output of ATOM0, channel 7
+18H CDTM2_DTM4_0, ATOM2_0, Dead-time output of ATOM2, channel 0
+19H CDTM2_DTM4_1, ATOM2_1, Dead-time output of ATOM2, channel 1
+1AH CDTM2_DTM4_2, ATOM2_2, Dead-time output of ATOM2, channel 2
+1BH CDTM2_DTM4_3, ATOM2_3, Dead-time output of ATOM2, channel 3
+1CH CDTM2_DTM5_0, ATOM2_4, Dead-time output of ATOM2, channel 4
+1DH CDTM2_DTM5_1, ATOM2_5, Dead-time output of ATOM2, channel 5
+1EH CDTM2_DTM5_2, ATOM2_6, Dead-time output of ATOM2, channel 6
+1FH CDTM2_DTM5_3, ATOM2_7, Dead-time output of ATOM2, channel 7
+0 31:29, 
+23:21, 
+15:13, 7:5
+r Reserved
+Read as 0, shall be written with 0.
+OPEN MARKET VERSION
+
+=== PAGE 515 score 2 ===
+User’s Manual 26-167 V2.0.0 
+GTMV2.2.24  2021-02
+AURIX™ TC36x
+ 
+Generic Timer Module (GTM)
+GTM_MSCSETiCONj (i=0;j=3)
+MSC Set i Control j Register (09FF00 H+i*10H+j*4) Application Reset Value: 0000 0000 H
+31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+0S E L 1 50S E L 1 4
+rr wrr w
+1 5 1 4 1 3 1 2 1 1 1 0 9876543210
+0S E L 1 30S E L 1 2
+rr wrr w
+Field Bits Type Description
+SELk (k=12-
+15)
+8*k-92:8*k-
+96
+rw Set 0[k] Input Selection
+This bit field defines the GTM timer source configured as Set i signal k out.
+00H CDTM0_DTM0_0, TOM0_0, Dead-time output of TOM0, channel 0
+01H CDTM0_DTM0_1, TOM0_1, Dead-time output of TOM0, channel 1
+02H CDTM0_DTM0_2, TOM0_2, Dead-time output of TOM0, channel 2
+03H CDTM0_DTM0_3, TOM0_3, Dead-time output of TOM0, channel 3
+04H CDTM0_DTM1_0, TOM0_4, Dead-time output of TOM0, channel 4
+05H CDTM0_DTM1_1, TOM0_5, Dead-time output of TOM0, channel 5
+06H CDTM0_DTM1_2, TOM0_6, Dead-time output of TOM0, channel 6
+07H CDTM0_DTM1_3, TOM0_7, Dead-time output of TOM0, channel 7
+08H TOM0_8, Output of TOM0, channel 8
+09H TOM0_9, Output of TOM0, channel 9
+0AH TOM0_10, Output of TOM0, channel 10
+0BH TOM0_11, Output of TOM0, channel 11
+0CH TOM0_12, Output of TOM0, channel 12
+0DH TOM0_13, Output of TOM0, channel 13
+0EH TOM0_14, Output of TOM0, channel 14
+0FH TOM0_15, Output of TOM0, channel 15
+10H CDTM0_DTM4_0, ATOM0_0, Dead-time output of ATOM0, channel 0
+11H CDTM0_DTM4_1, ATOM0_1, Dead-time output of ATOM0, channel 1
+12H CDTM0_DTM4_2, ATOM0_2, Dead-time output of ATOM0, channel 2
+13H CDTM0_DTM4_3, ATOM0_3, Dead-time output of ATOM0, channel 3
+14H CDTM0_DTM5_0, ATOM0_4, Dead-time output of ATOM0, channel 4
+15H CDTM0_DTM5_1, ATOM0_5, Dead-time output of ATOM0, channel 5
+16H CDTM0_DTM5_2, ATOM0_6, Dead-time output of ATOM0, channel 6
+17H CDTM0_DTM5_3, ATOM0_7, Dead-time output of ATOM0, channel 7
+18H CDTM2_DTM4_0, ATOM2_0, Dead-time output of ATOM2, channel 0
+19H CDTM2_DTM4_1, ATOM2_1, Dead-time output of ATOM2, channel 1
+1AH CDTM2_DTM4_2, ATOM2_2, Dead-time output of ATOM2, channel 2
+1BH CDTM2_DTM4_3, ATOM2_3, Dead-time output of ATOM2, channel 3
+1CH CDTM2_DTM5_0, ATOM2_4, Dead-time output of ATOM2, channel 4
+1DH CDTM2_DTM5_1, ATOM2_5, Dead-time output of ATOM2, channel 5
+1EH CDTM2_DTM5_2, ATOM2_6, Dead-time output of ATOM2, channel 6
+1FH CDTM2_DTM5_3, ATOM2_7, Dead-time output of ATOM2, channel 7
+OPEN MARKET VERSION
+
+=== PAGE 526 score 2 ===
+User’s Manual 26-178 V2.0.0 
+GTMV2.2.24  2021-02
+AURIX™ TC36x
+ 
+Generic Timer Module (GTM)
+GTM_MSCSETiCONj (i=3;j=0)
+MSC Set i Control j Register (09FF00 H+i*10H+j*4) Application Reset Value: 0000 0000 H
+31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+0S E L 30S E L 2
+rr wrr w
+1 5 1 4 1 3 1 2 1 1 1 0 9876543210
+0S E L 10S E L 0
+rr wrr w
+Field Bits Type Description
+SELk (k=0-3) 8*k+4:8*k rw Set 3[k] Input Selection
+This bit field defines the GTM timer source configured as Set i signal k out.
+00H CDTM0_DTM4_0, ATOM0_0, Dead-time output of ATOM0, channel 0
+01H CDTM0_DTM4_1, ATOM0_1, Dead-time output of ATOM0, channel 1
+02H CDTM0_DTM4_2, ATOM0_2, Dead-time output of ATOM0, channel 2
+03H CDTM0_DTM4_3, ATOM0_3, Dead-time output of ATOM0, channel 3
+04H CDTM0_DTM5_0, ATOM0_4, Dead-time output of ATOM0, channel 4
+05H CDTM0_DTM5_1, ATOM0_5, Dead-time output of ATOM0, channel 5
+06H CDTM0_DTM5_2, ATOM0_6, Dead-time output of ATOM0, channel 6
+07H CDTM0_DTM5_3, ATOM0_7, Dead-time output of ATOM0, channel 7
+08H CDTM1_DTM4_0, ATOM1_0, Dead-time output of ATOM1, channel 0
+09H CDTM1_DTM4_1, ATOM1_1, Dead-time output of ATOM1, channel 1
+0AH CDTM1_DTM4_2, ATOM1_2, Dead-time output of ATOM1, channel 2
+0BH CDTM1_DTM4_3, ATOM1_3, Dead-time output of ATOM1, channel 3
+0CH CDTM1_DTM5_0, ATOM1_4, Dead-time output of ATOM1, channel 4
+0DH CDTM1_DTM5_1, ATOM1_5, Dead-time output of ATOM1, channel 5
+0EH CDTM1_DTM5_2, ATOM1_6, Dead-time output of ATOM1, channel 6
+0FH CDTM1_DTM5_3, ATOM1_7, Dead-time output of ATOM1, channel 7
+10H CDTM2_DTM4_0, ATOM2_0, Dead-time output of ATOM2, channel 0
+11H CDTM2_DTM4_1, ATOM2_1, Dead-time output of ATOM2, channel 1
+12H CDTM2_DTM4_2, ATOM2_2, Dead-time output of ATOM2, channel 2
+13H CDTM2_DTM4_3, ATOM2_3, Dead-time output of ATOM2, channel 3
+14H CDTM2_DTM5_0, ATOM2_4, Dead-time output of ATOM2, channel 4
+15H CDTM2_DTM5_1, ATOM2_5, Dead-time output of ATOM2, channel 5
+16H CDTM2_DTM5_2, ATOM2_6, Dead-time output of ATOM2, channel 6
+17H CDTM2_DTM5_3, ATOM2_7, Dead-time output of ATOM2, channel 7
+18H Reserved, do not use
+…
+1FH Reserved, do not use
+0 31:29, 
+23:21, 
+15:13, 7:5
+r Reserved
+Read as 0, shall be written with 0.
+OPEN MARKET VERSION
+
+=== PAGE 527 score 2 ===
+User’s Manual 26-179 V2.0.0 
+GTMV2.2.24  2021-02
+AURIX™ TC36x
+ 
+Generic Timer Module (GTM)
+GTM_MSCSETiCONj (i=3;j=1)
+MSC Set i Control j Register (09FF00 H+i*10H+j*4) Application Reset Value: 0000 0000 H
+31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+0S E L 70S E L 6
+rr wrr w
+1 5 1 4 1 3 1 2 1 1 1 0 9876543210
+0S E L 50S E L 4
+rr wrr w
+Field Bits Type Description
+SELk (k=4-7) 8*k-28:8*k-
+32
+rw Set 3[k] Input Selection
+This bit field defines the GTM timer source configured as Set i signal k out.
+00H CDTM0_DTM4_0, ATOM0_0, Dead-time output of ATOM0, channel 0
+01H CDTM0_DTM4_1, ATOM0_1, Dead-time output of ATOM0, channel 1
+02H CDTM0_DTM4_2, ATOM0_2, Dead-time output of ATOM0, channel 2
+03H CDTM0_DTM4_3, ATOM0_3, Dead-time output of ATOM0, channel 3
+04H CDTM0_DTM5_0, ATOM0_4, Dead-time output of ATOM0, channel 4
+05H CDTM0_DTM5_1, ATOM0_5, Dead-time output of ATOM0, channel 5
+06H CDTM0_DTM5_2, ATOM0_6, Dead-time output of ATOM0, channel 6
+07H CDTM0_DTM5_3, ATOM0_7, Dead-time output of ATOM0, channel 7
+08H CDTM1_DTM4_0, ATOM1_0, Dead-time output of ATOM1, channel 0
+09H CDTM1_DTM4_1, ATOM1_1, Dead-time output of ATOM1, channel 1
+0AH CDTM1_DTM4_2, ATOM1_2, Dead-time output of ATOM1, channel 2
+0BH CDTM1_DTM4_3, ATOM1_3, Dead-time output of ATOM1, channel 3
+0CH CDTM1_DTM5_0, ATOM1_4, Dead-time output of ATOM1, channel 4
+0DH CDTM1_DTM5_1, ATOM1_5, Dead-time output of ATOM1, channel 5
+0EH CDTM1_DTM5_2, ATOM1_6, Dead-time output of ATOM1, channel 6
+0FH CDTM1_DTM5_3, ATOM1_7, Dead-time output of ATOM1, channel 7
+10H CDTM2_DTM4_0, ATOM2_0, Dead-time output of ATOM2, channel 0
+11H CDTM2_DTM4_1, ATOM2_1, Dead-time output of ATOM2, channel 1
+12H CDTM2_DTM4_2, ATOM2_2, Dead-time output of ATOM2, channel 2
+13H CDTM2_DTM4_3, ATOM2_3, Dead-time output of ATOM2, channel 3
+14H CDTM2_DTM5_0, ATOM2_4, Dead-time output of ATOM2, channel 4
+15H CDTM2_DTM5_1, ATOM2_5, Dead-time output of ATOM2, channel 5
+16H CDTM2_DTM5_2, ATOM2_6, Dead-time output of ATOM2, channel 6
+17H CDTM2_DTM5_3, ATOM2_7, Dead-time output of ATOM2, channel 7
+18H Reserved, do not use
+…
+1FH Reserved, do not use
+0 31:29, 
+23:21, 
+15:13, 7:5
+r Reserved
+Read as 0, shall be written with 0.
+OPEN MARKET VERSION
+
+=== PAGE 528 score 2 ===
+User’s Manual 26-180 V2.0.0 
+GTMV2.2.24  2021-02
+AURIX™ TC36x
+ 
+Generic Timer Module (GTM)
+GTM_MSCSETiCONj (i=3;j=2)
+MSC Set i Control j Register (09FF00 H+i*10H+j*4) Application Reset Value: 0000 0000 H
+31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+0S E L 1 10S E L 1 0
+rr wrr w
+1 5 1 4 1 3 1 2 1 1 1 0 9876543210
+0S E L 90S E L 8
+rr wrr w
+Field Bits Type Description
+SELk (k=8-11) 8*k-60:8*k-
+64
+rw Set 3[k] Input Selection
+This bit field defines the GTM timer source configured as Set i signal k out.
+00H CDTM0_DTM4_0, ATOM0_0, Dead-time output of ATOM0, channel 0
+01H CDTM0_DTM4_1, ATOM0_1, Dead-time output of ATOM0, channel 1
+02H CDTM0_DTM4_2, ATOM0_2, Dead-time output of ATOM0, channel 2
+03H CDTM0_DTM4_3, ATOM0_3, Dead-time output of ATOM0, channel 3
+04H CDTM0_DTM5_0, ATOM0_4, Dead-time output of ATOM0, channel 4
+05H CDTM0_DTM5_1, ATOM0_5, Dead-time output of ATOM0, channel 5
+06H CDTM0_DTM5_2, ATOM0_6, Dead-time output of ATOM0, channel 6
+07H CDTM0_DTM5_3, ATOM0_7, Dead-time output of ATOM0, channel 7
+08H CDTM1_DTM4_0, ATOM1_0, Dead-time output of ATOM1, channel 0
+09H CDTM1_DTM4_1, ATOM1_1, Dead-time output of ATOM1, channel 1
+0AH CDTM1_DTM4_2, ATOM1_2, Dead-time output of ATOM1, channel 2
+0BH CDTM1_DTM4_3, ATOM1_3, Dead-time output of ATOM1, channel 3
+0CH CDTM1_DTM5_0, ATOM1_4, Dead-time output of ATOM1, channel 4
+0DH CDTM1_DTM5_1, ATOM1_5, Dead-time output of ATOM1, channel 5
+0EH CDTM1_DTM5_2, ATOM1_6, Dead-time output of ATOM1, channel 6
+0FH CDTM1_DTM5_3, ATOM1_7, Dead-time output of ATOM1, channel 7
+10H CDTM2_DTM4_0, ATOM2_0, Dead-time output of ATOM2, channel 0
+11H CDTM2_DTM4_1, ATOM2_1, Dead-time output of ATOM2, channel 1
+12H CDTM2_DTM4_2, ATOM2_2, Dead-time output of ATOM2, channel 2
+13H CDTM2_DTM4_3, ATOM2_3, Dead-time output of ATOM2, channel 3
+14H CDTM2_DTM5_0, ATOM2_4, Dead-time output of ATOM2, channel 4
+15H CDTM2_DTM5_1, ATOM2_5, Dead-time output of ATOM2, channel 5
+16H CDTM2_DTM5_2, ATOM2_6, Dead-time output of ATOM2, channel 6
+17H CDTM2_DTM5_3, ATOM2_7, Dead-time output of ATOM2, channel 7
+18H Reserved, do not use
+…
+1FH Reserved, do not use
+0 31:29, 
+23:21, 
+15:13, 7:5
+r Reserved
+Read as 0, shall be written with 0.
+OPEN MARKET VERSION

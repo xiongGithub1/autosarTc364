@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Link_Core0.lsl
- *   Generation Time: 2024-07-06 14:54:17
+ *   Generation Time: 2024-07-14 20:32:32
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -100,38 +100,6 @@ else
   "_OS_ADC0SR0_ISR_CODE_END" = 0;
   "_OS_ADC0SR0_ISR_CODE_LIMIT" = 0;
 }
-if (exists(".text.OS_ADC2SR0_ISR_CODE"))
-{
-  group OS_ADC2SR0_ISR_CODE_GROUP(align=8)
-  {
-    select "[.]text.OS_ADC2SR0_ISR_CODE";
-  }
-  "_OS_ADC2SR0_ISR_CODE_START" = "_lc_gb_OS_ADC2SR0_ISR_CODE_GROUP";
-  "_OS_ADC2SR0_ISR_CODE_END" = "_lc_ge_OS_ADC2SR0_ISR_CODE_GROUP" - 1;
-  "_OS_ADC2SR0_ISR_CODE_LIMIT" = "_lc_ge_OS_ADC2SR0_ISR_CODE_GROUP";
-}
-else
-{
-  "_OS_ADC2SR0_ISR_CODE_START" = 0;
-  "_OS_ADC2SR0_ISR_CODE_END" = 0;
-  "_OS_ADC2SR0_ISR_CODE_LIMIT" = 0;
-}
-if (exists(".text.OS_ADC3SR0_ISR_CODE"))
-{
-  group OS_ADC3SR0_ISR_CODE_GROUP(align=8)
-  {
-    select "[.]text.OS_ADC3SR0_ISR_CODE";
-  }
-  "_OS_ADC3SR0_ISR_CODE_START" = "_lc_gb_OS_ADC3SR0_ISR_CODE_GROUP";
-  "_OS_ADC3SR0_ISR_CODE_END" = "_lc_ge_OS_ADC3SR0_ISR_CODE_GROUP" - 1;
-  "_OS_ADC3SR0_ISR_CODE_LIMIT" = "_lc_ge_OS_ADC3SR0_ISR_CODE_GROUP";
-}
-else
-{
-  "_OS_ADC3SR0_ISR_CODE_START" = 0;
-  "_OS_ADC3SR0_ISR_CODE_END" = 0;
-  "_OS_ADC3SR0_ISR_CODE_LIMIT" = 0;
-}
 if (exists(".text.OS_ADC8SR0_ISR_CODE"))
 {
   group OS_ADC8SR0_ISR_CODE_GROUP(align=8)
@@ -163,6 +131,22 @@ else
   "_OS_CanIsr_0_CODE_START" = 0;
   "_OS_CanIsr_0_CODE_END" = 0;
   "_OS_CanIsr_0_CODE_LIMIT" = 0;
+}
+if (exists(".text.OS_DMAERR0SR_ISR_CODE"))
+{
+  group OS_DMAERR0SR_ISR_CODE_GROUP(align=8)
+  {
+    select "[.]text.OS_DMAERR0SR_ISR_CODE";
+  }
+  "_OS_DMAERR0SR_ISR_CODE_START" = "_lc_gb_OS_DMAERR0SR_ISR_CODE_GROUP";
+  "_OS_DMAERR0SR_ISR_CODE_END" = "_lc_ge_OS_DMAERR0SR_ISR_CODE_GROUP" - 1;
+  "_OS_DMAERR0SR_ISR_CODE_LIMIT" = "_lc_ge_OS_DMAERR0SR_ISR_CODE_GROUP";
+}
+else
+{
+  "_OS_DMAERR0SR_ISR_CODE_START" = 0;
+  "_OS_DMAERR0SR_ISR_CODE_END" = 0;
+  "_OS_DMAERR0SR_ISR_CODE_LIMIT" = 0;
 }
 if (exists(".text.OS_Default_Appl_Init_Task_CODE"))
 {
@@ -243,6 +227,118 @@ else
   "_OS_Default_Init_Task_Trusted_CODE_START" = 0;
   "_OS_Default_Init_Task_Trusted_CODE_END" = 0;
   "_OS_Default_Init_Task_Trusted_CODE_LIMIT" = 0;
+}
+if (exists(".text.OS_MotorTask_CODE"))
+{
+  group OS_MotorTask_CODE_GROUP(align=8)
+  {
+    select "[.]text.OS_MotorTask_CODE";
+  }
+  "_OS_MotorTask_CODE_START" = "_lc_gb_OS_MotorTask_CODE_GROUP";
+  "_OS_MotorTask_CODE_END" = "_lc_ge_OS_MotorTask_CODE_GROUP" - 1;
+  "_OS_MotorTask_CODE_LIMIT" = "_lc_ge_OS_MotorTask_CODE_GROUP";
+}
+else
+{
+  "_OS_MotorTask_CODE_START" = 0;
+  "_OS_MotorTask_CODE_END" = 0;
+  "_OS_MotorTask_CODE_LIMIT" = 0;
+}
+if (exists(".text.OS_QSPI1ERR_ISR_CODE"))
+{
+  group OS_QSPI1ERR_ISR_CODE_GROUP(align=8)
+  {
+    select "[.]text.OS_QSPI1ERR_ISR_CODE";
+  }
+  "_OS_QSPI1ERR_ISR_CODE_START" = "_lc_gb_OS_QSPI1ERR_ISR_CODE_GROUP";
+  "_OS_QSPI1ERR_ISR_CODE_END" = "_lc_ge_OS_QSPI1ERR_ISR_CODE_GROUP" - 1;
+  "_OS_QSPI1ERR_ISR_CODE_LIMIT" = "_lc_ge_OS_QSPI1ERR_ISR_CODE_GROUP";
+}
+else
+{
+  "_OS_QSPI1ERR_ISR_CODE_START" = 0;
+  "_OS_QSPI1ERR_ISR_CODE_END" = 0;
+  "_OS_QSPI1ERR_ISR_CODE_LIMIT" = 0;
+}
+if (exists(".text.OS_QSPI1PT_ISR_CODE"))
+{
+  group OS_QSPI1PT_ISR_CODE_GROUP(align=8)
+  {
+    select "[.]text.OS_QSPI1PT_ISR_CODE";
+  }
+  "_OS_QSPI1PT_ISR_CODE_START" = "_lc_gb_OS_QSPI1PT_ISR_CODE_GROUP";
+  "_OS_QSPI1PT_ISR_CODE_END" = "_lc_ge_OS_QSPI1PT_ISR_CODE_GROUP" - 1;
+  "_OS_QSPI1PT_ISR_CODE_LIMIT" = "_lc_ge_OS_QSPI1PT_ISR_CODE_GROUP";
+}
+else
+{
+  "_OS_QSPI1PT_ISR_CODE_START" = 0;
+  "_OS_QSPI1PT_ISR_CODE_END" = 0;
+  "_OS_QSPI1PT_ISR_CODE_LIMIT" = 0;
+}
+if (exists(".text.OS_QSPI2ERR_ISR_CODE"))
+{
+  group OS_QSPI2ERR_ISR_CODE_GROUP(align=8)
+  {
+    select "[.]text.OS_QSPI2ERR_ISR_CODE";
+  }
+  "_OS_QSPI2ERR_ISR_CODE_START" = "_lc_gb_OS_QSPI2ERR_ISR_CODE_GROUP";
+  "_OS_QSPI2ERR_ISR_CODE_END" = "_lc_ge_OS_QSPI2ERR_ISR_CODE_GROUP" - 1;
+  "_OS_QSPI2ERR_ISR_CODE_LIMIT" = "_lc_ge_OS_QSPI2ERR_ISR_CODE_GROUP";
+}
+else
+{
+  "_OS_QSPI2ERR_ISR_CODE_START" = 0;
+  "_OS_QSPI2ERR_ISR_CODE_END" = 0;
+  "_OS_QSPI2ERR_ISR_CODE_LIMIT" = 0;
+}
+if (exists(".text.OS_QSPI2PT_ISR_CODE"))
+{
+  group OS_QSPI2PT_ISR_CODE_GROUP(align=8)
+  {
+    select "[.]text.OS_QSPI2PT_ISR_CODE";
+  }
+  "_OS_QSPI2PT_ISR_CODE_START" = "_lc_gb_OS_QSPI2PT_ISR_CODE_GROUP";
+  "_OS_QSPI2PT_ISR_CODE_END" = "_lc_ge_OS_QSPI2PT_ISR_CODE_GROUP" - 1;
+  "_OS_QSPI2PT_ISR_CODE_LIMIT" = "_lc_ge_OS_QSPI2PT_ISR_CODE_GROUP";
+}
+else
+{
+  "_OS_QSPI2PT_ISR_CODE_START" = 0;
+  "_OS_QSPI2PT_ISR_CODE_END" = 0;
+  "_OS_QSPI2PT_ISR_CODE_LIMIT" = 0;
+}
+if (exists(".text.OS_QSPI3ERR_ISR_CODE"))
+{
+  group OS_QSPI3ERR_ISR_CODE_GROUP(align=8)
+  {
+    select "[.]text.OS_QSPI3ERR_ISR_CODE";
+  }
+  "_OS_QSPI3ERR_ISR_CODE_START" = "_lc_gb_OS_QSPI3ERR_ISR_CODE_GROUP";
+  "_OS_QSPI3ERR_ISR_CODE_END" = "_lc_ge_OS_QSPI3ERR_ISR_CODE_GROUP" - 1;
+  "_OS_QSPI3ERR_ISR_CODE_LIMIT" = "_lc_ge_OS_QSPI3ERR_ISR_CODE_GROUP";
+}
+else
+{
+  "_OS_QSPI3ERR_ISR_CODE_START" = 0;
+  "_OS_QSPI3ERR_ISR_CODE_END" = 0;
+  "_OS_QSPI3ERR_ISR_CODE_LIMIT" = 0;
+}
+if (exists(".text.OS_QSPI3PT_ISR_CODE"))
+{
+  group OS_QSPI3PT_ISR_CODE_GROUP(align=8)
+  {
+    select "[.]text.OS_QSPI3PT_ISR_CODE";
+  }
+  "_OS_QSPI3PT_ISR_CODE_START" = "_lc_gb_OS_QSPI3PT_ISR_CODE_GROUP";
+  "_OS_QSPI3PT_ISR_CODE_END" = "_lc_ge_OS_QSPI3PT_ISR_CODE_GROUP" - 1;
+  "_OS_QSPI3PT_ISR_CODE_LIMIT" = "_lc_ge_OS_QSPI3PT_ISR_CODE_GROUP";
+}
+else
+{
+  "_OS_QSPI3PT_ISR_CODE_START" = 0;
+  "_OS_QSPI3PT_ISR_CODE_END" = 0;
+  "_OS_QSPI3PT_ISR_CODE_LIMIT" = 0;
 }
 #endif
 
@@ -847,6 +943,78 @@ else
 
 
 
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_TASK ) || defined ( OS_LINK_CONST_TASK_MOTORTASK ) || defined ( OS_LINK_CONST_TASK_MOTORTASK_FAR )
+if (exists(".rodata.OS_MotorTask_CONST"))
+{
+  group OS_MotorTask_CONST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    select "[.]rodata.OS_MotorTask_CONST";
+  }
+  "_OS_MotorTask_CONST_START" = "_lc_gb_OS_MotorTask_CONST_GROUP";
+  "_OS_MotorTask_CONST_END" = "_lc_ge_OS_MotorTask_CONST_GROUP" - 1;
+  "_OS_MotorTask_CONST_LIMIT" = "_lc_ge_OS_MotorTask_CONST_GROUP";
+}
+else
+{
+  "_OS_MotorTask_CONST_START" = 0;
+  "_OS_MotorTask_CONST_END" = 0;
+  "_OS_MotorTask_CONST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_TASK ) || defined ( OS_LINK_CONST_TASK_MOTORTASK ) || defined ( OS_LINK_CONST_TASK_MOTORTASK_NEAR )
+if (exists(".zrodata.OS_MotorTask_CONST_FAST"))
+{
+  group OS_MotorTask_CONST_FAST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    select "[.]zrodata.OS_MotorTask_CONST_FAST";
+  }
+  "_OS_MotorTask_CONST_FAST_START" = "_lc_gb_OS_MotorTask_CONST_FAST_GROUP";
+  "_OS_MotorTask_CONST_FAST_END" = "_lc_ge_OS_MotorTask_CONST_FAST_GROUP" - 1;
+  "_OS_MotorTask_CONST_FAST_LIMIT" = "_lc_ge_OS_MotorTask_CONST_FAST_GROUP";
+}
+else
+{
+  "_OS_MotorTask_CONST_FAST_START" = 0;
+  "_OS_MotorTask_CONST_FAST_END" = 0;
+  "_OS_MotorTask_CONST_FAST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_TASK ) || defined ( OS_LINK_CONST_TASK_MOTORTASK ) || defined ( OS_LINK_CONST_TASK_MOTORTASK_INIT )
+
+
+
+
+
+
+
+
+
+
+
+
+
+#endif
+
+#ifdef OS_LINK_CONST_TASK_MOTORTASK
+# undef OS_LINK_CONST_TASK_MOTORTASK
+#endif
+
+#ifdef OS_LINK_CONST_TASK_MOTORTASK_FAR
+# undef OS_LINK_CONST_TASK_MOTORTASK_FAR
+#endif
+
+#ifdef OS_LINK_CONST_TASK_MOTORTASK_NEAR
+# undef OS_LINK_CONST_TASK_MOTORTASK_NEAR
+#endif
+
+#ifdef OS_LINK_CONST_TASK_MOTORTASK_INIT
+# undef OS_LINK_CONST_TASK_MOTORTASK_INIT
+#endif
+
+
+
 #if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_ADCISR_G0 ) || defined ( OS_LINK_CONST_ISR_ADCISR_G0_FAR )
 if (exists(".rodata.OS_AdcIsr_G0_CONST"))
 {
@@ -915,150 +1083,6 @@ else
 
 #ifdef OS_LINK_CONST_ISR_ADCISR_G0_INIT
 # undef OS_LINK_CONST_ISR_ADCISR_G0_INIT
-#endif
-
-
-
-#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_ADCISR_G2 ) || defined ( OS_LINK_CONST_ISR_ADCISR_G2_FAR )
-if (exists(".rodata.OS_AdcIsr_G2_CONST"))
-{
-  group OS_AdcIsr_G2_CONST_GROUP(ordered, contiguous, fill, align=8)
-  {
-    select "[.]rodata.OS_AdcIsr_G2_CONST";
-  }
-  "_OS_AdcIsr_G2_CONST_START" = "_lc_gb_OS_AdcIsr_G2_CONST_GROUP";
-  "_OS_AdcIsr_G2_CONST_END" = "_lc_ge_OS_AdcIsr_G2_CONST_GROUP" - 1;
-  "_OS_AdcIsr_G2_CONST_LIMIT" = "_lc_ge_OS_AdcIsr_G2_CONST_GROUP";
-}
-else
-{
-  "_OS_AdcIsr_G2_CONST_START" = 0;
-  "_OS_AdcIsr_G2_CONST_END" = 0;
-  "_OS_AdcIsr_G2_CONST_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_ADCISR_G2 ) || defined ( OS_LINK_CONST_ISR_ADCISR_G2_NEAR )
-if (exists(".zrodata.OS_AdcIsr_G2_CONST_FAST"))
-{
-  group OS_AdcIsr_G2_CONST_FAST_GROUP(ordered, contiguous, fill, align=8)
-  {
-    select "[.]zrodata.OS_AdcIsr_G2_CONST_FAST";
-  }
-  "_OS_AdcIsr_G2_CONST_FAST_START" = "_lc_gb_OS_AdcIsr_G2_CONST_FAST_GROUP";
-  "_OS_AdcIsr_G2_CONST_FAST_END" = "_lc_ge_OS_AdcIsr_G2_CONST_FAST_GROUP" - 1;
-  "_OS_AdcIsr_G2_CONST_FAST_LIMIT" = "_lc_ge_OS_AdcIsr_G2_CONST_FAST_GROUP";
-}
-else
-{
-  "_OS_AdcIsr_G2_CONST_FAST_START" = 0;
-  "_OS_AdcIsr_G2_CONST_FAST_END" = 0;
-  "_OS_AdcIsr_G2_CONST_FAST_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_ADCISR_G2 ) || defined ( OS_LINK_CONST_ISR_ADCISR_G2_INIT )
-
-
-
-
-
-
-
-
-
-
-
-
-
-#endif
-
-#ifdef OS_LINK_CONST_ISR_ADCISR_G2
-# undef OS_LINK_CONST_ISR_ADCISR_G2
-#endif
-
-#ifdef OS_LINK_CONST_ISR_ADCISR_G2_FAR
-# undef OS_LINK_CONST_ISR_ADCISR_G2_FAR
-#endif
-
-#ifdef OS_LINK_CONST_ISR_ADCISR_G2_NEAR
-# undef OS_LINK_CONST_ISR_ADCISR_G2_NEAR
-#endif
-
-#ifdef OS_LINK_CONST_ISR_ADCISR_G2_INIT
-# undef OS_LINK_CONST_ISR_ADCISR_G2_INIT
-#endif
-
-
-
-#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_ADCISR_G3 ) || defined ( OS_LINK_CONST_ISR_ADCISR_G3_FAR )
-if (exists(".rodata.OS_AdcIsr_G3_CONST"))
-{
-  group OS_AdcIsr_G3_CONST_GROUP(ordered, contiguous, fill, align=8)
-  {
-    select "[.]rodata.OS_AdcIsr_G3_CONST";
-  }
-  "_OS_AdcIsr_G3_CONST_START" = "_lc_gb_OS_AdcIsr_G3_CONST_GROUP";
-  "_OS_AdcIsr_G3_CONST_END" = "_lc_ge_OS_AdcIsr_G3_CONST_GROUP" - 1;
-  "_OS_AdcIsr_G3_CONST_LIMIT" = "_lc_ge_OS_AdcIsr_G3_CONST_GROUP";
-}
-else
-{
-  "_OS_AdcIsr_G3_CONST_START" = 0;
-  "_OS_AdcIsr_G3_CONST_END" = 0;
-  "_OS_AdcIsr_G3_CONST_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_ADCISR_G3 ) || defined ( OS_LINK_CONST_ISR_ADCISR_G3_NEAR )
-if (exists(".zrodata.OS_AdcIsr_G3_CONST_FAST"))
-{
-  group OS_AdcIsr_G3_CONST_FAST_GROUP(ordered, contiguous, fill, align=8)
-  {
-    select "[.]zrodata.OS_AdcIsr_G3_CONST_FAST";
-  }
-  "_OS_AdcIsr_G3_CONST_FAST_START" = "_lc_gb_OS_AdcIsr_G3_CONST_FAST_GROUP";
-  "_OS_AdcIsr_G3_CONST_FAST_END" = "_lc_ge_OS_AdcIsr_G3_CONST_FAST_GROUP" - 1;
-  "_OS_AdcIsr_G3_CONST_FAST_LIMIT" = "_lc_ge_OS_AdcIsr_G3_CONST_FAST_GROUP";
-}
-else
-{
-  "_OS_AdcIsr_G3_CONST_FAST_START" = 0;
-  "_OS_AdcIsr_G3_CONST_FAST_END" = 0;
-  "_OS_AdcIsr_G3_CONST_FAST_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_ADCISR_G3 ) || defined ( OS_LINK_CONST_ISR_ADCISR_G3_INIT )
-
-
-
-
-
-
-
-
-
-
-
-
-
-#endif
-
-#ifdef OS_LINK_CONST_ISR_ADCISR_G3
-# undef OS_LINK_CONST_ISR_ADCISR_G3
-#endif
-
-#ifdef OS_LINK_CONST_ISR_ADCISR_G3_FAR
-# undef OS_LINK_CONST_ISR_ADCISR_G3_FAR
-#endif
-
-#ifdef OS_LINK_CONST_ISR_ADCISR_G3_NEAR
-# undef OS_LINK_CONST_ISR_ADCISR_G3_NEAR
-#endif
-
-#ifdef OS_LINK_CONST_ISR_ADCISR_G3_INIT
-# undef OS_LINK_CONST_ISR_ADCISR_G3_INIT
 #endif
 
 
@@ -1275,6 +1299,510 @@ else
 
 #ifdef OS_LINK_CONST_ISR_COUNTERISR_SYSTEMTIMER_INIT
 # undef OS_LINK_CONST_ISR_COUNTERISR_SYSTEMTIMER_INIT
+#endif
+
+
+
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_OSISR_DMA_ERR ) || defined ( OS_LINK_CONST_ISR_OSISR_DMA_ERR_FAR )
+if (exists(".rodata.OS_OsIsr_DMA_ERR_CONST"))
+{
+  group OS_OsIsr_DMA_ERR_CONST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    select "[.]rodata.OS_OsIsr_DMA_ERR_CONST";
+  }
+  "_OS_OsIsr_DMA_ERR_CONST_START" = "_lc_gb_OS_OsIsr_DMA_ERR_CONST_GROUP";
+  "_OS_OsIsr_DMA_ERR_CONST_END" = "_lc_ge_OS_OsIsr_DMA_ERR_CONST_GROUP" - 1;
+  "_OS_OsIsr_DMA_ERR_CONST_LIMIT" = "_lc_ge_OS_OsIsr_DMA_ERR_CONST_GROUP";
+}
+else
+{
+  "_OS_OsIsr_DMA_ERR_CONST_START" = 0;
+  "_OS_OsIsr_DMA_ERR_CONST_END" = 0;
+  "_OS_OsIsr_DMA_ERR_CONST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_OSISR_DMA_ERR ) || defined ( OS_LINK_CONST_ISR_OSISR_DMA_ERR_NEAR )
+if (exists(".zrodata.OS_OsIsr_DMA_ERR_CONST_FAST"))
+{
+  group OS_OsIsr_DMA_ERR_CONST_FAST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    select "[.]zrodata.OS_OsIsr_DMA_ERR_CONST_FAST";
+  }
+  "_OS_OsIsr_DMA_ERR_CONST_FAST_START" = "_lc_gb_OS_OsIsr_DMA_ERR_CONST_FAST_GROUP";
+  "_OS_OsIsr_DMA_ERR_CONST_FAST_END" = "_lc_ge_OS_OsIsr_DMA_ERR_CONST_FAST_GROUP" - 1;
+  "_OS_OsIsr_DMA_ERR_CONST_FAST_LIMIT" = "_lc_ge_OS_OsIsr_DMA_ERR_CONST_FAST_GROUP";
+}
+else
+{
+  "_OS_OsIsr_DMA_ERR_CONST_FAST_START" = 0;
+  "_OS_OsIsr_DMA_ERR_CONST_FAST_END" = 0;
+  "_OS_OsIsr_DMA_ERR_CONST_FAST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_OSISR_DMA_ERR ) || defined ( OS_LINK_CONST_ISR_OSISR_DMA_ERR_INIT )
+
+
+
+
+
+
+
+
+
+
+
+
+
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_DMA_ERR
+# undef OS_LINK_CONST_ISR_OSISR_DMA_ERR
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_DMA_ERR_FAR
+# undef OS_LINK_CONST_ISR_OSISR_DMA_ERR_FAR
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_DMA_ERR_NEAR
+# undef OS_LINK_CONST_ISR_OSISR_DMA_ERR_NEAR
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_DMA_ERR_INIT
+# undef OS_LINK_CONST_ISR_OSISR_DMA_ERR_INIT
+#endif
+
+
+
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI1_ERR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI1_ERR_FAR )
+if (exists(".rodata.OS_OsIsr_QSPI1_ERR_CONST"))
+{
+  group OS_OsIsr_QSPI1_ERR_CONST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    select "[.]rodata.OS_OsIsr_QSPI1_ERR_CONST";
+  }
+  "_OS_OsIsr_QSPI1_ERR_CONST_START" = "_lc_gb_OS_OsIsr_QSPI1_ERR_CONST_GROUP";
+  "_OS_OsIsr_QSPI1_ERR_CONST_END" = "_lc_ge_OS_OsIsr_QSPI1_ERR_CONST_GROUP" - 1;
+  "_OS_OsIsr_QSPI1_ERR_CONST_LIMIT" = "_lc_ge_OS_OsIsr_QSPI1_ERR_CONST_GROUP";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_ERR_CONST_START" = 0;
+  "_OS_OsIsr_QSPI1_ERR_CONST_END" = 0;
+  "_OS_OsIsr_QSPI1_ERR_CONST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI1_ERR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI1_ERR_NEAR )
+if (exists(".zrodata.OS_OsIsr_QSPI1_ERR_CONST_FAST"))
+{
+  group OS_OsIsr_QSPI1_ERR_CONST_FAST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    select "[.]zrodata.OS_OsIsr_QSPI1_ERR_CONST_FAST";
+  }
+  "_OS_OsIsr_QSPI1_ERR_CONST_FAST_START" = "_lc_gb_OS_OsIsr_QSPI1_ERR_CONST_FAST_GROUP";
+  "_OS_OsIsr_QSPI1_ERR_CONST_FAST_END" = "_lc_ge_OS_OsIsr_QSPI1_ERR_CONST_FAST_GROUP" - 1;
+  "_OS_OsIsr_QSPI1_ERR_CONST_FAST_LIMIT" = "_lc_ge_OS_OsIsr_QSPI1_ERR_CONST_FAST_GROUP";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_ERR_CONST_FAST_START" = 0;
+  "_OS_OsIsr_QSPI1_ERR_CONST_FAST_END" = 0;
+  "_OS_OsIsr_QSPI1_ERR_CONST_FAST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI1_ERR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI1_ERR_INIT )
+
+
+
+
+
+
+
+
+
+
+
+
+
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI1_ERR
+# undef OS_LINK_CONST_ISR_OSISR_QSPI1_ERR
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI1_ERR_FAR
+# undef OS_LINK_CONST_ISR_OSISR_QSPI1_ERR_FAR
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI1_ERR_NEAR
+# undef OS_LINK_CONST_ISR_OSISR_QSPI1_ERR_NEAR
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI1_ERR_INIT
+# undef OS_LINK_CONST_ISR_OSISR_QSPI1_ERR_INIT
+#endif
+
+
+
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI1_PT ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI1_PT_FAR )
+if (exists(".rodata.OS_OsIsr_QSPI1_PT_CONST"))
+{
+  group OS_OsIsr_QSPI1_PT_CONST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    select "[.]rodata.OS_OsIsr_QSPI1_PT_CONST";
+  }
+  "_OS_OsIsr_QSPI1_PT_CONST_START" = "_lc_gb_OS_OsIsr_QSPI1_PT_CONST_GROUP";
+  "_OS_OsIsr_QSPI1_PT_CONST_END" = "_lc_ge_OS_OsIsr_QSPI1_PT_CONST_GROUP" - 1;
+  "_OS_OsIsr_QSPI1_PT_CONST_LIMIT" = "_lc_ge_OS_OsIsr_QSPI1_PT_CONST_GROUP";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_PT_CONST_START" = 0;
+  "_OS_OsIsr_QSPI1_PT_CONST_END" = 0;
+  "_OS_OsIsr_QSPI1_PT_CONST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI1_PT ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI1_PT_NEAR )
+if (exists(".zrodata.OS_OsIsr_QSPI1_PT_CONST_FAST"))
+{
+  group OS_OsIsr_QSPI1_PT_CONST_FAST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    select "[.]zrodata.OS_OsIsr_QSPI1_PT_CONST_FAST";
+  }
+  "_OS_OsIsr_QSPI1_PT_CONST_FAST_START" = "_lc_gb_OS_OsIsr_QSPI1_PT_CONST_FAST_GROUP";
+  "_OS_OsIsr_QSPI1_PT_CONST_FAST_END" = "_lc_ge_OS_OsIsr_QSPI1_PT_CONST_FAST_GROUP" - 1;
+  "_OS_OsIsr_QSPI1_PT_CONST_FAST_LIMIT" = "_lc_ge_OS_OsIsr_QSPI1_PT_CONST_FAST_GROUP";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_PT_CONST_FAST_START" = 0;
+  "_OS_OsIsr_QSPI1_PT_CONST_FAST_END" = 0;
+  "_OS_OsIsr_QSPI1_PT_CONST_FAST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI1_PT ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI1_PT_INIT )
+
+
+
+
+
+
+
+
+
+
+
+
+
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI1_PT
+# undef OS_LINK_CONST_ISR_OSISR_QSPI1_PT
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI1_PT_FAR
+# undef OS_LINK_CONST_ISR_OSISR_QSPI1_PT_FAR
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI1_PT_NEAR
+# undef OS_LINK_CONST_ISR_OSISR_QSPI1_PT_NEAR
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI1_PT_INIT
+# undef OS_LINK_CONST_ISR_OSISR_QSPI1_PT_INIT
+#endif
+
+
+
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI2_ERR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI2_ERR_FAR )
+if (exists(".rodata.OS_OsIsr_QSPI2_ERR_CONST"))
+{
+  group OS_OsIsr_QSPI2_ERR_CONST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    select "[.]rodata.OS_OsIsr_QSPI2_ERR_CONST";
+  }
+  "_OS_OsIsr_QSPI2_ERR_CONST_START" = "_lc_gb_OS_OsIsr_QSPI2_ERR_CONST_GROUP";
+  "_OS_OsIsr_QSPI2_ERR_CONST_END" = "_lc_ge_OS_OsIsr_QSPI2_ERR_CONST_GROUP" - 1;
+  "_OS_OsIsr_QSPI2_ERR_CONST_LIMIT" = "_lc_ge_OS_OsIsr_QSPI2_ERR_CONST_GROUP";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_ERR_CONST_START" = 0;
+  "_OS_OsIsr_QSPI2_ERR_CONST_END" = 0;
+  "_OS_OsIsr_QSPI2_ERR_CONST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI2_ERR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI2_ERR_NEAR )
+if (exists(".zrodata.OS_OsIsr_QSPI2_ERR_CONST_FAST"))
+{
+  group OS_OsIsr_QSPI2_ERR_CONST_FAST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    select "[.]zrodata.OS_OsIsr_QSPI2_ERR_CONST_FAST";
+  }
+  "_OS_OsIsr_QSPI2_ERR_CONST_FAST_START" = "_lc_gb_OS_OsIsr_QSPI2_ERR_CONST_FAST_GROUP";
+  "_OS_OsIsr_QSPI2_ERR_CONST_FAST_END" = "_lc_ge_OS_OsIsr_QSPI2_ERR_CONST_FAST_GROUP" - 1;
+  "_OS_OsIsr_QSPI2_ERR_CONST_FAST_LIMIT" = "_lc_ge_OS_OsIsr_QSPI2_ERR_CONST_FAST_GROUP";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_ERR_CONST_FAST_START" = 0;
+  "_OS_OsIsr_QSPI2_ERR_CONST_FAST_END" = 0;
+  "_OS_OsIsr_QSPI2_ERR_CONST_FAST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI2_ERR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI2_ERR_INIT )
+
+
+
+
+
+
+
+
+
+
+
+
+
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI2_ERR
+# undef OS_LINK_CONST_ISR_OSISR_QSPI2_ERR
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI2_ERR_FAR
+# undef OS_LINK_CONST_ISR_OSISR_QSPI2_ERR_FAR
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI2_ERR_NEAR
+# undef OS_LINK_CONST_ISR_OSISR_QSPI2_ERR_NEAR
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI2_ERR_INIT
+# undef OS_LINK_CONST_ISR_OSISR_QSPI2_ERR_INIT
+#endif
+
+
+
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI2_PT ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI2_PT_FAR )
+if (exists(".rodata.OS_OsIsr_QSPI2_PT_CONST"))
+{
+  group OS_OsIsr_QSPI2_PT_CONST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    select "[.]rodata.OS_OsIsr_QSPI2_PT_CONST";
+  }
+  "_OS_OsIsr_QSPI2_PT_CONST_START" = "_lc_gb_OS_OsIsr_QSPI2_PT_CONST_GROUP";
+  "_OS_OsIsr_QSPI2_PT_CONST_END" = "_lc_ge_OS_OsIsr_QSPI2_PT_CONST_GROUP" - 1;
+  "_OS_OsIsr_QSPI2_PT_CONST_LIMIT" = "_lc_ge_OS_OsIsr_QSPI2_PT_CONST_GROUP";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_PT_CONST_START" = 0;
+  "_OS_OsIsr_QSPI2_PT_CONST_END" = 0;
+  "_OS_OsIsr_QSPI2_PT_CONST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI2_PT ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI2_PT_NEAR )
+if (exists(".zrodata.OS_OsIsr_QSPI2_PT_CONST_FAST"))
+{
+  group OS_OsIsr_QSPI2_PT_CONST_FAST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    select "[.]zrodata.OS_OsIsr_QSPI2_PT_CONST_FAST";
+  }
+  "_OS_OsIsr_QSPI2_PT_CONST_FAST_START" = "_lc_gb_OS_OsIsr_QSPI2_PT_CONST_FAST_GROUP";
+  "_OS_OsIsr_QSPI2_PT_CONST_FAST_END" = "_lc_ge_OS_OsIsr_QSPI2_PT_CONST_FAST_GROUP" - 1;
+  "_OS_OsIsr_QSPI2_PT_CONST_FAST_LIMIT" = "_lc_ge_OS_OsIsr_QSPI2_PT_CONST_FAST_GROUP";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_PT_CONST_FAST_START" = 0;
+  "_OS_OsIsr_QSPI2_PT_CONST_FAST_END" = 0;
+  "_OS_OsIsr_QSPI2_PT_CONST_FAST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI2_PT ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI2_PT_INIT )
+
+
+
+
+
+
+
+
+
+
+
+
+
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI2_PT
+# undef OS_LINK_CONST_ISR_OSISR_QSPI2_PT
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI2_PT_FAR
+# undef OS_LINK_CONST_ISR_OSISR_QSPI2_PT_FAR
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI2_PT_NEAR
+# undef OS_LINK_CONST_ISR_OSISR_QSPI2_PT_NEAR
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI2_PT_INIT
+# undef OS_LINK_CONST_ISR_OSISR_QSPI2_PT_INIT
+#endif
+
+
+
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI3_ERR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI3_ERR_FAR )
+if (exists(".rodata.OS_OsIsr_QSPI3_ERR_CONST"))
+{
+  group OS_OsIsr_QSPI3_ERR_CONST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    select "[.]rodata.OS_OsIsr_QSPI3_ERR_CONST";
+  }
+  "_OS_OsIsr_QSPI3_ERR_CONST_START" = "_lc_gb_OS_OsIsr_QSPI3_ERR_CONST_GROUP";
+  "_OS_OsIsr_QSPI3_ERR_CONST_END" = "_lc_ge_OS_OsIsr_QSPI3_ERR_CONST_GROUP" - 1;
+  "_OS_OsIsr_QSPI3_ERR_CONST_LIMIT" = "_lc_ge_OS_OsIsr_QSPI3_ERR_CONST_GROUP";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_ERR_CONST_START" = 0;
+  "_OS_OsIsr_QSPI3_ERR_CONST_END" = 0;
+  "_OS_OsIsr_QSPI3_ERR_CONST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI3_ERR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI3_ERR_NEAR )
+if (exists(".zrodata.OS_OsIsr_QSPI3_ERR_CONST_FAST"))
+{
+  group OS_OsIsr_QSPI3_ERR_CONST_FAST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    select "[.]zrodata.OS_OsIsr_QSPI3_ERR_CONST_FAST";
+  }
+  "_OS_OsIsr_QSPI3_ERR_CONST_FAST_START" = "_lc_gb_OS_OsIsr_QSPI3_ERR_CONST_FAST_GROUP";
+  "_OS_OsIsr_QSPI3_ERR_CONST_FAST_END" = "_lc_ge_OS_OsIsr_QSPI3_ERR_CONST_FAST_GROUP" - 1;
+  "_OS_OsIsr_QSPI3_ERR_CONST_FAST_LIMIT" = "_lc_ge_OS_OsIsr_QSPI3_ERR_CONST_FAST_GROUP";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_ERR_CONST_FAST_START" = 0;
+  "_OS_OsIsr_QSPI3_ERR_CONST_FAST_END" = 0;
+  "_OS_OsIsr_QSPI3_ERR_CONST_FAST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI3_ERR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI3_ERR_INIT )
+
+
+
+
+
+
+
+
+
+
+
+
+
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI3_ERR
+# undef OS_LINK_CONST_ISR_OSISR_QSPI3_ERR
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI3_ERR_FAR
+# undef OS_LINK_CONST_ISR_OSISR_QSPI3_ERR_FAR
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI3_ERR_NEAR
+# undef OS_LINK_CONST_ISR_OSISR_QSPI3_ERR_NEAR
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI3_ERR_INIT
+# undef OS_LINK_CONST_ISR_OSISR_QSPI3_ERR_INIT
+#endif
+
+
+
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI3_PT ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI3_PT_FAR )
+if (exists(".rodata.OS_OsIsr_QSPI3_PT_CONST"))
+{
+  group OS_OsIsr_QSPI3_PT_CONST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    select "[.]rodata.OS_OsIsr_QSPI3_PT_CONST";
+  }
+  "_OS_OsIsr_QSPI3_PT_CONST_START" = "_lc_gb_OS_OsIsr_QSPI3_PT_CONST_GROUP";
+  "_OS_OsIsr_QSPI3_PT_CONST_END" = "_lc_ge_OS_OsIsr_QSPI3_PT_CONST_GROUP" - 1;
+  "_OS_OsIsr_QSPI3_PT_CONST_LIMIT" = "_lc_ge_OS_OsIsr_QSPI3_PT_CONST_GROUP";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_PT_CONST_START" = 0;
+  "_OS_OsIsr_QSPI3_PT_CONST_END" = 0;
+  "_OS_OsIsr_QSPI3_PT_CONST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI3_PT ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI3_PT_NEAR )
+if (exists(".zrodata.OS_OsIsr_QSPI3_PT_CONST_FAST"))
+{
+  group OS_OsIsr_QSPI3_PT_CONST_FAST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    select "[.]zrodata.OS_OsIsr_QSPI3_PT_CONST_FAST";
+  }
+  "_OS_OsIsr_QSPI3_PT_CONST_FAST_START" = "_lc_gb_OS_OsIsr_QSPI3_PT_CONST_FAST_GROUP";
+  "_OS_OsIsr_QSPI3_PT_CONST_FAST_END" = "_lc_ge_OS_OsIsr_QSPI3_PT_CONST_FAST_GROUP" - 1;
+  "_OS_OsIsr_QSPI3_PT_CONST_FAST_LIMIT" = "_lc_ge_OS_OsIsr_QSPI3_PT_CONST_FAST_GROUP";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_PT_CONST_FAST_START" = 0;
+  "_OS_OsIsr_QSPI3_PT_CONST_FAST_END" = 0;
+  "_OS_OsIsr_QSPI3_PT_CONST_FAST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI3_PT ) || defined ( OS_LINK_CONST_ISR_OSISR_QSPI3_PT_INIT )
+
+
+
+
+
+
+
+
+
+
+
+
+
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI3_PT
+# undef OS_LINK_CONST_ISR_OSISR_QSPI3_PT
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI3_PT_FAR
+# undef OS_LINK_CONST_ISR_OSISR_QSPI3_PT_FAR
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI3_PT_NEAR
+# undef OS_LINK_CONST_ISR_OSISR_QSPI3_PT_NEAR
+#endif
+
+#ifdef OS_LINK_CONST_ISR_OSISR_QSPI3_PT_INIT
+# undef OS_LINK_CONST_ISR_OSISR_QSPI3_PT_INIT
 #endif
 
 
@@ -4219,6 +4747,374 @@ else
 
 
 
+#ifdef OS_LINK_VAR_TASK_MOTORTASK
+group OS_MotorTask_VAR_ALL_GROUP(ordered, contiguous, fill, align=8)
+{
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_TASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_FAR ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_FAR_CACHE ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_FAR_CACHE_INIT )
+if (exists(".data.OS_MotorTask_VAR"))
+{
+  group OS_MotorTask_VAR_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_MotorTask_VAR_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]data.OS_MotorTask_VAR";
+    }
+    reserved ".pad.OS_MotorTask_VAR" (size=16);
+  }
+  "_OS_MotorTask_VAR_START" = "_lc_gb_OS_MotorTask_VAR_GROUP";
+  "_OS_MotorTask_VAR_END" = "_lc_ub__pad_OS_MotorTask_VAR" - 1;
+  "_OS_MotorTask_VAR_LIMIT" = "_lc_ub__pad_OS_MotorTask_VAR";
+}
+else
+{
+  "_OS_MotorTask_VAR_START" = 0;
+  "_OS_MotorTask_VAR_END" = 0;
+  "_OS_MotorTask_VAR_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_TASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_FAR ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_FAR_CACHE ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_FAR_CACHE_NOINIT )
+if (exists(".bss.OS_MotorTask_VAR_NOINIT"))
+{
+  group OS_MotorTask_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_MotorTask_VAR_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_MotorTask_VAR_NOINIT";
+    }
+    reserved ".pad.OS_MotorTask_VAR_NOINIT" (size=16);
+  }
+  "_OS_MotorTask_VAR_NOINIT_START" = "_lc_gb_OS_MotorTask_VAR_NOINIT_GROUP";
+  "_OS_MotorTask_VAR_NOINIT_END" = "_lc_ub__pad_OS_MotorTask_VAR_NOINIT" - 1;
+  "_OS_MotorTask_VAR_NOINIT_LIMIT" = "_lc_ub__pad_OS_MotorTask_VAR_NOINIT";
+}
+else
+{
+  "_OS_MotorTask_VAR_NOINIT_START" = 0;
+  "_OS_MotorTask_VAR_NOINIT_END" = 0;
+  "_OS_MotorTask_VAR_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_TASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_FAR ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_FAR_CACHE ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_FAR_CACHE_ZERO_INIT )
+if (exists(".bss.OS_MotorTask_VAR_ZERO_INIT_bss") || exists(".data.OS_MotorTask_VAR_ZERO_INIT"))
+{
+  group OS_MotorTask_VAR_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_MotorTask_VAR_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_MotorTask_VAR_ZERO_INIT_bss";
+      select "[.]data.OS_MotorTask_VAR_ZERO_INIT";
+    }
+    reserved ".pad.OS_MotorTask_VAR_ZERO_INIT" (size=16);
+  }
+  "_OS_MotorTask_VAR_ZERO_INIT_START" = "_lc_gb_OS_MotorTask_VAR_ZERO_INIT_GROUP";
+  "_OS_MotorTask_VAR_ZERO_INIT_END" = "_lc_ub__pad_OS_MotorTask_VAR_ZERO_INIT" - 1;
+  "_OS_MotorTask_VAR_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_MotorTask_VAR_ZERO_INIT";
+}
+else
+{
+  "_OS_MotorTask_VAR_ZERO_INIT_START" = 0;
+  "_OS_MotorTask_VAR_ZERO_INIT_END" = 0;
+  "_OS_MotorTask_VAR_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_TASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_NEAR ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_NEAR_CACHE ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_NEAR_CACHE_INIT )
+if (exists(".zdata.OS_MotorTask_VAR_FAST"))
+{
+  group OS_MotorTask_VAR_FAST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_MotorTask_VAR_FAST_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zdata.OS_MotorTask_VAR_FAST";
+    }
+    reserved ".pad.OS_MotorTask_VAR_FAST" (size=16);
+  }
+  "_OS_MotorTask_VAR_FAST_START" = "_lc_gb_OS_MotorTask_VAR_FAST_GROUP";
+  "_OS_MotorTask_VAR_FAST_END" = "_lc_ub__pad_OS_MotorTask_VAR_FAST" - 1;
+  "_OS_MotorTask_VAR_FAST_LIMIT" = "_lc_ub__pad_OS_MotorTask_VAR_FAST";
+}
+else
+{
+  "_OS_MotorTask_VAR_FAST_START" = 0;
+  "_OS_MotorTask_VAR_FAST_END" = 0;
+  "_OS_MotorTask_VAR_FAST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_TASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_NEAR ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_NEAR_CACHE ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_NEAR_CACHE_NOINIT )
+if (exists(".zbss.OS_MotorTask_VAR_FAST_NOINIT"))
+{
+  group OS_MotorTask_VAR_FAST_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_MotorTask_VAR_FAST_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_MotorTask_VAR_FAST_NOINIT";
+    }
+    reserved ".pad.OS_MotorTask_VAR_FAST_NOINIT" (size=16);
+  }
+  "_OS_MotorTask_VAR_FAST_NOINIT_START" = "_lc_gb_OS_MotorTask_VAR_FAST_NOINIT_GROUP";
+  "_OS_MotorTask_VAR_FAST_NOINIT_END" = "_lc_ub__pad_OS_MotorTask_VAR_FAST_NOINIT" - 1;
+  "_OS_MotorTask_VAR_FAST_NOINIT_LIMIT" = "_lc_ub__pad_OS_MotorTask_VAR_FAST_NOINIT";
+}
+else
+{
+  "_OS_MotorTask_VAR_FAST_NOINIT_START" = 0;
+  "_OS_MotorTask_VAR_FAST_NOINIT_END" = 0;
+  "_OS_MotorTask_VAR_FAST_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_TASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_NEAR ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_NEAR_CACHE ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_NEAR_CACHE_ZERO_INIT )
+if (exists(".zbss.OS_MotorTask_VAR_FAST_ZERO_INIT_bss") || exists(".zdata.OS_MotorTask_VAR_FAST_ZERO_INIT"))
+{
+  group OS_MotorTask_VAR_FAST_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_MotorTask_VAR_FAST_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_MotorTask_VAR_FAST_ZERO_INIT_bss";
+      select "[.]zdata.OS_MotorTask_VAR_FAST_ZERO_INIT";
+    }
+    reserved ".pad.OS_MotorTask_VAR_FAST_ZERO_INIT" (size=16);
+  }
+  "_OS_MotorTask_VAR_FAST_ZERO_INIT_START" = "_lc_gb_OS_MotorTask_VAR_FAST_ZERO_INIT_GROUP";
+  "_OS_MotorTask_VAR_FAST_ZERO_INIT_END" = "_lc_ub__pad_OS_MotorTask_VAR_FAST_ZERO_INIT" - 1;
+  "_OS_MotorTask_VAR_FAST_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_MotorTask_VAR_FAST_ZERO_INIT";
+}
+else
+{
+  "_OS_MotorTask_VAR_FAST_ZERO_INIT_START" = 0;
+  "_OS_MotorTask_VAR_FAST_ZERO_INIT_END" = 0;
+  "_OS_MotorTask_VAR_FAST_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_TASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_FAR ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_FAR_NOCACHE ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_FAR_NOCACHE_INIT )
+if (exists(".data.OS_MotorTask_VAR_NOCACHE"))
+{
+  group OS_MotorTask_VAR_NOCACHE_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_MotorTask_VAR_NOCACHE_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]data.OS_MotorTask_VAR_NOCACHE";
+    }
+    reserved ".pad.OS_MotorTask_VAR_NOCACHE" (size=16);
+  }
+  "_OS_MotorTask_VAR_NOCACHE_START" = "_lc_gb_OS_MotorTask_VAR_NOCACHE_GROUP";
+  "_OS_MotorTask_VAR_NOCACHE_END" = "_lc_ub__pad_OS_MotorTask_VAR_NOCACHE" - 1;
+  "_OS_MotorTask_VAR_NOCACHE_LIMIT" = "_lc_ub__pad_OS_MotorTask_VAR_NOCACHE";
+}
+else
+{
+  "_OS_MotorTask_VAR_NOCACHE_START" = 0;
+  "_OS_MotorTask_VAR_NOCACHE_END" = 0;
+  "_OS_MotorTask_VAR_NOCACHE_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_TASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_FAR ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_FAR_NOCACHE ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_FAR_NOCACHE_NOINIT )
+if (exists(".bss.OS_MotorTask_VAR_NOCACHE_NOINIT"))
+{
+  group OS_MotorTask_VAR_NOCACHE_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_MotorTask_VAR_NOCACHE_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_MotorTask_VAR_NOCACHE_NOINIT";
+    }
+    reserved ".pad.OS_MotorTask_VAR_NOCACHE_NOINIT" (size=16);
+  }
+  "_OS_MotorTask_VAR_NOCACHE_NOINIT_START" = "_lc_gb_OS_MotorTask_VAR_NOCACHE_NOINIT_GROUP";
+  "_OS_MotorTask_VAR_NOCACHE_NOINIT_END" = "_lc_ub__pad_OS_MotorTask_VAR_NOCACHE_NOINIT" - 1;
+  "_OS_MotorTask_VAR_NOCACHE_NOINIT_LIMIT" = "_lc_ub__pad_OS_MotorTask_VAR_NOCACHE_NOINIT";
+}
+else
+{
+  "_OS_MotorTask_VAR_NOCACHE_NOINIT_START" = 0;
+  "_OS_MotorTask_VAR_NOCACHE_NOINIT_END" = 0;
+  "_OS_MotorTask_VAR_NOCACHE_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_TASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_FAR ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_FAR_NOCACHE ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_FAR_NOCACHE_ZERO_INIT )
+if (exists(".bss.OS_MotorTask_VAR_NOCACHE_ZERO_INIT_bss") || exists(".data.OS_MotorTask_VAR_NOCACHE_ZERO_INIT"))
+{
+  group OS_MotorTask_VAR_NOCACHE_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_MotorTask_VAR_NOCACHE_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_MotorTask_VAR_NOCACHE_ZERO_INIT_bss";
+      select "[.]data.OS_MotorTask_VAR_NOCACHE_ZERO_INIT";
+    }
+    reserved ".pad.OS_MotorTask_VAR_NOCACHE_ZERO_INIT" (size=16);
+  }
+  "_OS_MotorTask_VAR_NOCACHE_ZERO_INIT_START" = "_lc_gb_OS_MotorTask_VAR_NOCACHE_ZERO_INIT_GROUP";
+  "_OS_MotorTask_VAR_NOCACHE_ZERO_INIT_END" = "_lc_ub__pad_OS_MotorTask_VAR_NOCACHE_ZERO_INIT" - 1;
+  "_OS_MotorTask_VAR_NOCACHE_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_MotorTask_VAR_NOCACHE_ZERO_INIT";
+}
+else
+{
+  "_OS_MotorTask_VAR_NOCACHE_ZERO_INIT_START" = 0;
+  "_OS_MotorTask_VAR_NOCACHE_ZERO_INIT_END" = 0;
+  "_OS_MotorTask_VAR_NOCACHE_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_TASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_NEAR ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_NEAR_NOCACHE_INIT )
+if (exists(".zdata.OS_MotorTask_VAR_FAST_NOCACHE"))
+{
+  group OS_MotorTask_VAR_FAST_NOCACHE_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_MotorTask_VAR_FAST_NOCACHE_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zdata.OS_MotorTask_VAR_FAST_NOCACHE";
+    }
+    reserved ".pad.OS_MotorTask_VAR_FAST_NOCACHE" (size=16);
+  }
+  "_OS_MotorTask_VAR_FAST_NOCACHE_START" = "_lc_gb_OS_MotorTask_VAR_FAST_NOCACHE_GROUP";
+  "_OS_MotorTask_VAR_FAST_NOCACHE_END" = "_lc_ub__pad_OS_MotorTask_VAR_FAST_NOCACHE" - 1;
+  "_OS_MotorTask_VAR_FAST_NOCACHE_LIMIT" = "_lc_ub__pad_OS_MotorTask_VAR_FAST_NOCACHE";
+}
+else
+{
+  "_OS_MotorTask_VAR_FAST_NOCACHE_START" = 0;
+  "_OS_MotorTask_VAR_FAST_NOCACHE_END" = 0;
+  "_OS_MotorTask_VAR_FAST_NOCACHE_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_TASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_NEAR ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_NEAR_NOCACHE_NOINIT )
+if (exists(".zbss.OS_MotorTask_VAR_FAST_NOCACHE_NOINIT"))
+{
+  group OS_MotorTask_VAR_FAST_NOCACHE_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_MotorTask_VAR_FAST_NOCACHE_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_MotorTask_VAR_FAST_NOCACHE_NOINIT";
+    }
+    reserved ".pad.OS_MotorTask_VAR_FAST_NOCACHE_NOINIT" (size=16);
+  }
+  "_OS_MotorTask_VAR_FAST_NOCACHE_NOINIT_START" = "_lc_gb_OS_MotorTask_VAR_FAST_NOCACHE_NOINIT_GROUP";
+  "_OS_MotorTask_VAR_FAST_NOCACHE_NOINIT_END" = "_lc_ub__pad_OS_MotorTask_VAR_FAST_NOCACHE_NOINIT" - 1;
+  "_OS_MotorTask_VAR_FAST_NOCACHE_NOINIT_LIMIT" = "_lc_ub__pad_OS_MotorTask_VAR_FAST_NOCACHE_NOINIT";
+}
+else
+{
+  "_OS_MotorTask_VAR_FAST_NOCACHE_NOINIT_START" = 0;
+  "_OS_MotorTask_VAR_FAST_NOCACHE_NOINIT_END" = 0;
+  "_OS_MotorTask_VAR_FAST_NOCACHE_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_TASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_NEAR ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_TASK_MOTORTASK_NEAR_NOCACHE_ZERO_INIT )
+if (exists(".zbss.OS_MotorTask_VAR_FAST_NOCACHE_ZERO_INIT_bss") || exists(".zdata.OS_MotorTask_VAR_FAST_NOCACHE_ZERO_INIT"))
+{
+  group OS_MotorTask_VAR_FAST_NOCACHE_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_MotorTask_VAR_FAST_NOCACHE_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_MotorTask_VAR_FAST_NOCACHE_ZERO_INIT_bss";
+      select "[.]zdata.OS_MotorTask_VAR_FAST_NOCACHE_ZERO_INIT";
+    }
+    reserved ".pad.OS_MotorTask_VAR_FAST_NOCACHE_ZERO_INIT" (size=16);
+  }
+  "_OS_MotorTask_VAR_FAST_NOCACHE_ZERO_INIT_START" = "_lc_gb_OS_MotorTask_VAR_FAST_NOCACHE_ZERO_INIT_GROUP";
+  "_OS_MotorTask_VAR_FAST_NOCACHE_ZERO_INIT_END" = "_lc_ub__pad_OS_MotorTask_VAR_FAST_NOCACHE_ZERO_INIT" - 1;
+  "_OS_MotorTask_VAR_FAST_NOCACHE_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_MotorTask_VAR_FAST_NOCACHE_ZERO_INIT";
+}
+else
+{
+  "_OS_MotorTask_VAR_FAST_NOCACHE_ZERO_INIT_START" = 0;
+  "_OS_MotorTask_VAR_FAST_NOCACHE_ZERO_INIT_END" = 0;
+  "_OS_MotorTask_VAR_FAST_NOCACHE_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#ifdef OS_LINK_VAR_TASK_MOTORTASK
+} /* OS_MotorTask_VAR_ALL_GROUP */
+"_OS_MotorTask_VAR_ALL_START" = "_lc_gb_OS_MotorTask_VAR_ALL_GROUP";
+"_OS_MotorTask_VAR_ALL_END" = "_lc_ge_OS_MotorTask_VAR_ALL_GROUP" - 1;
+"_OS_MotorTask_VAR_ALL_LIMIT" = "_lc_ge_OS_MotorTask_VAR_ALL_GROUP";
+
+# undef OS_LINK_VAR_TASK_MOTORTASK
+#endif
+
+#ifdef OS_LINK_VAR_TASK_MOTORTASK_FAR
+# undef OS_LINK_VAR_TASK_MOTORTASK_FAR
+#endif
+
+#ifdef OS_LINK_VAR_TASK_MOTORTASK_FAR_CACHE
+# undef OS_LINK_VAR_TASK_MOTORTASK_FAR_CACHE
+#endif
+
+#ifdef OS_LINK_VAR_TASK_MOTORTASK_FAR_CACHE_INIT
+# undef OS_LINK_VAR_TASK_MOTORTASK_FAR_CACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_TASK_MOTORTASK_FAR_CACHE_NOINIT
+# undef OS_LINK_VAR_TASK_MOTORTASK_FAR_CACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_TASK_MOTORTASK_FAR_CACHE_ZERO_INIT
+# undef OS_LINK_VAR_TASK_MOTORTASK_FAR_CACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_TASK_MOTORTASK_FAR_NOCACHE
+# undef OS_LINK_VAR_TASK_MOTORTASK_FAR_NOCACHE
+#endif
+
+#ifdef OS_LINK_VAR_TASK_MOTORTASK_FAR_NOCACHE_INIT
+# undef OS_LINK_VAR_TASK_MOTORTASK_FAR_NOCACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_TASK_MOTORTASK_FAR_NOCACHE_NOINIT
+# undef OS_LINK_VAR_TASK_MOTORTASK_FAR_NOCACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_TASK_MOTORTASK_FAR_NOCACHE_ZERO_INIT
+# undef OS_LINK_VAR_TASK_MOTORTASK_FAR_NOCACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_TASK_MOTORTASK_NEAR
+# undef OS_LINK_VAR_TASK_MOTORTASK_NEAR
+#endif
+
+#ifdef OS_LINK_VAR_TASK_MOTORTASK_NEAR_CACHE
+# undef OS_LINK_VAR_TASK_MOTORTASK_NEAR_CACHE
+#endif
+
+#ifdef OS_LINK_VAR_TASK_MOTORTASK_NEAR_CACHE_INIT
+# undef OS_LINK_VAR_TASK_MOTORTASK_NEAR_CACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_TASK_MOTORTASK_NEAR_CACHE_NOINIT
+# undef OS_LINK_VAR_TASK_MOTORTASK_NEAR_CACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_TASK_MOTORTASK_NEAR_CACHE_ZERO_INIT
+# undef OS_LINK_VAR_TASK_MOTORTASK_NEAR_CACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_TASK_MOTORTASK_NEAR_NOCACHE
+# undef OS_LINK_VAR_TASK_MOTORTASK_NEAR_NOCACHE
+#endif
+
+#ifdef OS_LINK_VAR_TASK_MOTORTASK_NEAR_NOCACHE_INIT
+# undef OS_LINK_VAR_TASK_MOTORTASK_NEAR_NOCACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_TASK_MOTORTASK_NEAR_NOCACHE_NOINIT
+# undef OS_LINK_VAR_TASK_MOTORTASK_NEAR_NOCACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_TASK_MOTORTASK_NEAR_NOCACHE_ZERO_INIT
+# undef OS_LINK_VAR_TASK_MOTORTASK_NEAR_NOCACHE_ZERO_INIT
+#endif
+
+
+
 #ifdef OS_LINK_VAR_ISR_ADCISR_G0
 group OS_AdcIsr_G0_VAR_ALL_GROUP(ordered, contiguous, fill, align=8)
 {
@@ -4583,742 +5479,6 @@ else
 
 #ifdef OS_LINK_VAR_ISR_ADCISR_G0_NEAR_NOCACHE_ZERO_INIT
 # undef OS_LINK_VAR_ISR_ADCISR_G0_NEAR_NOCACHE_ZERO_INIT
-#endif
-
-
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G2
-group OS_AdcIsr_G2_VAR_ALL_GROUP(ordered, contiguous, fill, align=8)
-{
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_FAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_FAR_CACHE_INIT )
-if (exists(".data.OS_AdcIsr_G2_VAR"))
-{
-  group OS_AdcIsr_G2_VAR_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G2_VAR_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]data.OS_AdcIsr_G2_VAR";
-    }
-    reserved ".pad.OS_AdcIsr_G2_VAR" (size=16);
-  }
-  "_OS_AdcIsr_G2_VAR_START" = "_lc_gb_OS_AdcIsr_G2_VAR_GROUP";
-  "_OS_AdcIsr_G2_VAR_END" = "_lc_ub__pad_OS_AdcIsr_G2_VAR" - 1;
-  "_OS_AdcIsr_G2_VAR_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G2_VAR";
-}
-else
-{
-  "_OS_AdcIsr_G2_VAR_START" = 0;
-  "_OS_AdcIsr_G2_VAR_END" = 0;
-  "_OS_AdcIsr_G2_VAR_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_FAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_FAR_CACHE_NOINIT )
-if (exists(".bss.OS_AdcIsr_G2_VAR_NOINIT"))
-{
-  group OS_AdcIsr_G2_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G2_VAR_NOINIT_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]bss.OS_AdcIsr_G2_VAR_NOINIT";
-    }
-    reserved ".pad.OS_AdcIsr_G2_VAR_NOINIT" (size=16);
-  }
-  "_OS_AdcIsr_G2_VAR_NOINIT_START" = "_lc_gb_OS_AdcIsr_G2_VAR_NOINIT_GROUP";
-  "_OS_AdcIsr_G2_VAR_NOINIT_END" = "_lc_ub__pad_OS_AdcIsr_G2_VAR_NOINIT" - 1;
-  "_OS_AdcIsr_G2_VAR_NOINIT_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G2_VAR_NOINIT";
-}
-else
-{
-  "_OS_AdcIsr_G2_VAR_NOINIT_START" = 0;
-  "_OS_AdcIsr_G2_VAR_NOINIT_END" = 0;
-  "_OS_AdcIsr_G2_VAR_NOINIT_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_FAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_FAR_CACHE_ZERO_INIT )
-if (exists(".bss.OS_AdcIsr_G2_VAR_ZERO_INIT_bss") || exists(".data.OS_AdcIsr_G2_VAR_ZERO_INIT"))
-{
-  group OS_AdcIsr_G2_VAR_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G2_VAR_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]bss.OS_AdcIsr_G2_VAR_ZERO_INIT_bss";
-      select "[.]data.OS_AdcIsr_G2_VAR_ZERO_INIT";
-    }
-    reserved ".pad.OS_AdcIsr_G2_VAR_ZERO_INIT" (size=16);
-  }
-  "_OS_AdcIsr_G2_VAR_ZERO_INIT_START" = "_lc_gb_OS_AdcIsr_G2_VAR_ZERO_INIT_GROUP";
-  "_OS_AdcIsr_G2_VAR_ZERO_INIT_END" = "_lc_ub__pad_OS_AdcIsr_G2_VAR_ZERO_INIT" - 1;
-  "_OS_AdcIsr_G2_VAR_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G2_VAR_ZERO_INIT";
-}
-else
-{
-  "_OS_AdcIsr_G2_VAR_ZERO_INIT_START" = 0;
-  "_OS_AdcIsr_G2_VAR_ZERO_INIT_END" = 0;
-  "_OS_AdcIsr_G2_VAR_ZERO_INIT_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_NEAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_NEAR_CACHE_INIT )
-if (exists(".zdata.OS_AdcIsr_G2_VAR_FAST"))
-{
-  group OS_AdcIsr_G2_VAR_FAST_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G2_VAR_FAST_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]zdata.OS_AdcIsr_G2_VAR_FAST";
-    }
-    reserved ".pad.OS_AdcIsr_G2_VAR_FAST" (size=16);
-  }
-  "_OS_AdcIsr_G2_VAR_FAST_START" = "_lc_gb_OS_AdcIsr_G2_VAR_FAST_GROUP";
-  "_OS_AdcIsr_G2_VAR_FAST_END" = "_lc_ub__pad_OS_AdcIsr_G2_VAR_FAST" - 1;
-  "_OS_AdcIsr_G2_VAR_FAST_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G2_VAR_FAST";
-}
-else
-{
-  "_OS_AdcIsr_G2_VAR_FAST_START" = 0;
-  "_OS_AdcIsr_G2_VAR_FAST_END" = 0;
-  "_OS_AdcIsr_G2_VAR_FAST_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_NEAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_NEAR_CACHE_NOINIT )
-if (exists(".zbss.OS_AdcIsr_G2_VAR_FAST_NOINIT"))
-{
-  group OS_AdcIsr_G2_VAR_FAST_NOINIT_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G2_VAR_FAST_NOINIT_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]zbss.OS_AdcIsr_G2_VAR_FAST_NOINIT";
-    }
-    reserved ".pad.OS_AdcIsr_G2_VAR_FAST_NOINIT" (size=16);
-  }
-  "_OS_AdcIsr_G2_VAR_FAST_NOINIT_START" = "_lc_gb_OS_AdcIsr_G2_VAR_FAST_NOINIT_GROUP";
-  "_OS_AdcIsr_G2_VAR_FAST_NOINIT_END" = "_lc_ub__pad_OS_AdcIsr_G2_VAR_FAST_NOINIT" - 1;
-  "_OS_AdcIsr_G2_VAR_FAST_NOINIT_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G2_VAR_FAST_NOINIT";
-}
-else
-{
-  "_OS_AdcIsr_G2_VAR_FAST_NOINIT_START" = 0;
-  "_OS_AdcIsr_G2_VAR_FAST_NOINIT_END" = 0;
-  "_OS_AdcIsr_G2_VAR_FAST_NOINIT_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_NEAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_NEAR_CACHE_ZERO_INIT )
-if (exists(".zbss.OS_AdcIsr_G2_VAR_FAST_ZERO_INIT_bss") || exists(".zdata.OS_AdcIsr_G2_VAR_FAST_ZERO_INIT"))
-{
-  group OS_AdcIsr_G2_VAR_FAST_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G2_VAR_FAST_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]zbss.OS_AdcIsr_G2_VAR_FAST_ZERO_INIT_bss";
-      select "[.]zdata.OS_AdcIsr_G2_VAR_FAST_ZERO_INIT";
-    }
-    reserved ".pad.OS_AdcIsr_G2_VAR_FAST_ZERO_INIT" (size=16);
-  }
-  "_OS_AdcIsr_G2_VAR_FAST_ZERO_INIT_START" = "_lc_gb_OS_AdcIsr_G2_VAR_FAST_ZERO_INIT_GROUP";
-  "_OS_AdcIsr_G2_VAR_FAST_ZERO_INIT_END" = "_lc_ub__pad_OS_AdcIsr_G2_VAR_FAST_ZERO_INIT" - 1;
-  "_OS_AdcIsr_G2_VAR_FAST_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G2_VAR_FAST_ZERO_INIT";
-}
-else
-{
-  "_OS_AdcIsr_G2_VAR_FAST_ZERO_INIT_START" = 0;
-  "_OS_AdcIsr_G2_VAR_FAST_ZERO_INIT_END" = 0;
-  "_OS_AdcIsr_G2_VAR_FAST_ZERO_INIT_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_FAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_FAR_NOCACHE_INIT )
-if (exists(".data.OS_AdcIsr_G2_VAR_NOCACHE"))
-{
-  group OS_AdcIsr_G2_VAR_NOCACHE_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G2_VAR_NOCACHE_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]data.OS_AdcIsr_G2_VAR_NOCACHE";
-    }
-    reserved ".pad.OS_AdcIsr_G2_VAR_NOCACHE" (size=16);
-  }
-  "_OS_AdcIsr_G2_VAR_NOCACHE_START" = "_lc_gb_OS_AdcIsr_G2_VAR_NOCACHE_GROUP";
-  "_OS_AdcIsr_G2_VAR_NOCACHE_END" = "_lc_ub__pad_OS_AdcIsr_G2_VAR_NOCACHE" - 1;
-  "_OS_AdcIsr_G2_VAR_NOCACHE_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G2_VAR_NOCACHE";
-}
-else
-{
-  "_OS_AdcIsr_G2_VAR_NOCACHE_START" = 0;
-  "_OS_AdcIsr_G2_VAR_NOCACHE_END" = 0;
-  "_OS_AdcIsr_G2_VAR_NOCACHE_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_FAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_FAR_NOCACHE_NOINIT )
-if (exists(".bss.OS_AdcIsr_G2_VAR_NOCACHE_NOINIT"))
-{
-  group OS_AdcIsr_G2_VAR_NOCACHE_NOINIT_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G2_VAR_NOCACHE_NOINIT_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]bss.OS_AdcIsr_G2_VAR_NOCACHE_NOINIT";
-    }
-    reserved ".pad.OS_AdcIsr_G2_VAR_NOCACHE_NOINIT" (size=16);
-  }
-  "_OS_AdcIsr_G2_VAR_NOCACHE_NOINIT_START" = "_lc_gb_OS_AdcIsr_G2_VAR_NOCACHE_NOINIT_GROUP";
-  "_OS_AdcIsr_G2_VAR_NOCACHE_NOINIT_END" = "_lc_ub__pad_OS_AdcIsr_G2_VAR_NOCACHE_NOINIT" - 1;
-  "_OS_AdcIsr_G2_VAR_NOCACHE_NOINIT_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G2_VAR_NOCACHE_NOINIT";
-}
-else
-{
-  "_OS_AdcIsr_G2_VAR_NOCACHE_NOINIT_START" = 0;
-  "_OS_AdcIsr_G2_VAR_NOCACHE_NOINIT_END" = 0;
-  "_OS_AdcIsr_G2_VAR_NOCACHE_NOINIT_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_FAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_FAR_NOCACHE_ZERO_INIT )
-if (exists(".bss.OS_AdcIsr_G2_VAR_NOCACHE_ZERO_INIT_bss") || exists(".data.OS_AdcIsr_G2_VAR_NOCACHE_ZERO_INIT"))
-{
-  group OS_AdcIsr_G2_VAR_NOCACHE_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G2_VAR_NOCACHE_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]bss.OS_AdcIsr_G2_VAR_NOCACHE_ZERO_INIT_bss";
-      select "[.]data.OS_AdcIsr_G2_VAR_NOCACHE_ZERO_INIT";
-    }
-    reserved ".pad.OS_AdcIsr_G2_VAR_NOCACHE_ZERO_INIT" (size=16);
-  }
-  "_OS_AdcIsr_G2_VAR_NOCACHE_ZERO_INIT_START" = "_lc_gb_OS_AdcIsr_G2_VAR_NOCACHE_ZERO_INIT_GROUP";
-  "_OS_AdcIsr_G2_VAR_NOCACHE_ZERO_INIT_END" = "_lc_ub__pad_OS_AdcIsr_G2_VAR_NOCACHE_ZERO_INIT" - 1;
-  "_OS_AdcIsr_G2_VAR_NOCACHE_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G2_VAR_NOCACHE_ZERO_INIT";
-}
-else
-{
-  "_OS_AdcIsr_G2_VAR_NOCACHE_ZERO_INIT_START" = 0;
-  "_OS_AdcIsr_G2_VAR_NOCACHE_ZERO_INIT_END" = 0;
-  "_OS_AdcIsr_G2_VAR_NOCACHE_ZERO_INIT_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_NEAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_NEAR_NOCACHE_INIT )
-if (exists(".zdata.OS_AdcIsr_G2_VAR_FAST_NOCACHE"))
-{
-  group OS_AdcIsr_G2_VAR_FAST_NOCACHE_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G2_VAR_FAST_NOCACHE_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]zdata.OS_AdcIsr_G2_VAR_FAST_NOCACHE";
-    }
-    reserved ".pad.OS_AdcIsr_G2_VAR_FAST_NOCACHE" (size=16);
-  }
-  "_OS_AdcIsr_G2_VAR_FAST_NOCACHE_START" = "_lc_gb_OS_AdcIsr_G2_VAR_FAST_NOCACHE_GROUP";
-  "_OS_AdcIsr_G2_VAR_FAST_NOCACHE_END" = "_lc_ub__pad_OS_AdcIsr_G2_VAR_FAST_NOCACHE" - 1;
-  "_OS_AdcIsr_G2_VAR_FAST_NOCACHE_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G2_VAR_FAST_NOCACHE";
-}
-else
-{
-  "_OS_AdcIsr_G2_VAR_FAST_NOCACHE_START" = 0;
-  "_OS_AdcIsr_G2_VAR_FAST_NOCACHE_END" = 0;
-  "_OS_AdcIsr_G2_VAR_FAST_NOCACHE_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_NEAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_NEAR_NOCACHE_NOINIT )
-if (exists(".zbss.OS_AdcIsr_G2_VAR_FAST_NOCACHE_NOINIT"))
-{
-  group OS_AdcIsr_G2_VAR_FAST_NOCACHE_NOINIT_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G2_VAR_FAST_NOCACHE_NOINIT_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]zbss.OS_AdcIsr_G2_VAR_FAST_NOCACHE_NOINIT";
-    }
-    reserved ".pad.OS_AdcIsr_G2_VAR_FAST_NOCACHE_NOINIT" (size=16);
-  }
-  "_OS_AdcIsr_G2_VAR_FAST_NOCACHE_NOINIT_START" = "_lc_gb_OS_AdcIsr_G2_VAR_FAST_NOCACHE_NOINIT_GROUP";
-  "_OS_AdcIsr_G2_VAR_FAST_NOCACHE_NOINIT_END" = "_lc_ub__pad_OS_AdcIsr_G2_VAR_FAST_NOCACHE_NOINIT" - 1;
-  "_OS_AdcIsr_G2_VAR_FAST_NOCACHE_NOINIT_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G2_VAR_FAST_NOCACHE_NOINIT";
-}
-else
-{
-  "_OS_AdcIsr_G2_VAR_FAST_NOCACHE_NOINIT_START" = 0;
-  "_OS_AdcIsr_G2_VAR_FAST_NOCACHE_NOINIT_END" = 0;
-  "_OS_AdcIsr_G2_VAR_FAST_NOCACHE_NOINIT_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_NEAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G2_NEAR_NOCACHE_ZERO_INIT )
-if (exists(".zbss.OS_AdcIsr_G2_VAR_FAST_NOCACHE_ZERO_INIT_bss") || exists(".zdata.OS_AdcIsr_G2_VAR_FAST_NOCACHE_ZERO_INIT"))
-{
-  group OS_AdcIsr_G2_VAR_FAST_NOCACHE_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G2_VAR_FAST_NOCACHE_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]zbss.OS_AdcIsr_G2_VAR_FAST_NOCACHE_ZERO_INIT_bss";
-      select "[.]zdata.OS_AdcIsr_G2_VAR_FAST_NOCACHE_ZERO_INIT";
-    }
-    reserved ".pad.OS_AdcIsr_G2_VAR_FAST_NOCACHE_ZERO_INIT" (size=16);
-  }
-  "_OS_AdcIsr_G2_VAR_FAST_NOCACHE_ZERO_INIT_START" = "_lc_gb_OS_AdcIsr_G2_VAR_FAST_NOCACHE_ZERO_INIT_GROUP";
-  "_OS_AdcIsr_G2_VAR_FAST_NOCACHE_ZERO_INIT_END" = "_lc_ub__pad_OS_AdcIsr_G2_VAR_FAST_NOCACHE_ZERO_INIT" - 1;
-  "_OS_AdcIsr_G2_VAR_FAST_NOCACHE_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G2_VAR_FAST_NOCACHE_ZERO_INIT";
-}
-else
-{
-  "_OS_AdcIsr_G2_VAR_FAST_NOCACHE_ZERO_INIT_START" = 0;
-  "_OS_AdcIsr_G2_VAR_FAST_NOCACHE_ZERO_INIT_END" = 0;
-  "_OS_AdcIsr_G2_VAR_FAST_NOCACHE_ZERO_INIT_LIMIT" = 0;
-}
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G2
-} /* OS_AdcIsr_G2_VAR_ALL_GROUP */
-"_OS_AdcIsr_G2_VAR_ALL_START" = "_lc_gb_OS_AdcIsr_G2_VAR_ALL_GROUP";
-"_OS_AdcIsr_G2_VAR_ALL_END" = "_lc_ge_OS_AdcIsr_G2_VAR_ALL_GROUP" - 1;
-"_OS_AdcIsr_G2_VAR_ALL_LIMIT" = "_lc_ge_OS_AdcIsr_G2_VAR_ALL_GROUP";
-
-# undef OS_LINK_VAR_ISR_ADCISR_G2
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G2_FAR
-# undef OS_LINK_VAR_ISR_ADCISR_G2_FAR
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G2_FAR_CACHE
-# undef OS_LINK_VAR_ISR_ADCISR_G2_FAR_CACHE
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G2_FAR_CACHE_INIT
-# undef OS_LINK_VAR_ISR_ADCISR_G2_FAR_CACHE_INIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G2_FAR_CACHE_NOINIT
-# undef OS_LINK_VAR_ISR_ADCISR_G2_FAR_CACHE_NOINIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G2_FAR_CACHE_ZERO_INIT
-# undef OS_LINK_VAR_ISR_ADCISR_G2_FAR_CACHE_ZERO_INIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G2_FAR_NOCACHE
-# undef OS_LINK_VAR_ISR_ADCISR_G2_FAR_NOCACHE
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G2_FAR_NOCACHE_INIT
-# undef OS_LINK_VAR_ISR_ADCISR_G2_FAR_NOCACHE_INIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G2_FAR_NOCACHE_NOINIT
-# undef OS_LINK_VAR_ISR_ADCISR_G2_FAR_NOCACHE_NOINIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G2_FAR_NOCACHE_ZERO_INIT
-# undef OS_LINK_VAR_ISR_ADCISR_G2_FAR_NOCACHE_ZERO_INIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G2_NEAR
-# undef OS_LINK_VAR_ISR_ADCISR_G2_NEAR
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G2_NEAR_CACHE
-# undef OS_LINK_VAR_ISR_ADCISR_G2_NEAR_CACHE
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G2_NEAR_CACHE_INIT
-# undef OS_LINK_VAR_ISR_ADCISR_G2_NEAR_CACHE_INIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G2_NEAR_CACHE_NOINIT
-# undef OS_LINK_VAR_ISR_ADCISR_G2_NEAR_CACHE_NOINIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G2_NEAR_CACHE_ZERO_INIT
-# undef OS_LINK_VAR_ISR_ADCISR_G2_NEAR_CACHE_ZERO_INIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G2_NEAR_NOCACHE
-# undef OS_LINK_VAR_ISR_ADCISR_G2_NEAR_NOCACHE
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G2_NEAR_NOCACHE_INIT
-# undef OS_LINK_VAR_ISR_ADCISR_G2_NEAR_NOCACHE_INIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G2_NEAR_NOCACHE_NOINIT
-# undef OS_LINK_VAR_ISR_ADCISR_G2_NEAR_NOCACHE_NOINIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G2_NEAR_NOCACHE_ZERO_INIT
-# undef OS_LINK_VAR_ISR_ADCISR_G2_NEAR_NOCACHE_ZERO_INIT
-#endif
-
-
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G3
-group OS_AdcIsr_G3_VAR_ALL_GROUP(ordered, contiguous, fill, align=8)
-{
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_FAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_FAR_CACHE_INIT )
-if (exists(".data.OS_AdcIsr_G3_VAR"))
-{
-  group OS_AdcIsr_G3_VAR_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G3_VAR_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]data.OS_AdcIsr_G3_VAR";
-    }
-    reserved ".pad.OS_AdcIsr_G3_VAR" (size=16);
-  }
-  "_OS_AdcIsr_G3_VAR_START" = "_lc_gb_OS_AdcIsr_G3_VAR_GROUP";
-  "_OS_AdcIsr_G3_VAR_END" = "_lc_ub__pad_OS_AdcIsr_G3_VAR" - 1;
-  "_OS_AdcIsr_G3_VAR_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G3_VAR";
-}
-else
-{
-  "_OS_AdcIsr_G3_VAR_START" = 0;
-  "_OS_AdcIsr_G3_VAR_END" = 0;
-  "_OS_AdcIsr_G3_VAR_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_FAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_FAR_CACHE_NOINIT )
-if (exists(".bss.OS_AdcIsr_G3_VAR_NOINIT"))
-{
-  group OS_AdcIsr_G3_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G3_VAR_NOINIT_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]bss.OS_AdcIsr_G3_VAR_NOINIT";
-    }
-    reserved ".pad.OS_AdcIsr_G3_VAR_NOINIT" (size=16);
-  }
-  "_OS_AdcIsr_G3_VAR_NOINIT_START" = "_lc_gb_OS_AdcIsr_G3_VAR_NOINIT_GROUP";
-  "_OS_AdcIsr_G3_VAR_NOINIT_END" = "_lc_ub__pad_OS_AdcIsr_G3_VAR_NOINIT" - 1;
-  "_OS_AdcIsr_G3_VAR_NOINIT_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G3_VAR_NOINIT";
-}
-else
-{
-  "_OS_AdcIsr_G3_VAR_NOINIT_START" = 0;
-  "_OS_AdcIsr_G3_VAR_NOINIT_END" = 0;
-  "_OS_AdcIsr_G3_VAR_NOINIT_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_FAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_FAR_CACHE_ZERO_INIT )
-if (exists(".bss.OS_AdcIsr_G3_VAR_ZERO_INIT_bss") || exists(".data.OS_AdcIsr_G3_VAR_ZERO_INIT"))
-{
-  group OS_AdcIsr_G3_VAR_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G3_VAR_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]bss.OS_AdcIsr_G3_VAR_ZERO_INIT_bss";
-      select "[.]data.OS_AdcIsr_G3_VAR_ZERO_INIT";
-    }
-    reserved ".pad.OS_AdcIsr_G3_VAR_ZERO_INIT" (size=16);
-  }
-  "_OS_AdcIsr_G3_VAR_ZERO_INIT_START" = "_lc_gb_OS_AdcIsr_G3_VAR_ZERO_INIT_GROUP";
-  "_OS_AdcIsr_G3_VAR_ZERO_INIT_END" = "_lc_ub__pad_OS_AdcIsr_G3_VAR_ZERO_INIT" - 1;
-  "_OS_AdcIsr_G3_VAR_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G3_VAR_ZERO_INIT";
-}
-else
-{
-  "_OS_AdcIsr_G3_VAR_ZERO_INIT_START" = 0;
-  "_OS_AdcIsr_G3_VAR_ZERO_INIT_END" = 0;
-  "_OS_AdcIsr_G3_VAR_ZERO_INIT_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_NEAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_NEAR_CACHE_INIT )
-if (exists(".zdata.OS_AdcIsr_G3_VAR_FAST"))
-{
-  group OS_AdcIsr_G3_VAR_FAST_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G3_VAR_FAST_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]zdata.OS_AdcIsr_G3_VAR_FAST";
-    }
-    reserved ".pad.OS_AdcIsr_G3_VAR_FAST" (size=16);
-  }
-  "_OS_AdcIsr_G3_VAR_FAST_START" = "_lc_gb_OS_AdcIsr_G3_VAR_FAST_GROUP";
-  "_OS_AdcIsr_G3_VAR_FAST_END" = "_lc_ub__pad_OS_AdcIsr_G3_VAR_FAST" - 1;
-  "_OS_AdcIsr_G3_VAR_FAST_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G3_VAR_FAST";
-}
-else
-{
-  "_OS_AdcIsr_G3_VAR_FAST_START" = 0;
-  "_OS_AdcIsr_G3_VAR_FAST_END" = 0;
-  "_OS_AdcIsr_G3_VAR_FAST_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_NEAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_NEAR_CACHE_NOINIT )
-if (exists(".zbss.OS_AdcIsr_G3_VAR_FAST_NOINIT"))
-{
-  group OS_AdcIsr_G3_VAR_FAST_NOINIT_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G3_VAR_FAST_NOINIT_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]zbss.OS_AdcIsr_G3_VAR_FAST_NOINIT";
-    }
-    reserved ".pad.OS_AdcIsr_G3_VAR_FAST_NOINIT" (size=16);
-  }
-  "_OS_AdcIsr_G3_VAR_FAST_NOINIT_START" = "_lc_gb_OS_AdcIsr_G3_VAR_FAST_NOINIT_GROUP";
-  "_OS_AdcIsr_G3_VAR_FAST_NOINIT_END" = "_lc_ub__pad_OS_AdcIsr_G3_VAR_FAST_NOINIT" - 1;
-  "_OS_AdcIsr_G3_VAR_FAST_NOINIT_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G3_VAR_FAST_NOINIT";
-}
-else
-{
-  "_OS_AdcIsr_G3_VAR_FAST_NOINIT_START" = 0;
-  "_OS_AdcIsr_G3_VAR_FAST_NOINIT_END" = 0;
-  "_OS_AdcIsr_G3_VAR_FAST_NOINIT_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_NEAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_NEAR_CACHE_ZERO_INIT )
-if (exists(".zbss.OS_AdcIsr_G3_VAR_FAST_ZERO_INIT_bss") || exists(".zdata.OS_AdcIsr_G3_VAR_FAST_ZERO_INIT"))
-{
-  group OS_AdcIsr_G3_VAR_FAST_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G3_VAR_FAST_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]zbss.OS_AdcIsr_G3_VAR_FAST_ZERO_INIT_bss";
-      select "[.]zdata.OS_AdcIsr_G3_VAR_FAST_ZERO_INIT";
-    }
-    reserved ".pad.OS_AdcIsr_G3_VAR_FAST_ZERO_INIT" (size=16);
-  }
-  "_OS_AdcIsr_G3_VAR_FAST_ZERO_INIT_START" = "_lc_gb_OS_AdcIsr_G3_VAR_FAST_ZERO_INIT_GROUP";
-  "_OS_AdcIsr_G3_VAR_FAST_ZERO_INIT_END" = "_lc_ub__pad_OS_AdcIsr_G3_VAR_FAST_ZERO_INIT" - 1;
-  "_OS_AdcIsr_G3_VAR_FAST_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G3_VAR_FAST_ZERO_INIT";
-}
-else
-{
-  "_OS_AdcIsr_G3_VAR_FAST_ZERO_INIT_START" = 0;
-  "_OS_AdcIsr_G3_VAR_FAST_ZERO_INIT_END" = 0;
-  "_OS_AdcIsr_G3_VAR_FAST_ZERO_INIT_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_FAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_FAR_NOCACHE_INIT )
-if (exists(".data.OS_AdcIsr_G3_VAR_NOCACHE"))
-{
-  group OS_AdcIsr_G3_VAR_NOCACHE_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G3_VAR_NOCACHE_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]data.OS_AdcIsr_G3_VAR_NOCACHE";
-    }
-    reserved ".pad.OS_AdcIsr_G3_VAR_NOCACHE" (size=16);
-  }
-  "_OS_AdcIsr_G3_VAR_NOCACHE_START" = "_lc_gb_OS_AdcIsr_G3_VAR_NOCACHE_GROUP";
-  "_OS_AdcIsr_G3_VAR_NOCACHE_END" = "_lc_ub__pad_OS_AdcIsr_G3_VAR_NOCACHE" - 1;
-  "_OS_AdcIsr_G3_VAR_NOCACHE_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G3_VAR_NOCACHE";
-}
-else
-{
-  "_OS_AdcIsr_G3_VAR_NOCACHE_START" = 0;
-  "_OS_AdcIsr_G3_VAR_NOCACHE_END" = 0;
-  "_OS_AdcIsr_G3_VAR_NOCACHE_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_FAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_FAR_NOCACHE_NOINIT )
-if (exists(".bss.OS_AdcIsr_G3_VAR_NOCACHE_NOINIT"))
-{
-  group OS_AdcIsr_G3_VAR_NOCACHE_NOINIT_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G3_VAR_NOCACHE_NOINIT_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]bss.OS_AdcIsr_G3_VAR_NOCACHE_NOINIT";
-    }
-    reserved ".pad.OS_AdcIsr_G3_VAR_NOCACHE_NOINIT" (size=16);
-  }
-  "_OS_AdcIsr_G3_VAR_NOCACHE_NOINIT_START" = "_lc_gb_OS_AdcIsr_G3_VAR_NOCACHE_NOINIT_GROUP";
-  "_OS_AdcIsr_G3_VAR_NOCACHE_NOINIT_END" = "_lc_ub__pad_OS_AdcIsr_G3_VAR_NOCACHE_NOINIT" - 1;
-  "_OS_AdcIsr_G3_VAR_NOCACHE_NOINIT_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G3_VAR_NOCACHE_NOINIT";
-}
-else
-{
-  "_OS_AdcIsr_G3_VAR_NOCACHE_NOINIT_START" = 0;
-  "_OS_AdcIsr_G3_VAR_NOCACHE_NOINIT_END" = 0;
-  "_OS_AdcIsr_G3_VAR_NOCACHE_NOINIT_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_FAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_FAR_NOCACHE_ZERO_INIT )
-if (exists(".bss.OS_AdcIsr_G3_VAR_NOCACHE_ZERO_INIT_bss") || exists(".data.OS_AdcIsr_G3_VAR_NOCACHE_ZERO_INIT"))
-{
-  group OS_AdcIsr_G3_VAR_NOCACHE_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G3_VAR_NOCACHE_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]bss.OS_AdcIsr_G3_VAR_NOCACHE_ZERO_INIT_bss";
-      select "[.]data.OS_AdcIsr_G3_VAR_NOCACHE_ZERO_INIT";
-    }
-    reserved ".pad.OS_AdcIsr_G3_VAR_NOCACHE_ZERO_INIT" (size=16);
-  }
-  "_OS_AdcIsr_G3_VAR_NOCACHE_ZERO_INIT_START" = "_lc_gb_OS_AdcIsr_G3_VAR_NOCACHE_ZERO_INIT_GROUP";
-  "_OS_AdcIsr_G3_VAR_NOCACHE_ZERO_INIT_END" = "_lc_ub__pad_OS_AdcIsr_G3_VAR_NOCACHE_ZERO_INIT" - 1;
-  "_OS_AdcIsr_G3_VAR_NOCACHE_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G3_VAR_NOCACHE_ZERO_INIT";
-}
-else
-{
-  "_OS_AdcIsr_G3_VAR_NOCACHE_ZERO_INIT_START" = 0;
-  "_OS_AdcIsr_G3_VAR_NOCACHE_ZERO_INIT_END" = 0;
-  "_OS_AdcIsr_G3_VAR_NOCACHE_ZERO_INIT_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_NEAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_NEAR_NOCACHE_INIT )
-if (exists(".zdata.OS_AdcIsr_G3_VAR_FAST_NOCACHE"))
-{
-  group OS_AdcIsr_G3_VAR_FAST_NOCACHE_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G3_VAR_FAST_NOCACHE_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]zdata.OS_AdcIsr_G3_VAR_FAST_NOCACHE";
-    }
-    reserved ".pad.OS_AdcIsr_G3_VAR_FAST_NOCACHE" (size=16);
-  }
-  "_OS_AdcIsr_G3_VAR_FAST_NOCACHE_START" = "_lc_gb_OS_AdcIsr_G3_VAR_FAST_NOCACHE_GROUP";
-  "_OS_AdcIsr_G3_VAR_FAST_NOCACHE_END" = "_lc_ub__pad_OS_AdcIsr_G3_VAR_FAST_NOCACHE" - 1;
-  "_OS_AdcIsr_G3_VAR_FAST_NOCACHE_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G3_VAR_FAST_NOCACHE";
-}
-else
-{
-  "_OS_AdcIsr_G3_VAR_FAST_NOCACHE_START" = 0;
-  "_OS_AdcIsr_G3_VAR_FAST_NOCACHE_END" = 0;
-  "_OS_AdcIsr_G3_VAR_FAST_NOCACHE_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_NEAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_NEAR_NOCACHE_NOINIT )
-if (exists(".zbss.OS_AdcIsr_G3_VAR_FAST_NOCACHE_NOINIT"))
-{
-  group OS_AdcIsr_G3_VAR_FAST_NOCACHE_NOINIT_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G3_VAR_FAST_NOCACHE_NOINIT_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]zbss.OS_AdcIsr_G3_VAR_FAST_NOCACHE_NOINIT";
-    }
-    reserved ".pad.OS_AdcIsr_G3_VAR_FAST_NOCACHE_NOINIT" (size=16);
-  }
-  "_OS_AdcIsr_G3_VAR_FAST_NOCACHE_NOINIT_START" = "_lc_gb_OS_AdcIsr_G3_VAR_FAST_NOCACHE_NOINIT_GROUP";
-  "_OS_AdcIsr_G3_VAR_FAST_NOCACHE_NOINIT_END" = "_lc_ub__pad_OS_AdcIsr_G3_VAR_FAST_NOCACHE_NOINIT" - 1;
-  "_OS_AdcIsr_G3_VAR_FAST_NOCACHE_NOINIT_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G3_VAR_FAST_NOCACHE_NOINIT";
-}
-else
-{
-  "_OS_AdcIsr_G3_VAR_FAST_NOCACHE_NOINIT_START" = 0;
-  "_OS_AdcIsr_G3_VAR_FAST_NOCACHE_NOINIT_END" = 0;
-  "_OS_AdcIsr_G3_VAR_FAST_NOCACHE_NOINIT_LIMIT" = 0;
-}
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3 ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_NEAR ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_ADCISR_G3_NEAR_NOCACHE_ZERO_INIT )
-if (exists(".zbss.OS_AdcIsr_G3_VAR_FAST_NOCACHE_ZERO_INIT_bss") || exists(".zdata.OS_AdcIsr_G3_VAR_FAST_NOCACHE_ZERO_INIT"))
-{
-  group OS_AdcIsr_G3_VAR_FAST_NOCACHE_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
-  {
-    section "OS_AdcIsr_G3_VAR_FAST_NOCACHE_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
-    {
-      select "[.]zbss.OS_AdcIsr_G3_VAR_FAST_NOCACHE_ZERO_INIT_bss";
-      select "[.]zdata.OS_AdcIsr_G3_VAR_FAST_NOCACHE_ZERO_INIT";
-    }
-    reserved ".pad.OS_AdcIsr_G3_VAR_FAST_NOCACHE_ZERO_INIT" (size=16);
-  }
-  "_OS_AdcIsr_G3_VAR_FAST_NOCACHE_ZERO_INIT_START" = "_lc_gb_OS_AdcIsr_G3_VAR_FAST_NOCACHE_ZERO_INIT_GROUP";
-  "_OS_AdcIsr_G3_VAR_FAST_NOCACHE_ZERO_INIT_END" = "_lc_ub__pad_OS_AdcIsr_G3_VAR_FAST_NOCACHE_ZERO_INIT" - 1;
-  "_OS_AdcIsr_G3_VAR_FAST_NOCACHE_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_AdcIsr_G3_VAR_FAST_NOCACHE_ZERO_INIT";
-}
-else
-{
-  "_OS_AdcIsr_G3_VAR_FAST_NOCACHE_ZERO_INIT_START" = 0;
-  "_OS_AdcIsr_G3_VAR_FAST_NOCACHE_ZERO_INIT_END" = 0;
-  "_OS_AdcIsr_G3_VAR_FAST_NOCACHE_ZERO_INIT_LIMIT" = 0;
-}
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G3
-} /* OS_AdcIsr_G3_VAR_ALL_GROUP */
-"_OS_AdcIsr_G3_VAR_ALL_START" = "_lc_gb_OS_AdcIsr_G3_VAR_ALL_GROUP";
-"_OS_AdcIsr_G3_VAR_ALL_END" = "_lc_ge_OS_AdcIsr_G3_VAR_ALL_GROUP" - 1;
-"_OS_AdcIsr_G3_VAR_ALL_LIMIT" = "_lc_ge_OS_AdcIsr_G3_VAR_ALL_GROUP";
-
-# undef OS_LINK_VAR_ISR_ADCISR_G3
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G3_FAR
-# undef OS_LINK_VAR_ISR_ADCISR_G3_FAR
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G3_FAR_CACHE
-# undef OS_LINK_VAR_ISR_ADCISR_G3_FAR_CACHE
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G3_FAR_CACHE_INIT
-# undef OS_LINK_VAR_ISR_ADCISR_G3_FAR_CACHE_INIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G3_FAR_CACHE_NOINIT
-# undef OS_LINK_VAR_ISR_ADCISR_G3_FAR_CACHE_NOINIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G3_FAR_CACHE_ZERO_INIT
-# undef OS_LINK_VAR_ISR_ADCISR_G3_FAR_CACHE_ZERO_INIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G3_FAR_NOCACHE
-# undef OS_LINK_VAR_ISR_ADCISR_G3_FAR_NOCACHE
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G3_FAR_NOCACHE_INIT
-# undef OS_LINK_VAR_ISR_ADCISR_G3_FAR_NOCACHE_INIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G3_FAR_NOCACHE_NOINIT
-# undef OS_LINK_VAR_ISR_ADCISR_G3_FAR_NOCACHE_NOINIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G3_FAR_NOCACHE_ZERO_INIT
-# undef OS_LINK_VAR_ISR_ADCISR_G3_FAR_NOCACHE_ZERO_INIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G3_NEAR
-# undef OS_LINK_VAR_ISR_ADCISR_G3_NEAR
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G3_NEAR_CACHE
-# undef OS_LINK_VAR_ISR_ADCISR_G3_NEAR_CACHE
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G3_NEAR_CACHE_INIT
-# undef OS_LINK_VAR_ISR_ADCISR_G3_NEAR_CACHE_INIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G3_NEAR_CACHE_NOINIT
-# undef OS_LINK_VAR_ISR_ADCISR_G3_NEAR_CACHE_NOINIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G3_NEAR_CACHE_ZERO_INIT
-# undef OS_LINK_VAR_ISR_ADCISR_G3_NEAR_CACHE_ZERO_INIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G3_NEAR_NOCACHE
-# undef OS_LINK_VAR_ISR_ADCISR_G3_NEAR_NOCACHE
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G3_NEAR_NOCACHE_INIT
-# undef OS_LINK_VAR_ISR_ADCISR_G3_NEAR_NOCACHE_INIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G3_NEAR_NOCACHE_NOINIT
-# undef OS_LINK_VAR_ISR_ADCISR_G3_NEAR_NOCACHE_NOINIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_ADCISR_G3_NEAR_NOCACHE_ZERO_INIT
-# undef OS_LINK_VAR_ISR_ADCISR_G3_NEAR_NOCACHE_ZERO_INIT
 #endif
 
 
@@ -6423,6 +6583,2582 @@ else
 
 #ifdef OS_LINK_VAR_ISR_COUNTERISR_SYSTEMTIMER_NEAR_NOCACHE_ZERO_INIT
 # undef OS_LINK_VAR_ISR_COUNTERISR_SYSTEMTIMER_NEAR_NOCACHE_ZERO_INIT
+#endif
+
+
+
+#ifdef OS_LINK_VAR_ISR_OSISR_DMA_ERR
+group OS_OsIsr_DMA_ERR_VAR_ALL_GROUP(ordered, contiguous, fill, align=8)
+{
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_CACHE_INIT )
+if (exists(".data.OS_OsIsr_DMA_ERR_VAR"))
+{
+  group OS_OsIsr_DMA_ERR_VAR_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_DMA_ERR_VAR_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]data.OS_OsIsr_DMA_ERR_VAR";
+    }
+    reserved ".pad.OS_OsIsr_DMA_ERR_VAR" (size=16);
+  }
+  "_OS_OsIsr_DMA_ERR_VAR_START" = "_lc_gb_OS_OsIsr_DMA_ERR_VAR_GROUP";
+  "_OS_OsIsr_DMA_ERR_VAR_END" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR" - 1;
+  "_OS_OsIsr_DMA_ERR_VAR_LIMIT" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR";
+}
+else
+{
+  "_OS_OsIsr_DMA_ERR_VAR_START" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_END" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_CACHE_NOINIT )
+if (exists(".bss.OS_OsIsr_DMA_ERR_VAR_NOINIT"))
+{
+  group OS_OsIsr_DMA_ERR_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_DMA_ERR_VAR_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_DMA_ERR_VAR_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_DMA_ERR_VAR_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_DMA_ERR_VAR_NOINIT_START" = "_lc_gb_OS_OsIsr_DMA_ERR_VAR_NOINIT_GROUP";
+  "_OS_OsIsr_DMA_ERR_VAR_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR_NOINIT" - 1;
+  "_OS_OsIsr_DMA_ERR_VAR_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_DMA_ERR_VAR_NOINIT_START" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_NOINIT_END" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_CACHE_ZERO_INIT )
+if (exists(".bss.OS_OsIsr_DMA_ERR_VAR_ZERO_INIT_bss") || exists(".data.OS_OsIsr_DMA_ERR_VAR_ZERO_INIT"))
+{
+  group OS_OsIsr_DMA_ERR_VAR_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_DMA_ERR_VAR_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_DMA_ERR_VAR_ZERO_INIT_bss";
+      select "[.]data.OS_OsIsr_DMA_ERR_VAR_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_DMA_ERR_VAR_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_DMA_ERR_VAR_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_DMA_ERR_VAR_ZERO_INIT_GROUP";
+  "_OS_OsIsr_DMA_ERR_VAR_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR_ZERO_INIT" - 1;
+  "_OS_OsIsr_DMA_ERR_VAR_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_DMA_ERR_VAR_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_CACHE_INIT )
+if (exists(".zdata.OS_OsIsr_DMA_ERR_VAR_FAST"))
+{
+  group OS_OsIsr_DMA_ERR_VAR_FAST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_DMA_ERR_VAR_FAST_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zdata.OS_OsIsr_DMA_ERR_VAR_FAST";
+    }
+    reserved ".pad.OS_OsIsr_DMA_ERR_VAR_FAST" (size=16);
+  }
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_START" = "_lc_gb_OS_OsIsr_DMA_ERR_VAR_FAST_GROUP";
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_END" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR_FAST" - 1;
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_LIMIT" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR_FAST";
+}
+else
+{
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_START" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_END" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_CACHE_NOINIT )
+if (exists(".zbss.OS_OsIsr_DMA_ERR_VAR_FAST_NOINIT"))
+{
+  group OS_OsIsr_DMA_ERR_VAR_FAST_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_DMA_ERR_VAR_FAST_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_DMA_ERR_VAR_FAST_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_DMA_ERR_VAR_FAST_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOINIT_START" = "_lc_gb_OS_OsIsr_DMA_ERR_VAR_FAST_NOINIT_GROUP";
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR_FAST_NOINIT" - 1;
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR_FAST_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOINIT_START" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOINIT_END" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_CACHE_ZERO_INIT )
+if (exists(".zbss.OS_OsIsr_DMA_ERR_VAR_FAST_ZERO_INIT_bss") || exists(".zdata.OS_OsIsr_DMA_ERR_VAR_FAST_ZERO_INIT"))
+{
+  group OS_OsIsr_DMA_ERR_VAR_FAST_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_DMA_ERR_VAR_FAST_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_DMA_ERR_VAR_FAST_ZERO_INIT_bss";
+      select "[.]zdata.OS_OsIsr_DMA_ERR_VAR_FAST_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_DMA_ERR_VAR_FAST_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_DMA_ERR_VAR_FAST_ZERO_INIT_GROUP";
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR_FAST_ZERO_INIT" - 1;
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR_FAST_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_NOCACHE_INIT )
+if (exists(".data.OS_OsIsr_DMA_ERR_VAR_NOCACHE"))
+{
+  group OS_OsIsr_DMA_ERR_VAR_NOCACHE_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_DMA_ERR_VAR_NOCACHE_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]data.OS_OsIsr_DMA_ERR_VAR_NOCACHE";
+    }
+    reserved ".pad.OS_OsIsr_DMA_ERR_VAR_NOCACHE" (size=16);
+  }
+  "_OS_OsIsr_DMA_ERR_VAR_NOCACHE_START" = "_lc_gb_OS_OsIsr_DMA_ERR_VAR_NOCACHE_GROUP";
+  "_OS_OsIsr_DMA_ERR_VAR_NOCACHE_END" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR_NOCACHE" - 1;
+  "_OS_OsIsr_DMA_ERR_VAR_NOCACHE_LIMIT" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR_NOCACHE";
+}
+else
+{
+  "_OS_OsIsr_DMA_ERR_VAR_NOCACHE_START" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_NOCACHE_END" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_NOCACHE_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_NOCACHE_NOINIT )
+if (exists(".bss.OS_OsIsr_DMA_ERR_VAR_NOCACHE_NOINIT"))
+{
+  group OS_OsIsr_DMA_ERR_VAR_NOCACHE_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_DMA_ERR_VAR_NOCACHE_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_DMA_ERR_VAR_NOCACHE_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_DMA_ERR_VAR_NOCACHE_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_DMA_ERR_VAR_NOCACHE_NOINIT_START" = "_lc_gb_OS_OsIsr_DMA_ERR_VAR_NOCACHE_NOINIT_GROUP";
+  "_OS_OsIsr_DMA_ERR_VAR_NOCACHE_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR_NOCACHE_NOINIT" - 1;
+  "_OS_OsIsr_DMA_ERR_VAR_NOCACHE_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR_NOCACHE_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_DMA_ERR_VAR_NOCACHE_NOINIT_START" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_NOCACHE_NOINIT_END" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_NOCACHE_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_NOCACHE_ZERO_INIT )
+if (exists(".bss.OS_OsIsr_DMA_ERR_VAR_NOCACHE_ZERO_INIT_bss") || exists(".data.OS_OsIsr_DMA_ERR_VAR_NOCACHE_ZERO_INIT"))
+{
+  group OS_OsIsr_DMA_ERR_VAR_NOCACHE_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_DMA_ERR_VAR_NOCACHE_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_DMA_ERR_VAR_NOCACHE_ZERO_INIT_bss";
+      select "[.]data.OS_OsIsr_DMA_ERR_VAR_NOCACHE_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_DMA_ERR_VAR_NOCACHE_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_DMA_ERR_VAR_NOCACHE_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_DMA_ERR_VAR_NOCACHE_ZERO_INIT_GROUP";
+  "_OS_OsIsr_DMA_ERR_VAR_NOCACHE_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR_NOCACHE_ZERO_INIT" - 1;
+  "_OS_OsIsr_DMA_ERR_VAR_NOCACHE_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR_NOCACHE_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_DMA_ERR_VAR_NOCACHE_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_NOCACHE_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_NOCACHE_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_NOCACHE_INIT )
+if (exists(".zdata.OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE"))
+{
+  group OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zdata.OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE";
+    }
+    reserved ".pad.OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE" (size=16);
+  }
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_START" = "_lc_gb_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_GROUP";
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_END" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE" - 1;
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_LIMIT" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE";
+}
+else
+{
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_START" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_END" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_NOCACHE_NOINIT )
+if (exists(".zbss.OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_NOINIT"))
+{
+  group OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_NOINIT_START" = "_lc_gb_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_NOINIT_GROUP";
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_NOINIT" - 1;
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_NOINIT_START" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_NOINIT_END" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_NOCACHE_ZERO_INIT )
+if (exists(".zbss.OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_ZERO_INIT_bss") || exists(".zdata.OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_ZERO_INIT"))
+{
+  group OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_ZERO_INIT_bss";
+      select "[.]zdata.OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_ZERO_INIT_GROUP";
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_ZERO_INIT" - 1;
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_DMA_ERR_VAR_FAST_NOCACHE_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_DMA_ERR
+} /* OS_OsIsr_DMA_ERR_VAR_ALL_GROUP */
+"_OS_OsIsr_DMA_ERR_VAR_ALL_START" = "_lc_gb_OS_OsIsr_DMA_ERR_VAR_ALL_GROUP";
+"_OS_OsIsr_DMA_ERR_VAR_ALL_END" = "_lc_ge_OS_OsIsr_DMA_ERR_VAR_ALL_GROUP" - 1;
+"_OS_OsIsr_DMA_ERR_VAR_ALL_LIMIT" = "_lc_ge_OS_OsIsr_DMA_ERR_VAR_ALL_GROUP";
+
+# undef OS_LINK_VAR_ISR_OSISR_DMA_ERR
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR
+# undef OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_CACHE
+# undef OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_CACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_CACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_CACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_CACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_CACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_CACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_CACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_NOCACHE
+# undef OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_NOCACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_NOCACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_NOCACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_NOCACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_NOCACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_NOCACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_DMA_ERR_FAR_NOCACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR
+# undef OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_CACHE
+# undef OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_CACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_CACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_CACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_CACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_CACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_CACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_CACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_NOCACHE
+# undef OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_NOCACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_NOCACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_NOCACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_NOCACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_NOCACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_NOCACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_DMA_ERR_NEAR_NOCACHE_ZERO_INIT
+#endif
+
+
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR
+group OS_OsIsr_QSPI1_ERR_VAR_ALL_GROUP(ordered, contiguous, fill, align=8)
+{
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_CACHE_INIT )
+if (exists(".data.OS_OsIsr_QSPI1_ERR_VAR"))
+{
+  group OS_OsIsr_QSPI1_ERR_VAR_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_ERR_VAR_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]data.OS_OsIsr_QSPI1_ERR_VAR";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_ERR_VAR" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_ERR_VAR_START" = "_lc_gb_OS_OsIsr_QSPI1_ERR_VAR_GROUP";
+  "_OS_OsIsr_QSPI1_ERR_VAR_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR" - 1;
+  "_OS_OsIsr_QSPI1_ERR_VAR_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_ERR_VAR_START" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_END" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_CACHE_NOINIT )
+if (exists(".bss.OS_OsIsr_QSPI1_ERR_VAR_NOINIT"))
+{
+  group OS_OsIsr_QSPI1_ERR_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_ERR_VAR_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI1_ERR_VAR_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_ERR_VAR_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI1_ERR_VAR_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR_NOINIT" - 1;
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_CACHE_ZERO_INIT )
+if (exists(".bss.OS_OsIsr_QSPI1_ERR_VAR_ZERO_INIT_bss") || exists(".data.OS_OsIsr_QSPI1_ERR_VAR_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI1_ERR_VAR_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_ERR_VAR_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI1_ERR_VAR_ZERO_INIT_bss";
+      select "[.]data.OS_OsIsr_QSPI1_ERR_VAR_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_ERR_VAR_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_ERR_VAR_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI1_ERR_VAR_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI1_ERR_VAR_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI1_ERR_VAR_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_ERR_VAR_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_CACHE_INIT )
+if (exists(".zdata.OS_OsIsr_QSPI1_ERR_VAR_FAST"))
+{
+  group OS_OsIsr_QSPI1_ERR_VAR_FAST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_ERR_VAR_FAST_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zdata.OS_OsIsr_QSPI1_ERR_VAR_FAST";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_ERR_VAR_FAST" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_START" = "_lc_gb_OS_OsIsr_QSPI1_ERR_VAR_FAST_GROUP";
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR_FAST" - 1;
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR_FAST";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_START" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_END" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_CACHE_NOINIT )
+if (exists(".zbss.OS_OsIsr_QSPI1_ERR_VAR_FAST_NOINIT"))
+{
+  group OS_OsIsr_QSPI1_ERR_VAR_FAST_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_ERR_VAR_FAST_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI1_ERR_VAR_FAST_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_ERR_VAR_FAST_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOINIT" - 1;
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_CACHE_ZERO_INIT )
+if (exists(".zbss.OS_OsIsr_QSPI1_ERR_VAR_FAST_ZERO_INIT_bss") || exists(".zdata.OS_OsIsr_QSPI1_ERR_VAR_FAST_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI1_ERR_VAR_FAST_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_ERR_VAR_FAST_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI1_ERR_VAR_FAST_ZERO_INIT_bss";
+      select "[.]zdata.OS_OsIsr_QSPI1_ERR_VAR_FAST_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_ERR_VAR_FAST_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI1_ERR_VAR_FAST_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR_FAST_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR_FAST_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_NOCACHE_INIT )
+if (exists(".data.OS_OsIsr_QSPI1_ERR_VAR_NOCACHE"))
+{
+  group OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]data.OS_OsIsr_QSPI1_ERR_VAR_NOCACHE";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_ERR_VAR_NOCACHE" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_START" = "_lc_gb_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_GROUP";
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE" - 1;
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_START" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_END" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_NOCACHE_NOINIT )
+if (exists(".bss.OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_NOINIT"))
+{
+  group OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_NOINIT" - 1;
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_NOCACHE_ZERO_INIT )
+if (exists(".bss.OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_ZERO_INIT_bss") || exists(".data.OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_ZERO_INIT_bss";
+      select "[.]data.OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_NOCACHE_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_NOCACHE_INIT )
+if (exists(".zdata.OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE"))
+{
+  group OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zdata.OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_START" = "_lc_gb_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_GROUP";
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE" - 1;
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_START" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_END" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_NOCACHE_NOINIT )
+if (exists(".zbss.OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_NOINIT"))
+{
+  group OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_NOINIT" - 1;
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_NOCACHE_ZERO_INIT )
+if (exists(".zbss.OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_ZERO_INIT_bss") || exists(".zdata.OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_ZERO_INIT_bss";
+      select "[.]zdata.OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI1_ERR_VAR_FAST_NOCACHE_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR
+} /* OS_OsIsr_QSPI1_ERR_VAR_ALL_GROUP */
+"_OS_OsIsr_QSPI1_ERR_VAR_ALL_START" = "_lc_gb_OS_OsIsr_QSPI1_ERR_VAR_ALL_GROUP";
+"_OS_OsIsr_QSPI1_ERR_VAR_ALL_END" = "_lc_ge_OS_OsIsr_QSPI1_ERR_VAR_ALL_GROUP" - 1;
+"_OS_OsIsr_QSPI1_ERR_VAR_ALL_LIMIT" = "_lc_ge_OS_OsIsr_QSPI1_ERR_VAR_ALL_GROUP";
+
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_CACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_CACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_CACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_CACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_CACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_CACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_CACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_CACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_NOCACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_NOCACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_NOCACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_NOCACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_NOCACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_NOCACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_NOCACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_FAR_NOCACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_CACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_CACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_CACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_CACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_CACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_CACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_CACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_CACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_NOCACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_NOCACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_NOCACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_NOCACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_NOCACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_NOCACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_NOCACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_ERR_NEAR_NOCACHE_ZERO_INIT
+#endif
+
+
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_PT
+group OS_OsIsr_QSPI1_PT_VAR_ALL_GROUP(ordered, contiguous, fill, align=8)
+{
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_CACHE_INIT )
+if (exists(".data.OS_OsIsr_QSPI1_PT_VAR"))
+{
+  group OS_OsIsr_QSPI1_PT_VAR_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_PT_VAR_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]data.OS_OsIsr_QSPI1_PT_VAR";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_PT_VAR" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_PT_VAR_START" = "_lc_gb_OS_OsIsr_QSPI1_PT_VAR_GROUP";
+  "_OS_OsIsr_QSPI1_PT_VAR_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR" - 1;
+  "_OS_OsIsr_QSPI1_PT_VAR_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_PT_VAR_START" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_END" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_CACHE_NOINIT )
+if (exists(".bss.OS_OsIsr_QSPI1_PT_VAR_NOINIT"))
+{
+  group OS_OsIsr_QSPI1_PT_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_PT_VAR_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI1_PT_VAR_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_PT_VAR_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_PT_VAR_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI1_PT_VAR_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI1_PT_VAR_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR_NOINIT" - 1;
+  "_OS_OsIsr_QSPI1_PT_VAR_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_PT_VAR_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_CACHE_ZERO_INIT )
+if (exists(".bss.OS_OsIsr_QSPI1_PT_VAR_ZERO_INIT_bss") || exists(".data.OS_OsIsr_QSPI1_PT_VAR_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI1_PT_VAR_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_PT_VAR_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI1_PT_VAR_ZERO_INIT_bss";
+      select "[.]data.OS_OsIsr_QSPI1_PT_VAR_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_PT_VAR_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_PT_VAR_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI1_PT_VAR_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI1_PT_VAR_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI1_PT_VAR_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_PT_VAR_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_CACHE_INIT )
+if (exists(".zdata.OS_OsIsr_QSPI1_PT_VAR_FAST"))
+{
+  group OS_OsIsr_QSPI1_PT_VAR_FAST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_PT_VAR_FAST_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zdata.OS_OsIsr_QSPI1_PT_VAR_FAST";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_PT_VAR_FAST" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_START" = "_lc_gb_OS_OsIsr_QSPI1_PT_VAR_FAST_GROUP";
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR_FAST" - 1;
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR_FAST";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_START" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_END" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_CACHE_NOINIT )
+if (exists(".zbss.OS_OsIsr_QSPI1_PT_VAR_FAST_NOINIT"))
+{
+  group OS_OsIsr_QSPI1_PT_VAR_FAST_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_PT_VAR_FAST_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI1_PT_VAR_FAST_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_PT_VAR_FAST_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI1_PT_VAR_FAST_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR_FAST_NOINIT" - 1;
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR_FAST_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_CACHE_ZERO_INIT )
+if (exists(".zbss.OS_OsIsr_QSPI1_PT_VAR_FAST_ZERO_INIT_bss") || exists(".zdata.OS_OsIsr_QSPI1_PT_VAR_FAST_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI1_PT_VAR_FAST_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_PT_VAR_FAST_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI1_PT_VAR_FAST_ZERO_INIT_bss";
+      select "[.]zdata.OS_OsIsr_QSPI1_PT_VAR_FAST_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_PT_VAR_FAST_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI1_PT_VAR_FAST_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR_FAST_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR_FAST_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_NOCACHE_INIT )
+if (exists(".data.OS_OsIsr_QSPI1_PT_VAR_NOCACHE"))
+{
+  group OS_OsIsr_QSPI1_PT_VAR_NOCACHE_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_PT_VAR_NOCACHE_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]data.OS_OsIsr_QSPI1_PT_VAR_NOCACHE";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_PT_VAR_NOCACHE" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_START" = "_lc_gb_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_GROUP";
+  "_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR_NOCACHE" - 1;
+  "_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR_NOCACHE";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_START" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_END" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_NOCACHE_NOINIT )
+if (exists(".bss.OS_OsIsr_QSPI1_PT_VAR_NOCACHE_NOINIT"))
+{
+  group OS_OsIsr_QSPI1_PT_VAR_NOCACHE_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_PT_VAR_NOCACHE_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI1_PT_VAR_NOCACHE_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_PT_VAR_NOCACHE_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_NOINIT" - 1;
+  "_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_NOCACHE_ZERO_INIT )
+if (exists(".bss.OS_OsIsr_QSPI1_PT_VAR_NOCACHE_ZERO_INIT_bss") || exists(".data.OS_OsIsr_QSPI1_PT_VAR_NOCACHE_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI1_PT_VAR_NOCACHE_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_PT_VAR_NOCACHE_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI1_PT_VAR_NOCACHE_ZERO_INIT_bss";
+      select "[.]data.OS_OsIsr_QSPI1_PT_VAR_NOCACHE_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_PT_VAR_NOCACHE_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_NOCACHE_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_NOCACHE_INIT )
+if (exists(".zdata.OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE"))
+{
+  group OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zdata.OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_START" = "_lc_gb_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_GROUP";
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE" - 1;
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_START" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_END" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_NOCACHE_NOINIT )
+if (exists(".zbss.OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_NOINIT"))
+{
+  group OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_NOINIT" - 1;
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_NOCACHE_ZERO_INIT )
+if (exists(".zbss.OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_ZERO_INIT_bss") || exists(".zdata.OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_ZERO_INIT_bss";
+      select "[.]zdata.OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI1_PT_VAR_FAST_NOCACHE_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_PT
+} /* OS_OsIsr_QSPI1_PT_VAR_ALL_GROUP */
+"_OS_OsIsr_QSPI1_PT_VAR_ALL_START" = "_lc_gb_OS_OsIsr_QSPI1_PT_VAR_ALL_GROUP";
+"_OS_OsIsr_QSPI1_PT_VAR_ALL_END" = "_lc_ge_OS_OsIsr_QSPI1_PT_VAR_ALL_GROUP" - 1;
+"_OS_OsIsr_QSPI1_PT_VAR_ALL_LIMIT" = "_lc_ge_OS_OsIsr_QSPI1_PT_VAR_ALL_GROUP";
+
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_PT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_CACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_CACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_CACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_CACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_CACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_CACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_CACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_CACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_NOCACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_NOCACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_NOCACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_NOCACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_NOCACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_NOCACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_NOCACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_FAR_NOCACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_CACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_CACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_CACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_CACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_CACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_CACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_CACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_CACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_NOCACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_NOCACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_NOCACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_NOCACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_NOCACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_NOCACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_NOCACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI1_PT_NEAR_NOCACHE_ZERO_INIT
+#endif
+
+
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR
+group OS_OsIsr_QSPI2_ERR_VAR_ALL_GROUP(ordered, contiguous, fill, align=8)
+{
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_CACHE_INIT )
+if (exists(".data.OS_OsIsr_QSPI2_ERR_VAR"))
+{
+  group OS_OsIsr_QSPI2_ERR_VAR_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_ERR_VAR_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]data.OS_OsIsr_QSPI2_ERR_VAR";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_ERR_VAR" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_ERR_VAR_START" = "_lc_gb_OS_OsIsr_QSPI2_ERR_VAR_GROUP";
+  "_OS_OsIsr_QSPI2_ERR_VAR_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR" - 1;
+  "_OS_OsIsr_QSPI2_ERR_VAR_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_ERR_VAR_START" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_END" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_CACHE_NOINIT )
+if (exists(".bss.OS_OsIsr_QSPI2_ERR_VAR_NOINIT"))
+{
+  group OS_OsIsr_QSPI2_ERR_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_ERR_VAR_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI2_ERR_VAR_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_ERR_VAR_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI2_ERR_VAR_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR_NOINIT" - 1;
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_CACHE_ZERO_INIT )
+if (exists(".bss.OS_OsIsr_QSPI2_ERR_VAR_ZERO_INIT_bss") || exists(".data.OS_OsIsr_QSPI2_ERR_VAR_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI2_ERR_VAR_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_ERR_VAR_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI2_ERR_VAR_ZERO_INIT_bss";
+      select "[.]data.OS_OsIsr_QSPI2_ERR_VAR_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_ERR_VAR_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_ERR_VAR_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI2_ERR_VAR_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI2_ERR_VAR_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI2_ERR_VAR_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_ERR_VAR_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_CACHE_INIT )
+if (exists(".zdata.OS_OsIsr_QSPI2_ERR_VAR_FAST"))
+{
+  group OS_OsIsr_QSPI2_ERR_VAR_FAST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_ERR_VAR_FAST_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zdata.OS_OsIsr_QSPI2_ERR_VAR_FAST";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_ERR_VAR_FAST" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_START" = "_lc_gb_OS_OsIsr_QSPI2_ERR_VAR_FAST_GROUP";
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR_FAST" - 1;
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR_FAST";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_START" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_END" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_CACHE_NOINIT )
+if (exists(".zbss.OS_OsIsr_QSPI2_ERR_VAR_FAST_NOINIT"))
+{
+  group OS_OsIsr_QSPI2_ERR_VAR_FAST_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_ERR_VAR_FAST_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI2_ERR_VAR_FAST_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_ERR_VAR_FAST_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOINIT" - 1;
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_CACHE_ZERO_INIT )
+if (exists(".zbss.OS_OsIsr_QSPI2_ERR_VAR_FAST_ZERO_INIT_bss") || exists(".zdata.OS_OsIsr_QSPI2_ERR_VAR_FAST_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI2_ERR_VAR_FAST_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_ERR_VAR_FAST_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI2_ERR_VAR_FAST_ZERO_INIT_bss";
+      select "[.]zdata.OS_OsIsr_QSPI2_ERR_VAR_FAST_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_ERR_VAR_FAST_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI2_ERR_VAR_FAST_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR_FAST_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR_FAST_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_NOCACHE_INIT )
+if (exists(".data.OS_OsIsr_QSPI2_ERR_VAR_NOCACHE"))
+{
+  group OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]data.OS_OsIsr_QSPI2_ERR_VAR_NOCACHE";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_ERR_VAR_NOCACHE" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_START" = "_lc_gb_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_GROUP";
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE" - 1;
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_START" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_END" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_NOCACHE_NOINIT )
+if (exists(".bss.OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_NOINIT"))
+{
+  group OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_NOINIT" - 1;
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_NOCACHE_ZERO_INIT )
+if (exists(".bss.OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_ZERO_INIT_bss") || exists(".data.OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_ZERO_INIT_bss";
+      select "[.]data.OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_NOCACHE_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_NOCACHE_INIT )
+if (exists(".zdata.OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE"))
+{
+  group OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zdata.OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_START" = "_lc_gb_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_GROUP";
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE" - 1;
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_START" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_END" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_NOCACHE_NOINIT )
+if (exists(".zbss.OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_NOINIT"))
+{
+  group OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_NOINIT" - 1;
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_NOCACHE_ZERO_INIT )
+if (exists(".zbss.OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_ZERO_INIT_bss") || exists(".zdata.OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_ZERO_INIT_bss";
+      select "[.]zdata.OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI2_ERR_VAR_FAST_NOCACHE_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR
+} /* OS_OsIsr_QSPI2_ERR_VAR_ALL_GROUP */
+"_OS_OsIsr_QSPI2_ERR_VAR_ALL_START" = "_lc_gb_OS_OsIsr_QSPI2_ERR_VAR_ALL_GROUP";
+"_OS_OsIsr_QSPI2_ERR_VAR_ALL_END" = "_lc_ge_OS_OsIsr_QSPI2_ERR_VAR_ALL_GROUP" - 1;
+"_OS_OsIsr_QSPI2_ERR_VAR_ALL_LIMIT" = "_lc_ge_OS_OsIsr_QSPI2_ERR_VAR_ALL_GROUP";
+
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_CACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_CACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_CACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_CACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_CACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_CACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_CACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_CACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_NOCACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_NOCACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_NOCACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_NOCACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_NOCACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_NOCACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_NOCACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_FAR_NOCACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_CACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_CACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_CACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_CACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_CACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_CACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_CACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_CACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_NOCACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_NOCACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_NOCACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_NOCACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_NOCACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_NOCACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_NOCACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_ERR_NEAR_NOCACHE_ZERO_INIT
+#endif
+
+
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_PT
+group OS_OsIsr_QSPI2_PT_VAR_ALL_GROUP(ordered, contiguous, fill, align=8)
+{
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_CACHE_INIT )
+if (exists(".data.OS_OsIsr_QSPI2_PT_VAR"))
+{
+  group OS_OsIsr_QSPI2_PT_VAR_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_PT_VAR_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]data.OS_OsIsr_QSPI2_PT_VAR";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_PT_VAR" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_PT_VAR_START" = "_lc_gb_OS_OsIsr_QSPI2_PT_VAR_GROUP";
+  "_OS_OsIsr_QSPI2_PT_VAR_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR" - 1;
+  "_OS_OsIsr_QSPI2_PT_VAR_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_PT_VAR_START" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_END" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_CACHE_NOINIT )
+if (exists(".bss.OS_OsIsr_QSPI2_PT_VAR_NOINIT"))
+{
+  group OS_OsIsr_QSPI2_PT_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_PT_VAR_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI2_PT_VAR_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_PT_VAR_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_PT_VAR_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI2_PT_VAR_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI2_PT_VAR_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR_NOINIT" - 1;
+  "_OS_OsIsr_QSPI2_PT_VAR_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_PT_VAR_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_CACHE_ZERO_INIT )
+if (exists(".bss.OS_OsIsr_QSPI2_PT_VAR_ZERO_INIT_bss") || exists(".data.OS_OsIsr_QSPI2_PT_VAR_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI2_PT_VAR_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_PT_VAR_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI2_PT_VAR_ZERO_INIT_bss";
+      select "[.]data.OS_OsIsr_QSPI2_PT_VAR_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_PT_VAR_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_PT_VAR_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI2_PT_VAR_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI2_PT_VAR_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI2_PT_VAR_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_PT_VAR_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_CACHE_INIT )
+if (exists(".zdata.OS_OsIsr_QSPI2_PT_VAR_FAST"))
+{
+  group OS_OsIsr_QSPI2_PT_VAR_FAST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_PT_VAR_FAST_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zdata.OS_OsIsr_QSPI2_PT_VAR_FAST";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_PT_VAR_FAST" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_START" = "_lc_gb_OS_OsIsr_QSPI2_PT_VAR_FAST_GROUP";
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR_FAST" - 1;
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR_FAST";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_START" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_END" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_CACHE_NOINIT )
+if (exists(".zbss.OS_OsIsr_QSPI2_PT_VAR_FAST_NOINIT"))
+{
+  group OS_OsIsr_QSPI2_PT_VAR_FAST_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_PT_VAR_FAST_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI2_PT_VAR_FAST_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_PT_VAR_FAST_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI2_PT_VAR_FAST_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR_FAST_NOINIT" - 1;
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR_FAST_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_CACHE_ZERO_INIT )
+if (exists(".zbss.OS_OsIsr_QSPI2_PT_VAR_FAST_ZERO_INIT_bss") || exists(".zdata.OS_OsIsr_QSPI2_PT_VAR_FAST_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI2_PT_VAR_FAST_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_PT_VAR_FAST_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI2_PT_VAR_FAST_ZERO_INIT_bss";
+      select "[.]zdata.OS_OsIsr_QSPI2_PT_VAR_FAST_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_PT_VAR_FAST_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI2_PT_VAR_FAST_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR_FAST_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR_FAST_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_NOCACHE_INIT )
+if (exists(".data.OS_OsIsr_QSPI2_PT_VAR_NOCACHE"))
+{
+  group OS_OsIsr_QSPI2_PT_VAR_NOCACHE_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_PT_VAR_NOCACHE_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]data.OS_OsIsr_QSPI2_PT_VAR_NOCACHE";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_PT_VAR_NOCACHE" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_START" = "_lc_gb_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_GROUP";
+  "_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR_NOCACHE" - 1;
+  "_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR_NOCACHE";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_START" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_END" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_NOCACHE_NOINIT )
+if (exists(".bss.OS_OsIsr_QSPI2_PT_VAR_NOCACHE_NOINIT"))
+{
+  group OS_OsIsr_QSPI2_PT_VAR_NOCACHE_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_PT_VAR_NOCACHE_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI2_PT_VAR_NOCACHE_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_PT_VAR_NOCACHE_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_NOINIT" - 1;
+  "_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_NOCACHE_ZERO_INIT )
+if (exists(".bss.OS_OsIsr_QSPI2_PT_VAR_NOCACHE_ZERO_INIT_bss") || exists(".data.OS_OsIsr_QSPI2_PT_VAR_NOCACHE_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI2_PT_VAR_NOCACHE_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_PT_VAR_NOCACHE_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI2_PT_VAR_NOCACHE_ZERO_INIT_bss";
+      select "[.]data.OS_OsIsr_QSPI2_PT_VAR_NOCACHE_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_PT_VAR_NOCACHE_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_NOCACHE_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_NOCACHE_INIT )
+if (exists(".zdata.OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE"))
+{
+  group OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zdata.OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_START" = "_lc_gb_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_GROUP";
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE" - 1;
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_START" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_END" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_NOCACHE_NOINIT )
+if (exists(".zbss.OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_NOINIT"))
+{
+  group OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_NOINIT" - 1;
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_NOCACHE_ZERO_INIT )
+if (exists(".zbss.OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_ZERO_INIT_bss") || exists(".zdata.OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_ZERO_INIT_bss";
+      select "[.]zdata.OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI2_PT_VAR_FAST_NOCACHE_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_PT
+} /* OS_OsIsr_QSPI2_PT_VAR_ALL_GROUP */
+"_OS_OsIsr_QSPI2_PT_VAR_ALL_START" = "_lc_gb_OS_OsIsr_QSPI2_PT_VAR_ALL_GROUP";
+"_OS_OsIsr_QSPI2_PT_VAR_ALL_END" = "_lc_ge_OS_OsIsr_QSPI2_PT_VAR_ALL_GROUP" - 1;
+"_OS_OsIsr_QSPI2_PT_VAR_ALL_LIMIT" = "_lc_ge_OS_OsIsr_QSPI2_PT_VAR_ALL_GROUP";
+
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_PT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_CACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_CACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_CACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_CACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_CACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_CACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_CACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_CACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_NOCACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_NOCACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_NOCACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_NOCACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_NOCACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_NOCACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_NOCACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_FAR_NOCACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_CACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_CACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_CACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_CACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_CACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_CACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_CACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_CACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_NOCACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_NOCACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_NOCACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_NOCACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_NOCACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_NOCACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_NOCACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI2_PT_NEAR_NOCACHE_ZERO_INIT
+#endif
+
+
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR
+group OS_OsIsr_QSPI3_ERR_VAR_ALL_GROUP(ordered, contiguous, fill, align=8)
+{
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_CACHE_INIT )
+if (exists(".data.OS_OsIsr_QSPI3_ERR_VAR"))
+{
+  group OS_OsIsr_QSPI3_ERR_VAR_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_ERR_VAR_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]data.OS_OsIsr_QSPI3_ERR_VAR";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_ERR_VAR" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_ERR_VAR_START" = "_lc_gb_OS_OsIsr_QSPI3_ERR_VAR_GROUP";
+  "_OS_OsIsr_QSPI3_ERR_VAR_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR" - 1;
+  "_OS_OsIsr_QSPI3_ERR_VAR_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_ERR_VAR_START" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_END" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_CACHE_NOINIT )
+if (exists(".bss.OS_OsIsr_QSPI3_ERR_VAR_NOINIT"))
+{
+  group OS_OsIsr_QSPI3_ERR_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_ERR_VAR_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI3_ERR_VAR_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_ERR_VAR_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI3_ERR_VAR_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR_NOINIT" - 1;
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_CACHE_ZERO_INIT )
+if (exists(".bss.OS_OsIsr_QSPI3_ERR_VAR_ZERO_INIT_bss") || exists(".data.OS_OsIsr_QSPI3_ERR_VAR_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI3_ERR_VAR_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_ERR_VAR_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI3_ERR_VAR_ZERO_INIT_bss";
+      select "[.]data.OS_OsIsr_QSPI3_ERR_VAR_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_ERR_VAR_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_ERR_VAR_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI3_ERR_VAR_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI3_ERR_VAR_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI3_ERR_VAR_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_ERR_VAR_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_CACHE_INIT )
+if (exists(".zdata.OS_OsIsr_QSPI3_ERR_VAR_FAST"))
+{
+  group OS_OsIsr_QSPI3_ERR_VAR_FAST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_ERR_VAR_FAST_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zdata.OS_OsIsr_QSPI3_ERR_VAR_FAST";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_ERR_VAR_FAST" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_START" = "_lc_gb_OS_OsIsr_QSPI3_ERR_VAR_FAST_GROUP";
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR_FAST" - 1;
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR_FAST";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_START" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_END" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_CACHE_NOINIT )
+if (exists(".zbss.OS_OsIsr_QSPI3_ERR_VAR_FAST_NOINIT"))
+{
+  group OS_OsIsr_QSPI3_ERR_VAR_FAST_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_ERR_VAR_FAST_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI3_ERR_VAR_FAST_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_ERR_VAR_FAST_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOINIT" - 1;
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_CACHE_ZERO_INIT )
+if (exists(".zbss.OS_OsIsr_QSPI3_ERR_VAR_FAST_ZERO_INIT_bss") || exists(".zdata.OS_OsIsr_QSPI3_ERR_VAR_FAST_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI3_ERR_VAR_FAST_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_ERR_VAR_FAST_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI3_ERR_VAR_FAST_ZERO_INIT_bss";
+      select "[.]zdata.OS_OsIsr_QSPI3_ERR_VAR_FAST_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_ERR_VAR_FAST_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI3_ERR_VAR_FAST_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR_FAST_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR_FAST_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_NOCACHE_INIT )
+if (exists(".data.OS_OsIsr_QSPI3_ERR_VAR_NOCACHE"))
+{
+  group OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]data.OS_OsIsr_QSPI3_ERR_VAR_NOCACHE";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_ERR_VAR_NOCACHE" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_START" = "_lc_gb_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_GROUP";
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE" - 1;
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_START" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_END" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_NOCACHE_NOINIT )
+if (exists(".bss.OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_NOINIT"))
+{
+  group OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_NOINIT" - 1;
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_NOCACHE_ZERO_INIT )
+if (exists(".bss.OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_ZERO_INIT_bss") || exists(".data.OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_ZERO_INIT_bss";
+      select "[.]data.OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_NOCACHE_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_NOCACHE_INIT )
+if (exists(".zdata.OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE"))
+{
+  group OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zdata.OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_START" = "_lc_gb_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_GROUP";
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE" - 1;
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_START" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_END" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_NOCACHE_NOINIT )
+if (exists(".zbss.OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_NOINIT"))
+{
+  group OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_NOINIT" - 1;
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_NOCACHE_ZERO_INIT )
+if (exists(".zbss.OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_ZERO_INIT_bss") || exists(".zdata.OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_ZERO_INIT_bss";
+      select "[.]zdata.OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI3_ERR_VAR_FAST_NOCACHE_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR
+} /* OS_OsIsr_QSPI3_ERR_VAR_ALL_GROUP */
+"_OS_OsIsr_QSPI3_ERR_VAR_ALL_START" = "_lc_gb_OS_OsIsr_QSPI3_ERR_VAR_ALL_GROUP";
+"_OS_OsIsr_QSPI3_ERR_VAR_ALL_END" = "_lc_ge_OS_OsIsr_QSPI3_ERR_VAR_ALL_GROUP" - 1;
+"_OS_OsIsr_QSPI3_ERR_VAR_ALL_LIMIT" = "_lc_ge_OS_OsIsr_QSPI3_ERR_VAR_ALL_GROUP";
+
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_CACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_CACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_CACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_CACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_CACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_CACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_CACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_CACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_NOCACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_NOCACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_NOCACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_NOCACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_NOCACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_NOCACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_NOCACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_FAR_NOCACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_CACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_CACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_CACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_CACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_CACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_CACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_CACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_CACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_NOCACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_NOCACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_NOCACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_NOCACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_NOCACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_NOCACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_NOCACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_ERR_NEAR_NOCACHE_ZERO_INIT
+#endif
+
+
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_PT
+group OS_OsIsr_QSPI3_PT_VAR_ALL_GROUP(ordered, contiguous, fill, align=8)
+{
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_CACHE_INIT )
+if (exists(".data.OS_OsIsr_QSPI3_PT_VAR"))
+{
+  group OS_OsIsr_QSPI3_PT_VAR_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_PT_VAR_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]data.OS_OsIsr_QSPI3_PT_VAR";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_PT_VAR" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_PT_VAR_START" = "_lc_gb_OS_OsIsr_QSPI3_PT_VAR_GROUP";
+  "_OS_OsIsr_QSPI3_PT_VAR_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR" - 1;
+  "_OS_OsIsr_QSPI3_PT_VAR_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_PT_VAR_START" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_END" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_CACHE_NOINIT )
+if (exists(".bss.OS_OsIsr_QSPI3_PT_VAR_NOINIT"))
+{
+  group OS_OsIsr_QSPI3_PT_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_PT_VAR_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI3_PT_VAR_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_PT_VAR_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_PT_VAR_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI3_PT_VAR_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI3_PT_VAR_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR_NOINIT" - 1;
+  "_OS_OsIsr_QSPI3_PT_VAR_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_PT_VAR_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_CACHE_ZERO_INIT )
+if (exists(".bss.OS_OsIsr_QSPI3_PT_VAR_ZERO_INIT_bss") || exists(".data.OS_OsIsr_QSPI3_PT_VAR_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI3_PT_VAR_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_PT_VAR_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI3_PT_VAR_ZERO_INIT_bss";
+      select "[.]data.OS_OsIsr_QSPI3_PT_VAR_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_PT_VAR_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_PT_VAR_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI3_PT_VAR_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI3_PT_VAR_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI3_PT_VAR_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_PT_VAR_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_CACHE_INIT )
+if (exists(".zdata.OS_OsIsr_QSPI3_PT_VAR_FAST"))
+{
+  group OS_OsIsr_QSPI3_PT_VAR_FAST_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_PT_VAR_FAST_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zdata.OS_OsIsr_QSPI3_PT_VAR_FAST";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_PT_VAR_FAST" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_START" = "_lc_gb_OS_OsIsr_QSPI3_PT_VAR_FAST_GROUP";
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR_FAST" - 1;
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR_FAST";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_START" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_END" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_CACHE_NOINIT )
+if (exists(".zbss.OS_OsIsr_QSPI3_PT_VAR_FAST_NOINIT"))
+{
+  group OS_OsIsr_QSPI3_PT_VAR_FAST_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_PT_VAR_FAST_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI3_PT_VAR_FAST_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_PT_VAR_FAST_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI3_PT_VAR_FAST_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR_FAST_NOINIT" - 1;
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR_FAST_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_CACHE_ZERO_INIT )
+if (exists(".zbss.OS_OsIsr_QSPI3_PT_VAR_FAST_ZERO_INIT_bss") || exists(".zdata.OS_OsIsr_QSPI3_PT_VAR_FAST_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI3_PT_VAR_FAST_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_PT_VAR_FAST_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI3_PT_VAR_FAST_ZERO_INIT_bss";
+      select "[.]zdata.OS_OsIsr_QSPI3_PT_VAR_FAST_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_PT_VAR_FAST_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI3_PT_VAR_FAST_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR_FAST_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR_FAST_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_NOCACHE_INIT )
+if (exists(".data.OS_OsIsr_QSPI3_PT_VAR_NOCACHE"))
+{
+  group OS_OsIsr_QSPI3_PT_VAR_NOCACHE_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_PT_VAR_NOCACHE_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]data.OS_OsIsr_QSPI3_PT_VAR_NOCACHE";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_PT_VAR_NOCACHE" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_START" = "_lc_gb_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_GROUP";
+  "_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR_NOCACHE" - 1;
+  "_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR_NOCACHE";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_START" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_END" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_NOCACHE_NOINIT )
+if (exists(".bss.OS_OsIsr_QSPI3_PT_VAR_NOCACHE_NOINIT"))
+{
+  group OS_OsIsr_QSPI3_PT_VAR_NOCACHE_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_PT_VAR_NOCACHE_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI3_PT_VAR_NOCACHE_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_PT_VAR_NOCACHE_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_NOINIT" - 1;
+  "_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_NOCACHE_ZERO_INIT )
+if (exists(".bss.OS_OsIsr_QSPI3_PT_VAR_NOCACHE_ZERO_INIT_bss") || exists(".data.OS_OsIsr_QSPI3_PT_VAR_NOCACHE_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI3_PT_VAR_NOCACHE_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_PT_VAR_NOCACHE_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]bss.OS_OsIsr_QSPI3_PT_VAR_NOCACHE_ZERO_INIT_bss";
+      select "[.]data.OS_OsIsr_QSPI3_PT_VAR_NOCACHE_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_PT_VAR_NOCACHE_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_NOCACHE_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_NOCACHE_INIT )
+if (exists(".zdata.OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE"))
+{
+  group OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zdata.OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_START" = "_lc_gb_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_GROUP";
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE" - 1;
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_START" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_END" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_NOCACHE_NOINIT )
+if (exists(".zbss.OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_NOINIT"))
+{
+  group OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_NOINIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_NOINIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_NOINIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_NOINIT_START" = "_lc_gb_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_NOINIT_GROUP";
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_NOINIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_NOINIT" - 1;
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_NOINIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_NOINIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_NOINIT_START" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_NOINIT_END" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_NOINIT_LIMIT" = 0;
+}
+#endif
+
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_NOCACHE_ZERO_INIT )
+if (exists(".zbss.OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_ZERO_INIT_bss") || exists(".zdata.OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_ZERO_INIT"))
+{
+  group OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_ZERO_INIT_GROUP(ordered, contiguous, fill, align=8)
+  {
+    section "OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_ZERO_INIT_SECTION" (blocksize=2, attributes=rw)
+    {
+      select "[.]zbss.OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_ZERO_INIT_bss";
+      select "[.]zdata.OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_ZERO_INIT";
+    }
+    reserved ".pad.OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_ZERO_INIT" (size=16);
+  }
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_ZERO_INIT_START" = "_lc_gb_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_ZERO_INIT_GROUP";
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_ZERO_INIT_END" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_ZERO_INIT" - 1;
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_ZERO_INIT_LIMIT" = "_lc_ub__pad_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_ZERO_INIT";
+}
+else
+{
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_ZERO_INIT_START" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_ZERO_INIT_END" = 0;
+  "_OS_OsIsr_QSPI3_PT_VAR_FAST_NOCACHE_ZERO_INIT_LIMIT" = 0;
+}
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_PT
+} /* OS_OsIsr_QSPI3_PT_VAR_ALL_GROUP */
+"_OS_OsIsr_QSPI3_PT_VAR_ALL_START" = "_lc_gb_OS_OsIsr_QSPI3_PT_VAR_ALL_GROUP";
+"_OS_OsIsr_QSPI3_PT_VAR_ALL_END" = "_lc_ge_OS_OsIsr_QSPI3_PT_VAR_ALL_GROUP" - 1;
+"_OS_OsIsr_QSPI3_PT_VAR_ALL_LIMIT" = "_lc_ge_OS_OsIsr_QSPI3_PT_VAR_ALL_GROUP";
+
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_PT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_CACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_CACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_CACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_CACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_CACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_CACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_CACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_CACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_NOCACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_NOCACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_NOCACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_NOCACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_NOCACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_NOCACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_NOCACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_FAR_NOCACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_CACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_CACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_CACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_CACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_CACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_CACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_CACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_CACHE_ZERO_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_NOCACHE
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_NOCACHE
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_NOCACHE_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_NOCACHE_INIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_NOCACHE_NOINIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_NOCACHE_NOINIT
+#endif
+
+#ifdef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_NOCACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_OSISR_QSPI3_PT_NEAR_NOCACHE_ZERO_INIT
 #endif
 
 

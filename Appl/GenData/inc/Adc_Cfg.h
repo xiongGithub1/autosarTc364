@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 10.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-07-06, 16:21:29        !!!IGNORE-LINE!!!                 **
+**  DATE, TIME: 2024-07-14, 21:03:44        !!!IGNORE-LINE!!!                 **
 **                                                                            **
 **  GENERATOR : Build b191017-0938          !!!IGNORE-LINE!!!                 **
 **                                                                            **
@@ -185,7 +185,7 @@ Adc Notification capability configuration
 - if STD_ON, Notification capability is Enabled 
 - if STD_OFF, Notification capability is Disabled 
 */
-#define ADC_GRP_NOTIF_CAPABILITY  (STD_OFF)
+#define ADC_GRP_NOTIF_CAPABILITY  (STD_ON)
 /* Configuration: ADC_ENABLE_QUEUING
 Determines, if the queuing mechanism is active in case of priority mechanism 
 disabled.
@@ -258,7 +258,7 @@ Switch for Enabling the synchronous conversions across ADC HW groups.
 - if STD_ON, Synchronous conversions across ADC HW groups is Enabled 
 - if STD_OFF,Synchronous conversions across ADC HW groups is Disabled 
 */
-#define ADC_SYNC_CONV_ENABLE  (STD_OFF)
+#define ADC_SYNC_CONV_ENABLE  (STD_ON)
 /*
 Configuration: ADC_EMUX_ENABLE
 Switch for enabling the EMUX features of ADC. 

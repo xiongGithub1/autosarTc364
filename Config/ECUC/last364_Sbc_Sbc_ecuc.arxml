@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ActiveEcuC</SHORT-NAME>
+      <ELEMENTS>
+        <ECUC-MODULE-CONFIGURATION-VALUES UUID="9c2d4336-c058-4d83-9cc3-18b9f007712c">
+          <SHORT-NAME>Sbc</SHORT-NAME>
+          <DEFINITION-REF DEST="ECUC-MODULE-DEF">/MICROSAR/Sbc_Tlf35584/Sbc</DEFINITION-REF>
+          <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-PRE-COMPILE</IMPLEMENTATION-CONFIG-VARIANT>
+          <MODULE-DESCRIPTION-REF DEST="BSW-IMPLEMENTATION">/MICROSAR/Sbc_Tlf35584/Sbc_Impl</MODULE-DESCRIPTION-REF>
+          <CONTAINERS>
+            <ECUC-CONTAINER-VALUE UUID="df990493-0e20-4864-b892-fa2d8cd45d9f">
+              <SHORT-NAME>SbcPublicCfg</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcPublicCfg</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcPublicCfg/SbcSingleInstanceApi</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcPublicCfg/SbcDevErrorDetect</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcPublicCfg/SbcGetVersionInfo</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcPublicCfg/SbcUserConfigFile</DEFINITION-REF>
+                  <VALUE/>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="262a2331-81dc-4584-bf5a-63aede6d8e5b">
+              <SHORT-NAME>SbcDevice</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcDeviceId</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="f3c0a4fb-50e5-41a5-971f-5872d1d57c81">
+                  <SHORT-NAME>SbcInitConfig</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcInitConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcInitConfig/SbcErrPinMonitor</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcInitConfig/SbcErrPinMonitorRecovery</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcInitConfig/SbcErrPinRecoveryTime</DEFINITION-REF>
+                      <VALUE>ERREC_1_MS</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcInitConfig/SbcErrPinMonitorInSleep</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcInitConfig/SbcSafeState2Delay</DEFINITION-REF>
+                      <VALUE>SS2DEL_NODELAY</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="1e9ac158-26cd-41c0-abae-da26dcca671c">
+                  <SHORT-NAME>SbcDeviceAccess</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcDeviceAccess</DEFINITION-REF>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="b35b4d48-2cd1-4426-9693-4713c4324f84">
+                      <SHORT-NAME>SbcSpiAccess</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcDeviceAccess/SbcSpiAccess</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="7267cfa9-9977-4c9e-848e-04fd835a1baf">
+                          <SHORT-NAME>SbcSpiSequence</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcDeviceAccess/SbcSpiAccess/SbcSpiSequence</DEFINITION-REF>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcDeviceAccess/SbcSpiAccess/SbcSpiSequence/SbcSpiSequenceRef</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Spi/SpiDriver/SpiSequence_35584</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE UUID="bdae2468-e5bc-4252-a4aa-a0da8f4dd611">
+                          <SHORT-NAME>SbcSpiChannel</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcDeviceAccess/SbcSpiAccess/SbcSpiChannel</DEFINITION-REF>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcDeviceAccess/SbcSpiAccess/SbcSpiChannel/SbcSpiChannelRef</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Spi/SpiDriver/SpiChannel_35584</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="687c7ef7-26dd-4a80-93fe-6328b7401356">
+                  <SHORT-NAME>SbcSystemConfig</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcSystemConfig</DEFINITION-REF>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="4f61aeb0-d8fd-4f0e-a8b8-cbfa09cfbc1f">
+                      <SHORT-NAME>SbcEnableSupplyNormal</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcSystemConfig/SbcEnableSupplyNormal</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcSystemConfig/SbcEnableSupplyNormal/SbcEnableLDO_Stby</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcSystemConfig/SbcEnableSupplyNormal/SbcEnableTracker1</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcSystemConfig/SbcEnableSupplyNormal/SbcEnableTracker2</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcSystemConfig/SbcEnableSupplyNormal/SbcEnableLDO_Com</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcSystemConfig/SbcEnableSupplyNormal/SbcEnableVoltRef</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="76e3c859-9956-4ed9-b8bf-31c62341e42e">
+                      <SHORT-NAME>SbcEnableSupplyStandby</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcSystemConfig/SbcEnableSupplyStandby</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcSystemConfig/SbcEnableSupplyStandby/SbcEnableLDO_Stby</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcSystemConfig/SbcEnableSupplyStandby/SbcEnableTracker1</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcSystemConfig/SbcEnableSupplyStandby/SbcEnableTracker2</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcSystemConfig/SbcEnableSupplyStandby/SbcEnableLDO_Com</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcSystemConfig/SbcEnableSupplyStandby/SbcEnableVoltRef</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="f2087220-ba4f-4d88-bba1-b29074e9f66b">
+                      <SHORT-NAME>SbcEnableSupplySleep</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcSystemConfig/SbcEnableSupplySleep</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Sbc_Tlf35584/Sbc/SbcDevice/SbcSystemConfig/SbcEnableSupplySleep/SbcEnableLDO_Stby</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+          </CONTAINERS>
+        </ECUC-MODULE-CONFIGURATION-VALUES>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

@@ -17,7 +17,7 @@
 **                                                                            **
 **  VERSION   : 22.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-07-06, 16:21:28          !!!IGNORE-LINE!!!               **
+**  DATE, TIME: 2024-07-14, 21:03:45          !!!IGNORE-LINE!!!               **
 **                                                                            **
 **  GENERATOR : Build b191017-0938            !!!IGNORE-LINE!!!               **
 **                                                                            **
@@ -79,6 +79,12 @@
                 </BSW-MODULE-ENTRY-REF-CONDITIONAL>
                 <BSW-MODULE-ENTRY-REF-CONDITIONAL>
                   <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Adc/BswModuleEntrys/Adc_DisableHardwareTrigger</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Adc/BswModuleEntrys/Adc_EnableGroupNotification</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Adc/BswModuleEntrys/Adc_DisableGroupNotification</BSW-MODULE-ENTRY-REF>
                 </BSW-MODULE-ENTRY-REF-CONDITIONAL>
                 <BSW-MODULE-ENTRY-REF-CONDITIONAL>
                   <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Adc/BswModuleEntrys/Adc_GetGroupStatus</BSW-MODULE-ENTRY-REF>
@@ -243,6 +249,16 @@
                      </CAN-ENTER-EXCLUSIVE-AREA-REFS>
                       <REENTRANCY-LEVEL>MULTICORE-REENTRANT</REENTRANCY-LEVEL>
                       <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Adc/BswModuleEntrys/Adc_DisableHardwareTrigger</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                    <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>Adc_EnableGroupNotification</SHORT-NAME>
+                      <REENTRANCY-LEVEL>MULTICORE-REENTRANT</REENTRANCY-LEVEL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Adc/BswModuleEntrys/Adc_EnableGroupNotification</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                    <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>Adc_DisableGroupNotification</SHORT-NAME>
+                      <REENTRANCY-LEVEL>MULTICORE-REENTRANT</REENTRANCY-LEVEL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AUTOSAR_Adc/BswModuleEntrys/Adc_DisableGroupNotification</IMPLEMENTED-ENTRY-REF>
                     </BSW-CALLED-ENTITY>
                     <BSW-CALLED-ENTITY>
                       <SHORT-NAME>Adc_GetGroupStatus</SHORT-NAME>
@@ -531,6 +547,56 @@
                 <NOTE SI="Adc_DisableHardwareTrigger is reentrant for channel groups executing on different ADC hardware groups" NOTE-TYPE="HINT" />
               </INTRODUCTION>
               <SERVICE-ID>6</SERVICE-ID>
+              <IS-REENTRANT>true</IS-REENTRANT>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>REGULAR</CALL-TYPE>
+              <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+              <ARGUMENTS>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>Group</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Adc/ImplementationDataTypes/Adc_GroupType</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+              </ARGUMENTS>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>Adc_EnableGroupNotification</SHORT-NAME>
+              <INTRODUCTION>
+                <NOTE SI="Adc_EnableGroupNotification is reentrant for different AdcChannel Groups" NOTE-TYPE="HINT" />
+              </INTRODUCTION>
+              <SERVICE-ID>7</SERVICE-ID>
+              <IS-REENTRANT>true</IS-REENTRANT>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>REGULAR</CALL-TYPE>
+              <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+              <ARGUMENTS>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>Group</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST = "IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Adc/ImplementationDataTypes/Adc_GroupType</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+              </ARGUMENTS>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>Adc_DisableGroupNotification</SHORT-NAME>
+              <INTRODUCTION>
+                <NOTE SI="Adc_DisableGroupNotification is reentrant for different AdcChannel Groups" NOTE-TYPE="HINT" />
+              </INTRODUCTION>
+              <SERVICE-ID>8</SERVICE-ID>
               <IS-REENTRANT>true</IS-REENTRANT>
               <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
               <CALL-TYPE>REGULAR</CALL-TYPE>

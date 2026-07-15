@@ -116,7 +116,7 @@
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/EcuM/EcuMConfiguration/EcuMCommonConfiguration/EcuMConfigConsistencyHash</DEFINITION-REF>
-                      <VALUE>9324410352423423636</VALUE>
+                      <VALUE>2326044460538310329</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <REFERENCE-VALUES>
@@ -308,6 +308,24 @@
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EcuM/EcuMConfiguration/EcuMCommonConfiguration/EcuMDriverInitListOne/EcuMDriverInitItem/EcuMModuleService</DEFINITION-REF>
                               <VALUE>Pwm_17_GtmCcu6_Init</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE UUID="e3b63d08-9876-44a7-81c8-8686625ba96f">
+                          <SHORT-NAME>Dma_Init</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/EcuM/EcuMConfiguration/EcuMCommonConfiguration/EcuMDriverInitListOne/EcuMDriverInitItem</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EcuM/EcuMConfiguration/EcuMCommonConfiguration/EcuMDriverInitListOne/EcuMDriverInitItem/EcuMModuleID</DEFINITION-REF>
+                              <VALUE>Dma</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EcuM/EcuMConfiguration/EcuMCommonConfiguration/EcuMDriverInitListOne/EcuMDriverInitItem/EcuMModuleHeader</DEFINITION-REF>
+                              <VALUE>Dma.h</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/EcuM/EcuMConfiguration/EcuMCommonConfiguration/EcuMDriverInitListOne/EcuMDriverInitItem/EcuMModuleService</DEFINITION-REF>
+                              <VALUE>Dma_Init</VALUE>
                             </ECUC-TEXTUAL-PARAM-VALUE>
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>

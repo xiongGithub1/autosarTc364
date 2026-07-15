@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Interrupt_Lcfg.c
- *   Generation Time: 2024-07-06 14:46:49
+ *   Generation Time: 2024-07-14 20:43:32
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -94,7 +94,7 @@
 /*! HAL ISR configuration data: AdcIsr_G0 */
 CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_AdcIsr_G0 =
 {
-  /* .Level          = */ 3,
+  /* .Level          = */ 79,
   /* .Source         = */ 0x670uL,
   /* .CoreAssignment = */ 0
 };
@@ -104,36 +104,10 @@ CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_AdcIsr_G0 =
   /* .Dummy         = */ (uint32)0
 };
 
-/*! HAL ISR configuration data: AdcIsr_G2 */
-CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_AdcIsr_G2 =
-{
-  /* .Level          = */ 4,
-  /* .Source         = */ 0x690uL,
-  /* .CoreAssignment = */ 0
-};
-
-CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_AdcIsr_G2 =
-{
-  /* .Dummy         = */ (uint32)0
-};
-
-/*! HAL ISR configuration data: AdcIsr_G3 */
-CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_AdcIsr_G3 =
-{
-  /* .Level          = */ 5,
-  /* .Source         = */ 0x6a0uL,
-  /* .CoreAssignment = */ 0
-};
-
-CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_AdcIsr_G3 =
-{
-  /* .Dummy         = */ (uint32)0
-};
-
 /*! HAL ISR configuration data: AdcIsr_G8 */
 CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_AdcIsr_G8 =
 {
-  /* .Level          = */ 6,
+  /* .Level          = */ 78,
   /* .Source         = */ 0x6f0uL,
   /* .CoreAssignment = */ 0
 };
@@ -146,7 +120,7 @@ CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_AdcIsr_G8 =
 /*! HAL ISR configuration data: CanIsr_0 */
 CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_CanIsr_0 =
 {
-  /* .Level          = */ 2,
+  /* .Level          = */ 60,
   /* .Source         = */ 0x5b0uL,
   /* .CoreAssignment = */ 0
 };
@@ -159,12 +133,103 @@ CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_CanIsr_0 =
 /*! HAL ISR configuration data: CounterIsr_SystemTimer */
 CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_CounterIsr_SystemTimer =
 {
-  /* .Level          = */ 1,
+  /* .Level          = */ 80,
   /* .Source         = */ 0x300uL,
   /* .CoreAssignment = */ 0
 };
 
 CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_CounterIsr_SystemTimer =
+{
+  /* .Dummy         = */ (uint32)0
+};
+
+/*! HAL ISR configuration data: OsIsr_DMA_ERR */
+CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_OsIsr_DMA_ERR =
+{
+  /* .Level          = */ 90,
+  /* .Source         = */ 0x340uL,
+  /* .CoreAssignment = */ 0
+};
+
+CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_OsIsr_DMA_ERR =
+{
+  /* .Dummy         = */ (uint32)0
+};
+
+/*! HAL ISR configuration data: OsIsr_QSPI1_ERR */
+CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_OsIsr_QSPI1_ERR =
+{
+  /* .Level          = */ 22,
+  /* .Source         = */ 0x10cuL,
+  /* .CoreAssignment = */ 0
+};
+
+CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_OsIsr_QSPI1_ERR =
+{
+  /* .Dummy         = */ (uint32)0
+};
+
+/*! HAL ISR configuration data: OsIsr_QSPI1_PT */
+CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_OsIsr_QSPI1_PT =
+{
+  /* .Level          = */ 19,
+  /* .Source         = */ 0x110uL,
+  /* .CoreAssignment = */ 0
+};
+
+CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_OsIsr_QSPI1_PT =
+{
+  /* .Dummy         = */ (uint32)0
+};
+
+/*! HAL ISR configuration data: OsIsr_QSPI2_ERR */
+CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_OsIsr_QSPI2_ERR =
+{
+  /* .Level          = */ 23,
+  /* .Source         = */ 0x120uL,
+  /* .CoreAssignment = */ 0
+};
+
+CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_OsIsr_QSPI2_ERR =
+{
+  /* .Dummy         = */ (uint32)0
+};
+
+/*! HAL ISR configuration data: OsIsr_QSPI2_PT */
+CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_OsIsr_QSPI2_PT =
+{
+  /* .Level          = */ 20,
+  /* .Source         = */ 0x124uL,
+  /* .CoreAssignment = */ 0
+};
+
+CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_OsIsr_QSPI2_PT =
+{
+  /* .Dummy         = */ (uint32)0
+};
+
+/*! HAL ISR configuration data: OsIsr_QSPI3_ERR */
+CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_OsIsr_QSPI3_ERR =
+{
+  /* .Level          = */ 24,
+  /* .Source         = */ 0x134uL,
+  /* .CoreAssignment = */ 0
+};
+
+CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_OsIsr_QSPI3_ERR =
+{
+  /* .Dummy         = */ (uint32)0
+};
+
+/*! HAL ISR configuration data: OsIsr_QSPI3_PT */
+CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_OsIsr_QSPI3_PT =
+{
+  /* .Level          = */ 21,
+  /* .Source         = */ 0x138uL,
+  /* .CoreAssignment = */ 0
+};
+
+CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_OsIsr_QSPI3_PT =
 {
   /* .Dummy         = */ (uint32)0
 };

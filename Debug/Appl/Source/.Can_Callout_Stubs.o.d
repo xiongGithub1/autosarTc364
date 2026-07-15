@@ -26,14 +26,36 @@ Appl\Source\Can_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Ap
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Compiler_Cfg.h" :
 Appl\Source\Can_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComStack_Cfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComStack_Cfg.h" :
-Appl\Source\Can_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Can_GeneralTypes.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Can_GeneralTypes.h" :
 Appl\Source\Can_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\Can_GeneralTypes.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\Can_GeneralTypes.h" :
 Appl\Source\Can_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Can_DrvGeneralTypes.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Can_DrvGeneralTypes.h" :
 Appl\Source\Can_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\CanIf\Implementation\CanIf_GeneralTypes.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\CanIf\Implementation\CanIf_GeneralTypes.h" :
+Appl\Source\Can_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+Appl\Source\Can_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+Appl\Source\Can_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+Appl\Source\Can_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+Appl\Source\Can_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\Source\Can_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\Source\Can_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+Appl\Source\Can_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+Appl\Source\Can_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+Appl\Source\Can_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+Appl\Source\Can_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\Source\Can_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 Appl\Source\Can_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 Appl\Source\Can_Callout_Stubs.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"

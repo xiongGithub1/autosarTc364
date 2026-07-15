@@ -1,6 +1,8 @@
 #include "EcuM.h"
 #include "Os.h"
 #include "Appl_HwStartup.h"
+#include "Os_Trap.h"
+
 
 int main(void)
 {
@@ -20,6 +22,7 @@ int main(void)
 TASK(Default_Init_Task)
 {
   EcuM_StartupTwo();
+  (void)Os_InitialEnableInterruptSources(TRUE);
   (void)TerminateTask();
 }
 

@@ -34,6 +34,18 @@ extern "C"
 
 # ifndef RTE_CORE
 
+/**********************************************************************************************************************
+ * DataType Symbol Redefinitions
+ *********************************************************************************************************************/
+
+#  define Tle9180_ov_Fault boolean
+
+#  define Iv_A float32
+
+#  define OriginAngle uint16
+
+#  define MotorMd uint8
+
 # endif /* RTE_CORE */
 
 # ifdef __cplusplus

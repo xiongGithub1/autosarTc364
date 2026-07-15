@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Scheduler_Cfg.h
- *   Generation Time: 2024-06-29 19:53:52
+ *   Generation Time: 2024-07-10 20:18:18
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -60,15 +60,16 @@
 # define OS_CFG_SCHEDULE_ROUND_ROB_ENABLED       (STD_OFF)
 
 /*! Defines the number of all task queues. */
-# define OS_CFG_NUM_TASKQUEUES                   (6u)
+# define OS_CFG_NUM_TASKQUEUES                   (7u)
 
 /* Number of task queue activation slots: OsCore0 */
 # define OS_CFG_NUM_TASKQUEUE0_OSCORE0_SLOTS     (3u)
 # define OS_CFG_NUM_TASKQUEUE1_OSCORE0_SLOTS     (2u)
 # define OS_CFG_NUM_TASKQUEUE2_OSCORE0_SLOTS     (2u)
-# define OS_CFG_NUM_TASKQUEUE3_OSCORE0_SLOTS     (3u)
-# define OS_CFG_NUM_TASKQUEUE4_OSCORE0_SLOTS     (2u)
+# define OS_CFG_NUM_TASKQUEUE3_OSCORE0_SLOTS     (2u)
+# define OS_CFG_NUM_TASKQUEUE4_OSCORE0_SLOTS     (3u)
 # define OS_CFG_NUM_TASKQUEUE5_OSCORE0_SLOTS     (2u)
+# define OS_CFG_NUM_TASKQUEUE6_OSCORE0_SLOTS     (2u)
 
 
 /**********************************************************************************************************************

@@ -68,7 +68,7 @@
                 </ECUC-NUMERICAL-PARAM-VALUE>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Can_Mpc5700Mcan/Can/CanGeneral/CanHardwareLoopCheck</DEFINITION-REF>
-                  <VALUE>true</VALUE>
+                  <VALUE>false</VALUE>
                 </ECUC-NUMERICAL-PARAM-VALUE>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Can_Mpc5700Mcan/Can/CanGeneral/CanSecureTempBuffer</DEFINITION-REF>
@@ -92,7 +92,7 @@
                 </ECUC-NUMERICAL-PARAM-VALUE>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Can_Mpc5700Mcan/Can/CanGeneral/CanHardwareCancelByAppl</DEFINITION-REF>
-                  <VALUE>true</VALUE>
+                  <VALUE>false</VALUE>
                 </ECUC-NUMERICAL-PARAM-VALUE>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Can_Mpc5700Mcan/Can/CanGeneral/CanIndividualProcessing</DEFINITION-REF>
@@ -192,7 +192,7 @@
                 </ECUC-NUMERICAL-PARAM-VALUE>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Can_Mpc5700Mcan/Can/CanGeneral/CanUseOsInterruptControl</DEFINITION-REF>
-                  <VALUE>false</VALUE>
+                  <VALUE>true</VALUE>
                 </ECUC-NUMERICAL-PARAM-VALUE>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Can_Mpc5700Mcan/Can/CanGeneral/CanSafeBswChecks</DEFINITION-REF>
@@ -295,7 +295,7 @@
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Can_Mpc5700Mcan/Can/CanConfigSet/CanHardwareObject/CanHwProcessing</DEFINITION-REF>
-                      <VALUE>true</VALUE>
+                      <VALUE>false</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/Can_Mpc5700Mcan/Can/CanConfigSet/CanHardwareObject/CanObjectHwSize</DEFINITION-REF>
@@ -366,7 +366,7 @@
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/Can_Mpc5700Mcan/Can/CanConfigSet/CanController/CanTxProcessing</DEFINITION-REF>
-                      <VALUE>POLLING</VALUE>
+                      <VALUE>INTERRUPT</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/Can_Mpc5700Mcan/Can/CanConfigSet/CanController/CanWakeupProcessing</DEFINITION-REF>

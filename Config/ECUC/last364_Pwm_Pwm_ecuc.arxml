@@ -22,16 +22,16 @@
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet</DEFINITION-REF>
               <SUB-CONTAINERS>
                 <ECUC-CONTAINER-VALUE UUID="22931761-0638-47f4-94d9-71e213f83a22">
-                  <SHORT-NAME>PwmChannel_9183IH1</SHORT-NAME>
+                  <SHORT-NAME>PwmChannel_9180IH1</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmChannelId</DEFINITION-REF>
-                      <VALUE>0</VALUE>
+                      <VALUE>1</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmChannelClass</DEFINITION-REF>
-                      <VALUE>PWM_FIXED_PERIOD</VALUE>
+                      <VALUE>PWM_FIXED_PERIOD_CENTER_ALIGNED</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmAssignedHwUnit</DEFINITION-REF>
@@ -39,7 +39,7 @@
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmDutycycleDefault</DEFINITION-REF>
-                      <VALUE>20000</VALUE>
+                      <VALUE>0</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmIdleState</DEFINITION-REF>
@@ -47,7 +47,7 @@
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmPeriodDefault</DEFINITION-REF>
-                      <VALUE>40000</VALUE>
+                      <VALUE>10000</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmPolarity</DEFINITION-REF>
@@ -59,7 +59,7 @@
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmCoherentUpdate</DEFINITION-REF>
-                      <VALUE>false</VALUE>
+                      <VALUE>true</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <REFERENCE-VALUES>
@@ -69,7 +69,7 @@
                     </ECUC-REFERENCE-VALUE>
                     <ECUC-REFERENCE-VALUE>
                       <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmReferenceChannel</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Pwm/PwmChannelConfigSet/PwmChannel_9183IH1</VALUE-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Pwm/PwmChannelConfigSet/PwmChannel_9180REF</VALUE-REF>
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                   <SUB-CONTAINERS>
@@ -79,29 +79,29 @@
                       <PARAMETER-VALUES>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/GtmTimerOutputModuleConfiguration/GtmTimerClockSelect</DEFINITION-REF>
-                          <VALUE>GTM_FIXED_CLOCK_0</VALUE>
+                          <VALUE>GTM_CONFIGURABLE_CLOCK_0</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                       <REFERENCE-VALUES>
                         <ECUC-REFERENCE-VALUE>
                           <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/GtmTimerOutputModuleConfiguration/GtmTimerUsed</DEFINITION-REF>
-                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Mcu/Mcu/McuHardwareResourceAllocationConf_0/McuGtmAllocationConf_0/McuGtmTomAllocationConf_0/McuGtmTomChannelAllocationConf_9</VALUE-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Mcu/Mcu/McuHardwareResourceAllocationConf_0/McuGtmAllocationConf_0/McuGtmAtomAllocationConf_0/McuGtmAtomChannelAllocationConf_1</VALUE-REF>
                         </ECUC-REFERENCE-VALUE>
                       </REFERENCE-VALUES>
                     </ECUC-CONTAINER-VALUE>
                   </SUB-CONTAINERS>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE UUID="780adb8a-6cc9-4e9e-866f-4c9e9318bf44">
-                  <SHORT-NAME>PwmChannel_9183IH2</SHORT-NAME>
+                  <SHORT-NAME>PwmChannel_9180IH2</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmChannelId</DEFINITION-REF>
-                      <VALUE>1</VALUE>
+                      <VALUE>2</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmChannelClass</DEFINITION-REF>
-                      <VALUE>PWM_FIXED_PERIOD</VALUE>
+                      <VALUE>PWM_FIXED_PERIOD_CENTER_ALIGNED</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmAssignedHwUnit</DEFINITION-REF>
@@ -109,7 +109,7 @@
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmDutycycleDefault</DEFINITION-REF>
-                      <VALUE>20000</VALUE>
+                      <VALUE>0</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmIdleState</DEFINITION-REF>
@@ -117,7 +117,7 @@
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmPeriodDefault</DEFINITION-REF>
-                      <VALUE>40000</VALUE>
+                      <VALUE>10000</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmPolarity</DEFINITION-REF>
@@ -129,7 +129,7 @@
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmCoherentUpdate</DEFINITION-REF>
-                      <VALUE>false</VALUE>
+                      <VALUE>true</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <REFERENCE-VALUES>
@@ -139,7 +139,7 @@
                     </ECUC-REFERENCE-VALUE>
                     <ECUC-REFERENCE-VALUE>
                       <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmReferenceChannel</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Pwm/PwmChannelConfigSet/PwmChannel_9183IH2</VALUE-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Pwm/PwmChannelConfigSet/PwmChannel_9180REF</VALUE-REF>
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                   <SUB-CONTAINERS>
@@ -149,29 +149,29 @@
                       <PARAMETER-VALUES>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/GtmTimerOutputModuleConfiguration/GtmTimerClockSelect</DEFINITION-REF>
-                          <VALUE>GTM_FIXED_CLOCK_0</VALUE>
+                          <VALUE>GTM_CONFIGURABLE_CLOCK_0</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                       <REFERENCE-VALUES>
                         <ECUC-REFERENCE-VALUE>
                           <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/GtmTimerOutputModuleConfiguration/GtmTimerUsed</DEFINITION-REF>
-                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Mcu/Mcu/McuHardwareResourceAllocationConf_0/McuGtmAllocationConf_0/McuGtmTomAllocationConf_0/McuGtmTomChannelAllocationConf_10</VALUE-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Mcu/Mcu/McuHardwareResourceAllocationConf_0/McuGtmAllocationConf_0/McuGtmAtomAllocationConf_0/McuGtmAtomChannelAllocationConf_2</VALUE-REF>
                         </ECUC-REFERENCE-VALUE>
                       </REFERENCE-VALUES>
                     </ECUC-CONTAINER-VALUE>
                   </SUB-CONTAINERS>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE UUID="92562ff9-ea19-4537-b639-4599fb414917">
-                  <SHORT-NAME>PwmChannel_9183IH3</SHORT-NAME>
+                  <SHORT-NAME>PwmChannel_9180IH3</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmChannelId</DEFINITION-REF>
-                      <VALUE>2</VALUE>
+                      <VALUE>3</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmChannelClass</DEFINITION-REF>
-                      <VALUE>PWM_FIXED_PERIOD</VALUE>
+                      <VALUE>PWM_FIXED_PERIOD_CENTER_ALIGNED</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmAssignedHwUnit</DEFINITION-REF>
@@ -179,7 +179,7 @@
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmDutycycleDefault</DEFINITION-REF>
-                      <VALUE>20000</VALUE>
+                      <VALUE>0</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmIdleState</DEFINITION-REF>
@@ -187,7 +187,7 @@
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmPeriodDefault</DEFINITION-REF>
-                      <VALUE>40000</VALUE>
+                      <VALUE>10000</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmPolarity</DEFINITION-REF>
@@ -199,7 +199,7 @@
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmCoherentUpdate</DEFINITION-REF>
-                      <VALUE>false</VALUE>
+                      <VALUE>true</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <REFERENCE-VALUES>
@@ -209,7 +209,7 @@
                     </ECUC-REFERENCE-VALUE>
                     <ECUC-REFERENCE-VALUE>
                       <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmReferenceChannel</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Pwm/PwmChannelConfigSet/PwmChannel_9183IH3</VALUE-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Pwm/PwmChannelConfigSet/PwmChannel_9180REF</VALUE-REF>
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                   <SUB-CONTAINERS>
@@ -219,25 +219,25 @@
                       <PARAMETER-VALUES>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/GtmTimerOutputModuleConfiguration/GtmTimerClockSelect</DEFINITION-REF>
-                          <VALUE>GTM_FIXED_CLOCK_0</VALUE>
+                          <VALUE>GTM_CONFIGURABLE_CLOCK_0</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                       <REFERENCE-VALUES>
                         <ECUC-REFERENCE-VALUE>
                           <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/GtmTimerOutputModuleConfiguration/GtmTimerUsed</DEFINITION-REF>
-                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Mcu/Mcu/McuHardwareResourceAllocationConf_0/McuGtmAllocationConf_0/McuGtmTomAllocationConf_0/McuGtmTomChannelAllocationConf_11</VALUE-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Mcu/Mcu/McuHardwareResourceAllocationConf_0/McuGtmAllocationConf_0/McuGtmAtomAllocationConf_0/McuGtmAtomChannelAllocationConf_3</VALUE-REF>
                         </ECUC-REFERENCE-VALUE>
                       </REFERENCE-VALUES>
                     </ECUC-CONTAINER-VALUE>
                   </SUB-CONTAINERS>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="e19efece-8345-4927-997b-6e05864fce3a">
-                  <SHORT-NAME>PwmChannel_9183IL1</SHORT-NAME>
+                <ECUC-CONTAINER-VALUE UUID="a6f6d8c1-2a4f-4d7d-8e11-9180a0000001">
+                  <SHORT-NAME>PwmChannel_9180REF</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmChannelId</DEFINITION-REF>
-                      <VALUE>3</VALUE>
+                      <VALUE>0</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmChannelClass</DEFINITION-REF>
@@ -249,7 +249,7 @@
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmDutycycleDefault</DEFINITION-REF>
-                      <VALUE>20000</VALUE>
+                      <VALUE>0</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmIdleState</DEFINITION-REF>
@@ -257,7 +257,7 @@
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmPeriodDefault</DEFINITION-REF>
-                      <VALUE>40000</VALUE>
+                      <VALUE>10000</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmPolarity</DEFINITION-REF>
@@ -279,163 +279,23 @@
                     </ECUC-REFERENCE-VALUE>
                     <ECUC-REFERENCE-VALUE>
                       <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmReferenceChannel</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Pwm/PwmChannelConfigSet/PwmChannel_9183IL1</VALUE-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Pwm/PwmChannelConfigSet/PwmChannel_9180REF</VALUE-REF>
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                   <SUB-CONTAINERS>
-                    <ECUC-CONTAINER-VALUE UUID="9d28235e-8fe7-4bb7-8554-9a131969bb03">
+                    <ECUC-CONTAINER-VALUE UUID="a6f6d8c1-2a4f-4d7d-8e11-9180a0000002">
                       <SHORT-NAME>GtmTimerOutputModuleConfiguration</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/GtmTimerOutputModuleConfiguration</DEFINITION-REF>
                       <PARAMETER-VALUES>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/GtmTimerOutputModuleConfiguration/GtmTimerClockSelect</DEFINITION-REF>
-                          <VALUE>GTM_FIXED_CLOCK_0</VALUE>
+                          <VALUE>GTM_CONFIGURABLE_CLOCK_0</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                       <REFERENCE-VALUES>
                         <ECUC-REFERENCE-VALUE>
                           <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/GtmTimerOutputModuleConfiguration/GtmTimerUsed</DEFINITION-REF>
-                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Mcu/Mcu/McuHardwareResourceAllocationConf_0/McuGtmAllocationConf_0/McuGtmTomAllocationConf_0/McuGtmTomChannelAllocationConf_12</VALUE-REF>
-                        </ECUC-REFERENCE-VALUE>
-                      </REFERENCE-VALUES>
-                    </ECUC-CONTAINER-VALUE>
-                  </SUB-CONTAINERS>
-                </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="cfea7f90-8aea-42d1-8c1f-604a23ea91bf">
-                  <SHORT-NAME>PwmChannel_9183IL2</SHORT-NAME>
-                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel</DEFINITION-REF>
-                  <PARAMETER-VALUES>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmChannelId</DEFINITION-REF>
-                      <VALUE>4</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
-                    <ECUC-TEXTUAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmChannelClass</DEFINITION-REF>
-                      <VALUE>PWM_FIXED_PERIOD</VALUE>
-                    </ECUC-TEXTUAL-PARAM-VALUE>
-                    <ECUC-TEXTUAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmAssignedHwUnit</DEFINITION-REF>
-                      <VALUE>GTM</VALUE>
-                    </ECUC-TEXTUAL-PARAM-VALUE>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmDutycycleDefault</DEFINITION-REF>
-                      <VALUE>20000</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
-                    <ECUC-TEXTUAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmIdleState</DEFINITION-REF>
-                      <VALUE>PWM_LOW</VALUE>
-                    </ECUC-TEXTUAL-PARAM-VALUE>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmPeriodDefault</DEFINITION-REF>
-                      <VALUE>40000</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
-                    <ECUC-TEXTUAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmPolarity</DEFINITION-REF>
-                      <VALUE>PWM_LOW</VALUE>
-                    </ECUC-TEXTUAL-PARAM-VALUE>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmShiftValue</DEFINITION-REF>
-                      <VALUE>0</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmCoherentUpdate</DEFINITION-REF>
-                      <VALUE>false</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
-                  </PARAMETER-VALUES>
-                  <REFERENCE-VALUES>
-                    <ECUC-REFERENCE-VALUE>
-                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmMcuClockReferencePoint</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Mcu/Mcu/McuModuleConfiguration/McuClockSettingConfig_0/McuClockReferencePoint_Pwm</VALUE-REF>
-                    </ECUC-REFERENCE-VALUE>
-                    <ECUC-REFERENCE-VALUE>
-                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmReferenceChannel</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Pwm/PwmChannelConfigSet/PwmChannel_9183IL2</VALUE-REF>
-                    </ECUC-REFERENCE-VALUE>
-                  </REFERENCE-VALUES>
-                  <SUB-CONTAINERS>
-                    <ECUC-CONTAINER-VALUE UUID="fbed3415-f4d7-4195-9de0-ffabed6b5ac8">
-                      <SHORT-NAME>GtmTimerOutputModuleConfiguration</SHORT-NAME>
-                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/GtmTimerOutputModuleConfiguration</DEFINITION-REF>
-                      <PARAMETER-VALUES>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/GtmTimerOutputModuleConfiguration/GtmTimerClockSelect</DEFINITION-REF>
-                          <VALUE>GTM_FIXED_CLOCK_0</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                      </PARAMETER-VALUES>
-                      <REFERENCE-VALUES>
-                        <ECUC-REFERENCE-VALUE>
-                          <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/GtmTimerOutputModuleConfiguration/GtmTimerUsed</DEFINITION-REF>
-                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Mcu/Mcu/McuHardwareResourceAllocationConf_0/McuGtmAllocationConf_0/McuGtmTomAllocationConf_0/McuGtmTomChannelAllocationConf_13</VALUE-REF>
-                        </ECUC-REFERENCE-VALUE>
-                      </REFERENCE-VALUES>
-                    </ECUC-CONTAINER-VALUE>
-                  </SUB-CONTAINERS>
-                </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="45f266c1-af9b-4442-98cb-164f42db0530">
-                  <SHORT-NAME>PwmChannel_9183IL3</SHORT-NAME>
-                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel</DEFINITION-REF>
-                  <PARAMETER-VALUES>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmChannelId</DEFINITION-REF>
-                      <VALUE>5</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
-                    <ECUC-TEXTUAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmChannelClass</DEFINITION-REF>
-                      <VALUE>PWM_FIXED_PERIOD</VALUE>
-                    </ECUC-TEXTUAL-PARAM-VALUE>
-                    <ECUC-TEXTUAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmAssignedHwUnit</DEFINITION-REF>
-                      <VALUE>GTM</VALUE>
-                    </ECUC-TEXTUAL-PARAM-VALUE>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmDutycycleDefault</DEFINITION-REF>
-                      <VALUE>20000</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
-                    <ECUC-TEXTUAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmIdleState</DEFINITION-REF>
-                      <VALUE>PWM_LOW</VALUE>
-                    </ECUC-TEXTUAL-PARAM-VALUE>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmPeriodDefault</DEFINITION-REF>
-                      <VALUE>40000</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
-                    <ECUC-TEXTUAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmPolarity</DEFINITION-REF>
-                      <VALUE>PWM_LOW</VALUE>
-                    </ECUC-TEXTUAL-PARAM-VALUE>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmShiftValue</DEFINITION-REF>
-                      <VALUE>0</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmCoherentUpdate</DEFINITION-REF>
-                      <VALUE>false</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
-                  </PARAMETER-VALUES>
-                  <REFERENCE-VALUES>
-                    <ECUC-REFERENCE-VALUE>
-                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmMcuClockReferencePoint</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Mcu/Mcu/McuModuleConfiguration/McuClockSettingConfig_0/McuClockReferencePoint_Pwm</VALUE-REF>
-                    </ECUC-REFERENCE-VALUE>
-                    <ECUC-REFERENCE-VALUE>
-                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/PwmReferenceChannel</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Pwm/PwmChannelConfigSet/PwmChannel_9183IL3</VALUE-REF>
-                    </ECUC-REFERENCE-VALUE>
-                  </REFERENCE-VALUES>
-                  <SUB-CONTAINERS>
-                    <ECUC-CONTAINER-VALUE UUID="17cfe00e-a343-49c4-86bc-7c7b15102c63">
-                      <SHORT-NAME>GtmTimerOutputModuleConfiguration</SHORT-NAME>
-                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/GtmTimerOutputModuleConfiguration</DEFINITION-REF>
-                      <PARAMETER-VALUES>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/GtmTimerOutputModuleConfiguration/GtmTimerClockSelect</DEFINITION-REF>
-                          <VALUE>GTM_FIXED_CLOCK_0</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                      </PARAMETER-VALUES>
-                      <REFERENCE-VALUES>
-                        <ECUC-REFERENCE-VALUE>
-                          <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AURIX2G/EcucDefs/Pwm/PwmChannelConfigSet/PwmChannel/GtmTimerOutputModuleConfiguration/GtmTimerUsed</DEFINITION-REF>
-                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Mcu/Mcu/McuHardwareResourceAllocationConf_0/McuGtmAllocationConf_0/McuGtmTomAllocationConf_0/McuGtmTomChannelAllocationConf_14</VALUE-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Mcu/Mcu/McuHardwareResourceAllocationConf_0/McuGtmAllocationConf_0/McuGtmAtomAllocationConf_0/McuGtmAtomChannelAllocationConf_0</VALUE-REF>
                         </ECUC-REFERENCE-VALUE>
                       </REFERENCE-VALUES>
                     </ECUC-CONTAINER-VALUE>

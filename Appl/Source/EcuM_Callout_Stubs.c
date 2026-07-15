@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Callout_Stubs.c
- *   Generation Time: 2024-07-05 20:54:00
+ *   Generation Time: 2024-07-14 21:03:52
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -93,12 +93,13 @@
 #include "Spi.h" 
 #include "Adc.h" 
 #include "Pwm_17_GtmCcu6.h" 
+#include "Dma.h" 
 
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK User Includes>                          DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
- 
+#include "Appl_SpiDmaHwInit.h"
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -288,7 +289,8 @@ FUNC(void, ECUM_CODE) EcuM_AL_DriverInitOne(void)
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_AL_DriverInitOne>                  DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
-/* Add implementation of EcuM_AL_DriverInitOne  */
+  /* Body is in Appl (not generated). Re-add this one line after EcuM regen if wiped. */
+  Appl_SpiDmaHwInit();
 
   return;
 /**********************************************************************************************************************

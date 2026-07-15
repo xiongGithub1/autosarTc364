@@ -148,8 +148,8 @@
                                   </ANNOTATIONS>
                                   <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/MotorControll</TYPE-TREF>
                                 </SW-COMPONENT-PROTOTYPE>
-                                <SW-COMPONENT-PROTOTYPE UUID="cefe1d7d-89bb-4a2a-8c66-991d07503246">
-                                  <SHORT-NAME>tle5012BD_CDD</SHORT-NAME>
+                                <SW-COMPONENT-PROTOTYPE UUID="163e5d64-ff37-4d5f-aa46-cd3b6ac685f1">
+                                  <SHORT-NAME>MotorCdd</SHORT-NAME>
                                   <ADMIN-DATA>
                                     <SDGS>
                                       <SDG GID="DV:DEV">
@@ -162,25 +162,132 @@
                                       <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
                                     </ANNOTATION>
                                   </ANNOTATIONS>
-                                  <TYPE-TREF DEST="COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE">/ComponentTypes/tle5012BD_CDD</TYPE-TREF>
-                                </SW-COMPONENT-PROTOTYPE>
-                                <SW-COMPONENT-PROTOTYPE UUID="b620182b-3b3b-4176-a0df-51ddebf379d7">
-                                  <SHORT-NAME>tle9183_CDD</SHORT-NAME>
-                                  <ADMIN-DATA>
-                                    <SDGS>
-                                      <SDG GID="DV:DEV">
-                                        <SD GID="DV:ImportModePreset">Keep</SD>
-                                      </SDG>
-                                    </SDGS>
-                                  </ADMIN-DATA>
-                                  <ANNOTATIONS>
-                                    <ANNOTATION>
-                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
-                                    </ANNOTATION>
-                                  </ANNOTATIONS>
-                                  <TYPE-TREF DEST="COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE">/ComponentTypes/tle9183_CDD</TYPE-TREF>
+                                  <TYPE-TREF DEST="COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE">/ComponentTypes/MotorCdd</TYPE-TREF>
                                 </SW-COMPONENT-PROTOTYPE>
                               </COMPONENTS>
+                              <CONNECTORS>
+                                <ASSEMBLY-SW-CONNECTOR UUID="b9a77d5b-bd7e-4507-8b35-93ee8a6b17a2">
+                                  <SHORT-NAME>MotorCdd_Pp_MotorElectricalAngle_MotorControll_Pp_MotorElectricalAngle</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/MotorCdd</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorElectricalAngle</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/MotorControll</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorControll/Pp_MotorElectricalAngle</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="7e304503-62bf-4902-938c-e922ad390ef5">
+                                  <SHORT-NAME>MotorCdd_Pp_MotorDcBusVoltage_MotorControll_Pp_MotorDcBusVoltage</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/MotorCdd</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorDcBusVoltage</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/MotorControll</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorControll/Pp_MotorDcBusVoltage</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="59e89b9a-cd83-48c6-8442-85fcdb7d80ce">
+                                  <SHORT-NAME>MotorCdd_Pp_MotorFaultStatus_MotorControll_Pp_MotorFaultStatus</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/MotorCdd</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorFaultStatus</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/MotorControll</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorControll/Pp_MotorFaultStatus</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="6cdfe26c-f0c3-42ed-b753-3cd018ffb966">
+                                  <SHORT-NAME>MotorControll_Pp_MotorCurrentRef_MotorCdd_Pp_MotorCurrentRef</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/MotorControll</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/MotorControll/Pp_MotorCurrentRef</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/MotorCdd</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorCurrentRef</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="1f75417c-bf61-4a3a-abd0-0ffdc74f32e0">
+                                  <SHORT-NAME>MotorControll_Pp_MotorCtrlCmd_MotorCdd_Pp_MotorCtrlCmd</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/MotorControll</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/MotorControll/Pp_MotorCtrlCmd</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/MotorCdd</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorCtrlCmd</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="d8fc6b00-c9cf-40ed-b04a-d5a883804ecb">
+                                  <SHORT-NAME>MotorCdd_Pp_MotorCdd_EnableInverter_MotorControll_Pp_MotorCdd_EnableInverter</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/MotorCdd</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorCdd_EnableInverter</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/MotorControll</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorControll/Pp_MotorCdd_EnableInverter</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                              </CONNECTORS>
                             </COMPOSITION-SW-COMPONENT-TYPE>
                             <END-TO-END-PROTECTION-SET UUID="a4e3eb1b-8c6e-4ff7-b0ed-a62ec0c16680">
                               <SHORT-NAME>E2EPROTECTIONSET</SHORT-NAME>
@@ -205,14 +312,10 @@
                               <ADMIN-DATA>
                                 <SDGS>
                                   <SDG GID="DV:CfgReferences">
-                                    <SD GID="b34853ab-6fa2-4b38-8ef9-136a9bf22714">/AURIX2G/EcucDefs/Adc_ib_bswmd</SD>
-                                    <SD GID="4598ed4e-478e-4a54-96e6-66bb8cc9c87c">/AURIX2G/EcucDefs/Adc_ib_bswmd/BswModuleDescriptions</SD>
                                     <SD GID="2566e571-4653-48d0-8dc1-721bb5606fa1">/AURIX2G/EcucDefs/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior</SD>
                                     <SD GID="62e50bda-2382-4c0f-adae-54d419143c09">/AURIX2G/EcucDefs/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/KernelData</SD>
                                     <SD GID="1db713c9-cff3-4de4-bc8d-789dff97ff97">/AURIX2G/EcucDefs/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/SrcRegAccess</SD>
                                     <SD GID="757cdf11-2f75-4c30-ace2-764f68876ffb">/AURIX2G/EcucDefs/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior</SD>
-                                    <SD GID="a7f04229-e408-4b5e-89e8-42a135a9e4c9">/AURIX2G/EcucDefs/Dma_ib_bswmd</SD>
-                                    <SD GID="14a59c05-0f71-4ac9-ac73-1c1ac3c10229">/AURIX2G/EcucDefs/Dma_ib_bswmd/BswModuleDescriptions</SD>
                                     <SD GID="2ac1c8d4-501b-40f9-ae99-1cb9d0a68e4b">/AURIX2G/EcucDefs/Dma_ib_bswmd/BswModuleDescriptions/Dma/DmaBehavior</SD>
                                     <SD GID="05ef569b-bf6d-43a0-96ef-f95afd2ac2cc">/AURIX2G/EcucDefs/Dma_ib_bswmd/BswModuleDescriptions/Dma/DmaBehavior/ChEventStatus</SD>
                                     <SD GID="b95fc5cd-7edb-40ca-8077-f1989f073a9a">/AURIX2G/EcucDefs/Dma_ib_bswmd/BswModuleDescriptions/Dma/DmaBehavior/ChannelConfigUpdate</SD>
@@ -223,8 +326,6 @@
                                     <SD GID="e8164aba-d9e4-4099-ad68-ee56b74340e9">/AURIX2G/EcucDefs/Dma_ib_bswmd/BswModuleDescriptions/Dma/DmaBehavior/ChannelSwitchBuffer</SD>
                                     <SD GID="6bb420dd-03fd-4b6d-b458-1215017e2548">/AURIX2G/EcucDefs/Dma_ib_bswmd/BswModuleDescriptions/Dma/DmaBehavior/InterruptStatus</SD>
                                     <SD GID="8028b7cb-52ce-418a-a489-58b9906d6de6">/AURIX2G/EcucDefs/Dma_ib_bswmd/BswModuleDescriptions/Dma/DmaBehavior/MEErrorStatus</SD>
-                                    <SD GID="2ffb116c-9ab6-4ef3-9ce2-d5ee41a2dda1">/AURIX2G/EcucDefs/Irq_ib_bswmd</SD>
-                                    <SD GID="7e95d798-d5d0-4543-9df0-5c5a34ceb499">/AURIX2G/EcucDefs/Irq_ib_bswmd/BswModuleDescriptions</SD>
                                     <SD GID="8646c299-9537-41f4-a093-137c8784a33d">/AURIX2G/EcucDefs/Irq_ib_bswmd/BswModuleDescriptions/Irq/IrqBehavior</SD>
                                     <SD GID="ac2c1286-9e2e-4cb6-8a15-e213ad61e13a">/AURIX2G/EcucDefs/McalLib_ib_bswmd/BswModuleDescriptions/McalLib/McalLibBehavior</SD>
                                     <SD GID="9c2f72bf-7533-4f19-b8bd-680f7653b1a7">/AURIX2G/EcucDefs/McalLib_ib_bswmd/BswModuleDescriptions/McalLib/McalLibBehavior/CpuEndInit</SD>
@@ -235,13 +336,9 @@
                                     <SD GID="d8e90e9c-826b-4a8e-8ceb-d8450aacd2d8">/AURIX2G/EcucDefs/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/AtomAgcReg</SD>
                                     <SD GID="2edc34f0-48f2-433c-9d15-d3b43a7edc86">/AURIX2G/EcucDefs/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/TomTgcReg</SD>
                                     <SD GID="ca093022-9104-4ed3-be68-b75ee2e86356">/AURIX2G/EcucDefs/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior</SD>
-                                    <SD GID="c9337ea1-b1c8-4350-85e1-f385d44aabe8">/AURIX2G/EcucDefs/Pwm_ib_bswmd</SD>
-                                    <SD GID="36b13279-afdd-49ec-a785-6b5b9006b507">/AURIX2G/EcucDefs/Pwm_ib_bswmd/BswModuleDescriptions</SD>
                                     <SD GID="657b3d36-f533-41ee-a92d-aa98d688fe8e">/AURIX2G/EcucDefs/Pwm_ib_bswmd/BswModuleDescriptions/Pwm/PwmBehavior</SD>
                                     <SD GID="fd700847-574f-40bc-a632-5c18f7a3a112">/AURIX2G/EcucDefs/Pwm_ib_bswmd/BswModuleDescriptions/Pwm/PwmBehavior/HandleNotification</SD>
                                     <SD GID="e15e3bfc-27ee-4db4-b458-6bf2a8ba5761">/AURIX2G/EcucDefs/Pwm_ib_bswmd/BswModuleDescriptions/Pwm/PwmBehavior/PeriodAndDutyUpdate</SD>
-                                    <SD GID="5d0e8b7b-8016-4432-843b-dd8987616e6e">/AURIX2G/EcucDefs/Spi_ib_bswmd</SD>
-                                    <SD GID="e338bece-0cd2-4e91-b3ba-52e40f355be3">/AURIX2G/EcucDefs/Spi_ib_bswmd/BswModuleDescriptions</SD>
                                     <SD GID="ccd47a7d-a651-48f5-943a-06a29c3c6072">/AURIX2G/EcucDefs/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior</SD>
                                     <SD GID="1ccb3981-4d3c-4021-985c-0420fb2ededd">/AURIX2G/EcucDefs/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/Buffer_Update</SD>
                                     <SD GID="0b2af4e5-a0da-45fb-a8eb-238ca804b0de">/AURIX2G/EcucDefs/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/Cancel_Seq</SD>
@@ -257,20 +354,37 @@
                                     <SD GID="ec428683-cd60-4467-88c3-58ddf18f0ae5">/AURIX2G/EcucDefs/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/Spi_MainFunction_HandlingTimingEvent0</SD>
                                     <SD GID="fee7b51f-808c-4dfc-b817-e1c5eea12fc4">/AURIX2G/EcucDefs/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SyncLock</SD>
                                     <SD GID="54aa3de6-6a89-495b-9738-15ac61c13257">/AURIX2G/EcucDefs/Spi_ib_bswmd/BswModuleDescriptions/Spi_MainFunction_Handling</SD>
-                                    <SD GID="5d8201f6-cb9f-4a59-99da-672f36f2c05a">/COM/VECTOR/CFG/TimingExtensions</SD>
                                     <SD GID="9545fe9e-3389-4b58-a7c5-529393280d37">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE</SD>
                                     <SD GID="2ecfeaa2-6c30-4d7d-8e6e-2421a5350db7">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</SD>
                                     <SD GID="1d01c276-c949-40ad-b899-b7a0bca03263">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Det</SD>
+                                    <SD GID="163e5d64-ff37-4d5f-aa46-cd3b6ac685f1">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/MotorCdd</SD>
                                     <SD GID="5b71db1c-5482-4880-9de4-87a61bb32127">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/MotorControll</SD>
                                     <SD GID="8dad7314-b692-48a2-83bc-54c1373e5ddd">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Os_OsCore0_swc</SD>
                                     <SD GID="1bfb6dfb-0bf9-4ea2-8053-c39a6d0b22f7">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/StartApp</SD>
-                                    <SD GID="cefe1d7d-89bb-4a2a-8c66-991d07503246">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/tle5012BD_CDD</SD>
-                                    <SD GID="b620182b-3b3b-4176-a0df-51ddebf379d7">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/tle9183_CDD</SD>
                                     <SD GID="f7f3ba40-5fcb-4bee-afcf-5ea567163e04">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/FLATMAP</SD>
                                     <SD GID="047fd99a-ad86-45be-83f4-6b8d0441468d">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM</SD>
                                     <SD GID="71662b86-9618-4a49-8583-d1f3bd194430">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</SD>
+                                    <SD GID="DDB51183-A4A0-4CF7-8D93-67E5AED5EB0A">/ComponentTypes/MotorCdd</SD>
+                                    <SD GID="86A8EDB3-572C-4B4A-9168-6170322AED15">/ComponentTypes/MotorCdd/MotorCdd_InternalBehavior/EXTO_MotorCdd_AdcOnSampleReady_If_AdcSampleReady_Rp_AdcSampleReady</SD>
+                                    <SD GID="C4B696F4-986D-415E-8BE8-5CF575C9F1C9">/ComponentTypes/MotorCdd/MotorCdd_InternalBehavior/MotorCdd_InitEvent</SD>
+                                    <SD GID="D34A5137-1400-4A42-B44C-CD4B7475A8ED">/ComponentTypes/MotorCdd/MotorCdd_InternalBehavior/OIT_MotorPp_MotorCdd_EnableInverter_EnableInverterswitch_Pp_MotorCdd_EnableInverter_EnableInverter</SD>
+                                    <SD GID="47558303-BA16-4670-9571-1514BAB7709D">/ComponentTypes/MotorCdd/MotorCdd_InternalBehavior/TMT_MotorCDDMainFunction</SD>
+                                    <SD GID="0689BD48-66C5-4438-9951-47AAB4E0FC99">/ComponentTypes/MotorCdd/Pp_MotorCdd_EnableInverter</SD>
+                                    <SD GID="705495EB-8234-431D-B57A-011F28CE3A25">/ComponentTypes/MotorCdd/Pp_MotorCtrlCmd</SD>
+                                    <SD GID="810FFA4D-EAB9-444C-805E-54A81ADC4D63">/ComponentTypes/MotorCdd/Pp_MotorCurrentRef</SD>
+                                    <SD GID="219C536B-9D97-4D96-9CA4-531D79B2F79A">/ComponentTypes/MotorCdd/Pp_MotorDcBusVoltage</SD>
+                                    <SD GID="297647B1-8C67-483A-A292-BE664D1E51C1">/ComponentTypes/MotorCdd/Pp_MotorElectricalAngle</SD>
+                                    <SD GID="1E89D124-96FA-4456-BFA7-5DEF77463578">/ComponentTypes/MotorCdd/Pp_MotorFaultStatus</SD>
+                                    <SD GID="9BF6B688-9E84-4E91-8D9E-DD2FF580ABEC">/ComponentTypes/MotorCdd_Implementation</SD>
                                     <SD GID="2B51A08D-E8A1-4F7F-9F34-43B4105735B6">/ComponentTypes/MotorControll</SD>
                                     <SD GID="6C950CDE-BEB0-463F-891E-D1F92727C467">/ComponentTypes/MotorControll/MotorControll_InternalBehavior/MotorControll_InitEvent</SD>
+                                    <SD GID="8B803AE8-EED3-4D9D-AE0B-68B111C2B988">/ComponentTypes/MotorControll/MotorControll_InternalBehavior/TMT_MotorControll_MainFunction</SD>
+                                    <SD GID="D317E0B4-2483-4F78-BD06-636241FF309B">/ComponentTypes/MotorControll/Pp_MotorCdd_EnableInverter</SD>
+                                    <SD GID="25848EE2-C6E7-4931-8781-5E5C58795D2A">/ComponentTypes/MotorControll/Pp_MotorCtrlCmd</SD>
+                                    <SD GID="498AFB7B-9D51-496A-97F3-605EE7F62E53">/ComponentTypes/MotorControll/Pp_MotorCurrentRef</SD>
+                                    <SD GID="9F0AB5E5-A014-4B88-8EFA-127DB2573737">/ComponentTypes/MotorControll/Pp_MotorDcBusVoltage</SD>
+                                    <SD GID="57868171-E1A5-4101-897B-49D89A407AFA">/ComponentTypes/MotorControll/Pp_MotorElectricalAngle</SD>
+                                    <SD GID="6206F63D-470E-4C27-8676-447099B1B445">/ComponentTypes/MotorControll/Pp_MotorFaultStatus</SD>
                                     <SD GID="73EC42D7-3EB6-44A8-8C2C-771753EEC94B">/ComponentTypes/MotorControll_Implementation</SD>
                                     <SD GID="29CEE414-8C92-4098-9D33-043FB99C2C62">/ComponentTypes/StartApp</SD>
                                     <SD GID="4B91D2A3-5D8E-47D6-8D7E-568156A99AA3">/ComponentTypes/StartApp/StartApp_InternalBehavior/StartApp_InitEvent</SD>
@@ -279,18 +393,10 @@
                                     <SD GID="8ABA4657-4CC2-4B2E-896E-0B9892AF4B05">/ComponentTypes/StartApp/StartApp_InternalBehavior/TMT_StartApp_Cyclic1ms</SD>
                                     <SD GID="39B6632A-DEA1-420C-A573-5EB0B92EEFE5">/ComponentTypes/StartApp/StartApp_InternalBehavior/TMT_StartApp_Cyclic500ms</SD>
                                     <SD GID="D1421BB5-E67D-49C5-8029-41F2582E4A38">/ComponentTypes/StartApp_Implementation</SD>
-                                    <SD GID="46684E88-BD3D-44EB-A769-23F002805BB1">/ComponentTypes/tle5012BD_CDD</SD>
-                                    <SD GID="37027E7D-058C-48BF-A32D-2968D416A7D4">/ComponentTypes/tle5012BD_CDD/tle5012BD_CDD_InternalBehavior/tle5012BD_CDD_InitEvent</SD>
-                                    <SD GID="EA2AD472-F606-4058-A7E3-4F321DCA2864">/ComponentTypes/tle5012BD_CDD_Implementation</SD>
-                                    <SD GID="0CF1B17E-0882-4F6F-B3CC-5186078C632B">/ComponentTypes/tle9183_CDD</SD>
-                                    <SD GID="EE0B1A51-50B6-4DA9-8E79-84F0AFCD42E1">/ComponentTypes/tle9183_CDD/tle9183_CDD_InternalBehavior/tle9183_CDD_InitEvent</SD>
-                                    <SD GID="F47D540A-A6A5-4EE3-B1AC-A5839CF0210C">/ComponentTypes/tle9183_CDD_Implementation</SD>
                                     <SD GID="FE2C5E2A-0151-4321-8D4B-BAD3E52BE0CA">/ECUCompositionTypes/ECU_Composition</SD>
+                                    <SD GID="738F47B9-9F8E-4AA6-B20C-C33585BCDCCB">/ECUCompositionTypes/ECU_Composition/MotorCdd</SD>
                                     <SD GID="AB32B20F-4632-4988-A2B6-850B953BB4ED">/ECUCompositionTypes/ECU_Composition/MotorControll</SD>
                                     <SD GID="A4CAE317-8087-4975-B747-EA330DE14F16">/ECUCompositionTypes/ECU_Composition/StartApp</SD>
-                                    <SD GID="9EBFEAD1-54F7-44F1-8673-CB0F0C838F65">/ECUCompositionTypes/ECU_Composition/tle5012BD_CDD</SD>
-                                    <SD GID="DF774B9A-DBCB-40ED-BC2E-CE4F3D96646D">/ECUCompositionTypes/ECU_Composition/tle9183_CDD</SD>
-                                    <SD GID="b1545062-8cf6-4fa3-9032-294d95e2977d">/Irq</SD>
                                     <SD GID="f10f3aeb-1a4a-4470-9118-fb07af0b8602">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior</SD>
                                     <SD GID="3c88a083-4574-4fad-8483-3d10013b5e22">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BSWM_EXCLUSIVE_AREA_0</SD>
                                     <SD GID="457b3482-8695-49ce-a718-81e78e971d5a">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BswM_MainFunction</SD>
@@ -399,6 +505,14 @@
                                     <SD GID="6f204299-360b-46a7-9c35-c98b389a3589">/MICROSAR/Os_swc/Interfaces/Os_Service/GetCounterValue</SD>
                                     <SD GID="74463be2-a1c7-4640-8ea6-fd8380aeafbc">/MICROSAR/Os_swc/Interfaces/Os_Service/GetElapsedValue</SD>
                                     <SD GID="29555de6-b57c-4359-9b66-0d416c7cd1a9">/MICROSAR/Rte_ib_bswmd/BswModuleDescriptions/Rte/RteBehavior</SD>
+                                    <SD GID="a1459db2-f33d-4a8b-b1f6-c5904ffdb790">/MICROSAR/Sbc_ib_bswmd</SD>
+                                    <SD GID="633b34ce-7ca8-4e0b-9b68-dec1874a1682">/MICROSAR/Sbc_ib_bswmd/BswModuleDescriptions</SD>
+                                    <SD GID="21f299e7-9656-44a6-a06c-cad4fbbcaf5e">/MICROSAR/Sbc_ib_bswmd/BswModuleDescriptions/Sbc/Sbc_Behavior</SD>
+                                    <SD GID="2e1771a2-bd8b-4d93-bb00-9d634f272f56">/MICROSAR/Sbc_ib_bswmd/BswModuleDescriptions/Sbc/Sbc_Behavior/SBC_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="8554f757-e57a-4140-85b6-0734bbfd833c">/MICROSAR/Sbc_ib_bswmd/BswModuleDescriptions/Sbc/Sbc_Behavior/SBC_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="938f993f-b885-4bac-90cb-00bf183b2141">/MICROSAR/Sbc_ib_bswmd/BswModuleDescriptions/Sbc/Sbc_Behavior/SBC_EXCLUSIVE_AREA_2</SD>
+                                    <SD GID="2be0f6d7-83ce-4e5b-be07-fb69cfd7ce49">/MICROSAR/Sbc_ib_bswmd/BswModuleDescriptions/Sbc/Sbc_Behavior/SBC_EXCLUSIVE_AREA_3</SD>
+                                    <SD GID="76d404ef-996c-47fc-8c1c-8eb6234aa018">/MICROSAR/Sbc_ib_bswmd/BswModuleDescriptions/Sbc/Sbc_Behavior/SBC_EXCLUSIVE_AREA_4</SD>
                                     <SD GID="{AF35D1D4-4362-4055-B014-780FA6F9E75B}">/Predefined_DEV/CompuMethods/Dem_UdsStatusByteType</SD>
                                     <SD GID="F2570AA0-D6E5-4217-80F7-5F60B8778133">/Predefined_DEV/CompuMethods/NvM_RequestResultType</SD>
                                     <SD GID="007B24D3-5C46-4986-B3CA-31D71FEDD510">/Predefined_DEV/CompuMethods/NvM_ServiceIdType</SD>

@@ -76,14 +76,36 @@ Appl\GenData\CanSM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\C
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Can\Implementation\Can.h" :
 Appl\GenData\CanSM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Can_Cfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Can_Cfg.h" :
-Appl\GenData\CanSM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Can_GeneralTypes.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Can_GeneralTypes.h" :
 Appl\GenData\CanSM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\Can_GeneralTypes.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\Can_GeneralTypes.h" :
 Appl\GenData\CanSM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Can_DrvGeneralTypes.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Can_DrvGeneralTypes.h" :
 Appl\GenData\CanSM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\CanIf\Implementation\CanIf_GeneralTypes.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\CanIf\Implementation\CanIf_GeneralTypes.h" :
+Appl\GenData\CanSM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+Appl\GenData\CanSM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+Appl\GenData\CanSM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+Appl\GenData\CanSM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+Appl\GenData\CanSM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\CanSM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\CanSM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+Appl\GenData\CanSM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+Appl\GenData\CanSM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+Appl\GenData\CanSM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+Appl\GenData\CanSM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\CanSM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 Appl\GenData\CanSM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 Appl\GenData\CanSM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"

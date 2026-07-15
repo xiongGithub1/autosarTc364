@@ -120,20 +120,18 @@ Rte_BswM.h<br>
 Rte_ComM.h<br>
 Rte_Det.h<br>
 Rte_EcuM.h<br>
+Rte_MotorCdd.h<br>
 Rte_MotorControll.h<br>
 Rte_Os_OsCore0_swc.h<br>
 Rte_StartApp.h<br>
-Rte_tle5012BD_CDD.h<br>
-Rte_tle9183_CDD.h<br>
 Rte_BswM_Type.h<br>
 Rte_ComM_Type.h<br>
 Rte_Det_Type.h<br>
 Rte_EcuM_Type.h<br>
+Rte_MotorCdd_Type.h<br>
 Rte_MotorControll_Type.h<br>
 Rte_Os_OsCore0_swc_Type.h<br>
 Rte_StartApp_Type.h<br>
-Rte_tle5012BD_CDD_Type.h<br>
-Rte_tle9183_CDD_Type.h<br>
 Rte_Main.h<br>
 Rte_Type.h<br>
 Rte_DataHandleType.h<br>
@@ -146,11 +144,10 @@ ComXf_Compiler_Cfg.h<br>
 ComXf.h<br>
 E2EXf_Compiler_Cfg.h<br>
 E2EXf_LCfg.h<br>
+MotorCdd_MemMap.h<br>
 MotorControll_MemMap.h<br>
 Os_OsCore0_swc_MemMap.h<br>
 StartApp_MemMap.h<br>
-tle5012BD_CDD_MemMap.h<br>
-tle9183_CDD_MemMap.h<br>
 Rte_Compiler_Cfg.h<br>
 Rte.c<br>
 ComXf.c<br>
@@ -186,6 +183,7 @@ SchM_Mcu.h<br>
 SchM_PduR.h<br>
 SchM_Port.h<br>
 SchM_Pwm_17_GtmCcu6.h<br>
+SchM_Sbc_30_Tlf35584.h<br>
 SchM_Spi.h<br>
 SchM_Adc_Type.h<br>
 SchM_BswM_Type.h<br>
@@ -206,6 +204,7 @@ SchM_Mcu_Type.h<br>
 SchM_PduR_Type.h<br>
 SchM_Port_Type.h<br>
 SchM_Pwm_17_GtmCcu6_Type.h<br>
+SchM_Sbc_30_Tlf35584_Type.h<br>
 SchM_Spi_Type.h<br>
 Rte.oil<br>
 Rte_Needs.ecuc.arxml<br>
@@ -216,7 +215,7 @@ Rte_Needs.ecuc.arxml<br>
 Note: This resource usage calculation assumes that the "Boolean" data type is based on uint8 base type.<br>
       Further on padding bytes for structs are not considered, which depends on the compiler settings.<br>
 <br>
-RAM   Size: 0 Bytes<br>
+RAM   Size: 18 Bytes<br>
 CONST Size: 0 Bytes<br>
 <br>
 <P ALIGN=LEFT>
@@ -246,6 +245,12 @@ CONST Size: 0 Bytes<br>
 <TD>Extended</TD>
 <TD>NON</TD>
 <TD>30</TD>
+</TR>
+<TR>
+<TD>MotorTask</TD>
+<TD>Extended</TD>
+<TD>NON</TD>
+<TD>200</TD>
 </TR>
 </TABLE>
 <P ALIGN=LEFT>
@@ -450,11 +455,46 @@ CONST Size: 0 Bytes<br>
 <TD>n/a</TD>
 </TR>
 <TR>
+<TD><B>TimingEvent</B> Cyclic 10ms</TD>
+<TD>MotorCDDMainFunction</TD>
+<TD>MotorTask</TD>
+<TD>Rte_Ev_Run_MotorCdd_MotorCDDMainFunction</TD>
+<TD>Rte_Al_TE_MotorCdd_MotorCDDMainFunction</TD>
+</TR>
+<TR>
+<TD><B>ExternalTriggerEvent</B></TD>
+<TD>MotorCdd_AdcOnSampleReady</TD>
+<TD>MotorTask</TD>
+<TD>Rte_Ev_Run_MotorCdd_MotorCdd_AdcOnSampleReady_Rp_AdcSampleReady_AdcSampleReady</TD>
+<TD>n/a</TD>
+</TR>
+<TR>
+<TD><B>InitEvent</B></TD>
+<TD>MotorCdd_Init</TD>
+<TD>Default_Appl_Init_Task</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+</TR>
+<TR>
+<TD><B>OperationInvokedEvent</B> MotorCdd::Pp_MotorCdd_EnableInverter::EnableInverter</TD>
+<TD>Pp_MotorCdd_EnableInverter_EnableInverter</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+</TR>
+<TR>
 <TD><B>InitEvent</B></TD>
 <TD>MotorControll_Init</TD>
 <TD>Default_Appl_Init_Task</TD>
 <TD>n/a</TD>
 <TD>n/a</TD>
+</TR>
+<TR>
+<TD><B>TimingEvent</B> Cyclic 1ms</TD>
+<TD>MotorControll_MainFunction</TD>
+<TD>MotorTask</TD>
+<TD>Rte_Ev_Run_MotorControll_MotorControll_MainFunction</TD>
+<TD>Rte_Al_TE_MotorControll_MotorControll_MainFunction</TD>
 </TR>
 <TR>
 <TD><B>OperationInvokedEvent</B> Os_OsCore0_swc::OsService_SystemTimer::GetCounterValue</TD>
@@ -501,20 +541,6 @@ CONST Size: 0 Bytes<br>
 <TR>
 <TD><B>InitEvent</B></TD>
 <TD>StartApp_Init</TD>
-<TD>Default_Appl_Init_Task</TD>
-<TD>n/a</TD>
-<TD>n/a</TD>
-</TR>
-<TR>
-<TD><B>InitEvent</B></TD>
-<TD>tle5012BD_CDD_Init</TD>
-<TD>Default_Appl_Init_Task</TD>
-<TD>n/a</TD>
-<TD>n/a</TD>
-</TR>
-<TR>
-<TD><B>InitEvent</B></TD>
-<TD>tle9183_CDD_Init</TD>
 <TD>Default_Appl_Init_Task</TD>
 <TD>n/a</TD>
 <TD>n/a</TD>
@@ -609,9 +635,9 @@ CONST Size: 0 Bytes<br>
 <TR>
 <TD><B>TimingEvent</B> Cyclic 5ms</TD>
 <TD>Spi_MainFunction_Handling</TD>
-<TD>n/a</TD>
-<TD>n/a</TD>
-<TD>n/a</TD>
+<TD>Default_BSW_ASync_Task</TD>
+<TD>Rte_Ev_Run_Spi_Spi_MainFunction_Handling</TD>
+<TD>Rte_Al_TE_Spi_Spi_MainFunction_Handling</TD>
 </TR>
 </TABLE>
 <P ALIGN=LEFT>

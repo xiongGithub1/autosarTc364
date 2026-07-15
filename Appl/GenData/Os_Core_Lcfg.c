@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Core_Lcfg.c
- *   Generation Time: 2024-07-06 14:46:49
+ *   Generation Time: 2024-07-14 20:32:32
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -185,6 +185,7 @@ OS_LOCAL CONST(Os_StackConfigRefType, OS_CONST) OsCfg_Core_OsCore0_StackRefs[OS_
 {
   (Os_StackConfigRefType) &OsCfg_Stack_Default_Appl_Task,
   (Os_StackConfigRefType) &OsCfg_Stack_Default_BSW_ASync_Task,
+  (Os_StackConfigRefType) &OsCfg_Stack_MotorTask,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Error,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Init,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Isr_Core,
@@ -200,11 +201,16 @@ OS_LOCAL CONST(Os_StackConfigRefType, OS_CONST) OsCfg_Core_OsCore0_StackRefs[OS_
 OS_LOCAL CONST(Os_IsrConfigRefType, OS_CONST) OsCfg_Core_OsCore0_IsrRefs[OS_CFG_NUM_CORE_OSCORE0_ISRS + 1u] =
 {
   OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_AdcIsr_G0), 
-  OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_AdcIsr_G2), 
-  OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_AdcIsr_G3), 
   OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_AdcIsr_G8), 
   OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_CanIsr_0), 
   OS_TIMER_CASTCONFIG_TIMERISR_2_ISR(OsCfg_Isr_CounterIsr_SystemTimer), 
+  OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_OsIsr_DMA_ERR), 
+  OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_OsIsr_QSPI1_ERR), 
+  OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_OsIsr_QSPI1_PT), 
+  OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_OsIsr_QSPI2_ERR), 
+  OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_OsIsr_QSPI2_PT), 
+  OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_OsIsr_QSPI3_ERR), 
+  OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_OsIsr_QSPI3_PT), 
   NULL_PTR
 };
 

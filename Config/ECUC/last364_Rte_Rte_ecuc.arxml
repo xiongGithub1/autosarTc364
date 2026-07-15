@@ -53,45 +53,6 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="a195c119-6b3e-49d1-acbf-e7408d2e84a5">
-                  <SHORT-NAME>Rte_Al_TE_StartApp_StartApp_Cyclic1ms</SHORT-NAME>
-                  <ANNOTATIONS>
-                    <ANNOTATION>
-                      <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
-                    </ANNOTATION>
-                  </ANNOTATIONS>
-                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation</DEFINITION-REF>
-                  <PARAMETER-VALUES>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteExpectedActivationOffset</DEFINITION-REF>
-                      <VALUE>0</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteExpectedTickDuration</DEFINITION-REF>
-                      <VALUE>0</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
-                  </PARAMETER-VALUES>
-                  <REFERENCE-VALUES>
-                    <ECUC-REFERENCE-VALUE>
-                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteActivationOsAlarmRef</DEFINITION-REF>
-                      <ANNOTATIONS>
-                        <ANNOTATION>
-                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
-                        </ANNOTATION>
-                      </ANNOTATIONS>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Rte_Al_TE_StartApp_StartApp_Cyclic1ms</VALUE-REF>
-                    </ECUC-REFERENCE-VALUE>
-                    <ECUC-REFERENCE-VALUE>
-                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteActivationOsTaskRef</DEFINITION-REF>
-                      <ANNOTATIONS>
-                        <ANNOTATION>
-                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
-                        </ANNOTATION>
-                      </ANNOTATIONS>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Default_Appl_Task</VALUE-REF>
-                    </ECUC-REFERENCE-VALUE>
-                  </REFERENCE-VALUES>
-                </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE UUID="39f13fde-d816-4a7d-a9d0-3bc4b4dea5a2">
                   <SHORT-NAME>Rte_Al_TE_StartApp_StartApp_Cyclic1000ms</SHORT-NAME>
                   <ANNOTATIONS>
@@ -119,45 +80,6 @@
                         </ANNOTATION>
                       </ANNOTATIONS>
                       <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Rte_Al_TE_StartApp_StartApp_Cyclic1000ms</VALUE-REF>
-                    </ECUC-REFERENCE-VALUE>
-                    <ECUC-REFERENCE-VALUE>
-                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteActivationOsTaskRef</DEFINITION-REF>
-                      <ANNOTATIONS>
-                        <ANNOTATION>
-                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
-                        </ANNOTATION>
-                      </ANNOTATIONS>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Default_Appl_Task</VALUE-REF>
-                    </ECUC-REFERENCE-VALUE>
-                  </REFERENCE-VALUES>
-                </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="8e638b76-f1ce-4a73-9580-4f85ce3151de">
-                  <SHORT-NAME>Rte_Al_TE_StartApp_StartApp_Cyclic10ms</SHORT-NAME>
-                  <ANNOTATIONS>
-                    <ANNOTATION>
-                      <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
-                    </ANNOTATION>
-                  </ANNOTATIONS>
-                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation</DEFINITION-REF>
-                  <PARAMETER-VALUES>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteExpectedActivationOffset</DEFINITION-REF>
-                      <VALUE>0</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteExpectedTickDuration</DEFINITION-REF>
-                      <VALUE>0</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
-                  </PARAMETER-VALUES>
-                  <REFERENCE-VALUES>
-                    <ECUC-REFERENCE-VALUE>
-                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteActivationOsAlarmRef</DEFINITION-REF>
-                      <ANNOTATIONS>
-                        <ANNOTATION>
-                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
-                        </ANNOTATION>
-                      </ANNOTATIONS>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Rte_Al_TE_StartApp_StartApp_Cyclic10ms</VALUE-REF>
                     </ECUC-REFERENCE-VALUE>
                     <ECUC-REFERENCE-VALUE>
                       <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteActivationOsTaskRef</DEFINITION-REF>
@@ -236,6 +158,201 @@
                         </ANNOTATION>
                       </ANNOTATIONS>
                       <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteActivationOsTaskRef</DEFINITION-REF>
+                      <ANNOTATIONS>
+                        <ANNOTATION>
+                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                        </ANNOTATION>
+                      </ANNOTATIONS>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Default_BSW_ASync_Task</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="b54da5eb-7c56-453f-b092-5fb2018ab01b">
+                  <SHORT-NAME>Rte_Al_TE_StartApp_StartApp_Cyclic10ms</SHORT-NAME>
+                  <ANNOTATIONS>
+                    <ANNOTATION>
+                      <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                    </ANNOTATION>
+                  </ANNOTATIONS>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteExpectedActivationOffset</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteExpectedTickDuration</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteActivationOsAlarmRef</DEFINITION-REF>
+                      <ANNOTATIONS>
+                        <ANNOTATION>
+                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                        </ANNOTATION>
+                      </ANNOTATIONS>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Rte_Al_TE_StartApp_StartApp_Cyclic10ms</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteActivationOsTaskRef</DEFINITION-REF>
+                      <ANNOTATIONS>
+                        <ANNOTATION>
+                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                        </ANNOTATION>
+                      </ANNOTATIONS>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Default_Appl_Task</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="70c48ae9-c0ea-4c6a-a372-82f722616a36">
+                  <SHORT-NAME>Rte_Al_TE_StartApp_StartApp_Cyclic1ms</SHORT-NAME>
+                  <ANNOTATIONS>
+                    <ANNOTATION>
+                      <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                    </ANNOTATION>
+                  </ANNOTATIONS>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteExpectedActivationOffset</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteExpectedTickDuration</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteActivationOsAlarmRef</DEFINITION-REF>
+                      <ANNOTATIONS>
+                        <ANNOTATION>
+                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                        </ANNOTATION>
+                      </ANNOTATIONS>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Rte_Al_TE_StartApp_StartApp_Cyclic1ms</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteActivationOsTaskRef</DEFINITION-REF>
+                      <ANNOTATIONS>
+                        <ANNOTATION>
+                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                        </ANNOTATION>
+                      </ANNOTATIONS>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Default_Appl_Task</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="68b4aecf-5722-4137-bc77-acd4ef849cd7">
+                  <SHORT-NAME>Rte_Al_TE_MotorCdd_MotorCDDMainFunction</SHORT-NAME>
+                  <ANNOTATIONS>
+                    <ANNOTATION>
+                      <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                    </ANNOTATION>
+                  </ANNOTATIONS>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteExpectedActivationOffset</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteExpectedTickDuration</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteActivationOsAlarmRef</DEFINITION-REF>
+                      <ANNOTATIONS>
+                        <ANNOTATION>
+                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                        </ANNOTATION>
+                      </ANNOTATIONS>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Rte_Al_TE_MotorCdd_MotorCDDMainFunction</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteActivationOsTaskRef</DEFINITION-REF>
+                      <ANNOTATIONS>
+                        <ANNOTATION>
+                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                        </ANNOTATION>
+                      </ANNOTATIONS>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/MotorTask</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="d07f1c1d-61e1-4c7d-954e-b3cdf851d0b7">
+                  <SHORT-NAME>Rte_Al_TE_MotorControll_MotorControll_MainFunction</SHORT-NAME>
+                  <ANNOTATIONS>
+                    <ANNOTATION>
+                      <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                    </ANNOTATION>
+                  </ANNOTATIONS>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteExpectedActivationOffset</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteExpectedTickDuration</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteActivationOsAlarmRef</DEFINITION-REF>
+                      <ANNOTATIONS>
+                        <ANNOTATION>
+                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                        </ANNOTATION>
+                      </ANNOTATIONS>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Rte_Al_TE_MotorControll_MotorControll_MainFunction</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteActivationOsTaskRef</DEFINITION-REF>
+                      <ANNOTATIONS>
+                        <ANNOTATION>
+                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                        </ANNOTATION>
+                      </ANNOTATIONS>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/MotorTask</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="79000a2d-4cad-4bf9-9b43-ff44b9cca582">
+                  <SHORT-NAME>Rte_Al_TE_Spi_Spi_MainFunction_Handling</SHORT-NAME>
+                  <ANNOTATIONS>
+                    <ANNOTATION>
+                      <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                    </ANNOTATION>
+                  </ANNOTATIONS>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteExpectedActivationOffset</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteExpectedTickDuration</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteActivationOsAlarmRef</DEFINITION-REF>
+                      <ANNOTATIONS>
+                        <ANNOTATION>
+                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                        </ANNOTATION>
+                      </ANNOTATIONS>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Rte_Al_TE_Spi_Spi_MainFunction_Handling</VALUE-REF>
                     </ECUC-REFERENCE-VALUE>
                     <ECUC-REFERENCE-VALUE>
                       <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteActivationOsTaskRef</DEFINITION-REF>
@@ -1352,7 +1469,7 @@
                   <PARAMETER-VALUES>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl/RteExclusiveAreaImplMechanism</DEFINITION-REF>
-                      <VALUE>ALL_INTERRUPT_BLOCKING</VALUE>
+                      <VALUE>CUSTOM</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <REFERENCE-VALUES>
@@ -1484,7 +1601,7 @@
                   <PARAMETER-VALUES>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl/RteExclusiveAreaImplMechanism</DEFINITION-REF>
-                      <VALUE>ALL_INTERRUPT_BLOCKING</VALUE>
+                      <VALUE>CUSTOM</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <REFERENCE-VALUES>
@@ -1670,7 +1787,7 @@
                   <PARAMETER-VALUES>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl/RteExclusiveAreaImplMechanism</DEFINITION-REF>
-                      <VALUE>ALL_INTERRUPT_BLOCKING</VALUE>
+                      <VALUE>CUSTOM</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <REFERENCE-VALUES>
@@ -1718,7 +1835,7 @@
                   <PARAMETER-VALUES>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl/RteExclusiveAreaImplMechanism</DEFINITION-REF>
-                      <VALUE>ALL_INTERRUPT_BLOCKING</VALUE>
+                      <VALUE>CUSTOM</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <REFERENCE-VALUES>
@@ -1840,7 +1957,7 @@
                   <PARAMETER-VALUES>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl/RteExclusiveAreaImplMechanism</DEFINITION-REF>
-                      <VALUE>ALL_INTERRUPT_BLOCKING</VALUE>
+                      <VALUE>CUSTOM</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <REFERENCE-VALUES>
@@ -2770,11 +2887,37 @@
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswEventToTaskMapping/RteBswImmediateRestart</DEFINITION-REF>
                       <VALUE>false</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswEventToTaskMapping/RteBswPositionInTask</DEFINITION-REF>
+                      <VALUE>10</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <REFERENCE-VALUES>
                     <ECUC-REFERENCE-VALUE>
                       <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswEventToTaskMapping/RteBswEventRef</DEFINITION-REF>
                       <VALUE-REF DEST="BSW-TIMING-EVENT">/AURIX2G/EcucDefs/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/Spi_MainFunction_HandlingTimingEvent0</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswEventToTaskMapping/RteBswMappedToTaskRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Default_BSW_ASync_Task</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswEventToTaskMapping/RteBswUsedOsEventRef</DEFINITION-REF>
+                      <ANNOTATIONS>
+                        <ANNOTATION>
+                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                        </ANNOTATION>
+                      </ANNOTATIONS>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Rte_Ev_Run_Spi_Spi_MainFunction_Handling</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswEventToTaskMapping/RteBswUsedOsAlarmRef</DEFINITION-REF>
+                      <ANNOTATIONS>
+                        <ANNOTATION>
+                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                        </ANNOTATION>
+                      </ANNOTATIONS>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Rte_Al_TE_Spi_Spi_MainFunction_Handling</VALUE-REF>
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
@@ -3084,20 +3227,8 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-              </SUB-CONTAINERS>
-            </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="7b1fc0c7-5457-44fc-bec7-0a4d46fadbd8">
-              <SHORT-NAME>tle5012BD_CDD_EcuSwComposition</SHORT-NAME>
-              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteSwComponentInstance</DEFINITION-REF>
-              <REFERENCE-VALUES>
-                <ECUC-REFERENCE-VALUE>
-                  <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteSoftwareComponentInstanceRef</DEFINITION-REF>
-                  <VALUE-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/tle5012BD_CDD</VALUE-REF>
-                </ECUC-REFERENCE-VALUE>
-              </REFERENCE-VALUES>
-              <SUB-CONTAINERS>
-                <ECUC-CONTAINER-VALUE UUID="9f2cffb7-3a04-43bf-855f-fb3969861f87">
-                  <SHORT-NAME>tle5012BD_CDD_InitEvent</SHORT-NAME>
+                <ECUC-CONTAINER-VALUE UUID="7c5ecc91-b57d-4fe0-a3a3-ef61beae8907">
+                  <SHORT-NAME>TMT_MotorControll_MainFunction</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -3112,47 +3243,29 @@
                   <REFERENCE-VALUES>
                     <ECUC-REFERENCE-VALUE>
                       <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteEventRef</DEFINITION-REF>
-                      <VALUE-REF DEST="INIT-EVENT">/ComponentTypes/tle5012BD_CDD/tle5012BD_CDD_InternalBehavior/tle5012BD_CDD_InitEvent</VALUE-REF>
+                      <VALUE-REF DEST="TIMING-EVENT">/ComponentTypes/MotorControll/MotorControll_InternalBehavior/TMT_MotorControll_MainFunction</VALUE-REF>
                     </ECUC-REFERENCE-VALUE>
                     <ECUC-REFERENCE-VALUE>
                       <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteMappedToTaskRef</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Default_Appl_Init_Task</VALUE-REF>
-                    </ECUC-REFERENCE-VALUE>
-                  </REFERENCE-VALUES>
-                </ECUC-CONTAINER-VALUE>
-              </SUB-CONTAINERS>
-            </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="6afe9663-852f-4d7f-aad0-39a1a290ff06">
-              <SHORT-NAME>tle9183_CDD_EcuSwComposition</SHORT-NAME>
-              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteSwComponentInstance</DEFINITION-REF>
-              <REFERENCE-VALUES>
-                <ECUC-REFERENCE-VALUE>
-                  <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteSoftwareComponentInstanceRef</DEFINITION-REF>
-                  <VALUE-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/tle9183_CDD</VALUE-REF>
-                </ECUC-REFERENCE-VALUE>
-              </REFERENCE-VALUES>
-              <SUB-CONTAINERS>
-                <ECUC-CONTAINER-VALUE UUID="8ee14f10-e6b5-4054-bdf4-c557e9298aea">
-                  <SHORT-NAME>tle9183_CDD_InitEvent</SHORT-NAME>
-                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping</DEFINITION-REF>
-                  <PARAMETER-VALUES>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteImmediateRestart</DEFINITION-REF>
-                      <VALUE>false</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RtePositionInTask</DEFINITION-REF>
-                      <VALUE>3</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
-                  </PARAMETER-VALUES>
-                  <REFERENCE-VALUES>
-                    <ECUC-REFERENCE-VALUE>
-                      <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteEventRef</DEFINITION-REF>
-                      <VALUE-REF DEST="INIT-EVENT">/ComponentTypes/tle9183_CDD/tle9183_CDD_InternalBehavior/tle9183_CDD_InitEvent</VALUE-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/MotorTask</VALUE-REF>
                     </ECUC-REFERENCE-VALUE>
                     <ECUC-REFERENCE-VALUE>
-                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteMappedToTaskRef</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Default_Appl_Init_Task</VALUE-REF>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteUsedOsEventRef</DEFINITION-REF>
+                      <ANNOTATIONS>
+                        <ANNOTATION>
+                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                        </ANNOTATION>
+                      </ANNOTATIONS>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Rte_Ev_Run_MotorControll_MotorControll_MainFunction</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteUsedOsAlarmRef</DEFINITION-REF>
+                      <ANNOTATIONS>
+                        <ANNOTATION>
+                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                        </ANNOTATION>
+                      </ANNOTATIONS>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Rte_Al_TE_MotorControll_MotorControll_MainFunction</VALUE-REF>
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
@@ -3184,21 +3297,156 @@
                 </ECUC-CONTAINER-VALUE>
               </SUB-CONTAINERS>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="b46443c3-8769-46b5-b7f8-6da2f4f5a34c">
-              <SHORT-NAME>tle5012BD_CDD</SHORT-NAME>
+            <ECUC-CONTAINER-VALUE UUID="a2296ae8-ebb1-45dc-bebc-1becbeda1e7b">
+              <SHORT-NAME>MotorCdd_EcuSwComposition</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteSwComponentInstance</DEFINITION-REF>
+              <REFERENCE-VALUES>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteSoftwareComponentInstanceRef</DEFINITION-REF>
+                  <VALUE-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/MotorCdd</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+              </REFERENCE-VALUES>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="1e80f394-8655-445b-aea2-ee1d5f428d9d">
+                  <SHORT-NAME>TMT_MotorCDDMainFunction</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteImmediateRestart</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RtePositionInTask</DEFINITION-REF>
+                      <VALUE>2</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteEventRef</DEFINITION-REF>
+                      <VALUE-REF DEST="TIMING-EVENT">/ComponentTypes/MotorCdd/MotorCdd_InternalBehavior/TMT_MotorCDDMainFunction</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteMappedToTaskRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/MotorTask</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteUsedOsEventRef</DEFINITION-REF>
+                      <ANNOTATIONS>
+                        <ANNOTATION>
+                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                        </ANNOTATION>
+                      </ANNOTATIONS>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Rte_Ev_Run_MotorCdd_MotorCDDMainFunction</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteUsedOsAlarmRef</DEFINITION-REF>
+                      <ANNOTATIONS>
+                        <ANNOTATION>
+                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                        </ANNOTATION>
+                      </ANNOTATIONS>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Rte_Al_TE_MotorCdd_MotorCDDMainFunction</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="c58ac761-6bfb-461b-9198-1795ddc969d6">
+                  <SHORT-NAME>MotorCdd_InitEvent</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteImmediateRestart</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RtePositionInTask</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteEventRef</DEFINITION-REF>
+                      <VALUE-REF DEST="INIT-EVENT">/ComponentTypes/MotorCdd/MotorCdd_InternalBehavior/MotorCdd_InitEvent</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteMappedToTaskRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Default_Appl_Init_Task</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="96f263cd-df90-40ba-b3f5-2125230b80a5">
+                  <SHORT-NAME>OIT_MotorPp_MotorCdd_EnableInverter_EnableInverterswitch_Pp_MotorCdd_EnableInverter_EnableInverter</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteImmediateRestart</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RtePositionInTask</DEFINITION-REF>
+                      <VALUE>3</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteEventRef</DEFINITION-REF>
+                      <VALUE-REF DEST="OPERATION-INVOKED-EVENT">/ComponentTypes/MotorCdd/MotorCdd_InternalBehavior/OIT_MotorPp_MotorCdd_EnableInverter_EnableInverterswitch_Pp_MotorCdd_EnableInverter_EnableInverter</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteMappedToTaskRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/MotorTask</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="186f2a3d-997f-4e24-bf05-c8c69d051d32">
+                  <SHORT-NAME>EXTO_MotorCdd_AdcOnSampleReady_If_AdcSampleReady_Rp_AdcSampleReady</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteImmediateRestart</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RtePositionInTask</DEFINITION-REF>
+                      <VALUE>4</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteEventRef</DEFINITION-REF>
+                      <VALUE-REF DEST="EXTERNAL-TRIGGER-OCCURRED-EVENT">/ComponentTypes/MotorCdd/MotorCdd_InternalBehavior/EXTO_MotorCdd_AdcOnSampleReady_If_AdcSampleReady_Rp_AdcSampleReady</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteMappedToTaskRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/MotorTask</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteUsedOsEventRef</DEFINITION-REF>
+                      <ANNOTATIONS>
+                        <ANNOTATION>
+                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                        </ANNOTATION>
+                      </ANNOTATIONS>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Rte_Ev_Run_MotorCdd_MotorCdd_AdcOnSampleReady_Rp_AdcSampleReady_AdcSampleReady</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="a25e4c3f-cd26-4245-b619-e050f1220e79">
+              <SHORT-NAME>MotorCdd</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteSwComponentType</DEFINITION-REF>
               <REFERENCE-VALUES>
                 <ECUC-REFERENCE-VALUE>
                   <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentType/RteComponentTypeRef</DEFINITION-REF>
-                  <VALUE-REF DEST="COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE">/ComponentTypes/tle5012BD_CDD</VALUE-REF>
+                  <VALUE-REF DEST="COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE">/ComponentTypes/MotorCdd</VALUE-REF>
                 </ECUC-REFERENCE-VALUE>
                 <ECUC-REFERENCE-VALUE>
                   <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentType/RteImplementationRef</DEFINITION-REF>
-                  <VALUE-REF DEST="SWC-IMPLEMENTATION">/ComponentTypes/tle5012BD_CDD_Implementation</VALUE-REF>
+                  <VALUE-REF DEST="SWC-IMPLEMENTATION">/ComponentTypes/MotorCdd_Implementation</VALUE-REF>
                 </ECUC-REFERENCE-VALUE>
               </REFERENCE-VALUES>
               <SUB-CONTAINERS>
-                <ECUC-CONTAINER-VALUE UUID="228a32b6-c0ae-4144-92c8-8e36884514bd">
+                <ECUC-CONTAINER-VALUE UUID="b7a55794-dda7-4ff5-9c1a-3a6d222f8fdd">
                   <SHORT-NAME>ComponentTypeCalibration</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteSwComponentType/RteComponentTypeCalibration</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -3210,29 +3458,99 @@
                 </ECUC-CONTAINER-VALUE>
               </SUB-CONTAINERS>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="8a406859-e417-4ce1-8808-c23c0f18002a">
-              <SHORT-NAME>tle9183_CDD</SHORT-NAME>
-              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteSwComponentType</DEFINITION-REF>
+            <ECUC-CONTAINER-VALUE UUID="ce89af6b-0ef4-4fc4-974e-3531d9c67dcc">
+              <SHORT-NAME>Sbc</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance</DEFINITION-REF>
               <REFERENCE-VALUES>
                 <ECUC-REFERENCE-VALUE>
-                  <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentType/RteComponentTypeRef</DEFINITION-REF>
-                  <VALUE-REF DEST="COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE">/ComponentTypes/tle9183_CDD</VALUE-REF>
+                  <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswImplementationRef</DEFINITION-REF>
+                  <VALUE-REF DEST="BSW-IMPLEMENTATION">/MICROSAR/Sbc_Tlf35584/Sbc_Impl</VALUE-REF>
                 </ECUC-REFERENCE-VALUE>
                 <ECUC-REFERENCE-VALUE>
-                  <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentType/RteImplementationRef</DEFINITION-REF>
-                  <VALUE-REF DEST="SWC-IMPLEMENTATION">/ComponentTypes/tle9183_CDD_Implementation</VALUE-REF>
+                  <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswModuleConfigurationRef</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-MODULE-CONFIGURATION-VALUES">/ActiveEcuC/Sbc</VALUE-REF>
                 </ECUC-REFERENCE-VALUE>
               </REFERENCE-VALUES>
               <SUB-CONTAINERS>
-                <ECUC-CONTAINER-VALUE UUID="264840c4-60bb-41cf-a2ee-5ca5e641d875">
-                  <SHORT-NAME>ComponentTypeCalibration</SHORT-NAME>
-                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteSwComponentType/RteComponentTypeCalibration</DEFINITION-REF>
+                <ECUC-CONTAINER-VALUE UUID="592174b5-56fa-4b53-b01c-7d35c8d9bb18">
+                  <SHORT-NAME>SBC_EXCLUSIVE_AREA_0</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Rte/RteSwComponentType/RteComponentTypeCalibration/RteCalibrationSupportEnabled</DEFINITION-REF>
-                      <VALUE>false</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl/RteExclusiveAreaImplMechanism</DEFINITION-REF>
+                      <VALUE>ALL_INTERRUPT_BLOCKING</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl/RteBswExclusiveAreaRef</DEFINITION-REF>
+                      <VALUE-REF DEST="EXCLUSIVE-AREA">/MICROSAR/Sbc_ib_bswmd/BswModuleDescriptions/Sbc/Sbc_Behavior/SBC_EXCLUSIVE_AREA_0</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="771a5dbb-b96e-450d-8111-0cf0214cce5c">
+                  <SHORT-NAME>SBC_EXCLUSIVE_AREA_1</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl/RteExclusiveAreaImplMechanism</DEFINITION-REF>
+                      <VALUE>ALL_INTERRUPT_BLOCKING</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl/RteBswExclusiveAreaRef</DEFINITION-REF>
+                      <VALUE-REF DEST="EXCLUSIVE-AREA">/MICROSAR/Sbc_ib_bswmd/BswModuleDescriptions/Sbc/Sbc_Behavior/SBC_EXCLUSIVE_AREA_1</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="d9519d32-7e37-4e2f-8c02-df0b0e3e7d5b">
+                  <SHORT-NAME>SBC_EXCLUSIVE_AREA_2</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl/RteExclusiveAreaImplMechanism</DEFINITION-REF>
+                      <VALUE>ALL_INTERRUPT_BLOCKING</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl/RteBswExclusiveAreaRef</DEFINITION-REF>
+                      <VALUE-REF DEST="EXCLUSIVE-AREA">/MICROSAR/Sbc_ib_bswmd/BswModuleDescriptions/Sbc/Sbc_Behavior/SBC_EXCLUSIVE_AREA_2</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="040de803-9bfc-4616-8db3-b00ca607d739">
+                  <SHORT-NAME>SBC_EXCLUSIVE_AREA_3</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl/RteExclusiveAreaImplMechanism</DEFINITION-REF>
+                      <VALUE>ALL_INTERRUPT_BLOCKING</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl/RteBswExclusiveAreaRef</DEFINITION-REF>
+                      <VALUE-REF DEST="EXCLUSIVE-AREA">/MICROSAR/Sbc_ib_bswmd/BswModuleDescriptions/Sbc/Sbc_Behavior/SBC_EXCLUSIVE_AREA_3</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="74cdb782-6516-49a3-8507-a92489207764">
+                  <SHORT-NAME>SBC_EXCLUSIVE_AREA_4</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl/RteExclusiveAreaImplMechanism</DEFINITION-REF>
+                      <VALUE>ALL_INTERRUPT_BLOCKING</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl/RteBswExclusiveAreaRef</DEFINITION-REF>
+                      <VALUE-REF DEST="EXCLUSIVE-AREA">/MICROSAR/Sbc_ib_bswmd/BswModuleDescriptions/Sbc/Sbc_Behavior/SBC_EXCLUSIVE_AREA_4</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
               </SUB-CONTAINERS>
             </ECUC-CONTAINER-VALUE>

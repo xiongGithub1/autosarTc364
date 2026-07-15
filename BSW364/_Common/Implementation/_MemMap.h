@@ -2288,6 +2288,15 @@
 
 /*******  CODE sections **********************************************************************************************/
 
+#ifdef SBC_30_TLF35584_START_SEC_CODE
+  #undef SBC_30_TLF35584_START_SEC_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
+  #define START_SEC_CODE      /* mapped to default code section */
+#endif
+#ifdef SBC_30_TLF35584_STOP_SEC_CODE
+  #undef SBC_30_TLF35584_STOP_SEC_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
+  #define STOP_SEC_CODE      /* default code stop section */
+#endif
+
 #ifdef SBC_30_FS6500_START_SEC_CODE
   #undef SBC_30_FS6500_START_SEC_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
   #define START_SEC_CODE      /* mapped to default code section */
@@ -2319,6 +2328,15 @@
 /*******  CONST sections  ********************************************************************************************/
 
 /* CONST sections */
+
+#ifdef SBC_30_TLF35584_START_SEC_CONST_UNSPECIFIED
+# undef SBC_30_TLF35584_START_SEC_CONST_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
+# define START_SEC_CONST_UNSPECIFIED
+#endif
+#ifdef SBC_30_TLF35584_STOP_SEC_CONST_UNSPECIFIED
+# undef SBC_30_TLF35584_STOP_SEC_CONST_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
+# define STOP_SEC_CONST
+#endif
 
 #ifdef SBC_30_FS6500_START_SEC_CONST_8BIT
 # undef SBC_30_FS6500_START_SEC_CONST_8BIT /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -2433,6 +2451,15 @@
 
 /* VAR INIT sections */
 
+#ifdef SBC_30_TLF35584_START_SEC_VAR_INIT_8BIT
+# undef SBC_30_TLF35584_START_SEC_VAR_INIT_8BIT /* PRQA S 0841 */ /* MD_MSR_Undef */
+# define START_SEC_VAR_INIT_8BIT
+#endif
+#ifdef SBC_30_TLF35584_STOP_SEC_VAR_INIT_8BIT
+# undef SBC_30_TLF35584_STOP_SEC_VAR_INIT_8BIT /* PRQA S 0841 */ /* MD_MSR_Undef */
+# define STOP_SEC_VAR
+#endif
+
 #ifdef SBC_30_FS6500_START_SEC_VAR_INIT_8BIT
 # undef SBC_30_FS6500_START_SEC_VAR_INIT_8BIT /* PRQA S 0841 */ /* MD_MSR_Undef */
 # define START_SEC_VAR_INIT_8BIT      /* mapped to default var init 8bit section */
@@ -2471,6 +2498,42 @@
 
 
 /* VAR NOINIT sections */
+
+#ifdef SBC_30_TLF35584_START_SEC_VAR_NOINIT_8BIT
+# undef SBC_30_TLF35584_START_SEC_VAR_NOINIT_8BIT /* PRQA S 0841 */ /* MD_MSR_Undef */
+# define START_SEC_VAR_NOINIT_8BIT
+#endif
+#ifdef SBC_30_TLF35584_STOP_SEC_VAR_NOINIT_8BIT
+# undef SBC_30_TLF35584_STOP_SEC_VAR_NOINIT_8BIT /* PRQA S 0841 */ /* MD_MSR_Undef */
+# define STOP_SEC_VAR
+#endif
+
+#ifdef SBC_30_TLF35584_START_SEC_VAR_NOINIT_32BIT
+# undef SBC_30_TLF35584_START_SEC_VAR_NOINIT_32BIT /* PRQA S 0841 */ /* MD_MSR_Undef */
+# define START_SEC_VAR_NOINIT_32BIT
+#endif
+#ifdef SBC_30_TLF35584_STOP_SEC_VAR_NOINIT_32BIT
+# undef SBC_30_TLF35584_STOP_SEC_VAR_NOINIT_32BIT /* PRQA S 0841 */ /* MD_MSR_Undef */
+# define STOP_SEC_VAR
+#endif
+
+#ifdef SBC_30_TLF35584_START_SEC_VAR_NOINIT_SAFE
+# undef SBC_30_TLF35584_START_SEC_VAR_NOINIT_SAFE /* PRQA S 0841 */ /* MD_MSR_Undef */
+# define START_SEC_VAR_NOINIT_32BIT
+#endif
+#ifdef SBC_30_TLF35584_STOP_SEC_VAR_NOINIT_SAFE
+# undef SBC_30_TLF35584_STOP_SEC_VAR_NOINIT_SAFE /* PRQA S 0841 */ /* MD_MSR_Undef */
+# define STOP_SEC_VAR
+#endif
+
+#ifdef SBC_30_TLF35584_START_SEC_VAR_NOINIT_UNSPECIFIED
+# undef SBC_30_TLF35584_START_SEC_VAR_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
+# define START_SEC_VAR_NOINIT_UNSPECIFIED
+#endif
+#ifdef SBC_30_TLF35584_STOP_SEC_VAR_NOINIT_UNSPECIFIED
+# undef SBC_30_TLF35584_STOP_SEC_VAR_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
+# define STOP_SEC_VAR
+#endif
 
 #ifdef SBC_30_FS6500_START_SEC_VAR_NOINIT_8BIT
 # undef SBC_30_FS6500_START_SEC_VAR_NOINIT_8BIT /* PRQA S 0841 */ /* MD_MSR_Undef */

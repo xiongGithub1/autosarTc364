@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 32.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-07-06, 16:21:29       !!!IGNORE-LINE!!!                  **
+**  DATE, TIME: 2024-07-14, 21:03:43       !!!IGNORE-LINE!!!                  **
 **                                                                            **
 **  GENERATOR : Build b191017-0938           !!!IGNORE-LINE!!!                **
 **                                                                            **
@@ -213,7 +213,7 @@ static const Mcu_GtmClusterConfigType Mcu_kGtmClusterConfigPtr_Config[4] =
   /*GTM Cluster_0 configuration*/
   {
     /*GTM cluster TIM/TOM/ATOM enable settings*/
-    0x00000002U,
+    0x00000004U,
     /*GTM cluster config clock settings*/
     0x00000000U,
     /*GTM cluster fixed clock settings*/
@@ -327,7 +327,7 @@ static const Mcu_GtmConfigType Mcu_kGtmConfiguration_Config =
     /*Configuration of Gtm Adc trigger 0*/
     {
       /*GtmAdcOut0 value*/
-      0x00000000U,
+      0x00000008U,
       /*GtmAdcOut1 value */
       0x00000000U
     },    /*Configuration of Gtm Adc trigger 1*/
@@ -387,7 +387,7 @@ static const Mcu_GtmConfigType Mcu_kGtmConfiguration_Config =
   {
     /*Configuration of ToutSel*/
     /*Toutsel 0 value*/
-    0x00000000U,
+    0x02222220U,
     /*Toutsel 1 value*/
     0x00000000U,
     /*Toutsel 2 value*/
@@ -471,9 +471,9 @@ static const Mcu_GtmConfigType Mcu_kGtmConfiguration_Config =
   /*Configuration for TBU channel - GtmTbuCfg (GtmTbuChannelConf)*/
   0x00000000U,
   /* TOM modules used configuration */
-  0x0001U,
-  /* ATOM modules used configuration */
   0x0000U,
+  /* ATOM modules used configuration */
+  0x0001U,
   /* Gtm sleep mode configuration */
   (boolean)FALSE
 };

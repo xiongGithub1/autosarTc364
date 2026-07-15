@@ -28,6 +28,20 @@
  *
  * Not configured:
  *
+ *  Rte_CallHook_MotorControll_Pp_MotorCdd_EnableInverter_EnableInverter_Return
+ *  Rte_CallHook_MotorControll_Pp_MotorCdd_EnableInverter_EnableInverter_Start
+ *  Rte_ReadHook_MotorCdd_Pp_MotorCtrlCmd_MotorMode_Return
+ *  Rte_ReadHook_MotorCdd_Pp_MotorCtrlCmd_MotorMode_Start
+ *  Rte_ReadHook_MotorCdd_Pp_MotorCurrentRef_Id_Ref_Return
+ *  Rte_ReadHook_MotorCdd_Pp_MotorCurrentRef_Id_Ref_Start
+ *  Rte_ReadHook_MotorCdd_Pp_MotorCurrentRef_Iq_Ref_Return
+ *  Rte_ReadHook_MotorCdd_Pp_MotorCurrentRef_Iq_Ref_Start
+ *  Rte_ReadHook_MotorControll_Pp_MotorDcBusVoltage_Vbus_Return
+ *  Rte_ReadHook_MotorControll_Pp_MotorDcBusVoltage_Vbus_Start
+ *  Rte_ReadHook_MotorControll_Pp_MotorElectricalAngle_ElectricAngle_Return
+ *  Rte_ReadHook_MotorControll_Pp_MotorElectricalAngle_ElectricAngle_Start
+ *  Rte_ReadHook_MotorControll_Pp_MotorFaultStatus_tle9180_Ov_Fault_Return
+ *  Rte_ReadHook_MotorControll_Pp_MotorFaultStatus_tle9180_Ov_Fault_Start
  *  Rte_Runnable_BswM_BswM_MainFunction_Return
  *  Rte_Runnable_BswM_BswM_MainFunction_Start
  *  Rte_Runnable_ComM_ComM_MainFunction_0_Return
@@ -80,8 +94,18 @@
  *  Rte_Runnable_EcuM_SelectShutdownCause_Start
  *  Rte_Runnable_EcuM_SelectShutdownTarget_Return
  *  Rte_Runnable_EcuM_SelectShutdownTarget_Start
+ *  Rte_Runnable_MotorCdd_MotorCDDMainFunction_Return
+ *  Rte_Runnable_MotorCdd_MotorCDDMainFunction_Start
+ *  Rte_Runnable_MotorCdd_MotorCdd_AdcOnSampleReady_Return
+ *  Rte_Runnable_MotorCdd_MotorCdd_AdcOnSampleReady_Start
+ *  Rte_Runnable_MotorCdd_MotorCdd_Init_Return
+ *  Rte_Runnable_MotorCdd_MotorCdd_Init_Start
+ *  Rte_Runnable_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter_Return
+ *  Rte_Runnable_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter_Start
  *  Rte_Runnable_MotorControll_MotorControll_Init_Return
  *  Rte_Runnable_MotorControll_MotorControll_Init_Start
+ *  Rte_Runnable_MotorControll_MotorControll_MainFunction_Return
+ *  Rte_Runnable_MotorControll_MotorControll_MainFunction_Start
  *  Rte_Runnable_Os_OsCore0_swc_GetCounterValue_Return
  *  Rte_Runnable_Os_OsCore0_swc_GetCounterValue_Start
  *  Rte_Runnable_Os_OsCore0_swc_GetElapsedValue_Return
@@ -96,19 +120,30 @@
  *  Rte_Runnable_StartApp_StartApp_Cyclic250ms_Start
  *  Rte_Runnable_StartApp_StartApp_Init_Return
  *  Rte_Runnable_StartApp_StartApp_Init_Start
- *  Rte_Runnable_tle5012BD_CDD_tle5012BD_CDD_Init_Return
- *  Rte_Runnable_tle5012BD_CDD_tle5012BD_CDD_Init_Start
- *  Rte_Runnable_tle9183_CDD_tle9183_CDD_Init_Return
- *  Rte_Runnable_tle9183_CDD_tle9183_CDD_Init_Start
  *  Rte_SwitchAckHook_EcuM_currentMode_currentMode_Return
  *  Rte_SwitchAckHook_EcuM_currentMode_currentMode_Start
  *  Rte_SwitchHook_EcuM_currentMode_currentMode_Return
  *  Rte_SwitchHook_EcuM_currentMode_currentMode_Start
  *  Rte_Task_Activate
  *  Rte_Task_Dispatch
+ *  Rte_Task_SetEvent
  *  Rte_Task_Terminate
  *  Rte_Task_WaitEvent
  *  Rte_Task_WaitEventRet
+ *  Rte_TriggerHook_MotorCdd_Rp_AdcSampleReady_AdcSampleReady_Return
+ *  Rte_TriggerHook_MotorCdd_Rp_AdcSampleReady_AdcSampleReady_Start
+ *  Rte_WriteHook_MotorCdd_Pp_MotorDcBusVoltage_Vbus_Return
+ *  Rte_WriteHook_MotorCdd_Pp_MotorDcBusVoltage_Vbus_Start
+ *  Rte_WriteHook_MotorCdd_Pp_MotorElectricalAngle_ElectricAngle_Return
+ *  Rte_WriteHook_MotorCdd_Pp_MotorElectricalAngle_ElectricAngle_Start
+ *  Rte_WriteHook_MotorCdd_Pp_MotorFaultStatus_tle9180_Ov_Fault_Return
+ *  Rte_WriteHook_MotorCdd_Pp_MotorFaultStatus_tle9180_Ov_Fault_Start
+ *  Rte_WriteHook_MotorControll_Pp_MotorCtrlCmd_MotorMode_Return
+ *  Rte_WriteHook_MotorControll_Pp_MotorCtrlCmd_MotorMode_Start
+ *  Rte_WriteHook_MotorControll_Pp_MotorCurrentRef_Id_Ref_Return
+ *  Rte_WriteHook_MotorControll_Pp_MotorCurrentRef_Id_Ref_Start
+ *  Rte_WriteHook_MotorControll_Pp_MotorCurrentRef_Iq_Ref_Return
+ *  Rte_WriteHook_MotorControll_Pp_MotorCurrentRef_Iq_Ref_Start
  *  SchM_EnterHook_Adc_KernelData_Return
  *  SchM_EnterHook_Adc_KernelData_Start
  *  SchM_EnterHook_Adc_SrcRegAccess_Return
@@ -227,6 +262,16 @@
  *  SchM_EnterHook_Pwm_17_GtmCcu6_HandleNotification_Start
  *  SchM_EnterHook_Pwm_17_GtmCcu6_PeriodAndDutyUpdate_Return
  *  SchM_EnterHook_Pwm_17_GtmCcu6_PeriodAndDutyUpdate_Start
+ *  SchM_EnterHook_Sbc_30_Tlf35584_SBC_EXCLUSIVE_AREA_0_Return
+ *  SchM_EnterHook_Sbc_30_Tlf35584_SBC_EXCLUSIVE_AREA_0_Start
+ *  SchM_EnterHook_Sbc_30_Tlf35584_SBC_EXCLUSIVE_AREA_1_Return
+ *  SchM_EnterHook_Sbc_30_Tlf35584_SBC_EXCLUSIVE_AREA_1_Start
+ *  SchM_EnterHook_Sbc_30_Tlf35584_SBC_EXCLUSIVE_AREA_2_Return
+ *  SchM_EnterHook_Sbc_30_Tlf35584_SBC_EXCLUSIVE_AREA_2_Start
+ *  SchM_EnterHook_Sbc_30_Tlf35584_SBC_EXCLUSIVE_AREA_3_Return
+ *  SchM_EnterHook_Sbc_30_Tlf35584_SBC_EXCLUSIVE_AREA_3_Start
+ *  SchM_EnterHook_Sbc_30_Tlf35584_SBC_EXCLUSIVE_AREA_4_Return
+ *  SchM_EnterHook_Sbc_30_Tlf35584_SBC_EXCLUSIVE_AREA_4_Start
  *  SchM_EnterHook_Spi_Buffer_Update_Return
  *  SchM_EnterHook_Spi_Buffer_Update_Start
  *  SchM_EnterHook_Spi_Cancel_Seq_Return
@@ -367,6 +412,16 @@
  *  SchM_ExitHook_Pwm_17_GtmCcu6_HandleNotification_Start
  *  SchM_ExitHook_Pwm_17_GtmCcu6_PeriodAndDutyUpdate_Return
  *  SchM_ExitHook_Pwm_17_GtmCcu6_PeriodAndDutyUpdate_Start
+ *  SchM_ExitHook_Sbc_30_Tlf35584_SBC_EXCLUSIVE_AREA_0_Return
+ *  SchM_ExitHook_Sbc_30_Tlf35584_SBC_EXCLUSIVE_AREA_0_Start
+ *  SchM_ExitHook_Sbc_30_Tlf35584_SBC_EXCLUSIVE_AREA_1_Return
+ *  SchM_ExitHook_Sbc_30_Tlf35584_SBC_EXCLUSIVE_AREA_1_Start
+ *  SchM_ExitHook_Sbc_30_Tlf35584_SBC_EXCLUSIVE_AREA_2_Return
+ *  SchM_ExitHook_Sbc_30_Tlf35584_SBC_EXCLUSIVE_AREA_2_Start
+ *  SchM_ExitHook_Sbc_30_Tlf35584_SBC_EXCLUSIVE_AREA_3_Return
+ *  SchM_ExitHook_Sbc_30_Tlf35584_SBC_EXCLUSIVE_AREA_3_Start
+ *  SchM_ExitHook_Sbc_30_Tlf35584_SBC_EXCLUSIVE_AREA_4_Return
+ *  SchM_ExitHook_Sbc_30_Tlf35584_SBC_EXCLUSIVE_AREA_4_Start
  *  SchM_ExitHook_Spi_Buffer_Update_Return
  *  SchM_ExitHook_Spi_Buffer_Update_Start
  *  SchM_ExitHook_Spi_Cancel_Seq_Return

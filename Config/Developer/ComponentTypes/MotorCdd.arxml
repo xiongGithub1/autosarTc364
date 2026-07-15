@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was saved with a tool from Vector Informatik GmbH-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="3433654A-40AF-4F1C-B6CF-A768EF928CA1">
+      <SHORT-NAME>ComponentTypes</SHORT-NAME>
+      <ELEMENTS>
+        <COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE UUID="DDB51183-A4A0-4CF7-8D93-67E5AED5EB0A">
+          <SHORT-NAME>MotorCdd</SHORT-NAME>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="297647B1-8C67-483A-A292-BE664D1E51C1">
+              <SHORT-NAME>Pp_MotorElectricalAngle</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorElectricalAngle/ElectricAngle</DATA-ELEMENT-REF>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <VALUE>0</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/Pp_MotorElectricalAngle</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="219C536B-9D97-4D96-9CA4-531D79B2F79A">
+              <SHORT-NAME>Pp_MotorDcBusVoltage</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorDcBusVoltage/Vbus</DATA-ELEMENT-REF>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <VALUE>0</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/Pp_MotorDcBusVoltage</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="1E89D124-96FA-4456-BFA7-5DEF77463578">
+              <SHORT-NAME>Pp_MotorFaultStatus</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorFaultStatus/tle9180_Ov_Fault</DATA-ELEMENT-REF>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <VALUE>0</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/Pp_MotorFaultStatus</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="0689BD48-66C5-4438-9951-47AAB4E0FC99">
+              <SHORT-NAME>Pp_MotorCdd_EnableInverter</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/Pp_MotorCdd_EnableInverter/EnableInverter</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterfaces/Pp_MotorCdd_EnableInverter</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="810FFA4D-EAB9-444C-805E-54A81ADC4D63">
+              <SHORT-NAME>Pp_MotorCurrentRef</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorCurrentRef/Iq_Ref</DATA-ELEMENT-REF>
+                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                  <FILTER>
+                    <DATA-FILTER-TYPE>ALWAYS</DATA-FILTER-TYPE>
+                  </FILTER>
+                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <VALUE>0</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorCurrentRef/Id_Ref</DATA-ELEMENT-REF>
+                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                  <FILTER>
+                    <DATA-FILTER-TYPE>ALWAYS</DATA-FILTER-TYPE>
+                  </FILTER>
+                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <VALUE>0</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/Pp_MotorCurrentRef</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="705495EB-8234-431D-B57A-011F28CE3A25">
+              <SHORT-NAME>Pp_MotorCtrlCmd</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorCtrlCmd/MotorMode</DATA-ELEMENT-REF>
+                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                  <FILTER>
+                    <DATA-FILTER-TYPE>ALWAYS</DATA-FILTER-TYPE>
+                  </FILTER>
+                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <VALUE>0</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/Pp_MotorCtrlCmd</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="DDDC8C7A-B655-4AB8-A799-19C0640369A1">
+              <SHORT-NAME>Rp_AdcSampleReady</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <REQUIRED-INTERFACE-TREF DEST="TRIGGER-INTERFACE">/PortInterfaces/Rp_AdcSampleReady</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="795A095A-7854-4B53-96E2-D9C3CB244971">
+              <SHORT-NAME>MotorCdd_InternalBehavior</SHORT-NAME>
+              <DATA-TYPE-MAPPING-REFS>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/ComponentTypes/DataTypeMappingSets/MotorDataTypeMappingSet</DATA-TYPE-MAPPING-REF>
+              </DATA-TYPE-MAPPING-REFS>
+              <EVENTS>
+                <TIMING-EVENT UUID="47558303-BA16-4670-9571-1514BAB7709D">
+                  <SHORT-NAME>TMT_MotorCDDMainFunction</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/MotorCdd/MotorCdd_InternalBehavior/MotorCDDMainFunction</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+                <INIT-EVENT UUID="C4B696F4-986D-415E-8BE8-5CF575C9F1C9">
+                  <SHORT-NAME>MotorCdd_InitEvent</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/MotorCdd/MotorCdd_InternalBehavior/MotorCdd_Init</START-ON-EVENT-REF>
+                </INIT-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="D34A5137-1400-4A42-B44C-CD4B7475A8ED">
+                  <SHORT-NAME>OIT_MotorPp_MotorCdd_EnableInverter_EnableInverterswitch_Pp_MotorCdd_EnableInverter_EnableInverter</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/MotorCdd/MotorCdd_InternalBehavior/Pp_MotorCdd_EnableInverter_EnableInverter</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorCdd_EnableInverter</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/Pp_MotorCdd_EnableInverter/EnableInverter</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <EXTERNAL-TRIGGER-OCCURRED-EVENT UUID="86A8EDB3-572C-4B4A-9168-6170322AED15">
+                  <SHORT-NAME>EXTO_MotorCdd_AdcOnSampleReady_If_AdcSampleReady_Rp_AdcSampleReady</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/MotorCdd/MotorCdd_InternalBehavior/MotorCdd_AdcOnSampleReady</START-ON-EVENT-REF>
+                  <TRIGGER-IREF>
+                    <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Rp_AdcSampleReady</CONTEXT-R-PORT-REF>
+                    <TARGET-TRIGGER-REF DEST="TRIGGER">/PortInterfaces/Rp_AdcSampleReady/AdcSampleReady</TARGET-TRIGGER-REF>
+                  </TRIGGER-IREF>
+                </EXTERNAL-TRIGGER-OCCURRED-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="78D93A0C-0CF9-43BC-AA7C-681B141BF769">
+                  <SHORT-NAME>MotorCDDMainFunction</SHORT-NAME>
+                  <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                    <VARIABLE-ACCESS UUID="1AC6D6C9-F384-431E-AC62-BB412587F341">
+                      <SHORT-NAME>REC_Pp_MotorCtrlCmd_MotorMode</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorCtrlCmd</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorCtrlCmd/MotorMode</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="D2007F7D-46EC-40F7-86CE-7861E46C7E3B">
+                      <SHORT-NAME>REC_Pp_MotorCurrentRef_Id_Ref</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorCurrentRef</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorCurrentRef/Id_Ref</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="80930CEB-37AF-437B-A70F-9D73B0A0AD16">
+                      <SHORT-NAME>REC_Pp_MotorCurrentRef_Iq_Ref</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorCurrentRef</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorCurrentRef/Iq_Ref</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                  <DATA-SEND-POINTS>
+                    <VARIABLE-ACCESS UUID="C5C6319A-8B90-4380-A99D-A21C494176D2">
+                      <SHORT-NAME>SEND_Pp_MotorFaultStatus_tle9180_Ov_Fault</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorFaultStatus</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorFaultStatus/tle9180_Ov_Fault</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="70D3B98E-41C5-43F9-9A35-EDC87E2FDA99">
+                      <SHORT-NAME>SEND_Pp_MotorDcBusVoltage_Vbus</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorDcBusVoltage</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorDcBusVoltage/Vbus</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="B46D0099-E18D-4351-A178-C2899F7D59A2">
+                      <SHORT-NAME>SEND_Pp_MotorElectricalAngle_ElectricAngle</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorElectricalAngle</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorElectricalAngle/ElectricAngle</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-SEND-POINTS>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="3449F2B9-99EA-4104-B975-7A667E1F1480">
+                  <SHORT-NAME>MotorCdd_Init</SHORT-NAME>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="edve:RunnableKind">
+                        <SD>InitRunnable</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="EAA32CA4-C54C-4A6C-A44B-13B97FD5BE5A">
+                  <SHORT-NAME>Pp_MotorCdd_EnableInverter_EnableInverter</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="766EB97D-3052-4EA3-B6E2-670FA94A7F82">
+                  <SHORT-NAME>MotorCdd_AdcOnSampleReady</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE>
+        <SWC-IMPLEMENTATION UUID="9BF6B688-9E84-4E91-8D9E-DD2FF580ABEC">
+          <SHORT-NAME>MotorCdd_Implementation</SHORT-NAME>
+          <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ComponentTypes/MotorCdd/MotorCdd_InternalBehavior</BEHAVIOR-REF>
+        </SWC-IMPLEMENTATION>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

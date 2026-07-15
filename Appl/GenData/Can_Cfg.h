@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Can_Cfg.h
- *   Generation Time: 2026-07-02 17:21:47
+ *   Generation Time: 2024-07-09 14:04:09
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -271,7 +271,7 @@
 #define CAN_SAFE_BSW                         STD_OFF
 
 /* Interrupt / Polling */
-#define CAN_TX_PROCESSING                    CAN_POLLING   /* CAN318_Conf */
+#define CAN_TX_PROCESSING                    CAN_INTERRUPT   /* CAN318_Conf */
 #define CAN_RX_PROCESSING                    CAN_INTERRUPT   /* CAN317_Conf */
 #define CAN_BUSOFF_PROCESSING                CAN_INTERRUPT   /* CAN314_Conf */
 #define CAN_WAKEUP_PROCESSING                CAN_INTERRUPT   /* CAN319_Conf */
@@ -302,16 +302,16 @@
 #define CAN_WAKEUP_SUPPORT                   STD_OFF   /* CAN330_Conf */
 
 /* Hardware loop check */
-#define CAN_HARDWARE_CANCELLATION            STD_ON
+#define CAN_HARDWARE_CANCELLATION            STD_OFF
 #define CAN_TIMEOUT_DURATION                 10u   /* CAN113_Conf */
 #define CAN_LOOP_MAX                         7u
 
 /* Appl calls */
-#define CAN_HW_LOOP_SUPPORT_API              STD_ON
+#define CAN_HW_LOOP_SUPPORT_API              STD_OFF
 #define CAN_GENERIC_PRECOPY                  STD_OFF
 #define CAN_GENERIC_CONFIRMATION             STD_OFF
 #define CAN_GENERIC_PRETRANSMIT              STD_OFF
-#define CAN_USE_OS_INTERRUPT_CONTROL         STD_OFF
+#define CAN_USE_OS_INTERRUPT_CONTROL         STD_ON
 
 /* Optimization */
 #define CAN_RX_FULLCAN_OBJECTS               STD_OFF
@@ -549,7 +549,6 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define CAN_PREVMODEOFCONTROLLERDATA                                                                STD_ON
 #define CAN_RAMCHECKTRANSITIONREQUESTOFCONTROLLERDATA                                               STD_ON
 #define CAN_TXBCROFCONTROLLERDATA                                                                   STD_ON
-#define CAN_TXBCRWAITOFCONTROLLERDATA                                                               STD_ON
 #define CAN_TXBRPOFCONTROLLERDATA                                                                   STD_ON
 #define CAN_FBTP                                                                                    STD_ON
 #define CAN_FINALMAGICNUMBER                                                                        STD_OFF  /**< Deactivateable: 'Can_FinalMagicNumber' Reason: 'the module configuration does not support flashing of data.' */
@@ -560,6 +559,7 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define CAN_INITOBJECTBAUDRATE                                                                      STD_ON
 #define CAN_INITOBJECTFDBRSCONFIG                                                                   STD_ON
 #define CAN_INITOBJECTSTARTINDEX                                                                    STD_ON
+#define CAN_ISROSID                                                                                 STD_ON
 #define CAN_MAILBOX                                                                                 STD_ON
 #define CAN_ACTIVESENDOBJECTOFMAILBOX                                                               STD_ON
 #define CAN_CONTROLLERCONFIGIDXOFMAILBOX                                                            STD_ON
@@ -615,6 +615,7 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define CAN_SIZEOFINITOBJECTBAUDRATE                                                                STD_ON
 #define CAN_SIZEOFINITOBJECTFDBRSCONFIG                                                             STD_ON
 #define CAN_SIZEOFINITOBJECTSTARTINDEX                                                              STD_ON
+#define CAN_SIZEOFISROSID                                                                           STD_ON
 #define CAN_SIZEOFMAILBOX                                                                           STD_ON
 #define CAN_SIZEOFMEMORYSECTIONINFO                                                                 STD_ON
 #define CAN_SIZEOFMEMORYSECTIONOBJECTS                                                              STD_ON
@@ -662,6 +663,7 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define CAN_INITOBJECTBAUDRATEOFPCCONFIG                                                            STD_ON
 #define CAN_INITOBJECTFDBRSCONFIGOFPCCONFIG                                                         STD_ON
 #define CAN_INITOBJECTSTARTINDEXOFPCCONFIG                                                          STD_ON
+#define CAN_ISROSIDOFPCCONFIG                                                                       STD_ON
 #define CAN_MAILBOXOFPCCONFIG                                                                       STD_ON
 #define CAN_MEMORYSECTIONINFOOFPCCONFIG                                                             STD_ON
 #define CAN_MEMORYSECTIONOBJECTSOFPCCONFIG                                                          STD_ON
@@ -685,6 +687,7 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define CAN_SIZEOFINITOBJECTBAUDRATEOFPCCONFIG                                                      STD_ON
 #define CAN_SIZEOFINITOBJECTFDBRSCONFIGOFPCCONFIG                                                   STD_ON
 #define CAN_SIZEOFINITOBJECTSTARTINDEXOFPCCONFIG                                                    STD_ON
+#define CAN_SIZEOFISROSIDOFPCCONFIG                                                                 STD_ON
 #define CAN_SIZEOFMAILBOXOFPCCONFIG                                                                 STD_ON
 #define CAN_SIZEOFMEMORYSECTIONINFOOFPCCONFIG                                                       STD_ON
 #define CAN_SIZEOFMEMORYSECTIONOBJECTSOFPCCONFIG                                                    STD_ON
@@ -725,7 +728,6 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define CAN_MIN_PREVMODEOFCONTROLLERDATA                                                            0u
 #define CAN_MIN_RAMCHECKTRANSITIONREQUESTOFCONTROLLERDATA                                           0u
 #define CAN_MIN_TXBCROFCONTROLLERDATA                                                               0u
-#define CAN_MIN_TXBCRWAITOFCONTROLLERDATA                                                           0u
 #define CAN_MIN_TXBRPOFCONTROLLERDATA                                                               0u
 /** 
   \}
@@ -750,7 +752,6 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define CAN_MAX_PREVMODEOFCONTROLLERDATA                                                            255u
 #define CAN_MAX_RAMCHECKTRANSITIONREQUESTOFCONTROLLERDATA                                           255u
 #define CAN_MAX_TXBCROFCONTROLLERDATA                                                               4294967295u
-#define CAN_MAX_TXBCRWAITOFCONTROLLERDATA                                                           4294967295u
 #define CAN_MAX_TXBRPOFCONTROLLERDATA                                                               4294967295u
 /** 
   \}
@@ -858,6 +859,7 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define CAN_ISDEF_INITOBJECTBAUDRATE                                                                STD_OFF
 #define CAN_ISDEF_INITOBJECTFDBRSCONFIG                                                             STD_OFF
 #define CAN_ISDEF_INITOBJECTSTARTINDEX                                                              STD_OFF
+#define CAN_ISDEF_ISROSID                                                                           STD_OFF
 #define CAN_ISDEF_ACTIVESENDOBJECTOFMAILBOX                                                         STD_OFF
 #define CAN_ISDEF_CONTROLLERCONFIGIDXOFMAILBOX                                                      STD_OFF
 #define CAN_ISDEF_FDPADDINGOFMAILBOX                                                                STD_OFF
@@ -912,6 +914,7 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define CAN_ISDEF_INITOBJECTBAUDRATEOFPCCONFIG                                                      STD_ON
 #define CAN_ISDEF_INITOBJECTFDBRSCONFIGOFPCCONFIG                                                   STD_ON
 #define CAN_ISDEF_INITOBJECTSTARTINDEXOFPCCONFIG                                                    STD_ON
+#define CAN_ISDEF_ISROSIDOFPCCONFIG                                                                 STD_ON
 #define CAN_ISDEF_MAILBOXOFPCCONFIG                                                                 STD_ON
 #define CAN_ISDEF_MEMORYSECTIONINFOOFPCCONFIG                                                       STD_ON
 #define CAN_ISDEF_MEMORYSECTIONOBJECTSOFPCCONFIG                                                    STD_ON
@@ -971,6 +974,7 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define CAN_EQ2_INITOBJECTBAUDRATE                                                                  
 #define CAN_EQ2_INITOBJECTFDBRSCONFIG                                                               
 #define CAN_EQ2_INITOBJECTSTARTINDEX                                                                
+#define CAN_EQ2_ISROSID                                                                             
 #define CAN_EQ2_ACTIVESENDOBJECTOFMAILBOX                                                           
 #define CAN_EQ2_CONTROLLERCONFIGIDXOFMAILBOX                                                        
 #define CAN_EQ2_FDPADDINGOFMAILBOX                                                                  
@@ -1025,6 +1029,7 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define CAN_EQ2_INITOBJECTBAUDRATEOFPCCONFIG                                                        Can_InitObjectBaudrate
 #define CAN_EQ2_INITOBJECTFDBRSCONFIGOFPCCONFIG                                                     Can_InitObjectFdBrsConfig
 #define CAN_EQ2_INITOBJECTSTARTINDEXOFPCCONFIG                                                      Can_InitObjectStartIndex
+#define CAN_EQ2_ISROSIDOFPCCONFIG                                                                   Can_IsrOsId
 #define CAN_EQ2_MAILBOXOFPCCONFIG                                                                   Can_Mailbox
 #define CAN_EQ2_MEMORYSECTIONINFOOFPCCONFIG                                                         Can_MemorySectionInfo
 #define CAN_EQ2_MEMORYSECTIONOBJECTSOFPCCONFIG                                                      Can_MemorySectionObjects
@@ -1149,6 +1154,7 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define Can_GetInitObjectBaudrateOfPCConfig()                                                       Can_InitObjectBaudrate  /**< the pointer to Can_InitObjectBaudrate */
 #define Can_GetInitObjectFdBrsConfigOfPCConfig()                                                    Can_InitObjectFdBrsConfig  /**< the pointer to Can_InitObjectFdBrsConfig */
 #define Can_GetInitObjectStartIndexOfPCConfig()                                                     Can_InitObjectStartIndex  /**< the pointer to Can_InitObjectStartIndex */
+#define Can_GetIsrOsIdOfPCConfig()                                                                  Can_IsrOsId  /**< the pointer to Can_IsrOsId */
 #define Can_GetMailboxOfPCConfig()                                                                  Can_Mailbox  /**< the pointer to Can_Mailbox */
 #define Can_GetMemorySectionInfoOfPCConfig()                                                        Can_MemorySectionInfo  /**< the pointer to Can_MemorySectionInfo */
 #define Can_GetMemorySectionObjectsOfPCConfig()                                                     Can_MemorySectionObjects  /**< the pointer to Can_MemorySectionObjects */
@@ -1171,6 +1177,7 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define Can_GetSizeOfInitObjectBaudrateOfPCConfig()                                                 1u  /**< the number of accomplishable value elements in Can_InitObjectBaudrate */
 #define Can_GetSizeOfInitObjectFdBrsConfigOfPCConfig()                                              1u  /**< the number of accomplishable value elements in Can_InitObjectFdBrsConfig */
 #define Can_GetSizeOfInitObjectStartIndexOfPCConfig()                                               2u  /**< the number of accomplishable value elements in Can_InitObjectStartIndex */
+#define Can_GetSizeOfIsrOsIdOfPCConfig()                                                            1u  /**< the number of accomplishable value elements in Can_IsrOsId */
 #define Can_GetSizeOfMailboxOfPCConfig()                                                            2u  /**< the number of accomplishable value elements in Can_Mailbox */
 #define Can_GetSizeOfMemorySectionInfoOfPCConfig()                                                  1u  /**< the number of accomplishable value elements in Can_MemorySectionInfo */
 #define Can_GetSizeOfMemorySectionObjectsOfPCConfig()                                               32u  /**< the number of accomplishable value elements in Can_MemorySectionObjects */
@@ -1253,7 +1260,6 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define Can_GetPrevModeOfControllerData(Index)                                                      (Can_GetControllerDataOfPCConfig()[(Index)].PrevModeOfControllerData)
 #define Can_GetRamCheckTransitionRequestOfControllerData(Index)                                     (Can_GetControllerDataOfPCConfig()[(Index)].RamCheckTransitionRequestOfControllerData)
 #define Can_GetTXBCROfControllerData(Index)                                                         (Can_GetControllerDataOfPCConfig()[(Index)].TXBCROfControllerData)
-#define Can_GetTXBCRWaitOfControllerData(Index)                                                     (Can_GetControllerDataOfPCConfig()[(Index)].TXBCRWaitOfControllerData)
 #define Can_GetTXBRPOfControllerData(Index)                                                         (Can_GetControllerDataOfPCConfig()[(Index)].TXBRPOfControllerData)
 #define Can_GetFBTP(Index)                                                                          (Can_GetFBTPOfPCConfig()[(Index)])
 #define Can_GetGFC(Index)                                                                           (Can_GetGFCOfPCConfig()[(Index)])
@@ -1262,6 +1268,7 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define Can_GetInitObjectBaudrate(Index)                                                            (Can_GetInitObjectBaudrateOfPCConfig()[(Index)])
 #define Can_GetInitObjectFdBrsConfig(Index)                                                         (Can_GetInitObjectFdBrsConfigOfPCConfig()[(Index)])
 #define Can_GetInitObjectStartIndex(Index)                                                          (Can_GetInitObjectStartIndexOfPCConfig()[(Index)])
+#define Can_GetIsrOsId(Index)                                                                       (Can_GetIsrOsIdOfPCConfig()[(Index)])
 #define Can_GetActiveSendObjectOfMailbox(Index)                                                     (Can_GetMailboxOfPCConfig()[(Index)].ActiveSendObjectOfMailbox)
 #define Can_GetControllerConfigIdxOfMailbox(Index)                                                  (Can_GetMailboxOfPCConfig()[(Index)].ControllerConfigIdxOfMailbox)
 #define Can_GetFdPaddingOfMailbox(Index)                                                            (Can_GetMailboxOfPCConfig()[(Index)].FdPaddingOfMailbox)
@@ -1334,6 +1341,7 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define Can_GetSizeOfInitObjectBaudrate()                                                           Can_GetSizeOfInitObjectBaudrateOfPCConfig()
 #define Can_GetSizeOfInitObjectFdBrsConfig()                                                        Can_GetSizeOfInitObjectFdBrsConfigOfPCConfig()
 #define Can_GetSizeOfInitObjectStartIndex()                                                         Can_GetSizeOfInitObjectStartIndexOfPCConfig()
+#define Can_GetSizeOfIsrOsId()                                                                      Can_GetSizeOfIsrOsIdOfPCConfig()
 #define Can_GetSizeOfMailbox()                                                                      Can_GetSizeOfMailboxOfPCConfig()
 #define Can_GetSizeOfMemorySectionInfo()                                                            Can_GetSizeOfMemorySectionInfoOfPCConfig()
 #define Can_GetSizeOfMemorySectionObjects()                                                         Can_GetSizeOfMemorySectionObjectsOfPCConfig()
@@ -1373,7 +1381,6 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define Can_SetPrevModeOfControllerData(Index, Value)                                               Can_GetControllerDataOfPCConfig()[(Index)].PrevModeOfControllerData = (Value)
 #define Can_SetRamCheckTransitionRequestOfControllerData(Index, Value)                              Can_GetControllerDataOfPCConfig()[(Index)].RamCheckTransitionRequestOfControllerData = (Value)
 #define Can_SetTXBCROfControllerData(Index, Value)                                                  Can_GetControllerDataOfPCConfig()[(Index)].TXBCROfControllerData = (Value)
-#define Can_SetTXBCRWaitOfControllerData(Index, Value)                                              Can_GetControllerDataOfPCConfig()[(Index)].TXBCRWaitOfControllerData = (Value)
 #define Can_SetTXBRPOfControllerData(Index, Value)                                                  Can_GetControllerDataOfPCConfig()[(Index)].TXBRPOfControllerData = (Value)
 /** 
   \}
@@ -1442,7 +1449,6 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define Can_HasPrevModeOfControllerData()                                                           (TRUE != FALSE)
 #define Can_HasRamCheckTransitionRequestOfControllerData()                                          (TRUE != FALSE)
 #define Can_HasTXBCROfControllerData()                                                              (TRUE != FALSE)
-#define Can_HasTXBCRWaitOfControllerData()                                                          (TRUE != FALSE)
 #define Can_HasTXBRPOfControllerData()                                                              (TRUE != FALSE)
 #define Can_HasFBTP()                                                                               (TRUE != FALSE)
 #define Can_HasGFC()                                                                                (TRUE != FALSE)
@@ -1451,6 +1457,7 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define Can_HasInitObjectBaudrate()                                                                 (TRUE != FALSE)
 #define Can_HasInitObjectFdBrsConfig()                                                              (TRUE != FALSE)
 #define Can_HasInitObjectStartIndex()                                                               (TRUE != FALSE)
+#define Can_HasIsrOsId()                                                                            (TRUE != FALSE)
 #define Can_HasMailbox()                                                                            (TRUE != FALSE)
 #define Can_HasActiveSendObjectOfMailbox()                                                          (TRUE != FALSE)
 #define Can_HasControllerConfigIdxOfMailbox()                                                       (TRUE != FALSE)
@@ -1506,6 +1513,7 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define Can_HasSizeOfInitObjectBaudrate()                                                           (TRUE != FALSE)
 #define Can_HasSizeOfInitObjectFdBrsConfig()                                                        (TRUE != FALSE)
 #define Can_HasSizeOfInitObjectStartIndex()                                                         (TRUE != FALSE)
+#define Can_HasSizeOfIsrOsId()                                                                      (TRUE != FALSE)
 #define Can_HasSizeOfMailbox()                                                                      (TRUE != FALSE)
 #define Can_HasSizeOfMemorySectionInfo()                                                            (TRUE != FALSE)
 #define Can_HasSizeOfMemorySectionObjects()                                                         (TRUE != FALSE)
@@ -1548,6 +1556,7 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define Can_HasInitObjectBaudrateOfPCConfig()                                                       (TRUE != FALSE)
 #define Can_HasInitObjectFdBrsConfigOfPCConfig()                                                    (TRUE != FALSE)
 #define Can_HasInitObjectStartIndexOfPCConfig()                                                     (TRUE != FALSE)
+#define Can_HasIsrOsIdOfPCConfig()                                                                  (TRUE != FALSE)
 #define Can_HasMailboxOfPCConfig()                                                                  (TRUE != FALSE)
 #define Can_HasMemorySectionInfoOfPCConfig()                                                        (TRUE != FALSE)
 #define Can_HasMemorySectionObjectsOfPCConfig()                                                     (TRUE != FALSE)
@@ -1571,6 +1580,7 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define Can_HasSizeOfInitObjectBaudrateOfPCConfig()                                                 (TRUE != FALSE)
 #define Can_HasSizeOfInitObjectFdBrsConfigOfPCConfig()                                              (TRUE != FALSE)
 #define Can_HasSizeOfInitObjectStartIndexOfPCConfig()                                               (TRUE != FALSE)
+#define Can_HasSizeOfIsrOsIdOfPCConfig()                                                            (TRUE != FALSE)
 #define Can_HasSizeOfMailboxOfPCConfig()                                                            (TRUE != FALSE)
 #define Can_HasSizeOfMemorySectionInfoOfPCConfig()                                                  (TRUE != FALSE)
 #define Can_HasSizeOfMemorySectionObjectsOfPCConfig()                                               (TRUE != FALSE)
@@ -1613,7 +1623,6 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define Can_IncPrevModeOfControllerData(Index)                                                      Can_GetPrevModeOfControllerData(Index)++
 #define Can_IncRamCheckTransitionRequestOfControllerData(Index)                                     Can_GetRamCheckTransitionRequestOfControllerData(Index)++
 #define Can_IncTXBCROfControllerData(Index)                                                         Can_GetTXBCROfControllerData(Index)++
-#define Can_IncTXBCRWaitOfControllerData(Index)                                                     Can_GetTXBCRWaitOfControllerData(Index)++
 #define Can_IncTXBRPOfControllerData(Index)                                                         Can_GetTXBRPOfControllerData(Index)++
 /** 
   \}
@@ -1640,7 +1649,6 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define Can_DecPrevModeOfControllerData(Index)                                                      Can_GetPrevModeOfControllerData(Index)--
 #define Can_DecRamCheckTransitionRequestOfControllerData(Index)                                     Can_GetRamCheckTransitionRequestOfControllerData(Index)--
 #define Can_DecTXBCROfControllerData(Index)                                                         Can_GetTXBCROfControllerData(Index)--
-#define Can_DecTXBCRWaitOfControllerData(Index)                                                     Can_GetTXBCRWaitOfControllerData(Index)--
 #define Can_DecTXBRPOfControllerData(Index)                                                         Can_GetTXBRPOfControllerData(Index)--
 /** 
   \}
@@ -1667,7 +1675,6 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define Can_AddPrevModeOfControllerData(Index, Value)                                               Can_SetPrevModeOfControllerData(Index, (Can_GetPrevModeOfControllerData(Index) + Value))
 #define Can_AddRamCheckTransitionRequestOfControllerData(Index, Value)                              Can_SetRamCheckTransitionRequestOfControllerData(Index, (Can_GetRamCheckTransitionRequestOfControllerData(Index) + Value))
 #define Can_AddTXBCROfControllerData(Index, Value)                                                  Can_SetTXBCROfControllerData(Index, (Can_GetTXBCROfControllerData(Index) + Value))
-#define Can_AddTXBCRWaitOfControllerData(Index, Value)                                              Can_SetTXBCRWaitOfControllerData(Index, (Can_GetTXBCRWaitOfControllerData(Index) + Value))
 #define Can_AddTXBRPOfControllerData(Index, Value)                                                  Can_SetTXBRPOfControllerData(Index, (Can_GetTXBRPOfControllerData(Index) + Value))
 /** 
   \}
@@ -1694,7 +1701,6 @@ typedef VAR(Can_ExternalTickType, TYPEDEF) Can_LoopTimeout_dim_type[CAN_LOOP_MAX
 #define Can_SubPrevModeOfControllerData(Index, Value)                                               Can_SetPrevModeOfControllerData(Index, (Can_GetPrevModeOfControllerData(Index) - Value))
 #define Can_SubRamCheckTransitionRequestOfControllerData(Index, Value)                              Can_SetRamCheckTransitionRequestOfControllerData(Index, (Can_GetRamCheckTransitionRequestOfControllerData(Index) - Value))
 #define Can_SubTXBCROfControllerData(Index, Value)                                                  Can_SetTXBCROfControllerData(Index, (Can_GetTXBCROfControllerData(Index) - Value))
-#define Can_SubTXBCRWaitOfControllerData(Index, Value)                                              Can_SetTXBCRWaitOfControllerData(Index, (Can_GetTXBCRWaitOfControllerData(Index) - Value))
 #define Can_SubTXBRPOfControllerData(Index, Value)                                                  Can_SetTXBRPOfControllerData(Index, (Can_GetTXBRPOfControllerData(Index) - Value))
 /** 
   \}
@@ -1801,6 +1807,9 @@ typedef uint8_least Can_InitObjectFdBrsConfigIterType;
 
 /**   \brief  type used to iterate Can_InitObjectStartIndex */
 typedef uint8_least Can_InitObjectStartIndexIterType;
+
+/**   \brief  type used to iterate Can_IsrOsId */
+typedef uint8_least Can_IsrOsIdIterType;
 
 /**   \brief  type used to iterate Can_Mailbox */
 typedef uint8_least Can_MailboxIterType;
@@ -2015,9 +2024,6 @@ typedef uint8 Can_RamCheckTransitionRequestOfControllerDataType;
 /**   \brief  value based type definition for Can_TXBCROfControllerData */
 typedef uint32 Can_TXBCROfControllerDataType;
 
-/**   \brief  value based type definition for Can_TXBCRWaitOfControllerData */
-typedef uint32 Can_TXBCRWaitOfControllerDataType;
-
 /**   \brief  value based type definition for Can_TXBRPOfControllerData */
 typedef uint32 Can_TXBRPOfControllerDataType;
 
@@ -2189,6 +2195,9 @@ typedef uint8 Can_SizeOfInitObjectFdBrsConfigType;
 /**   \brief  value based type definition for Can_SizeOfInitObjectStartIndex */
 typedef uint8 Can_SizeOfInitObjectStartIndexType;
 
+/**   \brief  value based type definition for Can_SizeOfIsrOsId */
+typedef uint8 Can_SizeOfIsrOsIdType;
+
 /**   \brief  value based type definition for Can_SizeOfMailbox */
 typedef uint8 Can_SizeOfMailboxType;
 
@@ -2314,7 +2323,6 @@ typedef struct sCan_ControllerDataType
   Can_IntEnableOfControllerDataType IntEnableOfControllerData;  /**< CAN Interrupt Enable state for each controller */
   Can_NonFdObjectsPendingFlagOfControllerDataType NonFdObjectsPendingFlagOfControllerData;  /**< CAN Tx Objects pending with CAN-FD format */
   Can_TXBCROfControllerDataType TXBCROfControllerData;  /**< CAN Tx Buffer Cancellation Request for each controller */
-  Can_TXBCRWaitOfControllerDataType TXBCRWaitOfControllerData;  /**< CAN Tx Buffer Cancellation Request Confirmation for each controller */
   Can_TXBRPOfControllerDataType TXBRPOfControllerData;  /**< CAN Tx Buffer request Pending for each controller */
   Can_BusOffNotificationOfControllerDataType BusOffNotificationOfControllerData;  /**< CAN state for each controller: busoff occur */
   Can_BusOffTransitionRequestOfControllerDataType BusOffTransitionRequestOfControllerData;  /**< CAN state request for each controller: ContinueBusOffRecovery=0x00, FinishBusOffRecovery=0x01 */
@@ -2462,6 +2470,9 @@ typedef P2CONST(Can_InitObjectFdBrsConfigType, TYPEDEF, CAN_CONST) Can_InitObjec
 
 /**   \brief  type used to point to Can_InitObjectStartIndex */
 typedef P2CONST(Can_InitObjectStartIndexType, TYPEDEF, CAN_CONST) Can_InitObjectStartIndexPtrType;
+
+/**   \brief  type used to point to Can_IsrOsId */
+typedef P2CONST(Can_OsIsrType, TYPEDEF, CAN_CONST) Can_IsrOsIdPtrType;
 
 /**   \brief  type used to point to Can_Mailbox */
 typedef P2CONST(Can_MailboxType, TYPEDEF, CAN_CONST) Can_MailboxPtrType;
@@ -2774,6 +2785,23 @@ extern CONST(Can_InitObjectStartIndexType, CAN_CONST) Can_InitObjectStartIndex[2
 /*lint -restore */
 
 /**********************************************************************************************************************
+  Can_IsrOsId
+**********************************************************************************************************************/
+/** 
+  \var    Can_IsrOsId
+  \brief  OS Symbolic Name Value for Service Request Nodes.
+*/ 
+#define CAN_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+extern CONST(Can_OsIsrType, CAN_CONST) Can_IsrOsId[1];
+#define CAN_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+
+/**********************************************************************************************************************
   Can_Mailbox
 **********************************************************************************************************************/
 /** 
@@ -3056,7 +3084,6 @@ extern VAR(Can_ActiveSendObjectType, CAN_VAR_NOINIT) Can_ActiveSendObject[1];
   IntEnable                    CAN Interrupt Enable state for each controller
   NonFdObjectsPendingFlag      CAN Tx Objects pending with CAN-FD format
   TXBCR                        CAN Tx Buffer Cancellation Request for each controller
-  TXBCRWait                    CAN Tx Buffer Cancellation Request Confirmation for each controller
   TXBRP                        CAN Tx Buffer request Pending for each controller
   BusOffNotification           CAN state for each controller: busoff occur
   BusOffTransitionRequest      CAN state request for each controller: ContinueBusOffRecovery=0x00, FinishBusOffRecovery=0x01

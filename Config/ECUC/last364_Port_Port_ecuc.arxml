@@ -3556,7 +3556,7 @@
                   </PARAMETER-VALUES>
                   <SUB-CONTAINERS>
                     <ECUC-CONTAINER-VALUE UUID="bd338743-f3a8-4d5e-a1af-f4cbf8bf24e9">
-                      <SHORT-NAME>PortPin_0</SHORT-NAME>
+                      <SHORT-NAME>PortPin_tle35584_CSN</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin</DEFINITION-REF>
                       <PARAMETER-VALUES>
                         <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3565,7 +3565,7 @@
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinDirection</DEFINITION-REF>
-                          <VALUE>PORT_PIN_IN</VALUE>
+                          <VALUE>PORT_PIN_OUT</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinDirectionChangeable</DEFINITION-REF>
@@ -3585,7 +3585,7 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinInitialMode</DEFINITION-REF>
-                          <VALUE>GPIO</VALUE>
+                          <VALUE>ALT4</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinInputPadLevel</DEFINITION-REF>
@@ -3601,7 +3601,7 @@
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinMode</DEFINITION-REF>
-                          <VALUE>PORT_PIN_MODE_ALL</VALUE>
+                          <VALUE>PORT_PIN_MODE_ALT4</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinModeChangeable</DEFINITION-REF>
@@ -3622,7 +3622,7 @@
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
                     <ECUC-CONTAINER-VALUE UUID="8857562f-7891-40ae-b95c-b454256334cc">
-                      <SHORT-NAME>PortPin_1</SHORT-NAME>
+                      <SHORT-NAME>PortPin_tle35584_MRST</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin</DEFINITION-REF>
                       <PARAMETER-VALUES>
                         <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3688,7 +3688,7 @@
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
                     <ECUC-CONTAINER-VALUE UUID="fd4165df-32b5-4197-9a89-014e662a4208">
-                      <SHORT-NAME>PortPin_2</SHORT-NAME>
+                      <SHORT-NAME>PortPin_tle35584_Clk</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin</DEFINITION-REF>
                       <PARAMETER-VALUES>
                         <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3697,7 +3697,7 @@
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinDirection</DEFINITION-REF>
-                          <VALUE>PORT_PIN_IN</VALUE>
+                          <VALUE>PORT_PIN_OUT</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinDirectionChangeable</DEFINITION-REF>
@@ -3717,7 +3717,7 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinInitialMode</DEFINITION-REF>
-                          <VALUE>GPIO</VALUE>
+                          <VALUE>ALT3</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinInputPadLevel</DEFINITION-REF>
@@ -3733,7 +3733,7 @@
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinMode</DEFINITION-REF>
-                          <VALUE>PORT_PIN_MODE_ALL</VALUE>
+                          <VALUE>PORT_PIN_MODE_ALT3</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinModeChangeable</DEFINITION-REF>
@@ -3820,7 +3820,7 @@
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
                     <ECUC-CONTAINER-VALUE UUID="09733114-ef8f-426c-bb72-416438279605">
-                      <SHORT-NAME>PortPin_4</SHORT-NAME>
+                      <SHORT-NAME>PortPin_tle35584_MTSR</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin</DEFINITION-REF>
                       <PARAMETER-VALUES>
                         <ECUC-TEXTUAL-PARAM-VALUE>
@@ -3829,7 +3829,7 @@
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinDirection</DEFINITION-REF>
-                          <VALUE>PORT_PIN_IN</VALUE>
+                          <VALUE>PORT_PIN_OUT</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinDirectionChangeable</DEFINITION-REF>
@@ -3849,7 +3849,7 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinInitialMode</DEFINITION-REF>
-                          <VALUE>GPIO</VALUE>
+                          <VALUE>ALT3</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinInputPadLevel</DEFINITION-REF>
@@ -3865,7 +3865,7 @@
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinMode</DEFINITION-REF>
-                          <VALUE>PORT_PIN_MODE_ALL</VALUE>
+                          <VALUE>PORT_PIN_MODE_ALT3</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinModeChangeable</DEFINITION-REF>
@@ -5083,7 +5083,7 @@
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinDirection</DEFINITION-REF>
-                          <VALUE>PORT_PIN_IN</VALUE>
+                          <VALUE>PORT_PIN_OUT</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Port/PortConfigSet/PortContainer/PortPin/PortPinDirectionChangeable</DEFINITION-REF>

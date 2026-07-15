@@ -146,6 +146,54 @@ BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
 BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_OsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_OsInt.h" :
 BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Lcfg.h"
@@ -184,14 +232,36 @@ BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Can\Implementation\Can.h" :
 BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Can_Cfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Can_Cfg.h" :
-BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Can_GeneralTypes.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Can_GeneralTypes.h" :
 BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\Can_GeneralTypes.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\Can_GeneralTypes.h" :
 BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Can_DrvGeneralTypes.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Can_DrvGeneralTypes.h" :
 BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\CanIf\Implementation\CanIf_GeneralTypes.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\CanIf\Implementation\CanIf_GeneralTypes.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 BSW364\PduR\Implementation\PduR_McQ.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"

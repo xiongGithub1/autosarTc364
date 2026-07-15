@@ -1303,7 +1303,7 @@
                       <PARAMETER-VALUES>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqAdcConfig/IrqAdc2Config/IrqAdc2CatConfig/IrqAdc2SR0Cat</DEFINITION-REF>
-                          <VALUE>CAT2</VALUE>
+                          <VALUE>CAT1</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqAdcConfig/IrqAdc2Config/IrqAdc2CatConfig/IrqAdc2SR1Cat</DEFINITION-REF>
@@ -1325,7 +1325,7 @@
                       <PARAMETER-VALUES>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqAdcConfig/IrqAdc2Config/IrqAdc2PrioConfig/IrqAdc2SR0Prio</DEFINITION-REF>
-                          <VALUE>4</VALUE>
+                          <VALUE>0</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqAdcConfig/IrqAdc2Config/IrqAdc2PrioConfig/IrqAdc2SR1Prio</DEFINITION-REF>
@@ -1375,7 +1375,7 @@
                       <PARAMETER-VALUES>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqAdcConfig/IrqAdc3Config/IrqAdc3CatConfig/IrqAdc3SR0Cat</DEFINITION-REF>
-                          <VALUE>CAT2</VALUE>
+                          <VALUE>CAT1</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqAdcConfig/IrqAdc3Config/IrqAdc3CatConfig/IrqAdc3SR1Cat</DEFINITION-REF>
@@ -1397,7 +1397,7 @@
                       <PARAMETER-VALUES>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqAdcConfig/IrqAdc3Config/IrqAdc3PrioConfig/IrqAdc3SR0Prio</DEFINITION-REF>
-                          <VALUE>5</VALUE>
+                          <VALUE>0</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqAdcConfig/IrqAdc3Config/IrqAdc3PrioConfig/IrqAdc3SR1Prio</DEFINITION-REF>
@@ -3821,7 +3821,7 @@
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqDmaConfig/IrqDmaCatConfig/IrqDmaErr0SRCat</DEFINITION-REF>
-                      <VALUE>CAT1</VALUE>
+                      <VALUE>CAT2</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqDmaConfig/IrqDmaCatConfig/IrqDmaErr1SRCat</DEFINITION-REF>
@@ -4355,7 +4355,7 @@
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqDmaConfig/IrqDmaPrioConfig/IrqDmaErr0SRPrio</DEFINITION-REF>
-                      <VALUE>0</VALUE>
+                      <VALUE>60</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqDmaConfig/IrqDmaPrioConfig/IrqDmaErr1SRPrio</DEFINITION-REF>
@@ -9927,15 +9927,15 @@
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiCatConfig/IrqQspiErrCatConfig/IrqQspi1ErrCat</DEFINITION-REF>
-                          <VALUE>CAT1</VALUE>
+                          <VALUE>CAT2</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiCatConfig/IrqQspiErrCatConfig/IrqQspi2ErrCat</DEFINITION-REF>
-                          <VALUE>CAT1</VALUE>
+                          <VALUE>CAT2</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiCatConfig/IrqQspiErrCatConfig/IrqQspi3ErrCat</DEFINITION-REF>
-                          <VALUE>CAT1</VALUE>
+                          <VALUE>CAT2</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiCatConfig/IrqQspiErrCatConfig/IrqQspi4ErrCat</DEFINITION-REF>
@@ -9971,15 +9971,15 @@
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiCatConfig/IrqQspiPTCatConfig/IrqQspi1PTCat</DEFINITION-REF>
-                          <VALUE>CAT1</VALUE>
+                          <VALUE>CAT2</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiCatConfig/IrqQspiPTCatConfig/IrqQspi2PTCat</DEFINITION-REF>
-                          <VALUE>CAT1</VALUE>
+                          <VALUE>CAT2</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiCatConfig/IrqQspiPTCatConfig/IrqQspi3PTCat</DEFINITION-REF>
-                          <VALUE>CAT1</VALUE>
+                          <VALUE>CAT2</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiCatConfig/IrqQspiPTCatConfig/IrqQspi4PTCat</DEFINITION-REF>
@@ -10097,15 +10097,15 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiPrioConfig/IrqQspiErrPrioConfig/IrqQspi1ErrPrio</DEFINITION-REF>
-                          <VALUE>0</VALUE>
+                          <VALUE>22</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiPrioConfig/IrqQspiErrPrioConfig/IrqQspi2ErrPrio</DEFINITION-REF>
-                          <VALUE>0</VALUE>
+                          <VALUE>23</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiPrioConfig/IrqQspiErrPrioConfig/IrqQspi3ErrPrio</DEFINITION-REF>
-                          <VALUE>0</VALUE>
+                          <VALUE>24</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiPrioConfig/IrqQspiErrPrioConfig/IrqQspi4ErrPrio</DEFINITION-REF>
@@ -10141,15 +10141,15 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiPrioConfig/IrqQspiPTPrioConfig/IrqQspi1PTPrio</DEFINITION-REF>
-                          <VALUE>0</VALUE>
+                          <VALUE>19</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiPrioConfig/IrqQspiPTPrioConfig/IrqQspi2PTPrio</DEFINITION-REF>
-                          <VALUE>0</VALUE>
+                          <VALUE>20</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiPrioConfig/IrqQspiPTPrioConfig/IrqQspi3PTPrio</DEFINITION-REF>
-                          <VALUE>0</VALUE>
+                          <VALUE>21</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiPrioConfig/IrqQspiPTPrioConfig/IrqQspi4PTPrio</DEFINITION-REF>
@@ -10171,7 +10171,7 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiPrioConfig/IrqQspiRxPrioConfig/IrqQspi1RxPrio</DEFINITION-REF>
-                          <VALUE>0</VALUE>
+                          <VALUE>4</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiPrioConfig/IrqQspiRxPrioConfig/IrqQspi2RxPrio</DEFINITION-REF>
@@ -10179,7 +10179,7 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiPrioConfig/IrqQspiRxPrioConfig/IrqQspi3RxPrio</DEFINITION-REF>
-                          <VALUE>0</VALUE>
+                          <VALUE>2</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiPrioConfig/IrqQspiRxPrioConfig/IrqQspi4RxPrio</DEFINITION-REF>
@@ -10201,15 +10201,15 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiPrioConfig/IrqQspiTxPrioConfig/IrqQspi1TxPrio</DEFINITION-REF>
-                          <VALUE>0</VALUE>
+                          <VALUE>5</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiPrioConfig/IrqQspiTxPrioConfig/IrqQspi2TxPrio</DEFINITION-REF>
-                          <VALUE>0</VALUE>
+                          <VALUE>1</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiPrioConfig/IrqQspiTxPrioConfig/IrqQspi3TxPrio</DEFINITION-REF>
-                          <VALUE>0</VALUE>
+                          <VALUE>3</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiPrioConfig/IrqQspiTxPrioConfig/IrqQspi4TxPrio</DEFINITION-REF>
@@ -10341,15 +10341,15 @@
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiTosConfig/IrqQspiRxTosConfig/IrqQspi1RxTos</DEFINITION-REF>
-                          <VALUE>CPU0</VALUE>
+                          <VALUE>DMA</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiTosConfig/IrqQspiRxTosConfig/IrqQspi2RxTos</DEFINITION-REF>
-                          <VALUE>CPU0</VALUE>
+                          <VALUE>DMA</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiTosConfig/IrqQspiRxTosConfig/IrqQspi3RxTos</DEFINITION-REF>
-                          <VALUE>CPU0</VALUE>
+                          <VALUE>DMA</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiTosConfig/IrqQspiRxTosConfig/IrqQspi4RxTos</DEFINITION-REF>
@@ -10371,15 +10371,15 @@
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiTosConfig/IrqQspiTxTosConfig/IrqQspi1TxTos</DEFINITION-REF>
-                          <VALUE>CPU0</VALUE>
+                          <VALUE>DMA</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiTosConfig/IrqQspiTxTosConfig/IrqQspi2TxTos</DEFINITION-REF>
-                          <VALUE>CPU0</VALUE>
+                          <VALUE>DMA</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiTosConfig/IrqQspiTxTosConfig/IrqQspi3TxTos</DEFINITION-REF>
-                          <VALUE>CPU0</VALUE>
+                          <VALUE>DMA</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqQSPIConfig/IrqQspiTosConfig/IrqQspiTxTosConfig/IrqQspi4TxTos</DEFINITION-REF>

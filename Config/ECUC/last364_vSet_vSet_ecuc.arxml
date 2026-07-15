@@ -491,6 +491,24 @@
                     <SDX-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSet/vSetBswInitialization/Pwm_17_GtmCcu6_Init/vSetInitFunctionInstance</SDX-REF>
                   </SDG>
                 </SDG>
+                <SDG GID=".ActiveEcuC.Sbc">
+                  <SDG GID="Sbc_30_Tlf35584_Init">
+                    <SDX-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSet/vSetBswInitialization/Sbc_30_Tlf35584_Init</SDX-REF>
+                  </SDG>
+                  <SDG GID="Sbc_30_Tlf35584_InitMemory">
+                    <SDX-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSet/vSetBswInitialization/Sbc_30_Tlf35584_InitMemory</SDX-REF>
+                  </SDG>
+                </SDG>
+                <SDG GID=".ActiveEcuC.Sbc.Sbc_30_Tlf35584_Init">
+                  <SDG GID="vSetInitFunctionInstance">
+                    <SDX-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSet/vSetBswInitialization/Sbc_30_Tlf35584_Init/vSetInitFunctionInstance</SDX-REF>
+                  </SDG>
+                </SDG>
+                <SDG GID=".ActiveEcuC.Sbc.Sbc_30_Tlf35584_InitMemory">
+                  <SDG GID="vSetInitFunctionInstance">
+                    <SDX-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSet/vSetBswInitialization/Sbc_30_Tlf35584_InitMemory/vSetInitFunctionInstance</SDX-REF>
+                  </SDG>
+                </SDG>
               </SDG>
             </SDGS>
           </ADMIN-DATA>
@@ -3025,6 +3043,106 @@
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetInitFunctionInstance/vSetConfigPtrName</DEFINITION-REF>
                           <VALUE>&amp;Pwm_17_GtmCcu6_Config</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="6201a5f6-e349-437a-a0af-cc3974f84314">
+                  <SHORT-NAME>Sbc_30_Tlf35584_Init</SHORT-NAME>
+                  <ANNOTATIONS>
+                    <ANNOTATION>
+                      <LABEL>
+                        <L-4 L="FOR-ALL">/ActiveEcuC/Sbc</L-4>
+                      </LABEL>
+                      <ANNOTATION-ORIGIN>DV:vSetBswInitFunction</ANNOTATION-ORIGIN>
+                      <ANNOTATION-TEXT>
+                        <P>
+                          <L-1 L="FOR-ALL">PLAIN_TEXT</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="FOR-ALL">Init function description of Sbc_30_Tlf35584 in UnfilteredViewInInvariantProject (UnfilteredInvariantProjectModelView) .</L-1>
+                        </P>
+                      </ANNOTATION-TEXT>
+                    </ANNOTATION>
+                  </ANNOTATIONS>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetHeader</DEFINITION-REF>
+                      <VALUE>Sbc_30_Tlf35584.h</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetConfigType</DEFINITION-REF>
+                      <VALUE>Sbc_30_Tlf35584_ConfigType</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetConfigPtrClass</DEFINITION-REF>
+                      <VALUE>SBC_30_TLF35584_INIT_DATA</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetModuleRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-MODULE-CONFIGURATION-VALUES">/ActiveEcuC/Sbc</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="ade7051a-e8b0-4292-8103-6103311740e9">
+                      <SHORT-NAME>vSetInitFunctionInstance</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetInitFunctionInstance</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetInitFunctionInstance/vSetInitPhase</DEFINITION-REF>
+                          <VALUE>INIT_TWO_MCAL</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetInitFunctionInstance/vSetConfigPtrName</DEFINITION-REF>
+                          <VALUE>Sbc_30_Tlf35584_Config_Ptr</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="9e853c4d-6ea9-4d20-a0e7-7b29504d176a">
+                  <SHORT-NAME>Sbc_30_Tlf35584_InitMemory</SHORT-NAME>
+                  <ANNOTATIONS>
+                    <ANNOTATION>
+                      <LABEL>
+                        <L-4 L="FOR-ALL">/ActiveEcuC/Sbc</L-4>
+                      </LABEL>
+                      <ANNOTATION-ORIGIN>DV:vSetBswInitFunction</ANNOTATION-ORIGIN>
+                      <ANNOTATION-TEXT>
+                        <P>
+                          <L-1 L="FOR-ALL">PLAIN_TEXT</L-1>
+                        </P>
+                        <P>
+                          <L-1 L="FOR-ALL">InitMemory function description of Sbc_30_Tlf35584 in UnfilteredViewInInvariantProject (UnfilteredInvariantProjectModelView) .</L-1>
+                        </P>
+                      </ANNOTATION-TEXT>
+                    </ANNOTATION>
+                  </ANNOTATIONS>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetHeader</DEFINITION-REF>
+                      <VALUE>Sbc_30_Tlf35584.h</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetModuleRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-MODULE-CONFIGURATION-VALUES">/ActiveEcuC/Sbc</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="fccf6f3a-d546-4ad8-b6e2-44400a2c55c0">
+                      <SHORT-NAME>vSetInitFunctionInstance</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetInitFunctionInstance</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetInitFunctionInstance/vSetInitPhase</DEFINITION-REF>
+                          <VALUE>INIT_MEMORY</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>

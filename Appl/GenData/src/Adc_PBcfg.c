@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 13.0.0                                                         **
 **                                                                            **
-**  DATE, TIME: 2024-07-06, 16:21:28            !!!IGNORE-LINE!!!             **
+**  DATE, TIME: 2024-07-14, 21:03:44            !!!IGNORE-LINE!!!             **
 **                                                                            **
 **  GENERATOR : Build b191017-0938              !!!IGNORE-LINE!!!             **
 **                                                                            **
@@ -42,10 +42,55 @@
 *******************************************************************************/
 /* Inclusion of module header file */
 #include "Adc.h"
+/*Function declaration for Notification Function of AdcGroup_9183Sense*/
+extern void Adc_9183SenseVo1andVro_Notification(void);
 
 /***********Global configuration of EMUX feature***********/
 
 /***********Configuration for External HW trigger and gating signals***********/
+/*Gtm Trigger Configuration for AdcGroup_9183Sense of HW Unit 0 */
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+
+#define ADC_START_SEC_CONFIG_DATA_ASIL_B_CORE0_UNSPECIFIED
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header usage as per Autosar 
+   guideline. */
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+   without safegaurd. It complies to Autosar guidelines. */ 
+#include "Adc_MemMap.h"
+static const Mcu_17_Gtm_TomAtomChConfigType Adc_kHwUnit0GrpAdcGroup_9183SenseGtmTrig_Config=
+{
+  MCU_GTM_TIMER_ATOM, /*GTM_ATOM Timer Type Used*/
+  0x00000007U, /* Timer ID */
+  0x00000802U, /*Control Register Value for GTM_ATOM_0 */
+  0x00000000U, /*CN0 Register value*/
+  0x00002710U, /*CM0 register value*/
+  0x00001388U, /*CM1 register value*/
+  0x00002710U, /*SR0 register value*/
+  0x00001388U, /*SR1 register value*/
+  0x00U /*Interrupt Enable and Interrupt Mode values*/
+};
+/* MISRA2012_RULE_5_1_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Memmap macros are defined as per Autosar
+   naming convention, hence it goes beyond 32 characters.*/
+
+#define ADC_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_UNSPECIFIED
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header usage as per Autosar 
+   guideline. */
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+   without safegaurd. It complies to Autosar guidelines. */ 
+#include "Adc_MemMap.h"
 
 /*******************Group Definition - Channel Sequence*******************/
 /* MISRA2012_RULE_5_1_JUSTIFICATION: Memmap macros are defined as per Autosar
@@ -219,18 +264,18 @@ static const Adc_GroupCfgType Adc_kHwUnit0Grp_Config[1]=
   {/*Group Configuration structure for AdcGroup_9183Sense - ID0*/
     /*
       Group Properties:
-      Trigger Source: ADC_TRIGG_SRC_SW
-      Trigger Edge: 
-      HW Trigger Source: ADC_TRIG_NONE
+      Trigger Source: ADC_TRIGG_SRC_HW
+      Trigger Edge: ADC_HW_TRIG_RISING_EDGE
+      HW Trigger Source: ADC_TRIG_8_GxREQTRI_GTM_ADCx_TRIG0
       HW Gate Source: ADC_GATE_NONE
       Gate Level: ADC_GATE_LVL_HIGH
     */
     /* Notification Function Address */
-    (Adc_NotifyFnPtrType)0U,
+    Adc_9183SenseVo1andVro_Notification,
     /*Address for Group Definition Structure*/
     &Adc_kHwUnit0GrpAdcGroup_9183Sense_Config[0U],
     /*Address for the GTM trigger configuration structure*/
-    (const Mcu_17_Gtm_TomAtomChConfigType *)0U,
+    (const Mcu_17_Gtm_TomAtomChConfigType *)&Adc_kHwUnit0GrpAdcGroup_9183SenseGtmTrig_Config,
     /*Address for the GTM gate configuration structure*/
     (const Mcu_17_Gtm_TomAtomChConfigType *)0U,
     /*Address for the ERU trigger configuration structure*/
@@ -238,9 +283,9 @@ static const Adc_GroupCfgType Adc_kHwUnit0Grp_Config[1]=
     /*Address for the ERU gate configuration structure*/
     (const Adc_EruChannelCfgType *)0U,
     /*Configuration value for the G0QCTRL register*/
-    0x00000000U,
+    0x00004800U,
     /*Configuration value for the G0QMR register*/
-    0x00000001U,
+    0x00000005U,
     /*Configuration value for the G0ALIAS register*/
     0x00000100U,
     /* Configuration value for G0REQTM register*/
@@ -250,15 +295,15 @@ static const Adc_GroupCfgType Adc_kHwUnit0Grp_Config[1]=
     /*Bit Mask for all the result registers configured for the group*/
     0x0003U,
     /*Bit Mask for all the analog channels configured for synchronous conversion*/
-    0x0000U,
+    0x0010U,
     /*Bit Mask for all the result registers configured for synchronous conversion*/
-    0x0000U,
-    ADC_TRIGG_SRC_SW,
+    0x0001U,
+    ADC_TRIGG_SRC_HW,
     ADC_CONV_MODE_ONESHOT,
     ADC_ACCESS_MODE_SINGLE,
-    ADC_STREAM_BUFFER_LINEAR,
+    ADC_STREAM_BUFFER_CIRCULAR,
     1U, /*Number of streaming samples for the group*/
-    ADC_OTHER_HW_USED, /*HW peripheral used for Trigger*/
+    ADC_GTM_HW_USED, /*HW peripheral used for Trigger*/
     ADC_OTHER_HW_USED, /*HW peripheral used for Gate*/
     0U, /*Priority Level for the group*/
     2U, /*Channel Count for the group*/
@@ -306,9 +351,9 @@ static const Adc_GroupCfgType Adc_kHwUnit2Grp_Config[1]=
   {/*Group Configuration structure for AdcGroup - ID64*/
     /*
       Group Properties:
-      Trigger Source: ADC_TRIGG_SRC_SW
-      Trigger Edge: 
-      HW Trigger Source: ADC_TRIG_NONE
+      Trigger Source: ADC_TRIGG_SRC_HW
+      Trigger Edge: ADC_HW_TRIG_RISING_EDGE
+      HW Trigger Source: ADC_TRIG_8_GxREQTRI_GTM_ADCx_TRIG0
       HW Gate Source: ADC_GATE_NONE
       Gate Level: ADC_GATE_LVL_HIGH
     */
@@ -325,9 +370,9 @@ static const Adc_GroupCfgType Adc_kHwUnit2Grp_Config[1]=
     /*Address for the ERU gate configuration structure*/
     (const Adc_EruChannelCfgType *)0U,
     /*Configuration value for the G2QCTRL register*/
-    0x00000000U,
+    0x00004800U,
     /*Configuration value for the G2QMR register*/
-    0x00000001U,
+    0x00000005U,
     /*Configuration value for the G2ALIAS register*/
     0x00000100U,
     /* Configuration value for G2REQTM register*/
@@ -340,12 +385,12 @@ static const Adc_GroupCfgType Adc_kHwUnit2Grp_Config[1]=
     0x0000U,
     /*Bit Mask for all the result registers configured for synchronous conversion*/
     0x0000U,
-    ADC_TRIGG_SRC_SW,
+    ADC_TRIGG_SRC_HW,
     ADC_CONV_MODE_ONESHOT,
     ADC_ACCESS_MODE_SINGLE,
-    ADC_STREAM_BUFFER_LINEAR,
+    ADC_STREAM_BUFFER_CIRCULAR,
     1U, /*Number of streaming samples for the group*/
-    ADC_OTHER_HW_USED, /*HW peripheral used for Trigger*/
+    ADC_GTM_HW_USED, /*HW peripheral used for Trigger*/
     ADC_OTHER_HW_USED, /*HW peripheral used for Gate*/
     0U, /*Priority Level for the group*/
     2U, /*Channel Count for the group*/
@@ -393,9 +438,9 @@ static const Adc_GroupCfgType Adc_kHwUnit3Grp_Config[1]=
   {/*Group Configuration structure for AdcGroup_1 - ID96*/
     /*
       Group Properties:
-      Trigger Source: ADC_TRIGG_SRC_SW
-      Trigger Edge: 
-      HW Trigger Source: ADC_TRIG_NONE
+      Trigger Source: ADC_TRIGG_SRC_HW
+      Trigger Edge: ADC_HW_TRIG_RISING_EDGE
+      HW Trigger Source: ADC_TRIG_8_GxREQTRI_GTM_ADCx_TRIG0
       HW Gate Source: ADC_GATE_NONE
       Gate Level: ADC_GATE_LVL_HIGH
     */
@@ -412,9 +457,9 @@ static const Adc_GroupCfgType Adc_kHwUnit3Grp_Config[1]=
     /*Address for the ERU gate configuration structure*/
     (const Adc_EruChannelCfgType *)0U,
     /*Configuration value for the G3QCTRL register*/
-    0x00000000U,
+    0x00004800U,
     /*Configuration value for the G3QMR register*/
-    0x00000001U,
+    0x00000005U,
     /*Configuration value for the G3ALIAS register*/
     0x00000100U,
     /* Configuration value for G3REQTM register*/
@@ -427,12 +472,12 @@ static const Adc_GroupCfgType Adc_kHwUnit3Grp_Config[1]=
     0x0000U,
     /*Bit Mask for all the result registers configured for synchronous conversion*/
     0x0000U,
-    ADC_TRIGG_SRC_SW,
+    ADC_TRIGG_SRC_HW,
     ADC_CONV_MODE_ONESHOT,
     ADC_ACCESS_MODE_SINGLE,
-    ADC_STREAM_BUFFER_LINEAR,
+    ADC_STREAM_BUFFER_CIRCULAR,
     1U, /*Number of streaming samples for the group*/
-    ADC_OTHER_HW_USED, /*HW peripheral used for Trigger*/
+    ADC_GTM_HW_USED, /*HW peripheral used for Trigger*/
     ADC_OTHER_HW_USED, /*HW peripheral used for Gate*/
     0U, /*Priority Level for the group*/
     1U, /*Channel Count for the group*/
@@ -573,7 +618,7 @@ static const Adc_ChannelCfgType Adc_kHwUnit0Ch_Config[2]=
   },
 
   {
-    0x00000000U, /*Configuration value for the G0CHCTR4 register*/
+    0x00000400U, /*Configuration value for the G0CHCTR4 register*/
     0x00000000U, /*Configuration value for the G0BOUND register*/
     4U, /*Analog Channel number for the corresponding Logical Channel*/
     0U /*Limit Check channel or not */
@@ -614,14 +659,14 @@ static const Adc_ChannelCfgType Adc_kHwUnit2Ch_Config[2]=
 {
 
   {
-    0x00000000U, /*Configuration value for the G2CHCTR4 register*/
+    0x00000400U, /*Configuration value for the G2CHCTR4 register*/
     0x00000000U, /*Configuration value for the G2BOUND register*/
     4U, /*Analog Channel number for the corresponding Logical Channel*/
     0U /*Limit Check channel or not */
   },
 
   {
-    0x00000000U, /*Configuration value for the G2CHCTR1 register*/
+    0x00000400U, /*Configuration value for the G2CHCTR1 register*/
     0x00000000U, /*Configuration value for the G2BOUND register*/
     1U, /*Analog Channel number for the corresponding Logical Channel*/
     0U /*Limit Check channel or not */
@@ -662,7 +707,7 @@ static const Adc_ChannelCfgType Adc_kHwUnit3Ch_Config[1]=
 {
 
   {
-    0x00000000U, /*Configuration value for the G3CHCTR4 register*/
+    0x00000400U, /*Configuration value for the G3CHCTR4 register*/
     0x00000000U, /*Configuration value for the G3BOUND register*/
     4U, /*Analog Channel number for the corresponding Logical Channel*/
     0U /*Limit Check channel or not */
@@ -725,6 +770,9 @@ static const Adc_ChannelCfgType Adc_kHwUnit8Ch_Config[1]=
 #include "Adc_MemMap.h"
 
 /********************HW Unit Converter Configurations********************/
+    
+    
+  
 
 /**HW Unit 0 Converter Configurations **/
 /* MISRA2012_RULE_5_1_JUSTIFICATION: Memmap macros are defined as per Autosar
@@ -743,12 +791,12 @@ static const Adc_ChannelCfgType Adc_kHwUnit8Ch_Config[1]=
 #include "Adc_MemMap.h"
 static const Adc_HwCfgType Adc_kHwUnit0Hw_Config=
 {
-  0x00300004U, /*Configuration value for G0ANCFG register*/
+  0x00380004U, /*Configuration value for G0ANCFG register*/
   0x00000003U, /*Configuration value for G0ARBCFG register*/
   0x01000000U, /*Configuration value for G0ARBPR register*/
   0x0000000aU, /*Configuration value for G0ICLASS0 register*/
   0x00000000U, /*Configuration value for G0ICLASS1 register*/
-  0x00000000U /*Configuration value for G0SYNCTR register*/
+  0x00000060U /*Configuration value for G0SYNCTR register*/
 };
 /* MISRA2012_RULE_5_1_JUSTIFICATION: Memmap macros are defined as per Autosar
    naming convention, hence it goes beyond 32 characters.*/
@@ -765,6 +813,9 @@ static const Adc_HwCfgType Adc_kHwUnit0Hw_Config=
    without safegaurd. It complies to Autosar guidelines. */ 
 #include "Adc_MemMap.h"
 
+    
+    
+  
 
 /**HW Unit 2 Converter Configurations **/
 /* MISRA2012_RULE_5_1_JUSTIFICATION: Memmap macros are defined as per Autosar
@@ -783,12 +834,12 @@ static const Adc_HwCfgType Adc_kHwUnit0Hw_Config=
 #include "Adc_MemMap.h"
 static const Adc_HwCfgType Adc_kHwUnit2Hw_Config=
 {
-  0x00300004U, /*Configuration value for G2ANCFG register*/
-  0x00000003U, /*Configuration value for G2ARBCFG register*/
+  0x00380004U, /*Configuration value for G2ANCFG register*/
+  0x00000000U, /*Configuration value for G2ARBCFG register*/
   0x01000000U, /*Configuration value for G2ARBPR register*/
   0x0000000aU, /*Configuration value for G2ICLASS0 register*/
   0x00000000U, /*Configuration value for G2ICLASS1 register*/
-  0x00000000U /*Configuration value for G2SYNCTR register*/
+  0x00000051U /*Configuration value for G2SYNCTR register*/
 };
 /* MISRA2012_RULE_5_1_JUSTIFICATION: Memmap macros are defined as per Autosar
    naming convention, hence it goes beyond 32 characters.*/
@@ -805,6 +856,9 @@ static const Adc_HwCfgType Adc_kHwUnit2Hw_Config=
    without safegaurd. It complies to Autosar guidelines. */ 
 #include "Adc_MemMap.h"
 
+    
+    
+  
 
 /**HW Unit 3 Converter Configurations **/
 /* MISRA2012_RULE_5_1_JUSTIFICATION: Memmap macros are defined as per Autosar
@@ -823,12 +877,12 @@ static const Adc_HwCfgType Adc_kHwUnit2Hw_Config=
 #include "Adc_MemMap.h"
 static const Adc_HwCfgType Adc_kHwUnit3Hw_Config=
 {
-  0x00300004U, /*Configuration value for G3ANCFG register*/
-  0x00000003U, /*Configuration value for G3ARBCFG register*/
+  0x00380004U, /*Configuration value for G3ANCFG register*/
+  0x00000000U, /*Configuration value for G3ARBCFG register*/
   0x01000000U, /*Configuration value for G3ARBPR register*/
   0x0000000aU, /*Configuration value for G3ICLASS0 register*/
   0x00000000U, /*Configuration value for G3ICLASS1 register*/
-  0x00000000U /*Configuration value for G3SYNCTR register*/
+  0x00000051U /*Configuration value for G3SYNCTR register*/
 };
 /* MISRA2012_RULE_5_1_JUSTIFICATION: Memmap macros are defined as per Autosar
    naming convention, hence it goes beyond 32 characters.*/
@@ -908,10 +962,10 @@ static const Adc_HwUnitCfgType Adc_kHwUnit0_Config=
   &Adc_kHwUnit0Hw_Config, /*Analog Converter Configuration*/
   &Adc_kHwUnit0Ch_Config[0U], /*Channel Configuration structure*/
   &Adc_kHwUnit0Grp_Config[0U], /*Group Configuration structure*/
-  0x00000001U, /* Mask for SW triggered groups*/
-  0x00000000U,/* Mask for HW triggered groups*/
-  ADC_SYNC_CONV_MODE_NONE, /* Synchronous conversion mode */
-  { 0xffU, 0xffU, 0xffU }, /* Slave Kernels */
+  0x00000000U, /* Mask for SW triggered groups*/
+  0x00000001U,/* Mask for HW triggered groups*/
+  ADC_SYNC_CONV_MODE_MASTER, /* Synchronous conversion mode */
+  { 0x02U, 0x03U, 0xffU }, /* Slave Kernels */
   1U, /* Group Count for HW Unit 0*/
   1U /* Bit Mask for SRNs used for HW Unit 0*/
 };
@@ -951,9 +1005,9 @@ static const Adc_HwUnitCfgType Adc_kHwUnit2_Config=
   &Adc_kHwUnit2Hw_Config, /*Analog Converter Configuration*/
   &Adc_kHwUnit2Ch_Config[0U], /*Channel Configuration structure*/
   &Adc_kHwUnit2Grp_Config[0U], /*Group Configuration structure*/
-  0x00000001U, /* Mask for SW triggered groups*/
-  0x00000000U,/* Mask for HW triggered groups*/
-  ADC_SYNC_CONV_MODE_NONE, /* Synchronous conversion mode */
+  0x00000000U, /* Mask for SW triggered groups*/
+  0x00000001U,/* Mask for HW triggered groups*/
+  ADC_SYNC_CONV_MODE_SLAVE, /* Synchronous conversion mode */
   { 0xffU, 0xffU, 0xffU }, /* Slave Kernels */
   1U, /* Group Count for HW Unit 2*/
   1U /* Bit Mask for SRNs used for HW Unit 2*/
@@ -994,9 +1048,9 @@ static const Adc_HwUnitCfgType Adc_kHwUnit3_Config=
   &Adc_kHwUnit3Hw_Config, /*Analog Converter Configuration*/
   &Adc_kHwUnit3Ch_Config[0U], /*Channel Configuration structure*/
   &Adc_kHwUnit3Grp_Config[0U], /*Group Configuration structure*/
-  0x00000001U, /* Mask for SW triggered groups*/
-  0x00000000U,/* Mask for HW triggered groups*/
-  ADC_SYNC_CONV_MODE_NONE, /* Synchronous conversion mode */
+  0x00000000U, /* Mask for SW triggered groups*/
+  0x00000001U,/* Mask for HW triggered groups*/
+  ADC_SYNC_CONV_MODE_SLAVE, /* Synchronous conversion mode */
   { 0xffU, 0xffU, 0xffU }, /* Slave Kernels */
   1U, /* Group Count for HW Unit 3*/
   1U /* Bit Mask for SRNs used for HW Unit 3*/

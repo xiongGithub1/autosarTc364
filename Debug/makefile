@@ -10,10 +10,15 @@ PRODDIR = D:\Program Files (x86)\TASKING\TriCore v6.2r2\ctc
 all :
 
 -include "subdir.mk"
+-include "Appl\subdir.mk"
 -include "Appl\GenData\subdir.mk"
 -include "Appl\GenData\src\subdir.mk"
 -include "Appl\Source\subdir.mk"
 -include "Appl\Source\CDD\subdir.mk"
+-include "Appl\Source\CDD\MotorFoc\subdir.mk"
+-include "Appl\Source\CDD\TLE5012\subdir.mk"
+-include "Appl\Source\CDD\TLE5012\TLE5012\subdir.mk"
+-include "Appl\Source\CDD\TLE9180\subdir.mk"
 -include "BSW364\BswM\Implementation\subdir.mk"
 -include "BSW364\Can\Implementation\subdir.mk"
 -include "BSW364\CanIf\Implementation\subdir.mk"
@@ -26,11 +31,14 @@ all :
 -include "BSW364\Mcal_Tc3xx\Implementation\subdir.mk"
 -include "BSW364\Os\Implementation\subdir.mk"
 -include "BSW364\PduR\Implementation\subdir.mk"
+-include "BSW364\Sbc_30_Tlf35584\Implementation\subdir.mk"
 -include "BSW364\VStdLib\Implementation\subdir.mk"
 -include "MCAL364\Adc\ssc\src\subdir.mk"
 -include "MCAL364\Dio\ssc\src\subdir.mk"
 -include "MCAL364\Dma\ssc\src\subdir.mk"
 -include "MCAL364\Irq\Adc_Irq\subdir.mk"
+-include "MCAL364\Irq\Dma_Irq\subdir.mk"
+-include "MCAL364\Irq\Spi_Irq\subdir.mk"
 -include "MCAL364\Irq\ssc\src\subdir.mk"
 -include "MCAL364\McalLib\ssc\src\subdir.mk"
 -include "MCAL364\Mcu\ssc\src\subdir.mk"
@@ -57,6 +65,13 @@ $(EXT_LIBRARIES) : .dummy
 
 GENERATED_FILES += "last364.elf" "last364*.sre" "last364*.hex" "last364.map*" "last364.mdf" ".last364.elf.opt" ".last364.elf.d"
 -include "..\makefile.targets"
+
+
+all : cleanup_cache
+
+cleanup_cache: $(OBJ_FILES)
+	@echo Cleaning up compiler cache
+	@"${PRODDIR}\bin\expiretc" --days=7 "E:\workFiles\TC367\TC367\workspace\last364\.cache"
 
 
 clean : ".clean.opt"

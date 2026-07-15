@@ -1,0 +1,24 @@
+#ifndef MOTORCDD_FOC_H
+#define MOTORCDD_FOC_H
+
+#include "Std_Types.h"
+#include "MotorFoc_Types.h"
+
+extern MotorFoc_ContextType MotorCdd_FocContext;
+extern volatile uint32 MotorCdd_FocLoopCounter;
+
+void MotorCdd_FocInit(void);
+void MotorCdd_FocFastLoop(void);
+/* 1 ms ASW publishes Mode/Id/Iq; fast loop reads this mirror only. */
+void MotorCdd_FocSetCmdMirror(uint8 motorMode, float32 idRef, float32 iqRef);
+/* CDD main backup sync from RTE ports into the same mirror. */
+void MotorCdd_FocUpdateCmdMirror(void);
+/* Publish angle from slow path (after SPI); fast loop only reads cache. */
+void MotorCdd_FocPublishAngleCache(float32 angleDeg, float32 angleRad);
+void MotorCdd_FocUpdateAngleCacheFromSensor(void);
+void MotorCdd_FocPrepareOutputEnable(void);
+void MotorCdd_FocStopOutput(void);
+void MotorCdd_FocClearFault(void);
+uint8 MotorCdd_FocHasFault(void);
+
+#endif /* MOTORCDD_FOC_H */

@@ -147,7 +147,7 @@
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcSampleSyncEnable</DEFINITION-REF>
-                      <VALUE>false</VALUE>
+                      <VALUE>true</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcMSBDoubleClkEnable</DEFINITION-REF>
@@ -167,7 +167,7 @@
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcSyncConvMode</DEFINITION-REF>
-                      <VALUE>ADC_STAND_ALONE</VALUE>
+                      <VALUE>ADC_SYNC_MASTER</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcPrescale</DEFINITION-REF>
@@ -323,11 +323,11 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcGroupTriggSrc</DEFINITION-REF>
-                          <VALUE>ADC_TRIGG_SRC_SW</VALUE>
+                          <VALUE>ADC_TRIGG_SRC_HW</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcStreamingBufferMode</DEFINITION-REF>
-                          <VALUE>ADC_STREAM_BUFFER_LINEAR</VALUE>
+                          <VALUE>ADC_STREAM_BUFFER_CIRCULAR</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcStreamingNumSamples</DEFINITION-REF>
@@ -335,7 +335,7 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcHwExtTrigSelect</DEFINITION-REF>
-                          <VALUE>ADC_TRIG_NONE</VALUE>
+                          <VALUE>ADC_TRIG_8_GxREQTRI_GTM_ADCx_TRIG0</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcHwExtGateSelect</DEFINITION-REF>
@@ -369,6 +369,14 @@
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcResRegDefinition</DEFINITION-REF>
                           <VALUE>1</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcHwTrigSignal</DEFINITION-REF>
+                          <VALUE>ADC_HW_TRIG_RISING_EDGE</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcNotification</DEFINITION-REF>
+                          <VALUE>Adc_9183SenseVo1andVro_Notification</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                       <REFERENCE-VALUES>
                         <ECUC-REFERENCE-VALUE>
@@ -380,6 +388,32 @@
                           <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Adc/AdcConfigSet/AdcHwUnit_ADC0/AdcChannel_9183_VRO</VALUE-REF>
                         </ECUC-REFERENCE-VALUE>
                       </REFERENCE-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="0c04056d-0d88-4f17-9ba0-3b2e8628e416">
+                          <SHORT-NAME>GtmTriggerTimerConfig</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/GtmTriggerTimerConfig</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/GtmTriggerTimerConfig/GtmTimerClockSelect</DEFINITION-REF>
+                              <VALUE>GTM_CONFIGURABLE_CLOCK_0</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/GtmTriggerTimerConfig/GtmTimerTimePeriod</DEFINITION-REF>
+                              <VALUE>100</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/GtmTriggerTimerConfig/GtmTimerCM0Ticks</DEFINITION-REF>
+                              <VALUE>10000</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/GtmTriggerTimerConfig/GtmTimerUsed</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Mcu/Mcu/McuHardwareResourceAllocationConf_0/McuGtmAllocationConf_0/McuGtmAtomAllocationConf_0/McuGtmAtomChannelAllocationConf_7</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
                     </ECUC-CONTAINER-VALUE>
                     <ECUC-CONTAINER-VALUE UUID="47c3aa63-78d0-4090-bd1a-693cc6bf9198">
                       <SHORT-NAME>AdcChannel_9183_VO1</SHORT-NAME>
@@ -399,7 +433,7 @@
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcSyncConvChannelEnable</DEFINITION-REF>
-                          <VALUE>false</VALUE>
+                          <VALUE>true</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcBWDEnable</DEFINITION-REF>
@@ -471,7 +505,7 @@
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcSampleSyncEnable</DEFINITION-REF>
-                      <VALUE>false</VALUE>
+                      <VALUE>true</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcMSBDoubleClkEnable</DEFINITION-REF>
@@ -491,7 +525,7 @@
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcSyncConvMode</DEFINITION-REF>
-                      <VALUE>ADC_STAND_ALONE</VALUE>
+                      <VALUE>ADC_SYNC_SLAVE</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcPrescale</DEFINITION-REF>
@@ -597,7 +631,7 @@
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcSyncConvChannelEnable</DEFINITION-REF>
-                          <VALUE>false</VALUE>
+                          <VALUE>true</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcBWDEnable</DEFINITION-REF>
@@ -647,11 +681,11 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcGroupTriggSrc</DEFINITION-REF>
-                          <VALUE>ADC_TRIGG_SRC_SW</VALUE>
+                          <VALUE>ADC_TRIGG_SRC_HW</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcStreamingBufferMode</DEFINITION-REF>
-                          <VALUE>ADC_STREAM_BUFFER_LINEAR</VALUE>
+                          <VALUE>ADC_STREAM_BUFFER_CIRCULAR</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcStreamingNumSamples</DEFINITION-REF>
@@ -659,7 +693,7 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcHwExtTrigSelect</DEFINITION-REF>
-                          <VALUE>ADC_TRIG_NONE</VALUE>
+                          <VALUE>ADC_TRIG_8_GxREQTRI_GTM_ADCx_TRIG0</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcHwExtGateSelect</DEFINITION-REF>
@@ -693,6 +727,10 @@
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcResRegDefinition</DEFINITION-REF>
                           <VALUE>1</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcHwTrigSignal</DEFINITION-REF>
+                          <VALUE>ADC_HW_TRIG_RISING_EDGE</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                       <REFERENCE-VALUES>
                         <ECUC-REFERENCE-VALUE>
@@ -723,7 +761,7 @@
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcSyncConvChannelEnable</DEFINITION-REF>
-                          <VALUE>false</VALUE>
+                          <VALUE>true</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcBWDEnable</DEFINITION-REF>
@@ -795,7 +833,7 @@
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcSampleSyncEnable</DEFINITION-REF>
-                      <VALUE>false</VALUE>
+                      <VALUE>true</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcMSBDoubleClkEnable</DEFINITION-REF>
@@ -815,7 +853,7 @@
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcSyncConvMode</DEFINITION-REF>
-                      <VALUE>ADC_STAND_ALONE</VALUE>
+                      <VALUE>ADC_SYNC_SLAVE</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcPrescale</DEFINITION-REF>
@@ -921,7 +959,7 @@
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcSyncConvChannelEnable</DEFINITION-REF>
-                          <VALUE>false</VALUE>
+                          <VALUE>true</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcChannel/AdcBWDEnable</DEFINITION-REF>
@@ -971,11 +1009,11 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcGroupTriggSrc</DEFINITION-REF>
-                          <VALUE>ADC_TRIGG_SRC_SW</VALUE>
+                          <VALUE>ADC_TRIGG_SRC_HW</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcStreamingBufferMode</DEFINITION-REF>
-                          <VALUE>ADC_STREAM_BUFFER_LINEAR</VALUE>
+                          <VALUE>ADC_STREAM_BUFFER_CIRCULAR</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcStreamingNumSamples</DEFINITION-REF>
@@ -983,7 +1021,7 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcHwExtTrigSelect</DEFINITION-REF>
-                          <VALUE>ADC_TRIG_NONE</VALUE>
+                          <VALUE>ADC_TRIG_8_GxREQTRI_GTM_ADCx_TRIG0</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcHwExtGateSelect</DEFINITION-REF>
@@ -1013,6 +1051,10 @@
                           <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcResRegDefinition</DEFINITION-REF>
                           <VALUE>0</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcConfigSet/AdcHwUnit/AdcGroup/AdcHwTrigSignal</DEFINITION-REF>
+                          <VALUE>ADC_HW_TRIG_RISING_EDGE</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                       <REFERENCE-VALUES>
                         <ECUC-REFERENCE-VALUE>
@@ -1329,7 +1371,7 @@
                 </ECUC-NUMERICAL-PARAM-VALUE>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcGeneral/AdcGrpNotifCapability</DEFINITION-REF>
-                  <VALUE>false</VALUE>
+                  <VALUE>true</VALUE>
                 </ECUC-NUMERICAL-PARAM-VALUE>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcGeneral/AdcHwTriggerApi</DEFINITION-REF>
@@ -1353,7 +1395,7 @@
                 </ECUC-NUMERICAL-PARAM-VALUE>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcGeneral/AdcSyncConvEnable</DEFINITION-REF>
-                  <VALUE>false</VALUE>
+                  <VALUE>true</VALUE>
                 </ECUC-NUMERICAL-PARAM-VALUE>
                 <ECUC-TEXTUAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Adc/AdcGeneral/AdcPriorityImplementation</DEFINITION-REF>
@@ -1460,6 +1502,10 @@
                   <VALUE>_TRICORE_TC364_TQFP</VALUE>
                 </ECUC-TEXTUAL-PARAM-VALUE>
               </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="c2857d28-d6c3-4202-adab-c137ef24830a">
+              <SHORT-NAME>AdcDemEventParameterRefs</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Adc/AdcDemEventParameterRefs</DEFINITION-REF>
             </ECUC-CONTAINER-VALUE>
           </CONTAINERS>
         </ECUC-MODULE-CONFIGURATION-VALUES>

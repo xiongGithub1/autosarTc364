@@ -1,0 +1,99 @@
+=== PAGE 605 ===
+User’s Manual 30-7 V2.0.0 
+EVADCV3.0.5  2021-02
+AURIX™ TC36x
+ 
+Enhanced Versatile Analog-to-Digital Converter (EVADC)
+30.3.2 Digital Module Connections
+The EVADC module accepts a number of digital input si gnals and generates a number of output signals. This
+section summarizes the connection of these signals to other on-chip module s or to external resources via port
+pins.
+Table 253 Digital Connections for Product TC36x
+Signal Dir. Source/Destin. Description
+Gate Inputs for Primary and Secondary Groups (x = 0-3, 8-9, input line selected via bitfield GTSEL = [yyyyB])
+GxREQGTA I GTM_adcx_trig0 [0000 B] GTM ADC trigger 0
+GxREQGTB I GTM_adcx_trig1 [0001 B] GTM ADC trigger 1
+GxREQGTC I CCU6061 TRIG0 [0010 B] CCU6061 trigger output 0
+GxREQGTD I CCU6061 TRIG1 [0011 B] CCU6061 trigger output 1
+GxREQGTE I CCU6061 TRIG2 [0100 B] CCU6061 trigger output 2
+GxREQGTF I - [0101 B] Gating input F, group x
+GxREQGTG I GTM_adcx_trig4 [0110 B] GTM ADC trigger 4
+GxREQGTH I - [0111 B] Gating input H, group x
+GxREQGTI I - [1000 B] Gating input I, group x
+GxREQGTJ I - [1001 B] Gating input J, group x
+GxREQGTK I GTM_adcx_trig2 [1010 B] GTM ADC trigger 2
+GxREQGTL I GTM_adcx_trig3 [1011 B] GTM ADC trigger 3
+GyREQGTM I eru_pdout_y [1100 B] ERU pattern detection output y
+(y = 0 - 3)
+G8REQGTM I eru_pdout_0 [1100 B] ERU pattern detection output 0
+G9REQGTM I eru_pdout_1 [1100 B] ERU pattern detection output 1
+GxREQGTN I - [1101 B] Gating input N, group x
+GxREQGTO I - [1110 B] Gating input O, group x
+GxREQGTP I [internal] [1111 B] Extend inputs to the selected internal trigger 
+source (see GxTRCTR)
+GxREQGTySEL O GxREQTRyP 1) Selected gating signal of the respective source
+Trigger Inputs for Primary and Secondary Groups (x = 0-3, 8-9, input line selected via bitfield XTSEL = 
+[yyyyB])
+GxREQTRA I CCU60_SR3 [0000 B] CCU60 service request output 3
+GxREQTRB I CCU61_SR3 [0001 B] CCU61 service request output 3
+GxREQTRC I HSPDM_adc_trig [0010 B] HSPDM chirp trigger
+GxREQTRD I - [0011 B] Trigger input D, group x
+GxREQTRE I - [0100 B] Trigger input E, group x
+GxREQTRF I - [0101 B] Trigger input F, group x
+GxREQTRG I GTM_adcx_trig4 [0110 B] GTM ADC trigger 4
+GyREQTRH I eru_iout_y [0111 B] ERU interrupt output y
+(y = 0 - 7)
+G8REQTRH I eru_iout_0 [0111 B] ERU interrupt output 0
+OPEN MARKET VERSION
+
+=== PAGE 606 ===
+User’s Manual 30-8 V2.0.0 
+EVADCV3.0.5  2021-02
+AURIX™ TC36x
+ 
+Enhanced Versatile Analog-to-Digital Converter (EVADC)
+G9REQTRH I eru_iout_1 [0111 B] ERU interrupt output 1
+GxREQTRI I GTM_adcx_trig0 [1000 B] GTM ADC trigger 0
+GxREQTRJ I GTM_adcx_trig1 [1001 B] GTM ADC trigger 1
+GxREQTRK I GTM_adcx_trig2 [1010 B] GTM ADC trigger 2
+GxREQTRL I GTM_adcx_trig3 [1011 B] GTM ADC trigger 3
+GxREQTRM I vadc_gxsr1 [1100 B] Service request 1, group x
+GxREQTRN I vadc_c0sr1 [1101 B] Service request 1, common group 0
+GxREQTRO I vadc_c1sr1 [1110 B] Service request 1, common group 1
+GxREQTRyP I GxREQGTySEL 1) [1111B] Extend triggers to selected gating input of the 
+respective source
+GxREQTRySEL O - Selected trigger si gnal of the respective source
+Trigger/Gate Inputs for Fast Compare Channels (z = 0-1, input line selected via bitfield XTSEL = [yyyyB])
+FCzREQTRA I - [0000 B] Trigger input A
+FCzREQTRB I - [0001 B] Trigger input B
+FCzREQTRC I - [0010 B] Trigger input C
+FCzREQTRD I - [0011 B] Trigger input D
+FCzREQTRE I - [0100 B] Trigger input E
+FCzREQTRF I - [0101 B] Trigger input F
+FCzREQTRG I - [0110 B] Trigger input G
+FCzREQTRH I - [0111 B] Trigger input H
+FCzREQTRI I GTM_adcz_trig0 [1000 B] GTM ADCz trigger 0
+FCzREQTRJ I GTM_adcz_trig1 [1001 B] GTM ADCz trigger 1
+FCzREQTRK I GTM_adcz_trig2 [1010 B] GTM ADCz trigger 2
+FC0REQTRL I GTM_adc8_trig3 [1011 B] GTM ADC8 trigger 3
+FC1REQTRL I GTM_adc9_trig3 [1011 B] GTM ADC9 trigger 3
+FC0REQTRM I GTM_adc8_trig4 [1100 B] GTM ADC8 trigger 4
+FC1REQTRM I GTM_adc9_trig4 [1100 B] GTM ADC9 trigger 4
+FCzREQTRN I - [1101 B] Trigger input N
+FCzREQTRO I - [1110 B] Trigger input O
+FCzREQTRP I - [1111 B] Trigger input P
+Global Signals and Service Request Lines For Primary/Secondary Groups: x = 0-3, 8-9, for Fast Compare 
+Channels: z = 0-1
+GxDATA[20:0] O Fast Compare channel,
+RIF, GTM
+Result values written to RES15
+GxWR O Fast Compare channel,
+RIF, GTM
+Write signal for GxDATA
+EMUX00 O P02.6, P33.3 Control of extern al analog multiplexer interface 0
+EMUX01 O P02.7, P33.2
+EMUX02 O P02.8, P33.1
+Table 253 Digital Connections for Product TC36x  (cont’d)
+Signal Dir. Source/Destin. Description
+OPEN MARKET VERSION
+

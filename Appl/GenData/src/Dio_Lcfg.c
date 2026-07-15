@@ -15,7 +15,7 @@
 **                                                                            **
 **  VERSION   : 7.0.0                                                         **
 **                                                                            **
-**  DATE, TIME: 2024-07-06, 16:21:30       !!!IGNORE-LINE!!!                  **
+**  DATE, TIME: 2024-07-14, 21:03:45       !!!IGNORE-LINE!!!                  **
 **                                                                            **
 **  GENERATOR : Build b191017-0938           !!!IGNORE-LINE!!!                **
 **                                                                            **
@@ -102,8 +102,8 @@
     },
     {
     /* Port15*/
-      DIO_PORT_NOT_CONFIGURED,
-      (0x0000U)
+      DIO_PORT_CONFIGURED,
+      (0x0004U)
     },
     {
     /* Port20*/
