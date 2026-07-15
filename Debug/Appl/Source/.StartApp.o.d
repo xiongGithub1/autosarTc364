@@ -352,10 +352,10 @@ Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenDat
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\inc\Dio_Cfg.h" :
 Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Components\Rte_EcuM_Type.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Components\Rte_EcuM_Type.h" :
-Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE9180\tle9180_test.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE9180\tle9180_test.h" :
-Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE9180\Tle9180_Driver.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE9180\Tle9180_Driver.h" :
+Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\Appl_BringupCfg.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\Appl_BringupCfg.h" :
+Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\TestFiles\tle9180_test.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\TestFiles\tle9180_test.h" :
 Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\MCAL364\Spi\ssc\inc\Spi.h"
 "E:\workFiles\TC367\TC367\workspace\last364\MCAL364\Spi\ssc\inc\Spi.h" :
 Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\inc\Spi_Cfg.h"
@@ -520,8 +520,24 @@ Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\I
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
 Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
-Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\Appl_BringupCfg.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\Appl_BringupCfg.h" :
+Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE9180\Tle9180_Driver.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE9180\Tle9180_Driver.h" :
+Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\TestFiles\tle5012_test.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\TestFiles\tle5012_test.h" :
+Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\MCAL364\Spi\ssc\inc\Spi.h"
+"E:\workFiles\TC367\TC367\workspace\last364\MCAL364\Spi\ssc\inc\Spi.h" :
+Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.h" :
+Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE5012\TLE5012\tle5012b.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE5012\TLE5012\tle5012b.h" :
+Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE5012\TLE5012\tle5012b_reg\tle5012_a.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE5012\TLE5012\tle5012b_reg\tle5012_a.h" :
+Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE5012\TLE5012\tle5012b_reg\tle5012_a_regdef.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE5012\TLE5012\tle5012b_reg\tle5012_a_regdef.h" :
+Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE5012\Tle5012bd_Spi.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE5012\Tle5012bd_Spi.h" :
+Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\MCAL364\Spi\ssc\inc\Spi.h"
+"E:\workFiles\TC367\TC367\workspace\last364\MCAL364\Spi\ssc\inc\Spi.h" :
 Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Components\StartApp_MemMap.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Components\StartApp_MemMap.h" :
 Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"

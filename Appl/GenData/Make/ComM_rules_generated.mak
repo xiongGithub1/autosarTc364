@@ -21,7 +21,7 @@
 # #  FILE DESCRIPTION
 # #  -------------------------------------------------------------------------------------------------------------------
 # #              File: ComM_rules_generated.mak
-# #   Generation Time: 2024-07-14 21:03:53
+# #   Generation Time: 2024-07-15 14:44:00
 # #           Project: last364 - Version 1.0
 # #          Delivery: CBD2200508_D00
 # #      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2

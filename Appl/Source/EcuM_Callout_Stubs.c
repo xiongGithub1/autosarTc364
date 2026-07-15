@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Callout_Stubs.c
- *   Generation Time: 2024-07-14 21:03:52
+ *   Generation Time: 2024-07-15 14:43:59
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -285,6 +285,7 @@ FUNC(void, ECUM_CODE) EcuM_AL_DriverInitOne(void)
   Spi_Init( &Spi_Config );
   Adc_Init( &Adc_Config );
   Pwm_17_GtmCcu6_Init( &Pwm_17_GtmCcu6_Config );
+  Dma_Init( &Dma_Config );
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_AL_DriverInitOne>                  DO NOT CHANGE THIS COMMENT!

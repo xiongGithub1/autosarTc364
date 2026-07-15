@@ -2,17 +2,29 @@
 **** Build of configuration Debug for project last364 ****
 
 "D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
-Compiling Tle5012bd_Spi.c
-ctc W505: ["..\Appl\Source\CDD\TLE5012\Tle5012bd_Spi.c" 52/7] implicit declaration of function "Spi_MainFunction_Handling"
-ctc W577: ["..\Appl\Source\CDD\TLE5012\Tle5012bd_Spi.c" 52/32] calling a function without a prototype
-ctc W505: ["..\Appl\Source\CDD\TLE5012\Tle5012bd_Spi.c" 69/5] implicit declaration of function "Spi_MainFunction_Handling"
-ctc W577: ["..\Appl\Source\CDD\TLE5012\Tle5012bd_Spi.c" 69/30] calling a function without a prototype
-ctc W529: ["..\Appl\Source\CDD\TLE5012\Tle5012bd_Spi.c" 65/48] overflow in constant expression of type "unsigned long int"
-0 errors, 5 warnings
+Compiling MotorControll.c
+Compiling StartApp.c
+Compiling MotorCdd.c
+Compiling MotorCdd_Adc.c
+ctc W536: ["..\Appl\Source\MotorControll.c" 178/13] unused static function "MotorControll_UpdateSensorObservation"
+ctc W536: ["..\Appl\Source\MotorControll.c" 215/13] unused static function "MotorControll_UpdateCurrentRefsViaRte"
+ctc W536: ["..\Appl\Source\MotorControll.c" 189/13] unused static function "MotorControll_UpdateGateDriverObservation"
+0 errors, 3 warnings
+ctc W536: ["..\Appl\Source\CDD\MotorCdd.c" 178/13] unused static function "MotorCdd_PwmComplementaryInit"
+0 errors, 1 warnings
+ctc W536: ["..\Appl\Source\CDD\MotorFoc\MotorCdd_Adc.c" 233/13] unused static function "MotorCdd_AdcLatchFrozenRaw"
+0 errors, 1 warnings
+ctc W505: ["..\Appl\Source\StartApp.c" 226/8] implicit declaration of function "EcuM_RequestRUN"
+ctc W577: ["..\Appl\Source\StartApp.c" 226/23] calling a function without a prototype
+ctc W505: ["..\Appl\Source\StartApp.c" 227/2] implicit declaration of function "ComM_CommunicationAllowed"
+ctc W577: ["..\Appl\Source\StartApp.c" 227/27] calling a function without a prototype
+ctc W505: ["..\Appl\Source\StartApp.c" 228/8] implicit declaration of function "ComM_RequestComMode"
+ctc W577: ["..\Appl\Source\StartApp.c" 228/27] calling a function without a prototype
+0 errors, 6 warnings
 Linking to last364.elf
 Cleaning up compiler cache
 
-Time consumed: 9328 ms
+Time consumed: 11353 ms
 **** End of build ****
 
 Tool info: 

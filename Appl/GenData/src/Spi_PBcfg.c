@@ -15,7 +15,7 @@
 **                                                                            **
 **  VERSION   : 17.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-07-14, 21:03:47  !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2024-07-15, 14:43:55  !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  GENERATOR : Build b191017-0938      !!!IGNORE-LINE!!!                   **
 **                                                                            **
@@ -529,8 +529,8 @@ static const Spi_QspiHwConfigType Spi_kQspiHwConfigQSPI1 =
 {
   0x00200000U,               /* Active CS Level, SSOC SFR value */
   SPI_JOB_QUEUE_LENGTH_QSPI1,/* Job Queue Length */
-  (uint8)4U,                 /* DMA Rx Channel */
-  (uint8)5U,                 /* DMA Tx Channel */
+  (uint8)5U,                 /* DMA Rx Channel */
+  (uint8)6U,                 /* DMA Tx Channel */
   SPI_DMA_MAX_TCS_NUM_QSPI1, /* DMA TCS count, for both Rx and Tx */
   SPI_CLK_SLEEP_DISABLE,     /* Module Sleep disabled */
   (uint8)1U,                 /* Input class, MRIS bit field in PISEL SFR */
@@ -580,8 +580,8 @@ static const Spi_QspiHwConfigType Spi_kQspiHwConfigQSPI2 =
 {
   0x00040000U,               /* Active CS Level, SSOC SFR value */
   SPI_JOB_QUEUE_LENGTH_QSPI2,/* Job Queue Length */
-  (uint8)0U,                 /* DMA Rx Channel */
-  (uint8)1U,                 /* DMA Tx Channel */
+  (uint8)1U,                 /* DMA Rx Channel */
+  (uint8)2U,                 /* DMA Tx Channel */
   SPI_DMA_MAX_TCS_NUM_QSPI2, /* DMA TCS count, for both Rx and Tx */
   SPI_CLK_SLEEP_DISABLE,     /* Module Sleep disabled */
   (uint8)1U,                 /* Input class, MRIS bit field in PISEL SFR */
@@ -631,8 +631,8 @@ static const Spi_QspiHwConfigType Spi_kQspiHwConfigQSPI3 =
 {
   0x10000000U,               /* Active CS Level, SSOC SFR value */
   SPI_JOB_QUEUE_LENGTH_QSPI3,/* Job Queue Length */
-  (uint8)2U,                 /* DMA Rx Channel */
-  (uint8)3U,                 /* DMA Tx Channel */
+  (uint8)3U,                 /* DMA Rx Channel */
+  (uint8)4U,                 /* DMA Tx Channel */
   SPI_DMA_MAX_TCS_NUM_QSPI3, /* DMA TCS count, for both Rx and Tx */
   SPI_CLK_SLEEP_DISABLE,     /* Module Sleep disabled */
   (uint8)3U,                 /* Input class, MRIS bit field in PISEL SFR */

@@ -488,48 +488,7 @@ void MotorFoc_RunCurrentLoop(MotorFoc_ContextType* ctx)
   MotorFoc_ApplyPwm(ctx);
 }
 
-void MotorFoc_RunVoltageOpenLoop(MotorFoc_ContextType* ctx,
-                                 float32 vdRef,
-                                 float32 vqRef)
-{
-  if (MotorFoc_CurrentLoopFaultClearRequest != 0U)
-  {
-    MotorFoc_CurrentLoopFaultClearRequest = 0U;
-    MotorFoc_CurrentLoopClearFault();
-  }
 
-  if (MotorFoc_CurrentLoopFault != 0U)
-  {
-    MotorFoc_CurrentLoopStop(ctx);
-    return;
-  }
-
-  if (ctx->i_motor.vdc < MOTORFOC_VDC_MIN_RUN)
-  {
-    MotorFoc_SetFault(ctx, MOTORFOC_CURRENT_FAULT_UNDERVOLT);
-    MotorFoc_CurrentLoopStop(ctx);
-    return;
-  }
-
-  if (MotorFoc_CheckOverCurrentFault(ctx) != 0U)
-  {
-    MotorFoc_SetFault(ctx, MOTORFOC_CURRENT_FAULT_OVERCURRENT);
-    MotorFoc_CurrentLoopStop(ctx);
-    return;
-  }
-
-  MotorFoc_DoClarke(ctx);
-  MotorFoc_UpdateSinCos(ctx);
-  MotorFoc_DoPark(ctx);
-  MotorFoc_ResetCurrentPidState(ctx);
-  ctx->idqRef.real = 0.0F;
-  ctx->idqRef.imag = 0.0F;
-  ctx->vdqRef.real = vdRef;
-  ctx->vdqRef.imag = vqRef;
-  MotorFoc_DoInversePark(ctx);
-  MotorFoc_DoSvpwm(ctx);
-  MotorFoc_ApplyPwm(ctx);
-}
 
 void MotorFoc_CurrentLoopStop(MotorFoc_ContextType* ctx)
 {

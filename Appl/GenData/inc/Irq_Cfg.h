@@ -15,7 +15,7 @@
 **                                                                            **
 **  VERSION   : 8.0.0                                                         **
 **                                                                            **
-**  DATE, TIME: 2024-07-14, 21:03:44      !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2024-07-15, 14:43:53      !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  GENERATOR : Build b191017-0938        !!!IGNORE-LINE!!!                   **
 **                                                                            **
@@ -117,9 +117,9 @@ Container : IrqQspi interruptConfiguration
 
 /* Qspi Tx interrupt Priority Setting*/
 #define IRQ_QSPI0_TX_PRIO           0x0
-#define IRQ_QSPI1_TX_PRIO           0x5
-#define IRQ_QSPI2_TX_PRIO           0x1
-#define IRQ_QSPI3_TX_PRIO           0x3
+#define IRQ_QSPI1_TX_PRIO           0x6
+#define IRQ_QSPI2_TX_PRIO           0x2
+#define IRQ_QSPI3_TX_PRIO           0x4
 #define IRQ_QSPI4_TX_PRIO           0x0
 #define IRQ_QSPI5_TX_PRIO           0x0
 
@@ -141,9 +141,9 @@ Container : IrqQspi interruptConfiguration
 
 /* Qspi Rx interrupt Priority Setting*/
 #define IRQ_QSPI0_RX_PRIO           0x0
-#define IRQ_QSPI1_RX_PRIO           0x4
-#define IRQ_QSPI2_RX_PRIO           0x0
-#define IRQ_QSPI3_RX_PRIO           0x2
+#define IRQ_QSPI1_RX_PRIO           0x5
+#define IRQ_QSPI2_RX_PRIO           0x1
+#define IRQ_QSPI3_RX_PRIO           0x3
 #define IRQ_QSPI4_RX_PRIO           0x0
 #define IRQ_QSPI5_RX_PRIO           0x0
 
@@ -505,7 +505,7 @@ Container : IrqDMAinterruptConfiguration
 #define IRQ_DMA_CHANNEL98_SR_PRIO    0x0
 #define IRQ_DMA_CHANNEL99_SR_PRIO    0x0
 #define IRQ_DMA_CHANNEL9_SR_PRIO    0x0
-#define IRQ_DMA_ERR0_SR_PRIO          0x3c
+#define IRQ_DMA_ERR0_SR_PRIO          0x5a
 #define IRQ_DMA_ERR1_SR_PRIO          0x0
 #define IRQ_DMA_ERR2_SR_PRIO          0x0
 #define IRQ_DMA_ERR3_SR_PRIO          0x0

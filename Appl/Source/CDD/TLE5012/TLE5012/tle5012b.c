@@ -27,9 +27,16 @@ static void tle5012b_delay_us(uint32 delayUs)
   }
   else
   {
-    const uint32 startTick = Mcal_DelayGetTick();
-    const uint32 targetTicks = (delayUs * 1000000UL) / resolution;
+    uint32 targetTicks;
+    uint32 startTick;
 
+    /* Resolution is ns/tick → ticks = (µs * 1000) / ns */
+    targetTicks = (delayUs * 1000UL) / resolution;
+    if (targetTicks == 0U)
+    {
+      targetTicks = 1U;
+    }
+    startTick = Mcal_DelayGetTick();
     while ((Mcal_DelayGetTick() - startTick) < targetTicks)
     {
       /* wait */

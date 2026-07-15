@@ -11,7 +11,7 @@
 #include "Spi_Cfg.h"
 
 #define TLE9180_SPI_FRAME_MASK       (0x00FFFFFFU)
-#define TLE9180_SPI_WAIT_TIMEOUT_US  (2000U)
+#define TLE9180_SPI_WAIT_TIMEOUT_US  (500U)
 
 static uint32 Tle9180_SpiTxBuf;
 static uint32 Tle9180_SpiRxBuf;
@@ -19,6 +19,8 @@ static uint32 Tle9180_SpiRxBuf;
 void Tle9180_Port_DelayUs(uint32 delayUs)
 {
   uint32 resolution = Mcal_DelayTickResolution();
+  uint32 targetTicks;
+  uint32 startTick;
 
   if (resolution == 0U)
   {
@@ -36,9 +38,13 @@ void Tle9180_Port_DelayUs(uint32 delayUs)
   }
   else
   {
-    const uint32 startTick = Mcal_DelayGetTick();
-    const uint32 targetTicks = (delayUs * 1000000UL) / resolution;
-
+    /* Resolution is ns/tick → ticks = (µs * 1000) / ns */
+    targetTicks = (delayUs * 1000UL) / resolution;
+    if (targetTicks == 0U)
+    {
+      targetTicks = 1U;
+    }
+    startTick = Mcal_DelayGetTick();
     while ((Mcal_DelayGetTick() - startTick) < targetTicks)
     {
       /* wait */
@@ -112,8 +118,9 @@ static Std_ReturnType Tle9180_Port_WaitSeqDone(void)
   {
     volatile uint32 spin;
 
-    for (spin = 0U; spin < 200000UL; spin++)
+    for (spin = 0U; spin < 50000UL; spin++)
     {
+      Spi_MainFunction_Handling();
       seqResult = Spi_GetSequenceResult(SpiConf_SpiSequence_SpiSequence_9183);
       if (seqResult != SPI_SEQ_PENDING)
       {
@@ -126,10 +133,16 @@ static Std_ReturnType Tle9180_Port_WaitSeqDone(void)
   }
 
   startTick = Mcal_DelayGetTick();
-  targetTicks = (TLE9180_SPI_WAIT_TIMEOUT_US * 1000000UL) / resolution;
+  /* Resolution is ns/tick → ticks = (µs * 1000) / ns. Do NOT use *1e6 (that waits ms). */
+  targetTicks = (TLE9180_SPI_WAIT_TIMEOUT_US * 1000UL) / resolution;
+  if (targetTicks == 0U)
+  {
+    targetTicks = 1U;
+  }
 
   do
   {
+    Spi_MainFunction_Handling();
     seqResult = Spi_GetSequenceResult(SpiConf_SpiSequence_SpiSequence_9183);
     if (seqResult != SPI_SEQ_PENDING)
     {
@@ -160,6 +173,8 @@ Std_ReturnType Tle9180_Port_SpiExchange(IfxTLE9180 *handle, uint32 txFrame)
       return E_NOT_OK;
     }
   }
+
+  /* AsyncMode already POLLING from Appl_SpiDmaHwInit — do not SetAsyncMode here. */
 
   handle->transmit.U = txFrame & TLE9180_SPI_FRAME_MASK;
   Tle9180_SpiTxBuf = handle->transmit.U;

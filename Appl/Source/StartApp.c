@@ -52,8 +52,15 @@ uint32 StartApp_Cyclic250msCounter = 0U;
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of include and declaration area >>        DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
-#include "tle9180_test.h"
 #include "Appl_BringupCfg.h"
+#if (APPL_SPI_BRINGUP_TEST == 1)
+#if (APPL_TLE9180_TEST_EN == 1)
+#include "tle9180_test.h"
+#endif
+#if (APPL_TLE5012_TEST_EN == 1)
+#include "tle5012_test.h"
+#endif
+#endif
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of include and declaration area >>          DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -109,7 +116,15 @@ FUNC(void, StartApp_CODE) StartApp_Cyclic10ms(void) /* PRQA S 0624, 3206 */ /* M
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
  * Symbol: StartApp_Cyclic10ms
  *********************************************************************************************************************/
-
+  /* SPI bring-up lives here (not 1ms): blocking SPI wait must not starve 1ms scheduling. */
+#if (APPL_SPI_BRINGUP_TEST == 1)
+#if (APPL_TLE9180_TEST_EN == 1)
+  Tle9180Test_RunOnce();
+#endif
+#if (APPL_TLE5012_TEST_EN == 1)
+  Tle5012Test_RunOnce();
+#endif
+#endif
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -142,10 +157,7 @@ FUNC(void, StartApp_CODE) StartApp_Cyclic1ms(void) /* PRQA S 0624, 3206 */ /* MD
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
  * Symbol: StartApp_Cyclic1ms
  *********************************************************************************************************************/
-  /* SPI bring-up: poll 9180 + update Tle9180Test_* watch vars. */
-#if (APPL_SPI9180_BRINGUP == 1)
-  Tle9180Test_RunOnce();
-#endif
+  /* Keep empty in SPI bring-up: heavy SPI tests run in Cyclic10ms. */
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -216,9 +228,14 @@ FUNC(void, StartApp_CODE) StartApp_Init(void) /* PRQA S 0624, 3206 */ /* MD_Rte_
 	(void)ComM_RequestComMode(ComMConf_ComMUser_CN_CAN00_06ecbb07,
 	          COMM_FULL_COMMUNICATION);
 
-  /* TLE9180 SPI bring-up only; set APPL_SPI9180_BRINGUP=0 to restore motor path. */
-#if (APPL_SPI9180_BRINGUP == 1)
+  /* SPI bring-up: 9180 first, then 5012. Set APPL_SPI_BRINGUP_TEST=0 for motor. */
+#if (APPL_SPI_BRINGUP_TEST == 1)
+#if (APPL_TLE9180_TEST_EN == 1)
   Tle9180Test_Init();
+#endif
+#if (APPL_TLE5012_TEST_EN == 1)
+  Tle5012Test_Init();
+#endif
 #endif
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!

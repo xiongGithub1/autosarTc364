@@ -287,7 +287,7 @@ uint8 MotorControll_IsOutputEnabled(void)
 void MotorControll_MainFunction(void)
 {
 #if (APPL_SPI9180_BRINGUP == 1)
-  /* SPI9180 bring-up: do not run motor control / 5012 SPI. */
+  /* SPI bring-up (APPL_SPI_BRINGUP_TEST): do not run motor control / 5012 SPI. */
   return;
 #else
   MotorMode_Type motorMode;
