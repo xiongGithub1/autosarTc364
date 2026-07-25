@@ -58,10 +58,13 @@ void tle5012b_delay_us(uint32 delayUs);
 void tle5012b_write_fast(uint16 address, uint16 data);
 uint16 tle5012b_read_fast(uint8 address);
 void tle5012b_read_AngleSpeed(Tle5012 *tle5012);
-void tle5012b_read_angle(Tle5012 *tle5012);
+Std_ReturnType tle5012b_read_angle(Tle5012 *tle5012);
+Std_ReturnType tle5012b_process_angle_raw(Tle5012 *tle5012, uint16 avalRaw);
 boolean tle5012b_ChangeAngleDirection(boolean Dir);
 void tle5012b_ChangeAngleBasic(Tle5012 *tle5012, uint16 angleBasic);
 void tle5012b_read_all(void);
 unsigned char CRC8(unsigned char *message, unsigned char Bytelength, unsigned char *TableCRC);
 
 #endif /* TLE5012B_H */
+
+

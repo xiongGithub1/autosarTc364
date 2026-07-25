@@ -56,6 +56,7 @@ uint32 StartApp_Cyclic250msCounter = 0U;
  * DO NOT CHANGE THIS COMMENT!           << Start of include and declaration area >>        DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
 #include "MotorCdd_Foc.h"
+#include "MotorControll.h"
 #include "MotorZeroCal.h"
 #include "Tle9180_Driver.h"
 #include "Tle5012bd_Driver.h"
@@ -146,20 +147,21 @@ FUNC(void, StartApp_CODE) StartApp_Cyclic1ms(void) /* PRQA S 0624, 3206 */ /* MD
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
  * Symbol: StartApp_Cyclic1ms
  *********************************************************************************************************************/
-  /* Bring up TLE5012 SSC once (replaces need to unplug/replug angle cable). */
-  if (Tle5012bd_Driver_GetState() == TLE5012BD_STATE_WAIT_SSC)
+  /* 9180, 5012 startup polling, and ZeroCal run in the 1 ms task. */
+  Tle9180_Driver_MainFunction();
+
+  /* Read the encoder from power-on onward. Closed-loop FOC keeps its
+   * higher-rate ADC fast-loop reads; the driver serializes transitions. */
+  if ((MotorControll_OpenLoopEnable != 0U) ||
+      ((MotorControll_MotorModeCmd != MOTOR_MODE_FOC_SPEED) &&
+       (MotorControll_MotorModeCmd != MOTOR_MODE_FOC_CURRENT)))
   {
-    if (StartApp_Cyclic1msCounter >= 100U)
+    if (Tle5012bd_Driver_ReadAngleSlow(&Tle5012bd_Sensor) == E_OK)
     {
-      (void)Tle5012bd_Driver_SscActivate();
+      MotorCdd_FocUpdateAngleCacheFromSensor();
     }
   }
 
-  /* 9180 + ZeroCal in 1 ms. 5012 angle is in FocFastLoop (ANGLE_SPI_IN_FASTLOOP=1). */
-#if (MOTORCDD_FOC_ANGLE_SPI_IN_FASTLOOP == 0U)
-  MotorCdd_FocServiceAngleSpi1ms();
-#endif
-  Tle9180_Driver_MainFunction();
   MotorZeroCal_MainFunction();
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!

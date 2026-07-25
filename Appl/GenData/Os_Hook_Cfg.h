@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hook_Cfg.h
- *   Generation Time: 2024-07-16 16:49:59
+ *   Generation Time: 2026-07-25 19:18:42
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -57,10 +57,10 @@
  *********************************************************************************************************************/
 
 /*! Defines whether the OS shall call startup hooks (STD_ON) or not (STD_OFF). */
-# define OS_CFG_STARTUPHOOKS                     (STD_OFF)
+# define OS_CFG_STARTUPHOOKS                     (STD_ON)
 
 /*! Defines whether the OS shall call shutdown hooks (STD_ON) or not (STD_OFF). */
-# define OS_CFG_SHUTDOWNHOOKS                    (STD_OFF)
+# define OS_CFG_SHUTDOWNHOOKS                    (STD_ON)
 
 /*! Defines whether the OS shall call error hooks (STD_ON) or not (STD_OFF). */
 # define OS_CFG_ERRORHOOKS                       (STD_ON)
@@ -69,7 +69,7 @@
 # define OS_CFG_PROTECTIONHOOK                   (STD_OFF)
 
 /*! Number of all configured Hooks. */
-# define OS_CFG_NUM_HOOKS                        (2u)
+# define OS_CFG_NUM_HOOKS                        (4u)
 
 
 /**********************************************************************************************************************

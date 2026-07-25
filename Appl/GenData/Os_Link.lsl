@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Link.lsl
- *   Generation Time: 2024-07-16 16:49:59
+ *   Generation Time: 2026-07-25 19:18:42
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -115,6 +115,54 @@ else
   "_OS_OS_COREINITHOOK_CODE_START" = 0;
   "_OS_OS_COREINITHOOK_CODE_END" = 0;
   "_OS_OS_COREINITHOOK_CODE_LIMIT" = 0;
+}
+if (exists(".text.OS_PANICHOOK_CODE"))
+{
+  group OS_PANICHOOK_CODE_GROUP(align=8)
+  {
+    select "[.]text.OS_PANICHOOK_CODE";
+  }
+  "_OS_PANICHOOK_CODE_START" = "_lc_gb_OS_PANICHOOK_CODE_GROUP";
+  "_OS_PANICHOOK_CODE_END" = "_lc_ge_OS_PANICHOOK_CODE_GROUP" - 1;
+  "_OS_PANICHOOK_CODE_LIMIT" = "_lc_ge_OS_PANICHOOK_CODE_GROUP";
+}
+else
+{
+  "_OS_PANICHOOK_CODE_START" = 0;
+  "_OS_PANICHOOK_CODE_END" = 0;
+  "_OS_PANICHOOK_CODE_LIMIT" = 0;
+}
+if (exists(".text.OS_SHUTDOWNHOOK_CODE"))
+{
+  group OS_SHUTDOWNHOOK_CODE_GROUP(align=8)
+  {
+    select "[.]text.OS_SHUTDOWNHOOK_CODE";
+  }
+  "_OS_SHUTDOWNHOOK_CODE_START" = "_lc_gb_OS_SHUTDOWNHOOK_CODE_GROUP";
+  "_OS_SHUTDOWNHOOK_CODE_END" = "_lc_ge_OS_SHUTDOWNHOOK_CODE_GROUP" - 1;
+  "_OS_SHUTDOWNHOOK_CODE_LIMIT" = "_lc_ge_OS_SHUTDOWNHOOK_CODE_GROUP";
+}
+else
+{
+  "_OS_SHUTDOWNHOOK_CODE_START" = 0;
+  "_OS_SHUTDOWNHOOK_CODE_END" = 0;
+  "_OS_SHUTDOWNHOOK_CODE_LIMIT" = 0;
+}
+if (exists(".text.OS_STARTUPHOOK_CODE"))
+{
+  group OS_STARTUPHOOK_CODE_GROUP(align=8)
+  {
+    select "[.]text.OS_STARTUPHOOK_CODE";
+  }
+  "_OS_STARTUPHOOK_CODE_START" = "_lc_gb_OS_STARTUPHOOK_CODE_GROUP";
+  "_OS_STARTUPHOOK_CODE_END" = "_lc_ge_OS_STARTUPHOOK_CODE_GROUP" - 1;
+  "_OS_STARTUPHOOK_CODE_LIMIT" = "_lc_ge_OS_STARTUPHOOK_CODE_GROUP";
+}
+else
+{
+  "_OS_STARTUPHOOK_CODE_START" = 0;
+  "_OS_STARTUPHOOK_CODE_END" = 0;
+  "_OS_STARTUPHOOK_CODE_LIMIT" = 0;
 }
 #endif
 

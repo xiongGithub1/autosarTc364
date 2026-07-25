@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Link_Core0_Stacks.lsl
- *   Generation Time: 2026-07-25 15:51:51
+ *   Generation Time: 2026-07-25 19:18:42
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -111,6 +111,24 @@ group OS_STACK_OSCORE0_KERNEL_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=
 "_OS_STACK_OSCORE0_KERNEL_VAR_NOINIT_START" = "_lc_gb_OS_STACK_OSCORE0_KERNEL_VAR_NOINIT_GROUP";
 "_OS_STACK_OSCORE0_KERNEL_VAR_NOINIT_END" = "_lc_ge_OS_STACK_OSCORE0_KERNEL_VAR_NOINIT_GROUP" - 1;
 "_OS_STACK_OSCORE0_KERNEL_VAR_NOINIT_LIMIT" = "_lc_ge_OS_STACK_OSCORE0_KERNEL_VAR_NOINIT_GROUP";
+
+/* Stack: OsCore0_Shutdown (1024 Byte) */
+group OS_STACK_OSCORE0_SHUTDOWN_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+{
+  select "[.]bss.OS_STACK_OSCORE0_SHUTDOWN_VAR_NOINIT";
+}
+"_OS_STACK_OSCORE0_SHUTDOWN_VAR_NOINIT_START" = "_lc_gb_OS_STACK_OSCORE0_SHUTDOWN_VAR_NOINIT_GROUP";
+"_OS_STACK_OSCORE0_SHUTDOWN_VAR_NOINIT_END" = "_lc_ge_OS_STACK_OSCORE0_SHUTDOWN_VAR_NOINIT_GROUP" - 1;
+"_OS_STACK_OSCORE0_SHUTDOWN_VAR_NOINIT_LIMIT" = "_lc_ge_OS_STACK_OSCORE0_SHUTDOWN_VAR_NOINIT_GROUP";
+
+/* Stack: OsCore0_Startup (1024 Byte) */
+group OS_STACK_OSCORE0_STARTUP_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=8)
+{
+  select "[.]bss.OS_STACK_OSCORE0_STARTUP_VAR_NOINIT";
+}
+"_OS_STACK_OSCORE0_STARTUP_VAR_NOINIT_START" = "_lc_gb_OS_STACK_OSCORE0_STARTUP_VAR_NOINIT_GROUP";
+"_OS_STACK_OSCORE0_STARTUP_VAR_NOINIT_END" = "_lc_ge_OS_STACK_OSCORE0_STARTUP_VAR_NOINIT_GROUP" - 1;
+"_OS_STACK_OSCORE0_STARTUP_VAR_NOINIT_LIMIT" = "_lc_ge_OS_STACK_OSCORE0_STARTUP_VAR_NOINIT_GROUP";
 
 /* Stack: OsCore0_Task_Prio4294967295 (1024 Byte) */
 group OS_STACK_OSCORE0_TASK_PRIO4294967295_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=8)

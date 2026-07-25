@@ -15,7 +15,7 @@
 **                                                                            **
 **  VERSION   : 8.0.0                                                         **
 **                                                                            **
-**  DATE, TIME: 2026-07-25, 17:19:08      !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2026-07-25, 21:01:42      !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  GENERATOR : Build b191017-0938        !!!IGNORE-LINE!!!                   **
 **                                                                            **
@@ -505,7 +505,7 @@ Container : IrqDMAinterruptConfiguration
 #define IRQ_DMA_CHANNEL98_SR_PRIO    0x0
 #define IRQ_DMA_CHANNEL99_SR_PRIO    0x0
 #define IRQ_DMA_CHANNEL9_SR_PRIO    0x0
-#define IRQ_DMA_ERR0_SR_PRIO          0x5a
+#define IRQ_DMA_ERR0_SR_PRIO          0x4b
 #define IRQ_DMA_ERR1_SR_PRIO          0x0
 #define IRQ_DMA_ERR2_SR_PRIO          0x0
 #define IRQ_DMA_ERR3_SR_PRIO          0x0

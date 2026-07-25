@@ -37,12 +37,8 @@ static uint8 MotorCdd_LastSensorElectricalRawValid = 0U;
 /* Skip SPI for first ~50 ms after FOC init (sensor SSC settle / power-up). */
 #define MOTORCDD_FOC_ANGLE_SPI_BOOT_BLANK_LOOPS   (500U)
 
-/* When SPI is still 1 ms: extrapolate across ~10 fast loops. */
-#define MOTORCDD_FOC_SENSOR_UPDATE_FASTLOOPS   (10.0F)
-
 static uint16 MotorCdd_AngleSpiBootBlankLeft = MOTORCDD_FOC_ANGLE_SPI_BOOT_BLANK_LOOPS;
 volatile uint32 MotorCdd_AngleSpiFastLoopCount = 0U;
-volatile uint32 MotorCdd_AngleSpiSkipBusyCount = 0U;
 
 static void MotorCdd_ConvertMechanicalToElectricalAngle(float32 mechanicalRaw,
                                                          float32* electricalRaw,
@@ -84,7 +80,6 @@ void MotorCdd_FocInit(void)
   MotorCdd_LastSensorElectricalRawValid = 0U;
   MotorCdd_AngleSpiBootBlankLeft = MOTORCDD_FOC_ANGLE_SPI_BOOT_BLANK_LOOPS;
   MotorCdd_AngleSpiFastLoopCount = 0U;
-  MotorCdd_AngleSpiSkipBusyCount = 0U;
 
   MotorFoc_CurrentLoopInit(&MotorCdd_FocContext);
   MotorFoc_SpeedLoopInit(&MotorCdd_FocContext);
@@ -124,7 +119,7 @@ void MotorCdd_FocUpdateAngleCacheFromSensor(void)
   float32 electricalRad;
   float32 deltaRaw = 0.0F;
 
-  /* Sensor.Angle filled by AngleAsyncTryConsume (1 ms) or tle5012b_read_angle (cal). */
+  /* Sensor.Angle filled by tle5012b_read_angle (blocking SPI in FocFastLoop). */
   MotorCdd_ConvertMechanicalToElectricalAngle(Tle5012bd_Sensor.Angle,
                                                &electricalRaw,
                                                &electricalRad);
@@ -144,19 +139,14 @@ void MotorCdd_FocUpdateAngleCacheFromSensor(void)
 
   MotorCdd_LastSensorElectricalRaw = electricalRaw;
   MotorCdd_LastSensorElectricalRawValid = 1U;
-#if (MOTORCDD_FOC_ANGLE_SPI_IN_FASTLOOP == 1U)
   (void)deltaRaw;
   MotorCdd_AngleCache.stepRawPerFastLoop = 0.0F;
-#else
-  MotorCdd_AngleCache.stepRawPerFastLoop =
-      deltaRaw / MOTORCDD_FOC_SENSOR_UPDATE_FASTLOOPS;
-#endif
   MotorCdd_FocPublishAngleCache(electricalRaw, electricalRad);
 }
 
 static uint8 MotorCdd_FocAngleSpiAllowedInFastLoop(uint8 motorMode)
 {
-  /* ZeroCal / open-loop use forced angle or own SPI in StartApp — avoid QSPI2 clash. */
+  /* ZeroCal / open-loop use forced angle or own SPI in StartApp ??avoid QSPI2 clash. */
   if ((motorMode == (uint8)MOTOR_MODE_CALIBRATION) ||
       (motorMode == (uint8)MOTOR_MODE_CALIBRATION_ERASE) ||
       (motorMode == (uint8)MOTOR_MODE_CALIBRATION_SAVE) ||
@@ -169,7 +159,7 @@ static uint8 MotorCdd_FocAngleSpiAllowedInFastLoop(uint8 motorMode)
 
 /*
  * IPB-style: blocking AVAL read in fast loop (SpiExchangeU32 spin-wait).
- * User must set DMA CH4/5 prio > AdcIsr so SEQ_OK can complete inside this ISR.
+ * Requires DMA CH4/5 prio > AdcIsr.
  */
 static void MotorCdd_FocServiceAngleSpi(void)
 {
@@ -186,70 +176,17 @@ static void MotorCdd_FocServiceAngleSpi(void)
     return;
   }
 
+  /* ZeroCal / open-loop use forced angle ??skip 5012 SPI. */
   if (MotorCdd_FocAngleSpiAllowedInFastLoop(motorMode) == 0U)
   {
-    Tle5012bd_Driver_DiscardCompletedSpi();
     return;
   }
 
-  Tle5012bd_Driver_ReadAngle(&Tle5012bd_Sensor);
-  MotorCdd_FocUpdateAngleCacheFromSensor();
-  MotorCdd_AngleSpiFastLoopCount++;
-}
-
-void MotorCdd_FocServiceAngleSpi1ms(void)
-{
-#if (MOTORCDD_FOC_ANGLE_SPI_IN_FASTLOOP == 0U)
-  uint8 motorMode = MotorCdd_CmdMirror.mode;
-
-  if (Tle5012bd_Driver_GetState() != TLE5012BD_STATE_READY)
+  if (Tle5012bd_Driver_ReadAngle(&Tle5012bd_Sensor) == E_OK)
   {
-    return;
+    MotorCdd_FocUpdateAngleCacheFromSensor();
+    MotorCdd_AngleSpiFastLoopCount++;
   }
-
-  if (MotorCdd_FocAngleSpiAllowedInFastLoop(motorMode) != 0U)
-  {
-    if (Tle5012bd_Driver_AngleAsyncTryConsume(&Tle5012bd_Sensor) != 0U)
-    {
-      MotorCdd_FocUpdateAngleCacheFromSensor();
-      MotorCdd_AngleSpiFastLoopCount++;
-    }
-
-    if (Tle5012bd_Driver_AngleAsyncKick() != E_OK)
-    {
-      MotorCdd_AngleSpiSkipBusyCount++;
-    }
-  }
-  else
-  {
-    Tle5012bd_Driver_DiscardCompletedSpi();
-  }
-#endif
-}
-
-static void MotorCdd_FocAdvanceAngleCache(void)
-{
-  float32 electricalRaw;
-
-  if (MotorCdd_AngleCache.valid == 0U)
-  {
-    return;
-  }
-
-  electricalRaw = MotorCdd_AngleCache.angleDeg +
-                  MotorCdd_AngleCache.stepRawPerFastLoop;
-  if (electricalRaw >= (float32)MOTORFOC_SINCOS_TABLE_SIZE)
-  {
-    electricalRaw -= (float32)MOTORFOC_SINCOS_TABLE_SIZE;
-  }
-  else if (electricalRaw < 0.0F)
-  {
-    electricalRaw += (float32)MOTORFOC_SINCOS_TABLE_SIZE;
-  }
-
-  MotorCdd_AngleCache.angleDeg = electricalRaw;
-  MotorCdd_AngleCache.angleRad =
-      electricalRaw / MOTORFOC_SINCOS_RAD_TO_IDX;
 }
 
 void MotorCdd_FocPrepareOutputEnable(void)
@@ -279,7 +216,7 @@ static void MotorCdd_ApplyAngleCache(uint8 useForcedAngle, float32 forcedAngleRa
 {
   if (useForcedAngle != 0U)
   {
-    /* Map forced rad → 8192-count index for sin/cos table (open-loop / zero-cal). */
+    /* Map forced rad ??8192-count index for sin/cos table (open-loop / zero-cal). */
     sint32 sidx = (sint32)(forcedAngleRad * MOTORFOC_SINCOS_RAD_TO_IDX);
     float32 angleRaw = (float32)((uint32)sidx & MOTORFOC_SINCOS_IDX_MASK);
 
@@ -318,6 +255,13 @@ static void MotorCdd_RunFocCurrentControl(float32 idRef,
 
   if (MotorControll_IsOutputEnabled() == 0U)
   {
+    return;
+  }
+
+  /* Closed-loop torque is forbidden without a validated encoder frame. */
+  if ((useForcedAngle == 0U) && (Tle5012bd_AngleValid == 0U))
+  {
+    MotorCdd_FocStopOutput();
     return;
   }
 
@@ -399,9 +343,5 @@ void MotorCdd_FocFastLoop(void)
       }
       break;
   }
-
-#if (MOTORCDD_FOC_ANGLE_SPI_IN_FASTLOOP == 0U)
-  /* Extrapolate the latest 1 ms encoder sample across 100 us loops. */
-  MotorCdd_FocAdvanceAngleCache();
-#endif
 }
+

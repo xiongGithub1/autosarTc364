@@ -1,17 +1,17 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
-	.compiler_invocation	"ctc -f cc20792a --dep-file=Appl\\Source\\.Os_Callout_Stubs.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=Appl\\Source\\Os_Callout_Stubs.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\Source\\Os_Callout_Stubs.src ..\\Appl\\Source\\Os_Callout_Stubs.c"
+	.compiler_invocation	"ctc -f cc5416a --dep-file=Appl\\Source\\.Os_Callout_Stubs.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=Appl\\Source\\Os_Callout_Stubs.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\Source\\Os_Callout_Stubs.src ..\\Appl\\Source\\Os_Callout_Stubs.c"
 	.compiler_name		"ctc"
 	;source	'..\\Appl\\Source\\Os_Callout_Stubs.c'
 
 	
 $TC162
 	
-	.sdecl	'.text.OS_ERRORHOOK_CODE',code,cluster('ErrorHook')
-	.sect	'.text.OS_ERRORHOOK_CODE'
+	.sdecl	'.text.OS_STARTUPHOOK_CODE',code,cluster('StartupHook')
+	.sect	'.text.OS_STARTUPHOOK_CODE'
 	.align	2
 	
-	.global	ErrorHook
+	.global	StartupHook
 
 ; ..\Appl\Source\Os_Callout_Stubs.c	     1  /**********************************************************************************************************************
 ; ..\Appl\Source\Os_Callout_Stubs.c	     2   *  COPYRIGHT
@@ -94,6 +94,10 @@ $TC162
 ; ..\Appl\Source\Os_Callout_Stubs.c	    79  # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 ; ..\Appl\Source\Os_Callout_Stubs.c	    80  
 ; ..\Appl\Source\Os_Callout_Stubs.c	    81  FUNC(void, OS_STARTUPHOOK_CODE) StartupHook(void)
+; Function StartupHook
+.L5:
+StartupHook:	.type	func
+
 ; ..\Appl\Source\Os_Callout_Stubs.c	    82  {
 ; ..\Appl\Source\Os_Callout_Stubs.c	    83  /**********************************************************************************************************************
 ; ..\Appl\Source\Os_Callout_Stubs.c	    84   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK OS_Callout_Stubs_StartupHook>
@@ -104,6 +108,20 @@ $TC162
 ; ..\Appl\Source\Os_Callout_Stubs.c	    89   *********************************************************************************************************************/
 ; ..\Appl\Source\Os_Callout_Stubs.c	    90  
 ; ..\Appl\Source\Os_Callout_Stubs.c	    91  }
+	ret
+.L50:
+	
+__StartupHook_function_end:
+	.size	StartupHook,__StartupHook_function_end-StartupHook
+.L20:
+	; End of function
+	
+	.sdecl	'.text.OS_SHUTDOWNHOOK_CODE',code,cluster('ShutdownHook')
+	.sect	'.text.OS_SHUTDOWNHOOK_CODE'
+	.align	2
+	
+	.global	ShutdownHook
+
 ; ..\Appl\Source\Os_Callout_Stubs.c	    92  
 ; ..\Appl\Source\Os_Callout_Stubs.c	    93  # define OS_STOP_SEC_STARTUPHOOK_CODE
 ; ..\Appl\Source\Os_Callout_Stubs.c	    94  # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
@@ -118,11 +136,29 @@ $TC162
 ; ..\Appl\Source\Os_Callout_Stubs.c	   103  # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 ; ..\Appl\Source\Os_Callout_Stubs.c	   104  
 ; ..\Appl\Source\Os_Callout_Stubs.c	   105  FUNC(void, OS_SHUTDOWNHOOK_CODE) ShutdownHook(StatusType Fatalerror)
+; Function ShutdownHook
+.L7:
+ShutdownHook:	.type	func
+
 ; ..\Appl\Source\Os_Callout_Stubs.c	   106  {
 ; ..\Appl\Source\Os_Callout_Stubs.c	   107  /**********************************************************************************************************************
 ; ..\Appl\Source\Os_Callout_Stubs.c	   108   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK OS_Callout_Stubs_ShutdownHook>
 ; ..\Appl\Source\Os_Callout_Stubs.c	   109   *********************************************************************************************************************/
 ; ..\Appl\Source\Os_Callout_Stubs.c	   110    EcuM_Shutdown();
+	j	EcuM_Shutdown
+.L51:
+	
+__ShutdownHook_function_end:
+	.size	ShutdownHook,__ShutdownHook_function_end-ShutdownHook
+.L25:
+	; End of function
+	
+	.sdecl	'.text.OS_ERRORHOOK_CODE',code,cluster('ErrorHook')
+	.sect	'.text.OS_ERRORHOOK_CODE'
+	.align	2
+	
+	.global	ErrorHook
+
 ; ..\Appl\Source\Os_Callout_Stubs.c	   111  /**********************************************************************************************************************
 ; ..\Appl\Source\Os_Callout_Stubs.c	   112   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>
 ; ..\Appl\Source\Os_Callout_Stubs.c	   113   *********************************************************************************************************************/
@@ -143,7 +179,7 @@ $TC162
 ; ..\Appl\Source\Os_Callout_Stubs.c	   128  
 ; ..\Appl\Source\Os_Callout_Stubs.c	   129  FUNC(void, OS_ERRORHOOK_CODE) ErrorHook(StatusType Error)
 ; Function ErrorHook
-.L5:
+.L9:
 ErrorHook:	.type	func
 
 ; ..\Appl\Source\Os_Callout_Stubs.c	   130  {
@@ -154,46 +190,46 @@ ErrorHook:	.type	func
 ; ..\Appl\Source\Os_Callout_Stubs.c	   135    volatile uint8 endless = 1u;
 	mov	d15,#1
 	sub.a	a10,#8
-.L43:
+.L68:
 	st.b	[a10]4,d15
-.L53:
+.L86:
 
 ; ..\Appl\Source\Os_Callout_Stubs.c	   136  
 ; ..\Appl\Source\Os_Callout_Stubs.c	   137    Os_Callout_LastError = Error;
 ; ..\Appl\Source\Os_Callout_Stubs.c	   138    Os_ErrorHookCounter++;
 	ld.w	d15,Os_ErrorHookCounter
-.L54:
+.L87:
 	st.b	Os_Callout_LastError,d4
-.L55:
+.L88:
 	add	d15,#1
 	st.w	Os_ErrorHookCounter,d15
-.L56:
+.L89:
 
 ; ..\Appl\Source\Os_Callout_Stubs.c	   139    if (Os_GetDetailedError(&CurrentError) == E_OK)
 	mov.aa	a4,a10
 	call	Os_GetDetailedError
-.L44:
+.L69:
 	jne	d2,#0,.L2
-.L57:
+.L90:
 
 ; ..\Appl\Source\Os_Callout_Stubs.c	   140    {
 ; ..\Appl\Source\Os_Callout_Stubs.c	   141      Os_Callout_LastErrorService = CurrentError.Service;
 	ld.bu	d15,[a10]
-.L58:
+.L91:
 	st.b	Os_Callout_LastErrorService,d15
-.L59:
+.L92:
 
 ; ..\Appl\Source\Os_Callout_Stubs.c	   142      Os_Callout_LastError = CurrentError.Error;
 	ld.bu	d15,[a10]1
-.L60:
+.L93:
 	st.b	Os_Callout_LastError,d15
-.L61:
+.L94:
 
 ; ..\Appl\Source\Os_Callout_Stubs.c	   143      Os_Callout_LastErrorStatus = CurrentError.DetailedError;
 	ld.h	d15,[a10]2
-.L62:
+.L95:
 	st.h	Os_Callout_LastErrorStatus,d15
-.L63:
+.L96:
 
 ; ..\Appl\Source\Os_Callout_Stubs.c	   144      Os_Callout_LastDetailedError = (uint32)CurrentError.DetailedError;
 	st.w	Os_Callout_LastDetailedError,d15
@@ -203,7 +239,7 @@ ErrorHook:	.type	func
 ; ..\Appl\Source\Os_Callout_Stubs.c	   146    (void)Os_GetUnhandledIrq(&Os_Callout_UnhandledIrq);
 	lea	a4,Os_Callout_UnhandledIrq
 	call	Os_GetUnhandledIrq
-.L64:
+.L97:
 
 ; ..\Appl\Source\Os_Callout_Stubs.c	   147    (void)Os_GetUnhandledExc(&Os_Callout_UnhandledExc);
 	lea	a4,Os_Callout_UnhandledExc
@@ -213,9 +249,9 @@ ErrorHook:	.type	func
 ; ..\Appl\Source\Os_Callout_Stubs.c	   149    while (endless != 0u)
 .L3:
 	ld.bu	d15,[a10]4
-.L65:
+.L98:
 	jne	d15,#0,.L3
-.L66:
+.L99:
 
 ; ..\Appl\Source\Os_Callout_Stubs.c	   150    {
 ; ..\Appl\Source\Os_Callout_Stubs.c	   151      /* breakpoint here for OS API / status errors (NOT KernelPanic) */
@@ -226,11 +262,127 @@ ErrorHook:	.type	func
 ; ..\Appl\Source\Os_Callout_Stubs.c	   156  
 ; ..\Appl\Source\Os_Callout_Stubs.c	   157  }
 	ret
-.L29:
+.L54:
 	
 __ErrorHook_function_end:
 	.size	ErrorHook,__ErrorHook_function_end-ErrorHook
-.L14:
+.L30:
+	; End of function
+	
+	.sdecl	'.text.OS_PANICHOOK_CODE',code,cluster('Os_PanicHook')
+	.sect	'.text.OS_PANICHOOK_CODE'
+	.align	2
+	
+	.global	Os_PanicHook
+
+; ..\Appl\Source\Os_Callout_Stubs.c	   158  
+; ..\Appl\Source\Os_Callout_Stubs.c	   159  # define OS_STOP_SEC_ERRORHOOK_CODE
+; ..\Appl\Source\Os_Callout_Stubs.c	   160  # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\Source\Os_Callout_Stubs.c	   161  #endif /* OS_CFG_ERRORHOOK_SYSTEM */
+; ..\Appl\Source\Os_Callout_Stubs.c	   162  
+; ..\Appl\Source\Os_Callout_Stubs.c	   163  
+; ..\Appl\Source\Os_Callout_Stubs.c	   164  /**********************************************************************************************************************
+; ..\Appl\Source\Os_Callout_Stubs.c	   165   *  ProtectionHook()
+; ..\Appl\Source\Os_Callout_Stubs.c	   166   *********************************************************************************************************************/
+; ..\Appl\Source\Os_Callout_Stubs.c	   167  #if OS_CFG_PROTECTIONHOOK_SYSTEM == STD_ON
+; ..\Appl\Source\Os_Callout_Stubs.c	   168  # define OS_START_SEC_PROTECTIONHOOK_CODE
+; ..\Appl\Source\Os_Callout_Stubs.c	   169  # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\Source\Os_Callout_Stubs.c	   170  
+; ..\Appl\Source\Os_Callout_Stubs.c	   171  FUNC(ProtectionReturnType, OS_PROTECTIONHOOK_CODE) ProtectionHook(StatusType Fatalerror)
+; ..\Appl\Source\Os_Callout_Stubs.c	   172  {
+; ..\Appl\Source\Os_Callout_Stubs.c	   173  /**********************************************************************************************************************
+; ..\Appl\Source\Os_Callout_Stubs.c	   174   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK OS_Callout_Stubs_ProtectionHook>
+; ..\Appl\Source\Os_Callout_Stubs.c	   175   *********************************************************************************************************************/
+; ..\Appl\Source\Os_Callout_Stubs.c	   176    return PRO_SHUTDOWN;
+; ..\Appl\Source\Os_Callout_Stubs.c	   177  /**********************************************************************************************************************
+; ..\Appl\Source\Os_Callout_Stubs.c	   178   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>
+; ..\Appl\Source\Os_Callout_Stubs.c	   179   *********************************************************************************************************************/
+; ..\Appl\Source\Os_Callout_Stubs.c	   180  
+; ..\Appl\Source\Os_Callout_Stubs.c	   181  }
+; ..\Appl\Source\Os_Callout_Stubs.c	   182  
+; ..\Appl\Source\Os_Callout_Stubs.c	   183  # define OS_STOP_SEC_PROTECTIONHOOK_CODE
+; ..\Appl\Source\Os_Callout_Stubs.c	   184  # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\Source\Os_Callout_Stubs.c	   185  #endif /* OS_CFG_PROTECTIONHOOK_SYSTEM */
+; ..\Appl\Source\Os_Callout_Stubs.c	   186  
+; ..\Appl\Source\Os_Callout_Stubs.c	   187  
+; ..\Appl\Source\Os_Callout_Stubs.c	   188  /**********************************************************************************************************************
+; ..\Appl\Source\Os_Callout_Stubs.c	   189   *  PreTaskHook()
+; ..\Appl\Source\Os_Callout_Stubs.c	   190   *********************************************************************************************************************/
+; ..\Appl\Source\Os_Callout_Stubs.c	   191  #if OS_CFG_PRETASKHOOK == STD_ON
+; ..\Appl\Source\Os_Callout_Stubs.c	   192  # define OS_START_SEC_PRETASKHOOK_CODE
+; ..\Appl\Source\Os_Callout_Stubs.c	   193  # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\Source\Os_Callout_Stubs.c	   194  
+; ..\Appl\Source\Os_Callout_Stubs.c	   195  FUNC(void, OS_PRETASKHOOK_CODE) PreTaskHook(void)
+; ..\Appl\Source\Os_Callout_Stubs.c	   196  {
+; ..\Appl\Source\Os_Callout_Stubs.c	   197  /**********************************************************************************************************************
+; ..\Appl\Source\Os_Callout_Stubs.c	   198   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK OS_Callout_Stubs_PreTaskHook>
+; ..\Appl\Source\Os_Callout_Stubs.c	   199   *********************************************************************************************************************/
+; ..\Appl\Source\Os_Callout_Stubs.c	   200  
+; ..\Appl\Source\Os_Callout_Stubs.c	   201  /**********************************************************************************************************************
+; ..\Appl\Source\Os_Callout_Stubs.c	   202   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>
+; ..\Appl\Source\Os_Callout_Stubs.c	   203   *********************************************************************************************************************/
+; ..\Appl\Source\Os_Callout_Stubs.c	   204  
+; ..\Appl\Source\Os_Callout_Stubs.c	   205  }
+; ..\Appl\Source\Os_Callout_Stubs.c	   206  
+; ..\Appl\Source\Os_Callout_Stubs.c	   207  # define OS_STOP_SEC_PRETASKHOOK_CODE
+; ..\Appl\Source\Os_Callout_Stubs.c	   208  # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\Source\Os_Callout_Stubs.c	   209  #endif /* OS_CFG_PRETASKHOOK */
+; ..\Appl\Source\Os_Callout_Stubs.c	   210  
+; ..\Appl\Source\Os_Callout_Stubs.c	   211  
+; ..\Appl\Source\Os_Callout_Stubs.c	   212  /**********************************************************************************************************************
+; ..\Appl\Source\Os_Callout_Stubs.c	   213   *  PostTaskHook()
+; ..\Appl\Source\Os_Callout_Stubs.c	   214   *********************************************************************************************************************/
+; ..\Appl\Source\Os_Callout_Stubs.c	   215  #if OS_CFG_POSTTASKHOOK == STD_ON
+; ..\Appl\Source\Os_Callout_Stubs.c	   216  # define OS_START_SEC_POSTTASKHOOK_CODE
+; ..\Appl\Source\Os_Callout_Stubs.c	   217  # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\Source\Os_Callout_Stubs.c	   218  
+; ..\Appl\Source\Os_Callout_Stubs.c	   219  FUNC(void, OS_POSTTASKHOOK_CODE) PostTaskHook(void)
+; ..\Appl\Source\Os_Callout_Stubs.c	   220  {
+; ..\Appl\Source\Os_Callout_Stubs.c	   221  /**********************************************************************************************************************
+; ..\Appl\Source\Os_Callout_Stubs.c	   222   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK OS_Callout_Stubs_PostTaskHook>
+; ..\Appl\Source\Os_Callout_Stubs.c	   223   *********************************************************************************************************************/
+; ..\Appl\Source\Os_Callout_Stubs.c	   224  
+; ..\Appl\Source\Os_Callout_Stubs.c	   225  /**********************************************************************************************************************
+; ..\Appl\Source\Os_Callout_Stubs.c	   226   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>
+; ..\Appl\Source\Os_Callout_Stubs.c	   227   *********************************************************************************************************************/
+; ..\Appl\Source\Os_Callout_Stubs.c	   228  
+; ..\Appl\Source\Os_Callout_Stubs.c	   229  }
+; ..\Appl\Source\Os_Callout_Stubs.c	   230  
+; ..\Appl\Source\Os_Callout_Stubs.c	   231  # define OS_STOP_SEC_POSTTASKHOOK_CODE
+; ..\Appl\Source\Os_Callout_Stubs.c	   232  # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\Source\Os_Callout_Stubs.c	   233  #endif /* OS_CFG_POSTTASKHOOK */
+; ..\Appl\Source\Os_Callout_Stubs.c	   234  
+; ..\Appl\Source\Os_Callout_Stubs.c	   235  
+; ..\Appl\Source\Os_Callout_Stubs.c	   236  /**********************************************************************************************************************
+; ..\Appl\Source\Os_Callout_Stubs.c	   237   *  Os_PanicHook()
+; ..\Appl\Source\Os_Callout_Stubs.c	   238   *********************************************************************************************************************/
+; ..\Appl\Source\Os_Callout_Stubs.c	   239  #if OS_CFG_PANICHOOK == STD_ON
+; ..\Appl\Source\Os_Callout_Stubs.c	   240  # define OS_START_SEC_PANICHOOK_CODE
+; ..\Appl\Source\Os_Callout_Stubs.c	   241  # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\Source\Os_Callout_Stubs.c	   242  
+; ..\Appl\Source\Os_Callout_Stubs.c	   243  FUNC(void, OS_PANICHOOK_CODE) Os_PanicHook(void)
+; Function Os_PanicHook
+.L11:
+Os_PanicHook:	.type	func
+
+; ..\Appl\Source\Os_Callout_Stubs.c	   244  {
+; ..\Appl\Source\Os_Callout_Stubs.c	   245  /**********************************************************************************************************************
+; ..\Appl\Source\Os_Callout_Stubs.c	   246   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK OS_Callout_Stubs_PanicHook>
+; ..\Appl\Source\Os_Callout_Stubs.c	   247   *********************************************************************************************************************/
+; ..\Appl\Source\Os_Callout_Stubs.c	   248    /* Capture before CoreFreeze ??? watch these if AsyncTransmit ends in panic. */
+; ..\Appl\Source\Os_Callout_Stubs.c	   249    (void)Os_GetUnhandledIrq(&Os_Callout_UnhandledIrq);
+	lea	a4,Os_Callout_UnhandledIrq
+	call	Os_GetUnhandledIrq
+.L104:
+
+; ..\Appl\Source\Os_Callout_Stubs.c	   250    (void)Os_GetUnhandledExc(&Os_Callout_UnhandledExc);
+	lea	a4,Os_Callout_UnhandledExc
+	j	Os_GetUnhandledExc
+.L60:
+	
+__Os_PanicHook_function_end:
+	.size	Os_PanicHook,__Os_PanicHook_function_end-Os_PanicHook
+.L35:
 	; End of function
 	
 	.sdecl	'.zdata.Os_Callout_Stubs.Os_Callout_LastError',data,cluster('Os_Callout_LastError')
@@ -280,27 +432,34 @@ Os_Callout_UnhandledIrq:	.type	object
 Os_Callout_UnhandledExc:	.type	object
 	.size	Os_Callout_UnhandledExc,4
 	.space	4
+	.calls	'ShutdownHook','EcuM_Shutdown'
 	.calls	'ErrorHook','Os_GetDetailedError'
 	.calls	'ErrorHook','Os_GetUnhandledIrq'
 	.calls	'ErrorHook','Os_GetUnhandledExc'
+	.calls	'Os_PanicHook','Os_GetUnhandledIrq'
+	.calls	'Os_PanicHook','Os_GetUnhandledExc'
+	.calls	'StartupHook','',0
+	.calls	'ShutdownHook','',0
+	.calls	'ErrorHook','',8
 	.extern	Os_GetUnhandledIrq
 	.extern	Os_GetUnhandledExc
 	.extern	Os_GetDetailedError
-	.calls	'ErrorHook','',8
+	.extern	EcuM_Shutdown
+	.calls	'Os_PanicHook','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L7:
-	.word	9315
+.L13:
+	.word	9338
 	.half	3
-	.word	.L8
+	.word	.L14
 	.byte	4
-.L6:
+.L12:
 	.byte	1
 	.byte	'..\\Appl\\Source\\Os_Callout_Stubs.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
-	.word	.L9
-.L30:
+	.word	.L15
+.L52:
 	.byte	2
 	.byte	'unsigned char',0,1,8,3,1,175,3,9,1,4
 	.byte	'OSServiceId_GetApplicationID',0,0,4
@@ -490,7 +649,7 @@ Os_Callout_UnhandledExc:	.type	object
 	.byte	'OS_STATUS_STATE_ALREADY_RESTARTING',0,135,20,4
 	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,4
 	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0
-.L32:
+.L56:
 	.byte	5,1,132,6,9,4,6
 	.byte	'Service',0
 	.word	162
@@ -501,7 +660,7 @@ Os_Callout_UnhandledExc:	.type	object
 	.byte	'DetailedError',0
 	.word	3354
 	.byte	2,2,35,2,0
-.L34:
+.L58:
 	.byte	7
 	.word	145
 	.byte	2
@@ -544,45 +703,46 @@ Os_Callout_UnhandledExc:	.type	object
 	.word	6164
 	.byte	0,8
 	.word	5861
-	.byte	12,1,8
-	.word	6257
+	.byte	12
+	.byte	'EcuM_Shutdown',0,3,221,2,23,1,1,1,1,13,1,8
+	.word	6280
 	.byte	9
-	.byte	'__codeptr',0,3,1,1
-	.word	6259
+	.byte	'__codeptr',0,4,1,1
+	.word	6282
 	.byte	9
-	.byte	'uint8',0,4,104,31
+	.byte	'uint8',0,5,104,31
 	.word	145
 	.byte	2
 	.byte	'unsigned short int',0,2,7,9
-	.byte	'uint16',0,4,106,31
-	.word	6296
+	.byte	'uint16',0,5,106,31
+	.word	6319
 	.byte	2
 	.byte	'long int',0,4,5,9
-	.byte	'sint32',0,4,107,31
-	.word	6333
+	.byte	'sint32',0,5,107,31
+	.word	6356
 	.byte	9
-	.byte	'uint32',0,4,108,31
+	.byte	'uint32',0,5,108,31
 	.word	5928
 	.byte	9
-	.byte	'uint8_least',0,4,111,31
+	.byte	'uint8_least',0,5,111,31
 	.word	145
 	.byte	2
 	.byte	'unsigned long long int',0,8,7,9
-	.byte	'uint64',0,4,121,30
-	.word	6395
+	.byte	'uint64',0,5,121,30
+	.word	6418
 	.byte	9
-	.byte	'StatusType',0,5,119,23
+	.byte	'StatusType',0,6,119,23
 	.word	145
 	.byte	9
-	.byte	'Std_ReturnType',0,5,124,15
+	.byte	'Std_ReturnType',0,6,124,15
 	.word	145
 	.byte	9
-	.byte	'Std_TransformerErrorCode',0,5,135,1,15
+	.byte	'Std_TransformerErrorCode',0,6,135,1,15
 	.word	145
 	.byte	9
-	.byte	'Std_TransformerClass',0,5,137,1,15
+	.byte	'Std_TransformerClass',0,6,137,1,15
 	.word	145
-	.byte	3,6,158,1,9,1,4
+	.byte	3,7,158,1,9,1,4
 	.byte	'Default_Appl_Init_Task',0,0,4
 	.byte	'Default_Appl_Task',0,1,4
 	.byte	'Default_BSW_ASync_Task',0,2,4
@@ -592,17 +752,17 @@ Os_Callout_UnhandledExc:	.type	object
 	.byte	'MotorTask',0,6,4
 	.byte	'INVALID_TASK',0,7,4
 	.byte	'OS_TASKID_COUNT',0,7,0,9
-	.byte	'TaskType',0,6,169,1,3
-	.word	6542
-	.byte	13,64
+	.byte	'TaskType',0,7,169,1,3
+	.word	6565
+	.byte	14,64
 	.word	5928
-	.byte	14,15,0,15
-	.byte	'Os_ExceptionContextType_Tag',0,7,71,8,160,1,6
+	.byte	15,15,0,16
+	.byte	'Os_ExceptionContextType_Tag',0,8,71,8,160,1,6
 	.byte	'AddressRegisters',0
-	.word	6749
+	.word	6772
 	.byte	64,2,35,0,6
 	.byte	'DataRegisters',0
-	.word	6749
+	.word	6772
 	.byte	64,2,35,64,6
 	.byte	'Ra',0
 	.word	5928
@@ -628,8 +788,8 @@ Os_Callout_UnhandledExc:	.type	object
 	.byte	'RawPCXI',0
 	.word	5928
 	.byte	4,3,35,156,1,0,9
-	.byte	'Os_ExceptionContextType',0,8,59,44
-	.word	6758
+	.byte	'Os_ExceptionContextType',0,9,59,44
+	.word	6781
 	.byte	9
 	.byte	'Os_InterruptSourceIdType',0,1,236,1,16
 	.word	5928
@@ -642,10 +802,10 @@ Os_Callout_UnhandledExc:	.type	object
 	.byte	'WAITING',0,2,4
 	.byte	'SUSPENDED',0,3,0,9
 	.byte	'TaskStateType',0,1,173,2,3
-	.word	7106
+	.word	7129
 	.byte	9
 	.byte	'EventMaskType',0,1,180,2,16
-	.word	6395
+	.word	6418
 	.byte	9
 	.byte	'Os_TickType',0,1,198,2,19
 	.word	5928
@@ -663,13 +823,13 @@ Os_Callout_UnhandledExc:	.type	object
 	.word	5928
 	.byte	4,2,35,8,0,9
 	.byte	'AlarmBaseType',0,1,226,2,2
-	.word	7238
+	.word	7261
 	.byte	3,1,254,2,9,1,4
 	.byte	'APPLICATION_TERMINATED',0,0,4
 	.byte	'APPLICATION_RESTARTING',0,1,4
 	.byte	'APPLICATION_ACCESSIBLE',0,2,0,9
 	.byte	'ApplicationStateType',0,1,131,3,3
-	.word	7333
+	.word	7356
 	.byte	9
 	.byte	'OSServiceIdType',0,1,155,4,3
 	.word	162
@@ -686,7 +846,7 @@ Os_Callout_UnhandledExc:	.type	object
 	.byte	'SCHEDULETABLE_RUNNING',0,3,4
 	.byte	'SCHEDULETABLE_RUNNING_AND_SYNCHRONOUS',0,4,0,9
 	.byte	'ScheduleTableStatusType',0,1,191,6,3
-	.word	7526
+	.word	7549
 	.byte	3,1,203,6,9,1,4
 	.byte	'OS_MEM_ACCESS_TYPE_NON',0,0,4
 	.byte	'OS_MEM_ACCESS_TYPE_R',0,1,4
@@ -709,543 +869,632 @@ Os_Callout_UnhandledExc:	.type	object
 	.byte	'OS_MEM_ACCESS_TYPE_WXS',0,14,4
 	.byte	'OS_MEM_ACCESS_TYPE_RWXS',0,15,0,9
 	.byte	'Os_MemAccessType',0,1,225,6,3
-	.word	7699
+	.word	7722
 	.byte	9
-	.byte	'Os_Hal_AddressType',0,9,97,16
+	.byte	'Os_Hal_AddressType',0,10,97,16
 	.word	5928
 	.byte	9
-	.byte	'Os_AccessCheckAddress',0,10,150,2,29
+	.byte	'Os_AccessCheckAddress',0,11,150,2,29
 	.word	5928
 	.byte	9
-	.byte	'PduLengthType',0,11,65,15
+	.byte	'PduLengthType',0,12,65,15
 	.word	145
 	.byte	8
 	.word	145
 	.byte	9
-	.byte	'SduDataPtrType',0,12,196,1,54
-	.word	8308
-	.byte	3,12,219,1,9,1,4
+	.byte	'SduDataPtrType',0,13,196,1,54
+	.word	8331
+	.byte	3,13,219,1,9,1,4
 	.byte	'TP_DATACONF',0,0,4
 	.byte	'TP_DATARETRY',0,1,4
 	.byte	'TP_CONFPENDING',0,2,0,9
-	.byte	'TpDataStateType',0,12,226,1,3
-	.word	8337
+	.byte	'TpDataStateType',0,13,226,1,3
+	.word	8360
 	.byte	9
-	.byte	'EcuM_ModeType',0,13,63,15
+	.byte	'EcuM_ModeType',0,14,63,15
 	.word	145
 	.byte	9
-	.byte	'EcuM_StateType',0,13,69,15
+	.byte	'EcuM_StateType',0,14,69,15
 	.word	145
 	.byte	9
-	.byte	'EcuM_UserType',0,13,72,15
+	.byte	'EcuM_UserType',0,14,72,15
 	.word	145
-	.byte	16,1,1,8
-	.word	8482
+	.byte	17,1,1,8
+	.word	8505
 	.byte	9
-	.byte	'EcuM_DriverFuncType',0,14,156,3,9
-	.word	8485
+	.byte	'EcuM_DriverFuncType',0,15,156,3,9
+	.word	8508
 	.byte	9
-	.byte	'EcuM_ComMChannelsType',0,14,239,3,15
+	.byte	'EcuM_ComMChannelsType',0,15,239,3,15
 	.word	145
 	.byte	9
-	.byte	'EcuM_DefaultAppModeType',0,14,242,3,16
+	.byte	'EcuM_DefaultAppModeType',0,15,242,3,16
 	.word	5928
 	.byte	9
-	.byte	'EcuM_KillAllInProgressType',0,14,129,4,15
+	.byte	'EcuM_KillAllInProgressType',0,15,129,4,15
 	.word	145
 	.byte	9
-	.byte	'EcuM_NormalMcuModeType',0,14,135,4,16
+	.byte	'EcuM_NormalMcuModeType',0,15,135,4,16
 	.word	5928
 	.byte	9
-	.byte	'EcuM_PostRunRequestCounterType',0,14,141,4,15
+	.byte	'EcuM_PostRunRequestCounterType',0,15,141,4,15
 	.word	145
 	.byte	9
-	.byte	'EcuM_RunRequestCounterType',0,14,144,4,15
+	.byte	'EcuM_RunRequestCounterType',0,15,144,4,15
 	.word	145
 	.byte	9
-	.byte	'EcuM_TimerType',0,14,150,4,16
-	.word	6296
+	.byte	'EcuM_TimerType',0,15,150,4,16
+	.word	6319
 	.byte	9
-	.byte	'EcuM_ChannelOfWakeupSourceListType',0,14,153,4,15
+	.byte	'EcuM_ChannelOfWakeupSourceListType',0,15,153,4,15
 	.word	145
-	.byte	15
-	.byte	'sEcuM_DriverInitOneType',0,14,169,4,16,4,6
+	.byte	16
+	.byte	'sEcuM_DriverInitOneType',0,15,169,4,16,4,6
 	.byte	'FunctionOfDriverInitOne',0
-	.word	8490
+	.word	8513
 	.byte	4,2,35,0,0,9
-	.byte	'EcuM_DriverInitOneType',0,14,172,4,3
-	.word	8795
+	.byte	'EcuM_DriverInitOneType',0,15,172,4,3
+	.word	8818
 	.byte	8
-	.word	8482
-	.byte	15
-	.byte	'sEcuM_DriverInitThreeType',0,14,175,4,16,4,6
+	.word	8505
+	.byte	16
+	.byte	'sEcuM_DriverInitThreeType',0,15,175,4,16,4,6
 	.byte	'FunctionOfDriverInitThree',0
-	.word	8490
+	.word	8513
 	.byte	4,2,35,0,0,9
-	.byte	'EcuM_DriverInitThreeType',0,14,178,4,3
-	.word	8896
-	.byte	15
-	.byte	'sEcuM_DriverInitTwoType',0,14,181,4,16,4,6
+	.byte	'EcuM_DriverInitThreeType',0,15,178,4,3
+	.word	8919
+	.byte	16
+	.byte	'sEcuM_DriverInitTwoType',0,15,181,4,16,4,6
 	.byte	'FunctionOfDriverInitTwo',0
-	.word	8490
+	.word	8513
 	.byte	4,2,35,0,0,9
-	.byte	'EcuM_DriverInitTwoType',0,14,184,4,3
-	.word	8998
-	.byte	15
-	.byte	'sEcuM_WakeupSourceListType',0,14,187,4,16,1,6
+	.byte	'EcuM_DriverInitTwoType',0,15,184,4,3
+	.word	9021
+	.byte	16
+	.byte	'sEcuM_WakeupSourceListType',0,15,187,4,16,1,6
 	.byte	'ChannelOfWakeupSourceList',0
 	.word	145
 	.byte	1,2,35,0,0,9
-	.byte	'EcuM_WakeupSourceListType',0,14,190,4,3
-	.word	9094
-	.byte	15
-	.byte	'sEcuM_PCConfigType',0,14,253,4,16,1,6
+	.byte	'EcuM_WakeupSourceListType',0,15,190,4,3
+	.word	9117
+	.byte	16
+	.byte	'sEcuM_PCConfigType',0,15,253,4,16,1,6
 	.byte	'EcuM_PCConfigNeverUsed',0
 	.word	145
 	.byte	1,2,35,0,0,9
-	.byte	'EcuM_PCConfigType',0,14,128,5,3
-	.word	9198
-.L36:
+	.byte	'EcuM_PCConfigType',0,15,128,5,3
+	.word	9221
+.L61:
 	.byte	7
 	.word	145
-.L37:
+.L62:
 	.byte	7
 	.word	162
-.L38:
+.L63:
 	.byte	7
 	.word	3354
-.L39:
+.L64:
 	.byte	7
 	.word	5928
-.L40:
+.L65:
 	.byte	7
 	.word	5928
-.L41:
+.L66:
 	.byte	7
 	.word	5928
-.L42:
+.L67:
 	.byte	7
 	.word	5928
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L8:
+.L14:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,4,1,58,15,59,15,57,15,11,15
 	.byte	0,0,4,40,0,3,8,28,13,0,0,5,19,1,58,15,59,15,57,15,11,15,0,0,6,13,0,3,8,73,19,11,15,56,9,0,0,7,53,0,73
 	.byte	19,0,0,8,15,0,73,19,0,0,9,22,0,3,8,58,15,59,15,57,15,73,19,0,0,10,46,1,3,8,58,15,59,15,57,15,73,19,54
-	.byte	15,39,12,63,12,60,12,0,0,11,5,0,3,8,58,15,59,15,57,15,73,19,0,0,12,21,0,54,15,0,0,13,1,1,11,15,73,19,0
-	.byte	0,14,33,0,47,15,0,0,15,19,1,3,8,58,15,59,15,57,15,11,15,0,0,16,21,0,54,15,39,12,0,0,0
+	.byte	15,39,12,63,12,60,12,0,0,11,5,0,3,8,58,15,59,15,57,15,73,19,0,0,12,46,0,3,8,58,15,59,15,57,15,54,15,39
+	.byte	12,63,12,60,12,0,0,13,21,0,54,15,0,0,14,1,1,11,15,73,19,0,0,15,33,0,47,15,0,0,16,19,1,3,8,58,15,59,15
+	.byte	57,15,11,15,0,0,17,21,0,54,15,39,12,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L9:
-	.word	.L46-.L45
-.L45:
+.L15:
+	.word	.L71-.L70
+.L70:
 	.half	3
-	.word	.L48-.L47
-.L47:
+	.word	.L73-.L72
+.L72:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData',0,0
 	.byte	'Os_Types.h',0,1,0,0
 	.byte	'Os.h',0,1,0,0
+	.byte	'EcuM.h',0,2,0,0
 	.byte	'..\\Appl\\Source\\Os_Callout_Stubs.c',0,0,0,0
-	.byte	'Platform_Types.h',0,2,0,0
-	.byte	'Std_Types.h',0,2,0,0
-	.byte	'Os_Types_Lcfg.h',0,3,0,0
+	.byte	'Platform_Types.h',0,3,0,0
+	.byte	'Std_Types.h',0,3,0,0
+	.byte	'Os_Types_Lcfg.h',0,4,0,0
 	.byte	'Os_Hal_OsInt.h',0,1,0,0
 	.byte	'Os_Hal_Os_Types.h',0,1,0,0
-	.byte	'Os_Hal_Lcfg.h',0,3,0,0
+	.byte	'Os_Hal_Lcfg.h',0,4,0,0
 	.byte	'OsInt.h',0,1,0,0
-	.byte	'ComStack_Cfg.h',0,3,0,0
-	.byte	'ComStack_Types.h',0,2,0,0
-	.byte	'Rte_Type.h',0,3,0,0
-	.byte	'EcuM_Cfg.h',0,3,0,0,0
-.L48:
-.L46:
-	.sdecl	'.debug_info',debug,cluster('ErrorHook')
+	.byte	'ComStack_Cfg.h',0,4,0,0
+	.byte	'ComStack_Types.h',0,3,0,0
+	.byte	'Rte_Type.h',0,4,0,0
+	.byte	'EcuM_Cfg.h',0,4,0,0,0
+.L73:
+.L71:
+	.sdecl	'.debug_info',debug,cluster('StartupHook')
 	.sect	'.debug_info'
-.L10:
-	.word	258
+.L16:
+	.word	192
 	.half	3
-	.word	.L11
+	.word	.L17
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\Os_Callout_Stubs.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
-	.word	.L13,.L12
+	.word	.L19,.L18
 	.byte	2
-	.word	.L6
+	.word	.L12
 	.byte	3
-	.byte	'ErrorHook',0,1,129,1,31,1,1,1
-	.word	.L5,.L29,.L4
+	.byte	'StartupHook',0,1,81,33,1,1,1
+	.word	.L5,.L50,.L4
 	.byte	4
-	.byte	'Error',0,1,129,1,52
-	.word	.L30,.L31
-	.byte	5
-	.word	.L5,.L29
-	.byte	6
-	.byte	'CurrentError',0,1,134,1,27
-	.word	.L32,.L33
-	.byte	6
-	.byte	'endless',0,1,135,1,18
-	.word	.L34,.L35
-	.byte	0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('ErrorHook')
+	.word	.L5,.L50
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('StartupHook')
 	.sect	'.debug_abbrev'
-.L11:
+.L17:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
-	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('ErrorHook')
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('StartupHook')
 	.sect	'.debug_line'
-.L12:
-	.word	.L50-.L49
-.L49:
+.L18:
+	.word	.L75-.L74
+.L74:
 	.half	3
-	.word	.L52-.L51
-.L51:
+	.word	.L77-.L76
+.L76:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\Appl\\Source\\Os_Callout_Stubs.c',0,0,0,0,0
-.L52:
-	.byte	5,28,7,0,5,2
+.L77:
+	.byte	5,1,7,0,5,2
 	.word	.L5
-	.byte	3,134,1,1,5,31,3,122,1,5,26,9
-	.half	.L43-.L5
-	.byte	3,6,1,5,3,9
-	.half	.L53-.L43
-	.byte	3,3,1,5,24,9
-	.half	.L54-.L53
-	.byte	3,127,1,5,22,9
-	.half	.L55-.L54
-	.byte	3,1,1,5,28,9
-	.half	.L56-.L55
-	.byte	3,1,1,5,3,9
-	.half	.L44-.L56
-	.byte	1,5,47,7,9
-	.half	.L57-.L44
-	.byte	3,2,1,5,33,9
-	.half	.L58-.L57
-	.byte	1,5,40,9
-	.half	.L59-.L58
-	.byte	3,1,1,5,26,9
-	.half	.L60-.L59
-	.byte	1,5,46,9
-	.half	.L61-.L60
-	.byte	3,1,1,5,32,9
-	.half	.L62-.L61
-	.byte	1,5,34,9
-	.half	.L63-.L62
-	.byte	3,1,1,5,29,9
-	.half	.L2-.L63
-	.byte	3,2,1,9
-	.half	.L64-.L2
-	.byte	3,1,1,5,10,9
-	.half	.L3-.L64
-	.byte	3,2,1,5,23,9
-	.half	.L65-.L3
-	.byte	1,5,1,7,9
-	.half	.L66-.L65
-	.byte	3,8,1,7,9
-	.half	.L14-.L66
+	.byte	3,218,0,1,7,9
+	.half	.L20-.L5
 	.byte	0,1,1
-.L50:
-	.sdecl	'.debug_ranges',debug,cluster('ErrorHook')
+.L75:
+	.sdecl	'.debug_ranges',debug,cluster('StartupHook')
 	.sect	'.debug_ranges'
-.L13:
-	.word	-1,.L5,0,.L14-.L5,0,0
-	.sdecl	'.debug_info',debug,cluster('Os_Callout_LastError')
-	.sect	'.debug_info'
-.L15:
-	.word	179
-	.half	3
-	.word	.L16
-	.byte	4,1
-	.byte	'..\\Appl\\Source\\Os_Callout_Stubs.c',0
-	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L6
-	.byte	3
-	.byte	'Os_Callout_LastError',0,3,58,21
-	.word	.L36
-	.byte	1,5,3
-	.word	Os_Callout_LastError
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('Os_Callout_LastError')
-	.sect	'.debug_abbrev'
-.L16:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
-	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('Os_Callout_LastErrorService')
-	.sect	'.debug_info'
-.L17:
-	.word	186
-	.half	3
-	.word	.L18
-	.byte	4,1
-	.byte	'..\\Appl\\Source\\Os_Callout_Stubs.c',0
-	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L6
-	.byte	3
-	.byte	'Os_Callout_LastErrorService',0,3,59,26
-	.word	.L37
-	.byte	1,5,3
-	.word	Os_Callout_LastErrorService
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('Os_Callout_LastErrorService')
-	.sect	'.debug_abbrev'
-.L18:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
-	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('Os_Callout_LastErrorStatus')
-	.sect	'.debug_info'
 .L19:
-	.word	185
-	.half	3
-	.word	.L20
-	.byte	4,1
-	.byte	'..\\Appl\\Source\\Os_Callout_Stubs.c',0
-	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L6
-	.byte	3
-	.byte	'Os_Callout_LastErrorStatus',0,3,60,24
-	.word	.L38
-	.byte	1,5,3
-	.word	Os_Callout_LastErrorStatus
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('Os_Callout_LastErrorStatus')
-	.sect	'.debug_abbrev'
-.L20:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
-	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('Os_Callout_LastDetailedError')
+	.word	-1,.L5,0,.L20-.L5,0,0
+	.sdecl	'.debug_info',debug,cluster('ShutdownHook')
 	.sect	'.debug_info'
 .L21:
-	.word	187
+	.word	216
 	.half	3
 	.word	.L22
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\Os_Callout_Stubs.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L6
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L24,.L23
+	.byte	2
+	.word	.L12
 	.byte	3
-	.byte	'Os_Callout_LastDetailedError',0,3,61,17
+	.byte	'ShutdownHook',0,1,105,34,1,1,1
+	.word	.L7,.L51,.L6
+	.byte	4
+	.byte	'Fatalerror',0,1,105,58
+	.word	.L52,.L53
+	.byte	5
+	.word	.L7,.L51
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('ShutdownHook')
+	.sect	'.debug_abbrev'
+.L22:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('ShutdownHook')
+	.sect	'.debug_line'
+.L23:
+	.word	.L79-.L78
+.L78:
+	.half	3
+	.word	.L81-.L80
+.L80:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Appl\\Source\\Os_Callout_Stubs.c',0,0,0,0,0
+.L81:
+	.byte	5,16,7,0,5,2
+	.word	.L7
+	.byte	3,237,0,1,5,1,7,9
+	.half	.L25-.L7
+	.byte	3,5,0,1,1
+.L79:
+	.sdecl	'.debug_ranges',debug,cluster('ShutdownHook')
+	.sect	'.debug_ranges'
+.L24:
+	.word	-1,.L7,0,.L25-.L7,0,0
+	.sdecl	'.debug_info',debug,cluster('ErrorHook')
+	.sect	'.debug_info'
+.L26:
+	.word	258
+	.half	3
+	.word	.L27
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\Os_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L29,.L28
+	.byte	2
+	.word	.L12
+	.byte	3
+	.byte	'ErrorHook',0,1,129,1,31,1,1,1
+	.word	.L9,.L54,.L8
+	.byte	4
+	.byte	'Error',0,1,129,1,52
+	.word	.L52,.L55
+	.byte	5
+	.word	.L9,.L54
+	.byte	6
+	.byte	'CurrentError',0,1,134,1,27
+	.word	.L56,.L57
+	.byte	6
+	.byte	'endless',0,1,135,1,18
+	.word	.L58,.L59
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('ErrorHook')
+	.sect	'.debug_abbrev'
+.L27:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('ErrorHook')
+	.sect	'.debug_line'
+.L28:
+	.word	.L83-.L82
+.L82:
+	.half	3
+	.word	.L85-.L84
+.L84:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Appl\\Source\\Os_Callout_Stubs.c',0,0,0,0,0
+.L85:
+	.byte	5,28,7,0,5,2
+	.word	.L9
+	.byte	3,134,1,1,5,31,3,122,1,5,26,9
+	.half	.L68-.L9
+	.byte	3,6,1,5,3,9
+	.half	.L86-.L68
+	.byte	3,3,1,5,24,9
+	.half	.L87-.L86
+	.byte	3,127,1,5,22,9
+	.half	.L88-.L87
+	.byte	3,1,1,5,28,9
+	.half	.L89-.L88
+	.byte	3,1,1,5,3,9
+	.half	.L69-.L89
+	.byte	1,5,47,7,9
+	.half	.L90-.L69
+	.byte	3,2,1,5,33,9
+	.half	.L91-.L90
+	.byte	1,5,40,9
+	.half	.L92-.L91
+	.byte	3,1,1,5,26,9
+	.half	.L93-.L92
+	.byte	1,5,46,9
+	.half	.L94-.L93
+	.byte	3,1,1,5,32,9
+	.half	.L95-.L94
+	.byte	1,5,34,9
+	.half	.L96-.L95
+	.byte	3,1,1,5,29,9
+	.half	.L2-.L96
+	.byte	3,2,1,9
+	.half	.L97-.L2
+	.byte	3,1,1,5,10,9
+	.half	.L3-.L97
+	.byte	3,2,1,5,23,9
+	.half	.L98-.L3
+	.byte	1,5,1,7,9
+	.half	.L99-.L98
+	.byte	3,8,1,7,9
+	.half	.L30-.L99
+	.byte	0,1,1
+.L83:
+	.sdecl	'.debug_ranges',debug,cluster('ErrorHook')
+	.sect	'.debug_ranges'
+.L29:
+	.word	-1,.L9,0,.L30-.L9,0,0
+	.sdecl	'.debug_info',debug,cluster('Os_PanicHook')
+	.sect	'.debug_info'
+.L31:
+	.word	194
+	.half	3
+	.word	.L32
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\Os_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L34,.L33
+	.byte	2
+	.word	.L12
+	.byte	3
+	.byte	'Os_PanicHook',0,1,243,1,31,1,1,1
+	.word	.L11,.L60,.L10
+	.byte	4
+	.word	.L11,.L60
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Os_PanicHook')
+	.sect	'.debug_abbrev'
+.L32:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Os_PanicHook')
+	.sect	'.debug_line'
+.L33:
+	.word	.L101-.L100
+.L100:
+	.half	3
+	.word	.L103-.L102
+.L102:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Appl\\Source\\Os_Callout_Stubs.c',0,0,0,0,0
+.L103:
+	.byte	5,29,7,0,5,2
+	.word	.L11
+	.byte	3,248,1,1,9
+	.half	.L104-.L11
+	.byte	3,1,1,5,1,9
+	.half	.L35-.L104
+	.byte	3,5,0,1,1
+.L101:
+	.sdecl	'.debug_ranges',debug,cluster('Os_PanicHook')
+	.sect	'.debug_ranges'
+.L34:
+	.word	-1,.L11,0,.L35-.L11,0,0
+	.sdecl	'.debug_info',debug,cluster('Os_Callout_LastError')
+	.sect	'.debug_info'
+.L36:
+	.word	179
+	.half	3
+	.word	.L37
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\Os_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L12
+	.byte	3
+	.byte	'Os_Callout_LastError',0,4,58,21
+	.word	.L61
+	.byte	1,5,3
+	.word	Os_Callout_LastError
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Os_Callout_LastError')
+	.sect	'.debug_abbrev'
+.L37:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Os_Callout_LastErrorService')
+	.sect	'.debug_info'
+.L38:
+	.word	186
+	.half	3
 	.word	.L39
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\Os_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L12
+	.byte	3
+	.byte	'Os_Callout_LastErrorService',0,4,59,26
+	.word	.L62
+	.byte	1,5,3
+	.word	Os_Callout_LastErrorService
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Os_Callout_LastErrorService')
+	.sect	'.debug_abbrev'
+.L39:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Os_Callout_LastErrorStatus')
+	.sect	'.debug_info'
+.L40:
+	.word	185
+	.half	3
+	.word	.L41
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\Os_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L12
+	.byte	3
+	.byte	'Os_Callout_LastErrorStatus',0,4,60,24
+	.word	.L63
+	.byte	1,5,3
+	.word	Os_Callout_LastErrorStatus
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Os_Callout_LastErrorStatus')
+	.sect	'.debug_abbrev'
+.L41:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('Os_Callout_LastDetailedError')
+	.sect	'.debug_info'
+.L42:
+	.word	187
+	.half	3
+	.word	.L43
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\Os_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L12
+	.byte	3
+	.byte	'Os_Callout_LastDetailedError',0,4,61,17
+	.word	.L64
 	.byte	1,5,3
 	.word	Os_Callout_LastDetailedError
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('Os_Callout_LastDetailedError')
 	.sect	'.debug_abbrev'
-.L22:
+.L43:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('Os_ErrorHookCounter')
 	.sect	'.debug_info'
-.L23:
+.L44:
 	.word	178
 	.half	3
-	.word	.L24
+	.word	.L45
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\Os_Callout_Stubs.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L6
+	.word	.L12
 	.byte	3
-	.byte	'Os_ErrorHookCounter',0,3,62,17
-	.word	.L40
+	.byte	'Os_ErrorHookCounter',0,4,62,17
+	.word	.L65
 	.byte	1,5,3
 	.word	Os_ErrorHookCounter
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('Os_ErrorHookCounter')
 	.sect	'.debug_abbrev'
-.L24:
+.L45:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('Os_Callout_UnhandledIrq')
 	.sect	'.debug_info'
-.L25:
+.L46:
 	.word	182
 	.half	3
-	.word	.L26
+	.word	.L47
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\Os_Callout_Stubs.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L6
+	.word	.L12
 	.byte	3
-	.byte	'Os_Callout_UnhandledIrq',0,3,63,35
-	.word	.L41
+	.byte	'Os_Callout_UnhandledIrq',0,4,63,35
+	.word	.L66
 	.byte	1,5,3
 	.word	Os_Callout_UnhandledIrq
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('Os_Callout_UnhandledIrq')
 	.sect	'.debug_abbrev'
-.L26:
+.L47:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('Os_Callout_UnhandledExc')
 	.sect	'.debug_info'
-.L27:
+.L48:
 	.word	182
 	.half	3
-	.word	.L28
+	.word	.L49
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\Os_Callout_Stubs.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
-	.word	.L6
+	.word	.L12
 	.byte	3
-	.byte	'Os_Callout_UnhandledExc',0,3,64,35
-	.word	.L42
+	.byte	'Os_Callout_UnhandledExc',0,4,64,35
+	.word	.L67
 	.byte	1,5,3
 	.word	Os_Callout_UnhandledExc
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('Os_Callout_UnhandledExc')
 	.sect	'.debug_abbrev'
-.L28:
+.L49:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_loc',debug,cluster('ErrorHook')
 	.sect	'.debug_loc'
-.L33:
-	.word	-1,.L5,0,.L29-.L5
+.L57:
+	.word	-1,.L9,0,.L54-.L9
 	.half	2
 	.byte	145,120
 	.word	0,0
-.L31:
-	.word	-1,.L5,0,.L44-.L5
+.L55:
+	.word	-1,.L9,0,.L69-.L9
 	.half	1
 	.byte	84
 	.word	0,0
-.L4:
-	.word	-1,.L5,0,.L43-.L5
+.L8:
+	.word	-1,.L9,0,.L68-.L9
 	.half	2
 	.byte	138,0
-	.word	.L43-.L5,.L29-.L5
+	.word	.L68-.L9,.L54-.L9
 	.half	2
 	.byte	138,8
-	.word	.L29-.L5,.L29-.L5
+	.word	.L54-.L9,.L54-.L9
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L35:
-	.word	-1,.L5,0,.L29-.L5
+.L59:
+	.word	-1,.L9,0,.L54-.L9
 	.half	2
 	.byte	145,124
 	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Os_PanicHook')
+	.sect	'.debug_loc'
+.L10:
+	.word	-1,.L11,0,.L60-.L11
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('ShutdownHook')
+	.sect	'.debug_loc'
+.L53:
+	.word	-1,.L7,0,.L51-.L7
+	.half	1
+	.byte	84
+	.word	0,0
+.L6:
+	.word	-1,.L7,0,.L51-.L7
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('StartupHook')
+	.sect	'.debug_loc'
+.L4:
+	.word	-1,.L5,0,.L50-.L5
+	.half	2
+	.byte	138,0
+	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L67:
+.L105:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
 	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('StartupHook')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L105,.L5,.L50-.L5
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('ShutdownHook')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L105,.L7,.L51-.L7
 	.sdecl	'.debug_frame',debug,cluster('ErrorHook')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L67,.L5,.L29-.L5
+	.word	.L105,.L9,.L54-.L9
 	.byte	4
-	.word	(.L43-.L5)/2
+	.word	(.L68-.L9)/2
 	.byte	19,8,22,26,3,19,138,8,4
-	.word	(.L29-.L43)/2
+	.word	(.L54-.L68)/2
 	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('Os_PanicHook')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L105,.L11,.L60-.L11
 
-; ..\Appl\Source\Os_Callout_Stubs.c	   158  
-; ..\Appl\Source\Os_Callout_Stubs.c	   159  # define OS_STOP_SEC_ERRORHOOK_CODE
-; ..\Appl\Source\Os_Callout_Stubs.c	   160  # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-; ..\Appl\Source\Os_Callout_Stubs.c	   161  #endif /* OS_CFG_ERRORHOOK_SYSTEM */
-; ..\Appl\Source\Os_Callout_Stubs.c	   162  
-; ..\Appl\Source\Os_Callout_Stubs.c	   163  
-; ..\Appl\Source\Os_Callout_Stubs.c	   164  /**********************************************************************************************************************
-; ..\Appl\Source\Os_Callout_Stubs.c	   165   *  ProtectionHook()
-; ..\Appl\Source\Os_Callout_Stubs.c	   166   *********************************************************************************************************************/
-; ..\Appl\Source\Os_Callout_Stubs.c	   167  #if OS_CFG_PROTECTIONHOOK_SYSTEM == STD_ON
-; ..\Appl\Source\Os_Callout_Stubs.c	   168  # define OS_START_SEC_PROTECTIONHOOK_CODE
-; ..\Appl\Source\Os_Callout_Stubs.c	   169  # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-; ..\Appl\Source\Os_Callout_Stubs.c	   170  
-; ..\Appl\Source\Os_Callout_Stubs.c	   171  FUNC(ProtectionReturnType, OS_PROTECTIONHOOK_CODE) ProtectionHook(StatusType Fatalerror)
-; ..\Appl\Source\Os_Callout_Stubs.c	   172  {
-; ..\Appl\Source\Os_Callout_Stubs.c	   173  /**********************************************************************************************************************
-; ..\Appl\Source\Os_Callout_Stubs.c	   174   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK OS_Callout_Stubs_ProtectionHook>
-; ..\Appl\Source\Os_Callout_Stubs.c	   175   *********************************************************************************************************************/
-; ..\Appl\Source\Os_Callout_Stubs.c	   176    return PRO_SHUTDOWN;
-; ..\Appl\Source\Os_Callout_Stubs.c	   177  /**********************************************************************************************************************
-; ..\Appl\Source\Os_Callout_Stubs.c	   178   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>
-; ..\Appl\Source\Os_Callout_Stubs.c	   179   *********************************************************************************************************************/
-; ..\Appl\Source\Os_Callout_Stubs.c	   180  
-; ..\Appl\Source\Os_Callout_Stubs.c	   181  }
-; ..\Appl\Source\Os_Callout_Stubs.c	   182  
-; ..\Appl\Source\Os_Callout_Stubs.c	   183  # define OS_STOP_SEC_PROTECTIONHOOK_CODE
-; ..\Appl\Source\Os_Callout_Stubs.c	   184  # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-; ..\Appl\Source\Os_Callout_Stubs.c	   185  #endif /* OS_CFG_PROTECTIONHOOK_SYSTEM */
-; ..\Appl\Source\Os_Callout_Stubs.c	   186  
-; ..\Appl\Source\Os_Callout_Stubs.c	   187  
-; ..\Appl\Source\Os_Callout_Stubs.c	   188  /**********************************************************************************************************************
-; ..\Appl\Source\Os_Callout_Stubs.c	   189   *  PreTaskHook()
-; ..\Appl\Source\Os_Callout_Stubs.c	   190   *********************************************************************************************************************/
-; ..\Appl\Source\Os_Callout_Stubs.c	   191  #if OS_CFG_PRETASKHOOK == STD_ON
-; ..\Appl\Source\Os_Callout_Stubs.c	   192  # define OS_START_SEC_PRETASKHOOK_CODE
-; ..\Appl\Source\Os_Callout_Stubs.c	   193  # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-; ..\Appl\Source\Os_Callout_Stubs.c	   194  
-; ..\Appl\Source\Os_Callout_Stubs.c	   195  FUNC(void, OS_PRETASKHOOK_CODE) PreTaskHook(void)
-; ..\Appl\Source\Os_Callout_Stubs.c	   196  {
-; ..\Appl\Source\Os_Callout_Stubs.c	   197  /**********************************************************************************************************************
-; ..\Appl\Source\Os_Callout_Stubs.c	   198   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK OS_Callout_Stubs_PreTaskHook>
-; ..\Appl\Source\Os_Callout_Stubs.c	   199   *********************************************************************************************************************/
-; ..\Appl\Source\Os_Callout_Stubs.c	   200  
-; ..\Appl\Source\Os_Callout_Stubs.c	   201  /**********************************************************************************************************************
-; ..\Appl\Source\Os_Callout_Stubs.c	   202   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>
-; ..\Appl\Source\Os_Callout_Stubs.c	   203   *********************************************************************************************************************/
-; ..\Appl\Source\Os_Callout_Stubs.c	   204  
-; ..\Appl\Source\Os_Callout_Stubs.c	   205  }
-; ..\Appl\Source\Os_Callout_Stubs.c	   206  
-; ..\Appl\Source\Os_Callout_Stubs.c	   207  # define OS_STOP_SEC_PRETASKHOOK_CODE
-; ..\Appl\Source\Os_Callout_Stubs.c	   208  # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-; ..\Appl\Source\Os_Callout_Stubs.c	   209  #endif /* OS_CFG_PRETASKHOOK */
-; ..\Appl\Source\Os_Callout_Stubs.c	   210  
-; ..\Appl\Source\Os_Callout_Stubs.c	   211  
-; ..\Appl\Source\Os_Callout_Stubs.c	   212  /**********************************************************************************************************************
-; ..\Appl\Source\Os_Callout_Stubs.c	   213   *  PostTaskHook()
-; ..\Appl\Source\Os_Callout_Stubs.c	   214   *********************************************************************************************************************/
-; ..\Appl\Source\Os_Callout_Stubs.c	   215  #if OS_CFG_POSTTASKHOOK == STD_ON
-; ..\Appl\Source\Os_Callout_Stubs.c	   216  # define OS_START_SEC_POSTTASKHOOK_CODE
-; ..\Appl\Source\Os_Callout_Stubs.c	   217  # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-; ..\Appl\Source\Os_Callout_Stubs.c	   218  
-; ..\Appl\Source\Os_Callout_Stubs.c	   219  FUNC(void, OS_POSTTASKHOOK_CODE) PostTaskHook(void)
-; ..\Appl\Source\Os_Callout_Stubs.c	   220  {
-; ..\Appl\Source\Os_Callout_Stubs.c	   221  /**********************************************************************************************************************
-; ..\Appl\Source\Os_Callout_Stubs.c	   222   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK OS_Callout_Stubs_PostTaskHook>
-; ..\Appl\Source\Os_Callout_Stubs.c	   223   *********************************************************************************************************************/
-; ..\Appl\Source\Os_Callout_Stubs.c	   224  
-; ..\Appl\Source\Os_Callout_Stubs.c	   225  /**********************************************************************************************************************
-; ..\Appl\Source\Os_Callout_Stubs.c	   226   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>
-; ..\Appl\Source\Os_Callout_Stubs.c	   227   *********************************************************************************************************************/
-; ..\Appl\Source\Os_Callout_Stubs.c	   228  
-; ..\Appl\Source\Os_Callout_Stubs.c	   229  }
-; ..\Appl\Source\Os_Callout_Stubs.c	   230  
-; ..\Appl\Source\Os_Callout_Stubs.c	   231  # define OS_STOP_SEC_POSTTASKHOOK_CODE
-; ..\Appl\Source\Os_Callout_Stubs.c	   232  # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-; ..\Appl\Source\Os_Callout_Stubs.c	   233  #endif /* OS_CFG_POSTTASKHOOK */
-; ..\Appl\Source\Os_Callout_Stubs.c	   234  
-; ..\Appl\Source\Os_Callout_Stubs.c	   235  
-; ..\Appl\Source\Os_Callout_Stubs.c	   236  /**********************************************************************************************************************
-; ..\Appl\Source\Os_Callout_Stubs.c	   237   *  Os_PanicHook()
-; ..\Appl\Source\Os_Callout_Stubs.c	   238   *********************************************************************************************************************/
-; ..\Appl\Source\Os_Callout_Stubs.c	   239  #if OS_CFG_PANICHOOK == STD_ON
-; ..\Appl\Source\Os_Callout_Stubs.c	   240  # define OS_START_SEC_PANICHOOK_CODE
-; ..\Appl\Source\Os_Callout_Stubs.c	   241  # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-; ..\Appl\Source\Os_Callout_Stubs.c	   242  
-; ..\Appl\Source\Os_Callout_Stubs.c	   243  FUNC(void, OS_PANICHOOK_CODE) Os_PanicHook(void)
-; ..\Appl\Source\Os_Callout_Stubs.c	   244  {
-; ..\Appl\Source\Os_Callout_Stubs.c	   245  /**********************************************************************************************************************
-; ..\Appl\Source\Os_Callout_Stubs.c	   246   * DO NOT CHANGE THIS COMMENT!           <USERBLOCK OS_Callout_Stubs_PanicHook>
-; ..\Appl\Source\Os_Callout_Stubs.c	   247   *********************************************************************************************************************/
-; ..\Appl\Source\Os_Callout_Stubs.c	   248    /* Capture before CoreFreeze ??? watch these if AsyncTransmit ends in panic. */
-; ..\Appl\Source\Os_Callout_Stubs.c	   249    (void)Os_GetUnhandledIrq(&Os_Callout_UnhandledIrq);
-; ..\Appl\Source\Os_Callout_Stubs.c	   250    (void)Os_GetUnhandledExc(&Os_Callout_UnhandledExc);
 ; ..\Appl\Source\Os_Callout_Stubs.c	   251  /**********************************************************************************************************************
 ; ..\Appl\Source\Os_Callout_Stubs.c	   252   * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>
 ; ..\Appl\Source\Os_Callout_Stubs.c	   253   *********************************************************************************************************************/

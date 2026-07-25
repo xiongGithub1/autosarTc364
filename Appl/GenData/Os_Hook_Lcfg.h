@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hook_Lcfg.h
- *   Generation Time: 2024-07-16 16:49:59
+ *   Generation Time: 2026-07-25 19:18:42
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -85,6 +85,12 @@
 
 /*! Hook configuration data: Os_CoreInitHook_OsCore0 */
 extern CONST(Os_HookInitHookConfigType, OS_CONST) OsCfg_Hook_Os_CoreInitHook_OsCore0;
+
+/*! Hook configuration data: StartupHook_OsCore0 */
+extern CONST(Os_HookCallbackConfigType, OS_CONST) OsCfg_Hook_StartupHook_OsCore0;
+
+/*! Hook configuration data: ShutdownHook_OsCore0 */
+extern CONST(Os_HookStatusHookConfigType, OS_CONST) OsCfg_Hook_ShutdownHook_OsCore0;
 
 /*! Hook configuration data: ErrorHook_OsCore0 */
 extern CONST(Os_HookStatusHookConfigType, OS_CONST) OsCfg_Hook_ErrorHook_OsCore0;

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Cfg.h
- *   Generation Time: 2026-07-25 15:51:51
+ *   Generation Time: 2026-07-25 19:18:41
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -93,13 +93,13 @@
 # define OS_CFG_POSTTASKHOOK                     (STD_OFF)
 
 /*! Defines whether the OS shall call the panic hook (STD_ON) or not (STD_OFF). */
-# define OS_CFG_PANICHOOK                        (STD_OFF)
+# define OS_CFG_PANICHOOK                        (STD_ON)
 
 /*! Defines whether the system startup hook is configured (STD_ON) or not (STD_OFF). */
-# define OS_CFG_STARTUPHOOK_SYSTEM               (STD_OFF)
+# define OS_CFG_STARTUPHOOK_SYSTEM               (STD_ON)
 
 /*! Defines whether the system shutdown hook is configured (STD_ON) or not (STD_OFF). */
-# define OS_CFG_SHUTDOWNHOOK_SYSTEM              (STD_OFF)
+# define OS_CFG_SHUTDOWNHOOK_SYSTEM              (STD_ON)
 
 /*! Defines whether the system error hook is configured (STD_ON) or not (STD_OFF). */
 # define OS_CFG_ERRORHOOK_SYSTEM                 (STD_ON)

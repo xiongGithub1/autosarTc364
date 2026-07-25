@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Interrupt_Lcfg.c
- *   Generation Time: 2026-07-25 17:19:09
+ *   Generation Time: 2026-07-25 21:01:43
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -172,7 +172,7 @@ CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_DMACH5SR_ISR =
 /*! HAL ISR configuration data: DmaErrIsr */
 CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_DmaErrIsr =
 {
-  /* .Level          = */ 100,
+  /* .Level          = */ 75,
   /* .Source         = */ 0x340uL,
   /* .CoreAssignment = */ 0
 };

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Isr_Lcfg.c
- *   Generation Time: 2026-07-25 17:19:09
+ *   Generation Time: 2026-07-25 21:01:43
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -151,7 +151,7 @@ CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_AdcIsr_G0 =
   /* .Thread   = */
   {
     /* .ContextConfig         = */ &OsCfg_Hal_Context_AdcIsr_G0,
-    /* .Context               = */ &OsCfg_Hal_Context_OsCore0_Isr_Level6_Dyn,
+    /* .Context               = */ &OsCfg_Hal_Context_OsCore0_Isr_Level7_Dyn,
     /* .Stack                 = */ &OsCfg_Stack_OsCore0_Isr_Core,
     /* .Dyn                   = */ OS_ISR_CASTDYN_ISR_2_THREAD(OsCfg_Isr_AdcIsr_G0_Dyn),
     /* .OwnerApplication      = */ &OsCfg_App_SystemApplication_OsCore0,
@@ -186,7 +186,7 @@ CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_AdcIsr_G8 =
   /* .Thread   = */
   {
     /* .ContextConfig         = */ &OsCfg_Hal_Context_AdcIsr_G8,
-    /* .Context               = */ &OsCfg_Hal_Context_OsCore0_Isr_Level4_Dyn,
+    /* .Context               = */ &OsCfg_Hal_Context_OsCore0_Isr_Level5_Dyn,
     /* .Stack                 = */ &OsCfg_Stack_OsCore0_Isr_Core,
     /* .Dyn                   = */ OS_ISR_CASTDYN_ISR_2_THREAD(OsCfg_Isr_AdcIsr_G8_Dyn),
     /* .OwnerApplication      = */ &OsCfg_App_SystemApplication_OsCore0,
@@ -258,7 +258,7 @@ CONST(Os_TimerIsrConfigType, OS_CONST) OsCfg_Isr_CounterIsr_SystemTimer =
   /* .Thread   = */
   {
     /* .ContextConfig         = */ &OsCfg_Hal_Context_CounterIsr_SystemTimer,
-    /* .Context               = */ &OsCfg_Hal_Context_OsCore0_Isr_Level5_Dyn,
+    /* .Context               = */ &OsCfg_Hal_Context_OsCore0_Isr_Level6_Dyn,
     /* .Stack                 = */ &OsCfg_Stack_OsCore0_Isr_Core,
     /* .Dyn                   = */ OS_ISR_CASTDYN_ISR_2_THREAD(OsCfg_Isr_CounterIsr_SystemTimer_Dyn),
     /* .OwnerApplication      = */ &OsCfg_App_SystemApplication_OsCore0,
@@ -295,7 +295,7 @@ CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_DMACH4SR_ISR =
   /* .Thread   = */
   {
     /* .ContextConfig         = */ &OsCfg_Hal_Context_DMACH4SR_ISR,
-    /* .Context               = */ &OsCfg_Hal_Context_OsCore0_Isr_Level7_Dyn,
+    /* .Context               = */ &OsCfg_Hal_Context_OsCore0_Isr_Level8_Dyn,
     /* .Stack                 = */ &OsCfg_Stack_OsCore0_Isr_Core,
     /* .Dyn                   = */ OS_ISR_CASTDYN_ISR_2_THREAD(OsCfg_Isr_DMACH4SR_ISR_Dyn),
     /* .OwnerApplication      = */ &OsCfg_App_SystemApplication_OsCore0,
@@ -330,7 +330,7 @@ CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_DMACH5SR_ISR =
   /* .Thread   = */
   {
     /* .ContextConfig         = */ &OsCfg_Hal_Context_DMACH5SR_ISR,
-    /* .Context               = */ &OsCfg_Hal_Context_OsCore0_Isr_Level8_Dyn,
+    /* .Context               = */ &OsCfg_Hal_Context_OsCore0_Isr_Level9_Dyn,
     /* .Stack                 = */ &OsCfg_Stack_OsCore0_Isr_Core,
     /* .Dyn                   = */ OS_ISR_CASTDYN_ISR_2_THREAD(OsCfg_Isr_DMACH5SR_ISR_Dyn),
     /* .OwnerApplication      = */ &OsCfg_App_SystemApplication_OsCore0,
@@ -365,7 +365,7 @@ CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_DmaErrIsr =
   /* .Thread   = */
   {
     /* .ContextConfig         = */ &OsCfg_Hal_Context_DmaErrIsr,
-    /* .Context               = */ &OsCfg_Hal_Context_OsCore0_Isr_Level9_Dyn,
+    /* .Context               = */ &OsCfg_Hal_Context_OsCore0_Isr_Level4_Dyn,
     /* .Stack                 = */ &OsCfg_Stack_OsCore0_Isr_Core,
     /* .Dyn                   = */ OS_ISR_CASTDYN_ISR_2_THREAD(OsCfg_Isr_DmaErrIsr_Dyn),
     /* .OwnerApplication      = */ &OsCfg_App_SystemApplication_OsCore0,
