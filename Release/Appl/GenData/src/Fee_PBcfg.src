@@ -1,0 +1,251 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc3908a --dep-file=Appl\\GenData\\src\\.Fee_PBcfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=Appl\\GenData\\src\\Fee_PBcfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\src\\Fee_PBcfg.src ..\\Appl\\GenData\\src\\Fee_PBcfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\GenData\\src\\Fee_PBcfg.c'
+
+	
+$TC162
+	
+	.sdecl	'.bss.Fee_PBcfg.Fee_StateVar',data
+	.sect	'.bss.Fee_PBcfg.Fee_StateVar'
+	.global	Fee_StateVar
+	.align	4
+Fee_StateVar:	.type	object
+	.size	Fee_StateVar,2204
+	.space	2204
+	.sdecl	'.rodata.Fee_PBcfg.Fee_BlockConfig',data,rom
+	.sect	'.rodata.Fee_PBcfg.Fee_BlockConfig'
+	.align	4
+Fee_BlockConfig:	.type	object
+	.size	Fee_BlockConfig,24
+	.space	4
+	.byte	16
+	.space	1
+	.byte	4
+	.space	5
+	.byte	17
+	.space	1
+	.byte	4
+	.space	5
+	.byte	32
+	.space	1
+	.byte	6
+	.space	1
+	.sdecl	'.rodata.Fee_PBcfg.Fee_Config',data,rom
+	.sect	'.rodata.Fee_PBcfg.Fee_Config'
+	.global	Fee_Config
+	.align	4
+Fee_Config:	.type	object
+	.size	Fee_Config,40
+	.word	Fee_StateVar,Fee_BlockConfig
+	.space	8
+	.word	200
+	.half	3
+	.space	18
+
+; ..\Appl\GenData\src\Fee_PBcfg.c	     1  /*******************************************************************************
+; ..\Appl\GenData\src\Fee_PBcfg.c	     2  **                                                                            **
+; ..\Appl\GenData\src\Fee_PBcfg.c	     3  ** Copyright (C) Infineon Technologies (2021)                                 **
+; ..\Appl\GenData\src\Fee_PBcfg.c	     4  **                                                                            **
+; ..\Appl\GenData\src\Fee_PBcfg.c	     5  ** All rights reserved.                                                       **
+; ..\Appl\GenData\src\Fee_PBcfg.c	     6  **                                                                            **
+; ..\Appl\GenData\src\Fee_PBcfg.c	     7  ** This document contains proprietary information belonging to Infineon       **
+; ..\Appl\GenData\src\Fee_PBcfg.c	     8  ** Technologies. Passing on and copying of this document, and communication   **
+; ..\Appl\GenData\src\Fee_PBcfg.c	     9  ** of its contents is not permitted without prior written authorization.      **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    10  **                                                                            **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    11  ********************************************************************************
+; ..\Appl\GenData\src\Fee_PBcfg.c	    12  **                                                                            **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    13  **  FILENAME    : Fee_PBCfg.c                                                 **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    14  **                                                                            **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    15  **  VERSION     : 12.0.0                                                      **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    16  **                                                                            **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    17  **  DATE, TIME  : 2024-07-24, 19:06:35   !!!IGNORE-LINE!!!                **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    18  **                                                                            **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    19  **  GENERATOR   : Build b191017-0938                                        **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    20  **                                                                            **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    21  **  BSW MODULE DECRIPTION : Fee.bmd                                           **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    22  **                                                                            **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    23  **  VARIANT     : Variant PB                                                  **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    24  **                                                                            **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    25  **  PLATFORM    : Infineon AURIX2G                                            **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    26  **                                                                            **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    27  **  AUTHOR      : DL-AUTOSAR-Engineering                                      **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    28  **                                                                            **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    29  **  VENDOR      : Infineon Technologies                                       **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    30  **                                                                            **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    31  **  DESCRIPTION :  Fee configuration generated out of ECUC file               **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    32  **                                                                            **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    33  **  SPECIFICATION(S) : Specification of Fee Driver,                           **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    34  **                     AUTOSAR Release 4.2.2 and 4.4.0                        **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    35  **                                                                            **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    36  **  MAY BE CHANGED BY USER : no                                               **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    37  **                                                                            **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    38  *******************************************************************************/
+; ..\Appl\GenData\src\Fee_PBcfg.c	    39  
+; ..\Appl\GenData\src\Fee_PBcfg.c	    40  
+; ..\Appl\GenData\src\Fee_PBcfg.c	    41  /*******************************************************************************
+; ..\Appl\GenData\src\Fee_PBcfg.c	    42  **                      Includes                                              **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    43  *******************************************************************************/
+; ..\Appl\GenData\src\Fee_PBcfg.c	    44  /* Include Fee Module Header File */
+; ..\Appl\GenData\src\Fee_PBcfg.c	    45  #include "Fee.h"
+; ..\Appl\GenData\src\Fee_PBcfg.c	    46  /*******************************************************************************
+; ..\Appl\GenData\src\Fee_PBcfg.c	    47  **                      Imported Compiler Switch Checks                       **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    48  *******************************************************************************/
+; ..\Appl\GenData\src\Fee_PBcfg.c	    49  
+; ..\Appl\GenData\src\Fee_PBcfg.c	    50  /*******************************************************************************
+; ..\Appl\GenData\src\Fee_PBcfg.c	    51  **                      Private Macro Definitions                             **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    52  *******************************************************************************/
+; ..\Appl\GenData\src\Fee_PBcfg.c	    53  
+; ..\Appl\GenData\src\Fee_PBcfg.c	    54  /*******************************************************************************
+; ..\Appl\GenData\src\Fee_PBcfg.c	    55  **                      Private Type Definitions                              **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    56  *******************************************************************************/
+; ..\Appl\GenData\src\Fee_PBcfg.c	    57  
+; ..\Appl\GenData\src\Fee_PBcfg.c	    58  /*******************************************************************************
+; ..\Appl\GenData\src\Fee_PBcfg.c	    59  **                      Private Function Declarations                         **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    60  *******************************************************************************/
+; ..\Appl\GenData\src\Fee_PBcfg.c	    61  
+; ..\Appl\GenData\src\Fee_PBcfg.c	    62  /*******************************************************************************
+; ..\Appl\GenData\src\Fee_PBcfg.c	    63  **                      Global Function Declarations                          **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    64  *******************************************************************************/
+; ..\Appl\GenData\src\Fee_PBcfg.c	    65  
+; ..\Appl\GenData\src\Fee_PBcfg.c	    66  /*******************************************************************************
+; ..\Appl\GenData\src\Fee_PBcfg.c	    67  **                      Global Constant Definitions                           **
+; ..\Appl\GenData\src\Fee_PBcfg.c	    68  *******************************************************************************/
+; ..\Appl\GenData\src\Fee_PBcfg.c	    69  /* Allocate space for state data variables in RAM */
+; ..\Appl\GenData\src\Fee_PBcfg.c	    70  #define FEE_START_SEC_VAR_CLEARED_ASIL_B_LOCAL_UNSPECIFIED
+; ..\Appl\GenData\src\Fee_PBcfg.c	    71  /*MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+; ..\Appl\GenData\src\Fee_PBcfg.c	    72  without safegaurd. It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Fee_PBcfg.c	    73  /*MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header usage as per Autosar
+; ..\Appl\GenData\src\Fee_PBcfg.c	    74  guideline. */
+; ..\Appl\GenData\src\Fee_PBcfg.c	    75  #include "Fee_MemMap.h"
+; ..\Appl\GenData\src\Fee_PBcfg.c	    76  
+; ..\Appl\GenData\src\Fee_PBcfg.c	    77  /* Fee State Variable structure */
+; ..\Appl\GenData\src\Fee_PBcfg.c	    78  /*MISRA2012_RULE_8_7_JUSTIFICATION: Fee_StateVar has not been declared as static
+; ..\Appl\GenData\src\Fee_PBcfg.c	    79  as this structure is being passed to the Fee.c file. It has scope beyond the 
+; ..\Appl\GenData\src\Fee_PBcfg.c	    80  file.*/
+; ..\Appl\GenData\src\Fee_PBcfg.c	    81  /*MISRA2012_RULE_8_4_JUSTIFICATION: MISRA is assuming as a function but it 
+; ..\Appl\GenData\src\Fee_PBcfg.c	    82  branches out as assembly equivalent or compiler routine..*/
+; ..\Appl\GenData\src\Fee_PBcfg.c	    83  Fee_StateDataType Fee_StateVar;
+; ..\Appl\GenData\src\Fee_PBcfg.c	    84  #define FEE_STOP_SEC_VAR_CLEARED_ASIL_B_LOCAL_UNSPECIFIED
+; ..\Appl\GenData\src\Fee_PBcfg.c	    85  /*MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+; ..\Appl\GenData\src\Fee_PBcfg.c	    86  without safegaurd. It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Fee_PBcfg.c	    87  /*MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header usage as per Autosar
+; ..\Appl\GenData\src\Fee_PBcfg.c	    88  guideline. */
+; ..\Appl\GenData\src\Fee_PBcfg.c	    89  #include "Fee_MemMap.h"
+; ..\Appl\GenData\src\Fee_PBcfg.c	    90  
+; ..\Appl\GenData\src\Fee_PBcfg.c	    91  
+; ..\Appl\GenData\src\Fee_PBcfg.c	    92  /* User configured logical block initialization structure */
+; ..\Appl\GenData\src\Fee_PBcfg.c	    93  #define FEE_START_SEC_CONFIG_DATA_ASIL_B_LOCAL_UNSPECIFIED
+; ..\Appl\GenData\src\Fee_PBcfg.c	    94  /*MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+; ..\Appl\GenData\src\Fee_PBcfg.c	    95  without safegaurd. It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Fee_PBcfg.c	    96  /*MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header usage as per Autosar
+; ..\Appl\GenData\src\Fee_PBcfg.c	    97  guideline. */
+; ..\Appl\GenData\src\Fee_PBcfg.c	    98  #include "Fee_MemMap.h"
+; ..\Appl\GenData\src\Fee_PBcfg.c	    99  /*[cover parentID={01870B59-CB19-45ea-8F7F-F16AC029FB7A}][/cover]*/ 
+; ..\Appl\GenData\src\Fee_PBcfg.c	   100  static const Fee_BlockType Fee_BlockConfig[] =
+; ..\Appl\GenData\src\Fee_PBcfg.c	   101  {
+; ..\Appl\GenData\src\Fee_PBcfg.c	   102    {
+; ..\Appl\GenData\src\Fee_PBcfg.c	   103      0U, /* Block Cycle Count */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   104      (uint8)FEE_NORMAL_DATA,  /* Block type is Normal */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   105      16U, /* Block number */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   106      4U, /* Fee Block Size */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   107  /*MISRA2012_RULE_10_3_JUSTIFICATION: Exception MISRA 10_3 is not applicable
+; ..\Appl\GenData\src\Fee_PBcfg.c	   108  to the initializer {0} which may be used to initialize an aggregate.
+; ..\Appl\GenData\src\Fee_PBcfg.c	   109  Here it is defined as enum and first element initialized to 0.
+; ..\Appl\GenData\src\Fee_PBcfg.c	   110  */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   111    },
+; ..\Appl\GenData\src\Fee_PBcfg.c	   112    {
+; ..\Appl\GenData\src\Fee_PBcfg.c	   113      0U, /* Block Cycle Count */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   114      (uint8)FEE_NORMAL_DATA,  /* Block type is Normal */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   115      17U, /* Block number */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   116      4U, /* Fee Block Size */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   117  /*MISRA2012_RULE_10_3_JUSTIFICATION: Exception MISRA 10_3 is not applicable
+; ..\Appl\GenData\src\Fee_PBcfg.c	   118  to the initializer {0} which may be used to initialize an aggregate.
+; ..\Appl\GenData\src\Fee_PBcfg.c	   119  Here it is defined as enum and first element initialized to 0.
+; ..\Appl\GenData\src\Fee_PBcfg.c	   120  */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   121    },
+; ..\Appl\GenData\src\Fee_PBcfg.c	   122    {
+; ..\Appl\GenData\src\Fee_PBcfg.c	   123      0U, /* Block Cycle Count */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   124      (uint8)FEE_NORMAL_DATA,  /* Block type is Normal */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   125      32U, /* Block number */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   126      6U, /* Fee Block Size */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   127  /*MISRA2012_RULE_10_3_JUSTIFICATION: Exception MISRA 10_3 is not applicable
+; ..\Appl\GenData\src\Fee_PBcfg.c	   128  to the initializer {0} which may be used to initialize an aggregate.
+; ..\Appl\GenData\src\Fee_PBcfg.c	   129  Here it is defined as enum and first element initialized to 0.
+; ..\Appl\GenData\src\Fee_PBcfg.c	   130  */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   131    },
+; ..\Appl\GenData\src\Fee_PBcfg.c	   132  };
+; ..\Appl\GenData\src\Fee_PBcfg.c	   133  const Fee_ConfigType Fee_Config =
+; ..\Appl\GenData\src\Fee_PBcfg.c	   134  {  
+; ..\Appl\GenData\src\Fee_PBcfg.c	   135    /* Fee State Data Structure */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   136    &Fee_StateVar,
+; ..\Appl\GenData\src\Fee_PBcfg.c	   137    /* Pointer to logical block configurations */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   138    &Fee_BlockConfig[0],
+; ..\Appl\GenData\src\Fee_PBcfg.c	   139  
+; ..\Appl\GenData\src\Fee_PBcfg.c	   140  /*MISRA2012_RULE_11_3_JUSTIFICATION:  The warning is coming for NULL_PTR defined by 
+; ..\Appl\GenData\src\Fee_PBcfg.c	   141  AUTOSAR. The function pointer is being allocated NULL_PTR as the particular 
+; ..\Appl\GenData\src\Fee_PBcfg.c	   142  function will not be required. The function is correctly getting assigned to NULL VALUE*/
+; ..\Appl\GenData\src\Fee_PBcfg.c	   143  
+; ..\Appl\GenData\src\Fee_PBcfg.c	   144    /* Fee Job end notification API */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   145    (Fee_NotifFunctionPtrType)NULL_PTR,
+; ..\Appl\GenData\src\Fee_PBcfg.c	   146  
+; ..\Appl\GenData\src\Fee_PBcfg.c	   147  /*MISRA2012_RULE_11_3_JUSTIFICATION:  The warning is coming for NULL_PTR defined by 
+; ..\Appl\GenData\src\Fee_PBcfg.c	   148  AUTOSAR. The function pointer is being allocated NULL_PTR as the particular 
+; ..\Appl\GenData\src\Fee_PBcfg.c	   149  function will not be required. The function is correctly getting assigned to NULL VALUE*/
+; ..\Appl\GenData\src\Fee_PBcfg.c	   150  
+; ..\Appl\GenData\src\Fee_PBcfg.c	   151    /* Fee Job error notification API */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   152    (Fee_NotifFunctionPtrType)NULL_PTR,
+; ..\Appl\GenData\src\Fee_PBcfg.c	   153  
+; ..\Appl\GenData\src\Fee_PBcfg.c	   154  /*MISRA2012_RULE_11_3_JUSTIFICATION:  The warning is coming for NULL_PTR defined by 
+; ..\Appl\GenData\src\Fee_PBcfg.c	   155  AUTOSAR. The function pointer is being allocated NULL_PTR as the particular 
+; ..\Appl\GenData\src\Fee_PBcfg.c	   156  function will not be required. The function is correctly getting assigned to NULL VALUE*/
+; ..\Appl\GenData\src\Fee_PBcfg.c	   157  /*MISRA2012_RULE_11_3_JUSTIFICATION:  The warning is coming for NULL_PTR defined by 
+; ..\Appl\GenData\src\Fee_PBcfg.c	   158  AUTOSAR. The function pointer is being allocated NULL_PTR as the particular 
+; ..\Appl\GenData\src\Fee_PBcfg.c	   159  function will not be required. The function is correctly getting assigned to NULL VALUE*/
+; ..\Appl\GenData\src\Fee_PBcfg.c	   160    /* Fee threshold value */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   161    200U,
+; ..\Appl\GenData\src\Fee_PBcfg.c	   162    /* Number of blocks configured */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   163    3U,
+; ..\Appl\GenData\src\Fee_PBcfg.c	   164    {
+; ..\Appl\GenData\src\Fee_PBcfg.c	   165      /* Ignore the unconfigured blocks */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   166      FEE_UNCONFIG_BLOCK_IGNORE,
+; ..\Appl\GenData\src\Fee_PBcfg.c	   167      /* Restart Garbage Collection during initialization */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   168      FEE_GC_RESTART_INIT,
+; ..\Appl\GenData\src\Fee_PBcfg.c	   169      /* Erase Suspend feature is disabled */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   170      FEE_ERASE_SUSPEND_DISABLED,
+; ..\Appl\GenData\src\Fee_PBcfg.c	   171      
+; ..\Appl\GenData\src\Fee_PBcfg.c	   172      /* Reserved */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   173      0U
+; ..\Appl\GenData\src\Fee_PBcfg.c	   174    },
+; ..\Appl\GenData\src\Fee_PBcfg.c	   175  
+; ..\Appl\GenData\src\Fee_PBcfg.c	   176  
+; ..\Appl\GenData\src\Fee_PBcfg.c	   177  /*MISRA2012_RULE_11_3_JUSTIFICATION: Pointers are accessing the correct memory 
+; ..\Appl\GenData\src\Fee_PBcfg.c	   178  range locations. Out of bounds checks were checked during functional verification. */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   179    
+; ..\Appl\GenData\src\Fee_PBcfg.c	   180    /* Fee NVM Illegal State notification */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   181    (Fee_NotifFunctionPtrType)NULL_PTR,
+; ..\Appl\GenData\src\Fee_PBcfg.c	   182  
+; ..\Appl\GenData\src\Fee_PBcfg.c	   183  /*MISRA2012_RULE_11_3_JUSTIFICATION: Pointers are accessing the correct memory 
+; ..\Appl\GenData\src\Fee_PBcfg.c	   184  range locations. Out of bounds checks were checked during functional verification. */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   185    
+; ..\Appl\GenData\src\Fee_PBcfg.c	   186    /* Fee QS Illegal State notification */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   187    (Fee_NotifFunctionPtrType)NULL_PTR,
+; ..\Appl\GenData\src\Fee_PBcfg.c	   188  /*MISRA2012_RULE_11_3_JUSTIFICATION: Pointers are accessing the correct memory 
+; ..\Appl\GenData\src\Fee_PBcfg.c	   189  range locations. Out of bounds checks were checked during functional verification. */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   190    /* QS Hardening Error notification */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   191    (Fee_NotifFunctionPtrType)NULL_PTR,
+; ..\Appl\GenData\src\Fee_PBcfg.c	   192    /* Erase All feature is disabled */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   193    (boolean)FALSE
+; ..\Appl\GenData\src\Fee_PBcfg.c	   194  
+; ..\Appl\GenData\src\Fee_PBcfg.c	   195  
+; ..\Appl\GenData\src\Fee_PBcfg.c	   196  };
+; ..\Appl\GenData\src\Fee_PBcfg.c	   197  
+; ..\Appl\GenData\src\Fee_PBcfg.c	   198  #define FEE_STOP_SEC_CONFIG_DATA_ASIL_B_LOCAL_UNSPECIFIED
+; ..\Appl\GenData\src\Fee_PBcfg.c	   199  /*MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+; ..\Appl\GenData\src\Fee_PBcfg.c	   200  without safegaurd. It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   201  /*MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header usage as per Autosar
+; ..\Appl\GenData\src\Fee_PBcfg.c	   202  guideline. */
+; ..\Appl\GenData\src\Fee_PBcfg.c	   203  #include "Fee_MemMap.h"
+
+	; Module end

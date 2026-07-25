@@ -3,9 +3,8 @@
  **********************************************************************************************************************/
 #include "Tle9180_Driver.h"
 #include "Tle9180_AutosarPort.h"
-#include "CRC.h"
-
 #include <string.h>
+#include <tle9180CRC.h>
 
 #define STUP_COMMANDS_SIZE              20U
 #define CONTROL_COMMANDS_SIZE         5U

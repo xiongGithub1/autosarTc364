@@ -86,6 +86,9 @@ typedef const void * dtRef_const_VOID;
 #  define Rte_TypeDef_Dem_UdsStatusByteType
 typedef uint8 Dem_UdsStatusByteType;
 
+#  define Rte_TypeDef_NvM_BlockIdType
+typedef uint16 NvM_BlockIdType;
+
 #  define Rte_TypeDef_NvM_RequestResultType
 typedef uint8 NvM_RequestResultType;
 
@@ -131,6 +134,34 @@ extern VAR(float32, RTE_VAR_NOINIT) Rte_MotorControll_Pp_MotorCurrentRef_Iq_Ref;
 
 #  define RTE_STOP_SEC_VAR_NOINIT_UNSPECIFIED
 #  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+/**********************************************************************************************************************
+ * Internal C/S connections
+ *********************************************************************************************************************/
+
+/* Queue element type definitions for internal C/S connections */
+
+typedef struct
+{
+  boolean arg;
+} Rte_CS_ServerQueueType_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter;
+
+typedef struct
+{
+  uint8 Rte_Free;
+  uint8 Rte_Active;
+} Rte_CS_ServerQueueInfoType_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter;
+
+#  define RTE_START_SEC_VAR_NOINIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+extern VAR(Rte_CS_ServerQueueType_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter, RTE_VAR_NOINIT) Rte_CS_ServerQueue_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter;
+extern VAR(Rte_CS_ServerQueueInfoType_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter, RTE_VAR_NOINIT) Rte_CS_ServerQueueInfo_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter;
+
+#  define RTE_STOP_SEC_VAR_NOINIT_UNSPECIFIED
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
 
 
 # endif /* defined(RTE_CORE) */

@@ -1,0 +1,1083 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc2840a --dep-file=BSW364\\Com\\Implementation\\.Com_SignalGateway.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=BSW364\\Com\\Implementation\\Com_SignalGateway.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW364\\Com\\Implementation\\Com_SignalGateway.src ..\\BSW364\\Com\\Implementation\\Com_SignalGateway.c"
+	.compiler_name		"ctc"
+	;source	'..\\BSW364\\Com\\Implementation\\Com_SignalGateway.c'
+
+	
+$TC162
+	
+
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	     1  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	     2   *  COPYRIGHT
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	     4   *  \verbatim
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	     5   *  Copyright (c) 2022 by Vector Informatik GmbH.                                                  All rights reserved.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	     6   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    10   *  \endverbatim
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    11   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    12   *  FILE DESCRIPTION
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    13   *  -----------------------------------------------------------------------------------------------------------------*/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    14  /*!        \file  Com_SignalGateway.c
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    15   *        \brief  MICROSAR Communication source file
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    16   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    17   *      \details  This is the implementation of the MICROSAR Communication module.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    18   *                The basic software module is based on the AUTOSAR Communication specification.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    19   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    20   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    21  #define COM_SIGNALGATEWAY_SOURCE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    22  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    23  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    24   * MISRA JUSTIFICATION
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    25   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    26  /* PRQA  S 2741 EOF */ /* MD_CSL_ReducedToDefine */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    27  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    28  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    29    INCLUDES
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    30  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    31  #include "Com.h"
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    32  #include "Com_Timer.h"
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    33  #include "Com_SignalGateway.h"
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    34  #include "Com_SignalIf.h"
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    35  #include "SchM_Com.h"
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    36  #include "Com_CprQueueSigGw.h"
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    37  #include "Com_CprQueue.h"
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    38  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    39  #include "vstdlib.h"
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    40  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    41  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    42    LOCAL CONSTANT MACROS
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    43  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    44  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    45  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    46    LOCAL FUNCTION MACROS
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    47  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    48  #if !defined (COM_LOCAL_INLINE)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    49  # define COM_LOCAL_INLINE LOCAL_INLINE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    50  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    51  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    52  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    53    LOCAL DATA PROTOTYPES
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    54  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    55  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    56  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    57    LOCAL FUNCTION PROTOTYPES
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    58  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    59  #define COM_START_SEC_CODE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    60  #include "MemMap.h"    /* PRQA S 5087 */        /* MD_MSR_MemMap */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    61  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    62  #if (COM_GWINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    63  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    64    Com_SignalGw_EnterExclusiveArea
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    65  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    66  /*! \brief        This function enters the gw signal routing exclusive area.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    67      \details      -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    68      \pre          -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    69      \trace        DSGN-COM_ISRTHRESHOLD_CONCEPT
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    70      \context      TASK
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    71  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    72  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_EnterExclusiveArea(void);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    73  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    74  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    75  #if (COM_GWINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    76  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    77    Com_SignalGw_ExitExclusiveArea
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    78  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    79  /*! \brief        This function exits the gw signal routing exclusive area.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    80      \details      -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    81      \pre          -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    82      \param[in]    idx    index of the indirection from the main function route signals to the ISRLock counter
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    83      \trace        DSGN-COM_ISRTHRESHOLD_CONCEPT
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    84      \context      TASK
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    85  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    86  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_ExitExclusiveArea(Com_GatewayProcessingISRLockCounterIdxOfMainFunctionRouteSignalsStructType idx);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    87  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    88  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    89  #if (COM_GWINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    90  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    91    Com_SignalGw_ThresholdCheck
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    92  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    93  /*! \brief        This function checks if the ISR Lock must be opened
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    94      \details      -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    95      \pre          -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    96      \param[in]    idx    index of the indirection from the main function route signals to the ISRLock counter
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    97      \trace        DSGN-COM_ISRTHRESHOLD_CONCEPT
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    98      \context      TASK
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	    99  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   100  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_ThresholdCheck(Com_GatewayProcessingISRLockCounterIdxOfMainFunctionRouteSignalsStructType idx);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   101  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   102  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   103  #if (((COM_GWSIGMAPPINGENDIDXOFGWINFO == STD_ON) || (COM_GWSIGGRPMAPPINGENDIDXOFGWINFO == STD_ON)) && (COM_MINPROCGWBUFFERUSEDOFRXACCESSINFO == STD_OFF) && (COM_MINPROCGWBUFFERARRAYBASEDBUFFERUSEDOFRXACCESSINFO == STD_OFF))
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   104  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   105    Com_SignalGw_GetSourcePtr
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   106  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   107  /*! \brief        This function gets the pointer to the source buffer.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   108      \details      -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   109      \param[in]    idxRxAccessInfo   Index of RxAccessInfo.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   110      \param[out]   sourcePtr         Pointer to the source buffer
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   111      \pre          -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   112      \context      TASK
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   113      \synchronous  TRUE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   114      \reentrant    FALSE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   115  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   116  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_GetSourcePtr(Com_SignalIdType idxRxAccessInfo, P2VAR(PduInfoType, AUTOMATIC, COM_APPL_DATA) sourcePtr);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   117  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   118  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   119  #if (((COM_GWSIGMAPPINGENDIDXOFGWINFO == STD_ON) || (COM_GWSIGGRPMAPPINGENDIDXOFGWINFO == STD_ON)) && (COM_MINPROCGWBUFFERUSEDOFRXACCESSINFO == STD_ON) || (COM_MINPROCGWBUFFERARRAYBASEDBUFFERUSEDOFRXACCESSINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   120  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   121    Com_SignalGw_GetSourcePtrMinimalProcessing
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   122  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   123  /*! \brief        This gets the pointer to the source buffer for MinimalProcessing.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   124      \details      -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   125      \param[in]    idxRxAccessInfo   Index of RxAccessInfo.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   126      \param[out]   sourcePtr         Pointer to the source buffer
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   127      \pre          -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   128      \context      TASK
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   129      \synchronous  TRUE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   130      \reentrant    FALSE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   131  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   132  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_GetSourcePtrMinimalProcessing(Com_SignalIdType idxRxAccessInfo, P2VAR(PduInfoType, AUTOMATIC, COM_APPL_DATA) sourcePtr);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   133  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   134  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   135  #if (COM_GWINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   136  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   137    Com_SignalGw_ProcessGwEvents
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   138  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   139  /*! \brief        This function processes the signal gateway events.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   140      \details      -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   141      \pre          -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   142      \param[in]    mainFunctionId  Idx of the main function route signals
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   143      \param[in]    gwProcessingISRlockCounterIdx index of the indirection from the main function route signals to the ISRLock counter
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   144      \context      TASK
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   145      \synchronous  TRUE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   146      \reentrant    FALSE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   147  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   148  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_ProcessGwEvents(Com_MainFunctionRouteSignalsStructIterType mainFunctionId, Com_GatewayProcessingISRLockCounterIdxOfMainFunctionRouteSignalsStructType gwProcessingISRlockCounterIdx);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   149  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   150  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   151  #if (COM_GWSIGMAPPINGENDIDXOFGWINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   152  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   153    Com_SignalGw_SignalRoutings
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   154  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   155  /*! \brief        This function processes the routing of the passed ComSignal.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   156      \details      -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   157      \pre          -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   158      \param[in]    idxGwInfo  Index of GwInfo
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   159      \context      TASK
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   160      \synchronous  TRUE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   161      \reentrant    FALSE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   162  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   163  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_SignalRoutings(Com_GwInfoIterType idxGwInfo);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   164  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   165  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   166  #if (COM_GWSIGGRPMAPPINGENDIDXOFGWINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   167  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   168    Com_SignalGw_SignalGroupRoutings
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   169  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   170  /*! \brief        This function processes the routing of the passed ComSignalGroup
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   171      \details      -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   172      \pre          -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   173      \param[in]    idxGwInfo  Index of GwInfo
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   174      \context      TASK
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   175      \synchronous  TRUE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   176      \reentrant    FALSE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   177  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   178  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_SignalGroupRoutings(Com_GwInfoIterType idxGwInfo);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   179  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   180  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   181  #if (COM_CPRQUEUEUSEDOFGWSIGGRPMAPPING == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   182  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   183    Com_SignalGw_SignalGroupRoutings_CrossPartitionRoutingRx
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   184  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   185  /*! \brief        This function processes cross partition signal group routings.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   186      \details      -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   187      \param[in]    idxGwSigMapping   Index of GwSigMapping.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   188      \pre          -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   189      \context      TASK
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   190      \synchronous  TRUE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   191      \reentrant    FALSE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   192  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   193  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_SignalGroupRoutings_CrossPartitionRoutingRx(Com_GwSigGrpMappingEndIdxOfGwInfoType idxGwSigGrpMapping);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   194  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   195  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   196  #if (COM_GWSIGGRPMAPPINGENDIDXOFGWINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   197  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   198    Com_SignalGw_SignalGroupRoutings_PartitionLocal
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   199  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   200  /*! \brief        This function processes partition local signal group routings.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   201      \details      -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   202      \param[in]    idxGwSigGrpMapping   Index of GwSigMapping.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   203      \pre          -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   204      \context      TASK
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   205      \synchronous  TRUE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   206      \reentrant    FALSE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   207  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   208  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_SignalGroupRoutings_PartitionLocal(Com_GwSigGrpMappingEndIdxOfGwInfoType idxGwSigGrpMapping);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   209  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   210  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   211  #if(COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   212  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   213    Com_SignalGw_ProcessCrossPartitionQueuesTx
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   214  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   215  /*! \brief        This function processes the cross partition routing queues leading to this partition.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   216      \details      -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   217      \pre          -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   218      \param[in]    mainFunctionId  Idx of the main function route signals
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   219      \param[in]    gwProcessingISRlockCounterIdx index of the indirection from the main function route signals to the ISRLock counter
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   220      \context      TASK
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   221      \synchronous  TRUE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   222      \reentrant    FALSE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   223  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   224  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_ProcessCrossPartitionQueuesTx(Com_MainFunctionRouteSignalsStructIterType mainFunctionId, Com_GatewayProcessingISRLockCounterIdxOfMainFunctionRouteSignalsStructType gwProcessingISRlockCounterIdx);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   225  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   226  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   227  #if((COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) && (COM_GWSIGGRPMAPPINGENDIDXOFGWINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   228  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   229    Com_SignalGw_ProcessCrossPartition_SignalGroupRouting
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   230  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   231  /*! \brief        This function processes the cross partition routing for signals on tx side.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   232      \details      -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   233      \pre          -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   234      \param[in]    routingQueueIndex  Idx of the cross partition routing queue.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   235      \param[in]    readIdx            Index to the position in the queue where the data shall be read.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   236      \context      TASK
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   237      \synchronous  TRUE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   238      \reentrant    FALSE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   239  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   240  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_ProcessCrossPartition_SignalGroupRouting(Com_CprQueueSignalRoutingIndType routingQueueIndex, Com_CprQueueBufferReadIdxOfCprQueueType readIdx);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   241  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   242  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   243  #if((COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) && (COM_GWSIGMAPPINGENDIDXOFGWINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   244  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   245    Com_SignalGw_ProcessCrossPartition_SignalRouting
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   246  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   247  /*! \brief        This function processes the cross partition routing for signal routings on tx side.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   248      \details      -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   249      \pre          -
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   250      \param[in]    routingQueueIndex  Idx of the cross partition routing queue.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   251      \param[in]    readIdx            Index to the position in the queue where the data shall be read.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   252      \context      TASK
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   253      \synchronous  TRUE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   254      \reentrant    FALSE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   255  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   256  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_ProcessCrossPartition_SignalRouting(Com_CprQueueSignalRoutingIndType routingQueueIndex, Com_CprQueueBufferReadIdxOfCprQueueType readIdx);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   257  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   258  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   259  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   260    LOCAL FUNCTIONS
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   261  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   262  #if (COM_GWINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   263  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   264    Com_SignalGw_EnterExclusiveArea
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   265  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   266  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   267   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   268   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   269  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   270  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_EnterExclusiveArea(void)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   271  {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   272    /* Enter the gw signal routing exclusive area */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   273    SchM_Enter_Com_COM_EXCLUSIVE_AREA_BOTH();
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   274  }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   275  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   276  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   277  #if (COM_GWINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   278  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   279    Com_SignalGw_ExitExclusiveArea
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   280  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   281  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   282   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   283   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   284   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   285  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   286  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_ExitExclusiveArea(Com_GatewayProcessingISRLockCounterIdxOfMainFunctionRouteSignalsStructType idx)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   287  {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   288    /* Reload the counter with the threshold value */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   289    Com_SetGatewayProcessingISRLockCounter(idx, Com_GetGatewayProcessingISRLockThreshold());      /* SBSW_COM_CSL_VAR_ACCESS */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   290    /* Exit the gw signal routing exclusive area */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   291    SchM_Exit_Com_COM_EXCLUSIVE_AREA_BOTH();
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   292  }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   293  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   294  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   295  #if (COM_GWINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   296  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   297    Com_SignalGw_ThresholdCheck
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   298  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   299  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   300   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   301   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   302   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   303  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   304  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_ThresholdCheck(Com_GatewayProcessingISRLockCounterIdxOfMainFunctionRouteSignalsStructType idx)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   305  {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   306    /* If the threshold counter is greater 0, decrement the counter */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   307    if(Com_GetGatewayProcessingISRLockCounter(idx) > 0u)  /* COV_COM_THRESHOLD_TX */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   308    {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   309      Com_DecGatewayProcessingISRLockCounter(idx);        /* SBSW_COM_CSL_VAR_ACCESS */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   310    }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   311    /* Otherwise exit and reenter the gw signal routing exclusive area */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   312    else
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   313    {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   314      Com_SignalGw_ExitExclusiveArea(idx);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   315      Com_SignalGw_EnterExclusiveArea();
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   316    }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   317  }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   318  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   319  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   320  #if (((COM_GWSIGMAPPINGENDIDXOFGWINFO == STD_ON) || (COM_GWSIGGRPMAPPINGENDIDXOFGWINFO == STD_ON)) && (COM_MINPROCGWBUFFERUSEDOFRXACCESSINFO == STD_OFF) && (COM_MINPROCGWBUFFERARRAYBASEDBUFFERUSEDOFRXACCESSINFO == STD_OFF))
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   321  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   322    Com_SignalGw_GetSourcePtr
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   323  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   324  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   325   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   326   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   327  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   328  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_GetSourcePtr(Com_SignalIdType idxRxAccessInfo, P2VAR(PduInfoType, AUTOMATIC, COM_APPL_DATA) sourcePtr)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   329  {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   330    /* Get the pointer to the source buffer, the source buffer of the value depends on the signal ApplType. */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   331  # if (COM_ROUTINGBUFFERUSEDOFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   332    if(Com_IsRoutingBufferUsedOfRxAccessInfo(idxRxAccessInfo)) /* COV_COM_CSL03_ISUSED_OPTIONAL_INDIRECTION */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   333    {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   334      switch (Com_GetRoutingBufferOfRxAccessInfo(idxRxAccessInfo))
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   335      {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   336  #  if (COM_EXISTS_RXSIGBUFFERUINT8_ROUTINGBUFFEROFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   337        case COM_RXSIGBUFFERUINT8_ROUTINGBUFFEROFRXACCESSINFO:   /* COV_COM_APPLTYPEOFRXACCESSINFO_GW_ROUTING */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   338        {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   339          sourcePtr->SduDataPtr = Com_GetAddrRxSigBufferUInt8(Com_GetRoutingBufferIdxOfRxAccessInfo(idxRxAccessInfo)); /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   340          break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   341        }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   342  #  endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   343  #  if (COM_EXISTS_RXSIGBUFFERSINT8_ROUTINGBUFFEROFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   344        case COM_RXSIGBUFFERSINT8_ROUTINGBUFFEROFRXACCESSINFO:   /* COV_COM_APPLTYPEOFRXACCESSINFO_GW_ROUTING */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   345        {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   346          sourcePtr->SduDataPtr = (SduDataPtrType) Com_GetAddrRxSigBufferSInt8(Com_GetRoutingBufferIdxOfRxAccessInfo(idxRxAccessInfo)); /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   347          break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   348        }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   349  #  endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   350  #  if (COM_EXISTS_RXSIGBUFFERUINT16_ROUTINGBUFFEROFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   351        case COM_RXSIGBUFFERUINT16_ROUTINGBUFFEROFRXACCESSINFO:  /* COV_COM_APPLTYPEOFRXACCESSINFO_GW_ROUTING */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   352        {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   353          sourcePtr->SduDataPtr = (SduDataPtrType) Com_GetAddrRxSigBufferUInt16(Com_GetRoutingBufferIdxOfRxAccessInfo(idxRxAccessInfo)); /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   354          break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   355        }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   356  #  endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   357  #  if (COM_EXISTS_RXSIGBUFFERSINT16_ROUTINGBUFFEROFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   358        case COM_RXSIGBUFFERSINT16_ROUTINGBUFFEROFRXACCESSINFO:  /* COV_COM_APPLTYPEOFRXACCESSINFO_GW_ROUTING */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   359        {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   360          sourcePtr->SduDataPtr = (SduDataPtrType) Com_GetAddrRxSigBufferSInt16(Com_GetRoutingBufferIdxOfRxAccessInfo(idxRxAccessInfo)); /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   361          break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   362        }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   363  #  endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   364  #  if (COM_EXISTS_RXSIGBUFFERUINT32_ROUTINGBUFFEROFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   365        case COM_RXSIGBUFFERUINT32_ROUTINGBUFFEROFRXACCESSINFO:  /* COV_COM_APPLTYPEOFRXACCESSINFO_GW_ROUTING */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   366        {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   367          sourcePtr->SduDataPtr = (SduDataPtrType) Com_GetAddrRxSigBufferUInt32(Com_GetRoutingBufferIdxOfRxAccessInfo(idxRxAccessInfo)); /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   368          break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   369        }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   370  #  endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   371  #  if (COM_EXISTS_RXSIGBUFFERSINT32_ROUTINGBUFFEROFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   372        case COM_RXSIGBUFFERSINT32_ROUTINGBUFFEROFRXACCESSINFO:  /* COV_COM_APPLTYPEOFRXACCESSINFO_GW_ROUTING */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   373        {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   374          sourcePtr->SduDataPtr = (SduDataPtrType) Com_GetAddrRxSigBufferSInt32(Com_GetRoutingBufferIdxOfRxAccessInfo(idxRxAccessInfo)); /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   375          break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   376        }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   377  #  endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   378  #  if (COM_EXISTS_RXSIGBUFFERUINT64_ROUTINGBUFFEROFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   379        case COM_RXSIGBUFFERUINT64_ROUTINGBUFFEROFRXACCESSINFO:  /* COV_COM_APPLTYPEOFRXACCESSINFO_GW_ROUTING */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   380        {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   381          sourcePtr->SduDataPtr = (SduDataPtrType) Com_GetAddrRxSigBufferUInt64(Com_GetRoutingBufferIdxOfRxAccessInfo(idxRxAccessInfo)); /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   382          break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   383        }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   384  #  endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   385  #  if (COM_EXISTS_RXSIGBUFFERSINT64_ROUTINGBUFFEROFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   386        case COM_RXSIGBUFFERSINT64_ROUTINGBUFFEROFRXACCESSINFO:  /* COV_COM_APPLTYPEOFRXACCESSINFO_GW_ROUTING */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   387        {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   388          sourcePtr->SduDataPtr = (SduDataPtrType) Com_GetAddrRxSigBufferSInt64(Com_GetRoutingBufferIdxOfRxAccessInfo(idxRxAccessInfo)); /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   389          break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   390        }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   391  #  endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   392  #  if (COM_EXISTS_RXSIGBUFFERFLOAT32_ROUTINGBUFFEROFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   393        case COM_RXSIGBUFFERFLOAT32_ROUTINGBUFFEROFRXACCESSINFO: /* COV_COM_APPLTYPEOFRXACCESSINFO_GW_ROUTING */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   394        {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   395          sourcePtr->SduDataPtr = (SduDataPtrType) Com_GetAddrRxSigBufferFloat32(Com_GetRoutingBufferIdxOfRxAccessInfo(idxRxAccessInfo)); /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   396          break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   397        }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   398  #  endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   399  #  if (COM_EXISTS_RXSIGBUFFERFLOAT64_ROUTINGBUFFEROFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   400        case COM_RXSIGBUFFERFLOAT64_ROUTINGBUFFEROFRXACCESSINFO: /* COV_COM_APPLTYPEOFRXACCESSINFO_GW_ROUTING */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   401        {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   402          sourcePtr->SduDataPtr = (SduDataPtrType) Com_GetAddrRxSigBufferFloat64(Com_GetRoutingBufferIdxOfRxAccessInfo(idxRxAccessInfo)); /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   403          break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   404        }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   405  #  endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   406        default: /* COV_COM_MISRA */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   407          break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   408      }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   409    }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   410  # endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   411  # if (COM_RXSIGBUFFERARRAYBASEDROUTINGBUFFERUSEDOFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   412    if(Com_IsRxSigBufferArrayBasedRoutingBufferUsedOfRxAccessInfo(idxRxAccessInfo))       /* COV_COM_CSL03_ISUSED_OPTIONAL_INDIRECTION */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   413    {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   414      sourcePtr->SduDataPtr = Com_GetAddrRxSigBufferArrayBased(Com_GetRxSigBufferArrayBasedRoutingBufferStartIdxOfRxAccessInfo(idxRxAccessInfo)); /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   415    }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   416  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   417  # endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   418  # if (COM_EXISTS_ZEROBIT_APPLTYPEOFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   419    if(Com_GetApplTypeOfRxAccessInfo(idxRxAccessInfo) == COM_ZEROBIT_APPLTYPEOFRXACCESSINFO) /* COV_COM_ZEROBIT */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   420    {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   421      sourcePtr->SduDataPtr = NULL_PTR; /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   422    }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   423  # endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   424  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   425    COM_DUMMY_STATEMENT(idxRxAccessInfo);   /* PRQA S 1338, 2983, 3112, 2982 */ /* MD_MSR_DummyStmt, MD_MSR_DummyStmt, MD_MSR_DummyStmt, MD_Com_2982 */ /* lint -e{438} */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   426    COM_DUMMY_STATEMENT(sourcePtr);   /* PRQA S 1338, 2983, 3112, 2982 */ /* MD_MSR_DummyStmt, MD_MSR_DummyStmt, MD_MSR_DummyStmt, MD_Com_2982 */ /* lint -e{438} */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   427  }       /* PRQA S 6030 */ /* MD_MSR_STCYC */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   428  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   429  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   430  #if (((COM_GWSIGMAPPINGENDIDXOFGWINFO == STD_ON) || (COM_GWSIGGRPMAPPINGENDIDXOFGWINFO == STD_ON)) && (COM_MINPROCGWBUFFERUSEDOFRXACCESSINFO == STD_ON) || (COM_MINPROCGWBUFFERARRAYBASEDBUFFERUSEDOFRXACCESSINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   431  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   432    Com_SignalGw_GetSourcePtrMinimalProcessing
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   433  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   434  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   435   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   436   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   437  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   438  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_GetSourcePtrMinimalProcessing(Com_SignalIdType idxRxAccessInfo, P2VAR(PduInfoType, AUTOMATIC, COM_APPL_DATA) sourcePtr)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   439  {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   440    /* Get the pointer to the source buffer, the source buffer of the value depends on the signal ApplType. */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   441  # if(COM_MINPROCGWBUFFERUSEDOFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   442    if(Com_IsMinProcGwBufferUsedOfRxAccessInfo(idxRxAccessInfo)) /* COV_COM_CSL03_ISUSED_OPTIONAL_INDIRECTION */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   443    {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   444      switch (Com_GetMinProcGwBufferOfRxAccessInfo(idxRxAccessInfo))
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   445      {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   446  #  if (COM_EXISTS_MINPROCGWBUFFERUINT8_MINPROCGWBUFFEROFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   447        case COM_MINPROCGWBUFFERUINT8_MINPROCGWBUFFEROFRXACCESSINFO:
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   448        {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   449          sourcePtr->SduDataPtr = (SduDataPtrType) Com_GetAddrMinProcGwBufferUInt8(Com_GetMinProcGwBufferIdxOfRxAccessInfo(idxRxAccessInfo)); /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   450          break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   451        }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   452  #  endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   453  #  if (COM_EXISTS_MINPROCGWBUFFERSINT8_MINPROCGWBUFFEROFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   454        case COM_MINPROCGWBUFFERSINT8_MINPROCGWBUFFEROFRXACCESSINFO:
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   455        {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   456          sourcePtr->SduDataPtr = (SduDataPtrType) Com_GetAddrMinProcGwBufferSInt8(Com_GetMinProcGwBufferIdxOfRxAccessInfo(idxRxAccessInfo)); /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   457          break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   458        }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   459  #  endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   460  #  if (COM_EXISTS_MINPROCGWBUFFERUINT16_MINPROCGWBUFFEROFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   461        case COM_MINPROCGWBUFFERUINT16_MINPROCGWBUFFEROFRXACCESSINFO:
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   462        {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   463          sourcePtr->SduDataPtr = (SduDataPtrType) Com_GetAddrMinProcGwBufferUInt16(Com_GetMinProcGwBufferIdxOfRxAccessInfo(idxRxAccessInfo)); /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   464          break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   465        }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   466  #  endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   467  #  if (COM_EXISTS_MINPROCGWBUFFERSINT16_MINPROCGWBUFFEROFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   468        case COM_MINPROCGWBUFFERSINT16_MINPROCGWBUFFEROFRXACCESSINFO:
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   469        {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   470          sourcePtr->SduDataPtr = (SduDataPtrType) Com_GetAddrMinProcGwBufferSInt16(Com_GetMinProcGwBufferIdxOfRxAccessInfo(idxRxAccessInfo)); /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   471          break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   472        }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   473  #  endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   474  #  if (COM_EXISTS_MINPROCGWBUFFERUINT32_MINPROCGWBUFFEROFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   475        case COM_MINPROCGWBUFFERUINT32_MINPROCGWBUFFEROFRXACCESSINFO:
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   476        {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   477          sourcePtr->SduDataPtr = (SduDataPtrType) Com_GetAddrMinProcGwBufferUInt32(Com_GetMinProcGwBufferIdxOfRxAccessInfo(idxRxAccessInfo)); /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   478          break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   479        }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   480  #  endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   481  #  if (COM_EXISTS_MINPROCGWBUFFERSINT32_MINPROCGWBUFFEROFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   482        case COM_MINPROCGWBUFFERSINT32_MINPROCGWBUFFEROFRXACCESSINFO:
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   483        {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   484          sourcePtr->SduDataPtr = (SduDataPtrType) Com_GetAddrMinProcGwBufferSInt32(Com_GetMinProcGwBufferIdxOfRxAccessInfo(idxRxAccessInfo)); /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   485          break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   486        }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   487  #  endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   488  #  if (COM_EXISTS_MINPROCGWBUFFERUINT64_MINPROCGWBUFFEROFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   489        case COM_MINPROCGWBUFFERUINT64_MINPROCGWBUFFEROFRXACCESSINFO:
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   490        {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   491          sourcePtr->SduDataPtr = (SduDataPtrType) Com_GetAddrMinProcGwBufferUInt64(Com_GetMinProcGwBufferIdxOfRxAccessInfo(idxRxAccessInfo)); /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   492          break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   493        }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   494  #  endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   495  #  if (COM_EXISTS_MINPROCGWBUFFERSINT64_MINPROCGWBUFFEROFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   496        case COM_MINPROCGWBUFFERSINT64_MINPROCGWBUFFEROFRXACCESSINFO:
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   497        {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   498          sourcePtr->SduDataPtr = (SduDataPtrType) Com_GetAddrMinProcGwBufferSInt64(Com_GetMinProcGwBufferIdxOfRxAccessInfo(idxRxAccessInfo)); /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   499          break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   500        }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   501  #  endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   502  #  if (COM_EXISTS_MINPROCGWBUFFERFLOAT32_MINPROCGWBUFFEROFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   503        case COM_MINPROCGWBUFFERFLOAT32_MINPROCGWBUFFEROFRXACCESSINFO:
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   504        {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   505          sourcePtr->SduDataPtr = (SduDataPtrType) Com_GetAddrMinProcGwBufferFloat32(Com_GetMinProcGwBufferIdxOfRxAccessInfo(idxRxAccessInfo)); /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   506          break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   507        }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   508  #  endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   509  #  if (COM_EXISTS_MINPROCGWBUFFERFLOAT64_MINPROCGWBUFFEROFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   510        case COM_MINPROCGWBUFFERFLOAT64_MINPROCGWBUFFEROFRXACCESSINFO:
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   511        {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   512          sourcePtr->SduDataPtr = (SduDataPtrType) Com_GetAddrMinProcGwBufferFloat64(Com_GetMinProcGwBufferIdxOfRxAccessInfo(idxRxAccessInfo)); /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   513          break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   514        }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   515  #  endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   516        default: /* COV_COM_MISRA */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   517          break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   518      }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   519    }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   520  # endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   521  # if (COM_MINPROCGWBUFFERARRAYBASEDBUFFERUSEDOFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   522    if(Com_IsMinProcGwBufferArrayBasedBufferUsedOfRxAccessInfo(idxRxAccessInfo))  /* COV_COM_CSL03_ISUSED_OPTIONAL_INDIRECTION */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   523    {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   524      sourcePtr->SduDataPtr = Com_GetAddrMinProcGwBufferArrayBased(Com_GetMinProcGwBufferArrayBasedBufferStartIdxOfRxAccessInfo(idxRxAccessInfo)); /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   525    }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   526  # endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   527  # if (COM_EXISTS_ZEROBIT_APPLTYPEOFRXACCESSINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   528    if(Com_GetApplTypeOfRxAccessInfo(idxRxAccessInfo) == COM_ZEROBIT_APPLTYPEOFRXACCESSINFO) /* COV_COM_ZEROBIT */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   529    {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   530      sourcePtr->SduDataPtr = NULL_PTR; /* SBSW_COM_WRITEACCESS_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   531    }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   532  # endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   533  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   534    COM_DUMMY_STATEMENT(idxRxAccessInfo);   /* PRQA S 1338, 2983, 3112, 2982 */ /* MD_MSR_DummyStmt, MD_MSR_DummyStmt, MD_MSR_DummyStmt, MD_Com_2982 */ /* lint -e{438} */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   535    COM_DUMMY_STATEMENT(sourcePtr);   /* PRQA S 1338, 2983, 3112, 2982 */ /* MD_MSR_DummyStmt, MD_MSR_DummyStmt, MD_MSR_DummyStmt, MD_Com_2982 */ /* lint -e{438} */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   536  }       /* PRQA S 6030 */ /* MD_MSR_STCYC */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   537  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   538  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   539  #if (COM_GWINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   540  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   541    Com_SignalGw_ProcessGwEvents
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   542  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   543  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   544   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   545   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   546   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   547   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   548   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   549  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   550  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_ProcessGwEvents(Com_MainFunctionRouteSignalsStructIterType mainFunctionId, Com_GatewayProcessingISRLockCounterIdxOfMainFunctionRouteSignalsStructType gwProcessingISRlockCounterIdx)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   551  {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   552    Com_GwInfoIndIterType gwInfoIndIdx = Com_GetGwInfoIndStartIdxOfMainFunctionRouteSignalsStruct(mainFunctionId);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   553    /* Iterate over all gateway event flags */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   554    for(; gwInfoIndIdx < Com_GetGwInfoIndEndIdxOfMainFunctionRouteSignalsStruct(mainFunctionId); gwInfoIndIdx++)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   555    {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   556      Com_GwInfoIterType gwInfoIdx = Com_GetGwInfoInd(gwInfoIndIdx);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   557      /* If a gateway event flag is set */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   558      if(Com_IsGwEvent(gwInfoIdx))
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   559      {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   560        Com_SetGwEvent(gwInfoIdx, FALSE);       /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   561  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   562  #  if (COM_GWSIGMAPPINGENDIDXOFGWINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   563        /* Do normal signal routings */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   564        Com_SignalGw_SignalRoutings(gwInfoIdx);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   565  #  endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   566  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   567  #  if (COM_GWSIGGRPMAPPINGENDIDXOFGWINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   568        /* Do normal signal group routings */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   569        Com_SignalGw_SignalGroupRoutings(gwInfoIdx);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   570  #  endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   571      }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   572      Com_SignalGw_ThresholdCheck(gwProcessingISRlockCounterIdx);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   573    }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   574  }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   575  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   576  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   577  #if (COM_GWSIGMAPPINGENDIDXOFGWINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   578  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   579    Com_SignalGw_SignalRoutings
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   580  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   581  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   582   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   583   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   584   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   585   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   586   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   587   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   588   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   589  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   590  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_SignalRoutings(Com_GwInfoIterType idxGwInfo)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   591  {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   592    /* Iterate over all signal depending gateway mappings of the passed gateway info */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   593    Com_GwSigMappingEndIdxOfGwInfoType idxGwSigMapping = Com_GetGwSigMappingStartIdxOfGwInfo(idxGwInfo);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   594  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   595    for(; idxGwSigMapping < Com_GetGwSigMappingEndIdxOfGwInfo(idxGwInfo); idxGwSigMapping++)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   596    {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   597      PduInfoType sourcePtr;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   598      Com_TxSigInfoIterType txSigId = (Com_TxSigInfoIterType) Com_GetTxSigInfoIdxOfGwSigMapping(idxGwSigMapping);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   599      Com_TxAccessInfoIterType txAccessInfo = Com_GetTxAccessInfoIdxOfTxSigInfo(txSigId);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   600      Com_SignalIdType idxRxAccessInfo = (Com_SignalIdType) Com_GetRxAccessInfoIdxOfGwSigMapping(idxGwSigMapping);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   601      sourcePtr.SduDataPtr = NULL_PTR;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   602      sourcePtr.SduLength = Com_GetSignalLengthInByteOfRxAccessInfo(idxRxAccessInfo);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   603  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   604  # if (COM_GWTIMEOUTINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   605  #  if (COM_CPRQUEUEUSEDOFGWSIGMAPPING == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   606      if(!Com_IsCprQueueUsedOfGwSigMapping(idxGwSigMapping))
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   607  #  endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   608      {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   609        /* Start cyclic transmission for periodic I-PDUs with a configured GW Timeout and reload gw Timeout counter */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   610        Com_GwTout_Event(Com_GetTxPduInfoIdxOfTxSigInfo(txSigId));
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   611      }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   612  # endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   613      
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   614      /* Get the pointer to the source buffer */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   615  # if ((COM_MINPROCGWBUFFERUSEDOFRXACCESSINFO == STD_ON) || (COM_MINPROCGWBUFFERARRAYBASEDBUFFERUSEDOFRXACCESSINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   616      Com_SignalGw_GetSourcePtrMinimalProcessing(idxRxAccessInfo, &sourcePtr);        /* SBSW_COM_FCTCALL_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   617  # else
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   618      Com_SignalGw_GetSourcePtr(idxRxAccessInfo, &sourcePtr);        /* SBSW_COM_FCTCALL_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   619  # endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   620  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   621      /* If the indirection to the CrossPartitionRoutingQueue is used it is a cross partition routing */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   622  # if (COM_CPRQUEUEUSEDOFGWSIGMAPPING == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   623      if(Com_IsCprQueueUsedOfGwSigMapping(idxGwSigMapping))
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   624      {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   625        /* Write gateway description into Queue. If write is successful E_OK is returned, if write isn't successful E_NOT_OK is returned and DET is called. */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   626        if(E_OK != Com_CprQueueSigGw_Write_Signal(Com_GetCprQueueIdxOfGwSigMapping(idxGwSigMapping), idxGwSigMapping, &sourcePtr)) /* SBSW_COM_FCTCALL_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   627        {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   628          Com_LMgt_CallDetError(COMServiceId_CprQueueSigGw_Write_Signal, COM_E_CPRQUEUE_OVERFLOW);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   629        }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   630      }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   631      /* Else process partition local routing */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   632      else 
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   633  # endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   634      {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   635        (void) Com_SendSignal_Processing(txAccessInfo, sourcePtr.SduDataPtr, 0); /* PRQA S 0315 */ /* MD_Com_0314_0315 */ /* SBSW_COM_FCTCALL_WITH_P2CONST */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   636      }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   637    }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   638  }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   639  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   640  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   641  #if (COM_GWSIGGRPMAPPINGENDIDXOFGWINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   642  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   643    Com_SignalGw_SignalGroupRoutings
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   644  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   645  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   646   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   647   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   648   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   649   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   650   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   651  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   652  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_SignalGroupRoutings(Com_GwInfoIterType idxGwInfo)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   653  {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   654    /* Iterate over all signal group depending gateway mappings of the passed gateway info */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   655    Com_GwSigGrpMappingEndIdxOfGwInfoType idxGwSigGrpMapping = Com_GetGwSigGrpMappingStartIdxOfGwInfo(idxGwInfo); /* PRQA S 2842 */ /* MD_Com_2842 */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   656  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   657    for(; idxGwSigGrpMapping < Com_GetGwSigGrpMappingEndIdxOfGwInfo(idxGwInfo); idxGwSigGrpMapping++)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   658    {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   659      /* If the indirection to the CrossPartitionRoutingQueue is used it is a cross partition routing */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   660  # if (COM_CPRQUEUEUSEDOFGWSIGGRPMAPPING == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   661      if(Com_IsCprQueueUsedOfGwSigGrpMapping(idxGwSigGrpMapping))
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   662      {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   663        Com_SignalGw_SignalGroupRoutings_CrossPartitionRoutingRx(idxGwSigGrpMapping);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   664      }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   665      /* Else process partition local routing */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   666      else 
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   667  # endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   668      {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   669        Com_SignalGw_SignalGroupRoutings_PartitionLocal(idxGwSigGrpMapping);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   670      }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   671    }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   672  }       /* PRQA S 6030 */ /* MD_MSR_STCYC */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   673  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   674  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   675  #if (COM_CPRQUEUEUSEDOFGWSIGGRPMAPPING == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   676  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   677    Com_SignalGw_SignalGroupRoutings_CrossPartitionRoutingRx
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   678  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   679  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   680   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   681   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   682   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   683   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   684   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   685   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   686  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   687  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_SignalGroupRoutings_CrossPartitionRoutingRx(Com_GwSigGrpMappingEndIdxOfGwInfoType idxGwSigGrpMapping)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   688  {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   689    Com_GwSigGrpMappingIterType idxGwGrpSigMapping = Com_GetGwGrpSigMappingStartIdxOfGwSigGrpMapping(idxGwSigGrpMapping);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   690    Com_CCprQueueIterType routingQueueIndex = Com_GetCprQueueIdxOfGwSigGrpMapping(idxGwSigGrpMapping);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   691    Com_CprSignalRoutingTmpBufferIterType bufferIdx = 0u;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   692    PduInfoType bufferPtr;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   693    bufferPtr.SduDataPtr = Com_GetAddrCprSignalRoutingTmpBuffer(bufferIdx);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   694    bufferPtr.SduLength = 0u;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   695  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   696    /* Iterate over all related group signal mappings */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   697    for(; idxGwGrpSigMapping < Com_GetGwGrpSigMappingEndIdxOfGwSigGrpMapping(idxGwSigGrpMapping); idxGwGrpSigMapping++)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   698    {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   699      PduInfoType sourcePtr;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   700      Com_SignalIdType idxRxAccessInfo = (Com_SignalIdType) Com_GetRxAccessInfoIdxOfGwGrpSigMapping(idxGwGrpSigMapping);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   701      sourcePtr.SduDataPtr = NULL_PTR;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   702      sourcePtr.SduLength = Com_GetSignalLengthInByteOfRxAccessInfo(idxRxAccessInfo);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   703  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   704      /* Get the pointer to the source buffer */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   705  # if ((COM_MINPROCGWBUFFERUSEDOFRXACCESSINFO == STD_ON) || (COM_MINPROCGWBUFFERARRAYBASEDBUFFERUSEDOFRXACCESSINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   706      Com_SignalGw_GetSourcePtrMinimalProcessing(idxRxAccessInfo, &sourcePtr);        /* SBSW_COM_FCTCALL_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   707  # else
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   708      Com_SignalGw_GetSourcePtr(idxRxAccessInfo, &sourcePtr);        /* SBSW_COM_FCTCALL_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   709  # endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   710  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   711      /* Safety check if group signal fits into tmp buffer */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   712      if((bufferIdx + sourcePtr.SduLength) > 0u)  /* COV_COM_DEFENSIVE_PROGRAMMING_CROSSPARTITIONSIGNALROUTINGQUEUE */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   713      {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   714        if((bufferIdx + sourcePtr.SduLength - 1u) < Com_GetSizeOfCprSignalRoutingTmpBuffer()) /* COV_COM_SILENT_TX */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   715        {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   716          /* copy source buffer to tmp buffer */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   717          VStdMemCpyRamToRam(Com_GetAddrCprSignalRoutingTmpBuffer(bufferIdx), sourcePtr.SduDataPtr, sourcePtr.SduLength); /* PRQA S 0315 */ /* MD_MSR_VStdLibCopy */ /* SBSW_COM_MEM_CPY_2RAM */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   718          bufferIdx += Com_GetSignalLengthInByteOfRxAccessInfo(idxRxAccessInfo);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   719          bufferPtr.SduLength += Com_GetSignalLengthInByteOfRxAccessInfo(idxRxAccessInfo);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   720        }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   721      }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   722    }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   723  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   724    /* Write signal group to the CrossPartitionRoutingQueue. If write is successful E_OK is returned, if write isn't successful E_NOT_OK is returned and DET is called. */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   725    if(E_OK != Com_CprQueueSigGw_Write_SignalGroup(routingQueueIndex, idxGwSigGrpMapping, &bufferPtr)) /* SBSW_COM_FCTCALL_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   726    {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   727      Com_LMgt_CallDetError(COMServiceId_CprQueueSigGw_Write_SignalGroup, COM_E_CPRQUEUE_OVERFLOW);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   728    }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   729  }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   730  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   731  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   732  #if (COM_GWSIGGRPMAPPINGENDIDXOFGWINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   733  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   734    Com_SignalGw_SignalGroupRoutings_PartitionLocal
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   735  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   736  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   737   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   738   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   739   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   740   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   741   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   742  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   743  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_SignalGroupRoutings_PartitionLocal(Com_GwSigGrpMappingEndIdxOfGwInfoType idxGwSigGrpMapping)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   744  {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   745    P2CONST(uint8, AUTOMATIC, COM_APPL_VAR) shdBuffer = NULL_PTR;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   746    Com_GwSigGrpMappingIterType idxGwGrpSigMapping = Com_GetGwGrpSigMappingStartIdxOfGwSigGrpMapping(idxGwSigGrpMapping);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   747    Com_SignalGroupIdType txSigGrpId = Com_GetTxSigGrpInfoIdxOfGwSigGrpMapping(idxGwSigGrpMapping);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   748  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   749  # if (COM_GWTIMEOUTINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   750    /* Start cyclic transmission for periodic I-PDUs with a configured GW Timeout and reload gw Timeout counter */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   751    Com_GwTout_Event(Com_GetTxPduInfoIdxOfTxSigGrpInfo(txSigGrpId));
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   752  # endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   753  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   754    /* Iterate over all related group signal mappings */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   755    for(; idxGwGrpSigMapping < Com_GetGwGrpSigMappingEndIdxOfGwSigGrpMapping(idxGwSigGrpMapping); idxGwGrpSigMapping++)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   756    {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   757      PduInfoType sourcePtr;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   758      Com_TxGrpSigInfoIterType txSigId = (Com_TxGrpSigInfoIterType) Com_GetTxGrpSigInfoIdxOfGwGrpSigMapping(idxGwGrpSigMapping);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   759      Com_TxAccessInfoIterType txAccessInfo = Com_GetTxAccessInfoIdxOfTxGrpSigInfo(txSigId);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   760      Com_SignalIdType idxRxAccessInfo = (Com_SignalIdType) Com_GetRxAccessInfoIdxOfGwGrpSigMapping(idxGwGrpSigMapping);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   761      sourcePtr.SduDataPtr = NULL_PTR;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   762      sourcePtr.SduLength = Com_GetSignalLengthInByteOfRxAccessInfo(idxRxAccessInfo);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   763  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   764      /* Get the pointer to the source buffer */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   765  # if ((COM_MINPROCGWBUFFERUSEDOFRXACCESSINFO == STD_ON) || (COM_MINPROCGWBUFFERARRAYBASEDBUFFERUSEDOFRXACCESSINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   766      Com_SignalGw_GetSourcePtrMinimalProcessing(idxRxAccessInfo, &sourcePtr);        /* SBSW_COM_FCTCALL_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   767  # else
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   768      Com_SignalGw_GetSourcePtr(idxRxAccessInfo, &sourcePtr);        /* SBSW_COM_FCTCALL_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   769  # endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   770      
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   771      /* Process GroupSignal */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   772      (void) Com_SendSignal_Processing(txAccessInfo, sourcePtr.SduDataPtr, 0); /* PRQA S 0315 */ /* MD_Com_0314_0315 */ /* SBSW_COM_FCTCALL_WITH_P2CONST */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   773    }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   774    /* Call Com_SendSignalGroup for the related signal group with the respective shadowBuffer */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   775  # if (COM_TXBUFFERUSEDOFTXSIGGRPINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   776    if(Com_IsTxBufferUsedOfTxSigGrpInfo(txSigGrpId))    /* COV_COM_FEATURE_ALWAYS_TRUE_TX */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   777    {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   778      shdBuffer = Com_GetAddrTxBuffer(Com_GetTxBufferStartIdxOfTxSigGrpInfo(txSigGrpId));
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   779    }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   780  # endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   781    (void) Com_SendSignalGroup_Processing(txSigGrpId, shdBuffer);       /* SBSW_COM_FCTCALL_WITH_P2CONST */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   782  }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   783  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   784  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   785  # if(COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   786  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   787    Com_SignalGw_ProcessCrossPartitionQueuesTx
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   788  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   789  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   790   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   791   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   792   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   793   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   794   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   795   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   796   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   797   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   798   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   799  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   800  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_ProcessCrossPartitionQueuesTx(Com_MainFunctionRouteSignalsStructIterType mainFunctionId, Com_GatewayProcessingISRLockCounterIdxOfMainFunctionRouteSignalsStructType gwProcessingISRlockCounterIdx)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   801  {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   802    /* If cross partition routing queues leading to this partition are used */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   803    if(Com_IsPartitionsTxStructUsedOfMainFunctionRouteSignalsStruct(mainFunctionId) && Com_IsCprQueueSignalRoutingIndUsedOfPartitionsTxStruct(Com_GetPartitionsTxStructIdxOfMainFunctionRouteSignalsStruct(mainFunctionId))) /* COV_COM_CROSSPARTITIONQUEUEUSED_TX */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   804    {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   805      /* Iterate over cross partition queues leading to this partition */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   806      Com_CprQueueSignalRoutingIndStartIdxOfPartitionsTxStructType routingQueueIndIndex = Com_GetCprQueueSignalRoutingIndStartIdxOfPartitionsTxStruct(Com_GetPartitionsTxStructIdxOfMainFunctionRouteSignalsStruct(mainFunctionId));
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   807      for(; routingQueueIndIndex < Com_GetCprQueueSignalRoutingIndEndIdxOfPartitionsTxStruct(Com_GetPartitionsTxStructIdxOfMainFunctionRouteSignalsStruct(mainFunctionId));routingQueueIndIndex++)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   808      {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   809        Com_CprQueueBufferReadIdxOfCprQueueType readIdx = 0u;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   810        Com_CprQueueSignalRoutingIndType routingQueueIndex = Com_GetCprQueueSignalRoutingInd(routingQueueIndIndex);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   811        Com_CprQueueBufferLengthOfCprQueueType readThreshold = Com_GetCprQueueBufferLengthOfCprQueue(routingQueueIndex);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   812  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   813        /* Reset NumberOfBytesRead */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   814        Com_CprQueue_ResetNumberOfBytesRead(routingQueueIndex);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   815  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   816        /* While multi partition routing queue has stored elements, read data from queue */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   817        while(Com_CprQueue_GetReadIdx(routingQueueIndex, &readIdx) == E_OK)      /* SBSW_COM_FCTCALL_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   818        {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   819          switch(Com_CprQueue_ReadFromCprQueueDirectly(readIdx))
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   820          {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   821  # if (COM_GWSIGMAPPINGENDIDXOFGWINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   822            /* Process signal routing */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   823            case COM_CPRQUEUE_HEADERVALUE_SIGNAL:
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   824            {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   825              Com_SignalGw_ProcessCrossPartition_SignalRouting(routingQueueIndex, readIdx);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   826              /* Update the read index */      
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   827              Com_CprQueue_UpdateReadIdx(routingQueueIndex);   
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   828              break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   829            }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   830  # endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   831  # if (COM_GWSIGGRPMAPPINGENDIDXOFGWINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   832            /* Process signal group routing */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   833            case COM_CPRQUEUE_HEADERVALUE_SIGNALGROUP:
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   834            {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   835              Com_SignalGw_ProcessCrossPartition_SignalGroupRouting(routingQueueIndex, readIdx);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   836              /* Update the read index */      
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   837              Com_CprQueue_UpdateReadIdx(routingQueueIndex);   
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   838              break;      
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   839            }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   840  # endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   841            default: /* COV_COM_MISRA */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   842              break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   843          }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   844  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   845          /* Abort processing if number of read bytes increases the the queue size */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   846          if(Com_GetCprQueueBufferNumberOfBytesReadIdxOfCprQueue(routingQueueIndex) > readThreshold) /* COV_COM_DEFENSIVE_PROGRAMMING_CROSSPARTITIONQUEUE */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   847          {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   848            break;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   849          }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   850          
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   851          Com_SignalGw_ThresholdCheck(gwProcessingISRlockCounterIdx);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   852        }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   853      }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   854    }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   855  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   856    COM_DUMMY_STATEMENT(gwProcessingISRlockCounterIdx);   /* PRQA S 1338, 2983, 3112, 2982 */ /* MD_MSR_DummyStmt, MD_MSR_DummyStmt, MD_MSR_DummyStmt, MD_Com_2982 */ /* lint -e{438} */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   857  }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   858  # endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   859  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   860  # if((COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) && (COM_GWSIGGRPMAPPINGENDIDXOFGWINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   861  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   862    Com_SignalGw_ProcessCrossPartition_SignalGroupRouting
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   863  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   864  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   865   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   866   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   867   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   868   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   869   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   870   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   871   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   872  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   873  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_ProcessCrossPartition_SignalGroupRouting(Com_CprQueueSignalRoutingIndType routingQueueIndex, Com_CprQueueBufferReadIdxOfCprQueueType readIdx)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   874  {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   875    P2CONST(uint8, AUTOMATIC, COM_APPL_VAR) shdBuffer = NULL_PTR;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   876    Com_GwSigGrpMappingEndIdxOfGwInfoType idxGwSigGrpMapping = 0u;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   877  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   878    /* Read SignalGroup Index from Queue */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   879    Com_CprQueueSigGw_Read_SignalGroup(routingQueueIndex, readIdx, &idxGwSigGrpMapping); /* SBSW_COM_FCTCALL_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   880  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   881    if(idxGwSigGrpMapping < Com_GetSizeOfGwSigGrpMapping())   /* COV_COM_INDEX_IN_BOUNDS_CHECK */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   882    {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   883      Com_TxSigGrpInfoIdxOfGwSigGrpMappingType txSigGrpId = Com_GetTxSigGrpInfoIdxOfGwSigGrpMapping(idxGwSigGrpMapping);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   884      Com_GwSigGrpMappingIterType idxGwGrpSigMapping = Com_GetGwGrpSigMappingStartIdxOfGwSigGrpMapping(idxGwSigGrpMapping);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   885  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   886  # if (COM_GWTIMEOUTINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   887      /* Start cyclic transmission for periodic I-PDUs with a configured GW Timeout and reload gw Timeout counter */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   888      Com_GwTout_Event(Com_GetTxPduInfoIdxOfTxSigGrpInfo(txSigGrpId));
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   889  # endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   890      /* Iterate over all related group signal mappings */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   891      for(; idxGwGrpSigMapping < Com_GetGwGrpSigMappingEndIdxOfGwSigGrpMapping(idxGwSigGrpMapping); idxGwGrpSigMapping++)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   892      {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   893        Com_TxGrpSigInfoIterType txSigId = (Com_TxGrpSigInfoIterType) Com_GetTxGrpSigInfoIdxOfGwGrpSigMapping(idxGwGrpSigMapping);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   894        Com_TxAccessInfoIterType txAccessInfo = Com_GetTxAccessInfoIdxOfTxGrpSigInfo(txSigId);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   895        PduInfoType data;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   896        data.SduLength = 0u;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   897        data.SduDataPtr = NULL_PTR;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   898  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   899        /* Read GroupSignal from Queue */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   900        Com_CprQueueSigGw_Read_GroupSignal(routingQueueIndex, idxGwGrpSigMapping, &data); /* SBSW_COM_FCTCALL_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   901  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   902        /* Process GroupSignal */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   903        (void) Com_SendSignal_Processing(txAccessInfo, data.SduDataPtr, 0); /* PRQA S 0315 */ /* MD_Com_0314_0315 */ /* SBSW_COM_FCTCALL_WITH_P2CONST */ 
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   904      }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   905  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   906      /* Call Com_SendSignalGroup for the related signal group with the respective shadowBuffer */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   907  # if (COM_TXBUFFERUSEDOFTXSIGGRPINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   908      if(Com_IsTxBufferUsedOfTxSigGrpInfo(txSigGrpId))    /* COV_COM_FEATURE_ALWAYS_TRUE_TX */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   909      {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   910        shdBuffer = Com_GetAddrTxBuffer(Com_GetTxBufferStartIdxOfTxSigGrpInfo(txSigGrpId));
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   911      }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   912  # endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   913      (void) Com_SendSignalGroup_Processing(txSigGrpId, shdBuffer);       /* SBSW_COM_FCTCALL_WITH_P2CONST */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   914    } 
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   915  }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   916  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   917  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   918  # if((COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) && (COM_GWSIGMAPPINGENDIDXOFGWINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   919  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   920    Com_SignalGw_ProcessCrossPartition_SignalRouting
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   921  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   922  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   923   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   924   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   925   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   926   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   927  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   928  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_SignalGw_ProcessCrossPartition_SignalRouting(Com_CprQueueSignalRoutingIndType routingQueueIndex, Com_CprQueueBufferReadIdxOfCprQueueType readIdx)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   929  {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   930    Com_GwSigMappingEndIdxOfGwInfoType idxGwSigMapping = 0u;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   931    PduInfoType data;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   932    data.SduLength = 0u;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   933    data.SduDataPtr = NULL_PTR;
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   934  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   935    /* Read Signal from Queue */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   936    Com_CprQueueSigGw_Read_Signal(routingQueueIndex, readIdx, &idxGwSigMapping, &data); /* SBSW_COM_FCTCALL_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   937    
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   938    if(idxGwSigMapping < Com_GetSizeOfGwSigMapping())   /* COV_COM_INDEX_IN_BOUNDS_CHECK */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   939    {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   940      Com_TxSigInfoIterType txSigId = (Com_TxSigInfoIterType) Com_GetTxSigInfoIdxOfGwSigMapping(idxGwSigMapping);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   941      Com_TxAccessInfoIterType txAccessInfo = Com_GetTxAccessInfoIdxOfTxSigInfo(txSigId);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   942  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   943  # if (COM_GWTIMEOUTINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   944      /* Start cyclic transmission for periodic I-PDUs with a configured GW Timeout and reload gw Timeout counter */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   945      Com_GwTout_Event(Com_GetTxPduInfoIdxOfTxSigInfo(txSigId));
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   946  # endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   947      /* Process Signal */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   948      (void) Com_SendSignal_Processing(txAccessInfo, data.SduDataPtr, 0); /* PRQA S 0315 */ /* MD_Com_0314_0315 */ /* SBSW_COM_FCTCALL_WITH_P2CONST */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   949    }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   950    
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   951  }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   952  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   953  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   954  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   955  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   956    GLOBAL FUNCTIONS
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   957  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   958  #if (COM_GWINFOENDIDXOFRXPDUINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   959  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   960    Com_SignalGw_InitRxIpdu
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   961  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   962  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   963   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   964   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   965  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   966  FUNC(void, COM_CODE) Com_SignalGw_InitRxIpdu(Com_RxPduInfoIterType rxPduId)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   967  {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   968    /* Reset all gateway event flags of the passed ComIPdu */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   969    Com_GwInfoEndIdxOfRxPduInfoType idxGwInfo = Com_GetGwInfoStartIdxOfRxPduInfo(rxPduId);        /* PRQA S 2842 */ /* MD_Com_2842 */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   970    for(; idxGwInfo < Com_GetGwInfoEndIdxOfRxPduInfo(rxPduId); idxGwInfo++)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   971    {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   972      Com_SetGwEvent(idxGwInfo, FALSE);   /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   973    }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   974  }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   975  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   976  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   977  #if (COM_GWINFOUSEDOFRXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   978  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   979    Com_SignalGw_SigEvent
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   980  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   981  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   982   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   983   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   984  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   985  FUNC(void, COM_CODE) Com_SignalGw_SigEvent(Com_RxSigInfoIterType idxRxSigInfo)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   986  {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   987    /* If the passed signal is routed, set the related gateway event flag */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   988    if(Com_IsGwInfoUsedOfRxSigInfo(idxRxSigInfo)) /* COV_COM_FEATURE_ALWAYS_TRUE_TX */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   989    {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   990      Com_SetGwEvent(Com_GetGwInfoIdxOfRxSigInfo(idxRxSigInfo), TRUE);    /* SBSW_COM_CSL02_CSL03 */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   991    }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   992  }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   993  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   994  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   995  #if (COM_GWINFOUSEDOFRXSIGGRPINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   996  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   997    Com_SignalGw_SigGrpEvent
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   998  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	   999  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1000   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1001   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1002  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1003  FUNC(void, COM_CODE) Com_SignalGw_SigGrpEvent(Com_RxSigGrpInfoIterType idxRxSigGrpInfo)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1004  {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1005    /* If the passed signal group is routed, set the related gateway event flag */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1006    if(Com_IsGwInfoUsedOfRxSigGrpInfo(idxRxSigGrpInfo))   /* COV_COM_FEATURE_ALWAYS_TRUE_TX */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1007    {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1008      Com_SetGwEvent(Com_GetGwInfoIdxOfRxSigGrpInfo(idxRxSigGrpInfo), TRUE);      /* SBSW_COM_CSL02_CSL03 */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1009    }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1010  }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1011  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1012  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1013  #if (COM_GWINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1014  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1015    Com_SignalGw_MainFunction
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1016  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1017  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1018   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1019   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1020   *
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1021  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1022  FUNC(void, COM_CODE) Com_SignalGw_MainFunction(Com_MainFunctionRouteSignalsStructIterType mainFunctionId)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1023  {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1024    Com_GatewayProcessingISRLockCounterIdxOfMainFunctionRouteSignalsStructType gwProcessingISRlockCounterIdx = Com_GetGatewayProcessingISRLockCounterIdxOfMainFunctionRouteSignalsStruct(mainFunctionId);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1025  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1026    Com_SignalGw_EnterExclusiveArea();
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1027    {
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1028      /* Process GwEvents */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1029      Com_SignalGw_ProcessGwEvents(mainFunctionId, gwProcessingISRlockCounterIdx);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1030  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1031  # if(COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON)
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1032      /* Process Cross Partition Routing Queues leading to this partition */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1033      Com_SignalGw_ProcessCrossPartitionQueuesTx(mainFunctionId, gwProcessingISRlockCounterIdx);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1034  # endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1035    }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1036    Com_SignalGw_ExitExclusiveArea(gwProcessingISRlockCounterIdx);
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1037  }
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1038  #endif
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1039  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1040  #define COM_STOP_SEC_CODE
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1041  #include "MemMap.h" /* PRQA S 5087 */   /* MD_MSR_MemMap */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1042  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1043  /***********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1044   *  MISRA JUSTIFICATIONS
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1045   **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1046  /* *INDENT-OFF* */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1047  /* Justifications for module-specific MISRA deviations:
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1048     MD_Com_0314_0315: Misra Dir 1.1
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1049       Reason:     A void pointer is used because it depends on the configuration of which type the pointer is. It is easier to use a void pointer insead of different functions for different pointer types.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1050       Risk:       No risk, because the underlying pointer type is known via the configuration.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1051       Prevention: No prevention necessary.
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1052  */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1053  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1054  /***********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1055   *  SILENTBSW JUSTIFICATIONS
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1056   **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1057  /* SBSW_JUSTIFICATION_BEGIN
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1058  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1059  SBSW_JUSTIFICATION_END */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1060  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1061  /***********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1062   *  COVERAGE JUSTIFICATIONS
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1063   **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1064  /* START_COVERAGE_JUSTIFICATION
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1065  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1066  END_COVERAGE_JUSTIFICATION */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1067  /* *INDENT-ON* */
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1068  
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1069  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1070   *  END OF FILE: Com_SignalGateway.c
+; ..\BSW364\Com\Implementation\Com_SignalGateway.c	  1071   *********************************************************************************************************************/
+
+	; Module end

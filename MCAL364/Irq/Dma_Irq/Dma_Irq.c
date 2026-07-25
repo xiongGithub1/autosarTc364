@@ -454,8 +454,11 @@ IFX_INTERRUPT(DMACH4SR_ISR, 0, IRQ_DMA_CHANNEL4_SR_PRIO)
 ISR(DMACH4SR_ISR)
 #endif
 {
-  /* Enable Global Interrupts */
-  ENABLE();
+  /*
+   * Do NOT call ENABLE() under Vector CAT2: OS already sets CCPN/IE for the
+   * ISR context. Raw __enable() can nest into Unhandled IRQ / stack fault →
+   * Os_Hal_CoreFreeze (seen right after Spi_AsyncTransmit resumes IRQs).
+   */
 #ifdef  APP_SW
 #if (APP_SW == TEST_APP)
 #if (TEST_ACCESS_MODE_RT  == TEST_MCAL_USER1)
@@ -495,8 +498,7 @@ IFX_INTERRUPT(DMACH5SR_ISR, 0, IRQ_DMA_CHANNEL5_SR_PRIO)
 ISR(DMACH5SR_ISR)
 #endif
 {
-  /* Enable Global Interrupts */
-  ENABLE();
+  /* See DMACH4SR_ISR: no ENABLE() under Vector CAT2. */
 #ifdef  APP_SW
 #if (APP_SW == TEST_APP)
 #if (TEST_ACCESS_MODE_RT  == TEST_MCAL_USER1)

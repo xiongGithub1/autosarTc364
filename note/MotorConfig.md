@@ -2,7 +2,7 @@
  * @Author: qinXiong
  * @Date: 2026-07-02 18:49:59
  * @LastEditors: Qxiong&&2307975018@qq.com
- * @LastEditTime: 2026-07-09 15:15:18
+ * @LastEditTime: 2024-07-24 11:27:48
  * @Description: 
 -->
 # tc364电机autosar配置操作
@@ -28,7 +28,7 @@
  
 
 
-
+![20260717112516](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260717112516.png)!
 
 
  # motor Controll 分层

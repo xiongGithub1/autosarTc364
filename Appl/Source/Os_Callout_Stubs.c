@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Callout_Stubs.c
- *   Generation Time: 2024-07-15 16:43:16
+ *   Generation Time: 2026-07-25 15:51:51
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -245,7 +245,9 @@ FUNC(void, OS_PANICHOOK_CODE) Os_PanicHook(void)
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK OS_Callout_Stubs_PanicHook>
  *********************************************************************************************************************/
-
+  /* Capture before CoreFreeze ??? watch these if AsyncTransmit ends in panic. */
+  (void)Os_GetUnhandledIrq(&Os_Callout_UnhandledIrq);
+  (void)Os_GetUnhandledExc(&Os_Callout_UnhandledExc);
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>
  *********************************************************************************************************************/

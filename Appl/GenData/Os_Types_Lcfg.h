@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Types_Lcfg.h
- *   Generation Time: 2024-07-15 16:30:36
+ *   Generation Time: 2026-07-25 11:21:06
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -84,15 +84,19 @@
 #define AdcIsr_G8 AdcIsr_G8
 #define CanIsr_0 CanIsr_0
 #define CounterIsr_SystemTimer CounterIsr_SystemTimer
+#define DMACH4SR_ISR DMACH4SR_ISR
+#define DMACH5SR_ISR DMACH5SR_ISR
+#define DmaErrIsr DmaErrIsr
+#define Qspi2ErrIsr Qspi2ErrIsr
+#define Qspi2PtIsr Qspi2PtIsr
 
 /* Alarm identifiers. */
 #define Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms
 #define Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms
-#define Rte_Al_TE_MotorCdd_MotorCDDMainFunction Rte_Al_TE_MotorCdd_MotorCDDMainFunction
-#define Rte_Al_TE_MotorControll_MotorControll_MainFunction Rte_Al_TE_MotorControll_MotorControll_MainFunction
+#define Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx
+#define Rte_Al_TE_Default_Appl_Task_0_10ms Rte_Al_TE_Default_Appl_Task_0_10ms
+#define Rte_Al_TE_Default_Appl_Task_0_1ms Rte_Al_TE_Default_Appl_Task_0_1ms
 #define Rte_Al_TE_StartApp_StartApp_Cyclic1000ms Rte_Al_TE_StartApp_StartApp_Cyclic1000ms
-#define Rte_Al_TE_StartApp_StartApp_Cyclic10ms Rte_Al_TE_StartApp_StartApp_Cyclic10ms
-#define Rte_Al_TE_StartApp_StartApp_Cyclic1ms Rte_Al_TE_StartApp_StartApp_Cyclic1ms
 #define Rte_Al_TE_StartApp_StartApp_Cyclic250ms Rte_Al_TE_StartApp_StartApp_Cyclic250ms
 
 /* Counter identifiers. */
@@ -171,7 +175,12 @@ typedef enum
   AdcIsr_G8 = 1,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
   CanIsr_0 = 2,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
   CounterIsr_SystemTimer = 3,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  OS_ISRID_COUNT = 4,
+  DMACH4SR_ISR = 4,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  DMACH5SR_ISR = 5,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  DmaErrIsr = 6,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Qspi2ErrIsr = 7,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Qspi2PtIsr = 8,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  OS_ISRID_COUNT = 9,
   INVALID_ISR = OS_ISRID_COUNT
 } ISRType;
 
@@ -180,13 +189,12 @@ typedef enum
 {
   Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms = 0,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
   Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms = 1,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Rte_Al_TE_MotorCdd_MotorCDDMainFunction = 2,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Rte_Al_TE_MotorControll_MotorControll_MainFunction = 3,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Rte_Al_TE_StartApp_StartApp_Cyclic1000ms = 4,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Rte_Al_TE_StartApp_StartApp_Cyclic10ms = 5,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Rte_Al_TE_StartApp_StartApp_Cyclic1ms = 6,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Rte_Al_TE_StartApp_StartApp_Cyclic250ms = 7,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  OS_ALARMID_COUNT = 8
+  Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx = 2,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE_Default_Appl_Task_0_10ms = 3,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE_Default_Appl_Task_0_1ms = 4,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE_StartApp_StartApp_Cyclic1000ms = 5,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE_StartApp_StartApp_Cyclic250ms = 6,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  OS_ALARMID_COUNT = 7
 } AlarmType;
 
 /*! Counter identifiers. */

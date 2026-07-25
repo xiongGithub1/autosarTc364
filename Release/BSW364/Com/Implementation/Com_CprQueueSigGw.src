@@ -1,0 +1,453 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc20724a --dep-file=BSW364\\Com\\Implementation\\.Com_CprQueueSigGw.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=BSW364\\Com\\Implementation\\Com_CprQueueSigGw.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW364\\Com\\Implementation\\Com_CprQueueSigGw.src ..\\BSW364\\Com\\Implementation\\Com_CprQueueSigGw.c"
+	.compiler_name		"ctc"
+	;source	'..\\BSW364\\Com\\Implementation\\Com_CprQueueSigGw.c'
+
+	
+$TC162
+	
+
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	     1  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	     2   *  COPYRIGHT
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	     4   *  \verbatim
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	     5   *  Copyright (c) 2022 by Vector Informatik GmbH.                                                  All rights reserved.
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	     6   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    10   *  \endverbatim
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    11   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    12   *  FILE DESCRIPTION
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    13   *  -----------------------------------------------------------------------------------------------------------------*/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    14  /*!        \file  Com_CprQueueSigGw.c
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    15   *        \brief  MICROSAR Communication source file
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    16   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    17   *      \details  This is the implementation of the MICROSAR Communication module.
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    18   *                The basic software module is based on the AUTOSAR Communication specification.
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    19   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    20   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    21   #define COM_CPRQUEUESIGGW_SOURCE
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    22   
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    23   /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    24   * MISRA JUSTIFICATION
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    25   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    26  /* PRQA  S 2741 EOF */ /* MD_CSL_ReducedToDefine */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    27  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    28  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    29    INCLUDES
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    30  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    31  #include "Com_CprQueue.h"
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    32  #include "Com_SignalGateway.h"
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    33  #include "Com.h"
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    34  #include "Com_CprQueueSigGw.h"
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    35  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    36  #include "SchM_Com.h"
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    37  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    38  #include "vstdlib.h"
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    39  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    40  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    41    LOCAL CONSTANT MACROS
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    42  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    43  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    44  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    45    LOCAL FUNCTION MACROS
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    46  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    47  #if !defined (COM_LOCAL_INLINE)
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    48  # define COM_LOCAL_INLINE LOCAL_INLINE
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    49  #endif
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    50  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    51  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    52    LOCAL DATA TYPES AND STRUCTURES
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    53  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    54  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    55  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    56    LOCAL DATA PROTOTYPES
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    57  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    58  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    59  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    60    LOCAL FUNCTION PROTOTYPES
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    61  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    62  #define COM_START_SEC_CODE
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    63  #include "MemMap.h"    /* PRQA S 5087 */        /* MD_MSR_MemMap */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    64  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    65  #if((COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) && (COM_GWSIGMAPPINGENDIDXOFGWINFO == STD_ON))                                                  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    66  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    67   * Com_CprQueueSigGw_Deserialize_Signal
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    68   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    69  /*! \brief      This function deserializes the parameter from the queue starting at the readIdx position.
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    70   *  \details    -
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    71   *  \param[in]  routingQueueIndex   Index to the queue
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    72   *  \param[in]  readIdx             Index to the position in the queue where the data shall be read
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    73   *  \param[in]  idxGwSigMapping     Handle Id of the signal gateway to be deserialized
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    74   *  \param[in]  data                pointer to the data to be deserialized
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    75   *  \pre        -
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    76   *  \context     TASK
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    77   *  \reentrant   FALSE
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    78   *  \synchronous TRUE
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    79   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    80  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_CprQueueSigGw_Deserialize_Signal(Com_CCprQueueIterType routingQueueIndex, Com_CprQueueBufferReadIdxOfCprQueueType readIdx, P2VAR(Com_GwSigMappingEndIdxOfGwInfoType, AUTOMATIC, COM_APPL_DATA) idxGwSigMapping,
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    81                                                              P2VAR(PduInfoType, AUTOMATIC, COM_APPL_DATA) data);
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    82  #endif                                                           
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    83  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    84  #if((COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) && (COM_GWSIGGRPMAPPINGENDIDXOFGWINFO == STD_ON))                                                           
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    85  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    86   * Com_CprQueueSigGw_Deserialize_SignalGroup
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    87   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    88  /*! \brief      This function deserializes the parameter from the queue starting at the readIdx position.
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    89   *  \details    -
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    90   *  \param[in]  routingQueueIndex   Index to the queue
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    91   *  \param[in]  readIdx             Index to the position in the queue where the data shall be read
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    92   *  \param[in]  idxGwSigGrpMapping  Handle Id of the signalGroup gateway to be deserialized
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    93   *  \pre        -
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    94   *  \context     TASK
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    95   *  \reentrant   FALSE
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    96   *  \synchronous TRUE
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    97   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    98  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_CprQueueSigGw_Deserialize_SignalGroup(Com_CCprQueueIterType routingQueueIndex, Com_CprQueueBufferReadIdxOfCprQueueType readIdx, P2VAR(Com_GwSigGrpMappingEndIdxOfGwInfoType, AUTOMATIC, COM_APPL_DATA) idxGwSigGrpMapping);
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	    99  #endif
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   100  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   101  #if((COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) && (COM_GWSIGGRPMAPPINGENDIDXOFGWINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   102  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   103   * Com_CprQueueSigGw_Deserialize_GroupSignal
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   104   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   105  /*! \brief      This function deserializes the parameter from the queue starting at the readIdx position.
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   106   *  \details    -
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   107   *  \param[in]  routingQueueIndex   Index to the queue
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   108   *  \param[in]  idxGwGrpSigMapping  Handle Id of the groupSignal gateway
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   109   *  \param[in]  data                pointer to the data to be deserialized
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   110   *  \pre        -
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   111   *  \context     TASK
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   112   *  \reentrant   FALSE
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   113   *  \synchronous TRUE
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   114   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   115  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_CprQueueSigGw_Deserialize_GroupSignal(Com_CCprQueueIterType routingQueueIndex, Com_GwGrpSigMappingEndIdxOfGwSigGrpMappingType idxGwGrpSigMapping,
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   116                                                              P2VAR(PduInfoType, AUTOMATIC, COM_APPL_DATA) data);
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   117  #endif
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   118  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   119  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   120  #if((COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) && (COM_GWSIGMAPPINGENDIDXOFGWINFO == STD_ON))                                                         
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   121  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   122   * Com_CprQueueSigGw_GetSignalHeaderSize
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   123   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   124  /*! \brief      This function returns the size of the header which is put in front of the signal gateway Payload in the CrossPartitionRoutingQueue.
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   125   *  \details    -
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   126   *  \return     the header size
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   127   *  \pre        -
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   128   *  \context     TASK
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   129   *  \reentrant   FALSE
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   130   *  \synchronous TRUE
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   131   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   132  COM_LOCAL_INLINE FUNC(uint8, COM_CODE) Com_CprQueueSigGw_GetSignalHeaderSize(void);
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   133  #endif         
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   134  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   135  #if((COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) && (COM_GWSIGGRPMAPPINGENDIDXOFGWINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   136  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   137   * Com_CprQueueSigGw_GetSignalGroupHeaderSize
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   138   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   139  /*! \brief      This function returns the size of the header which is put in front of the signalGroup gateway Payload in the CrossPartitionRoutingQueue.
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   140   *  \details    -
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   141   *  \return     the header size
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   142   *  \pre        -
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   143   *  \context     TASK
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   144   *  \reentrant   FALSE
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   145   *  \synchronous TRUE
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   146   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   147  COM_LOCAL_INLINE FUNC(uint8, COM_CODE) Com_CprQueueSigGw_GetSignalGroupHeaderSize(void);
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   148  #endif
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   149  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   150  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   151    LOCAL FUNCTIONS
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   152  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   153  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   154  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   155  #if((COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) && (COM_GWSIGMAPPINGENDIDXOFGWINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   156  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   157   * Com_CprQueueSigGw_Deserialize_Signal
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   158   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   159  /*!
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   160   * Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   161   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   162   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   163   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   164   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   165   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   166  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_CprQueueSigGw_Deserialize_Signal(Com_CCprQueueIterType routingQueueIndex, Com_CprQueueBufferReadIdxOfCprQueueType readIdx, P2VAR(Com_GwSigMappingEndIdxOfGwInfoType, AUTOMATIC, COM_APPL_DATA) idxGwSigMapping,
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   167                                                              P2VAR(PduInfoType, AUTOMATIC, COM_APPL_DATA) data)
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   168  {
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   169    Com_CprQueueBufferReadIdxOfCprQueueType readIdxTmp = readIdx;
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   170    Com_GwSigMappingEndIdxOfGwInfoType idxGwSigMappingTmp = 0u;
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   171    Com_RxAccessInfoIterType idxRxAccessInfo = 0u;
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   172    uint8 iterator = 0u;
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   173    
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   174    /* skip Header */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   175    readIdxTmp += COM_CPRQUEUE_HEADERVALUE_SIZEINBYTE;
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   176  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   177    /* Deserialize signal gateway index */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   178    for(; iterator < sizeof(Com_GwSigMappingEndIdxOfGwInfoType); iterator++)
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   179    {
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   180      idxGwSigMappingTmp = idxGwSigMappingTmp | (((Com_GwSigMappingEndIdxOfGwInfoType) Com_GetCprQueueBuffer(readIdxTmp)) << (iterator*8u)); /* PRQA S 2985 */ /* MD_Com_2985 */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   181      readIdxTmp++;
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   182    }
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   183    *idxGwSigMapping = idxGwSigMappingTmp; /* SBSW_COM_WRITEACCESS_STACKPTR_01 */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   184    idxRxAccessInfo = Com_GetRxAccessInfoIdxOfGwSigMapping(*idxGwSigMapping);
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   185  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   186    /* Return pointer pointing to payload */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   187    data->SduLength = Com_GetSignalLengthInByteOfRxAccessInfo(idxRxAccessInfo); /* SBSW_COM_CSL03 */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   188    data->SduDataPtr = Com_GetAddrCprQueueBuffer(readIdxTmp);     /* SBSW_COM_VALID_PTR_ENSURED_BY_CALLING_FUNC_AND_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   189    readIdxTmp += (Com_CprQueueBufferReadIdxOfCprQueueType) data->SduLength;
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   190  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   191    /* Set the returned ReadIdx as pending ReadIdx: the readIdx will be set to this value once the read is finished */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   192    Com_SetCprQueueBufferPendingReadIdxOfCprQueue(routingQueueIndex, readIdxTmp);  /* SBSW_COM_CSL03 */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   193  }
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   194  #endif
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   195  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   196  #if((COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) && (COM_GWSIGGRPMAPPINGENDIDXOFGWINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   197  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   198   * Com_CprQueueSigGw_Deserialize_SignalGroup
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   199   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   200  /*!
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   201   * Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   202   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   203   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   204   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   205   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   206  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_CprQueueSigGw_Deserialize_SignalGroup(Com_CCprQueueIterType routingQueueIndex, Com_CprQueueBufferReadIdxOfCprQueueType readIdx, P2VAR(Com_GwSigGrpMappingEndIdxOfGwInfoType, AUTOMATIC, COM_APPL_DATA) idxGwSigGrpMapping)
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   207  {
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   208    Com_CprQueueBufferReadIdxOfCprQueueType readIdxTmp = readIdx;
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   209    Com_GwSigGrpMappingEndIdxOfGwInfoType idxGwSigGrpMappingTmp = 0u;
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   210    uint8 iterator = 0u;
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   211    
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   212    /* skip Header */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   213    readIdxTmp += COM_CPRQUEUE_HEADERVALUE_SIZEINBYTE;
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   214  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   215    /* Deserialize signal gateway index */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   216    for(; iterator < sizeof(Com_GwSigGrpMappingEndIdxOfGwInfoType); iterator++)
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   217    {
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   218      idxGwSigGrpMappingTmp = idxGwSigGrpMappingTmp | (((Com_GwSigGrpMappingEndIdxOfGwInfoType) Com_GetCprQueueBuffer(readIdxTmp)) << (iterator*8u)); /* PRQA S 2985 */ /* MD_Com_2985 */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   219      readIdxTmp++;
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   220    }
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   221    *idxGwSigGrpMapping = idxGwSigGrpMappingTmp; /* SBSW_COM_WRITEACCESS_STACKPTR_01 */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   222  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   223    /* Set the returned ReadIdx as pending ReadIdx: the readIdx will be set to this value once the read is finished */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   224    Com_SetCprQueueBufferPendingReadIdxOfCprQueue(routingQueueIndex, readIdxTmp);  /* SBSW_COM_CSL03 */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   225  }
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   226  #endif
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   227  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   228  #if((COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) && (COM_GWSIGGRPMAPPINGENDIDXOFGWINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   229  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   230   * Com_CprQueueSigGw_Deserialize_GroupSignal
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   231   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   232  /*!
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   233   * Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   234   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   235   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   236   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   237   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   238  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_CprQueueSigGw_Deserialize_GroupSignal(Com_CCprQueueIterType routingQueueIndex, Com_GwGrpSigMappingEndIdxOfGwSigGrpMappingType idxGwGrpSigMapping,
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   239                                                              P2VAR(PduInfoType, AUTOMATIC, COM_APPL_DATA) data)
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   240  {
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   241    Com_RxAccessInfoIterType idxRxAccessInfo;
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   242    Com_CprQueueBufferReadIdxOfCprQueueType readIdxTmp = Com_GetCprQueueBufferPendingReadIdxOfCprQueue(routingQueueIndex);  /* SBSW_COM_CSL03 */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   243    idxRxAccessInfo = Com_GetRxAccessInfoIdxOfGwGrpSigMapping(idxGwGrpSigMapping);
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   244  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   245    /* Return pointer pointing to payload */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   246    data->SduLength = Com_GetSignalLengthInByteOfRxAccessInfo(idxRxAccessInfo); /* SBSW_COM_CSL03 */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   247    data->SduDataPtr = Com_GetAddrCprQueueBuffer(readIdxTmp);     /* SBSW_COM_VALID_PTR_ENSURED_BY_CALLING_FUNC_AND_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   248    readIdxTmp += (Com_CprQueueBufferReadIdxOfCprQueueType) data->SduLength;
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   249  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   250    /* Set the returned ReadIdx as pending ReadIdx: the readIdx will be set to this value once the read is finished */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   251    Com_SetCprQueueBufferPendingReadIdxOfCprQueue(routingQueueIndex, readIdxTmp);  /* SBSW_COM_CSL03 */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   252  }
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   253  #endif                                                          
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   254  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   255  #if((COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) && (COM_GWSIGMAPPINGENDIDXOFGWINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   256  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   257   * Com_CprQueueSigGw_GetSignalHeaderSize
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   258   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   259  /*!
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   260   * Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   261   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   262   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   263   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   264  COM_LOCAL_INLINE FUNC(uint8, COM_CODE) Com_CprQueueSigGw_GetSignalHeaderSize(void)
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   265  {
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   266    return COM_CPRQUEUE_HEADERVALUE_SIZEINBYTE + sizeof(Com_GwSigMappingEndIdxOfGwInfoType);
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   267  }
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   268  #endif
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   269  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   270  #if((COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) && (COM_GWSIGGRPMAPPINGENDIDXOFGWINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   271  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   272   * Com_CprQueueSigGw_GetSignalGroupHeaderSize
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   273   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   274  /*!
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   275   * Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   276   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   277   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   278   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   279  COM_LOCAL_INLINE FUNC(uint8, COM_CODE) Com_CprQueueSigGw_GetSignalGroupHeaderSize(void)
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   280  {
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   281    return COM_CPRQUEUE_HEADERVALUE_SIZEINBYTE + sizeof(Com_GwSigGrpMappingEndIdxOfGwInfoType);
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   282  }
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   283  #endif
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   284  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   285  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   286    GLOBAL FUNCTIONS
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   287  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   288  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   289  #if((COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) && (COM_GWSIGMAPPINGENDIDXOFGWINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   290  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   291   * Com_CprQueueSigGw_Read_Signal
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   292   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   293  /*!
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   294   * Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   295   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   296   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   297   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   298   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   299  FUNC(void, COM_CODE) Com_CprQueueSigGw_Read_Signal(Com_CCprQueueIterType routingQueueIndex, Com_CprQueueBufferReadIdxOfCprQueueType readIdx, P2VAR(Com_GwSigMappingEndIdxOfGwInfoType, AUTOMATIC, COM_APPL_DATA) idxGwSigMapping, P2VAR(PduInfoType, AUTOMATIC, COM_APPL_DATA) data)
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   300  {
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   301    /* Read data from queue */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   302    Com_CprQueueSigGw_Deserialize_Signal(routingQueueIndex, readIdx, idxGwSigMapping, data);  /* SBSW_COM_VALID_PTR_ENSURED_BY_CALLING_FUNC_AND_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   303  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   304    /* Increase the number of bytes read */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   305    Com_AddCprQueueBufferNumberOfBytesReadIdxOfCprQueue(routingQueueIndex, ((Com_CprQueueBufferNumberOfBytesReadIdxOfCprQueueType) (Com_CprQueueSigGw_GetSignalHeaderSize() + data->SduLength)));  /* SBSW_COM_CSL03 */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   306  }
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   307  #endif
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   308  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   309  #if((COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) && (COM_GWSIGGRPMAPPINGENDIDXOFGWINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   310  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   311   * Com_CprQueueSigGw_Read_SignalGroup
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   312   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   313  /*!
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   314   * Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   315   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   316   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   317   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   318   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   319  FUNC(void, COM_CODE) Com_CprQueueSigGw_Read_SignalGroup(Com_CCprQueueIterType routingQueueIndex, Com_CprQueueBufferReadIdxOfCprQueueType readIdx, P2VAR(Com_GwSigGrpMappingEndIdxOfGwInfoType, AUTOMATIC, COM_APPL_DATA) idxGwSigGrpMapping)
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   320  {
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   321    /* Read signal group index from queue */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   322    Com_CprQueueSigGw_Deserialize_SignalGroup(routingQueueIndex, readIdx, idxGwSigGrpMapping);  /* SBSW_COM_VALID_PTR_ENSURED_BY_CALLING_FUNC_AND_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   323  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   324    /* Increase the number of bytes read */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   325    Com_AddCprQueueBufferNumberOfBytesReadIdxOfCprQueue(routingQueueIndex, Com_CprQueueSigGw_GetSignalGroupHeaderSize());  /* SBSW_COM_CSL03 */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   326  }
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   327  #endif
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   328  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   329  #if((COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) && (COM_GWSIGGRPMAPPINGENDIDXOFGWINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   330  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   331   * Com_CprQueueSigGw_Read_GroupSignal
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   332   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   333  /*!
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   334   * Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   335   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   336   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   337   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   338   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   339  FUNC(void, COM_CODE) Com_CprQueueSigGw_Read_GroupSignal(Com_CCprQueueIterType routingQueueIndex, Com_GwGrpSigMappingEndIdxOfGwSigGrpMappingType idxGwGrpSigMapping, P2VAR(PduInfoType, AUTOMATIC, COM_APPL_DATA) data)
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   340  {
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   341    /* Read data from queue */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   342    Com_CprQueueSigGw_Deserialize_GroupSignal(routingQueueIndex, idxGwGrpSigMapping, data);  /* SBSW_COM_VALID_PTR_ENSURED_BY_CALLING_FUNC_AND_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   343  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   344    /* Increase the number of bytes read */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   345    Com_AddCprQueueBufferNumberOfBytesReadIdxOfCprQueue(routingQueueIndex, ((Com_CprQueueBufferNumberOfBytesReadIdxOfCprQueueType) data->SduLength));  /* SBSW_COM_CSL03 */ 
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   346  }
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   347  #endif
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   348  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   349  #if((COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) &&  (COM_GWSIGMAPPINGENDIDXOFGWINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   350  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   351   * Com_CprQueueSigGw_Write_Signal
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   352   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   353  /*!
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   354   * Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   355   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   356   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   357   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   358   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   359   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   360  FUNC(Std_ReturnType, COM_CODE) Com_CprQueueSigGw_Write_Signal(Com_CCprQueueIterType routingQueueIndex, Com_GwSigMappingEndIdxOfGwInfoType idxGwSigMapping, CONSTP2CONST(PduInfoType, AUTOMATIC, COM_APPL_DATA) data)
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   361  {
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   362    Std_ReturnType retVal = E_NOT_OK; /* PRQA S 2981 */ /* MD_MSR_RetVal */ 
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   363    Com_CprQueueBufferWriteIdxOfCprQueueType writeIdx;
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   364    
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   365    SchM_Enter_Com_COM_EXCLUSIVE_AREA_TX();
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   366    /* If data fits into the CrossPartitionRoutingQueue */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   367    if(Com_CprQueue_GetWriteIdx(routingQueueIndex, &writeIdx, data->SduLength + Com_CprQueueSigGw_GetSignalHeaderSize()) == E_OK)  /* SBSW_COM_VALID_PTR_ENSURED_BY_CALLING_FUNC_AND_STACKPTR */     
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   368    {   
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   369      /* Serialize data of signal gateway */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   370      Com_CprQueue_Serialize(writeIdx, idxGwSigMapping, data, COM_CPRQUEUE_HEADERVALUE_SIGNAL, sizeof(Com_GwSigMappingEndIdxOfGwInfoType)); /* SBSW_COM_VALID_PTR_ENSURED_BY_CALLING_FUNC_AND_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   371      /* Update the WriteIdx*/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   372      Com_SetCprQueueBufferWriteIdxOfCprQueue(routingQueueIndex, Com_GetCprQueueBufferPendingWriteIdxOfCprQueue(routingQueueIndex)); /* SBSW_COM_CSL03 */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   373      retVal = E_OK;
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   374    }
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   375    SchM_Exit_Com_COM_EXCLUSIVE_AREA_TX();
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   376  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   377    return retVal;
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   378  }
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   379  #endif
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   380  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   381  #if((COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) && (COM_GWSIGGRPMAPPINGENDIDXOFGWINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   382  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   383   * Com_CprQueueSigGw_Write_SignalGroup
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   384   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   385  /*!
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   386   * Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   387   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   388   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   389   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   390   *
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   391   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   392  FUNC(Std_ReturnType, COM_CODE) Com_CprQueueSigGw_Write_SignalGroup(Com_CCprQueueIterType routingQueueIndex, Com_GwSigGrpMappingEndIdxOfGwInfoType idxGwSigGrpMapping, CONSTP2CONST(PduInfoType, AUTOMATIC, COM_APPL_DATA) data)
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   393  {
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   394    Std_ReturnType retVal = E_NOT_OK; /* PRQA S 2981 */ /* MD_MSR_RetVal */ 
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   395    Com_CprQueueBufferWriteIdxOfCprQueueType writeIdx;
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   396    
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   397    SchM_Enter_Com_COM_EXCLUSIVE_AREA_TX();
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   398    /* If signal group gateway index fits into the CrossPartitionRoutingQueue */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   399    if(Com_CprQueue_GetWriteIdx(routingQueueIndex, &writeIdx, data->SduLength + Com_CprQueueSigGw_GetSignalGroupHeaderSize()) == E_OK)  /* SBSW_COM_VALID_PTR_ENSURED_BY_CALLING_FUNC_AND_STACKPTR */     
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   400    {   
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   401      /* Serialize index of signal group gateway */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   402      Com_CprQueue_Serialize(writeIdx, idxGwSigGrpMapping, data, COM_CPRQUEUE_HEADERVALUE_SIGNALGROUP, sizeof(Com_GwSigGrpMappingEndIdxOfGwInfoType)); /* SBSW_COM_VALID_PTR_ENSURED_BY_CALLING_FUNC_AND_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   403      /* Update the WriteIdx*/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   404      Com_SetCprQueueBufferWriteIdxOfCprQueue(routingQueueIndex, Com_GetCprQueueBufferPendingWriteIdxOfCprQueue(routingQueueIndex)); /* SBSW_COM_CSL03 */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   405      retVal = E_OK;
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   406    }
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   407    SchM_Exit_Com_COM_EXCLUSIVE_AREA_TX();
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   408  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   409    return retVal;
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   410  }
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   411  #endif
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   412                                                              
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   413  #define COM_STOP_SEC_CODE
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   414  #include "MemMap.h" /* PRQA S 5087 */   /* MD_MSR_MemMap */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   415  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   416  /***********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   417   *  MISRA JUSTIFICATIONS
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   418   **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   419  /* *INDENT-OFF* */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   420  /* Justifications for module-specific MISRA deviations:
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   421  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   422  */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   423  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   424  /***********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   425   *  SILENTBSW JUSTIFICATIONS
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   426   **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   427  /* SBSW_JUSTIFICATION_BEGIN
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   428  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   429  SBSW_JUSTIFICATION_END */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   430  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   431  /***********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   432   *  COVERAGE JUSTIFICATIONS
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   433   **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   434  /* START_COVERAGE_JUSTIFICATION
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   435  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   436  END_COVERAGE_JUSTIFICATION */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   437  /* *INDENT-ON* */
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   438  
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   439  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   440   *  END OF FILE: Com_CprQueueSigGw.c
+; ..\BSW364\Com\Implementation\Com_CprQueueSigGw.c	   441   *********************************************************************************************************************/
+
+	; Module end

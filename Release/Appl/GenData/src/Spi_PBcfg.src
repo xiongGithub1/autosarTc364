@@ -1,0 +1,1050 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc8136a --dep-file=Appl\\GenData\\src\\.Spi_PBcfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=Appl\\GenData\\src\\Spi_PBcfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\src\\Spi_PBcfg.src ..\\Appl\\GenData\\src\\Spi_PBcfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\GenData\\src\\Spi_PBcfg.c'
+
+	
+$TC162
+	
+	.sdecl	'.zrodata.Spi_PBcfg.SequenceLookupIndex',data,rom
+	.sect	'.zrodata.Spi_PBcfg.SequenceLookupIndex'
+SequenceLookupIndex:	.type	object
+	.size	SequenceLookupIndex,3
+	.byte	2,1
+	.space	1
+	.sdecl	'.zrodata.Spi_PBcfg.JobLookupIndex',data,rom
+	.sect	'.zrodata.Spi_PBcfg.JobLookupIndex'
+	.align	2
+JobLookupIndex:	.type	object
+	.size	JobLookupIndex,6
+	.half	2,1
+	.space	2
+	.sdecl	'.zrodata.Spi_PBcfg.ChannelLookupIndex',data,rom
+	.sect	'.zrodata.Spi_PBcfg.ChannelLookupIndex'
+ChannelLookupIndex:	.type	object
+	.size	ChannelLookupIndex,3
+	.byte	2,1
+	.space	1
+	.sdecl	'.zrodata.Spi_PBcfg.SpiSequence_9183_JobLinkPtr_Physical',data,rom
+	.sect	'.zrodata.Spi_PBcfg.SpiSequence_9183_JobLinkPtr_Physical'
+	.align	2
+SpiSequence_9183_JobLinkPtr_Physical:	.type	object
+	.size	SpiSequence_9183_JobLinkPtr_Physical,4
+	.half	2,65535
+	.sdecl	'.zrodata.Spi_PBcfg.SpiSequence_5012BD_JobLinkPtr_Physical',data,rom
+	.sect	'.zrodata.Spi_PBcfg.SpiSequence_5012BD_JobLinkPtr_Physical'
+	.align	2
+SpiSequence_5012BD_JobLinkPtr_Physical:	.type	object
+	.size	SpiSequence_5012BD_JobLinkPtr_Physical,4
+	.half	1,65535
+	.sdecl	'.zrodata.Spi_PBcfg.SpiSequence_35584_JobLinkPtr_Physical',data,rom
+	.sect	'.zrodata.Spi_PBcfg.SpiSequence_35584_JobLinkPtr_Physical'
+	.align	2
+SpiSequence_35584_JobLinkPtr_Physical:	.type	object
+	.size	SpiSequence_35584_JobLinkPtr_Physical,4
+	.space	2
+	.half	65535
+	.sdecl	'.zrodata.Spi_PBcfg.SpiJob_9183_ChannelLinkPtr_Physical',data,rom
+	.sect	'.zrodata.Spi_PBcfg.SpiJob_9183_ChannelLinkPtr_Physical'
+SpiJob_9183_ChannelLinkPtr_Physical:	.type	object
+	.size	SpiJob_9183_ChannelLinkPtr_Physical,2
+	.byte	2,255
+	.sdecl	'.zrodata.Spi_PBcfg.SpiJob_5012BD_ChannelLinkPtr_Physical',data,rom
+	.sect	'.zrodata.Spi_PBcfg.SpiJob_5012BD_ChannelLinkPtr_Physical'
+SpiJob_5012BD_ChannelLinkPtr_Physical:	.type	object
+	.size	SpiJob_5012BD_ChannelLinkPtr_Physical,2
+	.byte	1,255
+	.sdecl	'.zrodata.Spi_PBcfg.SpiJob_35584_ChannelLinkPtr_Physical',data,rom
+	.sect	'.zrodata.Spi_PBcfg.SpiJob_35584_ChannelLinkPtr_Physical'
+SpiJob_35584_ChannelLinkPtr_Physical:	.type	object
+	.size	SpiJob_35584_ChannelLinkPtr_Physical,2
+	.space	1
+	.byte	255
+	.sdecl	'.zrodata.Spi_PBcfg.SpiSequence_9183_SeqSharePtr',data,rom
+	.sect	'.zrodata.Spi_PBcfg.SpiSequence_9183_SeqSharePtr'
+SpiSequence_9183_SeqSharePtr:	.type	object
+	.size	SpiSequence_9183_SeqSharePtr,1
+	.byte	255
+	.sdecl	'.zrodata.Spi_PBcfg.SpiSequence_5012BD_SeqSharePtr',data,rom
+	.sect	'.zrodata.Spi_PBcfg.SpiSequence_5012BD_SeqSharePtr'
+SpiSequence_5012BD_SeqSharePtr:	.type	object
+	.size	SpiSequence_5012BD_SeqSharePtr,1
+	.byte	255
+	.sdecl	'.zrodata.Spi_PBcfg.SpiSequence_35584_SeqSharePtr',data,rom
+	.sect	'.zrodata.Spi_PBcfg.SpiSequence_35584_SeqSharePtr'
+SpiSequence_35584_SeqSharePtr:	.type	object
+	.size	SpiSequence_35584_SeqSharePtr,1
+	.byte	255
+	.sdecl	'.rodata.Spi_PBcfg.Spi_kSequenceConfig_Core0',data,rom
+	.sect	'.rodata.Spi_PBcfg.Spi_kSequenceConfig_Core0'
+	.align	4
+Spi_kSequenceConfig_Core0:	.type	object
+	.size	Spi_kSequenceConfig_Core0,60
+	.byte	2
+	.space	7
+	.word	SpiSequence_35584_JobLinkPtr_Physical,SpiSequence_35584_SeqSharePtr
+	.half	1
+	.byte	1
+	.space	1
+	.byte	1
+	.space	7
+	.word	SpiSequence_5012BD_JobLinkPtr_Physical,SpiSequence_5012BD_SeqSharePtr
+	.half	1
+	.byte	2,1
+	.space	8
+	.word	SpiSequence_9183_JobLinkPtr_Physical,SpiSequence_9183_SeqSharePtr
+	.half	1
+	.byte	3
+	.space	1
+	.sdecl	'.rodata.Spi_PBcfg.Spi_kJobConfig_Core0',data,rom
+	.sect	'.rodata.Spi_PBcfg.Spi_kJobConfig_Core0'
+	.align	4
+Spi_kJobConfig_Core0:	.type	object
+	.size	Spi_kJobConfig_Core0,84
+	.half	2
+	.space	6
+	.word	1250305,599186,SpiJob_35584_ChannelLinkPtr_Physical
+	.half	65535
+	.space	2
+	.byte	81,2
+	.space	2
+	.half	1
+	.space	6
+	.word	267265,865490,SpiJob_5012BD_ChannelLinkPtr_Physical
+	.half	65535
+	.byte	2
+	.space	1
+	.byte	34,2,1
+	.space	9
+	.word	1246209,599186,SpiJob_9183_ChannelLinkPtr_Physical
+	.half	65535
+	.space	2
+	.byte	195,2
+	.space	2
+	.sdecl	'.rodata.Spi_PBcfg.Spi_kChannelConfig_Core0',data,rom
+	.sect	'.rodata.Spi_PBcfg.Spi_kChannelConfig_Core0'
+	.align	4
+Spi_kChannelConfig_Core0:	.type	object
+	.size	Spi_kChannelConfig_Core0,36
+	.space	4
+	.half	8190
+	.space	1
+	.byte	32,2
+	.space	7
+	.half	8190
+	.space	1
+	.byte	160,1
+	.space	7
+	.half	8190
+	.space	1
+	.byte	152
+	.space	4
+	.sdecl	'.rodata.Spi_PBcfg.Spi_kQspiHwConfigQSPI1',data,rom
+	.sect	'.rodata.Spi_PBcfg.Spi_kQspiHwConfigQSPI1'
+	.align	4
+Spi_kQspiHwConfigQSPI1:	.type	object
+	.size	Spi_kQspiHwConfigQSPI1,20
+	.word	2097152
+	.space	2
+	.byte	255,255
+	.space	1
+	.byte	8,1,1
+	.space	8
+	.sdecl	'.rodata.Spi_PBcfg.Spi_kQspiHwConfigQSPI2',data,rom
+	.sect	'.rodata.Spi_PBcfg.Spi_kQspiHwConfigQSPI2'
+	.align	4
+Spi_kQspiHwConfigQSPI2:	.type	object
+	.size	Spi_kQspiHwConfigQSPI2,20
+	.word	262144
+	.half	3
+	.byte	4,5,1,8
+	.byte	1,1
+	.space	8
+	.sdecl	'.rodata.Spi_PBcfg.Spi_kQspiHwConfigQSPI3',data,rom
+	.sect	'.rodata.Spi_PBcfg.Spi_kQspiHwConfigQSPI3'
+	.align	4
+Spi_kQspiHwConfigQSPI3:	.type	object
+	.size	Spi_kQspiHwConfigQSPI3,20
+	.word	268435456
+	.space	2
+	.byte	255,255
+	.space	1
+	.byte	8,3,1
+	.space	8
+	.sdecl	'.rodata.Spi_PBcfg.Spi_ChannelOffsets_Core0',data,rom
+	.sect	'.rodata.Spi_PBcfg.Spi_ChannelOffsets_Core0'
+	.align	2
+Spi_ChannelOffsets_Core0:	.type	object
+	.size	Spi_ChannelOffsets_Core0,16
+	.space	12
+	.half	65535,65535
+	.sdecl	'.rodata.Spi_PBcfg.Spi_Config_Core0',data,rom
+	.sect	'.rodata.Spi_PBcfg.Spi_Config_Core0'
+	.global	Spi_Config_Core0
+	.align	4
+Spi_Config_Core0:	.type	object
+	.size	Spi_Config_Core0,44
+	.word	Spi_kSequenceConfig_Core0,Spi_kJobConfig_Core0,Spi_kChannelConfig_Core0,Spi_ChannelOffsets_Core0
+	.space	4
+	.word	Spi_kQspiHwConfigQSPI1,Spi_kQspiHwConfigQSPI2,Spi_kQspiHwConfigQSPI3,648
+	.byte	3
+	.space	1
+	.half	3
+	.byte	3
+	.space	3
+	.sdecl	'.rodata.Spi_PBcfg.Spi_Config',data,rom
+	.sect	'.rodata.Spi_PBcfg.Spi_Config'
+	.global	Spi_Config
+	.align	4
+Spi_Config:	.type	object
+	.size	Spi_Config,32
+	.word	Spi_Config_Core0
+	.space	4
+	.word	SequenceLookupIndex,JobLookupIndex,ChannelLookupIndex
+	.byte	3
+	.space	1
+	.half	3
+	.byte	3
+	.space	1
+	.word	65535
+	.space	2
+
+; ..\Appl\GenData\src\Spi_PBcfg.c	     1  
+; ..\Appl\GenData\src\Spi_PBcfg.c	     2  /*******************************************************************************
+; ..\Appl\GenData\src\Spi_PBcfg.c	     3  **                                                                            **
+; ..\Appl\GenData\src\Spi_PBcfg.c	     4  ** Copyright (C) Infineon Technologies (2020)                                 **
+; ..\Appl\GenData\src\Spi_PBcfg.c	     5  **                                                                            **
+; ..\Appl\GenData\src\Spi_PBcfg.c	     6  ** All rights reserved.                                                       **
+; ..\Appl\GenData\src\Spi_PBcfg.c	     7  **                                                                            **
+; ..\Appl\GenData\src\Spi_PBcfg.c	     8  ** This document contains proprietary information belonging to Infineon       **
+; ..\Appl\GenData\src\Spi_PBcfg.c	     9  ** Technologies. Passing on and copying of this document, and communication   **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    10  ** of its contents is not permitted without prior written authorization.      **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    11  **                                                                            **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    12  ********************************************************************************
+; ..\Appl\GenData\src\Spi_PBcfg.c	    13  **                                                                            **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    14  **  FILENAME  : Spi_PBCfg.c                                                   **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    15  **                                                                            **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    16  **  VERSION   : 17.0.0                                                        **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    17  **                                                                            **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    18  **  DATE, TIME: 2024-07-24, 19:22:20  !!!IGNORE-LINE!!!                   **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    19  **                                                                            **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    20  **  GENERATOR : Build b191017-0938      !!!IGNORE-LINE!!!                   **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    21  **                                                                            **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    22  **  BSW MODULE DECRIPTION : Spi.bmd                                           **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    23  **                                                                            **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    24  **  VARIANT   : Variant PB                                                    **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    25  **                                                                            **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    26  **  PLATFORM  : Infineon AURIX2G                                              **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    27  **                                                                            **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    28  **  AUTHOR    : DL-AUTOSAR-Engineering                                        **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    29  **                                                                            **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    30  **  VENDOR    : Infineon Technologies                                         **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    31  **                                                                            **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    32  **  DESCRIPTION  : Spi configuration generated out of ECUC file               **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    33  **                                                                            **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    34  **  SPECIFICATION(S) : Specification of Spi Driver, AUTOSAR Release 4.2.2     **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    35  **                     Specification of Spi Driver, AUTOSAR Release 4.4.0     **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    36  **                                                                            **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    37  **  MAY BE CHANGED BY USER : no                                               **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    38  **                                                                            **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    39  *******************************************************************************/
+; ..\Appl\GenData\src\Spi_PBcfg.c	    40  
+; ..\Appl\GenData\src\Spi_PBcfg.c	    41  /*******************************************************************************
+; ..\Appl\GenData\src\Spi_PBcfg.c	    42  **                      Includes                                              **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    43  *******************************************************************************/
+; ..\Appl\GenData\src\Spi_PBcfg.c	    44  /* Module header file */
+; ..\Appl\GenData\src\Spi_PBcfg.c	    45  #include "Spi.h"
+; ..\Appl\GenData\src\Spi_PBcfg.c	    46  /*******************************************************************************
+; ..\Appl\GenData\src\Spi_PBcfg.c	    47  **                      Private Macro definition                              **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    48  *******************************************************************************/
+; ..\Appl\GenData\src\Spi_PBcfg.c	    49  /* MISRA2012_RULE_4_9_JUSTIFICATION: More readble as macros. Code coplexity
+; ..\Appl\GenData\src\Spi_PBcfg.c	    50  reduces as well. */
+; ..\Appl\GenData\src\Spi_PBcfg.c	    51  #define Spi_BaudRateAndClockParam(TQ,LB,Q,A,B,C,CPH,CPOL,PAREN)                \ 
+; ..\Appl\GenData\src\Spi_PBcfg.c	    52  (                                                                  \ 
+; ..\Appl\GenData\src\Spi_PBcfg.c	    53  (uint32)(                                                         \ 
+; ..\Appl\GenData\src\Spi_PBcfg.c	    54  ((uint32)TQ << 16U)|((uint32)LB << 30U)|((uint32)Q)|\ 
+; ..\Appl\GenData\src\Spi_PBcfg.c	    55  ((uint32)A << 6U)|((uint32)B << 8U)|         \ 
+; ..\Appl\GenData\src\Spi_PBcfg.c	    56  ((uint32)C << 10U)|((uint32)CPH << 12U)|        \ 
+; ..\Appl\GenData\src\Spi_PBcfg.c	    57  ((uint32)CPOL << 13U)|((uint32)PAREN << 14U)     \ 
+; ..\Appl\GenData\src\Spi_PBcfg.c	    58  )                                                         \ 
+; ..\Appl\GenData\src\Spi_PBcfg.c	    59  )
+; ..\Appl\GenData\src\Spi_PBcfg.c	    60  /* MISRA2012_RULE_4_9_JUSTIFICATION: More readble as macros. Code coplexity
+; ..\Appl\GenData\src\Spi_PBcfg.c	    61  reduces as well. */
+; ..\Appl\GenData\src\Spi_PBcfg.c	    62  #define Spi_IdleLeadTrailParam(IPRE,IDLE,LPRE,LEAD,TPRE,TRAIL,PARTYP)          \ 
+; ..\Appl\GenData\src\Spi_PBcfg.c	    63  (                                                                  \ 
+; ..\Appl\GenData\src\Spi_PBcfg.c	    64  (uint32)(                                                         \ 
+; ..\Appl\GenData\src\Spi_PBcfg.c	    65  ((uint32)IPRE << 1U)|((uint32)IDLE << 4U)|    \ 
+; ..\Appl\GenData\src\Spi_PBcfg.c	    66  ((uint32)LPRE << 7U)|((uint32)LEAD << 10U)|   \ 
+; ..\Appl\GenData\src\Spi_PBcfg.c	    67  ((uint32)TPRE << 13U)|((uint32)TRAIL << 16U)| \ 
+; ..\Appl\GenData\src\Spi_PBcfg.c	    68  ((uint32)PARTYP << 19U)            \ 
+; ..\Appl\GenData\src\Spi_PBcfg.c	    69  )                                                         \ 
+; ..\Appl\GenData\src\Spi_PBcfg.c	    70  )
+; ..\Appl\GenData\src\Spi_PBcfg.c	    71  /*******************************************************************************
+; ..\Appl\GenData\src\Spi_PBcfg.c	    72  **                      Extern Declaration                                    **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    73  *******************************************************************************/
+; ..\Appl\GenData\src\Spi_PBcfg.c	    74  /*******************************************************************************
+; ..\Appl\GenData\src\Spi_PBcfg.c	    75  **                      Global Constant Definitions                           **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    76  *******************************************************************************/
+; ..\Appl\GenData\src\Spi_PBcfg.c	    77  /******************* GLOBAL CONFIGURATION MEMMAP SECTION *********************/
+; ..\Appl\GenData\src\Spi_PBcfg.c	    78  
+; ..\Appl\GenData\src\Spi_PBcfg.c	    79  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	    80  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	    81  /* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+; ..\Appl\GenData\src\Spi_PBcfg.c	    82  shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	    83  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	    84  /* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	    85  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	    86  /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+; ..\Appl\GenData\src\Spi_PBcfg.c	    87  names
+; ..\Appl\GenData\src\Spi_PBcfg.c	    88  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	    89  #define SPI_START_SEC_CONFIG_DATA_ASIL_B_GLOBAL_32
+; ..\Appl\GenData\src\Spi_PBcfg.c	    90  
+; ..\Appl\GenData\src\Spi_PBcfg.c	    91  /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+; ..\Appl\GenData\src\Spi_PBcfg.c	    92  * without include guard. This is as per AUTOSAR */
+; ..\Appl\GenData\src\Spi_PBcfg.c	    93  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+; ..\Appl\GenData\src\Spi_PBcfg.c	    94  * this is due to inclusion of memmap.h to specify the location to which
+; ..\Appl\GenData\src\Spi_PBcfg.c	    95  * the variable has to be placed. */
+; ..\Appl\GenData\src\Spi_PBcfg.c	    96  #include "Spi_MemMap.h"
+; ..\Appl\GenData\src\Spi_PBcfg.c	    97      
+; ..\Appl\GenData\src\Spi_PBcfg.c	    98            
+; ..\Appl\GenData\src\Spi_PBcfg.c	    99              
+; ..\Appl\GenData\src\Spi_PBcfg.c	   100    /*Sequence Index Lookup*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   101    static const uint8 SequenceLookupIndex[3] =
+; ..\Appl\GenData\src\Spi_PBcfg.c	   102  {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   103    /* Physical index value for Sequence SpiSequence_9183 Sequence ID 0 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   104    2U,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   105      /* Physical index value for Sequence SpiSequence_5012BD Sequence ID 1 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   106    1U,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   107      /* Physical index value for Sequence SpiSequence_35584 Sequence ID 2 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   108    0U  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   109  };
+; ..\Appl\GenData\src\Spi_PBcfg.c	   110  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   111    /*Job Index Lookup*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   112  static const uint16 JobLookupIndex[3] =
+; ..\Appl\GenData\src\Spi_PBcfg.c	   113  {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   114    /* Physical index value for Job SpiJob_9183 Job ID 0 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   115    2U,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   116      /* Physical index value for Job SpiJob_5012BD Job ID 1 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   117    1U,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   118      /* Physical index value for Job SpiJob_35584 Job ID 2 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   119    0U  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   120  };
+; ..\Appl\GenData\src\Spi_PBcfg.c	   121  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   122    /*Channel Index Lookup*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   123  static const uint8 ChannelLookupIndex[3] =
+; ..\Appl\GenData\src\Spi_PBcfg.c	   124  {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   125    /* Physical index value for channel SpiChannel_9183 channel ID 0 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   126    2U,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   127      /* Physical index value for channel SpiChannel_5012BD1 channel ID 1 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   128    1U,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   129      /* Physical index value for channel SpiChannel_35584 channel ID 2 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   130    0U  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   131  };
+; ..\Appl\GenData\src\Spi_PBcfg.c	   132  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   133    /* Linked list for the Job[s] assigned to the sequence[s] Physical*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   134  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   135  static const Spi_JobType SpiSequence_9183_JobLinkPtr_Physical[] =
+; ..\Appl\GenData\src\Spi_PBcfg.c	   136  {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   137    2U, /* Physical index value for Job SpiJob_9183 Job ID 0 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   138    
+; ..\Appl\GenData\src\Spi_PBcfg.c	   139    SPI_JOB_DELIMITER
+; ..\Appl\GenData\src\Spi_PBcfg.c	   140  };
+; ..\Appl\GenData\src\Spi_PBcfg.c	   141  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   142  static const Spi_JobType SpiSequence_5012BD_JobLinkPtr_Physical[] =
+; ..\Appl\GenData\src\Spi_PBcfg.c	   143  {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   144    1U, /* Physical index value for Job SpiJob_5012BD Job ID 1 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   145    
+; ..\Appl\GenData\src\Spi_PBcfg.c	   146    SPI_JOB_DELIMITER
+; ..\Appl\GenData\src\Spi_PBcfg.c	   147  };
+; ..\Appl\GenData\src\Spi_PBcfg.c	   148  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   149  static const Spi_JobType SpiSequence_35584_JobLinkPtr_Physical[] =
+; ..\Appl\GenData\src\Spi_PBcfg.c	   150  {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   151    0U, /* Physical index value for Job SpiJob_35584 Job ID 2 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   152    
+; ..\Appl\GenData\src\Spi_PBcfg.c	   153    SPI_JOB_DELIMITER
+; ..\Appl\GenData\src\Spi_PBcfg.c	   154  };
+; ..\Appl\GenData\src\Spi_PBcfg.c	   155    /* Linked list for the channel[s] assigned to the job[s] Physical */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   156  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   157  static const Spi_ChannelType SpiJob_9183_ChannelLinkPtr_Physical[] =
+; ..\Appl\GenData\src\Spi_PBcfg.c	   158  {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   159    2U, /* Physical index value for Channel SpiChannel_9183 Channel ID 0 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   160    
+; ..\Appl\GenData\src\Spi_PBcfg.c	   161    SPI_CHANNEL_DELIMITER
+; ..\Appl\GenData\src\Spi_PBcfg.c	   162  };
+; ..\Appl\GenData\src\Spi_PBcfg.c	   163  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   164  static const Spi_ChannelType SpiJob_5012BD_ChannelLinkPtr_Physical[] =
+; ..\Appl\GenData\src\Spi_PBcfg.c	   165  {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   166    1U, /* Physical index value for Channel SpiChannel_5012BD1 Channel ID 1 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   167    
+; ..\Appl\GenData\src\Spi_PBcfg.c	   168    SPI_CHANNEL_DELIMITER
+; ..\Appl\GenData\src\Spi_PBcfg.c	   169  };
+; ..\Appl\GenData\src\Spi_PBcfg.c	   170  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   171  static const Spi_ChannelType SpiJob_35584_ChannelLinkPtr_Physical[] =
+; ..\Appl\GenData\src\Spi_PBcfg.c	   172  {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   173    0U, /* Physical index value for Channel SpiChannel_35584 Channel ID 2 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   174    
+; ..\Appl\GenData\src\Spi_PBcfg.c	   175    SPI_CHANNEL_DELIMITER
+; ..\Appl\GenData\src\Spi_PBcfg.c	   176  };
+; ..\Appl\GenData\src\Spi_PBcfg.c	   177      /* Linked list of sequence[s] with Job[s] shared  */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   178  static const Spi_SequenceType SpiSequence_9183_SeqSharePtr[] =
+; ..\Appl\GenData\src\Spi_PBcfg.c	   179  {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   180    SPI_SEQUENCE_DELIMITER
+; ..\Appl\GenData\src\Spi_PBcfg.c	   181  };
+; ..\Appl\GenData\src\Spi_PBcfg.c	   182  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   183  static const Spi_SequenceType SpiSequence_5012BD_SeqSharePtr[] =
+; ..\Appl\GenData\src\Spi_PBcfg.c	   184  {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   185    SPI_SEQUENCE_DELIMITER
+; ..\Appl\GenData\src\Spi_PBcfg.c	   186  };
+; ..\Appl\GenData\src\Spi_PBcfg.c	   187  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   188  static const Spi_SequenceType SpiSequence_35584_SeqSharePtr[] =
+; ..\Appl\GenData\src\Spi_PBcfg.c	   189  {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   190    SPI_SEQUENCE_DELIMITER
+; ..\Appl\GenData\src\Spi_PBcfg.c	   191  };
+; ..\Appl\GenData\src\Spi_PBcfg.c	   192  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   193  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   194  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   195  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   196  /* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+; ..\Appl\GenData\src\Spi_PBcfg.c	   197  shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   198  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   199  /* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   200  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   201  /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+; ..\Appl\GenData\src\Spi_PBcfg.c	   202  names
+; ..\Appl\GenData\src\Spi_PBcfg.c	   203  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   204  #define SPI_STOP_SEC_CONFIG_DATA_ASIL_B_GLOBAL_32
+; ..\Appl\GenData\src\Spi_PBcfg.c	   205  /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+; ..\Appl\GenData\src\Spi_PBcfg.c	   206  * without include guard. This is as per AUTOSAR */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   207  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   208  * this is due to inclusion of memmap.h to specify the location to which
+; ..\Appl\GenData\src\Spi_PBcfg.c	   209  * the variable has to be placed. */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   210  #include "Spi_MemMap.h"
+; ..\Appl\GenData\src\Spi_PBcfg.c	   211  /******************* GLOBAL CONFIGURATION MEMMAP SECTION *********************/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   212    
+; ..\Appl\GenData\src\Spi_PBcfg.c	   213      
+; ..\Appl\GenData\src\Spi_PBcfg.c	   214   /******************* CORE0 SEQUENCE CONFIGURATION MEMMAP SECTION *************/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   215  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   216  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   217  /* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+; ..\Appl\GenData\src\Spi_PBcfg.c	   218  shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   219  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   220  /* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   221  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   222  /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+; ..\Appl\GenData\src\Spi_PBcfg.c	   223  names
+; ..\Appl\GenData\src\Spi_PBcfg.c	   224  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   225  #define SPI_START_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+; ..\Appl\GenData\src\Spi_PBcfg.c	   226  /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+; ..\Appl\GenData\src\Spi_PBcfg.c	   227  * without include guard. This is as per AUTOSAR */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   228  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   229  * this is due to inclusion of memmap.h to specify the location to which
+; ..\Appl\GenData\src\Spi_PBcfg.c	   230  * the variable has to be placed. */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   231  #include "Spi_MemMap.h"
+; ..\Appl\GenData\src\Spi_PBcfg.c	   232  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   233  static const Spi_SequenceConfigType Spi_kSequenceConfig_Core0[] =
+; ..\Appl\GenData\src\Spi_PBcfg.c	   234  {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   235          /* Sequence:SpiSequence_35584 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   236    {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   237      SpiConf_SpiSequence_SpiSequence_35584,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   238      /* Notification function */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   239      NULL_PTR,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   240      /* Job linked list */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   241      SpiSequence_35584_JobLinkPtr_Physical,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   242      /* Seq linked list, with jobs shared */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   243      SpiSequence_35584_SeqSharePtr,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   244      /* No. of jobs in Seq */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   245      1U,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   246          /* Hw Module Used (b000001)*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   247      0x01U,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   248          
+; ..\Appl\GenData\src\Spi_PBcfg.c	   249                      0U /* Sync Sequence */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   250                    },
+; ..\Appl\GenData\src\Spi_PBcfg.c	   251      /* Synchronous Sequence[s] */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   252      /* Sequence:SpiSequence_5012BD */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   253    {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   254      SpiConf_SpiSequence_SpiSequence_5012BD,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   255      /* Notification function */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   256      NULL_PTR,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   257      /* Job linked list */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   258      SpiSequence_5012BD_JobLinkPtr_Physical,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   259      /* Seq linked list, with jobs shared */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   260      SpiSequence_5012BD_SeqSharePtr,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   261      /* No. of jobs in Seq */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   262      1U,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   263          /* Hw Module Used (b000010)*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   264      0x02U,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   265          
+; ..\Appl\GenData\src\Spi_PBcfg.c	   266              
+; ..\Appl\GenData\src\Spi_PBcfg.c	   267            1U /* Async Sequence */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   268              },
+; ..\Appl\GenData\src\Spi_PBcfg.c	   269      /* Synchronous Sequence[s] */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   270      /* Sequence:SpiSequence_9183 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   271    {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   272      SpiConf_SpiSequence_SpiSequence_9183,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   273      /* Notification function */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   274      NULL_PTR,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   275      /* Job linked list */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   276      SpiSequence_9183_JobLinkPtr_Physical,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   277      /* Seq linked list, with jobs shared */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   278      SpiSequence_9183_SeqSharePtr,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   279      /* No. of jobs in Seq */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   280      1U,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   281          /* Hw Module Used (b000011)*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   282      0x03U,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   283          
+; ..\Appl\GenData\src\Spi_PBcfg.c	   284                      0U /* Sync Sequence */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   285                    }};
+; ..\Appl\GenData\src\Spi_PBcfg.c	   286  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   287  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   288  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   289  /* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+; ..\Appl\GenData\src\Spi_PBcfg.c	   290  shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   291  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   292  /* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   293  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   294  /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+; ..\Appl\GenData\src\Spi_PBcfg.c	   295  names
+; ..\Appl\GenData\src\Spi_PBcfg.c	   296  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   297  #define SPI_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+; ..\Appl\GenData\src\Spi_PBcfg.c	   298  /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+; ..\Appl\GenData\src\Spi_PBcfg.c	   299  * without include guard. This is as per AUTOSAR */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   300  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   301  * this is due to inclusion of memmap.h to specify the location to which
+; ..\Appl\GenData\src\Spi_PBcfg.c	   302  * the variable has to be placed. */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   303  #include "Spi_MemMap.h"
+; ..\Appl\GenData\src\Spi_PBcfg.c	   304  /***************** CORE0 SEQUENCE CONFIGURATION MEMMAP SECTION END *************/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   305      
+; ..\Appl\GenData\src\Spi_PBcfg.c	   306      
+; ..\Appl\GenData\src\Spi_PBcfg.c	   307  /******************* CORE0 JOB CONFIGURATION MEMMAP SECTION *************/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   308  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   309  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   310  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   311  /* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+; ..\Appl\GenData\src\Spi_PBcfg.c	   312  shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   313  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   314  /* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   315  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   316  /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+; ..\Appl\GenData\src\Spi_PBcfg.c	   317  names
+; ..\Appl\GenData\src\Spi_PBcfg.c	   318  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   319  #define SPI_START_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+; ..\Appl\GenData\src\Spi_PBcfg.c	   320  /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+; ..\Appl\GenData\src\Spi_PBcfg.c	   321  * without include guard. This is as per AUTOSAR */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   322  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   323  * this is due to inclusion of memmap.h to specify the location to which
+; ..\Appl\GenData\src\Spi_PBcfg.c	   324  * the variable has to be placed. */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   325  #include "Spi_MemMap.h"
+; ..\Appl\GenData\src\Spi_PBcfg.c	   326  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   327  static const Spi_JobConfigType Spi_kJobConfig_Core0[] =
+; ..\Appl\GenData\src\Spi_PBcfg.c	   328  {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   329        /* Synchronous Job[s] */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   330    /* Job:SpiJob_35584 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   331    {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   332      SpiConf_SpiJob_SpiJob_35584,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   333      NULL_PTR,                   /* No Notification function */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   334      Spi_BaudRateAndClockParam(  /* Baudrate = 1000000.0Hz */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   335      (0x13U), (0x00U),          /* TQ , LoopBack */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   336      (0x01U), (0x00U),          /*  Q , A        */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   337      (0x00U), (0x01U),          /*  B , C        */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   338      (0x01U), (0x00U),          /*  CPH , CPOL   */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   339      (0x00U)                    /*  PAREN        */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   340      ),
+; ..\Appl\GenData\src\Spi_PBcfg.c	   341      Spi_IdleLeadTrailParam(
+; ..\Appl\GenData\src\Spi_PBcfg.c	   342      (1U), (1U), /* IPRE,IDLE:   IdleA/B delay = 1.0E-7s */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   343      (1U), (1U), /* LPRE,LEAD:   Lead delay    = 1.0E-7s */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   344      (1U), (1U),/* TPRE, TRAIL: Trail delay   = 1.0E-7s */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   345      (1U)
+; ..\Appl\GenData\src\Spi_PBcfg.c	   346      ),
+; ..\Appl\GenData\src\Spi_PBcfg.c	   347      SpiJob_35584_ChannelLinkPtr_Physical, /* Channel linked list Physical*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   348      SPI_CS_VIA_HW_OR_NONE,   /* CS_VIA_HW */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   349      (uint8)0U,               /* Job Priority : 0...3*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   350      (uint8)STD_LOW,              /* CS polarity */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   351      /* Chnl[bit:7:4],QSPI[3:0] */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   352      (uint8)((SPI_QSPI_CHANNEL5 << 4U)|SPI_QSPI1_INDEX),
+; ..\Appl\GenData\src\Spi_PBcfg.c	   353      SPI_PARITY_UNUSED,        /* Parity support */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   354      (0U)                    /*Frame based CS is disabled*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   355    },
+; ..\Appl\GenData\src\Spi_PBcfg.c	   356    /* Synchronous Job[s] */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   357    /* Job:SpiJob_5012BD */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   358    {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   359      SpiConf_SpiJob_SpiJob_5012BD,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   360      NULL_PTR,                   /* No Notification function */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   361      Spi_BaudRateAndClockParam(  /* Baudrate = 4000000.0Hz */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   362      (0x04U), (0x00U),          /* TQ , LoopBack */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   363      (0x01U), (0x00U),          /*  Q , A        */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   364      (0x00U), (0x01U),          /*  B , C        */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   365      (0x01U), (0x00U),          /*  CPH , CPOL   */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   366      (0x00U)                    /*  PAREN        */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   367      ),
+; ..\Appl\GenData\src\Spi_PBcfg.c	   368      Spi_IdleLeadTrailParam(
+; ..\Appl\GenData\src\Spi_PBcfg.c	   369      (1U), (5U), /* IPRE,IDLE:   IdleA/B delay = 3.0E-7s */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   370      (1U), (5U), /* LPRE,LEAD:   Lead delay    = 3.0E-7s */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   371      (1U), (5U),/* TPRE, TRAIL: Trail delay   = 3.0E-7s */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   372      (1U)
+; ..\Appl\GenData\src\Spi_PBcfg.c	   373      ),
+; ..\Appl\GenData\src\Spi_PBcfg.c	   374      SpiJob_5012BD_ChannelLinkPtr_Physical, /* Channel linked list Physical*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   375      SPI_CS_VIA_HW_OR_NONE,   /* CS_VIA_HW */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   376      (uint8)2U,               /* Job Priority : 0...3*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   377      (uint8)STD_LOW,              /* CS polarity */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   378      /* Chnl[bit:7:4],QSPI[3:0] */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   379      (uint8)((SPI_QSPI_CHANNEL2 << 4U)|SPI_QSPI2_INDEX),
+; ..\Appl\GenData\src\Spi_PBcfg.c	   380      SPI_PARITY_UNUSED,        /* Parity support */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   381      (1U)                    /*Frame based CS is enabled*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   382    },
+; ..\Appl\GenData\src\Spi_PBcfg.c	   383    /* Synchronous Job[s] */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   384    /* Job:SpiJob_9183 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   385    {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   386      SpiConf_SpiJob_SpiJob_9183,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   387      NULL_PTR,                   /* No Notification function */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   388      Spi_BaudRateAndClockParam(  /* Baudrate = 1000000.0Hz */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   389      (0x13U), (0x00U),          /* TQ , LoopBack */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   390      (0x01U), (0x00U),          /*  Q , A        */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   391      (0x00U), (0x01U),          /*  B , C        */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   392      (0x00U), (0x00U),          /*  CPH , CPOL   */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   393      (0x00U)                    /*  PAREN        */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   394      ),
+; ..\Appl\GenData\src\Spi_PBcfg.c	   395      Spi_IdleLeadTrailParam(
+; ..\Appl\GenData\src\Spi_PBcfg.c	   396      (1U), (1U), /* IPRE,IDLE:   IdleA/B delay = 1.0E-7s */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   397      (1U), (1U), /* LPRE,LEAD:   Lead delay    = 1.0E-7s */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   398      (1U), (1U),/* TPRE, TRAIL: Trail delay   = 1.0E-7s */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   399      (1U)
+; ..\Appl\GenData\src\Spi_PBcfg.c	   400      ),
+; ..\Appl\GenData\src\Spi_PBcfg.c	   401      SpiJob_9183_ChannelLinkPtr_Physical, /* Channel linked list Physical*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   402      SPI_CS_VIA_HW_OR_NONE,   /* CS_VIA_HW */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   403      (uint8)0U,               /* Job Priority : 0...3*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   404      (uint8)STD_LOW,              /* CS polarity */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   405      /* Chnl[bit:7:4],QSPI[3:0] */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   406      (uint8)((SPI_QSPI_CHANNEL12 << 4U)|SPI_QSPI3_INDEX),
+; ..\Appl\GenData\src\Spi_PBcfg.c	   407      SPI_PARITY_UNUSED,        /* Parity support */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   408      (0U)                    /*Frame based CS is disabled*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   409    }};
+; ..\Appl\GenData\src\Spi_PBcfg.c	   410  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   411  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   412  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   413  /* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+; ..\Appl\GenData\src\Spi_PBcfg.c	   414  shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   415  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   416  /* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   417  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   418  /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+; ..\Appl\GenData\src\Spi_PBcfg.c	   419  names
+; ..\Appl\GenData\src\Spi_PBcfg.c	   420  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   421  #define SPI_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+; ..\Appl\GenData\src\Spi_PBcfg.c	   422  /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+; ..\Appl\GenData\src\Spi_PBcfg.c	   423  * without include guard. This is as per AUTOSAR */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   424  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   425  * this is due to inclusion of memmap.h to specify the location to which
+; ..\Appl\GenData\src\Spi_PBcfg.c	   426  * the variable has to be placed. */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   427  #include "Spi_MemMap.h"
+; ..\Appl\GenData\src\Spi_PBcfg.c	   428  /***************** CORE0 JOB CONFIGURATION MemMap SECTION END *************/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   429      
+; ..\Appl\GenData\src\Spi_PBcfg.c	   430      
+; ..\Appl\GenData\src\Spi_PBcfg.c	   431  /******************* CORE0 CHANNEL CONFIGURATION MEMMAP SECTION *************/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   432  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   433  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   434  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   435  /* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+; ..\Appl\GenData\src\Spi_PBcfg.c	   436  shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   437  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   438  /* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   439  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   440  /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+; ..\Appl\GenData\src\Spi_PBcfg.c	   441  names
+; ..\Appl\GenData\src\Spi_PBcfg.c	   442  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   443  #define SPI_START_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+; ..\Appl\GenData\src\Spi_PBcfg.c	   444  /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+; ..\Appl\GenData\src\Spi_PBcfg.c	   445  * without include guard. This is as per AUTOSAR */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   446  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   447  * this is due to inclusion of memmap.h to specify the location to which
+; ..\Appl\GenData\src\Spi_PBcfg.c	   448  * the variable has to be placed. */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   449  #include "Spi_MemMap.h"
+; ..\Appl\GenData\src\Spi_PBcfg.c	   450  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   451  static const Spi_ChannelConfigType Spi_kChannelConfig_Core0[] =
+; ..\Appl\GenData\src\Spi_PBcfg.c	   452  {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   453        /* EB Chnl[s] on QSPI1 sync core0*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   454    /* Channel:SpiChannel_35584 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   455    {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   456      0x00000000U,     /* Default data */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   457      0x1ffeU,         /* Number of Data Elements */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   458      SPI_EB_CHANNEL,  /* External Buffer Channel */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   459      0x20U,            /* LSB[7], DataWidth=32[6:0] */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   460      SpiConf_SpiChannel_SpiChannel_35584
+; ..\Appl\GenData\src\Spi_PBcfg.c	   461    },
+; ..\Appl\GenData\src\Spi_PBcfg.c	   462    /* EB Chnl[s] on QSPI2 core0*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   463    /* Channel:SpiChannel_5012BD1 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   464    {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   465      0x00000000U,     /* Default data */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   466      0x1ffeU,         /* Number of Data Elements */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   467      SPI_EB_CHANNEL,  /* External Buffer Channel */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   468      0xa0U,            /* MSB[7], DataWidth=32[6:0] */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   469      SpiConf_SpiChannel_SpiChannel_5012BD1
+; ..\Appl\GenData\src\Spi_PBcfg.c	   470    },
+; ..\Appl\GenData\src\Spi_PBcfg.c	   471    /* EB Chnl[s] on QSPI3 core0*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   472    /* Channel:SpiChannel_9183 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   473    {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   474      0x00000000U,     /* Default data */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   475      0x1ffeU,         /* Number of Data Elements */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   476      SPI_EB_CHANNEL,  /* External Buffer Channel */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   477      0x98U,            /* MSB[7], DataWidth=24[6:0] */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   478      SpiConf_SpiChannel_SpiChannel_9183
+; ..\Appl\GenData\src\Spi_PBcfg.c	   479    }};
+; ..\Appl\GenData\src\Spi_PBcfg.c	   480  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   481  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   482  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   483  /* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+; ..\Appl\GenData\src\Spi_PBcfg.c	   484  shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   485  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   486  /* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   487  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   488  /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+; ..\Appl\GenData\src\Spi_PBcfg.c	   489  names
+; ..\Appl\GenData\src\Spi_PBcfg.c	   490  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   491  #define SPI_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+; ..\Appl\GenData\src\Spi_PBcfg.c	   492  /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+; ..\Appl\GenData\src\Spi_PBcfg.c	   493  * without include guard. This is as per AUTOSAR */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   494  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   495  * this is due to inclusion of memmap.h to specify the location to which
+; ..\Appl\GenData\src\Spi_PBcfg.c	   496  * the variable has to be placed. */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   497  #include "Spi_MemMap.h"
+; ..\Appl\GenData\src\Spi_PBcfg.c	   498  /***************** CORE0 JOB CONFIGURATION MemMap SECTION END *************/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   499      
+; ..\Appl\GenData\src\Spi_PBcfg.c	   500        /******************* CORE0 QSPI1 CONFIGURATION MEMMAP SECTION *************/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   501  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   502  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   503  /* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+; ..\Appl\GenData\src\Spi_PBcfg.c	   504  shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   505  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   506  /* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   507  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   508  /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+; ..\Appl\GenData\src\Spi_PBcfg.c	   509  names
+; ..\Appl\GenData\src\Spi_PBcfg.c	   510  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   511  #define SPI_START_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+; ..\Appl\GenData\src\Spi_PBcfg.c	   512  /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+; ..\Appl\GenData\src\Spi_PBcfg.c	   513  * without include guard. This is as per AUTOSAR */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   514  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   515  * this is due to inclusion of memmap.h to specify the location to which
+; ..\Appl\GenData\src\Spi_PBcfg.c	   516  * the variable has to be placed. */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   517  #include "Spi_MemMap.h"
+; ..\Appl\GenData\src\Spi_PBcfg.c	   518  /* QSPI1 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   519  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   520  static const Spi_QspiHwConfigType Spi_kQspiHwConfigQSPI1 =
+; ..\Appl\GenData\src\Spi_PBcfg.c	   521  {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   522    0x00200000U,               /* Active CS Level, SSOC SFR value */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   523    0U,                        /* Queue length can be ignored for Sync */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   524    (uint8)SPI_DMA_CHNL_INVALID,   /* DMA Tx Channel */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   525    (uint8)SPI_DMA_CHNL_INVALID,   /* DMA Rx Channel */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   526    0U,                        /* DMA TCS value can be ignored for Sync */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   527    SPI_CLK_SLEEP_DISABLE,     /* Module Sleep disabled */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   528    (uint8)1U,                 /* Input class, MRIS bit field in PISEL SFR */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   529    1U,                         /* Max Sequence Count on the QSPI */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   530    0U,  /* External Demultiplexer feature is disabled */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   531    0U /* SLSO0 Strobe delay */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   532  };
+; ..\Appl\GenData\src\Spi_PBcfg.c	   533  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   534  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   535  /* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+; ..\Appl\GenData\src\Spi_PBcfg.c	   536  shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   537  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   538  /* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   539  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   540  /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+; ..\Appl\GenData\src\Spi_PBcfg.c	   541  names
+; ..\Appl\GenData\src\Spi_PBcfg.c	   542  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   543  #define SPI_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+; ..\Appl\GenData\src\Spi_PBcfg.c	   544  /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+; ..\Appl\GenData\src\Spi_PBcfg.c	   545  * without include guard. This is as per AUTOSAR */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   546  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   547  * this is due to inclusion of memmap.h to specify the location to which
+; ..\Appl\GenData\src\Spi_PBcfg.c	   548  * the variable has to be placed. */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   549  #include "Spi_MemMap.h"
+; ..\Appl\GenData\src\Spi_PBcfg.c	   550  /***************** CORE0 QSPI1 CONFIGURATION MemMap SECTION END *************/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   551        /******************* CORE0 QSPI2 CONFIGURATION MEMMAP SECTION *************/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   552  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   553  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   554  /* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+; ..\Appl\GenData\src\Spi_PBcfg.c	   555  shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   556  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   557  /* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   558  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   559  /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+; ..\Appl\GenData\src\Spi_PBcfg.c	   560  names
+; ..\Appl\GenData\src\Spi_PBcfg.c	   561  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   562  #define SPI_START_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+; ..\Appl\GenData\src\Spi_PBcfg.c	   563  /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+; ..\Appl\GenData\src\Spi_PBcfg.c	   564  * without include guard. This is as per AUTOSAR */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   565  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   566  * this is due to inclusion of memmap.h to specify the location to which
+; ..\Appl\GenData\src\Spi_PBcfg.c	   567  * the variable has to be placed. */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   568  #include "Spi_MemMap.h"
+; ..\Appl\GenData\src\Spi_PBcfg.c	   569  /* QSPI2 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   570  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   571  static const Spi_QspiHwConfigType Spi_kQspiHwConfigQSPI2 =
+; ..\Appl\GenData\src\Spi_PBcfg.c	   572  {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   573    0x00040000U,               /* Active CS Level, SSOC SFR value */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   574    SPI_JOB_QUEUE_LENGTH_QSPI2,/* Job Queue Length */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   575    (uint8)4U,                 /* DMA Rx Channel */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   576    (uint8)5U,                 /* DMA Tx Channel */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   577    SPI_DMA_MAX_TCS_NUM_QSPI2, /* DMA TCS count, for both Rx and Tx */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   578    SPI_CLK_SLEEP_DISABLE,     /* Module Sleep disabled */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   579    (uint8)1U,                 /* Input class, MRIS bit field in PISEL SFR */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   580    1U,                         /* Max Sequence Count on the QSPI */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   581    0U,  /* External Demultiplexer feature is disabled */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   582    0U /* SLSO0 Strobe delay */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   583  };
+; ..\Appl\GenData\src\Spi_PBcfg.c	   584  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   585  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   586  /* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+; ..\Appl\GenData\src\Spi_PBcfg.c	   587  shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   588  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   589  /* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   590  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   591  /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+; ..\Appl\GenData\src\Spi_PBcfg.c	   592  names
+; ..\Appl\GenData\src\Spi_PBcfg.c	   593  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   594  #define SPI_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+; ..\Appl\GenData\src\Spi_PBcfg.c	   595  /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+; ..\Appl\GenData\src\Spi_PBcfg.c	   596  * without include guard. This is as per AUTOSAR */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   597  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   598  * this is due to inclusion of memmap.h to specify the location to which
+; ..\Appl\GenData\src\Spi_PBcfg.c	   599  * the variable has to be placed. */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   600  #include "Spi_MemMap.h"
+; ..\Appl\GenData\src\Spi_PBcfg.c	   601  /***************** CORE0 QSPI2 CONFIGURATION MemMap SECTION END *************/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   602        /******************* CORE0 QSPI3 CONFIGURATION MEMMAP SECTION *************/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   603  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   604  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   605  /* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+; ..\Appl\GenData\src\Spi_PBcfg.c	   606  shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   607  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   608  /* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   609  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   610  /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+; ..\Appl\GenData\src\Spi_PBcfg.c	   611  names
+; ..\Appl\GenData\src\Spi_PBcfg.c	   612  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   613  #define SPI_START_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+; ..\Appl\GenData\src\Spi_PBcfg.c	   614  /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+; ..\Appl\GenData\src\Spi_PBcfg.c	   615  * without include guard. This is as per AUTOSAR */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   616  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   617  * this is due to inclusion of memmap.h to specify the location to which
+; ..\Appl\GenData\src\Spi_PBcfg.c	   618  * the variable has to be placed. */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   619  #include "Spi_MemMap.h"
+; ..\Appl\GenData\src\Spi_PBcfg.c	   620  /* QSPI3 */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   621  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   622  static const Spi_QspiHwConfigType Spi_kQspiHwConfigQSPI3 =
+; ..\Appl\GenData\src\Spi_PBcfg.c	   623  {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   624    0x10000000U,               /* Active CS Level, SSOC SFR value */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   625    0U,                        /* Queue length can be ignored for Sync */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   626    (uint8)SPI_DMA_CHNL_INVALID,   /* DMA Tx Channel */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   627    (uint8)SPI_DMA_CHNL_INVALID,   /* DMA Rx Channel */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   628    0U,                        /* DMA TCS value can be ignored for Sync */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   629    SPI_CLK_SLEEP_DISABLE,     /* Module Sleep disabled */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   630    (uint8)3U,                 /* Input class, MRIS bit field in PISEL SFR */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   631    1U,                         /* Max Sequence Count on the QSPI */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   632    0U,  /* External Demultiplexer feature is disabled */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   633    0U /* SLSO0 Strobe delay */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   634  };
+; ..\Appl\GenData\src\Spi_PBcfg.c	   635  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   636  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   637  /* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+; ..\Appl\GenData\src\Spi_PBcfg.c	   638  shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   639  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   640  /* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   641  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   642  /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+; ..\Appl\GenData\src\Spi_PBcfg.c	   643  names
+; ..\Appl\GenData\src\Spi_PBcfg.c	   644  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   645  #define SPI_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+; ..\Appl\GenData\src\Spi_PBcfg.c	   646  /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+; ..\Appl\GenData\src\Spi_PBcfg.c	   647  * without include guard. This is as per AUTOSAR */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   648  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   649  * this is due to inclusion of memmap.h to specify the location to which
+; ..\Appl\GenData\src\Spi_PBcfg.c	   650  * the variable has to be placed. */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   651  #include "Spi_MemMap.h"
+; ..\Appl\GenData\src\Spi_PBcfg.c	   652  /***************** CORE0 QSPI3 CONFIGURATION MemMap SECTION END *************/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   653                    
+; ..\Appl\GenData\src\Spi_PBcfg.c	   654  /********************CORE0 RX/TX BUFFERS MEMMAP SECTION***********************/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   655  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   656  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   657  /* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+; ..\Appl\GenData\src\Spi_PBcfg.c	   658  shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   659  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   660  /* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   661  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   662  /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+; ..\Appl\GenData\src\Spi_PBcfg.c	   663  names
+; ..\Appl\GenData\src\Spi_PBcfg.c	   664  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   665  #define SPI_START_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+; ..\Appl\GenData\src\Spi_PBcfg.c	   666  /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+; ..\Appl\GenData\src\Spi_PBcfg.c	   667  * without include guard. This is as per AUTOSAR */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   668  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   669  * this is due to inclusion of memmap.h to specify the location to which
+; ..\Appl\GenData\src\Spi_PBcfg.c	   670  * the variable has to be placed. */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   671  #include "Spi_MemMap.h"
+; ..\Appl\GenData\src\Spi_PBcfg.c	   672  /* Lookup table to hold the offset in buffer and total elements to be transferred for all IB channels.
+; ..\Appl\GenData\src\Spi_PBcfg.c	   673  Index - Represents channel number, 1st element - Offset in buffer, 2nd element - Total elements to be transmitted */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   674  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   675  static const Spi_CoreChannelOffsetType Spi_ChannelOffsets_Core0[SPI_NUM_IB_CHANNELS_CORE0 +  SPI_NUM_EB_CHANNELS_CORE0 + 1U] =
+; ..\Appl\GenData\src\Spi_PBcfg.c	   676  {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   677    {0, 0},    /*SpiChannel_35584*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   678    {0, 0},    /*SpiChannel_5012BD1*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   679    {0, 0},    /*SpiChannel_9183*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   680    {0xFFFF, 0xFFFF}
+; ..\Appl\GenData\src\Spi_PBcfg.c	   681  };
+; ..\Appl\GenData\src\Spi_PBcfg.c	   682  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   683  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   684  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   685  /* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+; ..\Appl\GenData\src\Spi_PBcfg.c	   686  shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   687  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   688  /* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   689  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   690  /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+; ..\Appl\GenData\src\Spi_PBcfg.c	   691  names
+; ..\Appl\GenData\src\Spi_PBcfg.c	   692  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   693  #define SPI_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+; ..\Appl\GenData\src\Spi_PBcfg.c	   694  /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+; ..\Appl\GenData\src\Spi_PBcfg.c	   695  * without include guard. This is as per AUTOSAR */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   696  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   697  * this is due to inclusion of memmap.h to specify the location to which
+; ..\Appl\GenData\src\Spi_PBcfg.c	   698  * the variable has to be placed. */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   699  #include "Spi_MemMap.h"
+; ..\Appl\GenData\src\Spi_PBcfg.c	   700  /********************CORE0 RX/TX BUFFERS MEMMAP SECTION***********************/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   701      
+; ..\Appl\GenData\src\Spi_PBcfg.c	   702  /******************* CORE0 Spi_Config_Core CONFIGURATION MEMMAP SECTION *************/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   703  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   704  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   705  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   706  /* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+; ..\Appl\GenData\src\Spi_PBcfg.c	   707  shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   708  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   709  /* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   710  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   711  /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+; ..\Appl\GenData\src\Spi_PBcfg.c	   712  names
+; ..\Appl\GenData\src\Spi_PBcfg.c	   713  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   714  #define SPI_START_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+; ..\Appl\GenData\src\Spi_PBcfg.c	   715  /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+; ..\Appl\GenData\src\Spi_PBcfg.c	   716  * without include guard. This is as per AUTOSAR */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   717  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   718  * this is due to inclusion of memmap.h to specify the location to which
+; ..\Appl\GenData\src\Spi_PBcfg.c	   719  * the variable has to be placed. */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   720  #include "Spi_MemMap.h"
+; ..\Appl\GenData\src\Spi_PBcfg.c	   721  /* MISRA2012_RULE_8_7_JUSTIFICATION: Spi_Config_Core0 is used outside
+; ..\Appl\GenData\src\Spi_PBcfg.c	   722  * of this file and therefore it is not declared as static */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   723  /* MISRA2012_RULE_8_4_JUSTIFICATION: Agreed violation */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   724  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   725  const Spi_CoreConfigType Spi_Config_Core0 =
+; ..\Appl\GenData\src\Spi_PBcfg.c	   726  {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   727    /* Sequence Configuration */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   728    Spi_kSequenceConfig_Core0,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   729    /* Job configuration */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   730    Spi_kJobConfig_Core0,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   731    /* Channel Configuration */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   732    Spi_kChannelConfig_Core0,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   733    Spi_ChannelOffsets_Core0,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   734    /* QSPI Hw configuration */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   735    {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   736      NULL_PTR,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   737      &Spi_kQspiHwConfigQSPI1,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   738      &Spi_kQspiHwConfigQSPI2,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   739      &Spi_kQspiHwConfigQSPI3,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   740      
+; ..\Appl\GenData\src\Spi_PBcfg.c	   741    },
+; ..\Appl\GenData\src\Spi_PBcfg.c	   742    /* Hw Map Index */      
+; ..\Appl\GenData\src\Spi_PBcfg.c	   743    /*
+; ..\Appl\GenData\src\Spi_PBcfg.c	   744    (000 QSPI not configured for core0)
+; ..\Appl\GenData\src\Spi_PBcfg.c	   745    (001 QSPI configured as Sync for core0)
+; ..\Appl\GenData\src\Spi_PBcfg.c	   746    (010 QSPI configured as Async for core0)
+; ..\Appl\GenData\src\Spi_PBcfg.c	   747    (011 QSPI configured for core0)
+; ..\Appl\GenData\src\Spi_PBcfg.c	   748    QSPI5 - 0
+; ..\Appl\GenData\src\Spi_PBcfg.c	   749    QSPI4 - 0
+; ..\Appl\GenData\src\Spi_PBcfg.c	   750    QSPI3 - 1
+; ..\Appl\GenData\src\Spi_PBcfg.c	   751    QSPI2 - 2
+; ..\Appl\GenData\src\Spi_PBcfg.c	   752    QSPI1 - 1
+; ..\Appl\GenData\src\Spi_PBcfg.c	   753    QSPI0 - 0*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   754    0x00288U,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   755    /* No. of Sequences configured */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   756    3U,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   757    /* No. of Jobs configured */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   758    3U,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   759    /* No. of Channels configured */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   760    3U
+; ..\Appl\GenData\src\Spi_PBcfg.c	   761  };
+; ..\Appl\GenData\src\Spi_PBcfg.c	   762  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   763  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   764  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   765  /* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+; ..\Appl\GenData\src\Spi_PBcfg.c	   766  shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   767  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   768  /* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   769  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   770  /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+; ..\Appl\GenData\src\Spi_PBcfg.c	   771  names
+; ..\Appl\GenData\src\Spi_PBcfg.c	   772  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   773  #define SPI_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+; ..\Appl\GenData\src\Spi_PBcfg.c	   774  /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+; ..\Appl\GenData\src\Spi_PBcfg.c	   775  * without include guard. This is as per AUTOSAR */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   776  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   777  * this is due to inclusion of memmap.h to specify the location to which
+; ..\Appl\GenData\src\Spi_PBcfg.c	   778  * the variable has to be placed. */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   779  #include "Spi_MemMap.h"
+; ..\Appl\GenData\src\Spi_PBcfg.c	   780  /***************** CORE0 Spi_Config_Core CONFIGURATION MemMap SECTION END *************/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   781            
+; ..\Appl\GenData\src\Spi_PBcfg.c	   782  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   783  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   784  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   785  /* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+; ..\Appl\GenData\src\Spi_PBcfg.c	   786  shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   787  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   788  /* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   789  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   790  /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+; ..\Appl\GenData\src\Spi_PBcfg.c	   791  names
+; ..\Appl\GenData\src\Spi_PBcfg.c	   792  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   793  #define SPI_START_SEC_CONFIG_DATA_ASIL_B_GLOBAL_32
+; ..\Appl\GenData\src\Spi_PBcfg.c	   794  /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+; ..\Appl\GenData\src\Spi_PBcfg.c	   795  * without include guard. This is as per AUTOSAR */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   796  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   797  * this is due to inclusion of memmap.h to specify the location to which
+; ..\Appl\GenData\src\Spi_PBcfg.c	   798  * the variable has to be placed. */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   799  #include "Spi_MemMap.h"
+; ..\Appl\GenData\src\Spi_PBcfg.c	   800  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   801  const Spi_ConfigType Spi_Config =
+; ..\Appl\GenData\src\Spi_PBcfg.c	   802  {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   803    {
+; ..\Appl\GenData\src\Spi_PBcfg.c	   804      &Spi_Config_Core0,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   805      NULL_PTR
+; ..\Appl\GenData\src\Spi_PBcfg.c	   806    },
+; ..\Appl\GenData\src\Spi_PBcfg.c	   807    SequenceLookupIndex,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   808    JobLookupIndex,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   809    ChannelLookupIndex,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   810    /*Total number of Sequence*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   811    3U,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   812    /*Total number of Jobs*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   813    3U,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   814    /*Total number of Channels*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   815    3U,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   816    /*Sync Delay*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   817    65535U
+; ..\Appl\GenData\src\Spi_PBcfg.c	   818  };
+; ..\Appl\GenData\src\Spi_PBcfg.c	   819  
+; ..\Appl\GenData\src\Spi_PBcfg.c	   820  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   821  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   822  /* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+; ..\Appl\GenData\src\Spi_PBcfg.c	   823  shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   824  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   825  /* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+; ..\Appl\GenData\src\Spi_PBcfg.c	   826  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   827  /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+; ..\Appl\GenData\src\Spi_PBcfg.c	   828  names
+; ..\Appl\GenData\src\Spi_PBcfg.c	   829  * because of AS naming convention*/
+; ..\Appl\GenData\src\Spi_PBcfg.c	   830  #define SPI_STOP_SEC_CONFIG_DATA_ASIL_B_GLOBAL_32
+; ..\Appl\GenData\src\Spi_PBcfg.c	   831  /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+; ..\Appl\GenData\src\Spi_PBcfg.c	   832  * without include guard. This is as per AUTOSAR */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   833  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+; ..\Appl\GenData\src\Spi_PBcfg.c	   834  * this is due to inclusion of memmap.h to specify the location to which
+; ..\Appl\GenData\src\Spi_PBcfg.c	   835  * the variable has to be placed. */
+; ..\Appl\GenData\src\Spi_PBcfg.c	   836  #include "Spi_MemMap.h"/* End Of File */
+
+	; Module end

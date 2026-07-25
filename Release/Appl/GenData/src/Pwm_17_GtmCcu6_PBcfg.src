@@ -1,0 +1,476 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc19976a --dep-file=Appl\\GenData\\src\\.Pwm_17_GtmCcu6_PBcfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=Appl\\GenData\\src\\Pwm_17_GtmCcu6_PBcfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\src\\Pwm_17_GtmCcu6_PBcfg.src ..\\Appl\\GenData\\src\\Pwm_17_GtmCcu6_PBcfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\GenData\\src\\Pwm_17_GtmCcu6_PBcfg.c'
+
+	
+$TC162
+	
+	.sdecl	'.zrodata.Pwm_17_GtmCcu6_PBcfg.Pwm_ChannelIndexMap',data,rom
+	.sect	'.zrodata.Pwm_17_GtmCcu6_PBcfg.Pwm_ChannelIndexMap'
+Pwm_ChannelIndexMap:	.type	object
+	.size	Pwm_ChannelIndexMap,4
+	.space	1
+	.byte	1,2,3
+	.sdecl	'.rodata.Pwm_17_GtmCcu6_PBcfg.Pwm_kChannelConfigGtm_Core0',data,rom
+	.sect	'.rodata.Pwm_17_GtmCcu6_PBcfg.Pwm_kChannelConfigGtm_Core0'
+	.align	4
+Pwm_kChannelConfigGtm_Core0:	.type	object
+	.size	Pwm_kChannelConfigGtm_Core0,144
+	.word	1
+	.space	4
+	.word	-2130706430,10000,10000
+	.space	4
+	.word	10000
+	.space	4
+	.word	128,1,1,-2146435070
+	.space	4
+	.word	16777215
+	.space	4
+	.word	16777215
+	.space	4
+	.word	128,1,2,-2146435070
+	.space	4
+	.word	16777215
+	.space	4
+	.word	16777215
+	.space	4
+	.word	128,1,3,-2146435070
+	.space	4
+	.word	16777215
+	.space	4
+	.word	16777215
+	.space	4
+	.word	128
+	.sdecl	'.rodata.Pwm_17_GtmCcu6_PBcfg.Pwm_kChannelConfigurationCore0',data,rom
+	.sect	'.rodata.Pwm_17_GtmCcu6_PBcfg.Pwm_kChannelConfigurationCore0'
+	.align	4
+Pwm_kChannelConfigurationCore0:	.type	object
+	.size	Pwm_kChannelConfigurationCore0,80
+	.space	4
+	.word	10000
+	.space	8
+	.word	Pwm_kChannelConfigGtm_Core0
+	.byte	1
+	.space	1
+	.half	52
+	.word	10000
+	.space	4
+	.word	5000,Pwm_kChannelConfigGtm_Core0+36
+	.byte	2
+	.space	1
+	.half	52
+	.word	10000
+	.space	4
+	.word	5000,Pwm_kChannelConfigGtm_Core0+72
+	.byte	3
+	.space	1
+	.half	52
+	.word	10000
+	.space	4
+	.word	5000,Pwm_kChannelConfigGtm_Core0+108
+	.sdecl	'.zrodata.Pwm_17_GtmCcu6_PBcfg.Pwm_CoreConfigCore0',data,rom
+	.sect	'.zrodata.Pwm_17_GtmCcu6_PBcfg.Pwm_CoreConfigCore0'
+	.align	4
+Pwm_CoreConfigCore0:	.type	object
+	.size	Pwm_CoreConfigCore0,8
+	.byte	4
+	.space	3
+	.word	Pwm_kChannelConfigurationCore0
+	.sdecl	'.rodata.Pwm_17_GtmCcu6_PBcfg.Pwm_17_GtmCcu6_Config',data,rom
+	.sect	'.rodata.Pwm_17_GtmCcu6_PBcfg.Pwm_17_GtmCcu6_Config'
+	.global	Pwm_17_GtmCcu6_Config
+	.align	4
+Pwm_17_GtmCcu6_Config:	.type	object
+	.size	Pwm_17_GtmCcu6_Config,20
+	.word	Pwm_CoreConfigCore0
+	.space	4
+	.word	Pwm_ChannelIndexMap,-1,-1
+
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	     1  /*******************************************************************************
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	     2  **                                                                            **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	     3  ** Copyright (C) Infineon Technologies (2021)                                 **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	     4  **                                                                            **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	     5  ** All rights reserved.                                                       **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	     6  **                                                                            **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	     7  ** This document contains proprietary information belonging to Infineon       **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	     8  ** Technologies. Passing on and copying of this document, and communication   **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	     9  ** of its contents is not permitted without prior written authorization.      **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    10  **                                                                            **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    11  ********************************************************************************
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    12  **                                                                            **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    13  **  FILENAME  : Pwm_17_GtmCcu6_PBcfg.c                                        **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    14  **                                                                            **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    15  **  VERSION   : 20.0.0                                                        **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    16  **                                                                            **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    17  **  DATE, TIME: 2024-07-24, 19:06:34              !!!IGNORE-LINE!!!           **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    18  **                                                                            **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    19  **  GENERATOR : Build b191017-0938                !!!IGNORE-LINE!!!           **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    20  **                                                                            **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    21  **  BSW MODULE DECRIPTION : Pwm.bmd                                           **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    22  **                                                                            **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    23  **  VARIANT   : Variant PB                                                    **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    24  **                                                                            **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    25  **  PLATFORM  : Infineon AURIX2G                                              **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    26  **                                                                            **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    27  **  AUTHOR    : DL-AUTOSAR-Engineering                                        **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    28  **                                                                            **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    29  **  VENDOR    : Infineon Technologies                                         **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    30  **                                                                            **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    31  **  DESCRIPTION  : Pwm configuration generated out of ECUC file               **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    32  **                                                                            **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    33  **  SPECIFICATION(S) : AUTOSAR Specification of Pwm Driver                    **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    34  **                                                                            **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    35  **  MAY BE CHANGED BY USER : no                                               **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    36  **                                                                            **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    37  *******************************************************************************/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    38  
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    39  /*******************************************************************************
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    40  **                      Includes                                              **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    41  *******************************************************************************/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    42  /* Include module header File */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    43  #include "Pwm_17_GtmCcu6.h"
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    44  #include "Mcu_17_TimerIp.h"
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    45  
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    46  
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    47  
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    48  /*******************************************************************************
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    49  **                      Private Type Definitions                              **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    50  *******************************************************************************/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    51  /*
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    52  Configuration:
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    53  PWM Channel Configuration:
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    54  Elements / Attributes
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    55  1. Notification function pointer (if required)
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    56  2. Shift Value, only for PWM_FIXED_PERIOD_SHIFTED Class
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    57     Input a value between 0 and 0x8000.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    58  3. Default Duty Cycle ( duty cycle value between
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    59     0 and 0x8000)
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    60  4. Pwm_Period:
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    61     Enter in ticks
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    62     PWM070: All time units should be in ticks.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    63  5. Pwm_ConfigChannel:
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    64     Go in the following parameter order
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    65     a) Reference to Channel Number, for a Shifted, Center Aligned and
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    66     Zero Shifted channel, a reference must be given. For a variable
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    67     and Fixed Period channel class, reference should not be given.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    68     Reference should be given in the form of channel number index.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    69     b) Channel Class
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    70        Possible Options: PWM_FIXED_PERIOD, PWM_FIXED_PERIOD_SHIFTED,
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    71        PWM_FIXED_PERIOD_CENTER_ALIGNED, PWM_VARIABLE_PERIOD
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    72     c) Channel Idle State:
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    73        Possible Options: PWM_LOW, PWM_HIGH
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    74        Output line goes into Idle state either after Pwm_SetOutputtoIdle
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    75        or Pwm_DeInit.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    76     d) Channel Polarity:
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    77        Possible Options: PWM_LOW, PWM_HIGH
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    78        Initial Polarity state of the channel.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    79     e) GTM timer Configuration:
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    80        Select timer reference :TOM/ATOM.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    81        Clockselect.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    82   */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    83  /*******************************************************************************
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    84  **                      Private Function Declarations                         **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    85  *******************************************************************************/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    86  /*
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    87  Function Like Macro:Pwm_lConfigChannel
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    88  Macro that packs the PWM Channel Information.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    89  Input Parameters:
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    90  DsadcNotif: The notification flag to enable GTM interrupts to trigger DSADC
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    91  ShiftReset: Shifted channel is reset by itself or by other channel
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    92  ChannelClass : Channel Class
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    93  ChannelCoherency : Channel Coherency
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    94  IdleState : Idle State
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    95  Polarity : Channel Polarity
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    96  AssignedHwUnit : Hardware Unit Used
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    97  */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    98  /*MISRA2012_RULE_4_9_JUSTIFICATION: Function like macro is used to reduce the
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    99  memory usage */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   100  #define Pwm_lConfigChannel(DsadcNotif,                   \ 
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   101                             ShiftReset,                   \ 
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   102                             ChannelClass,                 \ 
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   103                             ChannelCoherency,             \ 
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   104                             IdleState,                    \ 
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   105                             Polarity)                     \ 
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   106                ((uint16)( ((DsadcNotif) << 6U)          |   \ 
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   107                           ((ShiftReset) << 5U)          |   \ 
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   108                           ((ChannelClass) << 3U)        |   \ 
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   109                           ((ChannelCoherency) << 2U)    |   \ 
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   110                           ((IdleState) << 1U)           |   \ 
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   111                           ((Polarity))                       \ 
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   112                         ))
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   113  /******************************************************************************/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   114  /******************************************************************************/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   115    
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   116  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   117  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   118  /* MISRA2012_RULE_5_2_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   119  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   120  /* MISRA2012_RULE_5_4_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   121  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   122  /* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   123  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   124  #define PWM_17_GTMCCU6_START_SEC_CONFIG_DATA_ASIL_B_GLOBAL_UNSPECIFIED
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   125  /* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   126  without safegaurd. It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   127  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration of notification function 
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   128  before MemMap inclusion. It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   129  #include "Pwm_17_GtmCcu6_MemMap.h"
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   130    
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   131  static const uint8 Pwm_ChannelIndexMap [4] =
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   132  {
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   133    0x0U,
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   134    0x1U,
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   135    0x2U,
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   136    0x3U,
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   137  };
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   138  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   139  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   140  /* MISRA2012_RULE_5_2_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   141  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   142  /* MISRA2012_RULE_5_4_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   143  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   144  /* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   145  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   146  #define PWM_17_GTMCCU6_STOP_SEC_CONFIG_DATA_ASIL_B_GLOBAL_UNSPECIFIED
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   147  /* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   148  without safegaurd. It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   149  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration of notification function 
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   150  before MemMap inclusion It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   151  #include "Pwm_17_GtmCcu6_MemMap.h"
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   152  /* Loop for all the cores */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   153  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   154  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   155  /* MISRA2012_RULE_5_2_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   156  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   157  /* MISRA2012_RULE_5_4_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   158  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   159  /* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   160  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   161  #define PWM_17_GTMCCU6_START_SEC_CONFIG_DATA_ASIL_B_CORE0_UNSPECIFIED
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   162  /* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   163  without safegaurd. It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   164  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration of notification function 
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   165  before MemMap inclusion It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   166  #include "Pwm_17_GtmCcu6_MemMap.h"
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   167          
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   168  static const Mcu_17_Gtm_TomAtomChConfigType Pwm_kChannelConfigGtm_Core0[4] = 
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   169  {
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   170    {
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   171      MCU_GTM_TIMER_ATOM, /* Timer Type (TOM/ATOM)*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   172      /* Bit[15:8] - Module number Bit[7:0] - Channel number*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   173      0x0U,
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   174      0x81000002U, /* Channel Control Register*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   175      0x2710U, /* CN0 in ticks */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   176      0x2710U, /* CM0 in ticks */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   177      0x0U, /* CM1 in ticks */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   178      0x2710U, /* SR0 in ticks */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   179      0x0U, /* SR1 in ticks */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   180      0x80U /* Period,Duty Interrupt and mode*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   181    },
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   182    {
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   183      MCU_GTM_TIMER_ATOM, /* Timer Type (TOM/ATOM)*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   184      /* Bit[15:8] - Module number Bit[7:0] - Channel number*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   185      0x1U,
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   186      0x80100002U, /* Channel Control Register*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   187      0x0U, /* CN0 in ticks */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   188      0xffffffU, /* CM0 in ticks */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   189      0x0U, /* CM1 in ticks */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   190      0xffffffU, /* SR0 in ticks */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   191      0x0U, /* SR1 in ticks */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   192      0x80U /* Period,Duty Interrupt and mode*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   193    },
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   194    {
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   195      MCU_GTM_TIMER_ATOM, /* Timer Type (TOM/ATOM)*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   196      /* Bit[15:8] - Module number Bit[7:0] - Channel number*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   197      0x2U,
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   198      0x80100002U, /* Channel Control Register*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   199      0x0U, /* CN0 in ticks */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   200      0xffffffU, /* CM0 in ticks */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   201      0x0U, /* CM1 in ticks */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   202      0xffffffU, /* SR0 in ticks */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   203      0x0U, /* SR1 in ticks */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   204      0x80U /* Period,Duty Interrupt and mode*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   205    },
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   206    {
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   207      MCU_GTM_TIMER_ATOM, /* Timer Type (TOM/ATOM)*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   208      /* Bit[15:8] - Module number Bit[7:0] - Channel number*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   209      0x3U,
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   210      0x80100002U, /* Channel Control Register*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   211      0x0U, /* CN0 in ticks */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   212      0xffffffU, /* CM0 in ticks */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   213      0x0U, /* CM1 in ticks */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   214      0xffffffU, /* SR0 in ticks */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   215      0x0U, /* SR1 in ticks */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   216      0x80U /* Period,Duty Interrupt and mode*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   217    },
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   218  };
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   219        
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   220  static const Pwm_17_GtmCcu6_ChannelConfigType Pwm_kChannelConfigurationCore0[] =
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   221  {
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   222  /*******************************************************************************
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   223  *  Channel Number        : 0
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   224  *  Channel Symbolic Name : Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9180REF
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   225  *  Channel Class         : PWM_FIXED_PERIOD
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   226  *******************************************************************************/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   227    {
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   228      0, /* Pwm logical channel ID */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   229      0, /* Timer used GTM:0/CCU6:1 */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   230      Pwm_lConfigChannel(
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   231        0U,/* The notification flag to enable GTM interrupts to trigger DSADC */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   232        0U,/* Channel reset from other channel or not*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   233        PWM_17_GTMCCU6_FIXED_PERIOD,/* Channel Class */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   234        PWM_17_GTMCCU6_NON_COHERENT,/* Coherency */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   235        PWM_17_GTMCCU6_LOW, /* channel Idle state */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   236        PWM_17_GTMCCU6_LOW  /* channel polarity */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   237      ),
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   238      (Pwm_17_GtmCcu6_PeriodType)0x2710, /* Default Period */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   239      (uint32)0x0, /* Default Duty Cycle */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   240      (uint32)0x0, /* Shift Value */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   241      (const void*)&Pwm_kChannelConfigGtm_Core0[0]
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   242      /* MISRA2012_RULE_11_3_JUSTIFICATION: SFR access. No side effects foreseen
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   243      * by violating this MISRA rule. */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   244    },
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   245  /*******************************************************************************
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   246  *  Channel Number        : 1
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   247  *  Channel Symbolic Name : Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9180IH1
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   248  *  Channel Class         : PWM_FIXED_PERIOD_CENTER_ALIGNED
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   249  *******************************************************************************/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   250    {
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   251      1, /* Pwm logical channel ID */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   252      0, /* Timer used GTM:0/CCU6:1 */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   253      Pwm_lConfigChannel(
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   254        0U,/* The notification flag to enable GTM interrupts to trigger DSADC */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   255        1U,/* Channel reset from other channel or not*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   256        PWM_17_GTMCCU6_FIXED_PERIOD_CENTER_ALIGNED,/* Channel Class */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   257        PWM_17_GTMCCU6_COHERENT,/* Coherency */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   258        PWM_17_GTMCCU6_LOW, /* channel Idle state */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   259        PWM_17_GTMCCU6_LOW  /* channel polarity */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   260      ),
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   261      (Pwm_17_GtmCcu6_PeriodType)0x2710, /* Default Period */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   262      (uint32)0x0, /* Default Duty Cycle */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   263      (uint32)0x1388, /* Shift Value */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   264      (const void*)&Pwm_kChannelConfigGtm_Core0[1]
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   265      /* MISRA2012_RULE_11_3_JUSTIFICATION: SFR access. No side effects foreseen
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   266      * by violating this MISRA rule. */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   267    },
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   268  /*******************************************************************************
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   269  *  Channel Number        : 2
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   270  *  Channel Symbolic Name : Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9180IH2
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   271  *  Channel Class         : PWM_FIXED_PERIOD_CENTER_ALIGNED
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   272  *******************************************************************************/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   273    {
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   274      2, /* Pwm logical channel ID */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   275      0, /* Timer used GTM:0/CCU6:1 */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   276      Pwm_lConfigChannel(
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   277        0U,/* The notification flag to enable GTM interrupts to trigger DSADC */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   278        1U,/* Channel reset from other channel or not*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   279        PWM_17_GTMCCU6_FIXED_PERIOD_CENTER_ALIGNED,/* Channel Class */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   280        PWM_17_GTMCCU6_COHERENT,/* Coherency */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   281        PWM_17_GTMCCU6_LOW, /* channel Idle state */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   282        PWM_17_GTMCCU6_LOW  /* channel polarity */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   283      ),
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   284      (Pwm_17_GtmCcu6_PeriodType)0x2710, /* Default Period */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   285      (uint32)0x0, /* Default Duty Cycle */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   286      (uint32)0x1388, /* Shift Value */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   287      (const void*)&Pwm_kChannelConfigGtm_Core0[2]
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   288      /* MISRA2012_RULE_11_3_JUSTIFICATION: SFR access. No side effects foreseen
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   289      * by violating this MISRA rule. */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   290    },
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   291  /*******************************************************************************
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   292  *  Channel Number        : 3
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   293  *  Channel Symbolic Name : Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9180IH3
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   294  *  Channel Class         : PWM_FIXED_PERIOD_CENTER_ALIGNED
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   295  *******************************************************************************/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   296    {
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   297      3, /* Pwm logical channel ID */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   298      0, /* Timer used GTM:0/CCU6:1 */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   299      Pwm_lConfigChannel(
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   300        0U,/* The notification flag to enable GTM interrupts to trigger DSADC */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   301        1U,/* Channel reset from other channel or not*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   302        PWM_17_GTMCCU6_FIXED_PERIOD_CENTER_ALIGNED,/* Channel Class */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   303        PWM_17_GTMCCU6_COHERENT,/* Coherency */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   304        PWM_17_GTMCCU6_LOW, /* channel Idle state */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   305        PWM_17_GTMCCU6_LOW  /* channel polarity */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   306      ),
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   307      (Pwm_17_GtmCcu6_PeriodType)0x2710, /* Default Period */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   308      (uint32)0x0, /* Default Duty Cycle */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   309      (uint32)0x1388, /* Shift Value */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   310      (const void*)&Pwm_kChannelConfigGtm_Core0[3]
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   311      /* MISRA2012_RULE_11_3_JUSTIFICATION: SFR access. No side effects foreseen
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   312      * by violating this MISRA rule. */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   313    },
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   314  };
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   315        
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   316  static const Pwm_17_GtmCcu6_CoreConfigType Pwm_CoreConfigCore0 =
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   317  { 
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   318    (Pwm_17_GtmCcu6_ChannelType)4U,
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   319    (const Pwm_17_GtmCcu6_ChannelConfigType*)&Pwm_kChannelConfigurationCore0[0]
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   320  };
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   321  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   322  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   323  /* MISRA2012_RULE_5_2_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   324  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   325  /* MISRA2012_RULE_5_4_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   326  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   327  /* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   328  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   329  #define PWM_17_GTMCCU6_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_UNSPECIFIED
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   330  /* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   331  without safegaurd. It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   332  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration of notification function 
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   333  before MemMap inclusion It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   334  #include "Pwm_17_GtmCcu6_MemMap.h"
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   335  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   336  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   337  /* MISRA2012_RULE_5_2_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   338  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   339  /* MISRA2012_RULE_5_4_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   340  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   341  /* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   342  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   343  #define PWM_17_GTMCCU6_START_SEC_CONFIG_DATA_ASIL_B_GLOBAL_UNSPECIFIED
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   344  /* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   345  without safegaurd. It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   346  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration of notification function 
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   347  before MemMap inclusion It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   348  #include "Pwm_17_GtmCcu6_MemMap.h"
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   349  
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   350  const Pwm_17_GtmCcu6_ConfigType Pwm_17_GtmCcu6_Config =
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   351  {
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   352    {
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   353  
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   354      /* MISRA2012_RULE_11_8_JUSTIFICATION: This typecast is in-line with the data type of the structure member PwmCoreAdd, MISRA is reported becasue of structure Pwm_CoreConfigCore,
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   355      which is defined as constant to be allocated in Read only memory, Hence no side effects foreseen by violating this MISRA rule */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   356  
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   357      (Pwm_17_GtmCcu6_CoreConfigType*)&Pwm_CoreConfigCore0,
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   358      /* MISRA2012_RULE_11_8_JUSTIFICATION: This typecast is in-line with the data type of the structure member PwmCoreAdd, MISRA is reported becasue of structure Pwm_CoreConfigCore,
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   359      which is defined as constant to be allocated in Read only memory, Hence no side effects foreseen by violating this MISRA rule */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   360  
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   361      NULL_PTR
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   362    },
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   363    /* MISRA2012_RULE_11_8_JUSTIFICATION: This typecast is in-line with the data type of structure member PwmChannelIdxmapPtr, MISRA is reported becasue of data type Pwm_ChannelIndexMap,
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   364    which is defined as constant to be allocated in Read only memory, Hence no side effects foreseen by violating this MISRA rule */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   365    (uint8*)&Pwm_ChannelIndexMap,
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   366    { 
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   367      0xffffffffU,
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   368      0xffffffffU
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   369    }
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   370  };
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   371  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   372  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   373  /* MISRA2012_RULE_5_2_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   374  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   375  /* MISRA2012_RULE_5_4_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   376  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   377  /* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   378  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   379  #define PWM_17_GTMCCU6_STOP_SEC_CONFIG_DATA_ASIL_B_GLOBAL_UNSPECIFIED
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   380  /* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   381  without safegaurd. It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   382  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration of notification function 
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   383  before MemMap inclusion It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   384  #include "Pwm_17_GtmCcu6_MemMap.h"
+
+	; Module end

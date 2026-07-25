@@ -122,6 +122,51 @@ FUNC(void, MotorCdd_CODE) MotorCDDMainFunction(void) /* PRQA S 0624, 3206 */ /* 
 
 /**********************************************************************************************************************
  *
+ * Runnable Entity Name: Pp_MotorCdd_EnableInverter_EnableInverter
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered by server invocation for OperationPrototype <EnableInverter> of PortPrototype <Pp_MotorCdd_EnableInverter>
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: Pp_MotorCdd_EnableInverter_EnableInverter_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(void, MotorCdd_CODE) Pp_MotorCdd_EnableInverter_EnableInverter(boolean arg) /* PRQA S 0624, 3206 */ /* MD_Rte_0624, MD_Rte_3206 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: Pp_MotorCdd_EnableInverter_EnableInverter
+ *********************************************************************************************************************/
+  if (arg != FALSE)
+  {
+    if (MotorCdd_AdcIsCurrentOffsetReady() != 0U)
+    {
+      MotorCdd_FocPrepareOutputEnable();
+      Tle9180_Driver_EnableOutput(TRUE);
+    }
+  }
+  else
+  {
+    MotorCdd_FocStopOutput();
+    Tle9180_Driver_EnableOutput(FALSE);
+  }
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
  * Runnable Entity Name: MotorCdd_Init
  *
  *---------------------------------------------------------------------------------------------------------------------

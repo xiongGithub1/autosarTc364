@@ -1,0 +1,1785 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc20416a --dep-file=Appl\\GenData\\.Com_Lcfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=Appl\\GenData\\Com_Lcfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\Com_Lcfg.src ..\\Appl\\GenData\\Com_Lcfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\GenData\\Com_Lcfg.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.Com_Lcfg.Com_MainFunctionRx_ComMainFunctionRx',code
+	.sect	'.text.Com_Lcfg.Com_MainFunctionRx_ComMainFunctionRx'
+	.align	2
+	
+	.global	Com_MainFunctionRx_ComMainFunctionRx
+
+; ..\Appl\GenData\Com_Lcfg.c	     1  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	     2   *  COPYRIGHT
+; ..\Appl\GenData\Com_Lcfg.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Com_Lcfg.c	     4   *  \verbatim
+; ..\Appl\GenData\Com_Lcfg.c	     5   *
+; ..\Appl\GenData\Com_Lcfg.c	     6   *                 This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\Appl\GenData\Com_Lcfg.c	     7   *                 Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\Appl\GenData\Com_Lcfg.c	     8   *                 All other rights remain with Vector Informatik GmbH.
+; ..\Appl\GenData\Com_Lcfg.c	     9   *  \endverbatim
+; ..\Appl\GenData\Com_Lcfg.c	    10   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Com_Lcfg.c	    11   *  LICENSE
+; ..\Appl\GenData\Com_Lcfg.c	    12   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Com_Lcfg.c	    13   *            Module: Com
+; ..\Appl\GenData\Com_Lcfg.c	    14   *           Program: MSR_Vector_SLP4
+; ..\Appl\GenData\Com_Lcfg.c	    15   *          Customer: China Lithium Battery Technology Co., Ltd.
+; ..\Appl\GenData\Com_Lcfg.c	    16   *       Expiry Date: 2025-08-26
+; ..\Appl\GenData\Com_Lcfg.c	    17   *  Ordered Derivat.: SAK-TC387QP-160F300S AE
+; ..\Appl\GenData\Com_Lcfg.c	    18   *    License Scope : The usage is restricted to CBD2200508_D00
+; ..\Appl\GenData\Com_Lcfg.c	    19   *
+; ..\Appl\GenData\Com_Lcfg.c	    20   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Com_Lcfg.c	    21   *  FILE DESCRIPTION
+; ..\Appl\GenData\Com_Lcfg.c	    22   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Com_Lcfg.c	    23   *              File: Com_Lcfg.c
+; ..\Appl\GenData\Com_Lcfg.c	    24   *   Generation Time: 2024-07-16 16:49:58
+; ..\Appl\GenData\Com_Lcfg.c	    25   *           Project: last364 - Version 1.0
+; ..\Appl\GenData\Com_Lcfg.c	    26   *          Delivery: CBD2200508_D00
+; ..\Appl\GenData\Com_Lcfg.c	    27   *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
+; ..\Appl\GenData\Com_Lcfg.c	    28   *
+; ..\Appl\GenData\Com_Lcfg.c	    29   *
+; ..\Appl\GenData\Com_Lcfg.c	    30   *********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    31  
+; ..\Appl\GenData\Com_Lcfg.c	    32  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    33   ! BETA VERSION                                                                                                       !
+; ..\Appl\GenData\Com_Lcfg.c	    34   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\Appl\GenData\Com_Lcfg.c	    35   ! This version of DaVinci Configurator Classic and/or the related Basic Software Package is BETA software.               !
+; ..\Appl\GenData\Com_Lcfg.c	    36   ! BETA Software is basically operable, but not sufficiently tested, verified and/or qualified for use in series      !
+; ..\Appl\GenData\Com_Lcfg.c	    37   ! production and/or in vehicles operating on public or non-public roads.                                             !
+; ..\Appl\GenData\Com_Lcfg.c	    38   ! In particular, without limitation, BETA Software may cause unpredictable ECU behavior, may not provide all         !
+; ..\Appl\GenData\Com_Lcfg.c	    39   ! functions necessary for use in series production and/or may not comply with quality requirements which are         !
+; ..\Appl\GenData\Com_Lcfg.c	    40   ! necessary according to the state of the art. BETA Software must not be used in series production.                  !
+; ..\Appl\GenData\Com_Lcfg.c	    41   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\Appl\GenData\Com_Lcfg.c	    42  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    43  
+; ..\Appl\GenData\Com_Lcfg.c	    44  
+; ..\Appl\GenData\Com_Lcfg.c	    45  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    46    MISRA / PClint JUSTIFICATIONS
+; ..\Appl\GenData\Com_Lcfg.c	    47  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    48  
+; ..\Appl\GenData\Com_Lcfg.c	    49  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    50    INCLUDES
+; ..\Appl\GenData\Com_Lcfg.c	    51  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    52  #define V_IL_ASRCOMCFG5_LCFG_SOURCE
+; ..\Appl\GenData\Com_Lcfg.c	    53  
+; ..\Appl\GenData\Com_Lcfg.c	    54  #include "Com.h"
+; ..\Appl\GenData\Com_Lcfg.c	    55  #include "Com_Timer.h"
+; ..\Appl\GenData\Com_Lcfg.c	    56  #include "Com_TxModeHdlr.h"
+; ..\Appl\GenData\Com_Lcfg.c	    57  #include "Com_LLIf.h"
+; ..\Appl\GenData\Com_Lcfg.c	    58  #include "Com_MainFunctions.h"
+; ..\Appl\GenData\Com_Lcfg.c	    59  
+; ..\Appl\GenData\Com_Lcfg.c	    60  
+; ..\Appl\GenData\Com_Lcfg.c	    61  #include "SchM_Com.h"
+; ..\Appl\GenData\Com_Lcfg.c	    62  
+; ..\Appl\GenData\Com_Lcfg.c	    63  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    64    LOCAL CONSTANT MACROS
+; ..\Appl\GenData\Com_Lcfg.c	    65  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    66  
+; ..\Appl\GenData\Com_Lcfg.c	    67  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    68    LOCAL FUNCTION MACROS
+; ..\Appl\GenData\Com_Lcfg.c	    69  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    70  
+; ..\Appl\GenData\Com_Lcfg.c	    71  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    72    LOCAL DATA TYPES AND STRUCTURES
+; ..\Appl\GenData\Com_Lcfg.c	    73  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    74  
+; ..\Appl\GenData\Com_Lcfg.c	    75  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    76    LOCAL DATA PROTOTYPES
+; ..\Appl\GenData\Com_Lcfg.c	    77  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    78  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    79    CONFIGURATION CLASS: PRE_COMPILE
+; ..\Appl\GenData\Com_Lcfg.c	    80    SECTION: LOCAL DATA PROTOTYPES
+; ..\Appl\GenData\Com_Lcfg.c	    81  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    82  
+; ..\Appl\GenData\Com_Lcfg.c	    83  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    84    CONFIGURATION CLASS: LINK
+; ..\Appl\GenData\Com_Lcfg.c	    85    SECTION: LOCAL DATA PROTOTYPES
+; ..\Appl\GenData\Com_Lcfg.c	    86  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    87  
+; ..\Appl\GenData\Com_Lcfg.c	    88  
+; ..\Appl\GenData\Com_Lcfg.c	    89  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    90    LOCAL DATA
+; ..\Appl\GenData\Com_Lcfg.c	    91  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    92  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    93    CONFIGURATION CLASS: PRE_COMPILE
+; ..\Appl\GenData\Com_Lcfg.c	    94    SECTION: LOCAL DATA
+; ..\Appl\GenData\Com_Lcfg.c	    95  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	    96  
+; ..\Appl\GenData\Com_Lcfg.c	    97  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	    98    CONFIGURATION CLASS: LINK
+; ..\Appl\GenData\Com_Lcfg.c	    99    SECTION: LOCAL DATA
+; ..\Appl\GenData\Com_Lcfg.c	   100  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   101  
+; ..\Appl\GenData\Com_Lcfg.c	   102  
+; ..\Appl\GenData\Com_Lcfg.c	   103  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   104    GLOBAL DATA
+; ..\Appl\GenData\Com_Lcfg.c	   105  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   106  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   107    CONFIGURATION CLASS: PRE_COMPILE
+; ..\Appl\GenData\Com_Lcfg.c	   108    SECTION: GLOBAL DATA
+; ..\Appl\GenData\Com_Lcfg.c	   109  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   110  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   111    Com_ConstValueUInt8
+; ..\Appl\GenData\Com_Lcfg.c	   112  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   113  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   114    \var    Com_ConstValueUInt8
+; ..\Appl\GenData\Com_Lcfg.c	   115    \brief  Optimized array of commonly used values like initial or invalid values. (BOOLEAN, UINT8)
+; ..\Appl\GenData\Com_Lcfg.c	   116  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   117  #define COM_START_SEC_CONST_8
+; ..\Appl\GenData\Com_Lcfg.c	   118  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   119  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   120  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   121  CONST(Com_ConstValueUInt8Type, COM_CONST) Com_ConstValueUInt8[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   122    /* Index     ConstValueUInt8      Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   123    /*     0 */            0x00u   /* [/ActiveEcuC/Com/ComConfig/sig_State_RearLeftDoor_omsg_Receive_oCAN00_84ad4140_RxInitValue, /ActiveEcuC/Com/ComConfig/sig_State_RearRightDoor_omsg_Receive_oCAN00_a8945098_RxInitValue] */
+; ..\Appl\GenData\Com_Lcfg.c	   124  };
+; ..\Appl\GenData\Com_Lcfg.c	   125  #define COM_STOP_SEC_CONST_8
+; ..\Appl\GenData\Com_Lcfg.c	   126  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   127  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   128  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   129  
+; ..\Appl\GenData\Com_Lcfg.c	   130  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   131    Com_IPduGroupInfo
+; ..\Appl\GenData\Com_Lcfg.c	   132  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   133  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   134    \var    Com_IPduGroupInfo
+; ..\Appl\GenData\Com_Lcfg.c	   135    \brief  Contains all I-Pdu Group relevant information
+; ..\Appl\GenData\Com_Lcfg.c	   136    \details
+; ..\Appl\GenData\Com_Lcfg.c	   137    Element                                    Description
+; ..\Appl\GenData\Com_Lcfg.c	   138    IPduGroupInfoToSubIPduGroupsIndStartIdx    the start index of the 0:n relation pointing to Com_IPduGroupInfoToSubIPduGroupsInd
+; ..\Appl\GenData\Com_Lcfg.c	   139    PartitionsRxStructIdx                      the index of the 0:1 relation pointing to Com_PartitionsRxStruct
+; ..\Appl\GenData\Com_Lcfg.c	   140    PartitionsTxStructIdx                      the index of the 0:1 relation pointing to Com_PartitionsTxStruct
+; ..\Appl\GenData\Com_Lcfg.c	   141    RxPduInfoIndEndIdx                         the end index of the 0:n relation pointing to Com_RxPduInfoInd
+; ..\Appl\GenData\Com_Lcfg.c	   142    RxPduInfoIndStartIdx                       the start index of the 0:n relation pointing to Com_RxPduInfoInd
+; ..\Appl\GenData\Com_Lcfg.c	   143    TxPduInfoIndEndIdx                         the end index of the 0:n relation pointing to Com_TxPduInfoInd
+; ..\Appl\GenData\Com_Lcfg.c	   144    TxPduInfoIndStartIdx                       the start index of the 0:n relation pointing to Com_TxPduInfoInd
+; ..\Appl\GenData\Com_Lcfg.c	   145  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   146  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   147  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   148  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   149  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   150  CONST(Com_IPduGroupInfoType, COM_CONST) Com_IPduGroupInfo[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   151      /* Index    IPduGroupInfoToSubIPduGroupsIndStartIdx  PartitionsRxStructIdx  PartitionsTxStructIdx  RxPduInfoIndEndIdx                        RxPduInfoIndStartIdx                        TxPduInfoIndEndIdx                        TxPduInfoIndStartIdx                              Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   152    { /*     0 */                                      0u,                    0u,                    0u,                                       1u,                                         0u, COM_NO_TXPDUINFOINDENDIDXOFIPDUGROUPINFO, COM_NO_TXPDUINFOINDSTARTIDXOFIPDUGROUPINFO },  /* [/ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Rx_4cbf71f7, /ActiveEcuC/Com/ComConfig/msg_Receive_oCAN00_2b456e3f_Rx] */
+; ..\Appl\GenData\Com_Lcfg.c	   153    { /*     1 */                                      1u,                    0u,                    0u, COM_NO_RXPDUINFOINDENDIDXOFIPDUGROUPINFO, COM_NO_RXPDUINFOINDSTARTIDXOFIPDUGROUPINFO,                                       5u,                                         0u }   /* [/ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, /ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx, /ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   154  };
+; ..\Appl\GenData\Com_Lcfg.c	   155  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   156  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   157  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   158  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   159  
+; ..\Appl\GenData\Com_Lcfg.c	   160  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   161    Com_IPduGroupInfoOfTxPduInfoInd
+; ..\Appl\GenData\Com_Lcfg.c	   162  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   163  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   164    \var    Com_IPduGroupInfoOfTxPduInfoInd
+; ..\Appl\GenData\Com_Lcfg.c	   165    \brief  the indexes of the 1:1 sorted relation pointing to Com_IPduGroupInfo
+; ..\Appl\GenData\Com_Lcfg.c	   166  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   167  #define COM_START_SEC_CONST_8
+; ..\Appl\GenData\Com_Lcfg.c	   168  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   169  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   170  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   171  CONST(Com_IPduGroupInfoOfTxPduInfoIndType, COM_CONST) Com_IPduGroupInfoOfTxPduInfoInd[5] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   172    /* Index     IPduGroupInfoOfTxPduInfoInd      Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   173    /*     0 */                           1u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   174    /*     1 */                           1u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   175    /*     2 */                           1u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   176    /*     3 */                           1u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   177    /*     4 */                           1u   /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   178  };
+; ..\Appl\GenData\Com_Lcfg.c	   179  #define COM_STOP_SEC_CONST_8
+; ..\Appl\GenData\Com_Lcfg.c	   180  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   181  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   182  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   183  
+; ..\Appl\GenData\Com_Lcfg.c	   184  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   185    Com_MainFunctionRxStruct
+; ..\Appl\GenData\Com_Lcfg.c	   186  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   187  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   188    \var    Com_MainFunctionRxStruct
+; ..\Appl\GenData\Com_Lcfg.c	   189    \details
+; ..\Appl\GenData\Com_Lcfg.c	   190    Element                                 Description
+; ..\Appl\GenData\Com_Lcfg.c	   191    RxPduInfoOfMainFunctionRxIndStartIdx    the start index of the 0:n relation pointing to Com_RxPduInfoOfMainFunctionRxInd
+; ..\Appl\GenData\Com_Lcfg.c	   192  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   193  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   194  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   195  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   196  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   197  CONST(Com_MainFunctionRxStructType, COM_CONST) Com_MainFunctionRxStruct[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   198      /* Index    RxPduInfoOfMainFunctionRxIndStartIdx        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   199    { /*     0 */                                   0u }   /* [ComMainFunctionRx] */
+; ..\Appl\GenData\Com_Lcfg.c	   200  };
+; ..\Appl\GenData\Com_Lcfg.c	   201  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   202  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   203  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   204  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   205  
+; ..\Appl\GenData\Com_Lcfg.c	   206  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   207    Com_MainFunctionTxStruct
+; ..\Appl\GenData\Com_Lcfg.c	   208  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   209  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   210    \var    Com_MainFunctionTxStruct
+; ..\Appl\GenData\Com_Lcfg.c	   211    \details
+; ..\Appl\GenData\Com_Lcfg.c	   212    Element                                   Description
+; ..\Appl\GenData\Com_Lcfg.c	   213    TxCyclicPduOfMainFunctionTxIndStartIdx    the start index of the 0:n relation pointing to Com_TxCyclicPduOfMainFunctionTxInd
+; ..\Appl\GenData\Com_Lcfg.c	   214    TxPduInfoOfMainFunctionTxIndStartIdx      the start index of the 0:n relation pointing to Com_TxPduInfoOfMainFunctionTxInd
+; ..\Appl\GenData\Com_Lcfg.c	   215  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   216  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   217  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   218  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   219  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   220  CONST(Com_MainFunctionTxStructType, COM_CONST) Com_MainFunctionTxStruct[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   221      /* Index    TxCyclicPduOfMainFunctionTxIndStartIdx  TxPduInfoOfMainFunctionTxIndStartIdx        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   222    { /*     0 */                                     0u,                                   0u }   /* [ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	   223  };
+; ..\Appl\GenData\Com_Lcfg.c	   224  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   225  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   226  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   227  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   228  
+; ..\Appl\GenData\Com_Lcfg.c	   229  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   230    Com_RxAccessInfo
+; ..\Appl\GenData\Com_Lcfg.c	   231  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   232  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   233    \var    Com_RxAccessInfo
+; ..\Appl\GenData\Com_Lcfg.c	   234    \brief  Contains all signal layout information necessary for signal access within an I-PDU.
+; ..\Appl\GenData\Com_Lcfg.c	   235    \details
+; ..\Appl\GenData\Com_Lcfg.c	   236    Element               Description
+; ..\Appl\GenData\Com_Lcfg.c	   237    DynSignal             TRUE if the Signal is a dynamic length signal (UINT8_DYN), FALSE otherwise.
+; ..\Appl\GenData\Com_Lcfg.c	   238    Buffer                the enum value of the according target of the 0:1 relation pointing to Com_RxSigBufferUInt8,Com_RxSigBufferUInt16,Com_RxSigBufferUInt32,Com_RxSigBufferUInt64,Com_RxSigBufferZeroBit,Com_RxSigBufferSInt8,Com_RxSigBufferSInt16,Com_RxSigBufferSInt32,Com_RxSigBufferSInt64,Com_RxSigBufferFloat32,Com_RxSigBufferFloat64
+; ..\Appl\GenData\Com_Lcfg.c	   239    BufferIdx             the index of the 0:1 relation pointing to Com_RxSigBufferUInt8,Com_RxSigBufferUInt16,Com_RxSigBufferUInt32,Com_RxSigBufferUInt64,Com_RxSigBufferZeroBit,Com_RxSigBufferSInt8,Com_RxSigBufferSInt16,Com_RxSigBufferSInt32,Com_RxSigBufferSInt64,Com_RxSigBufferFloat32,Com_RxSigBufferFloat64
+; ..\Appl\GenData\Com_Lcfg.c	   240    InitValueIdx          the index of the 0:1 relation pointing to Com_ConstValueUInt8,Com_ConstValueUInt16,Com_ConstValueUInt32,Com_ConstValueUInt64,Com_ConstValueSInt8,Com_ConstValueSInt16,Com_ConstValueSInt32,Com_ConstValueSInt64,Com_ConstValueFloat32,Com_ConstValueFloat64
+; ..\Appl\GenData\Com_Lcfg.c	   241    SignalLengthInByte    The length of the Signal/GroupSignal in Byte
+; ..\Appl\GenData\Com_Lcfg.c	   242  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   243  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   244  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   245  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   246  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   247  CONST(Com_RxAccessInfoType, COM_CONST) Com_RxAccessInfo[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   248      /* Index    DynSignal  Buffer                                     BufferIdx  InitValueIdx  SignalLengthInByte        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   249    { /*     0 */     FALSE, COM_RXSIGBUFFERUINT8_BUFFEROFRXACCESSINFO,        0u,           0u,                 1u },  /* [/ActiveEcuC/Com/ComConfig/sig_State_RearLeftDoor_omsg_Receive_oCAN00_84ad4140_Rx, /ActiveEcuC/Com/ComConfig/msg_Receive_oCAN00_2b456e3f_Rx] */
+; ..\Appl\GenData\Com_Lcfg.c	   250    { /*     1 */     FALSE, COM_RXSIGBUFFERUINT8_BUFFEROFRXACCESSINFO,        1u,           0u,                 1u }   /* [/ActiveEcuC/Com/ComConfig/sig_State_RearRightDoor_omsg_Receive_oCAN00_a8945098_Rx, /ActiveEcuC/Com/ComConfig/msg_Receive_oCAN00_2b456e3f_Rx] */
+; ..\Appl\GenData\Com_Lcfg.c	   251  };
+; ..\Appl\GenData\Com_Lcfg.c	   252  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   253  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   254  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   255  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   256  
+; ..\Appl\GenData\Com_Lcfg.c	   257  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   258    Com_RxPduInfo
+; ..\Appl\GenData\Com_Lcfg.c	   259  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   260  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   261    \var    Com_RxPduInfo
+; ..\Appl\GenData\Com_Lcfg.c	   262    \brief  Contains all relevant common information for Rx I-PDUs.
+; ..\Appl\GenData\Com_Lcfg.c	   263    \details
+; ..\Appl\GenData\Com_Lcfg.c	   264    Element                                Description
+; ..\Appl\GenData\Com_Lcfg.c	   265    HandleRxPduDeferredIdx                 the index of the 0:1 relation pointing to Com_HandleRxPduDeferred
+; ..\Appl\GenData\Com_Lcfg.c	   266    IPduGroupInfoOfRxPduInfoIndStartIdx    the start index of the 0:n relation pointing to Com_IPduGroupInfoOfRxPduInfoInd
+; ..\Appl\GenData\Com_Lcfg.c	   267    MainFunctionRxStructIdx                the index of the 0:1 relation pointing to Com_MainFunctionRxStruct
+; ..\Appl\GenData\Com_Lcfg.c	   268    RxAccessInfoIndStartIdx                the start index of the 0:n relation pointing to Com_RxAccessInfoInd
+; ..\Appl\GenData\Com_Lcfg.c	   269    RxDefPduBufferLength                   the number of relations pointing to Com_RxDefPduBuffer
+; ..\Appl\GenData\Com_Lcfg.c	   270    RxSigInfoStartIdx                      the start index of the 0:n relation pointing to Com_RxSigInfo
+; ..\Appl\GenData\Com_Lcfg.c	   271  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   272  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   273  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   274  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   275  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   276  CONST(Com_RxPduInfoType, COM_CONST) Com_RxPduInfo[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   277      /* Index    HandleRxPduDeferredIdx  IPduGroupInfoOfRxPduInfoIndStartIdx  MainFunctionRxStructIdx  RxAccessInfoIndStartIdx  RxDefPduBufferLength  RxSigInfoStartIdx        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   278    { /*     0 */                     0u,                                  0u,                      0u,                      0u,                   1u,                0u }   /* [/ActiveEcuC/Com/ComConfig/msg_Receive_oCAN00_2b456e3f_Rx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Rx_4cbf71f7, ComMainFunctionRx] */
+; ..\Appl\GenData\Com_Lcfg.c	   279  };
+; ..\Appl\GenData\Com_Lcfg.c	   280  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   281  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   282  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   283  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   284  
+; ..\Appl\GenData\Com_Lcfg.c	   285  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   286    Com_RxSigInfo
+; ..\Appl\GenData\Com_Lcfg.c	   287  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   288  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   289    \var    Com_RxSigInfo
+; ..\Appl\GenData\Com_Lcfg.c	   290    \brief  Contains all relevant information for Rx signals.
+; ..\Appl\GenData\Com_Lcfg.c	   291    \details
+; ..\Appl\GenData\Com_Lcfg.c	   292    Element     Description
+; ..\Appl\GenData\Com_Lcfg.c	   293    ValidDlc    Minimum length of PDU required to completely receive the signal or signal group.
+; ..\Appl\GenData\Com_Lcfg.c	   294  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   295  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   296  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   297  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   298  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   299  CONST(Com_RxSigInfoType, COM_CONST) Com_RxSigInfo[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   300      /* Index    ValidDlc        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   301    { /*     0 */       1u },  /* [/ActiveEcuC/Com/ComConfig/msg_Receive_oCAN00_2b456e3f_Rx] */
+; ..\Appl\GenData\Com_Lcfg.c	   302    { /*     1 */       1u }   /* [/ActiveEcuC/Com/ComConfig/msg_Receive_oCAN00_2b456e3f_Rx] */
+; ..\Appl\GenData\Com_Lcfg.c	   303  };
+; ..\Appl\GenData\Com_Lcfg.c	   304  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   305  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   306  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   307  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   308  
+; ..\Appl\GenData\Com_Lcfg.c	   309  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   310    Com_TxAccessInfo
+; ..\Appl\GenData\Com_Lcfg.c	   311  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   312  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   313    \var    Com_TxAccessInfo
+; ..\Appl\GenData\Com_Lcfg.c	   314    \brief  Contains all signal layout information necessary for signal access within an I-PDU.
+; ..\Appl\GenData\Com_Lcfg.c	   315    \details
+; ..\Appl\GenData\Com_Lcfg.c	   316    Element         Description
+; ..\Appl\GenData\Com_Lcfg.c	   317    TxSigInfoIdx    the index of the 0:1 relation pointing to Com_TxSigInfo
+; ..\Appl\GenData\Com_Lcfg.c	   318  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   319  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   320  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   321  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   322  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   323  CONST(Com_TxAccessInfoType, COM_CONST) Com_TxAccessInfo[55] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   324      /* Index    TxSigInfoIdx        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   325    { /*     0 */           0u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_AdcFilterAlpha_MxA2_omsg_MyECU_Lamp_oCAN00_4c48c598_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   326    { /*     1 */           1u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_AdcFilterEnabled_MxA2_omsg_MyECU_Lamp_oCAN00_bb1a16f8_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   327    { /*     2 */           2u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_AdcFilterReady_MxA2_omsg_MyECU_Lamp_oCAN00_dd22f986_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   328    { /*     3 */           3u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_AdcOffsetSampleCount_MxA2_omsg_MyECU_Lamp_oCAN00_98a9a073_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   329    { /*     4 */           4u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_AdcOffsetVo1_MxA2_omsg_MyECU_Lamp_oCAN00_7e4e712f_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   330    { /*     5 */           5u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_AdcOffsetVo2_MxA2_omsg_MyECU_Lamp_oCAN00_db461a43_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   331    { /*     6 */           6u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_AdcOffsetVo3_MxA2_omsg_MyECU_Lamp_oCAN00_b841c367_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   332    { /*     7 */           7u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_AdcSyncCounter_MxA2_omsg_MyECU_Lamp_oCAN00_8264daf6_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   333    { /*     8 */           8u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_AngleRaw_MxA0_omsg_MyECU_Lamp_oCAN00_7aec7e78_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   334    { /*     9 */           9u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_CurrentOffsetReady_MxA0_omsg_MyECU_Lamp_oCAN00_81ce1bc4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   335    { /*    10 */          10u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_CurrentOffsetSampleCount_MxA0_omsg_MyECU_Lamp_oCAN00_6c5c0a81_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   336    { /*    11 */          11u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_ElectricalAngle_rad_MxA0_omsg_MyECU_Lamp_oCAN00_5447ad3f_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   337    { /*    12 */          12u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_FaultIu_A_MxA1_omsg_MyECU_Lamp_oCAN00_99a1880c_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   338    { /*    13 */          13u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_FaultIv_A_MxA1_omsg_MyECU_Lamp_oCAN00_8a89b17f_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   339    { /*    14 */          14u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_FaultIw_A_MxA1_omsg_MyECU_Lamp_oCAN00_846e59ae_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   340    { /*    15 */          15u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_FaultPwm_MxA1_omsg_MyECU_Lamp_oCAN00_e43e797b_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   341    { /*    16 */          16u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_FaultReasonPwm_MxA1_omsg_MyECU_Lamp_oCAN00_32050898_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   342    { /*    17 */          17u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_FaultReason_MxA0_omsg_MyECU_Lamp_oCAN00_0576dfc4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   343    { /*    18 */          18u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_FaultVdc_V_MxA1_omsg_MyECU_Lamp_oCAN00_65447c06_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   344    { /*    19 */          19u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Fault_MxA0_omsg_MyECU_Lamp_oCAN00_3dd6add5_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   345    { /*    20 */          20u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_GateDriverOutputEnabled_MxA0_omsg_MyECU_Lamp_oCAN00_6012a7f7_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   346    { /*    21 */          21u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_GateDriverState_MxA0_omsg_MyECU_Lamp_oCAN00_e2e4dde6_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   347    { /*    22 */          22u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_IdRef_A_MxA0_omsg_MyECU_Lamp_oCAN00_832c12be_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   348    { /*    23 */          23u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Id_A_MxA0_omsg_MyECU_Lamp_oCAN00_888850f5_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   349    { /*    24 */          24u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_IqRef_A_MxA0_omsg_MyECU_Lamp_oCAN00_10111ef3_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   350    { /*    25 */          25u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Iq_A_MxA0_omsg_MyECU_Lamp_oCAN00_538e9670_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   351    { /*    26 */          26u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_IuFiltered_A_MxA2_omsg_MyECU_Lamp_oCAN00_edadce4b_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   352    { /*    27 */          27u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_IuRaw_A_MxA2_omsg_MyECU_Lamp_oCAN00_ca30e9cf_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   353    { /*    28 */          28u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Iu_A_MxA0_omsg_MyECU_Lamp_oCAN00_68113534_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   354    { /*    29 */          29u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_IvFiltered_A_MxA2_omsg_MyECU_Lamp_oCAN00_3e36d2b0_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   355    { /*    30 */          30u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_IvRaw_A_MxA2_omsg_MyECU_Lamp_oCAN00_a7b61a95_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   356    { /*    31 */          31u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Iv_A_MxA0_omsg_MyECU_Lamp_oCAN00_7b390c47_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   357    { /*    32 */          32u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_IwFiltered_A_MxA2_omsg_MyECU_Lamp_oCAN00_70bfd919_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   358    { /*    33 */          33u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_IwRaw_A_MxA2_omsg_MyECU_Lamp_oCAN00_83344ba3_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   359    { /*    34 */          34u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Iw_A_MxA0_omsg_MyECU_Lamp_oCAN00_75dee496_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   360    { /*    35 */          35u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_MechanicalSpeed_rpm_MxA0_omsg_MyECU_Lamp_oCAN00_04bd2026_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   361    { /*    36 */          36u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_MotorModePwm_MxA1_omsg_MyECU_Lamp_oCAN00_d3afa653_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   362    { /*    37 */          37u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_MotorMode_MxA0_omsg_MyECU_Lamp_oCAN00_aa7dbeca_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   363    { /*    38 */          38u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Page_MxA0_omsg_MyECU_Lamp_oCAN00_9aab60ea_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   364    { /*    39 */          39u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Page_MxA1_omsg_MyECU_Lamp_oCAN00_1b8e05cd_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   365    { /*    40 */          40u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Page_MxA2_omsg_MyECU_Lamp_oCAN00_4390ace5_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   366    { /*    41 */          41u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_PwmPeriod_MxA1_omsg_MyECU_Lamp_oCAN00_d26baca6_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   367    { /*    42 */          42u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_PwmU_MxA1_omsg_MyECU_Lamp_oCAN00_c33fb364_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   368    { /*    43 */          43u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_PwmV_MxA1_omsg_MyECU_Lamp_oCAN00_6637d808_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   369    { /*    44 */          44u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_PwmW_MxA1_omsg_MyECU_Lamp_oCAN00_0530012c_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   370    { /*    45 */          45u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Sequence_Mx_omsg_MyECU_Lamp_oCAN00_339a541d_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   371    { /*    46 */          46u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_ValphaRef_V_MxA1_omsg_MyECU_Lamp_oCAN00_dafa2b94_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   372    { /*    47 */          47u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_VbetaRef_V_MxA1_omsg_MyECU_Lamp_oCAN00_623c36a7_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   373    { /*    48 */          48u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_VdRef_V_MxA1_omsg_MyECU_Lamp_oCAN00_f0517bd4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   374    { /*    49 */          49u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_VdcMax_V_MxA1_omsg_MyECU_Lamp_oCAN00_8d3d4389_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   375      /* Index    TxSigInfoIdx        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   376    { /*    50 */          50u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Vdc_V_MxA0_omsg_MyECU_Lamp_oCAN00_6919810c_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   377    { /*    51 */          51u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Vinv_V_MxA2_omsg_MyECU_Lamp_oCAN00_bd00cc55_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   378    { /*    52 */          52u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_VqRef_V_MxA1_omsg_MyECU_Lamp_oCAN00_636c7799_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   379    { /*    53 */          53u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Vro_V_MxA2_omsg_MyECU_Lamp_oCAN00_a894d119_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   380    { /*    54 */          54u }   /* [/ActiveEcuC/Com/ComConfig/sig_RearInteriorLight_omsg_Transmit_oCAN00_49a633c1_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   381  };
+; ..\Appl\GenData\Com_Lcfg.c	   382  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   383  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   384  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   385  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   386  
+; ..\Appl\GenData\Com_Lcfg.c	   387  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   388    Com_TxCyclicPdu
+; ..\Appl\GenData\Com_Lcfg.c	   389  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   390  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   391    \var    Com_TxCyclicPdu
+; ..\Appl\GenData\Com_Lcfg.c	   392    \details
+; ..\Appl\GenData\Com_Lcfg.c	   393    Element         Description
+; ..\Appl\GenData\Com_Lcfg.c	   394    TxPduInfoIdx    the index of the 1:1 relation pointing to Com_TxPduInfo
+; ..\Appl\GenData\Com_Lcfg.c	   395  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   396  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   397  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   398  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   399  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   400  CONST(Com_TxCyclicPduType, COM_CONST) Com_TxCyclicPdu[4] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   401      /* Index    TxPduInfoIdx        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   402    { /*     0 */           0u },  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	   403    { /*     1 */           1u },  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	   404    { /*     2 */           2u },  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	   405    { /*     3 */           4u }   /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	   406  };
+; ..\Appl\GenData\Com_Lcfg.c	   407  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   408  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   409  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   410  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   411  
+; ..\Appl\GenData\Com_Lcfg.c	   412  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   413    Com_TxModeFalse
+; ..\Appl\GenData\Com_Lcfg.c	   414  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   415  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   416    \var    Com_TxModeFalse
+; ..\Appl\GenData\Com_Lcfg.c	   417    \brief  Contains all relevant information for transmission mode false.
+; ..\Appl\GenData\Com_Lcfg.c	   418    \details
+; ..\Appl\GenData\Com_Lcfg.c	   419    Element       Description
+; ..\Appl\GenData\Com_Lcfg.c	   420    TimePeriod    Cycle time factor.
+; ..\Appl\GenData\Com_Lcfg.c	   421  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   422  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   423  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   424  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   425  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   426  CONST(Com_TxModeFalseType, COM_CONST) Com_TxModeFalse[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   427      /* Index    TimePeriod        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   428    { /*     0 */        20u },  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   429    { /*     1 */         0u }   /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   430  };
+; ..\Appl\GenData\Com_Lcfg.c	   431  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   432  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   433  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   434  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   435  
+; ..\Appl\GenData\Com_Lcfg.c	   436  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   437    Com_TxModeInfo
+; ..\Appl\GenData\Com_Lcfg.c	   438  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   439  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   440    \var    Com_TxModeInfo
+; ..\Appl\GenData\Com_Lcfg.c	   441    \brief  Contains all relevant information for transmission mode handling.
+; ..\Appl\GenData\Com_Lcfg.c	   442    \details
+; ..\Appl\GenData\Com_Lcfg.c	   443    Element           Description
+; ..\Appl\GenData\Com_Lcfg.c	   444    InitMode          Initial transmission mode selector of the Tx I-PDU.
+; ..\Appl\GenData\Com_Lcfg.c	   445    TxModeFalseIdx    the index of the 1:1 relation pointing to Com_TxModeFalse
+; ..\Appl\GenData\Com_Lcfg.c	   446  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   447  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   448  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   449  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   450  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   451  CONST(Com_TxModeInfoType, COM_CONST) Com_TxModeInfo[5] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   452      /* Index    InitMode  TxModeFalseIdx        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   453    { /*     0 */     TRUE,             1u },  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   454    { /*     1 */     TRUE,             1u },  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   455    { /*     2 */     TRUE,             1u },  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   456    { /*     3 */     TRUE,             1u },  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   457    { /*     4 */     TRUE,             0u }   /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   458  };
+; ..\Appl\GenData\Com_Lcfg.c	   459  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   460  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   461  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   462  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   463  
+; ..\Appl\GenData\Com_Lcfg.c	   464  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   465    Com_TxModeTrue
+; ..\Appl\GenData\Com_Lcfg.c	   466  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   467  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   468    \var    Com_TxModeTrue
+; ..\Appl\GenData\Com_Lcfg.c	   469    \brief  Contains all relevant information for transmission mode true.
+; ..\Appl\GenData\Com_Lcfg.c	   470    \details
+; ..\Appl\GenData\Com_Lcfg.c	   471    Element       Description
+; ..\Appl\GenData\Com_Lcfg.c	   472    Periodic      TRUE if transmission mode contains a cyclic part.
+; ..\Appl\GenData\Com_Lcfg.c	   473    TimeOffset    Initial time offset factor for cyclic transmission.
+; ..\Appl\GenData\Com_Lcfg.c	   474    TimePeriod    Cycle time factor.
+; ..\Appl\GenData\Com_Lcfg.c	   475  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   476  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   477  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   478  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   479  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   480  CONST(Com_TxModeTrueType, COM_CONST) Com_TxModeTrue[5] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   481      /* Index    Periodic  TimeOffset  TimePeriod        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   482    { /*     0 */     TRUE,         1u,         3u },  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   483    { /*     1 */     TRUE,         2u,         3u },  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   484    { /*     2 */     TRUE,         3u,         3u },  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   485    { /*     3 */    FALSE,         1u,         0u },  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   486    { /*     4 */     TRUE,         1u,        20u }   /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   487  };
+; ..\Appl\GenData\Com_Lcfg.c	   488  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   489  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   490  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   491  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   492  
+; ..\Appl\GenData\Com_Lcfg.c	   493  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   494    Com_TxPduInfo
+; ..\Appl\GenData\Com_Lcfg.c	   495  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   496  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   497    \var    Com_TxPduInfo
+; ..\Appl\GenData\Com_Lcfg.c	   498    \brief  Contains all relevant information for Tx I-PDUs.
+; ..\Appl\GenData\Com_Lcfg.c	   499    \details
+; ..\Appl\GenData\Com_Lcfg.c	   500    Element                                Description
+; ..\Appl\GenData\Com_Lcfg.c	   501    ExternalId                             External ID used to call PduR_ComTransmit().
+; ..\Appl\GenData\Com_Lcfg.c	   502    IPduGroupInfoOfTxPduInfoIndStartIdx    the start index of the 0:n relation pointing to Com_IPduGroupInfoOfTxPduInfoInd
+; ..\Appl\GenData\Com_Lcfg.c	   503    PartitionsTxStructIdx                  the index of the 1:1 relation pointing to Com_PartitionsTxStruct
+; ..\Appl\GenData\Com_Lcfg.c	   504    TxBufferLength                         the number of relations pointing to Com_TxBuffer
+; ..\Appl\GenData\Com_Lcfg.c	   505    TxPduInitValueEndIdx                   the end index of the 0:n relation pointing to Com_TxPduInitValue
+; ..\Appl\GenData\Com_Lcfg.c	   506    TxPduInitValueStartIdx                 the start index of the 0:n relation pointing to Com_TxPduInitValue
+; ..\Appl\GenData\Com_Lcfg.c	   507  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   508  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   509  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   510  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   511  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   512  CONST(Com_TxPduInfoType, COM_CONST) Com_TxPduInfo[5] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   513      /* Index    ExternalId                               IPduGroupInfoOfTxPduInfoIndStartIdx  PartitionsTxStructIdx  TxBufferLength  TxPduInitValueEndIdx  TxPduInitValueStartIdx        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   514    { /*     0 */ PduRConf_PduRSrcPdu_PduRSrcPdu_991c8b02,                                  0u,                    0u,            32u,                  32u,                     0u },  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	   515    { /*     1 */ PduRConf_PduRSrcPdu_PduRSrcPdu_f7c31f09,                                  1u,                    0u,            32u,                  64u,                    32u },  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	   516    { /*     2 */ PduRConf_PduRSrcPdu_PduRSrcPdu_e44218bb,                                  2u,                    0u,            32u,                  96u,                    64u },  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	   517    { /*     3 */ PduRConf_PduRSrcPdu_PduRSrcPdu_289484a7,                                  3u,                    0u,            32u,                 128u,                    96u },  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	   518    { /*     4 */ PduRConf_PduRSrcPdu_PduRSrcPdu_087fd70d,                                  4u,                    0u,             1u,                 129u,                   128u }   /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	   519  };
+; ..\Appl\GenData\Com_Lcfg.c	   520  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   521  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   522  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   523  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   524  
+; ..\Appl\GenData\Com_Lcfg.c	   525  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   526    Com_TxPduInitValue
+; ..\Appl\GenData\Com_Lcfg.c	   527  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   528  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   529    \var    Com_TxPduInitValue
+; ..\Appl\GenData\Com_Lcfg.c	   530    \brief  Initial values used for Tx I-PDU buffer initialization.
+; ..\Appl\GenData\Com_Lcfg.c	   531  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   532  #define COM_START_SEC_CONST_8
+; ..\Appl\GenData\Com_Lcfg.c	   533  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   534  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   535  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   536  CONST(Com_TxPduInitValueType, COM_CONST) Com_TxPduInitValue[129] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   537    /* Index     TxPduInitValue      Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   538    /*     0 */           0xA0u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   539    /*     1 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   540    /*     2 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   541    /*     3 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   542    /*     4 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   543    /*     5 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   544    /*     6 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   545    /*     7 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   546    /*     8 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   547    /*     9 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   548    /*    10 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   549    /*    11 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   550    /*    12 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   551    /*    13 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   552    /*    14 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   553    /*    15 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   554    /*    16 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   555    /*    17 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   556    /*    18 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   557    /*    19 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   558    /*    20 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   559    /*    21 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   560    /*    22 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   561    /*    23 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   562    /*    24 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   563    /*    25 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   564    /*    26 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   565    /*    27 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   566    /*    28 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   567    /*    29 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   568    /*    30 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   569    /*    31 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   570    /*    32 */           0xA1u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   571    /*    33 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   572    /*    34 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   573    /*    35 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   574    /*    36 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   575    /*    37 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   576    /*    38 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   577    /*    39 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   578    /*    40 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   579    /*    41 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   580    /*    42 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   581    /*    43 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   582    /*    44 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   583    /*    45 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   584    /*    46 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   585    /*    47 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   586    /*    48 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   587    /*    49 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   588    /* Index     TxPduInitValue      Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   589    /*    50 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   590    /*    51 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   591    /*    52 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   592    /*    53 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   593    /*    54 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   594    /*    55 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   595    /*    56 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   596    /*    57 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   597    /*    58 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   598    /*    59 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   599    /*    60 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   600    /*    61 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   601    /*    62 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   602    /*    63 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   603    /*    64 */           0xA2u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   604    /*    65 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   605    /*    66 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   606    /*    67 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   607    /*    68 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   608    /*    69 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   609    /*    70 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   610    /*    71 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   611    /*    72 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   612    /*    73 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   613    /*    74 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   614    /*    75 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   615    /*    76 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   616    /*    77 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   617    /*    78 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   618    /*    79 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   619    /*    80 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   620    /*    81 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   621    /*    82 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   622    /*    83 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   623    /*    84 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   624    /*    85 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   625    /*    86 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   626    /*    87 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   627    /*    88 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   628    /*    89 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   629    /*    90 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   630    /*    91 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   631    /*    92 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   632    /*    93 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   633    /*    94 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   634    /*    95 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   635    /*    96 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   636    /*    97 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   637    /*    98 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   638    /*    99 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   639    /* Index     TxPduInitValue      Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   640    /*   100 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   641    /*   101 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   642    /*   102 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   643    /*   103 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   644    /*   104 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   645    /*   105 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   646    /*   106 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   647    /*   107 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   648    /*   108 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   649    /*   109 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   650    /*   110 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   651    /*   111 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   652    /*   112 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   653    /*   113 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   654    /*   114 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   655    /*   115 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   656    /*   116 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   657    /*   117 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   658    /*   118 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   659    /*   119 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   660    /*   120 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   661    /*   121 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   662    /*   122 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   663    /*   123 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   664    /*   124 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   665    /*   125 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   666    /*   126 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   667    /*   127 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   668    /*   128 */           0x00u   /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   669  };
+; ..\Appl\GenData\Com_Lcfg.c	   670  #define COM_STOP_SEC_CONST_8
+; ..\Appl\GenData\Com_Lcfg.c	   671  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   672  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   673  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   674  
+; ..\Appl\GenData\Com_Lcfg.c	   675  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   676    Com_TxSigInfo
+; ..\Appl\GenData\Com_Lcfg.c	   677  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   678  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   679    \var    Com_TxSigInfo
+; ..\Appl\GenData\Com_Lcfg.c	   680    \brief  Contains all relevant information for Tx signals signals.
+; ..\Appl\GenData\Com_Lcfg.c	   681    \details
+; ..\Appl\GenData\Com_Lcfg.c	   682    Element                   Description
+; ..\Appl\GenData\Com_Lcfg.c	   683    DynSignal                 TRUE if the Signal is a dynamic length signal (UINT8_DYN), FALSE otherwise.
+; ..\Appl\GenData\Com_Lcfg.c	   684    ApplType                  Application data type.
+; ..\Appl\GenData\Com_Lcfg.c	   685    BitLength                 Bit length of the signal or group signal.
+; ..\Appl\GenData\Com_Lcfg.c	   686    BitPosition               Little endian bit position of the signal or group signal within the I-PDU.
+; ..\Appl\GenData\Com_Lcfg.c	   687    ByteLength                Byte length of the signal or group signal.
+; ..\Appl\GenData\Com_Lcfg.c	   688    StartByteInPduPosition    Start Byte position of the signal or group signal within the I-PDU.
+; ..\Appl\GenData\Com_Lcfg.c	   689    TxBufferEndIdx            the end index of the 0:n relation pointing to Com_TxBuffer
+; ..\Appl\GenData\Com_Lcfg.c	   690    TxBufferStartIdx          the start index of the 0:n relation pointing to Com_TxBuffer
+; ..\Appl\GenData\Com_Lcfg.c	   691    TxPduInfoIdx              the index of the 1:1 relation pointing to Com_TxPduInfo
+; ..\Appl\GenData\Com_Lcfg.c	   692  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   693  #define COM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   694  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   695  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   696  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   697  CONST(Com_TxSigInfoType, COM_CONST) Com_TxSigInfo[55] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   698      /* Index    DynSignal  ApplType                        BitLength  BitPosition  ByteLength  StartByteInPduPosition  TxBufferEndIdx  TxBufferStartIdx  TxPduInfoIdx        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   699    { /*     0 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        8u,         24u,         1u,                     3u,            68u,              67u,           2u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_AdcFilterAlpha_MxA2_omsg_MyECU_Lamp_oCAN00_4c48c598_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   700    { /*     1 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        8u,          8u,         1u,                     1u,            66u,              65u,           2u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_AdcFilterEnabled_MxA2_omsg_MyECU_Lamp_oCAN00_bb1a16f8_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   701    { /*     2 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        8u,         16u,         1u,                     2u,            67u,              66u,           2u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_AdcFilterReady_MxA2_omsg_MyECU_Lamp_oCAN00_dd22f986_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   702    { /*     3 */     FALSE, COM_UINT16_APPLTYPEOFTXSIGINFO,       16u,        240u,         2u,                    30u,            96u,              94u,           2u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_AdcOffsetSampleCount_MxA2_omsg_MyECU_Lamp_oCAN00_98a9a073_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   703    { /*     4 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,        144u,         2u,                    18u,            84u,              82u,           2u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_AdcOffsetVo1_MxA2_omsg_MyECU_Lamp_oCAN00_7e4e712f_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   704    { /*     5 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,        160u,         2u,                    20u,            86u,              84u,           2u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_AdcOffsetVo2_MxA2_omsg_MyECU_Lamp_oCAN00_db461a43_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   705    { /*     6 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,        176u,         2u,                    22u,            88u,              86u,           2u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_AdcOffsetVo3_MxA2_omsg_MyECU_Lamp_oCAN00_b841c367_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   706    { /*     7 */     FALSE, COM_UINT16_APPLTYPEOFTXSIGINFO,       16u,        224u,         2u,                    28u,            94u,              92u,           2u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_AdcSyncCounter_MxA2_omsg_MyECU_Lamp_oCAN00_8264daf6_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   707    { /*     8 */     FALSE, COM_UINT16_APPLTYPEOFTXSIGINFO,       16u,        176u,         2u,                    22u,            24u,              22u,           0u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_AngleRaw_MxA0_omsg_MyECU_Lamp_oCAN00_7aec7e78_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   708    { /*     9 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        8u,        208u,         1u,                    26u,            27u,              26u,           0u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_CurrentOffsetReady_MxA0_omsg_MyECU_Lamp_oCAN00_81ce1bc4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   709    { /*    10 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        8u,        216u,         1u,                    27u,            28u,              27u,           0u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_CurrentOffsetSampleCount_MxA0_omsg_MyECU_Lamp_oCAN00_6c5c0a81_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   710    { /*    11 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,        192u,         2u,                    24u,            26u,              24u,           0u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_ElectricalAngle_rad_MxA0_omsg_MyECU_Lamp_oCAN00_5447ad3f_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   711    { /*    12 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,        192u,         2u,                    24u,            58u,              56u,           1u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_FaultIu_A_MxA1_omsg_MyECU_Lamp_oCAN00_99a1880c_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   712    { /*    13 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,        208u,         2u,                    26u,            60u,              58u,           1u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_FaultIv_A_MxA1_omsg_MyECU_Lamp_oCAN00_8a89b17f_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   713    { /*    14 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,        224u,         2u,                    28u,            62u,              60u,           1u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_FaultIw_A_MxA1_omsg_MyECU_Lamp_oCAN00_846e59ae_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   714    { /*    15 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        8u,         16u,         1u,                     2u,            35u,              34u,           1u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_FaultPwm_MxA1_omsg_MyECU_Lamp_oCAN00_e43e797b_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   715    { /*    16 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        8u,         24u,         1u,                     3u,            36u,              35u,           1u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_FaultReasonPwm_MxA1_omsg_MyECU_Lamp_oCAN00_32050898_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   716    { /*    17 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        8u,         24u,         1u,                     3u,             4u,               3u,           0u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_FaultReason_MxA0_omsg_MyECU_Lamp_oCAN00_0576dfc4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   717    { /*    18 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,        240u,         2u,                    30u,            64u,              62u,           1u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_FaultVdc_V_MxA1_omsg_MyECU_Lamp_oCAN00_65447c06_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   718    { /*    19 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        8u,         16u,         1u,                     2u,             3u,               2u,           0u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Fault_MxA0_omsg_MyECU_Lamp_oCAN00_3dd6add5_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   719    { /*    20 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        8u,        248u,         1u,                    31u,            32u,              31u,           0u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_GateDriverOutputEnabled_MxA0_omsg_MyECU_Lamp_oCAN00_6012a7f7_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   720    { /*    21 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        8u,        240u,         1u,                    30u,            31u,              30u,           0u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_GateDriverState_MxA0_omsg_MyECU_Lamp_oCAN00_e2e4dde6_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   721    { /*    22 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,         48u,         2u,                     6u,             8u,               6u,           0u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_IdRef_A_MxA0_omsg_MyECU_Lamp_oCAN00_832c12be_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   722    { /*    23 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,         80u,         2u,                    10u,            12u,              10u,           0u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Id_A_MxA0_omsg_MyECU_Lamp_oCAN00_888850f5_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   723    { /*    24 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,         64u,         2u,                     8u,            10u,               8u,           0u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_IqRef_A_MxA0_omsg_MyECU_Lamp_oCAN00_10111ef3_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   724    { /*    25 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,         96u,         2u,                    12u,            14u,              12u,           0u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Iq_A_MxA0_omsg_MyECU_Lamp_oCAN00_538e9670_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   725    { /*    26 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,         96u,         2u,                    12u,            78u,              76u,           2u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_IuFiltered_A_MxA2_omsg_MyECU_Lamp_oCAN00_edadce4b_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   726    { /*    27 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,         48u,         2u,                     6u,            72u,              70u,           2u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_IuRaw_A_MxA2_omsg_MyECU_Lamp_oCAN00_ca30e9cf_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   727    { /*    28 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,        112u,         2u,                    14u,            16u,              14u,           0u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Iu_A_MxA0_omsg_MyECU_Lamp_oCAN00_68113534_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   728    { /*    29 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,        112u,         2u,                    14u,            80u,              78u,           2u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_IvFiltered_A_MxA2_omsg_MyECU_Lamp_oCAN00_3e36d2b0_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   729    { /*    30 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,         64u,         2u,                     8u,            74u,              72u,           2u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_IvRaw_A_MxA2_omsg_MyECU_Lamp_oCAN00_a7b61a95_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   730    { /*    31 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,        128u,         2u,                    16u,            18u,              16u,           0u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Iv_A_MxA0_omsg_MyECU_Lamp_oCAN00_7b390c47_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   731    { /*    32 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,        128u,         2u,                    16u,            82u,              80u,           2u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_IwFiltered_A_MxA2_omsg_MyECU_Lamp_oCAN00_70bfd919_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   732    { /*    33 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,         80u,         2u,                    10u,            76u,              74u,           2u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_IwRaw_A_MxA2_omsg_MyECU_Lamp_oCAN00_83344ba3_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   733    { /*    34 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,        144u,         2u,                    18u,            20u,              18u,           0u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Iw_A_MxA0_omsg_MyECU_Lamp_oCAN00_75dee496_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   734    { /*    35 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,        224u,         2u,                    28u,            30u,              28u,           0u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_MechanicalSpeed_rpm_MxA0_omsg_MyECU_Lamp_oCAN00_04bd2026_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   735    { /*    36 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        8u,          8u,         1u,                     1u,            34u,              33u,           1u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_MotorModePwm_MxA1_omsg_MyECU_Lamp_oCAN00_d3afa653_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   736    { /*    37 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        8u,          8u,         1u,                     1u,             2u,               1u,           0u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_MotorMode_MxA0_omsg_MyECU_Lamp_oCAN00_aa7dbeca_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   737    { /*    38 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        8u,          0u,         1u,                     0u,             1u,               0u,           0u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Page_MxA0_omsg_MyECU_Lamp_oCAN00_9aab60ea_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   738    { /*    39 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        8u,          0u,         1u,                     0u,            33u,              32u,           1u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Page_MxA1_omsg_MyECU_Lamp_oCAN00_1b8e05cd_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   739    { /*    40 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        8u,          0u,         1u,                     0u,            65u,              64u,           2u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Page_MxA2_omsg_MyECU_Lamp_oCAN00_4390ace5_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   740    { /*    41 */     FALSE, COM_UINT16_APPLTYPEOFTXSIGINFO,       16u,        160u,         2u,                    20u,            54u,              52u,           1u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_PwmPeriod_MxA1_omsg_MyECU_Lamp_oCAN00_d26baca6_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   741    { /*    42 */     FALSE, COM_UINT16_APPLTYPEOFTXSIGINFO,       16u,        112u,         2u,                    14u,            48u,              46u,           1u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_PwmU_MxA1_omsg_MyECU_Lamp_oCAN00_c33fb364_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   742    { /*    43 */     FALSE, COM_UINT16_APPLTYPEOFTXSIGINFO,       16u,        128u,         2u,                    16u,            50u,              48u,           1u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_PwmV_MxA1_omsg_MyECU_Lamp_oCAN00_6637d808_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   743    { /*    44 */     FALSE, COM_UINT16_APPLTYPEOFTXSIGINFO,       16u,        144u,         2u,                    18u,            52u,              50u,           1u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_PwmW_MxA1_omsg_MyECU_Lamp_oCAN00_0530012c_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   744    { /*    45 */     FALSE, COM_UINT16_APPLTYPEOFTXSIGINFO,       16u,         32u,         2u,                     4u,           102u,             100u,           3u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Sequence_Mx_omsg_MyECU_Lamp_oCAN00_339a541d_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   745    { /*    46 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,         80u,         2u,                    10u,            44u,              42u,           1u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_ValphaRef_V_MxA1_omsg_MyECU_Lamp_oCAN00_dafa2b94_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   746    { /*    47 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,         96u,         2u,                    12u,            46u,              44u,           1u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_VbetaRef_V_MxA1_omsg_MyECU_Lamp_oCAN00_623c36a7_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   747    { /*    48 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,         48u,         2u,                     6u,            40u,              38u,           1u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_VdRef_V_MxA1_omsg_MyECU_Lamp_oCAN00_f0517bd4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   748    { /*    49 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,        176u,         2u,                    22u,            56u,              54u,           1u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_VdcMax_V_MxA1_omsg_MyECU_Lamp_oCAN00_8d3d4389_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   749      /* Index    DynSignal  ApplType                        BitLength  BitPosition  ByteLength  StartByteInPduPosition  TxBufferEndIdx  TxBufferStartIdx  TxPduInfoIdx        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   750    { /*    50 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,        160u,         2u,                    20u,            22u,              20u,           0u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Vdc_V_MxA0_omsg_MyECU_Lamp_oCAN00_6919810c_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   751    { /*    51 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,        208u,         2u,                    26u,            92u,              90u,           2u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Vinv_V_MxA2_omsg_MyECU_Lamp_oCAN00_bd00cc55_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   752    { /*    52 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,         64u,         2u,                     8u,            42u,              40u,           1u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_VqRef_V_MxA1_omsg_MyECU_Lamp_oCAN00_636c7799_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   753    { /*    53 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,        192u,         2u,                    24u,            90u,              88u,           2u },  /* [/ActiveEcuC/Com/ComConfig/MotorFoc_Vro_V_MxA2_omsg_MyECU_Lamp_oCAN00_a894d119_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   754    { /*    54 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        1u,          0u,         0u,                     0u,           129u,             128u,           4u }   /* [/ActiveEcuC/Com/ComConfig/sig_RearInteriorLight_omsg_Transmit_oCAN00_49a633c1_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   755  };
+; ..\Appl\GenData\Com_Lcfg.c	   756  #define COM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Com_Lcfg.c	   757  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   758  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   759  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   760  
+; ..\Appl\GenData\Com_Lcfg.c	   761  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   762    Com_CurrentTxMode
+; ..\Appl\GenData\Com_Lcfg.c	   763  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   764  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   765    \var    Com_CurrentTxMode
+; ..\Appl\GenData\Com_Lcfg.c	   766    \brief  Current transmission mode state of all Tx I-PDUs.
+; ..\Appl\GenData\Com_Lcfg.c	   767  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   768  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   769  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   770  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   771  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   772  VAR(Com_CurrentTxModeUType, COM_VAR_NO_INIT) Com_CurrentTxMode;  /* PRQA S 0759, 1514, 1533 */  /* MD_CSL_Union, MD_CSL_ObjectOnlyAccessedOnce, MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   773    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   774    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   775    /*     1 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   776    /*     2 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   777    /*     3 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   778    /*     4 */  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   779  
+; ..\Appl\GenData\Com_Lcfg.c	   780  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   781  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   782  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   783  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   784  
+; ..\Appl\GenData\Com_Lcfg.c	   785  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   786    Com_CycleTimeCnt
+; ..\Appl\GenData\Com_Lcfg.c	   787  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   788  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   789    \var    Com_CycleTimeCnt
+; ..\Appl\GenData\Com_Lcfg.c	   790    \brief  Current counter value of cyclic transmission.
+; ..\Appl\GenData\Com_Lcfg.c	   791  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   792  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   793  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   794  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   795  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   796  VAR(Com_CycleTimeCntUType, COM_VAR_NO_INIT) Com_CycleTimeCnt;  /* PRQA S 0759, 1514, 1533 */  /* MD_CSL_Union, MD_CSL_ObjectOnlyAccessedOnce, MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   797    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   798    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   799    /*     1 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   800    /*     2 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   801    /*     3 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   802    /*     4 */  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   803  
+; ..\Appl\GenData\Com_Lcfg.c	   804  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   805  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   806  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   807  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   808  
+; ..\Appl\GenData\Com_Lcfg.c	   809  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   810    Com_CyclicSendRequest
+; ..\Appl\GenData\Com_Lcfg.c	   811  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   812  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   813    \var    Com_CyclicSendRequest
+; ..\Appl\GenData\Com_Lcfg.c	   814    \brief  Cyclic send request flag used to indicate cyclic transmission mode for all Tx I-PDU.
+; ..\Appl\GenData\Com_Lcfg.c	   815  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   816  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   817  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   818  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   819  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   820  VAR(Com_CyclicSendRequestUType, COM_VAR_NO_INIT) Com_CyclicSendRequest;  /* PRQA S 0759, 1514, 1533 */  /* MD_CSL_Union, MD_CSL_ObjectOnlyAccessedOnce, MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   821    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   822    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   823    /*     1 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   824    /*     2 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   825    /*     3 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   826    /*     4 */  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   827  
+; ..\Appl\GenData\Com_Lcfg.c	   828  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   829  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   830  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   831  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   832  
+; ..\Appl\GenData\Com_Lcfg.c	   833  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   834    Com_HandleRxPduDeferred
+; ..\Appl\GenData\Com_Lcfg.c	   835  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   836  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   837    \var    Com_HandleRxPduDeferred
+; ..\Appl\GenData\Com_Lcfg.c	   838    \brief  Array indicating received Rx I-PDUs to be processed deferred within the next call of Com_MainfunctionRx().
+; ..\Appl\GenData\Com_Lcfg.c	   839  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   840  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   841  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   842  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   843  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   844  VAR(Com_HandleRxPduDeferredUType, COM_VAR_NO_INIT) Com_HandleRxPduDeferred;  /* PRQA S 0759, 1514, 1533 */  /* MD_CSL_Union, MD_CSL_ObjectOnlyAccessedOnce, MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   845    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   846    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_Receive_oCAN00_2b456e3f_Rx] */
+; ..\Appl\GenData\Com_Lcfg.c	   847  
+; ..\Appl\GenData\Com_Lcfg.c	   848  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   849  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   850  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   851  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   852  
+; ..\Appl\GenData\Com_Lcfg.c	   853  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   854    Com_IPduGroupState
+; ..\Appl\GenData\Com_Lcfg.c	   855  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   856  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   857  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   858  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   859  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   860  VAR(Com_IPduGroupStateType, COM_VAR_NO_INIT) Com_IPduGroupState[2];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   861    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   862    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Rx_4cbf71f7, /ActiveEcuC/Com/ComConfig/msg_Receive_oCAN00_2b456e3f_Rx] */
+; ..\Appl\GenData\Com_Lcfg.c	   863    /*     1 */  /* [/ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, /ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx, /ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   864  
+; ..\Appl\GenData\Com_Lcfg.c	   865  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   866  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   867  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   868  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   869  
+; ..\Appl\GenData\Com_Lcfg.c	   870  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   871    Com_Initialized
+; ..\Appl\GenData\Com_Lcfg.c	   872  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   873  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   874    \var    Com_Initialized
+; ..\Appl\GenData\Com_Lcfg.c	   875    \brief  Initialization state of Com. TRUE, if Com_Init() has been called, else FALSE.
+; ..\Appl\GenData\Com_Lcfg.c	   876  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   877  #define COM_START_SEC_VAR_CLEARED_8
+; ..\Appl\GenData\Com_Lcfg.c	   878  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   879  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   880  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   881  VAR(Com_InitializedType, COM_VAR_CLEARED) Com_Initialized = FALSE;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   882  #define COM_STOP_SEC_VAR_CLEARED_8
+; ..\Appl\GenData\Com_Lcfg.c	   883  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   884  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   885  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   886  
+; ..\Appl\GenData\Com_Lcfg.c	   887  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   888    Com_RxDefPduBuffer
+; ..\Appl\GenData\Com_Lcfg.c	   889  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   890  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   891    \var    Com_RxDefPduBuffer
+; ..\Appl\GenData\Com_Lcfg.c	   892    \brief  Rx I-PDU buffer for deferred signal processing.
+; ..\Appl\GenData\Com_Lcfg.c	   893  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   894  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   895  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   896  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   897  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   898  VAR(Com_RxDefPduBufferUType, COM_VAR_NO_INIT) Com_RxDefPduBuffer;  /* PRQA S 0759, 1514, 1533 */  /* MD_CSL_Union, MD_CSL_ObjectOnlyAccessedOnce, MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   899    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   900    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_Receive_oCAN00_2b456e3f_Rx] */
+; ..\Appl\GenData\Com_Lcfg.c	   901  
+; ..\Appl\GenData\Com_Lcfg.c	   902  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   903  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   904  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   905  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   906  
+; ..\Appl\GenData\Com_Lcfg.c	   907  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   908    Com_RxIPduGroupISRLockCounter
+; ..\Appl\GenData\Com_Lcfg.c	   909  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   910  #define COM_START_SEC_VAR_NO_INIT_16
+; ..\Appl\GenData\Com_Lcfg.c	   911  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   912  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   913  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   914  VAR(Com_RxIPduGroupISRLockCounterUType, COM_VAR_NO_INIT) Com_RxIPduGroupISRLockCounter;  /* PRQA S 0759, 1514, 1533 */  /* MD_CSL_Union, MD_CSL_ObjectOnlyAccessedOnce, MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   915    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   916    /*     0 */  /* [noPartition] */
+; ..\Appl\GenData\Com_Lcfg.c	   917  
+; ..\Appl\GenData\Com_Lcfg.c	   918  #define COM_STOP_SEC_VAR_NO_INIT_16
+; ..\Appl\GenData\Com_Lcfg.c	   919  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   920  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   921  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   922  
+; ..\Appl\GenData\Com_Lcfg.c	   923  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   924    Com_RxMainFunctionProcessingISRLockCounter
+; ..\Appl\GenData\Com_Lcfg.c	   925  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   926  #define COM_START_SEC_VAR_NO_INIT_16
+; ..\Appl\GenData\Com_Lcfg.c	   927  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   928  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   929  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   930  VAR(Com_RxMainFunctionProcessingISRLockCounterUType, COM_VAR_NO_INIT) Com_RxMainFunctionProcessingISRLockCounter;  /* PRQA S 0759, 1514, 1533 */  /* MD_CSL_Union, MD_CSL_ObjectOnlyAccessedOnce, MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   931    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   932    /*     0 */  /* [ComMainFunctionRx] */
+; ..\Appl\GenData\Com_Lcfg.c	   933  
+; ..\Appl\GenData\Com_Lcfg.c	   934  #define COM_STOP_SEC_VAR_NO_INIT_16
+; ..\Appl\GenData\Com_Lcfg.c	   935  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   936  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   937  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   938  
+; ..\Appl\GenData\Com_Lcfg.c	   939  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   940    Com_RxPduGrpActive
+; ..\Appl\GenData\Com_Lcfg.c	   941  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   942  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   943    \var    Com_RxPduGrpActive
+; ..\Appl\GenData\Com_Lcfg.c	   944    \brief  Rx I-PDU based state (started/stopped) of the corresponding I-PDU-Group.
+; ..\Appl\GenData\Com_Lcfg.c	   945  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   946  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   947  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   948  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   949  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   950  VAR(Com_RxPduGrpActiveType, COM_VAR_NO_INIT) Com_RxPduGrpActive[1];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   951    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   952    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_Receive_oCAN00_2b456e3f_Rx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Rx_4cbf71f7, ComMainFunctionRx] */
+; ..\Appl\GenData\Com_Lcfg.c	   953  
+; ..\Appl\GenData\Com_Lcfg.c	   954  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   955  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   956  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   957  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   958  
+; ..\Appl\GenData\Com_Lcfg.c	   959  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   960    Com_RxSigBufferUInt8
+; ..\Appl\GenData\Com_Lcfg.c	   961  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   962  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   963    \var    Com_RxSigBufferUInt8
+; ..\Appl\GenData\Com_Lcfg.c	   964    \brief  Rx Signal and Group Signal Buffer. (BOOLEAN, UINT8)
+; ..\Appl\GenData\Com_Lcfg.c	   965  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   966  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   967  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   968  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   969  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   970  VAR(Com_RxSigBufferUInt8Type, COM_VAR_NO_INIT) Com_RxSigBufferUInt8[2];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   971    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   972    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/sig_State_RearLeftDoor_omsg_Receive_oCAN00_84ad4140_Rx, /ActiveEcuC/Com/ComConfig/sig_State_RearLeftDoor_omsg_Receive_oCAN00_84ad4140_Rx_RxSignalBufferRouting] */
+; ..\Appl\GenData\Com_Lcfg.c	   973    /*     1 */  /* [/ActiveEcuC/Com/ComConfig/sig_State_RearRightDoor_omsg_Receive_oCAN00_a8945098_Rx, /ActiveEcuC/Com/ComConfig/sig_State_RearRightDoor_omsg_Receive_oCAN00_a8945098_Rx_RxSignalBufferRouting] */
+; ..\Appl\GenData\Com_Lcfg.c	   974  
+; ..\Appl\GenData\Com_Lcfg.c	   975  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   976  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   977  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   978  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   979  
+; ..\Appl\GenData\Com_Lcfg.c	   980  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	   981    Com_TransmitRequest
+; ..\Appl\GenData\Com_Lcfg.c	   982  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	   983  /** 
+; ..\Appl\GenData\Com_Lcfg.c	   984    \var    Com_TransmitRequest
+; ..\Appl\GenData\Com_Lcfg.c	   985    \brief  Transmit request flag used for decoupled Tx I-PDU tranmission.
+; ..\Appl\GenData\Com_Lcfg.c	   986  */ 
+; ..\Appl\GenData\Com_Lcfg.c	   987  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	   988  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	   989  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	   990  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	   991  VAR(Com_TransmitRequestUType, COM_VAR_NO_INIT) Com_TransmitRequest;  /* PRQA S 0759, 1514, 1533 */  /* MD_CSL_Union, MD_CSL_ObjectOnlyAccessedOnce, MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	   992    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	   993    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   994    /*     1 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   995    /*     2 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   996    /*     3 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   997    /*     4 */  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	   998  
+; ..\Appl\GenData\Com_Lcfg.c	   999  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	  1000  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	  1001  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	  1002  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	  1003  
+; ..\Appl\GenData\Com_Lcfg.c	  1004  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	  1005    Com_TxBuffer
+; ..\Appl\GenData\Com_Lcfg.c	  1006  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	  1007  /** 
+; ..\Appl\GenData\Com_Lcfg.c	  1008    \var    Com_TxBuffer
+; ..\Appl\GenData\Com_Lcfg.c	  1009    \brief  Shared uint8 buffer for Tx I-PDUs and ComSignalGroup shadow buffer.
+; ..\Appl\GenData\Com_Lcfg.c	  1010  */ 
+; ..\Appl\GenData\Com_Lcfg.c	  1011  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	  1012  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	  1013  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	  1014  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	  1015  VAR(Com_TxBufferType, COM_VAR_NO_INIT) Com_TxBuffer[129];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	  1016    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	  1017    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_Page_MxA0_omsg_MyECU_Lamp_oCAN00_9aab60ea_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1018    /*     1 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_MotorMode_MxA0_omsg_MyECU_Lamp_oCAN00_aa7dbeca_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1019    /*     2 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_Fault_MxA0_omsg_MyECU_Lamp_oCAN00_3dd6add5_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1020    /*     3 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_FaultReason_MxA0_omsg_MyECU_Lamp_oCAN00_0576dfc4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1021    /*     4 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1022    /*     5 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1023    /*     6 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_IdRef_A_MxA0_omsg_MyECU_Lamp_oCAN00_832c12be_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1024    /*     7 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_IdRef_A_MxA0_omsg_MyECU_Lamp_oCAN00_832c12be_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1025    /*     8 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_IqRef_A_MxA0_omsg_MyECU_Lamp_oCAN00_10111ef3_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1026    /*     9 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_IqRef_A_MxA0_omsg_MyECU_Lamp_oCAN00_10111ef3_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1027    /*    10 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_Id_A_MxA0_omsg_MyECU_Lamp_oCAN00_888850f5_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1028    /*    11 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_Id_A_MxA0_omsg_MyECU_Lamp_oCAN00_888850f5_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1029    /*    12 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_Iq_A_MxA0_omsg_MyECU_Lamp_oCAN00_538e9670_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1030    /*    13 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_Iq_A_MxA0_omsg_MyECU_Lamp_oCAN00_538e9670_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1031    /*    14 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_Iu_A_MxA0_omsg_MyECU_Lamp_oCAN00_68113534_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1032    /*    15 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_Iu_A_MxA0_omsg_MyECU_Lamp_oCAN00_68113534_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1033    /*    16 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_Iv_A_MxA0_omsg_MyECU_Lamp_oCAN00_7b390c47_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1034    /*    17 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_Iv_A_MxA0_omsg_MyECU_Lamp_oCAN00_7b390c47_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1035    /*    18 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_Iw_A_MxA0_omsg_MyECU_Lamp_oCAN00_75dee496_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1036    /*    19 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_Iw_A_MxA0_omsg_MyECU_Lamp_oCAN00_75dee496_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1037    /*    20 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_Vdc_V_MxA0_omsg_MyECU_Lamp_oCAN00_6919810c_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1038    /*    21 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_Vdc_V_MxA0_omsg_MyECU_Lamp_oCAN00_6919810c_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1039    /*    22 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_AngleRaw_MxA0_omsg_MyECU_Lamp_oCAN00_7aec7e78_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1040    /*    23 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_AngleRaw_MxA0_omsg_MyECU_Lamp_oCAN00_7aec7e78_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1041    /*    24 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_ElectricalAngle_rad_MxA0_omsg_MyECU_Lamp_oCAN00_5447ad3f_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1042    /*    25 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_ElectricalAngle_rad_MxA0_omsg_MyECU_Lamp_oCAN00_5447ad3f_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1043    /*    26 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_CurrentOffsetReady_MxA0_omsg_MyECU_Lamp_oCAN00_81ce1bc4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1044    /*    27 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_CurrentOffsetSampleCount_MxA0_omsg_MyECU_Lamp_oCAN00_6c5c0a81_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1045    /*    28 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_MechanicalSpeed_rpm_MxA0_omsg_MyECU_Lamp_oCAN00_04bd2026_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1046    /*    29 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_MechanicalSpeed_rpm_MxA0_omsg_MyECU_Lamp_oCAN00_04bd2026_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1047    /*    30 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_GateDriverState_MxA0_omsg_MyECU_Lamp_oCAN00_e2e4dde6_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1048    /*    31 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_GateDriverOutputEnabled_MxA0_omsg_MyECU_Lamp_oCAN00_6012a7f7_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1049    /*    32 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_Page_MxA1_omsg_MyECU_Lamp_oCAN00_1b8e05cd_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1050    /*    33 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_MotorModePwm_MxA1_omsg_MyECU_Lamp_oCAN00_d3afa653_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1051    /*    34 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_FaultPwm_MxA1_omsg_MyECU_Lamp_oCAN00_e43e797b_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1052    /*    35 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_FaultReasonPwm_MxA1_omsg_MyECU_Lamp_oCAN00_32050898_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1053    /*    36 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1054    /*    37 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1055    /*    38 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_VdRef_V_MxA1_omsg_MyECU_Lamp_oCAN00_f0517bd4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1056    /*    39 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_VdRef_V_MxA1_omsg_MyECU_Lamp_oCAN00_f0517bd4_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1057    /*    40 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_VqRef_V_MxA1_omsg_MyECU_Lamp_oCAN00_636c7799_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1058    /*    41 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_VqRef_V_MxA1_omsg_MyECU_Lamp_oCAN00_636c7799_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1059    /*    42 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_ValphaRef_V_MxA1_omsg_MyECU_Lamp_oCAN00_dafa2b94_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1060    /*    43 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_ValphaRef_V_MxA1_omsg_MyECU_Lamp_oCAN00_dafa2b94_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1061    /*    44 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_VbetaRef_V_MxA1_omsg_MyECU_Lamp_oCAN00_623c36a7_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1062    /*    45 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_VbetaRef_V_MxA1_omsg_MyECU_Lamp_oCAN00_623c36a7_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1063    /*    46 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_PwmU_MxA1_omsg_MyECU_Lamp_oCAN00_c33fb364_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1064    /*    47 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_PwmU_MxA1_omsg_MyECU_Lamp_oCAN00_c33fb364_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1065    /*    48 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_PwmV_MxA1_omsg_MyECU_Lamp_oCAN00_6637d808_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1066    /*    49 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_PwmV_MxA1_omsg_MyECU_Lamp_oCAN00_6637d808_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1067    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	  1068    /*    50 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_PwmW_MxA1_omsg_MyECU_Lamp_oCAN00_0530012c_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1069    /*    51 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_PwmW_MxA1_omsg_MyECU_Lamp_oCAN00_0530012c_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1070    /*    52 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_PwmPeriod_MxA1_omsg_MyECU_Lamp_oCAN00_d26baca6_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1071    /*    53 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_PwmPeriod_MxA1_omsg_MyECU_Lamp_oCAN00_d26baca6_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1072    /*    54 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_VdcMax_V_MxA1_omsg_MyECU_Lamp_oCAN00_8d3d4389_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1073    /*    55 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_VdcMax_V_MxA1_omsg_MyECU_Lamp_oCAN00_8d3d4389_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1074    /*    56 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_FaultIu_A_MxA1_omsg_MyECU_Lamp_oCAN00_99a1880c_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1075    /*    57 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_FaultIu_A_MxA1_omsg_MyECU_Lamp_oCAN00_99a1880c_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1076    /*    58 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_FaultIv_A_MxA1_omsg_MyECU_Lamp_oCAN00_8a89b17f_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1077    /*    59 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_FaultIv_A_MxA1_omsg_MyECU_Lamp_oCAN00_8a89b17f_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1078    /*    60 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_FaultIw_A_MxA1_omsg_MyECU_Lamp_oCAN00_846e59ae_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1079    /*    61 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_FaultIw_A_MxA1_omsg_MyECU_Lamp_oCAN00_846e59ae_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1080    /*    62 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_FaultVdc_V_MxA1_omsg_MyECU_Lamp_oCAN00_65447c06_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1081    /*    63 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_FaultVdc_V_MxA1_omsg_MyECU_Lamp_oCAN00_65447c06_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1082    /*    64 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_Page_MxA2_omsg_MyECU_Lamp_oCAN00_4390ace5_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1083    /*    65 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_AdcFilterEnabled_MxA2_omsg_MyECU_Lamp_oCAN00_bb1a16f8_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1084    /*    66 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_AdcFilterReady_MxA2_omsg_MyECU_Lamp_oCAN00_dd22f986_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1085    /*    67 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_AdcFilterAlpha_MxA2_omsg_MyECU_Lamp_oCAN00_4c48c598_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1086    /*    68 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1087    /*    69 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1088    /*    70 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_IuRaw_A_MxA2_omsg_MyECU_Lamp_oCAN00_ca30e9cf_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1089    /*    71 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_IuRaw_A_MxA2_omsg_MyECU_Lamp_oCAN00_ca30e9cf_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1090    /*    72 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_IvRaw_A_MxA2_omsg_MyECU_Lamp_oCAN00_a7b61a95_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1091    /*    73 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_IvRaw_A_MxA2_omsg_MyECU_Lamp_oCAN00_a7b61a95_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1092    /*    74 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_IwRaw_A_MxA2_omsg_MyECU_Lamp_oCAN00_83344ba3_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1093    /*    75 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_IwRaw_A_MxA2_omsg_MyECU_Lamp_oCAN00_83344ba3_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1094    /*    76 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_IuFiltered_A_MxA2_omsg_MyECU_Lamp_oCAN00_edadce4b_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1095    /*    77 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_IuFiltered_A_MxA2_omsg_MyECU_Lamp_oCAN00_edadce4b_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1096    /*    78 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_IvFiltered_A_MxA2_omsg_MyECU_Lamp_oCAN00_3e36d2b0_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1097    /*    79 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_IvFiltered_A_MxA2_omsg_MyECU_Lamp_oCAN00_3e36d2b0_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1098    /*    80 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_IwFiltered_A_MxA2_omsg_MyECU_Lamp_oCAN00_70bfd919_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1099    /*    81 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_IwFiltered_A_MxA2_omsg_MyECU_Lamp_oCAN00_70bfd919_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1100    /*    82 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_AdcOffsetVo1_MxA2_omsg_MyECU_Lamp_oCAN00_7e4e712f_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1101    /*    83 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_AdcOffsetVo1_MxA2_omsg_MyECU_Lamp_oCAN00_7e4e712f_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1102    /*    84 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_AdcOffsetVo2_MxA2_omsg_MyECU_Lamp_oCAN00_db461a43_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1103    /*    85 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_AdcOffsetVo2_MxA2_omsg_MyECU_Lamp_oCAN00_db461a43_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1104    /*    86 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_AdcOffsetVo3_MxA2_omsg_MyECU_Lamp_oCAN00_b841c367_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1105    /*    87 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_AdcOffsetVo3_MxA2_omsg_MyECU_Lamp_oCAN00_b841c367_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1106    /*    88 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_Vro_V_MxA2_omsg_MyECU_Lamp_oCAN00_a894d119_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1107    /*    89 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_Vro_V_MxA2_omsg_MyECU_Lamp_oCAN00_a894d119_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1108    /*    90 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_Vinv_V_MxA2_omsg_MyECU_Lamp_oCAN00_bd00cc55_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1109    /*    91 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_Vinv_V_MxA2_omsg_MyECU_Lamp_oCAN00_bd00cc55_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1110    /*    92 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_AdcSyncCounter_MxA2_omsg_MyECU_Lamp_oCAN00_8264daf6_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1111    /*    93 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_AdcSyncCounter_MxA2_omsg_MyECU_Lamp_oCAN00_8264daf6_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1112    /*    94 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_AdcOffsetSampleCount_MxA2_omsg_MyECU_Lamp_oCAN00_98a9a073_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1113    /*    95 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_AdcOffsetSampleCount_MxA2_omsg_MyECU_Lamp_oCAN00_98a9a073_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1114    /*    96 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1115    /*   ... */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1116    /*    99 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1117    /*   100 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_Sequence_Mx_omsg_MyECU_Lamp_oCAN00_339a541d_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1118    /*   101 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx, /ActiveEcuC/Com/ComConfig/MotorFoc_Sequence_Mx_omsg_MyECU_Lamp_oCAN00_339a541d_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1119    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	  1120    /*   102 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1121    /*   ... */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1122    /*   127 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1123    /*   128 */  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx, /ActiveEcuC/Com/ComConfig/sig_RearInteriorLight_omsg_Transmit_oCAN00_49a633c1_Tx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1124  
+; ..\Appl\GenData\Com_Lcfg.c	  1125  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	  1126  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	  1127  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	  1128  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	  1129  
+; ..\Appl\GenData\Com_Lcfg.c	  1130  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	  1131    Com_TxIPduGroupISRLockCounter
+; ..\Appl\GenData\Com_Lcfg.c	  1132  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	  1133  #define COM_START_SEC_VAR_NO_INIT_16
+; ..\Appl\GenData\Com_Lcfg.c	  1134  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	  1135  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	  1136  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	  1137  VAR(Com_TxIPduGroupISRLockCounterUType, COM_VAR_NO_INIT) Com_TxIPduGroupISRLockCounter;  /* PRQA S 0759, 1514, 1533 */  /* MD_CSL_Union, MD_CSL_ObjectOnlyAccessedOnce, MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	  1138    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	  1139    /*     0 */  /* [noPartition] */
+; ..\Appl\GenData\Com_Lcfg.c	  1140  
+; ..\Appl\GenData\Com_Lcfg.c	  1141  #define COM_STOP_SEC_VAR_NO_INIT_16
+; ..\Appl\GenData\Com_Lcfg.c	  1142  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	  1143  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	  1144  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	  1145  
+; ..\Appl\GenData\Com_Lcfg.c	  1146  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	  1147    Com_TxPduGrpActive
+; ..\Appl\GenData\Com_Lcfg.c	  1148  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	  1149  /** 
+; ..\Appl\GenData\Com_Lcfg.c	  1150    \var    Com_TxPduGrpActive
+; ..\Appl\GenData\Com_Lcfg.c	  1151    \brief  Tx I-PDU based state (started/stopped) of the corresponding I-PDU-Group.
+; ..\Appl\GenData\Com_Lcfg.c	  1152  */ 
+; ..\Appl\GenData\Com_Lcfg.c	  1153  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	  1154  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	  1155  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	  1156  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	  1157  VAR(Com_TxPduGrpActiveType, COM_VAR_NO_INIT) Com_TxPduGrpActive[5];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	  1158    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	  1159    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1160    /*     1 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1161    /*     2 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1162    /*     3 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1163    /*     4 */  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1164  
+; ..\Appl\GenData\Com_Lcfg.c	  1165  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	  1166  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	  1167  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	  1168  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	  1169  
+; ..\Appl\GenData\Com_Lcfg.c	  1170  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	  1171    Com_TxProcessingISRLockCounter
+; ..\Appl\GenData\Com_Lcfg.c	  1172  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	  1173  #define COM_START_SEC_VAR_NO_INIT_16
+; ..\Appl\GenData\Com_Lcfg.c	  1174  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	  1175  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	  1176  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	  1177  VAR(Com_TxProcessingISRLockCounterUType, COM_VAR_NO_INIT) Com_TxProcessingISRLockCounter;  /* PRQA S 0759, 1514, 1533 */  /* MD_CSL_Union, MD_CSL_ObjectOnlyAccessedOnce, MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	  1178    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	  1179    /*     0 */  /* [ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1180  
+; ..\Appl\GenData\Com_Lcfg.c	  1181  #define COM_STOP_SEC_VAR_NO_INIT_16
+; ..\Appl\GenData\Com_Lcfg.c	  1182  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	  1183  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	  1184  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	  1185  
+; ..\Appl\GenData\Com_Lcfg.c	  1186  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	  1187    Com_TxSduLength
+; ..\Appl\GenData\Com_Lcfg.c	  1188  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	  1189  /** 
+; ..\Appl\GenData\Com_Lcfg.c	  1190    \var    Com_TxSduLength
+; ..\Appl\GenData\Com_Lcfg.c	  1191    \brief  This var Array contains the Com Ipdu Length.
+; ..\Appl\GenData\Com_Lcfg.c	  1192  */ 
+; ..\Appl\GenData\Com_Lcfg.c	  1193  #define COM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	  1194  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	  1195  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	  1196  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	  1197  VAR(Com_TxSduLengthType, COM_VAR_NO_INIT) Com_TxSduLength[5];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\Com_Lcfg.c	  1198    /* Index        Referable Keys */
+; ..\Appl\GenData\Com_Lcfg.c	  1199    /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1200    /*     1 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1201    /*     2 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1202    /*     3 */  /* [/ActiveEcuC/Com/ComConfig/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1203    /*     4 */  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+; ..\Appl\GenData\Com_Lcfg.c	  1204  
+; ..\Appl\GenData\Com_Lcfg.c	  1205  #define COM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\Com_Lcfg.c	  1206  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\Com_Lcfg.c	  1207  #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	  1208  /*lint -restore */
+; ..\Appl\GenData\Com_Lcfg.c	  1209  
+; ..\Appl\GenData\Com_Lcfg.c	  1210  
+; ..\Appl\GenData\Com_Lcfg.c	  1211  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	  1212    CONFIGURATION CLASS: LINK
+; ..\Appl\GenData\Com_Lcfg.c	  1213    SECTION: GLOBAL DATA
+; ..\Appl\GenData\Com_Lcfg.c	  1214  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	  1215  
+; ..\Appl\GenData\Com_Lcfg.c	  1216  
+; ..\Appl\GenData\Com_Lcfg.c	  1217  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	  1218    LOCAL FUNCTION PROTOTYPES
+; ..\Appl\GenData\Com_Lcfg.c	  1219  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	  1220  
+; ..\Appl\GenData\Com_Lcfg.c	  1221  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	  1222    LOCAL FUNCTIONS
+; ..\Appl\GenData\Com_Lcfg.c	  1223  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	  1224  
+; ..\Appl\GenData\Com_Lcfg.c	  1225  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	  1226    GLOBAL FUNCTIONS
+; ..\Appl\GenData\Com_Lcfg.c	  1227  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	  1228  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	  1229    CONFIGURATION CLASS: PRE_COMPILE
+; ..\Appl\GenData\Com_Lcfg.c	  1230    SECTION: GLOBAL FUNCTIONS
+; ..\Appl\GenData\Com_Lcfg.c	  1231  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	  1232  
+; ..\Appl\GenData\Com_Lcfg.c	  1233  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	  1234    CONFIGURATION CLASS: LINK
+; ..\Appl\GenData\Com_Lcfg.c	  1235    SECTION: GLOBAL FUNCTIONS
+; ..\Appl\GenData\Com_Lcfg.c	  1236  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	  1237  
+; ..\Appl\GenData\Com_Lcfg.c	  1238  
+; ..\Appl\GenData\Com_Lcfg.c	  1239  
+; ..\Appl\GenData\Com_Lcfg.c	  1240  #define COM_START_SEC_CODE
+; ..\Appl\GenData\Com_Lcfg.c	  1241  #include "MemMap.h"    /* PRQA S 5087 */        /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	  1242  
+; ..\Appl\GenData\Com_Lcfg.c	  1243  
+; ..\Appl\GenData\Com_Lcfg.c	  1244  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	  1245   * Com_MainFunctionRx_ComMainFunctionRx
+; ..\Appl\GenData\Com_Lcfg.c	  1246   *********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	  1247   /*!
+; ..\Appl\GenData\Com_Lcfg.c	  1248   * \internal
+; ..\Appl\GenData\Com_Lcfg.c	  1249   * - call Com_MainFunctionRx with the id referencing this main function.
+; ..\Appl\GenData\Com_Lcfg.c	  1250   * \endinternal
+; ..\Appl\GenData\Com_Lcfg.c	  1251   *********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	  1252  FUNC(void, COM_CODE) Com_MainFunctionRx_ComMainFunctionRx(void)
+; Function Com_MainFunctionRx_ComMainFunctionRx
+Com_MainFunctionRx_ComMainFunctionRx:	.type	func
+
+; ..\Appl\GenData\Com_Lcfg.c	  1253  {
+; ..\Appl\GenData\Com_Lcfg.c	  1254  #if ((COM_EXISTS_DEFERRED_SIGNALPROCESSINGOFRXPDUINFO == STD_ON)||(COM_RXTOUTINFO == STD_ON))
+; ..\Appl\GenData\Com_Lcfg.c	  1255    Com_MainFunctionRxStructIterType id = 0;
+; ..\Appl\GenData\Com_Lcfg.c	  1256    Com_MainFunctionRxInternal(id);
+	mov	d4,#0
+	j	Com_MainFunctionRxInternal
+	
+__Com_MainFunctionRx_ComMainFunctionRx_function_end:
+	.size	Com_MainFunctionRx_ComMainFunctionRx,__Com_MainFunctionRx_ComMainFunctionRx_function_end-Com_MainFunctionRx_ComMainFunctionRx
+	; End of function
+	
+	.sdecl	'.text.Com_Lcfg.Com_MainFunctionTx_ComMainFunctionTx',code
+	.sect	'.text.Com_Lcfg.Com_MainFunctionTx_ComMainFunctionTx'
+	.align	2
+	
+	.global	Com_MainFunctionTx_ComMainFunctionTx
+
+; ..\Appl\GenData\Com_Lcfg.c	  1257  #endif
+; ..\Appl\GenData\Com_Lcfg.c	  1258  }
+; ..\Appl\GenData\Com_Lcfg.c	  1259  
+; ..\Appl\GenData\Com_Lcfg.c	  1260  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	  1261   * Com_MainFunctionTx_ComMainFunctionTx
+; ..\Appl\GenData\Com_Lcfg.c	  1262   *********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	  1263   /*!
+; ..\Appl\GenData\Com_Lcfg.c	  1264   * \internal
+; ..\Appl\GenData\Com_Lcfg.c	  1265   * - call Com_MainFunctionTx with the id referencing this main function.
+; ..\Appl\GenData\Com_Lcfg.c	  1266   * \endinternal
+; ..\Appl\GenData\Com_Lcfg.c	  1267   *********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	  1268  FUNC(void, COM_CODE) Com_MainFunctionTx_ComMainFunctionTx(void)
+; Function Com_MainFunctionTx_ComMainFunctionTx
+Com_MainFunctionTx_ComMainFunctionTx:	.type	func
+
+; ..\Appl\GenData\Com_Lcfg.c	  1269  {
+; ..\Appl\GenData\Com_Lcfg.c	  1270  #if (COM_TXMODEINFO == STD_ON)
+; ..\Appl\GenData\Com_Lcfg.c	  1271    Com_MainFunctionTxStructIterType id = 0;
+; ..\Appl\GenData\Com_Lcfg.c	  1272    Com_MainFunctionTxInternal(id);
+	mov	d4,#0
+	j	Com_MainFunctionTxInternal
+	
+__Com_MainFunctionTx_ComMainFunctionTx_function_end:
+	.size	Com_MainFunctionTx_ComMainFunctionTx,__Com_MainFunctionTx_ComMainFunctionTx_function_end-Com_MainFunctionTx_ComMainFunctionTx
+	; End of function
+	
+	.sdecl	'.zrodata.Com_Lcfg.Com_ConstValueUInt8',data,rom
+	.sect	'.zrodata.Com_Lcfg.Com_ConstValueUInt8'
+	.global	Com_ConstValueUInt8
+Com_ConstValueUInt8:	.type	object
+	.size	Com_ConstValueUInt8,1
+	.space	1
+	.sdecl	'.rodata.Com_Lcfg.Com_IPduGroupInfo',data,rom
+	.sect	'.rodata.Com_Lcfg.Com_IPduGroupInfo'
+	.global	Com_IPduGroupInfo
+	.align	4
+Com_IPduGroupInfo:	.type	object
+	.size	Com_IPduGroupInfo,16
+	.space	3
+	.byte	1
+	.space	1
+	.byte	255,255
+	.space	1
+	.byte	1
+	.space	2
+	.byte	255,255,5
+	.space	2
+	.sdecl	'.zrodata.Com_Lcfg.Com_IPduGroupInfoOfTxPduInfoInd',data,rom
+	.sect	'.zrodata.Com_Lcfg.Com_IPduGroupInfoOfTxPduInfoInd'
+	.global	Com_IPduGroupInfoOfTxPduInfoInd
+Com_IPduGroupInfoOfTxPduInfoInd:	.type	object
+	.size	Com_IPduGroupInfoOfTxPduInfoInd,5
+	.byte	1,1,1,1
+	.byte	1
+	.sdecl	'.zrodata.Com_Lcfg.Com_MainFunctionRxStruct',data,rom
+	.sect	'.zrodata.Com_Lcfg.Com_MainFunctionRxStruct'
+	.global	Com_MainFunctionRxStruct
+Com_MainFunctionRxStruct:	.type	object
+	.size	Com_MainFunctionRxStruct,1
+	.space	1
+	.sdecl	'.zrodata.Com_Lcfg.Com_MainFunctionTxStruct',data,rom
+	.sect	'.zrodata.Com_Lcfg.Com_MainFunctionTxStruct'
+	.global	Com_MainFunctionTxStruct
+	.align	2
+Com_MainFunctionTxStruct:	.type	object
+	.size	Com_MainFunctionTxStruct,2
+	.space	2
+	.sdecl	'.rodata.Com_Lcfg.Com_RxAccessInfo',data,rom
+	.sect	'.rodata.Com_Lcfg.Com_RxAccessInfo'
+	.global	Com_RxAccessInfo
+	.align	2
+Com_RxAccessInfo:	.type	object
+	.size	Com_RxAccessInfo,12
+	.space	4
+	.byte	1
+	.space	3
+	.byte	1
+	.space	1
+	.byte	1
+	.space	1
+	.sdecl	'.zrodata.Com_Lcfg.Com_RxPduInfo',data,rom
+	.sect	'.zrodata.Com_Lcfg.Com_RxPduInfo'
+	.global	Com_RxPduInfo
+	.align	2
+Com_RxPduInfo:	.type	object
+	.size	Com_RxPduInfo,6
+	.space	4
+	.byte	1
+	.space	1
+	.sdecl	'.zrodata.Com_Lcfg.Com_RxSigInfo',data,rom
+	.sect	'.zrodata.Com_Lcfg.Com_RxSigInfo'
+	.global	Com_RxSigInfo
+Com_RxSigInfo:	.type	object
+	.size	Com_RxSigInfo,2
+	.byte	1,1
+	.sdecl	'.rodata.Com_Lcfg.Com_TxAccessInfo',data,rom
+	.sect	'.rodata.Com_Lcfg.Com_TxAccessInfo'
+	.global	Com_TxAccessInfo
+Com_TxAccessInfo:	.type	object
+	.size	Com_TxAccessInfo,55
+	.space	1
+	.byte	1,2,3,4
+	.byte	5,6,7,8
+	.byte	9,10,11,12
+	.byte	13,14,15,16
+	.byte	17,18,19,20
+	.byte	21,22,23,24
+	.byte	25,26,27,28
+	.byte	29,30,31,32
+	.byte	33,34,35,36
+	.byte	37,38,39,40
+	.byte	41,42,43,44
+	.byte	45,46,47,48
+	.byte	49,50,51,52
+	.byte	53,54
+	.sdecl	'.zrodata.Com_Lcfg.Com_TxCyclicPdu',data,rom
+	.sect	'.zrodata.Com_Lcfg.Com_TxCyclicPdu'
+	.global	Com_TxCyclicPdu
+Com_TxCyclicPdu:	.type	object
+	.size	Com_TxCyclicPdu,4
+	.space	1
+	.byte	1,2,4
+	.sdecl	'.zrodata.Com_Lcfg.Com_TxModeFalse',data,rom
+	.sect	'.zrodata.Com_Lcfg.Com_TxModeFalse'
+	.global	Com_TxModeFalse
+Com_TxModeFalse:	.type	object
+	.size	Com_TxModeFalse,2
+	.byte	20
+	.space	1
+	.sdecl	'.rodata.Com_Lcfg.Com_TxModeInfo',data,rom
+	.sect	'.rodata.Com_Lcfg.Com_TxModeInfo'
+	.global	Com_TxModeInfo
+	.align	2
+Com_TxModeInfo:	.type	object
+	.size	Com_TxModeInfo,10
+	.byte	1,1,1,1
+	.byte	1,1,1,1
+	.byte	1
+	.space	1
+	.sdecl	'.rodata.Com_Lcfg.Com_TxModeTrue',data,rom
+	.sect	'.rodata.Com_Lcfg.Com_TxModeTrue'
+	.global	Com_TxModeTrue
+	.align	2
+Com_TxModeTrue:	.type	object
+	.size	Com_TxModeTrue,20
+	.byte	1,1,3
+	.space	1
+	.byte	1,2,3
+	.space	1
+	.byte	1,3,3
+	.space	2
+	.byte	1
+	.space	2
+	.byte	1,1,20
+	.space	1
+	.sdecl	'.rodata.Com_Lcfg.Com_TxPduInfo',data,rom
+	.sect	'.rodata.Com_Lcfg.Com_TxPduInfo'
+	.global	Com_TxPduInfo
+	.align	2
+Com_TxPduInfo:	.type	object
+	.size	Com_TxPduInfo,30
+	.space	3
+	.byte	32,32
+	.space	1
+	.byte	1,1
+	.space	1
+	.byte	32,64,32,2
+	.byte	2
+	.space	1
+	.byte	32,96,64,3
+	.byte	3
+	.space	1
+	.byte	32,128,96,5
+	.byte	4
+	.space	1
+	.byte	1,129,128
+	.sdecl	'.rodata.Com_Lcfg.Com_TxPduInitValue',data,rom
+	.sect	'.rodata.Com_Lcfg.Com_TxPduInitValue'
+	.global	Com_TxPduInitValue
+Com_TxPduInitValue:	.type	object
+	.size	Com_TxPduInitValue,129
+	.byte	160
+	.space	31
+	.byte	161
+	.space	31
+	.byte	162
+	.space	64
+	.sdecl	'.rodata.Com_Lcfg.Com_TxSigInfo',data,rom
+	.sect	'.rodata.Com_Lcfg.Com_TxSigInfo'
+	.global	Com_TxSigInfo
+	.align	4
+Com_TxSigInfo:	.type	object
+	.size	Com_TxSigInfo,660
+	.space	2
+	.byte	8,24,1,3
+	.byte	68,67,2
+	.space	5
+	.byte	8,8,1,1
+	.byte	66,65,2
+	.space	5
+	.byte	8,16,1,2
+	.byte	67,66,2
+	.space	4
+	.byte	2,16,240,2
+	.byte	30,96,94,2
+	.space	4
+	.byte	3,16,144,2
+	.byte	18,84,82,2
+	.space	4
+	.byte	3,16,160,2
+	.byte	20,86,84,2
+	.space	4
+	.byte	3,16,176,2
+	.byte	22,88,86,2
+	.space	4
+	.byte	2,16,224,2
+	.byte	28,94,92,2
+	.space	4
+	.byte	2,16,176,2
+	.byte	22,24,22
+	.space	6
+	.byte	8,208,1,26
+	.byte	27,26
+	.space	6
+	.byte	8,216,1,27
+	.byte	28,27
+	.space	5
+	.byte	3,16,192,2
+	.byte	24,26,24
+	.space	5
+	.byte	3,16,192,2
+	.byte	24,58,56,1
+	.space	4
+	.byte	3,16,208,2
+	.byte	26,60,58,1
+	.space	4
+	.byte	3,16,224,2
+	.byte	28,62,60,1
+	.space	5
+	.byte	8,16,1,2
+	.byte	35,34,1
+	.space	5
+	.byte	8,24,1,3
+	.byte	36,35,1
+	.space	5
+	.byte	8,24,1,3
+	.byte	4,3
+	.space	5
+	.byte	3,16,240,2
+	.byte	30,64,62,1
+	.space	5
+	.byte	8,16,1,2
+	.byte	3,2
+	.space	6
+	.byte	8,248,1,31
+	.byte	32,31
+	.space	6
+	.byte	8,240,1,30
+	.byte	31,30
+	.space	5
+	.byte	3,16,48,2
+	.byte	6,8,6
+	.space	5
+	.byte	3,16,80,2
+	.byte	10,12,10
+	.space	5
+	.byte	3,16,64,2
+	.byte	8,10,8
+	.space	5
+	.byte	3,16,96,2
+	.byte	12,14,12
+	.space	5
+	.byte	3,16,96,2
+	.byte	12,78,76,2
+	.space	4
+	.byte	3,16,48,2
+	.byte	6,72,70,2
+	.space	4
+	.byte	3,16,112,2
+	.byte	14,16,14
+	.space	5
+	.byte	3,16,112,2
+	.byte	14,80,78,2
+	.space	4
+	.byte	3,16,64,2
+	.byte	8,74,72,2
+	.space	4
+	.byte	3,16,128,2
+	.byte	16,18,16
+	.space	5
+	.byte	3,16,128,2
+	.byte	16,82,80,2
+	.space	4
+	.byte	3,16,80,2
+	.byte	10,76,74,2
+	.space	4
+	.byte	3,16,144,2
+	.byte	18,20,18
+	.space	5
+	.byte	3,16,224,2
+	.byte	28,30,28
+	.space	6
+	.byte	8,8,1,1
+	.byte	34,33,1
+	.space	5
+	.byte	8,8,1,1
+	.byte	2,1
+	.space	6
+	.byte	8
+	.space	1
+	.byte	1
+	.space	1
+	.byte	1
+	.space	7
+	.byte	8
+	.space	1
+	.byte	1
+	.space	1
+	.byte	33,32,1
+	.space	5
+	.byte	8
+	.space	1
+	.byte	1
+	.space	1
+	.byte	65,64,2
+	.space	4
+	.byte	2,16,160,2
+	.byte	20,54,52,1
+	.space	4
+	.byte	2,16,112,2
+	.byte	14,48,46,1
+	.space	4
+	.byte	2,16,128,2
+	.byte	16,50,48,1
+	.space	4
+	.byte	2,16,144,2
+	.byte	18,52,50,1
+	.space	4
+	.byte	2,16,32,2
+	.byte	4,102,100,3
+	.space	4
+	.byte	3,16,80,2
+	.byte	10,44,42,1
+	.space	4
+	.byte	3,16,96,2
+	.byte	12,46,44,1
+	.space	4
+	.byte	3,16,48,2
+	.byte	6,40,38,1
+	.space	4
+	.byte	3,16,176,2
+	.byte	22,56,54,1
+	.space	4
+	.byte	3,16,160,2
+	.byte	20,22,20
+	.space	5
+	.byte	3,16,208,2
+	.byte	26,92,90,2
+	.space	4
+	.byte	3,16,64,2
+	.byte	8,42,40,1
+	.space	4
+	.byte	3,16,192,2
+	.byte	24,90,88,2
+	.space	5
+	.byte	1
+	.space	3
+	.byte	129,128,4
+	.space	3
+	.sdecl	'.zbss.Com_Lcfg.Com_CurrentTxMode',data
+	.sect	'.zbss.Com_Lcfg.Com_CurrentTxMode'
+	.global	Com_CurrentTxMode
+	.align	2
+Com_CurrentTxMode:	.type	object
+	.size	Com_CurrentTxMode,6
+	.space	6
+	.sdecl	'.zbss.Com_Lcfg.Com_CycleTimeCnt',data
+	.sect	'.zbss.Com_Lcfg.Com_CycleTimeCnt'
+	.global	Com_CycleTimeCnt
+	.align	2
+Com_CycleTimeCnt:	.type	object
+	.size	Com_CycleTimeCnt,6
+	.space	6
+	.sdecl	'.zbss.Com_Lcfg.Com_CyclicSendRequest',data
+	.sect	'.zbss.Com_Lcfg.Com_CyclicSendRequest'
+	.global	Com_CyclicSendRequest
+	.align	2
+Com_CyclicSendRequest:	.type	object
+	.size	Com_CyclicSendRequest,6
+	.space	6
+	.sdecl	'.zbss.Com_Lcfg.Com_HandleRxPduDeferred',data
+	.sect	'.zbss.Com_Lcfg.Com_HandleRxPduDeferred'
+	.global	Com_HandleRxPduDeferred
+Com_HandleRxPduDeferred:	.type	object
+	.size	Com_HandleRxPduDeferred,1
+	.space	1
+	.sdecl	'.zbss.Com_Lcfg.Com_IPduGroupState',data
+	.sect	'.zbss.Com_Lcfg.Com_IPduGroupState'
+	.global	Com_IPduGroupState
+Com_IPduGroupState:	.type	object
+	.size	Com_IPduGroupState,2
+	.space	2
+	.sdecl	'.zdata.Com_Lcfg.Com_Initialized',data
+	.sect	'.zdata.Com_Lcfg.Com_Initialized'
+	.global	Com_Initialized
+Com_Initialized:	.type	object
+	.size	Com_Initialized,1
+	.space	1
+	.sdecl	'.zbss.Com_Lcfg.Com_RxDefPduBuffer',data
+	.sect	'.zbss.Com_Lcfg.Com_RxDefPduBuffer'
+	.global	Com_RxDefPduBuffer
+Com_RxDefPduBuffer:	.type	object
+	.size	Com_RxDefPduBuffer,1
+	.space	1
+	.sdecl	'.zbss.Com_Lcfg.Com_RxIPduGroupISRLockCounter',data
+	.sect	'.zbss.Com_Lcfg.Com_RxIPduGroupISRLockCounter'
+	.global	Com_RxIPduGroupISRLockCounter
+	.align	2
+Com_RxIPduGroupISRLockCounter:	.type	object
+	.size	Com_RxIPduGroupISRLockCounter,2
+	.space	2
+	.sdecl	'.zbss.Com_Lcfg.Com_RxMainFunctionProcessingISRLockCounter',data
+	.sect	'.zbss.Com_Lcfg.Com_RxMainFunctionProcessingISRLockCounter'
+	.global	Com_RxMainFunctionProcessingISRLockCounter
+	.align	2
+Com_RxMainFunctionProcessingISRLockCounter:	.type	object
+	.size	Com_RxMainFunctionProcessingISRLockCounter,2
+	.space	2
+	.sdecl	'.zbss.Com_Lcfg.Com_RxPduGrpActive',data
+	.sect	'.zbss.Com_Lcfg.Com_RxPduGrpActive'
+	.global	Com_RxPduGrpActive
+Com_RxPduGrpActive:	.type	object
+	.size	Com_RxPduGrpActive,1
+	.space	1
+	.sdecl	'.zbss.Com_Lcfg.Com_RxSigBufferUInt8',data
+	.sect	'.zbss.Com_Lcfg.Com_RxSigBufferUInt8'
+	.global	Com_RxSigBufferUInt8
+Com_RxSigBufferUInt8:	.type	object
+	.size	Com_RxSigBufferUInt8,2
+	.space	2
+	.sdecl	'.zbss.Com_Lcfg.Com_TransmitRequest',data
+	.sect	'.zbss.Com_Lcfg.Com_TransmitRequest'
+	.global	Com_TransmitRequest
+	.align	2
+Com_TransmitRequest:	.type	object
+	.size	Com_TransmitRequest,6
+	.space	6
+	.sdecl	'.bss.Com_Lcfg.Com_TxBuffer',data
+	.sect	'.bss.Com_Lcfg.Com_TxBuffer'
+	.global	Com_TxBuffer
+Com_TxBuffer:	.type	object
+	.size	Com_TxBuffer,129
+	.space	129
+	.sdecl	'.zbss.Com_Lcfg.Com_TxIPduGroupISRLockCounter',data
+	.sect	'.zbss.Com_Lcfg.Com_TxIPduGroupISRLockCounter'
+	.global	Com_TxIPduGroupISRLockCounter
+	.align	2
+Com_TxIPduGroupISRLockCounter:	.type	object
+	.size	Com_TxIPduGroupISRLockCounter,2
+	.space	2
+	.sdecl	'.zbss.Com_Lcfg.Com_TxPduGrpActive',data
+	.sect	'.zbss.Com_Lcfg.Com_TxPduGrpActive'
+	.global	Com_TxPduGrpActive
+Com_TxPduGrpActive:	.type	object
+	.size	Com_TxPduGrpActive,5
+	.space	5
+	.sdecl	'.zbss.Com_Lcfg.Com_TxProcessingISRLockCounter',data
+	.sect	'.zbss.Com_Lcfg.Com_TxProcessingISRLockCounter'
+	.global	Com_TxProcessingISRLockCounter
+	.align	2
+Com_TxProcessingISRLockCounter:	.type	object
+	.size	Com_TxProcessingISRLockCounter,2
+	.space	2
+	.sdecl	'.zbss.Com_Lcfg.Com_TxSduLength',data
+	.sect	'.zbss.Com_Lcfg.Com_TxSduLength'
+	.global	Com_TxSduLength
+Com_TxSduLength:	.type	object
+	.size	Com_TxSduLength,5
+	.space	5
+	.calls	'Com_MainFunctionRx_ComMainFunctionRx','Com_MainFunctionRxInternal'
+	.calls	'Com_MainFunctionTx_ComMainFunctionTx','Com_MainFunctionTxInternal'
+	.calls	'Com_MainFunctionRx_ComMainFunctionRx','',0
+	.extern	Com_MainFunctionRxInternal
+	.extern	Com_MainFunctionTxInternal
+	.calls	'Com_MainFunctionTx_ComMainFunctionTx','',0
+
+; ..\Appl\GenData\Com_Lcfg.c	  1273  #endif
+; ..\Appl\GenData\Com_Lcfg.c	  1274  }
+; ..\Appl\GenData\Com_Lcfg.c	  1275  
+; ..\Appl\GenData\Com_Lcfg.c	  1276  #define COM_STOP_SEC_CODE
+; ..\Appl\GenData\Com_Lcfg.c	  1277  #include "MemMap.h" /* PRQA S 5087 */   /* MD_MSR_MemMap */
+; ..\Appl\GenData\Com_Lcfg.c	  1278  
+; ..\Appl\GenData\Com_Lcfg.c	  1279  /**********************************************************************************************************************
+; ..\Appl\GenData\Com_Lcfg.c	  1280    END OF FILE: Com_Lcfg.c
+; ..\Appl\GenData\Com_Lcfg.c	  1281  **********************************************************************************************************************/
+; ..\Appl\GenData\Com_Lcfg.c	  1282  
+
+	; Module end

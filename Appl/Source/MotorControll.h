@@ -16,6 +16,7 @@ extern volatile float32 MotorControll_IqRefCmd;
 extern volatile float32 MotorControll_IdRefOut;
 extern volatile float32 MotorControll_IqRefOut;
 extern volatile float32 MotorControll_OpenLoopCurrentLimitA;
+extern volatile float32 MotorControll_OpenLoopCurrentRampStepA;
 extern volatile MotorMode_Type MotorControll_MotorModeCmd;
 extern volatile uint8 MotorControll_GateDriverState;
 extern volatile uint8 MotorControll_GateDriverLastInitError;

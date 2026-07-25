@@ -1,0 +1,850 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc20708a --dep-file=Appl\\Source\\CDD\\TLE5012\\.Tle5012bd_Driver.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=Appl\\Source\\CDD\\TLE5012\\Tle5012bd_Driver.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\Source\\CDD\\TLE5012\\Tle5012bd_Driver.src ..\\Appl\\Source\\CDD\\TLE5012\\Tle5012bd_Driver.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\Source\\CDD\\TLE5012\\Tle5012bd_Driver.c'
+
+	
+$TC162
+	.sdecl	'.zrodata.Tle5012bd_Driver..1.cnt',data,rom
+	.sect	'.zrodata.Tle5012bd_Driver..1.cnt'
+	.align	2
+.1.cnt:	.type	object
+	.size	.1.cnt,4
+	.word	977857071
+	.sdecl	'.zrodata.Tle5012bd_Driver..2.cnt',data,rom
+	.sect	'.zrodata.Tle5012bd_Driver..2.cnt'
+	.align	2
+.2.cnt:	.type	object
+	.size	.2.cnt,4
+	.word	1078530011
+	.sdecl	'.zrodata.Tle5012bd_Driver..3.cnt',data,rom
+	.sect	'.zrodata.Tle5012bd_Driver..3.cnt'
+	.align	2
+.3.cnt:	.type	object
+	.size	.3.cnt,4
+	.word	1086918619
+	.sdecl	'.zrodata.Tle5012bd_Driver..4.cnt',data,rom
+	.sect	'.zrodata.Tle5012bd_Driver..4.cnt'
+	.align	2
+.4.cnt:	.type	object
+	.size	.4.cnt,4
+	.word	-1068953637
+	.sdecl	'.zrodata.Tle5012bd_Driver..5.cnt',data,rom
+	.sect	'.zrodata.Tle5012bd_Driver..5.cnt'
+	.align	2
+.5.cnt:	.type	object
+	.size	.5.cnt,4
+	.word	1063675494
+	.sdecl	'.zrodata.Tle5012bd_Driver..6.cnt',data,rom
+	.sect	'.zrodata.Tle5012bd_Driver..6.cnt'
+	.align	2
+.6.cnt:	.type	object
+	.size	.6.cnt,4
+	.word	1036831949
+	.sdecl	'.zrodata.Tle5012bd_Driver..7.cnt',data,rom
+	.sect	'.zrodata.Tle5012bd_Driver..7.cnt'
+	.align	2
+.7.cnt:	.type	object
+	.size	.7.cnt,4
+	.word	1092143599
+	.sdecl	'.zrodata.Tle5012bd_Driver..8.cnt',data,rom
+	.sect	'.zrodata.Tle5012bd_Driver..8.cnt'
+	.align	2
+.8.cnt:	.type	object
+	.size	.8.cnt,4
+	.word	981668463
+	.sdecl	'.zrodata.Tle5012bd_Driver..9.cnt',data,rom
+	.sect	'.zrodata.Tle5012bd_Driver..9.cnt'
+	.align	2
+.9.cnt:	.type	object
+	.size	.9.cnt,4
+	.word	-2145320961
+	
+	.sdecl	'.text.Tle5012bd_Driver.Tle5012bd_Driver_ApplyAvalRaw',code
+	.sect	'.text.Tle5012bd_Driver.Tle5012bd_Driver_ApplyAvalRaw'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	     1  /**********************************************************************************************************************
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	     2   *  Tle5012bd_Driver.c
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	     3   **********************************************************************************************************************/
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	     4  #include "Tle5012bd_Driver.h"
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	     5  #include "Tle5012bd_Spi.h"
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	     6  #include "MotorCdd_Foc.h"
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	     7  #include "Spi.h"
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	     8  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	     9  /* Shared SFR mirror from tle5012b.c */
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    10  extern TLE5012_SFR tle5012_sfr;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    11  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    12  Tle5012 Tle5012bd_Sensor;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    13  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    14  static Tle5012bd_StateType Tle5012bd_State = TLE5012BD_STATE_UNINIT;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    15  volatile uint8 Tle5012bd_SscActivateDone = 0U;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    16  volatile uint8 Tle5012bd_SscActivateResult = 0U;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    17  volatile uint16 Tle5012bd_SscLastStat = 0U;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    18  volatile uint16 Tle5012bd_SscLastAval = 0U;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    19  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    20  /* AVAL read frame: READ | addr<<4 | 0xFFFF (see tle5012b_build_tx). */
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    21  #define TLE5012BD_AVAL_READ_TX   (0x8020FFFFUL)
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    22  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    23  static void Tle5012bd_Driver_ApplyAvalRaw(Tle5012 *tle5012, uint16 avalRaw)
+; Function Tle5012bd_Driver_ApplyAvalRaw
+Tle5012bd_Driver_ApplyAvalRaw:	.type	func
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    24  {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    25    uint16 angle;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    26    uint16 prevAngle;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    27    uint16 delta;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    28    float32 angleOldPi;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    29    float32 error;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    30    static uint16 s_lastGoodAngVal = 0U;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    31    static uint8 s_haveLastGood = 0U;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    32  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    33    if (tle5012 == NULL_PTR)
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    34    {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    35      return;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    36    }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    37  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    38    tle5012_sfr.AVAL_Type.U = avalRaw;
+	movh.a	a15,#@his(tle5012_sfr)
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    39  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    40    /* SPI glitch / half-duplex contention often returns 0xFFFF → ANG_VAL=32767. */
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    41    if (avalRaw == 0xFFFFU)
+	mov.u	d15,#65535
+	lea	a15,[a15]@los(tle5012_sfr)
+	mov.aa	a2,a15
+	st.h	[+a2]4,d4
+	jeq	d15,d4,.L2
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    42    {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    43      tle5012->SafetyBit++;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    44      return;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    45    }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    46  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    47    if (tle5012_sfr.AVAL_Type.B.RD_AV == 0U)
+	ld.bu	d15,[a15]5
+	jz.t	d15:7,.L3
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    48    {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    49      return;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    50    }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    51  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    52    angle = tle5012_sfr.AVAL_Type.B.ANG_VAL;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    53  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    54    if (s_haveLastGood != 0U)
+	extr.u	d0,d4,#0,#15
+	ld.bu	d15,_999002_s_haveLastGood
+	jeq	d15,#0,.L4
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    55    {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    56      prevAngle = s_lastGoodAngVal;
+	ld.hu	d15,_999001_s_lastGoodAngVal
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    57      delta = (uint16)((angle - prevAngle) & 0x7FFFU);
+	sub	d15,d0,d15
+	insert	d1,d15,#0,#15,#17
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    58      if (delta > 16383U)
+	mov	d15,#16383
+	jge.u	d15,d1,.L5
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    59      {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    60        delta = (uint16)(32768U - (uint32)delta);
+	mov.u	d15,#32768
+	sub	d1,d15,d1
+.L5:
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    61      }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    62      /* ~100 us sample: even 6000 rpm is only ~328 counts; 2048 ≈ 22.5° reject. */
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    63      if (delta > 2048U)
+	mov	d15,#2048
+	jge.u	d15,d1,.L6
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    64      {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    65        tle5012->SafetyBit++;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    66        return;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    67      }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    68    }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    69  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    70    s_lastGoodAngVal = angle;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    71    s_haveLastGood = 1U;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    72    tle5012->Original_Angle = (float32)angle;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    73  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    74    /* AVAL is 15-bit mechanical; FOC table is 13-bit — scale by >>2. */
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    75    angle = (uint16)(((uint32)angle >> 2U) & 0x1FFFU);
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    76    tle5012->Angle = (float32)angle;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    77  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    78    angleOldPi = tle5012->anglePi;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    79    tle5012->anglePi = tle5012->Angle * 7.66429044544767e-4F;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    80    error = tle5012->anglePi - angleOldPi;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    81  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    82    if (error > M_PI)
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    83    {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    84      error -= M_TWOPI;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    85    }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    86    else if (error < -M_PI)
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    87    {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    88      error += M_TWOPI;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    89    }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    90  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    91    if (tle5012->DisTimer > 0.0F)
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    92    {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    93      tle5012->AngleSpeed = error / tle5012->DisTimer;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    94      tle5012->AngleSpeedFilter =
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    95          (tle5012->AngleSpeedFilter * 0.9F) + (tle5012->AngleSpeed * 0.1F);
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    96      if (tle5012->polePairs > 0U)
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    97      {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    98        tle5012->RPM = tle5012->AngleSpeedFilter * 9.5493F / (float32)tle5012->polePairs;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	    99      }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   100    }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   101  }
+.L2:
+	ld.hu	d15,[a4]38
+	add	d15,#1
+	st.h	[a4]38,d15
+.L3:
+	ret
+.L6:
+.L4:
+	mov	d15,#1
+	st.h	_999001_s_lastGoodAngVal,d0
+	st.b	_999002_s_haveLastGood,d15
+	utof	d15,d0
+	st.w	[a4]4,d15
+	sh	d0,#-2
+	utof	d0,d0
+	st.w	[a4],d0
+	ld.w	d15,.1.cnt
+	ld.w	d1,[a4]8
+	mul.f	d15,d0,d15
+	st.w	[a4]8,d15
+	sub.f	d0,d15,d1
+	ld.w	d15,.2.cnt
+	cmp.f	d15,d0,d15
+	jz.t	d15:2,.L8
+	ld.w	d15,.3.cnt
+	sub.f	d0,d0,d15
+	j	.L9
+.L8:
+	ld.w	d15,.4.cnt
+	cmp.f	d15,d0,d15
+	jz.t	d15:0,.L10
+	ld.w	d15,.3.cnt
+	add.f	d0,d0,d15
+.L10:
+.L9:
+	ld.w	d15,[a4]32
+	mov	d1,#0
+	cmp.f	d1,d15,d1
+	jz.t	d1:2,.L11
+	div.f	d15,d0,d15
+	st.w	[a4]12,d15
+	ld.w	d2,.6.cnt
+	ld.w	d0,[a4]16
+	mul.f	d15,d15,d2
+	ld.w	d1,.5.cnt
+	madd.f	d15,d15,d0,d1
+	st.w	[a4]16,d15
+	ld.bu	d0,[a4]36
+	jeq	d0,#0,.L12
+	ld.w	d1,.7.cnt
+	utof	d0,d0
+	mul.f	d15,d15,d1
+	div.f	d15,d15,d0
+	st.w	[a4]20,d15
+.L12:
+.L11:
+	ret
+	
+__Tle5012bd_Driver_ApplyAvalRaw_function_end:
+	.size	Tle5012bd_Driver_ApplyAvalRaw,__Tle5012bd_Driver_ApplyAvalRaw_function_end-Tle5012bd_Driver_ApplyAvalRaw
+	; End of function
+	
+	.sdecl	'.text.Tle5012bd_Driver.Tle5012bd_Driver_Init',code
+	.sect	'.text.Tle5012bd_Driver.Tle5012bd_Driver_Init'
+	.align	2
+	
+	.global	Tle5012bd_Driver_Init
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   102  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   103  void Tle5012bd_Driver_Init(void)
+; Function Tle5012bd_Driver_Init
+Tle5012bd_Driver_Init:	.type	func
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   104  {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   105    Tle5012bd_Sensor.Angle = 0.0F;
+	mov	d15,#0
+	movh.a	a15,#@his(Tle5012bd_Sensor)
+	lea	a15,[a15]@los(Tle5012bd_Sensor)
+	st.w	[a15],d15
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   106    Tle5012bd_Sensor.Original_Angle = 0.0F;
+	lea	a2,[a15]4
+	lea	a4,4
+.L42:
+	st.w	[a2+],d15
+	loop	a4,.L42
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   107    Tle5012bd_Sensor.anglePi = 0.0F;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   108    Tle5012bd_Sensor.AngleSpeed = 0.0F;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   109    Tle5012bd_Sensor.AngleSpeedFilter = 0.0F;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   110    Tle5012bd_Sensor.RPM = 0.0F;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   111    Tle5012bd_Sensor.Direction = FALSE;
+	st.b	[a15]24,d15
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   112    Tle5012bd_Sensor.ANG_BASE = 0U;
+	st.h	[a15]26,d15
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   113    Tle5012bd_Sensor.Temperature = 0.0F;
+	st.w	[a15]28,d15
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   114  #if (MOTORCDD_FOC_ANGLE_SPI_IN_FASTLOOP == 1U)
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   115    Tle5012bd_Sensor.DisTimer = 0.0001F; /* ~100 us FocFastLoop */
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   116  #else
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   117    Tle5012bd_Sensor.DisTimer = 0.001F; /* 1 ms StartApp */
+	ld.w	d0,.8.cnt
+	st.w	[a15]32,d0
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   118  #endif
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   119    Tle5012bd_Sensor.polePairs = 4U;
+	mov	d0,#4
+	st.b	[a15]36,d0
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   120    Tle5012bd_Sensor.SafetyBit = 0U;
+	st.h	[a15]38,d15
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   121  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   122    Tle5012bd_SscActivateDone = 0U;
+	st.b	Tle5012bd_SscActivateDone,d15
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   123    Tle5012bd_SscActivateResult = 0U;
+	st.b	Tle5012bd_SscActivateResult,d15
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   124    Tle5012bd_SscLastStat = 0U;
+	st.h	Tle5012bd_SscLastStat,d15
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   125    Tle5012bd_SscLastAval = 0U;
+	st.h	Tle5012bd_SscLastAval,d15
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   126  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   127    /* RAM only — SSC bring-up after Spi_Init + power settle (StartApp). */
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   128    Tle5012bd_State = TLE5012BD_STATE_WAIT_SSC;
+	mov	d15,#1
+	st.b	Tle5012bd_State,d15
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   129  }
+	ret
+	
+__Tle5012bd_Driver_Init_function_end:
+	.size	Tle5012bd_Driver_Init,__Tle5012bd_Driver_Init_function_end-Tle5012bd_Driver_Init
+	; End of function
+	
+	.sdecl	'.text.Tle5012bd_Driver.Tle5012bd_Driver_SscActivate',code
+	.sect	'.text.Tle5012bd_Driver.Tle5012bd_Driver_SscActivate'
+	.align	2
+	
+	.global	Tle5012bd_Driver_SscActivate
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   130  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   131  /*
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   132   * Align with old IPB motorControl_RotorZeroPositionInit:
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   133   * ChangeAngleDirection + read_all after MCU SPI is up.
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   134   * Also clears SSC confusion left by Port/Spi pin toggling at boot
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   135   * (same effect as unplugging/replugging the sensor cable).
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   136   */
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   137  Std_ReturnType Tle5012bd_Driver_SscActivate(void)
+; Function Tle5012bd_Driver_SscActivate
+Tle5012bd_Driver_SscActivate:	.type	func
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   138  {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   139    uint8 i;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   140    uint16 aval;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   141  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   142    if (Spi_GetStatus() != SPI_IDLE)
+	call	Spi_GetStatus
+	jeq	d2,#1,.L13
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   143    {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   144      return E_NOT_OK;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   145    }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   146  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   147    /* Let CS stay idle after boot noise / pin mux. */
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   148    tle5012b_delay_us(1000U);
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   149  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   150    for (i = 0U; i < 5U; i++)
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   151    {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   152      Tle5012bd_SscLastStat = tle5012b_read_fast(STAT);
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   153      tle5012b_delay_us(100U);
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   154    }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   155  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   156    for (i = 0U; i < 3U; i++)
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   157    {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   158      (void)tle5012b_read_fast(AVAL);
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   159      tle5012b_delay_us(100U);
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   160    }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   161  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   162    /* Same as old IPB: force known ANG_DIR path + dummy AVAL. */
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   163    (void)tle5012b_ChangeAngleDirection(counterclockwise);
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   164    tle5012b_delay_us(150U);
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   165    tle5012b_read_all();
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   166  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   167    aval = tle5012b_read_fast(AVAL);
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   168    Tle5012bd_SscLastAval = aval;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   169    Tle5012bd_Sensor.Original_Angle = (float32)(aval & 0x7FFFU);
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   170  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   171    Tle5012bd_SscActivateDone = 1U;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   172    Tle5012bd_SscActivateResult = 1U;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   173    Tle5012bd_State = TLE5012BD_STATE_READY;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   174    return E_OK;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   175  }
+	mov	d2,#1
+	ret
+.L13:
+	mov	d4,#1000
+	call	tle5012b_delay_us
+	mov.a	a15,#4
+.L15:
+	mov	d4,#0
+	call	tle5012b_read_fast
+	st.h	Tle5012bd_SscLastStat,d2
+	mov	d4,#100
+	call	tle5012b_delay_us
+	loop	a15,.L15
+	mov.a	a15,#2
+.L16:
+	mov	d4,#2
+	call	tle5012b_read_fast
+	mov	d4,#100
+	call	tle5012b_delay_us
+	loop	a15,.L16
+	mov	d4,#0
+	call	tle5012b_ChangeAngleDirection
+	mov	d4,#150
+	call	tle5012b_delay_us
+	call	tle5012b_read_all
+	mov	d4,#2
+	call	tle5012b_read_fast
+	insert	d15,d2,#0,#15,#17
+	movh.a	a15,#@his(Tle5012bd_Sensor+4)
+	st.h	Tle5012bd_SscLastAval,d2
+	mov	d2,#0
+	utof	d15,d15
+	st.w	[a15]@los(Tle5012bd_Sensor+4),d15
+	mov	d15,#1
+	st.b	Tle5012bd_SscActivateDone,d15
+	st.b	Tle5012bd_SscActivateResult,d15
+	mov	d15,#2
+	st.b	Tle5012bd_State,d15
+	ret
+	
+__Tle5012bd_Driver_SscActivate_function_end:
+	.size	Tle5012bd_Driver_SscActivate,__Tle5012bd_Driver_SscActivate_function_end-Tle5012bd_Driver_SscActivate
+	; End of function
+	
+	.sdecl	'.text.Tle5012bd_Driver.Tle5012bd_Driver_GetState',code
+	.sect	'.text.Tle5012bd_Driver.Tle5012bd_Driver_GetState'
+	.align	2
+	
+	.global	Tle5012bd_Driver_GetState
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   176  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   177  Tle5012bd_StateType Tle5012bd_Driver_GetState(void)
+; Function Tle5012bd_Driver_GetState
+Tle5012bd_Driver_GetState:	.type	func
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   178  {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   179    return Tle5012bd_State;
+	ld.bu	d2,Tle5012bd_State
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   180  }
+	ret
+	
+__Tle5012bd_Driver_GetState_function_end:
+	.size	Tle5012bd_Driver_GetState,__Tle5012bd_Driver_GetState_function_end-Tle5012bd_Driver_GetState
+	; End of function
+	
+	.sdecl	'.text.Tle5012bd_Driver.Tle5012bd_Driver_ReadAngle',code
+	.sect	'.text.Tle5012bd_Driver.Tle5012bd_Driver_ReadAngle'
+	.align	2
+	
+	.global	Tle5012bd_Driver_ReadAngle
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   181  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   182  void Tle5012bd_Driver_ReadAngle(Tle5012 *sensor)
+; Function Tle5012bd_Driver_ReadAngle
+Tle5012bd_Driver_ReadAngle:	.type	func
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   183  {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   184    if ((sensor != NULL_PTR) && (Tle5012bd_State == TLE5012BD_STATE_READY))
+	jz.a	a4,.L19
+	ld.bu	d15,Tle5012bd_State
+	jne	d15,#2,.L20
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   185    {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   186      tle5012b_read_angle(sensor);
+	j	tle5012b_read_angle
+.L20:
+.L19:
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   187    }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   188  }
+	ret
+	
+__Tle5012bd_Driver_ReadAngle_function_end:
+	.size	Tle5012bd_Driver_ReadAngle,__Tle5012bd_Driver_ReadAngle_function_end-Tle5012bd_Driver_ReadAngle
+	; End of function
+	
+	.sdecl	'.text.Tle5012bd_Driver.Tle5012bd_Driver_ReadAngleSpeed',code
+	.sect	'.text.Tle5012bd_Driver.Tle5012bd_Driver_ReadAngleSpeed'
+	.align	2
+	
+	.global	Tle5012bd_Driver_ReadAngleSpeed
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   189  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   190  void Tle5012bd_Driver_ReadAngleSpeed(Tle5012 *sensor)
+; Function Tle5012bd_Driver_ReadAngleSpeed
+Tle5012bd_Driver_ReadAngleSpeed:	.type	func
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   191  {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   192    if ((sensor != NULL_PTR) && (Tle5012bd_State == TLE5012BD_STATE_READY))
+	jz.a	a4,.L21
+	ld.bu	d15,Tle5012bd_State
+	jne	d15,#2,.L22
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   193    {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   194      tle5012b_read_AngleSpeed(sensor);
+	j	tle5012b_read_AngleSpeed
+.L22:
+.L21:
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   195    }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   196  }
+	ret
+	
+__Tle5012bd_Driver_ReadAngleSpeed_function_end:
+	.size	Tle5012bd_Driver_ReadAngleSpeed,__Tle5012bd_Driver_ReadAngleSpeed_function_end-Tle5012bd_Driver_ReadAngleSpeed
+	; End of function
+	
+	.sdecl	'.text.Tle5012bd_Driver.Tle5012bd_Driver_AngleAsyncKick',code
+	.sect	'.text.Tle5012bd_Driver.Tle5012bd_Driver_AngleAsyncKick'
+	.align	2
+	
+	.global	Tle5012bd_Driver_AngleAsyncKick
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   197  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   198  Std_ReturnType Tle5012bd_Driver_AngleAsyncKick(void)
+; Function Tle5012bd_Driver_AngleAsyncKick
+Tle5012bd_Driver_AngleAsyncKick:	.type	func
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   199  {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   200    if (Tle5012bd_State != TLE5012BD_STATE_READY)
+	ld.bu	d15,Tle5012bd_State
+	jeq	d15,#2,.L23
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   201    {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   202      return E_NOT_OK;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   203    }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   204    return Tle5012bd_SpiStartExchangeU32(TLE5012BD_AVAL_READ_TX);
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   205  }
+	mov	d2,#1
+	ret
+.L23:
+	ld.w	d4,.9.cnt
+	j	Tle5012bd_SpiStartExchangeU32
+	
+__Tle5012bd_Driver_AngleAsyncKick_function_end:
+	.size	Tle5012bd_Driver_AngleAsyncKick,__Tle5012bd_Driver_AngleAsyncKick_function_end-Tle5012bd_Driver_AngleAsyncKick
+	; End of function
+	
+	.sdecl	'.text.Tle5012bd_Driver.Tle5012bd_Driver_AngleAsyncTryConsume',code
+	.sect	'.text.Tle5012bd_Driver.Tle5012bd_Driver_AngleAsyncTryConsume'
+	.align	2
+	
+	.global	Tle5012bd_Driver_AngleAsyncTryConsume
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   206  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   207  uint8 Tle5012bd_Driver_AngleAsyncTryConsume(Tle5012 *sensor)
+; Function Tle5012bd_Driver_AngleAsyncTryConsume
+Tle5012bd_Driver_AngleAsyncTryConsume:	.type	func
+	sub.a	a10,#8
+	mov.aa	a15,a4
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   208  {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   209    uint32 rxWord = 0U;
+	mov	d15,#0
+	st.w	[a10],d15
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   210    Tle5012bd_SpiXferStateType st;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   211  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   212    if (sensor == NULL_PTR)
+	jz.a	a15,.L26
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   213    {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   214      return 0U;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   215    }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   216  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   217    st = Tle5012bd_SpiPollExchange();
+	call	Tle5012bd_SpiPollExchange
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   218    if (st == TLE5012BD_SPI_XFER_PENDING)
+	jeq	d2,#1,.L27
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   219    {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   220      return 0U;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   221    }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   222    if (st == TLE5012BD_SPI_XFER_FAIL)
+	jne	d2,#3,.L28
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   223    {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   224      (void)Tle5012bd_SpiTakeRxWord(&rxWord); /* clears FAIL → IDLE */
+	mov.aa	a4,a10
+	call	Tle5012bd_SpiTakeRxWord
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   225      return 0U;
+	j	.L29
+.L28:
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   226    }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   227    if (st != TLE5012BD_SPI_XFER_OK)
+	jne	d2,#2,.L30
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   228    {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   229      return 0U;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   230    }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   231  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   232    if (Tle5012bd_SpiTakeRxWord(&rxWord) != E_OK)
+	mov.aa	a4,a10
+	call	Tle5012bd_SpiTakeRxWord
+	jeq	d2,#0,.L31
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   233    {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   234      return 0U;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   235    }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   236  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   237    Tle5012bd_Driver_ApplyAvalRaw(sensor, (uint16)(rxWord & 0xFFFFU));
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   238    return 1U;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   239  }
+.L30:
+.L29:
+.L27:
+.L26:
+	mov	d2,#0
+	ret
+.L31:
+	ld.hu	d4,[a10]0
+	mov.aa	a4,a15
+	call	Tle5012bd_Driver_ApplyAvalRaw
+	mov	d2,#1
+	ret
+	
+__Tle5012bd_Driver_AngleAsyncTryConsume_function_end:
+	.size	Tle5012bd_Driver_AngleAsyncTryConsume,__Tle5012bd_Driver_AngleAsyncTryConsume_function_end-Tle5012bd_Driver_AngleAsyncTryConsume
+	; End of function
+	
+	.sdecl	'.text.Tle5012bd_Driver.Tle5012bd_Driver_DiscardCompletedSpi',code
+	.sect	'.text.Tle5012bd_Driver.Tle5012bd_Driver_DiscardCompletedSpi'
+	.align	2
+	
+	.global	Tle5012bd_Driver_DiscardCompletedSpi
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   240  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   241  void Tle5012bd_Driver_DiscardCompletedSpi(void)
+; Function Tle5012bd_Driver_DiscardCompletedSpi
+Tle5012bd_Driver_DiscardCompletedSpi:	.type	func
+	sub.a	a10,#8
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   242  {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   243    Tle5012bd_SpiXferStateType spiSt = Tle5012bd_SpiPollExchange();
+	call	Tle5012bd_SpiPollExchange
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   244  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   245    if ((spiSt == TLE5012BD_SPI_XFER_OK) || (spiSt == TLE5012BD_SPI_XFER_FAIL))
+	jeq	d2,#2,.L34
+	jne	d2,#3,.L35
+.L34:
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   246    {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   247      uint32 dropRx;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   248  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   249      (void)Tle5012bd_SpiTakeRxWord(&dropRx);
+	mov.aa	a4,a10
+	j	Tle5012bd_SpiTakeRxWord
+.L35:
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   250    }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   251  }
+	ret
+	
+__Tle5012bd_Driver_DiscardCompletedSpi_function_end:
+	.size	Tle5012bd_Driver_DiscardCompletedSpi,__Tle5012bd_Driver_DiscardCompletedSpi_function_end-Tle5012bd_Driver_DiscardCompletedSpi
+	; End of function
+	
+	.sdecl	'.text.Tle5012bd_Driver.Tle5012bd_Driver_GetElectricalAngleRad',code
+	.sect	'.text.Tle5012bd_Driver.Tle5012bd_Driver_GetElectricalAngleRad'
+	.align	2
+	
+	.global	Tle5012bd_Driver_GetElectricalAngleRad
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   252  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   253  float32 Tle5012bd_Driver_GetElectricalAngleRad(void)
+; Function Tle5012bd_Driver_GetElectricalAngleRad
+Tle5012bd_Driver_GetElectricalAngleRad:	.type	func
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   254  {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   255    float32 electricalAngle = Tle5012bd_Sensor.anglePi *
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   256                              (float32)Tle5012bd_Sensor.polePairs;
+	movh.a	a15,#@his(Tle5012bd_Sensor)
+	lea	a15,[a15]@los(Tle5012bd_Sensor)
+	ld.bu	d0,[a15]36
+	ld.w	d15,[a15]8
+	utof	d0,d0
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   257  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   258    while (electricalAngle >= M_TWOPI)
+	mul.f	d2,d15,d0
+	ld.w	d0,.3.cnt
+	j	.L36
+.L37:
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   259    {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   260      electricalAngle -= M_TWOPI;
+	sub.f	d2,d2,d0
+.L36:
+	cmp.f	d15,d2,d0
+	and	d15,#6
+	jne	d15,#0,.L37
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   261    }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   262    while (electricalAngle < 0.0F)
+	j	.L38
+.L39:
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   263    {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   264      electricalAngle += M_TWOPI;
+	add.f	d2,d2,d0
+.L38:
+	cmp.f	d1,d2,d15
+	jnz.t	d1:0,.L39
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   265    }
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   266  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   267    return electricalAngle;
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   268  }
+	ret
+	
+__Tle5012bd_Driver_GetElectricalAngleRad_function_end:
+	.size	Tle5012bd_Driver_GetElectricalAngleRad,__Tle5012bd_Driver_GetElectricalAngleRad_function_end-Tle5012bd_Driver_GetElectricalAngleRad
+	; End of function
+	
+	.sdecl	'.text.Tle5012bd_Driver.Tle5012bd_Driver_GetMechanicalRpm',code
+	.sect	'.text.Tle5012bd_Driver.Tle5012bd_Driver_GetMechanicalRpm'
+	.align	2
+	
+	.global	Tle5012bd_Driver_GetMechanicalRpm
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   269  
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   270  float32 Tle5012bd_Driver_GetMechanicalRpm(void)
+; Function Tle5012bd_Driver_GetMechanicalRpm
+Tle5012bd_Driver_GetMechanicalRpm:	.type	func
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   271  {
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   272    return Tle5012bd_Sensor.RPM;
+	movh.a	a15,#@his(Tle5012bd_Sensor+20)
+	ld.w	d2,[a15]@los(Tle5012bd_Sensor+20)
+
+; ..\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.c	   273  }
+	ret
+	
+__Tle5012bd_Driver_GetMechanicalRpm_function_end:
+	.size	Tle5012bd_Driver_GetMechanicalRpm,__Tle5012bd_Driver_GetMechanicalRpm_function_end-Tle5012bd_Driver_GetMechanicalRpm
+	; End of function
+	
+	.sdecl	'.bss.Tle5012bd_Driver.Tle5012bd_Sensor',data
+	.sect	'.bss.Tle5012bd_Driver.Tle5012bd_Sensor'
+	.global	Tle5012bd_Sensor
+	.align	4
+Tle5012bd_Sensor:	.type	object
+	.size	Tle5012bd_Sensor,40
+	.space	40
+	.sdecl	'.zdata.Tle5012bd_Driver.Tle5012bd_State',data
+	.sect	'.zdata.Tle5012bd_Driver.Tle5012bd_State'
+Tle5012bd_State:	.type	object
+	.size	Tle5012bd_State,1
+	.space	1
+	.sdecl	'.zdata.Tle5012bd_Driver.Tle5012bd_SscActivateDone',data
+	.sect	'.zdata.Tle5012bd_Driver.Tle5012bd_SscActivateDone'
+	.global	Tle5012bd_SscActivateDone
+Tle5012bd_SscActivateDone:	.type	object
+	.size	Tle5012bd_SscActivateDone,1
+	.space	1
+	.sdecl	'.zdata.Tle5012bd_Driver.Tle5012bd_SscActivateResult',data
+	.sect	'.zdata.Tle5012bd_Driver.Tle5012bd_SscActivateResult'
+	.global	Tle5012bd_SscActivateResult
+Tle5012bd_SscActivateResult:	.type	object
+	.size	Tle5012bd_SscActivateResult,1
+	.space	1
+	.sdecl	'.zdata.Tle5012bd_Driver.Tle5012bd_SscLastStat',data
+	.sect	'.zdata.Tle5012bd_Driver.Tle5012bd_SscLastStat'
+	.global	Tle5012bd_SscLastStat
+	.align	2
+Tle5012bd_SscLastStat:	.type	object
+	.size	Tle5012bd_SscLastStat,2
+	.space	2
+	.sdecl	'.zdata.Tle5012bd_Driver.Tle5012bd_SscLastAval',data
+	.sect	'.zdata.Tle5012bd_Driver.Tle5012bd_SscLastAval'
+	.global	Tle5012bd_SscLastAval
+	.align	2
+Tle5012bd_SscLastAval:	.type	object
+	.size	Tle5012bd_SscLastAval,2
+	.space	2
+	.sdecl	'.zdata.Tle5012bd_Driver._999001_s_lastGoodAngVal',data
+	.sect	'.zdata.Tle5012bd_Driver._999001_s_lastGoodAngVal'
+	.align	2
+_999001_s_lastGoodAngVal:	.type	object
+	.size	_999001_s_lastGoodAngVal,2
+	.space	2
+	.sdecl	'.zdata.Tle5012bd_Driver._999002_s_haveLastGood',data
+	.sect	'.zdata.Tle5012bd_Driver._999002_s_haveLastGood'
+_999002_s_haveLastGood:	.type	object
+	.size	_999002_s_haveLastGood,1
+	.space	1
+	.calls	'Tle5012bd_Driver_SscActivate','Spi_GetStatus'
+	.calls	'Tle5012bd_Driver_SscActivate','tle5012b_delay_us'
+	.calls	'Tle5012bd_Driver_SscActivate','tle5012b_read_fast'
+	.calls	'Tle5012bd_Driver_SscActivate','tle5012b_ChangeAngleDirection'
+	.calls	'Tle5012bd_Driver_SscActivate','tle5012b_read_all'
+	.calls	'Tle5012bd_Driver_ReadAngle','tle5012b_read_angle'
+	.calls	'Tle5012bd_Driver_ReadAngleSpeed','tle5012b_read_AngleSpeed'
+	.calls	'Tle5012bd_Driver_AngleAsyncKick','Tle5012bd_SpiStartExchangeU32'
+	.calls	'Tle5012bd_Driver_AngleAsyncTryConsume','Tle5012bd_SpiPollExchange'
+	.calls	'Tle5012bd_Driver_AngleAsyncTryConsume','Tle5012bd_SpiTakeRxWord'
+	.calls	'Tle5012bd_Driver_AngleAsyncTryConsume','Tle5012bd_Driver_ApplyAvalRaw'
+	.calls	'Tle5012bd_Driver_DiscardCompletedSpi','Tle5012bd_SpiPollExchange'
+	.calls	'Tle5012bd_Driver_DiscardCompletedSpi','Tle5012bd_SpiTakeRxWord'
+	.calls	'Tle5012bd_Driver_ApplyAvalRaw','',0
+	.calls	'Tle5012bd_Driver_Init','',0
+	.calls	'Tle5012bd_Driver_SscActivate','',0
+	.calls	'Tle5012bd_Driver_GetState','',0
+	.calls	'Tle5012bd_Driver_ReadAngle','',0
+	.calls	'Tle5012bd_Driver_ReadAngleSpeed','',0
+	.calls	'Tle5012bd_Driver_AngleAsyncKick','',0
+	.calls	'Tle5012bd_Driver_AngleAsyncTryConsume','',8
+	.calls	'Tle5012bd_Driver_DiscardCompletedSpi','',8
+	.calls	'Tle5012bd_Driver_GetElectricalAngleRad','',0
+	.extern	tle5012_sfr
+	.extern	tle5012b_delay_us
+	.extern	tle5012b_read_fast
+	.extern	tle5012b_read_AngleSpeed
+	.extern	tle5012b_read_angle
+	.extern	tle5012b_ChangeAngleDirection
+	.extern	tle5012b_read_all
+	.extern	Tle5012bd_SpiStartExchangeU32
+	.extern	Tle5012bd_SpiPollExchange
+	.extern	Tle5012bd_SpiTakeRxWord
+	.extern	Spi_GetStatus
+	.calls	'Tle5012bd_Driver_GetMechanicalRpm','',0
+
+
+	; Module end

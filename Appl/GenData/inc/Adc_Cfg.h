@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 10.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-07-15, 16:43:11        !!!IGNORE-LINE!!!                 **
+**  DATE, TIME: 2024-07-25, 16:05:57        !!!IGNORE-LINE!!!                 **
 **                                                                            **
 **  GENERATOR : Build b191017-0938          !!!IGNORE-LINE!!!                 **
 **                                                                            **
@@ -150,7 +150,7 @@ Calibration API configuration
 - if STD_ON, Adc_GetStartupCalStatus() and Adc_TriggerStartupCal() API are available
 - if STD_OFF, Adc_GetStartupCalStatus() and Adc_TriggerStartupCal() API are not available
 */
-#define ADC_STARTUP_CALIB_API  (STD_OFF)
+#define ADC_STARTUP_CALIB_API  (STD_ON)
 /* Configuration: ADC_TRIGGER_ONE_CONV_ENABLE
 Dummy Converison before startup calibration (Refer Errata ADC_TC.083)
 - if STD_ON, Execute of one dummy conversion for each configured HW unit, before start-up calibration is triggered in the API Adc_TriggerStartupCal()

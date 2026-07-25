@@ -15,7 +15,7 @@
 **                                                                            **
 **  VERSION   : 17.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-07-15, 16:43:12  !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2024-07-25, 16:05:59  !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  GENERATOR : Build b191017-0938      !!!IGNORE-LINE!!!                   **
 **                                                                            **
@@ -174,6 +174,22 @@ static const Spi_ChannelType SpiJob_35584_ChannelLinkPtr_Physical[] =
   
   SPI_CHANNEL_DELIMITER
 };
+    /* Linked list of sequence[s] with Job[s] shared  */
+static const Spi_SequenceType SpiSequence_9183_SeqSharePtr[] =
+{
+  SPI_SEQUENCE_DELIMITER
+};
+
+static const Spi_SequenceType SpiSequence_5012BD_SeqSharePtr[] =
+{
+  SPI_SEQUENCE_DELIMITER
+};
+
+static const Spi_SequenceType SpiSequence_35584_SeqSharePtr[] =
+{
+  SPI_SEQUENCE_DELIMITER
+};
+
 
 /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
 * because of AS naming convention*/
@@ -219,41 +235,54 @@ static const Spi_SequenceConfigType Spi_kSequenceConfig_Core0[] =
         /* Sequence:SpiSequence_35584 */
   {
     SpiConf_SpiSequence_SpiSequence_35584,
+    /* Notification function */
+    NULL_PTR,
     /* Job linked list */
     SpiSequence_35584_JobLinkPtr_Physical,
+    /* Seq linked list, with jobs shared */
+    SpiSequence_35584_SeqSharePtr,
     /* No. of jobs in Seq */
     1U,
         /* Hw Module Used (b000001)*/
     0x01U,
         
-              0U /* Sync Sequence */
-      },
+                    0U /* Sync Sequence */
+                  },
     /* Synchronous Sequence[s] */
     /* Sequence:SpiSequence_5012BD */
   {
     SpiConf_SpiSequence_SpiSequence_5012BD,
+    /* Notification function */
+    NULL_PTR,
     /* Job linked list */
     SpiSequence_5012BD_JobLinkPtr_Physical,
+    /* Seq linked list, with jobs shared */
+    SpiSequence_5012BD_SeqSharePtr,
     /* No. of jobs in Seq */
     1U,
         /* Hw Module Used (b000010)*/
     0x02U,
         
-              0U /* Sync Sequence */
-      },
+            
+          1U /* Async Sequence */
+            },
     /* Synchronous Sequence[s] */
     /* Sequence:SpiSequence_9183 */
   {
     SpiConf_SpiSequence_SpiSequence_9183,
+    /* Notification function */
+    NULL_PTR,
     /* Job linked list */
     SpiSequence_9183_JobLinkPtr_Physical,
+    /* Seq linked list, with jobs shared */
+    SpiSequence_9183_SeqSharePtr,
     /* No. of jobs in Seq */
     1U,
         /* Hw Module Used (b000011)*/
     0x03U,
         
-              0U /* Sync Sequence */
-      }};
+                    0U /* Sync Sequence */
+                  }};
 
 /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
 * because of AS naming convention*/
@@ -301,17 +330,18 @@ static const Spi_JobConfigType Spi_kJobConfig_Core0[] =
   /* Job:SpiJob_35584 */
   {
     SpiConf_SpiJob_SpiJob_35584,
+    NULL_PTR,                   /* No Notification function */
     Spi_BaudRateAndClockParam(  /* Baudrate = 1000000.0Hz */
-    (0x27U), (0x00U),          /* TQ , LoopBack */
+    (0x13U), (0x00U),          /* TQ , LoopBack */
     (0x01U), (0x00U),          /*  Q , A        */
     (0x00U), (0x01U),          /*  B , C        */
     (0x01U), (0x00U),          /*  CPH , CPOL   */
     (0x00U)                    /*  PAREN        */
     ),
     Spi_IdleLeadTrailParam(
-    (2U), (0U), /* IPRE,IDLE:   IdleA/B delay = 1.0E-7s */
-    (2U), (0U), /* LPRE,LEAD:   Lead delay    = 1.0E-7s */
-    (2U), (0U),/* TPRE, TRAIL: Trail delay   = 1.0E-7s */
+    (1U), (1U), /* IPRE,IDLE:   IdleA/B delay = 1.0E-7s */
+    (1U), (1U), /* LPRE,LEAD:   Lead delay    = 1.0E-7s */
+    (1U), (1U),/* TPRE, TRAIL: Trail delay   = 1.0E-7s */
     (1U)
     ),
     SpiJob_35584_ChannelLinkPtr_Physical, /* Channel linked list Physical*/
@@ -327,43 +357,45 @@ static const Spi_JobConfigType Spi_kJobConfig_Core0[] =
   /* Job:SpiJob_5012BD */
   {
     SpiConf_SpiJob_SpiJob_5012BD,
-    Spi_BaudRateAndClockParam(  /* Baudrate = 1000000.0Hz */
-    (0x27U), (0x00U),          /* TQ , LoopBack */
+    NULL_PTR,                   /* No Notification function */
+    Spi_BaudRateAndClockParam(  /* Baudrate = 4000000.0Hz */
+    (0x04U), (0x00U),          /* TQ , LoopBack */
     (0x01U), (0x00U),          /*  Q , A        */
     (0x00U), (0x01U),          /*  B , C        */
     (0x01U), (0x00U),          /*  CPH , CPOL   */
     (0x00U)                    /*  PAREN        */
     ),
     Spi_IdleLeadTrailParam(
-    (2U), (0U), /* IPRE,IDLE:   IdleA/B delay = 1.0E-7s */
-    (2U), (0U), /* LPRE,LEAD:   Lead delay    = 1.0E-7s */
-    (2U), (0U),/* TPRE, TRAIL: Trail delay   = 1.0E-7s */
+    (1U), (5U), /* IPRE,IDLE:   IdleA/B delay = 3.0E-7s */
+    (1U), (5U), /* LPRE,LEAD:   Lead delay    = 3.0E-7s */
+    (1U), (5U),/* TPRE, TRAIL: Trail delay   = 3.0E-7s */
     (1U)
     ),
     SpiJob_5012BD_ChannelLinkPtr_Physical, /* Channel linked list Physical*/
     SPI_CS_VIA_HW_OR_NONE,   /* CS_VIA_HW */
-    (uint8)0U,               /* Job Priority : 0...3*/
+    (uint8)2U,               /* Job Priority : 0...3*/
     (uint8)STD_LOW,              /* CS polarity */
     /* Chnl[bit:7:4],QSPI[3:0] */
     (uint8)((SPI_QSPI_CHANNEL2 << 4U)|SPI_QSPI2_INDEX),
     SPI_PARITY_UNUSED,        /* Parity support */
-    (0U)                    /*Frame based CS is disabled*/
+    (1U)                    /*Frame based CS is enabled*/
   },
   /* Synchronous Job[s] */
   /* Job:SpiJob_9183 */
   {
     SpiConf_SpiJob_SpiJob_9183,
+    NULL_PTR,                   /* No Notification function */
     Spi_BaudRateAndClockParam(  /* Baudrate = 1000000.0Hz */
-    (0x27U), (0x00U),          /* TQ , LoopBack */
+    (0x13U), (0x00U),          /* TQ , LoopBack */
     (0x01U), (0x00U),          /*  Q , A        */
     (0x00U), (0x01U),          /*  B , C        */
     (0x00U), (0x00U),          /*  CPH , CPOL   */
     (0x00U)                    /*  PAREN        */
     ),
     Spi_IdleLeadTrailParam(
-    (2U), (0U), /* IPRE,IDLE:   IdleA/B delay = 1.0E-7s */
-    (2U), (0U), /* LPRE,LEAD:   Lead delay    = 1.0E-7s */
-    (2U), (0U),/* TPRE, TRAIL: Trail delay   = 1.0E-7s */
+    (1U), (1U), /* IPRE,IDLE:   IdleA/B delay = 1.0E-7s */
+    (1U), (1U), /* LPRE,LEAD:   Lead delay    = 1.0E-7s */
+    (1U), (1U),/* TPRE, TRAIL: Trail delay   = 1.0E-7s */
     (1U)
     ),
     SpiJob_9183_ChannelLinkPtr_Physical, /* Channel linked list Physical*/
@@ -489,6 +521,9 @@ static const Spi_QspiHwConfigType Spi_kQspiHwConfigQSPI1 =
 {
   0x00200000U,               /* Active CS Level, SSOC SFR value */
   0U,                        /* Queue length can be ignored for Sync */
+  (uint8)SPI_DMA_CHNL_INVALID,   /* DMA Tx Channel */
+  (uint8)SPI_DMA_CHNL_INVALID,   /* DMA Rx Channel */
+  0U,                        /* DMA TCS value can be ignored for Sync */
   SPI_CLK_SLEEP_DISABLE,     /* Module Sleep disabled */
   (uint8)1U,                 /* Input class, MRIS bit field in PISEL SFR */
   1U,                         /* Max Sequence Count on the QSPI */
@@ -536,7 +571,10 @@ names
 static const Spi_QspiHwConfigType Spi_kQspiHwConfigQSPI2 =
 {
   0x00040000U,               /* Active CS Level, SSOC SFR value */
-  0U,                        /* Queue length can be ignored for Sync */
+  SPI_JOB_QUEUE_LENGTH_QSPI2,/* Job Queue Length */
+  (uint8)4U,                 /* DMA Rx Channel */
+  (uint8)5U,                 /* DMA Tx Channel */
+  SPI_DMA_MAX_TCS_NUM_QSPI2, /* DMA TCS count, for both Rx and Tx */
   SPI_CLK_SLEEP_DISABLE,     /* Module Sleep disabled */
   (uint8)1U,                 /* Input class, MRIS bit field in PISEL SFR */
   1U,                         /* Max Sequence Count on the QSPI */
@@ -585,6 +623,9 @@ static const Spi_QspiHwConfigType Spi_kQspiHwConfigQSPI3 =
 {
   0x10000000U,               /* Active CS Level, SSOC SFR value */
   0U,                        /* Queue length can be ignored for Sync */
+  (uint8)SPI_DMA_CHNL_INVALID,   /* DMA Tx Channel */
+  (uint8)SPI_DMA_CHNL_INVALID,   /* DMA Rx Channel */
+  0U,                        /* DMA TCS value can be ignored for Sync */
   SPI_CLK_SLEEP_DISABLE,     /* Module Sleep disabled */
   (uint8)3U,                 /* Input class, MRIS bit field in PISEL SFR */
   1U,                         /* Max Sequence Count on the QSPI */
@@ -707,10 +748,10 @@ const Spi_CoreConfigType Spi_Config_Core0 =
   QSPI5 - 0
   QSPI4 - 0
   QSPI3 - 1
-  QSPI2 - 1
+  QSPI2 - 2
   QSPI1 - 1
   QSPI0 - 0*/
-  0x00248U,
+  0x00288U,
   /* No. of Sequences configured */
   3U,
   /* No. of Jobs configured */

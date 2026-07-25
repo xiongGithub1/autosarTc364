@@ -1,0 +1,84 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc20100a --dep-file=Appl\\GenData\\.E2EXf_LCfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=Appl\\GenData\\E2EXf_LCfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\E2EXf_LCfg.src ..\\Appl\\GenData\\E2EXf_LCfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\GenData\\E2EXf_LCfg.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.E2EXf_LCfg.E2EXf_Init_Calls',code
+	.sect	'.text.E2EXf_LCfg.E2EXf_Init_Calls'
+	.align	2
+	
+	.global	E2EXf_Init_Calls
+
+; ..\Appl\GenData\E2EXf_LCfg.c	     1  /**********************************************************************************************************************
+; ..\Appl\GenData\E2EXf_LCfg.c	     2   *  COPYRIGHT
+; ..\Appl\GenData\E2EXf_LCfg.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\E2EXf_LCfg.c	     4   *  \verbatim
+; ..\Appl\GenData\E2EXf_LCfg.c	     5   *
+; ..\Appl\GenData\E2EXf_LCfg.c	     6   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\Appl\GenData\E2EXf_LCfg.c	     7   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\Appl\GenData\E2EXf_LCfg.c	     8   *                All other rights remain with Vector Informatik GmbH.
+; ..\Appl\GenData\E2EXf_LCfg.c	     9   *  \endverbatim
+; ..\Appl\GenData\E2EXf_LCfg.c	    10   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\E2EXf_LCfg.c	    11   *  FILE DESCRIPTION
+; ..\Appl\GenData\E2EXf_LCfg.c	    12   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\E2EXf_LCfg.c	    13   *             File:  E2EXf_LCfg.c
+; ..\Appl\GenData\E2EXf_LCfg.c	    14   *           Config:  last364.dpa
+; ..\Appl\GenData\E2EXf_LCfg.c	    15   *      ECU-Project:  last364
+; ..\Appl\GenData\E2EXf_LCfg.c	    16   *
+; ..\Appl\GenData\E2EXf_LCfg.c	    17   *        Generator:  MICROSAR E2EXf Generator Version 1.16.0
+; ..\Appl\GenData\E2EXf_LCfg.c	    18   *                    RTE Core Version 1.29.0
+; ..\Appl\GenData\E2EXf_LCfg.c	    19   *          License:  CBD2200508
+; ..\Appl\GenData\E2EXf_LCfg.c	    20   *
+; ..\Appl\GenData\E2EXf_LCfg.c	    21   *      Description:  MICROSAR E2EXf implementation file for link-time variant
+; ..\Appl\GenData\E2EXf_LCfg.c	    22   *********************************************************************************************************************/
+; ..\Appl\GenData\E2EXf_LCfg.c	    23  
+; ..\Appl\GenData\E2EXf_LCfg.c	    24  /* PRQA S 0777, 0779, 0857 EOF */ /* MD_MSR_Rule5.1, MD_MSR_Rule5.2, MD_MSR_Dir1.1 */
+; ..\Appl\GenData\E2EXf_LCfg.c	    25  
+; ..\Appl\GenData\E2EXf_LCfg.c	    26  /**********************************************************************************************************************
+; ..\Appl\GenData\E2EXf_LCfg.c	    27   *  INCLUDES
+; ..\Appl\GenData\E2EXf_LCfg.c	    28   *********************************************************************************************************************/
+; ..\Appl\GenData\E2EXf_LCfg.c	    29  
+; ..\Appl\GenData\E2EXf_LCfg.c	    30  #include "E2EXf_LCfg.h"
+; ..\Appl\GenData\E2EXf_LCfg.c	    31  
+; ..\Appl\GenData\E2EXf_LCfg.c	    32  #if !defined (E2EXF_LOCAL)
+; ..\Appl\GenData\E2EXf_LCfg.c	    33  # define E2EXF_LOCAL static
+; ..\Appl\GenData\E2EXf_LCfg.c	    34  #endif
+; ..\Appl\GenData\E2EXf_LCfg.c	    35  
+; ..\Appl\GenData\E2EXf_LCfg.c	    36  /**********************************************************************************************************************
+; ..\Appl\GenData\E2EXf_LCfg.c	    37   *  LOCAL DATA PROTOTYPES
+; ..\Appl\GenData\E2EXf_LCfg.c	    38   *********************************************************************************************************************/
+; ..\Appl\GenData\E2EXf_LCfg.c	    39  
+; ..\Appl\GenData\E2EXf_LCfg.c	    40  /**********************************************************************************************************************
+; ..\Appl\GenData\E2EXf_LCfg.c	    41   *  GLOBAL FUNCTIONS
+; ..\Appl\GenData\E2EXf_LCfg.c	    42   *********************************************************************************************************************/
+; ..\Appl\GenData\E2EXf_LCfg.c	    43  
+; ..\Appl\GenData\E2EXf_LCfg.c	    44  #define E2EXF_START_SEC_CODE
+; ..\Appl\GenData\E2EXf_LCfg.c	    45  #include "E2EXf_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\E2EXf_LCfg.c	    46  
+; ..\Appl\GenData\E2EXf_LCfg.c	    47  /***********************************************************************************************************************
+; ..\Appl\GenData\E2EXf_LCfg.c	    48   *  E2EXf_Init_Calls()
+; ..\Appl\GenData\E2EXf_LCfg.c	    49   **********************************************************************************************************************/
+; ..\Appl\GenData\E2EXf_LCfg.c	    50  FUNC(void, E2EXF_CODE) E2EXf_Init_Calls(void)
+; Function E2EXf_Init_Calls
+E2EXf_Init_Calls:	.type	func
+
+; ..\Appl\GenData\E2EXf_LCfg.c	    51  {
+; ..\Appl\GenData\E2EXf_LCfg.c	    52  } /* PRQA S 6050 */ /* MD_MSR_STCAL */
+	ret
+	
+__E2EXf_Init_Calls_function_end:
+	.size	E2EXf_Init_Calls,__E2EXf_Init_Calls_function_end-E2EXf_Init_Calls
+	; End of function
+	
+	.calls	'E2EXf_Init_Calls','',0
+
+; ..\Appl\GenData\E2EXf_LCfg.c	    53  
+; ..\Appl\GenData\E2EXf_LCfg.c	    54  #define E2EXF_STOP_SEC_CODE
+; ..\Appl\GenData\E2EXf_LCfg.c	    55  #include "E2EXf_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\E2EXf_LCfg.c	    56  
+
+	; Module end

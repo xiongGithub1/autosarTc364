@@ -1,0 +1,918 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc21252a --dep-file=BSW364\\PduR\\Implementation\\.PduR_RmTp_TxInst.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=BSW364\\PduR\\Implementation\\PduR_RmTp_TxInst.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW364\\PduR\\Implementation\\PduR_RmTp_TxInst.src ..\\BSW364\\PduR\\Implementation\\PduR_RmTp_TxInst.c"
+	.compiler_name		"ctc"
+	;source	'..\\BSW364\\PduR\\Implementation\\PduR_RmTp_TxInst.c'
+
+	
+$TC162
+	
+
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	     1  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	     2   *  COPYRIGHT
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	     4   *  \verbatim
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	     5   *  Copyright (c) 2021 by Vector Informatik GmbH.                                                  All rights reserved.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	     6   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    10   *  \endverbatim
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    11   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    12   *  FILE DESCRIPTION
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    13   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    14   *         File:  PduR_RmTp_TxInst.c
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    15   *      Project:  Gw_AsrPduRCfg5
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    16   *       Module:  MICROSAR PDU Router
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    17   *    Generator:  Configurator 5
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    18   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    19   *  Description:  Vector implementation of AUTOSAR PDU Router
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    20   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    21   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    22  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    23  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    24   *  REVISION HISTORY
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    25   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    26   *  Refer to the module's header file.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    27   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    28   *  FILE VERSION
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    29   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    30   *  Refer to the module's header file.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    31   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    32  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    33  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    34   * LOCAL MISRA / PCLINT JUSTIFICATION
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    35   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    36  /* PRQA  S 3673 EOF */ /* MD_MSR_Rule8.13 */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    37  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    38  #define PDUR_RMTP_TXINST_SOURCE
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    39  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    40   * INCLUDES
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    41   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    42  #include "PduR.h"
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    43  #include "PduR_Bm.h"
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    44  #include "PduR_Fm.h"
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    45  #include "PduR_RmTp.h"
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    46  #include "PduR_RmTp_TxInst.h"
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    47  #include "PduR_Lock.h"
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    48  #if (PDUR_DEV_ERROR_REPORT == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    49  # include "Det.h"
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    50  #endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    51  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    52  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    53   *  LOCAL CONSTANT MACROS
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    54   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    55  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    56  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    57   *  LOCAL FUNCTION MACROS
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    58   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    59  #if !defined (PDUR_LOCAL_INLINE)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    60  # define PDUR_LOCAL_INLINE LOCAL_INLINE
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    61  #endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    62  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    63  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    64   *  LOCAL DATA TYPES AND STRUCTURES
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    65   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    66  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    67  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    68   *  LOCAL DATA PROTOTYPES
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    69   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    70  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    71  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    72   *  GLOBAL DATA
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    73   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    74  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    75  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    76   *  LOCAL FUNCTION PROTOTYPES
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    77   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    78  #define PDUR_START_SEC_CODE
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    79  #include "PduR_MemMap.h" /* PRQA S 5087 */   /* MD_MSR_MemMap */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    80  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    81  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    82  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    83   * PduR_RmTp_TxInst_LoAndUpTransmit
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    84   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    85  /*! \brief      This function triggers the transmission on the destination bus(es). In case of a
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    86   *              1:N routing including a upper layer module StartOfReception/ CopyRxData/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    87   *              and the Indication API of the upper layer is called.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    88   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    89   *  \param[in]  rmGDestRomIdx    Routing Manager GDest Idx.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    90   *  \return     E_OK             successful transmission.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    91   *              E_NOT_OK         transmission failing
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    92   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    93   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    94  PDUR_LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_LoAndUpTransmit(PduR_RmGDestRomIterType rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    95  #endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    96  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    97  #if ((PDUR_UPTPOFMMROM == STD_ON) && (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON))
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    98  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	    99   * PduR_RmTp_TxInst_UpTransmit
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   100   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   101  /*! \brief      This function triggers the reception in an upper layer module in case of an
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   102   *              1:N routing including an upper layer module StartOfReception/ CopyRxData/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   103   *              an the Indication API of the upper layer is called.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   104   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   105   *  \param[in]  rmGDestRomIdx           Routing Manager GDest Idx.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   106   *  \trace      SPEC-2020176
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   107   *  \return     BUFREQ_OK               Buffer request was successful.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   108   *              BUFREQ_E_NOT_OK         Currently no buffer available.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   109   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   110   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   111  PDUR_LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_UpTransmit(PduR_RmGDestRomIterType rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   112  #endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   113  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   114  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   115  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   116   * PduR_RmTp_TxInst_LoTransmit
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   117   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   118  /*! \brief      This function triggers the transmission in an lower layer module.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   119   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   120   *  \param[in]  rmGDestRomIdx Routing Manager GDest Idx.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   121   *  \return     E_OK          Transmission successful.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   122   *              E_NOT_OK      Transmission not successful.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   123   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   124   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   125  PDUR_LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_LoTransmit(PduR_RmGDestRomIterType rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   126  #endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   127  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   128  # if ((PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON) && (PDUR_EXISTS_IMMEDIATE_PDURDESTPDUPROCESSINGOFRMGDESTROM == STD_ON))
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   129  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   130   * PduR_RmTp_TxInst_TriggerTransmit_Immediate
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   131   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   132  /*! \brief       The function is called to start the transmission and perform TxSm state handling
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   133   *  \details     TxSm is in the state "Idle"
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   134   *  \param[in]   rmDestRomIdx   Id of destination PDU reference.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   135   *  \param[in]   rmGDestRomIdx  Id of global PDU reference.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   136   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   137   *  \context     TASK|ISR1|ISR2
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   138   *  \reentrant   TRUE
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   139   *  \synchronous TRUE
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   140   ***********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   141  PDUR_LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_TriggerTransmit_Immediate(PduR_RmDestRomIterType rmDestRomIdx, PduR_RmGDestRomIterType rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   142  # endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   143  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   144  # if ((PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON) && (PDUR_EXISTS_DEFERRED_PDURDESTPDUPROCESSINGOFRMGDESTROM == STD_ON))
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   145  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   146   * PduR_RmTp_TxInst_TriggerTransmit_Deferred
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   147   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   148  /*! \brief       This function moves the tigger transmit call to the main task
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   149   *  \details     TxSm is in the state "Idle"
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   150   *  \param[in]   rmDestRomIdx   Id of destination PDU reference.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   151   *  \param[in]   rmGDestRomIdx  Id of global PDU reference.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   152   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   153   *  \context     TASK|ISR1|ISR2
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   154   *  \reentrant   TRUE
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   155   *  \synchronous TRUE
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   156   ***********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   157  PDUR_LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_TriggerTransmit_Deferred(PduR_RmDestRomIterType rmDestRomIdx, PduR_RmGDestRomIterType rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   158  # endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   159  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   160  # if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   161  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   162   * PduR_RmTp_TxInst_TriggerTransmit_FatalError
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   163   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   164  /*! \brief       If this function is called something went totally wrong
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   165   *  \details     -
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   166   *  \param[in]   rmDestRomIdx   Id of destination PDU reference.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   167   *  \param[in]   rmGDestRomIdx  Id of global PDU reference.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   168   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   169   *  \context     TASK|ISR1|ISR2
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   170   *  \reentrant   TRUE
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   171   *  \synchronous TRUE
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   172   ***********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   173  PDUR_LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_TriggerTransmit_FatalError(PduR_RmDestRomIterType rmDestRomIdx, PduR_RmGDestRomIterType rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   174  # endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   175  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   176  # if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   177  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   178   * PduR_RmTp_TxInst_CopyTxData_RmTxInstActive
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   179   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   180  /*! \brief       This function is called by the PduR GwTp to query the transmit data of an I-PDU segment.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   181   *  \details     TxSm is in the state "Active"
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   182   *  \param[in]   rmGDestRomIdx     Routing Manager GDest Idx.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   183   *  \param[in]   pduLength         length to copy.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   184   *  \param[out]  sduDataPtr        data pointer.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   185   *                                 A copy size of 0 can be used to get the available data size.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   186   *  \param[in]   retry             not supported
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   187   *  \param[out]  availableDataPtr  Indicates the remaining number of bytes that are available in the PduR Tx buffer.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   188   *                                 AvailableTxDataCntPtr can be used by TP modules that support dynamic payload lengths
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   189   *                                 (e.g. Iso FrTp) to determine the size of the following CFs.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   190   *  \return      BufReq_ReturnType
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   191   *               BUFREQ_OK         The data has been copied successfully.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   192   *               BUFREQ_E_NOT_OK   Get data fails.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   193   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   194   *  \context     TASK|ISR1|ISR2
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   195   *  \reentrant   TRUE
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   196   *  \synchronous TRUE
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   197   ***********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   198  PDUR_LOCAL_INLINE FUNC(BufReq_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_CopyTxData_RmTxInstActive(PduR_RmGDestRomIterType rmGDestRomIdx, PduLengthType pduLength,
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   199                                                                                SduDataPtrType sduDataPtr,
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   200                                                                                P2CONST(RetryInfoType, AUTOMATIC, PDUR_APPL_DATA) retry, P2VAR(PduLengthType, AUTOMATIC,
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   201                                                                                                                                               PDUR_APPL_DATA) availableDataPtr);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   202  # endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   203  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   204  # if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   205  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   206   * PduR_RmTp_TxInst_CopyTxData_UnexpectedCall
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   207   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   208  /*! \brief       This function is called by the PduR GwTp to query the transmit data of an I-PDU segment. But the
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   209   *               routing is already aborted.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   210   *  \details     TxSm is in the state "Aborted"
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   211   *  \param[in]   rmGDestRomIdx    Routing Manager GDest Idx.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   212   *  \param[in]   pduLength         length to copy.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   213   *  \param[out]  sduDataPtr        data pointer.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   214   *                                 A copy size of 0 can be used to get the available data size.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   215   *  \param[in]   retry             not supported
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   216   *  \param[out]  availableDataPtr  Indicates the remaining number of bytes that are available in the PduR Tx buffer.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   217   *                                 AvailableTxDataCntPtr can be used by TP modules that support dynamic payload lengths
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   218   *                                 (e.g. Iso FrTp) to determine the size of the following CFs.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   219   *  \return      BufReq_ReturnType
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   220   *               BUFREQ_OK         The data has been copied successfully.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   221   *               BUFREQ_E_NOT_OK   Get data fails.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   222   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   223   *  \context     TASK|ISR1|ISR2
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   224   *  \reentrant   TRUE
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   225   *  \synchronous TRUE
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   226   ***********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   227  PDUR_LOCAL_INLINE FUNC(BufReq_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_CopyTxData_UnexpectedCall(PduR_RmGDestRomIterType rmGDestRomIdx, PduLengthType pduLength,
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   228                                                                                SduDataPtrType sduDataPtr,
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   229                                                                                P2CONST(RetryInfoType, AUTOMATIC, PDUR_APPL_DATA) retry, P2VAR(PduLengthType, AUTOMATIC,
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   230                                                                                                                                               PDUR_APPL_DATA) availableDataPtr);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   231  # endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   232  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   233  # if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   234  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   235   * PduR_RmTp_TxInst_CopyTxData_RmTxInstAborted
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   236   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   237  /*! \brief       This function is called by the PduR GwTp to query the transmit data of an I-PDU segment. But the
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   238   *               routing is already aborted.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   239   *  \details     TxSm is in the state "Aborted"
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   240   *  \param[in]   rmGDestRomIdx     Routing Manager GDest Idx.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   241   *  \param[in]   pduLength         length to copy.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   242   *  \param[out]  sduDataPtr        data pointer.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   243   *                                 A copy size of 0 can be used to get the available data size.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   244   *  \param[in]   retry             not supported
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   245   *  \param[out]  availableDataPtr  Indicates the remaining number of bytes that are available in the PduR Tx buffer.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   246   *                                 AvailableTxDataCntPtr can be used by TP modules that support dynamic payload lengths
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   247   *                                 (e.g. Iso FrTp) to determine the size of the following CFs.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   248   *  \return      BufReq_ReturnType
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   249   *               BUFREQ_E_NOT_OK   Routing is aborted
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   250   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   251   *  \context     TASK|ISR1|ISR2
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   252   *  \reentrant   TRUE
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   253   *  \synchronous TRUE
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   254   ***********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   255  PDUR_LOCAL_INLINE FUNC(BufReq_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_CopyTxData_RmTxInstAborted(PduR_RmGDestRomIterType rmGDestRomIdx, PduLengthType pduLength,
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   256                                                                                 SduDataPtrType sduDataPtr,
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   257                                                                                 P2CONST(RetryInfoType, AUTOMATIC, PDUR_APPL_DATA) retry, P2VAR(PduLengthType, AUTOMATIC,
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   258                                                                                                                                                PDUR_APPL_DATA) availableDataPtr);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   259  # endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   260  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   261  # if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   262  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   263   * PduR_RmTp_TxInst_TxConfirmation_RmTxInstActiveOrRmTxInstAborted
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   264   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   265  /*! \brief       The function confirms a successful transmission of a GwTp TX SDU or to report an error that
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   266   *               occurred during transmission.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   267   *  \details     TxSm is in the state Active Or Aborted. In case of 1:N result E_NOT_OK is acceptable, decrement Confirmation count.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   268   *  \param[in]   rmGDestRomIdx Routing Manager GDest Idx.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   269   *  \param[out]  result     result of the transmission.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   270   *               E_OK       The TP transmission has been completed successfully.\n
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   271   *               E_NOT_OK   The transmission fails.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   272   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   273   *  \context     TASK|ISR1|ISR2
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   274   *  \reentrant   TRUE
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   275   *  \synchronous TRUE
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   276  ***********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   277  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_RmTp_TxInst_TxConfirmation_RmTxInstActiveOrRmTxInstAborted(PduR_RmGDestRomIterType rmGDestRomIdx, Std_ReturnType result);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   278  # endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   279  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   280  # if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   281  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   282   * PduR_RmTp_TxInst_TxConfirmation_UnexpectedCall
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   283   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   284  /*! \brief       The function is called unexpectedly because the TxSm is in state "Idle"
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   285   *  \details     -
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   286   *  \param[in]   rmGDestRomIdx Routing Manager GDest Idx.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   287   *  \param[out]  result     result of the transmission.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   288   *               E_OK       The TP transmission has been completed successfully.\n
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   289   *               E_NOT_OK   The transmission fails.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   290   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   291   *  \context     TASK|ISR1|ISR2
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   292   *  \reentrant   TRUE
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   293   *  \synchronous TRUE
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   294  ***********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   295  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_RmTp_TxInst_TxConfirmation_UnexpectedCall(PduR_RmGDestRomIterType rmGDestRomIdx, Std_ReturnType result);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   296  # endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   297  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   298  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   299   *  LOCAL FUNCTIONS
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   300   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   301  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   302  #if ((PDUR_UPTPOFMMROM == STD_ON) && (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON))
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   303  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   304   * PduR_RmTp_TxInst_UpTransmit
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   305   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   306  /*!
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   307   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   308   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   309   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   310   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   311   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   312   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   313   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   314   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   315   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   316   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   317  PDUR_LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_UpTransmit(PduR_RmGDestRomIterType rmGDestRomIdx)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   318  {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   319    Std_ReturnType retVal = E_NOT_OK;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   320    BufReq_ReturnType retValBufReq;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   321    PduLengthType bufferSizePtr = 0u;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   322    PduR_BmTxBufferInstanceRomIterType bmTxBufferInstanceRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   323  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   324    if(PduR_Fm_GetCurrentlyUsedBmTxBufferInstanceIdxByRmGDestIdx(rmGDestRomIdx, &bmTxBufferInstanceRomIdx) == E_OK) /* SBSW_PDUR_STACK_VARIABLE */ /* COV_PDUR_ROBUSTNESS */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   325    {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   326      PduR_FmFifoInstanceRomPartitionIdxOfRmGDestRomType memIdx = PduR_GetFmFifoInstanceRomPartitionIdxOfRmGDestRom(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   327      PduLengthType actualPduLengthToBeRouted = PduR_Bm_GetActualPduLengthToBeRouted(bmTxBufferInstanceRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   328  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   329      /* If MetaData are available the pUpperLayerInfo points to MetaData */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   330      {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   331  # if (PDUR_METADATA_SUPPORT == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   332        PduR_RmSrcRomIterType rmSrcIdx = PduR_GetRmSrcRomIdxOfRmDestRom(PduR_GetRmDestRomIdxOfFmFifoElementRam(PduR_Fm_GetFmFifoElementRamReadIdxOfFmFifoRamSafe(PduR_GetFmFifoRomIdxOfFmFifoInstanceRom(PduR_GetFmFifoInstanceRomIdxOfRmGDestRom(rmGDestRomIdx), memIdx), memIdx), memIdx));
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   333  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   334        if(PduR_IsRmBufferedTpPropertiesRomUsedOfRmSrcRom(rmSrcIdx) && PduR_IsMetaDataLengthUsedOfRmBufferedTpPropertiesRom(PduR_GetRmBufferedTpPropertiesRomIdxOfRmSrcRom(rmSrcIdx), memIdx)) /* COV_PDUR_ROBUSTNESS */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   335        {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   336          PduInfoType metaInfo;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   337          PduR_Bm_CopyDataAsPtr(bmTxBufferInstanceRomIdx, &metaInfo, PduR_GetMetaDataLengthOfRmBufferedTpPropertiesRom(PduR_GetRmBufferedTpPropertiesRomIdxOfRmSrcRom(rmSrcIdx), memIdx), memIdx); /* SBSW_PDUR_STACK_VARIABLE */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   338          (void) PduR_Bm_GetData(bmTxBufferInstanceRomIdx, metaInfo.SduLength, metaInfo.SduDataPtr, memIdx); /* SBSW_PDUR_STACK_VARIABLE */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   339  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   340          retValBufReq = PduR_GetUpTpStartOfReceptionFctPtrOfMmRom(PduR_GetMmRomIdxOfRmGDestRom(rmGDestRomIdx)) (PduR_GetDestHndOfRmGDestRom(rmGDestRomIdx), &metaInfo, actualPduLengthToBeRouted, &bufferSizePtr);    /* SBSW_PDUR_API_CALL_FORWARDING_ID_AND_PTR */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   341        }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   342        else
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   343  # endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   344        {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   345          retValBufReq = PduR_GetUpTpStartOfReceptionFctPtrOfMmRom(PduR_GetMmRomIdxOfRmGDestRom(rmGDestRomIdx)) (PduR_GetDestHndOfRmGDestRom(rmGDestRomIdx), (P2VAR(PduInfoType, AUTOMATIC, PDUR_APPL_DATA)) NULL_PTR, actualPduLengthToBeRouted, &bufferSizePtr);     /* SBSW_PDUR_API_CALL_FORWARDING_ID_AND_PTR */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   346        }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   347      }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   348      if(retValBufReq == BUFREQ_OK)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   349      {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   350        /* RfC 52242 - Transport Protocol Gateway Reception to upper layer modules is not functional */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   351        /* \trace SPEC-2020098 */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   352        if(bufferSizePtr < actualPduLengthToBeRouted)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   353        {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   354          PduR_GetUpTpTpRxIndicationFctPtrOfMmRom(PduR_GetMmRomIdxOfRmGDestRom(rmGDestRomIdx)) (PduR_GetDestHndOfRmGDestRom(rmGDestRomIdx), E_NOT_OK);      /* SBSW_PDUR_API_CALL_FORWARDING_ID_ONLY */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   355        }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   356        else
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   357        {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   358          PduInfoType info;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   359          PduR_Bm_CopyDataAsPtr(bmTxBufferInstanceRomIdx, &info, PduR_Bm_GetLinearDataSizeInstance(bmTxBufferInstanceRomIdx, memIdx), memIdx); /* SBSW_PDUR_STACK_VARIABLE */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   360          (void) PduR_Bm_GetData(bmTxBufferInstanceRomIdx, info.SduLength, info.SduDataPtr, memIdx); /* SBSW_PDUR_STACK_VARIABLE */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   361  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   362          if(BUFREQ_OK == PduR_GetUpTpCopyRxDataFctPtrOfMmRom(PduR_GetMmRomIdxOfRmGDestRom(rmGDestRomIdx)) (PduR_GetDestHndOfRmGDestRom(rmGDestRomIdx), &info, &bufferSizePtr))     /* SBSW_PDUR_API_CALL_FORWARDING_ID_AND_PTR */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   363          {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   364            PduR_GetUpTpTpRxIndicationFctPtrOfMmRom(PduR_GetMmRomIdxOfRmGDestRom(rmGDestRomIdx)) (PduR_GetDestHndOfRmGDestRom(rmGDestRomIdx), E_OK);        /* SBSW_PDUR_API_CALL_FORWARDING_ID_ONLY */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   365            retVal = E_OK;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   366          }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   367          else      /* \trace SPEC-2020102 */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   368          {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   369            PduR_GetUpTpTpRxIndicationFctPtrOfMmRom(PduR_GetMmRomIdxOfRmGDestRom(rmGDestRomIdx)) (PduR_GetDestHndOfRmGDestRom(rmGDestRomIdx), E_NOT_OK);    /* SBSW_PDUR_API_CALL_FORWARDING_ID_ONLY */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   370          }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   371        }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   372      }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   373      if(E_OK == retVal)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   374      {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   375        PduR_RmTp_TxInst_TxConfirmation(rmGDestRomIdx, E_OK);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   376      }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   377      else
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   378      {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   379        PduR_RmTp_TxInst_TxConfirmation(rmGDestRomIdx, E_NOT_OK);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   380      }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   381    }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   382    return retVal;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   383  }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   384  #endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   385  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   386  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   387  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   388    PduR_RmTp_TxInst_LoTransmit
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   389  **********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   390  /*!
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   391   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   392   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   393   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   394   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   395   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   396   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   397   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   398  PDUR_LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_LoTransmit(PduR_RmGDestRomIterType rmGDestRomIdx)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   399  {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   400    Std_ReturnType retVal = E_NOT_OK;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   401  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   402    PduInfoType info;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   403    PduR_BmTxBufferInstanceRomIterType bmTxBufferInstanceRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   404  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   405    if(PduR_Fm_GetCurrentlyUsedBmTxBufferInstanceIdxByRmGDestIdx(rmGDestRomIdx, &bmTxBufferInstanceRomIdx) == E_OK) /* SBSW_PDUR_STACK_VARIABLE */ /* COV_PDUR_ROBUSTNESS */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   406    {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   407      PduR_FmFifoInstanceRomPartitionIdxOfRmGDestRomType memIdx = PduR_GetFmFifoInstanceRomPartitionIdxOfRmGDestRom(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   408      PduLengthType actualPduLengthToBeRouted = PduR_Bm_GetActualPduLengthToBeRouted(bmTxBufferInstanceRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   409  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   410      /* Get Data Pointer for Transmit */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   411      PduR_Bm_CopyDataAsPtr(bmTxBufferInstanceRomIdx, &info, actualPduLengthToBeRouted, memIdx);       /* SBSW_PDUR_API_CALL_FORWARDING_ID_AND_PTR */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   412  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   413  # if (PDUR_METADATA_SUPPORT == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   414      {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   415        PduR_RmSrcRomIterType rmSrcIdx = PduR_GetRmSrcRomIdxOfRmDestRom(PduR_GetRmDestRomIdxOfFmFifoElementRam(PduR_Fm_GetFmFifoElementRamReadIdxOfFmFifoRamSafe(PduR_GetFmFifoRomIdxOfFmFifoInstanceRom(PduR_GetFmFifoInstanceRomIdxOfRmGDestRom(rmGDestRomIdx), memIdx), memIdx), memIdx));
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   416  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   417        if(PduR_IsRmBufferedTpPropertiesRomUsedOfRmSrcRom(rmSrcIdx) && PduR_IsMetaDataLengthUsedOfRmBufferedTpPropertiesRom(PduR_GetRmBufferedTpPropertiesRomIdxOfRmSrcRom(rmSrcIdx), memIdx)) /* COV_PDUR_ROBUSTNESS */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   418        {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   419          /* Get Meta Data Pointer for Transmit */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   420          PduR_Bm_CopyDataAsPtr(bmTxBufferInstanceRomIdx, &info, (PduR_BmTxBufferArrayRamIterType) PduR_GetMetaDataLengthOfRmBufferedTpPropertiesRom(PduR_GetRmBufferedTpPropertiesRomIdxOfRmSrcRom(rmSrcIdx), memIdx), memIdx); /* SBSW_PDUR_STACK_VARIABLE */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   421          (void) PduR_Bm_GetData(bmTxBufferInstanceRomIdx, info.SduLength, info.SduDataPtr, memIdx); /* SBSW_PDUR_STACK_VARIABLE */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   422        }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   423      }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   424  # endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   425  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   426      /* Correction of the length according to AUTOSAR */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   427      info.SduLength = actualPduLengthToBeRouted;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   428  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   429      if(E_OK == PduR_GetLoTpTransmitFctPtrOfMmRom(PduR_GetMmRomIdxOfRmGDestRom(rmGDestRomIdx)) (PduR_GetDestHndOfRmGDestRom(rmGDestRomIdx), &info))        /* SBSW_PDUR_API_CALL_FORWARDING_ID_AND_PTR */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   430      {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   431        retVal &= E_OK;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   432      }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   433      else
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   434      {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   435        PduR_RmTp_TxInst_TxConfirmation(rmGDestRomIdx, E_NOT_OK);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   436      }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   437    }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   438  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   439    return retVal;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   440  }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   441  #endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   442  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   443  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   444  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   445    PduR_RmTp_TxInst_LoAndUpTransmit
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   446  **********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   447  /*!
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   448   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   449   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   450   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   451   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   452   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   453   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   454   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   455  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   456  PDUR_LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_LoAndUpTransmit(PduR_RmGDestRomIterType rmGDestRomIdx)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   457  {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   458    Std_ReturnType retVal = E_NOT_OK;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   459    /* Confirmations are decremented in the Context of LoAndUpTransmit and CopyTxData */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   460    {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   461      /* Iterate over all routing destinations (1:N) */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   462      if(PduR_GetDirectionOfRmGDestRom(rmGDestRomIdx) == PDUR_TX_DIRECTIONOFRMGDESTROM)   /* COV_PDUR_FEATURE_ALWAYS_TRUE */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   463      {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   464        retVal = PduR_RmTp_TxInst_LoTransmit(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   465      }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   466  # if (PDUR_UPTPOFMMROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   467      else
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   468      {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   469        retVal = PduR_RmTp_TxInst_UpTransmit(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   470      }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   471  # endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   472    }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   473    return retVal;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   474  }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   475  #endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   476  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   477  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   478   *  GLOBAL FUNCTIONS
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   479   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   480  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   481  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   482  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   483   * PduR_RmTp_TxInst_TriggerTransmit
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   484   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   485  /*!
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   486   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   487   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   488   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   489   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   490  FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_TriggerTransmit(PduR_RmDestRomIterType rmDestRomIdx, PduR_RmGDestRomIterType rmGDestRomIdx)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   491  {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   492    Std_ReturnType retVal = E_NOT_OK;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   493    PduR_RmGDestTpTxStateRamPartitionIdxOfRmGDestRomType memIdx = PduR_GetRmGDestTpTxStateRamPartitionIdxOfRmGDestRom(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   494  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   495    switch (PduR_GetTpTxInstSmStateOfRmGDestTpTxStateRam(PduR_GetRmGDestTpTxStateRamIdxOfRmGDestRom(rmGDestRomIdx), memIdx))
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   496    {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   497      case PDUR_RM_TXINST_IDLE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   498        switch (PduR_GetPduRDestPduProcessingOfRmGDestRom(rmGDestRomIdx))
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   499        {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   500  # if (PDUR_EXISTS_IMMEDIATE_PDURDESTPDUPROCESSINGOFRMGDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   501          case PDUR_IMMEDIATE_PDURDESTPDUPROCESSINGOFRMGDESTROM:
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   502            retVal = PduR_RmTp_TxInst_TriggerTransmit_Immediate(rmDestRomIdx, rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   503            break;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   504  # endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   505  # if (PDUR_EXISTS_DEFERRED_PDURDESTPDUPROCESSINGOFRMGDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   506          case PDUR_DEFERRED_PDURDESTPDUPROCESSINGOFRMGDESTROM:
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   507            retVal = PduR_RmTp_TxInst_TriggerTransmit_Deferred(rmDestRomIdx, rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   508            break;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   509  # endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   510          default:     /* COV_PDUR_MISRA */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   511            /* Nothing to do: This should never be reached */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   512            break;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   513        }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   514        break;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   515  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   516      case PDUR_RM_TXINST_ACTIVE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM: /* COV_PDUR_FATAL_ERROR */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   517  # if (PDUR_EXISTS_DEFERRED_PDURDESTPDUPROCESSINGOFRMGDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   518      case PDUR_RM_TXINST_WAITING_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM: /* COV_PDUR_FATAL_ERROR */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   519  # endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   520      case PDUR_RM_TXINST_ABORTED_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM: /* COV_PDUR_FATAL_ERROR */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   521        retVal = PduR_RmTp_TxInst_TriggerTransmit_FatalError(rmDestRomIdx, rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   522        break;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   523  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   524      default: /* COV_PDUR_MISRA */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   525        /* If state is out-of-bounds: do nothing and return negative result. */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   526        retVal = E_NOT_OK;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   527        break;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   528    }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   529  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   530    PDUR_DUMMY_STATEMENT(memIdx);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   531    return retVal;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   532  }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   533  #endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   534  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   535  #if ((PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON) && (PDUR_EXISTS_IMMEDIATE_PDURDESTPDUPROCESSINGOFRMGDESTROM == STD_ON))
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   536  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   537   * PduR_RmTp_TxInst_TriggerTransmit_Immediate
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   538   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   539  /*!
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   540   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   541   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   542   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   543   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   544   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   545   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   546   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   547   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   548  PDUR_LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_TriggerTransmit_Immediate(PduR_RmDestRomIterType rmDestRomIdx, PduR_RmGDestRomIterType rmGDestRomIdx)       /* COV_PDUR_CROSSCORE_ROUTINGS_ONLY */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   549  {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   550    PduR_RmGDestTpTxStateRamPartitionIdxOfRmGDestRomType memIdx = PduR_GetRmGDestTpTxStateRamPartitionIdxOfRmGDestRom(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   551  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   552    PduR_SetTpTxInstSmStateOfRmGDestTpTxStateRam(PduR_GetRmGDestTpTxStateRamIdxOfRmGDestRom(rmGDestRomIdx), PDUR_RM_TXINST_ACTIVE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM, memIdx);  /* SBSW_PDUR_CSL03 */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   553    PDUR_DUMMY_STATEMENT(rmDestRomIdx);   /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   554    PDUR_DUMMY_STATEMENT(memIdx);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   555    return PduR_RmTp_TxInst_LoAndUpTransmit(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   556  }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   557  #endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   558  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   559  #if ((PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON) && (PDUR_EXISTS_DEFERRED_PDURDESTPDUPROCESSINGOFRMGDESTROM == STD_ON))
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   560  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   561   * PduR_RmTp_TxInst_TriggerTransmit_Deferred
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   562   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   563  /*!
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   564   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   565   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   566   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   567   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   568   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   569  PDUR_LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_TriggerTransmit_Deferred(PduR_RmDestRomIterType rmDestRomIdx, PduR_RmGDestRomIterType rmGDestRomIdx)    /* COV_PDUR_NO_DEFERRED_TP_ROUTING */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   570  {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   571    Std_ReturnType retVal = E_OK; /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   572    PduR_RmGDestTpTxStateRamPartitionIdxOfRmGDestRomType memIdx = PduR_GetRmGDestTpTxStateRamPartitionIdxOfRmGDestRom(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   573  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   574    PduR_SetTpTxInstSmStateOfRmGDestTpTxStateRam(PduR_GetRmGDestTpTxStateRamIdxOfRmGDestRom(rmGDestRomIdx), PDUR_RM_TXINST_WAITING_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM, memIdx); /* SBSW_PDUR_CSL03 */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   575  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   576  # if (PDUR_DEFERREDEVENTCACHEROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   577    PduR_EvC_WriteDeferredEventCache(rmDestRomIdx, (PduR_RmGDestRomIdxOfRmDestRomType) rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   578  # endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   579    PDUR_DUMMY_STATEMENT(rmDestRomIdx);   /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   580    PDUR_DUMMY_STATEMENT(memIdx);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   581    return retVal;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   582  }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   583  #endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   584  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   585  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   586  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   587   * PduR_RmTp_TxInst_TriggerTransmit_FatalError
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   588   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   589  /*!
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   590   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   591   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   592   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   593   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   594   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   595   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   596  PDUR_LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_TriggerTransmit_FatalError(PduR_RmDestRomIterType rmDestRomIdx, PduR_RmGDestRomIterType rmGDestRomIdx) /* COV_PDUR_FATAL_ERROR */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   597  {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   598    PduR_Det_ReportError(PDUR_RM_TPTRIGGERTRANSMIT_FATALERROR, PDUR_E_FATAL);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   599    PDUR_DUMMY_STATEMENT(rmDestRomIdx);   /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   600    PDUR_DUMMY_STATEMENT(rmGDestRomIdx);  /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   601    return E_NOT_OK;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   602  }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   603  #endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   604  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   605  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   606  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   607   * PduR_RmTp_TxInst_CopyTxData
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   608   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   609  /*!
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   610   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   611   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   612   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   613   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   614  FUNC(BufReq_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_CopyTxData(PduR_RmGDestRomIterType rmGDestRomIdx, P2VAR(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) info, P2VAR(RetryInfoType, AUTOMATIC, PDUR_APPL_DATA) retry, P2VAR(PduLengthType, AUTOMATIC, PDUR_APPL_DATA) availableDataPtr)      /* PRQA S 3673 */ /* MD_MSR_Rule8.13 */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   615  {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   616    BufReq_ReturnType retVal;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   617    PduR_RmGDestTpTxStateRamPartitionIdxOfRmGDestRomType memIdx = PduR_GetRmGDestTpTxStateRamPartitionIdxOfRmGDestRom(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   618  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   619    switch (PduR_GetTpTxInstSmStateOfRmGDestTpTxStateRam(PduR_GetRmGDestTpTxStateRamIdxOfRmGDestRom(rmGDestRomIdx), memIdx))
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   620    {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   621      case PDUR_RM_TXINST_IDLE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   622        retVal = PduR_RmTp_TxInst_CopyTxData_UnexpectedCall(rmGDestRomIdx, info->SduLength, info->SduDataPtr, retry, availableDataPtr);  /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   623        break;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   624  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   625      case PDUR_RM_TXINST_ACTIVE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   626        retVal = PduR_RmTp_TxInst_CopyTxData_RmTxInstActive(rmGDestRomIdx, info->SduLength, info->SduDataPtr, retry, availableDataPtr);  /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   627        break;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   628  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   629  # if (PDUR_EXISTS_DEFERRED_PDURDESTPDUPROCESSINGOFRMGDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   630      case PDUR_RM_TXINST_WAITING_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   631        retVal = PduR_RmTp_TxInst_CopyTxData_UnexpectedCall(rmGDestRomIdx, info->SduLength, info->SduDataPtr, retry, availableDataPtr);  /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   632        break;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   633  # endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   634  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   635      case PDUR_RM_TXINST_ABORTED_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   636        retVal = PduR_RmTp_TxInst_CopyTxData_RmTxInstAborted(rmGDestRomIdx, info->SduLength, info->SduDataPtr, retry, availableDataPtr);  /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   637        break;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   638  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   639      default: /* COV_PDUR_MISRA */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   640        /* If state is out-of-bounds: do nothing and return negative result. */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   641        retVal = BUFREQ_E_NOT_OK;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   642        break;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   643    }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   644  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   645    PDUR_DUMMY_STATEMENT(memIdx);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   646    return retVal;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   647  }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   648  #endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   649  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   650  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   651  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   652   * PduR_RmTp_TxInst_CopyTxData_RmTxInstActive
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   653   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   654  /*!
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   655   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   656   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   657   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   658   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   659   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   660   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   661   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   662   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   663  PDUR_LOCAL_INLINE FUNC(BufReq_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_CopyTxData_RmTxInstActive(PduR_RmGDestRomIterType rmGDestRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   664                                                                                PduLengthType pduLength,
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   665                                                                                SduDataPtrType sduDataPtr,
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   666                                                                                P2CONST(RetryInfoType, AUTOMATIC, PDUR_APPL_DATA) retry, P2VAR(PduLengthType, AUTOMATIC, PDUR_APPL_DATA) availableDataPtr)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   667  {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   668    BufReq_ReturnType retVal = BUFREQ_E_NOT_OK;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   669    PduR_FmFifoInstanceRomPartitionIdxOfRmGDestRomType memIdx = PduR_GetFmFifoInstanceRomPartitionIdxOfRmGDestRom(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   670    PduR_BmTxBufferInstanceRomIterType bmTxBufferInstanceRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   671  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   672    if(PduR_Fm_GetCurrentlyUsedBmTxBufferInstanceIdxByRmGDestIdx(rmGDestRomIdx, &bmTxBufferInstanceRomIdx) == E_OK) /* SBSW_PDUR_STACK_VARIABLE */ /* COV_PDUR_ROBUSTNESS */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   673    {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   674      retVal = PduR_Bm_GetData(bmTxBufferInstanceRomIdx, pduLength, sduDataPtr, memIdx);  /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   675      *availableDataPtr = (PduLengthType) PduR_Bm_GetTotalDataSizeInstance(bmTxBufferInstanceRomIdx, memIdx);       /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   676    }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   677  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   678    PDUR_DUMMY_STATEMENT(retry);  /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   679    return retVal;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   680  }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   681  #endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   682  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   683  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   684   /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   685   * PduR_RmTp_TxInst_CopyTxData_RmTxInstAborted
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   686   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   687  /*!
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   688   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   689   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   690   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   691   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   692   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   693  PDUR_LOCAL_INLINE FUNC(BufReq_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_CopyTxData_RmTxInstAborted(PduR_RmGDestRomIterType rmGDestRomIdx, PduLengthType pduLength,
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   694                                                                                 SduDataPtrType sduDataPtr,
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   695                                                                                 P2CONST(RetryInfoType, AUTOMATIC, PDUR_APPL_DATA) retry, P2VAR(PduLengthType, AUTOMATIC,
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   696                                                                                                                                                PDUR_APPL_DATA) availableDataPtr)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   697  {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   698    PDUR_DUMMY_STATEMENT(rmGDestRomIdx);  /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   699    PDUR_DUMMY_STATEMENT(pduLength);      /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   700    PDUR_DUMMY_STATEMENT(sduDataPtr);     /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   701    PDUR_DUMMY_STATEMENT(retry);  /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   702    PDUR_DUMMY_STATEMENT(availableDataPtr);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   703    return BUFREQ_E_NOT_OK;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   704  }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   705  #endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   706  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   707  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   708  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   709   * PduR_RmTp_TxInst_CopyTxData_UnexpectedCall
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   710   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   711  /*!
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   712   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   713   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   714   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   715   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   716   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   717   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   718  PDUR_LOCAL_INLINE FUNC(BufReq_ReturnType, PDUR_CODE) PduR_RmTp_TxInst_CopyTxData_UnexpectedCall(PduR_RmGDestRomIterType rmGDestRomIdx, PduLengthType pduLength,
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   719                                                                                SduDataPtrType sduDataPtr,
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   720                                                                                P2CONST(RetryInfoType, AUTOMATIC, PDUR_APPL_DATA) retry, P2VAR(PduLengthType, AUTOMATIC, PDUR_APPL_DATA) availableDataPtr)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   721  {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   722    PduR_Det_ReportError(PDUR_RMTP_TXINSTSM_COPYTXDATA_UNEXPECTEDCALL, PDUR_E_UNEXPECTED_CALL);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   723    PDUR_DUMMY_STATEMENT(rmGDestRomIdx);  /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   724    PDUR_DUMMY_STATEMENT(pduLength);      /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   725    PDUR_DUMMY_STATEMENT(sduDataPtr);     /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   726    PDUR_DUMMY_STATEMENT(retry);  /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   727    PDUR_DUMMY_STATEMENT(availableDataPtr);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   728    return BUFREQ_E_NOT_OK;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   729  }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   730  #endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   731  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   732  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   733  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   734   * PduR_RmTp_TxInst_TxConfirmation
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   735   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   736  /*!
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   737   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   738   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   739   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   740   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   741  FUNC(void, PDUR_CODE) PduR_RmTp_TxInst_TxConfirmation(PduR_RmGDestRomIterType rmGDestRomIdx, Std_ReturnType result)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   742  {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   743    PduR_RmGDestTpTxStateRamPartitionIdxOfRmGDestRomType memIdx = PduR_GetRmGDestTpTxStateRamPartitionIdxOfRmGDestRom(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   744  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   745    switch (PduR_GetTpTxInstSmStateOfRmGDestTpTxStateRam(PduR_GetRmGDestTpTxStateRamIdxOfRmGDestRom(rmGDestRomIdx), memIdx))
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   746    {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   747      case PDUR_RM_TXINST_IDLE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   748        PduR_RmTp_TxInst_TxConfirmation_UnexpectedCall(rmGDestRomIdx, result);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   749        break;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   750  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   751      case PDUR_RM_TXINST_ACTIVE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   752        PduR_RmTp_TxInst_TxConfirmation_RmTxInstActiveOrRmTxInstAborted(rmGDestRomIdx, result);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   753        break;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   754  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   755  # if (PDUR_EXISTS_DEFERRED_PDURDESTPDUPROCESSINGOFRMGDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   756      case PDUR_RM_TXINST_WAITING_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   757        PduR_RmTp_TxInst_TxConfirmation_UnexpectedCall(rmGDestRomIdx, result);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   758        break;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   759  # endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   760  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   761      case PDUR_RM_TXINST_ABORTED_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   762        PduR_RmTp_TxInst_TxConfirmation_RmTxInstActiveOrRmTxInstAborted(rmGDestRomIdx, result);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   763        break;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   764  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   765      default: /* COV_PDUR_MISRA */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   766        /* If state is out-of-bounds: do nothing. */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   767        break;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   768    }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   769    PDUR_DUMMY_STATEMENT(memIdx);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   770  }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   771  #endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   772  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   773  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   774  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   775   * PduR_RmTp_TxInst_TxConfirmation_RmTxInstActiveOrRmTxInstAborted
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   776   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   777  /*!
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   778   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   779   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   780   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   781   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   782   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   783   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   784   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   785  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_RmTp_TxInst_TxConfirmation_RmTxInstActiveOrRmTxInstAborted(PduR_RmGDestRomIterType rmGDestRomIdx, Std_ReturnType result)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   786  {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   787    PduR_FmFifoInstanceRomPartitionIdxOfRmGDestRomType fmFifoInstanceRamMemIdx = PduR_GetFmFifoInstanceRomPartitionIdxOfRmGDestRom(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   788    PduR_RmGDestTpTxStateRamPartitionIdxOfRmGDestRomType rmGDestTpTxStateRamMemIdx = PduR_GetRmGDestTpTxStateRamPartitionIdxOfRmGDestRom(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   789    PduR_BmTxBufferInstanceRomIterType bmTxBufferInstanceRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   790  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   791    PduR_SetTpTxInstSmStateOfRmGDestTpTxStateRam(PduR_GetRmGDestTpTxStateRamIdxOfRmGDestRom(rmGDestRomIdx), PDUR_RM_TXINST_IDLE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM, rmGDestTpTxStateRamMemIdx);        /* SBSW_PDUR_CSL03 */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   792  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   793    if(PduR_Fm_GetCurrentlyUsedBmTxBufferInstanceIdxByRmGDestIdx(rmGDestRomIdx, &bmTxBufferInstanceRomIdx) == E_OK) /* SBSW_PDUR_STACK_VARIABLE */ /* COV_PDUR_ROBUSTNESS */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   794    {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   795      PduR_Bm_ResetTxBufferInstance(bmTxBufferInstanceRomIdx, fmFifoInstanceRamMemIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   796    }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   797    PduR_RmTp_FinishTransmission_TpTxSmStateHandler(PduR_GetFmFifoRomIdxOfFmFifoInstanceRom(PduR_GetFmFifoInstanceRomIdxOfRmGDestRom(rmGDestRomIdx), fmFifoInstanceRamMemIdx), result, fmFifoInstanceRamMemIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   798    PDUR_DUMMY_STATEMENT(result); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   799    PDUR_DUMMY_STATEMENT(rmGDestTpTxStateRamMemIdx); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   800  }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   801  #endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   802  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   803  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   804  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   805   * PduR_RmTp_TxInst_TxConfirmation_UnexpectedCall
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   806   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   807  /*!
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   808   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   809   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   810   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   811   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   812   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   813  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_RmTp_TxInst_TxConfirmation_UnexpectedCall(PduR_RmGDestRomIterType rmGDestRomIdx, Std_ReturnType result)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   814  {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   815    PduR_Det_ReportError(PDUR_RMTP_TXINSTSM_TPTXCONFIRMATION_UNEXPECTEDCALL, PDUR_E_UNEXPECTED_CALL);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   816    PDUR_DUMMY_STATEMENT(rmGDestRomIdx);  /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   817    PDUR_DUMMY_STATEMENT(result); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   818  }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   819  #endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   820  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   821  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   822  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   823   * PduR_RmTp_TxInst_CancelTransmit
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   824   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   825  /*!
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   826   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   827   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   828   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   829   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   830  FUNC(void, PDUR_CODE) PduR_RmTp_TxInst_CancelTransmit(PduR_RmDestRomIterType rmGDestRomIdx)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   831  {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   832    PduR_FmFifoInstanceRomPartitionIdxOfRmGDestRomType fmFifoInstanceRamMemIdx = PduR_GetFmFifoInstanceRomPartitionIdxOfRmGDestRom(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   833    PduR_RmGDestTpTxStateRamPartitionIdxOfRmGDestRomType rmGDestTpTxStateRamMemIdx = PduR_GetRmGDestTpTxStateRamPartitionIdxOfRmGDestRom(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   834    PduR_RmGDestTpTxStateRamIdxOfRmGDestRomType rmGDestTpTxStateRamIdx = PduR_GetRmGDestTpTxStateRamIdxOfRmGDestRom(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   835  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   836    switch (PduR_GetTpTxInstSmStateOfRmGDestTpTxStateRam(rmGDestTpTxStateRamIdx, rmGDestTpTxStateRamMemIdx))
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   837    {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   838      case PDUR_RM_TXINST_IDLE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   839        /* Nothing to abort. */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   840        break;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   841  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   842      case PDUR_RM_TXINST_ACTIVE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   843        PduR_SetTpTxInstSmStateOfRmGDestTpTxStateRam(rmGDestTpTxStateRamIdx, PDUR_RM_TXINST_ABORTED_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM, rmGDestTpTxStateRamMemIdx); /* SBSW_PDUR_CSL01 */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   844        break;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   845  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   846  # if (PDUR_EXISTS_DEFERRED_PDURDESTPDUPROCESSINGOFRMGDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   847      case PDUR_RM_TXINST_WAITING_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM:
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   848      {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   849        PduR_BmTxBufferInstanceRomIterType bmTxBufferInstanceRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   850  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   851        PduR_SetTpTxInstSmStateOfRmGDestTpTxStateRam(rmGDestTpTxStateRamIdx, PDUR_RM_TXINST_IDLE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM, rmGDestTpTxStateRamMemIdx);        /* SBSW_PDUR_CSL03 */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   852  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   853        if(PduR_Fm_GetCurrentlyUsedBmTxBufferInstanceIdxByRmGDestIdx(rmGDestRomIdx, &bmTxBufferInstanceRomIdx) == E_OK) /* SBSW_PDUR_STACK_VARIABLE */ /* COV_PDUR_ROBUSTNESS */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   854        {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   855          PduR_Bm_ResetTxBufferInstance(bmTxBufferInstanceRomIdx, fmFifoInstanceRamMemIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   856        }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   857        PduR_RmTp_FinishTransmission_TpTxSmStateHandler(PduR_GetFmFifoRomIdxOfFmFifoInstanceRom(PduR_GetFmFifoInstanceRomIdxOfRmGDestRom(rmGDestRomIdx), fmFifoInstanceRamMemIdx), E_NOT_OK, fmFifoInstanceRamMemIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   858      }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   859        break;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   860  # endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   861  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   862      case PDUR_RM_TXINST_ABORTED_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM: /* COV_PDUR_CANCELTRANSMIT_WITHOUT_RPG */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   863        /* Already aborted. Nothing to do. */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   864        break;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   865  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   866      default: /* COV_PDUR_MISRA */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   867        /* If state is out-of-bounds: do nothing. */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   868        break;
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   869    }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   870    PDUR_DUMMY_STATEMENT(fmFifoInstanceRamMemIdx);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   871    PDUR_DUMMY_STATEMENT(rmGDestTpTxStateRamMemIdx);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   872  }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   873  #endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   874  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   875  #if((PDUR_MAIN_FUNCTION == STD_ON) && (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON))
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   876  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   877   * PduR_RmTp_TxInst_MainFunction
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   878   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   879  /*!
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   880   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   881   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   882   *
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   883   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   884  FUNC(void, PDUR_CODE) PduR_RmTp_TxInst_MainFunction(PduR_RmGDestRomIterType rmGDestRomIdx)
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   885  {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   886    PduR_Lock_LockRoutingPathByGDestPdu(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   887    {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   888      PduR_RmGDestTpTxStateRamPartitionIdxOfRmGDestRomType memIdx = PduR_GetRmGDestTpTxStateRamPartitionIdxOfRmGDestRom(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   889      PDUR_DUMMY_STATEMENT(memIdx);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   890  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   891      if((PduR_GetPduRDestPduProcessingOfRmGDestRom(rmGDestRomIdx) == PDUR_DEFERRED_PDURDESTPDUPROCESSINGOFRMGDESTROM) && (PDUR_RM_TXINST_WAITING_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM == PduR_GetTpTxInstSmStateOfRmGDestTpTxStateRam(PduR_GetRmGDestTpTxStateRamIdxOfRmGDestRom(rmGDestRomIdx), memIdx))) /* COV_PDUR_CROSSCORE_ROUTINGS_ONLY */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   892      {
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   893        PduR_SetTpTxInstSmStateOfRmGDestTpTxStateRam(PduR_GetRmGDestTpTxStateRamIdxOfRmGDestRom(rmGDestRomIdx), PDUR_RM_TXINST_ACTIVE_TPTXINSTSMSTATEOFRMGDESTTPTXSTATERAM, memIdx);      /* SBSW_PDUR_CSL03 */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   894        (void) PduR_RmTp_TxInst_LoAndUpTransmit(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   895      }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   896    }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   897    PduR_Lock_UnlockRoutingPathByGDestPdu(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   898  }
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   899  #endif
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   900  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   901  #define PDUR_STOP_SEC_CODE
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   902  #include "PduR_MemMap.h" /* PRQA S 5087 */   /* MD_MSR_MemMap */
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   903  
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   904  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   905   *  END OF FILE: PduR_RmTp_TxInst.c
+; ..\BSW364\PduR\Implementation\PduR_RmTp_TxInst.c	   906   *********************************************************************************************************************/
+
+	; Module end

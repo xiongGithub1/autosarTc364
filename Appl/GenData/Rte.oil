@@ -42,10 +42,30 @@
       SCHEDULE = NON:"@RO@";
 // TIMING_PROTECTION = FALSE|TRUE; (AUTOSAR OS only)
       AUTOSTART = FALSE:"@RO@";
+      EVENT = Rte_Ev_Cyclic_Default_Appl_Task_0_10ms:"@RO@";
+      EVENT = Rte_Ev_Cyclic_Default_Appl_Task_0_1ms:"@RO@";
       EVENT = Rte_Ev_Run_StartApp_StartApp_Cyclic1000ms:"@RO@";
-      EVENT = Rte_Ev_Run_StartApp_StartApp_Cyclic10ms:"@RO@";
-      EVENT = Rte_Ev_Run_StartApp_StartApp_Cyclic1ms:"@RO@";
       EVENT = Rte_Ev_Run_StartApp_StartApp_Cyclic250ms:"@RO@";
+   }:"@RO@@NR@";
+
+   ALARM Rte_Al_TE_Default_Appl_Task_0_10ms {
+      COUNTER = SystemTimer;
+      ACTION = SETEVENT
+      {
+         TASK = Default_Appl_Task;
+         EVENT = Rte_Ev_Cyclic_Default_Appl_Task_0_10ms;
+      }:"@ROC@";
+      AUTOSTART = FALSE:"@RO@";
+   }:"@RO@@NR@";
+
+   ALARM Rte_Al_TE_Default_Appl_Task_0_1ms {
+      COUNTER = SystemTimer;
+      ACTION = SETEVENT
+      {
+         TASK = Default_Appl_Task;
+         EVENT = Rte_Ev_Cyclic_Default_Appl_Task_0_1ms;
+      }:"@ROC@";
+      AUTOSTART = FALSE:"@RO@";
    }:"@RO@@NR@";
 
    ALARM Rte_Al_TE_StartApp_StartApp_Cyclic1000ms {
@@ -54,26 +74,6 @@
       {
          TASK = Default_Appl_Task;
          EVENT = Rte_Ev_Run_StartApp_StartApp_Cyclic1000ms;
-      }:"@ROC@";
-      AUTOSTART = FALSE:"@RO@";
-   }:"@RO@@NR@";
-
-   ALARM Rte_Al_TE_StartApp_StartApp_Cyclic10ms {
-      COUNTER = SystemTimer;
-      ACTION = SETEVENT
-      {
-         TASK = Default_Appl_Task;
-         EVENT = Rte_Ev_Run_StartApp_StartApp_Cyclic10ms;
-      }:"@ROC@";
-      AUTOSTART = FALSE:"@RO@";
-   }:"@RO@@NR@";
-
-   ALARM Rte_Al_TE_StartApp_StartApp_Cyclic1ms {
-      COUNTER = SystemTimer;
-      ACTION = SETEVENT
-      {
-         TASK = Default_Appl_Task;
-         EVENT = Rte_Ev_Run_StartApp_StartApp_Cyclic1ms;
       }:"@ROC@";
       AUTOSTART = FALSE:"@RO@";
    }:"@RO@@NR@";
@@ -96,6 +96,7 @@
       AUTOSTART = FALSE:"@RO@";
       EVENT = Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms:"@RO@";
       EVENT = Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_20ms:"@RO@";
+      EVENT = Rte_Ev_Run_Com_Com_MainFunctionTx_ComMainFunctionTx:"@RO@";
    }:"@RO@@NR@";
 
    ALARM Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms {
@@ -118,35 +119,24 @@
       AUTOSTART = FALSE:"@RO@";
    }:"@RO@@NR@";
 
+   ALARM Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx {
+      COUNTER = SystemTimer;
+      ACTION = SETEVENT
+      {
+         TASK = Default_BSW_ASync_Task;
+         EVENT = Rte_Ev_Run_Com_Com_MainFunctionTx_ComMainFunctionTx;
+      }:"@ROC@";
+      AUTOSTART = FALSE:"@RO@";
+   }:"@RO@@NR@";
+
    TASK MotorTask {
       ACTIVATION = 1:"@RO@";
       PRIORITY = 200:"@RO@";
       SCHEDULE = NON:"@RO@";
 // TIMING_PROTECTION = FALSE|TRUE; (AUTOSAR OS only)
       AUTOSTART = FALSE:"@RO@";
-      EVENT = Rte_Ev_Run_MotorCdd_MotorCDDMainFunction:"@RO@";
       EVENT = Rte_Ev_Run_MotorCdd_MotorCdd_AdcOnSampleReady_Rp_AdcSampleReady_AdcSampleReady:"@RO@";
-      EVENT = Rte_Ev_Run_MotorControll_MotorControll_MainFunction:"@RO@";
-   }:"@RO@@NR@";
-
-   ALARM Rte_Al_TE_MotorCdd_MotorCDDMainFunction {
-      COUNTER = SystemTimer;
-      ACTION = SETEVENT
-      {
-         TASK = MotorTask;
-         EVENT = Rte_Ev_Run_MotorCdd_MotorCDDMainFunction;
-      }:"@ROC@";
-      AUTOSTART = FALSE:"@RO@";
-   }:"@RO@@NR@";
-
-   ALARM Rte_Al_TE_MotorControll_MotorControll_MainFunction {
-      COUNTER = SystemTimer;
-      ACTION = SETEVENT
-      {
-         TASK = MotorTask;
-         EVENT = Rte_Ev_Run_MotorControll_MotorControll_MainFunction;
-      }:"@ROC@";
-      AUTOSTART = FALSE:"@RO@";
+      EVENT = Rte_Ev_Run_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter:"@RO@";
    }:"@RO@@NR@";
 
    EVENT Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms {
@@ -157,7 +147,15 @@
       MASK = AUTO;
    }:"@ROC@@NR@";
 
-   EVENT Rte_Ev_Run_MotorCdd_MotorCDDMainFunction {
+   EVENT Rte_Ev_Cyclic_Default_Appl_Task_0_10ms {
+      MASK = AUTO;
+   }:"@ROC@@NR@";
+
+   EVENT Rte_Ev_Cyclic_Default_Appl_Task_0_1ms {
+      MASK = AUTO;
+   }:"@ROC@@NR@";
+
+   EVENT Rte_Ev_Run_Com_Com_MainFunctionTx_ComMainFunctionTx {
       MASK = AUTO;
    }:"@ROC@@NR@";
 
@@ -165,19 +163,11 @@
       MASK = AUTO;
    }:"@ROC@@NR@";
 
-   EVENT Rte_Ev_Run_MotorControll_MotorControll_MainFunction {
+   EVENT Rte_Ev_Run_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter {
       MASK = AUTO;
    }:"@ROC@@NR@";
 
    EVENT Rte_Ev_Run_StartApp_StartApp_Cyclic1000ms {
-      MASK = AUTO;
-   }:"@ROC@@NR@";
-
-   EVENT Rte_Ev_Run_StartApp_StartApp_Cyclic10ms {
-      MASK = AUTO;
-   }:"@ROC@@NR@";
-
-   EVENT Rte_Ev_Run_StartApp_StartApp_Cyclic1ms {
       MASK = AUTO;
    }:"@ROC@@NR@";
 

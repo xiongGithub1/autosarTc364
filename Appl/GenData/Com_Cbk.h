@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Com_Cbk.h
- *   Generation Time: 2024-07-09 14:04:08
+ *   Generation Time: 2024-07-16 16:49:58
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -79,8 +79,11 @@
 
 /* Handle IDs active in all predefined variants (the application has not to take the active variant into account) */
 /*      Symbolic Name                                                 Value   Active in predefined variant(s) */
-#define ComConf_ComIPdu_msg_MyECU_Lamp_oCAN00_818e1651_Tx             0u
-#define ComConf_ComIPdu_msg_Transmit_oCAN00_0723e95e_Tx               1u
+#define ComConf_ComIPdu_msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx        0u
+#define ComConf_ComIPdu_msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx        1u
+#define ComConf_ComIPdu_msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx        2u
+#define ComConf_ComIPdu_msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx          3u
+#define ComConf_ComIPdu_msg_Transmit_oCAN00_0723e95e_Tx               4u
 /**\} */
 
 /**********************************************************************************************************************

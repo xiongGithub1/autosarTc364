@@ -1,0 +1,387 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc272a --dep-file=Appl\\GenData\\.Os_Application_Lcfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=Appl\\GenData\\Os_Application_Lcfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\Os_Application_Lcfg.src ..\\Appl\\GenData\\Os_Application_Lcfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\GenData\\Os_Application_Lcfg.c'
+
+	
+$TC162
+	
+	.sdecl	'.zbss.OS_CORE0_VAR_FAST_NOINIT',data
+	.sect	'.zbss.OS_CORE0_VAR_FAST_NOINIT'
+OsCfg_App_SystemApplication_OsCore0_Dyn:	.type	object
+	.size	OsCfg_App_SystemApplication_OsCore0_Dyn,1
+	.space	1
+	.sdecl	'.rodata.OS_CORE0_CONST',data,rom
+	.sect	'.rodata.OS_CORE0_CONST'
+	.align	4
+OsCfg_App_SystemApplication_OsCore0_AlarmRefs:	.type	object
+	.size	OsCfg_App_SystemApplication_OsCore0_AlarmRefs,32
+	.word	OsCfg_Alarm_Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms,OsCfg_Alarm_Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms,OsCfg_Alarm_Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx,OsCfg_Alarm_Rte_Al_TE_Default_Appl_Task_0_10ms
+	.word	OsCfg_Alarm_Rte_Al_TE_Default_Appl_Task_0_1ms,OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic1000ms,OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic250ms
+	.space	4
+	.sdecl	'.zrodata.OS_CORE0_CONST_FAST',data,rom
+	.sect	'.zrodata.OS_CORE0_CONST_FAST'
+	.align	4
+OsCfg_App_SystemApplication_OsCore0_CounterRefs:	.type	object
+	.size	OsCfg_App_SystemApplication_OsCore0_CounterRefs,8
+	.word	OsCfg_Counter_SystemTimer
+	.space	4
+	.sdecl	'.zrodata.OS_CORE0_CONST_FAST',data,rom
+	.sect	'.zrodata.OS_CORE0_CONST_FAST'
+	.align	4
+OsCfg_App_SystemApplication_OsCore0_HookRefs:	.type	object
+	.size	OsCfg_App_SystemApplication_OsCore0_HookRefs,4
+	.space	4
+	.sdecl	'.rodata.OS_CORE0_CONST',data,rom
+	.sect	'.rodata.OS_CORE0_CONST'
+	.align	4
+OsCfg_App_SystemApplication_OsCore0_IsrRefs:	.type	object
+	.size	OsCfg_App_SystemApplication_OsCore0_IsrRefs,40
+	.word	OsCfg_Isr_AdcIsr_G0,OsCfg_Isr_AdcIsr_G8,OsCfg_Isr_CanIsr_0,OsCfg_Isr_CounterIsr_SystemTimer
+	.word	OsCfg_Isr_DMACH4SR_ISR,OsCfg_Isr_DMACH5SR_ISR,OsCfg_Isr_DmaErrIsr,OsCfg_Isr_Qspi2ErrIsr
+	.word	OsCfg_Isr_Qspi2PtIsr
+	.space	4
+	.sdecl	'.zrodata.OS_CORE0_CONST_FAST',data,rom
+	.sect	'.zrodata.OS_CORE0_CONST_FAST'
+	.align	4
+OsCfg_App_SystemApplication_OsCore0_Cat1IsrRefs:	.type	object
+	.size	OsCfg_App_SystemApplication_OsCore0_Cat1IsrRefs,4
+	.space	4
+	.sdecl	'.zrodata.OS_CORE0_CONST_FAST',data,rom
+	.sect	'.zrodata.OS_CORE0_CONST_FAST'
+	.align	4
+OsCfg_App_SystemApplication_OsCore0_SchTRefs:	.type	object
+	.size	OsCfg_App_SystemApplication_OsCore0_SchTRefs,4
+	.space	4
+	.sdecl	'.rodata.OS_CORE0_CONST',data,rom
+	.sect	'.rodata.OS_CORE0_CONST'
+	.align	4
+OsCfg_App_SystemApplication_OsCore0_TaskRefs:	.type	object
+	.size	OsCfg_App_SystemApplication_OsCore0_TaskRefs,32
+	.word	OsCfg_Task_Default_Appl_Init_Task,OsCfg_Task_Default_Appl_Task,OsCfg_Task_Default_BSW_ASync_Task,OsCfg_Task_Default_Init_Task
+	.word	OsCfg_Task_Default_Init_Task_Trusted,OsCfg_Task_IdleTask_OsCore0,OsCfg_Task_MotorTask
+	.space	4
+	.sdecl	'.zrodata.OS_CORE0_CONST_FAST',data,rom
+	.sect	'.zrodata.OS_CORE0_CONST_FAST'
+	.align	4
+OsCfg_App_SystemApplication_OsCore0_ServiceRefs:	.type	object
+	.size	OsCfg_App_SystemApplication_OsCore0_ServiceRefs,4
+	.space	4
+	.sdecl	'.rodata.OS_CORE0_CONST',data,rom
+	.sect	'.rodata.OS_CORE0_CONST'
+	.global	OsCfg_App_SystemApplication_OsCore0
+	.align	4
+OsCfg_App_SystemApplication_OsCore0:	.type	object
+	.size	OsCfg_App_SystemApplication_OsCore0,100
+	.word	OsCfg_App_SystemApplication_OsCore0_Dyn,OsCfg_Core_OsCore0,1,OsCfg_App_SystemApplication_OsCore0_TaskRefs
+	.half	7
+	.space	2
+	.word	OsCfg_App_SystemApplication_OsCore0_IsrRefs
+	.half	9
+	.space	2
+	.word	OsCfg_App_SystemApplication_OsCore0_Cat1IsrRefs
+	.space	4
+	.word	OsCfg_App_SystemApplication_OsCore0_CounterRefs
+	.half	1
+	.space	2
+	.word	OsCfg_App_SystemApplication_OsCore0_AlarmRefs
+	.half	7
+	.space	2
+	.word	OsCfg_App_SystemApplication_OsCore0_SchTRefs
+	.space	4
+	.word	OsCfg_App_SystemApplication_OsCore0_ServiceRefs
+	.space	16
+	.word	OsCfg_App_SystemApplication_OsCore0_HookRefs
+	.space	12
+	.byte	1,1
+	.space	2
+	.sdecl	'.zrodata.OS_CONST_FAST',data,rom
+	.sect	'.zrodata.OS_CONST_FAST'
+	.global	OsCfg_AppRefs
+	.align	4
+OsCfg_AppRefs:	.type	object
+	.size	OsCfg_AppRefs,8
+	.word	OsCfg_App_SystemApplication_OsCore0
+	.space	4
+	.extern	OsCfg_Core_OsCore0
+	.extern	OsCfg_Task_Default_Appl_Init_Task
+	.extern	OsCfg_Task_Default_Appl_Task
+	.extern	OsCfg_Task_Default_BSW_ASync_Task
+	.extern	OsCfg_Task_Default_Init_Task
+	.extern	OsCfg_Task_Default_Init_Task_Trusted
+	.extern	OsCfg_Task_IdleTask_OsCore0
+	.extern	OsCfg_Task_MotorTask
+	.extern	OsCfg_Isr_AdcIsr_G0
+	.extern	OsCfg_Isr_AdcIsr_G8
+	.extern	OsCfg_Isr_CanIsr_0
+	.extern	OsCfg_Isr_CounterIsr_SystemTimer
+	.extern	OsCfg_Isr_DMACH4SR_ISR
+	.extern	OsCfg_Isr_DMACH5SR_ISR
+	.extern	OsCfg_Isr_DmaErrIsr
+	.extern	OsCfg_Isr_Qspi2ErrIsr
+	.extern	OsCfg_Isr_Qspi2PtIsr
+	.extern	OsCfg_Counter_SystemTimer
+	.extern	OsCfg_Alarm_Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms
+	.extern	OsCfg_Alarm_Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms
+	.extern	OsCfg_Alarm_Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx
+	.extern	OsCfg_Alarm_Rte_Al_TE_Default_Appl_Task_0_10ms
+	.extern	OsCfg_Alarm_Rte_Al_TE_Default_Appl_Task_0_1ms
+	.extern	OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic1000ms
+	.extern	OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic250ms
+
+; ..\Appl\GenData\Os_Application_Lcfg.c	     1  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Application_Lcfg.c	     2   *  COPYRIGHT
+; ..\Appl\GenData\Os_Application_Lcfg.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Os_Application_Lcfg.c	     4   *  \verbatim
+; ..\Appl\GenData\Os_Application_Lcfg.c	     5   *
+; ..\Appl\GenData\Os_Application_Lcfg.c	     6   *                 This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\Appl\GenData\Os_Application_Lcfg.c	     7   *                 Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\Appl\GenData\Os_Application_Lcfg.c	     8   *                 All other rights remain with Vector Informatik GmbH.
+; ..\Appl\GenData\Os_Application_Lcfg.c	     9   *  \endverbatim
+; ..\Appl\GenData\Os_Application_Lcfg.c	    10   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Os_Application_Lcfg.c	    11   *  LICENSE
+; ..\Appl\GenData\Os_Application_Lcfg.c	    12   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Os_Application_Lcfg.c	    13   *            Module: Os
+; ..\Appl\GenData\Os_Application_Lcfg.c	    14   *           Program: MSR_Vector_SLP4
+; ..\Appl\GenData\Os_Application_Lcfg.c	    15   *          Customer: China Lithium Battery Technology Co., Ltd.
+; ..\Appl\GenData\Os_Application_Lcfg.c	    16   *       Expiry Date: 2025-08-26
+; ..\Appl\GenData\Os_Application_Lcfg.c	    17   *  Ordered Derivat.: SAK-TC387QP-160F300S AE
+; ..\Appl\GenData\Os_Application_Lcfg.c	    18   *    License Scope : The usage is restricted to CBD2200508_D00
+; ..\Appl\GenData\Os_Application_Lcfg.c	    19   *
+; ..\Appl\GenData\Os_Application_Lcfg.c	    20   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Os_Application_Lcfg.c	    21   *  FILE DESCRIPTION
+; ..\Appl\GenData\Os_Application_Lcfg.c	    22   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Os_Application_Lcfg.c	    23   *              File: Os_Application_Lcfg.c
+; ..\Appl\GenData\Os_Application_Lcfg.c	    24   *   Generation Time: 2026-07-25 11:21:05
+; ..\Appl\GenData\Os_Application_Lcfg.c	    25   *           Project: last364 - Version 1.0
+; ..\Appl\GenData\Os_Application_Lcfg.c	    26   *          Delivery: CBD2200508_D00
+; ..\Appl\GenData\Os_Application_Lcfg.c	    27   *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
+; ..\Appl\GenData\Os_Application_Lcfg.c	    28   *
+; ..\Appl\GenData\Os_Application_Lcfg.c	    29   *
+; ..\Appl\GenData\Os_Application_Lcfg.c	    30   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Application_Lcfg.c	    31  
+; ..\Appl\GenData\Os_Application_Lcfg.c	    32  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Application_Lcfg.c	    33   ! BETA VERSION                                                                                                       !
+; ..\Appl\GenData\Os_Application_Lcfg.c	    34   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\Appl\GenData\Os_Application_Lcfg.c	    35   ! This version of DaVinci Configurator Classic and/or the related Basic Software Package is BETA software.               !
+; ..\Appl\GenData\Os_Application_Lcfg.c	    36   ! BETA Software is basically operable, but not sufficiently tested, verified and/or qualified for use in series      !
+; ..\Appl\GenData\Os_Application_Lcfg.c	    37   ! production and/or in vehicles operating on public or non-public roads.                                             !
+; ..\Appl\GenData\Os_Application_Lcfg.c	    38   ! In particular, without limitation, BETA Software may cause unpredictable ECU behavior, may not provide all         !
+; ..\Appl\GenData\Os_Application_Lcfg.c	    39   ! functions necessary for use in series production and/or may not comply with quality requirements which are         !
+; ..\Appl\GenData\Os_Application_Lcfg.c	    40   ! necessary according to the state of the art. BETA Software must not be used in series production.                  !
+; ..\Appl\GenData\Os_Application_Lcfg.c	    41   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\Appl\GenData\Os_Application_Lcfg.c	    42  **********************************************************************************************************************/
+; ..\Appl\GenData\Os_Application_Lcfg.c	    43  
+; ..\Appl\GenData\Os_Application_Lcfg.c	    44  /* PRQA S 0777, 0779, 0828 EOF */ /* MD_MSR_Rule5.1, MD_MSR_Rule5.2, MD_MSR_Dir1.1 */
+; ..\Appl\GenData\Os_Application_Lcfg.c	    45  
+; ..\Appl\GenData\Os_Application_Lcfg.c	    46  #define OS_APPLICATION_LCFG_SOURCE
+; ..\Appl\GenData\Os_Application_Lcfg.c	    47  
+; ..\Appl\GenData\Os_Application_Lcfg.c	    48  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Application_Lcfg.c	    49   *  INCLUDES
+; ..\Appl\GenData\Os_Application_Lcfg.c	    50   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Application_Lcfg.c	    51  
+; ..\Appl\GenData\Os_Application_Lcfg.c	    52  /* AUTOSAR includes */
+; ..\Appl\GenData\Os_Application_Lcfg.c	    53  #include "Std_Types.h"
+; ..\Appl\GenData\Os_Application_Lcfg.c	    54  
+; ..\Appl\GenData\Os_Application_Lcfg.c	    55  /* Os module declarations */
+; ..\Appl\GenData\Os_Application_Lcfg.c	    56  #include "Os_Application_Cfg.h"
+; ..\Appl\GenData\Os_Application_Lcfg.c	    57  #include "Os_Application_Lcfg.h"
+; ..\Appl\GenData\Os_Application_Lcfg.c	    58  #include "Os_Application.h"
+; ..\Appl\GenData\Os_Application_Lcfg.c	    59  
+; ..\Appl\GenData\Os_Application_Lcfg.c	    60  /* Os kernel module dependencies */
+; ..\Appl\GenData\Os_Application_Lcfg.c	    61  #include "Os_Alarm_Lcfg.h"
+; ..\Appl\GenData\Os_Application_Lcfg.c	    62  #include "Os_Alarm.h"
+; ..\Appl\GenData\Os_Application_Lcfg.c	    63  #include "Os_Common.h"
+; ..\Appl\GenData\Os_Application_Lcfg.c	    64  #include "Os_Core_Lcfg.h"
+; ..\Appl\GenData\Os_Application_Lcfg.c	    65  #include "Os_Counter_Lcfg.h"
+; ..\Appl\GenData\Os_Application_Lcfg.c	    66  #include "Os_Counter.h"
+; ..\Appl\GenData\Os_Application_Lcfg.c	    67  #include "Os_Hook_Lcfg.h"
+; ..\Appl\GenData\Os_Application_Lcfg.c	    68  #include "Os_Isr_Lcfg.h"
+; ..\Appl\GenData\Os_Application_Lcfg.c	    69  #include "Os_ScheduleTable_Lcfg.h"
+; ..\Appl\GenData\Os_Application_Lcfg.c	    70  #include "Os_ScheduleTable.h"
+; ..\Appl\GenData\Os_Application_Lcfg.c	    71  #include "Os_ServiceFunction_Lcfg.h"
+; ..\Appl\GenData\Os_Application_Lcfg.c	    72  #include "Os_Task_Lcfg.h"
+; ..\Appl\GenData\Os_Application_Lcfg.c	    73  #include "Os_Timer.h"
+; ..\Appl\GenData\Os_Application_Lcfg.c	    74  
+; ..\Appl\GenData\Os_Application_Lcfg.c	    75  /* Os hal dependencies */
+; ..\Appl\GenData\Os_Application_Lcfg.c	    76  
+; ..\Appl\GenData\Os_Application_Lcfg.c	    77  
+; ..\Appl\GenData\Os_Application_Lcfg.c	    78  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Application_Lcfg.c	    79   *  LOCAL CONSTANT MACROS
+; ..\Appl\GenData\Os_Application_Lcfg.c	    80   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Application_Lcfg.c	    81  
+; ..\Appl\GenData\Os_Application_Lcfg.c	    82  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Application_Lcfg.c	    83   *  LOCAL FUNCTION MACROS
+; ..\Appl\GenData\Os_Application_Lcfg.c	    84   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Application_Lcfg.c	    85  
+; ..\Appl\GenData\Os_Application_Lcfg.c	    86  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Application_Lcfg.c	    87   *  LOCAL DATA TYPES AND STRUCTURES
+; ..\Appl\GenData\Os_Application_Lcfg.c	    88   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Application_Lcfg.c	    89  
+; ..\Appl\GenData\Os_Application_Lcfg.c	    90  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Application_Lcfg.c	    91   *  LOCAL DATA PROTOTYPES
+; ..\Appl\GenData\Os_Application_Lcfg.c	    92   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Application_Lcfg.c	    93  
+; ..\Appl\GenData\Os_Application_Lcfg.c	    94  #define OS_START_SEC_CORE0_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Application_Lcfg.c	    95  #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Application_Lcfg.c	    96  
+; ..\Appl\GenData\Os_Application_Lcfg.c	    97  /*! Dynamic application data: SystemApplication_OsCore0 */
+; ..\Appl\GenData\Os_Application_Lcfg.c	    98  OS_LOCAL VAR(Os_AppType, OS_VAR_NOINIT) OsCfg_App_SystemApplication_OsCore0_Dyn;
+; ..\Appl\GenData\Os_Application_Lcfg.c	    99  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   100  #define OS_STOP_SEC_CORE0_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Application_Lcfg.c	   101  #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Application_Lcfg.c	   102  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   103  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   104  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Application_Lcfg.c	   105   *  GLOBAL DATA
+; ..\Appl\GenData\Os_Application_Lcfg.c	   106   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Application_Lcfg.c	   107  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   108  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Application_Lcfg.c	   109   *  GLOBAL CONSTANT DATA
+; ..\Appl\GenData\Os_Application_Lcfg.c	   110   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Application_Lcfg.c	   111  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   112  #define OS_START_SEC_CORE0_CONST_UNSPECIFIED
+; ..\Appl\GenData\Os_Application_Lcfg.c	   113  #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Application_Lcfg.c	   114  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   115  /*! Object reference table for application alarms: SystemApplication_OsCore0 */
+; ..\Appl\GenData\Os_Application_Lcfg.c	   116  OS_LOCAL CONST(Os_AlarmConfigRefType, OS_CONST) OsCfg_App_SystemApplication_OsCore0_AlarmRefs[OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_ALARMS + 1u] =
+; ..\Appl\GenData\Os_Application_Lcfg.c	   117  {
+; ..\Appl\GenData\Os_Application_Lcfg.c	   118    OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   119    OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   120    OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   121    OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_Default_Appl_Task_0_10ms),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   122    OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_Default_Appl_Task_0_1ms),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   123    OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic1000ms),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   124    OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic250ms),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   125    NULL_PTR
+; ..\Appl\GenData\Os_Application_Lcfg.c	   126  };
+; ..\Appl\GenData\Os_Application_Lcfg.c	   127  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   128  /*! Object reference table for application counters: SystemApplication_OsCore0 */
+; ..\Appl\GenData\Os_Application_Lcfg.c	   129  OS_LOCAL CONST(Os_CounterConfigRefType, OS_CONST) OsCfg_App_SystemApplication_OsCore0_CounterRefs[OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_COUNTERS + 1u] =
+; ..\Appl\GenData\Os_Application_Lcfg.c	   130  {
+; ..\Appl\GenData\Os_Application_Lcfg.c	   131    OS_COUNTER_CASTCONFIG_TIMERPFRT_2_COUNTER(OsCfg_Counter_SystemTimer),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   132    NULL_PTR
+; ..\Appl\GenData\Os_Application_Lcfg.c	   133  };
+; ..\Appl\GenData\Os_Application_Lcfg.c	   134  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   135  /*! Object reference table for application hooks: SystemApplication_OsCore0 */
+; ..\Appl\GenData\Os_Application_Lcfg.c	   136  OS_LOCAL CONST(Os_HookConfigRefType, OS_CONST) OsCfg_App_SystemApplication_OsCore0_HookRefs[OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_HOOKS + 1u] =
+; ..\Appl\GenData\Os_Application_Lcfg.c	   137  {
+; ..\Appl\GenData\Os_Application_Lcfg.c	   138    NULL_PTR
+; ..\Appl\GenData\Os_Application_Lcfg.c	   139  };
+; ..\Appl\GenData\Os_Application_Lcfg.c	   140  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   141  /*! Object reference table for application ISRs: SystemApplication_OsCore0 */
+; ..\Appl\GenData\Os_Application_Lcfg.c	   142  OS_LOCAL CONST(Os_IsrConfigRefType, OS_CONST) OsCfg_App_SystemApplication_OsCore0_IsrRefs[OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_ISRS + 1u] =
+; ..\Appl\GenData\Os_Application_Lcfg.c	   143  {
+; ..\Appl\GenData\Os_Application_Lcfg.c	   144    OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_AdcIsr_G0),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   145    OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_AdcIsr_G8),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   146    OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_CanIsr_0),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   147    OS_TIMER_CASTCONFIG_TIMERISR_2_ISR(OsCfg_Isr_CounterIsr_SystemTimer),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   148    OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_DMACH4SR_ISR),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   149    OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_DMACH5SR_ISR),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   150    OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_DmaErrIsr),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   151    OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_Qspi2ErrIsr),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   152    OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_Qspi2PtIsr),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   153    NULL_PTR
+; ..\Appl\GenData\Os_Application_Lcfg.c	   154  };
+; ..\Appl\GenData\Os_Application_Lcfg.c	   155  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   156  /*! Object reference table for application category 1 (EXTERNAL) ISRs: SystemApplication_OsCore0 */
+; ..\Appl\GenData\Os_Application_Lcfg.c	   157  OS_LOCAL CONST(Os_IsrCat1ConfigRefType, OS_CONST) OsCfg_App_SystemApplication_OsCore0_Cat1IsrRefs[OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_CAT1ISRS + 1u] =
+; ..\Appl\GenData\Os_Application_Lcfg.c	   158  {
+; ..\Appl\GenData\Os_Application_Lcfg.c	   159    NULL_PTR
+; ..\Appl\GenData\Os_Application_Lcfg.c	   160  };
+; ..\Appl\GenData\Os_Application_Lcfg.c	   161  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   162  /*! Object reference table for application schedule tables: SystemApplication_OsCore0 */
+; ..\Appl\GenData\Os_Application_Lcfg.c	   163  OS_LOCAL CONST(Os_SchTConfigRefType, OS_CONST) OsCfg_App_SystemApplication_OsCore0_SchTRefs[OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_SCHTS + 1u] =
+; ..\Appl\GenData\Os_Application_Lcfg.c	   164  {
+; ..\Appl\GenData\Os_Application_Lcfg.c	   165    NULL_PTR
+; ..\Appl\GenData\Os_Application_Lcfg.c	   166  };
+; ..\Appl\GenData\Os_Application_Lcfg.c	   167  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   168  /*! Object reference table for application tasks: SystemApplication_OsCore0 */
+; ..\Appl\GenData\Os_Application_Lcfg.c	   169  OS_LOCAL CONST(Os_TaskConfigRefType, OS_CONST) OsCfg_App_SystemApplication_OsCore0_TaskRefs[OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_TASKS + 1u] =
+; ..\Appl\GenData\Os_Application_Lcfg.c	   170  {
+; ..\Appl\GenData\Os_Application_Lcfg.c	   171    OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_Default_Appl_Init_Task),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   172    OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_Default_Appl_Task),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   173    OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_Default_BSW_ASync_Task),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   174    OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_Default_Init_Task),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   175    OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_Default_Init_Task_Trusted),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   176    OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_IdleTask_OsCore0),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   177    OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_MotorTask),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   178    NULL_PTR
+; ..\Appl\GenData\Os_Application_Lcfg.c	   179  };
+; ..\Appl\GenData\Os_Application_Lcfg.c	   180  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   181  /*! Object reference table for application trusted functions: SystemApplication_OsCore0 */
+; ..\Appl\GenData\Os_Application_Lcfg.c	   182  OS_LOCAL CONST(Os_ServiceConfigRefType, OS_CONST) OsCfg_App_SystemApplication_OsCore0_ServiceRefs[OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_SERVICES + 1u] =
+; ..\Appl\GenData\Os_Application_Lcfg.c	   183  {
+; ..\Appl\GenData\Os_Application_Lcfg.c	   184    NULL_PTR
+; ..\Appl\GenData\Os_Application_Lcfg.c	   185  };
+; ..\Appl\GenData\Os_Application_Lcfg.c	   186  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   187  /*! Application configuration data: SystemApplication_OsCore0 */
+; ..\Appl\GenData\Os_Application_Lcfg.c	   188  CONST(Os_AppConfigType, OS_CONST) OsCfg_App_SystemApplication_OsCore0 =
+; ..\Appl\GenData\Os_Application_Lcfg.c	   189  {
+; ..\Appl\GenData\Os_Application_Lcfg.c	   190    /* .Dyn                  = */ &OsCfg_App_SystemApplication_OsCore0_Dyn,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   191    /* .Core                 = */ &OsCfg_Core_OsCore0,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   192    /* .AccessRightId        = */ OS_APPID2MASK(SystemApplication_OsCore0),
+; ..\Appl\GenData\Os_Application_Lcfg.c	   193    /* .TaskRefs             = */ OsCfg_App_SystemApplication_OsCore0_TaskRefs,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   194    /* .TaskCount            = */ (Os_ObjIdxType)OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_TASKS,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   195    /* .IsrCat2Refs          = */ OsCfg_App_SystemApplication_OsCore0_IsrRefs,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   196    /* .IsrCat2Count         = */ (Os_ObjIdxType)OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_ISRS,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   197    /* .IsrCat1Refs          = */ OsCfg_App_SystemApplication_OsCore0_Cat1IsrRefs,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   198    /* .IsrCat1Count         = */ (Os_ObjIdxType)OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_CAT1ISRS,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   199    /* .CounterRefs          = */ OsCfg_App_SystemApplication_OsCore0_CounterRefs,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   200    /* .CounterCount         = */ (Os_ObjIdxType)OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_COUNTERS,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   201    /* .AlarmRefs            = */ OsCfg_App_SystemApplication_OsCore0_AlarmRefs,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   202    /* .AlarmCount           = */ (Os_ObjIdxType)OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_ALARMS,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   203    /* .SchTRefs             = */ OsCfg_App_SystemApplication_OsCore0_SchTRefs,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   204    /* .SchTCount            = */ (Os_ObjIdxType)OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_SCHTS,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   205    /* .ServiceFunctions     = */ OsCfg_App_SystemApplication_OsCore0_ServiceRefs,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   206    /* .ServiceFunctionCount = */ (Os_ObjIdxType)OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_SERVICES,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   207    /* .StartupHookRef       = */ NULL_PTR,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   208    /* .ShutdownHookRef      = */ NULL_PTR,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   209    /* .ErrorHookRef         = */ NULL_PTR,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   210    /* .HookRefs             = */ OsCfg_App_SystemApplication_OsCore0_HookRefs,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   211    /* .HookCount            = */ (Os_ObjIdxType)OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_HOOKS,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   212    /* .TraceAppl            = */ NULL_PTR,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   213    /* .RestartTask          = */ NULL_PTR,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   214    /* .IsTrusted            = */ TRUE,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   215    /* .IsPriveleged         = */ TRUE,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   216    /* .HasTimingProtectionDelay = */ FALSE,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   217    /* .Id                   = */ SystemApplication_OsCore0
+; ..\Appl\GenData\Os_Application_Lcfg.c	   218  };
+; ..\Appl\GenData\Os_Application_Lcfg.c	   219  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   220  #define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
+; ..\Appl\GenData\Os_Application_Lcfg.c	   221  #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Application_Lcfg.c	   222  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   223  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   224  #define OS_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Os_Application_Lcfg.c	   225  #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Application_Lcfg.c	   226  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   227  /*! Object reference table for applications. */
+; ..\Appl\GenData\Os_Application_Lcfg.c	   228  CONSTP2CONST(Os_AppConfigType, OS_CONST, OS_CONST) OsCfg_AppRefs[OS_APPID_COUNT + 1] =   /* PRQA S 4521 */ /* MD_Os_Rule10.1_4521 */
+; ..\Appl\GenData\Os_Application_Lcfg.c	   229  {
+; ..\Appl\GenData\Os_Application_Lcfg.c	   230    &OsCfg_App_SystemApplication_OsCore0,
+; ..\Appl\GenData\Os_Application_Lcfg.c	   231    NULL_PTR
+; ..\Appl\GenData\Os_Application_Lcfg.c	   232  };
+; ..\Appl\GenData\Os_Application_Lcfg.c	   233  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   234  #define OS_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\Os_Application_Lcfg.c	   235  #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Application_Lcfg.c	   236  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   237  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   238  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Application_Lcfg.c	   239   *  LOCAL FUNCTION PROTOTYPES
+; ..\Appl\GenData\Os_Application_Lcfg.c	   240   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Application_Lcfg.c	   241  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   242  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Application_Lcfg.c	   243   *  LOCAL FUNCTIONS
+; ..\Appl\GenData\Os_Application_Lcfg.c	   244   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Application_Lcfg.c	   245  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   246  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Application_Lcfg.c	   247   *  GLOBAL FUNCTIONS
+; ..\Appl\GenData\Os_Application_Lcfg.c	   248   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Application_Lcfg.c	   249  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   250  
+; ..\Appl\GenData\Os_Application_Lcfg.c	   251  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Application_Lcfg.c	   252   *  END OF FILE: Os_Application_Lcfg.c
+; ..\Appl\GenData\Os_Application_Lcfg.c	   253   *********************************************************************************************************************/
+
+	; Module end

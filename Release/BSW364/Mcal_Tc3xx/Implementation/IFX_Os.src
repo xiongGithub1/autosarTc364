@@ -1,0 +1,180 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc17480a --dep-file=BSW364\\Mcal_Tc3xx\\Implementation\\.IFX_Os.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=BSW364\\Mcal_Tc3xx\\Implementation\\IFX_Os.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW364\\Mcal_Tc3xx\\Implementation\\IFX_Os.src ..\\BSW364\\Mcal_Tc3xx\\Implementation\\IFX_Os.c"
+	.compiler_name		"ctc"
+	;source	'..\\BSW364\\Mcal_Tc3xx\\Implementation\\IFX_Os.c'
+
+	
+$TC162
+	
+
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	     1  /*
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	     2   * @Author: qinXiong
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	     3   * @Date: 2026-07-05 17:26:02
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	     4   * @LastEditors: Qxiong&&2307975018@qq.com
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	     5   * @LastEditTime: 2026-07-05 17:26:08
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	     6   * @Description: 
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	     7   */
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	     8  /******************************************************************************
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	     9  **                                                                           **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    10  ** Copyright (C) Infineon Technologies (2013)                                **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    11  **                                                                           **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    12  ** All rights reserved.                                                      **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    13  **                                                                           **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    14  ** This document contains proprietary information belonging to Infineon      **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    15  ** Technologies. Passing on and copying of this document, and communication  **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    16  ** of its contents is not permitted without prior written authorization.     **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    17  **                                                                           **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    18  *******************************************************************************
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    19  **                                                                           **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    20  **  $FILENAME   : Os.c $                                                     **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    21  **                                                                           **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    22  **  $CC VERSION : \main\14 $                                                 **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    23  **                                                                           **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    24  **  $DATE       : 2018-03-07 $                                               **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    25  **                                                                           **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    26  **  AUTHOR      : DL-AUTOSAR-Engineering                                     **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    27  **                                                                           **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    28  **  VENDOR      : Infineon Technologies                                      **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    29  **                                                                           **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    30  **  DESCRIPTION : This file contains                                         **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    31  **                - stub for OS functionality.                               **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    32  **                                                                           **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    33  **  MAY BE CHANGED BY USER [yes/no]: Yes                                     **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    34  **                                                                           **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    35  ******************************************************************************/
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    36  
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    37  /******************************************************************************
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    38  **                      Includes                                             **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    39  ******************************************************************************/
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    40  
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    41  /* Inclusion of Platform_Types.h and Compiler.h */
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    42  #include "Std_Types.h"
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    43  
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    44  /* Inclusion of Tasking sfr file */
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    45  #include "IfxCpu_reg.h"
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    46  
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    47  /* Include Mcal for Library */
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    48  #include "McalLib.h"
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    49  
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    50  /* Inclusion for definition of ENABLE() & DISABLE() functions*/
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    51  #include "IFX_Os.h"
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    52  
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    53  /******************************************************************************
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    54  **                      Imported Compiler Switch Checks                      **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    55  ******************************************************************************/
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    56  
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    57  /******************************************************************************
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    58  **                      Private Macro Definitions                            **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    59  ******************************************************************************/
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    60  
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    61  /******************************************************************************
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    62  **                      Private Type Definitions                             **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    63  ******************************************************************************/
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    64  
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    65  /******************************************************************************
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    66  **                      Private Function Declarations                        **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    67  ******************************************************************************/
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    68  
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    69  /******************************************************************************
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    70  **                      Global Constant Definitions                          **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    71  ******************************************************************************/
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    72  
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    73  /******************************************************************************
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    74  **                      Global Variable Definitions                          **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    75  ******************************************************************************/
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    76  
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    77  /******************************************************************************
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    78  **                      Private Constant Definitions                         **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    79  ******************************************************************************/
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    80  
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    81  /******************************************************************************
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    82  **                      Private Variable Definitions                         **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    83  ******************************************************************************/
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    84  static volatile uint8 Os_IntSaveDisableCounter[MCAL_NO_OF_CORES];
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    85  static volatile sint32 Os_SavedIntLevelNested[MCAL_NO_OF_CORES];
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    86  
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    87  /******************************************************************************
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    88  **                      Private Function Definitions                         **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    89  ******************************************************************************/
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    90  
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    91  /******************************************************************************
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    92  **                      Global Function Definitions                          **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    93  ******************************************************************************/
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    94  
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    95  /******************************************************************************
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    96  ** Syntax           : void SuspendAllInterrupts(void)                        **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    97  **                                                                           **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    98  ** Service ID       :  none                                                  **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	    99  **                                                                           **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   100  ** Sync/Async       : Synchronous                                            **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   101  **                                                                           **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   102  ** Reentrancy       : non - reentrant                                        **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   103  **                                                                           **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   104  ** Parameters(in)   : none                                                   **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   105  **                                                                           **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   106  ** Parameters (out) : none                                                   **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   107  **                                                                           **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   108  ** Return value     : none                                                   **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   109  **                                                                           **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   110  ** Description      : This function Suspends all interrupts, nested          **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   111  **                                                                           **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   112  ******************************************************************************/
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   113  //void SuspendAllInterrupts(void)
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   114  //{
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   115  //  uint32 CoreId;
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   116  //
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   117  //  /* Get the current core id */
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   118  //  CoreId = Mcal_GetCpuIndex();
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   119  //
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   120  //  if(Os_IntSaveDisableCounter[CoreId] == 0)
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   121  //  {
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   122  //    Os_SavedIntLevelNested[CoreId] = MFCR(CPU_ICR);/* disable interrupts */
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   123  //    DISABLE();
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   124  //  }
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   125  //  Os_IntSaveDisableCounter[CoreId]++;
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   126  //}
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   127  /******************************************************************************/
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   128  
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   129  /*******************************************************************************
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   130  ** Syntax           : void ResumeAllInterrupts(void)                          **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   131  **                                                                            **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   132  ** Service ID       :  none                                                   **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   133  **                                                                            **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   134  ** Sync/Async       : Synchronous                                             **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   135  **                                                                            **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   136  ** Reentrancy       : non - reentrant                                         **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   137  **                                                                            **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   138  ** Parameters(in)   : none                                                    **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   139  **                                                                            **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   140  ** Parameters (out) : none                                                    **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   141  **                                                                            **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   142  ** Return value     : none                                                    **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   143  **                                                                            **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   144  ** Description      : This function Resumes all interrupts, nested            **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   145  **                                                                            **
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   146  *******************************************************************************/
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   147  //void ResumeAllInterrupts(void)
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   148  //{
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   149  //  uint32 CoreId;
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   150  //
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   151  //  /* Get the current core id */
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   152  //  CoreId = Mcal_GetCpuIndex();
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   153  //
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   154  //  if (Os_IntSaveDisableCounter[CoreId] > 0)
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   155  //  {
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   156  //    Os_IntSaveDisableCounter[CoreId]--;
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   157  //  }
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   158  //
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   159  //  if (Os_IntSaveDisableCounter[CoreId] == 0)
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   160  //  {
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   161  //    if (Os_SavedIntLevelNested[CoreId] & (0x00000001U << 15))
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   162  //    {
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   163  //      /* interrupts were enabled, enable again */
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   164  //      ENABLE();
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   165  //    }
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   166  //  }
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   167  //}
+; ..\BSW364\Mcal_Tc3xx\Implementation\IFX_Os.c	   168  
+
+	; Module end

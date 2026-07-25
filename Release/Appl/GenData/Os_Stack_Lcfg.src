@@ -1,0 +1,476 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc2660a --dep-file=Appl\\GenData\\.Os_Stack_Lcfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=Appl\\GenData\\Os_Stack_Lcfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\Os_Stack_Lcfg.src ..\\Appl\\GenData\\Os_Stack_Lcfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\GenData\\Os_Stack_Lcfg.c'
+
+	
+$TC162
+	
+	.sdecl	'.bss.OS_STACK_DEFAULT_APPL_TASK_VAR_NOINIT',data
+	.sect	'.bss.OS_STACK_DEFAULT_APPL_TASK_VAR_NOINIT'
+	.global	OsCfg_Stack_Default_Appl_Task_Dyn
+	.align	8
+OsCfg_Stack_Default_Appl_Task_Dyn:	.type	object
+	.size	OsCfg_Stack_Default_Appl_Task_Dyn,4112
+	.space	4112
+	.sdecl	'.bss.OS_STACK_DEFAULT_BSW_ASYNC_TASK_VAR_NOINIT',data
+	.sect	'.bss.OS_STACK_DEFAULT_BSW_ASYNC_TASK_VAR_NOINIT'
+	.global	OsCfg_Stack_Default_BSW_ASync_Task_Dyn
+	.align	8
+OsCfg_Stack_Default_BSW_ASync_Task_Dyn:	.type	object
+	.size	OsCfg_Stack_Default_BSW_ASync_Task_Dyn,4112
+	.space	4112
+	.sdecl	'.bss.OS_STACK_MOTORTASK_VAR_NOINIT',data
+	.sect	'.bss.OS_STACK_MOTORTASK_VAR_NOINIT'
+	.global	OsCfg_Stack_MotorTask_Dyn
+	.align	8
+OsCfg_Stack_MotorTask_Dyn:	.type	object
+	.size	OsCfg_Stack_MotorTask_Dyn,1040
+	.space	1040
+	.sdecl	'.bss.OS_STACK_OSCORE0_ERROR_VAR_NOINIT',data
+	.sect	'.bss.OS_STACK_OSCORE0_ERROR_VAR_NOINIT'
+	.global	OsCfg_Stack_OsCore0_Error_Dyn
+	.align	8
+OsCfg_Stack_OsCore0_Error_Dyn:	.type	object
+	.size	OsCfg_Stack_OsCore0_Error_Dyn,1040
+	.space	1040
+	.sdecl	'.bss.OS_STACK_OSCORE0_INIT_VAR_NOINIT',data
+	.sect	'.bss.OS_STACK_OSCORE0_INIT_VAR_NOINIT'
+	.global	OsCfg_Stack_OsCore0_Init_Dyn
+	.align	8
+OsCfg_Stack_OsCore0_Init_Dyn:	.type	object
+	.size	OsCfg_Stack_OsCore0_Init_Dyn,1040
+	.space	1040
+	.sdecl	'.bss.OS_STACK_OSCORE0_ISR_CORE_VAR_NOINIT',data
+	.sect	'.bss.OS_STACK_OSCORE0_ISR_CORE_VAR_NOINIT'
+	.global	OsCfg_Stack_OsCore0_Isr_Core_Dyn
+	.align	8
+OsCfg_Stack_OsCore0_Isr_Core_Dyn:	.type	object
+	.size	OsCfg_Stack_OsCore0_Isr_Core_Dyn,2064
+	.space	2064
+	.sdecl	'.bss.OS_STACK_OSCORE0_KERNEL_VAR_NOINIT',data
+	.sect	'.bss.OS_STACK_OSCORE0_KERNEL_VAR_NOINIT'
+	.global	OsCfg_Stack_OsCore0_Kernel_Dyn
+	.align	8
+OsCfg_Stack_OsCore0_Kernel_Dyn:	.type	object
+	.size	OsCfg_Stack_OsCore0_Kernel_Dyn,1040
+	.space	1040
+	.sdecl	'.bss.OS_STACK_OSCORE0_TASK_PRIO4294967295_VAR_NOINIT',data
+	.sect	'.bss.OS_STACK_OSCORE0_TASK_PRIO4294967295_VAR_NOINIT'
+	.global	OsCfg_Stack_OsCore0_Task_Prio4294967295_Dyn
+	.align	8
+OsCfg_Stack_OsCore0_Task_Prio4294967295_Dyn:	.type	object
+	.size	OsCfg_Stack_OsCore0_Task_Prio4294967295_Dyn,1040
+	.space	1040
+	.sdecl	'.bss.OS_STACK_OSCORE0_TASK_PRIO45_VAR_NOINIT',data
+	.sect	'.bss.OS_STACK_OSCORE0_TASK_PRIO45_VAR_NOINIT'
+	.global	OsCfg_Stack_OsCore0_Task_Prio45_Dyn
+	.align	8
+OsCfg_Stack_OsCore0_Task_Prio45_Dyn:	.type	object
+	.size	OsCfg_Stack_OsCore0_Task_Prio45_Dyn,1040
+	.space	1040
+	.sdecl	'.bss.OS_STACK_OSCORE0_TASK_PRIO49_VAR_NOINIT',data
+	.sect	'.bss.OS_STACK_OSCORE0_TASK_PRIO49_VAR_NOINIT'
+	.global	OsCfg_Stack_OsCore0_Task_Prio49_Dyn
+	.align	8
+OsCfg_Stack_OsCore0_Task_Prio49_Dyn:	.type	object
+	.size	OsCfg_Stack_OsCore0_Task_Prio49_Dyn,1040
+	.space	1040
+	.sdecl	'.bss.OS_STACK_OSCORE0_TASK_PRIO50_VAR_NOINIT',data
+	.sect	'.bss.OS_STACK_OSCORE0_TASK_PRIO50_VAR_NOINIT'
+	.global	OsCfg_Stack_OsCore0_Task_Prio50_Dyn
+	.align	8
+OsCfg_Stack_OsCore0_Task_Prio50_Dyn:	.type	object
+	.size	OsCfg_Stack_OsCore0_Task_Prio50_Dyn,1040
+	.space	1040
+	.sdecl	'.zrodata.OS_CORE0_CONST_FAST',data,rom
+	.sect	'.zrodata.OS_CORE0_CONST_FAST'
+	.global	OsCfg_Stack_Default_Appl_Task
+	.align	4
+OsCfg_Stack_Default_Appl_Task:	.type	object
+	.size	OsCfg_Stack_Default_Appl_Task,8
+	.word	OsCfg_Stack_Default_Appl_Task_Dyn,OsCfg_Stack_Default_Appl_Task_Dyn+4092
+	.sdecl	'.zrodata.OS_CORE0_CONST_FAST',data,rom
+	.sect	'.zrodata.OS_CORE0_CONST_FAST'
+	.global	OsCfg_Stack_Default_BSW_ASync_Task
+	.align	4
+OsCfg_Stack_Default_BSW_ASync_Task:	.type	object
+	.size	OsCfg_Stack_Default_BSW_ASync_Task,8
+	.word	OsCfg_Stack_Default_BSW_ASync_Task_Dyn,OsCfg_Stack_Default_BSW_ASync_Task_Dyn+4092
+	.sdecl	'.zrodata.OS_CORE0_CONST_FAST',data,rom
+	.sect	'.zrodata.OS_CORE0_CONST_FAST'
+	.global	OsCfg_Stack_MotorTask
+	.align	4
+OsCfg_Stack_MotorTask:	.type	object
+	.size	OsCfg_Stack_MotorTask,8
+	.word	OsCfg_Stack_MotorTask_Dyn,OsCfg_Stack_MotorTask_Dyn+1020
+	.sdecl	'.zrodata.OS_CORE0_CONST_FAST',data,rom
+	.sect	'.zrodata.OS_CORE0_CONST_FAST'
+	.global	OsCfg_Stack_OsCore0_Error
+	.align	4
+OsCfg_Stack_OsCore0_Error:	.type	object
+	.size	OsCfg_Stack_OsCore0_Error,8
+	.word	OsCfg_Stack_OsCore0_Error_Dyn,OsCfg_Stack_OsCore0_Error_Dyn+1020
+	.sdecl	'.zrodata.OS_CORE0_CONST_FAST',data,rom
+	.sect	'.zrodata.OS_CORE0_CONST_FAST'
+	.global	OsCfg_Stack_OsCore0_Init
+	.align	4
+OsCfg_Stack_OsCore0_Init:	.type	object
+	.size	OsCfg_Stack_OsCore0_Init,8
+	.word	OsCfg_Stack_OsCore0_Init_Dyn,OsCfg_Stack_OsCore0_Init_Dyn+1020
+	.sdecl	'.zrodata.OS_CORE0_CONST_FAST',data,rom
+	.sect	'.zrodata.OS_CORE0_CONST_FAST'
+	.global	OsCfg_Stack_OsCore0_Isr_Core
+	.align	4
+OsCfg_Stack_OsCore0_Isr_Core:	.type	object
+	.size	OsCfg_Stack_OsCore0_Isr_Core,8
+	.word	OsCfg_Stack_OsCore0_Isr_Core_Dyn,OsCfg_Stack_OsCore0_Isr_Core_Dyn+2044
+	.sdecl	'.zrodata.OS_CORE0_CONST_FAST',data,rom
+	.sect	'.zrodata.OS_CORE0_CONST_FAST'
+	.global	OsCfg_Stack_OsCore0_Kernel
+	.align	4
+OsCfg_Stack_OsCore0_Kernel:	.type	object
+	.size	OsCfg_Stack_OsCore0_Kernel,8
+	.word	OsCfg_Stack_OsCore0_Kernel_Dyn,OsCfg_Stack_OsCore0_Kernel_Dyn+1020
+	.sdecl	'.zrodata.OS_CORE0_CONST_FAST',data,rom
+	.sect	'.zrodata.OS_CORE0_CONST_FAST'
+	.global	OsCfg_Stack_OsCore0_Task_Prio4294967295
+	.align	4
+OsCfg_Stack_OsCore0_Task_Prio4294967295:	.type	object
+	.size	OsCfg_Stack_OsCore0_Task_Prio4294967295,8
+	.word	OsCfg_Stack_OsCore0_Task_Prio4294967295_Dyn,OsCfg_Stack_OsCore0_Task_Prio4294967295_Dyn+1020
+	.sdecl	'.zrodata.OS_CORE0_CONST_FAST',data,rom
+	.sect	'.zrodata.OS_CORE0_CONST_FAST'
+	.global	OsCfg_Stack_OsCore0_Task_Prio45
+	.align	4
+OsCfg_Stack_OsCore0_Task_Prio45:	.type	object
+	.size	OsCfg_Stack_OsCore0_Task_Prio45,8
+	.word	OsCfg_Stack_OsCore0_Task_Prio45_Dyn,OsCfg_Stack_OsCore0_Task_Prio45_Dyn+1020
+	.sdecl	'.zrodata.OS_CORE0_CONST_FAST',data,rom
+	.sect	'.zrodata.OS_CORE0_CONST_FAST'
+	.global	OsCfg_Stack_OsCore0_Task_Prio49
+	.align	4
+OsCfg_Stack_OsCore0_Task_Prio49:	.type	object
+	.size	OsCfg_Stack_OsCore0_Task_Prio49,8
+	.word	OsCfg_Stack_OsCore0_Task_Prio49_Dyn,OsCfg_Stack_OsCore0_Task_Prio49_Dyn+1020
+	.sdecl	'.zrodata.OS_CORE0_CONST_FAST',data,rom
+	.sect	'.zrodata.OS_CORE0_CONST_FAST'
+	.global	OsCfg_Stack_OsCore0_Task_Prio50
+	.align	4
+OsCfg_Stack_OsCore0_Task_Prio50:	.type	object
+	.size	OsCfg_Stack_OsCore0_Task_Prio50,8
+	.word	OsCfg_Stack_OsCore0_Task_Prio50_Dyn,OsCfg_Stack_OsCore0_Task_Prio50_Dyn+1020
+
+; ..\Appl\GenData\Os_Stack_Lcfg.c	     1  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Stack_Lcfg.c	     2   *  COPYRIGHT
+; ..\Appl\GenData\Os_Stack_Lcfg.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Os_Stack_Lcfg.c	     4   *  \verbatim
+; ..\Appl\GenData\Os_Stack_Lcfg.c	     5   *
+; ..\Appl\GenData\Os_Stack_Lcfg.c	     6   *                 This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\Appl\GenData\Os_Stack_Lcfg.c	     7   *                 Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\Appl\GenData\Os_Stack_Lcfg.c	     8   *                 All other rights remain with Vector Informatik GmbH.
+; ..\Appl\GenData\Os_Stack_Lcfg.c	     9   *  \endverbatim
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    10   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    11   *  LICENSE
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    12   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    13   *            Module: Os
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    14   *           Program: MSR_Vector_SLP4
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    15   *          Customer: China Lithium Battery Technology Co., Ltd.
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    16   *       Expiry Date: 2025-08-26
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    17   *  Ordered Derivat.: SAK-TC387QP-160F300S AE
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    18   *    License Scope : The usage is restricted to CBD2200508_D00
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    19   *
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    20   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    21   *  FILE DESCRIPTION
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    22   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    23   *              File: Os_Stack_Lcfg.c
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    24   *   Generation Time: 2024-07-24 19:46:29
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    25   *           Project: last364 - Version 1.0
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    26   *          Delivery: CBD2200508_D00
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    27   *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    28   *
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    29   *
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    30   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    31  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    32  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    33   ! BETA VERSION                                                                                                       !
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    34   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    35   ! This version of DaVinci Configurator Classic and/or the related Basic Software Package is BETA software.               !
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    36   ! BETA Software is basically operable, but not sufficiently tested, verified and/or qualified for use in series      !
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    37   ! production and/or in vehicles operating on public or non-public roads.                                             !
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    38   ! In particular, without limitation, BETA Software may cause unpredictable ECU behavior, may not provide all         !
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    39   ! functions necessary for use in series production and/or may not comply with quality requirements which are         !
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    40   ! necessary according to the state of the art. BETA Software must not be used in series production.                  !
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    41   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    42  **********************************************************************************************************************/
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    43  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    44  /* PRQA S 0777, 0779, 0828 EOF */ /* MD_MSR_Rule5.1, MD_MSR_Rule5.2, MD_MSR_Dir1.1 */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    45  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    46  #define OS_STACK_LCFG_SOURCE
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    47  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    48  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    49   *  INCLUDES
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    50   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    51  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    52  /* AUTOSAR includes */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    53  #include "Std_Types.h"
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    54  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    55  /* Os module declarations */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    56  #include "Os_Stack_Cfg.h"
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    57  #include "Os_Stack_Lcfg.h"
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    58  #include "Os_Stack.h"
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    59  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    60  /* Os kernel module dependencies */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    61  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    62  /* Os hal dependencies */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    63  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    64  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    65  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    66   *  LOCAL CONSTANT MACROS
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    67   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    68  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    69  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    70   *  LOCAL FUNCTION MACROS
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    71   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    72  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    73  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    74   *  LOCAL DATA TYPES AND STRUCTURES
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    75   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    76  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    77  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    78   *  LOCAL DATA PROTOTYPES
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    79   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    80  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    81  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    82   *  GLOBAL DATA
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    83   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    84  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    85  #define OS_START_SEC_STACK_DEFAULT_APPL_TASK_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    86  #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    87  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    88  /* Task stack: Default_Appl_Task */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    89  /* User: [Default_Appl_Task] */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    90  OS_STACK_DECLARE(OsCfg_Stack_Default_Appl_Task_Dyn, OS_CFG_SIZE_DEFAULT_APPL_TASK_STACK);
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    91  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    92  #define OS_STOP_SEC_STACK_DEFAULT_APPL_TASK_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    93  #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    94  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    95  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    96  #define OS_START_SEC_STACK_DEFAULT_BSW_ASYNC_TASK_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    97  #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    98  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	    99  /* Task stack: Default_BSW_ASync_Task */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   100  /* User: [Default_BSW_ASync_Task] */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   101  OS_STACK_DECLARE(OsCfg_Stack_Default_BSW_ASync_Task_Dyn, OS_CFG_SIZE_DEFAULT_BSW_ASYNC_TASK_STACK);
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   102  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   103  #define OS_STOP_SEC_STACK_DEFAULT_BSW_ASYNC_TASK_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   104  #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   105  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   106  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   107  #define OS_START_SEC_STACK_MOTORTASK_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   108  #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   109  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   110  /* Task stack: MotorTask */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   111  /* User: [MotorTask] */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   112  OS_STACK_DECLARE(OsCfg_Stack_MotorTask_Dyn, OS_CFG_SIZE_MOTORTASK_STACK);
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   113  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   114  #define OS_STOP_SEC_STACK_MOTORTASK_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   115  #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   116  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   117  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   118  #define OS_START_SEC_STACK_OSCORE0_ERROR_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   119  #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   120  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   121  /* Core error stack: OsCore0_Error */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   122  /* User: [ErrorHook_OsCore0, OsCore0] */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   123  OS_STACK_DECLARE(OsCfg_Stack_OsCore0_Error_Dyn, OS_CFG_SIZE_OSCORE0_ERROR_STACK);
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   124  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   125  #define OS_STOP_SEC_STACK_OSCORE0_ERROR_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   126  #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   127  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   128  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   129  #define OS_START_SEC_STACK_OSCORE0_INIT_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   130  #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   131  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   132  /* Core init stack: OsCore0_Init */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   133  /* User: [OsCore0, Os_CoreInitHook_OsCore0] */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   134  OS_STACK_DECLARE(OsCfg_Stack_OsCore0_Init_Dyn, OS_CFG_SIZE_OSCORE0_INIT_STACK);
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   135  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   136  #define OS_STOP_SEC_STACK_OSCORE0_INIT_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   137  #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   138  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   139  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   140  #define OS_START_SEC_STACK_OSCORE0_ISR_CORE_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   141  #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   142  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   143  /* ISR core global stack: OsCore0_Isr_Core */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   144  /* User: [AdcIsr_G0, AdcIsr_G8, CanIsr_0, CounterIsr_SystemTimer, DMACH4SR_ISR, DMACH5SR_ISR, DmaErrIsr, Qspi2ErrIsr, Qspi2PtIsr] */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   145  OS_STACK_DECLARE(OsCfg_Stack_OsCore0_Isr_Core_Dyn, OS_CFG_SIZE_OSCORE0_ISR_CORE_STACK);
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   146  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   147  #define OS_STOP_SEC_STACK_OSCORE0_ISR_CORE_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   148  #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   149  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   150  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   151  #define OS_START_SEC_STACK_OSCORE0_KERNEL_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   152  #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   153  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   154  /* Core kernel stack: OsCore0_Kernel */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   155  /* User: [OsCore0] */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   156  OS_STACK_DECLARE(OsCfg_Stack_OsCore0_Kernel_Dyn, OS_CFG_SIZE_OSCORE0_KERNEL_STACK);
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   157  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   158  #define OS_STOP_SEC_STACK_OSCORE0_KERNEL_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   159  #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   160  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   161  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   162  #define OS_START_SEC_STACK_OSCORE0_TASK_PRIO4294967295_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   163  #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   164  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   165  /* Shared Task stack: OsCore0_Task_Prio4294967295 */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   166  /* User: [IdleTask_OsCore0] */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   167  OS_STACK_DECLARE(OsCfg_Stack_OsCore0_Task_Prio4294967295_Dyn, OS_CFG_SIZE_OSCORE0_TASK_PRIO4294967295_STACK);
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   168  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   169  #define OS_STOP_SEC_STACK_OSCORE0_TASK_PRIO4294967295_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   170  #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   171  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   172  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   173  #define OS_START_SEC_STACK_OSCORE0_TASK_PRIO45_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   174  #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   175  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   176  /* Shared Task stack: OsCore0_Task_Prio45 */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   177  /* User: [Default_Appl_Init_Task] */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   178  OS_STACK_DECLARE(OsCfg_Stack_OsCore0_Task_Prio45_Dyn, OS_CFG_SIZE_OSCORE0_TASK_PRIO45_STACK);
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   179  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   180  #define OS_STOP_SEC_STACK_OSCORE0_TASK_PRIO45_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   181  #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   182  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   183  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   184  #define OS_START_SEC_STACK_OSCORE0_TASK_PRIO49_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   185  #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   186  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   187  /* Shared Task stack: OsCore0_Task_Prio49 */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   188  /* User: [Default_Init_Task_Trusted] */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   189  OS_STACK_DECLARE(OsCfg_Stack_OsCore0_Task_Prio49_Dyn, OS_CFG_SIZE_OSCORE0_TASK_PRIO49_STACK);
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   190  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   191  #define OS_STOP_SEC_STACK_OSCORE0_TASK_PRIO49_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   192  #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   193  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   194  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   195  #define OS_START_SEC_STACK_OSCORE0_TASK_PRIO50_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   196  #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   197  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   198  /* Shared Task stack: OsCore0_Task_Prio50 */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   199  /* User: [Default_Init_Task] */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   200  OS_STACK_DECLARE(OsCfg_Stack_OsCore0_Task_Prio50_Dyn, OS_CFG_SIZE_OSCORE0_TASK_PRIO50_STACK);
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   201  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   202  #define OS_STOP_SEC_STACK_OSCORE0_TASK_PRIO50_VAR_NOINIT_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   203  #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   204  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   205  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   206  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   207   *  GLOBAL CONSTANT DATA
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   208   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   209  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   210  #define OS_START_SEC_CORE0_CONST_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   211  #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   212  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   213  /*! Stack configuration data: Default_Appl_Task */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   214  CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_Default_Appl_Task =
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   215  {
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   216    /* .LowAddress  = */ OS_STACK_GETLOWADDRESS(OsCfg_Stack_Default_Appl_Task_Dyn),
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   217    /* .HighAddress = */ OS_STACK_GETHIGHADDRESS(OsCfg_Stack_Default_Appl_Task_Dyn)
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   218  };
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   219  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   220  /*! Stack configuration data: Default_BSW_ASync_Task */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   221  CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_Default_BSW_ASync_Task =
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   222  {
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   223    /* .LowAddress  = */ OS_STACK_GETLOWADDRESS(OsCfg_Stack_Default_BSW_ASync_Task_Dyn),
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   224    /* .HighAddress = */ OS_STACK_GETHIGHADDRESS(OsCfg_Stack_Default_BSW_ASync_Task_Dyn)
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   225  };
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   226  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   227  /*! Stack configuration data: MotorTask */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   228  CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_MotorTask =
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   229  {
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   230    /* .LowAddress  = */ OS_STACK_GETLOWADDRESS(OsCfg_Stack_MotorTask_Dyn),
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   231    /* .HighAddress = */ OS_STACK_GETHIGHADDRESS(OsCfg_Stack_MotorTask_Dyn)
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   232  };
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   233  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   234  /*! Stack configuration data: OsCore0_Error */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   235  CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore0_Error =
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   236  {
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   237    /* .LowAddress  = */ OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore0_Error_Dyn),
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   238    /* .HighAddress = */ OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore0_Error_Dyn)
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   239  };
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   240  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   241  /*! Stack configuration data: OsCore0_Init */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   242  CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore0_Init =
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   243  {
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   244    /* .LowAddress  = */ OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore0_Init_Dyn),
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   245    /* .HighAddress = */ OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore0_Init_Dyn)
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   246  };
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   247  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   248  /*! Stack configuration data: OsCore0_Isr_Core */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   249  CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore0_Isr_Core =
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   250  {
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   251    /* .LowAddress  = */ OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore0_Isr_Core_Dyn),
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   252    /* .HighAddress = */ OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore0_Isr_Core_Dyn)
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   253  };
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   254  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   255  /*! Stack configuration data: OsCore0_Kernel */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   256  CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore0_Kernel =
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   257  {
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   258    /* .LowAddress  = */ OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore0_Kernel_Dyn),
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   259    /* .HighAddress = */ OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore0_Kernel_Dyn)
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   260  };
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   261  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   262  /*! Stack configuration data: OsCore0_Task_Prio4294967295 */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   263  CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore0_Task_Prio4294967295 =
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   264  {
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   265    /* .LowAddress  = */ OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore0_Task_Prio4294967295_Dyn),
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   266    /* .HighAddress = */ OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore0_Task_Prio4294967295_Dyn)
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   267  };
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   268  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   269  /*! Stack configuration data: OsCore0_Task_Prio45 */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   270  CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore0_Task_Prio45 =
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   271  {
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   272    /* .LowAddress  = */ OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore0_Task_Prio45_Dyn),
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   273    /* .HighAddress = */ OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore0_Task_Prio45_Dyn)
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   274  };
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   275  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   276  /*! Stack configuration data: OsCore0_Task_Prio49 */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   277  CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore0_Task_Prio49 =
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   278  {
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   279    /* .LowAddress  = */ OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore0_Task_Prio49_Dyn),
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   280    /* .HighAddress = */ OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore0_Task_Prio49_Dyn)
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   281  };
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   282  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   283  /*! Stack configuration data: OsCore0_Task_Prio50 */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   284  CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore0_Task_Prio50 =
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   285  {
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   286    /* .LowAddress  = */ OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore0_Task_Prio50_Dyn),
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   287    /* .HighAddress = */ OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore0_Task_Prio50_Dyn)
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   288  };
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   289  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   290  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   291  #define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   292  #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   293  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   294  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   295  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   296   *  LOCAL FUNCTION PROTOTYPES
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   297   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   298  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   299  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   300   *  LOCAL FUNCTIONS
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   301   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   302  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   303  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   304   *  GLOBAL FUNCTIONS
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   305   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   306  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   307  
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   308  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   309   *  END OF FILE: Os_Stack_Lcfg.c
+; ..\Appl\GenData\Os_Stack_Lcfg.c	   310   *********************************************************************************************************************/
+
+	; Module end

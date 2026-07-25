@@ -1,0 +1,1177 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc20960a --dep-file=BSW364\\PduR\\Implementation\\.PduR_McQ.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=BSW364\\PduR\\Implementation\\PduR_McQ.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW364\\PduR\\Implementation\\PduR_McQ.src ..\\BSW364\\PduR\\Implementation\\PduR_McQ.c"
+	.compiler_name		"ctc"
+	;source	'..\\BSW364\\PduR\\Implementation\\PduR_McQ.c'
+
+	
+$TC162
+	
+
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	     1  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	     2   *  COPYRIGHT
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	     4   *  \verbatim
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	     5   *  Copyright (c) 2021 by Vector Informatik GmbH.                                                  All rights reserved.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	     6   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    10   *  \endverbatim
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    11   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    12   *  FILE DESCRIPTION
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    13   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    14   *         File:  PduR_McQ.c
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    15   *      Project:  Gw_AsrPduRCfg5
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    16   *       Module:  MICROSAR PDU Router
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    17   *    Generator:  Configurator 5
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    18   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    19   *  Description:  Vector implementation of AUTOSAR PDU Router
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    20   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    21   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    22  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    23   *  REVISION HISTORY
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    24   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    25   *  Refer to the module's header file.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    26   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    27   *  FILE VERSION
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    28   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    29   *  Refer to the module's header file.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    30   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    31  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    32  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    33   * LOCAL MISRA / PCLINT JUSTIFICATION
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    34   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    35  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    36  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    37  #define PDUR_MCQ_SOURCE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    38  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    39   * INCLUDES
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    40   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    41  #include "PduR.h"
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    42  #include "PduR_McQ.h"
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    43  #include "PduR_RmIf.h"
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    44  #include "SchM_PduR.h"
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    45  #if (PDUR_DEV_ERROR_REPORT == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    46  # include "Det.h"
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    47  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    48  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    49  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    50   *  LOCAL CONSTANT MACROS
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    51   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    52  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    53  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    54   *  LOCAL FUNCTION MACROS
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    55   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    56  #if !defined (PDUR_LOCAL_INLINE)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    57  # define PDUR_LOCAL_INLINE LOCAL_INLINE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    58  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    59  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    60  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    61   *  LOCAL DATA TYPES AND STRUCTURES
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    62   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    63  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    64  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    65   *  LOCAL DATA PROTOTYPES
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    66   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    67  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    68  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    69   *  GLOBAL DATA
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    70   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    71  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    72  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    73   *  LOCAL FUNCTION PROTOTYPES
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    74   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    75  #define PDUR_START_SEC_CODE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    76  #include "PduR_MemMap.h" /* PRQA S 5087 */   /* MD_MSR_MemMap */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    77  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    78  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    79  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    80  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    81   * PduR_McQ_GetMcQBufferArrayRamReadIdxSafe
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    82   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    83  /*! \brief      Gets the current read idx for the McQ buffer.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    84   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    85   *  \param[in]  mcqBufferRomIdx    id of the McQ Buffer
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    86   *  \param[in]  memIdx             memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    87   *  \return     the read index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    88   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    89   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    90  PDUR_LOCAL_INLINE FUNC(PduR_McQBufferArrayRamReadIdxOfMcQBufferRamType, PDUR_CODE) PduR_McQ_GetMcQBufferArrayRamReadIdxSafe(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    91  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    92  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    93  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    94  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    95   * PduR_McQ_GetMcQBufferArrayRamWriteIdxSafe
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    96   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    97  /*! \brief      Sets the current write idx for the McQ buffer.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    98   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	    99   *  \param[in]  mcqBufferRomIdx    id of the McQ Buffer
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   100   *  \param[in]  memIdx             memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   101   *  \return     the write index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   102   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   103   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   104  PDUR_LOCAL_INLINE FUNC(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType, PDUR_CODE) PduR_McQ_GetMcQBufferArrayRamWriteIdxSafe(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   105  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   106  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   107  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   108  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   109   * PduR_McQ_GetMcQBufferArrayRamPendingReadIdxSafe
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   110   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   111  /*! \brief      Get the current Read idx for the pending McQ buffer.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   112   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   113   *  \param[in]  mcqBufferRomIdx    id of the McQ Buffer
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   114   *  \param[in]  memIdx             memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   115   *  \return     the read index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   116   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   117   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   118  PDUR_LOCAL_INLINE FUNC(PduR_McQBufferArrayRamPendingReadIdxOfMcQBufferRamType, PDUR_CODE) PduR_McQ_GetMcQBufferArrayRamPendingReadIdxSafe(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   119  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   120  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   121  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   122  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   123   * PduR_McQ_GetMcQBufferArrayRamPendingWriteIdxSafe
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   124   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   125  /*! \brief      Set the current Write idx for the pending McQ buffer.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   126   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   127   *  \param[in]  mcqBufferRomIdx    id of the McQ Buffer
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   128   *  \return     the read index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   129   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   130   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   131  PDUR_LOCAL_INLINE FUNC(PduR_McQBufferArrayRamPendingWriteIdxOfMcQBufferRamType, PDUR_CODE) PduR_McQ_GetMcQBufferArrayRamPendingWriteIdxSafe(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   132  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   133  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   134  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   135  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   136   * PduR_McQ_GetTxConfirmationSize
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   137   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   138  /*! \brief      This function returns the size of the TxConfirmation Handle which will be put in the McQ.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   139   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   140   *  \return     the size
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   141   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   142   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   143  PDUR_LOCAL_INLINE FUNC(uint8, PDUR_CODE) PduR_McQ_GetTxConfirmationSize(void);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   144  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   145  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   146  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   147  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   148   * PduR_McQ_GetDataHeaderSize
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   149   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   150  /*! \brief      This function returns the size of the header which is put in front of the Pdu in the McQ.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   151   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   152   *  \return     the header size
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   153   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   154   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   155  PDUR_LOCAL_INLINE FUNC(uint8, PDUR_CODE) PduR_McQ_GetDataHeaderSize(void);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   156  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   157  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   158  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   159  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   160   * PduR_McQ_WriteUnusedHeader
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   161   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   162  /*! \brief      This function write an unused value to the write position.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   163   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   164   *  \param[in]  writeIdx  Index to the position in the queue where the unused Entry shall be written
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   165   *  \param[in]  memIdx    memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   166   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   167   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   168  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_WriteUnusedHeader(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   169  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   170  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   171  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   172  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   173   * PduR_McQ_SerializeData
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   174   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   175  /*! \brief      This function serializes the parameter into the queue starting at the writeIdx position.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   176   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   177   *  \param[in]  writeIdx      Index to the position in the queue where the data shall be written
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   178   *  \param[in]  rmDestRomIdx  internal Handle Id of the Pdu to be serialized
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   179   *  \param[in]  data          pointer to the data to be serialized
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   180   *  \param[in]  memIdx        memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   181   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   182   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   183  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_SerializeData(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx, PduR_RmDestRomEndIdxOfRmSrcRomType rmDestRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   184                                                            CONSTP2CONST(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) data, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   185  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   186  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   187  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   188  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   189   * PduR_McQ_SerializeTxConfirmation
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   190   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   191  /*! \brief      This function serializes the tx Confirmation handle into the queue starting at the writeIdx position.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   192   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   193   *  \param[in]  writeIdx      Index to the position in the queue where the data shall be written
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   194   *  \param[in]  rmSrcRomIdx   internal Handle Id of the Pdu to be serialized
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   195   *  \param[in]  memIdx        memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   196   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   197   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   198  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_SerializeTxConfirmation(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx, PduR_RmSrcRomIdxOfRmDestRomType rmSrcRomIdx, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   199  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   200  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   201  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   202  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   203   * PduR_McQ_GetWriteIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   204   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   205  /*! \brief      Returns a valid write Idx if the data fits into the buffer
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   206   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   207   *  \param[in]  mcqBufferRomIdx      Id of the queue to be used
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   208   *  \param[out] writeIdx             The returned writeIdx. Only valid for successful return value.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   209   *  \param[in]  pduLengthWithHeader  length of the data to be put into the queue
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   210   *  \param[in]  memIdx               memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   211   *  \return     E_OK                Data fits into the buffer.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   212   *              E_NOT_OK            Data does not fit into the buffer.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   213   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   214   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   215  PDUR_LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_McQ_GetWriteIdx(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   216                                                                    P2VAR(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType, AUTOMATIC, PDUR_APPL_DATA) writeIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   217                                                                    PduLengthType pduLengthWithHeader,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   218                                                                    PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   219  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   220  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   221  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   222  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   223   * PduR_McQ_DeserializeData
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   224   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   225  /*! \brief       This function deserializes the data which can be found at the readIdx position.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   226   *  \details     -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   227   *  \param[in]   readIdx       Index to the position in the queue where the data shall be read
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   228   *  \param[out]  rmDestRomIdx  Internal Handle Id of the deserialized Pdu
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   229   *  \param[out]  data          Data of the deserialized Pdu
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   230   *  \param[in]   memIdx        memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   231   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   232   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   233  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_DeserializeData(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType readIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   234                                                              P2VAR(PduR_RmDestRomEndIdxOfRmSrcRomType, AUTOMATIC, PDUR_APPL_DATA) rmDestRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   235                                                              P2VAR(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) data,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   236                                                              PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   237  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   238  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   239  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   240  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   241   * PduR_McQ_UpdateWriteIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   242   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   243  /*! \brief       Update the write pointer after a successful write operation.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   244   *  \details -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   245   *  \param[in]   mcQBufferRomIdx              Id of the queue to be used
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   246   *  \param[in]   memIdx                       memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   247   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   248   *  \context     TASK|ISR1|ISR2
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   249   *  \reentrant   TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   250   *  \synchronous TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   251   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   252  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_UpdateWriteIdx(PduR_McQBufferRomIdxOfSrcApplicationRomType mcQBufferRomIdx, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   253  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   254  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   255  #if(PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   256  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   257   * PduR_McQ_ReadTxConfirmation
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   258   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   259  /*! \brief       This function deserializes the tx confirmation handle which can be found at the readIdx position.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   260   *  \details     -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   261   *  \param[in]   mcQBufferRomIdx        Id of the queue to be used
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   262   *  \param[in]   readIdx       Index to the position in the queue where the data shall be read
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   263   *  \param[in]   memIdx        memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   264   *  \return      the RmSrcRomIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   265   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   266   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   267  PDUR_LOCAL_INLINE FUNC(PduR_RmSrcRomIdxOfRmDestRomType, PDUR_CODE) PduR_McQ_ReadTxConfirmation(PduR_McQBufferRomIdxOfSrcApplicationRomType mcQBufferRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   268                                                                                            PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType readIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   269                                                                                            PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   270  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   271  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   272  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   273  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   274   * PduR_McQ_ReadData
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   275   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   276  /*! \brief       Read data from the multicore queue.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   277   *  \details -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   278   *  \param[in]   mcQBufferRomIdx          Id of the queue to be used
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   279   *  \param[in]   readIdx                  Index to the position in the queue where the data shall be read
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   280   *  \param[out]  rmDestRomIdx             Index to the destination Pdu to be queued
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   281   *  \param[out]  data                     pointer to the data
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   282   *  \param[in]   memIdx                   memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   283   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   284   *  \context     TASK
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   285   *  \reentrant   TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   286   *  \synchronous TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   287   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   288  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_ReadData(PduR_McQBufferRomIdxOfSrcApplicationRomType mcQBufferRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   289                                                       PduR_McQBufferArrayRamReadIdxOfMcQBufferRamType readIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   290                                                       P2VAR(PduR_RmDestRomEndIdxOfRmSrcRomType, AUTOMATIC, PDUR_APPL_DATA) rmDestRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   291                                                       P2VAR(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) data,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   292                                                       PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   293  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   294  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   295  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   296  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   297   * PduR_McQ_GetReadIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   298   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   299  /*! \brief       Get a valid readIdx.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   300   *  \details -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   301   *  \param[in]   mcqBufferRomIdx          Id of the queue to be used
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   302   *  \param[out]  readIdx                  the valid readIdx.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   303   *  \param[in]   memIdx                   memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   304   *  \return      E_OK                     Some data is available to be read.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   305   *               E_NOT_OK                 No data is available to be read.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   306   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   307   *  \context     TASK
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   308   *  \reentrant   TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   309   *  \synchronous TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   310   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   311  PDUR_LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_McQ_GetReadIdx(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   312                                                                   P2VAR(PduR_McQBufferArrayRamReadIdxOfMcQBufferRamType, AUTOMATIC, PDUR_APPL_DATA) readIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   313                                                                   PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   314  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   315  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   316  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   317  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   318   * PduR_McQ_UpdateReadIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   319   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   320  /*! \brief       Update the read pointer after a successful read operation.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   321   *  \details -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   322   *  \param[in]   mcQBufferRomIdx        Id of the queue to be used
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   323   *  \param[in]   memIdx                 memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   324   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   325   *  \context     TASK|ISR1|ISR2
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   326   *  \reentrant   TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   327   *  \synchronous TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   328   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   329  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_UpdateReadIdx(PduR_McQBufferRomIdxOfSrcApplicationRomType mcQBufferRomIdx, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   330  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   331  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   332  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   333  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   334   * PduR_McQBufferArrayRamWrite
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   335   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   336  /*! \brief       Write the provided byte into the McQBufferArrayRam
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   337   *  \details -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   338   *  \param[in]   writeIdx               Index of McQBufferArrayRam
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   339   *  \param[in]   byteToBeWritten        Byte to be written into the McQBufferArrayRam
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   340   *  \param[in]   memIdx                 memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   341   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   342   *  \context     TASK|ISR1|ISR2
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   343   *  \reentrant   TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   344   *  \synchronous TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   345   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   346  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQBufferArrayRamWrite(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx, uint8 byteToBeWritten, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   347  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   348  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   349  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   350  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   351   * PduR_SetMcQBufferArrayRamPendingReadIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   352   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   353  /*! \brief       Set the provided readIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   354   *  \details -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   355   *  \param[in]   mcQBufferRomIdx         Id of the queue to be used
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   356   *  \param[in]   readIdx                 Value of the read index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   357   *  \param[in]   memIdx                  memory section index
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   358   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   359   *  \context     TASK|ISR1|ISR2
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   360   *  \reentrant   TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   361   *  \synchronous TRUE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   362   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   363  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_SetMcQBufferArrayRamPendingReadIdx(PduR_McQBufferRomIterType mcQBufferRomIdx, PduR_McQBufferArrayRamPendingReadIdxOfMcQBufferRamType readIdx, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   364  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   365  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   366  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   367   *  LOCAL FUNCTIONS
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   368   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   369  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   370  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   371   * PduR_McQ_Init
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   372   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   373  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   374   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   375   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   376   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   377   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   378  FUNC(void, PDUR_CODE) PduR_McQ_Init(PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   379  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   380    PduR_McQBufferRomIterType mcqBufferRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   381    for(mcqBufferRomIdx = 0u; mcqBufferRomIdx < PduR_GetSizeOfMcQBufferRom(memIdx); mcqBufferRomIdx++)  /* FETA_PDUR_01 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   382    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   383      PduR_McQBufferArrayRamStartIdxOfMcQBufferRomType startIdxOfBuffer = PduR_GetMcQBufferArrayRamStartIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   384  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   385      PduR_SetMcQBufferArrayRamPendingWriteIdxOfMcQBufferRam(mcqBufferRomIdx, startIdxOfBuffer, memIdx);  /* SBSW_PDUR_CSL02 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   386      PduR_SetMcQBufferArrayRamPendingReadIdx(mcqBufferRomIdx, startIdxOfBuffer, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   387      PduR_SetMcQBufferArrayRamReadIdxOfMcQBufferRam(mcqBufferRomIdx, startIdxOfBuffer, memIdx);  /* SBSW_PDUR_CSL02 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   388      PduR_SetMcQBufferArrayRamWriteIdxOfMcQBufferRam(mcqBufferRomIdx, startIdxOfBuffer, memIdx); /* SBSW_PDUR_CSL02 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   389    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   390  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   391  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   392  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   393  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   394  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   395   * PduR_McQ_WriteTxConfirmation
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   396   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   397  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   398   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   399   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   400   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   401   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   402   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   403   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   404   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   405  FUNC(Std_ReturnType, PDUR_CODE) PduR_McQ_WriteTxConfirmation(PduR_McQBufferRomIdxOfSrcApplicationRomType mcQBufferRomIdx, PduR_RmSrcRomIdxOfRmDestRomType rmSrcRomIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   406  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   407    Std_ReturnType retVal = E_NOT_OK;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   408    PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx = PduR_GetMcQBufferArrayRamStartIdxOfMcQBufferRom(mcQBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   409  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   410    SchM_Enter_PduR_PDUR_EXCLUSIVE_AREA_0();
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   411    /* #10 If confirmation fits into the multicore queue */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   412    if(PduR_McQ_GetWriteIdx(mcQBufferRomIdx, &writeIdx, PduR_McQ_GetTxConfirmationSize(), memIdx) == E_OK)        /* SBSW_PDUR_IDX_PARAM_INTERNAL_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   413    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   414      /* #20 Serialize tx Confirmation handle into the queue starting at the writeIdx position */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   415      PduR_McQ_SerializeTxConfirmation(writeIdx, rmSrcRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   416  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   417      /* #30 Update writeIdx and return E_OK */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   418      PduR_McQ_UpdateWriteIdx(mcQBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   419      retVal = E_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   420    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   421    /* #40 Otherwise return E_NOT_OK */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   422    else
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   423    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   424      retVal = E_NOT_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   425    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   426    SchM_Exit_PduR_PDUR_EXCLUSIVE_AREA_0();
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   427    return retVal;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   428  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   429  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   430  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   431  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   432  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   433   * PduR_McQ_WriteData
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   434   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   435  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   436   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   437   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   438   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   439   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   440   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   441   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   442   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   443   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   444  FUNC(Std_ReturnType, PDUR_CODE) PduR_McQ_WriteData(PduR_McQBufferRomIdxOfSrcApplicationRomType mcQBufferRomIdx, PduR_RmDestRomEndIdxOfRmSrcRomType rmDestRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   445                                                     CONSTP2CONST(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) data, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   446  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   447    uint8 errorId = PDUR_E_NO_ERROR;      /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   448    Std_ReturnType retVal = E_NOT_OK;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   449    PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx = PduR_GetMcQBufferArrayRamStartIdxOfMcQBufferRom(mcQBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   450  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   451    /* ----- Development Error Checks ------------------------------------- */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   452    /* #10 Check input parameters */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   453  # if (PDUR_DEV_ERROR_DETECT == STD_ON)  /* COV_PDUR_VAR_DEV_ERROR_DETECT */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   454    if(data == NULL_PTR)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   455    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   456      errorId = PDUR_E_PARAM_POINTER;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   457    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   458    else if(data->SduDataPtr == NULL_PTR)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   459    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   460      errorId = PDUR_E_PARAM_POINTER;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   461    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   462    /* #20 If no error occurred */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   463    else
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   464  # endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   465    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   466      SchM_Enter_PduR_PDUR_EXCLUSIVE_AREA_0();
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   467      /* #30 If data fits into the multicore queue, serialize data, update write index and return E_OK */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   468      if(PduR_McQ_GetWriteIdx(mcQBufferRomIdx, &writeIdx, data->SduLength + PduR_McQ_GetDataHeaderSize(), memIdx) == E_OK)        /* SBSW_PDUR_IDX_PARAM_INTERNAL_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   469      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   470        PduR_McQ_SerializeData(writeIdx, rmDestRomIdx, data, memIdx);     /* SBSW_PDUR_FCT_CALL_P2CONST */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   471        PduR_McQ_UpdateWriteIdx(mcQBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   472        retVal = E_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   473      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   474      /* #40 Otherwise return E_NOT_OK */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   475      else
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   476      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   477        retVal = E_NOT_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   478      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   479      SchM_Exit_PduR_PDUR_EXCLUSIVE_AREA_0();
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   480    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   481  /* ----- Development Error Report --------------------------------------- */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   482  # if (PDUR_DEV_ERROR_REPORT == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   483    /* #50 Otherwise, report DET error */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   484    if(errorId != PDUR_E_NO_ERROR)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   485    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   486      PduR_Det_ReportError(PDUR_MCQ_WRITE_DATA, errorId);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   487    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   488  # endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   489    PDUR_DUMMY_STATEMENT(errorId);        /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   490  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   491    return retVal;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   492  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   493  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   494  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   495  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   496  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   497   * PduR_McQ_GetWriteIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   498   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   499  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   500   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   501   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   502   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   503   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   504   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   505   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   506   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   507   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   508   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   509   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   510   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   511   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   512   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   513   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   514   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   515  PDUR_LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_McQ_GetWriteIdx(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   516                                                                    P2VAR(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType, AUTOMATIC, PDUR_APPL_DATA) writeIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   517                                                                    PduLengthType pduLengthWithHeader,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   518                                                                    PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   519  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   520    Std_ReturnType retVal = E_NOT_OK;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   521  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   522    PduR_McQBufferArrayRamReadIdxOfMcQBufferRamType readIdx = PduR_McQ_GetMcQBufferArrayRamReadIdxSafe(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   523    PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType localWriteIdx = PduR_McQ_GetMcQBufferArrayRamWriteIdxSafe(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   524  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   525    PduR_McQBufferArrayRamStartIdxOfMcQBufferRomType startIdxOfBuffer = PduR_GetMcQBufferArrayRamStartIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   526    PduR_McQBufferArrayRamEndIdxOfMcQBufferRomType endIdxOfBuffer = PduR_GetMcQBufferArrayRamEndIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx) - 1u;  /* ComStackLibs EndIdx is actually the first out of bounds index */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   527  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   528    /* #10 If buffer is full, return E_NOT_OK */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   529    if(((localWriteIdx + 1u) == readIdx) || ((readIdx == startIdxOfBuffer) && (localWriteIdx == endIdxOfBuffer)))
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   530    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   531      /* Buffer is full */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   532      retVal = E_NOT_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   533    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   534    /* #20 else if write index < read index */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   535    else if(localWriteIdx < readIdx)      /* write is possible until read Idx is reached. Could be too small though */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   536    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   537      PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType linearBufferSize = readIdx - localWriteIdx - 1u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   538      /* #30 If multicore queue has enough space */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   539      if(linearBufferSize >= pduLengthWithHeader)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   540      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   541        *writeIdx = localWriteIdx;        /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   542        /* #40 Set write index to internal write index and increase pending-write-index to next slot */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   543        PduR_SetMcQBufferArrayRamPendingWriteIdxOfMcQBufferRam(mcqBufferRomIdx, localWriteIdx + pduLengthWithHeader, memIdx);     /* SBSW_PDUR_IDX_PARAM_INTERNAL_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   544        retVal = E_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   545      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   546      /* #50 Otherwise, return E_NOT_OK */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   547      else
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   548      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   549        retVal = E_NOT_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   550      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   551    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   552    /* #60 else */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   553    else
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   554    {     /* readIdx < localWriteIdx OR readIdx == localWriteIdx */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   555      PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType linearBufferSizeAtEnd;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   556      PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType linearBufferSizeAtFront;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   557  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   558      linearBufferSizeAtEnd = (localWriteIdx == endIdxOfBuffer) ? 0u : (endIdxOfBuffer - localWriteIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   559      linearBufferSizeAtFront = (readIdx == startIdxOfBuffer) ? 0u : (readIdx - startIdxOfBuffer - 1u);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   560      /* #70 If there is enough space at the end of the queue, set write index to internal write index and increase pending-write-index to next slot and return E_OK */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   561      if(linearBufferSizeAtEnd >= pduLengthWithHeader)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   562      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   563        *writeIdx = localWriteIdx;        /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   564        /* Update write Idx */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   565        PduR_SetMcQBufferArrayRamPendingWriteIdxOfMcQBufferRam(mcqBufferRomIdx, localWriteIdx + pduLengthWithHeader, memIdx);     /* SBSW_PDUR_IDX_PARAM_INTERNAL_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   566        retVal = E_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   567      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   568      /* #80 Otherwise, if there is enough space at the beginning of the queue */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   569      else if(linearBufferSizeAtFront >= pduLengthWithHeader)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   570      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   571        /* #90 Mark remaining bytes at end as unused */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   572        PduR_McQ_WriteUnusedHeader(localWriteIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   573  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   574        /* #100 Set write index to start index and increase pending-write-index to next slot */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   575        *writeIdx = startIdxOfBuffer;     /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   576  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   577        /* Update write Idx */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   578        PduR_SetMcQBufferArrayRamPendingWriteIdxOfMcQBufferRam(mcqBufferRomIdx, (PduR_McQBufferArrayRamPendingWriteIdxOfMcQBufferRamType) startIdxOfBuffer + pduLengthWithHeader, memIdx);        /* SBSW_PDUR_IDX_PARAM_INTERNAL_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   579  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   580        /* #110 Return E_OK */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   581        retVal = E_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   582      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   583      /* #120 Otherwise, return E_NOT_OK */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   584      else
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   585      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   586        /* neither fits at the end nor the beginning: do nothing */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   587        retVal = E_NOT_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   588      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   589    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   590  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   591    return retVal;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   592  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   593  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   594  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   595  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   596  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   597   * PduR_McQ_GetDataHeaderSize
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   598   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   599  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   600   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   601   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   602   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   603   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   604  PDUR_LOCAL_INLINE FUNC(uint8, PDUR_CODE) PduR_McQ_GetDataHeaderSize(void)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   605  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   606    return PDUR_MCQ_SIZE_OF_HEADER + sizeof(PduR_RmDestRomEndIdxOfRmSrcRomType) + sizeof(PduLengthType);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   607  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   608  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   609  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   610  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   611  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   612   * PduR_McQ_GetTxConfirmationSize
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   613   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   614  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   615   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   616   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   617   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   618   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   619  PDUR_LOCAL_INLINE FUNC(uint8, PDUR_CODE) PduR_McQ_GetTxConfirmationSize(void)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   620  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   621    return PDUR_MCQ_SIZE_OF_HEADER + sizeof(PduR_RmSrcRomIdxOfRmDestRomType);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   622  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   623  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   624  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   625  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   626  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   627   * PduR_McQ_WriteUnusedHeader
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   628   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   629  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   630   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   631   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   632   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   633   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   634  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_WriteUnusedHeader(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   635  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   636    PduR_McQBufferArrayRamWrite(writeIdx, PDUR_MCQ_UNUSED_HEADER, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   637  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   638  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   639  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   640  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   641  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   642   * PduR_McQ_SerializeData
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   643   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   644  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   645   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   646   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   647   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   648   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   649   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   650   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   651   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   652  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_SerializeData(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx, PduR_RmDestRomEndIdxOfRmSrcRomType rmDestRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   653                                                            CONSTP2CONST(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) data, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   654  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   655    PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdxIntern = writeIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   656    /* #10 Set Header Value */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   657    PduR_McQBufferArrayRamWrite(writeIdxIntern, PDUR_MCQ_DATA_HEADER, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   658    writeIdxIntern++;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   659    /* #20 Serialize rmDestRomIdx */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   660    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   661      uint8 rmDestRomIterator = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   662      PduR_RmDestRomEndIdxOfRmSrcRomType tempRmDestRomIdx = rmDestRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   663      uint8 shiftOperand = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   664      for(; rmDestRomIterator < sizeof(PduR_RmDestRomEndIdxOfRmSrcRomType); rmDestRomIterator++)  /* FETA_PDUR_04 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   665      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   666        tempRmDestRomIdx = tempRmDestRomIdx >> shiftOperand;      /* PRQA S 2985 */ /* MD_PduR_2985 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   667        PduR_McQBufferArrayRamWrite(writeIdxIntern, (uint8) tempRmDestRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   668        shiftOperand = 8u;        /* PRQA S 2983 */ /* MD_PduR_2983 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   669        writeIdxIntern++;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   670      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   671    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   672    /* #30 Serialize PduLengthType */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   673    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   674      uint8 pduLengthTypeIterator = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   675      PduLengthType tempPduLength = data->SduLength;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   676      for(; pduLengthTypeIterator < sizeof(PduLengthType); pduLengthTypeIterator++)  /* FETA_PDUR_04 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   677      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   678        PduR_McQBufferArrayRamWrite(writeIdxIntern, (uint8) tempPduLength, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   679        tempPduLength = tempPduLength >> 8u;      /* PRQA S 2983 */ /* MD_PduR_2983 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   680        writeIdxIntern++;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   681      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   682    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   683    /* #40 Serialize Payload */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   684    if((writeIdxIntern + data->SduLength) < PduR_GetSizeOfMcQBufferArrayRam(memIdx))    /* COV_PDUR_VAR_FATAL_ERROR */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   685    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   686      VStdMemCpyRamToRam(PduR_GetAddrMcQBufferArrayRam(writeIdxIntern, memIdx), data->SduDataPtr, data->SduLength);       /* SBSW_PDUR_MCQ_RAMARRAY_RTCHECK_FCTCALL */ /* PRQA S 0315 */ /* MD_MSR_VStdLibCopy */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   687    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   688    else
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   689    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   690      PduR_Det_ReportError(PDUR_MCQ_WRITE_DATA, PDUR_E_FATAL);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   691    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   692  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   693  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   694  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   695  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   696  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   697   * PduR_McQ_SerializeTxConfirmation
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   698   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   699  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   700   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   701   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   702   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   703   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   704   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   705  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_SerializeTxConfirmation(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx, PduR_RmSrcRomIdxOfRmDestRomType rmSrcRomIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   706  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   707    PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdxIntern = writeIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   708    /* #10 Set Header Value */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   709    PduR_McQBufferArrayRamWrite(writeIdxIntern, PDUR_MCQ_TXCONFIRMATION_HEADER, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   710    writeIdxIntern++;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   711    /* #20 Serialize rmSrcRomIdx */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   712    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   713      uint8 rmSrcRomIterator = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   714      uint8 shiftOperand = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   715      PduR_RmSrcRomIdxOfRmDestRomType tempRmSrcRomIdx = rmSrcRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   716      for(; rmSrcRomIterator < sizeof(PduR_RmSrcRomIdxOfRmDestRomType); rmSrcRomIterator++)  /* FETA_PDUR_04 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   717      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   718        tempRmSrcRomIdx = tempRmSrcRomIdx >> shiftOperand;        /* PRQA S 2985 */ /* MD_PduR_2985 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   719        PduR_McQBufferArrayRamWrite(writeIdxIntern, (uint8) tempRmSrcRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   720        shiftOperand = 8u;        /* PRQA S 2983 */ /* MD_PduR_2983 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   721        writeIdxIntern++; /* PRQA S 2983 */ /* MD_PduR_2983 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   722      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   723    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   724  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   725  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   726  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   727  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   728  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   729   * PduR_McQ_DeserializeData
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   730   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   731  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   732   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   733   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   734   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   735   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   736   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   737   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   738  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_DeserializeData(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType readIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   739                                                              P2VAR(PduR_RmDestRomEndIdxOfRmSrcRomType, AUTOMATIC, PDUR_APPL_DATA) rmDestRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   740                                                              P2VAR(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) data,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   741                                                              PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   742  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   743    PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType readIdxIntern = readIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   744    /* skip Header */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   745    readIdxIntern += PDUR_MCQ_SIZE_OF_HEADER;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   746    /* #10 Deserialize rmDestRomIdx */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   747    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   748      uint8 rmDestRomIterator = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   749      PduR_RmDestRomEndIdxOfRmSrcRomType tempRmDestRomIdx = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   750      uint8 offset = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   751      for(; rmDestRomIterator < sizeof(PduR_RmDestRomEndIdxOfRmSrcRomType); rmDestRomIterator++)  /* FETA_PDUR_04 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   752      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   753        tempRmDestRomIdx = tempRmDestRomIdx | (((PduR_RmDestRomEndIdxOfRmSrcRomType) PduR_GetMcQBufferArrayRam(readIdxIntern, memIdx)) << offset);        /* PRQA S 2985 */ /* MD_PduR_2985 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   754        offset += 8u;     /* PRQA S 2983 */ /* MD_PduR_2983 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   755        readIdxIntern++;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   756      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   757      *rmDestRomIdx = tempRmDestRomIdx;   /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   758    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   759    /* #20 Deserialize PduLengthType */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   760    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   761      uint8 pduLengthTypeIterator = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   762      PduLengthType tempPduLength = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   763      uint8 offset = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   764      for(; pduLengthTypeIterator < sizeof(PduLengthType); pduLengthTypeIterator++)  /* FETA_PDUR_04 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   765      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   766        tempPduLength = tempPduLength | (((PduLengthType) PduR_GetMcQBufferArrayRam(readIdxIntern, memIdx)) << offset);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   767        offset += 8u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   768        readIdxIntern++;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   769      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   770      data->SduLength = tempPduLength;    /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   771    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   772    /* #30 Return pointer point to payload */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   773    data->SduDataPtr = PduR_GetAddrMcQBufferArrayRam(readIdxIntern, memIdx);      /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   774  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   775  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   776  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   777  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   778  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   779   * PduR_McQ_ReadTxConfirmation
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   780   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   781  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   782   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   783   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   784   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   785   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   786   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   787  PDUR_LOCAL_INLINE FUNC(PduR_RmSrcRomIdxOfRmDestRomType, PDUR_CODE) PduR_McQ_ReadTxConfirmation(PduR_McQBufferRomIdxOfSrcApplicationRomType mcQBufferRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   788                                                                                            PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType readIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   789                                                                                            PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   790  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   791    PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType readIdxIntern = readIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   792    /* skip Header */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   793    readIdxIntern += PDUR_MCQ_SIZE_OF_HEADER;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   794    /* #10 Deserialize rmSrcRomIdx */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   795    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   796      uint8 rmSrcRomIterator = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   797      PduR_RmSrcRomIdxOfRmDestRomType tempRmSrcRomIdx = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   798      uint8 offset = 0u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   799      for(; rmSrcRomIterator < sizeof(PduR_RmSrcRomIdxOfRmDestRomType); rmSrcRomIterator++)  /* FETA_PDUR_04 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   800      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   801        tempRmSrcRomIdx = tempRmSrcRomIdx | (((PduR_RmSrcRomIdxOfRmDestRomType) PduR_GetMcQBufferArrayRam(readIdxIntern, memIdx)) << offset);     /* PRQA S 2985 */ /* MD_PduR_2985 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   802        offset += 8u;     /* PRQA S 2983 */ /* MD_PduR_2983 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   803        readIdxIntern++;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   804      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   805  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   806      /* #20 Set pending-read-idx to next element to be read */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   807      PduR_SetMcQBufferArrayRamPendingReadIdx(mcQBufferRomIdx, readIdxIntern, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   808      return tempRmSrcRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   809    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   810  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   811  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   812  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   813  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   814  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   815   * PduR_McQ_ReadData
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   816   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   817  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   818   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   819   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   820   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   821   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   822   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   823  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_ReadData(PduR_McQBufferRomIdxOfSrcApplicationRomType mcQBufferRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   824                                                       PduR_McQBufferArrayRamReadIdxOfMcQBufferRamType readIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   825                                                       P2VAR(PduR_RmDestRomEndIdxOfRmSrcRomType, AUTOMATIC, PDUR_APPL_DATA) rmDestRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   826                                                       P2VAR(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) data,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   827                                                       PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   828  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   829    /* #10 Deserialize Data */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   830    PduR_McQ_DeserializeData(readIdx, rmDestRomIdx, data, memIdx);        /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   831    /* #20 Set the returned ReadIdx as pending ReadIdx: the readIdx will be set to this value if the read is finished */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   832    PduR_SetMcQBufferArrayRamPendingReadIdx(mcQBufferRomIdx, readIdx + PduR_McQ_GetDataHeaderSize() + data->SduLength, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   833  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   834  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   835  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   836  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   837  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   838   * PduR_McQ_GetReadIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   839   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   840  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   841   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   842   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   843   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   844   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   845   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   846  PDUR_LOCAL_INLINE FUNC(Std_ReturnType, PDUR_CODE) PduR_McQ_GetReadIdx(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   847                                                                   P2VAR(PduR_McQBufferArrayRamReadIdxOfMcQBufferRamType, AUTOMATIC, PDUR_APPL_DATA) readIdx,
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   848                                                                   PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   849  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   850    Std_ReturnType retVal = E_NOT_OK;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   851  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   852    PduR_McQBufferArrayRamReadIdxOfMcQBufferRamType localReadIdx = PduR_McQ_GetMcQBufferArrayRamReadIdxSafe(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   853    PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx = PduR_McQ_GetMcQBufferArrayRamWriteIdxSafe(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   854  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   855    /* #10 If multicore Queue is empty, return E_NOT_OK */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   856    if(localReadIdx == writeIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   857    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   858      retVal = E_NOT_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   859    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   860    /* #20 If the current element is marked with the unused pattern, return the start index of the queue, otherwise return the stored read index */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   861    else
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   862    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   863      if(PduR_GetMcQBufferArrayRam(localReadIdx, memIdx) == PDUR_MCQ_UNUSED_HEADER)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   864      {   /* adjust localReadIdx if the end of the buffer is not used */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   865        localReadIdx = PduR_GetMcQBufferArrayRamStartIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   866      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   867      *readIdx = localReadIdx;    /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   868      retVal = E_OK;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   869    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   870  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   871    return retVal;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   872  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   873  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   874  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   875  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   876  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   877   * PduR_McQ_UpdateReadIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   878   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   879  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   880   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   881   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   882   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   883   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   884  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_UpdateReadIdx(PduR_McQBufferRomIdxOfSrcApplicationRomType mcQBufferRomIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   885  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   886    PduR_SetMcQBufferArrayRamReadIdxOfMcQBufferRam(mcQBufferRomIdx, PduR_McQ_GetMcQBufferArrayRamPendingReadIdxSafe(mcQBufferRomIdx, memIdx), memIdx);      /* SBSW_PDUR_IDX_PARAM_INTERNAL_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   887  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   888  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   889  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   890  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   891  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   892   * PduR_McQBufferArrayRamWrite
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   893   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   894  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   895   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   896   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   897   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   898   */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   899  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQBufferArrayRamWrite(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx, uint8 byteToBeWritten, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   900  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   901    if(writeIdx < PduR_GetSizeOfMcQBufferArrayRam(memIdx))      /* COV_PDUR_VAR_FATAL_ERROR */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   902    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   903      PduR_SetMcQBufferArrayRam(writeIdx, byteToBeWritten, memIdx);       /* SBSW_PDUR_MCQ_RAMARRAY_RTCHECK */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   904    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   905    else
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   906    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   907      PduR_Det_ReportError(PDUR_MCQ_WRITE_DATA, PDUR_E_FATAL);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   908    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   909  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   910  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   911  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   912  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   913  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   914   * PduR_McQ_UpdateWriteIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   915   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   916  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   917   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   918   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   919   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   920   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   921  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_McQ_UpdateWriteIdx(PduR_McQBufferRomIdxOfSrcApplicationRomType mcQBufferRomIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   922  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   923    PduR_SetMcQBufferArrayRamWriteIdxOfMcQBufferRam(mcQBufferRomIdx, PduR_McQ_GetMcQBufferArrayRamPendingWriteIdxSafe(mcQBufferRomIdx, memIdx), memIdx);    /* SBSW_PDUR_IDX_PARAM_INTERNAL_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   924  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   925  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   926  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   927  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   928  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   929   * PduR_SetMcQBufferArrayRamPendingReadIdx
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   930   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   931  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   932   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   933   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   934   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   935   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   936  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_SetMcQBufferArrayRamPendingReadIdx(PduR_McQBufferRomIterType mcQBufferRomIdx, PduR_McQBufferArrayRamPendingReadIdxOfMcQBufferRamType readIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   937  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   938    if(readIdx < PduR_GetMcQBufferArrayRamEndIdxOfMcQBufferRom(mcQBufferRomIdx, memIdx))  /* COV_PDUR_VAR_FATAL_ERROR */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   939    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   940      PduR_SetMcQBufferArrayRamPendingReadIdxOfMcQBufferRam(mcQBufferRomIdx, readIdx, memIdx);    /* SBSW_PDUR_IDX_PARAM_INTERNAL_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   941    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   942    else
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   943    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   944      PduR_Det_ReportError(PDUR_MCQ_PENDING_READ_IDX, PDUR_E_FATAL);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   945    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   946  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   947  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   948  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   949  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   950  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   951   * PduR_McQ_MainFunction
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   952   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   953  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   954   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   955   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   956   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   957   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   958   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   959   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   960   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   961   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   962   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   963  /* PRQA S 6050 1 */ /* MD_MSR_STCAL */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   964  FUNC(void, PDUR_CODE) PduR_McQ_MainFunction(PduR_DestApplicationManagerRomIterType destApplicationManagerRomIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   965  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   966    PduR_SrcApplicationRomEndIdxOfDestApplicationManagerRomType srcApplicationRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   967  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   968    /* #10 For each configured MultiCore Queues */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   969    for(srcApplicationRomIdx = PduR_GetSrcApplicationRomStartIdxOfDestApplicationManagerRom(destApplicationManagerRomIdx); srcApplicationRomIdx < PduR_GetSrcApplicationRomEndIdxOfDestApplicationManagerRom(destApplicationManagerRomIdx); srcApplicationRomIdx++)  /* FETA_PDUR_01 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   970    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   971      if(PduR_IsMcQBufferRomUsedOfSrcApplicationRom(srcApplicationRomIdx))
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   972      {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   973        PduR_McQBufferArrayRamReadIdxOfMcQBufferRamType readIdx = 0;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   974        PduR_McQBufferRomIdxOfSrcApplicationRomType mcQBufferRomIdx = PduR_GetMcQBufferRomIdxOfSrcApplicationRom(srcApplicationRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   975        PduR_McQBufferRomPartitionIdxOfSrcApplicationRomType memIdx = PduR_GetMcQBufferRomPartitionIdxOfSrcApplicationRom(srcApplicationRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   976  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   977        /* Max. number of bytes to be read before stalling to next main function call */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   978        PduR_McQBufferArrayRamLengthOfMcQBufferRomType readThreshold = PduR_GetMcQBufferArrayRamLengthOfMcQBufferRom(mcQBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   979        PduLengthType numberOfReadBytes = 0;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   980  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   981        /* #20 While MultiCore Queue has stored elements */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   982        while(PduR_McQ_GetReadIdx(mcQBufferRomIdx, &readIdx, memIdx) == E_OK)     /* SBSW_PDUR_STACK_VARIABLE */ /* FETA_PDUR_02 */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   983        {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   984          switch (PduR_GetMcQBufferArrayRam(readIdx, memIdx))
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   985          {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   986              /* #30 If element is type of data, read Pdu, dispatch If-Pdu to destination and update read Index */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   987            case PDUR_MCQ_DATA_HEADER:
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   988            {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   989              PduR_RmDestRomEndIdxOfRmSrcRomType rmDestRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   990              PduInfoType info;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   991  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   992              PduR_McQ_ReadData(mcQBufferRomIdx, readIdx, &rmDestRomIdx, &info, memIdx);  /* SBSW_PDUR_STACK_VARIABLE */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   993              (void) PduR_RmIf_ProcessDestPdu(rmDestRomIdx, &info);    /* SBSW_PDUR_API_CALL_FORWARDING_ID_AND_PTR */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   994              PduR_McQ_UpdateReadIdx(mcQBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   995  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   996              numberOfReadBytes += ((PduLengthType) PduR_McQ_GetDataHeaderSize()) + info.SduLength;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   997              break;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   998            }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	   999              /* #40 If element is type of TxConfirmation, read confirmation from Queue, update read Index and call upper layer confirmation */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1000            case PDUR_MCQ_TXCONFIRMATION_HEADER:
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1001            {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1002              PduR_RmSrcRomIdxOfRmDestRomType rmSrcRomIdx = PduR_McQ_ReadTxConfirmation(mcQBufferRomIdx, readIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1003              PduR_McQ_UpdateReadIdx(mcQBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1004              PduR_GetUpIfTxConfirmationFctPtrOfMmRom(PduR_GetMmRomIdxOfRmSrcRom(rmSrcRomIdx)) (PduR_GetSrcHndOfRmSrcRom(rmSrcRomIdx));   /* SBSW_PDUR_API_CALL_FORWARDING_ID_ONLY */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1005  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1006              numberOfReadBytes += ((PduLengthType) PduR_McQ_GetTxConfirmationSize());
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1007              break;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1008            }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1009              /* #50 Report an error otherwise */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1010            default:     /* COV_PDUR_MISRA */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1011              PduR_Det_ReportError(PDUR_MCQ_MAINFUNCTION, PDUR_E_FATAL);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1012              /* Nothing to do: When Det report error is switched off */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1013              break;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1014          }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1015  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1016          /* #60 If number of read bytes increases the the queue size, stall processing to next main function call */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1017          if(numberOfReadBytes > readThreshold)   /* COV_PDUR_MCQ_MAIN_FUNCTION_THRESHOLD */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1018          {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1019            break;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1020          }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1021        }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1022      }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1023    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1024  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1025  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1026  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1027  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1028  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1029  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1030   * PduR_McQ_GetMcQBufferArrayRamReadIdxSafe
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1031   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1032  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1033   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1034   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1035   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1036   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1037  PDUR_LOCAL_INLINE FUNC(PduR_McQBufferArrayRamReadIdxOfMcQBufferRamType, PDUR_CODE) PduR_McQ_GetMcQBufferArrayRamReadIdxSafe(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1038  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1039    PduR_McQBufferArrayRamReadIdxOfMcQBufferRamType readIdx = PduR_GetMcQBufferArrayRamReadIdxOfMcQBufferRam(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1040  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1041  # if (PDUR_EXTENDED_ERROR_CHECKS == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1042    PduR_McQBufferArrayRamStartIdxOfMcQBufferRomType startIdxOfQueue = PduR_GetMcQBufferArrayRamStartIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1043    PduR_McQBufferArrayRamEndIdxOfMcQBufferRomType     endIdxOfQueue = PduR_GetMcQBufferArrayRamEndIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1044  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1045    if(readIdx >= endIdxOfQueue) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1046    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1047      readIdx = ((PduR_McQBufferArrayRamReadIdxOfMcQBufferRamType) endIdxOfQueue) - 1u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1048      PduR_ReportRuntimeDetError(PDUR_FCT_GETMCQREADIDX, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1049    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1050    if(readIdx < startIdxOfQueue) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1051    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1052      readIdx = startIdxOfQueue;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1053      PduR_ReportRuntimeDetError(PDUR_FCT_GETMCQREADIDX, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1054    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1055  # endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1056  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1057    return readIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1058  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1059  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1060  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1061  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1062  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1063   * PduR_McQ_GetMcQBufferArrayRamWriteIdxSafe
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1064   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1065  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1066   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1067   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1068   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1069   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1070  PDUR_LOCAL_INLINE FUNC(PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType, PDUR_CODE) PduR_McQ_GetMcQBufferArrayRamWriteIdxSafe(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1071  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1072    PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType writeIdx = PduR_GetMcQBufferArrayRamWriteIdxOfMcQBufferRam(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1073  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1074  # if (PDUR_EXTENDED_ERROR_CHECKS == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1075    PduR_McQBufferArrayRamStartIdxOfMcQBufferRomType startIdxOfQueue = PduR_GetMcQBufferArrayRamStartIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1076    PduR_McQBufferArrayRamEndIdxOfMcQBufferRomType     endIdxOfQueue = PduR_GetMcQBufferArrayRamEndIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1077  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1078    if(writeIdx >= endIdxOfQueue) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1079    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1080      writeIdx = ((PduR_McQBufferArrayRamWriteIdxOfMcQBufferRamType) endIdxOfQueue) - 1u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1081      PduR_ReportRuntimeDetError(PDUR_FCT_GETMCQWRITEIDX, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1082    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1083    if(writeIdx < startIdxOfQueue) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1084    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1085      writeIdx = startIdxOfQueue;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1086      PduR_ReportRuntimeDetError(PDUR_FCT_GETMCQWRITEIDX, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1087    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1088  # endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1089  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1090    return writeIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1091  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1092  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1093  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1094  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1095  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1096   * PduR_McQ_GetMcQBufferArrayRamPendingReadIdxSafe
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1097   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1098  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1099   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1100   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1101   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1102   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1103  PDUR_LOCAL_INLINE FUNC(PduR_McQBufferArrayRamPendingReadIdxOfMcQBufferRamType, PDUR_CODE) PduR_McQ_GetMcQBufferArrayRamPendingReadIdxSafe(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1104  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1105    PduR_McQBufferArrayRamPendingReadIdxOfMcQBufferRamType readIdx = PduR_GetMcQBufferArrayRamPendingReadIdxOfMcQBufferRam(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1106  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1107  # if (PDUR_EXTENDED_ERROR_CHECKS == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1108    PduR_McQBufferArrayRamStartIdxOfMcQBufferRomType startIdxOfQueue = PduR_GetMcQBufferArrayRamStartIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1109    PduR_McQBufferArrayRamEndIdxOfMcQBufferRomType     endIdxOfQueue = PduR_GetMcQBufferArrayRamEndIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1110  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1111    if(readIdx >= endIdxOfQueue) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1112    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1113      readIdx = ((PduR_McQBufferArrayRamPendingReadIdxOfMcQBufferRamType) endIdxOfQueue) - 1u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1114      PduR_ReportRuntimeDetError(PDUR_FCT_GETMCQPENDINGREADIDX, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1115    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1116    if(readIdx < startIdxOfQueue) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1117    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1118      readIdx = startIdxOfQueue;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1119      PduR_ReportRuntimeDetError(PDUR_FCT_GETMCQPENDINGREADIDX, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1120    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1121  # endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1122  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1123    return readIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1124  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1125  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1126  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1127  #if (PDUR_MCQBUFFERROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1128  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1129   * PduR_McQ_GetMcQBufferArrayRamPendingWriteIdxSafe
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1130   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1131  /*!
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1132   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1133   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1134   *
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1135   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1136  PDUR_LOCAL_INLINE FUNC(PduR_McQBufferArrayRamPendingWriteIdxOfMcQBufferRamType, PDUR_CODE) PduR_McQ_GetMcQBufferArrayRamPendingWriteIdxSafe(PduR_McQBufferRomIdxOfSrcApplicationRomType mcqBufferRomIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1137  {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1138    PduR_McQBufferArrayRamPendingWriteIdxOfMcQBufferRamType writeIdx = PduR_GetMcQBufferArrayRamPendingWriteIdxOfMcQBufferRam(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1139  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1140  # if (PDUR_EXTENDED_ERROR_CHECKS == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1141    PduR_McQBufferArrayRamStartIdxOfMcQBufferRomType startIdxOfQueue = PduR_GetMcQBufferArrayRamStartIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1142    PduR_McQBufferArrayRamEndIdxOfMcQBufferRomType endIdxOfQueue   = PduR_GetMcQBufferArrayRamEndIdxOfMcQBufferRom(mcqBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1143  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1144    if(writeIdx >= endIdxOfQueue) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1145    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1146      writeIdx = ((PduR_McQBufferArrayRamPendingWriteIdxOfMcQBufferRamType) endIdxOfQueue) - 1u;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1147      PduR_ReportRuntimeDetError(PDUR_FCT_GETMCQPENDINGWRITEIDX, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1148    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1149    if(writeIdx < startIdxOfQueue) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1150    {
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1151      writeIdx = startIdxOfQueue;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1152      PduR_ReportRuntimeDetError(PDUR_FCT_GETMCQPENDINGWRITEIDX, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1153    }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1154  # endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1155  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1156    return writeIdx;
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1157  }
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1158  #endif
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1159  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1160  #define PDUR_STOP_SEC_CODE
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1161  #include "PduR_MemMap.h" /* PRQA S 5087 */   /* MD_MSR_MemMap */
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1162  
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1163  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1164   *  END OF FILE: PduR_McQ.c
+; ..\BSW364\PduR\Implementation\PduR_McQ.c	  1165   *********************************************************************************************************************/
+
+	; Module end

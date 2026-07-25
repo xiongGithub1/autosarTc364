@@ -1,0 +1,1777 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc20508a --dep-file=BSW364\\Can\\Implementation\\.Can_Irq.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=BSW364\\Can\\Implementation\\Can_Irq.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW364\\Can\\Implementation\\Can_Irq.src ..\\BSW364\\Can\\Implementation\\Can_Irq.c"
+	.compiler_name		"ctc"
+	;source	'..\\BSW364\\Can\\Implementation\\Can_Irq.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.Can_Irq.Os_Isr_CanIsr_0',code
+	.sect	'.text.Can_Irq.Os_Isr_CanIsr_0'
+	.align	2
+	
+	.global	Os_Isr_CanIsr_0
+
+; ..\BSW364\Can\Implementation\Can_Irq.c	     1  /* Kernbauer Version: 1.16 Konfiguration: DrvCan_TricoreMcanAsr Erzeugungsgangnummer: 766 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	     2  
+; ..\BSW364\Can\Implementation\Can_Irq.c	     3  /* STARTSINGLE_OF_MULTIPLE */
+; ..\BSW364\Can\Implementation\Can_Irq.c	     4  
+; ..\BSW364\Can\Implementation\Can_Irq.c	     5  /**********************************************************************************************************************
+; ..\BSW364\Can\Implementation\Can_Irq.c	     6   *  COPYRIGHT
+; ..\BSW364\Can\Implementation\Can_Irq.c	     7   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Can\Implementation\Can_Irq.c	     8   *  \verbatim
+; ..\BSW364\Can\Implementation\Can_Irq.c	     9   *  Copyright (c) 2022 by Vector Informatik GmbH.                                              All rights reserved.
+; ..\BSW364\Can\Implementation\Can_Irq.c	    10   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	    11   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\BSW364\Can\Implementation\Can_Irq.c	    12   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\BSW364\Can\Implementation\Can_Irq.c	    13   *                All other rights remain with Vector Informatik GmbH.
+; ..\BSW364\Can\Implementation\Can_Irq.c	    14   *  \endverbatim
+; ..\BSW364\Can\Implementation\Can_Irq.c	    15   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Can\Implementation\Can_Irq.c	    16   *  FILE DESCRIPTION
+; ..\BSW364\Can\Implementation\Can_Irq.c	    17   *  -----------------------------------------------------------------------------------------------------------------*/
+; ..\BSW364\Can\Implementation\Can_Irq.c	    18  /*  \file     Can.c / Can_Irq.c
+; ..\BSW364\Can\Implementation\Can_Irq.c	    19   *  \brief    Implementation of the CAN driver
+; ..\BSW364\Can\Implementation\Can_Irq.c	    20   *  \details  see functional description below
+; ..\BSW364\Can\Implementation\Can_Irq.c	    21   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	    22   *********************************************************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	    23  /* ***************************************************************************
+; ..\BSW364\Can\Implementation\Can_Irq.c	    24  |-----------------------------------------------------------------------------
+; ..\BSW364\Can\Implementation\Can_Irq.c	    25  |               R E V I S I O N   H I S T O R Y
+; ..\BSW364\Can\Implementation\Can_Irq.c	    26  |-----------------------------------------------------------------------------
+; ..\BSW364\Can\Implementation\Can_Irq.c	    27  | Date       Version Author Description
+; ..\BSW364\Can\Implementation\Can_Irq.c	    28  | ---------  ------- ------ --------------------------------------------------
+; ..\BSW364\Can\Implementation\Can_Irq.c	    29  | 2012-04-13 1.00.00  Her - Initial revision (alpha version)
+; ..\BSW364\Can\Implementation\Can_Irq.c	    30  | 2012-08-28 1.00.01  Her - Initial revision (beta version )
+; ..\BSW364\Can\Implementation\Can_Irq.c	    31  | 2013-02-01 1.01.00  Her - ESCAN00065098: Initial release version
+; ..\BSW364\Can\Implementation\Can_Irq.c	    32  | 2013-03-18 1.02.00  Her - ESCAN00065594: Additional (High End) features
+; ..\BSW364\Can\Implementation\Can_Irq.c	    33  | 2013-06-03 1.03.00  Her - ESCAN00068062: Rx Dedicated Buffers support
+; ..\BSW364\Can\Implementation\Can_Irq.c	    34  |                     Her - ESCAN00068305: Reduce RAM resource consumption by tailoring the configuration
+; ..\BSW364\Can\Implementation\Can_Irq.c	    35  |                     Her - ESCAN00068956: CAN messages to be transmitted are missing
+; ..\BSW364\Can\Implementation\Can_Irq.c	    36  | 2013-07-26 1.03.80  Her - ESCAN00069335: CAN-FD Bitrate Switching Prototype
+; ..\BSW364\Can\Implementation\Can_Irq.c	    37  | 2013-08-08 1.04.00  Her - ESCAN00069461: Further transmissions are not accepted but a memory violation is reported
+; ..\BSW364\Can\Implementation\Can_Irq.c	    38  |                     Her - ESCAN00069673: Conditional ECC initialization of the embedded CAN Message RAM
+; ..\BSW364\Can\Implementation\Can_Irq.c	    39  |                     Her - ESCAN00069937: GHS support
+; ..\BSW364\Can\Implementation\Can_Irq.c	    40  | 2013-09-27 1.05.00  Her - ESCAN00070770: Use Overrun in Status
+; ..\BSW364\Can\Implementation\Can_Irq.c	    41  |                     Her - ESCAN00070771: Compiler error: "finishRxFullCan" undefined
+; ..\BSW364\Can\Implementation\Can_Irq.c	    42  | 2013-10-17 1.06.00  Her - ESCAN00070952: Support customer specific post initialization
+; ..\BSW364\Can\Implementation\Can_Irq.c	    43  |                     Her - ESCAN00071166: AR4-328: Predefined Runtime Measurement Points
+; ..\BSW364\Can\Implementation\Can_Irq.c	    44  |                     Her - ESCAN00071326: Delayed overrun notification
+; ..\BSW364\Can\Implementation\Can_Irq.c	    45  |                     Her - ESCAN00071493: Message processed in wrong (interrupt or task ) context 
+; ..\BSW364\Can\Implementation\Can_Irq.c	    46  | 2013-11-20 1.07.00  Her - ESCAN00073084: Improvements on derivative handling
+; ..\BSW364\Can\Implementation\Can_Irq.c	    47  | 2014-02-12 1.08.00  Her - ESCAN00073939: Enhanced CAN-FD (Full) support
+; ..\BSW364\Can\Implementation\Can_Irq.c	    48  | 2014-03-17 1.09.00  Her - ESCAN00074327: Support embedded assembler for DiabData
+; ..\BSW364\Can\Implementation\Can_Irq.c	    49  | 2014-06-13 1.10.00  Her - ESCAN00076201: Support MPC5777C derivative
+; ..\BSW364\Can\Implementation\Can_Irq.c	    50  | 2014-10-30 2.00.00  Her - ESCAN00079193: AR4-R11 Update using ComStackLib
+; ..\BSW364\Can\Implementation\Can_Irq.c	    51  | 2015-01-30 2.01.00  Her - ESCAN00079800: Added CBD support (for Traveo derivative)
+; ..\BSW364\Can\Implementation\Can_Irq.c	    52  | 2015-02-20 2.02.00  Her - ESCAN00081372: AR4-R11 Update using ComStackLib (support Spc58xx)
+; ..\BSW364\Can\Implementation\Can_Irq.c	    53  | 2015-03-18 2.02.01  Her - ESCAN00081884: compile error
+; ..\BSW364\Can\Implementation\Can_Irq.c	    54  | 2015-04-02 2.02.02  Her - ESCAN00082190: Power Down (sleep mode) correction
+; ..\BSW364\Can\Implementation\Can_Irq.c	    55  |                     Her - ESCAN00082291: Memory access misalignment exception
+; ..\BSW364\Can\Implementation\Can_Irq.c	    56  | 2015-04-16 2.02.03  Her - ESCAN00082521: Extended Id Type not correct detected
+; ..\BSW364\Can\Implementation\Can_Irq.c	    57  |                     Her - ESCAN00082722: CANbedded only: Memory access misalignment exception
+; ..\BSW364\Can\Implementation\Can_Irq.c	    58  |                     Her - ESCAN00082724: Speed up TxCopyToCan
+; ..\BSW364\Can\Implementation\Can_Irq.c	    59  | 2015-07-06 2.02.04  Her - ESCAN00083815: Tx Confirmation gets lost
+; ..\BSW364\Can\Implementation\Can_Irq.c	    60  |                     Her - ESCAN00088481: Compiler error occurs
+; ..\BSW364\Can\Implementation\Can_Irq.c	    61  | 2015-07-30 2.03.00  Her - ESCAN00084313: Support MCAN Core release 3.1.0 ff.
+; ..\BSW364\Can\Implementation\Can_Irq.c	    62  |                     Her - ESCAN00084515: Use generated FullCAN masks
+; ..\BSW364\Can\Implementation\Can_Irq.c	    63  |                     Her - ESCAN00084650: Support ARM Cortex-Mx Data Memory Barrier
+; ..\BSW364\Can\Implementation\Can_Irq.c	    64  |                     Her - ESCAN00084814: Compiler error due to nested macro construction
+; ..\BSW364\Can\Implementation\Can_Irq.c	    65  | 2015-10-09 2.03.01  Her - ESCAN00085813: Endless loop during reception of messages
+; ..\BSW364\Can\Implementation\Can_Irq.c	    66  | 2015-11-11 2.04.00  Her - ESCAN00086128: Dynamic Rx FullCAN Message filtering failure
+; ..\BSW364\Can\Implementation\Can_Irq.c	    67  |                     Her - ESCAN00086359: Bosch Errata - support of workaround
+; ..\BSW364\Can\Implementation\Can_Irq.c	    68  | 2015-12-02 2.04.01  Her - ESCAN00086934: Support Keil compiler
+; ..\BSW364\Can\Implementation\Can_Irq.c	    69  |                     Her - ESCAN00087003: Missing pre-processor constants
+; ..\BSW364\Can\Implementation\Can_Irq.c	    70  |                     Her - ESCAN00087005: Re-Initialization fails
+; ..\BSW364\Can\Implementation\Can_Irq.c	    71  |                     Her - ESCAN00087056: Erroneous cancel notification
+; ..\BSW364\Can\Implementation\Can_Irq.c	    72  | 2015-12-03 2.05.00  Her - ESCAN00087255: Restructured due to AR4/R14
+; ..\BSW364\Can\Implementation\Can_Irq.c	    73  |                     Her - ESCAN00087256: Compile warning (erratum_013)
+; ..\BSW364\Can\Implementation\Can_Irq.c	    74  | 2016-01-21 2.05.01  Her - ESCAN00087586: Memory overwrite during RAM check
+; ..\BSW364\Can\Implementation\Can_Irq.c	    75  |                     Her - ESCAN00087612: Wrong mailbox checked
+; ..\BSW364\Can\Implementation\Can_Irq.c	    76  | 2016-02-19 2.06.00  Her - ESCAN00088392: Support 8 CAN channels (only Organi affected)
+; ..\BSW364\Can\Implementation\Can_Irq.c	    77  |                     Her - ESCAN00088519: Support more than 255 Dynamic Rx Objects
+; ..\BSW364\Can\Implementation\Can_Irq.c	    78  |                     Her - ESCAN00088756: Reserved bits may only be written with "0"
+; ..\BSW364\Can\Implementation\Can_Irq.c	    79  |                     Her - ESCAN00088813: Incorrect switching between Normal CAN and CAN-FD
+; ..\BSW364\Can\Implementation\Can_Irq.c	    80  |                     Her - ESCAN00089048: Support Mirror Mode (CBD)
+; ..\BSW364\Can\Implementation\Can_Irq.c	    81  |                     Her - ESCAN00089049: Assertion causes compile error
+; ..\BSW364\Can\Implementation\Can_Irq.c	    82  |                     Her - ESCAN00089131: Dynamic Rx objects compile error
+; ..\BSW364\Can\Implementation\Can_Irq.c	    83  | 2016-04-12 2.06.01  Her - ESCAN00089406: AR4/R14 adaptations to AR3
+; ..\BSW364\Can\Implementation\Can_Irq.c	    84  | 2016-04-22 2.06.02  Her - ESCAN00089587: Memory overwrite during RAM check
+; ..\BSW364\Can\Implementation\Can_Irq.c	    85  |                     Her - ESCAN00089610: CAN-ID Rx access macros
+; ..\BSW364\Can\Implementation\Can_Irq.c	    86  | 2016-04-28 2.07.00  Her - ESCAN00089867: MISRA improvements
+; ..\BSW364\Can\Implementation\Can_Irq.c	    87  |            2.08.xx  Her - ESCAN00092200: Will be used for Silent branch
+; ..\BSW364\Can\Implementation\Can_Irq.c	    88  | 2016-06-22 2.09.00  Her - ESCAN00090584: Function call with missing parameter
+; ..\BSW364\Can\Implementation\Can_Irq.c	    89  |                     Her - ESCAN00090761: Generated filter for dynamic Rx objects must be disabled by default
+; ..\BSW364\Can\Implementation\Can_Irq.c	    90  |                     Her - ESCAN00090825: Omit obsolete cancellation delay 
+; ..\BSW364\Can\Implementation\Can_Irq.c	    91  |                     Her - ESCAN00091096: Support AR4/R16
+; ..\BSW364\Can\Implementation\Can_Irq.c	    92  |                     Her - ESCAN00091328: Support Mirror Mode (ASR)
+; ..\BSW364\Can\Implementation\Can_Irq.c	    93  |                     Her - ESCAN00091329: CAN-FD Bit Rate Switch always active
+; ..\BSW364\Can\Implementation\Can_Irq.c	    94  | 2016-08-24 2.10.00  Her - ESCAN00091681: Support dynamic MCAN Revision adaptation
+; ..\BSW364\Can\Implementation\Can_Irq.c	    95  |                     Her - ESCAN00092569: Compiler error: identifier "pduInfo_var_id" is undefined
+; ..\BSW364\Can\Implementation\Can_Irq.c	    96  |                     Her - ESCAN00092315: Compiler warning: function "CanLL_WakeUpHandling" was declared but never referenced
+; ..\BSW364\Can\Implementation\Can_Irq.c	    97  |                     Her - ESCAN00092713: Preprocessor parse error
+; ..\BSW364\Can\Implementation\Can_Irq.c	    98  | 2016-10-28 2.11.00  Pl  - ESCAN00092591: Support Aurix Plus with AR4/R16
+; ..\BSW364\Can\Implementation\Can_Irq.c	    99  | 2016-11-24 2.12.00  Her - ESCAN00092995: CAN-FD message without BRS will not be received
+; ..\BSW364\Can\Implementation\Can_Irq.c	   100  |                     Her - ESCAN00093167: Compiler error "maybe misaligned memory access"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   101  |                     Pl  - ESCAN00093244: CAN Interrupt lock work not correct (Aurix Plus only)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   102  | 2017-01-25 2.13.00  Pl  - ESCAN00093483: CAN communication only possible with channels CAN0, CAN4, CAN8 (Aurix Plus only)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   103  |                     Pl  - ESCAN00093726: Support C_ENABLE_USE_OS_INTERRUPT_CONTROL (Aurix Plus only)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   104  | 2017-02-02 2.13.01  Her - ESCAN00093849: CAN data bytes containing wrong content 
+; ..\BSW364\Can\Implementation\Can_Irq.c	   105  |                     Her - ESCAN00093852: Support Extended ID Masking
+; ..\BSW364\Can\Implementation\Can_Irq.c	   106  | 2017-03-09 2.14.00  Rse - ESCAN00094323: Support TeleChips Tcc802x derivatives for CANbedded
+; ..\BSW364\Can\Implementation\Can_Irq.c	   107  | 2017-04-19 2.14.01  Pl  - ESCAN00094085: Implementation of workaround for MCMCAN_TC.003_EPN Corruption of transmitted CAN Frame
+; ..\BSW364\Can\Implementation\Can_Irq.c	   108  | 2017-05-10 2.15.00  Her - ESCAN00094883: Improper workaround for MCAN Erratum #10 
+; ..\BSW364\Can\Implementation\Can_Irq.c	   109  | 2017-05-11 2.16.00  Her - ESCAN00094518: MCAN SafeBSW Support
+; ..\BSW364\Can\Implementation\Can_Irq.c	   110  | 2017-08-10 2.16.01  Her - STORYC-2289  : FEAT-2738 (silent mode), FEAT-2888 (selective multiplexedTx)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   111  | 2017-08-25 2.17.00  Pl  - STORYC-2250  : M-CAN: Support new platform Telemaco3P with ARM DS5 compiler with CFG5
+; ..\BSW364\Can\Implementation\Can_Irq.c	   112  |                     Her - STORYC-2289  : Support derivatives TCC8021, SAMCA1E for CANbedded
+; ..\BSW364\Can\Implementation\Can_Irq.c	   113  | 2017-09-12 2.20.00  Her - STORYC-2729  : Support derivatives SPC5777M with AR4/R19, MCAN SafeBSW Support
+; ..\BSW364\Can\Implementation\Can_Irq.c	   114  |                     Her - STORYC-2780  : Stop Mode transition behaviour improved
+; ..\BSW364\Can\Implementation\Can_Irq.c	   115  |                     Her - ESCAN00097246: Pending Tx requests block transition to stop mode
+; ..\BSW364\Can\Implementation\Can_Irq.c	   116  |                     Her - ESCAN00097151: Incomplete Mirror Data
+; ..\BSW364\Can\Implementation\Can_Irq.c	   117  | 2017-10-27 2.21.00  Her - STORYC-2729  : MCAN SafeBSW Support (continued and ExtRamCheck Beta)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   118  | 2017-12-01 3.00.00  Pl  - STORYC-3153  : Add infixing to support multiple driver instanced
+; ..\BSW364\Can\Implementation\Can_Irq.c	   119  |                     Her - STORYC-3325  : AR3/GENy adaptation
+; ..\BSW364\Can\Implementation\Can_Irq.c	   120  |                     Huo - ESCAN00098069: Add external PIA
+; ..\BSW364\Can\Implementation\Can_Irq.c	   121  | 2018-01-25 3.01.00  Hum - STORYC-4102  : Support Extended Ram Check
+; ..\BSW364\Can\Implementation\Can_Irq.c	   122  |                     Her - ESCAN00097602: OS assertion "CAN interrupt lost"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   123  |                     Hum - ESCAN00098469: TCF Init enabled regardless of CANCEL_IN_HW
+; ..\BSW364\Can\Implementation\Can_Irq.c	   124  |                     Hum - ESCAN00098470: TDCR write not performed correctly in correspondance with dynamic MCAN revision. CAN_BOSCH_ERRATUM_012
+; ..\BSW364\Can\Implementation\Can_Irq.c	   125  |                     Hum - ESCAN00098467: Missing ampersand in RAM check resulting in a DET error.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   126  | 2018-03-07 3.02.00  Pl  - STORYC-4771  : Support TC38X for Tricore
+; ..\BSW364\Can\Implementation\Can_Irq.c	   127  |                     Her - ESCAN00098887: static variable "mirrorData" linker section issue, 
+; ..\BSW364\Can\Implementation\Can_Irq.c	   128  |                     Her - ESCAN00098890: use kCanLoopStop instead of kCanLoopSleep (AR3 issue)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   129  | 2018-09-17 4.00.00  Her - STORYC-6298  : MCAN RI 2.0 adaptation
+; ..\BSW364\Can\Implementation\Can_Irq.c	   130  |                     Hum - STORYC-6490  : Support for Traveo2
+; ..\BSW364\Can\Implementation\Can_Irq.c	   131  | 2018-10-26 4.00.01  Yoe - ESCAN00101172: Compiler error: wrong number of arguments in call to CanReInit
+; ..\BSW364\Can\Implementation\Can_Irq.c	   132  | 2019-03-14 5.00.00  Her - STORYC-7220  : from CBD/RI2.0 to AR/R21,R22 adaptation
+; ..\BSW364\Can\Implementation\Can_Irq.c	   133  |                     Hum - STORYC-8107  : Adapations for TriCore R22
+; ..\BSW364\Can\Implementation\Can_Irq.c	   134  |                     Hum - STORYC-7923  : Merge version 3-03-00 - 3-09-01:
+; ..\BSW364\Can\Implementation\Can_Irq.c	   135  |                                          - STORYC-4711  : Support TDA3x additional registers
+; ..\BSW364\Can\Implementation\Can_Irq.c	   136  |                                          - STORYC-4584  : Infixing improvements
+; ..\BSW364\Can\Implementation\Can_Irq.c	   137  |                                          - STORYC-5038  : Support GNU Compiler for TC38X
+; ..\BSW364\Can\Implementation\Can_Irq.c	   138  |                                          - ESCAN00099574: Adaptation LL for CANBEDDED
+; ..\BSW364\Can\Implementation\Can_Irq.c	   139  |                                          - STORYC-5679  : Support for Visconti5
+; ..\BSW364\Can\Implementation\Can_Irq.c	   140  |                                          - STORYC-5763  : Support extended ram check for TDA3x
+; ..\BSW364\Can\Implementation\Can_Irq.c	   141  |                                          - STORYC-6686  : Support for Traveo2
+; ..\BSW364\Can\Implementation\Can_Irq.c	   142  |                                          - STORYC-6964  : Support SafeBSW for RH850
+; ..\BSW364\Can\Implementation\Can_Irq.c	   143  |                                          - STORYC-7393  : Support SafeBsw for Tricore TC3xx
+; ..\BSW364\Can\Implementation\Can_Irq.c	   144  |                                          - STORYC-7392  : Support Extended RAM check for Tricore TC3xx
+; ..\BSW364\Can\Implementation\Can_Irq.c	   145  |                                          - ESCAN00101336: Rx BasicCan not deactivated when hwMailbox is corrupted
+; ..\BSW364\Can\Implementation\Can_Irq.c	   146  |                                          - ESCAN00101842: Extended Ram Check does not validate all configured registers
+; ..\BSW364\Can\Implementation\Can_Irq.c	   147  |                                          - STORYC-7578  : Support for ATSAME51/54 derivatives (STORYC-7633 for CANBEDDED)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   148  |                                          - ESCAN00102628: Can controller does not leave NISO mode
+; ..\BSW364\Can\Implementation\Can_Irq.c	   149  | 2019-04-12 5.01.00  Hum - ESCAN00102829: Can driver causes hardware exception
+; ..\BSW364\Can\Implementation\Can_Irq.c	   150  |                     Hum - ESCAN00102850: Hardware issue "MCMCAN_AI.H001_EPN"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   151  |                     Hum - STORYC-8181  : Support Traveo2 HighEnd
+; ..\BSW364\Can\Implementation\Can_Irq.c	   152  | 2019-04-29 5.02.00  Hum - STORYC-8270  : Support Panasonic AS1
+; ..\BSW364\Can\Implementation\Can_Irq.c	   153  |                     Yoe - STORYC-8139  : Support ARM6 Compiler for STA1385
+; ..\BSW364\Can\Implementation\Can_Irq.c	   154  |                     Yoe - STORYC-8386  : Support MCAN revision 3.0.x and Infixing
+; ..\BSW364\Can\Implementation\Can_Irq.c	   155  |                     Yoe - STORYC-8385  : Support SafeBsw MSR4 R22 ARM32
+; ..\BSW364\Can\Implementation\Can_Irq.c	   156  |                     Yoe - ESCAN00103110: RAM check not executed in the MCAN  message RAM area
+; ..\BSW364\Can\Implementation\Can_Irq.c	   157  |                     Yoe - ESCAN00103135: Remove  support of STA1385_cut1
+; ..\BSW364\Can\Implementation\Can_Irq.c	   158  |                     Hum - ESCAN00103996: Compile error "CAN_E_GENDATA not defined"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   159  | 2019-05-29 5.02.01  Hum - STORYC-8555  : Improve additional functionality handling in Jacinto6, Traveo2 and Visconti5
+; ..\BSW364\Can\Implementation\Can_Irq.c	   160  | 2019-06-17 5.02.02  Hum - ESCAN00103387: Transmit Confirmation function called for wrong mailbox
+; ..\BSW364\Can\Implementation\Can_Irq.c	   161  | 2019-08-21 5.03.00  Pl  - STORYC-8854  : Support for AWR1 RI 2.0 core 3.03.00
+; ..\BSW364\Can\Implementation\Can_Irq.c	   162  |                     Her - ESCAN00103377: Same peripheral region configuration for "CAN_PROTECTED_AREA_CHANNEL" and "CAN_PROTECTED_AREA_GLOBAL"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   163  |                     Hum - ESCAN00104123: CAN driver sends incorrect receive BasicCan handle to CanIf
+; ..\BSW364\Can\Implementation\Can_Irq.c	   164  | 2019-11-10 5.04.00  Hum - CAN-605      : Driver Improvements
+; ..\BSW364\Can\Implementation\Can_Irq.c	   165  |                     Hum - CAN-606      : Message RAM Optimization
+; ..\BSW364\Can\Implementation\Can_Irq.c	   166  |                     Hum - CAN-601      : Support Tx Hw Fifo
+; ..\BSW364\Can\Implementation\Can_Irq.c	   167  |                     Hum - ESCAN00104276: Compile error when using "CanBtpReg()" with Init Post Processing
+; ..\BSW364\Can\Implementation\Can_Irq.c	   168  |                     Hum - ESCAN00104735: Interrupts are unconditionally re-enabled after Can_DisableControllerInterrupts()
+; ..\BSW364\Can\Implementation\Can_Irq.c	   169  |                     Naj - CAN-760      : MISRA Improvements
+; ..\BSW364\Can\Implementation\Can_Irq.c	   170  |                     Red - CAN-784      : Support STM32H742 for R23
+; ..\BSW364\Can\Implementation\Can_Irq.c	   171  | 2020-02-11 5.05.00  Hum - CAN-936      : Support for TriCore in CANbedded
+; ..\BSW364\Can\Implementation\Can_Irq.c	   172  | 2020-04-14 5.06.00  Hum - CAN-865      : TriCore 2G Hardware Message RAM Initialization Support
+; ..\BSW364\Can\Implementation\Can_Irq.c	   173  |                     Naj - CAN-1171     : Support TCC80XX
+; ..\BSW364\Can\Implementation\Can_Irq.c	   174  |                     Pl  - CAN-1279     : MISRA improvements
+; ..\BSW364\Can\Implementation\Can_Irq.c	   175  | 2020-06-03 5.07.00  Hum - CAN-1396     : Support for TDA4 (Jacinto7)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   176  | 2020-09-15 5.08.00  Pl  - ESCAN00106662: Channel Independent TTCAN for CBD
+; ..\BSW364\Can\Implementation\Can_Irq.c	   177  |                     Pl  - CAN-1296     : TraveoII CBD Subsystem Table
+; ..\BSW364\Can\Implementation\Can_Irq.c	   178  |                     Hum - CAN-1678     : Support for TriCore TC3E7 with Diab Compiler
+; ..\BSW364\Can\Implementation\Can_Irq.c	   179  |                     Naj - CAN-1179     : Hardware Object Layout change
+; ..\BSW364\Can\Implementation\Can_Irq.c	   180  |                     Naj - ESCAN00106609: TCC803x CAN Configuration Write Protection
+; ..\BSW364\Can\Implementation\Can_Irq.c	   181  |                     Naj - ESCAN00107330: Verify channel parameter in Interrupt handling
+; ..\BSW364\Can\Implementation\Can_Irq.c	   182  |                     Naj - ESCAN00107331: Support for Tx Delayed FullCAN for Multichannel
+; ..\BSW364\Can\Implementation\Can_Irq.c	   183  |                     Naj - ESCAN00107332: Undesirable Basic CAN deactivation during RAM check
+; ..\BSW364\Can\Implementation\Can_Irq.c	   184  |                     Hum - ESCAN00107394: Wrong base addresses accessed for TDA3x
+; ..\BSW364\Can\Implementation\Can_Irq.c	   185  |                     Hum - ESCAN00107466: Size of generated message RAM table not checked during runtime
+; ..\BSW364\Can\Implementation\Can_Irq.c	   186  | 2020-10-14 5.08.01  Naj - CAN-1514     : Support TDA4 for CANbedded
+; ..\BSW364\Can\Implementation\Can_Irq.c	   187  | 2021-01-11 5.08.02  Meid- CAN-2154     : Reworks for TI platforms
+; ..\BSW364\Can\Implementation\Can_Irq.c	   188  |                     Naj - ESCAN00107521: Hw Loops used in wrong context
+; ..\BSW364\Can\Implementation\Can_Irq.c	   189  |                     Naj - ESCAN00108028: Unexpected CAN interrupt
+; ..\BSW364\Can\Implementation\Can_Irq.c	   190  |                     Hum - CAN-2320     : Remove call to TriCore Safety Endinit registers during initialization
+; ..\BSW364\Can\Implementation\Can_Irq.c	   191  | 2021-05-26 5.09.00  Red - CAN-1251     : Support Virtual Addressing
+; ..\BSW364\Can\Implementation\Can_Irq.c	   192  |                     Pl  - CAN-2442     : Canbedded Dynamic Rx Object RI 2.0
+; ..\BSW364\Can\Implementation\Can_Irq.c	   193  | 2021-06-07 5.09.01  Pl  - ESCAN00109428: Compiler error: kCanIdTypeExt is not a member of initPara
+; ..\BSW364\Can\Implementation\Can_Irq.c	   194  | 2021-06-14 5.09.02  Meid- CANHAL-43    : Improve Switches for CAN Interrupt handling
+; ..\BSW364\Can\Implementation\Can_Irq.c	   195  | 2021-09-01 5.10.00  Hnj - CANHAL-177   : R26 Support of Security Event Reporting
+; ..\BSW364\Can\Implementation\Can_Irq.c	   196  |                     Hnj - CANHAL-456   : Remove r-m-w when writing to TXBAR
+; ..\BSW364\Can\Implementation\Can_Irq.c	   197  | 2021-11-01 5.10.01  Hnj - ESCAN00110335: Virtual addressing not activated when enabled in the generator
+; ..\BSW364\Can\Implementation\Can_Irq.c	   198  |                     Hnj - CANHAL-719   : Added MISRA justification
+; ..\BSW364\Can\Implementation\Can_Irq.c	   199  |                     Hnj - ESCAN00110641: Unhandled interrupt request when a security event is detected
+; ..\BSW364\Can\Implementation\Can_Irq.c	   200  | 2021-11-17 5.10.02  Ped - ESCAN00110742: Error state passive not reported for receive errors
+; ..\BSW364\Can\Implementation\Can_Irq.c	   201  | 2021-12-10 5.10.03  Ped - CANHAL-205   : Support of Security Event Reporting Tricore
+; ..\BSW364\Can\Implementation\Can_Irq.c	   202  | 2022-01-17 5.10.04  Hnj - CANHAL-186   : Add SBWS justification with reference to SMI-833100
+; ..\BSW364\Can\Implementation\Can_Irq.c	   203  | 2022-03-08 5.11.00  Hnj - CANHAL-839   : Security Event Reporting error detection enhancement
+; ..\BSW364\Can\Implementation\Can_Irq.c	   204  |                     Pl  - CANHAL-798   : Extended RAM Check Implementation for CANbedded
+; ..\BSW364\Can\Implementation\Can_Irq.c	   205  | 2022-05-02 5.11.01  Hnj - ESCAN00111284: Memory corruption during RAM check
+; ..\BSW364\Can\Implementation\Can_Irq.c	   206  |                     Pl  - ESCAN00111527: CanEnableMailboxCommunication API does not enable deactivated CAN MailboxObject
+; ..\BSW364\Can\Implementation\Can_Irq.c	   207  |************************************************************************** */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   208  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   209  /***************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	   210  /* Include files                                                           */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   211  /***************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	   212  /* ECO_IGNORE_BLOCK_BEGIN */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   213  #define C_DRV_INTERNAL
+; ..\BSW364\Can\Implementation\Can_Irq.c	   214  #define CAN_IRQ_SOURCE     /* testability */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   215  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   216  #include "Can.h"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   217  #if defined(V_OSTYPE_OSEK) /* COV_CAN_OS_USAGE */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   218  # include "osek.h"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   219  #endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   220  /* \trace SPEC-1408 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   221  #if defined(V_OSTYPE_AUTOSAR) /* COV_CAN_OS_USAGE */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   222  # include "Os.h"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   223  #endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   224  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   225  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   226  /* ECO_IGNORE_BLOCK_END */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   227  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   228  /***************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	   229  /* Version Check                                                           */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   230  /***************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	   231  /* \trace SPEC-20329 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   232  /* not the SW version but all file versions that represent the SW version are checked */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   233  #if (CAN_COREVERSION           != 0x1000u) /* \trace SPEC-1699, SPEC-3837 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   234  # error "Header file are inconsistent!"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   235  #endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   236  #if (CAN_RELEASE_COREVERSION   != 0x03u)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   237  # error "Header file are inconsistent!"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   238  #endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   239  #if( DRVCAN_MPC5700MCANASR_VERSION != 0x0511)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   240  # error "Source and Header file are inconsistent!"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   241  #endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   242  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   243  #if( DRVCAN_MPC5700MCANASR_RELEASE_VERSION != 0x01)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   244  # error "Source and Header file are inconsistent!"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   245  #endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   246  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   247  #if defined(CAN_GEN_Mpc5700McanAsr_VERSION )  /* COV_CAN_VERSION_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   248  # if(CAN_GEN_Mpc5700McanAsr_VERSION != 0x0504)     /* CFG5 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   249  #  error "Generated Data are inconsistent!"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   250  # endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   251  #else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   252  # define CAN_GEN_Mpc5700McanAsr_VERSION         CAN_GEN_MPC5700MCANASR_VERSION
+; ..\BSW364\Can\Implementation\Can_Irq.c	   253  # if(CAN_GEN_MPC5700MCANASR_VERSION != 0x0100)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   254  #  error "Generated Data are inconsistent!"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   255  # endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   256  #endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   257  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   258  #if defined(CAN_ENABLE_USE_INIT_ROOT_POINTER)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   259  # define CAN_START_SEC_VAR_INIT_UNSPECIFIED  /*-----------------------------*/
+; ..\BSW364\Can\Implementation\Can_Irq.c	   260  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   261  V_DEF_P2CONST (extern, Can_ConfigType, VAR_INIT, CONST_PBCFG) Can_ConfigDataPtr; /* PRQA S 3447,3449,3451,3210 */ /* MD_Can_ExternalScope */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   262  # define CAN_STOP_SEC_VAR_INIT_UNSPECIFIED  /*------------------------------*/
+; ..\BSW364\Can\Implementation\Can_Irq.c	   263  # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   264  #endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   265  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   266  /***************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	   267  /* Interrupt Service Routine                                               */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   268  /***************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	   269  #define CAN_START_SEC_CODE  /*-----------------------------------------*/
+; ..\BSW364\Can\Implementation\Can_Irq.c	   270  #include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   271  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   272  /* \trace SPEC-1579, SPEC-1395, SPEC-1567 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   273  /* PRQA S 3614 QAC_Can_3614 */ /* MD_Can_3614_LL */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   274  #if defined( C_SINGLE_RECEIVE_CHANNEL )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   275  # define CanPhysToLogChannel_0
+; ..\BSW364\Can\Implementation\Can_Irq.c	   276  # define CanPhysToLogChannelIndex_0
+; ..\BSW364\Can\Implementation\Can_Irq.c	   277  # define CanPhysToLogChannel_1
+; ..\BSW364\Can\Implementation\Can_Irq.c	   278  # define CanPhysToLogChannelIndex_1
+; ..\BSW364\Can\Implementation\Can_Irq.c	   279  # define CanPhysToLogChannel_2
+; ..\BSW364\Can\Implementation\Can_Irq.c	   280  # define CanPhysToLogChannelIndex_2
+; ..\BSW364\Can\Implementation\Can_Irq.c	   281  # define CanPhysToLogChannel_3
+; ..\BSW364\Can\Implementation\Can_Irq.c	   282  # define CanPhysToLogChannelIndex_3
+; ..\BSW364\Can\Implementation\Can_Irq.c	   283  # define CanPhysToLogChannel_4
+; ..\BSW364\Can\Implementation\Can_Irq.c	   284  # define CanPhysToLogChannelIndex_4
+; ..\BSW364\Can\Implementation\Can_Irq.c	   285  # define CanPhysToLogChannel_5
+; ..\BSW364\Can\Implementation\Can_Irq.c	   286  # define CanPhysToLogChannelIndex_5
+; ..\BSW364\Can\Implementation\Can_Irq.c	   287  # define CanPhysToLogChannel_6
+; ..\BSW364\Can\Implementation\Can_Irq.c	   288  # define CanPhysToLogChannelIndex_6
+; ..\BSW364\Can\Implementation\Can_Irq.c	   289  # define CanPhysToLogChannel_7
+; ..\BSW364\Can\Implementation\Can_Irq.c	   290  # define CanPhysToLogChannelIndex_7
+; ..\BSW364\Can\Implementation\Can_Irq.c	   291  # define CanPhysToLogChannel_8
+; ..\BSW364\Can\Implementation\Can_Irq.c	   292  # define CanPhysToLogChannelIndex_8
+; ..\BSW364\Can\Implementation\Can_Irq.c	   293  # define CanPhysToLogChannel_9
+; ..\BSW364\Can\Implementation\Can_Irq.c	   294  # define CanPhysToLogChannelIndex_9
+; ..\BSW364\Can\Implementation\Can_Irq.c	   295  # define CanPhysToLogChannel_10
+; ..\BSW364\Can\Implementation\Can_Irq.c	   296  # define CanPhysToLogChannelIndex_10
+; ..\BSW364\Can\Implementation\Can_Irq.c	   297  # define CanPhysToLogChannel_11
+; ..\BSW364\Can\Implementation\Can_Irq.c	   298  # define CanPhysToLogChannelIndex_11
+; ..\BSW364\Can\Implementation\Can_Irq.c	   299  # define CanPhysToLogChannel_12
+; ..\BSW364\Can\Implementation\Can_Irq.c	   300  # define CanPhysToLogChannelIndex_12
+; ..\BSW364\Can\Implementation\Can_Irq.c	   301  # define CanPhysToLogChannel_13
+; ..\BSW364\Can\Implementation\Can_Irq.c	   302  # define CanPhysToLogChannelIndex_13
+; ..\BSW364\Can\Implementation\Can_Irq.c	   303  # define CanPhysToLogChannel_14
+; ..\BSW364\Can\Implementation\Can_Irq.c	   304  # define CanPhysToLogChannelIndex_14
+; ..\BSW364\Can\Implementation\Can_Irq.c	   305  # define CanPhysToLogChannel_15
+; ..\BSW364\Can\Implementation\Can_Irq.c	   306  # define CanPhysToLogChannelIndex_15
+; ..\BSW364\Can\Implementation\Can_Irq.c	   307  # define CanPhysToLogChannel_16
+; ..\BSW364\Can\Implementation\Can_Irq.c	   308  # define CanPhysToLogChannelIndex_16
+; ..\BSW364\Can\Implementation\Can_Irq.c	   309  # define CanPhysToLogChannel_17
+; ..\BSW364\Can\Implementation\Can_Irq.c	   310  # define CanPhysToLogChannelIndex_17
+; ..\BSW364\Can\Implementation\Can_Irq.c	   311  # define CanPhysToLogChannel_18
+; ..\BSW364\Can\Implementation\Can_Irq.c	   312  # define CanPhysToLogChannelIndex_18
+; ..\BSW364\Can\Implementation\Can_Irq.c	   313  # define CanPhysToLogChannel_19
+; ..\BSW364\Can\Implementation\Can_Irq.c	   314  # define CanPhysToLogChannelIndex_19
+; ..\BSW364\Can\Implementation\Can_Irq.c	   315  #else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   316  # define CanPhysToLogChannel_0       kCanPhysToLogChannelIndex_0
+; ..\BSW364\Can\Implementation\Can_Irq.c	   317  # define CanPhysToLogChannelIndex_0  kCanPhysToLogChannelIndex_0,
+; ..\BSW364\Can\Implementation\Can_Irq.c	   318  # define CanPhysToLogChannel_1       kCanPhysToLogChannelIndex_1
+; ..\BSW364\Can\Implementation\Can_Irq.c	   319  # define CanPhysToLogChannelIndex_1  kCanPhysToLogChannelIndex_1,
+; ..\BSW364\Can\Implementation\Can_Irq.c	   320  # define CanPhysToLogChannel_2       kCanPhysToLogChannelIndex_2
+; ..\BSW364\Can\Implementation\Can_Irq.c	   321  # define CanPhysToLogChannelIndex_2  kCanPhysToLogChannelIndex_2,
+; ..\BSW364\Can\Implementation\Can_Irq.c	   322  # define CanPhysToLogChannel_3       kCanPhysToLogChannelIndex_3
+; ..\BSW364\Can\Implementation\Can_Irq.c	   323  # define CanPhysToLogChannelIndex_3  kCanPhysToLogChannelIndex_3,
+; ..\BSW364\Can\Implementation\Can_Irq.c	   324  # define CanPhysToLogChannel_4       kCanPhysToLogChannelIndex_4
+; ..\BSW364\Can\Implementation\Can_Irq.c	   325  # define CanPhysToLogChannelIndex_4  kCanPhysToLogChannelIndex_4,
+; ..\BSW364\Can\Implementation\Can_Irq.c	   326  # define CanPhysToLogChannel_5       kCanPhysToLogChannelIndex_5
+; ..\BSW364\Can\Implementation\Can_Irq.c	   327  # define CanPhysToLogChannelIndex_5  kCanPhysToLogChannelIndex_5,
+; ..\BSW364\Can\Implementation\Can_Irq.c	   328  # define CanPhysToLogChannel_6       kCanPhysToLogChannelIndex_6
+; ..\BSW364\Can\Implementation\Can_Irq.c	   329  # define CanPhysToLogChannelIndex_6  kCanPhysToLogChannelIndex_6,
+; ..\BSW364\Can\Implementation\Can_Irq.c	   330  # define CanPhysToLogChannel_7       kCanPhysToLogChannelIndex_7
+; ..\BSW364\Can\Implementation\Can_Irq.c	   331  # define CanPhysToLogChannelIndex_7  kCanPhysToLogChannelIndex_7,
+; ..\BSW364\Can\Implementation\Can_Irq.c	   332  # define CanPhysToLogChannel_8       kCanPhysToLogChannelIndex_8
+; ..\BSW364\Can\Implementation\Can_Irq.c	   333  # define CanPhysToLogChannelIndex_8  kCanPhysToLogChannelIndex_8,
+; ..\BSW364\Can\Implementation\Can_Irq.c	   334  # define CanPhysToLogChannel_9       kCanPhysToLogChannelIndex_9
+; ..\BSW364\Can\Implementation\Can_Irq.c	   335  # define CanPhysToLogChannelIndex_9  kCanPhysToLogChannelIndex_9,
+; ..\BSW364\Can\Implementation\Can_Irq.c	   336  # define CanPhysToLogChannel_10       kCanPhysToLogChannelIndex_10
+; ..\BSW364\Can\Implementation\Can_Irq.c	   337  # define CanPhysToLogChannelIndex_10  kCanPhysToLogChannelIndex_10,
+; ..\BSW364\Can\Implementation\Can_Irq.c	   338  # define CanPhysToLogChannel_11       kCanPhysToLogChannelIndex_11
+; ..\BSW364\Can\Implementation\Can_Irq.c	   339  # define CanPhysToLogChannelIndex_11  kCanPhysToLogChannelIndex_11,
+; ..\BSW364\Can\Implementation\Can_Irq.c	   340  # define CanPhysToLogChannel_12       kCanPhysToLogChannelIndex_12
+; ..\BSW364\Can\Implementation\Can_Irq.c	   341  # define CanPhysToLogChannelIndex_12  kCanPhysToLogChannelIndex_12,
+; ..\BSW364\Can\Implementation\Can_Irq.c	   342  # define CanPhysToLogChannel_13       kCanPhysToLogChannelIndex_13
+; ..\BSW364\Can\Implementation\Can_Irq.c	   343  # define CanPhysToLogChannelIndex_13  kCanPhysToLogChannelIndex_13,
+; ..\BSW364\Can\Implementation\Can_Irq.c	   344  # define CanPhysToLogChannel_14       kCanPhysToLogChannelIndex_14
+; ..\BSW364\Can\Implementation\Can_Irq.c	   345  # define CanPhysToLogChannelIndex_14  kCanPhysToLogChannelIndex_14,
+; ..\BSW364\Can\Implementation\Can_Irq.c	   346  # define CanPhysToLogChannel_15       kCanPhysToLogChannelIndex_15
+; ..\BSW364\Can\Implementation\Can_Irq.c	   347  # define CanPhysToLogChannelIndex_15  kCanPhysToLogChannelIndex_15,
+; ..\BSW364\Can\Implementation\Can_Irq.c	   348  # define CanPhysToLogChannel_16       kCanPhysToLogChannelIndex_16
+; ..\BSW364\Can\Implementation\Can_Irq.c	   349  # define CanPhysToLogChannelIndex_16  kCanPhysToLogChannelIndex_16,
+; ..\BSW364\Can\Implementation\Can_Irq.c	   350  # define CanPhysToLogChannel_17       kCanPhysToLogChannelIndex_17
+; ..\BSW364\Can\Implementation\Can_Irq.c	   351  # define CanPhysToLogChannelIndex_17  kCanPhysToLogChannelIndex_17,
+; ..\BSW364\Can\Implementation\Can_Irq.c	   352  # define CanPhysToLogChannel_18       kCanPhysToLogChannelIndex_18
+; ..\BSW364\Can\Implementation\Can_Irq.c	   353  # define CanPhysToLogChannelIndex_18  kCanPhysToLogChannelIndex_18,
+; ..\BSW364\Can\Implementation\Can_Irq.c	   354  # define CanPhysToLogChannel_19       kCanPhysToLogChannelIndex_19
+; ..\BSW364\Can\Implementation\Can_Irq.c	   355  # define CanPhysToLogChannelIndex_19  kCanPhysToLogChannelIndex_19,
+; ..\BSW364\Can\Implementation\Can_Irq.c	   356  #endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   357  /* PRQA  L:QAC_Can_3614 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   358  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   359  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   360  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   361  #if defined( C_ENABLE_ISR_MANDATORY )  /* ISR necessary; no pure polling configuration */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   362  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   363  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   364  /****************************************************************************
+; ..\BSW364\Can\Implementation\Can_Irq.c	   365  | NAME:             CanIsr_0
+; ..\BSW364\Can\Implementation\Can_Irq.c	   366  ****************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	   367  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   368  #  if defined( kCanPhysToLogChannelIndex_0 ) /* COV_CAN_EQUAL_CHANNEL_LAYOUT */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   369  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   370  #   if defined( C_ENABLE_OSEK_OS ) && defined( C_ENABLE_OSEK_OS_INTCAT2 ) /* COV_CAN_OS_USAGE */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   371  #    if defined (osdIsrCanIsr_0Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   372  #     if (osdIsrCanIsr_0Cat != 2)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   373  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   374  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   375  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   376  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   377   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   378   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   379   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   380   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   381  ISR( CanIsr_0 )    /* PRQA S 3408 */ /* ISR prototypes must be provided by OSEK header file */
+; Function Os_Isr_CanIsr_0
+Os_Isr_CanIsr_0:	.type	func
+
+; ..\BSW364\Can\Implementation\Can_Irq.c	   382  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   383  #    if defined( C_ENABLE_OSEK_OS ) && defined (osdIsrCanIsr_0Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   384  #     if (osdIsrCanIsr_0Cat != 1)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   385  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   386  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   387  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   388  #    if defined ( C_ENABLE_ISRVOID )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   389  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   390   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   391   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   392   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   393   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   394  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_0( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   395  #    else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   396  #     if defined( V_COMP_TASKING_TC3XX ) /* COV_CAN_HW_SPECIFIC */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   397  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   398   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   399   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   400   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   401   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   402  V_DEF_FUNC(V_NONE, void __interrupt(kCanISRPrio_0) __vector_table(Can_GetkCanUsedCore()), CODE) CanIsr_0( void ) /* PRQA S 3408 */ /* MD_Can_ExternalScope */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   403  #     else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   404  #      if defined(V_COMP_GHS) && !defined(MISRA_CHECK) /* COV_CAN_COMPILER_SWITCH */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   405  #       pragma ghs interrupt
+; ..\BSW364\Can\Implementation\Can_Irq.c	   406  #      endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   407  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   408   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   409   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   410   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   411   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   412  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_0( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   413  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   414  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   415  #   endif /* C_ENABLE_OSEK_OS */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   416  {
+; ..\BSW364\Can\Implementation\Can_Irq.c	   417  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   418  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   419      /* #10 call interrupt handler */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   420  #   if defined( CAN_USE_PHYSTOLOG_MAPPING )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   421      CanInterrupt(Can_GetPhysToLogChannel(0));    /* call Interrupthandling with identity dependend logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   422  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   423      CanInterrupt(kCanPhysToLogChannelIndex_0);                      /* call Interrupthandling with logical channel */
+	j	CanInterrupt
+	
+__Os_Isr_CanIsr_0_function_end:
+	.size	Os_Isr_CanIsr_0,__Os_Isr_CanIsr_0_function_end-Os_Isr_CanIsr_0
+	; End of function
+	
+	.calls	'Os_Isr_CanIsr_0','CanInterrupt'
+	.extern	CanInterrupt
+	.calls	'Os_Isr_CanIsr_0','',0
+
+; ..\BSW364\Can\Implementation\Can_Irq.c	   424  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   425  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   426  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   427  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   428  } /* END OF CanISR */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   429  #  endif /* (kCanPhysToLogChannelIndex_0) */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   430  /* CODE CATEGORY 1 END */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   431  /****************************************************************************
+; ..\BSW364\Can\Implementation\Can_Irq.c	   432  | NAME:             CanIsr_1
+; ..\BSW364\Can\Implementation\Can_Irq.c	   433  ****************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	   434  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   435  #  if defined( kCanPhysToLogChannelIndex_1 ) /* COV_CAN_EQUAL_CHANNEL_LAYOUT */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   436  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   437  #   if defined( C_ENABLE_OSEK_OS ) && defined( C_ENABLE_OSEK_OS_INTCAT2 ) /* COV_CAN_OS_USAGE */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   438  #    if defined (osdIsrCanIsr_1Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   439  #     if (osdIsrCanIsr_1Cat != 2)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   440  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   441  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   442  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   443  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   444   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   445   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   446   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   447   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   448  ISR( CanIsr_1 )    /* PRQA S 3408 */ /* ISR prototypes must be provided by OSEK header file */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   449  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   450  #    if defined( C_ENABLE_OSEK_OS ) && defined (osdIsrCanIsr_1Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   451  #     if (osdIsrCanIsr_1Cat != 1)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   452  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   453  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   454  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   455  #    if defined ( C_ENABLE_ISRVOID )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   456  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   457   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   458   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   459   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   460   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   461  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_1( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   462  #    else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   463  #     if defined( V_COMP_TASKING_TC3XX ) /* COV_CAN_HW_SPECIFIC */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   464  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   465   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   466   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   467   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   468   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   469  V_DEF_FUNC(V_NONE, void __interrupt(kCanISRPrio_1) __vector_table(Can_GetkCanUsedCore()), CODE) CanIsr_1( void ) /* PRQA S 3408 */ /* MD_Can_ExternalScope */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   470  #     else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   471  #      if defined(V_COMP_GHS) && !defined(MISRA_CHECK) /* COV_CAN_COMPILER_SWITCH */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   472  #       pragma ghs interrupt
+; ..\BSW364\Can\Implementation\Can_Irq.c	   473  #      endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   474  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   475   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   476   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   477   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   478   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   479  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_1( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   480  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   481  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   482  #   endif /* C_ENABLE_OSEK_OS */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   483  {
+; ..\BSW364\Can\Implementation\Can_Irq.c	   484  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   485  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   486      /* #10 call interrupt handler */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   487  #   if defined( CAN_USE_PHYSTOLOG_MAPPING )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   488      CanInterrupt(Can_GetPhysToLogChannel(1));    /* call Interrupthandling with identity dependend logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   489  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   490      CanInterrupt(kCanPhysToLogChannelIndex_1);                      /* call Interrupthandling with logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   491  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   492  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   493  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   494  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   495  } /* END OF CanISR */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   496  #  endif /* (kCanPhysToLogChannelIndex_1) */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   497  /* CODE CATEGORY 1 END */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   498  /****************************************************************************
+; ..\BSW364\Can\Implementation\Can_Irq.c	   499  | NAME:             CanIsr_2
+; ..\BSW364\Can\Implementation\Can_Irq.c	   500  ****************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	   501  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   502  #  if defined( kCanPhysToLogChannelIndex_2 ) /* COV_CAN_EQUAL_CHANNEL_LAYOUT */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   503  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   504  #   if defined( C_ENABLE_OSEK_OS ) && defined( C_ENABLE_OSEK_OS_INTCAT2 ) /* COV_CAN_OS_USAGE */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   505  #    if defined (osdIsrCanIsr_2Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   506  #     if (osdIsrCanIsr_2Cat != 2)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   507  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   508  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   509  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   510  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   511   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   512   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   513   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   514   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   515  ISR( CanIsr_2 )    /* PRQA S 3408 */ /* ISR prototypes must be provided by OSEK header file */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   516  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   517  #    if defined( C_ENABLE_OSEK_OS ) && defined (osdIsrCanIsr_2Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   518  #     if (osdIsrCanIsr_2Cat != 1)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   519  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   520  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   521  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   522  #    if defined ( C_ENABLE_ISRVOID )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   523  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   524   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   525   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   526   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   527   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   528  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_2( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   529  #    else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   530  #     if defined( V_COMP_TASKING_TC3XX ) /* COV_CAN_HW_SPECIFIC */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   531  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   532   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   533   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   534   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   535   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   536  V_DEF_FUNC(V_NONE, void __interrupt(kCanISRPrio_2) __vector_table(Can_GetkCanUsedCore()), CODE) CanIsr_2( void ) /* PRQA S 3408 */ /* MD_Can_ExternalScope */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   537  #     else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   538  #      if defined(V_COMP_GHS) && !defined(MISRA_CHECK) /* COV_CAN_COMPILER_SWITCH */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   539  #       pragma ghs interrupt
+; ..\BSW364\Can\Implementation\Can_Irq.c	   540  #      endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   541  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   542   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   543   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   544   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   545   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   546  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_2( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   547  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   548  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   549  #   endif /* C_ENABLE_OSEK_OS */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   550  {
+; ..\BSW364\Can\Implementation\Can_Irq.c	   551  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   552  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   553      /* #10 call interrupt handler */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   554  #   if defined( CAN_USE_PHYSTOLOG_MAPPING )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   555      CanInterrupt(Can_GetPhysToLogChannel(2));    /* call Interrupthandling with identity dependend logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   556  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   557      CanInterrupt(kCanPhysToLogChannelIndex_2);                      /* call Interrupthandling with logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   558  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   559  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   560  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   561  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   562  } /* END OF CanISR */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   563  #  endif /* (kCanPhysToLogChannelIndex_2) */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   564  /* CODE CATEGORY 1 END */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   565  /****************************************************************************
+; ..\BSW364\Can\Implementation\Can_Irq.c	   566  | NAME:             CanIsr_3
+; ..\BSW364\Can\Implementation\Can_Irq.c	   567  ****************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	   568  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   569  #  if defined( kCanPhysToLogChannelIndex_3 ) /* COV_CAN_EQUAL_CHANNEL_LAYOUT */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   570  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   571  #   if defined( C_ENABLE_OSEK_OS ) && defined( C_ENABLE_OSEK_OS_INTCAT2 ) /* COV_CAN_OS_USAGE */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   572  #    if defined (osdIsrCanIsr_3Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   573  #     if (osdIsrCanIsr_3Cat != 2)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   574  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   575  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   576  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   577  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   578   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   579   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   580   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   581   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   582  ISR( CanIsr_3 )    /* PRQA S 3408 */ /* ISR prototypes must be provided by OSEK header file */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   583  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   584  #    if defined( C_ENABLE_OSEK_OS ) && defined (osdIsrCanIsr_3Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   585  #     if (osdIsrCanIsr_3Cat != 1)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   586  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   587  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   588  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   589  #    if defined ( C_ENABLE_ISRVOID )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   590  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   591   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   592   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   593   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   594   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   595  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_3( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   596  #    else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   597  #     if defined( V_COMP_TASKING_TC3XX ) /* COV_CAN_HW_SPECIFIC */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   598  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   599   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   600   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   601   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   602   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   603  V_DEF_FUNC(V_NONE, void __interrupt(kCanISRPrio_3) __vector_table(Can_GetkCanUsedCore()), CODE) CanIsr_3( void ) /* PRQA S 3408 */ /* MD_Can_ExternalScope */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   604  #     else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   605  #      if defined(V_COMP_GHS) && !defined(MISRA_CHECK) /* COV_CAN_COMPILER_SWITCH */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   606  #       pragma ghs interrupt
+; ..\BSW364\Can\Implementation\Can_Irq.c	   607  #      endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   608  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   609   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   610   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   611   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   612   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   613  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_3( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   614  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   615  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   616  #   endif /* C_ENABLE_OSEK_OS */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   617  {
+; ..\BSW364\Can\Implementation\Can_Irq.c	   618  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   619  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   620      /* #10 call interrupt handler */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   621  #   if defined( CAN_USE_PHYSTOLOG_MAPPING )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   622      CanInterrupt(Can_GetPhysToLogChannel(3));    /* call Interrupthandling with identity dependend logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   623  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   624      CanInterrupt(kCanPhysToLogChannelIndex_3);                      /* call Interrupthandling with logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   625  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   626  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   627  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   628  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   629  } /* END OF CanISR */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   630  #  endif /* (kCanPhysToLogChannelIndex_3) */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   631  /* CODE CATEGORY 1 END */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   632  /****************************************************************************
+; ..\BSW364\Can\Implementation\Can_Irq.c	   633  | NAME:             CanIsr_4
+; ..\BSW364\Can\Implementation\Can_Irq.c	   634  ****************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	   635  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   636  #  if defined( kCanPhysToLogChannelIndex_4 ) /* COV_CAN_EQUAL_CHANNEL_LAYOUT */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   637  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   638  #   if defined( C_ENABLE_OSEK_OS ) && defined( C_ENABLE_OSEK_OS_INTCAT2 ) /* COV_CAN_OS_USAGE */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   639  #    if defined (osdIsrCanIsr_4Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   640  #     if (osdIsrCanIsr_4Cat != 2)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   641  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   642  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   643  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   644  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   645   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   646   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   647   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   648   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   649  ISR( CanIsr_4 )    /* PRQA S 3408 */ /* ISR prototypes must be provided by OSEK header file */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   650  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   651  #    if defined( C_ENABLE_OSEK_OS ) && defined (osdIsrCanIsr_4Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   652  #     if (osdIsrCanIsr_4Cat != 1)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   653  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   654  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   655  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   656  #    if defined ( C_ENABLE_ISRVOID )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   657  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   658   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   659   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   660   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   661   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   662  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_4( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   663  #    else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   664  #     if defined( V_COMP_TASKING_TC3XX ) /* COV_CAN_HW_SPECIFIC */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   665  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   666   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   667   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   668   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   669   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   670  V_DEF_FUNC(V_NONE, void __interrupt(kCanISRPrio_4) __vector_table(Can_GetkCanUsedCore()), CODE) CanIsr_4( void ) /* PRQA S 3408 */ /* MD_Can_ExternalScope */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   671  #     else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   672  #      if defined(V_COMP_GHS) && !defined(MISRA_CHECK) /* COV_CAN_COMPILER_SWITCH */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   673  #       pragma ghs interrupt
+; ..\BSW364\Can\Implementation\Can_Irq.c	   674  #      endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   675  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   676   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   677   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   678   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   679   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   680  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_4( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   681  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   682  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   683  #   endif /* C_ENABLE_OSEK_OS */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   684  {
+; ..\BSW364\Can\Implementation\Can_Irq.c	   685  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   686  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   687      /* #10 call interrupt handler */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   688  #   if defined( CAN_USE_PHYSTOLOG_MAPPING )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   689      CanInterrupt(Can_GetPhysToLogChannel(4));    /* call Interrupthandling with identity dependend logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   690  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   691      CanInterrupt(kCanPhysToLogChannelIndex_4);                      /* call Interrupthandling with logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   692  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   693  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   694  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   695  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   696  } /* END OF CanISR */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   697  #  endif /* (kCanPhysToLogChannelIndex_4) */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   698  /* CODE CATEGORY 1 END */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   699  /****************************************************************************
+; ..\BSW364\Can\Implementation\Can_Irq.c	   700  | NAME:             CanIsr_5
+; ..\BSW364\Can\Implementation\Can_Irq.c	   701  ****************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	   702  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   703  #  if defined( kCanPhysToLogChannelIndex_5 ) /* COV_CAN_EQUAL_CHANNEL_LAYOUT */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   704  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   705  #   if defined( C_ENABLE_OSEK_OS ) && defined( C_ENABLE_OSEK_OS_INTCAT2 ) /* COV_CAN_OS_USAGE */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   706  #    if defined (osdIsrCanIsr_5Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   707  #     if (osdIsrCanIsr_5Cat != 2)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   708  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   709  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   710  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   711  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   712   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   713   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   714   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   715   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   716  ISR( CanIsr_5 )    /* PRQA S 3408 */ /* ISR prototypes must be provided by OSEK header file */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   717  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   718  #    if defined( C_ENABLE_OSEK_OS ) && defined (osdIsrCanIsr_5Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   719  #     if (osdIsrCanIsr_5Cat != 1)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   720  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   721  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   722  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   723  #    if defined ( C_ENABLE_ISRVOID )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   724  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   725   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   726   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   727   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   728   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   729  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_5( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   730  #    else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   731  #     if defined( V_COMP_TASKING_TC3XX ) /* COV_CAN_HW_SPECIFIC */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   732  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   733   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   734   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   735   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   736   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   737  V_DEF_FUNC(V_NONE, void __interrupt(kCanISRPrio_5) __vector_table(Can_GetkCanUsedCore()), CODE) CanIsr_5( void ) /* PRQA S 3408 */ /* MD_Can_ExternalScope */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   738  #     else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   739  #      if defined(V_COMP_GHS) && !defined(MISRA_CHECK) /* COV_CAN_COMPILER_SWITCH */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   740  #       pragma ghs interrupt
+; ..\BSW364\Can\Implementation\Can_Irq.c	   741  #      endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   742  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   743   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   744   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   745   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   746   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   747  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_5( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   748  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   749  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   750  #   endif /* C_ENABLE_OSEK_OS */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   751  {
+; ..\BSW364\Can\Implementation\Can_Irq.c	   752  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   753  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   754      /* #10 call interrupt handler */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   755  #   if defined( CAN_USE_PHYSTOLOG_MAPPING )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   756      CanInterrupt(Can_GetPhysToLogChannel(5));    /* call Interrupthandling with identity dependend logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   757  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   758      CanInterrupt(kCanPhysToLogChannelIndex_5);                      /* call Interrupthandling with logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   759  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   760  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   761  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   762  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   763  } /* END OF CanISR */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   764  #  endif /* (kCanPhysToLogChannelIndex_5) */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   765  /* CODE CATEGORY 1 END */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   766  /****************************************************************************
+; ..\BSW364\Can\Implementation\Can_Irq.c	   767  | NAME:             CanIsr_6
+; ..\BSW364\Can\Implementation\Can_Irq.c	   768  ****************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	   769  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   770  #  if defined( kCanPhysToLogChannelIndex_6 ) /* COV_CAN_EQUAL_CHANNEL_LAYOUT */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   771  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   772  #   if defined( C_ENABLE_OSEK_OS ) && defined( C_ENABLE_OSEK_OS_INTCAT2 ) /* COV_CAN_OS_USAGE */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   773  #    if defined (osdIsrCanIsr_6Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   774  #     if (osdIsrCanIsr_6Cat != 2)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   775  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   776  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   777  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   778  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   779   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   780   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   781   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   782   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   783  ISR( CanIsr_6 )    /* PRQA S 3408 */ /* ISR prototypes must be provided by OSEK header file */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   784  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   785  #    if defined( C_ENABLE_OSEK_OS ) && defined (osdIsrCanIsr_6Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   786  #     if (osdIsrCanIsr_6Cat != 1)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   787  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   788  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   789  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   790  #    if defined ( C_ENABLE_ISRVOID )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   791  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   792   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   793   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   794   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   795   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   796  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_6( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   797  #    else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   798  #     if defined( V_COMP_TASKING_TC3XX ) /* COV_CAN_HW_SPECIFIC */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   799  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   800   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   801   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   802   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   803   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   804  V_DEF_FUNC(V_NONE, void __interrupt(kCanISRPrio_6) __vector_table(Can_GetkCanUsedCore()), CODE) CanIsr_6( void ) /* PRQA S 3408 */ /* MD_Can_ExternalScope */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   805  #     else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   806  #      if defined(V_COMP_GHS) && !defined(MISRA_CHECK) /* COV_CAN_COMPILER_SWITCH */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   807  #       pragma ghs interrupt
+; ..\BSW364\Can\Implementation\Can_Irq.c	   808  #      endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   809  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   810   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   811   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   812   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   813   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   814  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_6( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   815  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   816  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   817  #   endif /* C_ENABLE_OSEK_OS */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   818  {
+; ..\BSW364\Can\Implementation\Can_Irq.c	   819  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   820  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   821      /* #10 call interrupt handler */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   822  #   if defined( CAN_USE_PHYSTOLOG_MAPPING )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   823      CanInterrupt(Can_GetPhysToLogChannel(6));    /* call Interrupthandling with identity dependend logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   824  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   825      CanInterrupt(kCanPhysToLogChannelIndex_6);                      /* call Interrupthandling with logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   826  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   827  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   828  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   829  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   830  } /* END OF CanISR */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   831  #  endif /* (kCanPhysToLogChannelIndex_6) */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   832  /* CODE CATEGORY 1 END */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   833  /****************************************************************************
+; ..\BSW364\Can\Implementation\Can_Irq.c	   834  | NAME:             CanIsr_7
+; ..\BSW364\Can\Implementation\Can_Irq.c	   835  ****************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	   836  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   837  #  if defined( kCanPhysToLogChannelIndex_7 ) /* COV_CAN_EQUAL_CHANNEL_LAYOUT */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   838  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   839  #   if defined( C_ENABLE_OSEK_OS ) && defined( C_ENABLE_OSEK_OS_INTCAT2 ) /* COV_CAN_OS_USAGE */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   840  #    if defined (osdIsrCanIsr_7Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   841  #     if (osdIsrCanIsr_7Cat != 2)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   842  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   843  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   844  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   845  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   846   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   847   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   848   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   849   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   850  ISR( CanIsr_7 )    /* PRQA S 3408 */ /* ISR prototypes must be provided by OSEK header file */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   851  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   852  #    if defined( C_ENABLE_OSEK_OS ) && defined (osdIsrCanIsr_7Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   853  #     if (osdIsrCanIsr_7Cat != 1)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   854  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   855  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   856  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   857  #    if defined ( C_ENABLE_ISRVOID )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   858  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   859   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   860   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   861   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   862   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   863  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_7( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   864  #    else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   865  #     if defined( V_COMP_TASKING_TC3XX ) /* COV_CAN_HW_SPECIFIC */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   866  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   867   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   868   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   869   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   870   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   871  V_DEF_FUNC(V_NONE, void __interrupt(kCanISRPrio_7) __vector_table(Can_GetkCanUsedCore()), CODE) CanIsr_7( void ) /* PRQA S 3408 */ /* MD_Can_ExternalScope */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   872  #     else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   873  #      if defined(V_COMP_GHS) && !defined(MISRA_CHECK) /* COV_CAN_COMPILER_SWITCH */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   874  #       pragma ghs interrupt
+; ..\BSW364\Can\Implementation\Can_Irq.c	   875  #      endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   876  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   877   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   878   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   879   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   880   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   881  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_7( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   882  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   883  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   884  #   endif /* C_ENABLE_OSEK_OS */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   885  {
+; ..\BSW364\Can\Implementation\Can_Irq.c	   886  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   887  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   888      /* #10 call interrupt handler */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   889  #   if defined( CAN_USE_PHYSTOLOG_MAPPING )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   890      CanInterrupt(Can_GetPhysToLogChannel(7));    /* call Interrupthandling with identity dependend logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   891  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   892      CanInterrupt(kCanPhysToLogChannelIndex_7);                      /* call Interrupthandling with logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   893  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   894  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   895  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   896  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   897  } /* END OF CanISR */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   898  #  endif /* (kCanPhysToLogChannelIndex_7) */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   899  /* CODE CATEGORY 1 END */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   900  /****************************************************************************
+; ..\BSW364\Can\Implementation\Can_Irq.c	   901  | NAME:             CanIsr_8
+; ..\BSW364\Can\Implementation\Can_Irq.c	   902  ****************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	   903  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   904  #  if defined( kCanPhysToLogChannelIndex_8 ) /* COV_CAN_EQUAL_CHANNEL_LAYOUT */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   905  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   906  #   if defined( C_ENABLE_OSEK_OS ) && defined( C_ENABLE_OSEK_OS_INTCAT2 ) /* COV_CAN_OS_USAGE */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   907  #    if defined (osdIsrCanIsr_8Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   908  #     if (osdIsrCanIsr_8Cat != 2)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   909  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   910  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   911  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   912  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   913   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   914   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   915   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   916   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   917  ISR( CanIsr_8 )    /* PRQA S 3408 */ /* ISR prototypes must be provided by OSEK header file */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   918  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   919  #    if defined( C_ENABLE_OSEK_OS ) && defined (osdIsrCanIsr_8Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   920  #     if (osdIsrCanIsr_8Cat != 1)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   921  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   922  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   923  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   924  #    if defined ( C_ENABLE_ISRVOID )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   925  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   926   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   927   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   928   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   929   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   930  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_8( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   931  #    else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   932  #     if defined( V_COMP_TASKING_TC3XX ) /* COV_CAN_HW_SPECIFIC */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   933  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   934   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   935   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   936   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   937   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   938  V_DEF_FUNC(V_NONE, void __interrupt(kCanISRPrio_8) __vector_table(Can_GetkCanUsedCore()), CODE) CanIsr_8( void ) /* PRQA S 3408 */ /* MD_Can_ExternalScope */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   939  #     else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   940  #      if defined(V_COMP_GHS) && !defined(MISRA_CHECK) /* COV_CAN_COMPILER_SWITCH */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   941  #       pragma ghs interrupt
+; ..\BSW364\Can\Implementation\Can_Irq.c	   942  #      endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   943  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   944   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   945   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   946   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   947   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   948  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_8( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   949  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   950  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   951  #   endif /* C_ENABLE_OSEK_OS */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   952  {
+; ..\BSW364\Can\Implementation\Can_Irq.c	   953  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   954  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   955      /* #10 call interrupt handler */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   956  #   if defined( CAN_USE_PHYSTOLOG_MAPPING )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   957      CanInterrupt(Can_GetPhysToLogChannel(8));    /* call Interrupthandling with identity dependend logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   958  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   959      CanInterrupt(kCanPhysToLogChannelIndex_8);                      /* call Interrupthandling with logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   960  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   961  
+; ..\BSW364\Can\Implementation\Can_Irq.c	   962  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   963  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   964  } /* END OF CanISR */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   965  #  endif /* (kCanPhysToLogChannelIndex_8) */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   966  /* CODE CATEGORY 1 END */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   967  /****************************************************************************
+; ..\BSW364\Can\Implementation\Can_Irq.c	   968  | NAME:             CanIsr_9
+; ..\BSW364\Can\Implementation\Can_Irq.c	   969  ****************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	   970  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   971  #  if defined( kCanPhysToLogChannelIndex_9 ) /* COV_CAN_EQUAL_CHANNEL_LAYOUT */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   972  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   973  #   if defined( C_ENABLE_OSEK_OS ) && defined( C_ENABLE_OSEK_OS_INTCAT2 ) /* COV_CAN_OS_USAGE */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   974  #    if defined (osdIsrCanIsr_9Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   975  #     if (osdIsrCanIsr_9Cat != 2)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   976  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   977  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   978  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   979  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   980   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   981   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   982   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   983   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   984  ISR( CanIsr_9 )    /* PRQA S 3408 */ /* ISR prototypes must be provided by OSEK header file */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   985  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   986  #    if defined( C_ENABLE_OSEK_OS ) && defined (osdIsrCanIsr_9Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   987  #     if (osdIsrCanIsr_9Cat != 1)
+; ..\BSW364\Can\Implementation\Can_Irq.c	   988  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	   989  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   990  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	   991  #    if defined ( C_ENABLE_ISRVOID )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   992  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	   993   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	   994   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   995   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	   996   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	   997  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_9( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	   998  #    else
+; ..\BSW364\Can\Implementation\Can_Irq.c	   999  #     if defined( V_COMP_TASKING_TC3XX ) /* COV_CAN_HW_SPECIFIC */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1000  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1001   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1002   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1003   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1004   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1005  V_DEF_FUNC(V_NONE, void __interrupt(kCanISRPrio_9) __vector_table(Can_GetkCanUsedCore()), CODE) CanIsr_9( void ) /* PRQA S 3408 */ /* MD_Can_ExternalScope */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1006  #     else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1007  #      if defined(V_COMP_GHS) && !defined(MISRA_CHECK) /* COV_CAN_COMPILER_SWITCH */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1008  #       pragma ghs interrupt
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1009  #      endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1010  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1011   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1012   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1013   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1014   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1015  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_9( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1016  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1017  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1018  #   endif /* C_ENABLE_OSEK_OS */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1019  {
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1020  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1021  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1022      /* #10 call interrupt handler */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1023  #   if defined( CAN_USE_PHYSTOLOG_MAPPING )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1024      CanInterrupt(Can_GetPhysToLogChannel(9));    /* call Interrupthandling with identity dependend logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1025  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1026      CanInterrupt(kCanPhysToLogChannelIndex_9);                      /* call Interrupthandling with logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1027  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1028  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1029  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1030  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1031  } /* END OF CanISR */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1032  #  endif /* (kCanPhysToLogChannelIndex_9) */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1033  /* CODE CATEGORY 1 END */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1034  /****************************************************************************
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1035  | NAME:             CanIsr_10
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1036  ****************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1037  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1038  #  if defined( kCanPhysToLogChannelIndex_10 ) /* COV_CAN_EQUAL_CHANNEL_LAYOUT */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1039  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1040  #   if defined( C_ENABLE_OSEK_OS ) && defined( C_ENABLE_OSEK_OS_INTCAT2 ) /* COV_CAN_OS_USAGE */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1041  #    if defined (osdIsrCanIsr_10Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1042  #     if (osdIsrCanIsr_10Cat != 2)
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1043  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1044  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1045  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1046  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1047   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1048   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1049   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1050   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1051  ISR( CanIsr_10 )    /* PRQA S 3408 */ /* ISR prototypes must be provided by OSEK header file */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1052  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1053  #    if defined( C_ENABLE_OSEK_OS ) && defined (osdIsrCanIsr_10Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1054  #     if (osdIsrCanIsr_10Cat != 1)
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1055  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1056  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1057  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1058  #    if defined ( C_ENABLE_ISRVOID )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1059  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1060   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1061   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1062   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1063   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1064  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_10( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1065  #    else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1066  #     if defined( V_COMP_TASKING_TC3XX ) /* COV_CAN_HW_SPECIFIC */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1067  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1068   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1069   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1070   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1071   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1072  V_DEF_FUNC(V_NONE, void __interrupt(kCanISRPrio_10) __vector_table(Can_GetkCanUsedCore()), CODE) CanIsr_10( void ) /* PRQA S 3408 */ /* MD_Can_ExternalScope */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1073  #     else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1074  #      if defined(V_COMP_GHS) && !defined(MISRA_CHECK) /* COV_CAN_COMPILER_SWITCH */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1075  #       pragma ghs interrupt
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1076  #      endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1077  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1078   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1079   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1080   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1081   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1082  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_10( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1083  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1084  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1085  #   endif /* C_ENABLE_OSEK_OS */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1086  {
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1087  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1088  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1089      /* #10 call interrupt handler */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1090  #   if defined( CAN_USE_PHYSTOLOG_MAPPING )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1091      CanInterrupt(Can_GetPhysToLogChannel(10));    /* call Interrupthandling with identity dependend logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1092  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1093      CanInterrupt(kCanPhysToLogChannelIndex_10);                      /* call Interrupthandling with logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1094  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1095  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1096  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1097  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1098  } /* END OF CanISR */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1099  #  endif /* (kCanPhysToLogChannelIndex_10) */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1100  /* CODE CATEGORY 1 END */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1101  /****************************************************************************
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1102  | NAME:             CanIsr_11
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1103  ****************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1104  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1105  #  if defined( kCanPhysToLogChannelIndex_11 ) /* COV_CAN_EQUAL_CHANNEL_LAYOUT */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1106  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1107  #   if defined( C_ENABLE_OSEK_OS ) && defined( C_ENABLE_OSEK_OS_INTCAT2 ) /* COV_CAN_OS_USAGE */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1108  #    if defined (osdIsrCanIsr_11Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1109  #     if (osdIsrCanIsr_11Cat != 2)
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1110  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1111  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1112  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1113  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1114   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1115   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1116   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1117   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1118  ISR( CanIsr_11 )    /* PRQA S 3408 */ /* ISR prototypes must be provided by OSEK header file */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1119  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1120  #    if defined( C_ENABLE_OSEK_OS ) && defined (osdIsrCanIsr_11Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1121  #     if (osdIsrCanIsr_11Cat != 1)
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1122  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1123  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1124  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1125  #    if defined ( C_ENABLE_ISRVOID )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1126  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1127   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1128   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1129   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1130   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1131  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_11( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1132  #    else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1133  #     if defined( V_COMP_TASKING_TC3XX ) /* COV_CAN_HW_SPECIFIC */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1134  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1135   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1136   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1137   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1138   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1139  V_DEF_FUNC(V_NONE, void __interrupt(kCanISRPrio_11) __vector_table(Can_GetkCanUsedCore()), CODE) CanIsr_11( void ) /* PRQA S 3408 */ /* MD_Can_ExternalScope */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1140  #     else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1141  #      if defined(V_COMP_GHS) && !defined(MISRA_CHECK) /* COV_CAN_COMPILER_SWITCH */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1142  #       pragma ghs interrupt
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1143  #      endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1144  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1145   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1146   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1147   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1148   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1149  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_11( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1150  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1151  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1152  #   endif /* C_ENABLE_OSEK_OS */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1153  {
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1154  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1155  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1156      /* #10 call interrupt handler */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1157  #   if defined( CAN_USE_PHYSTOLOG_MAPPING )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1158      CanInterrupt(Can_GetPhysToLogChannel(11));    /* call Interrupthandling with identity dependend logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1159  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1160      CanInterrupt(kCanPhysToLogChannelIndex_11);                      /* call Interrupthandling with logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1161  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1162  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1163  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1164  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1165  } /* END OF CanISR */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1166  #  endif /* (kCanPhysToLogChannelIndex_11) */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1167  /* CODE CATEGORY 1 END */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1168  /****************************************************************************
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1169  | NAME:             CanIsr_12
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1170  ****************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1171  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1172  #  if defined( kCanPhysToLogChannelIndex_12 ) /* COV_CAN_EQUAL_CHANNEL_LAYOUT */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1173  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1174  #   if defined( C_ENABLE_OSEK_OS ) && defined( C_ENABLE_OSEK_OS_INTCAT2 ) /* COV_CAN_OS_USAGE */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1175  #    if defined (osdIsrCanIsr_12Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1176  #     if (osdIsrCanIsr_12Cat != 2)
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1177  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1178  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1179  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1180  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1181   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1182   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1183   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1184   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1185  ISR( CanIsr_12 )    /* PRQA S 3408 */ /* ISR prototypes must be provided by OSEK header file */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1186  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1187  #    if defined( C_ENABLE_OSEK_OS ) && defined (osdIsrCanIsr_12Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1188  #     if (osdIsrCanIsr_12Cat != 1)
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1189  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1190  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1191  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1192  #    if defined ( C_ENABLE_ISRVOID )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1193  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1194   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1195   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1196   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1197   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1198  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_12( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1199  #    else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1200  #     if defined( V_COMP_TASKING_TC3XX ) /* COV_CAN_HW_SPECIFIC */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1201  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1202   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1203   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1204   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1205   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1206  V_DEF_FUNC(V_NONE, void __interrupt(kCanISRPrio_12) __vector_table(Can_GetkCanUsedCore()), CODE) CanIsr_12( void ) /* PRQA S 3408 */ /* MD_Can_ExternalScope */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1207  #     else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1208  #      if defined(V_COMP_GHS) && !defined(MISRA_CHECK) /* COV_CAN_COMPILER_SWITCH */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1209  #       pragma ghs interrupt
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1210  #      endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1211  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1212   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1213   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1214   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1215   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1216  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_12( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1217  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1218  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1219  #   endif /* C_ENABLE_OSEK_OS */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1220  {
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1221  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1222  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1223      /* #10 call interrupt handler */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1224  #   if defined( CAN_USE_PHYSTOLOG_MAPPING )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1225      CanInterrupt(Can_GetPhysToLogChannel(12));    /* call Interrupthandling with identity dependend logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1226  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1227      CanInterrupt(kCanPhysToLogChannelIndex_12);                      /* call Interrupthandling with logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1228  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1229  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1230  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1231  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1232  } /* END OF CanISR */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1233  #  endif /* (kCanPhysToLogChannelIndex_12) */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1234  /* CODE CATEGORY 1 END */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1235  /****************************************************************************
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1236  | NAME:             CanIsr_13
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1237  ****************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1238  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1239  #  if defined( kCanPhysToLogChannelIndex_13 ) /* COV_CAN_EQUAL_CHANNEL_LAYOUT */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1240  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1241  #   if defined( C_ENABLE_OSEK_OS ) && defined( C_ENABLE_OSEK_OS_INTCAT2 ) /* COV_CAN_OS_USAGE */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1242  #    if defined (osdIsrCanIsr_13Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1243  #     if (osdIsrCanIsr_13Cat != 2)
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1244  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1245  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1246  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1247  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1248   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1249   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1250   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1251   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1252  ISR( CanIsr_13 )    /* PRQA S 3408 */ /* ISR prototypes must be provided by OSEK header file */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1253  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1254  #    if defined( C_ENABLE_OSEK_OS ) && defined (osdIsrCanIsr_13Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1255  #     if (osdIsrCanIsr_13Cat != 1)
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1256  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1257  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1258  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1259  #    if defined ( C_ENABLE_ISRVOID )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1260  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1261   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1262   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1263   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1264   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1265  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_13( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1266  #    else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1267  #     if defined( V_COMP_TASKING_TC3XX ) /* COV_CAN_HW_SPECIFIC */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1268  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1269   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1270   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1271   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1272   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1273  V_DEF_FUNC(V_NONE, void __interrupt(kCanISRPrio_13) __vector_table(Can_GetkCanUsedCore()), CODE) CanIsr_13( void ) /* PRQA S 3408 */ /* MD_Can_ExternalScope */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1274  #     else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1275  #      if defined(V_COMP_GHS) && !defined(MISRA_CHECK) /* COV_CAN_COMPILER_SWITCH */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1276  #       pragma ghs interrupt
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1277  #      endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1278  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1279   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1280   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1281   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1282   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1283  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_13( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1284  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1285  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1286  #   endif /* C_ENABLE_OSEK_OS */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1287  {
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1288  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1289  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1290      /* #10 call interrupt handler */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1291  #   if defined( CAN_USE_PHYSTOLOG_MAPPING )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1292      CanInterrupt(Can_GetPhysToLogChannel(13));    /* call Interrupthandling with identity dependend logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1293  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1294      CanInterrupt(kCanPhysToLogChannelIndex_13);                      /* call Interrupthandling with logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1295  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1296  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1297  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1298  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1299  } /* END OF CanISR */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1300  #  endif /* (kCanPhysToLogChannelIndex_13) */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1301  /* CODE CATEGORY 1 END */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1302  /****************************************************************************
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1303  | NAME:             CanIsr_14
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1304  ****************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1305  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1306  #  if defined( kCanPhysToLogChannelIndex_14 ) /* COV_CAN_EQUAL_CHANNEL_LAYOUT */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1307  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1308  #   if defined( C_ENABLE_OSEK_OS ) && defined( C_ENABLE_OSEK_OS_INTCAT2 ) /* COV_CAN_OS_USAGE */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1309  #    if defined (osdIsrCanIsr_14Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1310  #     if (osdIsrCanIsr_14Cat != 2)
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1311  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1312  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1313  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1314  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1315   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1316   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1317   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1318   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1319  ISR( CanIsr_14 )    /* PRQA S 3408 */ /* ISR prototypes must be provided by OSEK header file */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1320  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1321  #    if defined( C_ENABLE_OSEK_OS ) && defined (osdIsrCanIsr_14Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1322  #     if (osdIsrCanIsr_14Cat != 1)
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1323  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1324  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1325  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1326  #    if defined ( C_ENABLE_ISRVOID )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1327  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1328   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1329   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1330   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1331   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1332  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_14( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1333  #    else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1334  #     if defined( V_COMP_TASKING_TC3XX ) /* COV_CAN_HW_SPECIFIC */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1335  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1336   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1337   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1338   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1339   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1340  V_DEF_FUNC(V_NONE, void __interrupt(kCanISRPrio_14) __vector_table(Can_GetkCanUsedCore()), CODE) CanIsr_14( void ) /* PRQA S 3408 */ /* MD_Can_ExternalScope */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1341  #     else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1342  #      if defined(V_COMP_GHS) && !defined(MISRA_CHECK) /* COV_CAN_COMPILER_SWITCH */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1343  #       pragma ghs interrupt
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1344  #      endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1345  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1346   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1347   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1348   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1349   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1350  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_14( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1351  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1352  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1353  #   endif /* C_ENABLE_OSEK_OS */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1354  {
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1355  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1356  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1357      /* #10 call interrupt handler */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1358  #   if defined( CAN_USE_PHYSTOLOG_MAPPING )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1359      CanInterrupt(Can_GetPhysToLogChannel(14));    /* call Interrupthandling with identity dependend logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1360  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1361      CanInterrupt(kCanPhysToLogChannelIndex_14);                      /* call Interrupthandling with logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1362  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1363  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1364  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1365  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1366  } /* END OF CanISR */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1367  #  endif /* (kCanPhysToLogChannelIndex_14) */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1368  /* CODE CATEGORY 1 END */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1369  /****************************************************************************
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1370  | NAME:             CanIsr_15
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1371  ****************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1372  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1373  #  if defined( kCanPhysToLogChannelIndex_15 ) /* COV_CAN_EQUAL_CHANNEL_LAYOUT */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1374  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1375  #   if defined( C_ENABLE_OSEK_OS ) && defined( C_ENABLE_OSEK_OS_INTCAT2 ) /* COV_CAN_OS_USAGE */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1376  #    if defined (osdIsrCanIsr_15Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1377  #     if (osdIsrCanIsr_15Cat != 2)
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1378  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1379  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1380  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1381  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1382   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1383   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1384   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1385   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1386  ISR( CanIsr_15 )    /* PRQA S 3408 */ /* ISR prototypes must be provided by OSEK header file */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1387  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1388  #    if defined( C_ENABLE_OSEK_OS ) && defined (osdIsrCanIsr_15Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1389  #     if (osdIsrCanIsr_15Cat != 1)
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1390  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1391  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1392  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1393  #    if defined ( C_ENABLE_ISRVOID )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1394  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1395   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1396   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1397   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1398   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1399  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_15( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1400  #    else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1401  #     if defined( V_COMP_TASKING_TC3XX ) /* COV_CAN_HW_SPECIFIC */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1402  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1403   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1404   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1405   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1406   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1407  V_DEF_FUNC(V_NONE, void __interrupt(kCanISRPrio_15) __vector_table(Can_GetkCanUsedCore()), CODE) CanIsr_15( void ) /* PRQA S 3408 */ /* MD_Can_ExternalScope */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1408  #     else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1409  #      if defined(V_COMP_GHS) && !defined(MISRA_CHECK) /* COV_CAN_COMPILER_SWITCH */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1410  #       pragma ghs interrupt
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1411  #      endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1412  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1413   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1414   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1415   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1416   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1417  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_15( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1418  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1419  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1420  #   endif /* C_ENABLE_OSEK_OS */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1421  {
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1422  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1423  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1424      /* #10 call interrupt handler */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1425  #   if defined( CAN_USE_PHYSTOLOG_MAPPING )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1426      CanInterrupt(Can_GetPhysToLogChannel(15));    /* call Interrupthandling with identity dependend logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1427  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1428      CanInterrupt(kCanPhysToLogChannelIndex_15);                      /* call Interrupthandling with logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1429  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1430  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1431  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1432  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1433  } /* END OF CanISR */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1434  #  endif /* (kCanPhysToLogChannelIndex_15) */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1435  /* CODE CATEGORY 1 END */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1436  /****************************************************************************
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1437  | NAME:             CanIsr_16
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1438  ****************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1439  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1440  #  if defined( kCanPhysToLogChannelIndex_16 ) /* COV_CAN_EQUAL_CHANNEL_LAYOUT */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1441  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1442  #   if defined( C_ENABLE_OSEK_OS ) && defined( C_ENABLE_OSEK_OS_INTCAT2 ) /* COV_CAN_OS_USAGE */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1443  #    if defined (osdIsrCanIsr_16Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1444  #     if (osdIsrCanIsr_16Cat != 2)
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1445  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1446  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1447  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1448  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1449   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1450   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1451   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1452   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1453  ISR( CanIsr_16 )    /* PRQA S 3408 */ /* ISR prototypes must be provided by OSEK header file */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1454  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1455  #    if defined( C_ENABLE_OSEK_OS ) && defined (osdIsrCanIsr_16Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1456  #     if (osdIsrCanIsr_16Cat != 1)
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1457  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1458  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1459  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1460  #    if defined ( C_ENABLE_ISRVOID )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1461  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1462   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1463   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1464   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1465   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1466  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_16( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1467  #    else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1468  #     if defined( V_COMP_TASKING_TC3XX ) /* COV_CAN_HW_SPECIFIC */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1469  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1470   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1471   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1472   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1473   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1474  V_DEF_FUNC(V_NONE, void __interrupt(kCanISRPrio_16) __vector_table(Can_GetkCanUsedCore()), CODE) CanIsr_16( void ) /* PRQA S 3408 */ /* MD_Can_ExternalScope */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1475  #     else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1476  #      if defined(V_COMP_GHS) && !defined(MISRA_CHECK) /* COV_CAN_COMPILER_SWITCH */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1477  #       pragma ghs interrupt
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1478  #      endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1479  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1480   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1481   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1482   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1483   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1484  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_16( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1485  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1486  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1487  #   endif /* C_ENABLE_OSEK_OS */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1488  {
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1489  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1490  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1491      /* #10 call interrupt handler */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1492  #   if defined( CAN_USE_PHYSTOLOG_MAPPING )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1493      CanInterrupt(Can_GetPhysToLogChannel(16));    /* call Interrupthandling with identity dependend logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1494  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1495      CanInterrupt(kCanPhysToLogChannelIndex_16);                      /* call Interrupthandling with logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1496  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1497  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1498  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1499  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1500  } /* END OF CanISR */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1501  #  endif /* (kCanPhysToLogChannelIndex_16) */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1502  /* CODE CATEGORY 1 END */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1503  /****************************************************************************
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1504  | NAME:             CanIsr_17
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1505  ****************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1506  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1507  #  if defined( kCanPhysToLogChannelIndex_17 ) /* COV_CAN_EQUAL_CHANNEL_LAYOUT */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1508  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1509  #   if defined( C_ENABLE_OSEK_OS ) && defined( C_ENABLE_OSEK_OS_INTCAT2 ) /* COV_CAN_OS_USAGE */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1510  #    if defined (osdIsrCanIsr_17Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1511  #     if (osdIsrCanIsr_17Cat != 2)
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1512  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1513  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1514  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1515  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1516   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1517   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1518   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1519   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1520  ISR( CanIsr_17 )    /* PRQA S 3408 */ /* ISR prototypes must be provided by OSEK header file */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1521  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1522  #    if defined( C_ENABLE_OSEK_OS ) && defined (osdIsrCanIsr_17Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1523  #     if (osdIsrCanIsr_17Cat != 1)
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1524  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1525  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1526  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1527  #    if defined ( C_ENABLE_ISRVOID )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1528  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1529   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1530   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1531   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1532   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1533  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_17( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1534  #    else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1535  #     if defined( V_COMP_TASKING_TC3XX ) /* COV_CAN_HW_SPECIFIC */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1536  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1537   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1538   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1539   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1540   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1541  V_DEF_FUNC(V_NONE, void __interrupt(kCanISRPrio_17) __vector_table(Can_GetkCanUsedCore()), CODE) CanIsr_17( void ) /* PRQA S 3408 */ /* MD_Can_ExternalScope */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1542  #     else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1543  #      if defined(V_COMP_GHS) && !defined(MISRA_CHECK) /* COV_CAN_COMPILER_SWITCH */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1544  #       pragma ghs interrupt
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1545  #      endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1546  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1547   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1548   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1549   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1550   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1551  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_17( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1552  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1553  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1554  #   endif /* C_ENABLE_OSEK_OS */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1555  {
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1556  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1557  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1558      /* #10 call interrupt handler */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1559  #   if defined( CAN_USE_PHYSTOLOG_MAPPING )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1560      CanInterrupt(Can_GetPhysToLogChannel(17));    /* call Interrupthandling with identity dependend logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1561  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1562      CanInterrupt(kCanPhysToLogChannelIndex_17);                      /* call Interrupthandling with logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1563  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1564  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1565  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1566  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1567  } /* END OF CanISR */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1568  #  endif /* (kCanPhysToLogChannelIndex_17) */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1569  /* CODE CATEGORY 1 END */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1570  /****************************************************************************
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1571  | NAME:             CanIsr_18
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1572  ****************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1573  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1574  #  if defined( kCanPhysToLogChannelIndex_18 ) /* COV_CAN_EQUAL_CHANNEL_LAYOUT */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1575  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1576  #   if defined( C_ENABLE_OSEK_OS ) && defined( C_ENABLE_OSEK_OS_INTCAT2 ) /* COV_CAN_OS_USAGE */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1577  #    if defined (osdIsrCanIsr_18Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1578  #     if (osdIsrCanIsr_18Cat != 2)
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1579  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1580  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1581  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1582  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1583   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1584   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1585   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1586   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1587  ISR( CanIsr_18 )    /* PRQA S 3408 */ /* ISR prototypes must be provided by OSEK header file */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1588  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1589  #    if defined( C_ENABLE_OSEK_OS ) && defined (osdIsrCanIsr_18Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1590  #     if (osdIsrCanIsr_18Cat != 1)
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1591  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1592  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1593  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1594  #    if defined ( C_ENABLE_ISRVOID )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1595  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1596   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1597   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1598   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1599   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1600  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_18( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1601  #    else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1602  #     if defined( V_COMP_TASKING_TC3XX ) /* COV_CAN_HW_SPECIFIC */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1603  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1604   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1605   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1606   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1607   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1608  V_DEF_FUNC(V_NONE, void __interrupt(kCanISRPrio_18) __vector_table(Can_GetkCanUsedCore()), CODE) CanIsr_18( void ) /* PRQA S 3408 */ /* MD_Can_ExternalScope */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1609  #     else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1610  #      if defined(V_COMP_GHS) && !defined(MISRA_CHECK) /* COV_CAN_COMPILER_SWITCH */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1611  #       pragma ghs interrupt
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1612  #      endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1613  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1614   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1615   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1616   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1617   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1618  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_18( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1619  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1620  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1621  #   endif /* C_ENABLE_OSEK_OS */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1622  {
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1623  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1624  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1625      /* #10 call interrupt handler */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1626  #   if defined( CAN_USE_PHYSTOLOG_MAPPING )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1627      CanInterrupt(Can_GetPhysToLogChannel(18));    /* call Interrupthandling with identity dependend logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1628  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1629      CanInterrupt(kCanPhysToLogChannelIndex_18);                      /* call Interrupthandling with logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1630  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1631  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1632  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1633  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1634  } /* END OF CanISR */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1635  #  endif /* (kCanPhysToLogChannelIndex_18) */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1636  /* CODE CATEGORY 1 END */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1637  /****************************************************************************
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1638  | NAME:             CanIsr_19
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1639  ****************************************************************************/
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1640  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1641  #  if defined( kCanPhysToLogChannelIndex_19 ) /* COV_CAN_EQUAL_CHANNEL_LAYOUT */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1642  /* CODE CATEGORY 1 START */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1643  #   if defined( C_ENABLE_OSEK_OS ) && defined( C_ENABLE_OSEK_OS_INTCAT2 ) /* COV_CAN_OS_USAGE */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1644  #    if defined (osdIsrCanIsr_19Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1645  #     if (osdIsrCanIsr_19Cat != 2)
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1646  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1647  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1648  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1649  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1650   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1651   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1652   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1653   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1654  ISR( CanIsr_19 )    /* PRQA S 3408 */ /* ISR prototypes must be provided by OSEK header file */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1655  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1656  #    if defined( C_ENABLE_OSEK_OS ) && defined (osdIsrCanIsr_19Cat) /* COV_CAN_OSCAT_CONFIG_CHECK */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1657  #     if (osdIsrCanIsr_19Cat != 1)
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1658  #      error "inconsistent configuration of Osek-OS interrupt category between GENy and OIL-configurator (CanIsr)"
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1659  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1660  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1661  #    if defined ( C_ENABLE_ISRVOID )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1662  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1663   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1664   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1665   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1666   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1667  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_19( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1668  #    else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1669  #     if defined( V_COMP_TASKING_TC3XX ) /* COV_CAN_HW_SPECIFIC */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1670  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1671   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1672   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1673   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1674   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1675  V_DEF_FUNC(V_NONE, void __interrupt(kCanISRPrio_19) __vector_table(Can_GetkCanUsedCore()), CODE) CanIsr_19( void ) /* PRQA S 3408 */ /* MD_Can_ExternalScope */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1676  #     else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1677  #      if defined(V_COMP_GHS) && !defined(MISRA_CHECK) /* COV_CAN_COMPILER_SWITCH */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1678  #       pragma ghs interrupt
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1679  #      endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1680  /*!
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1681   * Internal comment removed.
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1682   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1683   *
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1684   */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1685  V_DEF_FUNC(V_NONE, void, CODE) CanIsr_19( void )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1686  #     endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1687  #    endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1688  #   endif /* C_ENABLE_OSEK_OS */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1689  {
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1690  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1691  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1692      /* #10 call interrupt handler */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1693  #   if defined( CAN_USE_PHYSTOLOG_MAPPING )
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1694      CanInterrupt(Can_GetPhysToLogChannel(19));    /* call Interrupthandling with identity dependend logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1695  #   else
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1696      CanInterrupt(kCanPhysToLogChannelIndex_19);                      /* call Interrupthandling with logical channel */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1697  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1698  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1699  #   if !defined(MISRA_CHECK)  /* COV_CAN_MISRA */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1700  #   endif
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1701  } /* END OF CanISR */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1702  #  endif /* (kCanPhysToLogChannelIndex_19) */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1703  /* CODE CATEGORY 1 END */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1704  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1705  #endif  /* Not a pure polling configuration */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1706  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1707  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1708  #define CAN_STOP_SEC_CODE  /*------------------------------------------*/
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1709  #include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1710  /* Kernbauer Version: 1.16 Konfiguration: DrvCan_TricoreMcanAsr Erzeugungsgangnummer: 766 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1711  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1712  /* Kernbauer Version: 1.16 Konfiguration: DrvCan_TricoreMcanAsr Erzeugungsgangnummer: 766 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1713  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1714  /* Kernbauer Version: 1.16 Konfiguration: DrvCan_TricoreMcanAsr Erzeugungsgangnummer: 766 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1715  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1716  /* Kernbauer Version: 1.16 Konfiguration: DrvCan_TricoreMcanAsr Erzeugungsgangnummer: 766 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1717  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1718  /* Kernbauer Version: 1.16 Konfiguration: DrvCan_TricoreMcanAsr Erzeugungsgangnummer: 766 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1719  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1720  /* Kernbauer Version: 1.16 Konfiguration: DrvCan_TricoreMcanAsr Erzeugungsgangnummer: 766 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1721  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1722  /* Kernbauer Version: 1.16 Konfiguration: DrvCan_TricoreMcanAsr Erzeugungsgangnummer: 766 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1723  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1724  /* Kernbauer Version: 1.16 Konfiguration: DrvCan_TricoreMcanAsr Erzeugungsgangnummer: 766 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1725  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1726  /* Kernbauer Version: 1.16 Konfiguration: DrvCan_TricoreMcanAsr Erzeugungsgangnummer: 766 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1727  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1728  /* Kernbauer Version: 1.16 Konfiguration: DrvCan_TricoreMcanAsr Erzeugungsgangnummer: 766 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1729  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1730  /* Kernbauer Version: 1.16 Konfiguration: DrvCan_TricoreMcanAsr Erzeugungsgangnummer: 766 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1731  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1732  /* Kernbauer Version: 1.16 Konfiguration: DrvCan_TricoreMcanAsr Erzeugungsgangnummer: 766 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1733  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1734  /* Kernbauer Version: 1.16 Konfiguration: DrvCan_TricoreMcanAsr Erzeugungsgangnummer: 766 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1735  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1736  /* Kernbauer Version: 1.16 Konfiguration: DrvCan_TricoreMcanAsr Erzeugungsgangnummer: 766 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1737  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1738  /* Kernbauer Version: 1.16 Konfiguration: DrvCan_TricoreMcanAsr Erzeugungsgangnummer: 766 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1739  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1740  /* Kernbauer Version: 1.16 Konfiguration: DrvCan_TricoreMcanAsr Erzeugungsgangnummer: 766 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1741  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1742  /* Kernbauer Version: 1.16 Konfiguration: DrvCan_TricoreMcanAsr Erzeugungsgangnummer: 766 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1743  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1744  /* Kernbauer Version: 1.16 Konfiguration: DrvCan_TricoreMcanAsr Erzeugungsgangnummer: 766 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1745  
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1746  /* Kernbauer Version: 1.16 Konfiguration: DrvCan_TricoreMcanAsr Erzeugungsgangnummer: 766 */
+; ..\BSW364\Can\Implementation\Can_Irq.c	  1747  
+
+	; Module end

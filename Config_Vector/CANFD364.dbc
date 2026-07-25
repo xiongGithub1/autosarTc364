@@ -57,7 +57,58 @@ BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ sig_NM_RearECU_UserData_5 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 1297 msg_MyECU_Lamp: 32 MyECU
- SG_ sig_LampCnt : 7|8@0+ (1,0) [0|255] ""  RearECU
+ SG_ MotorFoc_Page M : 0|8@1+ (1,0) [0|255] "" Tester
+ SG_ MotorFoc_Sequence : 32|16@1+ (1,0) [0|65535] "" Tester
+ SG_ MotorFoc_MotorMode m160 : 8|8@1+ (1,0) [0|255] "" Tester
+ SG_ MotorFoc_Fault m160 : 16|8@1+ (1,0) [0|1] "" Tester
+ SG_ MotorFoc_FaultReason m160 : 24|8@1+ (1,0) [0|255] "" Tester
+ SG_ MotorFoc_IdRef_A m160 : 48|16@1- (0.01,0) [-327.68|327.67] "A" Tester
+ SG_ MotorFoc_IqRef_A m160 : 64|16@1- (0.01,0) [-327.68|327.67] "A" Tester
+ SG_ MotorFoc_Id_A m160 : 80|16@1- (0.01,0) [-327.68|327.67] "A" Tester
+ SG_ MotorFoc_Iq_A m160 : 96|16@1- (0.01,0) [-327.68|327.67] "A" Tester
+ SG_ MotorFoc_Iu_A m160 : 112|16@1- (0.01,0) [-327.68|327.67] "A" Tester
+ SG_ MotorFoc_Iv_A m160 : 128|16@1- (0.01,0) [-327.68|327.67] "A" Tester
+ SG_ MotorFoc_Iw_A m160 : 144|16@1- (0.01,0) [-327.68|327.67] "A" Tester
+ SG_ MotorFoc_Vdc_V m160 : 160|16@1- (0.1,0) [-3276.8|3276.7] "V" Tester
+ SG_ MotorFoc_AngleRaw m160 : 176|16@1+ (1,0) [0|65535] "count" Tester
+ SG_ MotorFoc_ElectricalAngle_rad m160 : 192|16@1- (0.001,0) [-32.768|32.767] "rad" Tester
+ SG_ MotorFoc_CurrentOffsetReady m160 : 208|8@1+ (1,0) [0|1] "" Tester
+ SG_ MotorFoc_CurrentOffsetSampleCount m160 : 216|8@1+ (1,0) [0|255] "sample" Tester
+ SG_ MotorFoc_MechanicalSpeed_rpm m160 : 224|16@1- (1,0) [-32768|32767] "rpm" Tester
+ SG_ MotorFoc_GateDriverState m160 : 240|8@1+ (1,0) [0|255] "" Tester
+ SG_ MotorFoc_GateDriverOutputEnabled m160 : 248|8@1+ (1,0) [0|1] "" Tester
+ SG_ MotorFoc_MotorModePwm m161 : 8|8@1+ (1,0) [0|255] "" Tester
+ SG_ MotorFoc_FaultPwm m161 : 16|8@1+ (1,0) [0|1] "" Tester
+ SG_ MotorFoc_FaultReasonPwm m161 : 24|8@1+ (1,0) [0|255] "" Tester
+ SG_ MotorFoc_VdRef_V m161 : 48|16@1- (0.001,0) [-32.768|32.767] "V" Tester
+ SG_ MotorFoc_VqRef_V m161 : 64|16@1- (0.001,0) [-32.768|32.767] "V" Tester
+ SG_ MotorFoc_ValphaRef_V m161 : 80|16@1- (0.001,0) [-32.768|32.767] "V" Tester
+ SG_ MotorFoc_VbetaRef_V m161 : 96|16@1- (0.001,0) [-32.768|32.767] "V" Tester
+ SG_ MotorFoc_PwmU m161 : 112|16@1+ (1,0) [0|65535] "tick" Tester
+ SG_ MotorFoc_PwmV m161 : 128|16@1+ (1,0) [0|65535] "tick" Tester
+ SG_ MotorFoc_PwmW m161 : 144|16@1+ (1,0) [0|65535] "tick" Tester
+ SG_ MotorFoc_PwmPeriod m161 : 160|16@1+ (1,0) [0|65535] "tick" Tester
+ SG_ MotorFoc_VdcMax_V m161 : 176|16@1- (0.1,0) [-3276.8|3276.7] "V" Tester
+ SG_ MotorFoc_FaultIu_A m161 : 192|16@1- (0.01,0) [-327.68|327.67] "A" Tester
+ SG_ MotorFoc_FaultIv_A m161 : 208|16@1- (0.01,0) [-327.68|327.67] "A" Tester
+ SG_ MotorFoc_FaultIw_A m161 : 224|16@1- (0.01,0) [-327.68|327.67] "A" Tester
+ SG_ MotorFoc_FaultVdc_V m161 : 240|16@1- (0.1,0) [-3276.8|3276.7] "V" Tester
+ SG_ MotorFoc_AdcFilterEnabled m162 : 8|8@1+ (1,0) [0|1] "" Tester
+ SG_ MotorFoc_AdcFilterReady m162 : 16|8@1+ (1,0) [0|1] "" Tester
+ SG_ MotorFoc_AdcFilterAlpha m162 : 24|8@1+ (0.01,0) [0|1] "" Tester
+ SG_ MotorFoc_IuRaw_A m162 : 48|16@1- (0.01,0) [-327.68|327.67] "A" Tester
+ SG_ MotorFoc_IvRaw_A m162 : 64|16@1- (0.01,0) [-327.68|327.67] "A" Tester
+ SG_ MotorFoc_IwRaw_A m162 : 80|16@1- (0.01,0) [-327.68|327.67] "A" Tester
+ SG_ MotorFoc_IuFiltered_A m162 : 96|16@1- (0.01,0) [-327.68|327.67] "A" Tester
+ SG_ MotorFoc_IvFiltered_A m162 : 112|16@1- (0.01,0) [-327.68|327.67] "A" Tester
+ SG_ MotorFoc_IwFiltered_A m162 : 128|16@1- (0.01,0) [-327.68|327.67] "A" Tester
+ SG_ MotorFoc_AdcOffsetVo1 m162 : 144|16@1- (1,0) [-32768|32767] "count" Tester
+ SG_ MotorFoc_AdcOffsetVo2 m162 : 160|16@1- (1,0) [-32768|32767] "count" Tester
+ SG_ MotorFoc_AdcOffsetVo3 m162 : 176|16@1- (1,0) [-32768|32767] "count" Tester
+ SG_ MotorFoc_Vro_V m162 : 192|16@1- (0.001,0) [-32.768|32.767] "V" Tester
+ SG_ MotorFoc_Vinv_V m162 : 208|16@1- (0.001,0) [-32.768|32.767] "V" Tester
+ SG_ MotorFoc_AdcSyncCounter m162 : 224|16@1+ (1,0) [0|65535] "count" Tester
+ SG_ MotorFoc_AdcOffsetSampleCount m162 : 240|16@1+ (1,0) [0|65535] "sample" Tester
 
 BO_ 512 msg_Transmit: 1 MyECU
  SG_ sig_RearInteriorLight : 0|1@1+ (1,0) [0|1] ""  RearECU
@@ -70,6 +121,7 @@ BO_ 528 msg_Receive: 1 RearECU
 
 
 CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ BO_ 1297 "Motor FOC diagnostic data. MotorFoc_Page selects Control (0xA0), PWM (0xA1), or ADC (0xA2) payload.";
 BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
 BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 0;
 BA_DEF_ BO_  "GenMsgDelayTime" INT 0 0;
@@ -112,7 +164,7 @@ BA_ "Manufacturer" "Vector";
 BA_ "BusType" "CAN FD";
 BA_ "Baudrate" 0;
 BA_ "GenMsgSendType" BO_ 1297 0;
-BA_ "GenMsgCycleTime" BO_ 1297 100;
+BA_ "GenMsgCycleTime" BO_ 1297 5;
 BA_ "VFrameFormat" BO_ 1297 14;
 BA_ "VFrameFormat" BO_ 512 0;
 BA_ "GenMsgSendType" BO_ 512 0;
@@ -186,4 +238,10 @@ BA_ "GenSigCycleTimeActive" SG_ 528 sig_State_RearLeftDoor 100;
 BA_ "GenSigSendType" SG_ 528 sig_State_RearInteriorLight 0;
 BA_ "GenSigCycleTime" SG_ 528 sig_State_RearInteriorLight 100;
 BA_ "GenSigCycleTimeActive" SG_ 528 sig_State_RearInteriorLight 100;
+
+VAL_ 1297 MotorFoc_Page 160 "Control" 161 "Pwm" 162 "Adc";
+VAL_ 1297 MotorFoc_MotorMode 0 "Idle" 1 "Stop" 2 "FocSpeed" 3 "FocCurrent" 4 "OpenLoop" 5 "Calibration" 6 "CalibrationErase";
+VAL_ 1297 MotorFoc_MotorModePwm 0 "Idle" 1 "Stop" 2 "FocSpeed" 3 "FocCurrent" 4 "OpenLoop" 5 "Calibration" 6 "CalibrationErase";
+VAL_ 1297 MotorFoc_FaultReason 0 "None" 1 "UnderVoltage" 2 "OverCurrent";
+VAL_ 1297 MotorFoc_FaultReasonPwm 0 "None" 1 "UnderVoltage" 2 "OverCurrent";
 

@@ -1,0 +1,1468 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc272a --dep-file=BSW364\\Os\\Implementation\\.Os_Hal_Core.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=BSW364\\Os\\Implementation\\Os_Hal_Core.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW364\\Os\\Implementation\\Os_Hal_Core.src ..\\BSW364\\Os\\Implementation\\Os_Hal_Core.c"
+	.compiler_name		"ctc"
+	;source	'..\\BSW364\\Os\\Implementation\\Os_Hal_Core.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.OS_CODE',code
+	.sect	'.text.OS_CODE'
+	.align	2
+	
+	.global	Os_Hal_CoreInit
+
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	     1  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	     2   *  COPYRIGHT
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	     3   *  --------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	     4   *  \verbatim
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	     5   *  Copyright (c) 2022 by Vector Informatik GmbH.                                              All rights reserved.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	     6   *
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    10   *  \endverbatim
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    11   *  --------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    12   *  FILE DESCRIPTION
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    13   *  ------------------------------------------------------------------------------------------------------------------*/
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    14  /**
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    15   *  \addtogroup  Os_Hal_Core
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    16   *  \{
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    17   *
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    18   * \file        Os_Hal_Core.c
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    19   * \brief       Core related primitives which don't have to be inlined.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    20   *
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    21   *
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    22   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    23  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    24   *  REVISION HISTORY
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    25   *  --------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    26   *  Refer to Os_Hal_Os.h.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    27   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    28  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    29                                                                                                                          /* PRQA S 0777 EOF */ /* MD_MSR_Rule5.1 */
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    30  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    31  #define OS_HAL_CORE_SOURCE
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    32  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    33  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    34   *  INCLUDES
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    35   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    36  /* AUTOSAR includes */
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    37  #include "Std_Types.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    38  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    39  /* Os module declarations */
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    40  #include "Os_Hal_Core.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    41  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    42  /* Os kernel module dependencies */
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    43  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    44  /* Os HAL dependencies */
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    45  #include "Os_Hal_Os.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    46  #include "Os_Hal_Cfg.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    47  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    48  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    49   *  VERSION CHECK
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    50   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    51  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    52  /* Check the version of OS header file */
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    53  #if (  (OS_HAL_SW_MAJOR_VERSION != (2u)) \ 
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    54      || (OS_HAL_SW_MINOR_VERSION != (59u)) \ 
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    55      || (OS_HAL_SW_PATCH_VERSION != (0u)) )
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    56  # error "Vendor specific version numbers of Os_Hal_Core.c and Os_Hal_Os.h are inconsistent"
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    57  #endif
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    58  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    59  /* Check the version of the configuration header file */
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    60  #if (  (OS_CFG_HAL_MAJOR_VERSION != (2u)) \ 
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    61      || (OS_CFG_HAL_MINOR_VERSION != (34u)) )
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    62  # error "Version numbers of Os_Hal_Core.c and Os_Hal_Cfg.h are inconsistent!"
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    63  #endif
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    64  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    65  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    66   *  LOCAL CONSTANT MACROS
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    67   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    68  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    69  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    70   *  LOCAL FUNCTION MACROS
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    71   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    72  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    73  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    74   *  LOCAL DATA TYPES AND STRUCTURES
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    75   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    76  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    77  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    78   *  LOCAL DATA PROTOTYPES
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    79   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    80  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    81  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    82   *  GLOBAL DATA
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    83   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    84  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    85  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    86   *  LOCAL FUNCTION PROTOTYPES
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    87   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    88  #define OS_START_SEC_CODE
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    89  #include "Os_MemMap_OsCode.h"                                                                                           /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    90  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    91  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    92  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    93   *  LOCAL FUNCTIONS
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    94   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    95  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    96  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    97  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    98   *  GLOBAL FUNCTIONS
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	    99   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   100  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   101   *  Os_Hal_CoreInit()
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   102   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   103  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   104   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   105   *
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   106   *
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   107   *
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   108   *
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   109   *
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   110   */
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   111  /*! This function initialize the IS and TS bits in SYSCON. */
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   112  FUNC(void, OS_CODE) Os_Hal_CoreInit(P2CONST(Os_Hal_CoreAsrConfigType, AUTOMATIC, OS_CONST) Config)
+; Function Os_Hal_CoreInit
+Os_Hal_CoreInit:	.type	func
+
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	     1  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	     2   *  COPYRIGHT
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	     3   *  --------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	     4   *  \verbatim
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	     5   *  Copyright (c) 2022 by Vector Informatik GmbH.                                              All rights reserved.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	     6   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    10   *  \endverbatim
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    11   *  --------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    12   *  FILE DESCRIPTION
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    13   *  ------------------------------------------------------------------------------------------------------------------*/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    14  /**
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    15   *  \addtogroup Os_Hal_Interrupt
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    16   *  \{
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    17   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    18   *  \file     Os_Hal_Interrupt.h
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    19   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    20   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    21  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    22   *  REVISION HISTORY
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    23   *  --------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    24   *  Refer to Os_Hal_Os.h.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    25   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    26                                                                                                                          /* PRQA S 0388  EOF */ /* MD_MSR_Dir1.1 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    27  #ifndef OS_HAL_INTERRUPT_H
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    28  # define OS_HAL_INTERRUPT_H
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    29  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    30  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    31   *  INCLUDES
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    32   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    33  /* AUTOSAR includes */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    34  # include "Std_Types.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    35  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    36  /* Os module declarations */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    37  # include "Os_Hal_InterruptInt.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    38  # include "Os_Hal_Interrupt_Lcfg.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    39  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    40  /* Os kernel module declarations */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    41  # include "Os_Interrupt.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    42  # include "Os_Cfg.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    43  # include "Os_TimingProtection_Cfg.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    44  # include "Os_Common.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    45  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    46  /* Os Hal dependencies */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    47  # include "Os_Hal_Compiler.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    48  # include "Os_Hal_Derivative.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    49  # include "Os_Hal_Core.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    50  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    51  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    52  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    53   *  GLOBAL CONSTANT MACROS
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    54   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    55  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    56  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    57  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    58   *  GLOBAL FUNCTION MACROS
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    59   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    60  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    61  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    62  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    63   *  GLOBAL DATA TYPES AND STRUCTURES
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    64   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    65  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    66  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    67  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    68   *  GLOBAL DATA PROTOTYPES
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    69   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    70  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    71  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    72  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    73   *  GLOBAL FUNCTION PROTOTYPES
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    74   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    75  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    76  # define OS_START_SEC_CODE
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    77  # include "Os_MemMap_OsCode.h"                                                                                          /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    78  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    79  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    80  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    81   *  GLOBAL FUNCTIONS
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    82   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    83  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    84  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    85   *  Os_Hal_IntEnableGlobal()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    86   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    87  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    88   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    89   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    90   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    91   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    92  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE, OS_ALWAYS_INLINE,                                           /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    93  Os_Hal_IntEnableGlobal, (void))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    94  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    95    /* #10 Enable the global interrupt status. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    96    Os_Hal_Enable();
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    97  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    98  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    99  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   100  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   101   *  Os_Hal_IntDisableGlobal()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   102   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   103  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   104   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   105   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   106   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   107   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   108  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE, OS_ALWAYS_INLINE,                                           /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   109  Os_Hal_IntDisableGlobal, (void))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   110  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   111    /* #10 Disable the global interrupt status. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   112    Os_Hal_Disable();
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   113  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   114  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   115  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   116  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   117   *  Os_Hal_IntDisableAndReturnGlobalState()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   118   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   119  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   120   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   121   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   122   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   123   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   124   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   125  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE Os_Hal_IntGlobalStateType, OS_CODE, OS_ALWAYS_INLINE,                      /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   126  Os_Hal_IntDisableAndReturnGlobalState, (void))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   127  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   128    Os_Hal_IntGlobalStateType retState;
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   129  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   130    /* #10 Get the current global interrupt status. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   131    retState = (Os_Hal_IntGlobalStateType)(Os_Hal_Mfcr(OS_HAL_ICR_OFFSET) & OS_HAL_ICR_INT_MASK);
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   132  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   133    /* #20 Disable the global interrupt status. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   134    Os_Hal_Disable();
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   135  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   136    return retState;
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   137  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   138  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   139  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   140  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   141   *  Os_Hal_IntSetGlobalState()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   142   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   143  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   144   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   145   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   146   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   147   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   148  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE, OS_ALWAYS_INLINE,                                           /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   149  Os_Hal_IntSetGlobalState,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   150  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   151    P2CONST(Os_Hal_IntGlobalStateType, AUTOMATIC, OS_APPL_DATA) State
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   152  ))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   153  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   154    Os_Hal_IntGlobalStateType icr;
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   155  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   156    /* #10 Set the global interrupt status. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   157    Os_Hal_Disable();
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   158    icr =  Os_Hal_Mfcr(OS_HAL_ICR_OFFSET) & (Os_Hal_IntGlobalStateType)~(OS_HAL_ICR_INT_GLOBAL_ENABLED);
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   159  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   160    Os_Hal_Mtcr(OS_HAL_ICR_OFFSET, (icr | *State));                                                                       /* COMP_WARN_OS_HAL_UNINITIALIZED_VAR */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   161    Os_Hal_Isync();
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   162  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   163  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   164  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   165  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   166   *  Os_Hal_IntGetLevel()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   167   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   168  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   169   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   170   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   171   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   172   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   173  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE,                                                             /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   174  OS_ALWAYS_INLINE, Os_Hal_IntGetLevel,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   175  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   176    P2VAR(Os_Hal_IntLevelType, AUTOMATIC, OS_APPL_DATA) Level
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   177  ))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   178  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   179    /* #10 Get the current interrupt level. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   180    *Level = (Os_Hal_IntLevelType)(Os_Hal_Mfcr(OS_HAL_ICR_OFFSET) & OS_HAL_ICR_INT_LEVEL_MASK);                           /* SBSW_OS_HAL_PWA_CALLER */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   181  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   182  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   183  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   184  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   185   *  Os_Hal_IntSetLevel()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   186   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   187  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   188   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   189   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   190   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   191   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   192  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE, OS_ALWAYS_INLINE,                                           /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   193  Os_Hal_IntSetLevel,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   194  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   195    P2CONST(Os_Hal_IntLevelType, AUTOMATIC, OS_APPL_DATA) Level
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   196  ))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   197  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   198    /* #10 Set the interrupt level. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   199    Os_Hal_Mtcr(OS_HAL_ICR_OFFSET, (Os_Hal_Mfcr(OS_HAL_ICR_OFFSET) & ~OS_HAL_ICR_INT_LEVEL_MASK) | (*Level));             /* COMP_WARN_OS_HAL_UNINITIALIZED_VAR */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   200    Os_Hal_Isync();
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   201  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   202  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   203  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   204  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   205   *  Os_Hal_IntGetGlobalEnable()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   206   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   207  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   208   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   209   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   210   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   211   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   212  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE, OS_ALWAYS_INLINE,                                           /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   213  Os_Hal_IntGetGlobalEnable,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   214  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   215    P2VAR(Os_Hal_IntGlobalStateType, AUTOMATIC, OS_APPL_DATA) State
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   216  ))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   217  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   218    /* #10 Get global interrupt enable mask. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   219    *State = (Os_Hal_IntGlobalStateType)(OS_HAL_ICR_INT_GLOBAL_ENABLED);                                                  /* SBSW_OS_HAL_PWA_CALLER */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   220  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   221  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   222  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   223  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   224   *  Os_Hal_IntGetCat2LockLevel()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   225   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   226  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   227   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   228   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   229   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   230   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   231  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE, OS_ALWAYS_INLINE,                                           /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   232  Os_Hal_IntGetCat2LockLevel,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   233  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   234    P2VAR(Os_Hal_IntLevelType, AUTOMATIC, OS_APPL_DATA) Level
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   235  ))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   236  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   237    /* #10 Get the interrupt level for CAT2. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   238    *Level = (Os_Hal_IntLevelType)OS_CFG_HAL_ISR2_DISABLE_LEVEL;                                                          /* SBSW_OS_HAL_PWA_CALLER */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   239  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   240  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   241  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   242  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   243   *  Os_Hal_IntGetCat1LockLevel()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   244   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   245  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   246   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   247   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   248   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   249   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   250  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE, OS_ALWAYS_INLINE,                                           /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   251  Os_Hal_IntGetCat1LockLevel,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   252  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   253    P2VAR(Os_Hal_IntLevelType, AUTOMATIC, OS_APPL_DATA) Level
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   254  ))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   255  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   256    /* #10 Get the interrupt level for CAT1. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   257    *Level = (Os_Hal_IntLevelType)OS_CFG_HAL_ISR1_DISABLE_LEVEL;                                                          /* SBSW_OS_HAL_PWA_CALLER */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   258  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   259  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   260  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   261  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   262   *  Os_Hal_IntGetTPLockLevel()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   263   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   264  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   265   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   266   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   267   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   268   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   269  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE, OS_ALWAYS_INLINE,                                           /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   270  Os_Hal_IntGetTPLockLevel,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   271  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   272    P2VAR(Os_Hal_IntLevelType, AUTOMATIC, OS_APPL_DATA) Level
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   273  ))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   274  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   275    /* #10 Get the interrupt level for TP. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   276    *Level = (Os_Hal_IntLevelType)OS_CFG_HAL_TP_DISABLE_LEVEL;                                                            /* SBSW_OS_HAL_PWA_CALLER */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   277  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   278  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   279  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   280  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   281   *  Os_Hal_IntGetTaskLevel()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   282   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   283  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   284   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   285   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   286   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   287   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   288  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE, OS_ALWAYS_INLINE,                                           /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   289  Os_Hal_IntGetTaskLevel,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   290  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   291    P2VAR(Os_Hal_IntLevelType, AUTOMATIC, OS_APPL_DATA) Level
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   292  ))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   293  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   294    /* #10 Get the interrupt level for tasks. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   295    *Level = (Os_Hal_IntLevelType)0;                                                                                      /* SBSW_OS_HAL_PWA_CALLER */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   296  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   297  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   298  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   299  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   300   *  Os_Hal_IntGetInterruptState()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   301   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   302  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   303   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   304   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   305   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   306   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   307  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE,                                                             /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   308  OS_ALWAYS_INLINE, Os_Hal_IntGetInterruptState,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   309  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   310    P2VAR(Os_Hal_IntStateType, AUTOMATIC, OS_VAR_NOINIT) InterruptState
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   311  ))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   312  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   313    /* #10 Get the current interrupt status. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   314    *InterruptState = (Os_Hal_IntStateType)(                                                                              /* SBSW_OS_HAL_PWA_CALLER */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   315                                             Os_Hal_Mfcr(OS_HAL_ICR_OFFSET) &
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   316                                             (OS_HAL_ICR_INT_MASK | OS_HAL_ICR_INT_LEVEL_MASK)
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   317                                           );
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   318  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   319  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   320  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   321  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   322   *  Os_Hal_IntDisableSource()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   323   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   324  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   325   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   326   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   327   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   328   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   329  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE, OS_ALWAYS_INLINE,                                           /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   330  Os_Hal_IntDisableSource,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   331  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   332    P2CONST(Os_Hal_IntIsrConfigType, AUTOMATIC, OS_APPL_DATA) IsrConfig
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   333  ))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   334  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   335    /* #10 Disable the given interrupt source in its SRC register. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   336    *((volatile uint32*) (OS_HAL_INT_SRC_BASE + (IsrConfig->Source))) &= ~OS_HAL_INT_SRC_SRE_MASK;                        /* PRQA S 0303 */ /* MD_Os_Hal_Rule11.4_0303 */ /* SBSW_OS_HAL_PWA_ISRCONFIG */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   337  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   338  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   339  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   340  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   341   *  Os_Hal_IntDisableSourceMapped()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   342   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   343  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE, OS_ALWAYS_INLINE,                                           /* COV_OS_HALPLATFORMISRMAPPINGAVAILABILITY */ /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   344  Os_Hal_IntDisableSourceMapped,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   345  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   346    P2CONST(Os_Hal_IntIsrConfigType, AUTOMATIC, OS_APPL_DATA) IsrConfig,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   347    P2CONST(Os_Hal_IntIsrMapConfigType, AUTOMATIC, OS_APPL_DATA) IsrMapConfig
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   348  ))                                                                                                                      /* COV_OS_HALPLATFORMISRMAPPINGAVAILABILITY */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   349  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   350    OS_IGNORE_UNREF_PARAM(IsrConfig);                                                                                     /* PRQA S 3112 */ /* MD_MSR_DummyStmt */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   351    OS_IGNORE_UNREF_PARAM(IsrMapConfig);                                                                                  /* PRQA S 3112 */ /* MD_MSR_DummyStmt */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   352  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   353  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   354  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   355  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   356   *  Os_Hal_IntEnableSource()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   357   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   358  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   359   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   360   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   361   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   362   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   363  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE, OS_ALWAYS_INLINE,                                           /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   364  Os_Hal_IntEnableSource,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   365  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   366    P2CONST(Os_Hal_IntIsrConfigType, AUTOMATIC, OS_APPL_DATA) IsrConfig
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   367  ))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   368  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   369    /* #10 Enable the given interrupt source in its SRC register. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   370    *((volatile uint32*) (OS_HAL_INT_SRC_BASE + (IsrConfig->Source))) |= OS_HAL_INT_SRC_SRE_MASK;                         /* PRQA S 0303 */ /* MD_Os_Hal_Rule11.4_0303 */ /* SBSW_OS_HAL_PWA_ISRCONFIG */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   371  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   372  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   373  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   374  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   375   *  Os_Hal_IntEnableSourceMapped()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   376   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   377  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE, OS_ALWAYS_INLINE,                                           /* COV_OS_HALPLATFORMISRMAPPINGAVAILABILITY */ /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   378  Os_Hal_IntEnableSourceMapped,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   379  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   380    P2CONST(Os_Hal_IntIsrConfigType, AUTOMATIC, OS_APPL_DATA) IsrConfig,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   381    P2CONST(Os_Hal_IntIsrMapConfigType, AUTOMATIC, OS_APPL_DATA) IsrMapConfig
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   382  ))                                                                                                                      /* COV_OS_HALPLATFORMISRMAPPINGAVAILABILITY */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   383  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   384    OS_IGNORE_UNREF_PARAM(IsrConfig);                                                                                     /* PRQA S 3112 */ /* MD_MSR_DummyStmt */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   385    OS_IGNORE_UNREF_PARAM(IsrMapConfig);                                                                                  /* PRQA S 3112 */ /* MD_MSR_DummyStmt */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   386  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   387  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   388  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   389  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   390   *  Os_Hal_IntIsClearPendingSupported()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   391   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   392  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE Os_StdReturnType, OS_CODE, OS_ALWAYS_INLINE,                               /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   393  Os_Hal_IntIsClearPendingSupported,( void ))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   394  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   395    return !0u;                                                                                                           /* PRQA S 4404, 4558 */ /* MD_Os_C90BooleanCompatibility, MD_Os_Rule10.1_4558 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   396  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   397  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   398  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   399  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   400   *  Os_Hal_IntClearPending()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   401   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   402  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   403   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   404   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   405   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   406   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   407  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE, OS_ALWAYS_INLINE,                                           /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   408  Os_Hal_IntClearPending,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   409  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   410    P2CONST(Os_Hal_IntIsrConfigType, AUTOMATIC, OS_APPL_DATA) IsrConfig
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   411  ))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   412  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   413    /* #10 Clear the interrupt pending flag in its SRC register. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   414    *((volatile uint32*) (OS_HAL_INT_SRC_BASE + (IsrConfig->Source))) |= OS_HAL_INT_SRC_CLRR_MASK;                        /* PRQA S 0303 */ /* MD_Os_Hal_Rule11.4_0303 */ /* SBSW_OS_HAL_PWA_ISRCONFIG */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   415  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   416  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   417  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   418  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   419   *  Os_Hal_IntClearPendingMapped()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   420   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   421  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE, OS_ALWAYS_INLINE,                                           /* COV_OS_HALPLATFORMISRMAPPINGAVAILABILITY */ /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   422  Os_Hal_IntClearPendingMapped,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   423  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   424    P2CONST(Os_Hal_IntIsrConfigType, AUTOMATIC, OS_APPL_DATA) IsrConfig,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   425    P2CONST(Os_Hal_IntIsrMapConfigType, AUTOMATIC, OS_APPL_DATA) IsrMapConfig
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   426  ))                                                                                                                      /* COV_OS_HALPLATFORMISRMAPPINGAVAILABILITY */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   427  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   428    OS_IGNORE_UNREF_PARAM(IsrConfig);                                                                                     /* PRQA S 3112 */ /* MD_MSR_DummyStmt */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   429    OS_IGNORE_UNREF_PARAM(IsrMapConfig);                                                                                  /* PRQA S 3112 */ /* MD_MSR_DummyStmt */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   430  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   431  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   432  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   433  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   434   *  Os_Hal_IntIsInterruptSourceEnabled()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   435   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   436  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   437   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   438   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   439   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   440   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   441   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   442  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE Os_StdReturnType, OS_CODE, OS_ALWAYS_INLINE,                               /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   443  Os_Hal_IntIsInterruptSourceEnabled,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   444  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   445    P2CONST(Os_Hal_IntIsrConfigType, AUTOMATIC, OS_APPL_DATA) IsrConfig
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   446  ))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   447  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   448    volatile uint32 intSourceValue;
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   449  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   450    /* #10 Get the interrupt source enable flag. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   451    intSourceValue = *((volatile uint32*) (OS_HAL_INT_SRC_BASE + (IsrConfig->Source)));                                   /* PRQA S 0303 */ /* MD_Os_Hal_Rule11.4_0303 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   452  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   453    /* #20 Return the interrupt source enable status. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   454    return (Os_StdReturnType)((intSourceValue & OS_HAL_INT_SRC_SRE_MASK) != 0x0uL);                                       /* PRQA S 4304 */ /* MD_Os_C90BooleanCompatibility */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   455  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   456  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   457  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   458  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   459   *  Os_Hal_IntIsInterruptSourceEnabledMapped()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   460   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   461  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE Os_StdReturnType, OS_CODE, OS_ALWAYS_INLINE,                               /* COV_OS_HALPLATFORMISRMAPPINGAVAILABILITY */ /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   462  Os_Hal_IntIsInterruptSourceEnabledMapped,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   463  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   464    P2CONST(Os_Hal_IntIsrConfigType, AUTOMATIC, OS_APPL_DATA) IsrConfig,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   465    P2CONST(Os_Hal_IntIsrMapConfigType, AUTOMATIC, OS_APPL_DATA) IsrMapConfig
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   466  ))                                                                                                                      /* COV_OS_HALPLATFORMISRMAPPINGAVAILABILITY */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   467  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   468    OS_IGNORE_UNREF_PARAM(IsrConfig);                                                                                     /* PRQA S 3112 */ /* MD_MSR_DummyStmt */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   469    OS_IGNORE_UNREF_PARAM(IsrMapConfig);                                                                                  /* PRQA S 3112 */ /* MD_MSR_DummyStmt */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   470    return 0u;
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   471  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   472  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   473  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   474  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   475   *  Os_Hal_IntIsInterruptPending()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   476   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   477  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   478   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   479   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   480   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   481   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   482   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   483  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE Os_StdReturnType, OS_CODE, OS_ALWAYS_INLINE,                               /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   484  Os_Hal_IntIsInterruptPending,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   485  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   486    P2CONST(Os_Hal_IntIsrConfigType, AUTOMATIC, OS_APPL_DATA) IsrConfig
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   487  ))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   488  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   489    volatile uint32 intSourceValue;
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   490  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   491    /* #10 Get the interrupt source pending flag. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   492    intSourceValue = *((volatile uint32*) (OS_HAL_INT_SRC_BASE + (IsrConfig->Source)));                                   /* PRQA S 0303 */ /* MD_Os_Hal_Rule11.4_0303 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   493  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   494    /* #20 Return the interrupt source pending status. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   495    return (Os_StdReturnType)((intSourceValue & OS_HAL_INT_SRC_SRR_MASK) != 0x0uL);                                       /* PRQA S 4304 */ /* MD_Os_C90BooleanCompatibility */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   496  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   497  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   498  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   499  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   500   *  Os_Hal_IntIsInterruptPendingMapped()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   501   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   502  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE Os_StdReturnType, OS_CODE, OS_ALWAYS_INLINE,                               /* COV_OS_HALPLATFORMISRMAPPINGAVAILABILITY */ /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   503  Os_Hal_IntIsInterruptPendingMapped,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   504  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   505    P2CONST(Os_Hal_IntIsrConfigType, AUTOMATIC, OS_APPL_DATA) IsrConfig,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   506    P2CONST(Os_Hal_IntIsrMapConfigType, AUTOMATIC, OS_APPL_DATA) IsrMapConfig
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   507  ))                                                                                                                      /* COV_OS_HALPLATFORMISRMAPPINGAVAILABILITY */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   508  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   509    OS_IGNORE_UNREF_PARAM(IsrConfig);                                                                                     /* PRQA S 3112 */ /* MD_MSR_DummyStmt */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   510    OS_IGNORE_UNREF_PARAM(IsrMapConfig);                                                                                  /* PRQA S 3112 */ /* MD_MSR_DummyStmt */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   511    return 0u;
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   512  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   513  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   514  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   515  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   516   *  Os_Hal_IntEndOfInterrupt()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   517   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   518  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE, OS_ALWAYS_INLINE,                                           /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   519  Os_Hal_IntEndOfInterrupt,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   520  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   521    P2CONST(Os_Hal_IntIsrConfigType, AUTOMATIC, OS_APPL_DATA) IsrConfig
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   522  ))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   523  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   524    /*! \note There is no need to acknowledge that interrupt handling in Aurix. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   525    OS_IGNORE_UNREF_PARAM(IsrConfig);                                                                                     /* PRQA S 3112 */ /* MD_MSR_DummyStmt */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   526  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   527  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   528  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   529  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   530   *  Os_Hal_IntEndOfInterruptMapped()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   531   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   532  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE, OS_ALWAYS_INLINE,                                           /* COV_OS_HALPLATFORMISRMAPPINGAVAILABILITY */ /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   533  Os_Hal_IntEndOfInterruptMapped,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   534  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   535    P2CONST(Os_Hal_IntIsrConfigType, AUTOMATIC, OS_APPL_DATA) IsrConfig,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   536    P2CONST(Os_Hal_IntIsrMapConfigType, AUTOMATIC, OS_APPL_DATA) IsrMapConfig
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   537  ))                                                                                                                      /* COV_OS_HALPLATFORMISRMAPPINGAVAILABILITY */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   538  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   539    OS_IGNORE_UNREF_PARAM(IsrConfig);                                                                                     /* PRQA S 3112 */ /* MD_MSR_DummyStmt */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   540    OS_IGNORE_UNREF_PARAM(IsrMapConfig);                                                                                  /* PRQA S 3112 */ /* MD_MSR_DummyStmt */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   541  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   542  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   543  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   544  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   545   *  Os_Hal_IntIsrLevelIsLe(()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   546   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   547  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   548   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   549   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   550   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   551   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   552  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE Os_StdReturnType,                                                          /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   553  OS_CODE, OS_ALWAYS_INLINE, Os_Hal_IntIsrLevelIsLe,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   554  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   555    P2CONST(Os_Hal_IntIsrConfigType, AUTOMATIC, OS_APPL_DATA) IsrConfig,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   556    P2CONST(Os_Hal_IntLevelType, AUTOMATIC, OS_CONST) Level
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   557  ))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   558  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   559    /* #10 Get the interrupt level is lower or equal status. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   560    return (Os_StdReturnType)(IsrConfig->Level <= (*Level));                                                              /* PRQA S 4304 */ /* MD_Os_C90BooleanCompatibility */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   561  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   562  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   563  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   564  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   565   *  Os_Hal_IntLevelIsGt()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   566   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   567  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   568   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   569   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   570   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   571   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   572  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE Os_StdReturnType, OS_CODE,                                                 /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   573  OS_ALWAYS_INLINE, Os_Hal_IntLevelIsGt,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   574  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   575    P2CONST(Os_Hal_IntLevelType, AUTOMATIC, OS_CONST) LevelX,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   576    P2CONST(Os_Hal_IntLevelType, AUTOMATIC, OS_CONST) LevelY
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   577  ))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   578  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   579    /* #10 Get the interrupt level is higher status. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   580    return (Os_StdReturnType)((*LevelX) > (*LevelY));                                                                     /* PRQA S 4304 */ /* MD_Os_C90BooleanCompatibility */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   581  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   582  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   583  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   584  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   585   *  Os_Hal_IntTrapRestore()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   586   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   587  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   588   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   589   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   590   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   591   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   592  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE,                                                             /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   593  OS_ALWAYS_INLINE, Os_Hal_IntTrapRestore,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   594  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   595    P2CONST(Os_Hal_IntTrapStateType, AUTOMATIC, OS_VAR_NOINIT) InterruptState
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   596  ))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   597  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   598    uint32 icr;
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   599  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   600    /* #10 Restore the previous interrupt status. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   601    icr = Os_Hal_Mfcr(OS_HAL_ICR_OFFSET) & ~(OS_HAL_ICR_INT_MASK | OS_HAL_ICR_INT_LEVEL_MASK);
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   602    icr |= *InterruptState;
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   603  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   604    Os_Hal_Mtcr(OS_HAL_ICR_OFFSET, icr);
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   605    Os_Hal_Isync();
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   606  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   607  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   608  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   609  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   610   *  Os_Hal_IntTrapUpdate()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   611   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   612  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   613   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   614   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   615   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   616   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   617  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE,                                                             /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   618  OS_ALWAYS_INLINE, Os_Hal_IntTrapUpdate,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   619  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   620    P2VAR(Os_Hal_IntTrapStateType, AUTOMATIC, OS_VAR_NOINIT) InterruptState
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   621  ))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   622  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   623    /* #10 Get the current interrupt status. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   624    *InterruptState = (Os_Hal_IntTrapStateType)(                                                                          /* SBSW_OS_HAL_PWA_CALLER */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   625                                                 Os_Hal_Mfcr(OS_HAL_ICR_OFFSET) &
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   626                                                 (OS_HAL_ICR_INT_MASK | OS_HAL_ICR_INT_LEVEL_MASK)
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   627                                               );
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   628  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   629  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   630  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   631  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   632   *  Os_Hal_IntInterruptSourceInit()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   633   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   634  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   635   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   636   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   637   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   638   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   639   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   640   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   641   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   642   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   643  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE,                                                             /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   644  OS_ALWAYS_INLINE, Os_Hal_IntInterruptSourceInit,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   645  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   646    P2CONST(Os_Hal_IntIsrConfigType, AUTOMATIC, OS_APPL_DATA) InterruptSource
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   647  ))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   648  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   649    uint32 tempSRC;
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   650      
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   651    /* #10 Get the current register content. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   652    tempSRC = *(volatile uint32*)(InterruptSource->Source + OS_HAL_INT_SRC_BASE);                                         /* PRQA S 0303 */ /* MD_Os_Hal_Rule11.4_0303 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   653    
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   654    /* #20 Clear the bits for priority, VM and core assignment. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   655    tempSRC &= (~OS_HAL_INT_SRC_SRPN_MASK & ~OS_HAL_INT_SRC_TOS_MASK & ~OS_HAL_INT_SRC_VM_MASK);
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   656  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   657    /* #30 Set the required priority and core assignment. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   658    tempSRC |= (InterruptSource->Level | (((uint32)(InterruptSource->CoreAssignment)) << OS_HAL_INT_SRC_TOS_SHIFTVALUE));
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   659  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   660    /* #40 Set the current virtual machine number */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   661    Os_Hal_IntSetCurrentVM(tempSRC);
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   662      
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   663    /* #50 Write back to the register. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   664    *(volatile uint32*)(InterruptSource->Source + OS_HAL_INT_SRC_BASE) = tempSRC;                                         /* PRQA S 0303 */ /* MD_Os_Hal_Rule11.4_0303 */ /* SBSW_OS_HAL_PWA_ISRCONFIG */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   665  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   666  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   667  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   668  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   669   *  Os_Hal_IntInterruptSourceInitMapped()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   670   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   671  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE,                                                             /* COV_OS_HALPLATFORMISRMAPPINGAVAILABILITY */ /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   672  OS_ALWAYS_INLINE, Os_Hal_IntInterruptSourceInitMapped,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   673  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   674    P2CONST(Os_Hal_IntIsrConfigType, AUTOMATIC, OS_APPL_DATA) InterruptSource,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   675    P2CONST(Os_Hal_IntIsrMapConfigType, AUTOMATIC, OS_APPL_DATA) IsrMapConfig
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   676  ))                                                                                                                      /* COV_OS_HALPLATFORMISRMAPPINGAVAILABILITY */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   677  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   678    OS_IGNORE_UNREF_PARAM(InterruptSource);                                                                               /* PRQA S 3112 */ /* MD_MSR_DummyStmt */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   679    OS_IGNORE_UNREF_PARAM(IsrMapConfig);                                                                                  /* PRQA S 3112 */ /* MD_MSR_DummyStmt */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   680  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   681  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   682  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   683  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   684   *  Os_Hal_IntIsGlobal2LevelSwitchSupported()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   685   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   686  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE Os_StdReturnType, OS_CODE, OS_ALWAYS_INLINE,                               /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   687  Os_Hal_IntIsGlobal2LevelSwitchSupported, (void))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   688  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   689    return !0u;                                                                                                           /* PRQA S 4404, 4558 */ /* MD_Os_C90BooleanCompatibility, MD_Os_Rule10.1_4558 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   690  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   691  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   692  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   693   *  Os_Hal_IntIsPeripheralInterruptTriggerSupported()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   694   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   695   /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   696   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   697   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   698   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   699   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   700  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE Os_StdReturnType, OS_CODE, OS_ALWAYS_INLINE,                               /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   701  Os_Hal_IntIsPeripheralInterruptTriggerSupported, (void))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   702  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   703    /* #10 Return !0 because the peripheral interrupts can be triggered. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   704    return !0u;                                                                                                           /* PRQA S 4404, 4558 */ /* MD_Os_C90BooleanCompatibility, MD_Os_Rule10.1_4558 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   705  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   706  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   707  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   708  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   709   *  Os_Hal_IntIsLevelSupported()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   710   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   711  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE Os_StdReturnType, OS_CODE, OS_ALWAYS_INLINE,                               /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   712  Os_Hal_IntIsLevelSupported, (void))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   713  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   714    return !0u;                                                                                                           /* PRQA S 4404, 4558 */ /* MD_Os_C90BooleanCompatibility, MD_Os_Rule10.1_4558 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   715  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   716  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   717  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   718  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   719   *  Os_Hal_IntGetGlobalState()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   720   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   721  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   722   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   723   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   724   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   725   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   726  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE, OS_ALWAYS_INLINE,                                           /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   727  Os_Hal_IntGetGlobalState,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   728  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   729    P2VAR(Os_Hal_IntGlobalStateType, AUTOMATIC, OS_APPL_DATA) State
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   730  ))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   731  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   732    /* #10 Get the current global interrupt status. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   733    *State = (Os_Hal_IntGlobalStateType)(Os_Hal_Mfcr(OS_HAL_ICR_OFFSET) & OS_HAL_ICR_INT_MASK);                           /* SBSW_OS_HAL_PWA_CALLER */
+	mfcr	d0,#65068
+	mov.u	d15,#32768
+	and	d0,d15
+
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   113  {
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   114    Os_Hal_IntGlobalStateType previousState;
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   115  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   116    /* #10 Store the current interrupt global state and disable all interrupts. */
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   117    Os_Hal_IntGetGlobalState(&previousState);                                                                             /* SBSW_OS_HAL_FC_LOCAL_VAR */
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   118    Os_Hal_Disable();
+	disable
+
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   119  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   120    /* #20 Initialize the IS and TS bits in SYSCON. */
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   121    Os_Hal_Mtcr(OS_HAL_SYSCON_CORECON_OFFSET, Os_Hal_Mfcr(OS_HAL_SYSCON_CORECON_OFFSET) | OS_HAL_SYSCON_CORECON_IS_MASK | OS_HAL_SYSCON_CORECON_TS_MASK);
+	mfcr	d15,#65044
+	or	d15,#24
+	mtcr  #0xFE14, d15
+
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   122    Os_Hal_Isync();
+	isync
+
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	     1  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	     2   *  COPYRIGHT
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	     3   *  --------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	     4   *  \verbatim
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	     5   *  Copyright (c) 2022 by Vector Informatik GmbH.                                              All rights reserved.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	     6   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    10   *  \endverbatim
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    11   *  --------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    12   *  FILE DESCRIPTION
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    13   *  ------------------------------------------------------------------------------------------------------------------*/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    14  /**
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    15   *  \addtogroup Os_Hal_Interrupt
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    16   *  \{
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    17   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    18   *  \file     Os_Hal_Interrupt.h
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    19   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    20   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    21  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    22   *  REVISION HISTORY
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    23   *  --------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    24   *  Refer to Os_Hal_Os.h.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    25   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    26                                                                                                                          /* PRQA S 0388  EOF */ /* MD_MSR_Dir1.1 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    27  #ifndef OS_HAL_INTERRUPT_H
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    28  # define OS_HAL_INTERRUPT_H
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    29  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    30  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    31   *  INCLUDES
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    32   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    33  /* AUTOSAR includes */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    34  # include "Std_Types.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    35  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    36  /* Os module declarations */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    37  # include "Os_Hal_InterruptInt.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    38  # include "Os_Hal_Interrupt_Lcfg.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    39  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    40  /* Os kernel module declarations */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    41  # include "Os_Interrupt.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    42  # include "Os_Cfg.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    43  # include "Os_TimingProtection_Cfg.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    44  # include "Os_Common.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    45  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    46  /* Os Hal dependencies */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    47  # include "Os_Hal_Compiler.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    48  # include "Os_Hal_Derivative.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    49  # include "Os_Hal_Core.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    50  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    51  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    52  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    53   *  GLOBAL CONSTANT MACROS
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    54   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    55  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    56  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    57  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    58   *  GLOBAL FUNCTION MACROS
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    59   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    60  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    61  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    62  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    63   *  GLOBAL DATA TYPES AND STRUCTURES
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    64   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    65  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    66  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    67  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    68   *  GLOBAL DATA PROTOTYPES
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    69   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    70  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    71  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    72  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    73   *  GLOBAL FUNCTION PROTOTYPES
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    74   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    75  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    76  # define OS_START_SEC_CODE
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    77  # include "Os_MemMap_OsCode.h"                                                                                          /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    78  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    79  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    80  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    81   *  GLOBAL FUNCTIONS
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    82   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    83  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    84  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    85   *  Os_Hal_IntEnableGlobal()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    86   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    87  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    88   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    89   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    90   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    91   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    92  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE, OS_ALWAYS_INLINE,                                           /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    93  Os_Hal_IntEnableGlobal, (void))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    94  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    95    /* #10 Enable the global interrupt status. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    96    Os_Hal_Enable();
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    97  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    98  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	    99  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   100  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   101   *  Os_Hal_IntDisableGlobal()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   102   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   103  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   104   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   105   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   106   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   107   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   108  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE, OS_ALWAYS_INLINE,                                           /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   109  Os_Hal_IntDisableGlobal, (void))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   110  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   111    /* #10 Disable the global interrupt status. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   112    Os_Hal_Disable();
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   113  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   114  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   115  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   116  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   117   *  Os_Hal_IntDisableAndReturnGlobalState()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   118   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   119  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   120   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   121   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   122   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   123   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   124   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   125  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE Os_Hal_IntGlobalStateType, OS_CODE, OS_ALWAYS_INLINE,                      /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   126  Os_Hal_IntDisableAndReturnGlobalState, (void))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   127  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   128    Os_Hal_IntGlobalStateType retState;
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   129  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   130    /* #10 Get the current global interrupt status. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   131    retState = (Os_Hal_IntGlobalStateType)(Os_Hal_Mfcr(OS_HAL_ICR_OFFSET) & OS_HAL_ICR_INT_MASK);
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   132  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   133    /* #20 Disable the global interrupt status. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   134    Os_Hal_Disable();
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   135  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   136    return retState;
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   137  }
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   138  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   139  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   140  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   141   *  Os_Hal_IntSetGlobalState()
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   142   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   143  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   144   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   145   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   146   *
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   147   */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   148  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE, OS_ALWAYS_INLINE,                                           /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   149  Os_Hal_IntSetGlobalState,
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   150  (
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   151    P2CONST(Os_Hal_IntGlobalStateType, AUTOMATIC, OS_APPL_DATA) State
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   152  ))
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   153  {
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   154    Os_Hal_IntGlobalStateType icr;
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   155  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   156    /* #10 Set the global interrupt status. */
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   157    Os_Hal_Disable();
+	disable
+
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   158    icr =  Os_Hal_Mfcr(OS_HAL_ICR_OFFSET) & (Os_Hal_IntGlobalStateType)~(OS_HAL_ICR_INT_GLOBAL_ENABLED);
+	mfcr	d15,#65068
+	insert	d15,d15,#0,#15,#1
+
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   159  
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   160    Os_Hal_Mtcr(OS_HAL_ICR_OFFSET, (icr | *State));                                                                       /* COMP_WARN_OS_HAL_UNINITIALIZED_VAR */
+	or	d15,d0
+
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   160    Os_Hal_Mtcr(OS_HAL_ICR_OFFSET, (icr | *State));                                                                       /* COMP_WARN_OS_HAL_UNINITIALIZED_VAR */      (inlined)
+	mtcr  #0xFE2C, d15
+
+; ..\BSW364\Os\Implementation\Os_Hal_Interrupt.h	   161    Os_Hal_Isync();
+	isync
+
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   123  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   124    /* #30 Initialize BTV and BIV */
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   125    Os_Hal_InitBtvBiv(Config);                                                                                            /* SBSW_OS_HAL_FC_CALLER */
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   126  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   127    /* #40 Restore the previous interrupt global state. */
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   128    Os_Hal_IntSetGlobalState(&previousState);                                                                             /* SBSW_OS_HAL_FC_LOCAL_VAR */
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   129  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   130    OS_IGNORE_UNREF_PARAM(Config);                                                                                        /* PRQA S 3112 */ /* MD_MSR_DummyStmt */
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   131  }
+	ret
+	
+__Os_Hal_CoreInit_function_end:
+	.size	Os_Hal_CoreInit,__Os_Hal_CoreInit_function_end-Os_Hal_CoreInit
+	; End of function
+	
+	.sdecl	'.text.OS_CODE',code
+	.sect	'.text.OS_CODE'
+	.align	2
+	
+	.global	Os_Hal_CoreInitHardware
+
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   132  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   133  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   134  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   135   *  Os_Hal_CoreInitHardware()
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   136   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   137  FUNC(void, OS_CODE) Os_Hal_CoreInitHardware(P2CONST(Os_Hal_SystemConfigType, AUTOMATIC, OS_CONST) Config)
+; Function Os_Hal_CoreInitHardware
+Os_Hal_CoreInitHardware:	.type	func
+
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   138  {
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   139    OS_IGNORE_UNREF_PARAM(Config);                                                                                        /* PRQA S 3112 */ /* MD_MSR_DummyStmt */
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   140  }
+	ret
+	
+__Os_Hal_CoreInitHardware_function_end:
+	.size	Os_Hal_CoreInitHardware,__Os_Hal_CoreInitHardware_function_end-Os_Hal_CoreInitHardware
+	; End of function
+	
+	.sdecl	'.text.OS_CODE',code
+	.sect	'.text.OS_CODE'
+	.align	2
+	
+	.global	Os_Hal_CoreFreeze
+
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   141  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   142  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   143  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   144   *  Os_Hal_CoreFreeze()
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   145   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   146  OS_FUNC_ATTRIBUTE_DEFINITION(void, OS_CODE, OS_NORETURN, Os_Hal_CoreFreeze,                                             /* COV_OS_HALCOREFREEZE */
+; Function Os_Hal_CoreFreeze
+Os_Hal_CoreFreeze:	.type	func
+
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   147  (
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   148    void
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   149  ))
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   150  {
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   151    while( (1 == 1) )                                                                                                     /* COV_OS_HALCOREFREEZE */
+.L2:
+	j	.L2
+	
+__Os_Hal_CoreFreeze_function_end:
+	.size	Os_Hal_CoreFreeze,__Os_Hal_CoreFreeze_function_end-Os_Hal_CoreFreeze
+	; End of function
+	
+	.calls	'Os_Hal_CoreInit','',0
+	.calls	'Os_Hal_CoreInitHardware','',0
+	.calls	'Os_Hal_CoreFreeze','',0
+
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   152    {
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   153  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   154    }
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   155  }
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   156  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   157  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   158  #define OS_STOP_SEC_CODE
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   159  #include "Os_MemMap_OsCode.h"                                                                                           /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   160  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   161  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   162  /* START_COVERAGE_JUSTIFICATION
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   163  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   164  \ID COV_OS_HALUNSUPPORTEDCODEREGIONS
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   165     \ACCEPT XX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   166     \ACCEPT XF
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   167     \REASON This code has not been reached as the switch of code memory regions is not supported. The risk
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   168             of keeping this code is considered to be low.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   169  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   170  \ID COV_OS_TESTCODE
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   171     \ACCEPT XX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   172     \REASON This code is not part of the operating system but of the test framework. Therefore it needs not be covered
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   173             by the operating system tests.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   174  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   175  \ID COV_OS_HALINVSTATE
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   176     \ACCEPT XF
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   177     \REASON [COV_MSR_INV_STATE]
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   178  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   179  \ID COV_OS_HALCOREFREEZE
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   180     \ACCEPT XX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   181     \REASON This function is called from Os_ErrKernelPanic() right after the panic hook has returned. As the panic hook
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   182             is the last possible exit point for the tests, Os_Hal_CoreFreeze cannot be covered in tests. Because of the
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   183             simplicity of the code, the performed code inspection results in sufficient quality.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   184  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   185  \ID COV_OS_HALCOREASSEMBLERINSTRUCTIONDATACASE
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   186     \ACCEPT XX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   187     \REASON This case in a switch/case instruction has not been reached. However, the result of the switch/case
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   188             construct is simply to use the same assembler instruction with different intermediate data. So each
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   189             case does the same with different data. The risk of testing just some cases is considered to be low.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   190  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   191  \ID COV_OS_HAL_MFD15
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   192     \ACCEPT XX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   193     \REASON This inline function is used within macros in the file "Os_Hal_Entry_Lcfg.c". The file is not analyzed in our
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   194             testsuite. Nevertheless it is assured (by review of the assembler output) that the macro is used.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   195  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   196  Justifications for core:
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   197  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   198  \ID COV_OS_HALPLATFORMCLZAVAILABILITY
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   199     \ACCEPT TX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   200     \REASON The condition is hardware dependent always true. The unnecessary code parts should be
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   201             removed by compiler optimization. As the tests run on each platform, the OS is to be released for, we
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   202             always just test the code for the respective platform. No risk as the remaining code shall be optimized
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   203             away. (Other platforms may set ACCEPT XF with a similar justification)
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   204  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   205  \ID COV_OS_HALPLATFORMTHREADPOINTERUSERREADABILITY_TX_XF
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   206     \ACCEPT TX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   207     \REASON The condition is hardware dependent always true. The unnecessary code parts should be
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   208             removed by compiler optimization. As the tests run on each platform, the OS is to be released for, we
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   209             always just test the code for the respective platform. No risk as the remaining code shall be optimized
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   210             away. (Other platforms may set ACCEPT XF with a similar justification)
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   211  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   212  \ID COV_OS_HALPLATFORMCOREIDUSERREADABILITY_TX_XF
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   213     \ACCEPT TX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   214     \REASON The condition is hardware dependent always true. The unnecessary code parts should be
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   215             removed by compiler optimization. As the tests run on each platform, the OS is to be released for, we
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   216             always just test the code for the respective platform. No risk as the remaining code shall be optimized
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   217             away. (Other platforms may set ACCEPT XF with a similar justification)
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   218  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   219  \ID COV_OS_HALPLATFORMPRIVILEGEMODEUSERREADABILITY
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   220    \ACCEPT TX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   221    \REASON The condition is hardware dependent always true. The unnecessary code parts should be
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   222            removed by compiler optimization. As the tests run on each platform, the OS is to be released for, we
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   223            always just test the code for the respective platform. No risk as the remaining code shall be optimized
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   224            away.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   225  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   226  \ID COV_OS_HALPLATFORMTHREADPOINTERUSERREADABILITY_XX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   227    \ACCEPT XX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   228    \REASON Due to the hardware ability to read the current privileges directly, this function is never called. The
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   229            unnecessary code parts should be removed by compiler optimization. As the tests run on each platform, the OS
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   230            is to be released for, we always just test the code for the respective platform. No risk as the remaining code
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   231            shall be optimized away.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   232  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   233  \ID COV_OS_HALPLATFORMCLEARPENDINGAVAILABILITY
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   234     \ACCEPT TX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   235     \REASON The condition is hardware dependent always true. The unnecessary code parts should be
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   236             removed by compiler optimization. As the tests run on each platform, the OS is to be released for, we
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   237             always just test the code for the respective platform. No risk as the remaining code shall be optimized
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   238             away. (Other platforms may set ACCEPT XF with a similar justification)
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   239  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   240  \ID COV_OS_HALPLATFORMBITLIBCLZ
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   241     \ACCEPT XX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   242     \REASON This code is meant as library code for the software implementation of Os_Bit_CountLeadingZeros(). As this
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   243             processor provides a hardware solution, this code is unused. However, the function is extremely simple,
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   244             code inspected and unit tested. It is typically optimized away by the linker. Therefore, the risk of
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   245             keeping this code is expected to be low.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   246  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   247  \ID COV_OS_HALPLATFORMNEEDMORETHAN2CORES
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   248     \ACCEPT TF
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   249     \REASON This justification is not valid for TriCore, thus it must be covered.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   250  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   251  \ID COV_OS_HALPLATFORMMASTERSTARTALLOWED
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   252     \ACCEPT TF
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   253     \REASON This justification is not valid for TriCore, thus it must be covered.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   254  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   255  \ID COV_OS_HALPLATFORMNONAUTOSTARTCORE
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   256     \ACCEPT TF
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   257     \REASON This justification is not valid for TriCore, thus it must be covered.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   258  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   259  \ID COV_OS_HALPLATFORMGETSPINLOCK
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   260     \ACCEPT TF
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   261     \REASON This justification is not valid for TriCore, thus it must be covered.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   262  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   263  \ID COV_OS_HALPLATFORMAPPISPRIVILEGED
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   264     \ACCEPT XX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   265     \REASON This cannot be reached within TriCore since the mode is always be read from the PSW
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   266  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   267  \ID COV_OS_HALPLATFORM_NEED_NO_TRAP_IOC_MULTIQUEUE
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   268    \ACCEPT XF
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   269    \ACCEPT XX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   270    \REASON This path can never be reached on this platform. As IsTrapRequired is always false for multi-queue IOCs
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   271            and the thread pointer is readable in user mode on this platform, no trap is necessary.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   272  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   273  \ID COV_OS_HALPLATFORMCOREINTERRUPTSUNSUPPORTED
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   274    \ACCEPT XF
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   275    \REASON The loop invariant is never true, because on this platform all interrupts are system wide.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   276            They are initialized in Os_SystemInterruptHandlingInit.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   277  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   278  \ID COV_OS_HALPLATFORMGETEXCEPTIONCONTEXTAVAILABILITY
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   279     \ACCEPT XF
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   280     \REASON The feature "read exception context" is available on this platform.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   281  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   282  \ID COV_OS_HALPLATFORMSETEXCEPTIONCONTEXTAVAILABILITY
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   283     \ACCEPT XF
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   284     \REASON The feature "modify exception context" is available on this platform.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   285  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   286  \ID COV_OS_HALPLATFORMGLOBAL2LEVELSUPPORTED
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   287     \ACCEPT TX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   288     \REASON Global to level switch is supported on this platform.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   289  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   290  \ID COV_OS_HALPLATFORMPERIPHERALINTTRIGGERSUPPORTED
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   291    \ACCEPT TX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   292    \REASON This platform always support peripheral interrupt software trigger.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   293  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   294  \ID COV_OS_HALPLATFORMFRT64BITAVAILABILITY
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   295     \ACCEPT XF
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   296     \ACCEPT XX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   297     \REASON The feature "64-bit FRT timer" is not available on this platform.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   298  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   299  \ID COV_OS_HALPLATFORMISRMAPPINGAVAILABILITY
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   300    \ACCEPT XX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   301    \ACCEPT XF
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   302    \REASON As the interrupt mapping functionality is not supported on the TriCore platform, conditions are always false and
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   303            functions will never be called. The unnecessary code parts should be removed by compiler optimization.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   304            As the tests run on each platform the OS is to be released for, we always just test the code for the
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   305            respective platform. No risk as the remaining code shall be optimized away.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   306  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   307  \ID COV_OS_HALPLATFORMFRT16BITAVAILABILITY
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   308     \ACCEPT XF
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   309     \ACCEPT XX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   310     \REASON The feature "16-bit FRT timer" is not available on this platform.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   311  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   312  \ID COV_OS_HALPLATFORMFRT16BITAVAILABILITY_TX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   313     \ACCEPT TX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   314     \REASON The feature "16-bit FRT timer" is not available on this platform.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   315  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   316  \ID COV_OS_HAL_CORE_BETA
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   317     \ACCEPT TX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   318     \ACCEPT XX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   319     \REASON Currently this code cannot be covered since the new supported derivative (TC49x) has beta state and cannot
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   320             be put under regression (see ESCAN00107389)
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   321  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   322  \ID COV_OS_HAL_INTERRUPTCONTROLLER_BETA
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   323     \ACCEPT TX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   324     \ACCEPT XX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   325     \REASON Currently this code cannot be covered since the new supported derivative (TC49x) has beta state and cannot
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   326             be put under regression (see ESCAN00107389)
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   327  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   328  \ID COV_OS_HAL_TIMER_BETA
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   329     \ACCEPT TX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   330     \ACCEPT XF
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   331     \REASON Currently this code cannot be covered since the new supported derivative (TC49x) has beta state and cannot
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   332             be put under regression (see ESCAN00107389)
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   333  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   334  \ID COV_OS_HALPLATFORMISRPOSTACTIONAVAILABILITY
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   335    \ACCEPT XX
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   336    \ACCEPT XF
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   337    \REASON This derivative does not meet the hardware requirements to support interrupt post action handling.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   338            Functionality has been tested on another derivative.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   339  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   340  END_COVERAGE_JUSTIFICATION */
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   341  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   342  /* SBSW_JUSTIFICATION_BEGIN
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   343  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   344  \ID SBSW_OS_HAL_PWA_CALLER
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   345   \DESCRIPTION    A write access is performed on a pointer, which is coming directly from the caller.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   346   \COUNTERMEASURE \N No measure is required, because the caller has to check the validity.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   347  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   348  \ID SBSW_OS_HAL_FC_CALLER
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   349   \DESCRIPTION    A function is called with one or more pointer parameters, which are coming directly from the caller.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   350   \COUNTERMEASURE \N No measure is required, because the caller has to check the validity.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   351  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   352  \ID SBSW_OS_HAL_FC_LOCAL_VAR
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   353   \DESCRIPTION    A function is called with one or more pointer parameters, which are pointing to local variables.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   354   \COUNTERMEASURE \N No measure is required, because local variables are always valid.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   355  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   356  \ID SBSW_OS_HAL_FC_MIXED_VAR
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   357   \DESCRIPTION    A function is called with one or more pointer parameters, which are pointing to local variables or
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   358                   are passed to the calling function.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   359   \COUNTERMEASURE \N No measure is required, because local variables are always valid.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   360  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   361  \ID SBSW_OS_HAL_PWA_FIRST_PCXI
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   362   \DESCRIPTION    A write access is performed on a pointer, which points to the memory address of the CSA frame. The
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   363                   memory address is derived from "Context->InitPCXI". The validity of "Context" is ensured by the
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   364                   caller. The content of "Context->InitPCXI" is also valid, because it is always initialized, before
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   365                   this pointer write access is performed. If "Context" is a task context, then its "InitPCXI" is
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   366                   initialized in Os_Hal_ContextInit and is re-initialized in Os_Hal_ContextReset and
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   367                   Os_Hal_ContextResetAndResume. If "Context" is an ISR/Hook context, then its "InitPCXI" is either
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   368                   initialized in Os_Hal_ContextInit or re-initialized in Os_Hal_Abort, when the ISR is killed.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   369                   As a result, whenever Os_Hal_ContextIntCleanupCSAs is called, "Context->InitPCXI" always contains
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   370                   a valid value. Thus, this write access is always performed on a valid pointer.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   371   \COUNTERMEASURE \N No measure is required, because its validity is ensured by code review.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   372  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   373  \ID SBSW_OS_HAL_PWA_PCXI
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   374   \DESCRIPTION    A write access is performed on a pointer, which points to the memory address of the CSA frame. The
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   375                   memory address is derived from the PCXI register. Since Os_Hal_Svlcx is previously performed, the
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   376                   PCXI register always contains a valid value. Thus, this write access is always performed on a valid
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   377                   pointer.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   378   \COUNTERMEASURE \N No measure is required, because its validity is ensured by code review.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   379  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   380  \ID SBSW_OS_HAL_PWA_PCXI_CONTEXTSWITCH
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   381   \DESCRIPTION    A write access is performed on a pointer, which points to the memory address of the CSA frame. The
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   382                   memory address is derived from the InitPCXI or PreviousContextInfo of the context, which is
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   383                   initialized previously by calling Os_Hal_ContextInit in the core code.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   384   \COUNTERMEASURE \N No measure is required, because its validity is ensured by code review.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   385  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   386  \ID SBSW_OS_HAL_PWA_CORECONFIG_PC
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   387   \DESCRIPTION    A write access is performed on the program counter of a foreign core. The address is generated in
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   388                   the corresponding core configuration of type Os_Hal_CoreConfigType.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   389   \COUNTERMEASURE \S Safety manual should state that generated constant variable of Os_Hal_CoreConfigType in
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   390                   Os_Hal_Core_Lcfg.c needs to be checked. More specifically, the attribute ".ProgramCounterRegister"
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   391                   must be OS_HAL_CORE<X>_PC, where <X> is the core ID. SMI-474
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   392  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   393  \ID SBSW_OS_HAL_PWA_CORECONFIG_DBGSR
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   394   \DESCRIPTION    A write access is performed on the DBGSR register of a foreign core. The address is generated in
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   395                   the corresponding core configuration of type Os_Hal_CoreConfigType.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   396   \COUNTERMEASURE \S Safety manual should state that generated constant variable of Os_Hal_CoreConfigType in
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   397                   Os_Hal_Core_Lcfg.c needs to be checked. More specifically, the attribute ".DBGSRRegister"
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   398                   must be OS_HAL_CORE<X>_DBGSR, where <X> is the core ID. SMI-475
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   399  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   400  \ID SBSW_OS_HAL_PWA_CORECONFIG_BOOTCON
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   401   \DESCRIPTION    A write access is performed on the BOOTCON register of a foreign core. The address is generated in
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   402                   the corresponding core configuration of type Os_Hal_CoreConfigType.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   403   \COUNTERMEASURE \S Safety manual should state that generated constant variable of Os_Hal_CoreConfigType in
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   404                   Os_Hal_Core_Lcfg.c needs to be checked. More specifically, the attribute ".BOOTCONRegister"
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   405                   must be OS_HAL_CORE<X>_BOOTCON, where <X> is the core ID. SMI-
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   406  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   407  \ID SBSW_OS_HAL_PWA_CORECONFIG_SYSCON_CORECON
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   408   \DESCRIPTION    A write access is performed on the SYSCON register of a foreign core. The address is generated in
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   409                   the corresponding core configuration of type Os_Hal_CoreConfigType.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   410   \COUNTERMEASURE \S Safety manual should state that generated constant variable of Os_Hal_CoreConfigType in
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   411                   Os_Hal_Core_Lcfg.c needs to be checked. More specifically, the attribute ".SYSCON_CORECON_Register"
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   412                   must be OS_HAL_CORE<X>_SYSCON, where <X> is the core ID. SMI-46520
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   413  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   414  \ID SBSW_OS_HAL_PWA_ISRCONFIG_XSIG
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   415   \DESCRIPTION    A write access is performed on the interrupt source register (SRC) of the configured XSignal ISR. The
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   416                   address is in the generated XSignal interrupt configuration of type Os_Hal_XSigInterruptConfigType.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   417                   In addition, the validity of OS_HAL_INT_SRC_BASE is checked by review.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   418   \COUNTERMEASURE \S Safety manual should state that the functionality of each configured ISR has to be checked for its
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   419                   correctness. This includes the correct call of the ISR handler as well as enabling, disabling,
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   420                   reading the enable state, reading the pending state and clearing of the pending information of
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   421                   the corresponding ISR sources. SMI-491
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   422  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   423  \ID SBSW_OS_HAL_PWA_ISRCONFIG
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   424   \DESCRIPTION    A write access is performed on the interrupt source register (SRC) of the configured ISR. The
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   425                   address is in the generated interrupt configuration of type Os_Hal_IntIsrConfigType.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   426                   In addition, the validity of OS_HAL_INT_SRC_BASE is checked by review.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   427   \COUNTERMEASURE \S Safety manual should state that the functionality of each configured ISR has to be checked for its
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   428                   correctness. This includes the correct call of the ISR handler as well as enabling, disabling,
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   429                   reading the enable state, reading the pending state and clearing of the pending information of
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   430                   the corresponding ISR sources. SMI-491
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   431  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   432  \ID SBSW_OS_HAL_FC_MPUCONFIG
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   433   \DESCRIPTION    A function is called with a pointer parameter.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   434   \COUNTERMEASURE \N No measure required, because this pointer will not be used for write operation by the callee.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   435  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   436  \ID SBSW_OS_HAL_PWA_GPTCONFIG
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   437   \DESCRIPTION    A write access is performed on a pointer, which is in the generated timer configuration for GPT of
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   438                   type Os_Hal_TimerPitConfigType.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   439   \COUNTERMEASURE \S Safety manual should state that the PIT timer configuration is to be checked for its correctness.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   440                   More specifically, if the GPT channel 0 is configured, the following attributes must be generated
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   441                   as follows:
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   442                   CounterRegisterAddress      = OS_HAL_TIMER_GPT_BASE + OS_HAL_TIMER_GPT_T3_OFFSET
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   443                   CounterConfRegisterAddress  = OS_HAL_TIMER_GPT_BASE + OS_HAL_TIMER_GPT_T3CON_OFFSET
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   444                   ReloadRegisterAddress       = OS_HAL_TIMER_GPT_BASE + OS_HAL_TIMER_GPT_T2_OFFSET
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   445                   ReloadConfRegisterAddress   = OS_HAL_TIMER_GPT_BASE + OS_HAL_TIMER_GPT_T2CON_OFFSET
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   446                   InterruptSRCRegisterAddress = OS_HAL_INT_SRC_BASE + OS_HAL_INT_SRC_GPT_CH0_OFFSET
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   447                   If the GPT channel 1 is configured, the following attributes must be generated as follows:
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   448                   CounterRegisterAddress      = OS_HAL_TIMER_GPT_BASE + OS_HAL_TIMER_GPT_T6_OFFSET
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   449                   CounterConfRegisterAddress  = OS_HAL_TIMER_GPT_BASE + OS_HAL_TIMER_GPT_T6CON_OFFSET
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   450                   ReloadRegisterAddress       = OS_HAL_TIMER_GPT_BASE + OS_HAL_TIMER_GPT_CAPREL_OFFSET
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   451                   ReloadConfRegisterAddress   = OS_HAL_TIMER_GPT_BASE + OS_HAL_TIMER_GPT_CAPREL_OFFSET
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   452                   InterruptSRCRegisterAddress = OS_HAL_INT_SRC_BASE + OS_HAL_INT_SRC_GPT_CH1_OFFSET
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   453                   SMI-478
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   454  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   455  \ID SBSW_OS_HAL_PWA_FRTCONFIG
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   456   \DESCRIPTION    A write access is performed on a pointer, which is in the generated timer configuration for STM of
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   457                   type Os_Hal_TimerFFrtConfigType.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   458   \COUNTERMEASURE \S Safety manual should state that the PIT timer configuration is to be checked for its correctness.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   459                   More specifically, the following attributes must generated as follows, where <X> (0, 1, 2, 3, 4, 5)
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   460                   is STM ID and <Y> (0, 1) is the compare channel ID:
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   461                   CompareRegisterAddress      = OS_HAL_TIMER_STM<X>_BASE + OS_HAL_TIMER_STM_CMP<Y>_OFFSET
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   462                   CMCONRegisterAddress        = OS_HAL_TIMER_STM<X>_BASE + OS_HAL_TIMER_STM_CMCON_OFFSET
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   463                   InterruptSRCRegisterAddress = OS_HAL_INT_SRC_BASE + OS_HAL_INT_SRC_STM<X>_CH<Y>_OFFSET
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   464                   ICRRegisterAddress          = OS_HAL_TIMER_STM<X>_BASE + OS_HAL_TIMER_STM_ICR_OFFSET
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   465                   SMI-479
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   466  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   467  \ID SBSW_OS_HAL_AWA_EXCEPTION_CONTEXT
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   468   \DESCRIPTION    A write access is performed on an array element.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   469   \COUNTERMEASURE \N No measure is required, because the correct index is ensured by code review.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   470  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   471  \ID SBSW_OS_HAL_PWA_EXCEPTION_CONTEXT_SAVE
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   472   \DESCRIPTION    A write access is performed on a pointer read from OsCfg_Hal_Context_ExceptionContextRef.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   473   \COUNTERMEASURE \R Validity of the pointer is ensured by runtime check.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   474  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   475  \ID SBSW_OS_HAL_PWA_EXCEPTION_CONTEXT_RESUME
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   476   \DESCRIPTION    A write access is performed on a pointer derived from the parameter Pcxi.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   477   \COUNTERMEASURE \N No measure is required, because the correctness of the parameter Pcxi is ensured by the
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   478                   pre-condition and the correct decoding is ensured by review.
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   479  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   480  SBSW_JUSTIFICATION_END */
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   481  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   482  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   483  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   484   * \}
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   485   */
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   486  
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   487  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   488   *  END OF FILE: Os_Hal_Core.c
+; ..\BSW364\Os\Implementation\Os_Hal_Core.c	   489   **********************************************************************************************************************/
+
+	; Module end

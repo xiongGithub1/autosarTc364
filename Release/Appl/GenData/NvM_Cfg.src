@@ -1,0 +1,575 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc15472a --dep-file=Appl\\GenData\\.NvM_Cfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=Appl\\GenData\\NvM_Cfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\NvM_Cfg.src ..\\Appl\\GenData\\NvM_Cfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\GenData\\NvM_Cfg.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.NvM_Cfg.NvM_EnterCriticalSection',code
+	.sect	'.text.NvM_Cfg.NvM_EnterCriticalSection'
+	.align	2
+	
+	.global	NvM_EnterCriticalSection
+
+; ..\Appl\GenData\NvM_Cfg.c	     1  /**********************************************************************************************************************
+; ..\Appl\GenData\NvM_Cfg.c	     2   *  COPYRIGHT
+; ..\Appl\GenData\NvM_Cfg.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\NvM_Cfg.c	     4   *  \verbatim
+; ..\Appl\GenData\NvM_Cfg.c	     5   *
+; ..\Appl\GenData\NvM_Cfg.c	     6   *                 This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\Appl\GenData\NvM_Cfg.c	     7   *                 Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\Appl\GenData\NvM_Cfg.c	     8   *                 All other rights remain with Vector Informatik GmbH.
+; ..\Appl\GenData\NvM_Cfg.c	     9   *  \endverbatim
+; ..\Appl\GenData\NvM_Cfg.c	    10   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\NvM_Cfg.c	    11   *  LICENSE
+; ..\Appl\GenData\NvM_Cfg.c	    12   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\NvM_Cfg.c	    13   *            Module: NvM
+; ..\Appl\GenData\NvM_Cfg.c	    14   *           Program: MSR_Vector_SLP4
+; ..\Appl\GenData\NvM_Cfg.c	    15   *          Customer: China Lithium Battery Technology Co., Ltd.
+; ..\Appl\GenData\NvM_Cfg.c	    16   *       Expiry Date: 2025-08-26
+; ..\Appl\GenData\NvM_Cfg.c	    17   *  Ordered Derivat.: SAK-TC387QP-160F300S AE
+; ..\Appl\GenData\NvM_Cfg.c	    18   *    License Scope : The usage is restricted to CBD2200508_D00
+; ..\Appl\GenData\NvM_Cfg.c	    19   *
+; ..\Appl\GenData\NvM_Cfg.c	    20   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\NvM_Cfg.c	    21   *  FILE DESCRIPTION
+; ..\Appl\GenData\NvM_Cfg.c	    22   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\NvM_Cfg.c	    23   *              File: NvM_Cfg.c
+; ..\Appl\GenData\NvM_Cfg.c	    24   *   Generation Time: 2024-07-16 16:49:58
+; ..\Appl\GenData\NvM_Cfg.c	    25   *           Project: last364 - Version 1.0
+; ..\Appl\GenData\NvM_Cfg.c	    26   *          Delivery: CBD2200508_D00
+; ..\Appl\GenData\NvM_Cfg.c	    27   *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
+; ..\Appl\GenData\NvM_Cfg.c	    28   *
+; ..\Appl\GenData\NvM_Cfg.c	    29   *
+; ..\Appl\GenData\NvM_Cfg.c	    30   *********************************************************************************************************************/
+; ..\Appl\GenData\NvM_Cfg.c	    31  
+; ..\Appl\GenData\NvM_Cfg.c	    32  /**********************************************************************************************************************
+; ..\Appl\GenData\NvM_Cfg.c	    33   ! BETA VERSION                                                                                                       !
+; ..\Appl\GenData\NvM_Cfg.c	    34   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\Appl\GenData\NvM_Cfg.c	    35   ! This version of DaVinci Configurator Classic and/or the related Basic Software Package is BETA software.               !
+; ..\Appl\GenData\NvM_Cfg.c	    36   ! BETA Software is basically operable, but not sufficiently tested, verified and/or qualified for use in series      !
+; ..\Appl\GenData\NvM_Cfg.c	    37   ! production and/or in vehicles operating on public or non-public roads.                                             !
+; ..\Appl\GenData\NvM_Cfg.c	    38   ! In particular, without limitation, BETA Software may cause unpredictable ECU behavior, may not provide all         !
+; ..\Appl\GenData\NvM_Cfg.c	    39   ! functions necessary for use in series production and/or may not comply with quality requirements which are         !
+; ..\Appl\GenData\NvM_Cfg.c	    40   ! necessary according to the state of the art. BETA Software must not be used in series production.                  !
+; ..\Appl\GenData\NvM_Cfg.c	    41   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\Appl\GenData\NvM_Cfg.c	    42  **********************************************************************************************************************/
+; ..\Appl\GenData\NvM_Cfg.c	    43  
+; ..\Appl\GenData\NvM_Cfg.c	    44  
+; ..\Appl\GenData\NvM_Cfg.c	    45  /* PRQA S 5087 MemMap */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\NvM_Cfg.c	    46      
+; ..\Appl\GenData\NvM_Cfg.c	    47  /**********************************************************************************************************************
+; ..\Appl\GenData\NvM_Cfg.c	    48   *  MODULE SWITCH
+; ..\Appl\GenData\NvM_Cfg.c	    49   *********************************************************************************************************************/
+; ..\Appl\GenData\NvM_Cfg.c	    50  /* this switch enables the header file(s) to hide some parts. */
+; ..\Appl\GenData\NvM_Cfg.c	    51  #define NVM_CFG_SOURCE
+; ..\Appl\GenData\NvM_Cfg.c	    52  
+; ..\Appl\GenData\NvM_Cfg.c	    53  /* multiple inclusion protection */
+; ..\Appl\GenData\NvM_Cfg.c	    54  #define NVM_H_
+; ..\Appl\GenData\NvM_Cfg.c	    55  
+; ..\Appl\GenData\NvM_Cfg.c	    56  /* Required for RTE ROM block definitions */
+; ..\Appl\GenData\NvM_Cfg.c	    57  #define RTE_MICROSAR_PIM_EXPORT
+; ..\Appl\GenData\NvM_Cfg.c	    58  
+; ..\Appl\GenData\NvM_Cfg.c	    59  /**********************************************************************************************************************
+; ..\Appl\GenData\NvM_Cfg.c	    60   *  INCLUDES
+; ..\Appl\GenData\NvM_Cfg.c	    61   *********************************************************************************************************************/
+; ..\Appl\GenData\NvM_Cfg.c	    62  #include "Std_Types.h"
+; ..\Appl\GenData\NvM_Cfg.c	    63  
+; ..\Appl\GenData\NvM_Cfg.c	    64  /* This tag will only be replaced, if one or more callbacks via Service Ports had been configured */
+; ..\Appl\GenData\NvM_Cfg.c	    65  
+; ..\Appl\GenData\NvM_Cfg.c	    66  
+; ..\Appl\GenData\NvM_Cfg.c	    67  /**********************************************************************************************************************
+; ..\Appl\GenData\NvM_Cfg.c	    68   *  MODULE HEADER INCLUDES
+; ..\Appl\GenData\NvM_Cfg.c	    69   *********************************************************************************************************************/
+; ..\Appl\GenData\NvM_Cfg.c	    70  /* only includes the public part of config */
+; ..\Appl\GenData\NvM_Cfg.c	    71  #include "NvM_Cfg.h"
+; ..\Appl\GenData\NvM_Cfg.c	    72  #include "NvM_PrivateCfg.h"
+; ..\Appl\GenData\NvM_Cfg.c	    73  
+; ..\Appl\GenData\NvM_Cfg.c	    74  
+; ..\Appl\GenData\NvM_Cfg.c	    75  
+; ..\Appl\GenData\NvM_Cfg.c	    76  /**********************************************************************************************************************
+; ..\Appl\GenData\NvM_Cfg.c	    77   *  VERSION CHECKS
+; ..\Appl\GenData\NvM_Cfg.c	    78   *********************************************************************************************************************/
+; ..\Appl\GenData\NvM_Cfg.c	    79  #if ((NVM_CFG_MAJOR_VERSION != (9u)) \ 
+; ..\Appl\GenData\NvM_Cfg.c	    80          || (NVM_CFG_MINOR_VERSION != (0u)))
+; ..\Appl\GenData\NvM_Cfg.c	    81  # error "Version numbers of NvM_Cfg.c and NvM_Cfg.h are inconsistent!"
+; ..\Appl\GenData\NvM_Cfg.c	    82  #endif
+; ..\Appl\GenData\NvM_Cfg.c	    83  
+; ..\Appl\GenData\NvM_Cfg.c	    84  /* include list of the callback definitions */
+; ..\Appl\GenData\NvM_Cfg.c	    85  
+; ..\Appl\GenData\NvM_Cfg.c	    86  
+; ..\Appl\GenData\NvM_Cfg.c	    87  /* include configured file declaring or defining resource (un)locking service(s) */
+; ..\Appl\GenData\NvM_Cfg.c	    88  #include "SchM_NvM.h"
+; ..\Appl\GenData\NvM_Cfg.c	    89  
+; ..\Appl\GenData\NvM_Cfg.c	    90  /**********************************************************************************************************************
+; ..\Appl\GenData\NvM_Cfg.c	    91   *  PUBLIC CONSTANTS
+; ..\Appl\GenData\NvM_Cfg.c	    92   *********************************************************************************************************************/
+; ..\Appl\GenData\NvM_Cfg.c	    93  #define NVM_START_SEC_CONST_16
+; ..\Appl\GenData\NvM_Cfg.c	    94  #include "NvM_MemMap.h"
+; ..\Appl\GenData\NvM_Cfg.c	    95  
+; ..\Appl\GenData\NvM_Cfg.c	    96  /* maximum number of bytes to be processed in one crc calculation step */
+; ..\Appl\GenData\NvM_Cfg.c	    97  CONST(uint16, NVM_CONFIG_CONST) NvM_NoOfCrcBytes_u16 = 64u;
+; ..\Appl\GenData\NvM_Cfg.c	    98  
+; ..\Appl\GenData\NvM_Cfg.c	    99  /* constant holding Crc queue size value */
+; ..\Appl\GenData\NvM_Cfg.c	   100  CONST(uint16, NVM_PRIVATE_CONST) NvM_CrcQueueSize_u16 = NVM_TOTAL_NUM_OF_NVRAM_BLOCKS;
+; ..\Appl\GenData\NvM_Cfg.c	   101  
+; ..\Appl\GenData\NvM_Cfg.c	   102  #define NVM_STOP_SEC_CONST_16
+; ..\Appl\GenData\NvM_Cfg.c	   103  #include "NvM_MemMap.h"
+; ..\Appl\GenData\NvM_Cfg.c	   104  
+; ..\Appl\GenData\NvM_Cfg.c	   105  /* 8Bit Data section containing the data integrity buffers, as well as the internal buffer */
+; ..\Appl\GenData\NvM_Cfg.c	   106  #define NVM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\NvM_Cfg.c	   107  #include "NvM_MemMap.h"
+; ..\Appl\GenData\NvM_Cfg.c	   108  
+; ..\Appl\GenData\NvM_Cfg.c	   109  static VAR(uint8, NVM_PRIVATE_DATA) NvMConfigBlock_RamBlock_au8[4u];
+; ..\Appl\GenData\NvM_Cfg.c	   110  
+; ..\Appl\GenData\NvM_Cfg.c	   111  #if ((NVM_DATA_INTEGRITY_INT_BUFFER == STD_ON) || (NVM_REPAIR_REDUNDANT_BLOCKS_API == STD_ON))
+; ..\Appl\GenData\NvM_Cfg.c	   112  
+; ..\Appl\GenData\NvM_Cfg.c	   113  
+; ..\Appl\GenData\NvM_Cfg.c	   114  
+; ..\Appl\GenData\NvM_Cfg.c	   115  /* create the internal buffer of size NVM_INTERNAL_BUFFER_LENGTH */
+; ..\Appl\GenData\NvM_Cfg.c	   116  VAR(uint8, NVM_PRIVATE_DATA) NvM_InternalBuffer_au8[NVM_INTERNAL_BUFFER_LENGTH]; /* PRQA S 1533 */ /* MD_NvM_Cfg_8.9_InternalBuffer */
+; ..\Appl\GenData\NvM_Cfg.c	   117  #endif
+; ..\Appl\GenData\NvM_Cfg.c	   118  
+; ..\Appl\GenData\NvM_Cfg.c	   119  
+; ..\Appl\GenData\NvM_Cfg.c	   120  
+; ..\Appl\GenData\NvM_Cfg.c	   121  
+; ..\Appl\GenData\NvM_Cfg.c	   122  
+; ..\Appl\GenData\NvM_Cfg.c	   123  #define NVM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\NvM_Cfg.c	   124  #include "NvM_MemMap.h"
+; ..\Appl\GenData\NvM_Cfg.c	   125  
+; ..\Appl\GenData\NvM_Cfg.c	   126  #define NVM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\NvM_Cfg.c	   127  #include "NvM_MemMap.h"
+; ..\Appl\GenData\NvM_Cfg.c	   128  
+; ..\Appl\GenData\NvM_Cfg.c	   129  CONST(NvM_BlockIdType, NVM_PUBLIC_CONST) NvM_NoOfBlockIds_t = NVM_TOTAL_NUM_OF_NVRAM_BLOCKS;
+; ..\Appl\GenData\NvM_Cfg.c	   130  
+; ..\Appl\GenData\NvM_Cfg.c	   131  CONST(NvM_CompiledConfigIdType, NVM_PUBLIC_CONST) NvM_CompiledConfigId_t = {(uint16)NVM_COMPILED_CONFIG_ID}; /* PRQA S 0759 */ /* MD_MSR_Union */
+; ..\Appl\GenData\NvM_Cfg.c	   132   
+; ..\Appl\GenData\NvM_Cfg.c	   133  
+; ..\Appl\GenData\NvM_Cfg.c	   134   
+; ..\Appl\GenData\NvM_Cfg.c	   135  /* block descriptor table that holds the static configuration parameters of the RAM, ROM and NVBlocks.
+; ..\Appl\GenData\NvM_Cfg.c	   136  * This table has to be adjusted according to the configuration of the NVManager.
+; ..\Appl\GenData\NvM_Cfg.c	   137  */
+; ..\Appl\GenData\NvM_Cfg.c	   138  
+; ..\Appl\GenData\NvM_Cfg.c	   139  CONST(NvM_BlockDescriptorType, NVM_CONFIG_CONST) NvM_BlockDescriptorTable_at[NVM_TOTAL_NUM_OF_NVRAM_BLOCKS] =
+; ..\Appl\GenData\NvM_Cfg.c	   140      {
+; ..\Appl\GenData\NvM_Cfg.c	   141        { /*  MultiBlockRequest  */ 
+; ..\Appl\GenData\NvM_Cfg.c	   142          NULL_PTR /*  NvMRamBlockDataAddress  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   143          NULL_PTR /*  NvMRomBlockDataAddress  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   144          NULL_PTR /*  NvMInitBlockCallback  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   145          NULL_PTR /*  NvMInitBlockCallback (extended)  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   146          NULL_PTR /*  NvMSingleBlockCallback  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   147          NULL_PTR /*  NvMSingleBlockCallback (extended)  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   148          NULL_PTR /*  NvMReadRamBlockFromNvCallback  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   149          NULL_PTR /*  NvMWriteRamBlockToNvCallback  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   150          NULL_PTR /*  NvMBlockPreWriteTransformCallback  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   151          NULL_PTR /*  NvMBlockPostReadTransformCallback  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   152          NULL_PTR /*  RamBlockDataIntegrity data buffer (defined by NvM)  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   153          NULL_PTR /*  CRCCompMechanism CRC data (defined by NvM)  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   154          { 0u } /*  Flags  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   155          0x0001u /*  NV block Base number (defined by FEE/EA)  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   156          0U /*  NvMNvBlockLength  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   157          0U /*  NvMNvBlockNVRAMDataLength  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   158          0u /*  NvCryptoReference  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   159          0u /*  NvMacSize  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   160          0u /*  NvMacReference  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   161          0u /*  NvBlockCount  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   162          255u /*  NvMBlockJobPriority  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   163          0u /*  Device Id (defined by MemIf)  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   164          NVM_BLOCK_NATIVE /*  NvMBlockManagementType  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   165          NVM_BLOCK_DATA_INTEGRITY_OFF /*  NvMBlockDataIntegrityType  */ 
+; ..\Appl\GenData\NvM_Cfg.c	   166        }, 
+; ..\Appl\GenData\NvM_Cfg.c	   167        { /*  NvMConfigBlock  */ 
+; ..\Appl\GenData\NvM_Cfg.c	   168          (NvM_RamAddressType)NvMConfigBlock_RamBlock_au8 /*  NvMRamBlockDataAddress  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   169          NULL_PTR /*  NvMRomBlockDataAddress  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   170          NULL_PTR /*  NvMInitBlockCallback  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   171          NULL_PTR /*  NvMInitBlockCallback (extended)  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   172          NULL_PTR /*  NvMSingleBlockCallback  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   173          NULL_PTR /*  NvMSingleBlockCallback (extended)  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   174          NULL_PTR /*  NvMReadRamBlockFromNvCallback  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   175          NULL_PTR /*  NvMWriteRamBlockToNvCallback  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   176          NULL_PTR /*  NvMBlockPreWriteTransformCallback  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   177          NULL_PTR /*  NvMBlockPostReadTransformCallback  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   178          NULL_PTR /*  RamBlockDataIntegrity data buffer (defined by NvM)  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   179          NULL_PTR /*  CRCCompMechanism CRC data (defined by NvM)  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   180                  {
+; ..\Appl\GenData\NvM_Cfg.c	   181            NVM_CALC_RAM_BLOCK_CRC_OFF, 
+; ..\Appl\GenData\NvM_Cfg.c	   182            NVM_BLOCK_WRITE_PROT_OFF, 
+; ..\Appl\GenData\NvM_Cfg.c	   183            NVM_BLOCK_WRITE_BLOCK_ONCE_OFF, 
+; ..\Appl\GenData\NvM_Cfg.c	   184            NVM_RESISTANT_TO_CHANGED_SW_ON, 
+; ..\Appl\GenData\NvM_Cfg.c	   185            NVM_SELECT_BLOCK_FOR_READALL_OFF, 
+; ..\Appl\GenData\NvM_Cfg.c	   186            NVM_SELECT_BLOCK_FOR_WRITEALL_ON, 
+; ..\Appl\GenData\NvM_Cfg.c	   187            NVM_INVOKE_CALLBACKS_FOR_READALL_OFF, 
+; ..\Appl\GenData\NvM_Cfg.c	   188            NVM_INVOKE_CALLBACKS_FOR_WRITEALL_OFF, 
+; ..\Appl\GenData\NvM_Cfg.c	   189            NVM_BLOCK_USE_SET_RAM_BLOCK_STATUS_ON, 
+; ..\Appl\GenData\NvM_Cfg.c	   190            NVM_BLOCK_CHECK_LOSS_OF_REDUNDANCY_OFF, 
+; ..\Appl\GenData\NvM_Cfg.c	   191            NVM_BLOCK_NOTIFY_BSWM_OFF
+; ..\Appl\GenData\NvM_Cfg.c	   192          } /*  Flags  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   193          0x0010u /*  NV block Base number (defined by FEE/EA)  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   194          2u /*  NvMNvBlockLength  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   195          2u /*  NvMNvBlockNVRAMDataLength  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   196          0u /*  NvCryptoReference  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   197          0u /*  NvMacSize  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   198          0u /*  NvMacReference  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   199          2u /*  NvBlockCount  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   200          127u /*  NvMBlockJobPriority  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   201          MEMIF_Fee /*  Device Id (defined by MemIf)  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   202          NVM_BLOCK_REDUNDANT /*  NvMBlockManagementType  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   203          NVM_BLOCK_CRC_16_ON /*  NvMBlockDataIntegrityType  */ 
+; ..\Appl\GenData\NvM_Cfg.c	   204        }, 
+; ..\Appl\GenData\NvM_Cfg.c	   205        { /*  NvMBlock_MotorZeroCal  */ 
+; ..\Appl\GenData\NvM_Cfg.c	   206          NULL_PTR /*  NvMRamBlockDataAddress  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   207          NULL_PTR /*  NvMRomBlockDataAddress  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   208          NULL_PTR /*  NvMInitBlockCallback  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   209          NULL_PTR /*  NvMInitBlockCallback (extended)  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   210          NULL_PTR /*  NvMSingleBlockCallback  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   211          NULL_PTR /*  NvMSingleBlockCallback (extended)  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   212          NULL_PTR /*  NvMReadRamBlockFromNvCallback  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   213          NULL_PTR /*  NvMWriteRamBlockToNvCallback  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   214          NULL_PTR /*  NvMBlockPreWriteTransformCallback  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   215          NULL_PTR /*  NvMBlockPostReadTransformCallback  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   216          NULL_PTR /*  RamBlockDataIntegrity data buffer (defined by NvM)  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   217          NULL_PTR /*  CRCCompMechanism CRC data (defined by NvM)  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   218                  {
+; ..\Appl\GenData\NvM_Cfg.c	   219            NVM_CALC_RAM_BLOCK_CRC_OFF, 
+; ..\Appl\GenData\NvM_Cfg.c	   220            NVM_BLOCK_WRITE_PROT_OFF, 
+; ..\Appl\GenData\NvM_Cfg.c	   221            NVM_BLOCK_WRITE_BLOCK_ONCE_OFF, 
+; ..\Appl\GenData\NvM_Cfg.c	   222            NVM_RESISTANT_TO_CHANGED_SW_ON, 
+; ..\Appl\GenData\NvM_Cfg.c	   223            NVM_SELECT_BLOCK_FOR_READALL_OFF, 
+; ..\Appl\GenData\NvM_Cfg.c	   224            NVM_SELECT_BLOCK_FOR_WRITEALL_OFF, 
+; ..\Appl\GenData\NvM_Cfg.c	   225            NVM_INVOKE_CALLBACKS_FOR_READALL_OFF, 
+; ..\Appl\GenData\NvM_Cfg.c	   226            NVM_INVOKE_CALLBACKS_FOR_WRITEALL_OFF, 
+; ..\Appl\GenData\NvM_Cfg.c	   227            NVM_BLOCK_USE_SET_RAM_BLOCK_STATUS_OFF, 
+; ..\Appl\GenData\NvM_Cfg.c	   228            NVM_BLOCK_CHECK_LOSS_OF_REDUNDANCY_OFF, 
+; ..\Appl\GenData\NvM_Cfg.c	   229            NVM_BLOCK_NOTIFY_BSWM_OFF
+; ..\Appl\GenData\NvM_Cfg.c	   230          } /*  Flags  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   231          0x0020u /*  NV block Base number (defined by FEE/EA)  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   232          4u /*  NvMNvBlockLength  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   233          4u /*  NvMNvBlockNVRAMDataLength  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   234          0u /*  NvCryptoReference  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   235          0u /*  NvMacSize  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   236          0u /*  NvMacReference  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   237          1u /*  NvBlockCount  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   238          127u /*  NvMBlockJobPriority  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   239          MEMIF_Fee /*  Device Id (defined by MemIf)  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   240          NVM_BLOCK_NATIVE /*  NvMBlockManagementType  */ , 
+; ..\Appl\GenData\NvM_Cfg.c	   241          NVM_BLOCK_CRC_16_ON /*  NvMBlockDataIntegrityType  */ 
+; ..\Appl\GenData\NvM_Cfg.c	   242        }
+; ..\Appl\GenData\NvM_Cfg.c	   243      };
+; ..\Appl\GenData\NvM_Cfg.c	   244  
+; ..\Appl\GenData\NvM_Cfg.c	   245  /* Permanent RAM and ROM block length checks - compile time (only available for blocks with enabled length check */
+; ..\Appl\GenData\NvM_Cfg.c	   246  
+; ..\Appl\GenData\NvM_Cfg.c	   247  /* PRQA S 3494, 3213, 1755 BlockLengthChecks */ /* MD_NvM_Cfg_14.3, MD_NvM_Cfg_2.4 */
+; ..\Appl\GenData\NvM_Cfg.c	   248  
+; ..\Appl\GenData\NvM_Cfg.c	   249  /* How does it work:
+; ..\Appl\GenData\NvM_Cfg.c	   250   * data length = sizeof(ramBlock - CrcLength 
+; ..\Appl\GenData\NvM_Cfg.c	   251   *     - CRC internal buffer enabled: CRC length == 0, RAM blocks store only data, CRC is handles internally
+; ..\Appl\GenData\NvM_Cfg.c	   252   *     - CRC internal buffer disabled: CRC length is the number of CRC bytes, for blocks without CRC the length == 0
+; ..\Appl\GenData\NvM_Cfg.c	   253   *     - for ROM blocks the CRC does not matter
+; ..\Appl\GenData\NvM_Cfg.c	   254   * Data length has to be > or < or == to configured NvM block length, depending on configuration (see above). 
+; ..\Appl\GenData\NvM_Cfg.c	   255   * In case the lengths do not match a bitfield with length -1 will be created and shall cause a compiler error.
+; ..\Appl\GenData\NvM_Cfg.c	   256   * The compiler error shall mark the line with invalid bitfield (bitfield length == -1) - the line includes all required information:
+; ..\Appl\GenData\NvM_Cfg.c	   257   *     - Block_ + NvM block name
+; ..\Appl\GenData\NvM_Cfg.c	   258   *     - length error description
+; ..\Appl\GenData\NvM_Cfg.c	   259   *     - RAM block name, CRC length and configured NvM block length
+; ..\Appl\GenData\NvM_Cfg.c	   260   */
+; ..\Appl\GenData\NvM_Cfg.c	   261  
+; ..\Appl\GenData\NvM_Cfg.c	   262  typedef unsigned int NvM_LengthCheck;
+; ..\Appl\GenData\NvM_Cfg.c	   263   
+; ..\Appl\GenData\NvM_Cfg.c	   264  /* Block Length Check and Automatic Block Length enabled: error if sizeof RAM block is greater than the configured block length */
+; ..\Appl\GenData\NvM_Cfg.c	   265  #define SizeOfRamBlockGreaterThanConfiguredLength(ramBlock, crcLength, blockLength) (((sizeof(ramBlock) - (crcLength)) > (blockLength)) ? -1 : 1) /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
+; ..\Appl\GenData\NvM_Cfg.c	   266  /* Block Length Check and Strict Length Check enabled: error if the sizeof RAM block does not match the configured block length */
+; ..\Appl\GenData\NvM_Cfg.c	   267  #define SizeOfRamBlockDoesNotMatchConfiguredLength(ramBlock, crcLength, blockLength) (((sizeof(ramBlock) - (crcLength)) != (blockLength)) ? -1 : 1) /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
+; ..\Appl\GenData\NvM_Cfg.c	   268  /* Block Length Check enabled and Strict Length Check disabled: error if the sizeof RAM block is less than the configured block length */
+; ..\Appl\GenData\NvM_Cfg.c	   269  #define SizeOfRamBlockLessThanConfiguredLength(ramBlock, crcLength, blockLength) (((sizeof(ramBlock) - (crcLength)) < (blockLength)) ? -1 : 1) /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
+; ..\Appl\GenData\NvM_Cfg.c	   270  
+; ..\Appl\GenData\NvM_Cfg.c	   271  /* RAM block length checks */
+; ..\Appl\GenData\NvM_Cfg.c	   272  
+; ..\Appl\GenData\NvM_Cfg.c	   273  
+; ..\Appl\GenData\NvM_Cfg.c	   274  
+; ..\Appl\GenData\NvM_Cfg.c	   275  /* Block Length Check and Automatic Block Length enabled: error if sizeof ROM block is less than sizeof RAM block */
+; ..\Appl\GenData\NvM_Cfg.c	   276  #define SizeOfRomBlockLessThanSizeOfRamBlock(romBlock, ramBlock) ((sizeof(romBlock) < sizeof(ramBlock)) ? -1 : 1) /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
+; ..\Appl\GenData\NvM_Cfg.c	   277  /* Block Length Check and Strict Length Check enabled: error if the sizeof ROM block does not match the configured block length */
+; ..\Appl\GenData\NvM_Cfg.c	   278  #define SizeOfRomBlockDoesNotMatchConfiguredLength(romBlock, blockLength) ((sizeof(romBlock) != (blockLength)) ? -1 : 1) /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
+; ..\Appl\GenData\NvM_Cfg.c	   279  /* Block Length Check enabled, Strict Length disabled: error if the sizeof ROM block is less than the configured block length */
+; ..\Appl\GenData\NvM_Cfg.c	   280  #define SizeOfRomBlockLessThanConfiguredLength(romBlock, blockLength) ((sizeof(romBlock) < (blockLength)) ? -1 : 1) /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
+; ..\Appl\GenData\NvM_Cfg.c	   281  
+; ..\Appl\GenData\NvM_Cfg.c	   282  /* ROM block length checks */
+; ..\Appl\GenData\NvM_Cfg.c	   283  
+; ..\Appl\GenData\NvM_Cfg.c	   284  
+; ..\Appl\GenData\NvM_Cfg.c	   285  
+; ..\Appl\GenData\NvM_Cfg.c	   286  /* PRQA L:BlockLengthChecks */
+; ..\Appl\GenData\NvM_Cfg.c	   287  
+; ..\Appl\GenData\NvM_Cfg.c	   288  /* Permanent RAM and ROM block length checks - END */
+; ..\Appl\GenData\NvM_Cfg.c	   289  
+; ..\Appl\GenData\NvM_Cfg.c	   290  #define NVM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\NvM_Cfg.c	   291  #include "NvM_MemMap.h"
+; ..\Appl\GenData\NvM_Cfg.c	   292  
+; ..\Appl\GenData\NvM_Cfg.c	   293  #define NVM_START_SEC_VAR_NO_INIT_UNSPECIFIED
+; ..\Appl\GenData\NvM_Cfg.c	   294  #include "NvM_MemMap.h"
+; ..\Appl\GenData\NvM_Cfg.c	   295  
+; ..\Appl\GenData\NvM_Cfg.c	   296  #if(NVM_API_CONFIG_CLASS != NVM_API_CONFIG_CLASS_1)
+; ..\Appl\GenData\NvM_Cfg.c	   297  /* Job Queue used for normal and high prio jobs */
+; ..\Appl\GenData\NvM_Cfg.c	   298  VAR(NvM_QueueEntryType, NVM_PRIVATE_DATA) NvM_JobQueue_at[NVM_SIZE_STANDARD_JOB_QUEUE + NVM_SIZE_IMMEDIATE_JOB_QUEUE];
+; ..\Appl\GenData\NvM_Cfg.c	   299  #endif
+; ..\Appl\GenData\NvM_Cfg.c	   300  
+; ..\Appl\GenData\NvM_Cfg.c	   301  #define NVM_STOP_SEC_VAR_NO_INIT_UNSPECIFIED
+; ..\Appl\GenData\NvM_Cfg.c	   302  #include "NvM_MemMap.h"
+; ..\Appl\GenData\NvM_Cfg.c	   303  
+; ..\Appl\GenData\NvM_Cfg.c	   304  #define NVM_START_SEC_CODE
+; ..\Appl\GenData\NvM_Cfg.c	   305  #include "NvM_MemMap.h"
+; ..\Appl\GenData\NvM_Cfg.c	   306  
+; ..\Appl\GenData\NvM_Cfg.c	   307  /**********************************************************************************************************************
+; ..\Appl\GenData\NvM_Cfg.c	   308  *  NvM_EnterCriticalSection
+; ..\Appl\GenData\NvM_Cfg.c	   309  **********************************************************************************************************************/
+; ..\Appl\GenData\NvM_Cfg.c	   310  /*!
+; ..\Appl\GenData\NvM_Cfg.c	   311   * \internal
+; ..\Appl\GenData\NvM_Cfg.c	   312   *  - #10 enter SchM exclusive area for NvM 
+; ..\Appl\GenData\NvM_Cfg.c	   313   * \endinternal
+; ..\Appl\GenData\NvM_Cfg.c	   314   */
+; ..\Appl\GenData\NvM_Cfg.c	   315  FUNC(void, NVM_PRIVATE_CODE) NvM_EnterCriticalSection(void)
+; Function NvM_EnterCriticalSection
+NvM_EnterCriticalSection:	.type	func
+
+; ..\Appl\GenData\NvM_Cfg.c	   316  {
+; ..\Appl\GenData\NvM_Cfg.c	   317    /* do what ever was defined to do for locking the resources */
+; ..\Appl\GenData\NvM_Cfg.c	   318    SchM_Enter_NvM_NVM_EXCLUSIVE_AREA_0();
+	j	SuspendAllInterrupts
+	
+__NvM_EnterCriticalSection_function_end:
+	.size	NvM_EnterCriticalSection,__NvM_EnterCriticalSection_function_end-NvM_EnterCriticalSection
+	; End of function
+	
+	.sdecl	'.text.NvM_Cfg.NvM_ExitCriticalSection',code
+	.sect	'.text.NvM_Cfg.NvM_ExitCriticalSection'
+	.align	2
+	
+	.global	NvM_ExitCriticalSection
+
+; ..\Appl\GenData\NvM_Cfg.c	   319  }
+; ..\Appl\GenData\NvM_Cfg.c	   320  
+; ..\Appl\GenData\NvM_Cfg.c	   321  /**********************************************************************************************************************
+; ..\Appl\GenData\NvM_Cfg.c	   322  *  NvM_ExitCriticalSection
+; ..\Appl\GenData\NvM_Cfg.c	   323  **********************************************************************************************************************/
+; ..\Appl\GenData\NvM_Cfg.c	   324  /*!
+; ..\Appl\GenData\NvM_Cfg.c	   325   * \internal
+; ..\Appl\GenData\NvM_Cfg.c	   326   *  - #10 exit SchM exclusive area for NvM 
+; ..\Appl\GenData\NvM_Cfg.c	   327   * \endinternal
+; ..\Appl\GenData\NvM_Cfg.c	   328   */
+; ..\Appl\GenData\NvM_Cfg.c	   329  FUNC(void, NVM_PRIVATE_CODE) NvM_ExitCriticalSection(void)
+; Function NvM_ExitCriticalSection
+NvM_ExitCriticalSection:	.type	func
+
+; ..\Appl\GenData\NvM_Cfg.c	   330  {
+; ..\Appl\GenData\NvM_Cfg.c	   331    /* do what ever was defined to do for unlocking the resources */
+; ..\Appl\GenData\NvM_Cfg.c	   332    SchM_Exit_NvM_NVM_EXCLUSIVE_AREA_0();
+	j	ResumeAllInterrupts
+	
+__NvM_ExitCriticalSection_function_end:
+	.size	NvM_ExitCriticalSection,__NvM_ExitCriticalSection_function_end-NvM_ExitCriticalSection
+	; End of function
+	
+	.sdecl	'.text.NvM_Cfg.NvM_MultiBlockCbk',code
+	.sect	'.text.NvM_Cfg.NvM_MultiBlockCbk'
+	.align	2
+	
+	.global	NvM_MultiBlockCbk
+
+; ..\Appl\GenData\NvM_Cfg.c	   333  }
+; ..\Appl\GenData\NvM_Cfg.c	   334  
+; ..\Appl\GenData\NvM_Cfg.c	   335  /* PRQA S 3453 1 */ /* MD_MSR_FctLikeMacro */
+; ..\Appl\GenData\NvM_Cfg.c	   336  #define NvM_invokeMultiBlockMode(serv, res)  /*  if NvMBswMMultiBlockJobStatusInformation is TRUE  */
+; ..\Appl\GenData\NvM_Cfg.c	   337  
+; ..\Appl\GenData\NvM_Cfg.c	   338  /* PRQA S 3453 1 */ /* MD_MSR_FctLikeMacro */
+; ..\Appl\GenData\NvM_Cfg.c	   339  #define NvM_invokeMultiCbk(serv, res)   /*  if Multi Block Callback is configured  */
+; ..\Appl\GenData\NvM_Cfg.c	   340  
+; ..\Appl\GenData\NvM_Cfg.c	   341  /* PRQA S 3453 1 */ /* MD_MSR_FctLikeMacro */
+; ..\Appl\GenData\NvM_Cfg.c	   342  #define NvM_invokeDetectedLossOfRedundancyCallback(blockId) NVM_DUMMY_STATEMENT((blockId))
+; ..\Appl\GenData\NvM_Cfg.c	   343  
+; ..\Appl\GenData\NvM_Cfg.c	   344  /**********************************************************************************************************************
+; ..\Appl\GenData\NvM_Cfg.c	   345  *  NvM_MultiBlockCbk
+; ..\Appl\GenData\NvM_Cfg.c	   346  **********************************************************************************************************************/
+; ..\Appl\GenData\NvM_Cfg.c	   347  /*!
+; ..\Appl\GenData\NvM_Cfg.c	   348   * \internal
+; ..\Appl\GenData\NvM_Cfg.c	   349   *  - #10 invoke the BSWM notification if any is configured
+; ..\Appl\GenData\NvM_Cfg.c	   350   *  - #20 in case the given job result isn't set to pending, invoke the multi block job end notification
+; ..\Appl\GenData\NvM_Cfg.c	   351   * \endinternal
+; ..\Appl\GenData\NvM_Cfg.c	   352   */
+; ..\Appl\GenData\NvM_Cfg.c	   353  /* PRQA S 3206 1 */ /* MD_NvM_Cfg_2.7 */
+; ..\Appl\GenData\NvM_Cfg.c	   354  FUNC(void, NVM_PRIVATE_CODE) NvM_MultiBlockCbk(NvM_ServiceIdType ServiceId, NvM_RequestResultType JobResult)
+; Function NvM_MultiBlockCbk
+NvM_MultiBlockCbk:	.type	func
+
+; ..\Appl\GenData\NvM_Cfg.c	   355  {
+; ..\Appl\GenData\NvM_Cfg.c	   356    /* The complete function body is designed to be optimized away by the compiler, if it is not needed    *
+; ..\Appl\GenData\NvM_Cfg.c	   357     * If the used macro is empty, the compiler may decide to remove code because it would contain         *
+; ..\Appl\GenData\NvM_Cfg.c	   358     * empty execution blocks (it does not matter whether conditions were TRUE or FALSE                    */
+; ..\Appl\GenData\NvM_Cfg.c	   359    NvM_invokeMultiBlockMode(ServiceId, JobResult);
+; ..\Appl\GenData\NvM_Cfg.c	   360  
+; ..\Appl\GenData\NvM_Cfg.c	   361    if(JobResult != NVM_REQ_PENDING)
+; ..\Appl\GenData\NvM_Cfg.c	   362    {
+; ..\Appl\GenData\NvM_Cfg.c	   363      NvM_invokeMultiCbk(ServiceId, JobResult);
+; ..\Appl\GenData\NvM_Cfg.c	   364    }   
+; ..\Appl\GenData\NvM_Cfg.c	   365  }
+	ret
+	
+__NvM_MultiBlockCbk_function_end:
+	.size	NvM_MultiBlockCbk,__NvM_MultiBlockCbk_function_end-NvM_MultiBlockCbk
+	; End of function
+	
+	.sdecl	'.text.NvM_Cfg.NvM_NotifyLossOfRedundancy',code
+	.sect	'.text.NvM_Cfg.NvM_NotifyLossOfRedundancy'
+	.align	2
+	
+	.global	NvM_NotifyLossOfRedundancy
+
+; ..\Appl\GenData\NvM_Cfg.c	   366  
+; ..\Appl\GenData\NvM_Cfg.c	   367  /**********************************************************************************************************************
+; ..\Appl\GenData\NvM_Cfg.c	   368  *  NvM_NotifyLossOfRedundancy
+; ..\Appl\GenData\NvM_Cfg.c	   369  **********************************************************************************************************************/
+; ..\Appl\GenData\NvM_Cfg.c	   370  /*!
+; ..\Appl\GenData\NvM_Cfg.c	   371   * \internal
+; ..\Appl\GenData\NvM_Cfg.c	   372   *  - invoke the notification callback if any is configured
+; ..\Appl\GenData\NvM_Cfg.c	   373   * \endinternal
+; ..\Appl\GenData\NvM_Cfg.c	   374   */
+; ..\Appl\GenData\NvM_Cfg.c	   375  /* PRQA S 3206 1 */ /* MD_NvM_Cfg_2.7 */
+; ..\Appl\GenData\NvM_Cfg.c	   376  FUNC(void, NVM_PRIVATE_CODE) NvM_NotifyLossOfRedundancy(NvM_BlockIdType BlockId)
+; Function NvM_NotifyLossOfRedundancy
+NvM_NotifyLossOfRedundancy:	.type	func
+
+; ..\Appl\GenData\NvM_Cfg.c	   377  {
+; ..\Appl\GenData\NvM_Cfg.c	   378    NvM_invokeDetectedLossOfRedundancyCallback(BlockId);
+; ..\Appl\GenData\NvM_Cfg.c	   379  }
+	ret
+	
+__NvM_NotifyLossOfRedundancy_function_end:
+	.size	NvM_NotifyLossOfRedundancy,__NvM_NotifyLossOfRedundancy_function_end-NvM_NotifyLossOfRedundancy
+	; End of function
+	
+	.sdecl	'.zrodata.NvM_Cfg.NvM_NoOfCrcBytes_u16',data,rom
+	.sect	'.zrodata.NvM_Cfg.NvM_NoOfCrcBytes_u16'
+	.global	NvM_NoOfCrcBytes_u16
+	.align	2
+NvM_NoOfCrcBytes_u16:	.type	object
+	.size	NvM_NoOfCrcBytes_u16,2
+	.half	64
+	.sdecl	'.zrodata.NvM_Cfg.NvM_CrcQueueSize_u16',data,rom
+	.sect	'.zrodata.NvM_Cfg.NvM_CrcQueueSize_u16'
+	.global	NvM_CrcQueueSize_u16
+	.align	2
+NvM_CrcQueueSize_u16:	.type	object
+	.size	NvM_CrcQueueSize_u16,2
+	.half	3
+	.sdecl	'.zbss.NvM_Cfg.NvMConfigBlock_RamBlock_au8',data
+	.sect	'.zbss.NvM_Cfg.NvMConfigBlock_RamBlock_au8'
+NvMConfigBlock_RamBlock_au8:	.type	object
+	.size	NvMConfigBlock_RamBlock_au8,4
+	.space	4
+	.sdecl	'.zbss.NvM_Cfg.NvM_InternalBuffer_au8',data
+	.sect	'.zbss.NvM_Cfg.NvM_InternalBuffer_au8'
+	.global	NvM_InternalBuffer_au8
+NvM_InternalBuffer_au8:	.type	object
+	.size	NvM_InternalBuffer_au8,6
+	.space	6
+	.sdecl	'.zrodata.NvM_Cfg.NvM_NoOfBlockIds_t',data,rom
+	.sect	'.zrodata.NvM_Cfg.NvM_NoOfBlockIds_t'
+	.global	NvM_NoOfBlockIds_t
+	.align	2
+NvM_NoOfBlockIds_t:	.type	object
+	.size	NvM_NoOfBlockIds_t,2
+	.half	3
+	.sdecl	'.zrodata.NvM_Cfg.NvM_CompiledConfigId_t',data,rom
+	.sect	'.zrodata.NvM_Cfg.NvM_CompiledConfigId_t'
+	.global	NvM_CompiledConfigId_t
+	.align	2
+NvM_CompiledConfigId_t:	.type	object
+	.size	NvM_CompiledConfigId_t,2
+	.half	1
+	.sdecl	'.rodata.NvM_Cfg.NvM_BlockDescriptorTable_at',data,rom
+	.sect	'.rodata.NvM_Cfg.NvM_BlockDescriptorTable_at'
+	.global	NvM_BlockDescriptorTable_at
+	.align	4
+NvM_BlockDescriptorTable_at:	.type	object
+	.size	NvM_BlockDescriptorTable_at,204
+	.space	50
+	.half	1
+	.space	10
+	.byte	255
+	.space	5
+	.word	NvMConfigBlock_RamBlock_au8
+	.space	44
+	.byte	40,1
+	.half	16,2,2
+	.space	5
+	.byte	2,127,144
+	.space	52
+	.byte	8
+	.space	1
+	.half	32,4,4
+	.space	5
+	.byte	1,127,128
+	.space	4
+	.sdecl	'.bss.NvM_Cfg.NvM_JobQueue_at',data
+	.sect	'.bss.NvM_Cfg.NvM_JobQueue_at'
+	.global	NvM_JobQueue_at
+	.align	4
+NvM_JobQueue_at:	.type	object
+	.size	NvM_JobQueue_at,96
+	.space	96
+	.calls	'NvM_EnterCriticalSection','SuspendAllInterrupts'
+	.calls	'NvM_ExitCriticalSection','ResumeAllInterrupts'
+	.calls	'NvM_EnterCriticalSection','',0
+	.calls	'NvM_ExitCriticalSection','',0
+	.calls	'NvM_MultiBlockCbk','',0
+	.extern	SuspendAllInterrupts
+	.extern	ResumeAllInterrupts
+	.calls	'NvM_NotifyLossOfRedundancy','',0
+
+; ..\Appl\GenData\NvM_Cfg.c	   380  
+; ..\Appl\GenData\NvM_Cfg.c	   381  #define NVM_STOP_SEC_CODE
+; ..\Appl\GenData\NvM_Cfg.c	   382  #include "NvM_MemMap.h"
+; ..\Appl\GenData\NvM_Cfg.c	   383  
+; ..\Appl\GenData\NvM_Cfg.c	   384  /* PRQA L:MemMap */
+; ..\Appl\GenData\NvM_Cfg.c	   385  
+; ..\Appl\GenData\NvM_Cfg.c	   386  /* Justification for module specific MISRA deviations:
+; ..\Appl\GenData\NvM_Cfg.c	   387  
+; ..\Appl\GenData\NvM_Cfg.c	   388  MD_NvM_Cfg_2.4
+; ..\Appl\GenData\NvM_Cfg.c	   389  Reason: NvM provides compile time block length checks via structures with bitfields with positive or negative length -
+; ..\Appl\GenData\NvM_Cfg.c	   390          the negative length lead to compiler errors. It is possible to use == or even >= check, if only one is used,
+; ..\Appl\GenData\NvM_Cfg.c	   391          the other one will never be used. The macros are always available. The created structures will never be used by NvM.
+; ..\Appl\GenData\NvM_Cfg.c	   392  Risk: No risk.
+; ..\Appl\GenData\NvM_Cfg.c	   393  Prevention: No prevention.
+; ..\Appl\GenData\NvM_Cfg.c	   394  
+; ..\Appl\GenData\NvM_Cfg.c	   395  MD_NvM_Cfg_2.7:
+; ..\Appl\GenData\NvM_Cfg.c	   396  Reason: The function NvM_MultiBlockCbk gets all needed parameters to invoke the BSWM and multi block job end callback.
+; ..\Appl\GenData\NvM_Cfg.c	   397          If both are disabled, the function is empty and does nothing - the passed parameters remain unused.
+; ..\Appl\GenData\NvM_Cfg.c	   398  Risk: No risk.
+; ..\Appl\GenData\NvM_Cfg.c	   399  Prevention: No prevention.
+; ..\Appl\GenData\NvM_Cfg.c	   400  
+; ..\Appl\GenData\NvM_Cfg.c	   401  MD_NvM_Cfg_8.9_InternalBuffer:
+; ..\Appl\GenData\NvM_Cfg.c	   402  Reason: NvM uses an internal buffer for explicit synchronization, in internal CRC buffer use case and for repair redundant blocks.
+; ..\Appl\GenData\NvM_Cfg.c	   403          Depending on configuration all, one or even none of the uses is enabled - therefore sometimes the internal buffer is
+; ..\Appl\GenData\NvM_Cfg.c	   404          used only once.
+; ..\Appl\GenData\NvM_Cfg.c	   405  Risk: No risk.
+; ..\Appl\GenData\NvM_Cfg.c	   406  Prevention: No prevention.
+; ..\Appl\GenData\NvM_Cfg.c	   407  
+; ..\Appl\GenData\NvM_Cfg.c	   408  MD_NvM_Cfg_8.11:
+; ..\Appl\GenData\NvM_Cfg.c	   409  Reason: Array of unknown size is used in order to reduce dependencies.
+; ..\Appl\GenData\NvM_Cfg.c	   410  Risk: In case the array size shall be determined it would be incorrect.
+; ..\Appl\GenData\NvM_Cfg.c	   411  Prevention: No prevention.
+; ..\Appl\GenData\NvM_Cfg.c	   412  
+; ..\Appl\GenData\NvM_Cfg.c	   413  MD_NvM_Cfg_14.3:
+; ..\Appl\GenData\NvM_Cfg.c	   414  Reason: NvM provides compile time block length checks via bitfields with positive or negative length - the negative length
+; ..\Appl\GenData\NvM_Cfg.c	   415          lead to compiler errors. With valid configuration (all block length are configured correctly), all checks are false.
+; ..\Appl\GenData\NvM_Cfg.c	   416  Risk: No risk.
+; ..\Appl\GenData\NvM_Cfg.c	   417  Prevention: No prevention. If needed the compile time checks can be disabled via configuration.
+; ..\Appl\GenData\NvM_Cfg.c	   418  
+; ..\Appl\GenData\NvM_Cfg.c	   419   */
+; ..\Appl\GenData\NvM_Cfg.c	   420  
+; ..\Appl\GenData\NvM_Cfg.c	   421  /**********************************************************************************************************************
+; ..\Appl\GenData\NvM_Cfg.c	   422   *  END OF FILE: NvM_Cfg.c
+; ..\Appl\GenData\NvM_Cfg.c	   423   *********************************************************************************************************************/
+; ..\Appl\GenData\NvM_Cfg.c	   424  
+; ..\Appl\GenData\NvM_Cfg.c	   425  
+
+	; Module end

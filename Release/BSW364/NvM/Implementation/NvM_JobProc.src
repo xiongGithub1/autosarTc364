@@ -1,0 +1,2377 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc21112a --dep-file=BSW364\\NvM\\Implementation\\.NvM_JobProc.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=BSW364\\NvM\\Implementation\\NvM_JobProc.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW364\\NvM\\Implementation\\NvM_JobProc.src ..\\BSW364\\NvM\\Implementation\\NvM_JobProc.c"
+	.compiler_name		"ctc"
+	;source	'..\\BSW364\\NvM\\Implementation\\NvM_JobProc.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.NvM_JobProc.NvM_FsmQuery',code
+	.sect	'.text.NvM_JobProc.NvM_FsmQuery'
+	.align	2
+	
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	     1  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	     2   *  COPYRIGHT
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	     4   *  \verbatim
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	     5   *  Copyright (c) 2021 by Vector Informatik GmbH.                                                  All rights reserved.
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	     6   *
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    10   *  \endverbatim
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    11   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    12   *  FILE DESCRIPTION
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    13   *  -----------------------------------------------------------------------------------------------------------------*/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    14  /*!        \file  NvM_JobProc.c
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    15   *        \brief  NvM job processing submodule source file
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    16   *      \details  This sub-module implements the FSM for the NVM, including the state description table.
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    17   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    18  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    19  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    20   *  REVISION HISTORY
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    21   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    22   *  Refer to the module's header file.
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    23   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    24  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    25  #define NVM_JOBPROC_SOURCE
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    26  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    27  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    28   *  INCLUDES
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    29   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    30  /* NvM_JobProc.h includes all needed headers, e.g. configuration, action, query... */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    31  #include "NvM_JobProc.h"
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    32  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    33  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    34   *  LOCAL FUNCTION MACROS
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    35   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    36  #ifndef NVM_LOCAL /* COV_NVM_COMPATIBILITY */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    37  # define NVM_LOCAL static
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    38  #endif
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    39  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    40  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    41   *  LOCAL CONSTANT MACROS
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    42   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    43  /* these macros shall increase the readability of the State Descriptor Table */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    44  #define NVM_STATE_IF
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    45  #define NVM_STATE_ELSEIF
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    46  #define NVM_STATE_THEN
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    47  #define NVM_STATE_ELSE
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    48  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    49  #define NVM_NEXT_STATE(state) (state) /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    50  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    51  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    52   *  LOCAL DATA PROTOTYPES
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    53   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    54  #define NVM_START_SEC_VAR_FAST_NO_INIT_8
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    55  #include "NvM_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    56  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    57  /* at least for development mode (where the following two state types are enums) the
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    58  * compiler is expected to ensure correct alignment, regardless of any given section alignment.
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    59  * The state variables are used quite frequently (but never via pointers)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    60  */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    61  VAR(NvM_StateIdType, NVM_FAST_DATA) NvM_JobMainState_t;
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    62  VAR(NvM_StateIdType, NVM_FAST_DATA) NvM_JobSubState_t;
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    63  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    64  #define NVM_STOP_SEC_VAR_FAST_NO_INIT_8
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    65  #include "NvM_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    66  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    67  #define NVM_START_SEC_VAR_CLEARED_UNSPECIFIED
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    68  #include "NvM_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    69  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    70  /* state of the task state machine */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    71  VAR(NvM_StateIdType, NVM_PRIVATE_DATA) NvM_TaskState_t = NVM_STATE_UNINIT;
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    72  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    73  #define NVM_STOP_SEC_VAR_CLEARED_UNSPECIFIED
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    74  #include "NvM_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    75  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    76  #define NVM_START_SEC_VAR_NO_INIT_UNSPECIFIED
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    77  #include "NvM_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    78  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    79  VAR(NvM_BlockInfoType, NVM_PRIVATE_DATA) NvM_CurrentBlockInfo_t;
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    80  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    81  /* Holds data integrity record of a redundant block only.
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    82   * Used for detection of LOSS_OF_REDUNDANCY while reading data. */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    83  VAR(uint8, NVM_PRIVATE_DATA) NvM_SecondaryRedundantBlockDataIntegrityRecord[NVM_MAX_NUM_BYTES_DATAINTEGRITYRECORD];
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    84  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    85  #if (NVM_REPAIR_REDUNDANT_BLOCKS_API == STD_ON)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    86  VAR(NvM_RepairBlockStateType, NVM_PRIVATE_DATA) NvM_RepairRedBlockState;
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    87  #endif
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    88  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    89  /* array of RAM Block Management areas, defined to be usable in block descriptor table */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    90  VAR(NvM_RamMngmtAreaType, NVM_CONFIG_DATA) NvM_BlockMngmtArea_at[NVM_TOTAL_NUM_OF_NVRAM_BLOCKS];
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    91  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    92  /* management area for DCM blocks */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    93  VAR(NvM_RamMngmtAreaType, NVM_CONFIG_DATA) NvM_DcmBlockMngmt_t;
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    94  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    95  #define NVM_STOP_SEC_VAR_NO_INIT_UNSPECIFIED
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    96  #include "NvM_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    97  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    98  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	    99  #define NVM_START_SEC_CONST_UNSPECIFIED
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   100  #include "NvM_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   101  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   102  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   103   *  JOB DESCRIPTOR TABLE
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   104   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   105  CONST(NvM_IntServiceDescrType, NVM_PRIVATE_CONST) NvM_IntServiceDescrTable_at[(uint32)NVM_INT_FID_NO_JOB_PENDING + 1u] =
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   106  {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   107      /* NVM_INT_FID_WRITE_BLOCK */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   108      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   109          NVM_ACT_ID_InitWriteBlock, NVM_STATE_WRITE_COPY_BUFFER_DATA, NVM_WRITE_BLOCK
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   110      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   111  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   112      /* NVM_INT_FID_READ_BLOCK */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   113      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   114          NVM_ACT_ID_ReadNvBlock, NVM_STATE_READ_READ_DATA, NVM_READ_BLOCK
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   115      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   116  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   117      /* NVM_INT_FID_RESTORE_DEFAULTS */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   118      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   119          NVM_ACT_ID_InitRestoreBlockDefaults, NVM_STATE_RESTORE_LOAD_ROM, NVM_RESTORE_BLOCK_DEFAULTS
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   120      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   121  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   122  #if (NVM_API_CONFIG_CLASS == NVM_API_CONFIG_CLASS_3)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   123      /* NVM_INT_FID_INVALIDATE_NV_BLOCK */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   124      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   125          NVM_ACT_ID_InvalidateNvBlock, NVM_STATE_INVALIDATING_BLOCK, NVM_INVALIDATE_NV_BLOCK
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   126      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   127  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   128      /* NVM_INT_FID_ERASE_BLOCK */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   129      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   130          NVM_ACT_ID_EraseNvBlock, NVM_STATE_ERASE_ERASE_BLOCK, NVM_ERASE_BLOCK
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   131      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   132  #else
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   133      /* NVM_INT_FID_INVALIDATE_NV_BLOCK */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   134      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   135          NVM_ACT_ID_Nop, NVM_STATE_FSM_FINISHED, NVM_INVALIDATE_NV_BLOCK
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   136      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   137  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   138      /* NVM_INT_FID_ERASE_BLOCK */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   139      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   140          NVM_ACT_ID_Nop, NVM_STATE_FSM_FINISHED, NVM_ERASE_BLOCK
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   141      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   142  #endif
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   143      /* NVM_INT_FID_WRITE_ALL */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   144      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   145          NVM_ACT_ID_InitWriteAll, NVM_STATE_WRITEALL_PROC_BLOCK, NVM_WRITE_ALL
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   146      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   147  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   148      /* NVM_INT_FID_READ_ALL */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   149      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   150          NVM_ACT_ID_InitReadAll, NVM_STATE_READALL_PROC_CONFIG_ID, NVM_READ_ALL
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   151      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   152  #if (NVM_REPAIR_REDUNDANT_BLOCKS_API == STD_ON)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   153      /* NVM_INT_FID_REPAIR_REDUNDANT_BLOCKS */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   154      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   155          NVM_ACT_ID_RepairRedBlocksInit, NVM_STATE_REPAIRREDUNDANT_MAIN, NVM_REPAIR_REDUNDANT_BLOCKS
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   156      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   157  #else
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   158      /* NVM_INT_FID_REPAIR_REDUNDANT_BLOCKS */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   159      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   160          NVM_ACT_ID_Nop, NVM_STATE_FSM_FINISHED, NVM_REPAIR_REDUNDANT_BLOCKS
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   161      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   162  #endif
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   163      /* NVM_INT_FID_NO_JOB_PENDING */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   164      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   165          NVM_ACT_ID_Nop, NVM_STATE_FSM_FINISHED, NVM_MAINFUNCTION
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   166      }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   167  };
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   168  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   169  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   170   *  STATE DESCRIPTOR TABLE
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   171   *  - stores all NvM state machines within one single array with states as element type.
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   172   *  - states are accessed via indexes - each state machine knows where to begin, following states are indexed from
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   173   *  current processing state
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   174   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   175  NVM_LOCAL CONST(NvM_StateDescrType, NVM_PRIVATE_CONST) NvM_StateDescrTable_at[] = /* PRQA S 3218 */ /* MD_NvM_8.9_StateTable */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   176  {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   177  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   178   *  NvM uninitialized
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   179   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   180      /* NVM_STATE_UNINIT
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   181       * if the TASK runs when the NVM is not initialized yet, use Wait Action to remain in UNINIT state.
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   182       * This state can only be left through a call to NvM_Init by ECU state manager */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   183      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   184          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   185              /* Exit 1 */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   186              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   187                  NVM_STATE_IF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   188                      NVM_STATE_THEN{NVM_ACT_ID_Wait, NVM_ACT_ID_Wait},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   189                      NVM_NEXT_STATE(NVM_STATE_UNINIT)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   190              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   191              /* Exit 2 */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   192              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   193                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   194                      NVM_STATE_THEN{NVM_ACT_ID_Wait, NVM_ACT_ID_Wait},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   195                      NVM_NEXT_STATE(NVM_STATE_UNINIT)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   196              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   197              /* Exit 3 */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   198              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   199                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   200                      NVM_STATE_THEN{NVM_ACT_ID_Wait, NVM_ACT_ID_Wait},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   201                      NVM_NEXT_STATE(NVM_STATE_UNINIT)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   202              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   203          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   204          /* final case */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   205          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   206              NVM_STATE_ELSE{NVM_ACT_ID_Wait, NVM_ACT_ID_Wait},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   207              NVM_NEXT_STATE(NVM_STATE_UNINIT)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   208          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   209      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   210  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   211   *  NvM idle
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   212   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   213  #if (NVM_API_CONFIG_CLASS == NVM_API_CONFIG_CLASS_1)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   214      /* NVM_STATE_IDLE */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   215      /* in API config class 1, we only have to wait for a multi block job ReadAll or WriteAll */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   216      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   217          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   218              /* Multi block job found */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   219              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   220                  NVM_STATE_IF{NVM_QRY_ID_MULTI_BLK_JOB, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   221                      NVM_STATE_THEN{NVM_ACT_ID_GetMultiBlockJob, NVM_ACT_ID_InitMainFsm},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   222  # if (NVM_KILL_WRITEALL_API == STD_ON)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   223                      NVM_NEXT_STATE(NVM_STATE_MULTI_BLOCK_JOB)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   224  # else
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   225                      NVM_NEXT_STATE(NVM_STATE_NORMAL_PRIO_JOB)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   226  # endif
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   227              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   228              /* no job found */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   229              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   230                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   231                      NVM_STATE_THEN{NVM_ACT_ID_Wait, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   232                      NVM_NEXT_STATE(NVM_STATE_IDLE)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   233              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   234              /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   235              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   236                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   237                      NVM_STATE_THEN{NVM_ACT_ID_Wait, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   238                      NVM_NEXT_STATE(NVM_STATE_IDLE)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   239              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   240          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   241          /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   242          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   243              NVM_STATE_ELSE{NVM_ACT_ID_Wait, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   244              NVM_NEXT_STATE(NVM_STATE_IDLE)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   245          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   246      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   247  #elif (NVM_JOB_PRIORISATION == STD_ON) /* && (NVM_API_CONFIG_CLASS > NVM_API_CONFIG_CLASS_1) */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   248      /* NVM_STATE_IDLE */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   249      /* Scan job lists, if no job was found: wait */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   250      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   251          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   252              /* High priority job found */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   253              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   254                  NVM_STATE_IF{NVM_QRY_ID_HI_PRIO_JOB, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   255                      NVM_STATE_THEN{NVM_ACT_ID_GetHighPrioJob, NVM_ACT_ID_InitMainFsm},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   256                      NVM_NEXT_STATE(NVM_STATE_HIGH_PRIO_JOB)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   257              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   258              /* Normal priority job found */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   259              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   260                  NVM_STATE_ELSEIF{NVM_QRY_ID_NORMAL_PRIO_JOB, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   261                      NVM_STATE_THEN{NVM_ACT_ID_GetNormalPrioJob, NVM_ACT_ID_InitMainFsm},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   262                      NVM_NEXT_STATE(NVM_STATE_NORMAL_PRIO_JOB)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   263              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   264              /* Multi block job found */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   265              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   266                  NVM_STATE_ELSEIF{NVM_QRY_ID_MULTI_BLK_JOB, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   267                      NVM_STATE_THEN{NVM_ACT_ID_GetMultiBlockJob, NVM_ACT_ID_InitMainFsm},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   268  # if (NVM_KILL_WRITEALL_API == STD_ON)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   269                      NVM_NEXT_STATE(NVM_STATE_MULTI_BLOCK_JOB)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   270  # else
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   271                      NVM_NEXT_STATE(NVM_STATE_NORMAL_PRIO_JOB)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   272  # endif
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   273              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   274          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   275          /* final case, no job found */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   276          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   277              NVM_STATE_ELSE{NVM_ACT_ID_Wait, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   278              NVM_NEXT_STATE(NVM_STATE_IDLE)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   279          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   280      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   281  #else /* (NVM_JOB_PRIORISATION == STD_OFF) && (NVM_API_CONFIG_CLASS > NVM_API_CONFIG_CLASS_1) */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   282      /* NVM_STATE_IDLE */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   283      /* Scan job lists, if no job was found: wait */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   284      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   285          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   286              /* Single block job found */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   287              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   288                  NVM_STATE_ELSEIF{NVM_QRY_ID_NORMAL_PRIO_JOB, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   289                      NVM_STATE_THEN{NVM_ACT_ID_GetNormalPrioJob, NVM_ACT_ID_InitMainFsm},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   290                      NVM_NEXT_STATE(NVM_STATE_NORMAL_PRIO_JOB)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   291              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   292              /* Multi block job found */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   293              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   294                  NVM_STATE_ELSEIF{NVM_QRY_ID_MULTI_BLK_JOB, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   295                      NVM_STATE_THEN{NVM_ACT_ID_GetMultiBlockJob, NVM_ACT_ID_InitMainFsm},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   296  # if (NVM_KILL_WRITEALL_API == STD_ON)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   297                      NVM_NEXT_STATE(NVM_STATE_MULTI_BLOCK_JOB)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   298  # else
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   299                      NVM_NEXT_STATE(NVM_STATE_NORMAL_PRIO_JOB)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   300  # endif
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   301              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   302              /* no job found */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   303              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   304                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   305                      NVM_STATE_THEN{NVM_ACT_ID_Wait, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   306                      NVM_NEXT_STATE(NVM_STATE_IDLE)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   307              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   308          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   309          /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   310          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   311              NVM_STATE_ELSE{NVM_ACT_ID_Wait, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   312              NVM_NEXT_STATE(NVM_STATE_IDLE)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   313          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   314      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   315  #endif /* (NVM_JOB_PRIORISATION == STD_OFF) && (NVM_API_CONFIG_CLASS > NVM_API_CONFIG_CLASS_1) */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   316  #if ((NVM_API_CONFIG_CLASS != NVM_API_CONFIG_CLASS_1) && (NVM_JOB_PRIORISATION == STD_ON))
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   317      /* NVM_STATE_HIGH_PRIO_JOB = High prio WriteJob, not cancelable */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   318      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   319          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   320              /* main job fsm still running */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   321              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   322                  NVM_STATE_IF{NVM_QRY_ID_MAIN_FSM_RUNNING, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   323                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   324                      NVM_NEXT_STATE(NVM_STATE_HIGH_PRIO_JOB)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   325              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   326              /* main job fsm finished */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   327              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   328                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   329                      /* Finish the job and exit MainFunction. Reason: when re-starting an canceled WriteAll
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   330                       * (via immediate priority job) directly in same MainFunction as finishing the immediate
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   331                       * priority job, the WriteAll will overwrite the immediate priority job result! Therefore
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   332                       * exit the MainFunction and "allow" processing of other components, which may wait for the
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   333                       * immediate priority job. */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   334                      NVM_STATE_THEN{NVM_ACT_ID_FinishMainJob, NVM_ACT_ID_Wait},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   335                      NVM_NEXT_STATE(NVM_STATE_IDLE)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   336              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   337              /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   338              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   339                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   340                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   341                      NVM_NEXT_STATE(NVM_STATE_IDLE)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   342              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   343          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   344          /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   345          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   346              NVM_STATE_ELSE{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   347              NVM_NEXT_STATE(NVM_STATE_IDLE)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   348          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   349      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   350  #endif /* ((NVM_API_CONFIG_CLASS != NVM_API_CONFIG_CLASS_1) && (NVM_JOB_PRIORISATION == STD_ON)) */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   351  #if ((NVM_JOB_PRIORISATION == STD_ON) && (NVM_API_CONFIG_CLASS > NVM_API_CONFIG_CLASS_1))
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   352      /* NVM_STATE_NORMAL_PRIO_JOB = cancelable, all "NOT HighPrioWrite" jobs */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   353      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   354          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   355              {   /* low prio job running or finished, immediate job occurred */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   356                  NVM_STATE_IF{NVM_QRY_ID_HI_PRIO_JOB, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   357                      NVM_STATE_THEN{NVM_ACT_ID_GetHighPrioJob, NVM_ACT_ID_InitMainFsm},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   358                      NVM_NEXT_STATE(NVM_STATE_HIGH_PRIO_JOB)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   359              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   360              {   /* continue with the running job */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   361                  NVM_STATE_ELSEIF{NVM_QRY_ID_MAIN_FSM_RUNNING, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   362                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   363                      NVM_NEXT_STATE(NVM_STATE_NORMAL_PRIO_JOB)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   364              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   365              {   /* job fsm finished */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   366                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   367                      NVM_STATE_THEN{NVM_ACT_ID_FinishMainJob, NVM_ACT_ID_QueueFreeLastJob},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   368                      NVM_NEXT_STATE(NVM_STATE_IDLE)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   369              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   370          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   371          /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   372          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   373              NVM_STATE_ELSE{NVM_ACT_ID_FinishMainJob, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   374              NVM_NEXT_STATE(NVM_STATE_IDLE)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   375          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   376      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   377  #else
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   378      /* NVM_STATE_NORMAL_PRIO_JOB */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   379      /* not cancelable as there are no high prio jobs, jobs do not need to be freed after processing */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   380      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   381          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   382              {   /* continue the running job */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   383                  NVM_STATE_IF{NVM_QRY_ID_MAIN_FSM_RUNNING, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   384                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   385                      NVM_NEXT_STATE(NVM_STATE_NORMAL_PRIO_JOB)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   386              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   387              {   /* job finished */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   388                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   389                      NVM_STATE_THEN{NVM_ACT_ID_FinishMainJob, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   390                      NVM_NEXT_STATE(NVM_STATE_IDLE)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   391              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   392              /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   393              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   394                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   395                      NVM_STATE_THEN{NVM_ACT_ID_FinishMainJob, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   396                      NVM_NEXT_STATE(NVM_STATE_IDLE)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   397              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   398          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   399          /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   400          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   401              NVM_STATE_ELSE{NVM_ACT_ID_FinishReadBlock, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   402              NVM_NEXT_STATE(NVM_STATE_IDLE)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   403          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   404      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   405  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   406  #endif
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   407  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   408  #if (NVM_KILL_WRITEALL_API == STD_ON)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   409      /* NVM_STATE_MULTI_BLOCK_JOB */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   410  # if ((NVM_JOB_PRIORISATION == STD_ON) && (NVM_API_CONFIG_CLASS > NVM_API_CONFIG_CLASS_1))
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   411          /* NVM_STATE_NORMAL_PRIO_JOB = cancelable, all "NOT HighPrioWrite" jobs */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   412          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   413              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   414                  {   /* WriteAll, but it was killed => Finish FSM, even if a high priority job might be waiting
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   415                         It would be next job in "normal" processing - from IDLE */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   416                      NVM_STATE_IF{NVM_QR_ID_WRITEALL_KILLED, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   417                          NVM_STATE_THEN{NVM_ACT_ID_KillWritAll, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   418                          NVM_NEXT_STATE(NVM_STATE_IDLE)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   419                  },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   420                  {   /* low prio job running or finished, immediate job occurred */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   421                      NVM_STATE_ELSEIF{NVM_QRY_ID_HI_PRIO_JOB, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   422                          NVM_STATE_THEN{NVM_ACT_ID_GetHighPrioJob, NVM_ACT_ID_InitMainFsm},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   423                          NVM_NEXT_STATE(NVM_STATE_HIGH_PRIO_JOB)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   424                  },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   425                  {   /* continue with the running job */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   426                      NVM_STATE_ELSEIF{NVM_QRY_ID_MAIN_FSM_RUNNING, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   427                          NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   428                          NVM_NEXT_STATE(NVM_STATE_MULTI_BLOCK_JOB)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   429                  }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   430              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   431              /* final case: job fsm finished */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   432              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   433                  NVM_STATE_ELSE{NVM_ACT_ID_FinishMainJob, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   434                  NVM_NEXT_STATE(NVM_STATE_IDLE)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   435              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   436          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   437  # else
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   438          /* not cancelable as there are no high priority jobs,
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   439           * jobs do not need to be freed after processing */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   440          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   441              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   442                  {   /* WriteAll, but it was killed => Finish FSM, even if a high prio job might be waiting
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   443                         It would be next job in "normal" processing - from IDLE */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   444                      NVM_STATE_IF{NVM_QR_ID_WRITEALL_KILLED, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   445                          NVM_STATE_THEN{NVM_ACT_ID_KillWritAll, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   446                          NVM_NEXT_STATE(NVM_STATE_IDLE)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   447                  },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   448                  {   /* continue the running job */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   449                      NVM_STATE_ELSEIF{NVM_QRY_ID_MAIN_FSM_RUNNING, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   450                          NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   451                          NVM_NEXT_STATE(NVM_STATE_MULTI_BLOCK_JOB)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   452                  },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   453                  {   /* job finished */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   454                      NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   455                          NVM_STATE_THEN{NVM_ACT_ID_FinishMainJob, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   456                          NVM_NEXT_STATE(NVM_STATE_IDLE)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   457                  },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   458              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   459              /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   460              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   461                  NVM_STATE_ELSE{NVM_ACT_ID_FinishMainJob, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   462                  NVM_NEXT_STATE(NVM_STATE_IDLE)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   463              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   464          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   465  # endif /* Job prioritization */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   466  #endif /* NVM_KILL_WRITEALL_API */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   467  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   468   *  ReadBlock
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   469   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   470      /* NVM_STATE_READ_READ_DATA */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   471      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   472          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   473              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   474                  /* NV busy -> wait */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   475                  NVM_STATE_IF{NVM_QRY_ID_NV_BUSY, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   476                      NVM_STATE_THEN{NVM_ACT_ID_Wait, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   477                      NVM_NEXT_STATE(NVM_STATE_READ_READ_DATA)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   478              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   479              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   480                  /* NV idle && OK && CRC calculation ongoing -> calculate the CRC */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   481                  NVM_STATE_ELSEIF{NVM_QRY_ID_LAST_RESULT_OK, NVM_QRY_ID_IS_DATA_INTEGRITY_ALGORITHM_CONFIGURED},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   482                      NVM_STATE_THEN{NVM_ACT_ID_SetupDataIntegrityVerification_ReadBlock, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   483                      NVM_NEXT_STATE(NVM_STATE_READ_VERIFY_DATA_INTEGRITY)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   484              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   485              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   486                  /* NV idle && OK && no CRC -> take care about data validation */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   487                  NVM_STATE_ELSEIF{NVM_QRY_ID_LAST_RESULT_OK, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   488                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   489                      NVM_NEXT_STATE(NVM_STATE_READ_DATA_VALIDATION)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   490              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   491          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   492          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   493              /* NV idle && != OK -> try recovery */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   494              NVM_STATE_ELSE{NVM_ACT_ID_Nop,  NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   495              NVM_NEXT_STATE(NVM_STATE_READ_IMPL_RECOV)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   496          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   497      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   498      /* NVM_STATE_READ_DATA_VALIDATION */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   499      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   500          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   501              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   502                  /* Decryption and data transformation -> if successful, data is valid, finalize job. */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   503                  NVM_STATE_IF{NVM_QRY_ID_SYNCDECRYPT, NVM_QRY_ID_POST_READ_TRANSFORM},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   504                      NVM_STATE_THEN{NVM_ACT_ID_ValidateRam, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   505                      NVM_NEXT_STATE(NVM_STATE_READ_FINALIZE)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   506              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   507              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   508                  /* Retry decryption job if configured and last job was not successful */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   509                  NVM_STATE_ELSEIF{NVM_QRY_ID_CSM_RETRIES_NECESSARY, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   510                      NVM_STATE_THEN{NVM_ACT_ID_Wait, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   511                      NVM_NEXT_STATE(NVM_STATE_READ_DATA_VALIDATION)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   512              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   513              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   514                  /* Decryption or transform job failed -> set result and try recovery */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   515                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   516                      NVM_STATE_THEN{NVM_ACT_ID_SetReqNotOk, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   517                      NVM_NEXT_STATE(NVM_STATE_READ_IMPL_RECOV)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   518              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   519          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   520          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   521              /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   522              NVM_STATE_ELSE{NVM_ACT_ID_Nop,  NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   523              NVM_NEXT_STATE(NVM_STATE_READ_IMPL_RECOV)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   524          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   525      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   526      /* NVM_STATE_READ_VERIFY_DATA_INTEGRITY */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   527      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   528          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   529              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   530                  /* Loop: busy -> processing */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   531                  NVM_STATE_IF{NVM_QRY_ID_IS_DATA_INTEGRITY_JOB_PENDING, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   532                      NVM_STATE_THEN{NVM_ACT_ID_ProcessDataIntegrityJob, NVM_ACT_ID_Wait},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   533                      NVM_NEXT_STATE(NVM_STATE_READ_VERIFY_DATA_INTEGRITY)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   534              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   535              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   536                  /* successful verification && LossOfRedundancy check enabled -> go to redundancy check */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   537                  NVM_STATE_ELSEIF{NVM_QRY_ID_IS_DATA_INTEGRITY_JOB_FINISHED_SUCCESSFUL, NVM_QRY_ID_BLOCK_CHECK_LOSS_OF_REDUNDANCY},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   538                      NVM_STATE_THEN{NVM_ACT_ID_ExportDataIntegrityInformation, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   539                      NVM_NEXT_STATE(NVM_STATE_READ_PRE_CHECK_LOSS_OF_REDUNDANCY)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   540              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   541              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   542                  /* successful verification && LossOfRedundancy check disabled -> go to data validation */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   543                  NVM_STATE_ELSEIF{NVM_QRY_ID_IS_DATA_INTEGRITY_JOB_FINISHED_SUCCESSFUL, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   544                      NVM_STATE_THEN{NVM_ACT_ID_ExportDataIntegrityInformation, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   545                      NVM_NEXT_STATE(NVM_STATE_READ_DATA_VALIDATION)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   546              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   547          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   548          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   549              /* verification error -> try recovery */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   550              NVM_STATE_ELSE{NVM_ACT_ID_SetReqIntegrityFailed, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   551              NVM_NEXT_STATE(NVM_STATE_READ_IMPL_RECOV)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   552          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   553      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   554      /* NVM_STATE_READ_PRE_CHECK_LOSS_OF_REDUNDANCY */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   555      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   556          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   557              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   558                  /* Second redundant block and first block failed -> trigger DEM and go to data validation
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   559                   * Note: This state will only be entered after an successful read of data + integrity check */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   560                  NVM_STATE_IF{NVM_QRY_ID_SECONDARY_REDUNDANT_BLOCK, NVM_QRY_ID_FIRST_REDUNDANT_BLOCK_FAILED},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   561                      NVM_STATE_THEN{NVM_ACT_ID_NotifyLossOfRedundancy, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   562                      NVM_NEXT_STATE(NVM_STATE_READ_DATA_VALIDATION)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   563              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   564              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   565                  /* Implicit: First block succeeded -> read CRC only from redundant block */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   566                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   567                      NVM_STATE_THEN{NVM_ACT_ID_SetupRedundant, NVM_ACT_ID_ReadNvBlockDataIntegrityRecordOnly},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   568                      NVM_NEXT_STATE(NVM_STATE_READ_CHECK_LOSS_OF_REDUNDANCY)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   569              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   570              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   571                  /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   572                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   573                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   574                      NVM_NEXT_STATE(NVM_STATE_READ_DATA_VALIDATION)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   575              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   576          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   577          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   578              /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   579              NVM_STATE_ELSE{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   580              NVM_NEXT_STATE(NVM_STATE_READ_DATA_VALIDATION)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   581          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   582      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   583      /* NVM_STATE_READ_CHECK_LOSS_OF_REDUNDANCY */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   584      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   585          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   586              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   587                  /* NV busy -> wait */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   588                  NVM_STATE_IF{NVM_QRY_ID_NV_BUSY, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   589                      NVM_STATE_THEN{NVM_ACT_ID_Wait, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   590                      NVM_NEXT_STATE(NVM_STATE_READ_CHECK_LOSS_OF_REDUNDANCY)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   591              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   592              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   593                  /* NV finished, result=OK and redundant CRC matches the CRC of the read first block
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   594                   * => All is fine and go to data validation*/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   595                  NVM_STATE_ELSEIF{NVM_QRY_ID_LAST_RESULT_OK, NVM_QRY_ID_REDUNDANT_CRC_MATCHES},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   596                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   597                      NVM_NEXT_STATE(NVM_STATE_READ_DATA_VALIDATION)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   598              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   599              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   600                  /* Implicit: Read failed || CRC mismatch
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   601                   * -> report DEM error and go to data validation
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   602                   * -> Overwrite overall job result with OK as first block must have succeeded */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   603                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   604                      NVM_STATE_THEN{NVM_ACT_ID_NotifyLossOfRedundancy, NVM_ACT_ID_SetReqOk},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   605                      NVM_NEXT_STATE(NVM_STATE_READ_DATA_VALIDATION)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   606              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   607          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   608          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   609              /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   610              NVM_STATE_ELSE{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   611              NVM_NEXT_STATE(NVM_STATE_READ_DATA_VALIDATION)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   612          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   613      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   614      /* NVM_STATE_READ_IMPL_RECOV */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   615      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   616          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   617              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   618                  /* Redundant block && the first sub block -> try the other one */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   619                  NVM_STATE_IF{NVM_QRY_ID_PRIMARY_REDUNDANT_BLOCK, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   620                      NVM_STATE_THEN{NVM_ACT_ID_SetupRedundant, NVM_ACT_ID_ReadNvBlock},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   621                      NVM_NEXT_STATE(NVM_STATE_READ_READ_DATA)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   622              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   623              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   624                  /* Not redundant || the second sub block -> try to restore ROM */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   625                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   626                      NVM_STATE_THEN{NVM_ACT_ID_InitRestoreBlockDefaults, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   627                      NVM_NEXT_STATE(NVM_STATE_READ_LOAD_ROM)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   628              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   629              /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   630              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   631                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   632                      NVM_STATE_THEN{NVM_ACT_ID_InitRestoreBlockDefaults, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   633                      NVM_NEXT_STATE(NVM_STATE_READ_LOAD_ROM)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   634              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   635          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   636          /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   637          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   638              NVM_STATE_THEN{NVM_ACT_ID_InitRestoreBlockDefaults, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   639              NVM_NEXT_STATE(NVM_STATE_READ_LOAD_ROM)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   640          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   641      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   642      /* NVM_STATE_READ_LOAD_ROM */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   643      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   644          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   645              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   646                  /* Restoring pending -> next restore step
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   647                     Don't use "ActWait"! It would cause a wait cycle, if we didn't anything (no ROM defaults). */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   648                  NVM_STATE_IF{NVM_QRY_ID_DATA_COPY_BUSY, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   649                      NVM_STATE_THEN{NVM_ACT_ID_RestoreRomDefaults, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   650                      NVM_NEXT_STATE(NVM_STATE_READ_LOAD_ROM)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   651              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   652              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   653                  /* No ROM || default loaded -> finish restoring and the read */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   654                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   655                      NVM_STATE_THEN{NVM_ACT_ID_FinishRestoreRomDefaults, NVM_ACT_ID_FinishReadBlock},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   656                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   657              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   658              /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   659              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   660                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   661                      NVM_STATE_THEN{NVM_ACT_ID_FinishRestoreRomDefaults, NVM_ACT_ID_FinishReadBlock},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   662                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   663              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   664          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   665          /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   666          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   667              NVM_STATE_THEN{NVM_ACT_ID_FinishRestoreRomDefaults, NVM_ACT_ID_FinishReadBlock},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   668              NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   669          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   670      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   671      /* NVM_STATE_READ_FINALIZE */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   672      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   673          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   674              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   675                  /* data copy busy (e.g. explicit sync) -> process step and wait */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   676                  NVM_STATE_IF{NVM_QRY_ID_DATA_COPY_BUSY, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   677                      NVM_STATE_THEN{NVM_ACT_ID_ReadCopyData, NVM_ACT_ID_Wait},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   678                      NVM_NEXT_STATE(NVM_STATE_READ_FINALIZE)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   679              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   680              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   681                  /* data copy done -> finalize the read job */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   682                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   683                      NVM_STATE_THEN{NVM_ACT_ID_FinishReadBlock, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   684                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   685              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   686              /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   687              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   688                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   689                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   690                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   691              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   692          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   693          /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   694          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   695              NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   696              NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   697          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   698      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   699  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   700   *  WriteBlock
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   701   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   702      /* NVM_STATE_WRITE_COPY_BUFFER_DATA = initial state of Write Block */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   703      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   704          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   705              {   /* Loop: while data copy busy -> copy bytes
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   706                     Note: Implicitly takes care of PreWriteTransform handling
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   707                   */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   708                  NVM_STATE_IF{NVM_QRY_ID_DATA_COPY_BUSY, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   709                      NVM_STATE_THEN{NVM_ACT_ID_CopyNvDataToBuf, NVM_ACT_ID_Wait},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   710                      NVM_NEXT_STATE(NVM_STATE_WRITE_COPY_BUFFER_DATA)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   711              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   712  #if (NVM_CSM_CIPHERING_ENABLED == STD_ON)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   713              {   /* Encryption configured */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   714                  NVM_STATE_ELSEIF{NVM_QRY_ID_HAS_ENCRYPTION_JOB, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   715                      NVM_STATE_THEN{NVM_ACT_ID_ProcessEncryptionJob, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   716                      NVM_NEXT_STATE(NVM_STATE_WRITE_ENCRYPT_DATA)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   717              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   718  #else
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   719              {   /* In case CSM module is not used, this path always has to be false */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   720                  NVM_STATE_ELSEIF{NVM_QRY_ID_FALSE, NVM_QRY_ID_FALSE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   721                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   722                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   723              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   724  #endif
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   725              {   /* No encryption BUT DataIntegrity algorithm configured */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   726                  NVM_STATE_ELSEIF{NVM_QRY_ID_IS_DATA_INTEGRITY_ALGORITHM_CONFIGURED, NVM_QRY_ID_TRUE },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   727                      NVM_STATE_THEN{NVM_ACT_ID_SetupDataIntegrityGeneration, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   728                      NVM_NEXT_STATE(NVM_STATE_WRITE_GENERATE_DATA_INTEGRITY_INFORMATION)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   729              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   730          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   731          {   /* No encryption nor DataIntegrity algorithm configured -> go on with processing */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   732              NVM_STATE_ELSE{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   733              NVM_NEXT_STATE(NVM_STATE_WRITE_CHECK_CRCCOMPARE_SKIP)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   734          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   735      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   736      /* NVM_STATE_WRITE_ENCRYPT_DATA */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   737  #if (NVM_CSM_CIPHERING_ENABLED == STD_ON)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   738      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   739          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   740              {   /* Loop: CSM job failed but retry possible */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   741                  NVM_STATE_ELSEIF{NVM_QRY_ID_CSM_JOB_ATTEMPT_FAILED, NVM_QRY_ID_CSM_RETRIES_NECESSARY},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   742                      NVM_STATE_THEN{NVM_ACT_ID_ProcessEncryptionJob, NVM_ACT_ID_Wait},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   743                      NVM_NEXT_STATE(NVM_STATE_WRITE_ENCRYPT_DATA)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   744              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   745              {   /* CSM job failed, retry attempts exceeded maximum => Abort job with NOK */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   746                  NVM_STATE_ELSEIF{NVM_QRY_ID_CSM_JOB_ATTEMPT_FAILED, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   747                      NVM_STATE_ELSE{NVM_ACT_ID_SetReqNotOk, NVM_ACT_ID_FinishWriteBlock},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   748                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   749              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   750              {   /* CSM job succeeded && DataIntegrity algorithm configured */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   751                  NVM_STATE_ELSEIF{NVM_QRY_ID_IS_DATA_INTEGRITY_ALGORITHM_CONFIGURED, NVM_QRY_ID_TRUE },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   752                      NVM_STATE_THEN{NVM_ACT_ID_SetupDataIntegrityGeneration, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   753                      NVM_NEXT_STATE(NVM_STATE_WRITE_GENERATE_DATA_INTEGRITY_INFORMATION)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   754              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   755          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   756          {   /* CSM job succeeded, no DataIntegrity algorithm configured */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   757              NVM_STATE_ELSE{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   758              NVM_NEXT_STATE(NVM_STATE_WRITE_CHECK_CRCCOMPARE_SKIP)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   759          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   760      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   761  #endif
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   762      /* NVM_STATE_WRITE_GENERATE_DATA_INTEGRITY_INFORMATION */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   763      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   764          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   765              {   /* Loop: job busy -> processing */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   766                  NVM_STATE_ELSEIF{NVM_QRY_ID_IS_DATA_INTEGRITY_JOB_PENDING, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   767                      NVM_STATE_THEN{NVM_ACT_ID_ProcessDataIntegrityJob, NVM_ACT_ID_Wait},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   768                      NVM_NEXT_STATE(NVM_STATE_WRITE_GENERATE_DATA_INTEGRITY_INFORMATION)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   769              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   770              {   /* Generation job ended successfully => go on processing */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   771                  NVM_STATE_ELSEIF{NVM_QRY_ID_IS_DATA_INTEGRITY_JOB_FINISHED_SUCCESSFUL, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   772                      NVM_STATE_THEN{NVM_ACT_ID_ExportDataIntegrityInformation, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   773                      NVM_NEXT_STATE(NVM_STATE_WRITE_CHECK_CRCCOMPARE_SKIP)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   774              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   775              {   /* Generation job failed => Abort job with NOK */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   776                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   777                      NVM_STATE_ELSE{NVM_ACT_ID_SetReqNotOk, NVM_ACT_ID_FinishWriteBlock},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   778                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   779              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   780          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   781          {   /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   782              NVM_STATE_ELSE{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   783              NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   784          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   785      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   786      /* NVM_STATE_WRITE_CHECK_CRCCOMPARE_SKIP */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   787      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   788          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   789              {   /* Redundant block => readability check primary block */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   790                  NVM_STATE_ELSEIF{NVM_QRY_ID_PRIMARY_REDUNDANT_BLOCK, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   791                      NVM_STATE_THEN{NVM_ACT_ID_TestBlockBlank, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   792                      NVM_NEXT_STATE(NVM_STATE_WRITE_READABILITY_CHECK_PRIMARY_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   793              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   794              {   /* Native or Dataset block, CRCCompareMechanism configured and matching => skip unnecessary write */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   795                  NVM_STATE_ELSEIF{NvM_QRY_ID_CRC_COMP_MECHANISM_SKIPWRITE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   796                      NVM_STATE_THEN{NVM_ACT_ID_FinishWriteBlock, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   797                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   798              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   799              {   /* Native or Dataset block, no CRCCompareMechanism configured or not matching*/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   800                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   801                      NVM_STATE_THEN{NVM_ACT_ID_WriteNvBlock, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   802                      NVM_NEXT_STATE(NVM_STATE_WRITE_NV_WRITE_DATA)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   803              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   804          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   805          {   /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   806              NVM_STATE_ELSE{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   807              NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   808          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   809      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   810      /* NVM_STATE_WRITE_READABILITY_CHECK_PRIMARY_BLOCK */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   811      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   812          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   813              {   /* read of primary NvBlock not finished -> wait */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   814                  NVM_STATE_IF{NVM_QRY_ID_NV_BUSY, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   815                      NVM_STATE_THEN{NVM_ACT_ID_Wait, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   816                      NVM_NEXT_STATE(NVM_STATE_WRITE_READABILITY_CHECK_PRIMARY_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   817              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   818              {   /* result of primary NvBlock OK -> test secondary NvBlock */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   819                  NVM_STATE_IF{NVM_QRY_ID_PRIMARY_REDUNDANT_BLOCK, NVM_QRY_ID_LAST_RESULT_OK},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   820                      NVM_STATE_THEN{NVM_ACT_ID_SetupOther, NVM_ACT_ID_TestBlockBlank},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   821                      NVM_NEXT_STATE(NVM_STATE_WRITE_READABILITY_CHECK_SECONDARY_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   822              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   823              {   /* result of primary NvBlock not OK -> write primary NvBlock first */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   824                  NVM_STATE_ELSEIF{NVM_QRY_ID_PRIMARY_REDUNDANT_BLOCK, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   825                      NVM_STATE_THEN{NVM_ACT_ID_WriteNvBlock, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   826                      NVM_NEXT_STATE(NVM_STATE_WRITE_NV_WRITE_REDUNDANT_DATA)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   827              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   828          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   829          {   /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   830              NVM_STATE_ELSE{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   831              NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   832          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   833      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   834      /* NVM_STATE_WRITE_READABILITY_CHECK_SECONDARY_BLOCK */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   835      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   836          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   837              {   /* read of secondary NvBlock not finished -> wait */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   838                  NVM_STATE_IF{NVM_QRY_ID_NV_BUSY, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   839                      NVM_STATE_THEN{NVM_ACT_ID_Wait, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   840                      NVM_NEXT_STATE(NVM_STATE_WRITE_READABILITY_CHECK_SECONDARY_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   841              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   842              {   /* Both blocks readable, CRC matches -> no write, finalize job */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   843                  NVM_STATE_ELSEIF{NVM_QRY_ID_LAST_RESULT_OK, NvM_QRY_ID_CRC_COMP_MECHANISM_SKIPWRITE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   844                     NVM_STATE_THEN{NVM_ACT_ID_FinishWriteBlock, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   845                     NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   846              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   847              {   /* result of secondary NvBlock OK -> write primary NvBlock first */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   848                  NVM_STATE_ELSEIF{NVM_QRY_ID_LAST_RESULT_OK, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   849                      NVM_STATE_THEN{NVM_ACT_ID_SetupOther, NVM_ACT_ID_WriteNvBlock},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   850                      NVM_NEXT_STATE(NVM_STATE_WRITE_NV_WRITE_REDUNDANT_DATA)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   851              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   852          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   853          /* result of secondary NvBlock not OK -> write secondary NvBlock first */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   854          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   855              NVM_STATE_ELSE{NVM_ACT_ID_WriteNvBlock, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   856              NVM_NEXT_STATE(NVM_STATE_WRITE_NV_WRITE_REDUNDANT_DATA)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   857          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   858      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   859      /* NVM_STATE_WRITE_NV_WRITE_REDUNDANT_DATA */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   860      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   861          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   862              {   /* nv write not finished -> wait */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   863                  NVM_STATE_IF{NVM_QRY_ID_NV_BUSY, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   864                      NVM_STATE_THEN{NVM_ACT_ID_Wait, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   865                      NVM_NEXT_STATE(NVM_STATE_WRITE_NV_WRITE_REDUNDANT_DATA)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   866              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   867              {   /* result ok -> write other NvBlock */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   868                  NVM_STATE_ELSEIF{NVM_QRY_ID_LAST_RESULT_OK, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   869                      NVM_STATE_THEN{NVM_ACT_ID_SetupOther, NVM_ACT_ID_WriteNvBlock},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   870                      NVM_NEXT_STATE(NVM_STATE_WRITE_NV_WRITE_DATA)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   871              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   872              {   /* result not ok, write retries exceeded -> write other NvBlock */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   873                  NVM_STATE_ELSEIF{NVM_QRY_ID_WRITE_RETRIES_EXCEEDED, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   874                      NVM_STATE_THEN{NVM_ACT_ID_SetupOther, NVM_ACT_ID_WriteNvBlock},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   875                      NVM_NEXT_STATE(NVM_STATE_WRITE_NV_WRITE_DATA)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   876              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   877          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   878          {   /* result not ok -> retry */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   879              NVM_STATE_ELSE{NVM_ACT_ID_WriteNvBlock, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   880              NVM_NEXT_STATE(NVM_STATE_WRITE_NV_WRITE_REDUNDANT_DATA)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   881          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   882      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   883      /* NVM_STATE_WRITE_EXECUTE_NV_WRITE_DATA */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   884      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   885          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   886              {   /* nv write not finished -> wait */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   887                  NVM_STATE_IF{NVM_QRY_ID_NV_BUSY, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   888                      NVM_STATE_THEN{NVM_ACT_ID_Wait, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   889                      NVM_NEXT_STATE(NVM_STATE_WRITE_NV_WRITE_DATA)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   890              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   891              {   /* result ok -> update NvState and finish block */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   892                  NVM_STATE_ELSEIF{NVM_QRY_ID_LAST_RESULT_OK, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   893                      NVM_STATE_THEN{NVM_ACT_ID_FinishWriteBlock, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   894                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   895              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   896              {   /* result not ok, retries exceeded -> update NvState and finish block */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   897                  NVM_STATE_ELSEIF{NVM_QRY_ID_WRITE_RETRIES_EXCEEDED, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   898                      NVM_STATE_THEN{NVM_ACT_ID_FinishWriteBlock, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   899                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   900              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   901          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   902          {   /* result not ok -> retry */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   903              NVM_STATE_ELSE{NVM_ACT_ID_WriteNvBlock, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   904              NVM_NEXT_STATE(NVM_STATE_WRITE_NV_WRITE_DATA)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   905          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   906      },    
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   907  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   908   *  RestoreBlockDefaults
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   909   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   910      /* NVM_STATE_RESTORE_LOAD_ROM */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   911      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   912          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   913              {   /* copy(!) busy -> continue processing */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   914                  NVM_STATE_IF{NVM_QRY_ID_DATA_COPY_BUSY, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   915                      NVM_STATE_THEN{NVM_ACT_ID_RestoreRomDefaults, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   916                      NVM_NEXT_STATE(NVM_STATE_RESTORE_LOAD_ROM)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   917              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   918              {   /* copy completed */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   919                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   920                      NVM_STATE_THEN{NVM_ACT_ID_FinishRestoreRomDefaults, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   921                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   922              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   923              {   /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   924                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   925                      NVM_STATE_THEN{NVM_ACT_ID_FinishRestoreRomDefaults, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   926                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   927              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   928          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   929          /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   930          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   931              NVM_STATE_ELSE{NVM_ACT_ID_FinishRestoreRomDefaults, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   932              NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   933          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   934      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   935  #if(NVM_API_CONFIG_CLASS == NVM_API_CONFIG_CLASS_3)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   936  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   937   *  InvalidateNvBlock
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   938   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   939      /* NVM_STATE_INVALIDATING_BLOCK */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   940      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   941          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   942              {   /* nv busy -> wait; if not busy LastResult is set */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   943                  NVM_STATE_IF{NVM_QRY_ID_NV_BUSY, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   944                      NVM_STATE_THEN{NVM_ACT_ID_Wait, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   945                      NVM_NEXT_STATE(NVM_STATE_INVALIDATING_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   946              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   947              {   /* nv ready, result okay, redundant -> invalidate redundant */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   948                  NVM_STATE_ELSEIF{NVM_QRY_ID_LAST_RESULT_OK, NVM_QRY_ID_PRIMARY_REDUNDANT_BLOCK},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   949                      NVM_STATE_THEN{NVM_ACT_ID_SetupRedundant, NVM_ACT_ID_InvalidateNvBlock},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   950                      NVM_NEXT_STATE(NVM_STATE_INVALIDATING_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   951              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   952              {   /* nv ready and (not redundant or result not ok) -> finish; result is already set */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   953                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   954                      NVM_STATE_THEN{NVM_ACT_ID_UpdateNvState, NVM_ACT_ID_FinishEraseBlock},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   955                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   956              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   957          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   958          /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   959          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   960              NVM_STATE_ELSE{NVM_ACT_ID_UpdateNvState, NVM_ACT_ID_FinishEraseBlock},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   961              NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   962          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   963      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   964  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   965   *  EraseNvBlock
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   966   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   967      /* NVM_STATE_ERASE_ERASE_BLOCK */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   968      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   969          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   970              {   /* nv busy -> wait */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   971                  NVM_STATE_IF{NVM_QRY_ID_NV_BUSY, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   972                      NVM_STATE_THEN{NVM_ACT_ID_Wait, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   973                      NVM_NEXT_STATE(NVM_STATE_ERASE_ERASE_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   974              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   975              {   /* nv ready, result ok, redundant -> erase redundant */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   976                  NVM_STATE_ELSEIF{NVM_QRY_ID_LAST_RESULT_OK, NVM_QRY_ID_PRIMARY_REDUNDANT_BLOCK},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   977                      NVM_STATE_THEN{NVM_ACT_ID_SetupRedundant, NVM_ACT_ID_EraseNvBlock},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   978                      NVM_NEXT_STATE(NVM_STATE_ERASE_ERASE_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   979              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   980              {   /* nv ready, not redundant or result not ok -> finish (LastResult was previously set) */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   981                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   982                      NVM_STATE_THEN{NVM_ACT_ID_UpdateNvState, NVM_ACT_ID_FinishEraseBlock},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   983                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   984              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   985          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   986          /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   987          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   988              NVM_STATE_ELSE{NVM_ACT_ID_UpdateNvState, NVM_ACT_ID_FinishEraseBlock},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   989              NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   990          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   991      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   992  #endif
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   993  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   994   *  ReadAll
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   995   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   996      /* NVM_STATE_READALL_PROC_CONFIG_ID = analyze Config NV Block */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   997      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   998          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	   999              {   /* sub fsm still running? */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1000                  NVM_STATE_IF{NVM_QRY_ID_SUB_FSM_RUNNING, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1001                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1002                      NVM_NEXT_STATE(NVM_STATE_READALL_PROC_CONFIG_ID)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1003              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1004              {   /* sub fsm read finished */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1005                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1006                      NVM_STATE_THEN{NVM_ACT_ID_FinishCfgIdCheck, NVM_ACT_ID_InitNextBlockReadAll},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1007                      NVM_NEXT_STATE(NVM_STATE_READALL_PROC_RAM_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1008              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1009              /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1010              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1011                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1012                      NVM_STATE_THEN{NVM_ACT_ID_FinishCfgIdCheck, NVM_ACT_ID_InitNextBlockReadAll},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1013                      NVM_NEXT_STATE(NVM_STATE_READALL_PROC_RAM_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1014              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1015          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1016          /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1017          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1018              NVM_STATE_ELSE{NVM_ACT_ID_FinishCfgIdCheck, NVM_ACT_ID_InitNextBlockReadAll},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1019              NVM_NEXT_STATE(NVM_STATE_READALL_PROC_RAM_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1020          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1021      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1022  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1023  #if(NVM_SET_RAM_BLOCK_STATUS_API == STD_ON)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1024      /* NVM_STATE_READALL_PROC_RAM_BLOCK = analyze Ram Block */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1025      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1026          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1027              {   /* last block finished -> end read all */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1028                  NVM_STATE_IF{NVM_QRY_ID_LAST_BLOCK_DONE_READALL, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1029                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1030                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1031              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1032              {   /* last block not finished, check valid/calcRamBlock
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1033                     => if the block does not have CRC, this transition will never be taken, because CRC won't be busy */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1034                  NVM_STATE_ELSEIF{NVM_QRY_ID_CALC_RAM_BLOCK_CRC_ENABLED_AND_RAM_VALID, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1035                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1036                      NVM_NEXT_STATE(NVM_STATE_READALL_PREPARE_DATAINTEGRITY_VERIFICATION)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1037              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1038              {   /* not valid or no crc && KillReadAll */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1039                  NVM_STATE_ELSEIF{NVM_QRY_ID_READALL_KILLED, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1040                      NVM_STATE_THEN{NVM_ACT_ID_SetInitialAttr, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1041                      NVM_NEXT_STATE(NVM_STATE_READALL_KILLED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1042              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1043          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1044          /* not valid or no crc */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1045          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1046              NVM_STATE_ELSE{NVM_ACT_ID_SetInitialAttr, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1047              NVM_NEXT_STATE(NVM_STATE_READALL_CHK_SKIP)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1048          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1049      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1050  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1051      /* NVM_STATE_READALL_PREPARE_DATAINTEGRITY_VERIFICATION */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1052      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1053          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1054              {   /* Explicit sync configured but not executed yet => attempt to copy RAM data */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1055                  NVM_STATE_IF{NVM_QRY_ID_HAS_EXPLICITSYNCHRONIZATION, NVM_QRY_ID_EXPLICITSYNC_ATTEMPT_NECESSARY},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1056                      NVM_STATE_THEN{NVM_ACT_ID_CopyRamDataToInternalBuffer, NVM_ACT_ID_Wait},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1057                      NVM_NEXT_STATE(NVM_STATE_READALL_PREPARE_DATAINTEGRITY_VERIFICATION)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1058              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1059              {   /* Explicit sync failed => no CRCCompare check, go on FSM processing */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1060                  NVM_STATE_ELSEIF{NVM_QRY_ID_HAS_EXPLICITSYNCHRONIZATION, NVM_QRY_ID_EXPLICITSYNC_ATTEMPT_FAILED},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1061                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1062                      NVM_NEXT_STATE(NVM_STATE_READALL_CHK_SKIP)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1063              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1064              {   /* Either explicit sync success OR no explicit sync => setup verification job  */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1065                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1066                      NVM_STATE_THEN{NVM_ACT_ID_SetupDataIntegrityVerification_ReadAll, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1067                      NVM_NEXT_STATE(NVM_STATE_READALL_CHK_RAM_VALIDITY)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1068              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1069          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1070          /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1071          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1072              NVM_STATE_ELSE{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1073              NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1074          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1075      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1076  #else
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1077      /* NVM_STATE_READALL_PROC_RAM_BLOCK = analyze Ram Block */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1078      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1079          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1080              {   /* last block finished -> end read all */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1081                  NVM_STATE_IF{NVM_QRY_ID_LAST_BLOCK_DONE_READALL, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1082                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1083                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1084              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1085              {   /* last block not finished && KillReadAll */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1086                  NVM_STATE_ELSEIF{NVM_QRY_ID_READALL_KILLED, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1087                      NVM_STATE_THEN{NVM_ACT_ID_SetInitialAttr, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1088                      NVM_NEXT_STATE(NVM_STATE_READALL_KILLED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1089              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1090              /* last block not finished, we don't check the block's validity */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1091              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1092                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1093                      NVM_STATE_THEN{NVM_ACT_ID_SetInitialAttr, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1094                      NVM_NEXT_STATE(NVM_STATE_READALL_CHK_SKIP)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1095              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1096          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1097          /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1098          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1099              NVM_STATE_ELSE{NVM_ACT_ID_SetInitialAttr, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1100              NVM_NEXT_STATE(NVM_STATE_READALL_CHK_SKIP)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1101          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1102      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1103  #endif
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1104      /* NVM_STATE_READALL_CHK_SKIP */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1105      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1106          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1107              {   /* WriteOnce -> check readability to set the write protection */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1108                  NVM_STATE_IF{NVM_QRY_ID_SKIP_BLOCK, NVM_QRY_ID_WRITE_BLOCK_ONCE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1109                      NVM_STATE_THEN{NVM_ACT_ID_TestBlockBlank, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1110                      NVM_NEXT_STATE(NVM_STATE_READALL_READABILITY_CHECK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1111              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1112              {   /* not WriteOnce, no read, skip and continue with next block */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1113                  NVM_STATE_ELSEIF{NVM_QRY_ID_SKIP_BLOCK, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1114                      NVM_STATE_THEN{NVM_ACT_ID_SetReqSkipped, NVM_ACT_ID_InitNextBlockReadAll},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1115                      NVM_NEXT_STATE(NVM_STATE_READALL_PROC_RAM_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1116              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1117              {   /* no skip && extended runtime preparation -> restore ROM defaults, no read */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1118                  NVM_STATE_ELSEIF{NVM_QRY_ID_EXT_RUNTIME, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1119                      NVM_STATE_THEN{NVM_ACT_ID_InitRestoreBlockDefaultsSubFsm, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1120                      NVM_NEXT_STATE(NVM_STATE_READALL_LOAD_DEFAULTS)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1121              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1122          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1123          /* no skip && normal runtime preparation -> read from NV RAM */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1124          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1125              NVM_STATE_ELSE{NVM_ACT_ID_InitReadBlockSubFsm, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1126              NVM_NEXT_STATE(NVM_STATE_READALL_READ_NV)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1127          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1128      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1129      /* NVM_STATE_READALL_KILLED */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1130      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1131          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1132              { /* Block shall be skipped, do not load default data! */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1133                  NVM_STATE_ELSEIF{NVM_QRY_ID_SKIP_BLOCK, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1134                      NVM_STATE_THEN{NVM_ACT_ID_SetReqSkipped, NVM_ACT_ID_InitNextBlockReadAll},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1135                      NVM_NEXT_STATE(NVM_STATE_READALL_PROC_RAM_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1136              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1137              { /* block shall be processed -> load default data. */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1138                  NVM_STATE_IF{NVM_QRY_ID_HAS_ROM, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1139                      NVM_STATE_THEN{NVM_ACT_ID_SetReqOk, NVM_ACT_ID_InitRestoreBlockDefaultsSubFsm},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1140                      NVM_NEXT_STATE(NVM_STATE_READALL_LOAD_DEFAULTS)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1141              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1142              { /* block shall be processed but does not have ROM -> skip block */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1143                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1144                      NVM_STATE_THEN{NVM_ACT_ID_SetReqSkipped, NVM_ACT_ID_InitNextBlockReadAll},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1145                      NVM_NEXT_STATE(NVM_STATE_READALL_PROC_RAM_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1146              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1147          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1148          { /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1149              NVM_STATE_ELSE{NVM_ACT_ID_SetReqSkipped, NVM_ACT_ID_InitNextBlockReadAll},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1150              NVM_NEXT_STATE(NVM_STATE_READALL_PROC_RAM_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1151          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1152      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1153      /* NVM_STATE_READALL_WR_ONCE_PROT = a write once block shall be skipped */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1154      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1155          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1156              {   /* byte was read - result was ok --> next block, please */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1157                  NVM_STATE_ELSEIF{NVM_QRY_ID_LAST_RESULT_OK, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1158                      NVM_STATE_THEN{NVM_ACT_ID_FinishReadBlockAndSetSkipped, NVM_ACT_ID_InitNextBlockReadAll},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1159                      NVM_NEXT_STATE(NVM_STATE_READALL_PROC_RAM_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1160              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1161              {   /* result not ok, redundant -> try redundant */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1162                  NVM_STATE_ELSEIF{NVM_QRY_ID_PRIMARY_REDUNDANT_BLOCK, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1163                      NVM_STATE_THEN{NVM_ACT_ID_SetupRedundant, NVM_ACT_ID_TestBlockBlank},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1164                      NVM_NEXT_STATE(NVM_STATE_READALL_READABILITY_CHECK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1165              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1166              {   /* not redundant or done, result not ok. */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1167                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1168                      NVM_STATE_THEN{NVM_ACT_ID_FinishReadBlockAndSetSkipped, NVM_ACT_ID_InitNextBlockReadAll},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1169                      NVM_NEXT_STATE(NVM_STATE_READALL_PROC_RAM_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1170              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1171          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1172          {   /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1173              NVM_STATE_ELSE{NVM_ACT_ID_FinishReadBlockAndSetSkipped, NVM_ACT_ID_InitNextBlockReadAll},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1174              NVM_NEXT_STATE(NVM_STATE_READALL_PROC_RAM_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1175          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1176      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1177  #if(NVM_SET_RAM_BLOCK_STATUS_API == STD_ON)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1178      /* NVM_STATE_READALL_CHK_RAM_VALIDITY = analyze Ram Block */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1179      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1180          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1181              {   /* Crc not ready -> Wait */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1182                  NVM_STATE_IF{NVM_QRY_ID_IS_DATA_INTEGRITY_JOB_PENDING, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1183                      NVM_STATE_THEN{NVM_ACT_ID_ProcessDataIntegrityJob, NVM_ACT_ID_Wait},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1184                      NVM_NEXT_STATE(NVM_STATE_READALL_CHK_RAM_VALIDITY)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1185              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1186              {   /* crc ready, crc match -> finish block and use current attributes */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1187                  NVM_STATE_ELSEIF{NVM_QRY_ID_IS_DATA_INTEGRITY_JOB_FINISHED_SUCCESSFUL, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1188                      NVM_STATE_THEN{NVM_ACT_ID_InitNextBlockReadAll, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1189                      NVM_NEXT_STATE(NVM_STATE_READALL_PROC_RAM_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1190              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1191              {   /* crc mismatch && KillReadAll */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1192                  NVM_STATE_ELSEIF{NVM_QRY_ID_READALL_KILLED, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1193                      NVM_STATE_THEN{NVM_ACT_ID_SetInitialAttr, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1194                      NVM_NEXT_STATE(NVM_STATE_READALL_KILLED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1195              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1196          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1197          /* crc mismatch */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1198          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1199              NVM_STATE_ELSE{NVM_ACT_ID_SetInitialAttr, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1200              NVM_NEXT_STATE(NVM_STATE_READALL_CHK_SKIP)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1201          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1202      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1203  #endif
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1204      /* NVM_STATE_READALL_READ_NV */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1205      {   /* At this point the underlying module is processing or processed the job. The job handling
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1206             will be done by the sub FSM -> cancel the busy NV */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1207          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1208              {   /* NV busy -> cancel and abort sub FSM */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1209                  NVM_STATE_ELSEIF{NVM_QRY_ID_NV_BUSY, NVM_QRY_ID_READALL_KILLED},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1210                      NVM_STATE_THEN{NVM_ACT_ID_CancelNV, NVM_ACT_ID_KillSubFsm},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1211                      NVM_NEXT_STATE(NVM_STATE_READALL_KILLED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1212              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1213              {   /* NV idle, only internal processing -> do nothing */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1214                  NVM_STATE_IF{NVM_QRY_ID_SUB_FSM_RUNNING, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1215                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1216                      NVM_NEXT_STATE(NVM_STATE_READALL_READ_NV)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1217              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1218              {   /* sub fsm finished */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1219                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1220                      NVM_STATE_THEN{NVM_ACT_ID_InitNextBlockReadAll, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1221                      NVM_NEXT_STATE(NVM_STATE_READALL_PROC_RAM_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1222              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1223          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1224          /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1225          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1226              NVM_STATE_ELSE{NVM_ACT_ID_InitNextBlockReadAll, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1227              NVM_NEXT_STATE(NVM_STATE_READALL_PROC_RAM_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1228          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1229      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1230      /* NVM_STATE_READALL_LOAD_DEFAULTS */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1231      {   /* only internal, no KillReadAll handling necessary! */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1232          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1233              {   /* read in process -> do nothing */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1234                  NVM_STATE_IF{NVM_QRY_ID_SUB_FSM_RUNNING, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1235                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1236                      NVM_NEXT_STATE(NVM_STATE_READALL_LOAD_DEFAULTS)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1237              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1238              {   /* sub fsm finished */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1239                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1240                      NVM_STATE_THEN{NVM_ACT_ID_InitNextBlockReadAll, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1241                      NVM_NEXT_STATE(NVM_STATE_READALL_PROC_RAM_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1242              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1243              /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1244              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1245                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1246                      NVM_STATE_THEN{NVM_ACT_ID_InitNextBlockReadAll, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1247                      NVM_NEXT_STATE(NVM_STATE_READALL_PROC_RAM_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1248              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1249          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1250          /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1251          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1252              NVM_STATE_ELSE{NVM_ACT_ID_InitNextBlockReadAll, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1253              NVM_NEXT_STATE(NVM_STATE_READALL_PROC_RAM_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1254          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1255      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1256      /* NVM_STATE_READALL_READABILITY_CHECK */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1257      {   /* at this point the underlying module is processing or processed the job */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1258          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1259              {   /* NV busy && KillReadAll -> cancel underlying device */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1260                  NVM_STATE_ELSEIF{NVM_QRY_ID_NV_BUSY, NVM_QRY_ID_READALL_KILLED},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1261                        NVM_STATE_THEN{NVM_ACT_ID_CancelNV, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1262                        NVM_NEXT_STATE(NVM_STATE_READALL_KILLED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1263              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1264              {   /* one byte was read - wait for MemHwA to finish this read job */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1265                  NVM_STATE_IF{NVM_QRY_ID_NV_BUSY, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1266                      NVM_STATE_THEN{NVM_ACT_ID_Wait, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1267                      NVM_NEXT_STATE(NVM_STATE_READALL_READABILITY_CHECK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1268              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1269              {   /* reading done, check the block state */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1270                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1271                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1272                      NVM_NEXT_STATE(NVM_STATE_READALL_WR_ONCE_PROT)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1273              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1274          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1275          /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1276          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1277              NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1278                  NVM_NEXT_STATE(NVM_STATE_READALL_WR_ONCE_PROT)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1279          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1280      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1281  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1282   *  WriteAll
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1283   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1284      /* NVM_STATE_WRITEALL_PROC_BLOCK */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1285      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1286          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1287              {   /* write all canceled ->finish */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1288                  NVM_STATE_IF{NVM_QRY_ID_CANCEL_WRITE_ALL, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1289                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1290                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1291              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1292  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1293              {   /* last block done  */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1294                  NVM_STATE_ELSEIF{NVM_QRY_ID_LAST_BLOCK_DONE_WRITEALL, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1295                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1296                      NVM_NEXT_STATE(NVM_STATE_WRITEALL_WAIT_MEMHWA)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1297              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1298              {    /* not canceled, not last block done, shall be written? */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1299                  NVM_STATE_ELSEIF{NVM_QRY_ID_BLK_RELEVANT_FOR_WRITE_ALL, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1300                      NVM_STATE_THEN{NVM_ACT_ID_SetBlockPendingWriteAll, NVM_ACT_ID_InitWriteBlockFsm},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1301                      NVM_NEXT_STATE(NVM_STATE_WRITEALL_WRITE_FSM)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1302              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1303          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1304          {   /* skip block */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1305              NVM_STATE_ELSE{NVM_ACT_ID_SetReqSkipped, NVM_ACT_ID_InitNextBlockWriteAll},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1306              NVM_NEXT_STATE(NVM_STATE_WRITEALL_PROC_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1307          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1308      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1309      /* NVM_STATE_WRITEALL_WRITE_FSM */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1310      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1311          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1312              {   /* write fsm still running - do nothing */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1313                  NVM_STATE_IF{NVM_QRY_ID_SUB_FSM_RUNNING, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1314                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1315                      NVM_NEXT_STATE(NVM_STATE_WRITEALL_WRITE_FSM)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1316              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1317              {   /* fsm finished - handle next block */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1318                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1319                      NVM_STATE_THEN{NVM_ACT_ID_InitNextBlockWriteAll, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1320                      NVM_NEXT_STATE(NVM_STATE_WRITEALL_PROC_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1321              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1322              /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1323              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1324                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1325                      NVM_STATE_THEN{NVM_ACT_ID_InitNextBlockWriteAll, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1326                      NVM_NEXT_STATE(NVM_STATE_WRITEALL_PROC_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1327              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1328          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1329          /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1330          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1331              NVM_STATE_THEN{NVM_ACT_ID_InitNextBlockWriteAll, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1332              NVM_NEXT_STATE(NVM_STATE_WRITEALL_PROC_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1333          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1334      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1335      /* NVM_STATE_WRITEALL_WAIT_MEMHWA */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1336      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1337          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1338              {   /* write all cancelled */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1339                  NVM_STATE_IF{NVM_QRY_ID_CANCEL_WRITE_ALL, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1340                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1341                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1342              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1343              {   /* MemHwA is still busy  */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1344                  NVM_STATE_ELSEIF{NVM_QRY_ID_MEMHWA_BUSY, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1345                      NVM_STATE_THEN{NVM_ACT_ID_Wait, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1346                      NVM_NEXT_STATE(NVM_STATE_WRITEALL_WAIT_MEMHWA)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1347              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1348              {   /* MemHwA is completely IDLE */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1349                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1350                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1351                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1352              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1353          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1354          /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1355          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1356              NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1357              NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1358          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1359      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1360  #if (NVM_REPAIR_REDUNDANT_BLOCKS_API == STD_ON)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1361  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1362   *  Repair Redundant Blocks
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1363   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1364      /* NVM_STATE_REPAIRREDUNDANT_MAIN */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1365      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1366          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1367              {   /* check end before checking whether to suspend! - does not make sense to suspend though we are done... */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1368                  /* same block order as read all - reached last block, job end */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1369                  NVM_STATE_ELSEIF{NVM_QRY_ID_LAST_BLOCK_DONE_READALL, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1370                      NVM_STATE_THEN{NVM_ACT_ID_RepairRedBlocksFinish, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1371                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1372              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1373              {   /* suspend job if there is a single or multi block job */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1374                  NVM_STATE_IF{NVM_QRY_ID_SUSPEND_REPAIR_REDUNDANT_BLOCKS, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1375                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1376                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1377              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1378              {   /* we have a redundant block to check */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1379                  NVM_STATE_ELSEIF{NVM_QRY_ID_PRIMARY_REDUNDANT_BLOCK, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1380                      NVM_STATE_THEN{NVM_ACT_ID_RepairRedBlockReadCheck, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1381                      NVM_NEXT_STATE(NVM_STATE_REPAIRREDUNDANT_CHECK_FIRST)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1382              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1383          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1384          { /* next block */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1385              NVM_STATE_THEN{NVM_ACT_ID_RepairRedBlocksInitNext, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1386              NVM_NEXT_STATE(NVM_STATE_REPAIRREDUNDANT_MAIN)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1387          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1388      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1389      /* NVM_STATE_REPAIRREDUNDANT_CHECK_FIRST */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1390      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1391          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1392              {   /* wait for underlying modules */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1393                  NVM_STATE_IF{NVM_QRY_ID_NV_BUSY, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1394                      NVM_STATE_THEN{NVM_ACT_ID_Wait, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1395                      NVM_NEXT_STATE(NVM_STATE_REPAIRREDUNDANT_CHECK_FIRST)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1396              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1397              {   /* suspend job if there is a single or multi block job */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1398                  NVM_STATE_ELSEIF{NVM_QRY_ID_SUSPEND_REPAIR_REDUNDANT_BLOCKS, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1399                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1400                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1401              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1402              {   /* process Crc calculation in case read was successful and Crc is still busy */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1403                  NVM_STATE_ELSEIF{NVM_QRY_ID_LAST_RESULT_OK, NVM_QRY_ID_CRC_BUSY},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1404                      NVM_STATE_THEN{NVM_ACT_ID_ProcessCrc, NVM_ACT_ID_Wait},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1405                      NVM_NEXT_STATE(NVM_STATE_REPAIRREDUNDANT_CHECK_FIRST)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1406              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1407          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1408          { /* first block is done, go to next block */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1409              NVM_STATE_THEN{NVM_ACT_ID_RepairRedBlockFinishReadCheck, NVM_ACT_ID_RepairRedBlockReadCheck},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1410              NVM_NEXT_STATE(NVM_STATE_REPAIRREDUNDANT_CHECK_SECOND)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1411          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1412      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1413      /* NVM_STATE_REPAIRREDUNDANT_CHECK_SECOND */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1414      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1415          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1416              {   /* wait for underlying modules */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1417                  NVM_STATE_IF{NVM_QRY_ID_NV_BUSY, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1418                      NVM_STATE_THEN{NVM_ACT_ID_Wait, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1419                      NVM_NEXT_STATE(NVM_STATE_REPAIRREDUNDANT_CHECK_SECOND)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1420              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1421              {   /* suspend job if there is a single or multi block job */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1422                  NVM_STATE_ELSEIF{NVM_QRY_ID_SUSPEND_REPAIR_REDUNDANT_BLOCKS, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1423                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1424                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1425              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1426              {   /* process Crc calculation in case read was successful and Crc is still busy */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1427                  NVM_STATE_ELSEIF{NVM_QRY_ID_LAST_RESULT_OK, NVM_QRY_ID_CRC_BUSY},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1428                      NVM_STATE_THEN{NVM_ACT_ID_ProcessCrc, NVM_ACT_ID_Wait},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1429                      NVM_NEXT_STATE(NVM_STATE_REPAIRREDUNDANT_CHECK_SECOND)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1430              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1431          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1432          {   /* second block is done, go to validate state */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1433              NVM_STATE_THEN{NVM_ACT_ID_RepairRedBlockFinishReadCheck, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1434              NVM_NEXT_STATE(NVM_STATE_REPAIRREDUNDANT_VALIDATE_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1435          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1436      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1437      /* NVM_STATE_REPAIRREDUNDANT_VALIDATE_BLOCK */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1438      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1439          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1440              {   /* suspend job if there is a single or multi block job */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1441                  NVM_STATE_ELSEIF{NVM_QRY_ID_SUSPEND_REPAIR_REDUNDANT_BLOCKS, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1442                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1443                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1444              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1445              {   /* repair block in case  */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1446                  NVM_STATE_ELSEIF{NVM_QRY_ID_REPAIR_RED_BLOCK_DEFECT, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1447                      NVM_STATE_THEN{NVM_ACT_ID_RepairRedBlocksReadValid, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1448                      NVM_NEXT_STATE(NVM_STATE_REPAIRREDUNDANT_READ_VALID_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1449              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1450              {   /* nothing to repair, next block */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1451                  NVM_STATE_IF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1452                      NVM_STATE_THEN{NVM_ACT_ID_RepairRedBlocksInitNext, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1453                      NVM_NEXT_STATE(NVM_STATE_REPAIRREDUNDANT_MAIN)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1454              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1455          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1456          /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1457          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1458              NVM_STATE_THEN{NVM_ACT_ID_RepairRedBlocksInitNext, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1459              NVM_NEXT_STATE(NVM_STATE_REPAIRREDUNDANT_MAIN)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1460          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1461      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1462      /* NVM_STATE_REPAIRREDUNDANT_READ_VALID_BLOCK */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1463      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1464          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1465              {   /* wait for underlying modules */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1466                  NVM_STATE_IF{NVM_QRY_ID_NV_BUSY, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1467                      NVM_STATE_THEN{NVM_ACT_ID_Wait, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1468                      NVM_NEXT_STATE(NVM_STATE_REPAIRREDUNDANT_READ_VALID_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1469              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1470              {   /* suspend job if there is a single or multi block job */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1471                  NVM_STATE_ELSEIF{NVM_QRY_ID_SUSPEND_REPAIR_REDUNDANT_BLOCKS, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1472                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1473                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1474              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1475              {   /* read OK, we do not need to check Crc, setup write job */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1476                  NVM_STATE_ELSEIF{NVM_QRY_ID_LAST_RESULT_OK, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1477                      NVM_STATE_THEN{NVM_ACT_ID_RepairRedBlockWriteInvalid, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1478                      NVM_NEXT_STATE(NVM_STATE_REPAIRREDUNDANT_WRITE_INVALID_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1479              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1480          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1481          {   /* read not ok */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1482              NVM_STATE_THEN{NVM_ACT_ID_RepairRedBlocksFinishBlock, NVM_ACT_ID_RepairRedBlocksInitNext},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1483              NVM_NEXT_STATE(NVM_STATE_REPAIRREDUNDANT_MAIN)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1484          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1485      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1486      /* NVM_STATE_REPAIRREDUNDANT_WRITE_INVALID_BLOCK */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1487      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1488          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1489              {   /* wait for underlying modules */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1490                  NVM_STATE_IF{NVM_QRY_ID_NV_BUSY, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1491                      NVM_STATE_THEN{NVM_ACT_ID_Wait, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1492                      NVM_NEXT_STATE(NVM_STATE_REPAIRREDUNDANT_WRITE_INVALID_BLOCK)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1493              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1494              {   /* validate write job, next block */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1495                  NVM_STATE_ELSEIF{NVM_QRY_ID_LAST_RESULT_OK, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1496                      NVM_STATE_THEN{NVM_ACT_ID_RepairRedBlocksFinishBlock, NVM_ACT_ID_RepairRedBlocksInitNext},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1497                      NVM_NEXT_STATE(NVM_STATE_REPAIRREDUNDANT_MAIN)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1498              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1499              {   /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1500                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1501                      NVM_STATE_THEN{NVM_ACT_ID_RepairRedBlocksFinishBlock, NVM_ACT_ID_RepairRedBlocksInitNext},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1502                      NVM_NEXT_STATE(NVM_STATE_REPAIRREDUNDANT_MAIN)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1503              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1504          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1505          /* not used */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1506          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1507              NVM_STATE_THEN{NVM_ACT_ID_RepairRedBlocksFinishBlock, NVM_ACT_ID_RepairRedBlocksInitNext},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1508              NVM_NEXT_STATE(NVM_STATE_REPAIRREDUNDANT_MAIN)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1509          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1510      },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1511  #endif
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1512  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1513   *  NvM job finished
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1514   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1515      /* NVM_STATE_FSM_FINISHED */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1516      /* always stay in this state. Only by re-initializing a FSM exits this state */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1517      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1518          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1519              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1520                  NVM_STATE_IF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1521                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1522                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1523              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1524              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1525                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1526                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1527                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1528              },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1529              {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1530                  NVM_STATE_ELSEIF{NVM_QRY_ID_TRUE, NVM_QRY_ID_TRUE},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1531                      NVM_STATE_THEN{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1532                      NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1533              }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1534          },
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1535          {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1536              NVM_STATE_ELSE{NVM_ACT_ID_Nop, NVM_ACT_ID_Nop},
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1537              NVM_NEXT_STATE(NVM_STATE_FSM_FINISHED)
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1538          }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1539      }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1540  };
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1541  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1542  #define NVM_STOP_SEC_CONST_UNSPECIFIED
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1543  #include "NvM_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1544  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1545  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1546   *  LOCAL FUNCTION PROTOTYPES
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1547   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1548  #define NVM_START_SEC_CODE
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1549  #include "NvM_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1550  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1551  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1552   * NvM_FsmQuery
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1553   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1554  /*! \brief Process a State machine query.
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1555   *  \details Executes first query and then the second, in case the first was successful.
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1556   *  \param[in] NvM_Queries_at as a pointer to the query list (array). Called must ensure validity. Must contain 2 queries.
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1557   *  \return TRUE both queries executed successfully
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1558   *  \return FALSE otherwise
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1559   *  \context TASK
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1560   *  \reentrant FALSE
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1561   *  \synchronous TRUE
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1562   *  \pre -
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1563   */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1564  NVM_LOCAL FUNC(boolean, NVM_PRIVATE_CODE) NvM_FsmQuery(NvM_StateQueryPtrType NvM_Queries_at);
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1565  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1566  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1567   * NvM_FsmAction
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1568   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1569  /*! \brief Process a State change - perform the defined actions.
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1570   *  \details Process a State change - perform the defined actions.
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1571   *  \param[in] NvM_Actions_pt as a pointer to two action indexes (action function pointer array) used to call
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1572   *             the actions. Caller must ensure validity.
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1573   *  \context TASK
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1574   *  \reentrant FALSE
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1575   *  \synchronous TRUE
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1576   *  \pre -
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1577   */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1578  NVM_LOCAL FUNC(void, NVM_PRIVATE_CODE) NvM_FsmAction(NvM_StateChangeActionsPtrType NvM_Actions_pt);
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1579  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1580  #define NVM_STOP_SEC_CODE
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1581  #include "NvM_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1582  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1583  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1584   *  LOCAL FUNCTIONS
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1585   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1586  #define NVM_START_SEC_CODE
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1587  #include "NvM_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1588  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1589  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1590  *  NvM_FsmQuery
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1591  **********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1592  /*!
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1593   * Internal comment removed.
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1594   *
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1595   *
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1596   *
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1597   *
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1598   */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1599  NVM_LOCAL FUNC(boolean, NVM_PRIVATE_CODE) NvM_FsmQuery(NvM_StateQueryPtrType NvM_Queries_at)
+; Function NvM_FsmQuery
+NvM_FsmQuery:	.type	func
+	mov.aa	a15,a4
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1600  {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1601      /* Currently there are Queries with side-effects, forcing
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1602       * execution in the defined order
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1603       */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1604  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1605      boolean retVal = NvM_QueryTable_ap[NvM_Queries_at[0u]](); /* SBSW_NvM_FuncPtrCall_QueryAction */
+	ld.bu	d15,[a15]
+	movh.a	a12,#@his(NvM_QueryTable_ap)
+	lea	a12,[a12]@los(NvM_QueryTable_ap)
+	addsc.a	a2,a12,d15,#2
+	ld.a	a2,[a2]
+	calli	a2
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1606  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1607      if (retVal)
+	jeq	d2,#0,.L2
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1608      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1609          retVal = NvM_QueryTable_ap[NvM_Queries_at[1u]](); /* SBSW_NvM_FuncPtrCall_QueryAction */
+	ld.bu	d15,[a15]1
+	addsc.a	a15,a12,d15,#2
+	ld.a	a15,[a15]
+	ji	a15
+.L2:
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1610      }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1611  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1612      return retVal;
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1613  }
+	ret
+	
+__NvM_FsmQuery_function_end:
+	.size	NvM_FsmQuery,__NvM_FsmQuery_function_end-NvM_FsmQuery
+	; End of function
+	
+	.sdecl	'.text.NvM_JobProc.NvM_FsmAction',code
+	.sect	'.text.NvM_JobProc.NvM_FsmAction'
+	.align	2
+	
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1614  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1615  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1616  *  NvM_FsmAction
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1617  **********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1618  /*!
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1619   * Internal comment removed.
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1620   *
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1621   *
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1622   */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1623  NVM_LOCAL FUNC(void, NVM_PRIVATE_CODE) NvM_FsmAction(NvM_StateChangeActionsPtrType NvM_Actions_pt)
+; Function NvM_FsmAction
+NvM_FsmAction:	.type	func
+	mov.aa	a15,a4
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1624  {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1625      NvM_ActionTable_ap[NvM_Actions_pt->ExitHandler_t](); /* SBSW_NvM_FuncPtrCall_QueryAction */
+	ld.bu	d15,[a15]
+	movh.a	a12,#@his(NvM_ActionTable_ap)
+	lea	a12,[a12]@los(NvM_ActionTable_ap)
+	addsc.a	a2,a12,d15,#2
+	ld.a	a2,[a2]
+	calli	a2
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1626      NvM_ActionTable_ap[NvM_Actions_pt->EntryHandler_t](); /* SBSW_NvM_FuncPtrCall_QueryAction */
+	ld.bu	d15,[a15]1
+	addsc.a	a15,a12,d15,#2
+	ld.a	a15,[a15]
+	ji	a15
+	
+__NvM_FsmAction_function_end:
+	.size	NvM_FsmAction,__NvM_FsmAction_function_end-NvM_FsmAction
+	; End of function
+	
+	.sdecl	'.text.NvM_JobProc.NvM_JobProcInit',code
+	.sect	'.text.NvM_JobProc.NvM_JobProcInit'
+	.align	2
+	
+	.global	NvM_JobProcInit
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1627  }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1628  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1629  #define NVM_STOP_SEC_CODE
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1630  #include "NvM_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1631  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1632  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1633   *  GLOBAL FUNCTIONS
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1634   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1635  #define NVM_START_SEC_CODE
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1636  #include "NvM_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1637  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1638  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1639  *  NvM_JobProcInit
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1640  **********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1641  /*!
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1642   * Internal comment removed.
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1643   *
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1644   *
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1645   */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1646  FUNC(void, NVM_PRIVATE_CODE) NvM_JobProcInit(void)
+; Function NvM_JobProcInit
+NvM_JobProcInit:	.type	func
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1647  {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1648      NvM_CurrentJob_t.JobServiceId_t = NVM_INT_FID_NO_JOB_PENDING;
+	mov	d15,#8
+	st.b	NvM_CurrentJob_t+2,d15
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1649  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1650      NvM_CurrentBlockInfo_t.InternalFlags_u8 = 0u;
+	movh.a	a15,#@his(NvM_CurrentBlockInfo_t+66)
+	mov	d15,#0
+	st.b	[a15]@los(NvM_CurrentBlockInfo_t+66),d15
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1651  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1652      NvM_JobMainState_t = NVM_STATE_FSM_FINISHED;
+	mov	d15,#35
+	st.b	NvM_JobMainState_t,d15
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1653      NvM_JobSubState_t  = NVM_STATE_FSM_FINISHED;
+	st.b	NvM_JobSubState_t,d15
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1654      NvM_TaskState_t    = NVM_STATE_IDLE;
+	mov	d15,#1
+	st.b	NvM_TaskState_t,d15
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1655  }
+	ret
+	
+__NvM_JobProcInit_function_end:
+	.size	NvM_JobProcInit,__NvM_JobProcInit_function_end-NvM_JobProcInit
+	; End of function
+	
+	.sdecl	'.text.NvM_JobProc.NvM_Fsm',code
+	.sect	'.text.NvM_JobProc.NvM_Fsm'
+	.align	2
+	
+	.global	NvM_Fsm
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1656  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1657  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1658  *  NvM_Fsm
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1659  **********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1660  /*!
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1661   * Internal comment removed.
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1662   *
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1663   *
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1664   *
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1665   */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1666  FUNC(NvM_StateIdType, NVM_PRIVATE_CODE) NvM_Fsm(NvM_StateIdType NvM_CurrentState_t)
+; Function NvM_Fsm
+NvM_Fsm:	.type	func
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1667  {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1668      /* local variables */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1669      NvM_StateIdType NvM_RetState_tloc;
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1670      NvM_StateChangeActionsPtrType ChangeActions_ptloc;
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1671      CONSTP2CONST(NvM_StateDescrType, AUTOMATIC, NVM_PRIVATE_CONST) CurrentState_ptloc =
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1672          &NvM_StateDescrTable_at[NvM_CurrentState_t];
+	mul	d15,d4,#24
+	movh.a	a15,#@his(NvM_StateDescrTable_at)
+	lea	a15,[a15]@los(NvM_StateDescrTable_at)
+	addsc.a	a15,a15,d15,#0
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1673  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1674      /* Execute the first query, if it is fulfilled then do the corresponding
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1675       * action and return with the next state to NvM_MainFunction(). If the first
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1676       * query is not true then execute next query as long as the right exit is found.
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1677       */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1678      if(NvM_FsmQuery(CurrentState_ptloc->ChangeConditions_at[0].Queries_at)) /* SBSW_NvM_FuncCall_PtrParam_FsmQuery */
+	mov.aa	a4,a15
+	call	NvM_FsmQuery
+	jeq	d2,#0,.L4
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1679      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1680          NvM_RetState_tloc = CurrentState_ptloc->ChangeConditions_at[0].NextState_t;
+	ld.bu	d15,[a15]4
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1681          ChangeActions_ptloc = &CurrentState_ptloc->ChangeConditions_at[0].Actions_t;
+	add.a	a15,#2
+	j	.L5
+.L4:
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1682      }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1683      else if (NvM_FsmQuery(CurrentState_ptloc->ChangeConditions_at[1].Queries_at)) /* SBSW_NvM_FuncCall_PtrParam_FsmQuery */
+	lea	a4,[a15]6
+	call	NvM_FsmQuery
+	jeq	d2,#0,.L6
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1684      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1685          NvM_RetState_tloc = CurrentState_ptloc->ChangeConditions_at[1].NextState_t;
+	ld.bu	d15,[a15]10
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1686          ChangeActions_ptloc = &CurrentState_ptloc->ChangeConditions_at[1].Actions_t;
+	lea	a15,[a15]8
+	j	.L7
+.L6:
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1687      }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1688      else if (NvM_FsmQuery(CurrentState_ptloc->ChangeConditions_at[2].Queries_at)) /* SBSW_NvM_FuncCall_PtrParam_FsmQuery */
+	lea	a4,[a15]12
+	call	NvM_FsmQuery
+	jeq	d2,#0,.L8
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1689      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1690          NvM_RetState_tloc = CurrentState_ptloc->ChangeConditions_at[2].NextState_t;
+	ld.bu	d15,[a15]16
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1691          ChangeActions_ptloc = &CurrentState_ptloc->ChangeConditions_at[2].Actions_t;
+	lea	a15,[a15]14
+	j	.L9
+.L8:
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1692      }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1693      else
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1694      {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1695          NvM_RetState_tloc = CurrentState_ptloc->FinalCondition_t.NextState_t;
+	ld.bu	d15,[a15]20
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1696          ChangeActions_ptloc = &CurrentState_ptloc->FinalCondition_t.Actions_t;
+	lea	a15,[a15]18
+.L9:
+.L7:
+.L5:
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1697      }
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1698  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1699      NvM_FsmAction(ChangeActions_ptloc); /* SBSW_NvM_FuncCall_PtrParam_FsmAction */
+	mov.aa	a4,a15
+	call	NvM_FsmAction
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1700  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1701      return NvM_RetState_tloc;
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1702  }
+	mov	d2,d15
+	ret
+	
+__NvM_Fsm_function_end:
+	.size	NvM_Fsm,__NvM_Fsm_function_end-NvM_Fsm
+	; End of function
+	
+	.sdecl	'.text.NvM_JobProc.NvM_IsBooleanBitfieldTrue',code
+	.sect	'.text.NvM_JobProc.NvM_IsBooleanBitfieldTrue'
+	.align	2
+	
+	.global	NvM_IsBooleanBitfieldTrue
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1703  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1704  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1705   *  NvM_IsBooleanBitfieldTrue
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1706   *********************************************************************************************************************/
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1707  /*!
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1708   * Internal comment removed.
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1709   *
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1710   *
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1711   */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1712  FUNC(boolean, NVM_PRIVATE_CODE) NvM_IsBooleanBitfieldTrue(const NvM_BitFieldType BooleanBitfield)
+; Function NvM_IsBooleanBitfieldTrue
+NvM_IsBooleanBitfieldTrue:	.type	func
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1713  {
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1714    return (BooleanBitfield != 0u);
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1715  }
+	ne	d2,d4,#0
+	ret
+	
+__NvM_IsBooleanBitfieldTrue_function_end:
+	.size	NvM_IsBooleanBitfieldTrue,__NvM_IsBooleanBitfieldTrue_function_end-NvM_IsBooleanBitfieldTrue
+	; End of function
+	
+	.sdecl	'.zbss.NvM_JobProc.NvM_JobMainState_t',data
+	.sect	'.zbss.NvM_JobProc.NvM_JobMainState_t'
+	.global	NvM_JobMainState_t
+NvM_JobMainState_t:	.type	object
+	.size	NvM_JobMainState_t,1
+	.space	1
+	.sdecl	'.zbss.NvM_JobProc.NvM_JobSubState_t',data
+	.sect	'.zbss.NvM_JobProc.NvM_JobSubState_t'
+	.global	NvM_JobSubState_t
+NvM_JobSubState_t:	.type	object
+	.size	NvM_JobSubState_t,1
+	.space	1
+	.sdecl	'.zdata.NvM_JobProc.NvM_TaskState_t',data
+	.sect	'.zdata.NvM_JobProc.NvM_TaskState_t'
+	.global	NvM_TaskState_t
+NvM_TaskState_t:	.type	object
+	.size	NvM_TaskState_t,1
+	.space	1
+	.sdecl	'.bss.NvM_JobProc.NvM_CurrentBlockInfo_t',data
+	.sect	'.bss.NvM_JobProc.NvM_CurrentBlockInfo_t'
+	.global	NvM_CurrentBlockInfo_t
+	.align	4
+NvM_CurrentBlockInfo_t:	.type	object
+	.size	NvM_CurrentBlockInfo_t,72
+	.space	72
+	.sdecl	'.zbss.NvM_JobProc.NvM_SecondaryRedundantBlockDataIntegrityRecord',data
+	.sect	'.zbss.NvM_JobProc.NvM_SecondaryRedundantBlockDataIntegrityRecord'
+	.global	NvM_SecondaryRedundantBlockDataIntegrityRecord
+NvM_SecondaryRedundantBlockDataIntegrityRecord:	.type	object
+	.size	NvM_SecondaryRedundantBlockDataIntegrityRecord,4
+	.space	4
+	.sdecl	'.bss.NvM_JobProc.NvM_BlockMngmtArea_at',data
+	.sect	'.bss.NvM_JobProc.NvM_BlockMngmtArea_at'
+	.global	NvM_BlockMngmtArea_at
+	.align	2
+NvM_BlockMngmtArea_at:	.type	object
+	.size	NvM_BlockMngmtArea_at,12
+	.space	12
+	.sdecl	'.zbss.NvM_JobProc.NvM_DcmBlockMngmt_t',data
+	.sect	'.zbss.NvM_JobProc.NvM_DcmBlockMngmt_t'
+	.global	NvM_DcmBlockMngmt_t
+	.align	2
+NvM_DcmBlockMngmt_t:	.type	object
+	.size	NvM_DcmBlockMngmt_t,4
+	.space	4
+	.sdecl	'.rodata.NvM_JobProc.NvM_IntServiceDescrTable_at',data,rom
+	.sect	'.rodata.NvM_JobProc.NvM_IntServiceDescrTable_at'
+	.global	NvM_IntServiceDescrTable_at
+	.align	2
+NvM_IntServiceDescrTable_at:	.type	object
+	.size	NvM_IntServiceDescrTable_at,36
+	.byte	7,12,7
+	.space	1
+	.byte	22,4,6
+	.space	1
+	.byte	9,19,8
+	.space	1
+	.byte	20,20,11
+	.space	1
+	.byte	19,21,9
+	.space	1
+	.byte	6,32,13
+	.space	1
+	.byte	3,22,12
+	.space	1
+	.byte	51,35,21
+	.space	1
+	.byte	51,35,14
+	.space	1
+	.sdecl	'.rodata.NvM_JobProc.NvM_StateDescrTable_at',data,rom
+	.sect	'.rodata.NvM_JobProc.NvM_StateDescrTable_at'
+	.align	4
+NvM_StateDescrTable_at:	.type	object
+	.size	NvM_StateDescrTable_at,864
+	.byte	36,36,50,50
+	.space	2
+	.byte	36,36,50,50
+	.space	2
+	.byte	36,36,50,50
+	.space	2
+	.byte	50,50
+	.space	4
+	.byte	12,36,49,1
+	.byte	2
+	.space	1
+	.byte	11,36,38,1
+	.byte	3
+	.space	1
+	.byte	36,36,50,51
+	.byte	1
+	.space	1
+	.byte	50,51,1
+	.space	3
+	.byte	10,36,51,51
+	.byte	2
+	.space	1
+	.byte	36,36,10,51
+	.byte	1
+	.space	1
+	.byte	36,36,10,51
+	.byte	1
+	.space	1
+	.byte	16,51,1
+	.space	3
+	.byte	2,36,11,51
+	.byte	1
+	.space	1
+	.byte	10,36,51,51
+	.byte	3
+	.space	1
+	.byte	36,36,10,51
+	.byte	1
+	.space	1
+	.byte	10,51,1
+	.space	3
+	.byte	13,36,50,51
+	.byte	4
+	.space	1
+	.byte	9,5,44,51
+	.byte	6
+	.space	1
+	.byte	9,36,51,51
+	.byte	5
+	.space	1
+	.byte	51,51,9
+	.space	3
+	.byte	27,25,28,51
+	.byte	11
+	.space	1
+	.byte	28,36,50,51
+	.byte	5
+	.space	1
+	.byte	36,36,34,51
+	.byte	9
+	.space	1
+	.byte	51,51,9
+	.space	3
+	.byte	3,36,46,50
+	.byte	6
+	.space	1
+	.byte	4,29,47,51
+	.byte	7
+	.space	1
+	.byte	4,36,47,51
+	.byte	5
+	.space	1
+	.byte	32,51,9
+	.space	3
+	.byte	17,30,41,51
+	.byte	5
+	.space	1
+	.byte	36,36,29,23
+	.byte	8
+	.space	1
+	.byte	36,36,51,51
+	.byte	5
+	.space	1
+	.byte	51,51,5
+	.space	3
+	.byte	13,36,50,51
+	.byte	8
+	.space	1
+	.byte	9,31,51,51
+	.byte	5
+	.space	1
+	.byte	36,36,41,35
+	.byte	5
+	.space	1
+	.byte	51,51,5
+	.space	3
+	.byte	16,36,29,22
+	.byte	4
+	.space	1
+	.byte	36,36,9,51
+	.byte	10
+	.space	1
+	.byte	36,36,9,51
+	.byte	10
+	.space	1
+	.byte	9,51,10
+	.space	3
+	.byte	6,36,25,51
+	.byte	10
+	.space	1
+	.byte	36,36,26,16
+	.byte	35
+	.space	1
+	.byte	36,36,26,16
+	.byte	35
+	.space	1
+	.byte	26,16,35
+	.space	3
+	.byte	6,36,24,50
+	.byte	11
+	.space	1
+	.byte	36,36,16,51
+	.byte	35
+	.space	1
+	.byte	36,36,51,51
+	.byte	35
+	.space	1
+	.byte	51,51,35
+	.space	3
+	.byte	6,36,37,50
+	.byte	12
+	.space	1
+	.byte	35,35,51,51
+	.byte	35
+	.space	1
+	.byte	5,36,43,51
+	.byte	13
+	.space	1
+	.byte	51,51,14
+	.space	3
+	.byte	3,36,46,50
+	.byte	13
+	.space	1
+	.byte	4,36,47,51
+	.byte	14
+	.space	1
+	.byte	36,36,34,17
+	.byte	35
+	.space	1
+	.byte	51,51,35
+	.space	3
+	.byte	16,36,27,51
+	.byte	15
+	.space	1
+	.byte	24,36,17,51
+	.byte	35
+	.space	1
+	.byte	36,36,21,51
+	.byte	18
+	.space	1
+	.byte	51,51,35
+	.space	3
+	.byte	13,36,50,51
+	.byte	15
+	.space	1
+	.byte	16,9,30,27
+	.byte	16
+	.space	1
+	.byte	16,36,21,51
+	.byte	17
+	.space	1
+	.byte	51,51,35
+	.space	3
+	.byte	13,36,50,51
+	.byte	16
+	.space	1
+	.byte	9,24,17,51
+	.byte	35
+	.space	1
+	.byte	9,36,30,21
+	.byte	17
+	.space	1
+	.byte	21,51,17
+	.space	3
+	.byte	13,36,50,51
+	.byte	17
+	.space	1
+	.byte	9,36,30,21
+	.byte	18
+	.space	1
+	.byte	21,36,30,21
+	.byte	18
+	.space	1
+	.byte	21,51,17
+	.space	3
+	.byte	13,36,50,51
+	.byte	18
+	.space	1
+	.byte	9,36,17,51
+	.byte	35
+	.space	1
+	.byte	21,36,17,51
+	.byte	35
+	.space	1
+	.byte	21,51,18
+	.space	3
+	.byte	6,36,25,51
+	.byte	19
+	.space	1
+	.byte	36,36,26,51
+	.byte	35
+	.space	1
+	.byte	36,36,26,51
+	.byte	35
+	.space	1
+	.byte	26,51,35
+	.space	3
+	.byte	13,36,50,51
+	.byte	20
+	.space	1
+	.byte	9,16,29,20
+	.byte	20
+	.space	1
+	.byte	36,36,31,18
+	.byte	35
+	.space	1
+	.byte	31,18,35
+	.space	3
+	.byte	13,36,50,51
+	.byte	21
+	.space	1
+	.byte	9,16,29,19
+	.byte	21
+	.space	1
+	.byte	36,36,31,18
+	.byte	35
+	.space	1
+	.byte	31,18,35
+	.space	3
+	.byte	19,36,51,51
+	.byte	22
+	.space	1
+	.byte	36,36,15,13
+	.byte	23
+	.space	1
+	.byte	36,36,15,13
+	.byte	23
+	.space	1
+	.byte	15,13,23
+	.space	3
+	.byte	7,36,51,51
+	.byte	35
+	.space	1
+	.byte	15,36,51,51
+	.byte	24
+	.space	1
+	.byte	26,36
+	.space	1
+	.byte	51,26
+	.space	2
+	.byte	51,25
+	.space	3
+	.byte	32,33,48,50
+	.byte	24
+	.space	1
+	.byte	32,34,51,51
+	.byte	25
+	.space	1
+	.byte	36,36,45,51
+	.byte	28
+	.space	1
+	.byte	51,51,35
+	.space	3
+	.byte	18,20,27,51
+	.byte	31
+	.space	1
+	.byte	18,36,33,13
+	.byte	23
+	.space	1
+	.byte	23,36,5,51
+	.byte	30
+	.space	1
+	.byte	4,51,29
+	.space	3
+	.byte	18,36,33,13
+	.byte	23
+	.space	1
+	.byte	22,36,35,5
+	.byte	30
+	.space	1
+	.byte	36,36,33,13
+	.byte	23
+	.space	1
+	.byte	33,13,23
+	.space	3
+	.byte	9,36,42,13
+	.byte	23
+	.space	1
+	.byte	16,36,29,27
+	.byte	31
+	.space	1
+	.byte	36,36,42,13
+	.byte	23
+	.space	1
+	.byte	42,13,23
+	.space	3
+	.byte	3,36,46,50
+	.byte	28
+	.space	1
+	.byte	4,36,13,51
+	.byte	23
+	.space	1
+	.byte	26,36
+	.space	1
+	.byte	51,26
+	.space	2
+	.byte	51,25
+	.space	3
+	.byte	13,26,39,40
+	.byte	26
+	.space	1
+	.byte	19,36,51,51
+	.byte	29
+	.space	1
+	.byte	36,36,13,51
+	.byte	23
+	.space	1
+	.byte	13,51,23
+	.space	3
+	.byte	19,36,51,51
+	.byte	30
+	.space	1
+	.byte	36,36,13,51
+	.byte	23
+	.space	1
+	.byte	36,36,13,51
+	.byte	23
+	.space	1
+	.byte	13,51,23
+	.space	3
+	.byte	13,26,39,51
+	.byte	26
+	.space	1
+	.byte	13,36,50,51
+	.byte	31
+	.space	1
+	.byte	36,36,51,51
+	.byte	27
+	.space	1
+	.byte	51,51,27
+	.space	3
+	.byte	1,36,51,51
+	.byte	35
+	.space	1
+	.byte	8,36,51,51
+	.byte	34
+	.space	2
+	.byte	36,36,8,33
+	.space	1
+	.byte	33,14,32
+	.space	3
+	.byte	19,36,51,51
+	.byte	33
+	.space	1
+	.byte	36,36,14,51
+	.byte	32
+	.space	1
+	.byte	36,36,14,51
+	.byte	32
+	.space	1
+	.byte	14,51,32
+	.space	3
+	.byte	1,36,51,51
+	.byte	35
+	.space	1
+	.byte	14,36,50,51
+	.byte	34
+	.space	1
+	.byte	36,36,51,51
+	.byte	35
+	.space	1
+	.byte	51,51,35
+	.space	3
+	.byte	36,36,51,51
+	.byte	35
+	.space	1
+	.byte	36,36,51,51
+	.byte	35
+	.space	1
+	.byte	36,36,51,51
+	.byte	35
+	.space	1
+	.byte	51,51,35
+	.space	3
+	.calls	'NvM_FsmQuery','__INDIRECT__'
+	.calls	'NvM_FsmAction','__INDIRECT__'
+	.calls	'NvM_Fsm','NvM_FsmQuery'
+	.calls	'NvM_Fsm','NvM_FsmAction'
+	.calls	'NvM_FsmQuery','',0
+	.calls	'NvM_FsmAction','',0
+	.calls	'NvM_JobProcInit','',0
+	.calls	'NvM_Fsm','',0
+	.extern	NvM_ActionTable_ap
+	.extern	NvM_QueryTable_ap
+	.extern	NvM_CurrentJob_t
+	.extern	__INDIRECT__
+	.calls	'NvM_IsBooleanBitfieldTrue','',0
+
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1716  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1717  #define NVM_STOP_SEC_CODE
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1718  #include "NvM_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1719  
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1720  /**********************************************************************************************************************
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1721   *  END OF FILE: NvM_JobProc.c
+; ..\BSW364\NvM\Implementation\NvM_JobProc.c	  1722   *********************************************************************************************************************/
+
+	; Module end

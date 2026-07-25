@@ -1,0 +1,1114 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc20508a --dep-file=BSW364\\Com\\Implementation\\.Com_Serializer.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=BSW364\\Com\\Implementation\\Com_Serializer.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW364\\Com\\Implementation\\Com_Serializer.src ..\\BSW364\\Com\\Implementation\\Com_Serializer.c"
+	.compiler_name		"ctc"
+	;source	'..\\BSW364\\Com\\Implementation\\Com_Serializer.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.Com_Serializer.Com_Serializer_WriteSignal',code
+	.sect	'.text.Com_Serializer.Com_Serializer_WriteSignal'
+	.align	2
+	
+	.global	Com_Serializer_WriteSignal
+
+; ..\BSW364\Com\Implementation\Com_Serializer.c	     1  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	     2   *  COPYRIGHT
+; ..\BSW364\Com\Implementation\Com_Serializer.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Com\Implementation\Com_Serializer.c	     4   *  \verbatim
+; ..\BSW364\Com\Implementation\Com_Serializer.c	     5   *  Copyright (c) 2022 by Vector Informatik GmbH.                                                  All rights reserved.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	     6   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    10   *  \endverbatim
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    11   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    12   *  FILE DESCRIPTION
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    13   *  -----------------------------------------------------------------------------------------------------------------*/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    14  /*!        \file  Com_Serializer.c
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    15   *        \brief  MICROSAR Communication source file
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    16   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    17   *      \details  This is the implementation of the MICROSAR Communication module.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    18   *                The basic software module is based on the AUTOSAR Communication specification.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    19   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    20   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    21  #define COM_SERIALIZER_SOURCE
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    22  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    23  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    24   * MISRA JUSTIFICATION
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    25   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    26  /* PRQA  S 2741 EOF */ /* MD_CSL_ReducedToDefine */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    27  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    28  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    29    INCLUDES
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    30  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    31  #include "Com.h"
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    32  #include "Com_Serializer.h"
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    33  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    34  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    35    LOCAL CONSTANT MACROS
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    36  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    37  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    38  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    39    LOCAL FUNCTION MACROS
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    40  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    41  #if !defined (COM_LOCAL_INLINE)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    42  # define COM_LOCAL_INLINE LOCAL_INLINE
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    43  #endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    44  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    45  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    46    LOCAL DATA TYPES AND STRUCTURES
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    47  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    48  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    49  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    50    LOCAL DATA PROTOTYPES
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    51  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    52  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    53  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    54    LOCAL FUNCTION PROTOTYPES
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    55  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    56  #define COM_START_SEC_CODE
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    57  #include "MemMap.h"    /* PRQA S 5087 */        /* MD_MSR_MemMap */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    58  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    59  #if ((COM_TXBUFFERUSEDOFTXSIGINFO == STD_ON) && (CPU_BYTE_ORDER == HIGH_BYTE_FIRST))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    60  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    61    Com_Signal_getLSBSignalApplSourcePtr
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    62  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    63  /*! \brief        This method returns the LSB pointer to application memory where the signal is located. This function should
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    64   *                only be used if the configured byte order equals high byte order.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    65      \details      -
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    66      \pre          -
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    67      \param[in]    SignalApplSourcePtr Pointer to application memory where the signal is located
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    68      \param[in]    SignalId Id of Signal
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    69      \return       const uint8*
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    70      \context      TASK|ISR2
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    71  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    72  COM_LOCAL_INLINE FUNC(P2CONST(uint8, AUTOMATIC, COM_APPL_DATA), COM_CODE) Com_Signal_getLSBSignalApplSourcePtr(Com_TxSigInfoIterType SignalId,
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    73                                                                                                                 P2CONST(uint8, AUTOMATIC, COM_APPL_DATA) SignalApplSourcePtr);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    74  #endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    75  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    76  #if ((COM_TXBUFFERUSEDOFTXGRPSIGINFO == STD_ON) && (CPU_BYTE_ORDER == HIGH_BYTE_FIRST))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    77  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    78    Com_Signal_getLSBGroupSignalApplSourcePtr
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    79  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    80  /*! \brief        This method returns the LSB pointer to application memory where the group signal is located. This function should
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    81   *                only be used if the configured byte order equals high byte order.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    82      \details      -
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    83      \pre          -
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    84      \param[in]    SignalApplSourcePtr Pointer to application memory where the signal is located
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    85      \param[in]    groupSignalId Id of Group Signal
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    86      \return       const uint8*
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    87      \context      TASK|ISR2
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    88  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    89  COM_LOCAL_INLINE FUNC(P2CONST(uint8, AUTOMATIC, COM_APPL_DATA), COM_CODE) Com_Signal_getLSBGroupSignalApplSourcePtr(Com_TxGrpSigInfoIterType groupSignalId,
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    90                                                                                                                      P2CONST(uint8, AUTOMATIC, COM_APPL_DATA) SignalApplSourcePtr);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    91  #endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    92  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    93  #if ((COM_TXBUFFERUSEDOFTXSIGINFO == STD_ON) && ((COM_EXISTS_NBITNBYTE_BUSACCOFTXSIGINFO == STD_ON) || (COM_EXISTS_NBITNBYTE_SW_BUSACCOFTXSIGINFO == STD_ON)))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    94  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    95    Com_Signal_WriteSignal_NBITNBYTE
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    96  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    97  /*! \brief            This method writes a signal to the indicated ipdu buffer
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    98      \details          -
+; ..\BSW364\Com\Implementation\Com_Serializer.c	    99      \pre              -
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   100      \param[in]        SignalId
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   101      \param[in,out]    SignalBusDestPtr    Valid pointer to TxBuffer, where the source signal is written to. Pointer has always
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   102                                            to point on LSB.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   103      \param[in]        SignalApplSourcePtr Pointer to application memory where the signal is located
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   104      \param[in]        signalStartBit      bit index in the byte, where the signal starts (0..7)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   105      \param[in]        isBusBigEndian      flag, if bus is big endian.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   106      \context          TASK|ISR2
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   107  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   108  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_Signal_WriteSignal_NBITNBYTE(Com_TxSigInfoIterType SignalId,
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   109                                                                         P2CONST(uint8, AUTOMATIC, COM_APPL_DATA) SignalApplSourcePtr,
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   110                                                                         Com_BitPositionOfTxSigInfoType signalStartBit, P2VAR(uint8, AUTOMATIC, COM_VAR_NO_INIT) SignalBusDestPtr, boolean isBusBigEndian);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   111  #endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   112  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   113  #if ((COM_TXBUFFERUSEDOFTXGRPSIGINFO == STD_ON) && ((COM_EXISTS_NBITNBYTE_BUSACCOFTXGRPSIGINFO == STD_ON) || (COM_EXISTS_NBITNBYTE_SW_BUSACCOFTXGRPSIGINFO == STD_ON)))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   114  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   115    Com_Signal_WriteGroupSignal_NBITNBYTE
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   116  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   117  /*! \brief            This method writes a group signal to the indicated shadow buffer
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   118      \details          -
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   119      \pre              -
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   120      \param[in]        groupSignalId
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   121      \param[in,out]    SignalBusDestPtr    Valid pointer to TxBuffer, where the source signal is written to. Pointer has always
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   122                                            to point on LSB.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   123      \param[in]        SignalApplSourcePtr Pointer to application memory where the signal is located
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   124      \param[in]        signalStartBit      bit index in the byte, where the signal starts (0..7)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   125      \param[in]        isBusBigEndian      flag, if bus is big endian.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   126      \context          TASK|ISR2
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   127  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   128  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_Signal_WriteGroupSignal_NBITNBYTE(Com_TxGrpSigInfoIterType groupSignalId,
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   129                                                                              P2CONST(uint8, AUTOMATIC, COM_APPL_DATA) SignalApplSourcePtr,
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   130                                                                              Com_BitPositionOfTxGrpSigInfoType signalStartBit, P2VAR(uint8, AUTOMATIC, COM_VAR_NO_INIT) SignalBusDestPtr,
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   131                                                                              boolean isBusBigEndian);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   132  #endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   133  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   134  #if ((COM_TXBUFFERUSEDOFTXSIGINFO == STD_ON)  && ((COM_EXISTS_NBYTE_BUSACCOFTXSIGINFO == STD_ON) || (COM_EXISTS_NBYTE_SW_BUSACCOFTXSIGINFO == STD_ON) || (COM_EXISTS_ARRAY_BASED_BUSACCOFTXSIGINFO == STD_ON)))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   135  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   136    Com_Signal_GetTxSignalBufferLength
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   137  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   138  /*! \brief        This method returns the Tx Buffer Length of the Signal in bytes.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   139      \details      -
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   140      \pre          -
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   141      \param[in]    SignalId            ID of the signal to be written to
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   142      \return       Com_TxBufferLengthOfTxSigInfoType
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   143      \context      TASK|ISR2
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   144  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   145  COM_LOCAL_INLINE FUNC(Com_TxBufferLengthOfTxSigInfoType, COM_CODE) Com_Signal_GetTxSignalBufferLength(Com_TxSigInfoIterType SignalId);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   146  #endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   147  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   148  #if ((COM_TXBUFFERUSEDOFTXGRPSIGINFO == STD_ON)  && ((COM_EXISTS_NBYTE_BUSACCOFTXGRPSIGINFO == STD_ON) || (COM_EXISTS_NBYTE_SW_BUSACCOFTXGRPSIGINFO == STD_ON) || (COM_EXISTS_ARRAY_BASED_BUSACCOFTXGRPSIGINFO == STD_ON)))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   149  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   150    Com_Signal_GetTxGroupSignalBufferLength
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   151  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   152  /*! \brief        This method returns the Tx Buffer Length of the Group Signal in bytes.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   153      \details      -
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   154      \pre          -
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   155      \param[in]    groupSignalId            ID of the signal to be written to
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   156      \return       Com_TxBufferLengthOfTxGrpSigInfoType
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   157      \context      TASK|ISR2
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   158  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   159  COM_LOCAL_INLINE FUNC(Com_TxBufferLengthOfTxGrpSigInfoType, COM_CODE) Com_Signal_GetTxGroupSignalBufferLength(Com_TxGrpSigInfoIterType groupSignalId);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   160  #endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   161  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   162  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   163    LOCAL FUNCTIONS
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   164  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   165  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   166  #if ((COM_TXBUFFERUSEDOFTXSIGINFO == STD_ON) && (CPU_BYTE_ORDER == HIGH_BYTE_FIRST))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   167  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   168    Com_Signal_getLSBSignalApplSourcePtr
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   169  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   170  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   171   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   172   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   173   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   174   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   175   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   176  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   177  COM_LOCAL_INLINE FUNC(P2CONST(uint8, AUTOMATIC, COM_APPL_DATA), COM_CODE) Com_Signal_getLSBSignalApplSourcePtr(Com_TxSigInfoIterType SignalId,
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   178                                                                                                                 P2CONST(uint8, AUTOMATIC, COM_APPL_DATA) SignalApplSourcePtr)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   179  {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   180  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   181    /* *INDENT-OFF* */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   182    /* Motorola plattform specific implementation
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   183       We start writing with the lsb (writing from right to left). To do so it is required to know
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   184       the byte of the lsb. This is not the SignalApplSourcePtr as this one always points to the leftmost
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   185       byte. For motorola systems, this is the byte of the msb.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   186       Reason: Easier code generation + it is easier to start writing with the lsb and counting
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   187       bits "downwards" to the msb. SignalBusDestPtr points always to the lsb of motorola or intel bus
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   188       signals. */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   189    /* *INDENT-ON* */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   190  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   191    P2CONST(uint8, AUTOMATIC, COM_APPL_DATA) SignalApplSourcePtrIntern = SignalApplSourcePtr;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   192  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   193    switch (Com_GetApplTypeOfTxSigInfo(SignalId)) /* PRQA S 3315 */ /* MD_Com_3315 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   194    {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   195  # if (COM_EXISTS_UINT16_APPLTYPEOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   196      case COM_UINT16_APPLTYPEOFTXSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   197        SignalApplSourcePtrIntern = &SignalApplSourcePtrIntern[1];
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   198        break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   199  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   200  # if (COM_EXISTS_SINT16_APPLTYPEOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   201      case COM_SINT16_APPLTYPEOFTXSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   202        SignalApplSourcePtrIntern = &SignalApplSourcePtrIntern[1];
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   203        break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   204  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   205  # if (COM_EXISTS_UINT32_APPLTYPEOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   206      case COM_UINT32_APPLTYPEOFTXSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   207        SignalApplSourcePtrIntern = &SignalApplSourcePtrIntern[3];
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   208        break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   209  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   210  # if (COM_EXISTS_SINT32_APPLTYPEOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   211      case COM_SINT32_APPLTYPEOFTXSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   212        SignalApplSourcePtrIntern = &SignalApplSourcePtrIntern[3];
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   213        break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   214  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   215  # if (COM_EXISTS_FLOAT32_APPLTYPEOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   216      case COM_FLOAT32_APPLTYPEOFTXSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   217        SignalApplSourcePtrIntern = &SignalApplSourcePtrIntern[3];
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   218        break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   219  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   220  # if (COM_EXISTS_UINT64_APPLTYPEOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   221      case COM_UINT64_APPLTYPEOFTXSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   222        SignalApplSourcePtrIntern = &SignalApplSourcePtrIntern[7];
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   223        break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   224  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   225  # if (COM_EXISTS_SINT64_APPLTYPEOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   226      case COM_SINT64_APPLTYPEOFTXSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   227        SignalApplSourcePtrIntern = &SignalApplSourcePtrIntern[7];
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   228        break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   229  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   230  # if (COM_EXISTS_FLOAT64_APPLTYPEOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   231      case COM_FLOAT64_APPLTYPEOFTXSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   232        SignalApplSourcePtrIntern = &SignalApplSourcePtrIntern[7];
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   233        break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   234  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   235  # if (COM_EXISTS_SINT8_APPLTYPEOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   236      case COM_SINT8_APPLTYPEOFTXSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   237  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   238  # if (COM_EXISTS_UINT8_APPLTYPEOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   239      case COM_UINT8_APPLTYPEOFTXSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   240  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   241  # if (COM_EXISTS_UINT8_N_APPLTYPEOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   242      case COM_UINT8_N_APPLTYPEOFTXSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   243  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   244  # if (COM_EXISTS_UINT8_DYN_APPLTYPEOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   245      case COM_UINT8_DYN_APPLTYPEOFTXSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   246  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   247      default:   /* COV_COM_MISRA */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   248        break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   249    }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   250  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   251    COM_DUMMY_STATEMENT(SignalId);        /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   252  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   253    return SignalApplSourcePtrIntern;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   254  }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   255  #endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   256  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   257  #if ((COM_TXBUFFERUSEDOFTXGRPSIGINFO == STD_ON) && (CPU_BYTE_ORDER == HIGH_BYTE_FIRST))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   258  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   259    Com_Signal_getLSBGroupSignalApplSourcePtr
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   260  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   261  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   262   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   263   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   264   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   265   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   266   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   267  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   268  COM_LOCAL_INLINE FUNC(P2CONST(uint8, AUTOMATIC, COM_APPL_DATA), COM_CODE) Com_Signal_getLSBGroupSignalApplSourcePtr(Com_TxGrpSigInfoIterType groupSignalId,
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   269                                                                                                                      P2CONST(uint8, AUTOMATIC, COM_APPL_DATA) SignalApplSourcePtr)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   270  {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   271  /* *INDENT-OFF* */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   272    /* Motorola plattform specific implementation
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   273       We start writing with the lsb (writing from right to left). To do so it is required to know
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   274       the byte of the lsb. This is not the SignalApplSourcePtr as this one always points to the leftmost
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   275       byte. For motorola systems, this is the byte of the msb.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   276       Reason: Easier code generation + it is easier to start writing with the lsb and counting
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   277       bits "downwards" to the msb. SignalBusDestPtr points always to the lsb of motorola or intel bus
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   278       signals. */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   279  /* *INDENT-ON* */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   280  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   281    P2CONST(uint8, AUTOMATIC, COM_APPL_DATA) SignalApplSourcePtrIntern = SignalApplSourcePtr;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   282  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   283    switch (Com_GetApplTypeOfTxGrpSigInfo(groupSignalId)) /* PRQA S 3315 */ /* MD_Com_3315 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   284    {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   285  # if (COM_EXISTS_UINT16_APPLTYPEOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   286      case COM_UINT16_APPLTYPEOFTXGRPSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   287        SignalApplSourcePtrIntern = &SignalApplSourcePtrIntern[1];
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   288        break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   289  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   290  # if (COM_EXISTS_SINT16_APPLTYPEOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   291      case COM_SINT16_APPLTYPEOFTXGRPSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   292        SignalApplSourcePtrIntern = &SignalApplSourcePtrIntern[1];
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   293        break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   294  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   295  # if (COM_EXISTS_UINT32_APPLTYPEOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   296      case COM_UINT32_APPLTYPEOFTXGRPSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   297        SignalApplSourcePtrIntern = &SignalApplSourcePtrIntern[3];
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   298        break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   299  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   300  # if (COM_EXISTS_SINT32_APPLTYPEOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   301      case COM_SINT32_APPLTYPEOFTXGRPSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   302        SignalApplSourcePtrIntern = &SignalApplSourcePtrIntern[3];
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   303        break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   304  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   305  # if (COM_EXISTS_FLOAT32_APPLTYPEOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   306      case COM_FLOAT32_APPLTYPEOFTXGRPSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   307        SignalApplSourcePtrIntern = &SignalApplSourcePtrIntern[3];
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   308        break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   309  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   310  # if (COM_EXISTS_UINT64_APPLTYPEOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   311      case COM_UINT64_APPLTYPEOFTXGRPSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   312        SignalApplSourcePtrIntern = &SignalApplSourcePtrIntern[7];
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   313        break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   314  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   315  # if (COM_EXISTS_SINT64_APPLTYPEOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   316      case COM_SINT64_APPLTYPEOFTXGRPSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   317        SignalApplSourcePtrIntern = &SignalApplSourcePtrIntern[7];
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   318        break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   319  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   320  # if (COM_EXISTS_FLOAT64_APPLTYPEOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   321      case COM_FLOAT64_APPLTYPEOFTXGRPSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   322        SignalApplSourcePtrIntern = &SignalApplSourcePtrIntern[7];
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   323        break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   324  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   325  # if (COM_EXISTS_SINT8_APPLTYPEOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   326      case COM_SINT8_APPLTYPEOFTXGRPSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   327  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   328  # if (COM_EXISTS_UINT8_APPLTYPEOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   329      case COM_UINT8_APPLTYPEOFTXGRPSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   330  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   331  # if (COM_EXISTS_UINT8_N_APPLTYPEOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   332      case COM_UINT8_N_APPLTYPEOFTXGRPSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   333  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   334  # if (COM_EXISTS_UINT8_DYN_APPLTYPEOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   335      case COM_UINT8_DYN_APPLTYPEOFTXGRPSIGINFO:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   336  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   337      default:   /* COV_COM_MISRA */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   338        break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   339    }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   340  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   341    COM_DUMMY_STATEMENT(groupSignalId);   /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   342    return SignalApplSourcePtrIntern;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   343  }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   344  #endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   345  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   346  #if ((COM_TXBUFFERUSEDOFTXSIGINFO == STD_ON) && ((COM_EXISTS_NBITNBYTE_BUSACCOFTXSIGINFO == STD_ON) || (COM_EXISTS_NBITNBYTE_SW_BUSACCOFTXSIGINFO == STD_ON)))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   347  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   348    Com_Signal_WriteSignal_NBITNBYTE
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   349  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   350  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   351   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   352   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   353   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   354   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   355   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   356   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   357   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   358   ********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   359  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_Signal_WriteSignal_NBITNBYTE(Com_TxSigInfoIterType SignalId,  /* COV_WRITESIGNAL_NBITNBYTE_XX */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   360                                                                         P2CONST
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   361                                                                         (uint8,
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   362                                                                          AUTOMATIC,
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   363                                                                          COM_APPL_DATA)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   364                                                                         SignalApplSourcePtr,
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   365                                                                         Com_BitPositionOfTxSigInfoType signalStartBit, P2VAR(uint8, AUTOMATIC, COM_VAR_NO_INIT) SignalBusDestPtr, boolean isBusBigEndian)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   366  {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   367    uint8 mask;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   368    uint8 tmpByte;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   369    sint16_least i = 1;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   370    uint16 maskCounter = 8u - (uint16) signalStartBit;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   371    Com_BitLengthOfTxSigInfoType signalBitCount = Com_GetBitLengthOfTxSigInfo(SignalId);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   372    /* #10 Write LSB of the passed signal */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   373    *SignalBusDestPtr &= COM_CAST2UINT8(~COM_CAST2UINT8(255u << signalStartBit)); /* SBSW_COM_VALID_PTR_BY_COMSTACK_01 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   374    *SignalBusDestPtr |= COM_CAST2UINT8(*SignalApplSourcePtr << signalStartBit);  /* SBSW_COM_VALID_PTR_BY_COMSTACK_01 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   375    /* #20 If more than 8 bits have to be copied */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   376    if(Com_IsTxBufferUsedOfTxSigInfo(SignalId)) /* COV_COM_CSL03_ISUSED_OPTIONAL_INDIRECTION */ /* This function is only called when the buffer exists */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   377    {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   378      for(; i < ((sint16_least) Com_GetTxBufferLengthOfTxSigInfo(SignalId) - 1); i++)     /* COV_WRITESIGNAL_NBITNBYTE_XX */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   379      {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   380        /* #30 Copy all full bytes, byte align the source byte before it is copied */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   381  # if (CPU_BYTE_ORDER == HIGH_BYTE_FIRST)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   382        tmpByte = COM_CAST2UINT8(SignalApplSourcePtr[-i + 1] >> (8u - signalStartBit));
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   383        tmpByte |= COM_CAST2UINT8(SignalApplSourcePtr[-i] << signalStartBit);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   384  # else
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   385        tmpByte = COM_CAST2UINT8(SignalApplSourcePtr[i - 1] >> (8u - signalStartBit));
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   386        tmpByte |= COM_CAST2UINT8(SignalApplSourcePtr[i] << signalStartBit);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   387  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   388  # if ((COM_EXISTS_NBITNBYTE_BUSACCOFTXSIGINFO == STD_ON) && (COM_EXISTS_NBITNBYTE_SW_BUSACCOFTXSIGINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   389        /* If little endian and big endian signals exist */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   390        SignalBusDestPtr[Com_NBITNBYTE_GetEndiannesIndex(i, isBusBigEndian)] = tmpByte;   /* SBSW_COM_VALID_PTR_BY_COMSTACK_02 */ /* COV_COM_NBITNBYTE_ENDIANNESS */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   391  # elif (((CPU_BYTE_ORDER == HIGH_BYTE_FIRST)&&(COM_EXISTS_NBITNBYTE_BUSACCOFTXSIGINFO == STD_ON)) || ((CPU_BYTE_ORDER == LOW_BYTE_FIRST) && (COM_EXISTS_NBITNBYTE_SW_BUSACCOFTXSIGINFO == STD_ON)))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   392        /* #40 If bus signal is big endian, write with negative loop index as pointer is pointing to LSB (last byte). */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   393        SignalBusDestPtr[-i] = tmpByte;   /* SBSW_COM_VALID_PTR_BY_COMSTACK_02 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   394  # else
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   395        /* #50 If bus signal is little endian, write with positive loop index as pointer is pointing to LSB (first byte). */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   396        SignalBusDestPtr[i] = tmpByte;    /* SBSW_COM_VALID_PTR_BY_COMSTACK_02 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   397  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   398        maskCounter += 8u;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   399      }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   400    }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   401  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   402  # if (CPU_BYTE_ORDER == HIGH_BYTE_FIRST)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   403    tmpByte = COM_CAST2UINT8(SignalApplSourcePtr[-i + 1] >> (8u - signalStartBit));
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   404    if(COM_CAST2UINT8(i) <= (COM_CAST2UINT8(signalBitCount - 1u) >> 3u))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   405    {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   406      tmpByte |= COM_CAST2UINT8(SignalApplSourcePtr[-i] << signalStartBit);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   407    }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   408  # else
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   409    tmpByte = COM_CAST2UINT8(SignalApplSourcePtr[i - 1] >> (8u - signalStartBit));
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   410    if(COM_CAST2UINT8(i) <= (COM_CAST2UINT8(signalBitCount - 1u) >> 3u))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   411    {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   412      tmpByte |= COM_CAST2UINT8(SignalApplSourcePtr[i] << signalStartBit);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   413    }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   414  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   415  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   416    mask = COM_CAST2UINT8(255u >> (8u - (signalBitCount - maskCounter)));
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   417  # if ((COM_EXISTS_NBITNBYTE_BUSACCOFTXSIGINFO == STD_ON) && (COM_EXISTS_NBITNBYTE_SW_BUSACCOFTXSIGINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   418    i = (sint16_least) Com_NBITNBYTE_GetEndiannesIndex(i, isBusBigEndian);        /* COV_COM_NBITNBYTE_ENDIANNESS */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   419  # elif (((CPU_BYTE_ORDER == HIGH_BYTE_FIRST)&&(COM_EXISTS_NBITNBYTE_BUSACCOFTXSIGINFO == STD_ON)) || ((CPU_BYTE_ORDER == LOW_BYTE_FIRST) && (COM_EXISTS_NBITNBYTE_SW_BUSACCOFTXSIGINFO == STD_ON)))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   420    /* For big endian bus signals */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   421    i = -i;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   422  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   423    /* #60 Copy the remaining bits of last byte to the destination buffer */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   424    SignalBusDestPtr[i] = (SignalBusDestPtr[i] & COM_CAST2UINT8(~mask)) | (tmpByte & mask);       /* SBSW_COM_VALID_PTR_BY_COMSTACK_02 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   425    COM_DUMMY_STATEMENT(isBusBigEndian);  /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   426  }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   427  #endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   428  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   429  #if ((COM_TXBUFFERUSEDOFTXGRPSIGINFO == STD_ON) && ((COM_EXISTS_NBITNBYTE_BUSACCOFTXGRPSIGINFO == STD_ON) || (COM_EXISTS_NBITNBYTE_SW_BUSACCOFTXGRPSIGINFO == STD_ON)))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   430  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   431    Com_Signal_WriteGroupSignal_NBITNBYTE
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   432  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   433  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   434   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   435   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   436   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   437   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   438   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   439   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   440   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   441   ********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   442  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_Signal_WriteGroupSignal_NBITNBYTE(Com_TxGrpSigInfoIterType groupSignalId,     /* COV_WRITESIGNAL_NBITNBYTE_XX */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   443                                                                              P2CONST
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   444                                                                              (uint8,
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   445                                                                               AUTOMATIC,
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   446                                                                               COM_APPL_DATA)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   447                                                                              SignalApplSourcePtr,
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   448                                                                              Com_BitPositionOfTxGrpSigInfoType
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   449                                                                              signalStartBit, P2VAR(uint8, AUTOMATIC, COM_VAR_NO_INIT) SignalBusDestPtr, boolean isBusBigEndian)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   450  {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   451    uint8 mask;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   452    uint8 tmpByte;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   453    sint16_least i = 1;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   454    uint16 maskCounter = 8u - (uint16) signalStartBit;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   455    Com_BitLengthOfTxGrpSigInfoType signalBitCount = Com_GetBitLengthOfTxGrpSigInfo(groupSignalId);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   456    /* #10 Write LSB of the passed signal */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   457    *SignalBusDestPtr &= COM_CAST2UINT8(~COM_CAST2UINT8(255u << signalStartBit)); /* SBSW_COM_VALID_PTR_BY_COMSTACK_01 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   458    *SignalBusDestPtr |= COM_CAST2UINT8(*SignalApplSourcePtr << signalStartBit);  /* SBSW_COM_VALID_PTR_BY_COMSTACK_01 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   459    /* #20 If more than 8 bits have to be copied */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   460  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   461    for(; i < ((sint16_least) Com_GetTxBufferLengthOfTxGrpSigInfo(groupSignalId) - 1); i++)       /* COV_WRITESIGNAL_NBITNBYTE_XX */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   462    {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   463      /* #30 Copy all full bytes, byte align the source byte before it is copied */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   464  # if (CPU_BYTE_ORDER == HIGH_BYTE_FIRST)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   465      tmpByte = COM_CAST2UINT8(SignalApplSourcePtr[-i + 1] >> (8u - signalStartBit));
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   466      tmpByte |= COM_CAST2UINT8(SignalApplSourcePtr[-i] << signalStartBit);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   467  # else
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   468      tmpByte = COM_CAST2UINT8(SignalApplSourcePtr[i - 1] >> (8u - signalStartBit));
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   469      tmpByte |= COM_CAST2UINT8(SignalApplSourcePtr[i] << signalStartBit);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   470  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   471  # if ((COM_EXISTS_NBITNBYTE_BUSACCOFTXGRPSIGINFO == STD_ON) && (COM_EXISTS_NBITNBYTE_SW_BUSACCOFTXGRPSIGINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   472      /* If little endian and big endian signals exist */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   473      SignalBusDestPtr[Com_NBITNBYTE_GetEndiannesIndex(i, isBusBigEndian)] = tmpByte;     /* SBSW_COM_VALID_PTR_BY_COMSTACK_02 */ /* COV_COM_NBITNBYTE_ENDIANNESS */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   474  # elif (((CPU_BYTE_ORDER == HIGH_BYTE_FIRST)&&(COM_EXISTS_NBITNBYTE_BUSACCOFTXGRPSIGINFO == STD_ON)) || ((CPU_BYTE_ORDER == LOW_BYTE_FIRST) && (COM_EXISTS_NBITNBYTE_SW_BUSACCOFTXGRPSIGINFO == STD_ON)))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   475      /* #40 If bus signal is big endian, write with negative loop index as pointer is pointing to LSB (last byte). */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   476      SignalBusDestPtr[-i] = tmpByte;     /* SBSW_COM_VALID_PTR_BY_COMSTACK_02 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   477  # else
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   478      /* #50 If bus signal is little endian, write with positive loop index as pointer is pointing to LSB (first byte). */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   479      SignalBusDestPtr[i] = tmpByte;      /* SBSW_COM_VALID_PTR_BY_COMSTACK_02 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   480  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   481      maskCounter += 8u;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   482    }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   483  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   484  # if (CPU_BYTE_ORDER == HIGH_BYTE_FIRST)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   485    tmpByte = COM_CAST2UINT8(SignalApplSourcePtr[-i + 1] >> (8u - signalStartBit));
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   486    if(COM_CAST2UINT8(i) <= (COM_CAST2UINT8(signalBitCount - 1u) >> 3u))  /* COV_COM_SIG_GRPSIG_LAYOUT */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   487    {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   488      tmpByte |= COM_CAST2UINT8(SignalApplSourcePtr[-i] << signalStartBit);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   489    }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   490  # else
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   491    tmpByte = COM_CAST2UINT8(SignalApplSourcePtr[i - 1] >> (8u - signalStartBit));
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   492    if(COM_CAST2UINT8(i) <= (COM_CAST2UINT8(signalBitCount - 1u) >> 3u))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   493    {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   494      tmpByte |= COM_CAST2UINT8(SignalApplSourcePtr[i] << signalStartBit);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   495    }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   496  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   497  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   498    mask = COM_CAST2UINT8(255u >> (8u - (signalBitCount - maskCounter)));
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   499  # if ((COM_EXISTS_NBITNBYTE_BUSACCOFTXGRPSIGINFO == STD_ON) && (COM_EXISTS_NBITNBYTE_SW_BUSACCOFTXGRPSIGINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   500    i = (sint16_least) Com_NBITNBYTE_GetEndiannesIndex(i, isBusBigEndian);        /* COV_COM_NBITNBYTE_ENDIANNESS */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   501  # elif (((CPU_BYTE_ORDER == HIGH_BYTE_FIRST)&&(COM_EXISTS_NBITNBYTE_BUSACCOFTXGRPSIGINFO == STD_ON)) || ((CPU_BYTE_ORDER == LOW_BYTE_FIRST) && (COM_EXISTS_NBITNBYTE_SW_BUSACCOFTXGRPSIGINFO == STD_ON)))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   502    /* For big endian bus signals */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   503    i = -i;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   504  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   505    /* #60 Copy the remaining bits of last byte to the destination buffer */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   506    SignalBusDestPtr[i] = (SignalBusDestPtr[i] & COM_CAST2UINT8(~mask)) | (tmpByte & mask);       /* SBSW_COM_VALID_PTR_BY_COMSTACK_02 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   507    COM_DUMMY_STATEMENT(isBusBigEndian);  /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   508  }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   509  #endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   510  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   511  #if ((COM_TXBUFFERUSEDOFTXSIGINFO == STD_ON)  && ((COM_EXISTS_NBYTE_BUSACCOFTXSIGINFO == STD_ON) || (COM_EXISTS_NBYTE_SW_BUSACCOFTXSIGINFO == STD_ON) || (COM_EXISTS_ARRAY_BASED_BUSACCOFTXSIGINFO == STD_ON)))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   512  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   513    Com_Signal_GetTxSignalBufferLength
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   514  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   515  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   516   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   517   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   518   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   519  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   520  COM_LOCAL_INLINE FUNC(Com_TxBufferLengthOfTxSigInfoType, COM_CODE) Com_Signal_GetTxSignalBufferLength(Com_TxSigInfoIterType SignalId)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   521  {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   522    Com_TxBufferLengthOfTxSigInfoType txBufferLength = 0u;        /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   523  # if ((COM_TXTPINFOUSEDOFTXPDUINFO == STD_ON) && (COM_EXISTS_UINT8_DYN_APPLTYPEOFTXSIGINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   524    /* #10 If the passed signal is a dynamic length signal return the current dynamic byte length */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   525    if(Com_GetApplTypeOfTxSigInfo(SignalId) == COM_UINT8_DYN_APPLTYPEOFTXSIGINFO) /* COV_COM_UINT8_DYN_APPLTYPE */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   526    {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   527      if(Com_IsTxTpInfoUsedOfTxPduInfo(Com_GetTxPduInfoIdxOfTxSigInfo(SignalId))) /* COV_COM_CSL03_ISUSED_OPTIONAL_INDIRECTION */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   528      {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   529        Com_TxTpInfoIdxOfTxPduInfoType txTpPduInfoIdx = Com_GetTxTpInfoIdxOfTxPduInfo(Com_GetTxPduInfoIdxOfTxSigInfo(SignalId));
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   530        txBufferLength = (Com_TxBufferLengthOfTxSigInfoType) Com_GetTxDynSignalLength(txTpPduInfoIdx);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   531      }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   532    }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   533    /* #20 Otherwise use the static Tx Buffer Length */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   534    else
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   535  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   536    {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   537      txBufferLength = Com_GetTxBufferLengthOfTxSigInfo(SignalId);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   538    }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   539  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   540    return txBufferLength;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   541  }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   542  #endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   543  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   544  #if ((COM_TXBUFFERUSEDOFTXGRPSIGINFO == STD_ON)  && ((COM_EXISTS_NBYTE_BUSACCOFTXGRPSIGINFO == STD_ON) || (COM_EXISTS_NBYTE_SW_BUSACCOFTXGRPSIGINFO == STD_ON) || (COM_EXISTS_ARRAY_BASED_BUSACCOFTXGRPSIGINFO == STD_ON)))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   545  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   546    Com_Signal_GetTxGroupSignalBufferLength
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   547  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   548  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   549   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   550   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   551   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   552  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   553  COM_LOCAL_INLINE FUNC(Com_TxBufferLengthOfTxGrpSigInfoType, COM_CODE) Com_Signal_GetTxGroupSignalBufferLength(Com_TxGrpSigInfoIterType groupSignalId)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   554  {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   555    Com_TxBufferLengthOfTxGrpSigInfoType txBufferLength = 0u;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   556  # if ((COM_TXTPINFOUSEDOFTXPDUINFO == STD_ON) && (COM_EXISTS_UINT8_DYN_APPLTYPEOFTXGRPSIGINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   557    /* #10 If the passed group signal is a dynamic length group signal return the current dynamic byte length */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   558    if(Com_GetApplTypeOfTxGrpSigInfo(groupSignalId) == COM_UINT8_DYN_APPLTYPEOFTXGRPSIGINFO)      /* COV_COM_UINT8_DYN_APPLTYPE */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   559    {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   560      if(Com_IsTxTpInfoUsedOfTxPduInfo(Com_GetTxPduInfoIdxOfTxGrpSigInfo(groupSignalId))) /* COV_COM_CSL03_ISUSED_OPTIONAL_INDIRECTION */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   561      {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   562        Com_TxTpInfoIdxOfTxPduInfoType txTpPduInfoIdx = Com_GetTxTpInfoIdxOfTxPduInfo(Com_GetTxPduInfoIdxOfTxGrpSigInfo(groupSignalId));
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   563        txBufferLength = (Com_TxBufferLengthOfTxGrpSigInfoType) Com_GetTxDynSignalLength(txTpPduInfoIdx);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   564      }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   565    }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   566    /* #20 Otherwise use the static Tx Buffer Length */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   567    else
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   568  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   569    {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   570      txBufferLength = Com_GetTxBufferLengthOfTxGrpSigInfo(groupSignalId);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   571    }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   572  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   573    return txBufferLength;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   574  }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   575  #endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   576  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   577  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   578    GLOBAL FUNCTIONS
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   579  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   580  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   581  #if (COM_TXBUFFERUSEDOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   582  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   583    Com_Serializer_WriteSignal
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   584  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   585  /*!
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   586   * Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   587   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   588   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   589   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   590   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   591   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   592   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   593   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   594   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   595   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   596   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   597   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   598   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   599   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   600   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   601   **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   602  FUNC(void, COM_CODE) Com_Serializer_WriteSignal(Com_TxSigInfoIterType SignalId, P2CONST(uint8, AUTOMATIC, COM_APPL_DATA) SignalApplSourcePtr)
+; Function Com_Serializer_WriteSignal
+Com_Serializer_WriteSignal:	.type	func
+
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   603  {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   604    P2CONST(uint8, AUTOMATIC, COM_APPL_DATA) SignalApplSourcePtrInternal = SignalApplSourcePtr;   /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   605  # if ((COM_EXISTS_NBIT_BUSACCOFTXSIGINFO == STD_ON) || (COM_EXISTS_NBITNBYTE_BUSACCOFTXSIGINFO == STD_ON) || (COM_EXISTS_NBITNBYTE_SW_BUSACCOFTXSIGINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   606    Com_BitPositionOfTxSigInfoType signalStartBit = Com_Signal_BitOffsetFromBitPos(Com_GetBitPositionOfTxSigInfo(SignalId));
+	mul	d15,d4,#12
+	movh.a	a15,#@his(Com_TxSigInfo)
+	lea	a15,[a15]@los(Com_TxSigInfo)
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d15,[a15]3
+
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   607  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   608  # if (CPU_BYTE_ORDER == HIGH_BYTE_FIRST)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   609    /* #10 Set the source pointer to the least significant byte, if the CPU byte order is HIGH_BYTE_FIRST */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   610    SignalApplSourcePtrInternal = Com_Signal_getLSBSignalApplSourcePtr(SignalId, SignalApplSourcePtrInternal);    /* SBSW_COM_VALID_PTR_ENSURED_BY_CALLING_FUNC */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   611  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   612    if(Com_IsTxBufferUsedOfTxSigInfo(SignalId))   /* COV_COM_CSL03_ISUSED_OPTIONAL_INDIRECTION */ /* PRQA S 2842 */ /* MD_Com_2842 */ /* 2842: Index SignalId originates from Com_SendSignal_Processing(). It is retrieved via the optional indirection Com_GetTxSigInfoIdxOfTxAccessInfo with a prior isUsed check */
+	ld.bu	d0,[a15]7
+	and	d3,d15,#7
+	ld.bu	d15,[a15]6
+	sub	d1,d15,d0
+	extr.u	d15,d1,#0,#8
+	jeq	d15,#0,.L2
+
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   613    {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   614      /* #20 If the bus access is type is */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   615      switch (Com_GetBusAccOfTxSigInfo(SignalId))
+	ld.bu	d15,[a15]4
+
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   616      {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   617  # if (COM_EXISTS_NBIT_BUSACCOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   618        case (COM_NBIT_BUSACCOFTXSIGINFO):       /* COV_COM_N_BIT_X */
+	jeq	d15,#0,.L3
+
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   619        {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   620          /* #30 NBIT: copy the specific bits from the source pointer to the destination pointer */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   621          uint8 signalBusDest = Com_GetTxBuffer(Com_GetTxBufferStartIdxOfTxSigInfo(SignalId));
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   622          uint8 mask = COM_CAST2UINT8((COM_CAST2UINT8(~(COM_CAST2UINT8(255u << Com_GetBitLengthOfTxSigInfo(SignalId))))) << signalStartBit);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   623          signalBusDest &= COM_CAST2UINT8(~mask);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   624          signalBusDest |= COM_CAST2UINT8(*SignalApplSourcePtrInternal << signalStartBit) & mask;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   625          Com_SetTxBuffer(Com_GetTxBufferStartIdxOfTxSigInfo(SignalId), signalBusDest);   /* SBSW_COM_CSL03 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   626          break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   627        }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   628  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   629  # if (COM_EXISTS_BYTE_BUSACCOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   630        case (COM_BYTE_BUSACCOFTXSIGINFO):
+	jeq	d15,#1,.L4
+
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   631        {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   632          /* #40 BYTE: Set the source pointer to the destination pointer */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   633          Com_SetTxBuffer(Com_GetTxBufferStartIdxOfTxSigInfo(SignalId), *SignalApplSourcePtrInternal);    /* SBSW_COM_CSL03 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   634          break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   635        }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   636  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   637  # if (CPU_BYTE_ORDER == LOW_BYTE_FIRST)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   638  #  if ((COM_EXISTS_NBYTE_BUSACCOFTXSIGINFO == STD_ON) || (COM_EXISTS_ARRAY_BASED_BUSACCOFTXSIGINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   639  #   if (COM_EXISTS_ARRAY_BASED_BUSACCOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   640        case (COM_ARRAY_BASED_BUSACCOFTXSIGINFO):
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   641  #   endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   642  #   if (COM_EXISTS_NBYTE_BUSACCOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   643        case (COM_NBYTE_BUSACCOFTXSIGINFO):
+	jeq	d15,#2,.L5
+.L2:
+
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   644  #   endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   645        {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   646          Com_TxBufferEndIdxOfTxSigInfoType i;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   647          /* Pointer points to LSB of little endian signal, therefore start index is used */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   648          P2VAR(uint8, AUTOMATIC, COM_VAR_NO_INIT) SignalBusDestPtr = Com_GetAddrTxBuffer(Com_GetTxBufferStartIdxOfTxSigInfo(SignalId));
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   649          /* #50 (NBYTE or ARRAY_BASED) and CPU byte order is LOW_BYTE_FIRST: Copy N source bytes from position I to destination bytes at position I */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   650          /* Use-case: UINT8_N or UINT8_DYN */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   651        /* *INDENT-OFF* */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   652        /* ------------------------------- Intel (appl) to Intel (bus) AND Byte Arrays (Intel Hw) -------------------------
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   653          - Writing Intel Signals on Intel Hw.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   654          - Writing Byte Arrays (no swap):
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   655          - Writing Intel Byte Arrays */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   656        /* *INDENT-ON* */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   657          for(i = 0; i < Com_Signal_GetTxSignalBufferLength(SignalId); i++)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   658          {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   659            SignalBusDestPtr[i] = SignalApplSourcePtrInternal[i]; /* SBSW_COM_TXBUFFER_CSL03 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   660          }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   661          break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   662        }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   663  #  endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   664  #  if (COM_EXISTS_NBYTE_SW_BUSACCOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   665        case (COM_NBYTE_SW_BUSACCOFTXSIGINFO):
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   666        {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   667        /*------------------------------- Intel (appl) to Motorola (bus)------------------------------------------------*/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   668          /* Pointer points to LSB of big endian signal, therefore end index is used */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   669          P2VAR(uint8, AUTOMATIC, COM_VAR_NO_INIT) SignalBusDestPtr = Com_GetAddrTxBuffer(Com_GetTxBufferEndIdxOfTxSigInfo(SignalId) - 1u);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   670          /* #60 NBYTE_SW and CPU byte order is LOW_BYTE_FIRST: Copy N source bytes from position I to destination bytes at position -I */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   671          sint16_least i;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   672          /* ------------------------------- Intel (appl) to Motorola (bus) ---------------------------------------------- */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   673          for(i = 0; i < ((sint16_least) Com_Signal_GetTxSignalBufferLength(SignalId)); i++)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   674          {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   675            SignalBusDestPtr[-i] = SignalApplSourcePtrInternal[i];        /* SBSW_COM_TXBUFFER_CSL03 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   676          }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   677          break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   678        }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   679  #  endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   680  #  if (COM_EXISTS_NBITNBYTE_BUSACCOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   681        case (COM_NBITNBYTE_BUSACCOFTXSIGINFO):  /* COV_COM_NBITNBYTE_X */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   682        {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   683          /* #70 NBITNBYTE and CPU byte order is LOW_BYTE_FIRST: Copy N bits and N bytes from the source pointer to the destination pointer */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   684          /* Pointer points to LSB of little endian signal, therefore start index is used */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   685          P2VAR(uint8, AUTOMATIC, COM_VAR_NO_INIT) SignalBusDestPtr = Com_GetAddrTxBuffer(Com_GetTxBufferStartIdxOfTxSigInfo(SignalId));
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   686          Com_Signal_WriteSignal_NBITNBYTE(SignalId, SignalApplSourcePtrInternal, signalStartBit, SignalBusDestPtr, FALSE);       /* SBSW_COM_VALID_PTR_BY_COMSTACK_01 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   687          break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   688        }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   689  #  endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   690  #  if (COM_EXISTS_NBITNBYTE_SW_BUSACCOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   691        case (COM_NBITNBYTE_SW_BUSACCOFTXSIGINFO):       /* COV_COM_NBITNBYTE_SW_BUSACCOFTXSIGINFO */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   692        {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   693          /* #80 NBITNBYTE_SW and CPU byte order is LOW_BYTE_FIRST: Copy N bits and N bytes from the source pointer to the destination pointer and perform endianness conversion */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   694          /* Pointer points to LSB of big endian signal, therefore end index is used */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   695          P2VAR(uint8, AUTOMATIC, COM_VAR_NO_INIT) SignalBusDestPtr = Com_GetAddrTxBuffer(Com_GetTxBufferEndIdxOfTxSigInfo(SignalId) - 1u);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   696          Com_Signal_WriteSignal_NBITNBYTE(SignalId, SignalApplSourcePtrInternal, signalStartBit, SignalBusDestPtr, TRUE);        /* SBSW_COM_VALID_PTR_BY_COMSTACK_01 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   697          break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   698        }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   699  #  endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   700  # else /* (CPU_BYTE_ORDER == HIGH_BYTE_FIRST) */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   701  #  if ((COM_EXISTS_NBYTE_BUSACCOFTXSIGINFO == STD_ON) || (COM_EXISTS_ARRAY_BASED_BUSACCOFTXSIGINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   702  #   if (COM_EXISTS_ARRAY_BASED_BUSACCOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   703        case (COM_ARRAY_BASED_BUSACCOFTXSIGINFO):
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   704        {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   705          /* #90 ARRAY_BASED and CPU byte order is HIGH_BYTE_FIRST: Set the source pointer to the last byte, and copy in reverse order */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   706          /* Use-case: UINT8_N or UINT8_DYN */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   707          Com_TxBufferLengthOfTxSigInfoType applSourcePtrIndex = Com_Signal_GetTxSignalBufferLength(SignalId) - 1u;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   708          SignalApplSourcePtrInternal = &SignalApplSourcePtrInternal[applSourcePtrIndex];
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   709          /* No break required here! */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   710        }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   711  #   endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   712  #   if (COM_EXISTS_NBYTE_BUSACCOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   713        case (COM_NBYTE_BUSACCOFTXSIGINFO):      /* PRQA S 2003 */ /* MD_Com_2003 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   714  #   endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   715        {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   716          /* #100 NBYTE and CPU byte order is HIGH_BYTE_FIRST, copy in reverse order */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   717          sint16_least i;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   718          /* Pointer points to LSB of big endian signal, pointer points to last byte of actual txBuffer. */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   719          Com_TxBufferIterType txBufferIndex = Com_GetTxBufferStartIdxOfTxSigInfo(SignalId) + (Com_TxBufferIterType) Com_Signal_GetTxSignalBufferLength(SignalId) - 1u;   /* PRQA S 2986 */ /* MD_Com_2985_2986 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   720  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   721          P2VAR(uint8, AUTOMATIC, COM_VAR_NO_INIT) SignalBusDestPtr = Com_GetAddrTxBuffer(txBufferIndex);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   722  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   723        /* *INDENT-OFF* */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   724        /* ---------------------- Motorola (appl) to Motorola (bus) AND Byte Arrays (Motorola Hw)--------------------------
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   725          - Writing Motorola Signals on Motorola Hw.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   726          - Writing Byte Arrays (no swap):
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   727          - Writing Motorola Byte Arrays
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   728          - Also allows writing of Intel Byte Arrays (StartBit is not lsb -> is msb in this case) */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   729        /* *INDENT-ON* */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   730  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   731          for(i = 0; i < ((sint16_least) Com_Signal_GetTxSignalBufferLength(SignalId)); i++)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   732          {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   733            SignalBusDestPtr[-i] = SignalApplSourcePtrInternal[-i];       /* SBSW_COM_TXBUFFER_CSL03 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   734          }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   735          break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   736        }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   737  #  endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   738  #  if (COM_EXISTS_NBYTE_SW_BUSACCOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   739        case (COM_NBYTE_SW_BUSACCOFTXSIGINFO):
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   740        {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   741          /* ------------------------------- Motorola (appl) to Intel (bus)------------------------------------------------ */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   742          /* #130 NBYTE_SW and CPU byte order is HIGH_BYTE_FIRST: Copy source -I to destination I */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   743          sint16_least i;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   744          P2VAR(uint8, AUTOMATIC, COM_VAR_NO_INIT) SignalBusDestPtr = Com_GetAddrTxBuffer(Com_GetTxBufferStartIdxOfTxSigInfo(SignalId));
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   745          /* ------------------------------- Motorola (appl) to Intel (bus) ---------------------------------------------- */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   746          for(i = 0; i < ((sint16_least) Com_Signal_GetTxSignalBufferLength(SignalId)); i++)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   747          {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   748            SignalBusDestPtr[i] = SignalApplSourcePtrInternal[-i];        /* SBSW_COM_TXBUFFER_CSL03 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   749          }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   750          break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   751        }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   752  #  endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   753  #  if (COM_EXISTS_NBITNBYTE_BUSACCOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   754        case (COM_NBITNBYTE_BUSACCOFTXSIGINFO):
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   755        {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   756          /* #140 NBITNBYTE and CPU byte order is HIGH_BYTE_FIRST: Copy N bits and N bytes from the source pointer to the destination pointer */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   757          P2VAR(uint8, AUTOMATIC, COM_VAR_NO_INIT) SignalBusDestPtr = Com_GetAddrTxBuffer(Com_GetTxBufferEndIdxOfTxSigInfo(SignalId) - 1u);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   758          Com_Signal_WriteSignal_NBITNBYTE(SignalId, SignalApplSourcePtrInternal, signalStartBit, SignalBusDestPtr, TRUE);        /* SBSW_COM_VALID_PTR_BY_COMSTACK_01 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   759          break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   760        }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   761  #  endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   762  #  if (COM_EXISTS_NBITNBYTE_SW_BUSACCOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   763        case (COM_NBITNBYTE_SW_BUSACCOFTXSIGINFO):
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   764        {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   765          /* #150 NBITNBYTE_SW and CPU byte order is HIGH_BYTE_FIRST: Copy N bits and N bytes from the source pointer to the destination pointer and perform endianness conversion */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   766          P2VAR(uint8, AUTOMATIC, COM_VAR_NO_INIT) SignalBusDestPtr = Com_GetAddrTxBuffer(Com_GetTxBufferStartIdxOfTxSigInfo(SignalId));
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   767          Com_Signal_WriteSignal_NBITNBYTE(SignalId, SignalApplSourcePtrInternal, signalStartBit, SignalBusDestPtr, FALSE);       /* SBSW_COM_VALID_PTR_BY_COMSTACK_01 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   768          break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   769        }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   770  #  endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   771  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   772        default: /* COV_COM_MISRA */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   773          break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   774      }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   775    }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   776  }       /* PRQA S 6030 */ /* MD_MSR_STCYC */
+	ret
+.L3:
+	mov	d1,#255
+	ld.bu	d15,[a15]2
+	sh	d1,d1,d15
+	extr.u	d1,d1,#0,#8
+	xor	d1,d1,#255
+	sha	d1,d1,d3
+	extr.u	d1,d1,#0,#8
+	fcall	.cocofun_1
+	ld.bu	d15,[a4]
+	xor	d2,d1,#255
+	ld.bu	d0,[a15]
+	sha	d15,d15,d3
+	extr.u	d15,d15,#0,#8
+	and	d0,d2
+	and	d15,d1
+	or	d0,d15
+	st.b	[a15],d0
+	ret
+.L4:
+	fcall	.cocofun_1
+	ld.bu	d15,[a4]
+	st.b	[a15],d15
+	ret
+.L5:
+	movh.a	a2,#@his(Com_TxBuffer)
+	lea	a2,[a2]@los(Com_TxBuffer)
+	addsc.a	a2,a2,d0,#0
+	mov	d15,#0
+	j	.L9
+.L10:
+	addsc.a	a6,a4,d15,#0
+	addsc.a	a5,a2,d15,#0
+	add	d15,#1
+	ld.bu	d0,[a6]
+	extr.u	d15,d15,#0,#8
+	st.b	[a5],d0
+.L9:
+	ld.bu	d0,[a15]6
+	ld.bu	d1,[a15]7
+	sub	d0,d1
+	extr.u	d0,d0,#0,#8
+	jlt.u	d15,d0,.L10
+	ret
+	
+__Com_Serializer_WriteSignal_function_end:
+	.size	Com_Serializer_WriteSignal,__Com_Serializer_WriteSignal_function_end-Com_Serializer_WriteSignal
+	; End of function
+	
+	.sdecl	'.text.Com_Serializer..cocofun_1',code
+	.sect	'.text.Com_Serializer..cocofun_1'
+	.align	2
+; Function .cocofun_1
+.cocofun_1:	.type	func
+; Function body .cocofun_1, coco_iter:0
+	movh.a	a15,#@his(Com_TxBuffer)
+	lea	a15,[a15]@los(Com_TxBuffer)
+	addsc.a	a15,a15,d0,#0
+	fret
+	; End of function
+	.calls	'Com_Serializer_WriteSignal','.cocofun_1'
+	.calls	'Com_Serializer_WriteSignal','',0
+	.extern	Com_TxSigInfo
+	.extern	Com_TxBuffer
+	.calls	'.cocofun_1','',0
+
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   777  #endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   778  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   779  #if (COM_TXBUFFERUSEDOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   780  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   781    Com_Serializer_WriteGroupSignal
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   782  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   783  /*!
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   784   * Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   785   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   786   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   787   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   788   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   789   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   790   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   791   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   792   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   793   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   794   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   795   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   796   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   797   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   798   *
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   799   **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   800  FUNC(void, COM_CODE) Com_Serializer_WriteGroupSignal(Com_TxGrpSigInfoIterType groupSignalId, P2CONST(uint8, AUTOMATIC, COM_APPL_DATA) SignalApplSourcePtr)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   801  {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   802    P2CONST(uint8, AUTOMATIC, COM_APPL_DATA) SignalApplSourcePtrInternal = SignalApplSourcePtr;   /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   803  # if ((COM_EXISTS_NBIT_BUSACCOFTXGRPSIGINFO == STD_ON) || (COM_EXISTS_NBITNBYTE_BUSACCOFTXGRPSIGINFO == STD_ON) || (COM_EXISTS_NBITNBYTE_SW_BUSACCOFTXGRPSIGINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   804    Com_BitPositionOfTxGrpSigInfoType signalStartBit = Com_Signal_BitOffsetFromBitPos(Com_GetBitPositionOfTxGrpSigInfo(groupSignalId));
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   805  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   806  # if (CPU_BYTE_ORDER == HIGH_BYTE_FIRST)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   807    /* #10 Set the source pointer to the least significant byte, if the CPU byte order is HIGH_BYTE_FIRST */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   808    SignalApplSourcePtrInternal = Com_Signal_getLSBGroupSignalApplSourcePtr(groupSignalId, SignalApplSourcePtrInternal);  /* SBSW_COM_VALID_PTR_ENSURED_BY_CALLING_FUNC */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   809  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   810    if(Com_IsTxBufferUsedOfTxGrpSigInfo(groupSignalId))   /* PRQA S 2842 */ /* MD_Com_2842 */ /* COV_COM_CSL03_ISUSED_OPTIONAL_INDIRECTION */ /* 2842: Index groupSignalId originates from Com_SendSignal_Processing(). It is retrieved via the optional indirection Com_GetTxGrpSigInfoIdxOfTxAccessInfo with a prior isUsed check */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   811    {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   812      /* #20 If the bus access is type is */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   813      switch (Com_GetBusAccOfTxGrpSigInfo(groupSignalId))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   814      {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   815  # if (COM_EXISTS_NBIT_BUSACCOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   816        case (COM_NBIT_BUSACCOFTXGRPSIGINFO):    /* COV_COM_N_BIT_X */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   817        {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   818          /* #30 NBIT: copy the specific bits from the source pointer to the destination pointer */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   819          uint8 signalBusDest = Com_GetTxBuffer(Com_GetTxBufferStartIdxOfTxGrpSigInfo(groupSignalId));
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   820          uint8 mask = COM_CAST2UINT8((COM_CAST2UINT8(~(COM_CAST2UINT8(255u << Com_GetBitLengthOfTxGrpSigInfo(groupSignalId))))) << signalStartBit);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   821          signalBusDest &= COM_CAST2UINT8(~mask);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   822          signalBusDest |= COM_CAST2UINT8(*SignalApplSourcePtrInternal << signalStartBit) & mask;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   823          Com_SetTxBuffer(Com_GetTxBufferStartIdxOfTxGrpSigInfo(groupSignalId), signalBusDest);   /* SBSW_COM_CSL03 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   824          break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   825        }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   826  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   827  # if (COM_EXISTS_BYTE_BUSACCOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   828        case (COM_BYTE_BUSACCOFTXGRPSIGINFO):
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   829        {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   830          /* #40 BYTE: Set the source pointer to the destination pointer */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   831          Com_SetTxBuffer(Com_GetTxBufferStartIdxOfTxGrpSigInfo(groupSignalId), *SignalApplSourcePtrInternal);    /* SBSW_COM_CSL03 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   832          break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   833        }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   834  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   835  # if (CPU_BYTE_ORDER == LOW_BYTE_FIRST)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   836  #  if ((COM_EXISTS_NBYTE_BUSACCOFTXGRPSIGINFO == STD_ON) || (COM_EXISTS_ARRAY_BASED_BUSACCOFTXGRPSIGINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   837  #   if (COM_EXISTS_ARRAY_BASED_BUSACCOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   838        case (COM_ARRAY_BASED_BUSACCOFTXGRPSIGINFO):
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   839  #   endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   840  #   if (COM_EXISTS_NBYTE_BUSACCOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   841        case (COM_NBYTE_BUSACCOFTXGRPSIGINFO):
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   842  #   endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   843        {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   844          Com_TxBufferEndIdxOfTxGrpSigInfoType i;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   845          /* Pointer points to LSB of little endian group signal, therefore start index is used */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   846          P2VAR(uint8, AUTOMATIC, COM_VAR_NO_INIT) SignalBusDestPtr = Com_GetAddrTxBuffer(Com_GetTxBufferStartIdxOfTxGrpSigInfo(groupSignalId));
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   847          /* #50 (NBYTE or ARRAY_BASED) and CPU byte order is LOW_BYTE_FIRST: Copy N source bytes from position I to destination bytes at position I */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   848          /* Use-case: UINT8_N or UINT8_DYN */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   849        /* *INDENT-OFF* */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   850        /* ------------------------------- Intel (appl) to Intel (bus) AND Byte Arrays (Intel Hw) -------------------------
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   851          - Writing Intel Group Signals on Intel Hw.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   852          - Writing Byte Arrays (no swap):
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   853          - Writing Intel Byte Arrays */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   854        /* *INDENT-ON* */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   855          for(i = 0; i < Com_Signal_GetTxGroupSignalBufferLength(groupSignalId); i++)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   856          {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   857            SignalBusDestPtr[i] = SignalApplSourcePtrInternal[i]; /* SBSW_COM_TXBUFFER_CSL03 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   858          }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   859          break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   860        }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   861  #  endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   862  #  if (COM_EXISTS_NBYTE_SW_BUSACCOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   863        case (COM_NBYTE_SW_BUSACCOFTXGRPSIGINFO):
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   864        {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   865        /*------------------------------- Intel (appl) to Motorola (bus)------------------------------------------------*/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   866          /* Pointer points to LSB of big endian group signal, therefore end index is used */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   867          P2VAR(uint8, AUTOMATIC, COM_VAR_NO_INIT) SignalBusDestPtr = Com_GetAddrTxBuffer(Com_GetTxBufferEndIdxOfTxGrpSigInfo(groupSignalId) - 1u);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   868          /* #60 NBYTE_SW and CPU byte order is LOW_BYTE_FIRST: Copy N source bytes from position I to destination bytes at position -I */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   869          sint16_least i;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   870          /* ------------------------------- Intel (appl) to Motorola (bus) ---------------------------------------------- */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   871          for(i = 0; i < ((sint16_least) Com_Signal_GetTxGroupSignalBufferLength(groupSignalId)); i++)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   872          {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   873            SignalBusDestPtr[-i] = SignalApplSourcePtrInternal[i];        /* SBSW_COM_TXBUFFER_CSL03 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   874          }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   875          break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   876        }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   877  #  endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   878  #  if (COM_EXISTS_NBITNBYTE_BUSACCOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   879        case (COM_NBITNBYTE_BUSACCOFTXGRPSIGINFO):       /* COV_COM_NBITNBYTE_X */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   880        {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   881          /* #70 NBITNBYTE and CPU byte order is LOW_BYTE_FIRST: Copy N bits and N bytes from the source pointer to the destination pointer */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   882          /* Pointer points to LSB of little endian group signal, therefore start index is used */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   883          P2VAR(uint8, AUTOMATIC, COM_VAR_NO_INIT) SignalBusDestPtr = Com_GetAddrTxBuffer(Com_GetTxBufferStartIdxOfTxGrpSigInfo(groupSignalId));
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   884          Com_Signal_WriteGroupSignal_NBITNBYTE(groupSignalId, SignalApplSourcePtrInternal, signalStartBit, SignalBusDestPtr, FALSE);     /* SBSW_COM_VALID_PTR_BY_COMSTACK_01 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   885          break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   886        }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   887  #  endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   888  #  if (COM_EXISTS_NBITNBYTE_SW_BUSACCOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   889        case (COM_NBITNBYTE_SW_BUSACCOFTXGRPSIGINFO):    /* COV_COM_NBITNBYTE_SW_BUSACCOFTXSIGINFO */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   890        {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   891          /* #80 NBITNBYTE_SW and CPU byte order is LOW_BYTE_FIRST: Copy N bits and N bytes from the source pointer to the destination pointer and perform endianness conversion */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   892          /* Pointer points to LSB of big endian group signal, therefore end index is used */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   893          P2VAR(uint8, AUTOMATIC, COM_VAR_NO_INIT) SignalBusDestPtr = Com_GetAddrTxBuffer(Com_GetTxBufferEndIdxOfTxGrpSigInfo(groupSignalId) - 1u);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   894          Com_Signal_WriteGroupSignal_NBITNBYTE(groupSignalId, SignalApplSourcePtrInternal, signalStartBit, SignalBusDestPtr, TRUE);      /* SBSW_COM_VALID_PTR_BY_COMSTACK_01 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   895          break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   896        }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   897  #  endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   898  # else /* (CPU_BYTE_ORDER == HIGH_BYTE_FIRST) */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   899  #  if ((COM_EXISTS_NBYTE_BUSACCOFTXGRPSIGINFO == STD_ON) || (COM_EXISTS_ARRAY_BASED_BUSACCOFTXGRPSIGINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   900  #   if (COM_EXISTS_ARRAY_BASED_BUSACCOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   901        case (COM_ARRAY_BASED_BUSACCOFTXGRPSIGINFO):
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   902        {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   903          /* #90 ARRAY_BASED and CPU byte order is HIGH_BYTE_FIRST: Set the source pointer to the last byte, and copy in reverse order */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   904          /* Use-case: UINT8_N or UINT8_DYN */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   905          Com_TxBufferLengthOfTxGrpSigInfoType applSourcePtrIndex = Com_Signal_GetTxGroupSignalBufferLength(groupSignalId) - 1u;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   906          SignalApplSourcePtrInternal = &SignalApplSourcePtrInternal[applSourcePtrIndex];
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   907          /* No break required here! */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   908        }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   909  #   endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   910  #   if (COM_EXISTS_NBYTE_BUSACCOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   911        case (COM_NBYTE_BUSACCOFTXGRPSIGINFO):   /* PRQA S 2003 */ /* MD_Com_2003 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   912  #   endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   913        {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   914          /* #100 NBYTE and CPU byte order is HIGH_BYTE_FIRST, copy in reverse order */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   915          sint16_least i;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   916          /* Pointer points to LSB of big endian group signal, pointer points to last byte of actual txBuffer. */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   917          Com_TxBufferIterType txBufferIndex = Com_GetTxBufferStartIdxOfTxGrpSigInfo(groupSignalId) + (Com_TxBufferIterType) Com_Signal_GetTxGroupSignalBufferLength(groupSignalId) - 1u; /* PRQA S 2986 */ /* MD_Com_2985_2986 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   918          P2VAR(uint8, AUTOMATIC, COM_VAR_NO_INIT) SignalBusDestPtr = Com_GetAddrTxBuffer(txBufferIndex);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   919        /* *INDENT-OFF* */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   920        /* ---------------------- Motorola (appl) to Motorola (bus) AND Byte Arrays (Motorola Hw)--------------------------
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   921          - Writing Motorola Group Signals on Motorola Hw.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   922          - Writing Byte Arrays (no swap):
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   923          - Writing Motorola Byte Arrays
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   924          - Also allows writing of Intel Byte Arrays (StartBit is not lsb -> is msb in this case) */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   925        /* *INDENT-ON* */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   926          for(i = 0; i < ((sint16_least) Com_Signal_GetTxGroupSignalBufferLength(groupSignalId)); i++)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   927          {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   928            SignalBusDestPtr[-i] = SignalApplSourcePtrInternal[-i];       /* SBSW_COM_TXBUFFER_CSL03 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   929          }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   930          break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   931        }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   932  #  endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   933  #  if (COM_EXISTS_NBYTE_SW_BUSACCOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   934        case (COM_NBYTE_SW_BUSACCOFTXGRPSIGINFO):
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   935        {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   936          /* ------------------------------- Motorola (appl) to Intel (bus)------------------------------------------------ */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   937          /* #130 NBYTE_SW and CPU byte order is HIGH_BYTE_FIRST: Copy source -I to destination I */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   938          sint16_least i;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   939          P2VAR(uint8, AUTOMATIC, COM_VAR_NO_INIT) SignalBusDestPtr = Com_GetAddrTxBuffer(Com_GetTxBufferStartIdxOfTxGrpSigInfo(groupSignalId));
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   940          /* ------------------------------- Motorola (appl) to Intel (bus) ---------------------------------------------- */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   941          for(i = 0; i < ((sint16_least) Com_Signal_GetTxGroupSignalBufferLength(groupSignalId)); i++)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   942          {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   943            SignalBusDestPtr[i] = SignalApplSourcePtrInternal[-i];        /* SBSW_COM_TXBUFFER_CSL03 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   944          }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   945          break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   946        }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   947  #  endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   948  #  if (COM_EXISTS_NBITNBYTE_BUSACCOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   949        case (COM_NBITNBYTE_BUSACCOFTXGRPSIGINFO):
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   950        {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   951          /* #140 NBITNBYTE and CPU byte order is HIGH_BYTE_FIRST: Copy N bits and N bytes from the source pointer to the destination pointer */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   952          P2VAR(uint8, AUTOMATIC, COM_VAR_NO_INIT) SignalBusDestPtr = Com_GetAddrTxBuffer(Com_GetTxBufferEndIdxOfTxGrpSigInfo(groupSignalId) - 1u);
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   953          Com_Signal_WriteGroupSignal_NBITNBYTE(groupSignalId, SignalApplSourcePtrInternal, signalStartBit, SignalBusDestPtr, TRUE);      /* SBSW_COM_VALID_PTR_BY_COMSTACK_01 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   954          break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   955        }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   956  #  endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   957  #  if (COM_EXISTS_NBITNBYTE_SW_BUSACCOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   958        case (COM_NBITNBYTE_SW_BUSACCOFTXGRPSIGINFO):
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   959        {
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   960          /* #150 NBITNBYTE_SW and CPU byte order is HIGH_BYTE_FIRST: Copy N bits and N bytes from the source pointer to the destination pointer and perform endianness conversion */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   961          P2VAR(uint8, AUTOMATIC, COM_VAR_NO_INIT) SignalBusDestPtr = Com_GetAddrTxBuffer(Com_GetTxBufferStartIdxOfTxGrpSigInfo(groupSignalId));
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   962          Com_Signal_WriteGroupSignal_NBITNBYTE(groupSignalId, SignalApplSourcePtrInternal, signalStartBit, SignalBusDestPtr, FALSE);     /* SBSW_COM_VALID_PTR_BY_COMSTACK_01 */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   963          break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   964        }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   965  #  endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   966  # endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   967        default: /* COV_COM_MISRA */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   968          break;
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   969      }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   970    }
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   971  }       /* PRQA S 6030 */ /* MD_MSR_STCYC */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   972  #endif
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   973  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   974  #define COM_STOP_SEC_CODE
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   975  #include "MemMap.h" /* PRQA S 5087 */   /* MD_MSR_MemMap */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   976  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   977  /***********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   978   *  MISRA JUSTIFICATIONS
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   979   **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   980  /* *INDENT-OFF* */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   981  /* Justifications for module-specific MISRA deviations:
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   982     MD_Com_3315: Misra Rule 16.6
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   983       Reason:     It depends on the configuration, if only one or more cases of the switch statement are executed.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   984       Risk:       No risk, because only warning that the switch statement is redundant.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   985       Prevention: No prevention necessary.
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   986  */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   987  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   988  /***********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   989   *  SILENTBSW JUSTIFICATIONS
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   990   **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   991  /* SBSW_JUSTIFICATION_BEGIN
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   992  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   993  SBSW_JUSTIFICATION_END */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   994  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   995  /***********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   996   *  COVERAGE JUSTIFICATIONS
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   997   **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   998  /* START_COVERAGE_JUSTIFICATION
+; ..\BSW364\Com\Implementation\Com_Serializer.c	   999  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	  1000  END_COVERAGE_JUSTIFICATION */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	  1001  /* *INDENT-ON* */
+; ..\BSW364\Com\Implementation\Com_Serializer.c	  1002  
+; ..\BSW364\Com\Implementation\Com_Serializer.c	  1003  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_Serializer.c	  1004   *  END OF FILE: Com_Serializer.c
+; ..\BSW364\Com\Implementation\Com_Serializer.c	  1005   *********************************************************************************************************************/
+
+	; Module end

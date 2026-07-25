@@ -4,8 +4,11 @@
 #include "MotorFoc_Types.h"
 
 extern volatile float32 MotorFoc_CurrentLoopMaxCurrentA;
+extern volatile float32 MotorFoc_CurrentLoopMinVdcRunV;
 extern volatile uint16 MotorFoc_CurrentLoopStartupBlankingCount;
 extern volatile uint16 MotorFoc_CurrentLoopStartupBlankingLeft;
+extern volatile uint16 MotorFoc_CurrentLoopUndervoltConfirmCount;
+extern volatile uint16 MotorFoc_CurrentLoopUndervoltCounter;
 extern volatile uint16 MotorFoc_CurrentLoopOverCurrentConfirmCount;
 extern volatile uint16 MotorFoc_CurrentLoopOverCurrentCounter;
 extern volatile uint8 MotorFoc_CurrentLoopFault;

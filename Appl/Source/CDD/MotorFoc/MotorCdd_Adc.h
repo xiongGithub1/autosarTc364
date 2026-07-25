@@ -4,6 +4,11 @@
 #include "Std_Types.h"
 #include "Adc.h"
 
+/* 1 = 10 kHz FOC runs in ADC Cat2 ISR (ReadGroup -> RunFastLoop). Requires AdcIsr_G0 UsesFpu. */
+#ifndef MOTORCDD_ADC_FASTLOOP_IN_ISR
+#define MOTORCDD_ADC_FASTLOOP_IN_ISR   (1U)
+#endif
+
 typedef struct
 {
   Adc_ValueGroupType vo1;
@@ -38,15 +43,15 @@ extern volatile float32 MotorCdd_AdcCurrentFilterAlpha;
 extern volatile uint32 MotorCdd_AdcTriggerTick;
 extern volatile uint32 MotorCdd_AdcTriggerTickApplied;
 extern volatile uint32 MotorCdd_AdcPwmCounterSyncCount;
-/* ISR wanted to wake Motortask while previous AdcOnSampleReady still pending. */
-extern volatile uint32 MotorCdd_AdcMissedWakeCounter;
 
 void MotorCdd_AdcInit(void);
 void MotorCdd_AdcHwTriggerInit(void);
 void MotorCdd_AdcSetTriggerTick(uint32 triggerTick);
 void MotorCdd_AdcSynchronizePwmTriggerCounter(void);
 void MotorCdd_AdcGroup0Notification(void);
-/* Called from MotorTask via RTE ExternalTrigger OsEvent (not from ADC ISR). */
+/* Latch + convert + FOC; called from ADC ISR when MOTORCDD_ADC_FASTLOOP_IN_ISR=1. */
+void MotorCdd_AdcRunFastLoop(void);
+/* RTE stub when fast loop is in ISR; kept for Generate compatibility. */
 void MotorCdd_AdcOnSampleReady(void);
 void MotorCdd_AdcConvertToPhysical(void);
 void MotorCdd_AdcCaptureCurrentOffset(void);

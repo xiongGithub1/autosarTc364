@@ -1,0 +1,570 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc21220a --dep-file=BSW364\\PduR\\Implementation\\.PduR_Lock.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=BSW364\\PduR\\Implementation\\PduR_Lock.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW364\\PduR\\Implementation\\PduR_Lock.src ..\\BSW364\\PduR\\Implementation\\PduR_Lock.c"
+	.compiler_name		"ctc"
+	;source	'..\\BSW364\\PduR\\Implementation\\PduR_Lock.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.PduR_Lock.PduR_Lock_LockRoutingPathBySrcPdu',code
+	.sect	'.text.PduR_Lock.PduR_Lock_LockRoutingPathBySrcPdu'
+	.align	2
+	
+	.global	PduR_Lock_LockRoutingPathBySrcPdu
+
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	     1  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	     2   *  COPYRIGHT
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	     4   *  \verbatim
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	     5   *  Copyright (c) 2021 by Vector Informatik GmbH.                                                  All rights reserved.
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	     6   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    10   *  \endverbatim
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    11   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    12   *  FILE DESCRIPTION
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    13   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    14   *         File:  PduR_Lock.c
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    15   *      Project:  Gw_AsrPduRCfg5
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    16   *       Module:  MICROSAR PDU Router
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    17   *    Generator:  Configurator 5
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    18   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    19   *  Description:  Vector implementation of AUTOSAR PDU Router
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    20   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    21   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    22  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    23  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    24   *  REVISION HISTORY
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    25   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    26   *  Refer to the module's header file.
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    27   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    28   *  FILE VERSION
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    29   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    30   *  Refer to the module's header file.
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    31   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    32  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    33  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    34   * LOCAL MISRA / PCLINT JUSTIFICATION
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    35   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    36  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    37  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    38  #define PDUR_LOCK_SOURCE
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    39  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    40   * INCLUDES
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    41   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    42  #include "PduR.h"
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    43  #include "PduR_Lock.h"
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    44  #include "SchM_PduR.h"
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    45  #if (PDUR_DEV_ERROR_REPORT == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    46  # include "Det.h"
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    47  #endif
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    48  #if (PDUR_SPINLOCKRAM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    49  # include "Os.h"
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    50  #endif
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    51  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    52  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    53   *  LOCAL CONSTANT MACROS
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    54   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    55  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    56  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    57   *  LOCAL FUNCTION MACROS
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    58   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    59  #if !defined (PDUR_LOCAL_INLINE)
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    60  # define PDUR_LOCAL_INLINE LOCAL_INLINE
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    61  #endif
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    62  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    63  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    64   *  LOCAL DATA TYPES AND STRUCTURES
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    65   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    66  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    67  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    68   *  LOCAL DATA PROTOTYPES
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    69   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    70  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    71  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    72   *  GLOBAL DATA
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    73   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    74  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    75  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    76   *  LOCAL FUNCTION PROTOTYPES
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    77   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    78  #define PDUR_START_SEC_CODE
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    79  #include "PduR_MemMap.h" /* PRQA S 5087 */   /* MD_MSR_MemMap */
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    80  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    81  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    82   * PduR_Lock_Lock
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    83   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    84  /*! \brief      PduR Lock function.
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    85   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    86   *  \param[in]  lockIdx  instance Idx.
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    87   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    88   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    89  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_Lock_Lock(PduR_LockRomIterType lockIdx);
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    90  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    91  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    92   * PduR_Lock_Unlock
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    93   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    94  /*! \brief      PduR Unlock function.
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    95   *  \details    -
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    96   *  \param[in]  lockIdx  instance Idx.
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    97   *  \pre        -
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    98   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	    99  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_Lock_Unlock(PduR_LockRomIterType lockIdx);
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   100  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   101  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   102   *  LOCAL FUNCTIONS
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   103   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   104  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   105  #if (PDUR_SPINLOCKRAM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   106  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   107   * PduR_Lock_Init
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   108   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   109  /*!
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   110   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   111   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   112   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   113   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   114  FUNC(void, PDUR_CODE) PduR_Lock_Init(PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   115  {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   116    PduR_SpinlockRamIterType spinlockRamIdx;
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   117    uint32 spinLockInitValue = Appl_GetSpinlockInitVal();
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   118  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   119    for(spinlockRamIdx = 0u; spinlockRamIdx < PduR_GetSizeOfSpinlockRam(memIdx); spinlockRamIdx++)  /* FETA_PDUR_01 */
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   120    {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   121      VStdLib_MemClr(PduR_GetAddrCounterOfSpinlockRam(spinlockRamIdx, memIdx), PDUR_MAX_NUMBER_OF_CORES); /* SBSW_PDUR_CSL01 */ /* PRQA S 0315 */ /* MD_MSR_VStdLibCopy */
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   122      PduR_SetLockVariableOfSpinlockRam(spinlockRamIdx, spinLockInitValue, memIdx);       /* SBSW_PDUR_CSL01 */
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   123    }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   124  }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   125  #endif
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   126  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   127   * PduR_Lock_Lock
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   128   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   129  /*!
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   130   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   131   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   132   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   133   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   134  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_Lock_Lock(PduR_LockRomIterType lockIdx)
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   135  {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   136  #if (PDUR_SPINLOCKRAM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   137    if(!PduR_IsExclusiveAreaRomUsedOfLockRom(lockIdx))
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   138    {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   139      SchM_Enter_PduR_PDUR_EXCLUSIVE_AREA_0();
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   140      {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   141        uint8 core_id = (uint8) GetCoreID();
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   142        if(core_id < (uint8) PDUR_MAX_NUMBER_OF_CORES)
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   143        {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   144          PduR_SpinlockRamIterType spinlockIdx = PduR_GetSpinlockRamIdxOfLockRom(lockIdx);
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   145          PduR_SpinlockRamPartitionIdxOfLockRomType memIdx = PduR_GetSpinlockRamPartitionIdxOfLockRom(lockIdx);
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   146  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   147          if(0u == PduR_GetCounterOfSpinlockRam(spinlockIdx, memIdx)[core_id])
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   148          {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   149            uint32 retryCounter = 0;
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   150            uint32 retryCounterValue = PduR_GetSpinlockRetryCounterOfGeneralPropertiesRom(0);
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   151  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   152            while((Appl_TryToGetSpinlock(PduR_GetAddrLockVariableOfSpinlockRam(spinlockIdx, memIdx)) != E_OK) && (retryCounter < retryCounterValue))  /* COV_PDUR_SPINLOCK_TIMEOUT */ /* SBSW_PDUR_CSL03 */ /* FETA_PDUR_02 */
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   153            {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   154              retryCounter++;
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   155            }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   156            /* Report DET error if timeout elapsed */
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   157            if(retryCounter >= retryCounterValue) /* COV_PDUR_SPINLOCK_TIMEOUT */
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   158            {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   159              PduR_ReportRuntimeDetError(PDUR_LOCK_LOCK, PDUR_E_SPINLOCKTIMEOUT);
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   160            }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   161          }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   162          PduR_GetCounterOfSpinlockRam(spinlockIdx, memIdx)[core_id]++;       /* SBSW_PDUR_CORE_ID_RTCHECK */
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   163        }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   164        else
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   165        {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   166          PduR_Det_ReportError(PDUR_LOCK_LOCK, PDUR_E_FATAL);
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   167        }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   168      }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   169    }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   170    else
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   171  #endif
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   172    {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   173      PduR_GetLockOfExclusiveAreaRom(PduR_GetExclusiveAreaRomIdxOfLockRom(lockIdx)) ();   /* SBSW_PDUR_API_CALL_FORWARDING_ID_ONLY */
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   174    }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   175    PDUR_DUMMY_STATEMENT(lockIdx);        /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   176  }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   177  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   178  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   179   * PduR_Lock_Unlock
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   180   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   181  /*!
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   182   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   183   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   184   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   185   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   186  PDUR_LOCAL_INLINE FUNC(void, PDUR_CODE) PduR_Lock_Unlock(PduR_LockRomIterType lockIdx)
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   187  {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   188  #if (PDUR_SPINLOCKRAM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   189    if(!PduR_IsExclusiveAreaRomUsedOfLockRom(lockIdx))
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   190    {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   191      {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   192        uint8 core_id = (uint8) GetCoreID();
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   193        if(core_id < (uint8) PDUR_MAX_NUMBER_OF_CORES)
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   194        {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   195          PduR_SpinlockRamIterType spinlockIdx = PduR_GetSpinlockRamIdxOfLockRom(lockIdx);
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   196          PduR_SpinlockRamPartitionIdxOfLockRomType memIdx = PduR_GetSpinlockRamPartitionIdxOfLockRom(lockIdx);
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   197  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   198          if(1u == PduR_GetCounterOfSpinlockRam(spinlockIdx, memIdx)[core_id])
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   199          {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   200            if(E_OK != Appl_ReleaseSpinlock(PduR_GetAddrLockVariableOfSpinlockRam(spinlockIdx, memIdx)))     /* SBSW_PDUR_API_CALL_FORWARDING_ID_ONLY */ /* COV_PDUR_FATAL_ERROR */
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   201            {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   202              PduR_Det_ReportError(PDUR_LOCK_UNLOCK, PDUR_E_FATAL);
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   203            }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   204          }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   205          PduR_GetCounterOfSpinlockRam(spinlockIdx, memIdx)[core_id]--;       /* SBSW_PDUR_CORE_ID_RTCHECK */
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   206        }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   207        else
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   208        {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   209          PduR_Det_ReportError(PDUR_LOCK_UNLOCK, PDUR_E_FATAL);
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   210        }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   211      }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   212      SchM_Exit_PduR_PDUR_EXCLUSIVE_AREA_0();
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   213    }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   214    else
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   215  #endif
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   216    {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   217      PduR_GetUnlockOfExclusiveAreaRom(PduR_GetExclusiveAreaRomIdxOfLockRom(lockIdx)) (); /* SBSW_PDUR_API_CALL_FORWARDING_ID_ONLY */
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   218    }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   219    PDUR_DUMMY_STATEMENT(lockIdx);        /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   220  }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   221  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   222  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   223   *  GLOBAL FUNCTIONS
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   224   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   225  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   226   * PduR_Lock_LockRoutingPathBySrcPdu
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   227   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   228  /*!
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   229   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   230   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   231   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   232   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   233   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   234  FUNC(void, PDUR_CODE) PduR_Lock_LockRoutingPathBySrcPdu(PduR_RmSrcRomIterType rmSrcIdx) /* COV_PDUR_WRAPPER_FUNC */
+; Function PduR_Lock_LockRoutingPathBySrcPdu
+PduR_Lock_LockRoutingPathBySrcPdu:	.type	func
+
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   235  {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   236    PduR_Lock_Lock(PduR_GetLockRomIdxOfRmSrcRom(rmSrcIdx));
+	fcall	.cocofun_3
+	ld.a	a15,[a15]
+	ji	a15
+	
+__PduR_Lock_LockRoutingPathBySrcPdu_function_end:
+	.size	PduR_Lock_LockRoutingPathBySrcPdu,__PduR_Lock_LockRoutingPathBySrcPdu_function_end-PduR_Lock_LockRoutingPathBySrcPdu
+	; End of function
+	
+	.sdecl	'.text.PduR_Lock..cocofun_3',code
+	.sect	'.text.PduR_Lock..cocofun_3'
+	.align	2
+; Function .cocofun_3
+.cocofun_3:	.type	func
+; Function body .cocofun_3, coco_iter:0
+	movh.a	a15,#@his(PduR_RmSrcRom)
+	lea	a15,[a15]@los(PduR_RmSrcRom)
+	addsc.a	a15,a15,d4,#2
+	ld.bu	d15,[a15]
+	fcall	.cocofun_5
+	fret
+	; End of function
+	.sdecl	'.text.PduR_Lock..cocofun_5',code
+	.sect	'.text.PduR_Lock..cocofun_5'
+	.align	2
+; Function .cocofun_5
+.cocofun_5:	.type	func
+; Function body .cocofun_5, coco_iter:2
+	lea	a15,PduR_LockRom
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d15,[a15]
+	lea	a15,PduR_ExclusiveAreaRom
+	addsc.a	a15,a15,d15,#3
+	fret
+	; End of function
+	.sdecl	'.text.PduR_Lock.PduR_Lock_UnlockRoutingPathBySrcPdu',code
+	.sect	'.text.PduR_Lock.PduR_Lock_UnlockRoutingPathBySrcPdu'
+	.align	2
+	
+	.global	PduR_Lock_UnlockRoutingPathBySrcPdu
+
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   237    PDUR_DUMMY_STATEMENT(rmSrcIdx);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   238  }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   239  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   240  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   241   * PduR_Lock_UnlockRoutingPathBySrcPdu
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   242   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   243  /*!
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   244   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   245   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   246   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   247   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   248   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   249  FUNC(void, PDUR_CODE) PduR_Lock_UnlockRoutingPathBySrcPdu(PduR_RmSrcRomIterType rmSrcIdx)       /* COV_PDUR_WRAPPER_FUNC */
+; Function PduR_Lock_UnlockRoutingPathBySrcPdu
+PduR_Lock_UnlockRoutingPathBySrcPdu:	.type	func
+
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   250  {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   251    PduR_Lock_Unlock(PduR_GetLockRomIdxOfRmSrcRom(rmSrcIdx));
+	fcall	.cocofun_3
+	ld.a	a15,[a15]4
+	ji	a15
+	
+__PduR_Lock_UnlockRoutingPathBySrcPdu_function_end:
+	.size	PduR_Lock_UnlockRoutingPathBySrcPdu,__PduR_Lock_UnlockRoutingPathBySrcPdu_function_end-PduR_Lock_UnlockRoutingPathBySrcPdu
+	; End of function
+	
+	.sdecl	'.text.PduR_Lock.PduR_Lock_LockRoutingPathByDestPdu',code
+	.sect	'.text.PduR_Lock.PduR_Lock_LockRoutingPathByDestPdu'
+	.align	2
+	
+	.global	PduR_Lock_LockRoutingPathByDestPdu
+
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   252    PDUR_DUMMY_STATEMENT(rmSrcIdx);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   253  }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   254  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   255  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   256   * PduR_Lock_LockRoutingPathByDestPdu
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   257   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   258  /*!
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   259   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   260   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   261   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   262   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   263   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   264  FUNC(void, PDUR_CODE) PduR_Lock_LockRoutingPathByDestPdu(PduR_RmDestRomIterType rmDestIdx)      /* COV_PDUR_WRAPPER_FUNC */
+; Function PduR_Lock_LockRoutingPathByDestPdu
+PduR_Lock_LockRoutingPathByDestPdu:	.type	func
+
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   265  {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   266    PduR_Lock_Lock(PduR_GetLockRomIdxOfRmGDestRom(PduR_GetRmGDestRomIdxOfRmDestRom(rmDestIdx)));
+	fcall	.cocofun_1
+	ld.a	a15,[a15]
+	ji	a15
+	
+__PduR_Lock_LockRoutingPathByDestPdu_function_end:
+	.size	PduR_Lock_LockRoutingPathByDestPdu,__PduR_Lock_LockRoutingPathByDestPdu_function_end-PduR_Lock_LockRoutingPathByDestPdu
+	; End of function
+	
+	.sdecl	'.text.PduR_Lock..cocofun_1',code
+	.sect	'.text.PduR_Lock..cocofun_1'
+	.align	2
+; Function .cocofun_1
+.cocofun_1:	.type	func
+; Function body .cocofun_1, coco_iter:0
+	movh.a	a15,#@his(PduR_RmDestRom)
+	lea	a15,[a15]@los(PduR_RmDestRom)
+	addsc.a	a15,a15,d4,#2
+	ld.bu	d15,[a15]1
+	mul	d15,d15,#6
+	fcall	.cocofun_4
+	fret
+	; End of function
+	.sdecl	'.text.PduR_Lock..cocofun_4',code
+	.sect	'.text.PduR_Lock..cocofun_4'
+	.align	2
+; Function .cocofun_4
+.cocofun_4:	.type	func
+; Function body .cocofun_4, coco_iter:1
+	movh.a	a15,#@his(PduR_RmGDestRom)
+	lea	a15,[a15]@los(PduR_RmGDestRom)
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d15,[a15]2
+	fcall	.cocofun_5
+	fret
+	; End of function
+	.sdecl	'.text.PduR_Lock.PduR_Lock_UnlockRoutingPathByDestPdu',code
+	.sect	'.text.PduR_Lock.PduR_Lock_UnlockRoutingPathByDestPdu'
+	.align	2
+	
+	.global	PduR_Lock_UnlockRoutingPathByDestPdu
+
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   267    PDUR_DUMMY_STATEMENT(rmDestIdx);      /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   268  }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   269  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   270  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   271   * PduR_Lock_UnlockRoutingPathByDestPdu
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   272   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   273  /*!
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   274   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   275   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   276   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   277   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   278   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   279  FUNC(void, PDUR_CODE) PduR_Lock_UnlockRoutingPathByDestPdu(PduR_RmDestRomIterType rmDestIdx)    /* COV_PDUR_WRAPPER_FUNC */
+; Function PduR_Lock_UnlockRoutingPathByDestPdu
+PduR_Lock_UnlockRoutingPathByDestPdu:	.type	func
+
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   280  {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   281    PduR_Lock_Unlock(PduR_GetLockRomIdxOfRmGDestRom(PduR_GetRmGDestRomIdxOfRmDestRom(rmDestIdx)));
+	fcall	.cocofun_1
+	ld.a	a15,[a15]4
+	ji	a15
+	
+__PduR_Lock_UnlockRoutingPathByDestPdu_function_end:
+	.size	PduR_Lock_UnlockRoutingPathByDestPdu,__PduR_Lock_UnlockRoutingPathByDestPdu_function_end-PduR_Lock_UnlockRoutingPathByDestPdu
+	; End of function
+	
+	.sdecl	'.text.PduR_Lock.PduR_Lock_LockRoutingPathByGDestPdu',code
+	.sect	'.text.PduR_Lock.PduR_Lock_LockRoutingPathByGDestPdu'
+	.align	2
+	
+	.global	PduR_Lock_LockRoutingPathByGDestPdu
+
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   282    PDUR_DUMMY_STATEMENT(rmDestIdx);      /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   283  }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   284  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   285  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   286   * PduR_Lock_LockRoutingPathByGDestPdu
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   287   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   288  /*!
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   289   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   290   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   291   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   292   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   293   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   294  FUNC(void, PDUR_CODE) PduR_Lock_LockRoutingPathByGDestPdu(PduR_RmGDestRomIterType rmGDestIdx)   /* COV_PDUR_WRAPPER_FUNC */
+; Function PduR_Lock_LockRoutingPathByGDestPdu
+PduR_Lock_LockRoutingPathByGDestPdu:	.type	func
+
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   295  {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   296    PduR_Lock_Lock(PduR_GetLockRomIdxOfRmGDestRom(rmGDestIdx));
+	fcall	.cocofun_2
+	ld.a	a15,[a15]
+	ji	a15
+	
+__PduR_Lock_LockRoutingPathByGDestPdu_function_end:
+	.size	PduR_Lock_LockRoutingPathByGDestPdu,__PduR_Lock_LockRoutingPathByGDestPdu_function_end-PduR_Lock_LockRoutingPathByGDestPdu
+	; End of function
+	
+	.sdecl	'.text.PduR_Lock..cocofun_2',code
+	.sect	'.text.PduR_Lock..cocofun_2'
+	.align	2
+; Function .cocofun_2
+.cocofun_2:	.type	func
+; Function body .cocofun_2, coco_iter:0
+	mul	d15,d4,#6
+	fcall	.cocofun_4
+	fret
+	; End of function
+	.sdecl	'.text.PduR_Lock.PduR_Lock_UnlockRoutingPathByGDestPdu',code
+	.sect	'.text.PduR_Lock.PduR_Lock_UnlockRoutingPathByGDestPdu'
+	.align	2
+	
+	.global	PduR_Lock_UnlockRoutingPathByGDestPdu
+
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   297    PDUR_DUMMY_STATEMENT(rmGDestIdx);     /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   298  }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   299  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   300  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   301   * PduR_Lock_UnlockRoutingPathByGDestPdu
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   302   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   303  /*!
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   304   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   305   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   306   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   307   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   308   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   309  FUNC(void, PDUR_CODE) PduR_Lock_UnlockRoutingPathByGDestPdu(PduR_RmGDestRomIterType rmGDestIdx) /* COV_PDUR_WRAPPER_FUNC */
+; Function PduR_Lock_UnlockRoutingPathByGDestPdu
+PduR_Lock_UnlockRoutingPathByGDestPdu:	.type	func
+
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   310  {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   311    PduR_Lock_Unlock(PduR_GetLockRomIdxOfRmGDestRom(rmGDestIdx));
+	fcall	.cocofun_2
+	ld.a	a15,[a15]4
+	ji	a15
+	
+__PduR_Lock_UnlockRoutingPathByGDestPdu_function_end:
+	.size	PduR_Lock_UnlockRoutingPathByGDestPdu,__PduR_Lock_UnlockRoutingPathByGDestPdu_function_end-PduR_Lock_UnlockRoutingPathByGDestPdu
+	; End of function
+	
+	.calls	'PduR_Lock_LockRoutingPathBySrcPdu','__INDIRECT__'
+	.calls	'PduR_Lock_UnlockRoutingPathBySrcPdu','__INDIRECT__'
+	.calls	'PduR_Lock_LockRoutingPathByDestPdu','__INDIRECT__'
+	.calls	'PduR_Lock_UnlockRoutingPathByDestPdu','__INDIRECT__'
+	.calls	'PduR_Lock_LockRoutingPathByGDestPdu','__INDIRECT__'
+	.calls	'PduR_Lock_UnlockRoutingPathByGDestPdu','__INDIRECT__'
+	.calls	'PduR_Lock_LockRoutingPathBySrcPdu','.cocofun_3'
+	.calls	'.cocofun_3','.cocofun_5'
+	.calls	'PduR_Lock_UnlockRoutingPathBySrcPdu','.cocofun_3'
+	.calls	'PduR_Lock_LockRoutingPathByDestPdu','.cocofun_1'
+	.calls	'.cocofun_1','.cocofun_4'
+	.calls	'.cocofun_4','.cocofun_5'
+	.calls	'PduR_Lock_UnlockRoutingPathByDestPdu','.cocofun_1'
+	.calls	'PduR_Lock_LockRoutingPathByGDestPdu','.cocofun_2'
+	.calls	'.cocofun_2','.cocofun_4'
+	.calls	'PduR_Lock_UnlockRoutingPathByGDestPdu','.cocofun_2'
+	.calls	'PduR_Lock_LockRoutingPathBySrcPdu','',0
+	.calls	'.cocofun_3','',0
+	.calls	'.cocofun_5','',0
+	.calls	'PduR_Lock_UnlockRoutingPathBySrcPdu','',0
+	.calls	'PduR_Lock_LockRoutingPathByDestPdu','',0
+	.calls	'.cocofun_1','',0
+	.calls	'.cocofun_4','',0
+	.calls	'PduR_Lock_UnlockRoutingPathByDestPdu','',0
+	.calls	'PduR_Lock_LockRoutingPathByGDestPdu','',0
+	.calls	'.cocofun_2','',0
+	.extern	PduR_ExclusiveAreaRom
+	.extern	PduR_LockRom
+	.extern	PduR_RmDestRom
+	.extern	PduR_RmGDestRom
+	.extern	PduR_RmSrcRom
+	.extern	__INDIRECT__
+	.calls	'PduR_Lock_UnlockRoutingPathByGDestPdu','',0
+
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   312    PDUR_DUMMY_STATEMENT(rmGDestIdx);     /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   313  }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   314  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   315  #if (PDUR_LOCKROMUSEDOFFMFIFOROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   316  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   317   * PduR_Lock_LockBuffersByFmFifo
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   318   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   319  /*!
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   320   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   321   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   322   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   323   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   324   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   325  FUNC(void, PDUR_CODE) PduR_Lock_LockBuffersByFmFifo(PduR_FmFifoRomIterType fmFifoRomIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   326  {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   327    if(PduR_IsLockRomUsedOfFmFifoRom(fmFifoRomIdx, memIdx))
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   328    {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   329      PduR_Lock_Lock(PduR_GetLockRomIdxOfFmFifoRom(fmFifoRomIdx, memIdx));
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   330    }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   331    PDUR_DUMMY_STATEMENT(fmFifoRomIdx); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   332  }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   333  #endif
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   334  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   335  #if (PDUR_LOCKROMUSEDOFFMFIFOROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   336  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   337   * PduR_Lock_UnlockBuffersByFmFifo
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   338   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   339  /*!
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   340   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   341   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   342   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   343   *
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   344   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   345  FUNC(void, PDUR_CODE) PduR_Lock_UnlockBuffersByFmFifo(PduR_FmFifoRomIterType fmFifoRomIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   346  {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   347    if(PduR_IsLockRomUsedOfFmFifoRom(fmFifoRomIdx, memIdx))
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   348    {
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   349      PduR_Lock_Unlock(PduR_GetLockRomIdxOfFmFifoRom(fmFifoRomIdx, memIdx));
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   350    }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   351    PDUR_DUMMY_STATEMENT(fmFifoRomIdx); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   352  }
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   353  #endif
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   354  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   355  #define PDUR_STOP_SEC_CODE
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   356  #include "PduR_MemMap.h" /* PRQA S 5087 */   /* MD_MSR_MemMap */
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   357  
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   358  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   359   *  END OF FILE: PduR_Lock.c
+; ..\BSW364\PduR\Implementation\PduR_Lock.c	   360   *********************************************************************************************************************/
+
+	; Module end

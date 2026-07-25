@@ -1,0 +1,947 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc20820a --dep-file=BSW364\\Os\\Implementation\\.Os_Barrier.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=BSW364\\Os\\Implementation\\Os_Barrier.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW364\\Os\\Implementation\\Os_Barrier.src ..\\BSW364\\Os\\Implementation\\Os_Barrier.c"
+	.compiler_name		"ctc"
+	;source	'..\\BSW364\\Os\\Implementation\\Os_Barrier.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.OS_CODE',code
+	.sect	'.text.OS_CODE'
+	.align	2
+	
+	.global	Os_BarrierInit
+
+; ..\BSW364\Os\Implementation\Os_Barrier.c	     1  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	     2   *  COPYRIGHT
+; ..\BSW364\Os\Implementation\Os_Barrier.c	     3   *  --------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Os\Implementation\Os_Barrier.c	     4   *  \verbatim
+; ..\BSW364\Os\Implementation\Os_Barrier.c	     5   *  Copyright (c) 2022 by Vector Informatik GmbH.                                              All rights reserved.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	     6   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    10   *  \endverbatim
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    11   *  --------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    12   *  FILE DESCRIPTION
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    13   *  ------------------------------------------------------------------------------------------------------------------*/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    14  /**
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    15   * \addtogroup Os_Barrier
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    16   * \{
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    17   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    18   * \file
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    19   * \brief       Contains the implementation of the barrier management.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    20   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    21   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    22   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    23  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    24   *  REVISION HISTORY
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    25   *  --------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    26   *  Refer to Os.h.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    27   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    28  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    29                                                                                                                          /* PRQA S 0777, 0779, 0828  EOF */ /* MD_MSR_Rule5.1, MD_MSR_Rule5.2, MD_MSR_Dir1.1 */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    30  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    31  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    32  #define OS_BARRIER_SOURCE
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    33  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    34  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    35   *  INCLUDES
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    36   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    37  /* AUTOSAR includes */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    38  #include "Std_Types.h"
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    39  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    40  /* Os module declarations */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    41  #include "Os_Barrier_Types.h"
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    42  #include "Os_Barrier.h"
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    43  #include "Os_Core.h"
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    44  #include "Os_Task.h"
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    45  #include "Os_Thread.h"
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    46  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    47  /* Os kernel module dependencies */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    48  #include "Os_Cfg.h"
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    49  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    50  /* Os hal dependencies */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    51  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    52  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    53  #define OS_BARRIER_COUNTERTHRESHOLD     ((Os_BarrierCounterType)1u << ((sizeof(Os_BarrierCounterType) * 8u) - 1u))
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    54  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    55  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    56   *  LOCAL CONSTANT MACROS
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    57   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    58  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    59  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    60   *  LOCAL FUNCTION MACROS
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    61   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    62  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    63  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    64   *  LOCAL DATA TYPES AND STRUCTURES
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    65   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    66  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    67  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    68   *  LOCAL DATA PROTOTYPES
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    69   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    70  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    71  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    72   *  GLOBAL DATA
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    73   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    74  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    75  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    76   *  LOCAL FUNCTION PROTOTYPES
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    77   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    78  #define OS_START_SEC_CODE
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    79  #include "Os_MemMap_OsCode.h"                                                                                           /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    80  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    81  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    82   *  Os_BarrierIsCounterLo()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    83   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    84  /*! \brief          Returns whether Value is lower than Compare (!0), or not (0).
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    85   *  \details        --no details--
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    86   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    87   *  \param[in]      Value   The value to check.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    88   *  \param[in]      Compare The compare value.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    89   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    90   *  \context        OS_INTERNAL
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    91   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    92   *  \reentrant      TRUE
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    93   *  \synchronous    TRUE
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    94   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    95   *  \pre            -
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    96   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    97  OS_FUNC_ATTRIBUTE_DECLARATION(OS_LOCAL_INLINE Os_StdReturnType,  OS_CODE, OS_ALWAYS_INLINE,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    98  Os_BarrierIsCounterLo,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	    99  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   100    Os_BarrierCounterType Value,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   101    Os_BarrierCounterType Compare
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   102  ));
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   103  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   104  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   105  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   106   *  Os_BarrierIsCounterGe()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   107   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   108  /*! \brief          Returns whether Value is equal to or greater than Compare (!0), or not (0).
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   109   *  \details        --no details--
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   110   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   111   *  \param[in]      Value   The value to check.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   112   *  \param[in]      Compare The compare value.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   113   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   114   *  \context        OS_INTERNAL
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   115   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   116   *  \reentrant      TRUE
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   117   *  \synchronous    TRUE
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   118   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   119   *  \pre            -
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   120   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   121  OS_FUNC_ATTRIBUTE_DECLARATION(OS_LOCAL_INLINE Os_StdReturnType,  OS_CODE, OS_ALWAYS_INLINE,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   122  Os_BarrierIsCounterGe,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   123  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   124    Os_BarrierCounterType Value,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   125    Os_BarrierCounterType Compare
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   126  ));
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   127  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   128  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   129  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   130   *  Os_BarrierGetDyn()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   131   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   132  /*! \brief          Returns the Dyn member of the given barrier.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   133   *  \details        --no details--
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   134   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   135   *  \param[in]      Barrier   The barrier query. Parameter must not be NULL.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   136   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   137   *  \context        OS_INTERNAL
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   138   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   139   *  \reentrant      TRUE
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   140   *  \synchronous    TRUE
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   141   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   142   *  \pre            -
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   143   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   144  OS_FUNC_ATTRIBUTE_DECLARATION(OS_LOCAL_INLINE P2VAR(Os_BarrierBaseType volatile, AUTOMATIC, OS_VAR_NOINIT),  OS_CODE,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   145  OS_ALWAYS_INLINE,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   146  Os_BarrierGetDyn,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   147  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   148    P2CONST(Os_BarrierBaseConfigType, AUTOMATIC, OS_VAR_NOINIT) Barrier
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   149  ));
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   150  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   151  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   152  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   153   *  Os_BarrierGetAttendeeDyn()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   154   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   155  /*! \brief          Returns the Dyn object of the given barrier attendee.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   156   *  \details        --no details--
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   157   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   158   *  \param[in]      Barrier     The barrier query. Parameter must not be NULL.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   159   *  \param[in]      AttendeeIdx The attendee of interest. The value must be smaller than Barrier->AttendeeCount.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   160   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   161   *  \context        OS_INTERNAL
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   162   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   163   *  \reentrant      TRUE
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   164   *  \synchronous    TRUE
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   165   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   166   *  \pre            -
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   167   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   168  OS_FUNC_ATTRIBUTE_DECLARATION(OS_LOCAL_INLINE P2VAR(Os_BarrierBaseType volatile, AUTOMATIC, OS_VAR_NOINIT),
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   169  OS_CODE, OS_ALWAYS_INLINE, Os_BarrierGetAttendeeDyn,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   170  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   171    P2CONST(Os_BarrierBaseConfigType, AUTOMATIC, OS_VAR_NOINIT) Barrier,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   172    Os_BarrierAttendeeIdxType AttendeeIdx
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   173  ));
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   174  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   175  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   176  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   177   *  Os_BarrierGetLowestCounter()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   178   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   179  /*! \brief          Returns the lowest counter value of all attached barriers.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   180   *  \details        --no details--
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   181   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   182   *  \param[in]      Barrier   The barrier query. Parameter must not be NULL.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   183   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   184   *  \context        OS_INTERNAL
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   185   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   186   *  \reentrant      TRUE for different objects.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   187   *  \synchronous    TRUE
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   188   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   189   *  \pre            Concurrent access to given object is prevented by caller.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   190   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   191  OS_FUNC_ATTRIBUTE_DECLARATION(OS_LOCAL_INLINE Os_BarrierCounterType,  OS_CODE, OS_ALWAYS_INLINE,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   192  Os_BarrierGetLowestCounter,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   193  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   194    P2CONST(Os_BarrierBaseConfigType, AUTOMATIC, OS_VAR_NOINIT) Barrier
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   195  ));
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   196  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   197  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   198  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   199   *  Os_BarrierIsSynchronized()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   200   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   201  /*! \brief          Returns the whether the given attendee is synchronized or detached (!0), or not (0).
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   202   *  \details        --no details--
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   203   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   204   *  \param[in]      Barrier     The barrier to query. Parameter must not be NULL.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   205   *  \param[in]      AttendeeIdx The attendee of interest. The value must be smaller than Barrier->AttendeeCount.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   206   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   207   *  \context        OS_INTERNAL
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   208   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   209   *  \reentrant      TRUE
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   210   *  \synchronous    TRUE
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   211   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   212   *  \pre            -
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   213   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   214  OS_FUNC_ATTRIBUTE_DECLARATION(OS_LOCAL_INLINE Os_StdReturnType,  OS_CODE, OS_ALWAYS_INLINE,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   215  Os_BarrierIsSynchronized,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   216  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   217    P2CONST(Os_BarrierBaseConfigType, AUTOMATIC, OS_VAR_NOINIT) Barrier,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   218    Os_BarrierAttendeeIdxType AttendeeIdx
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   219  ));
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   220  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   221  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   222  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   223   *  Os_BarrierCheckId()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   224   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   225  /*! \brief          Returns whether the given ID is valid (Not OS_CHECK_FAILED) or not (OS_CHECK_FAILED).
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   226   *  \details        In case that extended checks are disabled, the default result of \ref Os_ErrExtendedCheck() is
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   227   *                  returned.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   228   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   229   *  \param[in]      BarrierId   The barrier ID to check.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   230   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   231   *  \retval         Not OS_CHECK_FAILED   If the given ID is valid.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   232   *  \retval         OS_CHECK_FAILED       If the given ID is not valid.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   233   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   234   *  \context        ANY
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   235   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   236   *  \reentrant      TRUE
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   237   *  \synchronous    TRUE
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   238   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   239   *  \pre            -
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   240   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   241  OS_FUNC_ATTRIBUTE_DECLARATION(OS_LOCAL_INLINE Os_StdReturnType, OS_CODE, OS_ALWAYS_INLINE,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   242  Os_BarrierCheckId,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   243  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   244    Os_BarrierIdType BarrierId
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   245  ));
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   246  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   247  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   248  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   249   *  Os_BarrierCheckTaskPointer()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   250   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   251  /*! \brief          Checks if the given task pointer is the current Task (Not OS_CHECK_FAILED) or not (OS_CHECK_FAILED).
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   252   *  \details        In case that extended checks are disabled, the default result of \ref Os_ErrExtendedCheck() is
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   253   *                  returned.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   254   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   255   *  \param[in]      TaskPtr       The task pointer to check.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   256   *  \param[in]      CurrentTask   The current task from where this function was called.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   257   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   258   *  \retval         Not OS_CHECK_FAILED   If the given task pointer is valid and points to the current task.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   259   *  \retval         OS_CHECK_FAILED       If the given task pointer is invalid or points to another task.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   260   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   261   *  \context        ANY
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   262   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   263   *  \reentrant      TRUE
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   264   *  \synchronous    TRUE
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   265   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   266   *  \pre            -
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   267   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   268  OS_FUNC_ATTRIBUTE_DECLARATION(OS_LOCAL_INLINE Os_StdReturnType, OS_CODE, OS_ALWAYS_INLINE,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   269  Os_BarrierCheckTaskPointer,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   270  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   271    P2CONST(Os_TaskConfigType, AUTOMATIC, OS_VAR_NOINIT) TaskPtr,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   272    P2CONST(Os_TaskConfigType, AUTOMATIC, OS_VAR_NOINIT) CurrentTask
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   273  ));
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   274  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   275  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   276  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   277   *  Os_BarrierId2Barrier()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   278   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   279  /*! \brief          Returns the barrier belonging to the given id.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   280   *  \details        --no details--
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   281   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   282   *  \param[in]      BarrierId        The id of the searched barrier. Parameter must be < OS_BARRIERID_COUNT.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   283   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   284   *  \return         The barrier belonging to the given id.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   285   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   286   *  \context        ANY
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   287   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   288   *  \reentrant      TRUE
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   289   *  \synchronous    TRUE
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   290   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   291   *  \pre            -
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   292   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   293  OS_FUNC_ATTRIBUTE_DECLARATION(OS_LOCAL_INLINE Os_BarrierBaseConfigRefType, OS_CODE, OS_ALWAYS_INLINE,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   294  Os_BarrierId2Barrier,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   295  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   296    Os_BarrierIdType BarrierId
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   297  ));
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   298  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   299  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   300  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   301   *  LOCAL FUNCTIONS
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   302   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   303  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   304   *  Os_BarrierIsCounterLo()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   305   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   306  /*!
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   307   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   308   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   309   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   310   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   311   */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   312  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE Os_StdReturnType,  OS_CODE, OS_ALWAYS_INLINE,                              /* COV_OS_HALPLATFORMMULTICOREUNSUPPORTED */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   313  Os_BarrierIsCounterLo,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   314  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   315    Os_BarrierCounterType Value,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   316    Os_BarrierCounterType Compare
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   317  ))                                                                                                                      /* COV_OS_HALPLATFORMMULTICOREUNSUPPORTED */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   318  {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   319    /* #10 Calculate difference between Compare and Value. If difference lies within the positive half of the possible
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   320     *     value range, return a non-zero value. Otherwise the value is negative -> return zero. */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   321    /* Ensure that comparison is based on unsigned type by casting into Os_BarrierCounterType before compare. */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   322    return (Os_StdReturnType)((Os_BarrierCounterType)(Value - Compare) >= OS_BARRIER_COUNTERTHRESHOLD);                   /* PRQA S 4304 */ /* MD_Os_C90BooleanCompatibility */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   323  }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   324  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   325  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   326  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   327   *  Os_BarrierIsCounterGe()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   328   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   329  /*!
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   330   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   331   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   332   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   333   */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   334  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE Os_StdReturnType,  OS_CODE, OS_ALWAYS_INLINE,                              /* COV_OS_HALPLATFORMMULTICOREUNSUPPORTED */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   335  Os_BarrierIsCounterGe,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   336  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   337    Os_BarrierCounterType Value,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   338    Os_BarrierCounterType Compare
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   339  ))                                                                                                                      /* COV_OS_HALPLATFORMMULTICOREUNSUPPORTED */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   340  {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   341    /* #10 Return whether Value is greater than or equal to Compare. */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   342    return (Os_StdReturnType)(Os_BarrierIsCounterLo(Value, Compare) == 0u);                                               /* PRQA S 4304 */ /* MD_Os_C90BooleanCompatibility */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   343  }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   344  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   345  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   346  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   347   *  Os_BarrierGetDyn()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   348   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   349  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE P2VAR(Os_BarrierBaseType volatile, AUTOMATIC, OS_VAR_NOINIT),  OS_CODE,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   350  OS_ALWAYS_INLINE,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   351  Os_BarrierGetDyn,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   352  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   353    P2CONST(Os_BarrierBaseConfigType, AUTOMATIC, OS_VAR_NOINIT) Barrier
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   354  ))
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   355  {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   356    return Barrier->Dyn;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   357  }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   358  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   359  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   360  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   361   *  Os_BarrierGetAttendeeDyn()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   362   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   363  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE P2VAR(Os_BarrierBaseType volatile, AUTOMATIC, OS_VAR_NOINIT),              /* COV_OS_HALPLATFORMMULTICOREUNSUPPORTED */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   364  OS_CODE, OS_ALWAYS_INLINE, Os_BarrierGetAttendeeDyn,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   365  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   366    P2CONST(Os_BarrierBaseConfigType, AUTOMATIC, OS_VAR_NOINIT) Barrier,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   367    Os_BarrierAttendeeIdxType AttendeeIdx
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   368  ))                                                                                                                      /* COV_OS_HALPLATFORMMULTICOREUNSUPPORTED */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   369  {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   370    return Barrier->AttendeeRefs[AttendeeIdx]->Dyn;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   371  }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   372  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   373  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   374  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   375   *  Os_BarrierGetLowestCounter()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   376   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   377  /*!
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   378   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   379   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   380   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   381   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   382   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   383   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   384   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   385   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   386   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   387   */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   388  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE Os_BarrierCounterType,  OS_CODE, OS_ALWAYS_INLINE,                         /* COV_OS_HALPLATFORMMULTICOREUNSUPPORTED */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   389  Os_BarrierGetLowestCounter,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   390  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   391    P2CONST(Os_BarrierBaseConfigType, AUTOMATIC, OS_VAR_NOINIT) Barrier
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   392  ))                                                                                                                      /* COV_OS_HALPLATFORMMULTICOREUNSUPPORTED */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   393  {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   394    Os_BarrierCounterType result;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   395    Os_BarrierAttendeeIdx_IteratorType attendeeIdx;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   396    Os_BarrierCounterType attendeeCounter;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   397    P2CONST(Os_BarrierBaseType volatile, AUTOMATIC, OS_VAR_NOINIT) attendee;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   398  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   399    /* #10 Initial result is 0. */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   400    result = 0;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   401  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   402    /* #20 Iterate over all attendees. */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   403    for(attendeeIdx = 0; attendeeIdx < (Os_BarrierAttendeeIdx_IteratorType) Barrier->AttendeeCount; ++attendeeIdx)
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   404    {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   405      attendee = Os_BarrierGetAttendeeDyn(Barrier, (Os_BarrierAttendeeIdxType) attendeeIdx);                              /* SBSW_OS_FC_PRECONDITION */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   406  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   407      /* #30 If the attendee is attached and is not me, take its counter value as intermediate result. */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   408      if((attendee->AttendeeState == OS_BARRIERATTENDEESTATE_ATTACHED) && (attendee != Barrier->Dyn))                     /* COV_OS_HALPLATFORMMULTICOREUNSUPPORTED */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   409      {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   410        /* #40 Abort iteration. */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   411        result = attendee->Counter;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   412        attendeeIdx++;                                                                                                    /* PRQA S 2469 */ /* MD_Os_Rule14.2_2469 */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   413        break;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   414      }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   415    }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   416  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   417  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   418    /* #50 Continue iteration over all attendees. */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   419    for(; attendeeIdx < (Os_BarrierAttendeeIdx_IteratorType) Barrier->AttendeeCount; ++attendeeIdx)                       /* COV_OS_HALPLATFORMMULTICOREUNSUPPORTED */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   420    {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   421      attendee = Os_BarrierGetAttendeeDyn(Barrier, (Os_BarrierAttendeeIdxType) attendeeIdx);                              /* SBSW_OS_FC_PRECONDITION */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   422      attendeeCounter = attendee->Counter;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   423  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   424      /* #60 If the attendee is attached, is not me and has a different counter value: */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   425      if(     (attendee->AttendeeState == OS_BARRIERATTENDEESTATE_ATTACHED)
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   426          &&  (attendee != Barrier->Dyn)
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   427          &&  (result != attendeeCounter))                                                                                /* COV_OS_HALPLATFORMNEEDMORETHAN2CORES */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   428      {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   429        /* #70 Select the lower counter value and abort. */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   430        if(Os_BarrierIsCounterLo(attendeeCounter, result) != 0u)
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   431        {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   432          result = attendeeCounter;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   433        }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   434  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   435        break;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   436      }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   437    }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   438  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   439    return (Os_BarrierCounterType)result;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   440  }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   441  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   442  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   443  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   444   *  Os_BarrierIsSynchronized()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   445   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   446  /*!
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   447   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   448   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   449   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   450   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   451   */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   452  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE Os_StdReturnType, OS_CODE, OS_ALWAYS_INLINE,                               /* COV_OS_HALPLATFORMMULTICOREUNSUPPORTED */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   453  Os_BarrierIsSynchronized,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   454  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   455    P2CONST(Os_BarrierBaseConfigType, AUTOMATIC, OS_VAR_NOINIT) Barrier,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   456    Os_BarrierAttendeeIdxType AttendeeIdx
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   457  ))                                                                                                                      /* COV_OS_HALPLATFORMMULTICOREUNSUPPORTED */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   458  {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   459    P2CONST(Os_BarrierBaseType volatile, AUTOMATIC, OS_VAR_NOINIT) attendee;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   460    Os_BarrierCounterType attendeeCounter;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   461    Os_BarrierCounterType ownCounter;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   462    Os_StdReturnType synchronized;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   463  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   464    attendee = Os_BarrierGetAttendeeDyn(Barrier, AttendeeIdx);                                                            /* SBSW_OS_FC_PRECONDITION */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   465  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   466    /* Take a snapshot of values to avoid compiler warning about undefined order of volatile accesses */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   467    attendeeCounter = attendee->Counter;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   468    ownCounter = Barrier->Dyn->Counter;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   469  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   470    /* #10 If the addressed attendee is detached or has already reached the counter value, the result
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   471         is !0, otherwise 0. */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   472    synchronized = (Os_BarrierIsCounterGe(attendeeCounter, ownCounter) != 0u)                                             /* PRQA S 4404 */ /* MD_Os_C90BooleanCompatibility */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   473        || (attendee->AttendeeState == OS_BARRIERATTENDEESTATE_DETACHED );                                                /* COV_OS_HALPLATFORMMULTICOREUNSUPPORTED */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   474  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   475    return synchronized;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   476  }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   477  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   478  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   479  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   480   *  Os_BarrierCheckId()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   481   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   482  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE Os_StdReturnType, OS_CODE, OS_ALWAYS_INLINE,                               /* COV_OS_TESTSUITEOSC4998 */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   483  Os_BarrierCheckId,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   484  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   485    Os_BarrierIdType BarrierId
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   486  ))                                                                                                                      /* COV_OS_TESTSUITEOSC4998 */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   487  {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   488    return Os_ErrExtendedCheck(Os_ErrIsValueLo((uint32)BarrierId, (uint32)OS_BARRIERID_COUNT));
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   489  }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   490  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   491  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   492  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   493   *  Os_BarrierCheckTaskPointer()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   494   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   495  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE Os_StdReturnType, OS_CODE, OS_ALWAYS_INLINE,                               /* COV_OS_TESTSUITEOSC4998 */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   496  Os_BarrierCheckTaskPointer,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   497  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   498    P2CONST(Os_TaskConfigType, AUTOMATIC, OS_VAR_NOINIT) TaskPtr,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   499    P2CONST(Os_TaskConfigType, AUTOMATIC, OS_VAR_NOINIT) CurrentTask
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   500  ))                                                                                                                      /* COV_OS_TESTSUITEOSC4998 */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   501  {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   502    return Os_ErrExtendedCheck((Os_StdReturnType)(TaskPtr == CurrentTask));                                               /* PRQA S 4304 */ /* MD_Os_C90BooleanCompatibility */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   503  }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   504  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   505  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   506  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   507   *  Os_BarrierId2Barrier()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   508   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   509  /*!
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   510   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   511   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   512   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   513   */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   514  OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE                                                                            /* PRQA S 3219 */ /* MD_Os_Rule2.1_3219 */ /* COV_OS_TESTSUITEOSC4998 */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   515  Os_BarrierBaseConfigRefType, OS_CODE, OS_ALWAYS_INLINE, Os_BarrierId2Barrier,
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   516  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   517    Os_BarrierIdType BarrierId
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   518  ))                                                                                                                      /* COV_OS_TESTSUITEOSC4998 */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   519  {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   520    P2CONST(Os_BarrierBaseConfigRefType, AUTOMATIC, OS_VAR_NOINIT) barrierRefs;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   521  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   522    Os_Assert(Os_ErrIsValueLo((uint32)BarrierId, (uint32)OS_BARRIERID_COUNT));
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   523  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   524    /* #10 Get the current cores barrier reference and return it */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   525    barrierRefs = Os_CoreAsrGetBarriers(Os_Core2AsrCore(Os_CoreGetCurrentCore()));                                        /* SBSW_OS_BR_CORE2ASRCORE_001 */ /* SBSW_OS_BR_COREASRGERTBARRIERS_001 */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   526  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   527    return barrierRefs[BarrierId];                                                                                        /* PRQA S 2842 */ /* MD_Os_Rule18.1_2842 */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   528  }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   529  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   530  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   531  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   532   *  GLOBAL FUNCTIONS
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   533   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   534  /********************************************************************************************F**************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   535   *  Os_BarrierInit()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   536   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   537  /*!
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   538   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   539   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   540   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   541   */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   542  FUNC(void, OS_CODE) Os_BarrierInit
+; Function Os_BarrierInit
+Os_BarrierInit:	.type	func
+	ld.a	a15,[a4]
+
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   543  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   544    P2CONST(Os_BarrierBaseConfigType, AUTOMATIC, OS_VAR_NOINIT) Barrier
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   545  )
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   546  {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   547    P2VAR(Os_BarrierBaseType volatile, AUTOMATIC, OS_VAR_NOINIT) dyn;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   548  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   549    dyn = Os_BarrierGetDyn(Barrier);                                                                                      /* SBSW_OS_FC_PRECONDITION */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   550  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   551    /* #10 Set attendee state to initial state and clear counter. */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   552    dyn->AttendeeState = OS_BARRIERATTENDEESTATE_DETACHED;                                                                /* SBSW_OS_BR_BARRIERGETDYN_001 */
+	mov	d15,#0
+	st.b	[a15],d15
+
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   553    dyn->Counter = 0;                                                                                                     /* SBSW_OS_BR_BARRIERGETDYN_001 */
+	st.b	[a15]1,d15
+
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   554  }
+	ret
+	
+__Os_BarrierInit_function_end:
+	.size	Os_BarrierInit,__Os_BarrierInit_function_end-Os_BarrierInit
+	; End of function
+	
+	.sdecl	'.text.OS_CODE',code
+	.sect	'.text.OS_CODE'
+	.align	2
+	
+	.global	Os_BarrierAttach
+
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   555  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   556  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   557  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   558   *  Os_BarrierAttach()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   559   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   560  /*!
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   561   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   562   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   563   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   564   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   565   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   566   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   567   */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   568  FUNC(void, OS_CODE) Os_BarrierAttach
+; Function Os_BarrierAttach
+Os_BarrierAttach:	.type	func
+
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   569  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   570    P2CONST(Os_BarrierBaseConfigType, AUTOMATIC, OS_VAR_NOINIT) Barrier
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   571  )
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   572  {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   573    if(Os_CoreIsSingleAsrCoreOs() == 0u)                                                                                  /* PRQA S 2991, 2992, 2995, 2996 */ /* MD_Os_Rule14.3_2991, MD_Os_Rule14.3_2992, MD_Os_Rule2.2_2995, MD_Os_Rule2.2_2996 */ /* COV_OS_HALPLATFORMMULTICOREUNSUPPORTED */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   574    {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   575      Os_BarrierCounterType counterSnapshot;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   576      P2VAR(Os_BarrierBaseType volatile, AUTOMATIC, OS_VAR_NOINIT) dyn;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   577  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   578      dyn = Os_BarrierGetDyn(Barrier);                                                                                    /* SBSW_OS_FC_PRECONDITION */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   579  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   580      /* #10 Get the lowest counter value of all attendees which are attached to this barrier. */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   581      counterSnapshot = Os_BarrierGetLowestCounter(Barrier);                                                              /* SBSW_OS_FC_PRECONDITION */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   582  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   583      do
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   584      {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   585        /* #20 Attach to the barrier. */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   586        dyn->Counter = counterSnapshot;                                                                                   /* SBSW_OS_BR_BARRIERGETDYN_001 */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   587        dyn->AttendeeState = OS_BARRIERATTENDEESTATE_ATTACHED;                                                            /* SBSW_OS_BR_BARRIERGETDYN_001 */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   588  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   589        /* #30 Get an overall counter snapshot. */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   590        counterSnapshot = Os_BarrierGetLowestCounter(Barrier);                                                            /* SBSW_OS_FC_PRECONDITION */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   591  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   592        /* #40 Loop while lowest counter value changed during attach step. */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   593      }while(dyn->Counter != counterSnapshot);                                                                            /* COV_OS_BRRACECONDITION */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   594    }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   595  }
+	ret
+	
+__Os_BarrierAttach_function_end:
+	.size	Os_BarrierAttach,__Os_BarrierAttach_function_end-Os_BarrierAttach
+	; End of function
+	
+	.sdecl	'.text.OS_CODE',code
+	.sect	'.text.OS_CODE'
+	.align	2
+	
+	.global	Os_BarrierAttachUserBarrier
+
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   596  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   597  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   598  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   599   *  Os_BarrierAttachUserBarrier()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   600   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   601  /*!
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   602   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   603   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   604   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   605   */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   606  FUNC(void, OS_CODE) Os_BarrierAttachUserBarrier
+; Function Os_BarrierAttachUserBarrier
+Os_BarrierAttachUserBarrier:	.type	func
+
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   607  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   608    P2CONST(Os_BarrierBaseConfigType, AUTOMATIC, OS_VAR_NOINIT) Barrier
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   609  )
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   610  {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   611    if(Os_CoreIsSingleAsrCoreOs() == 0u)                                                                                  /* PRQA S 2991, 2992, 2995, 2996 */ /* MD_Os_Rule14.3_2991, MD_Os_Rule14.3_2992, MD_Os_Rule2.2_2995, MD_Os_Rule2.2_2996 */ /* COV_OS_HALPLATFORMMULTICOREUNSUPPORTED */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   612    {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   613      P2VAR(Os_BarrierBaseType volatile, AUTOMATIC, OS_VAR_NOINIT) dyn;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   614  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   615      dyn = Os_BarrierGetDyn(Barrier);                                                                                    /* SBSW_OS_FC_PRECONDITION */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   616  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   617      /* #10 Attach to the barrier. */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   618      dyn->AttendeeState = OS_BARRIERATTENDEESTATE_ATTACHED;                                                              /* SBSW_OS_BR_BARRIERGETDYN_001 */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   619  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   620    }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   621  }
+	ret
+	
+__Os_BarrierAttachUserBarrier_function_end:
+	.size	Os_BarrierAttachUserBarrier,__Os_BarrierAttachUserBarrier_function_end-Os_BarrierAttachUserBarrier
+	; End of function
+	
+	.sdecl	'.text.OS_CODE',code
+	.sect	'.text.OS_CODE'
+	.align	2
+	
+	.global	Os_BarrierDetach
+
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   622  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   623  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   624  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   625   *  Os_BarrierDetach()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   626   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   627  /*!
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   628   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   629   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   630   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   631   */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   632  FUNC(void, OS_CODE) Os_BarrierDetach
+; Function Os_BarrierDetach
+Os_BarrierDetach:	.type	func
+	ld.a	a15,[a4]
+
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   633  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   634    P2CONST(Os_BarrierBaseConfigType, AUTOMATIC, OS_VAR_NOINIT) Barrier
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   635  )
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   636  {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   637    Os_BarrierGetDyn(Barrier)->AttendeeState = OS_BARRIERATTENDEESTATE_DETACHED;                                          /* SBSW_OS_FC_PRECONDITION */ /* SBSW_OS_BR_BARRIERGETDYN_001 */
+	mov	d15,#0
+	st.b	[a15],d15
+
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   638  }
+	ret
+	
+__Os_BarrierDetach_function_end:
+	.size	Os_BarrierDetach,__Os_BarrierDetach_function_end-Os_BarrierDetach
+	; End of function
+	
+	.sdecl	'.text.OS_CODE',code
+	.sect	'.text.OS_CODE'
+	.align	2
+	
+	.global	Os_BarrierSynchronizeInternal
+
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   639  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   640  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   641  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   642   *  Os_BarrierSynchronizeInternal()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   643   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   644  /*!
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   645   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   646   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   647   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   648   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   649   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   650   */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   651  FUNC(void, OS_CODE) Os_BarrierSynchronizeInternal
+; Function Os_BarrierSynchronizeInternal
+Os_BarrierSynchronizeInternal:	.type	func
+
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   652  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   653    P2CONST(Os_BarrierBaseConfigType, AUTOMATIC, OS_VAR_NOINIT) Barrier
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   654  )
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   655  {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   656    if(Os_CoreIsSingleAsrCoreOs() == 0u)                                                                                  /* PRQA S 2991, 2992, 2995, 2996 */ /* MD_Os_Rule14.3_2991, MD_Os_Rule14.3_2992, MD_Os_Rule2.2_2995, MD_Os_Rule2.2_2996 */ /* COV_OS_HALPLATFORMMULTICOREUNSUPPORTED */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   657    {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   658      Os_StdReturnType synchronized;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   659      Os_BarrierAttendeeIdx_IteratorType attendeeIdx;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   660  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   661      /* #10 Increment the barrier counter. */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   662      Os_BarrierGetDyn(Barrier)->Counter++;                                                                               /* PRQA S 3387 */ /* MD_Os_Rule13.3_3387 */ /* SBSW_OS_FC_PRECONDITION */ /* SBSW_OS_BR_BARRIERGETDYN_001 */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   663  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   664      /* #20 Spin until all attendees are synchronized. */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   665      do
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   666      {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   667        synchronized = TRUE;                                                                                              /* PRQA S 4404 */ /* MD_Os_C90BooleanCompatibility */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   668  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   669        for (attendeeIdx = 0; attendeeIdx < (Os_BarrierAttendeeIdx_IteratorType) Barrier->AttendeeCount; ++attendeeIdx)
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   670        {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   671          synchronized = (Os_BarrierIsSynchronized(Barrier, (Os_BarrierAttendeeIdxType)attendeeIdx)) && synchronized;     /* PRQA S 4115, 4404, 4558 */ /* MD_Os_Rule10.1_4115, MD_Os_C90BooleanCompatibility, MD_Os_Rule10.1_4558 */ /* SBSW_OS_FC_PRECONDITION */ /* COV_OS_HALPLATFORMMULTICOREUNSUPPORTED */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   672        }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   673  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   674        /* #30 Perform NOP. */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   675        Os_Hal_CoreNop();
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   676  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   677      } while (synchronized == FALSE);                                                                                    /* PRQA S 4404, 1881 */ /* MD_Os_C90BooleanCompatibility, MD_Os_C90BooleanCompatibility */ /* COV_OS_HALPLATFORMMULTICOREUNSUPPORTED */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   678    }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   679  }
+	ret
+	
+__Os_BarrierSynchronizeInternal_function_end:
+	.size	Os_BarrierSynchronizeInternal,__Os_BarrierSynchronizeInternal_function_end-Os_BarrierSynchronizeInternal
+	; End of function
+	
+	.sdecl	'.text.OS_CODE',code
+	.sect	'.text.OS_CODE'
+	.align	2
+	
+	.global	Os_Api_BarrierSynchronize
+
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   680  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   681  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   682  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   683   *  Os_Api_BarrierSynchronize()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   684   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   685  /*!
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   686   * Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   687   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   688   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   689   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   690   */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   691  /* PRQA S 6050, 6080 1 */ /* MD_MSR_STCAL, MD_MSR_STMIF */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   692  FUNC(Os_StatusType, OS_CODE) Os_Api_BarrierSynchronize
+; Function Os_Api_BarrierSynchronize
+Os_Api_BarrierSynchronize:	.type	func
+
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_TaskingInt.h	   631    __asm( "mov.d  %0, a8" :"=d"(ReturnValue)::);      (inlined)
+	mov.d  d15, a8
+
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   693  (
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   694    Os_BarrierIdType BarrierID
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   695  )
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   696  {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   697    Os_StatusType status;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   698    P2CONST(Os_ThreadConfigType, AUTOMATIC, OS_CONST) currentThread;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   699  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   700    currentThread = Os_CoreGetThread();
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   701  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   702    /* #10 Perform error checks. */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   703    if(Os_BarrierIsEnabled() == 0u)                                                                                       /* PRQA S 2992, 2996 */ /* MD_Os_Rule14.3_2992, MD_Os_Rule2.2_2996 */ /* COV_OS_TESTSUITEOSC4998 */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   704    {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   705      status = Os_ErrSetOkInStdStatus(OS_STATUS_ID_1);                                                                    /* PRQA S 2880 */ /* MD_Os_Rule2.1_2880 */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   706    }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   707    else if(OS_UNLIKELY(Os_ThreadCheckCallContext(currentThread, OS_APICONTEXT_BARRIERSYNCHRONIZE) == OS_CHECK_FAILED))   /* SBSW_OS_BR_THREADCHECKCALLCONTEXT_001 */ /* COV_OS_TESTSUITEOSC4998 */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   708    {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   709      status = OS_STATUS_CALLEVEL;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   710    }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   711    else if(OS_UNLIKELY(Os_BarrierCheckId(BarrierID) == OS_CHECK_FAILED))                                                 /* COV_OS_TESTSUITEOSC4998 */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   712    {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   713      status = OS_STATUS_ID_1;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   714    }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   715    else
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   716    {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   717      P2CONST(Os_BarrierBaseConfigType, TYPEDEF, OS_CONST) barrier;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   718      P2CONST(Os_TaskConfigType, AUTOMATIC, OS_VAR_NOINIT) currentTask;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   719  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   720      barrier = Os_BarrierId2Barrier(BarrierID);
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   721      currentTask = Os_TaskThread2Task(currentThread);                                                                    /* SBSW_OS_BR_TASKTHREAD2TASK_001 */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   722  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   723      if(OS_UNLIKELY(Os_ErrCheckPointerIsNotNull(barrier) == OS_CHECK_FAILED))                                            /* PRQA S 0315 */ /* MD_Os_Dir1.1_0315 */ /* SBSW_OS_BR_ERRCHECKPOINTERISNOTNULL_001 */ /* COV_OS_TESTSUITEOSC4998 */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   724      {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   725        status = OS_STATUS_NO_BARRIER_PARTICIPANT;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   726      }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   727      else if(OS_UNLIKELY(Os_BarrierCheckTaskPointer(barrier->TaskPtr, currentTask) == OS_CHECK_FAILED))                  /* SBSW_OS_BR_CHECKTASKPOINTER_001 */ /* COV_OS_TESTSUITEOSC4998 */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   728      {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   729        status = OS_STATUS_NO_BARRIER_PARTICIPANT;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   730      }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   731      else
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   732      {
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   733        /* #20 Synchronize at the given barrier */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   734        Os_BarrierSynchronizeInternal(barrier);                                                                           /* SBSW_OS_BR_BARRIERSYNCHRONIZE */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   735        status = OS_STATUS_OK;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   736      }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   737    }
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   738  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   739    return status;
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   740  }
+	mov	d2,#259
+	ret
+	
+__Os_Api_BarrierSynchronize_function_end:
+	.size	Os_Api_BarrierSynchronize,__Os_Api_BarrierSynchronize_function_end-Os_Api_BarrierSynchronize
+	; End of function
+	
+	.calls	'Os_BarrierInit','',0
+	.calls	'Os_BarrierAttach','',0
+	.calls	'Os_BarrierAttachUserBarrier','',0
+	.calls	'Os_BarrierDetach','',0
+	.calls	'Os_BarrierSynchronizeInternal','',0
+	.calls	'Os_Api_BarrierSynchronize','',0
+
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   741  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   742  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   743  #define OS_STOP_SEC_CODE
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   744  #include "Os_MemMap_OsCode.h"                                                                                           /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   745  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   746  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   747  /* module specific MISRA deviations:
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   748   */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   749  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   750  /* SBSW_JUSTIFICATION_BEGIN
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   751  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   752  \ID SBSW_OS_BR_BARRIERGETDYN_001
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   753   \DESCRIPTION    Write access to the dynamic data of a barrier.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   754   \COUNTERMEASURE \M [CM_OS_BARRIER_DYN_M]
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   755  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   756   \ID SBSW_OS_BR_CORE2ASRCORE_001
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   757   \DESCRIPTION    Os_Core2AsrCore is called with the return value of Os_CoreGetCurrentCore.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   758   \COUNTERMEASURE \S [CM_OS_COREGETCURRENTCORE_S]
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   759  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   760  \ID SBSW_OS_BR_COREASRGERTBARRIERS_001
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   761   \DESCRIPTION    Os_CoreAsrGetBarriers is called with the return values of Os_Core2AsrCore and Os_CoreGetCurrentCore.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   762   \COUNTERMEASURE \R [CM_OS_CORE2ASRCORE_R]
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   763                   \S [CM_OS_COREGETCURRENTCORE_S]
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   764  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   765  \ID SBSW_OS_BR_THREADCHECKCALLCONTEXT_001
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   766   \DESCRIPTION    Os_ThreadCheckCallContext is called with the return value of Os_CoreGetThread.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   767   \COUNTERMEASURE \N [CM_OS_COREGETTHREAD_N]
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   768  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   769  \ID SBSW_OS_BR_BARRIERSYNCHRONIZE
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   770   \DESCRIPTION    Os_BarrierSynchronizeInternal is called with the return value of Os_BarrierId2Barrier().
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   771                   That function always returns a valid pointer or NULL_PTR. Check against NULL_PTR exists.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   772   \COUNTERMEASURE \R [CM_OS_BARRIERID2BARRIER_R]
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   773                   \M [CM_OS_COREASR_BARRIERREFS_M]
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   774  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   775  \ID SBSW_OS_BR_TASKTHREAD2TASK_001
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   776   \DESCRIPTION    Os_TaskThread2Task is called with the return value of Os_CoreGetThread.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   777   \COUNTERMEASURE \N [CM_OS_COREGETTHREAD_N]
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   778  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   779  \ID SBSW_OS_BR_ERRCHECKPOINTERISNOTNULL_001
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   780   \DESCRIPTION    Os_ErrCheckPointerIsNotNull is called with the return value of Os_BarrierId2Barrier().
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   781                   That function always returns a valid pointer or NULL_PTR.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   782   \COUNTERMEASURE \M [CM_OS_COREASR_BARRIERREFS_M]
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   783  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   784  \ID SBSW_OS_BR_CHECKTASKPOINTER_001
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   785   \DESCRIPTION    Os_BarrierCheckTaskPointer is called with the return value of Os_BarrierId2Barrier()
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   786                   and Os_TaskThread2Task(). These functions always returns a valid pointer or NULL_PTR.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   787   \COUNTERMEASURE \M [CM_OS_COREASR_BARRIERREFS_M]
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   788                   \M [CM_OS_BARRIER_USERBARRIERTASKPTR_M]
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   789                   \R [CM_OS_TASKTHREAD2TASK_R]
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   790  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   791  SBSW_JUSTIFICATION_END */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   792  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   793  /*
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   794  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   795  \CM CM_OS_BARRIER_DYN_M
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   796        Verify that the Barrier Dyn pointer of each Barrier object is a non NULL_PTR.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   797  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   798  \CM CM_OS_BARRIERID2BARRIER_R
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   799        The caller ensures, that the returned pointer is not used for write accesses or as input for further
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   800        functions, if the returned pointer is NULL_PTR.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   801  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   802  \CM CM_OS_BARRIER_USERBARRIERTASKPTR_M
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   803          Verify that TaskPtr is a non NULL_PTR for user defined barriers.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   804  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   805   */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   806  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   807  /* START_COVERAGE_JUSTIFICATION
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   808   *
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   809  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   810  \ID COV_OS_BRRACECONDITION
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   811     \ACCEPT XF
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   812     \REASON True condition may not be stimulated by tests due to race condition: Two cores have to perform
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   813             synchronization while a third core is attached to the barrier.
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   814  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   815  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   816  END_COVERAGE_JUSTIFICATION */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   817  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   818  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   819  /*!
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   820   * \}
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   821   */
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   822  
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   823  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   824   *  END OF FILE: Os_Barrier.c
+; ..\BSW364\Os\Implementation\Os_Barrier.c	   825   **********************************************************************************************************************/
+
+	; Module end

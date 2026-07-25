@@ -120,7 +120,7 @@ ISR(ADC0SR0_ISR)
   #endif
   /* Call Adc Interrupt function*/
   Adc_RS0EventInterruptHandler(0U);
-  Dio_FlipChannel(DioConf_DioChannel_DioChannel_test);
+
 }
 #endif
 #endif

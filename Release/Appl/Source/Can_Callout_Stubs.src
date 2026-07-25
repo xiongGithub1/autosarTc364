@@ -1,0 +1,306 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc7436a --dep-file=Appl\\Source\\.Can_Callout_Stubs.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=Appl\\Source\\Can_Callout_Stubs.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\Source\\Can_Callout_Stubs.src ..\\Appl\\Source\\Can_Callout_Stubs.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\Source\\Can_Callout_Stubs.c'
+
+	
+$TC162
+	.sdecl	'.zrodata.Can_Callout_Stubs..1.cnt',data,rom
+	.sect	'.zrodata.Can_Callout_Stubs..1.cnt'
+	.align	2
+.1.cnt:	.type	object
+	.size	.1.cnt,4
+	.word	10000000
+	
+	.sdecl	'.text.Can_Callout_Stubs.Can_Callout_GetTimeoutTicks',code
+	.sect	'.text.Can_Callout_Stubs.Can_Callout_GetTimeoutTicks'
+	.align	2
+	
+
+; ..\Appl\Source\Can_Callout_Stubs.c	     1  /**********************************************************************************************************************
+; ..\Appl\Source\Can_Callout_Stubs.c	     2   *  Can_Callout_Stubs.c
+; ..\Appl\Source\Can_Callout_Stubs.c	     3   *
+; ..\Appl\Source\Can_Callout_Stubs.c	     4   *  Application callbacks for Vector Can driver hardware loop timeout monitoring.
+; ..\Appl\Source\Can_Callout_Stubs.c	     5   *  Uses STM via Mcal_DelayGetTick() so timing works inside Can SchM exclusive
+; ..\Appl\Source\Can_Callout_Stubs.c	     6   *  areas where SuspendAllInterrupts() forbids GetCounterValue().
+; ..\Appl\Source\Can_Callout_Stubs.c	     7   **********************************************************************************************************************/
+; ..\Appl\Source\Can_Callout_Stubs.c	     8  
+; ..\Appl\Source\Can_Callout_Stubs.c	     9  #include "Can.h"
+; ..\Appl\Source\Can_Callout_Stubs.c	    10  #include "McalLib.h"
+; ..\Appl\Source\Can_Callout_Stubs.c	    11  
+; ..\Appl\Source\Can_Callout_Stubs.c	    12  #if (CAN_DEV_ERROR_DETECT == STD_ON)
+; ..\Appl\Source\Can_Callout_Stubs.c	    13  # include "Det.h"
+; ..\Appl\Source\Can_Callout_Stubs.c	    14  #endif
+; ..\Appl\Source\Can_Callout_Stubs.c	    15  
+; ..\Appl\Source\Can_Callout_Stubs.c	    16  static uint32 Can_Callout_GetTimeoutTicks(void)
+; Function Can_Callout_GetTimeoutTicks
+Can_Callout_GetTimeoutTicks:	.type	func
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    17  {
+; ..\Appl\Source\Can_Callout_Stubs.c	    18    uint32 resolution;
+; ..\Appl\Source\Can_Callout_Stubs.c	    19  
+; ..\Appl\Source\Can_Callout_Stubs.c	    20    resolution = Mcal_DelayTickResolution();
+	call	Mcal_DelayTickResolution
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    21    if (resolution == 0U)
+	jne	d2,#0,.L2
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    22    {
+; ..\Appl\Source\Can_Callout_Stubs.c	    23      resolution = Mcal_DelayResetTickCalibration();
+	call	Mcal_DelayResetTickCalibration
+.L2:
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    24    }
+; ..\Appl\Source\Can_Callout_Stubs.c	    25  
+; ..\Appl\Source\Can_Callout_Stubs.c	    26    if (resolution == 0U)
+	jne	d2,#0,.L3
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    27    {
+; ..\Appl\Source\Can_Callout_Stubs.c	    28      return 0U;
+; ..\Appl\Source\Can_Callout_Stubs.c	    29    }
+; ..\Appl\Source\Can_Callout_Stubs.c	    30  
+; ..\Appl\Source\Can_Callout_Stubs.c	    31    return (CAN_TIMEOUT_DURATION * 1000000UL) / resolution;
+; ..\Appl\Source\Can_Callout_Stubs.c	    32  }
+	ret
+.L3:
+	ld.w	d15,.1.cnt
+	div.u	e2,d15,d2
+	ret
+	
+__Can_Callout_GetTimeoutTicks_function_end:
+	.size	Can_Callout_GetTimeoutTicks,__Can_Callout_GetTimeoutTicks_function_end-Can_Callout_GetTimeoutTicks
+	; End of function
+	
+	.sdecl	'.text.Can_Callout_Stubs.Can_Callout_GetStartTick',code
+	.sect	'.text.Can_Callout_Stubs.Can_Callout_GetStartTick'
+	.align	2
+	
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    33  
+; ..\Appl\Source\Can_Callout_Stubs.c	    34  static Can_ExternalTickType Can_Callout_GetStartTick(uint8 source)
+; Function Can_Callout_GetStartTick
+Can_Callout_GetStartTick:	.type	func
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    35  {
+; ..\Appl\Source\Can_Callout_Stubs.c	    36    return Can_GetLoopTimeoutOfControllerData(0U)[source];
+	fcall	.cocofun_2
+	ld.w	d2,[a15]30
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    37  }
+	ret
+	
+__Can_Callout_GetStartTick_function_end:
+	.size	Can_Callout_GetStartTick,__Can_Callout_GetStartTick_function_end-Can_Callout_GetStartTick
+	; End of function
+	
+	.sdecl	'.text.Can_Callout_Stubs..cocofun_2',code
+	.sect	'.text.Can_Callout_Stubs..cocofun_2'
+	.align	2
+; Function .cocofun_2
+.cocofun_2:	.type	func
+; Function body .cocofun_2, coco_iter:0
+	movh.a	a15,#@his(Can_ControllerData)
+	lea	a15,[a15]@los(Can_ControllerData)
+	addsc.a	a15,a15,d4,#2
+	fret
+	; End of function
+	.sdecl	'.text.Can_Callout_Stubs.Can_Callout_SetStartTick',code
+	.sect	'.text.Can_Callout_Stubs.Can_Callout_SetStartTick'
+	.align	2
+	
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    38  
+; ..\Appl\Source\Can_Callout_Stubs.c	    39  static void Can_Callout_SetStartTick(uint8 source, Can_ExternalTickType startTick)
+; Function Can_Callout_SetStartTick
+Can_Callout_SetStartTick:	.type	func
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    40  {
+; ..\Appl\Source\Can_Callout_Stubs.c	    41    Can_GetLoopTimeoutOfControllerData(0U)[source] = startTick;
+	fcall	.cocofun_2
+	st.w	[a15]30,d5
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    42  }
+	ret
+	
+__Can_Callout_SetStartTick_function_end:
+	.size	Can_Callout_SetStartTick,__Can_Callout_SetStartTick_function_end-Can_Callout_SetStartTick
+	; End of function
+	
+	.sdecl	'.text.Can_Callout_Stubs.ApplCanTimerStart',code
+	.sect	'.text.Can_Callout_Stubs.ApplCanTimerStart'
+	.align	2
+	
+	.global	ApplCanTimerStart
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    43  
+; ..\Appl\Source\Can_Callout_Stubs.c	    44  void ApplCanTimerStart(uint8 source)
+; Function ApplCanTimerStart
+ApplCanTimerStart:	.type	func
+	mov	d15,d4
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    45  {
+; ..\Appl\Source\Can_Callout_Stubs.c	    46  #if (CAN_DEV_ERROR_DETECT == STD_ON)
+; ..\Appl\Source\Can_Callout_Stubs.c	    47    if (source > CAN_LOOP_MAX)
+	jlt.u	d15,#8,.L7
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    48    {
+; ..\Appl\Source\Can_Callout_Stubs.c	    49      (void)Det_ReportError(CAN_MODULE_ID, CAN_INSTANCE_ID, CAN_HW_ACCESS_ID, CAN_E_PARAM_HANDLE);
+	mov	d4,#80
+	mov	d5,#0
+	mov	d6,#96
+	mov	d7,#2
+	j	Det_ReportError
+.L7:
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    50    }
+; ..\Appl\Source\Can_Callout_Stubs.c	    51    else
+; ..\Appl\Source\Can_Callout_Stubs.c	    52  #endif
+; ..\Appl\Source\Can_Callout_Stubs.c	    53    {
+; ..\Appl\Source\Can_Callout_Stubs.c	    54      Can_Callout_SetStartTick(source, Mcal_DelayGetTick());
+	call	Mcal_DelayGetTick
+	mov	e4,d2,d15
+	j	Can_Callout_SetStartTick
+	
+__ApplCanTimerStart_function_end:
+	.size	ApplCanTimerStart,__ApplCanTimerStart_function_end-ApplCanTimerStart
+	; End of function
+	
+	.sdecl	'.text.Can_Callout_Stubs.ApplCanTimerLoop',code
+	.sect	'.text.Can_Callout_Stubs.ApplCanTimerLoop'
+	.align	2
+	
+	.global	ApplCanTimerLoop
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    55    }
+; ..\Appl\Source\Can_Callout_Stubs.c	    56  }
+; ..\Appl\Source\Can_Callout_Stubs.c	    57  
+; ..\Appl\Source\Can_Callout_Stubs.c	    58  Can_ReturnType ApplCanTimerLoop(uint8 source)
+; Function ApplCanTimerLoop
+ApplCanTimerLoop:	.type	func
+	mov	d15,d4
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    59  {
+; ..\Appl\Source\Can_Callout_Stubs.c	    60    Can_ReturnType retval;
+; ..\Appl\Source\Can_Callout_Stubs.c	    61    uint32 elapsedTicks;
+; ..\Appl\Source\Can_Callout_Stubs.c	    62    uint32 timeoutTicks;
+; ..\Appl\Source\Can_Callout_Stubs.c	    63    Can_ExternalTickType startTick;
+; ..\Appl\Source\Can_Callout_Stubs.c	    64  
+; ..\Appl\Source\Can_Callout_Stubs.c	    65    retval = CAN_NOT_OK;
+	mov	d8,#0
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    66  
+; ..\Appl\Source\Can_Callout_Stubs.c	    67  #if (CAN_DEV_ERROR_DETECT == STD_ON)
+; ..\Appl\Source\Can_Callout_Stubs.c	    68    if (source > CAN_LOOP_MAX)
+	jlt.u	d15,#8,.L9
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    69    {
+; ..\Appl\Source\Can_Callout_Stubs.c	    70      (void)Det_ReportError(CAN_MODULE_ID, CAN_INSTANCE_ID, CAN_HW_ACCESS_ID, CAN_E_PARAM_HANDLE);
+	mov	d5,d8
+	mov	d7,#2
+	j	.L10
+.L9:
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    71    }
+; ..\Appl\Source\Can_Callout_Stubs.c	    72    else
+; ..\Appl\Source\Can_Callout_Stubs.c	    73  #endif
+; ..\Appl\Source\Can_Callout_Stubs.c	    74    {
+; ..\Appl\Source\Can_Callout_Stubs.c	    75      startTick = Can_Callout_GetStartTick(source);
+	call	Can_Callout_GetStartTick
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    76      elapsedTicks = Mcal_DelayGetTick() - startTick;
+	mov	d9,d2
+	call	Mcal_DelayGetTick
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    77      timeoutTicks = Can_Callout_GetTimeoutTicks();
+	sub	d9,d2,d9
+	call	Can_Callout_GetTimeoutTicks
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    78  
+; ..\Appl\Source\Can_Callout_Stubs.c	    79      if ((timeoutTicks == 0U) || (elapsedTicks < timeoutTicks))
+	jeq	d2,#0,.L11
+	jge.u	d9,d2,.L12
+.L11:
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    80      {
+; ..\Appl\Source\Can_Callout_Stubs.c	    81        retval = CAN_OK;
+	mov	d8,#1
+	j	.L13
+.L12:
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    82      }
+; ..\Appl\Source\Can_Callout_Stubs.c	    83  #if (CAN_DEV_ERROR_DETECT == STD_ON)
+; ..\Appl\Source\Can_Callout_Stubs.c	    84      else if (source < CAN_LOOP_MAX)
+	jge.u	d15,#7,.L14
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    85      {
+; ..\Appl\Source\Can_Callout_Stubs.c	    86        (void)Det_ReportError(CAN_MODULE_ID, CAN_INSTANCE_ID, CAN_HW_ACCESS_ID, CAN_E_TIMEOUT_DET);
+	mov	d5,#0
+	mov	d7,#17
+.L10:
+	mov	d4,#80
+	mov	d6,#96
+	call	Det_ReportError
+.L14:
+.L13:
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    87      }
+; ..\Appl\Source\Can_Callout_Stubs.c	    88  #endif
+; ..\Appl\Source\Can_Callout_Stubs.c	    89    }
+; ..\Appl\Source\Can_Callout_Stubs.c	    90  
+; ..\Appl\Source\Can_Callout_Stubs.c	    91    return retval;
+; ..\Appl\Source\Can_Callout_Stubs.c	    92  }
+	mov	d2,d8
+	ret
+	
+__ApplCanTimerLoop_function_end:
+	.size	ApplCanTimerLoop,__ApplCanTimerLoop_function_end-ApplCanTimerLoop
+	; End of function
+	
+	.sdecl	'.text.Can_Callout_Stubs.ApplCanTimerEnd',code
+	.sect	'.text.Can_Callout_Stubs.ApplCanTimerEnd'
+	.align	2
+	
+	.global	ApplCanTimerEnd
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    93  
+; ..\Appl\Source\Can_Callout_Stubs.c	    94  void ApplCanTimerEnd(uint8 source)
+; Function ApplCanTimerEnd
+ApplCanTimerEnd:	.type	func
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    95  {
+; ..\Appl\Source\Can_Callout_Stubs.c	    96    ApplCanTimerStart(source);
+	j	ApplCanTimerStart
+	
+__ApplCanTimerEnd_function_end:
+	.size	ApplCanTimerEnd,__ApplCanTimerEnd_function_end-ApplCanTimerEnd
+	; End of function
+	
+	.calls	'Can_Callout_GetTimeoutTicks','Mcal_DelayTickResolution'
+	.calls	'Can_Callout_GetTimeoutTicks','Mcal_DelayResetTickCalibration'
+	.calls	'ApplCanTimerStart','Det_ReportError'
+	.calls	'ApplCanTimerStart','Mcal_DelayGetTick'
+	.calls	'ApplCanTimerStart','Can_Callout_SetStartTick'
+	.calls	'ApplCanTimerLoop','Det_ReportError'
+	.calls	'ApplCanTimerLoop','Can_Callout_GetStartTick'
+	.calls	'ApplCanTimerLoop','Mcal_DelayGetTick'
+	.calls	'ApplCanTimerLoop','Can_Callout_GetTimeoutTicks'
+	.calls	'ApplCanTimerEnd','ApplCanTimerStart'
+	.calls	'Can_Callout_GetStartTick','.cocofun_2'
+	.calls	'Can_Callout_SetStartTick','.cocofun_2'
+	.calls	'Can_Callout_GetTimeoutTicks','',0
+	.calls	'Can_Callout_GetStartTick','',0
+	.calls	'.cocofun_2','',0
+	.calls	'Can_Callout_SetStartTick','',0
+	.calls	'ApplCanTimerStart','',0
+	.calls	'ApplCanTimerLoop','',0
+	.extern	Can_ControllerData
+	.extern	Mcal_DelayTickResolution
+	.extern	Mcal_DelayResetTickCalibration
+	.extern	Mcal_DelayGetTick
+	.extern	Det_ReportError
+	.calls	'ApplCanTimerEnd','',0
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    97  }
+
+	; Module end

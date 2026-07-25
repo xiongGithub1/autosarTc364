@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Link_Core0_Stacks.lsl
- *   Generation Time: 2024-07-10 20:18:18
+ *   Generation Time: 2026-07-25 15:51:51
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -49,7 +49,7 @@
 group OS_CORE0_STACKS_GROUP(ordered, contiguous, fill)
 {
 
-/* Stack: Default_Appl_Task (1024 Byte) */
+/* Stack: Default_Appl_Task (4096 Byte) */
 group OS_STACK_DEFAULT_APPL_TASK_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=8)
 {
   select "[.]bss.OS_STACK_DEFAULT_APPL_TASK_VAR_NOINIT";
@@ -58,7 +58,7 @@ group OS_STACK_DEFAULT_APPL_TASK_VAR_NOINIT_GROUP(ordered, contiguous, fill, ali
 "_OS_STACK_DEFAULT_APPL_TASK_VAR_NOINIT_END" = "_lc_ge_OS_STACK_DEFAULT_APPL_TASK_VAR_NOINIT_GROUP" - 1;
 "_OS_STACK_DEFAULT_APPL_TASK_VAR_NOINIT_LIMIT" = "_lc_ge_OS_STACK_DEFAULT_APPL_TASK_VAR_NOINIT_GROUP";
 
-/* Stack: Default_BSW_ASync_Task (1024 Byte) */
+/* Stack: Default_BSW_ASync_Task (4096 Byte) */
 group OS_STACK_DEFAULT_BSW_ASYNC_TASK_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=8)
 {
   select "[.]bss.OS_STACK_DEFAULT_BSW_ASYNC_TASK_VAR_NOINIT";
@@ -94,7 +94,7 @@ group OS_STACK_OSCORE0_INIT_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=8)
 "_OS_STACK_OSCORE0_INIT_VAR_NOINIT_END" = "_lc_ge_OS_STACK_OSCORE0_INIT_VAR_NOINIT_GROUP" - 1;
 "_OS_STACK_OSCORE0_INIT_VAR_NOINIT_LIMIT" = "_lc_ge_OS_STACK_OSCORE0_INIT_VAR_NOINIT_GROUP";
 
-/* Stack: OsCore0_Isr_Core (1024 Byte) */
+/* Stack: OsCore0_Isr_Core (2048 Byte) */
 group OS_STACK_OSCORE0_ISR_CORE_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=8)
 {
   select "[.]bss.OS_STACK_OSCORE0_ISR_CORE_VAR_NOINIT";

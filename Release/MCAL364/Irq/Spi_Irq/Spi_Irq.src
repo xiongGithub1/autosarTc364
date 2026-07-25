@@ -1,0 +1,484 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc10372a --dep-file=MCAL364\\Irq\\Spi_Irq\\.Spi_Irq.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=MCAL364\\Irq\\Spi_Irq\\Spi_Irq.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o MCAL364\\Irq\\Spi_Irq\\Spi_Irq.src ..\\MCAL364\\Irq\\Spi_Irq\\Spi_Irq.c"
+	.compiler_name		"ctc"
+	;source	'..\\MCAL364\\Irq\\Spi_Irq\\Spi_Irq.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.Spi_Irq.Os_Isr_QSPI2ERR_ISR',code
+	.sect	'.text.Spi_Irq.Os_Isr_QSPI2ERR_ISR'
+	.align	2
+	
+	.global	Os_Isr_QSPI2ERR_ISR
+
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	     1  /*******************************************************************************
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	     2  **                                                                            **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	     3  ** Copyright (C) Infineon Technologies (2021)                                 **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	     4  **                                                                            **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	     5  ** All rights reserved.                                                       **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	     6  **                                                                            **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	     7  ** This document contains proprietary information belonging to Infineon       **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	     8  ** Technologies. Passing on and copying of this document, and communication   **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	     9  ** of its contents is not permitted without prior written authorization.      **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    10  **                                                                            **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    11  ********************************************************************************
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    12  **                                                                            **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    13  **  FILENAME  : Spi_Irq.c                                                     **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    14  **                                                                            **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    15  **  VERSION   : 3.0.0                                                         **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    16  **                                                                            **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    17  **  DATE      : 2021-11-08                                                    **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    18  **                                                                            **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    19  **  VARIANT   : Post-Build                                                    **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    20  **                                                                            **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    21  **  PLATFORM  : Infineon AURIX2G                                              **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    22  **                                                                            **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    23  **  AUTHOR    : DL-AUTOSAR-Engineering                                        **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    24  **                                                                            **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    25  **  VENDOR    : Infineon Technologies                                         **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    26  **                                                                            **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    27  **  DESCRIPTION :  This file contains ISRs of SPI Handler driver              **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    28  **                                                                            **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    29  **  SPECIFICATION(S) : Specification of SPI Driver, AUTOSAR Release 4.2.2     **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    30  **                                                                            **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    31  **  MAY BE CHANGED BY USER : Yes                                              **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    32  **                                                                            **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    33  *******************************************************************************/
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    34  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    35  /*******************************************************************************
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    36  **                      Includes                                              **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    37  *******************************************************************************/
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    38  /* Inclusion of Platform_Types.h and Compiler.h */
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    39  #include "Std_Types.h"
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    40  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    41  /* Module header file inclusion */
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    42  #include "Spi.h"
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    43  /* MCAL driver utility functions for setting interrupt priority initialization
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    44      and interrupt category */
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    45  #include "Os.h"
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    46  #include "Irq.h"
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    47  #ifdef  APP_SW
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    48  #if (APP_SW == TEST_APP)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    49    #include "Test_Main.h"
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    50  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    51  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    52  /*******************************************************************************
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    53  **                      Imported Compiler Switch Checks                       **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    54  *******************************************************************************/
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    55  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    56  /*******************************************************************************
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    57  **                      Private Macro Definitions                             **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    58  *******************************************************************************/
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    59  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    60  /*******************************************************************************
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    61  **                      Private Type Definitions                              **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    62  *******************************************************************************/
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    63  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    64  /*******************************************************************************
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    65  **                      Private Function Declarations                         **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    66  *******************************************************************************/
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    67  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    68  /*******************************************************************************
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    69  **                      Global Constant Definitions                           **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    70  *******************************************************************************/
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    71  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    72  /*******************************************************************************
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    73  **                      Global Variable Definitions                           **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    74  *******************************************************************************/
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    75  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    76  /*******************************************************************************
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    77  **                      Private Constant Definitions                          **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    78  *******************************************************************************/
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    79  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    80  /*******************************************************************************
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    81  **                      Private Variable Definitions                          **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    82  *******************************************************************************/
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    83  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    84  /*******************************************************************************
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    85  **                      Private Function Definitions                          **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    86  *******************************************************************************/
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    87  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    88  /*******************************************************************************
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    89  **                      Global Function Definitions                           **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    90  *******************************************************************************/
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    91  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    92  /******************************************************************************
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    93  ** Syntax : void QSPIXERR_ISR(void)                                          **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    94  **                                                                           **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    95  ** Service ID:       NA                                                      **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    96  **                                                                           **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    97  ** Sync/Async:       Synchronous                                             **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    98  **                                                                           **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	    99  ** Reentrancy:       reentrant                                               **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   100  **                                                                           **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   101  ** Parameters (in):  none                                                    **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   102  **                                                                           **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   103  ** Parameters (out): none                                                    **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   104  **                                                                           **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   105  ** Return value:     none                                                    **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   106  **                                                                           **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   107  ** Description : Service for Error interrupt of QSPIx                        **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   108  **                                                                           **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   109  ******************************************************************************/
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   110  /* Included to remove the GHS Warning */
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   111  #ifndef SPI_HW_QSPI5_USED
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   112  #define SPI_HW_QSPI5_USED 0x00u
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   113  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   114  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   115  /* This node is for QSPI0_ESRC */
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   116  #if ((SPI_HW_QSPI0_USED == STD_ON) && (SPI_LEVEL_DELIVERED != 0))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   117  #if IRQ_QSPI0_ERR_TOS != IRQ_TOS_DMA
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   118  #if ((IRQ_QSPI0_ERR_PRIO > 0) || (IRQ_QSPI0_ERR_CAT == IRQ_CAT2))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   119  #if ((IRQ_QSPI0_ERR_PRIO > 0) && (IRQ_QSPI0_ERR_CAT == IRQ_CAT1))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   120  IFX_INTERRUPT(QSPI0ERR_ISR, 0, IRQ_QSPI0_ERR_PRIO)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   121  #elif IRQ_QSPI0_ERR_CAT == IRQ_CAT2
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   122  ISR(QSPI0ERR_ISR)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   123  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   124  {
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   125    ENABLE();
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   126    #ifdef  APP_SW
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   127    #if (APP_SW == TEST_APP)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   128    #if (TEST_ACCESS_MODE_RT == TEST_MCAL_USER1)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   129    Mcal_SetModetoUser();
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   130    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   131    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   132    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   133    /* Call QSPI0 Interrupt function */
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   134    Spi_IsrQspiError(SPI_QSPI0_INDEX);
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   135  }
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   136  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   137  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   138  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   139  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   140  #if ((SPI_HW_QSPI1_USED == STD_ON) && (SPI_LEVEL_DELIVERED != 0))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   141  /* This node is for QSPI1_ESRC */
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   142  #if IRQ_QSPI1_ERR_TOS != IRQ_TOS_DMA
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   143  #if ((IRQ_QSPI1_ERR_PRIO > 0) || (IRQ_QSPI1_ERR_CAT == IRQ_CAT2))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   144  #if ((IRQ_QSPI1_ERR_PRIO > 0) && (IRQ_QSPI1_ERR_CAT == IRQ_CAT1))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   145  IFX_INTERRUPT(QSPI1ERR_ISR, 0, IRQ_QSPI1_ERR_PRIO)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   146  #elif IRQ_QSPI1_ERR_CAT == IRQ_CAT2
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   147  ISR(QSPI1ERR_ISR)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   148  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   149  {
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   150    ENABLE();
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   151    #ifdef  APP_SW
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   152    #if (APP_SW == TEST_APP)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   153    #if (TEST_ACCESS_MODE_RT == TEST_MCAL_USER1)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   154    Mcal_SetModetoUser();
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   155    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   156    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   157    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   158    /* Call QSPI1 Interrupt function */
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   159    Spi_IsrQspiError(SPI_QSPI1_INDEX);
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   160  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   161  }
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   162  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   163  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   164  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   165  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   166  /* This node is for QSPI2_ESRC */
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   167  #if ((SPI_HW_QSPI2_USED == STD_ON) && (SPI_LEVEL_DELIVERED != 0))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   168  #if IRQ_QSPI2_ERR_TOS != IRQ_TOS_DMA
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   169  #if ((IRQ_QSPI2_ERR_PRIO > 0) || (IRQ_QSPI2_ERR_CAT == IRQ_CAT2))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   170  #if ((IRQ_QSPI2_ERR_PRIO > 0) && (IRQ_QSPI2_ERR_CAT == IRQ_CAT1))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   171  IFX_INTERRUPT(QSPI2ERR_ISR, 0, IRQ_QSPI2_ERR_PRIO)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   172  #elif IRQ_QSPI2_ERR_CAT == IRQ_CAT2
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   173  ISR(QSPI2ERR_ISR)
+; Function Os_Isr_QSPI2ERR_ISR
+Os_Isr_QSPI2ERR_ISR:	.type	func
+
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   174  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   175  {
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   176    ENABLE();
+	enable
+
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   177    #ifdef  APP_SW
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   178    #if (APP_SW == TEST_APP)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   179    #if (TEST_ACCESS_MODE_RT == TEST_MCAL_USER1)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   180    Mcal_SetModetoUser();
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   181    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   182    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   183    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   184    /* Call QSPI2 Interrupt function */
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   185    Spi_IsrQspiError(SPI_QSPI2_INDEX);
+	mov	d4,#2
+	j	Spi_IsrQspiError
+	
+__Os_Isr_QSPI2ERR_ISR_function_end:
+	.size	Os_Isr_QSPI2ERR_ISR,__Os_Isr_QSPI2ERR_ISR_function_end-Os_Isr_QSPI2ERR_ISR
+	; End of function
+	
+	.sdecl	'.text.Spi_Irq.Os_Isr_QSPI2PT_ISR',code
+	.sect	'.text.Spi_Irq.Os_Isr_QSPI2PT_ISR'
+	.align	2
+	
+	.global	Os_Isr_QSPI2PT_ISR
+
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   186  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   187  }
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   188  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   189  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   190  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   191  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   192  #if ((SPI_HW_QSPI3_USED == STD_ON) && (SPI_LEVEL_DELIVERED != 0))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   193  /* This node is for QSPI3_ESRC */
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   194  #if IRQ_QSPI3_ERR_TOS != IRQ_TOS_DMA
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   195  #if ((IRQ_QSPI3_ERR_PRIO > 0) || (IRQ_QSPI3_ERR_CAT == IRQ_CAT2))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   196  #if ((IRQ_QSPI3_ERR_PRIO > 0) && (IRQ_QSPI3_ERR_CAT == IRQ_CAT1))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   197  IFX_INTERRUPT(QSPI3ERR_ISR, 0, IRQ_QSPI3_ERR_PRIO)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   198  #elif IRQ_QSPI3_ERR_CAT == IRQ_CAT2
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   199  ISR(QSPI3ERR_ISR)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   200  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   201  {
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   202    ENABLE();
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   203    #ifdef  APP_SW
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   204    #if (APP_SW == TEST_APP)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   205    #if (TEST_ACCESS_MODE_RT == TEST_MCAL_USER1)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   206    Mcal_SetModetoUser();
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   207    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   208    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   209    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   210    /* Call QSPI3 Interrupt function */
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   211    Spi_IsrQspiError(SPI_QSPI3_INDEX);
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   212  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   213  }
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   214  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   215  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   216  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   217  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   218  #if ((defined SPI_HW_QSPI4_USED) && (SPI_HW_QSPI4_USED == STD_ON) && (SPI_LEVEL_DELIVERED != 0))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   219  /* This node is for QSPI4_ESRC */
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   220  #if IRQ_QSPI4_ERR_TOS != IRQ_TOS_DMA
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   221  #if ((IRQ_QSPI4_ERR_PRIO > 0) || (IRQ_QSPI4_ERR_CAT == IRQ_CAT2))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   222  #if ((IRQ_QSPI4_ERR_PRIO > 0) && (IRQ_QSPI4_ERR_CAT == IRQ_CAT1))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   223  IFX_INTERRUPT(QSPI4ERR_ISR, 0, IRQ_QSPI4_ERR_PRIO)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   224  #elif IRQ_QSPI4_ERR_CAT == IRQ_CAT2
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   225  ISR(QSPI4ERR_ISR)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   226  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   227  {
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   228    ENABLE();
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   229    #ifdef  APP_SW
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   230    #if (APP_SW == TEST_APP)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   231    #if (TEST_ACCESS_MODE_RT == TEST_MCAL_USER1)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   232    Mcal_SetModetoUser();
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   233    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   234    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   235    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   236    /* Call QSPI4 Interrupt function */
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   237    Spi_IsrQspiError(SPI_QSPI4_INDEX);
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   238  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   239  }
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   240  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   241  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   242  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   243  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   244  #if ((SPI_HW_QSPI5_USED == STD_ON) && (SPI_LEVEL_DELIVERED != 0))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   245  /* This node is for QSPI5_ESRC */
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   246  #if IRQ_QSPI5_ERR_TOS != IRQ_TOS_DMA
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   247  #if ((IRQ_QSPI5_ERR_PRIO > 0) || (IRQ_QSPI5_ERR_CAT == IRQ_CAT2))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   248  #if ((IRQ_QSPI5_ERR_PRIO > 0) && (IRQ_QSPI5_ERR_CAT == IRQ_CAT1))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   249  IFX_INTERRUPT(QSPI5ERR_ISR, 0, IRQ_QSPI5_ERR_PRIO)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   250  #elif IRQ_QSPI5_ERR_CAT == IRQ_CAT2
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   251  ISR(QSPI5ERR_ISR)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   252  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   253  {
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   254    ENABLE();
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   255    #ifdef  APP_SW
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   256    #if (APP_SW == TEST_APP)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   257    #if (TEST_ACCESS_MODE_RT == TEST_MCAL_USER1)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   258    Mcal_SetModetoUser();
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   259    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   260    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   261    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   262    /* Call QSPI5 Interrupt function */
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   263    Spi_IsrQspiError(SPI_QSPI5_INDEX);
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   264  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   265  }
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   266  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   267  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   268  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   269  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   270  /******************************************************************************
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   271  ** Syntax : void QSPIXPT_ISR(void)                                           **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   272  **                                                                           **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   273  ** Service ID:       NA                                                      **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   274  **                                                                           **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   275  ** Sync/Async:       Synchronous                                             **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   276  **                                                                           **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   277  ** Reentrancy:       reentrant                                               **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   278  **                                                                           **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   279  ** Parameters (in):  none                                                    **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   280  **                                                                           **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   281  ** Parameters (out): none                                                    **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   282  **                                                                           **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   283  ** Return value:     none                                                    **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   284  **                                                                           **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   285  ** Description : Service for Phase transition interrupt (PT2) used by QSPIx  **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   286  **                                                                           **
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   287  ******************************************************************************/
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   288  #if ((SPI_HW_QSPI0_USED == STD_ON) && (SPI_LEVEL_DELIVERED != 0))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   289  #if IRQ_QSPI0_PT_TOS != IRQ_TOS_DMA
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   290  #if ((IRQ_QSPI0_PT_PRIO > 0) || (IRQ_QSPI0_PT_CAT == IRQ_CAT2))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   291  #if ((IRQ_QSPI0_PT_PRIO > 0) && (IRQ_QSPI0_PT_CAT == IRQ_CAT1))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   292  IFX_INTERRUPT(QSPI0PT_ISR, 0, IRQ_QSPI0_PT_PRIO)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   293  #elif IRQ_QSPI0_PT_CAT == IRQ_CAT2
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   294  ISR(QSPI0PT_ISR)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   295  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   296  {
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   297    ENABLE();
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   298    #ifdef  APP_SW
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   299    #if (APP_SW == TEST_APP)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   300    #if (TEST_ACCESS_MODE_RT == TEST_MCAL_USER1)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   301    Mcal_SetModetoUser();
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   302    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   303    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   304    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   305    /* Call QSPI0 Interrupt function */
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   306    Spi_IsrQspiPT2(SPI_QSPI0_INDEX);
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   307  }
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   308  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   309  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   310  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   311  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   312  #if ((SPI_HW_QSPI1_USED == STD_ON) && (SPI_LEVEL_DELIVERED != 0))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   313  #if IRQ_QSPI1_PT_TOS != IRQ_TOS_DMA
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   314  #if ((IRQ_QSPI1_PT_PRIO > 0) || (IRQ_QSPI1_PT_CAT == IRQ_CAT2))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   315  #if ((IRQ_QSPI1_PT_PRIO > 0) && (IRQ_QSPI1_PT_CAT == IRQ_CAT1))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   316  IFX_INTERRUPT(QSPI1PT_ISR, 0, IRQ_QSPI1_PT_PRIO)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   317  #elif IRQ_QSPI1_PT_CAT == IRQ_CAT2
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   318  ISR(QSPI1PT_ISR)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   319  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   320  {
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   321    ENABLE();
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   322    #ifdef  APP_SW
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   323    #if (APP_SW == TEST_APP)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   324    #if (TEST_ACCESS_MODE_RT == TEST_MCAL_USER1)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   325    Mcal_SetModetoUser();
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   326    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   327    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   328    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   329    /* Call QSPI1 Interrupt function */
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   330    Spi_IsrQspiPT2(SPI_QSPI1_INDEX);
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   331  }
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   332  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   333  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   334  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   335  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   336  #if ((SPI_HW_QSPI2_USED == STD_ON) && (SPI_LEVEL_DELIVERED != 0))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   337  #if IRQ_QSPI2_PT_TOS != IRQ_TOS_DMA
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   338  #if ((IRQ_QSPI2_PT_PRIO > 0) || (IRQ_QSPI2_PT_CAT == IRQ_CAT2))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   339  #if ((IRQ_QSPI2_PT_PRIO > 0) && (IRQ_QSPI2_PT_CAT == IRQ_CAT1))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   340  IFX_INTERRUPT(QSPI2PT_ISR, 0, IRQ_QSPI2_PT_PRIO)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   341  #elif IRQ_QSPI2_PT_CAT == IRQ_CAT2
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   342  ISR(QSPI2PT_ISR)
+; Function Os_Isr_QSPI2PT_ISR
+Os_Isr_QSPI2PT_ISR:	.type	func
+
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   343  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   344  {
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   345    ENABLE();
+	enable
+
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   346    #ifdef  APP_SW
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   347    #if (APP_SW == TEST_APP)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   348    #if (TEST_ACCESS_MODE_RT == TEST_MCAL_USER1)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   349    Mcal_SetModetoUser();
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   350    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   351    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   352    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   353    /* Call QSPI2 Interrupt function */
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   354    Spi_IsrQspiPT2(SPI_QSPI2_INDEX);
+	mov	d4,#2
+	j	Spi_IsrQspiPT2
+	
+__Os_Isr_QSPI2PT_ISR_function_end:
+	.size	Os_Isr_QSPI2PT_ISR,__Os_Isr_QSPI2PT_ISR_function_end-Os_Isr_QSPI2PT_ISR
+	; End of function
+	
+	.calls	'Os_Isr_QSPI2ERR_ISR','Spi_IsrQspiError'
+	.calls	'Os_Isr_QSPI2PT_ISR','Spi_IsrQspiPT2'
+	.calls	'Os_Isr_QSPI2ERR_ISR','',0
+	.extern	Spi_IsrQspiError
+	.extern	Spi_IsrQspiPT2
+	.calls	'Os_Isr_QSPI2PT_ISR','',0
+
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   355  }
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   356  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   357  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   358  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   359  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   360  #if ((SPI_HW_QSPI3_USED == STD_ON) && (SPI_LEVEL_DELIVERED != 0))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   361  #if IRQ_QSPI3_PT_TOS != IRQ_TOS_DMA
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   362  #if ((IRQ_QSPI3_PT_PRIO > 0) || (IRQ_QSPI3_PT_CAT == IRQ_CAT2))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   363  #if ((IRQ_QSPI3_PT_PRIO > 0) && (IRQ_QSPI3_PT_CAT == IRQ_CAT1))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   364  IFX_INTERRUPT(QSPI3PT_ISR, 0, IRQ_QSPI3_PT_PRIO)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   365  #elif IRQ_QSPI3_PT_CAT == IRQ_CAT2
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   366  ISR(QSPI3PT_ISR)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   367  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   368  {
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   369    ENABLE();
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   370    #ifdef  APP_SW
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   371    #if (APP_SW == TEST_APP)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   372    #if (TEST_ACCESS_MODE_RT == TEST_MCAL_USER1)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   373    Mcal_SetModetoUser();
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   374    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   375    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   376    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   377    /* Call QSPI3 Interrupt function */
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   378    Spi_IsrQspiPT2(SPI_QSPI3_INDEX);
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   379  }
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   380  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   381  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   382  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   383  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   384  #if ((defined SPI_HW_QSPI4_USED) && (SPI_HW_QSPI4_USED == STD_ON) && (SPI_LEVEL_DELIVERED != 0))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   385  #if IRQ_QSPI4_PT_TOS != IRQ_TOS_DMA
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   386  #if ((IRQ_QSPI4_PT_PRIO > 0) || (IRQ_QSPI4_PT_CAT == IRQ_CAT2))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   387  #if ((IRQ_QSPI4_PT_PRIO > 0) && (IRQ_QSPI4_PT_CAT == IRQ_CAT1))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   388  IFX_INTERRUPT(QSPI4PT_ISR, 0, IRQ_QSPI4_PT_PRIO)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   389  #elif IRQ_QSPI4_PT_CAT == IRQ_CAT2
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   390  ISR(QSPI4PT_ISR)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   391  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   392  {
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   393    ENABLE();
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   394    #ifdef  APP_SW
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   395    #if (APP_SW == TEST_APP)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   396    #if (TEST_ACCESS_MODE_RT == TEST_MCAL_USER1)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   397    Mcal_SetModetoUser();
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   398    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   399    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   400    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   401    /* Call QSPI4 Interrupt function */
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   402    Spi_IsrQspiPT2(SPI_QSPI4_INDEX);
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   403  }
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   404  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   405  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   406  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   407  
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   408  #if ((SPI_HW_QSPI5_USED == STD_ON) && (SPI_LEVEL_DELIVERED != 0))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   409  #if IRQ_QSPI5_PT_TOS != IRQ_TOS_DMA
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   410  #if ((IRQ_QSPI5_PT_PRIO > 0) || (IRQ_QSPI5_PT_CAT == IRQ_CAT2))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   411  #if ((IRQ_QSPI5_PT_PRIO > 0) && (IRQ_QSPI5_PT_CAT == IRQ_CAT1))
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   412  IFX_INTERRUPT(QSPI5PT_ISR, 0, IRQ_QSPI5_PT_PRIO)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   413  #elif IRQ_QSPI5_PT_CAT == IRQ_CAT2
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   414  ISR(QSPI5PT_ISR)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   415  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   416  {
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   417    ENABLE();
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   418    #ifdef  APP_SW
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   419    #if (APP_SW == TEST_APP)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   420    #if (TEST_ACCESS_MODE_RT == TEST_MCAL_USER1)
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   421    Mcal_SetModetoUser();
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   422    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   423    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   424    #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   425    /* Call QSPI5 Interrupt function */
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   426    Spi_IsrQspiPT2(SPI_QSPI5_INDEX);
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   427  }
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   428  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   429  #endif
+; ..\MCAL364\Irq\Spi_Irq\Spi_Irq.c	   430  #endif
+
+	; Module end

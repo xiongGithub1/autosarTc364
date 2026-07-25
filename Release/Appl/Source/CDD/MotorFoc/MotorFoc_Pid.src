@@ -1,0 +1,312 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc15384a --dep-file=Appl\\Source\\CDD\\MotorFoc\\.MotorFoc_Pid.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=Appl\\Source\\CDD\\MotorFoc\\MotorFoc_Pid.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\Source\\CDD\\MotorFoc\\MotorFoc_Pid.src ..\\Appl\\Source\\CDD\\MotorFoc\\MotorFoc_Pid.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\Source\\CDD\\MotorFoc\\MotorFoc_Pid.c'
+
+	
+$TC162
+	.sdecl	'.zrodata.MotorFoc_Pid..1.cnt',data,rom
+	.sect	'.zrodata.MotorFoc_Pid..1.cnt'
+	.align	2
+.1.cnt:	.type	object
+	.size	.1.cnt,4
+	.word	953267991
+	.sdecl	'.zrodata.MotorFoc_Pid..2.cnt',data,rom
+	.sect	'.zrodata.MotorFoc_Pid..2.cnt'
+	.align	2
+.2.cnt:	.type	object
+	.size	.2.cnt,4
+	.word	1014350479
+	.sdecl	'.zrodata.MotorFoc_Pid..3.cnt',data,rom
+	.sect	'.zrodata.MotorFoc_Pid..3.cnt'
+	.align	2
+.3.cnt:	.type	object
+	.size	.3.cnt,4
+	.word	-1062131990
+	.sdecl	'.zrodata.MotorFoc_Pid..4.cnt',data,rom
+	.sect	'.zrodata.MotorFoc_Pid..4.cnt'
+	.align	2
+.4.cnt:	.type	object
+	.size	.4.cnt,4
+	.word	1085351658
+	.sdecl	'.zrodata.MotorFoc_Pid..5.cnt',data,rom
+	.sect	'.zrodata.MotorFoc_Pid..5.cnt'
+	.align	2
+.5.cnt:	.type	object
+	.size	.5.cnt,4
+	.word	981668463
+	.sdecl	'.zrodata.MotorFoc_Pid..6.cnt',data,rom
+	.sect	'.zrodata.MotorFoc_Pid..6.cnt'
+	.align	2
+.6.cnt:	.type	object
+	.size	.6.cnt,4
+	.word	1017370378
+	
+	.sdecl	'.text.MotorFoc_Pid.MotorFoc_CurrentPidInit',code
+	.sect	'.text.MotorFoc_Pid.MotorFoc_CurrentPidInit'
+	.align	2
+	
+	.global	MotorFoc_CurrentPidInit
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	     1  /*
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	     2   * @Author: qinXiong
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	     3   * @Date: 2026-07-11 09:00:42
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	     4   * @LastEditors: Qxiong&&2307975018@qq.com
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	     5   * @LastEditTime: 2026-07-11 11:38:37
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	     6   * @Description: 
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	     7   */
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	     8  #include "MotorFoc_Pid.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	     9  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    10  void MotorFoc_CurrentPidInit(MotorFoc_CurrentPidType* pi,
+; Function MotorFoc_CurrentPidInit
+MotorFoc_CurrentPidInit:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    11                               float32 w,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    12                               float32 rs,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    13                               float32 lm)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    14  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    15    pi->DisTimer = 0.0001F;
+	ld.w	d15,.1.cnt
+	st.w	[a4]52,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    16    pi->P_Gain = w * lm;
+	mul.f	d15,d4,d6
+	st.w	[a4],d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    17    pi->I_Gain = w * rs;
+	mul.f	d15,d4,d5
+	fcall	.cocofun_8
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    18    pi->D_Gain = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    19    pi->B_Gain = 0.015F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    20    pi->I_Sum = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    21    pi->Error = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    22    pi->Out = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    23    pi->v1 = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    24    pi->ui = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    25    pi->i1 = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    26    pi->w1 = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    27    pi->Min_output = -6.92F * 0.8F;
+	ld.w	d15,.3.cnt
+	st.w	[a4]24,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    28    pi->Max_output = 6.92F * 0.8F;
+	ld.w	d15,.4.cnt
+	st.w	[a4]20,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    29  }
+	ret
+	
+__MotorFoc_CurrentPidInit_function_end:
+	.size	MotorFoc_CurrentPidInit,__MotorFoc_CurrentPidInit_function_end-MotorFoc_CurrentPidInit
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_Pid..cocofun_8',code
+	.sect	'.text.MotorFoc_Pid..cocofun_8'
+	.align	2
+; Function .cocofun_8
+.cocofun_8:	.type	func
+; Function body .cocofun_8, coco_iter:0
+	st.w	[a4]4,d15
+	mov	d15,#0
+	st.w	[a4]8,d15
+	lea	a15,[a4]28
+	ld.w	d0,.2.cnt
+	st.w	[a4]12,d0
+	st.w	[a4]48,d15
+	st.w	[a4]16,d15
+	lea	a2,4
+.L19:
+	st.w	[a15+],d15
+	loop	a2,.L19
+	fret
+	; End of function
+	.sdecl	'.text.MotorFoc_Pid.MotorFoc_SpeedPidInit',code
+	.sect	'.text.MotorFoc_Pid.MotorFoc_SpeedPidInit'
+	.align	2
+	
+	.global	MotorFoc_SpeedPidInit
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    30  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    31  void MotorFoc_SpeedPidInit(MotorFoc_SpeedPidType* pi)
+; Function MotorFoc_SpeedPidInit
+MotorFoc_SpeedPidInit:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    32  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    33    pi->DisTimer = 0.001F;
+	ld.w	d15,.5.cnt
+	st.w	[a4]52,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    34    pi->P_Gain = 0.02F;
+	ld.w	d15,.6.cnt
+	st.w	[a4],d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    35    pi->I_Gain = 85.0F;
+	movh	d15,#17066
+	fcall	.cocofun_8
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    36    pi->D_Gain = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    37    pi->B_Gain = 0.015F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    38    pi->I_Sum = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    39    pi->Error = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    40    pi->Out = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    41    pi->v1 = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    42    pi->ui = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    43    pi->i1 = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    44    pi->w1 = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    45    pi->Min_output = -65.0F;
+	movh	d15,#49794
+	st.w	[a4]24,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    46    pi->Max_output = 65.0F;
+	movh	d15,#17026
+	st.w	[a4]20,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    47  }
+	ret
+	
+__MotorFoc_SpeedPidInit_function_end:
+	.size	MotorFoc_SpeedPidInit,__MotorFoc_SpeedPidInit_function_end-MotorFoc_SpeedPidInit
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_Pid.MotorFoc_CurrentPidIdealCalc',code
+	.sect	'.text.MotorFoc_Pid.MotorFoc_CurrentPidIdealCalc'
+	.align	2
+	
+	.global	MotorFoc_CurrentPidIdealCalc
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    48  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    49  void MotorFoc_CurrentPidIdealCalc(float32 ref, float32 fdb, float32* out, MotorFoc_CurrentPidType* pi)
+; Function MotorFoc_CurrentPidIdealCalc
+MotorFoc_CurrentPidIdealCalc:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    50  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    51    pi->Error = ref - fdb;
+	fcall	.cocofun_7
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    52    pi->ui = (pi->Out == pi->v1) ? ((pi->I_Gain * pi->DisTimer * pi->Error) + pi->i1) : pi->i1;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    53    pi->i1 = pi->ui;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    54    pi->v1 = pi->P_Gain * (pi->Error + pi->ui);
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    55  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    56    if (pi->v1 >= pi->Max_output)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    57    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    58      pi->Out = pi->Max_output;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    59    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    60    else if (pi->v1 <= pi->Min_output)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    61    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    62      pi->Out = pi->Min_output;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    63    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    64    else
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    65    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    66      pi->Out = pi->v1;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    67    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    68  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    69    pi->w1 = (pi->Out == pi->v1) ? 1.0F : 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    70    *out = pi->Out;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    71  }
+	ret
+	
+__MotorFoc_CurrentPidIdealCalc_function_end:
+	.size	MotorFoc_CurrentPidIdealCalc,__MotorFoc_CurrentPidIdealCalc_function_end-MotorFoc_CurrentPidIdealCalc
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_Pid..cocofun_7',code
+	.sect	'.text.MotorFoc_Pid..cocofun_7'
+	.align	2
+; Function .cocofun_7
+.cocofun_7:	.type	func
+; Function body .cocofun_7, coco_iter:0
+	sub.f	d0,d4,d5
+	st.w	[a5]16,d0
+	ld.w	d15,[a5]28
+	ld.w	d2,[a5]32
+	ld.w	d1,[a5]40
+	cmp.f	d15,d15,d2
+	jz.t	d15:1,.L3
+	ld.w	d15,[a5]4
+	ld.w	d2,[a5]52
+	mul.f	d15,d15,d2
+	madd.f	d1,d1,d15,d0
+.L3:
+	st.w	[a5]36,d1
+	st.w	[a5]40,d1
+	add.f	d0,d0,d1
+	ld.w	d15,[a5]
+	mul.f	d0,d15,d0
+	st.w	[a5]32,d0
+	ld.w	d1,[a5]20
+	cmp.f	d15,d0,d1
+	and	d15,#6
+	jne	d15,#0,.L4
+	ld.w	d1,[a5]24
+	cmp.f	d15,d1,d0
+	and	d15,#6
+	cmovn	d1,d15,d0
+.L4:
+	cmp.f	d15,d1,d0
+	st.w	[a5]28,d1
+	jnz.t	d15:1,.L8
+	mov	d15,#0
+	j	.L9
+.L8:
+	movh	d15,#16256
+.L9:
+	st.w	[a5]44,d15
+	st.w	[a4],d1
+	fret
+	; End of function
+	.sdecl	'.text.MotorFoc_Pid.MotorFoc_SpeedPidIdealCalc',code
+	.sect	'.text.MotorFoc_Pid.MotorFoc_SpeedPidIdealCalc'
+	.align	2
+	
+	.global	MotorFoc_SpeedPidIdealCalc
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    72  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    73  void MotorFoc_SpeedPidIdealCalc(float32 ref, float32 fdb, float32* out, MotorFoc_SpeedPidType* pi)
+; Function MotorFoc_SpeedPidIdealCalc
+MotorFoc_SpeedPidIdealCalc:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    74  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    75    pi->Error = ref - fdb;
+	fcall	.cocofun_7
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    76    pi->ui = (pi->Out == pi->v1) ? ((pi->I_Gain * pi->DisTimer * pi->Error) + pi->i1) : pi->i1;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    77    pi->i1 = pi->ui;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    78    pi->v1 = pi->P_Gain * (pi->Error + pi->ui);
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    79  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    80    if (pi->v1 >= pi->Max_output)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    81    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    82      pi->Out = pi->Max_output;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    83    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    84    else if (pi->v1 <= pi->Min_output)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    85    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    86      pi->Out = pi->Min_output;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    87    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    88    else
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    89    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    90      pi->Out = pi->v1;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    91    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    92  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    93    pi->w1 = (pi->Out == pi->v1) ? 1.0F : 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    94    *out = pi->Out;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.c	    95  }
+	ret
+	
+__MotorFoc_SpeedPidIdealCalc_function_end:
+	.size	MotorFoc_SpeedPidIdealCalc,__MotorFoc_SpeedPidIdealCalc_function_end-MotorFoc_SpeedPidIdealCalc
+	; End of function
+	
+	.calls	'MotorFoc_CurrentPidInit','.cocofun_8'
+	.calls	'MotorFoc_SpeedPidInit','.cocofun_8'
+	.calls	'MotorFoc_CurrentPidIdealCalc','.cocofun_7'
+	.calls	'MotorFoc_SpeedPidIdealCalc','.cocofun_7'
+	.calls	'MotorFoc_CurrentPidInit','',0
+	.calls	'.cocofun_8','',0
+	.calls	'MotorFoc_SpeedPidInit','',0
+	.calls	'MotorFoc_CurrentPidIdealCalc','',0
+	.calls	'.cocofun_7','',0
+	.calls	'MotorFoc_SpeedPidIdealCalc','',0
+
+
+	; Module end

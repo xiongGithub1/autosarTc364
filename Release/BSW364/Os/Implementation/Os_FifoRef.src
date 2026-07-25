@@ -1,0 +1,180 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc3284a --dep-file=BSW364\\Os\\Implementation\\.Os_FifoRef.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=BSW364\\Os\\Implementation\\Os_FifoRef.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW364\\Os\\Implementation\\Os_FifoRef.src ..\\BSW364\\Os\\Implementation\\Os_FifoRef.c"
+	.compiler_name		"ctc"
+	;source	'..\\BSW364\\Os\\Implementation\\Os_FifoRef.c'
+
+	
+$TC162
+	
+
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	     1  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	     2   *  COPYRIGHT
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	     3   *  --------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	     4   *  \verbatim
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	     5   *  Copyright (c) 2022 by Vector Informatik GmbH.                                              All rights reserved.
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	     6   *
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    10   *  \endverbatim
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    11   *  --------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    12   *  FILE DESCRIPTION
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    13   *  ------------------------------------------------------------------------------------------------------------------*/
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    14  /**
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    15   * \addtogroup Os_FifoRef
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    16   * \{
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    17   *
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    18   * \file
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    19   * \brief       Contains the implementation of the FifoRef management.
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    20   *
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    21   *
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    22   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    23  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    24   *  REVISION HISTORY
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    25   *  --------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    26   *  Refer to Os.h.
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    27   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    28  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    29                                                                                                                          /* PRQA S 0777, 0779, 0828  EOF */ /* MD_MSR_Rule5.1, MD_MSR_Rule5.2, MD_MSR_Dir1.1 */
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    30  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    31  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    32  #define OS_FIFOREF_SOURCE
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    33  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    34  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    35   *  INCLUDES
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    36   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    37  /* AUTOSAR includes */
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    38  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    39  /* Os module declarations */
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    40  #include "Os_FifoRef.h"
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    41  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    42  /* Os kernel module dependencies */
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    43  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    44  /* Os hal dependencies */
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    45  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    46  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    47  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    48   *  LOCAL CONSTANT MACROS
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    49   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    50  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    51  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    52   *  LOCAL FUNCTION MACROS
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    53   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    54  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    55  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    56   *  LOCAL DATA TYPES AND STRUCTURES
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    57   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    58  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    59  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    60   *  LOCAL DATA PROTOTYPES
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    61   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    62  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    63  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    64   *  GLOBAL DATA
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    65   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    66  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    67  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    68   *  LOCAL FUNCTION PROTOTYPES
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    69   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    70  #define OS_START_SEC_CODE
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    71  #include "Os_MemMap_OsCode.h"                                                                                           /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    72  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    73  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    74  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    75   *  LOCAL FUNCTIONS
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    76   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    77  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    78  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    79  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    80   *  GLOBAL FUNCTIONS
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    81   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    82  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    83  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    84  #define OS_STOP_SEC_CODE
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    85  #include "Os_MemMap_OsCode.h"                                                                                           /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    86  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    87  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    88  /* module specific MISRA deviations:
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    89   */
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    90  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    91  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    92  /* SBSW_JUSTIFICATION_BEGIN
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    93  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    94  \ID SBSW_OS_FFREF_FIFOWRITE_DYN_001
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    95   \DESCRIPTION    Write access to the dynamic data of a FifoRef.
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    96   \COUNTERMEASURE \M [CM_OS_FIFOREFWRITE_DYN_M]
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    97  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    98  \ID SBSW_OS_FFREF_FIFOWRITE_DATA_001
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	    99   \DESCRIPTION    Write access to the data array of a FifoRef element. The data array is indexed with
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   100                   a WriteIdx, which is a member of the Fifo's Dyn object.
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   101   \COUNTERMEASURE \T TCASE-345817
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   102                   \M [CM_OS_FIFOREFWRITE_DYN_M]
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   103                   \M [CM_OS_FIFOREFWRITE_DATA_M]
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   104  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   105  \ID SBSW_OS_FFREF_FIFOIDXINCREMENT_001
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   106   \DESCRIPTION    Os_FifoIdxIncrement is called with a pointer derived from a Dyn pointer. The Dyn pointer is derived
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   107                   from an caller's Fifo argument. The correctness of the Fifo argument is ensured by precondition.
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   108                   The compliance of the precondition is check during review.
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   109   \COUNTERMEASURE \M [CM_OS_FIFOREFREAD_DYN_M]
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   110  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   111  \ID SBSW_OS_FFREF_FIFOIDXINCREMENT_002
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   112   \DESCRIPTION    Os_FifoIdxIncrement is called with a WriteIdx derived from a Dyn pointer. The Dyn pointer is derived
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   113                   from an caller's Fifo argument. The correctness of the Fifo argument is ensured by precondition.
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   114                   The compliance of the precondition is check during review.
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   115   \COUNTERMEASURE \M [CM_OS_FIFOREFWRITE_DYN_M]
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   116  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   117  \ID SBSW_OS_FFREF_FIFOEMPTYQUEUE_001
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   118   \DESCRIPTION    Os_FifoEmptyQueue is called with a WriteIdx and a ReadIdx derived from a Dyn pointer. The Dyn pointer
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   119                   is derived from an caller's Fifo argument. The correctness of the Fifo argument is ensured by
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   120                   precondition. The compliance of the precondition is check during review.
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   121   \COUNTERMEASURE \M [CM_OS_FIFOREFREAD_DYN_M]
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   122                   \M [CM_OS_FIFOREFWRITE_DYN_M]
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   123  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   124  \ID SBSW_OS_FFREF_FIFOREAD_DYN_001
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   125   \DESCRIPTION    Write access to the dynamic data of a FifoRef.
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   126   \COUNTERMEASURE \M [CM_OS_FIFOREFREAD_DYN_M]
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   127  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   128  \ID SBSW_OS_FFREF_FIFO_WRITECBK_001
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   129   \DESCRIPTION    Call of WriteCbk function of a FIFO object passed as argument to the caller. The correctness of the
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   130                   Fifo argument is ensured by precondition. The compliance of the precondition is check during review.
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   131   \COUNTERMEASURE \M [CM_OS_FIFOREF_WRITECBK_DATA_M]
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   132  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   133  \ID SBSW_OS_FFREF_FIFO_READCBK_001
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   134   \DESCRIPTION    Call of ReadCbk function of a FIFO object passed as argument to the caller. The correctness of the
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   135                   Fifo argument is ensured by precondition. The compliance of the precondition is check during review.
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   136   \COUNTERMEASURE \M [CM_OS_FIFOREF_READCBK_DATA_M]
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   137  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   138  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   139  SBSW_JUSTIFICATION_END */
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   140  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   141  /*
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   142  \CM CM_OS_FIFOREFREAD_DYN_M
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   143        Verify that the Dyn pointer of each Os_FifoRefReadConfigType object is a non NULL_REF.
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   144  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   145  \CM CM_OS_FIFOREFWRITE_DYN_M
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   146        Verify that the Dyn pointer of each Os_FifoRefWriteConfigType object is a non NULL_REF.
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   147  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   148  \CM CM_OS_FIFOREFWRITE_DATA_M
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   149        Verify that
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   150          1. the Data pointer of each Os_FifoRefWriteConfigType object is a non NULL_REF.
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   151          2. the size of the Data array equals Fifo.Size,
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   152          3. the corresponding Os_FifoRefReadConfigType instance refers to the same Data array.
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   153  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   154  \CM CM_OS_FIFOREF_WRITECBK_DATA_M
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   155        Verify that the WriteCallback of each Os_FifoRefWriteConfigType instance is a non NULL_PTR.
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   156  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   157  \CM CM_OS_FIFOREF_READCBK_DATA_M
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   158        Verify that the ReadCallback of each Os_FifoRefReadConfigType instance is a non NULL_PTR.
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   159   */
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   160  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   161  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   162  /*!
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   163   * \}
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   164   */
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   165  
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   166  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   167   *  END OF FILE: Os_FifoRef.c
+; ..\BSW364\Os\Implementation\Os_FifoRef.c	   168   **********************************************************************************************************************/
+
+	; Module end

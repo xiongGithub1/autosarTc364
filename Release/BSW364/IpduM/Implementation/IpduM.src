@@ -1,0 +1,1227 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc1388a --dep-file=BSW364\\IpduM\\Implementation\\.IpduM.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=BSW364\\IpduM\\Implementation\\IpduM.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW364\\IpduM\\Implementation\\IpduM.src ..\\BSW364\\IpduM\\Implementation\\IpduM.c"
+	.compiler_name		"ctc"
+	;source	'..\\BSW364\\IpduM\\Implementation\\IpduM.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.IpduM.IpduM_Init',code
+	.sect	'.text.IpduM.IpduM_Init'
+	.align	2
+	
+	.global	IpduM_Init
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	     1  /**********************************************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	     2   *  COPYRIGHT
+; ..\BSW364\IpduM\Implementation\IpduM.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\IpduM\Implementation\IpduM.c	     4   *  \verbatim
+; ..\BSW364\IpduM\Implementation\IpduM.c	     5   *  Copyright (c) 2022 by Vector Informatik GmbH.                                                  All rights reserved.
+; ..\BSW364\IpduM\Implementation\IpduM.c	     6   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\BSW364\IpduM\Implementation\IpduM.c	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\BSW364\IpduM\Implementation\IpduM.c	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\BSW364\IpduM\Implementation\IpduM.c	    10   *  \endverbatim
+; ..\BSW364\IpduM\Implementation\IpduM.c	    11   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\IpduM\Implementation\IpduM.c	    12   *  FILE DESCRIPTION
+; ..\BSW364\IpduM\Implementation\IpduM.c	    13   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\IpduM\Implementation\IpduM.c	    14   *         File:  IpduM.c
+; ..\BSW364\IpduM\Implementation\IpduM.c	    15   *      Project:  MICROSAR IpduM
+; ..\BSW364\IpduM\Implementation\IpduM.c	    16   *       Module:  Implementation
+; ..\BSW364\IpduM\Implementation\IpduM.c	    17   *    Generator:  CFG5
+; ..\BSW364\IpduM\Implementation\IpduM.c	    18   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	    19   *  Description:  Microsar IPDU Multiplexer source file
+; ..\BSW364\IpduM\Implementation\IpduM.c	    20   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	    21   *********************************************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	    22  
+; ..\BSW364\IpduM\Implementation\IpduM.c	    23  /**********************************************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	    24   *  REVISION HISTORY
+; ..\BSW364\IpduM\Implementation\IpduM.c	    25   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\IpduM\Implementation\IpduM.c	    26   *  Refer to the module's header file.
+; ..\BSW364\IpduM\Implementation\IpduM.c	    27   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	    28   *  FILE VERSION
+; ..\BSW364\IpduM\Implementation\IpduM.c	    29   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\IpduM\Implementation\IpduM.c	    30   *  Refer to the VERSION CHECK below.
+; ..\BSW364\IpduM\Implementation\IpduM.c	    31   *********************************************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	    32  
+; ..\BSW364\IpduM\Implementation\IpduM.c	    33  #define IPDUM_SOURCE
+; ..\BSW364\IpduM\Implementation\IpduM.c	    34  /**********************************************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	    35   * MISRA JUSTIFICATION
+; ..\BSW364\IpduM\Implementation\IpduM.c	    36   *********************************************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	    37  
+; ..\BSW364\IpduM\Implementation\IpduM.c	    38  /**********************************************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	    39    INCLUDES
+; ..\BSW364\IpduM\Implementation\IpduM.c	    40  **********************************************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	    41  #include "IpduM.h"
+; ..\BSW364\IpduM\Implementation\IpduM.c	    42  #include "IpduM_Mux.h"
+; ..\BSW364\IpduM\Implementation\IpduM.c	    43  #include "IpduM_Container.h"
+; ..\BSW364\IpduM\Implementation\IpduM.c	    44  #include "IpduM_Cbk.h"
+; ..\BSW364\IpduM\Implementation\IpduM.c	    45  #include "SchM_IpduM.h"
+; ..\BSW364\IpduM\Implementation\IpduM.c	    46  #include "vstdlib.h"
+; ..\BSW364\IpduM\Implementation\IpduM.c	    47  
+; ..\BSW364\IpduM\Implementation\IpduM.c	    48  #if (IPDUM_DEV_ERROR_REPORT == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	    49  # include "Det.h"
+; ..\BSW364\IpduM\Implementation\IpduM.c	    50  #endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	    51  #if(IPDUM_USE_INIT_POINTER == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	    52  # include "EcuM_Error.h"
+; ..\BSW364\IpduM\Implementation\IpduM.c	    53  #endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	    54  
+; ..\BSW364\IpduM\Implementation\IpduM.c	    55  /**********************************************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	    56    VERSION CHECK
+; ..\BSW364\IpduM\Implementation\IpduM.c	    57  **********************************************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	    58  /* vendor specific version information is BCD coded */
+; ..\BSW364\IpduM\Implementation\IpduM.c	    59  #if ((IPDUM_SW_MAJOR_VERSION != 11u) || (IPDUM_SW_MINOR_VERSION != 2u) || (IPDUM_SW_PATCH_VERSION != 1u))
+; ..\BSW364\IpduM\Implementation\IpduM.c	    60  # error "IpduM.c: IpduM.c and IpduM.h versions are inconsistent!"
+; ..\BSW364\IpduM\Implementation\IpduM.c	    61  #endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	    62  
+; ..\BSW364\IpduM\Implementation\IpduM.c	    63  /**********************************************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	    64    LOCAL CONSTANT MACROS
+; ..\BSW364\IpduM\Implementation\IpduM.c	    65  **********************************************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	    66  #define IPDUM_RESET                             0u
+; ..\BSW364\IpduM\Implementation\IpduM.c	    67  
+; ..\BSW364\IpduM\Implementation\IpduM.c	    68  /**********************************************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	    69    LOCAL FUNCTION MACROS
+; ..\BSW364\IpduM\Implementation\IpduM.c	    70  **********************************************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	    71  
+; ..\BSW364\IpduM\Implementation\IpduM.c	    72  /**********************************************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	    73    LOCAL DATA TYPES AND STRUCTURES
+; ..\BSW364\IpduM\Implementation\IpduM.c	    74  **********************************************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	    75  
+; ..\BSW364\IpduM\Implementation\IpduM.c	    76  /**********************************************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	    77    LOCAL DATA PROTOTYPES
+; ..\BSW364\IpduM\Implementation\IpduM.c	    78  **********************************************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	    79  
+; ..\BSW364\IpduM\Implementation\IpduM.c	    80  /**********************************************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	    81    LOCAL DATA
+; ..\BSW364\IpduM\Implementation\IpduM.c	    82  **********************************************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	    83  
+; ..\BSW364\IpduM\Implementation\IpduM.c	    84  /**********************************************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	    85    GLOBAL DATA
+; ..\BSW364\IpduM\Implementation\IpduM.c	    86  **********************************************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	    87  #define IPDUM_START_SEC_VAR_CLEARED_UNSPECIFIED
+; ..\BSW364\IpduM\Implementation\IpduM.c	    88  #include "IpduM_MemMap.h"    /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\BSW364\IpduM\Implementation\IpduM.c	    89  
+; ..\BSW364\IpduM\Implementation\IpduM.c	    90  #if(IPDUM_USE_INIT_POINTER == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	    91  P2CONST(IpduM_ConfigType, IPDUM_VAR_CLEARED, IPDUM_INIT_DATA) IpduM_ConfigDataPtr = NULL_PTR;
+; ..\BSW364\IpduM\Implementation\IpduM.c	    92  #endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	    93  
+; ..\BSW364\IpduM\Implementation\IpduM.c	    94  #define IPDUM_STOP_SEC_VAR_CLEARED_UNSPECIFIED
+; ..\BSW364\IpduM\Implementation\IpduM.c	    95  #include "IpduM_MemMap.h"    /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\BSW364\IpduM\Implementation\IpduM.c	    96  
+; ..\BSW364\IpduM\Implementation\IpduM.c	    97  /**********************************************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	    98    LOCAL FUNCTION PROTOTYPES
+; ..\BSW364\IpduM\Implementation\IpduM.c	    99  **********************************************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	   100  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   101  /**********************************************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	   102    LOCAL FUNCTIONS
+; ..\BSW364\IpduM\Implementation\IpduM.c	   103  **********************************************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	   104  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   105  /**********************************************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	   106    GLOBAL FUNCTIONS
+; ..\BSW364\IpduM\Implementation\IpduM.c	   107  **********************************************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	   108  #define IPDUM_START_SEC_CODE
+; ..\BSW364\IpduM\Implementation\IpduM.c	   109  #include "IpduM_MemMap.h"    /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   110  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   111  /*******************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	   112   *  IpduM_Init()
+; ..\BSW364\IpduM\Implementation\IpduM.c	   113  *******************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	   114  /*!
+; ..\BSW364\IpduM\Implementation\IpduM.c	   115   * Internal comment removed.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   116   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   117   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   118   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   119   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   120   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   121   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   122   */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   123  /* PRQA S 6010, 6030 */ /* MD_MSR_STPTH, MD_MSR_STCYC */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   124  FUNC(void, IPDUM_CODE) IpduM_Init(P2CONST(IpduM_ConfigType, AUTOMATIC, IPDUM_INIT_DATA) config)
+; Function IpduM_Init
+IpduM_Init:	.type	func
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   125  {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   126    uint8 errorId = IPDUM_E_NO_ERROR;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   127  #if(IPDUM_USE_INIT_POINTER == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   128    IpduM_ConfigDataPtr = config;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   129    if(IpduM_ConfigDataPtr == NULL_PTR)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   130    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   131  # if(IPDUM_USE_ECUM_BSW_ERROR_HOOK == STD_ON)   /* COV_IPDUM_VAR_DEPENDENT_SWITCH */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   132      EcuM_BswErrorHook(IPDUM_MODULE_ID, ECUM_BSWERROR_NULLPTR);
+; ..\BSW364\IpduM\Implementation\IpduM.c	   133  # endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   134  # if (IPDUM_DEV_ERROR_DETECT == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   135      errorId = IPDUM_E_PARAM_POINTER;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   136  # endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   137    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   138  # if (IPDUM_FINALMAGICNUMBER == STD_ON) /* COV_IPDUM_VAR_DEPENDENT_SWITCH */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   139    else if(IpduM_GetFinalMagicNumber() != IPDUM_FINAL_MAGIC_NUMBER)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   140    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   141      IpduM_ConfigDataPtr = NULL_PTR;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   142  #  if(IPDUM_USE_ECUM_BSW_ERROR_HOOK == STD_ON)  /* COV_IPDUM_VAR_DEPENDENT_SWITCH */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   143      EcuM_BswErrorHook(IPDUM_MODULE_ID, ECUM_BSWERROR_MAGICNUMBER);
+; ..\BSW364\IpduM\Implementation\IpduM.c	   144  #  endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   145  #  if (IPDUM_DEV_ERROR_DETECT == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   146      errorId = IPDUM_E_PARAM_POINTER;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   147  #  endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   148    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   149  # endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   150  #else
+; ..\BSW364\IpduM\Implementation\IpduM.c	   151    if(config != NULL_PTR)        /* COV_IPDUM_PRECOMPILE_CONFIG */
+	mov	d15,#0
+	jz.a	a4,.L2
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   152    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   153  # if (IPDUM_DEV_ERROR_DETECT == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   154      errorId = IPDUM_E_PARAM_POINTER;
+	mov	d15,#17
+	j	.L3
+.L2:
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   155  # endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   156    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   157  #endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   158    else
+; ..\BSW364\IpduM\Implementation\IpduM.c	   159    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   160  #if(IPDUM_TXCONFTIMEOUTCNTOFVTXLOINFO == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   161      {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   162        IpduM_CTxLoInfoIterType txConfTimeoutCntIdx;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   163        for(txConfTimeoutCntIdx = 0u; txConfTimeoutCntIdx < IpduM_GetSizeOfVTxLoInfo(); txConfTimeoutCntIdx++)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   164        {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   165          /* Reset timeout counter for given multiplex handle in this loop iteration */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   166          IpduM_SetTxConfTimeoutCntOfVTxLoInfo(txConfTimeoutCntIdx, IPDUM_RESET); /* SBSW_IPDUM_CSL01 */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   167        }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   168      }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   169  #endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   170  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   171  #if (IPDUM_TXBUFFERSTARTIDXOFTXPATHWAY == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   172      IpduM_Mux_Init();
+	mov	d0,#0
+	st.b	IpduM_VTxLoInfo,d0
+	call	IpduM_Mux_Init
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   173  #endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   174  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   175  #if ((IPDUM_CCONTAINERRXQUEUEINFO == STD_ON) || (IPDUM_CTXCONTAINERPDU == STD_ON))
+; ..\BSW364\IpduM\Implementation\IpduM.c	   176      IpduM_Container_Init();
+; ..\BSW364\IpduM\Implementation\IpduM.c	   177  #endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   178  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   179      IpduM_SetInitialized(TRUE); /* SBSW_IPDUM_CSL_VAR_ACCESS */
+	mov	d0,#1
+	st.b	IpduM_Initialized,d0
+.L3:
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   180    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   181  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   182  #if (IPDUM_DEV_ERROR_REPORT == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   183    if(errorId != IPDUM_E_NO_ERROR)       /* COV_IPDUM_NO_DEV_ERROR */
+	jeq	d15,#0,.L4
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   184    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   185      IpduM_Det_ReportError(IPDUM_APIID_INIT, (errorId));
+	mov	d5,#0
+	mov	e6,d15,d5
+	mov	d4,#52
+	j	Det_ReportError
+.L4:
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   186    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   187  #endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   188    IPDUM_DUMMY_STATEMENT(errorId);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   189  }
+	ret
+	
+__IpduM_Init_function_end:
+	.size	IpduM_Init,__IpduM_Init_function_end-IpduM_Init
+	; End of function
+	
+	.sdecl	'.text.IpduM.IpduM_InitMemory',code
+	.sect	'.text.IpduM.IpduM_InitMemory'
+	.align	2
+	
+	.global	IpduM_InitMemory
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   190  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   191  /*******************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	   192   *  IpduM_InitMemory()
+; ..\BSW364\IpduM\Implementation\IpduM.c	   193  *******************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	   194  /*!
+; ..\BSW364\IpduM\Implementation\IpduM.c	   195   * Internal comment removed.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   196   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   197   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   198   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   199   */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   200  FUNC(void, IPDUM_CODE) IpduM_InitMemory(void)
+; Function IpduM_InitMemory
+IpduM_InitMemory:	.type	func
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   201  {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   202    /* Set the IpduM to "uninitialized" */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   203    IpduM_SetInitialized(FALSE);  /* SBSW_IPDUM_CSL_VAR_ACCESS */
+	mov	d15,#0
+	st.b	IpduM_Initialized,d15
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   204  #if(IPDUM_USE_INIT_POINTER == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   205    IpduM_ConfigDataPtr = NULL_PTR;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   206  #endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   207  }
+	ret
+	
+__IpduM_InitMemory_function_end:
+	.size	IpduM_InitMemory,__IpduM_InitMemory_function_end-IpduM_InitMemory
+	; End of function
+	
+	.sdecl	'.text.IpduM.IpduM_MainFunctionTxInternal',code
+	.sect	'.text.IpduM.IpduM_MainFunctionTxInternal'
+	.align	2
+	
+	.global	IpduM_MainFunctionTxInternal
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   208  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   209  #if((IPDUM_TXCONFTIMEOUTCNTOFVTXLOINFO == STD_ON) || (IPDUM_TXCONTAINEDPDU == STD_ON))
+; ..\BSW364\IpduM\Implementation\IpduM.c	   210  /*******************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	   211  *  IpduM_MainFunctionTxInternal()
+; ..\BSW364\IpduM\Implementation\IpduM.c	   212  *******************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	   213  /*! \brief        Performs actions not directly initiated by calls from the PduR.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   214   *  \details      -
+; ..\BSW364\IpduM\Implementation\IpduM.c	   215   *  \pre          -
+; ..\BSW364\IpduM\Implementation\IpduM.c	   216   *  \context      TASK
+; ..\BSW364\IpduM\Implementation\IpduM.c	   217   *  \reentrant    TRUE
+; ..\BSW364\IpduM\Implementation\IpduM.c	   218   *  \synchronous  TRUE
+; ..\BSW364\IpduM\Implementation\IpduM.c	   219  *******************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	   220  /*!
+; ..\BSW364\IpduM\Implementation\IpduM.c	   221   * Internal comment removed.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   222   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   223   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   224   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   225   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   226   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   227   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   228   */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   229  /* PRQA S 6010, 6030 */ /* MD_MSR_STPTH, MD_MSR_STCYC */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   230  FUNC(void, IPDUM_CODE) IpduM_MainFunctionTxInternal(IpduM_MainFunctionTxIndirectionIterType mainFunctionTxIndirectionIdx)
+; Function IpduM_MainFunctionTxInternal
+IpduM_MainFunctionTxInternal:	.type	func
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   231  {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   232    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   233  # if(IPDUM_TXCONFTIMEOUTCNTOFVTXLOINFO == STD_ON)       /* COV_IPDUM_VAR_DEPENDENT_SWITCH */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   234      IpduM_TxLoInfoIndStartIdxOfMainFunctionTxIndirectionType txLoInfoIndIdx = IpduM_GetTxLoInfoIndStartIdxOfMainFunctionTxIndirection(mainFunctionTxIndirectionIdx);
+	lea	a15,IpduM_MainFunctionTxIndirection
+	addsc.a	a15,a15,d4,#0
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   235      IpduM_TxLoInfoIndEndIdxOfMainFunctionTxIndirectionType txLoInfoIndEndIdx = IpduM_GetTxLoInfoIndEndIdxOfMainFunctionTxIndirection(mainFunctionTxIndirectionIdx);
+	add	d4,#1
+	ld.bu	d8,[a15]
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   236  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   237      for(; txLoInfoIndIdx < txLoInfoIndEndIdx; txLoInfoIndIdx++)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   238      {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   239        IpduM_CTxLoInfoIdxOfTxLoInfoWithInvalidIndexesType txLoInfoWithInvalidIndexesIdx = IpduM_GetTxLoInfoInd(txLoInfoIndIdx);
+; ..\BSW364\IpduM\Implementation\IpduM.c	   240  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   241  #  if (IPDUM_TXCONFIRMATIONOFTXCONTAINEDPDU == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   242        if((IpduM_GetTxConfTimeoutCntOfVTxLoInfoOfTxLoInfoWithInvalidIndexes(txLoInfoWithInvalidIndexesIdx) == 1u) && IpduM_IsTxContainerPduUsedOfCTxLoInfoOfTxLoInfoWithInvalidIndexes(txLoInfoWithInvalidIndexesIdx))   /* COV_IPDUM_VAR_DEPENDENT_SWITCH */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   243        {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   244          /* it is a container PDU about to time-out */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   245          SchM_Enter_IpduM_IPDUM_EXCLUSIVE_AREA_0();
+; ..\BSW364\IpduM\Implementation\IpduM.c	   246          IpduM_ContainerTx_TxConfBuffer_Clear(IpduM_GetTxContainerPduIdxOfCTxLoInfoOfTxLoInfoWithInvalidIndexes(txLoInfoWithInvalidIndexesIdx));
+; ..\BSW364\IpduM\Implementation\IpduM.c	   247          SchM_Exit_IpduM_IPDUM_EXCLUSIVE_AREA_0();
+; ..\BSW364\IpduM\Implementation\IpduM.c	   248        }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   249  #  endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   250        SchM_Enter_IpduM_IPDUM_EXCLUSIVE_AREA_0();
+; ..\BSW364\IpduM\Implementation\IpduM.c	   251        if(0u != IpduM_GetTxConfTimeoutCntOfVTxLoInfoOfTxLoInfoWithInvalidIndexes(txLoInfoWithInvalidIndexesIdx)) /* COV_IPDUM_TXCONF_ALWAYS_ZERO */
+	extr.u	d9,d4,#0,#8
+	lea	a15,IpduM_VTxLoInfo
+	addsc.a	a15,a15,d8,#0
+	j	.L5
+.L6:
+	call	SuspendAllInterrupts
+	ld.bu	d15,[a15]
+	jeq	d15,#0,.L7
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   252        {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   253          IpduM_DecTxConfTimeoutCntOfVTxLoInfoOfTxLoInfoWithInvalidIndexes(txLoInfoWithInvalidIndexesIdx);        /* SBSW_IPDUM_CSL03 */
+	add	d15,#-1
+	st.b	[a15],d15
+.L7:
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   254        }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   255        SchM_Exit_IpduM_IPDUM_EXCLUSIVE_AREA_0();
+	call	ResumeAllInterrupts
+	add	d8,#1
+	add.a	a15,#1
+	extr.u	d8,d8,#0,#8
+.L5:
+	jlt.u	d8,d9,.L6
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   256      }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   257  # endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   258  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   259  # if (IPDUM_TXCONTAINEDPDU == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   260      IpduM_ContainerTx_MainFunction(mainFunctionTxIndirectionIdx);
+; ..\BSW364\IpduM\Implementation\IpduM.c	   261  # endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   262    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   263  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   264    IPDUM_DUMMY_STATEMENT(mainFunctionTxIndirectionIdx);  /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   265  }
+	ret
+	
+__IpduM_MainFunctionTxInternal_function_end:
+	.size	IpduM_MainFunctionTxInternal,__IpduM_MainFunctionTxInternal_function_end-IpduM_MainFunctionTxInternal
+	; End of function
+	
+	.sdecl	'.text.IpduM.IpduM_Transmit',code
+	.sect	'.text.IpduM.IpduM_Transmit'
+	.align	2
+	
+	.global	IpduM_Transmit
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   266  #endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   267  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   268  #if (IPDUM_CCONTAINERRXQUEUEINFO == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   269  /*******************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	   270  *  IpduM_MainFunctionRxInternal()
+; ..\BSW364\IpduM\Implementation\IpduM.c	   271  *******************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	   272  /*! \brief        Performs actions not directly initiated by calls from the PduR.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   273   *  \details      -
+; ..\BSW364\IpduM\Implementation\IpduM.c	   274   *  \pre          -
+; ..\BSW364\IpduM\Implementation\IpduM.c	   275   *  \context      TASK
+; ..\BSW364\IpduM\Implementation\IpduM.c	   276   *  \reentrant    TRUE
+; ..\BSW364\IpduM\Implementation\IpduM.c	   277   *  \synchronous  TRUE
+; ..\BSW364\IpduM\Implementation\IpduM.c	   278  *******************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	   279  /*!
+; ..\BSW364\IpduM\Implementation\IpduM.c	   280   * Internal comment removed.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   281   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   282   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   283   */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   284  FUNC(void, IPDUM_CODE) IpduM_MainFunctionRxInternal(IpduM_MainFunctionRxIndirectionIterType mainFunctionRxIndirectionIdx)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   285  {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   286    IpduM_ContainerRx_MainFunction(mainFunctionRxIndirectionIdx);
+; ..\BSW364\IpduM\Implementation\IpduM.c	   287  }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   288  #endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   289  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   290  /*******************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	   291   *  IpduM_Transmit()
+; ..\BSW364\IpduM\Implementation\IpduM.c	   292  *******************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	   293  /*!
+; ..\BSW364\IpduM\Implementation\IpduM.c	   294   * Internal comment removed.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   295   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   296   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   297   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   298   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   299   */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   300  FUNC(Std_ReturnType, IPDUM_CODE) IpduM_Transmit(PduIdType PdumTxPduId, P2CONST(PduInfoType, AUTOMATIC, IPDUM_APPL_DATA) PduInfoPtr)
+; Function IpduM_Transmit
+IpduM_Transmit:	.type	func
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   301  {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   302    Std_ReturnType retVal = E_NOT_OK;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   303    uint8 errorId = IPDUM_E_NO_ERROR;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   304  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   305  #if (IPDUM_TXUPINFO == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   306  # if (IPDUM_DEV_ERROR_DETECT == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   307    if(!IpduM_IsInitialized())
+	mov	d8,#1
+	ld.bu	d0,IpduM_Initialized
+	mov	d15,#0
+	jne	d0,#0,.L8
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   308    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   309      errorId = IPDUM_E_UNINIT;
+	mov	d15,#32
+	j	.L9
+.L8:
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   310    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   311    else if((PdumTxPduId >= IpduM_GetSizeOfTxUpInfo())
+	jlt.u	d4,#4,.L10
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   312  #  if (IPDUM_INVALIDHNDOFTXUPINFO == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   313            || (IpduM_IsInvalidHndOfTxUpInfo(PdumTxPduId))
+; ..\BSW364\IpduM\Implementation\IpduM.c	   314  #  endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   315      )
+; ..\BSW364\IpduM\Implementation\IpduM.c	   316    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   317      errorId = IPDUM_E_PARAM;
+	mov	d15,#16
+	j	.L11
+.L10:
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   318    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   319    else if((PduInfoPtr == NULL_PTR) || (PduInfoPtr->SduDataPtr == NULL_PTR))
+	jz.a	a4,.L12
+	ld.w	d0,[a4]
+	jne	d0,#0,.L13
+.L12:
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   320    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   321      errorId = IPDUM_E_PARAM_POINTER;
+	mov	d15,#17
+	j	.L14
+.L13:
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   322    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   323    else
+; ..\BSW364\IpduM\Implementation\IpduM.c	   324  # endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   325    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   326      IpduM_TxUpIndIdxOfTxUpInfoType txUpIndIdx = IpduM_GetTxUpIndIdxOfTxUpInfo(PdumTxPduId);
+; ..\BSW364\IpduM\Implementation\IpduM.c	   327      switch (IpduM_GetTxUpIndOfTxUpInfo(PdumTxPduId))
+	lea	a15,IpduM_TxUpInfo
+	addsc.a	a15,a15,d4,#0
+	ld.bu	d0,[a15]
+	jne	d0,#0,.L15
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   328      {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   329  # if (IPDUM_EXISTS_MUX_PATHWAYTYPEOFTXUPINFO == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   330        case IPDUM_TXPART_TXUPINDOFTXUPINFO:
+; ..\BSW364\IpduM\Implementation\IpduM.c	   331        {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   332          retVal = IpduM_MuxTx_Transmit(txUpIndIdx, PduInfoPtr);  /* SBSW_IPDUM_FUNCTIONCALL_PDUINFOPTR_CHECKED_BY_CALLER */
+	call	IpduM_MuxTx_Transmit
+	mov	d8,d2
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   333          break;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   334        }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   335  # endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   336  # if (IPDUM_EXISTS_CONTAINER_PATHWAYTYPEOFTXUPINFO == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   337        case IPDUM_TXCONTAINEDPDU_TXUPINDOFTXUPINFO:
+; ..\BSW364\IpduM\Implementation\IpduM.c	   338        {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   339          retVal = IpduM_ContainerTx_Transmit(txUpIndIdx, PduInfoPtr);    /* SBSW_IPDUM_FUNCTIONCALL_PDUINFOPTR_CHECKED_BY_CALLER */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   340          break;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   341        }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   342  # endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   343        default: /* COV_IPDUM_MISRA */
+.L15:
+.L14:
+.L11:
+.L9:
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   344        {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   345          break;  /* PRQA S 2880 */ /* MD_IpduM_2880 */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   346        }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   347      }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   348    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   349  # if (IPDUM_DEV_ERROR_REPORT == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   350    if(errorId != IPDUM_E_NO_ERROR)
+	jeq	d15,#0,.L16
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   351    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   352      IpduM_Det_ReportError(IPDUM_APIID_TRANSMIT, (errorId));
+	mov	d4,#52
+	mov	d5,#0
+	mov	d6,#73
+	mov	d7,d15
+	call	Det_ReportError
+.L16:
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   353    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   354  # endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   355  #endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   356  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   357    IPDUM_DUMMY_STATEMENT(errorId);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   358    IPDUM_DUMMY_STATEMENT(PdumTxPduId);   /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   359    IPDUM_DUMMY_STATEMENT(PduInfoPtr);    /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   360  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   361    return retVal;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   362  }
+	mov	d2,d8
+	ret
+	
+__IpduM_Transmit_function_end:
+	.size	IpduM_Transmit,__IpduM_Transmit_function_end-IpduM_Transmit
+	; End of function
+	
+	.sdecl	'.text.IpduM.IpduM_TxConfirmation',code
+	.sect	'.text.IpduM.IpduM_TxConfirmation'
+	.align	2
+	
+	.global	IpduM_TxConfirmation
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   363  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   364  #if (IPDUM_TRIGGER_TRANSMIT_API == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   365  /*******************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	   366   *  IpduM_TriggerTransmit()
+; ..\BSW364\IpduM\Implementation\IpduM.c	   367  *******************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	   368  /*!
+; ..\BSW364\IpduM\Implementation\IpduM.c	   369   * Internal comment removed.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   370   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   371   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   372   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   373   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   374   */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   375  FUNC(Std_ReturnType, IPDUM_CODE) IpduM_TriggerTransmit(PduIdType TxPduId, P2VAR(PduInfoType, AUTOMATIC, IPDUM_APPL_DATA) PduInfoPtr)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   376  {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   377    Std_ReturnType retVal = E_NOT_OK;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   378    uint8 errorId = IPDUM_E_NO_ERROR;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   379  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   380  # if (IPDUM_TXLOINFOWITHINVALIDINDEXES == STD_ON)       /* COV_IPDUM_VAR_DEPENDENT_SWITCH */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   381  #  if (IPDUM_DEV_ERROR_DETECT == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   382    if(!IpduM_IsInitialized())
+; ..\BSW364\IpduM\Implementation\IpduM.c	   383    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   384      errorId = IPDUM_E_UNINIT;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   385    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   386    else if((TxPduId >= IpduM_GetSizeOfTxLoInfoWithInvalidIndexes())
+; ..\BSW364\IpduM\Implementation\IpduM.c	   387  #   if (IPDUM_INVALIDHNDOFTXLOINFOWITHINVALIDINDEXES == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   388            || (IpduM_IsInvalidHndOfTxLoInfoWithInvalidIndexes(TxPduId))
+; ..\BSW364\IpduM\Implementation\IpduM.c	   389  #   endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   390      )
+; ..\BSW364\IpduM\Implementation\IpduM.c	   391    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   392      errorId = IPDUM_E_PARAM;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   393    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   394    else if((PduInfoPtr == NULL_PTR) || (PduInfoPtr->SduDataPtr == NULL_PTR))
+; ..\BSW364\IpduM\Implementation\IpduM.c	   395    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   396      errorId = IPDUM_E_PARAM_POINTER;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   397    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   398    else
+; ..\BSW364\IpduM\Implementation\IpduM.c	   399  #  endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   400    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   401  #  if (IPDUM_EXISTS_MUX_PATHWAYTYPEOFCTXLOINFO == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   402      if(IpduM_IsTxPathwayUsedOfCTxLoInfoOfTxLoInfoWithInvalidIndexes(TxPduId))   /* COV_IPDUM_VAR_DEPENDENT_SWITCH */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   403      {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   404        retVal = IpduM_MuxTx_TriggerTransmit(IpduM_GetTxPathwayIdxOfCTxLoInfoOfTxLoInfoWithInvalidIndexes(TxPduId), PduInfoPtr);  /* SBSW_IPDUM_FUNCTIONCALL_PDUINFOPTR_CHECKED_BY_CALLER */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   405      }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   406  #  endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   407  #  if (IPDUM_EXISTS_CONTAINER_PATHWAYTYPEOFCTXLOINFO == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   408      if(IpduM_IsTxContainerPduUsedOfCTxLoInfoOfTxLoInfoWithInvalidIndexes(TxPduId))      /* COV_IPDUM_VAR_DEPENDENT_SWITCH */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   409      {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   410        retVal = IpduM_ContainerTx_TriggerTransmit(IpduM_GetTxContainerPduIdxOfCTxLoInfoOfTxLoInfoWithInvalidIndexes(TxPduId), PduInfoPtr);       /* SBSW_IPDUM_FUNCTIONCALL_PDUINFOPTR_CHECKED_BY_CALLER */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   411      }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   412  #  endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   413    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   414  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   415  #  if (IPDUM_DEV_ERROR_REPORT == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   416    if(errorId != IPDUM_E_NO_ERROR)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   417    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   418      IpduM_Det_ReportError(IPDUM_APIID_TRIGGERTRANSMIT, (errorId));
+; ..\BSW364\IpduM\Implementation\IpduM.c	   419    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   420  #  endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   421  # endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   422  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   423    IPDUM_DUMMY_STATEMENT(errorId);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   424    IPDUM_DUMMY_STATEMENT(TxPduId);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   425    IPDUM_DUMMY_STATEMENT(PduInfoPtr);    /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   426    return retVal;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   427  }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   428  #endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   429  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   430  #if(IPDUM_TX_CONFIRMATION_API == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   431  /*******************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	   432   *  IpduM_TxConfirmation()
+; ..\BSW364\IpduM\Implementation\IpduM.c	   433  *******************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	   434  /*!
+; ..\BSW364\IpduM\Implementation\IpduM.c	   435   * Internal comment removed.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   436   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   437   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   438   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   439   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   440   */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   441  FUNC(void, IPDUM_CODE) IpduM_TxConfirmation(PduIdType TxPduId)
+; Function IpduM_TxConfirmation
+IpduM_TxConfirmation:	.type	func
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   442  {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   443    uint8 errorId = IPDUM_E_NO_ERROR;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   444  # if (IPDUM_TXLOINFOWITHINVALIDINDEXES == STD_ON)       /* COV_IPDUM_VAR_DEPENDENT_SWITCH */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   445  #  if (IPDUM_DEV_ERROR_DETECT == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   446    if(!IpduM_IsInitialized())
+	mov	d7,#0
+	ld.bu	d15,IpduM_Initialized
+	jne	d15,#0,.L18
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   447    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   448      errorId = IPDUM_E_UNINIT;
+	mov	d7,#32
+	j	.L19
+.L18:
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   449    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   450    else if(TxPduId >= IpduM_GetSizeOfTxLoInfoWithInvalidIndexes())
+; ..\BSW364\IpduM\Implementation\IpduM.c	   451    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   452      errorId = IPDUM_E_PARAM;
+	seln	d7,d4,d7,#16
+.L19:
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   453    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   454  #   if (IPDUM_INVALIDHNDOFTXLOINFOWITHINVALIDINDEXES == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   455    else if(IpduM_IsInvalidHndOfTxLoInfoWithInvalidIndexes(TxPduId))
+; ..\BSW364\IpduM\Implementation\IpduM.c	   456    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   457      errorId = IPDUM_E_PARAM;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   458    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   459  #   endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   460    else
+; ..\BSW364\IpduM\Implementation\IpduM.c	   461  #  endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   462    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   463  #  if ((IPDUM_TXCONFIRMATIONTIMEOUTOFTXPATHWAY == STD_ON) || (IPDUM_TXCONFIRMATIONOFTXPART == STD_ON))
+; ..\BSW364\IpduM\Implementation\IpduM.c	   464      if(IpduM_IsTxPathwayUsedOfCTxLoInfoOfTxLoInfoWithInvalidIndexes(TxPduId))   /* COV_IPDUM_VAR_DEPENDENT_SWITCH */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   465      {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   466        IpduM_MuxTx_TxConfirmation(TxPduId);
+; ..\BSW364\IpduM\Implementation\IpduM.c	   467      }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   468  #  endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   469  #  if (IPDUM_EXISTS_CONTAINER_PATHWAYTYPEOFCTXLOINFO == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   470      if(IpduM_IsTxContainerPduUsedOfCTxLoInfoOfTxLoInfoWithInvalidIndexes(TxPduId))      /* COV_IPDUM_VAR_DEPENDENT_SWITCH */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   471      {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   472        IpduM_ContainerTx_TxConf_TxConfirmation(TxPduId);
+; ..\BSW364\IpduM\Implementation\IpduM.c	   473      }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   474  #  endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   475    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   476  #  if (IPDUM_DEV_ERROR_REPORT == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   477    if(errorId != IPDUM_E_NO_ERROR)
+	jeq	d7,#0,.L21
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   478    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   479      IpduM_Det_ReportError(IPDUM_APIID_TXCONFIRMATION, (errorId));
+	mov	d4,#52
+	mov	d5,#0
+	mov	d6,#64
+	j	Det_ReportError
+.L21:
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   480    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   481  #  endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   482  # endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   483    IPDUM_DUMMY_STATEMENT(errorId);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   484    IPDUM_DUMMY_STATEMENT(TxPduId);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   485  }
+	ret
+	
+__IpduM_TxConfirmation_function_end:
+	.size	IpduM_TxConfirmation,__IpduM_TxConfirmation_function_end-IpduM_TxConfirmation
+	; End of function
+	
+	.sdecl	'.text.IpduM.IpduM_RxIndication',code
+	.sect	'.text.IpduM.IpduM_RxIndication'
+	.align	2
+	
+	.global	IpduM_RxIndication
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   486  #endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   487  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   488  /*******************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	   489   *  IpduM_RxIndication()
+; ..\BSW364\IpduM\Implementation\IpduM.c	   490  *******************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	   491  /*!
+; ..\BSW364\IpduM\Implementation\IpduM.c	   492   * Internal comment removed.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   493   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   494   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   495   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   496   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   497   */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   498  FUNC(void, IPDUM_CODE) IpduM_RxIndication(PduIdType RxPduId, P2CONST(PduInfoType, AUTOMATIC, IPDUM_APPL_DATA) PduInfoPtr)
+; Function IpduM_RxIndication
+IpduM_RxIndication:	.type	func
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   499  {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   500    uint8 errorId = IPDUM_E_NO_ERROR;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   501  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   502  #if (IPDUM_RXINFO == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   503  # if (IPDUM_DEV_ERROR_DETECT == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   504    if(!IpduM_IsInitialized())
+; ..\BSW364\IpduM\Implementation\IpduM.c	   505    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   506      errorId = IPDUM_E_UNINIT;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   507    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   508    else if((RxPduId >= IpduM_GetSizeOfRxInfo())
+; ..\BSW364\IpduM\Implementation\IpduM.c	   509  #  if (IPDUM_INVALIDHNDOFRXINFO == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   510            || (IpduM_IsInvalidHndOfRxInfo(RxPduId))
+; ..\BSW364\IpduM\Implementation\IpduM.c	   511  #  endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   512      )
+; ..\BSW364\IpduM\Implementation\IpduM.c	   513    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   514      errorId = IPDUM_E_PARAM;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   515    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   516    else if((PduInfoPtr == NULL_PTR) || (PduInfoPtr->SduDataPtr == NULL_PTR))
+; ..\BSW364\IpduM\Implementation\IpduM.c	   517    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   518      errorId = IPDUM_E_PARAM_POINTER;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   519    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   520    else
+; ..\BSW364\IpduM\Implementation\IpduM.c	   521  # endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   522    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   523      IpduM_RxPathwayIndIdxOfRxInfoType rxPathwayIndIdx = IpduM_GetRxPathwayIndIdxOfRxInfo(RxPduId);
+; ..\BSW364\IpduM\Implementation\IpduM.c	   524      switch (IpduM_GetRxPathwayIndOfRxInfo(RxPduId))
+; ..\BSW364\IpduM\Implementation\IpduM.c	   525      {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   526  # if (IPDUM_EXISTS_MUX_PATHWAYTYPEOFRXINFO == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   527        case IPDUM_RXMUXPDU_RXPATHWAYINDOFRXINFO:
+; ..\BSW364\IpduM\Implementation\IpduM.c	   528        {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   529          IpduM_MuxRx_RxIndication(rxPathwayIndIdx, PduInfoPtr);  /* SBSW_IPDUM_FUNCTIONCALL_PDUINFOPTR_CHECKED_BY_CALLER */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   530          break;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   531        }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   532  # endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   533  # if (IPDUM_EXISTS_CONTAINER_PATHWAYTYPEOFRXINFO == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   534        case IPDUM_RXCONTAINERPDU_RXPATHWAYINDOFRXINFO:
+; ..\BSW364\IpduM\Implementation\IpduM.c	   535        {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   536          IpduM_ContainerRx_RxIndication(rxPathwayIndIdx, PduInfoPtr);    /* SBSW_IPDUM_FUNCTIONCALL_PDUINFOPTR_CHECKED_BY_CALLER */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   537          break;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   538        }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   539  # endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   540        default: /* COV_IPDUM_MISRA */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   541        {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   542          break;  /* PRQA S 2880 */ /* MD_IpduM_2880 */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   543        }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   544      }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   545    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   546  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   547  # if (IPDUM_DEV_ERROR_REPORT == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   548    if(errorId != IPDUM_E_NO_ERROR)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   549    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   550      IpduM_Det_ReportError(IPDUM_APIID_RXINDICATION, (errorId));
+; ..\BSW364\IpduM\Implementation\IpduM.c	   551    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   552  # endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   553  #endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   554  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   555    IPDUM_DUMMY_STATEMENT(errorId);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   556    IPDUM_DUMMY_STATEMENT(RxPduId);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   557    IPDUM_DUMMY_STATEMENT(PduInfoPtr);    /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   558  }
+	ret
+	
+__IpduM_RxIndication_function_end:
+	.size	IpduM_RxIndication,__IpduM_RxIndication_function_end-IpduM_RxIndication
+	; End of function
+	
+	.calls	'IpduM_Init','IpduM_Mux_Init'
+	.calls	'IpduM_Init','Det_ReportError'
+	.calls	'IpduM_MainFunctionTxInternal','SuspendAllInterrupts'
+	.calls	'IpduM_MainFunctionTxInternal','ResumeAllInterrupts'
+	.calls	'IpduM_Transmit','IpduM_MuxTx_Transmit'
+	.calls	'IpduM_Transmit','Det_ReportError'
+	.calls	'IpduM_TxConfirmation','Det_ReportError'
+	.calls	'IpduM_Init','',0
+	.calls	'IpduM_InitMemory','',0
+	.calls	'IpduM_MainFunctionTxInternal','',0
+	.calls	'IpduM_Transmit','',0
+	.calls	'IpduM_TxConfirmation','',0
+	.extern	IpduM_MainFunctionTxIndirection
+	.extern	IpduM_TxUpInfo
+	.extern	IpduM_Initialized
+	.extern	IpduM_VTxLoInfo
+	.extern	IpduM_Mux_Init
+	.extern	IpduM_MuxTx_Transmit
+	.extern	SuspendAllInterrupts
+	.extern	ResumeAllInterrupts
+	.extern	Det_ReportError
+	.calls	'IpduM_RxIndication','',0
+
+; ..\BSW364\IpduM\Implementation\IpduM.c	   559  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   560  #if (IPDUM_VERSION_INFO_API == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   561  /*******************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	   562   *  IpduM_GetVersionInfo()
+; ..\BSW364\IpduM\Implementation\IpduM.c	   563  *******************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	   564  /*!
+; ..\BSW364\IpduM\Implementation\IpduM.c	   565   * Internal comment removed.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   566   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   567   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   568   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   569   *
+; ..\BSW364\IpduM\Implementation\IpduM.c	   570   */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   571  FUNC(void, IPDUM_CODE) IpduM_GetVersionInfo(P2VAR(Std_VersionInfoType, AUTOMATIC, IPDUM_APPL_DATA) versioninfo)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   572  {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   573    uint8 errorId = IPDUM_E_NO_ERROR;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   574  # if (IPDUM_DEV_ERROR_DETECT == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   575    if(versioninfo == NULL_PTR)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   576    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   577      errorId = IPDUM_E_PARAM_POINTER;
+; ..\BSW364\IpduM\Implementation\IpduM.c	   578    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   579    else
+; ..\BSW364\IpduM\Implementation\IpduM.c	   580  # endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   581    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   582      /* Set version info / fill struct */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   583      versioninfo->vendorID = (uint16) IPDUM_VENDOR_ID;   /* SBSW_IPDUM_GETVERSION_PARAM */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   584      versioninfo->moduleID = (uint8) IPDUM_MODULE_ID;    /* SBSW_IPDUM_GETVERSION_PARAM */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   585      versioninfo->sw_major_version = (uint8) IPDUM_SW_MAJOR_VERSION;     /* SBSW_IPDUM_GETVERSION_PARAM */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   586      versioninfo->sw_minor_version = (uint8) IPDUM_SW_MINOR_VERSION;     /* SBSW_IPDUM_GETVERSION_PARAM */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   587      versioninfo->sw_patch_version = (uint8) IPDUM_SW_PATCH_VERSION;     /* SBSW_IPDUM_GETVERSION_PARAM */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   588    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   589  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   590  # if (IPDUM_DEV_ERROR_REPORT == STD_ON)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   591    if(errorId != IPDUM_E_NO_ERROR)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   592    {
+; ..\BSW364\IpduM\Implementation\IpduM.c	   593      IpduM_Det_ReportError(IPDUM_APIID_VERSIONINFO, (errorId));
+; ..\BSW364\IpduM\Implementation\IpduM.c	   594    }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   595  # endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   596    IPDUM_DUMMY_STATEMENT(errorId);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   597  }
+; ..\BSW364\IpduM\Implementation\IpduM.c	   598  #endif
+; ..\BSW364\IpduM\Implementation\IpduM.c	   599  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   600  #define IPDUM_STOP_SEC_CODE
+; ..\BSW364\IpduM\Implementation\IpduM.c	   601  #include "IpduM_MemMap.h"    /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   602  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   603  /**********************************************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	   604   * GLOBAL MISRA / PCLINT JUSTIFICATION
+; ..\BSW364\IpduM\Implementation\IpduM.c	   605   *********************************************************************************************************************/
+; ..\BSW364\IpduM\Implementation\IpduM.c	   606  /* *INDENT-OFF* */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   607  /* module specific MISRA deviations:
+; ..\BSW364\IpduM\Implementation\IpduM.c	   608     MD_IpduM_2880: Misra Rule 2.1
+; ..\BSW364\IpduM\Implementation\IpduM.c	   609       Reason:      Default statement needed because of Misra, but the default statement is never reached.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   610       Risk:        No risk.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   611       Prevention:  No prevention necessary.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   612  */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   613  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   614  /* SBSW_JUSTIFICATION_BEGIN
+; ..\BSW364\IpduM\Implementation\IpduM.c	   615    \ID SBSW_IPDUM_FUNCTIONCALL_PDUINFOPTR_CHECKED_BY_CALLER
+; ..\BSW364\IpduM\Implementation\IpduM.c	   616      \DESCRIPTION Function is called with an ID and a pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   617      \COUNTERMEASURE \N Both the ID and the pointer are checked by the caller of this function.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   618  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   619    \ID SBSW_IPDUM_FUNCTIONCALL_PTR_LENGTH_CHECKED_BY_CALLER
+; ..\BSW364\IpduM\Implementation\IpduM.c	   620      \DESCRIPTION Function is called with an ID and a pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   621      \COUNTERMEASURE \N Both the ID and the pointer are checked by the caller of this function.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   622  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   623    \ID SBSW_IPDUM_FUNCTIONCALL_PDUINFOPTR_SELF_CONSTRUCTED
+; ..\BSW364\IpduM\Implementation\IpduM.c	   624      \DESCRIPTION Function is called with an ID and a pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   625      \COUNTERMEASURE \N The pointer is constructed in the calling function and always valid.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   626                         The ID is checked by the caller of this function.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   627  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   628    \ID SBSW_IPDUM_FUNCTIONCALL_PDUINFOPTR_EMPTY
+; ..\BSW364\IpduM\Implementation\IpduM.c	   629      \DESCRIPTION Function is called with an ID and a pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   630      \COUNTERMEASURE \N The pointer is always valid and because of zero length will never be actually read.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   631                         The ID is checked by the caller of this function.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   632  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   633    \ID SBSW_IPDUM_FUNCTIONCALL_OUT_PTR
+; ..\BSW364\IpduM\Implementation\IpduM.c	   634      \DESCRIPTION Function is called with a pointer as an out parameter.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   635      \COUNTERMEASURE \N The pointer is a local stack pointer, created within the callers context. It is always valid.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   636  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   637    \ID SBSW_IPDUM_PTR_WRITE_TYPED_CHECKED_BY_CALLER
+; ..\BSW364\IpduM\Implementation\IpduM.c	   638      \DESCRIPTION Pointer write access to a typed pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   639      \COUNTERMEASURE \N The pointer is checked by the caller to be always valid. The write access
+; ..\BSW364\IpduM\Implementation\IpduM.c	   640                         remains within the limits of the data type of the pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   641  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   642    \ID SBSW_IPDUM_VSTDLIB_SAFE
+; ..\BSW364\IpduM\Implementation\IpduM.c	   643      \DESCRIPTION       Pointer is passed as function argument.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   644      \COUNTERMEASURE \N The VStdLib_MemCpy_s guarantees that the destination pointer is not overwritten.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   645  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   646    \ID SBSW_IPDUM_MAINFUNCTIONRX_CALL_UNPACKRXCONTAINERPDU
+; ..\BSW364\IpduM\Implementation\IpduM.c	   647      \DESCRIPTION IpduM_ContainerRx_UnpackContainerPdu is called with an ID and a pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   648      \COUNTERMEASURE \N The ID is verified by ComStackLib, the pointer is calculated using generated
+; ..\BSW364\IpduM\Implementation\IpduM.c	   649                         ComStackLib structures and the ID.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   650  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   651    \ID SBSW_IPDUM_MAINFUNCTIONRX_CALL_DEQUEUE_CONTAINER
+; ..\BSW364\IpduM\Implementation\IpduM.c	   652      \DESCRIPTION IpduM_ContainerRx_Queue_Get is called with an ID and a pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   653      \COUNTERMEASURE \N The pointer is a stack variable and the other pointer is a static pointer to a CSL generated buffer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   654  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   655    \ID SBSW_IPDUM_FILLLASTISBEST_CALL_CONTAINERWRITEHEADER
+; ..\BSW364\IpduM\Implementation\IpduM.c	   656      \DESCRIPTION IpduM_ContainerTx_WriteHeader is called with two pointers, and two lengths. The header
+; ..\BSW364\IpduM\Implementation\IpduM.c	   657                   pointer is local/static and always correct and the headersize always matches.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   658      \COUNTERMEASURE \N The parameter lastIsBestBuffer is generated large enough to fit any configured PDU
+; ..\BSW364\IpduM\Implementation\IpduM.c	   659                         and the last parameter, freeBytes, is calculated using the size of the buffer passed
+; ..\BSW364\IpduM\Implementation\IpduM.c	   660                         to this function. The caller verifies the size matches.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   661  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   662    \ID SBSW_IPDUM_FILLLASTISBEST_MEMORY_WRITE
+; ..\BSW364\IpduM\Implementation\IpduM.c	   663      \DESCRIPTION An array is written using a calculated index.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   664      \COUNTERMEASURE \N The index is the iterator in a for-loop that always starts at or after the start
+; ..\BSW364\IpduM\Implementation\IpduM.c	   665                         position of the buffer and always ends at its end at the latest.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   666  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   667    \ID SBSW_IPDUM_CSL01
+; ..\BSW364\IpduM\Implementation\IpduM.c	   668      \DESCRIPTION Index Access is using ComStackLib, using boundary check with getSizeOf macro.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   669      \COUNTERMEASURE  \N Qualified use-case CSL01 of ComStackLib.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   670  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   671    \ID SBSW_IPDUM_CSL02
+; ..\BSW364\IpduM\Implementation\IpduM.c	   672      \DESCRIPTION  Access of Table1,  with the same index as Table2 using ComStackLib. (arrays of same size)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   673      \COUNTERMEASURE \N Qualified use-case CSL02 of ComStackLib
+; ..\BSW364\IpduM\Implementation\IpduM.c	   674  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   675    \ID SBSW_IPDUM_CSL02_OVER_CSL03
+; ..\BSW364\IpduM\Implementation\IpduM.c	   676      \DESCRIPTION  Access of Table1,  with the same index as Table2 using ComStackLib. (arrays of same size).
+; ..\BSW364\IpduM\Implementation\IpduM.c	   677                    Index derived through CSL03 indirections from external API.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   678      \COUNTERMEASURE \N Qualified use-case CSL02 and CSL03 of ComStackLib
+; ..\BSW364\IpduM\Implementation\IpduM.c	   679  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   680    \ID SBSW_IPDUM_CSL03
+; ..\BSW364\IpduM\Implementation\IpduM.c	   681      \DESCRIPTION Access to Table1 via indirection over Table2. (modelled indirections)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   682      \COUNTERMEASURE \N Qualified use-case CSL03 of ComStackLib
+; ..\BSW364\IpduM\Implementation\IpduM.c	   683  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   684    \ID SBSW_IPDUM_CSL04
+; ..\BSW364\IpduM\Implementation\IpduM.c	   685      \DESCRIPTION Access to Table1 via indirection over Table2. (modelled indirections)
+; ..\BSW364\IpduM\Implementation\IpduM.c	   686                   Indirection has multiple targets, generated ENUM values are used to select targets.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   687      \COUNTERMEASURE \N Qualified use-case CSL04 of ComStackLib
+; ..\BSW364\IpduM\Implementation\IpduM.c	   688  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   689    \ID SBSW_IPDUM_CSL_VAR_ACCESS
+; ..\BSW364\IpduM\Implementation\IpduM.c	   690      \DESCRIPTION A ComStackLib generated variable is accessed.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   691      \COUNTERMEASURE \N The variable is written using a generated macro of the CSL. It immediately dereferences the variables address without pointer arithmetic.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   692  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   693    \ID SBSW_IPDUM_GETVERSION_PARAM
+; ..\BSW364\IpduM\Implementation\IpduM.c	   694      \DESCRIPTION    The IpduM_GetVersionInfo writes to the 'versioninfo' pointer parameter. It is checked against NULL,
+; ..\BSW364\IpduM\Implementation\IpduM.c	   695                      but this does not guarantee that the referenced memory is valid.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   696      \COUNTERMEASURE \N  Pointers passed to public IpduM APIs point to a valid memory range. A general countermeasure is included in the safety manual.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   697  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   698    \ID SBSW_IPDUM_DIRECT_ACCESS_FROM_EXTERNAL_PARAMETER
+; ..\BSW364\IpduM\Implementation\IpduM.c	   699      \DESCRIPTION Structure is accessed using an index.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   700      \COUNTERMEASURE \N Index is an external parameter. The caller verifies the external parameter.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   701                         This caller can either be an external module or another IpduM function.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   702  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   703    \ID SBSW_IPDUM_INDIRECT_ACCESS_FROM_EXTERNAL_PARAMETER
+; ..\BSW364\IpduM\Implementation\IpduM.c	   704      \DESCRIPTION Structure is accessed using an index.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   705      \COUNTERMEASURE \N Index is derived through ComStackLib indirections from an external parameter. The original caller
+; ..\BSW364\IpduM\Implementation\IpduM.c	   706                         verifies the external parameter. This original caller can either be an external module or another
+; ..\BSW364\IpduM\Implementation\IpduM.c	   707                         IpduM function.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   708                         Qualified use-case CSL03.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   709  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   710    \ID SBSW_IPDUM_COPYSEGMENTS
+; ..\BSW364\IpduM\Implementation\IpduM.c	   711      \DESCRIPTION The memory location is used for an array write access using the IDs.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   712      \COUNTERMEASURE \N The destPtr and srcPtr are not checked against NULL_PTR. The caller of this local function checks them.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   713                         The segmentStartIdx and segmentEndIdx are checked by the caller of this local function.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   714  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   715    \ID SBSW_IPDUM_JITTRIGGERTRANSMIT_CALL_COPYSEGMENTS
+; ..\BSW364\IpduM\Implementation\IpduM.c	   716      \DESCRIPTION IpduM_Mux_CopySegments is called with two indices and two pointers.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   717      \COUNTERMEASURE \N The indices and the first pointer are calculated using ComStackLib indirections
+; ..\BSW364\IpduM\Implementation\IpduM.c	   718                         based on the function parameters txPartId and txPathwayId. These parameters and
+; ..\BSW364\IpduM\Implementation\IpduM.c	   719                         the second pointer are checked by the caller of this local function.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   720  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   721    \ID SBSW_IPDUM_CALL_JITUPDATEPART
+; ..\BSW364\IpduM\Implementation\IpduM.c	   722      \DESCRIPTION IpduM_MuxTx_Jit_UpdatePart is called with two indices, a pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   723      \COUNTERMEASURE \N The pointer is created using ComStackLib indirections based on the parameter txPathwayId. The caller checks the parameter txPathwayHnd.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   724  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   725    \ID SBSW_IPDUM_MUXTRANSMIT_CALL_COPYSEGMENTS
+; ..\BSW364\IpduM\Implementation\IpduM.c	   726      \DESCRIPTION IpduM_Mux_CopySegments is called with two IDs and two pointers.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   727      \COUNTERMEASURE \N The IDs and the first pointer are generated structures using the ComStackLib based on
+; ..\BSW364\IpduM\Implementation\IpduM.c	   728                         the same objects, they always match. The PduInfoPtr is checked against NULL_PTR
+; ..\BSW364\IpduM\Implementation\IpduM.c	   729                         by the caller.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   730  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   731    \ID SBSW_IPDUM_MUXTRANSMIT_CALL_MUXFILLERSEGMENTS
+; ..\BSW364\IpduM\Implementation\IpduM.c	   732      \DESCRIPTION IpduM_Mux_CopySegments is called with three IDs and one pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   733      \COUNTERMEASURE \N The IDs and the pointer are generated structures using the ComStackLib based on
+; ..\BSW364\IpduM\Implementation\IpduM.c	   734                         the same objects, they always match.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   735  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   736    \ID SBSW_IPDUM_MUXTRANSMIT_CALL_PDURTRANSMIT
+; ..\BSW364\IpduM\Implementation\IpduM.c	   737      \DESCRIPTION PduR_IpduMTransmit is called with an ID and a pointer. The pointer is built using
+; ..\BSW364\IpduM\Implementation\IpduM.c	   738                   ComStackLib-generated data structures and is always valid.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   739      \COUNTERMEASURE \N The ID is a SNV provided by PduR. The PduR ensures that the SNV is valid.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   740  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   741    \ID SBSW_IPDUM_MUXTRIGGERTRANSMIT_MEMORY_WRITE
+; ..\BSW364\IpduM\Implementation\IpduM.c	   742      \DESCRIPTION An array is written using an index.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   743      \COUNTERMEASURE \N The pointer and index are validated by the caller and are always correct.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   744  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   745    \ID SBSW_IPDUM_MUXRXINDICATION_CALL_COPYSEGMENTS
+; ..\BSW364\IpduM\Implementation\IpduM.c	   746      \DESCRIPTION IpduM_Mux_CopySegments is called with two IDs and two pointers.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   747      \COUNTERMEASURE \N The IDs and the first pointer are generated structures using the ComStackLib based on
+; ..\BSW364\IpduM\Implementation\IpduM.c	   748                         the same objects, they always match. The PduInfoPtr is not checked against NULL_PTR
+; ..\BSW364\IpduM\Implementation\IpduM.c	   749                         and must be checked by the caller. The consistency of pduInfo pointer is ensured by this local function.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   750  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   751    \ID SBSW_IPDUM_MUXRXINDICATION_CALL_PDURRXINDICATION
+; ..\BSW364\IpduM\Implementation\IpduM.c	   752      \DESCRIPTION PduR_IpduMRxIndication is called with an ID and a pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   753      \COUNTERMEASURE \N The ID is a SNV provided by PduR. The PduR ensures that the SNV is valid.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   754                         The PduInfoPtr is built using ComStackLib-generated data structures and is
+; ..\BSW364\IpduM\Implementation\IpduM.c	   755                         always valid. The length however is taken from the parameter PduInfoPtr and
+; ..\BSW364\IpduM\Implementation\IpduM.c	   756                         is checked by the caller of this local function. The consistency of this pointer is ensured by this local function.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   757  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   758    \ID SBSW_IPDUM_ARRAY_WRITE_WITH_SIZE_VARIABLE_CHECKED_BY_CALLER
+; ..\BSW364\IpduM\Implementation\IpduM.c	   759      \DESCRIPTION Array is written with index access.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   760      \COUNTERMEASURE \R Additional variable passed along with the array is checked by caller to reflect the remaining
+; ..\BSW364\IpduM\Implementation\IpduM.c	   761                         space in the array. This variable is used for run-time checks.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   762  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   763    \ID SBSW_IPDUM_ADAPTMETADATA_ARRAY_WRITE_ACCESS
+; ..\BSW364\IpduM\Implementation\IpduM.c	   764      \DESCRIPTION Array is written with index access to fixed positions.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   765      \COUNTERMEASURE \N The fixed offsets are within the first header, which is always populated on
+; ..\BSW364\IpduM\Implementation\IpduM.c	   766                         transmission. Even if it wasn't, it is always within the according buffer,
+; ..\BSW364\IpduM\Implementation\IpduM.c	   767                         because a container PDU buffer smaller than one header is impossible. The
+; ..\BSW364\IpduM\Implementation\IpduM.c	   768                         caller must ensure a container buffer (rx or tx) is passed to the function.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   769  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   770    \ID SBSW_IPDUM_TRANSMITCURRCONTAINERPDU_CALL_CONTAINERWRITEHEADER
+; ..\BSW364\IpduM\Implementation\IpduM.c	   771      \DESCRIPTION IpduM_ContainerTx_WriteHeader is called with two pointers, and two lengths. The header
+; ..\BSW364\IpduM\Implementation\IpduM.c	   772                   pointer is local/static and always correct and the headersize always matches.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   773      \COUNTERMEASURE \N The parameters pContainerTxBuf and freeBytes are calculated using ComStackLib
+; ..\BSW364\IpduM\Implementation\IpduM.c	   774                         indirections based on the function parameter txContainerId. The parameters are
+; ..\BSW364\IpduM\Implementation\IpduM.c	   775                         checked prior to calling this local function.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   776  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   777    \ID SBSW_IPDUM_TRANSMITCURRCONTAINERPDU_CALL_CALCULATESIZEOFCONTAINER
+; ..\BSW364\IpduM\Implementation\IpduM.c	   778      \DESCRIPTION IpduM_CalculateSizeOfContainer is called with an ID and a pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   779      \COUNTERMEASURE \N The pointer is built using ComStackLib indirections based on the function parameter
+; ..\BSW364\IpduM\Implementation\IpduM.c	   780                         txContainerId, which also is the ID used here. This parameter is checked prior to
+; ..\BSW364\IpduM\Implementation\IpduM.c	   781                         calling this local function.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   782  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   783    \ID SBSW_IPDUM_TRANSMITCURRCONTAINERPDU_CALL_PDURTRANSMIT
+; ..\BSW364\IpduM\Implementation\IpduM.c	   784      \DESCRIPTION PduR_IpduMTransmit is called with an ID and a pointer. The pointer is built using
+; ..\BSW364\IpduM\Implementation\IpduM.c	   785                   ComStackLib-generated data structures based on the function parameter txContainerId.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   786                   This parameter is checked prior to calling this local function.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   787      \COUNTERMEASURE \N The ID is a SNV provided by PduR. The PduR ensures that the SNV is valid.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   788  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   789    \ID SBSW_IPDUM_GETTRANSMITTEDPDULENGTH
+; ..\BSW364\IpduM\Implementation\IpduM.c	   790      \DESCRIPTION IpduM_ContainerTx_GetTransmittedPduLength is called with an ID and a pointer. The pointer is built using
+; ..\BSW364\IpduM\Implementation\IpduM.c	   791                   ComStackLib-generated data structures based on the function parameter txContainerId.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   792      \COUNTERMEASURE \N The ID is a SNV provided by PduR. The PduR ensures that the SNV is valid.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   793  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   794    \ID SBSW_IPDUM_TRANSMIT_CURR_CONTAINER_PDU_MEMCPY
+; ..\BSW364\IpduM\Implementation\IpduM.c	   795      \DESCRIPTION MemCpy is called with two pointers and a length.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   796      \COUNTERMEASURE \N The first pointer is generated large enough for the largest possible number of items, ensured during
+; ..\BSW364\IpduM\Implementation\IpduM.c	   797                         generation. The second pointer and length always match as they are generated using the ComStackLib.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   798  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   799    \ID SBSW_IPDUM_TRANSMITQUEUEDCONTAINERPDU_CALL_CALCULATESIZEOFCONTAINER
+; ..\BSW364\IpduM\Implementation\IpduM.c	   800      \DESCRIPTION IpduM_CalculateSizeOfContainer is called with an ID and a pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   801      \COUNTERMEASURE \N The pointer is built using ComStackLib indirections based on the function parameter
+; ..\BSW364\IpduM\Implementation\IpduM.c	   802                         txContainerId, which also is the ID used here. This parameter is checked prior to
+; ..\BSW364\IpduM\Implementation\IpduM.c	   803                         calling this local function. The pointer offset
+; ..\BSW364\IpduM\Implementation\IpduM.c	   804                         is verified using CSL01 use case of ComStackLib.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   805  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   806    \ID SBSW_IPDUM_TRANSMITQUEUEDCONTAINERPDU_CALL_PDURTRANSMIT
+; ..\BSW364\IpduM\Implementation\IpduM.c	   807      \DESCRIPTION PduR_IpduMTransmit is called with an ID and a pointer. The pointer is built using
+; ..\BSW364\IpduM\Implementation\IpduM.c	   808                   ComStackLib-generated data structures based on the function parameter txContainerId.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   809                   This parameter is checked prior to calling this local function.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   810      \COUNTERMEASURE \N The ID is a SNV provided by PduR. The PduR ensures that the SNV is valid.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   811                         the pointer offset is verified using CSL01 use case of ComStackLib.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   812  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   813    \ID SBSW_IPDUM_ARRAY_WRITE_WITH_INDEX_CHECK
+; ..\BSW364\IpduM\Implementation\IpduM.c	   814      \DESCRIPTION Array is accessed with index access.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   815      \COUNTERMEASURE \R The index is checked with a runtime-check to be within the buffer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   816  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   817    \ID SBSW_IPDUM_CONTAINER_TRANSMIT_INDIRECT_ACCESS
+; ..\BSW364\IpduM\Implementation\IpduM.c	   818      \DESCRIPTION The parameter txContainedId is used as an ID to access generated structures.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   819      \COUNTERMEASURE \N The caller ensures the txContainedId parameter contains the correct value.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   820  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   821    \ID SBSW_IPDUM_CONTAINER_TRANSMIT_CALL_CALCULATESIZEOFCONTAINER
+; ..\BSW364\IpduM\Implementation\IpduM.c	   822      \DESCRIPTION IpduM_CalculateSizeOfContainer is called with an ID and a pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   823      \COUNTERMEASURE \N The pointer is built using ComStackLib indirections based on the function parameter
+; ..\BSW364\IpduM\Implementation\IpduM.c	   824                         txContainerId, which also is the ID used here. This parameter is checked prior to
+; ..\BSW364\IpduM\Implementation\IpduM.c	   825                         calling this local function. The pointer is only
+; ..\BSW364\IpduM\Implementation\IpduM.c	   826                         read by the called function, never written. There cannot be any out of bounds write access.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   827  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   828    \ID SBSW_IPDUM_CONTAINER_TRANSMIT_CALL_PDURTRANSMIT
+; ..\BSW364\IpduM\Implementation\IpduM.c	   829      \DESCRIPTION PduR_IpduMTransmit is called with an ID and a pointer. The pointer is built using
+; ..\BSW364\IpduM\Implementation\IpduM.c	   830                   ComStackLib-generated data structures based on the function parameter txContainerId.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   831                   This parameter is checked prior to calling this local function.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   832      \COUNTERMEASURE \N The ID is a SNV provided by PduR. The PduR ensures that the SNV is valid. The pointer is only
+; ..\BSW364\IpduM\Implementation\IpduM.c	   833                         read by the called function, never written. There cannot be any out of bounds write access.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   834  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   835    \ID SBSW_IPDUM_CONTAINER_TRANSMIT_INCREMENT_CALCULATED_POSITION
+; ..\BSW364\IpduM\Implementation\IpduM.c	   836      \DESCRIPTION A value in an array is incremented, the position in the array is calculated.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   837      \COUNTERMEASURE \N The position is calculated using the start position and an offset (currentInstance). The
+; ..\BSW364\IpduM\Implementation\IpduM.c	   838                         start position is retrieved using ComStackLib functions and a parameter (verified by caller),
+; ..\BSW364\IpduM\Implementation\IpduM.c	   839                         the offset is a write index within a cyclic buffer, the code parts setting this index were
+; ..\BSW364\IpduM\Implementation\IpduM.c	   840                         reviewed and tested, and the maximum value matches the array size, ensured during generation.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   841  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   842    \ID SBSW_IPDUM_CONTAINERTRIGGERTRANSMIT_PTR_WRITE
+; ..\BSW364\IpduM\Implementation\IpduM.c	   843      \DESCRIPTION Data is written to a pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   844      \COUNTERMEASURE \N The caller of this local function ensures this is a valid pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   845  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   846    \ID SBSW_IPDUM_DEQUEUE_CONTAINER_PTR_WRITE
+; ..\BSW364\IpduM\Implementation\IpduM.c	   847      \DESCRIPTION Data is written to a pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   848      \COUNTERMEASURE \N The caller of this local function ensures this is a valid pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   849  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   850    \ID SBSW_IPDUM_RETURN_VIA_PTR
+; ..\BSW364\IpduM\Implementation\IpduM.c	   851      \DESCRIPTION Data is written to a pointer which is provide by the caller.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   852      \COUNTERMEASURE \N The caller of this local function ensures this is a valid pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   853  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   854    \ID SBSW_IPDUM_QUEUECURRCONTAINERPDU_CALL_CONTAINERWRITEHEADER
+; ..\BSW364\IpduM\Implementation\IpduM.c	   855      \DESCRIPTION IpduM_ContainerTx_WriteHeader is called with two pointers, and two lengths. The header
+; ..\BSW364\IpduM\Implementation\IpduM.c	   856                   pointer is local/static and always correct and the headersize always matches.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   857      \COUNTERMEASURE \N The parameters pContainerTxBuf and freeBytes are calculated using ComStackLib
+; ..\BSW364\IpduM\Implementation\IpduM.c	   858                         indirections based on the function parameter txContainerId. The parameters are
+; ..\BSW364\IpduM\Implementation\IpduM.c	   859                         checked prior to calling this local function (IpduM_ContainerTx_DataQueue_QueueCurrContainerPdu).
+; ..\BSW364\IpduM\Implementation\IpduM.c	   860  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   861    \ID SBSW_IPDUM_ADDTXPDUTOCURRCONTAINER_CALL_CONTAINERWRITEHEADER
+; ..\BSW364\IpduM\Implementation\IpduM.c	   862      \DESCRIPTION IpduM_ContainerTx_WriteHeader is called with two pointers, and two lengths.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   863      \COUNTERMEASURE \N The parameters pContainerTxBuf, header and freeBytes are calculated using
+; ..\BSW364\IpduM\Implementation\IpduM.c	   864                         ComStackLib indirections based on the function parameter txContainedId. The
+; ..\BSW364\IpduM\Implementation\IpduM.c	   865                         parameter headerSize is calculated using the local function IpduM_ContainerTx_GetHeaderSize()
+; ..\BSW364\IpduM\Implementation\IpduM.c	   866                         using ComStackLib indirections based on the function parameter txContainedId. The
+; ..\BSW364\IpduM\Implementation\IpduM.c	   867                         calculated headerSize is one of two possible, pre-defined values and both are safe
+; ..\BSW364\IpduM\Implementation\IpduM.c	   868                         because of the freeBytes parameter verifying there is sufficient space. The input
+; ..\BSW364\IpduM\Implementation\IpduM.c	   869                         parameters are checked prior to calling this local function
+; ..\BSW364\IpduM\Implementation\IpduM.c	   870                         (IpduM_ContainerTx_DataQueue_AddTxPduToCurrContainer).
+; ..\BSW364\IpduM\Implementation\IpduM.c	   871  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   872    \ID SBSW_IPDUM_UNPACKRXCONTAINERPDU_CALL_PDURRXINDICATION
+; ..\BSW364\IpduM\Implementation\IpduM.c	   873      \DESCRIPTION PduR_IpduMRxIndication is called with an ID and a pointer. The pointer is given by
+; ..\BSW364\IpduM\Implementation\IpduM.c	   874                   the calling function that ensures it is correct.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   875      \COUNTERMEASURE \N The ID is a SNV provided by PduR. The PduR ensures that the SNV is valid.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   876  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   877    \ID SBSW_IPDUM_CONTAINERRXINDICATION_MEMORY_WRITE
+; ..\BSW364\IpduM\Implementation\IpduM.c	   878      \DESCRIPTION An array is written using a calculated index.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   879      \COUNTERMEASURE \N The index is the iterator in a for-loop that always starts at or after the start
+; ..\BSW364\IpduM\Implementation\IpduM.c	   880                         position of the buffer and always ends at its end at the latest.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   881  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   882    \ID SBSW_IPDUM_CONTAINERRXINDICATION_CALL_ENQUEUERXCONTAINER
+; ..\BSW364\IpduM\Implementation\IpduM.c	   883      \DESCRIPTION IpduM_ContainerRx_Queue_Put is called with an ID and a pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   884      \COUNTERMEASURE \N The ID is verified by the caller, the pointer is built using ComStackLib indirections
+; ..\BSW364\IpduM\Implementation\IpduM.c	   885                         and a passed pointer from the caller. The caller verifies the pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   886  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   887    \ID SBSW_IPDUM_CONTAINERRXINDICATION_CALL_UNPACKRXCONTAINERPDU
+; ..\BSW364\IpduM\Implementation\IpduM.c	   888      \DESCRIPTION IpduM_ContainerRx_UnpackContainerPdu is called with an ID and a pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   889      \COUNTERMEASURE \N The ID is verified by the caller, the pointer is built using ComStackLib indirections
+; ..\BSW364\IpduM\Implementation\IpduM.c	   890                         and a passed pointer from the caller. The caller verifies the pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   891  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   892     SBSW_JUSTIFICATION_END */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   893  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   894  /* VCA Justifications
+; ..\BSW364\IpduM\Implementation\IpduM.c	   895  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   896    \ID VCA_IPDUM_VSTDLIB_MEMCPY_SAFE
+; ..\BSW364\IpduM\Implementation\IpduM.c	   897      \DESCRIPTION       Pointer is passed as function argument.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   898      \COUNTERMEASURE \N The VStdLib_MemCpy_s guarantees that the destination pointer is not overwritten.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   899  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   900    \ID VCA_IPDUM_VSTDLIB_MEMCPY
+; ..\BSW364\IpduM\Implementation\IpduM.c	   901      \DESCRIPTION       MemCpy is called with two pointers and a length.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   902      \COUNTERMEASURE \N The first pointer is generated large enough for the largest possible number of items, ensured during
+; ..\BSW364\IpduM\Implementation\IpduM.c	   903                         generation. The second pointer and length always match as they are generated using the ComStackLib.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   904  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   905    \ID VCA_IPDUM_FUNCTIONCALL_PDUINFOPTR_CHECKED_BY_CALLER
+; ..\BSW364\IpduM\Implementation\IpduM.c	   906      \DESCRIPTION       Function is called with an ID and a pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   907      \COUNTERMEASURE \N Both the ID and the pointer are checked by the caller of this function.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   908  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   909    \ID VCA_IPDUM_FUNCTIONCALL_PDUINFOPTR_SELF_CONSTRUCTED
+; ..\BSW364\IpduM\Implementation\IpduM.c	   910      \DESCRIPTION       Function is called with an ID and a pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   911      \COUNTERMEASURE \N The pointer is constructed in the calling function and always valid.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   912                         The ID is checked by the caller of this function or derived via Indirections and GetSizeOfMacros of the Comstacklib from an external ID.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   913  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   914    \ID VCA_PDUINFOPTR_SELF_CONSTRUCTED
+; ..\BSW364\IpduM\Implementation\IpduM.c	   915      \DESCRIPTION       Written to PduInfoPtr.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   916      \COUNTERMEASURE \N The pointer is constructed in the calling function and always valid.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   917  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   918    \ID VCA_IPDUM_FUNCTIONCALL_WITH_ONLY_ID
+; ..\BSW364\IpduM\Implementation\IpduM.c	   919      \DESCRIPTION Function is called with an ID.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   920      \COUNTERMEASURE \N The ID is checked by the caller of this function or derived  via Indirections or GetSizeOfMacros of the Comstacklib from an external ID.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   921  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   922    \ID VCA_IPDUM_READING_OF_BEFORE_WRITTEN_ID
+; ..\BSW364\IpduM\Implementation\IpduM.c	   923      \DESCRIPTION       Structure is accessed using an index.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   924      \COUNTERMEASURE \N The index is read from an array using Comstacklib Macros. The Index written to this array is derived through ComStackLib indirections from
+; ..\BSW364\IpduM\Implementation\IpduM.c	   925                         an external parameter or using the GetSizeOfMacro of the Comstacklib. The original caller verifies the external parameter.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   926  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   927    \ID VCA_IPDUM_ARRAY_WRITE_WITH_SIZE_VARIABLE_CHECKED_BY_CALLER
+; ..\BSW364\IpduM\Implementation\IpduM.c	   928      \DESCRIPTION       Array is written with index access.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   929      \COUNTERMEASURE \R Additional variable passed along with the array is checked by caller to reflect the remaining
+; ..\BSW364\IpduM\Implementation\IpduM.c	   930                         space in the array. This variable is used for run-time checks.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   931  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   932    \ID VCA_IPDUM_ARRAY_READ_WITH_SIZE_VARIABLE_CHECKED_BY_CALLER
+; ..\BSW364\IpduM\Implementation\IpduM.c	   933      \DESCRIPTION       Array is read with index access.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   934      \COUNTERMEASURE \R The size of the array is checked by the caller.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   935  */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   936  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   937  /* COV_JUSTIFICATION_BEGIN
+; ..\BSW364\IpduM\Implementation\IpduM.c	   938  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   939    \ID COV_IPDUM_VAR_DEPENDENT_SWITCH
+; ..\BSW364\IpduM\Implementation\IpduM.c	   940      \ACCEPT TX
+; ..\BSW364\IpduM\Implementation\IpduM.c	   941      \ACCEPT TF tf tx
+; ..\BSW364\IpduM\Implementation\IpduM.c	   942      \ACCEPT TF tx tf
+; ..\BSW364\IpduM\Implementation\IpduM.c	   943      \ACCEPT TX tx tx
+; ..\BSW364\IpduM\Implementation\IpduM.c	   944      \ACCEPT TX tf tf tf
+; ..\BSW364\IpduM\Implementation\IpduM.c	   945      \ACCEPT TX tx tf tf
+; ..\BSW364\IpduM\Implementation\IpduM.c	   946      \ACCEPT TF tx tf tf
+; ..\BSW364\IpduM\Implementation\IpduM.c	   947      \REASON The nested switch depends on a previous switch.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   948  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   949    \ID COV_IPDUM_COMPLEMENTARY_CHECK
+; ..\BSW364\IpduM\Implementation\IpduM.c	   950      \ACCEPT TF tf tx tf
+; ..\BSW364\IpduM\Implementation\IpduM.c	   951      \REASON This condition (a || (!a && b)) cannot be fully covered for a==true because the first condition (before the "||") will always match, so the second (!a) is not evaluated.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   952  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   953    \ID COV_IPDUM_PRECOMPILE_CONFIG
+; ..\BSW364\IpduM\Implementation\IpduM.c	   954      \ACCEPT XF
+; ..\BSW364\IpduM\Implementation\IpduM.c	   955      \REASON Precompile configurations are always initialized with a NULL config pointer.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   956  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   957    \ID COV_IPDUM_NO_DEV_ERROR
+; ..\BSW364\IpduM\Implementation\IpduM.c	   958      \ACCEPT XF
+; ..\BSW364\IpduM\Implementation\IpduM.c	   959      \REASON Only tests with erroneous configurations would cover this.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   960  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   961    \ID COV_IPDUM_TXCONF_ALWAYS_ZERO
+; ..\BSW364\IpduM\Implementation\IpduM.c	   962      \ACCEPT XF
+; ..\BSW364\IpduM\Implementation\IpduM.c	   963      \ACCEPT TX tx xx xx
+; ..\BSW364\IpduM\Implementation\IpduM.c	   964      \ACCEPT TF tf tx tf
+; ..\BSW364\IpduM\Implementation\IpduM.c	   965      \REASON A TxConfirmation Timeout of zero is a special value which is used for unused TxConfirmation Timeouts.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   966  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   967    \ID COV_IPDUM_DEFENSIVE_PROGRAMMING
+; ..\BSW364\IpduM\Implementation\IpduM.c	   968      \ACCEPT TX
+; ..\BSW364\IpduM\Implementation\IpduM.c	   969      \ACCEPT XF
+; ..\BSW364\IpduM\Implementation\IpduM.c	   970      \ACCEPT TF tf tx
+; ..\BSW364\IpduM\Implementation\IpduM.c	   971      \ACCEPT TX tx tx
+; ..\BSW364\IpduM\Implementation\IpduM.c	   972      \REASON This condition is used because of safe programming, should never be false in production code.
+; ..\BSW364\IpduM\Implementation\IpduM.c	   973  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   974    \ID COV_IPDUM_MISRA
+; ..\BSW364\IpduM\Implementation\IpduM.c	   975      \ACCEPT X
+; ..\BSW364\IpduM\Implementation\IpduM.c	   976      \ACCEPT TX
+; ..\BSW364\IpduM\Implementation\IpduM.c	   977      \REASON [MSR_COV_MISRA]
+; ..\BSW364\IpduM\Implementation\IpduM.c	   978  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   979  COV_JUSTIFICATION_END */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   980  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   981  /* *INDENT-ON* */
+; ..\BSW364\IpduM\Implementation\IpduM.c	   982  
+; ..\BSW364\IpduM\Implementation\IpduM.c	   983  /**********************************************************************************************************************
+; ..\BSW364\IpduM\Implementation\IpduM.c	   984    END OF FILE: IpduM.c
+; ..\BSW364\IpduM\Implementation\IpduM.c	   985  **********************************************************************************************************************/
+
+	; Module end

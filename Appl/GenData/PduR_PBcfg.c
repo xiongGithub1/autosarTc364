@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: PduR_PBcfg.c
- *   Generation Time: 2024-07-09 14:04:09
+ *   Generation Time: 2024-07-16 16:49:59
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -57,6 +57,8 @@
 /* include headers with symbolic name values */
 #include "CanIf.h"
 #include "Com_Cbk.h"
+#include "IpduM.h"
+#include "IpduM_Cbk.h"
 
 /**********************************************************************************************************************
  * LOCAL CONSTANT MACROS

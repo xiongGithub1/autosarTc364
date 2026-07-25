@@ -1,0 +1,222 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc19968a --dep-file=BSW364\\Os\\Implementation\\.Os_Job.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=BSW364\\Os\\Implementation\\Os_Job.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW364\\Os\\Implementation\\Os_Job.src ..\\BSW364\\Os\\Implementation\\Os_Job.c"
+	.compiler_name		"ctc"
+	;source	'..\\BSW364\\Os\\Implementation\\Os_Job.c'
+
+	
+$TC162
+	
+
+; ..\BSW364\Os\Implementation\Os_Job.c	     1  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Job.c	     2   *  COPYRIGHT
+; ..\BSW364\Os\Implementation\Os_Job.c	     3   *  --------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Os\Implementation\Os_Job.c	     4   *  \verbatim
+; ..\BSW364\Os\Implementation\Os_Job.c	     5   *  Copyright (c) 2022 by Vector Informatik GmbH.                                              All rights reserved.
+; ..\BSW364\Os\Implementation\Os_Job.c	     6   *
+; ..\BSW364\Os\Implementation\Os_Job.c	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\BSW364\Os\Implementation\Os_Job.c	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\BSW364\Os\Implementation\Os_Job.c	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\BSW364\Os\Implementation\Os_Job.c	    10   *  \endverbatim
+; ..\BSW364\Os\Implementation\Os_Job.c	    11   *  --------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Os\Implementation\Os_Job.c	    12   *  FILE DESCRIPTION
+; ..\BSW364\Os\Implementation\Os_Job.c	    13   *  ------------------------------------------------------------------------------------------------------------------*/
+; ..\BSW364\Os\Implementation\Os_Job.c	    14  /**
+; ..\BSW364\Os\Implementation\Os_Job.c	    15   * \addtogroup Os_Job
+; ..\BSW364\Os\Implementation\Os_Job.c	    16   * \{
+; ..\BSW364\Os\Implementation\Os_Job.c	    17   *
+; ..\BSW364\Os\Implementation\Os_Job.c	    18   * \file
+; ..\BSW364\Os\Implementation\Os_Job.c	    19   * \brief       Contains the implementation of the Job management.
+; ..\BSW364\Os\Implementation\Os_Job.c	    20   *
+; ..\BSW364\Os\Implementation\Os_Job.c	    21   *
+; ..\BSW364\Os\Implementation\Os_Job.c	    22   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Job.c	    23  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Job.c	    24   *  REVISION HISTORY
+; ..\BSW364\Os\Implementation\Os_Job.c	    25   *  --------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Os\Implementation\Os_Job.c	    26   *  Refer to Os.h.
+; ..\BSW364\Os\Implementation\Os_Job.c	    27   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Job.c	    28  
+; ..\BSW364\Os\Implementation\Os_Job.c	    29                                                                                                                          /* PRQA S 0777 EOF */ /* MD_MSR_Rule5.1 */
+; ..\BSW364\Os\Implementation\Os_Job.c	    30  
+; ..\BSW364\Os\Implementation\Os_Job.c	    31  
+; ..\BSW364\Os\Implementation\Os_Job.c	    32  #define OS_JOB_SOURCE
+; ..\BSW364\Os\Implementation\Os_Job.c	    33  
+; ..\BSW364\Os\Implementation\Os_Job.c	    34  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Job.c	    35   *  INCLUDES
+; ..\BSW364\Os\Implementation\Os_Job.c	    36   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Job.c	    37  /* AUTOSAR includes */
+; ..\BSW364\Os\Implementation\Os_Job.c	    38  #include "Std_Types.h"
+; ..\BSW364\Os\Implementation\Os_Job.c	    39  
+; ..\BSW364\Os\Implementation\Os_Job.c	    40  /* Os module declarations */
+; ..\BSW364\Os\Implementation\Os_Job.c	    41  #include "Os_Job_Types.h"
+; ..\BSW364\Os\Implementation\Os_Job.c	    42  #include "Os_Job.h"
+; ..\BSW364\Os\Implementation\Os_Job.c	    43  
+; ..\BSW364\Os\Implementation\Os_Job.c	    44  /* Os kernel module dependencies */
+; ..\BSW364\Os\Implementation\Os_Job.c	    45  #include "Os_Cfg.h"
+; ..\BSW364\Os\Implementation\Os_Job.c	    46  
+; ..\BSW364\Os\Implementation\Os_Job.c	    47  /* Os hal dependencies */
+; ..\BSW364\Os\Implementation\Os_Job.c	    48  
+; ..\BSW364\Os\Implementation\Os_Job.c	    49  
+; ..\BSW364\Os\Implementation\Os_Job.c	    50  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Job.c	    51   *  LOCAL CONSTANT MACROS
+; ..\BSW364\Os\Implementation\Os_Job.c	    52   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Job.c	    53  
+; ..\BSW364\Os\Implementation\Os_Job.c	    54  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Job.c	    55   *  LOCAL FUNCTION MACROS
+; ..\BSW364\Os\Implementation\Os_Job.c	    56   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Job.c	    57  
+; ..\BSW364\Os\Implementation\Os_Job.c	    58  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Job.c	    59   *  LOCAL DATA TYPES AND STRUCTURES
+; ..\BSW364\Os\Implementation\Os_Job.c	    60   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Job.c	    61  
+; ..\BSW364\Os\Implementation\Os_Job.c	    62  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Job.c	    63   *  LOCAL DATA PROTOTYPES
+; ..\BSW364\Os\Implementation\Os_Job.c	    64   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Job.c	    65  
+; ..\BSW364\Os\Implementation\Os_Job.c	    66  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Job.c	    67   *  GLOBAL DATA
+; ..\BSW364\Os\Implementation\Os_Job.c	    68   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Job.c	    69  
+; ..\BSW364\Os\Implementation\Os_Job.c	    70  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Job.c	    71   *  LOCAL FUNCTION PROTOTYPES
+; ..\BSW364\Os\Implementation\Os_Job.c	    72   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Job.c	    73  #define OS_START_SEC_CODE
+; ..\BSW364\Os\Implementation\Os_Job.c	    74  #include "Os_MemMap_OsCode.h"                                                                                           /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\Os\Implementation\Os_Job.c	    75  
+; ..\BSW364\Os\Implementation\Os_Job.c	    76  
+; ..\BSW364\Os\Implementation\Os_Job.c	    77  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Job.c	    78   *  LOCAL FUNCTIONS
+; ..\BSW364\Os\Implementation\Os_Job.c	    79   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Job.c	    80  
+; ..\BSW364\Os\Implementation\Os_Job.c	    81  
+; ..\BSW364\Os\Implementation\Os_Job.c	    82  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Job.c	    83   *  GLOBAL FUNCTIONS
+; ..\BSW364\Os\Implementation\Os_Job.c	    84   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Job.c	    85  
+; ..\BSW364\Os\Implementation\Os_Job.c	    86  
+; ..\BSW364\Os\Implementation\Os_Job.c	    87  #define OS_STOP_SEC_CODE
+; ..\BSW364\Os\Implementation\Os_Job.c	    88  #include "Os_MemMap_OsCode.h"                                                                                           /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\Os\Implementation\Os_Job.c	    89  
+; ..\BSW364\Os\Implementation\Os_Job.c	    90  
+; ..\BSW364\Os\Implementation\Os_Job.c	    91  /* module specific MISRA deviations:
+; ..\BSW364\Os\Implementation\Os_Job.c	    92   */
+; ..\BSW364\Os\Implementation\Os_Job.c	    93  
+; ..\BSW364\Os\Implementation\Os_Job.c	    94  /* SBSW_JUSTIFICATION_BEGIN
+; ..\BSW364\Os\Implementation\Os_Job.c	    95  \ID SBSW_OS_JOB_COUNTERISFUTUREVALUE_001
+; ..\BSW364\Os\Implementation\Os_Job.c	    96   \DESCRIPTION    Os_CounterIsFutureValue is called with the Counter pointer derived from the caller argument LeftJob.
+; ..\BSW364\Os\Implementation\Os_Job.c	    97                   Precondition ensures that the LeftJob pointer is valid. The compliance of the precondition is check
+; ..\BSW364\Os\Implementation\Os_Job.c	    98                   during review.
+; ..\BSW364\Os\Implementation\Os_Job.c	    99   \COUNTERMEASURE \M [CM_OS_JOBGETCOUNTER_M]
+; ..\BSW364\Os\Implementation\Os_Job.c	   100  
+; ..\BSW364\Os\Implementation\Os_Job.c	   101  \ID SBSW_OS_JOB_JOBGETDYN_001
+; ..\BSW364\Os\Implementation\Os_Job.c	   102   \DESCRIPTION    Write access to the Dyn object of a Job. Precondition ensures that the Job pointer is
+; ..\BSW364\Os\Implementation\Os_Job.c	   103                   valid. The compliance of the precondition is check during review.
+; ..\BSW364\Os\Implementation\Os_Job.c	   104   \COUNTERMEASURE \N [CM_OS_JOBGETDYN_N]
+; ..\BSW364\Os\Implementation\Os_Job.c	   105  
+; ..\BSW364\Os\Implementation\Os_Job.c	   106  \ID SBSW_OS_JOB_COUNTERADDRELJOB_001
+; ..\BSW364\Os\Implementation\Os_Job.c	   107   \DESCRIPTION    Os_CounterAddRelJob is called with the Counter pointer derived from the caller argument Job.
+; ..\BSW364\Os\Implementation\Os_Job.c	   108                   Precondition ensures that the Job pointer is valid. The compliance of the precondition is check
+; ..\BSW364\Os\Implementation\Os_Job.c	   109                   during review.
+; ..\BSW364\Os\Implementation\Os_Job.c	   110   \COUNTERMEASURE \M [CM_OS_JOBGETCOUNTER_M]
+; ..\BSW364\Os\Implementation\Os_Job.c	   111  
+; ..\BSW364\Os\Implementation\Os_Job.c	   112  \ID SBSW_OS_JOB_COUNTERADDABSJOB_001
+; ..\BSW364\Os\Implementation\Os_Job.c	   113   \DESCRIPTION    Os_CounterAddAbsJob is called with the Counter pointer derived from the caller argument Job.
+; ..\BSW364\Os\Implementation\Os_Job.c	   114                   Precondition ensures that the Job pointer is valid. The compliance of the precondition is check
+; ..\BSW364\Os\Implementation\Os_Job.c	   115                   during review.
+; ..\BSW364\Os\Implementation\Os_Job.c	   116   \COUNTERMEASURE \M [CM_OS_JOBGETCOUNTER_M]
+; ..\BSW364\Os\Implementation\Os_Job.c	   117  
+; ..\BSW364\Os\Implementation\Os_Job.c	   118  \ID SBSW_OS_JOB_COUNTERRELOADJOB_001
+; ..\BSW364\Os\Implementation\Os_Job.c	   119   \DESCRIPTION    Os_CounterReloadJob is called with the Counter pointer derived from the caller argument Job.
+; ..\BSW364\Os\Implementation\Os_Job.c	   120                   Precondition ensures that the Job pointer is valid. The compliance of the precondition is check
+; ..\BSW364\Os\Implementation\Os_Job.c	   121                   during review.
+; ..\BSW364\Os\Implementation\Os_Job.c	   122   \COUNTERMEASURE \M [CM_OS_JOBGETCOUNTER_M]
+; ..\BSW364\Os\Implementation\Os_Job.c	   123  
+; ..\BSW364\Os\Implementation\Os_Job.c	   124  \ID SBSW_OS_JOB_COUNTERDELETEJOB_001
+; ..\BSW364\Os\Implementation\Os_Job.c	   125   \DESCRIPTION    Os_CounterDeleteJob is called with the Counter pointer derived from the caller argument Job.
+; ..\BSW364\Os\Implementation\Os_Job.c	   126                   Precondition ensures that the Job pointer is valid. The compliance of the precondition is check
+; ..\BSW364\Os\Implementation\Os_Job.c	   127                   during review.
+; ..\BSW364\Os\Implementation\Os_Job.c	   128   \COUNTERMEASURE \M [CM_OS_JOBGETCOUNTER_M]
+; ..\BSW364\Os\Implementation\Os_Job.c	   129  
+; ..\BSW364\Os\Implementation\Os_Job.c	   130  \ID SBSW_OS_JOB_COUNTERGETCHARACTERISTICS_001
+; ..\BSW364\Os\Implementation\Os_Job.c	   131   \DESCRIPTION    Os_CounterGetCharacteristics is called with the Counter pointer derived from the caller argument Job.
+; ..\BSW364\Os\Implementation\Os_Job.c	   132                   Precondition ensures that the Job pointer is valid. The compliance of the precondition is check
+; ..\BSW364\Os\Implementation\Os_Job.c	   133                   during review.
+; ..\BSW364\Os\Implementation\Os_Job.c	   134   \COUNTERMEASURE \M [CM_OS_JOBGETCOUNTER_M]
+; ..\BSW364\Os\Implementation\Os_Job.c	   135  
+; ..\BSW364\Os\Implementation\Os_Job.c	   136  \ID SBSW_OS_JOB_COUNTERGETVALUE_001
+; ..\BSW364\Os\Implementation\Os_Job.c	   137   \DESCRIPTION    Os_CounterGetValue is called with the Counter pointer derived from the caller argument Job.
+; ..\BSW364\Os\Implementation\Os_Job.c	   138                   Precondition ensures that the Job pointer is valid. The compliance of the precondition is check
+; ..\BSW364\Os\Implementation\Os_Job.c	   139                   during review.
+; ..\BSW364\Os\Implementation\Os_Job.c	   140   \COUNTERMEASURE \M [CM_OS_JOBGETCOUNTER_M]
+; ..\BSW364\Os\Implementation\Os_Job.c	   141  
+; ..\BSW364\Os\Implementation\Os_Job.c	   142  \ID SBSW_OS_JOB_COUNTERGETMODULO_001
+; ..\BSW364\Os\Implementation\Os_Job.c	   143   \DESCRIPTION    Os_CounterGetModulo is called with the Counter pointer derived from the caller argument Job.
+; ..\BSW364\Os\Implementation\Os_Job.c	   144                   Precondition ensures that the Job pointer is valid. The compliance of the precondition is check
+; ..\BSW364\Os\Implementation\Os_Job.c	   145                   during review.
+; ..\BSW364\Os\Implementation\Os_Job.c	   146   \COUNTERMEASURE \M [CM_OS_JOBGETCOUNTER_M]
+; ..\BSW364\Os\Implementation\Os_Job.c	   147  
+; ..\BSW364\Os\Implementation\Os_Job.c	   148  \ID SBSW_OS_JOB_COUNTERSUB_001
+; ..\BSW364\Os\Implementation\Os_Job.c	   149   \DESCRIPTION    Os_CounterSub is called with the Counter pointer derived from the caller argument Job.
+; ..\BSW364\Os\Implementation\Os_Job.c	   150                   Precondition ensures that the Job pointer is valid. The compliance of the precondition is check
+; ..\BSW364\Os\Implementation\Os_Job.c	   151                   during review.
+; ..\BSW364\Os\Implementation\Os_Job.c	   152   \COUNTERMEASURE \M [CM_OS_JOBGETCOUNTER_M]
+; ..\BSW364\Os\Implementation\Os_Job.c	   153  
+; ..\BSW364\Os\Implementation\Os_Job.c	   154  \ID SBSW_OS_JOB_COUNTERCHECKVALUELEMAXALLOWED_001
+; ..\BSW364\Os\Implementation\Os_Job.c	   155   \DESCRIPTION    Os_CounterCheckValueLeMaxAllowed is called with the Counter pointer derived from the caller argument
+; ..\BSW364\Os\Implementation\Os_Job.c	   156                   Job. Precondition ensures that the Job pointer is valid. The compliance of the precondition is check
+; ..\BSW364\Os\Implementation\Os_Job.c	   157                   during review.
+; ..\BSW364\Os\Implementation\Os_Job.c	   158   \COUNTERMEASURE \M [CM_OS_JOBGETCOUNTER_M]
+; ..\BSW364\Os\Implementation\Os_Job.c	   159  
+; ..\BSW364\Os\Implementation\Os_Job.c	   160  \ID SBSW_OS_JOB_COUNTERCHECKVALUELEREDUCEDMAXALLOWED_001
+; ..\BSW364\Os\Implementation\Os_Job.c	   161   \DESCRIPTION    Os_CounterCheckValueLeReducedMaxAllowed is called with the Counter pointer derived from the caller
+; ..\BSW364\Os\Implementation\Os_Job.c	   162                   argument Job. Precondition ensures that the Job pointer is valid. The compliance of the precondition is
+; ..\BSW364\Os\Implementation\Os_Job.c	   163                   check during review.
+; ..\BSW364\Os\Implementation\Os_Job.c	   164   \COUNTERMEASURE \M [CM_OS_JOBGETCOUNTER_M]
+; ..\BSW364\Os\Implementation\Os_Job.c	   165  
+; ..\BSW364\Os\Implementation\Os_Job.c	   166  \ID SBSW_OS_JOB_COUNTERCHECKVALUEGEMINCYCLEORZERO_001
+; ..\BSW364\Os\Implementation\Os_Job.c	   167   \DESCRIPTION    Os_CounterCheckValueGeMinCycleOrZero is called with the Counter pointer derived from the caller
+; ..\BSW364\Os\Implementation\Os_Job.c	   168                   argument Job. Precondition ensures that the Job pointer is valid. The compliance of the precondition is
+; ..\BSW364\Os\Implementation\Os_Job.c	   169                   check during review.
+; ..\BSW364\Os\Implementation\Os_Job.c	   170   \COUNTERMEASURE \M [CM_OS_JOBGETCOUNTER_M]
+; ..\BSW364\Os\Implementation\Os_Job.c	   171  
+; ..\BSW364\Os\Implementation\Os_Job.c	   172  \ID SBSW_OS_JOB_COUNTERGETCORE_001
+; ..\BSW364\Os\Implementation\Os_Job.c	   173   \DESCRIPTION    Os_CounterGetCore is called with the Counter pointer derived from the caller
+; ..\BSW364\Os\Implementation\Os_Job.c	   174                   argument Job. Precondition ensures that the Job pointer is valid. The compliance of the precondition is
+; ..\BSW364\Os\Implementation\Os_Job.c	   175                   check during review.
+; ..\BSW364\Os\Implementation\Os_Job.c	   176   \COUNTERMEASURE \M [CM_OS_JOBGETCOUNTER_M]
+; ..\BSW364\Os\Implementation\Os_Job.c	   177                   \M [CM_OS_COUNTERGETCORE_M]
+; ..\BSW364\Os\Implementation\Os_Job.c	   178  
+; ..\BSW364\Os\Implementation\Os_Job.c	   179  \ID SBSW_OS_JOB_JOB_CALLBACK_001
+; ..\BSW364\Os\Implementation\Os_Job.c	   180   \DESCRIPTION     The callback of a job object is used as function pointer. The callback owner job object is passed as
+; ..\BSW364\Os\Implementation\Os_Job.c	   181                    argument to the callback function. The job is the return value of Os_PriorityQueueTopGet.
+; ..\BSW364\Os\Implementation\Os_Job.c	   182   \COUNTERMEASURE  \R [CM_OS_PRIORITYQUEUETOPGET_R]
+; ..\BSW364\Os\Implementation\Os_Job.c	   183                    \M [CM_OS_JOB_CALLBACK_M]
+; ..\BSW364\Os\Implementation\Os_Job.c	   184  
+; ..\BSW364\Os\Implementation\Os_Job.c	   185  SBSW_JUSTIFICATION_END */
+; ..\BSW364\Os\Implementation\Os_Job.c	   186  
+; ..\BSW364\Os\Implementation\Os_Job.c	   187  /*
+; ..\BSW364\Os\Implementation\Os_Job.c	   188  \CM CM_OS_JOBGETDYN_N
+; ..\BSW364\Os\Implementation\Os_Job.c	   189        As each object of an abstract class is always part of a concrete class, the concrete class
+; ..\BSW364\Os\Implementation\Os_Job.c	   190        guarantees, that the Dyn pointer is valid.
+; ..\BSW364\Os\Implementation\Os_Job.c	   191  
+; ..\BSW364\Os\Implementation\Os_Job.c	   192  \CM CM_OS_JOBGETCORE_M
+; ..\BSW364\Os\Implementation\Os_Job.c	   193        Verify that the Counter reference in each job instance is a non NULL_PTR.
+; ..\BSW364\Os\Implementation\Os_Job.c	   194        Verify also [CM_OS_COUNTERGETCORE_M].
+; ..\BSW364\Os\Implementation\Os_Job.c	   195  
+; ..\BSW364\Os\Implementation\Os_Job.c	   196  \CM CM_OS_JOBGETCOUNTER_M
+; ..\BSW364\Os\Implementation\Os_Job.c	   197        Verify that the Counter reference in each job instance is a non NULL_PTR.
+; ..\BSW364\Os\Implementation\Os_Job.c	   198  
+; ..\BSW364\Os\Implementation\Os_Job.c	   199  \CM CM_OS_JOB_CALLBACK_M
+; ..\BSW364\Os\Implementation\Os_Job.c	   200        Verify that the Callback reference in each job instance is a non NULL_PTR.
+; ..\BSW364\Os\Implementation\Os_Job.c	   201  
+; ..\BSW364\Os\Implementation\Os_Job.c	   202  
+; ..\BSW364\Os\Implementation\Os_Job.c	   203   */
+; ..\BSW364\Os\Implementation\Os_Job.c	   204  /*!
+; ..\BSW364\Os\Implementation\Os_Job.c	   205   * \}
+; ..\BSW364\Os\Implementation\Os_Job.c	   206   */
+; ..\BSW364\Os\Implementation\Os_Job.c	   207  
+; ..\BSW364\Os\Implementation\Os_Job.c	   208  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Job.c	   209   *  END OF FILE: Os_Job.c
+; ..\BSW364\Os\Implementation\Os_Job.c	   210   **********************************************************************************************************************/
+
+	; Module end

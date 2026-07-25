@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Alarm_Lcfg.h
- *   Generation Time: 2024-07-15 16:30:36
+ *   Generation Time: 2026-07-25 11:21:05
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -92,20 +92,17 @@ extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE2_Defaul
 /*! Alarm configuration data: Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms */
 extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms;
 
-/*! Alarm configuration data: Rte_Al_TE_MotorCdd_MotorCDDMainFunction */
-extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_MotorCdd_MotorCDDMainFunction;
+/*! Alarm configuration data: Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx */
+extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx;
 
-/*! Alarm configuration data: Rte_Al_TE_MotorControll_MotorControll_MainFunction */
-extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_MotorControll_MotorControll_MainFunction;
+/*! Alarm configuration data: Rte_Al_TE_Default_Appl_Task_0_10ms */
+extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_Default_Appl_Task_0_10ms;
+
+/*! Alarm configuration data: Rte_Al_TE_Default_Appl_Task_0_1ms */
+extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_Default_Appl_Task_0_1ms;
 
 /*! Alarm configuration data: Rte_Al_TE_StartApp_StartApp_Cyclic1000ms */
 extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic1000ms;
-
-/*! Alarm configuration data: Rte_Al_TE_StartApp_StartApp_Cyclic10ms */
-extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic10ms;
-
-/*! Alarm configuration data: Rte_Al_TE_StartApp_StartApp_Cyclic1ms */
-extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic1ms;
 
 /*! Alarm configuration data: Rte_Al_TE_StartApp_StartApp_Cyclic250ms */
 extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic250ms;

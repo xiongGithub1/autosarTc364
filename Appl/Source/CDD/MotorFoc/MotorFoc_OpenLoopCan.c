@@ -2,6 +2,8 @@
 
 #include "CanIf.h"
 #include "CanIf_Cfg.h"
+#include "Com.h"
+#include "Com_Cfg.h"
 #include "MotorControll.h"
 #include "MotorCdd_Foc.h"
 #include "MotorCdd_Adc.h"
@@ -13,8 +15,10 @@
 #define MOTORFOC_OPENLOOPCAN_VOLTAGE_SCALE      (1000.0F)
 #define MOTORFOC_OPENLOOPCAN_VDC_SCALE          (10.0F)
 #define MOTORFOC_OPENLOOPCAN_ANGLE_SCALE        (1000.0F)
+#define MOTORFOC_OPENLOOPCAN_SPEED_SCALE        (1.0F)
 
 volatile uint8 MotorFoc_OpenLoopCan_Enable = 1U;
+volatile uint8 MotorFoc_OpenLoopCan_ControlPageOnly = 1U;
 volatile uint8 MotorFoc_OpenLoopCan_LastTxResult = E_NOT_OK;
 volatile uint32 MotorFoc_OpenLoopCan_TxCounter = 0UL;
 volatile uint32 MotorFoc_OpenLoopCan_TxErrorCounter = 0UL;
@@ -116,10 +120,10 @@ static void MotorFoc_OpenLoopCan_BuildControlPage(void)
                               MOTORFOC_OPENLOOPCAN_ANGLE_SCALE);
   MotorFoc_OpenLoopCan_Data[26U] = MotorCdd_AdcCurrentOffsetReady;
   MotorFoc_OpenLoopCan_Data[27U] = (uint8)MotorCdd_AdcOffsetSampleCount;
-  MotorFoc_OpenLoopCan_PutU16(28U,
-                              (uint16)MotorCdd_GetAdcSyncCompleteCounter());
-  MotorFoc_OpenLoopCan_PutU16(30U,
-                              (uint16)MotorFoc_OpenLoop_StageCounter);
+  MotorFoc_OpenLoopCan_PutS16(28U, MotorControll_SensorMechanicalRpm,
+                              MOTORFOC_OPENLOOPCAN_SPEED_SCALE);
+  MotorFoc_OpenLoopCan_Data[30U] = MotorControll_GateDriverState;
+  MotorFoc_OpenLoopCan_Data[31U] = MotorControll_GateDriverOutputEnabled;
 }
 
 static void MotorFoc_OpenLoopCan_BuildPwmPage(void)
@@ -201,6 +205,9 @@ static void MotorFoc_OpenLoopCan_Transmit(void)
   PduInfoType pduInfo;
   Std_ReturnType result;
 
+  /* BswM can reactivate the configured test group after application init. */
+  Com_IpduGroupStop(ComConf_ComIPduGroup_MyECU_oCAN00_Tx_1ae5d671);
+
   pduInfo.SduDataPtr = MotorFoc_OpenLoopCan_Data;
   pduInfo.SduLength = MOTORFOC_OPENLOOPCAN_PAYLOAD_LENGTH;
   result = CanIf_Transmit(CanIfTxPduHnd_msg_MyECU_Lamp_oCAN00_41befc25_Tx,
@@ -219,6 +226,10 @@ static void MotorFoc_OpenLoopCan_Transmit(void)
 
 void MotorFoc_OpenLoopCan_Init(void)
 {
+  /* The configured test mux PDUs share CAN ID 0x511 with this raw debug frame. */
+  Com_IpduGroupStop(ComConf_ComIPduGroup_MyECU_oCAN00_Tx_1ae5d671);
+
+  MotorFoc_OpenLoopCan_ControlPageOnly = 1U;
   MotorFoc_OpenLoopCan_LastTxResult = E_NOT_OK;
   MotorFoc_OpenLoopCan_TxCounter = 0UL;
   MotorFoc_OpenLoopCan_TxErrorCounter = 0UL;
@@ -231,8 +242,7 @@ void MotorFoc_OpenLoopCan_Init(void)
 
 void MotorFoc_OpenLoopCan_MainFunction(MotorMode_Type motorMode)
 {
-  if ((motorMode != MOTOR_MODE_OPEN_LOOP) ||
-      (MotorFoc_OpenLoopCan_Enable == 0U))
+  if (MotorFoc_OpenLoopCan_Enable == 0U)
   {
     MotorFoc_OpenLoopCan_Tick = 0U;
     MotorFoc_OpenLoopCan_Page = MOTORFOC_OPENLOOPCAN_PAGE_CONTROL;
@@ -248,7 +258,11 @@ void MotorFoc_OpenLoopCan_MainFunction(MotorMode_Type motorMode)
   }
   MotorFoc_OpenLoopCan_Tick = 0U;
 
-  if (MotorFoc_OpenLoopCan_Page == MOTORFOC_OPENLOOPCAN_PAGE_CONTROL)
+  if (MotorFoc_OpenLoopCan_ControlPageOnly != 0U)
+  {
+    MotorFoc_OpenLoopCan_BuildControlPage();
+  }
+  else if (MotorFoc_OpenLoopCan_Page == MOTORFOC_OPENLOOPCAN_PAGE_CONTROL)
   {
     MotorFoc_OpenLoopCan_BuildControlPage();
     MotorFoc_OpenLoopCan_Page = MOTORFOC_OPENLOOPCAN_PAGE_PWM;

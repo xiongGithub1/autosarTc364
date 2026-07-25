@@ -1,0 +1,3566 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc18704a --dep-file=Appl\\GenData\\.Os_Hal_Entry_Lcfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=Appl\\GenData\\Os_Hal_Entry_Lcfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\Os_Hal_Entry_Lcfg.src ..\\Appl\\GenData\\Os_Hal_Entry_Lcfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\GenData\\Os_Hal_Entry_Lcfg.c'
+
+	
+$TC162
+	
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	     1  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	     2   *  COPYRIGHT
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	     4   *  \verbatim
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	     5   *
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	     6   *                 This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	     7   *                 Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	     8   *                 All other rights remain with Vector Informatik GmbH.
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	     9   *  \endverbatim
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    10   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    11   *  LICENSE
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    12   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    13   *            Module: Os
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    14   *           Program: MSR_Vector_SLP4
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    15   *          Customer: China Lithium Battery Technology Co., Ltd.
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    16   *       Expiry Date: 2025-08-26
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    17   *  Ordered Derivat.: SAK-TC387QP-160F300S AE
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    18   *    License Scope : The usage is restricted to CBD2200508_D00
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    19   *
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    20   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    21   *  FILE DESCRIPTION
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    22   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    23   *              File: Os_Hal_Entry_Lcfg.c
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    24   *   Generation Time: 2024-07-24 19:46:28
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    25   *           Project: last364 - Version 1.0
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    26   *          Delivery: CBD2200508_D00
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    27   *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    28   *
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    29   *
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    30   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    31  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    32  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    33   ! BETA VERSION                                                                                                       !
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    34   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    35   ! This version of DaVinci Configurator Classic and/or the related Basic Software Package is BETA software.               !
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    36   ! BETA Software is basically operable, but not sufficiently tested, verified and/or qualified for use in series      !
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    37   ! production and/or in vehicles operating on public or non-public roads.                                             !
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    38   ! In particular, without limitation, BETA Software may cause unpredictable ECU behavior, may not provide all         !
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    39   ! functions necessary for use in series production and/or may not comply with quality requirements which are         !
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    40   ! necessary according to the state of the art. BETA Software must not be used in series production.                  !
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    41   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    42  **********************************************************************************************************************/
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    43  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    44  /* PRQA S 0777, 0779, 0828 EOF */ /* MD_MSR_Rule5.1, MD_MSR_Rule5.2, MD_MSR_Dir1.1 */
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    45  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    46  #define OS_HAL_ENTRY_LCFG_SOURCE
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    47  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    48  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    49   *  INCLUDES
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    50   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    51  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    52  /* AUTOSAR includes */
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    53  #include "Std_Types.h"
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    54  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    55  /* Os module declarations */
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    56  #include "Os_Hal_Entry_Cfg.h"
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    57  #include "Os_Hal_Entry_Lcfg.h"
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    58  #include "Os_Hal_Entry.h"
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    59  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    60  /* Os kernel module dependencies */
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    61  #include "Os_Isr_Lcfg.h"
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    62  #include "Os.h"
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    63  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    64  /* Os hal dependencies */
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    65  #include "Os_Hal_Cfg.h"
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    66  #include "Os_Hal_Core_Lcfg.h"
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    67  #include "Os_Hal_Interrupt_Cfg.h"
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    68  #include "Os_Hal_Trap.h"
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    69  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    70  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    71  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    72   *  LOCAL CONSTANT MACROS
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    73   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    74  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    75  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    76   *  LOCAL FUNCTION MACROS
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    77   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    78  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    79  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    80   *  LOCAL DATA TYPES AND STRUCTURES
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    81   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    82  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    83  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    84   *  LOCAL DATA PROTOTYPES
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    85   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    86  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    87  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    88   *  GLOBAL DATA
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    89   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    90  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    91  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    92   *  GLOBAL CONSTANT DATA
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    93   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    94  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    95  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    96   *  EXCEPTION VECTOR TABLE CORE 0
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    97   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    98  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	    99  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   100  #define OS_START_SEC_EXCVEC_CORE0_CODE
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   101  #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   102  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   103  Os_Hal_ExceptionSectionDeclaration(0)
+	  .SDECL  ".text.OS_EXCVEC_CORE0_CODE",code,PROTECT
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   104  Os_Hal_UnhandledTrapEntry(0, 0)
+	  .SECT   ".text.OS_EXCVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledExceptionHandler
+	  .GLOBAL osTrap_0_Core0
+	osTrap_0_Core0: svlcx
+	  movh d4, #0
+	  or d4, d15
+	  movh.a a14, #@his(Os_Hal_UnhandledExceptionHandler)
+	  lea a14,[a14]@los(Os_Hal_UnhandledExceptionHandler)
+	  ji a14 
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   105  Os_Hal_UnhandledTrapEntry(0, 1)
+	  .SECT   ".text.OS_EXCVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledExceptionHandler
+	  .GLOBAL osTrap_1_Core0
+	osTrap_1_Core0: svlcx
+	  movh d4, #1
+	  or d4, d15
+	  movh.a a14, #@his(Os_Hal_UnhandledExceptionHandler)
+	  lea a14,[a14]@los(Os_Hal_UnhandledExceptionHandler)
+	  ji a14 
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   106  Os_Hal_UnhandledTrapEntry(0, 2)
+	  .SECT   ".text.OS_EXCVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledExceptionHandler
+	  .GLOBAL osTrap_2_Core0
+	osTrap_2_Core0: svlcx
+	  movh d4, #2
+	  or d4, d15
+	  movh.a a14, #@his(Os_Hal_UnhandledExceptionHandler)
+	  lea a14,[a14]@los(Os_Hal_UnhandledExceptionHandler)
+	  ji a14 
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   107  Os_Hal_UnhandledTrapEntry(0, 3)
+	  .SECT   ".text.OS_EXCVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledExceptionHandler
+	  .GLOBAL osTrap_3_Core0
+	osTrap_3_Core0: svlcx
+	  movh d4, #3
+	  or d4, d15
+	  movh.a a14, #@his(Os_Hal_UnhandledExceptionHandler)
+	  lea a14,[a14]@los(Os_Hal_UnhandledExceptionHandler)
+	  ji a14 
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   108  Os_Hal_UnhandledTrapEntry(0, 4)
+	  .SECT   ".text.OS_EXCVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledExceptionHandler
+	  .GLOBAL osTrap_4_Core0
+	osTrap_4_Core0: svlcx
+	  movh d4, #4
+	  or d4, d15
+	  movh.a a14, #@his(Os_Hal_UnhandledExceptionHandler)
+	  lea a14,[a14]@los(Os_Hal_UnhandledExceptionHandler)
+	  ji a14 
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   109  Os_Hal_UnhandledTrapEntry(0, 5)
+	  .SECT   ".text.OS_EXCVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledExceptionHandler
+	  .GLOBAL osTrap_5_Core0
+	osTrap_5_Core0: svlcx
+	  movh d4, #5
+	  or d4, d15
+	  movh.a a14, #@his(Os_Hal_UnhandledExceptionHandler)
+	  lea a14,[a14]@los(Os_Hal_UnhandledExceptionHandler)
+	  ji a14 
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   110  Os_Hal_UnhandledTrapEntry(0, 6)
+	  .SECT   ".text.OS_EXCVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledExceptionHandler
+	  .GLOBAL osTrap_6_Core0
+	osTrap_6_Core0: svlcx
+	  movh d4, #6
+	  or d4, d15
+	  movh.a a14, #@his(Os_Hal_UnhandledExceptionHandler)
+	  lea a14,[a14]@los(Os_Hal_UnhandledExceptionHandler)
+	  ji a14 
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   111  Os_Hal_UnhandledTrapEntry(0, 7)
+	  .SECT   ".text.OS_EXCVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledExceptionHandler
+	  .GLOBAL osTrap_7_Core0
+	osTrap_7_Core0: svlcx
+	  movh d4, #7
+	  or d4, d15
+	  movh.a a14, #@his(Os_Hal_UnhandledExceptionHandler)
+	  lea a14,[a14]@los(Os_Hal_UnhandledExceptionHandler)
+	  ji a14 
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   112  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   113  #define OS_STOP_SEC_EXCVEC_CORE0_CODE
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   114  #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   115  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   116  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   117  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   118  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   119   *  INTERRUPT VECTOR TABLE CORE 0
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   120   *********************************************************************************************************************/
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   121  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   122  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   123  #define OS_START_SEC_INTVEC_CORE0_CODE
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   124  #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   125  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   126  Os_Hal_InterruptSectionDeclaration(0)
+	  .SDECL  ".text.OS_INTVEC_CORE0_CODE",code,PROTECT
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   127  Os_Hal_UnhandledInterruptEntry(0, 0) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_0_Core0
+	osIsrLevel_0_Core0: svlcx
+	  mov d4, #0
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   128  Os_Hal_UnhandledInterruptEntry(0, 1) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_1_Core0
+	osIsrLevel_1_Core0: svlcx
+	  mov d4, #1
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   129  Os_Hal_UnhandledInterruptEntry(0, 2) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_2_Core0
+	osIsrLevel_2_Core0: svlcx
+	  mov d4, #2
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   130  Os_Hal_UnhandledInterruptEntry(0, 3) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_3_Core0
+	osIsrLevel_3_Core0: svlcx
+	  mov d4, #3
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   131  Os_Hal_UnhandledInterruptEntry(0, 4) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_4_Core0
+	osIsrLevel_4_Core0: svlcx
+	  mov d4, #4
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   132  Os_Hal_UnhandledInterruptEntry(0, 5) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_5_Core0
+	osIsrLevel_5_Core0: svlcx
+	  mov d4, #5
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   133  Os_Hal_UnhandledInterruptEntry(0, 6) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_6_Core0
+	osIsrLevel_6_Core0: svlcx
+	  mov d4, #6
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   134  Os_Hal_UnhandledInterruptEntry(0, 7) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_7_Core0
+	osIsrLevel_7_Core0: svlcx
+	  mov d4, #7
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   135  Os_Hal_UnhandledInterruptEntry(0, 8) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_8_Core0
+	osIsrLevel_8_Core0: svlcx
+	  mov d4, #8
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   136  Os_Hal_UnhandledInterruptEntry(0, 9) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_9_Core0
+	osIsrLevel_9_Core0: svlcx
+	  mov d4, #9
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   137  Os_Hal_UnhandledInterruptEntry(0, 10) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_10_Core0
+	osIsrLevel_10_Core0: svlcx
+	  mov d4, #10
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   138  Os_Hal_UnhandledInterruptEntry(0, 11) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_11_Core0
+	osIsrLevel_11_Core0: svlcx
+	  mov d4, #11
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   139  Os_Hal_UnhandledInterruptEntry(0, 12) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_12_Core0
+	osIsrLevel_12_Core0: svlcx
+	  mov d4, #12
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   140  Os_Hal_UnhandledInterruptEntry(0, 13) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_13_Core0
+	osIsrLevel_13_Core0: svlcx
+	  mov d4, #13
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   141  Os_Hal_UnhandledInterruptEntry(0, 14) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_14_Core0
+	osIsrLevel_14_Core0: svlcx
+	  mov d4, #14
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   142  Os_Hal_UnhandledInterruptEntry(0, 15) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_15_Core0
+	osIsrLevel_15_Core0: svlcx
+	  mov d4, #15
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   143  Os_Hal_UnhandledInterruptEntry(0, 16) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_16_Core0
+	osIsrLevel_16_Core0: svlcx
+	  mov d4, #16
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   144  Os_Hal_UnhandledInterruptEntry(0, 17) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_17_Core0
+	osIsrLevel_17_Core0: svlcx
+	  mov d4, #17
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   145  Os_Hal_UnhandledInterruptEntry(0, 18) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_18_Core0
+	osIsrLevel_18_Core0: svlcx
+	  mov d4, #18
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   146  Os_Hal_UnhandledInterruptEntry(0, 19) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_19_Core0
+	osIsrLevel_19_Core0: svlcx
+	  mov d4, #19
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   147  Os_Hal_Cat2InterruptEntry(0, 20, OS_CFG_HAL_ISR2_DISABLE_LEVEL, OsCfg_Isr_Qspi2PtIsr)
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN OsCfg_Isr_Qspi2PtIsr
+	  .EXTERN Os_Hal_IsrRun
+	  .GLOBAL osIsrLevel_20_Core0
+	osIsrLevel_20_Core0: svlcx
+	  movh.a  a4, #@his(OsCfg_Isr_Qspi2PtIsr)
+	  lea  a4, [a4]@los(OsCfg_Isr_Qspi2PtIsr)
+	  call Os_Hal_IsrRun
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   148  Os_Hal_UnhandledInterruptEntry(0, 21) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_21_Core0
+	osIsrLevel_21_Core0: svlcx
+	  mov d4, #21
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   149  Os_Hal_UnhandledInterruptEntry(0, 22) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_22_Core0
+	osIsrLevel_22_Core0: svlcx
+	  mov d4, #22
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   150  Os_Hal_UnhandledInterruptEntry(0, 23) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_23_Core0
+	osIsrLevel_23_Core0: svlcx
+	  mov d4, #23
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   151  Os_Hal_Cat2InterruptEntry(0, 24, OS_CFG_HAL_ISR2_DISABLE_LEVEL, OsCfg_Isr_DMACH4SR_ISR)
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN OsCfg_Isr_DMACH4SR_ISR
+	  .EXTERN Os_Hal_IsrRun
+	  .GLOBAL osIsrLevel_24_Core0
+	osIsrLevel_24_Core0: svlcx
+	  movh.a  a4, #@his(OsCfg_Isr_DMACH4SR_ISR)
+	  lea  a4, [a4]@los(OsCfg_Isr_DMACH4SR_ISR)
+	  call Os_Hal_IsrRun
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   152  Os_Hal_UnhandledInterruptEntry(0, 25) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_25_Core0
+	osIsrLevel_25_Core0: svlcx
+	  mov d4, #25
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   153  Os_Hal_Cat2InterruptEntry(0, 26, OS_CFG_HAL_ISR2_DISABLE_LEVEL, OsCfg_Isr_DMACH5SR_ISR)
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN OsCfg_Isr_DMACH5SR_ISR
+	  .EXTERN Os_Hal_IsrRun
+	  .GLOBAL osIsrLevel_26_Core0
+	osIsrLevel_26_Core0: svlcx
+	  movh.a  a4, #@his(OsCfg_Isr_DMACH5SR_ISR)
+	  lea  a4, [a4]@los(OsCfg_Isr_DMACH5SR_ISR)
+	  call Os_Hal_IsrRun
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   154  Os_Hal_Cat2InterruptEntry(0, 27, OS_CFG_HAL_ISR2_DISABLE_LEVEL, OsCfg_Isr_Qspi2ErrIsr)
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN OsCfg_Isr_Qspi2ErrIsr
+	  .EXTERN Os_Hal_IsrRun
+	  .GLOBAL osIsrLevel_27_Core0
+	osIsrLevel_27_Core0: svlcx
+	  movh.a  a4, #@his(OsCfg_Isr_Qspi2ErrIsr)
+	  lea  a4, [a4]@los(OsCfg_Isr_Qspi2ErrIsr)
+	  call Os_Hal_IsrRun
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   155  Os_Hal_UnhandledInterruptEntry(0, 28) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_28_Core0
+	osIsrLevel_28_Core0: svlcx
+	  mov d4, #28
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   156  Os_Hal_UnhandledInterruptEntry(0, 29) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_29_Core0
+	osIsrLevel_29_Core0: svlcx
+	  mov d4, #29
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   157  Os_Hal_UnhandledInterruptEntry(0, 30) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_30_Core0
+	osIsrLevel_30_Core0: svlcx
+	  mov d4, #30
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   158  Os_Hal_UnhandledInterruptEntry(0, 31) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_31_Core0
+	osIsrLevel_31_Core0: svlcx
+	  mov d4, #31
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   159  Os_Hal_UnhandledInterruptEntry(0, 32) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_32_Core0
+	osIsrLevel_32_Core0: svlcx
+	  mov d4, #32
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   160  Os_Hal_UnhandledInterruptEntry(0, 33) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_33_Core0
+	osIsrLevel_33_Core0: svlcx
+	  mov d4, #33
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   161  Os_Hal_UnhandledInterruptEntry(0, 34) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_34_Core0
+	osIsrLevel_34_Core0: svlcx
+	  mov d4, #34
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   162  Os_Hal_UnhandledInterruptEntry(0, 35) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_35_Core0
+	osIsrLevel_35_Core0: svlcx
+	  mov d4, #35
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   163  Os_Hal_UnhandledInterruptEntry(0, 36) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_36_Core0
+	osIsrLevel_36_Core0: svlcx
+	  mov d4, #36
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   164  Os_Hal_UnhandledInterruptEntry(0, 37) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_37_Core0
+	osIsrLevel_37_Core0: svlcx
+	  mov d4, #37
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   165  Os_Hal_UnhandledInterruptEntry(0, 38) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_38_Core0
+	osIsrLevel_38_Core0: svlcx
+	  mov d4, #38
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   166  Os_Hal_UnhandledInterruptEntry(0, 39) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_39_Core0
+	osIsrLevel_39_Core0: svlcx
+	  mov d4, #39
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   167  Os_Hal_UnhandledInterruptEntry(0, 40) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_40_Core0
+	osIsrLevel_40_Core0: svlcx
+	  mov d4, #40
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   168  Os_Hal_UnhandledInterruptEntry(0, 41) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_41_Core0
+	osIsrLevel_41_Core0: svlcx
+	  mov d4, #41
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   169  Os_Hal_UnhandledInterruptEntry(0, 42) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_42_Core0
+	osIsrLevel_42_Core0: svlcx
+	  mov d4, #42
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   170  Os_Hal_UnhandledInterruptEntry(0, 43) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_43_Core0
+	osIsrLevel_43_Core0: svlcx
+	  mov d4, #43
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   171  Os_Hal_UnhandledInterruptEntry(0, 44) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_44_Core0
+	osIsrLevel_44_Core0: svlcx
+	  mov d4, #44
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   172  Os_Hal_UnhandledInterruptEntry(0, 45) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_45_Core0
+	osIsrLevel_45_Core0: svlcx
+	  mov d4, #45
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   173  Os_Hal_UnhandledInterruptEntry(0, 46) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_46_Core0
+	osIsrLevel_46_Core0: svlcx
+	  mov d4, #46
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   174  Os_Hal_UnhandledInterruptEntry(0, 47) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_47_Core0
+	osIsrLevel_47_Core0: svlcx
+	  mov d4, #47
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   175  Os_Hal_UnhandledInterruptEntry(0, 48) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_48_Core0
+	osIsrLevel_48_Core0: svlcx
+	  mov d4, #48
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   176  Os_Hal_UnhandledInterruptEntry(0, 49) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_49_Core0
+	osIsrLevel_49_Core0: svlcx
+	  mov d4, #49
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   177  Os_Hal_UnhandledInterruptEntry(0, 50) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_50_Core0
+	osIsrLevel_50_Core0: svlcx
+	  mov d4, #50
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   178  Os_Hal_UnhandledInterruptEntry(0, 51) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_51_Core0
+	osIsrLevel_51_Core0: svlcx
+	  mov d4, #51
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   179  Os_Hal_UnhandledInterruptEntry(0, 52) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_52_Core0
+	osIsrLevel_52_Core0: svlcx
+	  mov d4, #52
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   180  Os_Hal_UnhandledInterruptEntry(0, 53) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_53_Core0
+	osIsrLevel_53_Core0: svlcx
+	  mov d4, #53
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   181  Os_Hal_UnhandledInterruptEntry(0, 54) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_54_Core0
+	osIsrLevel_54_Core0: svlcx
+	  mov d4, #54
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   182  Os_Hal_UnhandledInterruptEntry(0, 55) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_55_Core0
+	osIsrLevel_55_Core0: svlcx
+	  mov d4, #55
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   183  Os_Hal_UnhandledInterruptEntry(0, 56) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_56_Core0
+	osIsrLevel_56_Core0: svlcx
+	  mov d4, #56
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   184  Os_Hal_UnhandledInterruptEntry(0, 57) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_57_Core0
+	osIsrLevel_57_Core0: svlcx
+	  mov d4, #57
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   185  Os_Hal_UnhandledInterruptEntry(0, 58) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_58_Core0
+	osIsrLevel_58_Core0: svlcx
+	  mov d4, #58
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   186  Os_Hal_UnhandledInterruptEntry(0, 59) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_59_Core0
+	osIsrLevel_59_Core0: svlcx
+	  mov d4, #59
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   187  Os_Hal_Cat2InterruptEntry(0, 60, OS_CFG_HAL_ISR2_DISABLE_LEVEL, OsCfg_Isr_CanIsr_0)
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN OsCfg_Isr_CanIsr_0
+	  .EXTERN Os_Hal_IsrRun
+	  .GLOBAL osIsrLevel_60_Core0
+	osIsrLevel_60_Core0: svlcx
+	  movh.a  a4, #@his(OsCfg_Isr_CanIsr_0)
+	  lea  a4, [a4]@los(OsCfg_Isr_CanIsr_0)
+	  call Os_Hal_IsrRun
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   188  Os_Hal_UnhandledInterruptEntry(0, 61) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_61_Core0
+	osIsrLevel_61_Core0: svlcx
+	  mov d4, #61
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   189  Os_Hal_UnhandledInterruptEntry(0, 62) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_62_Core0
+	osIsrLevel_62_Core0: svlcx
+	  mov d4, #62
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   190  Os_Hal_UnhandledInterruptEntry(0, 63) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_63_Core0
+	osIsrLevel_63_Core0: svlcx
+	  mov d4, #63
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   191  Os_Hal_UnhandledInterruptEntry(0, 64) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_64_Core0
+	osIsrLevel_64_Core0: svlcx
+	  mov d4, #64
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   192  Os_Hal_UnhandledInterruptEntry(0, 65) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_65_Core0
+	osIsrLevel_65_Core0: svlcx
+	  mov d4, #65
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   193  Os_Hal_UnhandledInterruptEntry(0, 66) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_66_Core0
+	osIsrLevel_66_Core0: svlcx
+	  mov d4, #66
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   194  Os_Hal_UnhandledInterruptEntry(0, 67) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_67_Core0
+	osIsrLevel_67_Core0: svlcx
+	  mov d4, #67
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   195  Os_Hal_UnhandledInterruptEntry(0, 68) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_68_Core0
+	osIsrLevel_68_Core0: svlcx
+	  mov d4, #68
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   196  Os_Hal_UnhandledInterruptEntry(0, 69) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_69_Core0
+	osIsrLevel_69_Core0: svlcx
+	  mov d4, #69
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   197  Os_Hal_UnhandledInterruptEntry(0, 70) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_70_Core0
+	osIsrLevel_70_Core0: svlcx
+	  mov d4, #70
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   198  Os_Hal_UnhandledInterruptEntry(0, 71) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_71_Core0
+	osIsrLevel_71_Core0: svlcx
+	  mov d4, #71
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   199  Os_Hal_UnhandledInterruptEntry(0, 72) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_72_Core0
+	osIsrLevel_72_Core0: svlcx
+	  mov d4, #72
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   200  Os_Hal_UnhandledInterruptEntry(0, 73) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_73_Core0
+	osIsrLevel_73_Core0: svlcx
+	  mov d4, #73
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   201  Os_Hal_UnhandledInterruptEntry(0, 74) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_74_Core0
+	osIsrLevel_74_Core0: svlcx
+	  mov d4, #74
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   202  Os_Hal_UnhandledInterruptEntry(0, 75) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_75_Core0
+	osIsrLevel_75_Core0: svlcx
+	  mov d4, #75
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   203  Os_Hal_UnhandledInterruptEntry(0, 76) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_76_Core0
+	osIsrLevel_76_Core0: svlcx
+	  mov d4, #76
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   204  Os_Hal_UnhandledInterruptEntry(0, 77) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_77_Core0
+	osIsrLevel_77_Core0: svlcx
+	  mov d4, #77
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   205  Os_Hal_Cat2InterruptEntry(0, 78, OS_CFG_HAL_ISR2_DISABLE_LEVEL, OsCfg_Isr_AdcIsr_G8)
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN OsCfg_Isr_AdcIsr_G8
+	  .EXTERN Os_Hal_IsrRun
+	  .GLOBAL osIsrLevel_78_Core0
+	osIsrLevel_78_Core0: svlcx
+	  movh.a  a4, #@his(OsCfg_Isr_AdcIsr_G8)
+	  lea  a4, [a4]@los(OsCfg_Isr_AdcIsr_G8)
+	  call Os_Hal_IsrRun
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   206  Os_Hal_Cat2InterruptEntry(0, 79, OS_CFG_HAL_ISR2_DISABLE_LEVEL, OsCfg_Isr_AdcIsr_G0)
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN OsCfg_Isr_AdcIsr_G0
+	  .EXTERN Os_Hal_IsrRun
+	  .GLOBAL osIsrLevel_79_Core0
+	osIsrLevel_79_Core0: svlcx
+	  movh.a  a4, #@his(OsCfg_Isr_AdcIsr_G0)
+	  lea  a4, [a4]@los(OsCfg_Isr_AdcIsr_G0)
+	  call Os_Hal_IsrRun
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   207  Os_Hal_Cat2InterruptEntry(0, 80, OS_CFG_HAL_ISR2_DISABLE_LEVEL, OsCfg_Isr_CounterIsr_SystemTimer)
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN OsCfg_Isr_CounterIsr_SystemTimer
+	  .EXTERN Os_Hal_IsrRun
+	  .GLOBAL osIsrLevel_80_Core0
+	osIsrLevel_80_Core0: svlcx
+	  movh.a  a4, #@his(OsCfg_Isr_CounterIsr_SystemTimer)
+	  lea  a4, [a4]@los(OsCfg_Isr_CounterIsr_SystemTimer)
+	  call Os_Hal_IsrRun
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   208  Os_Hal_UnhandledInterruptEntry(0, 81) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_81_Core0
+	osIsrLevel_81_Core0: svlcx
+	  mov d4, #81
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   209  Os_Hal_UnhandledInterruptEntry(0, 82) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_82_Core0
+	osIsrLevel_82_Core0: svlcx
+	  mov d4, #82
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   210  Os_Hal_UnhandledInterruptEntry(0, 83) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_83_Core0
+	osIsrLevel_83_Core0: svlcx
+	  mov d4, #83
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   211  Os_Hal_UnhandledInterruptEntry(0, 84) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_84_Core0
+	osIsrLevel_84_Core0: svlcx
+	  mov d4, #84
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   212  Os_Hal_UnhandledInterruptEntry(0, 85) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_85_Core0
+	osIsrLevel_85_Core0: svlcx
+	  mov d4, #85
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   213  Os_Hal_UnhandledInterruptEntry(0, 86) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_86_Core0
+	osIsrLevel_86_Core0: svlcx
+	  mov d4, #86
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   214  Os_Hal_UnhandledInterruptEntry(0, 87) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_87_Core0
+	osIsrLevel_87_Core0: svlcx
+	  mov d4, #87
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   215  Os_Hal_UnhandledInterruptEntry(0, 88) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_88_Core0
+	osIsrLevel_88_Core0: svlcx
+	  mov d4, #88
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   216  Os_Hal_UnhandledInterruptEntry(0, 89) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_89_Core0
+	osIsrLevel_89_Core0: svlcx
+	  mov d4, #89
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   217  Os_Hal_Cat2InterruptEntry(0, 90, OS_CFG_HAL_ISR2_DISABLE_LEVEL, OsCfg_Isr_DmaErrIsr)
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN OsCfg_Isr_DmaErrIsr
+	  .EXTERN Os_Hal_IsrRun
+	  .GLOBAL osIsrLevel_90_Core0
+	osIsrLevel_90_Core0: svlcx
+	  movh.a  a4, #@his(OsCfg_Isr_DmaErrIsr)
+	  lea  a4, [a4]@los(OsCfg_Isr_DmaErrIsr)
+	  call Os_Hal_IsrRun
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   218  Os_Hal_UnhandledInterruptEntry(0, 91) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_91_Core0
+	osIsrLevel_91_Core0: svlcx
+	  mov d4, #91
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   219  Os_Hal_UnhandledInterruptEntry(0, 92) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_92_Core0
+	osIsrLevel_92_Core0: svlcx
+	  mov d4, #92
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   220  Os_Hal_UnhandledInterruptEntry(0, 93) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_93_Core0
+	osIsrLevel_93_Core0: svlcx
+	  mov d4, #93
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   221  Os_Hal_UnhandledInterruptEntry(0, 94) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_94_Core0
+	osIsrLevel_94_Core0: svlcx
+	  mov d4, #94
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   222  Os_Hal_UnhandledInterruptEntry(0, 95) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_95_Core0
+	osIsrLevel_95_Core0: svlcx
+	  mov d4, #95
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   223  Os_Hal_UnhandledInterruptEntry(0, 96) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_96_Core0
+	osIsrLevel_96_Core0: svlcx
+	  mov d4, #96
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   224  Os_Hal_UnhandledInterruptEntry(0, 97) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_97_Core0
+	osIsrLevel_97_Core0: svlcx
+	  mov d4, #97
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   225  Os_Hal_UnhandledInterruptEntry(0, 98) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_98_Core0
+	osIsrLevel_98_Core0: svlcx
+	  mov d4, #98
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   226  Os_Hal_UnhandledInterruptEntry(0, 99) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_99_Core0
+	osIsrLevel_99_Core0: svlcx
+	  mov d4, #99
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   227  Os_Hal_UnhandledInterruptEntry(0, 100) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_100_Core0
+	osIsrLevel_100_Core0: svlcx
+	  mov d4, #100
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   228  Os_Hal_UnhandledInterruptEntry(0, 101) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_101_Core0
+	osIsrLevel_101_Core0: svlcx
+	  mov d4, #101
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   229  Os_Hal_UnhandledInterruptEntry(0, 102) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_102_Core0
+	osIsrLevel_102_Core0: svlcx
+	  mov d4, #102
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   230  Os_Hal_UnhandledInterruptEntry(0, 103) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_103_Core0
+	osIsrLevel_103_Core0: svlcx
+	  mov d4, #103
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   231  Os_Hal_UnhandledInterruptEntry(0, 104) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_104_Core0
+	osIsrLevel_104_Core0: svlcx
+	  mov d4, #104
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   232  Os_Hal_UnhandledInterruptEntry(0, 105) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_105_Core0
+	osIsrLevel_105_Core0: svlcx
+	  mov d4, #105
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   233  Os_Hal_UnhandledInterruptEntry(0, 106) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_106_Core0
+	osIsrLevel_106_Core0: svlcx
+	  mov d4, #106
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   234  Os_Hal_UnhandledInterruptEntry(0, 107) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_107_Core0
+	osIsrLevel_107_Core0: svlcx
+	  mov d4, #107
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   235  Os_Hal_UnhandledInterruptEntry(0, 108) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_108_Core0
+	osIsrLevel_108_Core0: svlcx
+	  mov d4, #108
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   236  Os_Hal_UnhandledInterruptEntry(0, 109) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_109_Core0
+	osIsrLevel_109_Core0: svlcx
+	  mov d4, #109
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   237  Os_Hal_UnhandledInterruptEntry(0, 110) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_110_Core0
+	osIsrLevel_110_Core0: svlcx
+	  mov d4, #110
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   238  Os_Hal_UnhandledInterruptEntry(0, 111) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_111_Core0
+	osIsrLevel_111_Core0: svlcx
+	  mov d4, #111
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   239  Os_Hal_UnhandledInterruptEntry(0, 112) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_112_Core0
+	osIsrLevel_112_Core0: svlcx
+	  mov d4, #112
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   240  Os_Hal_UnhandledInterruptEntry(0, 113) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_113_Core0
+	osIsrLevel_113_Core0: svlcx
+	  mov d4, #113
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   241  Os_Hal_UnhandledInterruptEntry(0, 114) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_114_Core0
+	osIsrLevel_114_Core0: svlcx
+	  mov d4, #114
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   242  Os_Hal_UnhandledInterruptEntry(0, 115) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_115_Core0
+	osIsrLevel_115_Core0: svlcx
+	  mov d4, #115
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   243  Os_Hal_UnhandledInterruptEntry(0, 116) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_116_Core0
+	osIsrLevel_116_Core0: svlcx
+	  mov d4, #116
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   244  Os_Hal_UnhandledInterruptEntry(0, 117) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_117_Core0
+	osIsrLevel_117_Core0: svlcx
+	  mov d4, #117
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   245  Os_Hal_UnhandledInterruptEntry(0, 118) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_118_Core0
+	osIsrLevel_118_Core0: svlcx
+	  mov d4, #118
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   246  Os_Hal_UnhandledInterruptEntry(0, 119) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_119_Core0
+	osIsrLevel_119_Core0: svlcx
+	  mov d4, #119
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   247  Os_Hal_UnhandledInterruptEntry(0, 120) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_120_Core0
+	osIsrLevel_120_Core0: svlcx
+	  mov d4, #120
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   248  Os_Hal_UnhandledInterruptEntry(0, 121) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_121_Core0
+	osIsrLevel_121_Core0: svlcx
+	  mov d4, #121
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   249  Os_Hal_UnhandledInterruptEntry(0, 122) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_122_Core0
+	osIsrLevel_122_Core0: svlcx
+	  mov d4, #122
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   250  Os_Hal_UnhandledInterruptEntry(0, 123) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_123_Core0
+	osIsrLevel_123_Core0: svlcx
+	  mov d4, #123
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   251  Os_Hal_UnhandledInterruptEntry(0, 124) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_124_Core0
+	osIsrLevel_124_Core0: svlcx
+	  mov d4, #124
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   252  Os_Hal_UnhandledInterruptEntry(0, 125) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_125_Core0
+	osIsrLevel_125_Core0: svlcx
+	  mov d4, #125
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   253  Os_Hal_UnhandledInterruptEntry(0, 126) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_126_Core0
+	osIsrLevel_126_Core0: svlcx
+	  mov d4, #126
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   254  Os_Hal_UnhandledInterruptEntry(0, 127) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_127_Core0
+	osIsrLevel_127_Core0: svlcx
+	  mov d4, #127
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   255  Os_Hal_UnhandledInterruptEntry(0, 128) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_128_Core0
+	osIsrLevel_128_Core0: svlcx
+	  mov d4, #128
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   256  Os_Hal_UnhandledInterruptEntry(0, 129) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_129_Core0
+	osIsrLevel_129_Core0: svlcx
+	  mov d4, #129
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   257  Os_Hal_UnhandledInterruptEntry(0, 130) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_130_Core0
+	osIsrLevel_130_Core0: svlcx
+	  mov d4, #130
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   258  Os_Hal_UnhandledInterruptEntry(0, 131) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_131_Core0
+	osIsrLevel_131_Core0: svlcx
+	  mov d4, #131
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   259  Os_Hal_UnhandledInterruptEntry(0, 132) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_132_Core0
+	osIsrLevel_132_Core0: svlcx
+	  mov d4, #132
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   260  Os_Hal_UnhandledInterruptEntry(0, 133) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_133_Core0
+	osIsrLevel_133_Core0: svlcx
+	  mov d4, #133
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   261  Os_Hal_UnhandledInterruptEntry(0, 134) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_134_Core0
+	osIsrLevel_134_Core0: svlcx
+	  mov d4, #134
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   262  Os_Hal_UnhandledInterruptEntry(0, 135) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_135_Core0
+	osIsrLevel_135_Core0: svlcx
+	  mov d4, #135
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   263  Os_Hal_UnhandledInterruptEntry(0, 136) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_136_Core0
+	osIsrLevel_136_Core0: svlcx
+	  mov d4, #136
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   264  Os_Hal_UnhandledInterruptEntry(0, 137) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_137_Core0
+	osIsrLevel_137_Core0: svlcx
+	  mov d4, #137
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   265  Os_Hal_UnhandledInterruptEntry(0, 138) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_138_Core0
+	osIsrLevel_138_Core0: svlcx
+	  mov d4, #138
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   266  Os_Hal_UnhandledInterruptEntry(0, 139) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_139_Core0
+	osIsrLevel_139_Core0: svlcx
+	  mov d4, #139
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   267  Os_Hal_UnhandledInterruptEntry(0, 140) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_140_Core0
+	osIsrLevel_140_Core0: svlcx
+	  mov d4, #140
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   268  Os_Hal_UnhandledInterruptEntry(0, 141) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_141_Core0
+	osIsrLevel_141_Core0: svlcx
+	  mov d4, #141
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   269  Os_Hal_UnhandledInterruptEntry(0, 142) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_142_Core0
+	osIsrLevel_142_Core0: svlcx
+	  mov d4, #142
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   270  Os_Hal_UnhandledInterruptEntry(0, 143) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_143_Core0
+	osIsrLevel_143_Core0: svlcx
+	  mov d4, #143
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   271  Os_Hal_UnhandledInterruptEntry(0, 144) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_144_Core0
+	osIsrLevel_144_Core0: svlcx
+	  mov d4, #144
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   272  Os_Hal_UnhandledInterruptEntry(0, 145) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_145_Core0
+	osIsrLevel_145_Core0: svlcx
+	  mov d4, #145
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   273  Os_Hal_UnhandledInterruptEntry(0, 146) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_146_Core0
+	osIsrLevel_146_Core0: svlcx
+	  mov d4, #146
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   274  Os_Hal_UnhandledInterruptEntry(0, 147) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_147_Core0
+	osIsrLevel_147_Core0: svlcx
+	  mov d4, #147
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   275  Os_Hal_UnhandledInterruptEntry(0, 148) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_148_Core0
+	osIsrLevel_148_Core0: svlcx
+	  mov d4, #148
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   276  Os_Hal_UnhandledInterruptEntry(0, 149) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_149_Core0
+	osIsrLevel_149_Core0: svlcx
+	  mov d4, #149
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   277  Os_Hal_UnhandledInterruptEntry(0, 150) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_150_Core0
+	osIsrLevel_150_Core0: svlcx
+	  mov d4, #150
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   278  Os_Hal_UnhandledInterruptEntry(0, 151) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_151_Core0
+	osIsrLevel_151_Core0: svlcx
+	  mov d4, #151
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   279  Os_Hal_UnhandledInterruptEntry(0, 152) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_152_Core0
+	osIsrLevel_152_Core0: svlcx
+	  mov d4, #152
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   280  Os_Hal_UnhandledInterruptEntry(0, 153) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_153_Core0
+	osIsrLevel_153_Core0: svlcx
+	  mov d4, #153
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   281  Os_Hal_UnhandledInterruptEntry(0, 154) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_154_Core0
+	osIsrLevel_154_Core0: svlcx
+	  mov d4, #154
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   282  Os_Hal_UnhandledInterruptEntry(0, 155) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_155_Core0
+	osIsrLevel_155_Core0: svlcx
+	  mov d4, #155
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   283  Os_Hal_UnhandledInterruptEntry(0, 156) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_156_Core0
+	osIsrLevel_156_Core0: svlcx
+	  mov d4, #156
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   284  Os_Hal_UnhandledInterruptEntry(0, 157) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_157_Core0
+	osIsrLevel_157_Core0: svlcx
+	  mov d4, #157
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   285  Os_Hal_UnhandledInterruptEntry(0, 158) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_158_Core0
+	osIsrLevel_158_Core0: svlcx
+	  mov d4, #158
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   286  Os_Hal_UnhandledInterruptEntry(0, 159) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_159_Core0
+	osIsrLevel_159_Core0: svlcx
+	  mov d4, #159
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   287  Os_Hal_UnhandledInterruptEntry(0, 160) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_160_Core0
+	osIsrLevel_160_Core0: svlcx
+	  mov d4, #160
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   288  Os_Hal_UnhandledInterruptEntry(0, 161) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_161_Core0
+	osIsrLevel_161_Core0: svlcx
+	  mov d4, #161
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   289  Os_Hal_UnhandledInterruptEntry(0, 162) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_162_Core0
+	osIsrLevel_162_Core0: svlcx
+	  mov d4, #162
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   290  Os_Hal_UnhandledInterruptEntry(0, 163) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_163_Core0
+	osIsrLevel_163_Core0: svlcx
+	  mov d4, #163
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   291  Os_Hal_UnhandledInterruptEntry(0, 164) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_164_Core0
+	osIsrLevel_164_Core0: svlcx
+	  mov d4, #164
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   292  Os_Hal_UnhandledInterruptEntry(0, 165) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_165_Core0
+	osIsrLevel_165_Core0: svlcx
+	  mov d4, #165
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   293  Os_Hal_UnhandledInterruptEntry(0, 166) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_166_Core0
+	osIsrLevel_166_Core0: svlcx
+	  mov d4, #166
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   294  Os_Hal_UnhandledInterruptEntry(0, 167) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_167_Core0
+	osIsrLevel_167_Core0: svlcx
+	  mov d4, #167
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   295  Os_Hal_UnhandledInterruptEntry(0, 168) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_168_Core0
+	osIsrLevel_168_Core0: svlcx
+	  mov d4, #168
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   296  Os_Hal_UnhandledInterruptEntry(0, 169) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_169_Core0
+	osIsrLevel_169_Core0: svlcx
+	  mov d4, #169
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   297  Os_Hal_UnhandledInterruptEntry(0, 170) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_170_Core0
+	osIsrLevel_170_Core0: svlcx
+	  mov d4, #170
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   298  Os_Hal_UnhandledInterruptEntry(0, 171) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_171_Core0
+	osIsrLevel_171_Core0: svlcx
+	  mov d4, #171
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   299  Os_Hal_UnhandledInterruptEntry(0, 172) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_172_Core0
+	osIsrLevel_172_Core0: svlcx
+	  mov d4, #172
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   300  Os_Hal_UnhandledInterruptEntry(0, 173) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_173_Core0
+	osIsrLevel_173_Core0: svlcx
+	  mov d4, #173
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   301  Os_Hal_UnhandledInterruptEntry(0, 174) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_174_Core0
+	osIsrLevel_174_Core0: svlcx
+	  mov d4, #174
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   302  Os_Hal_UnhandledInterruptEntry(0, 175) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_175_Core0
+	osIsrLevel_175_Core0: svlcx
+	  mov d4, #175
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   303  Os_Hal_UnhandledInterruptEntry(0, 176) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_176_Core0
+	osIsrLevel_176_Core0: svlcx
+	  mov d4, #176
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   304  Os_Hal_UnhandledInterruptEntry(0, 177) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_177_Core0
+	osIsrLevel_177_Core0: svlcx
+	  mov d4, #177
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   305  Os_Hal_UnhandledInterruptEntry(0, 178) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_178_Core0
+	osIsrLevel_178_Core0: svlcx
+	  mov d4, #178
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   306  Os_Hal_UnhandledInterruptEntry(0, 179) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_179_Core0
+	osIsrLevel_179_Core0: svlcx
+	  mov d4, #179
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   307  Os_Hal_UnhandledInterruptEntry(0, 180) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_180_Core0
+	osIsrLevel_180_Core0: svlcx
+	  mov d4, #180
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   308  Os_Hal_UnhandledInterruptEntry(0, 181) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_181_Core0
+	osIsrLevel_181_Core0: svlcx
+	  mov d4, #181
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   309  Os_Hal_UnhandledInterruptEntry(0, 182) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_182_Core0
+	osIsrLevel_182_Core0: svlcx
+	  mov d4, #182
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   310  Os_Hal_UnhandledInterruptEntry(0, 183) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_183_Core0
+	osIsrLevel_183_Core0: svlcx
+	  mov d4, #183
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   311  Os_Hal_UnhandledInterruptEntry(0, 184) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_184_Core0
+	osIsrLevel_184_Core0: svlcx
+	  mov d4, #184
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   312  Os_Hal_UnhandledInterruptEntry(0, 185) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_185_Core0
+	osIsrLevel_185_Core0: svlcx
+	  mov d4, #185
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   313  Os_Hal_UnhandledInterruptEntry(0, 186) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_186_Core0
+	osIsrLevel_186_Core0: svlcx
+	  mov d4, #186
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   314  Os_Hal_UnhandledInterruptEntry(0, 187) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_187_Core0
+	osIsrLevel_187_Core0: svlcx
+	  mov d4, #187
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   315  Os_Hal_UnhandledInterruptEntry(0, 188) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_188_Core0
+	osIsrLevel_188_Core0: svlcx
+	  mov d4, #188
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   316  Os_Hal_UnhandledInterruptEntry(0, 189) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_189_Core0
+	osIsrLevel_189_Core0: svlcx
+	  mov d4, #189
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   317  Os_Hal_UnhandledInterruptEntry(0, 190) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_190_Core0
+	osIsrLevel_190_Core0: svlcx
+	  mov d4, #190
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   318  Os_Hal_UnhandledInterruptEntry(0, 191) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_191_Core0
+	osIsrLevel_191_Core0: svlcx
+	  mov d4, #191
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   319  Os_Hal_UnhandledInterruptEntry(0, 192) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_192_Core0
+	osIsrLevel_192_Core0: svlcx
+	  mov d4, #192
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   320  Os_Hal_UnhandledInterruptEntry(0, 193) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_193_Core0
+	osIsrLevel_193_Core0: svlcx
+	  mov d4, #193
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   321  Os_Hal_UnhandledInterruptEntry(0, 194) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_194_Core0
+	osIsrLevel_194_Core0: svlcx
+	  mov d4, #194
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   322  Os_Hal_UnhandledInterruptEntry(0, 195) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_195_Core0
+	osIsrLevel_195_Core0: svlcx
+	  mov d4, #195
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   323  Os_Hal_UnhandledInterruptEntry(0, 196) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_196_Core0
+	osIsrLevel_196_Core0: svlcx
+	  mov d4, #196
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   324  Os_Hal_UnhandledInterruptEntry(0, 197) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_197_Core0
+	osIsrLevel_197_Core0: svlcx
+	  mov d4, #197
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   325  Os_Hal_UnhandledInterruptEntry(0, 198) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_198_Core0
+	osIsrLevel_198_Core0: svlcx
+	  mov d4, #198
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   326  Os_Hal_UnhandledInterruptEntry(0, 199) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_199_Core0
+	osIsrLevel_199_Core0: svlcx
+	  mov d4, #199
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   327  Os_Hal_UnhandledInterruptEntry(0, 200) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_200_Core0
+	osIsrLevel_200_Core0: svlcx
+	  mov d4, #200
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   328  Os_Hal_UnhandledInterruptEntry(0, 201) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_201_Core0
+	osIsrLevel_201_Core0: svlcx
+	  mov d4, #201
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   329  Os_Hal_UnhandledInterruptEntry(0, 202) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_202_Core0
+	osIsrLevel_202_Core0: svlcx
+	  mov d4, #202
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   330  Os_Hal_UnhandledInterruptEntry(0, 203) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_203_Core0
+	osIsrLevel_203_Core0: svlcx
+	  mov d4, #203
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   331  Os_Hal_UnhandledInterruptEntry(0, 204) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_204_Core0
+	osIsrLevel_204_Core0: svlcx
+	  mov d4, #204
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   332  Os_Hal_UnhandledInterruptEntry(0, 205) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_205_Core0
+	osIsrLevel_205_Core0: svlcx
+	  mov d4, #205
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   333  Os_Hal_UnhandledInterruptEntry(0, 206) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_206_Core0
+	osIsrLevel_206_Core0: svlcx
+	  mov d4, #206
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   334  Os_Hal_UnhandledInterruptEntry(0, 207) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_207_Core0
+	osIsrLevel_207_Core0: svlcx
+	  mov d4, #207
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   335  Os_Hal_UnhandledInterruptEntry(0, 208) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_208_Core0
+	osIsrLevel_208_Core0: svlcx
+	  mov d4, #208
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   336  Os_Hal_UnhandledInterruptEntry(0, 209) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_209_Core0
+	osIsrLevel_209_Core0: svlcx
+	  mov d4, #209
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   337  Os_Hal_UnhandledInterruptEntry(0, 210) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_210_Core0
+	osIsrLevel_210_Core0: svlcx
+	  mov d4, #210
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   338  Os_Hal_UnhandledInterruptEntry(0, 211) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_211_Core0
+	osIsrLevel_211_Core0: svlcx
+	  mov d4, #211
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   339  Os_Hal_UnhandledInterruptEntry(0, 212) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_212_Core0
+	osIsrLevel_212_Core0: svlcx
+	  mov d4, #212
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   340  Os_Hal_UnhandledInterruptEntry(0, 213) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_213_Core0
+	osIsrLevel_213_Core0: svlcx
+	  mov d4, #213
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   341  Os_Hal_UnhandledInterruptEntry(0, 214) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_214_Core0
+	osIsrLevel_214_Core0: svlcx
+	  mov d4, #214
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   342  Os_Hal_UnhandledInterruptEntry(0, 215) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_215_Core0
+	osIsrLevel_215_Core0: svlcx
+	  mov d4, #215
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   343  Os_Hal_UnhandledInterruptEntry(0, 216) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_216_Core0
+	osIsrLevel_216_Core0: svlcx
+	  mov d4, #216
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   344  Os_Hal_UnhandledInterruptEntry(0, 217) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_217_Core0
+	osIsrLevel_217_Core0: svlcx
+	  mov d4, #217
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   345  Os_Hal_UnhandledInterruptEntry(0, 218) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_218_Core0
+	osIsrLevel_218_Core0: svlcx
+	  mov d4, #218
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   346  Os_Hal_UnhandledInterruptEntry(0, 219) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_219_Core0
+	osIsrLevel_219_Core0: svlcx
+	  mov d4, #219
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   347  Os_Hal_UnhandledInterruptEntry(0, 220) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_220_Core0
+	osIsrLevel_220_Core0: svlcx
+	  mov d4, #220
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   348  Os_Hal_UnhandledInterruptEntry(0, 221) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_221_Core0
+	osIsrLevel_221_Core0: svlcx
+	  mov d4, #221
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   349  Os_Hal_UnhandledInterruptEntry(0, 222) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_222_Core0
+	osIsrLevel_222_Core0: svlcx
+	  mov d4, #222
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   350  Os_Hal_UnhandledInterruptEntry(0, 223) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_223_Core0
+	osIsrLevel_223_Core0: svlcx
+	  mov d4, #223
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   351  Os_Hal_UnhandledInterruptEntry(0, 224) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_224_Core0
+	osIsrLevel_224_Core0: svlcx
+	  mov d4, #224
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   352  Os_Hal_UnhandledInterruptEntry(0, 225) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_225_Core0
+	osIsrLevel_225_Core0: svlcx
+	  mov d4, #225
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   353  Os_Hal_UnhandledInterruptEntry(0, 226) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_226_Core0
+	osIsrLevel_226_Core0: svlcx
+	  mov d4, #226
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   354  Os_Hal_UnhandledInterruptEntry(0, 227) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_227_Core0
+	osIsrLevel_227_Core0: svlcx
+	  mov d4, #227
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   355  Os_Hal_UnhandledInterruptEntry(0, 228) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_228_Core0
+	osIsrLevel_228_Core0: svlcx
+	  mov d4, #228
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   356  Os_Hal_UnhandledInterruptEntry(0, 229) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_229_Core0
+	osIsrLevel_229_Core0: svlcx
+	  mov d4, #229
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   357  Os_Hal_UnhandledInterruptEntry(0, 230) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_230_Core0
+	osIsrLevel_230_Core0: svlcx
+	  mov d4, #230
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   358  Os_Hal_UnhandledInterruptEntry(0, 231) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_231_Core0
+	osIsrLevel_231_Core0: svlcx
+	  mov d4, #231
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   359  Os_Hal_UnhandledInterruptEntry(0, 232) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_232_Core0
+	osIsrLevel_232_Core0: svlcx
+	  mov d4, #232
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   360  Os_Hal_UnhandledInterruptEntry(0, 233) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_233_Core0
+	osIsrLevel_233_Core0: svlcx
+	  mov d4, #233
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   361  Os_Hal_UnhandledInterruptEntry(0, 234) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_234_Core0
+	osIsrLevel_234_Core0: svlcx
+	  mov d4, #234
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   362  Os_Hal_UnhandledInterruptEntry(0, 235) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_235_Core0
+	osIsrLevel_235_Core0: svlcx
+	  mov d4, #235
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   363  Os_Hal_UnhandledInterruptEntry(0, 236) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_236_Core0
+	osIsrLevel_236_Core0: svlcx
+	  mov d4, #236
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   364  Os_Hal_UnhandledInterruptEntry(0, 237) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_237_Core0
+	osIsrLevel_237_Core0: svlcx
+	  mov d4, #237
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   365  Os_Hal_UnhandledInterruptEntry(0, 238) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_238_Core0
+	osIsrLevel_238_Core0: svlcx
+	  mov d4, #238
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   366  Os_Hal_UnhandledInterruptEntry(0, 239) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_239_Core0
+	osIsrLevel_239_Core0: svlcx
+	  mov d4, #239
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   367  Os_Hal_UnhandledInterruptEntry(0, 240) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_240_Core0
+	osIsrLevel_240_Core0: svlcx
+	  mov d4, #240
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   368  Os_Hal_UnhandledInterruptEntry(0, 241) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_241_Core0
+	osIsrLevel_241_Core0: svlcx
+	  mov d4, #241
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   369  Os_Hal_UnhandledInterruptEntry(0, 242) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_242_Core0
+	osIsrLevel_242_Core0: svlcx
+	  mov d4, #242
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   370  Os_Hal_UnhandledInterruptEntry(0, 243) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_243_Core0
+	osIsrLevel_243_Core0: svlcx
+	  mov d4, #243
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   371  Os_Hal_UnhandledInterruptEntry(0, 244) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_244_Core0
+	osIsrLevel_244_Core0: svlcx
+	  mov d4, #244
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   372  Os_Hal_UnhandledInterruptEntry(0, 245) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_245_Core0
+	osIsrLevel_245_Core0: svlcx
+	  mov d4, #245
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   373  Os_Hal_UnhandledInterruptEntry(0, 246) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_246_Core0
+	osIsrLevel_246_Core0: svlcx
+	  mov d4, #246
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   374  Os_Hal_UnhandledInterruptEntry(0, 247) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_247_Core0
+	osIsrLevel_247_Core0: svlcx
+	  mov d4, #247
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   375  Os_Hal_UnhandledInterruptEntry(0, 248) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_248_Core0
+	osIsrLevel_248_Core0: svlcx
+	  mov d4, #248
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   376  Os_Hal_UnhandledInterruptEntry(0, 249) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_249_Core0
+	osIsrLevel_249_Core0: svlcx
+	  mov d4, #249
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   377  Os_Hal_UnhandledInterruptEntry(0, 250) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_250_Core0
+	osIsrLevel_250_Core0: svlcx
+	  mov d4, #250
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   378  Os_Hal_UnhandledInterruptEntry(0, 251) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_251_Core0
+	osIsrLevel_251_Core0: svlcx
+	  mov d4, #251
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   379  Os_Hal_UnhandledInterruptEntry(0, 252) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_252_Core0
+	osIsrLevel_252_Core0: svlcx
+	  mov d4, #252
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   380  Os_Hal_UnhandledInterruptEntry(0, 253) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_253_Core0
+	osIsrLevel_253_Core0: svlcx
+	  mov d4, #253
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   381  Os_Hal_UnhandledInterruptEntry(0, 254) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_254_Core0
+	osIsrLevel_254_Core0: svlcx
+	  mov d4, #254
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   382  Os_Hal_UnhandledInterruptEntry(0, 255) 
+	  .SECT   ".text.OS_INTVEC_CORE0_CODE"
+	  .ALIGN 32
+	  .EXTERN Os_Hal_UnhandledIrq
+	  .GLOBAL osIsrLevel_255_Core0
+	osIsrLevel_255_Core0: svlcx
+	  mov d4, #255
+	  mfcr d5, #0xFE00
+	  mov.aa a4, a11
+	  call Os_Hal_UnhandledIrq
+	  rslcx
+	  rfe
+
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   383  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   384  #define OS_STOP_SEC_INTVEC_CORE0_CODE
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   385  #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   386  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   387  
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   388  /**********************************************************************************************************************
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   389   *  END OF FILE: Os_Hal_Entry_Lcfg.c
+; ..\Appl\GenData\Os_Hal_Entry_Lcfg.c	   390   *********************************************************************************************************************/
+
+	; Module end

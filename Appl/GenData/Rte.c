@@ -38,6 +38,7 @@
 #include "Rte_EcuM.h"
 #include "Rte_MotorCdd.h"
 #include "Rte_MotorControll.h"
+#include "Rte_NvM.h"
 #include "Rte_Os_OsCore0_swc.h"
 #include "Rte_StartApp.h"
 #include "SchM_Adc.h"
@@ -48,14 +49,19 @@
 #include "SchM_Com.h"
 #include "SchM_ComM.h"
 #include "SchM_ComXf.h"
+#include "SchM_Crc.h"
 #include "SchM_Det.h"
 #include "SchM_Dio.h"
 #include "SchM_Dma.h"
 #include "SchM_E2EXf.h"
 #include "SchM_EcuM.h"
+#include "SchM_Fee.h"
+#include "SchM_Fls_17_Dmu.h"
+#include "SchM_IpduM.h"
 #include "SchM_Irq.h"
 #include "SchM_McalLib.h"
 #include "SchM_Mcu.h"
+#include "SchM_NvM.h"
 #include "SchM_PduR.h"
 #include "SchM_Port.h"
 #include "SchM_Pwm_17_GtmCcu6.h"
@@ -133,6 +139,21 @@ VAR(float32, RTE_VAR_NOINIT) Rte_MotorControll_Pp_MotorCurrentRef_Iq_Ref;
 #include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
+/**********************************************************************************************************************
+ * Internal C/S connections
+ *********************************************************************************************************************/
+
+/* Queue definitions for internal C/S connections */
+#define RTE_START_SEC_VAR_NOINIT_UNSPECIFIED
+#include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+VAR(Rte_CS_ServerQueueType_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter, RTE_VAR_NOINIT) Rte_CS_ServerQueue_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter; /* PRQA S 1504 */ /* MD_MSR_Rule8.7 */
+VAR(Rte_CS_ServerQueueInfoType_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter, RTE_VAR_NOINIT) Rte_CS_ServerQueueInfo_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter; /* PRQA S 1504 */ /* MD_MSR_Rule8.7 */
+
+#define RTE_STOP_SEC_VAR_NOINIT_UNSPECIFIED
+#include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
 #define RTE_START_SEC_VAR_NOINIT_UNSPECIFIED
 #include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
@@ -168,13 +189,14 @@ VAR(float32, RTE_VAR_NOINIT) Rte_MotorControll_Pp_MotorCurrentRef_Iq_Ref;
 #endif
 
 #define RTE_CONST_MSEC_SystemTimer_0U (0UL)
-#define RTE_CONST_MSEC_SystemTimer_1U (10UL)
-#define RTE_CONST_MSEC_SystemTimer_10U (100UL)
-#define RTE_CONST_MSEC_SystemTimer_20U (200UL)
-#define RTE_CONST_MSEC_SystemTimer_250U (2500UL)
+#define RTE_CONST_MSEC_SystemTimer_1U (1UL)
+#define RTE_CONST_MSEC_SystemTimer_10U (10UL)
+#define RTE_CONST_MSEC_SystemTimer_20U (20UL)
+#define RTE_CONST_MSEC_SystemTimer_250U (250UL)
+#define RTE_CONST_MSEC_SystemTimer_5U (5UL)
 
 #define RTE_CONST_SEC_SystemTimer_0U (0UL)
-#define RTE_CONST_SEC_SystemTimer_1U (10000UL)
+#define RTE_CONST_SEC_SystemTimer_1U (1000UL)
 
 
 /**********************************************************************************************************************
@@ -207,6 +229,7 @@ FUNC(void, RTE_CODE) SchM_StartTiming(void)
   /* activate the alarms used for TimingEvents */
   (void)SetRelAlarm(Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(10U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
   (void)SetRelAlarm(Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(20U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
+  (void)SetRelAlarm(Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(5U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
 
 }
 
@@ -220,6 +243,10 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Start(void)
   Rte_MotorControll_Pp_MotorCurrentRef_Id_Ref = 0.0F;
   Rte_MotorControll_Pp_MotorCurrentRef_Iq_Ref = 0.0F;
 
+  /* C/S queue initialization */
+  Rte_CS_ServerQueueInfo_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter.Rte_Free = 1;
+  Rte_CS_ServerQueueInfo_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter.Rte_Active = 0;
+
   /* mode management initialization part 1 */
 
   /* activate the tasks */
@@ -228,11 +255,9 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Start(void)
   (void)ActivateTask(MotorTask); /* PRQA S 3417 */ /* MD_Rte_Os */
 
   /* activate the alarms used for TimingEvents */
-  (void)SetRelAlarm(Rte_Al_TE_MotorCdd_MotorCDDMainFunction, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(10U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
-  (void)SetRelAlarm(Rte_Al_TE_MotorControll_MotorControll_MainFunction, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(1U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
+  (void)SetRelAlarm(Rte_Al_TE_Default_Appl_Task_0_10ms, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(10U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
+  (void)SetRelAlarm(Rte_Al_TE_Default_Appl_Task_0_1ms, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(1U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
   (void)SetRelAlarm(Rte_Al_TE_StartApp_StartApp_Cyclic1000ms, RTE_SEC_SystemTimer(0U) + (TickType)1U, RTE_SEC_SystemTimer(1U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
-  (void)SetRelAlarm(Rte_Al_TE_StartApp_StartApp_Cyclic10ms, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(10U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
-  (void)SetRelAlarm(Rte_Al_TE_StartApp_StartApp_Cyclic1ms, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(1U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
   (void)SetRelAlarm(Rte_Al_TE_StartApp_StartApp_Cyclic250ms, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(250U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
 
   return RTE_E_OK;
@@ -241,12 +266,10 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Start(void)
 FUNC(Std_ReturnType, RTE_CODE) Rte_Stop(void)
 {
   /* deactivate alarms */
+  (void)CancelAlarm(Rte_Al_TE_Default_Appl_Task_0_10ms); /* PRQA S 3417 */ /* MD_Rte_Os */
+  (void)CancelAlarm(Rte_Al_TE_Default_Appl_Task_0_1ms); /* PRQA S 3417 */ /* MD_Rte_Os */
   (void)CancelAlarm(Rte_Al_TE_StartApp_StartApp_Cyclic1000ms); /* PRQA S 3417 */ /* MD_Rte_Os */
-  (void)CancelAlarm(Rte_Al_TE_StartApp_StartApp_Cyclic10ms); /* PRQA S 3417 */ /* MD_Rte_Os */
-  (void)CancelAlarm(Rte_Al_TE_StartApp_StartApp_Cyclic1ms); /* PRQA S 3417 */ /* MD_Rte_Os */
   (void)CancelAlarm(Rte_Al_TE_StartApp_StartApp_Cyclic250ms); /* PRQA S 3417 */ /* MD_Rte_Os */
-  (void)CancelAlarm(Rte_Al_TE_MotorCdd_MotorCDDMainFunction); /* PRQA S 3417 */ /* MD_Rte_Os */
-  (void)CancelAlarm(Rte_Al_TE_MotorControll_MotorControll_MainFunction); /* PRQA S 3417 */ /* MD_Rte_Os */
 
   return RTE_E_OK;
 }
@@ -256,12 +279,48 @@ FUNC(void, RTE_CODE) SchM_Deinit(void)
   /* deactivate alarms */
   (void)CancelAlarm(Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms); /* PRQA S 3417 */ /* MD_Rte_Os */
   (void)CancelAlarm(Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms); /* PRQA S 3417 */ /* MD_Rte_Os */
+  (void)CancelAlarm(Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx); /* PRQA S 3417 */ /* MD_Rte_Os */
 
 }
 
 FUNC(void, RTE_CODE) Rte_InitMemory(void)
 {
 }
+
+
+/**********************************************************************************************************************
+ * Internal C/S connections
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, RTE_CODE) Rte_Call_MotorControll_Pp_MotorCdd_EnableInverter_EnableInverter(boolean arg) /* PRQA S 1505, 3673 */ /* MD_MSR_Rule8.7, MD_Rte_Qac */
+{
+  Std_ReturnType ret = RTE_E_OK; /* PRQA S 2981 */ /* MD_MSR_RetVal */
+
+  Rte_DisableOSInterrupts(); /* PRQA S 1881, 4558 */ /* MD_Rte_Os, MD_Rte_Os */
+  if (Rte_CS_ServerQueueInfo_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter.Rte_Free > 0U)
+  {
+    Rte_CS_ServerQueueInfo_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter.Rte_Free = 0;
+    Rte_CS_ServerQueueInfo_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter.Rte_Active = 1;
+    Rte_EnableOSInterrupts(); /* PRQA S 1881, 4558, 2983 */ /* MD_Rte_Os, MD_Rte_Os, MD_Rte_2983 */
+
+    Rte_CS_ServerQueue_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter.arg = arg;
+
+    /* scheduled trigger for runnables: Pp_MotorCdd_EnableInverter_EnableInverter */
+    (void)SetEvent(MotorTask, Rte_Ev_Run_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter); /* PRQA S 3417 */ /* MD_Rte_Os */
+
+    (void)Schedule(); /* PRQA S 3417 */ /* MD_Rte_Os */
+
+    Rte_DisableOSInterrupts(); /* PRQA S 1881, 4558 */ /* MD_Rte_Os, MD_Rte_Os */
+    Rte_CS_ServerQueueInfo_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter.Rte_Free = 1;
+  }
+  else
+  {
+    ret = RTE_E_TIMEOUT;
+  }
+  Rte_EnableOSInterrupts(); /* PRQA S 1881, 4558, 2983 */ /* MD_Rte_Os, MD_Rte_Os, MD_Rte_2983 */
+
+  return ret;
+} /* PRQA S 6050 */ /* MD_MSR_STCAL */
 
 
 /**********************************************************************************************************************
@@ -405,6 +464,84 @@ FUNC(void, RTE_CODE) SchM_Enter_Dma_MEErrorStatus(void)
 }
 
 FUNC(void, RTE_CODE) SchM_Exit_Dma_MEErrorStatus(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  ResumeAllInterrupts();
+}
+
+
+FUNC(void, RTE_CODE) SchM_Enter_Fls_17_Dmu_Erase(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  SuspendAllInterrupts();
+}
+
+FUNC(void, RTE_CODE) SchM_Exit_Fls_17_Dmu_Erase(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  ResumeAllInterrupts();
+}
+
+
+FUNC(void, RTE_CODE) SchM_Enter_Fls_17_Dmu_Init(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  SuspendAllInterrupts();
+}
+
+FUNC(void, RTE_CODE) SchM_Exit_Fls_17_Dmu_Init(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  ResumeAllInterrupts();
+}
+
+
+FUNC(void, RTE_CODE) SchM_Enter_Fls_17_Dmu_Main(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  SuspendAllInterrupts();
+}
+
+FUNC(void, RTE_CODE) SchM_Exit_Fls_17_Dmu_Main(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  ResumeAllInterrupts();
+}
+
+
+FUNC(void, RTE_CODE) SchM_Enter_Fls_17_Dmu_ResumeErase(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  SuspendAllInterrupts();
+}
+
+FUNC(void, RTE_CODE) SchM_Exit_Fls_17_Dmu_ResumeErase(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  ResumeAllInterrupts();
+}
+
+
+FUNC(void, RTE_CODE) SchM_Enter_Fls_17_Dmu_UserContentCount(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  SuspendAllInterrupts();
+}
+
+FUNC(void, RTE_CODE) SchM_Exit_Fls_17_Dmu_UserContentCount(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  ResumeAllInterrupts();
+}
+
+
+FUNC(void, RTE_CODE) SchM_Enter_Fls_17_Dmu_Write(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  SuspendAllInterrupts();
+}
+
+FUNC(void, RTE_CODE) SchM_Exit_Fls_17_Dmu_Write(void)
 {
   /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
   ResumeAllInterrupts();
@@ -677,17 +814,17 @@ TASK(Default_Appl_Task) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unreachab
 
   for(;;)
   {
-    (void)WaitEvent(Rte_Ev_Run_StartApp_StartApp_Cyclic1000ms | Rte_Ev_Run_StartApp_StartApp_Cyclic10ms | Rte_Ev_Run_StartApp_StartApp_Cyclic1ms | Rte_Ev_Run_StartApp_StartApp_Cyclic250ms); /* PRQA S 3417 */ /* MD_Rte_Os */
+    (void)WaitEvent(Rte_Ev_Cyclic_Default_Appl_Task_0_10ms | Rte_Ev_Cyclic_Default_Appl_Task_0_1ms | Rte_Ev_Run_StartApp_StartApp_Cyclic1000ms | Rte_Ev_Run_StartApp_StartApp_Cyclic250ms); /* PRQA S 3417 */ /* MD_Rte_Os */
     (void)GetEvent(Default_Appl_Task, &ev); /* PRQA S 3417 */ /* MD_Rte_Os */
-    (void)ClearEvent(ev & (Rte_Ev_Run_StartApp_StartApp_Cyclic1000ms | Rte_Ev_Run_StartApp_StartApp_Cyclic10ms | Rte_Ev_Run_StartApp_StartApp_Cyclic1ms | Rte_Ev_Run_StartApp_StartApp_Cyclic250ms)); /* PRQA S 3417 */ /* MD_Rte_Os */
+    (void)ClearEvent(ev & (Rte_Ev_Cyclic_Default_Appl_Task_0_10ms | Rte_Ev_Cyclic_Default_Appl_Task_0_1ms | Rte_Ev_Run_StartApp_StartApp_Cyclic1000ms | Rte_Ev_Run_StartApp_StartApp_Cyclic250ms)); /* PRQA S 3417 */ /* MD_Rte_Os */
 
-    if ((ev & Rte_Ev_Run_StartApp_StartApp_Cyclic1ms) != (EventMaskType)0)
+    if ((ev & Rte_Ev_Cyclic_Default_Appl_Task_0_1ms) != (EventMaskType)0)
     {
       /* call runnable */
       StartApp_Cyclic1ms(); /* PRQA S 2987 */ /* MD_Rte_2987 */
     }
 
-    if ((ev & Rte_Ev_Run_StartApp_StartApp_Cyclic10ms) != (EventMaskType)0)
+    if ((ev & Rte_Ev_Cyclic_Default_Appl_Task_0_10ms) != (EventMaskType)0)
     {
       /* call runnable */
       StartApp_Cyclic10ms(); /* PRQA S 2987 */ /* MD_Rte_2987 */
@@ -703,6 +840,18 @@ TASK(Default_Appl_Task) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unreachab
     {
       /* call runnable */
       StartApp_Cyclic1000ms(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+    }
+
+    if ((ev & Rte_Ev_Cyclic_Default_Appl_Task_0_1ms) != (EventMaskType)0)
+    {
+      /* call runnable */
+      MotorControll_MainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+    }
+
+    if ((ev & Rte_Ev_Cyclic_Default_Appl_Task_0_10ms) != (EventMaskType)0)
+    {
+      /* call runnable */
+      MotorCDDMainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
     }
   }
 } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */
@@ -724,9 +873,9 @@ TASK(Default_BSW_ASync_Task) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unre
 
   for(;;)
   {
-    (void)WaitEvent(Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms | Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_20ms); /* PRQA S 3417 */ /* MD_Rte_Os */
+    (void)WaitEvent(Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms | Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_20ms | Rte_Ev_Run_Com_Com_MainFunctionTx_ComMainFunctionTx); /* PRQA S 3417 */ /* MD_Rte_Os */
     (void)GetEvent(Default_BSW_ASync_Task, &ev); /* PRQA S 3417 */ /* MD_Rte_Os */
-    (void)ClearEvent(ev & (Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms | Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_20ms)); /* PRQA S 3417 */ /* MD_Rte_Os */
+    (void)ClearEvent(ev & (Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms | Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_20ms | Rte_Ev_Run_Com_Com_MainFunctionTx_ComMainFunctionTx)); /* PRQA S 3417 */ /* MD_Rte_Os */
 
     if ((ev & Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms) != (EventMaskType)0)
     {
@@ -762,9 +911,24 @@ TASK(Default_BSW_ASync_Task) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unre
     {
       /* call schedulable entity */
       Com_MainFunctionRx_ComMainFunctionRx();
+    }
 
+    if ((ev & Rte_Ev_Run_Com_Com_MainFunctionTx_ComMainFunctionTx) != (EventMaskType)0)
+    {
       /* call schedulable entity */
       Com_MainFunctionTx_ComMainFunctionTx();
+    }
+
+    if ((ev & Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms) != (EventMaskType)0)
+    {
+      /* call runnable */
+      NvM_MainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+
+      /* call schedulable entity */
+      Fee_MainFunction();
+
+      /* call schedulable entity */
+      Fls_17_Dmu_MainFunction();
     }
   }
 } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */
@@ -786,26 +950,25 @@ TASK(MotorTask) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unreachable */
 
   for(;;)
   {
-    (void)WaitEvent(Rte_Ev_Run_MotorCdd_MotorCDDMainFunction | Rte_Ev_Run_MotorCdd_MotorCdd_AdcOnSampleReady_Rp_AdcSampleReady_AdcSampleReady | Rte_Ev_Run_MotorControll_MotorControll_MainFunction); /* PRQA S 3417 */ /* MD_Rte_Os */
+    (void)WaitEvent(Rte_Ev_Run_MotorCdd_MotorCdd_AdcOnSampleReady_Rp_AdcSampleReady_AdcSampleReady | Rte_Ev_Run_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter); /* PRQA S 3417 */ /* MD_Rte_Os */
     (void)GetEvent(MotorTask, &ev); /* PRQA S 3417 */ /* MD_Rte_Os */
-    (void)ClearEvent(ev & (Rte_Ev_Run_MotorCdd_MotorCDDMainFunction | Rte_Ev_Run_MotorCdd_MotorCdd_AdcOnSampleReady_Rp_AdcSampleReady_AdcSampleReady | Rte_Ev_Run_MotorControll_MotorControll_MainFunction)); /* PRQA S 3417 */ /* MD_Rte_Os */
-
-    if ((ev & Rte_Ev_Run_MotorControll_MotorControll_MainFunction) != (EventMaskType)0)
-    {
-      /* call runnable */
-      MotorControll_MainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
-    }
-
-    if ((ev & Rte_Ev_Run_MotorCdd_MotorCDDMainFunction) != (EventMaskType)0)
-    {
-      /* call runnable */
-      MotorCDDMainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
-    }
+    (void)ClearEvent(ev & (Rte_Ev_Run_MotorCdd_MotorCdd_AdcOnSampleReady_Rp_AdcSampleReady_AdcSampleReady | Rte_Ev_Run_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter)); /* PRQA S 3417 */ /* MD_Rte_Os */
 
     if ((ev & Rte_Ev_Run_MotorCdd_MotorCdd_AdcOnSampleReady_Rp_AdcSampleReady_AdcSampleReady) != (EventMaskType)0)
     {
       /* call runnable */
       MotorCdd_AdcOnSampleReady(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+    }
+
+    if ((ev & Rte_Ev_Run_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter) != (EventMaskType)0)
+    {
+      {
+        Rte_CS_ServerQueueInfo_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter.Rte_Active = 0;
+        /* call runnable */
+        Pp_MotorCdd_EnableInverter_EnableInverter(Rte_CS_ServerQueue_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter.arg);
+
+        (void)Schedule(); /* PRQA S 3417 */ /* MD_Rte_Os */
+      }
     }
   }
 } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */
@@ -821,6 +984,11 @@ TASK(MotorTask) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unreachable */
 /* module specific MISRA deviations:
    MD_Rte_1514:  MISRA rule: Rule8.9
      Reason:     Because of external definition, misra does not see the call.
+     Risk:       No functional risk. There is no side effect.
+     Prevention: Not required.
+
+   MD_Rte_2983:  MISRA rule: Rule2.2
+     Reason:     For generated code it is difficult to check the usage of each object.
      Risk:       No functional risk. There is no side effect.
      Prevention: Not required.
 
@@ -843,6 +1011,12 @@ TASK(MotorTask) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unreachable */
    MD_Rte_Os:
      Reason:     This justification is used as summary justification for all deviations caused by the MICROSAR OS
                  which is for testing of the RTE. Those deviations are no issues in the RTE code.
+     Risk:       No functional risk.
+     Prevention: Not required.
+
+   MD_Rte_Qac:
+     Reason:     This justification is used as summary justification for all deviations caused by wrong analysis tool results.
+                 The used analysis tool QAC 9.0 sometimes creates wrong messages. Those deviations are no issues in the RTE code.
      Risk:       No functional risk.
      Prevention: Not required.
 

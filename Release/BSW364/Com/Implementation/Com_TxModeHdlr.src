@@ -1,0 +1,1719 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc1148a --dep-file=BSW364\\Com\\Implementation\\.Com_TxModeHdlr.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=BSW364\\Com\\Implementation\\Com_TxModeHdlr.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW364\\Com\\Implementation\\Com_TxModeHdlr.src ..\\BSW364\\Com\\Implementation\\Com_TxModeHdlr.c"
+	.compiler_name		"ctc"
+	;source	'..\\BSW364\\Com\\Implementation\\Com_TxModeHdlr.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.Com_TxModeHdlr.Com_TxModeHdlr_InitTxIpdu',code
+	.sect	'.text.Com_TxModeHdlr.Com_TxModeHdlr_InitTxIpdu'
+	.align	2
+	
+	.global	Com_TxModeHdlr_InitTxIpdu
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	     1  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	     2   *  COPYRIGHT
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	     4   *  \verbatim
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	     5   *  Copyright (c) 2022 by Vector Informatik GmbH.                                                  All rights reserved.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	     6   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    10   *  \endverbatim
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    11   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    12   *  FILE DESCRIPTION
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    13   *  -----------------------------------------------------------------------------------------------------------------*/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    14  /*!        \file  Com_TxModeHdlr.c
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    15   *        \brief  MICROSAR Communication source file
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    16   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    17   *      \details  This is the implementation of the MICROSAR Communication module.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    18   *                The basic software module is based on the AUTOSAR Communication specification.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    19   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    20   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    21  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    22  #define COM_TXMODEHDLR_SOURCE
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    23  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    24  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    25   * MISRA JUSTIFICATION
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    26   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    27  /* PRQA  S 2741 EOF */ /* MD_CSL_ReducedToDefine */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    28  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    29  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    30    INCLUDES
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    31  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    32  #include "Com.h"
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    33  #include "Com_LLIf.h"
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    34  #include "Com_Timer.h"
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    35  #include "Com_TxModeHdlr.h"
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    36  #include "SchM_Com.h"
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    37  #include "vstdlib.h"
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    38  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    39  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    40    LOCAL CONSTANT MACROS
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    41  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    42  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    43  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    44    LOCAL FUNCTION MACROS
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    45  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    46  #if !defined (COM_LOCAL_INLINE)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    47  # define COM_LOCAL_INLINE LOCAL_INLINE
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    48  #endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    49  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    50  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    51    LOCAL DATA TYPES AND STRUCTURES
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    52  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    53  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    54  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    55    LOCAL DATA PROTOTYPES
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    56  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    57  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    58  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    59    GLOBAL DATA PROTOTYPES
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    60  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    61  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    62  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    63    LOCAL FUNCTION PROTOTYPES
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    64  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    65  #define COM_START_SEC_CODE
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    66  #include "MemMap.h"    /* PRQA S 5087 */        /* MD_MSR_MemMap */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    67  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    68  #if (COM_TXMODEINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    69  # if ((COM_PERIODICOFTXMODETRUE == STD_ON) || (COM_PERIODICOFTXMODEFALSE == STD_ON) || (COM_REPCNTOFTXMODETRUE == STD_ON) || (COM_REPCNTOFTXMODEFALSE == STD_ON) || (COM_MINIMUMDELAYOFTXMODEINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    70  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    71    Com_TxModeHdlr_EnterExclusiveArea_CycleCounter
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    72  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    73  /*! \brief    This function enters the tx cyclic processing exclusive area.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    74      \details  -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    75      \pre      -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    76      \trace    DSGN-COM_ISRTHRESHOLD_CONCEPT
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    77      \context  TASK
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    78  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    79  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_EnterExclusiveArea_CycleCounter(void);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    80  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    81  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    82    Com_TxModeHdlr_ExitExclusiveArea_CycleCounter
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    83  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    84  /*! \brief       This function exits the tx cyclic processing exclusive area.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    85      \details     -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    86      \pre         -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    87      \param[in]   txProcessingISRLockCounterIdx    index of the indirection from the main function tx to the ISRLock counter
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    88      \trace       DSGN-COM_ISRTHRESHOLD_CONCEPT
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    89      \context     TASK
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    90  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    91  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_ExitExclusiveArea_CycleCounter(Com_TxProcessingISRLockCounterIdxOfMainFunctionTxStructType txProcessingISRLockCounterIdx);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    92  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    93  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    94    Com_TxModeHdlr_ThresholdCheck_CycleCounter
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    95  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    96  /*! \brief      This function checks if the ISR Lock must be opened
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    97      \details    -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    98      \pre        -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	    99      \param[in]  txProcessingISRLockCounterIdx    index of the indirection from the main function tx to the ISRLock counter
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   100      \trace      DSGN-COM_ISRTHRESHOLD_CONCEPT
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   101      \context    TASK
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   102  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   103  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_ThresholdCheck_CycleCounter(Com_TxProcessingISRLockCounterIdxOfMainFunctionTxStructType txProcessingISRLockCounterIdx);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   104  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   105  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   106  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   107    Com_TxModeHdlr_EnterExclusiveArea
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   108  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   109  /*! \brief    This function enters the tx processing exclusive area.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   110      \details  -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   111      \pre      -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   112      \trace    DSGN-COM_ISRTHRESHOLD_CONCEPT
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   113      \context  TASK
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   114  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   115  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_EnterExclusiveArea(void);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   116  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   117  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   118    Com_TxModeHdlr_ExitExclusiveArea
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   119  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   120  /*! \brief        This function exits the tx processing exclusive area.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   121      \details      -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   122      \pre          -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   123      \param[in]    txProcessingISRLockCounterIdx    index of the indirection from the main function tx to the ISRLock counter
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   124      \trace        DSGN-COM_ISRTHRESHOLD_CONCEPT
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   125      \context      TASK
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   126  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   127  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_ExitExclusiveArea(Com_TxProcessingISRLockCounterIdxOfMainFunctionTxStructType txProcessingISRLockCounterIdx);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   128  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   129  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   130    Com_TxModeHdlr_ThresholdCheck
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   131  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   132  /*! \brief        This function checks if the ISR Lock must be opened
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   133      \details      -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   134      \pre          -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   135      \param[in]    txProcessingISRLockCounterIdx    index of the indirection from the main function tx to the ISRLock counter
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   136      \trace        DSGN-COM_ISRTHRESHOLD_CONCEPT
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   137      \context      TASK
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   138  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   139  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_ThresholdCheck(Com_TxProcessingISRLockCounterIdxOfMainFunctionTxStructType txProcessingISRLockCounterIdx);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   140  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   141  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   142    Com_TxModeHdlr_MainFunctionTx_ProcessTransmit
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   143  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   144  /*! \brief        This function process the transmit requests of provided ComTxPduId.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   145      \details      -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   146      \pre          -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   147      \param[in]    ComTxPduId    ID of Tx I-PDU.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   148      \context      TASK
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   149  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   150  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_MainFunctionTx_ProcessTransmit(Com_TxPduInfoIterType ComTxPduId);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   151  #endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   152  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   153  #if ((COM_PERIODICOFTXMODETRUE == STD_ON) || (COM_PERIODICOFTXMODEFALSE == STD_ON) || (COM_REPCNTOFTXMODETRUE == STD_ON) || (COM_REPCNTOFTXMODEFALSE == STD_ON) || (COM_MINIMUMDELAYOFTXMODEINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   154  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   155    Com_TxModeHdlr_SetTransmitRequestAndCycleCnt
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   156  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   157  /*! \brief        This function processes the cyclic transmission for the passed ComTxPdu.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   158      \details      -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   159      \pre          -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   160      \param[in]    ComTxPduId ID of Tx I-PDU.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   161      \context      TASK
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   162      \trace        SPEC-2736819
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   163  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   164  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_SetTransmitRequestAndCycleCnt(Com_TxPduInfoIterType ComTxPduId);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   165  #endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   166  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   167  #if ((COM_PERIODICOFTXMODETRUE == STD_ON) || (COM_PERIODICOFTXMODEFALSE == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   168  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   169    Com_TxModeHdlr_ProcessCyclicPdu
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   170  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   171  /*! \brief        This function processes the cyclic transmission for the passed ComTxPdu.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   172      \details      -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   173      \pre          -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   174      \param[in]    ComTxPduId ID of Tx I-PDU.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   175      \param[out]   transmitRequest  Pointer to transmit request boolean flag.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   176      \context      TASK
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   177      \trace        SPEC-2736819
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   178  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   179  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_ProcessCyclicPdu(Com_TxPduInfoIterType ComTxPduId, P2VAR(Com_TransmitRequestType, AUTOMATIC, COM_APPL_VAR) transmitRequest);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   180  #endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   181  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   182  #if ((COM_REPCNTOFTXMODETRUE == STD_ON) || (COM_REPCNTOFTXMODEFALSE == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   183  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   184    Com_TxModeHdlr_ProcessRepetitions
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   185  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   186  /*! \brief        This function processes the repetitions for the passed ComTxPdu.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   187      \details      -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   188      \pre          -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   189      \param[in]    ComTxPduId ID of Tx I-PDU.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   190      \param[out]   transmitRequest  Pointer to transmit request boolean flag.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   191      \context      TASK
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   192      \trace        SPEC-2736819
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   193  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   194  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_ProcessRepetitions(Com_TxPduInfoIterType ComTxPduId, P2VAR(Com_TransmitRequestType, AUTOMATIC, COM_APPL_VAR) transmitRequest);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   195  #endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   196  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   197  #if (COM_TXSIGINFOFILTERINITVALUEINDENDIDXOFTXMODEINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   198  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   199    Com_TxModeHdlr_InitTxIpdu_InitFilterOldValueOfSignals
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   200  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   201  /*! \brief        Set the old filter value of signal to the initial value.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   202      \details      -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   203      \pre          -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   204      \param[in]    ComTxPduId ID of Tx I-PDU.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   205      \context      TASK
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   206  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   207  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_InitTxIpdu_InitFilterOldValueOfSignals(Com_TxPduInfoIterType ComPduId);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   208  #endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   209  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   210  #if (COM_TXGRPSIGINFOFILTERINITVALUEINDENDIDXOFTXMODEINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   211  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   212    Com_TxModeHdlr_InitTxIpdu_InitFilterOldValueOfGroupSignals
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   213  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   214  /*! \brief        Set the old filter value of group signal to the initial value.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   215      \details      -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   216      \pre          -
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   217      \param[in]    ComTxPduId ID of Tx I-PDU.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   218      \context      TASK
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   219  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   220  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_InitTxIpdu_InitFilterOldValueOfGroupSignals(Com_TxPduInfoIterType ComPduId);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   221  #endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   222  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   223  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   224    LOCAL FUNCTIONS
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   225  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   226  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   227  #if (COM_TXMODEINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   228  # if ((COM_PERIODICOFTXMODETRUE == STD_ON) || (COM_PERIODICOFTXMODEFALSE == STD_ON) || (COM_REPCNTOFTXMODETRUE == STD_ON) || (COM_REPCNTOFTXMODEFALSE == STD_ON) || (COM_MINIMUMDELAYOFTXMODEINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   229  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   230    Com_TxModeHdlr_EnterExclusiveArea_CycleCounter
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   231  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   232  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   233   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   234   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   235  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   236  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_EnterExclusiveArea_CycleCounter(void)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   237  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   238    /* #10 Enter the tx cyclic processing exclusive area */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   239    SchM_Enter_Com_COM_EXCLUSIVE_AREA_TX();
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   240  }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   241  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   242  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   243    Com_TxModeHdlr_ExitExclusiveArea_CycleCounter
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   244  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   245  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   246   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   247   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   248   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   249  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   250  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_ExitExclusiveArea_CycleCounter(Com_TxProcessingISRLockCounterIdxOfMainFunctionTxStructType txProcessingISRLockCounterIdx)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   251  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   252    /* #05 Reload the counter with the threshold value */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   253    Com_SetTxProcessingISRLockCounter(txProcessingISRLockCounterIdx, Com_GetTxProcessingISRLockThreshold());      /* SBSW_COM_CSL_VAR_ACCESS */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   254    /* #10 Exit the tx cyclic processing exclusive area */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   255    SchM_Exit_Com_COM_EXCLUSIVE_AREA_TX();
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   256  }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   257  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   258  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   259    Com_TxModeHdlr_ThresholdCheck_CycleCounter
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   260  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   261  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   262   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   263   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   264   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   265  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   266  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_ThresholdCheck_CycleCounter(Com_TxProcessingISRLockCounterIdxOfMainFunctionTxStructType txProcessingISRLockCounterIdx)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   267  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   268    if(Com_GetTxProcessingISRLockCounter(txProcessingISRLockCounterIdx) > 0u)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   269    {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   270      Com_DecTxProcessingISRLockCounter(txProcessingISRLockCounterIdx);   /* SBSW_COM_CSL_VAR_ACCESS */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   271    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   272    else
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   273    {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   274      Com_TxModeHdlr_ExitExclusiveArea_CycleCounter(txProcessingISRLockCounterIdx);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   275      Com_TxModeHdlr_EnterExclusiveArea_CycleCounter();
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   276    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   277  }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   278  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   279  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   280  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   281    Com_TxModeHdlr_EnterExclusiveArea
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   282  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   283  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   284   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   285   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   286  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   287  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_EnterExclusiveArea(void)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   288  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   289    /* #10 Enter the tx processing exclusive area */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   290    SchM_Enter_Com_COM_EXCLUSIVE_AREA_TX();
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   291  }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   292  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   293  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   294    Com_TxModeHdlr_ExitExclusiveArea
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   295  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   296  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   297   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   298   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   299   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   300  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   301  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_ExitExclusiveArea(Com_TxProcessingISRLockCounterIdxOfMainFunctionTxStructType txProcessingISRLockCounterIdx)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   302  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   303    /* #05 Reload the counter with the threshold value */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   304    Com_SetTxProcessingISRLockCounter(txProcessingISRLockCounterIdx, Com_GetTxProcessingISRLockThreshold());      /* SBSW_COM_CSL_VAR_ACCESS */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   305    /* #10 Exit the tx processing exclusive area */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   306    SchM_Exit_Com_COM_EXCLUSIVE_AREA_TX();
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   307  }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   308  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   309  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   310    Com_TxModeHdlr_ThresholdCheck
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   311  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   312  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   313   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   314   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   315   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   316  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   317  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_ThresholdCheck(Com_TxProcessingISRLockCounterIdxOfMainFunctionTxStructType txProcessingISRLockCounterIdx)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   318  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   319    if(Com_GetTxProcessingISRLockCounter(txProcessingISRLockCounterIdx) > 0u)     /* COV_COM_THRESHOLD_TX */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   320    {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   321      Com_DecTxProcessingISRLockCounter(txProcessingISRLockCounterIdx);   /* SBSW_COM_CSL_VAR_ACCESS */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   322    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   323    else
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   324    {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   325      Com_TxModeHdlr_ExitExclusiveArea(txProcessingISRLockCounterIdx);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   326      Com_TxModeHdlr_EnterExclusiveArea();
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   327    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   328  }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   329  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   330  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   331    Com_TxModeHdlr_MainFunctionTx_ProcessTransmit
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   332  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   333  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   334   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   335   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   336   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   337   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   338   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   339  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   340  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_MainFunctionTx_ProcessTransmit(Com_TxPduInfoIterType ComTxPduId)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   341  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   342    /* #10 If the passed Tx ComIPdu is active, the MDT has expired and a transmit request is set */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   343    if(Com_IsTxPduGrpActive(ComTxPduId))  /* COV_COM_NO_IPDUGROUPS */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   344    {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   345  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   346  # if (COM_MINIMUMDELAYOFTXMODEINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   347      /* Delay Time and Transmission Handling */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   348      if(Com_GetDelayTimeCnt(ComTxPduId) == 0u)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   349  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   350      {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   351        if(Com_IsTransmitRequest(ComTxPduId))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   352        {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   353          /* #20 Trigger the transmission by a call of Com_TxLLIf_Transmit check if the return of Com_TxLLIf_Transmit is positive, if ComRetryFailedTransmitRequest is enabled */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   354  # if (COM_RETRY_FAILED_TRANSMIT_REQUESTS == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   355          if(Com_TxLLIf_Transmit(ComTxPduId) == E_OK)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   356  # else
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   357          (void) Com_TxLLIf_Transmit(ComTxPduId);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   358  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   359          {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   360            /* #30 Reset the transmit request */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   361            Com_SetTransmitRequest(ComTxPduId, FALSE);    /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   362          }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   363        }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   364      }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   365    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   366  }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   367  #endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   368  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   369  #if ((COM_PERIODICOFTXMODETRUE == STD_ON) || (COM_PERIODICOFTXMODEFALSE == STD_ON) || (COM_REPCNTOFTXMODETRUE == STD_ON) || (COM_REPCNTOFTXMODEFALSE == STD_ON) || (COM_MINIMUMDELAYOFTXMODEINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   370  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   371    Com_TxModeHdlr_SetTransmitRequestAndCycleCnt
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   372  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   373  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   374   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   375   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   376   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   377   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   378  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   379  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_SetTransmitRequestAndCycleCnt(Com_TxPduInfoIterType ComTxPduId)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   380  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   381    Com_TransmitRequestType transmitRequest = Com_IsTransmitRequest(ComTxPduId);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   382  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   383  # if ((COM_PERIODICOFTXMODETRUE == STD_ON) || (COM_PERIODICOFTXMODEFALSE == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   384    Com_TxModeHdlr_ProcessCyclicPdu(ComTxPduId, &transmitRequest);        /* SBSW_COM_FCTCALL_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   385  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   386  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   387  # if ((COM_REPCNTOFTXMODETRUE == STD_ON) || (COM_REPCNTOFTXMODEFALSE == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   388    Com_TxModeHdlr_ProcessRepetitions(ComTxPduId, &transmitRequest);      /* SBSW_COM_FCTCALL_STACKPTR */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   389  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   390  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   391    Com_SetTransmitRequest(ComTxPduId, transmitRequest);  /* SBSW_COM_CSL01 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   392  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   393  # if (COM_MINIMUMDELAYOFTXMODEINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   394    if(Com_GetDelayTimeCnt(ComTxPduId) != 0u)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   395    {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   396      Com_DecDelayTimeCnt(ComTxPduId);    /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   397    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   398  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   399  }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   400  #endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   401  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   402  #if ((COM_PERIODICOFTXMODETRUE == STD_ON) || (COM_PERIODICOFTXMODEFALSE == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   403  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   404    Com_TxModeHdlr_ProcessCyclicPdu
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   405  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   406  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   407   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   408   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   409   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   410   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   411  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   412  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_ProcessCyclicPdu(Com_TxPduInfoIterType ComTxPduId, P2VAR(Com_TransmitRequestType, AUTOMATIC, COM_APPL_VAR) transmitRequest)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   413  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   414    /* #10 If the passed Tx ComIPdu is in a cyclic Pdu, decrement the cycle counter */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   415    if(Com_IsCyclicSendRequest(ComTxPduId))       /* COV_COM_ONLY_CYCLIC_PDU */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   416    {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   417      Com_DecCycleTimeCnt(ComTxPduId);    /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   418      /* #20 If the cycle counter is 0, set the transmit flag and reload the cycle counter */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   419      if(Com_GetCycleTimeCnt(ComTxPduId) == 0u)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   420      {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   421        *transmitRequest = TRUE;  /* SBSW_COM_WRITEACCESS_STACKPTR_01 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   422  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   423        Com_SetCycleTimeCnt(ComTxPduId, (Com_CycleTimeCntType) Com_TxModeHdlr_GetCurrentTimePeriod(ComTxPduId));  /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */ /* COV_COM_SETCYCLETIMECOUNT */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   424  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   425  # if (COM_EXISTS_NORMAL_MODEOFTXTOUTINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   426        /* #30 Reload Tx Deadline monitoring timer if configured */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   427        Com_TxModeHdlr_ReloadTxDlMonCounter(ComTxPduId);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   428  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   429      }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   430    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   431  }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   432  #endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   433  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   434  #if ((COM_REPCNTOFTXMODETRUE == STD_ON) || (COM_REPCNTOFTXMODEFALSE == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   435  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   436    Com_TxModeHdlr_ProcessRepetitions
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   437  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   438  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   439   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   440   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   441   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   442  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   443  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_ProcessRepetitions(Com_TxPduInfoIterType ComTxPduId, P2VAR(Com_TransmitRequestType, AUTOMATIC, COM_APPL_VAR) transmitRequest)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   444  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   445    /* #10 If the repetition count is greater 0, decrement the repetition cycle counter */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   446    if(Com_GetRepCnt(ComTxPduId) > 0u)    /* COV_COM_NONTRIGGERED_REPETITION */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   447    {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   448  # if (COM_MIXEDMODEPERIODICSUPPRESSION == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   449      if(!Com_IsInitialTransmit(ComTxPduId))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   450      {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   451        *transmitRequest = FALSE; /* SBSW_COM_WRITEACCESS_STACKPTR_01 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   452      }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   453  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   454  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   455      Com_DecRepCycleCnt(ComTxPduId);     /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   456      /* #20 If the repetition cycle counter is equal 0, set a transmit request and reload the repetition cycle counter */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   457      if(Com_GetRepCycleCnt(ComTxPduId) == 0u)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   458      {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   459        *transmitRequest = TRUE;  /* SBSW_COM_WRITEACCESS_STACKPTR_01 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   460        /* reload the repetition cycle time counter */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   461        Com_SetRepCycleCnt(ComTxPduId, Com_TxModeHdlr_GetCurrentRepetitionPeriod(ComTxPduId));    /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   462      }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   463    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   464  }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   465  #endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   466  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   467  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   468  #if (COM_TXSIGINFOFILTERINITVALUEINDENDIDXOFTXMODEINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   469  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   470    Com_TxModeHdlr_InitTxIpdu_InitFilterOldValueOfSignals
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   471  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   472  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   473   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   474   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   475  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   476  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_InitTxIpdu_InitFilterOldValueOfSignals(Com_TxPduInfoIterType ComPduId)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   477  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   478    /* \trace SPEC-2736775 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   479    /* #10 Iterate over all related tx filter infos and set the old filter value to the initial value, the buffer is ApplType specific */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   480    Com_TxSigInfoFilterInitValueIndEndIdxOfTxModeInfoType idxTxSigInfoFilterInitValueInd = Com_GetTxSigInfoFilterInitValueIndStartIdxOfTxModeInfo(ComPduId);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   481    for(; idxTxSigInfoFilterInitValueInd < Com_GetTxSigInfoFilterInitValueIndEndIdxOfTxModeInfo(ComPduId); idxTxSigInfoFilterInitValueInd++)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   482    {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   483      Com_SignalIdType idxTxSigInfo = (Com_SignalIdType) Com_GetTxSigInfoFilterInitValueInd(idxTxSigInfoFilterInitValueInd);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   484  # if(COM_FILTERINITVALUEUSEDOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   485      if(Com_IsFilterInitValueUsedOfTxSigInfo(idxTxSigInfo))      /* COV_COM_FEATURE_ALWAYS_TRUE_TX */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   486      {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   487        Com_FilterInitValueIdxOfTxSigInfoType idxTxFilterOldValue = Com_GetFilterInitValueIdxOfTxSigInfo(idxTxSigInfo);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   488        switch (Com_GetFilterInitValueOfTxSigInfo(idxTxSigInfo))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   489        {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   490  #  if (COM_EXISTS_TXFILTERINITVALUEUINT8_FILTERINITVALUEOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   491          case COM_TXFILTERINITVALUEUINT8_FILTERINITVALUEOFTXSIGINFO:
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   492          {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   493            Com_SetTxFilterOldValueUInt8(idxTxFilterOldValue, Com_GetTxFilterInitValueUInt8(idxTxFilterOldValue));      /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   494            break;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   495          }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   496  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   497  #  if (COM_EXISTS_TXFILTERINITVALUESINT8_FILTERINITVALUEOFTXSIGINFO == STD_ON) 
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   498          case COM_TXFILTERINITVALUESINT8_FILTERINITVALUEOFTXSIGINFO:
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   499          {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   500            Com_SetTxFilterOldValueSInt8(idxTxFilterOldValue, Com_GetTxFilterInitValueSInt8(idxTxFilterOldValue));      /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   501            break;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   502          }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   503  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   504  #  if (COM_EXISTS_TXFILTERINITVALUEUINT16_FILTERINITVALUEOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   505          case COM_TXFILTERINITVALUEUINT16_FILTERINITVALUEOFTXSIGINFO:
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   506          {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   507            Com_SetTxFilterOldValueUInt16(idxTxFilterOldValue, Com_GetTxFilterInitValueUInt16(idxTxFilterOldValue));    /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   508            break;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   509          }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   510  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   511  #  if (COM_EXISTS_TXFILTERINITVALUESINT16_FILTERINITVALUEOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   512          case COM_TXFILTERINITVALUESINT16_FILTERINITVALUEOFTXSIGINFO:
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   513          {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   514            Com_SetTxFilterOldValueSInt16(idxTxFilterOldValue, Com_GetTxFilterInitValueSInt16(idxTxFilterOldValue));    /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   515            break;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   516          }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   517  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   518  #  if (COM_EXISTS_TXFILTERINITVALUEUINT32_FILTERINITVALUEOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   519          case COM_TXFILTERINITVALUEUINT32_FILTERINITVALUEOFTXSIGINFO:
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   520          {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   521            Com_SetTxFilterOldValueUInt32(idxTxFilterOldValue, Com_GetTxFilterInitValueUInt32(idxTxFilterOldValue));    /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   522            break;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   523          }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   524  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   525  #  if (COM_EXISTS_TXFILTERINITVALUESINT32_FILTERINITVALUEOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   526          case COM_TXFILTERINITVALUESINT32_FILTERINITVALUEOFTXSIGINFO:
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   527          {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   528            Com_SetTxFilterOldValueSInt32(idxTxFilterOldValue, Com_GetTxFilterInitValueSInt32(idxTxFilterOldValue));    /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   529            break;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   530          }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   531  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   532  #  if (COM_EXISTS_TXFILTERINITVALUEUINT64_FILTERINITVALUEOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   533          case COM_TXFILTERINITVALUEUINT64_FILTERINITVALUEOFTXSIGINFO:
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   534          {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   535            Com_SetTxFilterOldValueUInt64(idxTxFilterOldValue, Com_GetTxFilterInitValueUInt64(idxTxFilterOldValue));    /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   536            break;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   537          }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   538  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   539  #  if (COM_EXISTS_TXFILTERINITVALUESINT64_FILTERINITVALUEOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   540          case COM_TXFILTERINITVALUESINT64_FILTERINITVALUEOFTXSIGINFO:
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   541          {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   542            Com_SetTxFilterOldValueSInt64(idxTxFilterOldValue, Com_GetTxFilterInitValueSInt64(idxTxFilterOldValue));    /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   543            break;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   544          }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   545  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   546  #  if (COM_EXISTS_TXFILTERINITVALUEFLOAT32_FILTERINITVALUEOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   547          case COM_TXFILTERINITVALUEFLOAT32_FILTERINITVALUEOFTXSIGINFO:
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   548          {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   549            Com_SetTxFilterOldValueFloat32(idxTxFilterOldValue, Com_GetTxFilterInitValueFloat32(idxTxFilterOldValue));  /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   550            break;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   551          }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   552  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   553  #  if (COM_EXISTS_TXFILTERINITVALUEFLOAT64_FILTERINITVALUEOFTXSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   554          case COM_TXFILTERINITVALUEFLOAT64_FILTERINITVALUEOFTXSIGINFO:
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   555          {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   556            Com_SetTxFilterOldValueFloat64(idxTxFilterOldValue, Com_GetTxFilterInitValueFloat64(idxTxFilterOldValue));  /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   557            break;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   558          }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   559  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   560          default:       /* COV_COM_MISRA */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   561            break;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   562        }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   563      }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   564  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   565  # if ((COM_TXFILTERINITVALUEARRAYBASEDFILTERINITVALUEUSEDOFTXSIGINFO == STD_ON) && (COM_EXISTS_UINT8_N_APPLTYPEOFTXSIGINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   566      if(Com_IsTxFilterInitValueArrayBasedFilterInitValueUsedOfTxSigInfo(idxTxSigInfo))   /* COV_COM_FEATURE_ALWAYS_TRUE_TX */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   567      {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   568        if(Com_GetApplTypeOfTxSigInfo(idxTxSigInfo) == COM_UINT8_N_APPLTYPEOFTXSIGINFO) /* COV_COM_ONLY_ARRAYBASED_TX_SIGGRP_SIG_01 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   569        {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   570          Com_TxFilterInitValueArrayBasedIterType bufferIdx = Com_GetTxFilterInitValueArrayBasedFilterInitValueStartIdxOfTxSigInfo(idxTxSigInfo);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   571          VStdMemCpyRamToRam(Com_GetAddrTxFilterOldValueArrayBased(bufferIdx), Com_GetAddrTxFilterInitValueArrayBased(bufferIdx), Com_GetTxFilterInitValueArrayBasedFilterInitValueLengthOfTxSigInfo(idxTxSigInfo));    /* PRQA S 0315 */ /* MD_MSR_VStdLibCopy */ /* SBSW_COM_CSL03 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   572        }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   573      }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   574  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   575    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   576  }       /* PRQA S 6030 */ /* MD_MSR_STCYC */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   577  #endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   578  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   579  #if (COM_TXGRPSIGINFOFILTERINITVALUEINDENDIDXOFTXMODEINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   580  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   581    Com_TxModeHdlr_InitTxIpdu_InitFilterOldValueOfGroupSignals
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   582  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   583  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   584   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   585   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   586  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   587  COM_LOCAL_INLINE FUNC(void, COM_CODE) Com_TxModeHdlr_InitTxIpdu_InitFilterOldValueOfGroupSignals(Com_TxPduInfoIterType ComPduId)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   588  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   589    /* \trace SPEC-2736775 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   590    /* #10 Iterate over all related tx filter infos and set the old filter value to the initial value, the buffer is ApplType specific */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   591    Com_TxGrpSigInfoFilterInitValueIndEndIdxOfTxModeInfoType idxTxGrpSigInfoFilterInitValueInd = Com_GetTxGrpSigInfoFilterInitValueIndStartIdxOfTxModeInfo(ComPduId);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   592    for(; idxTxGrpSigInfoFilterInitValueInd < Com_GetTxGrpSigInfoFilterInitValueIndEndIdxOfTxModeInfo(ComPduId); idxTxGrpSigInfoFilterInitValueInd++)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   593    {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   594      Com_SignalIdType idxTxGrpSigInfo = (Com_SignalIdType) Com_GetTxGrpSigInfoFilterInitValueInd(idxTxGrpSigInfoFilterInitValueInd);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   595  # if(COM_FILTERINITVALUEUSEDOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   596      if(Com_IsFilterInitValueUsedOfTxGrpSigInfo(idxTxGrpSigInfo))        /* COV_COM_FEATURE_ALWAYS_TRUE_TX */ /* PRQA S 2842 */ /* MD_Com_2842 */ /* Index idxTxGrpSigInfo is iterated from start to end index, so the optional indirection is always valid */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   597      {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   598        Com_FilterInitValueIdxOfTxGrpSigInfoType idxTxFilterOldValue = Com_GetFilterInitValueIdxOfTxGrpSigInfo(idxTxGrpSigInfo);  /* PRQA S 2842 */ /* MD_Com_2842 */ /* Index idxTxGrpSigInfo is iterated from start to end index, so the optional indirection is always valid */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   599        switch (Com_GetFilterInitValueOfTxGrpSigInfo(idxTxGrpSigInfo))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   600        {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   601  #  if (COM_EXISTS_TXFILTERINITVALUEUINT8_FILTERINITVALUEOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   602          case COM_TXFILTERINITVALUEUINT8_FILTERINITVALUEOFTXGRPSIGINFO:
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   603          {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   604            Com_SetTxFilterOldValueUInt8(idxTxFilterOldValue, Com_GetTxFilterInitValueUInt8(idxTxFilterOldValue));      /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   605            break;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   606          }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   607  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   608  #  if (COM_EXISTS_TXFILTERINITVALUESINT8_FILTERINITVALUEOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   609          case COM_TXFILTERINITVALUESINT8_FILTERINITVALUEOFTXGRPSIGINFO:
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   610          {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   611            Com_SetTxFilterOldValueSInt8(idxTxFilterOldValue, Com_GetTxFilterInitValueSInt8(idxTxFilterOldValue));      /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   612            break;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   613          }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   614  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   615  #  if (COM_EXISTS_TXFILTERINITVALUEUINT16_FILTERINITVALUEOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   616          case COM_TXFILTERINITVALUEUINT16_FILTERINITVALUEOFTXGRPSIGINFO:
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   617          {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   618            Com_SetTxFilterOldValueUInt16(idxTxFilterOldValue, Com_GetTxFilterInitValueUInt16(idxTxFilterOldValue));    /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   619            break;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   620          }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   621  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   622  #  if (COM_EXISTS_TXFILTERINITVALUESINT16_FILTERINITVALUEOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   623          case COM_TXFILTERINITVALUESINT16_FILTERINITVALUEOFTXGRPSIGINFO:
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   624          {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   625            Com_SetTxFilterOldValueSInt16(idxTxFilterOldValue, Com_GetTxFilterInitValueSInt16(idxTxFilterOldValue));    /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   626            break;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   627          }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   628  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   629  #  if (COM_EXISTS_TXFILTERINITVALUEUINT32_FILTERINITVALUEOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   630          case COM_TXFILTERINITVALUEUINT32_FILTERINITVALUEOFTXGRPSIGINFO:
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   631          {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   632            Com_SetTxFilterOldValueUInt32(idxTxFilterOldValue, Com_GetTxFilterInitValueUInt32(idxTxFilterOldValue));    /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   633            break;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   634          }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   635  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   636  #  if (COM_EXISTS_TXFILTERINITVALUESINT32_FILTERINITVALUEOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   637          case COM_TXFILTERINITVALUESINT32_FILTERINITVALUEOFTXGRPSIGINFO:
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   638          {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   639            Com_SetTxFilterOldValueSInt32(idxTxFilterOldValue, Com_GetTxFilterInitValueSInt32(idxTxFilterOldValue));    /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   640            break;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   641          }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   642  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   643  #  if (COM_EXISTS_TXFILTERINITVALUEUINT64_FILTERINITVALUEOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   644          case COM_TXFILTERINITVALUEUINT64_FILTERINITVALUEOFTXGRPSIGINFO:
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   645          {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   646            Com_SetTxFilterOldValueUInt64(idxTxFilterOldValue, Com_GetTxFilterInitValueUInt64(idxTxFilterOldValue));    /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   647            break;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   648          }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   649  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   650  #  if (COM_EXISTS_TXFILTERINITVALUESINT64_FILTERINITVALUEOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   651          case COM_TXFILTERINITVALUESINT64_FILTERINITVALUEOFTXGRPSIGINFO:
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   652          {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   653            Com_SetTxFilterOldValueSInt64(idxTxFilterOldValue, Com_GetTxFilterInitValueSInt64(idxTxFilterOldValue));    /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   654            break;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   655          }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   656  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   657  #  if (COM_EXISTS_TXFILTERINITVALUEFLOAT32_FILTERINITVALUEOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   658          case COM_TXFILTERINITVALUEFLOAT32_FILTERINITVALUEOFTXGRPSIGINFO:
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   659          {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   660            Com_SetTxFilterOldValueFloat32(idxTxFilterOldValue, Com_GetTxFilterInitValueFloat32(idxTxFilterOldValue));  /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   661            break;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   662          }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   663  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   664  #  if (COM_EXISTS_TXFILTERINITVALUEFLOAT64_FILTERINITVALUEOFTXGRPSIGINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   665          case COM_TXFILTERINITVALUEFLOAT64_FILTERINITVALUEOFTXGRPSIGINFO:
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   666          {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   667            Com_SetTxFilterOldValueFloat64(idxTxFilterOldValue, Com_GetTxFilterInitValueFloat64(idxTxFilterOldValue));  /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   668            break;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   669          }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   670  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   671          default:       /* COV_COM_MISRA */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   672            break;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   673        }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   674      }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   675  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   676  # if ((COM_TXFILTERINITVALUEARRAYBASEDFILTERINITVALUEUSEDOFTXGRPSIGINFO == STD_ON) && (COM_EXISTS_UINT8_N_APPLTYPEOFTXGRPSIGINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   677      if(Com_IsTxFilterInitValueArrayBasedFilterInitValueUsedOfTxGrpSigInfo(idxTxGrpSigInfo))     /* COV_COM_FEATURE_ALWAYS_TRUE_TX */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   678      {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   679        if(Com_GetApplTypeOfTxGrpSigInfo(idxTxGrpSigInfo) == COM_UINT8_N_APPLTYPEOFTXGRPSIGINFO) /* COV_COM_ONLY_ARRAYBASED_TX_SIGGRP_SIG_01 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   680        {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   681          Com_TxFilterInitValueArrayBasedIterType bufferIdx = Com_GetTxFilterInitValueArrayBasedFilterInitValueStartIdxOfTxGrpSigInfo(idxTxGrpSigInfo);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   682          VStdMemCpyRamToRam(Com_GetAddrTxFilterOldValueArrayBased(bufferIdx), Com_GetAddrTxFilterInitValueArrayBased(bufferIdx), Com_GetTxFilterInitValueArrayBasedFilterInitValueLengthOfTxGrpSigInfo(idxTxGrpSigInfo));      /* PRQA S 0315 */ /* MD_MSR_VStdLibCopy */ /* SBSW_COM_CSL03 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   683        }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   684      }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   685  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   686    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   687  }       /* PRQA S 6030 */ /* MD_MSR_STCYC */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   688  #endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   689  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   690  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   691  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   692  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   693    GLOBAL FUNCTIONS
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   694  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   695  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   696  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   697  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   698  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   699  #if (COM_TXMODEINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   700  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   701    Com_TxModeHdlr_InitTxIpdu
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   702  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   703  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   704   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   705   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   706   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   707   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   708   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   709   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   710   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   711  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   712  FUNC(void, COM_CODE) Com_TxModeHdlr_InitTxIpdu(Com_TxPduInfoIterType ComPduId)
+; Function Com_TxModeHdlr_InitTxIpdu
+Com_TxModeHdlr_InitTxIpdu:	.type	func
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   713  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   714  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   715    /* #10 Set the old filter value to the initial value */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   716  # if (COM_TXSIGINFOFILTERINITVALUEINDENDIDXOFTXMODEINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   717    Com_TxModeHdlr_InitTxIpdu_InitFilterOldValueOfSignals(ComPduId);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   718  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   719  # if (COM_TXGRPSIGINFOFILTERINITVALUEINDENDIDXOFTXMODEINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   720    Com_TxModeHdlr_InitTxIpdu_InitFilterOldValueOfGroupSignals(ComPduId);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   721  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   722  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   723  # if ((COM_FILTERINFOUSEDOFTXGRPSIGINFO == STD_ON) || (COM_FILTERINFOUSEDOFTXSIGINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   724    {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   725      /* #20 Iterate overall related tx filter states and set them to their initial state */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   726      Com_TxFilterInitStateEndIdxOfTxModeInfoType idxTxFilterInitState = Com_GetTxFilterInitStateStartIdxOfTxModeInfo(ComPduId);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   727      for(; idxTxFilterInitState < Com_GetTxFilterInitStateEndIdxOfTxModeInfo(ComPduId); idxTxFilterInitState++)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   728      {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   729        Com_SetTxFilterState(idxTxFilterInitState, Com_IsTxFilterInitState(idxTxFilterInitState));        /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   730      }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   731    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   732  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   733  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   734    /* #30 Set the initial Tx Mode of the passed Tx ComIPdu, initialize that mode and remove the transmit request */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   735    Com_SetCurrentTxMode(ComPduId, Com_IsInitModeOfTxModeInfo(ComPduId)); /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+	mov	d8,d4
+	lea	a15,Com_CurrentTxMode
+	addsc.a	a12,a15,d8,#0
+	fcall	.cocofun_3
+	addsc.a	a15,a15,d8,#1
+	ld.bu	d15,[a15]
+	ne	d15,d15,#0
+	st.b	[a12],d15
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   736    Com_TxModeHdlr_InitTxMode(ComPduId);
+	call	Com_TxModeHdlr_InitTxMode
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   737    Com_SetTransmitRequest(ComPduId, FALSE);      /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+	lea	a15,Com_TransmitRequest
+	addsc.a	a15,a15,d8,#0
+	mov	d15,#0
+	st.b	[a15],d15
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   738  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   739  # if ((COM_PERIODICOFTXMODETRUE == STD_ON) || (COM_PERIODICOFTXMODEFALSE == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   740    /* #40 If the current tx mode is a cyclic tx mode, set the cycle counter to the start delay time */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   741    if(Com_IsCyclicSendRequest(ComPduId)) /* COV_COM_CYCLIC_SEND_REQUEST */
+	lea	a15,Com_CyclicSendRequest
+	addsc.a	a15,a15,d8,#0
+	ld.bu	d15,[a15]
+	jeq	d15,#0,.L2
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   742    {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   743      Com_SetCycleTimeCnt(ComPduId, (Com_CycleTimeCntType) Com_TxModeHdlr_GetCurrentTimeOffset(ComPduId));        /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */ /* COV_COM_SETCYCLETIMECOUNT */
+	ld.bu	d15,[a12]
+	jeq	d15,#0,.L3
+	extr.u	d15,d8,#0,#8
+	fcall	.cocofun_4
+	ld.bu	d15,[a15]1
+	j	.L4
+.L3:
+	mov	d15,#1
+.L4:
+	lea	a15,Com_CycleTimeCnt
+	addsc.a	a15,a15,d8,#0
+	st.b	[a15],d15
+.L2:
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   744    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   745  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   746  # if (COM_MINIMUMDELAYOFTXMODEINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   747    /* #50 Set the minimum delay counter to 0 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   748    Com_SetDelayTimeCnt(ComPduId, 0u);    /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   749  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   750    /* #60 Clear eventbased trigger Flag if configured */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   751  # if (COM_DIRECTTRIGGER == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   752    Com_SetDirectTrigger(ComPduId, FALSE);        /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   753  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   754  }       /* PRQA S 6010, 6030 */ /* MD_MSR_STPTH, MD_MSR_STCYC */
+	ret
+	
+__Com_TxModeHdlr_InitTxIpdu_function_end:
+	.size	Com_TxModeHdlr_InitTxIpdu,__Com_TxModeHdlr_InitTxIpdu_function_end-Com_TxModeHdlr_InitTxIpdu
+	; End of function
+	
+	.sdecl	'.text.Com_TxModeHdlr.Com_TxModeHdlr_MainFunctionTx_CycleCounter',code
+	.sect	'.text.Com_TxModeHdlr.Com_TxModeHdlr_MainFunctionTx_CycleCounter'
+	.align	2
+	
+	.global	Com_TxModeHdlr_MainFunctionTx_CycleCounter
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   755  #endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   756  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   757  #if ((COM_PERIODICOFTXMODETRUE == STD_ON) || (COM_PERIODICOFTXMODEFALSE == STD_ON) || (COM_REPCNTOFTXMODETRUE == STD_ON) || (COM_REPCNTOFTXMODEFALSE == STD_ON) || (COM_MINIMUMDELAYOFTXMODEINFO == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   758  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   759    Com_TxModeHdlr_MainFunctionTx_CycleCounter
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   760  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   761  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   762   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   763   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   764   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   765  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   766  FUNC(void, COM_CODE) Com_TxModeHdlr_MainFunctionTx_CycleCounter(Com_MainFunctionTxStructIterType mainFunctionId)
+; Function Com_TxModeHdlr_MainFunctionTx_CycleCounter
+Com_TxModeHdlr_MainFunctionTx_CycleCounter:	.type	func
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   767  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   768    Com_TxCyclicPduIterType ComTxCyclicPduIterator;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   769    Com_TxPduInfoIterType ComTxPduId;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   770    Com_TxCyclicPduOfMainFunctionTxIndIterType txCyclicPduIndIdx = Com_GetTxCyclicPduOfMainFunctionTxIndStartIdxOfMainFunctionTxStruct(mainFunctionId);
+	mov	d15,d4
+	lea	a15,Com_MainFunctionTxStruct
+	addsc.a	a15,a15,d15,#1
+	ld.bu	d8,[a15]
+	call	SuspendAllInterrupts
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   771    Com_TxProcessingISRLockCounterIdxOfMainFunctionTxStructType txProcessingISRLockCounterIdx = Com_GetTxProcessingISRLockCounterIdxOfMainFunctionTxStruct(mainFunctionId);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   772  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   773    Com_TxModeHdlr_EnterExclusiveArea_CycleCounter();
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   774  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   775    /* #10 Iterate over all Tx Pdu Infos */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   776    for(; txCyclicPduIndIdx < Com_GetTxCyclicPduOfMainFunctionTxIndEndIdxOfMainFunctionTxStruct(mainFunctionId); txCyclicPduIndIdx++)
+	add	d0,d15,#4
+	lea	a15,Com_TxProcessingISRLockCounter
+	addsc.a	a12,a15,d15,#1
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   777    {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   778      ComTxCyclicPduIterator = Com_GetTxCyclicPduOfMainFunctionTxInd(txCyclicPduIndIdx);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   779  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   780      ComTxPduId = Com_GetTxPduInfoIdxOfTxCyclicPdu(ComTxCyclicPduIterator);
+	extr.u	d9,d0,#0,#8
+	lea	a15,Com_TxCyclicPdu
+	addsc.a	a13,a15,d8,#0
+	j	.L5
+.L6:
+	ld.bu	d15,[a13+]
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   781      {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   782        /* #20 If the Tx ComIPdu is active, process the cyclic transmission mode, the repetition counter and the MDT counter */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   783        if(Com_IsTxPduGrpActive(ComTxPduId))
+	lea	a15,Com_TxPduGrpActive
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d0,[a15]
+	jeq	d0,#0,.L7
+	lea	a15,Com_TransmitRequest
+	addsc.a	a2,a15,d15,#0
+	lea	a15,Com_CyclicSendRequest
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d0,[a2]
+	ld.bu	d1,[a15]
+	ne	d0,d0,#0
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   415    if(Com_IsCyclicSendRequest(ComTxPduId))       /* COV_COM_ONLY_CYCLIC_PDU */      (inlined)
+	jeq	d1,#0,.L8
+	lea	a15,Com_CycleTimeCnt
+	addsc.a	a4,a15,d15,#0
+	ld.bu	d1,[a4]
+	add	d1,#-1
+	extr.u	d1,d1,#0,#8
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   419      if(Com_GetCycleTimeCnt(ComTxPduId) == 0u)      (inlined)
+	jne	d1,#0,.L9
+	lea	a15,Com_CurrentTxMode
+	addsc.a	a15,a15,d15,#0
+	mov	d0,#1
+	ld.bu	d1,[a15]
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   423        Com_SetCycleTimeCnt(ComTxPduId, (Com_CycleTimeCntType) Com_TxModeHdlr_GetCurrentTimePeriod(ComTxPduId));  /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */ /* COV_COM_SETCYCLETIMECOUNT */      (inlined)
+	jeq	d1,#0,.L10
+	fcall	.cocofun_4
+	ld.bu	d1,[a15]2
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   423        Com_SetCycleTimeCnt(ComTxPduId, (Com_CycleTimeCntType) Com_TxModeHdlr_GetCurrentTimePeriod(ComTxPduId));  /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */ /* COV_COM_SETCYCLETIMECOUNT */      (inlined)
+	j	.L11
+.L10:
+	fcall	.cocofun_3
+	addsc.a	a15,a15,d15,#1
+	ld.bu	d15,[a15]1
+	lea	a15,Com_TxModeFalse
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d1,[a15]
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   423        Com_SetCycleTimeCnt(ComTxPduId, (Com_CycleTimeCntType) Com_TxModeHdlr_GetCurrentTimePeriod(ComTxPduId));  /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */ /* COV_COM_SETCYCLETIMECOUNT */      (inlined)
+.L11:
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   419      if(Com_GetCycleTimeCnt(ComTxPduId) == 0u)      (inlined)
+.L9:
+	st.b	[a4],d1
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   415    if(Com_IsCyclicSendRequest(ComTxPduId))       /* COV_COM_ONLY_CYCLIC_PDU */      (inlined)
+.L8:
+	st.b	[a2],d0
+.L7:
+	ld.hu	d15,[a12]0
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   268    if(Com_GetTxProcessingISRLockCounter(txProcessingISRLockCounterIdx) > 0u)      (inlined)
+	jeq	d15,#0,.L12
+	add	d15,#-1
+	st.h	[a12],d15
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   270      Com_DecTxProcessingISRLockCounter(txProcessingISRLockCounterIdx);   /* SBSW_COM_CSL_VAR_ACCESS */      (inlined)
+	j	.L13
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   268    if(Com_GetTxProcessingISRLockCounter(txProcessingISRLockCounterIdx) > 0u)      (inlined)
+.L12:
+	mov	d15,#1
+	st.h	[a12],d15
+	call	ResumeAllInterrupts
+	call	SuspendAllInterrupts
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   272    else      (inlined)
+.L13:
+	add	d8,#1
+	extr.u	d8,d8,#0,#8
+.L5:
+	jlt.u	d8,d9,.L6
+	mov	d15,#1
+	st.h	[a12],d15
+	j	ResumeAllInterrupts
+	
+__Com_TxModeHdlr_MainFunctionTx_CycleCounter_function_end:
+	.size	Com_TxModeHdlr_MainFunctionTx_CycleCounter,__Com_TxModeHdlr_MainFunctionTx_CycleCounter_function_end-Com_TxModeHdlr_MainFunctionTx_CycleCounter
+	; End of function
+	
+	.sdecl	'.text.Com_TxModeHdlr..cocofun_4',code
+	.sect	'.text.Com_TxModeHdlr..cocofun_4'
+	.align	2
+; Function .cocofun_4
+.cocofun_4:	.type	func
+; Function body .cocofun_4, coco_iter:1
+	movh.a	a15,#@his(Com_TxModeTrue)
+	lea	a15,[a15]@los(Com_TxModeTrue)
+	addsc.a	a15,a15,d15,#2
+	fret
+	; End of function
+	.sdecl	'.text.Com_TxModeHdlr..cocofun_3',code
+	.sect	'.text.Com_TxModeHdlr..cocofun_3'
+	.align	2
+; Function .cocofun_3
+.cocofun_3:	.type	func
+; Function body .cocofun_3, coco_iter:0
+	movh.a	a15,#@his(Com_TxModeInfo)
+	lea	a15,[a15]@los(Com_TxModeInfo)
+	fret
+	; End of function
+	.sdecl	'.text.Com_TxModeHdlr.Com_TxModeHdlr_MainFunctionTx_Transmit',code
+	.sect	'.text.Com_TxModeHdlr.Com_TxModeHdlr_MainFunctionTx_Transmit'
+	.align	2
+	
+	.global	Com_TxModeHdlr_MainFunctionTx_Transmit
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   784        {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   785          Com_TxModeHdlr_SetTransmitRequestAndCycleCnt(ComTxPduId);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   786        }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   787      }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   788      Com_TxModeHdlr_ThresholdCheck_CycleCounter(txProcessingISRLockCounterIdx);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   789    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   790  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   791    Com_TxModeHdlr_ExitExclusiveArea_CycleCounter(txProcessingISRLockCounterIdx);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   792  }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   793  #endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   794  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   795  #if (COM_TXMODEINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   796  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   797    Com_TxModeHdlr_MainFunctionTx_Transmit
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   798  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   799  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   800   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   801   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   802  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   803  FUNC(void, COM_CODE) Com_TxModeHdlr_MainFunctionTx_Transmit(Com_MainFunctionTxStructIterType mainFunctionId)
+; Function Com_TxModeHdlr_MainFunctionTx_Transmit
+Com_TxModeHdlr_MainFunctionTx_Transmit:	.type	func
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   804  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   805    Com_TxPduInfoOfMainFunctionTxIndType ComTxPduId;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   806    Com_TxPduInfoOfMainFunctionTxIndIterType txPduInfoIndIdx = Com_GetTxPduInfoOfMainFunctionTxIndStartIdxOfMainFunctionTxStruct(mainFunctionId);       /* PRQA S 2842 */ /* MD_Com_2842 */
+	mov	d15,d4
+	lea	a15,Com_MainFunctionTxStruct
+	addsc.a	a15,a15,d15,#1
+	ld.bu	d8,[a15]1
+	call	SuspendAllInterrupts
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   807    Com_TxProcessingISRLockCounterIdxOfMainFunctionTxStructType txProcessingISRLockCounterIdx = Com_GetTxProcessingISRLockCounterIdxOfMainFunctionTxStruct(mainFunctionId);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   808  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   809    Com_TxModeHdlr_EnterExclusiveArea();
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   810  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   811    /* #10 Iterate over all Tx ComIPdus and process the related transmit requests */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   812    for(; txPduInfoIndIdx < Com_GetTxPduInfoOfMainFunctionTxIndEndIdxOfMainFunctionTxStruct(mainFunctionId); txPduInfoIndIdx++)
+	add	d0,d15,#5
+	lea	a15,Com_TxProcessingISRLockCounter
+	addsc.a	a12,a15,d15,#1
+	extr.u	d9,d0,#0,#8
+	lea	a15,Com_TransmitRequest
+	addsc.a	a15,a15,d8,#0
+	mov	d10,#0
+	lea	a2,Com_TxPduGrpActive
+	addsc.a	a13,a2,d8,#0
+	j	.L14
+.L15:
+	ld.bu	d15,[a13]
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   343    if(Com_IsTxPduGrpActive(ComTxPduId))  /* COV_COM_NO_IPDUGROUPS */      (inlined)
+	jeq	d15,#0,.L16
+	ld.bu	d15,[a15]
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   351        if(Com_IsTransmitRequest(ComTxPduId))      (inlined)
+	jeq	d15,#0,.L17
+	mov	d4,d8
+	call	Com_TxLLIf_Transmit
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   355          if(Com_TxLLIf_Transmit(ComTxPduId) == E_OK)      (inlined)
+	jne	d2,#0,.L18
+	st.b	[a15],d10
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   355          if(Com_TxLLIf_Transmit(ComTxPduId) == E_OK)      (inlined)
+.L18:
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   351        if(Com_IsTransmitRequest(ComTxPduId))      (inlined)
+.L17:
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   343    if(Com_IsTxPduGrpActive(ComTxPduId))  /* COV_COM_NO_IPDUGROUPS */      (inlined)
+.L16:
+	ld.hu	d15,[a12]0
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   319    if(Com_GetTxProcessingISRLockCounter(txProcessingISRLockCounterIdx) > 0u)     /* COV_COM_THRESHOLD_TX */      (inlined)
+	jeq	d15,#0,.L19
+	add	d0,d15,#-1
+	st.h	[a12],d0
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   321      Com_DecTxProcessingISRLockCounter(txProcessingISRLockCounterIdx);   /* SBSW_COM_CSL_VAR_ACCESS */      (inlined)
+	j	.L20
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   319    if(Com_GetTxProcessingISRLockCounter(txProcessingISRLockCounterIdx) > 0u)     /* COV_COM_THRESHOLD_TX */      (inlined)
+.L19:
+	mov	d0,#1
+	st.h	[a12],d0
+	call	ResumeAllInterrupts
+	call	SuspendAllInterrupts
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   323    else      (inlined)
+.L20:
+	add	d8,#1
+	add.a	a15,#1
+	extr.u	d8,d8,#0,#8
+	add.a	a13,#1
+.L14:
+	jlt.u	d8,d9,.L15
+	mov	d15,#1
+	st.h	[a12],d15
+	j	ResumeAllInterrupts
+	
+__Com_TxModeHdlr_MainFunctionTx_Transmit_function_end:
+	.size	Com_TxModeHdlr_MainFunctionTx_Transmit,__Com_TxModeHdlr_MainFunctionTx_Transmit_function_end-Com_TxModeHdlr_MainFunctionTx_Transmit
+	; End of function
+	
+	.sdecl	'.text.Com_TxModeHdlr.Com_TxModeHdlr_InitTxMode',code
+	.sect	'.text.Com_TxModeHdlr.Com_TxModeHdlr_InitTxMode'
+	.align	2
+	
+	.global	Com_TxModeHdlr_InitTxMode
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   813    {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   814      ComTxPduId = Com_GetTxPduInfoOfMainFunctionTxInd(txPduInfoIndIdx);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   815      Com_TxModeHdlr_MainFunctionTx_ProcessTransmit(ComTxPduId);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   816      Com_TxModeHdlr_ThresholdCheck(txProcessingISRLockCounterIdx);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   817    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   818  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   819    Com_TxModeHdlr_ExitExclusiveArea(txProcessingISRLockCounterIdx);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   820  }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   821  #endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   822  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   823  #if (COM_TXMODEINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   824  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   825    Com_TxModeHdlr_InitTxMode
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   826  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   827  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   828   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   829   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   830   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   831   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   832   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   833   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   834   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   835  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   836  FUNC(void, COM_CODE) Com_TxModeHdlr_InitTxMode(Com_TxPduInfoIterType idxTxPduInfo)
+; Function Com_TxModeHdlr_InitTxMode
+Com_TxModeHdlr_InitTxMode:	.type	func
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   837  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   838    Com_TxModeInfoIdxOfTxPduInfoType idxTxModeInfo = Com_GetTxModeInfoIdxOfTxPduInfo(idxTxPduInfo);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   839  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   840  # if ((COM_PERIODICOFTXMODETRUE == STD_ON) || (COM_PERIODICOFTXMODEFALSE == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   841    /* #10 If the current tx mode of the passed Tx ComIPdu is periodic */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   842    if(Com_TxModeHdlr_IsPeriodicTxMode(idxTxModeInfo) == TRUE)
+	extr.u	d15,d4,#0,#8
+	lea	a15,Com_CurrentTxMode
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d0,[a15]
+	jeq	d0,#0,.L21
+	fcall	.cocofun_4
+	ld.bu	d0,[a15]
+	ne	d0,d0,#0
+	j	.L22
+.L21:
+	fcall	.cocofun_3
+	addsc.a	a15,a15,d15,#1
+	ld.bu	d0,[a15]1
+	lea	a15,Com_TxModeFalse
+	addsc.a	a15,a15,d0,#0
+	ld.bu	d0,[a15]
+	eq	d0,d0,#20
+.L22:
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   843    {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   844      Com_SetCyclicSendRequest(idxTxModeInfo, TRUE);      /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+	lea	a15,Com_CyclicSendRequest
+	addsc.a	a15,a15,d15,#0
+	jeq	d0,#0,.L23
+	mov	d0,#1
+	st.b	[a15],d0
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   845      /* #20 Enable the cyclic send request and trigger the first transmission within the next Com_MainfunctionTx call */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   846  #  if (COM_MINIMUMDELAYOFTXMODEINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   847      Com_SetTransmitRequest(idxTxModeInfo, TRUE);        /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   848      Com_SetCycleTimeCnt(idxTxModeInfo, (Com_CycleTimeCntType) (Com_TxModeHdlr_GetCurrentTimePeriod(idxTxModeInfo) + Com_GetDelayTimeCnt(idxTxModeInfo) + 1u));  /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */ /* COV_COM_SETCYCLETIMECOUNT */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   849  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   850  #   if (COM_EXISTS_NORMAL_MODEOFTXTOUTINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   851      /* #30 Reload Tx Deadline monitoring timer if configured */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   852      Com_TxModeHdlr_ReloadTxDlMonCounter(idxTxPduInfo);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   853  #   endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   854  #  else
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   855      Com_SetCycleTimeCnt(idxTxModeInfo, (Com_CycleTimeCntType) 1u);      /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+	lea	a15,Com_CycleTimeCnt
+	j	.L24
+.L23:
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   856  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   857    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   858    /* #40 Otherwise disable the cyclic send request and remove the transmit request flag */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   859    else
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   860    {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   861      Com_SetCyclicSendRequest(idxTxModeInfo, FALSE);     /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+	st.b	[a15],d0
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   862      Com_SetTransmitRequest(idxTxModeInfo, FALSE);       /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+	lea	a15,Com_TransmitRequest
+.L24:
+	addsc.a	a15,a15,d15,#0
+	st.b	[a15],d0
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   863    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   864  # else
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   865    Com_SetTransmitRequest(idxTxModeInfo, FALSE); /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   866  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   867  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   868  # if ((COM_REPCNTOFTXMODETRUE == STD_ON) || (COM_REPCNTOFTXMODEFALSE == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   869    /* #50 Set the repetition counter to 0 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   870    Com_SetRepCnt(idxTxModeInfo, 0u);     /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   871  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   872  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   873  # if (COM_EXISTS_NORMAL_MODEOFTXTOUTINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   874    /* #60 Reset the tx timeout counter */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   875    Com_TxDlMon_SwitchIpduTxMode(idxTxPduInfo);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   876  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   877  }
+	ret
+	
+__Com_TxModeHdlr_InitTxMode_function_end:
+	.size	Com_TxModeHdlr_InitTxMode,__Com_TxModeHdlr_InitTxMode_function_end-Com_TxModeHdlr_InitTxMode
+	; End of function
+	
+	.sdecl	'.text.Com_TxModeHdlr.Com_TxModeHdlr_StopTxIpdus',code
+	.sect	'.text.Com_TxModeHdlr.Com_TxModeHdlr_StopTxIpdus'
+	.align	2
+	
+	.global	Com_TxModeHdlr_StopTxIpdus
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   878  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   879  # if (COM_TXFILTERINITSTATEUSEDOFTXMODEINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   880  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   881    Com_TxModeHdlr_UpdateTMS
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   882  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   883  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   884   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   885   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   886   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   887   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   888   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   889  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   890  FUNC(void, COM_CODE) Com_TxModeHdlr_UpdateTMS(Com_TxPduInfoIterType idxTxPduInfo)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   891  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   892    Com_TxModeInfoIdxOfTxPduInfoType idxTxModeInfo = Com_GetTxModeInfoIdxOfTxPduInfo(idxTxPduInfo);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   893    boolean newTxMode = FALSE;    /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   894    Com_TxFilterInitStateEndIdxOfTxModeInfoType filterIndex = Com_GetTxFilterInitStateStartIdxOfTxModeInfo(idxTxModeInfo);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   895  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   896    /* #10 Iterate over all related filter states, if at least one filter state is true, the Tx Mode true is active. Otherwise the Tx Mode false is active */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   897    for(; filterIndex < Com_GetTxFilterInitStateEndIdxOfTxModeInfo(idxTxModeInfo); filterIndex++)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   898    {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   899      if(Com_IsTxFilterState(filterIndex))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   900      {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   901        newTxMode = TRUE;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   902        break;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   903      }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   904    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   905  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   906    /* #20 If the Tx Mode has changed */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   907    if(Com_IsCurrentTxMode(idxTxPduInfo) != newTxMode)    /* COV_COM_TX_FILTER */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   908    {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   909      /* #30 Update the current Tx Mode with the new Tx Mode, initialize the new Tx Mode and trigger a deferred transmission without repetitions */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   910      Com_SetCurrentTxMode(idxTxPduInfo, newTxMode);      /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   911  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   912      Com_TxModeHdlr_InitTxMode(idxTxPduInfo);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   913  #  if ((COM_DIRECTOFTXMODETRUE == STD_ON) || (COM_DIRECTOFTXMODEFALSE == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   914      /* COM582: If a change of the TMS causes a change of the transmission mode to the transmission mode DIRECT an immediate, respecting the MDT, direct/ n-times transmission to the underlying layer shall be initiated. */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   915      Com_TxModeHdlr_TriggerDeferredTransmitAndSetTimer(idxTxPduInfo, FALSE);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   916  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   917    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   918  }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   919  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   920  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   921  # if ((COM_MINIMUMDELAYOFTXMODEINFO == STD_ON) || (COM_REPCNTOFTXMODETRUE == STD_ON) || (COM_REPCNTOFTXMODEFALSE == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   922  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   923    Com_TxModeHdlr_Confirmation
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   924  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   925  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   926   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   927   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   928   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   929  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   930  FUNC(boolean, COM_CODE) Com_TxModeHdlr_Confirmation(Com_TxPduInfoIterType ComTxPduId)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   931  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   932    boolean retVal = TRUE;        /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   933  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   934  #  if (COM_MINIMUMDELAYOFTXMODEINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   935    /* #10 Reload the minimum delay time counter of the passed Tx ComIPdu */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   936  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   937  #   if (COM_DIRECTTRIGGER == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   938    if(Com_IsDirectTrigger(ComTxPduId))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   939  #   endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   940    {     /* \trace SPEC-2736859 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   941      Com_SetDelayTimeCnt(ComTxPduId, Com_GetMinimumDelayOfTxModeInfo(ComTxPduId));       /* SBSW_COM_IDXPARAM_INTERNALFCT_DET_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   942  #   if (COM_DIRECTTRIGGER == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   943      Com_SetDirectTrigger(ComTxPduId, FALSE);    /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   944  #   endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   945    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   946  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   947  #  if ((COM_REPCNTOFTXMODETRUE == STD_ON) || (COM_REPCNTOFTXMODEFALSE == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   948  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   949    /* #20 Check if the all requested transmits have been performed and this is the final Tx Confirmation */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   950    if(0u < Com_GetRepCnt(ComTxPduId))    /* COV_COM_REPETITIONS */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   951    {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   952      Com_DecRepCnt(ComTxPduId);  /* SBSW_COM_IDXPARAM_INTERNALFCT_DET_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   953      if(0u < Com_GetRepCnt(ComTxPduId))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   954      {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   955        /* this is the first or an intermediate confirmation for an N-Times transmission return false to avoid notification of the upper layer */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   956        retVal = FALSE;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   957      }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   958    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   959  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   960    return retVal;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   961  }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   962  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   963  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   964  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   965    Com_TxModeHdlr_StopTxIpdus
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   966  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   967  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   968   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   969   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   970   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   971  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   972  FUNC(void, COM_CODE) Com_TxModeHdlr_StopTxIpdus(Com_TxPduInfoIterType ComTxPduId)
+; Function Com_TxModeHdlr_StopTxIpdus
+Com_TxModeHdlr_StopTxIpdus:	.type	func
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   973  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   974    /* #10 Reset transmit request, set repetition counter and repetition cycle counter to 0 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   975    Com_SetTransmitRequest(ComTxPduId, FALSE);    /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+	lea	a15,Com_TransmitRequest
+	addsc.a	a15,a15,d4,#0
+	mov	d15,#0
+	st.b	[a15],d15
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   976  # if ((COM_REPCNTOFTXMODETRUE == STD_ON) || (COM_REPCNTOFTXMODEFALSE == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   977    Com_SetRepCnt(ComTxPduId, 0u);        /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   978    Com_SetRepCycleCnt(ComTxPduId, 0u);   /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   979  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   980  # if ((COM_PERIODICOFTXMODETRUE == STD_ON) || (COM_PERIODICOFTXMODEFALSE == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   981    /* #20 reload the time offset counter and set minimum delay time to 0. If the I-PDU is started again, the time offset is already set */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   982    Com_SetCycleTimeCnt(ComTxPduId, (Com_CycleTimeCntType) Com_TxModeHdlr_GetCurrentTimeOffset(ComTxPduId));      /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */ /* COV_COM_TIMEOFFSET */
+	lea	a15,Com_CurrentTxMode
+	addsc.a	a15,a15,d4,#0
+	ld.bu	d15,[a15]
+	jeq	d15,#0,.L25
+	fcall	.cocofun_2
+	ld.bu	d15,[a15]1
+	j	.L26
+.L25:
+	mov	d15,#1
+.L26:
+	lea	a15,Com_CycleTimeCnt
+	addsc.a	a15,a15,d4,#0
+	st.b	[a15],d15
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   983  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   984  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   985  # if (COM_MINIMUMDELAYOFTXMODEINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   986    Com_SetDelayTimeCnt(ComTxPduId, 0u);  /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   987  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   988  }
+	ret
+	
+__Com_TxModeHdlr_StopTxIpdus_function_end:
+	.size	Com_TxModeHdlr_StopTxIpdus,__Com_TxModeHdlr_StopTxIpdus_function_end-Com_TxModeHdlr_StopTxIpdus
+	; End of function
+	
+	.sdecl	'.text.Com_TxModeHdlr..cocofun_2',code
+	.sect	'.text.Com_TxModeHdlr..cocofun_2'
+	.align	2
+; Function .cocofun_2
+.cocofun_2:	.type	func
+; Function body .cocofun_2, coco_iter:0
+	extr.u	d15,d4,#0,#8
+	fcall	.cocofun_4
+	fret
+	; End of function
+	.sdecl	'.text.Com_TxModeHdlr.Com_TxModeHdlr_TriggerIpduSendOnceDeferred',code
+	.sect	'.text.Com_TxModeHdlr.Com_TxModeHdlr_TriggerIpduSendOnceDeferred'
+	.align	2
+	
+	.global	Com_TxModeHdlr_TriggerIpduSendOnceDeferred
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   989  #endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   990  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   991  #if (COM_TXPDUINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   992  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   993    Com_TxModeHdlr_TriggerIpduSendOnceDeferred
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   994  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   995  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   996   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   997   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   998   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	   999   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1000   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1001  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1002  FUNC(void, COM_CODE) Com_TxModeHdlr_TriggerIpduSendOnceDeferred(Com_TxPduInfoIterType ComTxPduId)
+; Function Com_TxModeHdlr_TriggerIpduSendOnceDeferred
+Com_TxModeHdlr_TriggerIpduSendOnceDeferred:	.type	func
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1003  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1004    /* #10 If the passed Tx ComIPdu is active */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1005    if(Com_IsTxPduGrpActive(ComTxPduId))  /* COV_COM_NO_IPDUGROUPS */
+	lea	a15,Com_TxPduGrpActive
+	addsc.a	a15,a15,d4,#0
+	ld.bu	d15,[a15]
+	fcall	.cocofun_1
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1006    {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1007      /* #20 Set eventbased trigger Flag if configured */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1008  # if (COM_DIRECTTRIGGER == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1009      Com_SetDirectTrigger(ComTxPduId, TRUE);     /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1010  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1011      /* #30 Set the related transmit request */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1012      Com_SetTransmitRequest(ComTxPduId, TRUE);   /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1013  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1014  # if(COM_MIXEDMODEPERIODICSUPPRESSION == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1015      Com_SetInitialTransmit(ComTxPduId, TRUE);   /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1016  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1017  # if (COM_TXTOUTINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1018      /* #40 Reload Tx Deadline monitoring timer if configured */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1019      Com_TxModeHdlr_ReloadTxDlMonCounter(ComTxPduId);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1020  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1021    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1022  }
+	ret
+	
+__Com_TxModeHdlr_TriggerIpduSendOnceDeferred_function_end:
+	.size	Com_TxModeHdlr_TriggerIpduSendOnceDeferred,__Com_TxModeHdlr_TriggerIpduSendOnceDeferred_function_end-Com_TxModeHdlr_TriggerIpduSendOnceDeferred
+	; End of function
+	
+	.sdecl	'.text.Com_TxModeHdlr..cocofun_1',code
+	.sect	'.text.Com_TxModeHdlr..cocofun_1'
+	.align	2
+; Function .cocofun_1
+.cocofun_1:	.type	func
+; Function body .cocofun_1, coco_iter:0
+	jeq	d15,#0,.L27
+	lea	a15,Com_TransmitRequest
+	addsc.a	a15,a15,d4,#0
+	mov	d15,#1
+	st.b	[a15],d15
+.L27:
+	fret
+	; End of function
+	.sdecl	'.text.Com_TxModeHdlr.Com_TxModeHdlr_TriggerDeferredTransmitAndSetTimer',code
+	.sect	'.text.Com_TxModeHdlr.Com_TxModeHdlr_TriggerDeferredTransmitAndSetTimer'
+	.align	2
+	
+	.global	Com_TxModeHdlr_TriggerDeferredTransmitAndSetTimer
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1023  #endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1024  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1025  #if (COM_GWTIMEOUTINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1026  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1027    Com_TxModeHdlr_StopCyclicTransmission
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1028  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1029  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1030   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1031   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1032  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1033  FUNC(void, COM_CODE) Com_TxModeHdlr_StopCyclicTransmission(Com_TxPduInfoIterType ComTxPduId)    /* PRQA S 1505 */ /* MD_MSR_Rule8.7 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1034  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1035    /* #10 Stop the cyclic transmission */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1036    Com_TxModeHdlr_StopTxIpdus(ComTxPduId);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1037    Com_SetCyclicSendRequest(ComTxPduId, FALSE);  /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1038  }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1039  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1040  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1041    Com_TxModeHdlr_StartCyclicTransmission
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1042  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1043  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1044   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1045   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1046  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1047  FUNC(void, COM_CODE) Com_TxModeHdlr_StartCyclicTransmission(Com_TxPduInfoIterType ComTxPduId)   /* PRQA S 1505 */ /* MD_MSR_Rule8.7 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1048  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1049    /* #10 Enable the cyclic send transmission */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1050    if(!Com_IsCyclicSendRequest(ComTxPduId))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1051    {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1052      Com_SetCyclicSendRequest(ComTxPduId, TRUE); /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1053      Com_SetCycleTimeCnt(ComTxPduId, 1u);        /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1054    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1055  }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1056  #endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1057  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1058  #if(                                                                                                                                           			\ 
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1059    (  																				\ 
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1060      ((COM_DIRECTOFTXMODETRUE == STD_ON)  ||  (COM_DIRECTOFTXMODEFALSE == STD_ON)) 										\ 
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1061      && 																				\ 
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1062      ((COM_FILTERINFOUSEDOFTXSIGINFO == STD_ON) || (COM_FILTERINFOUSEDOFTXGRPSIGINFO == STD_ON) || (COM_GWTXPDUDESCRIPTIONINFOUSEDOFRXPDUINFO == STD_ON))  	\ 
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1063    )  																				\ 
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1064    || (COM_ONCHANGEUSEDOFTXSIGINFO == STD_ON)  															\ 
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1065    || (COM_ONCHANGEUSEDOFTXGRPSIGINFO == STD_ON)  														\ 
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1066    || (COM_TRIGGEREDOFTXSIGINFO == STD_ON)  															\ 
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1067    || (COM_TRIGGEREDOFTXGRPSIGINFO == STD_ON)  															\ 
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1068  )
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1069  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1070    Com_TxModeHdlr_TriggerDeferredTransmitAndSetTimer
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1071  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1072  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1073   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1074   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1075   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1076   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1077   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1078   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1079   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1080   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1081   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1082  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1083  FUNC(void, COM_CODE) Com_TxModeHdlr_TriggerDeferredTransmitAndSetTimer(Com_TxPduInfoIterType ComTxPduId, boolean TriggerWithoutRepetition)      /* PRQA S 1505 */ /* MD_MSR_Rule8.7 */
+; Function Com_TxModeHdlr_TriggerDeferredTransmitAndSetTimer
+Com_TxModeHdlr_TriggerDeferredTransmitAndSetTimer:	.type	func
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1084  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1085    /* If the passed Tx ComIPdu is active and the current tx mode is direct */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1086    if(Com_IsTxPduGrpActive(ComTxPduId))  /* COV_COM_TXIPDUGROUP_ACTIVE */
+	lea	a15,Com_TxPduGrpActive
+	addsc.a	a15,a15,d4,#0
+	ld.bu	d15,[a15]
+	jeq	d15,#0,.L28
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1087    {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1088      if(Com_TxModeHdlr_IsDirectTxMode(ComTxPduId) == TRUE)       /* COV_COM_ISDIRECT_TXMODE */
+	lea	a15,Com_CurrentTxMode
+	addsc.a	a15,a15,d4,#0
+	ld.bu	d15,[a15]
+	jeq	d15,#0,.L29
+	fcall	.cocofun_2
+	ld.bu	d15,[a15]
+	eq	d15,d15,#0
+.L29:
+	fcall	.cocofun_1
+.L28:
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1089      {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1090        /* Set eventbased trigger Flag if configured */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1091  # if (COM_DIRECTTRIGGER == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1092        Com_SetDirectTrigger(ComTxPduId, TRUE);   /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1093  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1094  # if ((COM_REPCNTOFTXMODETRUE == STD_ON) || (COM_REPCNTOFTXMODEFALSE == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1095        /* If the passed Tx ComIPdu is triggered without repetitions, set the transmit request and reload the Tx Deadline Monitoring timer if not already running */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1096        if(TriggerWithoutRepetition == TRUE)      /* COV_COM_DEFERREDIPDUSEND */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1097        {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1098  #  if (COM_EXISTS_NORMAL_MODEOFTXTOUTINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1099          Com_TxModeHdlr_ReloadTxDlMonCounter(ComTxPduId);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1100  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1101          Com_SetTransmitRequest(ComTxPduId, TRUE);       /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1102        }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1103        /* Otherwise, set the repetition count to the tx mode dependent repetition count value */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1104        else
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1105        {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1106          Com_SetRepCnt(ComTxPduId, Com_TxModeHdlr_GetCurRepCnt(ComTxPduId));     /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1107          /* If the repetition count is greater 0, set the repetition cycle counter to 1. Otherwise set the transmit request */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1108          if(0u < Com_GetRepCnt(ComTxPduId))      /* COV_COM_ZERO_REPETITION */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1109          {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1110  #  if (COM_EXISTS_NORMAL_MODEOFTXTOUTINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1111            /* SPEC-2736884 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1112            if(Com_IsTxTOutInfoUsedOfTxPduInfo(ComTxPduId))       /* COV_COM_FEATURE_ALWAYS_TRUE_TX */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1113            {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1114              /* Reload Tx Deadline Monitoring counter if configured */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1115              Com_TxTOutInfoIdxOfTxPduInfoType idxTxTOutInfo = Com_GetTxTOutInfoIdxOfTxPduInfo(ComTxPduId);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1116              Com_SetTxTOutCnt(idxTxTOutInfo, Com_GetFactorOfTxTOutInfo(idxTxTOutInfo));  /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1117            }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1118  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1119            /* trigger first transmission of n repetitive transmissions */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1120            Com_SetRepCycleCnt(ComTxPduId, 1u);   /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1121  #  if (COM_MIXEDMODEPERIODICSUPPRESSION == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1122            Com_SetInitialTransmit(ComTxPduId, TRUE);     /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1123  #  endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1124          }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1125          else
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1126  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1127          {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1128  # if (COM_EXISTS_NORMAL_MODEOFTXTOUTINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1129            Com_TxModeHdlr_ReloadTxDlMonCounter(ComTxPduId);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1130  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1131            Com_SetTransmitRequest(ComTxPduId, TRUE);     /* SBSW_COM_IDXPARAM_INTERNALFCT_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1132          }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1133  # if ((COM_REPCNTOFTXMODETRUE == STD_ON) || (COM_REPCNTOFTXMODEFALSE == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1134        }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1135  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1136      }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1137    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1138    COM_DUMMY_STATEMENT(TriggerWithoutRepetition);        /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1139  }       /* PRQA S 6080 */ /* MD_MSR_STMIF */
+	ret
+	
+__Com_TxModeHdlr_TriggerDeferredTransmitAndSetTimer_function_end:
+	.size	Com_TxModeHdlr_TriggerDeferredTransmitAndSetTimer,__Com_TxModeHdlr_TriggerDeferredTransmitAndSetTimer_function_end-Com_TxModeHdlr_TriggerDeferredTransmitAndSetTimer
+	; End of function
+	
+	.calls	'Com_TxModeHdlr_InitTxIpdu','Com_TxModeHdlr_InitTxMode'
+	.calls	'Com_TxModeHdlr_MainFunctionTx_CycleCounter','SuspendAllInterrupts'
+	.calls	'Com_TxModeHdlr_MainFunctionTx_CycleCounter','ResumeAllInterrupts'
+	.calls	'Com_TxModeHdlr_MainFunctionTx_Transmit','SuspendAllInterrupts'
+	.calls	'Com_TxModeHdlr_MainFunctionTx_Transmit','Com_TxLLIf_Transmit'
+	.calls	'Com_TxModeHdlr_MainFunctionTx_Transmit','ResumeAllInterrupts'
+	.calls	'Com_TxModeHdlr_InitTxIpdu','.cocofun_3'
+	.calls	'Com_TxModeHdlr_InitTxIpdu','.cocofun_4'
+	.calls	'Com_TxModeHdlr_MainFunctionTx_CycleCounter','.cocofun_4'
+	.calls	'Com_TxModeHdlr_MainFunctionTx_CycleCounter','.cocofun_3'
+	.calls	'Com_TxModeHdlr_InitTxMode','.cocofun_4'
+	.calls	'Com_TxModeHdlr_InitTxMode','.cocofun_3'
+	.calls	'Com_TxModeHdlr_StopTxIpdus','.cocofun_2'
+	.calls	'.cocofun_2','.cocofun_4'
+	.calls	'Com_TxModeHdlr_TriggerIpduSendOnceDeferred','.cocofun_1'
+	.calls	'Com_TxModeHdlr_TriggerDeferredTransmitAndSetTimer','.cocofun_2'
+	.calls	'Com_TxModeHdlr_TriggerDeferredTransmitAndSetTimer','.cocofun_1'
+	.calls	'Com_TxModeHdlr_InitTxIpdu','',0
+	.calls	'Com_TxModeHdlr_MainFunctionTx_CycleCounter','',0
+	.calls	'.cocofun_4','',0
+	.calls	'.cocofun_3','',0
+	.calls	'Com_TxModeHdlr_MainFunctionTx_Transmit','',0
+	.calls	'Com_TxModeHdlr_InitTxMode','',0
+	.calls	'Com_TxModeHdlr_StopTxIpdus','',0
+	.calls	'.cocofun_2','',0
+	.calls	'Com_TxModeHdlr_TriggerIpduSendOnceDeferred','',0
+	.calls	'.cocofun_1','',0
+	.extern	Com_MainFunctionTxStruct
+	.extern	Com_TxCyclicPdu
+	.extern	Com_TxModeFalse
+	.extern	Com_TxModeInfo
+	.extern	Com_TxModeTrue
+	.extern	Com_CurrentTxMode
+	.extern	Com_CycleTimeCnt
+	.extern	Com_CyclicSendRequest
+	.extern	Com_TransmitRequest
+	.extern	Com_TxPduGrpActive
+	.extern	Com_TxProcessingISRLockCounter
+	.extern	Com_TxLLIf_Transmit
+	.extern	SuspendAllInterrupts
+	.extern	ResumeAllInterrupts
+	.calls	'Com_TxModeHdlr_TriggerDeferredTransmitAndSetTimer','',0
+
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1140  #endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1141  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1142  #if (COM_TXTOUTINFO == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1143  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1144    Com_TxModeHdlr_ReloadTxDlMonCounter
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1145  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1146  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1147   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1148   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1149   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1150  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1151  FUNC(void, COM_CODE) Com_TxModeHdlr_ReloadTxDlMonCounter(Com_TxPduInfoIterType ComTxPduId)      /* PRQA S 1505 */ /* MD_MSR_Rule8.7 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1152  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1153    /* #10 If Tx Deadline Monitoring is configured */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1154    if(Com_IsTxTOutInfoUsedOfTxPduInfo(ComTxPduId))       /* COV_COM_FEATURE_ALWAYS_TRUE_TX */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1155    {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1156      Com_TxTOutInfoIdxOfTxPduInfoType idxTxTOutInfo = Com_GetTxTOutInfoIdxOfTxPduInfo(ComTxPduId);
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1157      if(Com_GetTxTOutCnt(idxTxTOutInfo) == 0u)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1158      {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1159        /* #20 Reload Tx Deadline Monitoring timer if not already running */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1160        Com_SetTxTOutCnt(idxTxTOutInfo, Com_GetFactorOfTxTOutInfo(idxTxTOutInfo));        /* SBSW_COM_CSL02 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1161      }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1162    }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1163  }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1164  #endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1165  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1166  #if ((COM_REPCNTOFTXMODETRUE == STD_ON) || (COM_REPCNTOFTXMODEFALSE == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1167  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1168    Com_TxModeHdlr_GetCurRepCnt
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1169  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1170  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1171   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1172   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1173  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1174  FUNC(Com_RepCntType, COM_CODE) Com_TxModeHdlr_GetCurRepCnt(Com_TxPduInfoIterType TxPduId)       /* PRQA S 1505 */ /* MD_MSR_Rule8.7 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1175  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1176    /* #10 Return the current repetition count depending on the current active tx mode */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1177  # if ((COM_REPCNTOFTXMODETRUE == STD_ON) && (COM_REPCNTOFTXMODEFALSE == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1178    Com_RepCntType retVal =
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1179      Com_IsCurrentTxMode(TxPduId) ? (Com_RepCntType) Com_GetRepCntOfTxModeTrue(Com_GetTxModeTrueIdxOfTxModeInfo(TxPduId)) : (Com_RepCntType)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1180      Com_GetRepCntOfTxModeFalse(Com_GetTxModeFalseIdxOfTxModeInfo(TxPduId));
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1181  # elif (COM_REPCNTOFTXMODETRUE == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1182    Com_RepCntType retVal = Com_IsCurrentTxMode(TxPduId) ? (Com_RepCntType) Com_GetRepCntOfTxModeTrue(Com_GetTxModeTrueIdxOfTxModeInfo(TxPduId)) : 0u;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1183  # else
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1184    Com_RepCntType retVal = Com_IsCurrentTxMode(TxPduId) ? 0u : (Com_RepCntType) Com_GetRepCntOfTxModeFalse(Com_GetTxModeFalseIdxOfTxModeInfo(TxPduId));
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1185  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1186    return retVal;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1187  }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1188  #endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1189  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1190  #if ((COM_REPPERIODOFTXMODETRUE == STD_ON) || (COM_REPPERIODOFTXMODEFALSE == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1191  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1192    Com_TxModeHdlr_GetCurrentRepetitionPeriod
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1193  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1194  /*! Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1195   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1196   *
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1197  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1198  FUNC(Com_RepCycleCntType, COM_CODE) Com_TxModeHdlr_GetCurrentRepetitionPeriod(Com_TxPduInfoIterType TxPduId)    /* PRQA S 1505 */ /* MD_MSR_Rule8.7 */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1199  {
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1200    /* #10 Return the current repetition period factor depending on the current active tx mode */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1201  # if ((COM_REPPERIODOFTXMODETRUE == STD_ON) && (COM_REPPERIODOFTXMODEFALSE == STD_ON))
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1202    Com_RepCycleCntType retVal =
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1203      Com_IsCurrentTxMode(TxPduId) ? (Com_RepCycleCntType) Com_GetRepPeriodOfTxModeTrue(Com_GetTxModeTrueIdxOfTxModeInfo(TxPduId)) : (Com_RepCycleCntType)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1204      Com_GetRepPeriodOfTxModeFalse(Com_GetTxModeFalseIdxOfTxModeInfo(TxPduId));
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1205  # elif (COM_REPPERIODOFTXMODETRUE == STD_ON)
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1206    Com_RepCycleCntType retVal = Com_IsCurrentTxMode(TxPduId) ? (Com_RepCycleCntType) Com_GetRepPeriodOfTxModeTrue(Com_GetTxModeTrueIdxOfTxModeInfo(TxPduId)) : 0u;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1207  # else
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1208    Com_RepCycleCntType retVal = Com_IsCurrentTxMode(TxPduId) ? 0u : (Com_RepCycleCntType) Com_GetRepPeriodOfTxModeFalse(Com_GetTxModeFalseIdxOfTxModeInfo(TxPduId));
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1209  # endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1210    return retVal;
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1211  }
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1212  #endif
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1213  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1214  #define COM_STOP_SEC_CODE
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1215  #include "MemMap.h" /* PRQA S 5087 */   /* MD_MSR_MemMap */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1216  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1217  /***********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1218   *  MISRA JUSTIFICATIONS
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1219   **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1220  /* *INDENT-OFF* */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1221  /* Justifications for module-specific MISRA deviations:
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1222  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1223  */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1224  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1225  /***********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1226   *  SILENTBSW JUSTIFICATIONS
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1227   **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1228  /* SBSW_JUSTIFICATION_BEGIN
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1229  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1230  SBSW_JUSTIFICATION_END */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1231  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1232  /***********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1233   *  COVERAGE JUSTIFICATIONS
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1234   **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1235  /* START_COVERAGE_JUSTIFICATION
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1236  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1237  END_COVERAGE_JUSTIFICATION */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1238  /* *INDENT-ON* */
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1239  
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1240  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1241   *  END OF FILE: Com_TxModeHdlr.c
+; ..\BSW364\Com\Implementation\Com_TxModeHdlr.c	  1242   *********************************************************************************************************************/
+
+	; Module end

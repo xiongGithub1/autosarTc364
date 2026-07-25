@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Isr_Lcfg.h
- *   Generation Time: 2024-07-15 15:44:50
+ *   Generation Time: 2024-07-24 19:46:29
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -100,6 +100,26 @@ extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_CanIsr_0;
 /*! ISR configuration data: CounterIsr_SystemTimer */
 extern CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Isr_CounterIsr_SystemTimer_HwConfig;
 extern CONST(Os_TimerIsrConfigType, OS_CONST) OsCfg_Isr_CounterIsr_SystemTimer;
+
+/*! ISR configuration data: DMACH4SR_ISR */
+extern CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Isr_DMACH4SR_ISR_HwConfig;
+extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_DMACH4SR_ISR;
+
+/*! ISR configuration data: DMACH5SR_ISR */
+extern CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Isr_DMACH5SR_ISR_HwConfig;
+extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_DMACH5SR_ISR;
+
+/*! ISR configuration data: DmaErrIsr */
+extern CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Isr_DmaErrIsr_HwConfig;
+extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_DmaErrIsr;
+
+/*! ISR configuration data: Qspi2ErrIsr */
+extern CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Isr_Qspi2ErrIsr_HwConfig;
+extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_Qspi2ErrIsr;
+
+/*! ISR configuration data: Qspi2PtIsr */
+extern CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Isr_Qspi2PtIsr_HwConfig;
+extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_Qspi2PtIsr;
 
 # define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */

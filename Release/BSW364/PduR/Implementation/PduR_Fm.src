@@ -1,0 +1,750 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc20848a --dep-file=BSW364\\PduR\\Implementation\\.PduR_Fm.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=BSW364\\PduR\\Implementation\\PduR_Fm.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW364\\PduR\\Implementation\\PduR_Fm.src ..\\BSW364\\PduR\\Implementation\\PduR_Fm.c"
+	.compiler_name		"ctc"
+	;source	'..\\BSW364\\PduR\\Implementation\\PduR_Fm.c'
+
+	
+$TC162
+	
+
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	     1  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	     2   *  COPYRIGHT
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	     4   *  \verbatim
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	     5   *  Copyright (c) 2021 by Vector Informatik GmbH.                                                  All rights reserved.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	     6   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    10   *  \endverbatim
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    11   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    12   *  FILE DESCRIPTION
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    13   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    14   *         File:  PduR_Fm.c
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    15   *      Project:  Gw_AsrPduRCfg5
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    16   *       Module:  MICROSAR PDU Router
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    17   *    Generator:  Configurator 5
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    18   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    19   *  Description:  Vector implementation of AUTOSAR PDU Router
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    20   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    21   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    22  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    23  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    24   *  REVISION HISTORY
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    25   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    26   *  Refer to the module's header file.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    27   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    28   *  FILE VERSION
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    29   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    30   *  Refer to the module's header file.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    31   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    32  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    33  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    34   * LOCAL MISRA / PCLINT JUSTIFICATION
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    35   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    36  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    37  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    38  #define PDUR_FM_SOURCE
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    39  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    40   * INCLUDES
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    41   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    42  #include "PduR.h"
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    43  #include "PduR_Bm.h"
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    44  #include "PduR_Fm.h"
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    45  #include "PduR_RmTp.h"
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    46  #if (PDUR_DEV_ERROR_REPORT == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    47  # include "Det.h"
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    48  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    49  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    50  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    51   *  LOCAL CONSTANT MACROS
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    52   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    53  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    54  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    55   *  LOCAL FUNCTION MACROS
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    56   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    57  #if !defined (PDUR_LOCAL_INLINE)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    58  # define PDUR_LOCAL_INLINE LOCAL_INLINE
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    59  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    60  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    61  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    62   *  LOCAL DATA TYPES AND STRUCTURES
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    63   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    64  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    65  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    66   *  LOCAL DATA PROTOTYPES
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    67   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    68  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    69  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    70   *  GLOBAL DATA
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    71   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    72  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    73  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    74   *  LOCAL FUNCTION PROTOTYPES
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    75   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    76  #define PDUR_START_SEC_CODE
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    77  #include "PduR_MemMap.h" /* PRQA S 5087 */   /* MD_MSR_MemMap */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    78  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    79  #if (PDUR_FMFIFORAM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    80  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    81   * PduR_Fm_GetBmTxBufferRomIdxOfFmFifoElementRamSafe
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    82   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    83   /*! \brief       Get the bmTxBuffer index of the fmFifoElement
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    84   *   \details     -
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    85   *   \param[in]   fmFifoElementRamIdx   Index of the FIFO element in Ram.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    86   *   \param[in]   memIdx                memory section index
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    87   *   \return                            bmTxBuffer index
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    88   *   \pre         -
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    89   *   \context     TASK|ISR1|ISR2
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    90   *   \reentrant   TRUE
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    91   *   \synchronous TRUE
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    92   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    93  PDUR_LOCAL_INLINE FUNC(PduR_BmTxBufferRomIdxOfFmFifoElementRamType, PDUR_CODE) PduR_Fm_GetBmTxBufferRomIdxOfFmFifoElementRamSafe(PduR_FmFifoElementRamIterType fmFifoElementRamIdx, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    94  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    95  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    96  #if (PDUR_FMFIFORAM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    97  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    98   * PduR_Fm_GetBmTxBufferInstanceRomIdxOfFmFifoInstanceRamSafe
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	    99   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   100  /*! \brief       Gets the bmTxBufferInstance index of the fmFifoInstance with error checking
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   101   *  \details     -
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   102   *  \param[in]   fmFifoInstanceRomIdx   fmFifoInstance index
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   103   *  \param[in]   memIdx                 memory section index
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   104   *  \return                             bmTxBufferInstance index
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   105   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   106   *  \context     TASK|ISR1|ISR2
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   107   *  \reentrant   TRUE
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   108   *  \synchronous TRUE
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   109   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   110  PDUR_LOCAL_INLINE FUNC(PduR_BmTxBufferInstanceRomIterType, PDUR_CODE) PduR_Fm_GetBmTxBufferInstanceRomIdxOfFmFifoInstanceRamSafe(PduR_FmFifoInstanceRomIterType fmFifoInstanceRomIdx, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   111  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   112  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   113  #if (PDUR_FMFIFORAM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   114  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   115   * PduR_Fm_GetFillLevelSafe
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   116   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   117  /*! \brief       Gets the fill level with error detection.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   118   *  \details     -
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   119   *  \param[in]   fmFifoRamIdx    Id of the Fifo
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   120   *  \param[in]   memIdx          memory section index
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   121   *  \return                      the fill level
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   122   *  \pre         -
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   123   *  \context     TASK|ISR1|ISR2
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   124   *  \reentrant   TRUE
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   125   *  \synchronous TRUE
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   126   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   127  PDUR_LOCAL_INLINE FUNC(uint16, PDUR_CODE) PduR_Fm_GetFillLevelSafe(PduR_FmFifoRamIterType fmFifoRamIdx, PduR_MemIdxType memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   128  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   129  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   130  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   131   *  LOCAL FUNCTIONS
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   132   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   133  #if(PDUR_FMFIFORAM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   134  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   135   * PduR_Fm_Init
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   136   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   137  /*!
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   138   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   139   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   140   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   141   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   142  FUNC(void, PDUR_CODE) PduR_Fm_Init(PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   143  {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   144    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   145      PduR_FmFifoRamIterType fmFifoRamIdx;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   146      for(fmFifoRamIdx = 0u; fmFifoRamIdx < PduR_GetSizeOfFmFifoRam(memIdx); fmFifoRamIdx++)  /* FETA_PDUR_01 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   147      {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   148  # if(PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   149        PduR_SetTpTxSmStateOfFmFifoRam(fmFifoRamIdx, PDUR_RM_TX_IDLE_TPTXSMSTATEOFFMFIFORAM, memIdx);     /* SBSW_PDUR_CSL01 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   150  # endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   151        PduR_SetPendingConfirmationsOfFmFifoRam(fmFifoRamIdx, 0u, memIdx);        /* SBSW_PDUR_CSL01 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   152        PduR_SetFmFifoElementRamReadIdxOfFmFifoRam(fmFifoRamIdx, PduR_GetFmFifoElementRamStartIdxOfFmFifoRom(fmFifoRamIdx, memIdx), memIdx);      /* SBSW_PDUR_CSL01 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   153        PduR_SetFmFifoElementRamWriteIdxOfFmFifoRam(fmFifoRamIdx, PduR_GetFmFifoElementRamStartIdxOfFmFifoRom(fmFifoRamIdx, memIdx), memIdx);     /* SBSW_PDUR_CSL01 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   154        PduR_SetFillLevelOfFmFifoRam(fmFifoRamIdx, 0u, memIdx);   /* SBSW_PDUR_CSL01 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   155      }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   156    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   157    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   158      PduR_FmFifoElementRamIterType fmFifoElementRamIdx;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   159      for(fmFifoElementRamIdx = 0u; fmFifoElementRamIdx < PduR_GetSizeOfFmFifoElementRam(memIdx); fmFifoElementRamIdx++)  /* FETA_PDUR_01 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   160      {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   161        PduR_SetBmTxBufferRomIdxOfFmFifoElementRam(fmFifoElementRamIdx, PDUR_NO_BMTXBUFFERROMIDXOFFMFIFOELEMENTRAM, memIdx);      /* SBSW_PDUR_CSL01 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   162        PduR_SetRmDestRomIdxOfFmFifoElementRam(fmFifoElementRamIdx, 0, memIdx);      /* SBSW_PDUR_CSL01 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   163      }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   164    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   165    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   166      PduR_FmFifoInstanceRamIterType fmFifoInstanceRamIdx;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   167      for(fmFifoInstanceRamIdx = 0u; fmFifoInstanceRamIdx < PduR_GetSizeOfFmFifoInstanceRam(memIdx); fmFifoInstanceRamIdx++)  /* FETA_PDUR_01 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   168      {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   169        PduR_SetBmTxBufferInstanceRomIdxOfFmFifoInstanceRam(fmFifoInstanceRamIdx, PDUR_NO_BMTXBUFFERINSTANCEROMIDXOFFMFIFOINSTANCERAM, memIdx);   /* SBSW_PDUR_CSL01 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   170      }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   171    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   172  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   173    PDUR_DUMMY_STATEMENT(memIdx);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   174  }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   175  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   176  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   177  #if (PDUR_EXISTS_TP_BUFFERED_ROUTINGTYPEOFRMDESTROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   178  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   179   * PduR_Fm_Peek
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   180   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   181  /*!
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   182   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   183   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   184   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   185   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   186   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   187   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   188   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   189   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   190  FUNC(Std_ReturnType, PDUR_CODE) PduR_Fm_Peek(PduR_FmFifoRamIterType fmFifoRamIdx, P2VAR(PduR_FmFifoElementRamIterType, AUTOMATIC, PDUR_APPL_DATA) fmFifoElementRamIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   191  {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   192    Std_ReturnType retVal = E_NOT_OK;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   193  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   194    /* FifoElements in the queue? */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   195    while(PduR_Fm_GetFillLevelSafe(fmFifoRamIdx, memIdx) > 0u)  /* FETA_PDUR_03 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   196    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   197      PduR_FmFifoElementRamIterType fmFifoElementRamReadIdx = PduR_Fm_IncrementReadIndex(fmFifoRamIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   198  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   199      if(PduR_Fm_IsFifoElementAllocated(fmFifoElementRamReadIdx, memIdx) == E_OK)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   200      {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   201        *fmFifoElementRamIdx = fmFifoElementRamReadIdx;   /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   202        retVal = E_OK;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   203        break;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   204      }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   205    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   206    return retVal;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   207  }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   208  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   209  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   210  #if (PDUR_FMFIFORAM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   211  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   212   * PduR_Fm_IsFifoElementAllocated
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   213   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   214  /*!
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   215   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   216   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   217   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   218  *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   219  FUNC(Std_ReturnType, PDUR_CODE) PduR_Fm_IsFifoElementAllocated(PduR_FmFifoElementRamIterType fmFifoElementRamIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   220  {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   221    PduR_BmTxBufferRomIterType bmTxBufferRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   222  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   223    /* Is a TxBuffer assigned to the FifoElement? */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   224    return PduR_Fm_GetCurrentlyUsedBmTxBufferRomIdxByFmFifoElementIdx(fmFifoElementRamIdx, &bmTxBufferRomIdx, memIdx); /* SBSW_PDUR_STACK_VARIABLE */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   225  }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   226  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   227  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   228  #if (PDUR_FMFIFORAM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   229  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   230   * PduR_Fm_AssignTxBuffer2FifoElement
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   231   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   232  /*!
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   233   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   234   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   235   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   236    *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   237  FUNC(void, PDUR_CODE) PduR_Fm_AssignTxBuffer2FifoElement(PduR_FmFifoElementRamIterType fmFifoElementRamWriteIdx, PduR_BmTxBufferRomIdxOfFmFifoElementRamType bmTxBufferRomIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   238  {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   239    PduR_SetBmTxBufferRomIdxOfFmFifoElementRam(fmFifoElementRamWriteIdx, bmTxBufferRomIdx, memIdx);       /* SBSW_PDUR_CSL03 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   240    PDUR_DUMMY_STATEMENT(memIdx);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   241  }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   242  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   243  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   244  #if (PDUR_FMFIFORAM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   245  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   246   * PduR_Fm_ReleaseFifoElement
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   247   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   248  /*!
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   249   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   250   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   251   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   252    *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   253  FUNC(void, PDUR_CODE) PduR_Fm_ReleaseFifoElement(PduR_FmFifoElementRamIterType fmFifoElementRamIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   254  {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   255    PduR_BmTxBufferRomIterType bmTxBufferRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   256  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   257    /* Reset (optional) referenced TxBuffer */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   258    if(PduR_Fm_GetCurrentlyUsedBmTxBufferRomIdxByFmFifoElementIdx(fmFifoElementRamIdx, &bmTxBufferRomIdx, memIdx) == E_OK) /* SBSW_PDUR_STACK_VARIABLE */ /* COV_PDUR_ROBUSTNESS */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   259    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   260      PduR_Bm_ResetTxBuffer(bmTxBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   261    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   262  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   263    PduR_SetRmDestRomIdxOfFmFifoElementRam(fmFifoElementRamIdx, 0, memIdx);  /* SBSW_PDUR_CSL03 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   264    /* Release Tx buffer Fifo Element connection */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   265    PduR_SetBmTxBufferRomIdxOfFmFifoElementRam(fmFifoElementRamIdx, PDUR_NO_BMTXBUFFERROMIDXOFFMFIFOELEMENTRAM, memIdx);  /* SBSW_PDUR_IDX_PARAM_INTERNAL_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   266  }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   267  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   268  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   269  #if (PDUR_FMFIFORAM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   270  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   271   * PduR_Fm_GetCurrentlyUsedBmTxBufferRomIdxByFmFifoElementIdx
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   272   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   273  /*!
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   274   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   275   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   276   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   277    *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   278  FUNC(Std_ReturnType, PDUR_CODE) PduR_Fm_GetCurrentlyUsedBmTxBufferRomIdxByFmFifoElementIdx(PduR_FmFifoElementRamIterType fmFifoElementRamIdx, P2VAR(PduR_BmTxBufferRomIterType, AUTOMATIC, PDUR_APPL_DATA) bmTxBufferRomIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   279  {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   280    Std_ReturnType retVal;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   281    PduR_BmTxBufferRomIterType readBmTxBufferRomIdx = PduR_Fm_GetBmTxBufferRomIdxOfFmFifoElementRamSafe(fmFifoElementRamIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   282  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   283    if(readBmTxBufferRomIdx == PDUR_NO_BMTXBUFFERROMIDXOFFMFIFOELEMENTRAM)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   284    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   285      retVal = E_NOT_OK;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   286    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   287    else
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   288    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   289      *bmTxBufferRomIdx = readBmTxBufferRomIdx; /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   290      retVal = E_OK;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   291    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   292  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   293    return retVal;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   294  }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   295  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   296  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   297  #if (PDUR_FMFIFORAM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   298  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   299   * PduR_Fm_GetBmTxBufferRomIdxOfFmFifoElementRamSafe
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   300   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   301  /*!
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   302   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   303   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   304   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   305   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   306  PDUR_LOCAL_INLINE FUNC(PduR_BmTxBufferRomIdxOfFmFifoElementRamType, PDUR_CODE) PduR_Fm_GetBmTxBufferRomIdxOfFmFifoElementRamSafe(PduR_FmFifoElementRamIterType fmFifoElementRamIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   307  {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   308    PduR_BmTxBufferRomIdxOfFmFifoElementRamType bmTxBufferRomIdx = PduR_GetBmTxBufferRomIdxOfFmFifoElementRam(fmFifoElementRamIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   309  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   310  # if (PDUR_EXTENDED_ERROR_CHECKS == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   311    PduR_SizeOfBmTxBufferInstanceRomType sizeOfBmTxBufferRom = PduR_GetSizeOfBmTxBufferRom(memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   312  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   313    if((bmTxBufferRomIdx >= sizeOfBmTxBufferRom) && (bmTxBufferRomIdx != PDUR_NO_BMTXBUFFERROMIDXOFFMFIFOELEMENTRAM)) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   314    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   315      bmTxBufferRomIdx = 0;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   316      PduR_ReportRuntimeDetError(PDUR_FCT_GETTXBUFFEROFFIFOELEMENT, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   317    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   318  # endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   319  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   320    PDUR_DUMMY_STATEMENT(memIdx);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   321    return bmTxBufferRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   322  }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   323  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   324  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   325  #if (PDUR_FMFIFORAM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   326  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   327   * PduR_Fm_GetBmTxBufferInstanceRomIdxOfFmFifoInstanceRamSafe
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   328   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   329  /*!
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   330   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   331   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   332   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   333   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   334  PDUR_LOCAL_INLINE FUNC(PduR_BmTxBufferInstanceRomIterType, PDUR_CODE) PduR_Fm_GetBmTxBufferInstanceRomIdxOfFmFifoInstanceRamSafe(PduR_FmFifoInstanceRomIterType fmFifoInstanceRomIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   335  {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   336    PduR_BmTxBufferInstanceRomIterType bmTxBufferInstanceRomIdx = PduR_GetBmTxBufferInstanceRomIdxOfFmFifoInstanceRam(fmFifoInstanceRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   337  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   338  # if (PDUR_EXTENDED_ERROR_CHECKS == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   339    PduR_SizeOfBmTxBufferInstanceRomType sizeOfBmTxBufferInstanceRom = PduR_GetSizeOfBmTxBufferInstanceRom(memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   340  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   341    if((bmTxBufferInstanceRomIdx >= sizeOfBmTxBufferInstanceRom) && (bmTxBufferInstanceRomIdx != PDUR_NO_BMTXBUFFERINSTANCEROMIDXOFFMFIFOINSTANCERAM)) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   342    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   343      bmTxBufferInstanceRomIdx = 0;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   344      PduR_ReportRuntimeDetError(PDUR_FCT_GETTXBUFFERINSTANCEOFFIFOINSTANCE, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   345    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   346  # endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   347  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   348    PDUR_DUMMY_STATEMENT(memIdx);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   349    return bmTxBufferInstanceRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   350  }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   351  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   352  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   353  #if (PDUR_FMFIFORAM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   354  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   355   * PduR_Fm_GetCurrentlyUsedBmTxBufferInstanceIdxByRmGDestIdx
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   356   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   357  /*!
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   358   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   359   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   360   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   361    *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   362  FUNC(Std_ReturnType, PDUR_CODE) PduR_Fm_GetCurrentlyUsedBmTxBufferInstanceIdxByRmGDestIdx(PduR_RmGDestRomIterType rmGDestRomIdx, P2VAR(PduR_BmTxBufferInstanceRomIterType, AUTOMATIC, PDUR_APPL_DATA) bmTxBufferInstanceRomIdx)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   363  {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   364    Std_ReturnType retVal;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   365    PduR_FmFifoInstanceRomPartitionIdxOfRmGDestRomType memIdx = PduR_GetFmFifoInstanceRomPartitionIdxOfRmGDestRom(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   366    PduR_BmTxBufferInstanceRomIterType readBmTxBufferInstanceRomIdxOfFmFifoInstance = PduR_Fm_GetBmTxBufferInstanceRomIdxOfFmFifoInstanceRamSafe(PduR_GetFmFifoInstanceRomIdxOfRmGDestRom(rmGDestRomIdx), memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   367  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   368    if(readBmTxBufferInstanceRomIdxOfFmFifoInstance == PDUR_NO_BMTXBUFFERINSTANCEROMIDXOFFMFIFOINSTANCERAM) /* COV_PDUR_ROBUSTNESS */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   369    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   370      retVal = E_NOT_OK;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   371    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   372    else
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   373    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   374      *bmTxBufferInstanceRomIdx = readBmTxBufferInstanceRomIdxOfFmFifoInstance; /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   375      retVal = E_OK;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   376    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   377  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   378    return retVal;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   379  }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   380  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   381  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   382  # if (PDUR_FMFIFORAM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   383  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   384   * PduR_Fm_IncrementReadIndex
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   385   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   386  /*!
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   387   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   388   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   389   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   390   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   391   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   392    *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   393  FUNC(PduR_FmFifoElementRamIterType, PDUR_CODE) PduR_Fm_IncrementReadIndex(PduR_FmFifoRamIterType fmFifoRamIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   394  {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   395    PduR_FmFifoElementRamReadIdxOfFmFifoRamType fmFifoElementRamReadIdx = PduR_Fm_GetFmFifoElementRamReadIdxOfFmFifoRamSafe(fmFifoRamIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   396  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   397    /* Get next element */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   398    if(fmFifoElementRamReadIdx >= ((PduR_GetFmFifoElementRamEndIdxOfFmFifoRom(fmFifoRamIdx, memIdx) - 1u)))
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   399    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   400      /* Wrap-around */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   401      fmFifoElementRamReadIdx = PduR_GetFmFifoElementRamStartIdxOfFmFifoRom(fmFifoRamIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   402    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   403    else
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   404    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   405      fmFifoElementRamReadIdx++;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   406    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   407    PduR_DecFillLevelOfFmFifoRam(fmFifoRamIdx, memIdx);       /* SBSW_PDUR_IDX_PARAM_INTERNAL_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   408    PduR_SetFmFifoElementRamReadIdxOfFmFifoRam(fmFifoRamIdx, fmFifoElementRamReadIdx, memIdx);      /* SBSW_PDUR_IDX_PARAM_INTERNAL_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   409  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   410    return fmFifoElementRamReadIdx;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   411  }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   412  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   413  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   414  # if (PDUR_FMFIFORAM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   415  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   416   * PduR_Fm_IncrementWriteIndex
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   417   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   418  /*!
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   419   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   420   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   421   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   422   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   423    *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   424  FUNC(void, PDUR_CODE) PduR_Fm_IncrementWriteIndex(PduR_FmFifoRamIterType fmFifoRamIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   425  {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   426    PduR_FmFifoElementRamWriteIdxOfFmFifoRamType fmFifoElementRamWriteIdx = PduR_Fm_GetFmFifoElementRamWriteIdxSafe(fmFifoRamIdx, memIdx); /* PRQA S 2842 */ /* MD_PduR_2842 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   427  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   428    /* Get next fifo element */ /* Check if the write Idx is at the end (EndIdx -1) */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   429    if(fmFifoElementRamWriteIdx >= (PduR_GetFmFifoElementRamEndIdxOfFmFifoRom(fmFifoRamIdx, memIdx) - 1u))      /* COV_PDUR_ONLY_SHARED_OR_DEDICATED_BUFFER */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   430    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   431      /* Wrap-around */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   432      fmFifoElementRamWriteIdx = PduR_GetFmFifoElementRamStartIdxOfFmFifoRom(fmFifoRamIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   433    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   434    else
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   435    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   436      fmFifoElementRamWriteIdx++;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   437    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   438    /* Update global FifoElement write pointer. This pointer points to the next available Fifo element. */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   439    PduR_SetFmFifoElementRamWriteIdxOfFmFifoRam(fmFifoRamIdx, fmFifoElementRamWriteIdx, memIdx);        /* PRQA S 2842 */ /* MD_PduR_2842 */ /* SBSW_PDUR_CSL03 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   440  }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   441  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   442  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   443  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   444   * PduR_Fm_PutFifo
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   445   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   446  /*!
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   447   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   448   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   449   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   450   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   451   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   452   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   453   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   454   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   455  #if (PDUR_EXISTS_SHARED_FIFO_QUEUE_IMPLEMENTATIONTYPEOFRMBUFFEREDIFPROPERTIESROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   456  FUNC(Std_ReturnType, PDUR_CODE) PduR_Fm_PutFifo(PduR_RmGDestRomIterType rmGDest, PduR_RmDestRomIterType rmDest, PduLengthType pduLength, SduDataPtrType sduDataPtr)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   457  {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   458    Std_ReturnType retVal = E_NOT_OK;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   459    PduR_FmFifoInstanceRomPartitionIdxOfRmGDestRomType memIdx = PduR_GetFmFifoInstanceRomPartitionIdxOfRmGDestRom(rmGDest);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   460    PduR_FmFifoRomIterType fmFifoRomIdx = PduR_GetFmFifoRomIdxOfFmFifoInstanceRom(PduR_GetFmFifoInstanceRomIdxOfRmGDestRom(rmGDest), memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   461    PduR_FmFifoElementRamWriteIdxOfFmFifoRamType fmFifoElementRamWriteIdx = PduR_Fm_GetFmFifoElementRamWriteIdxSafe(fmFifoRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   462  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   463    if(PduR_Fm_IsFifoElementAllocated(fmFifoElementRamWriteIdx, memIdx) != E_OK)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   464    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   465      PduR_BmTxBufferRomIdxOfBmTxBufferIndRomType allocatedTxBufferIdxPtr = 0u;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   466      PduLengthType bufferSizePtr = 0u;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   467  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   468      /* The pduLength already includes optional metadata -> it's the optimal and minimum buffer length. */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   469      if(PduR_Bm_AllocateTxBuffer(fmFifoRomIdx, pduLength, pduLength, pduLength, &bufferSizePtr, &allocatedTxBufferIdxPtr, memIdx) == BUFREQ_OK)     /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   470      {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   471        PduR_IncFillLevelOfFmFifoRam(fmFifoRomIdx, memIdx); /* SBSW_PDUR_CSL03 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   472        PduR_Fm_IncrementWriteIndex(fmFifoRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   473  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   474        PduR_Fm_AssignTxBuffer2FifoElement(fmFifoElementRamWriteIdx, allocatedTxBufferIdxPtr, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   475        PduR_SetRmDestRomIdxOfFmFifoElementRam(fmFifoElementRamWriteIdx, (PduR_RmDestRomIdxOfFmFifoElementRamType) rmDest, memIdx);   /* SBSW_PDUR_CSL01 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   476  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   477        {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   478          PduR_BmTxBufferRomIterType bmTxBufferRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   479  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   480          if(PduR_Fm_GetCurrentlyUsedBmTxBufferRomIdxByFmFifoElementIdx(fmFifoElementRamWriteIdx, &bmTxBufferRomIdx, memIdx) == E_OK) /* SBSW_PDUR_STACK_VARIABLE */ /* COV_PDUR_ROBUSTNESS */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   481          {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   482            (void) PduR_Bm_PutData(bmTxBufferRomIdx, pduLength, sduDataPtr, memIdx);      /* SBSW_PDUR_STACK_VARIABLE */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   483            retVal = E_OK;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   484          }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   485        }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   486      }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   487    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   488    return retVal;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   489  }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   490  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   491  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   492  #if (PDUR_EXISTS_SHARED_FIFO_QUEUE_IMPLEMENTATIONTYPEOFRMBUFFEREDIFPROPERTIESROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   493  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   494   * PduR_Fm_RemoveElement
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   495   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   496  /*!
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   497   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   498   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   499   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   500   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   501  FUNC(void, PDUR_CODE) PduR_Fm_RemoveElement(PduR_RmGDestRomIterType rmGDestRomIdx)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   502  {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   503    PduR_FmFifoInstanceRomPartitionIdxOfRmGDestRomType memIdx = PduR_GetFmFifoInstanceRomPartitionIdxOfRmGDestRom(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   504    PduR_FmFifoRamIterType fmFifoRomIdx = PduR_GetFmFifoRomIdxOfFmFifoInstanceRom(PduR_GetFmFifoInstanceRomIdxOfRmGDestRom(rmGDestRomIdx), memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   505    PduR_FmFifoElementRamIterType fmFifoElementRamReadIdx = PduR_Fm_GetFmFifoElementRamReadIdxOfFmFifoRamSafe(fmFifoRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   506    PduR_BmTxBufferInstanceRomIterType bmTxBufferInstanceRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   507  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   508    PduR_Fm_ReleaseFifoElement(fmFifoElementRamReadIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   509    if(PduR_Fm_GetCurrentlyUsedBmTxBufferInstanceIdxByRmGDestIdx(rmGDestRomIdx, &bmTxBufferInstanceRomIdx) == E_OK) /* SBSW_PDUR_STACK_VARIABLE */ /* COV_PDUR_ROBUSTNESS */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   510    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   511      PduR_Bm_ResetTxBufferInstance(bmTxBufferInstanceRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   512    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   513    (void) PduR_Fm_IncrementReadIndex(fmFifoRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   514  }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   515  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   516  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   517  #if (PDUR_EXISTS_SHARED_FIFO_QUEUE_IMPLEMENTATIONTYPEOFRMBUFFEREDIFPROPERTIESROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   518  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   519   * PduR_Fm_GetNextElement
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   520   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   521  /*!
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   522   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   523   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   524   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   525   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   526  FUNC(Std_ReturnType, PDUR_CODE) PduR_Fm_GetNextElement(PduR_RmGDestRomIterType rmGDestRomIdx, P2VAR(PduR_RmDestRomIterType, AUTOMATIC, PDUR_APPL_DATA) rmDestRomIdx, P2VAR(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) info)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   527  {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   528    Std_ReturnType retVal = E_NOT_OK;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   529    PduR_FmFifoInstanceRomPartitionIdxOfRmGDestRomType memIdx = PduR_GetFmFifoInstanceRomPartitionIdxOfRmGDestRom(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   530    PduR_FmFifoElementRamIterType fmFifoElementRamReadIdx = PduR_Fm_GetFmFifoElementRamReadIdxOfFmFifoRamSafe(PduR_GetFmFifoRomIdxOfFmFifoInstanceRom(PduR_GetFmFifoInstanceRomIdxOfRmGDestRom(rmGDestRomIdx), memIdx), memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   531  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   532    if(PduR_Fm_IsFifoElementAllocated(fmFifoElementRamReadIdx, memIdx) == E_OK)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   533    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   534      PduR_BmTxBufferRomIterType bmTxBufferRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   535  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   536      if(PduR_Fm_GetCurrentlyUsedBmTxBufferRomIdxByFmFifoElementIdx(fmFifoElementRamReadIdx, &bmTxBufferRomIdx, memIdx) == E_OK) /* SBSW_PDUR_STACK_VARIABLE */ /* COV_PDUR_ROBUSTNESS */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   537      {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   538        PduR_BmTxBufferInstanceRomStartIdxOfBmTxBufferRomType bmTxBufferInstanceRomIdx = PduR_GetBmTxBufferInstanceRomStartIdxOfBmTxBufferRom(bmTxBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   539  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   540        PduR_Bm_EnableBmTxBufferInstance(bmTxBufferRomIdx, bmTxBufferInstanceRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   541        PduR_SetBmTxBufferInstanceRomIdxOfFmFifoInstanceRam(PduR_GetFmFifoInstanceRomIdxOfRmGDestRom(rmGDestRomIdx), bmTxBufferInstanceRomIdx, memIdx);       /* SBSW_PDUR_CSL03 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   542  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   543        if(PduR_Fm_GetRmDestRomIdxOfFmFifoElementRamSafe(fmFifoElementRamReadIdx, rmDestRomIdx, memIdx) == E_OK) /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */ /* COV_PDUR_ROBUSTNESS */ /* PRQA S 2995, 2991 */ /* MD_PduR_2995_2996, MD_PduR_2991 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   544        {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   545          PduR_Bm_CopyDataAsPtr(bmTxBufferInstanceRomIdx, info, PduR_Bm_GetLinearDataSizeInstance(bmTxBufferInstanceRomIdx, memIdx), memIdx);       /* SBSW_PDUR_API_CALL_FORWARDING_ID_AND_PTR */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   546          retVal = E_OK;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   547        }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   548      }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   549    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   550  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   551    return retVal;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   552  }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   553  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   554  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   555  #if (PDUR_EXISTS_SHARED_FIFO_QUEUE_IMPLEMENTATIONTYPEOFRMBUFFEREDIFPROPERTIESROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   556  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   557   * PduR_Fm_GetFillLevel
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   558   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   559  /*!
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   560   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   561   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   562   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   563   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   564  FUNC(uint16, PDUR_CODE) PduR_Fm_GetFillLevel(PduR_RmGDestRomIterType rmGDestRomIdx) /* COV_PDUR_NO_DEFERRED_IF_ROUTING */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   565  {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   566    PduR_FmFifoInstanceRomPartitionIdxOfRmGDestRomType memIdx = PduR_GetFmFifoInstanceRomPartitionIdxOfRmGDestRom(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   567  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   568    return PduR_Fm_GetFillLevelSafe(PduR_GetFmFifoRomIdxOfFmFifoInstanceRom(PduR_GetFmFifoInstanceRomIdxOfRmGDestRom(rmGDestRomIdx), memIdx), memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   569  }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   570  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   571  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   572  #if (PDUR_FMFIFORAM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   573  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   574   * PduR_Fm_GetFillLevelSafe
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   575   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   576  /*!
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   577   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   578   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   579   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   580   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   581  PDUR_LOCAL_INLINE FUNC(uint16, PDUR_CODE) PduR_Fm_GetFillLevelSafe(PduR_FmFifoRamIterType fmFifoRamIdx, PduR_MemIdxType memIdx) /* COV_PDUR_NO_DEFERRED_IF_ROUTING */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   582  {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   583    uint16 fillLevel = PduR_GetFillLevelOfFmFifoRam(fmFifoRamIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   584  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   585  # if (PDUR_EXTENDED_ERROR_CHECKS == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   586    PduR_FmFifoElementRamLengthOfFmFifoRomType fifoDepth = PduR_GetFmFifoElementRamLengthOfFmFifoRom(fmFifoRamIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   587  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   588    if(fillLevel > fifoDepth) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   589    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   590      fillLevel = fifoDepth;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   591      PduR_ReportRuntimeDetError(PDUR_FCT_GETFILLLEVEL, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   592    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   593  # endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   594  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   595    PDUR_DUMMY_STATEMENT(memIdx);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   596    return fillLevel;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   597  }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   598  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   599  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   600  #if (PDUR_EXISTS_SHARED_FIFO_QUEUE_IMPLEMENTATIONTYPEOFRMBUFFEREDIFPROPERTIESROM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   601  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   602   * PduR_Fm_FlushFiFo
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   603   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   604  /*!
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   605   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   606   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   607   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   608   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   609  FUNC(void, PDUR_CODE) PduR_Fm_FlushFiFo(PduR_RmGDestRomIterType rmGDestRomIdx)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   610  {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   611    PduR_FmFifoInstanceRomPartitionIdxOfRmGDestRomType memIdx = PduR_GetFmFifoInstanceRomPartitionIdxOfRmGDestRom(rmGDestRomIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   612    PduR_FmFifoRomIterType fmFifoRomIdx = PduR_GetFmFifoRomIdxOfFmFifoInstanceRom(PduR_GetFmFifoInstanceRomIdxOfRmGDestRom(rmGDestRomIdx), memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   613    PduR_FmFifoElementRamIterType fmFifoElementRamIdx;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   614  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   615    for(fmFifoElementRamIdx = PduR_GetFmFifoElementRamStartIdxOfFmFifoRom(fmFifoRomIdx, memIdx); fmFifoElementRamIdx < PduR_GetFmFifoElementRamEndIdxOfFmFifoRom(fmFifoRomIdx, memIdx); fmFifoElementRamIdx++)  /* FETA_PDUR_01 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   616    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   617      PduR_BmTxBufferRomIterType bmTxBufferRomIdx;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   618  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   619      /* Reset (optional) referenced TxBuffer */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   620      if(PduR_Fm_GetCurrentlyUsedBmTxBufferRomIdxByFmFifoElementIdx(fmFifoElementRamIdx, &bmTxBufferRomIdx, memIdx) == E_OK) /* SBSW_PDUR_STACK_VARIABLE */ /* COV_PDUR_ROBUSTNESS */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   621      {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   622        PduR_Bm_ResetTxBuffer(bmTxBufferRomIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   623        PduR_Bm_ResetTxBufferInstance(PduR_GetBmTxBufferInstanceRomStartIdxOfBmTxBufferRom(bmTxBufferRomIdx, memIdx), memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   624      }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   625      PduR_Fm_ReleaseFifoElement(fmFifoElementRamIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   626    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   627    PduR_SetFillLevelOfFmFifoRam(fmFifoRomIdx, 0u, memIdx);       /* PRQA S 2842 */ /* MD_PduR_2842 */ /* SBSW_PDUR_CSL02 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   628    PduR_SetFmFifoElementRamReadIdxOfFmFifoRam(fmFifoRomIdx, PduR_GetFmFifoElementRamStartIdxOfFmFifoRom(fmFifoRomIdx, memIdx), memIdx);  /* PRQA S 2842 */ /* MD_PduR_2842 */ /* SBSW_PDUR_CSL02 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   629    PduR_SetFmFifoElementRamWriteIdxOfFmFifoRam(fmFifoRomIdx, PduR_GetFmFifoElementRamStartIdxOfFmFifoRom(fmFifoRomIdx, memIdx), memIdx); /* PRQA S 2842 */ /* MD_PduR_2842 */ /* SBSW_PDUR_CSL02 */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   630  }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   631  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   632  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   633  #if (PDUR_FMFIFORAM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   634  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   635   * PduR_Fm_GetFmFifoElementRamReadIdxOfFmFifoRamSafe
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   636   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   637  /*!
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   638   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   639   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   640   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   641   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   642  FUNC(PduR_FmFifoElementRamReadIdxOfFmFifoRamType, PDUR_CODE) PduR_Fm_GetFmFifoElementRamReadIdxOfFmFifoRamSafe(PduR_FmFifoRamIterType fmFifoRamIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   643  {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   644    PduR_FmFifoElementRamReadIdxOfFmFifoRamType readIdx = PduR_GetFmFifoElementRamReadIdxOfFmFifoRam(fmFifoRamIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   645  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   646  # if (PDUR_EXTENDED_ERROR_CHECKS == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   647    PduR_FmFifoElementRamStartIdxOfFmFifoRomType startIdxOfBuffer = PduR_GetFmFifoElementRamStartIdxOfFmFifoRom(fmFifoRamIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   648    PduR_FmFifoElementRamEndIdxOfFmFifoRomType endIdxOfBuffer = PduR_GetFmFifoElementRamEndIdxOfFmFifoRom(fmFifoRamIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   649  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   650    if(readIdx >= endIdxOfBuffer) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   651    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   652      readIdx = endIdxOfBuffer - 1u;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   653      PduR_ReportRuntimeDetError(PDUR_FCT_GETFMREADIDX, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   654    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   655    if(readIdx < startIdxOfBuffer) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   656    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   657      readIdx = startIdxOfBuffer;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   658      PduR_ReportRuntimeDetError(PDUR_FCT_GETFMREADIDX, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   659    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   660  # endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   661  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   662    PDUR_DUMMY_STATEMENT(memIdx);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   663    return readIdx;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   664  }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   665  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   666  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   667  #if (PDUR_FMFIFORAM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   668  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   669   * PduR_Fm_GetFmFifoElementRamWriteIdxSafe
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   670   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   671  /*!
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   672   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   673   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   674   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   675   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   676  FUNC(PduR_FmFifoElementRamWriteIdxOfFmFifoRamType, PDUR_CODE) PduR_Fm_GetFmFifoElementRamWriteIdxSafe(PduR_FmFifoRamIterType fmFifoRamIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   677  {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   678    PduR_FmFifoElementRamWriteIdxOfFmFifoRamType writeIdx = PduR_GetFmFifoElementRamWriteIdxOfFmFifoRam(fmFifoRamIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   679  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   680  # if (PDUR_EXTENDED_ERROR_CHECKS == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   681    PduR_FmFifoElementRamStartIdxOfFmFifoRomType startIdxOfBuffer = PduR_GetFmFifoElementRamStartIdxOfFmFifoRom(fmFifoRamIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   682    PduR_FmFifoElementRamEndIdxOfFmFifoRomType endIdxOfBuffer = PduR_GetFmFifoElementRamEndIdxOfFmFifoRom(fmFifoRamIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   683  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   684    if(writeIdx >= endIdxOfBuffer) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   685    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   686      writeIdx = endIdxOfBuffer - 1u;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   687      PduR_ReportRuntimeDetError(PDUR_FCT_GETFMWRITEIDX, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   688    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   689    if(writeIdx < startIdxOfBuffer) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   690    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   691      writeIdx = startIdxOfBuffer;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   692      PduR_ReportRuntimeDetError(PDUR_FCT_GETFMWRITEIDX, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   693    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   694  # endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   695  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   696    PDUR_DUMMY_STATEMENT(memIdx);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   697    return writeIdx;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   698  }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   699  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   700  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   701  #if (PDUR_FMFIFORAM == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   702  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   703   * PduR_Fm_GetRmDestRomIdxOfFmFifoElementRamSafe
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   704   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   705  /*!
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   706   * Internal comment removed.
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   707   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   708   *
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   709   *********************************************************************************************************************/
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   710  FUNC(Std_ReturnType, PDUR_CODE) PduR_Fm_GetRmDestRomIdxOfFmFifoElementRamSafe(PduR_FmFifoElementRamIterType fmFifoElementRamIdx, P2VAR(PduR_RmDestRomIterType, AUTOMATIC, PDUR_APPL_DATA) rmDestRomIdx, PduR_MemIdxType memIdx)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   711  {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   712    Std_ReturnType retVal = E_NOT_OK;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   713    PduR_RmDestRomIdxOfFmFifoElementRamType readRmDestRomIdx = PduR_GetRmDestRomIdxOfFmFifoElementRam(fmFifoElementRamIdx, memIdx);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   714  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   715  # if (PDUR_EXTENDED_ERROR_CHECKS == STD_ON)
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   716    if(readRmDestRomIdx >= PduR_GetSizeOfRmDestRom()) /* COV_PDUR_EXTENDED_ERROR_CHECKS */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   717    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   718      PduR_ReportRuntimeDetError(PDUR_FCT_GETDESTHNDOFFIFOELEMENT, PDUR_E_IDXOUTOFBOUNDS);
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   719      retVal = E_NOT_OK;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   720    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   721    else
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   722  # endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   723    {
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   724      *rmDestRomIdx = readRmDestRomIdx; /* SBSW_PDUR_VALID_PTR_ENSURED_BY_CALLING_FUNCTION */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   725      retVal = E_OK;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   726    }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   727  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   728    PDUR_DUMMY_STATEMENT(memIdx);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   729    return retVal;
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   730  }
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   731  #endif
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   732  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   733  #define PDUR_STOP_SEC_CODE
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   734  #include "PduR_MemMap.h" /* PRQA S 5087 */   /* MD_MSR_MemMap */
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   735  
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   736  /**********************************************************************************************************************
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   737   *  END OF FILE: PduR_Fm.c
+; ..\BSW364\PduR\Implementation\PduR_Fm.c	   738   *********************************************************************************************************************/
+
+	; Module end

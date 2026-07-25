@@ -1,0 +1,1892 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc836a --dep-file=Appl\\Source\\CDD\\MotorFoc\\.MotorFoc_CurrentLoop.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=Appl\\Source\\CDD\\MotorFoc\\MotorFoc_CurrentLoop.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\Source\\CDD\\MotorFoc\\MotorFoc_CurrentLoop.src ..\\Appl\\Source\\CDD\\MotorFoc\\MotorFoc_CurrentLoop.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\Source\\CDD\\MotorFoc\\MotorFoc_CurrentLoop.c'
+
+	
+$TC162
+	.sdecl	'.zrodata.MotorFoc_CurrentLoop..1.cnt',data,rom
+	.sect	'.zrodata.MotorFoc_CurrentLoop..1.cnt'
+	.align	2
+.1.cnt:	.type	object
+	.size	.1.cnt,4
+	.word	1151531395
+	.sdecl	'.zrodata.MotorFoc_CurrentLoop..2.cnt',data,rom
+	.sect	'.zrodata.MotorFoc_CurrentLoop..2.cnt'
+	.align	2
+.2.cnt:	.type	object
+	.size	.2.cnt,4
+	.word	1058262330
+	.sdecl	'.zrodata.MotorFoc_CurrentLoop..3.cnt',data,rom
+	.sect	'.zrodata.MotorFoc_CurrentLoop..3.cnt'
+	.align	2
+.3.cnt:	.type	object
+	.size	.3.cnt,4
+	.word	1071494103
+	.sdecl	'.zrodata.MotorFoc_CurrentLoop..4.cnt',data,rom
+	.sect	'.zrodata.MotorFoc_CurrentLoop..4.cnt'
+	.align	2
+.4.cnt:	.type	object
+	.size	.4.cnt,4
+	.word	-1075989545
+	.sdecl	'.zrodata.MotorFoc_CurrentLoop..5.cnt',data,rom
+	.sect	'.zrodata.MotorFoc_CurrentLoop..5.cnt'
+	.align	2
+.5.cnt:	.type	object
+	.size	.5.cnt,4
+	.word	981668463
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_UpdateSinCos',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_UpdateSinCos'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	     1  #include "MotorFoc_CurrentLoop.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	     2  #include "MotorFoc_Pid.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	     3  #include "MotorFoc_SinCosTable.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	     4  #include "Pwm_17_GtmCcu6.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	     5  #include "Pwm_17_GtmCcu6_Cfg.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	     6  #include <math.h> /* sqrtf for SVPWM magnitude limit */
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	     7  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	     8  #define MOTORFOC_PWM_DUTY_MAX      (0x8000U)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	     9  #define MOTORFOC_SQRT3_3           (0.5773502691896257645F)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    10  #define MOTORFOC_SQRT3             (1.73205078F)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    11  #define MOTORFOC_VDC_MIN_RUN_DEFAULT    (6.0F)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    12  #define MOTORFOC_CURRENT_MAX_A_DEFAULT  (20.0F)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    13  #define MOTORFOC_CURRENT_STARTUP_BLANKING_COUNT_DEFAULT    (100U)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    14  #define MOTORFOC_CURRENT_UNDERVOLT_CONFIRM_COUNT_DEFAULT   (20U)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    15  #define MOTORFOC_CURRENT_OVERCURRENT_CONFIRM_COUNT_DEFAULT (10U)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    16  #define MOTORFOC_ZERO_CURRENT_REFERENCE_A                  (0.001F)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    17  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    18  volatile float32 MotorFoc_CurrentLoopMaxCurrentA = MOTORFOC_CURRENT_MAX_A_DEFAULT;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    19  volatile float32 MotorFoc_CurrentLoopMinVdcRunV = MOTORFOC_VDC_MIN_RUN_DEFAULT;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    20  volatile uint16 MotorFoc_CurrentLoopStartupBlankingCount =
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    21      MOTORFOC_CURRENT_STARTUP_BLANKING_COUNT_DEFAULT;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    22  volatile uint16 MotorFoc_CurrentLoopStartupBlankingLeft = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    23  volatile uint16 MotorFoc_CurrentLoopUndervoltConfirmCount =
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    24      MOTORFOC_CURRENT_UNDERVOLT_CONFIRM_COUNT_DEFAULT;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    25  volatile uint16 MotorFoc_CurrentLoopUndervoltCounter = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    26  volatile uint16 MotorFoc_CurrentLoopOverCurrentConfirmCount =
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    27      MOTORFOC_CURRENT_OVERCURRENT_CONFIRM_COUNT_DEFAULT;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    28  volatile uint16 MotorFoc_CurrentLoopOverCurrentCounter = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    29  volatile uint8 MotorFoc_CurrentLoopFault = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    30  volatile uint8 MotorFoc_CurrentLoopFaultReason = MOTORFOC_CURRENT_FAULT_NONE;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    31  volatile uint8 MotorFoc_CurrentLoopFaultClearRequest = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    32  volatile float32 MotorFoc_CurrentLoopFaultIuA = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    33  volatile float32 MotorFoc_CurrentLoopFaultIvA = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    34  volatile float32 MotorFoc_CurrentLoopFaultIwA = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    35  volatile float32 MotorFoc_CurrentLoopFaultVdcV = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    36  static float32 MotorFoc_CurrentLoopRawIuA = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    37  static float32 MotorFoc_CurrentLoopRawIvA = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    38  static float32 MotorFoc_CurrentLoopRawIwA = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    39  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    40  static const Pwm_17_GtmCcu6_ChannelType MotorFoc_PwmChannel[3] =
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    41  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    42    Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9180IH1,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    43    Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9180IH2,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    44    Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9180IH3
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    45  };
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    46  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    47  static void MotorFoc_UpdateSinCos(MotorFoc_ContextType* ctx)
+; Function MotorFoc_UpdateSinCos
+MotorFoc_UpdateSinCos:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    48  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    49    uint32 idx;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    50  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    51    /* Prefer discrete 8192-count angle (TLE5012 / open-loop raw); else map rad. */
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    52    if ((ctx->angle.angleRaw >= 0.0F) &&
+	ld.w	d0,[a4]20
+	mov	d15,#0
+	cmp.f	d15,d0,d15
+	and	d15,#6
+	jeq	d15,#0,.L2
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    53        (ctx->angle.angleRaw < (float32)MOTORFOC_SINCOS_TABLE_SIZE))
+	movh	d15,#17920
+	cmp.f	d15,d0,d15
+	jz.t	d15:0,.L3
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    54    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    55      idx = (uint32)ctx->angle.angleRaw;
+	ftouz	d15,d0
+	j	.L4
+.L3:
+.L2:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    56    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    57    else
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    58    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    59      sint32 sidx = (sint32)(ctx->angle.electricalAngleRad * MOTORFOC_SINCOS_RAD_TO_IDX);
+	ld.w	d15,[a4]24
+	ld.w	d0,.1.cnt
+	mul.f	d15,d15,d0
+	ftoiz	d15,d15
+.L4:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    60      idx = (uint32)sidx;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    61    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    62  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    63    idx &= MOTORFOC_SINCOS_IDX_MASK;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    64    ctx->angle.sin = MotorFoc_SinCosTable[idx];
+	insert	d15,d15,#0,#13,#19
+	movh.a	a15,#@his(MotorFoc_SinCosTable)
+	lea	a15,[a15]@los(MotorFoc_SinCosTable)
+	addsc.a	a2,a15,d15,#2
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    65    ctx->angle.cos = MotorFoc_SinCosTable[idx + MOTORFOC_SINCOS_COS_OFFSET];
+	sh	d15,#2
+	ld.w	d0,[a2]
+	addsc.a	a15,a15,d15,#0
+	st.w	[a4]32,d0
+	ld.w	d15,[a15]8192
+	st.w	[a4]28,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    66  }
+	ret
+	
+__MotorFoc_UpdateSinCos_function_end:
+	.size	MotorFoc_UpdateSinCos,__MotorFoc_UpdateSinCos_function_end-MotorFoc_UpdateSinCos
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_DoClarke',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_DoClarke'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    67  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    68  static void MotorFoc_DoClarke(MotorFoc_ContextType* ctx)
+; Function MotorFoc_DoClarke
+MotorFoc_DoClarke:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    69  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    70    ctx->iab.real = ctx->i_motor.u;
+	ld.w	d15,[a4]
+	st.w	[a4]36,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    71    ctx->iab.imag = (ctx->i_motor.v - ctx->i_motor.w) * MOTORFOC_SQRT3_3;
+	ld.w	d15,[a4]4
+	ld.w	d0,[a4]8
+	sub.f	d15,d15,d0
+	ld.w	d0,.2.cnt
+	mul.f	d15,d15,d0
+	st.w	[a4]40,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    72  }
+	ret
+	
+__MotorFoc_DoClarke_function_end:
+	.size	MotorFoc_DoClarke,__MotorFoc_DoClarke_function_end-MotorFoc_DoClarke
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_DoPark',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_DoPark'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    73  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    74  static void MotorFoc_DoPark(MotorFoc_ContextType* ctx)
+; Function MotorFoc_DoPark
+MotorFoc_DoPark:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    75  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    76    ctx->idqMeas.real = (ctx->iab.real * ctx->angle.cos) + (ctx->iab.imag * ctx->angle.sin);
+	ld.w	d0,[a4]32
+	ld.w	d1,[a4]40
+	ld.w	d2,[a4]28
+	mul.f	d15,d1,d0
+	ld.w	d3,[a4]36
+	madd.f	d15,d15,d3,d2
+	st.w	[a4]52,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    77    ctx->idqMeas.imag = (ctx->iab.imag * ctx->angle.cos) - (ctx->iab.real * ctx->angle.sin);
+	mul.f	d15,d1,d2
+	msub.f	d15,d15,d3,d0
+	st.w	[a4]56,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    78  }
+	ret
+	
+__MotorFoc_DoPark_function_end:
+	.size	MotorFoc_DoPark,__MotorFoc_DoPark_function_end-MotorFoc_DoPark
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_DoInversePark',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_DoInversePark'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    79  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    80  static void MotorFoc_DoInversePark(MotorFoc_ContextType* ctx)
+; Function MotorFoc_DoInversePark
+MotorFoc_DoInversePark:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    81  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    82    ctx->vabRef.real = (ctx->vdqRef.real * ctx->angle.cos) - (ctx->vdqRef.imag * ctx->angle.sin);
+	ld.w	d1,[a4]28
+	ld.w	d2,[a4]60
+	ld.w	d15,[a4]32
+	mul.f	d3,d2,d1
+	ld.w	d0,[a4]64
+	msub.f	d3,d3,d0,d15
+	st.w	[a4]68,d3
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    83    ctx->vabRef.imag = (ctx->vdqRef.real * ctx->angle.sin) + (ctx->vdqRef.imag * ctx->angle.cos);
+	mul.f	d0,d0,d1
+	madd.f	d15,d0,d2,d15
+	st.w	[a4]72,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    84  }
+	ret
+	
+__MotorFoc_DoInversePark_function_end:
+	.size	MotorFoc_DoInversePark,__MotorFoc_DoInversePark_function_end-MotorFoc_DoInversePark
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_DoCurrentPid',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_DoCurrentPid'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    85  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    86  static void MotorFoc_DoCurrentPid(MotorFoc_ContextType* ctx)
+; Function MotorFoc_DoCurrentPid
+MotorFoc_DoCurrentPid:	.type	func
+	mov.aa	a15,a4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    87  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    88    MotorFoc_CurrentPidIdealCalc(ctx->idqRef.real,
+	ld.w	d4,[a15]44
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    89                                 ctx->idqMeas.real,
+	ld.w	d5,[a15]52
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    90                                 &ctx->vdqRef.real,
+	lea	a4,[a15]60
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    91                                 &ctx->piId);
+	lea	a5,[a15]76
+	call	MotorFoc_CurrentPidIdealCalc
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    92    MotorFoc_CurrentPidIdealCalc(ctx->idqRef.imag,
+	ld.w	d4,[a15]48
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    93                                 ctx->idqMeas.imag,
+	ld.w	d5,[a15]56
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    94                                 &ctx->vdqRef.imag,
+	lea	a4,[a15]64
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    95                                 &ctx->piIq);
+	lea	a5,[a15]132
+	j	MotorFoc_CurrentPidIdealCalc
+	
+__MotorFoc_DoCurrentPid_function_end:
+	.size	MotorFoc_DoCurrentPid,__MotorFoc_DoCurrentPid_function_end-MotorFoc_DoCurrentPid
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_ResetCurrentPidState',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_ResetCurrentPidState'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    96  }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    97  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    98  static void MotorFoc_ResetCurrentPidState(MotorFoc_ContextType* ctx)
+; Function MotorFoc_ResetCurrentPidState
+MotorFoc_ResetCurrentPidState:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	    99  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   100    ctx->piId.Out = 0.0F;
+	mov	d15,#0
+	lea	a15,[a4]104
+	lea	a2,4
+.L83:
+	st.w	[a15+],d15
+	loop	a2,.L83
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   101    ctx->piId.v1 = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   102    ctx->piId.ui = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   103    ctx->piId.i1 = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   104    ctx->piId.w1 = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   105    ctx->piIq.Out = 0.0F;
+	lea	a15,[a4]160
+	lea	a2,4
+.L84:
+	st.w	[a15+],d15
+	loop	a2,.L84
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   106    ctx->piIq.v1 = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   107    ctx->piIq.ui = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   108    ctx->piIq.i1 = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   109    ctx->piIq.w1 = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   110  }
+	ret
+	
+__MotorFoc_ResetCurrentPidState_function_end:
+	.size	MotorFoc_ResetCurrentPidState,__MotorFoc_ResetCurrentPidState_function_end-MotorFoc_ResetCurrentPidState
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_ApplyPwmOff',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_ApplyPwmOff'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   111  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   112  static void MotorFoc_ApplyPwmOff(void)
+; Function MotorFoc_ApplyPwmOff
+MotorFoc_ApplyPwmOff:	.type	func
+	mov	d4,#1
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   113  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   114    Pwm_17_GtmCcu6_SetDutyCycle(MotorFoc_PwmChannel[0], 0U);
+	mov	d5,#0
+	call	Pwm_17_GtmCcu6_SetDutyCycle
+	mov	d4,#2
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   115    Pwm_17_GtmCcu6_SetDutyCycle(MotorFoc_PwmChannel[1], 0U);
+	mov	d5,#0
+	call	Pwm_17_GtmCcu6_SetDutyCycle
+	mov	d4,#3
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   116    Pwm_17_GtmCcu6_SetDutyCycle(MotorFoc_PwmChannel[2], 0U);
+	mov	d5,#0
+	j	Pwm_17_GtmCcu6_SetDutyCycle
+	
+__MotorFoc_ApplyPwmOff_function_end:
+	.size	MotorFoc_ApplyPwmOff,__MotorFoc_ApplyPwmOff_function_end-MotorFoc_ApplyPwmOff
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_AbsFloat',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_AbsFloat'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   117  }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   118  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   119  static float32 MotorFoc_AbsFloat(float32 value)
+; Function MotorFoc_AbsFloat
+MotorFoc_AbsFloat:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   120  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   121    if (value < 0.0F)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   122    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   123      return -value;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   124    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   125    return value;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   126  }
+	insert	d2,d4,#0,#31,#1
+	ret
+	
+__MotorFoc_AbsFloat_function_end:
+	.size	MotorFoc_AbsFloat,__MotorFoc_AbsFloat_function_end-MotorFoc_AbsFloat
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_ClearCurrentLoopSignals',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_ClearCurrentLoopSignals'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   127  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   128  static void MotorFoc_ClearCurrentLoopSignals(MotorFoc_ContextType* ctx)
+; Function MotorFoc_ClearCurrentLoopSignals
+MotorFoc_ClearCurrentLoopSignals:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   129  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   130    ctx->iab.real = 0.0F;
+	mov	d15,#0
+	lea	a15,[a4]36
+	lea	a2,9
+.L82:
+	st.w	[a15+],d15
+	loop	a2,.L82
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   131    ctx->iab.imag = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   132    ctx->idqRef.real = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   133    ctx->idqRef.imag = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   134    ctx->idqMeas.real = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   135    ctx->idqMeas.imag = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   136    ctx->vdqRef.real = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   137    ctx->vdqRef.imag = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   138    ctx->vabRef.real = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   139    ctx->vabRef.imag = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   140    ctx->Tpwm.pwm_OutU = 0U;
+	lea	a15,[a4]260
+	st.w	[a15+],d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   141    ctx->Tpwm.pwm_OutV = 0U;
+	st.w	[a15+],d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   142    ctx->Tpwm.pwm_OutW = 0U;
+	st.w	[a15+],d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   143  }
+	ret
+	
+__MotorFoc_ClearCurrentLoopSignals_function_end:
+	.size	MotorFoc_ClearCurrentLoopSignals,__MotorFoc_ClearCurrentLoopSignals_function_end-MotorFoc_ClearCurrentLoopSignals
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_IsPhaseCurrentOverLimit',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_IsPhaseCurrentOverLimit'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   144  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   145  static uint8 MotorFoc_IsPhaseCurrentOverLimit(MotorFoc_ContextType* ctx)
+; Function MotorFoc_IsPhaseCurrentOverLimit
+MotorFoc_IsPhaseCurrentOverLimit:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   146  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   147    float32 currentLimit = MotorFoc_CurrentLoopMaxCurrentA;
+	ld.w	d15,MotorFoc_CurrentLoopMaxCurrentA
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   148  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   149    if (currentLimit < 0.0F)
+	insert	d8,d15,#0,#31,#1
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   150    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   151      currentLimit = -currentLimit;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   152    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   153    if (currentLimit <= 0.0F)
+	mov	d15,#0
+	cmp.f	d15,d8,d15
+	and	d15,#3
+	jne	d15,#0,.L6
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   154    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   155      return 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   156    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   157  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   158    if (MotorFoc_AbsFloat(MotorFoc_CurrentLoopRawIuA) > currentLimit)
+	ld.w	d4,MotorFoc_CurrentLoopRawIuA
+	call	MotorFoc_AbsFloat
+	cmp.f	d15,d2,d8
+	jnz.t	d15:2,.L7
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   159    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   160      return 1U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   161    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   162    if (MotorFoc_AbsFloat(MotorFoc_CurrentLoopRawIvA) > currentLimit)
+	ld.w	d4,MotorFoc_CurrentLoopRawIvA
+	call	MotorFoc_AbsFloat
+	cmp.f	d15,d2,d8
+	jnz.t	d15:2,.L8
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   163    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   164      return 1U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   165    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   166    if (MotorFoc_AbsFloat(MotorFoc_CurrentLoopRawIwA) > currentLimit)
+	ld.w	d4,MotorFoc_CurrentLoopRawIwA
+	call	MotorFoc_AbsFloat
+	cmp.f	d15,d2,d8
+	jz.t	d15:2,.L9
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   167    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   168      return 1U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   169    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   170  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   171    return 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   172  }
+.L8:
+.L7:
+	mov	d2,#1
+	ret
+.L9:
+.L6:
+	mov	d2,#0
+	ret
+	
+__MotorFoc_IsPhaseCurrentOverLimit_function_end:
+	.size	MotorFoc_IsPhaseCurrentOverLimit,__MotorFoc_IsPhaseCurrentOverLimit_function_end-MotorFoc_IsPhaseCurrentOverLimit
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_SetFault',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_SetFault'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   173  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   174  static void MotorFoc_SetFault(MotorFoc_ContextType* ctx, uint8 faultReason)
+; Function MotorFoc_SetFault
+MotorFoc_SetFault:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   175  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   176    MotorFoc_CurrentLoopFault = 1U;
+	mov	d15,#1
+	st.b	MotorFoc_CurrentLoopFault,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   177    MotorFoc_CurrentLoopFaultReason = faultReason;
+	st.b	MotorFoc_CurrentLoopFaultReason,d4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   178    MotorFoc_CurrentLoopFaultIuA = MotorFoc_CurrentLoopRawIuA;
+	ld.w	d15,MotorFoc_CurrentLoopRawIuA
+	st.w	MotorFoc_CurrentLoopFaultIuA,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   179    MotorFoc_CurrentLoopFaultIvA = MotorFoc_CurrentLoopRawIvA;
+	ld.w	d15,MotorFoc_CurrentLoopRawIvA
+	st.w	MotorFoc_CurrentLoopFaultIvA,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   180    MotorFoc_CurrentLoopFaultIwA = MotorFoc_CurrentLoopRawIwA;
+	ld.w	d15,MotorFoc_CurrentLoopRawIwA
+	st.w	MotorFoc_CurrentLoopFaultIwA,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   181    MotorFoc_CurrentLoopFaultVdcV = ctx->i_motor.vdc;
+	ld.w	d15,[a4]12
+	st.w	MotorFoc_CurrentLoopFaultVdcV,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   182  }
+	ret
+	
+__MotorFoc_SetFault_function_end:
+	.size	MotorFoc_SetFault,__MotorFoc_SetFault_function_end-MotorFoc_SetFault
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_CheckOverCurrentFault',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_CheckOverCurrentFault'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   183  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   184  static uint8 MotorFoc_CheckOverCurrentFault(MotorFoc_ContextType* ctx)
+; Function MotorFoc_CheckOverCurrentFault
+MotorFoc_CheckOverCurrentFault:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   185  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   186    uint16 confirmCount = MotorFoc_CurrentLoopOverCurrentConfirmCount;
+	ld.hu	d8,MotorFoc_CurrentLoopOverCurrentConfirmCount
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   187  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   188    if (MotorFoc_CurrentLoopStartupBlankingLeft > 0U)
+	ld.hu	d15,MotorFoc_CurrentLoopStartupBlankingLeft
+	jeq	d15,#0,.L12
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   189    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   190      MotorFoc_CurrentLoopStartupBlankingLeft--;
+	ld.hu	d15,MotorFoc_CurrentLoopStartupBlankingLeft
+	add	d15,#-1
+	st.h	MotorFoc_CurrentLoopStartupBlankingLeft,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   191      MotorFoc_CurrentLoopOverCurrentCounter = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   192      return 0U;
+	j	.L13
+.L12:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   193    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   194  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   195    if (MotorFoc_IsPhaseCurrentOverLimit(ctx) == 0U)
+	call	MotorFoc_IsPhaseCurrentOverLimit
+	jne	d2,#0,.L14
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   196    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   197      MotorFoc_CurrentLoopOverCurrentCounter = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   198      return 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   199    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   200  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   201    if (confirmCount == 0U)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   202    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   203      confirmCount = 1U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   204    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   205  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   206    if (MotorFoc_CurrentLoopOverCurrentCounter < confirmCount)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   207    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   208      MotorFoc_CurrentLoopOverCurrentCounter++;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   209    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   210  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   211    if (MotorFoc_CurrentLoopOverCurrentCounter >= confirmCount)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   212    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   213      return 1U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   214    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   215  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   216    return 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   217  }
+.L13:
+	mov	d15,#0
+	st.h	MotorFoc_CurrentLoopOverCurrentCounter,d15
+	j	.L15
+.L14:
+	sel	d8,d8,d8,#1
+	ld.hu	d15,MotorFoc_CurrentLoopOverCurrentCounter
+	jge.u	d15,d8,.L17
+	ld.hu	d15,MotorFoc_CurrentLoopOverCurrentCounter
+	add	d15,#1
+	st.h	MotorFoc_CurrentLoopOverCurrentCounter,d15
+.L17:
+	ld.hu	d15,MotorFoc_CurrentLoopOverCurrentCounter
+	jlt.u	d15,d8,.L18
+	mov	d2,#1
+	ret
+.L18:
+.L15:
+	mov	d2,#0
+	ret
+	
+__MotorFoc_CheckOverCurrentFault_function_end:
+	.size	MotorFoc_CheckOverCurrentFault,__MotorFoc_CheckOverCurrentFault_function_end-MotorFoc_CheckOverCurrentFault
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_CheckUndervoltFault',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_CheckUndervoltFault'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   218  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   219  static uint8 MotorFoc_CheckUndervoltFault(MotorFoc_ContextType* ctx)
+; Function MotorFoc_CheckUndervoltFault
+MotorFoc_CheckUndervoltFault:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   220  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   221    uint16 confirmCount = MotorFoc_CurrentLoopUndervoltConfirmCount;
+	ld.hu	d0,MotorFoc_CurrentLoopUndervoltConfirmCount
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   222    float32 minVdc = MotorFoc_CurrentLoopMinVdcRunV;
+	ld.w	d1,MotorFoc_CurrentLoopMinVdcRunV
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   223  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   224    if (MotorFoc_CurrentLoopStartupBlankingLeft > 0U)
+	ld.hu	d15,MotorFoc_CurrentLoopStartupBlankingLeft
+	jne	d15,#0,.L21
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   225    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   226      MotorFoc_CurrentLoopUndervoltCounter = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   227      return 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   228    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   229  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   230    if (minVdc < 0.0F)
+	mov	d2,#0
+	cmp.f	d15,d2,d1
+	and	d15,#6
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   231    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   232      minVdc = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   233    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   234  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   235    if (ctx->i_motor.vdc >= minVdc)
+	cmov	d1,d15,d2
+	ld.w	d15,[a4]12
+	cmp.f	d15,d15,d1
+	and	d15,#6
+	jeq	d15,#0,.L24
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   236    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   237      MotorFoc_CurrentLoopUndervoltCounter = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   238      return 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   239    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   240  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   241    if (confirmCount == 0U)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   242    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   243      confirmCount = 1U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   244    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   245  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   246    if (MotorFoc_CurrentLoopUndervoltCounter < confirmCount)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   247    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   248      MotorFoc_CurrentLoopUndervoltCounter++;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   249    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   250  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   251    if (MotorFoc_CurrentLoopUndervoltCounter >= confirmCount)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   252    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   253      return 1U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   254    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   255  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   256    return 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   257  }
+.L21:
+	mov	d15,#0
+	st.h	MotorFoc_CurrentLoopUndervoltCounter,d15
+	j	.L25
+.L24:
+	sel	d0,d0,d0,#1
+	ld.hu	d15,MotorFoc_CurrentLoopUndervoltCounter
+	jge.u	d15,d0,.L27
+	ld.hu	d15,MotorFoc_CurrentLoopUndervoltCounter
+	add	d15,#1
+	st.h	MotorFoc_CurrentLoopUndervoltCounter,d15
+.L27:
+	ld.hu	d15,MotorFoc_CurrentLoopUndervoltCounter
+	jlt.u	d15,d0,.L28
+	mov	d2,#1
+	ret
+.L28:
+.L25:
+	mov	d2,#0
+	ret
+	
+__MotorFoc_CheckUndervoltFault_function_end:
+	.size	MotorFoc_CheckUndervoltFault,__MotorFoc_CheckUndervoltFault_function_end-MotorFoc_CheckUndervoltFault
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_DoSvpwm',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_DoSvpwm'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   258  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   259  static void MotorFoc_DoSvpwm(MotorFoc_ContextType* ctx)
+; Function MotorFoc_DoSvpwm
+MotorFoc_DoSvpwm:	.type	func
+	mov.aa	a15,a4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   260  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   261    uint8 sectorCode = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   262    float32 sA;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   263    float32 sB;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   264    float32 sC;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   265    float32 tx;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   266    float32 ty;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   267    float32 tSum;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   268    float32 tA;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   269    float32 tB;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   270    float32 tC;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   271    float32 tCmpU;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   272    float32 tCmpV;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   273    float32 tCmpW;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   274    float32 voltageLimit;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   275    float32 voltageMagnitude;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   276    float32 scale;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   277  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   278    voltageLimit = MOTORFOC_SQRT3_3 * ctx->i_motor.vdc * ctx->Tpwm.pwmMinTimes;
+	ld.w	d15,[a15]12
+	ld.w	d0,.2.cnt
+	mov	d9,#0
+	mul.f	d15,d15,d0
+	ld.w	d0,[a15]248
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   279    voltageMagnitude = sqrtf((ctx->vabRef.real * ctx->vabRef.real) +
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   280                             (ctx->vabRef.imag * ctx->vabRef.imag));
+	mul.f	d8,d15,d0
+	ld.w	d15,[a15]72
+	ld.w	d0,[a15]68
+	mul.f	d15,d15,d15
+	madd.f	d4,d15,d0,d0
+	call	sqrtf
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   281    if ((voltageMagnitude > voltageLimit) && (voltageMagnitude > 0.0F))
+	cmp.f	d15,d2,d8
+	jz.t	d15:2,.L31
+	mov	d15,#0
+	cmp.f	d15,d2,d15
+	jz.t	d15:2,.L32
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   282    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   283      scale = voltageLimit / voltageMagnitude;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   284      ctx->vabRef.real *= scale;
+	div.f	d15,d8,d2
+	ld.w	d0,[a15]68
+	mul.f	d0,d0,d15
+	st.w	[a15]68,d0
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   285      ctx->vabRef.imag *= scale;
+	ld.w	d0,[a15]72
+	mul.f	d15,d0,d15
+	st.w	[a15]72,d15
+.L32:
+.L31:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   286    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   287  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   288    /* TC364 six-sector SVPWM. pwm_OutX remains a compare tick in [0, Tpwm / 2]. */
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   289    sA = ctx->vabRef.imag;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   290    sB = (MOTORFOC_SQRT3 * ctx->vabRef.real - ctx->vabRef.imag) * 0.5F;
+	ld.w	d4,.3.cnt
+	ld.w	d15,[a15]68
+	ld.w	d2,[a15]72
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   291    sC = (-MOTORFOC_SQRT3 * ctx->vabRef.real - ctx->vabRef.imag) * 0.5F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   292  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   293    if (sA > 0.0F)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   294    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   295      sectorCode = 1U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   296    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   297    if (sB > 0.0F)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   298    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   299      sectorCode += 2U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   300    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   301    if (sC > 0.0F)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   302    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   303      sectorCode += 4U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   304    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   305  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   306    scale = MOTORFOC_SQRT3 * ctx->Tpwm.Tpwm / ctx->i_motor.vdc;
+	mul.f	d0,d15,d4
+	ld.w	d7,[a15]244
+	movh	d3,#16128
+	ld.w	d6,[a15]12
+	sub.f	d0,d0,d2
+	mov	d1,#0
+	mul.f	d5,d0,d3
+	ld.w	d0,.4.cnt
+	mul.f	d4,d7,d4
+	mul.f	d15,d15,d0
+	div.f	d4,d4,d6
+	sub.f	d15,d15,d2
+	mul.f	d0,d15,d3
+	cmp.f	d15,d2,d1
+	extr.u	d15,d15,#2,#1
+	cmov	d9,d15,#1
+	cmp.f	d15,d5,d1
+	extr.u	d15,d15,#2,#1
+	sha	d15,#1
+	add	d9,d15
+	cmp.f	d15,d0,d1
+	extr.u	d15,d15,#2,#1
+	sha	d15,#2
+	add	d15,d9
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   307    switch (sectorCode)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   308    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   309      case 1U:
+	jeq	d15,#1,.L34
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   310        tx = -sB * scale;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   311        ty = -sC * scale;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   312        break;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   313      case 2U:
+	jeq	d15,#2,.L35
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   314        tx = -sC * scale;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   315        ty = -sA * scale;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   316        break;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   317      case 3U:
+	jeq	d15,#3,.L36
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   318        tx = sB * scale;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   319        ty = sA * scale;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   320        break;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   321      case 4U:
+	jeq	d15,#4,.L37
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   322        tx = -sA * scale;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   323        ty = -sB * scale;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   324        break;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   325      case 5U:
+	jeq	d15,#5,.L38
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   326        tx = sA * scale;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   327        ty = sC * scale;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   328        break;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   329      case 6U:
+	jeq	d15,#6,.L39
+	j	.L40
+.L34:
+	insn.t	d2,d5:31,d5:31
+	insn.t	d0,d0:31,d0:31
+	j	.L41
+.L35:
+	insn.t	d0,d0:31,d0:31
+	mul.f	d6,d0,d4
+	insn.t	d0,d2:31,d2:31
+	j	.L42
+.L36:
+	mul.f	d6,d5,d4
+	mul.f	d0,d2,d4
+	j	.L43
+.L37:
+	insn.t	d0,d2:31,d2:31
+	mul.f	d6,d0,d4
+	insn.t	d0,d5:31,d5:31
+	j	.L44
+.L38:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   330        tx = sC * scale;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   331        ty = sB * scale;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   332        break;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   333      default:
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   334        tx = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   335        ty = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   336        break;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   337    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   338  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   339    tSum = tx + ty;
+.L41:
+	mul.f	d6,d2,d4
+.L44:
+.L42:
+	mul.f	d0,d0,d4
+	j	.L45
+.L39:
+	mul.f	d6,d0,d4
+	mul.f	d0,d5,d4
+	j	.L46
+.L40:
+	mov	d6,d1
+	mov	d0,d6
+.L46:
+.L45:
+.L43:
+	add.f	d2,d6,d0
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   340    if ((tSum > ctx->Tpwm.Tpwm) && (tSum > 0.0F))
+	cmp.f	d4,d2,d7
+	jz.t	d4:2,.L47
+	cmp.f	d1,d2,d1
+	jz.t	d1:2,.L48
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   341    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   342      tx = tx * ctx->Tpwm.Tpwm / tSum;
+	mul.f	d1,d6,d7
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   343      ty = ty * ctx->Tpwm.Tpwm / tSum;
+	mul.f	d0,d0,d7
+	div.f	d6,d1,d2
+	div.f	d0,d0,d2
+.L48:
+.L47:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   344    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   345  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   346    tA = (ctx->Tpwm.Tpwm - tx - ty) * 0.25F;
+	sub.f	d2,d7,d6
+	movh	d1,#16000
+	sub.f	d2,d2,d0
+	mul.f	d2,d2,d1
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   347    tB = (tx * 0.5F) + tA;
+	madd.f	d4,d2,d6,d3
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   348    tC = (ty * 0.5F) + tB;
+	madd.f	d0,d4,d0,d3
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   349  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   350    switch (sectorCode)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   351    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   352      case 1U:
+	jeq	d15,#1,.L49
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   353        tCmpU = tB; tCmpV = tA; tCmpW = tC;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   354        break;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   355      case 2U:
+	jeq	d15,#2,.L50
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   356        tCmpU = tA; tCmpV = tC; tCmpW = tB;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   357        break;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   358      case 3U:
+	jeq	d15,#3,.L51
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   359        tCmpU = tA; tCmpV = tB; tCmpW = tC;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   360        break;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   361      case 4U:
+	jeq	d15,#4,.L52
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   362        tCmpU = tC; tCmpV = tB; tCmpW = tA;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   363        break;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   364      case 5U:
+	jeq	d15,#5,.L53
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   365        tCmpU = tC; tCmpV = tA; tCmpW = tB;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   366        break;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   367      case 6U:
+	jeq	d15,#6,.L54
+	j	.L55
+.L49:
+	mov	d15,d4
+	mov	d1,d2
+	j	.L58
+.L50:
+	mov	d15,d2
+	mov	d1,d0
+	j	.L57
+.L51:
+	mov	d15,d2
+	mov	d1,d4
+	j	.L58
+.L52:
+	mov	d15,d0
+	mov	d1,d4
+	j	.L59
+.L53:
+	mov	d15,d0
+	mov	d1,d2
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   368        tCmpU = tB; tCmpV = tC; tCmpW = tA;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   369        break;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   370      default:
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   371        /* Zero vector: keep the same neutral duty used before output enable. */
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   372        tCmpU = ctx->Tpwm.Tpwm * 0.25F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   373        tCmpV = ctx->Tpwm.Tpwm * 0.25F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   374        tCmpW = ctx->Tpwm.Tpwm * 0.25F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   375        break;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   376    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   377  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   378    ctx->Tpwm.pwm_OutU = (uint32)tCmpU;
+.L57:
+	mov	d0,d4
+	j	.L60
+.L54:
+	mov	d15,d4
+	mov	d1,d0
+.L59:
+	mov	d0,d2
+	j	.L61
+.L55:
+	mul.f	d15,d7,d1
+	mov	e0,d15,d15
+.L61:
+.L60:
+.L58:
+	ftouz	d15,d15
+	st.w	[a15]260,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   379    ctx->Tpwm.pwm_OutV = (uint32)tCmpV;
+	ftouz	d15,d1
+	st.w	[a15]264,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   380    ctx->Tpwm.pwm_OutW = (uint32)tCmpW;
+	ftouz	d15,d0
+	st.w	[a15]268,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   381  }
+	ret
+	
+__MotorFoc_DoSvpwm_function_end:
+	.size	MotorFoc_DoSvpwm,__MotorFoc_DoSvpwm_function_end-MotorFoc_DoSvpwm
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_ApplyPwm',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_ApplyPwm'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   382  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   383  static void MotorFoc_ApplyPwm(MotorFoc_ContextType* ctx)
+; Function MotorFoc_ApplyPwm
+MotorFoc_ApplyPwm:	.type	func
+	mov.aa	a15,a4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   384  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   385    uint16 dutyU;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   386    uint16 dutyV;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   387    uint16 dutyW;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   388    uint32 dutyMin;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   389    uint32 dutyMax;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   390  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   391    dutyMin = ctx->Tpwm.pwmMinTimesMin;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   392    dutyMax = ctx->Tpwm.pwmMinTimesMax;
+	ld.w	d0,[a15]252
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   393  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   394    if (ctx->Tpwm.pwm_OutU > dutyMax)
+	ld.w	d1,[a15]260
+	ld.w	d15,[a15]256
+	jge.u	d0,d1,.L62
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   395    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   396      ctx->Tpwm.pwm_OutU = dutyMax;
+	st.w	[a15]260,d0
+	j	.L63
+.L62:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   397    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   398    else if (ctx->Tpwm.pwm_OutU < dutyMin)
+	jge.u	d1,d15,.L64
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   399    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   400      ctx->Tpwm.pwm_OutU = dutyMin;
+	st.w	[a15]260,d15
+.L64:
+.L63:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   401    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   402  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   403    if (ctx->Tpwm.pwm_OutV > dutyMax)
+	ld.w	d1,[a15]264
+	jge.u	d0,d1,.L65
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   404    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   405      ctx->Tpwm.pwm_OutV = dutyMax;
+	st.w	[a15]264,d0
+	j	.L66
+.L65:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   406    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   407    else if (ctx->Tpwm.pwm_OutV < dutyMin)
+	jge.u	d1,d15,.L67
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   408    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   409      ctx->Tpwm.pwm_OutV = dutyMin;
+	st.w	[a15]264,d15
+.L67:
+.L66:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   410    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   411  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   412    if (ctx->Tpwm.pwm_OutW > dutyMax)
+	ld.w	d1,[a15]268
+	jge.u	d0,d1,.L68
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   413    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   414      ctx->Tpwm.pwm_OutW = dutyMax;
+	st.w	[a15]268,d0
+	j	.L69
+.L68:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   415    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   416    else if (ctx->Tpwm.pwm_OutW < dutyMin)
+	jge.u	d1,d15,.L70
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   417    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   418      ctx->Tpwm.pwm_OutW = dutyMin;
+	st.w	[a15]268,d15
+.L70:
+.L69:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   419    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   420  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   421    /* MCAL duty is normalized to 0x8000; the six-sector output is a half-period tick. */
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   422    dutyU = (uint16)(((float32)ctx->Tpwm.pwm_OutU *
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   423                      (float32)MOTORFOC_PWM_DUTY_MAX * 2.0F /
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   424                      ctx->Tpwm.Tpwm) + 0.5F);
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   425    dutyV = (uint16)(((float32)ctx->Tpwm.pwm_OutV *
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   426                      (float32)MOTORFOC_PWM_DUTY_MAX * 2.0F /
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   427                      ctx->Tpwm.Tpwm) + 0.5F);
+	movh	d8,#16128
+	ld.w	d9,[a15]244
+	movh	d10,#16384
+	ld.w	d15,[a15]264
+	movh	d11,#18176
+	fcall	.cocofun_6
+	call	__f_ftous
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   428    dutyW = (uint16)(((float32)ctx->Tpwm.pwm_OutW *
+	mov	d12,d2
+	ld.w	d15,[a15]268
+	fcall	.cocofun_6
+	call	__f_ftous
+	mov	d13,d2
+	ld.w	d15,[a15]260
+	mov	d14,#1
+	fcall	.cocofun_6
+	call	__f_ftous
+	mov	e4,d2,d14
+	call	Pwm_17_GtmCcu6_SetDutyCycle
+	mov	d4,#2
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   429                      (float32)MOTORFOC_PWM_DUTY_MAX * 2.0F /
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   430                      ctx->Tpwm.Tpwm) + 0.5F);
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   431  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   432    Pwm_17_GtmCcu6_SetDutyCycle(MotorFoc_PwmChannel[0], dutyU);
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   433    Pwm_17_GtmCcu6_SetDutyCycle(MotorFoc_PwmChannel[1], dutyV);
+	mov	d5,d12
+	call	Pwm_17_GtmCcu6_SetDutyCycle
+	mov	d4,#3
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   434    Pwm_17_GtmCcu6_SetDutyCycle(MotorFoc_PwmChannel[2], dutyW);
+	mov	d5,d13
+	j	Pwm_17_GtmCcu6_SetDutyCycle
+	
+__MotorFoc_ApplyPwm_function_end:
+	.size	MotorFoc_ApplyPwm,__MotorFoc_ApplyPwm_function_end-MotorFoc_ApplyPwm
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop..cocofun_6',code
+	.sect	'.text.MotorFoc_CurrentLoop..cocofun_6'
+	.align	2
+; Function .cocofun_6
+.cocofun_6:	.type	func
+; Function body .cocofun_6, coco_iter:0
+	utof	d15,d15
+	mul.f	d15,d15,d11
+	mul.f	d15,d15,d10
+	div.f	d15,d15,d9
+	add.f	d4,d15,d8
+	fret
+	; End of function
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_ApplyNeutralPwm',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_ApplyNeutralPwm'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   435  }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   436  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   437  static void MotorFoc_ApplyNeutralPwm(MotorFoc_ContextType* ctx)
+; Function MotorFoc_ApplyNeutralPwm
+MotorFoc_ApplyNeutralPwm:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   438  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   439    ctx->Tpwm.pwm_OutU = (uint32)(ctx->Tpwm.Tpwm * 0.25F);
+	movh	d15,#16000
+	fcall	.cocofun_7
+	st.w	[a4]260,d0
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   440    ctx->Tpwm.pwm_OutV = (uint32)(ctx->Tpwm.Tpwm * 0.25F);
+	fcall	.cocofun_7
+	st.w	[a4]264,d0
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   441    ctx->Tpwm.pwm_OutW = (uint32)(ctx->Tpwm.Tpwm * 0.25F);
+	ld.w	d0,[a4]244
+	mul.f	d15,d0,d15
+	ftouz	d15,d15
+	st.w	[a4]268,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   442    MotorFoc_ApplyPwm(ctx);
+	j	MotorFoc_ApplyPwm
+	
+__MotorFoc_ApplyNeutralPwm_function_end:
+	.size	MotorFoc_ApplyNeutralPwm,__MotorFoc_ApplyNeutralPwm_function_end-MotorFoc_ApplyNeutralPwm
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop..cocofun_7',code
+	.sect	'.text.MotorFoc_CurrentLoop..cocofun_7'
+	.align	2
+; Function .cocofun_7
+.cocofun_7:	.type	func
+; Function body .cocofun_7, coco_iter:0
+	ld.w	d0,[a4]244
+	mul.f	d0,d0,d15
+	ftouz	d0,d0
+	fret
+	; End of function
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopInit',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopInit'
+	.align	2
+	
+	.global	MotorFoc_CurrentLoopInit
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   443  }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   444  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   445  void MotorFoc_CurrentLoopInit(MotorFoc_ContextType* ctx)
+; Function MotorFoc_CurrentLoopInit
+MotorFoc_CurrentLoopInit:	.type	func
+	mov.aa	a15,a4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   446  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   447    MotorFoc_ConfigInitContext(ctx);
+	call	MotorFoc_ConfigInitContext
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   448  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   449    MotorFoc_CurrentPidInit(&ctx->piId,
+	lea	a4,[a15]76
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   450                            ctx->motor.w_i_dq,
+	fcall	.cocofun_8
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   451                            ctx->motor.rs,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   452                            ctx->motor.lm);
+	call	MotorFoc_CurrentPidInit
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   453    MotorFoc_CurrentPidInit(&ctx->piIq,
+	lea	a4,[a15]132
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   454                            ctx->motor.w_i_dq,
+	fcall	.cocofun_8
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   455                            ctx->motor.rs,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   456                            ctx->motor.lm);
+	j	MotorFoc_CurrentPidInit
+	
+__MotorFoc_CurrentLoopInit_function_end:
+	.size	MotorFoc_CurrentLoopInit,__MotorFoc_CurrentLoopInit_function_end-MotorFoc_CurrentLoopInit
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop..cocofun_8',code
+	.sect	'.text.MotorFoc_CurrentLoop..cocofun_8'
+	.align	2
+; Function .cocofun_8
+.cocofun_8:	.type	func
+; Function body .cocofun_8, coco_iter:0
+	ld.w	d4,[a15]282
+	ld.w	d5,[a15]274
+	ld.w	d6,[a15]278
+	fret
+	; End of function
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_SetIdRef',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_SetIdRef'
+	.align	2
+	
+	.global	MotorFoc_SetIdRef
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   457  }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   458  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   459  void MotorFoc_SetIdRef(MotorFoc_ContextType* ctx, float32 idRef)
+; Function MotorFoc_SetIdRef
+MotorFoc_SetIdRef:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   460  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   461    ctx->idqRef.real = idRef;
+	st.w	[a4]44,d4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   462  }
+	ret
+	
+__MotorFoc_SetIdRef_function_end:
+	.size	MotorFoc_SetIdRef,__MotorFoc_SetIdRef_function_end-MotorFoc_SetIdRef
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_SetIqRef',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_SetIqRef'
+	.align	2
+	
+	.global	MotorFoc_SetIqRef
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   463  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   464  void MotorFoc_SetIqRef(MotorFoc_ContextType* ctx, float32 iqRef)
+; Function MotorFoc_SetIqRef
+MotorFoc_SetIqRef:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   465  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   466    ctx->idqRef.imag = iqRef;
+	st.w	[a4]48,d4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   467  }
+	ret
+	
+__MotorFoc_SetIqRef_function_end:
+	.size	MotorFoc_SetIqRef,__MotorFoc_SetIqRef_function_end-MotorFoc_SetIqRef
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_SetAngleFromTle5012',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_SetAngleFromTle5012'
+	.align	2
+	
+	.global	MotorFoc_SetAngleFromTle5012
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   468  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   469  void MotorFoc_SetAngleFromTle5012(MotorFoc_ContextType* ctx,
+; Function MotorFoc_SetAngleFromTle5012
+MotorFoc_SetAngleFromTle5012:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   470                                    float32 angleRaw,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   471                                    float32 electricalAngleRad)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   472  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   473    ctx->angle.angleRaw = angleRaw;
+	st.w	[a4]20,d4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   474    ctx->angle.electricalAngleRad = electricalAngleRad;
+	st.w	[a4]24,d5
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   475  }
+	ret
+	
+__MotorFoc_SetAngleFromTle5012_function_end:
+	.size	MotorFoc_SetAngleFromTle5012,__MotorFoc_SetAngleFromTle5012_function_end-MotorFoc_SetAngleFromTle5012
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_UpdateCurrentFromAdc',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_UpdateCurrentFromAdc'
+	.align	2
+	
+	.global	MotorFoc_UpdateCurrentFromAdc
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   476  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   477  void MotorFoc_UpdateCurrentFromAdc(MotorFoc_ContextType* ctx,
+; Function MotorFoc_UpdateCurrentFromAdc
+MotorFoc_UpdateCurrentFromAdc:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   478                                     float32 iu,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   479                                     float32 iv,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   480                                     float32 iw,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   481                                     float32 vdc)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   482  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   483    ctx->i_motor.u = iu;
+	st.w	[a4],d4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   484    ctx->i_motor.v = iv;
+	st.w	[a4]4,d5
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   485    ctx->i_motor.w = iw;
+	st.w	[a4]8,d6
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   486    ctx->i_motor.vdc = vdc;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   487    if (ctx->i_motor.vdc > ctx->i_motor.vdcMax)
+	ld.w	d15,[a4]16
+	cmp.f	d0,d7,d15
+	and	d0,d0,#6
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   488    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   489      ctx->i_motor.vdc = ctx->i_motor.vdcMax;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   490    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   491  }
+	sel	d15,d0,d15,d7
+	st.w	[a4]12,d15
+	ret
+	
+__MotorFoc_UpdateCurrentFromAdc_function_end:
+	.size	MotorFoc_UpdateCurrentFromAdc,__MotorFoc_UpdateCurrentFromAdc_function_end-MotorFoc_UpdateCurrentFromAdc
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_UpdateRawCurrentForProtection',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_UpdateRawCurrentForProtection'
+	.align	2
+	
+	.global	MotorFoc_UpdateRawCurrentForProtection
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   492  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   493  void MotorFoc_UpdateRawCurrentForProtection(float32 iu,
+; Function MotorFoc_UpdateRawCurrentForProtection
+MotorFoc_UpdateRawCurrentForProtection:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   494                                               float32 iv,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   495                                               float32 iw)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   496  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   497    MotorFoc_CurrentLoopRawIuA = iu;
+	st.w	MotorFoc_CurrentLoopRawIuA,d4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   498    MotorFoc_CurrentLoopRawIvA = iv;
+	st.w	MotorFoc_CurrentLoopRawIvA,d5
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   499    MotorFoc_CurrentLoopRawIwA = iw;
+	st.w	MotorFoc_CurrentLoopRawIwA,d6
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   500  }
+	ret
+	
+__MotorFoc_UpdateRawCurrentForProtection_function_end:
+	.size	MotorFoc_UpdateRawCurrentForProtection,__MotorFoc_UpdateRawCurrentForProtection_function_end-MotorFoc_UpdateRawCurrentForProtection
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_RunCurrentLoop',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_RunCurrentLoop'
+	.align	2
+	
+	.global	MotorFoc_RunCurrentLoop
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   501  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   502  void MotorFoc_RunCurrentLoop(MotorFoc_ContextType* ctx)
+; Function MotorFoc_RunCurrentLoop
+MotorFoc_RunCurrentLoop:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   503  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   504    if (MotorFoc_CurrentLoopFaultClearRequest != 0U)
+	ld.bu	d15,MotorFoc_CurrentLoopFaultClearRequest
+	mov.aa	a15,a4
+	jeq	d15,#0,.L73
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   505    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   506      MotorFoc_CurrentLoopFaultClearRequest = 0U;
+	mov	d15,#0
+	st.b	MotorFoc_CurrentLoopFaultClearRequest,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   507      MotorFoc_CurrentLoopClearFault();
+	call	MotorFoc_CurrentLoopClearFault
+.L73:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   508    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   509  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   510    if (MotorFoc_CurrentLoopFault != 0U)
+	ld.bu	d15,MotorFoc_CurrentLoopFault
+	jne	d15,#0,.L74
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   511    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   512      MotorFoc_CurrentLoopStop(ctx);
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   513      return;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   514    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   515  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   516    if (MotorFoc_CheckUndervoltFault(ctx) != 0U)
+	mov.aa	a4,a15
+	call	MotorFoc_CheckUndervoltFault
+	jeq	d2,#0,.L75
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   517    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   518      MotorFoc_SetFault(ctx, MOTORFOC_CURRENT_FAULT_UNDERVOLT);
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   519      MotorFoc_CurrentLoopStop(ctx);
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   520      return;
+	mov	d4,#1
+	j	.L76
+.L75:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   521    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   522  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   523    if (MotorFoc_CheckOverCurrentFault(ctx) != 0U)
+	mov.aa	a4,a15
+	call	MotorFoc_CheckOverCurrentFault
+	jeq	d2,#0,.L77
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   524    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   525      MotorFoc_SetFault(ctx, MOTORFOC_CURRENT_FAULT_OVERCURRENT);
+	mov	d4,#2
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   526      MotorFoc_CurrentLoopStop(ctx);
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   527      return;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   528    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   529  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   530    /* A zero-current open-loop test must not integrate ADC residual error. */
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   531    if ((MotorFoc_AbsFloat(ctx->idqRef.real) < MOTORFOC_ZERO_CURRENT_REFERENCE_A) &&
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   532        (MotorFoc_AbsFloat(ctx->idqRef.imag) < MOTORFOC_ZERO_CURRENT_REFERENCE_A))
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   533    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   534      MotorFoc_ResetCurrentPidState(ctx);
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   535      ctx->vdqRef.real = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   536      ctx->vdqRef.imag = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   537      ctx->vabRef.real = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   538      ctx->vabRef.imag = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   539      MotorFoc_ApplyNeutralPwm(ctx);
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   540      return;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   541    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   542  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   543    MotorFoc_DoClarke(ctx);
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   544    MotorFoc_UpdateSinCos(ctx);
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   545    MotorFoc_DoPark(ctx);
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   546    MotorFoc_DoCurrentPid(ctx);
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   547    MotorFoc_DoInversePark(ctx);
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   548    MotorFoc_DoSvpwm(ctx);
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   549    MotorFoc_ApplyPwm(ctx);
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   550  }
+.L76:
+	mov.aa	a4,a15
+	call	MotorFoc_SetFault
+.L74:
+	mov.aa	a4,a15
+	j	MotorFoc_CurrentLoopStop
+.L77:
+	ld.w	d15,.5.cnt
+	ld.w	d4,[a15]44
+	call	MotorFoc_AbsFloat
+	cmp.f	d0,d2,d15
+	jz.t	d0:0,.L79
+	ld.w	d4,[a15]48
+	call	MotorFoc_AbsFloat
+	cmp.f	d15,d2,d15
+	jz.t	d15:0,.L80
+	mov.aa	a4,a15
+	call	MotorFoc_ResetCurrentPidState
+	mov	d15,#0
+	lea	a2,[a15]60
+	lea	a4,3
+.L85:
+	st.w	[a2+],d15
+	loop	a4,.L85
+	mov.aa	a4,a15
+	j	MotorFoc_ApplyNeutralPwm
+.L80:
+.L79:
+	mov.aa	a4,a15
+	call	MotorFoc_DoClarke
+	mov.aa	a4,a15
+	call	MotorFoc_UpdateSinCos
+	mov.aa	a4,a15
+	call	MotorFoc_DoPark
+	mov.aa	a4,a15
+	call	MotorFoc_DoCurrentPid
+	mov.aa	a4,a15
+	call	MotorFoc_DoInversePark
+	mov.aa	a4,a15
+	call	MotorFoc_DoSvpwm
+	mov.aa	a4,a15
+	j	MotorFoc_ApplyPwm
+	
+__MotorFoc_RunCurrentLoop_function_end:
+	.size	MotorFoc_RunCurrentLoop,__MotorFoc_RunCurrentLoop_function_end-MotorFoc_RunCurrentLoop
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopStop',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopStop'
+	.align	2
+	
+	.global	MotorFoc_CurrentLoopStop
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   551  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   552  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   553  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   554  void MotorFoc_CurrentLoopStop(MotorFoc_ContextType* ctx)
+; Function MotorFoc_CurrentLoopStop
+MotorFoc_CurrentLoopStop:	.type	func
+	mov.aa	a15,a4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   555  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   556    MotorFoc_ResetCurrentPidState(ctx);
+	call	MotorFoc_ResetCurrentPidState
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   557    MotorFoc_ClearCurrentLoopSignals(ctx);
+	mov.aa	a4,a15
+	call	MotorFoc_ClearCurrentLoopSignals
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   558    MotorFoc_ApplyPwmOff();
+	j	MotorFoc_ApplyPwmOff
+	
+__MotorFoc_CurrentLoopStop_function_end:
+	.size	MotorFoc_CurrentLoopStop,__MotorFoc_CurrentLoopStop_function_end-MotorFoc_CurrentLoopStop
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopPreparePwmNeutral',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopPreparePwmNeutral'
+	.align	2
+	
+	.global	MotorFoc_CurrentLoopPreparePwmNeutral
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   559  }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   560  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   561  void MotorFoc_CurrentLoopPreparePwmNeutral(MotorFoc_ContextType* ctx)
+; Function MotorFoc_CurrentLoopPreparePwmNeutral
+MotorFoc_CurrentLoopPreparePwmNeutral:	.type	func
+	mov.aa	a15,a4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   562  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   563    MotorFoc_ResetCurrentPidState(ctx);
+	call	MotorFoc_ResetCurrentPidState
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   564    MotorFoc_ClearCurrentLoopSignals(ctx);
+	mov.aa	a4,a15
+	call	MotorFoc_ClearCurrentLoopSignals
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   565    MotorFoc_ApplyNeutralPwm(ctx);
+	mov.aa	a4,a15
+	j	MotorFoc_ApplyNeutralPwm
+	
+__MotorFoc_CurrentLoopPreparePwmNeutral_function_end:
+	.size	MotorFoc_CurrentLoopPreparePwmNeutral,__MotorFoc_CurrentLoopPreparePwmNeutral_function_end-MotorFoc_CurrentLoopPreparePwmNeutral
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopClearFault',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopClearFault'
+	.align	2
+	
+	.global	MotorFoc_CurrentLoopClearFault
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   566  }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   567  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   568  void MotorFoc_CurrentLoopClearFault(void)
+; Function MotorFoc_CurrentLoopClearFault
+MotorFoc_CurrentLoopClearFault:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   569  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   570    MotorFoc_CurrentLoopFault = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   571    MotorFoc_CurrentLoopFaultReason = MOTORFOC_CURRENT_FAULT_NONE;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   572    MotorFoc_CurrentLoopUndervoltCounter = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   573    MotorFoc_CurrentLoopOverCurrentCounter = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   574    MotorFoc_CurrentLoopFaultIuA = 0.0F;
+	mov	d15,#0
+	st.w	MotorFoc_CurrentLoopFaultIuA,d15
+	st.b	MotorFoc_CurrentLoopFault,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   575    MotorFoc_CurrentLoopFaultIvA = 0.0F;
+	st.w	MotorFoc_CurrentLoopFaultIvA,d15
+	st.b	MotorFoc_CurrentLoopFaultReason,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   576    MotorFoc_CurrentLoopFaultIwA = 0.0F;
+	st.w	MotorFoc_CurrentLoopFaultIwA,d15
+	st.h	MotorFoc_CurrentLoopUndervoltCounter,d15
+	st.h	MotorFoc_CurrentLoopOverCurrentCounter,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   577    MotorFoc_CurrentLoopFaultVdcV = 0.0F;
+	st.w	MotorFoc_CurrentLoopFaultVdcV,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   578  }
+	ret
+	
+__MotorFoc_CurrentLoopClearFault_function_end:
+	.size	MotorFoc_CurrentLoopClearFault,__MotorFoc_CurrentLoopClearFault_function_end-MotorFoc_CurrentLoopClearFault
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopArmStartupBlanking',code
+	.sect	'.text.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopArmStartupBlanking'
+	.align	2
+	
+	.global	MotorFoc_CurrentLoopArmStartupBlanking
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   579  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   580  void MotorFoc_CurrentLoopArmStartupBlanking(void)
+; Function MotorFoc_CurrentLoopArmStartupBlanking
+MotorFoc_CurrentLoopArmStartupBlanking:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   581  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   582    MotorFoc_CurrentLoopStartupBlankingLeft = MotorFoc_CurrentLoopStartupBlankingCount;
+	ld.hu	d15,MotorFoc_CurrentLoopStartupBlankingCount
+	st.h	MotorFoc_CurrentLoopStartupBlankingLeft,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   583    MotorFoc_CurrentLoopUndervoltCounter = 0U;
+	mov	d15,#0
+	st.h	MotorFoc_CurrentLoopUndervoltCounter,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   584    MotorFoc_CurrentLoopOverCurrentCounter = 0U;
+	st.h	MotorFoc_CurrentLoopOverCurrentCounter,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c	   585  }
+	ret
+	
+__MotorFoc_CurrentLoopArmStartupBlanking_function_end:
+	.size	MotorFoc_CurrentLoopArmStartupBlanking,__MotorFoc_CurrentLoopArmStartupBlanking_function_end-MotorFoc_CurrentLoopArmStartupBlanking
+	; End of function
+	
+	.sdecl	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopMaxCurrentA',data
+	.sect	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopMaxCurrentA'
+	.global	MotorFoc_CurrentLoopMaxCurrentA
+	.align	2
+MotorFoc_CurrentLoopMaxCurrentA:	.type	object
+	.size	MotorFoc_CurrentLoopMaxCurrentA,4
+	.word	1101004800
+	.sdecl	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopMinVdcRunV',data
+	.sect	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopMinVdcRunV'
+	.global	MotorFoc_CurrentLoopMinVdcRunV
+	.align	2
+MotorFoc_CurrentLoopMinVdcRunV:	.type	object
+	.size	MotorFoc_CurrentLoopMinVdcRunV,4
+	.word	1086324736
+	.sdecl	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopStartupBlankingCount',data
+	.sect	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopStartupBlankingCount'
+	.global	MotorFoc_CurrentLoopStartupBlankingCount
+	.align	2
+MotorFoc_CurrentLoopStartupBlankingCount:	.type	object
+	.size	MotorFoc_CurrentLoopStartupBlankingCount,2
+	.half	100
+	.sdecl	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopStartupBlankingLeft',data
+	.sect	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopStartupBlankingLeft'
+	.global	MotorFoc_CurrentLoopStartupBlankingLeft
+	.align	2
+MotorFoc_CurrentLoopStartupBlankingLeft:	.type	object
+	.size	MotorFoc_CurrentLoopStartupBlankingLeft,2
+	.space	2
+	.sdecl	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopUndervoltConfirmCount',data
+	.sect	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopUndervoltConfirmCount'
+	.global	MotorFoc_CurrentLoopUndervoltConfirmCount
+	.align	2
+MotorFoc_CurrentLoopUndervoltConfirmCount:	.type	object
+	.size	MotorFoc_CurrentLoopUndervoltConfirmCount,2
+	.half	20
+	.sdecl	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopUndervoltCounter',data
+	.sect	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopUndervoltCounter'
+	.global	MotorFoc_CurrentLoopUndervoltCounter
+	.align	2
+MotorFoc_CurrentLoopUndervoltCounter:	.type	object
+	.size	MotorFoc_CurrentLoopUndervoltCounter,2
+	.space	2
+	.sdecl	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopOverCurrentConfirmCount',data
+	.sect	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopOverCurrentConfirmCount'
+	.global	MotorFoc_CurrentLoopOverCurrentConfirmCount
+	.align	2
+MotorFoc_CurrentLoopOverCurrentConfirmCount:	.type	object
+	.size	MotorFoc_CurrentLoopOverCurrentConfirmCount,2
+	.half	10
+	.sdecl	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopOverCurrentCounter',data
+	.sect	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopOverCurrentCounter'
+	.global	MotorFoc_CurrentLoopOverCurrentCounter
+	.align	2
+MotorFoc_CurrentLoopOverCurrentCounter:	.type	object
+	.size	MotorFoc_CurrentLoopOverCurrentCounter,2
+	.space	2
+	.sdecl	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopFault',data
+	.sect	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopFault'
+	.global	MotorFoc_CurrentLoopFault
+MotorFoc_CurrentLoopFault:	.type	object
+	.size	MotorFoc_CurrentLoopFault,1
+	.space	1
+	.sdecl	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopFaultReason',data
+	.sect	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopFaultReason'
+	.global	MotorFoc_CurrentLoopFaultReason
+MotorFoc_CurrentLoopFaultReason:	.type	object
+	.size	MotorFoc_CurrentLoopFaultReason,1
+	.space	1
+	.sdecl	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopFaultClearRequest',data
+	.sect	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopFaultClearRequest'
+	.global	MotorFoc_CurrentLoopFaultClearRequest
+MotorFoc_CurrentLoopFaultClearRequest:	.type	object
+	.size	MotorFoc_CurrentLoopFaultClearRequest,1
+	.space	1
+	.sdecl	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopFaultIuA',data
+	.sect	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopFaultIuA'
+	.global	MotorFoc_CurrentLoopFaultIuA
+	.align	2
+MotorFoc_CurrentLoopFaultIuA:	.type	object
+	.size	MotorFoc_CurrentLoopFaultIuA,4
+	.space	4
+	.sdecl	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopFaultIvA',data
+	.sect	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopFaultIvA'
+	.global	MotorFoc_CurrentLoopFaultIvA
+	.align	2
+MotorFoc_CurrentLoopFaultIvA:	.type	object
+	.size	MotorFoc_CurrentLoopFaultIvA,4
+	.space	4
+	.sdecl	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopFaultIwA',data
+	.sect	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopFaultIwA'
+	.global	MotorFoc_CurrentLoopFaultIwA
+	.align	2
+MotorFoc_CurrentLoopFaultIwA:	.type	object
+	.size	MotorFoc_CurrentLoopFaultIwA,4
+	.space	4
+	.sdecl	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopFaultVdcV',data
+	.sect	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopFaultVdcV'
+	.global	MotorFoc_CurrentLoopFaultVdcV
+	.align	2
+MotorFoc_CurrentLoopFaultVdcV:	.type	object
+	.size	MotorFoc_CurrentLoopFaultVdcV,4
+	.space	4
+	.sdecl	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopRawIuA',data
+	.sect	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopRawIuA'
+	.align	2
+MotorFoc_CurrentLoopRawIuA:	.type	object
+	.size	MotorFoc_CurrentLoopRawIuA,4
+	.space	4
+	.sdecl	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopRawIvA',data
+	.sect	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopRawIvA'
+	.align	2
+MotorFoc_CurrentLoopRawIvA:	.type	object
+	.size	MotorFoc_CurrentLoopRawIvA,4
+	.space	4
+	.sdecl	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopRawIwA',data
+	.sect	'.zdata.MotorFoc_CurrentLoop.MotorFoc_CurrentLoopRawIwA'
+	.align	2
+MotorFoc_CurrentLoopRawIwA:	.type	object
+	.size	MotorFoc_CurrentLoopRawIwA,4
+	.space	4
+	.calls	'MotorFoc_ApplyPwm','__f_ftous'
+	.calls	'MotorFoc_DoCurrentPid','MotorFoc_CurrentPidIdealCalc'
+	.calls	'MotorFoc_ApplyPwmOff','Pwm_17_GtmCcu6_SetDutyCycle'
+	.calls	'MotorFoc_IsPhaseCurrentOverLimit','MotorFoc_AbsFloat'
+	.calls	'MotorFoc_CheckOverCurrentFault','MotorFoc_IsPhaseCurrentOverLimit'
+	.calls	'MotorFoc_DoSvpwm','sqrtf'
+	.calls	'MotorFoc_ApplyPwm','Pwm_17_GtmCcu6_SetDutyCycle'
+	.calls	'MotorFoc_ApplyNeutralPwm','MotorFoc_ApplyPwm'
+	.calls	'MotorFoc_CurrentLoopInit','MotorFoc_ConfigInitContext'
+	.calls	'MotorFoc_CurrentLoopInit','MotorFoc_CurrentPidInit'
+	.calls	'MotorFoc_RunCurrentLoop','MotorFoc_CurrentLoopClearFault'
+	.calls	'MotorFoc_RunCurrentLoop','MotorFoc_CheckUndervoltFault'
+	.calls	'MotorFoc_RunCurrentLoop','MotorFoc_SetFault'
+	.calls	'MotorFoc_RunCurrentLoop','MotorFoc_CheckOverCurrentFault'
+	.calls	'MotorFoc_RunCurrentLoop','MotorFoc_CurrentLoopStop'
+	.calls	'MotorFoc_RunCurrentLoop','MotorFoc_AbsFloat'
+	.calls	'MotorFoc_RunCurrentLoop','MotorFoc_ResetCurrentPidState'
+	.calls	'MotorFoc_RunCurrentLoop','MotorFoc_ApplyNeutralPwm'
+	.calls	'MotorFoc_RunCurrentLoop','MotorFoc_DoClarke'
+	.calls	'MotorFoc_RunCurrentLoop','MotorFoc_UpdateSinCos'
+	.calls	'MotorFoc_RunCurrentLoop','MotorFoc_DoPark'
+	.calls	'MotorFoc_RunCurrentLoop','MotorFoc_DoCurrentPid'
+	.calls	'MotorFoc_RunCurrentLoop','MotorFoc_DoInversePark'
+	.calls	'MotorFoc_RunCurrentLoop','MotorFoc_DoSvpwm'
+	.calls	'MotorFoc_RunCurrentLoop','MotorFoc_ApplyPwm'
+	.calls	'MotorFoc_CurrentLoopStop','MotorFoc_ResetCurrentPidState'
+	.calls	'MotorFoc_CurrentLoopStop','MotorFoc_ClearCurrentLoopSignals'
+	.calls	'MotorFoc_CurrentLoopStop','MotorFoc_ApplyPwmOff'
+	.calls	'MotorFoc_CurrentLoopPreparePwmNeutral','MotorFoc_ResetCurrentPidState'
+	.calls	'MotorFoc_CurrentLoopPreparePwmNeutral','MotorFoc_ClearCurrentLoopSignals'
+	.calls	'MotorFoc_CurrentLoopPreparePwmNeutral','MotorFoc_ApplyNeutralPwm'
+	.calls	'MotorFoc_ApplyPwm','.cocofun_6'
+	.calls	'MotorFoc_ApplyNeutralPwm','.cocofun_7'
+	.calls	'MotorFoc_CurrentLoopInit','.cocofun_8'
+	.calls	'MotorFoc_UpdateSinCos','',0
+	.calls	'MotorFoc_DoClarke','',0
+	.calls	'MotorFoc_DoPark','',0
+	.calls	'MotorFoc_DoInversePark','',0
+	.calls	'MotorFoc_DoCurrentPid','',0
+	.calls	'MotorFoc_ResetCurrentPidState','',0
+	.calls	'MotorFoc_ApplyPwmOff','',0
+	.calls	'MotorFoc_AbsFloat','',0
+	.calls	'MotorFoc_ClearCurrentLoopSignals','',0
+	.calls	'MotorFoc_IsPhaseCurrentOverLimit','',0
+	.calls	'MotorFoc_SetFault','',0
+	.calls	'MotorFoc_CheckOverCurrentFault','',0
+	.calls	'MotorFoc_CheckUndervoltFault','',0
+	.calls	'MotorFoc_DoSvpwm','',0
+	.calls	'MotorFoc_ApplyPwm','',0
+	.calls	'.cocofun_6','',0
+	.calls	'MotorFoc_ApplyNeutralPwm','',0
+	.calls	'.cocofun_7','',0
+	.calls	'MotorFoc_CurrentLoopInit','',0
+	.calls	'.cocofun_8','',0
+	.calls	'MotorFoc_SetIdRef','',0
+	.calls	'MotorFoc_SetIqRef','',0
+	.calls	'MotorFoc_SetAngleFromTle5012','',0
+	.calls	'MotorFoc_UpdateCurrentFromAdc','',0
+	.calls	'MotorFoc_UpdateRawCurrentForProtection','',0
+	.calls	'MotorFoc_RunCurrentLoop','',0
+	.calls	'MotorFoc_CurrentLoopStop','',0
+	.calls	'MotorFoc_CurrentLoopPreparePwmNeutral','',0
+	.calls	'MotorFoc_CurrentLoopClearFault','',0
+	.extern	MotorFoc_ConfigInitContext
+	.extern	MotorFoc_CurrentPidInit
+	.extern	MotorFoc_CurrentPidIdealCalc
+	.extern	MotorFoc_SinCosTable
+	.extern	Pwm_17_GtmCcu6_SetDutyCycle
+	.extern	sqrtf
+	.extern	__f_ftous
+	.calls	'MotorFoc_CurrentLoopArmStartupBlanking','',0
+
+
+	; Module end

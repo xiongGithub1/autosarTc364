@@ -1,0 +1,372 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc18896a --dep-file=Appl\\GenData\\src\\.Mcu_17_TimerIp_Cfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=Appl\\GenData\\src\\Mcu_17_TimerIp_Cfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\src\\Mcu_17_TimerIp_Cfg.src ..\\Appl\\GenData\\src\\Mcu_17_TimerIp_Cfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\GenData\\src\\Mcu_17_TimerIp_Cfg.c'
+
+	
+$TC162
+	
+	.sdecl	'.rodata.Mcu_17_TimerIp_Cfg.Mcu_17_Eru_ChUserData',data,rom
+	.sect	'.rodata.Mcu_17_TimerIp_Cfg.Mcu_17_Eru_ChUserData'
+	.global	Mcu_17_Eru_ChUserData
+	.align	2
+Mcu_17_Eru_ChUserData:	.type	object
+	.size	Mcu_17_Eru_ChUserData,32
+	.space	32
+	.sdecl	'.rodata.Mcu_17_TimerIp_Cfg.Mcu_17_Gtm_AtomChUserData',data,rom
+	.sect	'.rodata.Mcu_17_TimerIp_Cfg.Mcu_17_Gtm_AtomChUserData'
+	.global	Mcu_17_Gtm_AtomChUserData
+	.align	2
+Mcu_17_Gtm_AtomChUserData:	.type	object
+	.size	Mcu_17_Gtm_AtomChUserData,128
+	.word	3,259,515,771
+	.space	12
+	.word	1
+	.space	96
+	.sdecl	'.rodata.Mcu_17_TimerIp_Cfg.Mcu_17_Gtm_TomChUserData',data,rom
+	.sect	'.rodata.Mcu_17_TimerIp_Cfg.Mcu_17_Gtm_TomChUserData'
+	.global	Mcu_17_Gtm_TomChUserData
+	.align	2
+Mcu_17_Gtm_TomChUserData:	.type	object
+	.size	Mcu_17_Gtm_TomChUserData,128
+	.space	128
+	.sdecl	'.rodata.Mcu_17_TimerIp_Cfg.Mcu_17_Gtm_TimChUserData',data,rom
+	.sect	'.rodata.Mcu_17_TimerIp_Cfg.Mcu_17_Gtm_TimChUserData'
+	.global	Mcu_17_Gtm_TimChUserData
+	.align	2
+Mcu_17_Gtm_TimChUserData:	.type	object
+	.size	Mcu_17_Gtm_TimChUserData,48
+	.space	48
+	.sdecl	'.rodata.Mcu_17_TimerIp_Cfg.Mcu_17_Ccu6_ChUserData',data,rom
+	.sect	'.rodata.Mcu_17_TimerIp_Cfg.Mcu_17_Ccu6_ChUserData'
+	.global	Mcu_17_Ccu6_ChUserData
+	.align	2
+Mcu_17_Ccu6_ChUserData:	.type	object
+	.size	Mcu_17_Ccu6_ChUserData,16
+	.space	16
+	.sdecl	'.rodata.Mcu_17_TimerIp_Cfg.Mcu_17_Gpt12_ChUserData',data,rom
+	.sect	'.rodata.Mcu_17_TimerIp_Cfg.Mcu_17_Gpt12_ChUserData'
+	.global	Mcu_17_Gpt12_ChUserData
+	.align	2
+Mcu_17_Gpt12_ChUserData:	.type	object
+	.size	Mcu_17_Gpt12_ChUserData,10
+	.space	10
+	.sdecl	'.zrodata.Mcu_17_TimerIp_Cfg.Mcu_17_Stm_ChUserData',data,rom
+	.sect	'.zrodata.Mcu_17_TimerIp_Cfg.Mcu_17_Stm_ChUserData'
+	.global	Mcu_17_Stm_ChUserData
+	.align	2
+Mcu_17_Stm_ChUserData:	.type	object
+	.size	Mcu_17_Stm_ChUserData,8
+	.space	8
+
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	     1  /*****************************************************************************
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	     2  **                                                                            **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	     3  ** Copyright (C) Infineon Technologies (2021)                                 **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	     4  **                                                                            **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	     5  ** All rights reserved.                                                       **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	     6  **                                                                            **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	     7  ** This document contains proprietary information belonging to Infineon       **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	     8  ** Technologies. Passing on and copying of this document, and communication   **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	     9  ** of its contents is not permitted without prior written authorization.      **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    10  **                                                                            **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    11  ********************************************************************************
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    12  **                                                                            **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    13  **  FILENAME  : Mcu_17_TimerIp_Cfg.c                                          **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    14  **                                                                            **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    15  **  VERSION   : 22.0.0                                                        **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    16  **                                                                            **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    17  **  DATE, TIME: 2024-07-24, 19:06:32     !!!IGNORE-LINE!!!                    **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    18  **                                                                            **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    19  **  GENERATOR : Build b191017-0938         !!!IGNORE-LINE!!!                  **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    20  **                                                                            **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    21  **  BSW MODULE DECRIPTION : Mcu.bmd                                           **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    22  **                                                                            **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    23  **  VARIANT   : Variant PB                                                    **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    24  **                                                                            **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    25  **  PLATFORM  : Infineon AURIX2G                                              **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    26  **                                                                            **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    27  **  AUTHOR    : DL-AUTOSAR-Engineering                                        **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    28  **                                                                            **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    29  **  VENDOR    : Infineon Technologies                                         **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    30  **                                                                            **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    31  **  DESCRIPTION :  Timer IP user configuration generated out of ECUC file     **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    32  **                                                                            **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    33  **  SPECIFICATION(S) : NA                                                     **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    34  **                                                                            **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    35  **  MAY BE CHANGED BY USER : no                                               **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    36  **                                                                            **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    37  *******************************************************************************/
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    38  
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    39  /*******************************************************************************
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    40  **                            Includes                                        **
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    41  *******************************************************************************/
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    42  /* Include module header file */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    43  #include "Mcu_17_TimerIp_Cfg.h"
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    44  #include "Mcu_17_TimerIp_Local.h"
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    45  
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    46  
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    47  #define MCU_17_TIMERIP_START_SEC_CONFIG_DATA_ASIL_B_GLOBAL_32
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    48  /* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    49  without safegaurd. It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    50  #include "Mcu_MemMap.h"
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    51  
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    52  /* MISRA2012_RULE_8_9_JUSTIFICATION: This constant is made used in ISRs
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    53  defined in Mcu_17_TimerIp.c for the channel user information.
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    54  The extern declaration is present in Mcu_17_TimerIp_Local.h. Hence can't
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    55  be made block scope. No side effects foreseen by violating this MISRA rule. */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    56  const uint32 Mcu_17_Eru_ChUserData[MCU_17_ERU_NO_OF_OGU] =
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    57  {
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    58    0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    59    0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    60    0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    61    0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    62    0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    63    0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    64    0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    65    0x00000000
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    66  };
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    67  
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    68  const uint32
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    69  /* MISRA2012_RULE_8_9_JUSTIFICATION: This constant is made used in ISRs
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    70  defined in Mcu_17_TimerIp.c for the channel user information.
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    71  The extern declaration is present in Mcu_17_TimerIp_Local.h. Hence can't
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    72  be made block scope. No side effects foreseen by violating this MISRA rule. */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    73  Mcu_17_Gtm_AtomChUserData[MCU_17_GTM_NO_OF_ATOM_MODULES][MCU_17_GTM_NO_OF_ATOM_CHANNELS] =
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    74  {
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    75    /* ATOM Module 0 */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    76    {
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    77      0x00000003,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    78      0x00000103,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    79      0x00000203,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    80      0x00000303,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    81      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    82      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    83      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    84      0x00000001
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    85    },
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    86    /* ATOM Module 1 */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    87    {
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    88      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    89      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    90      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    91      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    92      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    93      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    94      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    95      0x00000000
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    96    },
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    97    /* ATOM Module 2 */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    98    {
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	    99      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   100      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   101      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   102      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   103      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   104      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   105      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   106      0x00000000
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   107    },
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   108    /* ATOM Module 3 */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   109    {
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   110      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   111      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   112      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   113      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   114      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   115      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   116      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   117      0x00000000
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   118    }
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   119  };
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   120  
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   121  
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   122  const uint32
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   123  /* MISRA2012_RULE_8_9_JUSTIFICATION: This constant is made used in ISRs
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   124  defined in Mcu_17_TimerIp.c for the channel user information.
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   125  The extern declaration is present in Mcu_17_TimerIp_Local.h. Hence can't
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   126  be made block scope. No side effects foreseen by violating this MISRA rule. */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   127  Mcu_17_Gtm_TomChUserData[MCU_17_GTM_NO_OF_TOM_MODULES][MCU_17_GTM_NO_OF_TOM_CHANNELS] =
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   128  {
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   129    /* TOM Module 0 */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   130    {
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   131      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   132      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   133      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   134      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   135      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   136      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   137      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   138      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   139      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   140      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   141      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   142      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   143      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   144      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   145      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   146      0x00000000
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   147    },
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   148    /* TOM Module 1 */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   149    {
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   150      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   151      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   152      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   153      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   154      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   155      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   156      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   157      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   158      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   159      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   160      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   161      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   162      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   163      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   164      0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   165      0x00000000
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   166    }
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   167  };
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   168  
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   169  #define MCU_17_TIMERIP_STOP_SEC_CONFIG_DATA_ASIL_B_GLOBAL_32
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   170  /* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   171  without safegaurd. It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   172  /* MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header included as per Autosar
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   173  guidelines. */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   174  #include "Mcu_MemMap.h"
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   175  
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   176  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   177  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   178  /* MISRA2012_RULE_5_2_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   179  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   180  /* MISRA2012_RULE_5_4_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   181  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   182  /* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   183  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   184  #define MCU_17_TIMERIP_START_SEC_CONFIG_DATA_ASIL_B_GLOBAL_16
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   185  /* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   186  without safegaurd. It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   187  /* MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header included as per Autosar
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   188  guidelines. */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   189  #include "Mcu_MemMap.h"
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   190  
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   191  const uint16
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   192  /* MISRA2012_RULE_8_9_JUSTIFICATION: This constant is made used in ISRs
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   193  defined in Mcu_17_TimerIp.c for the channel user information.
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   194  The extern declaration is present in Mcu_17_TimerIp_Local.h. Hence can't
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   195  be made block scope. No side effects foreseen by violating this MISRA rule. */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   196  Mcu_17_Gtm_TimChUserData[MCU_17_GTM_NO_OF_TIM_MODULES][MCU_17_GTM_NO_OF_TIM_CHANNELS] =
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   197  {
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   198    /* TIM Module 0 */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   199    {
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   200      0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   201      0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   202      0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   203      0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   204      0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   205      0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   206      0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   207      0x0000
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   208    },
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   209    /* TIM Module 1 */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   210    {
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   211      0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   212      0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   213      0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   214      0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   215      0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   216      0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   217      0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   218      0x0000
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   219    },
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   220    /* TIM Module 2 */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   221    {
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   222      0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   223      0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   224      0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   225      0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   226      0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   227      0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   228      0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   229      0x0000
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   230    }
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   231  };
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   232  
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   233  const uint16
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   234  /* MISRA2012_RULE_8_9_JUSTIFICATION: This constant is made used in ISRs
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   235  defined in Mcu_17_TimerIp.c for the channel user information.
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   236  The extern declaration is present in Mcu_17_TimerIp_Local.h. Hence can't
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   237  be made block scope. No side effects foreseen by violating this MISRA rule. */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   238  Mcu_17_Ccu6_ChUserData[MCU_17_CCU6_NO_OF_KERNELS][MCU_17_CCU6_NO_OF_COMPARATORS] =
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   239  {
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   240    {
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   241    0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   242    0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   243    0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   244    0x0000
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   245    },
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   246    {
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   247    0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   248    0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   249    0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   250    0x0000
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   251    }
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   252  };
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   253  
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   254  /* MISRA2012_RULE_8_9_JUSTIFICATION: This constant is made used in ISRs
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   255  defined in Mcu_17_TimerIp.c for the channel user information.
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   256  The extern declaration is present in Mcu_17_TimerIp_Local.h. Hence can't
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   257  be made block scope. No side effects foreseen by violating this MISRA rule. */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   258  const uint16 Mcu_17_Gpt12_ChUserData[MCU_17_GPT12_NO_OF_TIMERS] =
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   259  {
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   260    0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   261    0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   262    0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   263    0x0000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   264    0x0000
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   265  };
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   266  
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   267  
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   268  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   269  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   270  /* MISRA2012_RULE_5_2_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   271  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   272  /* MISRA2012_RULE_5_4_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   273  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   274  /* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going beyond 32 chars.
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   275  in generated code due to Autosar Naming constraints.*/
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   276  #define MCU_17_TIMERIP_STOP_SEC_CONFIG_DATA_ASIL_B_GLOBAL_16
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   277  /* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   278  without safegaurd. It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   279  /* MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header included as per Autosar
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   280  guidelines. */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   281  #include "Mcu_MemMap.h"
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   282  
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   283  
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   284  
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   285  #define MCU_17_TIMERIP_START_SEC_CONFIG_DATA_ASIL_B_GLOBAL_32
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   286  /* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   287  without safegaurd. It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   288  /* MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header included as per Autosar
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   289  guidelines. */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   290  #include "Mcu_MemMap.h"
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   291  
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   292  /* MISRA2012_RULE_8_9_JUSTIFICATION: This constant is made used in ISRs
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   293  defined in Mcu_17_TimerIp.c for the channel user information.
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   294  The extern declaration is present in Mcu_17_TimerIp_Local.h. Hence can't
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   295  be made block scope. No side effects foreseen by violating this MISRA rule. */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   296  const uint32 Mcu_17_Stm_ChUserData[MCU_17_STM_NO_OF_TIMERS] =
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   297  {
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   298    0x00000000,
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   299    0x00000000
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   300  };
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   301  
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   302  #define MCU_17_TIMERIP_STOP_SEC_CONFIG_DATA_ASIL_B_GLOBAL_32
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   303  /* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   304  without safegaurd. It complies to Autosar guidelines. */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   305  /* MISRA2012_RULE_20_1_JUSTIFICATION: Memmap header included as per Autosar
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   306  guidelines. */
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   307  #include "Mcu_MemMap.h"
+; ..\Appl\GenData\src\Mcu_17_TimerIp_Cfg.c	   308  
+
+	; Module end

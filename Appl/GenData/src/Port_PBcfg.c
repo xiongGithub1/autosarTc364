@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 14.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-07-15, 16:43:11          !!!IGNORE-LINE!!!               **
+**  DATE, TIME: 2024-07-25, 16:05:58          !!!IGNORE-LINE!!!               **
 **                                                                            **
 **  GENERATOR : Build b191017-0938            !!!IGNORE-LINE!!!               **
 **                                                                            **
@@ -954,7 +954,7 @@ static const Port_n_ConfigType Port_kConfiguration[] =
       PORT_PIN_LEVEL_LOW,/* Pin 3 */
       PORT_PIN_LEVEL_LOW,/* Pin 4 */
       PORT_PIN_LEVEL_LOW,/* Pin 5 */
-      PORT_PIN_LEVEL_LOW,/* Pin 6 */
+      PORT_PIN_LEVEL_HIGH,/* Pin 6 */
       0U,/* Pin 7 */
       0U,/* Pin 8 */
       0U,/* Pin 9 */

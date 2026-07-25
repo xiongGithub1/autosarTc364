@@ -1,33 +1,35 @@
 #include "MotorCdd_Adc.h"
 #include "MotorCdd_Foc.h"
 #include "Adc_Cfg.h"
-#include "Os.h"
 #include "Mcu_17_TimerIp.h"
 #include "IfxGtm_reg.h"
 #include "IfxEvadc_reg.h"
 #include "IfxEvadc_bf.h"
 #include "string.h"
-
+#include "Dio.h"
 /*
- * Master AdcGroup_9183Sense ReadGroup layout with SyncChannelMask = CH4 only:
+ * Master AdcGroup_9183Sense ReadGroup layout with SyncChannelMask = CH1 | CH4:
  *   [0] VO1 (ADC0 CH4)
- *   [1] VRO (ADC0 CH1, non-sync)
+ *   [1] VRO (ADC0 CH1)
  *   [2] VO2 (ADC2 CH4, sync slave)
- *   [3] VO3 (ADC3 CH4, sync slave)
- * VINV (ADC2 CH1) is not in SyncChannelMask; sample it via G2.RES[1] after
- * forcing CH1 SYNC so it converts with VRO each PWM trigger.
+ *   [3] VINV (ADC2 CH1, sync slave)
+ *   [4] VO3 (ADC3 CH4, sync slave)
+ *   [5] ADC3 CH1 (sync slave, unused)
+ *
+ * Adc_ReadGroup appends every synchronized slave result in master channel
+ * order. The result buffer must therefore reserve all six values.
  */
-#define MOTORCDD_ADC_MASTER_BUF_COUNT          (4U)
+#define MOTORCDD_ADC_MASTER_BUF_COUNT          (6U)
 #define MOTORCDD_ADC_MASTER_VO1_IDX            (0U)
 #define MOTORCDD_ADC_MASTER_VRO_IDX            (1U)
 #define MOTORCDD_ADC_MASTER_VO2_IDX            (2U)
-#define MOTORCDD_ADC_MASTER_VO3_IDX            (3U)
+#define MOTORCDD_ADC_MASTER_VINV_IDX           (3U)
+#define MOTORCDD_ADC_MASTER_VO3_IDX            (4U)
 
 #define MOTORCDD_ADC_VINV_KERNEL               (2U)
 #define MOTORCDD_ADC_VINV_AN_CHANNEL           (1U)
 #define MOTORCDD_ADC_VINV_RESULT_REG           (1U)
 #define MOTORCDD_ADC_VRO_AN_CHANNEL            (1U)
-#define MOTORCDD_ADC_RESULT_12BIT_MASK         (0x0FFFU)
 
 #define MOTORCDD_ADC_CURR_CON_FACTOR           (0.0310885097645123F)
 #define MOTORCDD_ADC_VRO_CON_FACTOR            (0.0012210012210012F)
@@ -48,17 +50,14 @@
 /* Re-apply VINV SYNC every N ISR (oneshoot re-arm); avoid full register write at 10 kHz. */
 #define MOTORCDD_ADC_VINV_SYNC_REARM_PERIOD    (8U)
 
-/* ISR scratch / MCAL result buffer — Task must not read this directly. */
+/* ISR scratch / MCAL result buffer 鈥� Task must not read this directly. */
 static Adc_ValueGroupType MotorCdd_AdcMasterBuf[MOTORCDD_ADC_MASTER_BUF_COUNT];
 
 /* Ping-pong raw frames published by ISR; Task copies then converts. */
 static MotorCdd_AdcRawType MotorCdd_AdcRawSnap[MOTORCDD_ADC_RAW_SNAP_COUNT];
 static volatile uint8 MotorCdd_AdcRawWriteIdx = 0U;
 static volatile uint8 MotorCdd_AdcRawReadyIdx = 0U;
-/* 1 = MotorTask already has (or is processing) a fast-loop wake; ISR must not SetEvent again. */
-static volatile uint8 MotorCdd_AdcFastLoopPending = 0U;
 static uint8 MotorCdd_AdcVinvSyncRearmCnt = 0U;
-volatile uint32 MotorCdd_AdcMissedWakeCounter = 0U;
 
 /* Frozen frame owned by Task after copy under interrupt lock. */
 static MotorCdd_AdcRawType MotorCdd_AdcRaw;
@@ -222,11 +221,16 @@ static void MotorCdd_AdcFillRawFromMasterBuffer(MotorCdd_AdcRawType* rawOut)
   rawOut->vo1 = MotorCdd_AdcMasterBuf[MOTORCDD_ADC_MASTER_VO1_IDX];
   rawOut->vro = MotorCdd_AdcMasterBuf[MOTORCDD_ADC_MASTER_VRO_IDX];
   rawOut->vo2 = MotorCdd_AdcMasterBuf[MOTORCDD_ADC_MASTER_VO2_IDX];
+  rawOut->vinv = MotorCdd_AdcMasterBuf[MOTORCDD_ADC_MASTER_VINV_IDX];
   rawOut->vo3 = MotorCdd_AdcMasterBuf[MOTORCDD_ADC_MASTER_VO3_IDX];
-  rawOut->vinv =
-      (Adc_ValueGroupType)(MODULE_EVADC.G[MOTORCDD_ADC_VINV_KERNEL].
-                           RES[MOTORCDD_ADC_VINV_RESULT_REG].U &
-                           MOTORCDD_ADC_RESULT_12BIT_MASK);
+}
+
+static void MotorCdd_AdcLatchFrozenRawFromIdx(uint8 readyIdx)
+{
+  if (readyIdx < MOTORCDD_ADC_RAW_SNAP_COUNT)
+  {
+    MotorCdd_AdcRaw = MotorCdd_AdcRawSnap[readyIdx];
+  }
 }
 
 static void MotorCdd_AdcLatchFrozenRaw(void)
@@ -235,11 +239,8 @@ static void MotorCdd_AdcLatchFrozenRaw(void)
 
   SuspendAllInterrupts();
   readyIdx = MotorCdd_AdcRawReadyIdx;
-  if (readyIdx < MOTORCDD_ADC_RAW_SNAP_COUNT)
-  {
-    MotorCdd_AdcRaw = MotorCdd_AdcRawSnap[readyIdx];
-  }
   ResumeAllInterrupts();
+  MotorCdd_AdcLatchFrozenRawFromIdx(readyIdx);
 }
 
 void MotorCdd_AdcInit(void)
@@ -250,9 +251,7 @@ void MotorCdd_AdcInit(void)
   (void)memset(&MotorCdd_AdcPhysical, 0, sizeof(MotorCdd_AdcPhysical));
   MotorCdd_AdcRawWriteIdx = 0U;
   MotorCdd_AdcRawReadyIdx = 0U;
-  MotorCdd_AdcFastLoopPending = 0U;
   MotorCdd_AdcVinvSyncRearmCnt = 0U;
-  MotorCdd_AdcMissedWakeCounter = 0U;
   MotorCdd_AdcPhaseOffsetVo1 = 0;
   MotorCdd_AdcPhaseOffsetVo2 = 0;
   MotorCdd_AdcPhaseOffsetVo3 = 0;
@@ -276,11 +275,18 @@ void MotorCdd_AdcHwTriggerInit(void)
   Adc_EnableGroupNotification(AdcConf_AdcGroup_AdcGroup_9183Sense);
 }
 
+void MotorCdd_AdcRunFastLoop(void)
+{
+
+  MotorCdd_AdcConvertToPhysical();
+  MotorCdd_FocFastLoop();
+
+}
+
 void MotorCdd_AdcGroup0Notification(void)
 {
   uint8 writeIdx;
-
-  /* ADC Cat2 ISR context: keep this path short (no FOC / FPU / RTE / SPI). */
+  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test, STD_HIGH);
   if (Adc_ReadGroup(AdcConf_AdcGroup_AdcGroup_9183Sense,
                     MotorCdd_AdcMasterBuf) != E_OK)
   {
@@ -306,32 +312,24 @@ void MotorCdd_AdcGroup0Notification(void)
     MotorCdd_AdcEnableVinvSyncWithVro();
   }
 
-  /*
-   * Gate SetEvent: if Motortask is still in / waiting for AdcOnSampleReady,
-   * do not re-Set — otherwise WaitEvent never idles and StartApp (prio 5)
-   * is starved by Motortask (prio 200, NON) spinning FOC.
-   * Latest frame is always kept in RawSnap[ReadyIdx].
-   */
-  if (MotorCdd_AdcFastLoopPending == 0U)
-  {
-    MotorCdd_AdcFastLoopPending = 1U;
-    (void)SetEvent(MotorTask,
-                   Rte_Ev_Run_MotorCdd_MotorCdd_AdcOnSampleReady_Rp_AdcSampleReady_AdcSampleReady);
-  }
-  else
-  {
-    MotorCdd_AdcMissedWakeCounter++;
-  }
+#if (MOTORCDD_ADC_FASTLOOP_IN_ISR == 1U)
+  /* 10 kHz: sample and FOC in the same Cat2 ISR (AdcIsr_G0 must use FPU). */
+  MotorCdd_AdcLatchFrozenRawFromIdx(writeIdx);
+  MotorCdd_AdcRunFastLoop();
+#else
+  /* Legacy Task wake path — requires Os.h / SetEvent in caller wrapper. */
+#endif
+  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test, STD_LOW);
 }
 
 void MotorCdd_AdcOnSampleReady(void)
 {
-  /* Runs in MotorTask after RTE OsEvent for AdcSampleReady. Cache angle only — no SPI. */
+#if (MOTORCDD_ADC_FASTLOOP_IN_ISR == 0U)
   MotorCdd_AdcLatchFrozenRaw();
-  MotorCdd_AdcConvertToPhysical();
-  MotorCdd_FocFastLoop();
-  /* Allow next ISR to wake Motortask; Motortask can then WaitEvent / yield. */
-  MotorCdd_AdcFastLoopPending = 0U;
+  MotorCdd_AdcRunFastLoop();
+#else
+  /* Fast loop runs in ADC ISR; RTE event is unused. */
+#endif
 }
 
 void MotorCdd_AdcConvertToPhysical(void)

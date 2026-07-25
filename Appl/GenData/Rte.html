@@ -122,6 +122,7 @@ Rte_Det.h<br>
 Rte_EcuM.h<br>
 Rte_MotorCdd.h<br>
 Rte_MotorControll.h<br>
+Rte_NvM.h<br>
 Rte_Os_OsCore0_swc.h<br>
 Rte_StartApp.h<br>
 Rte_BswM_Type.h<br>
@@ -130,6 +131,7 @@ Rte_Det_Type.h<br>
 Rte_EcuM_Type.h<br>
 Rte_MotorCdd_Type.h<br>
 Rte_MotorControll_Type.h<br>
+Rte_NvM_Type.h<br>
 Rte_Os_OsCore0_swc_Type.h<br>
 Rte_StartApp_Type.h<br>
 Rte_Main.h<br>
@@ -172,14 +174,19 @@ SchM_CanSM.h<br>
 SchM_Com.h<br>
 SchM_ComM.h<br>
 SchM_ComXf.h<br>
+SchM_Crc.h<br>
 SchM_Det.h<br>
 SchM_Dio.h<br>
 SchM_Dma.h<br>
 SchM_E2EXf.h<br>
 SchM_EcuM.h<br>
+SchM_Fee.h<br>
+SchM_Fls_17_Dmu.h<br>
+SchM_IpduM.h<br>
 SchM_Irq.h<br>
 SchM_McalLib.h<br>
 SchM_Mcu.h<br>
+SchM_NvM.h<br>
 SchM_PduR.h<br>
 SchM_Port.h<br>
 SchM_Pwm_17_GtmCcu6.h<br>
@@ -193,14 +200,19 @@ SchM_CanSM_Type.h<br>
 SchM_Com_Type.h<br>
 SchM_ComM_Type.h<br>
 SchM_ComXf_Type.h<br>
+SchM_Crc_Type.h<br>
 SchM_Det_Type.h<br>
 SchM_Dio_Type.h<br>
 SchM_Dma_Type.h<br>
 SchM_E2EXf_Type.h<br>
 SchM_EcuM_Type.h<br>
+SchM_Fee_Type.h<br>
+SchM_Fls_17_Dmu_Type.h<br>
+SchM_IpduM_Type.h<br>
 SchM_Irq_Type.h<br>
 SchM_McalLib_Type.h<br>
 SchM_Mcu_Type.h<br>
+SchM_NvM_Type.h<br>
 SchM_PduR_Type.h<br>
 SchM_Port_Type.h<br>
 SchM_Pwm_17_GtmCcu6_Type.h<br>
@@ -215,7 +227,7 @@ Rte_Needs.ecuc.arxml<br>
 Note: This resource usage calculation assumes that the "Boolean" data type is based on uint8 base type.<br>
       Further on padding bytes for structs are not considered, which depends on the compiler settings.<br>
 <br>
-RAM   Size: 18 Bytes<br>
+RAM   Size: 21 Bytes<br>
 CONST Size: 0 Bytes<br>
 <br>
 <P ALIGN=LEFT>
@@ -457,9 +469,9 @@ CONST Size: 0 Bytes<br>
 <TR>
 <TD><B>TimingEvent</B> Cyclic 10ms</TD>
 <TD>MotorCDDMainFunction</TD>
-<TD>MotorTask</TD>
-<TD>Rte_Ev_Run_MotorCdd_MotorCDDMainFunction</TD>
-<TD>Rte_Al_TE_MotorCdd_MotorCDDMainFunction</TD>
+<TD>Default_Appl_Task</TD>
+<TD>Rte_Ev_Cyclic_Default_Appl_Task_0_10ms</TD>
+<TD>Rte_Al_TE_Default_Appl_Task_0_10ms</TD>
 </TR>
 <TR>
 <TD><B>ExternalTriggerEvent</B></TD>
@@ -478,8 +490,8 @@ CONST Size: 0 Bytes<br>
 <TR>
 <TD><B>OperationInvokedEvent</B> MotorCdd::Pp_MotorCdd_EnableInverter::EnableInverter</TD>
 <TD>Pp_MotorCdd_EnableInverter_EnableInverter</TD>
-<TD>n/a</TD>
-<TD>n/a</TD>
+<TD>MotorTask</TD>
+<TD>Rte_Ev_Run_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter</TD>
 <TD>n/a</TD>
 </TR>
 <TR>
@@ -492,9 +504,16 @@ CONST Size: 0 Bytes<br>
 <TR>
 <TD><B>TimingEvent</B> Cyclic 1ms</TD>
 <TD>MotorControll_MainFunction</TD>
-<TD>MotorTask</TD>
-<TD>Rte_Ev_Run_MotorControll_MotorControll_MainFunction</TD>
-<TD>Rte_Al_TE_MotorControll_MotorControll_MainFunction</TD>
+<TD>Default_Appl_Task</TD>
+<TD>Rte_Ev_Cyclic_Default_Appl_Task_0_1ms</TD>
+<TD>Rte_Al_TE_Default_Appl_Task_0_1ms</TD>
+</TR>
+<TR>
+<TD><B>TimingEvent</B> Cyclic 10ms</TD>
+<TD>NvM_MainFunction</TD>
+<TD>Default_BSW_ASync_Task</TD>
+<TD>Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms</TD>
+<TD>Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms</TD>
 </TR>
 <TR>
 <TD><B>OperationInvokedEvent</B> Os_OsCore0_swc::OsService_SystemTimer::GetCounterValue</TD>
@@ -521,15 +540,15 @@ CONST Size: 0 Bytes<br>
 <TD><B>TimingEvent</B> Cyclic 10ms</TD>
 <TD>StartApp_Cyclic10ms</TD>
 <TD>Default_Appl_Task</TD>
-<TD>Rte_Ev_Run_StartApp_StartApp_Cyclic10ms</TD>
-<TD>Rte_Al_TE_StartApp_StartApp_Cyclic10ms</TD>
+<TD>Rte_Ev_Cyclic_Default_Appl_Task_0_10ms</TD>
+<TD>Rte_Al_TE_Default_Appl_Task_0_10ms</TD>
 </TR>
 <TR>
 <TD><B>TimingEvent</B> Cyclic 1ms</TD>
 <TD>StartApp_Cyclic1ms</TD>
 <TD>Default_Appl_Task</TD>
-<TD>Rte_Ev_Run_StartApp_StartApp_Cyclic1ms</TD>
-<TD>Rte_Al_TE_StartApp_StartApp_Cyclic1ms</TD>
+<TD>Rte_Ev_Cyclic_Default_Appl_Task_0_1ms</TD>
+<TD>Rte_Al_TE_Default_Appl_Task_0_1ms</TD>
 </TR>
 <TR>
 <TD><B>TimingEvent</B> Cyclic 250ms</TD>
@@ -612,11 +631,11 @@ CONST Size: 0 Bytes<br>
 <TD>Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms</TD>
 </TR>
 <TR>
-<TD><B>TimingEvent</B> Cyclic 10ms</TD>
+<TD><B>TimingEvent</B> Cyclic 5ms</TD>
 <TD>Com_MainFunctionTx_ComMainFunctionTx</TD>
 <TD>Default_BSW_ASync_Task</TD>
-<TD>Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms</TD>
-<TD>Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms</TD>
+<TD>Rte_Ev_Run_Com_Com_MainFunctionTx_ComMainFunctionTx</TD>
+<TD>Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx</TD>
 </TR>
 <TR>
 <TD><B>TimingEvent</B> Cyclic 20ms</TD>
@@ -628,6 +647,41 @@ CONST Size: 0 Bytes<br>
 <TR>
 <TD><B>TimingEvent</B> Cyclic 10ms</TD>
 <TD>EcuM_MainFunction</TD>
+<TD>Default_BSW_ASync_Task</TD>
+<TD>Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms</TD>
+<TD>Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms</TD>
+</TR>
+<TR>
+<TD><B>TimingEvent</B> Cyclic 10ms</TD>
+<TD>Fee_MainFunction</TD>
+<TD>Default_BSW_ASync_Task</TD>
+<TD>Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms</TD>
+<TD>Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms</TD>
+</TR>
+<TR>
+<TD><B>TimingEvent</B> Cyclic 10ms</TD>
+<TD>Fls_17_Dmu_MainFunction</TD>
+<TD>Default_BSW_ASync_Task</TD>
+<TD>Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms</TD>
+<TD>Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms</TD>
+</TR>
+<TR>
+<TD><B>TimingEvent</B> Cyclic 10ms</TD>
+<TD>IpduM_MainFunctionRx</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+</TR>
+<TR>
+<TD><B>TimingEvent</B> Cyclic 10ms</TD>
+<TD>IpduM_MainFunctionTx</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+</TR>
+<TR>
+<TD><B>TimingEvent</B> Cyclic 10ms</TD>
+<TD>NvM_MainFunction</TD>
 <TD>Default_BSW_ASync_Task</TD>
 <TD>Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms</TD>
 <TD>Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms</TD>

@@ -154,12 +154,30 @@
         <Splitter File=".\Config\ECUC\last364_Sbc_Sbc_ecuc.arxml">
             <Module Name="Sbc"/>
         </Splitter>
+        <Splitter File=".\Config\ECUC\last364_IpduM_IpduM_ecuc.arxml">
+            <Module Name="IpduM"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\last364_MemIf_MemIf_ecuc.arxml">
+            <Module Name="MemIf"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\last364_Fls_Fls_ecuc.arxml">
+            <Module Name="Fls"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\last364_NvM_NvM_ecuc.arxml">
+            <Module Name="NvM"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\last364_Fee_Fee_ecuc.arxml">
+            <Module Name="Fee"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\last364_Crc_Crc_ecuc.arxml">
+            <Module Name="Crc"/>
+        </Splitter>
         <OwnFolderForEachSplitter>false</OwnFolderForEachSplitter>
         <OwnFileForEachInstance>true</OwnFileForEachInstance>
     </EcucSplitter>
     <Display LastVersion="5.25.37 SP2">
-        <FileSet Id="" CS="9b051214">
-            <File Order="0" EcuInstance="MyECU" Hash="7bb0a8940b416fbbc309469e43a6854f" FileCategory="legacy_communication_data">$(DpaProjectFolder)\Config_Vector\CANFD364.dbc</File>
+        <FileSet Id="" CS="7de5a928">
+            <File Order="0" EcuInstance="MyECU" Hash="f1aeb6f212a78f6dd8e796e6b5bcba7c" FileCategory="legacy_communication_data">$(DpaProjectFolder)\Config_Vector\CANFD364.dbc</File>
         </FileSet>
         <Merge>
             <Path Id="ECU-INSTANCE" ARPath="/ECU/MyECU"/>
@@ -199,21 +217,28 @@
                 <Setting Value="false" Name="Com"/>
                 <Setting Value="false" Name="ComM"/>
                 <Setting Value="false" Name="ComXf"/>
+                <Setting Value="false" Name="Crc"/>
                 <Setting Value="false" Name="Det"/>
                 <Setting Value="false" Name="Dio"/>
                 <Setting Value="false" Name="Dma"/>
                 <Setting Value="false" Name="E2EXf"/>
                 <Setting Value="false" Name="EcuC"/>
                 <Setting Value="false" Name="EcuM"/>
+                <Setting Value="false" Name="Fee"/>
+                <Setting Value="false" Name="Fls"/>
+                <Setting Value="false" Name="IpduM"/>
                 <Setting Value="false" Name="Irq"/>
                 <Setting Value="false" Name="McalLib"/>
                 <Setting Value="false" Name="Mcu"/>
+                <Setting Value="false" Name="MemIf"/>
                 <Setting Value="false" Name="MemMap"/>
+                <Setting Value="false" Name="NvM"/>
                 <Setting Value="false" Name="Os"/>
                 <Setting Value="false" Name="PduR"/>
                 <Setting Value="false" Name="Port"/>
                 <Setting Value="false" Name="Pwm"/>
                 <Setting Value="false" Name="Rte"/>
+                <Setting Value="false" Name="Sbc"/>
                 <Setting Value="false" Name="Spi"/>
                 <Setting Value="false" Name="vBRS"/>
                 <Setting Value="false" Name="vSet"/>
@@ -407,7 +432,7 @@
                 </Settings>
             </Settings>
             <Settings Name="com.vector.cfg.gen.core.gencore.internal.aov.AutomaticOnDemandValidationConfigurationService">
-                <Setting Value="rO0ABXNyAGpjb20udmVjdG9yLmNmZy5nZW4uY29yZS5nZW5jb3JlLmludGVybmFsLmFvdi5BdXRv&#xA;bWF0aWNPbkRlbWFuZFZhbGlkYXRpb25Db25maWd1cmF0aW9uU2VydmljZSRQZXJzaXN0ZWREYXRh&#xA;pcjrmQ6cuakCAAJaAAlhY3RpdmF0ZWRMABJkZWFjdGl2YXRlZE1vZHVsZXN0ABZMamF2YS91dGls&#xA;L0NvbGxlY3Rpb247eHABc3IANmNvbS5nb29nbGUuY29tbW9uLmNvbGxlY3QuSW1tdXRhYmxlTGlz&#xA;dCRTZXJpYWxpemVkRm9ybQAAAAAAAAAAAgABWwAIZWxlbWVudHN0ABNbTGphdmEvbGFuZy9PYmpl&#xA;Y3Q7eHB1cgATW0xqYXZhLmxhbmcuT2JqZWN0O5DOWJ8QcylsAgAAeHAAAAAPc3IANWNvbS52ZWN0&#xA;b3IuY2ZnLm1vZGVsLmFjY2Vzcy5EZWZSZWYkU2VyaWFsaXphdGlvblByb3h5NnUB4bS2W7ACAAJM&#xA;AB5kZWZSZWZTdHJpbmdXaXRob3V0UGFja2FnZVBhcnR0ABJMamF2YS9sYW5nL1N0cmluZztMABlw&#xA;YWNrYWdlUGFydE9mRGVmUmVmU3RyaW5ncQB+AAl4cHQAA0FkY3QAES9BVVJJWDJHL0VjdWNEZWZz&#xA;c3EAfgAIdAAEdkJSU3QACS9NSUNST1NBUnNxAH4ACHQABHZTZXRxAH4AD3NxAH4ACHQAA0RtYXEA&#xA;fgAMc3EAfgAIdAAGTWVtTWFwcQB+AA9zcQB+AAh0AANNY3VxAH4ADHNxAH4ACHQAA0lycXEAfgAM&#xA;c3EAfgAIdAADU3BpcQB+AAxzcQB+AAh0AAVFMkVQV3EAfgAPc3EAfgAIdAADUHdtcQB+AAxzcQB+&#xA;AAh0AANEaW9xAH4ADHNxAH4ACHQABFBvcnRxAH4ADHNxAH4ACHQAA0NhbnQAGS9NSUNST1NBUi9D&#xA;YW5fTXBjNTcwME1jYW5zcQB+AAh0AAdNY2FsTGlicQB+AAxzcQB+AAh0AARFY3VDcQB+AA8=" Name="Data"/>
+                <Setting Value="rO0ABXNyAGpjb20udmVjdG9yLmNmZy5nZW4uY29yZS5nZW5jb3JlLmludGVybmFsLmFvdi5BdXRv&#xA;bWF0aWNPbkRlbWFuZFZhbGlkYXRpb25Db25maWd1cmF0aW9uU2VydmljZSRQZXJzaXN0ZWREYXRh&#xA;pcjrmQ6cuakCAAJaAAlhY3RpdmF0ZWRMABJkZWFjdGl2YXRlZE1vZHVsZXN0ABZMamF2YS91dGls&#xA;L0NvbGxlY3Rpb247eHABc3IANmNvbS5nb29nbGUuY29tbW9uLmNvbGxlY3QuSW1tdXRhYmxlTGlz&#xA;dCRTZXJpYWxpemVkRm9ybQAAAAAAAAAAAgABWwAIZWxlbWVudHN0ABNbTGphdmEvbGFuZy9PYmpl&#xA;Y3Q7eHB1cgATW0xqYXZhLmxhbmcuT2JqZWN0O5DOWJ8QcylsAgAAeHAAAAAUc3IANWNvbS52ZWN0&#xA;b3IuY2ZnLm1vZGVsLmFjY2Vzcy5EZWZSZWYkU2VyaWFsaXphdGlvblByb3h5NnUB4bS2W7ACAAJM&#xA;AB5kZWZSZWZTdHJpbmdXaXRob3V0UGFja2FnZVBhcnR0ABJMamF2YS9sYW5nL1N0cmluZztMABlw&#xA;YWNrYWdlUGFydE9mRGVmUmVmU3RyaW5ncQB+AAl4cHQAB01jYWxMaWJ0ABEvQVVSSVgyRy9FY3Vj&#xA;RGVmc3NxAH4ACHQABHZCUlN0AAkvTUlDUk9TQVJzcQB+AAh0AAR2U2V0cQB+AA9zcQB+AAh0AANT&#xA;cGlxAH4ADHNxAH4ACHQAA1NiY3QAFi9NSUNST1NBUi9TYmNfVGxmMzU1ODRzcQB+AAh0AAVNZW1J&#xA;ZnEAfgAPc3EAfgAIdAADRmVlcQB+AAxzcQB+AAh0AANEbWFxAH4ADHNxAH4ACHQABFBvcnRxAH4A&#xA;DHNxAH4ACHQAA0Zsc3EAfgAMc3EAfgAIdAADQ3JjcQB+AAxzcQB+AAh0AARFY3VDcQB+AA9zcQB+&#xA;AAh0AAVFMkVQV3EAfgAPc3EAfgAIdAADQ2FudAAZL01JQ1JPU0FSL0Nhbl9NcGM1NzAwTWNhbnNx&#xA;AH4ACHQAA1B3bXEAfgAMc3EAfgAIdAADQWRjcQB+AAxzcQB+AAh0AAZNZW1NYXBxAH4AD3NxAH4A&#xA;CHQAA0lycXEAfgAMc3EAfgAIdAADRGlvcQB+AAxzcQB+AAh0AANNY3VxAH4ADA==" Name="Data"/>
             </Settings>
             <Settings Name="com.vector.cfg.gui.pse.pages.generators">
                 <Settings Name="BuildVipProject"/>

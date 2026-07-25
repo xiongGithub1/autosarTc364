@@ -53,12 +53,18 @@
 #include "MotorFoc_SpeedLoop.h"
 #include "MotorZeroCal.h"
 #include "MotorFoc_OpenLoop.h"
+#include "CDD/MotorFoc/MotorFoc_OpenLoopCan.h"
 
 #include "CDD/TLE9180/Tle9180_Driver.h"
 #include "CDD/MotorFoc/MotorCdd_Adc.h"
+#include "CDD/MotorFoc/MotorFoc_CurrentLoop.h"
 #include "CDD/TLE5012/Tle5012bd_Driver.h"
 
 #define MOTORCONTROLL_OPENLOOP_CURRENT_LIMIT_A_DEFAULT   (20.0F)
+#define MOTORCONTROLL_OPENLOOP_CURRENT_RAMP_STEP_A_DEFAULT (0.02F)
+#define MOTORCONTROLL_CAL_VDC_STABLE_MS                  (200U)
+
+static uint16 MotorControll_CalVdcStableMs = 0U;
 
 volatile uint8 MotorControll_OpenLoopEnable = 0U;
 volatile uint32 MotorControll_MainCounter = 0U;
@@ -72,6 +78,8 @@ volatile float32 MotorControll_IqRefCmd = 0.0F;
 volatile float32 MotorControll_IdRefOut = 0.0F;
 volatile float32 MotorControll_IqRefOut = 0.0F;
 volatile float32 MotorControll_OpenLoopCurrentLimitA = MOTORCONTROLL_OPENLOOP_CURRENT_LIMIT_A_DEFAULT;
+volatile float32 MotorControll_OpenLoopCurrentRampStepA =
+    MOTORCONTROLL_OPENLOOP_CURRENT_RAMP_STEP_A_DEFAULT;
 volatile MotorMode_Type MotorControll_MotorModeCmd = MOTOR_MODE_DEFAULT;
 volatile uint8 MotorControll_GateDriverState = 0U;
 volatile uint8 MotorControll_GateDriverLastInitError = 0U;
@@ -83,7 +91,9 @@ static MotorMode_Type MotorControll_PrevMotorMode = MOTOR_MODE_DEFAULT;
 
 static void MotorControll_UpdateSensorObservation(void);
 static float32 MotorControll_ClampFloat(float32 value, float32 min, float32 max);
+static float32 MotorControll_SlewFloat(float32 current, float32 target, float32 step);
 static void MotorControll_UpdateCurrentRefsViaRte(MotorMode_Type motorMode);
+static uint8 MotorControll_TryStartCalibration(void);
 static void MotorControll_UpdateGateDriverObservation(void);
 
 
@@ -140,9 +150,12 @@ FUNC(void, MotorControll_CODE) MotorControll_Init(void) /* PRQA S 0624, 3206 */ 
   MotorControll_IdRefOut = 0.0F;
   MotorControll_IqRefOut = 0.0F;
   MotorControll_OpenLoopCurrentLimitA = MOTORCONTROLL_OPENLOOP_CURRENT_LIMIT_A_DEFAULT;
+  MotorControll_OpenLoopCurrentRampStepA =
+      MOTORCONTROLL_OPENLOOP_CURRENT_RAMP_STEP_A_DEFAULT;
   MotorControll_ForcedElectricalAngleDeg = 0.0F;
   MotorControll_MotorModeCmd = MOTOR_MODE_DEFAULT;
   MotorControll_PrevMotorMode = MOTOR_MODE_DEFAULT;
+  MotorFoc_OpenLoopCan_Init();
 
   (void)Rte_Write_Pp_MotorCtrlCmd_MotorMode((uint8)MOTOR_MODE_DEFAULT);
   (void)Rte_Write_Pp_MotorCurrentRef_Id_Ref(0.0F);
@@ -171,13 +184,13 @@ void MotorControll_StopPwm(void)
   MotorCdd_FocStopOutput();
   Tle9180_Driver_EnableOutput(FALSE);
   MotorControll_OutputEnabled = 0U;
-  MotorCdd_AdcResetCurrentOffsetCapture();
 }
 
 static void MotorControll_UpdateSensorObservation(void)
 {
   /* Angle SPI runs in StartApp 1 ms → Tle5012bd_Sensor / angle_cache. Controll: mirror only. */
-  MotorControll_SensorElectricalAngleRad = Tle5012bd_Sensor.anglePi;
+  MotorControll_SensorElectricalAngleRad =
+      Tle5012bd_Driver_GetElectricalAngleRad();
   MotorControll_SensorMechanicalRpm = Tle5012bd_Sensor.RPM;
   MotorControll_ForcedElectricalAngleDeg = MotorFoc_OpenLoop_GetForcedAngleDeg();
 }
@@ -204,6 +217,65 @@ static float32 MotorControll_ClampFloat(float32 value, float32 min, float32 max)
   return value;
 }
 
+static float32 MotorControll_SlewFloat(float32 current, float32 target, float32 step)
+{
+  if (step < 0.0F)
+  {
+    step = -step;
+  }
+  if (step <= 0.0F)
+  {
+    return target;
+  }
+
+  if ((target - current) > step)
+  {
+    return current + step;
+  }
+  if ((current - target) > step)
+  {
+    return current - step;
+  }
+
+  return target;
+}
+
+static uint8 MotorControll_TryStartCalibration(void)
+{
+  const MotorCdd_AdcPhysicalType* adcPhysical;
+  float32 minVdc;
+
+  adcPhysical = MotorCdd_GetAdcPhysical();
+  minVdc = MotorFoc_CurrentLoopMinVdcRunV;
+  if (minVdc < 0.0F)
+  {
+    minVdc = 0.0F;
+  }
+
+  if (adcPhysical->vinv_V < (minVdc + 1.0F))
+  {
+    MotorControll_CalVdcStableMs = 0U;
+    MotorZeroCal_StartRejectReason = MOTORZEROCAL_START_REJECT_VDC_LOW;
+    return 0U;
+  }
+
+  if (MotorControll_CalVdcStableMs < MOTORCONTROLL_CAL_VDC_STABLE_MS)
+  {
+    MotorControll_CalVdcStableMs++;
+    MotorZeroCal_StartRejectReason = MOTORZEROCAL_START_REJECT_VDC_STABILIZING;
+    return 0U;
+  }
+
+  if (MotorZeroCal_CanStart() == 0U)
+  {
+    return 0U;
+  }
+
+  MotorCdd_FocClearFault();
+  MotorZeroCal_Start();
+  return 1U;
+}
+
 static void MotorControll_UpdateCurrentRefsViaRte(MotorMode_Type motorMode)
 {
   float32 idRef = 0.0F;
@@ -213,28 +285,40 @@ static void MotorControll_UpdateCurrentRefsViaRte(MotorMode_Type motorMode)
   switch (motorMode)
   {
     case MOTOR_MODE_CALIBRATION:
-      idRef = MOTORZEROCAL_ID_REF_A;
+      idRef = MotorZeroCal_GetAlignCurrentA();
       iqRef = 0.0F;
       break;
 
     case MOTOR_MODE_CALIBRATION_ERASE:
+    case MOTOR_MODE_CALIBRATION_SAVE:
       idRef = 0.0F;
       iqRef = 0.0F;
       break;
 
     case MOTOR_MODE_OPEN_LOOP:
+    {
+      float32 idTarget;
+      float32 iqTarget;
+
       currentLimit = MotorControll_OpenLoopCurrentLimitA;
       if (currentLimit < 0.0F)
       {
         currentLimit = -currentLimit;
       }
-      idRef = MotorControll_ClampFloat(MotorControll_IdRefCmd,
-                                      -currentLimit,
-                                      currentLimit);
-      iqRef = MotorControll_ClampFloat(MotorControll_IqRefCmd,
-                                      -currentLimit,
-                                      currentLimit);
+      idTarget = MotorControll_ClampFloat(MotorControll_IdRefCmd,
+                                          -currentLimit,
+                                          currentLimit);
+      iqTarget = MotorControll_ClampFloat(MotorControll_IqRefCmd,
+                                          -currentLimit,
+                                          currentLimit);
+      idRef = MotorControll_SlewFloat(MotorControll_IdRefOut,
+                                      idTarget,
+                                      MotorControll_OpenLoopCurrentRampStepA);
+      iqRef = MotorControll_SlewFloat(MotorControll_IqRefOut,
+                                      iqTarget,
+                                      MotorControll_OpenLoopCurrentRampStepA);
       break;
+    }
 
     case MOTOR_MODE_FOC_SPEED:
       MotorCdd_FocContext.speedControl.refSpeedRPM = MotorControll_RefSpeedRpm;
@@ -294,11 +378,36 @@ void MotorControll_MainFunction(void)
   MotorControll_UpdateSensorObservation();
   MotorControll_UpdateGateDriverObservation();
 
+  if ((motorMode == MOTOR_MODE_IDLE) &&
+      (MotorFoc_CurrentLoopFault != 0U) &&
+      (MotorFoc_CurrentLoopFaultReason == MOTORFOC_CURRENT_FAULT_UNDERVOLT))
+  {
+    const MotorCdd_AdcPhysicalType* adcPhysical = MotorCdd_GetAdcPhysical();
+    float32 minVdc = MotorFoc_CurrentLoopMinVdcRunV;
+
+    if (minVdc < 0.0F)
+    {
+      minVdc = 0.0F;
+    }
+
+    if (adcPhysical->vinv_V >= (minVdc + 0.5F))
+    {
+      MotorCdd_FocClearFault();
+    }
+  }
+
   if (motorMode != MotorControll_PrevMotorMode)
   {
     if (motorMode == MOTOR_MODE_CALIBRATION)
     {
-      MotorZeroCal_Start();
+      if (MotorControll_TryStartCalibration() == 0U)
+      {
+        if (MotorZeroCal_StartRejectReason == MOTORZEROCAL_START_REJECT_VDC_LOW)
+        {
+          MotorControll_MotorModeCmd = MOTOR_MODE_IDLE;
+          motorMode = MOTOR_MODE_IDLE;
+        }
+      }
     }
     else if (motorMode == MOTOR_MODE_CALIBRATION_ERASE)
     {
@@ -306,15 +415,46 @@ void MotorControll_MainFunction(void)
       MotorControll_MotorModeCmd = MOTOR_MODE_IDLE;
       motorMode = MOTOR_MODE_IDLE;
     }
+    else if (motorMode == MOTOR_MODE_CALIBRATION_SAVE)
+    {
+      /* Motortask must NOT call NvM_WriteBlock (NON prio 200). Queue only. */
+      MotorControll_StopPwm();
+      MotorZeroCal_SaveToFlash();
+      MotorControll_MotorModeCmd = MOTOR_MODE_IDLE;
+      motorMode = MOTOR_MODE_IDLE;
+    }
     else if (motorMode == MOTOR_MODE_OPEN_LOOP)
     {
       MotorFoc_OpenLoop_Reset();
       MotorCdd_FocClearFault();
+      MotorControll_IdRefOut = 0.0F;
+      MotorControll_IqRefOut = 0.0F;
     }
     else
     {
+      MotorControll_CalVdcStableMs = 0U;
       /* No action on other mode transitions. */
     }
+  }
+  else if (motorMode == MOTOR_MODE_CALIBRATION)
+  {
+    /* RUNNING = align; SAVING = NvM write still under CALIBRATION mode. */
+    if ((MotorZeroCal_State != MOTORZEROCAL_STATE_RUNNING) &&
+        (MotorZeroCal_State != MOTORZEROCAL_STATE_SAVING))
+    {
+      if (MotorControll_TryStartCalibration() == 0U)
+      {
+        if (MotorZeroCal_StartRejectReason == MOTORZEROCAL_START_REJECT_VDC_LOW)
+        {
+          MotorControll_MotorModeCmd = MOTOR_MODE_IDLE;
+          motorMode = MOTOR_MODE_IDLE;
+        }
+      }
+    }
+  }
+  else
+  {
+    MotorControll_CalVdcStableMs = 0U;
   }
 
   MotorControll_UpdateCurrentRefsViaRte(motorMode);
@@ -322,6 +462,7 @@ void MotorControll_MainFunction(void)
   MotorCdd_FocSetCmdMirror((uint8)motorMode,
                            MotorControll_IdRefOut,
                            MotorControll_IqRefOut);
+  MotorFoc_OpenLoopCan_MainFunction(motorMode);
 
   if (MotorControll_OpenLoopEnable != 0U)
   {
@@ -333,7 +474,10 @@ void MotorControll_MainFunction(void)
   }
   MotorControll_PrevMotorMode = motorMode;
 
-  if (motorMode == MOTOR_MODE_IDLE)
+  if ((motorMode == MOTOR_MODE_IDLE) ||
+      (motorMode == MOTOR_MODE_STOP) ||
+      (motorMode == MOTOR_MODE_CALIBRATION_SAVE) ||
+      (MotorZeroCal_State == MOTORZEROCAL_STATE_SAVING))
   {
     if (MotorControll_OutputEnabled != 0U)
     {

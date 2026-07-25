@@ -1,0 +1,1027 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc12456a --dep-file=Appl\\Source\\CDD\\MotorFoc\\.MotorFoc_OpenLoopCan.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=Appl\\Source\\CDD\\MotorFoc\\MotorFoc_OpenLoopCan.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\Source\\CDD\\MotorFoc\\MotorFoc_OpenLoopCan.src ..\\Appl\\Source\\CDD\\MotorFoc\\MotorFoc_OpenLoopCan.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\Source\\CDD\\MotorFoc\\MotorFoc_OpenLoopCan.c'
+
+	
+$TC162
+	.sdecl	'.zrodata.MotorFoc_OpenLoopCan..1.cnt',data,rom
+	.sect	'.zrodata.MotorFoc_OpenLoopCan..1.cnt'
+	.align	2
+.1.cnt:	.type	object
+	.size	.1.cnt,4
+	.word	1191181824
+	
+	.sdecl	'.text.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_PackS16',code
+	.sect	'.text.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_PackS16'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	     1  #include "MotorFoc_OpenLoopCan.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	     2  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	     3  #include "CanIf.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	     4  #include "CanIf_Cfg.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	     5  #include "Com.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	     6  #include "Com_Cfg.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	     7  #include "MotorControll.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	     8  #include "MotorCdd_Foc.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	     9  #include "MotorCdd_Adc.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    10  #include "MotorFoc_CurrentLoop.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    11  #include "MotorFoc_OpenLoop.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    12  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    13  #define MOTORFOC_OPENLOOPCAN_SEND_DIVIDER       (5U)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    14  #define MOTORFOC_OPENLOOPCAN_CURRENT_SCALE      (100.0F)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    15  #define MOTORFOC_OPENLOOPCAN_VOLTAGE_SCALE      (1000.0F)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    16  #define MOTORFOC_OPENLOOPCAN_VDC_SCALE          (10.0F)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    17  #define MOTORFOC_OPENLOOPCAN_ANGLE_SCALE        (1000.0F)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    18  #define MOTORFOC_OPENLOOPCAN_SPEED_SCALE        (1.0F)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    19  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    20  volatile uint8 MotorFoc_OpenLoopCan_Enable = 1U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    21  volatile uint8 MotorFoc_OpenLoopCan_ControlPageOnly = 1U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    22  volatile uint8 MotorFoc_OpenLoopCan_LastTxResult = E_NOT_OK;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    23  volatile uint32 MotorFoc_OpenLoopCan_TxCounter = 0UL;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    24  volatile uint32 MotorFoc_OpenLoopCan_TxErrorCounter = 0UL;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    25  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    26  static uint8 MotorFoc_OpenLoopCan_Page = MOTORFOC_OPENLOOPCAN_PAGE_CONTROL;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    27  static uint8 MotorFoc_OpenLoopCan_Tick = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    28  static uint16 MotorFoc_OpenLoopCan_Sequence = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    29  static uint8 MotorFoc_OpenLoopCan_CurrentMode = (uint8)MOTOR_MODE_IDLE;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    30  static uint8 MotorFoc_OpenLoopCan_Data[MOTORFOC_OPENLOOPCAN_PAYLOAD_LENGTH];
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    31  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    32  static sint16 MotorFoc_OpenLoopCan_PackS16(float32 value, float32 scale)
+; Function MotorFoc_OpenLoopCan_PackS16
+MotorFoc_OpenLoopCan_PackS16:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    33  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    34    float32 scaled = value * scale;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    35    sint32 rounded;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    36  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    37    if (scaled >= 32767.0F)
+	mul.f	d0,d4,d5
+	ld.w	d15,.1.cnt
+	cmp.f	d15,d0,d15
+	and	d15,#6
+	jeq	d15,#0,.L2
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    38    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    39      return (sint16)32767;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    40    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    41    if (scaled <= -32768.0F)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    42    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    43      return (sint16)-32768;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    44    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    45  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    46    if (scaled >= 0.0F)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    47    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    48      rounded = (sint32)(scaled + 0.5F);
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    49    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    50    else
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    51    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    52      rounded = (sint32)(scaled - 0.5F);
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    53    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    54    return (sint16)rounded;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    55  }
+	mov	d2,#32767
+	ret
+.L2:
+	movh	d15,#50944
+	cmp.f	d15,d0,d15
+	and	d15,#3
+	jeq	d15,#0,.L4
+	mov	d2,#-32768
+	ret
+.L4:
+	movh	d1,#16128
+	cmp.f	d15,d0,d15
+	and	d15,#6
+	jne	d15,#0,.L6
+	sub.f	d15,d0,d1
+	j	.L7
+.L6:
+	madd.f	d15,d1,d4,d5
+.L7:
+	ftoiz	d2,d15
+	ret
+	
+__MotorFoc_OpenLoopCan_PackS16_function_end:
+	.size	MotorFoc_OpenLoopCan_PackS16,__MotorFoc_OpenLoopCan_PackS16_function_end-MotorFoc_OpenLoopCan_PackS16
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_ClampU16',code
+	.sect	'.text.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_ClampU16'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    56  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    57  static uint16 MotorFoc_OpenLoopCan_ClampU16(uint32 value)
+; Function MotorFoc_OpenLoopCan_ClampU16
+MotorFoc_OpenLoopCan_ClampU16:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    58  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    59    if (value > 65535UL)
+	mov.u	d15,#65535
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    60    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    61      return 65535U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    62    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    63    return (uint16)value;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    64  }
+	min.u	d2,d4,d15
+	ret
+	
+__MotorFoc_OpenLoopCan_ClampU16_function_end:
+	.size	MotorFoc_OpenLoopCan_ClampU16,__MotorFoc_OpenLoopCan_ClampU16_function_end-MotorFoc_OpenLoopCan_ClampU16
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_PutU16',code
+	.sect	'.text.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_PutU16'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    65  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    66  static void MotorFoc_OpenLoopCan_PutU16(uint8 index, uint16 value)
+; Function MotorFoc_OpenLoopCan_PutU16
+MotorFoc_OpenLoopCan_PutU16:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    67  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    68    MotorFoc_OpenLoopCan_Data[index] = (uint8)(value & 0xFFU);
+	fcall	.cocofun_2
+	addsc.a	a15,a15,d4,#0
+	st.b	[a15],d5
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    69    MotorFoc_OpenLoopCan_Data[index + 1U] = (uint8)(value >> 8U);
+	sha	d5,#-8
+	st.b	[a15]1,d5
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    70  }
+	ret
+	
+__MotorFoc_OpenLoopCan_PutU16_function_end:
+	.size	MotorFoc_OpenLoopCan_PutU16,__MotorFoc_OpenLoopCan_PutU16_function_end-MotorFoc_OpenLoopCan_PutU16
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_OpenLoopCan..cocofun_2',code
+	.sect	'.text.MotorFoc_OpenLoopCan..cocofun_2'
+	.align	2
+; Function .cocofun_2
+.cocofun_2:	.type	func
+; Function body .cocofun_2, coco_iter:0
+	movh.a	a15,#@his(MotorFoc_OpenLoopCan_Data)
+	lea	a15,[a15]@los(MotorFoc_OpenLoopCan_Data)
+	fret
+	; End of function
+	.sdecl	'.text.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_PutS16',code
+	.sect	'.text.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_PutS16'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    71  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    72  static void MotorFoc_OpenLoopCan_PutS16(uint8 index,
+; Function MotorFoc_OpenLoopCan_PutS16
+MotorFoc_OpenLoopCan_PutS16:	.type	func
+	mov	d15,d4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    73                                          float32 value,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    74                                          float32 scale)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    75  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    76    MotorFoc_OpenLoopCan_PutU16(index,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    77                                (uint16)MotorFoc_OpenLoopCan_PackS16(value, scale));
+	mov	d4,d5
+	mov	d5,d6
+	call	MotorFoc_OpenLoopCan_PackS16
+	extr.u	d5,d2,#0,#16
+	mov	d4,d15
+	j	MotorFoc_OpenLoopCan_PutU16
+	
+__MotorFoc_OpenLoopCan_PutS16_function_end:
+	.size	MotorFoc_OpenLoopCan_PutS16,__MotorFoc_OpenLoopCan_PutS16_function_end-MotorFoc_OpenLoopCan_PutS16
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_ClearData',code
+	.sect	'.text.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_ClearData'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    78  }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    79  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    80  static void MotorFoc_OpenLoopCan_ClearData(void)
+; Function MotorFoc_OpenLoopCan_ClearData
+MotorFoc_OpenLoopCan_ClearData:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    81  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    82    uint8 index;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    83  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    84    for (index = 0U; index < MOTORFOC_OPENLOOPCAN_PAYLOAD_LENGTH; index++)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    85    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    86      MotorFoc_OpenLoopCan_Data[index] = 0U;
+	mov	d15,#0
+	fcall	.cocofun_2
+	lea	a2,31
+.L10:
+	st.b	[a15+],d15
+	loop	a2,.L10
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    87    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    88  }
+	ret
+	
+__MotorFoc_OpenLoopCan_ClearData_function_end:
+	.size	MotorFoc_OpenLoopCan_ClearData,__MotorFoc_OpenLoopCan_ClearData_function_end-MotorFoc_OpenLoopCan_ClearData
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_BuildControlPage',code
+	.sect	'.text.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_BuildControlPage'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    89  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    90  static void MotorFoc_OpenLoopCan_BuildControlPage(void)
+; Function MotorFoc_OpenLoopCan_BuildControlPage
+MotorFoc_OpenLoopCan_BuildControlPage:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    91  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    92    const MotorFoc_ContextType* ctx = &MotorCdd_FocContext;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    93    const MotorCdd_AdcPhysicalType* adc = MotorCdd_GetAdcPhysical();
+	call	MotorCdd_GetAdcPhysical
+	mov.aa	a12,a2
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    94  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    95    MotorFoc_OpenLoopCan_ClearData();
+	call	MotorFoc_OpenLoopCan_ClearData
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    96    MotorFoc_OpenLoopCan_Data[0U] = MOTORFOC_OPENLOOPCAN_PAGE_CONTROL;
+	movh.a	a13,#@his(MotorFoc_OpenLoopCan_Data)
+	lea	a13,[a13]@los(MotorFoc_OpenLoopCan_Data)
+	mov	d15,#160
+	st.b	[a13],d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    97    MotorFoc_OpenLoopCan_Data[1U] = MotorFoc_OpenLoopCan_CurrentMode;
+	ld.bu	d15,MotorFoc_OpenLoopCan_CurrentMode
+	st.b	[a13]1,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    98    MotorFoc_OpenLoopCan_Data[2U] = MotorFoc_CurrentLoopFault;
+	ld.bu	d15,MotorFoc_CurrentLoopFault
+	st.b	[a13]2,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	    99    MotorFoc_OpenLoopCan_Data[3U] = MotorFoc_CurrentLoopFaultReason;
+	ld.bu	d15,MotorFoc_CurrentLoopFaultReason
+	st.b	[a13]3,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   100    MotorFoc_OpenLoopCan_PutU16(4U, MotorFoc_OpenLoopCan_Sequence);
+	mov	d4,#4
+	ld.hu	d5,MotorFoc_OpenLoopCan_Sequence
+	call	MotorFoc_OpenLoopCan_PutU16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   101  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   102    MotorFoc_OpenLoopCan_PutS16(6U, MotorControll_IdRefOut,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   103                                MOTORFOC_OPENLOOPCAN_CURRENT_SCALE);
+	movh	d15,#17096
+	ld.w	d5,MotorControll_IdRefOut
+	mov	d6,d15
+	mov	d4,#6
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   104    MotorFoc_OpenLoopCan_PutS16(8U, MotorControll_IqRefOut,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   105                                MOTORFOC_OPENLOOPCAN_CURRENT_SCALE);
+	mov	d6,d15
+	ld.w	d5,MotorControll_IqRefOut
+	mov	d4,#8
+	call	MotorFoc_OpenLoopCan_PutS16
+	movh.a	a15,#@his(MotorCdd_FocContext)
+	lea	a15,[a15]@los(MotorCdd_FocContext)
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   106    MotorFoc_OpenLoopCan_PutS16(10U, ctx->idqMeas.real,
+	mov	d4,#10
+	ld.w	d5,[a15]52
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   107                                MOTORFOC_OPENLOOPCAN_CURRENT_SCALE);
+	mov	d6,d15
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   108    MotorFoc_OpenLoopCan_PutS16(12U, ctx->idqMeas.imag,
+	mov	d4,#12
+	ld.w	d5,[a15]56
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   109                                MOTORFOC_OPENLOOPCAN_CURRENT_SCALE);
+	mov	d6,d15
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   110    MotorFoc_OpenLoopCan_PutS16(14U, adc->iu_A,
+	mov	d4,#14
+	ld.w	d5,[a12]12
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   111                                MOTORFOC_OPENLOOPCAN_CURRENT_SCALE);
+	mov	d6,d15
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   112    MotorFoc_OpenLoopCan_PutS16(16U, adc->iv_A,
+	mov	d4,#16
+	ld.w	d5,[a12]16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   113                                MOTORFOC_OPENLOOPCAN_CURRENT_SCALE);
+	mov	d6,d15
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   114    MotorFoc_OpenLoopCan_PutS16(18U, adc->iw_A,
+	mov	d4,#18
+	ld.w	d5,[a12]20
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   115                                MOTORFOC_OPENLOOPCAN_CURRENT_SCALE);
+	mov	d6,d15
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   116    MotorFoc_OpenLoopCan_PutS16(20U, ctx->i_motor.vdc,
+	mov	d4,#20
+	ld.w	d5,[a15]12
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   117                                MOTORFOC_OPENLOOPCAN_VDC_SCALE);
+	movh	d6,#16672
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   118    MotorFoc_OpenLoopCan_PutU16(22U, (uint16)MotorFoc_OpenLoop_AngleRaw);
+	ld.hu	d5,MotorFoc_OpenLoop_AngleRaw
+	mov	d4,#22
+	call	MotorFoc_OpenLoopCan_PutU16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   119    MotorFoc_OpenLoopCan_PutS16(24U, ctx->angle.electricalAngleRad,
+	mov	d4,#24
+	ld.w	d5,[a15]24
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   120                                MOTORFOC_OPENLOOPCAN_ANGLE_SCALE);
+	movh	d6,#17530
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   121    MotorFoc_OpenLoopCan_Data[26U] = MotorCdd_AdcCurrentOffsetReady;
+	ld.bu	d15,MotorCdd_AdcCurrentOffsetReady
+	st.b	[a13]26,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   122    MotorFoc_OpenLoopCan_Data[27U] = (uint8)MotorCdd_AdcOffsetSampleCount;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   123    MotorFoc_OpenLoopCan_PutS16(28U, MotorControll_SensorMechanicalRpm,
+	mov	d4,#28
+	ld.hu	d15,MotorCdd_AdcOffsetSampleCount
+	st.b	[a13]27,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   124                                MOTORFOC_OPENLOOPCAN_SPEED_SCALE);
+	movh	d6,#16256
+	ld.w	d5,MotorControll_SensorMechanicalRpm
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   125    MotorFoc_OpenLoopCan_Data[30U] = MotorControll_GateDriverState;
+	ld.bu	d15,MotorControll_GateDriverState
+	st.b	[a13]30,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   126    MotorFoc_OpenLoopCan_Data[31U] = MotorControll_GateDriverOutputEnabled;
+	ld.bu	d15,MotorControll_GateDriverOutputEnabled
+	st.b	[a13]31,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   127  }
+	ret
+	
+__MotorFoc_OpenLoopCan_BuildControlPage_function_end:
+	.size	MotorFoc_OpenLoopCan_BuildControlPage,__MotorFoc_OpenLoopCan_BuildControlPage_function_end-MotorFoc_OpenLoopCan_BuildControlPage
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_BuildPwmPage',code
+	.sect	'.text.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_BuildPwmPage'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   128  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   129  static void MotorFoc_OpenLoopCan_BuildPwmPage(void)
+; Function MotorFoc_OpenLoopCan_BuildPwmPage
+MotorFoc_OpenLoopCan_BuildPwmPage:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   130  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   131    const MotorFoc_ContextType* ctx = &MotorCdd_FocContext;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   132  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   133    MotorFoc_OpenLoopCan_ClearData();
+	call	MotorFoc_OpenLoopCan_ClearData
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   134    MotorFoc_OpenLoopCan_Data[0U] = MOTORFOC_OPENLOOPCAN_PAGE_PWM;
+	fcall	.cocofun_2
+	mov	d15,#161
+	st.b	[a15],d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   135    MotorFoc_OpenLoopCan_Data[1U] = MotorFoc_OpenLoopCan_CurrentMode;
+	ld.bu	d15,MotorFoc_OpenLoopCan_CurrentMode
+	st.b	[a15]1,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   136    MotorFoc_OpenLoopCan_Data[2U] = MotorFoc_CurrentLoopFault;
+	ld.bu	d15,MotorFoc_CurrentLoopFault
+	st.b	[a15]2,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   137    MotorFoc_OpenLoopCan_Data[3U] = MotorFoc_CurrentLoopFaultReason;
+	ld.bu	d15,MotorFoc_CurrentLoopFaultReason
+	st.b	[a15]3,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   138    MotorFoc_OpenLoopCan_PutU16(4U, MotorFoc_OpenLoopCan_Sequence);
+	mov	d4,#4
+	ld.hu	d5,MotorFoc_OpenLoopCan_Sequence
+	call	MotorFoc_OpenLoopCan_PutU16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   139  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   140    MotorFoc_OpenLoopCan_PutS16(6U, ctx->vdqRef.real,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   141                                MOTORFOC_OPENLOOPCAN_VOLTAGE_SCALE);
+	movh	d15,#17530
+	movh.a	a15,#@his(MotorCdd_FocContext)
+	lea	a15,[a15]@los(MotorCdd_FocContext)
+	mov	d4,#6
+	ld.w	d5,[a15]60
+	mov	d6,d15
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   142    MotorFoc_OpenLoopCan_PutS16(8U, ctx->vdqRef.imag,
+	mov	d4,#8
+	ld.w	d5,[a15]64
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   143                                MOTORFOC_OPENLOOPCAN_VOLTAGE_SCALE);
+	mov	d6,d15
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   144    MotorFoc_OpenLoopCan_PutS16(10U, ctx->vabRef.real,
+	mov	d4,#10
+	ld.w	d5,[a15]68
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   145                                MOTORFOC_OPENLOOPCAN_VOLTAGE_SCALE);
+	mov	d6,d15
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   146    MotorFoc_OpenLoopCan_PutS16(12U, ctx->vabRef.imag,
+	mov	d4,#12
+	ld.w	d5,[a15]72
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   147                                MOTORFOC_OPENLOOPCAN_VOLTAGE_SCALE);
+	mov	d6,d15
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   148    MotorFoc_OpenLoopCan_PutU16(14U,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   149                                MotorFoc_OpenLoopCan_ClampU16(ctx->Tpwm.pwm_OutU));
+	ld.w	d4,[a15]260
+	call	MotorFoc_OpenLoopCan_ClampU16
+	mov	d4,#14
+	mov	d5,d2
+	call	MotorFoc_OpenLoopCan_PutU16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   150    MotorFoc_OpenLoopCan_PutU16(16U,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   151                                MotorFoc_OpenLoopCan_ClampU16(ctx->Tpwm.pwm_OutV));
+	ld.w	d4,[a15]264
+	call	MotorFoc_OpenLoopCan_ClampU16
+	mov	d4,#16
+	mov	d5,d2
+	call	MotorFoc_OpenLoopCan_PutU16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   152    MotorFoc_OpenLoopCan_PutU16(18U,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   153                                MotorFoc_OpenLoopCan_ClampU16(ctx->Tpwm.pwm_OutW));
+	ld.w	d4,[a15]268
+	call	MotorFoc_OpenLoopCan_ClampU16
+	mov	d4,#18
+	mov	d5,d2
+	call	MotorFoc_OpenLoopCan_PutU16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   154    MotorFoc_OpenLoopCan_PutU16(20U,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   155                                MotorFoc_OpenLoopCan_ClampU16((uint32)ctx->Tpwm.Tpwm));
+	ld.w	d15,[a15]244
+	ftouz	d4,d15
+	call	MotorFoc_OpenLoopCan_ClampU16
+	mov	d4,#20
+	mov	d5,d2
+	call	MotorFoc_OpenLoopCan_PutU16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   156    MotorFoc_OpenLoopCan_PutS16(22U, ctx->i_motor.vdcMax,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   157                                MOTORFOC_OPENLOOPCAN_VDC_SCALE);
+	movh	d15,#16672
+	mov	d4,#22
+	ld.w	d5,[a15]16
+	mov	d6,d15
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   158    MotorFoc_OpenLoopCan_PutS16(24U, MotorFoc_CurrentLoopFaultIuA,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   159                                MOTORFOC_OPENLOOPCAN_CURRENT_SCALE);
+	movh	d8,#17096
+	ld.w	d5,MotorFoc_CurrentLoopFaultIuA
+	mov	d6,d8
+	mov	d4,#24
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   160    MotorFoc_OpenLoopCan_PutS16(26U, MotorFoc_CurrentLoopFaultIvA,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   161                                MOTORFOC_OPENLOOPCAN_CURRENT_SCALE);
+	mov	d6,d8
+	ld.w	d5,MotorFoc_CurrentLoopFaultIvA
+	mov	d4,#26
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   162    MotorFoc_OpenLoopCan_PutS16(28U, MotorFoc_CurrentLoopFaultIwA,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   163                                MOTORFOC_OPENLOOPCAN_CURRENT_SCALE);
+	mov	d6,d8
+	ld.w	d5,MotorFoc_CurrentLoopFaultIwA
+	mov	d4,#28
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   164    MotorFoc_OpenLoopCan_PutS16(30U, MotorFoc_CurrentLoopFaultVdcV,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   165                                MOTORFOC_OPENLOOPCAN_VDC_SCALE);
+	mov	d6,d15
+	ld.w	d5,MotorFoc_CurrentLoopFaultVdcV
+	mov	d4,#30
+	j	MotorFoc_OpenLoopCan_PutS16
+	
+__MotorFoc_OpenLoopCan_BuildPwmPage_function_end:
+	.size	MotorFoc_OpenLoopCan_BuildPwmPage,__MotorFoc_OpenLoopCan_BuildPwmPage_function_end-MotorFoc_OpenLoopCan_BuildPwmPage
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_BuildAdcPage',code
+	.sect	'.text.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_BuildAdcPage'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   166  }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   167  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   168  static void MotorFoc_OpenLoopCan_BuildAdcPage(void)
+; Function MotorFoc_OpenLoopCan_BuildAdcPage
+MotorFoc_OpenLoopCan_BuildAdcPage:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   169  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   170    const MotorCdd_AdcPhysicalType* adc = MotorCdd_GetAdcPhysical();
+	call	MotorCdd_GetAdcPhysical
+	mov.aa	a15,a2
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   171  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   172    MotorFoc_OpenLoopCan_ClearData();
+	call	MotorFoc_OpenLoopCan_ClearData
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   173    MotorFoc_OpenLoopCan_Data[0U] = MOTORFOC_OPENLOOPCAN_PAGE_ADC;
+	movh.a	a12,#@his(MotorFoc_OpenLoopCan_Data)
+	lea	a12,[a12]@los(MotorFoc_OpenLoopCan_Data)
+	mov	d15,#162
+	st.b	[a12],d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   174    MotorFoc_OpenLoopCan_Data[1U] = MotorCdd_AdcCurrentFilterEnabled;
+	ld.bu	d15,MotorCdd_AdcCurrentFilterEnabled
+	st.b	[a12]1,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   175    MotorFoc_OpenLoopCan_Data[2U] = MotorCdd_AdcCurrentFilterReady;
+	ld.bu	d15,MotorCdd_AdcCurrentFilterReady
+	st.b	[a12]2,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   176    MotorFoc_OpenLoopCan_Data[3U] = (uint8)(MotorCdd_AdcCurrentFilterAlpha * 100.0F);
+	movh	d15,#17096
+	ld.w	d0,MotorCdd_AdcCurrentFilterAlpha
+	mul.f	d4,d0,d15
+	call	__f_ftouc
+	st.b	[a12]3,d2
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   177    MotorFoc_OpenLoopCan_PutU16(4U, MotorFoc_OpenLoopCan_Sequence);
+	mov	d4,#4
+	ld.hu	d5,MotorFoc_OpenLoopCan_Sequence
+	call	MotorFoc_OpenLoopCan_PutU16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   178  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   179    MotorFoc_OpenLoopCan_PutS16(6U, adc->iuRaw_A,
+	mov	d4,#6
+	ld.w	d5,[a15]
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   180                                MOTORFOC_OPENLOOPCAN_CURRENT_SCALE);
+	mov	d6,d15
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   181    MotorFoc_OpenLoopCan_PutS16(8U, adc->ivRaw_A,
+	mov	d4,#8
+	ld.w	d5,[a15]4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   182                                MOTORFOC_OPENLOOPCAN_CURRENT_SCALE);
+	mov	d6,d15
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   183    MotorFoc_OpenLoopCan_PutS16(10U, adc->iwRaw_A,
+	mov	d4,#10
+	ld.w	d5,[a15]8
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   184                                MOTORFOC_OPENLOOPCAN_CURRENT_SCALE);
+	mov	d6,d15
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   185    MotorFoc_OpenLoopCan_PutS16(12U, adc->iu_A,
+	mov	d4,#12
+	ld.w	d5,[a15]12
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   186                                MOTORFOC_OPENLOOPCAN_CURRENT_SCALE);
+	mov	d6,d15
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   187    MotorFoc_OpenLoopCan_PutS16(14U, adc->iv_A,
+	mov	d4,#14
+	ld.w	d5,[a15]16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   188                                MOTORFOC_OPENLOOPCAN_CURRENT_SCALE);
+	mov	d6,d15
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   189    MotorFoc_OpenLoopCan_PutS16(16U, adc->iw_A,
+	mov	d4,#16
+	ld.w	d5,[a15]20
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   190                                MOTORFOC_OPENLOOPCAN_CURRENT_SCALE);
+	mov	d6,d15
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   191    MotorFoc_OpenLoopCan_PutS16(18U, (float32)MotorCdd_AdcPhaseOffsetVo1, 1.0F);
+	ld.w	d15,MotorCdd_AdcPhaseOffsetVo1
+	mov	d4,#18
+	itof	d5,d15
+	movh	d15,#16256
+	mov	d6,d15
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   192    MotorFoc_OpenLoopCan_PutS16(20U, (float32)MotorCdd_AdcPhaseOffsetVo2, 1.0F);
+	mov	d6,d15
+	ld.w	d0,MotorCdd_AdcPhaseOffsetVo2
+	mov	d4,#20
+	itof	d5,d0
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   193    MotorFoc_OpenLoopCan_PutS16(22U, (float32)MotorCdd_AdcPhaseOffsetVo3, 1.0F);
+	mov	d6,d15
+	ld.w	d0,MotorCdd_AdcPhaseOffsetVo3
+	mov	d4,#22
+	itof	d5,d0
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   194    MotorFoc_OpenLoopCan_PutS16(24U, adc->vro_V,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   195                                MOTORFOC_OPENLOOPCAN_VOLTAGE_SCALE);
+	movh	d15,#17530
+	mov	d4,#24
+	ld.w	d5,[a15]24
+	mov	d6,d15
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   196    MotorFoc_OpenLoopCan_PutS16(26U, adc->vinv_V,
+	mov	d4,#26
+	ld.w	d5,[a15]28
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   197                                MOTORFOC_OPENLOOPCAN_VOLTAGE_SCALE);
+	mov	d6,d15
+	call	MotorFoc_OpenLoopCan_PutS16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   198    MotorFoc_OpenLoopCan_PutU16(28U,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   199                                (uint16)MotorCdd_GetAdcSyncCompleteCounter());
+	call	MotorCdd_GetAdcSyncCompleteCounter
+	extr.u	d5,d2,#0,#16
+	mov	d4,#28
+	call	MotorFoc_OpenLoopCan_PutU16
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   200    MotorFoc_OpenLoopCan_PutU16(30U, MotorCdd_AdcOffsetSampleCount);
+	ld.hu	d5,MotorCdd_AdcOffsetSampleCount
+	mov	d4,#30
+	j	MotorFoc_OpenLoopCan_PutU16
+	
+__MotorFoc_OpenLoopCan_BuildAdcPage_function_end:
+	.size	MotorFoc_OpenLoopCan_BuildAdcPage,__MotorFoc_OpenLoopCan_BuildAdcPage_function_end-MotorFoc_OpenLoopCan_BuildAdcPage
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_Transmit',code
+	.sect	'.text.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_Transmit'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   201  }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   202  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   203  static void MotorFoc_OpenLoopCan_Transmit(void)
+; Function MotorFoc_OpenLoopCan_Transmit
+MotorFoc_OpenLoopCan_Transmit:	.type	func
+	sub.a	a10,#8
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   204  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   205    PduInfoType pduInfo;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   206    Std_ReturnType result;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   207  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   208    /* BswM can reactivate the configured test group after application init. */
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   209    Com_IpduGroupStop(ComConf_ComIPduGroup_MyECU_oCAN00_Tx_1ae5d671);
+	mov	d4,#1
+	call	Com_IpduGroupStop
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   210  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   211    pduInfo.SduDataPtr = MotorFoc_OpenLoopCan_Data;
+	fcall	.cocofun_2
+	st.a	[a10],a15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   212    pduInfo.SduLength = MOTORFOC_OPENLOOPCAN_PAYLOAD_LENGTH;
+	mov	d15,#32
+	st.b	[a10]4,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   213    result = CanIf_Transmit(CanIfTxPduHnd_msg_MyECU_Lamp_oCAN00_41befc25_Tx,
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   214                            &pduInfo);
+	mov	d4,#0
+	mov.aa	a4,a10
+	call	CanIf_Transmit
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   215    MotorFoc_OpenLoopCan_LastTxResult = result;
+	st.b	MotorFoc_OpenLoopCan_LastTxResult,d2
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   216  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   217    if (result == E_OK)
+	jne	d2,#0,.L11
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   218    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   219      MotorFoc_OpenLoopCan_TxCounter++;
+	ld.w	d15,MotorFoc_OpenLoopCan_TxCounter
+	add	d15,#1
+	st.w	MotorFoc_OpenLoopCan_TxCounter,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   220    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   221    else
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   222    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   223      MotorFoc_OpenLoopCan_TxErrorCounter++;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   224    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   225  }
+	ret
+.L11:
+	ld.w	d15,MotorFoc_OpenLoopCan_TxErrorCounter
+	add	d15,#1
+	st.w	MotorFoc_OpenLoopCan_TxErrorCounter,d15
+	ret
+	
+__MotorFoc_OpenLoopCan_Transmit_function_end:
+	.size	MotorFoc_OpenLoopCan_Transmit,__MotorFoc_OpenLoopCan_Transmit_function_end-MotorFoc_OpenLoopCan_Transmit
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_Init',code
+	.sect	'.text.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_Init'
+	.align	2
+	
+	.global	MotorFoc_OpenLoopCan_Init
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   226  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   227  void MotorFoc_OpenLoopCan_Init(void)
+; Function MotorFoc_OpenLoopCan_Init
+MotorFoc_OpenLoopCan_Init:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   228  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   229    /* The configured test mux PDUs share CAN ID 0x511 with this raw debug frame. */
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   230    Com_IpduGroupStop(ComConf_ComIPduGroup_MyECU_oCAN00_Tx_1ae5d671);
+	mov	d4,#1
+	call	Com_IpduGroupStop
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   231  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   232    MotorFoc_OpenLoopCan_ControlPageOnly = 1U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   233    MotorFoc_OpenLoopCan_LastTxResult = E_NOT_OK;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   234    MotorFoc_OpenLoopCan_TxCounter = 0UL;
+	mov	d0,#0
+	st.w	MotorFoc_OpenLoopCan_TxCounter,d0
+	mov	d15,#1
+	st.b	MotorFoc_OpenLoopCan_ControlPageOnly,d15
+	st.b	MotorFoc_OpenLoopCan_LastTxResult,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   235    MotorFoc_OpenLoopCan_TxErrorCounter = 0UL;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   236    MotorFoc_OpenLoopCan_Page = MOTORFOC_OPENLOOPCAN_PAGE_CONTROL;
+	mov	d15,#160
+	st.b	MotorFoc_OpenLoopCan_Page,d15
+	st.w	MotorFoc_OpenLoopCan_TxErrorCounter,d0
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   237    MotorFoc_OpenLoopCan_Tick = 0U;
+	st.b	MotorFoc_OpenLoopCan_Tick,d0
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   238    MotorFoc_OpenLoopCan_Sequence = 0U;
+	st.h	MotorFoc_OpenLoopCan_Sequence,d0
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   239    MotorFoc_OpenLoopCan_CurrentMode = (uint8)MOTOR_MODE_IDLE;
+	st.b	MotorFoc_OpenLoopCan_CurrentMode,d0
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   240    MotorFoc_OpenLoopCan_ClearData();
+	j	MotorFoc_OpenLoopCan_ClearData
+	
+__MotorFoc_OpenLoopCan_Init_function_end:
+	.size	MotorFoc_OpenLoopCan_Init,__MotorFoc_OpenLoopCan_Init_function_end-MotorFoc_OpenLoopCan_Init
+	; End of function
+	
+	.sdecl	'.text.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_MainFunction',code
+	.sect	'.text.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_MainFunction'
+	.align	2
+	
+	.global	MotorFoc_OpenLoopCan_MainFunction
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   241  }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   242  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   243  void MotorFoc_OpenLoopCan_MainFunction(MotorMode_Type motorMode)
+; Function MotorFoc_OpenLoopCan_MainFunction
+MotorFoc_OpenLoopCan_MainFunction:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   244  {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   245    if (MotorFoc_OpenLoopCan_Enable == 0U)
+	ld.bu	d15,MotorFoc_OpenLoopCan_Enable
+	jne	d15,#0,.L13
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   246    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   247      MotorFoc_OpenLoopCan_Tick = 0U;
+	st.b	MotorFoc_OpenLoopCan_Tick,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   248      MotorFoc_OpenLoopCan_Page = MOTORFOC_OPENLOOPCAN_PAGE_CONTROL;
+	mov	d15,#160
+	st.b	MotorFoc_OpenLoopCan_Page,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   249      return;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   250    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   251  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   252    MotorFoc_OpenLoopCan_CurrentMode = (uint8)motorMode;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   253  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   254    MotorFoc_OpenLoopCan_Tick++;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   255    if (MotorFoc_OpenLoopCan_Tick < MOTORFOC_OPENLOOPCAN_SEND_DIVIDER)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   256    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   257      return;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   258    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   259    MotorFoc_OpenLoopCan_Tick = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   260  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   261    if (MotorFoc_OpenLoopCan_ControlPageOnly != 0U)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   262    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   263      MotorFoc_OpenLoopCan_BuildControlPage();
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   264    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   265    else if (MotorFoc_OpenLoopCan_Page == MOTORFOC_OPENLOOPCAN_PAGE_CONTROL)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   266    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   267      MotorFoc_OpenLoopCan_BuildControlPage();
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   268      MotorFoc_OpenLoopCan_Page = MOTORFOC_OPENLOOPCAN_PAGE_PWM;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   269    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   270    else if (MotorFoc_OpenLoopCan_Page == MOTORFOC_OPENLOOPCAN_PAGE_PWM)
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   271    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   272      MotorFoc_OpenLoopCan_BuildPwmPage();
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   273      MotorFoc_OpenLoopCan_Page = MOTORFOC_OPENLOOPCAN_PAGE_ADC;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   274    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   275    else
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   276    {
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   277      MotorFoc_OpenLoopCan_BuildAdcPage();
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   278      MotorFoc_OpenLoopCan_Page = MOTORFOC_OPENLOOPCAN_PAGE_CONTROL;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   279    }
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   280  
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   281    MotorFoc_OpenLoopCan_Sequence++;
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   282    MotorFoc_OpenLoopCan_Transmit();
+; ..\Appl\Source\CDD\MotorFoc\MotorFoc_OpenLoopCan.c	   283  }
+	ret
+.L13:
+	ld.bu	d15,MotorFoc_OpenLoopCan_Tick
+	st.b	MotorFoc_OpenLoopCan_CurrentMode,d4
+	add	d15,#1
+	st.b	MotorFoc_OpenLoopCan_Tick,d15
+	ld.bu	d15,MotorFoc_OpenLoopCan_Tick
+	jlt.u	d15,#5,.L15
+	mov	d15,#0
+	st.b	MotorFoc_OpenLoopCan_Tick,d15
+	ld.bu	d15,MotorFoc_OpenLoopCan_ControlPageOnly
+	jeq	d15,#0,.L16
+	call	MotorFoc_OpenLoopCan_BuildControlPage
+	j	.L17
+.L15:
+	ret
+.L16:
+	ld.bu	d0,MotorFoc_OpenLoopCan_Page
+	mov	d15,#160
+	jne	d15,d0,.L18
+	call	MotorFoc_OpenLoopCan_BuildControlPage
+	mov	d15,#161
+	j	.L19
+.L18:
+	mov	d15,#161
+	jne	d15,d0,.L20
+	call	MotorFoc_OpenLoopCan_BuildPwmPage
+	mov	d15,#162
+	j	.L21
+.L20:
+	call	MotorFoc_OpenLoopCan_BuildAdcPage
+	mov	d15,#160
+.L19:
+.L21:
+	st.b	MotorFoc_OpenLoopCan_Page,d15
+.L17:
+	ld.hu	d15,MotorFoc_OpenLoopCan_Sequence
+	add	d15,#1
+	st.h	MotorFoc_OpenLoopCan_Sequence,d15
+	j	MotorFoc_OpenLoopCan_Transmit
+	
+__MotorFoc_OpenLoopCan_MainFunction_function_end:
+	.size	MotorFoc_OpenLoopCan_MainFunction,__MotorFoc_OpenLoopCan_MainFunction_function_end-MotorFoc_OpenLoopCan_MainFunction
+	; End of function
+	
+	.sdecl	'.zdata.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_Enable',data
+	.sect	'.zdata.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_Enable'
+	.global	MotorFoc_OpenLoopCan_Enable
+MotorFoc_OpenLoopCan_Enable:	.type	object
+	.size	MotorFoc_OpenLoopCan_Enable,1
+	.byte	1
+	.sdecl	'.zdata.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_ControlPageOnly',data
+	.sect	'.zdata.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_ControlPageOnly'
+	.global	MotorFoc_OpenLoopCan_ControlPageOnly
+MotorFoc_OpenLoopCan_ControlPageOnly:	.type	object
+	.size	MotorFoc_OpenLoopCan_ControlPageOnly,1
+	.byte	1
+	.sdecl	'.zdata.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_LastTxResult',data
+	.sect	'.zdata.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_LastTxResult'
+	.global	MotorFoc_OpenLoopCan_LastTxResult
+MotorFoc_OpenLoopCan_LastTxResult:	.type	object
+	.size	MotorFoc_OpenLoopCan_LastTxResult,1
+	.byte	1
+	.sdecl	'.zdata.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_TxCounter',data
+	.sect	'.zdata.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_TxCounter'
+	.global	MotorFoc_OpenLoopCan_TxCounter
+	.align	2
+MotorFoc_OpenLoopCan_TxCounter:	.type	object
+	.size	MotorFoc_OpenLoopCan_TxCounter,4
+	.space	4
+	.sdecl	'.zdata.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_TxErrorCounter',data
+	.sect	'.zdata.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_TxErrorCounter'
+	.global	MotorFoc_OpenLoopCan_TxErrorCounter
+	.align	2
+MotorFoc_OpenLoopCan_TxErrorCounter:	.type	object
+	.size	MotorFoc_OpenLoopCan_TxErrorCounter,4
+	.space	4
+	.sdecl	'.zdata.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_Page',data
+	.sect	'.zdata.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_Page'
+MotorFoc_OpenLoopCan_Page:	.type	object
+	.size	MotorFoc_OpenLoopCan_Page,1
+	.byte	160
+	.sdecl	'.zdata.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_Tick',data
+	.sect	'.zdata.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_Tick'
+MotorFoc_OpenLoopCan_Tick:	.type	object
+	.size	MotorFoc_OpenLoopCan_Tick,1
+	.space	1
+	.sdecl	'.zdata.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_Sequence',data
+	.sect	'.zdata.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_Sequence'
+	.align	2
+MotorFoc_OpenLoopCan_Sequence:	.type	object
+	.size	MotorFoc_OpenLoopCan_Sequence,2
+	.space	2
+	.sdecl	'.zdata.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_CurrentMode',data
+	.sect	'.zdata.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_CurrentMode'
+MotorFoc_OpenLoopCan_CurrentMode:	.type	object
+	.size	MotorFoc_OpenLoopCan_CurrentMode,1
+	.space	1
+	.sdecl	'.bss.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_Data',data
+	.sect	'.bss.MotorFoc_OpenLoopCan.MotorFoc_OpenLoopCan_Data'
+MotorFoc_OpenLoopCan_Data:	.type	object
+	.size	MotorFoc_OpenLoopCan_Data,32
+	.space	32
+	.calls	'MotorFoc_OpenLoopCan_BuildAdcPage','__f_ftouc'
+	.calls	'MotorFoc_OpenLoopCan_PutS16','MotorFoc_OpenLoopCan_PackS16'
+	.calls	'MotorFoc_OpenLoopCan_PutS16','MotorFoc_OpenLoopCan_PutU16'
+	.calls	'MotorFoc_OpenLoopCan_BuildControlPage','MotorCdd_GetAdcPhysical'
+	.calls	'MotorFoc_OpenLoopCan_BuildControlPage','MotorFoc_OpenLoopCan_ClearData'
+	.calls	'MotorFoc_OpenLoopCan_BuildControlPage','MotorFoc_OpenLoopCan_PutU16'
+	.calls	'MotorFoc_OpenLoopCan_BuildControlPage','MotorFoc_OpenLoopCan_PutS16'
+	.calls	'MotorFoc_OpenLoopCan_BuildPwmPage','MotorFoc_OpenLoopCan_ClearData'
+	.calls	'MotorFoc_OpenLoopCan_BuildPwmPage','MotorFoc_OpenLoopCan_PutU16'
+	.calls	'MotorFoc_OpenLoopCan_BuildPwmPage','MotorFoc_OpenLoopCan_PutS16'
+	.calls	'MotorFoc_OpenLoopCan_BuildPwmPage','MotorFoc_OpenLoopCan_ClampU16'
+	.calls	'MotorFoc_OpenLoopCan_BuildAdcPage','MotorCdd_GetAdcPhysical'
+	.calls	'MotorFoc_OpenLoopCan_BuildAdcPage','MotorFoc_OpenLoopCan_ClearData'
+	.calls	'MotorFoc_OpenLoopCan_BuildAdcPage','MotorFoc_OpenLoopCan_PutU16'
+	.calls	'MotorFoc_OpenLoopCan_BuildAdcPage','MotorFoc_OpenLoopCan_PutS16'
+	.calls	'MotorFoc_OpenLoopCan_BuildAdcPage','MotorCdd_GetAdcSyncCompleteCounter'
+	.calls	'MotorFoc_OpenLoopCan_Transmit','Com_IpduGroupStop'
+	.calls	'MotorFoc_OpenLoopCan_Transmit','CanIf_Transmit'
+	.calls	'MotorFoc_OpenLoopCan_Init','Com_IpduGroupStop'
+	.calls	'MotorFoc_OpenLoopCan_Init','MotorFoc_OpenLoopCan_ClearData'
+	.calls	'MotorFoc_OpenLoopCan_MainFunction','MotorFoc_OpenLoopCan_BuildControlPage'
+	.calls	'MotorFoc_OpenLoopCan_MainFunction','MotorFoc_OpenLoopCan_BuildPwmPage'
+	.calls	'MotorFoc_OpenLoopCan_MainFunction','MotorFoc_OpenLoopCan_BuildAdcPage'
+	.calls	'MotorFoc_OpenLoopCan_MainFunction','MotorFoc_OpenLoopCan_Transmit'
+	.calls	'MotorFoc_OpenLoopCan_PutU16','.cocofun_2'
+	.calls	'MotorFoc_OpenLoopCan_ClearData','.cocofun_2'
+	.calls	'MotorFoc_OpenLoopCan_BuildPwmPage','.cocofun_2'
+	.calls	'MotorFoc_OpenLoopCan_Transmit','.cocofun_2'
+	.calls	'MotorFoc_OpenLoopCan_PackS16','',0
+	.calls	'MotorFoc_OpenLoopCan_ClampU16','',0
+	.calls	'MotorFoc_OpenLoopCan_PutU16','',0
+	.calls	'.cocofun_2','',0
+	.calls	'MotorFoc_OpenLoopCan_PutS16','',0
+	.calls	'MotorFoc_OpenLoopCan_ClearData','',0
+	.calls	'MotorFoc_OpenLoopCan_BuildControlPage','',0
+	.calls	'MotorFoc_OpenLoopCan_BuildPwmPage','',0
+	.calls	'MotorFoc_OpenLoopCan_BuildAdcPage','',0
+	.calls	'MotorFoc_OpenLoopCan_Transmit','',8
+	.calls	'MotorFoc_OpenLoopCan_Init','',0
+	.extern	CanIf_Transmit
+	.extern	Com_IpduGroupStop
+	.extern	MotorControll_SensorMechanicalRpm
+	.extern	MotorControll_IdRefOut
+	.extern	MotorControll_IqRefOut
+	.extern	MotorControll_GateDriverState
+	.extern	MotorControll_GateDriverOutputEnabled
+	.extern	MotorCdd_FocContext
+	.extern	MotorCdd_AdcPhaseOffsetVo1
+	.extern	MotorCdd_AdcPhaseOffsetVo2
+	.extern	MotorCdd_AdcPhaseOffsetVo3
+	.extern	MotorCdd_AdcCurrentOffsetReady
+	.extern	MotorCdd_AdcOffsetSampleCount
+	.extern	MotorCdd_AdcCurrentFilterEnabled
+	.extern	MotorCdd_AdcCurrentFilterReady
+	.extern	MotorCdd_AdcCurrentFilterAlpha
+	.extern	MotorCdd_GetAdcPhysical
+	.extern	MotorCdd_GetAdcSyncCompleteCounter
+	.extern	MotorFoc_CurrentLoopFault
+	.extern	MotorFoc_CurrentLoopFaultReason
+	.extern	MotorFoc_CurrentLoopFaultIuA
+	.extern	MotorFoc_CurrentLoopFaultIvA
+	.extern	MotorFoc_CurrentLoopFaultIwA
+	.extern	MotorFoc_CurrentLoopFaultVdcV
+	.extern	MotorFoc_OpenLoop_AngleRaw
+	.extern	__f_ftouc
+	.calls	'MotorFoc_OpenLoopCan_MainFunction','',0
+
+
+	; Module end

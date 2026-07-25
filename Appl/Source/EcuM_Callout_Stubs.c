@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Callout_Stubs.c
- *   Generation Time: 2024-07-15 14:43:59
+ *   Generation Time: 2024-07-25 16:06:03
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -88,17 +88,34 @@
 #include "Det.h" 
 #include "PduR.h" 
 #include "Rte_Main.h" 
+#include "IpduM.h" 
 #include "Mcu.h" 
 #include "Port.h" 
-#include "Spi.h" 
 #include "Adc.h" 
 #include "Pwm_17_GtmCcu6.h" 
 #include "Dma.h" 
+#include "Fls_17_Dmu.h" 
+#include "Fee.h" 
+#include "Irq.h" 
+#include "Spi.h" 
 
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK User Includes>                          DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
+#include "IfxQspi_bf.h"
+#include "IfxQspi_reg.h"
+#include "IfxSrc_reg.h"
+
+/* Keep inside this USERBLOCK — DaVinci Generate wipes code outside the markers. */
+static void Appl_Qspi2FlushRxFifo(void)
+{
+  while (MODULE_QSPI2.STATUS.B.RXFIFOLEVEL > 0U)
+  {
+    (void)MODULE_QSPI2.RXEXIT.U;
+  }
+  MODULE_QSPI2.FLAGSCLEAR.U = (1U << IFX_QSPI_FLAGSCLEAR_RXC_OFF);
+}
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
@@ -260,6 +277,7 @@ FUNC(void, ECUM_CODE) EcuM_AL_DriverInitZero(void)
   PduR_InitMemory();
   Rte_InitMemory();
   BswM_PreInit( BswM_Config_Ptr );
+  IpduM_InitMemory();
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_AL_DriverInitZero>                 DO NOT CHANGE THIS COMMENT!
@@ -282,16 +300,41 @@ FUNC(void, ECUM_CODE) EcuM_AL_DriverInitOne(void)
   while (Mcu_GetPllStatus() != MCU_PLL_LOCKED);
   Mcu_DistributePllClock();
   Port_Init( &Port_Config );
-  Spi_Init( &Spi_Config );
   Adc_Init( &Adc_Config );
   Pwm_17_GtmCcu6_Init( &Pwm_17_GtmCcu6_Config );
   Dma_Init( &Dma_Config );
+  IpduM_Init( IpduM_Config_Ptr );
+  PduR_PreInit( PduR_Config_Ptr );
+  Fls_17_Dmu_Init( &Fls_17_Dmu_Config );
+  Fee_Init( &Fee_Config );
+  IrqDma_Init();
+  IrqSpi_Init();
+  Spi_Init( &Spi_Config );
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_AL_DriverInitOne>                  DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
-  /* Body is in Appl (not generated). Re-add this one line after EcuM regen if wiped. */
+  /* Spi_Init does not drain QSPI2 RX FIFO; stale entries block Async+DMA (RXFIFOLEVEL=4). */
+  Appl_Qspi2FlushRxFifo();
 
+  /* Level-2: Spi_Init leaves POLLING; interrupt mode required for DMA complete IRQ. */
+  (void)Spi_SetAsyncMode(SPI_INTERRUPT_MODE);
+
+  /* Irq*_Init clears SRE ??? enable QSPI2 DMA request + DMA/PT/ERR service requests. */
+  SRC_QSPI2TX.B.SRE = 1U;
+  SRC_QSPI2RX.B.SRE = 1U;
+  SRC_QSPI2ERR.B.SRE = 1U;
+  SRC_QSPI2PT.B.SRE = 1U;
+  SRC_DMACH4.B.SRE = 1U;
+  SRC_DMACH5.B.SRE = 1U;
+
+#if (ADC_STARTUP_CALIB_API == STD_ON)
+  (void)Adc_TriggerStartupCal();
+  while (Adc_GetStartupCalStatus() != ADC_STARTUP_CALIB_OVER)
+  {
+    /* Keep the ADC result path inactive until calibration has completed. */
+  }
+#endif
 
   return;
 /**********************************************************************************************************************

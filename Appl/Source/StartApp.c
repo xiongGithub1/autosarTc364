@@ -42,6 +42,9 @@
  *********************************************************************************************************************/
 
 #include "Rte_StartApp.h"
+#include "EcuM.h"
+#include "EcuM_Cfg.h"
+#include "ComM.h"
 #include "ComM_Cfg.h"
 #include "Dio.h"
 #include "Dio_Cfg.h"
@@ -55,6 +58,7 @@ uint32 StartApp_Cyclic250msCounter = 0U;
 #include "MotorCdd_Foc.h"
 #include "MotorZeroCal.h"
 #include "Tle9180_Driver.h"
+#include "Tle5012bd_Driver.h"
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of include and declaration area >>          DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -142,8 +146,19 @@ FUNC(void, StartApp_CODE) StartApp_Cyclic1ms(void) /* PRQA S 0624, 3206 */ /* MD
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
  * Symbol: StartApp_Cyclic1ms
  *********************************************************************************************************************/
-  /* Sync SPI 5012 + publish angle_cache; 9180 Init Sync (Default_Appl_Task). MotorTask: no SPI. */
-  MotorCdd_FocUpdateAngleCacheFromSensor();
+  /* Bring up TLE5012 SSC once (replaces need to unplug/replug angle cable). */
+  if (Tle5012bd_Driver_GetState() == TLE5012BD_STATE_WAIT_SSC)
+  {
+    if (StartApp_Cyclic1msCounter >= 100U)
+    {
+      (void)Tle5012bd_Driver_SscActivate();
+    }
+  }
+
+  /* 9180 + ZeroCal in 1 ms. 5012 angle is in FocFastLoop (ANGLE_SPI_IN_FASTLOOP=1). */
+#if (MOTORCDD_FOC_ANGLE_SPI_IN_FASTLOOP == 0U)
+  MotorCdd_FocServiceAngleSpi1ms();
+#endif
   Tle9180_Driver_MainFunction();
   MotorZeroCal_MainFunction();
 /**********************************************************************************************************************

@@ -1,0 +1,194 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc12880a --dep-file=BSW364\\Os\\Implementation\\.Os_Hal_Compiler_HighTec.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=BSW364\\Os\\Implementation\\Os_Hal_Compiler_HighTec.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW364\\Os\\Implementation\\Os_Hal_Compiler_HighTec.src ..\\BSW364\\Os\\Implementation\\Os_Hal_Compiler_HighTec.c"
+	.compiler_name		"ctc"
+	;source	'..\\BSW364\\Os\\Implementation\\Os_Hal_Compiler_HighTec.c'
+
+	
+$TC162
+	
+
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	     1  /**********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	     2   *  COPYRIGHT
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	     4   *  \verbatim
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	     5   *  Copyright (c) 2022 by Vector Informatik GmbH.                                              All rights reserved.
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	     6   *
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    10   *  \endverbatim
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    11   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    12   *  FILE DESCRIPTION
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    13   *  -----------------------------------------------------------------------------------------------------------------*/
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    14  /**
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    15   *  \addtogroup Os_Hal_Compiler
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    16   *  \{
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    17   *
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    18   *  \file
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    19   *  \brief        Compiler abstraction for HighTec compiler.
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    20   *  \details
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    21   *  Internal comment removed.
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    22   *
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    23   *
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    24   *
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    25   *
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    26   *
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    27   *
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    28   *
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    29   *
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    30   *
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    31   *
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    32   *
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    33   *
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    34   *********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    35  
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    36  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    37   *  REVISION HISTORY
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    38   *  --------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    39   *  Refer to Os_Hal_Os.h.
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    40   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    41  
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    42                                                                                                                          /* PRQA S 0777 EOF */ /* MD_MSR_Rule5.1 */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    43  
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    44  #define OS_HAL_COMPILER_HIGHTEC_SOURCE
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    45  
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    46  # ifdef CDK_CHECK_MISRA                                                                                                 /* COV_OS_STATICCODEANALYSIS */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    47  #  ifndef OS_STATIC_CODE_ANALYSIS                                                                                       /* COV_OS_STATICCODEANALYSIS */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    48  #    define OS_STATIC_CODE_ANALYSIS
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    49  #  endif
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    50  # endif
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    51  
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    52  
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    53  #ifndef OS_STATIC_CODE_ANALYSIS                                                                                         /* COV_OS_STATICCODEANALYSIS */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    54  
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    55  /**********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    56   *  INCLUDES
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    57   *********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    58  /* AUTOSAR includes */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    59  # include "Std_Types.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    60  
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    61  /* Os hal module dependencies */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    62  # include "Os_Hal_Compiler.h"
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    63  
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    64  # if defined (OS_CFG_COMPILER_GNU)
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    65  
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    66  /**********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    67   *  GLOBAL CONSTANT MACROS
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    68   *********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    69  
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    70  /**********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    71   *  GLOBAL FUNCTION MACROS
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    72   *********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    73  
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    74  /**********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    75   *  GLOBAL DATA TYPES AND STRUCTURES
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    76   *********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    77  
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    78  
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    79  /**********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    80   *  GLOBAL DATA PROTOTYPES
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    81   *********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    82  
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    83  
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    84  /**********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    85   *  GLOBAL FUNCTION PROTOTYPES
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    86   *********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    87  # define OS_START_SEC_CODE
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    88  # include "Os_MemMap_OsCode.h"                                                                                           /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    89  
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    90  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    91   *  Os_Hal_UnhandledExceptionHandler()
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    92   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    93  /*! \brief         branch island for all exception vectors without user function (unhandled exception)
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    94   *                 it switches the stack and calls Os_Hal_UnhandledExc
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    95   *                 the parameter passed to Os_Hal_UnhandledExc are
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    96   *                    D4: exception class and TIN (already prepared by exception vector handler)
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    97   *                    D5: current PCXI value
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    98   *                    A4: causing address (potential return address)
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	    99   *                    D6: current Stack memory region lower
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   100   *                    D7: current Stack memory region upper
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   101   *  \context      EXCEPTION VECTOR
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   102   *  \reentrant    FALSE
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   103   *  \synchronous  TRUE
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   104   *  \pre          -
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   105   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   106  OS_FUNC_ATTRIBUTE_DECLARATION(void, OS_CODE, OS_HAL_NOINLINE, Os_Hal_UnhandledExceptionHandler, (void));
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   107  OS_FUNC_ATTRIBUTE_DECLARATION(void, OS_CODE, OS_HAL_NOINLINE, Os_Hal_UnhandledExceptionHandler, (void))
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   108  {
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   109    __asm ("mfcr %d6, " OS_HAL_EXPAND(OS_HAL_COREMPU_DPR_LOW0));      /* prepare parameters for C-Function; D6 = OS_HAL_COREMPU_DPR_LOW0 */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   110    __asm ("mfcr %d7, " OS_HAL_EXPAND(OS_HAL_COREMPU_DPR_UPPER0));    /* prepare parameters for C-Function; D7 = OS_HAL_COREMPU_DPR_UPPER0 */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   111    __asm ("mfcr %d14, " OS_HAL_EXPAND(OS_HAL_CORE_ID_REGISTER));     /* get core ID; D14 = Core ID */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   112    __asm ("and  %d14, %d14, 7");                                     /* mask core ID */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   113    __asm ("movh.a %a4, hi:OsCfg_Stack_KernelStacks");                /* get address of the correct kernal stack (indexed by core ID) */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   114    __asm ("lea %a4,[%a4]lo:OsCfg_Stack_KernelStacks");               /* get address of the correct kernal stack (indexed by core ID); A4 = &OsCfg_Stack_KernelStacks */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   115    __asm ("addsc.a %a15,%a4,%d14,2");                                /* choose the correct element out of the array; A15 = &OsCfg_Stack_KernelStacks[Core ID] */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   116    __asm ("ld.a %a15,[%a15]");                                       /* get the pointer to the Os_Hal_ContextStackConfigType struct */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   117    __asm ("ld.w %d12,[%a15]");                                       /* get the content of Stack.StackRegionStart; D12 = Stack.StackRegionStart */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   118    __asm ("mtcr " OS_HAL_EXPAND(OS_HAL_COREMPU_DPR_LOW0)", %d12");   /* OS_HAL_COREMPU_DPR_LOW0 = D12 */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   119    __asm ("ld.w %d12,[%a15]4");                                      /* get the content of Stack.StackRegionEnd;   D12 = Stack.StackRegionEnd */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   120    __asm ("mtcr " OS_HAL_EXPAND(OS_HAL_COREMPU_DPR_UPPER0)", %d12"); /* OS_HAL_COREMPU_DPR_UPPER0 = D12 */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   121    __asm ("isync");
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   122    __asm ("mov.a %a10, %d12");                                       /* SP = Stack.StackRegionEnd; stack switch */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   123    __asm ("mfcr %d5, " OS_HAL_EXPAND(OS_HAL_PCXI_OFFSET));           /* prepare parameters for C-Function; D5 = PCXI */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   124    __asm ("mov.aa %a4, %a11");                                       /* prepare parameters for C-Function; A4 = Return Address (A11) */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   125    __asm ("call Os_Hal_UnhandledExc");                               /* call the C-Function; the stack MPU regions are restored within the C-Function */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   126    __asm ("rslcx");                                                  /* restore lower context saved exception vector handler */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   127    __asm ("rfe");                                                    /* return from exception; old stackpointer is restored with this instruction */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   128  }
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   129  
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   130  /***********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   131   *  Os_Hal_MemFaultExceptionHandler()
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   132   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   133  /*! \brief         branch island for mem fault exception vector
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   134   *                 it switches the stack and calls Os_Hal_MemFault
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   135   *                 the parameter passed to Os_Hal_MemFault are
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   136   *                    D4: exception class and TIN (already prepared by exception vector handler)
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   137   *                    D5: current PCXI value
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   138   *                    A4: causing address (potential return address)
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   139   *                    D6: current Stack memory region lower
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   140   *                    D7: current Stack memory region upper
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   141   *  \context      EXCEPTION VECTOR
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   142   *  \reentrant    FALSE
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   143   *  \synchronous  TRUE
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   144   *  \pre          -
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   145   **********************************************************************************************************************/
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   146  OS_FUNC_ATTRIBUTE_DECLARATION(void, OS_CODE, OS_HAL_NOINLINE, Os_Hal_MemFaultExceptionHandler, (void));
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   147  OS_FUNC_ATTRIBUTE_DECLARATION(void, OS_CODE, OS_HAL_NOINLINE, Os_Hal_MemFaultExceptionHandler, (void))
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   148  {
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   149    __asm ("mfcr %d6, " OS_HAL_EXPAND(OS_HAL_COREMPU_DPR_LOW0));      /* prepare parameters for C-Function; D6 = OS_HAL_COREMPU_DPR_LOW0 */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   150    __asm ("mfcr %d7, " OS_HAL_EXPAND(OS_HAL_COREMPU_DPR_UPPER0));    /* prepare parameters for C-Function; D7 = OS_HAL_COREMPU_DPR_UPPER0 */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   151    __asm ("mfcr %d14, " OS_HAL_EXPAND(OS_HAL_CORE_ID_REGISTER));     /* get core ID; D14 = Core ID */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   152    __asm ("and  %d14, %d14, 7");                                     /* mask core ID */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   153    __asm ("movh.a %a4, hi:OsCfg_Stack_KernelStacks");                /* get address of the correct kernal stack (indexed by core ID) */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   154    __asm ("lea %a4,[%a4]lo:OsCfg_Stack_KernelStacks");               /* get address of the correct kernal stack (indexed by core ID); A4 = &OsCfg_Stack_KernelStacks */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   155    __asm ("addsc.a %a15,%a4,%d14,2");                                /* choose the correct element out of the array; A15 = &OsCfg_Stack_KernelStacks[Core ID] */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   156    __asm ("ld.a %a15,[%a15]");                                       /* get the pointer to the Os_Hal_ContextStackConfigType struct */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   157    __asm ("ld.w %d12,[%a15]");                                       /* get the content of Stack.StackRegionStart; D12 = Stack.StackRegionStart */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   158    __asm ("mtcr " OS_HAL_EXPAND(OS_HAL_COREMPU_DPR_LOW0)", %d12");   /* OS_HAL_COREMPU_DPR_LOW0 = D12 */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   159    __asm ("ld.w %d12,[%a15]4");                                      /* get the content of Stack.StackRegionEnd;   D12 = Stack.StackRegionEnd */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   160    __asm ("mtcr " OS_HAL_EXPAND(OS_HAL_COREMPU_DPR_UPPER0)", %d12"); /* OS_HAL_COREMPU_DPR_UPPER0 = D12 */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   161    __asm ("isync");
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   162    __asm ("mov.a %a10, %d12");                                       /* SP = Stack.StackRegionEnd; stack switch */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   163    __asm ("mfcr %d5, " OS_HAL_EXPAND(OS_HAL_PCXI_OFFSET));           /* prepare parameters for C-Function; D5 = PCXI */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   164    __asm ("mov.aa %a4, %a11");                                       /* prepare parameters for C-Function; A4 = Return Address (A11) */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   165    __asm ("call Os_Hal_MemFault");                                   /* call the C-Function; the stack MPU regions are restored within the C-Function */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   166    __asm ("rslcx");                                                  /* restore lower context saved at function start */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   167    __asm ("rfe");                                                    /* return from exception; old stackpointer is restored with this instruction */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   168  }
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   169  
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   170  # define OS_STOP_SEC_CODE
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   171  # include "Os_MemMap_OsCode.h"                                                                                           /* PRQA S 5087 */ /* MD_MSR_MemMap */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   172  
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   173  # endif /* if defined (OS_CFG_COMPILER_GNU) */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   174  
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   175  #endif /* #ifndef OS_STATIC_CODE_ANALYSIS */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   176  
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   177  /*!
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   178   * \}
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   179   */
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   180  /**********************************************************************************************************************
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   181   *  END OF FILE: Os_Hal_Compiler_HighTec.c
+; ..\BSW364\Os\Implementation\Os_Hal_Compiler_HighTec.c	   182   *********************************************************************************************************************/
+
+	; Module end

@@ -8,16 +8,21 @@
 #define MOTORFOC_PWM_DUTY_MAX      (0x8000U)
 #define MOTORFOC_SQRT3_3           (0.5773502691896257645F)
 #define MOTORFOC_SQRT3             (1.73205078F)
-#define MOTORFOC_VDC_MIN_RUN    (6.0F)
+#define MOTORFOC_VDC_MIN_RUN_DEFAULT    (6.0F)
 #define MOTORFOC_CURRENT_MAX_A_DEFAULT  (20.0F)
-#define MOTORFOC_CURRENT_STARTUP_BLANKING_COUNT_DEFAULT    (3U)
-#define MOTORFOC_CURRENT_OVERCURRENT_CONFIRM_COUNT_DEFAULT (3U)
+#define MOTORFOC_CURRENT_STARTUP_BLANKING_COUNT_DEFAULT    (100U)
+#define MOTORFOC_CURRENT_UNDERVOLT_CONFIRM_COUNT_DEFAULT   (20U)
+#define MOTORFOC_CURRENT_OVERCURRENT_CONFIRM_COUNT_DEFAULT (10U)
 #define MOTORFOC_ZERO_CURRENT_REFERENCE_A                  (0.001F)
 
 volatile float32 MotorFoc_CurrentLoopMaxCurrentA = MOTORFOC_CURRENT_MAX_A_DEFAULT;
+volatile float32 MotorFoc_CurrentLoopMinVdcRunV = MOTORFOC_VDC_MIN_RUN_DEFAULT;
 volatile uint16 MotorFoc_CurrentLoopStartupBlankingCount =
     MOTORFOC_CURRENT_STARTUP_BLANKING_COUNT_DEFAULT;
 volatile uint16 MotorFoc_CurrentLoopStartupBlankingLeft = 0U;
+volatile uint16 MotorFoc_CurrentLoopUndervoltConfirmCount =
+    MOTORFOC_CURRENT_UNDERVOLT_CONFIRM_COUNT_DEFAULT;
+volatile uint16 MotorFoc_CurrentLoopUndervoltCounter = 0U;
 volatile uint16 MotorFoc_CurrentLoopOverCurrentConfirmCount =
     MOTORFOC_CURRENT_OVERCURRENT_CONFIRM_COUNT_DEFAULT;
 volatile uint16 MotorFoc_CurrentLoopOverCurrentCounter = 0U;
@@ -204,6 +209,46 @@ static uint8 MotorFoc_CheckOverCurrentFault(MotorFoc_ContextType* ctx)
   }
 
   if (MotorFoc_CurrentLoopOverCurrentCounter >= confirmCount)
+  {
+    return 1U;
+  }
+
+  return 0U;
+}
+
+static uint8 MotorFoc_CheckUndervoltFault(MotorFoc_ContextType* ctx)
+{
+  uint16 confirmCount = MotorFoc_CurrentLoopUndervoltConfirmCount;
+  float32 minVdc = MotorFoc_CurrentLoopMinVdcRunV;
+
+  if (MotorFoc_CurrentLoopStartupBlankingLeft > 0U)
+  {
+    MotorFoc_CurrentLoopUndervoltCounter = 0U;
+    return 0U;
+  }
+
+  if (minVdc < 0.0F)
+  {
+    minVdc = 0.0F;
+  }
+
+  if (ctx->i_motor.vdc >= minVdc)
+  {
+    MotorFoc_CurrentLoopUndervoltCounter = 0U;
+    return 0U;
+  }
+
+  if (confirmCount == 0U)
+  {
+    confirmCount = 1U;
+  }
+
+  if (MotorFoc_CurrentLoopUndervoltCounter < confirmCount)
+  {
+    MotorFoc_CurrentLoopUndervoltCounter++;
+  }
+
+  if (MotorFoc_CurrentLoopUndervoltCounter >= confirmCount)
   {
     return 1U;
   }
@@ -468,7 +513,7 @@ void MotorFoc_RunCurrentLoop(MotorFoc_ContextType* ctx)
     return;
   }
 
-  if (ctx->i_motor.vdc < MOTORFOC_VDC_MIN_RUN)
+  if (MotorFoc_CheckUndervoltFault(ctx) != 0U)
   {
     MotorFoc_SetFault(ctx, MOTORFOC_CURRENT_FAULT_UNDERVOLT);
     MotorFoc_CurrentLoopStop(ctx);
@@ -524,6 +569,7 @@ void MotorFoc_CurrentLoopClearFault(void)
 {
   MotorFoc_CurrentLoopFault = 0U;
   MotorFoc_CurrentLoopFaultReason = MOTORFOC_CURRENT_FAULT_NONE;
+  MotorFoc_CurrentLoopUndervoltCounter = 0U;
   MotorFoc_CurrentLoopOverCurrentCounter = 0U;
   MotorFoc_CurrentLoopFaultIuA = 0.0F;
   MotorFoc_CurrentLoopFaultIvA = 0.0F;
@@ -534,5 +580,6 @@ void MotorFoc_CurrentLoopClearFault(void)
 void MotorFoc_CurrentLoopArmStartupBlanking(void)
 {
   MotorFoc_CurrentLoopStartupBlankingLeft = MotorFoc_CurrentLoopStartupBlankingCount;
+  MotorFoc_CurrentLoopUndervoltCounter = 0U;
   MotorFoc_CurrentLoopOverCurrentCounter = 0U;
 }

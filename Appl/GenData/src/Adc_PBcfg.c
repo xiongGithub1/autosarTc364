@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 13.0.0                                                         **
 **                                                                            **
-**  DATE, TIME: 2024-07-15, 16:43:11            !!!IGNORE-LINE!!!             **
+**  DATE, TIME: 2024-07-25, 16:05:57            !!!IGNORE-LINE!!!             **
 **                                                                            **
 **  GENERATOR : Build b191017-0938              !!!IGNORE-LINE!!!             **
 **                                                                            **
@@ -295,9 +295,9 @@ static const Adc_GroupCfgType Adc_kHwUnit0Grp_Config[1]=
     /*Bit Mask for all the result registers configured for the group*/
     0x0003U,
     /*Bit Mask for all the analog channels configured for synchronous conversion*/
-    0x0010U,
+    0x0012U,
     /*Bit Mask for all the result registers configured for synchronous conversion*/
-    0x0001U,
+    0x0003U,
     ADC_TRIGG_SRC_HW,
     ADC_CONV_MODE_ONESHOT,
     ADC_ACCESS_MODE_SINGLE,
@@ -611,7 +611,7 @@ static const Adc_ChannelCfgType Adc_kHwUnit0Ch_Config[2]=
 {
 
   {
-    0x00000000U, /*Configuration value for the G0CHCTR1 register*/
+    0x00000400U, /*Configuration value for the G0CHCTR1 register*/
     0x00000000U, /*Configuration value for the G0BOUND register*/
     1U, /*Analog Channel number for the corresponding Logical Channel*/
     0U /*Limit Check channel or not */

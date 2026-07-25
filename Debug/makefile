@@ -28,14 +28,20 @@ all :
 -include "BSW364\Det\Implementation\subdir.mk"
 -include "BSW364\E2EXf\Implementation\subdir.mk"
 -include "BSW364\EcuM\Implementation\subdir.mk"
+-include "BSW364\IpduM\Implementation\subdir.mk"
 -include "BSW364\Mcal_Tc3xx\Implementation\subdir.mk"
+-include "BSW364\MemIf\Implementation\subdir.mk"
+-include "BSW364\NvM\Implementation\subdir.mk"
 -include "BSW364\Os\Implementation\subdir.mk"
 -include "BSW364\PduR\Implementation\subdir.mk"
 -include "BSW364\Sbc_30_Tlf35584\Implementation\subdir.mk"
 -include "BSW364\VStdLib\Implementation\subdir.mk"
 -include "MCAL364\Adc\ssc\src\subdir.mk"
+-include "MCAL364\Crc\ssc\src\subdir.mk"
 -include "MCAL364\Dio\ssc\src\subdir.mk"
 -include "MCAL364\Dma\ssc\src\subdir.mk"
+-include "MCAL364\Fee\ssc\src\subdir.mk"
+-include "MCAL364\Fls_17_Dmu\ssc\src\subdir.mk"
 -include "MCAL364\Irq\Adc_Irq\subdir.mk"
 -include "MCAL364\Irq\Dma_Irq\subdir.mk"
 -include "MCAL364\Irq\Spi_Irq\subdir.mk"
@@ -65,13 +71,6 @@ $(EXT_LIBRARIES) : .dummy
 
 GENERATED_FILES += "last364.elf" "last364*.sre" "last364*.hex" "last364.map*" "last364.mdf" ".last364.elf.opt" ".last364.elf.d"
 -include "..\makefile.targets"
-
-
-all : cleanup_cache
-
-cleanup_cache: $(OBJ_FILES)
-	@echo Cleaning up compiler cache
-	@"${PRODDIR}\bin\expiretc" --days=7 "E:\workFiles\TC367\TC367\workspace\last364\.cache"
 
 
 clean : ".clean.opt"

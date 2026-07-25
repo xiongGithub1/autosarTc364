@@ -106,6 +106,8 @@
  *  Rte_Runnable_MotorControll_MotorControll_Init_Start
  *  Rte_Runnable_MotorControll_MotorControll_MainFunction_Return
  *  Rte_Runnable_MotorControll_MotorControll_MainFunction_Start
+ *  Rte_Runnable_NvM_NvM_MainFunction_Return
+ *  Rte_Runnable_NvM_NvM_MainFunction_Start
  *  Rte_Runnable_Os_OsCore0_swc_GetCounterValue_Return
  *  Rte_Runnable_Os_OsCore0_swc_GetCounterValue_Start
  *  Rte_Runnable_Os_OsCore0_swc_GetElapsedValue_Return
@@ -216,6 +218,8 @@
  *  SchM_EnterHook_Com_COM_EXCLUSIVE_AREA_RX_Start
  *  SchM_EnterHook_Com_COM_EXCLUSIVE_AREA_TX_Return
  *  SchM_EnterHook_Com_COM_EXCLUSIVE_AREA_TX_Start
+ *  SchM_EnterHook_Crc_CriticalSection_Return
+ *  SchM_EnterHook_Crc_CriticalSection_Start
  *  SchM_EnterHook_Det_DET_EXCLUSIVE_AREA_0_Return
  *  SchM_EnterHook_Det_DET_EXCLUSIVE_AREA_0_Start
  *  SchM_EnterHook_Dma_ChEventStatus_Return
@@ -244,6 +248,20 @@
  *  SchM_EnterHook_EcuM_ECUM_EXCLUSIVE_AREA_2_Start
  *  SchM_EnterHook_EcuM_ECUM_EXCLUSIVE_AREA_3_Return
  *  SchM_EnterHook_EcuM_ECUM_EXCLUSIVE_AREA_3_Start
+ *  SchM_EnterHook_Fls_17_Dmu_Erase_Return
+ *  SchM_EnterHook_Fls_17_Dmu_Erase_Start
+ *  SchM_EnterHook_Fls_17_Dmu_Init_Return
+ *  SchM_EnterHook_Fls_17_Dmu_Init_Start
+ *  SchM_EnterHook_Fls_17_Dmu_Main_Return
+ *  SchM_EnterHook_Fls_17_Dmu_Main_Start
+ *  SchM_EnterHook_Fls_17_Dmu_ResumeErase_Return
+ *  SchM_EnterHook_Fls_17_Dmu_ResumeErase_Start
+ *  SchM_EnterHook_Fls_17_Dmu_UserContentCount_Return
+ *  SchM_EnterHook_Fls_17_Dmu_UserContentCount_Start
+ *  SchM_EnterHook_Fls_17_Dmu_Write_Return
+ *  SchM_EnterHook_Fls_17_Dmu_Write_Start
+ *  SchM_EnterHook_IpduM_IPDUM_EXCLUSIVE_AREA_0_Return
+ *  SchM_EnterHook_IpduM_IPDUM_EXCLUSIVE_AREA_0_Start
  *  SchM_EnterHook_McalLib_CpuEndInit_Return
  *  SchM_EnterHook_McalLib_CpuEndInit_Start
  *  SchM_EnterHook_McalLib_PeripheralEndInit_Return
@@ -256,6 +274,8 @@
  *  SchM_EnterHook_Mcu_AtomAgcReg_Start
  *  SchM_EnterHook_Mcu_TomTgcReg_Return
  *  SchM_EnterHook_Mcu_TomTgcReg_Start
+ *  SchM_EnterHook_NvM_NVM_EXCLUSIVE_AREA_0_Return
+ *  SchM_EnterHook_NvM_NVM_EXCLUSIVE_AREA_0_Start
  *  SchM_EnterHook_PduR_PDUR_EXCLUSIVE_AREA_0_Return
  *  SchM_EnterHook_PduR_PDUR_EXCLUSIVE_AREA_0_Start
  *  SchM_EnterHook_Pwm_17_GtmCcu6_HandleNotification_Return
@@ -366,6 +386,8 @@
  *  SchM_ExitHook_Com_COM_EXCLUSIVE_AREA_RX_Start
  *  SchM_ExitHook_Com_COM_EXCLUSIVE_AREA_TX_Return
  *  SchM_ExitHook_Com_COM_EXCLUSIVE_AREA_TX_Start
+ *  SchM_ExitHook_Crc_CriticalSection_Return
+ *  SchM_ExitHook_Crc_CriticalSection_Start
  *  SchM_ExitHook_Det_DET_EXCLUSIVE_AREA_0_Return
  *  SchM_ExitHook_Det_DET_EXCLUSIVE_AREA_0_Start
  *  SchM_ExitHook_Dma_ChEventStatus_Return
@@ -394,6 +416,20 @@
  *  SchM_ExitHook_EcuM_ECUM_EXCLUSIVE_AREA_2_Start
  *  SchM_ExitHook_EcuM_ECUM_EXCLUSIVE_AREA_3_Return
  *  SchM_ExitHook_EcuM_ECUM_EXCLUSIVE_AREA_3_Start
+ *  SchM_ExitHook_Fls_17_Dmu_Erase_Return
+ *  SchM_ExitHook_Fls_17_Dmu_Erase_Start
+ *  SchM_ExitHook_Fls_17_Dmu_Init_Return
+ *  SchM_ExitHook_Fls_17_Dmu_Init_Start
+ *  SchM_ExitHook_Fls_17_Dmu_Main_Return
+ *  SchM_ExitHook_Fls_17_Dmu_Main_Start
+ *  SchM_ExitHook_Fls_17_Dmu_ResumeErase_Return
+ *  SchM_ExitHook_Fls_17_Dmu_ResumeErase_Start
+ *  SchM_ExitHook_Fls_17_Dmu_UserContentCount_Return
+ *  SchM_ExitHook_Fls_17_Dmu_UserContentCount_Start
+ *  SchM_ExitHook_Fls_17_Dmu_Write_Return
+ *  SchM_ExitHook_Fls_17_Dmu_Write_Start
+ *  SchM_ExitHook_IpduM_IPDUM_EXCLUSIVE_AREA_0_Return
+ *  SchM_ExitHook_IpduM_IPDUM_EXCLUSIVE_AREA_0_Start
  *  SchM_ExitHook_McalLib_CpuEndInit_Return
  *  SchM_ExitHook_McalLib_CpuEndInit_Start
  *  SchM_ExitHook_McalLib_PeripheralEndInit_Return
@@ -406,6 +442,8 @@
  *  SchM_ExitHook_Mcu_AtomAgcReg_Start
  *  SchM_ExitHook_Mcu_TomTgcReg_Return
  *  SchM_ExitHook_Mcu_TomTgcReg_Start
+ *  SchM_ExitHook_NvM_NVM_EXCLUSIVE_AREA_0_Return
+ *  SchM_ExitHook_NvM_NVM_EXCLUSIVE_AREA_0_Start
  *  SchM_ExitHook_PduR_PDUR_EXCLUSIVE_AREA_0_Return
  *  SchM_ExitHook_PduR_PDUR_EXCLUSIVE_AREA_0_Start
  *  SchM_ExitHook_Pwm_17_GtmCcu6_HandleNotification_Return
@@ -466,6 +504,16 @@
  *  SchM_Schedulable_Com_Com_MainFunctionTx_ComMainFunctionTx_Start
  *  SchM_Schedulable_EcuM_EcuM_MainFunction_Return
  *  SchM_Schedulable_EcuM_EcuM_MainFunction_Start
+ *  SchM_Schedulable_Fee_Fee_MainFunction_Return
+ *  SchM_Schedulable_Fee_Fee_MainFunction_Start
+ *  SchM_Schedulable_Fls_17_Dmu_Fls_17_Dmu_MainFunction_Return
+ *  SchM_Schedulable_Fls_17_Dmu_Fls_17_Dmu_MainFunction_Start
+ *  SchM_Schedulable_IpduM_IpduM_MainFunctionRx_Return
+ *  SchM_Schedulable_IpduM_IpduM_MainFunctionRx_Start
+ *  SchM_Schedulable_IpduM_IpduM_MainFunctionTx_Return
+ *  SchM_Schedulable_IpduM_IpduM_MainFunctionTx_Start
+ *  SchM_Schedulable_NvM_NvM_MainFunction_Return
+ *  SchM_Schedulable_NvM_NvM_MainFunction_Start
  *  SchM_Schedulable_Spi_Spi_MainFunction_Handling_Return
  *  SchM_Schedulable_Spi_Spi_MainFunction_Handling_Start
  *

@@ -1,0 +1,1175 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc13108a --dep-file=Appl\\GenData\\.BswM_Lcfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=Appl\\GenData\\BswM_Lcfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\BswM_Lcfg.src ..\\Appl\\GenData\\BswM_Lcfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\GenData\\BswM_Lcfg.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.BswM_Lcfg.BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION',code
+	.sect	'.text.BswM_Lcfg.BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION'
+	.align	2
+	
+
+; ..\Appl\GenData\BswM_Lcfg.c	     1  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	     2   *  COPYRIGHT
+; ..\Appl\GenData\BswM_Lcfg.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\BswM_Lcfg.c	     4   *  \verbatim
+; ..\Appl\GenData\BswM_Lcfg.c	     5   *
+; ..\Appl\GenData\BswM_Lcfg.c	     6   *                 This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\Appl\GenData\BswM_Lcfg.c	     7   *                 Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\Appl\GenData\BswM_Lcfg.c	     8   *                 All other rights remain with Vector Informatik GmbH.
+; ..\Appl\GenData\BswM_Lcfg.c	     9   *  \endverbatim
+; ..\Appl\GenData\BswM_Lcfg.c	    10   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\BswM_Lcfg.c	    11   *  LICENSE
+; ..\Appl\GenData\BswM_Lcfg.c	    12   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\BswM_Lcfg.c	    13   *            Module: BswM
+; ..\Appl\GenData\BswM_Lcfg.c	    14   *           Program: MSR_Vector_SLP4
+; ..\Appl\GenData\BswM_Lcfg.c	    15   *          Customer: China Lithium Battery Technology Co., Ltd.
+; ..\Appl\GenData\BswM_Lcfg.c	    16   *       Expiry Date: 2025-08-26
+; ..\Appl\GenData\BswM_Lcfg.c	    17   *  Ordered Derivat.: SAK-TC387QP-160F300S AE
+; ..\Appl\GenData\BswM_Lcfg.c	    18   *    License Scope : The usage is restricted to CBD2200508_D00
+; ..\Appl\GenData\BswM_Lcfg.c	    19   *
+; ..\Appl\GenData\BswM_Lcfg.c	    20   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\BswM_Lcfg.c	    21   *  FILE DESCRIPTION
+; ..\Appl\GenData\BswM_Lcfg.c	    22   *  -------------------------------------------------------------------------------------------------------------------
+; ..\Appl\GenData\BswM_Lcfg.c	    23   *              File: BswM_Lcfg.c
+; ..\Appl\GenData\BswM_Lcfg.c	    24   *   Generation Time: 2024-07-16 16:49:59
+; ..\Appl\GenData\BswM_Lcfg.c	    25   *           Project: last364 - Version 1.0
+; ..\Appl\GenData\BswM_Lcfg.c	    26   *          Delivery: CBD2200508_D00
+; ..\Appl\GenData\BswM_Lcfg.c	    27   *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
+; ..\Appl\GenData\BswM_Lcfg.c	    28   *
+; ..\Appl\GenData\BswM_Lcfg.c	    29   *
+; ..\Appl\GenData\BswM_Lcfg.c	    30   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	    31  
+; ..\Appl\GenData\BswM_Lcfg.c	    32  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	    33   ! BETA VERSION                                                                                                       !
+; ..\Appl\GenData\BswM_Lcfg.c	    34   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\Appl\GenData\BswM_Lcfg.c	    35   ! This version of DaVinci Configurator Classic and/or the related Basic Software Package is BETA software.               !
+; ..\Appl\GenData\BswM_Lcfg.c	    36   ! BETA Software is basically operable, but not sufficiently tested, verified and/or qualified for use in series      !
+; ..\Appl\GenData\BswM_Lcfg.c	    37   ! production and/or in vehicles operating on public or non-public roads.                                             !
+; ..\Appl\GenData\BswM_Lcfg.c	    38   ! In particular, without limitation, BETA Software may cause unpredictable ECU behavior, may not provide all         !
+; ..\Appl\GenData\BswM_Lcfg.c	    39   ! functions necessary for use in series production and/or may not comply with quality requirements which are         !
+; ..\Appl\GenData\BswM_Lcfg.c	    40   ! necessary according to the state of the art. BETA Software must not be used in series production.                  !
+; ..\Appl\GenData\BswM_Lcfg.c	    41   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; ..\Appl\GenData\BswM_Lcfg.c	    42  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	    43  
+; ..\Appl\GenData\BswM_Lcfg.c	    44  #define BSWM_LCFG_SOURCE
+; ..\Appl\GenData\BswM_Lcfg.c	    45  
+; ..\Appl\GenData\BswM_Lcfg.c	    46  /* -----------------------------------------------------------------------------
+; ..\Appl\GenData\BswM_Lcfg.c	    47      &&&~ MISRA JUSTIFICATION
+; ..\Appl\GenData\BswM_Lcfg.c	    48   ----------------------------------------------------------------------------- */
+; ..\Appl\GenData\BswM_Lcfg.c	    49  /* PRQA S 0785, 0786 EOF */ /* MD_CSL_DistinctIdentifiers */
+; ..\Appl\GenData\BswM_Lcfg.c	    50  
+; ..\Appl\GenData\BswM_Lcfg.c	    51  /* -----------------------------------------------------------------------------
+; ..\Appl\GenData\BswM_Lcfg.c	    52      &&&~ INCLUDE
+; ..\Appl\GenData\BswM_Lcfg.c	    53   ----------------------------------------------------------------------------- */
+; ..\Appl\GenData\BswM_Lcfg.c	    54  /* PRQA S 0857 EOF */ /* MD_MSR_1.1_857 */
+; ..\Appl\GenData\BswM_Lcfg.c	    55  #include "BswM.h"
+; ..\Appl\GenData\BswM_Lcfg.c	    56  #include "BswM_Private_Cfg.h"
+; ..\Appl\GenData\BswM_Lcfg.c	    57  #include "SchM_BswM.h"
+; ..\Appl\GenData\BswM_Lcfg.c	    58  
+; ..\Appl\GenData\BswM_Lcfg.c	    59  #if !defined (BSWM_LOCAL)
+; ..\Appl\GenData\BswM_Lcfg.c	    60  # define BSWM_LOCAL static
+; ..\Appl\GenData\BswM_Lcfg.c	    61  #endif
+; ..\Appl\GenData\BswM_Lcfg.c	    62  
+; ..\Appl\GenData\BswM_Lcfg.c	    63  #if !defined (BSWM_LOCAL_INLINE) /* COV_BSWM_LOCAL_INLINE */
+; ..\Appl\GenData\BswM_Lcfg.c	    64  # define BSWM_LOCAL_INLINE LOCAL_INLINE
+; ..\Appl\GenData\BswM_Lcfg.c	    65  #endif
+; ..\Appl\GenData\BswM_Lcfg.c	    66  
+; ..\Appl\GenData\BswM_Lcfg.c	    67  
+; ..\Appl\GenData\BswM_Lcfg.c	    68  
+; ..\Appl\GenData\BswM_Lcfg.c	    69  #define BSWM_START_SEC_CODE
+; ..\Appl\GenData\BswM_Lcfg.c	    70  /* PRQA S 5087 1 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	    71  #include "BswM_MemMap.h"
+; ..\Appl\GenData\BswM_Lcfg.c	    72  
+; ..\Appl\GenData\BswM_Lcfg.c	    73  /* -----------------------------------------------------------------------------
+; ..\Appl\GenData\BswM_Lcfg.c	    74      &&&~ LOCAL FUNCTION DECLARATIONS
+; ..\Appl\GenData\BswM_Lcfg.c	    75   ----------------------------------------------------------------------------- */
+; ..\Appl\GenData\BswM_Lcfg.c	    76  
+; ..\Appl\GenData\BswM_Lcfg.c	    77  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	    78   *  BswM_UpdateRuleStates()
+; ..\Appl\GenData\BswM_Lcfg.c	    79   **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	    80  /*!
+; ..\Appl\GenData\BswM_Lcfg.c	    81   * \brief       Updates the state of a rule.
+; ..\Appl\GenData\BswM_Lcfg.c	    82   * \details     Set rule state of passed ruleId to passed state.
+; ..\Appl\GenData\BswM_Lcfg.c	    83   * \param[in]   ruleId         Id of the rule to update.
+; ..\Appl\GenData\BswM_Lcfg.c	    84   * \param[in]   state          New state of the rule.
+; ..\Appl\GenData\BswM_Lcfg.c	    85   * \param[in]   partitionIdx   Current partition context.
+; ..\Appl\GenData\BswM_Lcfg.c	    86   * \pre         -
+; ..\Appl\GenData\BswM_Lcfg.c	    87   * \context     ANY
+; ..\Appl\GenData\BswM_Lcfg.c	    88   * \reentrant   TRUE
+; ..\Appl\GenData\BswM_Lcfg.c	    89   * \synchronous TRUE
+; ..\Appl\GenData\BswM_Lcfg.c	    90   */
+; ..\Appl\GenData\BswM_Lcfg.c	    91  BSWM_LOCAL_INLINE FUNC(void, BSWM_CODE) BswM_UpdateRuleStates(BswM_SizeOfRuleStatesType ruleId, 
+; ..\Appl\GenData\BswM_Lcfg.c	    92                                                                BswM_RuleStatesType state,
+; ..\Appl\GenData\BswM_Lcfg.c	    93                                                                BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx);
+; ..\Appl\GenData\BswM_Lcfg.c	    94  
+; ..\Appl\GenData\BswM_Lcfg.c	    95  
+; ..\Appl\GenData\BswM_Lcfg.c	    96  /*! \addtogroup    BswMGeneratedFunctions BswM Generated Functions
+; ..\Appl\GenData\BswM_Lcfg.c	    97   * \{
+; ..\Appl\GenData\BswM_Lcfg.c	    98   */
+; ..\Appl\GenData\BswM_Lcfg.c	    99  /* PRQA S 0779 FUNCTIONDECLARATIONS */ /* MD_MSR_Rule5.2_0779 */
+; ..\Appl\GenData\BswM_Lcfg.c	   100  
+; ..\Appl\GenData\BswM_Lcfg.c	   101  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   102   *  Init
+; ..\Appl\GenData\BswM_Lcfg.c	   103   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   104  /*! \defgroup    Init
+; ..\Appl\GenData\BswM_Lcfg.c	   105   * \{
+; ..\Appl\GenData\BswM_Lcfg.c	   106   */
+; ..\Appl\GenData\BswM_Lcfg.c	   107  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   108   *  BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION
+; ..\Appl\GenData\BswM_Lcfg.c	   109   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   110  /*!
+; ..\Appl\GenData\BswM_Lcfg.c	   111   * \brief       Initializes BswM.
+; ..\Appl\GenData\BswM_Lcfg.c	   112   * \details     Part of the BswM_Init. Initializes all generated variables and executes action lists for initialization.
+; ..\Appl\GenData\BswM_Lcfg.c	   113   * \pre         -
+; ..\Appl\GenData\BswM_Lcfg.c	   114   * \reentrant   FALSE
+; ..\Appl\GenData\BswM_Lcfg.c	   115   * \synchronous TRUE
+; ..\Appl\GenData\BswM_Lcfg.c	   116   * \note        May only be called by BswM_Init.
+; ..\Appl\GenData\BswM_Lcfg.c	   117   */
+; ..\Appl\GenData\BswM_Lcfg.c	   118  BSWM_LOCAL FUNC(void, BSWM_CODE) BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx);
+; ..\Appl\GenData\BswM_Lcfg.c	   119  /*! \} */ /* End of group Init */
+; ..\Appl\GenData\BswM_Lcfg.c	   120  
+; ..\Appl\GenData\BswM_Lcfg.c	   121  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   122   *  BswMActionListFunctions
+; ..\Appl\GenData\BswM_Lcfg.c	   123   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   124  /*! \defgroup    BswMActionListFunctions
+; ..\Appl\GenData\BswM_Lcfg.c	   125   * \{
+; ..\Appl\GenData\BswM_Lcfg.c	   126   */
+; ..\Appl\GenData\BswM_Lcfg.c	   127  
+; ..\Appl\GenData\BswM_Lcfg.c	   128  /*!
+; ..\Appl\GenData\BswM_Lcfg.c	   129   * \{
+; ..\Appl\GenData\BswM_Lcfg.c	   130   * \brief       Execute actions of action list.
+; ..\Appl\GenData\BswM_Lcfg.c	   131   * \details     Generated function which depends on the configuration. Executes the actions of the action list in the
+; ..\Appl\GenData\BswM_Lcfg.c	   132   *              configured order.
+; ..\Appl\GenData\BswM_Lcfg.c	   133   * \return      E_OK      Action list was completely executed.
+; ..\Appl\GenData\BswM_Lcfg.c	   134   * \return      E_NOT_OK  Action list was aborted because an action failed.
+; ..\Appl\GenData\BswM_Lcfg.c	   135   * \pre         -
+; ..\Appl\GenData\BswM_Lcfg.c	   136   * \context     ANY
+; ..\Appl\GenData\BswM_Lcfg.c	   137   * \reentrant   TRUE
+; ..\Appl\GenData\BswM_Lcfg.c	   138   * \synchronous TRUE
+; ..\Appl\GenData\BswM_Lcfg.c	   139   */
+; ..\Appl\GenData\BswM_Lcfg.c	   140  BSWM_LOCAL FUNC(Std_ReturnType, BSWM_CODE) BswM_ActionList_INIT_AL_Initialize(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx);
+; ..\Appl\GenData\BswM_Lcfg.c	   141  BSWM_LOCAL FUNC(Std_ReturnType, BSWM_CODE) BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_Disable(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx);
+; ..\Appl\GenData\BswM_Lcfg.c	   142  BSWM_LOCAL FUNC(Std_ReturnType, BSWM_CODE) BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_EnableNoinit(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx);
+; ..\Appl\GenData\BswM_Lcfg.c	   143  BSWM_LOCAL FUNC(Std_ReturnType, BSWM_CODE) BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_Disable(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx);
+; ..\Appl\GenData\BswM_Lcfg.c	   144  BSWM_LOCAL FUNC(Std_ReturnType, BSWM_CODE) BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_EnableNoinit(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx);
+; ..\Appl\GenData\BswM_Lcfg.c	   145  BSWM_LOCAL FUNC(Std_ReturnType, BSWM_CODE) BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Disable_DM(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx);
+; ..\Appl\GenData\BswM_Lcfg.c	   146  BSWM_LOCAL FUNC(Std_ReturnType, BSWM_CODE) BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Enable_DM(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx);
+; ..\Appl\GenData\BswM_Lcfg.c	   147  /*! \} */ /* End of sharing description for BswMActionListFunctions */
+; ..\Appl\GenData\BswM_Lcfg.c	   148  /*! \} */ /* End of group BswMActionListFunctions */
+; ..\Appl\GenData\BswM_Lcfg.c	   149  
+; ..\Appl\GenData\BswM_Lcfg.c	   150  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   151   *  BswMRuleFunctions
+; ..\Appl\GenData\BswM_Lcfg.c	   152   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   153  /*! \defgroup    BswMRuleFunctions
+; ..\Appl\GenData\BswM_Lcfg.c	   154   * \{
+; ..\Appl\GenData\BswM_Lcfg.c	   155   */
+; ..\Appl\GenData\BswM_Lcfg.c	   156  
+; ..\Appl\GenData\BswM_Lcfg.c	   157  /*!
+; ..\Appl\GenData\BswM_Lcfg.c	   158   * \{
+; ..\Appl\GenData\BswM_Lcfg.c	   159   * \brief       Arbitrates the configured rule.
+; ..\Appl\GenData\BswM_Lcfg.c	   160   * \details     Generated function which depends on the configuration. Arbitrates the rule and returns the action list
+; ..\Appl\GenData\BswM_Lcfg.c	   161   *              which shall be executed.
+; ..\Appl\GenData\BswM_Lcfg.c	   162   * \return      ID of action list to execute (BSWM_NO_ACTIONLIST if no ActionList shall be executed)
+; ..\Appl\GenData\BswM_Lcfg.c	   163   * \pre         -
+; ..\Appl\GenData\BswM_Lcfg.c	   164   * \context     ANY
+; ..\Appl\GenData\BswM_Lcfg.c	   165   * \reentrant   TRUE
+; ..\Appl\GenData\BswM_Lcfg.c	   166   * \synchronous TRUE
+; ..\Appl\GenData\BswM_Lcfg.c	   167   */
+; ..\Appl\GenData\BswM_Lcfg.c	   168  BSWM_LOCAL FUNC(BswM_HandleType, BSWM_CODE) BswM_Rule_CC_CN_CAN00_5e566ad9_RX(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx);
+; ..\Appl\GenData\BswM_Lcfg.c	   169  BSWM_LOCAL FUNC(BswM_HandleType, BSWM_CODE) BswM_Rule_CC_CN_CAN00_5e566ad9_TX(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx);
+; ..\Appl\GenData\BswM_Lcfg.c	   170  BSWM_LOCAL FUNC(BswM_HandleType, BSWM_CODE) BswM_Rule_CC_CN_CAN00_5e566ad9_RX_DM(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx);
+; ..\Appl\GenData\BswM_Lcfg.c	   171  /*! \} */ /* End of sharing description for BswMRuleFunctions */
+; ..\Appl\GenData\BswM_Lcfg.c	   172  /*! \} */ /* End of group BswMRuleFunctions */
+; ..\Appl\GenData\BswM_Lcfg.c	   173  /* PRQA L:FUNCTIONDECLARATIONS */
+; ..\Appl\GenData\BswM_Lcfg.c	   174  /*! \} */ /* End of group BswMGeneratedFunctions */
+; ..\Appl\GenData\BswM_Lcfg.c	   175  
+; ..\Appl\GenData\BswM_Lcfg.c	   176  #define BSWM_STOP_SEC_CODE
+; ..\Appl\GenData\BswM_Lcfg.c	   177  /* PRQA S 5087 1 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   178  #include "BswM_MemMap.h"
+; ..\Appl\GenData\BswM_Lcfg.c	   179  
+; ..\Appl\GenData\BswM_Lcfg.c	   180  
+; ..\Appl\GenData\BswM_Lcfg.c	   181  /* -----------------------------------------------------------------------------
+; ..\Appl\GenData\BswM_Lcfg.c	   182      &&&~ LOCAL VARIABLE DECLARATIONS
+; ..\Appl\GenData\BswM_Lcfg.c	   183   ----------------------------------------------------------------------------- */
+; ..\Appl\GenData\BswM_Lcfg.c	   184  
+; ..\Appl\GenData\BswM_Lcfg.c	   185  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   186   *  LOCAL DATA PROTOTYPES
+; ..\Appl\GenData\BswM_Lcfg.c	   187  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   188  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   189    CONFIGURATION CLASS: PRE_COMPILE
+; ..\Appl\GenData\BswM_Lcfg.c	   190    SECTION: LOCAL DATA PROTOTYPES
+; ..\Appl\GenData\BswM_Lcfg.c	   191  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   192  
+; ..\Appl\GenData\BswM_Lcfg.c	   193  
+; ..\Appl\GenData\BswM_Lcfg.c	   194  
+; ..\Appl\GenData\BswM_Lcfg.c	   195  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   196   *  LOCAL DATA
+; ..\Appl\GenData\BswM_Lcfg.c	   197  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   198  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   199    CONFIGURATION CLASS: PRE_COMPILE
+; ..\Appl\GenData\BswM_Lcfg.c	   200    SECTION: LOCAL DATA
+; ..\Appl\GenData\BswM_Lcfg.c	   201  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   202  
+; ..\Appl\GenData\BswM_Lcfg.c	   203  
+; ..\Appl\GenData\BswM_Lcfg.c	   204  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   205   *  GLOBAL DATA
+; ..\Appl\GenData\BswM_Lcfg.c	   206  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   207  
+; ..\Appl\GenData\BswM_Lcfg.c	   208  
+; ..\Appl\GenData\BswM_Lcfg.c	   209  /* PRQA S 0310 GLOBALDATADECLARATIONS */ /* MD_BSWM_0310 */ 
+; ..\Appl\GenData\BswM_Lcfg.c	   210  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   211    CONFIGURATION CLASS: PRE_COMPILE
+; ..\Appl\GenData\BswM_Lcfg.c	   212    SECTION: GLOBAL DATA
+; ..\Appl\GenData\BswM_Lcfg.c	   213  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   214  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   215    BswM_ActionLists
+; ..\Appl\GenData\BswM_Lcfg.c	   216  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   217  /** 
+; ..\Appl\GenData\BswM_Lcfg.c	   218    \var    BswM_ActionLists
+; ..\Appl\GenData\BswM_Lcfg.c	   219    \details
+; ..\Appl\GenData\BswM_Lcfg.c	   220    Element    Description
+; ..\Appl\GenData\BswM_Lcfg.c	   221    FctPtr     Pointer to the array list function.
+; ..\Appl\GenData\BswM_Lcfg.c	   222  */ 
+; ..\Appl\GenData\BswM_Lcfg.c	   223  #define BSWM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\BswM_Lcfg.c	   224  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   225  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   226  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   227  CONST(BswM_ActionListsType, BSWM_CONST) BswM_ActionLists[7] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\BswM_Lcfg.c	   228      /* Index    FctPtr                                                         Comment                   Referable Keys */
+; ..\Appl\GenData\BswM_Lcfg.c	   229    { /*     0 */ BswM_ActionList_INIT_AL_Initialize                      },  /* [Priority: 0] */  /* [AL_INIT_AL_Initialize] */
+; ..\Appl\GenData\BswM_Lcfg.c	   230    { /*     1 */ BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_Disable      },  /* [Priority: 0] */  /* [AL_CC_AL_CN_CAN00_5e566ad9_RX_Disable] */
+; ..\Appl\GenData\BswM_Lcfg.c	   231    { /*     2 */ BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_EnableNoinit },  /* [Priority: 0] */  /* [AL_CC_AL_CN_CAN00_5e566ad9_RX_EnableNoinit] */
+; ..\Appl\GenData\BswM_Lcfg.c	   232    { /*     3 */ BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_Disable      },  /* [Priority: 0] */  /* [AL_CC_AL_CN_CAN00_5e566ad9_TX_Disable] */
+; ..\Appl\GenData\BswM_Lcfg.c	   233    { /*     4 */ BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_EnableNoinit },  /* [Priority: 0] */  /* [AL_CC_AL_CN_CAN00_5e566ad9_TX_EnableNoinit] */
+; ..\Appl\GenData\BswM_Lcfg.c	   234    { /*     5 */ BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Disable_DM      },  /* [Priority: 0] */  /* [AL_CC_AL_CN_CAN00_5e566ad9_Disable_DM] */
+; ..\Appl\GenData\BswM_Lcfg.c	   235    { /*     6 */ BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Enable_DM       }   /* [Priority: 0] */  /* [AL_CC_AL_CN_CAN00_5e566ad9_Enable_DM] */
+; ..\Appl\GenData\BswM_Lcfg.c	   236  };
+; ..\Appl\GenData\BswM_Lcfg.c	   237  #define BSWM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\BswM_Lcfg.c	   238  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   239  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   240  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   241  
+; ..\Appl\GenData\BswM_Lcfg.c	   242  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   243    BswM_InitGenVarAndInitAL
+; ..\Appl\GenData\BswM_Lcfg.c	   244  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   245  #define BSWM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\BswM_Lcfg.c	   246  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   247  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   248  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   249  CONST(BswM_InitGenVarAndInitALType, BSWM_CONST) BswM_InitGenVarAndInitAL[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\BswM_Lcfg.c	   250    /* Index     InitGenVarAndInitAL                            */
+; ..\Appl\GenData\BswM_Lcfg.c	   251    /*     0 */ BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION 
+; ..\Appl\GenData\BswM_Lcfg.c	   252  };
+; ..\Appl\GenData\BswM_Lcfg.c	   253  #define BSWM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\BswM_Lcfg.c	   254  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   255  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   256  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   257  
+; ..\Appl\GenData\BswM_Lcfg.c	   258  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   259    BswM_PartitionIdentifiers
+; ..\Appl\GenData\BswM_Lcfg.c	   260  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   261  /** 
+; ..\Appl\GenData\BswM_Lcfg.c	   262    \var    BswM_PartitionIdentifiers
+; ..\Appl\GenData\BswM_Lcfg.c	   263    \brief  the partition context in Config
+; ..\Appl\GenData\BswM_Lcfg.c	   264    \details
+; ..\Appl\GenData\BswM_Lcfg.c	   265    Element                 Description
+; ..\Appl\GenData\BswM_Lcfg.c	   266    PartitionSNV        
+; ..\Appl\GenData\BswM_Lcfg.c	   267    PCPartitionConfigIdx    the index of the 1:1 relation pointing to BswM_PCPartitionConfig
+; ..\Appl\GenData\BswM_Lcfg.c	   268  */ 
+; ..\Appl\GenData\BswM_Lcfg.c	   269  #define BSWM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\BswM_Lcfg.c	   270  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   271  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   272  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   273  CONST(BswM_PartitionIdentifiersType, BSWM_CONST) BswM_PartitionIdentifiers[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\BswM_Lcfg.c	   274      /* Index    PartitionSNV          PCPartitionConfigIdx */
+; ..\Appl\GenData\BswM_Lcfg.c	   275    { /*     0 */ BSWM_SINGLEPARTITION,                   0u }
+; ..\Appl\GenData\BswM_Lcfg.c	   276  };
+; ..\Appl\GenData\BswM_Lcfg.c	   277  #define BSWM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\BswM_Lcfg.c	   278  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   279  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   280  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   281  
+; ..\Appl\GenData\BswM_Lcfg.c	   282  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   283    BswM_Rules
+; ..\Appl\GenData\BswM_Lcfg.c	   284  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   285  /** 
+; ..\Appl\GenData\BswM_Lcfg.c	   286    \var    BswM_Rules
+; ..\Appl\GenData\BswM_Lcfg.c	   287    \details
+; ..\Appl\GenData\BswM_Lcfg.c	   288    Element          Description
+; ..\Appl\GenData\BswM_Lcfg.c	   289    Id               External id of rule.
+; ..\Appl\GenData\BswM_Lcfg.c	   290    RuleStatesIdx    the index of the 1:1 relation pointing to BswM_RuleStates
+; ..\Appl\GenData\BswM_Lcfg.c	   291    FctPtr           Pointer to the rule function which does the arbitration.
+; ..\Appl\GenData\BswM_Lcfg.c	   292  */ 
+; ..\Appl\GenData\BswM_Lcfg.c	   293  #define BSWM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\BswM_Lcfg.c	   294  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   295  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   296  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   297  CONST(BswM_RulesType, BSWM_CONST) BswM_Rules[3] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\BswM_Lcfg.c	   298      /* Index    Id  RuleStatesIdx  FctPtr                                      Referable Keys */
+; ..\Appl\GenData\BswM_Lcfg.c	   299    { /*     0 */ 0u,            0u, BswM_Rule_CC_CN_CAN00_5e566ad9_RX    },  /* [R_CC_CN_CAN00_5e566ad9_RX, MRP_CC_CanSMIndication_CN_CAN00_5e566ad9] */
+; ..\Appl\GenData\BswM_Lcfg.c	   300    { /*     1 */ 2u,            1u, BswM_Rule_CC_CN_CAN00_5e566ad9_TX    },  /* [R_CC_CN_CAN00_5e566ad9_TX, MRP_CC_CanSMIndication_CN_CAN00_5e566ad9] */
+; ..\Appl\GenData\BswM_Lcfg.c	   301    { /*     2 */ 1u,            2u, BswM_Rule_CC_CN_CAN00_5e566ad9_RX_DM }   /* [R_CC_CN_CAN00_5e566ad9_RX_DM, MRP_CC_CanSMIndication_CN_CAN00_5e566ad9] */
+; ..\Appl\GenData\BswM_Lcfg.c	   302  };
+; ..\Appl\GenData\BswM_Lcfg.c	   303  #define BSWM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\BswM_Lcfg.c	   304  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   305  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   306  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   307  
+; ..\Appl\GenData\BswM_Lcfg.c	   308  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   309    BswM_RulesInd
+; ..\Appl\GenData\BswM_Lcfg.c	   310  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   311  /** 
+; ..\Appl\GenData\BswM_Lcfg.c	   312    \var    BswM_RulesInd
+; ..\Appl\GenData\BswM_Lcfg.c	   313    \brief  the indexes of the 1:1 sorted relation pointing to BswM_Rules
+; ..\Appl\GenData\BswM_Lcfg.c	   314  */ 
+; ..\Appl\GenData\BswM_Lcfg.c	   315  #define BSWM_START_SEC_CONST_8
+; ..\Appl\GenData\BswM_Lcfg.c	   316  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   317  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   318  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   319  CONST(BswM_RulesIndType, BSWM_CONST) BswM_RulesInd[3] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\BswM_Lcfg.c	   320    /* Index     RulesInd      Referable Keys */
+; ..\Appl\GenData\BswM_Lcfg.c	   321    /*     0 */        0u,  /* [MRP_CC_CanSMIndication_CN_CAN00_5e566ad9] */
+; ..\Appl\GenData\BswM_Lcfg.c	   322    /*     1 */        1u,  /* [MRP_CC_CanSMIndication_CN_CAN00_5e566ad9] */
+; ..\Appl\GenData\BswM_Lcfg.c	   323    /*     2 */        2u   /* [MRP_CC_CanSMIndication_CN_CAN00_5e566ad9] */
+; ..\Appl\GenData\BswM_Lcfg.c	   324  };
+; ..\Appl\GenData\BswM_Lcfg.c	   325  #define BSWM_STOP_SEC_CONST_8
+; ..\Appl\GenData\BswM_Lcfg.c	   326  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   327  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   328  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   329  
+; ..\Appl\GenData\BswM_Lcfg.c	   330  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   331    BswM_ActionListQueue
+; ..\Appl\GenData\BswM_Lcfg.c	   332  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   333  /** 
+; ..\Appl\GenData\BswM_Lcfg.c	   334    \var    BswM_ActionListQueue
+; ..\Appl\GenData\BswM_Lcfg.c	   335    \brief  Variable to store action lists which shall be executed.
+; ..\Appl\GenData\BswM_Lcfg.c	   336  */ 
+; ..\Appl\GenData\BswM_Lcfg.c	   337  #define BSWM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   338  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   339  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   340  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   341  VAR(BswM_ActionListQueueUType, BSWM_VAR_NO_INIT) BswM_ActionListQueue;  /* PRQA S 0759, 1514, 1533 */  /* MD_CSL_Union, MD_CSL_ObjectOnlyAccessedOnce, MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\BswM_Lcfg.c	   342    /* Index        Referable Keys */
+; ..\Appl\GenData\BswM_Lcfg.c	   343    /*     0 */  /* [AL_INIT_AL_Initialize] */
+; ..\Appl\GenData\BswM_Lcfg.c	   344    /*     1 */  /* [AL_CC_AL_CN_CAN00_5e566ad9_RX_Disable] */
+; ..\Appl\GenData\BswM_Lcfg.c	   345    /*     2 */  /* [AL_CC_AL_CN_CAN00_5e566ad9_RX_EnableNoinit] */
+; ..\Appl\GenData\BswM_Lcfg.c	   346    /*     3 */  /* [AL_CC_AL_CN_CAN00_5e566ad9_TX_Disable] */
+; ..\Appl\GenData\BswM_Lcfg.c	   347    /*     4 */  /* [AL_CC_AL_CN_CAN00_5e566ad9_TX_EnableNoinit] */
+; ..\Appl\GenData\BswM_Lcfg.c	   348    /*     5 */  /* [AL_CC_AL_CN_CAN00_5e566ad9_Disable_DM] */
+; ..\Appl\GenData\BswM_Lcfg.c	   349    /*     6 */  /* [AL_CC_AL_CN_CAN00_5e566ad9_Enable_DM] */
+; ..\Appl\GenData\BswM_Lcfg.c	   350  
+; ..\Appl\GenData\BswM_Lcfg.c	   351  #define BSWM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   352  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   353  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   354  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   355  
+; ..\Appl\GenData\BswM_Lcfg.c	   356  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   357    BswM_CanSMChannelState
+; ..\Appl\GenData\BswM_Lcfg.c	   358  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   359  /** 
+; ..\Appl\GenData\BswM_Lcfg.c	   360    \var    BswM_CanSMChannelState
+; ..\Appl\GenData\BswM_Lcfg.c	   361    \brief  Variable to store current mode of BswMCanSMIndication mode request ports.
+; ..\Appl\GenData\BswM_Lcfg.c	   362  */ 
+; ..\Appl\GenData\BswM_Lcfg.c	   363  #define BSWM_START_SEC_VAR_NO_INIT_UNSPECIFIED
+; ..\Appl\GenData\BswM_Lcfg.c	   364  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   365  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   366  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   367  VAR(CanSM_BswMCurrentStateType, BSWM_VAR_NO_INIT) BswM_CanSMChannelState[1];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\BswM_Lcfg.c	   368    /* Index        Referable Keys */
+; ..\Appl\GenData\BswM_Lcfg.c	   369    /*     0 */  /* [CANSM_CHANNEL_0, MRP_CC_CanSMIndication_CN_CAN00_5e566ad9] */
+; ..\Appl\GenData\BswM_Lcfg.c	   370  
+; ..\Appl\GenData\BswM_Lcfg.c	   371  #define BSWM_STOP_SEC_VAR_NO_INIT_UNSPECIFIED
+; ..\Appl\GenData\BswM_Lcfg.c	   372  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   373  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   374  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   375  
+; ..\Appl\GenData\BswM_Lcfg.c	   376  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   377    BswM_ForcedActionListPriority
+; ..\Appl\GenData\BswM_Lcfg.c	   378  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   379  #define BSWM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   380  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   381  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   382  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   383  VAR(BswM_ForcedActionListPriorityType, BSWM_VAR_NO_INIT) BswM_ForcedActionListPriority;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\BswM_Lcfg.c	   384  #define BSWM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   385  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   386  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   387  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   388  
+; ..\Appl\GenData\BswM_Lcfg.c	   389  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   390    BswM_Initialized
+; ..\Appl\GenData\BswM_Lcfg.c	   391  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   392  #define BSWM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   393  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   394  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   395  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   396  VAR(BswM_InitializedType, BSWM_VAR_NO_INIT) BswM_Initialized;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\BswM_Lcfg.c	   397  #define BSWM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   398  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   399  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   400  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   401  
+; ..\Appl\GenData\BswM_Lcfg.c	   402  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   403    BswM_ModeRequestQueue
+; ..\Appl\GenData\BswM_Lcfg.c	   404  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   405  /** 
+; ..\Appl\GenData\BswM_Lcfg.c	   406    \var    BswM_ModeRequestQueue
+; ..\Appl\GenData\BswM_Lcfg.c	   407    \brief  Variable to store an immediate mode request which must be queued because of a current active arbitration.
+; ..\Appl\GenData\BswM_Lcfg.c	   408  */ 
+; ..\Appl\GenData\BswM_Lcfg.c	   409  #define BSWM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   410  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   411  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   412  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   413  VAR(BswM_ModeRequestQueueType, BSWM_VAR_NO_INIT) BswM_ModeRequestQueue[1];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\BswM_Lcfg.c	   414    /* Index        Referable Keys */
+; ..\Appl\GenData\BswM_Lcfg.c	   415    /*     0 */  /* [MRP_CC_CanSMIndication_CN_CAN00_5e566ad9, CANSM_CHANNEL_0] */
+; ..\Appl\GenData\BswM_Lcfg.c	   416  
+; ..\Appl\GenData\BswM_Lcfg.c	   417  #define BSWM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   418  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   419  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   420  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   421  
+; ..\Appl\GenData\BswM_Lcfg.c	   422  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   423    BswM_QueueSemaphore
+; ..\Appl\GenData\BswM_Lcfg.c	   424  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   425  #define BSWM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   426  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   427  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   428  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   429  VAR(BswM_QueueSemaphoreType, BSWM_VAR_NO_INIT) BswM_QueueSemaphore;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\BswM_Lcfg.c	   430  #define BSWM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   431  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   432  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   433  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   434  
+; ..\Appl\GenData\BswM_Lcfg.c	   435  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   436    BswM_QueueWritten
+; ..\Appl\GenData\BswM_Lcfg.c	   437  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   438  #define BSWM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   439  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   440  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   441  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   442  VAR(BswM_QueueWrittenType, BSWM_VAR_NO_INIT) BswM_QueueWritten;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\BswM_Lcfg.c	   443  #define BSWM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   444  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   445  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   446  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   447  
+; ..\Appl\GenData\BswM_Lcfg.c	   448  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   449    BswM_RuleStates
+; ..\Appl\GenData\BswM_Lcfg.c	   450  **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   451  /** 
+; ..\Appl\GenData\BswM_Lcfg.c	   452    \var    BswM_RuleStates
+; ..\Appl\GenData\BswM_Lcfg.c	   453    \brief  Stores the last execution state of the rule.
+; ..\Appl\GenData\BswM_Lcfg.c	   454  */ 
+; ..\Appl\GenData\BswM_Lcfg.c	   455  #define BSWM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   456  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   457  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   458  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   459  VAR(BswM_RuleStatesUType, BSWM_VAR_NO_INIT) BswM_RuleStates;  /* PRQA S 0759, 1514, 1533 */  /* MD_CSL_Union, MD_CSL_ObjectOnlyAccessedOnce, MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\BswM_Lcfg.c	   460    /* Index        Referable Keys */
+; ..\Appl\GenData\BswM_Lcfg.c	   461    /*     0 */  /* [R_CC_CN_CAN00_5e566ad9_RX] */
+; ..\Appl\GenData\BswM_Lcfg.c	   462    /*     1 */  /* [R_CC_CN_CAN00_5e566ad9_TX] */
+; ..\Appl\GenData\BswM_Lcfg.c	   463    /*     2 */  /* [R_CC_CN_CAN00_5e566ad9_RX_DM] */
+; ..\Appl\GenData\BswM_Lcfg.c	   464  
+; ..\Appl\GenData\BswM_Lcfg.c	   465  #define BSWM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\BswM_Lcfg.c	   466  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\BswM_Lcfg.c	   467  #include "BswM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   468  /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   469  
+; ..\Appl\GenData\BswM_Lcfg.c	   470  
+; ..\Appl\GenData\BswM_Lcfg.c	   471  /* PRQA L:GLOBALDATADECLARATIONS */
+; ..\Appl\GenData\BswM_Lcfg.c	   472  
+; ..\Appl\GenData\BswM_Lcfg.c	   473  #define BSWM_START_SEC_VAR_NO_INIT_UNSPECIFIED
+; ..\Appl\GenData\BswM_Lcfg.c	   474  /* PRQA S 5087 1 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   475  #include "BswM_MemMap.h"
+; ..\Appl\GenData\BswM_Lcfg.c	   476  
+; ..\Appl\GenData\BswM_Lcfg.c	   477  
+; ..\Appl\GenData\BswM_Lcfg.c	   478  
+; ..\Appl\GenData\BswM_Lcfg.c	   479  
+; ..\Appl\GenData\BswM_Lcfg.c	   480  VAR(boolean, BSWM_VAR_NO_INIT) BswM_PreInitialized;
+; ..\Appl\GenData\BswM_Lcfg.c	   481  #define BSWM_STOP_SEC_VAR_NO_INIT_UNSPECIFIED
+; ..\Appl\GenData\BswM_Lcfg.c	   482  /* PRQA S 5087 1 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   483  #include "BswM_MemMap.h"
+; ..\Appl\GenData\BswM_Lcfg.c	   484  
+; ..\Appl\GenData\BswM_Lcfg.c	   485  
+; ..\Appl\GenData\BswM_Lcfg.c	   486  #define BSWM_START_SEC_CODE
+; ..\Appl\GenData\BswM_Lcfg.c	   487  /* PRQA S 5087 1 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   488  #include "BswM_MemMap.h"
+; ..\Appl\GenData\BswM_Lcfg.c	   489  
+; ..\Appl\GenData\BswM_Lcfg.c	   490  /* -----------------------------------------------------------------------------
+; ..\Appl\GenData\BswM_Lcfg.c	   491      &&&~ FUNCTIONS
+; ..\Appl\GenData\BswM_Lcfg.c	   492   ----------------------------------------------------------------------------- */
+; ..\Appl\GenData\BswM_Lcfg.c	   493   
+; ..\Appl\GenData\BswM_Lcfg.c	   494  
+; ..\Appl\GenData\BswM_Lcfg.c	   495  
+; ..\Appl\GenData\BswM_Lcfg.c	   496  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   497   *  BswM_UpdateRuleStates()
+; ..\Appl\GenData\BswM_Lcfg.c	   498   **********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   499  BSWM_LOCAL_INLINE FUNC(void, BSWM_CODE) BswM_UpdateRuleStates(BswM_SizeOfRuleStatesType ruleId, 
+; ..\Appl\GenData\BswM_Lcfg.c	   500                                                                     BswM_RuleStatesType state,
+; ..\Appl\GenData\BswM_Lcfg.c	   501                                                                     BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx)
+; ..\Appl\GenData\BswM_Lcfg.c	   502  {
+; ..\Appl\GenData\BswM_Lcfg.c	   503    if (ruleId < BswM_GetSizeOfRuleStates(partitionIdx))
+; ..\Appl\GenData\BswM_Lcfg.c	   504    {
+; ..\Appl\GenData\BswM_Lcfg.c	   505      BswM_SetRuleStates(ruleId, state, partitionIdx); /* SBSW_BSWM_SETRULESTATE */
+; ..\Appl\GenData\BswM_Lcfg.c	   506    }
+; ..\Appl\GenData\BswM_Lcfg.c	   507    
+; ..\Appl\GenData\BswM_Lcfg.c	   508    BSWM_DUMMY_STATEMENT(partitionIdx); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\Appl\GenData\BswM_Lcfg.c	   509  }
+; ..\Appl\GenData\BswM_Lcfg.c	   510  
+; ..\Appl\GenData\BswM_Lcfg.c	   511  
+; ..\Appl\GenData\BswM_Lcfg.c	   512  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   513   *  BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION
+; ..\Appl\GenData\BswM_Lcfg.c	   514   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   515  BSWM_LOCAL FUNC(void, BSWM_CODE) BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx)
+; Function BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION
+BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION:	.type	func
+
+; ..\Appl\GenData\BswM_Lcfg.c	   516  {
+; ..\Appl\GenData\BswM_Lcfg.c	   517  
+; ..\Appl\GenData\BswM_Lcfg.c	   518    (void)BswM_ActionList_INIT_AL_Initialize(partitionIdx);
+	j	BswM_ActionList_INIT_AL_Initialize
+	
+__BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION_function_end:
+	.size	BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION,__BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION_function_end-BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION
+	; End of function
+	
+	.sdecl	'.text.BswM_Lcfg.BswM_ActionList_INIT_AL_Initialize',code
+	.sect	'.text.BswM_Lcfg.BswM_ActionList_INIT_AL_Initialize'
+	.align	2
+	
+
+; ..\Appl\GenData\BswM_Lcfg.c	   519    BSWM_DUMMY_STATEMENT(partitionIdx); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\Appl\GenData\BswM_Lcfg.c	   520  }
+; ..\Appl\GenData\BswM_Lcfg.c	   521  
+; ..\Appl\GenData\BswM_Lcfg.c	   522  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   523   *  BswMActionListFunctions
+; ..\Appl\GenData\BswM_Lcfg.c	   524   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   525  
+; ..\Appl\GenData\BswM_Lcfg.c	   526  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   527   *  BswM_ActionList_INIT_AL_Initialize
+; ..\Appl\GenData\BswM_Lcfg.c	   528   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   529  BSWM_LOCAL FUNC(Std_ReturnType, BSWM_CODE) BswM_ActionList_INIT_AL_Initialize(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx)
+; Function BswM_ActionList_INIT_AL_Initialize
+BswM_ActionList_INIT_AL_Initialize:	.type	func
+
+; ..\Appl\GenData\BswM_Lcfg.c	   530  {
+; ..\Appl\GenData\BswM_Lcfg.c	   531    /*lint -save -e534 *//* PRQA S 3109, 3200 1 */ /* MD_MSR_14.3, MD_BSWM_3200 */
+; ..\Appl\GenData\BswM_Lcfg.c	   532    Det_Init(Det_Config_Ptr);
+	mov.a	a4,#0
+	call	Det_Init
+
+; ..\Appl\GenData\BswM_Lcfg.c	   533    /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   534    /*lint -save -e534 *//* PRQA S 3109, 3200 1 */ /* MD_MSR_14.3, MD_BSWM_3200 */
+; ..\Appl\GenData\BswM_Lcfg.c	   535    ComM_PreInit(ComM_Config_Ptr);
+	mov.a	a4,#0
+	call	ComM_PreInit
+
+; ..\Appl\GenData\BswM_Lcfg.c	   536    /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   537    /*lint -save -e534 *//* PRQA S 3109, 3200 1 */ /* MD_MSR_14.3, MD_BSWM_3200 */
+; ..\Appl\GenData\BswM_Lcfg.c	   538    E2EXf_Init(NULL_PTR);
+	mov.a	a4,#0
+	call	E2EXf_Init
+
+; ..\Appl\GenData\BswM_Lcfg.c	   539    /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   540    /*lint -save -e534 *//* PRQA S 3109, 3200 1 */ /* MD_MSR_14.3, MD_BSWM_3200 */
+; ..\Appl\GenData\BswM_Lcfg.c	   541    Can_Init(Can_Config_Ptr);
+	mov.a	a4,#0
+	call	Can_Init
+
+; ..\Appl\GenData\BswM_Lcfg.c	   542    /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   543    /*lint -save -e534 *//* PRQA S 3109, 3200 1 */ /* MD_MSR_14.3, MD_BSWM_3200 */
+; ..\Appl\GenData\BswM_Lcfg.c	   544    CanIf_Init(CanIf_Config_Ptr);
+	mov.a	a4,#0
+	call	CanIf_Init
+
+; ..\Appl\GenData\BswM_Lcfg.c	   545    /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   546    /*lint -save -e534 *//* PRQA S 3109, 3200 1 */ /* MD_MSR_14.3, MD_BSWM_3200 */
+; ..\Appl\GenData\BswM_Lcfg.c	   547    Com_Init(Com_Config_Ptr);
+	mov.a	a4,#0
+	call	Com_Init
+
+; ..\Appl\GenData\BswM_Lcfg.c	   548    /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   549    /*lint -save -e534 *//* PRQA S 3109, 3200 1 */ /* MD_MSR_14.3, MD_BSWM_3200 */
+; ..\Appl\GenData\BswM_Lcfg.c	   550    PduR_Init(PduR_Config_Ptr);
+	mov.a	a4,#0
+	call	PduR_Init
+
+; ..\Appl\GenData\BswM_Lcfg.c	   551    /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   552    /*lint -save -e534 *//* PRQA S 3109, 3200 1 */ /* MD_MSR_14.3, MD_BSWM_3200 */
+; ..\Appl\GenData\BswM_Lcfg.c	   553    CanSM_Init(CanSM_Config_Ptr);
+	mov.a	a4,#0
+	call	CanSM_Init
+
+; ..\Appl\GenData\BswM_Lcfg.c	   554    /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   555    /*lint -save -e534 *//* PRQA S 3109, 3200 1 */ /* MD_MSR_14.3, MD_BSWM_3200 */
+; ..\Appl\GenData\BswM_Lcfg.c	   556    NvM_Init();
+	call	NvM_Init
+
+; ..\Appl\GenData\BswM_Lcfg.c	   557    /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   558    BswM_AL_SetProgrammableInterrupts();
+	call	BswM_AL_SetProgrammableInterrupts
+
+; ..\Appl\GenData\BswM_Lcfg.c	   559    /*lint -save -e534 *//* PRQA S 3109, 3200 1 */ /* MD_MSR_14.3, MD_BSWM_3200 */
+; ..\Appl\GenData\BswM_Lcfg.c	   560    ComM_Init(ComM_Config_Ptr);
+	mov.a	a4,#0
+	call	ComM_Init
+
+; ..\Appl\GenData\BswM_Lcfg.c	   561    /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   562    /*lint -save -e534 *//* PRQA S 3109, 3200 1 */ /* MD_MSR_14.3, MD_BSWM_3200 */
+; ..\Appl\GenData\BswM_Lcfg.c	   563    ComM_PostInit();
+	call	ComM_PostInit
+
+; ..\Appl\GenData\BswM_Lcfg.c	   564    /*lint -restore */
+; ..\Appl\GenData\BswM_Lcfg.c	   565    BSWM_DUMMY_STATEMENT(partitionIdx); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\Appl\GenData\BswM_Lcfg.c	   566    return E_OK;
+; ..\Appl\GenData\BswM_Lcfg.c	   567  }/* PRQA S 6010, 6030, 6050 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL */
+	mov	d2,#0
+	ret
+	
+__BswM_ActionList_INIT_AL_Initialize_function_end:
+	.size	BswM_ActionList_INIT_AL_Initialize,__BswM_ActionList_INIT_AL_Initialize_function_end-BswM_ActionList_INIT_AL_Initialize
+	; End of function
+	
+	.sdecl	'.text.BswM_Lcfg.BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_Disable',code
+	.sect	'.text.BswM_Lcfg.BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_Disable'
+	.align	2
+	
+
+; ..\Appl\GenData\BswM_Lcfg.c	   568  
+; ..\Appl\GenData\BswM_Lcfg.c	   569  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   570   *  BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_Disable
+; ..\Appl\GenData\BswM_Lcfg.c	   571   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   572  BSWM_LOCAL FUNC(Std_ReturnType, BSWM_CODE) BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_Disable(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx)
+; Function BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_Disable
+BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_Disable:	.type	func
+
+; ..\Appl\GenData\BswM_Lcfg.c	   573  {
+; ..\Appl\GenData\BswM_Lcfg.c	   574    Com_IpduGroupStop(ComConf_ComIPduGroup_MyECU_oCAN00_Rx_4cbf71f7);
+	mov	d4,#0
+	call	Com_IpduGroupStop
+
+; ..\Appl\GenData\BswM_Lcfg.c	   575    BSWM_DUMMY_STATEMENT(partitionIdx); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\Appl\GenData\BswM_Lcfg.c	   576    return E_OK;
+; ..\Appl\GenData\BswM_Lcfg.c	   577  }/* PRQA S 6010, 6030, 6050 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL */
+	mov	d2,#0
+	ret
+	
+__BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_Disable_function_end:
+	.size	BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_Disable,__BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_Disable_function_end-BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_Disable
+	; End of function
+	
+	.sdecl	'.text.BswM_Lcfg.BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_EnableNoinit',code
+	.sect	'.text.BswM_Lcfg.BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_EnableNoinit'
+	.align	2
+	
+
+; ..\Appl\GenData\BswM_Lcfg.c	   578  
+; ..\Appl\GenData\BswM_Lcfg.c	   579  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   580   *  BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_EnableNoinit
+; ..\Appl\GenData\BswM_Lcfg.c	   581   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   582  BSWM_LOCAL FUNC(Std_ReturnType, BSWM_CODE) BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_EnableNoinit(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx)
+; Function BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_EnableNoinit
+BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_EnableNoinit:	.type	func
+
+; ..\Appl\GenData\BswM_Lcfg.c	   583  {
+; ..\Appl\GenData\BswM_Lcfg.c	   584    Com_IpduGroupStart(ComConf_ComIPduGroup_MyECU_oCAN00_Rx_4cbf71f7, FALSE);
+	mov	d4,#0
+	mov	d5,d4
+	call	Com_IpduGroupStart
+
+; ..\Appl\GenData\BswM_Lcfg.c	   585    BSWM_DUMMY_STATEMENT(partitionIdx); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\Appl\GenData\BswM_Lcfg.c	   586    return E_OK;
+; ..\Appl\GenData\BswM_Lcfg.c	   587  }/* PRQA S 6010, 6030, 6050 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL */
+	mov	d2,#0
+	ret
+	
+__BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_EnableNoinit_function_end:
+	.size	BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_EnableNoinit,__BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_EnableNoinit_function_end-BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_EnableNoinit
+	; End of function
+	
+	.sdecl	'.text.BswM_Lcfg.BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_Disable',code
+	.sect	'.text.BswM_Lcfg.BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_Disable'
+	.align	2
+	
+
+; ..\Appl\GenData\BswM_Lcfg.c	   588  
+; ..\Appl\GenData\BswM_Lcfg.c	   589  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   590   *  BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_Disable
+; ..\Appl\GenData\BswM_Lcfg.c	   591   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   592  BSWM_LOCAL FUNC(Std_ReturnType, BSWM_CODE) BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_Disable(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx)
+; Function BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_Disable
+BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_Disable:	.type	func
+
+; ..\Appl\GenData\BswM_Lcfg.c	   593  {
+; ..\Appl\GenData\BswM_Lcfg.c	   594    Com_IpduGroupStop(ComConf_ComIPduGroup_MyECU_oCAN00_Tx_1ae5d671);
+	mov	d4,#1
+	call	Com_IpduGroupStop
+
+; ..\Appl\GenData\BswM_Lcfg.c	   595    BSWM_DUMMY_STATEMENT(partitionIdx); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\Appl\GenData\BswM_Lcfg.c	   596    return E_OK;
+; ..\Appl\GenData\BswM_Lcfg.c	   597  }/* PRQA S 6010, 6030, 6050 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL */
+	mov	d2,#0
+	ret
+	
+__BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_Disable_function_end:
+	.size	BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_Disable,__BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_Disable_function_end-BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_Disable
+	; End of function
+	
+	.sdecl	'.text.BswM_Lcfg.BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_EnableNoinit',code
+	.sect	'.text.BswM_Lcfg.BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_EnableNoinit'
+	.align	2
+	
+
+; ..\Appl\GenData\BswM_Lcfg.c	   598  
+; ..\Appl\GenData\BswM_Lcfg.c	   599  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   600   *  BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_EnableNoinit
+; ..\Appl\GenData\BswM_Lcfg.c	   601   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   602  BSWM_LOCAL FUNC(Std_ReturnType, BSWM_CODE) BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_EnableNoinit(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx)
+; Function BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_EnableNoinit
+BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_EnableNoinit:	.type	func
+
+; ..\Appl\GenData\BswM_Lcfg.c	   603  {
+; ..\Appl\GenData\BswM_Lcfg.c	   604    Com_IpduGroupStart(ComConf_ComIPduGroup_MyECU_oCAN00_Tx_1ae5d671, FALSE);
+	mov	d4,#1
+	mov	d5,#0
+	call	Com_IpduGroupStart
+
+; ..\Appl\GenData\BswM_Lcfg.c	   605    BSWM_DUMMY_STATEMENT(partitionIdx); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\Appl\GenData\BswM_Lcfg.c	   606    return E_OK;
+; ..\Appl\GenData\BswM_Lcfg.c	   607  }/* PRQA S 6010, 6030, 6050 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL */
+	mov	d2,#0
+	ret
+	
+__BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_EnableNoinit_function_end:
+	.size	BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_EnableNoinit,__BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_EnableNoinit_function_end-BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_EnableNoinit
+	; End of function
+	
+	.sdecl	'.text.BswM_Lcfg.BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Disable_DM',code
+	.sect	'.text.BswM_Lcfg.BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Disable_DM'
+	.align	2
+	
+
+; ..\Appl\GenData\BswM_Lcfg.c	   608  
+; ..\Appl\GenData\BswM_Lcfg.c	   609  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   610   *  BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Disable_DM
+; ..\Appl\GenData\BswM_Lcfg.c	   611   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   612  BSWM_LOCAL FUNC(Std_ReturnType, BSWM_CODE) BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Disable_DM(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx)
+; Function BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Disable_DM
+BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Disable_DM:	.type	func
+
+; ..\Appl\GenData\BswM_Lcfg.c	   613  {
+; ..\Appl\GenData\BswM_Lcfg.c	   614    Com_DisableReceptionDM(ComConf_ComIPduGroup_MyECU_oCAN00_Rx_4cbf71f7);
+	mov	d4,#0
+	call	Com_DisableReceptionDM
+
+; ..\Appl\GenData\BswM_Lcfg.c	   615    BSWM_DUMMY_STATEMENT(partitionIdx); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\Appl\GenData\BswM_Lcfg.c	   616    return E_OK;
+; ..\Appl\GenData\BswM_Lcfg.c	   617  }/* PRQA S 6010, 6030, 6050 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL */
+	mov	d2,#0
+	ret
+	
+__BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Disable_DM_function_end:
+	.size	BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Disable_DM,__BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Disable_DM_function_end-BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Disable_DM
+	; End of function
+	
+	.sdecl	'.text.BswM_Lcfg.BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Enable_DM',code
+	.sect	'.text.BswM_Lcfg.BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Enable_DM'
+	.align	2
+	
+
+; ..\Appl\GenData\BswM_Lcfg.c	   618  
+; ..\Appl\GenData\BswM_Lcfg.c	   619  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   620   *  BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Enable_DM
+; ..\Appl\GenData\BswM_Lcfg.c	   621   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   622  BSWM_LOCAL FUNC(Std_ReturnType, BSWM_CODE) BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Enable_DM(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx)
+; Function BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Enable_DM
+BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Enable_DM:	.type	func
+
+; ..\Appl\GenData\BswM_Lcfg.c	   623  {
+; ..\Appl\GenData\BswM_Lcfg.c	   624    Com_EnableReceptionDM(ComConf_ComIPduGroup_MyECU_oCAN00_Rx_4cbf71f7);
+	mov	d4,#0
+	call	Com_EnableReceptionDM
+
+; ..\Appl\GenData\BswM_Lcfg.c	   625    BSWM_DUMMY_STATEMENT(partitionIdx); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\Appl\GenData\BswM_Lcfg.c	   626    return E_OK;
+; ..\Appl\GenData\BswM_Lcfg.c	   627  }/* PRQA S 6010, 6030, 6050 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL */
+	mov	d2,#0
+	ret
+	
+__BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Enable_DM_function_end:
+	.size	BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Enable_DM,__BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Enable_DM_function_end-BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Enable_DM
+	; End of function
+	
+	.sdecl	'.text.BswM_Lcfg.BswM_Rule_CC_CN_CAN00_5e566ad9_RX',code
+	.sect	'.text.BswM_Lcfg.BswM_Rule_CC_CN_CAN00_5e566ad9_RX'
+	.align	2
+	
+
+; ..\Appl\GenData\BswM_Lcfg.c	   628  
+; ..\Appl\GenData\BswM_Lcfg.c	   629  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   630   *  BswMRuleFunctions
+; ..\Appl\GenData\BswM_Lcfg.c	   631   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   632  
+; ..\Appl\GenData\BswM_Lcfg.c	   633  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   634   *  BswM_Rule_CC_CN_CAN00_5e566ad9_RX
+; ..\Appl\GenData\BswM_Lcfg.c	   635   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   636  BSWM_LOCAL FUNC(BswM_HandleType, BSWM_CODE) BswM_Rule_CC_CN_CAN00_5e566ad9_RX(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx)
+; Function BswM_Rule_CC_CN_CAN00_5e566ad9_RX
+BswM_Rule_CC_CN_CAN00_5e566ad9_RX:	.type	func
+
+; ..\Appl\GenData\BswM_Lcfg.c	   637  {
+; ..\Appl\GenData\BswM_Lcfg.c	   638    BswM_HandleType retVal = BSWM_NO_ACTIONLIST(partitionIdx);
+; ..\Appl\GenData\BswM_Lcfg.c	   639    /* Evaluate logical expression CC_LE_CN_CAN00_5e566ad9_RX. */
+; ..\Appl\GenData\BswM_Lcfg.c	   640    if(BswM_GetCanSMChannelState(0, 0u) != CANSM_BSWM_NO_COMMUNICATION)
+	mov	d2,#7
+	ld.bu	d0,BswM_CanSMChannelState
+
+; ..\Appl\GenData\BswM_Lcfg.c	   641    {
+; ..\Appl\GenData\BswM_Lcfg.c	   642      if( BswM_GetRuleStates(BSWM_ID_RULE_CC_CN_CAN00_5e566ad9_RX, partitionIdx) != BSWM_TRUE ) /* COV_BSWM_TRIGGEREDRULEEXECUTION */
+	ld.bu	d15,BswM_RuleStates
+	jeq	d0,#0,.L9
+	jeq	d15,#1,.L10
+	mov	d15,#1
+
+; ..\Appl\GenData\BswM_Lcfg.c	   643      {
+; ..\Appl\GenData\BswM_Lcfg.c	   644        BswM_UpdateRuleStates(BSWM_ID_RULE_CC_CN_CAN00_5e566ad9_RX, BSWM_TRUE, partitionIdx);
+; ..\Appl\GenData\BswM_Lcfg.c	   645        /* Return triggered action list BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_EnableNoinit. */
+; ..\Appl\GenData\BswM_Lcfg.c	   646        retVal = BSWM_ID_AL_CC_AL_CN_CAN00_5e566ad9_RX_EnableNoinit;
+	mov	d2,#2
+	j	.L11
+.L9:
+
+; ..\Appl\GenData\BswM_Lcfg.c	   647      }
+; ..\Appl\GenData\BswM_Lcfg.c	   648    }
+; ..\Appl\GenData\BswM_Lcfg.c	   649    else
+; ..\Appl\GenData\BswM_Lcfg.c	   650    {
+; ..\Appl\GenData\BswM_Lcfg.c	   651      if( BswM_GetRuleStates(BSWM_ID_RULE_CC_CN_CAN00_5e566ad9_RX, partitionIdx) != BSWM_FALSE ) /* COV_BSWM_TRIGGEREDRULEEXECUTION */
+	jeq	d15,#0,.L12
+	mov	d15,#0
+
+; ..\Appl\GenData\BswM_Lcfg.c	   652      {
+; ..\Appl\GenData\BswM_Lcfg.c	   653        BswM_UpdateRuleStates(BSWM_ID_RULE_CC_CN_CAN00_5e566ad9_RX, BSWM_FALSE, partitionIdx);
+; ..\Appl\GenData\BswM_Lcfg.c	   654        /* Return triggered action list BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_Disable. */
+; ..\Appl\GenData\BswM_Lcfg.c	   655        retVal = BSWM_ID_AL_CC_AL_CN_CAN00_5e566ad9_RX_Disable;
+	mov	d2,#1
+.L12:
+.L11:
+.L10:
+
+; ..\Appl\GenData\BswM_Lcfg.c	   656      }
+; ..\Appl\GenData\BswM_Lcfg.c	   657    }
+; ..\Appl\GenData\BswM_Lcfg.c	   658    BSWM_DUMMY_STATEMENT(partitionIdx); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\Appl\GenData\BswM_Lcfg.c	   659    return retVal;
+	st.b	BswM_RuleStates,d15
+
+; ..\Appl\GenData\BswM_Lcfg.c	   660  }
+	ret
+	
+__BswM_Rule_CC_CN_CAN00_5e566ad9_RX_function_end:
+	.size	BswM_Rule_CC_CN_CAN00_5e566ad9_RX,__BswM_Rule_CC_CN_CAN00_5e566ad9_RX_function_end-BswM_Rule_CC_CN_CAN00_5e566ad9_RX
+	; End of function
+	
+	.sdecl	'.text.BswM_Lcfg.BswM_Rule_CC_CN_CAN00_5e566ad9_TX',code
+	.sect	'.text.BswM_Lcfg.BswM_Rule_CC_CN_CAN00_5e566ad9_TX'
+	.align	2
+	
+
+; ..\Appl\GenData\BswM_Lcfg.c	   661  
+; ..\Appl\GenData\BswM_Lcfg.c	   662  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   663   *  BswM_Rule_CC_CN_CAN00_5e566ad9_TX
+; ..\Appl\GenData\BswM_Lcfg.c	   664   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   665  BSWM_LOCAL FUNC(BswM_HandleType, BSWM_CODE) BswM_Rule_CC_CN_CAN00_5e566ad9_TX(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx)
+; Function BswM_Rule_CC_CN_CAN00_5e566ad9_TX
+BswM_Rule_CC_CN_CAN00_5e566ad9_TX:	.type	func
+
+; ..\Appl\GenData\BswM_Lcfg.c	   666  {
+; ..\Appl\GenData\BswM_Lcfg.c	   667    BswM_HandleType retVal = BSWM_NO_ACTIONLIST(partitionIdx);
+; ..\Appl\GenData\BswM_Lcfg.c	   668    /* Evaluate logical expression CC_LE_CN_CAN00_5e566ad9_TX. */
+; ..\Appl\GenData\BswM_Lcfg.c	   669    if(BswM_GetCanSMChannelState(0, 0u) == CANSM_BSWM_FULL_COMMUNICATION)
+	mov	d2,#7
+	ld.bu	d0,BswM_CanSMChannelState
+
+; ..\Appl\GenData\BswM_Lcfg.c	   670    {
+; ..\Appl\GenData\BswM_Lcfg.c	   671      if( BswM_GetRuleStates(BSWM_ID_RULE_CC_CN_CAN00_5e566ad9_TX, partitionIdx) != BSWM_TRUE ) /* COV_BSWM_TRIGGEREDRULEEXECUTION */
+	lea	a15,BswM_RuleStates+1
+	ld.bu	d15,[a15]
+	jne	d0,#2,.L14
+	jeq	d15,#1,.L15
+	mov	d15,#1
+
+; ..\Appl\GenData\BswM_Lcfg.c	   672      {
+; ..\Appl\GenData\BswM_Lcfg.c	   673        BswM_UpdateRuleStates(BSWM_ID_RULE_CC_CN_CAN00_5e566ad9_TX, BSWM_TRUE, partitionIdx);
+; ..\Appl\GenData\BswM_Lcfg.c	   674        /* Return triggered action list BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_EnableNoinit. */
+; ..\Appl\GenData\BswM_Lcfg.c	   675        retVal = BSWM_ID_AL_CC_AL_CN_CAN00_5e566ad9_TX_EnableNoinit;
+	mov	d2,#4
+	j	.L16
+.L14:
+
+; ..\Appl\GenData\BswM_Lcfg.c	   676      }
+; ..\Appl\GenData\BswM_Lcfg.c	   677    }
+; ..\Appl\GenData\BswM_Lcfg.c	   678    else
+; ..\Appl\GenData\BswM_Lcfg.c	   679    {
+; ..\Appl\GenData\BswM_Lcfg.c	   680      if( BswM_GetRuleStates(BSWM_ID_RULE_CC_CN_CAN00_5e566ad9_TX, partitionIdx) != BSWM_FALSE ) /* COV_BSWM_TRIGGEREDRULEEXECUTION */
+	jeq	d15,#0,.L17
+	mov	d15,#0
+
+; ..\Appl\GenData\BswM_Lcfg.c	   681      {
+; ..\Appl\GenData\BswM_Lcfg.c	   682        BswM_UpdateRuleStates(BSWM_ID_RULE_CC_CN_CAN00_5e566ad9_TX, BSWM_FALSE, partitionIdx);
+; ..\Appl\GenData\BswM_Lcfg.c	   683        /* Return triggered action list BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_Disable. */
+; ..\Appl\GenData\BswM_Lcfg.c	   684        retVal = BSWM_ID_AL_CC_AL_CN_CAN00_5e566ad9_TX_Disable;
+	mov	d2,#3
+.L17:
+.L16:
+.L15:
+
+; ..\Appl\GenData\BswM_Lcfg.c	   685      }
+; ..\Appl\GenData\BswM_Lcfg.c	   686    }
+; ..\Appl\GenData\BswM_Lcfg.c	   687    BSWM_DUMMY_STATEMENT(partitionIdx); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\Appl\GenData\BswM_Lcfg.c	   688    return retVal;
+	st.b	[a15],d15
+
+; ..\Appl\GenData\BswM_Lcfg.c	   689  }
+	ret
+	
+__BswM_Rule_CC_CN_CAN00_5e566ad9_TX_function_end:
+	.size	BswM_Rule_CC_CN_CAN00_5e566ad9_TX,__BswM_Rule_CC_CN_CAN00_5e566ad9_TX_function_end-BswM_Rule_CC_CN_CAN00_5e566ad9_TX
+	; End of function
+	
+	.sdecl	'.text.BswM_Lcfg.BswM_Rule_CC_CN_CAN00_5e566ad9_RX_DM',code
+	.sect	'.text.BswM_Lcfg.BswM_Rule_CC_CN_CAN00_5e566ad9_RX_DM'
+	.align	2
+	
+
+; ..\Appl\GenData\BswM_Lcfg.c	   690  
+; ..\Appl\GenData\BswM_Lcfg.c	   691  /**********************************************************************************************************************
+; ..\Appl\GenData\BswM_Lcfg.c	   692   *  BswM_Rule_CC_CN_CAN00_5e566ad9_RX_DM
+; ..\Appl\GenData\BswM_Lcfg.c	   693   *********************************************************************************************************************/
+; ..\Appl\GenData\BswM_Lcfg.c	   694  BSWM_LOCAL FUNC(BswM_HandleType, BSWM_CODE) BswM_Rule_CC_CN_CAN00_5e566ad9_RX_DM(BswM_PCPartitionConfigIdxOfPartitionIdentifiersType partitionIdx)
+; Function BswM_Rule_CC_CN_CAN00_5e566ad9_RX_DM
+BswM_Rule_CC_CN_CAN00_5e566ad9_RX_DM:	.type	func
+
+; ..\Appl\GenData\BswM_Lcfg.c	   695  {
+; ..\Appl\GenData\BswM_Lcfg.c	   696    BswM_HandleType retVal = BSWM_NO_ACTIONLIST(partitionIdx);
+; ..\Appl\GenData\BswM_Lcfg.c	   697    /* Evaluate logical expression CC_LE_CN_CAN00_5e566ad9_RX_DM. */
+; ..\Appl\GenData\BswM_Lcfg.c	   698    if(BswM_GetCanSMChannelState(0, 0u) == CANSM_BSWM_FULL_COMMUNICATION)
+	mov	d2,#7
+	ld.bu	d0,BswM_CanSMChannelState
+
+; ..\Appl\GenData\BswM_Lcfg.c	   699    {
+; ..\Appl\GenData\BswM_Lcfg.c	   700      if( BswM_GetRuleStates(BSWM_ID_RULE_CC_CN_CAN00_5e566ad9_RX_DM, partitionIdx) != BSWM_TRUE ) /* COV_BSWM_TRIGGEREDRULEEXECUTION */
+	lea	a15,BswM_RuleStates+2
+	ld.bu	d15,[a15]
+	jne	d0,#2,.L19
+	jeq	d15,#1,.L20
+	mov	d15,#1
+
+; ..\Appl\GenData\BswM_Lcfg.c	   701      {
+; ..\Appl\GenData\BswM_Lcfg.c	   702        BswM_UpdateRuleStates(BSWM_ID_RULE_CC_CN_CAN00_5e566ad9_RX_DM, BSWM_TRUE, partitionIdx);
+; ..\Appl\GenData\BswM_Lcfg.c	   703        /* Return triggered action list BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Enable_DM. */
+; ..\Appl\GenData\BswM_Lcfg.c	   704        retVal = BSWM_ID_AL_CC_AL_CN_CAN00_5e566ad9_Enable_DM;
+	mov	d2,#6
+	j	.L21
+.L19:
+
+; ..\Appl\GenData\BswM_Lcfg.c	   705      }
+; ..\Appl\GenData\BswM_Lcfg.c	   706    }
+; ..\Appl\GenData\BswM_Lcfg.c	   707    else
+; ..\Appl\GenData\BswM_Lcfg.c	   708    {
+; ..\Appl\GenData\BswM_Lcfg.c	   709      if( BswM_GetRuleStates(BSWM_ID_RULE_CC_CN_CAN00_5e566ad9_RX_DM, partitionIdx) != BSWM_FALSE ) /* COV_BSWM_TRIGGEREDRULEEXECUTION */
+	jeq	d15,#0,.L22
+	mov	d15,#0
+
+; ..\Appl\GenData\BswM_Lcfg.c	   710      {
+; ..\Appl\GenData\BswM_Lcfg.c	   711        BswM_UpdateRuleStates(BSWM_ID_RULE_CC_CN_CAN00_5e566ad9_RX_DM, BSWM_FALSE, partitionIdx);
+; ..\Appl\GenData\BswM_Lcfg.c	   712        /* Return triggered action list BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Disable_DM. */
+; ..\Appl\GenData\BswM_Lcfg.c	   713        retVal = BSWM_ID_AL_CC_AL_CN_CAN00_5e566ad9_Disable_DM;
+	mov	d2,#5
+.L22:
+.L21:
+.L20:
+
+; ..\Appl\GenData\BswM_Lcfg.c	   714      }
+; ..\Appl\GenData\BswM_Lcfg.c	   715    }
+; ..\Appl\GenData\BswM_Lcfg.c	   716    BSWM_DUMMY_STATEMENT(partitionIdx); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */
+; ..\Appl\GenData\BswM_Lcfg.c	   717    return retVal;
+	st.b	[a15],d15
+
+; ..\Appl\GenData\BswM_Lcfg.c	   718  }
+	ret
+	
+__BswM_Rule_CC_CN_CAN00_5e566ad9_RX_DM_function_end:
+	.size	BswM_Rule_CC_CN_CAN00_5e566ad9_RX_DM,__BswM_Rule_CC_CN_CAN00_5e566ad9_RX_DM_function_end-BswM_Rule_CC_CN_CAN00_5e566ad9_RX_DM
+	; End of function
+	
+	.sdecl	'.rodata.BswM_Lcfg.BswM_ActionLists',data,rom
+	.sect	'.rodata.BswM_Lcfg.BswM_ActionLists'
+	.global	BswM_ActionLists
+	.align	4
+BswM_ActionLists:	.type	object
+	.size	BswM_ActionLists,28
+	.word	BswM_ActionList_INIT_AL_Initialize,BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_Disable,BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_EnableNoinit,BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_Disable
+	.word	BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_EnableNoinit,BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Disable_DM,BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Enable_DM
+	.sdecl	'.zrodata.BswM_Lcfg.BswM_InitGenVarAndInitAL',data,rom
+	.sect	'.zrodata.BswM_Lcfg.BswM_InitGenVarAndInitAL'
+	.global	BswM_InitGenVarAndInitAL
+	.align	4
+BswM_InitGenVarAndInitAL:	.type	object
+	.size	BswM_InitGenVarAndInitAL,4
+	.word	BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION
+	.sdecl	'.zrodata.BswM_Lcfg.BswM_PartitionIdentifiers',data,rom
+	.sect	'.zrodata.BswM_Lcfg.BswM_PartitionIdentifiers'
+	.global	BswM_PartitionIdentifiers
+	.align	2
+BswM_PartitionIdentifiers:	.type	object
+	.size	BswM_PartitionIdentifiers,6
+	.space	6
+	.sdecl	'.rodata.BswM_Lcfg.BswM_Rules',data,rom
+	.sect	'.rodata.BswM_Lcfg.BswM_Rules'
+	.global	BswM_Rules
+	.align	4
+BswM_Rules:	.type	object
+	.size	BswM_Rules,24
+	.space	4
+	.word	BswM_Rule_CC_CN_CAN00_5e566ad9_RX
+	.byte	2,1
+	.space	2
+	.word	BswM_Rule_CC_CN_CAN00_5e566ad9_TX
+	.byte	1,2
+	.space	2
+	.word	BswM_Rule_CC_CN_CAN00_5e566ad9_RX_DM
+	.sdecl	'.zrodata.BswM_Lcfg.BswM_RulesInd',data,rom
+	.sect	'.zrodata.BswM_Lcfg.BswM_RulesInd'
+	.global	BswM_RulesInd
+BswM_RulesInd:	.type	object
+	.size	BswM_RulesInd,3
+	.space	1
+	.byte	1,2
+	.sdecl	'.zbss.BswM_Lcfg.BswM_ActionListQueue',data
+	.sect	'.zbss.BswM_Lcfg.BswM_ActionListQueue'
+	.global	BswM_ActionListQueue
+	.align	4
+BswM_ActionListQueue:	.type	object
+	.size	BswM_ActionListQueue,8
+	.space	8
+	.sdecl	'.zbss.BswM_Lcfg.BswM_CanSMChannelState',data
+	.sect	'.zbss.BswM_Lcfg.BswM_CanSMChannelState'
+	.global	BswM_CanSMChannelState
+BswM_CanSMChannelState:	.type	object
+	.size	BswM_CanSMChannelState,1
+	.space	1
+	.sdecl	'.zbss.BswM_Lcfg.BswM_ForcedActionListPriority',data
+	.sect	'.zbss.BswM_Lcfg.BswM_ForcedActionListPriority'
+	.global	BswM_ForcedActionListPriority
+BswM_ForcedActionListPriority:	.type	object
+	.size	BswM_ForcedActionListPriority,1
+	.space	1
+	.sdecl	'.zbss.BswM_Lcfg.BswM_Initialized',data
+	.sect	'.zbss.BswM_Lcfg.BswM_Initialized'
+	.global	BswM_Initialized
+BswM_Initialized:	.type	object
+	.size	BswM_Initialized,1
+	.space	1
+	.sdecl	'.zbss.BswM_Lcfg.BswM_ModeRequestQueue',data
+	.sect	'.zbss.BswM_Lcfg.BswM_ModeRequestQueue'
+	.global	BswM_ModeRequestQueue
+BswM_ModeRequestQueue:	.type	object
+	.size	BswM_ModeRequestQueue,1
+	.space	1
+	.sdecl	'.zbss.BswM_Lcfg.BswM_QueueSemaphore',data
+	.sect	'.zbss.BswM_Lcfg.BswM_QueueSemaphore'
+	.global	BswM_QueueSemaphore
+BswM_QueueSemaphore:	.type	object
+	.size	BswM_QueueSemaphore,1
+	.space	1
+	.sdecl	'.zbss.BswM_Lcfg.BswM_QueueWritten',data
+	.sect	'.zbss.BswM_Lcfg.BswM_QueueWritten'
+	.global	BswM_QueueWritten
+BswM_QueueWritten:	.type	object
+	.size	BswM_QueueWritten,1
+	.space	1
+	.sdecl	'.zbss.BswM_Lcfg.BswM_RuleStates',data
+	.sect	'.zbss.BswM_Lcfg.BswM_RuleStates'
+	.global	BswM_RuleStates
+	.align	2
+BswM_RuleStates:	.type	object
+	.size	BswM_RuleStates,4
+	.space	4
+	.sdecl	'.zbss.BswM_Lcfg.BswM_PreInitialized',data
+	.sect	'.zbss.BswM_Lcfg.BswM_PreInitialized'
+	.global	BswM_PreInitialized
+BswM_PreInitialized:	.type	object
+	.size	BswM_PreInitialized,1
+	.space	1
+	.calls	'__INDIRECT__','BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION'
+	.calls	'__INDIRECT__','BswM_ActionList_INIT_AL_Initialize'
+	.calls	'__INDIRECT__','BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_Disable'
+	.calls	'__INDIRECT__','BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_EnableNoinit'
+	.calls	'__INDIRECT__','BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_Disable'
+	.calls	'__INDIRECT__','BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_EnableNoinit'
+	.calls	'__INDIRECT__','BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Disable_DM'
+	.calls	'__INDIRECT__','BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Enable_DM'
+	.calls	'__INDIRECT__','BswM_Rule_CC_CN_CAN00_5e566ad9_RX'
+	.calls	'__INDIRECT__','BswM_Rule_CC_CN_CAN00_5e566ad9_TX'
+	.calls	'__INDIRECT__','BswM_Rule_CC_CN_CAN00_5e566ad9_RX_DM'
+	.calls	'BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION','BswM_ActionList_INIT_AL_Initialize'
+	.calls	'BswM_ActionList_INIT_AL_Initialize','Det_Init'
+	.calls	'BswM_ActionList_INIT_AL_Initialize','ComM_PreInit'
+	.calls	'BswM_ActionList_INIT_AL_Initialize','E2EXf_Init'
+	.calls	'BswM_ActionList_INIT_AL_Initialize','Can_Init'
+	.calls	'BswM_ActionList_INIT_AL_Initialize','CanIf_Init'
+	.calls	'BswM_ActionList_INIT_AL_Initialize','Com_Init'
+	.calls	'BswM_ActionList_INIT_AL_Initialize','PduR_Init'
+	.calls	'BswM_ActionList_INIT_AL_Initialize','CanSM_Init'
+	.calls	'BswM_ActionList_INIT_AL_Initialize','NvM_Init'
+	.calls	'BswM_ActionList_INIT_AL_Initialize','BswM_AL_SetProgrammableInterrupts'
+	.calls	'BswM_ActionList_INIT_AL_Initialize','ComM_Init'
+	.calls	'BswM_ActionList_INIT_AL_Initialize','ComM_PostInit'
+	.calls	'BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_Disable','Com_IpduGroupStop'
+	.calls	'BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_EnableNoinit','Com_IpduGroupStart'
+	.calls	'BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_Disable','Com_IpduGroupStop'
+	.calls	'BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_EnableNoinit','Com_IpduGroupStart'
+	.calls	'BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Disable_DM','Com_DisableReceptionDM'
+	.calls	'BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Enable_DM','Com_EnableReceptionDM'
+	.calls	'BswM_InitGenVarAndInitAL_BSWM_SINGLEPARTITION','',0
+	.calls	'BswM_ActionList_INIT_AL_Initialize','',0
+	.calls	'BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_Disable','',0
+	.calls	'BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_RX_EnableNoinit','',0
+	.calls	'BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_Disable','',0
+	.calls	'BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_TX_EnableNoinit','',0
+	.calls	'BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Disable_DM','',0
+	.calls	'BswM_ActionList_CC_AL_CN_CAN00_5e566ad9_Enable_DM','',0
+	.calls	'BswM_Rule_CC_CN_CAN00_5e566ad9_RX','',0
+	.calls	'BswM_Rule_CC_CN_CAN00_5e566ad9_TX','',0
+	.extern	ComM_PreInit
+	.extern	ComM_PostInit
+	.extern	ComM_Init
+	.extern	NvM_Init
+	.extern	BswM_AL_SetProgrammableInterrupts
+	.extern	Det_Init
+	.extern	Com_Init
+	.extern	Com_IpduGroupStart
+	.extern	Com_IpduGroupStop
+	.extern	Com_EnableReceptionDM
+	.extern	Com_DisableReceptionDM
+	.extern	E2EXf_Init
+	.extern	Can_Init
+	.extern	CanIf_Init
+	.extern	PduR_Init
+	.extern	CanSM_Init
+	.extern	__INDIRECT__
+	.calls	'BswM_Rule_CC_CN_CAN00_5e566ad9_RX_DM','',0
+
+; ..\Appl\GenData\BswM_Lcfg.c	   719  
+; ..\Appl\GenData\BswM_Lcfg.c	   720  
+; ..\Appl\GenData\BswM_Lcfg.c	   721  #define BSWM_STOP_SEC_CODE
+; ..\Appl\GenData\BswM_Lcfg.c	   722  /* PRQA S 5087 1 */ /* MD_MSR_MemMap */
+; ..\Appl\GenData\BswM_Lcfg.c	   723  #include "BswM_MemMap.h"
+; ..\Appl\GenData\BswM_Lcfg.c	   724  
+
+	; Module end

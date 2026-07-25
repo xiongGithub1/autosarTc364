@@ -1,0 +1,2279 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc20660a --dep-file=Appl\\Source\\CDD\\MotorFoc\\.MotorZeroCal.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=Appl\\Source\\CDD\\MotorFoc\\MotorZeroCal.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\Source\\CDD\\MotorFoc\\MotorZeroCal.src ..\\Appl\\Source\\CDD\\MotorFoc\\MotorZeroCal.c"
+	.compiler_name		"ctc"
+	;source	'..\\Appl\\Source\\CDD\\MotorFoc\\MotorZeroCal.c'
+
+	
+$TC162
+	.sdecl	'.zrodata.MotorZeroCal..1.cnt',data,rom
+	.sect	'.zrodata.MotorZeroCal..1.cnt'
+	.align	2
+.1.cnt:	.type	object
+	.size	.1.cnt,4
+	.word	981668463
+	.sdecl	'.zrodata.MotorZeroCal..2.cnt',data,rom
+	.sect	'.zrodata.MotorZeroCal..2.cnt'
+	.align	2
+.2.cnt:	.type	object
+	.size	.2.cnt,4
+	.word	1017370378
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_SetCalibratedFlag',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_SetCalibratedFlag'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	     1  #include "MotorZeroCal.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	     2  #include "MotorMode.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	     3  #include "MotorControll.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	     4  #include "MotorFoc_OpenLoop.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	     5  #include "MotorFoc_CurrentLoop.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	     6  #include "MotorCdd_Adc.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	     7  #include "CDD/TLE5012/Tle5012bd_Driver.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	     8  #include "CDD/TLE5012/TLE5012/tle5012b.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	     9  #include "CDD/TLE9180/Tle9180_Driver.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    10  #include "NvM.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    11  #include "NvM_Cfg.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    12  #include "Fee.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    13  #include "MemIf.h"
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    14  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    15  /* 0 = skip power-on NvM_ReadBlock (use while debugging Fee/NvM write).
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    16   * 1 = normal production: read DFlash after Fee IDLE. */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    17  #ifndef MOTORZEROCAL_BOOT_NVM_READ
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    18  #define MOTORZEROCAL_BOOT_NVM_READ  (1U)
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    19  #endif
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    20  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    21  /* Fee_StateVar.FeeInitGCState: 5=COMPLETE, 6=FAIL (FAIL still reports MEMIF_IDLE). */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    22  #define MOTORZEROCAL_FEE_INITGC_COMPLETE  (5U)
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    23  #define MOTORZEROCAL_FEE_INITGC_FAIL      (6U)
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    24  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    25  typedef struct
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    26  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    27    uint16 magic;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    28    uint16 angBase;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    29  } MotorZeroCal_StorageType;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    30  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    31  static MotorZeroCal_StorageType MotorZeroCal_Storage;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    32  volatile uint8 MotorZeroCal_NvReadPending = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    33  volatile uint8 MotorZeroCal_NvWritePending = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    34  volatile uint8 MotorZeroCal_NvLastOp = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    35  volatile uint8 MotorZeroCal_NvLastResult = (uint8)NVM_REQ_NOT_OK;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    36  volatile uint8 MotorZeroCal_NvLastApiRet = (uint8)E_NOT_OK;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    37  volatile uint32 MotorZeroCal_NvPendingTicks = 0UL;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    38  static uint8 MotorZeroCal_SavedOpenLoopRampEnable = 1U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    39  static uint8 MotorZeroCal_SavedOpenLoopControlMode = MOTORFOC_OPENLOOP_CONTROL_CURRENT;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    40  static float32 MotorZeroCal_SavedOpenLoopFixedAngleDeg = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    41  static uint8 MotorZeroCal_OpenLoopConfigSaved = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    42  /* Timed-cal path: NvM write result drives SAVING → DONE/FAULT. */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    43  static uint8 MotorZeroCal_TimedNvWriteActive = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    44  /* 1 = Init wants one boot ReadBlock after Fee becomes IDLE. */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    45  static uint8 MotorZeroCal_NvBootReadRequest = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    46  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    47  extern volatile MotorMode_Type MotorControll_MotorModeCmd;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    48  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    49  volatile MotorZeroCal_StateType MotorZeroCal_State = MOTORZEROCAL_STATE_IDLE;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    50  volatile uint8 MotorZeroCal_Calibrated = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    51  volatile uint8 MotorZeroCal_RotorZeroInitialized = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    52  volatile uint16 MotorZeroCal_AngBase = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    53  volatile uint32 MotorZeroCal_TimerMs = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    54  volatile uint32 MotorZeroCal_ElapsedMs = 0UL;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    55  volatile uint8 MotorZeroCal_RetryCount = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    56  volatile float32 MotorZeroCal_IdRefA = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    57  volatile float32 MotorZeroCal_IdRefTargetA = MOTORZEROCAL_ID_REF_A;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    58  volatile float32 MotorZeroCal_IdRefRampStepA = MOTORZEROCAL_ID_RAMP_STEP_A;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    59  volatile uint8 MotorZeroCal_StartRejectReason = MOTORZEROCAL_START_REJECT_NONE;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    60  volatile uint8 MotorZeroCal_FaultReason = MOTORZEROCAL_FAULT_NONE;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    61  volatile uint32 MotorZeroCal_AlignWaitMs = 0UL;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    62  volatile uint8 MotorZeroCal_NvDirty = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    63  volatile uint8 MotorZeroCal_NvSaveRequest = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    64  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    65  static uint8 MotorZeroCal_AngBasePendingApply = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    66  static uint16 MotorZeroCal_PendingAngBase = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    67  static uint32 MotorZeroCal_AngBaseApplyDelayMs = 0UL;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    68  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    69  static void MotorZeroCal_SetCalibratedFlag(uint8 value)
+; Function MotorZeroCal_SetCalibratedFlag
+MotorZeroCal_SetCalibratedFlag:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    70  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    71    MotorZeroCal_Calibrated = value;
+	st.b	MotorZeroCal_Calibrated,d4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    72    MotorZeroCal_RotorZeroInitialized = value;
+	st.b	MotorZeroCal_RotorZeroInitialized,d4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    73  }
+	ret
+	
+__MotorZeroCal_SetCalibratedFlag_function_end:
+	.size	MotorZeroCal_SetCalibratedFlag,__MotorZeroCal_SetCalibratedFlag_function_end-MotorZeroCal_SetCalibratedFlag
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_EnterFault',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_EnterFault'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    74  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    75  static void MotorZeroCal_EnterFault(uint8 reason)
+; Function MotorZeroCal_EnterFault
+MotorZeroCal_EnterFault:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    76  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    77    MotorZeroCal_FaultReason = reason;
+	st.b	MotorZeroCal_FaultReason,d4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    78    MotorZeroCal_State = MOTORZEROCAL_STATE_FAULT;
+	mov	d15,#4
+	st.b	MotorZeroCal_State,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    79    MotorZeroCal_TimedNvWriteActive = 0U;
+	mov	d15,#0
+	st.b	MotorZeroCal_TimedNvWriteActive,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    80  }
+	ret
+	
+__MotorZeroCal_EnterFault_function_end:
+	.size	MotorZeroCal_EnterFault,__MotorZeroCal_EnterFault_function_end-MotorZeroCal_EnterFault
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_ApplyAngBase',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_ApplyAngBase'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    81  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    82  static void MotorZeroCal_ApplyAngBase(uint16 angBase)
+; Function MotorZeroCal_ApplyAngBase
+MotorZeroCal_ApplyAngBase:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    83  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    84    Tle5012bd_Sensor.ANG_BASE = angBase;
+	movh.a	a15,#@his(Tle5012bd_Sensor+26)
+	st.h	[a15]@los(Tle5012bd_Sensor+26),d4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    85  #if (MOTORZEROCAL_SPI_ENABLE == 1U)
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    86    tle5012b_write_fast(MOD_3, angBase);
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    87    tle5012b_read_all();
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    88  #endif
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    89  }
+	ret
+	
+__MotorZeroCal_ApplyAngBase_function_end:
+	.size	MotorZeroCal_ApplyAngBase,__MotorZeroCal_ApplyAngBase_function_end-MotorZeroCal_ApplyAngBase
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_QueueAngBaseApply',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_QueueAngBaseApply'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    90  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    91  static void MotorZeroCal_QueueAngBaseApply(uint16 angBase)
+; Function MotorZeroCal_QueueAngBaseApply
+MotorZeroCal_QueueAngBaseApply:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    92  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    93    MotorZeroCal_PendingAngBase = angBase;
+	st.h	MotorZeroCal_PendingAngBase,d4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    94    Tle5012bd_Sensor.ANG_BASE = angBase;
+	movh.a	a15,#@his(Tle5012bd_Sensor+26)
+	st.h	[a15]@los(Tle5012bd_Sensor+26),d4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    95    MotorZeroCal_AngBasePendingApply = 1U;
+	mov	d15,#1
+	st.b	MotorZeroCal_AngBasePendingApply,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    96    MotorZeroCal_AngBaseApplyDelayMs = 0UL;
+	mov	d15,#0
+	st.w	MotorZeroCal_AngBaseApplyDelayMs,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    97  }
+	ret
+	
+__MotorZeroCal_QueueAngBaseApply_function_end:
+	.size	MotorZeroCal_QueueAngBaseApply,__MotorZeroCal_QueueAngBaseApply_function_end-MotorZeroCal_QueueAngBaseApply
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_ProcessDeferredAngBase',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_ProcessDeferredAngBase'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    98  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	    99  static void MotorZeroCal_ProcessDeferredAngBase(void)
+; Function MotorZeroCal_ProcessDeferredAngBase
+MotorZeroCal_ProcessDeferredAngBase:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   100  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   101    if (MotorZeroCal_AngBasePendingApply == 0U)
+	ld.bu	d15,MotorZeroCal_AngBasePendingApply
+	jeq	d15,#0,.L2
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   102    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   103      return;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   104    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   105  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   106    /* Do not touch sensor SPI while align / flash-hold is active. */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   107    if ((MotorZeroCal_State == MOTORZEROCAL_STATE_RUNNING) ||
+	ld.bu	d15,MotorZeroCal_State
+	jeq	d15,#1,.L3
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   108        (MotorZeroCal_State == MOTORZEROCAL_STATE_SAVING))
+	ld.bu	d15,MotorZeroCal_State
+	jeq	d15,#2,.L4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   109    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   110      return;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   111    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   112  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   113    if (MotorZeroCal_AngBaseApplyDelayMs < MOTORZEROCAL_ANG_BASE_APPLY_DELAY_MS)
+	ld.w	d15,MotorZeroCal_AngBaseApplyDelayMs
+	mov	d0,#500
+	jge.u	d15,d0,.L5
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   114    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   115      MotorZeroCal_AngBaseApplyDelayMs++;
+	add	d15,#1
+	st.w	MotorZeroCal_AngBaseApplyDelayMs,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   116      return;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   117    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   118  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   119    MotorZeroCal_ApplyAngBase(MotorZeroCal_PendingAngBase);
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   120    MotorZeroCal_AngBasePendingApply = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   121  }
+.L4:
+.L3:
+.L2:
+	ret
+.L5:
+	ld.hu	d4,MotorZeroCal_PendingAngBase
+	call	MotorZeroCal_ApplyAngBase
+	mov	d15,#0
+	st.b	MotorZeroCal_AngBasePendingApply,d15
+	ret
+	
+__MotorZeroCal_ProcessDeferredAngBase_function_end:
+	.size	MotorZeroCal_ProcessDeferredAngBase,__MotorZeroCal_ProcessDeferredAngBase_function_end-MotorZeroCal_ProcessDeferredAngBase
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_LoadFromStorage',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_LoadFromStorage'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   122  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   123  /* Boot / power-on only — called after NvM_ReadBlock completes. */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   124  static void MotorZeroCal_LoadFromStorage(void)
+; Function MotorZeroCal_LoadFromStorage
+MotorZeroCal_LoadFromStorage:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   125  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   126  #if (MOTORZEROCAL_SPI_ENABLE == 1U)
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   127    (void)tle5012b_ChangeAngleDirection(counterclockwise);
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   128  #endif
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   129  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   130    if (MotorZeroCal_Storage.magic == MOTORZEROCAL_STORAGE_MAGIC)
+	ld.hu	d15,MotorZeroCal_Storage
+	mov.u	d0,#42404
+	jne	d15,d0,.L7
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   131    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   132      MotorZeroCal_SetCalibratedFlag(1U);
+	mov	d4,#1
+	call	MotorZeroCal_SetCalibratedFlag
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   133      MotorZeroCal_NvDirty = 0U;
+	mov	d15,#0
+	st.b	MotorZeroCal_NvDirty,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   134      MotorZeroCal_AngBase = MotorZeroCal_Storage.angBase;
+	ld.hu	d15,MotorZeroCal_Storage+2
+	st.h	MotorZeroCal_AngBase,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   135      MotorZeroCal_QueueAngBaseApply(MotorZeroCal_AngBase);
+	ld.hu	d4,MotorZeroCal_AngBase
+	j	MotorZeroCal_QueueAngBaseApply
+.L7:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   136    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   137    else
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   138    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   139      MotorZeroCal_SetCalibratedFlag(0U);
+	mov	d4,#0
+	call	MotorZeroCal_SetCalibratedFlag
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   140      MotorZeroCal_NvDirty = 0U;
+	mov	d15,#0
+	st.b	MotorZeroCal_NvDirty,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   141      MotorZeroCal_AngBase = 0U;
+	st.h	MotorZeroCal_AngBase,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   142      Tle5012bd_Sensor.ANG_BASE = 0U;
+	movh.a	a15,#@his(Tle5012bd_Sensor+26)
+	st.h	[a15]@los(Tle5012bd_Sensor+26),d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   143  #if (MOTORZEROCAL_SPI_ENABLE == 1U)
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   144      tle5012b_read_all();
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   145  #endif
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   146    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   147  }
+	ret
+	
+__MotorZeroCal_LoadFromStorage_function_end:
+	.size	MotorZeroCal_LoadFromStorage,__MotorZeroCal_LoadFromStorage_function_end-MotorZeroCal_LoadFromStorage
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_SaveToStorage',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_SaveToStorage'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   148  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   149  static void MotorZeroCal_SaveToStorage(void)
+; Function MotorZeroCal_SaveToStorage
+MotorZeroCal_SaveToStorage:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   150  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   151    MotorZeroCal_Storage.magic = MOTORZEROCAL_STORAGE_MAGIC;
+	mov.u	d15,#42404
+	st.h	MotorZeroCal_Storage,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   152    MotorZeroCal_Storage.angBase = MotorZeroCal_AngBase;
+	ld.hu	d15,MotorZeroCal_AngBase
+	st.h	MotorZeroCal_Storage+2,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   153    MotorZeroCal_NvDirty = 1U;
+	mov	d15,#1
+	st.b	MotorZeroCal_NvDirty,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   154  }
+	ret
+	
+__MotorZeroCal_SaveToStorage_function_end:
+	.size	MotorZeroCal_SaveToStorage,__MotorZeroCal_SaveToStorage_function_end-MotorZeroCal_SaveToStorage
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_RequestNvRead',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_RequestNvRead'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   155  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   156  static void MotorZeroCal_RequestNvRead(void)
+; Function MotorZeroCal_RequestNvRead
+MotorZeroCal_RequestNvRead:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   157  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   158    Std_ReturnType apiRet;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   159  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   160    if (MotorZeroCal_NvReadPending != 0U)
+	ld.bu	d15,MotorZeroCal_NvReadPending
+	jne	d15,#0,.L9
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   161    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   162      return;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   163    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   164  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   165    apiRet = NvM_ReadBlock(NvMConf_NvMBlockDescriptor_NvMBlock_MotorZeroCal,
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   166                           &MotorZeroCal_Storage);
+	mov	d4,#2
+	lea	a4,MotorZeroCal_Storage
+	call	NvM_ReadBlock
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   167    MotorZeroCal_NvLastApiRet = (uint8)apiRet;
+	st.b	MotorZeroCal_NvLastApiRet,d2
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   168  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   169    if (apiRet == E_OK)
+	jne	d2,#0,.L10
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   170    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   171      MotorZeroCal_NvReadPending = 1U;
+	mov	d15,#1
+	st.b	MotorZeroCal_NvReadPending,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   172      MotorZeroCal_NvLastOp = 1U;
+	st.b	MotorZeroCal_NvLastOp,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   173      MotorZeroCal_NvLastResult = (uint8)NVM_REQ_PENDING;
+	mov	d15,#2
+	st.b	MotorZeroCal_NvLastResult,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   174      MotorZeroCal_NvPendingTicks = 0UL;
+	mov	d15,#0
+	st.w	MotorZeroCal_NvPendingTicks,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   175    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   176    else
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   177    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   178      MotorZeroCal_NvLastOp = 1U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   179      MotorZeroCal_NvLastResult = (uint8)NVM_REQ_NOT_OK;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   180      MotorZeroCal_LoadFromStorage();
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   181    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   182  }
+.L9:
+	ret
+.L10:
+	mov	d15,#1
+	st.b	MotorZeroCal_NvLastOp,d15
+	st.b	MotorZeroCal_NvLastResult,d15
+	j	MotorZeroCal_LoadFromStorage
+	
+__MotorZeroCal_RequestNvRead_function_end:
+	.size	MotorZeroCal_RequestNvRead,__MotorZeroCal_RequestNvRead_function_end-MotorZeroCal_RequestNvRead
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_RequestNvWrite',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_RequestNvWrite'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   183  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   184  static uint8 MotorZeroCal_RequestNvWrite(void)
+; Function MotorZeroCal_RequestNvWrite
+MotorZeroCal_RequestNvWrite:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   185  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   186    Std_ReturnType apiRet;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   187  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   188    if ((MotorZeroCal_NvWritePending != 0U) || (MotorZeroCal_NvReadPending != 0U))
+	ld.bu	d15,MotorZeroCal_NvWritePending
+	jne	d15,#0,.L12
+	ld.bu	d15,MotorZeroCal_NvReadPending
+	jne	d15,#0,.L13
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   189    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   190      return 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   191    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   192  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   193    apiRet = NvM_WriteBlock(NvMConf_NvMBlockDescriptor_NvMBlock_MotorZeroCal,
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   194                            &MotorZeroCal_Storage);
+	mov	d4,#2
+	lea	a4,MotorZeroCal_Storage
+	call	NvM_WriteBlock
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   195    MotorZeroCal_NvLastApiRet = (uint8)apiRet;
+	st.b	MotorZeroCal_NvLastApiRet,d2
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   196  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   197    if (apiRet == E_OK)
+	jne	d2,#0,.L14
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   198    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   199      MotorZeroCal_NvWritePending = 1U;
+	mov	d2,#1
+	st.b	MotorZeroCal_NvWritePending,d2
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   200      MotorZeroCal_NvLastOp = 2U;
+	mov	d15,#2
+	st.b	MotorZeroCal_NvLastOp,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   201      MotorZeroCal_NvLastResult = (uint8)NVM_REQ_PENDING;
+	st.b	MotorZeroCal_NvLastResult,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   202      MotorZeroCal_NvPendingTicks = 0UL;
+	mov	d15,#0
+	st.w	MotorZeroCal_NvPendingTicks,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   203      return 1U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   204    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   205  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   206    MotorZeroCal_NvLastOp = 2U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   207    MotorZeroCal_NvLastResult = (uint8)NVM_REQ_NOT_OK;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   208    return 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   209  }
+	ret
+.L14:
+	mov	d15,#2
+	st.b	MotorZeroCal_NvLastOp,d15
+	mov	d15,#1
+	st.b	MotorZeroCal_NvLastResult,d15
+.L13:
+.L12:
+	mov	d2,#0
+	ret
+	
+__MotorZeroCal_RequestNvWrite_function_end:
+	.size	MotorZeroCal_RequestNvWrite,__MotorZeroCal_RequestNvWrite_function_end-MotorZeroCal_RequestNvWrite
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_SaveToFlash',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_SaveToFlash'
+	.align	2
+	
+	.global	MotorZeroCal_SaveToFlash
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   210  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   211  void MotorZeroCal_SaveToFlash(void)
+; Function MotorZeroCal_SaveToFlash
+MotorZeroCal_SaveToFlash:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   212  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   213    /* Motortask-safe entry: only queue. NvM_WriteBlock runs in StartApp 1 ms. */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   214    if (MotorControll_IsOutputEnabled() != 0U)
+	call	MotorControll_IsOutputEnabled
+	jeq	d2,#0,.L17
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   215    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   216      MotorControll_StopPwm();
+	call	MotorControll_StopPwm
+.L17:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   217    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   218  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   219    /* Pack current RAM zero into mirror before queue (write uses Storage). */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   220    MotorZeroCal_SaveToStorage();
+	call	MotorZeroCal_SaveToStorage
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   221  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   222    MotorZeroCal_NvSaveRequest = 1U;
+	mov	d15,#1
+	st.b	MotorZeroCal_NvSaveRequest,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   223    MotorZeroCal_FaultReason = MOTORZEROCAL_FAULT_NONE;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   224    if (MotorZeroCal_State != MOTORZEROCAL_STATE_SAVING)
+	ld.bu	d15,MotorZeroCal_State
+	mov	d0,#0
+	st.b	MotorZeroCal_FaultReason,d0
+	jeq	d15,#2,.L18
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   225    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   226      MotorZeroCal_State = MOTORZEROCAL_STATE_SAVING;
+	mov	d15,#2
+	st.b	MotorZeroCal_State,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   227      MotorZeroCal_ElapsedMs = 0UL;
+	st.w	MotorZeroCal_ElapsedMs,d0
+.L18:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   228    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   229  }
+	ret
+	
+__MotorZeroCal_SaveToFlash_function_end:
+	.size	MotorZeroCal_SaveToFlash,__MotorZeroCal_SaveToFlash_function_end-MotorZeroCal_SaveToFlash
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_ProcessSaveRequest',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_ProcessSaveRequest'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   230  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   231  /* Must run in StartApp 1 ms (not MotorTask): queues NvM_WriteBlock. */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   232  static void MotorZeroCal_ProcessSaveRequest(void)
+; Function MotorZeroCal_ProcessSaveRequest
+MotorZeroCal_ProcessSaveRequest:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   233  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   234    extern Fee_StateDataType Fee_StateVar;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   235  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   236    if (MotorZeroCal_NvSaveRequest == 0U)
+	ld.bu	d15,MotorZeroCal_NvSaveRequest
+	jeq	d15,#0,.L19
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   237    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   238      return;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   239    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   240  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   241    if (MotorControll_IsOutputEnabled() != 0U)
+	call	MotorControll_IsOutputEnabled
+	jeq	d2,#0,.L20
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   242    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   243      MotorControll_StopPwm();
+	j	MotorControll_StopPwm
+.L20:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   244      return;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   245    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   246  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   247    /* Fee InitGC FAIL still reports IDLE — do not WriteBlock. */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   248    if (Fee_StateVar.FeeInitGCState == MOTORZEROCAL_FEE_INITGC_FAIL)
+	fcall	.cocofun_4
+	jne	d15,#6,.L22
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   249    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   250      MotorZeroCal_NvSaveRequest = 0U;
+	mov	d15,#0
+	st.b	MotorZeroCal_NvSaveRequest,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   251      MotorZeroCal_EnterFault(MOTORZEROCAL_FAULT_FLASH);
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   252      return;
+	j	.L23
+.L22:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   253    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   254  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   255    /* Wait until Fee idle and InitGC complete. */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   256    if ((Fee_GetStatus() != MEMIF_IDLE) ||
+	call	Fee_GetStatus
+	jne	d2,#1,.L24
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   257        (Fee_StateVar.FeeInitGCState != MOTORZEROCAL_FEE_INITGC_COMPLETE))
+	fcall	.cocofun_4
+	jne	d15,#5,.L25
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   258    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   259      return;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   260    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   261  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   262    /* Previous write still open — wait. */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   263    if (MotorZeroCal_NvWritePending != 0U)
+	ld.bu	d15,MotorZeroCal_NvWritePending
+	jne	d15,#0,.L26
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   264    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   265      return;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   266    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   267  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   268    /* Drop stuck boot read so WriteBlock is not rejected with DET BLOCK_PENDING. */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   269    if (MotorZeroCal_NvReadPending != 0U)
+	ld.bu	d15,MotorZeroCal_NvReadPending
+	jeq	d15,#0,.L27
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   270    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   271      (void)NvM_CancelJobs(NvMConf_NvMBlockDescriptor_NvMBlock_MotorZeroCal);
+	mov	d4,#2
+	call	NvM_CancelJobs
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   272      MotorZeroCal_NvReadPending = 0U;
+	mov	d15,#0
+	st.b	MotorZeroCal_NvReadPending,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   273      MotorZeroCal_NvPendingTicks = 0UL;
+	st.w	MotorZeroCal_NvPendingTicks,d15
+.L27:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   274    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   275  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   276    MotorZeroCal_NvSaveRequest = 0U;
+	st.b	MotorZeroCal_NvSaveRequest,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   277    MotorZeroCal_TimedNvWriteActive = 1U;
+	mov	d0,#1
+	st.b	MotorZeroCal_TimedNvWriteActive,d0
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   278    MotorZeroCal_State = MOTORZEROCAL_STATE_SAVING;
+	mov	d0,#2
+	st.b	MotorZeroCal_State,d0
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   279    MotorZeroCal_ElapsedMs = 0UL;
+	st.w	MotorZeroCal_ElapsedMs,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   280    MotorZeroCal_FaultReason = MOTORZEROCAL_FAULT_NONE;
+	st.b	MotorZeroCal_FaultReason,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   281  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   282    if (MotorZeroCal_RequestNvWrite() == 0U)
+	call	MotorZeroCal_RequestNvWrite
+	jne	d2,#0,.L28
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   283    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   284      MotorZeroCal_EnterFault(MOTORZEROCAL_FAULT_FLASH);
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   285    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   286  }
+.L23:
+	mov	d4,#4
+	j	MotorZeroCal_EnterFault
+.L28:
+.L26:
+.L25:
+.L24:
+.L19:
+	ret
+	
+__MotorZeroCal_ProcessSaveRequest_function_end:
+	.size	MotorZeroCal_ProcessSaveRequest,__MotorZeroCal_ProcessSaveRequest_function_end-MotorZeroCal_ProcessSaveRequest
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal..cocofun_4',code
+	.sect	'.text.MotorZeroCal..cocofun_4'
+	.align	2
+; Function .cocofun_4
+.cocofun_4:	.type	func
+; Function body .cocofun_4, coco_iter:0
+	movh.a	a15,#@his(Fee_StateVar+2182)
+	ld.bu	d15,[a15]@los(Fee_StateVar+2182)
+	fret
+	; End of function
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_ProcessNvJobs',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_ProcessNvJobs'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   287  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   288  static void MotorZeroCal_ProcessNvJobs(void)
+; Function MotorZeroCal_ProcessNvJobs
+MotorZeroCal_ProcessNvJobs:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   289  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   290    Std_ReturnType apiRet;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   291    NvM_RequestResultType requestResult;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   292  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   293    if (MotorZeroCal_NvReadPending != 0U)
+	ld.bu	d15,MotorZeroCal_NvReadPending
+	sub.a	a10,#8
+	jeq	d15,#0,.L29
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   294    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   295      apiRet = NvM_GetErrorStatus(NvMConf_NvMBlockDescriptor_NvMBlock_MotorZeroCal,
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   296                                  &requestResult);
+	mov	d4,#2
+	mov.aa	a4,a10
+	call	NvM_GetErrorStatus
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   297      MotorZeroCal_NvLastApiRet = (uint8)apiRet;
+	st.b	MotorZeroCal_NvLastApiRet,d2
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   298  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   299      if (apiRet == E_OK)
+	jne	d2,#0,.L30
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   300      {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   301        if (requestResult == NVM_REQ_PENDING)
+	ld.bu	d15,[a10]
+	jne	d15,#2,.L31
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   302        {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   303          MotorZeroCal_NvLastResult = (uint8)requestResult;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   304          MotorZeroCal_NvPendingTicks++;
+	ld.w	d15,MotorZeroCal_NvPendingTicks
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   305          if (MotorZeroCal_NvPendingTicks > 5000UL)
+	mov	d0,#5000
+	add	d15,#1
+	st.w	MotorZeroCal_NvPendingTicks,d15
+	mov	d4,#2
+	st.b	MotorZeroCal_NvLastResult,d4
+	ld.w	d15,MotorZeroCal_NvPendingTicks
+	jge.u	d0,d15,.L32
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   306          {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   307            /* Timeout: drop app flag AND cancel NvM job, else block stays PENDING
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   308             * and a later WriteBlock hits DET → Det_EndlessLoop (looks like CoreFreeze). */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   309            (void)NvM_CancelJobs(NvMConf_NvMBlockDescriptor_NvMBlock_MotorZeroCal);
+	call	NvM_CancelJobs
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   310            MotorZeroCal_NvReadPending = 0U;
+	mov	d15,#0
+	st.b	MotorZeroCal_NvReadPending,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   311            MotorZeroCal_NvLastResult = (uint8)NVM_REQ_NOT_OK;
+	mov	d0,#1
+	st.b	MotorZeroCal_NvLastResult,d0
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   312            MotorZeroCal_NvPendingTicks = 0UL;
+	st.w	MotorZeroCal_NvPendingTicks,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   313            MotorZeroCal_Storage.magic = 0U;
+	st.h	MotorZeroCal_Storage,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   314            MotorZeroCal_Storage.angBase = 0U;
+	st.h	MotorZeroCal_Storage+2,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   315            MotorZeroCal_LoadFromStorage();
+	j	MotorZeroCal_LoadFromStorage
+.L31:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   316          }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   317          return;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   318        }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   319  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   320        MotorZeroCal_NvReadPending = 0U;
+	mov	d0,#0
+	st.b	MotorZeroCal_NvReadPending,d0
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   321        MotorZeroCal_NvLastResult = (uint8)requestResult;
+	ld.bu	d15,[a10]
+	st.b	MotorZeroCal_NvLastResult,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   322        MotorZeroCal_NvPendingTicks = 0UL;
+	st.w	MotorZeroCal_NvPendingTicks,d0
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   323        if (requestResult != NVM_REQ_OK)
+	jeq	d15,#0,.L34
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   324        {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   325          MotorZeroCal_Storage.magic = 0U;
+	st.h	MotorZeroCal_Storage,d0
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   326          MotorZeroCal_Storage.angBase = 0U;
+	st.h	MotorZeroCal_Storage+2,d0
+.L34:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   327        }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   328        MotorZeroCal_LoadFromStorage();
+	call	MotorZeroCal_LoadFromStorage
+.L30:
+.L29:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   329      }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   330    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   331  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   332    if (MotorZeroCal_NvWritePending != 0U)
+	ld.bu	d15,MotorZeroCal_NvWritePending
+	jeq	d15,#0,.L35
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   333    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   334      apiRet = NvM_GetErrorStatus(NvMConf_NvMBlockDescriptor_NvMBlock_MotorZeroCal,
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   335                                  &requestResult);
+	mov	d4,#2
+	mov.aa	a4,a10
+	call	NvM_GetErrorStatus
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   336      MotorZeroCal_NvLastApiRet = (uint8)apiRet;
+	st.b	MotorZeroCal_NvLastApiRet,d2
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   337  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   338      if (apiRet == E_OK)
+	jne	d2,#0,.L36
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   339      {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   340        if (requestResult != NVM_REQ_PENDING)
+	ld.bu	d15,[a10]
+	jeq	d15,#2,.L37
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   341        {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   342          MotorZeroCal_NvWritePending = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   343          MotorZeroCal_NvPendingTicks = 0UL;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   344          MotorZeroCal_NvLastResult = (uint8)requestResult;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   345  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   346          if (MotorZeroCal_TimedNvWriteActive != 0U)
+	mov	d0,#0
+	ld.bu	d1,MotorZeroCal_TimedNvWriteActive
+	st.b	MotorZeroCal_NvLastResult,d15
+	st.b	MotorZeroCal_NvWritePending,d0
+	st.w	MotorZeroCal_NvPendingTicks,d0
+	jeq	d1,#0,.L38
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   347          {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   348            MotorZeroCal_TimedNvWriteActive = 0U;
+	st.b	MotorZeroCal_TimedNvWriteActive,d0
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   349            if (requestResult == NVM_REQ_OK)
+	jne	d15,#0,.L39
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   350            {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   351              MotorZeroCal_NvDirty = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   352              if (MotorZeroCal_State == MOTORZEROCAL_STATE_SAVING)
+	ld.bu	d15,MotorZeroCal_State
+	st.b	MotorZeroCal_NvDirty,d0
+	jne	d15,#2,.L40
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   353              {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   354                MotorZeroCal_State = MOTORZEROCAL_STATE_DONE;
+	mov	d15,#3
+	st.b	MotorZeroCal_State,d15
+.L40:
+.L36:
+.L35:
+.L32:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   355              }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   356            }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   357            else
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   358            {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   359              /* RAM zero remains valid this session; Flash not updated. */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   360              if (MotorZeroCal_State == MOTORZEROCAL_STATE_SAVING)
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   361              {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   362                MotorZeroCal_EnterFault(MOTORZEROCAL_FAULT_FLASH);
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   363              }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   364            }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   365          }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   366          else if (requestResult == NVM_REQ_OK)
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   367          {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   368            MotorZeroCal_NvDirty = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   369          }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   370        }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   371        else
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   372        {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   373          MotorZeroCal_NvPendingTicks++;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   374          MotorZeroCal_NvLastResult = (uint8)requestResult;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   375        }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   376      }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   377    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   378  }
+	ret
+.L39:
+	ld.bu	d15,MotorZeroCal_State
+	jne	d15,#2,.L42
+	mov	d4,#4
+	j	MotorZeroCal_EnterFault
+.L38:
+	ld.bu	d15,[a10]
+	jne	d15,#0,.L44
+	st.b	MotorZeroCal_NvDirty,d15
+.L44:
+.L42:
+	ret
+.L37:
+	ld.w	d15,MotorZeroCal_NvPendingTicks
+	add	d15,#1
+	st.w	MotorZeroCal_NvPendingTicks,d15
+	mov	d15,#2
+	st.b	MotorZeroCal_NvLastResult,d15
+	ret
+	
+__MotorZeroCal_ProcessNvJobs_function_end:
+	.size	MotorZeroCal_ProcessNvJobs,__MotorZeroCal_ProcessNvJobs_function_end-MotorZeroCal_ProcessNvJobs
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_PrepareOpenLoopAlign',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_PrepareOpenLoopAlign'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   379  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   380  static void MotorZeroCal_PrepareOpenLoopAlign(void)
+; Function MotorZeroCal_PrepareOpenLoopAlign
+MotorZeroCal_PrepareOpenLoopAlign:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   381  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   382    if (MotorZeroCal_OpenLoopConfigSaved == 0U)
+	ld.bu	d15,MotorZeroCal_OpenLoopConfigSaved
+	jne	d15,#0,.L46
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   383    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   384      MotorZeroCal_SavedOpenLoopRampEnable = MotorFoc_OpenLoop_RampEnable;
+	ld.bu	d15,MotorFoc_OpenLoop_RampEnable
+	st.b	MotorZeroCal_SavedOpenLoopRampEnable,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   385      MotorZeroCal_SavedOpenLoopControlMode = MotorFoc_OpenLoop_ControlMode;
+	ld.bu	d15,MotorFoc_OpenLoop_ControlMode
+	st.b	MotorZeroCal_SavedOpenLoopControlMode,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   386      MotorZeroCal_SavedOpenLoopFixedAngleDeg = MotorFoc_OpenLoop_FixedAngleDeg;
+	ld.w	d15,MotorFoc_OpenLoop_FixedAngleDeg
+	st.w	MotorZeroCal_SavedOpenLoopFixedAngleDeg,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   387      MotorZeroCal_OpenLoopConfigSaved = 1U;
+	mov	d15,#1
+	st.b	MotorZeroCal_OpenLoopConfigSaved,d15
+.L46:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   388    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   389  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   390    MotorFoc_OpenLoop_Reset();
+	call	MotorFoc_OpenLoop_Reset
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   391    MotorFoc_OpenLoop_RampEnable = 0U;
+	mov	d15,#0
+	st.b	MotorFoc_OpenLoop_RampEnable,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   392    MotorFoc_OpenLoop_FixedAngleDeg = MOTORZEROCAL_ALIGN_ANGLE_DEG;
+	st.w	MotorFoc_OpenLoop_FixedAngleDeg,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   393    MotorFoc_OpenLoop_ControlMode = MOTORFOC_OPENLOOP_CONTROL_CURRENT;
+	mov	d15,#1
+	st.b	MotorFoc_OpenLoop_ControlMode,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   394    MotorFoc_OpenLoop_FastLoopStep();
+	j	MotorFoc_OpenLoop_FastLoopStep
+	
+__MotorZeroCal_PrepareOpenLoopAlign_function_end:
+	.size	MotorZeroCal_PrepareOpenLoopAlign,__MotorZeroCal_PrepareOpenLoopAlign_function_end-MotorZeroCal_PrepareOpenLoopAlign
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_RestoreOpenLoopConfig',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_RestoreOpenLoopConfig'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   395  }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   396  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   397  static void MotorZeroCal_RestoreOpenLoopConfig(void)
+; Function MotorZeroCal_RestoreOpenLoopConfig
+MotorZeroCal_RestoreOpenLoopConfig:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   398  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   399    if (MotorZeroCal_OpenLoopConfigSaved != 0U)
+	ld.bu	d15,MotorZeroCal_OpenLoopConfigSaved
+	jeq	d15,#0,.L47
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   400    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   401      MotorFoc_OpenLoop_RampEnable = MotorZeroCal_SavedOpenLoopRampEnable;
+	ld.bu	d15,MotorZeroCal_SavedOpenLoopRampEnable
+	st.b	MotorFoc_OpenLoop_RampEnable,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   402      MotorFoc_OpenLoop_ControlMode = MotorZeroCal_SavedOpenLoopControlMode;
+	ld.bu	d15,MotorZeroCal_SavedOpenLoopControlMode
+	st.b	MotorFoc_OpenLoop_ControlMode,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   403      MotorFoc_OpenLoop_FixedAngleDeg = MotorZeroCal_SavedOpenLoopFixedAngleDeg;
+	ld.w	d15,MotorZeroCal_SavedOpenLoopFixedAngleDeg
+	st.w	MotorFoc_OpenLoop_FixedAngleDeg,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   404      MotorZeroCal_OpenLoopConfigSaved = 0U;
+	mov	d15,#0
+	st.b	MotorZeroCal_OpenLoopConfigSaved,d15
+.L47:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   405    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   406  }
+	ret
+	
+__MotorZeroCal_RestoreOpenLoopConfig_function_end:
+	.size	MotorZeroCal_RestoreOpenLoopConfig,__MotorZeroCal_RestoreOpenLoopConfig_function_end-MotorZeroCal_RestoreOpenLoopConfig
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_RampAlignCurrent',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_RampAlignCurrent'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   407  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   408  static void MotorZeroCal_RampAlignCurrent(void)
+; Function MotorZeroCal_RampAlignCurrent
+MotorZeroCal_RampAlignCurrent:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   409  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   410    float32 target = MotorZeroCal_IdRefTargetA;
+	ld.w	d0,MotorZeroCal_IdRefTargetA
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   411    float32 step = MotorZeroCal_IdRefRampStepA;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   412  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   413    if (target < 0.0F)
+	mov	d2,#0
+	ld.w	d1,MotorZeroCal_IdRefRampStepA
+	cmp.f	d15,d2,d0
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   414    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   415      target = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   416    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   417    if (step < 0.0F)
+	insert	d1,d1,#0,#31,#1
+	and	d15,#6
+	cmov	d0,d15,d2
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   418    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   419      step = -step;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   420    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   421    if (step <= 0.0F)
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   422    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   423      step = MOTORZEROCAL_ID_RAMP_STEP_A;
+	cmp.f	d15,d1,d2
+	ld.w	d2,.1.cnt
+	and	d15,#3
+	ne	d15,d15,#0
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   424    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   425  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   426    if ((target - MotorZeroCal_IdRefA) > step)
+	cmov	d1,d15,d2
+	ld.w	d15,MotorZeroCal_IdRefA
+	sub.f	d15,d0,d15
+	cmp.f	d15,d15,d1
+	jnz.t	d15:2,.L51
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   427    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   428      MotorZeroCal_IdRefA += step;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   429    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   430    else
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   431    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   432      MotorZeroCal_IdRefA = target;
+	st.w	MotorZeroCal_IdRefA,d0
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   433    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   434  }
+	ret
+.L51:
+	ld.w	d15,MotorZeroCal_IdRefA
+	add.f	d15,d15,d1
+	st.w	MotorZeroCal_IdRefA,d15
+	ret
+	
+__MotorZeroCal_RampAlignCurrent_function_end:
+	.size	MotorZeroCal_RampAlignCurrent,__MotorZeroCal_RampAlignCurrent_function_end-MotorZeroCal_RampAlignCurrent
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_IsAlignCurrentReached',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_IsAlignCurrentReached'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   435  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   436  static uint8 MotorZeroCal_IsAlignCurrentReached(void)
+; Function MotorZeroCal_IsAlignCurrentReached
+MotorZeroCal_IsAlignCurrentReached:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   437  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   438    float32 target = MotorZeroCal_IdRefTargetA;
+	ld.w	d0,MotorZeroCal_IdRefTargetA
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   439    float32 eps = MOTORZEROCAL_ID_REACHED_EPS_A;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   440  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   441    if (target < 0.0F)
+	mov	d1,#0
+	cmp.f	d15,d1,d0
+	and	d15,#6
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   442    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   443      target = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   444    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   445    if (eps < 0.0F)
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   446    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   447      eps = -eps;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   448    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   449  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   450    if ((target - MotorZeroCal_IdRefA) <= eps)
+	cmov	d0,d15,d1
+	ld.w	d15,MotorZeroCal_IdRefA
+	sub.f	d15,d0,d15
+	ld.w	d0,.2.cnt
+	cmp.f	d15,d15,d0
+	and	d15,#3
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   451    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   452      return 1U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   453    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   454  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   455    return 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   456  }
+	ne	d2,d15,#0
+	ret
+	
+__MotorZeroCal_IsAlignCurrentReached_function_end:
+	.size	MotorZeroCal_IsAlignCurrentReached,__MotorZeroCal_IsAlignCurrentReached_function_end-MotorZeroCal_IsAlignCurrentReached
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_RunCalibrationStep',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_RunCalibrationStep'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   457  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   458  static void MotorZeroCal_ChangeAngleBasicFromAval(void)
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   459  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   460  #if (MOTORZEROCAL_SPI_ENABLE == 1U)
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   461    uint16 angleBasic;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   462  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   463    tle5012b_read_angle(&Tle5012bd_Sensor);
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   464    angleBasic = (uint16)Tle5012bd_Sensor.Original_Angle;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   465    tle5012b_ChangeAngleBasic(&Tle5012bd_Sensor, angleBasic);
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   466  #else
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   467    /* SPI bring-up: skip sensor write path. */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   468  #endif
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   469  }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   470  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   471  static void MotorZeroCal_OnAlignSuccess(void)
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   472  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   473    /* Align OK: RAM first, then queue DFlash write (NvM_WriteBlock in StartApp 1 ms). */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   474    MotorZeroCal_AngBase = Tle5012bd_Sensor.ANG_BASE;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   475    MotorZeroCal_SaveToStorage();
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   476    MotorZeroCal_SetCalibratedFlag(1U);
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   477    MotorZeroCal_TimerMs = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   478    MotorZeroCal_RetryCount = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   479    MotorZeroCal_TimedNvWriteActive = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   480    /* Stop PWM + queue NvM write; State becomes SAVING until NvM_REQ_OK. */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   481    MotorZeroCal_SaveToFlash();
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   482  }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   483  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   484  static void MotorZeroCal_RunCalibrationStep(void)
+; Function MotorZeroCal_RunCalibrationStep
+MotorZeroCal_RunCalibrationStep:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   485  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   486    float32 angle;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   487    uint32 settleMs;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   488  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   489    if (MotorZeroCal_State != MOTORZEROCAL_STATE_RUNNING)
+	ld.bu	d15,MotorZeroCal_State
+	jne	d15,#1,.L56
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   490    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   491      return;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   492    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   493  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   494    if (MotorFoc_CurrentLoopFault != 0U)
+	ld.bu	d15,MotorFoc_CurrentLoopFault
+	jeq	d15,#0,.L57
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   495    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   496      MotorZeroCal_SetCalibratedFlag(0U);
+	mov	d4,#0
+	call	MotorZeroCal_SetCalibratedFlag
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   497      MotorZeroCal_EnterFault(MOTORZEROCAL_FAULT_CURRENT);
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   498      return;
+	mov	d4,#1
+	j	.L58
+.L57:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   499    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   500  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   501    if (MotorZeroCal_IsAlignCurrentReached() == 0U)
+	call	MotorZeroCal_IsAlignCurrentReached
+	jne	d2,#0,.L59
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   502    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   503      MotorZeroCal_TimerMs = 0U;
+	st.w	MotorZeroCal_TimerMs,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   504      if (MotorControll_IsOutputEnabled() != 0U)
+	call	MotorControll_IsOutputEnabled
+	jeq	d2,#0,.L60
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   505      {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   506        MotorZeroCal_AlignWaitMs++;
+	ld.w	d15,MotorZeroCal_AlignWaitMs
+	add	d15,#1
+	st.w	MotorZeroCal_AlignWaitMs,d15
+.L60:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   507      }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   508      return;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   509    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   510  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   511    MotorZeroCal_AlignWaitMs = 0UL;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   512    MotorZeroCal_TimerMs++;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   513  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   514    settleMs = (MotorZeroCal_RetryCount == 0U) ?
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   515               (uint32)MOTORZEROCAL_DELAY_MS :
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   516               (uint32)MOTORZEROCAL_RETRY_DELAY_MS;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   517  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   518    if (MotorZeroCal_TimerMs <= settleMs)
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   519    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   520      return;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   521    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   522  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   523  #if (MOTORZEROCAL_SPI_ENABLE == 1U)
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   524    tle5012b_read_angle(&Tle5012bd_Sensor);
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   525    angle = Tle5012bd_Sensor.Angle;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   526  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   527    if ((angle <= MOTORZEROCAL_ANGLE_OK_LOW) ||
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   528        (angle >= MOTORZEROCAL_ANGLE_OK_HIGH))
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   529    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   530      MotorZeroCal_OnAlignSuccess();
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   531    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   532    else
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   533    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   534      MotorZeroCal_ChangeAngleBasicFromAval();
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   535      MotorZeroCal_RetryCount++;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   536  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   537      if (MotorZeroCal_RetryCount >= MOTORZEROCAL_MAX_RETRY)
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   538      {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   539        MotorZeroCal_RetryCount = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   540        MotorZeroCal_SetCalibratedFlag(0U);
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   541        MotorZeroCal_EnterFault(MOTORZEROCAL_FAULT_ALIGN);
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   542      }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   543      else
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   544      {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   545        /* Let the encoder apply ANG_BASE before checking the new zero. */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   546        MotorZeroCal_TimerMs = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   547      }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   548    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   549  #else
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   550    (void)angle;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   551    /* SPI bring-up: do not touch TLE5012 from ZeroCal. */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   552    MotorZeroCal_EnterFault(MOTORZEROCAL_FAULT_ALIGN);
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   553  #endif
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   554  }
+.L56:
+	ret
+.L59:
+	st.w	MotorZeroCal_AlignWaitMs,d15
+	ld.w	d15,MotorZeroCal_TimerMs
+	add	d15,#1
+	st.w	MotorZeroCal_TimerMs,d15
+	ld.bu	d15,MotorZeroCal_RetryCount
+	mov	d0,#500
+	seln	d15,d15,d0,#200
+	ld.w	d0,MotorZeroCal_TimerMs
+	jge.u	d15,d0,.L64
+	mov	d4,#2
+.L58:
+	j	MotorZeroCal_EnterFault
+.L64:
+	ret
+	
+__MotorZeroCal_RunCalibrationStep_function_end:
+	.size	MotorZeroCal_RunCalibrationStep,__MotorZeroCal_RunCalibrationStep_function_end-MotorZeroCal_RunCalibrationStep
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_CheckTotalTimeout',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_CheckTotalTimeout'
+	.align	2
+	
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   555  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   556  static void MotorZeroCal_CheckTotalTimeout(void)
+; Function MotorZeroCal_CheckTotalTimeout
+MotorZeroCal_CheckTotalTimeout:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   557  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   558    if (MotorZeroCal_State == MOTORZEROCAL_STATE_RUNNING)
+	ld.bu	d15,MotorZeroCal_State
+	jne	d15,#1,.L65
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   559    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   560      MotorZeroCal_ElapsedMs++;
+	fcall	.cocofun_3
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   561      if (MotorZeroCal_ElapsedMs > MOTORZEROCAL_TOTAL_TIMEOUT_MS)
+	mov	d0,#5000
+	jge.u	d0,d15,.L66
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   562      {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   563        MotorZeroCal_SetCalibratedFlag(0U);
+	mov	d4,#0
+	call	MotorZeroCal_SetCalibratedFlag
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   564        MotorZeroCal_EnterFault(MOTORZEROCAL_FAULT_TIMEOUT);
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   565      }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   566      return;
+	j	.L67
+.L65:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   567    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   568  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   569    /* Flash save (PWM already off): allow longer Fee GC erase, still bound. */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   570    if (MotorZeroCal_State == MOTORZEROCAL_STATE_SAVING)
+	ld.bu	d15,MotorZeroCal_State
+	jne	d15,#2,.L68
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   571    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   572      MotorZeroCal_ElapsedMs++;
+	fcall	.cocofun_3
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   573      if (MotorZeroCal_ElapsedMs > (MOTORZEROCAL_TOTAL_TIMEOUT_MS * 4U))
+	mov	d0,#20000
+	jge.u	d0,d15,.L69
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   574      {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   575        MotorZeroCal_SetCalibratedFlag(1U);
+	mov	d4,#1
+	call	MotorZeroCal_SetCalibratedFlag
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   576        MotorZeroCal_NvDirty = 1U;
+	mov	d15,#1
+	st.b	MotorZeroCal_NvDirty,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   577        MotorZeroCal_TimedNvWriteActive = 0U;
+	mov	d15,#0
+	st.b	MotorZeroCal_TimedNvWriteActive,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   578        MotorZeroCal_EnterFault(MOTORZEROCAL_FAULT_TIMEOUT);
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   579      }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   580    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   581  }
+.L67:
+	mov	d4,#3
+	j	MotorZeroCal_EnterFault
+.L69:
+.L68:
+.L66:
+	ret
+	
+__MotorZeroCal_CheckTotalTimeout_function_end:
+	.size	MotorZeroCal_CheckTotalTimeout,__MotorZeroCal_CheckTotalTimeout_function_end-MotorZeroCal_CheckTotalTimeout
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal..cocofun_3',code
+	.sect	'.text.MotorZeroCal..cocofun_3'
+	.align	2
+; Function .cocofun_3
+.cocofun_3:	.type	func
+; Function body .cocofun_3, coco_iter:0
+	ld.w	d15,MotorZeroCal_ElapsedMs
+	add	d15,#1
+	st.w	MotorZeroCal_ElapsedMs,d15
+	ld.w	d15,MotorZeroCal_ElapsedMs
+	fret
+	; End of function
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_Init',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_Init'
+	.align	2
+	
+	.global	MotorZeroCal_Init
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   582  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   583  void MotorZeroCal_Init(void)
+; Function MotorZeroCal_Init
+MotorZeroCal_Init:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   584  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   585    MotorZeroCal_State = MOTORZEROCAL_STATE_IDLE;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   586    MotorZeroCal_TimerMs = 0U;
+	mov	d4,#0
+	st.w	MotorZeroCal_TimerMs,d4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   587    MotorZeroCal_ElapsedMs = 0UL;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   588    MotorZeroCal_RetryCount = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   589    MotorZeroCal_AlignWaitMs = 0UL;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   590    MotorZeroCal_StartRejectReason = MOTORZEROCAL_START_REJECT_NONE;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   591    MotorZeroCal_FaultReason = MOTORZEROCAL_FAULT_NONE;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   592    MotorZeroCal_AngBasePendingApply = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   593    MotorZeroCal_PendingAngBase = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   594    MotorZeroCal_AngBaseApplyDelayMs = 0UL;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   595    MotorZeroCal_Storage.magic = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   596    MotorZeroCal_Storage.angBase = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   597    MotorZeroCal_NvReadPending = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   598    MotorZeroCal_NvWritePending = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   599    MotorZeroCal_NvLastOp = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   600    MotorZeroCal_NvLastResult = (uint8)NVM_REQ_NOT_OK;
+	mov	d15,#1
+	st.b	MotorZeroCal_State,d4
+	st.w	MotorZeroCal_ElapsedMs,d4
+	st.b	MotorZeroCal_RetryCount,d4
+	st.w	MotorZeroCal_AlignWaitMs,d4
+	st.b	MotorZeroCal_StartRejectReason,d4
+	st.b	MotorZeroCal_FaultReason,d4
+	st.b	MotorZeroCal_AngBasePendingApply,d4
+	st.h	MotorZeroCal_PendingAngBase,d4
+	st.w	MotorZeroCal_AngBaseApplyDelayMs,d4
+	st.h	MotorZeroCal_Storage,d4
+	st.h	MotorZeroCal_Storage+2,d4
+	st.b	MotorZeroCal_NvReadPending,d4
+	st.b	MotorZeroCal_NvWritePending,d4
+	st.b	MotorZeroCal_NvLastOp,d4
+	st.b	MotorZeroCal_NvLastResult,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   601    MotorZeroCal_NvLastApiRet = (uint8)E_NOT_OK;
+	st.b	MotorZeroCal_NvLastApiRet,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   602    MotorZeroCal_NvPendingTicks = 0UL;
+	st.w	MotorZeroCal_NvPendingTicks,d4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   603    MotorZeroCal_NvDirty = 0U;
+	st.b	MotorZeroCal_NvDirty,d4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   604    MotorZeroCal_NvSaveRequest = 0U;
+	st.b	MotorZeroCal_NvSaveRequest,d4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   605    MotorZeroCal_TimedNvWriteActive = 0U;
+	st.b	MotorZeroCal_TimedNvWriteActive,d4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   606    MotorZeroCal_SetCalibratedFlag(0U);
+	call	MotorZeroCal_SetCalibratedFlag
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   607  #if (MOTORZEROCAL_BOOT_NVM_READ == 1U)
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   608    /* Do not ReadBlock until Fee leaves INITGC/BUSY — otherwise job stays PENDING forever. */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   609    MotorZeroCal_NvBootReadRequest = 1U;
+	st.b	MotorZeroCal_NvBootReadRequest,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   610  #else
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   611    /* Bring-up: leave Fee alone so InitGC can finish; no boot ReadBlock. */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   612    MotorZeroCal_NvBootReadRequest = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   613  #endif
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   614  }
+	ret
+	
+__MotorZeroCal_Init_function_end:
+	.size	MotorZeroCal_Init,__MotorZeroCal_Init_function_end-MotorZeroCal_Init
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_CanStart',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_CanStart'
+	.align	2
+	
+	.global	MotorZeroCal_CanStart
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   615  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   616  uint8 MotorZeroCal_CanStart(void)
+; Function MotorZeroCal_CanStart
+MotorZeroCal_CanStart:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   617  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   618    const MotorCdd_AdcPhysicalType* adcPhysical;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   619    float32 minVdc;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   620  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   621    MotorZeroCal_StartRejectReason = MOTORZEROCAL_START_REJECT_NONE;
+	mov	d15,#0
+	st.b	MotorZeroCal_StartRejectReason,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   622  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   623    if ((MotorZeroCal_State == MOTORZEROCAL_STATE_RUNNING) ||
+	ld.bu	d15,MotorZeroCal_State
+	jeq	d15,#1,.L70
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   624        (MotorZeroCal_State == MOTORZEROCAL_STATE_SAVING))
+	ld.bu	d15,MotorZeroCal_State
+	jne	d15,#2,.L71
+.L70:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   625    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   626      MotorZeroCal_StartRejectReason = MOTORZEROCAL_START_REJECT_ALREADY_RUNNING;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   627      return 0U;
+	mov	d15,#3
+	j	.L72
+.L71:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   628    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   629  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   630    if (Tle9180_Driver_GetState() != TLE9180_DRV_STATE_READY)
+	call	Tle9180_Driver_GetState
+	jeq	d2,#1,.L73
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   631    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   632      MotorZeroCal_StartRejectReason = MOTORZEROCAL_START_REJECT_GATE_NOT_READY;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   633      return 0U;
+	mov	d15,#2
+	j	.L74
+.L73:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   634    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   635  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   636    adcPhysical = MotorCdd_GetAdcPhysical();
+	call	MotorCdd_GetAdcPhysical
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   637    minVdc = MotorFoc_CurrentLoopMinVdcRunV;
+	ld.w	d0,MotorFoc_CurrentLoopMinVdcRunV
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   638    if (minVdc < 0.0F)
+	mov	d1,#0
+	cmp.f	d15,d1,d0
+	and	d15,#6
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   639    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   640      minVdc = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   641    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   642  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   643    if (adcPhysical->vinv_V < (minVdc + 1.0F))
+	cmov	d0,d15,d1
+	ld.w	d15,[a2]28
+	movh	d1,#16256
+	add.f	d0,d0,d1
+	cmp.f	d15,d15,d0
+	jz.t	d15:0,.L77
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   644    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   645      MotorZeroCal_StartRejectReason = MOTORZEROCAL_START_REJECT_VDC_LOW;
+	mov	d15,#1
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   646      return 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   647    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   648  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   649    return 1U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   650  }
+.L72:
+.L74:
+	st.b	MotorZeroCal_StartRejectReason,d15
+	mov	d2,#0
+	ret
+.L77:
+	mov	d2,#1
+	ret
+	
+__MotorZeroCal_CanStart_function_end:
+	.size	MotorZeroCal_CanStart,__MotorZeroCal_CanStart_function_end-MotorZeroCal_CanStart
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_Start',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_Start'
+	.align	2
+	
+	.global	MotorZeroCal_Start
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   651  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   652  void MotorZeroCal_Start(void)
+; Function MotorZeroCal_Start
+MotorZeroCal_Start:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   653  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   654    MotorZeroCal_SetCalibratedFlag(0U);
+	mov	d4,#0
+	call	MotorZeroCal_SetCalibratedFlag
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   655    MotorZeroCal_TimerMs = 0U;
+	mov	d15,#0
+	fcall	.cocofun_5
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   656    MotorZeroCal_ElapsedMs = 0UL;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   657    MotorZeroCal_RetryCount = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   658    MotorZeroCal_AlignWaitMs = 0UL;
+	st.w	MotorZeroCal_AlignWaitMs,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   659    MotorZeroCal_IdRefA = 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   660    MotorZeroCal_StartRejectReason = MOTORZEROCAL_START_REJECT_NONE;
+	st.b	MotorZeroCal_StartRejectReason,d15
+	st.w	MotorZeroCal_IdRefA,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   661    MotorZeroCal_FaultReason = MOTORZEROCAL_FAULT_NONE;
+	st.b	MotorZeroCal_FaultReason,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   662    MotorZeroCal_TimedNvWriteActive = 0U;
+	st.b	MotorZeroCal_TimedNvWriteActive,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   663    MotorZeroCal_PrepareOpenLoopAlign();
+	call	MotorZeroCal_PrepareOpenLoopAlign
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   664    MotorZeroCal_State = MOTORZEROCAL_STATE_RUNNING;
+	mov	d15,#1
+	st.b	MotorZeroCal_State,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   665  }
+	ret
+	
+__MotorZeroCal_Start_function_end:
+	.size	MotorZeroCal_Start,__MotorZeroCal_Start_function_end-MotorZeroCal_Start
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal..cocofun_5',code
+	.sect	'.text.MotorZeroCal..cocofun_5'
+	.align	2
+; Function .cocofun_5
+.cocofun_5:	.type	func
+; Function body .cocofun_5, coco_iter:0
+	st.w	MotorZeroCal_TimerMs,d15
+	st.b	MotorZeroCal_RetryCount,d15
+	st.w	MotorZeroCal_ElapsedMs,d15
+	fret
+	; End of function
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_Erase',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_Erase'
+	.align	2
+	
+	.global	MotorZeroCal_Erase
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   666  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   667  void MotorZeroCal_Erase(void)
+; Function MotorZeroCal_Erase
+MotorZeroCal_Erase:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   668  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   669    MotorZeroCal_RestoreOpenLoopConfig();
+	call	MotorZeroCal_RestoreOpenLoopConfig
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   670    MotorZeroCal_Storage.magic = 0U;
+	mov	d4,#0
+	st.h	MotorZeroCal_Storage,d4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   671    MotorZeroCal_Storage.angBase = 0U;
+	st.h	MotorZeroCal_Storage+2,d4
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   672    MotorZeroCal_SetCalibratedFlag(0U);
+	call	MotorZeroCal_SetCalibratedFlag
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   673    MotorZeroCal_AngBase = 0U;
+	mov	d15,#0
+	st.h	MotorZeroCal_AngBase,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   674    MotorZeroCal_IdRefA = 0.0F;
+	st.w	MotorZeroCal_IdRefA,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   675    Tle5012bd_Sensor.ANG_BASE = 0U;
+	movh.a	a15,#@his(Tle5012bd_Sensor+26)
+	st.h	[a15]@los(Tle5012bd_Sensor+26),d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   676    MotorZeroCal_State = MOTORZEROCAL_STATE_IDLE;
+	st.b	MotorZeroCal_State,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   677    MotorZeroCal_TimerMs = 0U;
+	fcall	.cocofun_5
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   678    MotorZeroCal_ElapsedMs = 0UL;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   679    MotorZeroCal_RetryCount = 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   680    MotorZeroCal_FaultReason = MOTORZEROCAL_FAULT_NONE;
+	st.b	MotorZeroCal_FaultReason,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   681    MotorZeroCal_TimedNvWriteActive = 0U;
+	st.b	MotorZeroCal_TimedNvWriteActive,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   682    /* RAM cleared; persist erase with MOTOR_MODE_CALIBRATION_SAVE / NvSaveRequest. */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   683    MotorZeroCal_NvDirty = 1U;
+	mov	d15,#1
+	st.b	MotorZeroCal_NvDirty,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   684  }
+	ret
+	
+__MotorZeroCal_Erase_function_end:
+	.size	MotorZeroCal_Erase,__MotorZeroCal_Erase_function_end-MotorZeroCal_Erase
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_IsRotorZeroInitialized',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_IsRotorZeroInitialized'
+	.align	2
+	
+	.global	MotorZeroCal_IsRotorZeroInitialized
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   685  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   686  uint8 MotorZeroCal_IsRotorZeroInitialized(void)
+; Function MotorZeroCal_IsRotorZeroInitialized
+MotorZeroCal_IsRotorZeroInitialized:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   687  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   688    return MotorZeroCal_Calibrated;
+	ld.bu	d2,MotorZeroCal_Calibrated
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   689  }
+	ret
+	
+__MotorZeroCal_IsRotorZeroInitialized_function_end:
+	.size	MotorZeroCal_IsRotorZeroInitialized,__MotorZeroCal_IsRotorZeroInitialized_function_end-MotorZeroCal_IsRotorZeroInitialized
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_UseForcedAngle',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_UseForcedAngle'
+	.align	2
+	
+	.global	MotorZeroCal_UseForcedAngle
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   690  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   691  uint8 MotorZeroCal_UseForcedAngle(void)
+; Function MotorZeroCal_UseForcedAngle
+MotorZeroCal_UseForcedAngle:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   692  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   693    if (MotorZeroCal_State == MOTORZEROCAL_STATE_RUNNING)
+	ld.bu	d15,MotorZeroCal_State
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   694    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   695      return 1U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   696    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   697  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   698    return 0U;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   699  }
+	eq	d2,d15,#1
+	ret
+	
+__MotorZeroCal_UseForcedAngle_function_end:
+	.size	MotorZeroCal_UseForcedAngle,__MotorZeroCal_UseForcedAngle_function_end-MotorZeroCal_UseForcedAngle
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_GetAlignCurrentA',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_GetAlignCurrentA'
+	.align	2
+	
+	.global	MotorZeroCal_GetAlignCurrentA
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   700  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   701  float32 MotorZeroCal_GetAlignCurrentA(void)
+; Function MotorZeroCal_GetAlignCurrentA
+MotorZeroCal_GetAlignCurrentA:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   702  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   703    if (MotorZeroCal_State == MOTORZEROCAL_STATE_RUNNING)
+	ld.bu	d15,MotorZeroCal_State
+	jne	d15,#1,.L82
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   704    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   705      return MotorZeroCal_IdRefA;
+	ld.w	d2,MotorZeroCal_IdRefA
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   706    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   707  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   708    return 0.0F;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   709  }
+	ret
+.L82:
+	mov	d2,#0
+	ret
+	
+__MotorZeroCal_GetAlignCurrentA_function_end:
+	.size	MotorZeroCal_GetAlignCurrentA,__MotorZeroCal_GetAlignCurrentA_function_end-MotorZeroCal_GetAlignCurrentA
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_GetForcedAngleRad',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_GetForcedAngleRad'
+	.align	2
+	
+	.global	MotorZeroCal_GetForcedAngleRad
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   710  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   711  float32 MotorZeroCal_GetForcedAngleRad(void)
+; Function MotorZeroCal_GetForcedAngleRad
+MotorZeroCal_GetForcedAngleRad:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   712  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   713    return MotorFoc_OpenLoop_GetForcedAngleRad();
+	j	MotorFoc_OpenLoop_GetForcedAngleRad
+	
+__MotorZeroCal_GetForcedAngleRad_function_end:
+	.size	MotorZeroCal_GetForcedAngleRad,__MotorZeroCal_GetForcedAngleRad_function_end-MotorZeroCal_GetForcedAngleRad
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_FastLoopStep',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_FastLoopStep'
+	.align	2
+	
+	.global	MotorZeroCal_FastLoopStep
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   714  }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   715  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   716  void MotorZeroCal_FastLoopStep(void)
+; Function MotorZeroCal_FastLoopStep
+MotorZeroCal_FastLoopStep:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   717  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   718    if ((MotorZeroCal_State == MOTORZEROCAL_STATE_RUNNING) ||
+	ld.bu	d15,MotorZeroCal_State
+	jeq	d15,#1,.L86
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   719        (MotorZeroCal_State == MOTORZEROCAL_STATE_SAVING))
+	ld.bu	d15,MotorZeroCal_State
+	jne	d15,#2,.L87
+.L86:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   720    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   721      MotorFoc_OpenLoop_FastLoopStep();
+	j	MotorFoc_OpenLoop_FastLoopStep
+.L87:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   722    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   723  }
+	ret
+	
+__MotorZeroCal_FastLoopStep_function_end:
+	.size	MotorZeroCal_FastLoopStep,__MotorZeroCal_FastLoopStep_function_end-MotorZeroCal_FastLoopStep
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_RampAlignCurrentStep',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_RampAlignCurrentStep'
+	.align	2
+	
+	.global	MotorZeroCal_RampAlignCurrentStep
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   724  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   725  void MotorZeroCal_RampAlignCurrentStep(void)
+; Function MotorZeroCal_RampAlignCurrentStep
+MotorZeroCal_RampAlignCurrentStep:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   726  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   727    if (MotorZeroCal_State == MOTORZEROCAL_STATE_RUNNING)
+	ld.bu	d15,MotorZeroCal_State
+	jne	d15,#1,.L88
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   728    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   729      MotorZeroCal_RampAlignCurrent();
+	j	MotorZeroCal_RampAlignCurrent
+.L88:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   730    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   731  }
+	ret
+	
+__MotorZeroCal_RampAlignCurrentStep_function_end:
+	.size	MotorZeroCal_RampAlignCurrentStep,__MotorZeroCal_RampAlignCurrentStep_function_end-MotorZeroCal_RampAlignCurrentStep
+	; End of function
+	
+	.sdecl	'.text.MotorZeroCal.MotorZeroCal_MainFunction',code
+	.sect	'.text.MotorZeroCal.MotorZeroCal_MainFunction'
+	.align	2
+	
+	.global	MotorZeroCal_MainFunction
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   732  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   733  void MotorZeroCal_MainFunction(void)
+; Function MotorZeroCal_MainFunction
+MotorZeroCal_MainFunction:	.type	func
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   734  {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   735    extern Fee_StateDataType Fee_StateVar;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   736  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   737    /* Power-on read only after Fee InitGC COMPLETE (FAIL also reports IDLE). */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   738    if ((MotorZeroCal_NvBootReadRequest != 0U) &&
+	ld.bu	d15,MotorZeroCal_NvBootReadRequest
+	jeq	d15,#0,.L89
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   739        (MotorZeroCal_NvReadPending == 0U) &&
+	ld.bu	d15,MotorZeroCal_NvReadPending
+	jne	d15,#0,.L90
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   740        (MotorZeroCal_NvWritePending == 0U) &&
+	ld.bu	d15,MotorZeroCal_NvWritePending
+	jne	d15,#0,.L91
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   741        (Fee_GetStatus() == MEMIF_IDLE) &&
+	call	Fee_GetStatus
+	jne	d2,#1,.L92
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   742        (Fee_StateVar.FeeInitGCState == MOTORZEROCAL_FEE_INITGC_COMPLETE))
+	fcall	.cocofun_4
+	jne	d15,#5,.L93
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   743    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   744      MotorZeroCal_NvBootReadRequest = 0U;
+	mov	d15,#0
+	st.b	MotorZeroCal_NvBootReadRequest,d15
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   745      MotorZeroCal_RequestNvRead();
+	call	MotorZeroCal_RequestNvRead
+.L93:
+.L92:
+.L91:
+.L90:
+.L89:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   746    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   747  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   748    MotorZeroCal_ProcessNvJobs();
+	call	MotorZeroCal_ProcessNvJobs
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   749    MotorZeroCal_ProcessDeferredAngBase();
+	call	MotorZeroCal_ProcessDeferredAngBase
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   750  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   751    MotorZeroCal_CheckTotalTimeout();
+	call	MotorZeroCal_CheckTotalTimeout
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   752  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   753    if (MotorZeroCal_State == MOTORZEROCAL_STATE_RUNNING)
+	ld.bu	d15,MotorZeroCal_State
+	jne	d15,#1,.L94
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   754    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   755      MotorZeroCal_RunCalibrationStep();
+	call	MotorZeroCal_RunCalibrationStep
+.L94:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   756    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   757  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   758    /* After align success SaveToFlash() — issue NvM_WriteBlock same 1 ms if PWM off. */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   759    MotorZeroCal_ProcessSaveRequest();
+	call	MotorZeroCal_ProcessSaveRequest
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   760  
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   761    if (MotorZeroCal_State == MOTORZEROCAL_STATE_DONE)
+	ld.bu	d15,MotorZeroCal_State
+	jne	d15,#3,.L95
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   762    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   763      MotorZeroCal_RestoreOpenLoopConfig();
+	call	MotorZeroCal_RestoreOpenLoopConfig
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   764      /* Align+Flash done → STOP. */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   765      if (MotorControll_MotorModeCmd == MOTOR_MODE_CALIBRATION)
+	ld.bu	d15,MotorControll_MotorModeCmd
+	jne	d15,#5,.L96
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   766      {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   767        MotorControll_MotorModeCmd = MOTOR_MODE_STOP;
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   768      }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   769      MotorZeroCal_State = MOTORZEROCAL_STATE_IDLE;
+	mov	d15,#1
+	j	.L97
+.L95:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   770    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   771    else if (MotorZeroCal_State == MOTORZEROCAL_STATE_FAULT)
+	ld.bu	d15,MotorZeroCal_State
+	jne	d15,#4,.L98
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   772    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   773      MotorZeroCal_RestoreOpenLoopConfig();
+	call	MotorZeroCal_RestoreOpenLoopConfig
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   774      MotorControll_MotorModeCmd = MOTOR_MODE_IDLE;
+	mov	d15,#0
+.L97:
+	st.b	MotorControll_MotorModeCmd,d15
+.L96:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   775      MotorZeroCal_State = MOTORZEROCAL_STATE_IDLE;
+	mov	d15,#0
+	st.b	MotorZeroCal_State,d15
+.L98:
+
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   776    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   777    else
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   778    {
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   779      /* IDLE / RUNNING / SAVING: no exit action. */
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   780    }
+; ..\Appl\Source\CDD\MotorFoc\MotorZeroCal.c	   781  }
+	ret
+	
+__MotorZeroCal_MainFunction_function_end:
+	.size	MotorZeroCal_MainFunction,__MotorZeroCal_MainFunction_function_end-MotorZeroCal_MainFunction
+	; End of function
+	
+	.sdecl	'.zbss.MotorZeroCal.MotorZeroCal_Storage',data
+	.sect	'.zbss.MotorZeroCal.MotorZeroCal_Storage'
+	.align	2
+MotorZeroCal_Storage:	.type	object
+	.size	MotorZeroCal_Storage,4
+	.space	4
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_NvReadPending',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_NvReadPending'
+	.global	MotorZeroCal_NvReadPending
+MotorZeroCal_NvReadPending:	.type	object
+	.size	MotorZeroCal_NvReadPending,1
+	.space	1
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_NvWritePending',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_NvWritePending'
+	.global	MotorZeroCal_NvWritePending
+MotorZeroCal_NvWritePending:	.type	object
+	.size	MotorZeroCal_NvWritePending,1
+	.space	1
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_NvLastOp',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_NvLastOp'
+	.global	MotorZeroCal_NvLastOp
+MotorZeroCal_NvLastOp:	.type	object
+	.size	MotorZeroCal_NvLastOp,1
+	.space	1
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_NvLastResult',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_NvLastResult'
+	.global	MotorZeroCal_NvLastResult
+MotorZeroCal_NvLastResult:	.type	object
+	.size	MotorZeroCal_NvLastResult,1
+	.byte	1
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_NvLastApiRet',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_NvLastApiRet'
+	.global	MotorZeroCal_NvLastApiRet
+MotorZeroCal_NvLastApiRet:	.type	object
+	.size	MotorZeroCal_NvLastApiRet,1
+	.byte	1
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_NvPendingTicks',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_NvPendingTicks'
+	.global	MotorZeroCal_NvPendingTicks
+	.align	2
+MotorZeroCal_NvPendingTicks:	.type	object
+	.size	MotorZeroCal_NvPendingTicks,4
+	.space	4
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_SavedOpenLoopRampEnable',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_SavedOpenLoopRampEnable'
+MotorZeroCal_SavedOpenLoopRampEnable:	.type	object
+	.size	MotorZeroCal_SavedOpenLoopRampEnable,1
+	.byte	1
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_SavedOpenLoopControlMode',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_SavedOpenLoopControlMode'
+MotorZeroCal_SavedOpenLoopControlMode:	.type	object
+	.size	MotorZeroCal_SavedOpenLoopControlMode,1
+	.byte	1
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_SavedOpenLoopFixedAngleDeg',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_SavedOpenLoopFixedAngleDeg'
+	.align	2
+MotorZeroCal_SavedOpenLoopFixedAngleDeg:	.type	object
+	.size	MotorZeroCal_SavedOpenLoopFixedAngleDeg,4
+	.space	4
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_OpenLoopConfigSaved',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_OpenLoopConfigSaved'
+MotorZeroCal_OpenLoopConfigSaved:	.type	object
+	.size	MotorZeroCal_OpenLoopConfigSaved,1
+	.space	1
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_TimedNvWriteActive',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_TimedNvWriteActive'
+MotorZeroCal_TimedNvWriteActive:	.type	object
+	.size	MotorZeroCal_TimedNvWriteActive,1
+	.space	1
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_NvBootReadRequest',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_NvBootReadRequest'
+MotorZeroCal_NvBootReadRequest:	.type	object
+	.size	MotorZeroCal_NvBootReadRequest,1
+	.space	1
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_State',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_State'
+	.global	MotorZeroCal_State
+MotorZeroCal_State:	.type	object
+	.size	MotorZeroCal_State,1
+	.space	1
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_Calibrated',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_Calibrated'
+	.global	MotorZeroCal_Calibrated
+MotorZeroCal_Calibrated:	.type	object
+	.size	MotorZeroCal_Calibrated,1
+	.space	1
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_RotorZeroInitialized',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_RotorZeroInitialized'
+	.global	MotorZeroCal_RotorZeroInitialized
+MotorZeroCal_RotorZeroInitialized:	.type	object
+	.size	MotorZeroCal_RotorZeroInitialized,1
+	.space	1
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_AngBase',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_AngBase'
+	.global	MotorZeroCal_AngBase
+	.align	2
+MotorZeroCal_AngBase:	.type	object
+	.size	MotorZeroCal_AngBase,2
+	.space	2
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_TimerMs',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_TimerMs'
+	.global	MotorZeroCal_TimerMs
+	.align	2
+MotorZeroCal_TimerMs:	.type	object
+	.size	MotorZeroCal_TimerMs,4
+	.space	4
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_ElapsedMs',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_ElapsedMs'
+	.global	MotorZeroCal_ElapsedMs
+	.align	2
+MotorZeroCal_ElapsedMs:	.type	object
+	.size	MotorZeroCal_ElapsedMs,4
+	.space	4
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_RetryCount',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_RetryCount'
+	.global	MotorZeroCal_RetryCount
+MotorZeroCal_RetryCount:	.type	object
+	.size	MotorZeroCal_RetryCount,1
+	.space	1
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_IdRefA',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_IdRefA'
+	.global	MotorZeroCal_IdRefA
+	.align	2
+MotorZeroCal_IdRefA:	.type	object
+	.size	MotorZeroCal_IdRefA,4
+	.space	4
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_IdRefTargetA',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_IdRefTargetA'
+	.global	MotorZeroCal_IdRefTargetA
+	.align	2
+MotorZeroCal_IdRefTargetA:	.type	object
+	.size	MotorZeroCal_IdRefTargetA,4
+	.word	1069547520
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_IdRefRampStepA',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_IdRefRampStepA'
+	.global	MotorZeroCal_IdRefRampStepA
+	.align	2
+MotorZeroCal_IdRefRampStepA:	.type	object
+	.size	MotorZeroCal_IdRefRampStepA,4
+	.word	981668463
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_StartRejectReason',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_StartRejectReason'
+	.global	MotorZeroCal_StartRejectReason
+MotorZeroCal_StartRejectReason:	.type	object
+	.size	MotorZeroCal_StartRejectReason,1
+	.space	1
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_FaultReason',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_FaultReason'
+	.global	MotorZeroCal_FaultReason
+MotorZeroCal_FaultReason:	.type	object
+	.size	MotorZeroCal_FaultReason,1
+	.space	1
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_AlignWaitMs',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_AlignWaitMs'
+	.global	MotorZeroCal_AlignWaitMs
+	.align	2
+MotorZeroCal_AlignWaitMs:	.type	object
+	.size	MotorZeroCal_AlignWaitMs,4
+	.space	4
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_NvDirty',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_NvDirty'
+	.global	MotorZeroCal_NvDirty
+MotorZeroCal_NvDirty:	.type	object
+	.size	MotorZeroCal_NvDirty,1
+	.space	1
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_NvSaveRequest',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_NvSaveRequest'
+	.global	MotorZeroCal_NvSaveRequest
+MotorZeroCal_NvSaveRequest:	.type	object
+	.size	MotorZeroCal_NvSaveRequest,1
+	.space	1
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_AngBasePendingApply',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_AngBasePendingApply'
+MotorZeroCal_AngBasePendingApply:	.type	object
+	.size	MotorZeroCal_AngBasePendingApply,1
+	.space	1
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_PendingAngBase',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_PendingAngBase'
+	.align	2
+MotorZeroCal_PendingAngBase:	.type	object
+	.size	MotorZeroCal_PendingAngBase,2
+	.space	2
+	.sdecl	'.zdata.MotorZeroCal.MotorZeroCal_AngBaseApplyDelayMs',data
+	.sect	'.zdata.MotorZeroCal.MotorZeroCal_AngBaseApplyDelayMs'
+	.align	2
+MotorZeroCal_AngBaseApplyDelayMs:	.type	object
+	.size	MotorZeroCal_AngBaseApplyDelayMs,4
+	.space	4
+	.calls	'MotorZeroCal_ProcessDeferredAngBase','MotorZeroCal_ApplyAngBase'
+	.calls	'MotorZeroCal_LoadFromStorage','MotorZeroCal_SetCalibratedFlag'
+	.calls	'MotorZeroCal_LoadFromStorage','MotorZeroCal_QueueAngBaseApply'
+	.calls	'MotorZeroCal_RequestNvRead','NvM_ReadBlock'
+	.calls	'MotorZeroCal_RequestNvRead','MotorZeroCal_LoadFromStorage'
+	.calls	'MotorZeroCal_RequestNvWrite','NvM_WriteBlock'
+	.calls	'MotorZeroCal_SaveToFlash','MotorControll_IsOutputEnabled'
+	.calls	'MotorZeroCal_SaveToFlash','MotorControll_StopPwm'
+	.calls	'MotorZeroCal_SaveToFlash','MotorZeroCal_SaveToStorage'
+	.calls	'MotorZeroCal_ProcessSaveRequest','MotorControll_IsOutputEnabled'
+	.calls	'MotorZeroCal_ProcessSaveRequest','MotorControll_StopPwm'
+	.calls	'MotorZeroCal_ProcessSaveRequest','Fee_GetStatus'
+	.calls	'MotorZeroCal_ProcessSaveRequest','NvM_CancelJobs'
+	.calls	'MotorZeroCal_ProcessSaveRequest','MotorZeroCal_RequestNvWrite'
+	.calls	'MotorZeroCal_ProcessSaveRequest','MotorZeroCal_EnterFault'
+	.calls	'MotorZeroCal_ProcessNvJobs','NvM_GetErrorStatus'
+	.calls	'MotorZeroCal_ProcessNvJobs','NvM_CancelJobs'
+	.calls	'MotorZeroCal_ProcessNvJobs','MotorZeroCal_LoadFromStorage'
+	.calls	'MotorZeroCal_ProcessNvJobs','MotorZeroCal_EnterFault'
+	.calls	'MotorZeroCal_PrepareOpenLoopAlign','MotorFoc_OpenLoop_Reset'
+	.calls	'MotorZeroCal_PrepareOpenLoopAlign','MotorFoc_OpenLoop_FastLoopStep'
+	.calls	'MotorZeroCal_RunCalibrationStep','MotorZeroCal_SetCalibratedFlag'
+	.calls	'MotorZeroCal_RunCalibrationStep','MotorZeroCal_EnterFault'
+	.calls	'MotorZeroCal_RunCalibrationStep','MotorZeroCal_IsAlignCurrentReached'
+	.calls	'MotorZeroCal_RunCalibrationStep','MotorControll_IsOutputEnabled'
+	.calls	'MotorZeroCal_CheckTotalTimeout','MotorZeroCal_SetCalibratedFlag'
+	.calls	'MotorZeroCal_CheckTotalTimeout','MotorZeroCal_EnterFault'
+	.calls	'MotorZeroCal_Init','MotorZeroCal_SetCalibratedFlag'
+	.calls	'MotorZeroCal_CanStart','Tle9180_Driver_GetState'
+	.calls	'MotorZeroCal_CanStart','MotorCdd_GetAdcPhysical'
+	.calls	'MotorZeroCal_Start','MotorZeroCal_SetCalibratedFlag'
+	.calls	'MotorZeroCal_Start','MotorZeroCal_PrepareOpenLoopAlign'
+	.calls	'MotorZeroCal_Erase','MotorZeroCal_RestoreOpenLoopConfig'
+	.calls	'MotorZeroCal_Erase','MotorZeroCal_SetCalibratedFlag'
+	.calls	'MotorZeroCal_GetForcedAngleRad','MotorFoc_OpenLoop_GetForcedAngleRad'
+	.calls	'MotorZeroCal_FastLoopStep','MotorFoc_OpenLoop_FastLoopStep'
+	.calls	'MotorZeroCal_RampAlignCurrentStep','MotorZeroCal_RampAlignCurrent'
+	.calls	'MotorZeroCal_MainFunction','Fee_GetStatus'
+	.calls	'MotorZeroCal_MainFunction','MotorZeroCal_RequestNvRead'
+	.calls	'MotorZeroCal_MainFunction','MotorZeroCal_ProcessNvJobs'
+	.calls	'MotorZeroCal_MainFunction','MotorZeroCal_ProcessDeferredAngBase'
+	.calls	'MotorZeroCal_MainFunction','MotorZeroCal_CheckTotalTimeout'
+	.calls	'MotorZeroCal_MainFunction','MotorZeroCal_RunCalibrationStep'
+	.calls	'MotorZeroCal_MainFunction','MotorZeroCal_ProcessSaveRequest'
+	.calls	'MotorZeroCal_MainFunction','MotorZeroCal_RestoreOpenLoopConfig'
+	.calls	'MotorZeroCal_ProcessSaveRequest','.cocofun_4'
+	.calls	'MotorZeroCal_CheckTotalTimeout','.cocofun_3'
+	.calls	'MotorZeroCal_Start','.cocofun_5'
+	.calls	'MotorZeroCal_Erase','.cocofun_5'
+	.calls	'MotorZeroCal_MainFunction','.cocofun_4'
+	.calls	'MotorZeroCal_SetCalibratedFlag','',0
+	.calls	'MotorZeroCal_EnterFault','',0
+	.calls	'MotorZeroCal_ApplyAngBase','',0
+	.calls	'MotorZeroCal_QueueAngBaseApply','',0
+	.calls	'MotorZeroCal_ProcessDeferredAngBase','',0
+	.calls	'MotorZeroCal_LoadFromStorage','',0
+	.calls	'MotorZeroCal_SaveToStorage','',0
+	.calls	'MotorZeroCal_RequestNvRead','',0
+	.calls	'MotorZeroCal_RequestNvWrite','',0
+	.calls	'MotorZeroCal_SaveToFlash','',0
+	.calls	'MotorZeroCal_ProcessSaveRequest','',0
+	.calls	'.cocofun_4','',0
+	.calls	'MotorZeroCal_ProcessNvJobs','',8
+	.calls	'MotorZeroCal_PrepareOpenLoopAlign','',0
+	.calls	'MotorZeroCal_RestoreOpenLoopConfig','',0
+	.calls	'MotorZeroCal_RampAlignCurrent','',0
+	.calls	'MotorZeroCal_IsAlignCurrentReached','',0
+	.calls	'MotorZeroCal_RunCalibrationStep','',0
+	.calls	'MotorZeroCal_CheckTotalTimeout','',0
+	.calls	'.cocofun_3','',0
+	.calls	'MotorZeroCal_Init','',0
+	.calls	'MotorZeroCal_CanStart','',0
+	.calls	'MotorZeroCal_Start','',0
+	.calls	'.cocofun_5','',0
+	.calls	'MotorZeroCal_Erase','',0
+	.calls	'MotorZeroCal_IsRotorZeroInitialized','',0
+	.calls	'MotorZeroCal_UseForcedAngle','',0
+	.calls	'MotorZeroCal_GetAlignCurrentA','',0
+	.calls	'MotorZeroCal_GetForcedAngleRad','',0
+	.calls	'MotorZeroCal_FastLoopStep','',0
+	.calls	'MotorZeroCal_RampAlignCurrentStep','',0
+	.extern	MotorControll_MotorModeCmd
+	.extern	MotorControll_StopPwm
+	.extern	MotorControll_IsOutputEnabled
+	.extern	MotorFoc_OpenLoop_RampEnable
+	.extern	MotorFoc_OpenLoop_ControlMode
+	.extern	MotorFoc_OpenLoop_FixedAngleDeg
+	.extern	MotorFoc_OpenLoop_Reset
+	.extern	MotorFoc_OpenLoop_FastLoopStep
+	.extern	MotorFoc_OpenLoop_GetForcedAngleRad
+	.extern	MotorFoc_CurrentLoopMinVdcRunV
+	.extern	MotorFoc_CurrentLoopFault
+	.extern	MotorCdd_GetAdcPhysical
+	.extern	Tle5012bd_Sensor
+	.extern	Tle9180_Driver_GetState
+	.extern	NvM_GetErrorStatus
+	.extern	NvM_ReadBlock
+	.extern	NvM_WriteBlock
+	.extern	NvM_CancelJobs
+	.extern	Fee_GetStatus
+	.extern	Fee_StateVar
+	.calls	'MotorZeroCal_MainFunction','',0
+
+
+	; Module end

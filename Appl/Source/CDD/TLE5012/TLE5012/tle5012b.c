@@ -7,7 +7,7 @@
 
 TLE5012_SFR tle5012_sfr;
 
-static void tle5012b_delay_us(uint32 delayUs)
+void tle5012b_delay_us(uint32 delayUs)
 {
   uint32 resolution = Mcal_DelayTickResolution();
 
@@ -114,45 +114,84 @@ void tle5012b_read_AngleSpeed(Tle5012 *tle5012)
 void tle5012b_read_angle(Tle5012 *tle5012)
 {
   uint16 angle;
+  uint16 avalRaw;
+  uint16 prevAngle;
+  uint16 delta;
   float32 angleOldPi;
   float32 error;
+  static uint16 s_lastGoodAngVal = 0U;
+  static uint8 s_haveLastGood = 0U;
 
   if (tle5012 == NULL_PTR)
   {
     return;
   }
 
-  tle5012_sfr.AVAL_Type.U = tle5012b_read_fast(AVAL);
+  avalRaw = tle5012b_read_fast(AVAL);
+  tle5012_sfr.AVAL_Type.U = avalRaw;
 
-  if (tle5012_sfr.AVAL_Type.B.RD_AV != 0U)
+  /* SPI glitch / half-duplex contention often returns 0xFFFF → ANG_VAL=32767. */
+  if (avalRaw == 0xFFFFU)
   {
-    angle = tle5012_sfr.AVAL_Type.B.ANG_VAL;
-    tle5012->Original_Angle = angle;
-    angle = (uint16)(angle % 8192U);
-    tle5012->Angle = (float32)angle;
+    tle5012->SafetyBit++;
+    return;
+  }
 
-    angleOldPi = tle5012->anglePi;
-    tle5012->anglePi = tle5012->Angle * 7.66429044544767e-4F;
-    error = tle5012->anglePi - angleOldPi;
+  if (tle5012_sfr.AVAL_Type.B.RD_AV == 0U)
+  {
+    return;
+  }
 
-    if (error > M_PI)
+  angle = tle5012_sfr.AVAL_Type.B.ANG_VAL;
+
+  if (s_haveLastGood != 0U)
+  {
+    prevAngle = s_lastGoodAngVal;
+    delta = (uint16)((angle - prevAngle) & 0x7FFFU);
+    if (delta > 16383U)
     {
-      error -= M_TWOPI;
+      delta = (uint16)(32768U - (uint32)delta);
     }
-    else if (error < -M_PI)
+    /* ~100 us sample: even 6000 rpm is only ~328 counts; 2048 ≈ 22.5° reject. */
+    if (delta > 2048U)
     {
-      error += M_TWOPI;
+      tle5012->SafetyBit++;
+      return;
     }
+  }
 
-    if (tle5012->DisTimer > 0.0F)
+  s_lastGoodAngVal = angle;
+  s_haveLastGood = 1U;
+  tle5012->Original_Angle = (float32)angle;
+
+  /* AVAL is a 15-bit mechanical angle (0..32767 per revolution).
+   * FOC uses a 13-bit table index (0..8191), so scale the complete
+   * mechanical revolution down by two bits.  A modulo here would discard
+   * the upper bits and make the reported angle wrap every 90 degrees. */
+  angle = (uint16)(((uint32)angle >> 2U) & 0x1FFFU);
+  tle5012->Angle = (float32)angle;
+
+  angleOldPi = tle5012->anglePi;
+  tle5012->anglePi = tle5012->Angle * 7.66429044544767e-4F;
+  error = tle5012->anglePi - angleOldPi;
+
+  if (error > M_PI)
+  {
+    error -= M_TWOPI;
+  }
+  else if (error < -M_PI)
+  {
+    error += M_TWOPI;
+  }
+
+  if (tle5012->DisTimer > 0.0F)
+  {
+    tle5012->AngleSpeed = error / tle5012->DisTimer;
+    tle5012->AngleSpeedFilter =
+        (tle5012->AngleSpeedFilter * 0.9F) + (tle5012->AngleSpeed * 0.1F);
+    if (tle5012->polePairs > 0U)
     {
-      tle5012->AngleSpeed = error / tle5012->DisTimer;
-      tle5012->AngleSpeedFilter =
-          (tle5012->AngleSpeedFilter * 0.9F) + (tle5012->AngleSpeed * 0.1F);
-      if (tle5012->polePairs > 0U)
-      {
-        tle5012->RPM = tle5012->AngleSpeedFilter * 9.5493F / (float32)tle5012->polePairs;
-      }
+      tle5012->RPM = tle5012->AngleSpeedFilter * 9.5493F / (float32)tle5012->polePairs;
     }
   }
 }

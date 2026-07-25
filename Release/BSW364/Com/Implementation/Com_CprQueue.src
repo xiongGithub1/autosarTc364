@@ -1,0 +1,374 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
+	.compiler_invocation	"ctc -f cc21484a --dep-file=BSW364\\Com\\Implementation\\.Com_CprQueue.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg --make-target=BSW364\\Com\\Implementation\\Com_CprQueue.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW364\\Com\\Implementation\\Com_CprQueue.src ..\\BSW364\\Com\\Implementation\\Com_CprQueue.c"
+	.compiler_name		"ctc"
+	;source	'..\\BSW364\\Com\\Implementation\\Com_CprQueue.c'
+
+	
+$TC162
+	
+
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	     1  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	     2   *  COPYRIGHT
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	     3   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	     4   *  \verbatim
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	     5   *  Copyright (c) 2022 by Vector Informatik GmbH.                                                  All rights reserved.
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	     6   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	     7   *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	     8   *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	     9   *                All other rights remain with Vector Informatik GmbH.
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    10   *  \endverbatim
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    11   *  -------------------------------------------------------------------------------------------------------------------
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    12   *  FILE DESCRIPTION
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    13   *  -----------------------------------------------------------------------------------------------------------------*/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    14  /*!        \file  Com_CprQueue.c
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    15   *        \brief  MICROSAR Communication source file
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    16   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    17   *      \details  This is the implementation of the MICROSAR Communication module.
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    18   *                The basic software module is based on the AUTOSAR Communication specification.
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    19   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    20   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    21  #define COM_CPRQUEUE_SOURCE
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    22  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    23  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    24   * MISRA JUSTIFICATION
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    25   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    26  /* PRQA  S 2741 EOF */ /* MD_CSL_ReducedToDefine */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    27  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    28  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    29    INCLUDES
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    30  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    31  #include "Com_CprQueue.h"
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    32  #include "Com.h"
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    33  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    34  #include "SchM_Com.h"
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    35  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    36  #include "vstdlib.h"
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    37  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    38  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    39  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    40  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    41    LOCAL CONSTANT MACROS
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    42  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    43  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    44  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    45    LOCAL FUNCTION MACROS
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    46  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    47  #if !defined (COM_LOCAL_INLINE)
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    48  # define COM_LOCAL_INLINE LOCAL_INLINE
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    49  #endif
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    50  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    51  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    52  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    53    LOCAL DATA TYPES AND STRUCTURES
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    54  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    55  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    56  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    57    LOCAL DATA PROTOTYPES
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    58  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    59  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    60  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    61    LOCAL FUNCTION PROTOTYPES
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    62  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    63  #define COM_START_SEC_CODE
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    64  #include "MemMap.h"    /* PRQA S 5087 */        /* MD_MSR_MemMap */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    65  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    66  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    67  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    68    LOCAL FUNCTIONS
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    69  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    70  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    71  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    72  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    73    GLOBAL FUNCTIONS
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    74  **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    75  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    76  # if((COM_CPRQUEUEDESCRIPTIONROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) || (COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON))
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    77  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    78   * Com_CprQueue_GetWriteIdx
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    79   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    80  /*!
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    81   * Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    82   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    83   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    84   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    85   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    86   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    87   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    88   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    89   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    90   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    91   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    92   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    93   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    94   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    95   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    96  FUNC(Std_ReturnType, COM_CODE) Com_CprQueue_GetWriteIdx(Com_CCprQueueIterType routingQueueIndex,
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    97                                                                    P2VAR(Com_CprQueueBufferWriteIdxOfCprQueueType, AUTOMATIC, COM_APPL_DATA) writeIdx, PduLengthType payloadLengthWithHeader)
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    98  {
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	    99    Std_ReturnType retVal = E_NOT_OK; /* PRQA S 2981 */ /* MD_MSR_RetVal */  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   100  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   101    Com_CprQueueBufferReadIdxOfCprQueueType   readIdx          = Com_GetCprQueueBufferReadIdxOfCprQueue(routingQueueIndex);
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   102    Com_CprQueueBufferWriteIdxOfCprQueueType  localWriteIdx    = Com_GetCprQueueBufferWriteIdxOfCprQueue(routingQueueIndex);
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   103  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   104    Com_CprQueueBufferStartIdxOfCprQueueType  startIdxOfBuffer = Com_GetCprQueueBufferStartIdxOfCprQueue(routingQueueIndex);
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   105    Com_CprQueueBufferEndIdxOfCprQueueType    endIdxOfBuffer   = Com_GetCprQueueBufferEndIdxOfCprQueue(routingQueueIndex) - 1u;  /* ComStackLibs EndIdx is actually the first out of bounds index */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   106  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   107    Com_CprQueueBufferPendingWriteIdxOfCprQueueType nextWriteSlot = (Com_CprQueueBufferPendingWriteIdxOfCprQueueType)(localWriteIdx + payloadLengthWithHeader);
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   108  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   109    /* #10 If buffer is full, return E_NOT_OK */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   110    if(((localWriteIdx + 1u) == readIdx) || ((readIdx == startIdxOfBuffer) && (localWriteIdx == endIdxOfBuffer))) /* COV_COM_CROSSPARTITIONQUEUE_SPECIALSTATE */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   111    {
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   112      /* Buffer is full */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   113      retVal = E_NOT_OK;
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   114    }
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   115    /* #20 else if wrap around of write index has occurred */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   116    else if(localWriteIdx < readIdx)      /* write is possible up to the read Idx. Still needs to be checked for sufficient size */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   117    {
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   118      Com_CprQueueBufferWriteIdxOfCprQueueType linearBufferSize = readIdx - localWriteIdx - 1u;
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   119      /* #30 If CrossPartitionRoutingQueue has enough space */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   120      if(linearBufferSize >= payloadLengthWithHeader)  /* COV_COM_CROSSPARTITIONQUEUE_SPECIALSTATE */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   121      {
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   122        *writeIdx = localWriteIdx;  /* SBSW_COM_WRITEACCESS_STACKPTR_01 */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   123        /* #40 Set write index to internal write index and increase pending-write-index to next slot */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   124        Com_SetCprQueueBufferPendingWriteIdxOfCprQueue(routingQueueIndex, nextWriteSlot);   /* SBSW_COM_CSL03 */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   125        retVal = E_OK;
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   126      }
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   127      /* #50 Otherwise, return E_NOT_OK */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   128      else
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   129      {
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   130        retVal = E_NOT_OK;
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   131      }
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   132    }
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   133    /* #60 else no wrap around of write index has occurred or both indicies have wrapped around */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   134    else
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   135    {     /* readIdx < localWriteIdx OR readIdx == localWriteIdx */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   136      Com_CprQueueBufferWriteIdxOfCprQueueType linearBufferSizeAtEnd;
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   137      Com_CprQueueBufferWriteIdxOfCprQueueType linearBufferSizeAtFront;
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   138  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   139      linearBufferSizeAtEnd = (localWriteIdx == endIdxOfBuffer) ? 0u : (Com_CprQueueBufferWriteIdxOfCprQueueType)(endIdxOfBuffer - localWriteIdx);  /* COV_COM_CROSSPARTITIONQUEUE_SPECIALSTATE */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   140      linearBufferSizeAtFront = (readIdx == startIdxOfBuffer) ? 0u : (readIdx - startIdxOfBuffer - 1u);
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   141      /* #70 If there is enough space at the end of the queue, set write index to internal write index and increase pending-write-index to next slot and return E_OK */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   142      if(linearBufferSizeAtEnd >= payloadLengthWithHeader)
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   143      {
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   144        *writeIdx = localWriteIdx;  /* SBSW_COM_WRITEACCESS_STACKPTR_01 */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   145        /* Update write Idx */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   146        Com_SetCprQueueBufferPendingWriteIdxOfCprQueue(routingQueueIndex, nextWriteSlot);    /* SBSW_COM_CSL03 */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   147        retVal = E_OK;
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   148      }
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   149      /* #80 Otherwise, if there is enough space at the beginning of the queue */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   150      else if(linearBufferSizeAtFront >= payloadLengthWithHeader)    /* COV_COM_CROSSPARTITIONQUEUE_SPECIALSTATE */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   151      {
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   152        if(localWriteIdx < Com_GetSizeOfCprQueueBuffer()) /* COV_COM_INDEX_IN_BOUNDS_CHECK */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   153        {
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   154          /* #90 Mark remaining bytes at end as unused */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   155          Com_SetCprQueueBuffer(localWriteIdx, COM_CPRQUEUE_HEADERVALUE_UNUSED); /* SBSW_COM_CSL01 */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   156        }
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   157  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   158        /* #100 Set write index to start index and increase pending-write-index to next slot */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   159        *writeIdx = startIdxOfBuffer;  /* SBSW_COM_WRITEACCESS_STACKPTR_01 */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   160  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   161        /* Update write Idx */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   162        nextWriteSlot = (Com_CprQueueBufferPendingWriteIdxOfCprQueueType)(startIdxOfBuffer + payloadLengthWithHeader);
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   163        Com_SetCprQueueBufferPendingWriteIdxOfCprQueue(routingQueueIndex, nextWriteSlot); /* SBSW_COM_CSL03 */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   164  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   165        /* #110 Return E_OK */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   166        retVal = E_OK;
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   167      }
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   168      /* #120 Otherwise, return E_NOT_OK */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   169      else
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   170      {
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   171        /* neither fits at the end nor the beginning: do nothing */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   172        retVal = E_NOT_OK;
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   173      }
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   174    }
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   175  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   176    return retVal;
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   177  }       /* PRQA S 6080 */ /* MD_MSR_STMIF */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   178  #endif
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   179  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   180  # if((COM_CPRQUEUEDESCRIPTIONROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) || (COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON))
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   181  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   182   * Com_CprQueue_GetReadIdx
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   183   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   184  /*!
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   185   * Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   186   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   187   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   188   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   189   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   190   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   191  FUNC(Std_ReturnType, COM_CODE) Com_CprQueue_GetReadIdx(Com_CCprQueueIterType routingQueueIndex,
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   192                                                                   P2VAR(Com_CprQueueBufferReadIdxOfCprQueueType, AUTOMATIC, COM_APPL_DATA) readIdx)
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   193  {
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   194    Std_ReturnType retVal = E_NOT_OK;     /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   195  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   196  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   197    Com_CprQueueBufferReadIdxOfCprQueueType localReadIdx = Com_GetCprQueueBufferReadIdxOfCprQueue(routingQueueIndex);
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   198    Com_CprQueueBufferWriteIdxOfCprQueueType writeIdx = Com_GetCprQueueBufferWriteIdxOfCprQueue(routingQueueIndex);
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   199  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   200    /* If CrossPartitionRoutingQueue is empty, return E_NOT_OK */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   201    if(localReadIdx == writeIdx)
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   202    {
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   203      retVal = E_NOT_OK;
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   204    }
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   205    /* If the current element is marked with the unused pattern, return the start index of the queue, otherwise return the stored read index */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   206    else
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   207    {
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   208      if(Com_GetCprQueueBuffer(localReadIdx) == COM_CPRQUEUE_HEADERVALUE_UNUSED)
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   209      {   /* adjust localReadIdx if the end of the buffer is not used */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   210        localReadIdx = Com_GetCprQueueBufferStartIdxOfCprQueue(routingQueueIndex);
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   211      }
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   212      *readIdx = localReadIdx;  /* SBSW_COM_WRITEACCESS_STACKPTR_01 */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   213      retVal = E_OK;
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   214    }
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   215  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   216    return retVal;
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   217  }
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   218  #endif
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   219  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   220  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   221  # if((COM_CPRQUEUEDESCRIPTIONROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) || (COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON))
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   222  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   223   * Com_CprQueue_Init
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   224   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   225  /*!
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   226   * Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   227   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   228   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   229   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   230  FUNC(void, COM_CODE) Com_CprQueue_Init(void)
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   231  {
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   232    Com_CCprQueueIterType routingQueueIndex;
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   233    for(routingQueueIndex = 0u; routingQueueIndex < Com_GetSizeOfCCprQueue(); routingQueueIndex++)
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   234    {
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   235      Com_CprQueueBufferStartIdxOfCprQueueType startIdxOfBuffer = Com_GetCprQueueBufferStartIdxOfCprQueue(routingQueueIndex);
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   236  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   237      Com_SetCprQueueBufferWriteIdxOfCprQueue(routingQueueIndex, startIdxOfBuffer);  /* SBSW_COM_CSL_VAR_ACCESS */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   238      Com_SetCprQueueBufferReadIdxOfCprQueue(routingQueueIndex, startIdxOfBuffer);  /* SBSW_COM_CSL_VAR_ACCESS */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   239      
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   240      Com_SetCprQueueBufferPendingWriteIdxOfCprQueue(routingQueueIndex, startIdxOfBuffer);  /* SBSW_COM_CSL_VAR_ACCESS */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   241      Com_SetCprQueueBufferPendingReadIdxOfCprQueue(routingQueueIndex, startIdxOfBuffer);  /* SBSW_COM_CSL_VAR_ACCESS */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   242    }
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   243  }
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   244  #endif
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   245  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   246  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   247  # if((COM_CPRQUEUEDESCRIPTIONROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) || (COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON))
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   248  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   249   * Com_CprQueue_UpdateReadIdx
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   250   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   251  /*!
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   252   * Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   253   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   254   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   255   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   256  FUNC(void, COM_CODE) Com_CprQueue_UpdateReadIdx(Com_CCprQueueIterType routingQueueIndex)
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   257  {
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   258    Com_SetCprQueueBufferReadIdxOfCprQueue(routingQueueIndex, Com_GetCprQueueBufferPendingReadIdxOfCprQueue(routingQueueIndex));  /* SBSW_COM_CSL01 */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   259  }
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   260  #endif
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   261  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   262  # if((COM_CPRQUEUEDESCRIPTIONROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) || (COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON))
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   263  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   264   * Com_CprQueue_ResetNumberOfBytesRead
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   265   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   266  /*!
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   267   * Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   268   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   269   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   270   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   271  FUNC(void, COM_CODE) Com_CprQueue_ResetNumberOfBytesRead(Com_CCprQueueIterType routingQueueIndex)
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   272  {
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   273    Com_SetCprQueueBufferNumberOfBytesReadIdxOfCprQueue(routingQueueIndex, 0u);  /* SBSW_COM_CSL01 */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   274  }
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   275  #endif
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   276  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   277  # if((COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) || (COM_CPRQUEUEDESCRIPTIONROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON))
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   278  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   279   * Com_CprQueue_ReadFromCprQueueDirectly
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   280   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   281  /*!
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   282   * Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   283   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   284   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   285   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   286  FUNC(uint8, COM_CODE) Com_CprQueue_ReadFromCprQueueDirectly(Com_CprQueueBufferReadIdxOfCprQueueType readIdx)
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   287  {
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   288    return Com_GetCprQueueBuffer(readIdx);
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   289  }
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   290  # endif
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   291  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   292  # if((COM_CPRQUEUESIGNALROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON) || (COM_CPRQUEUEDESCRIPTIONROUTINGINDUSEDOFPARTITIONSTXSTRUCT == STD_ON))
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   293  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   294   * Com_CprQueueDescrGw_Serialize
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   295   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   296  /*!
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   297   * Internal comment removed.
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   298   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   299   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   300   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   301   *
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   302   *********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   303  FUNC(void, COM_CODE) Com_CprQueue_Serialize(Com_CprQueueBufferWriteIdxOfCprQueueType writeIdx, uint32 index, CONSTP2CONST(PduInfoType, AUTOMATIC, COM_APPL_DATA) data, uint8 header, uint8 sizeOfIndex)
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   304  {
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   305    Com_CprQueueBufferWriteIdxOfCprQueueType writeIdxIntern = writeIdx;
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   306  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   307    /* The caller of this function checks that no overflows occurs before writing data into the queue */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   308  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   309    /* Serialize Header Value */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   310    Com_SetCprQueueBuffer(writeIdxIntern, header); /* SBSW_COM_CSL01 */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   311    writeIdxIntern += COM_CPRQUEUE_HEADERVALUE_SIZEINBYTE;
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   312      
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   313    /* Serialize index (size of datatype depends on configuration) */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   314    {
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   315      uint32 indexTmp = index; /* PRQA S 2981 */ /* MD_MSR_RetVal */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   316      uint8 iterator = 0u;
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   317      for(; iterator < sizeOfIndex; iterator++)
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   318      {
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   319        indexTmp = index >> (iterator * 8u); /* PRQA S 2985 */ /* MD_Com_2985 */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   320        Com_SetCprQueueBuffer(writeIdxIntern, (uint8) indexTmp); /* SBSW_COM_CSL01 */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   321        writeIdxIntern++;
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   322      }
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   323    }    
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   324    /* Serialize Payload */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   325    VStdMemCpyRamToRam(Com_GetAddrCprQueueBuffer(writeIdxIntern), data->SduDataPtr, data->SduLength); /* PRQA S 0315 */ /* MD_MSR_VStdLibCopy */ /* SBSW_COM_MEM_CPY_2RAM */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   326  }
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   327  #endif
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   328  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   329  #define COM_STOP_SEC_CODE
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   330  #include "MemMap.h" /* PRQA S 5087 */   /* MD_MSR_MemMap */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   331  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   332  /***********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   333   *  MISRA JUSTIFICATIONS
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   334   **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   335  /* *INDENT-OFF* */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   336  /* Justifications for module-specific MISRA deviations:
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   337  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   338    MD_Com_2985: Misra Rule 2.2
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   339       Reason:      The value of the result is only that of the left-hand operand for the first iteration. It depends on the configuration it there will be more than one iteration step.
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   340       Risk:        No risk, as the bitwise operation is only redundant.
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   341       Prevention:  No prevention necessary.
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   342  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   343  */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   344  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   345  /***********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   346   *  SILENTBSW JUSTIFICATIONS
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   347   **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   348  /* SBSW_JUSTIFICATION_BEGIN
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   349  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   350  SBSW_JUSTIFICATION_END */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   351  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   352  /***********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   353   *  COVERAGE JUSTIFICATIONS
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   354   **********************************************************************************************************************/
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   355  /* START_COVERAGE_JUSTIFICATION
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   356  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   357  END_COVERAGE_JUSTIFICATION */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   358  /* *INDENT-ON* */
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   359  
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   360  /**********************************************************************************************************************
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   361   *  END OF FILE: Com_CprQueue.c
+; ..\BSW364\Com\Implementation\Com_CprQueue.c	   362   *********************************************************************************************************************/
+
+	; Module end
