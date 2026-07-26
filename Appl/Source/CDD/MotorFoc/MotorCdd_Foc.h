@@ -4,9 +4,9 @@
 #include "Std_Types.h"
 #include "MotorFoc_Types.h"
 
-/* 0 = no angle SPI in FOC (forced-angle modes only / debug).
- * 1 = IPB-style blocking AVAL every FocFastLoop (~100 us).
- *     Requires DMA CH4/5 ISR priority > AdcIsr. */
+/* 0 = no angle SPI in FOC (forced-angle / debug; use to A/B DioChannel_test pulse).
+ * 1 = pipeline Kick/Poll every FocFastLoop: FOC uses previous angle, then Poll+Kick.
+ *     Never spin-waits SPI in the ADC ISR. DMA CH4/5 may stay above or below Adc. */
 #ifndef MOTORCDD_FOC_ANGLE_SPI_IN_FASTLOOP
 #define MOTORCDD_FOC_ANGLE_SPI_IN_FASTLOOP   (1U)
 #endif

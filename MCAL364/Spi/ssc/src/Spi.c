@@ -46,7 +46,7 @@
 register accessed [/cover] */
 /* Include own header file */
 #include "Spi.h"
-
+//#include "Dio.h"
 #include "Std_Types.h"
 
 /* Include QSPI SFR Header file */
@@ -4794,6 +4794,7 @@ static Std_ReturnType Spi_lValidateMoveCounterLimit(const Spi_SequenceType Seque
 **                   transmission would be notified (if configured).          **
 *******************************************************************************/
 /* [cover parentID={9F00E433-7E5B-4b9f-81C7-51910D4AE4AC}][/cover] */
+/*not det measure 50us*/
 Std_ReturnType Spi_AsyncTransmit(const Spi_SequenceType Sequence)
 {
   const Spi_JobType* SeqJobLinkPtr;
@@ -4803,7 +4804,7 @@ Std_ReturnType Spi_AsyncTransmit(const Spi_SequenceType Sequence)
   uint32 CoreId;
   const Spi_CoreConfigType *CoreConfigPtr;
   uint8 SeqIndex = 0;
-
+//  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_HIGH);
   /* [cover parentID={22753B04-4DC8-4052-950D-795AC66F3C8D}]
    Get core information
   [/cover] */
@@ -4823,6 +4824,7 @@ Std_ReturnType Spi_AsyncTransmit(const Spi_SequenceType Sequence)
     Hence it is safe to pass the address of the local variable. */
   RetVal = Spi_lCheckSeqParam(SPI_SID_ASYNCTRANSMIT, &SeqIndex,
                               Sequence, (uint8)SPI_ASYNC_COMMS_TYPE);
+
   /* [cover parentID={7E4D63A8-E89D-44ce-B0DA-7BE84E849917}]
    Sequence ID is valid
   [/cover] */
@@ -4941,10 +4943,13 @@ Std_ReturnType Spi_AsyncTransmit(const Spi_SequenceType Sequence)
               /* Get the first job ID and start transmission from Queue */
               JobIndex = CoreConfigPtr->
                          SequenceConfigPtr[SeqIndex].JobLinkPtrPhysical[0U];
+
               Spi_lAsyncStartJob(JobIndex);
+
             }
             /* Exit SchM - Unlock and exit, return E_OK */
             SchM_Exit_Spi_Queue_Update();
+
           }
           else
           {
@@ -4975,10 +4980,12 @@ Std_ReturnType Spi_AsyncTransmit(const Spi_SequenceType Sequence)
         }
       }
     }
+
   }
   /* [cover parentID={C83B8CE7-2FAC-4cf8-B425-EE507919086B}]
    Return status
   [/cover] */
+//  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_LOW);
   return RetVal;
 } /* End of function Spi_AsyncTransmit */
 #endif /* SPI_LEVEL_DELIVERED != 0U */

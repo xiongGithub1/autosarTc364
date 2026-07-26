@@ -150,17 +150,6 @@ FUNC(void, StartApp_CODE) StartApp_Cyclic1ms(void) /* PRQA S 0624, 3206 */ /* MD
   /* 9180, 5012 startup polling, and ZeroCal run in the 1 ms task. */
   Tle9180_Driver_MainFunction();
 
-  /* Read the encoder from power-on onward. Closed-loop FOC keeps its
-   * higher-rate ADC fast-loop reads; the driver serializes transitions. */
-  if ((MotorControll_OpenLoopEnable != 0U) ||
-      ((MotorControll_MotorModeCmd != MOTOR_MODE_FOC_SPEED) &&
-       (MotorControll_MotorModeCmd != MOTOR_MODE_FOC_CURRENT)))
-  {
-    if (Tle5012bd_Driver_ReadAngleSlow(&Tle5012bd_Sensor) == E_OK)
-    {
-      MotorCdd_FocUpdateAngleCacheFromSensor();
-    }
-  }
 
   MotorZeroCal_MainFunction();
 /**********************************************************************************************************************

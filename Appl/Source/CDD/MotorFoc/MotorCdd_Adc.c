@@ -286,6 +286,7 @@ void MotorCdd_AdcRunFastLoop(void)
 void MotorCdd_AdcGroup0Notification(void)
 {
   uint8 writeIdx;
+  /* Scope DioChannel_test high time: A/B with MOTORCDD_FOC_ANGLE_SPI_IN_FASTLOOP 0/1. */
   Dio_WriteChannel(DioConf_DioChannel_DioChannel_test, STD_HIGH);
   if (Adc_ReadGroup(AdcConf_AdcGroup_AdcGroup_9183Sense,
                     MotorCdd_AdcMasterBuf) != E_OK)

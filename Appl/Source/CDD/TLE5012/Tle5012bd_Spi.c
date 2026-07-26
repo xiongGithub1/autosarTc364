@@ -5,7 +5,7 @@
 #include "Spi.h"
 #include "Spi_Cfg.h"
 #include "McalLib.h"
-
+#include "Dio.h"
 uint32 Tle5012bd_SpiLastTxWord = 0U;
 uint32 Tle5012bd_SpiLastRxWord = 0U;
 Std_ReturnType Tle5012bd_SpiLastResult = E_NOT_OK;
@@ -29,8 +29,10 @@ static uint32 Tle5012bd_SpiTimeoutTicks(void)
   return (ticks == 0U) ? 1U : ticks;
 }
 
+/*The execution took 56 microseconds.*/
 Std_ReturnType Tle5012bd_SpiKickU32(uint32 txWord)
 {
+//  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_HIGH);
   if (Tle5012bd_SpiPending != 0U) { return E_NOT_OK; }
 
   Tle5012bd_SpiLastTxWord = txWord;
@@ -38,16 +40,20 @@ Std_ReturnType Tle5012bd_SpiKickU32(uint32 txWord)
   Tle5012bd_SpiLastResult = E_NOT_OK;
   Tle5012bd_SpiTxBuf = txWord;
   Tle5012bd_SpiRxBuf = 0U;
+
   Tle5012bd_SpiLastSetupResult = Spi_SetupEB(SpiConf_SpiChannel_SpiChannel_5012BD1,
       (const Spi_DataBufferType *)&Tle5012bd_SpiTxBuf,
       (Spi_DataBufferType *)&Tle5012bd_SpiRxBuf, 1U);
-  if (Tle5012bd_SpiLastSetupResult != E_OK) { return E_NOT_OK; }
 
-  Tle5012bd_SpiLastTransmitResult = Spi_AsyncTransmit(SpiConf_SpiSequence_SpiSequence_5012BD);
+  if (Tle5012bd_SpiLastSetupResult != E_OK) { return E_NOT_OK; }
+//  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_HIGH);
+  Tle5012bd_SpiLastTransmitResult = Spi_AsyncTransmit(SpiConf_SpiSequence_SpiSequence_5012BD); //The execution took 56 microseconds.
+//  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_LOW);
   if (Tle5012bd_SpiLastTransmitResult != E_OK) { return E_NOT_OK; }
 
   Tle5012bd_SpiStartTick = Mcal_DelayGetTick();
   Tle5012bd_SpiPending = 1U;
+//  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_LOW);
   return E_OK;
 }
 
@@ -80,7 +86,7 @@ Spi_SeqResultType Tle5012bd_SpiPollU32(uint32 *rxWord)
   return result;
 }
 
-/* This legacy blocking API remains for non-motor configuration accesses only. */
+/* Blocking: config/SSC only 鈥� FOC angle path must use Kick/Poll. */
 Std_ReturnType Tle5012bd_SpiExchangeU32(uint32 txWord, uint32 *rxWord)
 {
   Spi_SeqResultType result;

@@ -36,7 +36,7 @@ void Tle9180_Port_DelayUs(uint32 delayUs)
   }
   else
   {
-    /* Resolution is ns/tick → ticks = (µs * 1000) / ns */
+    /* Resolution is ns/tick 鈫� ticks = (碌s * 1000) / ns */
     targetTicks = (delayUs * 1000UL) / resolution;
     if (targetTicks == 0U)
     {
@@ -112,7 +112,7 @@ Std_ReturnType Tle9180_Port_SpiExchange(IfxTLE9180 *handle, uint32 txFrame)
   handle->transmit.U = txFrame & TLE9180_SPI_FRAME_MASK;
   Tle9180_SpiTxBuf = handle->transmit.U;
   Tle9180_SpiRxBuf = 0U;
-
+  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_HIGH);
   setupResult = Spi_SetupEB(
       SpiConf_SpiChannel_SpiChannel_9183,
       (const Spi_DataBufferType *)&Tle9180_SpiTxBuf,
@@ -132,5 +132,6 @@ Std_ReturnType Tle9180_Port_SpiExchange(IfxTLE9180 *handle, uint32 txFrame)
 
   handle->receive.U = Tle9180_SpiRxBuf & TLE9180_SPI_FRAME_MASK;
   Tle9180_Port_StoreRx(handle);
+  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_LOW);
   return E_OK;
 }

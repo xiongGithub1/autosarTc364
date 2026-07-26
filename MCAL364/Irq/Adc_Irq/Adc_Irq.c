@@ -110,7 +110,7 @@ ISR(ADC0SR0_ISR)
 #endif
 {
   /* Enable Global Interrupts */
-  ENABLE();
+//  ENABLE();
   #ifdef  APP_SW
   #if (APP_SW == TEST_APP)
   #if(TEST_ACCESS_MODE_RT  == TEST_MCAL_USER1)

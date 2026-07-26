@@ -455,7 +455,7 @@ ISR(DMACH4SR_ISR)
 #endif
 {
   /* Enable Global Interrupts */
-  ENABLE();
+//  ENABLE();
 #ifdef  APP_SW
 #if (APP_SW == TEST_APP)
 #if (TEST_ACCESS_MODE_RT  == TEST_MCAL_USER1)
@@ -465,6 +465,7 @@ ISR(DMACH4SR_ISR)
 #endif
 
   Dma_ChInterruptHandler(4U);
+
 }
 #endif /* Channel 4  */
 #endif
@@ -496,7 +497,7 @@ ISR(DMACH5SR_ISR)
 #endif
 {
     /* Enable Global Interrupts */
-  ENABLE();
+//  ENABLE();
 #ifdef  APP_SW
 #if (APP_SW == TEST_APP)
 #if (TEST_ACCESS_MODE_RT  == TEST_MCAL_USER1)
