@@ -3,8 +3,6 @@
 #include "Adc_Cfg.h"
 #include "Mcu_17_TimerIp.h"
 #include "IfxGtm_reg.h"
-#include "IfxEvadc_reg.h"
-#include "IfxEvadc_bf.h"
 #include "string.h"
 #include "Dio.h"
 /*
@@ -18,6 +16,7 @@
  *
  * Adc_ReadGroup appends every synchronized slave result in master channel
  * order. The result buffer must therefore reserve all six values.
+ * VINV sync is owned by MCAL (master SyncChannelMask 0x0012).
  */
 #define MOTORCDD_ADC_MASTER_BUF_COUNT          (6U)
 #define MOTORCDD_ADC_MASTER_VO1_IDX            (0U)
@@ -25,11 +24,6 @@
 #define MOTORCDD_ADC_MASTER_VO2_IDX            (2U)
 #define MOTORCDD_ADC_MASTER_VINV_IDX           (3U)
 #define MOTORCDD_ADC_MASTER_VO3_IDX            (4U)
-
-#define MOTORCDD_ADC_VINV_KERNEL               (2U)
-#define MOTORCDD_ADC_VINV_AN_CHANNEL           (1U)
-#define MOTORCDD_ADC_VINV_RESULT_REG           (1U)
-#define MOTORCDD_ADC_VRO_AN_CHANNEL            (1U)
 
 #define MOTORCDD_ADC_CURR_CON_FACTOR           (0.0310885097645123F)
 #define MOTORCDD_ADC_VRO_CON_FACTOR            (0.0012210012210012F)
@@ -47,17 +41,14 @@
 #define MOTORCDD_ADC_TRIGGER_DEFAULT_TICKS      (5000U)
 
 #define MOTORCDD_ADC_RAW_SNAP_COUNT            (2U)
-/* Re-apply VINV SYNC every N ISR (oneshoot re-arm); avoid full register write at 10 kHz. */
-#define MOTORCDD_ADC_VINV_SYNC_REARM_PERIOD    (8U)
 
-/* ISR scratch / MCAL result buffer 鈥� Task must not read this directly. */
+/* ISR scratch / MCAL result buffer — Task must not read this directly. */
 static Adc_ValueGroupType MotorCdd_AdcMasterBuf[MOTORCDD_ADC_MASTER_BUF_COUNT];
 
 /* Ping-pong raw frames published by ISR; Task copies then converts. */
 static MotorCdd_AdcRawType MotorCdd_AdcRawSnap[MOTORCDD_ADC_RAW_SNAP_COUNT];
 static volatile uint8 MotorCdd_AdcRawWriteIdx = 0U;
 static volatile uint8 MotorCdd_AdcRawReadyIdx = 0U;
-static uint8 MotorCdd_AdcVinvSyncRearmCnt = 0U;
 
 /* Frozen frame owned by Task after copy under interrupt lock. */
 static MotorCdd_AdcRawType MotorCdd_AdcRaw;
@@ -194,28 +185,6 @@ void MotorCdd_AdcResetCurrentFilter(void)
   MotorCdd_AdcCurrentFilterReady = 0U;
 }
 
-/*
- * MCAL SyncChannelMask is CH4-only (phase currents). Enable CH1 SYNC so that
- * VINV(G2CH1) converts with VRO(G0CH1); result is read from G2.RES[1].
- */
-static void MotorCdd_AdcEnableVinvSyncWithVro(void)
-{
-  uint32 masterVroChctr;
-
-  masterVroChctr = MODULE_EVADC.G[0].CHCTR[MOTORCDD_ADC_VRO_AN_CHANNEL].U;
-  masterVroChctr |= ((uint32)1UL << (uint32)IFX_EVADC_G_CHCTR_SYNC_OFF);
-  MODULE_EVADC.G[0].CHCTR[MOTORCDD_ADC_VRO_AN_CHANNEL].U = masterVroChctr;
-
-  MODULE_EVADC.G[MOTORCDD_ADC_VINV_KERNEL].CHCTR[MOTORCDD_ADC_VINV_AN_CHANNEL].U =
-      masterVroChctr;
-  MODULE_EVADC.G[MOTORCDD_ADC_VINV_KERNEL].RCR[MOTORCDD_ADC_VINV_RESULT_REG].U =
-      0U;
-
-  /* Keep ADC3 CH1 lane aligned with master CH1 SYNC (unused result). */
-  MODULE_EVADC.G[3].CHCTR[MOTORCDD_ADC_VRO_AN_CHANNEL].U = masterVroChctr;
-  MODULE_EVADC.G[3].RCR[MOTORCDD_ADC_VINV_RESULT_REG].U = 0U;
-}
-
 static void MotorCdd_AdcFillRawFromMasterBuffer(MotorCdd_AdcRawType* rawOut)
 {
   rawOut->vo1 = MotorCdd_AdcMasterBuf[MOTORCDD_ADC_MASTER_VO1_IDX];
@@ -251,7 +220,6 @@ void MotorCdd_AdcInit(void)
   (void)memset(&MotorCdd_AdcPhysical, 0, sizeof(MotorCdd_AdcPhysical));
   MotorCdd_AdcRawWriteIdx = 0U;
   MotorCdd_AdcRawReadyIdx = 0U;
-  MotorCdd_AdcVinvSyncRearmCnt = 0U;
   MotorCdd_AdcPhaseOffsetVo1 = 0;
   MotorCdd_AdcPhaseOffsetVo2 = 0;
   MotorCdd_AdcPhaseOffsetVo3 = 0;
@@ -267,7 +235,6 @@ void MotorCdd_AdcHwTriggerInit(void)
 
   /* Sync master/slave: arm HW trigger and notification on the master only. */
   (void)Adc_EnableHardwareTrigger(AdcConf_AdcGroup_AdcGroup_9183Sense);
-  MotorCdd_AdcEnableVinvSyncWithVro();
 
   /* Apply the common sample point only after all users of ATOM0 CH7 are set up. */
   MotorCdd_AdcSetTriggerTick(MotorCdd_AdcTriggerTick);
@@ -286,7 +253,7 @@ void MotorCdd_AdcRunFastLoop(void)
 void MotorCdd_AdcGroup0Notification(void)
 {
   uint8 writeIdx;
-  /* Scope DioChannel_test high time: A/B with MOTORCDD_FOC_ANGLE_SPI_IN_FASTLOOP 0/1. */
+  Dio_FlipChannel(DioConf_DioChannel_DioChannel_test);
   Dio_WriteChannel(DioConf_DioChannel_DioChannel_test, STD_HIGH);
   if (Adc_ReadGroup(AdcConf_AdcGroup_AdcGroup_9183Sense,
                     MotorCdd_AdcMasterBuf) != E_OK)
@@ -305,22 +272,15 @@ void MotorCdd_AdcGroup0Notification(void)
   MotorCdd_AdcRawWriteIdx = (uint8)(writeIdx ^ 1U);
   MotorCdd_AdcSyncCompleteCounter++;
 
-  MotorCdd_AdcVinvSyncRearmCnt++;
-  if (MotorCdd_AdcVinvSyncRearmCnt >= MOTORCDD_ADC_VINV_SYNC_REARM_PERIOD)
-  {
-    MotorCdd_AdcVinvSyncRearmCnt = 0U;
-    /* Oneshoot HW re-arm may rewrite CHCTR without SYNC; keep VINV with VRO. */
-    MotorCdd_AdcEnableVinvSyncWithVro();
-  }
-
 #if (MOTORCDD_ADC_FASTLOOP_IN_ISR == 1U)
   /* 10 kHz: sample and FOC in the same Cat2 ISR (AdcIsr_G0 must use FPU). */
   MotorCdd_AdcLatchFrozenRawFromIdx(writeIdx);
   MotorCdd_AdcRunFastLoop();
+//  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test, STD_LOW);
 #else
   /* Legacy Task wake path — requires Os.h / SetEvent in caller wrapper. */
 #endif
-  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test, STD_LOW);
+
 }
 
 void MotorCdd_AdcOnSampleReady(void)

@@ -15,7 +15,7 @@
 **                                                                            **
 **  VERSION   : 8.0.0                                                         **
 **                                                                            **
-**  DATE, TIME: 2026-07-26, 11:20:11      !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2026-07-26, 15:22:46      !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  GENERATOR : Build b191017-0938        !!!IGNORE-LINE!!!                   **
 **                                                                            **
@@ -110,7 +110,7 @@ Container : IrqQspi interruptConfiguration
 /* Qspi Tx interrupt Category Setting*/
 #define IRQ_QSPI0_TX_CAT            (IRQ_CAT1)
 #define IRQ_QSPI1_TX_CAT            (IRQ_CAT1)
-#define IRQ_QSPI2_TX_CAT            (IRQ_CAT2)
+#define IRQ_QSPI2_TX_CAT            (IRQ_CAT1)
 #define IRQ_QSPI3_TX_CAT            (IRQ_CAT1)
 #define IRQ_QSPI4_TX_CAT            (IRQ_CAT1)
 #define IRQ_QSPI5_TX_CAT            (IRQ_CAT1)
@@ -118,7 +118,7 @@ Container : IrqQspi interruptConfiguration
 /* Qspi Tx interrupt Priority Setting*/
 #define IRQ_QSPI0_TX_PRIO           0x0
 #define IRQ_QSPI1_TX_PRIO           0x0
-#define IRQ_QSPI2_TX_PRIO           0x5
+#define IRQ_QSPI2_TX_PRIO           0x0
 #define IRQ_QSPI3_TX_PRIO           0x0
 #define IRQ_QSPI4_TX_PRIO           0x0
 #define IRQ_QSPI5_TX_PRIO           0x0
@@ -126,7 +126,7 @@ Container : IrqQspi interruptConfiguration
 /* Qspi Tx interrupt type of service Setting*/
 #define IRQ_QSPI0_TX_TOS            (IRQ_TOS_CPU0)
 #define IRQ_QSPI1_TX_TOS            (IRQ_TOS_CPU0)
-#define IRQ_QSPI2_TX_TOS            (IRQ_TOS_DMA)
+#define IRQ_QSPI2_TX_TOS            (IRQ_TOS_CPU0)
 #define IRQ_QSPI3_TX_TOS            (IRQ_TOS_CPU0)
 #define IRQ_QSPI4_TX_TOS            (IRQ_TOS_CPU0)
 #define IRQ_QSPI5_TX_TOS            (IRQ_TOS_CPU0)
@@ -134,7 +134,7 @@ Container : IrqQspi interruptConfiguration
 /* Qspi Rx interrupt Category Setting*/
 #define IRQ_QSPI0_RX_CAT            (IRQ_CAT1)
 #define IRQ_QSPI1_RX_CAT            (IRQ_CAT1)
-#define IRQ_QSPI2_RX_CAT            (IRQ_CAT2)
+#define IRQ_QSPI2_RX_CAT            (IRQ_CAT1)
 #define IRQ_QSPI3_RX_CAT            (IRQ_CAT1)
 #define IRQ_QSPI4_RX_CAT            (IRQ_CAT1)
 #define IRQ_QSPI5_RX_CAT            (IRQ_CAT1)
@@ -142,7 +142,7 @@ Container : IrqQspi interruptConfiguration
 /* Qspi Rx interrupt Priority Setting*/
 #define IRQ_QSPI0_RX_PRIO           0x0
 #define IRQ_QSPI1_RX_PRIO           0x0
-#define IRQ_QSPI2_RX_PRIO           0x4
+#define IRQ_QSPI2_RX_PRIO           0x0
 #define IRQ_QSPI3_RX_PRIO           0x0
 #define IRQ_QSPI4_RX_PRIO           0x0
 #define IRQ_QSPI5_RX_PRIO           0x0
@@ -150,7 +150,7 @@ Container : IrqQspi interruptConfiguration
 /* Qspi Rx interrupt type of service Setting*/
 #define IRQ_QSPI0_RX_TOS            (IRQ_TOS_CPU0)
 #define IRQ_QSPI1_RX_TOS            (IRQ_TOS_CPU0)
-#define IRQ_QSPI2_RX_TOS            (IRQ_TOS_DMA)
+#define IRQ_QSPI2_RX_TOS            (IRQ_TOS_CPU0)
 #define IRQ_QSPI3_RX_TOS            (IRQ_TOS_CPU0)
 #define IRQ_QSPI4_RX_TOS            (IRQ_TOS_CPU0)
 #define IRQ_QSPI5_RX_TOS            (IRQ_TOS_CPU0)
@@ -158,7 +158,7 @@ Container : IrqQspi interruptConfiguration
 /* Qspi Err interrupt Category Setting*/
 #define IRQ_QSPI0_ERR_CAT           (IRQ_CAT1)
 #define IRQ_QSPI1_ERR_CAT           (IRQ_CAT1)
-#define IRQ_QSPI2_ERR_CAT           (IRQ_CAT2)
+#define IRQ_QSPI2_ERR_CAT           (IRQ_CAT1)
 #define IRQ_QSPI3_ERR_CAT           (IRQ_CAT1)
 #define IRQ_QSPI4_ERR_CAT           (IRQ_CAT1)
 #define IRQ_QSPI5_ERR_CAT           (IRQ_CAT1)
@@ -166,7 +166,7 @@ Container : IrqQspi interruptConfiguration
 /* Qspi Err interrupt Priority Setting*/
 #define IRQ_QSPI0_ERR_PRIO          0x0
 #define IRQ_QSPI1_ERR_PRIO          0x0
-#define IRQ_QSPI2_ERR_PRIO          0x1b
+#define IRQ_QSPI2_ERR_PRIO          0x0
 #define IRQ_QSPI3_ERR_PRIO          0x0
 #define IRQ_QSPI4_ERR_PRIO          0x0
 #define IRQ_QSPI5_ERR_PRIO          0x0
@@ -182,7 +182,7 @@ Container : IrqQspi interruptConfiguration
 /* Qspi PT interrupt Category Setting*/
 #define IRQ_QSPI0_PT_CAT            (IRQ_CAT1)
 #define IRQ_QSPI1_PT_CAT            (IRQ_CAT1)
-#define IRQ_QSPI2_PT_CAT            (IRQ_CAT2)
+#define IRQ_QSPI2_PT_CAT            (IRQ_CAT1)
 #define IRQ_QSPI3_PT_CAT            (IRQ_CAT1)
 #define IRQ_QSPI4_PT_CAT            (IRQ_CAT1)
 #define IRQ_QSPI5_PT_CAT            (IRQ_CAT1)
@@ -190,7 +190,7 @@ Container : IrqQspi interruptConfiguration
 /* Qspi PT interrupt Priority Setting*/
 #define IRQ_QSPI0_PT_PRIO           0x0
 #define IRQ_QSPI1_PT_PRIO           0x0
-#define IRQ_QSPI2_PT_PRIO           0x14
+#define IRQ_QSPI2_PT_PRIO           0x0
 #define IRQ_QSPI3_PT_PRIO           0x0
 #define IRQ_QSPI4_PT_PRIO           0x0
 #define IRQ_QSPI5_PT_PRIO           0x0
@@ -315,7 +315,7 @@ Container : IrqDMAinterruptConfiguration
 #define IRQ_DMA_CHANNEL47_SR_CAT     (IRQ_CAT1)
 #define IRQ_DMA_CHANNEL48_SR_CAT     (IRQ_CAT1)
 #define IRQ_DMA_CHANNEL49_SR_CAT     (IRQ_CAT1)
-#define IRQ_DMA_CHANNEL4_SR_CAT      (IRQ_CAT2)
+#define IRQ_DMA_CHANNEL4_SR_CAT      (IRQ_CAT1)
 #define IRQ_DMA_CHANNEL50_SR_CAT     (IRQ_CAT1)
 #define IRQ_DMA_CHANNEL51_SR_CAT     (IRQ_CAT1)
 #define IRQ_DMA_CHANNEL52_SR_CAT     (IRQ_CAT1)
@@ -326,7 +326,7 @@ Container : IrqDMAinterruptConfiguration
 #define IRQ_DMA_CHANNEL57_SR_CAT     (IRQ_CAT1)
 #define IRQ_DMA_CHANNEL58_SR_CAT     (IRQ_CAT1)
 #define IRQ_DMA_CHANNEL59_SR_CAT     (IRQ_CAT1)
-#define IRQ_DMA_CHANNEL5_SR_CAT      (IRQ_CAT2)
+#define IRQ_DMA_CHANNEL5_SR_CAT      (IRQ_CAT1)
 #define IRQ_DMA_CHANNEL60_SR_CAT     (IRQ_CAT1)
 #define IRQ_DMA_CHANNEL61_SR_CAT     (IRQ_CAT1)
 #define IRQ_DMA_CHANNEL62_SR_CAT     (IRQ_CAT1)
@@ -371,7 +371,7 @@ Container : IrqDMAinterruptConfiguration
 #define IRQ_DMA_CHANNEL98_SR_CAT     (IRQ_CAT1)
 #define IRQ_DMA_CHANNEL99_SR_CAT     (IRQ_CAT1)
 #define IRQ_DMA_CHANNEL9_SR_CAT      (IRQ_CAT1)
-#define IRQ_DMA_ERR0_SR_CAT           (IRQ_CAT2)
+#define IRQ_DMA_ERR0_SR_CAT           (IRQ_CAT1)
 #define IRQ_DMA_ERR1_SR_CAT           (IRQ_CAT1)
 #define IRQ_DMA_ERR2_SR_CAT           (IRQ_CAT1)
 #define IRQ_DMA_ERR3_SR_CAT           (IRQ_CAT1)
@@ -449,7 +449,7 @@ Container : IrqDMAinterruptConfiguration
 #define IRQ_DMA_CHANNEL47_SR_PRIO    0x0
 #define IRQ_DMA_CHANNEL48_SR_PRIO    0x0
 #define IRQ_DMA_CHANNEL49_SR_PRIO    0x0
-#define IRQ_DMA_CHANNEL4_SR_PRIO    0x55
+#define IRQ_DMA_CHANNEL4_SR_PRIO    0x0
 #define IRQ_DMA_CHANNEL50_SR_PRIO    0x0
 #define IRQ_DMA_CHANNEL51_SR_PRIO    0x0
 #define IRQ_DMA_CHANNEL52_SR_PRIO    0x0
@@ -460,7 +460,7 @@ Container : IrqDMAinterruptConfiguration
 #define IRQ_DMA_CHANNEL57_SR_PRIO    0x0
 #define IRQ_DMA_CHANNEL58_SR_PRIO    0x0
 #define IRQ_DMA_CHANNEL59_SR_PRIO    0x0
-#define IRQ_DMA_CHANNEL5_SR_PRIO    0x56
+#define IRQ_DMA_CHANNEL5_SR_PRIO    0x0
 #define IRQ_DMA_CHANNEL60_SR_PRIO    0x0
 #define IRQ_DMA_CHANNEL61_SR_PRIO    0x0
 #define IRQ_DMA_CHANNEL62_SR_PRIO    0x0
@@ -505,7 +505,7 @@ Container : IrqDMAinterruptConfiguration
 #define IRQ_DMA_CHANNEL98_SR_PRIO    0x0
 #define IRQ_DMA_CHANNEL99_SR_PRIO    0x0
 #define IRQ_DMA_CHANNEL9_SR_PRIO    0x0
-#define IRQ_DMA_ERR0_SR_PRIO          0x4b
+#define IRQ_DMA_ERR0_SR_PRIO          0x0
 #define IRQ_DMA_ERR1_SR_PRIO          0x0
 #define IRQ_DMA_ERR2_SR_PRIO          0x0
 #define IRQ_DMA_ERR3_SR_PRIO          0x0

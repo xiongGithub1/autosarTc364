@@ -181,13 +181,13 @@ static void MotorCdd_FocServiceAngleSpi(void)
   {
     return;
   }
-//  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_HIGH);
+  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_HIGH);
   if (Tle5012bd_Driver_ReadAngle(&Tle5012bd_Sensor) == E_OK) ///*The execution took 72 microseconds.*/
   {
     MotorCdd_FocUpdateAngleCacheFromSensor();
     MotorCdd_AngleSpiFastLoopCount++;
   }
-//  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_LOW);
+  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_LOW);
 }
 
 void MotorCdd_FocPrepareOutputEnable(void)
@@ -294,11 +294,9 @@ void MotorCdd_FocFastLoop(void)
   idRef = MotorCdd_CmdMirror.idRef;
   iqRef = MotorCdd_CmdMirror.iqRef;
 
-#if (MOTORCDD_FOC_ANGLE_SPI_IN_FASTLOOP == 1U)
 
-//      MotorCdd_FocServiceAngleSpi();
+  MotorCdd_FocServiceAngleSpi();
 
-#endif
   switch (motorMode)
   {
     case MOTOR_MODE_CALIBRATION:
@@ -329,10 +327,7 @@ void MotorCdd_FocFastLoop(void)
     case MOTOR_MODE_FOC_SPEED:
     case MOTOR_MODE_FOC_CURRENT:
       /* Current sample + previous angle first; SPI Poll/Kick after (no spin). */
-
       MotorCdd_RunFocCurrentControl(idRef, iqRef, 0U, 0.0F);
-
-
       break;
 
     case MOTOR_MODE_STOP:

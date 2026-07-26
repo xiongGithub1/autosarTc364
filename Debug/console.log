@@ -2,25 +2,26 @@
 **** Build of configuration Debug for project last364 ****
 
 "D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
-Compiling Sbc_30_Tlf35584_Lcfg.c
-Compiling Spi_PBcfg.c
-Compiling EcuM_Callout_Stubs.c
-Compiling Tle5012bd_Driver.c
-Compiling Tle5012bd_Spi.c
-Compiling tle5012b.c
-Compiling Tle9180_AutosarPort.c
-Compiling Sbc_30_Tlf35584.c
-Compiling Spi_Irq.c
-Compiling Spi.c
-ctc W588: ["..\BSW364\Sbc_30_Tlf35584\Implementation\Sbc_30_Tlf35584.c" 1568/10] dead assignment to "result" eliminated
-ctc W588: ["..\BSW364\Sbc_30_Tlf35584\Implementation\Sbc_30_Tlf35584.c" 1561/10] dead assignment to "result" eliminated
-0 errors, 2 warnings
-ctc W557: ["..\Appl\Source\EcuM_Callout_Stubs.c" 154/12] possible infinite loop
-ctc W557: ["..\Appl\Source\EcuM_Callout_Stubs.c" 854/12] possible infinite loop
-0 errors, 2 warnings
+Compiling MotorCdd_Adc.c
+Compiling MotorCdd_Foc.c
+ctc W536: ["..\Appl\Source\CDD\MotorFoc\MotorCdd_Foc.c" 239/13] unused static function "MotorCdd_RunFocCurrentControl"
+ctc W588: ["..\Appl\Source\CDD\MotorFoc\MotorCdd_Foc.c" 136/16] dead assignment to "deltaRaw" eliminated
+ctc W588: ["..\Appl\Source\CDD\MotorFoc\MotorCdd_Foc.c" 132/16] dead assignment to "deltaRaw" eliminated
+ctc W588: ["..\Appl\Source\CDD\MotorFoc\MotorCdd_Foc.c" 295/9] dead assignment to "iqRef" eliminated
+ctc W588: ["..\Appl\Source\CDD\MotorFoc\MotorCdd_Foc.c" 294/9] dead assignment to "idRef" eliminated
+ctc W588: ["..\Appl\Source\CDD\MotorFoc\MotorCdd_Foc.c" 293/13] dead assignment to "motorMode" eliminated
+0 errors, 6 warnings
+ctc W505: ["..\Appl\Source\CDD\MotorFoc\MotorCdd_Adc.c" 209/3] implicit declaration of function "SuspendAllInterrupts"
+ctc W577: ["..\Appl\Source\CDD\MotorFoc\MotorCdd_Adc.c" 209/23] calling a function without a prototype
+ctc W505: ["..\Appl\Source\CDD\MotorFoc\MotorCdd_Adc.c" 211/3] implicit declaration of function "ResumeAllInterrupts"
+ctc W577: ["..\Appl\Source\CDD\MotorFoc\MotorCdd_Adc.c" 211/22] calling a function without a prototype
+ctc W536: ["..\Appl\Source\CDD\MotorFoc\MotorCdd_Adc.c" 188/13] unused static function "MotorCdd_AdcFillRawFromMasterBuffer"
+ctc W536: ["..\Appl\Source\CDD\MotorFoc\MotorCdd_Adc.c" 205/13] unused static function "MotorCdd_AdcLatchFrozenRaw"
+ctc W537: ["..\Appl\Source\CDD\MotorFoc\MotorCdd_Adc.c" 255/9] unused variable "writeIdx"
+0 errors, 7 warnings
 Linking to last364.elf
 
-Time consumed: 19227 ms
+Time consumed: 20883 ms
 **** End of build ****
 
 Tool info: 

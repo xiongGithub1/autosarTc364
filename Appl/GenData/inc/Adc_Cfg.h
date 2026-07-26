@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 10.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-07-25, 16:05:57        !!!IGNORE-LINE!!!                 **
+**  DATE, TIME: 2026-07-26, 17:19:47        !!!IGNORE-LINE!!!                 **
 **                                                                            **
 **  GENERATOR : Build b191017-0938          !!!IGNORE-LINE!!!                 **
 **                                                                            **
@@ -164,7 +164,7 @@ reporting.
 - if STD_ON, DET is Enabled 
 - if STD_OFF,DET is Disabled 
 */
-#define ADC_DEV_ERROR_DETECT  (STD_ON)
+#define ADC_DEV_ERROR_DETECT  (STD_OFF)
 /*
 Configuration: ADC_RUNTIME_ERROR_DETECT
 Preprocessor switch for enabling the runtime error detection and 

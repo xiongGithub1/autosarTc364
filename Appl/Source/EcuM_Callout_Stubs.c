@@ -108,14 +108,14 @@
 #include "IfxSrc_reg.h"
 
 /* Keep inside this USERBLOCK — DaVinci Generate wipes code outside the markers. */
-static void Appl_Qspi2FlushRxFifo(void)
-{
-  while (MODULE_QSPI2.STATUS.B.RXFIFOLEVEL > 0U)
-  {
-    (void)MODULE_QSPI2.RXEXIT.U;
-  }
-  MODULE_QSPI2.FLAGSCLEAR.U = (1U << IFX_QSPI_FLAGSCLEAR_RXC_OFF);
-}
+//static void Appl_Qspi2FlushRxFifo(void)
+//{
+//  while (MODULE_QSPI2.STATUS.B.RXFIFOLEVEL > 0U)
+//  {
+//    (void)MODULE_QSPI2.RXEXIT.U;
+//  }
+//  MODULE_QSPI2.FLAGSCLEAR.U = (1U << IFX_QSPI_FLAGSCLEAR_RXC_OFF);
+//}
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!
@@ -315,18 +315,18 @@ FUNC(void, ECUM_CODE) EcuM_AL_DriverInitOne(void)
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_AL_DriverInitOne>                  DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
   /* Spi_Init does not drain QSPI2 RX FIFO; stale entries block Async+DMA (RXFIFOLEVEL=4). */
-  Appl_Qspi2FlushRxFifo();
+//  Appl_Qspi2FlushRxFifo();
 
   /* Level-2: Spi_Init leaves POLLING; interrupt mode required for DMA complete IRQ. */
-  (void)Spi_SetAsyncMode(SPI_INTERRUPT_MODE);
+//  (void)Spi_SetAsyncMode(SPI_INTERRUPT_MODE);
 
   /* Irq*_Init clears SRE ??? enable QSPI2 DMA request + DMA/PT/ERR service requests. */
-  SRC_QSPI2TX.B.SRE = 1U;
-  SRC_QSPI2RX.B.SRE = 1U;
-  SRC_QSPI2ERR.B.SRE = 1U;
-  SRC_QSPI2PT.B.SRE = 1U;
-  SRC_DMACH4.B.SRE = 1U;
-  SRC_DMACH5.B.SRE = 1U;
+//  SRC_QSPI2TX.B.SRE = 1U;
+//  SRC_QSPI2RX.B.SRE = 1U;
+//  SRC_QSPI2ERR.B.SRE = 1U;
+//  SRC_QSPI2PT.B.SRE = 1U;
+//  SRC_DMACH4.B.SRE = 1U;
+//  SRC_DMACH5.B.SRE = 1U;
 
 #if (ADC_STARTUP_CALIB_API == STD_ON)
   (void)Adc_TriggerStartupCal();

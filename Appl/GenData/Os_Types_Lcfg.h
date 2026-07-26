@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Types_Lcfg.h
- *   Generation Time: 2026-07-25 11:21:06
+ *   Generation Time: 2026-07-26 15:20:26
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -84,11 +84,6 @@
 #define AdcIsr_G8 AdcIsr_G8
 #define CanIsr_0 CanIsr_0
 #define CounterIsr_SystemTimer CounterIsr_SystemTimer
-#define DMACH4SR_ISR DMACH4SR_ISR
-#define DMACH5SR_ISR DMACH5SR_ISR
-#define DmaErrIsr DmaErrIsr
-#define Qspi2ErrIsr Qspi2ErrIsr
-#define Qspi2PtIsr Qspi2PtIsr
 
 /* Alarm identifiers. */
 #define Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms
@@ -175,12 +170,7 @@ typedef enum
   AdcIsr_G8 = 1,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
   CanIsr_0 = 2,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
   CounterIsr_SystemTimer = 3,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  DMACH4SR_ISR = 4,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  DMACH5SR_ISR = 5,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  DmaErrIsr = 6,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Qspi2ErrIsr = 7,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Qspi2PtIsr = 8,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  OS_ISRID_COUNT = 9,
+  OS_ISRID_COUNT = 4,
   INVALID_ISR = OS_ISRID_COUNT
 } ISRType;
 

@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 12.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-07-25, 16:05:58       !!!IGNORE-LINE!!!                  **
+**  DATE, TIME: 2026-07-26, 17:27:47       !!!IGNORE-LINE!!!                  **
 **                                                                            **
 **  GENERATOR : Build b191017-0938         !!!IGNORE-LINE!!!                  **
 **                                                                            **
@@ -74,7 +74,7 @@ from the code
 - if STD_OFF, Development error detection is disabled
 */
 
-#define PWM_17_GTMCCU6_DEV_ERROR_DETECT (STD_ON)
+#define PWM_17_GTMCCU6_DEV_ERROR_DETECT (STD_OFF)
 /*
 Configuration: PWM_17_GTMCCU6_MULTICORE_ERROR_DETECT :
 Adds/removes the Multicore error detection and reporting 

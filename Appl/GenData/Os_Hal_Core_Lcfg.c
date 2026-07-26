@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Core_Lcfg.c
- *   Generation Time: 2024-07-24 19:46:28
+ *   Generation Time: 2026-07-26 15:20:25
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -167,11 +167,6 @@ CONSTP2CONST(Os_IsrHwConfigType, OS_CONST, OS_CONST)
   &OsCfg_Isr_AdcIsr_G8_HwConfig,
   &OsCfg_Isr_CanIsr_0_HwConfig,
   &OsCfg_Isr_CounterIsr_SystemTimer_HwConfig,
-  &OsCfg_Isr_DMACH4SR_ISR_HwConfig,
-  &OsCfg_Isr_DMACH5SR_ISR_HwConfig,
-  &OsCfg_Isr_DmaErrIsr_HwConfig,
-  &OsCfg_Isr_Qspi2ErrIsr_HwConfig,
-  &OsCfg_Isr_Qspi2PtIsr_HwConfig,
   NULL_PTR
 };
 

@@ -15,7 +15,7 @@
 **                                                                            **
 **  VERSION   : 16.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2026-07-26, 15:15:07  !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2026-07-26, 16:19:52  !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  GENERATOR : Build b191017-0938       !!!IGNORE-LINE!!!                  **
 **                                                                            **
@@ -55,7 +55,7 @@
 /* Pre-Compile parameters */
 /* (Development Error)/(Default Error) Trace */
 
-#define SPI_DEV_ERROR_DETECT                  (STD_ON)
+#define SPI_DEV_ERROR_DETECT                  (STD_OFF)
 /* Runtime Error*/
 
 #define SPI_RUNTIME_ERROR_DETECT (STD_OFF)
@@ -73,10 +73,7 @@
 1 - Only Asynchronous Transmission(Interrupt mode only)
 2 - Both Sync and Async(Both Interrupt and Polling Mode) Transmission */
 
-#define SPI_LEVEL_DELIVERED                   (2U)
-/* Main function period - Used by application to poll the SPI Hw module */
-
-#define SPI_MAIN_FUNCTION_PERIOD              (0U)
+#define SPI_LEVEL_DELIVERED                   (0U)
 /* Kind of Channele buffers allowed
 0 - Only Internal buffers allowed
 1 - Only External buffers allowed
@@ -124,7 +121,7 @@ sequences are allowed. For Level = 1, its value is STD_OFF by default */
 /* Index for QSPI2 module */
 #define SPI_QSPI2_INDEX                       (2U)
 /* Sync/Async */
-#define SPI_QSPI2_HWTYPE                      (SPI_ASYNC_BUS)
+#define SPI_QSPI2_HWTYPE                      (SPI_SYNC_BUS)
 /* Is QSPI3 Used */
 #define SPI_HW_QSPI3_USED                     (STD_ON)
 /* Index for QSPI3 module */
@@ -199,8 +196,7 @@ Module enters sleep mode upon sleep request         */
 #define SPI_NUM_EB_CHANNELS_CORE0            (3U)
 
 #define SPI_DMA_MAX_TCS_NUM_QSPI1 (0U)
-/* DMA Transaction control set per channel for QSPI2 */
-#define SPI_DMA_MAX_TCS_NUM_QSPI2             (1U)
+#define SPI_DMA_MAX_TCS_NUM_QSPI2 (0U)
 #define SPI_DMA_MAX_TCS_NUM_QSPI3 (0U)
 /* Indicates no CS to be done */
 #define SPI_CS_VIA_HW_OR_NONE                 (0xFFFFU)

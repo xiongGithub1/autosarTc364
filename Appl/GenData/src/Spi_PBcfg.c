@@ -15,7 +15,7 @@
 **                                                                            **
 **  VERSION   : 17.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2026-07-26, 15:15:08  !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2026-07-26, 16:19:53  !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  GENERATOR : Build b191017-0938      !!!IGNORE-LINE!!!                   **
 **                                                                            **
@@ -174,22 +174,6 @@ static const Spi_ChannelType SpiJob_35584_ChannelLinkPtr_Physical[] =
   
   SPI_CHANNEL_DELIMITER
 };
-    /* Linked list of sequence[s] with Job[s] shared  */
-static const Spi_SequenceType SpiSequence_9183_SeqSharePtr[] =
-{
-  SPI_SEQUENCE_DELIMITER
-};
-
-static const Spi_SequenceType SpiSequence_5012BD_SeqSharePtr[] =
-{
-  SPI_SEQUENCE_DELIMITER
-};
-
-static const Spi_SequenceType SpiSequence_35584_SeqSharePtr[] =
-{
-  SPI_SEQUENCE_DELIMITER
-};
-
 
 /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
 * because of AS naming convention*/
@@ -235,54 +219,41 @@ static const Spi_SequenceConfigType Spi_kSequenceConfig_Core0[] =
         /* Sequence:SpiSequence_35584 */
   {
     SpiConf_SpiSequence_SpiSequence_35584,
-    /* Notification function */
-    NULL_PTR,
     /* Job linked list */
     SpiSequence_35584_JobLinkPtr_Physical,
-    /* Seq linked list, with jobs shared */
-    SpiSequence_35584_SeqSharePtr,
     /* No. of jobs in Seq */
     1U,
         /* Hw Module Used (b000001)*/
     0x01U,
         
-                    0U /* Sync Sequence */
-                  },
+              0U /* Sync Sequence */
+      },
     /* Synchronous Sequence[s] */
     /* Sequence:SpiSequence_5012BD */
   {
     SpiConf_SpiSequence_SpiSequence_5012BD,
-    /* Notification function */
-    NULL_PTR,
     /* Job linked list */
     SpiSequence_5012BD_JobLinkPtr_Physical,
-    /* Seq linked list, with jobs shared */
-    SpiSequence_5012BD_SeqSharePtr,
     /* No. of jobs in Seq */
     1U,
         /* Hw Module Used (b000010)*/
     0x02U,
         
-            
-          1U /* Async Sequence */
-            },
+              0U /* Sync Sequence */
+      },
     /* Synchronous Sequence[s] */
     /* Sequence:SpiSequence_9183 */
   {
     SpiConf_SpiSequence_SpiSequence_9183,
-    /* Notification function */
-    NULL_PTR,
     /* Job linked list */
     SpiSequence_9183_JobLinkPtr_Physical,
-    /* Seq linked list, with jobs shared */
-    SpiSequence_9183_SeqSharePtr,
     /* No. of jobs in Seq */
     1U,
         /* Hw Module Used (b000011)*/
     0x03U,
         
-                    0U /* Sync Sequence */
-                  }};
+              0U /* Sync Sequence */
+      }};
 
 /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
 * because of AS naming convention*/
@@ -330,7 +301,6 @@ static const Spi_JobConfigType Spi_kJobConfig_Core0[] =
   /* Job:SpiJob_35584 */
   {
     SpiConf_SpiJob_SpiJob_35584,
-    NULL_PTR,                   /* No Notification function */
     Spi_BaudRateAndClockParam(  /* Baudrate = 1000000.0Hz */
     (0x13U), (0x00U),          /* TQ , LoopBack */
     (0x01U), (0x00U),          /*  Q , A        */
@@ -357,10 +327,9 @@ static const Spi_JobConfigType Spi_kJobConfig_Core0[] =
   /* Job:SpiJob_5012BD */
   {
     SpiConf_SpiJob_SpiJob_5012BD,
-    NULL_PTR,                   /* No Notification function */
-    Spi_BaudRateAndClockParam(  /* Baudrate = 4000000.0Hz */
-    (0x04U), (0x00U),          /* TQ , LoopBack */
-    (0x01U), (0x00U),          /*  Q , A        */
+    Spi_BaudRateAndClockParam(  /* Baudrate = 8000000.0Hz */
+    (0x00U), (0x00U),          /* TQ , LoopBack */
+    (0x04U), (0x00U),          /*  Q , A        */
     (0x00U), (0x01U),          /*  B , C        */
     (0x01U), (0x00U),          /*  CPH , CPOL   */
     (0x00U)                    /*  PAREN        */
@@ -384,7 +353,6 @@ static const Spi_JobConfigType Spi_kJobConfig_Core0[] =
   /* Job:SpiJob_9183 */
   {
     SpiConf_SpiJob_SpiJob_9183,
-    NULL_PTR,                   /* No Notification function */
     Spi_BaudRateAndClockParam(  /* Baudrate = 4000000.0Hz */
     (0x04U), (0x00U),          /* TQ , LoopBack */
     (0x01U), (0x00U),          /*  Q , A        */
@@ -521,9 +489,6 @@ static const Spi_QspiHwConfigType Spi_kQspiHwConfigQSPI1 =
 {
   0x00200000U,               /* Active CS Level, SSOC SFR value */
   0U,                        /* Queue length can be ignored for Sync */
-  (uint8)SPI_DMA_CHNL_INVALID,   /* DMA Tx Channel */
-  (uint8)SPI_DMA_CHNL_INVALID,   /* DMA Rx Channel */
-  0U,                        /* DMA TCS value can be ignored for Sync */
   SPI_CLK_SLEEP_DISABLE,     /* Module Sleep disabled */
   (uint8)1U,                 /* Input class, MRIS bit field in PISEL SFR */
   1U,                         /* Max Sequence Count on the QSPI */
@@ -571,10 +536,7 @@ names
 static const Spi_QspiHwConfigType Spi_kQspiHwConfigQSPI2 =
 {
   0x00040000U,               /* Active CS Level, SSOC SFR value */
-  SPI_JOB_QUEUE_LENGTH_QSPI2,/* Job Queue Length */
-  (uint8)4U,                 /* DMA Rx Channel */
-  (uint8)5U,                 /* DMA Tx Channel */
-  SPI_DMA_MAX_TCS_NUM_QSPI2, /* DMA TCS count, for both Rx and Tx */
+  0U,                        /* Queue length can be ignored for Sync */
   SPI_CLK_SLEEP_DISABLE,     /* Module Sleep disabled */
   (uint8)1U,                 /* Input class, MRIS bit field in PISEL SFR */
   1U,                         /* Max Sequence Count on the QSPI */
@@ -623,9 +585,6 @@ static const Spi_QspiHwConfigType Spi_kQspiHwConfigQSPI3 =
 {
   0x10000000U,               /* Active CS Level, SSOC SFR value */
   0U,                        /* Queue length can be ignored for Sync */
-  (uint8)SPI_DMA_CHNL_INVALID,   /* DMA Tx Channel */
-  (uint8)SPI_DMA_CHNL_INVALID,   /* DMA Rx Channel */
-  0U,                        /* DMA TCS value can be ignored for Sync */
   SPI_CLK_SLEEP_DISABLE,     /* Module Sleep disabled */
   (uint8)3U,                 /* Input class, MRIS bit field in PISEL SFR */
   1U,                         /* Max Sequence Count on the QSPI */
@@ -748,10 +707,10 @@ const Spi_CoreConfigType Spi_Config_Core0 =
   QSPI5 - 0
   QSPI4 - 0
   QSPI3 - 1
-  QSPI2 - 2
+  QSPI2 - 1
   QSPI1 - 1
   QSPI0 - 0*/
-  0x00288U,
+  0x00248U,
   /* No. of Sequences configured */
   3U,
   /* No. of Jobs configured */

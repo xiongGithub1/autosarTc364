@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Context_Lcfg.h
- *   Generation Time: 2026-07-25 19:18:41
+ *   Generation Time: 2026-07-26 15:20:25
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -107,21 +107,6 @@ extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Leve
 /*! HAL dynamic ISR2 level context data: Level4 */
 extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level4_Dyn;
 
-/*! HAL dynamic ISR2 level context data: Level5 */
-extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level5_Dyn;
-
-/*! HAL dynamic ISR2 level context data: Level6 */
-extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level6_Dyn;
-
-/*! HAL dynamic ISR2 level context data: Level7 */
-extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level7_Dyn;
-
-/*! HAL dynamic ISR2 level context data: Level8 */
-extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level8_Dyn;
-
-/*! HAL dynamic ISR2 level context data: Level9 */
-extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level9_Dyn;
-
 /*! HAL dynamic task context data: Default_Appl_Init_Task */
 extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Default_Appl_Init_Task_Dyn;
 
@@ -187,21 +172,6 @@ extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CanIsr_0;
 
 /*! HAL ISR2 context configuration data: CounterIsr_SystemTimer */
 extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CounterIsr_SystemTimer;
-
-/*! HAL ISR2 context configuration data: DMACH4SR_ISR */
-extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_DMACH4SR_ISR;
-
-/*! HAL ISR2 context configuration data: DMACH5SR_ISR */
-extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_DMACH5SR_ISR;
-
-/*! HAL ISR2 context configuration data: DmaErrIsr */
-extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_DmaErrIsr;
-
-/*! HAL ISR2 context configuration data: Qspi2ErrIsr */
-extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Qspi2ErrIsr;
-
-/*! HAL ISR2 context configuration data: Qspi2PtIsr */
-extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Qspi2PtIsr;
 
 /*! HAL task context configuration data: Default_Appl_Init_Task */
 extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Default_Appl_Init_Task;

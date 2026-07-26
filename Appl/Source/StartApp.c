@@ -151,7 +151,7 @@ FUNC(void, StartApp_CODE) StartApp_Cyclic1ms(void) /* PRQA S 0624, 3206 */ /* MD
   Tle9180_Driver_MainFunction();
 
 
-  MotorZeroCal_MainFunction();
+//  MotorZeroCal_MainFunction();
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/

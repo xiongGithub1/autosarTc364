@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 16.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-07-25, 16:05:57               !!!IGNORE-LINE!!!          **
+**  DATE, TIME: 2026-07-26, 15:32:57               !!!IGNORE-LINE!!!          **
 **                                                                            **
 **  GENERATOR : Build b191017-0938                 !!!IGNORE-LINE!!!          **
 **                                                                            **
@@ -65,8 +65,7 @@
 
 /* User defined notification functions for channels to be called by
  * the DMA driver in case of channel interrupts */
-/* Channel specific notification function for Channel 4  */
-extern void Spi_QspiDmaCallout(uint8 Channel, uint32 Event);
+/* <***** No Channel specific notifications are configured *****> */
 /* ******************************************************************* */
 
 
@@ -255,7 +254,7 @@ static const Dma_ChConfigType Dma_kChConfigRoot_Core0[]=
 {
   {
     &Dma_kChannel_4_TcsConfigRoot[0U], /* TCS config Root */
-    Spi_QspiDmaCallout, /* Channel Notification */
+    NULL_PTR, /* Channel Notification */
     0x00000000U, /* TSR configuration */
     (uint8)4U, /* Dma Channel ID */
     (uint8)0x0U, /* Channel Assigned partition */
