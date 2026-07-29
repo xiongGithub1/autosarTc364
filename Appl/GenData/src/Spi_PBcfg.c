@@ -15,7 +15,7 @@
 **                                                                            **
 **  VERSION   : 17.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2026-07-26, 16:19:53  !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2026-07-29, 14:50:13  !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  GENERATOR : Build b191017-0938      !!!IGNORE-LINE!!!                   **
 **                                                                            **
@@ -327,9 +327,9 @@ static const Spi_JobConfigType Spi_kJobConfig_Core0[] =
   /* Job:SpiJob_5012BD */
   {
     SpiConf_SpiJob_SpiJob_5012BD,
-    Spi_BaudRateAndClockParam(  /* Baudrate = 8000000.0Hz */
-    (0x00U), (0x00U),          /* TQ , LoopBack */
-    (0x04U), (0x00U),          /*  Q , A        */
+    Spi_BaudRateAndClockParam(  /* Baudrate = 4000000.0Hz */
+    (0x04U), (0x00U),          /* TQ , LoopBack */
+    (0x01U), (0x00U),          /*  Q , A        */
     (0x00U), (0x01U),          /*  B , C        */
     (0x01U), (0x00U),          /*  CPH , CPOL   */
     (0x00U)                    /*  PAREN        */

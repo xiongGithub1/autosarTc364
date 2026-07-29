@@ -39,9 +39,9 @@ FUNC(void, BSWM_CODE) BswM_MainFunction(void); /* PRQA S 3451, 3449 */ /* MD_Rte
 # define BSWM_STOP_SEC_CODE
 # include "BswM_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
-# define SchM_Enter_BswM_BSWM_EXCLUSIVE_AREA_0() SuspendAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Enter_BswM_BSWM_EXCLUSIVE_AREA_0() SuspendOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
-# define SchM_Exit_BswM_BSWM_EXCLUSIVE_AREA_0() ResumeAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Exit_BswM_BSWM_EXCLUSIVE_AREA_0() ResumeOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
 
 # ifdef __cplusplus

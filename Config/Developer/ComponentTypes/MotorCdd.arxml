@@ -156,7 +156,7 @@
               </REQUIRED-COM-SPECS>
               <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/Pp_MotorCtrlCmd</REQUIRED-INTERFACE-TREF>
             </R-PORT-PROTOTYPE>
-            <R-PORT-PROTOTYPE UUID="DDDC8C7A-B655-4AB8-A799-19C0640369A1">
+            <R-PORT-PROTOTYPE UUID="29E2A940-C285-408B-B3E8-5DA08629AC4C">
               <SHORT-NAME>Rp_AdcSampleReady</SHORT-NAME>
               <ADMIN-DATA>
                 <SDGS>
@@ -192,9 +192,9 @@
                     <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/Pp_MotorCdd_EnableInverter/EnableInverter</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
-                <EXTERNAL-TRIGGER-OCCURRED-EVENT UUID="86A8EDB3-572C-4B4A-9168-6170322AED15">
-                  <SHORT-NAME>EXTO_MotorCdd_AdcOnSampleReady_If_AdcSampleReady_Rp_AdcSampleReady</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/MotorCdd/MotorCdd_InternalBehavior/MotorCdd_AdcOnSampleReady</START-ON-EVENT-REF>
+                <EXTERNAL-TRIGGER-OCCURRED-EVENT UUID="82042913-C4B4-4AA3-A4AD-92BB597A22BB">
+                  <SHORT-NAME>EXTO_AdcSampleReady_Rp_AdcSampleReady_AdcSampleReady</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/MotorCdd/MotorCdd_InternalBehavior/AdcSampleReady</START-ON-EVENT-REF>
                   <TRIGGER-IREF>
                     <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Rp_AdcSampleReady</CONTEXT-R-PORT-REF>
                     <TARGET-TRIGGER-REF DEST="TRIGGER">/PortInterfaces/Rp_AdcSampleReady/AdcSampleReady</TARGET-TRIGGER-REF>
@@ -276,8 +276,8 @@
                 <RUNNABLE-ENTITY UUID="EAA32CA4-C54C-4A6C-A44B-13B97FD5BE5A">
                   <SHORT-NAME>Pp_MotorCdd_EnableInverter_EnableInverter</SHORT-NAME>
                 </RUNNABLE-ENTITY>
-                <RUNNABLE-ENTITY UUID="766EB97D-3052-4EA3-B6E2-670FA94A7F82">
-                  <SHORT-NAME>MotorCdd_AdcOnSampleReady</SHORT-NAME>
+                <RUNNABLE-ENTITY UUID="4DE69B13-0DE2-41D1-9E82-8FDF77631396">
+                  <SHORT-NAME>AdcSampleReady</SHORT-NAME>
                 </RUNNABLE-ENTITY>
               </RUNNABLES>
               <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Isr_Lcfg.h
- *   Generation Time: 2026-07-26 15:20:26
+ *   Generation Time: 2026-07-29 10:29:51
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -86,8 +86,8 @@
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 /*! ISR configuration data: AdcIsr_G0 */
-extern CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Isr_AdcIsr_G0_HwConfig;
-extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_AdcIsr_G0;
+extern CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Cat1Isr_AdcIsr_G0_HwConfig;
+extern CONST(Os_IsrCat1ConfigType, OS_CONST) OsCfg_Cat1Isr_AdcIsr_G0;
 
 /*! ISR configuration data: AdcIsr_G8 */
 extern CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Isr_AdcIsr_G8_HwConfig;

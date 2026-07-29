@@ -142,30 +142,16 @@ Rte_Hook.h<br>
 Rte_Cfg.h<br>
 Rte.h<br>
 Rte_Cbk.h<br>
-ComXf_Compiler_Cfg.h<br>
-ComXf.h<br>
-E2EXf_Compiler_Cfg.h<br>
-E2EXf_LCfg.h<br>
 MotorCdd_MemMap.h<br>
 MotorControll_MemMap.h<br>
 Os_OsCore0_swc_MemMap.h<br>
 StartApp_MemMap.h<br>
 Rte_Compiler_Cfg.h<br>
 Rte.c<br>
-ComXf.c<br>
-E2EXf_LCfg.c<br>
 Rte_cfg.mak<br>
 Rte_check.mak<br>
 Rte_defs.mak<br>
 Rte_rules.mak<br>
-ComXf_cfg.mak<br>
-ComXf_check.mak<br>
-ComXf_defs.mak<br>
-ComXf_rules.mak<br>
-E2EXf_cfg.mak<br>
-E2EXf_check.mak<br>
-E2EXf_defs.mak<br>
-E2EXf_rules.mak<br>
 SchM_Adc.h<br>
 SchM_BswM.h<br>
 SchM_Can.h<br>
@@ -227,7 +213,7 @@ Rte_Needs.ecuc.arxml<br>
 Note: This resource usage calculation assumes that the "Boolean" data type is based on uint8 base type.<br>
       Further on padding bytes for structs are not considered, which depends on the compiler settings.<br>
 <br>
-RAM   Size: 21 Bytes<br>
+RAM   Size: 18 Bytes<br>
 CONST Size: 0 Bytes<br>
 <br>
 <P ALIGN=LEFT>
@@ -467,18 +453,18 @@ CONST Size: 0 Bytes<br>
 <TD>n/a</TD>
 </TR>
 <TR>
-<TD><B>TimingEvent</B> Cyclic 10ms</TD>
-<TD>MotorCDDMainFunction</TD>
-<TD>Default_Appl_Task</TD>
-<TD>Rte_Ev_Cyclic_Default_Appl_Task_0_10ms</TD>
-<TD>Rte_Al_TE_Default_Appl_Task_0_10ms</TD>
+<TD><B>ExternalTriggerEvent</B></TD>
+<TD>AdcSampleReady</TD>
+<TD>MotorTask</TD>
+<TD>Rte_Ev_Run_MotorCdd_AdcSampleReady_Rp_AdcSampleReady_AdcSampleReady</TD>
+<TD>n/a</TD>
 </TR>
 <TR>
-<TD><B>ExternalTriggerEvent</B></TD>
-<TD>MotorCdd_AdcOnSampleReady</TD>
+<TD><B>TimingEvent</B> Cyclic 10ms</TD>
+<TD>MotorCDDMainFunction</TD>
 <TD>MotorTask</TD>
-<TD>Rte_Ev_Run_MotorCdd_MotorCdd_AdcOnSampleReady_Rp_AdcSampleReady_AdcSampleReady</TD>
-<TD>n/a</TD>
+<TD>Rte_Ev_Run_MotorCdd_MotorCDDMainFunction</TD>
+<TD>Rte_Al_TE_MotorCdd_MotorCDDMainFunction</TD>
 </TR>
 <TR>
 <TD><B>InitEvent</B></TD>
@@ -490,8 +476,8 @@ CONST Size: 0 Bytes<br>
 <TR>
 <TD><B>OperationInvokedEvent</B> MotorCdd::Pp_MotorCdd_EnableInverter::EnableInverter</TD>
 <TD>Pp_MotorCdd_EnableInverter_EnableInverter</TD>
-<TD>MotorTask</TD>
-<TD>Rte_Ev_Run_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
 <TD>n/a</TD>
 </TR>
 <TR>
@@ -504,9 +490,9 @@ CONST Size: 0 Bytes<br>
 <TR>
 <TD><B>TimingEvent</B> Cyclic 1ms</TD>
 <TD>MotorControll_MainFunction</TD>
-<TD>Default_Appl_Task</TD>
-<TD>Rte_Ev_Cyclic_Default_Appl_Task_0_1ms</TD>
-<TD>Rte_Al_TE_Default_Appl_Task_0_1ms</TD>
+<TD>MotorTask</TD>
+<TD>Rte_Ev_Run_MotorControll_MotorControll_MainFunction</TD>
+<TD>Rte_Al_TE_MotorControll_MotorControll_MainFunction</TD>
 </TR>
 <TR>
 <TD><B>TimingEvent</B> Cyclic 10ms</TD>
@@ -540,15 +526,15 @@ CONST Size: 0 Bytes<br>
 <TD><B>TimingEvent</B> Cyclic 10ms</TD>
 <TD>StartApp_Cyclic10ms</TD>
 <TD>Default_Appl_Task</TD>
-<TD>Rte_Ev_Cyclic_Default_Appl_Task_0_10ms</TD>
-<TD>Rte_Al_TE_Default_Appl_Task_0_10ms</TD>
+<TD>Rte_Ev_Run_StartApp_StartApp_Cyclic10ms</TD>
+<TD>Rte_Al_TE_StartApp_StartApp_Cyclic10ms</TD>
 </TR>
 <TR>
 <TD><B>TimingEvent</B> Cyclic 1ms</TD>
 <TD>StartApp_Cyclic1ms</TD>
 <TD>Default_Appl_Task</TD>
-<TD>Rte_Ev_Cyclic_Default_Appl_Task_0_1ms</TD>
-<TD>Rte_Al_TE_Default_Appl_Task_0_1ms</TD>
+<TD>Rte_Ev_Run_StartApp_StartApp_Cyclic1ms</TD>
+<TD>Rte_Al_TE_StartApp_StartApp_Cyclic1ms</TD>
 </TR>
 <TR>
 <TD><B>TimingEvent</B> Cyclic 250ms</TD>

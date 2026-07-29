@@ -4,15 +4,15 @@
 #include "Std_Types.h"
 
 #define MOTORZEROCAL_STORAGE_MAGIC      (0xA5A4U)
-#define MOTORZEROCAL_ID_REF_A           (1.5F)
+#define MOTORZEROCAL_ID_REF_A           (5.0F)
 /* ~0.15 s to 1.5 A when ramped in PWM fast-loop. */
-#define MOTORZEROCAL_ID_RAMP_STEP_A     (0.001F)
+#define MOTORZEROCAL_ID_RAMP_STEP_A     (0.1F)
 #define MOTORZEROCAL_ID_REACHED_EPS_A   (0.02F)
 #define MOTORZEROCAL_ALIGN_ANGLE_DEG    (0.0F)
 #define MOTORZEROCAL_ANGLE_OK_LOW       (3.0F)
 #define MOTORZEROCAL_ANGLE_OK_HIGH      (8190.0F)
-/* Settle after Id reached (1 ms MainFunction ticks). */
-#define MOTORZEROCAL_DELAY_MS           (500U)
+/* Keep Id at target for 1.5 s before reading the encoder. */
+#define MOTORZEROCAL_DELAY_MS           (1500U)
 /* Settle after each ANG_BASE retry. */
 #define MOTORZEROCAL_RETRY_DELAY_MS     (200U)
 #define MOTORZEROCAL_ANG_BASE_APPLY_DELAY_MS (500U)
@@ -32,9 +32,9 @@
 #define MOTORZEROCAL_FAULT_TIMEOUT  (3U)
 #define MOTORZEROCAL_FAULT_FLASH    (4U)
 
-/* 0: no TLE5012 SPI from ZeroCal (bring up Spi first). 1: normal. */
+/* Zero calibration reads and writes TLE5012 MOD_3.ANG_BASE through SPI. */
 #ifndef MOTORZEROCAL_SPI_ENABLE
-#define MOTORZEROCAL_SPI_ENABLE     (0U)
+#define MOTORZEROCAL_SPI_ENABLE     (1U)
 #endif
 
 typedef enum

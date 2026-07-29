@@ -30,6 +30,33 @@
 
 
 
+
+
+
+
+
+
+
+     /* Client Server Interfaces: */
+
+
+     /* Service calls */
+
+
+     /* Mode Interfaces */
+
+
+
+
+     /* Trigger Interfaces */
+
+     /* Inter-Runnable variables */
+
+
+
+
+
+
 Std_ReturnType TSC_MotorCdd_Rte_Read_Pp_MotorCtrlCmd_MotorMode(uint8 *data)
 {
   return Rte_Read_Pp_MotorCtrlCmd_MotorMode(data);
@@ -62,33 +89,6 @@ Std_ReturnType TSC_MotorCdd_Rte_Write_Pp_MotorFaultStatus_tle9180_Ov_Fault(boole
 {
   return Rte_Write_Pp_MotorFaultStatus_tle9180_Ov_Fault(data);
 }
-
-
-
-
-
-     /* Client Server Interfaces: */
-
-
-     /* Service calls */
-
-
-     /* Mode Interfaces */
-
-
-
-
-     /* Trigger Interfaces */
-
-     /* Inter-Runnable variables */
-
-
-
-
-
-
-
-
 
 
 

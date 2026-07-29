@@ -39,21 +39,21 @@ FUNC(void, CANSM_CODE) CanSM_MainFunction(void); /* PRQA S 3451, 3449 */ /* MD_R
 # define CANSM_STOP_SEC_CODE
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
-# define SchM_Enter_CanSM_CANSM_EXCLUSIVE_AREA_2() SuspendAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Enter_CanSM_CANSM_EXCLUSIVE_AREA_2() SuspendOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
-# define SchM_Exit_CanSM_CANSM_EXCLUSIVE_AREA_2() ResumeAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Exit_CanSM_CANSM_EXCLUSIVE_AREA_2() ResumeOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
-# define SchM_Enter_CanSM_CANSM_EXCLUSIVE_AREA_3() SuspendAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Enter_CanSM_CANSM_EXCLUSIVE_AREA_3() SuspendOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
-# define SchM_Exit_CanSM_CANSM_EXCLUSIVE_AREA_3() ResumeAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Exit_CanSM_CANSM_EXCLUSIVE_AREA_3() ResumeOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
-# define SchM_Enter_CanSM_CANSM_EXCLUSIVE_AREA_5() SuspendAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Enter_CanSM_CANSM_EXCLUSIVE_AREA_5() SuspendOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
-# define SchM_Exit_CanSM_CANSM_EXCLUSIVE_AREA_5() ResumeAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Exit_CanSM_CANSM_EXCLUSIVE_AREA_5() ResumeOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
-# define SchM_Enter_CanSM_CANSM_EXCLUSIVE_AREA_6() SuspendAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Enter_CanSM_CANSM_EXCLUSIVE_AREA_6() SuspendOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
-# define SchM_Exit_CanSM_CANSM_EXCLUSIVE_AREA_6() ResumeAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Exit_CanSM_CANSM_EXCLUSIVE_AREA_6() ResumeOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
 # define RTE_START_SEC_CODE
 # include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */

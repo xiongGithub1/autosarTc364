@@ -188,7 +188,7 @@ void MotorControll_StopPwm(void)
 
 static void MotorControll_UpdateSensorObservation(void)
 {
-  /* Angle SPI runs in StartApp 1 ms → Tle5012bd_Sensor / angle_cache. Controll: mirror only. */
+  /* Angle SPI runs in StartApp 1 ms 鈫� Tle5012bd_Sensor / angle_cache. Controll: mirror only. */
   MotorControll_SensorElectricalAngleRad =
       Tle5012bd_Driver_GetElectricalAngleRad();
   MotorControll_SensorMechanicalRpm = Tle5012bd_Sensor.RPM;
@@ -462,7 +462,7 @@ void MotorControll_MainFunction(void)
   MotorCdd_FocSetCmdMirror((uint8)motorMode,
                            MotorControll_IdRefOut,
                            MotorControll_IqRefOut);
-  MotorFoc_OpenLoopCan_MainFunction(motorMode);
+//  MotorFoc_OpenLoopCan_MainFunction(motorMode);
 
   if (MotorControll_OpenLoopEnable != 0U)
   {

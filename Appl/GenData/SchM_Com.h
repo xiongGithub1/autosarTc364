@@ -40,17 +40,17 @@ FUNC(void, COM_CODE) Com_MainFunctionTx_ComMainFunctionTx(void); /* PRQA S 3451,
 # define COM_STOP_SEC_CODE
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
-# define SchM_Enter_Com_COM_EXCLUSIVE_AREA_BOTH() SuspendAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Enter_Com_COM_EXCLUSIVE_AREA_BOTH() SuspendOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
-# define SchM_Exit_Com_COM_EXCLUSIVE_AREA_BOTH() ResumeAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Exit_Com_COM_EXCLUSIVE_AREA_BOTH() ResumeOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
-# define SchM_Enter_Com_COM_EXCLUSIVE_AREA_RX() SuspendAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Enter_Com_COM_EXCLUSIVE_AREA_RX() SuspendOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
-# define SchM_Exit_Com_COM_EXCLUSIVE_AREA_RX() ResumeAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Exit_Com_COM_EXCLUSIVE_AREA_RX() ResumeOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
-# define SchM_Enter_Com_COM_EXCLUSIVE_AREA_TX() SuspendAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Enter_Com_COM_EXCLUSIVE_AREA_TX() SuspendOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
-# define SchM_Exit_Com_COM_EXCLUSIVE_AREA_TX() ResumeAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Exit_Com_COM_EXCLUSIVE_AREA_TX() ResumeOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
 
 # ifdef __cplusplus

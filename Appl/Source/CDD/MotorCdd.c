@@ -42,7 +42,7 @@
  *********************************************************************************************************************/
 
 #include "Rte_MotorCdd.h"
-
+#include "Dio.h"
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of include and declaration area >>        DO NOT CHANGE THIS COMMENT!
@@ -53,6 +53,7 @@
 #include "Tle5012bd_Driver.h"
 #include "MotorCdd_Foc.h"
 #include "IfxGtm_reg.h"
+#include "MotorZeroCal.h"
 
 #define MOTORCDD_DTM_CDTM_INDEX             (0U)
 #define MOTORCDD_DTM_INDEX                  (4U)
@@ -86,6 +87,27 @@ static void MotorCdd_PwmComplementaryInit(void);
 #define MotorCdd_START_SEC_CODE
 #include "MotorCdd_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(void, MotorCdd_CODE) AdcSampleReady(void) /* PRQA S 0624, 3206 */ /* MD_Rte_0624, MD_Rte_3206 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: AdcSampleReady
+ *********************************************************************************************************************/
+	  Dio_FlipChannel(DioConf_DioChannel_DioChannel_test);
+	/* 10 kHz: sample and FOC run in the same Cat2 ISR. */
+//	MotorCdd_AdcRunFastLoop();
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+
 /**********************************************************************************************************************
  *
  * Runnable Entity Name: MotorCDDMainFunction
@@ -112,9 +134,10 @@ FUNC(void, MotorCdd_CODE) MotorCDDMainFunction(void) /* PRQA S 0624, 3206 */ /* 
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
  * Symbol: MotorCDDMainFunction
  *********************************************************************************************************************/
-  /* Backup cmd mirror only. 9180 Sync Init/steps run in StartApp 1 ms — not MotorTask. */
+  /* Backup cmd mirror only. 9180 Sync Init/steps run in StartApp 1 ms 鈥� not MotorTask. */
   MotorCdd_FocUpdateCmdMirror();
 
+  MotorZeroCal_MainFunction();
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/

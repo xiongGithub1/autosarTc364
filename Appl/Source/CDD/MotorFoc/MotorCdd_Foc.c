@@ -158,8 +158,8 @@ static uint8 MotorCdd_FocAngleSpiAllowedInFastLoop(uint8 motorMode)
 }
 
 /*
- * Pipeline only: Kick/Poll via Tle5012bd_Driver_ReadAngle 鈥� never spin in ISR.
- * Call AFTER current loop so this beat uses the previous angle cache.
+ * QSPI2 SFR exchange (no MCAL SyncTransmit). Prefer AFTER current loop so
+ * this beat can still use the previous angle cache if desired.
  */
 static void MotorCdd_FocServiceAngleSpi(void)
 {
@@ -176,18 +176,19 @@ static void MotorCdd_FocServiceAngleSpi(void)
     return;
   }
 
-  /* ZeroCal / open-loop use forced angle 鈥� skip 5012 SPI. */
-  if (MotorCdd_FocAngleSpiAllowedInFastLoop(motorMode) == 0U)
-  {
-    return;
-  }
-  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_HIGH);
-  if (Tle5012bd_Driver_ReadAngle(&Tle5012bd_Sensor) == E_OK) ///*The execution took 72 microseconds.*/
+  /* ZeroCal / open-loop use forced angle — skip 5012 SPI. */
+//  if (MotorCdd_FocAngleSpiAllowedInFastLoop(motorMode) == 0U)
+//  {
+//    return;
+//  }
+
+//  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_HIGH);
+  if (Tle5012bd_Driver_ReadAngle(&Tle5012bd_Sensor) == E_OK)
   {
     MotorCdd_FocUpdateAngleCacheFromSensor();
     MotorCdd_AngleSpiFastLoopCount++;
   }
-  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_LOW);
+//  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_LOW);
 }
 
 void MotorCdd_FocPrepareOutputEnable(void)
@@ -325,24 +326,29 @@ void MotorCdd_FocFastLoop(void)
       break;
 
     case MOTOR_MODE_FOC_SPEED:
+    	break;
     case MOTOR_MODE_FOC_CURRENT:
       /* Current sample + previous angle first; SPI Poll/Kick after (no spin). */
-      MotorCdd_RunFocCurrentControl(idRef, iqRef, 0U, 0.0F);
+      MotorCdd_RunFocCurrentControl(0, iqRef, 0U, 0.0F);
       break;
 
     case MOTOR_MODE_STOP:
+      MotorCdd_CmdMirror.idRef=0;
+      MotorCdd_CmdMirror.iqRef=0;
+
       MotorCdd_FocStopOutput();
       break;
 
     case MOTOR_MODE_CALIBRATION_ERASE:
+    	break;
     case MOTOR_MODE_CALIBRATION_SAVE:
+    	break;
     case MOTOR_MODE_IDLE:
+        MotorCdd_CmdMirror.idRef=0;
+        MotorCdd_CmdMirror.iqRef=0;
+        break;
     default:
-      if (MotorCdd_AdcIsCurrentOffsetReady() == 0U)
-      {
-        /* Offset capture needs fast-loop samples but no PWM output. */
-        MotorCdd_RunFocCurrentControl(0.0F, 0.0F, 0U, 0.0F);
-      }
+
       break;
   }
 }

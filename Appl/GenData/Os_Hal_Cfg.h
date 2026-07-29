@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Cfg.h
- *   Generation Time: 2026-07-26 15:20:25
+ *   Generation Time: 2026-07-29 10:29:51
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -109,6 +109,9 @@
 
 
 /* CAT0 and CAT1 ISR core and level definitions */
+	 
+# define OS_CFG_HAL_ISR_AdcIsr_G0_CORE      (0U)
+# define OS_CFG_HAL_ISR_AdcIsr_G0_LEVEL     (83U)
 
 
 

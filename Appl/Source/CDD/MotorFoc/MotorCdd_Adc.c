@@ -3,27 +3,21 @@
 #include "Adc_Cfg.h"
 #include "Mcu_17_TimerIp.h"
 #include "IfxGtm_reg.h"
+#include "IfxEvadc_reg.h"
 #include "string.h"
 #include "Dio.h"
+#include "Os.h"
 /*
- * Master AdcGroup_9183Sense ReadGroup layout with SyncChannelMask = CH1 | CH4:
- *   [0] VO1 (ADC0 CH4)
- *   [1] VRO (ADC0 CH1)
- *   [2] VO2 (ADC2 CH4, sync slave)
- *   [3] VINV (ADC2 CH1, sync slave)
- *   [4] VO3 (ADC3 CH4, sync slave)
- *   [5] ADC3 CH1 (sync slave, unused)
- *
- * Adc_ReadGroup appends every synchronized slave result in master channel
- * order. The result buffer must therefore reserve all six values.
- * VINV sync is owned by MCAL (master SyncChannelMask 0x0012).
+ * SyncChannelMask = CH1 | CH4. Fast path reads EVADC result SFRs directly
+ * (no Adc_ReadGroup). Master SetupResultBuffer still needs 6 slots for MCAL ISR.
+ *   G0.RES[0] VO1 (ADC0 CH4)
+ *   G0.RES[1] VRO (ADC0 CH1)
+ *   G2.RES[0] VO2 (ADC2 CH4, sync slave)
+ *   G2.RES[1] VINV (ADC2 CH1, sync slave)
+ *   G3.RES[0] VO3 (ADC3 CH4, sync slave)
  */
 #define MOTORCDD_ADC_MASTER_BUF_COUNT          (6U)
-#define MOTORCDD_ADC_MASTER_VO1_IDX            (0U)
-#define MOTORCDD_ADC_MASTER_VRO_IDX            (1U)
-#define MOTORCDD_ADC_MASTER_VO2_IDX            (2U)
-#define MOTORCDD_ADC_MASTER_VINV_IDX           (3U)
-#define MOTORCDD_ADC_MASTER_VO3_IDX            (4U)
+#define MOTORCDD_ADC_RES_VALUE_MASK            (0x00000FFFU)
 
 #define MOTORCDD_ADC_CURR_CON_FACTOR           (0.0310885097645123F)
 #define MOTORCDD_ADC_VRO_CON_FACTOR            (0.0012210012210012F)
@@ -40,17 +34,9 @@
 /* Center-aligned PWM: sample near period center (peak). */
 #define MOTORCDD_ADC_TRIGGER_DEFAULT_TICKS      (5000U)
 
-#define MOTORCDD_ADC_RAW_SNAP_COUNT            (2U)
 
-/* ISR scratch / MCAL result buffer — Task must not read this directly. */
+
 static Adc_ValueGroupType MotorCdd_AdcMasterBuf[MOTORCDD_ADC_MASTER_BUF_COUNT];
-
-/* Ping-pong raw frames published by ISR; Task copies then converts. */
-static MotorCdd_AdcRawType MotorCdd_AdcRawSnap[MOTORCDD_ADC_RAW_SNAP_COUNT];
-static volatile uint8 MotorCdd_AdcRawWriteIdx = 0U;
-static volatile uint8 MotorCdd_AdcRawReadyIdx = 0U;
-
-/* Frozen frame owned by Task after copy under interrupt lock. */
 static MotorCdd_AdcRawType MotorCdd_AdcRaw;
 static MotorCdd_AdcPhysicalType MotorCdd_AdcPhysical;
 static float32 MotorCdd_AdcCurrentFilterIuA;
@@ -179,47 +165,35 @@ static void MotorCdd_AdcResetOffsetAccumulator(void)
 
 void MotorCdd_AdcResetCurrentFilter(void)
 {
+
   MotorCdd_AdcCurrentFilterIuA = 0.0F;
   MotorCdd_AdcCurrentFilterIvA = 0.0F;
   MotorCdd_AdcCurrentFilterIwA = 0.0F;
   MotorCdd_AdcCurrentFilterReady = 0U;
 }
 
-static void MotorCdd_AdcFillRawFromMasterBuffer(MotorCdd_AdcRawType* rawOut)
+static void MotorCdd_AdcFillRawFromHwRegs(MotorCdd_AdcRawType* rawOut)
 {
-  rawOut->vo1 = MotorCdd_AdcMasterBuf[MOTORCDD_ADC_MASTER_VO1_IDX];
-  rawOut->vro = MotorCdd_AdcMasterBuf[MOTORCDD_ADC_MASTER_VRO_IDX];
-  rawOut->vo2 = MotorCdd_AdcMasterBuf[MOTORCDD_ADC_MASTER_VO2_IDX];
-  rawOut->vinv = MotorCdd_AdcMasterBuf[MOTORCDD_ADC_MASTER_VINV_IDX];
-  rawOut->vo3 = MotorCdd_AdcMasterBuf[MOTORCDD_ADC_MASTER_VO3_IDX];
+  rawOut->vo1 = (Adc_ValueGroupType)(MODULE_EVADC.G[0].RES[0].U &
+                                     MOTORCDD_ADC_RES_VALUE_MASK);
+  rawOut->vro = (Adc_ValueGroupType)(MODULE_EVADC.G[0].RES[1].U &
+                                     MOTORCDD_ADC_RES_VALUE_MASK);
+  rawOut->vo2 = (Adc_ValueGroupType)(MODULE_EVADC.G[2].RES[0].U &
+                                     MOTORCDD_ADC_RES_VALUE_MASK);
+  rawOut->vinv = (Adc_ValueGroupType)(MODULE_EVADC.G[2].RES[1].U &
+                                      MOTORCDD_ADC_RES_VALUE_MASK);
+  rawOut->vo3 = (Adc_ValueGroupType)(MODULE_EVADC.G[3].RES[0].U &
+                                     MOTORCDD_ADC_RES_VALUE_MASK);
 }
 
-static void MotorCdd_AdcLatchFrozenRawFromIdx(uint8 readyIdx)
-{
-  if (readyIdx < MOTORCDD_ADC_RAW_SNAP_COUNT)
-  {
-    MotorCdd_AdcRaw = MotorCdd_AdcRawSnap[readyIdx];
-  }
-}
 
-static void MotorCdd_AdcLatchFrozenRaw(void)
-{
-  uint8 readyIdx;
 
-  SuspendAllInterrupts();
-  readyIdx = MotorCdd_AdcRawReadyIdx;
-  ResumeAllInterrupts();
-  MotorCdd_AdcLatchFrozenRawFromIdx(readyIdx);
-}
 
 void MotorCdd_AdcInit(void)
 {
   (void)memset(MotorCdd_AdcMasterBuf, 0, sizeof(MotorCdd_AdcMasterBuf));
-  (void)memset(MotorCdd_AdcRawSnap, 0, sizeof(MotorCdd_AdcRawSnap));
   (void)memset(&MotorCdd_AdcRaw, 0, sizeof(MotorCdd_AdcRaw));
   (void)memset(&MotorCdd_AdcPhysical, 0, sizeof(MotorCdd_AdcPhysical));
-  MotorCdd_AdcRawWriteIdx = 0U;
-  MotorCdd_AdcRawReadyIdx = 0U;
   MotorCdd_AdcPhaseOffsetVo1 = 0;
   MotorCdd_AdcPhaseOffsetVo2 = 0;
   MotorCdd_AdcPhaseOffsetVo3 = 0;
@@ -252,46 +226,23 @@ void MotorCdd_AdcRunFastLoop(void)
 
 void MotorCdd_AdcGroup0Notification(void)
 {
-  uint8 writeIdx;
-  Dio_FlipChannel(DioConf_DioChannel_DioChannel_test);
-  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test, STD_HIGH);
-  if (Adc_ReadGroup(AdcConf_AdcGroup_AdcGroup_9183Sense,
-                    MotorCdd_AdcMasterBuf) != E_OK)
-  {
-    return;
-  }
-
-  writeIdx = MotorCdd_AdcRawWriteIdx;
-  if (writeIdx >= MOTORCDD_ADC_RAW_SNAP_COUNT)
-  {
-    writeIdx = 0U;
-  }
-
-  MotorCdd_AdcFillRawFromMasterBuffer(&MotorCdd_AdcRawSnap[writeIdx]);
-  MotorCdd_AdcRawReadyIdx = writeIdx;
-  MotorCdd_AdcRawWriteIdx = (uint8)(writeIdx ^ 1U);
+//  Dio_FlipChannel(DioConf_DioChannel_DioChannel_test);
+//  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_LOW);
+//  Dio_FlipChannel(DioConf_DioChannel_DioChannel_test2);
+//  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_HIGH);
+  MotorCdd_AdcFillRawFromHwRegs(&MotorCdd_AdcRaw);
   MotorCdd_AdcSyncCompleteCounter++;
 
-#if (MOTORCDD_ADC_FASTLOOP_IN_ISR == 1U)
-  /* 10 kHz: sample and FOC in the same Cat2 ISR (AdcIsr_G0 must use FPU). */
-  MotorCdd_AdcLatchFrozenRawFromIdx(writeIdx);
   MotorCdd_AdcRunFastLoop();
-//  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test, STD_LOW);
-#else
-  /* Legacy Task wake path — requires Os.h / SetEvent in caller wrapper. */
-#endif
+
+//  (void)SetEvent(MotorTask,
+//                 Rte_Ev_Run_MotorCdd_AdcSampleReady_Rp_AdcSampleReady_AdcSampleReady);
+//  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_LOW);
+
 
 }
 
-void MotorCdd_AdcOnSampleReady(void)
-{
-#if (MOTORCDD_ADC_FASTLOOP_IN_ISR == 0U)
-  MotorCdd_AdcLatchFrozenRaw();
-  MotorCdd_AdcRunFastLoop();
-#else
-  /* Fast loop runs in ADC ISR; RTE event is unused. */
-#endif
-}
+
 
 void MotorCdd_AdcConvertToPhysical(void)
 {

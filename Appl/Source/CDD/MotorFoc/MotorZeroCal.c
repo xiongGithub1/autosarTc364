@@ -455,6 +455,17 @@ static uint8 MotorZeroCal_IsAlignCurrentReached(void)
   return 0U;
 }
 
+static uint8 MotorZeroCal_IsEncoderAtZero(float32 angle)
+{
+  if ((angle <= MOTORZEROCAL_ANGLE_OK_LOW) ||
+      (angle >= MOTORZEROCAL_ANGLE_OK_HIGH))
+  {
+    return 1U;
+  }
+
+  return 0U;
+}
+
 static void MotorZeroCal_ChangeAngleBasicFromAval(void)
 {
 #if (MOTORZEROCAL_SPI_ENABLE == 1U)
@@ -484,7 +495,7 @@ static void MotorZeroCal_OnAlignSuccess(void)
 static void MotorZeroCal_RunCalibrationStep(void)
 {
   float32 angle;
-  uint32 settleMs;
+  uint32 waitMs;
 
   if (MotorZeroCal_State != MOTORZEROCAL_STATE_RUNNING)
   {
@@ -500,6 +511,7 @@ static void MotorZeroCal_RunCalibrationStep(void)
 
   if (MotorZeroCal_IsAlignCurrentReached() == 0U)
   {
+    /* Id is still ramping in the 10 kHz FOC loop. */
     MotorZeroCal_TimerMs = 0U;
     if (MotorControll_IsOutputEnabled() != 0U)
     {
@@ -511,46 +523,40 @@ static void MotorZeroCal_RunCalibrationStep(void)
   MotorZeroCal_AlignWaitMs = 0UL;
   MotorZeroCal_TimerMs++;
 
-  settleMs = (MotorZeroCal_RetryCount == 0U) ?
-             (uint32)MOTORZEROCAL_DELAY_MS :
-             (uint32)MOTORZEROCAL_RETRY_DELAY_MS;
+  /* Hold the first alignment for 1.5 s; retries only need a short settle. */
+  waitMs = (MotorZeroCal_RetryCount == 0U) ?
+           (uint32)MOTORZEROCAL_DELAY_MS :
+           (uint32)MOTORZEROCAL_RETRY_DELAY_MS;
 
-  if (MotorZeroCal_TimerMs <= settleMs)
+  if (MotorZeroCal_TimerMs <= waitMs)
   {
     return;
   }
 
-#if (MOTORZEROCAL_SPI_ENABLE == 1U)
+  /* Read the aligned encoder position. */
   tle5012b_read_angle(&Tle5012bd_Sensor);
   angle = Tle5012bd_Sensor.Angle;
 
-  if ((angle <= MOTORZEROCAL_ANGLE_OK_LOW) ||
-      (angle >= MOTORZEROCAL_ANGLE_OK_HIGH))
+  if (MotorZeroCal_IsEncoderAtZero(angle) != 0U)
   {
     MotorZeroCal_OnAlignSuccess();
+    return;
   }
-  else
-  {
-    MotorZeroCal_ChangeAngleBasicFromAval();
-    MotorZeroCal_RetryCount++;
 
-    if (MotorZeroCal_RetryCount >= MOTORZEROCAL_MAX_RETRY)
-    {
-      MotorZeroCal_RetryCount = 0U;
-      MotorZeroCal_SetCalibratedFlag(0U);
-      MotorZeroCal_EnterFault(MOTORZEROCAL_FAULT_ALIGN);
-    }
-    else
-    {
-      /* Let the encoder apply ANG_BASE before checking the new zero. */
-      MotorZeroCal_TimerMs = 0U;
-    }
+  /* The rotor is aligned, but the encoder origin is not: update MOD_3.ANG_BASE. */
+  MotorZeroCal_ChangeAngleBasicFromAval();
+  MotorZeroCal_RetryCount++;
+
+  if (MotorZeroCal_RetryCount >= MOTORZEROCAL_MAX_RETRY)
+  {
+    MotorZeroCal_RetryCount = 0U;
+    MotorZeroCal_SetCalibratedFlag(0U);
+    MotorZeroCal_EnterFault(MOTORZEROCAL_FAULT_ALIGN);
+    return;
   }
-#else
-  (void)angle;
-  /* SPI bring-up: do not touch TLE5012 from ZeroCal. */
-  MotorZeroCal_EnterFault(MOTORZEROCAL_FAULT_ALIGN);
-#endif
+
+  /* Let TLE5012 apply the new ANG_BASE before verifying it. */
+  MotorZeroCal_TimerMs = 0U;
 }
 
 static void MotorZeroCal_CheckTotalTimeout(void)

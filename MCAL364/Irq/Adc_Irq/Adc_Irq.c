@@ -104,13 +104,16 @@
 #if IRQ_ADC0_SR0_TOS != IRQ_TOS_DMA
 #if((IRQ_ADC0_SR0_PRIO > 0) || (IRQ_ADC0_SR0_CAT == IRQ_CAT2))
 #if((IRQ_ADC0_SR0_PRIO > 0) && (IRQ_ADC0_SR0_CAT == IRQ_CAT1))
-IFX_INTERRUPT(ADC0SR0_ISR, 0, IRQ_ADC0_SR0_PRIO)
+// IFX_INTERRUPT(ADC0SR0_ISR, 0, IRQ_ADC0_SR0_PRIO)
+void ADC0SR0_ISR(void)
 #elif IRQ_ADC0_SR0_CAT == IRQ_CAT2
 ISR(ADC0SR0_ISR)
 #endif
 {
   /* Enable Global Interrupts */
 //  ENABLE();
+	Dio_FlipChannel(DioConf_DioChannel_DioChannel_test);
+//  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_HIGH);
   #ifdef  APP_SW
   #if (APP_SW == TEST_APP)
   #if(TEST_ACCESS_MODE_RT  == TEST_MCAL_USER1)

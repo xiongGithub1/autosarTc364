@@ -4,11 +4,10 @@
 #include "Tle5012bd_Driver.h"
 #include "MotorCdd_Foc.h"
 #include "Tle5012bd_Spi.h"
-#include "Dio.h"
+
 Tle5012 Tle5012bd_Sensor;
 
 static Tle5012bd_StateType Tle5012bd_State = TLE5012BD_STATE_UNINIT;
-volatile uint8 Tle5012bd_AngleReadBusy = 0U;
 volatile uint8 Tle5012bd_AngleValid = 0U;
 volatile uint16 Tle5012bd_AngleReadOkCount = 0U;
 volatile uint16 Tle5012bd_AngleReadFailCount = 0U;
@@ -32,11 +31,13 @@ void Tle5012bd_Driver_Init(void)
 #endif
   Tle5012bd_Sensor.polePairs = 4U;
   Tle5012bd_Sensor.SafetyBit = 0U;
-  Tle5012bd_AngleReadBusy = 0U;
   Tle5012bd_AngleValid = 0U;
   Tle5012bd_AngleReadOkCount = 0U;
   Tle5012bd_AngleReadFailCount = 0U;
   Tle5012bd_AngleLastResult = E_NOT_OK;
+
+  /* Spi_Init must already have run (EcuM). Program QSPI2 ECON for SFR path. */
+  Tle5012bd_SpiHwInit();
 
   Tle5012bd_State = TLE5012BD_STATE_READY;
 }
@@ -61,17 +62,10 @@ static void Tle5012bd_Driver_RecordResult(Std_ReturnType result)
   }
 }
 
-/*
- * Non-blocking AVAL pipeline (safe in ADC ISR):
- *   idle  -> Kick, return E_NOT_OK (no angle yet)
- *   busy  -> Poll once; PENDING returns immediately (never spin)
- *         -> OK: process + Kick next frame, return E_OK
- */
 static Std_ReturnType Tle5012bd_Driver_ReadAngleInternal(Tle5012 *sensor,
                                                           float32 samplePeriod)
 {
   uint32 rxWord = 0U;
-  Spi_SeqResultType spiResult;
   Std_ReturnType result;
   float32 previousPeriod;
 
@@ -81,24 +75,7 @@ static Std_ReturnType Tle5012bd_Driver_ReadAngleInternal(Tle5012 *sensor,
     return E_NOT_OK;
   }
 
-  if (Tle5012bd_AngleReadBusy == 0U)
-  {
-    if (Tle5012bd_SpiKickU32(0x8020FFFFU) != E_OK)
-    {
-      Tle5012bd_Driver_RecordResult(E_NOT_OK);
-      return E_NOT_OK;
-    }
-    Tle5012bd_AngleReadBusy = 1U;
-    return E_NOT_OK; /* Kick only; angle arrives on a later call */
-  }
-
-  spiResult = Tle5012bd_SpiPollU32(&rxWord);
-  if (spiResult == SPI_SEQ_PENDING)
-  {
-    return E_NOT_OK; /* still in flight — do not wait */
-  }
-  Tle5012bd_AngleReadBusy = 0U;
-  if (spiResult != SPI_SEQ_OK)
+  if (Tle5012bd_SpiExchangeU32(0x8020FFFFU, &rxWord) != E_OK)
   {
     Tle5012bd_Driver_RecordResult(E_NOT_OK);
     return E_NOT_OK;
@@ -112,13 +89,6 @@ static Std_ReturnType Tle5012bd_Driver_ReadAngleInternal(Tle5012 *sensor,
   result = tle5012b_process_angle_raw(sensor, (uint16)(rxWord & 0xFFFFU));
   sensor->DisTimer = previousPeriod;
   Tle5012bd_Driver_RecordResult(result);
-
-  /* Keep one transfer in flight for the next fast-loop Poll. */
-  if (Tle5012bd_SpiKickU32(0x8020FFFFU) == E_OK)
-  {
-    Tle5012bd_AngleReadBusy = 1U;
-  }
-
   return result;
 }
 
@@ -131,6 +101,7 @@ Std_ReturnType Tle5012bd_Driver_ReadAngleSlow(Tle5012 *sensor)
 {
   return Tle5012bd_Driver_ReadAngleInternal(sensor, 0.001F);
 }
+
 void Tle5012bd_Driver_ReadAngleSpeed(Tle5012 *sensor)
 {
   if ((sensor != NULL_PTR) && (Tle5012bd_State == TLE5012BD_STATE_READY))
@@ -160,5 +131,3 @@ float32 Tle5012bd_Driver_GetMechanicalRpm(void)
 {
   return Tle5012bd_Sensor.RPM;
 }
-
-

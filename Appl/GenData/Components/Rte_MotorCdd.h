@@ -115,14 +115,14 @@ extern VAR(float32, RTE_VAR_NOINIT) Rte_MotorControll_Pp_MotorCurrentRef_Iq_Ref;
  *********************************************************************************************************************/
 
 # ifndef RTE_CORE
+#  define RTE_RUNNABLE_AdcSampleReady AdcSampleReady
 #  define RTE_RUNNABLE_MotorCDDMainFunction MotorCDDMainFunction
-#  define RTE_RUNNABLE_MotorCdd_AdcOnSampleReady MotorCdd_AdcOnSampleReady
 #  define RTE_RUNNABLE_MotorCdd_Init MotorCdd_Init
 #  define RTE_RUNNABLE_Pp_MotorCdd_EnableInverter_EnableInverter Pp_MotorCdd_EnableInverter_EnableInverter
 # endif
 
+FUNC(void, MotorCdd_CODE) AdcSampleReady(void); /* PRQA S 3451, 0786, 3449 */ /* MD_Rte_3451, MD_Rte_0786, MD_Rte_3449 */
 FUNC(void, MotorCdd_CODE) MotorCDDMainFunction(void); /* PRQA S 3451, 0786, 3449 */ /* MD_Rte_3451, MD_Rte_0786, MD_Rte_3449 */
-FUNC(void, MotorCdd_CODE) MotorCdd_AdcOnSampleReady(void); /* PRQA S 3451, 0786, 3449 */ /* MD_Rte_3451, MD_Rte_0786, MD_Rte_3449 */
 FUNC(void, MotorCdd_CODE) MotorCdd_Init(void); /* PRQA S 3451, 0786, 3449 */ /* MD_Rte_3451, MD_Rte_0786, MD_Rte_3449 */
 FUNC(void, MotorCdd_CODE) Pp_MotorCdd_EnableInverter_EnableInverter(boolean arg); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
 

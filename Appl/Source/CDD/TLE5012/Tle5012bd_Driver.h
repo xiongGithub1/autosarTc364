@@ -22,7 +22,6 @@ float32 Tle5012bd_Driver_GetElectricalAngleRad(void);
 float32 Tle5012bd_Driver_GetMechanicalRpm(void);
 
 extern Tle5012 Tle5012bd_Sensor;
-extern volatile uint8 Tle5012bd_AngleReadBusy;
 extern volatile uint8 Tle5012bd_AngleValid;
 extern volatile uint16 Tle5012bd_AngleReadOkCount;
 extern volatile uint16 Tle5012bd_AngleReadFailCount;

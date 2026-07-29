@@ -178,14 +178,6 @@ Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\I
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
 Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
-Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
-"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
-Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
-Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
-"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
-Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_OsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_OsInt.h" :
 Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Lcfg.h"
@@ -370,8 +362,6 @@ Appl\Source\StartApp.o :	..\Appl\Source\MotorControll.h
 ..\Appl\Source\MotorControll.h :
 Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\MotorFoc\MotorMode.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\MotorFoc\MotorMode.h" :
-Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\MotorFoc\MotorZeroCal.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\MotorFoc\MotorZeroCal.h" :
 Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE9180\Tle9180_Driver.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE9180\Tle9180_Driver.h" :
 Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.h"

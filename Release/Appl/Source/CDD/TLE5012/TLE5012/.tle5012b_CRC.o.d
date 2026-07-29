@@ -1,2 +1,0 @@
-Appl\Source\CDD\TLE5012\TLE5012\tle5012b_CRC.o :	..\Appl\Source\CDD\TLE5012\TLE5012\tle5012b_CRC.c
-..\Appl\Source\CDD\TLE5012\TLE5012\tle5012b_CRC.c :

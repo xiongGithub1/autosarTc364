@@ -57,7 +57,7 @@ uint32 StartApp_Cyclic250msCounter = 0U;
  *********************************************************************************************************************/
 #include "MotorCdd_Foc.h"
 #include "MotorControll.h"
-#include "MotorZeroCal.h"
+
 #include "Tle9180_Driver.h"
 #include "Tle5012bd_Driver.h"
 /**********************************************************************************************************************
@@ -151,7 +151,7 @@ FUNC(void, StartApp_CODE) StartApp_Cyclic1ms(void) /* PRQA S 0624, 3206 */ /* MD
   Tle9180_Driver_MainFunction();
 
 
-//  MotorZeroCal_MainFunction();
+
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/

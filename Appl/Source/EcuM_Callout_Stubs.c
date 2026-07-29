@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Callout_Stubs.c
- *   Generation Time: 2024-07-25 16:06:03
+ *   Generation Time: 2026-07-25 16:06:03
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -327,7 +327,8 @@ FUNC(void, ECUM_CODE) EcuM_AL_DriverInitOne(void)
 //  SRC_QSPI2PT.B.SRE = 1U;
 //  SRC_DMACH4.B.SRE = 1U;
 //  SRC_DMACH5.B.SRE = 1U;
-
+  IrqAdc_Init();
+  SRC_VADC_G0_SR0.B.SRE = 1U;
 #if (ADC_STARTUP_CALIB_API == STD_ON)
   (void)Adc_TriggerStartupCal();
   while (Adc_GetStartupCalStatus() != ADC_STARTUP_CALIB_OVER)

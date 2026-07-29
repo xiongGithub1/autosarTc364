@@ -1,11 +1,9 @@
 #include "MotorFoc_CurrentLoop.h"
 #include "MotorFoc_Pid.h"
 #include "MotorFoc_SinCosTable.h"
-#include "Pwm_17_GtmCcu6.h"
-#include "Pwm_17_GtmCcu6_Cfg.h"
+#include "IfxGtm_reg.h"
 #include <math.h> /* sqrtf for SVPWM magnitude limit */
 
-#define MOTORFOC_PWM_DUTY_MAX      (0x8000U)
 #define MOTORFOC_SQRT3_3           (0.5773502691896257645F)
 #define MOTORFOC_SQRT3             (1.73205078F)
 #define MOTORFOC_VDC_MIN_RUN_DEFAULT    (6.0F)
@@ -14,6 +12,12 @@
 #define MOTORFOC_CURRENT_UNDERVOLT_CONFIRM_COUNT_DEFAULT   (20U)
 #define MOTORFOC_CURRENT_OVERCURRENT_CONFIRM_COUNT_DEFAULT (10U)
 #define MOTORFOC_ZERO_CURRENT_REFERENCE_A                  (0.001F)
+/* ATOM0 CH1/2/3 center-aligned period (matches Pwm PBCfg 0x2710). */
+#define MOTORFOC_PWM_ATOM_PERIOD           (10000U)
+#define MOTORFOC_PWM_ATOM_MAX_TIMER        (0xFFFFFFU)
+/* AGC GLB_CTRL UPEN_CTRL1/2/3: write 01=disable, 10=enable (no-change=00). */
+#define MOTORFOC_PWM_ATOM_UPEN_DIS_CH123   (0x00140000U)
+#define MOTORFOC_PWM_ATOM_UPEN_EN_CH123    (0x00280000U)
 
 volatile float32 MotorFoc_CurrentLoopMaxCurrentA = MOTORFOC_CURRENT_MAX_A_DEFAULT;
 volatile float32 MotorFoc_CurrentLoopMinVdcRunV = MOTORFOC_VDC_MIN_RUN_DEFAULT;
@@ -37,12 +41,55 @@ static float32 MotorFoc_CurrentLoopRawIuA = 0.0F;
 static float32 MotorFoc_CurrentLoopRawIvA = 0.0F;
 static float32 MotorFoc_CurrentLoopRawIwA = 0.0F;
 
-static const Pwm_17_GtmCcu6_ChannelType MotorFoc_PwmChannel[3] =
+static void MotorFoc_CalcCenterAlignedSr(uint32 scaledDuty,
+                                         uint32* sr0,
+                                         uint32* sr1)
 {
-  Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9180IH1,
-  Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9180IH2,
-  Pwm_17_GtmCcu6Conf_PwmChannel_PwmChannel_9180IH3
-};
+  uint32 shift;
+
+  if (scaledDuty == 0U)
+  {
+    *sr0 = MOTORFOC_PWM_ATOM_MAX_TIMER;
+    *sr1 = 0U;
+  }
+  else if (scaledDuty >= MOTORFOC_PWM_ATOM_PERIOD)
+  {
+    *sr0 = 0U;
+    *sr1 = MOTORFOC_PWM_ATOM_MAX_TIMER;
+  }
+  else
+  {
+    shift = (MOTORFOC_PWM_ATOM_PERIOD - scaledDuty) >> 1U;
+    *sr0 = shift;
+    *sr1 = shift + scaledDuty;
+  }
+}
+
+/* Direct ATOM0 CH1/2/3 shadow update (center-aligned, coherent). */
+static void MotorFoc_ApplyAtomDuties(uint32 scaledDutyU,
+                                     uint32 scaledDutyV,
+                                     uint32 scaledDutyW)
+{
+  uint32 sr0u;
+  uint32 sr1u;
+  uint32 sr0v;
+  uint32 sr1v;
+  uint32 sr0w;
+  uint32 sr1w;
+
+  MotorFoc_CalcCenterAlignedSr(scaledDutyU, &sr0u, &sr1u);
+  MotorFoc_CalcCenterAlignedSr(scaledDutyV, &sr0v, &sr1v);
+  MotorFoc_CalcCenterAlignedSr(scaledDutyW, &sr0w, &sr1w);
+
+  GTM_ATOM0_AGC_GLB_CTRL.U = MOTORFOC_PWM_ATOM_UPEN_DIS_CH123;
+  GTM_ATOM0_CH1_SR0.U = sr0u;
+  GTM_ATOM0_CH1_SR1.U = sr1u;
+  GTM_ATOM0_CH2_SR0.U = sr0v;
+  GTM_ATOM0_CH2_SR1.U = sr1v;
+  GTM_ATOM0_CH3_SR0.U = sr0w;
+  GTM_ATOM0_CH3_SR1.U = sr1w;
+  GTM_ATOM0_AGC_GLB_CTRL.U = MOTORFOC_PWM_ATOM_UPEN_EN_CH123;
+}
 
 static void MotorFoc_UpdateSinCos(MotorFoc_ContextType* ctx)
 {
@@ -111,9 +158,7 @@ static void MotorFoc_ResetCurrentPidState(MotorFoc_ContextType* ctx)
 
 static void MotorFoc_ApplyPwmOff(void)
 {
-  Pwm_17_GtmCcu6_SetDutyCycle(MotorFoc_PwmChannel[0], 0U);
-  Pwm_17_GtmCcu6_SetDutyCycle(MotorFoc_PwmChannel[1], 0U);
-  Pwm_17_GtmCcu6_SetDutyCycle(MotorFoc_PwmChannel[2], 0U);
+  MotorFoc_ApplyAtomDuties(0U, 0U, 0U);
 }
 
 static float32 MotorFoc_AbsFloat(float32 value)
@@ -382,9 +427,6 @@ static void MotorFoc_DoSvpwm(MotorFoc_ContextType* ctx)
 
 static void MotorFoc_ApplyPwm(MotorFoc_ContextType* ctx)
 {
-  uint16 dutyU;
-  uint16 dutyV;
-  uint16 dutyW;
   uint32 dutyMin;
   uint32 dutyMax;
 
@@ -418,20 +460,10 @@ static void MotorFoc_ApplyPwm(MotorFoc_ContextType* ctx)
     ctx->Tpwm.pwm_OutW = dutyMin;
   }
 
-  /* MCAL duty is normalized to 0x8000; the six-sector output is a half-period tick. */
-  dutyU = (uint16)(((float32)ctx->Tpwm.pwm_OutU *
-                    (float32)MOTORFOC_PWM_DUTY_MAX * 2.0F /
-                    ctx->Tpwm.Tpwm) + 0.5F);
-  dutyV = (uint16)(((float32)ctx->Tpwm.pwm_OutV *
-                    (float32)MOTORFOC_PWM_DUTY_MAX * 2.0F /
-                    ctx->Tpwm.Tpwm) + 0.5F);
-  dutyW = (uint16)(((float32)ctx->Tpwm.pwm_OutW *
-                    (float32)MOTORFOC_PWM_DUTY_MAX * 2.0F /
-                    ctx->Tpwm.Tpwm) + 0.5F);
-
-  Pwm_17_GtmCcu6_SetDutyCycle(MotorFoc_PwmChannel[0], dutyU);
-  Pwm_17_GtmCcu6_SetDutyCycle(MotorFoc_PwmChannel[1], dutyV);
-  Pwm_17_GtmCcu6_SetDutyCycle(MotorFoc_PwmChannel[2], dutyW);
+  /* pwm_Out is half-period tick; ScaledDuty = 2 * pwm_Out when Period == Tpwm. */
+  MotorFoc_ApplyAtomDuties(ctx->Tpwm.pwm_OutU << 1U,
+                           ctx->Tpwm.pwm_OutV << 1U,
+                           ctx->Tpwm.pwm_OutW << 1U);
 }
 
 static void MotorFoc_ApplyNeutralPwm(MotorFoc_ContextType* ctx)

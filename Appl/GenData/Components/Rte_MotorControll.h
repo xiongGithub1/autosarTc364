@@ -80,18 +80,6 @@ extern VAR(boolean, RTE_VAR_NOINIT) Rte_MotorCdd_Pp_MotorFaultStatus_tle9180_Ov_
 # endif
 
 
-# define RTE_START_SEC_CODE
-# include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-
-/**********************************************************************************************************************
- * API prototypes
- *********************************************************************************************************************/
-FUNC(Std_ReturnType, RTE_CODE) Rte_Call_MotorControll_Pp_MotorCdd_EnableInverter_EnableInverter(boolean arg); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
-
-# define RTE_STOP_SEC_CODE
-# include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-
-
 # ifndef RTE_CORE
 
 /**********************************************************************************************************************
@@ -117,10 +105,17 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Call_MotorControll_Pp_MotorCdd_EnableInverter
 
 
 /**********************************************************************************************************************
- * Rte_Call_<p>_<o> (mapped) for synchronous C/S communication
+ * Rte_Call_<p>_<o> (unmapped) for synchronous C/S communication
  *********************************************************************************************************************/
-#  define Rte_Call_Pp_MotorCdd_EnableInverter_EnableInverter Rte_Call_MotorControll_Pp_MotorCdd_EnableInverter_EnableInverter
+#  define RTE_START_SEC_MOTORCDD_APPL_CODE
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
+FUNC(void, RTE_MOTORCDD_APPL_CODE) Pp_MotorCdd_EnableInverter_EnableInverter(boolean arg); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
+
+#  define RTE_STOP_SEC_MOTORCDD_APPL_CODE
+#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+#  define Rte_Call_Pp_MotorCdd_EnableInverter_EnableInverter(arg1) (Pp_MotorCdd_EnableInverter_EnableInverter(arg1), ((Std_ReturnType)RTE_E_OK))
 
 # endif /* !defined(RTE_CORE) */
 

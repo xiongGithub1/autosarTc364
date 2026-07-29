@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Cfg.h
- *   Generation Time: 2026-07-25 19:18:41
+ *   Generation Time: 2026-07-29 14:39:05
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -125,12 +125,13 @@
 /* Event masks */
 # define Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms     ((EventMaskType)1uLL)
 # define Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_20ms     ((EventMaskType)2uLL)
-# define Rte_Ev_Cyclic_Default_Appl_Task_0_10ms     ((EventMaskType)1uLL)
-# define Rte_Ev_Cyclic_Default_Appl_Task_0_1ms     ((EventMaskType)2uLL)
 # define Rte_Ev_Run_Com_Com_MainFunctionTx_ComMainFunctionTx     ((EventMaskType)4uLL)
-# define Rte_Ev_Run_MotorCdd_MotorCdd_AdcOnSampleReady_Rp_AdcSampleReady_AdcSampleReady     ((EventMaskType)1uLL)
-# define Rte_Ev_Run_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter     ((EventMaskType)2uLL)
-# define Rte_Ev_Run_StartApp_StartApp_Cyclic1000ms     ((EventMaskType)4uLL)
+# define Rte_Ev_Run_MotorCdd_AdcSampleReady_Rp_AdcSampleReady_AdcSampleReady     ((EventMaskType)1uLL)
+# define Rte_Ev_Run_MotorCdd_MotorCDDMainFunction     ((EventMaskType)2uLL)
+# define Rte_Ev_Run_MotorControll_MotorControll_MainFunction     ((EventMaskType)4uLL)
+# define Rte_Ev_Run_StartApp_StartApp_Cyclic1000ms     ((EventMaskType)1uLL)
+# define Rte_Ev_Run_StartApp_StartApp_Cyclic10ms     ((EventMaskType)2uLL)
+# define Rte_Ev_Run_StartApp_StartApp_Cyclic1ms     ((EventMaskType)4uLL)
 # define Rte_Ev_Run_StartApp_StartApp_Cyclic250ms     ((EventMaskType)8uLL)
 
 /* Software counter timing macros */

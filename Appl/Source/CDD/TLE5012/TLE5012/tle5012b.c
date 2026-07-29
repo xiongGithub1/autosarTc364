@@ -114,38 +114,25 @@ void tle5012b_read_AngleSpeed(Tle5012 *tle5012)
 Std_ReturnType tle5012b_process_angle_raw(Tle5012 *tle5012, uint16 avalRaw)
 {
   uint16 angle;
-  uint16 prevAngle;
-  uint16 delta;
   float32 angleOldPi;
   float32 error;
-  static uint16 s_lastGoodAngVal = 0U;
-  static uint8 s_haveLastGood = 0U;
 
   if (tle5012 == NULL_PTR) { return E_NOT_OK; }
   tle5012_sfr.AVAL_Type.U = avalRaw;
-  if ((avalRaw == 0xFFFFU) || (tle5012_sfr.AVAL_Type.B.RD_AV == 0U))
+
+  /* RD_AV=bit15, ANG_VAL=bits14:0. Never use :15 bitfield — TASKING treats it
+   * as signed, so ANG_VAL>=16384 becomes negative / uint16 0xCxxx, Angle locks
+   * into 4096..8191 and the old delta>2048 filter then rejects half the circle. */
+  if ((avalRaw == 0xFFFFU) || ((avalRaw & 0x8000U) == 0U))
   {
     tle5012->SafetyBit++;
     return E_NOT_OK;
   }
 
-  angle = tle5012_sfr.AVAL_Type.B.ANG_VAL;
-  if (s_haveLastGood != 0U)
-  {
-    prevAngle = s_lastGoodAngVal;
-    delta = (uint16)((angle - prevAngle) & 0x7FFFU);
-    if (delta > 16383U) { delta = (uint16)(32768U - (uint32)delta); }
-    if (delta > 2048U)
-    {
-      tle5012->SafetyBit++;
-      return E_NOT_OK;
-    }
-  }
-
-  s_lastGoodAngVal = angle;
-  s_haveLastGood = 1U;
+  angle = (uint16)(avalRaw & 0x7FFFU); /* 0..32767 full mechanical circle */
   tle5012->Original_Angle = (float32)angle;
-  angle = (uint16)(((uint32)angle >> 2U) & 0x1FFFU);
+  /* 15-bit → 13-bit for FOC sin/cos table (0..8191). */
+  angle = (uint16)((angle >> 2U) & 0x1FFFU);
   tle5012->Angle = (float32)angle;
   angleOldPi = tle5012->anglePi;
   tle5012->anglePi = tle5012->Angle * 7.66429044544767e-4F;

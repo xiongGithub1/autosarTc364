@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Compiler_Cfg.h
- *   Generation Time: 2026-07-26 15:20:25
+ *   Generation Time: 2026-07-29 10:29:51
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -48,7 +48,6 @@
  *  OS USER CALLOUT CODE SECTIONS
  *********************************************************************************************************************/
 
-# define OS_ADC0SR0_ISR_CODE
 # define OS_ADC8SR0_ISR_CODE
 # define OS_CANISR_0_CODE
 # define OS_DEFAULT_APPL_INIT_TASK_CODE

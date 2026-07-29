@@ -94,10 +94,10 @@
  *  Rte_Runnable_EcuM_SelectShutdownCause_Start
  *  Rte_Runnable_EcuM_SelectShutdownTarget_Return
  *  Rte_Runnable_EcuM_SelectShutdownTarget_Start
+ *  Rte_Runnable_MotorCdd_AdcSampleReady_Return
+ *  Rte_Runnable_MotorCdd_AdcSampleReady_Start
  *  Rte_Runnable_MotorCdd_MotorCDDMainFunction_Return
  *  Rte_Runnable_MotorCdd_MotorCDDMainFunction_Start
- *  Rte_Runnable_MotorCdd_MotorCdd_AdcOnSampleReady_Return
- *  Rte_Runnable_MotorCdd_MotorCdd_AdcOnSampleReady_Start
  *  Rte_Runnable_MotorCdd_MotorCdd_Init_Return
  *  Rte_Runnable_MotorCdd_MotorCdd_Init_Start
  *  Rte_Runnable_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter_Return

@@ -4,10 +4,6 @@
 #include "Std_Types.h"
 #include "Adc.h"
 
-/* 1 = 10 kHz FOC runs in ADC Cat2 ISR (ReadGroup -> RunFastLoop). Requires AdcIsr_G0 UsesFpu. */
-#ifndef MOTORCDD_ADC_FASTLOOP_IN_ISR
-#define MOTORCDD_ADC_FASTLOOP_IN_ISR   (1U)
-#endif
 
 typedef struct
 {
@@ -49,7 +45,7 @@ void MotorCdd_AdcHwTriggerInit(void);
 void MotorCdd_AdcSetTriggerTick(uint32 triggerTick);
 void MotorCdd_AdcSynchronizePwmTriggerCounter(void);
 void MotorCdd_AdcGroup0Notification(void);
-/* Latch + convert + FOC; called from ADC ISR when MOTORCDD_ADC_FASTLOOP_IN_ISR=1. */
+
 void MotorCdd_AdcRunFastLoop(void);
 /* RTE stub when fast loop is in ISR; kept for Generate compatibility. */
 void MotorCdd_AdcOnSampleReady(void);

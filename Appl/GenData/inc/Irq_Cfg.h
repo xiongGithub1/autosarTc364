@@ -15,7 +15,7 @@
 **                                                                            **
 **  VERSION   : 8.0.0                                                         **
 **                                                                            **
-**  DATE, TIME: 2026-07-26, 15:22:46      !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2026-07-29, 14:50:11      !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  GENERATOR : Build b191017-0938        !!!IGNORE-LINE!!!                   **
 **                                                                            **
@@ -991,7 +991,7 @@ Container : IrqCaninterruptConfiguration
 Container : Irq ADC configuration
 */
 /*ADC0 interrupt Category setting */
-#define IRQ_ADC0_SR0_CAT            (IRQ_CAT2)
+#define IRQ_ADC0_SR0_CAT            (IRQ_CAT1)
 #define IRQ_ADC0_SR1_CAT            (IRQ_CAT1)
 #define IRQ_ADC0_SR2_CAT            (IRQ_CAT1)
 #define IRQ_ADC0_SR3_CAT            (IRQ_CAT1)
