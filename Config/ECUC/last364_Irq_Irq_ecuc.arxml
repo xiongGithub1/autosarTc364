@@ -1014,10 +1014,6 @@
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Irq/IrqAdcConfig/IrqAdc0Config/IrqAdc0CatConfig</DEFINITION-REF>
                       <PARAMETER-VALUES>
                         <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqAdcConfig/IrqAdc0Config/IrqAdc0CatConfig/IrqAdc0SR0Cat</DEFINITION-REF>
-                          <VALUE>CAT1</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqAdcConfig/IrqAdc0Config/IrqAdc0CatConfig/IrqAdc0SR1Cat</DEFINITION-REF>
                           <VALUE>CAT1</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
@@ -1027,6 +1023,10 @@
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqAdcConfig/IrqAdc0Config/IrqAdc0CatConfig/IrqAdc0SR3Cat</DEFINITION-REF>
+                          <VALUE>CAT1</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqAdcConfig/IrqAdc0Config/IrqAdc0CatConfig/IrqAdc0SR0Cat</DEFINITION-REF>
                           <VALUE>CAT1</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
@@ -1059,7 +1059,7 @@
                       <PARAMETER-VALUES>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqAdcConfig/IrqAdc0Config/IrqAdc0TosConfig/IrqAdc0SR0Tos</DEFINITION-REF>
-                          <VALUE>CPU0</VALUE>
+                          <VALUE>CPU1</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqAdcConfig/IrqAdc0Config/IrqAdc0TosConfig/IrqAdc0SR1Tos</DEFINITION-REF>
@@ -10731,11 +10731,11 @@
                       <PARAMETER-VALUES>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqStmConfig/IrqStm1Config/IrqStm1TosConfig/IrqStm1SR0Tos</DEFINITION-REF>
-                          <VALUE>CPU0</VALUE>
+                          <VALUE>CPU1</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Irq/IrqStmConfig/IrqStm1Config/IrqStm1TosConfig/IrqStm1SR1Tos</DEFINITION-REF>
-                          <VALUE>CPU0</VALUE>
+                          <VALUE>CPU1</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>

@@ -15,7 +15,7 @@
 **                                                                            **
 **  VERSION   : 8.0.0                                                         **
 **                                                                            **
-**  DATE, TIME: 2026-07-29, 14:50:11      !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2026-07-30, 20:42:27      !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  GENERATOR : Build b191017-0938        !!!IGNORE-LINE!!!                   **
 **                                                                            **
@@ -1003,7 +1003,7 @@ Container : Irq ADC configuration
 #define IRQ_ADC0_SR3_PRIO           0x0
 
 /*ADC0 interrupt type of service setting */
-#define IRQ_ADC0_SR0_TOS            (IRQ_TOS_CPU0)
+#define IRQ_ADC0_SR0_TOS            (IRQ_TOS_CPU1)
 #define IRQ_ADC0_SR1_TOS            (IRQ_TOS_CPU0)
 #define IRQ_ADC0_SR2_TOS            (IRQ_TOS_CPU0)
 #define IRQ_ADC0_SR3_TOS            (IRQ_TOS_CPU0)
@@ -1716,8 +1716,8 @@ Container : IrqSTMinterruptConfiguration
 #define IRQ_STM1_SR1_PRIO           0x0
 
 /* STM1 interrupt type of service Setting */
-#define IRQ_STM1_SR0_TOS            (IRQ_TOS_CPU0)
-#define IRQ_STM1_SR1_TOS            (IRQ_TOS_CPU0)
+#define IRQ_STM1_SR0_TOS            (IRQ_TOS_CPU1)
+#define IRQ_STM1_SR1_TOS            (IRQ_TOS_CPU1)
 
 
 

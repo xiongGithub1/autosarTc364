@@ -98,10 +98,6 @@ Std_ReturnType TSC_MotorControll_Rte_Write_Pp_MotorCurrentRef_Iq_Ref(float32 dat
 
 
      /* Service calls */
-Std_ReturnType TSC_MotorControll_Rte_Call_Pp_MotorCdd_EnableInverter_EnableInverter(boolean arg)
-{
-  return Rte_Call_Pp_MotorCdd_EnableInverter_EnableInverter(arg);
-}
 
 
      /* Mode Interfaces */

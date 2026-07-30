@@ -50,17 +50,17 @@ extern "C"
 /**********************************************************************************************************************
  * extern declaration of RTE buffers for optimized macro implementation
  *********************************************************************************************************************/
-#  define RTE_START_SEC_VAR_NOINIT_UNSPECIFIED
+#  define RTE_START_SEC_VAR_OsApplication_OsCore1_INIT_UNSPECIFIED
 #  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
-extern VAR(uint8, RTE_VAR_NOINIT) Rte_MotorControll_Pp_MotorCtrlCmd_MotorMode;
-extern VAR(float32, RTE_VAR_NOINIT) Rte_MotorControll_Pp_MotorCurrentRef_Id_Ref;
-extern VAR(float32, RTE_VAR_NOINIT) Rte_MotorControll_Pp_MotorCurrentRef_Iq_Ref;
-extern VAR(float32, RTE_VAR_NOINIT) Rte_MotorCdd_Pp_MotorDcBusVoltage_Vbus;
-extern VAR(float32, RTE_VAR_NOINIT) Rte_MotorCdd_Pp_MotorElectricalAngle_ElectricAngle;
-extern VAR(boolean, RTE_VAR_NOINIT) Rte_MotorCdd_Pp_MotorFaultStatus_tle9180_Ov_Fault;
+extern VAR(uint8, RTE_VAR_INIT) Rte_MotorControll_Pp_MotorCtrlCmd_MotorMode;
+extern VAR(float32, RTE_VAR_INIT) Rte_MotorControll_Pp_MotorCurrentRef_Id_Ref;
+extern VAR(float32, RTE_VAR_INIT) Rte_MotorControll_Pp_MotorCurrentRef_Iq_Ref;
+extern VAR(float32, RTE_VAR_INIT) Rte_MotorCdd_Pp_MotorDcBusVoltage_Vbus;
+extern VAR(float32, RTE_VAR_INIT) Rte_MotorCdd_Pp_MotorElectricalAngle_ElectricAngle;
+extern VAR(boolean, RTE_VAR_INIT) Rte_MotorCdd_Pp_MotorFaultStatus_tle9180_Ov_Fault;
 
-#  define RTE_STOP_SEC_VAR_NOINIT_UNSPECIFIED
+#  define RTE_STOP_SEC_VAR_OsApplication_OsCore1_INIT_UNSPECIFIED
 #  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 # endif /* !defined(RTE_CORE) */
@@ -104,19 +104,6 @@ extern VAR(boolean, RTE_VAR_NOINIT) Rte_MotorCdd_Pp_MotorFaultStatus_tle9180_Ov_
 #  define Rte_Write_MotorControll_Pp_MotorCurrentRef_Iq_Ref(data) (Rte_MotorControll_Pp_MotorCurrentRef_Iq_Ref = (data), ((Std_ReturnType)RTE_E_OK))
 
 
-/**********************************************************************************************************************
- * Rte_Call_<p>_<o> (unmapped) for synchronous C/S communication
- *********************************************************************************************************************/
-#  define RTE_START_SEC_MOTORCDD_APPL_CODE
-#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-
-FUNC(void, RTE_MOTORCDD_APPL_CODE) Pp_MotorCdd_EnableInverter_EnableInverter(boolean arg); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
-
-#  define RTE_STOP_SEC_MOTORCDD_APPL_CODE
-#  include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
-
-#  define Rte_Call_Pp_MotorCdd_EnableInverter_EnableInverter(arg1) (Pp_MotorCdd_EnableInverter_EnableInverter(arg1), ((Std_ReturnType)RTE_E_OK))
-
 # endif /* !defined(RTE_CORE) */
 
 
@@ -149,12 +136,6 @@ FUNC(void, MotorControll_CODE) MotorControll_MainFunction(void); /* PRQA S 3451,
  *********************************************************************************************************************/
 
 /* module specific MISRA deviations:
-   MD_Rte_0624:  MISRA rule: Rule8.3
-     Reason:     This MISRA violation is a consequence from the RTE requirements [SWS_Rte_01007] [SWS_Rte_01150].
-                 The typedefs are never used in the same context.
-     Risk:       No functional risk. Only a cast to uint8* is performed.
-     Prevention: Not required.
-
    MD_Rte_0786:  MISRA rule: Rule5.5
      Reason:     Same macro and idintifier names in first 63 characters are required to meet AUTOSAR spec.
      Risk:       No functional risk.

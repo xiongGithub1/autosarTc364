@@ -28,8 +28,6 @@
  *
  * Not configured:
  *
- *  Rte_CallHook_MotorControll_Pp_MotorCdd_EnableInverter_EnableInverter_Return
- *  Rte_CallHook_MotorControll_Pp_MotorCdd_EnableInverter_EnableInverter_Start
  *  Rte_ReadHook_MotorCdd_Pp_MotorCtrlCmd_MotorMode_Return
  *  Rte_ReadHook_MotorCdd_Pp_MotorCtrlCmd_MotorMode_Start
  *  Rte_ReadHook_MotorCdd_Pp_MotorCurrentRef_Id_Ref_Return
@@ -96,10 +94,10 @@
  *  Rte_Runnable_EcuM_SelectShutdownTarget_Start
  *  Rte_Runnable_MotorCdd_AdcSampleReady_Return
  *  Rte_Runnable_MotorCdd_AdcSampleReady_Start
- *  Rte_Runnable_MotorCdd_MotorCDDMainFunction_Return
- *  Rte_Runnable_MotorCdd_MotorCDDMainFunction_Start
  *  Rte_Runnable_MotorCdd_MotorCdd_Init_Return
  *  Rte_Runnable_MotorCdd_MotorCdd_Init_Start
+ *  Rte_Runnable_MotorCdd_MotorCdd_MainFunction_Return
+ *  Rte_Runnable_MotorCdd_MotorCdd_MainFunction_Start
  *  Rte_Runnable_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter_Return
  *  Rte_Runnable_MotorCdd_Pp_MotorCdd_EnableInverter_EnableInverter_Start
  *  Rte_Runnable_MotorControll_MotorControll_Init_Return
@@ -112,6 +110,10 @@
  *  Rte_Runnable_Os_OsCore0_swc_GetCounterValue_Start
  *  Rte_Runnable_Os_OsCore0_swc_GetElapsedValue_Return
  *  Rte_Runnable_Os_OsCore0_swc_GetElapsedValue_Start
+ *  Rte_Runnable_Os_OsCore1_swc_GetCounterValue_Return
+ *  Rte_Runnable_Os_OsCore1_swc_GetCounterValue_Start
+ *  Rte_Runnable_Os_OsCore1_swc_GetElapsedValue_Return
+ *  Rte_Runnable_Os_OsCore1_swc_GetElapsedValue_Start
  *  Rte_Runnable_StartApp_StartApp_Cyclic1000ms_Return
  *  Rte_Runnable_StartApp_StartApp_Cyclic1000ms_Start
  *  Rte_Runnable_StartApp_StartApp_Cyclic10ms_Return
@@ -514,6 +516,8 @@
  *  SchM_Schedulable_IpduM_IpduM_MainFunctionTx_Start
  *  SchM_Schedulable_NvM_NvM_MainFunction_Return
  *  SchM_Schedulable_NvM_NvM_MainFunction_Start
+ *  SchM_Schedulable_Rte_Rte_ComSendSignalProxyPeriodic_Return
+ *  SchM_Schedulable_Rte_Rte_ComSendSignalProxyPeriodic_Start
  *  SchM_Schedulable_Spi_Spi_MainFunction_Handling_Return
  *  SchM_Schedulable_Spi_Spi_MainFunction_Handling_Start
  *

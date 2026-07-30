@@ -34,6 +34,14 @@ Appl\GenData\ComXf.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComStack_Cfg.h" :
 Appl\GenData\ComXf.o :	..\Appl\GenData\Rte_DataHandleType.h
 ..\Appl\GenData\Rte_DataHandleType.h :
+Appl\GenData\ComXf.o :	..\Appl\GenData\Rte_MemMap.h
+..\Appl\GenData\Rte_MemMap.h :
+Appl\GenData\ComXf.o :	..\Appl\GenData\Rte_MemMap.h
+..\Appl\GenData\Rte_MemMap.h :
+Appl\GenData\ComXf.o :	..\Appl\GenData\Rte_MemMap.h
+..\Appl\GenData\Rte_MemMap.h :
+Appl\GenData\ComXf.o :	..\Appl\GenData\Rte_MemMap.h
+..\Appl\GenData\Rte_MemMap.h :
 Appl\GenData\ComXf.o :	..\Appl\GenData\ComXf_MemMap.h
 ..\Appl\GenData\ComXf_MemMap.h :
 Appl\GenData\ComXf.o :	..\Appl\GenData\ComXf_MemMap.h

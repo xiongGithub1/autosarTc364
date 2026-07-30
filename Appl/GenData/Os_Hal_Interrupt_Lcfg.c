@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Interrupt_Lcfg.c
- *   Generation Time: 2026-07-29 10:29:51
+ *   Generation Time: 2026-07-30 17:52:17
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -91,19 +91,6 @@
 #define OS_START_SEC_CORE0_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
-/*! HAL ISR configuration data: AdcIsr_G0 */
-CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_AdcIsr_G0 =
-{
-  /* .Level          = */ 83,
-  /* .Source         = */ 0x670uL,
-  /* .CoreAssignment = */ 0
-};
-
-CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_AdcIsr_G0 =
-{
-  /* .Dummy         = */ (uint32)0
-};
-
 /*! HAL ISR configuration data: AdcIsr_G8 */
 CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_AdcIsr_G8 =
 {
@@ -144,6 +131,39 @@ CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_CounterIsr_Syste
 };
 
 #define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+#define OS_START_SEC_CORE1_CONST_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! HAL ISR configuration data: AdcIsr_G0 */
+CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_AdcIsr_G0 =
+{
+  /* .Level          = */ 83,
+  /* .Source         = */ 0x670uL,
+  /* .CoreAssignment = */ 2
+};
+
+CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_AdcIsr_G0 =
+{
+  /* .Dummy         = */ (uint32)0
+};
+
+/*! HAL ISR configuration data: CounterIsr_SystemTimer1 */
+CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_CounterIsr_SystemTimer1 =
+{
+  /* .Level          = */ 1,
+  /* .Source         = */ 0x308uL,
+  /* .CoreAssignment = */ 2
+};
+
+CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_CounterIsr_SystemTimer1 =
+{
+  /* .Dummy         = */ (uint32)0
+};
+
+#define OS_STOP_SEC_CORE1_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 

@@ -31,9 +31,9 @@ extern "C" {
 
 # include "Os.h" /* PRQA S 0828, 0883 */ /* MD_MSR_Dir1.1, MD_Rte_Os */
 
-# define SchM_Enter_Crc_CriticalSection() SuspendAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Enter_Crc_CriticalSection() SuspendOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
-# define SchM_Exit_Crc_CriticalSection() ResumeAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Exit_Crc_CriticalSection() ResumeOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
 
 # ifdef __cplusplus

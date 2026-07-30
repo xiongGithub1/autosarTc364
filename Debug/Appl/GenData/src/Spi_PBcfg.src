@@ -1,68 +1,68 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
-	.compiler_invocation	"ctc -f cc15488a --dep-file=Appl\\GenData\\src\\.Spi_PBcfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=Appl\\GenData\\src\\Spi_PBcfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\src\\Spi_PBcfg.src ..\\Appl\\GenData\\src\\Spi_PBcfg.c"
+	.compiler_invocation	"ctc -f cc11496a --dep-file=Appl\\GenData\\src\\.Spi_PBcfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -DBRS_COMP_TASKING -DBRS_PLATFORM_AURIX -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Include -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=Appl\\GenData\\src\\Spi_PBcfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\src\\Spi_PBcfg.src ..\\Appl\\GenData\\src\\Spi_PBcfg.c"
 	.compiler_name		"ctc"
 	;source	'..\\Appl\\GenData\\src\\Spi_PBcfg.c'
 
 	
 $TC162
 	
-	.sdecl	'.zrodata.Spi_PBcfg.SequenceLookupIndex',data,rom,cluster('SequenceLookupIndex')
-	.sect	'.zrodata.Spi_PBcfg.SequenceLookupIndex'
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('SequenceLookupIndex')
+	.sect	'.rodata.MSR_CONST'
 SequenceLookupIndex:	.type	object
 	.size	SequenceLookupIndex,3
 	.byte	2,1
 	.space	1
-	.sdecl	'.zrodata.Spi_PBcfg.JobLookupIndex',data,rom,cluster('JobLookupIndex')
-	.sect	'.zrodata.Spi_PBcfg.JobLookupIndex'
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('JobLookupIndex')
+	.sect	'.rodata.MSR_CONST'
 	.align	2
 JobLookupIndex:	.type	object
 	.size	JobLookupIndex,6
 	.half	2,1
 	.space	2
-	.sdecl	'.zrodata.Spi_PBcfg.ChannelLookupIndex',data,rom,cluster('ChannelLookupIndex')
-	.sect	'.zrodata.Spi_PBcfg.ChannelLookupIndex'
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('ChannelLookupIndex')
+	.sect	'.rodata.MSR_CONST'
 ChannelLookupIndex:	.type	object
 	.size	ChannelLookupIndex,3
 	.byte	2,1
 	.space	1
-	.sdecl	'.zrodata.Spi_PBcfg.SpiSequence_9183_JobLinkPtr_Physical',data,rom,cluster('SpiSequence_9183_JobLinkPtr_Physical')
-	.sect	'.zrodata.Spi_PBcfg.SpiSequence_9183_JobLinkPtr_Physical'
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('SpiSequence_9183_JobLinkPtr_Physical')
+	.sect	'.rodata.MSR_CONST'
 	.align	2
 SpiSequence_9183_JobLinkPtr_Physical:	.type	object
 	.size	SpiSequence_9183_JobLinkPtr_Physical,4
 	.half	2,65535
-	.sdecl	'.zrodata.Spi_PBcfg.SpiSequence_5012BD_JobLinkPtr_Physical',data,rom,cluster('SpiSequence_5012BD_JobLinkPtr_Physical')
-	.sect	'.zrodata.Spi_PBcfg.SpiSequence_5012BD_JobLinkPtr_Physical'
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('SpiSequence_5012BD_JobLinkPtr_Physical')
+	.sect	'.rodata.MSR_CONST'
 	.align	2
 SpiSequence_5012BD_JobLinkPtr_Physical:	.type	object
 	.size	SpiSequence_5012BD_JobLinkPtr_Physical,4
 	.half	1,65535
-	.sdecl	'.zrodata.Spi_PBcfg.SpiSequence_35584_JobLinkPtr_Physical',data,rom,cluster('SpiSequence_35584_JobLinkPtr_Physical')
-	.sect	'.zrodata.Spi_PBcfg.SpiSequence_35584_JobLinkPtr_Physical'
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('SpiSequence_35584_JobLinkPtr_Physical')
+	.sect	'.rodata.MSR_CONST'
 	.align	2
 SpiSequence_35584_JobLinkPtr_Physical:	.type	object
 	.size	SpiSequence_35584_JobLinkPtr_Physical,4
 	.space	2
 	.half	65535
-	.sdecl	'.zrodata.Spi_PBcfg.SpiJob_9183_ChannelLinkPtr_Physical',data,rom,cluster('SpiJob_9183_ChannelLinkPtr_Physical')
-	.sect	'.zrodata.Spi_PBcfg.SpiJob_9183_ChannelLinkPtr_Physical'
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('SpiJob_9183_ChannelLinkPtr_Physical')
+	.sect	'.rodata.MSR_CONST'
 SpiJob_9183_ChannelLinkPtr_Physical:	.type	object
 	.size	SpiJob_9183_ChannelLinkPtr_Physical,2
 	.byte	2,255
-	.sdecl	'.zrodata.Spi_PBcfg.SpiJob_5012BD_ChannelLinkPtr_Physical',data,rom,cluster('SpiJob_5012BD_ChannelLinkPtr_Physical')
-	.sect	'.zrodata.Spi_PBcfg.SpiJob_5012BD_ChannelLinkPtr_Physical'
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('SpiJob_5012BD_ChannelLinkPtr_Physical')
+	.sect	'.rodata.MSR_CONST'
 SpiJob_5012BD_ChannelLinkPtr_Physical:	.type	object
 	.size	SpiJob_5012BD_ChannelLinkPtr_Physical,2
 	.byte	1,255
-	.sdecl	'.zrodata.Spi_PBcfg.SpiJob_35584_ChannelLinkPtr_Physical',data,rom,cluster('SpiJob_35584_ChannelLinkPtr_Physical')
-	.sect	'.zrodata.Spi_PBcfg.SpiJob_35584_ChannelLinkPtr_Physical'
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('SpiJob_35584_ChannelLinkPtr_Physical')
+	.sect	'.rodata.MSR_CONST'
 SpiJob_35584_ChannelLinkPtr_Physical:	.type	object
 	.size	SpiJob_35584_ChannelLinkPtr_Physical,2
 	.space	1
 	.byte	255
-	.sdecl	'.rodata.Spi_PBcfg.Spi_kSequenceConfig_Core0',data,rom,cluster('Spi_kSequenceConfig_Core0')
-	.sect	'.rodata.Spi_PBcfg.Spi_kSequenceConfig_Core0'
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('Spi_kSequenceConfig_Core0')
+	.sect	'.rodata.MSR_CONST'
 	.align	4
 Spi_kSequenceConfig_Core0:	.type	object
 	.size	Spi_kSequenceConfig_Core0,36
@@ -82,8 +82,8 @@ Spi_kSequenceConfig_Core0:	.type	object
 	.half	1
 	.byte	3
 	.space	1
-	.sdecl	'.rodata.Spi_PBcfg.Spi_kJobConfig_Core0',data,rom,cluster('Spi_kJobConfig_Core0')
-	.sect	'.rodata.Spi_PBcfg.Spi_kJobConfig_Core0'
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('Spi_kJobConfig_Core0')
+	.sect	'.rodata.MSR_CONST'
 	.align	4
 Spi_kJobConfig_Core0:	.type	object
 	.size	Spi_kJobConfig_Core0,72
@@ -111,8 +111,8 @@ Spi_kJobConfig_Core0:	.type	object
 	.space	2
 	.byte	195,2
 	.space	2
-	.sdecl	'.rodata.Spi_PBcfg.Spi_kChannelConfig_Core0',data,rom,cluster('Spi_kChannelConfig_Core0')
-	.sect	'.rodata.Spi_PBcfg.Spi_kChannelConfig_Core0'
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('Spi_kChannelConfig_Core0')
+	.sect	'.rodata.MSR_CONST'
 	.align	4
 Spi_kChannelConfig_Core0:	.type	object
 	.size	Spi_kChannelConfig_Core0,36
@@ -129,8 +129,8 @@ Spi_kChannelConfig_Core0:	.type	object
 	.space	1
 	.byte	152
 	.space	4
-	.sdecl	'.rodata.Spi_PBcfg.Spi_kQspiHwConfigQSPI1',data,rom,cluster('Spi_kQspiHwConfigQSPI1')
-	.sect	'.rodata.Spi_PBcfg.Spi_kQspiHwConfigQSPI1'
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('Spi_kQspiHwConfigQSPI1')
+	.sect	'.rodata.MSR_CONST'
 	.align	4
 Spi_kQspiHwConfigQSPI1:	.type	object
 	.size	Spi_kQspiHwConfigQSPI1,16
@@ -138,8 +138,8 @@ Spi_kQspiHwConfigQSPI1:	.type	object
 	.space	2
 	.byte	8,1,1
 	.space	7
-	.sdecl	'.rodata.Spi_PBcfg.Spi_kQspiHwConfigQSPI2',data,rom,cluster('Spi_kQspiHwConfigQSPI2')
-	.sect	'.rodata.Spi_PBcfg.Spi_kQspiHwConfigQSPI2'
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('Spi_kQspiHwConfigQSPI2')
+	.sect	'.rodata.MSR_CONST'
 	.align	4
 Spi_kQspiHwConfigQSPI2:	.type	object
 	.size	Spi_kQspiHwConfigQSPI2,16
@@ -147,8 +147,8 @@ Spi_kQspiHwConfigQSPI2:	.type	object
 	.space	2
 	.byte	8,1,1
 	.space	7
-	.sdecl	'.rodata.Spi_PBcfg.Spi_kQspiHwConfigQSPI3',data,rom,cluster('Spi_kQspiHwConfigQSPI3')
-	.sect	'.rodata.Spi_PBcfg.Spi_kQspiHwConfigQSPI3'
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('Spi_kQspiHwConfigQSPI3')
+	.sect	'.rodata.MSR_CONST'
 	.align	4
 Spi_kQspiHwConfigQSPI3:	.type	object
 	.size	Spi_kQspiHwConfigQSPI3,16
@@ -156,15 +156,15 @@ Spi_kQspiHwConfigQSPI3:	.type	object
 	.space	2
 	.byte	8,3,1
 	.space	7
-	.sdecl	'.rodata.Spi_PBcfg.Spi_ChannelOffsets_Core0',data,rom,cluster('Spi_ChannelOffsets_Core0')
-	.sect	'.rodata.Spi_PBcfg.Spi_ChannelOffsets_Core0'
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('Spi_ChannelOffsets_Core0')
+	.sect	'.rodata.MSR_CONST'
 	.align	2
 Spi_ChannelOffsets_Core0:	.type	object
 	.size	Spi_ChannelOffsets_Core0,16
 	.space	12
 	.half	65535,65535
-	.sdecl	'.rodata.Spi_PBcfg.Spi_Config_Core0',data,rom,cluster('Spi_Config_Core0')
-	.sect	'.rodata.Spi_PBcfg.Spi_Config_Core0'
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('Spi_Config_Core0')
+	.sect	'.rodata.MSR_CONST'
 	.global	Spi_Config_Core0
 	.align	4
 Spi_Config_Core0:	.type	object
@@ -177,8 +177,8 @@ Spi_Config_Core0:	.type	object
 	.half	3
 	.byte	3
 	.space	3
-	.sdecl	'.rodata.Spi_PBcfg.Spi_Config',data,rom,cluster('Spi_Config')
-	.sect	'.rodata.Spi_PBcfg.Spi_Config'
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('Spi_Config')
+	.sect	'.rodata.MSR_CONST'
 	.global	Spi_Config
 	.align	4
 Spi_Config:	.type	object
@@ -958,7 +958,7 @@ Spi_Config:	.type	object
 ; ..\Appl\GenData\src\Spi_PBcfg.c	    15  **                                                                            **
 ; ..\Appl\GenData\src\Spi_PBcfg.c	    16  **  VERSION   : 17.0.0                                                        **
 ; ..\Appl\GenData\src\Spi_PBcfg.c	    17  **                                                                            **
-; ..\Appl\GenData\src\Spi_PBcfg.c	    18  **  DATE, TIME: 2026-07-29, 14:50:13  !!!IGNORE-LINE!!!                   **
+; ..\Appl\GenData\src\Spi_PBcfg.c	    18  **  DATE, TIME: 2026-07-30, 20:42:28  !!!IGNORE-LINE!!!                   **
 ; ..\Appl\GenData\src\Spi_PBcfg.c	    19  **                                                                            **
 ; ..\Appl\GenData\src\Spi_PBcfg.c	    20  **  GENERATOR : Build b191017-0938      !!!IGNORE-LINE!!!                   **
 ; ..\Appl\GenData\src\Spi_PBcfg.c	    21  **                                                                            **

@@ -145,13 +145,6 @@ FUNC(void, MotorControll_CODE) MotorControll_Init(void) /* PRQA S 0624, 3206 */ 
  *   Std_ReturnType Rte_Write_Pp_MotorCurrentRef_Id_Ref(float32 data)
  *   Std_ReturnType Rte_Write_Pp_MotorCurrentRef_Iq_Ref(float32 data)
  *
- * Service Calls:
- * ==============
- *   Service Invocation:
- *   -------------------
- *   Std_ReturnType Rte_Call_Pp_MotorCdd_EnableInverter_EnableInverter(boolean arg)
- *     Synchronous Service Invocation. Timeout: None
- *
  *********************************************************************************************************************/
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
@@ -262,20 +255,6 @@ FUNC(void, MotorControll_CODE) MotorControll_MainFunction(void) /* PRQA S 0624, 
   {
     case RTE_E_OK:
       fct_error = FALSE;
-      break;
-  }
-
-  fct_status = TSC_MotorControll_Rte_Call_Pp_MotorCdd_EnableInverter_EnableInverter(FALSE); /* PRQA S 0315, 3226 */ /* MD_Rte_0315, MD_Rte_3226 */
-  switch (fct_status)
-  {
-    case RTE_E_OK:
-      fct_error = FALSE;
-      break;
-    case RTE_E_UNCONNECTED:
-      fct_error = TRUE;
-      break;
-    case RTE_E_TIMEOUT:
-      fct_error = TRUE;
       break;
   }
 

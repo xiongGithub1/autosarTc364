@@ -512,9 +512,27 @@
                   <INTERNAL-BEHAVIORS>
                     <BSW-INTERNAL-BEHAVIOR UUID="29555de6-b57c-4359-9b66-0d416c7cd1a9">
                       <SHORT-NAME>RteBehavior</SHORT-NAME>
+                      <ENTITYS>
+                        <BSW-SCHEDULABLE-ENTITY UUID="adafb349-fe55-4cfd-afcb-7b61a7b8b22e">
+                          <SHORT-NAME>Rte_ComSendSignalProxyPeriodic</SHORT-NAME>
+                          <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/MICROSAR/Rte_ib_bswmd/BswModuleDescriptions/Rte_ComSendSignalProxyPeriodic</IMPLEMENTED-ENTRY-REF>
+                        </BSW-SCHEDULABLE-ENTITY>
+                      </ENTITYS>
+                      <EVENTS>
+                        <BSW-TIMING-EVENT UUID="a4ad4996-75e6-4655-a7cd-76f5d147b682">
+                          <SHORT-NAME>Rte_ComSendSignalProxyPeriodicTimingEvent0</SHORT-NAME>
+                          <STARTS-ON-EVENT-REF DEST="BSW-SCHEDULABLE-ENTITY">/MICROSAR/Rte_ib_bswmd/BswModuleDescriptions/Rte/RteBehavior/Rte_ComSendSignalProxyPeriodic</STARTS-ON-EVENT-REF>
+                          <PERIOD>0.005</PERIOD>
+                        </BSW-TIMING-EVENT>
+                      </EVENTS>
                     </BSW-INTERNAL-BEHAVIOR>
                   </INTERNAL-BEHAVIORS>
                 </BSW-MODULE-DESCRIPTION>
+                <BSW-MODULE-ENTRY UUID="904ca9a1-58f7-429f-a3e7-63158a547be0">
+                  <SHORT-NAME>Rte_ComSendSignalProxyPeriodic</SHORT-NAME>
+                  <CALL-TYPE>SCHEDULED</CALL-TYPE>
+                  <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+                </BSW-MODULE-ENTRY>
               </ELEMENTS>
             </AR-PACKAGE>
             <AR-PACKAGE UUID="3cfc2e14-d192-4090-8c37-ba1ace7a550e">

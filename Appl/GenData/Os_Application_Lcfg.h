@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Application_Lcfg.h
- *   Generation Time: 2026-07-29 10:29:51
+ *   Generation Time: 2026-07-30 17:52:17
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -100,6 +100,16 @@ typedef uint32 Os_AppMaskType;
 extern CONST(Os_AppConfigType, OS_CONST) OsCfg_App_SystemApplication_OsCore0;
 
 # define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
+# include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_CORE1_CONST_UNSPECIFIED
+# include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! Application configuration data: OsApplication_OsCore1 */
+extern CONST(Os_AppConfigType, OS_CONST) OsCfg_App_OsApplication_OsCore1;
+
+# define OS_STOP_SEC_CORE1_CONST_UNSPECIFIED
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 

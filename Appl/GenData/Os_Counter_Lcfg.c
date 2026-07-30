@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Counter_Lcfg.c
- *   Generation Time: 2026-07-29 10:29:51
+ *   Generation Time: 2026-07-30 17:52:17
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -99,6 +99,19 @@ OS_LOCAL VAR(Os_PriorityQueueNodeType, OS_VAR_NOINIT)
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
+#define OS_START_SEC_CORE1_VAR_NOINIT_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! Dynamic counter data: SystemTimer1 */
+OS_LOCAL VAR(Os_TimerPfrtType, OS_VAR_NOINIT) OsCfg_Counter_SystemTimer1_Dyn;
+OS_LOCAL VAR(Os_PriorityQueueType, OS_VAR_NOINIT) OsCfg_Counter_SystemTimer1_JobQueue_Dyn;
+OS_LOCAL VAR(Os_PriorityQueueNodeType, OS_VAR_NOINIT)
+  OsCfg_Counter_SystemTimer1_JobQueueNodes_Dyn[OS_CFG_NUM_COUNTER_SYSTEMTIMER1_JOBS + 1u];
+
+#define OS_STOP_SEC_CORE1_VAR_NOINIT_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
 /**********************************************************************************************************************
  *  GLOBAL DATA
  *********************************************************************************************************************/
@@ -135,7 +148,7 @@ CONST(Os_TimerPfrtConfigType, OS_CONST) OsCfg_Counter_SystemTimer =
     /* .DriverType            = */ OS_TIMERTYPE_PERIODIC_FREE_RUNNING_TIMER,
     /* .Core                  = */ &OsCfg_Core_OsCore0,
     /* .OwnerApplication      = */ &OsCfg_App_SystemApplication_OsCore0,
-    /* .AccessingApplications = */ OS_APPID2MASK(SystemApplication_OsCore0)  /* PRQA S 0410 */ /* MD_MSR_Dir1.1 */
+    /* .AccessingApplications = */ (OS_APPID2MASK(OsApplication_OsCore1) | OS_APPID2MASK(SystemApplication_OsCore0))  /* PRQA S 0410 */ /* MD_MSR_Dir1.1 */
   },
   /* .Dyn     = */ OS_ISR_CASTDYN_TIMERSW_2_TIMERPFRT(OsCfg_Counter_SystemTimer_Dyn)
   },
@@ -149,6 +162,48 @@ CONST(Os_TimerPfrtConfigType, OS_CONST) OsCfg_Counter_SystemTimer =
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
+#define OS_START_SEC_CORE1_CONST_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+/*! Counter configuration data: SystemTimer1 */
+CONST(Os_TimerPfrtConfigType, OS_CONST) OsCfg_Counter_SystemTimer1 =
+{
+  /* .SwCounter            = */
+  {
+  /* .Counter = */
+  {
+    /* .Characteristics       = */
+    {
+      /* .MaxAllowedValue      = */ OSMAXALLOWEDVALUE_SystemTimer1,
+      /* .MaxCountingValue     = */ OS_TIMERPFRT_GETMAXCOUNTINGVALUE(OSMAXALLOWEDVALUE_SystemTimer1),
+      /* .MaxDifferentialValue = */ OS_TIMERPFRT_GETMAXDIFFERENTIALVALUE(OSMAXALLOWEDVALUE_SystemTimer1),
+      /* .MinCycle             = */ OSMINCYCLE_SystemTimer1,
+      /* .TicksPerBase         = */ OSTICKSPERBASE_SystemTimer1
+    },
+    /* .JobQueue              = */
+    {
+      /* .Queue     = */ OsCfg_Counter_SystemTimer1_JobQueueNodes_Dyn,
+      /* .Dyn       = */ &OsCfg_Counter_SystemTimer1_JobQueue_Dyn,
+      /* .QueueSize = */ (Os_PriorityQueueNodeIdxType)OS_CFG_NUM_COUNTER_SYSTEMTIMER1_JOBS
+    },
+    /* .DriverType            = */ OS_TIMERTYPE_PERIODIC_FREE_RUNNING_TIMER,
+    /* .Core                  = */ &OsCfg_Core_OsCore1,
+    /* .OwnerApplication      = */ &OsCfg_App_OsApplication_OsCore1,
+    /* .AccessingApplications = */ (OS_APPID2MASK(OsApplication_OsCore1) | OS_APPID2MASK(SystemApplication_OsCore0))  /* PRQA S 0410 */ /* MD_MSR_Dir1.1 */
+  },
+  /* .Dyn     = */ OS_ISR_CASTDYN_TIMERSW_2_TIMERPFRT(OsCfg_Counter_SystemTimer1_Dyn)
+  },
+  /* .Period               = */ 1UL,
+  /* .MaxDifferentialValue = */ OS_TIMERPFRT_HARDWAREGETMAXDIFFERENTIALVALUE(1073741823UL),
+  /* .MaxCountingValue     = */ OS_TIMERPFRT_HARDWAREGETMAXCOUNTINGVALUE(1073741823UL),
+  /* .HwConfig             = */ &OsCfg_Hal_TimerFrt_SystemTimer1
+};
+
+#define OS_STOP_SEC_CORE1_CONST_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
 #define OS_START_SEC_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
@@ -156,6 +211,7 @@ CONST(Os_TimerPfrtConfigType, OS_CONST) OsCfg_Counter_SystemTimer =
 CONSTP2CONST(Os_CounterConfigType, OS_CONST, OS_CONST) OsCfg_CounterRefs[OS_COUNTERID_COUNT + 1u] =            /* PRQA S 4521 */ /* MD_Os_Rule10.1_4521 */
 {
   OS_COUNTER_CASTCONFIG_TIMERPFRT_2_COUNTER(OsCfg_Counter_SystemTimer),
+  OS_COUNTER_CASTCONFIG_TIMERPFRT_2_COUNTER(OsCfg_Counter_SystemTimer1),
   NULL_PTR
 };
 

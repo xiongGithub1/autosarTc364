@@ -1,29 +1,11 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
-	.compiler_invocation	"ctc -f cc15560a --dep-file=MCAL364\\Port\\ssc\\src\\.Port.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=MCAL364\\Port\\ssc\\src\\Port.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o MCAL364\\Port\\ssc\\src\\Port.src ..\\MCAL364\\Port\\ssc\\src\\Port.c"
+	.compiler_invocation	"ctc -f cc19316a --dep-file=MCAL364\\Port\\ssc\\src\\.Port.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -DBRS_COMP_TASKING -DBRS_PLATFORM_AURIX -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Include -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=MCAL364\\Port\\ssc\\src\\Port.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o MCAL364\\Port\\ssc\\src\\Port.src ..\\MCAL364\\Port\\ssc\\src\\Port.c"
 	.compiler_name		"ctc"
 	;source	'..\\MCAL364\\Port\\ssc\\src\\Port.c'
 
 	
 $TC162
-	.sdecl	'.zrodata.Port..1.cnt',data,rom
-	.sect	'.zrodata.Port..1.cnt'
-	.align	2
-.1.cnt:	.type	object
-	.size	.1.cnt,4
-	.word	15789061
-	.sdecl	'.zrodata.Port..2.cnt',data,rom
-	.sect	'.zrodata.Port..2.cnt'
-	.align	2
-.2.cnt:	.type	object
-	.size	.2.cnt,4
-	.word	-268197888
-	.sdecl	'.zrodata.Port..3.cnt',data,rom
-	.sect	'.zrodata.Port..3.cnt'
-	.align	2
-.3.cnt:	.type	object
-	.size	.3.cnt,4
-	.word	2105344
 	
 	.sdecl	'.text.Port.Port_Init',code,cluster('Port_Init')
 	.sect	'.text.Port.Port_Init'
@@ -748,6 +730,12 @@ Port_Init:	.type	func
 ; ..\MCAL364\Port\ssc\src\Port.c	   711      */
 ; ..\MCAL364\Port\ssc\src\Port.c	   712  
 ; ..\MCAL364\Port\ssc\src\Port.c	   713      Port_kConfigPtr = ConfigPtr;
+	movh.a	a15,#@his(Port_kConfigPtr)
+	lea	a15,[a15]@los(Port_kConfigPtr)
+.L183:
+	sub.a	a10,#24
+.L81:
+
 ; ..\MCAL364\Port\ssc\src\Port.c	   714      /* Initialise General Purpose I/O Ports and Peripheral I/O Lines */
 ; ..\MCAL364\Port\ssc\src\Port.c	   715      /* [cover parentID={C4061DE2-BE40-4247-B2EA-45125A8C94C2}]
 ; ..\MCAL364\Port\ssc\src\Port.c	   716       Initialise General Purpose I/O Ports and Peripheral I/O Lines
@@ -1978,11 +1966,19 @@ Port_Init:	.type	func
 ; ..\MCAL364\Port\ssc\src\Port.c	  1941    Loop To Configure Port Registers
 ; ..\MCAL364\Port\ssc\src\Port.c	  1942    [/cover] */
 ; ..\MCAL364\Port\ssc\src\Port.c	  1943    ConfigIndex = 0U;
+	mov	d8,#0
+	st.a	[a10]16,a15
+.L154:
+
 ; ..\MCAL364\Port\ssc\src\Port.c	  1944    /* Port driver strength is configured in Port PDR0 register */
 ; ..\MCAL364\Port\ssc\src\Port.c	  1945    /* [cover parentID={905FD984-26E8-4fb2-B472-B5CBCB3293BC}]
 ; ..\MCAL364\Port\ssc\src\Port.c	  1946    Take action depending on whether Port is Available
 ; ..\MCAL364\Port\ssc\src\Port.c	  1947    [/cover] */
 ; ..\MCAL364\Port\ssc\src\Port.c	  1948    for (PortNumber = (uint32)0U; PortNumber <= (uint32)PORT_MAX_NUMBER;
+	mov	d9,d8
+	st.a	[a15],a4
+.L156:
+
 ; ..\MCAL364\Port\ssc\src\Port.c	  1949         PortNumber++)
 ; ..\MCAL364\Port\ssc\src\Port.c	  1950      /* Parameter Port is checked for validity */
 ; ..\MCAL364\Port\ssc\src\Port.c	  1951    {
@@ -2382,58 +2378,50 @@ Port_Init:	.type	func
 ; ..\MCAL364\Port\ssc\src\Port.c	  2345  
 ; ..\MCAL364\Port\ssc\src\Port.c	  2346    RetVal = (uint16)(((uint32)(PORT_PDR1_MASK)) &
 ; ..\MCAL364\Port\ssc\src\Port.c	  2347                      (uint32)(Port_kAvailablePins[(Port)]));
-	mov	d8,#0
 	movh.a	a12,#@his(Port_kAvailablePins)
-.L157:
-	mov	d9,d8
 	lea	a12,[a12]@los(Port_kAvailablePins)
-.L81:
-	st.a	Port_kConfigPtr,a4
-.L84:
-	mov.aa	a13,a12
-.L85:
-	sub.a	a10,#16
-.L86:
+	st.a	[a10],a12
+.L184:
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1948    for (PortNumber = (uint32)0U; PortNumber <= (uint32)PORT_MAX_NUMBER;      (inlined)
-	lea	a14,40
+	lea	a13,40
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1949         PortNumber++)      (inlined)
 .L2:
-	fcall	.cocofun_4
-.L156:
+	fcall	.cocofun_1
+.L153:
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1955      if(Port_lIsPortAvailable(PortNumber) != (uint32)0U)      (inlined)
 	jeq	d15,#0,.L5
-.L108:
-	ld.a	a2,Port_kConfigPtr
-.L114:
-	sh	d0,d9,#8
-	ld.w	d15,.2.cnt
-.L186:
-	add	d15,d0
-	ld.a	a2,[a2]
-.L187:
-	mov.a	a15,d15
-.L115:
+.L103:
+	sh	d15,d9,#8
+	movh.a	a15,#61444
+	lea	a15,[a15]@los(0xf003a000)
+.L185:
+	addsc.a	a14,a15,d15,#0
+.L109:
+	ld.a	a15,[a10]16
 	sh	d15,d8,#5
-	addsc.a	a2,a2,d15,#0
-	lea	a4,[a15]64
-	ld.w	d4,[a2]20
+	lea	a4,[a14]64
+	ld.a	a15,[a15]
+	ld.a	a15,[a15]
+	addsc.a	a15,a15,d15,#0
+	ld.w	d4,[a15]20
 	call	Mcal_WritePeripEndInitProtReg
-.L188:
-	ld.hu	d0,[a13]0
-.L189:
+.L186:
+	ld.hu	d0,[a12]0
+.L187:
 	mov.u	d1,#65280
-.L190:
+.L188:
 	and	d0,d1
-.L191:
+.L189:
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1982        if(Port_lIsPortPdr1Available(PortNumber) != (uint16)0U)      (inlined)
 	jeq	d0,#0,.L6
-.L192:
-	lea	a4,[a15]68
-	ld.a	a15,Port_kConfigPtr
+.L190:
+	ld.a	a15,[a10]16
+	lea	a4,[a14]68
+	ld.a	a15,[a15]
 	ld.a	a15,[a15]
 	addsc.a	a15,a15,d15,#0
 	ld.w	d4,[a15]24
@@ -2446,91 +2434,95 @@ Port_Init:	.type	func
 ; ..\MCAL364\Port\ssc\src\Port.c	  1955      if(Port_lIsPortAvailable(PortNumber) != (uint32)0U)      (inlined)
 .L5:
 	add	d9,#1
-	add.a	a13,#2
+	add.a	a12,#2
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1948    for (PortNumber = (uint32)0U; PortNumber <= (uint32)PORT_MAX_NUMBER;      (inlined)
-	loop	a14,.L2
-.L104:
-	ld.a	a15,Port_kConfigPtr
-.L193:
+	loop	a13,.L2
+.L98:
+	ld.a	a15,[a10]16
+.L191:
 	mov	d8,#0
-.L158:
+.L155:
 	mov	d9,d8
-.L159:
+.L157:
+	ld.a	a15,[a15]
+.L192:
 	ld.a	a2,[a15]12
-.L160:
-	ld.a	a13,[a15]8
-.L164:
-	st.a	[a10]12,a2
-.L165:
-	ld.a	a15,[a15]4
+.L158:
+	ld.a	a12,[a15]8
 .L162:
+	st.a	[a10]12,a2
+.L163:
+	ld.a	a15,[a15]4
+.L160:
 	st.a	[a10]8,a15
-.L166:
-	st.a	[a10]4,a12
-.L194:
+.L164:
+	ld.a	a15,[a10]
+.L161:
+	st.a	[a10]4,a15
+.L193:
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1651    for(PortNumber = (uint32)0U; PortNumber <= (uint32)PORT_MAX_NUMBER; PortNumber++)      (inlined)
 	lea	a15,40
-.L163:
 	st.a	[a10],a15
 .L7:
-	fcall	.cocofun_4
-.L161:
+	fcall	.cocofun_1
+.L159:
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1659      if(Port_lIsPortAvailable(PortNumber) != (uint32)0U)      (inlined)
 	jeq	d15,#0,.L10
-.L119:
-	ld.a	a15,Port_kConfigPtr
+.L113:
+	ld.a	a15,[a10]16
+.L194:
+	sh	d15,d8,#5
+	movh.a	a2,#61444
+.L114:
+	lea	a2,[a2]@los(0xf003a000)
+.L115:
+	ld.a	a15,[a15]
 .L195:
 	ld.a	a15,[a15]
 .L196:
-	sh	d15,d8,#5
+	addsc.a	a13,a15,d15,#0
+.L117:
+	sh	d15,d9,#8
 .L197:
-	addsc.a	a12,a15,d15,#0
-.L120:
-	ld.w	d15,.2.cnt
-.L198:
-	sh	d0,d9,#8
-.L199:
-	add	d15,d0
-.L200:
-	mov.a	a14,d15
-.L121:
+	addsc.a	a14,a2,d15,#0
+.L118:
 	mov	d15,#31
-.L201:
+.L198:
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  2273    RetVal = ((Port <= (uint32)PORT_NUMBER_31) ? (Port_lIsPortReadOnly31(Port)) :      (inlined)
 	jlt.u	d15,d9,.L11
-.L202:
+.L199:
 	mov	d15,#0
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  2273    RetVal = ((Port <= (uint32)PORT_NUMBER_31) ? (Port_lIsPortReadOnly31(Port)) :      (inlined)
 	j	.L12
 .L11:
-	fcall	.cocofun_5
+	fcall	.cocofun_2
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  2273    RetVal = ((Port <= (uint32)PORT_NUMBER_31) ? (Port_lIsPortReadOnly31(Port)) :      (inlined)
 .L12:
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1699        if(Port_lIsPortReadOnly(PortNumber) == (uint32)0U)      (inlined)
 	jne	d15,#0,.L13
-.L123:
-	ld.w	d15,[a12]16
-.L203:
+.L120:
+	ld.w	d15,[a13]16
+.L200:
 	st.w	[a14],d15
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1699        if(Port_lIsPortReadOnly(PortNumber) == (uint32)0U)      (inlined)
 .L13:
 	lea	a4,[a14]80
-.L204:
-	ld.w	d4,[a12]28
+.L201:
+	ld.w	d4,[a13]28
 	call	Mcal_WritePeripEndInitProtReg
-.L205:
-	ld.w	d15,[a12+]
-.L206:
+.L202:
+	ld.w	d15,[a13+]
+.L203:
 	st.w	[a14]16,d15
-.L207:
+.L204:
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  2348    return(RetVal);
 ; ..\MCAL364\Port\ssc\src\Port.c	  2349  }
@@ -2570,45 +2562,45 @@ Port_Init:	.type	func
 ; ..\MCAL364\Port\ssc\src\Port.c	  2383    RetVal = (uint16)( ((uint32)(Pin)) & (uint32)(Port_kAvailablePins[(Port)]) );
 	ld.a	a15,[a10]4
 	ld.hu	d0,[a15]0
-.L208:
+.L205:
 	and	d15,d0,#240
-.L209:
+.L206:
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1736        if(Port_lIsPortIocrAvailable(PortNumber, (uint16)PORT_PIN_4_7) != (uint16)0U)      (inlined)
 	jeq	d15,#0,.L14
-.L210:
-	ld.w	d15,[a12]
-.L211:
+.L207:
+	ld.w	d15,[a13]
+.L208:
 	st.w	[a14]20,d15
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1736        if(Port_lIsPortIocrAvailable(PortNumber, (uint16)PORT_PIN_4_7) != (uint16)0U)      (inlined)
 .L14:
 	mov	d15,#3840
-	add.a	a12,#4
-.L212:
+	add.a	a13,#4
+.L209:
 	and	d15,d0
-.L213:
+.L210:
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1747        if(Port_lIsPortIocrAvailable(PortNumber, (uint16)PORT_PIN_8_11) != (uint16)0U)      (inlined)
 	jeq	d15,#0,.L15
-.L214:
-	ld.w	d15,[a12]
-.L215:
+.L211:
+	ld.w	d15,[a13]
+.L212:
 	st.w	[a14]24,d15
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1747        if(Port_lIsPortIocrAvailable(PortNumber, (uint16)PORT_PIN_8_11) != (uint16)0U)      (inlined)
 .L15:
 	mov.u	d15,#61440
-	add.a	a12,#4
-.L216:
+	add.a	a13,#4
+.L213:
 	and	d0,d15
-.L217:
+.L214:
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1758        if(Port_lIsPortIocrAvailable(PortNumber, (uint16)PORT_PIN_12_15) != (uint16)0U)      (inlined)
 	jeq	d0,#0,.L16
-.L218:
-	ld.w	d15,[a12]
-.L219:
+.L215:
+	ld.w	d15,[a13]
+.L216:
 	st.w	[a14]28,d15
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1758        if(Port_lIsPortIocrAvailable(PortNumber, (uint16)PORT_PIN_12_15) != (uint16)0U)      (inlined)
@@ -3028,11 +3020,11 @@ Port_Init:	.type	func
 ; ..\MCAL364\Port\ssc\src\Port.c	  2795    [/cover] */
 ; ..\MCAL364\Port\ssc\src\Port.c	  2796    RetVal = ((Port > (uint32)PORT_NUMBER_31) ?
 	mov	d15,#31
-.L220:
+.L217:
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  2796    RetVal = ((Port > (uint32)PORT_NUMBER_31) ?      (inlined)
 	jge.u	d15,d9,.L17
-.L221:
+.L218:
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  2797              (Port_lIsPortLVDSAvailable63(Port)) :
 	mov	d15,#0
@@ -3041,10 +3033,12 @@ Port_Init:	.type	func
 	j	.L18
 .L17:
 	mov	d15,#1
-.L222:
+.L219:
 	sh	d0,d15,d9
-	ld.w	d15,.3.cnt
-.L223:
+.L220:
+	mov	d15,#8192
+	addih	d15,d15,#32
+.L221:
 	and	d15,d0
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  2797              (Port_lIsPortLVDSAvailable63(Port)) :      (inlined)
@@ -3052,15 +3046,15 @@ Port_Init:	.type	func
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1770        if(Port_lIsPortLVDSAvailable(PortNumber) != (uint32)0U)      (inlined)
 	jeq	d15,#0,.L19
-.L129:
+.L126:
 	lea	a15,[a14]160
-.L169:
+.L167:
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1794          for(counter = (uint32)0U; counter < (uint32)PORT_MAX_LPCR_REG ; counter++)      (inlined)
-	mov.a	a12,#6
+	mov.a	a13,#6
 .L20:
-	ld.w	d4,[a13]
-.L224:
+	ld.w	d4,[a12]
+.L222:
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  2798              (Port_lIsPortLVDSAvailable31(Port))
 ; ..\MCAL364\Port\ssc\src\Port.c	  2799             );
@@ -3212,45 +3206,45 @@ Port_Init:	.type	func
 ; ..\MCAL364\Port\ssc\src\Port.c	  2945    uint32 RetVal;
 ; ..\MCAL364\Port\ssc\src\Port.c	  2946    RetVal = ( (PortLPCRvalue >> PIN_AVAILABLE) & (uint32)PORT_LPCR_AVAILABLE );
 	sh	d15,d4,#-16
-.L225:
+.L223:
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1799            if(Port_lIsPortPinPairAvailable(*LVDSDataPtr) == (uint32)0U)      (inlined)
 	jne	d15,#0,.L21
-.L226:
+.L224:
 	mov.aa	a4,a15
-.L170:
+.L168:
 	call	Mcal_WritePeripEndInitProtReg
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1799            if(Port_lIsPortPinPairAvailable(*LVDSDataPtr) == (uint32)0U)      (inlined)
 .L21:
 	add.a	a15,#4
-.L227:
-	add.a	a13,#4
+.L225:
+	add.a	a12,#4
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1794          for(counter = (uint32)0U; counter < (uint32)PORT_MAX_LPCR_REG ; counter++)      (inlined)
-	loop	a12,.L20
+	loop	a13,.L20
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1770        if(Port_lIsPortLVDSAvailable(PortNumber) != (uint32)0U)      (inlined)
 .L19:
 	mov	d15,#31
-.L228:
+.L226:
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  2909    RetVal = ((Port > (uint32)PORT_NUMBER_31) ?      (inlined)
 	jge.u	d15,d9,.L22
-.L229:
-	fcall	.cocofun_6
-.L168:
+.L227:
+	fcall	.cocofun_3
+.L166:
 	and	d15,d15,#258
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  2910              (Port_lIsPortPCSRAvailable63(Port)) :      (inlined)
 	j	.L23
 .L22:
 	mov	d15,#1
-.L230:
+.L228:
 	sh	d0,d15,d9
-.L231:
+.L229:
 	mov	d15,#2048
-.L232:
+.L230:
 	and	d15,d0
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  2910              (Port_lIsPortPCSRAvailable63(Port)) :      (inlined)
@@ -3258,11 +3252,11 @@ Port_Init:	.type	func
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1827        if(Port_lIsPortPCSRAvailable(PortNumber) != (uint32)0U)      (inlined)
 	jeq	d15,#0,.L24
-.L134:
+.L131:
 	ld.a	a15,[a10]12
-.L171:
+.L169:
 	lea	a4,[a14]100
-.L233:
+.L231:
 	ld.w	d4,[a15+]
 	st.a	[a10]12,a15
 	call	Mcal_WriteSafetyEndInitProtReg
@@ -3359,11 +3353,11 @@ Port_Init:	.type	func
 ; ..\MCAL364\Port\ssc\src\Port.c	  3033    [/cover] */
 ; ..\MCAL364\Port\ssc\src\Port.c	  3034    RetVal = ((Port > (uint32)PORT_NUMBER_31) ?
 	mov	d15,#31
-.L234:
+.L232:
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  3034    RetVal = ((Port > (uint32)PORT_NUMBER_31) ?      (inlined)
 	jge.u	d15,d9,.L25
-.L235:
+.L233:
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  3035              (Port_lIsPortPDISCAvailable63(Port)) :
 ; ..\MCAL364\Port\ssc\src\Port.c	  3036              (Port_lIsPortPDISCAvailable31(Port))
@@ -3433,16 +3427,16 @@ Port_Init:	.type	func
 ; ..\MCAL364\Port\ssc\src\Port.c	  3100  {
 ; ..\MCAL364\Port\ssc\src\Port.c	  3101    uint32 RetVal;
 ; ..\MCAL364\Port\ssc\src\Port.c	  3102    RetVal = (((uint32)(PORT_CONSTANT_0x01) <<
-	fcall	.cocofun_5
-.L236:
+	fcall	.cocofun_2
+.L234:
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  3035              (Port_lIsPortPDISCAvailable63(Port)) :      (inlined)
 	j	.L26
 .L25:
 	mov	d15,#1
-.L237:
+.L235:
 	sh	d15,d15,d9
-.L238:
+.L236:
 	and	d15,#1
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  3035              (Port_lIsPortPDISCAvailable63(Port)) :      (inlined)
@@ -3450,11 +3444,11 @@ Port_Init:	.type	func
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1864        if(Port_lIsPortPDISCAvailable(PortNumber) != (uint32)0U)      (inlined)
 	jeq	d15,#0,.L27
-.L140:
+.L137:
 	ld.a	a15,[a10]8
-.L172:
+.L170:
 	lea	a4,[a14]96
-.L239:
+.L237:
 	ld.w	d4,[a15+]
 	st.a	[a10]8,a15
 	call	Mcal_WritePeripEndInitProtReg
@@ -3469,7 +3463,7 @@ Port_Init:	.type	func
 	add.a	a15,#2
 	st.a	[a10]4,a15
 	add	d9,#1
-.L240:
+.L238:
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  1651    for(PortNumber = (uint32)0U; PortNumber <= (uint32)PORT_MAX_NUMBER; PortNumber++)      (inlined)
 	ld.a	a15,[a10]
@@ -3477,7 +3471,7 @@ Port_Init:	.type	func
 	st.a	[a10],a15
 	add.a	a15,#1
 	loop	a15,.L7
-.L87:
+.L82:
 	ret
 .L77:
 	
@@ -3486,13 +3480,13 @@ __Port_Init_function_end:
 .L52:
 	; End of function
 	
-	.sdecl	'.text.Port..cocofun_6',code,cluster('.cocofun_6')
-	.sect	'.text.Port..cocofun_6'
+	.sdecl	'.text.Port..cocofun_3',code,cluster('.cocofun_3')
+	.sect	'.text.Port..cocofun_3'
 	.align	2
-; Function .cocofun_6
+; Function .cocofun_3
 .L37:
-.cocofun_6:	.type	func
-; Function body .cocofun_6, coco_iter:1
+.cocofun_3:	.type	func
+; Function body .cocofun_3, coco_iter:1
 	mov	d15,#1
 .L283:
 	add	d0,d9,#-32
@@ -3501,43 +3495,45 @@ __Port_Init_function_end:
 	fret
 .L72:
 	; End of function
-	.sdecl	'.text.Port..cocofun_5',code,cluster('.cocofun_5')
-	.sect	'.text.Port..cocofun_5'
+	.sdecl	'.text.Port..cocofun_2',code,cluster('.cocofun_2')
+	.sect	'.text.Port..cocofun_2'
 	.align	2
-; Function .cocofun_5
+; Function .cocofun_2
 .L39:
-.cocofun_5:	.type	func
-; Function body .cocofun_5, coco_iter:0
-	fcall	.cocofun_6
-.L167:
+.cocofun_2:	.type	func
+; Function body .cocofun_2, coco_iter:0
+	fcall	.cocofun_3
+.L165:
 	and	d15,d15,#256
 	fret
 .L67:
 	; End of function
-	.sdecl	'.text.Port..cocofun_4',code,cluster('.cocofun_4')
-	.sect	'.text.Port..cocofun_4'
+	.sdecl	'.text.Port..cocofun_1',code,cluster('.cocofun_1')
+	.sect	'.text.Port..cocofun_1'
 	.align	2
-; Function .cocofun_4
+; Function .cocofun_1
 .L41:
-.cocofun_4:	.type	func
-; Function body .cocofun_4, coco_iter:0
+.cocofun_1:	.type	func
+; Function body .cocofun_1, coco_iter:0
 	mov	d15,#31
-.L270:
+.L269:
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  2152    RetVal = ((Port > (uint32)PORT_NUMBER_31) ? (Port_lIsPortAvailable63(Port)) :      (inlined)
 	jge.u	d15,d9,.L3
+.L270:
+	fcall	.cocofun_3
 .L271:
-	fcall	.cocofun_6
-.L272:
 	and	d15,d15,#259
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  2152    RetVal = ((Port > (uint32)PORT_NUMBER_31) ? (Port_lIsPortAvailable63(Port)) :      (inlined)
 	j	.L4
 .L3:
 	mov	d15,#1
-.L273:
+.L272:
 	sh	d0,d15,d9
-	ld.w	d15,.1.cnt
+.L273:
+	mov.u	d15,#60421
+	addih	d15,d15,#240
 .L274:
 	and	d15,d0
 
@@ -3554,98 +3550,100 @@ __Port_Init_function_end:
 ; Function Port_RefreshPortDirection
 .L43:
 Port_RefreshPortDirection:	.type	func
-	mov	d1,#0
+	mov	d2,#0
 	movh.a	a15,#@his(Port_kAvailablePins)
-.L173:
-	mov	d2,d1
+.L171:
+	mov	d3,d2
+	movh.a	a2,#@his(Port_kConfigPtr)
+.L172:
 	lea	a15,[a15]@los(Port_kAvailablePins)
-.L174:
-	ld.a	a2,Port_kConfigPtr
-.L245:
+.L243:
+	ld.a	a2,[a2]@los(Port_kConfigPtr)
+.L244:
 	lea	a4,40
 .L28:
 	mov	d15,#31
-.L246:
+.L245:
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  2152    RetVal = ((Port > (uint32)PORT_NUMBER_31) ? (Port_lIsPortAvailable63(Port)) :      (inlined)
-	jge.u	d15,d1,.L29
-.L247:
+	jge.u	d15,d2,.L29
+.L246:
 	mov	d15,#1
+.L247:
+	add	d0,d2,#-32
 .L248:
-	add	d0,d1,#-32
-.L249:
 	sh	d15,d15,d0
-.L250:
+.L249:
 	and	d15,d15,#259
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  2152    RetVal = ((Port > (uint32)PORT_NUMBER_31) ? (Port_lIsPortAvailable63(Port)) :      (inlined)
 	j	.L30
 .L29:
 	mov	d15,#1
+.L250:
+	sh	d0,d15,d2
 .L251:
-	sh	d0,d15,d1
-	ld.w	d15,.1.cnt
+	mov.u	d15,#60421
+	addih	d15,d15,#240
 .L252:
 	and	d15,d0
 
 ; ..\MCAL364\Port\ssc\src\Port.c	  2152    RetVal = ((Port > (uint32)PORT_NUMBER_31) ? (Port_lIsPortAvailable63(Port)) :      (inlined)
 .L30:
 	jeq	d15,#0,.L31
-.L152:
+.L149:
 	ld.a	a5,[a2]
 .L253:
-	sh	d15,d2,#5
+	sh	d15,d3,#5
+	movh.a	a6,#61444
+	lea	a6,[a6]@los(0xf003a000)
 .L254:
 	addsc.a	a5,a5,d15,#0
-.L175:
-	ld.w	d15,.2.cnt
-.L255:
-	sh	d0,d1,#8
-.L256:
-	add	d15,d0
-.L257:
-	add	d15,d15,#16
-.L176:
-	mov.a	a6,d15
-.L177:
-	mov	d15,#0
+.L173:
+	sh	d15,d2,#8
 	mov.a	a7,#15
+.L255:
+	addsc.a	a6,a6,d15,#0
+.L256:
+	mov	d0,#0
+.L174:
+	lea	a6,[a6]16
 .L32:
-	mov	d0,#1
-	ld.hu	d3,[a15]0
+	mov	d15,#1
+	ld.hu	d1,[a15]0
+.L257:
+	sh	d15,d15,d0
 .L258:
-	sh	d0,d0,d15
+	and	d15,d1
 .L259:
-	and	d0,d3
+	jeq	d15,#0,.L33
 .L260:
-	jeq	d0,#0,.L33
+	ld.bu	d15,[a5]
 .L261:
-	ld.bu	d0,[a5]
-.L262:
-	st.b	[a6],d0
+	st.b	[a6],d15
 .L33:
-	add	d15,#1
+	add	d0,#1
 	add.a	a6,#1
-.L263:
+.L262:
 	add.a	a5,#1
 	loop	a7,.L32
-.L264:
-	add	d2,#1
+.L263:
+	add	d3,#1
 .L31:
-	add	d1,#1
+	add	d2,#1
 	add.a	a15,#2
 	loop	a4,.L28
-.L265:
+.L264:
 	ret
-.L144:
+.L141:
 	
 __Port_RefreshPortDirection_function_end:
 	.size	Port_RefreshPortDirection,__Port_RefreshPortDirection_function_end-Port_RefreshPortDirection
 .L57:
 	; End of function
 	
-	.sdecl	'.rodata.Port.Port_kAvailablePins',data,rom,cluster('Port_kAvailablePins')
-	.sect	'.rodata.Port.Port_kAvailablePins'
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('Port_kAvailablePins')
+	.sect	'.rodata.MSR_CONST'
 	.align	2
 Port_kAvailablePins:	.type	object
 	.size	Port_kAvailablePins,82
@@ -3662,23 +3660,23 @@ Port_kAvailablePins:	.type	object
 	.half	3,8191
 	.space	12
 	.half	1023
-	.sdecl	'.zbss.Port.Port_kConfigPtr',data,cluster('Port_kConfigPtr')
-	.sect	'.zbss.Port.Port_kConfigPtr'
+	.sdecl	'.bss.MSR_VAR_CLEARED',data,cluster('Port_kConfigPtr')
+	.sect	'.bss.MSR_VAR_CLEARED'
 	.align	4
 Port_kConfigPtr:	.type	object
 	.size	Port_kConfigPtr,4
 	.space	4
 	.calls	'Port_Init','Mcal_WritePeripEndInitProtReg'
 	.calls	'Port_Init','Mcal_WriteSafetyEndInitProtReg'
-	.calls	'Port_Init','.cocofun_4'
-	.calls	'Port_Init','.cocofun_5'
-	.calls	'Port_Init','.cocofun_6'
-	.calls	'.cocofun_5','.cocofun_6'
-	.calls	'.cocofun_4','.cocofun_6'
-	.calls	'Port_Init','',16
-	.calls	'.cocofun_6','',0
-	.calls	'.cocofun_5','',0
-	.calls	'.cocofun_4','',0
+	.calls	'Port_Init','.cocofun_1'
+	.calls	'Port_Init','.cocofun_2'
+	.calls	'Port_Init','.cocofun_3'
+	.calls	'.cocofun_2','.cocofun_3'
+	.calls	'.cocofun_1','.cocofun_3'
+	.calls	'Port_Init','',24
+	.calls	'.cocofun_3','',0
+	.calls	'.cocofun_2','',0
+	.calls	'.cocofun_1','',0
 	.extern	Mcal_WriteSafetyEndInitProtReg
 	.extern	Mcal_WritePeripEndInitProtReg
 	.calls	'Port_RefreshPortDirection','',0
@@ -3698,12 +3696,12 @@ Port_kConfigPtr:	.type	object
 .L80:
 	.byte	2
 	.byte	'Port_lIOInit',0,3,1,161,12,19,1,1
-.L82:
+.L83:
 	.byte	3,4,4,4,4,4,4,4,4,4,4,4,0,0
-.L101:
+.L97:
 	.byte	2
 	.byte	'Port_lPDRInit',0,3,1,139,15,19,1,1
-.L102:
+.L99:
 	.byte	3,4,4,4,0,0,5
 	.byte	'unsigned int',0,4,7,5
 	.byte	'int',0,4,5,5
@@ -5023,20 +5021,20 @@ Port_kConfigPtr:	.type	object
 	.word	7189
 	.byte	13
 	.word	7759
-.L92:
+.L88:
 	.byte	5
 	.byte	'unsigned long int',0,4,7,14
 	.word	7769
-.L113:
+.L108:
 	.byte	15
 	.byte	'Port_lAdr',0,3,1,239,15,22
 	.word	7764
 	.byte	1,1
-.L116:
+.L110:
 	.byte	16
 	.byte	'PortNumber',0,1,239,15,45
 	.word	7790
-.L118:
+.L112:
 	.byte	4,0,14
 	.word	7769
 	.byte	15
@@ -5055,16 +5053,16 @@ Port_kConfigPtr:	.type	object
 	.word	7896
 	.byte	4,0,14
 	.word	7769
-.L107:
+.L102:
 	.byte	15
 	.byte	'Port_lIsPortAvailable',0,3,1,218,16,21
 	.word	7769
 	.byte	1,1
-.L109:
+.L104:
 	.byte	16
 	.byte	'Port',0,1,218,16,56
 	.word	7953
-.L111:
+.L106:
 	.byte	3,4,4,0,0,14
 	.word	7769
 	.byte	15
@@ -5075,16 +5073,16 @@ Port_kConfigPtr:	.type	object
 	.word	8011
 	.byte	4,0,14
 	.word	7769
-.L122:
+.L119:
 	.byte	15
 	.byte	'Port_lIsPortReadOnly',0,3,1,211,17,21
 	.word	7769
 	.byte	1,1
-.L124:
+.L121:
 	.byte	16
 	.byte	'Port',0,1,211,17,55
 	.word	8067
-.L126:
+.L123:
 	.byte	3,4,0,0,14
 	.word	7769
 	.byte	14
@@ -5129,16 +5127,16 @@ Port_kConfigPtr:	.type	object
 	.word	8331
 	.byte	4,0,14
 	.word	7769
-.L128:
+.L125:
 	.byte	15
 	.byte	'Port_lIsPortLVDSAvailable',0,3,1,224,21,21
 	.word	7769
 	.byte	1,1
-.L130:
+.L127:
 	.byte	16
 	.byte	'Port',0,1,224,21,60
 	.word	8392
-.L132:
+.L129:
 	.byte	3,4,0,0,14
 	.word	7769
 	.byte	15
@@ -5157,16 +5155,16 @@ Port_kConfigPtr:	.type	object
 	.word	8514
 	.byte	4,0,14
 	.word	7769
-.L133:
+.L130:
 	.byte	15
 	.byte	'Port_lIsPortPCSRAvailable',0,3,1,207,22,21
 	.word	7769
 	.byte	1,1
-.L135:
+.L132:
 	.byte	16
 	.byte	'Port',0,1,207,22,60
 	.word	8575
-.L137:
+.L134:
 	.byte	3,4,4,0,0,14
 	.word	7769
 	.byte	15
@@ -5185,16 +5183,16 @@ Port_kConfigPtr:	.type	object
 	.word	8699
 	.byte	4,0,14
 	.word	7769
-.L139:
+.L136:
 	.byte	15
 	.byte	'Port_lIsPortPDISCAvailable',0,3,1,204,23,21
 	.word	7769
 	.byte	1,1
-.L141:
+.L138:
 	.byte	16
 	.byte	'Port',0,1,204,23,61
 	.word	8761
-.L143:
+.L140:
 	.byte	3,4,4,0,0,14
 	.word	7769
 	.byte	15
@@ -5346,12 +5344,12 @@ Port_kConfigPtr:	.type	object
 	.word	9311
 	.byte	4,2,35,28,0,14
 	.word	9568
-.L90:
+.L86:
 	.byte	13
 	.word	9690
 	.byte	14
 	.word	7769
-.L88:
+.L84:
 	.byte	13
 	.word	9700
 	.byte	19,4,161,2,9,28,9
@@ -5397,7 +5395,7 @@ Port_kConfigPtr:	.type	object
 	.word	9837
 	.byte	4,2,35,12,0,14
 	.word	9842
-.L155:
+.L152:
 	.byte	13
 	.word	9957
 .L78:
@@ -5407,17 +5405,17 @@ Port_kConfigPtr:	.type	object
 	.word	7769
 	.byte	14
 	.word	9972
-.L99:
+.L95:
 	.byte	13
 	.word	9977
 	.byte	14
 	.word	228
-.L148:
+.L145:
 	.byte	13
 	.word	9987
 	.byte	12
 	.word	228
-.L150:
+.L147:
 	.byte	13
 	.word	9997
 	.byte	20
@@ -5973,7 +5971,7 @@ Port_kConfigPtr:	.type	object
 	.byte	10,82
 	.word	245
 	.byte	11,40,0
-.L154:
+.L151:
 	.byte	14
 	.word	12586
 	.byte	0
@@ -5991,11 +5989,11 @@ Port_kConfigPtr:	.type	object
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
 .L47:
-	.word	.L179-.L178
-.L178:
+	.word	.L176-.L175
+.L175:
 	.half	3
-	.word	.L181-.L180
-.L180:
+	.word	.L178-.L177
+.L177:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc',0
@@ -6009,12 +6007,12 @@ Port_kConfigPtr:	.type	object
 	.byte	'Platform_Types.h',0,4,0,0
 	.byte	'Std_Types.h',0,4,0,0
 	.byte	'Mcal_Compiler.h',0,2,0,0,0
-.L181:
-.L179:
+.L178:
+.L176:
 	.sdecl	'.debug_info',debug,cluster('Port_Init')
 	.sect	'.debug_info'
 .L48:
-	.word	855
+	.word	830
 	.half	3
 	.word	.L49
 	.byte	4,1
@@ -6033,353 +6031,345 @@ Port_kConfigPtr:	.type	object
 	.byte	5
 	.word	.L35,.L77
 	.byte	6
-	.word	.L80,.L35,.L81
+	.word	.L80,.L81,.L82
 	.byte	7
-	.word	.L82,.L83
+	.word	.L83,.L81,.L82
 	.byte	8
 	.byte	'DataPtr',0,1,163,12,28
-	.word	.L88,.L89
+	.word	.L84,.L85
 	.byte	8
 	.byte	'ConfigDataPtr',0,1,164,12,28
-	.word	.L90,.L91
+	.word	.L86,.L87
 	.byte	8
 	.byte	'PortNumber',0,1,166,12,28
-	.word	.L92,.L93
+	.word	.L88,.L89
 	.byte	8
 	.byte	'ConfigIndex',0,1,173,12,28
-	.word	.L92,.L94
+	.word	.L88,.L90
 	.byte	8
 	.byte	'PCSRDataPtr',0,1,175,12,28
-	.word	.L88,.L95
+	.word	.L84,.L91
 	.byte	8
 	.byte	'PDISCDataPtr',0,1,176,12,28
-	.word	.L88,.L96
+	.word	.L84,.L92
 	.byte	8
 	.byte	'counter',0,1,180,12,29
-	.word	.L92,.L97
+	.word	.L88,.L93
 	.byte	8
 	.byte	'LVDSDataPtr',0,1,181,12,29
-	.word	.L88,.L98
+	.word	.L84,.L94
 	.byte	8
 	.byte	'LVDSRegPtr',0,1,182,12,29
-	.word	.L99,.L100
+	.word	.L95,.L96
 	.byte	6
-	.word	.L101,.L35,.L81
+	.word	.L97,.L81,.L98
 	.byte	7
-	.word	.L102,.L103
+	.word	.L99,.L81,.L98
 	.byte	8
 	.byte	'PortNumber',0,1,142,15,27
-	.word	.L92,.L105
+	.word	.L88,.L100
 	.byte	8
 	.byte	'ConfigIndex',0,1,145,15,27
-	.word	.L92,.L106
+	.word	.L88,.L101
 	.byte	6
-	.word	.L107,.L2,.L108
+	.word	.L102,.L2,.L103
 	.byte	9
-	.word	.L109,.L110
+	.word	.L104,.L105
 	.byte	10
-	.word	.L111,.L112
+	.word	.L106,.L107
 	.byte	0,6
-	.word	.L113,.L114,.L115
+	.word	.L108,.L103,.L109
 	.byte	9
-	.word	.L116,.L117
+	.word	.L110,.L111
 	.byte	11
-	.word	.L118,.L114,.L115
-	.byte	0,0,0,12
-	.word	.L101,.L84,.L85
-	.byte	12
-	.word	.L101,.L86,.L104
-	.byte	6
-	.word	.L107,.L7,.L119
+	.word	.L112,.L103,.L109
+	.byte	0,0,0,6
+	.word	.L102,.L7,.L113
 	.byte	9
-	.word	.L109,.L110
+	.word	.L104,.L105
 	.byte	11
-	.word	.L111,.L7,.L119
+	.word	.L106,.L7,.L113
 	.byte	0,6
-	.word	.L113,.L120,.L121
+	.word	.L108,.L114,.L115
 	.byte	9
-	.word	.L116,.L117
-	.byte	11
-	.word	.L118,.L120,.L121
-	.byte	0,6
-	.word	.L122,.L121,.L123
-	.byte	9
-	.word	.L124,.L125
+	.word	.L110,.L111
 	.byte	10
-	.word	.L126,.L127
+	.word	.L112,.L116
 	.byte	0,6
-	.word	.L128,.L16,.L129
+	.word	.L108,.L117,.L118
 	.byte	9
-	.word	.L130,.L131
-	.byte	11
-	.word	.L132,.L16,.L129
+	.word	.L110,.L111
 	.byte	0,6
-	.word	.L133,.L19,.L134
+	.word	.L119,.L118,.L120
 	.byte	9
-	.word	.L135,.L136
+	.word	.L121,.L122
 	.byte	10
-	.word	.L137,.L138
+	.word	.L123,.L124
 	.byte	0,6
-	.word	.L139,.L24,.L140
+	.word	.L125,.L16,.L126
 	.byte	9
-	.word	.L141,.L142
+	.word	.L127,.L128
 	.byte	11
-	.word	.L143,.L24,.L140
-	.byte	0,0,0,12
-	.word	.L80,.L84,.L85
-	.byte	12
-	.word	.L80,.L86,.L87
-	.byte	0,0,0
+	.word	.L129,.L16,.L126
+	.byte	0,6
+	.word	.L130,.L19,.L131
+	.byte	9
+	.word	.L132,.L133
+	.byte	10
+	.word	.L134,.L135
+	.byte	0,6
+	.word	.L136,.L24,.L137
+	.byte	9
+	.word	.L138,.L139
+	.byte	11
+	.word	.L140,.L24,.L137
+	.byte	0,0,0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Port_Init')
 	.sect	'.debug_abbrev'
 .L49:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,29,1,49
-	.byte	16,17,1,18,1,0,0,7,11,1,49,16,85,6,0,0,8,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,9,5,0,49,16,2,6,0,0
-	.byte	10,11,0,49,16,85,6,0,0,11,11,0,49,16,17,1,18,1,0,0,12,29,0,49,16,17,1,18,1,0,0,0
+	.byte	16,17,1,18,1,0,0,7,11,1,49,16,17,1,18,1,0,0,8,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,9,5,0,49,16,2,6
+	.byte	0,0,10,11,0,49,16,85,6,0,0,11,11,0,49,16,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Port_Init')
 	.sect	'.debug_line'
 .L50:
-	.word	.L183-.L182
-.L182:
+	.word	.L180-.L179
+.L179:
 	.half	3
-	.word	.L185-.L184
-.L184:
+	.word	.L182-.L181
+.L181:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\MCAL364\\Port\\ssc\\src\\Port.c',0,0,0,0,0
-.L185:
-	.byte	5,15,7,0,5,2
+.L182:
+	.byte	5,5,7,0,5,2
 	.word	.L35
-	.byte	3,150,15,1,5,30,3,148,3,1,5,19,9
-	.half	.L157-.L35
-	.byte	3,241,124,1,5,30,3,143,3,1,5,21,9
-	.half	.L81-.L157
-	.byte	3,158,115,1,5,20,9
-	.half	.L84-.L81
-	.byte	3,212,9,1,5,6,9
-	.half	.L85-.L84
-	.byte	3,134,118,1,5,70,9
-	.half	.L86-.L85
-	.byte	3,249,9,1,5,21,9
-	.half	.L2-.L86
+	.byte	3,200,5,1,5,6,9
+	.half	.L183-.L35
+	.byte	3,90,1,5,15,9
+	.half	.L81-.L183
+	.byte	3,244,9,1,5,5,3,178,118,1,5,19,9
+	.half	.L154-.L81
+	.byte	3,211,9,1,5,21,3,173,118,1,5,30,9
+	.half	.L156-.L154
+	.byte	3,226,12,1,5,70,9
+	.half	.L184-.L156
+	.byte	3,241,124,1,5,21,9
+	.half	.L2-.L184
 	.byte	3,204,1,1,5,5,9
-	.half	.L156-.L2
-	.byte	3,187,126,1,5,7,7,9
-	.half	.L108-.L156
-	.byte	3,17,1,5,29,9
-	.half	.L114-.L108
-	.byte	3,192,0,1,5,16,1,5,27,9
-	.half	.L186-.L114
-	.byte	1,5,7,3,64,1,5,3,9
-	.half	.L187-.L186
-	.byte	3,193,0,1,5,7,9
-	.half	.L115-.L187
-	.byte	3,191,127,1,5,49,9
-	.half	.L188-.L115
+	.half	.L153-.L2
+	.byte	3,187,126,1,5,29,7,9
+	.half	.L103-.L153
+	.byte	3,209,0,1,5,16,1,5,27,9
+	.half	.L185-.L103
+	.byte	1,5,7,9
+	.half	.L109-.L185
+	.byte	3,64,1,5,49,9
+	.half	.L186-.L109
 	.byte	3,247,2,1,5,22,9
-	.half	.L189-.L188
+	.half	.L187-.L186
 	.byte	3,127,1,5,21,9
-	.half	.L190-.L189
+	.half	.L188-.L187
 	.byte	3,1,1,5,7,9
-	.half	.L191-.L190
+	.half	.L189-.L188
 	.byte	3,147,125,1,5,9,7,9
-	.half	.L192-.L191
+	.half	.L190-.L189
 	.byte	3,14,1,5,18,9
-	.half	.L6-.L192
+	.half	.L6-.L190
 	.byte	3,4,1,9
 	.half	.L5-.L6
 	.byte	3,77,1,5,70,3,127,1,5,18,7,9
-	.half	.L104-.L5
+	.half	.L98-.L5
 	.byte	3,179,125,1,5,15,9
-	.half	.L193-.L104
+	.half	.L191-.L98
 	.byte	3,111,1,5,18,9
-	.half	.L158-.L193
-	.byte	3,53,1,5,33,9
-	.half	.L159-.L158
-	.byte	3,109,1,9
-	.half	.L160-.L159
+	.half	.L155-.L191
+	.byte	3,53,1,9
+	.half	.L157-.L155
+	.byte	3,92,1,5,33,9
+	.half	.L192-.L157
+	.byte	3,17,1,9
+	.half	.L158-.L192
 	.byte	3,111,1,9
-	.half	.L164-.L160
+	.half	.L162-.L158
 	.byte	3,17,1,5,62,9
-	.half	.L165-.L164
+	.half	.L163-.L162
 	.byte	3,14,1,5,83,9
-	.half	.L166-.L165
+	.half	.L164-.L163
 	.byte	3,5,1,5,69,9
-	.half	.L194-.L166
+	.half	.L193-.L164
 	.byte	1,5,21,9
-	.half	.L7-.L194
+	.half	.L7-.L193
 	.byte	3,245,3,1,5,5,9
-	.half	.L161-.L7
+	.half	.L159-.L7
 	.byte	3,147,124,1,5,24,7,9
-	.half	.L119-.L161
-	.byte	3,4,1,5,39,9
-	.half	.L195-.L119
-	.byte	1,5,61,9
-	.half	.L196-.L195
+	.half	.L113-.L159
+	.byte	3,4,1,5,61,9
+	.half	.L194-.L113
+	.byte	1,5,16,3,245,2,1,5,24,9
+	.half	.L115-.L194
+	.byte	3,139,125,1,5,39,9
+	.half	.L195-.L115
 	.byte	1,5,59,9
-	.half	.L197-.L196
-	.byte	1,5,16,9
-	.half	.L120-.L197
-	.byte	3,245,2,1,5,29,9
-	.half	.L198-.L120
-	.byte	1,5,27,9
-	.half	.L199-.L198
-	.byte	1,5,3,9
-	.half	.L200-.L199
-	.byte	3,1,1,5,22,9
-	.half	.L121-.L200
-	.byte	3,236,1,1,5,13,9
-	.half	.L201-.L121
+	.half	.L196-.L195
+	.byte	1,5,29,9
+	.half	.L117-.L196
+	.byte	3,245,2,1,5,27,9
+	.half	.L197-.L117
+	.byte	1,5,22,9
+	.half	.L118-.L197
+	.byte	3,237,1,1,5,13,9
+	.half	.L198-.L118
 	.byte	1,5,46,7,9
-	.half	.L202-.L201
+	.half	.L199-.L198
 	.byte	1,5,79,1,5,15,9
-	.half	.L11-.L202
+	.half	.L11-.L199
 	.byte	3,82,1,5,7,9
 	.half	.L12-.L11
 	.byte	3,240,123,1,5,22,7,9
-	.half	.L123-.L12
+	.half	.L120-.L12
 	.byte	3,5,1,5,31,9
-	.half	.L203-.L123
+	.half	.L200-.L120
 	.byte	3,1,1,5,7,9
-	.half	.L13-.L203
+	.half	.L13-.L200
 	.byte	3,18,1,5,23,9
-	.half	.L204-.L13
+	.half	.L201-.L13
 	.byte	3,118,1,5,34,9
-	.half	.L205-.L204
+	.half	.L202-.L201
 	.byte	3,15,1,5,32,9
-	.half	.L206-.L205
+	.half	.L203-.L202
 	.byte	1,5,68,9
-	.half	.L207-.L206
+	.half	.L204-.L203
 	.byte	3,143,5,1,5,40,9
-	.half	.L208-.L207
+	.half	.L205-.L204
 	.byte	1,5,7,9
-	.half	.L209-.L208
+	.half	.L206-.L205
 	.byte	3,249,122,1,5,36,7,9
-	.half	.L210-.L209
+	.half	.L207-.L206
 	.byte	3,5,1,5,34,9
-	.half	.L211-.L210
+	.half	.L208-.L207
 	.byte	1,5,23,9
-	.half	.L14-.L211
+	.half	.L14-.L208
 	.byte	3,130,5,1,5,14,3,128,123,1,5,40,9
-	.half	.L212-.L14
+	.half	.L209-.L14
 	.byte	3,128,5,1,5,7,9
-	.half	.L213-.L212
+	.half	.L210-.L209
 	.byte	3,132,123,1,5,36,7,9
-	.half	.L214-.L213
+	.half	.L211-.L210
 	.byte	3,5,1,5,34,9
-	.half	.L215-.L214
+	.half	.L212-.L211
 	.byte	1,5,23,9
-	.half	.L15-.L215
+	.half	.L15-.L212
 	.byte	3,247,4,1,5,14,3,139,123,1,5,40,9
-	.half	.L216-.L15
+	.half	.L213-.L15
 	.byte	3,245,4,1,5,7,9
-	.half	.L217-.L216
+	.half	.L214-.L213
 	.byte	3,143,123,1,5,36,7,9
-	.half	.L218-.L217
+	.half	.L215-.L214
 	.byte	3,2,1,5,34,9
-	.half	.L219-.L218
+	.half	.L216-.L215
 	.byte	1,5,21,9
-	.half	.L16-.L219
+	.half	.L16-.L216
 	.byte	3,140,8,1,5,13,9
-	.half	.L220-.L16
+	.half	.L217-.L16
 	.byte	1,5,45,7,9
-	.half	.L221-.L220
+	.half	.L218-.L217
 	.byte	1,5,49,3,1,1,5,15,9
-	.half	.L17-.L221
+	.half	.L17-.L218
 	.byte	3,179,127,1,5,44,9
-	.half	.L222-.L17
-	.byte	1,5,15,3,1,1,5,55,9
-	.half	.L223-.L222
+	.half	.L219-.L17
+	.byte	1,5,15,9
+	.half	.L220-.L219
+	.byte	3,1,1,5,55,9
+	.half	.L221-.L220
 	.byte	3,127,1,5,7,9
-	.half	.L18-.L223
+	.half	.L18-.L221
 	.byte	3,202,120,1,5,73,7,9
-	.half	.L129-.L18
+	.half	.L126-.L18
 	.byte	3,17,1,5,71,9
-	.half	.L169-.L129
+	.half	.L167-.L126
 	.byte	3,7,1,5,43,9
-	.half	.L20-.L169
+	.half	.L20-.L167
 	.byte	3,5,1,5,29,9
-	.half	.L224-.L20
+	.half	.L222-.L20
 	.byte	3,251,8,1,5,11,9
-	.half	.L225-.L224
+	.half	.L223-.L222
 	.byte	3,133,119,1,5,13,7,9
-	.half	.L226-.L225
+	.half	.L224-.L223
 	.byte	3,11,1,5,21,9
-	.half	.L21-.L226
+	.half	.L21-.L224
 	.byte	3,3,1,5,22,9
-	.half	.L227-.L21
+	.half	.L225-.L21
 	.byte	3,1,1,5,71,3,108,1,5,21,7,9
-	.half	.L19-.L227
+	.half	.L19-.L225
 	.byte	3,219,8,1,5,13,9
-	.half	.L228-.L19
+	.half	.L226-.L19
 	.byte	1,5,14,7,9
-	.half	.L229-.L228
+	.half	.L227-.L226
 	.byte	3,83,1,5,47,9
-	.half	.L168-.L229
+	.half	.L166-.L227
 	.byte	3,1,1,5,49,3,45,1,5,14,9
-	.half	.L22-.L168
+	.half	.L22-.L166
 	.byte	3,177,127,1,5,43,9
-	.half	.L230-.L22
+	.half	.L228-.L22
 	.byte	1,5,14,9
-	.half	.L231-.L230
+	.half	.L229-.L228
 	.byte	3,1,1,5,54,9
-	.half	.L232-.L231
+	.half	.L230-.L229
 	.byte	3,127,1,5,7,9
-	.half	.L23-.L232
+	.half	.L23-.L230
 	.byte	3,148,120,1,5,9,7,9
-	.half	.L134-.L23
+	.half	.L131-.L23
 	.byte	3,31,1,5,72,9
-	.half	.L171-.L134
+	.half	.L169-.L131
 	.byte	3,114,1,5,9,9
-	.half	.L233-.L171
+	.half	.L231-.L169
 	.byte	3,14,1,5,21,9
-	.half	.L24-.L233
+	.half	.L24-.L231
 	.byte	3,152,9,1,5,13,9
-	.half	.L234-.L24
+	.half	.L232-.L24
 	.byte	1,5,14,7,9
-	.half	.L235-.L234
+	.half	.L233-.L232
 	.byte	3,196,0,1,5,50,9
-	.half	.L236-.L235
+	.half	.L234-.L233
 	.byte	3,189,127,1,5,15,9
-	.half	.L25-.L236
+	.half	.L25-.L234
 	.byte	3,34,1,5,44,9
-	.half	.L237-.L25
+	.half	.L235-.L25
 	.byte	1,5,55,9
-	.half	.L238-.L237
+	.half	.L236-.L235
 	.byte	1,5,7,9
-	.half	.L26-.L238
+	.half	.L26-.L236
 	.byte	3,203,118,1,5,9,7,9
-	.half	.L140-.L26
+	.half	.L137-.L26
 	.byte	3,31,1,5,73,9
-	.half	.L172-.L140
+	.half	.L170-.L137
 	.byte	3,114,1,5,9,9
-	.half	.L239-.L172
+	.half	.L237-.L170
 	.byte	3,14,1,5,18,9
-	.half	.L27-.L239
+	.half	.L27-.L237
 	.byte	3,4,1,5,81,9
 	.half	.L10-.L27
 	.byte	3,136,126,1,5,69,9
-	.half	.L240-.L10
+	.half	.L238-.L10
 	.byte	1,5,1,9
-	.half	.L87-.L240
+	.half	.L82-.L238
 	.byte	3,230,120,1,7,9
-	.half	.L52-.L87
+	.half	.L52-.L82
 	.byte	0,1,1
-.L183:
+.L180:
 	.sdecl	'.debug_ranges',debug,cluster('Port_Init')
 	.sect	'.debug_ranges'
 .L51:
 	.word	-1,.L35,0,.L52-.L35,0,0
-.L83:
-	.word	-1,.L35,0,.L81-.L35,.L84-.L35,.L85-.L35,.L86-.L35,.L87-.L35,0,0
-.L103:
-	.word	-1,.L35,0,.L81-.L35,.L84-.L35,.L85-.L35,.L86-.L35,.L104-.L35,0,0
-.L112:
-	.word	-1,.L35,.L2-.L35,.L108-.L35,-1,.L41,0,.L62-.L41,0,0
-.L127:
-	.word	-1,.L35,.L121-.L35,.L123-.L35,-1,.L39,0,.L67-.L39,0,0
-.L138:
-	.word	-1,.L35,.L19-.L35,.L134-.L35,-1,.L37,0,.L72-.L37,0,0
+.L107:
+	.word	-1,.L35,.L2-.L35,.L103-.L35,-1,.L41,0,.L62-.L41,0,0
+.L116:
+	.word	-1,.L35,.L114-.L35,.L115-.L35,.L117-.L35,.L118-.L35,0,0
+.L124:
+	.word	-1,.L35,.L118-.L35,.L120-.L35,-1,.L39,0,.L67-.L39,0,0
+.L135:
+	.word	-1,.L35,.L19-.L35,.L131-.L35,-1,.L37,0,.L72-.L37,0,0
 	.sdecl	'.debug_info',debug,cluster('Port_RefreshPortDirection')
 	.sect	'.debug_info'
 .L53:
@@ -6395,30 +6385,30 @@ Port_kConfigPtr:	.type	object
 	.word	.L44
 	.byte	3
 	.byte	'Port_RefreshPortDirection',0,1,226,7,6,1,1,1
-	.word	.L43,.L144,.L42
+	.word	.L43,.L141,.L42
 	.byte	4
-	.word	.L43,.L144
+	.word	.L43,.L141
 	.byte	5
 	.byte	'LoopCtr',0,1,228,7,25
-	.word	.L92,.L145
+	.word	.L88,.L142
 	.byte	5
 	.byte	'PortNumber',0,1,230,7,25
-	.word	.L92,.L146
+	.word	.L88,.L143
 	.byte	5
 	.byte	'ConfigIndex',0,1,231,7,25
-	.word	.L92,.L147
+	.word	.L88,.L144
 	.byte	5
 	.byte	'IocrDataPtr',0,1,238,7,26
-	.word	.L148,.L149
+	.word	.L145,.L146
 	.byte	5
 	.byte	'IocrRegPtr',0,1,239,7,26
-	.word	.L150,.L151
+	.word	.L147,.L148
 	.byte	6
-	.word	.L107,.L28,.L152
+	.word	.L102,.L28,.L149
 	.byte	7
-	.word	.L109,.L153
+	.word	.L104,.L150
 	.byte	8
-	.word	.L111,.L28,.L152
+	.word	.L106,.L28,.L149
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Port_RefreshPortDirection')
 	.sect	'.debug_abbrev'
@@ -6429,91 +6419,91 @@ Port_kConfigPtr:	.type	object
 	.sdecl	'.debug_line',debug,cluster('Port_RefreshPortDirection')
 	.sect	'.debug_line'
 .L55:
+	.word	.L240-.L239
+.L239:
+	.half	3
 	.word	.L242-.L241
 .L241:
-	.half	3
-	.word	.L244-.L243
-.L243:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\MCAL364\\Port\\ssc\\src\\Port.c',0,0,0,0,0
-.L244:
+.L242:
 	.byte	5,16,7,0,5,2
 	.word	.L43
 	.byte	3,131,8,1,5,30,3,130,10,1,5,17,9
-	.half	.L173-.L43
-	.byte	3,255,117,1,5,30,3,129,10,1,5,21,9
-	.half	.L174-.L173
+	.half	.L171-.L43
+	.byte	3,255,117,1,5,21,3,36,1,5,30,9
+	.half	.L172-.L171
+	.byte	3,221,9,1,5,21,9
+	.half	.L243-.L172
 	.byte	3,163,118,1,5,52,9
-	.half	.L245-.L174
+	.half	.L244-.L243
 	.byte	3,134,1,1,5,21,9
-	.half	.L28-.L245
+	.half	.L28-.L244
 	.byte	3,185,7,1,5,13,9
-	.half	.L246-.L28
+	.half	.L245-.L28
 	.byte	1,5,15,7,9
-	.half	.L247-.L246
+	.half	.L246-.L245
 	.byte	3,82,1,5,53,9
-	.half	.L248-.L247
+	.half	.L247-.L246
 	.byte	1,5,44,9
-	.half	.L249-.L248
+	.half	.L248-.L247
 	.byte	1,5,80,9
-	.half	.L250-.L249
+	.half	.L249-.L248
 	.byte	1,5,79,3,46,1,5,15,9
-	.half	.L29-.L250
+	.half	.L29-.L249
 	.byte	3,174,127,1,5,44,9
-	.half	.L251-.L29
-	.byte	1,5,15,3,1,1,5,55,9
+	.half	.L250-.L29
+	.byte	1,5,15,9
+	.half	.L251-.L250
+	.byte	3,1,1,5,55,9
 	.half	.L252-.L251
 	.byte	3,127,1,5,7,9
 	.half	.L30-.L252
 	.byte	3,252,119,1,5,36,7,9
-	.half	.L152-.L30
+	.half	.L149-.L30
 	.byte	3,23,1,5,58,9
-	.half	.L253-.L152
-	.byte	1,5,56,9
+	.half	.L253-.L149
+	.byte	1,5,16,3,203,7,1,5,56,9
 	.half	.L254-.L253
-	.byte	1,5,16,9
-	.half	.L175-.L254
-	.byte	3,203,7,1,5,29,9
-	.half	.L255-.L175
-	.byte	1,5,27,9
+	.byte	3,181,120,1,5,29,9
+	.half	.L173-.L254
+	.byte	3,203,7,1,5,58,3,183,121,1,5,27,9
+	.half	.L255-.L173
+	.byte	3,201,6,1,5,17,9
 	.half	.L256-.L255
-	.byte	1,5,73,9
-	.half	.L257-.L256
-	.byte	3,239,120,1,5,20,9
-	.half	.L176-.L257
-	.byte	3,109,1,5,17,9
-	.half	.L177-.L176
-	.byte	3,44,1,5,58,3,47,1,5,22,9
-	.half	.L32-.L177
-	.byte	3,218,8,1,5,49,3,1,1,9
-	.half	.L258-.L32
+	.byte	3,136,121,1,5,73,9
+	.half	.L174-.L256
+	.byte	3,103,1,5,22,9
+	.half	.L32-.L174
+	.byte	3,162,9,1,5,49,3,1,1,9
+	.half	.L257-.L32
 	.byte	3,127,1,5,59,9
-	.half	.L259-.L258
+	.half	.L258-.L257
 	.byte	1,5,11,9
-	.half	.L260-.L259
+	.half	.L259-.L258
 	.byte	3,253,118,1,5,29,7,9
-	.half	.L261-.L260
+	.half	.L260-.L259
 	.byte	3,20,1,5,27,9
-	.half	.L262-.L261
+	.half	.L261-.L260
 	.byte	1,5,18,9
-	.half	.L33-.L262
+	.half	.L33-.L261
 	.byte	3,20,1,5,21,3,113,1,5,22,9
-	.half	.L263-.L33
+	.half	.L262-.L33
 	.byte	3,2,1,5,58,3,14,1,5,20,7,9
-	.half	.L264-.L263
+	.half	.L263-.L262
 	.byte	3,1,1,5,17,9
-	.half	.L31-.L264
+	.half	.L31-.L263
 	.byte	3,2,1,5,52,3,1,1,5,1,7,9
-	.half	.L265-.L31
+	.half	.L264-.L31
 	.byte	3,2,1,7,9
-	.half	.L57-.L265
+	.half	.L57-.L264
 	.byte	0,1,1
-.L242:
+.L240:
 	.sdecl	'.debug_ranges',debug,cluster('Port_RefreshPortDirection')
 	.sect	'.debug_ranges'
 .L56:
 	.word	-1,.L43,0,.L57-.L43,0,0
-	.sdecl	'.debug_info',debug,cluster('.cocofun_4')
+	.sdecl	'.debug_info',debug,cluster('.cocofun_1')
 	.sect	'.debug_info'
 .L58:
 	.word	177
@@ -6527,38 +6517,40 @@ Port_kConfigPtr:	.type	object
 	.byte	2
 	.word	.L44
 	.byte	3
-	.byte	'.cocofun_4',0,1,163,5,6,1
+	.byte	'.cocofun_1',0,1,163,5,6,1
 	.word	.L41,.L62,.L40
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_4')
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_1')
 	.sect	'.debug_abbrev'
 .L59:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
 	.byte	17,1,18,1,64,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('.cocofun_4')
+	.sdecl	'.debug_line',debug,cluster('.cocofun_1')
 	.sect	'.debug_line'
 .L60:
-	.word	.L267-.L266
-.L266:
+	.word	.L266-.L265
+.L265:
 	.half	3
-	.word	.L269-.L268
-.L268:
+	.word	.L268-.L267
+.L267:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\MCAL364\\Port\\ssc\\src\\Port.c',0,0,0,0,0
-.L269:
+.L268:
 	.byte	5,21,7,0,5,2
 	.word	.L41
 	.byte	3,231,16,1,5,13,9
-	.half	.L270-.L41
+	.half	.L269-.L41
 	.byte	1,5,15,7,9
-	.half	.L271-.L270
+	.half	.L270-.L269
 	.byte	3,82,1,5,80,9
-	.half	.L272-.L271
+	.half	.L271-.L270
 	.byte	1,5,79,3,46,1,5,15,9
-	.half	.L3-.L272
+	.half	.L3-.L271
 	.byte	3,174,127,1,5,44,9
-	.half	.L273-.L3
-	.byte	1,5,15,3,1,1,5,55,9
+	.half	.L272-.L3
+	.byte	1,5,15,9
+	.half	.L273-.L272
+	.byte	3,1,1,5,55,9
 	.half	.L274-.L273
 	.byte	3,127,1,5,79,9
 	.half	.L4-.L274
@@ -6567,28 +6559,30 @@ Port_kConfigPtr:	.type	object
 	.byte	0,1,1,5,21,0,5,2
 	.word	.L41
 	.byte	3,231,16,1,5,13,9
-	.half	.L270-.L41
+	.half	.L269-.L41
 	.byte	1,5,15,7,9
-	.half	.L271-.L270
+	.half	.L270-.L269
 	.byte	3,82,1,5,80,9
-	.half	.L272-.L271
+	.half	.L271-.L270
 	.byte	1,5,79,3,46,1,5,15,9
-	.half	.L3-.L272
+	.half	.L3-.L271
 	.byte	3,174,127,1,5,44,9
-	.half	.L273-.L3
-	.byte	1,5,15,3,1,1,5,55,9
+	.half	.L272-.L3
+	.byte	1,5,15,9
+	.half	.L273-.L272
+	.byte	3,1,1,5,55,9
 	.half	.L274-.L273
 	.byte	3,127,1,5,79,9
 	.half	.L4-.L274
 	.byte	3,210,0,1,7,9
 	.half	.L62-.L4
 	.byte	0,1,1
-.L267:
-	.sdecl	'.debug_ranges',debug,cluster('.cocofun_4')
+.L266:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_1')
 	.sect	'.debug_ranges'
 .L61:
 	.word	-1,.L41,0,.L62-.L41,0,0
-	.sdecl	'.debug_info',debug,cluster('.cocofun_5')
+	.sdecl	'.debug_info',debug,cluster('.cocofun_2')
 	.sect	'.debug_info'
 .L63:
 	.word	177
@@ -6602,15 +6596,15 @@ Port_kConfigPtr:	.type	object
 	.byte	2
 	.word	.L44
 	.byte	3
-	.byte	'.cocofun_5',0,1,163,5,6,1
+	.byte	'.cocofun_2',0,1,163,5,6,1
 	.word	.L39,.L67,.L38
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_5')
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_2')
 	.sect	'.debug_abbrev'
 .L64:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
 	.byte	17,1,18,1,64,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('.cocofun_5')
+	.sdecl	'.debug_line',debug,cluster('.cocofun_2')
 	.sect	'.debug_line'
 .L65:
 	.word	.L276-.L275
@@ -6624,22 +6618,22 @@ Port_kConfigPtr:	.type	object
 	.byte	5,15,7,0,5,2
 	.word	.L39
 	.byte	3,178,17,1,5,80,9
-	.half	.L167-.L39
+	.half	.L165-.L39
 	.byte	1,9
-	.half	.L67-.L167
+	.half	.L67-.L165
 	.byte	0,1,1,5,15,0,5,2
 	.word	.L39
 	.byte	3,178,17,1,5,47,9
-	.half	.L167-.L39
+	.half	.L165-.L39
 	.byte	3,236,6,1,5,80,3,148,121,1,7,9
-	.half	.L67-.L167
+	.half	.L67-.L165
 	.byte	0,1,1
 .L276:
-	.sdecl	'.debug_ranges',debug,cluster('.cocofun_5')
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_2')
 	.sect	'.debug_ranges'
 .L66:
 	.word	-1,.L39,0,.L67-.L39,0,0
-	.sdecl	'.debug_info',debug,cluster('.cocofun_6')
+	.sdecl	'.debug_info',debug,cluster('.cocofun_3')
 	.sect	'.debug_info'
 .L68:
 	.word	177
@@ -6653,15 +6647,15 @@ Port_kConfigPtr:	.type	object
 	.byte	2
 	.word	.L44
 	.byte	3
-	.byte	'.cocofun_6',0,1,163,5,6,1
+	.byte	'.cocofun_3',0,1,163,5,6,1
 	.word	.L37,.L72,.L36
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_6')
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_3')
 	.sect	'.debug_abbrev'
 .L69:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
 	.byte	17,1,18,1,64,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('.cocofun_6')
+	.sdecl	'.debug_line',debug,cluster('.cocofun_3')
 	.sect	'.debug_line'
 .L70:
 	.word	.L280-.L279
@@ -6714,7 +6708,7 @@ Port_kConfigPtr:	.type	object
 	.half	.L72-.L284
 	.byte	0,1,1
 .L280:
-	.sdecl	'.debug_ranges',debug,cluster('.cocofun_6')
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_3')
 	.sect	'.debug_ranges'
 .L71:
 	.word	-1,.L37,0,.L72-.L37,0,0
@@ -6731,7 +6725,7 @@ Port_kConfigPtr:	.type	object
 	.word	.L44
 	.byte	3
 	.byte	'Port_kAvailablePins',0,1,231,2,21
-	.word	.L154
+	.word	.L151
 	.byte	5,3
 	.word	Port_kAvailablePins
 	.byte	0
@@ -6752,7 +6746,7 @@ Port_kConfigPtr:	.type	object
 	.word	.L44
 	.byte	3
 	.byte	'Port_kConfigPtr',0,1,172,3,33
-	.word	.L155
+	.word	.L152
 	.byte	5,3
 	.word	Port_kConfigPtr
 	.byte	0
@@ -6760,21 +6754,21 @@ Port_kConfigPtr:	.type	object
 	.sect	'.debug_abbrev'
 .L76:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
-	.sdecl	'.debug_loc',debug,cluster('.cocofun_4')
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_1')
 	.sect	'.debug_loc'
 .L40:
 	.word	-1,.L41,0,.L62-.L41
 	.half	2
 	.byte	138,0
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('.cocofun_5')
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_2')
 	.sect	'.debug_loc'
 .L38:
 	.word	-1,.L39,0,.L67-.L39
 	.half	2
 	.byte	138,0
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('.cocofun_6')
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_3')
 	.sect	'.debug_loc'
 .L36:
 	.word	-1,.L37,0,.L72-.L37
@@ -6783,228 +6777,225 @@ Port_kConfigPtr:	.type	object
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Port_Init')
 	.sect	'.debug_loc'
-.L91:
-	.word	-1,.L35,.L120-.L35,.L11-.L35
+.L87:
+	.word	-1,.L35,.L117-.L35,.L11-.L35
 	.half	1
-	.byte	108
+	.byte	109
 	.word	.L37-.L35,.L72-.L35
 	.half	1
-	.byte	108
-	.word	.L167-.L35,.L67-.L35
+	.byte	109
+	.word	.L165-.L35,.L67-.L35
 	.half	1
-	.byte	108
+	.byte	109
 	.word	.L12-.L35,.L20-.L35
 	.half	1
-	.byte	108
+	.byte	109
 	.word	0,0
-.L94:
+.L90:
 	.word	-1,.L35,.L37-.L35,.L72-.L35
 	.half	1
 	.byte	88
 	.word	.L41-.L35,.L62-.L35
 	.half	1
 	.byte	88
-	.word	.L158-.L35,.L11-.L35
+	.word	.L155-.L35,.L11-.L35
 	.half	1
 	.byte	88
-	.word	.L167-.L35,.L67-.L35
+	.word	.L165-.L35,.L67-.L35
 	.half	1
 	.byte	88
-	.word	.L12-.L35,.L168-.L35
+	.word	.L12-.L35,.L166-.L35
 	.half	1
 	.byte	88
 	.word	.L22-.L35,.L77-.L35
 	.half	1
 	.byte	88
 	.word	0,0
-.L106:
+.L101:
 	.word	-1,.L35,.L37-.L35,.L72-.L35
 	.half	1
 	.byte	88
 	.word	.L41-.L35,.L62-.L35
 	.half	1
 	.byte	88
-	.word	.L157-.L35,.L158-.L35
+	.word	.L154-.L35,.L155-.L35
 	.half	1
 	.byte	88
 	.word	0,0
 .L79:
-	.word	-1,.L35,0,.L156-.L35
+	.word	-1,.L35,0,.L153-.L35
 	.half	1
 	.byte	100
 	.word	0,0
-.L89:
+.L85:
 	.word	0,0
-.L98:
+.L94:
 	.word	-1,.L35,.L37-.L35,.L72-.L35
 	.half	1
-	.byte	109
+	.byte	108
 	.word	.L41-.L35,.L62-.L35
 	.half	1
-	.byte	109
-	.word	.L164-.L35,.L11-.L35
+	.byte	108
+	.word	.L162-.L35,.L11-.L35
 	.half	1
-	.byte	109
-	.word	.L167-.L35,.L67-.L35
+	.byte	108
+	.word	.L165-.L35,.L67-.L35
 	.half	1
-	.byte	109
-	.word	.L12-.L35,.L168-.L35
+	.byte	108
+	.word	.L12-.L35,.L166-.L35
 	.half	1
-	.byte	109
+	.byte	108
 	.word	.L22-.L35,.L77-.L35
 	.half	1
-	.byte	109
+	.byte	108
 	.word	0,0
-.L100:
-	.word	-1,.L35,.L169-.L35,.L19-.L35
+.L96:
+	.word	-1,.L35,.L167-.L35,.L19-.L35
 	.half	1
 	.byte	111
-	.word	.L170-.L35,.L21-.L35
+	.word	.L168-.L35,.L21-.L35
 	.half	1
 	.byte	100
 	.word	0,0
-.L95:
-	.word	-1,.L35,.L160-.L35,.L161-.L35
+.L91:
+	.word	-1,.L35,.L158-.L35,.L159-.L35
 	.half	1
 	.byte	98
 	.word	.L37-.L35,.L72-.L35
 	.half	2
-	.byte	145,124
+	.byte	145,116
 	.word	.L41-.L35,.L62-.L35
 	.half	2
-	.byte	145,124
-	.word	.L165-.L35,.L11-.L35
+	.byte	145,116
+	.word	.L163-.L35,.L11-.L35
 	.half	2
-	.byte	145,124
-	.word	.L167-.L35,.L67-.L35
+	.byte	145,116
+	.word	.L165-.L35,.L67-.L35
 	.half	2
-	.byte	145,124
-	.word	.L12-.L35,.L168-.L35
+	.byte	145,116
+	.word	.L12-.L35,.L166-.L35
 	.half	2
-	.byte	145,124
-	.word	.L171-.L35,.L24-.L35
+	.byte	145,116
+	.word	.L169-.L35,.L24-.L35
 	.half	1
 	.byte	111
 	.word	.L22-.L35,.L77-.L35
 	.half	2
-	.byte	145,124
+	.byte	145,116
 	.word	0,0
-.L96:
-	.word	-1,.L35,.L162-.L35,.L163-.L35
+.L92:
+	.word	-1,.L35,.L160-.L35,.L161-.L35
 	.half	1
 	.byte	111
 	.word	.L37-.L35,.L72-.L35
 	.half	2
-	.byte	145,120
+	.byte	145,112
 	.word	.L41-.L35,.L62-.L35
 	.half	2
-	.byte	145,120
-	.word	.L166-.L35,.L11-.L35
+	.byte	145,112
+	.word	.L164-.L35,.L11-.L35
 	.half	2
-	.byte	145,120
-	.word	.L167-.L35,.L67-.L35
+	.byte	145,112
+	.word	.L165-.L35,.L67-.L35
 	.half	2
-	.byte	145,120
-	.word	.L12-.L35,.L168-.L35
+	.byte	145,112
+	.word	.L12-.L35,.L166-.L35
 	.half	2
-	.byte	145,120
+	.byte	145,112
 	.word	.L22-.L35,.L77-.L35
 	.half	2
-	.byte	145,120
-	.word	.L172-.L35,.L27-.L35
+	.byte	145,112
+	.word	.L170-.L35,.L27-.L35
 	.half	1
 	.byte	111
 	.word	0,0
-.L110:
+.L105:
 	.word	0,0
-.L125:
+.L122:
 	.word	0,0
-.L131:
+.L128:
 	.word	0,0
-.L136:
+.L133:
 	.word	0,0
-.L142:
+.L139:
 	.word	0,0
-.L93:
+.L89:
 	.word	-1,.L35,.L37-.L35,.L72-.L35
 	.half	1
 	.byte	89
 	.word	.L41-.L35,.L62-.L35
 	.half	1
 	.byte	89
-	.word	.L159-.L35,.L11-.L35
+	.word	.L157-.L35,.L11-.L35
 	.half	1
 	.byte	89
-	.word	.L167-.L35,.L67-.L35
+	.word	.L165-.L35,.L67-.L35
 	.half	1
 	.byte	89
-	.word	.L12-.L35,.L168-.L35
+	.word	.L12-.L35,.L166-.L35
 	.half	1
 	.byte	89
 	.word	.L22-.L35,.L77-.L35
 	.half	1
 	.byte	89
 	.word	0,0
-.L105:
+.L100:
 	.word	-1,.L35,.L37-.L35,.L72-.L35
 	.half	1
 	.byte	89
 	.word	.L41-.L35,.L62-.L35
 	.half	1
 	.byte	89
-	.word	.L81-.L35,.L159-.L35
+	.word	.L156-.L35,.L157-.L35
 	.half	1
 	.byte	89
 	.word	0,0
-.L117:
+.L111:
 	.word	0,0
 .L34:
-	.word	-1,.L35,0,.L86-.L35
+	.word	-1,.L35,0,.L81-.L35
 	.half	2
 	.byte	138,0
-	.word	.L86-.L35,.L77-.L35
+	.word	.L81-.L35,.L77-.L35
 	.half	2
-	.byte	138,16
+	.byte	138,24
 	.word	.L77-.L35,.L77-.L35
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L97:
+.L93:
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Port_RefreshPortDirection')
 	.sect	'.debug_loc'
-.L147:
-	.word	-1,.L43,.L174-.L43,.L144-.L43
+.L144:
+	.word	-1,.L43,.L172-.L43,.L141-.L43
 	.half	1
-	.byte	82
+	.byte	83
 	.word	0,0
-.L149:
-	.word	-1,.L43,.L175-.L43,.L31-.L43
+.L146:
+	.word	-1,.L43,.L173-.L43,.L31-.L43
 	.half	1
 	.byte	101
 	.word	0,0
-.L151:
-	.word	-1,.L43,.L176-.L43,.L32-.L43
-	.half	1
-	.byte	95
-	.word	.L177-.L43,.L31-.L43
+.L148:
+	.word	-1,.L43,.L32-.L43,.L31-.L43
 	.half	1
 	.byte	102
 	.word	0,0
-.L145:
-	.word	-1,.L43,.L32-.L43,.L31-.L43
-	.half	1
-	.byte	95
+.L142:
+	.word	-1,.L43,.L174-.L43,.L31-.L43
+	.half	5
+	.byte	144,32,157,32,0
 	.word	0,0
-.L153:
+.L150:
 	.word	0,0
-.L146:
-	.word	-1,.L43,.L173-.L43,.L144-.L43
+.L143:
+	.word	-1,.L43,.L171-.L43,.L141-.L43
 	.half	1
-	.byte	81
+	.byte	82
 	.word	0,0
 .L42:
-	.word	-1,.L43,0,.L144-.L43
+	.word	-1,.L43,0,.L141-.L43
 	.half	2
 	.byte	138,0
 	.word	0,0
@@ -7020,14 +7011,14 @@ Port_kConfigPtr:	.type	object
 	.word	36
 	.word	.L285,.L35,.L77-.L35
 	.byte	4
-	.word	(.L86-.L35)/2
-	.byte	19,16,22,26,3,19,138,16,4
-	.word	(.L77-.L86)/2
+	.word	(.L81-.L35)/2
+	.byte	19,24,22,26,3,19,138,24,4
+	.word	(.L77-.L81)/2
 	.byte	19,0,8,26,0,0
 	.sdecl	'.debug_frame',debug,cluster('Port_RefreshPortDirection')
 	.sect	'.debug_frame'
 	.word	16
-	.word	.L285,.L43,.L144-.L43
+	.word	.L285,.L43,.L141-.L43
 	.byte	8,19,0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
@@ -7036,17 +7027,17 @@ Port_kConfigPtr:	.type	object
 	.word	-1
 	.byte	3,0,2,1,40,12,26,0,9,40,27,155,0,7,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36
 	.byte	8,37,8,38,8,39,0
-	.sdecl	'.debug_frame',debug,cluster('.cocofun_6')
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_3')
 	.sect	'.debug_frame'
 	.word	24
 	.word	.L286,.L37,.L72-.L37
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
-	.sdecl	'.debug_frame',debug,cluster('.cocofun_5')
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_2')
 	.sect	'.debug_frame'
 	.word	24
 	.word	.L286,.L39,.L67-.L39
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
-	.sdecl	'.debug_frame',debug,cluster('.cocofun_4')
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_1')
 	.sect	'.debug_frame'
 	.word	24
 	.word	.L286,.L41,.L62-.L41

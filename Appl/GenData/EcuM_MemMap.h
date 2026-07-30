@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_MemMap.h
- *   Generation Time: 2026-07-29 10:31:07
+ *   Generation Time: 2026-07-30 20:42:32
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -64,7 +64,8 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_PBCFG_GLOBALROOT_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_PBCFG_CONST/MSR_PBCFG_CONST */
+# pragma section farrom "MSR_PBCFG_CONST" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_PBCFG_GLOBALROOT /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -79,7 +80,8 @@
 # endif
 # undef ECUM_PBCFG_GLOBALROOT_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_PBCFG_CONST/MSR_PBCFG_CONST */
+# pragma section farrom restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_PBCFG_GLOBALROOT /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -93,7 +95,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NOCACHE_CLEARED_UNSPECIFIED_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NOCACHE_CLEARED_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -108,7 +113,10 @@
 # endif
 # undef ECUM_VAR_NOCACHE_CLEARED_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NOCACHE_CLEARED_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -122,7 +130,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_FAST_INIT_64_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_FAST_INIT_64 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -137,7 +148,10 @@
 # endif
 # undef ECUM_VAR_FAST_INIT_64_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_FAST_INIT_64 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -151,7 +165,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_FAST_CLEARED_UNSPECIFIED_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_FAST_CLEARED_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -166,7 +183,10 @@
 # endif
 # undef ECUM_VAR_FAST_CLEARED_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_FAST_CLEARED_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -180,7 +200,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NO_INIT_8_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NO_INIT_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -195,7 +218,10 @@
 # endif
 # undef ECUM_VAR_NO_INIT_8_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NO_INIT_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -209,7 +235,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NOCACHE_CLEARED_16_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NOCACHE_CLEARED_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -224,7 +253,10 @@
 # endif
 # undef ECUM_VAR_NOCACHE_CLEARED_16_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NOCACHE_CLEARED_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -238,7 +270,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NO_INIT_16_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NO_INIT_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -253,7 +288,10 @@
 # endif
 # undef ECUM_VAR_NO_INIT_16_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NO_INIT_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -267,7 +305,8 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_CONST_16_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom "MSR_CONST" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_CONST_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -282,7 +321,8 @@
 # endif
 # undef ECUM_CONST_16_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_CONST_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -296,7 +336,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_FAST_CLEARED_8_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_FAST_CLEARED_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -311,7 +354,10 @@
 # endif
 # undef ECUM_VAR_FAST_CLEARED_8_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_FAST_CLEARED_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -354,7 +400,8 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_CONST_64_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom "MSR_CONST" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_CONST_64 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -369,7 +416,8 @@
 # endif
 # undef ECUM_CONST_64_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_CONST_64 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -383,7 +431,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NOCACHE_CLEARED_8_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NOCACHE_CLEARED_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -398,7 +449,10 @@
 # endif
 # undef ECUM_VAR_NOCACHE_CLEARED_8_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NOCACHE_CLEARED_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -412,7 +466,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_CLEARED_16_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_CLEARED_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -427,7 +484,10 @@
 # endif
 # undef ECUM_VAR_CLEARED_16_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_CLEARED_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -441,7 +501,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NOCACHE_CLEARED_BOOLEAN_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NOCACHE_CLEARED_BOOLEAN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -456,7 +519,10 @@
 # endif
 # undef ECUM_VAR_NOCACHE_CLEARED_BOOLEAN_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NOCACHE_CLEARED_BOOLEAN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -470,7 +536,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_FAST_NO_INIT_16_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_FAST_NO_INIT_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -485,7 +554,10 @@
 # endif
 # undef ECUM_VAR_FAST_NO_INIT_16_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_FAST_NO_INIT_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -499,7 +571,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NO_INIT_64_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NO_INIT_64 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -514,7 +589,10 @@
 # endif
 # undef ECUM_VAR_NO_INIT_64_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NO_INIT_64 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -528,7 +606,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NOCACHE_CLEARED_64_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NOCACHE_CLEARED_64 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -543,7 +624,10 @@
 # endif
 # undef ECUM_VAR_NOCACHE_CLEARED_64_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NOCACHE_CLEARED_64 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -557,7 +641,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NOCACHE_INIT_32_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NOCACHE_INIT_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -572,7 +659,10 @@
 # endif
 # undef ECUM_VAR_NOCACHE_INIT_32_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NOCACHE_INIT_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -586,7 +676,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_FAST_INIT_32_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_FAST_INIT_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -601,7 +694,10 @@
 # endif
 # undef ECUM_VAR_FAST_INIT_32_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_FAST_INIT_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -615,7 +711,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NO_INIT_UNSPECIFIED_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NO_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -630,7 +729,10 @@
 # endif
 # undef ECUM_VAR_NO_INIT_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NO_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -644,7 +746,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_CLEARED_8_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_CLEARED_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -659,7 +764,10 @@
 # endif
 # undef ECUM_VAR_CLEARED_8_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_CLEARED_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -673,7 +781,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_FAST_CLEARED_16_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_FAST_CLEARED_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -688,7 +799,10 @@
 # endif
 # undef ECUM_VAR_FAST_CLEARED_16_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_FAST_CLEARED_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -702,7 +816,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NOCACHE_INIT_8_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NOCACHE_INIT_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -717,7 +834,10 @@
 # endif
 # undef ECUM_VAR_NOCACHE_INIT_8_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NOCACHE_INIT_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -731,7 +851,8 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_CONST_UNSPECIFIED_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom "MSR_CONST" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_CONST_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -746,7 +867,8 @@
 # endif
 # undef ECUM_CONST_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_CONST_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -760,7 +882,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NOCACHE_NO_INIT_32_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NOCACHE_NO_INIT_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -775,7 +900,10 @@
 # endif
 # undef ECUM_VAR_NOCACHE_NO_INIT_32_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NOCACHE_NO_INIT_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -789,7 +917,8 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_CONST_32_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom "MSR_CONST" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_CONST_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -804,7 +933,8 @@
 # endif
 # undef ECUM_CONST_32_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_CONST_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -818,7 +948,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_FAST_CLEARED_64_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_FAST_CLEARED_64 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -833,7 +966,10 @@
 # endif
 # undef ECUM_VAR_FAST_CLEARED_64_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_FAST_CLEARED_64 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -847,7 +983,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_INIT_32_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_INIT_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -862,7 +1001,10 @@
 # endif
 # undef ECUM_VAR_INIT_32_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_INIT_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -876,7 +1018,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_FAST_NO_INIT_64_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_FAST_NO_INIT_64 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -891,7 +1036,10 @@
 # endif
 # undef ECUM_VAR_FAST_NO_INIT_64_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_FAST_NO_INIT_64 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -905,7 +1053,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_INIT_8_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_INIT_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -920,7 +1071,10 @@
 # endif
 # undef ECUM_VAR_INIT_8_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_INIT_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -934,7 +1088,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_CLEARED_64_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_CLEARED_64 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -949,7 +1106,10 @@
 # endif
 # undef ECUM_VAR_CLEARED_64_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_CLEARED_64 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -963,7 +1123,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NO_INIT_32_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NO_INIT_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -978,7 +1141,10 @@
 # endif
 # undef ECUM_VAR_NO_INIT_32_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NO_INIT_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -992,7 +1158,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NOCACHE_INIT_64_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NOCACHE_INIT_64 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1007,7 +1176,10 @@
 # endif
 # undef ECUM_VAR_NOCACHE_INIT_64_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NOCACHE_INIT_64 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1021,7 +1193,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NOCACHE_CLEARED_32_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NOCACHE_CLEARED_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1036,7 +1211,10 @@
 # endif
 # undef ECUM_VAR_NOCACHE_CLEARED_32_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NOCACHE_CLEARED_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1050,7 +1228,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NOCACHE_INIT_BOOLEAN_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NOCACHE_INIT_BOOLEAN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1065,7 +1246,10 @@
 # endif
 # undef ECUM_VAR_NOCACHE_INIT_BOOLEAN_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NOCACHE_INIT_BOOLEAN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1079,7 +1263,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_FAST_NO_INIT_BOOLEAN_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_FAST_NO_INIT_BOOLEAN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1094,7 +1281,10 @@
 # endif
 # undef ECUM_VAR_FAST_NO_INIT_BOOLEAN_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_FAST_NO_INIT_BOOLEAN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1108,7 +1298,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_FAST_CLEARED_BOOLEAN_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_FAST_CLEARED_BOOLEAN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1123,7 +1316,10 @@
 # endif
 # undef ECUM_VAR_FAST_CLEARED_BOOLEAN_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_FAST_CLEARED_BOOLEAN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1137,7 +1333,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_CLEARED_BOOLEAN_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_CLEARED_BOOLEAN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1152,7 +1351,10 @@
 # endif
 # undef ECUM_VAR_CLEARED_BOOLEAN_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_CLEARED_BOOLEAN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1166,7 +1368,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NO_INIT_BOOLEAN_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NO_INIT_BOOLEAN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1181,7 +1386,10 @@
 # endif
 # undef ECUM_VAR_NO_INIT_BOOLEAN_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NO_INIT_BOOLEAN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1195,7 +1403,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NOCACHE_NO_INIT_64_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NOCACHE_NO_INIT_64 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1210,7 +1421,10 @@
 # endif
 # undef ECUM_VAR_NOCACHE_NO_INIT_64_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NOCACHE_NO_INIT_64 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1224,7 +1438,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_FAST_CLEARED_32_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_FAST_CLEARED_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1239,7 +1456,10 @@
 # endif
 # undef ECUM_VAR_FAST_CLEARED_32_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_FAST_CLEARED_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1253,7 +1473,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NOCACHE_NO_INIT_UNSPECIFIED_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NOCACHE_NO_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1268,7 +1491,10 @@
 # endif
 # undef ECUM_VAR_NOCACHE_NO_INIT_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NOCACHE_NO_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1282,7 +1508,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_INIT_64_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_INIT_64 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1297,7 +1526,10 @@
 # endif
 # undef ECUM_VAR_INIT_64_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_INIT_64 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1311,7 +1543,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_CLEARED_UNSPECIFIED_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_CLEARED_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1326,7 +1561,10 @@
 # endif
 # undef ECUM_VAR_CLEARED_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_CLEARED_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1340,7 +1578,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_INIT_UNSPECIFIED_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1355,7 +1596,10 @@
 # endif
 # undef ECUM_VAR_INIT_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1369,7 +1613,8 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_CONST_8_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom "MSR_CONST" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_CONST_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1384,7 +1629,8 @@
 # endif
 # undef ECUM_CONST_8_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_CONST_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1398,7 +1644,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_FAST_NO_INIT_32_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_FAST_NO_INIT_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1413,7 +1662,10 @@
 # endif
 # undef ECUM_VAR_FAST_NO_INIT_32_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_FAST_NO_INIT_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1427,7 +1679,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_CLEARED_32_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_CLEARED" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_CLEARED_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1442,7 +1697,10 @@
 # endif
 # undef ECUM_VAR_CLEARED_32_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_CLEARED/MSR_VAR_CLEARED */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_CLEARED_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1456,7 +1714,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NOCACHE_NO_INIT_BOOLEAN_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NOCACHE_NO_INIT_BOOLEAN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1471,7 +1732,10 @@
 # endif
 # undef ECUM_VAR_NOCACHE_NO_INIT_BOOLEAN_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NOCACHE_NO_INIT_BOOLEAN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1485,7 +1749,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_INIT_BOOLEAN_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_INIT_BOOLEAN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1500,7 +1767,10 @@
 # endif
 # undef ECUM_VAR_INIT_BOOLEAN_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_INIT_BOOLEAN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1514,7 +1784,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NOCACHE_INIT_UNSPECIFIED_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NOCACHE_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1529,7 +1802,10 @@
 # endif
 # undef ECUM_VAR_NOCACHE_INIT_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NOCACHE_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1543,7 +1819,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_FAST_INIT_UNSPECIFIED_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_FAST_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1558,7 +1837,10 @@
 # endif
 # undef ECUM_VAR_FAST_INIT_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_FAST_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1572,7 +1854,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_FAST_NO_INIT_8_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_FAST_NO_INIT_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1587,7 +1872,10 @@
 # endif
 # undef ECUM_VAR_FAST_NO_INIT_8_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_FAST_NO_INIT_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1601,7 +1889,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_FAST_INIT_8_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_FAST_INIT_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1616,7 +1907,10 @@
 # endif
 # undef ECUM_VAR_FAST_INIT_8_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_FAST_INIT_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1630,7 +1924,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NOCACHE_INIT_16_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NOCACHE_INIT_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1645,7 +1942,10 @@
 # endif
 # undef ECUM_VAR_NOCACHE_INIT_16_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NOCACHE_INIT_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1659,7 +1959,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_FAST_NO_INIT_UNSPECIFIED_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_FAST_NO_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1674,7 +1977,10 @@
 # endif
 # undef ECUM_VAR_FAST_NO_INIT_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_FAST_NO_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1688,7 +1994,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_FAST_INIT_BOOLEAN_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_FAST_INIT_BOOLEAN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1703,7 +2012,10 @@
 # endif
 # undef ECUM_VAR_FAST_INIT_BOOLEAN_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_FAST_INIT_BOOLEAN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1717,7 +2029,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_FAST_INIT_16_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_FAST_INIT_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1732,7 +2047,10 @@
 # endif
 # undef ECUM_VAR_FAST_INIT_16_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_FAST_INIT_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1746,7 +2064,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NOCACHE_NO_INIT_8_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NOCACHE_NO_INIT_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1761,7 +2082,10 @@
 # endif
 # undef ECUM_VAR_NOCACHE_NO_INIT_8_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NOCACHE_NO_INIT_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1775,7 +2099,8 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_CONST_BOOLEAN_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom "MSR_CONST" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_CONST_BOOLEAN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1790,7 +2115,8 @@
 # endif
 # undef ECUM_CONST_BOOLEAN_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_CONST_BOOLEAN /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1804,7 +2130,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_INIT_16_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_INIT_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1819,7 +2148,10 @@
 # endif
 # undef ECUM_VAR_INIT_16_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_INIT_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1833,7 +2165,10 @@
 # define MEMMAP_SECTION_OPEN
 # define ECUM_VAR_NOCACHE_NO_INIT_16_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_START_SEC_VAR_NOCACHE_NO_INIT_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1848,9 +2183,82 @@
 # endif
 # undef ECUM_VAR_NOCACHE_NO_INIT_16_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef ECUM_STOP_SEC_VAR_NOCACHE_NO_INIT_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined ECUM_START_SEC_VAR_PARTITION_OSAPPLICATION_OSCORE1_NOCACHE_NO_INIT_32
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using ECUM_START_SEC_VAR_PARTITION_OSAPPLICATION_OSCORE1_NOCACHE_NO_INIT_32 is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define ECUM_VAR_PARTITION_OSAPPLICATION_OSCORE1_NOCACHE_NO_INIT_32_OPEN
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_OsApplication_OsCore1_VAR_NOINIT/OS_OsApplication_OsCore1_VAR_NOINIT */
+# pragma section farnoclear "OS_CORE1_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "OS_CORE1_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "OS_CORE1_VAR" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef ECUM_START_SEC_VAR_PARTITION_OSAPPLICATION_OSCORE1_NOCACHE_NO_INIT_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined ECUM_STOP_SEC_VAR_PARTITION_OSAPPLICATION_OSCORE1_NOCACHE_NO_INIT_32
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using ECUM_STOP_SEC_VAR_PARTITION_OSAPPLICATION_OSCORE1_NOCACHE_NO_INIT_32 is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef ECUM_VAR_PARTITION_OSAPPLICATION_OSCORE1_NOCACHE_NO_INIT_32_OPEN
+#  error Using ECUM_STOP_SEC_VAR_PARTITION_OSAPPLICATION_OSCORE1_NOCACHE_NO_INIT_32 is not possible as the corresponding memory section has not been opened.
+# endif
+# undef ECUM_VAR_PARTITION_OSAPPLICATION_OSCORE1_NOCACHE_NO_INIT_32_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_OsApplication_OsCore1_VAR_NOINIT/OS_OsApplication_OsCore1_VAR_NOINIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef ECUM_STOP_SEC_VAR_PARTITION_OSAPPLICATION_OSCORE1_NOCACHE_NO_INIT_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined ECUM_START_SEC_VAR_PARTITION_SYSTEMAPPLICATION_OSCORE0_NOCACHE_NO_INIT_32
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using ECUM_START_SEC_VAR_PARTITION_SYSTEMAPPLICATION_OSCORE0_NOCACHE_NO_INIT_32 is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define ECUM_VAR_PARTITION_SYSTEMAPPLICATION_OSCORE0_NOCACHE_NO_INIT_32_OPEN
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_NOINIT/OS_SystemApplication_OsCore0_VAR_NOINIT */
+# pragma section farnoclear "OS_CORE0_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "OS_CORE0_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "OS_CORE0_VAR" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef ECUM_START_SEC_VAR_PARTITION_SYSTEMAPPLICATION_OSCORE0_NOCACHE_NO_INIT_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined ECUM_STOP_SEC_VAR_PARTITION_SYSTEMAPPLICATION_OSCORE0_NOCACHE_NO_INIT_32
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using ECUM_STOP_SEC_VAR_PARTITION_SYSTEMAPPLICATION_OSCORE0_NOCACHE_NO_INIT_32 is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef ECUM_VAR_PARTITION_SYSTEMAPPLICATION_OSCORE0_NOCACHE_NO_INIT_32_OPEN
+#  error Using ECUM_STOP_SEC_VAR_PARTITION_SYSTEMAPPLICATION_OSCORE0_NOCACHE_NO_INIT_32 is not possible as the corresponding memory section has not been opened.
+# endif
+# undef ECUM_VAR_PARTITION_SYSTEMAPPLICATION_OSCORE0_NOCACHE_NO_INIT_32_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_NOINIT/OS_SystemApplication_OsCore0_VAR_NOINIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef ECUM_STOP_SEC_VAR_PARTITION_SYSTEMAPPLICATION_OSCORE0_NOCACHE_NO_INIT_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
 
 /* -------------------------------------------------------------------------------- */
@@ -1891,7 +2299,8 @@
 # define MEMMAP_SECTION_OPEN
 # define EcuM_CONST_UNSPECIFIED_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom "MSR_CONST" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef EcuM_START_SEC_CONST_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1906,7 +2315,8 @@
 # endif
 # undef EcuM_CONST_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef EcuM_STOP_SEC_CONST_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1920,7 +2330,10 @@
 # define MEMMAP_SECTION_OPEN
 # define EcuM_VAR_NOINIT_UNSPECIFIED_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_NOINIT/OS_SystemApplication_OsCore0_VAR_NOINIT */
+# pragma section farnoclear "OS_CORE0_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "OS_CORE0_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "OS_CORE0_VAR" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef EcuM_START_SEC_VAR_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1935,7 +2348,10 @@
 # endif
 # undef EcuM_VAR_NOINIT_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_NOINIT/OS_SystemApplication_OsCore0_VAR_NOINIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef EcuM_STOP_SEC_VAR_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1949,7 +2365,10 @@
 # define MEMMAP_SECTION_OPEN
 # define EcuM_VAR_INIT_UNSPECIFIED_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_INIT/OS_SystemApplication_OsCore0_VAR_INIT */
+# pragma section farnoclear "OS_CORE0_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "OS_CORE0_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "OS_CORE0_VAR" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef EcuM_START_SEC_VAR_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1964,7 +2383,10 @@
 # endif
 # undef EcuM_VAR_INIT_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_INIT/OS_SystemApplication_OsCore0_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef EcuM_STOP_SEC_VAR_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1978,7 +2400,10 @@
 # define MEMMAP_SECTION_OPEN
 # define EcuM_VAR_ZERO_INIT_UNSPECIFIED_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_ZERO_INIT/OS_SystemApplication_OsCore0_VAR_ZERO_INIT */
+# pragma section farnoclear "OS_SystemApplication_OsCore0_VAR_ZERO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "OS_SystemApplication_OsCore0_VAR_ZERO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "OS_CORE0_VAR" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef EcuM_START_SEC_VAR_ZERO_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -1993,7 +2418,10 @@
 # endif
 # undef EcuM_VAR_ZERO_INIT_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_ZERO_INIT/OS_SystemApplication_OsCore0_VAR_ZERO_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef EcuM_STOP_SEC_VAR_ZERO_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -2377,6 +2805,18 @@
 #endif
 #ifdef ECUM_STOP_SEC_VAR_NOCACHE_NO_INIT_16
 # error Using ECUM_STOP_SEC_VAR_NOCACHE_NO_INIT_16 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef ECUM_START_SEC_VAR_PARTITION_OSAPPLICATION_OSCORE1_NOCACHE_NO_INIT_32
+# error Using ECUM_START_SEC_VAR_PARTITION_OSAPPLICATION_OSCORE1_NOCACHE_NO_INIT_32 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef ECUM_STOP_SEC_VAR_PARTITION_OSAPPLICATION_OSCORE1_NOCACHE_NO_INIT_32
+# error Using ECUM_STOP_SEC_VAR_PARTITION_OSAPPLICATION_OSCORE1_NOCACHE_NO_INIT_32 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef ECUM_START_SEC_VAR_PARTITION_SYSTEMAPPLICATION_OSCORE0_NOCACHE_NO_INIT_32
+# error Using ECUM_START_SEC_VAR_PARTITION_SYSTEMAPPLICATION_OSCORE0_NOCACHE_NO_INIT_32 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef ECUM_STOP_SEC_VAR_PARTITION_SYSTEMAPPLICATION_OSCORE0_NOCACHE_NO_INIT_32
+# error Using ECUM_STOP_SEC_VAR_PARTITION_SYSTEMAPPLICATION_OSCORE0_NOCACHE_NO_INIT_32 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
 #endif
 #ifdef EcuM_START_SEC_CODE
 # error Using EcuM_START_SEC_CODE is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.

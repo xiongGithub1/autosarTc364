@@ -128,7 +128,7 @@ FUNC(void, MotorCdd_CODE) AdcSampleReady(void) /* PRQA S 0624, 3206 */ /* MD_Rte
  * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
 
-FUNC(void, MotorCdd_CODE) MotorCDDMainFunction(void) /* PRQA S 0624, 3206 */ /* MD_Rte_0624, MD_Rte_3206 */
+FUNC(void, MotorCdd_CODE) MotorCdd_MainFunction(void) /* PRQA S 0624, 3206 */ /* MD_Rte_0624, MD_Rte_3206 */
 {
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!

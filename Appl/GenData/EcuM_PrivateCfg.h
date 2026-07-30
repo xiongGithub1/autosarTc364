@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_PrivateCfg.h
- *   Generation Time: 2026-07-29 14:50:18
+ *   Generation Time: 2026-07-30 20:42:33
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -89,27 +89,31 @@
   \{
 */ 
 #define EcuM_GetComMChannelsOfPCConfig()                                                            EcuM_ComMChannels  /**< the pointer to EcuM_ComMChannels */
+#define EcuM_GetCoreStatusOfPCConfig()                                                              EcuM_CoreStatus  /**< the pointer to EcuM_CoreStatus */
 #define EcuM_GetDefaultAppModeOfPCConfig()                                                          OSDEFAULTAPPMODE  /**< EcuMDefaultAppMode of the Os module */
 #define EcuM_GetDefaultShutdownModeOfPCConfig()                                                     0u  /**< Default Shutdown Mode - Depending on target it its either a Sleep Mode or Reset Mode. */
 #define EcuM_GetDefaultShutdownTargetOfPCConfig()                                                   ECUM_STATE_OFF  /**< Default Shutdown Target */
 #define EcuM_GetDriverInitOneOfPCConfig()                                                           EcuM_DriverInitOne  /**< the pointer to EcuM_DriverInitOne */
 #define EcuM_GetDriverInitThreeOfPCConfig()                                                         EcuM_DriverInitThree  /**< the pointer to EcuM_DriverInitThree */
 #define EcuM_GetDriverInitTwoOfPCConfig()                                                           EcuM_DriverInitTwo  /**< the pointer to EcuM_DriverInitTwo */
-#define EcuM_GetEcuM_CRCHash_LowerOfPCConfig()                                                      0xB8229C74u
-#define EcuM_GetEcuM_CRCHash_UpperOfPCConfig()                                                      0xC9A03E6Au
+#define EcuM_GetEcuM_CRCHash_LowerOfPCConfig()                                                      0x6630DB6Fu
+#define EcuM_GetEcuM_CRCHash_UpperOfPCConfig()                                                      0x58AA73CBu
 #define EcuM_GetGeneratorCompatibilityVersionOfPCConfig()                                           3072u
 #define EcuM_GetKillAllInProgressOfPCConfig()                                                       (&(EcuM_KillAllInProgress))  /**< the pointer to EcuM_KillAllInProgress */
 #define EcuM_GetMaxWakeupSourceCountOfPCConfig()                                                    6u  /**< Max Wakeup source count. */
 #define EcuM_GetModuleStateOfPCConfig()                                                             (&(EcuM_ModuleState))  /**< the pointer to EcuM_ModuleState */
 #define EcuM_GetNormalMcuModeOfPCConfig()                                                           McuConf_McuModeSettingConf_McuModeSettingConf_0  /**< EcuMNormalMcuModeRef id of the Mcu module */
 #define EcuM_GetNvMWriteAllTimeoutOfPCConfig()                                                      6000u  /**< NvM WriteAll Timeout */
+#define EcuM_GetPartitionDataOfPCConfig()                                                           EcuM_PartitionData  /**< the pointer to EcuM_PartitionData */
 #define EcuM_GetPostRunRequestCounterOfPCConfig()                                                   (&(EcuM_PostRunRequestCounter))  /**< the pointer to EcuM_PostRunRequestCounter */
 #define EcuM_GetRunRequestCounterOfPCConfig()                                                       (&(EcuM_RunRequestCounter))  /**< the pointer to EcuM_RunRequestCounter */
 #define EcuM_GetSelfRunRequestTimeoutOfPCConfig()                                                   500u  /**< EcuM minimum duration timeout */
 #define EcuM_GetSizeOfComMChannelsOfPCConfig()                                                      1u  /**< the number of accomplishable value elements in EcuM_ComMChannels */
+#define EcuM_GetSizeOfCoreStatusOfPCConfig()                                                        2u  /**< the number of accomplishable value elements in EcuM_CoreStatus */
 #define EcuM_GetSizeOfDriverInitOneOfPCConfig()                                                     1u  /**< the number of accomplishable value elements in EcuM_DriverInitOne */
 #define EcuM_GetSizeOfDriverInitThreeOfPCConfig()                                                   1u  /**< the number of accomplishable value elements in EcuM_DriverInitThree */
 #define EcuM_GetSizeOfDriverInitTwoOfPCConfig()                                                     1u  /**< the number of accomplishable value elements in EcuM_DriverInitTwo */
+#define EcuM_GetSizeOfPartitionDataOfPCConfig()                                                     2u  /**< the number of accomplishable value elements in EcuM_PartitionData */
 #define EcuM_GetSizeOfUserTableOfPCConfig()                                                         1u  /**< the number of accomplishable value elements in EcuM_UserTable */
 #define EcuM_GetSizeOfWakeupSourceListOfPCConfig()                                                  6u  /**< the number of accomplishable value elements in EcuM_WakeupSourceList */
 #define EcuM_GetTimerOfPCConfig()                                                                   (&(EcuM_Timer))  /**< the pointer to EcuM_Timer */
@@ -124,11 +128,13 @@
   \brief  These macros can be used to read CONST and VAR data.
   \{
 */ 
+#define EcuM_GetCoreStatus(Index)                                                                   (EcuM_GetCoreStatusOfPCConfig()[(Index)])
 #define EcuM_GetFunctionOfDriverInitOne(Index)                                                      (EcuM_GetDriverInitOneOfPCConfig()[(Index)].FunctionOfDriverInitOne)
 #define EcuM_GetFunctionOfDriverInitThree(Index)                                                    (EcuM_GetDriverInitThreeOfPCConfig()[(Index)].FunctionOfDriverInitThree)
 #define EcuM_GetFunctionOfDriverInitTwo(Index)                                                      (EcuM_GetDriverInitTwoOfPCConfig()[(Index)].FunctionOfDriverInitTwo)
 #define EcuM_GetKillAllInProgress()                                                                 ((*(EcuM_GetKillAllInProgressOfPCConfig())))
 #define EcuM_GetModuleState()                                                                       ((*(EcuM_GetModuleStateOfPCConfig())))
+#define EcuM_GetApplicationOfPartitionData(Index)                                                   (EcuM_GetPartitionDataOfPCConfig()[(Index)].ApplicationOfPartitionData)
 #define EcuM_GetPostRunRequestCounter()                                                             ((*(EcuM_GetPostRunRequestCounterOfPCConfig())))
 #define EcuM_GetRunRequestCounter()                                                                 ((*(EcuM_GetRunRequestCounterOfPCConfig())))
 #define EcuM_GetTimer()                                                                             ((*(EcuM_GetTimerOfPCConfig())))
@@ -153,11 +159,14 @@
 #define EcuM_GetMaxWakeupSourceCount()                                                              EcuM_GetMaxWakeupSourceCountOfPCConfig()
 #define EcuM_GetNormalMcuMode()                                                                     EcuM_GetNormalMcuModeOfPCConfig()
 #define EcuM_GetNvMWriteAllTimeout()                                                                EcuM_GetNvMWriteAllTimeoutOfPCConfig()
+#define EcuM_IsEcuMPartitionOfPartitionData(Index)                                                  (((TRUE)) != FALSE)  /**< Set to true for the partitions with active BswM */
 #define EcuM_GetSelfRunRequestTimeout()                                                             EcuM_GetSelfRunRequestTimeoutOfPCConfig()
 #define EcuM_GetSizeOfComMChannels()                                                                EcuM_GetSizeOfComMChannelsOfPCConfig()
+#define EcuM_GetSizeOfCoreStatus()                                                                  EcuM_GetSizeOfCoreStatusOfPCConfig()
 #define EcuM_GetSizeOfDriverInitOne()                                                               EcuM_GetSizeOfDriverInitOneOfPCConfig()
 #define EcuM_GetSizeOfDriverInitThree()                                                             EcuM_GetSizeOfDriverInitThreeOfPCConfig()
 #define EcuM_GetSizeOfDriverInitTwo()                                                               EcuM_GetSizeOfDriverInitTwoOfPCConfig()
+#define EcuM_GetSizeOfPartitionData()                                                               EcuM_GetSizeOfPartitionDataOfPCConfig()
 #define EcuM_GetSizeOfUserTable()                                                                   EcuM_GetSizeOfUserTableOfPCConfig()
 #define EcuM_GetSizeOfWakeupSourceList()                                                            EcuM_GetSizeOfWakeupSourceListOfPCConfig()
 /** 
@@ -185,6 +194,7 @@
   \{
 */ 
 #define EcuM_HasComMChannels()                                                                      (TRUE != FALSE)
+#define EcuM_HasCoreStatus()                                                                        (TRUE != FALSE)
 #define EcuM_HasDefaultAppMode()                                                                    (TRUE != FALSE)
 #define EcuM_HasDefaultShutdownMode()                                                               (TRUE != FALSE)
 #define EcuM_HasDefaultShutdownTarget()                                                             (TRUE != FALSE)
@@ -202,13 +212,18 @@
 #define EcuM_HasModuleState()                                                                       (TRUE != FALSE)
 #define EcuM_HasNormalMcuMode()                                                                     (TRUE != FALSE)
 #define EcuM_HasNvMWriteAllTimeout()                                                                (TRUE != FALSE)
+#define EcuM_HasPartitionData()                                                                     (TRUE != FALSE)
+#define EcuM_HasApplicationOfPartitionData()                                                        (TRUE != FALSE)
+#define EcuM_HasEcuMPartitionOfPartitionData()                                                      (TRUE != FALSE)
 #define EcuM_HasPostRunRequestCounter()                                                             (TRUE != FALSE)
 #define EcuM_HasRunRequestCounter()                                                                 (TRUE != FALSE)
 #define EcuM_HasSelfRunRequestTimeout()                                                             (TRUE != FALSE)
 #define EcuM_HasSizeOfComMChannels()                                                                (TRUE != FALSE)
+#define EcuM_HasSizeOfCoreStatus()                                                                  (TRUE != FALSE)
 #define EcuM_HasSizeOfDriverInitOne()                                                               (TRUE != FALSE)
 #define EcuM_HasSizeOfDriverInitThree()                                                             (TRUE != FALSE)
 #define EcuM_HasSizeOfDriverInitTwo()                                                               (TRUE != FALSE)
+#define EcuM_HasSizeOfPartitionData()                                                               (TRUE != FALSE)
 #define EcuM_HasSizeOfUserTable()                                                                   (TRUE != FALSE)
 #define EcuM_HasSizeOfWakeupSourceList()                                                            (TRUE != FALSE)
 #define EcuM_HasTimer()                                                                             (TRUE != FALSE)
@@ -217,6 +232,7 @@
 #define EcuM_HasChannelOfWakeupSourceList()                                                         (TRUE != FALSE)
 #define EcuM_HasPCConfig()                                                                          (TRUE != FALSE)
 #define EcuM_HasComMChannelsOfPCConfig()                                                            (TRUE != FALSE)
+#define EcuM_HasCoreStatusOfPCConfig()                                                              (TRUE != FALSE)
 #define EcuM_HasDefaultAppModeOfPCConfig()                                                          (TRUE != FALSE)
 #define EcuM_HasDefaultShutdownModeOfPCConfig()                                                     (TRUE != FALSE)
 #define EcuM_HasDefaultShutdownTargetOfPCConfig()                                                   (TRUE != FALSE)
@@ -231,13 +247,16 @@
 #define EcuM_HasModuleStateOfPCConfig()                                                             (TRUE != FALSE)
 #define EcuM_HasNormalMcuModeOfPCConfig()                                                           (TRUE != FALSE)
 #define EcuM_HasNvMWriteAllTimeoutOfPCConfig()                                                      (TRUE != FALSE)
+#define EcuM_HasPartitionDataOfPCConfig()                                                           (TRUE != FALSE)
 #define EcuM_HasPostRunRequestCounterOfPCConfig()                                                   (TRUE != FALSE)
 #define EcuM_HasRunRequestCounterOfPCConfig()                                                       (TRUE != FALSE)
 #define EcuM_HasSelfRunRequestTimeoutOfPCConfig()                                                   (TRUE != FALSE)
 #define EcuM_HasSizeOfComMChannelsOfPCConfig()                                                      (TRUE != FALSE)
+#define EcuM_HasSizeOfCoreStatusOfPCConfig()                                                        (TRUE != FALSE)
 #define EcuM_HasSizeOfDriverInitOneOfPCConfig()                                                     (TRUE != FALSE)
 #define EcuM_HasSizeOfDriverInitThreeOfPCConfig()                                                   (TRUE != FALSE)
 #define EcuM_HasSizeOfDriverInitTwoOfPCConfig()                                                     (TRUE != FALSE)
+#define EcuM_HasSizeOfPartitionDataOfPCConfig()                                                     (TRUE != FALSE)
 #define EcuM_HasSizeOfUserTableOfPCConfig()                                                         (TRUE != FALSE)
 #define EcuM_HasSizeOfWakeupSourceListOfPCConfig()                                                  (TRUE != FALSE)
 #define EcuM_HasTimerOfPCConfig()                                                                   (TRUE != FALSE)
@@ -360,6 +379,23 @@ typedef uint8 EcuM_ConfigType;
 
 
 /**********************************************************************************************************************
+  EcuM_CoreStatus
+**********************************************************************************************************************/
+/** 
+  \var    EcuM_CoreStatus
+  \brief  Stores status of each core.
+*/ 
+#define ECUM_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+extern CONST(EcuM_CoreStatusArrayType, ECUM_CONST) EcuM_CoreStatus[2];
+#define ECUM_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+
+/**********************************************************************************************************************
   EcuM_DriverInitOne
 **********************************************************************************************************************/
 /** 
@@ -411,6 +447,26 @@ extern CONST(EcuM_DriverInitThreeType, ECUM_CONST) EcuM_DriverInitThree[1];
 #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
 extern CONST(EcuM_DriverInitTwoType, ECUM_CONST) EcuM_DriverInitTwo[1];
+#define ECUM_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  EcuM_PartitionData
+**********************************************************************************************************************/
+/** 
+  \var    EcuM_PartitionData
+  \brief  Contains all parameters configured for initialization of partitions.
+  \details
+  Element        Description
+  Application    
+*/ 
+#define ECUM_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+extern CONST(EcuM_PartitionDataType, ECUM_CONST) EcuM_PartitionData[2];
 #define ECUM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */

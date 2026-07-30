@@ -1,22 +1,17 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
-	.compiler_invocation	"ctc -f cc5884a --dep-file=Appl\\Source\\.Can_Callout_Stubs.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=Appl\\Source\\Can_Callout_Stubs.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\Source\\Can_Callout_Stubs.src ..\\Appl\\Source\\Can_Callout_Stubs.c"
+	.compiler_invocation	"ctc -f cc18340a --dep-file=Appl\\Source\\.Can_Callout_Stubs.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -DBRS_COMP_TASKING -DBRS_PLATFORM_AURIX -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Include -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=Appl\\Source\\Can_Callout_Stubs.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\Source\\Can_Callout_Stubs.src ..\\Appl\\Source\\Can_Callout_Stubs.c"
 	.compiler_name		"ctc"
 	;source	'..\\Appl\\Source\\Can_Callout_Stubs.c'
 
 	
 $TC162
-	.sdecl	'.zrodata.Can_Callout_Stubs..1.cnt',data,rom
-	.sect	'.zrodata.Can_Callout_Stubs..1.cnt'
-	.align	2
-.1.cnt:	.type	object
-	.size	.1.cnt,4
-	.word	10000000
 	
-	.sdecl	'.text.Can_Callout_Stubs.Can_Callout_GetTimeoutTicks',code,cluster('Can_Callout_GetTimeoutTicks')
-	.sect	'.text.Can_Callout_Stubs.Can_Callout_GetTimeoutTicks'
+	.sdecl	'.text.Can_Callout_Stubs.ApplCanInterruptDisable',code,cluster('ApplCanInterruptDisable')
+	.sect	'.text.Can_Callout_Stubs.ApplCanInterruptDisable'
 	.align	2
 	
+	.global	ApplCanInterruptDisable
 
 ; ..\Appl\Source\Can_Callout_Stubs.c	     1  /**********************************************************************************************************************
 ; ..\Appl\Source\Can_Callout_Stubs.c	     2   *  Can_Callout_Stubs.c
@@ -28,55 +23,104 @@ $TC162
 ; ..\Appl\Source\Can_Callout_Stubs.c	     8  
 ; ..\Appl\Source\Can_Callout_Stubs.c	     9  #include "Can.h"
 ; ..\Appl\Source\Can_Callout_Stubs.c	    10  #include "McalLib.h"
-; ..\Appl\Source\Can_Callout_Stubs.c	    11  
-; ..\Appl\Source\Can_Callout_Stubs.c	    12  #if (CAN_DEV_ERROR_DETECT == STD_ON)
-; ..\Appl\Source\Can_Callout_Stubs.c	    13  # include "Det.h"
-; ..\Appl\Source\Can_Callout_Stubs.c	    14  #endif
-; ..\Appl\Source\Can_Callout_Stubs.c	    15  
-; ..\Appl\Source\Can_Callout_Stubs.c	    16  static uint32 Can_Callout_GetTimeoutTicks(void)
-; Function Can_Callout_GetTimeoutTicks
+; ..\Appl\Source\Can_Callout_Stubs.c	    11  #include "Os.h"
+; ..\Appl\Source\Can_Callout_Stubs.c	    12  
+; ..\Appl\Source\Can_Callout_Stubs.c	    13  #if (CAN_DEV_ERROR_DETECT == STD_ON)
+; ..\Appl\Source\Can_Callout_Stubs.c	    14  # include "Det.h"
+; ..\Appl\Source\Can_Callout_Stubs.c	    15  #endif
+; ..\Appl\Source\Can_Callout_Stubs.c	    16  
+; ..\Appl\Source\Can_Callout_Stubs.c	    17  void ApplCanInterruptDisable(uint8 Controller)
+; Function ApplCanInterruptDisable
 .L17:
+ApplCanInterruptDisable:	.type	func
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    18  {
+; ..\Appl\Source\Can_Callout_Stubs.c	    19    (void)Controller;
+; ..\Appl\Source\Can_Callout_Stubs.c	    20    SuspendAllInterrupts();
+	j	SuspendAllInterrupts
+.L83:
+	
+__ApplCanInterruptDisable_function_end:
+	.size	ApplCanInterruptDisable,__ApplCanInterruptDisable_function_end-ApplCanInterruptDisable
+.L42:
+	; End of function
+	
+	.sdecl	'.text.Can_Callout_Stubs.ApplCanInterruptRestore',code,cluster('ApplCanInterruptRestore')
+	.sect	'.text.Can_Callout_Stubs.ApplCanInterruptRestore'
+	.align	2
+	
+	.global	ApplCanInterruptRestore
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    21  }
+; ..\Appl\Source\Can_Callout_Stubs.c	    22  
+; ..\Appl\Source\Can_Callout_Stubs.c	    23  void ApplCanInterruptRestore(uint8 Controller)
+; Function ApplCanInterruptRestore
+.L19:
+ApplCanInterruptRestore:	.type	func
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    24  {
+; ..\Appl\Source\Can_Callout_Stubs.c	    25    (void)Controller;
+; ..\Appl\Source\Can_Callout_Stubs.c	    26    ResumeAllInterrupts();
+	j	ResumeAllInterrupts
+.L86:
+	
+__ApplCanInterruptRestore_function_end:
+	.size	ApplCanInterruptRestore,__ApplCanInterruptRestore_function_end-ApplCanInterruptRestore
+.L47:
+	; End of function
+	
+	.sdecl	'.text.Can_Callout_Stubs.Can_Callout_GetTimeoutTicks',code,cluster('Can_Callout_GetTimeoutTicks')
+	.sect	'.text.Can_Callout_Stubs.Can_Callout_GetTimeoutTicks'
+	.align	2
+	
+
+; ..\Appl\Source\Can_Callout_Stubs.c	    27  }
+; ..\Appl\Source\Can_Callout_Stubs.c	    28  
+; ..\Appl\Source\Can_Callout_Stubs.c	    29  static uint32 Can_Callout_GetTimeoutTicks(void)
+; Function Can_Callout_GetTimeoutTicks
+.L21:
 Can_Callout_GetTimeoutTicks:	.type	func
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    17  {
-; ..\Appl\Source\Can_Callout_Stubs.c	    18    uint32 resolution;
-; ..\Appl\Source\Can_Callout_Stubs.c	    19  
-; ..\Appl\Source\Can_Callout_Stubs.c	    20    resolution = Mcal_DelayTickResolution();
+; ..\Appl\Source\Can_Callout_Stubs.c	    30  {
+; ..\Appl\Source\Can_Callout_Stubs.c	    31    uint32 resolution;
+; ..\Appl\Source\Can_Callout_Stubs.c	    32  
+; ..\Appl\Source\Can_Callout_Stubs.c	    33    resolution = Mcal_DelayTickResolution();
 	call	Mcal_DelayTickResolution
-.L90:
+.L108:
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    21    if (resolution == 0U)
+; ..\Appl\Source\Can_Callout_Stubs.c	    34    if (resolution == 0U)
 	jne	d2,#0,.L2
-.L110:
+.L136:
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    22    {
-; ..\Appl\Source\Can_Callout_Stubs.c	    23      resolution = Mcal_DelayResetTickCalibration();
+; ..\Appl\Source\Can_Callout_Stubs.c	    35    {
+; ..\Appl\Source\Can_Callout_Stubs.c	    36      resolution = Mcal_DelayResetTickCalibration();
 	call	Mcal_DelayResetTickCalibration
 .L2:
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    24    }
-; ..\Appl\Source\Can_Callout_Stubs.c	    25  
-; ..\Appl\Source\Can_Callout_Stubs.c	    26    if (resolution == 0U)
+; ..\Appl\Source\Can_Callout_Stubs.c	    37    }
+; ..\Appl\Source\Can_Callout_Stubs.c	    38  
+; ..\Appl\Source\Can_Callout_Stubs.c	    39    if (resolution == 0U)
 	jne	d2,#0,.L3
-.L111:
+.L137:
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    27    {
-; ..\Appl\Source\Can_Callout_Stubs.c	    28      return 0U;
-; ..\Appl\Source\Can_Callout_Stubs.c	    29    }
-; ..\Appl\Source\Can_Callout_Stubs.c	    30  
-; ..\Appl\Source\Can_Callout_Stubs.c	    31    return (CAN_TIMEOUT_DURATION * 1000000UL) / resolution;
-; ..\Appl\Source\Can_Callout_Stubs.c	    32  }
+; ..\Appl\Source\Can_Callout_Stubs.c	    40    {
+; ..\Appl\Source\Can_Callout_Stubs.c	    41      return 0U;
+; ..\Appl\Source\Can_Callout_Stubs.c	    42    }
+; ..\Appl\Source\Can_Callout_Stubs.c	    43  
+; ..\Appl\Source\Can_Callout_Stubs.c	    44    return (CAN_TIMEOUT_DURATION * 1000000UL) / resolution;
+; ..\Appl\Source\Can_Callout_Stubs.c	    45  }
 	ret
 .L3:
-	ld.w	d15,.1.cnt
-.L112:
+	mov.u	d15,#38528
+	addih	d15,d15,#152
+.L138:
 	div.u	e2,d15,d2
 	ret
-.L70:
+.L89:
 	
 __Can_Callout_GetTimeoutTicks_function_end:
 	.size	Can_Callout_GetTimeoutTicks,__Can_Callout_GetTimeoutTicks_function_end-Can_Callout_GetTimeoutTicks
-.L38:
+.L52:
 	; End of function
 	
 	.sdecl	'.text.Can_Callout_Stubs.Can_Callout_GetStartTick',code,cluster('Can_Callout_GetStartTick')
@@ -84,68 +128,68 @@ __Can_Callout_GetTimeoutTicks_function_end:
 	.align	2
 	
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    33  
-; ..\Appl\Source\Can_Callout_Stubs.c	    34  static Can_ExternalTickType Can_Callout_GetStartTick(uint8 source)
+; ..\Appl\Source\Can_Callout_Stubs.c	    46  
+; ..\Appl\Source\Can_Callout_Stubs.c	    47  static Can_ExternalTickType Can_Callout_GetStartTick(uint8 source)
 ; Function Can_Callout_GetStartTick
-.L19:
+.L23:
 Can_Callout_GetStartTick:	.type	func
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    35  {
-; ..\Appl\Source\Can_Callout_Stubs.c	    36    return Can_GetLoopTimeoutOfControllerData(0U)[source];
-	fcall	.cocofun_2
-.L91:
+; ..\Appl\Source\Can_Callout_Stubs.c	    48  {
+; ..\Appl\Source\Can_Callout_Stubs.c	    49    return Can_GetLoopTimeoutOfControllerData(0U)[source];
+	fcall	.cocofun_1
+.L109:
 	ld.w	d2,[a15]30
-.L117:
+.L143:
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    37  }
+; ..\Appl\Source\Can_Callout_Stubs.c	    50  }
 	ret
-.L72:
+.L91:
 	
 __Can_Callout_GetStartTick_function_end:
 	.size	Can_Callout_GetStartTick,__Can_Callout_GetStartTick_function_end-Can_Callout_GetStartTick
-.L43:
+.L57:
 	; End of function
 	
-	.sdecl	'.text.Can_Callout_Stubs..cocofun_2',code,cluster('.cocofun_2')
-	.sect	'.text.Can_Callout_Stubs..cocofun_2'
+	.sdecl	'.text.Can_Callout_Stubs..cocofun_1',code,cluster('.cocofun_1')
+	.sect	'.text.Can_Callout_Stubs..cocofun_1'
 	.align	2
-; Function .cocofun_2
-.L21:
-.cocofun_2:	.type	func
-; Function body .cocofun_2, coco_iter:0
+; Function .cocofun_1
+.L25:
+.cocofun_1:	.type	func
+; Function body .cocofun_1, coco_iter:0
 	movh.a	a15,#@his(Can_ControllerData)
 	lea	a15,[a15]@los(Can_ControllerData)
-.L147:
+.L173:
 	addsc.a	a15,a15,d4,#2
-.L148:
+.L174:
 	fret
-.L68:
+.L82:
 	; End of function
 	.sdecl	'.text.Can_Callout_Stubs.Can_Callout_SetStartTick',code,cluster('Can_Callout_SetStartTick')
 	.sect	'.text.Can_Callout_Stubs.Can_Callout_SetStartTick'
 	.align	2
 	
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    38  
-; ..\Appl\Source\Can_Callout_Stubs.c	    39  static void Can_Callout_SetStartTick(uint8 source, Can_ExternalTickType startTick)
+; ..\Appl\Source\Can_Callout_Stubs.c	    51  
+; ..\Appl\Source\Can_Callout_Stubs.c	    52  static void Can_Callout_SetStartTick(uint8 source, Can_ExternalTickType startTick)
 ; Function Can_Callout_SetStartTick
-.L23:
+.L27:
 Can_Callout_SetStartTick:	.type	func
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    40  {
-; ..\Appl\Source\Can_Callout_Stubs.c	    41    Can_GetLoopTimeoutOfControllerData(0U)[source] = startTick;
-	fcall	.cocofun_2
-.L92:
+; ..\Appl\Source\Can_Callout_Stubs.c	    53  {
+; ..\Appl\Source\Can_Callout_Stubs.c	    54    Can_GetLoopTimeoutOfControllerData(0U)[source] = startTick;
+	fcall	.cocofun_1
+.L110:
 	st.w	[a15]30,d5
-.L122:
+.L148:
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    42  }
+; ..\Appl\Source\Can_Callout_Stubs.c	    55  }
 	ret
-.L76:
+.L94:
 	
 __Can_Callout_SetStartTick_function_end:
 	.size	Can_Callout_SetStartTick,__Can_Callout_SetStartTick_function_end-Can_Callout_SetStartTick
-.L48:
+.L62:
 	; End of function
 	
 	.sdecl	'.text.Can_Callout_Stubs.ApplCanTimerStart',code,cluster('ApplCanTimerStart')
@@ -154,46 +198,46 @@ __Can_Callout_SetStartTick_function_end:
 	
 	.global	ApplCanTimerStart
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    43  
-; ..\Appl\Source\Can_Callout_Stubs.c	    44  void ApplCanTimerStart(uint8 source)
+; ..\Appl\Source\Can_Callout_Stubs.c	    56  
+; ..\Appl\Source\Can_Callout_Stubs.c	    57  void ApplCanTimerStart(uint8 source)
 ; Function ApplCanTimerStart
-.L25:
+.L29:
 ApplCanTimerStart:	.type	func
 	mov	d15,d4
-.L94:
+.L112:
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    45  {
-; ..\Appl\Source\Can_Callout_Stubs.c	    46  #if (CAN_DEV_ERROR_DETECT == STD_ON)
-; ..\Appl\Source\Can_Callout_Stubs.c	    47    if (source > CAN_LOOP_MAX)
+; ..\Appl\Source\Can_Callout_Stubs.c	    58  {
+; ..\Appl\Source\Can_Callout_Stubs.c	    59  #if (CAN_DEV_ERROR_DETECT == STD_ON)
+; ..\Appl\Source\Can_Callout_Stubs.c	    60    if (source > CAN_LOOP_MAX)
 	jlt.u	d15,#8,.L7
-.L127:
+.L153:
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    48    {
-; ..\Appl\Source\Can_Callout_Stubs.c	    49      (void)Det_ReportError(CAN_MODULE_ID, CAN_INSTANCE_ID, CAN_HW_ACCESS_ID, CAN_E_PARAM_HANDLE);
+; ..\Appl\Source\Can_Callout_Stubs.c	    61    {
+; ..\Appl\Source\Can_Callout_Stubs.c	    62      (void)Det_ReportError(CAN_MODULE_ID, CAN_INSTANCE_ID, CAN_HW_ACCESS_ID, CAN_E_PARAM_HANDLE);
 	mov	d4,#80
-.L93:
+.L111:
 	mov	d5,#0
-.L128:
+.L154:
 	mov	d6,#96
-.L129:
+.L155:
 	mov	d7,#2
 	j	Det_ReportError
 .L7:
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    50    }
-; ..\Appl\Source\Can_Callout_Stubs.c	    51    else
-; ..\Appl\Source\Can_Callout_Stubs.c	    52  #endif
-; ..\Appl\Source\Can_Callout_Stubs.c	    53    {
-; ..\Appl\Source\Can_Callout_Stubs.c	    54      Can_Callout_SetStartTick(source, Mcal_DelayGetTick());
+; ..\Appl\Source\Can_Callout_Stubs.c	    63    }
+; ..\Appl\Source\Can_Callout_Stubs.c	    64    else
+; ..\Appl\Source\Can_Callout_Stubs.c	    65  #endif
+; ..\Appl\Source\Can_Callout_Stubs.c	    66    {
+; ..\Appl\Source\Can_Callout_Stubs.c	    67      Can_Callout_SetStartTick(source, Mcal_DelayGetTick());
 	call	Mcal_DelayGetTick
-.L95:
+.L113:
 	mov	e4,d2,d15
 	j	Can_Callout_SetStartTick
-.L79:
+.L97:
 	
 __ApplCanTimerStart_function_end:
 	.size	ApplCanTimerStart,__ApplCanTimerStart_function_end-ApplCanTimerStart
-.L53:
+.L67:
 	; End of function
 	
 	.sdecl	'.text.Can_Callout_Stubs.ApplCanTimerLoop',code,cluster('ApplCanTimerLoop')
@@ -202,103 +246,103 @@ __ApplCanTimerStart_function_end:
 	
 	.global	ApplCanTimerLoop
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    55    }
-; ..\Appl\Source\Can_Callout_Stubs.c	    56  }
-; ..\Appl\Source\Can_Callout_Stubs.c	    57  
-; ..\Appl\Source\Can_Callout_Stubs.c	    58  Can_ReturnType ApplCanTimerLoop(uint8 source)
+; ..\Appl\Source\Can_Callout_Stubs.c	    68    }
+; ..\Appl\Source\Can_Callout_Stubs.c	    69  }
+; ..\Appl\Source\Can_Callout_Stubs.c	    70  
+; ..\Appl\Source\Can_Callout_Stubs.c	    71  Can_ReturnType ApplCanTimerLoop(uint8 source)
 ; Function ApplCanTimerLoop
-.L27:
+.L31:
 ApplCanTimerLoop:	.type	func
 	mov	d15,d4
-.L97:
+.L115:
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    59  {
-; ..\Appl\Source\Can_Callout_Stubs.c	    60    Can_ReturnType retval;
-; ..\Appl\Source\Can_Callout_Stubs.c	    61    uint32 elapsedTicks;
-; ..\Appl\Source\Can_Callout_Stubs.c	    62    uint32 timeoutTicks;
-; ..\Appl\Source\Can_Callout_Stubs.c	    63    Can_ExternalTickType startTick;
-; ..\Appl\Source\Can_Callout_Stubs.c	    64  
-; ..\Appl\Source\Can_Callout_Stubs.c	    65    retval = CAN_NOT_OK;
+; ..\Appl\Source\Can_Callout_Stubs.c	    72  {
+; ..\Appl\Source\Can_Callout_Stubs.c	    73    Can_ReturnType retval;
+; ..\Appl\Source\Can_Callout_Stubs.c	    74    uint32 elapsedTicks;
+; ..\Appl\Source\Can_Callout_Stubs.c	    75    uint32 timeoutTicks;
+; ..\Appl\Source\Can_Callout_Stubs.c	    76    Can_ExternalTickType startTick;
+; ..\Appl\Source\Can_Callout_Stubs.c	    77  
+; ..\Appl\Source\Can_Callout_Stubs.c	    78    retval = CAN_NOT_OK;
 	mov	d8,#0
-.L98:
+.L116:
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    66  
-; ..\Appl\Source\Can_Callout_Stubs.c	    67  #if (CAN_DEV_ERROR_DETECT == STD_ON)
-; ..\Appl\Source\Can_Callout_Stubs.c	    68    if (source > CAN_LOOP_MAX)
+; ..\Appl\Source\Can_Callout_Stubs.c	    79  
+; ..\Appl\Source\Can_Callout_Stubs.c	    80  #if (CAN_DEV_ERROR_DETECT == STD_ON)
+; ..\Appl\Source\Can_Callout_Stubs.c	    81    if (source > CAN_LOOP_MAX)
 	jlt.u	d15,#8,.L9
-.L134:
+.L160:
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    69    {
-; ..\Appl\Source\Can_Callout_Stubs.c	    70      (void)Det_ReportError(CAN_MODULE_ID, CAN_INSTANCE_ID, CAN_HW_ACCESS_ID, CAN_E_PARAM_HANDLE);
+; ..\Appl\Source\Can_Callout_Stubs.c	    82    {
+; ..\Appl\Source\Can_Callout_Stubs.c	    83      (void)Det_ReportError(CAN_MODULE_ID, CAN_INSTANCE_ID, CAN_HW_ACCESS_ID, CAN_E_PARAM_HANDLE);
 	mov	d5,d8
-.L99:
+.L117:
 	mov	d7,#2
 	j	.L10
 .L9:
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    71    }
-; ..\Appl\Source\Can_Callout_Stubs.c	    72    else
-; ..\Appl\Source\Can_Callout_Stubs.c	    73  #endif
-; ..\Appl\Source\Can_Callout_Stubs.c	    74    {
-; ..\Appl\Source\Can_Callout_Stubs.c	    75      startTick = Can_Callout_GetStartTick(source);
+; ..\Appl\Source\Can_Callout_Stubs.c	    84    }
+; ..\Appl\Source\Can_Callout_Stubs.c	    85    else
+; ..\Appl\Source\Can_Callout_Stubs.c	    86  #endif
+; ..\Appl\Source\Can_Callout_Stubs.c	    87    {
+; ..\Appl\Source\Can_Callout_Stubs.c	    88      startTick = Can_Callout_GetStartTick(source);
 	call	Can_Callout_GetStartTick
-.L96:
+.L114:
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    76      elapsedTicks = Mcal_DelayGetTick() - startTick;
+; ..\Appl\Source\Can_Callout_Stubs.c	    89      elapsedTicks = Mcal_DelayGetTick() - startTick;
 	mov	d9,d2
 	call	Mcal_DelayGetTick
-.L100:
+.L118:
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    77      timeoutTicks = Can_Callout_GetTimeoutTicks();
+; ..\Appl\Source\Can_Callout_Stubs.c	    90      timeoutTicks = Can_Callout_GetTimeoutTicks();
 	sub	d9,d2,d9
 	call	Can_Callout_GetTimeoutTicks
-.L101:
+.L119:
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    78  
-; ..\Appl\Source\Can_Callout_Stubs.c	    79      if ((timeoutTicks == 0U) || (elapsedTicks < timeoutTicks))
+; ..\Appl\Source\Can_Callout_Stubs.c	    91  
+; ..\Appl\Source\Can_Callout_Stubs.c	    92      if ((timeoutTicks == 0U) || (elapsedTicks < timeoutTicks))
 	jeq	d2,#0,.L11
-.L135:
+.L161:
 	jge.u	d9,d2,.L12
 .L11:
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    80      {
-; ..\Appl\Source\Can_Callout_Stubs.c	    81        retval = CAN_OK;
+; ..\Appl\Source\Can_Callout_Stubs.c	    93      {
+; ..\Appl\Source\Can_Callout_Stubs.c	    94        retval = CAN_OK;
 	mov	d8,#1
 	j	.L13
 .L12:
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    82      }
-; ..\Appl\Source\Can_Callout_Stubs.c	    83  #if (CAN_DEV_ERROR_DETECT == STD_ON)
-; ..\Appl\Source\Can_Callout_Stubs.c	    84      else if (source < CAN_LOOP_MAX)
+; ..\Appl\Source\Can_Callout_Stubs.c	    95      }
+; ..\Appl\Source\Can_Callout_Stubs.c	    96  #if (CAN_DEV_ERROR_DETECT == STD_ON)
+; ..\Appl\Source\Can_Callout_Stubs.c	    97      else if (source < CAN_LOOP_MAX)
 	jge.u	d15,#7,.L14
-.L136:
+.L162:
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    85      {
-; ..\Appl\Source\Can_Callout_Stubs.c	    86        (void)Det_ReportError(CAN_MODULE_ID, CAN_INSTANCE_ID, CAN_HW_ACCESS_ID, CAN_E_TIMEOUT_DET);
+; ..\Appl\Source\Can_Callout_Stubs.c	    98      {
+; ..\Appl\Source\Can_Callout_Stubs.c	    99        (void)Det_ReportError(CAN_MODULE_ID, CAN_INSTANCE_ID, CAN_HW_ACCESS_ID, CAN_E_TIMEOUT_DET);
 	mov	d5,#0
-.L137:
+.L163:
 	mov	d7,#17
 .L10:
 	mov	d4,#80
-.L138:
+.L164:
 	mov	d6,#96
 	call	Det_ReportError
 .L14:
 .L13:
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    87      }
-; ..\Appl\Source\Can_Callout_Stubs.c	    88  #endif
-; ..\Appl\Source\Can_Callout_Stubs.c	    89    }
-; ..\Appl\Source\Can_Callout_Stubs.c	    90  
-; ..\Appl\Source\Can_Callout_Stubs.c	    91    return retval;
-; ..\Appl\Source\Can_Callout_Stubs.c	    92  }
+; ..\Appl\Source\Can_Callout_Stubs.c	   100      }
+; ..\Appl\Source\Can_Callout_Stubs.c	   101  #endif
+; ..\Appl\Source\Can_Callout_Stubs.c	   102    }
+; ..\Appl\Source\Can_Callout_Stubs.c	   103  
+; ..\Appl\Source\Can_Callout_Stubs.c	   104    return retval;
+; ..\Appl\Source\Can_Callout_Stubs.c	   105  }
 	mov	d2,d8
 	ret
-.L82:
+.L100:
 	
 __ApplCanTimerLoop_function_end:
 	.size	ApplCanTimerLoop,__ApplCanTimerLoop_function_end-ApplCanTimerLoop
-.L58:
+.L72:
 	; End of function
 	
 	.sdecl	'.text.Can_Callout_Stubs.ApplCanTimerEnd',code,cluster('ApplCanTimerEnd')
@@ -307,22 +351,24 @@ __ApplCanTimerLoop_function_end:
 	
 	.global	ApplCanTimerEnd
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    93  
-; ..\Appl\Source\Can_Callout_Stubs.c	    94  void ApplCanTimerEnd(uint8 source)
+; ..\Appl\Source\Can_Callout_Stubs.c	   106  
+; ..\Appl\Source\Can_Callout_Stubs.c	   107  void ApplCanTimerEnd(uint8 source)
 ; Function ApplCanTimerEnd
-.L29:
+.L33:
 ApplCanTimerEnd:	.type	func
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    95  {
-; ..\Appl\Source\Can_Callout_Stubs.c	    96    ApplCanTimerStart(source);
+; ..\Appl\Source\Can_Callout_Stubs.c	   108  {
+; ..\Appl\Source\Can_Callout_Stubs.c	   109    ApplCanTimerStart(source);
 	j	ApplCanTimerStart
-.L88:
+.L106:
 	
 __ApplCanTimerEnd_function_end:
 	.size	ApplCanTimerEnd,__ApplCanTimerEnd_function_end-ApplCanTimerEnd
-.L63:
+.L77:
 	; End of function
 	
+	.calls	'ApplCanInterruptDisable','SuspendAllInterrupts'
+	.calls	'ApplCanInterruptRestore','ResumeAllInterrupts'
 	.calls	'Can_Callout_GetTimeoutTicks','Mcal_DelayTickResolution'
 	.calls	'Can_Callout_GetTimeoutTicks','Mcal_DelayResetTickCalibration'
 	.calls	'ApplCanTimerStart','Det_ReportError'
@@ -333,11 +379,13 @@ __ApplCanTimerEnd_function_end:
 	.calls	'ApplCanTimerLoop','Mcal_DelayGetTick'
 	.calls	'ApplCanTimerLoop','Can_Callout_GetTimeoutTicks'
 	.calls	'ApplCanTimerEnd','ApplCanTimerStart'
-	.calls	'Can_Callout_GetStartTick','.cocofun_2'
-	.calls	'Can_Callout_SetStartTick','.cocofun_2'
+	.calls	'Can_Callout_GetStartTick','.cocofun_1'
+	.calls	'Can_Callout_SetStartTick','.cocofun_1'
+	.calls	'ApplCanInterruptDisable','',0
+	.calls	'ApplCanInterruptRestore','',0
 	.calls	'Can_Callout_GetTimeoutTicks','',0
 	.calls	'Can_Callout_GetStartTick','',0
-	.calls	'.cocofun_2','',0
+	.calls	'.cocofun_1','',0
 	.calls	'Can_Callout_SetStartTick','',0
 	.calls	'ApplCanTimerStart','',0
 	.calls	'ApplCanTimerLoop','',0
@@ -345,1451 +393,1639 @@ __ApplCanTimerEnd_function_end:
 	.extern	Mcal_DelayTickResolution
 	.extern	Mcal_DelayResetTickCalibration
 	.extern	Mcal_DelayGetTick
+	.extern	SuspendAllInterrupts
+	.extern	ResumeAllInterrupts
 	.extern	Det_ReportError
 	.calls	'ApplCanTimerEnd','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L31:
-	.word	10457
+.L35:
+	.word	18223
 	.half	3
-	.word	.L32
+	.word	.L36
 	.byte	4
-.L30:
+.L34:
 	.byte	1
 	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
-	.word	.L33
-.L69:
+	.word	.L37
+.L84:
+	.byte	2
+	.byte	'unsigned char',0,1,8
+.L88:
 	.byte	2
 	.byte	'unsigned long int',0,4,7,3
 	.byte	'Mcal_DelayTickResolution',0,1,224,5,15
-	.word	146
+	.word	163
 	.byte	1,1,1,1,3
 	.byte	'Mcal_DelayResetTickCalibration',0,1,252,5,15
-	.word	146
+	.word	163
 	.byte	1,1,1,1,3
 	.byte	'Mcal_DelayGetTick',0,1,156,6,15
+	.word	163
+	.byte	1,1,1,1,4
+	.byte	'SuspendAllInterrupts',0,2,177,11,21,1,1,1,1,4
+	.byte	'ResumeAllInterrupts',0,2,196,11,21,1,1,1,1,2
+	.byte	'unsigned short int',0,2,7,5
+	.byte	'Det_ReportError',0,3,148,2,32
 	.word	146
-	.byte	1,1,1,1
-.L73:
-	.byte	2
-	.byte	'unsigned char',0,1,8,2
-	.byte	'unsigned short int',0,2,7,4
-	.byte	'Det_ReportError',0,2,148,2,32
-	.word	280
-	.byte	1,1,1,1,5
-	.byte	'ModuleId',0,2,148,2,56
-	.word	297
-	.byte	5
-	.byte	'InstanceId',0,2,148,2,72
-	.word	280
-	.byte	5
-	.byte	'ApiId',0,2,148,2,90
-	.word	280
-	.byte	5
-	.byte	'ErrorId',0,2,148,2,103
-	.word	280
+	.byte	1,1,1,1,6
+	.byte	'ModuleId',0,3,148,2,56
+	.word	356
+	.byte	6
+	.byte	'InstanceId',0,3,148,2,72
+	.word	146
+	.byte	6
+	.byte	'ApiId',0,3,148,2,90
+	.word	146
+	.byte	6
+	.byte	'ErrorId',0,3,148,2,103
+	.word	146
 	.byte	0
-.L81:
-	.byte	6,3,94,9,1,7
-	.byte	'CAN_NOT_OK',0,0,7
-	.byte	'CAN_OK',0,1,7
-	.byte	'CAN_BUSY',0,2,7
-	.byte	'CAN_NOT_SUPPORTED',0,3,7
-	.byte	'CAN_REQUESTED',0,4,0,8,1,9
-	.word	494
-	.byte	10
-	.byte	'__codeptr',0,4,1,1
-	.word	496
-	.byte	10
-	.byte	'boolean',0,5,101,31
-	.word	280
-	.byte	10
-	.byte	'uint8',0,5,104,31
-	.word	280
+.L99:
+	.byte	7,4,94,9,1,8
+	.byte	'CAN_NOT_OK',0,0,8
+	.byte	'CAN_OK',0,1,8
+	.byte	'CAN_BUSY',0,2,8
+	.byte	'CAN_NOT_SUPPORTED',0,3,8
+	.byte	'CAN_REQUESTED',0,4,0,9,1,10
+	.word	553
+	.byte	11
+	.byte	'__codeptr',0,5,1,1
+	.word	555
+	.byte	11
+	.byte	'boolean',0,6,101,31
+	.word	146
+	.byte	11
+	.byte	'uint8',0,6,104,31
+	.word	146
 	.byte	2
-	.byte	'short int',0,2,5,10
-	.byte	'sint16',0,5,105,31
-	.word	549
-	.byte	10
-	.byte	'uint16',0,5,106,31
-	.word	297
-	.byte	10
-	.byte	'uint32',0,5,108,31
+	.byte	'short int',0,2,5,11
+	.byte	'sint16',0,6,105,31
+	.word	608
+	.byte	11
+	.byte	'uint16',0,6,106,31
+	.word	356
+	.byte	2
+	.byte	'long int',0,4,5,11
+	.byte	'sint32',0,6,107,31
+	.word	651
+	.byte	11
+	.byte	'uint32',0,6,108,31
+	.word	163
+	.byte	11
+	.byte	'uint8_least',0,6,111,31
 	.word	146
-	.byte	10
-	.byte	'uint8_least',0,5,111,31
-	.word	280
-	.byte	10
-	.byte	'Std_ReturnType',0,6,124,15
-	.word	280
-	.byte	11,6,126,9,8,12
+	.byte	2
+	.byte	'unsigned long long int',0,8,7,11
+	.byte	'uint64',0,6,121,30
+	.word	713
+	.byte	11
+	.byte	'StatusType',0,7,119,23
+	.word	146
+	.byte	11
+	.byte	'Std_ReturnType',0,7,124,15
+	.word	146
+	.byte	12,7,126,9,8,13
 	.byte	'vendorID',0
-	.word	297
-	.byte	2,2,35,0,12
+	.word	356
+	.byte	2,2,35,0,13
 	.byte	'moduleID',0
-	.word	297
-	.byte	2,2,35,2,12
+	.word	356
+	.byte	2,2,35,2,13
 	.byte	'sw_major_version',0
-	.word	280
-	.byte	1,2,35,4,12
+	.word	146
+	.byte	1,2,35,4,13
 	.byte	'sw_minor_version',0
-	.word	280
-	.byte	1,2,35,5,12
+	.word	146
+	.byte	1,2,35,5,13
 	.byte	'sw_patch_version',0
-	.word	280
-	.byte	1,2,35,6,0,10
-	.byte	'Std_VersionInfoType',0,6,133,1,3
-	.word	650
+	.word	146
+	.byte	1,2,35,6,0,11
+	.byte	'Std_VersionInfoType',0,7,133,1,3
+	.word	796
+	.byte	11
+	.byte	'Std_TransformerErrorCode',0,7,135,1,15
+	.word	146
+	.byte	11
+	.byte	'Std_TransformerClass',0,7,137,1,15
+	.word	146
+	.byte	11
+	.byte	'PduIdType',0,8,63,15
+	.word	146
+	.byte	11
+	.byte	'PduLengthType',0,8,65,15
+	.word	146
 	.byte	10
-	.byte	'Std_TransformerErrorCode',0,6,135,1,15
-	.word	280
-	.byte	10
-	.byte	'Std_TransformerClass',0,6,137,1,15
-	.word	280
-	.byte	10
-	.byte	'PduIdType',0,7,63,15
-	.word	280
-	.byte	10
-	.byte	'PduLengthType',0,7,65,15
-	.word	280
-	.byte	9
-	.word	280
-	.byte	10
-	.byte	'SduDataPtrType',0,8,196,1,54
-	.word	903
-	.byte	6,8,219,1,9,1,7
-	.byte	'TP_DATACONF',0,0,7
-	.byte	'TP_DATARETRY',0,1,7
-	.byte	'TP_CONFPENDING',0,2,0,10
-	.byte	'TpDataStateType',0,8,226,1,3
-	.word	932
-	.byte	10
-	.byte	'Can_IdType',0,3,55,30
-	.word	297
-	.byte	10
-	.byte	'Can_HwHandleType',0,3,58,29
-	.word	280
-	.byte	10
-	.byte	'Can_SduPtrType',0,3,61,45
-	.word	903
-	.byte	13
-	.byte	'Can_PduTypeTag',0,3,64,16,12,12
+	.word	146
+	.byte	11
+	.byte	'SduDataPtrType',0,9,196,1,54
+	.word	1049
+	.byte	7,9,219,1,9,1,8
+	.byte	'TP_DATACONF',0,0,8
+	.byte	'TP_DATARETRY',0,1,8
+	.byte	'TP_CONFPENDING',0,2,0,11
+	.byte	'TpDataStateType',0,9,226,1,3
+	.word	1078
+	.byte	11
+	.byte	'Can_IdType',0,4,55,30
+	.word	356
+	.byte	11
+	.byte	'Can_HwHandleType',0,4,58,29
+	.word	146
+	.byte	11
+	.byte	'Can_SduPtrType',0,4,61,45
+	.word	1049
+	.byte	14
+	.byte	'Can_PduTypeTag',0,4,64,16,12,13
 	.byte	'id',0
-	.word	297
-	.byte	2,2,35,0,12
+	.word	356
+	.byte	2,2,35,0,13
 	.byte	'length',0
-	.word	280
-	.byte	1,2,35,2,12
+	.word	146
+	.byte	1,2,35,2,13
 	.byte	'sdu',0
-	.word	1054
-	.byte	4,2,35,4,12
+	.word	1200
+	.byte	4,2,35,4,13
 	.byte	'swPduHandle',0
-	.word	280
-	.byte	1,2,35,8,0,10
-	.byte	'Can_PduType',0,3,70,3
-	.word	1077
-	.byte	9
-	.word	280
-	.byte	6,3,80,9,1,7
-	.byte	'CAN_CS_UNINIT',0,0,7
-	.byte	'CAN_CS_STARTED',0,1,7
-	.byte	'CAN_CS_STOPPED',0,2,7
-	.byte	'CAN_CS_SLEEP',0,3,0,10
-	.byte	'Can_ControllerStateType',0,3,85,3
-	.word	1185
-	.byte	6,3,87,9,1,7
-	.byte	'CAN_ERRORSTATE_ACTIVE',0,0,7
-	.byte	'CAN_ERRORSTATE_PASSIVE',0,1,7
-	.byte	'CAN_ERRORSTATE_BUSOFF',0,2,0,10
-	.byte	'Can_ErrorStateType',0,3,91,3
-	.word	1288
-	.byte	10
-	.byte	'Can_ReturnType',0,3,101,3
-	.word	419
-	.byte	10
-	.byte	'tCanLLCanIntOld',0,9,163,3,37
 	.word	146
+	.byte	1,2,35,8,0,11
+	.byte	'Can_PduType',0,4,70,3
+	.word	1223
 	.byte	10
-	.byte	'Can_OsIsrType',0,9,169,3,15
-	.word	280
-	.byte	10
-	.byte	'Can_ExternalTickType',0,9,182,3,16
 	.word	146
-	.byte	14,32
+	.byte	7,4,80,9,1,8
+	.byte	'CAN_CS_UNINIT',0,0,8
+	.byte	'CAN_CS_STARTED',0,1,8
+	.byte	'CAN_CS_STOPPED',0,2,8
+	.byte	'CAN_CS_SLEEP',0,3,0,11
+	.byte	'Can_ControllerStateType',0,4,85,3
+	.word	1331
+	.byte	7,4,87,9,1,8
+	.byte	'CAN_ERRORSTATE_ACTIVE',0,0,8
+	.byte	'CAN_ERRORSTATE_PASSIVE',0,1,8
+	.byte	'CAN_ERRORSTATE_BUSOFF',0,2,0,11
+	.byte	'Can_ErrorStateType',0,4,91,3
+	.word	1434
+	.byte	11
+	.byte	'Can_ReturnType',0,4,101,3
+	.word	478
+	.byte	11
+	.byte	'tCanLLCanIntOld',0,10,163,3,37
+	.word	163
+	.byte	11
+	.byte	'Can_OsIsrType',0,10,169,3,15
 	.word	146
-	.byte	15,7,0,10
-	.byte	'Can_LoopTimeout_dim_type',0,9,185,3,44
-	.word	1495
-	.byte	10
-	.byte	'Can_ControllerConfigIterType',0,9,252,13,21
-	.word	280
-	.byte	10
-	.byte	'Can_PduOfActiveSendObjectType',0,9,208,14,19
-	.word	280
-	.byte	10
-	.byte	'Can_StateOfActiveSendObjectType',0,9,211,14,16
-	.word	297
-	.byte	10
-	.byte	'Can_BTPType',0,9,214,14,16
+	.byte	11
+	.byte	'Can_ExternalTickType',0,10,182,3,16
+	.word	163
+	.byte	15,32
+	.word	163
+	.byte	16,7,0,11
+	.byte	'Can_LoopTimeout_dim_type',0,10,185,3,44
+	.word	1641
+	.byte	11
+	.byte	'Can_ControllerConfigIterType',0,10,252,13,21
 	.word	146
-	.byte	10
-	.byte	'Can_RXBCOfBufferConfigType',0,9,220,14,15
-	.word	280
-	.byte	10
-	.byte	'Can_RXF0COfBufferConfigType',0,9,223,14,16
+	.byte	11
+	.byte	'Can_PduOfActiveSendObjectType',0,10,208,14,19
 	.word	146
-	.byte	10
-	.byte	'Can_RXF1COfBufferConfigType',0,9,226,14,15
-	.word	280
-	.byte	10
-	.byte	'Can_TXBCOfBufferConfigType',0,9,229,14,16
+	.byte	11
+	.byte	'Can_StateOfActiveSendObjectType',0,10,211,14,16
+	.word	356
+	.byte	11
+	.byte	'Can_BTPType',0,10,214,14,16
+	.word	163
+	.byte	11
+	.byte	'Can_RXBCOfBufferConfigType',0,10,220,14,15
 	.word	146
-	.byte	10
-	.byte	'Can_TXEFCOfBufferConfigType',0,9,232,14,15
-	.word	280
-	.byte	10
-	.byte	'Can_CanIfChannelIdType',0,9,250,14,15
-	.word	280
-	.byte	10
-	.byte	'Can_CanSubSystemBaseAdrType',0,9,253,14,16
+	.byte	11
+	.byte	'Can_RXF0COfBufferConfigType',0,10,223,14,16
+	.word	163
+	.byte	11
+	.byte	'Can_RXF1COfBufferConfigType',0,10,226,14,15
 	.word	146
-	.byte	10
-	.byte	'Can_BasisAdrOfControllerConfigType',0,9,128,15,16
+	.byte	11
+	.byte	'Can_TXBCOfBufferConfigType',0,10,229,14,16
+	.word	163
+	.byte	11
+	.byte	'Can_TXEFCOfBufferConfigType',0,10,232,14,15
 	.word	146
-	.byte	10
-	.byte	'Can_CanControllerDefaultBaudrateIdxOfControllerConfigType',0,9,131,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_CanControllerDefaultBaudrateOfControllerConfigType',0,9,134,15,16
-	.word	297
-	.byte	10
-	.byte	'Can_IsTTCanOfControllerConfigType',0,9,137,15,17
-	.word	280
-	.byte	10
-	.byte	'Can_MailboxRxBasicEndIdxOfControllerConfigType',0,9,140,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_MailboxRxBasicLengthOfControllerConfigType',0,9,143,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_MailboxRxBasicStartIdxOfControllerConfigType',0,9,146,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_MailboxTxBasicEndIdxOfControllerConfigType',0,9,152,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_MailboxTxBasicLengthOfControllerConfigType',0,9,155,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_MailboxTxBasicStartIdxOfControllerConfigType',0,9,158,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_RxBasicHwStartOfControllerConfigType',0,9,164,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_RxBasicHwStopOfControllerConfigType',0,9,167,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_RxFullHwStartOfControllerConfigType',0,9,170,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_RxFullHwStopOfControllerConfigType',0,9,173,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_RxSelectionOfControllerConfigType',0,9,176,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_TxBasicHwStartOfControllerConfigType',0,9,179,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_TxBasicHwStopOfControllerConfigType',0,9,182,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_TxFullHwStartOfControllerConfigType',0,9,185,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_TxFullHwStopOfControllerConfigType',0,9,188,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_UnusedHwStartOfControllerConfigType',0,9,191,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_UnusedHwStopOfControllerConfigType',0,9,194,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_BusOffNotificationOfControllerDataType',0,9,197,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_BusOffTransitionRequestOfControllerDataType',0,9,200,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_CanInterruptCounterOfControllerDataType',0,9,203,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_IntEnableOfControllerDataType',0,9,206,15,16
+	.byte	11
+	.byte	'Can_CanIfChannelIdType',0,10,250,14,15
 	.word	146
-	.byte	10
-	.byte	'Can_IsBusOffOfControllerDataType',0,9,209,15,17
-	.word	280
-	.byte	10
-	.byte	'Can_LastInitObjectOfControllerDataType',0,9,212,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_LastStateOfControllerDataType',0,9,215,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_LogStatusOfControllerDataType',0,9,218,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_ModeTransitionRequestOfControllerDataType',0,9,221,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_NonFdObjectsPendingFlagOfControllerDataType',0,9,224,15,16
+	.byte	11
+	.byte	'Can_CanSubSystemBaseAdrType',0,10,253,14,16
+	.word	163
+	.byte	11
+	.byte	'Can_BasisAdrOfControllerConfigType',0,10,128,15,16
+	.word	163
+	.byte	11
+	.byte	'Can_CanControllerDefaultBaudrateIdxOfControllerConfigType',0,10,131,15,15
 	.word	146
-	.byte	10
-	.byte	'Can_PrevModeOfControllerDataType',0,9,227,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_RamCheckTransitionRequestOfControllerDataType',0,9,230,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_TXBCROfControllerDataType',0,9,233,15,16
+	.byte	11
+	.byte	'Can_CanControllerDefaultBaudrateOfControllerConfigType',0,10,134,15,16
+	.word	356
+	.byte	11
+	.byte	'Can_IsTTCanOfControllerConfigType',0,10,137,15,17
 	.word	146
-	.byte	10
-	.byte	'Can_TXBRPOfControllerDataType',0,9,236,15,16
+	.byte	11
+	.byte	'Can_MailboxRxBasicEndIdxOfControllerConfigType',0,10,140,15,15
 	.word	146
-	.byte	10
-	.byte	'Can_FBTPType',0,9,239,15,16
+	.byte	11
+	.byte	'Can_MailboxRxBasicLengthOfControllerConfigType',0,10,143,15,15
 	.word	146
-	.byte	10
-	.byte	'Can_GFCType',0,9,242,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_INT_PriorityType',0,9,245,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_INT_RoutingGroupType',0,9,248,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_InitObjectBaudrateType',0,9,251,15,16
-	.word	297
-	.byte	10
-	.byte	'Can_InitObjectFdBrsConfigType',0,9,254,15,15
-	.word	280
-	.byte	10
-	.byte	'Can_InitObjectStartIndexType',0,9,129,16,15
-	.word	280
-	.byte	10
-	.byte	'Can_ActiveSendObjectOfMailboxType',0,9,132,16,15
-	.word	280
-	.byte	10
-	.byte	'Can_ControllerConfigIdxOfMailboxType',0,9,135,16,15
-	.word	280
-	.byte	10
-	.byte	'Can_FdPaddingOfMailboxType',0,9,138,16,15
-	.word	280
-	.byte	10
-	.byte	'Can_HwHandleOfMailboxType',0,9,141,16,15
-	.word	280
-	.byte	10
-	.byte	'Can_IDValueOfMailboxType',0,9,144,16,15
-	.word	280
-	.byte	10
-	.byte	'Can_MailboxSizeOfMailboxType',0,9,147,16,15
-	.word	280
-	.byte	10
-	.byte	'Can_MailboxTypeOfMailboxType',0,9,150,16,15
-	.word	280
-	.byte	10
-	.byte	'Can_MaxDataLenOfMailboxType',0,9,153,16,15
-	.word	280
-	.byte	10
-	.byte	'Can_MemorySectionsIndexOfMailboxType',0,9,156,16,15
-	.word	280
-	.byte	10
-	.byte	'Can_MemorySectionStartOfMemorySectionInfoType',0,9,159,16,15
-	.word	280
-	.byte	10
-	.byte	'Can_HwHandleOfMemorySectionObjectsType',0,9,162,16,15
-	.word	280
-	.byte	10
-	.byte	'Can_MailboxElementOfMemorySectionObjectsType',0,9,165,16,15
-	.word	280
-	.byte	10
-	.byte	'Can_MailboxHandleOfMemorySectionObjectsType',0,9,168,16,15
-	.word	280
-	.byte	10
-	.byte	'Can_FLSSAOfSIDFCType',0,9,174,16,15
-	.word	280
-	.byte	10
-	.byte	'Can_LSSOfSIDFCType',0,9,177,16,15
-	.word	280
-	.byte	10
-	.byte	'Can_SIDFEEndIdxOfSIDFCType',0,9,180,16,15
-	.word	280
-	.byte	10
-	.byte	'Can_SIDFEStartIdxOfSIDFCType',0,9,183,16,15
-	.word	280
-	.byte	10
-	.byte	'Can_SIDFEType',0,9,189,16,16
+	.byte	11
+	.byte	'Can_MailboxRxBasicStartIdxOfControllerConfigType',0,10,146,15,15
 	.word	146
-	.byte	10
-	.byte	'Can_SRN_AddressType',0,9,192,16,16
+	.byte	11
+	.byte	'Can_MailboxTxBasicEndIdxOfControllerConfigType',0,10,152,15,15
 	.word	146
-	.byte	10
-	.byte	'Can_RXBAOfShmAdrType',0,9,195,16,16
+	.byte	11
+	.byte	'Can_MailboxTxBasicLengthOfControllerConfigType',0,10,155,15,15
 	.word	146
-	.byte	10
-	.byte	'Can_RXF0AOfShmAdrType',0,9,198,16,16
+	.byte	11
+	.byte	'Can_MailboxTxBasicStartIdxOfControllerConfigType',0,10,158,15,15
 	.word	146
-	.byte	10
-	.byte	'Can_RXF1AOfShmAdrType',0,9,201,16,16
+	.byte	11
+	.byte	'Can_RxBasicHwStartOfControllerConfigType',0,10,164,15,15
 	.word	146
-	.byte	10
-	.byte	'Can_SIDFAOfShmAdrType',0,9,204,16,16
+	.byte	11
+	.byte	'Can_RxBasicHwStopOfControllerConfigType',0,10,167,15,15
 	.word	146
-	.byte	10
-	.byte	'Can_StartAdrOfShmAdrType',0,9,207,16,16
+	.byte	11
+	.byte	'Can_RxFullHwStartOfControllerConfigType',0,10,170,15,15
 	.word	146
-	.byte	10
-	.byte	'Can_StopAdrOfShmAdrType',0,9,210,16,16
+	.byte	11
+	.byte	'Can_RxFullHwStopOfControllerConfigType',0,10,173,15,15
 	.word	146
-	.byte	10
-	.byte	'Can_TXBAOfShmAdrType',0,9,213,16,16
+	.byte	11
+	.byte	'Can_RxSelectionOfControllerConfigType',0,10,176,15,15
 	.word	146
-	.byte	10
-	.byte	'Can_TXEFAOfShmAdrType',0,9,216,16,16
+	.byte	11
+	.byte	'Can_TxBasicHwStartOfControllerConfigType',0,10,179,15,15
 	.word	146
-	.byte	10
-	.byte	'Can_XIDFAOfShmAdrType',0,9,219,16,16
+	.byte	11
+	.byte	'Can_TxBasicHwStopOfControllerConfigType',0,10,182,15,15
 	.word	146
-	.byte	10
-	.byte	'Can_F0DSOfShmElementSizeType',0,9,222,16,15
-	.word	280
-	.byte	10
-	.byte	'Can_F1DSOfShmElementSizeType',0,9,225,16,15
-	.word	280
-	.byte	10
-	.byte	'Can_RBDSOfShmElementSizeType',0,9,228,16,15
-	.word	280
-	.byte	10
-	.byte	'Can_TBDSOfShmElementSizeType',0,9,231,16,15
-	.word	280
-	.byte	10
-	.byte	'Can_TEFBDSOfShmElementSizeType',0,9,234,16,15
-	.word	280
-	.byte	10
-	.byte	'Can_TDCRType',0,9,190,17,16
-	.word	297
-	.byte	10
-	.byte	'Can_XIDAMType',0,9,193,17,16
+	.byte	11
+	.byte	'Can_TxFullHwStartOfControllerConfigType',0,10,185,15,15
 	.word	146
-	.byte	10
-	.byte	'Can_FLESAOfXIDFCType',0,9,196,17,15
-	.word	280
-	.byte	10
-	.byte	'Can_LSEOfXIDFCType',0,9,199,17,15
-	.word	280
-	.byte	10
-	.byte	'Can_EIDFE_0OfXIDFEType',0,9,202,17,15
-	.word	280
-	.byte	10
-	.byte	'Can_EIDFE_1OfXIDFEType',0,9,205,17,15
-	.word	280
-	.byte	13
-	.byte	'sCan_ActiveSendObjectType',0,9,224,17,16,4,12
+	.byte	11
+	.byte	'Can_TxFullHwStopOfControllerConfigType',0,10,188,15,15
+	.word	146
+	.byte	11
+	.byte	'Can_UnusedHwStartOfControllerConfigType',0,10,191,15,15
+	.word	146
+	.byte	11
+	.byte	'Can_UnusedHwStopOfControllerConfigType',0,10,194,15,15
+	.word	146
+	.byte	11
+	.byte	'Can_BusOffNotificationOfControllerDataType',0,10,197,15,15
+	.word	146
+	.byte	11
+	.byte	'Can_BusOffTransitionRequestOfControllerDataType',0,10,200,15,15
+	.word	146
+	.byte	11
+	.byte	'Can_CanInterruptCounterOfControllerDataType',0,10,203,15,15
+	.word	146
+	.byte	11
+	.byte	'Can_IntEnableOfControllerDataType',0,10,206,15,16
+	.word	163
+	.byte	11
+	.byte	'Can_IsBusOffOfControllerDataType',0,10,209,15,17
+	.word	146
+	.byte	11
+	.byte	'Can_LastInitObjectOfControllerDataType',0,10,212,15,15
+	.word	146
+	.byte	11
+	.byte	'Can_LastStateOfControllerDataType',0,10,215,15,15
+	.word	146
+	.byte	11
+	.byte	'Can_LogStatusOfControllerDataType',0,10,218,15,15
+	.word	146
+	.byte	11
+	.byte	'Can_ModeTransitionRequestOfControllerDataType',0,10,221,15,15
+	.word	146
+	.byte	11
+	.byte	'Can_NonFdObjectsPendingFlagOfControllerDataType',0,10,224,15,16
+	.word	163
+	.byte	11
+	.byte	'Can_PrevModeOfControllerDataType',0,10,227,15,15
+	.word	146
+	.byte	11
+	.byte	'Can_RamCheckTransitionRequestOfControllerDataType',0,10,230,15,15
+	.word	146
+	.byte	11
+	.byte	'Can_TXBCROfControllerDataType',0,10,233,15,16
+	.word	163
+	.byte	11
+	.byte	'Can_TXBRPOfControllerDataType',0,10,236,15,16
+	.word	163
+	.byte	11
+	.byte	'Can_FBTPType',0,10,239,15,16
+	.word	163
+	.byte	11
+	.byte	'Can_GFCType',0,10,242,15,15
+	.word	146
+	.byte	11
+	.byte	'Can_INT_PriorityType',0,10,245,15,15
+	.word	146
+	.byte	11
+	.byte	'Can_INT_RoutingGroupType',0,10,248,15,15
+	.word	146
+	.byte	11
+	.byte	'Can_InitObjectBaudrateType',0,10,251,15,16
+	.word	356
+	.byte	11
+	.byte	'Can_InitObjectFdBrsConfigType',0,10,254,15,15
+	.word	146
+	.byte	11
+	.byte	'Can_InitObjectStartIndexType',0,10,129,16,15
+	.word	146
+	.byte	11
+	.byte	'Can_ActiveSendObjectOfMailboxType',0,10,132,16,15
+	.word	146
+	.byte	11
+	.byte	'Can_ControllerConfigIdxOfMailboxType',0,10,135,16,15
+	.word	146
+	.byte	11
+	.byte	'Can_FdPaddingOfMailboxType',0,10,138,16,15
+	.word	146
+	.byte	11
+	.byte	'Can_HwHandleOfMailboxType',0,10,141,16,15
+	.word	146
+	.byte	11
+	.byte	'Can_IDValueOfMailboxType',0,10,144,16,15
+	.word	146
+	.byte	11
+	.byte	'Can_MailboxSizeOfMailboxType',0,10,147,16,15
+	.word	146
+	.byte	11
+	.byte	'Can_MailboxTypeOfMailboxType',0,10,150,16,15
+	.word	146
+	.byte	11
+	.byte	'Can_MaxDataLenOfMailboxType',0,10,153,16,15
+	.word	146
+	.byte	11
+	.byte	'Can_MemorySectionsIndexOfMailboxType',0,10,156,16,15
+	.word	146
+	.byte	11
+	.byte	'Can_MemorySectionStartOfMemorySectionInfoType',0,10,159,16,15
+	.word	146
+	.byte	11
+	.byte	'Can_HwHandleOfMemorySectionObjectsType',0,10,162,16,15
+	.word	146
+	.byte	11
+	.byte	'Can_MailboxElementOfMemorySectionObjectsType',0,10,165,16,15
+	.word	146
+	.byte	11
+	.byte	'Can_MailboxHandleOfMemorySectionObjectsType',0,10,168,16,15
+	.word	146
+	.byte	11
+	.byte	'Can_FLSSAOfSIDFCType',0,10,174,16,15
+	.word	146
+	.byte	11
+	.byte	'Can_LSSOfSIDFCType',0,10,177,16,15
+	.word	146
+	.byte	11
+	.byte	'Can_SIDFEEndIdxOfSIDFCType',0,10,180,16,15
+	.word	146
+	.byte	11
+	.byte	'Can_SIDFEStartIdxOfSIDFCType',0,10,183,16,15
+	.word	146
+	.byte	11
+	.byte	'Can_SIDFEType',0,10,189,16,16
+	.word	163
+	.byte	11
+	.byte	'Can_SRN_AddressType',0,10,192,16,16
+	.word	163
+	.byte	11
+	.byte	'Can_RXBAOfShmAdrType',0,10,195,16,16
+	.word	163
+	.byte	11
+	.byte	'Can_RXF0AOfShmAdrType',0,10,198,16,16
+	.word	163
+	.byte	11
+	.byte	'Can_RXF1AOfShmAdrType',0,10,201,16,16
+	.word	163
+	.byte	11
+	.byte	'Can_SIDFAOfShmAdrType',0,10,204,16,16
+	.word	163
+	.byte	11
+	.byte	'Can_StartAdrOfShmAdrType',0,10,207,16,16
+	.word	163
+	.byte	11
+	.byte	'Can_StopAdrOfShmAdrType',0,10,210,16,16
+	.word	163
+	.byte	11
+	.byte	'Can_TXBAOfShmAdrType',0,10,213,16,16
+	.word	163
+	.byte	11
+	.byte	'Can_TXEFAOfShmAdrType',0,10,216,16,16
+	.word	163
+	.byte	11
+	.byte	'Can_XIDFAOfShmAdrType',0,10,219,16,16
+	.word	163
+	.byte	11
+	.byte	'Can_F0DSOfShmElementSizeType',0,10,222,16,15
+	.word	146
+	.byte	11
+	.byte	'Can_F1DSOfShmElementSizeType',0,10,225,16,15
+	.word	146
+	.byte	11
+	.byte	'Can_RBDSOfShmElementSizeType',0,10,228,16,15
+	.word	146
+	.byte	11
+	.byte	'Can_TBDSOfShmElementSizeType',0,10,231,16,15
+	.word	146
+	.byte	11
+	.byte	'Can_TEFBDSOfShmElementSizeType',0,10,234,16,15
+	.word	146
+	.byte	11
+	.byte	'Can_TDCRType',0,10,190,17,16
+	.word	356
+	.byte	11
+	.byte	'Can_XIDAMType',0,10,193,17,16
+	.word	163
+	.byte	11
+	.byte	'Can_FLESAOfXIDFCType',0,10,196,17,15
+	.word	146
+	.byte	11
+	.byte	'Can_LSEOfXIDFCType',0,10,199,17,15
+	.word	146
+	.byte	11
+	.byte	'Can_EIDFE_0OfXIDFEType',0,10,202,17,15
+	.word	146
+	.byte	11
+	.byte	'Can_EIDFE_1OfXIDFEType',0,10,205,17,15
+	.word	146
+	.byte	14
+	.byte	'sCan_ActiveSendObjectType',0,10,224,17,16,4,13
 	.byte	'StateOfActiveSendObject',0
-	.word	297
-	.byte	2,2,35,0,12
+	.word	356
+	.byte	2,2,35,0,13
 	.byte	'PduOfActiveSendObject',0
-	.word	280
-	.byte	1,2,35,2,0,10
-	.byte	'Can_ActiveSendObjectType',0,9,228,17,3
-	.word	5303
-	.byte	13
-	.byte	'sCan_BufferConfigType',0,9,231,17,16,12,12
+	.word	146
+	.byte	1,2,35,2,0,11
+	.byte	'Can_ActiveSendObjectType',0,10,228,17,3
+	.word	5449
+	.byte	14
+	.byte	'sCan_BufferConfigType',0,10,231,17,16,12,13
 	.byte	'RXF0COfBufferConfig',0
-	.word	146
-	.byte	4,2,35,0,12
+	.word	163
+	.byte	4,2,35,0,13
 	.byte	'TXBCOfBufferConfig',0
-	.word	146
-	.byte	4,2,35,4,12
+	.word	163
+	.byte	4,2,35,4,13
 	.byte	'RXBCOfBufferConfig',0
-	.word	280
-	.byte	1,2,35,8,12
+	.word	146
+	.byte	1,2,35,8,13
 	.byte	'RXF1COfBufferConfig',0
-	.word	280
-	.byte	1,2,35,9,12
+	.word	146
+	.byte	1,2,35,9,13
 	.byte	'TXEFCOfBufferConfig',0
-	.word	280
-	.byte	1,2,35,10,0,10
-	.byte	'Can_BufferConfigType',0,9,238,17,3
-	.word	5434
-	.byte	13
-	.byte	'sCan_ControllerConfigType',0,9,247,17,16,28,12
+	.word	146
+	.byte	1,2,35,10,0,11
+	.byte	'Can_BufferConfigType',0,10,238,17,3
+	.word	5580
+	.byte	14
+	.byte	'sCan_ControllerConfigType',0,10,247,17,16,28,13
 	.byte	'BasisAdrOfControllerConfig',0
-	.word	146
-	.byte	4,2,35,0,12
+	.word	163
+	.byte	4,2,35,0,13
 	.byte	'CanControllerDefaultBaudrateOfControllerConfig',0
-	.word	297
-	.byte	2,2,35,4,12
+	.word	356
+	.byte	2,2,35,4,13
 	.byte	'IsTTCanOfControllerConfig',0
-	.word	280
-	.byte	1,2,35,6,12
+	.word	146
+	.byte	1,2,35,6,13
 	.byte	'CanControllerDefaultBaudrateIdxOfControllerConfig',0
-	.word	280
-	.byte	1,2,35,7,12
+	.word	146
+	.byte	1,2,35,7,13
 	.byte	'MailboxRxBasicEndIdxOfControllerConfig',0
-	.word	280
-	.byte	1,2,35,8,12
+	.word	146
+	.byte	1,2,35,8,13
 	.byte	'MailboxRxBasicLengthOfControllerConfig',0
-	.word	280
-	.byte	1,2,35,9,12
+	.word	146
+	.byte	1,2,35,9,13
 	.byte	'MailboxRxBasicStartIdxOfControllerConfig',0
-	.word	280
-	.byte	1,2,35,10,12
+	.word	146
+	.byte	1,2,35,10,13
 	.byte	'MailboxTxBasicEndIdxOfControllerConfig',0
-	.word	280
-	.byte	1,2,35,11,12
+	.word	146
+	.byte	1,2,35,11,13
 	.byte	'MailboxTxBasicLengthOfControllerConfig',0
-	.word	280
-	.byte	1,2,35,12,12
+	.word	146
+	.byte	1,2,35,12,13
 	.byte	'MailboxTxBasicStartIdxOfControllerConfig',0
-	.word	280
-	.byte	1,2,35,13,12
+	.word	146
+	.byte	1,2,35,13,13
 	.byte	'RxBasicHwStartOfControllerConfig',0
-	.word	280
-	.byte	1,2,35,14,12
+	.word	146
+	.byte	1,2,35,14,13
 	.byte	'RxBasicHwStopOfControllerConfig',0
-	.word	280
-	.byte	1,2,35,15,12
+	.word	146
+	.byte	1,2,35,15,13
 	.byte	'RxFullHwStartOfControllerConfig',0
-	.word	280
-	.byte	1,2,35,16,12
+	.word	146
+	.byte	1,2,35,16,13
 	.byte	'RxFullHwStopOfControllerConfig',0
-	.word	280
-	.byte	1,2,35,17,12
+	.word	146
+	.byte	1,2,35,17,13
 	.byte	'RxSelectionOfControllerConfig',0
-	.word	280
-	.byte	1,2,35,18,12
+	.word	146
+	.byte	1,2,35,18,13
 	.byte	'TxBasicHwStartOfControllerConfig',0
-	.word	280
-	.byte	1,2,35,19,12
+	.word	146
+	.byte	1,2,35,19,13
 	.byte	'TxBasicHwStopOfControllerConfig',0
-	.word	280
-	.byte	1,2,35,20,12
+	.word	146
+	.byte	1,2,35,20,13
 	.byte	'TxFullHwStartOfControllerConfig',0
-	.word	280
-	.byte	1,2,35,21,12
+	.word	146
+	.byte	1,2,35,21,13
 	.byte	'TxFullHwStopOfControllerConfig',0
-	.word	280
-	.byte	1,2,35,22,12
+	.word	146
+	.byte	1,2,35,22,13
 	.byte	'UnusedHwStartOfControllerConfig',0
-	.word	280
-	.byte	1,2,35,23,12
+	.word	146
+	.byte	1,2,35,23,13
 	.byte	'UnusedHwStopOfControllerConfig',0
-	.word	280
-	.byte	1,2,35,24,0,10
-	.byte	'Can_ControllerConfigType',0,9,142,18,3
-	.word	5636
-	.byte	13
-	.byte	'sCan_ControllerDataType',0,9,145,18,16,64,12
+	.word	146
+	.byte	1,2,35,24,0,11
+	.byte	'Can_ControllerConfigType',0,10,142,18,3
+	.word	5782
+	.byte	14
+	.byte	'sCan_ControllerDataType',0,10,145,18,16,64,13
 	.byte	'IntEnableOfControllerData',0
-	.word	146
-	.byte	4,2,35,0,12
+	.word	163
+	.byte	4,2,35,0,13
 	.byte	'NonFdObjectsPendingFlagOfControllerData',0
-	.word	146
-	.byte	4,2,35,4,12
+	.word	163
+	.byte	4,2,35,4,13
 	.byte	'TXBCROfControllerData',0
-	.word	146
-	.byte	4,2,35,8,12
+	.word	163
+	.byte	4,2,35,8,13
 	.byte	'TXBRPOfControllerData',0
-	.word	146
-	.byte	4,2,35,12,12
+	.word	163
+	.byte	4,2,35,12,13
 	.byte	'BusOffNotificationOfControllerData',0
-	.word	280
-	.byte	1,2,35,16,12
+	.word	146
+	.byte	1,2,35,16,13
 	.byte	'BusOffTransitionRequestOfControllerData',0
-	.word	280
-	.byte	1,2,35,17,12
+	.word	146
+	.byte	1,2,35,17,13
 	.byte	'CanInterruptCounterOfControllerData',0
-	.word	280
-	.byte	1,2,35,18,12
+	.word	146
+	.byte	1,2,35,18,13
 	.byte	'IsBusOffOfControllerData',0
-	.word	280
-	.byte	1,2,35,19,12
+	.word	146
+	.byte	1,2,35,19,13
 	.byte	'LastInitObjectOfControllerData',0
-	.word	280
-	.byte	1,2,35,20,12
+	.word	146
+	.byte	1,2,35,20,13
 	.byte	'LastStateOfControllerData',0
-	.word	280
-	.byte	1,2,35,21,12
+	.word	146
+	.byte	1,2,35,21,13
 	.byte	'LogStatusOfControllerData',0
-	.word	280
-	.byte	1,2,35,22,12
+	.word	146
+	.byte	1,2,35,22,13
 	.byte	'ModeTransitionRequestOfControllerData',0
-	.word	280
-	.byte	1,2,35,23,12
+	.word	146
+	.byte	1,2,35,23,13
 	.byte	'PrevModeOfControllerData',0
-	.word	280
-	.byte	1,2,35,24,12
+	.word	146
+	.byte	1,2,35,24,13
 	.byte	'RamCheckTransitionRequestOfControllerData',0
-	.word	280
-	.byte	1,2,35,25,12
+	.word	146
+	.byte	1,2,35,25,13
 	.byte	'CanInterruptOldStatusOfControllerData',0
-	.word	146
-	.byte	4,2,35,26,12
+	.word	163
+	.byte	4,2,35,26,13
 	.byte	'LoopTimeoutOfControllerData',0
-	.word	1504
-	.byte	32,2,35,30,0,10
-	.byte	'Can_ControllerDataType',0,9,163,18,3
-	.word	6629
-	.byte	14,32
-	.word	146
-	.byte	15,7,0,13
-	.byte	'sCan_MailboxType',0,9,169,18,16,12,12
+	.word	1650
+	.byte	32,2,35,30,0,11
+	.byte	'Can_ControllerDataType',0,10,163,18,3
+	.word	6775
+	.byte	15,32
+	.word	163
+	.byte	16,7,0,14
+	.byte	'sCan_MailboxType',0,10,169,18,16,12,13
 	.byte	'ActiveSendObjectOfMailbox',0
-	.word	280
-	.byte	1,2,35,0,12
+	.word	146
+	.byte	1,2,35,0,13
 	.byte	'ControllerConfigIdxOfMailbox',0
-	.word	280
-	.byte	1,2,35,1,12
+	.word	146
+	.byte	1,2,35,1,13
 	.byte	'FdPaddingOfMailbox',0
-	.word	280
-	.byte	1,2,35,2,12
+	.word	146
+	.byte	1,2,35,2,13
 	.byte	'HwHandleOfMailbox',0
-	.word	280
-	.byte	1,2,35,3,12
+	.word	146
+	.byte	1,2,35,3,13
 	.byte	'IDValueOfMailbox',0
-	.word	280
-	.byte	1,2,35,4,12
+	.word	146
+	.byte	1,2,35,4,13
 	.byte	'MailboxSizeOfMailbox',0
-	.word	280
-	.byte	1,2,35,5,12
+	.word	146
+	.byte	1,2,35,5,13
 	.byte	'MailboxTypeOfMailbox',0
-	.word	280
-	.byte	1,2,35,6,12
+	.word	146
+	.byte	1,2,35,6,13
 	.byte	'MaxDataLenOfMailbox',0
-	.word	280
-	.byte	1,2,35,7,12
+	.word	146
+	.byte	1,2,35,7,13
 	.byte	'MemorySectionsIndexOfMailbox',0
-	.word	280
-	.byte	1,2,35,8,0,10
-	.byte	'Can_MailboxType',0,9,180,18,3
-	.word	7345
-	.byte	13
-	.byte	'sCan_MemorySectionInfoType',0,9,183,18,16,1,12
+	.word	146
+	.byte	1,2,35,8,0,11
+	.byte	'Can_MailboxType',0,10,180,18,3
+	.word	7491
+	.byte	14
+	.byte	'sCan_MemorySectionInfoType',0,10,183,18,16,1,13
 	.byte	'MemorySectionStartOfMemorySectionInfo',0
-	.word	280
-	.byte	1,2,35,0,0,10
-	.byte	'Can_MemorySectionInfoType',0,9,186,18,3
-	.word	7675
-	.byte	13
-	.byte	'sCan_MemorySectionObjectsType',0,9,189,18,16,4,12
+	.word	146
+	.byte	1,2,35,0,0,11
+	.byte	'Can_MemorySectionInfoType',0,10,186,18,3
+	.word	7821
+	.byte	14
+	.byte	'sCan_MemorySectionObjectsType',0,10,189,18,16,4,13
 	.byte	'HwHandleOfMemorySectionObjects',0
-	.word	280
-	.byte	1,2,35,0,12
+	.word	146
+	.byte	1,2,35,0,13
 	.byte	'MailboxElementOfMemorySectionObjects',0
-	.word	280
-	.byte	1,2,35,1,12
+	.word	146
+	.byte	1,2,35,1,13
 	.byte	'MailboxHandleOfMemorySectionObjects',0
-	.word	280
-	.byte	1,2,35,2,0,10
-	.byte	'Can_MemorySectionObjectsType',0,9,194,18,3
-	.word	7791
-	.byte	13
-	.byte	'sCan_SIDFCType',0,9,201,18,16,4,12
+	.word	146
+	.byte	1,2,35,2,0,11
+	.byte	'Can_MemorySectionObjectsType',0,10,194,18,3
+	.word	7937
+	.byte	14
+	.byte	'sCan_SIDFCType',0,10,201,18,16,4,13
 	.byte	'FLSSAOfSIDFC',0
-	.word	280
-	.byte	1,2,35,0,12
+	.word	146
+	.byte	1,2,35,0,13
 	.byte	'LSSOfSIDFC',0
-	.word	280
-	.byte	1,2,35,1,12
+	.word	146
+	.byte	1,2,35,1,13
 	.byte	'SIDFEEndIdxOfSIDFC',0
-	.word	280
-	.byte	1,2,35,2,12
+	.word	146
+	.byte	1,2,35,2,13
 	.byte	'SIDFEStartIdxOfSIDFC',0
-	.word	280
-	.byte	1,2,35,3,0,10
-	.byte	'Can_SIDFCType',0,9,207,18,3
-	.word	7997
-	.byte	13
-	.byte	'sCan_ShmAdrType',0,9,210,18,16,36,12
+	.word	146
+	.byte	1,2,35,3,0,11
+	.byte	'Can_SIDFCType',0,10,207,18,3
+	.word	8143
+	.byte	14
+	.byte	'sCan_ShmAdrType',0,10,210,18,16,36,13
 	.byte	'RXBAOfShmAdr',0
-	.word	146
-	.byte	4,2,35,0,12
+	.word	163
+	.byte	4,2,35,0,13
 	.byte	'RXF0AOfShmAdr',0
-	.word	146
-	.byte	4,2,35,4,12
+	.word	163
+	.byte	4,2,35,4,13
 	.byte	'RXF1AOfShmAdr',0
-	.word	146
-	.byte	4,2,35,8,12
+	.word	163
+	.byte	4,2,35,8,13
 	.byte	'SIDFAOfShmAdr',0
-	.word	146
-	.byte	4,2,35,12,12
+	.word	163
+	.byte	4,2,35,12,13
 	.byte	'StartAdrOfShmAdr',0
-	.word	146
-	.byte	4,2,35,16,12
+	.word	163
+	.byte	4,2,35,16,13
 	.byte	'StopAdrOfShmAdr',0
-	.word	146
-	.byte	4,2,35,20,12
+	.word	163
+	.byte	4,2,35,20,13
 	.byte	'TXBAOfShmAdr',0
-	.word	146
-	.byte	4,2,35,24,12
+	.word	163
+	.byte	4,2,35,24,13
 	.byte	'TXEFAOfShmAdr',0
-	.word	146
-	.byte	4,2,35,28,12
+	.word	163
+	.byte	4,2,35,28,13
 	.byte	'XIDFAOfShmAdr',0
-	.word	146
-	.byte	4,2,35,32,0,10
-	.byte	'Can_ShmAdrType',0,9,221,18,3
-	.word	8142
-	.byte	13
-	.byte	'sCan_ShmElementSizeType',0,9,224,18,16,6,12
+	.word	163
+	.byte	4,2,35,32,0,11
+	.byte	'Can_ShmAdrType',0,10,221,18,3
+	.word	8288
+	.byte	14
+	.byte	'sCan_ShmElementSizeType',0,10,224,18,16,6,13
 	.byte	'F0DSOfShmElementSize',0
-	.word	280
-	.byte	1,2,35,0,12
+	.word	146
+	.byte	1,2,35,0,13
 	.byte	'F1DSOfShmElementSize',0
-	.word	280
-	.byte	1,2,35,1,12
+	.word	146
+	.byte	1,2,35,1,13
 	.byte	'RBDSOfShmElementSize',0
-	.word	280
-	.byte	1,2,35,2,12
+	.word	146
+	.byte	1,2,35,2,13
 	.byte	'TBDSOfShmElementSize',0
-	.word	280
-	.byte	1,2,35,3,12
+	.word	146
+	.byte	1,2,35,3,13
 	.byte	'TEFBDSOfShmElementSize',0
-	.word	280
-	.byte	1,2,35,4,0,10
-	.byte	'Can_ShmElementSizeType',0,9,231,18,3
-	.word	8399
-	.byte	13
-	.byte	'sCan_XIDFCType',0,9,234,18,16,2,12
+	.word	146
+	.byte	1,2,35,4,0,11
+	.byte	'Can_ShmElementSizeType',0,10,231,18,3
+	.word	8545
+	.byte	14
+	.byte	'sCan_XIDFCType',0,10,234,18,16,2,13
 	.byte	'FLESAOfXIDFC',0
-	.word	280
-	.byte	1,2,35,0,12
+	.word	146
+	.byte	1,2,35,0,13
 	.byte	'LSEOfXIDFC',0
-	.word	280
-	.byte	1,2,35,1,0,10
-	.byte	'Can_XIDFCType',0,9,238,18,3
-	.word	8614
-	.byte	13
-	.byte	'sCan_XIDFEType',0,9,241,18,16,2,12
+	.word	146
+	.byte	1,2,35,1,0,11
+	.byte	'Can_XIDFCType',0,10,238,18,3
+	.word	8760
+	.byte	14
+	.byte	'sCan_XIDFEType',0,10,241,18,16,2,13
 	.byte	'EIDFE_0OfXIDFE',0
-	.word	280
-	.byte	1,2,35,0,12
+	.word	146
+	.byte	1,2,35,0,13
 	.byte	'EIDFE_1OfXIDFE',0
-	.word	280
-	.byte	1,2,35,1,0,10
-	.byte	'Can_XIDFEType',0,9,245,18,3
-	.word	8701
-	.byte	13
-	.byte	'sCan_PCConfigType',0,9,219,19,16,1,12
+	.word	146
+	.byte	1,2,35,1,0,11
+	.byte	'Can_XIDFEType',0,10,245,18,3
+	.word	8847
+	.byte	14
+	.byte	'sCan_PCConfigType',0,10,219,19,16,1,13
 	.byte	'Can_PCConfigNeverUsed',0
-	.word	280
-	.byte	1,2,35,0,0,10
-	.byte	'Can_PCConfigType',0,9,222,19,3
-	.word	8794
-	.byte	10
-	.byte	'Can_ConfigType',0,9,224,19,26
-	.word	8794
-	.byte	14,64
-	.word	6629
-	.byte	15,0,0,16
-	.byte	'Can_ControllerData',0,9,161,24,52
-	.word	8900
-	.byte	1,1,17
 	.word	146
-	.byte	17
-	.word	146
-	.byte	14,64
-	.word	146
-	.byte	15,15,0,17
-	.word	8949
-	.byte	13
-	.byte	'tElmTypeTag',0,10,189,9,25,72,12
+	.byte	1,2,35,0,0,11
+	.byte	'Can_PCConfigType',0,10,222,19,3
+	.word	8940
+	.byte	11
+	.byte	'Can_ConfigType',0,10,224,19,26
+	.word	8940
+	.byte	15,64
+	.word	6775
+	.byte	16,0,0,17
+	.byte	'Can_ControllerData',0,10,161,24,52
+	.word	9046
+	.byte	1,1,18
+	.word	163
+	.byte	18
+	.word	163
+	.byte	15,64
+	.word	163
+	.byte	16,15,0,18
+	.word	9095
+	.byte	14
+	.byte	'tElmTypeTag',0,11,189,9,25,72,13
 	.byte	'E0',0
-	.word	8939
-	.byte	4,2,35,0,12
+	.word	9085
+	.byte	4,2,35,0,13
 	.byte	'E1',0
-	.word	8944
-	.byte	4,2,35,4,12
+	.word	9090
+	.byte	4,2,35,4,13
 	.byte	'data',0
-	.word	8958
-	.byte	64,2,35,8,0,17
-	.word	8963
-	.byte	10
-	.byte	'tElmType',0,10,206,9,3
-	.word	9020
-	.byte	17
+	.word	9104
+	.byte	64,2,35,8,0,18
+	.word	9109
+	.byte	11
+	.byte	'tElmType',0,11,206,9,3
+	.word	9166
+	.byte	18
+	.word	163
+	.byte	18
 	.word	146
-	.byte	17
-	.word	280
-	.byte	17
-	.word	280
-	.byte	17
-	.word	280
-	.byte	11,10,144,10,5,4,18
+	.byte	18
+	.word	146
+	.byte	18
+	.word	146
+	.byte	12,11,144,10,5,4,19
 	.byte	'ID',0,4
-	.word	9043
-	.byte	29,3,2,35,0,18
+	.word	9189
+	.byte	29,3,2,35,0,19
 	.byte	'RTR',0,1
-	.word	9048
-	.byte	1,2,2,35,3,18
+	.word	9194
+	.byte	1,2,2,35,3,19
 	.byte	'XTD',0,1
-	.word	9053
-	.byte	1,1,2,35,3,18
+	.word	9199
+	.byte	1,1,2,35,3,19
 	.byte	'ESI',0,1
-	.word	9058
-	.byte	1,0,2,35,3,0,17
-	.word	146
-	.byte	19,10,142,10,3,4,12
+	.word	9204
+	.byte	1,0,2,35,3,0,18
+	.word	163
+	.byte	20,11,142,10,3,4,13
 	.byte	'b0',0
-	.word	9063
-	.byte	4,2,35,0,12
+	.word	9209
+	.byte	4,2,35,0,13
 	.byte	'B0',0
-	.word	9129
-	.byte	4,2,35,0,0,17
-	.word	297
-	.byte	17
-	.word	280
-	.byte	17
-	.word	280
-	.byte	17
-	.word	280
-	.byte	17
-	.word	280
-	.byte	17
-	.word	280
-	.byte	17
-	.word	280
-	.byte	11,10,155,10,5,4,18
+	.word	9275
+	.byte	4,2,35,0,0,18
+	.word	356
+	.byte	18
+	.word	146
+	.byte	18
+	.word	146
+	.byte	18
+	.word	146
+	.byte	18
+	.word	146
+	.byte	18
+	.word	146
+	.byte	18
+	.word	146
+	.byte	12,11,155,10,5,4,19
 	.byte	'RXTS',0,2
-	.word	9165
-	.byte	16,0,2,35,0,18
+	.word	9311
+	.byte	16,0,2,35,0,19
 	.byte	'DLC',0,1
-	.word	9170
-	.byte	4,4,2,35,2,18
+	.word	9316
+	.byte	4,4,2,35,2,19
 	.byte	'BRS',0,1
-	.word	9175
-	.byte	1,3,2,35,2,18
+	.word	9321
+	.byte	1,3,2,35,2,19
 	.byte	'FDF',0,1
-	.word	9180
-	.byte	1,2,2,35,2,18
+	.word	9326
+	.byte	1,2,2,35,2,19
 	.byte	'r0',0,1
-	.word	9185
-	.byte	2,0,2,35,2,18
+	.word	9331
+	.byte	2,0,2,35,2,19
 	.byte	'FIDX',0,1
-	.word	9190
-	.byte	7,1,2,35,3,18
+	.word	9336
+	.byte	7,1,2,35,3,19
 	.byte	'ANMF',0,1
-	.word	9195
-	.byte	1,0,2,35,3,0,17
-	.word	297
-	.byte	17
-	.word	280
-	.byte	17
-	.word	280
-	.byte	17
-	.word	280
-	.byte	17
-	.word	280
-	.byte	17
-	.word	280
-	.byte	17
-	.word	280
-	.byte	11,10,165,10,5,4,18
+	.word	9341
+	.byte	1,0,2,35,3,0,18
+	.word	356
+	.byte	18
+	.word	146
+	.byte	18
+	.word	146
+	.byte	18
+	.word	146
+	.byte	18
+	.word	146
+	.byte	18
+	.word	146
+	.byte	18
+	.word	146
+	.byte	12,11,165,10,5,4,19
 	.byte	'r1',0,2
-	.word	9314
-	.byte	16,0,2,35,0,18
+	.word	9460
+	.byte	16,0,2,35,0,19
 	.byte	'DLC',0,1
-	.word	9319
-	.byte	4,4,2,35,2,18
+	.word	9465
+	.byte	4,4,2,35,2,19
 	.byte	'BRS',0,1
-	.word	9324
-	.byte	1,3,2,35,2,18
+	.word	9470
+	.byte	1,3,2,35,2,19
 	.byte	'FDF',0,1
-	.word	9329
-	.byte	1,2,2,35,2,18
+	.word	9475
+	.byte	1,2,2,35,2,19
 	.byte	'r0',0,1
-	.word	9334
-	.byte	1,1,2,35,2,18
+	.word	9480
+	.byte	1,1,2,35,2,19
 	.byte	'EFC',0,1
-	.word	9339
-	.byte	1,0,2,35,2,18
+	.word	9485
+	.byte	1,0,2,35,2,19
 	.byte	'MM',0,1
-	.word	9344
-	.byte	8,0,2,35,3,0,19,10,153,10,3,4,12
+	.word	9490
+	.byte	8,0,2,35,3,0,20,11,153,10,3,4,13
 	.byte	'rb1',0
-	.word	9200
-	.byte	4,2,35,0,12
+	.word	9346
+	.byte	4,2,35,0,13
 	.byte	'tb1',0
-	.word	9349
-	.byte	4,2,35,0,12
+	.word	9495
+	.byte	4,2,35,0,13
 	.byte	'B1',0
-	.word	146
-	.byte	4,2,35,0,0,17
-	.word	8949
-	.byte	13
-	.byte	'tCanChipMsgPtrTag',0,10,140,10,25,72,12
+	.word	163
+	.byte	4,2,35,0,0,18
+	.word	9095
+	.byte	14
+	.byte	'tCanChipMsgPtrTag',0,11,140,10,25,72,13
 	.byte	'uB0',0
-	.word	9134
-	.byte	4,2,35,0,12
+	.word	9280
+	.byte	4,2,35,0,13
 	.byte	'uB1',0
-	.word	9458
-	.byte	4,2,35,4,12
+	.word	9604
+	.byte	4,2,35,4,13
 	.byte	'data',0
-	.word	9503
-	.byte	64,2,35,8,0,17
-	.word	9508
-	.byte	10
-	.byte	'tCanChipMsgPtr',0,10,182,10,3
-	.word	9573
-	.byte	11,10,189,10,3,4,18
+	.word	9649
+	.byte	64,2,35,8,0,18
+	.word	9654
+	.byte	11
+	.byte	'tCanChipMsgPtr',0,11,182,10,3
+	.word	9719
+	.byte	12,11,189,10,3,4,19
 	.byte	'FnFL',0,1
-	.word	280
-	.byte	7,1,2,35,0,18
+	.word	146
+	.byte	7,1,2,35,0,19
 	.byte	'r2',0,1
-	.word	280
-	.byte	1,0,2,35,0,18
+	.word	146
+	.byte	1,0,2,35,0,19
 	.byte	'FnGI',0,1
-	.word	280
-	.byte	6,2,2,35,1,18
+	.word	146
+	.byte	6,2,2,35,1,19
 	.byte	'r1',0,4
-	.word	146
-	.byte	10,8,2,35,0,18
+	.word	163
+	.byte	10,8,2,35,0,19
 	.byte	'FnF',0,1
-	.word	280
-	.byte	1,7,2,35,3,18
+	.word	146
+	.byte	1,7,2,35,3,19
 	.byte	'RFnL',0,1
-	.word	280
-	.byte	1,6,2,35,3,18
-	.byte	'r0',0,1
-	.word	280
-	.byte	6,0,2,35,3,0,20
-	.byte	'tRXFnSTag',0,10,186,10,15,4,12
-	.byte	'R',0
 	.word	146
-	.byte	4,2,35,0,12
+	.byte	1,6,2,35,3,19
+	.byte	'r0',0,1
+	.word	146
+	.byte	6,0,2,35,3,0,21
+	.byte	'tRXFnSTag',0,11,186,10,15,4,13
+	.byte	'R',0
+	.word	163
+	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	9602
-	.byte	4,2,35,0,0,10
-	.byte	'tRXFnS',0,10,199,10,3
-	.word	9714
-	.byte	11,10,204,10,3,4,21,1
-	.word	280
-	.byte	2,6,2,35,0,18
+	.word	9748
+	.byte	4,2,35,0,0,11
+	.byte	'tRXFnS',0,11,199,10,3
+	.word	9860
+	.byte	12,11,204,10,3,4,22,1
+	.word	146
+	.byte	2,6,2,35,0,19
 	.byte	'FOSA',0,2
-	.word	297
-	.byte	14,0,2,35,0,18
+	.word	356
+	.byte	14,0,2,35,0,19
 	.byte	'F0S',0,1
-	.word	280
-	.byte	7,1,2,35,2,21,1
-	.word	280
-	.byte	1,0,2,35,2,18
+	.word	146
+	.byte	7,1,2,35,2,22,1
+	.word	146
+	.byte	1,0,2,35,2,19
 	.byte	'F0WM',0,1
-	.word	280
-	.byte	7,1,2,35,3,21,1
-	.word	280
-	.byte	1,0,2,35,3,0,20
-	.byte	'tRXFnCTag',0,10,201,10,15,4,12
-	.byte	'R',0
 	.word	146
-	.byte	4,2,35,0,12
+	.byte	7,1,2,35,3,22,1
+	.word	146
+	.byte	1,0,2,35,3,0,21
+	.byte	'tRXFnCTag',0,11,201,10,15,4,13
+	.byte	'R',0
+	.word	163
+	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	9769
-	.byte	4,2,35,0,0,10
-	.byte	'tRXFnC',0,10,213,10,3
-	.word	9856
-	.byte	11,10,219,10,3,4,18
+	.word	9915
+	.byte	4,2,35,0,0,11
+	.byte	'tRXFnC',0,11,213,10,3
+	.word	10002
+	.byte	12,11,219,10,3,4,19
 	.byte	'F0DS',0,1
-	.word	280
-	.byte	3,5,2,35,0,21,1
-	.word	280
-	.byte	1,4,2,35,0,18
+	.word	146
+	.byte	3,5,2,35,0,22,1
+	.word	146
+	.byte	1,4,2,35,0,19
 	.byte	'F1DS',0,1
-	.word	280
-	.byte	3,1,2,35,0,21,1
-	.word	280
-	.byte	1,0,2,35,0,18
+	.word	146
+	.byte	3,1,2,35,0,22,1
+	.word	146
+	.byte	1,0,2,35,0,19
 	.byte	'RBDS',0,1
-	.word	280
-	.byte	3,5,2,35,1,21,4
 	.word	146
-	.byte	21,0,2,35,0,0,20
-	.byte	'tRXESCTag',0,10,216,10,15,4,12
+	.byte	3,5,2,35,1,22,4
+	.word	163
+	.byte	21,0,2,35,0,0,21
+	.byte	'tRXESCTag',0,11,216,10,15,4,13
 	.byte	'R',0
-	.word	146
-	.byte	4,2,35,0,12
+	.word	163
+	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	9911
-	.byte	4,2,35,0,0,10
-	.byte	'tRXESC',0,10,228,10,3
-	.word	9999
-	.byte	11,10,233,10,3,4,18
+	.word	10057
+	.byte	4,2,35,0,0,11
+	.byte	'tRXESC',0,11,228,10,3
+	.word	10145
+	.byte	12,11,233,10,3,4,19
 	.byte	'TFFL',0,1
-	.word	280
-	.byte	6,2,2,35,0,21,1
-	.word	280
-	.byte	2,0,2,35,0,18
+	.word	146
+	.byte	6,2,2,35,0,22,1
+	.word	146
+	.byte	2,0,2,35,0,19
 	.byte	'TFGI',0,1
-	.word	280
-	.byte	5,3,2,35,1,21,1
-	.word	280
-	.byte	3,0,2,35,1,18
+	.word	146
+	.byte	5,3,2,35,1,22,1
+	.word	146
+	.byte	3,0,2,35,1,19
 	.byte	'TFQPI',0,1
-	.word	280
-	.byte	5,3,2,35,2,18
+	.word	146
+	.byte	5,3,2,35,2,19
 	.byte	'TFQF',0,1
-	.word	280
-	.byte	1,2,2,35,2,21,2
-	.word	297
-	.byte	10,0,2,35,2,0,20
-	.byte	'tTXFQSTag',0,10,230,10,15,4,12
-	.byte	'R',0
 	.word	146
-	.byte	4,2,35,0,12
+	.byte	1,2,2,35,2,22,2
+	.word	356
+	.byte	10,0,2,35,2,0,21
+	.byte	'tTXFQSTag',0,11,230,10,15,4,13
+	.byte	'R',0
+	.word	163
+	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	10054
-	.byte	4,2,35,0,0,10
-	.byte	'tTXFQS',0,10,243,10,3
-	.word	10159
-	.byte	11,10,248,10,3,4,18
+	.word	10200
+	.byte	4,2,35,0,0,11
+	.byte	'tTXFQS',0,11,243,10,3
+	.word	10305
+	.byte	12,11,248,10,3,4,19
 	.byte	'EFFL',0,1
-	.word	280
-	.byte	6,2,2,35,0,18
+	.word	146
+	.byte	6,2,2,35,0,19
 	.byte	'r1',0,1
-	.word	280
-	.byte	2,0,2,35,0,18
+	.word	146
+	.byte	2,0,2,35,0,19
 	.byte	'EFGI',0,1
-	.word	280
-	.byte	5,3,2,35,1,21,4
 	.word	146
-	.byte	11,8,2,35,0,18
+	.byte	5,3,2,35,1,22,4
+	.word	163
+	.byte	11,8,2,35,0,19
 	.byte	'EFF',0,1
-	.word	280
-	.byte	1,7,2,35,3,18
-	.byte	'TEFL',0,1
-	.word	280
-	.byte	1,6,2,35,3,18
-	.byte	'r0',0,1
-	.word	280
-	.byte	6,0,2,35,3,0,20
-	.byte	'tTXEFSTag',0,10,245,10,15,4,12
-	.byte	'R',0
 	.word	146
-	.byte	4,2,35,0,12
+	.byte	1,7,2,35,3,19
+	.byte	'TEFL',0,1
+	.word	146
+	.byte	1,6,2,35,3,19
+	.byte	'r0',0,1
+	.word	146
+	.byte	6,0,2,35,3,0,21
+	.byte	'tTXEFSTag',0,11,245,10,15,4,13
+	.byte	'R',0
+	.word	163
+	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	10214
-	.byte	4,2,35,0,0,10
-	.byte	'tTXEFS',0,10,130,11,3
-	.word	10323
-	.byte	13
-	.byte	'sDet_PCConfigType',0,11,238,1,16,1,12
+	.word	10360
+	.byte	4,2,35,0,0,11
+	.byte	'tTXEFS',0,11,130,11,3
+	.word	10469
+	.byte	7,12,163,1,9,1,8
+	.byte	'BswCore1Task',0,0,8
+	.byte	'Default_Appl_Init_Task',0,1,8
+	.byte	'Default_Appl_Task',0,2,8
+	.byte	'Default_BSW_ASync_Task_10ms',0,3,8
+	.byte	'Default_Init_Task',0,4,8
+	.byte	'Default_Init_Task_Core1',0,5,8
+	.byte	'Default_Init_Task_Core1_Trusted',0,6,8
+	.byte	'Default_Init_Task_Trusted',0,7,8
+	.byte	'Default_MotorInitTask',0,8,8
+	.byte	'IdleTask_OsCore0',0,9,8
+	.byte	'IdleTask_OsCore_1',0,10,8
+	.byte	'MotorTask',0,11,8
+	.byte	'INVALID_TASK',0,12,8
+	.byte	'OS_TASKID_COUNT',0,12,0,11
+	.byte	'TaskType',0,12,179,1,3
+	.word	10524
+	.byte	14
+	.byte	'Os_ExceptionContextType_Tag',0,13,71,8,160,1,13
+	.byte	'AddressRegisters',0
+	.word	9095
+	.byte	64,2,35,0,13
+	.byte	'DataRegisters',0
+	.word	9095
+	.byte	64,2,35,64,13
+	.byte	'Ra',0
+	.word	163
+	.byte	4,3,35,128,1,13
+	.byte	'Psw',0
+	.word	163
+	.byte	4,3,35,132,1,13
+	.byte	'ExceptionSource',0
+	.word	163
+	.byte	4,3,35,136,1,13
+	.byte	'Pcpn',0
+	.word	163
+	.byte	4,3,35,140,1,13
+	.byte	'Pie',0
+	.word	163
+	.byte	4,3,35,144,1,13
+	.byte	'MpuRegionForStackLow',0
+	.word	163
+	.byte	4,3,35,148,1,13
+	.byte	'MpuRegionForStackUpper',0
+	.word	163
+	.byte	4,3,35,152,1,13
+	.byte	'RawPCXI',0
+	.word	163
+	.byte	4,3,35,156,1,0,11
+	.byte	'Os_ExceptionContextType',0,14,59,44
+	.word	10855
+	.byte	11
+	.byte	'Os_InterruptSourceIdType',0,15,236,1,16
+	.word	163
+	.byte	11
+	.byte	'Os_ExceptionSourceIdType',0,15,244,1,16
+	.word	163
+	.byte	7,15,159,2,9,1,8
+	.byte	'RUNNING',0,0,8
+	.byte	'READY',0,1,8
+	.byte	'WAITING',0,2,8
+	.byte	'SUSPENDED',0,3,0,11
+	.byte	'TaskStateType',0,15,173,2,3
+	.word	11203
+	.byte	11
+	.byte	'EventMaskType',0,15,180,2,16
+	.word	713
+	.byte	11
+	.byte	'Os_TickType',0,15,198,2,19
+	.word	163
+	.byte	11
+	.byte	'TickType',0,15,204,2,21
+	.word	163
+	.byte	12,15,218,2,9,12,13
+	.byte	'maxallowedvalue',0
+	.word	163
+	.byte	4,2,35,0,13
+	.byte	'ticksperbase',0
+	.word	163
+	.byte	4,2,35,4,13
+	.byte	'mincycle',0
+	.word	163
+	.byte	4,2,35,8,0,11
+	.byte	'AlarmBaseType',0,15,226,2,2
+	.word	11335
+	.byte	7,15,254,2,9,1,8
+	.byte	'APPLICATION_TERMINATED',0,0,8
+	.byte	'APPLICATION_RESTARTING',0,1,8
+	.byte	'APPLICATION_ACCESSIBLE',0,2,0,11
+	.byte	'ApplicationStateType',0,15,131,3,3
+	.word	11430
+	.byte	7,15,175,3,9,1,8
+	.byte	'OSServiceId_GetApplicationID',0,0,8
+	.byte	'OSServiceId_GetISRID',0,1,8
+	.byte	'OSServiceId_CallTrustedFunction',0,2,8
+	.byte	'OSServiceId_CheckISRMemoryAccess',0,3,8
+	.byte	'OSServiceId_CheckTaskMemoryAccess',0,4,8
+	.byte	'OSServiceId_CheckObjectAccess',0,5,8
+	.byte	'OSServiceId_CheckObjectOwnership',0,6,8
+	.byte	'OSServiceId_StartScheduleTableRel',0,7,8
+	.byte	'OSServiceId_StartScheduleTableAbs',0,8,8
+	.byte	'OSServiceId_StopScheduleTable',0,9,8
+	.byte	'OSServiceId_NextScheduleTable',0,10,8
+	.byte	'OSServiceId_StartScheduleTableSynchron',0,11,8
+	.byte	'OSServiceId_SyncScheduleTable',0,12,8
+	.byte	'OSServiceId_SetScheduleTableAsync',0,13,8
+	.byte	'OSServiceId_GetScheduleTableStatus',0,14,8
+	.byte	'OSServiceId_IncrementCounter',0,15,8
+	.byte	'OSServiceId_GetCounterValue',0,16,8
+	.byte	'OSServiceId_GetElapsedValue',0,17,8
+	.byte	'OSServiceId_TerminateApplication',0,18,8
+	.byte	'OSServiceId_AllowAccess',0,19,8
+	.byte	'OSServiceId_GetApplicationState',0,20,8
+	.byte	'OSServiceId_GetNumberOfActivatedCores',0,21,8
+	.byte	'OSServiceId_GetCoreID',0,22,8
+	.byte	'OSServiceId_StartCore',0,23,8
+	.byte	'OSServiceId_StartNonAutosarCore',0,24,8
+	.byte	'OSServiceId_GetSpinlock',0,25,8
+	.byte	'OSServiceId_ReleaseSpinlock',0,26,8
+	.byte	'OSServiceId_TryToGetSpinlock',0,27,8
+	.byte	'OSServiceId_ShutdownAllCores',0,28,8
+	.byte	'OSServiceId_ControlIdle',0,29,8
+	.byte	'OSServiceId_IocSend',0,30,8
+	.byte	'OSServiceId_IocWrite',0,31,8
+	.byte	'OSServiceId_IocSendGroup',0,32,8
+	.byte	'OSServiceId_IocWriteGroup',0,33,8
+	.byte	'OSServiceId_IocReceive',0,34,8
+	.byte	'OSServiceId_IocRead',0,35,8
+	.byte	'OSServiceId_IocReceiveGroup',0,36,8
+	.byte	'OSServiceId_IocReadGroup',0,37,8
+	.byte	'OSServiceId_IocEmptyQueue',0,38,8
+	.byte	'OSServiceId_GetCurrentApplicationID',0,39,8
+	.byte	'OSServiceId_GetExceptionContext',0,160,1,8
+	.byte	'OSServiceId_SetExceptionContext',0,161,1,8
+	.byte	'OSServiceId_CallNonTrustedFunction',0,162,1,8
+	.byte	'OSServiceId_AppKill',0,163,1,8
+	.byte	'OSServiceId_AlarmActionSetEvent',0,164,1,8
+	.byte	'OSServiceId_AlarmActionActivateTask',0,165,1,8
+	.byte	'OSServiceId_AlarmActionIncrementCounter',0,166,1,8
+	.byte	'OSServiceId_AlarmActionCallback',0,167,1,8
+	.byte	'OSServiceId_TimerIsr',0,168,1,8
+	.byte	'OSServiceId_IsrWrapper',0,169,1,8
+	.byte	'OSServiceId_GetTaskStackUsage',0,170,1,8
+	.byte	'OSServiceId_GetISRStackUsage',0,171,1,8
+	.byte	'OSServiceId_GetKernelStackUsage',0,172,1,8
+	.byte	'OSServiceId_GetStartupHookStackUsage',0,173,1,8
+	.byte	'OSServiceId_GetErrorHookStackUsage',0,174,1,8
+	.byte	'OSServiceId_GetShutdownHookStackUsage',0,175,1,8
+	.byte	'OSServiceId_GetProtectionHookStackUsage',0,176,1,8
+	.byte	'OSServiceId_GetSemaphore',0,177,1,8
+	.byte	'OSServiceId_ReleaseSemaphore',0,178,1,8
+	.byte	'OSServiceId_ScheduleTableActivateTask',0,179,1,8
+	.byte	'OSServiceId_ScheduleTableSetEvent',0,180,1,8
+	.byte	'OSServiceId_DisableInterruptSource',0,181,1,8
+	.byte	'OSServiceId_EnableInterruptSource',0,182,1,8
+	.byte	'OSServiceId_ClearPendingInterrupt',0,183,1,8
+	.byte	'OSServiceId_GetUnhandledIrq',0,184,1,8
+	.byte	'OSServiceId_GetUnhandledExc',0,185,1,8
+	.byte	'OSServiceId_HookCallCallback',0,186,1,8
+	.byte	'OSServiceId_IsInterruptSourceEnabled',0,187,1,8
+	.byte	'OSServiceId_IsInterruptPending',0,188,1,8
+	.byte	'OSServiceId_CallFastTrustedFunction',0,189,1,8
+	.byte	'OSServiceId_BarrierSynchronize',0,190,1,8
+	.byte	'OSServiceId_InitialEnableInterruptSources',0,191,1,8
+	.byte	'OSServiceId_GetCoreStartState',0,192,1,8
+	.byte	'OSServiceId_GetNonTrustedFunctionStackUsage',0,193,1,8
+	.byte	'OSServiceId_StartOS',0,208,1,8
+	.byte	'OSServiceId_GetActiveApplicationMode',0,210,1,8
+	.byte	'OSServiceId_DisableAllInterrupts',0,211,1,8
+	.byte	'OSServiceId_EnableAllInterrupts',0,212,1,8
+	.byte	'OSServiceId_SuspendAllInterrupts',0,213,1,8
+	.byte	'OSServiceId_ResumeAllInterrupts',0,214,1,8
+	.byte	'OSServiceId_SuspendOSInterrupts',0,215,1,8
+	.byte	'OSServiceId_ResumeOSInterrupts',0,216,1,8
+	.byte	'OSServiceId_ActivateTask',0,217,1,8
+	.byte	'OSServiceId_TerminateTask',0,218,1,8
+	.byte	'OSServiceId_ChainTask',0,219,1,8
+	.byte	'OSServiceId_GetTaskID',0,220,1,8
+	.byte	'OSServiceId_GetTaskState',0,221,1,8
+	.byte	'OSServiceId_Schedule',0,222,1,8
+	.byte	'OSServiceId_SetEvent',0,223,1,8
+	.byte	'OSServiceId_ClearEvent',0,224,1,8
+	.byte	'OSServiceId_GetEvent',0,225,1,8
+	.byte	'OSServiceId_WaitEvent',0,226,1,8
+	.byte	'OSServiceId_GetAlarmBase',0,227,1,8
+	.byte	'OSServiceId_GetAlarm',0,228,1,8
+	.byte	'OSServiceId_SetRelAlarm',0,229,1,8
+	.byte	'OSServiceId_SetAbsAlarm',0,230,1,8
+	.byte	'OSServiceId_CancelAlarm',0,231,1,8
+	.byte	'OSServiceId_GetResource',0,232,1,8
+	.byte	'OSServiceId_ReleaseResource',0,233,1,8
+	.byte	'OSSERVICEID_COUNT',0,255,1,0,11
+	.byte	'OSServiceIdType',0,15,155,4,3
+	.word	11542
+	.byte	7,15,171,4,9,2,8
+	.byte	'OS_STATUS_OK',0,0,8
+	.byte	'OS_STATUS_CALLEVEL',0,2,8
+	.byte	'OS_STATUS_LIMIT',0,4,8
+	.byte	'OS_STATUS_RESOURCE',0,6,8
+	.byte	'OS_STATUS_SERVICEID',0,9,8
+	.byte	'OS_STATUS_ILLEGAL_ADDRESS',0,10,8
+	.byte	'OS_STATUS_MISSINGEND',0,11,8
+	.byte	'OS_STATUS_DISABLEDINT',0,12,8
+	.byte	'OS_STATUS_STACKFAULT',0,13,8
+	.byte	'OS_STATUS_PROTECTION_MEMORY',0,14,8
+	.byte	'OS_STATUS_PROTECTION_TIME',0,15,8
+	.byte	'OS_STATUS_PROTECTION_ARRIVAL',0,16,8
+	.byte	'OS_STATUS_PROTECTION_LOCKED',0,17,8
+	.byte	'OS_STATUS_PROTECTION_EXCEPTION',0,18,8
+	.byte	'OS_STATUS_INTERFERENCE_DEADLOCK',0,19,8
+	.byte	'OS_STATUS_NESTING_DEADLOCK',0,20,8
+	.byte	'OS_STATUS_SPINLOCK',0,21,8
+	.byte	'OS_STATUS_CORE',0,22,8
+	.byte	'OS_STATUS_OVERFLOW',0,245,1,8
+	.byte	'OS_STATUS_KILL_KERNEL_OBJ',0,246,1,8
+	.byte	'OS_STATUS_NO_RESTARTTASK',0,247,1,8
+	.byte	'OS_STATUS_CALL_NOT_ALLOWED',0,248,1,8
+	.byte	'OS_STATUS_FUNCTION_UNAVAILABLE',0,249,1,8
+	.byte	'OS_STATUS_PROTECTION_SYSCALL',0,250,1,8
+	.byte	'OS_STATUS_PROTECTION_IRQ',0,251,1,8
+	.byte	'OS_STATUS_API_ERROR',0,252,1,8
+	.byte	'OS_STATUS_ASSERTION',0,253,1,8
+	.byte	'OS_STATUS_OVERLOAD',0,254,1,8
+	.byte	'OS_STATUS_ACCESSRIGHTS_1',0,129,2,8
+	.byte	'OS_STATUS_CALLEVEL_SHARED_STACK',0,130,2,8
+	.byte	'OS_STATUS_ID_1',0,131,2,8
+	.byte	'OS_STATUS_UNLOCKED',0,133,2,8
+	.byte	'OS_STATUS_STATE_1',0,135,2,8
+	.byte	'OS_STATUS_VALUE_IS_ZERO_1',0,136,2,8
+	.byte	'OS_STATUS_CORE_CROSS_DATA',0,150,2,8
+	.byte	'OS_STATUS_PARAM_POINTER_1',0,151,2,8
+	.byte	'OS_STATUS_STACKUSAGE_DISABLED_BY_CONFIG',0,241,3,8
+	.byte	'OS_STATUS_NO_BARRIER_PARTICIPANT',0,242,3,8
+	.byte	'OS_STATUS_UNIMPLEMENTED_CLEARPENDING',0,243,3,8
+	.byte	'OS_STATUS_NO_NTFSTACK_POOL_EMPTY',0,244,3,8
+	.byte	'OS_STATUS_ACCESSRIGHTS_2',0,129,4,8
+	.byte	'OS_STATUS_CALLEVEL_CROSS_CORE_SYNC',0,130,4,8
+	.byte	'OS_STATUS_ID_2',0,131,4,8
+	.byte	'OS_STATUS_NOFUNC_1',0,133,4,8
+	.byte	'OS_STATUS_STATE_2',0,135,4,8
+	.byte	'OS_STATUS_VALUE_IS_ZERO_2',0,136,4,8
+	.byte	'OS_STATUS_PARAM_POINTER_2',0,151,4,8
+	.byte	'OS_STATUS_EVENT_DISABLED_BY_CONFIG',0,241,5,8
+	.byte	'OS_STATUS_UNIMPLEMENTED_EXCEPTIONCONTEXT',0,243,5,8
+	.byte	'OS_STATUS_NO_NTFSTACK_APPLIMIT_EXCEEDED',0,244,5,8
+	.byte	'OS_STATUS_NOTACCESSIBLE_1',0,129,6,8
+	.byte	'OS_STATUS_ID_TYPE_1',0,131,6,8
+	.byte	'OS_STATUS_NOFUNC_2',0,133,6,8
+	.byte	'OS_STATUS_STATE_STOPPED',0,135,6,8
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_1',0,136,6,8
+	.byte	'OS_STATUS_PARAM_POINTER_3',0,151,6,8
+	.byte	'OS_STATUS_NOTACCESSIBLE_2',0,129,8,8
+	.byte	'OS_STATUS_ID_DIFFERENT_COUNTER',0,131,8,8
+	.byte	'OS_STATUS_SPINLOCK_ORDER',0,133,8,8
+	.byte	'OS_STATUS_STATE_RUNNING',0,135,8,8
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_2',0,136,8,8
+	.byte	'OS_STATUS_NOEXTENDEDTASK_1',0,129,10,8
+	.byte	'OS_STATUS_ID_DIFFERENT_SYNC',0,131,10,8
+	.byte	'OS_STATUS_STOPPED_1',0,133,10,8
+	.byte	'OS_STATUS_STATE_NEXTED',0,135,10,8
+	.byte	'OS_STATUS_VALUE_IS_TOO_HIGH_3',0,136,10,8
+	.byte	'OS_STATUS_NOEXTENDEDTASK_2',0,129,12,8
+	.byte	'OS_STATUS_HOOK_NOT_AVAILABLE',0,131,12,8
+	.byte	'OS_STATUS_NOT_STOPPED_2',0,133,12,8
+	.byte	'OS_STATUS_STATE_WAITING',0,135,12,8
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_1',0,136,12,8
+	.byte	'OS_STATUS_NOEXTENDEDTASK_CALLER',0,129,14,8
+	.byte	'OS_STATUS_NEXTED_1',0,133,14,8
+	.byte	'OS_STATUS_STATE_NO_RESTART',0,135,14,8
+	.byte	'OS_STATUS_VALUE_IS_OUT_OF_BOUNDS_2',0,136,14,8
+	.byte	'OS_STATUS_LOCKED',0,129,16,8
+	.byte	'OS_STATUS_KILLING_IS_DISABLED',0,133,16,8
+	.byte	'OS_STATUS_STATE_ALREADY_TERMINATED',0,135,16,8
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_1',0,136,16,8
+	.byte	'OS_STATUS_PRIORITY',0,129,18,8
+	.byte	'OS_STATUS_ORDER',0,133,18,8
+	.byte	'OS_STATUS_STATE_RESTARTING_NO_MEMBER',0,135,18,8
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_2',0,136,18,8
+	.byte	'OS_STATUS_NOT_THE_OWNER_1',0,129,20,8
+	.byte	'OS_STATUS_STATE_ALREADY_RESTARTING',0,135,20,8
+	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,8
+	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0,11
+	.byte	'Os_StatusType',0,15,231,5,3
+	.word	14759
+	.byte	12,15,132,6,9,4,13
+	.byte	'Service',0
+	.word	11542
+	.byte	1,2,35,0,13
+	.byte	'Error',0
+	.word	146
+	.byte	1,2,35,1,13
+	.byte	'DetailedError',0
+	.word	14759
+	.byte	2,2,35,2,0,11
+	.byte	'Os_ErrorInformationType',0,15,142,6,3
+	.word	17289
+	.byte	7,15,174,6,9,1,8
+	.byte	'SCHEDULETABLE_STOPPED',0,0,8
+	.byte	'SCHEDULETABLE_NEXT',0,1,8
+	.byte	'SCHEDULETABLE_WAITING',0,2,8
+	.byte	'SCHEDULETABLE_RUNNING',0,3,8
+	.byte	'SCHEDULETABLE_RUNNING_AND_SYNCHRONOUS',0,4,0,11
+	.byte	'ScheduleTableStatusType',0,15,191,6,3
+	.word	17384
+	.byte	7,15,203,6,9,1,8
+	.byte	'OS_MEM_ACCESS_TYPE_NON',0,0,8
+	.byte	'OS_MEM_ACCESS_TYPE_R',0,1,8
+	.byte	'OS_MEM_ACCESS_TYPE_READ',0,1,8
+	.byte	'OS_MEM_ACCESS_TYPE_W',0,2,8
+	.byte	'OS_MEM_ACCESS_TYPE_WRITE',0,2,8
+	.byte	'OS_MEM_ACCESS_TYPE_RW',0,3,8
+	.byte	'OS_MEM_ACCESS_TYPE_EXECUTE',0,4,8
+	.byte	'OS_MEM_ACCESS_TYPE_X',0,4,8
+	.byte	'OS_MEM_ACCESS_TYPE_RX',0,5,8
+	.byte	'OS_MEM_ACCESS_TYPE_WX',0,6,8
+	.byte	'OS_MEM_ACCESS_TYPE_RWX',0,7,8
+	.byte	'OS_MEM_ACCESS_TYPE_S',0,8,8
+	.byte	'OS_MEM_ACCESS_TYPE_STACK',0,8,8
+	.byte	'OS_MEM_ACCESS_TYPE_RS',0,9,8
+	.byte	'OS_MEM_ACCESS_TYPE_WS',0,10,8
+	.byte	'OS_MEM_ACCESS_TYPE_RWS',0,11,8
+	.byte	'OS_MEM_ACCESS_TYPE_XS',0,12,8
+	.byte	'OS_MEM_ACCESS_TYPE_RXS',0,13,8
+	.byte	'OS_MEM_ACCESS_TYPE_WXS',0,14,8
+	.byte	'OS_MEM_ACCESS_TYPE_RWXS',0,15,0,11
+	.byte	'Os_MemAccessType',0,15,225,6,3
+	.word	17557
+	.byte	11
+	.byte	'Os_Hal_AddressType',0,16,99,16
+	.word	163
+	.byte	11
+	.byte	'Os_AccessCheckAddress',0,17,150,2,29
+	.word	163
+	.byte	14
+	.byte	'sDet_PCConfigType',0,18,238,1,16,1,13
 	.byte	'Det_PCConfigNeverUsed',0
-	.word	280
-	.byte	1,2,35,0,0,10
-	.byte	'Det_PCConfigType',0,11,241,1,3
-	.word	10378
+	.word	146
+	.byte	1,2,35,0,0,11
+	.byte	'Det_PCConfigType',0,18,241,1,3
+	.word	18144
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L32:
+.L36:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,46,0,3,8,58,15,59,15,57,15
-	.byte	73,19,54,15,39,12,63,12,60,12,0,0,4,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,5,5,0
-	.byte	3,8,58,15,59,15,57,15,73,19,0,0,6,4,1,58,15,59,15,57,15,11,15,0,0,7,40,0,3,8,28,13,0,0,8,21,0,54,15,0
-	.byte	0,9,15,0,73,19,0,0,10,22,0,3,8,58,15,59,15,57,15,73,19,0,0,11,19,1,58,15,59,15,57,15,11,15,0,0,12,13,0
-	.byte	3,8,73,19,11,15,56,9,0,0,13,19,1,3,8,58,15,59,15,57,15,11,15,0,0,14,1,1,11,15,73,19,0,0,15,33,0,47,15
-	.byte	0,0,16,52,0,3,8,58,15,59,15,57,15,73,19,63,12,60,12,0,0,17,53,0,73,19,0,0,18,13,0,3,8,11,15,73,19,13,15
-	.byte	12,15,56,9,0,0,19,23,1,58,15,59,15,57,15,11,15,0,0,20,23,1,3,8,58,15,59,15,57,15,11,15,0,0,21,13,0,11
-	.byte	15,73,19,13,15,12,15,56,9,0,0,0
+	.byte	73,19,54,15,39,12,63,12,60,12,0,0,4,46,0,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,5,46,1,3,8
+	.byte	58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,6,5,0,3,8,58,15,59,15,57,15,73,19,0,0,7,4,1,58,15
+	.byte	59,15,57,15,11,15,0,0,8,40,0,3,8,28,13,0,0,9,21,0,54,15,0,0,10,15,0,73,19,0,0,11,22,0,3,8,58,15,59,15
+	.byte	57,15,73,19,0,0,12,19,1,58,15,59,15,57,15,11,15,0,0,13,13,0,3,8,73,19,11,15,56,9,0,0,14,19,1,3,8,58,15
+	.byte	59,15,57,15,11,15,0,0,15,1,1,11,15,73,19,0,0,16,33,0,47,15,0,0,17,52,0,3,8,58,15,59,15,57,15,73,19,63
+	.byte	12,60,12,0,0,18,53,0,73,19,0,0,19,13,0,3,8,11,15,73,19,13,15,12,15,56,9,0,0,20,23,1,58,15,59,15,57,15
+	.byte	11,15,0,0,21,23,1,3,8,58,15,59,15,57,15,11,15,0,0,22,13,0,11,15,73,19,13,15,12,15,56,9,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L33:
-	.word	.L103-.L102
-.L102:
+.L37:
+	.word	.L121-.L120
+.L120:
 	.half	3
-	.word	.L105-.L104
-.L104:
+	.word	.L123-.L122
+.L122:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation',0,0
 	.byte	'McalLib.h',0,1,0,0
-	.byte	'Det.h',0,2,0,0
-	.byte	'Can_DrvGeneralTypes.h',0,3,0,0
+	.byte	'Os.h',0,2,0,0
+	.byte	'Det.h',0,3,0,0
+	.byte	'Can_DrvGeneralTypes.h',0,4,0,0
 	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0,0,0,0
-	.byte	'Platform_Types.h',0,4,0,0
-	.byte	'Std_Types.h',0,4,0,0
-	.byte	'ComStack_Cfg.h',0,3,0,0
-	.byte	'ComStack_Types.h',0,4,0,0
-	.byte	'Can_Cfg.h',0,3,0,0
-	.byte	'Can.h',0,5,0,0
-	.byte	'Det_Cfg.h',0,3,0,0,0
-.L105:
-.L103:
-	.sdecl	'.debug_info',debug,cluster('Can_Callout_GetTimeoutTicks')
+	.byte	'Platform_Types.h',0,5,0,0
+	.byte	'Std_Types.h',0,5,0,0
+	.byte	'ComStack_Cfg.h',0,4,0,0
+	.byte	'ComStack_Types.h',0,5,0,0
+	.byte	'Can_Cfg.h',0,4,0,0
+	.byte	'Can.h',0,6,0,0
+	.byte	'Os_Types_Lcfg.h',0,4,0,0
+	.byte	'Os_Hal_OsInt.h',0,2,0,0
+	.byte	'Os_Hal_Os_Types.h',0,2,0,0
+	.byte	'Os_Types.h',0,2,0,0
+	.byte	'Os_Hal_Lcfg.h',0,4,0,0
+	.byte	'OsInt.h',0,2,0,0
+	.byte	'Det_Cfg.h',0,4,0,0,0
+.L123:
+.L121:
+	.sdecl	'.debug_info',debug,cluster('ApplCanInterruptDisable')
 	.sect	'.debug_info'
-.L34:
-	.word	236
+.L38:
+	.word	228
 	.half	3
-	.word	.L35
+	.word	.L39
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
-	.word	.L37,.L36
+	.word	.L41,.L40
 	.byte	2
-	.word	.L30
+	.word	.L34
 	.byte	3
-	.byte	'Can_Callout_GetTimeoutTicks',0,1,16,15
-	.word	.L69
-	.byte	1,1
-	.word	.L17,.L70,.L16
+	.byte	'ApplCanInterruptDisable',0,1,17,6,1,1,1
+	.word	.L17,.L83,.L16
 	.byte	4
-	.word	.L17,.L70
+	.byte	'Controller',0,1,17,36
+	.word	.L84,.L85
 	.byte	5
-	.byte	'resolution',0,1,18,10
-	.word	.L69,.L71
+	.word	.L17,.L83
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('ApplCanInterruptDisable')
+	.sect	'.debug_abbrev'
+.L39:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('ApplCanInterruptDisable')
+	.sect	'.debug_line'
+.L40:
+	.word	.L125-.L124
+.L124:
+	.half	3
+	.word	.L127-.L126
+.L126:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0,0,0,0,0
+.L127:
+	.byte	5,23,7,0,5,2
+	.word	.L17
+	.byte	3,19,1,5,1,7,9
+	.half	.L42-.L17
+	.byte	3,1,0,1,1
+.L125:
+	.sdecl	'.debug_ranges',debug,cluster('ApplCanInterruptDisable')
+	.sect	'.debug_ranges'
+.L41:
+	.word	-1,.L17,0,.L42-.L17,0,0
+	.sdecl	'.debug_info',debug,cluster('ApplCanInterruptRestore')
+	.sect	'.debug_info'
+.L43:
+	.word	228
+	.half	3
+	.word	.L44
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L46,.L45
+	.byte	2
+	.word	.L34
+	.byte	3
+	.byte	'ApplCanInterruptRestore',0,1,23,6,1,1,1
+	.word	.L19,.L86,.L18
+	.byte	4
+	.byte	'Controller',0,1,23,36
+	.word	.L84,.L87
+	.byte	5
+	.word	.L19,.L86
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('ApplCanInterruptRestore')
+	.sect	'.debug_abbrev'
+.L44:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('ApplCanInterruptRestore')
+	.sect	'.debug_line'
+.L45:
+	.word	.L129-.L128
+.L128:
+	.half	3
+	.word	.L131-.L130
+.L130:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0,0,0,0,0
+.L131:
+	.byte	5,22,7,0,5,2
+	.word	.L19
+	.byte	3,25,1,5,1,7,9
+	.half	.L47-.L19
+	.byte	3,1,0,1,1
+.L129:
+	.sdecl	'.debug_ranges',debug,cluster('ApplCanInterruptRestore')
+	.sect	'.debug_ranges'
+.L46:
+	.word	-1,.L19,0,.L47-.L19,0,0
+	.sdecl	'.debug_info',debug,cluster('Can_Callout_GetTimeoutTicks')
+	.sect	'.debug_info'
+.L48:
+	.word	236
+	.half	3
+	.word	.L49
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L51,.L50
+	.byte	2
+	.word	.L34
+	.byte	3
+	.byte	'Can_Callout_GetTimeoutTicks',0,1,29,15
+	.word	.L88
+	.byte	1,1
+	.word	.L21,.L89,.L20
+	.byte	4
+	.word	.L21,.L89
+	.byte	5
+	.byte	'resolution',0,1,31,10
+	.word	.L88,.L90
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Can_Callout_GetTimeoutTicks')
 	.sect	'.debug_abbrev'
-.L35:
+.L49:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Can_Callout_GetTimeoutTicks')
 	.sect	'.debug_line'
-.L36:
-	.word	.L107-.L106
-.L106:
+.L50:
+	.word	.L133-.L132
+.L132:
 	.half	3
-	.word	.L109-.L108
-.L108:
+	.word	.L135-.L134
+.L134:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0,0,0,0,0
-.L109:
+.L135:
 	.byte	5,40,7,0,5,2
-	.word	.L17
-	.byte	3,19,1,5,3,9
-	.half	.L90-.L17
+	.word	.L21
+	.byte	3,32,1,5,3,9
+	.half	.L108-.L21
 	.byte	3,1,1,5,48,7,9
-	.half	.L110-.L90
+	.half	.L136-.L108
 	.byte	3,2,1,5,3,9
-	.half	.L2-.L110
+	.half	.L2-.L136
 	.byte	3,3,1,5,1,7,9
-	.half	.L111-.L2
+	.half	.L137-.L2
 	.byte	3,6,1,5,32,7,9
-	.half	.L3-.L111
+	.half	.L3-.L137
 	.byte	3,127,1,5,45,9
-	.half	.L112-.L3
+	.half	.L138-.L3
 	.byte	1,5,1,3,1,1,7,9
-	.half	.L38-.L112
+	.half	.L52-.L138
 	.byte	0,1,1
-.L107:
+.L133:
 	.sdecl	'.debug_ranges',debug,cluster('Can_Callout_GetTimeoutTicks')
 	.sect	'.debug_ranges'
-.L37:
-	.word	-1,.L17,0,.L38-.L17,0,0
+.L51:
+	.word	-1,.L21,0,.L52-.L21,0,0
 	.sdecl	'.debug_info',debug,cluster('Can_Callout_GetStartTick')
 	.sect	'.debug_info'
-.L39:
+.L53:
 	.word	224
 	.half	3
-	.word	.L40
+	.word	.L54
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
-	.word	.L42,.L41
+	.word	.L56,.L55
 	.byte	2
-	.word	.L30
+	.word	.L34
 	.byte	3
-	.byte	'Can_Callout_GetStartTick',0,1,34,29
-	.word	.L69
+	.byte	'Can_Callout_GetStartTick',0,1,47,29
+	.word	.L88
 	.byte	1,1
-	.word	.L19,.L72,.L18
+	.word	.L23,.L91,.L22
 	.byte	4
-	.byte	'source',0,1,34,60
-	.word	.L73,.L74
+	.byte	'source',0,1,47,60
+	.word	.L84,.L92
 	.byte	5
-	.word	.L75
+	.word	.L93
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Can_Callout_GetStartTick')
 	.sect	'.debug_abbrev'
-.L40:
+.L54:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,85,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Can_Callout_GetStartTick')
 	.sect	'.debug_line'
-.L41:
-	.word	.L114-.L113
-.L113:
-	.half	3
-	.word	.L116-.L115
-.L115:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0,0,0,0,0
-.L116:
-	.byte	5,10,7,0,5,2
-	.word	.L19
-	.byte	3,35,1,5,48,9
-	.half	.L91-.L19
-	.byte	1,5,1,9
-	.half	.L117-.L91
-	.byte	3,1,1,7,9
-	.half	.L43-.L117
-	.byte	0,1,1
-.L114:
-	.sdecl	'.debug_ranges',debug,cluster('Can_Callout_GetStartTick')
-	.sect	'.debug_ranges'
-.L42:
-	.word	-1,.L19,0,.L43-.L19,0,0
-.L75:
-	.word	-1,.L19,0,.L72-.L19,-1,.L21,0,.L68-.L21,0,0
-	.sdecl	'.debug_info',debug,cluster('Can_Callout_SetStartTick')
-	.sect	'.debug_info'
-.L44:
-	.word	246
-	.half	3
-	.word	.L45
-	.byte	4,1
-	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0
-	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
-	.word	.L47,.L46
-	.byte	2
-	.word	.L30
-	.byte	3
-	.byte	'Can_Callout_SetStartTick',0,1,39,13,1,1
-	.word	.L23,.L76,.L22
-	.byte	4
-	.byte	'source',0,1,39,44
-	.word	.L73,.L77
-	.byte	4
-	.byte	'startTick',0,1,39,73
-	.word	.L69,.L78
-	.byte	5
-	.word	.L23,.L76
-	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('Can_Callout_SetStartTick')
-	.sect	'.debug_abbrev'
-.L45:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('Can_Callout_SetStartTick')
-	.sect	'.debug_line'
-.L46:
-	.word	.L119-.L118
-.L118:
-	.half	3
-	.word	.L121-.L120
-.L120:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0,0,0,0,0
-.L121:
-	.byte	5,3,7,0,5,2
-	.word	.L23
-	.byte	3,40,1,5,50,9
-	.half	.L92-.L23
-	.byte	1,5,1,9
-	.half	.L122-.L92
-	.byte	3,1,1,7,9
-	.half	.L48-.L122
-	.byte	0,1,1
-.L119:
-	.sdecl	'.debug_ranges',debug,cluster('Can_Callout_SetStartTick')
-	.sect	'.debug_ranges'
-.L47:
-	.word	-1,.L23,0,.L48-.L23,0,0
-	.sdecl	'.debug_info',debug,cluster('ApplCanTimerStart')
-	.sect	'.debug_info'
-.L49:
-	.word	218
-	.half	3
-	.word	.L50
-	.byte	4,1
-	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0
-	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
-	.word	.L52,.L51
-	.byte	2
-	.word	.L30
-	.byte	3
-	.byte	'ApplCanTimerStart',0,1,44,6,1,1,1
-	.word	.L25,.L79,.L24
-	.byte	4
-	.byte	'source',0,1,44,30
-	.word	.L73,.L80
-	.byte	5
-	.word	.L25,.L79
-	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('ApplCanTimerStart')
-	.sect	'.debug_abbrev'
-.L50:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('ApplCanTimerStart')
-	.sect	'.debug_line'
-.L51:
-	.word	.L124-.L123
-.L123:
-	.half	3
-	.word	.L126-.L125
-.L125:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0,0,0,0,0
-.L126:
-	.byte	5,6,7,0,5,2
-	.word	.L25
-	.byte	3,43,1,5,3,9
-	.half	.L94-.L25
-	.byte	3,3,1,5,27,7,9
-	.half	.L127-.L94
-	.byte	3,2,1,5,42,9
-	.half	.L93-.L127
-	.byte	1,5,59,9
-	.half	.L128-.L93
-	.byte	1,5,77,9
-	.half	.L129-.L128
-	.byte	1,5,55,9
-	.half	.L7-.L129
-	.byte	3,5,1,5,1,9
-	.half	.L53-.L7
-	.byte	3,2,0,1,1
-.L124:
-	.sdecl	'.debug_ranges',debug,cluster('ApplCanTimerStart')
-	.sect	'.debug_ranges'
-.L52:
-	.word	-1,.L25,0,.L53-.L25,0,0
-	.sdecl	'.debug_info',debug,cluster('ApplCanTimerLoop')
-	.sect	'.debug_info'
-.L54:
-	.word	313
-	.half	3
-	.word	.L55
-	.byte	4,1
-	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0
-	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
-	.word	.L57,.L56
-	.byte	2
-	.word	.L30
-	.byte	3
-	.byte	'ApplCanTimerLoop',0,1,58,16
-	.word	.L81
-	.byte	1,1,1
-	.word	.L27,.L82,.L26
-	.byte	4
-	.byte	'source',0,1,58,39
-	.word	.L73,.L83
-	.byte	5
-	.word	.L27,.L82
-	.byte	6
-	.byte	'retval',0,1,60,18
-	.word	.L81,.L84
-	.byte	6
-	.byte	'elapsedTicks',0,1,61,10
-	.word	.L69,.L85
-	.byte	6
-	.byte	'timeoutTicks',0,1,62,10
-	.word	.L69,.L86
-	.byte	6
-	.byte	'startTick',0,1,63,24
-	.word	.L69,.L87
-	.byte	0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('ApplCanTimerLoop')
-	.sect	'.debug_abbrev'
 .L55:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
-	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
-	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('ApplCanTimerLoop')
-	.sect	'.debug_line'
-.L56:
-	.word	.L131-.L130
-.L130:
-	.half	3
-	.word	.L133-.L132
-.L132:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0,0,0,0,0
-.L133:
-	.byte	5,16,7,0,5,2
-	.word	.L27
-	.byte	3,57,1,5,10,9
-	.half	.L97-.L27
-	.byte	3,7,1,5,3,9
-	.half	.L98-.L97
-	.byte	3,3,1,5,42,7,9
-	.half	.L134-.L98
-	.byte	3,2,1,5,77,9
-	.half	.L99-.L134
-	.byte	1,5,96,1,5,42,9
-	.half	.L9-.L99
-	.byte	3,5,1,5,15,9
-	.half	.L96-.L9
-	.byte	1,5,37,3,1,1,5,40,9
-	.half	.L100-.L96
-	.byte	1,5,47,3,1,1,5,9,9
-	.half	.L101-.L100
-	.byte	3,2,1,5,47,7,9
-	.half	.L135-.L101
-	.byte	1,5,14,7,9
-	.half	.L11-.L135
-	.byte	3,2,1,5,22,1,5,10,9
-	.half	.L12-.L11
-	.byte	3,3,1,5,44,7,9
-	.half	.L136-.L12
-	.byte	3,2,1,5,79,9
-	.half	.L137-.L136
-	.byte	1,5,29,9
-	.half	.L10-.L137
-	.byte	1,5,61,9
-	.half	.L138-.L10
-	.byte	1,5,79,1,5,3,9
-	.half	.L13-.L138
-	.byte	3,5,1,5,1,3,1,1,7,9
-	.half	.L58-.L13
-	.byte	0,1,1
-.L131:
-	.sdecl	'.debug_ranges',debug,cluster('ApplCanTimerLoop')
-	.sect	'.debug_ranges'
-.L57:
-	.word	-1,.L27,0,.L58-.L27,0,0
-	.sdecl	'.debug_info',debug,cluster('ApplCanTimerEnd')
-	.sect	'.debug_info'
-.L59:
-	.word	216
-	.half	3
-	.word	.L60
-	.byte	4,1
-	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0
-	.byte	'TASKING VX-toolset for TriCore: C compiler',0
-	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
-	.word	.L62,.L61
-	.byte	2
-	.word	.L30
-	.byte	3
-	.byte	'ApplCanTimerEnd',0,1,94,6,1,1,1
-	.word	.L29,.L88,.L28
-	.byte	4
-	.byte	'source',0,1,94,28
-	.word	.L73,.L89
-	.byte	5
-	.word	.L29,.L88
-	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('ApplCanTimerEnd')
-	.sect	'.debug_abbrev'
-.L60:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('ApplCanTimerEnd')
-	.sect	'.debug_line'
-.L61:
 	.word	.L140-.L139
 .L139:
 	.half	3
@@ -1798,243 +2034,539 @@ __ApplCanTimerEnd_function_end:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0,0,0,0,0
 .L142:
-	.byte	5,21,7,0,5,2
-	.word	.L29
-	.byte	3,223,0,1,5,1,7,9
-	.half	.L63-.L29
-	.byte	3,1,0,1,1
+	.byte	5,10,7,0,5,2
+	.word	.L23
+	.byte	3,48,1,5,48,9
+	.half	.L109-.L23
+	.byte	1,5,1,9
+	.half	.L143-.L109
+	.byte	3,1,1,7,9
+	.half	.L57-.L143
+	.byte	0,1,1
 .L140:
-	.sdecl	'.debug_ranges',debug,cluster('ApplCanTimerEnd')
+	.sdecl	'.debug_ranges',debug,cluster('Can_Callout_GetStartTick')
 	.sect	'.debug_ranges'
-.L62:
-	.word	-1,.L29,0,.L63-.L29,0,0
-	.sdecl	'.debug_info',debug,cluster('.cocofun_2')
+.L56:
+	.word	-1,.L23,0,.L57-.L23,0,0
+.L93:
+	.word	-1,.L23,0,.L91-.L23,-1,.L25,0,.L82-.L25,0,0
+	.sdecl	'.debug_info',debug,cluster('Can_Callout_SetStartTick')
 	.sect	'.debug_info'
-.L64:
-	.word	180
+.L58:
+	.word	246
 	.half	3
-	.word	.L65
+	.word	.L59
 	.byte	4,1
 	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0
 	.byte	'TASKING VX-toolset for TriCore: C compiler',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
-	.word	.L67,.L66
+	.word	.L61,.L60
 	.byte	2
-	.word	.L30
+	.word	.L34
 	.byte	3
-	.byte	'.cocofun_2',0,1,34,29,1
-	.word	.L21,.L68,.L20
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_2')
+	.byte	'Can_Callout_SetStartTick',0,1,52,13,1,1
+	.word	.L27,.L94,.L26
+	.byte	4
+	.byte	'source',0,1,52,44
+	.word	.L84,.L95
+	.byte	4
+	.byte	'startTick',0,1,52,73
+	.word	.L88,.L96
+	.byte	5
+	.word	.L27,.L94
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Can_Callout_SetStartTick')
 	.sect	'.debug_abbrev'
-.L65:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
-	.byte	17,1,18,1,64,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('.cocofun_2')
+.L59:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Can_Callout_SetStartTick')
 	.sect	'.debug_line'
-.L66:
-	.word	.L144-.L143
-.L143:
+.L60:
+	.word	.L145-.L144
+.L144:
 	.half	3
-	.word	.L146-.L145
-.L145:
+	.word	.L147-.L146
+.L146:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0,0,0,0,0
-.L146:
-	.byte	5,10,7,0,5,2
-	.word	.L21
-	.byte	3,35,1,5,48,9
-	.half	.L147-.L21
-	.byte	1,9
-	.half	.L68-.L147
-	.byte	0,1,1,5,3,0,5,2
-	.word	.L21
-	.byte	3,40,1,5,41,9
-	.half	.L147-.L21
-	.byte	1,5,48,9
-	.half	.L148-.L147
-	.byte	3,123,1,7,9
-	.half	.L68-.L148
+.L147:
+	.byte	5,3,7,0,5,2
+	.word	.L27
+	.byte	3,53,1,5,50,9
+	.half	.L110-.L27
+	.byte	1,5,1,9
+	.half	.L148-.L110
+	.byte	3,1,1,7,9
+	.half	.L62-.L148
 	.byte	0,1,1
-.L144:
-	.sdecl	'.debug_ranges',debug,cluster('.cocofun_2')
+.L145:
+	.sdecl	'.debug_ranges',debug,cluster('Can_Callout_SetStartTick')
 	.sect	'.debug_ranges'
-.L67:
-	.word	-1,.L21,0,.L68-.L21,0,0
-	.sdecl	'.debug_loc',debug,cluster('.cocofun_2')
+.L61:
+	.word	-1,.L27,0,.L62-.L27,0,0
+	.sdecl	'.debug_info',debug,cluster('ApplCanTimerStart')
+	.sect	'.debug_info'
+.L63:
+	.word	218
+	.half	3
+	.word	.L64
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L66,.L65
+	.byte	2
+	.word	.L34
+	.byte	3
+	.byte	'ApplCanTimerStart',0,1,57,6,1,1,1
+	.word	.L29,.L97,.L28
+	.byte	4
+	.byte	'source',0,1,57,30
+	.word	.L84,.L98
+	.byte	5
+	.word	.L29,.L97
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('ApplCanTimerStart')
+	.sect	'.debug_abbrev'
+.L64:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('ApplCanTimerStart')
+	.sect	'.debug_line'
+.L65:
+	.word	.L150-.L149
+.L149:
+	.half	3
+	.word	.L152-.L151
+.L151:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0,0,0,0,0
+.L152:
+	.byte	5,6,7,0,5,2
+	.word	.L29
+	.byte	3,56,1,5,3,9
+	.half	.L112-.L29
+	.byte	3,3,1,5,27,7,9
+	.half	.L153-.L112
+	.byte	3,2,1,5,42,9
+	.half	.L111-.L153
+	.byte	1,5,59,9
+	.half	.L154-.L111
+	.byte	1,5,77,9
+	.half	.L155-.L154
+	.byte	1,5,55,9
+	.half	.L7-.L155
+	.byte	3,5,1,5,1,9
+	.half	.L67-.L7
+	.byte	3,2,0,1,1
+.L150:
+	.sdecl	'.debug_ranges',debug,cluster('ApplCanTimerStart')
+	.sect	'.debug_ranges'
+.L66:
+	.word	-1,.L29,0,.L67-.L29,0,0
+	.sdecl	'.debug_info',debug,cluster('ApplCanTimerLoop')
+	.sect	'.debug_info'
+.L68:
+	.word	313
+	.half	3
+	.word	.L69
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L71,.L70
+	.byte	2
+	.word	.L34
+	.byte	3
+	.byte	'ApplCanTimerLoop',0,1,71,16
+	.word	.L99
+	.byte	1,1,1
+	.word	.L31,.L100,.L30
+	.byte	4
+	.byte	'source',0,1,71,39
+	.word	.L84,.L101
+	.byte	5
+	.word	.L31,.L100
+	.byte	6
+	.byte	'retval',0,1,73,18
+	.word	.L99,.L102
+	.byte	6
+	.byte	'elapsedTicks',0,1,74,10
+	.word	.L88,.L103
+	.byte	6
+	.byte	'timeoutTicks',0,1,75,10
+	.word	.L88,.L104
+	.byte	6
+	.byte	'startTick',0,1,76,24
+	.word	.L88,.L105
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('ApplCanTimerLoop')
+	.sect	'.debug_abbrev'
+.L69:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('ApplCanTimerLoop')
+	.sect	'.debug_line'
+.L70:
+	.word	.L157-.L156
+.L156:
+	.half	3
+	.word	.L159-.L158
+.L158:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0,0,0,0,0
+.L159:
+	.byte	5,16,7,0,5,2
+	.word	.L31
+	.byte	3,198,0,1,5,10,9
+	.half	.L115-.L31
+	.byte	3,7,1,5,3,9
+	.half	.L116-.L115
+	.byte	3,3,1,5,42,7,9
+	.half	.L160-.L116
+	.byte	3,2,1,5,77,9
+	.half	.L117-.L160
+	.byte	1,5,96,1,5,42,9
+	.half	.L9-.L117
+	.byte	3,5,1,5,15,9
+	.half	.L114-.L9
+	.byte	1,5,37,3,1,1,5,40,9
+	.half	.L118-.L114
+	.byte	1,5,47,3,1,1,5,9,9
+	.half	.L119-.L118
+	.byte	3,2,1,5,47,7,9
+	.half	.L161-.L119
+	.byte	1,5,14,7,9
+	.half	.L11-.L161
+	.byte	3,2,1,5,22,1,5,10,9
+	.half	.L12-.L11
+	.byte	3,3,1,5,44,7,9
+	.half	.L162-.L12
+	.byte	3,2,1,5,79,9
+	.half	.L163-.L162
+	.byte	1,5,29,9
+	.half	.L10-.L163
+	.byte	1,5,61,9
+	.half	.L164-.L10
+	.byte	1,5,79,1,5,3,9
+	.half	.L13-.L164
+	.byte	3,5,1,5,1,3,1,1,7,9
+	.half	.L72-.L13
+	.byte	0,1,1
+.L157:
+	.sdecl	'.debug_ranges',debug,cluster('ApplCanTimerLoop')
+	.sect	'.debug_ranges'
+.L71:
+	.word	-1,.L31,0,.L72-.L31,0,0
+	.sdecl	'.debug_info',debug,cluster('ApplCanTimerEnd')
+	.sect	'.debug_info'
+.L73:
+	.word	216
+	.half	3
+	.word	.L74
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L76,.L75
+	.byte	2
+	.word	.L34
+	.byte	3
+	.byte	'ApplCanTimerEnd',0,1,107,6,1,1,1
+	.word	.L33,.L106,.L32
+	.byte	4
+	.byte	'source',0,1,107,28
+	.word	.L84,.L107
+	.byte	5
+	.word	.L33,.L106
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('ApplCanTimerEnd')
+	.sect	'.debug_abbrev'
+.L74:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('ApplCanTimerEnd')
+	.sect	'.debug_line'
+.L75:
+	.word	.L166-.L165
+.L165:
+	.half	3
+	.word	.L168-.L167
+.L167:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0,0,0,0,0
+.L168:
+	.byte	5,21,7,0,5,2
+	.word	.L33
+	.byte	3,236,0,1,5,1,7,9
+	.half	.L77-.L33
+	.byte	3,1,0,1,1
+.L166:
+	.sdecl	'.debug_ranges',debug,cluster('ApplCanTimerEnd')
+	.sect	'.debug_ranges'
+.L76:
+	.word	-1,.L33,0,.L77-.L33,0,0
+	.sdecl	'.debug_info',debug,cluster('.cocofun_1')
+	.sect	'.debug_info'
+.L78:
+	.word	180
+	.half	3
+	.word	.L79
+	.byte	4,1
+	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
+	.word	.L81,.L80
+	.byte	2
+	.word	.L34
+	.byte	3
+	.byte	'.cocofun_1',0,1,47,29,1
+	.word	.L25,.L82,.L24
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('.cocofun_1')
+	.sect	'.debug_abbrev'
+.L79:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,0,3,8,58,15,59,15,57,15,54,15
+	.byte	17,1,18,1,64,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('.cocofun_1')
+	.sect	'.debug_line'
+.L80:
+	.word	.L170-.L169
+.L169:
+	.half	3
+	.word	.L172-.L171
+.L171:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Appl\\Source\\Can_Callout_Stubs.c',0,0,0,0,0
+.L172:
+	.byte	5,10,7,0,5,2
+	.word	.L25
+	.byte	3,48,1,5,48,9
+	.half	.L173-.L25
+	.byte	1,9
+	.half	.L82-.L173
+	.byte	0,1,1,5,3,0,5,2
+	.word	.L25
+	.byte	3,53,1,5,41,9
+	.half	.L173-.L25
+	.byte	1,5,48,9
+	.half	.L174-.L173
+	.byte	3,123,1,7,9
+	.half	.L82-.L174
+	.byte	0,1,1
+.L170:
+	.sdecl	'.debug_ranges',debug,cluster('.cocofun_1')
+	.sect	'.debug_ranges'
+.L81:
+	.word	-1,.L25,0,.L82-.L25,0,0
+	.sdecl	'.debug_loc',debug,cluster('.cocofun_1')
 	.sect	'.debug_loc'
-.L20:
-	.word	-1,.L21,0,.L68-.L21
+.L24:
+	.word	-1,.L25,0,.L82-.L25
 	.half	2
 	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('ApplCanInterruptDisable')
+	.sect	'.debug_loc'
+.L16:
+	.word	-1,.L17,0,.L83-.L17
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L85:
+	.word	-1,.L17,0,.L83-.L17
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('ApplCanInterruptRestore')
+	.sect	'.debug_loc'
+.L18:
+	.word	-1,.L19,0,.L86-.L19
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L87:
+	.word	-1,.L19,0,.L86-.L19
+	.half	1
+	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('ApplCanTimerEnd')
 	.sect	'.debug_loc'
-.L28:
-	.word	-1,.L29,0,.L88-.L29
+.L32:
+	.word	-1,.L33,0,.L106-.L33
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L89:
-	.word	-1,.L29,0,.L88-.L29
+.L107:
+	.word	-1,.L33,0,.L106-.L33
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('ApplCanTimerLoop')
 	.sect	'.debug_loc'
-.L26:
-	.word	-1,.L27,0,.L82-.L27
+.L30:
+	.word	-1,.L31,0,.L100-.L31
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L85:
-	.word	-1,.L27,.L101-.L27,.L10-.L27
+.L103:
+	.word	-1,.L31,.L119-.L31,.L10-.L31
 	.half	1
 	.byte	89
 	.word	0,0
-.L84:
-	.word	-1,.L27,.L98-.L27,.L82-.L27
+.L102:
+	.word	-1,.L31,.L116-.L31,.L100-.L31
 	.half	1
 	.byte	88
-	.word	.L99-.L27,.L9-.L27
+	.word	.L117-.L31,.L9-.L31
 	.half	1
 	.byte	85
 	.word	0,0
-.L83:
-	.word	-1,.L27,0,.L96-.L27
+.L101:
+	.word	-1,.L31,0,.L114-.L31
 	.half	1
 	.byte	84
-	.word	.L97-.L27,.L82-.L27
+	.word	.L115-.L31,.L100-.L31
 	.half	1
 	.byte	95
 	.word	0,0
-.L87:
-	.word	-1,.L27,.L96-.L27,.L100-.L27
+.L105:
+	.word	-1,.L31,.L114-.L31,.L118-.L31
 	.half	1
 	.byte	82
-	.word	.L100-.L27,.L101-.L27
+	.word	.L118-.L31,.L119-.L31
 	.half	1
 	.byte	89
 	.word	0,0
-.L86:
-	.word	-1,.L27,.L101-.L27,.L10-.L27
+.L104:
+	.word	-1,.L31,.L119-.L31,.L10-.L31
 	.half	1
 	.byte	82
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('ApplCanTimerStart')
 	.sect	'.debug_loc'
-.L24:
-	.word	-1,.L25,0,.L79-.L25
+.L28:
+	.word	-1,.L29,0,.L97-.L29
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L80:
-	.word	-1,.L25,0,.L93-.L25
+.L98:
+	.word	-1,.L29,0,.L111-.L29
 	.half	1
 	.byte	84
-	.word	.L94-.L25,.L79-.L25
+	.word	.L112-.L29,.L97-.L29
 	.half	1
 	.byte	95
-	.word	.L7-.L25,.L95-.L25
+	.word	.L7-.L29,.L113-.L29
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Can_Callout_GetStartTick')
 	.sect	'.debug_loc'
-.L18:
-	.word	-1,.L19,0,.L72-.L19
+.L22:
+	.word	-1,.L23,0,.L91-.L23
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L74:
-	.word	-1,.L19,.L21-.L19,.L68-.L19
+.L92:
+	.word	-1,.L23,.L25-.L23,.L82-.L23
 	.half	1
 	.byte	84
-	.word	.L91-.L19,.L72-.L19
+	.word	.L109-.L23,.L91-.L23
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Can_Callout_GetTimeoutTicks')
 	.sect	'.debug_loc'
-.L16:
-	.word	-1,.L17,0,.L70-.L17
+.L20:
+	.word	-1,.L21,0,.L89-.L21
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L71:
-	.word	-1,.L17,.L90-.L17,.L70-.L17
+.L90:
+	.word	-1,.L21,.L108-.L21,.L89-.L21
 	.half	1
 	.byte	82
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Can_Callout_SetStartTick')
 	.sect	'.debug_loc'
-.L22:
-	.word	-1,.L23,0,.L76-.L23
+.L26:
+	.word	-1,.L27,0,.L94-.L27
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L77:
-	.word	-1,.L23,.L21-.L23,.L68-.L23
+.L95:
+	.word	-1,.L27,.L25-.L27,.L82-.L27
 	.half	1
 	.byte	84
-	.word	.L92-.L23,.L76-.L23
+	.word	.L110-.L27,.L94-.L27
 	.half	1
 	.byte	84
 	.word	0,0
-.L78:
-	.word	-1,.L23,.L21-.L23,.L68-.L23
+.L96:
+	.word	-1,.L27,.L25-.L27,.L82-.L27
 	.half	1
 	.byte	85
-	.word	.L92-.L23,.L76-.L23
+	.word	.L110-.L27,.L94-.L27
 	.half	1
 	.byte	85
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L149:
+.L175:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
 	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('ApplCanInterruptDisable')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L175,.L17,.L83-.L17
+	.sdecl	'.debug_frame',debug,cluster('ApplCanInterruptRestore')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L175,.L19,.L86-.L19
 	.sdecl	'.debug_frame',debug,cluster('Can_Callout_GetTimeoutTicks')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L149,.L17,.L70-.L17
+	.word	.L175,.L21,.L89-.L21
 	.sdecl	'.debug_frame',debug,cluster('Can_Callout_GetStartTick')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L149,.L19,.L72-.L19
+	.word	.L175,.L23,.L91-.L23
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('Can_Callout_SetStartTick')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L149,.L23,.L76-.L23
+	.word	.L175,.L27,.L94-.L27
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('ApplCanTimerStart')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L149,.L25,.L79-.L25
+	.word	.L175,.L29,.L97-.L29
 	.sdecl	'.debug_frame',debug,cluster('ApplCanTimerLoop')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L149,.L27,.L82-.L27
+	.word	.L175,.L31,.L100-.L31
 	.sdecl	'.debug_frame',debug,cluster('ApplCanTimerEnd')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L149,.L29,.L88-.L29
+	.word	.L175,.L33,.L106-.L33
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L150:
+.L176:
 	.word	52
 	.word	-1
 	.byte	3,0,2,1,40,12,26,0,9,40,27,155,0,7,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36
 	.byte	8,37,8,38,8,39,0
-	.sdecl	'.debug_frame',debug,cluster('.cocofun_2')
+	.sdecl	'.debug_frame',debug,cluster('.cocofun_1')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L150,.L21,.L68-.L21
+	.word	.L176,.L25,.L82-.L25
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 
-; ..\Appl\Source\Can_Callout_Stubs.c	    97  }
+; ..\Appl\Source\Can_Callout_Stubs.c	   110  }
 
 	; Module end

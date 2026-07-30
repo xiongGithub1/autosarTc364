@@ -14,7 +14,7 @@
         </SipIds>
         <TargetType>Real Target</TargetType>
         <UseCases>
-            <UseCase Vector="MemMap_ARM_Derivative" Value="Enabled"/>
+            <UseCase Vector="MemMap_ARM_Derivative" Value="None"/>
             <UseCase Vector="vSwUpdM data processing" Value="Default"/>
         </UseCases>
         <PostBuildLoadableSupport>false</PostBuildLoadableSupport>
@@ -172,6 +172,9 @@
         <Splitter File=".\Config\ECUC\last364_Crc_Crc_ecuc.arxml">
             <Module Name="Crc"/>
         </Splitter>
+        <Splitter File=".\Config\ECUC\last364_vLinkGen_vLinkGen_ecuc.arxml">
+            <Module Name="vLinkGen"/>
+        </Splitter>
         <OwnFolderForEachSplitter>false</OwnFolderForEachSplitter>
         <OwnFileForEachInstance>true</OwnFileForEachInstance>
     </EcucSplitter>
@@ -225,8 +228,6 @@
                 <Setting Value="false" Name="Dio"/>
                 <Setting Value="false" Name="Dma"/>
                 <Setting Value="false" Name="E2EXf"/>
-                <Setting Value="false" Name="EcuC"/>
-                <Setting Value="false" Name="EcuM"/>
                 <Setting Value="false" Name="Fee"/>
                 <Setting Value="false" Name="Fls"/>
                 <Setting Value="false" Name="IpduM"/>
@@ -236,6 +237,7 @@
                 <Setting Value="false" Name="MemIf"/>
                 <Setting Value="false" Name="MemMap"/>
                 <Setting Value="false" Name="NvM"/>
+                <Setting Value="false" Name="Os"/>
                 <Setting Value="false" Name="PduR"/>
                 <Setting Value="false" Name="Port"/>
                 <Setting Value="false" Name="Pwm"/>
@@ -436,7 +438,7 @@
                 </Settings>
             </Settings>
             <Settings Name="com.vector.cfg.gen.core.gencore.internal.aov.AutomaticOnDemandValidationConfigurationService">
-                <Setting Value="rO0ABXNyAGpjb20udmVjdG9yLmNmZy5nZW4uY29yZS5nZW5jb3JlLmludGVybmFsLmFvdi5BdXRv&#xA;bWF0aWNPbkRlbWFuZFZhbGlkYXRpb25Db25maWd1cmF0aW9uU2VydmljZSRQZXJzaXN0ZWREYXRh&#xA;pcjrmQ6cuakCAAJaAAlhY3RpdmF0ZWRMABJkZWFjdGl2YXRlZE1vZHVsZXN0ABZMamF2YS91dGls&#xA;L0NvbGxlY3Rpb247eHABc3IANmNvbS5nb29nbGUuY29tbW9uLmNvbGxlY3QuSW1tdXRhYmxlTGlz&#xA;dCRTZXJpYWxpemVkRm9ybQAAAAAAAAAAAgABWwAIZWxlbWVudHN0ABNbTGphdmEvbGFuZy9PYmpl&#xA;Y3Q7eHB1cgATW0xqYXZhLmxhbmcuT2JqZWN0O5DOWJ8QcylsAgAAeHAAAAAUc3IANWNvbS52ZWN0&#xA;b3IuY2ZnLm1vZGVsLmFjY2Vzcy5EZWZSZWYkU2VyaWFsaXphdGlvblByb3h5NnUB4bS2W7ACAAJM&#xA;AB5kZWZSZWZTdHJpbmdXaXRob3V0UGFja2FnZVBhcnR0ABJMamF2YS9sYW5nL1N0cmluZztMABlw&#xA;YWNrYWdlUGFydE9mRGVmUmVmU3RyaW5ncQB+AAl4cHQABUUyRVBXdAAJL01JQ1JPU0FSc3EAfgAI&#xA;dAAEdlNldHEAfgAMc3EAfgAIdAADQ2FudAAZL01JQ1JPU0FSL0Nhbl9NcGM1NzAwTWNhbnNxAH4A&#xA;CHQAB01jYWxMaWJ0ABEvQVVSSVgyRy9FY3VjRGVmc3NxAH4ACHQAA1NiY3QAFi9NSUNST1NBUi9T&#xA;YmNfVGxmMzU1ODRzcQB+AAh0AANGbHNxAH4AFHNxAH4ACHQAA0NyY3EAfgAUc3EAfgAIdAADQWRj&#xA;cQB+ABRzcQB+AAh0AAZNZW1NYXBxAH4ADHNxAH4ACHQAA0RtYXEAfgAUc3EAfgAIdAAFTWVtSWZx&#xA;AH4ADHNxAH4ACHQAA1B3bXEAfgAUc3EAfgAIdAADSXJxcQB+ABRzcQB+AAh0AANEaW9xAH4AFHNx&#xA;AH4ACHQABFBvcnRxAH4AFHNxAH4ACHQABEVjdUNxAH4ADHNxAH4ACHQABHZCUlNxAH4ADHNxAH4A&#xA;CHQAA0ZlZXEAfgAUc3EAfgAIdAADU3BpcQB+ABRzcQB+AAh0AANNY3VxAH4AFA==" Name="Data"/>
+                <Setting Value="rO0ABXNyAGpjb20udmVjdG9yLmNmZy5nZW4uY29yZS5nZW5jb3JlLmludGVybmFsLmFvdi5BdXRv&#xA;bWF0aWNPbkRlbWFuZFZhbGlkYXRpb25Db25maWd1cmF0aW9uU2VydmljZSRQZXJzaXN0ZWREYXRh&#xA;pcjrmQ6cuakCAAJaAAlhY3RpdmF0ZWRMABJkZWFjdGl2YXRlZE1vZHVsZXN0ABZMamF2YS91dGls&#xA;L0NvbGxlY3Rpb247eHABc3IANmNvbS5nb29nbGUuY29tbW9uLmNvbGxlY3QuSW1tdXRhYmxlTGlz&#xA;dCRTZXJpYWxpemVkRm9ybQAAAAAAAAAAAgABWwAIZWxlbWVudHN0ABNbTGphdmEvbGFuZy9PYmpl&#xA;Y3Q7eHB1cgATW0xqYXZhLmxhbmcuT2JqZWN0O5DOWJ8QcylsAgAAeHAAAAATc3IANWNvbS52ZWN0&#xA;b3IuY2ZnLm1vZGVsLmFjY2Vzcy5EZWZSZWYkU2VyaWFsaXphdGlvblByb3h5NnUB4bS2W7ACAAJM&#xA;AB5kZWZSZWZTdHJpbmdXaXRob3V0UGFja2FnZVBhcnR0ABJMamF2YS9sYW5nL1N0cmluZztMABlw&#xA;YWNrYWdlUGFydE9mRGVmUmVmU3RyaW5ncQB+AAl4cHQAA0lycXQAES9BVVJJWDJHL0VjdWNEZWZz&#xA;c3EAfgAIdAAEdkJSU3QACS9NSUNST1NBUnNxAH4ACHQAA0NyY3EAfgAMc3EAfgAIdAAHTWNhbExp&#xA;YnEAfgAMc3EAfgAIdAADQ2FudAAZL01JQ1JPU0FSL0Nhbl9NcGM1NzAwTWNhbnNxAH4ACHQAA0Fk&#xA;Y3EAfgAMc3EAfgAIdAADRGlvcQB+AAxzcQB+AAh0AANGZWVxAH4ADHNxAH4ACHQAA0RtYXEAfgAM&#xA;c3EAfgAIdAADUHdtcQB+AAxzcQB+AAh0AAR2U2V0cQB+AA9zcQB+AAh0AAZNZW1NYXBxAH4AD3Nx&#xA;AH4ACHQAA1NwaXEAfgAMc3EAfgAIdAAEUG9ydHEAfgAMc3EAfgAIdAAFRTJFUFdxAH4AD3NxAH4A&#xA;CHQAA01jdXEAfgAMc3EAfgAIdAADRmxzcQB+AAxzcQB+AAh0AANTYmN0ABYvTUlDUk9TQVIvU2Jj&#xA;X1RsZjM1NTg0c3EAfgAIdAAFTWVtSWZxAH4ADw==" Name="Data"/>
             </Settings>
             <Settings Name="com.vector.cfg.gui.pse.pages.generators">
                 <Settings Name="BuildVipProject"/>

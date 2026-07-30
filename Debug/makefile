@@ -63,7 +63,7 @@ all : "last364.elf"
 	@"${PRODDIR}\bin\cctc" -f ".last364.elf.opt"
 
 ".last364.elf.opt" : .refresh
-	@argfile ".last364.elf.opt" -o "last364.elf" $(OBJ_FILES) $(EXT_LIBRARIES) $(PCP_FILES)  -Ctc36x --lsl-core=vtc -t -I"E:\workFiles\TC367\TC367\workspace\last364" -Wl-o"${PROJ}.hex":IHEX:4 --hex-format=s "E:\workFiles\TC367\TC367\workspace\last364\Appl\newTc364.lsl" -Wl-OtxycL --no-map-file -Wl--map-file="${PROJ}.mapxml":XML -Wl-mcrfiklSmNOduQ -Wl--error-limit=42 -g --fp-model=3 -Wl--dep-file=".last364.elf.d" -Wl--make-target="last364.elf"
+	@argfile ".last364.elf.opt" -o "last364.elf" $(OBJ_FILES) $(EXT_LIBRARIES) $(PCP_FILES)  -Ctc36x --lsl-core=vtc -t -I"E:\workFiles\TC367\TC367\workspace\last364" -Wl-o"${PROJ}.hex":IHEX:4 --hex-format=s "E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\vLinkGen_Template.lsl" -Wl-OtxycL --no-map-file -Wl--map-file="${PROJ}.mapxml":XML -Wl-mcrfiklSmNOduQ -Wl--error-limit=42 --user-provided-initialization-code -g --fp-model=3 -Wl--dep-file=".last364.elf.d" -Wl--make-target="last364.elf"
 DEPENDENCY_FILES += ".last364.elf.d"
 -include $(DEPENDENCY_FILES)
 

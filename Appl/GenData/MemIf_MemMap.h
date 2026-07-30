@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: MemIf_MemMap.h
- *   Generation Time: 2026-07-29 10:31:07
+ *   Generation Time: 2026-07-30 20:42:32
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -93,7 +93,8 @@
 # define MEMMAP_SECTION_OPEN
 # define MEMIF_CONST_8_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom "MSR_CONST" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef MEMIF_START_SEC_CONST_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -108,7 +109,8 @@
 # endif
 # undef MEMIF_CONST_8_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef MEMIF_STOP_SEC_CONST_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -122,7 +124,8 @@
 # define MEMMAP_SECTION_OPEN
 # define MEMIF_CONST_32_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom "MSR_CONST" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef MEMIF_START_SEC_CONST_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -137,7 +140,8 @@
 # endif
 # undef MEMIF_CONST_32_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef MEMIF_STOP_SEC_CONST_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */

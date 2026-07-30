@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: .\vBrs_Lcfg.c
- *   Generation Time: 2026-07-29 10:31:06
+ *   Generation Time: 2026-07-30 17:52:16
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -63,15 +63,18 @@
 extern Brs_AddressOfConstType BRSHW_DEFINE_STARTUP_STACK(0);
 extern Brs_AddressOfConstType BRSHW_DEFINE_EXCVEC(0);
 extern Brs_AddressOfConstType BRSHW_DEFINE_INTVEC(0);
+extern Brs_AddressOfConstType BRSHW_DEFINE_STARTUP_STACK(1);
+extern Brs_AddressOfConstType BRSHW_DEFINE_EXCVEC(1);
+extern Brs_AddressOfConstType BRSHW_DEFINE_INTVEC(1);
 
-const uint32 BrsMain_CoreConfig_Size = 1;
+const uint32 BrsMain_CoreConfig_Size = 2;
 
 /* See BrsMain_Types.h for declaration of BrsMain_CoreConfig.
    Information is mainly used for StartupStack pointer initialization in StartupCode and
    call of BrsHw_ExceptionTable_Init() in main().
    For MultiCore setups, the information is mainly based on the actual OS configuration */
 
-const brsMain_CoreType BrsMain_CoreConfig[1u] =
+const brsMain_CoreType BrsMain_CoreConfig[2u] =
 {
   {
     /* .LogicalCoreId        = */ 0u,
@@ -81,6 +84,15 @@ const brsMain_CoreType BrsMain_CoreConfig[1u] =
     /* .CoreIsAsr            = */ ASR,
     /* .ExcVecLabel          = */ (Brs_AddressOfConstType)(&BRSHW_DEFINE_EXCVEC(0)),
     /* .IntVecLabel          = */ (Brs_AddressOfConstType)(&BRSHW_DEFINE_INTVEC(0))
+  },
+  {
+    /* .LogicalCoreId        = */ 1u,
+    /* .PhysicalCoreId       = */ 1u,
+    /* .StartupStackEndLabel = */ (Brs_AddressOfConstType)(&BRSHW_DEFINE_STARTUP_STACK(1)),
+    /* .StartupStackSize     = */ 36864u,
+    /* .CoreIsAsr            = */ ASR,
+    /* .ExcVecLabel          = */ (Brs_AddressOfConstType)(&BRSHW_DEFINE_EXCVEC(1)),
+    /* .IntVecLabel          = */ (Brs_AddressOfConstType)(&BRSHW_DEFINE_INTVEC(1))
   }
 };
 #endif /*BRSHW_SOURCECODE_TEMPLATE_VERSION>=0x0103u*/

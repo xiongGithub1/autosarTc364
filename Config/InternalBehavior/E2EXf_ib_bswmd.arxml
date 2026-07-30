@@ -20,23 +20,47 @@
               </MEMORY-SECTION>
               <MEMORY-SECTION UUID="351742ef-1d3b-4f79-85c7-e9e3adafec33">
                 <SHORT-NAME>VAR_INIT_UNSPECIFIED</SHORT-NAME>
-                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_INIT</SW-ADDRMETHOD-REF>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
               <MEMORY-SECTION UUID="40084af4-89ec-4866-9885-ca017bbc9e71">
                 <SHORT-NAME>VAR_NOINIT_UNSPECIFIED</SHORT-NAME>
-                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NO_INIT</SW-ADDRMETHOD-REF>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_NO_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
               <MEMORY-SECTION UUID="955be7ed-9dd4-4d61-9970-e5a179ed4a15">
                 <SHORT-NAME>VAR_ZERO_INIT_8BIT</SHORT-NAME>
-                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_ZERO_INIT</SW-ADDRMETHOD-REF>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
               <MEMORY-SECTION UUID="b46d9b1e-6a00-46c2-ad3b-dfbc1b2f6ca9">
                 <SHORT-NAME>VAR_NOCACHE_ZERO_INIT_8BIT</SHORT-NAME>
-                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_ZERO_INIT</SW-ADDRMETHOD-REF>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_NOCACHE_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
               <MEMORY-SECTION UUID="b72539a5-13e9-48c5-8ff6-e9799060c453">
                 <SHORT-NAME>VAR_ZERO_INIT_UNSPECIFIED</SHORT-NAME>
-                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_ZERO_INIT</SW-ADDRMETHOD-REF>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="0ec30e6a-f76c-4eef-9248-d0c1a1655c71">
+                <SHORT-NAME>CODE_OsApplication_OsCore1</SHORT-NAME>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/CODE</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="2841bdb1-60c2-4fae-bf7c-b942740d3740">
+                <SHORT-NAME>CODE_SystemApplication_OsCore0</SHORT-NAME>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/CODE</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="4584502b-b721-4893-b86f-565ddce8149d">
+                <SHORT-NAME>VAR_OsApplication_OsCore1_INIT_UNSPECIFIED</SHORT-NAME>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR/Os_ib_bswmd/SwAddrMethods/OsApplication_OsCore1_VAR_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="4d7e6436-0eaa-452b-8411-e31e2b851b90">
+                <SHORT-NAME>VAR_OsApplication_OsCore1_NOINIT_UNSPECIFIED</SHORT-NAME>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR/Os_ib_bswmd/SwAddrMethods/OsApplication_OsCore1_VAR_NO_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="707d91d6-dd93-46af-9ba9-7764dc06c394">
+                <SHORT-NAME>VAR_SystemApplication_OsCore0_INIT_UNSPECIFIED</SHORT-NAME>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="d0fa6eab-b3d3-4cb6-9ecc-54d8f6c0d066">
+                <SHORT-NAME>VAR_SystemApplication_OsCore0_NOINIT_UNSPECIFIED</SHORT-NAME>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_NO_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
             </MEMORY-SECTIONS>
           </RESOURCE-CONSUMPTION>

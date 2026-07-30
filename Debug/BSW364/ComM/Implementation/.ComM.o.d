@@ -44,6 +44,14 @@ BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_UserTypes.h" :
 BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_DataHandleType.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_DataHandleType.h" :
+BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h" :
+BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h" :
+BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h" :
+BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h" :
 BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Com_Types.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Com_Types.h" :
 BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os.h"
@@ -64,6 +72,38 @@ BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Os_Types.h" :
 BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Lcfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Lcfg.h" :
+BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
 BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
@@ -284,6 +324,8 @@ BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\BswM\Implementation\BswM_ComM.h" :
 BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\ComM\Implementation\ComM.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\ComM\Implementation\ComM.h" :
+BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\ComM\Implementation\ComM_Types.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\ComM\Implementation\ComM_Types.h" :
 BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\ComM\Implementation\ComM_EcuMBswM.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\ComM\Implementation\ComM_EcuMBswM.h" :
 BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComM_Cfg.h"
@@ -300,6 +342,8 @@ BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\SchM_ComM.h" :
 BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\SchM_ComM_Type.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\SchM_ComM_Type.h" :
+BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_Type.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_Type.h" :
 BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os.h" :
 BSW364\ComM\Implementation\ComM.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComM_MemMap.h"

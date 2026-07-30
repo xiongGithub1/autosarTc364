@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Context_Lcfg.c
- *   Generation Time: 2026-07-29 10:29:51
+ *   Generation Time: 2026-07-30 20:09:42
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -122,8 +122,8 @@ VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Default_Appl_Init_Task_
 /*! HAL dynamic task context data: Default_Appl_Task */
 VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Default_Appl_Task_Dyn;
 
-/*! HAL dynamic task context data: Default_BSW_ASync_Task */
-VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Default_BSW_ASync_Task_Dyn;
+/*! HAL dynamic task context data: Default_BSW_ASync_Task_10ms */
+VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Default_BSW_ASync_Task_10ms_Dyn;
 
 /*! HAL dynamic task context data: Default_Init_Task */
 VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Default_Init_Task_Dyn;
@@ -134,13 +134,53 @@ VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Default_Init_Task_Trust
 /*! HAL dynamic task context data: IdleTask_OsCore0 */
 VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_IdleTask_OsCore0_Dyn;
 
-/*! HAL dynamic task context data: MotorTask */
-VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_MotorTask_Dyn;
-
 /*! HAL exception context data: OsCore0 */
 VAR(Os_ExceptionContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_ExceptionContext;
 
 #define OS_STOP_SEC_CORE0_VAR_NOINIT_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+#define OS_START_SEC_CORE1_VAR_NOINIT_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! HAL dynamic hook context data: Os_CoreInitHook_OsCore1 */
+VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Os_CoreInitHook_OsCore1_Dyn;
+
+/*! HAL dynamic hook context data: StartupHook_OsCore1 */
+VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_StartupHook_OsCore1_Dyn;
+
+/*! HAL dynamic hook context data: ShutdownHook_OsCore1 */
+VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_ShutdownHook_OsCore1_Dyn;
+
+/*! HAL dynamic hook context data: ErrorHook_OsCore1 */
+VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_ErrorHook_OsCore1_Dyn;
+
+/*! HAL dynamic ISR2 level context data: Level1 */
+VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore1_Isr_Level1_Dyn;
+
+/*! HAL dynamic task context data: BswCore1Task */
+VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_BswCore1Task_Dyn;
+
+/*! HAL dynamic task context data: Default_Init_Task_Core1 */
+VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Default_Init_Task_Core1_Dyn;
+
+/*! HAL dynamic task context data: Default_Init_Task_Core1_Trusted */
+VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Default_Init_Task_Core1_Trusted_Dyn;
+
+/*! HAL dynamic task context data: Default_MotorInitTask */
+VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Default_MotorInitTask_Dyn;
+
+/*! HAL dynamic task context data: IdleTask_OsCore_1 */
+VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_IdleTask_OsCore_1_Dyn;
+
+/*! HAL dynamic task context data: MotorTask */
+VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_MotorTask_Dyn;
+
+/*! HAL exception context data: OsCore1 */
+VAR(Os_ExceptionContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore1_ExceptionContext;
+
+#define OS_STOP_SEC_CORE1_VAR_NOINIT_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
@@ -259,14 +299,14 @@ CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Default_Appl_Task =
   /* .IntStatus        = */ ((uint32)0<<OS_HAL_PCXI_PCPN_BIT_POSITION) | OS_HAL_PCXI_PIE_ENABLED
 };
 
-/*! HAL task context configuration data: Default_BSW_ASync_Task */
-CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Default_BSW_ASync_Task =
+/*! HAL task context configuration data: Default_BSW_ASync_Task_10ms */
+CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Default_BSW_ASync_Task_10ms =
 {
-  /* .StackEndAddr     = */ (uint32)(OS_STACK_GETHIGHADDRESS(OsCfg_Stack_Default_BSW_ASync_Task_Dyn)+1),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
-  /* .StackStartAddr   = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_Default_BSW_ASync_Task_Dyn),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .StackEndAddr     = */ (uint32)(OS_STACK_GETHIGHADDRESS(OsCfg_Stack_Default_BSW_ASync_Task_10ms_Dyn)+1),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .StackStartAddr   = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_Default_BSW_ASync_Task_10ms_Dyn),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
   /* .ProgramStatus    = */ (uint32)OS_HAL_PSW_IS_MASK | OS_HAL_PSW_CDE_MASK | OS_HAL_PSW_IO_SUPERVISOR | OS_HAL_PSW_S_MASK,
   /* .ProtectionSet    = */ (uint32)OS_HAL_PSW_PRS_PS0,
-  /* .Entry            = */ (uint32)&Os_Task_Default_BSW_ASync_Task,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .Entry            = */ (uint32)&Os_Task_Default_BSW_ASync_Task_10ms,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
   /* .ReturnAddress    = */ (uint32)&Os_TrapTaskMissingTerminateTask,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
   /* .IntStatus        = */ ((uint32)0<<OS_HAL_PCXI_PCPN_BIT_POSITION) | OS_HAL_PCXI_PIE_ENABLED
 };
@@ -307,6 +347,140 @@ CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_IdleTask_OsCore0 =
   /* .IntStatus        = */ ((uint32)0<<OS_HAL_PCXI_PCPN_BIT_POSITION) | OS_HAL_PCXI_PIE_ENABLED
 };
 
+/*! HAL kernel stack configuration data: OsCore0_Kernel */
+CONST(Os_Hal_ContextStackConfigType, OS_CONST) OsCfg_Hal_Stack_OsCore0_Kernel =
+{
+  /* .StackRegionStart = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore0_Kernel_Dyn),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .StackRegionEnd   = */ (uint32)(OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore0_Kernel_Dyn)+1)  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+};
+
+#define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+#define OS_START_SEC_CORE1_CONST_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! HAL hook context configuration data: Os_CoreInitHook_OsCore1 */
+CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Os_CoreInitHook_OsCore1 =
+{
+  /* .StackEndAddr     = */ (uint32)(OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore1_Init_Dyn)+1),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .StackStartAddr   = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore1_Init_Dyn),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .ProgramStatus    = */ (uint32)OS_HAL_PSW_IS_MASK | OS_HAL_PSW_CDE_MASK | OS_HAL_PSW_IO_SUPERVISOR | OS_HAL_PSW_S_MASK,
+  /* .ProtectionSet    = */ (uint32)OS_HAL_PSW_PRS_PS0,
+  /* .Entry            = */ (uint32)&Os_HookWrapperOs_CoreInitHook,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .ReturnAddress    = */ (uint32)&Os_TrapHookReturn,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .IntStatus        = */ ((uint32)80<<OS_HAL_PCXI_PCPN_BIT_POSITION) | OS_HAL_PCXI_PIE_ENABLED
+};
+
+/*! HAL hook context configuration data: StartupHook_OsCore1 */
+CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_StartupHook_OsCore1 =
+{
+  /* .StackEndAddr     = */ (uint32)(OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore1_Startup_Dyn)+1),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .StackStartAddr   = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore1_Startup_Dyn),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .ProgramStatus    = */ (uint32)OS_HAL_PSW_IS_MASK | OS_HAL_PSW_CDE_MASK | OS_HAL_PSW_IO_SUPERVISOR | OS_HAL_PSW_S_MASK,
+  /* .ProtectionSet    = */ (uint32)OS_HAL_PSW_PRS_PS0,
+  /* .Entry            = */ (uint32)&Os_HookWrapperCallback,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .ReturnAddress    = */ (uint32)&Os_TrapHookReturn,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .IntStatus        = */ ((uint32)80<<OS_HAL_PCXI_PCPN_BIT_POSITION) | OS_HAL_PCXI_PIE_ENABLED
+};
+
+/*! HAL hook context configuration data: ShutdownHook_OsCore1 */
+CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_ShutdownHook_OsCore1 =
+{
+  /* .StackEndAddr     = */ (uint32)(OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore1_Shutdown_Dyn)+1),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .StackStartAddr   = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore1_Shutdown_Dyn),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .ProgramStatus    = */ (uint32)OS_HAL_PSW_IS_MASK | OS_HAL_PSW_CDE_MASK | OS_HAL_PSW_IO_SUPERVISOR | OS_HAL_PSW_S_MASK,
+  /* .ProtectionSet    = */ (uint32)OS_HAL_PSW_PRS_PS0,
+  /* .Entry            = */ (uint32)&Os_HookWrapperStatusHook,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .ReturnAddress    = */ (uint32)&Os_TrapHookReturn,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .IntStatus        = */ ((uint32)83<<OS_HAL_PCXI_PCPN_BIT_POSITION) | OS_HAL_PCXI_PIE_ENABLED
+};
+
+/*! HAL hook context configuration data: ErrorHook_OsCore1 */
+CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_ErrorHook_OsCore1 =
+{
+  /* .StackEndAddr     = */ (uint32)(OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore1_Error_Dyn)+1),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .StackStartAddr   = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore1_Error_Dyn),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .ProgramStatus    = */ (uint32)OS_HAL_PSW_IS_MASK | OS_HAL_PSW_CDE_MASK | OS_HAL_PSW_IO_SUPERVISOR | OS_HAL_PSW_S_MASK,
+  /* .ProtectionSet    = */ (uint32)OS_HAL_PSW_PRS_PS0,
+  /* .Entry            = */ (uint32)&Os_HookWrapperStatusHook,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .ReturnAddress    = */ (uint32)&Os_TrapHookReturn,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .IntStatus        = */ ((uint32)80<<OS_HAL_PCXI_PCPN_BIT_POSITION) | OS_HAL_PCXI_PIE_ENABLED
+};
+
+/*! HAL ISR2 context configuration data: CounterIsr_SystemTimer1 */
+CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CounterIsr_SystemTimer1 =
+{
+  /* .StackEndAddr     = */ (uint32)(OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore1_Isr_Core_Dyn)+1),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .StackStartAddr   = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore1_Isr_Core_Dyn),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .ProgramStatus    = */ (uint32)OS_HAL_PSW_IS_MASK | OS_HAL_PSW_CDE_MASK | OS_HAL_PSW_IO_SUPERVISOR | OS_HAL_PSW_S_MASK,
+  /* .ProtectionSet    = */ (uint32)OS_HAL_PSW_PRS_PS0,
+  /* .Entry            = */ (uint32)&Os_Isr_Os_TimerPfrtIsr,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .ReturnAddress    = */ (uint32)&Os_TrapIsrEpilogue,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .IntStatus        = */ ((uint32)83<<OS_HAL_PCXI_PCPN_BIT_POSITION) | OS_HAL_PCXI_PIE_ENABLED
+};
+
+/*! HAL task context configuration data: BswCore1Task */
+CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_BswCore1Task =
+{
+  /* .StackEndAddr     = */ (uint32)(OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore1_Task_Prio20_Dyn)+1),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .StackStartAddr   = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore1_Task_Prio20_Dyn),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .ProgramStatus    = */ (uint32)OS_HAL_PSW_IS_MASK | OS_HAL_PSW_CDE_MASK | OS_HAL_PSW_IO_SUPERVISOR | OS_HAL_PSW_S_MASK,
+  /* .ProtectionSet    = */ (uint32)OS_HAL_PSW_PRS_PS0,
+  /* .Entry            = */ (uint32)&Os_Task_BswCore1Task,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .ReturnAddress    = */ (uint32)&Os_TrapTaskMissingTerminateTask,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .IntStatus        = */ ((uint32)0<<OS_HAL_PCXI_PCPN_BIT_POSITION) | OS_HAL_PCXI_PIE_ENABLED
+};
+
+/*! HAL task context configuration data: Default_Init_Task_Core1 */
+CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Default_Init_Task_Core1 =
+{
+  /* .StackEndAddr     = */ (uint32)(OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore1_Task_Prio50_Dyn)+1),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .StackStartAddr   = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore1_Task_Prio50_Dyn),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .ProgramStatus    = */ (uint32)OS_HAL_PSW_IS_MASK | OS_HAL_PSW_CDE_MASK | OS_HAL_PSW_IO_SUPERVISOR | OS_HAL_PSW_S_MASK,
+  /* .ProtectionSet    = */ (uint32)OS_HAL_PSW_PRS_PS0,
+  /* .Entry            = */ (uint32)&Os_Task_Default_Init_Task_Core1,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .ReturnAddress    = */ (uint32)&Os_TrapTaskMissingTerminateTask,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .IntStatus        = */ ((uint32)0<<OS_HAL_PCXI_PCPN_BIT_POSITION) | OS_HAL_PCXI_PIE_ENABLED
+};
+
+/*! HAL task context configuration data: Default_Init_Task_Core1_Trusted */
+CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Default_Init_Task_Core1_Trusted =
+{
+  /* .StackEndAddr     = */ (uint32)(OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore1_Task_Prio49_Dyn)+1),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .StackStartAddr   = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore1_Task_Prio49_Dyn),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .ProgramStatus    = */ (uint32)OS_HAL_PSW_IS_MASK | OS_HAL_PSW_CDE_MASK | OS_HAL_PSW_IO_SUPERVISOR | OS_HAL_PSW_S_MASK,
+  /* .ProtectionSet    = */ (uint32)OS_HAL_PSW_PRS_PS0,
+  /* .Entry            = */ (uint32)&Os_Task_Default_Init_Task_Core1_Trusted,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .ReturnAddress    = */ (uint32)&Os_TrapTaskMissingTerminateTask,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .IntStatus        = */ ((uint32)0<<OS_HAL_PCXI_PCPN_BIT_POSITION) | OS_HAL_PCXI_PIE_ENABLED
+};
+
+/*! HAL task context configuration data: Default_MotorInitTask */
+CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Default_MotorInitTask =
+{
+  /* .StackEndAddr     = */ (uint32)(OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore1_Task_Prio0_Dyn)+1),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .StackStartAddr   = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore1_Task_Prio0_Dyn),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .ProgramStatus    = */ (uint32)OS_HAL_PSW_IS_MASK | OS_HAL_PSW_CDE_MASK | OS_HAL_PSW_IO_SUPERVISOR | OS_HAL_PSW_S_MASK,
+  /* .ProtectionSet    = */ (uint32)OS_HAL_PSW_PRS_PS0,
+  /* .Entry            = */ (uint32)&Os_Task_Default_MotorInitTask,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .ReturnAddress    = */ (uint32)&Os_TrapTaskMissingTerminateTask,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .IntStatus        = */ ((uint32)0<<OS_HAL_PCXI_PCPN_BIT_POSITION) | OS_HAL_PCXI_PIE_ENABLED
+};
+
+/*! HAL task context configuration data: IdleTask_OsCore_1 */
+CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_IdleTask_OsCore_1 =
+{
+  /* .StackEndAddr     = */ (uint32)(OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore1_Task_Prio4294967295_Dyn)+1),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .StackStartAddr   = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore1_Task_Prio4294967295_Dyn),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .ProgramStatus    = */ (uint32)OS_HAL_PSW_IS_MASK | OS_HAL_PSW_CDE_MASK | OS_HAL_PSW_IO_SUPERVISOR | OS_HAL_PSW_S_MASK,
+  /* .ProtectionSet    = */ (uint32)OS_HAL_PSW_PRS_PS0,
+  /* .Entry            = */ (uint32)&Os_Task_Os_IdleTask,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .ReturnAddress    = */ (uint32)&Os_TrapTaskMissingTerminateTask,  /* PRQA S 0305 */ /* MD_Os_Hal_Rule11.1_0305 */
+  /* .IntStatus        = */ ((uint32)0<<OS_HAL_PCXI_PCPN_BIT_POSITION) | OS_HAL_PCXI_PIE_ENABLED
+};
+
 /*! HAL task context configuration data: MotorTask */
 CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_MotorTask =
 {
@@ -319,14 +493,14 @@ CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_MotorTask =
   /* .IntStatus        = */ ((uint32)0<<OS_HAL_PCXI_PCPN_BIT_POSITION) | OS_HAL_PCXI_PIE_ENABLED
 };
 
-/*! HAL kernel stack configuration data: OsCore0_Kernel */
-CONST(Os_Hal_ContextStackConfigType, OS_CONST) OsCfg_Hal_Stack_OsCore0_Kernel =
+/*! HAL kernel stack configuration data: OsCore1_Kernel */
+CONST(Os_Hal_ContextStackConfigType, OS_CONST) OsCfg_Hal_Stack_OsCore1_Kernel =
 {
-  /* .StackRegionStart = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore0_Kernel_Dyn),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
-  /* .StackRegionEnd   = */ (uint32)(OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore0_Kernel_Dyn)+1)  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .StackRegionStart = */ (uint32)OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore1_Kernel_Dyn),  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
+  /* .StackRegionEnd   = */ (uint32)(OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore1_Kernel_Dyn)+1)  /* PRQA S 0306 */ /* MD_Os_Hal_Rule11.4_0306 */
 };
 
-#define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
+#define OS_STOP_SEC_CORE1_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
@@ -339,6 +513,7 @@ CONSTP2VAR(Os_ExceptionContextType, AUTOMATIC, OS_CONST)
   OsCfg_Hal_Context_ExceptionContextRef[OS_CFG_COREPHYSICALID_COUNT + 1u] =
 {
   &OsCfg_Hal_Context_OsCore0_ExceptionContext,
+  &OsCfg_Hal_Context_OsCore1_ExceptionContext,
   NULL_PTR
 };
 

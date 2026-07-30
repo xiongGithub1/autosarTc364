@@ -10,6 +10,9 @@
           <INTERNAL-BEHAVIORS>
             <SWC-INTERNAL-BEHAVIOR UUID="23D7D4E5-B11E-4A57-B020-4C2441866F18">
               <SHORT-NAME>StartApp_InternalBehavior</SHORT-NAME>
+              <DATA-TYPE-MAPPING-REFS>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/ComponentTypes/DataTypeMappingSets/MotorDataTypeMappingSet</DATA-TYPE-MAPPING-REF>
+              </DATA-TYPE-MAPPING-REFS>
               <EVENTS>
                 <INIT-EVENT UUID="4B91D2A3-5D8E-47D6-8D7E-568156A99AA3">
                   <SHORT-NAME>StartApp_InitEvent</SHORT-NAME>

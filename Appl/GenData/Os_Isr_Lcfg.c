@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Isr_Lcfg.c
- *   Generation Time: 2026-07-29 10:29:51
+ *   Generation Time: 2026-07-30 17:52:17
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -108,6 +108,16 @@ OS_LOCAL VAR(Os_IsrType, OS_VAR_NOINIT) OsCfg_Isr_CounterIsr_SystemTimer_Dyn;
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
+#define OS_START_SEC_CORE1_VAR_NOINIT_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! Dynamic ISR data: CounterIsr_SystemTimer1 */
+OS_LOCAL VAR(Os_IsrType, OS_VAR_NOINIT) OsCfg_Isr_CounterIsr_SystemTimer1_Dyn;
+
+#define OS_STOP_SEC_CORE1_VAR_NOINIT_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
 /**********************************************************************************************************************
  *  GLOBAL DATA
  *********************************************************************************************************************/
@@ -119,19 +129,6 @@ OS_LOCAL VAR(Os_IsrType, OS_VAR_NOINIT) OsCfg_Isr_CounterIsr_SystemTimer_Dyn;
 #define OS_START_SEC_CORE0_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
-/*! ISR configuration data: AdcIsr_G0 */
-CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Cat1Isr_AdcIsr_G0_HwConfig =
-{
-  /* .HwConfig                  = */ &OsCfg_Hal_IntIsr_AdcIsr_G0,
-  /* .MapConfig                 = */ &OsCfg_Hal_IntIsrMap_AdcIsr_G0,
-  /* .IsMapped                  = */ FALSE,
-  /* .IsPostActionRequired      = */ FALSE
-}
-;  
-CONST(Os_IsrCat1ConfigType, OS_CONST) OsCfg_Cat1Isr_AdcIsr_G0 =
-{
-  /* .HwConfig = */ &OsCfg_Cat1Isr_AdcIsr_G0_HwConfig,
-};
 /*! ISR configuration data: AdcIsr_G8 */
 CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Isr_AdcIsr_G8_HwConfig =
 {
@@ -245,6 +242,65 @@ CONST(Os_TimerIsrConfigType, OS_CONST) OsCfg_Isr_CounterIsr_SystemTimer =
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
+#define OS_START_SEC_CORE1_CONST_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! ISR configuration data: AdcIsr_G0 */
+CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Cat1Isr_AdcIsr_G0_HwConfig =
+{
+  /* .HwConfig                  = */ &OsCfg_Hal_IntIsr_AdcIsr_G0,
+  /* .MapConfig                 = */ &OsCfg_Hal_IntIsrMap_AdcIsr_G0,
+  /* .IsMapped                  = */ FALSE,
+  /* .IsPostActionRequired      = */ FALSE
+}
+;  
+CONST(Os_IsrCat1ConfigType, OS_CONST) OsCfg_Cat1Isr_AdcIsr_G0 =
+{
+  /* .HwConfig = */ &OsCfg_Cat1Isr_AdcIsr_G0_HwConfig,
+};
+/*! ISR configuration data: CounterIsr_SystemTimer1 */
+CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Isr_CounterIsr_SystemTimer1_HwConfig =
+{
+  /* .HwConfig                  = */ &OsCfg_Hal_IntIsr_CounterIsr_SystemTimer1,
+  /* .MapConfig                 = */ &OsCfg_Hal_IntIsrMap_CounterIsr_SystemTimer1,
+  /* .IsMapped                  = */ FALSE,
+  /* .IsPostActionRequired      = */ FALSE
+}
+;  
+CONST(Os_TimerIsrConfigType, OS_CONST) OsCfg_Isr_CounterIsr_SystemTimer1 =
+{
+  /* .Isr     = */
+  {
+  /* .Thread   = */
+  {
+    /* .ContextConfig         = */ &OsCfg_Hal_Context_CounterIsr_SystemTimer1,
+    /* .Context               = */ &OsCfg_Hal_Context_OsCore1_Isr_Level1_Dyn,
+    /* .Stack                 = */ &OsCfg_Stack_OsCore1_Isr_Core,
+    /* .Dyn                   = */ OS_ISR_CASTDYN_ISR_2_THREAD(OsCfg_Isr_CounterIsr_SystemTimer1_Dyn),
+    /* .OwnerApplication      = */ &OsCfg_App_OsApplication_OsCore1,
+    /* .Core                  = */ &OsCfg_Core_OsCore1,
+    /* .IntApiState           = */ &OsCfg_Core_OsCore1_Dyn.IntApiState,
+    /* .TimeProtConfig        = */ NULL_PTR,
+    /* .MpAccessRightsInitial = */ NULL_PTR,
+    /* .AccessRights          = */ &OsCfg_AccessCheck_NoAccess,
+    /* .Trace                 = */ NULL_PTR,
+    /* .FpuContext            = */ NULL_PTR,
+    /* .InitialCallContext    = */ OS_CALLCONTEXT_ISR2,
+    /* .PreThreadHook         = */ NULL_PTR,
+    /* .InitDuringStartUp     = */ FALSE,
+    /* .UsesFpu               = */ FALSE
+  },
+  /* .SourceConfig              = */ &OsCfg_Isr_CounterIsr_SystemTimer1_HwConfig,
+  /* .IsrId                     = */ CounterIsr_SystemTimer1,
+  /* .IsEnabledOnInitialization = */ FALSE
+}
+,
+  /* .Counter = */ OS_COUNTER_CASTCONFIG_TIMERPFRT_2_COUNTER(OsCfg_Counter_SystemTimer1)
+};
+#define OS_STOP_SEC_CORE1_CONST_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
 #define OS_START_SEC_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
@@ -254,6 +310,7 @@ CONSTP2CONST(Os_IsrConfigType, OS_CONST, OS_CONST) OsCfg_IsrRefs[OS_ISRID_COUNT 
   OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_AdcIsr_G8),
   OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_CanIsr_0),
   OS_TIMER_CASTCONFIG_TIMERISR_2_ISR(OsCfg_Isr_CounterIsr_SystemTimer),
+  OS_TIMER_CASTCONFIG_TIMERISR_2_ISR(OsCfg_Isr_CounterIsr_SystemTimer1),
   NULL_PTR
 };
 

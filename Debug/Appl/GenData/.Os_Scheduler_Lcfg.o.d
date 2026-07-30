@@ -32,6 +32,14 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\B
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Scheduler.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Scheduler.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_SchedulerInt.h"
@@ -56,6 +64,38 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\B
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Os_Types.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Lcfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Lcfg.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
@@ -344,6 +384,14 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\B
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_CommonInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_CommonInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_ThreadInt.h"
@@ -468,6 +516,102 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\B
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
@@ -532,6 +676,22 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\A
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Kernel_Lcfg.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Core_Types.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Core_Types.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
@@ -728,6 +888,14 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\B
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_LockInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_LockInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Core_Types.h"
@@ -752,6 +920,14 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\A
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Trace_Cfg.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Trace_Lcfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Trace_Lcfg.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
@@ -830,6 +1006,14 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\B
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Core_Types.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Core_Types.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Counter_Types.h"
@@ -848,6 +1032,14 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\B
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Timer_Types.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Timer_Types.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Timer_Types.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
@@ -964,6 +1156,14 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\B
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Common.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Common.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Thread.h"
@@ -1020,6 +1220,14 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\B
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_TimingProtectionInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_TimingProtectionInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_CommonInt.h"
@@ -1034,6 +1242,14 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\A
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Counter_Lcfg.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Lcfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Lcfg.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
@@ -1216,6 +1432,14 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\B
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_ServiceFunction_Types.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_ServiceFunction_Types.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_CoreInt.h"
@@ -1278,6 +1502,14 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\B
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Compiler.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Compiler.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Core.h"
@@ -1302,6 +1534,14 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\B
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Interrupt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Interrupt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_InterruptInt.h"
@@ -1310,6 +1550,14 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\A
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Interrupt_Lcfg.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Interrupt_Cfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Interrupt_Cfg.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
@@ -1410,6 +1658,14 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\B
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_JobInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_JobInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_CompilerInt.h"
@@ -1448,6 +1704,14 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\A
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_ScheduleTable_Lcfg.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Lcfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Lcfg.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
@@ -1538,6 +1802,14 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\B
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_TimerInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Timer_Lcfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Timer_Lcfg.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
@@ -1648,6 +1920,14 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\B
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Lcfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Lcfg.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_BitArray.h"
@@ -1708,6 +1988,14 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\B
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsCode.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsCode.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsCodeInt.h"
@@ -1722,6 +2010,22 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\B
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_ContextInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Context_Lcfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Context_Lcfg.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
@@ -2278,6 +2582,14 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\B
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Spinlock.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Spinlock.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Compiler.h"
@@ -2398,6 +2710,22 @@ Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\B
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_BitArray.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Deque.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Deque.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_Scheduler_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"

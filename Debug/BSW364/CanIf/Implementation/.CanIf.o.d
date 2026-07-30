@@ -896,6 +896,14 @@ BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last36
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_UserTypes.h" :
 BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_DataHandleType.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_DataHandleType.h" :
+BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h" :
+BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h" :
+BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h" :
+BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h" :
 BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os.h" :
 BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\OsInt.h"
@@ -914,6 +922,38 @@ BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last36
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Os_Types.h" :
 BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Lcfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Lcfg.h" :
+BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
 BSW364\CanIf\Implementation\CanIf.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"

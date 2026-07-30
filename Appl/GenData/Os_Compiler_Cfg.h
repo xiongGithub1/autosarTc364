@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Compiler_Cfg.h
- *   Generation Time: 2026-07-29 10:29:51
+ *   Generation Time: 2026-07-30 20:09:42
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -49,12 +49,16 @@
  *********************************************************************************************************************/
 
 # define OS_ADC8SR0_ISR_CODE
+# define OS_BSWCORE1TASK_CODE
 # define OS_CANISR_0_CODE
 # define OS_DEFAULT_APPL_INIT_TASK_CODE
 # define OS_DEFAULT_APPL_TASK_CODE
-# define OS_DEFAULT_BSW_ASYNC_TASK_CODE
+# define OS_DEFAULT_BSW_ASYNC_TASK_10MS_CODE
 # define OS_DEFAULT_INIT_TASK_CODE
+# define OS_DEFAULT_INIT_TASK_CORE1_CODE
+# define OS_DEFAULT_INIT_TASK_CORE1_TRUSTED_CODE
 # define OS_DEFAULT_INIT_TASK_TRUSTED_CODE
+# define OS_DEFAULT_MOTORINITTASK_CODE
 # define OS_MOTORTASK_CODE
 
 

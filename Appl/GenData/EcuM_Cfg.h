@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Cfg.h
- *   Generation Time: 2026-07-29 10:31:08
+ *   Generation Time: 2026-07-30 19:55:29
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -59,12 +59,12 @@
 # define ECUM_SCHM_START_INITIALIZATION                               (STD_ON)
 # define ECUM_DEFERRED_BSWM_NOTIFICATION                              (STD_OFF)
 # define ECUM_NONCHANNEL_WAKEUP_RUN                                   (STD_OFF)
-# define ECUM_SLAVE_CORE_HANDLING                                     (STD_OFF)
+# define ECUM_SLAVE_CORE_HANDLING                                     (STD_ON)
 # define ECUM_BSW_ERROR_HOOK                                          (STD_ON)
 
 
 /* pre-compile switches for module API */
-# define ECUM_VERSION_INFO_API                                        (STD_OFF)
+# define ECUM_VERSION_INFO_API                                        (STD_ON)
 
 /* pre-compile switches for the EcuMFlex Behavior */ 
 # define ECUM_ENABLE_DEF_BEHAVIOR                                     (STD_OFF)
@@ -136,11 +136,11 @@
 /* Variables that are used to determine the arraysizes or the number of some modes */
 #define ECUM_RESETMODECOUNT                                           (4u)
 #define ECUM_SHUTDOWNCAUSECOUNT                                       (4u)
-#define ECUM_NUMBER_OF_CORES                                          (1u)
-#define ECUM_NUMBER_OF_OS_APPLICATIONS                                (1u)
+#define ECUM_NUMBER_OF_CORES                                          (2u)
+#define ECUM_NUMBER_OF_OS_APPLICATIONS                                (2u)
 
 #define ECUM_CORE_ID_STARTUP                                          OS_CORE_ID_MASTER
-#define ECUM_CORE_ID_BSW                                              OS_CORE_ID_MASTER
+#define ECUM_CORE_ID_BSW                                              OS_CORE_ID_0
 #define ECUM_OS_RESOURCE                                              OsResource_EcuM /*  The selected OsResource  */ 
 
 
@@ -148,6 +148,10 @@
 #define ECUM_SCHM_CONFIG_POINTER                                      
 #define ECUM_DEM_CONFIG_POINTER                                       
 
+typedef volatile uint32 EcuM_CoreStatusType;
+typedef EcuM_CoreStatusType *EcuM_CoreStatusArrayType;
+#define EcuM_SetCoreStatusValue(partitionIdx, value)                  (*EcuM_GetCoreStatus(partitionIdx) = value) /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
+#define EcuM_GetCoreStatusValue(partitionIdx)                         (*EcuM_GetCoreStatus(partitionIdx))         /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
 
 # if (STD_ON == ECUM_DEV_ERROR_DETECT)
 #  define EcuM_Det_ReportError(EcuM_FunctionId, EcuM_ErrorCode)       ((void)Det_ReportError((ECUM_MODULE_ID), (ECUM_INSTANCE_ID), (EcuM_FunctionId), (EcuM_ErrorCode))) /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
@@ -198,6 +202,7 @@
 #define ECUM_COMMPNCS                                                                               STD_OFF  /**< Deactivateable: 'EcuM_ComMPNCs' Reason: 'the struct is deactivated because all elements are deactivated.' */
 #define ECUM_PNCOFCOMMPNCS                                                                          STD_OFF  /**< Deactivateable: 'EcuM_ComMPNCs.PNC' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
 #define ECUM_COMM_COMALLOWEDLIST                                                                    STD_OFF  /**< Deactivateable: 'EcuM_ComM_ComAllowedList' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define ECUM_CORESTATUS                                                                             STD_ON
 #define ECUM_DEFAULTAPPMODE                                                                         STD_ON
 #define ECUM_DEFAULTSHUTDOWNMODE                                                                    STD_ON
 #define ECUM_DEFAULTSHUTDOWNTARGET                                                                  STD_ON
@@ -225,18 +230,20 @@
 #define ECUM_NORMALMCUMODE                                                                          STD_ON
 #define ECUM_NVMCANCELWRITEALLTIMEOUT                                                               STD_OFF  /**< Deactivateable: 'EcuM_NvMCancelWriteAllTimeout' Reason: 'NvMCancelWriteAllTimeout is currently not used!' */
 #define ECUM_NVMWRITEALLTIMEOUT                                                                     STD_ON
-#define ECUM_PARTITIONDATA                                                                          STD_OFF  /**< Deactivateable: 'EcuM_PartitionData' Reason: 'the struct is deactivated because all elements are deactivated.' */
-#define ECUM_APPLICATIONOFPARTITIONDATA                                                             STD_OFF  /**< Deactivateable: 'EcuM_PartitionData.Application' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
-#define ECUM_BSWMPARTITIONOFPARTITIONDATA                                                           STD_OFF  /**< Deactivateable: 'EcuM_PartitionData.BswMPartition' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
-#define ECUM_ECUMPARTITIONOFPARTITIONDATA                                                           STD_OFF  /**< Deactivateable: 'EcuM_PartitionData.EcuMPartition' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define ECUM_PARTITIONDATA                                                                          STD_ON
+#define ECUM_APPLICATIONOFPARTITIONDATA                                                             STD_ON
+#define ECUM_BSWMPARTITIONOFPARTITIONDATA                                                           STD_OFF  /**< Deactivateable: 'EcuM_PartitionData.BswMPartition' Reason: 'the value of EcuM_BswMPartitionOfPartitionData is always 'false' due to this, the array is deactivated.' */
+#define ECUM_ECUMPARTITIONOFPARTITIONDATA                                                           STD_ON
 #define ECUM_RESOURCEOFPARTITIONDATA                                                                STD_OFF  /**< Deactivateable: 'EcuM_PartitionData.Resource' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
 #define ECUM_POSTRUNREQUESTCOUNTER                                                                  STD_ON
 #define ECUM_RUNREQUESTCOUNTER                                                                      STD_ON
 #define ECUM_SELFRUNREQUESTTIMEOUT                                                                  STD_ON
 #define ECUM_SIZEOFCOMMCHANNELS                                                                     STD_ON
+#define ECUM_SIZEOFCORESTATUS                                                                       STD_ON
 #define ECUM_SIZEOFDRIVERINITONE                                                                    STD_ON
 #define ECUM_SIZEOFDRIVERINITTHREE                                                                  STD_ON
 #define ECUM_SIZEOFDRIVERINITTWO                                                                    STD_ON
+#define ECUM_SIZEOFPARTITIONDATA                                                                    STD_ON
 #define ECUM_SIZEOFUSERTABLE                                                                        STD_ON
 #define ECUM_SIZEOFWAKEUPSOURCELIST                                                                 STD_ON
 #define ECUM_SLEEPMODELIST                                                                          STD_OFF  /**< Deactivateable: 'EcuM_SleepModeList' Reason: 'the struct is deactivated because all elements are deactivated.' */
@@ -259,6 +266,7 @@
 #define ECUM_VALIDATIONTIMEOFWAKEUPSOURCELIST                                                       STD_OFF  /**< Deactivateable: 'EcuM_WakeupSourceList.ValidationTime' Reason: 'the value of EcuM_ValidationTimeOfWakeupSourceList is always '0' due to this, the array is deactivated.' */
 #define ECUM_PCCONFIG                                                                               STD_ON
 #define ECUM_COMMCHANNELSOFPCCONFIG                                                                 STD_ON
+#define ECUM_CORESTATUSOFPCCONFIG                                                                   STD_ON
 #define ECUM_DEFAULTAPPMODEOFPCCONFIG                                                               STD_ON
 #define ECUM_DEFAULTSHUTDOWNMODEOFPCCONFIG                                                          STD_ON
 #define ECUM_DEFAULTSHUTDOWNTARGETOFPCCONFIG                                                        STD_ON
@@ -276,13 +284,16 @@
 #define ECUM_NORMALMCUMODEOFPCCONFIG                                                                STD_ON
 #define ECUM_NVMCANCELWRITEALLTIMEOUTOFPCCONFIG                                                     STD_OFF  /**< Deactivateable: 'EcuM_PCConfig.NvMCancelWriteAllTimeout' Reason: 'NvMCancelWriteAllTimeout is currently not used!' */
 #define ECUM_NVMWRITEALLTIMEOUTOFPCCONFIG                                                           STD_ON
+#define ECUM_PARTITIONDATAOFPCCONFIG                                                                STD_ON
 #define ECUM_POSTRUNREQUESTCOUNTEROFPCCONFIG                                                        STD_ON
 #define ECUM_RUNREQUESTCOUNTEROFPCCONFIG                                                            STD_ON
 #define ECUM_SELFRUNREQUESTTIMEOUTOFPCCONFIG                                                        STD_ON
 #define ECUM_SIZEOFCOMMCHANNELSOFPCCONFIG                                                           STD_ON
+#define ECUM_SIZEOFCORESTATUSOFPCCONFIG                                                             STD_ON
 #define ECUM_SIZEOFDRIVERINITONEOFPCCONFIG                                                          STD_ON
 #define ECUM_SIZEOFDRIVERINITTHREEOFPCCONFIG                                                        STD_ON
 #define ECUM_SIZEOFDRIVERINITTWOOFPCCONFIG                                                          STD_ON
+#define ECUM_SIZEOFPARTITIONDATAOFPCCONFIG                                                          STD_ON
 #define ECUM_SIZEOFUSERTABLEOFPCCONFIG                                                              STD_ON
 #define ECUM_SIZEOFWAKEUPSOURCELISTOFPCCONFIG                                                       STD_ON
 #define ECUM_TIMEROFPCCONFIG                                                                        STD_ON
@@ -324,16 +335,21 @@
   \{
 */ 
 #define ECUM_ISDEF_COMMCHANNELS                                                                     STD_ON
+#define ECUM_ISDEF_CORESTATUS                                                                       STD_OFF
 #define ECUM_ISDEF_FUNCTIONOFDRIVERINITONE                                                          STD_OFF
 #define ECUM_ISDEF_FUNCTIONOFDRIVERINITTHREE                                                        STD_OFF
 #define ECUM_ISDEF_FUNCTIONOFDRIVERINITTWO                                                          STD_OFF
+#define ECUM_ISDEF_APPLICATIONOFPARTITIONDATA                                                       STD_OFF
+#define ECUM_ISDEF_ECUMPARTITIONOFPARTITIONDATA                                                     STD_ON
 #define ECUM_ISDEF_CHANNELOFWAKEUPSOURCELIST                                                        STD_OFF
 #define ECUM_ISDEF_COMMCHANNELSOFPCCONFIG                                                           STD_ON
+#define ECUM_ISDEF_CORESTATUSOFPCCONFIG                                                             STD_ON
 #define ECUM_ISDEF_DRIVERINITONEOFPCCONFIG                                                          STD_ON
 #define ECUM_ISDEF_DRIVERINITTHREEOFPCCONFIG                                                        STD_ON
 #define ECUM_ISDEF_DRIVERINITTWOOFPCCONFIG                                                          STD_ON
 #define ECUM_ISDEF_KILLALLINPROGRESSOFPCCONFIG                                                      STD_ON
 #define ECUM_ISDEF_MODULESTATEOFPCCONFIG                                                            STD_ON
+#define ECUM_ISDEF_PARTITIONDATAOFPCCONFIG                                                          STD_ON
 #define ECUM_ISDEF_POSTRUNREQUESTCOUNTEROFPCCONFIG                                                  STD_ON
 #define ECUM_ISDEF_RUNREQUESTCOUNTEROFPCCONFIG                                                      STD_ON
 #define ECUM_ISDEF_TIMEROFPCCONFIG                                                                  STD_ON
@@ -349,16 +365,21 @@
   \{
 */ 
 #define ECUM_EQ2_COMMCHANNELS                                                                       0u
+#define ECUM_EQ2_CORESTATUS                                                                         
 #define ECUM_EQ2_FUNCTIONOFDRIVERINITONE                                                            
 #define ECUM_EQ2_FUNCTIONOFDRIVERINITTHREE                                                          
 #define ECUM_EQ2_FUNCTIONOFDRIVERINITTWO                                                            
+#define ECUM_EQ2_APPLICATIONOFPARTITIONDATA                                                         
+#define ECUM_EQ2_ECUMPARTITIONOFPARTITIONDATA                                                       TRUE
 #define ECUM_EQ2_CHANNELOFWAKEUPSOURCELIST                                                          
 #define ECUM_EQ2_COMMCHANNELSOFPCCONFIG                                                             EcuM_ComMChannels
+#define ECUM_EQ2_CORESTATUSOFPCCONFIG                                                               EcuM_CoreStatus
 #define ECUM_EQ2_DRIVERINITONEOFPCCONFIG                                                            EcuM_DriverInitOne
 #define ECUM_EQ2_DRIVERINITTHREEOFPCCONFIG                                                          EcuM_DriverInitThree
 #define ECUM_EQ2_DRIVERINITTWOOFPCCONFIG                                                            EcuM_DriverInitTwo
 #define ECUM_EQ2_KILLALLINPROGRESSOFPCCONFIG                                                        (&(EcuM_KillAllInProgress))
 #define ECUM_EQ2_MODULESTATEOFPCCONFIG                                                              (&(EcuM_ModuleState))
+#define ECUM_EQ2_PARTITIONDATAOFPCCONFIG                                                            EcuM_PartitionData
 #define ECUM_EQ2_POSTRUNREQUESTCOUNTEROFPCCONFIG                                                    (&(EcuM_PostRunRequestCounter))
 #define ECUM_EQ2_RUNREQUESTCOUNTEROFPCCONFIG                                                        (&(EcuM_RunRequestCounter))
 #define ECUM_EQ2_TIMEROFPCCONFIG                                                                    (&(EcuM_Timer))
@@ -436,6 +457,9 @@ typedef P2FUNC ( void, ECUM_CODE, EcuM_DriverFuncType)( void );
 /**   \brief  value based type definition for EcuM_SizeOfComMChannels */
 typedef uint8 EcuM_SizeOfComMChannelsType;
 
+/**   \brief  value based type definition for EcuM_SizeOfCoreStatus */
+typedef uint8 EcuM_SizeOfCoreStatusType;
+
 /**   \brief  value based type definition for EcuM_SizeOfDriverInitOne */
 typedef uint8 EcuM_SizeOfDriverInitOneType;
 
@@ -444,6 +468,9 @@ typedef uint8 EcuM_SizeOfDriverInitThreeType;
 
 /**   \brief  value based type definition for EcuM_SizeOfDriverInitTwo */
 typedef uint8 EcuM_SizeOfDriverInitTwoType;
+
+/**   \brief  value based type definition for EcuM_SizeOfPartitionData */
+typedef uint8 EcuM_SizeOfPartitionDataType;
 
 /**   \brief  value based type definition for EcuM_SizeOfUserTable */
 typedef uint8 EcuM_SizeOfUserTableType;
@@ -467,6 +494,9 @@ typedef uint8 EcuM_SizeOfWakeupSourceListType;
 /**   \brief  type used to iterate EcuM_ComMChannels */
 typedef uint8_least EcuM_ComMChannelsIterType;
 
+/**   \brief  type used to iterate EcuM_CoreStatus */
+typedef uint8_least EcuM_CoreStatusIterType;
+
 /**   \brief  type used to iterate EcuM_DriverInitOne */
 typedef uint8_least EcuM_DriverInitOneIterType;
 
@@ -475,6 +505,9 @@ typedef uint8_least EcuM_DriverInitThreeIterType;
 
 /**   \brief  type used to iterate EcuM_DriverInitTwo */
 typedef uint8_least EcuM_DriverInitTwoIterType;
+
+/**   \brief  type used to iterate EcuM_PartitionData */
+typedef uint8_least EcuM_PartitionDataIterType;
 
 /**   \brief  type used to iterate EcuM_UserTable */
 typedef uint8_least EcuM_UserTableIterType;
@@ -520,6 +553,12 @@ typedef uint32 EcuM_NormalMcuModeType;
 
 /**   \brief  value based type definition for EcuM_NvMWriteAllTimeout */
 typedef uint16 EcuM_NvMWriteAllTimeoutType;
+
+/**   \brief  value based type definition for EcuM_ApplicationOfPartitionData */
+typedef uint8 EcuM_ApplicationOfPartitionDataType;
+
+/**   \brief  value based type definition for EcuM_EcuMPartitionOfPartitionData */
+typedef boolean EcuM_EcuMPartitionOfPartitionDataType;
 
 /**   \brief  value based type definition for EcuM_PostRunRequestCounter */
 typedef uint8 EcuM_PostRunRequestCounterType;
@@ -567,6 +606,12 @@ typedef struct sEcuM_DriverInitTwoType
   EcuM_DriverFuncType FunctionOfDriverInitTwo;
 } EcuM_DriverInitTwoType;
 
+/**   \brief  type used in EcuM_PartitionData */
+typedef struct sEcuM_PartitionDataType
+{
+  EcuM_ApplicationOfPartitionDataType ApplicationOfPartitionData;  /**<  */
+} EcuM_PartitionDataType;
+
 /**   \brief  type used in EcuM_WakeupSourceList */
 typedef struct sEcuM_WakeupSourceListType
 {
@@ -585,6 +630,9 @@ typedef struct sEcuM_WakeupSourceListType
 /**   \brief  type used to point to EcuM_ComMChannels */
 typedef P2CONST(EcuM_ComMChannelsType, TYPEDEF, ECUM_CONST) EcuM_ComMChannelsPtrType;
 
+/**   \brief  type used to point to EcuM_CoreStatus */
+typedef P2CONST(EcuM_CoreStatusArrayType, TYPEDEF, ECUM_CONST) EcuM_CoreStatusPtrType;
+
 /**   \brief  type used to point to EcuM_DriverInitOne */
 typedef P2CONST(EcuM_DriverInitOneType, TYPEDEF, ECUM_CONST) EcuM_DriverInitOnePtrType;
 
@@ -599,6 +647,9 @@ typedef P2VAR(EcuM_KillAllInProgressType, TYPEDEF, ECUM_VAR_NO_INIT) EcuM_KillAl
 
 /**   \brief  type used to point to EcuM_ModuleState */
 typedef P2VAR(EcuM_StateType, TYPEDEF, ECUM_VAR_NO_INIT) EcuM_ModuleStatePtrType;
+
+/**   \brief  type used to point to EcuM_PartitionData */
+typedef P2CONST(EcuM_PartitionDataType, TYPEDEF, ECUM_CONST) EcuM_PartitionDataPtrType;
 
 /**   \brief  type used to point to EcuM_PostRunRequestCounter */
 typedef P2VAR(EcuM_PostRunRequestCounterType, TYPEDEF, ECUM_VAR_NO_INIT) EcuM_PostRunRequestCounterPtrType;

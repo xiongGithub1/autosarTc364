@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hook_Cfg.h
- *   Generation Time: 2026-07-29 10:29:51
+ *   Generation Time: 2026-07-30 17:52:17
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -69,7 +69,7 @@
 # define OS_CFG_PROTECTIONHOOK                   (STD_OFF)
 
 /*! Number of all configured Hooks. */
-# define OS_CFG_NUM_HOOKS                        (4u)
+# define OS_CFG_NUM_HOOKS                        (8u)
 
 
 /**********************************************************************************************************************

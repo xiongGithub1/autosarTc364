@@ -8,10 +8,23 @@
 
 #include "Can.h"
 #include "McalLib.h"
+#include "Os.h"
 
 #if (CAN_DEV_ERROR_DETECT == STD_ON)
 # include "Det.h"
 #endif
+
+void ApplCanInterruptDisable(uint8 Controller)
+{
+  (void)Controller;
+  SuspendAllInterrupts();
+}
+
+void ApplCanInterruptRestore(uint8 Controller)
+{
+  (void)Controller;
+  ResumeAllInterrupts();
+}
 
 static uint32 Can_Callout_GetTimeoutTicks(void)
 {

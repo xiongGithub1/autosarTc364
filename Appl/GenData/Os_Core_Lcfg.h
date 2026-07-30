@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Core_Lcfg.h
- *   Generation Time: 2026-07-29 10:29:51
+ *   Generation Time: 2026-07-30 17:52:17
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -87,6 +87,16 @@ extern VAR(Os_CoreAsrType, OS_VAR_NOINIT) OsCfg_Core_OsCore0_Dyn;
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
+# define OS_START_SEC_CORE1_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! Dynamic core data: OsCore1 */
+extern VAR(Os_CoreAsrType, OS_VAR_NOINIT) OsCfg_Core_OsCore1_Dyn;
+
+# define OS_STOP_SEC_CORE1_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
 /**********************************************************************************************************************
  *  GLOBAL CONSTANT DATA PROTOTYPES
  *********************************************************************************************************************/
@@ -98,6 +108,16 @@ extern VAR(Os_CoreAsrType, OS_VAR_NOINIT) OsCfg_Core_OsCore0_Dyn;
 extern CONST(Os_CoreAsrConfigType, OS_CONST) OsCfg_Core_OsCore0;
 
 # define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
+# include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_CORE1_CONST_UNSPECIFIED
+# include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! Core configuration data: OsCore1 */
+extern CONST(Os_CoreAsrConfigType, OS_CONST) OsCfg_Core_OsCore1;
+
+# define OS_STOP_SEC_CORE1_CONST_UNSPECIFIED
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 

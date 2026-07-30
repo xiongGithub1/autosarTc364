@@ -27,32 +27,34 @@
 /* Os definitions */
 
 /* Tasks */
-# define Default_Appl_Init_Task (0U)
-# define Default_Appl_Task (1U)
-# define Default_BSW_ASync_Task (2U)
-# define MotorTask (3U)
+# define BswCore1Task (0U)
+# define Default_Appl_Init_Task (1U)
+# define Default_Appl_Task (2U)
+# define Default_BSW_ASync_Task_10ms (3U)
+# define Default_MotorInitTask (4U)
+# define MotorTask (5U)
 
 /* Counters */
 # define SystemTimer (0U)
+# define SystemTimer1 (1U)
 
 /* Alarms */
-# define Rte_Al_TE_StartApp_StartApp_Cyclic1000ms (0U)
-# define Rte_Al_TE_StartApp_StartApp_Cyclic10ms (1U)
-# define Rte_Al_TE_StartApp_StartApp_Cyclic1ms (2U)
-# define Rte_Al_TE_StartApp_StartApp_Cyclic250ms (3U)
-# define Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms (4U)
-# define Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms (5U)
-# define Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx (6U)
-# define Rte_Al_TE_MotorCdd_MotorCDDMainFunction (7U)
-# define Rte_Al_TE_MotorControll_MotorControll_MainFunction (8U)
+# define Rte_Al_TE2_EcuM_EcuM_MainFunction (0U)
+# define Rte_Al_TE_StartApp_StartApp_Cyclic1000ms (1U)
+# define Rte_Al_TE_StartApp_StartApp_Cyclic10ms (2U)
+# define Rte_Al_TE_StartApp_StartApp_Cyclic1ms (3U)
+# define Rte_Al_TE_StartApp_StartApp_Cyclic250ms (4U)
+# define Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_10ms (5U)
+# define Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_20ms (6U)
+# define Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx (7U)
+# define Rte_Al_TE_MotorTask_0_1ms (8U)
 
 /* Events */
-# define Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms (0x01ULL)
-# define Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_20ms (0x02ULL)
+# define Rte_Ev_Cyclic2_Default_BSW_ASync_Task_10ms_0_10ms (0x01ULL)
+# define Rte_Ev_Cyclic2_Default_BSW_ASync_Task_10ms_0_20ms (0x02ULL)
+# define Rte_Ev_Cyclic_MotorTask_0_1ms (0x01ULL)
 # define Rte_Ev_Run_Com_Com_MainFunctionTx_ComMainFunctionTx (0x04ULL)
-# define Rte_Ev_Run_MotorCdd_AdcSampleReady_Rp_AdcSampleReady_AdcSampleReady (0x01ULL)
-# define Rte_Ev_Run_MotorCdd_MotorCDDMainFunction (0x02ULL)
-# define Rte_Ev_Run_MotorControll_MotorControll_MainFunction (0x04ULL)
+# define Rte_Ev_Run_MotorCdd_AdcSampleReady_Rp_AdcSampleReady_AdcSampleReady (0x02ULL)
 # define Rte_Ev_Run_StartApp_StartApp_Cyclic1000ms (0x01ULL)
 # define Rte_Ev_Run_StartApp_StartApp_Cyclic10ms (0x02ULL)
 # define Rte_Ev_Run_StartApp_StartApp_Cyclic1ms (0x04ULL)
@@ -65,6 +67,9 @@
 /* ScheduleTables */
 
 /* Cores */
+# define OS_CORE_ID_0 (0U)
+# define OS_CORE_ID_1 (1U)
+# include "usrostyp.h"
 
 /* Trusted Functions */
 

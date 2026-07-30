@@ -34,6 +34,8 @@
 FUNC(void, RTE_CODE) SchM_Init(void);
 FUNC(void, RTE_CODE) SchM_Start(void);
 FUNC(void, RTE_CODE) SchM_StartTiming(void);
+FUNC(void, RTE_CODE) SchM_StartTimingCore0(void);
+FUNC(void, RTE_CODE) SchM_StartTimingCore1(void);
 FUNC(void, RTE_CODE) SchM_Deinit(void);
 
 /* RTE Life-Cycle API */
@@ -42,6 +44,8 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Stop(void);
 
 /* Extended Life-Cycle API */
 FUNC(void, RTE_CODE) Rte_InitMemory(void);
+FUNC(void, RTE_CODE) Rte_InitMemory_OsApplication_OsCore1(void);
+FUNC(void, RTE_CODE) Rte_InitMemory_SystemApplication_OsCore0(void);
 
 # define RTE_STOP_SEC_CODE
 # include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */

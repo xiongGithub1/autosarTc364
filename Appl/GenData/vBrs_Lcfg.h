@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: .\vBrs_Lcfg.h
- *   Generation Time: 2026-07-29 10:31:06
+ *   Generation Time: 2026-07-30 17:52:16
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -63,7 +63,7 @@
 /*******************************************************************************
  Logical to phyiscal core assingment
 *******************************************************************************/
-extern const brsMain_CoreType BrsMain_CoreConfig[1u];
+extern const brsMain_CoreType BrsMain_CoreConfig[2u];
 extern const uint32 BrsMain_CoreConfig_Size;
 #endif /*BRSHW_SOURCECODE_TEMPLATE_VERSION>=0x0103u*/
 

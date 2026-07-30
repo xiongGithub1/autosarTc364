@@ -319,6 +319,14 @@
                 <ALIGNMENT>16</ALIGNMENT>
                 <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR_MemMap/SwAddrMethods/VAR_NOCACHE_NO_INIT</SW-ADDRMETHOD-REF>
               </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="fa494b02-3a43-4832-97b2-3c690172b769">
+                <SHORT-NAME>VAR_PARTITION_OSAPPLICATION_OSCORE1_NOCACHE_NO_INIT_32</SHORT-NAME>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR/Os_ib_bswmd/SwAddrMethods/OsApplication_OsCore1_VAR_NOCACHE_NO_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
+              <MEMORY-SECTION UUID="22a9eaef-cf98-43de-b4aa-aa4a4cdb018d">
+                <SHORT-NAME>VAR_PARTITION_SYSTEMAPPLICATION_OSCORE0_NOCACHE_NO_INIT_32</SHORT-NAME>
+                <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_NOCACHE_NO_INIT</SW-ADDRMETHOD-REF>
+              </MEMORY-SECTION>
             </MEMORY-SECTIONS>
           </RESOURCE-CONSUMPTION>
           <SW-VERSION>12.00.00</SW-VERSION>
@@ -382,6 +390,11 @@
                       <EVENTS>
                         <BSW-TIMING-EVENT UUID="6ffb5cf5-4b8a-40f7-9473-f46fa37d7e83">
                           <SHORT-NAME>EcuM_MainFunctionTimingEvent0</SHORT-NAME>
+                          <STARTS-ON-EVENT-REF DEST="BSW-SCHEDULABLE-ENTITY">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/EcuM_MainFunction</STARTS-ON-EVENT-REF>
+                          <PERIOD>0.01</PERIOD>
+                        </BSW-TIMING-EVENT>
+                        <BSW-TIMING-EVENT UUID="38b97780-86df-425a-9e98-03c09466b180">
+                          <SHORT-NAME>EcuM_MainFunctionTimingEvent1</SHORT-NAME>
                           <STARTS-ON-EVENT-REF DEST="BSW-SCHEDULABLE-ENTITY">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/EcuM_MainFunction</STARTS-ON-EVENT-REF>
                           <PERIOD>0.01</PERIOD>
                         </BSW-TIMING-EVENT>

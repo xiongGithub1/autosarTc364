@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Scheduler_Cfg.h
- *   Generation Time: 2026-07-29 10:29:51
+ *   Generation Time: 2026-07-30 20:09:43
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -60,16 +60,27 @@
 # define OS_CFG_SCHEDULE_ROUND_ROB_ENABLED       (STD_OFF)
 
 /*! Defines the number of all task queues. */
-# define OS_CFG_NUM_TASKQUEUES                   (7u)
+# define OS_CFG_NUM_TASKQUEUES                   (8u)
 
 /* Number of task queue activation slots: OsCore0 */
 # define OS_CFG_NUM_TASKQUEUE0_OSCORE0_SLOTS     (3u)
 # define OS_CFG_NUM_TASKQUEUE1_OSCORE0_SLOTS     (2u)
 # define OS_CFG_NUM_TASKQUEUE2_OSCORE0_SLOTS     (2u)
-# define OS_CFG_NUM_TASKQUEUE3_OSCORE0_SLOTS     (2u)
-# define OS_CFG_NUM_TASKQUEUE4_OSCORE0_SLOTS     (3u)
+# define OS_CFG_NUM_TASKQUEUE3_OSCORE0_SLOTS     (3u)
+# define OS_CFG_NUM_TASKQUEUE4_OSCORE0_SLOTS     (1u)
 # define OS_CFG_NUM_TASKQUEUE5_OSCORE0_SLOTS     (2u)
-# define OS_CFG_NUM_TASKQUEUE6_OSCORE0_SLOTS     (2u)
+# define OS_CFG_NUM_TASKQUEUE6_OSCORE0_SLOTS     (1u)
+# define OS_CFG_NUM_TASKQUEUE7_OSCORE0_SLOTS     (2u)
+
+/* Number of task queue activation slots: OsCore1 */
+# define OS_CFG_NUM_TASKQUEUE0_OSCORE1_SLOTS     (3u)
+# define OS_CFG_NUM_TASKQUEUE1_OSCORE1_SLOTS     (2u)
+# define OS_CFG_NUM_TASKQUEUE2_OSCORE1_SLOTS     (1u)
+# define OS_CFG_NUM_TASKQUEUE3_OSCORE1_SLOTS     (1u)
+# define OS_CFG_NUM_TASKQUEUE4_OSCORE1_SLOTS     (2u)
+# define OS_CFG_NUM_TASKQUEUE5_OSCORE1_SLOTS     (1u)
+# define OS_CFG_NUM_TASKQUEUE6_OSCORE1_SLOTS     (3u)
+# define OS_CFG_NUM_TASKQUEUE7_OSCORE1_SLOTS     (2u)
 
 
 /**********************************************************************************************************************

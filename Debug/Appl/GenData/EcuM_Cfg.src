@@ -1,74 +1,100 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
-	.compiler_invocation	"ctc -f cc16700a --dep-file=Appl\\GenData\\.EcuM_Cfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=Appl\\GenData\\EcuM_Cfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\EcuM_Cfg.src ..\\Appl\\GenData\\EcuM_Cfg.c"
+	.compiler_invocation	"ctc -f cc15772a --dep-file=Appl\\GenData\\.EcuM_Cfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -DBRS_COMP_TASKING -DBRS_PLATFORM_AURIX -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Include -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=Appl\\GenData\\EcuM_Cfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\EcuM_Cfg.src ..\\Appl\\GenData\\EcuM_Cfg.c"
 	.compiler_name		"ctc"
 	;source	'..\\Appl\\GenData\\EcuM_Cfg.c'
 
 	
 $TC162
 	
-	.sdecl	'.zrodata.EcuM_Cfg.EcuM_DriverInitOne',data,rom,cluster('EcuM_DriverInitOne')
-	.sect	'.zrodata.EcuM_Cfg.EcuM_DriverInitOne'
+	.sdecl	'.bss.OS_CORE0_VAR_NOINIT',data,cluster('EcuM_CoreStatus_SystemApplication_OsCore0')
+	.sect	'.bss.OS_CORE0_VAR_NOINIT'
+	.align	2
+EcuM_CoreStatus_SystemApplication_OsCore0:	.type	object
+	.size	EcuM_CoreStatus_SystemApplication_OsCore0,4
+	.space	4
+	.sdecl	'.bss.OS_CORE1_VAR_NOINIT',data,cluster('EcuM_CoreStatus_OsApplication_OsCore1')
+	.sect	'.bss.OS_CORE1_VAR_NOINIT'
+	.align	2
+EcuM_CoreStatus_OsApplication_OsCore1:	.type	object
+	.size	EcuM_CoreStatus_OsApplication_OsCore1,4
+	.space	4
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('EcuM_CoreStatus')
+	.sect	'.rodata.MSR_CONST'
+	.global	EcuM_CoreStatus
+	.align	4
+EcuM_CoreStatus:	.type	object
+	.size	EcuM_CoreStatus,8
+	.word	EcuM_CoreStatus_SystemApplication_OsCore0,EcuM_CoreStatus_OsApplication_OsCore1
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('EcuM_DriverInitOne')
+	.sect	'.rodata.MSR_CONST'
 	.global	EcuM_DriverInitOne
 	.align	4
 EcuM_DriverInitOne:	.type	object
 	.size	EcuM_DriverInitOne,4
 	.word	EcuM_AL_DriverInitOne
-	.sdecl	'.zrodata.EcuM_Cfg.EcuM_DriverInitThree',data,rom,cluster('EcuM_DriverInitThree')
-	.sect	'.zrodata.EcuM_Cfg.EcuM_DriverInitThree'
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('EcuM_DriverInitThree')
+	.sect	'.rodata.MSR_CONST'
 	.global	EcuM_DriverInitThree
 	.align	4
 EcuM_DriverInitThree:	.type	object
 	.size	EcuM_DriverInitThree,4
 	.word	EcuM_AL_DriverInitThree
-	.sdecl	'.zrodata.EcuM_Cfg.EcuM_DriverInitTwo',data,rom,cluster('EcuM_DriverInitTwo')
-	.sect	'.zrodata.EcuM_Cfg.EcuM_DriverInitTwo'
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('EcuM_DriverInitTwo')
+	.sect	'.rodata.MSR_CONST'
 	.global	EcuM_DriverInitTwo
 	.align	4
 EcuM_DriverInitTwo:	.type	object
 	.size	EcuM_DriverInitTwo,4
 	.word	EcuM_AL_DriverInitTwo
-	.sdecl	'.zrodata.EcuM_Cfg.EcuM_WakeupSourceList',data,rom,cluster('EcuM_WakeupSourceList')
-	.sect	'.zrodata.EcuM_Cfg.EcuM_WakeupSourceList'
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('EcuM_PartitionData')
+	.sect	'.rodata.MSR_CONST'
+	.global	EcuM_PartitionData
+EcuM_PartitionData:	.type	object
+	.size	EcuM_PartitionData,2
+	.byte	1
+	.space	1
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('EcuM_WakeupSourceList')
+	.sect	'.rodata.MSR_CONST'
 	.global	EcuM_WakeupSourceList
 EcuM_WakeupSourceList:	.type	object
 	.size	EcuM_WakeupSourceList,6
 	.byte	255,255,255,255
 	.byte	255
 	.space	1
-	.sdecl	'.zbss.EcuM_Cfg.EcuM_KillAllInProgress',data,cluster('EcuM_KillAllInProgress')
-	.sect	'.zbss.EcuM_Cfg.EcuM_KillAllInProgress'
+	.sdecl	'.bss.MSR_VAR_NO_INIT',data,cluster('EcuM_KillAllInProgress')
+	.sect	'.bss.MSR_VAR_NO_INIT'
 	.global	EcuM_KillAllInProgress
 EcuM_KillAllInProgress:	.type	object
 	.size	EcuM_KillAllInProgress,1
 	.space	1
-	.sdecl	'.zbss.EcuM_Cfg.EcuM_ModuleState',data,cluster('EcuM_ModuleState')
-	.sect	'.zbss.EcuM_Cfg.EcuM_ModuleState'
+	.sdecl	'.bss.MSR_VAR_NO_INIT',data,cluster('EcuM_ModuleState')
+	.sect	'.bss.MSR_VAR_NO_INIT'
 	.global	EcuM_ModuleState
 EcuM_ModuleState:	.type	object
 	.size	EcuM_ModuleState,1
 	.space	1
-	.sdecl	'.zbss.EcuM_Cfg.EcuM_PostRunRequestCounter',data,cluster('EcuM_PostRunRequestCounter')
-	.sect	'.zbss.EcuM_Cfg.EcuM_PostRunRequestCounter'
+	.sdecl	'.bss.MSR_VAR_NO_INIT',data,cluster('EcuM_PostRunRequestCounter')
+	.sect	'.bss.MSR_VAR_NO_INIT'
 	.global	EcuM_PostRunRequestCounter
 EcuM_PostRunRequestCounter:	.type	object
 	.size	EcuM_PostRunRequestCounter,1
 	.space	1
-	.sdecl	'.zbss.EcuM_Cfg.EcuM_RunRequestCounter',data,cluster('EcuM_RunRequestCounter')
-	.sect	'.zbss.EcuM_Cfg.EcuM_RunRequestCounter'
+	.sdecl	'.bss.MSR_VAR_NO_INIT',data,cluster('EcuM_RunRequestCounter')
+	.sect	'.bss.MSR_VAR_NO_INIT'
 	.global	EcuM_RunRequestCounter
 EcuM_RunRequestCounter:	.type	object
 	.size	EcuM_RunRequestCounter,1
 	.space	1
-	.sdecl	'.zbss.EcuM_Cfg.EcuM_Timer',data,cluster('EcuM_Timer')
-	.sect	'.zbss.EcuM_Cfg.EcuM_Timer'
+	.sdecl	'.bss.MSR_VAR_NO_INIT',data,cluster('EcuM_Timer')
+	.sect	'.bss.MSR_VAR_NO_INIT'
 	.global	EcuM_Timer
 	.align	2
 EcuM_Timer:	.type	object
 	.size	EcuM_Timer,2
 	.space	2
-	.sdecl	'.zbss.EcuM_Cfg.EcuM_UserTable',data,cluster('EcuM_UserTable')
-	.sect	'.zbss.EcuM_Cfg.EcuM_UserTable'
+	.sdecl	'.bss.MSR_VAR_NO_INIT',data,cluster('EcuM_UserTable')
+	.sect	'.bss.MSR_VAR_NO_INIT'
 	.global	EcuM_UserTable
 EcuM_UserTable:	.type	object
 	.size	EcuM_UserTable,1
@@ -83,7 +109,7 @@ EcuM_UserTable:	.type	object
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L3:
-	.word	13807
+	.word	14201
 	.half	3
 	.word	.L4
 	.byte	4
@@ -94,15 +120,15 @@ EcuM_UserTable:	.type	object
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
 	.word	.L5
 	.byte	2
-	.byte	'EcuM_AL_DriverInitOne',0,1,253,7,30,1,1,1,1,2
-	.byte	'EcuM_AL_DriverInitTwo',0,1,129,8,30,1,1,1,1,2
-	.byte	'EcuM_AL_DriverInitThree',0,1,130,8,30,1,1,1,1,3
+	.byte	'EcuM_AL_DriverInitOne',0,1,181,8,30,1,1,1,1,2
+	.byte	'EcuM_AL_DriverInitTwo',0,1,185,8,30,1,1,1,1,2
+	.byte	'EcuM_AL_DriverInitThree',0,1,186,8,30,1,1,1,1,3
 	.byte	'__INDIRECT__',0,2,1,1,1,1,1,4,1,5
 	.word	253
 	.byte	6
 	.byte	'__codeptr',0,2,1,1
 	.word	255
-.L30:
+.L40:
 	.byte	7
 	.byte	'unsigned char',0,1,8,6
 	.byte	'boolean',0,3,101,31
@@ -110,7 +136,7 @@ EcuM_UserTable:	.type	object
 	.byte	6
 	.byte	'uint8',0,3,104,31
 	.word	278
-.L31:
+.L41:
 	.byte	7
 	.byte	'unsigned short int',0,2,7,6
 	.byte	'uint16',0,3,106,31
@@ -171,120 +197,147 @@ EcuM_UserTable:	.type	object
 	.byte	6
 	.byte	'EcuM_UserType',0,7,72,15
 	.word	278
-	.byte	10,1,1,5
+	.byte	10
+	.word	389
+	.byte	6
+	.byte	'EcuM_CoreStatusType',0,8,151,1,25
 	.word	844
+	.byte	10
+	.word	389
+	.byte	5
+	.word	878
 	.byte	6
-	.byte	'EcuM_DriverFuncType',0,8,156,3,9
-	.word	847
+	.byte	'EcuM_CoreStatusArrayType',0,8,152,1,30
+	.word	883
+	.byte	11,1,1,5
+	.word	922
 	.byte	6
-	.byte	'EcuM_ComMChannelsType',0,8,239,3,15
+	.byte	'EcuM_DriverFuncType',0,8,177,3,9
+	.word	925
+	.byte	6
+	.byte	'EcuM_ComMChannelsType',0,8,144,4,15
 	.word	278
 	.byte	6
-	.byte	'EcuM_DefaultAppModeType',0,8,242,3,16
+	.byte	'EcuM_DefaultAppModeType',0,8,147,4,16
 	.word	389
 	.byte	6
-	.byte	'EcuM_KillAllInProgressType',0,8,129,4,15
+	.byte	'EcuM_KillAllInProgressType',0,8,162,4,15
 	.word	278
 	.byte	6
-	.byte	'EcuM_NormalMcuModeType',0,8,135,4,16
+	.byte	'EcuM_NormalMcuModeType',0,8,168,4,16
 	.word	389
 	.byte	6
-	.byte	'EcuM_PostRunRequestCounterType',0,8,141,4,15
+	.byte	'EcuM_ApplicationOfPartitionDataType',0,8,174,4,15
 	.word	278
 	.byte	6
-	.byte	'EcuM_RunRequestCounterType',0,8,144,4,15
+	.byte	'EcuM_PostRunRequestCounterType',0,8,180,4,15
 	.word	278
 	.byte	6
-	.byte	'EcuM_TimerType',0,8,150,4,16
+	.byte	'EcuM_RunRequestCounterType',0,8,183,4,15
+	.word	278
+	.byte	6
+	.byte	'EcuM_TimerType',0,8,189,4,16
 	.word	325
 	.byte	6
-	.byte	'EcuM_ChannelOfWakeupSourceListType',0,8,153,4,15
+	.byte	'EcuM_ChannelOfWakeupSourceListType',0,8,192,4,15
 	.word	278
-	.byte	11
-	.byte	'sEcuM_DriverInitOneType',0,8,169,4,16,4,12
+	.byte	12
+	.byte	'sEcuM_DriverInitOneType',0,8,208,4,16,4,13
 	.byte	'FunctionOfDriverInitOne',0
-	.word	852
+	.word	930
 	.byte	4,2,35,0,0,6
-	.byte	'EcuM_DriverInitOneType',0,8,172,4,3
-	.word	1157
+	.byte	'EcuM_DriverInitOneType',0,8,211,4,3
+	.word	1280
 	.byte	5
-	.word	844
-	.byte	11
-	.byte	'sEcuM_DriverInitThreeType',0,8,175,4,16,4,12
+	.word	922
+	.byte	12
+	.byte	'sEcuM_DriverInitThreeType',0,8,214,4,16,4,13
 	.byte	'FunctionOfDriverInitThree',0
-	.word	852
+	.word	930
 	.byte	4,2,35,0,0,6
-	.byte	'EcuM_DriverInitThreeType',0,8,178,4,3
-	.word	1258
-	.byte	11
-	.byte	'sEcuM_DriverInitTwoType',0,8,181,4,16,4,12
+	.byte	'EcuM_DriverInitThreeType',0,8,217,4,3
+	.word	1381
+	.byte	12
+	.byte	'sEcuM_DriverInitTwoType',0,8,220,4,16,4,13
 	.byte	'FunctionOfDriverInitTwo',0
-	.word	852
+	.word	930
 	.byte	4,2,35,0,0,6
-	.byte	'EcuM_DriverInitTwoType',0,8,184,4,3
-	.word	1360
-	.byte	11
-	.byte	'sEcuM_WakeupSourceListType',0,8,187,4,16,1,12
+	.byte	'EcuM_DriverInitTwoType',0,8,223,4,3
+	.word	1483
+	.byte	12
+	.byte	'sEcuM_PartitionDataType',0,8,226,4,16,1,13
+	.byte	'ApplicationOfPartitionData',0
+	.word	278
+	.byte	1,2,35,0,0,6
+	.byte	'EcuM_PartitionDataType',0,8,229,4,3
+	.word	1579
+	.byte	12
+	.byte	'sEcuM_WakeupSourceListType',0,8,232,4,16,1,13
 	.byte	'ChannelOfWakeupSourceList',0
 	.word	278
 	.byte	1,2,35,0,0,6
-	.byte	'EcuM_WakeupSourceListType',0,8,190,4,3
-	.word	1456
-	.byte	11
-	.byte	'sEcuM_PCConfigType',0,8,253,4,16,1,12
+	.byte	'EcuM_WakeupSourceListType',0,8,235,4,3
+	.word	1678
+	.byte	12
+	.byte	'sEcuM_PCConfigType',0,8,176,5,16,1,13
 	.byte	'EcuM_PCConfigNeverUsed',0
 	.word	278
 	.byte	1,2,35,0,0,6
-	.byte	'EcuM_PCConfigType',0,8,128,5,3
-	.word	1560
-	.byte	8,9,154,1,9,1,9
-	.byte	'Default_Appl_Init_Task',0,0,9
-	.byte	'Default_Appl_Task',0,1,9
-	.byte	'Default_BSW_ASync_Task',0,2,9
-	.byte	'Default_Init_Task',0,3,9
-	.byte	'Default_Init_Task_Trusted',0,4,9
-	.byte	'IdleTask_OsCore0',0,5,9
-	.byte	'MotorTask',0,6,9
-	.byte	'INVALID_TASK',0,7,9
-	.byte	'OS_TASKID_COUNT',0,7,0,6
-	.byte	'TaskType',0,9,165,1,3
-	.word	1645
-	.byte	13,64
+	.byte	'EcuM_PCConfigType',0,8,179,5,3
+	.word	1782
+	.byte	8,9,163,1,9,1,9
+	.byte	'BswCore1Task',0,0,9
+	.byte	'Default_Appl_Init_Task',0,1,9
+	.byte	'Default_Appl_Task',0,2,9
+	.byte	'Default_BSW_ASync_Task_10ms',0,3,9
+	.byte	'Default_Init_Task',0,4,9
+	.byte	'Default_Init_Task_Core1',0,5,9
+	.byte	'Default_Init_Task_Core1_Trusted',0,6,9
+	.byte	'Default_Init_Task_Trusted',0,7,9
+	.byte	'Default_MotorInitTask',0,8,9
+	.byte	'IdleTask_OsCore0',0,9,9
+	.byte	'IdleTask_OsCore_1',0,10,9
+	.byte	'MotorTask',0,11,9
+	.byte	'INVALID_TASK',0,12,9
+	.byte	'OS_TASKID_COUNT',0,12,0,6
+	.byte	'TaskType',0,9,179,1,3
+	.word	1867
+	.byte	14,64
 	.word	389
-	.byte	14,15,0,11
-	.byte	'Os_ExceptionContextType_Tag',0,10,71,8,160,1,12
+	.byte	15,15,0,12
+	.byte	'Os_ExceptionContextType_Tag',0,10,71,8,160,1,13
 	.byte	'AddressRegisters',0
-	.word	1852
-	.byte	64,2,35,0,12
+	.word	2198
+	.byte	64,2,35,0,13
 	.byte	'DataRegisters',0
-	.word	1852
-	.byte	64,2,35,64,12
+	.word	2198
+	.byte	64,2,35,64,13
 	.byte	'Ra',0
 	.word	389
-	.byte	4,3,35,128,1,12
+	.byte	4,3,35,128,1,13
 	.byte	'Psw',0
 	.word	389
-	.byte	4,3,35,132,1,12
+	.byte	4,3,35,132,1,13
 	.byte	'ExceptionSource',0
 	.word	389
-	.byte	4,3,35,136,1,12
+	.byte	4,3,35,136,1,13
 	.byte	'Pcpn',0
 	.word	389
-	.byte	4,3,35,140,1,12
+	.byte	4,3,35,140,1,13
 	.byte	'Pie',0
 	.word	389
-	.byte	4,3,35,144,1,12
+	.byte	4,3,35,144,1,13
 	.byte	'MpuRegionForStackLow',0
 	.word	389
-	.byte	4,3,35,148,1,12
+	.byte	4,3,35,148,1,13
 	.byte	'MpuRegionForStackUpper',0
 	.word	389
-	.byte	4,3,35,152,1,12
+	.byte	4,3,35,152,1,13
 	.byte	'RawPCXI',0
 	.word	389
 	.byte	4,3,35,156,1,0,6
 	.byte	'Os_ExceptionContextType',0,11,59,44
-	.word	1861
+	.word	2207
 	.byte	6
 	.byte	'Os_InterruptSourceIdType',0,12,236,1,16
 	.word	389
@@ -297,7 +350,7 @@ EcuM_UserTable:	.type	object
 	.byte	'WAITING',0,2,9
 	.byte	'SUSPENDED',0,3,0,6
 	.byte	'TaskStateType',0,12,173,2,3
-	.word	2209
+	.word	2555
 	.byte	6
 	.byte	'EventMaskType',0,12,180,2,16
 	.word	445
@@ -307,24 +360,24 @@ EcuM_UserTable:	.type	object
 	.byte	6
 	.byte	'TickType',0,12,204,2,21
 	.word	389
-	.byte	15,12,218,2,9,12,12
+	.byte	16,12,218,2,9,12,13
 	.byte	'maxallowedvalue',0
 	.word	389
-	.byte	4,2,35,0,12
+	.byte	4,2,35,0,13
 	.byte	'ticksperbase',0
 	.word	389
-	.byte	4,2,35,4,12
+	.byte	4,2,35,4,13
 	.byte	'mincycle',0
 	.word	389
 	.byte	4,2,35,8,0,6
 	.byte	'AlarmBaseType',0,12,226,2,2
-	.word	2341
+	.word	2687
 	.byte	8,12,254,2,9,1,9
 	.byte	'APPLICATION_TERMINATED',0,0,9
 	.byte	'APPLICATION_RESTARTING',0,1,9
 	.byte	'APPLICATION_ACCESSIBLE',0,2,0,6
 	.byte	'ApplicationStateType',0,12,131,3,3
-	.word	2436
+	.word	2782
 	.byte	8,12,175,3,9,1,9
 	.byte	'OSServiceId_GetApplicationID',0,0,9
 	.byte	'OSServiceId_GetISRID',0,1,9
@@ -427,7 +480,7 @@ EcuM_UserTable:	.type	object
 	.byte	'OSServiceId_ReleaseResource',0,233,1,9
 	.byte	'OSSERVICEID_COUNT',0,255,1,0,6
 	.byte	'OSServiceIdType',0,12,155,4,3
-	.word	2548
+	.word	2894
 	.byte	8,12,171,4,9,2,9
 	.byte	'OS_STATUS_OK',0,0,9
 	.byte	'OS_STATUS_CALLEVEL',0,2,9
@@ -517,19 +570,19 @@ EcuM_UserTable:	.type	object
 	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,9
 	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0,6
 	.byte	'Os_StatusType',0,12,231,5,3
-	.word	5765
-	.byte	15,12,132,6,9,4,12
+	.word	6111
+	.byte	16,12,132,6,9,4,13
 	.byte	'Service',0
-	.word	2548
-	.byte	1,2,35,0,12
+	.word	2894
+	.byte	1,2,35,0,13
 	.byte	'Error',0
 	.word	278
-	.byte	1,2,35,1,12
+	.byte	1,2,35,1,13
 	.byte	'DetailedError',0
-	.word	5765
+	.word	6111
 	.byte	2,2,35,2,0,6
 	.byte	'Os_ErrorInformationType',0,12,142,6,3
-	.word	8295
+	.word	8641
 	.byte	8,12,174,6,9,1,9
 	.byte	'SCHEDULETABLE_STOPPED',0,0,9
 	.byte	'SCHEDULETABLE_NEXT',0,1,9
@@ -537,7 +590,7 @@ EcuM_UserTable:	.type	object
 	.byte	'SCHEDULETABLE_RUNNING',0,3,9
 	.byte	'SCHEDULETABLE_RUNNING_AND_SYNCHRONOUS',0,4,0,6
 	.byte	'ScheduleTableStatusType',0,12,191,6,3
-	.word	8390
+	.word	8736
 	.byte	8,12,203,6,9,1,9
 	.byte	'OS_MEM_ACCESS_TYPE_NON',0,0,9
 	.byte	'OS_MEM_ACCESS_TYPE_R',0,1,9
@@ -560,9 +613,9 @@ EcuM_UserTable:	.type	object
 	.byte	'OS_MEM_ACCESS_TYPE_WXS',0,14,9
 	.byte	'OS_MEM_ACCESS_TYPE_RWXS',0,15,0,6
 	.byte	'Os_MemAccessType',0,12,225,6,3
-	.word	8563
+	.word	8909
 	.byte	6
-	.byte	'Os_Hal_AddressType',0,13,97,16
+	.byte	'Os_Hal_AddressType',0,13,99,16
 	.word	389
 	.byte	6
 	.byte	'Os_AccessCheckAddress',0,14,150,2,29
@@ -570,7 +623,7 @@ EcuM_UserTable:	.type	object
 	.byte	7
 	.byte	'unsigned int',0,4,7,6
 	.byte	'unsigned_int',0,15,75,22
-	.word	9150
+	.word	9496
 	.byte	6
 	.byte	'Mcu_ExternalClockConfigType',0,16,212,1,18
 	.word	389
@@ -580,399 +633,415 @@ EcuM_UserTable:	.type	object
 	.byte	6
 	.byte	'Mcu_RamSectionType',0,16,222,1,18
 	.word	389
-	.byte	16
+	.byte	17
 	.byte	'void',0,5
-	.word	9275
+	.word	9621
 	.byte	6
 	.byte	'Mcu_RamBaseAdrType',0,16,233,1,18
-	.word	9281
+	.word	9627
 	.byte	6
 	.byte	'Mcu_RamSizeType',0,16,237,1,18
 	.word	389
 	.byte	6
 	.byte	'Mcu_RamPrstDatType',0,16,245,1,19
 	.word	445
-	.byte	15,16,226,2,9,4,17
+	.byte	16,16,226,2,9,4,18
 	.byte	'Insel',0,1
 	.word	278
-	.byte	2,6,2,35,0,17
+	.byte	2,6,2,35,0,18
 	.byte	'SysPllPDiv',0,1
 	.word	278
-	.byte	3,3,2,35,0,17
+	.byte	3,3,2,35,0,18
 	.byte	'SysPllNDiv',0,2
 	.word	325
-	.byte	7,4,2,35,0,17
+	.byte	7,4,2,35,0,18
 	.byte	'SysPllK2Div',0,1
 	.word	278
-	.byte	3,1,2,35,1,17
+	.byte	3,1,2,35,1,18
 	.byte	'FmPllEn',0,1
 	.word	278
-	.byte	1,0,2,35,1,17
+	.byte	1,0,2,35,1,18
 	.byte	'ModulationAmplitude',0,2
 	.word	325
 	.byte	16,0,2,35,2,0,6
 	.byte	'Mcu_SystemPllConfigType',0,16,235,2,3
-	.word	9367
-	.byte	15,16,243,2,9,4,17
+	.word	9713
+	.byte	16,16,243,2,9,4,18
 	.byte	'PerPllNDiv',0,1
 	.word	278
-	.byte	7,1,2,35,0,17
+	.byte	7,1,2,35,0,18
 	.byte	'PerPllPDiv',0,2
 	.word	325
-	.byte	3,6,2,35,0,17
+	.byte	3,6,2,35,0,18
 	.byte	'PerPllK2Div',0,1
 	.word	278
-	.byte	3,3,2,35,1,17
+	.byte	3,3,2,35,1,18
 	.byte	'PerPllK3Div',0,1
 	.word	278
-	.byte	3,0,2,35,1,17
+	.byte	3,0,2,35,1,18
 	.byte	'K3DivByPass',0,1
 	.word	278
-	.byte	1,7,2,35,2,17
+	.byte	1,7,2,35,2,18
 	.byte	'Reserved',0,2
 	.word	325
 	.byte	15,0,2,35,2,0,6
 	.byte	'Mcu_PeripheralPllConfigType',0,16,251,2,3
-	.word	9541
-	.byte	13,8
+	.word	9887
+	.byte	14,8
 	.word	389
-	.byte	14,1,0,15,16,131,3,9,24,12
+	.byte	15,1,0,16,16,131,3,9,24,13
 	.byte	'Ccucon0',0
 	.word	389
-	.byte	4,2,35,0,12
+	.byte	4,2,35,0,13
 	.byte	'Ccucon1',0
 	.word	389
-	.byte	4,2,35,4,12
+	.byte	4,2,35,4,13
 	.byte	'Ccucon2',0
 	.word	389
-	.byte	4,2,35,8,12
+	.byte	4,2,35,8,13
 	.byte	'Ccucon5',0
 	.word	389
-	.byte	4,2,35,12,12
+	.byte	4,2,35,12,13
 	.byte	'CcuconCpu',0
-	.word	9718
+	.word	10064
 	.byte	8,2,35,16,0,6
 	.byte	'Mcu_PllDistributionConfigType',0,16,143,3,3
-	.word	9727
-	.byte	18
-	.word	9727
+	.word	10073
+	.byte	19
+	.word	10073
 	.byte	5
-	.word	9860
-	.byte	15,16,151,3,9,44,12
+	.word	10206
+	.byte	16,16,151,3,9,44,13
 	.byte	'SystemPllCfg',0
-	.word	9367
-	.byte	4,2,35,0,12
+	.word	9713
+	.byte	4,2,35,0,13
 	.byte	'PeripheralPllCfg',0
-	.word	9541
-	.byte	4,2,35,4,12
+	.word	9887
+	.byte	4,2,35,4,13
 	.byte	'SysPllK2DivStepUpChangeDelay',0
 	.word	389
-	.byte	4,2,35,8,12
+	.byte	4,2,35,8,13
 	.byte	'SysPllK2DivStepDownChangeDelay',0
 	.word	389
-	.byte	4,2,35,12,12
+	.byte	4,2,35,12,13
 	.byte	'PeripheralPllK2StepUpChangeDelay',0
 	.word	389
-	.byte	4,2,35,16,12
+	.byte	4,2,35,16,13
 	.byte	'PeripheralPllK2StepDownChangeDelay',0
 	.word	389
-	.byte	4,2,35,20,12
+	.byte	4,2,35,20,13
 	.byte	'PeripheralPllK3StepUpChangeDelay',0
 	.word	389
-	.byte	4,2,35,24,12
+	.byte	4,2,35,24,13
 	.byte	'PeripheralPllK3StepDownChangeDelay',0
 	.word	389
-	.byte	4,2,35,28,12
+	.byte	4,2,35,28,13
 	.byte	'PllDistributionCfgPtr',0
-	.word	9865
-	.byte	4,2,35,32,12
+	.word	10211
+	.byte	4,2,35,32,13
 	.byte	'ExternalClockCfg',0
 	.word	389
-	.byte	4,2,35,36,12
+	.byte	4,2,35,36,13
 	.byte	'BackupFreqKDiv',0
 	.word	325
-	.byte	2,2,35,40,12
+	.byte	2,2,35,40,13
 	.byte	'ConvCtrlBlockConf',0
 	.word	278
 	.byte	1,2,35,42,0,6
 	.byte	'Mcu_ClockConfigType',0,16,177,3,3
-	.word	9870
-	.byte	15,16,184,3,9,16,12
+	.word	10216
+	.byte	16,16,184,3,9,16,13
 	.byte	'RamBaseAdrPtr',0
-	.word	9286
-	.byte	4,2,35,0,12
+	.word	9632
+	.byte	4,2,35,0,13
 	.byte	'RamSize',0
 	.word	389
-	.byte	4,2,35,4,12
+	.byte	4,2,35,4,13
 	.byte	'RamPrstData',0
 	.word	445
 	.byte	8,2,35,8,0,6
 	.byte	'Mcu_RamConfigType',0,16,193,3,3
-	.word	10312
+	.word	10658
 	.byte	5
-	.word	9275
-	.byte	15,16,201,3,9,4,17
+	.word	9621
+	.byte	16,16,201,3,9,4,18
 	.byte	'McuMode',0,1
 	.word	278
-	.byte	3,5,2,35,0,17
+	.byte	3,5,2,35,0,18
 	.byte	'EvrcLowPowerMode',0,1
 	.word	278
-	.byte	1,4,2,35,0,17
+	.byte	1,4,2,35,0,18
 	.byte	'Reserved',0,4
-	.word	9150
+	.word	9496
 	.byte	28,0,2,35,0,0,6
 	.byte	'Mcu_ModeEvrcCtrlType',0,16,206,3,3
-	.word	10412
-	.byte	15,16,223,3,9,28,12
+	.word	10758
+	.byte	16,16,223,3,9,28,13
 	.byte	'MaxModeEvrcCtrl',0
-	.word	10412
-	.byte	4,2,35,0,12
+	.word	10758
+	.byte	4,2,35,0,13
 	.byte	'Pmswcr0',0
 	.word	389
-	.byte	4,2,35,4,12
+	.byte	4,2,35,4,13
 	.byte	'Pmswcr3',0
 	.word	389
-	.byte	4,2,35,8,12
+	.byte	4,2,35,8,13
 	.byte	'Pmswcr4',0
 	.word	389
-	.byte	4,2,35,12,12
+	.byte	4,2,35,12,13
 	.byte	'Pmswcr5',0
 	.word	389
-	.byte	4,2,35,16,12
+	.byte	4,2,35,16,13
 	.byte	'Evruvmon',0
 	.word	389
-	.byte	4,2,35,20,12
+	.byte	4,2,35,20,13
 	.byte	'EvrmonCtrl',0
 	.word	389
 	.byte	4,2,35,24,0,6
 	.byte	'Mcu_LowPowerModeType',0,16,242,3,3
-	.word	10516
-	.byte	15,16,250,3,9,8,12
+	.word	10862
+	.byte	16,16,250,3,9,8,13
 	.byte	'GtmCmuExtClockNum',0
 	.word	389
-	.byte	4,2,35,0,12
+	.byte	4,2,35,0,13
 	.byte	'GtmCmuExtClockDen',0
 	.word	389
 	.byte	4,2,35,4,0,6
 	.byte	'Mcu_GtmExtClkType',0,16,128,4,3
-	.word	10684
-	.byte	13,32
+	.word	11030
+	.byte	14,32
 	.word	389
-	.byte	14,7,0,13,24
-	.word	10684
-	.byte	14,2,0,15,16,135,4,9,76,12
+	.byte	15,7,0,14,24
+	.word	11030
+	.byte	15,2,0,16,16,135,4,9,76,13
 	.byte	'GtmCmuClockEnable',0
 	.word	389
-	.byte	4,2,35,0,12
+	.byte	4,2,35,0,13
 	.byte	'GtmCmuGlobalNumerator',0
 	.word	389
-	.byte	4,2,35,4,12
+	.byte	4,2,35,4,13
 	.byte	'GtmCmuGlobalDenominator',0
 	.word	389
-	.byte	4,2,35,8,12
+	.byte	4,2,35,8,13
 	.byte	'GtmCmuConfClkCtrl',0
-	.word	10772
-	.byte	32,2,35,12,12
+	.word	11118
+	.byte	32,2,35,12,13
 	.byte	'GtmCmuFixedClkCtrl',0
 	.word	389
-	.byte	4,2,35,44,12
+	.byte	4,2,35,44,13
 	.byte	'GtmCmuClsInDiv',0
 	.word	389
-	.byte	4,2,35,48,12
+	.byte	4,2,35,48,13
 	.byte	'GtmEclkCtrl',0
-	.word	10781
+	.word	11127
 	.byte	24,2,35,52,0,6
 	.byte	'Mcu_GtmClockSettingType',0,16,151,4,3
-	.word	10790
-	.byte	15,16,158,4,9,12,12
+	.word	11136
+	.byte	16,16,158,4,9,12,13
 	.byte	'GtmCcmCfg',0
 	.word	389
-	.byte	4,2,35,0,12
+	.byte	4,2,35,0,13
 	.byte	'GtmCcmConfClockCfg',0
 	.word	389
-	.byte	4,2,35,4,12
+	.byte	4,2,35,4,13
 	.byte	'GtmCcmFixedClockCfg',0
 	.word	389
 	.byte	4,2,35,8,0,6
 	.byte	'Mcu_GtmClusterConfigType',0,16,166,4,3
-	.word	11021
-	.byte	15,16,173,4,9,8,12
+	.word	11367
+	.byte	16,16,173,4,9,8,13
 	.byte	'TomTgcIntTrigRstCn0',0
 	.word	389
-	.byte	4,2,35,0,12
+	.byte	4,2,35,0,13
 	.byte	'TomTgcActTb',0
 	.word	389
 	.byte	4,2,35,4,0,6
 	.byte	'Mcu_GtmTomConfigType',0,16,188,4,3
-	.word	11138
-	.byte	15,16,195,4,9,8,12
+	.word	11484
+	.byte	16,16,195,4,9,8,13
 	.byte	'AtomAgcIntTrigRstCn0',0
 	.word	389
-	.byte	4,2,35,0,12
+	.byte	4,2,35,0,13
 	.byte	'AtomAgcActTb',0
 	.word	389
 	.byte	4,2,35,4,0,6
 	.byte	'Mcu_GtmAtomConfigType',0,16,210,4,3
-	.word	11225
-	.byte	15,16,217,4,9,8,12
+	.word	11571
+	.byte	16,16,217,4,9,8,13
 	.byte	'GtmAdcTrigOut0',0
 	.word	389
-	.byte	4,2,35,0,12
+	.byte	4,2,35,0,13
 	.byte	'GtmAdcTrigOut1',0
 	.word	389
 	.byte	4,2,35,4,0,6
 	.byte	'Mcu_GtmAdcTrigType',0,16,221,4,3
-	.word	11315
-	.byte	15,16,225,4,9,8,12
+	.word	11661
+	.byte	16,16,225,4,9,8,13
 	.byte	'GtmDsadcTrigOut0',0
 	.word	389
-	.byte	4,2,35,0,12
+	.byte	4,2,35,0,13
 	.byte	'GtmDsadcTrigOut1',0
 	.word	389
 	.byte	4,2,35,4,0,6
 	.byte	'Mcu_GtmDsadcTrigType',0,16,229,4,3
-	.word	11398
-	.byte	18
-	.word	10790
+	.word	11744
+	.byte	19
+	.word	11136
 	.byte	5
-	.word	11487
-	.byte	18
-	.word	11021
+	.word	11833
+	.byte	19
+	.word	11367
 	.byte	5
-	.word	11497
-	.byte	13,32
-	.word	11138
-	.byte	14,3,0,13,32
-	.word	11225
-	.byte	14,3,0,13,40
-	.word	11315
-	.byte	14,4,0,13,32
-	.word	11398
-	.byte	14,3,0,13,68
+	.word	11843
+	.byte	14,32
+	.word	11484
+	.byte	15,3,0,14,32
+	.word	11571
+	.byte	15,3,0,14,40
+	.word	11661
+	.byte	15,4,0,14,32
+	.word	11744
+	.byte	15,3,0,14,68
 	.word	389
-	.byte	14,16,0,13,12
+	.byte	15,16,0,14,12
 	.word	389
-	.byte	14,2,0,15,16,237,4,9,176,2,12
+	.byte	15,2,0,16,16,237,4,9,176,2,13
 	.byte	'GtmClockCfgPtr',0
-	.word	11492
-	.byte	4,2,35,0,12
+	.word	11838
+	.byte	4,2,35,0,13
 	.byte	'GtmClusterCfgPtr',0
-	.word	11502
-	.byte	4,2,35,4,12
+	.word	11848
+	.byte	4,2,35,4,13
 	.byte	'GtmTomCfg',0
-	.word	11507
-	.byte	32,2,35,8,12
+	.word	11853
+	.byte	32,2,35,8,13
 	.byte	'GtmAtomCfg',0
-	.word	11516
-	.byte	32,2,35,40,12
+	.word	11862
+	.byte	32,2,35,40,13
 	.byte	'GtmAdcTrigCfg',0
-	.word	11525
-	.byte	40,2,35,72,12
+	.word	11871
+	.byte	40,2,35,72,13
 	.byte	'GtmDsadcTrigCfg',0
-	.word	11534
-	.byte	32,2,35,112,12
+	.word	11880
+	.byte	32,2,35,112,13
 	.byte	'GtmToutSelCfg',0
-	.word	11543
-	.byte	68,3,35,144,1,12
+	.word	11889
+	.byte	68,3,35,144,1,13
 	.byte	'GtmToutSelCfgMsk',0
-	.word	11543
-	.byte	68,3,35,212,1,12
+	.word	11889
+	.byte	68,3,35,212,1,13
 	.byte	'GtmTimInSelCfg',0
-	.word	11552
-	.byte	12,3,35,152,2,12
+	.word	11898
+	.byte	12,3,35,152,2,13
 	.byte	'GtmTbuCfg',0
 	.word	389
-	.byte	4,3,35,164,2,12
+	.byte	4,3,35,164,2,13
 	.byte	'GtmTomModuleUsage',0
 	.word	325
-	.byte	2,3,35,168,2,12
+	.byte	2,3,35,168,2,13
 	.byte	'GtmAtomModuleUsage',0
 	.word	325
-	.byte	2,3,35,170,2,12
+	.byte	2,3,35,170,2,13
 	.byte	'IsGtmSleepModeEnabled',0
 	.word	278
 	.byte	1,3,35,172,2,0,6
 	.byte	'Mcu_GtmConfigType',0,16,137,5,3
-	.word	11561
-	.byte	11
-	.byte	'sDet_PCConfigType',0,17,238,1,16,1,12
+	.word	11907
+	.byte	12
+	.byte	'sDet_PCConfigType',0,17,238,1,16,1,13
 	.byte	'Det_PCConfigNeverUsed',0
 	.word	278
 	.byte	1,2,35,0,0,6
 	.byte	'Det_PCConfigType',0,17,241,1,3
-	.word	11918
-	.byte	13,4
-	.word	1157
-	.byte	14,0,0
-.L26:
-	.byte	18
-	.word	12000
-	.byte	13,4
-	.word	1258
-	.byte	14,0,0
-.L27:
-	.byte	18
-	.word	12014
-	.byte	13,4
-	.word	1360
-	.byte	14,0,0
-.L28:
-	.byte	18
-	.word	12028
-	.byte	13,6
-	.word	1456
-	.byte	14,5,0
-.L29:
-	.byte	18
-	.word	12042
-.L32:
-	.byte	13,1
+	.word	12264
+	.byte	14,8
+	.word	888
+	.byte	15,1,0
+.L34:
+	.byte	19
+	.word	12346
+	.byte	10
+	.word	389
+	.byte	5
+	.word	12360
+	.byte	14,4
+	.word	1280
+	.byte	15,0,0
+.L35:
+	.byte	19
+	.word	12370
+	.byte	14,4
+	.word	1381
+	.byte	15,0,0
+.L36:
+	.byte	19
+	.word	12384
+	.byte	14,4
+	.word	1483
+	.byte	15,0,0
+.L37:
+	.byte	19
+	.word	12398
+	.byte	14,2
+	.word	1579
+	.byte	15,1,0
+.L38:
+	.byte	19
+	.word	12412
+	.byte	14,6
+	.word	1678
+	.byte	15,5,0
+.L39:
+	.byte	19
+	.word	12426
+.L42:
+	.byte	14,1
 	.word	278
-	.byte	14,0,0,13,1
+	.byte	15,0,0,14,1
 	.word	278
-	.byte	14,0,0,11
-	.byte	'ComM_InhibitionTypeTag',0,18,55,16,6,12
+	.byte	15,0,0,12
+	.byte	'ComM_InhibitionTypeTag',0,18,55,16,6,13
 	.byte	'ComM_ECUGroupClassification',0
 	.word	278
-	.byte	1,2,35,0,12
+	.byte	1,2,35,0,13
 	.byte	'ComM_InhibitCnt',0
 	.word	325
-	.byte	2,2,35,2,12
+	.byte	2,2,35,2,13
 	.byte	'ComM_InhibitionStatus',0
-	.word	12065
+	.word	12449
 	.byte	1,2,35,4,0,6
 	.byte	'ComM_InhibitionType',0,18,60,3
-	.word	12074
+	.word	12458
 	.byte	6
 	.byte	'ComM_InitStatusType',0,19,84,15
 	.word	278
 	.byte	6
 	.byte	'ComM_StateType',0,19,88,15
 	.word	278
-	.byte	19
-	.word	278
-	.byte	1,1,20
-	.word	278
 	.byte	20
 	.word	278
+	.byte	1,1,21
+	.word	278
+	.byte	21
+	.word	278
 	.byte	0,5
-	.word	12275
+	.word	12659
 	.byte	6
 	.byte	'RequestBusSMModeApiType',0,20,176,4,9
-	.word	12293
+	.word	12677
 	.byte	5
 	.word	278
-	.byte	19
-	.word	278
-	.byte	1,1,20
-	.word	278
 	.byte	20
-	.word	12331
+	.word	278
+	.byte	1,1,21
+	.word	278
+	.byte	21
+	.word	12715
 	.byte	0,5
-	.word	12336
+	.word	12720
 	.byte	6
 	.byte	'GetCurrentBusSMModeApiType',0,20,177,4,9
-	.word	12354
+	.word	12738
 	.byte	6
 	.byte	'ComM_ChannelIterType',0,20,236,4,21
 	.word	278
@@ -994,93 +1063,99 @@ EcuM_UserTable:	.type	object
 	.byte	6
 	.byte	'ComM_UserReqFullComType',0,20,222,5,15
 	.word	278
-	.byte	11
-	.byte	'sComM_ChannelType',0,20,251,5,16,8,12
+	.byte	12
+	.byte	'sComM_ChannelType',0,20,251,5,16,8,13
 	.byte	'GetCurrentBusSMModeApiOfChannel',0
-	.word	12359
-	.byte	4,2,35,0,12
+	.word	12743
+	.byte	4,2,35,0,13
 	.byte	'RequestBusSMModeApiOfChannel',0
-	.word	12298
+	.word	12682
 	.byte	4,2,35,4,0,6
 	.byte	'ComM_ChannelType',0,20,255,5,3
-	.word	12667
+	.word	13051
 	.byte	5
-	.word	12336
+	.word	12720
 	.byte	5
-	.word	12275
-	.byte	11
-	.byte	'sComM_ChannelPbType',0,20,130,6,16,1,12
+	.word	12659
+	.byte	12
+	.byte	'sComM_ChannelPbType',0,20,130,6,16,1,13
 	.byte	'ComM_ChannelPbNeverUsed',0
 	.word	278
 	.byte	1,2,35,0,0,6
 	.byte	'ComM_ChannelPbType',0,20,133,6,3
-	.word	12807
-	.byte	11
-	.byte	'sComM_PartitionIdentifiersType',0,20,136,6,16,6,12
+	.word	13191
+	.byte	12
+	.byte	'sComM_PartitionIdentifiersType',0,20,136,6,16,6,13
 	.byte	'PartitionSNVOfPartitionIdentifiers',0
 	.word	389
-	.byte	4,2,35,0,12
+	.byte	4,2,35,0,13
 	.byte	'PCPartitionConfigIdxOfPartitionIdentifiers',0
 	.word	278
 	.byte	1,2,35,4,0,6
 	.byte	'ComM_PartitionIdentifiersType',0,20,140,6,3
-	.word	12895
-	.byte	11
-	.byte	'sComM_UserType',0,20,143,6,16,1,12
+	.word	13279
+	.byte	12
+	.byte	'sComM_UserType',0,20,143,6,16,1,13
 	.byte	'PncUserOfUser',0
 	.word	278
 	.byte	1,2,35,0,0,6
 	.byte	'ComM_UserType',0,20,146,6,3
-	.word	13068
-	.byte	11
-	.byte	'sComM_UserByteMaskType',0,20,149,6,16,1,12
+	.word	13452
+	.byte	12
+	.byte	'sComM_UserByteMaskType',0,20,149,6,16,1,13
 	.byte	'ComM_UserByteMaskNeverUsed',0
 	.word	278
 	.byte	1,2,35,0,0,6
 	.byte	'ComM_UserByteMaskType',0,20,152,6,3
-	.word	13136
-	.byte	11
-	.byte	'ComM_ActiveComModeStructSTag',0,20,164,6,16,1,12
+	.word	13520
+	.byte	12
+	.byte	'ComM_ActiveComModeStructSTag',0,20,164,6,16,1,13
 	.byte	'ComMChannel_0',0
 	.word	278
 	.byte	1,2,35,0,0,6
 	.byte	'ComM_ActiveComModeStructSType',0,20,167,6,3
-	.word	13233
-	.byte	11
-	.byte	'ComM_BusComModeReqStructSTag',0,20,170,6,16,1,12
+	.word	13617
+	.byte	12
+	.byte	'ComM_BusComModeReqStructSTag',0,20,170,6,16,1,13
 	.byte	'ComMChannel_0',0
 	.word	278
 	.byte	1,2,35,0,0,6
 	.byte	'ComM_BusComModeReqStructSType',0,20,173,6,3
-	.word	13331
-	.byte	11
-	.byte	'ComM_BusSmStateStructSTag',0,20,176,6,16,1,12
+	.word	13715
+	.byte	12
+	.byte	'ComM_BusSmStateStructSTag',0,20,176,6,16,1,13
 	.byte	'ComMChannel_0',0
 	.word	278
 	.byte	1,2,35,0,0,6
 	.byte	'ComM_BusSmStateStructSType',0,20,179,6,3
-	.word	13429
-	.byte	11
-	.byte	'ComM_ComAllowedStructSTag',0,20,182,6,16,1,12
+	.word	13813
+	.byte	12
+	.byte	'ComM_ComAllowedStructSTag',0,20,182,6,16,1,13
 	.byte	'ComMChannel_0',0
 	.word	278
 	.byte	1,2,35,0,0,6
 	.byte	'ComM_ComAllowedStructSType',0,20,185,6,3
-	.word	13521
-	.byte	11
-	.byte	'sComM_PCPartitionConfigType',0,20,154,7,16,1,12
+	.word	13905
+	.byte	12
+	.byte	'sComM_PCPartitionConfigType',0,20,154,7,16,1,13
 	.byte	'ComM_PCPartitionConfigNeverUsed',0
 	.word	278
 	.byte	1,2,35,0,0,6
 	.byte	'ComM_PCPartitionConfigType',0,20,157,7,3
-	.word	13613
-	.byte	11
-	.byte	'sComM_PCConfigType',0,20,172,7,16,1,12
+	.word	13997
+	.byte	12
+	.byte	'sComM_PCConfigType',0,20,172,7,16,1,13
 	.byte	'ComM_PCConfigNeverUsed',0
 	.word	278
 	.byte	1,2,35,0,0,6
 	.byte	'ComM_PCConfigType',0,20,175,7,3
-	.word	13725
+	.word	14109
+.L43:
+	.byte	10
+	.word	389
+.L44:
+	.byte	10
+	.word	389
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -1088,17 +1163,18 @@ EcuM_UserTable:	.type	object
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,46,0,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0
 	.byte	3,46,0,3,8,58,15,59,15,57,15,54,15,63,12,60,12,0,0,4,21,0,54,15,0,0,5,15,0,73,19,0,0,6,22,0,3,8,58,15
 	.byte	59,15,57,15,73,19,0,0,7,36,0,3,8,11,15,62,15,0,0,8,4,1,58,15,59,15,57,15,11,15,0,0,9,40,0,3,8,28,13,0
-	.byte	0,10,21,0,54,15,39,12,0,0,11,19,1,3,8,58,15,59,15,57,15,11,15,0,0,12,13,0,3,8,73,19,11,15,56,9,0,0,13
-	.byte	1,1,11,15,73,19,0,0,14,33,0,47,15,0,0,15,19,1,58,15,59,15,57,15,11,15,0,0,16,59,0,3,8,0,0,17,13,0,3,8
-	.byte	11,15,73,19,13,15,12,15,56,9,0,0,18,38,0,73,19,0,0,19,21,1,73,19,54,15,39,12,0,0,20,5,0,73,19,0,0,0
+	.byte	0,10,53,0,73,19,0,0,11,21,0,54,15,39,12,0,0,12,19,1,3,8,58,15,59,15,57,15,11,15,0,0,13,13,0,3,8,73,19
+	.byte	11,15,56,9,0,0,14,1,1,11,15,73,19,0,0,15,33,0,47,15,0,0,16,19,1,58,15,59,15,57,15,11,15,0,0,17,59,0,3
+	.byte	8,0,0,18,13,0,3,8,11,15,73,19,13,15,12,15,56,9,0,0,19,38,0,73,19,0,0,20,21,1,73,19,54,15,39,12,0,0,21
+	.byte	5,0,73,19,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
 .L5:
-	.word	.L34-.L33
-.L33:
+	.word	.L46-.L45
+.L45:
 	.half	3
-	.word	.L36-.L35
-.L35:
+	.word	.L48-.L47
+.L47:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation',0
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData',0
@@ -1126,12 +1202,12 @@ EcuM_UserTable:	.type	object
 	.byte	'ComM_GenTypes.h',0,2,0,0
 	.byte	'ComM_Types.h',0,6,0,0
 	.byte	'ComM_Cfg.h',0,2,0,0,0
-.L36:
-.L34:
-	.sdecl	'.debug_info',debug,cluster('EcuM_DriverInitOne')
+.L48:
+.L46:
+	.sdecl	'.debug_info',debug,cluster('EcuM_CoreStatus')
 	.sect	'.debug_info'
 .L6:
-	.word	170
+	.word	167
 	.half	3
 	.word	.L7
 	.byte	4,1
@@ -1140,20 +1216,20 @@ EcuM_UserTable:	.type	object
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
 	.word	.L2
 	.byte	3
-	.byte	'EcuM_DriverInitOne',0,2,108,43
-	.word	.L26
+	.byte	'EcuM_CoreStatus',0,2,124,45
+	.word	.L34
 	.byte	1,5,3
-	.word	EcuM_DriverInitOne
+	.word	EcuM_CoreStatus
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('EcuM_DriverInitOne')
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_CoreStatus')
 	.sect	'.debug_abbrev'
 .L7:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('EcuM_DriverInitThree')
+	.sdecl	'.debug_info',debug,cluster('EcuM_DriverInitOne')
 	.sect	'.debug_info'
 .L8:
-	.word	173
+	.word	171
 	.half	3
 	.word	.L9
 	.byte	4,1
@@ -1162,20 +1238,20 @@ EcuM_UserTable:	.type	object
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
 	.word	.L2
 	.byte	3
-	.byte	'EcuM_DriverInitThree',0,2,130,1,45
-	.word	.L27
+	.byte	'EcuM_DriverInitOne',0,2,147,1,43
+	.word	.L35
 	.byte	1,5,3
-	.word	EcuM_DriverInitThree
+	.word	EcuM_DriverInitOne
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('EcuM_DriverInitThree')
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_DriverInitOne')
 	.sect	'.debug_abbrev'
 .L9:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('EcuM_DriverInitTwo')
+	.sdecl	'.debug_info',debug,cluster('EcuM_DriverInitThree')
 	.sect	'.debug_info'
 .L10:
-	.word	171
+	.word	173
 	.half	3
 	.word	.L11
 	.byte	4,1
@@ -1184,20 +1260,20 @@ EcuM_UserTable:	.type	object
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
 	.word	.L2
 	.byte	3
-	.byte	'EcuM_DriverInitTwo',0,2,152,1,43
-	.word	.L28
+	.byte	'EcuM_DriverInitThree',0,2,169,1,45
+	.word	.L36
 	.byte	1,5,3
-	.word	EcuM_DriverInitTwo
+	.word	EcuM_DriverInitThree
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('EcuM_DriverInitTwo')
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_DriverInitThree')
 	.sect	'.debug_abbrev'
 .L11:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('EcuM_WakeupSourceList')
+	.sdecl	'.debug_info',debug,cluster('EcuM_DriverInitTwo')
 	.sect	'.debug_info'
 .L12:
-	.word	174
+	.word	171
 	.half	3
 	.word	.L13
 	.byte	4,1
@@ -1206,20 +1282,20 @@ EcuM_UserTable:	.type	object
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
 	.word	.L2
 	.byte	3
-	.byte	'EcuM_WakeupSourceList',0,2,175,1,46
-	.word	.L29
+	.byte	'EcuM_DriverInitTwo',0,2,191,1,43
+	.word	.L37
 	.byte	1,5,3
-	.word	EcuM_WakeupSourceList
+	.word	EcuM_DriverInitTwo
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('EcuM_WakeupSourceList')
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_DriverInitTwo')
 	.sect	'.debug_abbrev'
 .L13:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('EcuM_KillAllInProgress')
+	.sdecl	'.debug_info',debug,cluster('EcuM_PartitionData')
 	.sect	'.debug_info'
 .L14:
-	.word	175
+	.word	171
 	.half	3
 	.word	.L15
 	.byte	4,1
@@ -1228,20 +1304,20 @@ EcuM_UserTable:	.type	object
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
 	.word	.L2
 	.byte	3
-	.byte	'EcuM_KillAllInProgress',0,2,196,1,51
-	.word	.L30
+	.byte	'EcuM_PartitionData',0,2,214,1,43
+	.word	.L38
 	.byte	1,5,3
-	.word	EcuM_KillAllInProgress
+	.word	EcuM_PartitionData
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('EcuM_KillAllInProgress')
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_PartitionData')
 	.sect	'.debug_abbrev'
 .L15:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('EcuM_ModuleState')
+	.sdecl	'.debug_info',debug,cluster('EcuM_WakeupSourceList')
 	.sect	'.debug_info'
 .L16:
-	.word	169
+	.word	174
 	.half	3
 	.word	.L17
 	.byte	4,1
@@ -1250,20 +1326,20 @@ EcuM_UserTable:	.type	object
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
 	.word	.L2
 	.byte	3
-	.byte	'EcuM_ModuleState',0,2,209,1,39
-	.word	.L30
+	.byte	'EcuM_WakeupSourceList',0,2,238,1,46
+	.word	.L39
 	.byte	1,5,3
-	.word	EcuM_ModuleState
+	.word	EcuM_WakeupSourceList
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('EcuM_ModuleState')
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_WakeupSourceList')
 	.sect	'.debug_abbrev'
 .L17:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('EcuM_PostRunRequestCounter')
+	.sdecl	'.debug_info',debug,cluster('EcuM_KillAllInProgress')
 	.sect	'.debug_info'
 .L18:
-	.word	179
+	.word	175
 	.half	3
 	.word	.L19
 	.byte	4,1
@@ -1272,20 +1348,20 @@ EcuM_UserTable:	.type	object
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
 	.word	.L2
 	.byte	3
-	.byte	'EcuM_PostRunRequestCounter',0,2,222,1,55
-	.word	.L30
+	.byte	'EcuM_KillAllInProgress',0,2,131,2,51
+	.word	.L40
 	.byte	1,5,3
-	.word	EcuM_PostRunRequestCounter
+	.word	EcuM_KillAllInProgress
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('EcuM_PostRunRequestCounter')
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_KillAllInProgress')
 	.sect	'.debug_abbrev'
 .L19:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('EcuM_RunRequestCounter')
+	.sdecl	'.debug_info',debug,cluster('EcuM_ModuleState')
 	.sect	'.debug_info'
 .L20:
-	.word	175
+	.word	169
 	.half	3
 	.word	.L21
 	.byte	4,1
@@ -1294,20 +1370,20 @@ EcuM_UserTable:	.type	object
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
 	.word	.L2
 	.byte	3
-	.byte	'EcuM_RunRequestCounter',0,2,235,1,51
-	.word	.L30
+	.byte	'EcuM_ModuleState',0,2,144,2,39
+	.word	.L40
 	.byte	1,5,3
-	.word	EcuM_RunRequestCounter
+	.word	EcuM_ModuleState
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('EcuM_RunRequestCounter')
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_ModuleState')
 	.sect	'.debug_abbrev'
 .L21:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('EcuM_Timer')
+	.sdecl	'.debug_info',debug,cluster('EcuM_PostRunRequestCounter')
 	.sect	'.debug_info'
 .L22:
-	.word	163
+	.word	179
 	.half	3
 	.word	.L23
 	.byte	4,1
@@ -1316,20 +1392,20 @@ EcuM_UserTable:	.type	object
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
 	.word	.L2
 	.byte	3
-	.byte	'EcuM_Timer',0,2,248,1,39
-	.word	.L31
+	.byte	'EcuM_PostRunRequestCounter',0,2,157,2,55
+	.word	.L40
 	.byte	1,5,3
-	.word	EcuM_Timer
+	.word	EcuM_PostRunRequestCounter
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('EcuM_Timer')
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_PostRunRequestCounter')
 	.sect	'.debug_abbrev'
 .L23:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('EcuM_UserTable')
+	.sdecl	'.debug_info',debug,cluster('EcuM_RunRequestCounter')
 	.sect	'.debug_info'
 .L24:
-	.word	167
+	.word	175
 	.half	3
 	.word	.L25
 	.byte	4,1
@@ -1338,16 +1414,102 @@ EcuM_UserTable:	.type	object
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
 	.word	.L2
 	.byte	3
-	.byte	'EcuM_UserTable',0,2,137,2,38
-	.word	.L32
+	.byte	'EcuM_RunRequestCounter',0,2,170,2,51
+	.word	.L40
+	.byte	1,5,3
+	.word	EcuM_RunRequestCounter
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_RunRequestCounter')
+	.sect	'.debug_abbrev'
+.L25:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('EcuM_Timer')
+	.sect	'.debug_info'
+.L26:
+	.word	163
+	.half	3
+	.word	.L27
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\EcuM_Cfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'EcuM_Timer',0,2,183,2,39
+	.word	.L41
+	.byte	1,5,3
+	.word	EcuM_Timer
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_Timer')
+	.sect	'.debug_abbrev'
+.L27:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('EcuM_UserTable')
+	.sect	'.debug_info'
+.L28:
+	.word	167
+	.half	3
+	.word	.L29
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\EcuM_Cfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'EcuM_UserTable',0,2,200,2,38
+	.word	.L42
 	.byte	1,5,3
 	.word	EcuM_UserTable
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('EcuM_UserTable')
 	.sect	'.debug_abbrev'
-.L25:
+.L29:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('EcuM_CoreStatus_SystemApplication_OsCore0')
+	.sect	'.debug_info'
+.L30:
+	.word	192
+	.half	3
+	.word	.L31
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\EcuM_Cfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'EcuM_CoreStatus_SystemApplication_OsCore0',0,2,76,55
+	.word	.L43
+	.byte	5,3
+	.word	EcuM_CoreStatus_SystemApplication_OsCore0
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_CoreStatus_SystemApplication_OsCore0')
+	.sect	'.debug_abbrev'
+.L31:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('EcuM_CoreStatus_OsApplication_OsCore1')
+	.sect	'.debug_info'
+.L32:
+	.word	188
+	.half	3
+	.word	.L33
+	.byte	4,1
+	.byte	'..\\Appl\\GenData\\EcuM_Cfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'EcuM_CoreStatus_OsApplication_OsCore1',0,2,85,55
+	.word	.L44
+	.byte	5,3
+	.word	EcuM_CoreStatus_OsApplication_OsCore1
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('EcuM_CoreStatus_OsApplication_OsCore1')
+	.sect	'.debug_abbrev'
+.L33:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
 
 ; ..\Appl\GenData\EcuM_Cfg.c	     1  /**********************************************************************************************************************
 ; ..\Appl\GenData\EcuM_Cfg.c	     2   *  COPYRIGHT
@@ -1372,7 +1534,7 @@ EcuM_UserTable:	.type	object
 ; ..\Appl\GenData\EcuM_Cfg.c	    21   *  FILE DESCRIPTION
 ; ..\Appl\GenData\EcuM_Cfg.c	    22   *  -------------------------------------------------------------------------------------------------------------------
 ; ..\Appl\GenData\EcuM_Cfg.c	    23   *              File: EcuM_Cfg.c
-; ..\Appl\GenData\EcuM_Cfg.c	    24   *   Generation Time: 2026-07-29 10:31:07
+; ..\Appl\GenData\EcuM_Cfg.c	    24   *   Generation Time: 2026-07-30 19:55:29
 ; ..\Appl\GenData\EcuM_Cfg.c	    25   *           Project: last364 - Version 1.0
 ; ..\Appl\GenData\EcuM_Cfg.c	    26   *          Delivery: CBD2200508_D00
 ; ..\Appl\GenData\EcuM_Cfg.c	    27   *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -1420,214 +1582,277 @@ EcuM_UserTable:	.type	object
 ; ..\Appl\GenData\EcuM_Cfg.c	    69  /**********************************************************************************************************************
 ; ..\Appl\GenData\EcuM_Cfg.c	    70   *  LOCAL DATA PROTOTYPES
 ; ..\Appl\GenData\EcuM_Cfg.c	    71  **********************************************************************************************************************/
-; ..\Appl\GenData\EcuM_Cfg.c	    72  
-; ..\Appl\GenData\EcuM_Cfg.c	    73  /**********************************************************************************************************************
-; ..\Appl\GenData\EcuM_Cfg.c	    74    CONFIGURATION CLASS: PRE_COMPILE
-; ..\Appl\GenData\EcuM_Cfg.c	    75    SECTION: LOCAL DATA PROTOTYPES
-; ..\Appl\GenData\EcuM_Cfg.c	    76  **********************************************************************************************************************/
-; ..\Appl\GenData\EcuM_Cfg.c	    77  
-; ..\Appl\GenData\EcuM_Cfg.c	    78  
-; ..\Appl\GenData\EcuM_Cfg.c	    79  /**********************************************************************************************************************
-; ..\Appl\GenData\EcuM_Cfg.c	    80   *  LOCAL DATA
-; ..\Appl\GenData\EcuM_Cfg.c	    81  **********************************************************************************************************************/
-; ..\Appl\GenData\EcuM_Cfg.c	    82  /**********************************************************************************************************************
-; ..\Appl\GenData\EcuM_Cfg.c	    83    CONFIGURATION CLASS: PRE_COMPILE
-; ..\Appl\GenData\EcuM_Cfg.c	    84    SECTION: LOCAL DATA
-; ..\Appl\GenData\EcuM_Cfg.c	    85  **********************************************************************************************************************/
-; ..\Appl\GenData\EcuM_Cfg.c	    86  
-; ..\Appl\GenData\EcuM_Cfg.c	    87  
-; ..\Appl\GenData\EcuM_Cfg.c	    88  /**********************************************************************************************************************
-; ..\Appl\GenData\EcuM_Cfg.c	    89   *  GLOBAL DATA
-; ..\Appl\GenData\EcuM_Cfg.c	    90  **********************************************************************************************************************/
+; ..\Appl\GenData\EcuM_Cfg.c	    72  #define ECUM_START_SEC_VAR_PARTITION_SYSTEMAPPLICATION_OSCORE0_NOCACHE_NO_INIT_32
+; ..\Appl\GenData\EcuM_Cfg.c	    73  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	    74  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	    75  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	    76  ECUM_LOCAL VAR(EcuM_CoreStatusType, ECUM_VAR_NO_INIT) EcuM_CoreStatus_SystemApplication_OsCore0;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\EcuM_Cfg.c	    77  #define ECUM_STOP_SEC_VAR_PARTITION_SYSTEMAPPLICATION_OSCORE0_NOCACHE_NO_INIT_32
+; ..\Appl\GenData\EcuM_Cfg.c	    78  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	    79  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	    80  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	    81  #define ECUM_START_SEC_VAR_PARTITION_OSAPPLICATION_OSCORE1_NOCACHE_NO_INIT_32
+; ..\Appl\GenData\EcuM_Cfg.c	    82  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	    83  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	    84  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	    85  ECUM_LOCAL VAR(EcuM_CoreStatusType, ECUM_VAR_NO_INIT) EcuM_CoreStatus_OsApplication_OsCore1;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\EcuM_Cfg.c	    86  #define ECUM_STOP_SEC_VAR_PARTITION_OSAPPLICATION_OSCORE1_NOCACHE_NO_INIT_32
+; ..\Appl\GenData\EcuM_Cfg.c	    87  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	    88  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	    89  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	    90  
 ; ..\Appl\GenData\EcuM_Cfg.c	    91  /**********************************************************************************************************************
 ; ..\Appl\GenData\EcuM_Cfg.c	    92    CONFIGURATION CLASS: PRE_COMPILE
-; ..\Appl\GenData\EcuM_Cfg.c	    93    SECTION: GLOBAL DATA
+; ..\Appl\GenData\EcuM_Cfg.c	    93    SECTION: LOCAL DATA PROTOTYPES
 ; ..\Appl\GenData\EcuM_Cfg.c	    94  **********************************************************************************************************************/
-; ..\Appl\GenData\EcuM_Cfg.c	    95  /**********************************************************************************************************************
-; ..\Appl\GenData\EcuM_Cfg.c	    96    EcuM_DriverInitOne
-; ..\Appl\GenData\EcuM_Cfg.c	    97  **********************************************************************************************************************/
-; ..\Appl\GenData\EcuM_Cfg.c	    98  /** 
-; ..\Appl\GenData\EcuM_Cfg.c	    99    \var    EcuM_DriverInitOne
-; ..\Appl\GenData\EcuM_Cfg.c	   100    \details
-; ..\Appl\GenData\EcuM_Cfg.c	   101    Element     Description
-; ..\Appl\GenData\EcuM_Cfg.c	   102    Function
-; ..\Appl\GenData\EcuM_Cfg.c	   103  */ 
-; ..\Appl\GenData\EcuM_Cfg.c	   104  #define ECUM_START_SEC_CONST_UNSPECIFIED
-; ..\Appl\GenData\EcuM_Cfg.c	   105  /*lint -save -esym(961, 19.1) */
-; ..\Appl\GenData\EcuM_Cfg.c	   106  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
-; ..\Appl\GenData\EcuM_Cfg.c	   107  /*lint -restore */
-; ..\Appl\GenData\EcuM_Cfg.c	   108  CONST(EcuM_DriverInitOneType, ECUM_CONST) EcuM_DriverInitOne[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-; ..\Appl\GenData\EcuM_Cfg.c	   109      /* Index    Function              */
-; ..\Appl\GenData\EcuM_Cfg.c	   110    { /*     0 */ EcuM_AL_DriverInitOne }
-; ..\Appl\GenData\EcuM_Cfg.c	   111  };
-; ..\Appl\GenData\EcuM_Cfg.c	   112  #define ECUM_STOP_SEC_CONST_UNSPECIFIED
-; ..\Appl\GenData\EcuM_Cfg.c	   113  /*lint -save -esym(961, 19.1) */
-; ..\Appl\GenData\EcuM_Cfg.c	   114  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
-; ..\Appl\GenData\EcuM_Cfg.c	   115  /*lint -restore */
-; ..\Appl\GenData\EcuM_Cfg.c	   116  
-; ..\Appl\GenData\EcuM_Cfg.c	   117  /**********************************************************************************************************************
-; ..\Appl\GenData\EcuM_Cfg.c	   118    EcuM_DriverInitThree
-; ..\Appl\GenData\EcuM_Cfg.c	   119  **********************************************************************************************************************/
-; ..\Appl\GenData\EcuM_Cfg.c	   120  /** 
-; ..\Appl\GenData\EcuM_Cfg.c	   121    \var    EcuM_DriverInitThree
-; ..\Appl\GenData\EcuM_Cfg.c	   122    \details
-; ..\Appl\GenData\EcuM_Cfg.c	   123    Element     Description
-; ..\Appl\GenData\EcuM_Cfg.c	   124    Function
-; ..\Appl\GenData\EcuM_Cfg.c	   125  */ 
-; ..\Appl\GenData\EcuM_Cfg.c	   126  #define ECUM_START_SEC_CONST_UNSPECIFIED
-; ..\Appl\GenData\EcuM_Cfg.c	   127  /*lint -save -esym(961, 19.1) */
-; ..\Appl\GenData\EcuM_Cfg.c	   128  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
-; ..\Appl\GenData\EcuM_Cfg.c	   129  /*lint -restore */
-; ..\Appl\GenData\EcuM_Cfg.c	   130  CONST(EcuM_DriverInitThreeType, ECUM_CONST) EcuM_DriverInitThree[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-; ..\Appl\GenData\EcuM_Cfg.c	   131      /* Index    Function                */
-; ..\Appl\GenData\EcuM_Cfg.c	   132    { /*     0 */ EcuM_AL_DriverInitThree }
-; ..\Appl\GenData\EcuM_Cfg.c	   133  };
-; ..\Appl\GenData\EcuM_Cfg.c	   134  #define ECUM_STOP_SEC_CONST_UNSPECIFIED
-; ..\Appl\GenData\EcuM_Cfg.c	   135  /*lint -save -esym(961, 19.1) */
-; ..\Appl\GenData\EcuM_Cfg.c	   136  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
-; ..\Appl\GenData\EcuM_Cfg.c	   137  /*lint -restore */
-; ..\Appl\GenData\EcuM_Cfg.c	   138  
-; ..\Appl\GenData\EcuM_Cfg.c	   139  /**********************************************************************************************************************
-; ..\Appl\GenData\EcuM_Cfg.c	   140    EcuM_DriverInitTwo
-; ..\Appl\GenData\EcuM_Cfg.c	   141  **********************************************************************************************************************/
-; ..\Appl\GenData\EcuM_Cfg.c	   142  /** 
-; ..\Appl\GenData\EcuM_Cfg.c	   143    \var    EcuM_DriverInitTwo
-; ..\Appl\GenData\EcuM_Cfg.c	   144    \details
-; ..\Appl\GenData\EcuM_Cfg.c	   145    Element     Description
-; ..\Appl\GenData\EcuM_Cfg.c	   146    Function
-; ..\Appl\GenData\EcuM_Cfg.c	   147  */ 
-; ..\Appl\GenData\EcuM_Cfg.c	   148  #define ECUM_START_SEC_CONST_UNSPECIFIED
-; ..\Appl\GenData\EcuM_Cfg.c	   149  /*lint -save -esym(961, 19.1) */
-; ..\Appl\GenData\EcuM_Cfg.c	   150  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
-; ..\Appl\GenData\EcuM_Cfg.c	   151  /*lint -restore */
-; ..\Appl\GenData\EcuM_Cfg.c	   152  CONST(EcuM_DriverInitTwoType, ECUM_CONST) EcuM_DriverInitTwo[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-; ..\Appl\GenData\EcuM_Cfg.c	   153      /* Index    Function              */
-; ..\Appl\GenData\EcuM_Cfg.c	   154    { /*     0 */ EcuM_AL_DriverInitTwo }
-; ..\Appl\GenData\EcuM_Cfg.c	   155  };
-; ..\Appl\GenData\EcuM_Cfg.c	   156  #define ECUM_STOP_SEC_CONST_UNSPECIFIED
-; ..\Appl\GenData\EcuM_Cfg.c	   157  /*lint -save -esym(961, 19.1) */
-; ..\Appl\GenData\EcuM_Cfg.c	   158  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
-; ..\Appl\GenData\EcuM_Cfg.c	   159  /*lint -restore */
-; ..\Appl\GenData\EcuM_Cfg.c	   160  
-; ..\Appl\GenData\EcuM_Cfg.c	   161  /**********************************************************************************************************************
-; ..\Appl\GenData\EcuM_Cfg.c	   162    EcuM_WakeupSourceList
-; ..\Appl\GenData\EcuM_Cfg.c	   163  **********************************************************************************************************************/
-; ..\Appl\GenData\EcuM_Cfg.c	   164  /** 
-; ..\Appl\GenData\EcuM_Cfg.c	   165    \var    EcuM_WakeupSourceList
-; ..\Appl\GenData\EcuM_Cfg.c	   166    \brief  Contains all parameters configured for Wakeup Sources
-; ..\Appl\GenData\EcuM_Cfg.c	   167    \details
-; ..\Appl\GenData\EcuM_Cfg.c	   168    Element    Description
-; ..\Appl\GenData\EcuM_Cfg.c	   169    Channel    Mapped ComM channel number - 255 if no ComM channel is assigned.
-; ..\Appl\GenData\EcuM_Cfg.c	   170  */ 
-; ..\Appl\GenData\EcuM_Cfg.c	   171  #define ECUM_START_SEC_CONST_UNSPECIFIED
-; ..\Appl\GenData\EcuM_Cfg.c	   172  /*lint -save -esym(961, 19.1) */
-; ..\Appl\GenData\EcuM_Cfg.c	   173  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
-; ..\Appl\GenData\EcuM_Cfg.c	   174  /*lint -restore */
-; ..\Appl\GenData\EcuM_Cfg.c	   175  CONST(EcuM_WakeupSourceListType, ECUM_CONST) EcuM_WakeupSourceList[6] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-; ..\Appl\GenData\EcuM_Cfg.c	   176      /* Index    Channel                                       Comment                                    Referable Keys */
-; ..\Appl\GenData\EcuM_Cfg.c	   177    { /*     0 */ 255                                    },  /* [ECUM_WKSOURCE_POWER]          */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_POWER, ECUM_WKSOURCE_POWER] */
-; ..\Appl\GenData\EcuM_Cfg.c	   178    { /*     1 */ 255                                    },  /* [ECUM_WKSOURCE_RESET]          */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_RESET, ECUM_WKSOURCE_RESET] */
-; ..\Appl\GenData\EcuM_Cfg.c	   179    { /*     2 */ 255                                    },  /* [ECUM_WKSOURCE_INTERNAL_RESET] */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_INTERNAL_RESET, ECUM_WKSOURCE_INTERNAL_RESET] */
-; ..\Appl\GenData\EcuM_Cfg.c	   180    { /*     3 */ 255                                    },  /* [ECUM_WKSOURCE_INTERNAL_WDG]   */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_INTERNAL_WDG, ECUM_WKSOURCE_INTERNAL_WDG] */
-; ..\Appl\GenData\EcuM_Cfg.c	   181    { /*     4 */ 255                                    },  /* [ECUM_WKSOURCE_EXTERNAL_WDG]   */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_EXTERNAL_WDG, ECUM_WKSOURCE_EXTERNAL_WDG] */
-; ..\Appl\GenData\EcuM_Cfg.c	   182    { /*     5 */ ComMConf_ComMChannel_CN_CAN00_5e566ad9 }   /* [CN_CAN00_5e566ad9]            */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/CN_CAN00_5e566ad9, CN_CAN00_5e566ad9] */
-; ..\Appl\GenData\EcuM_Cfg.c	   183  };
-; ..\Appl\GenData\EcuM_Cfg.c	   184  #define ECUM_STOP_SEC_CONST_UNSPECIFIED
-; ..\Appl\GenData\EcuM_Cfg.c	   185  /*lint -save -esym(961, 19.1) */
-; ..\Appl\GenData\EcuM_Cfg.c	   186  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
-; ..\Appl\GenData\EcuM_Cfg.c	   187  /*lint -restore */
-; ..\Appl\GenData\EcuM_Cfg.c	   188  
-; ..\Appl\GenData\EcuM_Cfg.c	   189  /**********************************************************************************************************************
-; ..\Appl\GenData\EcuM_Cfg.c	   190    EcuM_KillAllInProgress
-; ..\Appl\GenData\EcuM_Cfg.c	   191  **********************************************************************************************************************/
-; ..\Appl\GenData\EcuM_Cfg.c	   192  #define ECUM_START_SEC_VAR_NO_INIT_8
-; ..\Appl\GenData\EcuM_Cfg.c	   193  /*lint -save -esym(961, 19.1) */
-; ..\Appl\GenData\EcuM_Cfg.c	   194  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
-; ..\Appl\GenData\EcuM_Cfg.c	   195  /*lint -restore */
-; ..\Appl\GenData\EcuM_Cfg.c	   196  VAR(EcuM_KillAllInProgressType, ECUM_VAR_NO_INIT) EcuM_KillAllInProgress;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-; ..\Appl\GenData\EcuM_Cfg.c	   197  #define ECUM_STOP_SEC_VAR_NO_INIT_8
-; ..\Appl\GenData\EcuM_Cfg.c	   198  /*lint -save -esym(961, 19.1) */
-; ..\Appl\GenData\EcuM_Cfg.c	   199  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
-; ..\Appl\GenData\EcuM_Cfg.c	   200  /*lint -restore */
-; ..\Appl\GenData\EcuM_Cfg.c	   201  
-; ..\Appl\GenData\EcuM_Cfg.c	   202  /**********************************************************************************************************************
-; ..\Appl\GenData\EcuM_Cfg.c	   203    EcuM_ModuleState
-; ..\Appl\GenData\EcuM_Cfg.c	   204  **********************************************************************************************************************/
-; ..\Appl\GenData\EcuM_Cfg.c	   205  #define ECUM_START_SEC_VAR_NO_INIT_UNSPECIFIED
-; ..\Appl\GenData\EcuM_Cfg.c	   206  /*lint -save -esym(961, 19.1) */
-; ..\Appl\GenData\EcuM_Cfg.c	   207  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
-; ..\Appl\GenData\EcuM_Cfg.c	   208  /*lint -restore */
-; ..\Appl\GenData\EcuM_Cfg.c	   209  VAR(EcuM_StateType, ECUM_VAR_NO_INIT) EcuM_ModuleState;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-; ..\Appl\GenData\EcuM_Cfg.c	   210  #define ECUM_STOP_SEC_VAR_NO_INIT_UNSPECIFIED
+; ..\Appl\GenData\EcuM_Cfg.c	    95  
+; ..\Appl\GenData\EcuM_Cfg.c	    96  
+; ..\Appl\GenData\EcuM_Cfg.c	    97  /**********************************************************************************************************************
+; ..\Appl\GenData\EcuM_Cfg.c	    98   *  LOCAL DATA
+; ..\Appl\GenData\EcuM_Cfg.c	    99  **********************************************************************************************************************/
+; ..\Appl\GenData\EcuM_Cfg.c	   100  /**********************************************************************************************************************
+; ..\Appl\GenData\EcuM_Cfg.c	   101    CONFIGURATION CLASS: PRE_COMPILE
+; ..\Appl\GenData\EcuM_Cfg.c	   102    SECTION: LOCAL DATA
+; ..\Appl\GenData\EcuM_Cfg.c	   103  **********************************************************************************************************************/
+; ..\Appl\GenData\EcuM_Cfg.c	   104  
+; ..\Appl\GenData\EcuM_Cfg.c	   105  
+; ..\Appl\GenData\EcuM_Cfg.c	   106  /**********************************************************************************************************************
+; ..\Appl\GenData\EcuM_Cfg.c	   107   *  GLOBAL DATA
+; ..\Appl\GenData\EcuM_Cfg.c	   108  **********************************************************************************************************************/
+; ..\Appl\GenData\EcuM_Cfg.c	   109  /**********************************************************************************************************************
+; ..\Appl\GenData\EcuM_Cfg.c	   110    CONFIGURATION CLASS: PRE_COMPILE
+; ..\Appl\GenData\EcuM_Cfg.c	   111    SECTION: GLOBAL DATA
+; ..\Appl\GenData\EcuM_Cfg.c	   112  **********************************************************************************************************************/
+; ..\Appl\GenData\EcuM_Cfg.c	   113  /**********************************************************************************************************************
+; ..\Appl\GenData\EcuM_Cfg.c	   114    EcuM_CoreStatus
+; ..\Appl\GenData\EcuM_Cfg.c	   115  **********************************************************************************************************************/
+; ..\Appl\GenData\EcuM_Cfg.c	   116  /** 
+; ..\Appl\GenData\EcuM_Cfg.c	   117    \var    EcuM_CoreStatus
+; ..\Appl\GenData\EcuM_Cfg.c	   118    \brief  Stores status of each core.
+; ..\Appl\GenData\EcuM_Cfg.c	   119  */ 
+; ..\Appl\GenData\EcuM_Cfg.c	   120  #define ECUM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\EcuM_Cfg.c	   121  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	   122  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	   123  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	   124  CONST(EcuM_CoreStatusArrayType, ECUM_CONST) EcuM_CoreStatus[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\EcuM_Cfg.c	   125    /* Index     CoreStatus                                  */
+; ..\Appl\GenData\EcuM_Cfg.c	   126    /*     0 */ &EcuM_CoreStatus_SystemApplication_OsCore0 ,
+; ..\Appl\GenData\EcuM_Cfg.c	   127    /*     1 */ &EcuM_CoreStatus_OsApplication_OsCore1     
+; ..\Appl\GenData\EcuM_Cfg.c	   128  };
+; ..\Appl\GenData\EcuM_Cfg.c	   129  #define ECUM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\EcuM_Cfg.c	   130  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	   131  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	   132  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	   133  
+; ..\Appl\GenData\EcuM_Cfg.c	   134  /**********************************************************************************************************************
+; ..\Appl\GenData\EcuM_Cfg.c	   135    EcuM_DriverInitOne
+; ..\Appl\GenData\EcuM_Cfg.c	   136  **********************************************************************************************************************/
+; ..\Appl\GenData\EcuM_Cfg.c	   137  /** 
+; ..\Appl\GenData\EcuM_Cfg.c	   138    \var    EcuM_DriverInitOne
+; ..\Appl\GenData\EcuM_Cfg.c	   139    \details
+; ..\Appl\GenData\EcuM_Cfg.c	   140    Element     Description
+; ..\Appl\GenData\EcuM_Cfg.c	   141    Function
+; ..\Appl\GenData\EcuM_Cfg.c	   142  */ 
+; ..\Appl\GenData\EcuM_Cfg.c	   143  #define ECUM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\EcuM_Cfg.c	   144  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	   145  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	   146  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	   147  CONST(EcuM_DriverInitOneType, ECUM_CONST) EcuM_DriverInitOne[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\EcuM_Cfg.c	   148      /* Index    Function              */
+; ..\Appl\GenData\EcuM_Cfg.c	   149    { /*     0 */ EcuM_AL_DriverInitOne }
+; ..\Appl\GenData\EcuM_Cfg.c	   150  };
+; ..\Appl\GenData\EcuM_Cfg.c	   151  #define ECUM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\EcuM_Cfg.c	   152  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	   153  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	   154  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	   155  
+; ..\Appl\GenData\EcuM_Cfg.c	   156  /**********************************************************************************************************************
+; ..\Appl\GenData\EcuM_Cfg.c	   157    EcuM_DriverInitThree
+; ..\Appl\GenData\EcuM_Cfg.c	   158  **********************************************************************************************************************/
+; ..\Appl\GenData\EcuM_Cfg.c	   159  /** 
+; ..\Appl\GenData\EcuM_Cfg.c	   160    \var    EcuM_DriverInitThree
+; ..\Appl\GenData\EcuM_Cfg.c	   161    \details
+; ..\Appl\GenData\EcuM_Cfg.c	   162    Element     Description
+; ..\Appl\GenData\EcuM_Cfg.c	   163    Function
+; ..\Appl\GenData\EcuM_Cfg.c	   164  */ 
+; ..\Appl\GenData\EcuM_Cfg.c	   165  #define ECUM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\EcuM_Cfg.c	   166  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	   167  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	   168  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	   169  CONST(EcuM_DriverInitThreeType, ECUM_CONST) EcuM_DriverInitThree[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\EcuM_Cfg.c	   170      /* Index    Function                */
+; ..\Appl\GenData\EcuM_Cfg.c	   171    { /*     0 */ EcuM_AL_DriverInitThree }
+; ..\Appl\GenData\EcuM_Cfg.c	   172  };
+; ..\Appl\GenData\EcuM_Cfg.c	   173  #define ECUM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\EcuM_Cfg.c	   174  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	   175  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	   176  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	   177  
+; ..\Appl\GenData\EcuM_Cfg.c	   178  /**********************************************************************************************************************
+; ..\Appl\GenData\EcuM_Cfg.c	   179    EcuM_DriverInitTwo
+; ..\Appl\GenData\EcuM_Cfg.c	   180  **********************************************************************************************************************/
+; ..\Appl\GenData\EcuM_Cfg.c	   181  /** 
+; ..\Appl\GenData\EcuM_Cfg.c	   182    \var    EcuM_DriverInitTwo
+; ..\Appl\GenData\EcuM_Cfg.c	   183    \details
+; ..\Appl\GenData\EcuM_Cfg.c	   184    Element     Description
+; ..\Appl\GenData\EcuM_Cfg.c	   185    Function
+; ..\Appl\GenData\EcuM_Cfg.c	   186  */ 
+; ..\Appl\GenData\EcuM_Cfg.c	   187  #define ECUM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\EcuM_Cfg.c	   188  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	   189  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	   190  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	   191  CONST(EcuM_DriverInitTwoType, ECUM_CONST) EcuM_DriverInitTwo[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\EcuM_Cfg.c	   192      /* Index    Function              */
+; ..\Appl\GenData\EcuM_Cfg.c	   193    { /*     0 */ EcuM_AL_DriverInitTwo }
+; ..\Appl\GenData\EcuM_Cfg.c	   194  };
+; ..\Appl\GenData\EcuM_Cfg.c	   195  #define ECUM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\EcuM_Cfg.c	   196  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	   197  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	   198  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	   199  
+; ..\Appl\GenData\EcuM_Cfg.c	   200  /**********************************************************************************************************************
+; ..\Appl\GenData\EcuM_Cfg.c	   201    EcuM_PartitionData
+; ..\Appl\GenData\EcuM_Cfg.c	   202  **********************************************************************************************************************/
+; ..\Appl\GenData\EcuM_Cfg.c	   203  /** 
+; ..\Appl\GenData\EcuM_Cfg.c	   204    \var    EcuM_PartitionData
+; ..\Appl\GenData\EcuM_Cfg.c	   205    \brief  Contains all parameters configured for initialization of partitions.
+; ..\Appl\GenData\EcuM_Cfg.c	   206    \details
+; ..\Appl\GenData\EcuM_Cfg.c	   207    Element        Description
+; ..\Appl\GenData\EcuM_Cfg.c	   208    Application    
+; ..\Appl\GenData\EcuM_Cfg.c	   209  */ 
+; ..\Appl\GenData\EcuM_Cfg.c	   210  #define ECUM_START_SEC_CONST_UNSPECIFIED
 ; ..\Appl\GenData\EcuM_Cfg.c	   211  /*lint -save -esym(961, 19.1) */
 ; ..\Appl\GenData\EcuM_Cfg.c	   212  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 ; ..\Appl\GenData\EcuM_Cfg.c	   213  /*lint -restore */
-; ..\Appl\GenData\EcuM_Cfg.c	   214  
-; ..\Appl\GenData\EcuM_Cfg.c	   215  /**********************************************************************************************************************
-; ..\Appl\GenData\EcuM_Cfg.c	   216    EcuM_PostRunRequestCounter
-; ..\Appl\GenData\EcuM_Cfg.c	   217  **********************************************************************************************************************/
-; ..\Appl\GenData\EcuM_Cfg.c	   218  #define ECUM_START_SEC_VAR_NO_INIT_8
-; ..\Appl\GenData\EcuM_Cfg.c	   219  /*lint -save -esym(961, 19.1) */
-; ..\Appl\GenData\EcuM_Cfg.c	   220  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
-; ..\Appl\GenData\EcuM_Cfg.c	   221  /*lint -restore */
-; ..\Appl\GenData\EcuM_Cfg.c	   222  VAR(EcuM_PostRunRequestCounterType, ECUM_VAR_NO_INIT) EcuM_PostRunRequestCounter;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-; ..\Appl\GenData\EcuM_Cfg.c	   223  #define ECUM_STOP_SEC_VAR_NO_INIT_8
-; ..\Appl\GenData\EcuM_Cfg.c	   224  /*lint -save -esym(961, 19.1) */
-; ..\Appl\GenData\EcuM_Cfg.c	   225  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
-; ..\Appl\GenData\EcuM_Cfg.c	   226  /*lint -restore */
-; ..\Appl\GenData\EcuM_Cfg.c	   227  
-; ..\Appl\GenData\EcuM_Cfg.c	   228  /**********************************************************************************************************************
-; ..\Appl\GenData\EcuM_Cfg.c	   229    EcuM_RunRequestCounter
-; ..\Appl\GenData\EcuM_Cfg.c	   230  **********************************************************************************************************************/
-; ..\Appl\GenData\EcuM_Cfg.c	   231  #define ECUM_START_SEC_VAR_NO_INIT_8
-; ..\Appl\GenData\EcuM_Cfg.c	   232  /*lint -save -esym(961, 19.1) */
-; ..\Appl\GenData\EcuM_Cfg.c	   233  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
-; ..\Appl\GenData\EcuM_Cfg.c	   234  /*lint -restore */
-; ..\Appl\GenData\EcuM_Cfg.c	   235  VAR(EcuM_RunRequestCounterType, ECUM_VAR_NO_INIT) EcuM_RunRequestCounter;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-; ..\Appl\GenData\EcuM_Cfg.c	   236  #define ECUM_STOP_SEC_VAR_NO_INIT_8
-; ..\Appl\GenData\EcuM_Cfg.c	   237  /*lint -save -esym(961, 19.1) */
-; ..\Appl\GenData\EcuM_Cfg.c	   238  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
-; ..\Appl\GenData\EcuM_Cfg.c	   239  /*lint -restore */
-; ..\Appl\GenData\EcuM_Cfg.c	   240  
-; ..\Appl\GenData\EcuM_Cfg.c	   241  /**********************************************************************************************************************
-; ..\Appl\GenData\EcuM_Cfg.c	   242    EcuM_Timer
-; ..\Appl\GenData\EcuM_Cfg.c	   243  **********************************************************************************************************************/
-; ..\Appl\GenData\EcuM_Cfg.c	   244  #define ECUM_START_SEC_VAR_NO_INIT_16
-; ..\Appl\GenData\EcuM_Cfg.c	   245  /*lint -save -esym(961, 19.1) */
-; ..\Appl\GenData\EcuM_Cfg.c	   246  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
-; ..\Appl\GenData\EcuM_Cfg.c	   247  /*lint -restore */
-; ..\Appl\GenData\EcuM_Cfg.c	   248  VAR(EcuM_TimerType, ECUM_VAR_NO_INIT) EcuM_Timer;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-; ..\Appl\GenData\EcuM_Cfg.c	   249  #define ECUM_STOP_SEC_VAR_NO_INIT_16
-; ..\Appl\GenData\EcuM_Cfg.c	   250  /*lint -save -esym(961, 19.1) */
-; ..\Appl\GenData\EcuM_Cfg.c	   251  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
-; ..\Appl\GenData\EcuM_Cfg.c	   252  /*lint -restore */
-; ..\Appl\GenData\EcuM_Cfg.c	   253  
-; ..\Appl\GenData\EcuM_Cfg.c	   254  /**********************************************************************************************************************
-; ..\Appl\GenData\EcuM_Cfg.c	   255    EcuM_UserTable
-; ..\Appl\GenData\EcuM_Cfg.c	   256  **********************************************************************************************************************/
-; ..\Appl\GenData\EcuM_Cfg.c	   257  /** 
-; ..\Appl\GenData\EcuM_Cfg.c	   258    \var    EcuM_UserTable
-; ..\Appl\GenData\EcuM_Cfg.c	   259    \brief  Contains a field for every configured EcuM User
-; ..\Appl\GenData\EcuM_Cfg.c	   260  */ 
-; ..\Appl\GenData\EcuM_Cfg.c	   261  #define ECUM_START_SEC_VAR_NO_INIT_UNSPECIFIED
-; ..\Appl\GenData\EcuM_Cfg.c	   262  /*lint -save -esym(961, 19.1) */
-; ..\Appl\GenData\EcuM_Cfg.c	   263  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
-; ..\Appl\GenData\EcuM_Cfg.c	   264  /*lint -restore */
-; ..\Appl\GenData\EcuM_Cfg.c	   265  VAR(EcuM_UserType, ECUM_VAR_NO_INIT) EcuM_UserTable[1];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-; ..\Appl\GenData\EcuM_Cfg.c	   266  #define ECUM_STOP_SEC_VAR_NO_INIT_UNSPECIFIED
-; ..\Appl\GenData\EcuM_Cfg.c	   267  /*lint -save -esym(961, 19.1) */
-; ..\Appl\GenData\EcuM_Cfg.c	   268  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
-; ..\Appl\GenData\EcuM_Cfg.c	   269  /*lint -restore */
-; ..\Appl\GenData\EcuM_Cfg.c	   270  
-; ..\Appl\GenData\EcuM_Cfg.c	   271  
-; ..\Appl\GenData\EcuM_Cfg.c	   272  
-; ..\Appl\GenData\EcuM_Cfg.c	   273  /**********************************************************************************************************************
-; ..\Appl\GenData\EcuM_Cfg.c	   274    CONFIGURATION CLASS: PRE_COMPILE
-; ..\Appl\GenData\EcuM_Cfg.c	   275    SECTION: GLOBAL FUNCTIONS
-; ..\Appl\GenData\EcuM_Cfg.c	   276  **********************************************************************************************************************/
+; ..\Appl\GenData\EcuM_Cfg.c	   214  CONST(EcuM_PartitionDataType, ECUM_CONST) EcuM_PartitionData[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\EcuM_Cfg.c	   215      /* Index    Application               */
+; ..\Appl\GenData\EcuM_Cfg.c	   216    { /*     0 */ SystemApplication_OsCore0 },
+; ..\Appl\GenData\EcuM_Cfg.c	   217    { /*     1 */ OsApplication_OsCore1     }
+; ..\Appl\GenData\EcuM_Cfg.c	   218  };
+; ..\Appl\GenData\EcuM_Cfg.c	   219  #define ECUM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\EcuM_Cfg.c	   220  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	   221  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	   222  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	   223  
+; ..\Appl\GenData\EcuM_Cfg.c	   224  /**********************************************************************************************************************
+; ..\Appl\GenData\EcuM_Cfg.c	   225    EcuM_WakeupSourceList
+; ..\Appl\GenData\EcuM_Cfg.c	   226  **********************************************************************************************************************/
+; ..\Appl\GenData\EcuM_Cfg.c	   227  /** 
+; ..\Appl\GenData\EcuM_Cfg.c	   228    \var    EcuM_WakeupSourceList
+; ..\Appl\GenData\EcuM_Cfg.c	   229    \brief  Contains all parameters configured for Wakeup Sources
+; ..\Appl\GenData\EcuM_Cfg.c	   230    \details
+; ..\Appl\GenData\EcuM_Cfg.c	   231    Element    Description
+; ..\Appl\GenData\EcuM_Cfg.c	   232    Channel    Mapped ComM channel number - 255 if no ComM channel is assigned.
+; ..\Appl\GenData\EcuM_Cfg.c	   233  */ 
+; ..\Appl\GenData\EcuM_Cfg.c	   234  #define ECUM_START_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\EcuM_Cfg.c	   235  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	   236  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	   237  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	   238  CONST(EcuM_WakeupSourceListType, ECUM_CONST) EcuM_WakeupSourceList[6] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\EcuM_Cfg.c	   239      /* Index    Channel                                       Comment                                    Referable Keys */
+; ..\Appl\GenData\EcuM_Cfg.c	   240    { /*     0 */ 255                                    },  /* [ECUM_WKSOURCE_POWER]          */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_POWER, ECUM_WKSOURCE_POWER] */
+; ..\Appl\GenData\EcuM_Cfg.c	   241    { /*     1 */ 255                                    },  /* [ECUM_WKSOURCE_RESET]          */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_RESET, ECUM_WKSOURCE_RESET] */
+; ..\Appl\GenData\EcuM_Cfg.c	   242    { /*     2 */ 255                                    },  /* [ECUM_WKSOURCE_INTERNAL_RESET] */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_INTERNAL_RESET, ECUM_WKSOURCE_INTERNAL_RESET] */
+; ..\Appl\GenData\EcuM_Cfg.c	   243    { /*     3 */ 255                                    },  /* [ECUM_WKSOURCE_INTERNAL_WDG]   */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_INTERNAL_WDG, ECUM_WKSOURCE_INTERNAL_WDG] */
+; ..\Appl\GenData\EcuM_Cfg.c	   244    { /*     4 */ 255                                    },  /* [ECUM_WKSOURCE_EXTERNAL_WDG]   */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_EXTERNAL_WDG, ECUM_WKSOURCE_EXTERNAL_WDG] */
+; ..\Appl\GenData\EcuM_Cfg.c	   245    { /*     5 */ ComMConf_ComMChannel_CN_CAN00_5e566ad9 }   /* [CN_CAN00_5e566ad9]            */  /* [/ActiveEcuC/EcuM/EcuMConfiguration/EcuMCommonConfiguration/CN_CAN00_5e566ad9, CN_CAN00_5e566ad9] */
+; ..\Appl\GenData\EcuM_Cfg.c	   246  };
+; ..\Appl\GenData\EcuM_Cfg.c	   247  #define ECUM_STOP_SEC_CONST_UNSPECIFIED
+; ..\Appl\GenData\EcuM_Cfg.c	   248  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	   249  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	   250  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	   251  
+; ..\Appl\GenData\EcuM_Cfg.c	   252  /**********************************************************************************************************************
+; ..\Appl\GenData\EcuM_Cfg.c	   253    EcuM_KillAllInProgress
+; ..\Appl\GenData\EcuM_Cfg.c	   254  **********************************************************************************************************************/
+; ..\Appl\GenData\EcuM_Cfg.c	   255  #define ECUM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\EcuM_Cfg.c	   256  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	   257  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	   258  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	   259  VAR(EcuM_KillAllInProgressType, ECUM_VAR_NO_INIT) EcuM_KillAllInProgress;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\EcuM_Cfg.c	   260  #define ECUM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\EcuM_Cfg.c	   261  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	   262  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	   263  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	   264  
+; ..\Appl\GenData\EcuM_Cfg.c	   265  /**********************************************************************************************************************
+; ..\Appl\GenData\EcuM_Cfg.c	   266    EcuM_ModuleState
+; ..\Appl\GenData\EcuM_Cfg.c	   267  **********************************************************************************************************************/
+; ..\Appl\GenData\EcuM_Cfg.c	   268  #define ECUM_START_SEC_VAR_NO_INIT_UNSPECIFIED
+; ..\Appl\GenData\EcuM_Cfg.c	   269  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	   270  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	   271  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	   272  VAR(EcuM_StateType, ECUM_VAR_NO_INIT) EcuM_ModuleState;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\EcuM_Cfg.c	   273  #define ECUM_STOP_SEC_VAR_NO_INIT_UNSPECIFIED
+; ..\Appl\GenData\EcuM_Cfg.c	   274  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	   275  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	   276  /*lint -restore */
 ; ..\Appl\GenData\EcuM_Cfg.c	   277  
-; ..\Appl\GenData\EcuM_Cfg.c	   278  
-; ..\Appl\GenData\EcuM_Cfg.c	   279  
-; ..\Appl\GenData\EcuM_Cfg.c	   280  
+; ..\Appl\GenData\EcuM_Cfg.c	   278  /**********************************************************************************************************************
+; ..\Appl\GenData\EcuM_Cfg.c	   279    EcuM_PostRunRequestCounter
+; ..\Appl\GenData\EcuM_Cfg.c	   280  **********************************************************************************************************************/
+; ..\Appl\GenData\EcuM_Cfg.c	   281  #define ECUM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\EcuM_Cfg.c	   282  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	   283  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	   284  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	   285  VAR(EcuM_PostRunRequestCounterType, ECUM_VAR_NO_INIT) EcuM_PostRunRequestCounter;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\EcuM_Cfg.c	   286  #define ECUM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\EcuM_Cfg.c	   287  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	   288  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	   289  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	   290  
+; ..\Appl\GenData\EcuM_Cfg.c	   291  /**********************************************************************************************************************
+; ..\Appl\GenData\EcuM_Cfg.c	   292    EcuM_RunRequestCounter
+; ..\Appl\GenData\EcuM_Cfg.c	   293  **********************************************************************************************************************/
+; ..\Appl\GenData\EcuM_Cfg.c	   294  #define ECUM_START_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\EcuM_Cfg.c	   295  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	   296  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	   297  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	   298  VAR(EcuM_RunRequestCounterType, ECUM_VAR_NO_INIT) EcuM_RunRequestCounter;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\EcuM_Cfg.c	   299  #define ECUM_STOP_SEC_VAR_NO_INIT_8
+; ..\Appl\GenData\EcuM_Cfg.c	   300  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	   301  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	   302  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	   303  
+; ..\Appl\GenData\EcuM_Cfg.c	   304  /**********************************************************************************************************************
+; ..\Appl\GenData\EcuM_Cfg.c	   305    EcuM_Timer
+; ..\Appl\GenData\EcuM_Cfg.c	   306  **********************************************************************************************************************/
+; ..\Appl\GenData\EcuM_Cfg.c	   307  #define ECUM_START_SEC_VAR_NO_INIT_16
+; ..\Appl\GenData\EcuM_Cfg.c	   308  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	   309  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	   310  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	   311  VAR(EcuM_TimerType, ECUM_VAR_NO_INIT) EcuM_Timer;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\EcuM_Cfg.c	   312  #define ECUM_STOP_SEC_VAR_NO_INIT_16
+; ..\Appl\GenData\EcuM_Cfg.c	   313  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	   314  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	   315  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	   316  
+; ..\Appl\GenData\EcuM_Cfg.c	   317  /**********************************************************************************************************************
+; ..\Appl\GenData\EcuM_Cfg.c	   318    EcuM_UserTable
+; ..\Appl\GenData\EcuM_Cfg.c	   319  **********************************************************************************************************************/
+; ..\Appl\GenData\EcuM_Cfg.c	   320  /** 
+; ..\Appl\GenData\EcuM_Cfg.c	   321    \var    EcuM_UserTable
+; ..\Appl\GenData\EcuM_Cfg.c	   322    \brief  Contains a field for every configured EcuM User
+; ..\Appl\GenData\EcuM_Cfg.c	   323  */ 
+; ..\Appl\GenData\EcuM_Cfg.c	   324  #define ECUM_START_SEC_VAR_NO_INIT_UNSPECIFIED
+; ..\Appl\GenData\EcuM_Cfg.c	   325  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	   326  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	   327  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	   328  VAR(EcuM_UserType, ECUM_VAR_NO_INIT) EcuM_UserTable[1];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+; ..\Appl\GenData\EcuM_Cfg.c	   329  #define ECUM_STOP_SEC_VAR_NO_INIT_UNSPECIFIED
+; ..\Appl\GenData\EcuM_Cfg.c	   330  /*lint -save -esym(961, 19.1) */
+; ..\Appl\GenData\EcuM_Cfg.c	   331  #include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+; ..\Appl\GenData\EcuM_Cfg.c	   332  /*lint -restore */
+; ..\Appl\GenData\EcuM_Cfg.c	   333  
+; ..\Appl\GenData\EcuM_Cfg.c	   334  
+; ..\Appl\GenData\EcuM_Cfg.c	   335  
+; ..\Appl\GenData\EcuM_Cfg.c	   336  /**********************************************************************************************************************
+; ..\Appl\GenData\EcuM_Cfg.c	   337    CONFIGURATION CLASS: PRE_COMPILE
+; ..\Appl\GenData\EcuM_Cfg.c	   338    SECTION: GLOBAL FUNCTIONS
+; ..\Appl\GenData\EcuM_Cfg.c	   339  **********************************************************************************************************************/
+; ..\Appl\GenData\EcuM_Cfg.c	   340  
+; ..\Appl\GenData\EcuM_Cfg.c	   341  
+; ..\Appl\GenData\EcuM_Cfg.c	   342  
+; ..\Appl\GenData\EcuM_Cfg.c	   343  
 
 	; Module end

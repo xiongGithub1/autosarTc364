@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Callout_Stubs.c
- *   Generation Time: 2026-07-25 16:06:03
+ *   Generation Time: 2026-07-30 14:52:38
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -107,7 +107,7 @@
 #include "IfxQspi_reg.h"
 #include "IfxSrc_reg.h"
 
-/* Keep inside this USERBLOCK — DaVinci Generate wipes code outside the markers. */
+/* Keep inside this USERBLOCK ??? DaVinci Generate wipes code outside the markers. */
 //static void Appl_Qspi2FlushRxFifo(void)
 //{
 //  while (MODULE_QSPI2.STATUS.B.RXFIFOLEVEL > 0U)
@@ -267,17 +267,20 @@ FUNC(void, ECUM_CODE) EcuM_AL_Reset(EcuM_ResetType Reset) /* PRQA S 3206 */ /* M
 **********************************************************************************************************************/
 FUNC(void, ECUM_CODE) EcuM_AL_DriverInitZero(void) 
 {
-  BswM_InitMemory();
-  Can_InitMemory();
-  CanIf_InitMemory();
-  CanSM_InitMemory();
-  Com_InitMemory();
-  ComM_InitMemory();
-  Det_InitMemory();
-  PduR_InitMemory();
-  Rte_InitMemory();
-  BswM_PreInit( BswM_Config_Ptr );
-  IpduM_InitMemory();
+  if(GetCoreID() == ECUM_CORE_ID_BSW)
+  {
+    BswM_InitMemory();
+    Can_InitMemory();
+    CanIf_InitMemory();
+    CanSM_InitMemory();
+    Com_InitMemory();
+    ComM_InitMemory();
+    Det_InitMemory();
+    PduR_InitMemory();
+    Rte_InitMemory();
+    BswM_PreInit( BswM_Config_Ptr );
+    IpduM_InitMemory();
+  }
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_AL_DriverInitZero>                 DO NOT CHANGE THIS COMMENT!
@@ -295,21 +298,24 @@ FUNC(void, ECUM_CODE) EcuM_AL_DriverInitZero(void)
 **********************************************************************************************************************/
 FUNC(void, ECUM_CODE) EcuM_AL_DriverInitOne(void) 
 {
-  Mcu_Init( &Mcu_Config );
-  Mcu_InitClock(McuConf_McuModeSettingConf_McuModeSettingConf_0);
-  while (Mcu_GetPllStatus() != MCU_PLL_LOCKED);
-  Mcu_DistributePllClock();
-  Port_Init( &Port_Config );
-  Adc_Init( &Adc_Config );
-  Pwm_17_GtmCcu6_Init( &Pwm_17_GtmCcu6_Config );
-  Dma_Init( &Dma_Config );
-  IpduM_Init( IpduM_Config_Ptr );
-  PduR_PreInit( PduR_Config_Ptr );
-  Fls_17_Dmu_Init( &Fls_17_Dmu_Config );
-  Fee_Init( &Fee_Config );
-  IrqDma_Init();
-  IrqSpi_Init();
-  Spi_Init( &Spi_Config );
+  if(GetCoreID() == ECUM_CORE_ID_BSW)
+  {
+    Mcu_Init( &Mcu_Config );
+    Mcu_InitClock(McuConf_McuModeSettingConf_McuModeSettingConf_0);
+    while (Mcu_GetPllStatus() != MCU_PLL_LOCKED);
+    Mcu_DistributePllClock();
+    Port_Init( &Port_Config );
+    Adc_Init( &Adc_Config );
+    Pwm_17_GtmCcu6_Init( &Pwm_17_GtmCcu6_Config );
+    Dma_Init( &Dma_Config );
+    IpduM_Init( IpduM_Config_Ptr );
+    PduR_PreInit( PduR_Config_Ptr );
+    Fls_17_Dmu_Init( &Fls_17_Dmu_Config );
+    Fee_Init( &Fee_Config );
+    IrqDma_Init();
+    IrqSpi_Init();
+    Spi_Init( &Spi_Config );
+  }
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_AL_DriverInitOne>                  DO NOT CHANGE THIS COMMENT!

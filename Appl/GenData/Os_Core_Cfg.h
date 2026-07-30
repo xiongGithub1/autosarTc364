@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Core_Cfg.h
- *   Generation Time: 2026-07-29 10:29:51
+ *   Generation Time: 2026-07-30 20:09:42
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -75,15 +75,23 @@
 # define OS_CFG_NUM_SYSTEM_SPINLOCKS                             (0u)
 
 /*! Number of physical core identifiers. */
-# define OS_CFG_COREPHYSICALID_COUNT                             (1u)
+# define OS_CFG_COREPHYSICALID_COUNT                             (2u)
 
 /* Number of core objects: OsCore0 */
 # define OS_CFG_NUM_CORE_OSCORE0_APPS             (0u)
 # define OS_CFG_NUM_CORE_OSCORE0_HOOKS            (4u)
 # define OS_CFG_NUM_CORE_OSCORE0_IOCS             (0u)
 # define OS_CFG_NUM_CORE_OSCORE0_RESOURCES        (1u)
-# define OS_CFG_NUM_CORE_OSCORE0_STACKS           (13u)
+# define OS_CFG_NUM_CORE_OSCORE0_STACKS           (12u)
 # define OS_CFG_NUM_CORE_OSCORE0_ISRS             (3u)
+
+/* Number of core objects: OsCore1 */
+# define OS_CFG_NUM_CORE_OSCORE1_APPS             (0u)
+# define OS_CFG_NUM_CORE_OSCORE1_HOOKS            (4u)
+# define OS_CFG_NUM_CORE_OSCORE1_IOCS             (0u)
+# define OS_CFG_NUM_CORE_OSCORE1_RESOURCES        (0u)
+# define OS_CFG_NUM_CORE_OSCORE1_STACKS           (12u)
+# define OS_CFG_NUM_CORE_OSCORE1_ISRS             (1u)
 
 
 /**********************************************************************************************************************

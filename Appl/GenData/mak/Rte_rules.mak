@@ -23,3 +23,5 @@
 
 
 GENERATED_SOURCE_FILES       += $(GENDATA_DIR)\Rte.c
+GENERATED_SOURCE_FILES       += $(GENDATA_DIR)\Rte_OsApplication_OsCore1.c
+GENERATED_SOURCE_FILES       += $(GENDATA_DIR)\Rte_SystemApplication_OsCore0.c

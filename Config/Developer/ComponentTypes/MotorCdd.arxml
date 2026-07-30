@@ -175,11 +175,6 @@
                 <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/ComponentTypes/DataTypeMappingSets/MotorDataTypeMappingSet</DATA-TYPE-MAPPING-REF>
               </DATA-TYPE-MAPPING-REFS>
               <EVENTS>
-                <TIMING-EVENT UUID="47558303-BA16-4670-9571-1514BAB7709D">
-                  <SHORT-NAME>TMT_MotorCDDMainFunction</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/MotorCdd/MotorCdd_InternalBehavior/MotorCDDMainFunction</START-ON-EVENT-REF>
-                  <PERIOD>0.01</PERIOD>
-                </TIMING-EVENT>
                 <INIT-EVENT UUID="C4B696F4-986D-415E-8BE8-5CF575C9F1C9">
                   <SHORT-NAME>MotorCdd_InitEvent</SHORT-NAME>
                   <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/MotorCdd/MotorCdd_InternalBehavior/MotorCdd_Init</START-ON-EVENT-REF>
@@ -200,69 +195,13 @@
                     <TARGET-TRIGGER-REF DEST="TRIGGER">/PortInterfaces/Rp_AdcSampleReady/AdcSampleReady</TARGET-TRIGGER-REF>
                   </TRIGGER-IREF>
                 </EXTERNAL-TRIGGER-OCCURRED-EVENT>
+                <TIMING-EVENT UUID="88C7EB1C-56F1-4C53-B0C0-C3AF471060A0">
+                  <SHORT-NAME>TMT_MotorCdd_MainFunction</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/MotorCdd/MotorCdd_InternalBehavior/MotorCdd_MainFunction</START-ON-EVENT-REF>
+                  <PERIOD>0.001</PERIOD>
+                </TIMING-EVENT>
               </EVENTS>
               <RUNNABLES>
-                <RUNNABLE-ENTITY UUID="78D93A0C-0CF9-43BC-AA7C-681B141BF769">
-                  <SHORT-NAME>MotorCDDMainFunction</SHORT-NAME>
-                  <DATA-RECEIVE-POINT-BY-ARGUMENTS>
-                    <VARIABLE-ACCESS UUID="1AC6D6C9-F384-431E-AC62-BB412587F341">
-                      <SHORT-NAME>REC_Pp_MotorCtrlCmd_MotorMode</SHORT-NAME>
-                      <ACCESSED-VARIABLE>
-                        <AUTOSAR-VARIABLE-IREF>
-                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorCtrlCmd</PORT-PROTOTYPE-REF>
-                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorCtrlCmd/MotorMode</TARGET-DATA-PROTOTYPE-REF>
-                        </AUTOSAR-VARIABLE-IREF>
-                      </ACCESSED-VARIABLE>
-                    </VARIABLE-ACCESS>
-                    <VARIABLE-ACCESS UUID="D2007F7D-46EC-40F7-86CE-7861E46C7E3B">
-                      <SHORT-NAME>REC_Pp_MotorCurrentRef_Id_Ref</SHORT-NAME>
-                      <ACCESSED-VARIABLE>
-                        <AUTOSAR-VARIABLE-IREF>
-                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorCurrentRef</PORT-PROTOTYPE-REF>
-                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorCurrentRef/Id_Ref</TARGET-DATA-PROTOTYPE-REF>
-                        </AUTOSAR-VARIABLE-IREF>
-                      </ACCESSED-VARIABLE>
-                    </VARIABLE-ACCESS>
-                    <VARIABLE-ACCESS UUID="80930CEB-37AF-437B-A70F-9D73B0A0AD16">
-                      <SHORT-NAME>REC_Pp_MotorCurrentRef_Iq_Ref</SHORT-NAME>
-                      <ACCESSED-VARIABLE>
-                        <AUTOSAR-VARIABLE-IREF>
-                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorCurrentRef</PORT-PROTOTYPE-REF>
-                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorCurrentRef/Iq_Ref</TARGET-DATA-PROTOTYPE-REF>
-                        </AUTOSAR-VARIABLE-IREF>
-                      </ACCESSED-VARIABLE>
-                    </VARIABLE-ACCESS>
-                  </DATA-RECEIVE-POINT-BY-ARGUMENTS>
-                  <DATA-SEND-POINTS>
-                    <VARIABLE-ACCESS UUID="C5C6319A-8B90-4380-A99D-A21C494176D2">
-                      <SHORT-NAME>SEND_Pp_MotorFaultStatus_tle9180_Ov_Fault</SHORT-NAME>
-                      <ACCESSED-VARIABLE>
-                        <AUTOSAR-VARIABLE-IREF>
-                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorFaultStatus</PORT-PROTOTYPE-REF>
-                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorFaultStatus/tle9180_Ov_Fault</TARGET-DATA-PROTOTYPE-REF>
-                        </AUTOSAR-VARIABLE-IREF>
-                      </ACCESSED-VARIABLE>
-                    </VARIABLE-ACCESS>
-                    <VARIABLE-ACCESS UUID="70D3B98E-41C5-43F9-9A35-EDC87E2FDA99">
-                      <SHORT-NAME>SEND_Pp_MotorDcBusVoltage_Vbus</SHORT-NAME>
-                      <ACCESSED-VARIABLE>
-                        <AUTOSAR-VARIABLE-IREF>
-                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorDcBusVoltage</PORT-PROTOTYPE-REF>
-                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorDcBusVoltage/Vbus</TARGET-DATA-PROTOTYPE-REF>
-                        </AUTOSAR-VARIABLE-IREF>
-                      </ACCESSED-VARIABLE>
-                    </VARIABLE-ACCESS>
-                    <VARIABLE-ACCESS UUID="B46D0099-E18D-4351-A178-C2899F7D59A2">
-                      <SHORT-NAME>SEND_Pp_MotorElectricalAngle_ElectricAngle</SHORT-NAME>
-                      <ACCESSED-VARIABLE>
-                        <AUTOSAR-VARIABLE-IREF>
-                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorElectricalAngle</PORT-PROTOTYPE-REF>
-                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorElectricalAngle/ElectricAngle</TARGET-DATA-PROTOTYPE-REF>
-                        </AUTOSAR-VARIABLE-IREF>
-                      </ACCESSED-VARIABLE>
-                    </VARIABLE-ACCESS>
-                  </DATA-SEND-POINTS>
-                </RUNNABLE-ENTITY>
                 <RUNNABLE-ENTITY UUID="3449F2B9-99EA-4104-B975-7A667E1F1480">
                   <SHORT-NAME>MotorCdd_Init</SHORT-NAME>
                   <ADMIN-DATA>
@@ -278,6 +217,67 @@
                 </RUNNABLE-ENTITY>
                 <RUNNABLE-ENTITY UUID="4DE69B13-0DE2-41D1-9E82-8FDF77631396">
                   <SHORT-NAME>AdcSampleReady</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="537DB497-2463-402E-BC4D-49E772BAEDB7">
+                  <SHORT-NAME>MotorCdd_MainFunction</SHORT-NAME>
+                  <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                    <VARIABLE-ACCESS UUID="987A0D46-B8F8-4A8A-AA6A-015F4D244233">
+                      <SHORT-NAME>REC_Pp_MotorCtrlCmd_MotorMode</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorCtrlCmd</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorCtrlCmd/MotorMode</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="8FF01CD4-05A2-4ADE-8BB4-83C63B21BAED">
+                      <SHORT-NAME>REC_Pp_MotorCurrentRef_Id_Ref</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorCurrentRef</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorCurrentRef/Id_Ref</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="21D6B007-F312-483A-BCF4-C167B7644334">
+                      <SHORT-NAME>REC_Pp_MotorCurrentRef_Iq_Ref</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorCurrentRef</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorCurrentRef/Iq_Ref</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                  <DATA-SEND-POINTS>
+                    <VARIABLE-ACCESS UUID="918AE95D-76E1-487C-A409-BA1E15FF7C7D">
+                      <SHORT-NAME>SEND_Pp_MotorDcBusVoltage_Vbus</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorDcBusVoltage</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorDcBusVoltage/Vbus</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="7CC61E6F-A491-49CB-939D-D5204F7E40B6">
+                      <SHORT-NAME>SEND_Pp_MotorElectricalAngle_ElectricAngle</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorElectricalAngle</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorElectricalAngle/ElectricAngle</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="B1F292F3-CDB6-4B24-93B7-475142453D6C">
+                      <SHORT-NAME>SEND_Pp_MotorFaultStatus_tle9180_Ov_Fault</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorFaultStatus</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Pp_MotorFaultStatus/tle9180_Ov_Fault</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-SEND-POINTS>
                 </RUNNABLE-ENTITY>
               </RUNNABLES>
               <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>

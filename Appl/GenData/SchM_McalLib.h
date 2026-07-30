@@ -31,21 +31,21 @@ extern "C" {
 
 # include "Os.h" /* PRQA S 0828, 0883 */ /* MD_MSR_Dir1.1, MD_Rte_Os */
 
-# define SchM_Enter_McalLib_CpuEndInit() SuspendAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Enter_McalLib_CpuEndInit() SuspendOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
-# define SchM_Exit_McalLib_CpuEndInit() ResumeAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Exit_McalLib_CpuEndInit() ResumeOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
-# define SchM_Enter_McalLib_PeripheralEndInit() SuspendAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Enter_McalLib_PeripheralEndInit() SuspendOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
-# define SchM_Exit_McalLib_PeripheralEndInit() ResumeAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Exit_McalLib_PeripheralEndInit() ResumeOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
-# define SchM_Enter_McalLib_SafetyEndInit() SuspendAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Enter_McalLib_SafetyEndInit() SuspendOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
-# define SchM_Exit_McalLib_SafetyEndInit() ResumeAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Exit_McalLib_SafetyEndInit() ResumeOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
-# define SchM_Enter_McalLib_StmTimerResolution() SuspendAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Enter_McalLib_StmTimerResolution() SuspendOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
-# define SchM_Exit_McalLib_StmTimerResolution() ResumeAllInterrupts()  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+# define SchM_Exit_McalLib_StmTimerResolution() ResumeOSInterrupts()  /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
 
 
 # ifdef __cplusplus

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Stack_Lcfg.h
- *   Generation Time: 2026-07-29 10:29:51
+ *   Generation Time: 2026-07-30 20:09:43
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -88,14 +88,14 @@ extern OS_STACK_DECLARE(OsCfg_Stack_Default_Appl_Task_Dyn, OS_CFG_SIZE_DEFAULT_A
 # include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
-# define OS_START_SEC_STACK_DEFAULT_BSW_ASYNC_TASK_VAR_NOINIT_UNSPECIFIED
+# define OS_START_SEC_STACK_DEFAULT_BSW_ASYNC_TASK_10MS_VAR_NOINIT_UNSPECIFIED
 # include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
-/* Task stack: Default_BSW_ASync_Task */
-/* User: [Default_BSW_ASync_Task] */
-extern OS_STACK_DECLARE(OsCfg_Stack_Default_BSW_ASync_Task_Dyn, OS_CFG_SIZE_DEFAULT_BSW_ASYNC_TASK_STACK);
+/* Task stack: Default_BSW_ASync_Task_10ms */
+/* User: [Default_BSW_ASync_Task_10ms] */
+extern OS_STACK_DECLARE(OsCfg_Stack_Default_BSW_ASync_Task_10ms_Dyn, OS_CFG_SIZE_DEFAULT_BSW_ASYNC_TASK_10MS_STACK);
 
-# define OS_STOP_SEC_STACK_DEFAULT_BSW_ASYNC_TASK_VAR_NOINIT_UNSPECIFIED
+# define OS_STOP_SEC_STACK_DEFAULT_BSW_ASYNC_TASK_10MS_VAR_NOINIT_UNSPECIFIED
 # include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
@@ -220,6 +220,127 @@ extern OS_STACK_DECLARE(OsCfg_Stack_OsCore0_Task_Prio50_Dyn, OS_CFG_SIZE_OSCORE0
 # include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
+# define OS_START_SEC_STACK_OSCORE1_ERROR_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/* Core error stack: OsCore1_Error */
+/* User: [ErrorHook_OsCore1, OsCore1] */
+extern OS_STACK_DECLARE(OsCfg_Stack_OsCore1_Error_Dyn, OS_CFG_SIZE_OSCORE1_ERROR_STACK);
+
+# define OS_STOP_SEC_STACK_OSCORE1_ERROR_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_STACK_OSCORE1_INIT_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/* Core init stack: OsCore1_Init */
+/* User: [OsCore1, Os_CoreInitHook_OsCore1] */
+extern OS_STACK_DECLARE(OsCfg_Stack_OsCore1_Init_Dyn, OS_CFG_SIZE_OSCORE1_INIT_STACK);
+
+# define OS_STOP_SEC_STACK_OSCORE1_INIT_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_STACK_OSCORE1_ISR_CORE_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/* ISR core global stack: OsCore1_Isr_Core */
+/* User: [CounterIsr_SystemTimer1] */
+extern OS_STACK_DECLARE(OsCfg_Stack_OsCore1_Isr_Core_Dyn, OS_CFG_SIZE_OSCORE1_ISR_CORE_STACK);
+
+# define OS_STOP_SEC_STACK_OSCORE1_ISR_CORE_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_STACK_OSCORE1_KERNEL_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/* Core kernel stack: OsCore1_Kernel */
+/* User: [OsCore1] */
+extern OS_STACK_DECLARE(OsCfg_Stack_OsCore1_Kernel_Dyn, OS_CFG_SIZE_OSCORE1_KERNEL_STACK);
+
+# define OS_STOP_SEC_STACK_OSCORE1_KERNEL_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_STACK_OSCORE1_SHUTDOWN_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/* Core shutdown stack: OsCore1_Shutdown */
+/* User: [OsCore1, ShutdownHook_OsCore1] */
+extern OS_STACK_DECLARE(OsCfg_Stack_OsCore1_Shutdown_Dyn, OS_CFG_SIZE_OSCORE1_SHUTDOWN_STACK);
+
+# define OS_STOP_SEC_STACK_OSCORE1_SHUTDOWN_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_STACK_OSCORE1_STARTUP_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/* Core startup stack: OsCore1_Startup */
+/* User: [OsCore1, StartupHook_OsCore1] */
+extern OS_STACK_DECLARE(OsCfg_Stack_OsCore1_Startup_Dyn, OS_CFG_SIZE_OSCORE1_STARTUP_STACK);
+
+# define OS_STOP_SEC_STACK_OSCORE1_STARTUP_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_STACK_OSCORE1_TASK_PRIO0_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/* Shared Task stack: OsCore1_Task_Prio0 */
+/* User: [Default_MotorInitTask] */
+extern OS_STACK_DECLARE(OsCfg_Stack_OsCore1_Task_Prio0_Dyn, OS_CFG_SIZE_OSCORE1_TASK_PRIO0_STACK);
+
+# define OS_STOP_SEC_STACK_OSCORE1_TASK_PRIO0_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_STACK_OSCORE1_TASK_PRIO20_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/* Shared Task stack: OsCore1_Task_Prio20 */
+/* User: [BswCore1Task] */
+extern OS_STACK_DECLARE(OsCfg_Stack_OsCore1_Task_Prio20_Dyn, OS_CFG_SIZE_OSCORE1_TASK_PRIO20_STACK);
+
+# define OS_STOP_SEC_STACK_OSCORE1_TASK_PRIO20_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_STACK_OSCORE1_TASK_PRIO4294967295_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/* Shared Task stack: OsCore1_Task_Prio4294967295 */
+/* User: [IdleTask_OsCore_1] */
+extern OS_STACK_DECLARE(OsCfg_Stack_OsCore1_Task_Prio4294967295_Dyn, OS_CFG_SIZE_OSCORE1_TASK_PRIO4294967295_STACK);
+
+# define OS_STOP_SEC_STACK_OSCORE1_TASK_PRIO4294967295_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_STACK_OSCORE1_TASK_PRIO49_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/* Shared Task stack: OsCore1_Task_Prio49 */
+/* User: [Default_Init_Task_Core1_Trusted] */
+extern OS_STACK_DECLARE(OsCfg_Stack_OsCore1_Task_Prio49_Dyn, OS_CFG_SIZE_OSCORE1_TASK_PRIO49_STACK);
+
+# define OS_STOP_SEC_STACK_OSCORE1_TASK_PRIO49_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_STACK_OSCORE1_TASK_PRIO50_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/* Shared Task stack: OsCore1_Task_Prio50 */
+/* User: [Default_Init_Task_Core1] */
+extern OS_STACK_DECLARE(OsCfg_Stack_OsCore1_Task_Prio50_Dyn, OS_CFG_SIZE_OSCORE1_TASK_PRIO50_STACK);
+
+# define OS_STOP_SEC_STACK_OSCORE1_TASK_PRIO50_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
 /**********************************************************************************************************************
  *  GLOBAL CONSTANT DATA PROTOTYPES
  *********************************************************************************************************************/
@@ -230,11 +351,8 @@ extern OS_STACK_DECLARE(OsCfg_Stack_OsCore0_Task_Prio50_Dyn, OS_CFG_SIZE_OSCORE0
 /*! Stack configuration data: Default_Appl_Task */
 extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_Default_Appl_Task;
 
-/*! Stack configuration data: Default_BSW_ASync_Task */
-extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_Default_BSW_ASync_Task;
-
-/*! Stack configuration data: MotorTask */
-extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_MotorTask;
+/*! Stack configuration data: Default_BSW_ASync_Task_10ms */
+extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_Default_BSW_ASync_Task_10ms;
 
 /*! Stack configuration data: OsCore0_Error */
 extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore0_Error;
@@ -267,6 +385,49 @@ extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore0_Task_Prio49;
 extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore0_Task_Prio50;
 
 # define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
+# include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_CORE1_CONST_UNSPECIFIED
+# include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! Stack configuration data: MotorTask */
+extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_MotorTask;
+
+/*! Stack configuration data: OsCore1_Error */
+extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore1_Error;
+
+/*! Stack configuration data: OsCore1_Init */
+extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore1_Init;
+
+/*! Stack configuration data: OsCore1_Isr_Core */
+extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore1_Isr_Core;
+
+/*! Stack configuration data: OsCore1_Kernel */
+extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore1_Kernel;
+
+/*! Stack configuration data: OsCore1_Shutdown */
+extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore1_Shutdown;
+
+/*! Stack configuration data: OsCore1_Startup */
+extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore1_Startup;
+
+/*! Stack configuration data: OsCore1_Task_Prio0 */
+extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore1_Task_Prio0;
+
+/*! Stack configuration data: OsCore1_Task_Prio20 */
+extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore1_Task_Prio20;
+
+/*! Stack configuration data: OsCore1_Task_Prio4294967295 */
+extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore1_Task_Prio4294967295;
+
+/*! Stack configuration data: OsCore1_Task_Prio49 */
+extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore1_Task_Prio49;
+
+/*! Stack configuration data: OsCore1_Task_Prio50 */
+extern CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore1_Task_Prio50;
+
+# define OS_STOP_SEC_CORE1_CONST_UNSPECIFIED
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 

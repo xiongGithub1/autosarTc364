@@ -28,6 +28,23 @@
  * They are presented as a comment in the corresponding object definition containing a list of all legal values.
  *********************************************************************************************************************/
 
+   TASK BswCore1Task {
+      ACTIVATION = 1:"@RO@";
+      PRIORITY = 20:"@RO@";
+      SCHEDULE = NON:"@RO@";
+// TIMING_PROTECTION = FALSE|TRUE; (AUTOSAR OS only)
+      AUTOSTART = FALSE:"@RO@";
+   }:"@RO@@NR@";
+
+   ALARM Rte_Al_TE2_EcuM_EcuM_MainFunction {
+      COUNTER = SystemTimer1;
+      ACTION = ACTIVATETASK
+      {
+         TASK = BswCore1Task;
+      }:"@ROC@";
+      AUTOSTART = FALSE:"@RO@";
+   }:"@RO@@NR@";
+
    TASK Default_Appl_Init_Task {
       ACTIVATION = 1:"@RO@";
       PRIORITY = 45:"@RO@";
@@ -88,33 +105,33 @@
       AUTOSTART = FALSE:"@RO@";
    }:"@RO@@NR@";
 
-   TASK Default_BSW_ASync_Task {
+   TASK Default_BSW_ASync_Task_10ms {
       ACTIVATION = 1:"@RO@";
       PRIORITY = 30:"@RO@";
       SCHEDULE = NON:"@RO@";
 // TIMING_PROTECTION = FALSE|TRUE; (AUTOSAR OS only)
       AUTOSTART = FALSE:"@RO@";
-      EVENT = Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms:"@RO@";
-      EVENT = Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_20ms:"@RO@";
+      EVENT = Rte_Ev_Cyclic2_Default_BSW_ASync_Task_10ms_0_10ms:"@RO@";
+      EVENT = Rte_Ev_Cyclic2_Default_BSW_ASync_Task_10ms_0_20ms:"@RO@";
       EVENT = Rte_Ev_Run_Com_Com_MainFunctionTx_ComMainFunctionTx:"@RO@";
    }:"@RO@@NR@";
 
-   ALARM Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms {
+   ALARM Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_10ms {
       COUNTER = SystemTimer;
       ACTION = SETEVENT
       {
-         TASK = Default_BSW_ASync_Task;
-         EVENT = Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms;
+         TASK = Default_BSW_ASync_Task_10ms;
+         EVENT = Rte_Ev_Cyclic2_Default_BSW_ASync_Task_10ms_0_10ms;
       }:"@ROC@";
       AUTOSTART = FALSE:"@RO@";
    }:"@RO@@NR@";
 
-   ALARM Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms {
+   ALARM Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_20ms {
       COUNTER = SystemTimer;
       ACTION = SETEVENT
       {
-         TASK = Default_BSW_ASync_Task;
-         EVENT = Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_20ms;
+         TASK = Default_BSW_ASync_Task_10ms;
+         EVENT = Rte_Ev_Cyclic2_Default_BSW_ASync_Task_10ms_0_20ms;
       }:"@ROC@";
       AUTOSTART = FALSE:"@RO@";
    }:"@RO@@NR@";
@@ -123,48 +140,50 @@
       COUNTER = SystemTimer;
       ACTION = SETEVENT
       {
-         TASK = Default_BSW_ASync_Task;
+         TASK = Default_BSW_ASync_Task_10ms;
          EVENT = Rte_Ev_Run_Com_Com_MainFunctionTx_ComMainFunctionTx;
       }:"@ROC@";
       AUTOSTART = FALSE:"@RO@";
    }:"@RO@@NR@";
 
+   TASK Default_MotorInitTask {
+      ACTIVATION = 1:"@RO@";
+      PRIORITY = 0:"@RO@";
+      SCHEDULE = FULL:"@RO@";
+// TIMING_PROTECTION = FALSE|TRUE; (AUTOSAR OS only)
+      AUTOSTART = FALSE:"@RO@";
+   }:"@RO@@NR@";
+
    TASK MotorTask {
       ACTIVATION = 1:"@RO@";
-      PRIORITY = 200:"@RO@";
+      PRIORITY = 0:"@RO@";
       SCHEDULE = NON:"@RO@";
 // TIMING_PROTECTION = FALSE|TRUE; (AUTOSAR OS only)
       AUTOSTART = FALSE:"@RO@";
+      EVENT = Rte_Ev_Cyclic_MotorTask_0_1ms:"@RO@";
       EVENT = Rte_Ev_Run_MotorCdd_AdcSampleReady_Rp_AdcSampleReady_AdcSampleReady:"@RO@";
-      EVENT = Rte_Ev_Run_MotorCdd_MotorCDDMainFunction:"@RO@";
-      EVENT = Rte_Ev_Run_MotorControll_MotorControll_MainFunction:"@RO@";
    }:"@RO@@NR@";
 
-   ALARM Rte_Al_TE_MotorCdd_MotorCDDMainFunction {
-      COUNTER = SystemTimer;
+   ALARM Rte_Al_TE_MotorTask_0_1ms {
+      COUNTER = SystemTimer1;
       ACTION = SETEVENT
       {
          TASK = MotorTask;
-         EVENT = Rte_Ev_Run_MotorCdd_MotorCDDMainFunction;
+         EVENT = Rte_Ev_Cyclic_MotorTask_0_1ms;
       }:"@ROC@";
       AUTOSTART = FALSE:"@RO@";
+      ACCESSING_APPLICATION = SystemApplication_OsCore0;
    }:"@RO@@NR@";
 
-   ALARM Rte_Al_TE_MotorControll_MotorControll_MainFunction {
-      COUNTER = SystemTimer;
-      ACTION = SETEVENT
-      {
-         TASK = MotorTask;
-         EVENT = Rte_Ev_Run_MotorControll_MotorControll_MainFunction;
-      }:"@ROC@";
-      AUTOSTART = FALSE:"@RO@";
-   }:"@RO@@NR@";
-
-   EVENT Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_10ms {
+   EVENT Rte_Ev_Cyclic2_Default_BSW_ASync_Task_10ms_0_10ms {
       MASK = AUTO;
    }:"@ROC@@NR@";
 
-   EVENT Rte_Ev_Cyclic2_Default_BSW_ASync_Task_0_20ms {
+   EVENT Rte_Ev_Cyclic2_Default_BSW_ASync_Task_10ms_0_20ms {
+      MASK = AUTO;
+   }:"@ROC@@NR@";
+
+   EVENT Rte_Ev_Cyclic_MotorTask_0_1ms {
       MASK = AUTO;
    }:"@ROC@@NR@";
 
@@ -173,14 +192,6 @@
    }:"@ROC@@NR@";
 
    EVENT Rte_Ev_Run_MotorCdd_AdcSampleReady_Rp_AdcSampleReady_AdcSampleReady {
-      MASK = AUTO;
-   }:"@ROC@@NR@";
-
-   EVENT Rte_Ev_Run_MotorCdd_MotorCDDMainFunction {
-      MASK = AUTO;
-   }:"@ROC@@NR@";
-
-   EVENT Rte_Ev_Run_MotorControll_MotorControll_MainFunction {
       MASK = AUTO;
    }:"@ROC@@NR@";
 
@@ -199,3 +210,41 @@
    EVENT Rte_Ev_Run_StartApp_StartApp_Cyclic250ms {
       MASK = AUTO;
    }:"@ROC@@NR@";
+
+
+   APPLICATION OsApplication_OsCore1 {
+      TRUSTED = TRUE;
+// Add the following four attributes according to your needs.
+// Note: They do not have a default value and are therefore necessary in the configuration.
+//      STARTUPHOOK = FALSE;
+//      SHUTDOWNHOOK = FALSE;
+//      ERRORHOOK = FALSE;
+//      HAS_RESTARTTASK = FALSE;
+      TASK = BswCore1Task;
+      ALARM = Rte_Al_TE2_EcuM_EcuM_MainFunction;
+      TASK = Default_MotorInitTask;
+      TASK = MotorTask;
+      ALARM = Rte_Al_TE_MotorTask_0_1ms;
+      CORE = 1;
+  };
+
+   APPLICATION SystemApplication_OsCore0 {
+      TRUSTED = TRUE;
+// Add the following four attributes according to your needs.
+// Note: They do not have a default value and are therefore necessary in the configuration.
+//      STARTUPHOOK = FALSE;
+//      SHUTDOWNHOOK = FALSE;
+//      ERRORHOOK = FALSE;
+//      HAS_RESTARTTASK = FALSE;
+      TASK = Default_Appl_Init_Task;
+      TASK = Default_Appl_Task;
+      ALARM = Rte_Al_TE_StartApp_StartApp_Cyclic1000ms;
+      ALARM = Rte_Al_TE_StartApp_StartApp_Cyclic10ms;
+      ALARM = Rte_Al_TE_StartApp_StartApp_Cyclic1ms;
+      ALARM = Rte_Al_TE_StartApp_StartApp_Cyclic250ms;
+      TASK = Default_BSW_ASync_Task_10ms;
+      ALARM = Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_10ms;
+      ALARM = Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_20ms;
+      ALARM = Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx;
+      CORE = 0;
+  };

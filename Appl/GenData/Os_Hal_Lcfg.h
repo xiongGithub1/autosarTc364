@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Lcfg.h
- *   Generation Time: 2026-07-29 10:29:51
+ *   Generation Time: 2026-07-30 17:52:17
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -68,6 +68,7 @@
  *********************************************************************************************************************/
 /*! OS-Core identifier */
 #define OS_CORE_ID_0 OS_CORE_ID_0
+#define OS_CORE_ID_1 OS_CORE_ID_1
 
 /**********************************************************************************************************************
  *  GLOBAL FUNCTION MACROS
@@ -87,7 +88,8 @@ typedef enum
 {
   OS_CORE_ID_MASTER = 0,
   OS_CORE_ID_0 = 0, /* 0x00000001 - OsCore0 */  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  OS_COREID_COUNT = 1
+  OS_CORE_ID_1 = 1, /* 0x00000002 - OsCore1 */  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  OS_COREID_COUNT = 2
 } CoreIdType;
 
 

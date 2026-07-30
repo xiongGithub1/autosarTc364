@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-1.xsd">
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
   <AR-PACKAGES>
     <AR-PACKAGE UUID="ff55d029-386d-43a2-b3c2-dfef4c7a5e36">
       <SHORT-NAME>MICROSAR</SHORT-NAME>
@@ -123,6 +123,64 @@
                 </SW-ADDR-METHOD>
                 <SW-ADDR-METHOD UUID="420ae3cb-4d95-47ca-b1b6-ed71a701b97c">
                   <SHORT-NAME>GLOBALSHARED_VAR_NOCACHE_CLEARED</SHORT-NAME>
+                  <SECTION-INITIALIZATION-POLICY>CLEARED</SECTION-INITIALIZATION-POLICY>
+                  <SECTION-TYPE>VAR</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD UUID="808ad262-5736-4ffe-824b-16699422f20f">
+                  <SHORT-NAME>OsApplication_OsCore1_CONST</SHORT-NAME>
+                  <SECTION-TYPE>CONST</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD UUID="1867d63e-bee8-4118-aa13-e2fb1fcb4abd">
+                  <SHORT-NAME>OsApplication_OsCore1_CONST_FAST</SHORT-NAME>
+                  <SECTION-TYPE>CONST</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD UUID="bcbb7eab-5597-4c7f-b623-89a4099d77d9">
+                  <SHORT-NAME>OsApplication_OsCore1_VAR_SAVED_ZONE</SHORT-NAME>
+                  <SECTION-INITIALIZATION-POLICY>NO_INIT</SECTION-INITIALIZATION-POLICY>
+                  <SECTION-TYPE>VAR</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD UUID="c72b41d3-48ec-443d-8096-d3bde5ce122c">
+                  <SHORT-NAME>OsApplication_OsCore1_VAR_INIT</SHORT-NAME>
+                  <SECTION-INITIALIZATION-POLICY>INIT</SECTION-INITIALIZATION-POLICY>
+                  <SECTION-TYPE>VAR</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD UUID="b50f0d47-5fd3-496c-8028-e37395e48138">
+                  <SHORT-NAME>OsApplication_OsCore1_VAR_FAST_INIT</SHORT-NAME>
+                  <SECTION-INITIALIZATION-POLICY>INIT</SECTION-INITIALIZATION-POLICY>
+                  <SECTION-TYPE>VAR-FAST</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD UUID="465b8638-b521-4d52-85d8-1687f5b307be">
+                  <SHORT-NAME>OsApplication_OsCore1_VAR_NOCACHE_INIT</SHORT-NAME>
+                  <SECTION-INITIALIZATION-POLICY>INIT</SECTION-INITIALIZATION-POLICY>
+                  <SECTION-TYPE>VAR</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD UUID="dbb4c52f-99e3-4dd6-88e2-52ab3328dc74">
+                  <SHORT-NAME>OsApplication_OsCore1_VAR_NO_INIT</SHORT-NAME>
+                  <SECTION-INITIALIZATION-POLICY>NO_INIT</SECTION-INITIALIZATION-POLICY>
+                  <SECTION-TYPE>VAR</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD UUID="6a0f2b9b-8bc6-4317-a264-a725b74d6c27">
+                  <SHORT-NAME>OsApplication_OsCore1_VAR_FAST_NO_INIT</SHORT-NAME>
+                  <SECTION-INITIALIZATION-POLICY>NO_INIT</SECTION-INITIALIZATION-POLICY>
+                  <SECTION-TYPE>VAR-FAST</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD UUID="99b4db4e-4f4f-4f9c-9d35-aeefd3cf03b5">
+                  <SHORT-NAME>OsApplication_OsCore1_VAR_NOCACHE_NO_INIT</SHORT-NAME>
+                  <SECTION-INITIALIZATION-POLICY>NO_INIT</SECTION-INITIALIZATION-POLICY>
+                  <SECTION-TYPE>VAR</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD UUID="2d53369b-58c6-4f07-9566-dd76b4d8d299">
+                  <SHORT-NAME>OsApplication_OsCore1_VAR_CLEARED</SHORT-NAME>
+                  <SECTION-INITIALIZATION-POLICY>CLEARED</SECTION-INITIALIZATION-POLICY>
+                  <SECTION-TYPE>VAR</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD UUID="fcbe92fc-29e7-4ca9-a46f-66433717343d">
+                  <SHORT-NAME>OsApplication_OsCore1_VAR_FAST_CLEARED</SHORT-NAME>
+                  <SECTION-INITIALIZATION-POLICY>CLEARED</SECTION-INITIALIZATION-POLICY>
+                  <SECTION-TYPE>VAR-FAST</SECTION-TYPE>
+                </SW-ADDR-METHOD>
+                <SW-ADDR-METHOD UUID="7a08e9e4-c3c0-4da6-b6b1-0b767ea05891">
+                  <SHORT-NAME>OsApplication_OsCore1_VAR_NOCACHE_CLEARED</SHORT-NAME>
                   <SECTION-INITIALIZATION-POLICY>CLEARED</SECTION-INITIALIZATION-POLICY>
                   <SECTION-TYPE>VAR</SECTION-TYPE>
                 </SW-ADDR-METHOD>

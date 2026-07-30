@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Application_Cfg.h
- *   Generation Time: 2026-07-29 14:39:05
+ *   Generation Time: 2026-07-30 20:09:42
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -56,14 +56,24 @@
  *  GLOBAL CONSTANT MACROS
  *********************************************************************************************************************/
 
+/* Number of application objects: OsApplication_OsCore1 */
+# define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_ALARMS             (2u)
+# define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_COUNTERS           (1u)
+# define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_HOOKS              (0u)
+# define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_ISRS               (1u)
+# define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_CAT1ISRS           (1u)
+# define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_SCHTS              (0u)
+# define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_TASKS              (6u)
+# define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_SERVICES           (0u)
+
 /* Number of application objects: SystemApplication_OsCore0 */
-# define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_ALARMS             (9u)
+# define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_ALARMS             (7u)
 # define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_COUNTERS           (1u)
 # define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_HOOKS              (0u)
 # define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_ISRS               (3u)
-# define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_CAT1ISRS           (1u)
+# define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_CAT1ISRS           (0u)
 # define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_SCHTS              (0u)
-# define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_TASKS              (7u)
+# define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_TASKS              (6u)
 # define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_SERVICES           (0u)
 
 

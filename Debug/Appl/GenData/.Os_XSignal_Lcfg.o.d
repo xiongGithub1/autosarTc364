@@ -108,6 +108,38 @@ Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_OsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_OsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Lcfg.h"
@@ -160,6 +192,14 @@ Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_XSignal.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_XSignal.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_XSignalInt.h"
@@ -196,6 +236,14 @@ Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Derivative_Types.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Derivative_TC36x_Types.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Derivative_TC36x_Types.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
@@ -348,6 +396,102 @@ Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_Stacks.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_StacksInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
@@ -496,6 +640,22 @@ Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\App
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Kernel_Lcfg.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Core_Types.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Core_Types.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
@@ -746,6 +906,14 @@ Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_LockInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_LockInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Core_Types.h"
@@ -770,6 +938,14 @@ Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\App
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Trace_Cfg.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Trace_Lcfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Trace_Lcfg.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
@@ -908,6 +1084,14 @@ Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Common.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Common.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Thread.h"
@@ -926,6 +1110,14 @@ Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\App
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Task_Lcfg.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Lcfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Lcfg.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
@@ -986,6 +1178,14 @@ Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_TimingProtectionInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_TimingProtectionInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_CommonInt.h"
@@ -1000,6 +1200,14 @@ Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\App
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Counter_Lcfg.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Lcfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Lcfg.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
@@ -1186,6 +1394,14 @@ Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_ServiceFunction_Types.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_ServiceFunction_Types.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_CoreInt.h"
@@ -1250,6 +1466,14 @@ Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Compiler.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Compiler.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Core.h"
@@ -1274,6 +1498,14 @@ Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Interrupt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Interrupt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_InterruptInt.h"
@@ -1282,6 +1514,14 @@ Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\App
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Interrupt_Lcfg.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Interrupt_Cfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Interrupt_Cfg.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
@@ -1388,6 +1628,14 @@ Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Compiler.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Compiler.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Timer_STM.h"
@@ -1458,6 +1706,14 @@ Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_JobInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_JobInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_CompilerInt.h"
@@ -1496,6 +1752,14 @@ Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\App
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_ScheduleTable_Lcfg.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Lcfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Lcfg.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
@@ -1592,6 +1856,14 @@ Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Lcfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Lcfg.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_BitArray.h"
@@ -1652,6 +1924,14 @@ Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsCode.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsCode.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsCodeInt.h"
@@ -1666,6 +1946,22 @@ Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_ContextInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Context_Lcfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Hal_Context_Lcfg.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
@@ -1798,6 +2094,14 @@ Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_SchedulerInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Scheduler_Lcfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Scheduler_Lcfg.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
@@ -2340,6 +2644,14 @@ Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Spinlock.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Spinlock.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_Compiler.h"
@@ -2402,6 +2714,30 @@ Appl\GenData\Os_XSignal_Lcfg.o :	..\Appl\GenData\Os_Isr_Lcfg.h
 ..\Appl\GenData\Os_Isr_Lcfg.h :
 Appl\GenData\Os_XSignal_Lcfg.o :	..\Appl\GenData\Os_Lcfg.h
 ..\Appl\GenData\Os_Lcfg.h :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
+Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap_OsSections.h" :
 Appl\GenData\Os_XSignal_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMap_OsSectionsInt.h"

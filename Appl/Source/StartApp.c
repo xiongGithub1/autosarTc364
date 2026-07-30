@@ -40,7 +40,8 @@
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of version logging area >>                  DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
-
+#include "MotorCdd.h"
+#include "MotorControll.h"
 #include "Rte_StartApp.h"
 #include "EcuM.h"
 #include "EcuM_Cfg.h"
@@ -115,6 +116,7 @@ FUNC(void, StartApp_CODE) StartApp_Cyclic10ms(void) /* PRQA S 0624, 3206 */ /* M
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
  * Symbol: StartApp_Cyclic10ms
  *********************************************************************************************************************/
+	Dio_FlipChannel(DioConf_DioChannel_DioChannel_test2);
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -150,8 +152,7 @@ FUNC(void, StartApp_CODE) StartApp_Cyclic1ms(void) /* PRQA S 0624, 3206 */ /* MD
   /* 9180, 5012 startup polling, and ZeroCal run in the 1 ms task. */
   Tle9180_Driver_MainFunction();
 
-
-
+  MotorControll_MainFunction();
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -219,6 +220,7 @@ FUNC(void, StartApp_CODE) StartApp_Init(void) /* PRQA S 0624, 3206 */ /* MD_Rte_
  *********************************************************************************************************************/
 	(void)EcuM_RequestRUN(EcuMConf_EcuMFixedUserConfig_EcuMFixedUserConfig);
 	ComM_CommunicationAllowed(ComMConf_ComMChannel_CN_CAN00_5e566ad9, TRUE);
+
 	(void)ComM_RequestComMode(ComMConf_ComMUser_CN_CAN00_06ecbb07,
 	          COMM_FULL_COMMUNICATION);
 /**********************************************************************************************************************

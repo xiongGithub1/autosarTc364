@@ -63,6 +63,23 @@
  *
  **********************************************************************************************************************
  *
+ * Primitive Types:
+ * ================
+ * boolean (MotorSw): Boolean (standard type)
+ * boolean (Tle9180_ov_Fault): Boolean (standard type)
+ * float32 (ElecAngle): Real in interval [-FLT_MAX...FLT_MAX] with single precision (standard type)
+ * float32 (Id_act): Real in interval [-FLT_MAX...FLT_MAX] with single precision (standard type)
+ * float32 (Id_ref): Real in interval [-FLT_MAX...FLT_MAX] with single precision (standard type)
+ * float32 (Iq_act): Real in interval [-FLT_MAX...FLT_MAX] with single precision (standard type)
+ * float32 (Iq_ref): Real in interval [-FLT_MAX...FLT_MAX] with single precision (standard type)
+ * float32 (Iu_A): Real in interval [-FLT_MAX...FLT_MAX] with single precision (standard type)
+ * float32 (Iv_A): Real in interval [-FLT_MAX...FLT_MAX] with single precision (standard type)
+ * float32 (Iw_A): Real in interval [-FLT_MAX...FLT_MAX] with single precision (standard type)
+ * float32 (MechRpm): Real in interval [-FLT_MAX...FLT_MAX] with single precision (standard type)
+ * float32 (motorBusV): Real in interval [-FLT_MAX...FLT_MAX] with single precision (standard type)
+ * uint16 (OriginAngle): Integer in interval [0...65535] (standard type)
+ * uint8 (MotorMd): Integer in interval [0...255] (standard type)
+ *
  *********************************************************************************************************************/
 
 

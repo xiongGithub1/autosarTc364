@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Core_Lcfg.c
- *   Generation Time: 2026-07-29 10:29:51
+ *   Generation Time: 2026-07-30 20:09:42
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -116,11 +116,34 @@ OS_LOCAL VAR(Os_ThreadClassType, OS_VAR_NOINIT) OsCfg_Core_OsCore0_ThreadClass;
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
+#define OS_START_SEC_CORESTATUS_CORE1_VAR_NOCACHE_NOINIT_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! Dynamic core status: OsCore1 */
+OS_LOCAL VAR(Os_CoreAsrStatusType, OS_VAR_NOINIT) OsCfg_Core_OsCore1_Status_Dyn;
+
+#define OS_STOP_SEC_CORESTATUS_CORE1_VAR_NOCACHE_NOINIT_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+#define OS_START_SEC_CORE1_VAR_NOINIT_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! Thread class data for: OsCore1 */
+OS_LOCAL VAR(Os_ThreadClassType, OS_VAR_NOINIT) OsCfg_Core_OsCore1_ThreadClass;
+
+#define OS_STOP_SEC_CORE1_VAR_NOINIT_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
 #define OS_START_SEC_VAR_NOCACHE_NOINIT_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 /*! Dynamic core boot barrier: OsCore0 */
 OS_LOCAL VAR(Os_CoreBootBarrierType, OS_VAR_NOINIT) OsCfg_Core_OsCore0_BootBarrier_Dyn;
+
+/*! Dynamic core boot barrier: OsCore1 */
+OS_LOCAL VAR(Os_CoreBootBarrierType, OS_VAR_NOINIT) OsCfg_Core_OsCore1_BootBarrier_Dyn;
 
 #define OS_STOP_SEC_VAR_NOCACHE_NOINIT_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
@@ -137,6 +160,16 @@ OS_LOCAL VAR(Os_CoreBootBarrierType, OS_VAR_NOINIT) OsCfg_Core_OsCore0_BootBarri
 VAR(Os_CoreAsrType, OS_VAR_NOINIT) OsCfg_Core_OsCore0_Dyn;
 
 #define OS_STOP_SEC_CORE0_VAR_NOINIT_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+#define OS_START_SEC_CORE1_VAR_NOINIT_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! Dynamic core data: OsCore1 */
+VAR(Os_CoreAsrType, OS_VAR_NOINIT) OsCfg_Core_OsCore1_Dyn;
+
+#define OS_STOP_SEC_CORE1_VAR_NOINIT_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
@@ -186,8 +219,7 @@ OS_LOCAL CONST(Os_ResourceConfigRefType, OS_CONST) OsCfg_Core_OsCore0_ResourceRe
 OS_LOCAL CONST(Os_StackConfigRefType, OS_CONST) OsCfg_Core_OsCore0_StackRefs[OS_CFG_NUM_CORE_OSCORE0_STACKS + 1u] =
 {
   (Os_StackConfigRefType) &OsCfg_Stack_Default_Appl_Task,
-  (Os_StackConfigRefType) &OsCfg_Stack_Default_BSW_ASync_Task,
-  (Os_StackConfigRefType) &OsCfg_Stack_MotorTask,
+  (Os_StackConfigRefType) &OsCfg_Stack_Default_BSW_ASync_Task_10ms,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Error,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Init,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Isr_Core,
@@ -266,6 +298,124 @@ CONST(Os_CoreAsrConfigType, OS_CONST) OsCfg_Core_OsCore0 =
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
+#define OS_START_SEC_CORE1_CONST_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! Object reference table for core hooks: OsCore1 */
+OS_LOCAL CONST(Os_HookConfigRefType, OS_CONST) OsCfg_Core_OsCore1_HookRefs[OS_CFG_NUM_CORE_OSCORE1_HOOKS + 1u] =
+{
+  OS_HOOK_CASTCONFIG_STATUSHOOK_2_HOOK(OsCfg_Hook_Os_CoreInitHook_OsCore1),
+  OS_HOOK_CASTCONFIG_CALLBACK_2_HOOK(OsCfg_Hook_StartupHook_OsCore1),
+  OS_HOOK_CASTCONFIG_STATUSHOOK_2_HOOK(OsCfg_Hook_ShutdownHook_OsCore1),
+  OS_HOOK_CASTCONFIG_STATUSHOOK_2_HOOK(OsCfg_Hook_ErrorHook_OsCore1),
+  NULL_PTR
+};
+
+/*! Object reference table for core applications: OsCore1 */
+OS_LOCAL CONST(Os_AppConfigRefType, OS_CONST) OsCfg_Core_OsCore1_AppRefs[OS_CFG_NUM_CORE_OSCORE1_APPS + 1u] =
+{
+  NULL_PTR
+};
+
+/*! Object reference table for core IOC communications: OsCore1 */
+OS_LOCAL CONST(Os_IocConfigRefType, OS_CONST) OsCfg_Core_OsCore1_IocRefs[OS_CFG_NUM_CORE_OSCORE1_IOCS + 1u] =
+{
+  NULL_PTR
+};
+
+/*! Object reference table for core barriers: OsCore1 */
+OS_LOCAL CONST(Os_BarrierBaseConfigRefType, OS_CONST) OsCfg_Core_OsCore1_BarrierRefs[OS_CFG_NUM_BARRIERS + 1u] =  /* PRQA S 4521 */ /* MD_Os_Rule10.1_4521 */ 
+{
+  NULL_PTR
+};
+
+/*! Object reference table for core resources: OsCore1 */
+OS_LOCAL CONST(Os_ResourceConfigRefType, OS_CONST) OsCfg_Core_OsCore1_ResourceRefs[OS_CFG_NUM_CORE_OSCORE1_RESOURCES + 1u] =
+{
+  NULL_PTR
+};
+
+/*! Object reference table for core stacks: OsCore1 */
+OS_LOCAL CONST(Os_StackConfigRefType, OS_CONST) OsCfg_Core_OsCore1_StackRefs[OS_CFG_NUM_CORE_OSCORE1_STACKS + 1u] =
+{
+  (Os_StackConfigRefType) &OsCfg_Stack_MotorTask,
+  (Os_StackConfigRefType) &OsCfg_Stack_OsCore1_Error,
+  (Os_StackConfigRefType) &OsCfg_Stack_OsCore1_Init,
+  (Os_StackConfigRefType) &OsCfg_Stack_OsCore1_Isr_Core,
+  (Os_StackConfigRefType) &OsCfg_Stack_OsCore1_Kernel,
+  (Os_StackConfigRefType) &OsCfg_Stack_OsCore1_Shutdown,
+  (Os_StackConfigRefType) &OsCfg_Stack_OsCore1_Startup,
+  (Os_StackConfigRefType) &OsCfg_Stack_OsCore1_Task_Prio0,
+  (Os_StackConfigRefType) &OsCfg_Stack_OsCore1_Task_Prio20,
+  (Os_StackConfigRefType) &OsCfg_Stack_OsCore1_Task_Prio4294967295,
+  (Os_StackConfigRefType) &OsCfg_Stack_OsCore1_Task_Prio49,
+  (Os_StackConfigRefType) &OsCfg_Stack_OsCore1_Task_Prio50,
+  NULL_PTR
+};
+
+/*! Object reference table for core ISRs: OsCore1 */
+OS_LOCAL CONST(Os_IsrConfigRefType, OS_CONST) OsCfg_Core_OsCore1_IsrRefs[OS_CFG_NUM_CORE_OSCORE1_ISRS + 1u] =
+{
+  OS_TIMER_CASTCONFIG_TIMERISR_2_ISR(OsCfg_Isr_CounterIsr_SystemTimer1), 
+  NULL_PTR
+};
+
+/*! Core configuration data: OsCore1 */
+CONST(Os_CoreAsrConfigType, OS_CONST) OsCfg_Core_OsCore1 =
+{
+  /* .Core                 = */
+  {
+    /* .Status               = */ OS_CORE_CASTSTATUS_COREASRSTATUS_2_CORESTATUS(OsCfg_Core_OsCore1_Status_Dyn),
+    /* .HwConfig             = */ &OsCfg_Hal_Core_OsCore1,
+    /* .InterruptSourceRefs  = */ OsCfg_Hal_Core_OsCore1_InterruptSourceRefs,
+    /* .InterruptSourceCount = */ (Os_ObjIdxType)OS_CFG_NUM_CORE_OSCORE1_INTERRUPTSOURCEREFS,
+    /* .Id                   = */ OS_CORE_ID_1,
+    /* .Trace                = */ NULL_PTR,
+    /* .IsAsrCore            = */ TRUE,
+    /* .IsAutostart          = */ FALSE,
+    /* .IsMasterStartAllowed = */ FALSE,
+    /* .HasPrivilegedHardwareAccess = */ FALSE
+  },
+  /* .Dyn                  = */ &OsCfg_Core_OsCore1_Dyn,
+  /* .Scheduler            = */ &OsCfg_Scheduler_OsCore1,
+  /* .IdleTask             = */ &OsCfg_Task_IdleTask_OsCore_1,
+  /* .KernelApp            = */ &OsCfg_App_OsApplication_OsCore1,
+  /* .KernelStack          = */ &OsCfg_Stack_OsCore1_Kernel,
+  /* .PreStartTask         = */ NULL_PTR,
+  /* .PreStartTaskCallback = */ NULL_PTR,
+  /* .StartupHookRef       = */ &OsCfg_Hook_StartupHook_OsCore1,
+  /* .ShutdownHookRef      = */ &OsCfg_Hook_ShutdownHook_OsCore1,
+  /* .ErrorHookRef         = */ &OsCfg_Hook_ErrorHook_OsCore1,
+  /* .ProtectionHookRef    = */ NULL_PTR,
+  /* .InitHookRef          = */ &OsCfg_Hook_Os_CoreInitHook_OsCore1,
+  /* .HookRefs             = */ OsCfg_Core_OsCore1_HookRefs,
+  /* .HookCount            = */ (Os_ObjIdxType)OS_CFG_NUM_CORE_OSCORE1_HOOKS,
+  /* .AppRefs              = */ OsCfg_Core_OsCore1_AppRefs,
+  /* .AppCount             = */ (Os_ObjIdxType)OS_CFG_NUM_CORE_OSCORE1_APPS,
+  /* .ResourceRefs         = */ OsCfg_Core_OsCore1_ResourceRefs,
+  /* .ResourceCount        = */ (Os_ObjIdxType)OS_CFG_NUM_CORE_OSCORE1_RESOURCES,
+  /* .HwConfig             = */ &OsCfg_Hal_CoreAsr_OsCore1,
+  /* .MemoryProtection     = */ NULL_PTR,
+  /* .TimingProtection     = */ NULL_PTR,
+  /* .StackRefs            = */ OsCfg_Core_OsCore1_StackRefs,
+  /* .StackCount           = */ (Os_ObjIdxType)OS_CFG_NUM_CORE_OSCORE1_STACKS,
+  /* .CoreIdx              = */ OS_COREASRCOREIDX_1,
+  /* .XSignal              = */ NULL_PTR,
+  /* .IocRefs              = */ OsCfg_Core_OsCore1_IocRefs,
+  /* .IocCount             = */ (Os_ObjIdxType)OS_CFG_NUM_CORE_OSCORE1_IOCS,
+  /* .Barrier              = */ &OsCfg_Barrier_OsCore1,
+  /* .BarrierRefs          = */ OsCfg_Core_OsCore1_BarrierRefs,
+  /* .BarrierCount         = */ (Os_ObjIdxType)OS_CFG_NUM_BARRIERS,
+  /* .ThreadClass          = */ &OsCfg_Core_OsCore1_ThreadClass,
+  /* .IsrRefs              = */ OsCfg_Core_OsCore1_IsrRefs,
+  /* .IsrCount             = */ (Os_ObjIdxType)OS_CFG_NUM_CORE_OSCORE1_ISRS
+}
+;
+
+#define OS_STOP_SEC_CORE1_CONST_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
 #define OS_START_SEC_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
@@ -279,6 +429,7 @@ OS_LOCAL CONST(Os_SpinlockConfigRefType, OS_CONST) OsCfg_SystemSpinlockRefs[OS_C
 CONSTP2VAR(Os_CoreBootBarrierType, AUTOMATIC, OS_CONST) OsCfg_CoreBootBarrierRefs[OS_COREID_COUNT + 1u] =               /* PRQA S 4521 */ /* MD_Os_Rule10.1_4521 */  
 {
   &OsCfg_Core_OsCore0_BootBarrier_Dyn,
+  &OsCfg_Core_OsCore1_BootBarrier_Dyn,
   NULL_PTR
 };
 

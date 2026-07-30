@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: E2EXf_MemMap.h
- *   Generation Time: 2026-07-29 10:31:07
+ *   Generation Time: 2026-07-30 20:42:32
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -93,7 +93,8 @@
 # define MEMMAP_SECTION_OPEN
 # define E2EXF_CONST_UNSPECIFIED_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom "MSR_CONST" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef E2EXF_START_SEC_CONST_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -108,7 +109,8 @@
 # endif
 # undef E2EXF_CONST_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef E2EXF_STOP_SEC_CONST_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -122,7 +124,10 @@
 # define MEMMAP_SECTION_OPEN
 # define E2EXF_VAR_INIT_UNSPECIFIED_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_INIT/OS_SystemApplication_OsCore0_VAR_INIT */
+# pragma section farnoclear "OS_CORE0_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "OS_CORE0_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "OS_CORE0_VAR" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef E2EXF_START_SEC_VAR_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -137,7 +142,10 @@
 # endif
 # undef E2EXF_VAR_INIT_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_INIT/OS_SystemApplication_OsCore0_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef E2EXF_STOP_SEC_VAR_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -151,7 +159,10 @@
 # define MEMMAP_SECTION_OPEN
 # define E2EXF_VAR_NOINIT_UNSPECIFIED_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_NOINIT/OS_SystemApplication_OsCore0_VAR_NOINIT */
+# pragma section farnoclear "OS_CORE0_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "OS_CORE0_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "OS_CORE0_VAR" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef E2EXF_START_SEC_VAR_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -166,7 +177,10 @@
 # endif
 # undef E2EXF_VAR_NOINIT_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_NOINIT/OS_SystemApplication_OsCore0_VAR_NOINIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef E2EXF_STOP_SEC_VAR_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -180,7 +194,10 @@
 # define MEMMAP_SECTION_OPEN
 # define E2EXF_VAR_ZERO_INIT_8BIT_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_INIT/OS_SystemApplication_OsCore0_VAR_INIT */
+# pragma section farnoclear "OS_CORE0_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "OS_CORE0_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "OS_CORE0_VAR" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef E2EXF_START_SEC_VAR_ZERO_INIT_8BIT /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -195,7 +212,10 @@
 # endif
 # undef E2EXF_VAR_ZERO_INIT_8BIT_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_INIT/OS_SystemApplication_OsCore0_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef E2EXF_STOP_SEC_VAR_ZERO_INIT_8BIT /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -209,7 +229,10 @@
 # define MEMMAP_SECTION_OPEN
 # define E2EXF_VAR_NOCACHE_ZERO_INIT_8BIT_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_INIT/OS_SystemApplication_OsCore0_VAR_INIT */
+# pragma section farnoclear "OS_CORE0_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "OS_CORE0_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "OS_CORE0_VAR" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef E2EXF_START_SEC_VAR_NOCACHE_ZERO_INIT_8BIT /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -224,7 +247,10 @@
 # endif
 # undef E2EXF_VAR_NOCACHE_ZERO_INIT_8BIT_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_INIT/OS_SystemApplication_OsCore0_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef E2EXF_STOP_SEC_VAR_NOCACHE_ZERO_INIT_8BIT /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -238,7 +264,10 @@
 # define MEMMAP_SECTION_OPEN
 # define E2EXF_VAR_ZERO_INIT_UNSPECIFIED_OPEN
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_INIT/OS_SystemApplication_OsCore0_VAR_INIT */
+# pragma section farnoclear "OS_CORE0_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "OS_CORE0_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "OS_CORE0_VAR" /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef E2EXF_START_SEC_VAR_ZERO_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
@@ -253,9 +282,210 @@
 # endif
 # undef E2EXF_VAR_ZERO_INIT_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
 
-/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_INIT/OS_SystemApplication_OsCore0_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
 
 # undef E2EXF_STOP_SEC_VAR_ZERO_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined E2EXF_START_SEC_CODE_OsApplication_OsCore1
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using E2EXF_START_SEC_CODE_OsApplication_OsCore1 is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define E2EXF_CODE_OsApplication_OsCore1_OPEN
+
+/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+
+# undef E2EXF_START_SEC_CODE_OsApplication_OsCore1 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined E2EXF_STOP_SEC_CODE_OsApplication_OsCore1
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using E2EXF_STOP_SEC_CODE_OsApplication_OsCore1 is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef E2EXF_CODE_OsApplication_OsCore1_OPEN
+#  error Using E2EXF_STOP_SEC_CODE_OsApplication_OsCore1 is not possible as the corresponding memory section has not been opened.
+# endif
+# undef E2EXF_CODE_OsApplication_OsCore1_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+
+# undef E2EXF_STOP_SEC_CODE_OsApplication_OsCore1 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined E2EXF_START_SEC_CODE_SystemApplication_OsCore0
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using E2EXF_START_SEC_CODE_SystemApplication_OsCore0 is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define E2EXF_CODE_SystemApplication_OsCore0_OPEN
+
+/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+
+# undef E2EXF_START_SEC_CODE_SystemApplication_OsCore0 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined E2EXF_STOP_SEC_CODE_SystemApplication_OsCore0
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using E2EXF_STOP_SEC_CODE_SystemApplication_OsCore0 is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef E2EXF_CODE_SystemApplication_OsCore0_OPEN
+#  error Using E2EXF_STOP_SEC_CODE_SystemApplication_OsCore0 is not possible as the corresponding memory section has not been opened.
+# endif
+# undef E2EXF_CODE_SystemApplication_OsCore0_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+
+# undef E2EXF_STOP_SEC_CODE_SystemApplication_OsCore0 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined E2EXF_START_SEC_VAR_OsApplication_OsCore1_INIT_UNSPECIFIED
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using E2EXF_START_SEC_VAR_OsApplication_OsCore1_INIT_UNSPECIFIED is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define E2EXF_VAR_OsApplication_OsCore1_INIT_UNSPECIFIED_OPEN
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_OsApplication_OsCore1_VAR_INIT/OS_OsApplication_OsCore1_VAR_INIT */
+# pragma section farnoclear "OS_CORE1_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "OS_CORE1_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "OS_CORE1_VAR" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef E2EXF_START_SEC_VAR_OsApplication_OsCore1_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined E2EXF_STOP_SEC_VAR_OsApplication_OsCore1_INIT_UNSPECIFIED
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using E2EXF_STOP_SEC_VAR_OsApplication_OsCore1_INIT_UNSPECIFIED is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef E2EXF_VAR_OsApplication_OsCore1_INIT_UNSPECIFIED_OPEN
+#  error Using E2EXF_STOP_SEC_VAR_OsApplication_OsCore1_INIT_UNSPECIFIED is not possible as the corresponding memory section has not been opened.
+# endif
+# undef E2EXF_VAR_OsApplication_OsCore1_INIT_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_OsApplication_OsCore1_VAR_INIT/OS_OsApplication_OsCore1_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef E2EXF_STOP_SEC_VAR_OsApplication_OsCore1_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined E2EXF_START_SEC_VAR_OsApplication_OsCore1_NOINIT_UNSPECIFIED
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using E2EXF_START_SEC_VAR_OsApplication_OsCore1_NOINIT_UNSPECIFIED is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define E2EXF_VAR_OsApplication_OsCore1_NOINIT_UNSPECIFIED_OPEN
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_OsApplication_OsCore1_VAR_NOINIT/OS_OsApplication_OsCore1_VAR_NOINIT */
+# pragma section farnoclear "OS_CORE1_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "OS_CORE1_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "OS_CORE1_VAR" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef E2EXF_START_SEC_VAR_OsApplication_OsCore1_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined E2EXF_STOP_SEC_VAR_OsApplication_OsCore1_NOINIT_UNSPECIFIED
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using E2EXF_STOP_SEC_VAR_OsApplication_OsCore1_NOINIT_UNSPECIFIED is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef E2EXF_VAR_OsApplication_OsCore1_NOINIT_UNSPECIFIED_OPEN
+#  error Using E2EXF_STOP_SEC_VAR_OsApplication_OsCore1_NOINIT_UNSPECIFIED is not possible as the corresponding memory section has not been opened.
+# endif
+# undef E2EXF_VAR_OsApplication_OsCore1_NOINIT_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_OsApplication_OsCore1_VAR_NOINIT/OS_OsApplication_OsCore1_VAR_NOINIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef E2EXF_STOP_SEC_VAR_OsApplication_OsCore1_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined E2EXF_START_SEC_VAR_SystemApplication_OsCore0_INIT_UNSPECIFIED
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using E2EXF_START_SEC_VAR_SystemApplication_OsCore0_INIT_UNSPECIFIED is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define E2EXF_VAR_SystemApplication_OsCore0_INIT_UNSPECIFIED_OPEN
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_INIT/OS_SystemApplication_OsCore0_VAR_INIT */
+# pragma section farnoclear "OS_CORE0_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "OS_CORE0_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "OS_CORE0_VAR" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef E2EXF_START_SEC_VAR_SystemApplication_OsCore0_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined E2EXF_STOP_SEC_VAR_SystemApplication_OsCore0_INIT_UNSPECIFIED
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using E2EXF_STOP_SEC_VAR_SystemApplication_OsCore0_INIT_UNSPECIFIED is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef E2EXF_VAR_SystemApplication_OsCore0_INIT_UNSPECIFIED_OPEN
+#  error Using E2EXF_STOP_SEC_VAR_SystemApplication_OsCore0_INIT_UNSPECIFIED is not possible as the corresponding memory section has not been opened.
+# endif
+# undef E2EXF_VAR_SystemApplication_OsCore0_INIT_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_INIT/OS_SystemApplication_OsCore0_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef E2EXF_STOP_SEC_VAR_SystemApplication_OsCore0_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined E2EXF_START_SEC_VAR_SystemApplication_OsCore0_NOINIT_UNSPECIFIED
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using E2EXF_START_SEC_VAR_SystemApplication_OsCore0_NOINIT_UNSPECIFIED is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define E2EXF_VAR_SystemApplication_OsCore0_NOINIT_UNSPECIFIED_OPEN
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_NOINIT/OS_SystemApplication_OsCore0_VAR_NOINIT */
+# pragma section farnoclear "OS_CORE0_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "OS_CORE0_VAR_NOINIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "OS_CORE0_VAR" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef E2EXF_START_SEC_VAR_SystemApplication_OsCore0_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined E2EXF_STOP_SEC_VAR_SystemApplication_OsCore0_NOINIT_UNSPECIFIED
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using E2EXF_STOP_SEC_VAR_SystemApplication_OsCore0_NOINIT_UNSPECIFIED is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef E2EXF_VAR_SystemApplication_OsCore0_NOINIT_UNSPECIFIED_OPEN
+#  error Using E2EXF_STOP_SEC_VAR_SystemApplication_OsCore0_NOINIT_UNSPECIFIED is not possible as the corresponding memory section has not been opened.
+# endif
+# undef E2EXF_VAR_SystemApplication_OsCore0_NOINIT_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_NOINIT/OS_SystemApplication_OsCore0_VAR_NOINIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef E2EXF_STOP_SEC_VAR_SystemApplication_OsCore0_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
 #endif
 
@@ -307,6 +537,42 @@
 #endif
 #ifdef E2EXF_STOP_SEC_VAR_ZERO_INIT_UNSPECIFIED
 # error Using E2EXF_STOP_SEC_VAR_ZERO_INIT_UNSPECIFIED is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef E2EXF_START_SEC_CODE_OsApplication_OsCore1
+# error Using E2EXF_START_SEC_CODE_OsApplication_OsCore1 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef E2EXF_STOP_SEC_CODE_OsApplication_OsCore1
+# error Using E2EXF_STOP_SEC_CODE_OsApplication_OsCore1 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef E2EXF_START_SEC_CODE_SystemApplication_OsCore0
+# error Using E2EXF_START_SEC_CODE_SystemApplication_OsCore0 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef E2EXF_STOP_SEC_CODE_SystemApplication_OsCore0
+# error Using E2EXF_STOP_SEC_CODE_SystemApplication_OsCore0 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef E2EXF_START_SEC_VAR_OsApplication_OsCore1_INIT_UNSPECIFIED
+# error Using E2EXF_START_SEC_VAR_OsApplication_OsCore1_INIT_UNSPECIFIED is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef E2EXF_STOP_SEC_VAR_OsApplication_OsCore1_INIT_UNSPECIFIED
+# error Using E2EXF_STOP_SEC_VAR_OsApplication_OsCore1_INIT_UNSPECIFIED is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef E2EXF_START_SEC_VAR_OsApplication_OsCore1_NOINIT_UNSPECIFIED
+# error Using E2EXF_START_SEC_VAR_OsApplication_OsCore1_NOINIT_UNSPECIFIED is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef E2EXF_STOP_SEC_VAR_OsApplication_OsCore1_NOINIT_UNSPECIFIED
+# error Using E2EXF_STOP_SEC_VAR_OsApplication_OsCore1_NOINIT_UNSPECIFIED is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef E2EXF_START_SEC_VAR_SystemApplication_OsCore0_INIT_UNSPECIFIED
+# error Using E2EXF_START_SEC_VAR_SystemApplication_OsCore0_INIT_UNSPECIFIED is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef E2EXF_STOP_SEC_VAR_SystemApplication_OsCore0_INIT_UNSPECIFIED
+# error Using E2EXF_STOP_SEC_VAR_SystemApplication_OsCore0_INIT_UNSPECIFIED is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef E2EXF_START_SEC_VAR_SystemApplication_OsCore0_NOINIT_UNSPECIFIED
+# error Using E2EXF_START_SEC_VAR_SystemApplication_OsCore0_NOINIT_UNSPECIFIED is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef E2EXF_STOP_SEC_VAR_SystemApplication_OsCore0_NOINIT_UNSPECIFIED
+# error Using E2EXF_STOP_SEC_VAR_SystemApplication_OsCore0_NOINIT_UNSPECIFIED is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
 #endif
 
 #ifdef MEMMAP_ERROR

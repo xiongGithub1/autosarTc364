@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Context_Lcfg.h
- *   Generation Time: 2026-07-29 10:29:51
+ *   Generation Time: 2026-07-30 20:09:42
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -112,8 +112,8 @@ extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Default_Appl_Ini
 extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Default_Appl_Task_Dyn;
 
 
-/*! HAL dynamic task context data: Default_BSW_ASync_Task */
-extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Default_BSW_ASync_Task_Dyn;
+/*! HAL dynamic task context data: Default_BSW_ASync_Task_10ms */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Default_BSW_ASync_Task_10ms_Dyn;
 
 
 /*! HAL dynamic task context data: Default_Init_Task */
@@ -128,14 +128,59 @@ extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Default_Init_Tas
 extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_IdleTask_OsCore0_Dyn;
 
 
-/*! HAL dynamic task context data: MotorTask */
-extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_MotorTask_Dyn;
-
-
 /*! HAL exception context data: OsCore0 */
 extern VAR(Os_ExceptionContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_ExceptionContext;
 
 # define OS_STOP_SEC_CORE0_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_CORE1_VAR_NOINIT_UNSPECIFIED
+# include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! HAL dynamic hook context data: Os_CoreInitHook_OsCore1 */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Os_CoreInitHook_OsCore1_Dyn;
+
+/*! HAL dynamic hook context data: StartupHook_OsCore1 */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_StartupHook_OsCore1_Dyn;
+
+/*! HAL dynamic hook context data: ShutdownHook_OsCore1 */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_ShutdownHook_OsCore1_Dyn;
+
+/*! HAL dynamic hook context data: ErrorHook_OsCore1 */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_ErrorHook_OsCore1_Dyn;
+
+/*! HAL dynamic ISR2 level context data: Level1 */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore1_Isr_Level1_Dyn;
+
+/*! HAL dynamic task context data: BswCore1Task */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_BswCore1Task_Dyn;
+
+
+/*! HAL dynamic task context data: Default_Init_Task_Core1 */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Default_Init_Task_Core1_Dyn;
+
+
+/*! HAL dynamic task context data: Default_Init_Task_Core1_Trusted */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Default_Init_Task_Core1_Trusted_Dyn;
+
+
+/*! HAL dynamic task context data: Default_MotorInitTask */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Default_MotorInitTask_Dyn;
+
+
+/*! HAL dynamic task context data: IdleTask_OsCore_1 */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_IdleTask_OsCore_1_Dyn;
+
+
+/*! HAL dynamic task context data: MotorTask */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_MotorTask_Dyn;
+
+
+/*! HAL exception context data: OsCore1 */
+extern VAR(Os_ExceptionContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore1_ExceptionContext;
+
+# define OS_STOP_SEC_CORE1_VAR_NOINIT_UNSPECIFIED
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
@@ -173,8 +218,8 @@ extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Default_Appl_
 /*! HAL task context configuration data: Default_Appl_Task */
 extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Default_Appl_Task;
 
-/*! HAL task context configuration data: Default_BSW_ASync_Task */
-extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Default_BSW_ASync_Task;
+/*! HAL task context configuration data: Default_BSW_ASync_Task_10ms */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Default_BSW_ASync_Task_10ms;
 
 /*! HAL task context configuration data: Default_Init_Task */
 extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Default_Init_Task;
@@ -185,13 +230,53 @@ extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Default_Init_
 /*! HAL task context configuration data: IdleTask_OsCore0 */
 extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_IdleTask_OsCore0;
 
-/*! HAL task context configuration data: MotorTask */
-extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_MotorTask;
-
 /*! HAL kernel stack configuration data: OsCore0_Kernel */
 extern CONST(Os_Hal_ContextStackConfigType, OS_CONST) OsCfg_Hal_Stack_OsCore0_Kernel;
 
 # define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
+# include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_CORE1_CONST_UNSPECIFIED
+# include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! HAL hook context configuration data: Os_CoreInitHook_OsCore1 */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Os_CoreInitHook_OsCore1;
+
+/*! HAL hook context configuration data: StartupHook_OsCore1 */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_StartupHook_OsCore1;
+
+/*! HAL hook context configuration data: ShutdownHook_OsCore1 */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_ShutdownHook_OsCore1;
+
+/*! HAL hook context configuration data: ErrorHook_OsCore1 */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_ErrorHook_OsCore1;
+
+/*! HAL ISR2 context configuration data: CounterIsr_SystemTimer1 */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CounterIsr_SystemTimer1;
+
+/*! HAL task context configuration data: BswCore1Task */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_BswCore1Task;
+
+/*! HAL task context configuration data: Default_Init_Task_Core1 */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Default_Init_Task_Core1;
+
+/*! HAL task context configuration data: Default_Init_Task_Core1_Trusted */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Default_Init_Task_Core1_Trusted;
+
+/*! HAL task context configuration data: Default_MotorInitTask */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Default_MotorInitTask;
+
+/*! HAL task context configuration data: IdleTask_OsCore_1 */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_IdleTask_OsCore_1;
+
+/*! HAL task context configuration data: MotorTask */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_MotorTask;
+
+/*! HAL kernel stack configuration data: OsCore1_Kernel */
+extern CONST(Os_Hal_ContextStackConfigType, OS_CONST) OsCfg_Hal_Stack_OsCore1_Kernel;
+
+# define OS_STOP_SEC_CORE1_CONST_UNSPECIFIED
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 

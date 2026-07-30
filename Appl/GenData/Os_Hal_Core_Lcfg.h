@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Core_Lcfg.h
- *   Generation Time: 2026-07-29 10:29:51
+ *   Generation Time: 2026-07-30 17:52:17
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -83,6 +83,7 @@
 
 /* Core entry symbol declarations */
 extern uint8 _start_tc0[];                       /* PRQA S 0289, 1002, 3449, 3451, 3684 */ /* MD_Os_Dir1.1_0289_LinkerSymbol, MD_Os_Rule1.2_1002, MD_Os_Rule8.5_3449_LinkerSymbol, MD_Os_Rule8.5_3451_LinkerSymbol, MD_Os_Rule8.11_3684_LinkerSymbol */
+extern uint8 _start_tc1[];                       /* PRQA S 0289, 1002, 3449, 3451, 3684 */ /* MD_Os_Dir1.1_0289_LinkerSymbol, MD_Os_Rule1.2_1002, MD_Os_Rule8.5_3449_LinkerSymbol, MD_Os_Rule8.5_3451_LinkerSymbol, MD_Os_Rule8.11_3684_LinkerSymbol */
 
 
 /**********************************************************************************************************************
@@ -103,6 +104,23 @@ extern CONST(Os_Hal_CoreConfigType, OS_CONST) OsCfg_Hal_Core_OsCore0;
 extern CONST(Os_Hal_CoreAsrConfigType, OS_CONST) OsCfg_Hal_CoreAsr_OsCore0;
 
 # define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
+# include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_CORE1_CONST_UNSPECIFIED
+# include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! HAL core initialized interrupt sources: OsCore1 */
+extern CONSTP2CONST(Os_IsrHwConfigType, OS_CONST, OS_CONST)
+  OsCfg_Hal_Core_OsCore1_InterruptSourceRefs[OS_CFG_NUM_CORE_OSCORE1_INTERRUPTSOURCEREFS + 1u];
+
+/*! HAL core configuration data: OsCore1 */
+extern CONST(Os_Hal_CoreConfigType, OS_CONST) OsCfg_Hal_Core_OsCore1;
+
+/*! HAL AUTOSAR core configuration data: OsCore1 */
+extern CONST(Os_Hal_CoreAsrConfigType, OS_CONST) OsCfg_Hal_CoreAsr_OsCore1;
+
+# define OS_STOP_SEC_CORE1_CONST_UNSPECIFIED
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 

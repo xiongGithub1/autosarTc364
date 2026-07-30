@@ -296,6 +296,7 @@ void MotorCdd_FocFastLoop(void)
   iqRef = MotorCdd_CmdMirror.iqRef;
 
 
+  //get angle from tle5012
   MotorCdd_FocServiceAngleSpi();
 
   switch (motorMode)

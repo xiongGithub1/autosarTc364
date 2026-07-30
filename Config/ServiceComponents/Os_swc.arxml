@@ -223,6 +223,77 @@
                   <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
                   <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc/Os_OsCore0_swcInternalBehavior</BEHAVIOR-REF>
                 </SWC-IMPLEMENTATION>
+                <SERVICE-SW-COMPONENT-TYPE UUID="2f786aee-b65d-4025-90ce-22f0f5f35811">
+                  <SHORT-NAME>Os_OsCore1_swc</SHORT-NAME>
+                  <CATEGORY>SERVICE_COMPONENT</CATEGORY>
+                  <PORTS>
+                    <P-PORT-PROTOTYPE UUID="7a7d251e-981d-49c8-91dd-957d02c50e50">
+                      <SHORT-NAME>OsService_SystemTimer1</SHORT-NAME>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Os_swc/Interfaces/Os_Service</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                  </PORTS>
+                  <INTERNAL-BEHAVIORS>
+                    <SWC-INTERNAL-BEHAVIOR UUID="4a9bd65d-9d02-4b79-a0ee-d290120549da">
+                      <SHORT-NAME>Os_OsCore1_swcInternalBehavior</SHORT-NAME>
+                      <EVENTS>
+                        <OPERATION-INVOKED-EVENT UUID="2894ea8b-b610-4e3d-b5d7-b8ecaff1b45c">
+                          <SHORT-NAME>OpEventGetCounterValue_GetCounterValue_OsService_SystemTimer1</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore1_swc/Os_OsCore1_swcInternalBehavior/GetCounterValue</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore1_swc/OsService_SystemTimer1</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Os_swc/Interfaces/Os_Service/GetCounterValue</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="502729cc-b2eb-49b7-9257-ac1636b633a4">
+                          <SHORT-NAME>OpEventGetElapsedValue_GetElapsedValue_OsService_SystemTimer1</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore1_swc/Os_OsCore1_swcInternalBehavior/GetElapsedValue</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore1_swc/OsService_SystemTimer1</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Os_swc/Interfaces/Os_Service/GetElapsedValue</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                      </EVENTS>
+                      <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                      <PORT-API-OPTIONS>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-ARG-VALUES>
+                            <PORT-DEFINED-ARGUMENT-VALUE>
+                              <VALUE>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <VALUE>SystemTimer1</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </VALUE>
+                              <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/MICROSAR/Os_swc/DataTypes/CounterType</VALUE-TYPE-TREF>
+                            </PORT-DEFINED-ARGUMENT-VALUE>
+                          </PORT-ARG-VALUES>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore1_swc/OsService_SystemTimer1</PORT-REF>
+                        </PORT-API-OPTION>
+                      </PORT-API-OPTIONS>
+                      <RUNNABLES>
+                        <RUNNABLE-ENTITY UUID="4ddd4ced-f20b-4dbe-8132-39e7ae0ef9cd">
+                          <SHORT-NAME>GetCounterValue</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>GetCounterValue</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="ee50cd1a-9401-4631-8e44-22dd253db86a">
+                          <SHORT-NAME>GetElapsedValue</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>GetElapsedValue</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                      </RUNNABLES>
+                      <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                    </SWC-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </SERVICE-SW-COMPONENT-TYPE>
+                <SWC-IMPLEMENTATION UUID="8763be03-9c15-4127-9fe0-dc1668e67255">
+                  <SHORT-NAME>Os_OsCore1_swcImplementation</SHORT-NAME>
+                  <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+                  <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore1_swc/Os_OsCore1_swcInternalBehavior</BEHAVIOR-REF>
+                </SWC-IMPLEMENTATION>
               </ELEMENTS>
             </AR-PACKAGE>
           </AR-PACKAGES>

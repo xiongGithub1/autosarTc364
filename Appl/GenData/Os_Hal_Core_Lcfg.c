@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Core_Lcfg.c
- *   Generation Time: 2026-07-29 10:29:51
+ *   Generation Time: 2026-07-30 17:52:17
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -81,6 +81,9 @@
 /*! externals of vector tables start addresses */
 extern uint8 osTrap_0_Core0[];                       /* PRQA S 0289, 1002, 3449, 3451, 3684 */ /* MD_Os_Dir1.1_0289_LinkerSymbol, MD_Os_Rule1.2_1002, MD_Os_Rule8.5_3449_LinkerSymbol, MD_Os_Rule8.5_3451_LinkerSymbol, MD_Os_Rule8.11_3684_LinkerSymbol */
 extern uint8 osIsrLevel_0_Core0[];                       /* PRQA S 0289, 1002, 3449, 3451, 3684 */ /* MD_Os_Dir1.1_0289_LinkerSymbol, MD_Os_Rule1.2_1002, MD_Os_Rule8.5_3449_LinkerSymbol, MD_Os_Rule8.5_3451_LinkerSymbol, MD_Os_Rule8.11_3684_LinkerSymbol */
+/*! externals of vector tables start addresses */
+extern uint8 osTrap_0_Core1[];                       /* PRQA S 0289, 1002, 3449, 3451, 3684 */ /* MD_Os_Dir1.1_0289_LinkerSymbol, MD_Os_Rule1.2_1002, MD_Os_Rule8.5_3449_LinkerSymbol, MD_Os_Rule8.5_3451_LinkerSymbol, MD_Os_Rule8.11_3684_LinkerSymbol */
+extern uint8 osIsrLevel_0_Core1[];                       /* PRQA S 0289, 1002, 3449, 3451, 3684 */ /* MD_Os_Dir1.1_0289_LinkerSymbol, MD_Os_Rule1.2_1002, MD_Os_Rule8.5_3449_LinkerSymbol, MD_Os_Rule8.5_3451_LinkerSymbol, MD_Os_Rule8.11_3684_LinkerSymbol */
 
 
 
@@ -96,6 +99,16 @@ extern uint8 osIsrLevel_0_Core0[];                       /* PRQA S 0289, 1002, 3
 OS_LOCAL VAR(Os_Hal_Core2ThreadType, OS_VAR_NOINIT_FAST) OsCfg_Hal_Core2Thread_OsCore0_Dyn;
 
 #define OS_STOP_SEC_CORE0_VAR_FAST_NOINIT_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+#define OS_START_SEC_CORE1_VAR_FAST_NOINIT_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! HAL dynamic core to thread data: OsCore1 */
+OS_LOCAL VAR(Os_Hal_Core2ThreadType, OS_VAR_NOINIT_FAST) OsCfg_Hal_Core2Thread_OsCore1_Dyn;
+
+#define OS_STOP_SEC_CORE1_VAR_FAST_NOINIT_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
@@ -143,6 +156,42 @@ CONST(Os_Hal_CoreAsrConfigType, OS_CONST) OsCfg_Hal_CoreAsr_OsCore0 =
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
+#define OS_START_SEC_CORE1_CONST_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! HAL core initialized interrupt sources: OsCore1 */
+CONSTP2CONST(Os_IsrHwConfigType, OS_CONST, OS_CONST)
+  OsCfg_Hal_Core_OsCore1_InterruptSourceRefs[OS_CFG_NUM_CORE_OSCORE1_INTERRUPTSOURCEREFS + 1u] =
+{
+  /* No core exclusive interrupt sources to be initialized by OsCore1. */
+  NULL_PTR
+};
+
+
+/*! HAL core configuration data: OsCore1 */
+CONST(Os_Hal_CoreConfigType, OS_CONST) OsCfg_Hal_Core_OsCore1 =
+{
+  /* .CoreId                  = */ 1, /* Physical id of OsCore1 */
+  /* .ProgramCounterRegister  = */ OS_HAL_CORE1_PC,
+  /* .StartLabelAddress       = */ (uint32)&(_start_tc1), /* PRQA S 0306, 0324 */ /* MD_Os_Hal_Rule11.4_0306, MD_Os_Hal_Rule11.2_0324 */
+  /* .DBGSRRegister           = */ OS_HAL_CORE1_DBGSR,
+  /* .SYSCON_CORECON_Register = */ OS_HAL_CORE1_SYSCON_CORECON,
+  /* .BOOTCONRegister         = */ OS_HAL_CORE1_BOOTCON
+}
+;
+
+/*! HAL AUTOSAR core configuration data: OsCore1 */
+CONST(Os_Hal_CoreAsrConfigType, OS_CONST) OsCfg_Hal_CoreAsr_OsCore1 =
+{
+  /* .CoreId                     = */ 1, /* This is the logical id of the core */
+  /* .AddressOfExceptionTable    = */ (uint32)&osTrap_0_Core1, /* this is the start address of the exception vector table */ /* PRQA S 0306, 0324 */ /* MD_Os_Hal_Rule11.4_0306, MD_Os_Hal_Rule11.2_0324 */
+  /* .AddressOfInterruptTable    = */ (uint32)&osIsrLevel_0_Core1, /* this is the start address of the interrupt vector table */ /* PRQA S 0306, 0324 */ /* MD_Os_Hal_Rule11.4_0306, MD_Os_Hal_Rule11.2_0324 */
+};
+
+#define OS_STOP_SEC_CORE1_CONST_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
 #define OS_START_SEC_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
@@ -152,6 +201,7 @@ CONST(Os_Hal_Core2ThreadConfigType, OS_CONST) OsCfg_Hal_Core2Thread =
   /* .Core2Thread = */
   {
     &OsCfg_Hal_Core2Thread_OsCore0_Dyn, /* OS_CORE_ID_0 */
+    &OsCfg_Hal_Core2Thread_OsCore1_Dyn, /* OS_CORE_ID_1 */
   }
 };
 
@@ -167,6 +217,7 @@ CONSTP2CONST(Os_IsrHwConfigType, OS_CONST, OS_CONST)
   &OsCfg_Isr_AdcIsr_G8_HwConfig,
   &OsCfg_Isr_CanIsr_0_HwConfig,
   &OsCfg_Isr_CounterIsr_SystemTimer_HwConfig,
+  &OsCfg_Isr_CounterIsr_SystemTimer1_HwConfig,
   NULL_PTR
 };
 

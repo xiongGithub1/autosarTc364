@@ -26,6 +26,8 @@
 #include "string.h"
 #include "Std_Types.h"
 #include "Rte_Cbk.h" /* PRQA S 0828, 0883 */ /* MD_MSR_Dir1.1, MD_Rte_Os */
+#include "ComXf.h"
+#include "E2EXf.h"
 #include "Rte_Main.h"
 
 

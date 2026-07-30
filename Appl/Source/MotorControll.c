@@ -157,9 +157,9 @@ FUNC(void, MotorControll_CODE) MotorControll_Init(void) /* PRQA S 0624, 3206 */ 
   MotorControll_PrevMotorMode = MOTOR_MODE_DEFAULT;
   MotorFoc_OpenLoopCan_Init();
 
-  (void)Rte_Write_Pp_MotorCtrlCmd_MotorMode((uint8)MOTOR_MODE_DEFAULT);
-  (void)Rte_Write_Pp_MotorCurrentRef_Id_Ref(0.0F);
-  (void)Rte_Write_Pp_MotorCurrentRef_Iq_Ref(0.0F);
+//  (void)Rte_Write_StartApp_Pp_MotorCtrlCmd_MotorMode((uint8)MOTOR_MODE_DEFAULT);
+//  (void)Rte_Write_StartApp_Pp_MotorCurrentRef_Id_Ref(0.0F);
+//  (void)Rte_Write_StartApp_Pp_MotorCurrentRef_Iq_Ref(0.0F);
 
 
 /**********************************************************************************************************************
@@ -346,8 +346,8 @@ static void MotorControll_UpdateCurrentRefsViaRte(MotorMode_Type motorMode)
 
   MotorControll_IdRefOut = idRef;
   MotorControll_IqRefOut = iqRef;
-  (void)Rte_Write_Pp_MotorCurrentRef_Id_Ref(idRef);
-  (void)Rte_Write_Pp_MotorCurrentRef_Iq_Ref(iqRef);
+//  (void)Rte_Write_StartApp_Pp_MotorCurrentRef_Id_Ref(idRef);
+//  (void)Rte_Write_StartApp_Pp_MotorCurrentRef_Iq_Ref(iqRef);
 }
 
 uint8 MotorControll_IsCurrentOffsetReady(void)
@@ -362,151 +362,151 @@ uint8 MotorControll_IsOutputEnabled(void)
 
 void MotorControll_MainFunction(void)
 {
-  MotorMode_Type motorMode;
-
-  MotorControll_MainCounter++;
-
-  if (MotorControll_OpenLoopEnable != 0U)
-  {
-    motorMode = MOTOR_MODE_OPEN_LOOP;
-  }
-  else
-  {
-    motorMode = MotorControll_MotorModeCmd;
-  }
-
-  MotorControll_UpdateSensorObservation();
-  MotorControll_UpdateGateDriverObservation();
-
-  if ((motorMode == MOTOR_MODE_IDLE) &&
-      (MotorFoc_CurrentLoopFault != 0U) &&
-      (MotorFoc_CurrentLoopFaultReason == MOTORFOC_CURRENT_FAULT_UNDERVOLT))
-  {
-    const MotorCdd_AdcPhysicalType* adcPhysical = MotorCdd_GetAdcPhysical();
-    float32 minVdc = MotorFoc_CurrentLoopMinVdcRunV;
-
-    if (minVdc < 0.0F)
-    {
-      minVdc = 0.0F;
-    }
-
-    if (adcPhysical->vinv_V >= (minVdc + 0.5F))
-    {
-      MotorCdd_FocClearFault();
-    }
-  }
-
-  if (motorMode != MotorControll_PrevMotorMode)
-  {
-    if (motorMode == MOTOR_MODE_CALIBRATION)
-    {
-      if (MotorControll_TryStartCalibration() == 0U)
-      {
-        if (MotorZeroCal_StartRejectReason == MOTORZEROCAL_START_REJECT_VDC_LOW)
-        {
-          MotorControll_MotorModeCmd = MOTOR_MODE_IDLE;
-          motorMode = MOTOR_MODE_IDLE;
-        }
-      }
-    }
-    else if (motorMode == MOTOR_MODE_CALIBRATION_ERASE)
-    {
-      MotorZeroCal_Erase();
-      MotorControll_MotorModeCmd = MOTOR_MODE_IDLE;
-      motorMode = MOTOR_MODE_IDLE;
-    }
-    else if (motorMode == MOTOR_MODE_CALIBRATION_SAVE)
-    {
-      /* Motortask must NOT call NvM_WriteBlock (NON prio 200). Queue only. */
-      MotorControll_StopPwm();
-      MotorZeroCal_SaveToFlash();
-      MotorControll_MotorModeCmd = MOTOR_MODE_IDLE;
-      motorMode = MOTOR_MODE_IDLE;
-    }
-    else if (motorMode == MOTOR_MODE_OPEN_LOOP)
-    {
-      MotorFoc_OpenLoop_Reset();
-      MotorCdd_FocClearFault();
-      MotorControll_IdRefOut = 0.0F;
-      MotorControll_IqRefOut = 0.0F;
-    }
-    else
-    {
-      MotorControll_CalVdcStableMs = 0U;
-      /* No action on other mode transitions. */
-    }
-  }
-  else if (motorMode == MOTOR_MODE_CALIBRATION)
-  {
-    /* RUNNING = align; SAVING = NvM write still under CALIBRATION mode. */
-    if ((MotorZeroCal_State != MOTORZEROCAL_STATE_RUNNING) &&
-        (MotorZeroCal_State != MOTORZEROCAL_STATE_SAVING))
-    {
-      if (MotorControll_TryStartCalibration() == 0U)
-      {
-        if (MotorZeroCal_StartRejectReason == MOTORZEROCAL_START_REJECT_VDC_LOW)
-        {
-          MotorControll_MotorModeCmd = MOTOR_MODE_IDLE;
-          motorMode = MOTOR_MODE_IDLE;
-        }
-      }
-    }
-  }
-  else
-  {
-    MotorControll_CalVdcStableMs = 0U;
-  }
-
-  MotorControll_UpdateCurrentRefsViaRte(motorMode);
-  (void)Rte_Write_Pp_MotorCtrlCmd_MotorMode((uint8)motorMode);
-  MotorCdd_FocSetCmdMirror((uint8)motorMode,
-                           MotorControll_IdRefOut,
-                           MotorControll_IqRefOut);
+//  MotorMode_Type motorMode;
+//
+//  MotorControll_MainCounter++;
+//
+//  if (MotorControll_OpenLoopEnable != 0U)
+//  {
+//    motorMode = MOTOR_MODE_OPEN_LOOP;
+//  }
+//  else
+//  {
+//    motorMode = MotorControll_MotorModeCmd;
+//  }
+//
+//  MotorControll_UpdateSensorObservation();
+//  MotorControll_UpdateGateDriverObservation();
+//
+//  if ((motorMode == MOTOR_MODE_IDLE) &&
+//      (MotorFoc_CurrentLoopFault != 0U) &&
+//      (MotorFoc_CurrentLoopFaultReason == MOTORFOC_CURRENT_FAULT_UNDERVOLT))
+//  {
+//    const MotorCdd_AdcPhysicalType* adcPhysical = MotorCdd_GetAdcPhysical();
+//    float32 minVdc = MotorFoc_CurrentLoopMinVdcRunV;
+//
+//    if (minVdc < 0.0F)
+//    {
+//      minVdc = 0.0F;
+//    }
+//
+//    if (adcPhysical->vinv_V >= (minVdc + 0.5F))
+//    {
+//      MotorCdd_FocClearFault();
+//    }
+//  }
+//
+//  if (motorMode != MotorControll_PrevMotorMode)
+//  {
+//    if (motorMode == MOTOR_MODE_CALIBRATION)
+//    {
+//      if (MotorControll_TryStartCalibration() == 0U)
+//      {
+//        if (MotorZeroCal_StartRejectReason == MOTORZEROCAL_START_REJECT_VDC_LOW)
+//        {
+//          MotorControll_MotorModeCmd = MOTOR_MODE_IDLE;
+//          motorMode = MOTOR_MODE_IDLE;
+//        }
+//      }
+//    }
+//    else if (motorMode == MOTOR_MODE_CALIBRATION_ERASE)
+//    {
+//      MotorZeroCal_Erase();
+//      MotorControll_MotorModeCmd = MOTOR_MODE_IDLE;
+//      motorMode = MOTOR_MODE_IDLE;
+//    }
+//    else if (motorMode == MOTOR_MODE_CALIBRATION_SAVE)
+//    {
+//      /* Motortask must NOT call NvM_WriteBlock (NON prio 200). Queue only. */
+//      MotorControll_StopPwm();
+//      MotorZeroCal_SaveToFlash();
+//      MotorControll_MotorModeCmd = MOTOR_MODE_IDLE;
+//      motorMode = MOTOR_MODE_IDLE;
+//    }
+//    else if (motorMode == MOTOR_MODE_OPEN_LOOP)
+//    {
+//      MotorFoc_OpenLoop_Reset();
+//      MotorCdd_FocClearFault();
+//      MotorControll_IdRefOut = 0.0F;
+//      MotorControll_IqRefOut = 0.0F;
+//    }
+//    else
+//    {
+//      MotorControll_CalVdcStableMs = 0U;
+//      /* No action on other mode transitions. */
+//    }
+//  }
+//  else if (motorMode == MOTOR_MODE_CALIBRATION)
+//  {
+//    /* RUNNING = align; SAVING = NvM write still under CALIBRATION mode. */
+//    if ((MotorZeroCal_State != MOTORZEROCAL_STATE_RUNNING) &&
+//        (MotorZeroCal_State != MOTORZEROCAL_STATE_SAVING))
+//    {
+//      if (MotorControll_TryStartCalibration() == 0U)
+//      {
+//        if (MotorZeroCal_StartRejectReason == MOTORZEROCAL_START_REJECT_VDC_LOW)
+//        {
+//          MotorControll_MotorModeCmd = MOTOR_MODE_IDLE;
+//          motorMode = MOTOR_MODE_IDLE;
+//        }
+//      }
+//    }
+//  }
+//  else
+//  {
+//    MotorControll_CalVdcStableMs = 0U;
+//  }
+//
+//  MotorControll_UpdateCurrentRefsViaRte(motorMode);
+//  (void)Rte_Write_StartApp_Pp_MotorCtrlCmd_MotorMode((uint8)motorMode);
+//  MotorCdd_FocSetCmdMirror((uint8)motorMode,
+//                           MotorControll_IdRefOut,
+//                           MotorControll_IqRefOut);
 //  MotorFoc_OpenLoopCan_MainFunction(motorMode);
-
-  if (MotorControll_OpenLoopEnable != 0U)
-  {
-    motorMode = MOTOR_MODE_OPEN_LOOP;
-  }
-  else
-  {
-    motorMode = MotorControll_MotorModeCmd;
-  }
-  MotorControll_PrevMotorMode = motorMode;
-
-  if ((motorMode == MOTOR_MODE_IDLE) ||
-      (motorMode == MOTOR_MODE_STOP) ||
-      (motorMode == MOTOR_MODE_CALIBRATION_SAVE) ||
-      (MotorZeroCal_State == MOTORZEROCAL_STATE_SAVING))
-  {
-    if (MotorControll_OutputEnabled != 0U)
-    {
-      MotorControll_StopPwm();
-    }
-    return;
-  }
-
-  if (Tle9180_Driver_GetState() != TLE9180_DRV_STATE_READY)
-  {
-    MotorControll_StopPwm();
-    MotorControll_OpenLoopBlockedCounter++;
-    return;
-  }
-
-  if (MotorCdd_FocHasFault() != 0U)
-  {
-    MotorControll_StopPwm();
-    MotorControll_OpenLoopBlockedCounter++;
-    return;
-  }
-
-  if ((MotorCdd_AdcIsCurrentOffsetReady() != 0U) &&
-      (MotorControll_OutputEnabled == 0U))
-  {
-    MotorCdd_FocPrepareOutputEnable();
-    Tle9180_Driver_EnableOutput(TRUE);
-    MotorControll_OutputEnabled = 1U;
-  }
+//
+//  if (MotorControll_OpenLoopEnable != 0U)
+//  {
+//    motorMode = MOTOR_MODE_OPEN_LOOP;
+//  }
+//  else
+//  {
+//    motorMode = MotorControll_MotorModeCmd;
+//  }
+//  MotorControll_PrevMotorMode = motorMode;
+//
+//  if ((motorMode == MOTOR_MODE_IDLE) ||
+//      (motorMode == MOTOR_MODE_STOP) ||
+//      (motorMode == MOTOR_MODE_CALIBRATION_SAVE) ||
+//      (MotorZeroCal_State == MOTORZEROCAL_STATE_SAVING))
+//  {
+//    if (MotorControll_OutputEnabled != 0U)
+//    {
+//      MotorControll_StopPwm();
+//    }
+//    return;
+//  }
+//
+//  if (Tle9180_Driver_GetState() != TLE9180_DRV_STATE_READY)
+//  {
+//    MotorControll_StopPwm();
+//    MotorControll_OpenLoopBlockedCounter++;
+//    return;
+//  }
+//
+//  if (MotorCdd_FocHasFault() != 0U)
+//  {
+//    MotorControll_StopPwm();
+//    MotorControll_OpenLoopBlockedCounter++;
+//    return;
+//  }
+//
+//  if ((MotorCdd_AdcIsCurrentOffsetReady() != 0U) &&
+//      (MotorControll_OutputEnabled == 0U))
+//  {
+//    MotorCdd_FocPrepareOutputEnable();
+//    Tle9180_Driver_EnableOutput(TRUE);
+//    MotorControll_OutputEnabled = 1U;
+//  }
 }
 
 #define MotorControll_STOP_SEC_CODE

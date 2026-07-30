@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Kernel_Lcfg.h
- *   Generation Time: 2026-07-29 10:29:51
+ *   Generation Time: 2026-07-30 17:52:17
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -86,7 +86,8 @@
 typedef enum
 {
   OS_COREASRCOREIDX_0 = 0, /* OsCore0 */
-  OS_COREASRCOREIDX_COUNT = 1
+  OS_COREASRCOREIDX_1 = 1, /* OsCore1 */
+  OS_COREASRCOREIDX_COUNT = 2
 } Os_CoreAsrCoreIdx;
 
 

@@ -57,18 +57,7 @@
             </SW-COMPONENT-PROTOTYPE>
           </COMPONENTS>
           <CONNECTORS>
-            <ASSEMBLY-SW-CONNECTOR UUID="B7B2A1F5-A756-48DD-B15A-670DA2A95195">
-              <SHORT-NAME>MotorCdd_Pp_MotorElectricalAngle_MotorControll_Pp_MotorElectricalAngle</SHORT-NAME>
-              <PROVIDER-IREF>
-                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/MotorCdd</CONTEXT-COMPONENT-REF>
-                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorElectricalAngle</TARGET-P-PORT-REF>
-              </PROVIDER-IREF>
-              <REQUESTER-IREF>
-                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/MotorControll</CONTEXT-COMPONENT-REF>
-                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorControll/Pp_MotorElectricalAngle</TARGET-R-PORT-REF>
-              </REQUESTER-IREF>
-            </ASSEMBLY-SW-CONNECTOR>
-            <ASSEMBLY-SW-CONNECTOR UUID="8E87C8CF-33D4-4FB3-BBA1-914B243E0432">
+            <ASSEMBLY-SW-CONNECTOR UUID="5D207019-ACDF-43BD-BCC2-C2B61C6CF552">
               <SHORT-NAME>MotorCdd_Pp_MotorDcBusVoltage_MotorControll_Pp_MotorDcBusVoltage</SHORT-NAME>
               <PROVIDER-IREF>
                 <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/MotorCdd</CONTEXT-COMPONENT-REF>
@@ -79,7 +68,18 @@
                 <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorControll/Pp_MotorDcBusVoltage</TARGET-R-PORT-REF>
               </REQUESTER-IREF>
             </ASSEMBLY-SW-CONNECTOR>
-            <ASSEMBLY-SW-CONNECTOR UUID="70F1BB33-7466-4977-974C-1BAFFA19AFD6">
+            <ASSEMBLY-SW-CONNECTOR UUID="007225DF-F7BE-4DB4-9EEA-9D03A15C66EB">
+              <SHORT-NAME>MotorCdd_Pp_MotorElectricalAngle_MotorControll_Pp_MotorElectricalAngle</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/MotorCdd</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorElectricalAngle</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/MotorControll</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorControll/Pp_MotorElectricalAngle</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR UUID="16395CD4-3E5B-4D79-A6A2-36112615D84C">
               <SHORT-NAME>MotorCdd_Pp_MotorFaultStatus_MotorControll_Pp_MotorFaultStatus</SHORT-NAME>
               <PROVIDER-IREF>
                 <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/MotorCdd</CONTEXT-COMPONENT-REF>
@@ -90,18 +90,7 @@
                 <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorControll/Pp_MotorFaultStatus</TARGET-R-PORT-REF>
               </REQUESTER-IREF>
             </ASSEMBLY-SW-CONNECTOR>
-            <ASSEMBLY-SW-CONNECTOR UUID="A351F294-A0F1-4ADD-8EC6-91B8EF5388EB">
-              <SHORT-NAME>MotorControll_Pp_MotorCurrentRef_MotorCdd_Pp_MotorCurrentRef</SHORT-NAME>
-              <PROVIDER-IREF>
-                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/MotorControll</CONTEXT-COMPONENT-REF>
-                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/MotorControll/Pp_MotorCurrentRef</TARGET-P-PORT-REF>
-              </PROVIDER-IREF>
-              <REQUESTER-IREF>
-                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/MotorCdd</CONTEXT-COMPONENT-REF>
-                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorCurrentRef</TARGET-R-PORT-REF>
-              </REQUESTER-IREF>
-            </ASSEMBLY-SW-CONNECTOR>
-            <ASSEMBLY-SW-CONNECTOR UUID="7E948C98-816A-4DD6-8226-2000D5635769">
+            <ASSEMBLY-SW-CONNECTOR UUID="22A2BDC3-3ECE-4B22-9664-22CC60A34241">
               <SHORT-NAME>MotorControll_Pp_MotorCtrlCmd_MotorCdd_Pp_MotorCtrlCmd</SHORT-NAME>
               <PROVIDER-IREF>
                 <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/MotorControll</CONTEXT-COMPONENT-REF>
@@ -110,6 +99,17 @@
               <REQUESTER-IREF>
                 <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/MotorCdd</CONTEXT-COMPONENT-REF>
                 <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorCtrlCmd</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR UUID="3B44364E-17A0-4406-868F-AB772F033B85">
+              <SHORT-NAME>MotorControll_Pp_MotorCurrentRef_MotorCdd_Pp_MotorCurrentRef</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/MotorControll</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/MotorControll/Pp_MotorCurrentRef</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/MotorCdd</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorCurrentRef</TARGET-R-PORT-REF>
               </REQUESTER-IREF>
             </ASSEMBLY-SW-CONNECTOR>
           </CONNECTORS>

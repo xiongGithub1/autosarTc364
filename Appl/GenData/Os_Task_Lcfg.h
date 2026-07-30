@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Task_Lcfg.h
- *   Generation Time: 2026-07-29 10:29:51
+ *   Generation Time: 2026-07-30 20:09:43
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -90,8 +90,8 @@ extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_Default_Appl_Init_Task;
 /*! Task configuration data: Default_Appl_Task */
 extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_Default_Appl_Task;
 
-/*! Task configuration data: Default_BSW_ASync_Task */
-extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_Default_BSW_ASync_Task;
+/*! Task configuration data: Default_BSW_ASync_Task_10ms */
+extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_Default_BSW_ASync_Task_10ms;
 
 /*! Task configuration data: Default_Init_Task */
 extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_Default_Init_Task;
@@ -102,10 +102,32 @@ extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_Default_Init_Task_Trusted;
 /*! Task configuration data: IdleTask_OsCore0 */
 extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_IdleTask_OsCore0;
 
+# define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
+# include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_CORE1_CONST_UNSPECIFIED
+# include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! Task configuration data: BswCore1Task */
+extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_BswCore1Task;
+
+/*! Task configuration data: Default_Init_Task_Core1 */
+extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_Default_Init_Task_Core1;
+
+/*! Task configuration data: Default_Init_Task_Core1_Trusted */
+extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_Default_Init_Task_Core1_Trusted;
+
+/*! Task configuration data: Default_MotorInitTask */
+extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_Default_MotorInitTask;
+
+/*! Task configuration data: IdleTask_OsCore_1 */
+extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_IdleTask_OsCore_1;
+
 /*! Task configuration data: MotorTask */
 extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_MotorTask;
 
-# define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
+# define OS_STOP_SEC_CORE1_CONST_UNSPECIFIED
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 

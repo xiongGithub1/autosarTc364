@@ -226,7 +226,7 @@ void MotorCdd_AdcRunFastLoop(void)
 
 void MotorCdd_AdcGroup0Notification(void)
 {
-//  Dio_FlipChannel(DioConf_DioChannel_DioChannel_test);
+
 //  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_LOW);
 //  Dio_FlipChannel(DioConf_DioChannel_DioChannel_test2);
 //  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_HIGH);

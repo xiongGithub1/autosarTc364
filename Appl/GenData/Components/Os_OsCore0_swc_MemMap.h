@@ -96,7 +96,7 @@
 
 #ifdef Os_OsCore0_swc_START_SEC_VAR_NOINIT_UNSPECIFIED
 # undef Os_OsCore0_swc_START_SEC_VAR_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
-# define START_SEC_VAR_NOINIT_UNSPECIFIED
+# define OS_START_SEC_SystemApplication_OsCore0_VAR_NOINIT_UNSPECIFIED
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 #endif
 
@@ -111,7 +111,7 @@
 
 #ifdef Os_OsCore0_swc_START_SEC_VAR_INIT_UNSPECIFIED
 # undef Os_OsCore0_swc_START_SEC_VAR_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
-# define START_SEC_VAR_INIT_UNSPECIFIED
+# define OS_START_SEC_SystemApplication_OsCore0_VAR_UNSPECIFIED
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 #endif
 
@@ -126,7 +126,7 @@
 
 #ifdef Os_OsCore0_swc_START_SEC_VAR_ZERO_INIT_UNSPECIFIED
 # undef Os_OsCore0_swc_START_SEC_VAR_ZERO_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
-# define START_SEC_VAR_ZERO_INIT_UNSPECIFIED
+# define OS_START_SEC_SystemApplication_OsCore0_VAR_UNSPECIFIED
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 #endif
 
@@ -173,7 +173,7 @@
 
 #ifdef Os_OsCore0_swc_STOP_SEC_VAR_NOINIT_UNSPECIFIED
 # undef Os_OsCore0_swc_STOP_SEC_VAR_NOINIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
-# define STOP_SEC_VAR
+# define OS_STOP_SEC_SystemApplication_OsCore0_VAR_NOINIT_UNSPECIFIED
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 #endif
 
@@ -188,7 +188,7 @@
 
 #ifdef Os_OsCore0_swc_STOP_SEC_VAR_INIT_UNSPECIFIED
 # undef Os_OsCore0_swc_STOP_SEC_VAR_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
-# define STOP_SEC_VAR
+# define OS_STOP_SEC_SystemApplication_OsCore0_VAR_UNSPECIFIED
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 #endif
 
@@ -203,9 +203,19 @@
 
 #ifdef Os_OsCore0_swc_STOP_SEC_VAR_ZERO_INIT_UNSPECIFIED
 # undef Os_OsCore0_swc_STOP_SEC_VAR_ZERO_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
-# define STOP_SEC_VAR
+# define OS_STOP_SEC_SystemApplication_OsCore0_VAR_UNSPECIFIED
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 #endif
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!          << End of memory mapping implementation >>          DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!        << Start of memory mapping implementation >>          DO NOT CHANGE THIS COMMENT!
+ * Symbol: RTE_OS_MEMMAP_INCLUDE
+ *********************************************************************************************************************/
+
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!          << End of memory mapping implementation >>          DO NOT CHANGE THIS COMMENT!

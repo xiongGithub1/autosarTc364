@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Cfg.c
- *   Generation Time: 2026-07-29 10:31:07
+ *   Generation Time: 2026-07-30 19:55:29
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -69,6 +69,24 @@
 /**********************************************************************************************************************
  *  LOCAL DATA PROTOTYPES
 **********************************************************************************************************************/
+#define ECUM_START_SEC_VAR_PARTITION_SYSTEMAPPLICATION_OSCORE0_NOCACHE_NO_INIT_32
+/*lint -save -esym(961, 19.1) */
+#include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+ECUM_LOCAL VAR(EcuM_CoreStatusType, ECUM_VAR_NO_INIT) EcuM_CoreStatus_SystemApplication_OsCore0;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+#define ECUM_STOP_SEC_VAR_PARTITION_SYSTEMAPPLICATION_OSCORE0_NOCACHE_NO_INIT_32
+/*lint -save -esym(961, 19.1) */
+#include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+#define ECUM_START_SEC_VAR_PARTITION_OSAPPLICATION_OSCORE1_NOCACHE_NO_INIT_32
+/*lint -save -esym(961, 19.1) */
+#include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+ECUM_LOCAL VAR(EcuM_CoreStatusType, ECUM_VAR_NO_INIT) EcuM_CoreStatus_OsApplication_OsCore1;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+#define ECUM_STOP_SEC_VAR_PARTITION_OSAPPLICATION_OSCORE1_NOCACHE_NO_INIT_32
+/*lint -save -esym(961, 19.1) */
+#include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
 
 /**********************************************************************************************************************
   CONFIGURATION CLASS: PRE_COMPILE
@@ -92,6 +110,27 @@
   CONFIGURATION CLASS: PRE_COMPILE
   SECTION: GLOBAL DATA
 **********************************************************************************************************************/
+/**********************************************************************************************************************
+  EcuM_CoreStatus
+**********************************************************************************************************************/
+/** 
+  \var    EcuM_CoreStatus
+  \brief  Stores status of each core.
+*/ 
+#define ECUM_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+CONST(EcuM_CoreStatusArrayType, ECUM_CONST) EcuM_CoreStatus[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+  /* Index     CoreStatus                                  */
+  /*     0 */ &EcuM_CoreStatus_SystemApplication_OsCore0 ,
+  /*     1 */ &EcuM_CoreStatus_OsApplication_OsCore1     
+};
+#define ECUM_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+
 /**********************************************************************************************************************
   EcuM_DriverInitOne
 **********************************************************************************************************************/
@@ -152,6 +191,30 @@ CONST(EcuM_DriverInitThreeType, ECUM_CONST) EcuM_DriverInitThree[1] = {  /* PRQA
 CONST(EcuM_DriverInitTwoType, ECUM_CONST) EcuM_DriverInitTwo[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
     /* Index    Function              */
   { /*     0 */ EcuM_AL_DriverInitTwo }
+};
+#define ECUM_STOP_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  EcuM_PartitionData
+**********************************************************************************************************************/
+/** 
+  \var    EcuM_PartitionData
+  \brief  Contains all parameters configured for initialization of partitions.
+  \details
+  Element        Description
+  Application    
+*/ 
+#define ECUM_START_SEC_CONST_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "EcuM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+CONST(EcuM_PartitionDataType, ECUM_CONST) EcuM_PartitionData[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+    /* Index    Application               */
+  { /*     0 */ SystemApplication_OsCore0 },
+  { /*     1 */ OsApplication_OsCore1     }
 };
 #define ECUM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */

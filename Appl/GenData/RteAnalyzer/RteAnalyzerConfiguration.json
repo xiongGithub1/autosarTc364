@@ -1,7 +1,7 @@
 {
    "description" : "RTE Analyzer configuration file",
    "version" : "1.12.0",
-   "BswOsApplication" : "",
+   "BswOsApplication" : "SystemApplication_OsCore0",
    "COMDirectory" : "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/Com/Implementation",
    "DataConsistencyAPIGroupList" : [
       {
@@ -246,22 +246,22 @@
       {
          "ExecutedOnTaskLevel" : "1",
          "NamePattern" : "Rte_GetMirror.*",
-         "OsApplication" : ""
+         "OsApplication" : "SystemApplication_OsCore0"
       },
       {
          "ExecutedOnTaskLevel" : "1",
          "NamePattern" : "Rte_SetMirror.*",
-         "OsApplication" : ""
+         "OsApplication" : "SystemApplication_OsCore0"
       },
       {
          "ExecutedOnTaskLevel" : "1",
          "NamePattern" : "Rte_NvMNotifyJobFinished.*",
-         "OsApplication" : ""
+         "OsApplication" : "SystemApplication_OsCore0"
       },
       {
          "ExecutedOnTaskLevel" : "1",
          "NamePattern" : "Rte_NvMNotifyInitBlock.*",
-         "OsApplication" : ""
+         "OsApplication" : "SystemApplication_OsCore0"
       }
    ],
    "InitFunctionNamePatternList" : [
@@ -397,7 +397,7 @@
          "Type" : "FUNCTION"
       }
    ],
-   "NvMBswOsApplication" : "",
+   "NvMBswOsApplication" : "SystemApplication_OsCore0",
    "OsAPIFunctions" : [
       "^os.",
       "^Com_.",
@@ -411,7 +411,22 @@
       "^(Get|Release)(Resource|Spinlock)$",
       "^Schedule$"
    ],
-   "OsApplicationList" : [],
+   "OsApplicationList" : [
+      {
+         "CoreId" : "1",
+         "IsPrivileged" : "1",
+         "IsTrusted" : "1",
+         "OsApplicationName" : "OsApplication_OsCore1",
+         "SafetyLevel" : "5"
+      },
+      {
+         "CoreId" : "0",
+         "IsPrivileged" : "1",
+         "IsTrusted" : "1",
+         "OsApplicationName" : "SystemApplication_OsCore0",
+         "SafetyLevel" : "5"
+      }
+   ],
    "PlatformSettings" : {
       "MaxAtomicMemoryAccess" : "4"
    },
@@ -421,6 +436,7 @@
    "SourceFileList" : [
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -431,6 +447,29 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/ComXf"
+         ],
+         "SourceFile" : "../ComXf.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/E2EXf_LCfg"
+         ],
+         "SourceFile" : "../E2EXf_LCfg.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -441,6 +480,40 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Rte_OsApplication_OsCore1"
+         ],
+         "SourceFile" : "../Rte_OsApplication_OsCore1.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Rte_SystemApplication_OsCore0"
+         ],
+         "SourceFile" : "../Rte_SystemApplication_OsCore0.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/E2EXf"
+         ],
+         "SourceFile" : "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation/E2EXf.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -451,6 +524,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -461,6 +535,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -471,6 +546,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -481,6 +557,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -491,6 +568,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -501,6 +579,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -511,6 +590,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -521,6 +601,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -531,6 +612,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -541,6 +623,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -551,6 +634,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -561,6 +645,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -571,6 +656,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -581,16 +667,7 @@
       },
       {
          "IncludeDirectoryList" : [
-            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
-            "Source",
-            "..",
-            "../Components",
-            "../Components/ComXf"
-         ],
-         "SourceFile" : "Source/ComXf.c"
-      },
-      {
-         "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -601,6 +678,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -611,6 +689,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -621,6 +700,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -631,6 +711,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -641,6 +722,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -651,6 +733,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -661,6 +744,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -671,6 +755,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -681,16 +766,7 @@
       },
       {
          "IncludeDirectoryList" : [
-            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
-            "Source",
-            "..",
-            "../Components",
-            "../Components/E2EXf"
-         ],
-         "SourceFile" : "Source/E2EXf.c"
-      },
-      {
-         "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -701,6 +777,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -711,6 +788,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -721,6 +799,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -731,6 +810,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -741,6 +821,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -751,6 +832,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -761,6 +843,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -771,6 +854,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -781,6 +865,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -791,6 +876,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -801,6 +887,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -811,6 +898,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -821,6 +909,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -831,6 +920,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -841,6 +931,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -851,6 +942,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -861,6 +953,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -871,6 +964,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -881,6 +975,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -891,6 +986,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -901,6 +997,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -911,6 +1008,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -921,6 +1019,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -931,6 +1030,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -941,6 +1041,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -951,6 +1052,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -961,6 +1063,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -971,6 +1074,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -981,6 +1085,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -991,6 +1096,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -1001,6 +1107,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -1011,6 +1118,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -1021,6 +1129,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -1031,6 +1140,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -1041,6 +1151,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -1051,6 +1162,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -1061,6 +1173,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -1071,6 +1184,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -1081,6 +1195,7 @@
       },
       {
          "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
             "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
             "Source",
             "..",
@@ -1088,49 +1203,101 @@
             "../Components/TSC_NvM"
          ],
          "SourceFile" : "Source/TSC_NvM.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Os_OsCore1_swc"
+         ],
+         "SourceFile" : "Source/Os_OsCore1_swc.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/E2EXf/Implementation",
+            "E:/workFiles/TC367/TC367/CBD2200508_D00/CBD2200508_D00/Components/RteAnalyzer/Generator/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_Os_OsCore1_swc"
+         ],
+         "SourceFile" : "Source/TSC_Os_OsCore1_swc.c"
       }
    ],
    "TaskList" : [
       {
-         "OsApplication" : "",
+         "OsApplication" : "OsApplication_OsCore1",
+         "Preemptive" : "0",
+         "Priority" : "20",
+         "TaskName" : "BswCore1Task"
+      },
+      {
+         "OsApplication" : "SystemApplication_OsCore0",
          "Preemptive" : "0",
          "Priority" : "45",
          "TaskName" : "Default_Appl_Init_Task"
       },
       {
-         "OsApplication" : "",
+         "OsApplication" : "SystemApplication_OsCore0",
          "Preemptive" : "0",
          "Priority" : "5",
          "TaskName" : "Default_Appl_Task"
       },
       {
-         "OsApplication" : "",
+         "OsApplication" : "SystemApplication_OsCore0",
          "Preemptive" : "0",
          "Priority" : "30",
-         "TaskName" : "Default_BSW_ASync_Task"
+         "TaskName" : "Default_BSW_ASync_Task_10ms"
       },
       {
-         "OsApplication" : "",
+         "OsApplication" : "SystemApplication_OsCore0",
          "Preemptive" : "0",
          "Priority" : "50",
          "TaskName" : "Default_Init_Task"
       },
       {
-         "OsApplication" : "",
+         "OsApplication" : "OsApplication_OsCore1",
+         "Preemptive" : "1",
+         "Priority" : "50",
+         "TaskName" : "Default_Init_Task_Core1"
+      },
+      {
+         "OsApplication" : "OsApplication_OsCore1",
+         "Preemptive" : "1",
+         "Priority" : "49",
+         "TaskName" : "Default_Init_Task_Core1_Trusted"
+      },
+      {
+         "OsApplication" : "SystemApplication_OsCore0",
          "Preemptive" : "0",
          "Priority" : "49",
          "TaskName" : "Default_Init_Task_Trusted"
       },
       {
-         "OsApplication" : "",
+         "OsApplication" : "OsApplication_OsCore1",
+         "Preemptive" : "1",
+         "Priority" : "0",
+         "TaskName" : "Default_MotorInitTask"
+      },
+      {
+         "OsApplication" : "SystemApplication_OsCore0",
          "Preemptive" : "1",
          "Priority" : "4294967295",
          "TaskName" : "IdleTask_OsCore0"
       },
       {
-         "OsApplication" : "",
+         "OsApplication" : "OsApplication_OsCore1",
+         "Preemptive" : "1",
+         "Priority" : "4294967295",
+         "TaskName" : "IdleTask_OsCore_1"
+      },
+      {
+         "OsApplication" : "OsApplication_OsCore1",
          "Preemptive" : "0",
-         "Priority" : "200",
+         "Priority" : "0",
          "TaskName" : "MotorTask"
       }
    ],

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Lcfg.h
- *   Generation Time: 2026-07-29 10:29:51
+ *   Generation Time: 2026-07-30 20:09:43
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -88,6 +88,18 @@
  *  GLOBAL FUNCTION PROTOTYPES
  *********************************************************************************************************************/
 
+# define OS_START_SEC_BswCore1Task_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/**********************************************************************************************************************
+ *  BswCore1Task()
+ *********************************************************************************************************************/
+extern FUNC(void, OS_BSWCORE1TASK_CODE) Os_Task_BswCore1Task(void);
+
+# define OS_STOP_SEC_BswCore1Task_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
 # define OS_START_SEC_Default_Appl_Init_Task_CODE
 # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
@@ -112,15 +124,15 @@ extern FUNC(void, OS_DEFAULT_APPL_TASK_CODE) Os_Task_Default_Appl_Task(void);
 # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
-# define OS_START_SEC_Default_BSW_ASync_Task_CODE
+# define OS_START_SEC_Default_BSW_ASync_Task_10ms_CODE
 # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 /**********************************************************************************************************************
- *  Default_BSW_ASync_Task()
+ *  Default_BSW_ASync_Task_10ms()
  *********************************************************************************************************************/
-extern FUNC(void, OS_DEFAULT_BSW_ASYNC_TASK_CODE) Os_Task_Default_BSW_ASync_Task(void);
+extern FUNC(void, OS_DEFAULT_BSW_ASYNC_TASK_10MS_CODE) Os_Task_Default_BSW_ASync_Task_10ms(void);
 
-# define OS_STOP_SEC_Default_BSW_ASync_Task_CODE
+# define OS_STOP_SEC_Default_BSW_ASync_Task_10ms_CODE
 # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
@@ -136,6 +148,30 @@ extern FUNC(void, OS_DEFAULT_INIT_TASK_CODE) Os_Task_Default_Init_Task(void);
 # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
+# define OS_START_SEC_Default_Init_Task_Core1_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/**********************************************************************************************************************
+ *  Default_Init_Task_Core1()
+ *********************************************************************************************************************/
+extern FUNC(void, OS_DEFAULT_INIT_TASK_CORE1_CODE) Os_Task_Default_Init_Task_Core1(void);
+
+# define OS_STOP_SEC_Default_Init_Task_Core1_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_Default_Init_Task_Core1_Trusted_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/**********************************************************************************************************************
+ *  Default_Init_Task_Core1_Trusted()
+ *********************************************************************************************************************/
+extern FUNC(void, OS_DEFAULT_INIT_TASK_CORE1_TRUSTED_CODE) Os_Task_Default_Init_Task_Core1_Trusted(void);
+
+# define OS_STOP_SEC_Default_Init_Task_Core1_Trusted_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
 # define OS_START_SEC_Default_Init_Task_Trusted_CODE
 # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
@@ -145,6 +181,18 @@ extern FUNC(void, OS_DEFAULT_INIT_TASK_CODE) Os_Task_Default_Init_Task(void);
 extern FUNC(void, OS_DEFAULT_INIT_TASK_TRUSTED_CODE) Os_Task_Default_Init_Task_Trusted(void);
 
 # define OS_STOP_SEC_Default_Init_Task_Trusted_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_Default_MotorInitTask_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/**********************************************************************************************************************
+ *  Default_MotorInitTask()
+ *********************************************************************************************************************/
+extern FUNC(void, OS_DEFAULT_MOTORINITTASK_CODE) Os_Task_Default_MotorInitTask(void);
+
+# define OS_STOP_SEC_Default_MotorInitTask_CODE
 # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 

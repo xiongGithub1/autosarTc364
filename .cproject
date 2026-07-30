@@ -26,6 +26,7 @@
 								<option id="com.tasking.ctc.cc.noTaskingSfr.1001861997" name="Automatic inclusion of '.sfr' file" superClass="com.tasking.ctc.cc.noTaskingSfr" value="false" valueType="boolean"/>
 								<option id="com.tasking.ctc.cc.includePaths.1439296800" name="Include paths" superClass="com.tasking.ctc.cc.includePaths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl/Include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl/GenData}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl/GenData/Components}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl/GenData/inc}&quot;"/>
@@ -133,6 +134,11 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/MCAL364/TC36xA/_Reg}&quot;"/>
 								</option>
 								<option id="com.tasking.ctc.cc.enableCache.1309564060" name="Cache generated code to improve the compilation speed" superClass="com.tasking.ctc.cc.enableCache" value="false" valueType="boolean"/>
+								<option id="com.tasking.ctc.c.allocation.nearSize.297661927" name="Threshold for putting data in __near:" superClass="com.tasking.ctc.c.allocation.nearSize" value="0" valueType="string"/>
+								<option id="com.tasking.ctc.cc.definedSymbols.1618884797" name="Defined symbols" superClass="com.tasking.ctc.cc.definedSymbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="BRS_COMP_TASKING "/>
+									<listOptionValue builtIn="false" value="BRS_PLATFORM_AURIX"/>
+								</option>
 								<inputType id="com.tasking.ctc.cppInputType.2018539661" name="C++" superClass="com.tasking.ctc.cppInputType"/>
 								<inputType id="com.tasking.ctc.cpp.cInputType.384961694" name="C" superClass="com.tasking.ctc.cpp.cInputType"/>
 								<inputType id="com.tasking.ctc.cc.msInputType.994567686" name="MS" superClass="com.tasking.ctc.cc.msInputType"/>
@@ -141,9 +147,10 @@
 								<inputType id="com.tasking.ctc.asmInputType.1595109619" name="ASM" superClass="com.tasking.ctc.asmInputType"/>
 							</tool>
 							<tool id="com.tasking.ctc.lk.abs.debug.1208404899" name="Linker" superClass="com.tasking.ctc.lk.abs.debug">
-								<option id="com.tasking.ctc.lk.lslFile.126693106" name="Linker script file:" superClass="com.tasking.ctc.lk.lslFile" value="E:\workFiles\TC367\TC367\workspace\last364\Appl\newTc364.lsl" valueType="string"/>
+								<option id="com.tasking.ctc.lk.lslFile.126693106" name="Linker script file:" superClass="com.tasking.ctc.lk.lslFile" value="E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\vLinkGen_Template.lsl" valueType="string"/>
 								<option id="com.tasking.ctc.lk.outputFormat.ihex.280923246" name="Generate Intel Hex format file" superClass="com.tasking.ctc.lk.outputFormat.ihex" value="true" valueType="boolean"/>
 								<option id="com.tasking.ctc.lk.mapFile.mapFile.1524954951" name="Generate map file (.map)" superClass="com.tasking.ctc.lk.mapFile.mapFile" value="false" valueType="boolean"/>
+								<option id="com.tasking.ctc.lk.userProvidedInitCode.1962405070" superClass="com.tasking.ctc.lk.userProvidedInitCode" value="true" valueType="boolean"/>
 								<inputType id="com.tasking.ctc.lkObjInputType.1392396374" name="OBJ" superClass="com.tasking.ctc.lkObjInputType"/>
 								<inputType id="com.tasking.ctc.lkLibInputType.2145697086" name="LIB" superClass="com.tasking.ctc.lkLibInputType"/>
 							</tool>

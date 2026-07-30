@@ -628,13 +628,13 @@
                         <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/MICROSAR/EcuM_swc/Interfaces/EcuM_StateRequest/E_NOT_OK</POSSIBLE-ERROR-REF>
                       </POSSIBLE-ERROR-REFS>
                     </CLIENT-SERVER-OPERATION>
-                    <CLIENT-SERVER-OPERATION UUID="cf86ee81-48ff-4015-b5ce-42eda8d6f4f9">
+                    <CLIENT-SERVER-OPERATION UUID="d3078fe2-b034-4579-b393-233de636027b">
                       <SHORT-NAME>GetStateWrapper</SHORT-NAME>
                       <DESC>
                         <L-2 L="FOR-ALL">Returns the current module state of the ECUM.</L-2>
                       </DESC>
                       <ARGUMENTS>
-                        <ARGUMENT-DATA-PROTOTYPE UUID="80347818-a601-45a1-ba1a-1b07b436d5cf">
+                        <ARGUMENT-DATA-PROTOTYPE UUID="7e9bd741-36e2-4f6a-8736-2133ef60d3c4">
                           <SHORT-NAME>state</SHORT-NAME>
                           <DESC>
                             <L-2 L="FOR-ALL">Reference to the actually EcuM state.</L-2>
@@ -792,7 +792,7 @@
                             <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/EcuM_swc/Interfaces/EcuM_StateRequest/RequestRUN</TARGET-PROVIDED-OPERATION-REF>
                           </OPERATION-IREF>
                         </OPERATION-INVOKED-EVENT>
-                        <OPERATION-INVOKED-EVENT UUID="25552d65-c0f0-4126-a2c6-2f24894d4ab5">
+                        <OPERATION-INVOKED-EVENT UUID="2e0b4912-5f4b-4a58-a134-49c1d20240e0">
                           <SHORT-NAME>OpEventGetStateWrapper_GetStateWrapper_StateRequest_EcuMConf_EcuMFixedUserConfig_EcuMFixedUserConfig</SHORT-NAME>
                           <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/GetStateWrapper</START-ON-EVENT-REF>
                           <OPERATION-IREF>
@@ -929,7 +929,7 @@
                           <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
                           <SYMBOL>EcuM_RequestRUN</SYMBOL>
                         </RUNNABLE-ENTITY>
-                        <RUNNABLE-ENTITY UUID="86c1ef65-efa1-41ff-9590-73da13d86b8f">
+                        <RUNNABLE-ENTITY UUID="cbb3d27e-6ef5-405d-b673-7845015687c2">
                           <SHORT-NAME>GetStateWrapper</SHORT-NAME>
                           <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
                           <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>

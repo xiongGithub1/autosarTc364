@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Application_Lcfg.c
- *   Generation Time: 2026-07-29 14:39:05
+ *   Generation Time: 2026-07-30 20:09:42
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -101,6 +101,16 @@ OS_LOCAL VAR(Os_AppType, OS_VAR_NOINIT) OsCfg_App_SystemApplication_OsCore0_Dyn;
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
+#define OS_START_SEC_CORE1_VAR_NOINIT_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! Dynamic application data: OsApplication_OsCore1 */
+OS_LOCAL VAR(Os_AppType, OS_VAR_NOINIT) OsCfg_App_OsApplication_OsCore1_Dyn;
+
+#define OS_STOP_SEC_CORE1_VAR_NOINIT_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
 /**********************************************************************************************************************
  *  GLOBAL DATA
  *********************************************************************************************************************/
@@ -115,11 +125,9 @@ OS_LOCAL VAR(Os_AppType, OS_VAR_NOINIT) OsCfg_App_SystemApplication_OsCore0_Dyn;
 /*! Object reference table for application alarms: SystemApplication_OsCore0 */
 OS_LOCAL CONST(Os_AlarmConfigRefType, OS_CONST) OsCfg_App_SystemApplication_OsCore0_AlarmRefs[OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_ALARMS + 1u] =
 {
-  OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE2_Default_BSW_ASync_Task_0_10ms),
-  OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE2_Default_BSW_ASync_Task_0_20ms),
+  OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_10ms),
+  OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_20ms),
   OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx),
-  OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_MotorCdd_MotorCDDMainFunction),
-  OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_MotorControll_MotorControll_MainFunction),
   OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic1000ms),
   OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic10ms),
   OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic1ms),
@@ -152,7 +160,6 @@ OS_LOCAL CONST(Os_IsrConfigRefType, OS_CONST) OsCfg_App_SystemApplication_OsCore
 /*! Object reference table for application category 1 (EXTERNAL) ISRs: SystemApplication_OsCore0 */
 OS_LOCAL CONST(Os_IsrCat1ConfigRefType, OS_CONST) OsCfg_App_SystemApplication_OsCore0_Cat1IsrRefs[OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_CAT1ISRS + 1u] =
 {
-  (Os_IsrCat1ConfigRefType) &OsCfg_Cat1Isr_AdcIsr_G0,
   NULL_PTR
 };
 
@@ -167,11 +174,10 @@ OS_LOCAL CONST(Os_TaskConfigRefType, OS_CONST) OsCfg_App_SystemApplication_OsCor
 {
   OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_Default_Appl_Init_Task),
   OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_Default_Appl_Task),
-  OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_Default_BSW_ASync_Task),
+  OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_Default_BSW_ASync_Task_10ms),
   OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_Default_Init_Task),
   OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_Default_Init_Task_Trusted),
   OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_IdleTask_OsCore0),
-  OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_MotorTask),
   NULL_PTR
 };
 
@@ -218,12 +224,112 @@ CONST(Os_AppConfigType, OS_CONST) OsCfg_App_SystemApplication_OsCore0 =
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
+#define OS_START_SEC_CORE1_CONST_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! Object reference table for application alarms: OsApplication_OsCore1 */
+OS_LOCAL CONST(Os_AlarmConfigRefType, OS_CONST) OsCfg_App_OsApplication_OsCore1_AlarmRefs[OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_ALARMS + 1u] =
+{
+  OS_ALARM_CASTCONFIG_ALARMACTIVATETASK_2_ALARM(OsCfg_Alarm_Rte_Al_TE2_EcuM_EcuM_MainFunction),
+  OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE_MotorTask_0_1ms),
+  NULL_PTR
+};
+
+/*! Object reference table for application counters: OsApplication_OsCore1 */
+OS_LOCAL CONST(Os_CounterConfigRefType, OS_CONST) OsCfg_App_OsApplication_OsCore1_CounterRefs[OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_COUNTERS + 1u] =
+{
+  OS_COUNTER_CASTCONFIG_TIMERPFRT_2_COUNTER(OsCfg_Counter_SystemTimer1),
+  NULL_PTR
+};
+
+/*! Object reference table for application hooks: OsApplication_OsCore1 */
+OS_LOCAL CONST(Os_HookConfigRefType, OS_CONST) OsCfg_App_OsApplication_OsCore1_HookRefs[OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_HOOKS + 1u] =
+{
+  NULL_PTR
+};
+
+/*! Object reference table for application ISRs: OsApplication_OsCore1 */
+OS_LOCAL CONST(Os_IsrConfigRefType, OS_CONST) OsCfg_App_OsApplication_OsCore1_IsrRefs[OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_ISRS + 1u] =
+{
+  OS_TIMER_CASTCONFIG_TIMERISR_2_ISR(OsCfg_Isr_CounterIsr_SystemTimer1),
+  NULL_PTR
+};
+
+/*! Object reference table for application category 1 (EXTERNAL) ISRs: OsApplication_OsCore1 */
+OS_LOCAL CONST(Os_IsrCat1ConfigRefType, OS_CONST) OsCfg_App_OsApplication_OsCore1_Cat1IsrRefs[OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_CAT1ISRS + 1u] =
+{
+  (Os_IsrCat1ConfigRefType) &OsCfg_Cat1Isr_AdcIsr_G0,
+  NULL_PTR
+};
+
+/*! Object reference table for application schedule tables: OsApplication_OsCore1 */
+OS_LOCAL CONST(Os_SchTConfigRefType, OS_CONST) OsCfg_App_OsApplication_OsCore1_SchTRefs[OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_SCHTS + 1u] =
+{
+  NULL_PTR
+};
+
+/*! Object reference table for application tasks: OsApplication_OsCore1 */
+OS_LOCAL CONST(Os_TaskConfigRefType, OS_CONST) OsCfg_App_OsApplication_OsCore1_TaskRefs[OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_TASKS + 1u] =
+{
+  OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_BswCore1Task),
+  OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_Default_Init_Task_Core1),
+  OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_Default_Init_Task_Core1_Trusted),
+  OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_Default_MotorInitTask),
+  OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_IdleTask_OsCore_1),
+  OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_MotorTask),
+  NULL_PTR
+};
+
+/*! Object reference table for application trusted functions: OsApplication_OsCore1 */
+OS_LOCAL CONST(Os_ServiceConfigRefType, OS_CONST) OsCfg_App_OsApplication_OsCore1_ServiceRefs[OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_SERVICES + 1u] =
+{
+  NULL_PTR
+};
+
+/*! Application configuration data: OsApplication_OsCore1 */
+CONST(Os_AppConfigType, OS_CONST) OsCfg_App_OsApplication_OsCore1 =
+{
+  /* .Dyn                  = */ &OsCfg_App_OsApplication_OsCore1_Dyn,
+  /* .Core                 = */ &OsCfg_Core_OsCore1,
+  /* .AccessRightId        = */ OS_APPID2MASK(OsApplication_OsCore1),
+  /* .TaskRefs             = */ OsCfg_App_OsApplication_OsCore1_TaskRefs,
+  /* .TaskCount            = */ (Os_ObjIdxType)OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_TASKS,
+  /* .IsrCat2Refs          = */ OsCfg_App_OsApplication_OsCore1_IsrRefs,
+  /* .IsrCat2Count         = */ (Os_ObjIdxType)OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_ISRS,
+  /* .IsrCat1Refs          = */ OsCfg_App_OsApplication_OsCore1_Cat1IsrRefs,
+  /* .IsrCat1Count         = */ (Os_ObjIdxType)OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_CAT1ISRS,
+  /* .CounterRefs          = */ OsCfg_App_OsApplication_OsCore1_CounterRefs,
+  /* .CounterCount         = */ (Os_ObjIdxType)OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_COUNTERS,
+  /* .AlarmRefs            = */ OsCfg_App_OsApplication_OsCore1_AlarmRefs,
+  /* .AlarmCount           = */ (Os_ObjIdxType)OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_ALARMS,
+  /* .SchTRefs             = */ OsCfg_App_OsApplication_OsCore1_SchTRefs,
+  /* .SchTCount            = */ (Os_ObjIdxType)OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_SCHTS,
+  /* .ServiceFunctions     = */ OsCfg_App_OsApplication_OsCore1_ServiceRefs,
+  /* .ServiceFunctionCount = */ (Os_ObjIdxType)OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_SERVICES,
+  /* .StartupHookRef       = */ NULL_PTR,
+  /* .ShutdownHookRef      = */ NULL_PTR,
+  /* .ErrorHookRef         = */ NULL_PTR,
+  /* .HookRefs             = */ OsCfg_App_OsApplication_OsCore1_HookRefs,
+  /* .HookCount            = */ (Os_ObjIdxType)OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_HOOKS,
+  /* .TraceAppl            = */ NULL_PTR,
+  /* .RestartTask          = */ NULL_PTR,
+  /* .IsTrusted            = */ TRUE,
+  /* .IsPriveleged         = */ TRUE,
+  /* .HasTimingProtectionDelay = */ FALSE,
+  /* .Id                   = */ OsApplication_OsCore1
+};
+
+#define OS_STOP_SEC_CORE1_CONST_UNSPECIFIED
+#include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
 #define OS_START_SEC_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 /*! Object reference table for applications. */
 CONSTP2CONST(Os_AppConfigType, OS_CONST, OS_CONST) OsCfg_AppRefs[OS_APPID_COUNT + 1] =   /* PRQA S 4521 */ /* MD_Os_Rule10.1_4521 */
 {
+  &OsCfg_App_OsApplication_OsCore1,
   &OsCfg_App_SystemApplication_OsCore0,
   NULL_PTR
 };
