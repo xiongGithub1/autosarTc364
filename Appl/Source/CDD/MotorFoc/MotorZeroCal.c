@@ -1,7 +1,6 @@
 #include "MotorZeroCal.h"
 #include "MotorMode.h"
 #include "MotorControll.h"
-#include "MotorFoc_OpenLoop.h"
 #include "MotorFoc_CurrentLoop.h"
 #include "MotorCdd_Adc.h"
 #include "CDD/TLE5012/Tle5012bd_Driver.h"
@@ -35,10 +34,6 @@ volatile uint8 MotorZeroCal_NvLastOp = 0U;
 volatile uint8 MotorZeroCal_NvLastResult = (uint8)NVM_REQ_NOT_OK;
 volatile uint8 MotorZeroCal_NvLastApiRet = (uint8)E_NOT_OK;
 volatile uint32 MotorZeroCal_NvPendingTicks = 0UL;
-static uint8 MotorZeroCal_SavedOpenLoopRampEnable = 1U;
-static uint8 MotorZeroCal_SavedOpenLoopControlMode = MOTORFOC_OPENLOOP_CONTROL_CURRENT;
-static float32 MotorZeroCal_SavedOpenLoopFixedAngleDeg = 0.0F;
-static uint8 MotorZeroCal_OpenLoopConfigSaved = 0U;
 /* Timed-cal path: NvM write result drives SAVING → DONE/FAULT. */
 static uint8 MotorZeroCal_TimedNvWriteActive = 0U;
 /* 1 = Init wants one boot ReadBlock after Fee becomes IDLE. */
@@ -47,6 +42,7 @@ static uint8 MotorZeroCal_NvBootReadRequest = 0U;
 extern volatile MotorMode_Type MotorControll_MotorModeCmd;
 
 volatile MotorZeroCal_StateType MotorZeroCal_State = MOTORZEROCAL_STATE_IDLE;
+volatile MotorZeroCal_StageType MotorZeroCal_Stage = MOTORZEROCAL_STAGE_IDLE;
 volatile uint8 MotorZeroCal_Calibrated = 0U;
 volatile uint8 MotorZeroCal_RotorZeroInitialized = 0U;
 volatile uint16 MotorZeroCal_AngBase = 0U;
@@ -60,6 +56,8 @@ volatile uint8 MotorZeroCal_StartRejectReason = MOTORZEROCAL_START_REJECT_NONE;
 volatile uint8 MotorZeroCal_FaultReason = MOTORZEROCAL_FAULT_NONE;
 volatile uint32 MotorZeroCal_AlignWaitMs = 0UL;
 volatile uint8 MotorZeroCal_NvDirty = 0U;
+volatile uint8 MotorZeroCal_DflashValid = 0U;
+volatile uint8 MotorZeroCal_DflashReadComplete = 0U;
 volatile uint8 MotorZeroCal_NvSaveRequest = 0U;
 
 static uint8 MotorZeroCal_AngBasePendingApply = 0U;
@@ -76,6 +74,7 @@ static void MotorZeroCal_EnterFault(uint8 reason)
 {
   MotorZeroCal_FaultReason = reason;
   MotorZeroCal_State = MOTORZEROCAL_STATE_FAULT;
+  MotorZeroCal_Stage = MOTORZEROCAL_STAGE_FAULT;
   MotorZeroCal_TimedNvWriteActive = 0U;
 }
 
@@ -130,6 +129,7 @@ static void MotorZeroCal_LoadFromStorage(void)
   if (MotorZeroCal_Storage.magic == MOTORZEROCAL_STORAGE_MAGIC)
   {
     MotorZeroCal_SetCalibratedFlag(1U);
+    MotorZeroCal_DflashValid = 1U;
     MotorZeroCal_NvDirty = 0U;
     MotorZeroCal_AngBase = MotorZeroCal_Storage.angBase;
     MotorZeroCal_QueueAngBaseApply(MotorZeroCal_AngBase);
@@ -137,6 +137,7 @@ static void MotorZeroCal_LoadFromStorage(void)
   else
   {
     MotorZeroCal_SetCalibratedFlag(0U);
+    MotorZeroCal_DflashValid = 0U;
     MotorZeroCal_NvDirty = 0U;
     MotorZeroCal_AngBase = 0U;
     Tle5012bd_Sensor.ANG_BASE = 0U;
@@ -144,11 +145,14 @@ static void MotorZeroCal_LoadFromStorage(void)
     tle5012b_read_all();
 #endif
   }
+  MotorZeroCal_DflashReadComplete = 1U;
 }
+
 
 static void MotorZeroCal_SaveToStorage(void)
 {
-  MotorZeroCal_Storage.magic = MOTORZEROCAL_STORAGE_MAGIC;
+  MotorZeroCal_Storage.magic = (MotorZeroCal_DflashValid != 0U) ?
+      MOTORZEROCAL_STORAGE_MAGIC : 0U;
   MotorZeroCal_Storage.angBase = MotorZeroCal_AngBase;
   MotorZeroCal_NvDirty = 1U;
 }
@@ -224,7 +228,6 @@ void MotorZeroCal_SaveToFlash(void)
   if (MotorZeroCal_State != MOTORZEROCAL_STATE_SAVING)
   {
     MotorZeroCal_State = MOTORZEROCAL_STATE_SAVING;
-    MotorZeroCal_ElapsedMs = 0UL;
   }
 }
 
@@ -276,7 +279,6 @@ static void MotorZeroCal_ProcessSaveRequest(void)
   MotorZeroCal_NvSaveRequest = 0U;
   MotorZeroCal_TimedNvWriteActive = 1U;
   MotorZeroCal_State = MOTORZEROCAL_STATE_SAVING;
-  MotorZeroCal_ElapsedMs = 0UL;
   MotorZeroCal_FaultReason = MOTORZEROCAL_FAULT_NONE;
 
   if (MotorZeroCal_RequestNvWrite() == 0U)
@@ -352,6 +354,7 @@ static void MotorZeroCal_ProcessNvJobs(void)
             if (MotorZeroCal_State == MOTORZEROCAL_STATE_SAVING)
             {
               MotorZeroCal_State = MOTORZEROCAL_STATE_DONE;
+              MotorZeroCal_Stage = MOTORZEROCAL_STAGE_COMPLETE;
             }
           }
           else
@@ -374,34 +377,6 @@ static void MotorZeroCal_ProcessNvJobs(void)
         MotorZeroCal_NvLastResult = (uint8)requestResult;
       }
     }
-  }
-}
-
-static void MotorZeroCal_PrepareOpenLoopAlign(void)
-{
-  if (MotorZeroCal_OpenLoopConfigSaved == 0U)
-  {
-    MotorZeroCal_SavedOpenLoopRampEnable = MotorFoc_OpenLoop_RampEnable;
-    MotorZeroCal_SavedOpenLoopControlMode = MotorFoc_OpenLoop_ControlMode;
-    MotorZeroCal_SavedOpenLoopFixedAngleDeg = MotorFoc_OpenLoop_FixedAngleDeg;
-    MotorZeroCal_OpenLoopConfigSaved = 1U;
-  }
-
-  MotorFoc_OpenLoop_Reset();
-  MotorFoc_OpenLoop_RampEnable = 0U;
-  MotorFoc_OpenLoop_FixedAngleDeg = MOTORZEROCAL_ALIGN_ANGLE_DEG;
-  MotorFoc_OpenLoop_ControlMode = MOTORFOC_OPENLOOP_CONTROL_CURRENT;
-  MotorFoc_OpenLoop_FastLoopStep();
-}
-
-static void MotorZeroCal_RestoreOpenLoopConfig(void)
-{
-  if (MotorZeroCal_OpenLoopConfigSaved != 0U)
-  {
-    MotorFoc_OpenLoop_RampEnable = MotorZeroCal_SavedOpenLoopRampEnable;
-    MotorFoc_OpenLoop_ControlMode = MotorZeroCal_SavedOpenLoopControlMode;
-    MotorFoc_OpenLoop_FixedAngleDeg = MotorZeroCal_SavedOpenLoopFixedAngleDeg;
-    MotorZeroCal_OpenLoopConfigSaved = 0U;
   }
 }
 
@@ -483,8 +458,10 @@ static void MotorZeroCal_OnAlignSuccess(void)
 {
   /* Align OK: RAM first, then queue DFlash write (NvM_WriteBlock in StartApp 1 ms). */
   MotorZeroCal_AngBase = Tle5012bd_Sensor.ANG_BASE;
-  MotorZeroCal_SaveToStorage();
   MotorZeroCal_SetCalibratedFlag(1U);
+  MotorZeroCal_DflashValid = 1U;
+  MotorZeroCal_Stage = MOTORZEROCAL_STAGE_SAVE_DFLASH;
+  MotorZeroCal_SaveToStorage();
   MotorZeroCal_TimerMs = 0U;
   MotorZeroCal_RetryCount = 0U;
   MotorZeroCal_TimedNvWriteActive = 0U;
@@ -511,6 +488,7 @@ static void MotorZeroCal_RunCalibrationStep(void)
 
   if (MotorZeroCal_IsAlignCurrentReached() == 0U)
   {
+    MotorZeroCal_Stage = MOTORZEROCAL_STAGE_ALIGN_RAMP;
     /* Id is still ramping in the 10 kHz FOC loop. */
     MotorZeroCal_TimerMs = 0U;
     if (MotorControll_IsOutputEnabled() != 0U)
@@ -521,6 +499,7 @@ static void MotorZeroCal_RunCalibrationStep(void)
   }
 
   MotorZeroCal_AlignWaitMs = 0UL;
+  MotorZeroCal_Stage = MOTORZEROCAL_STAGE_ALIGN_HOLD;
   MotorZeroCal_TimerMs++;
 
   /* Hold the first alignment for 1.5 s; retries only need a short settle. */
@@ -533,6 +512,7 @@ static void MotorZeroCal_RunCalibrationStep(void)
     return;
   }
 
+  MotorZeroCal_Stage = MOTORZEROCAL_STAGE_READ_ANGLE;
   /* Read the aligned encoder position. */
   tle5012b_read_angle(&Tle5012bd_Sensor);
   angle = Tle5012bd_Sensor.Angle;
@@ -543,6 +523,7 @@ static void MotorZeroCal_RunCalibrationStep(void)
     return;
   }
 
+  MotorZeroCal_Stage = MOTORZEROCAL_STAGE_APPLY_OFFSET;
   /* The rotor is aligned, but the encoder origin is not: update MOD_3.ANG_BASE. */
   MotorZeroCal_ChangeAngleBasicFromAval();
   MotorZeroCal_RetryCount++;
@@ -561,26 +542,12 @@ static void MotorZeroCal_RunCalibrationStep(void)
 
 static void MotorZeroCal_CheckTotalTimeout(void)
 {
-  if (MotorZeroCal_State == MOTORZEROCAL_STATE_RUNNING)
+  if ((MotorZeroCal_State == MOTORZEROCAL_STATE_RUNNING) ||
+      (MotorZeroCal_State == MOTORZEROCAL_STATE_SAVING))
   {
     MotorZeroCal_ElapsedMs++;
     if (MotorZeroCal_ElapsedMs > MOTORZEROCAL_TOTAL_TIMEOUT_MS)
     {
-      MotorZeroCal_SetCalibratedFlag(0U);
-      MotorZeroCal_EnterFault(MOTORZEROCAL_FAULT_TIMEOUT);
-    }
-    return;
-  }
-
-  /* Flash save (PWM already off): allow longer Fee GC erase, still bound. */
-  if (MotorZeroCal_State == MOTORZEROCAL_STATE_SAVING)
-  {
-    MotorZeroCal_ElapsedMs++;
-    if (MotorZeroCal_ElapsedMs > (MOTORZEROCAL_TOTAL_TIMEOUT_MS * 4U))
-    {
-      MotorZeroCal_SetCalibratedFlag(1U);
-      MotorZeroCal_NvDirty = 1U;
-      MotorZeroCal_TimedNvWriteActive = 0U;
       MotorZeroCal_EnterFault(MOTORZEROCAL_FAULT_TIMEOUT);
     }
   }
@@ -589,6 +556,7 @@ static void MotorZeroCal_CheckTotalTimeout(void)
 void MotorZeroCal_Init(void)
 {
   MotorZeroCal_State = MOTORZEROCAL_STATE_IDLE;
+  MotorZeroCal_Stage = MOTORZEROCAL_STAGE_IDLE;
   MotorZeroCal_TimerMs = 0U;
   MotorZeroCal_ElapsedMs = 0UL;
   MotorZeroCal_RetryCount = 0U;
@@ -607,6 +575,8 @@ void MotorZeroCal_Init(void)
   MotorZeroCal_NvLastApiRet = (uint8)E_NOT_OK;
   MotorZeroCal_NvPendingTicks = 0UL;
   MotorZeroCal_NvDirty = 0U;
+  MotorZeroCal_DflashValid = 0U;
+  MotorZeroCal_DflashReadComplete = 0U;
   MotorZeroCal_NvSaveRequest = 0U;
   MotorZeroCal_TimedNvWriteActive = 0U;
   MotorZeroCal_SetCalibratedFlag(0U);
@@ -625,6 +595,12 @@ uint8 MotorZeroCal_CanStart(void)
   float32 minVdc;
 
   MotorZeroCal_StartRejectReason = MOTORZEROCAL_START_REJECT_NONE;
+
+  if (MotorZeroCal_DflashReadComplete == 0U)
+  {
+    MotorZeroCal_StartRejectReason = MOTORZEROCAL_START_REJECT_NVM_NOT_READY;
+    return 0U;
+  }
 
   if ((MotorZeroCal_State == MOTORZEROCAL_STATE_RUNNING) ||
       (MotorZeroCal_State == MOTORZEROCAL_STATE_SAVING))
@@ -666,15 +642,15 @@ void MotorZeroCal_Start(void)
   MotorZeroCal_StartRejectReason = MOTORZEROCAL_START_REJECT_NONE;
   MotorZeroCal_FaultReason = MOTORZEROCAL_FAULT_NONE;
   MotorZeroCal_TimedNvWriteActive = 0U;
-  MotorZeroCal_PrepareOpenLoopAlign();
+  MotorZeroCal_Stage = MOTORZEROCAL_STAGE_ALIGN_RAMP;
   MotorZeroCal_State = MOTORZEROCAL_STATE_RUNNING;
 }
 
 void MotorZeroCal_Erase(void)
 {
-  MotorZeroCal_RestoreOpenLoopConfig();
   MotorZeroCal_Storage.magic = 0U;
   MotorZeroCal_Storage.angBase = 0U;
+  MotorZeroCal_DflashValid = 0U;
   MotorZeroCal_SetCalibratedFlag(0U);
   MotorZeroCal_AngBase = 0U;
   MotorZeroCal_IdRefA = 0.0F;
@@ -685,13 +661,20 @@ void MotorZeroCal_Erase(void)
   MotorZeroCal_RetryCount = 0U;
   MotorZeroCal_FaultReason = MOTORZEROCAL_FAULT_NONE;
   MotorZeroCal_TimedNvWriteActive = 0U;
-  /* RAM cleared; persist erase with MOTOR_MODE_CALIBRATION_SAVE / NvSaveRequest. */
-  MotorZeroCal_NvDirty = 1U;
+  MotorZeroCal_Stage = MOTORZEROCAL_STAGE_SAVE_DFLASH;
+  /* Persist cleared valid marker and ANG_BASE immediately. */
+  MotorZeroCal_SaveToFlash();
 }
 
 uint8 MotorZeroCal_IsRotorZeroInitialized(void)
 {
   return MotorZeroCal_Calibrated;
+}
+
+uint8 MotorZeroCal_IsCalibrationRequired(void)
+{
+  return ((MotorZeroCal_DflashReadComplete != 0U) &&
+          (MotorZeroCal_DflashValid == 0U)) ? 1U : 0U;
 }
 
 uint8 MotorZeroCal_UseForcedAngle(void)
@@ -716,16 +699,13 @@ float32 MotorZeroCal_GetAlignCurrentA(void)
 
 float32 MotorZeroCal_GetForcedAngleRad(void)
 {
-  return MotorFoc_OpenLoop_GetForcedAngleRad();
+  /* Zero calibration always aligns at a fixed electrical angle. */
+  return MOTORZEROCAL_ALIGN_ANGLE_DEG * 0.01745329251994329577F;
 }
 
 void MotorZeroCal_FastLoopStep(void)
 {
-  if ((MotorZeroCal_State == MOTORZEROCAL_STATE_RUNNING) ||
-      (MotorZeroCal_State == MOTORZEROCAL_STATE_SAVING))
-  {
-    MotorFoc_OpenLoop_FastLoopStep();
-  }
+  /* The calibration path owns a fixed angle and has no open-loop state to step. */
 }
 
 void MotorZeroCal_RampAlignCurrentStep(void)
@@ -766,7 +746,6 @@ void MotorZeroCal_MainFunction(void)
 
   if (MotorZeroCal_State == MOTORZEROCAL_STATE_DONE)
   {
-    MotorZeroCal_RestoreOpenLoopConfig();
     /* Align+Flash done → STOP. */
     if (MotorControll_MotorModeCmd == MOTOR_MODE_CALIBRATION)
     {
@@ -776,7 +755,6 @@ void MotorZeroCal_MainFunction(void)
   }
   else if (MotorZeroCal_State == MOTORZEROCAL_STATE_FAULT)
   {
-    MotorZeroCal_RestoreOpenLoopConfig();
     MotorControll_MotorModeCmd = MOTOR_MODE_IDLE;
     MotorZeroCal_State = MOTORZEROCAL_STATE_IDLE;
   }

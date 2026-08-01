@@ -303,7 +303,6 @@ void MotorCdd_FocFastLoop(void)
   {
     case MOTOR_MODE_CALIBRATION:
       MotorZeroCal_FastLoopStep();
-      MotorFoc_OpenLoop_UpdateControlStage();
       if ((Tle9180_Driver_GetState() == TLE9180_DRV_STATE_READY) &&
           (MotorCdd_AdcIsCurrentOffsetReady() != 0U) &&
           (MotorControll_IsOutputEnabled() != 0U) &&
@@ -318,10 +317,10 @@ void MotorCdd_FocFastLoop(void)
       break;
 
     case MOTOR_MODE_OPEN_LOOP:
-      MotorFoc_OpenLoop_FastLoopStep();
-      MotorFoc_OpenLoop_UpdateControlStage();
-      MotorCdd_RunFocCurrentControl(idRef,
-                                    iqRef,
+      /* The open-loop module owns startup sequencing and reference ramps. */
+      MotorFoc_OpenLoop_FastLoopStep(idRef, iqRef);
+      MotorCdd_RunFocCurrentControl(MotorFoc_OpenLoop_GetIdRefA(),
+                                    MotorFoc_OpenLoop_GetIqRefA(),
                                     1U,
                                     MotorFoc_OpenLoop_GetForcedAngleRad());
       break;

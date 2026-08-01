@@ -2,46 +2,44 @@
 
 #define MOTORFOC_OL_TWO_PI                     (6.2831853071795864769F)
 #define MOTORFOC_OL_DEG_TO_RAD                 (0.01745329251994329577F)
-#define MOTORFOC_OL_VOLTAGE_LIMIT_V_DEFAULT    (1.0F)
-#define MOTORFOC_OL_VOLTAGE_RAMP_V_DEFAULT     (0.001F)
-#define MOTORFOC_OL_VOLTAGE_TO_CURRENT_TICKS_DEFAULT  (20000UL)
+#define MOTORFOC_OL_TARGET_ANGLE_STEP_DEFAULT  (1U)
+#define MOTORFOC_OL_STEP_DIVIDER_DEFAULT        (1U)
+/* 300 ms at the current 10 kHz PWM fast-loop rate. */
+#define MOTORFOC_OL_ALIGN_HOLD_TICKS_DEFAULT    (3000U)
+/* Add one raw-angle step every 10 ms while accelerating. */
+#define MOTORFOC_OL_ACCEL_TICKS_DEFAULT         (100U)
+#define MOTORFOC_OL_ALIGN_CURRENT_A_DEFAULT     (1.0F)
+#define MOTORFOC_OL_CURRENT_RAMP_STEP_A_DEFAULT (0.002F)
 
-volatile uint8 MotorFoc_OpenLoop_RampEnable = 1U;
-volatile uint8 MotorFoc_OpenLoop_ControlMode = MOTORFOC_OPENLOOP_CONTROL_CURRENT;
-volatile uint8 MotorFoc_OpenLoop_ActiveControlMode = MOTORFOC_OPENLOOP_CONTROL_CURRENT;
 volatile uint8 MotorFoc_OpenLoop_Direction = 0U;
-volatile uint16 MotorFoc_OpenLoop_AngleStep = MOTORFOC_OL_DEFAULT_ANGLE_STEP;
-volatile uint16 MotorFoc_OpenLoop_StepDivider = MOTORFOC_OL_DEFAULT_STEP_DIVIDER;
+volatile uint16 MotorFoc_OpenLoop_TargetAngleStep = MOTORFOC_OL_TARGET_ANGLE_STEP_DEFAULT;
+volatile uint16 MotorFoc_OpenLoop_StepDivider = MOTORFOC_OL_STEP_DIVIDER_DEFAULT;
+volatile uint16 MotorFoc_OpenLoop_AlignHoldTicks = MOTORFOC_OL_ALIGN_HOLD_TICKS_DEFAULT;
+volatile uint16 MotorFoc_OpenLoop_AccelerationTicks = MOTORFOC_OL_ACCEL_TICKS_DEFAULT;
+volatile float32 MotorFoc_OpenLoop_AlignAngleDeg = 0.0F;
+volatile float32 MotorFoc_OpenLoop_AlignCurrentA = MOTORFOC_OL_ALIGN_CURRENT_A_DEFAULT;
+volatile float32 MotorFoc_OpenLoop_CurrentRampStepA = MOTORFOC_OL_CURRENT_RAMP_STEP_A_DEFAULT;
+
+volatile MotorFoc_OpenLoopStageType MotorFoc_OpenLoop_Stage = MOTORFOC_OPENLOOP_STAGE_ALIGN_RAMP;
 volatile uint32 MotorFoc_OpenLoop_StageCounter = 0UL;
-volatile uint32 MotorFoc_OpenLoop_VoltageToCurrentTicks =
-    MOTORFOC_OL_VOLTAGE_TO_CURRENT_TICKS_DEFAULT;
 volatile uint16 MotorFoc_OpenLoop_AngleRaw = 0U;
+volatile uint16 MotorFoc_OpenLoop_ActiveAngleStep = 0U;
 volatile float32 MotorFoc_OpenLoop_ForcedAngleRad = 0.0F;
-volatile float32 MotorFoc_OpenLoop_FixedAngleDeg = 0.0F;
-volatile float32 MotorFoc_OpenLoop_VdRefCmd = 0.0F;
-volatile float32 MotorFoc_OpenLoop_VqRefCmd = 0.0F;
-volatile float32 MotorFoc_OpenLoop_VdRefOut = 0.0F;
-volatile float32 MotorFoc_OpenLoop_VqRefOut = 0.0F;
-volatile float32 MotorFoc_OpenLoop_VoltageLimitV = MOTORFOC_OL_VOLTAGE_LIMIT_V_DEFAULT;
-volatile float32 MotorFoc_OpenLoop_VoltageRampV = MOTORFOC_OL_VOLTAGE_RAMP_V_DEFAULT;
+volatile float32 MotorFoc_OpenLoop_IdRefOut = 0.0F;
+volatile float32 MotorFoc_OpenLoop_IqRefOut = 0.0F;
 
-static uint16 MotorFoc_OpenLoop_TickDivider = 0U;
+static uint16 MotorFoc_OpenLoop_StepDividerCounter = 0U;
+static uint16 MotorFoc_OpenLoop_AccelerationCounter = 0U;
 
-static float32 MotorFoc_OpenLoop_ClampFloat(float32 value, float32 min, float32 max)
+static float32 MotorFoc_OpenLoop_Abs(float32 value)
 {
-  if (value > max)
-  {
-    return max;
-  }
-  if (value < min)
-  {
-    return min;
-  }
-  return value;
+  return (value < 0.0F) ? -value : value;
 }
 
-static float32 MotorFoc_OpenLoop_SlewFloat(float32 current, float32 target, float32 step)
+/* Slew references in the fast loop so reference changes are deterministic. */
+static float32 MotorFoc_OpenLoop_Slew(float32 current, float32 target, float32 step)
 {
+  step = MotorFoc_OpenLoop_Abs(step);
   if (step <= 0.0F)
   {
     return target;
@@ -57,171 +55,165 @@ static float32 MotorFoc_OpenLoop_SlewFloat(float32 current, float32 target, floa
   return target;
 }
 
-static void MotorFoc_OpenLoop_UpdateForcedAngleRad(void)
+static void MotorFoc_OpenLoop_UpdateAngleRad(void)
 {
   MotorFoc_OpenLoop_ForcedAngleRad =
       (float32)MotorFoc_OpenLoop_AngleRaw * MOTORFOC_OL_ANGLE_RAW_TO_RAD;
 }
 
-static void MotorFoc_OpenLoop_ApplyFixedAngle(void)
+static void MotorFoc_OpenLoop_SetAlignAngle(void)
 {
-  float32 angleDeg;
-  float32 angleRad;
+  float32 angleDeg = MotorFoc_OpenLoop_AlignAngleDeg;
   uint32 angleRaw;
 
-  angleDeg = MotorFoc_OpenLoop_FixedAngleDeg;
-  if (angleDeg < 0.0F)
+  /* Normalize a UDE-entered angle before converting it to the table index. */
+  while (angleDeg < 0.0F)
   {
-    angleDeg = 0.0F;
+    angleDeg += 360.0F;
   }
-  else if (angleDeg >= 360.0F)
+  while (angleDeg >= 360.0F)
   {
-    angleDeg = 359.99F;
-  }
-  else
-  {
-    /* Valid fixed angle. */
+    angleDeg -= 360.0F;
   }
 
-  angleRad = angleDeg * MOTORFOC_OL_DEG_TO_RAD;
-  angleRaw = (uint32)((angleRad / MOTORFOC_OL_TWO_PI) * 8192.0F);
-  if (angleRaw > MOTORFOC_OL_ANGLE_RAW_MAX)
-  {
-    angleRaw = MOTORFOC_OL_ANGLE_RAW_MAX;
-  }
-
-  MotorFoc_OpenLoop_AngleRaw = (uint16)angleRaw;
-  MotorFoc_OpenLoop_UpdateForcedAngleRad();
+  angleRaw = (uint32)((angleDeg * MOTORFOC_OL_DEG_TO_RAD /
+                       MOTORFOC_OL_TWO_PI) * 8192.0F);
+  MotorFoc_OpenLoop_AngleRaw = (uint16)(angleRaw & MOTORFOC_OL_ANGLE_RAW_MAX);
+  MotorFoc_OpenLoop_UpdateAngleRad();
 }
 
-static void MotorFoc_OpenLoop_StepAngleRaw(void)
+static void MotorFoc_OpenLoop_AdvanceAngle(void)
 {
+  uint16 divider = MotorFoc_OpenLoop_StepDivider;
+  uint16 step = MotorFoc_OpenLoop_ActiveAngleStep;
+
+  if (divider == 0U)
+  {
+    divider = 1U;
+  }
+  MotorFoc_OpenLoop_StepDividerCounter++;
+  if ((MotorFoc_OpenLoop_StepDividerCounter < divider) || (step == 0U))
+  {
+    return;
+  }
+
+  MotorFoc_OpenLoop_StepDividerCounter = 0U;
   if (MotorFoc_OpenLoop_Direction == 0U)
   {
-    if (MotorFoc_OpenLoop_AngleRaw >= MOTORFOC_OL_ANGLE_RAW_MAX)
-    {
-      MotorFoc_OpenLoop_AngleRaw = 0U;
-    }
-    else
-    {
-      MotorFoc_OpenLoop_AngleRaw =
-          (uint16)(MotorFoc_OpenLoop_AngleRaw + MotorFoc_OpenLoop_AngleStep);
-      if (MotorFoc_OpenLoop_AngleRaw > MOTORFOC_OL_ANGLE_RAW_MAX)
-      {
-        MotorFoc_OpenLoop_AngleRaw = 0U;
-      }
-    }
+    MotorFoc_OpenLoop_AngleRaw =
+        (uint16)(((uint32)MotorFoc_OpenLoop_AngleRaw + step) & MOTORFOC_OL_ANGLE_RAW_MAX);
   }
   else
   {
-    if (MotorFoc_OpenLoop_AngleRaw == 0U)
+    MotorFoc_OpenLoop_AngleRaw =
+        (uint16)(((uint32)MotorFoc_OpenLoop_AngleRaw - step) & MOTORFOC_OL_ANGLE_RAW_MAX);
+  }
+  MotorFoc_OpenLoop_UpdateAngleRad();
+}
+
+static void MotorFoc_OpenLoop_Accelerate(void)
+{
+  uint16 target = MotorFoc_OpenLoop_TargetAngleStep;
+  uint16 period = MotorFoc_OpenLoop_AccelerationTicks;
+
+  if (target == 0U)
+  {
+    target = 1U;
+  }
+  if (period == 0U)
+  {
+    period = 1U;
+  }
+
+  if (MotorFoc_OpenLoop_ActiveAngleStep < target)
+  {
+    MotorFoc_OpenLoop_AccelerationCounter++;
+    if (MotorFoc_OpenLoop_AccelerationCounter >= period)
     {
-      MotorFoc_OpenLoop_AngleRaw = MOTORFOC_OL_ANGLE_RAW_MAX;
-    }
-    else if (MotorFoc_OpenLoop_AngleRaw < MotorFoc_OpenLoop_AngleStep)
-    {
-      MotorFoc_OpenLoop_AngleRaw = MOTORFOC_OL_ANGLE_RAW_MAX;
-    }
-    else
-    {
-      MotorFoc_OpenLoop_AngleRaw =
-          (uint16)(MotorFoc_OpenLoop_AngleRaw - MotorFoc_OpenLoop_AngleStep);
+      MotorFoc_OpenLoop_AccelerationCounter = 0U;
+      MotorFoc_OpenLoop_ActiveAngleStep++;
     }
   }
 }
 
 void MotorFoc_OpenLoop_Init(void)
 {
-  MotorFoc_OpenLoop_RampEnable = 1U;
-  MotorFoc_OpenLoop_ControlMode = MOTORFOC_OPENLOOP_CONTROL_CURRENT;
   MotorFoc_OpenLoop_Direction = 0U;
-  MotorFoc_OpenLoop_AngleStep = MOTORFOC_OL_DEFAULT_ANGLE_STEP;
-  MotorFoc_OpenLoop_StepDivider = MOTORFOC_OL_DEFAULT_STEP_DIVIDER;
-  MotorFoc_OpenLoop_VoltageToCurrentTicks = MOTORFOC_OL_VOLTAGE_TO_CURRENT_TICKS_DEFAULT;
-  MotorFoc_OpenLoop_FixedAngleDeg = 0.0F;
-  MotorFoc_OpenLoop_VdRefCmd = 0.0F;
-  MotorFoc_OpenLoop_VqRefCmd = 0.0F;
-  MotorFoc_OpenLoop_VoltageLimitV = MOTORFOC_OL_VOLTAGE_LIMIT_V_DEFAULT;
-  MotorFoc_OpenLoop_VoltageRampV = MOTORFOC_OL_VOLTAGE_RAMP_V_DEFAULT;
+  MotorFoc_OpenLoop_TargetAngleStep = MOTORFOC_OL_TARGET_ANGLE_STEP_DEFAULT;
+  MotorFoc_OpenLoop_StepDivider = MOTORFOC_OL_STEP_DIVIDER_DEFAULT;
+  MotorFoc_OpenLoop_AlignHoldTicks = MOTORFOC_OL_ALIGN_HOLD_TICKS_DEFAULT;
+  MotorFoc_OpenLoop_AccelerationTicks = MOTORFOC_OL_ACCEL_TICKS_DEFAULT;
+  MotorFoc_OpenLoop_AlignAngleDeg = 0.0F;
+  MotorFoc_OpenLoop_AlignCurrentA = MOTORFOC_OL_ALIGN_CURRENT_A_DEFAULT;
+  MotorFoc_OpenLoop_CurrentRampStepA = MOTORFOC_OL_CURRENT_RAMP_STEP_A_DEFAULT;
   MotorFoc_OpenLoop_Reset();
 }
 
 void MotorFoc_OpenLoop_Reset(void)
 {
-  MotorFoc_OpenLoop_AngleRaw = 0U;
-  MotorFoc_OpenLoop_TickDivider = 0U;
+  MotorFoc_OpenLoop_Stage = MOTORFOC_OPENLOOP_STAGE_ALIGN_RAMP;
   MotorFoc_OpenLoop_StageCounter = 0UL;
-  /* Open loop is intentionally forced-angle plus current-loop control. */
-  MotorFoc_OpenLoop_ActiveControlMode = MOTORFOC_OPENLOOP_CONTROL_CURRENT;
-  MotorFoc_OpenLoop_VdRefOut = 0.0F;
-  MotorFoc_OpenLoop_VqRefOut = 0.0F;
-  MotorFoc_OpenLoop_UpdateForcedAngleRad();
+  MotorFoc_OpenLoop_ActiveAngleStep = 0U;
+  MotorFoc_OpenLoop_IdRefOut = 0.0F;
+  MotorFoc_OpenLoop_IqRefOut = 0.0F;
+  MotorFoc_OpenLoop_StepDividerCounter = 0U;
+  MotorFoc_OpenLoop_AccelerationCounter = 0U;
+  MotorFoc_OpenLoop_SetAlignAngle();
 }
 
-void MotorFoc_OpenLoop_FastLoopStep(void)
+void MotorFoc_OpenLoop_FastLoopStep(float32 idRequestA, float32 iqRequestA)
 {
-  if (MotorFoc_OpenLoop_RampEnable == 0U)
+  float32 alignCurrent = MotorFoc_OpenLoop_Abs(MotorFoc_OpenLoop_AlignCurrentA);
+
+  switch (MotorFoc_OpenLoop_Stage)
   {
-    MotorFoc_OpenLoop_ApplyFixedAngle();
-    return;
+    case MOTORFOC_OPENLOOP_STAGE_ALIGN_RAMP:
+      /* Fixed electrical angle and Id establish a known rotor position. */
+      MotorFoc_OpenLoop_IdRefOut = MotorFoc_OpenLoop_Slew(
+          MotorFoc_OpenLoop_IdRefOut, alignCurrent, MotorFoc_OpenLoop_CurrentRampStepA);
+      MotorFoc_OpenLoop_IqRefOut = 0.0F;
+      if (MotorFoc_OpenLoop_IdRefOut >= alignCurrent)
+      {
+        MotorFoc_OpenLoop_Stage = MOTORFOC_OPENLOOP_STAGE_ALIGN_HOLD;
+        MotorFoc_OpenLoop_StageCounter = 0UL;
+      }
+      break;
+
+    case MOTORFOC_OPENLOOP_STAGE_ALIGN_HOLD:
+      /* Hold position: no angle advance and no q-axis torque command. */
+      MotorFoc_OpenLoop_IdRefOut = alignCurrent;
+      MotorFoc_OpenLoop_IqRefOut = 0.0F;
+      MotorFoc_OpenLoop_StageCounter++;
+      if (MotorFoc_OpenLoop_StageCounter >= (uint32)MotorFoc_OpenLoop_AlignHoldTicks)
+      {
+        MotorFoc_OpenLoop_Stage = MOTORFOC_OPENLOOP_STAGE_RAMP;
+        MotorFoc_OpenLoop_StageCounter = 0UL;
+      }
+      break;
+
+    case MOTORFOC_OPENLOOP_STAGE_RAMP:
+      /* Transfer smoothly to commanded currents while accelerating forced angle. */
+      MotorFoc_OpenLoop_IdRefOut = MotorFoc_OpenLoop_Slew(
+          MotorFoc_OpenLoop_IdRefOut, idRequestA, MotorFoc_OpenLoop_CurrentRampStepA);
+      MotorFoc_OpenLoop_IqRefOut = MotorFoc_OpenLoop_Slew(
+          MotorFoc_OpenLoop_IqRefOut, iqRequestA, MotorFoc_OpenLoop_CurrentRampStepA);
+      MotorFoc_OpenLoop_Accelerate();
+      MotorFoc_OpenLoop_AdvanceAngle();
+      if (MotorFoc_OpenLoop_ActiveAngleStep >= MotorFoc_OpenLoop_TargetAngleStep)
+      {
+        MotorFoc_OpenLoop_Stage = MOTORFOC_OPENLOOP_STAGE_RUN;
+      }
+      break;
+
+    case MOTORFOC_OPENLOOP_STAGE_RUN:
+    default:
+      MotorFoc_OpenLoop_IdRefOut = MotorFoc_OpenLoop_Slew(
+          MotorFoc_OpenLoop_IdRefOut, idRequestA, MotorFoc_OpenLoop_CurrentRampStepA);
+      MotorFoc_OpenLoop_IqRefOut = MotorFoc_OpenLoop_Slew(
+          MotorFoc_OpenLoop_IqRefOut, iqRequestA, MotorFoc_OpenLoop_CurrentRampStepA);
+      MotorFoc_OpenLoop_AdvanceAngle();
+      break;
   }
-
-  if (MotorFoc_OpenLoop_StepDivider == 0U)
-  {
-    MotorFoc_OpenLoop_StepDivider = 1U;
-  }
-
-  if (MotorFoc_OpenLoop_AngleStep == 0U)
-  {
-    MotorFoc_OpenLoop_AngleStep = 1U;
-  }
-
-  MotorFoc_OpenLoop_TickDivider++;
-  if (MotorFoc_OpenLoop_TickDivider >= MotorFoc_OpenLoop_StepDivider)
-  {
-    MotorFoc_OpenLoop_TickDivider = 0U;
-    MotorFoc_OpenLoop_StepAngleRaw();
-    MotorFoc_OpenLoop_UpdateForcedAngleRad();
-  }
-}
-
-void MotorFoc_OpenLoop_UpdateControlStage(void)
-{
-  MotorFoc_OpenLoop_ActiveControlMode = MOTORFOC_OPENLOOP_CONTROL_CURRENT;
-  MotorFoc_OpenLoop_StageCounter = 0UL;
-}
-
-void MotorFoc_OpenLoop_UpdateVoltageRefs(void)
-{
-  float32 voltageLimit = MotorFoc_OpenLoop_VoltageLimitV;
-  float32 voltageRamp = MotorFoc_OpenLoop_VoltageRampV;
-  float32 vdRef;
-  float32 vqRef;
-
-  if (voltageLimit < 0.0F)
-  {
-    voltageLimit = -voltageLimit;
-  }
-  if (voltageRamp < 0.0F)
-  {
-    voltageRamp = -voltageRamp;
-  }
-
-  vdRef = MotorFoc_OpenLoop_ClampFloat(MotorFoc_OpenLoop_VdRefCmd,
-                                       -voltageLimit,
-                                       voltageLimit);
-  vqRef = MotorFoc_OpenLoop_ClampFloat(MotorFoc_OpenLoop_VqRefCmd,
-                                       -voltageLimit,
-                                       voltageLimit);
-  MotorFoc_OpenLoop_VdRefOut =
-      MotorFoc_OpenLoop_SlewFloat(MotorFoc_OpenLoop_VdRefOut, vdRef, voltageRamp);
-  MotorFoc_OpenLoop_VqRefOut =
-      MotorFoc_OpenLoop_SlewFloat(MotorFoc_OpenLoop_VqRefOut, vqRef, voltageRamp);
-}
-
-uint8 MotorFoc_OpenLoop_GetActiveControlMode(void)
-{
-  return MotorFoc_OpenLoop_ActiveControlMode;
 }
 
 float32 MotorFoc_OpenLoop_GetForcedAngleRad(void)
@@ -232,4 +224,14 @@ float32 MotorFoc_OpenLoop_GetForcedAngleRad(void)
 float32 MotorFoc_OpenLoop_GetForcedAngleDeg(void)
 {
   return ((float32)MotorFoc_OpenLoop_AngleRaw * 360.0F) / 8192.0F;
+}
+
+float32 MotorFoc_OpenLoop_GetIdRefA(void)
+{
+  return MotorFoc_OpenLoop_IdRefOut;
+}
+
+float32 MotorFoc_OpenLoop_GetIqRefA(void)
+{
+  return MotorFoc_OpenLoop_IqRefOut;
 }

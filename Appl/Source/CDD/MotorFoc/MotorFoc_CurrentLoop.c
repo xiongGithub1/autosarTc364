@@ -130,8 +130,45 @@ static void MotorFoc_DoInversePark(MotorFoc_ContextType* ctx)
   ctx->vabRef.imag = (ctx->vdqRef.real * ctx->angle.sin) + (ctx->vdqRef.imag * ctx->angle.cos);
 }
 
+static float32 MotorFoc_GetVoltageVectorLimit(MotorFoc_ContextType* ctx)
+{
+  float32 vdc = ctx->i_motor.vdc;
+
+  if (vdc < 0.0F)
+  {
+    vdc = 0.0F;
+  }
+  return MOTORFOC_SQRT3_3 * vdc * ctx->Tpwm.pwmMinTimes;
+}
+
+static void MotorFoc_UpdatePidVoltageLimit(MotorFoc_ContextType* ctx)
+{
+  float32 limit = MotorFoc_GetVoltageVectorLimit(ctx);
+
+  ctx->piId.Min_output = -limit;
+  ctx->piId.Max_output = limit;
+  ctx->piIq.Min_output = -limit;
+  ctx->piIq.Max_output = limit;
+}
+
+static void MotorFoc_LimitDqVoltageVector(MotorFoc_ContextType* ctx)
+{
+  float32 limit = MotorFoc_GetVoltageVectorLimit(ctx);
+  float32 magnitude = sqrtf((ctx->vdqRef.real * ctx->vdqRef.real) +
+                            (ctx->vdqRef.imag * ctx->vdqRef.imag));
+
+  if ((magnitude > limit) && (magnitude > 0.0F))
+  {
+    float32 scale = limit / magnitude;
+
+    ctx->vdqRef.real *= scale;
+    ctx->vdqRef.imag *= scale;
+  }
+}
+
 static void MotorFoc_DoCurrentPid(MotorFoc_ContextType* ctx)
 {
+  MotorFoc_UpdatePidVoltageLimit(ctx);
   MotorFoc_CurrentPidIdealCalc(ctx->idqRef.real,
                                ctx->idqMeas.real,
                                &ctx->vdqRef.real,
@@ -140,6 +177,7 @@ static void MotorFoc_DoCurrentPid(MotorFoc_ContextType* ctx)
                                ctx->idqMeas.imag,
                                &ctx->vdqRef.imag,
                                &ctx->piIq);
+  MotorFoc_LimitDqVoltageVector(ctx);
 }
 
 static void MotorFoc_ResetCurrentPidState(MotorFoc_ContextType* ctx)
@@ -220,22 +258,44 @@ static void MotorFoc_SetFault(MotorFoc_ContextType* ctx, uint8 faultReason)
 {
   MotorFoc_CurrentLoopFault = 1U;
   MotorFoc_CurrentLoopFaultReason = faultReason;
+  MotorFoc_CurrentLoopState = MOTORFOC_CURRENTLOOP_STATE_FAULT;
   MotorFoc_CurrentLoopFaultIuA = MotorFoc_CurrentLoopRawIuA;
   MotorFoc_CurrentLoopFaultIvA = MotorFoc_CurrentLoopRawIvA;
   MotorFoc_CurrentLoopFaultIwA = MotorFoc_CurrentLoopRawIwA;
   MotorFoc_CurrentLoopFaultVdcV = ctx->i_motor.vdc;
+  MotorFoc_CurrentLoopFaultIdA = ctx->idqMeas.real;
+  MotorFoc_CurrentLoopFaultIqA = ctx->idqMeas.imag;
+  MotorFoc_CurrentLoopFaultVdV = ctx->vdqRef.real;
+  MotorFoc_CurrentLoopFaultVqV = ctx->vdqRef.imag;
+  MotorFoc_CurrentLoopFaultPwmU = ctx->Tpwm.pwm_OutU;
+  MotorFoc_CurrentLoopFaultPwmV = ctx->Tpwm.pwm_OutV;
+  MotorFoc_CurrentLoopFaultPwmW = ctx->Tpwm.pwm_OutW;
+}
+
+static uint8 MotorFoc_ConsumeStartupBlanking(void)
+{
+  if (MotorFoc_CurrentLoopStartupBlankingLeft > 0U)
+  {
+    MotorFoc_CurrentLoopStartupBlankingLeft--;
+    MotorFoc_CurrentLoopUndervoltCounter = 0U;
+    MotorFoc_CurrentLoopOverCurrentCounter = 0U;
+    MotorFoc_CurrentLoopState = MOTORFOC_CURRENTLOOP_STATE_BLANKING;
+    return 1U;
+  }
+
+  MotorFoc_CurrentLoopState = MOTORFOC_CURRENTLOOP_STATE_RUN;
+  return 0U;
+}
+
+static uint8 MotorFoc_IsVdcUsable(MotorFoc_ContextType* ctx)
+{
+  return (ctx->i_motor.vdc > 0.1F) ? 1U : 0U;
 }
 
 static uint8 MotorFoc_CheckOverCurrentFault(MotorFoc_ContextType* ctx)
 {
   uint16 confirmCount = MotorFoc_CurrentLoopOverCurrentConfirmCount;
 
-  if (MotorFoc_CurrentLoopStartupBlankingLeft > 0U)
-  {
-    MotorFoc_CurrentLoopStartupBlankingLeft--;
-    MotorFoc_CurrentLoopOverCurrentCounter = 0U;
-    return 0U;
-  }
 
   if (MotorFoc_IsPhaseCurrentOverLimit(ctx) == 0U)
   {
@@ -266,11 +326,6 @@ static uint8 MotorFoc_CheckUndervoltFault(MotorFoc_ContextType* ctx)
   uint16 confirmCount = MotorFoc_CurrentLoopUndervoltConfirmCount;
   float32 minVdc = MotorFoc_CurrentLoopMinVdcRunV;
 
-  if (MotorFoc_CurrentLoopStartupBlankingLeft > 0U)
-  {
-    MotorFoc_CurrentLoopUndervoltCounter = 0U;
-    return 0U;
-  }
 
   if (minVdc < 0.0F)
   {

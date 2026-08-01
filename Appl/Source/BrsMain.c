@@ -403,13 +403,13 @@ TASK(Default_Init_Task)
   BrsTestsuite_BrsMain_Default_Init_Task();
 #endif
 
-#if defined (BRS_ENABLE_OS_MULTICORESUPPORT)
-  /* Workaround for RTE ESCAN00078832: Core1 Rte_Start() (ActivateTask MotorTask) before Core0 SetRelAlarm */
-  while(Rte_InitState_1 != RTE_STATE_INIT)
-  {
-    (void)Schedule();
-  }
-#endif /*BRS_ENABLE_OS_MULTICORESUPPORT*/
+//#if defined (BRS_ENABLE_OS_MULTICORESUPPORT)
+//  /* Workaround for RTE ESCAN00078832: Core1 Rte_Start() (ActivateTask MotorTask) before Core0 SetRelAlarm */
+//  while(Rte_InitState_1 != RTE_STATE_INIT)
+//  {
+//    (void)Schedule();
+//  }
+//#endif /*BRS_ENABLE_OS_MULTICORESUPPORT*/
 
 #if defined (BRS_ENABLE_TESTSUITE_SUPPORT)
   BrsTestsuiteInit();

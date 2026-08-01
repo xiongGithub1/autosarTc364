@@ -2,7 +2,27 @@
 
 > 项目：`last364`（TC364/TC367，Tasking VX v6.2r2 + Vector MICROSAR CBD2200508_D00）  
 > 目标：Core0 跑 BSW/CAN，Core1 跑电机栈，使用 vLinkGen 链接脚本 + vBRS 启动  
-> 更新：2026-07-31
+> 更新：2026-08-01
+
+---
+
+## 目录
+
+1. [背景](#1-背景)
+2. [链接错误演进与解决方法](#2-链接错误演进与解决方法)
+3. [E123 `_lc_ub_table` 问题详解](#3-e123-_lc_ub_table-问题详解)
+4. [TASKING 工程关键设置](#4-tasking-工程关键设置cproject)
+5. [MemMap / vLinkGen 配置](#5-memmap--vlinkgen-配置)
+6. [vBRS 集成](#6-vbrs-集成)
+7. [EcuM / Os 双核（配置侧）](#7-ecum--os-双核配置侧)
+8. [关键文件路径速查](#8-关键文件路径速查)
+9. [禁止操作清单](#9-禁止操作清单)
+10. [建议验证步骤](#10-建议验证步骤)
+11. [跨核 SetRelAlarm 与 Os X-Signal](#11-跨核-setrelalarm-与-os-x-signal2026-07-31)
+12. [XSignalIsr Interrupt Source 错误 → Trap Class 3](#12-xsignalisr-interrupt-source-错误--trap-class-32026-07-31)
+13. [MotorTask 未激活时 Alarm SetEvent → ErrorHook](#13-motortask-未激活时-alarm-setevent--errorhook2026-07-31)
+14. [SystemTimer1 TicksPerBase 与 Core1 启动链](#15-systemtimer1-ticksperbase-与-core1-启动链2026-08-01)
+15. [参考](#16-参考)
 
 ---
 
@@ -35,6 +55,10 @@
 | 12 | **Core1 MPU `0x00010006`（Adc 空指针）** | Core1 `EcuM_AL_DriverInitOne` 调用 `Adc_GetStartupCalStatus()`，但 ADC 仅在 Core0 Init | `EcuM_Callout_Stubs.c`：MCAL Init 加 `GetCoreID()==ECUM_CORE_ID_BSW` 守卫 |
 | 13 | **`Os_Api_Init()` 后 Trap @ `0x80022960`（`osTrap_3_Core0` / Class 3）** | X-Signal 启用后 **`XSignalIsr` 的 `OsIsrInterruptSource = 1`**，写坏 SRC；两核共用同一 Source | 改为 **GPSR** 正确偏移（2448 / 2480），Generate Os（见第 12 节） |
 | 14 | **`ErrorHook`: `AlarmActionSetEvent` / `E_OS_STATE(7)` / `OS_STATUS_STATE_1`** | Core0 `SetRelAlarm(MotorTask)` 早于 Core1 `ActivateTask(MotorTask)`，Alarm 对 **SUSPENDED** 任务 SetEvent | **ESCAN00078832**：Core0 等 Core1 `Rte_Start` 完成；`Default_Init_Task` 改 **FULL**（见第 13 节） |
+| 15 | **`Rte_InitState_1` ~20s 才变 3、`StartApp_Cyclic1msCounter` 迟迟不涨** | Core1 启动异常（Timer 配错 / ErrorHook）→ Core0 在 `wait(Rte_InitState_1)` 空转；非 StartApp 本身慢 | **`SystemTimer1 OsCounterTicksPerBase` 改为 100000**（与 Core0 一致）；**不要**在 Trusted 里重复 ActivateTask（见第 15 节） |
+| 16 | **`MotorCdd_Os1msCounter` 百万级、`WaitEvent` 几乎不阻塞** | `TicksPerBase=1` 时 STM1 比较/Reload 与 1ms OS tick 不匹配，Counter ISR 异常频繁 | 同第 15 节；Alarm 使用 `RTE_MSEC_SystemTimer1()` 宏，禁止裸 `(TickType)1U` |
+| 17 | **`Default_Init_Task_Core1_Trusted` 里 SetRelAlarm/ActivateTask 导致 ErrorHook** | 与 `Rte_Start` 重复激活；裸 tick 值错误；Trusted 职责仅是开中断 | **删除** Trusted 中 MotorTask 启动代码，仅保留 `Os_InitialEnableInterruptSources`（见第 15.4 节） |
+| 18 | **`WaitEvent` → `OS_STATUS_DISABLEDINT`（Core1 ErrorHook）** | `MotorTask` 在 `Os_InitialEnableInterruptSources` 之前被调度 | Vector 标准顺序：Init Task → Trusted 开中断 → 应用 Task；**不必**把 ActivateTask 移到 Trusted |
 
 ---
 
@@ -207,7 +231,9 @@ CBD2200508_D00/.../StartApplication/Appl/Include/
 last364/
 ├── .cproject                          # nearSize=0；LSL；userProvidedInitCode
 ├── Appl/Source/vLinkGen_Template.lsl  # vLinkGen 链接脚本 + Core1 near 符号
+├── Appl/Source/BrsMain.c              # ESCAN00078832 wait；Core1 Trusted 仅开中断（§15）
 ├── Appl/Source/Brs*.c                 # vBRS 启动与硬件抽象
+├── Appl/GenData/Os_Hal_Cfg.h          # OSTICKSPERBASE_SystemTimer / SystemTimer1（§15）
 ├── Appl/Include/BrsCompiler_Cfg.h     # BRS_COMP_TASKING
 ├── Appl/Source/Can_Callout_Stubs.c    # Can 中断 callout
 ├── Appl/TSC_SchM_*.c                  # SchM 桩（勿与 BrsMain 重复）
@@ -231,6 +257,8 @@ last364/
 4. **不要** 在未改 LSL 的情况下开启 `MemMapGeneratePragmasForNearAddressing=true`
 5. **不要** 把 `Appl_LockEndinit` 放到 `BrsHw.c` 以外的 TU（static inline 链接问题）
 6. **不要** 去掉 `--user-provided-initialization-code` 却仍使用 vBRS 启动（会再现 E123）
+7. **不要** 将 Core1 `SystemTimer1` 的 `OsCounterTicksPerBase` 设为 **1**（须与 Core0 一致为 **100000**，见 §15）
+8. **不要** 在 `Default_Init_Task_Core1_Trusted` 中 `SetRelAlarm` / `ActivateTask(MotorTask)`（见 §15.4）
 
 ---
 
@@ -567,7 +595,180 @@ SystemTimer1: Alarm 到期 → SetEvent(MotorTask)  ✓ Task 已在 WAITING/RUNN
 
 ---
 
-## 14. 参考
+## 15. SystemTimer1 TicksPerBase 与 Core1 启动链（2026-08-01）
+
+### 15.1 现象汇总
+
+| 现象 | 典型观测 | 说明 |
+|------|----------|------|
+| `Rte_InitState_1` 约 20s 才变为 **3** | 与 `StartApp_Cyclic1msCounter` 开始递增几乎同时 | Core0 在等 Core1，不是 RTE 本身需要 20s |
+| `StartApp_Cyclic1msCounter` 长期为 0 | Core0 `Rte_Start` 未执行（被 `wait` 阻塞） | 墙钟时间含调试暂停，不等于 CPU 执行时间 |
+| `MotorCdd_Os1msCounter` 为 0 或异常 | MotorTask 未跑或 1ms 事件未到 | 需区分 Alarm、ActivateTask、中断是否已开 |
+| Counter 百万级、`EntryCounter=1` | `WaitEvent` 几乎不阻塞 | **`TicksPerBase=1` 时 Timer 行为异常** |
+| Trusted 加 SetRelAlarm/ActivateTask 后进 ErrorHook | `Os_TrapTaskMissingTerminateTask` | 重复激活 + 错误 tick 值 + 栈/ISR 嵌套 |
+
+### 15.2 SystemTimer1 正确配置（TC36x）
+
+Core0 **SystemTimer** 与 Core1 **SystemTimer1** 必须一致：
+
+| 参数 | Core0 `SystemTimer` | Core1 `SystemTimer1` | 说明 |
+|------|---------------------|----------------------|------|
+| `OsCounterTicksPerBase` | **100000** | **100000** | 100MHz STM → 1ms 中断周期 |
+| `OsSecondsPerTick` | **0.001** | **0.001** | 1 OS tick = 1ms |
+| 硬件通道 | `STM0_Ch0` | `STM1_Ch0` | Core1 专用 STM1 |
+| `OsCounterType` | HARDWARE | HARDWARE | — |
+
+ECUC 路径：
+
+```
+ActiveEcuC/Os/SystemTimer/OsCounterTicksPerBase   = 100000
+ActiveEcuC/Os/SystemTimer1/OsCounterTicksPerBase  = 100000
+```
+
+Generate Os 后验证：
+
+```c
+// Appl/GenData/Os_Hal_Cfg.h
+#define OSTICKSPERBASE_SystemTimer    (100000u)
+#define OSTICKSPERBASE_SystemTimer1   (100000u)
+```
+
+**错误配置 `TicksPerBase = 1` 的影响：**
+
+- OS 宏仍按 1ms/tick 理解 Alarm（`RTE_MSEC_SystemTimer1(1)`）
+- 但 STM 比较/Reload 按 `TicksPerBase` 编程，硬件 ISR 周期与 OS 期望脱节
+- 表现为 Counter 疯涨、Alarm/SetEvent 时序混乱、后续 ErrorHook / 栈损坏
+
+**不要**把 `TicksPerBase` 改成 100000 当作“启动慢”的唯一修复手段而不排查其它项；但若 Core1 曾为 1，**必须改回 100000**。
+
+### 15.3 `Rte_InitState_1` 延迟的根因链
+
+```
+Core1 Default_Init_Task_Core1
+  → EcuM_StartupTwo → Rte_Start
+  → Rte_InitState_1 = 3                    ← 正常应很快完成
+
+Core0 Default_Init_Task
+  → while (Rte_InitState_1 != 3) Schedule() ← 若 Core1 卡住则一直等
+  → EcuM_StartupTwo → Rte_Start
+  → SetRelAlarm(StartApp 1ms…)              ← StartApp_Cyclic1msCounter 从这里才开始
+```
+
+Core1 卡在 ErrorHook 的常见原因（与 20s 现象相关）：
+
+| 原因 | 机制 | 修复 |
+|------|------|------|
+| `TicksPerBase=1` | Timer/Alarm 异常 | 改为 100000，Generate Os |
+| `WaitEvent` + 中断未开 | `OS_STATUS_DISABLEDINT` | 遵循 Init → Trusted 开中断 → 应用 Task |
+| Core0 先于 Core1 `SetRelAlarm` | `E_OS_STATE` on SUSPENDED task | §13 ESCAN00078832 wait |
+| Trusted 重复 ActivateTask | 重复调度 / 错误 Alarm | §15.4 删除 Trusted 中 workaround |
+| `Default_MotorInitTask` SPI trap | Core1 冻结在 init | 查 TLE9180/QSPI，与 Rte_InitState 无关（ActivateTask 异步） |
+
+### 15.4 BrsMain Trusted 中错误 workaround（已撤销）
+
+调试期间曾在 `Default_Init_Task_Core1_Trusted` 中加入：
+
+```c
+/* ❌ 错误：不要保留 */
+(void)SetRelAlarm(Rte_Al_TE_MotorTask_0_1ms, (TickType)1U, (TickType)1U);
+(void)ActivateTask(MotorTask);
+```
+
+**问题：**
+
+1. **`Rte_Start()` 已在 Core1 完成** `ActivateTask(MotorTask)` / `ActivateTask(Default_MotorInitTask)`，Trusted 中再次激活是重复的
+2. **裸 `(TickType)1U`** 在 `TicksPerBase=100000` 下不等于 1ms，应使用 `RTE_MSEC_SystemTimer1(1U)`
+3. **SetRelAlarm 已在 Core0 `Rte_Start`** 跨核设置（需 X-Signal，§11）
+4. **Trusted 职责**仅为 `Os_InitialEnableInterruptSources()`，与 Core0 Trusted 一致
+
+**正确写法（当前工程）：**
+
+```c
+TASK(Default_Init_Task_Core1_Trusted)
+{
+  Os_InitialEnableInterruptSources(FALSE);
+  (void)TerminateTask();
+}
+```
+
+注释掉或删除 Trusted 中 MotorTask 代码后，在 **TicksPerBase=100000** 下 `Rte_InitState_1` 应快速变为 3，与实测一致。
+
+### 15.5 标准 Core1 启动顺序（修复后）
+
+```
+两核: EcuM_Init → DriverInitOne → StartOS
+
+Core1:
+  Default_Init_Task_Core1
+    → EcuM_StartupTwo → Rte_Start
+    → ActivateTask(Default_MotorInitTask)
+    → ActivateTask(MotorTask)
+    → Rte_InitState_1 = RTE_STATE_INIT (3)
+    → TerminateTask
+
+  Default_Init_Task_Core1_Trusted
+    → Os_InitialEnableInterruptSources(FALSE)
+    → TerminateTask
+
+  MotorTask / Default_MotorInitTask 开始调度
+
+Core0:
+  Default_Init_Task
+    → wait(Rte_InitState_1 == RTE_STATE_INIT)   // ESCAN00078832
+    → EcuM_StartupTwo → Rte_Start
+    → SetRelAlarm(MotorTask, SystemTimer1)      // 跨核 X-Signal
+    → SetRelAlarm(StartApp 1ms/10ms/…)
+    → TerminateTask
+
+  Default_Init_Task_Trusted
+    → Os_InitialEnableInterruptSources(FALSE)
+```
+
+Init Task 按 OS 配置顺序执行完毕前，**MotorTask 不会抢占 Init 链**；Trusted 开中断后 `WaitEvent` 才合法。
+
+### 15.6 应用层保留项（非调试变量）
+
+| 项 | 文件 | 说明 |
+|----|------|------|
+| `MotorCdd_InitComplete`（`static`） | `MotorCdd.c` | Init 完成前 MainFunction 仅 return，避免未 init 调 TLE9180 |
+| Core0 wait `Rte_InitState_1` | `BrsMain.c` | ESCAN00078832，须保留 |
+| `Default_Init_Task` Schedule=**FULL** | Os ECUC | wait 循环中须可 Schedule |
+
+### 15.7 调试变量说明（2026-08-01 清理）
+
+**保留（工程原有）：**
+
+| 变量 | 位置 |
+|------|------|
+| `MotorCdd_Os1msCounter` | `MotorCdd.c` / `MotorCdd.h` |
+| `MotorCdd_PwmComplementaryInitDone` | `MotorCdd.c` |
+| `StartApp_Cyclic1msCounter` / `StartApp_Cyclic250msCounter` | `StartApp.c` |
+| `Os_Callout_LastError*` / `Os_Callout_UnhandledIrq/Exc*` | `Os_Callout_Stubs.c` |
+
+**已删除（双核调试临时添加）：**
+
+| 变量 | 说明 |
+|------|------|
+| `MotorCdd_MotorTaskEntryCounter` | MotorTask 入口计数 |
+| `MotorCdd_MotorTaskWakeCounter` | WaitEvent 返回计数 |
+| `MotorCdd_SetRelAlarmStatus` | SetRelAlarm 返回值 |
+| `Os_ErrorHookCounter` / `_Core1` | ErrorHook 次数 |
+
+### 15.8 验证清单
+
+1. DaVinci：`SystemTimer` / `SystemTimer1` 的 `OsCounterTicksPerBase = 100000`，`OsSecondsPerTick = 0.001`
+2. Generate Os + RTE，Full Rebuild
+3. `BrsMain.c`：Trusted **无** MotorTask SetRelAlarm/ActivateTask；Core0 **有** `wait(Rte_InitState_1)`
+4. 上板（少打断或记清墙钟 vs 计数器）：
+   - `Rte_InitState_1` 快速 → **3**
+   - `StartApp_Cyclic1msCounter`、`MotorCdd_Os1msCounter` 约 **1:1** 增长（均 ~1/ms）
+   - `Os_Callout_LastError` 保持 **E_OK**（未进 ErrorHook）
+5. 若 MotorTask 仍 0：查 X-Signal（§11）、GPSR Source（§12）、Alarm 返回值
+6. 若 init 后 trap：查 `Default_MotorInitTask` / TLE9180 SPI（`Os_Callout_LastErrorService`）
+
+---
+
+## 16. 参考
 
 - Vector StartApplication：`Appl/Makefile` 中 `-Wl--user-provided-initialization-code`
 - Tasking 链接选项 ID：`com.tasking.ctc.lk.userProvidedInitCode` → `--user-provided-initialization-code`
@@ -577,3 +778,5 @@ SystemTimer1: Alarm 到期 → SetEvent(MotorTask)  ✓ Task 已在 WAITING/RUNN
 - X-Signal ISR 硬件源：AURIX GPSR，`MCAL364/TC36xA/_Reg/IfxSrc_reg.h`（`SRC_GPSR00` @ `0xF0038990`，`SRC_GPSR10` @ `0xF00389B0`）
 - Os HAL SRC 基址：`OS_HAL_INT_SRC_BASE = 0xF0038000`（`Os_Hal_Derivative_TC36xInt.h` + `Os_Hal_InterruptController_AurixTC3xx_IRInt.h`）
 - RTE 多核启动顺序：**ESCAN00078832**（`BrsMain.c` `Default_Init_Task` 等待 `Rte_InitState_1`；`Default_Init_Task` 须 **FULL** 抢占）
+- SystemTimer1 / TicksPerBase：TC36x STM @ 100MHz，`TicksPerBase=100000` + `SecondsPerTick=0.001` → 1ms OS tick（§15）
+- `Default_Init_Task_Core1_Trusted`：仅 `Os_InitialEnableInterruptSources`，**勿**在此 ActivateTask/SetRelAlarm MotorTask（§15.4）

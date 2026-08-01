@@ -70,6 +70,7 @@ uint32 MotorCdd_Os1msCounter = 0U;
 static volatile uint8 MotorCdd_InitComplete = 0U;
 
 static void MotorCdd_PwmComplementaryInit(void);
+static void MotorCdd_PublishFeedback(void);
 
 
 /**********************************************************************************************************************
@@ -141,9 +142,11 @@ FUNC(void, MotorCdd_CODE) MotorCdd_MainFunction(void) /* PRQA S 0624, 3206 */ /*
   {
     return;
   }
-  MotorCdd_FocUpdateCmdMirror();
+
   Tle9180_Driver_MainFunction();
   MotorZeroCal_MainFunction();
+  MotorCdd_PublishFeedback();
+  MotorCdd_FocUpdateCmdMirror();
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -244,6 +247,24 @@ FUNC(void, MotorCdd_CODE) MotorCdd_Init(void) /* PRQA S 0624, 3206 */ /* MD_Rte_
 
 #define MotorCdd_START_SEC_CODE
 #include "MotorCdd_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+static void MotorCdd_PublishFeedback(void)
+{
+  const MotorCdd_AdcPhysicalType* adcPhysical;
+  float32 angleRad;
+
+  adcPhysical = MotorCdd_GetAdcPhysical();
+  if (adcPhysical != NULL_PTR)
+  {
+    (void)Rte_Write_Pp_MotorDcBusVoltage_Vbus(adcPhysical->vinv_V);
+  }
+
+  angleRad = Tle5012bd_Driver_GetElectricalAngleRad();
+  (void)Rte_Write_Pp_MotorElectricalAngle_ElectricAngle(angleRad);
+
+  /* OV latch from 9180 status can be wired here when register read is available. */
+  (void)Rte_Write_Pp_MotorFaultStatus_tle9180_Ov_Fault(FALSE);
+}
 
 static void MotorCdd_PwmComplementaryInit(void)
 {

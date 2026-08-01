@@ -3,40 +3,48 @@
 
 #include "Std_Types.h"
 
-#define MOTORFOC_OL_ANGLE_RAW_MAX            (8191U)
-#define MOTORFOC_OL_ANGLE_RAW_TO_RAD         (7.66429044544767e-4F)
-#define MOTORFOC_OL_DEFAULT_ANGLE_STEP       (1U)
-#define MOTORFOC_OL_DEFAULT_STEP_DIVIDER     (1U)
+/* One electrical revolution is represented by 8192 sin/cos-table samples. */
+#define MOTORFOC_OL_ANGLE_RAW_MAX       (8191U)
+#define MOTORFOC_OL_ANGLE_RAW_TO_RAD    (7.669903939428206e-4F)
 
-#define MOTORFOC_OPENLOOP_CONTROL_VOLTAGE    (0U)
-#define MOTORFOC_OPENLOOP_CONTROL_CURRENT    (1U)
-#define MOTORFOC_OPENLOOP_CONTROL_AUTO       (2U)
+/*
+ * Current-controlled open-loop startup sequence:
+ * ALIGN_RAMP -> ALIGN_HOLD -> RAMP -> RUN.
+ * The current PI loops remain active in every stage; only electrical angle is forced.
+ */
+typedef enum
+{
+  MOTORFOC_OPENLOOP_STAGE_ALIGN_RAMP = 0U,
+  MOTORFOC_OPENLOOP_STAGE_ALIGN_HOLD = 1U,
+  MOTORFOC_OPENLOOP_STAGE_RAMP       = 2U,
+  MOTORFOC_OPENLOOP_STAGE_RUN        = 3U
+} MotorFoc_OpenLoopStageType;
 
-extern volatile uint8 MotorFoc_OpenLoop_RampEnable;
-extern volatile uint8 MotorFoc_OpenLoop_ControlMode;
-extern volatile uint8 MotorFoc_OpenLoop_ActiveControlMode;
+/* UDE-tunable parameters. Time values are PWM fast-loop ticks. */
 extern volatile uint8 MotorFoc_OpenLoop_Direction;
-extern volatile uint16 MotorFoc_OpenLoop_AngleStep;
+extern volatile uint16 MotorFoc_OpenLoop_TargetAngleStep;
 extern volatile uint16 MotorFoc_OpenLoop_StepDivider;
+extern volatile uint16 MotorFoc_OpenLoop_AlignHoldTicks;
+extern volatile uint16 MotorFoc_OpenLoop_AccelerationTicks;
+extern volatile float32 MotorFoc_OpenLoop_AlignAngleDeg;
+extern volatile float32 MotorFoc_OpenLoop_AlignCurrentA;
+extern volatile float32 MotorFoc_OpenLoop_CurrentRampStepA;
+
+/* UDE observation variables. Do not modify them while PWM is enabled. */
+extern volatile MotorFoc_OpenLoopStageType MotorFoc_OpenLoop_Stage;
 extern volatile uint32 MotorFoc_OpenLoop_StageCounter;
-extern volatile uint32 MotorFoc_OpenLoop_VoltageToCurrentTicks;
 extern volatile uint16 MotorFoc_OpenLoop_AngleRaw;
+extern volatile uint16 MotorFoc_OpenLoop_ActiveAngleStep;
 extern volatile float32 MotorFoc_OpenLoop_ForcedAngleRad;
-extern volatile float32 MotorFoc_OpenLoop_FixedAngleDeg;
-extern volatile float32 MotorFoc_OpenLoop_VdRefCmd;
-extern volatile float32 MotorFoc_OpenLoop_VqRefCmd;
-extern volatile float32 MotorFoc_OpenLoop_VdRefOut;
-extern volatile float32 MotorFoc_OpenLoop_VqRefOut;
-extern volatile float32 MotorFoc_OpenLoop_VoltageLimitV;
-extern volatile float32 MotorFoc_OpenLoop_VoltageRampV;
+extern volatile float32 MotorFoc_OpenLoop_IdRefOut;
+extern volatile float32 MotorFoc_OpenLoop_IqRefOut;
 
 void MotorFoc_OpenLoop_Init(void);
 void MotorFoc_OpenLoop_Reset(void);
-void MotorFoc_OpenLoop_FastLoopStep(void);
-void MotorFoc_OpenLoop_UpdateControlStage(void);
-void MotorFoc_OpenLoop_UpdateVoltageRefs(void);
-uint8 MotorFoc_OpenLoop_GetActiveControlMode(void);
+void MotorFoc_OpenLoop_FastLoopStep(float32 idRequestA, float32 iqRequestA);
 float32 MotorFoc_OpenLoop_GetForcedAngleRad(void);
 float32 MotorFoc_OpenLoop_GetForcedAngleDeg(void);
+float32 MotorFoc_OpenLoop_GetIdRefA(void);
+float32 MotorFoc_OpenLoop_GetIqRefA(void);
 
 #endif /* MOTORFOC_OPENLOOP_H */

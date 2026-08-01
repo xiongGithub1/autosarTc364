@@ -4,9 +4,9 @@
 #include "Std_Types.h"
 
 #define MOTORZEROCAL_STORAGE_MAGIC      (0xA5A4U)
-#define MOTORZEROCAL_ID_REF_A           (5.0F)
-/* ~0.15 s to 1.5 A when ramped in PWM fast-loop. */
-#define MOTORZEROCAL_ID_RAMP_STEP_A     (0.1F)
+#define MOTORZEROCAL_ID_REF_A           (1.0F)
+/* 0.002 A per 10 kHz fast-loop tick: 1 A is reached in about 50 ms. */
+#define MOTORZEROCAL_ID_RAMP_STEP_A     (0.002F)
 #define MOTORZEROCAL_ID_REACHED_EPS_A   (0.02F)
 #define MOTORZEROCAL_ALIGN_ANGLE_DEG    (0.0F)
 #define MOTORZEROCAL_ANGLE_OK_LOW       (3.0F)
@@ -18,13 +18,14 @@
 #define MOTORZEROCAL_ANG_BASE_APPLY_DELAY_MS (500U)
 #define MOTORZEROCAL_MAX_RETRY          (10U)
 /* Whole align→RAM procedure must finish within this (Flash is separate). */
-#define MOTORZEROCAL_TOTAL_TIMEOUT_MS   (5000U)
+#define MOTORZEROCAL_TOTAL_TIMEOUT_MS   (8000U)
 
 #define MOTORZEROCAL_START_REJECT_NONE           (0U)
 #define MOTORZEROCAL_START_REJECT_VDC_LOW        (1U)
 #define MOTORZEROCAL_START_REJECT_GATE_NOT_READY (2U)
 #define MOTORZEROCAL_START_REJECT_ALREADY_RUNNING (3U)
 #define MOTORZEROCAL_START_REJECT_VDC_STABILIZING (4U)
+#define MOTORZEROCAL_START_REJECT_NVM_NOT_READY  (5U)
 
 #define MOTORZEROCAL_FAULT_NONE     (0U)
 #define MOTORZEROCAL_FAULT_CURRENT  (1U)
@@ -46,7 +47,21 @@ typedef enum
   MOTORZEROCAL_STATE_FAULT = 4U
 } MotorZeroCal_StateType;
 
+/* Fine-grained calibration progress. This is the primary UDE observation item. */
+typedef enum
+{
+  MOTORZEROCAL_STAGE_IDLE = 0U,
+  MOTORZEROCAL_STAGE_ALIGN_RAMP = 1U,
+  MOTORZEROCAL_STAGE_ALIGN_HOLD = 2U,
+  MOTORZEROCAL_STAGE_READ_ANGLE = 3U,
+  MOTORZEROCAL_STAGE_APPLY_OFFSET = 4U,
+  MOTORZEROCAL_STAGE_SAVE_DFLASH = 5U,
+  MOTORZEROCAL_STAGE_COMPLETE = 6U,
+  MOTORZEROCAL_STAGE_FAULT = 7U
+} MotorZeroCal_StageType;
+
 extern volatile MotorZeroCal_StateType MotorZeroCal_State;
+extern volatile MotorZeroCal_StageType MotorZeroCal_Stage;
 /* 1 = valid zero point in RAM for motor use. */
 extern volatile uint8 MotorZeroCal_Calibrated;
 /* Compatibility: same value as MotorZeroCal_Calibrated. */
@@ -63,6 +78,10 @@ extern volatile uint8 MotorZeroCal_FaultReason;
 extern volatile uint32 MotorZeroCal_AlignWaitMs;
 /* 1 = RAM zero changed and not yet written to DFlash. */
 extern volatile uint8 MotorZeroCal_NvDirty;
+/* Valid marker read from the 4-byte NvM/Fee record. */
+extern volatile uint8 MotorZeroCal_DflashValid;
+/* 1 once boot NvM read is complete; safe point to decide whether to calibrate. */
+extern volatile uint8 MotorZeroCal_DflashReadComplete;
 /* UDE optional: set 1 to re-queue NvM write (same as CALIBRATION_SAVE). */
 extern volatile uint8 MotorZeroCal_NvSaveRequest;
 /* Watch: Op 1=read 2=write; Result 0=OK 1=NOT_OK 2=PENDING. */
@@ -84,6 +103,7 @@ void MotorZeroCal_FastLoopStep(void);
 void MotorZeroCal_RampAlignCurrentStep(void);
 void MotorZeroCal_MainFunction(void);
 uint8 MotorZeroCal_IsRotorZeroInitialized(void);
+uint8 MotorZeroCal_IsCalibrationRequired(void);
 uint8 MotorZeroCal_UseForcedAngle(void);
 float32 MotorZeroCal_GetAlignCurrentA(void);
 float32 MotorZeroCal_GetForcedAngleRad(void);

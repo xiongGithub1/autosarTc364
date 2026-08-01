@@ -2,10 +2,18 @@
 **** Build of configuration Debug for project last364 ****
 
 "D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
-Compiling BrsMain.c
+Compiling MotorControll.c
+Compiling MotorCdd.c
+Compiling MotorCdd_Foc.c
+Compiling MotorZeroCal.c
+ctc W536: ["..\Appl\Source\CDD\MotorFoc\MotorCdd_Foc.c" 147/14] unused static function "MotorCdd_FocAngleSpiAllowedInFastLoop"
+ctc W537: ["..\Appl\Source\CDD\MotorFoc\MotorCdd_Foc.c" 166/9] unused variable "motorMode"
+ctc W588: ["..\Appl\Source\CDD\MotorFoc\MotorCdd_Foc.c" 136/16] dead assignment to "deltaRaw" eliminated
+ctc W588: ["..\Appl\Source\CDD\MotorFoc\MotorCdd_Foc.c" 132/16] dead assignment to "deltaRaw" eliminated
+0 errors, 4 warnings
 Linking to last364.elf
 
-Time consumed: 8305 ms
+Time consumed: 9990 ms
 **** End of build ****
 
 Tool info: 
