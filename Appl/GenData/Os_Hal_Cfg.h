@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Cfg.h
- *   Generation Time: 2026-07-30 17:52:17
+ *   Generation Time: 2026-08-01 11:44:59
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -72,6 +72,10 @@
 # define OS_ISR_COUNTERISR_SYSTEMTIMER_LEVEL     (80)
 # define OS_ISR_COUNTERISR_SYSTEMTIMER1_CORE      (1)
 # define OS_ISR_COUNTERISR_SYSTEMTIMER1_LEVEL     (1)
+# define OS_ISR_XSIGNALISR_OSCORE0_CORE      (0)
+# define OS_ISR_XSIGNALISR_OSCORE0_LEVEL     (70)
+# define OS_ISR_XSIGNALISR_OSCORE1_CORE      (1)
+# define OS_ISR_XSIGNALISR_OSCORE1_LEVEL     (70)
 
 /* Hardware counter timing macros */
 
@@ -109,9 +113,9 @@
 
 
 /* Counter timing macros and constants: SystemTimer1 */
-# define OSMAXALLOWEDVALUE_SystemTimer1     (1073741823u) /* 0x3FFFFFFFu */
+# define OSMAXALLOWEDVALUE_SystemTimer1     (2147483647u) /* 0x7FFFFFFFu */
 # define OSMINCYCLE_SystemTimer1            (1u)
-# define OSTICKSPERBASE_SystemTimer1        (1u)
+# define OSTICKSPERBASE_SystemTimer1        (100000u)
 # define OSTICKDURATION_SystemTimer1        (1000000u)
 
 /*! Macro OS_NS2TICKS_SystemTimer1 was approximated with a deviation of 0.0ppm. */

@@ -276,11 +276,11 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Start(void)
     (void)ActivateTask(Default_Appl_Task); /* PRQA S 3417 */ /* MD_Rte_Os */
 
     /* activate the alarms used for TimingEvents */
+    (void)SetRelAlarm(Rte_Al_TE_MotorTask_0_1ms, RTE_MSEC_SystemTimer1(0U) + (TickType)1U, RTE_MSEC_SystemTimer1(1U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
     (void)SetRelAlarm(Rte_Al_TE_StartApp_StartApp_Cyclic1000ms, RTE_SEC_SystemTimer(0U) + (TickType)1U, RTE_SEC_SystemTimer(1U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
     (void)SetRelAlarm(Rte_Al_TE_StartApp_StartApp_Cyclic10ms, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(10U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
     (void)SetRelAlarm(Rte_Al_TE_StartApp_StartApp_Cyclic1ms, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(1U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
     (void)SetRelAlarm(Rte_Al_TE_StartApp_StartApp_Cyclic250ms, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(250U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
-    (void)SetRelAlarm(Rte_Al_TE_MotorTask_0_1ms, RTE_MSEC_SystemTimer1(0U) + (TickType)1U, RTE_MSEC_SystemTimer1(1U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
 
     Rte_StartTiming_InitState = RTE_STATE_INIT;
     Rte_InitState = RTE_STATE_INIT;

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Link_Core1_Stacks.lsl
- *   Generation Time: 2026-07-30 20:09:43
+ *   Generation Time: 2026-07-31 20:24:50
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -49,7 +49,7 @@
 group OS_CORE1_STACKS_GROUP(ordered, contiguous, fill)
 {
 
-/* Stack: MotorTask (1024 Byte) */
+/* Stack: MotorTask (4096 Byte) */
 group OS_STACK_MOTORTASK_VAR_NOINIT_GROUP(ordered, contiguous, fill, align=8)
 {
   select "[.]bss.OS_STACK_MOTORTASK_VAR_NOINIT";

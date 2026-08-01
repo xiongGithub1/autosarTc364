@@ -69,6 +69,11 @@
   #include "BrsTestsuite.h"
 #endif
 
+#if defined (BRS_ENABLE_OS_MULTICORESUPPORT)
+  #include "Rte_Type.h"
+  #include "Os.h"
+#endif
+
 /**********************************************************************************************************************
  *  VERSION CHECK
  *********************************************************************************************************************/
@@ -399,14 +404,11 @@ TASK(Default_Init_Task)
 #endif
 
 #if defined (BRS_ENABLE_OS_MULTICORESUPPORT)
-  /* Workaround for RTE ESCAN00078832 */
-  /* Use this code, if you get a Det Error at the end of Rte_Start() on MasterCore */
-  /* Rte_Start() on the SlaveCores has to be called first, before Rte_Start() on MasterCore */
-  /* SET THIS InitTask TO FULL PREEMPTIVE (OsTaskSchedule) within OsConfig! */
-  /*while(Rte_InitState_1 != RTE_STATE_INIT)
+  /* Workaround for RTE ESCAN00078832: Core1 Rte_Start() (ActivateTask MotorTask) before Core0 SetRelAlarm */
+  while(Rte_InitState_1 != RTE_STATE_INIT)
   {
     (void)Schedule();
-  }*/
+  }
 #endif /*BRS_ENABLE_OS_MULTICORESUPPORT*/
 
 #if defined (BRS_ENABLE_TESTSUITE_SUPPORT)
@@ -517,7 +519,6 @@ TASK(Default_Init_Task_Core1_Trusted)
 #endif
 
   Os_InitialEnableInterruptSources(FALSE);
-
   (void)TerminateTask();
 }
 

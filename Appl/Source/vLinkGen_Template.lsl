@@ -1777,34 +1777,6 @@ section_layout mpe:vtc:linear
     "_Data_Default_ALL_LIMIT" = "_zdata_LIMIT";
   }
 
-  /* Tasking cstart_tc1.o needs Core1 near-address symbols when _start_tc1 is defined in LSL */
-  group a0_tc1 (ordered, contiguous, align = 4, attributes=rw, run_addr = mem:mpe:DSPR_Core1)
-  {
-    select "(.data_a0.sdata|.data_a0.sdata.*)";
-    select "(.bss_a0.sbss|.bss_a0.sbss.*)";
-  }
-  "_SMALL_DATA_TC1" := sizeof(group:a0_tc1) > 0 ? addressof(group:a0_tc1) : addressof(group:a0_tc1) & 0xF0000000 + 32k;
-
-  group a1_tc1 (ordered, align = 4, run_addr = mem:mpe:PFlash0_Cached)
-  {
-    select "(.rodata_a1.srodata|.rodata_a1.srodata.*)";
-    select "(.ldata|.ldata.*)";
-  }
-  "_LITERAL_DATA_TC1" := sizeof(group:a1_tc1) > 0 ? addressof(group:a1_tc1) : addressof(group:a1_tc1) & 0xF0000000 + 32k;
-
-  group a8_tc1 (ordered, align = 4, run_addr = mem:mpe:PFlash0_Cached)
-  {
-    select "(.rodata_a8.a8srodata|.rodata_a8.a8srodata.*)";
-  }
-  "_A8_DATA_TC1" := sizeof(group:a8_tc1) > 0 ? addressof(group:a8_tc1) : addressof(group:a8_tc1) & 0xF0000000 + 32k;
-
-  group a9_tc1 (ordered, align = 4, run_addr = mem:mpe:DSPR_Core1)
-  {
-    select "(.data_a9.a9sdata|.data_a9.a9sdata.*)";
-    select "(.bss_a9.a9sbss|.bss_a9.a9sbss.*)";
-  }
-  "_A9_DATA_TC1" := sizeof(group:a9_tc1) > 0 ? addressof(group:a9_tc1) : addressof(group:a9_tc1) & 0xF0000000 + 32k;
-
 }
 
 

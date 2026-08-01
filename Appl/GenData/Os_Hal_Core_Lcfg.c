@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Core_Lcfg.c
- *   Generation Time: 2026-07-30 17:52:17
+ *   Generation Time: 2026-07-31 17:05:25
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -173,7 +173,7 @@ CONST(Os_Hal_CoreConfigType, OS_CONST) OsCfg_Hal_Core_OsCore1 =
 {
   /* .CoreId                  = */ 1, /* Physical id of OsCore1 */
   /* .ProgramCounterRegister  = */ OS_HAL_CORE1_PC,
-  /* .StartLabelAddress       = */ (uint32)&(_start_tc1), /* PRQA S 0306, 0324 */ /* MD_Os_Hal_Rule11.4_0306, MD_Os_Hal_Rule11.2_0324 */
+  /* .StartLabelAddress       = */ (uint32)&(brsStartupEntry), /* PRQA S 0306, 0324 */ /* MD_Os_Hal_Rule11.4_0306, MD_Os_Hal_Rule11.2_0324 */
   /* .DBGSRRegister           = */ OS_HAL_CORE1_DBGSR,
   /* .SYSCON_CORECON_Register = */ OS_HAL_CORE1_SYSCON_CORECON,
   /* .BOOTCONRegister         = */ OS_HAL_CORE1_BOOTCON
@@ -218,6 +218,8 @@ CONSTP2CONST(Os_IsrHwConfigType, OS_CONST, OS_CONST)
   &OsCfg_Isr_CanIsr_0_HwConfig,
   &OsCfg_Isr_CounterIsr_SystemTimer_HwConfig,
   &OsCfg_Isr_CounterIsr_SystemTimer1_HwConfig,
+  &OsCfg_Isr_XSignalIsr_OsCore0_HwConfig,
+  &OsCfg_Isr_XSignalIsr_OsCore1_HwConfig,
   NULL_PTR
 };
 

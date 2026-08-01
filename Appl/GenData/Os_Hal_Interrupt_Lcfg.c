@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Interrupt_Lcfg.c
- *   Generation Time: 2026-07-30 17:52:17
+ *   Generation Time: 2026-07-31 17:05:25
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -130,6 +130,25 @@ CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_CounterIsr_Syste
   /* .Dummy         = */ (uint32)0
 };
 
+/*! HAL ISR configuration data: XSignalIsr_OsCore0 */
+CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_XSignalIsr_OsCore0 =
+{
+  /* .Level          = */ 70,
+  /* .Source         = */ 0x9b0uL,
+  /* .CoreAssignment = */ 0
+};
+
+CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_XSignalIsr_OsCore0 =
+{
+  /* .Dummy         = */ (uint32)0
+};
+
+/*! HAL X-Signal ISR configuration data: XSignalIsr_OsCore0 */
+CONST(Os_Hal_XSigInterruptConfigType, OS_CONST) OsCfg_Hal_XSig_XSignalIsr_OsCore0 =
+{
+  /* .ConfigData  = */ &OsCfg_Hal_IntIsr_XSignalIsr_OsCore0,
+};
+
 #define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
@@ -161,6 +180,25 @@ CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_CounterIsr_SystemTimer
 CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_CounterIsr_SystemTimer1 =
 {
   /* .Dummy         = */ (uint32)0
+};
+
+/*! HAL ISR configuration data: XSignalIsr_OsCore1 */
+CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_XSignalIsr_OsCore1 =
+{
+  /* .Level          = */ 70,
+  /* .Source         = */ 0x990uL,
+  /* .CoreAssignment = */ 2
+};
+
+CONST(Os_Hal_IntIsrMapConfigType, OS_CONST) OsCfg_Hal_IntIsrMap_XSignalIsr_OsCore1 =
+{
+  /* .Dummy         = */ (uint32)0
+};
+
+/*! HAL X-Signal ISR configuration data: XSignalIsr_OsCore1 */
+CONST(Os_Hal_XSigInterruptConfigType, OS_CONST) OsCfg_Hal_XSig_XSignalIsr_OsCore1 =
+{
+  /* .ConfigData  = */ &OsCfg_Hal_IntIsr_XSignalIsr_OsCore1,
 };
 
 #define OS_STOP_SEC_CORE1_CONST_UNSPECIFIED

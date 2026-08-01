@@ -4,6 +4,7 @@
 #include "Mcu_17_TimerIp.h"
 #include "IfxGtm_reg.h"
 #include "IfxEvadc_reg.h"
+#include "IfxSrc_reg.h"
 #include "string.h"
 #include "Dio.h"
 #include "Os.h"
@@ -59,6 +60,14 @@ volatile uint32 MotorCdd_AdcPwmCounterSyncCount = 0U;
 static sint32 MotorCdd_AdcOffsetSumVo1 = 0;
 static sint32 MotorCdd_AdcOffsetSumVo2 = 0;
 static sint32 MotorCdd_AdcOffsetSumVo3 = 0;
+
+
+
+void Adc_9183SenseVo1andVro_Notification(void)
+{
+  MotorCdd_AdcGroup0Notification();
+}
+
 
 static uint32 MotorCdd_AdcClampTriggerTick(uint32 triggerTick)
 {
@@ -191,6 +200,10 @@ static void MotorCdd_AdcFillRawFromHwRegs(MotorCdd_AdcRawType* rawOut)
 
 void MotorCdd_AdcInit(void)
 {
+  /* G0/G2/G3 belong to Core1 in ResourceM; Core0 EcuM only runs Adc_Init for G8.
+     Without this, Adc_* from Core1 runs with ADC_UNINIT (DET off) -> no HW trigger / no ISR. */
+  Adc_Init(&Adc_Config);
+
   (void)memset(MotorCdd_AdcMasterBuf, 0, sizeof(MotorCdd_AdcMasterBuf));
   (void)memset(&MotorCdd_AdcRaw, 0, sizeof(MotorCdd_AdcRaw));
   (void)memset(&MotorCdd_AdcPhysical, 0, sizeof(MotorCdd_AdcPhysical));
@@ -214,6 +227,9 @@ void MotorCdd_AdcHwTriggerInit(void)
   MotorCdd_AdcSetTriggerTick(MotorCdd_AdcTriggerTick);
 
   Adc_EnableGroupNotification(AdcConf_AdcGroup_AdcGroup_9183Sense);
+
+  /* IrqAdc_Init runs on Core0 and may clear SRE; G0 SR0 TOS=CPU1 (Irq_Cfg.h). */
+  SRC_VADCG0SR0.B.SRE = 1U;
 }
 
 void MotorCdd_AdcRunFastLoop(void)

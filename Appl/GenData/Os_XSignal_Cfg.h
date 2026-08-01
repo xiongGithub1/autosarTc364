@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_XSignal_Cfg.h
- *   Generation Time: 2026-07-30 17:52:17
+ *   Generation Time: 2026-07-31 14:18:08
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -57,10 +57,20 @@
  *********************************************************************************************************************/
 
 /*! Defines whether the X-Signal module is active (STD_ON) or not (STD_OFF). */
-# define OS_CFG_XSIGNAL                          (STD_OFF)
+# define OS_CFG_XSIGNAL                          (STD_ON)
 
 /*! Defines whether cross core calls shall be performed asynchronous (STD_ON) or not (STD_OFF). */
 # define OS_CFG_XSIG_USEASYNC                    (STD_OFF)
+
+/* X-Signal defines for core: OsCore0 */
+# define OS_CFG_NUM_XSIG_OSCORE0_ISRS     (1u)
+# define OS_CFG_SIZE_OSCORE0_SEND0_XSIGNALISR_OSCORE1_RECV0_BUFFER     (2u)
+# define OS_CFG_NUM_ISR_XSIGNALISR_OSCORE0_PORTS     (1u)
+
+/* X-Signal defines for core: OsCore1 */
+# define OS_CFG_NUM_XSIG_OSCORE1_ISRS     (1u)
+# define OS_CFG_SIZE_OSCORE1_SEND0_XSIGNALISR_OSCORE0_RECV0_BUFFER     (2u)
+# define OS_CFG_NUM_ISR_XSIGNALISR_OSCORE1_PORTS     (1u)
 
 
 /**********************************************************************************************************************

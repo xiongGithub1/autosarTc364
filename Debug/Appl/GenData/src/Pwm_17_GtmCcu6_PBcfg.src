@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
-	.compiler_invocation	"ctc -f cc18244a --dep-file=Appl\\GenData\\src\\.Pwm_17_GtmCcu6_PBcfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -DBRS_COMP_TASKING -DBRS_PLATFORM_AURIX -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Include -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=Appl\\GenData\\src\\Pwm_17_GtmCcu6_PBcfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\src\\Pwm_17_GtmCcu6_PBcfg.src ..\\Appl\\GenData\\src\\Pwm_17_GtmCcu6_PBcfg.c"
+	.compiler_invocation	"ctc -f cc16904a --dep-file=Appl\\GenData\\src\\.Pwm_17_GtmCcu6_PBcfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -DBRS_COMP_TASKING -DBRS_PLATFORM_AURIX -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Include -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=Appl\\GenData\\src\\Pwm_17_GtmCcu6_PBcfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\src\\Pwm_17_GtmCcu6_PBcfg.src ..\\Appl\\GenData\\src\\Pwm_17_GtmCcu6_PBcfg.c"
 	.compiler_name		"ctc"
 	;source	'..\\Appl\\GenData\\src\\Pwm_17_GtmCcu6_PBcfg.c'
 
@@ -13,11 +13,11 @@ Pwm_ChannelIndexMap:	.type	object
 	.size	Pwm_ChannelIndexMap,4
 	.space	1
 	.byte	1,2,3
-	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('Pwm_kChannelConfigGtm_Core0')
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('Pwm_kChannelConfigGtm_Core1')
 	.sect	'.rodata.MSR_CONST'
 	.align	4
-Pwm_kChannelConfigGtm_Core0:	.type	object
-	.size	Pwm_kChannelConfigGtm_Core0,144
+Pwm_kChannelConfigGtm_Core1:	.type	object
+	.size	Pwm_kChannelConfigGtm_Core1,144
 	.word	1
 	.space	4
 	.word	-2130706430,10000,10000
@@ -43,50 +43,49 @@ Pwm_kChannelConfigGtm_Core0:	.type	object
 	.word	16777215
 	.space	4
 	.word	128
-	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('Pwm_kChannelConfigurationCore0')
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('Pwm_kChannelConfigurationCore1')
 	.sect	'.rodata.MSR_CONST'
 	.align	4
-Pwm_kChannelConfigurationCore0:	.type	object
-	.size	Pwm_kChannelConfigurationCore0,80
+Pwm_kChannelConfigurationCore1:	.type	object
+	.size	Pwm_kChannelConfigurationCore1,80
 	.space	4
 	.word	10000
 	.space	8
-	.word	Pwm_kChannelConfigGtm_Core0
+	.word	Pwm_kChannelConfigGtm_Core1
 	.byte	1
 	.space	1
 	.half	52
 	.word	10000
 	.space	4
-	.word	5000,Pwm_kChannelConfigGtm_Core0+36
+	.word	5000,Pwm_kChannelConfigGtm_Core1+36
 	.byte	2
 	.space	1
 	.half	52
 	.word	10000
 	.space	4
-	.word	5000,Pwm_kChannelConfigGtm_Core0+72
+	.word	5000,Pwm_kChannelConfigGtm_Core1+72
 	.byte	3
 	.space	1
 	.half	52
 	.word	10000
 	.space	4
-	.word	5000,Pwm_kChannelConfigGtm_Core0+108
-	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('Pwm_CoreConfigCore0')
+	.word	5000,Pwm_kChannelConfigGtm_Core1+108
+	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('Pwm_CoreConfigCore1')
 	.sect	'.rodata.MSR_CONST'
 	.align	4
-Pwm_CoreConfigCore0:	.type	object
-	.size	Pwm_CoreConfigCore0,8
+Pwm_CoreConfigCore1:	.type	object
+	.size	Pwm_CoreConfigCore1,8
 	.byte	4
 	.space	3
-	.word	Pwm_kChannelConfigurationCore0
+	.word	Pwm_kChannelConfigurationCore1
 	.sdecl	'.rodata.MSR_CONST',data,rom,cluster('Pwm_17_GtmCcu6_Config')
 	.sect	'.rodata.MSR_CONST'
 	.global	Pwm_17_GtmCcu6_Config
 	.align	4
 Pwm_17_GtmCcu6_Config:	.type	object
 	.size	Pwm_17_GtmCcu6_Config,20
-	.word	Pwm_CoreConfigCore0
 	.space	4
-	.word	Pwm_ChannelIndexMap,-1,-1
+	.word	Pwm_CoreConfigCore1,Pwm_ChannelIndexMap,-1,-1
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L3:
@@ -18188,7 +18187,7 @@ Pwm_17_GtmCcu6_Config:	.type	object
 	.sect	'.debug_abbrev'
 .L9:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
-	.sdecl	'.debug_info',debug,cluster('Pwm_kChannelConfigGtm_Core0')
+	.sdecl	'.debug_info',debug,cluster('Pwm_kChannelConfigGtm_Core1')
 	.sect	'.debug_info'
 .L10:
 	.word	195
@@ -18200,16 +18199,16 @@ Pwm_17_GtmCcu6_Config:	.type	object
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
 	.word	.L2
 	.byte	3
-	.byte	'Pwm_kChannelConfigGtm_Core0',0,1,168,1,45
+	.byte	'Pwm_kChannelConfigGtm_Core1',0,1,168,1,45
 	.word	.L18
 	.byte	5,3
-	.word	Pwm_kChannelConfigGtm_Core0
+	.word	Pwm_kChannelConfigGtm_Core1
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('Pwm_kChannelConfigGtm_Core0')
+	.sdecl	'.debug_abbrev',debug,cluster('Pwm_kChannelConfigGtm_Core1')
 	.sect	'.debug_abbrev'
 .L11:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
-	.sdecl	'.debug_info',debug,cluster('Pwm_kChannelConfigurationCore0')
+	.sdecl	'.debug_info',debug,cluster('Pwm_kChannelConfigurationCore1')
 	.sect	'.debug_info'
 .L12:
 	.word	198
@@ -18221,16 +18220,16 @@ Pwm_17_GtmCcu6_Config:	.type	object
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
 	.word	.L2
 	.byte	3
-	.byte	'Pwm_kChannelConfigurationCore0',0,1,220,1,47
+	.byte	'Pwm_kChannelConfigurationCore1',0,1,220,1,47
 	.word	.L19
 	.byte	5,3
-	.word	Pwm_kChannelConfigurationCore0
+	.word	Pwm_kChannelConfigurationCore1
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('Pwm_kChannelConfigurationCore0')
+	.sdecl	'.debug_abbrev',debug,cluster('Pwm_kChannelConfigurationCore1')
 	.sect	'.debug_abbrev'
 .L13:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
-	.sdecl	'.debug_info',debug,cluster('Pwm_CoreConfigCore0')
+	.sdecl	'.debug_info',debug,cluster('Pwm_CoreConfigCore1')
 	.sect	'.debug_info'
 .L14:
 	.word	187
@@ -18242,12 +18241,12 @@ Pwm_17_GtmCcu6_Config:	.type	object
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1,2
 	.word	.L2
 	.byte	3
-	.byte	'Pwm_CoreConfigCore0',0,1,188,2,44
+	.byte	'Pwm_CoreConfigCore1',0,1,188,2,44
 	.word	.L20
 	.byte	5,3
-	.word	Pwm_CoreConfigCore0
+	.word	Pwm_CoreConfigCore1
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('Pwm_CoreConfigCore0')
+	.sdecl	'.debug_abbrev',debug,cluster('Pwm_CoreConfigCore1')
 	.sect	'.debug_abbrev'
 .L15:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
@@ -18268,7 +18267,7 @@ Pwm_17_GtmCcu6_Config:	.type	object
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    14  **                                                                            **
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    15  **  VERSION   : 20.0.0                                                        **
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    16  **                                                                            **
-; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    17  **  DATE, TIME: 2026-07-30, 20:42:28              !!!IGNORE-LINE!!!           **
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    17  **  DATE, TIME: 2026-07-31, 20:00:42              !!!IGNORE-LINE!!!           **
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    18  **                                                                            **
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    19  **  GENERATOR : Build b191017-0938                !!!IGNORE-LINE!!!           **
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	    20  **                                                                            **
@@ -18412,14 +18411,14 @@ Pwm_17_GtmCcu6_Config:	.type	object
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   158  in generated code due to Autosar Naming constraints.*/
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   159  /* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going beyond 32 chars.
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   160  in generated code due to Autosar Naming constraints.*/
-; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   161  #define PWM_17_GTMCCU6_START_SEC_CONFIG_DATA_ASIL_B_CORE0_UNSPECIFIED
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   161  #define PWM_17_GTMCCU6_START_SEC_CONFIG_DATA_ASIL_B_CORE1_UNSPECIFIED
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   162  /* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   163  without safegaurd. It complies to Autosar guidelines. */
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   164  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration of notification function 
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   165  before MemMap inclusion It complies to Autosar guidelines. */
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   166  #include "Pwm_17_GtmCcu6_MemMap.h"
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   167          
-; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   168  static const Mcu_17_Gtm_TomAtomChConfigType Pwm_kChannelConfigGtm_Core0[4] = 
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   168  static const Mcu_17_Gtm_TomAtomChConfigType Pwm_kChannelConfigGtm_Core1[4] = 
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   169  {
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   170    {
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   171      MCU_GTM_TIMER_ATOM, /* Timer Type (TOM/ATOM)*/
@@ -18471,7 +18470,7 @@ Pwm_17_GtmCcu6_Config:	.type	object
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   217    },
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   218  };
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   219        
-; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   220  static const Pwm_17_GtmCcu6_ChannelConfigType Pwm_kChannelConfigurationCore0[] =
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   220  static const Pwm_17_GtmCcu6_ChannelConfigType Pwm_kChannelConfigurationCore1[] =
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   221  {
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   222  /*******************************************************************************
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   223  *  Channel Number        : 0
@@ -18492,7 +18491,7 @@ Pwm_17_GtmCcu6_Config:	.type	object
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   238      (Pwm_17_GtmCcu6_PeriodType)0x2710, /* Default Period */
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   239      (uint32)0x0, /* Default Duty Cycle */
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   240      (uint32)0x0, /* Shift Value */
-; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   241      (const void*)&Pwm_kChannelConfigGtm_Core0[0]
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   241      (const void*)&Pwm_kChannelConfigGtm_Core1[0]
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   242      /* MISRA2012_RULE_11_3_JUSTIFICATION: SFR access. No side effects foreseen
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   243      * by violating this MISRA rule. */
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   244    },
@@ -18515,7 +18514,7 @@ Pwm_17_GtmCcu6_Config:	.type	object
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   261      (Pwm_17_GtmCcu6_PeriodType)0x2710, /* Default Period */
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   262      (uint32)0x0, /* Default Duty Cycle */
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   263      (uint32)0x1388, /* Shift Value */
-; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   264      (const void*)&Pwm_kChannelConfigGtm_Core0[1]
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   264      (const void*)&Pwm_kChannelConfigGtm_Core1[1]
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   265      /* MISRA2012_RULE_11_3_JUSTIFICATION: SFR access. No side effects foreseen
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   266      * by violating this MISRA rule. */
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   267    },
@@ -18538,7 +18537,7 @@ Pwm_17_GtmCcu6_Config:	.type	object
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   284      (Pwm_17_GtmCcu6_PeriodType)0x2710, /* Default Period */
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   285      (uint32)0x0, /* Default Duty Cycle */
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   286      (uint32)0x1388, /* Shift Value */
-; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   287      (const void*)&Pwm_kChannelConfigGtm_Core0[2]
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   287      (const void*)&Pwm_kChannelConfigGtm_Core1[2]
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   288      /* MISRA2012_RULE_11_3_JUSTIFICATION: SFR access. No side effects foreseen
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   289      * by violating this MISRA rule. */
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   290    },
@@ -18561,16 +18560,16 @@ Pwm_17_GtmCcu6_Config:	.type	object
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   307      (Pwm_17_GtmCcu6_PeriodType)0x2710, /* Default Period */
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   308      (uint32)0x0, /* Default Duty Cycle */
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   309      (uint32)0x1388, /* Shift Value */
-; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   310      (const void*)&Pwm_kChannelConfigGtm_Core0[3]
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   310      (const void*)&Pwm_kChannelConfigGtm_Core1[3]
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   311      /* MISRA2012_RULE_11_3_JUSTIFICATION: SFR access. No side effects foreseen
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   312      * by violating this MISRA rule. */
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   313    },
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   314  };
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   315        
-; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   316  static const Pwm_17_GtmCcu6_CoreConfigType Pwm_CoreConfigCore0 =
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   316  static const Pwm_17_GtmCcu6_CoreConfigType Pwm_CoreConfigCore1 =
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   317  { 
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   318    (Pwm_17_GtmCcu6_ChannelType)4U,
-; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   319    (const Pwm_17_GtmCcu6_ChannelConfigType*)&Pwm_kChannelConfigurationCore0[0]
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   319    (const Pwm_17_GtmCcu6_ChannelConfigType*)&Pwm_kChannelConfigurationCore1[0]
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   320  };
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   321  /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going beyond 32 chars.
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   322  in generated code due to Autosar Naming constraints.*/
@@ -18580,7 +18579,7 @@ Pwm_17_GtmCcu6_Config:	.type	object
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   326  in generated code due to Autosar Naming constraints.*/
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   327  /* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going beyond 32 chars.
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   328  in generated code due to Autosar Naming constraints.*/
-; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   329  #define PWM_17_GTMCCU6_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_UNSPECIFIED
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   329  #define PWM_17_GTMCCU6_STOP_SEC_CONFIG_DATA_ASIL_B_CORE1_UNSPECIFIED
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   330  /* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   331  without safegaurd. It complies to Autosar guidelines. */
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   332  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration of notification function 
@@ -18605,14 +18604,14 @@ Pwm_17_GtmCcu6_Config:	.type	object
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   351  {
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   352    {
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   353  
-; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   354      /* MISRA2012_RULE_11_8_JUSTIFICATION: This typecast is in-line with the data type of the structure member PwmCoreAdd, MISRA is reported becasue of structure Pwm_CoreConfigCore,
-; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   355      which is defined as constant to be allocated in Read only memory, Hence no side effects foreseen by violating this MISRA rule */
-; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   356  
-; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   357      (Pwm_17_GtmCcu6_CoreConfigType*)&Pwm_CoreConfigCore0,
-; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   358      /* MISRA2012_RULE_11_8_JUSTIFICATION: This typecast is in-line with the data type of the structure member PwmCoreAdd, MISRA is reported becasue of structure Pwm_CoreConfigCore,
-; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   359      which is defined as constant to be allocated in Read only memory, Hence no side effects foreseen by violating this MISRA rule */
-; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   360  
-; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   361      NULL_PTR
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   354      NULL_PTR,
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   355      /* MISRA2012_RULE_11_8_JUSTIFICATION: This typecast is in-line with the data type of the structure member PwmCoreAdd, MISRA is reported becasue of structure Pwm_CoreConfigCore,
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   356      which is defined as constant to be allocated in Read only memory, Hence no side effects foreseen by violating this MISRA rule */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   357  
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   358      (Pwm_17_GtmCcu6_CoreConfigType*)&Pwm_CoreConfigCore1
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   359      /* MISRA2012_RULE_11_8_JUSTIFICATION: This typecast is in-line with the data type of the structure member PwmCoreAdd, MISRA is reported becasue of structure Pwm_CoreConfigCore,
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   360      which is defined as constant to be allocated in Read only memory, Hence no side effects foreseen by violating this MISRA rule */
+; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   361  
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   362    },
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   363    /* MISRA2012_RULE_11_8_JUSTIFICATION: This typecast is in-line with the data type of structure member PwmChannelIdxmapPtr, MISRA is reported becasue of data type Pwm_ChannelIndexMap,
 ; ..\Appl\GenData\src\Pwm_17_GtmCcu6_PBcfg.c	   364    which is defined as constant to be allocated in Read only memory, Hence no side effects foreseen by violating this MISRA rule */

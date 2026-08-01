@@ -156,8 +156,8 @@
 
    TASK MotorTask {
       ACTIVATION = 1:"@RO@";
-      PRIORITY = 0:"@RO@";
-      SCHEDULE = NON:"@RO@";
+      PRIORITY = 100:"@RO@";
+      SCHEDULE = FULL:"@RO@";
 // TIMING_PROTECTION = FALSE|TRUE; (AUTOSAR OS only)
       AUTOSTART = FALSE:"@RO@";
       EVENT = Rte_Ev_Cyclic_MotorTask_0_1ms:"@RO@";

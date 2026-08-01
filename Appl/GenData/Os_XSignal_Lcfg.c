@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_XSignal_Lcfg.c
- *   Generation Time: 2026-07-30 17:52:17
+ *   Generation Time: 2026-07-31 14:18:08
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -83,12 +83,24 @@
 #define OS_START_SEC_CORE0_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
+/*! X-Signal send port configuration data: OsCore0 -> OsCore1/XSignalIsr_OsCore1_Recv0 */
+OS_LOCAL CONST(Os_XSigSendPortConfigType, OS_CONST) OsCfg_XSig_OsCore0_Send0;
+
+/*! X-Signal receive port configuration data: XSignalIsr_OsCore0_Recv0 <- OsCore1 */
+OS_LOCAL CONST(Os_XSigRecvPortConfigType, OS_CONST) OsCfg_XSig_XSignalIsr_OsCore0_Recv0;
+
 #define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
 #define OS_START_SEC_CORE1_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! X-Signal send port configuration data: OsCore1 -> OsCore0/XSignalIsr_OsCore0_Recv0 */
+OS_LOCAL CONST(Os_XSigSendPortConfigType, OS_CONST) OsCfg_XSig_OsCore1_Send0;
+
+/*! X-Signal receive port configuration data: XSignalIsr_OsCore1_Recv0 <- OsCore0 */
+OS_LOCAL CONST(Os_XSigRecvPortConfigType, OS_CONST) OsCfg_XSig_XSignalIsr_OsCore1_Recv0;
 
 #define OS_STOP_SEC_CORE1_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
@@ -101,12 +113,32 @@
 #define OS_START_SEC_CORE0_VAR_NOCACHE_NOINIT_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
+/* Dynamic X-Signal send port data: OsCore0 -> OsCore1/XSignalIsr_OsCore1_Recv0 */
+OS_LOCAL VAR(Os_XSigChannelSendType, OS_VAR_NOINIT) OsCfg_XSig_OsCore0_Send0_XSignalIsr_OsCore1_Recv0_Send_Dyn;
+OS_LOCAL VAR(Os_XSigSendDataType, OS_VAR_NOINIT)
+  OsCore0_Send0_Data[OS_CFG_SIZE_OSCORE0_SEND0_XSIGNALISR_OSCORE1_RECV0_BUFFER];
+
+/* Dynamic X-Signal receive port data: XSignalIsr_OsCore0_Recv0 <- OsCore1 */
+OS_LOCAL VAR(Os_XSigChannelRecvType, OS_VAR_NOINIT) OsCfg_XSig_OsCore1_Send0_XSignalIsr_OsCore0_Recv0_Recv_Dyn;
+OS_LOCAL VAR(Os_XSigRecvDataType, OS_VAR_NOINIT)
+  XSignalIsr_OsCore0_Recv0_Data[OS_CFG_SIZE_OSCORE1_SEND0_XSIGNALISR_OSCORE0_RECV0_BUFFER];
+
 #define OS_STOP_SEC_CORE0_VAR_NOCACHE_NOINIT_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
 #define OS_START_SEC_CORE1_VAR_NOCACHE_NOINIT_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/* Dynamic X-Signal send port data: OsCore1 -> OsCore0/XSignalIsr_OsCore0_Recv0 */
+OS_LOCAL VAR(Os_XSigChannelSendType, OS_VAR_NOINIT) OsCfg_XSig_OsCore1_Send0_XSignalIsr_OsCore0_Recv0_Send_Dyn;
+OS_LOCAL VAR(Os_XSigSendDataType, OS_VAR_NOINIT)
+  OsCore1_Send0_Data[OS_CFG_SIZE_OSCORE1_SEND0_XSIGNALISR_OSCORE0_RECV0_BUFFER];
+
+/* Dynamic X-Signal receive port data: XSignalIsr_OsCore1_Recv0 <- OsCore0 */
+OS_LOCAL VAR(Os_XSigChannelRecvType, OS_VAR_NOINIT) OsCfg_XSig_OsCore0_Send0_XSignalIsr_OsCore1_Recv0_Recv_Dyn;
+OS_LOCAL VAR(Os_XSigRecvDataType, OS_VAR_NOINIT)
+  XSignalIsr_OsCore1_Recv0_Data[OS_CFG_SIZE_OSCORE0_SEND0_XSIGNALISR_OSCORE1_RECV0_BUFFER];
 
 #define OS_STOP_SEC_CORE1_VAR_NOCACHE_NOINIT_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
@@ -123,7 +155,6 @@
 CONST(OSServiceIdType, OS_CONST) OsCfg_XSig_ServiceMap[OS_XSIGFUNCTIONIDX_COUNT + 1] =                                  /* PRQA S 1533, 4521 */ /* MD_Os_Rule8.9_1533, MD_Os_Rule10.1_4521 */
 {
   /* USED */
-  /* UNUSED */
   OSServiceId_ActivateTask,
   OSServiceId_CancelAlarm,
   OSServiceId_ControlIdle,
@@ -151,7 +182,38 @@ CONST(OSServiceIdType, OS_CONST) OsCfg_XSig_ServiceMap[OS_XSIGFUNCTIONIDX_COUNT 
   OSServiceId_StartScheduleTableRel,
   OSServiceId_StopScheduleTable,
   OSServiceId_TerminateApplication,
+  /* UNUSED */
   OSSERVICEID_COUNT
+};
+
+/*! X-Signal data buffer: OsCore0 -> OsCore1/XSignalIsr_OsCore1_Recv0 */
+OS_LOCAL CONST(Os_XSigComDataConfigType, OS_CONST) OsCfg_XSig_OsCore0_Send0_XSignalIsr_OsCore1_Recv0_Buffer_Dyn[OS_CFG_SIZE_OSCORE0_SEND0_XSIGNALISR_OSCORE1_RECV0_BUFFER] =
+{
+  {
+    /* .SendData = */ &(OsCore0_Send0_Data[0]),
+    /* .RecvData = */ &(XSignalIsr_OsCore1_Recv0_Data[0]),
+    /* .Idx      = */ 0
+  },
+  {
+    /* .SendData = */ &(OsCore0_Send0_Data[1]),
+    /* .RecvData = */ &(XSignalIsr_OsCore1_Recv0_Data[1]),
+    /* .Idx      = */ 1
+  }
+};
+
+/*! X-Signal data buffer: OsCore1 -> OsCore0/XSignalIsr_OsCore0_Recv0 */
+OS_LOCAL CONST(Os_XSigComDataConfigType, OS_CONST) OsCfg_XSig_OsCore1_Send0_XSignalIsr_OsCore0_Recv0_Buffer_Dyn[OS_CFG_SIZE_OSCORE1_SEND0_XSIGNALISR_OSCORE0_RECV0_BUFFER] =
+{
+  {
+    /* .SendData = */ &(OsCore1_Send0_Data[0]),
+    /* .RecvData = */ &(XSignalIsr_OsCore0_Recv0_Data[0]),
+    /* .Idx      = */ 0
+  },
+  {
+    /* .SendData = */ &(OsCore1_Send0_Data[1]),
+    /* .RecvData = */ &(XSignalIsr_OsCore0_Recv0_Data[1]),
+    /* .Idx      = */ 1
+  }
 };
 
 #define OS_STOP_SEC_CONST_UNSPECIFIED
@@ -161,12 +223,192 @@ CONST(OSServiceIdType, OS_CONST) OsCfg_XSig_ServiceMap[OS_XSIGFUNCTIONIDX_COUNT 
 #define OS_START_SEC_CORE0_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
+/*! X-Signal send port configuration data: OsCore0 -> OsCore1/XSignalIsr_OsCore1_Recv0 */
+OS_LOCAL CONST(Os_XSigSendPortConfigType, OS_CONST) OsCfg_XSig_OsCore0_Send0 =
+{
+  /* .SendChannel = */
+  {
+    /* .Dyn        = */ &OsCfg_XSig_OsCore0_Send0_XSignalIsr_OsCore1_Recv0_Send_Dyn,
+    /* .Receive    = */ &OsCfg_XSig_OsCore0_Send0_XSignalIsr_OsCore1_Recv0_Recv_Dyn,
+    /* .Buffer     = */ OsCfg_XSig_OsCore0_Send0_XSignalIsr_OsCore1_Recv0_Buffer_Dyn,
+    /* .BufferSize = */ (Os_XSigBufferIdxType)OS_CFG_SIZE_OSCORE0_SEND0_XSIGNALISR_OSCORE1_RECV0_BUFFER
+  },
+  /* .XSigIsr     = */ &OsCfg_Isr_XSignalIsr_OsCore1,
+  /* .RecvPort    = */ &OsCfg_XSig_XSignalIsr_OsCore1_Recv0,
+  /* .SendCore    = */ &OsCfg_Core_OsCore0
+};
+
+/*! X-Signal receive port configuration data: XSignalIsr_OsCore0_Recv0 <- OsCore1 */
+OS_LOCAL CONST(Os_XSigRecvPortConfigType, OS_CONST) OsCfg_XSig_XSignalIsr_OsCore0_Recv0 =
+{
+  /* .RecvChannel = */
+  {
+    /* .Dyn        = */ &OsCfg_XSig_OsCore1_Send0_XSignalIsr_OsCore0_Recv0_Recv_Dyn,
+    /* .Send       = */ &OsCfg_XSig_OsCore1_Send0_XSignalIsr_OsCore0_Recv0_Send_Dyn,
+    /* .Buffer     = */ OsCfg_XSig_OsCore1_Send0_XSignalIsr_OsCore0_Recv0_Buffer_Dyn,
+    /* .BufferSize = */ (Os_XSigBufferIdxType)OS_CFG_SIZE_OSCORE1_SEND0_XSIGNALISR_OSCORE0_RECV0_BUFFER
+  },
+  /* .SendPort    = */ &OsCfg_XSig_OsCore1_Send0
+};
+
+/*! X-Signal ISR function table: XSignalIsr_OsCore0 */
+CONST(Os_XSigFunctionTableConfigType, OS_CONST) OsCfg_Isr_XSignalIsr_OsCore0_FuncTable =
+{
+  /* .FunctionDescription = */
+  {
+    { Os_XSigRecv_ActivateTask }, /* OSServiceId_ActivateTask */
+    { Os_XSigRecv_CancelAlarm }, /* OSServiceId_CancelAlarm */
+    { Os_XSigRecv_ControlIdle }, /* OSServiceId_ControlIdle */
+    { Os_XSigRecv_GetAlarm }, /* OSServiceId_GetAlarm */
+    { Os_XSigRecv_GetApplicationState }, /* OSServiceId_GetApplicationState */
+    { Os_XSigRecv_GetCounterValue }, /* OSServiceId_GetCounterValue */
+    { Os_XSigRecv_GetErrorHookStackUsage }, /* OSServiceId_GetErrorHookStackUsage */
+    { Os_XSigRecv_GetEvent }, /* OSServiceId_GetEvent */
+    { Os_XSigRecv_GetISRStackUsage }, /* OSServiceId_GetISRStackUsage */
+    { Os_XSigRecv_GetKernelStackUsage }, /* OSServiceId_GetKernelStackUsage */
+    { Os_XSigRecv_GetNonTrustedFunctionStackUsage }, /* OSServiceId_GetNonTrustedFunctionStackUsage */
+    { Os_XSigRecv_GetProtectionHookStackUsage }, /* OSServiceId_GetProtectionHookStackUsage */
+    { Os_XSigRecv_GetScheduleTableStatus }, /* OSServiceId_GetScheduleTableStatus */
+    { Os_XSigRecv_GetShutdownHookStackUsage }, /* OSServiceId_GetShutdownHookStackUsage */
+    { Os_XSigRecv_GetStartupHookStackUsage }, /* OSServiceId_GetStartupHookStackUsage */
+    { Os_XSigRecv_GetTaskStackUsage }, /* OSServiceId_GetTaskStackUsage */
+    { Os_XSigRecv_GetTaskState }, /* OSServiceId_GetTaskState */
+    { Os_XSigRecv_HookCallCallback }, /* OSServiceId_HookCallCallback */
+    { Os_XSigRecv_NextScheduleTable }, /* OSServiceId_NextScheduleTable */
+    { Os_XSigRecv_SetAbsAlarm }, /* OSServiceId_SetAbsAlarm */
+    { Os_XSigRecv_SetEvent }, /* OSServiceId_SetEvent */
+    { Os_XSigRecv_SetRelAlarm }, /* OSServiceId_SetRelAlarm */
+    { Os_XSigRecv_ShutdownAllCores }, /* OSServiceId_ShutdownAllCores */
+    { Os_XSigRecv_StartScheduleTableAbs }, /* OSServiceId_StartScheduleTableAbs */
+    { Os_XSigRecv_StartScheduleTableRel }, /* OSServiceId_StartScheduleTableRel */
+    { Os_XSigRecv_StopScheduleTable }, /* OSServiceId_StopScheduleTable */
+    { Os_XSigRecv_TerminateApplication }, /* OSServiceId_TerminateApplication */
+    { NULL_PTR }
+  }
+};
+
+/*! X-Signal ISR receive ports reference table: XSignalIsr_OsCore0 */
+CONST(Os_XSigRecvPortConfigRefType, OS_CONST) OsCfg_Isr_XSignalIsr_OsCore0_PortRefs[OS_CFG_NUM_ISR_XSIGNALISR_OSCORE0_PORTS + 1u] =
+{
+  &OsCfg_XSig_XSignalIsr_OsCore0_Recv0,
+  NULL_PTR
+};
+
+/*! X-Signal receiver ISRs reference table: OsCore0 */
+OS_LOCAL CONST(Os_XSigIsrConfigRefType, OS_CONST) OsCfg_XSig_OsCore0_IsrRefs[OS_CFG_NUM_XSIG_OSCORE0_ISRS + 1u] =
+{
+  &OsCfg_Isr_XSignalIsr_OsCore0,
+  NULL_PTR
+};
+
+/*! X-Signal configuration data: OsCore0 */
+CONST(Os_XSigConfigType, OS_CONST) OsCfg_XSig_OsCore0 =
+{
+  /* .XSigSendPorts    = */ 
+  {
+    /* [0] = */ NULL_PTR, /* OsCore0 */
+    /* [1] = */ &OsCfg_XSig_OsCore0_Send0 /* OsCore1 */
+  },
+  /* .XSigRecvIsrRefs  = */ OsCfg_XSig_OsCore0_IsrRefs,
+  /* .XSigRecvIsrCount = */ (Os_ObjIdxType)OS_CFG_NUM_XSIG_OSCORE0_ISRS
+};
+
 #define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
 #define OS_START_SEC_CORE1_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! X-Signal send port configuration data: OsCore1 -> OsCore0/XSignalIsr_OsCore0_Recv0 */
+OS_LOCAL CONST(Os_XSigSendPortConfigType, OS_CONST) OsCfg_XSig_OsCore1_Send0 =
+{
+  /* .SendChannel = */
+  {
+    /* .Dyn        = */ &OsCfg_XSig_OsCore1_Send0_XSignalIsr_OsCore0_Recv0_Send_Dyn,
+    /* .Receive    = */ &OsCfg_XSig_OsCore1_Send0_XSignalIsr_OsCore0_Recv0_Recv_Dyn,
+    /* .Buffer     = */ OsCfg_XSig_OsCore1_Send0_XSignalIsr_OsCore0_Recv0_Buffer_Dyn,
+    /* .BufferSize = */ (Os_XSigBufferIdxType)OS_CFG_SIZE_OSCORE1_SEND0_XSIGNALISR_OSCORE0_RECV0_BUFFER
+  },
+  /* .XSigIsr     = */ &OsCfg_Isr_XSignalIsr_OsCore0,
+  /* .RecvPort    = */ &OsCfg_XSig_XSignalIsr_OsCore0_Recv0,
+  /* .SendCore    = */ &OsCfg_Core_OsCore1
+};
+
+/*! X-Signal receive port configuration data: XSignalIsr_OsCore1_Recv0 <- OsCore0 */
+OS_LOCAL CONST(Os_XSigRecvPortConfigType, OS_CONST) OsCfg_XSig_XSignalIsr_OsCore1_Recv0 =
+{
+  /* .RecvChannel = */
+  {
+    /* .Dyn        = */ &OsCfg_XSig_OsCore0_Send0_XSignalIsr_OsCore1_Recv0_Recv_Dyn,
+    /* .Send       = */ &OsCfg_XSig_OsCore0_Send0_XSignalIsr_OsCore1_Recv0_Send_Dyn,
+    /* .Buffer     = */ OsCfg_XSig_OsCore0_Send0_XSignalIsr_OsCore1_Recv0_Buffer_Dyn,
+    /* .BufferSize = */ (Os_XSigBufferIdxType)OS_CFG_SIZE_OSCORE0_SEND0_XSIGNALISR_OSCORE1_RECV0_BUFFER
+  },
+  /* .SendPort    = */ &OsCfg_XSig_OsCore0_Send0
+};
+
+/*! X-Signal ISR function table: XSignalIsr_OsCore1 */
+CONST(Os_XSigFunctionTableConfigType, OS_CONST) OsCfg_Isr_XSignalIsr_OsCore1_FuncTable =
+{
+  /* .FunctionDescription = */
+  {
+    { Os_XSigRecv_ActivateTask }, /* OSServiceId_ActivateTask */
+    { Os_XSigRecv_CancelAlarm }, /* OSServiceId_CancelAlarm */
+    { Os_XSigRecv_ControlIdle }, /* OSServiceId_ControlIdle */
+    { Os_XSigRecv_GetAlarm }, /* OSServiceId_GetAlarm */
+    { Os_XSigRecv_GetApplicationState }, /* OSServiceId_GetApplicationState */
+    { Os_XSigRecv_GetCounterValue }, /* OSServiceId_GetCounterValue */
+    { Os_XSigRecv_GetErrorHookStackUsage }, /* OSServiceId_GetErrorHookStackUsage */
+    { Os_XSigRecv_GetEvent }, /* OSServiceId_GetEvent */
+    { Os_XSigRecv_GetISRStackUsage }, /* OSServiceId_GetISRStackUsage */
+    { Os_XSigRecv_GetKernelStackUsage }, /* OSServiceId_GetKernelStackUsage */
+    { Os_XSigRecv_GetNonTrustedFunctionStackUsage }, /* OSServiceId_GetNonTrustedFunctionStackUsage */
+    { Os_XSigRecv_GetProtectionHookStackUsage }, /* OSServiceId_GetProtectionHookStackUsage */
+    { Os_XSigRecv_GetScheduleTableStatus }, /* OSServiceId_GetScheduleTableStatus */
+    { Os_XSigRecv_GetShutdownHookStackUsage }, /* OSServiceId_GetShutdownHookStackUsage */
+    { Os_XSigRecv_GetStartupHookStackUsage }, /* OSServiceId_GetStartupHookStackUsage */
+    { Os_XSigRecv_GetTaskStackUsage }, /* OSServiceId_GetTaskStackUsage */
+    { Os_XSigRecv_GetTaskState }, /* OSServiceId_GetTaskState */
+    { Os_XSigRecv_HookCallCallback }, /* OSServiceId_HookCallCallback */
+    { Os_XSigRecv_NextScheduleTable }, /* OSServiceId_NextScheduleTable */
+    { Os_XSigRecv_SetAbsAlarm }, /* OSServiceId_SetAbsAlarm */
+    { Os_XSigRecv_SetEvent }, /* OSServiceId_SetEvent */
+    { Os_XSigRecv_SetRelAlarm }, /* OSServiceId_SetRelAlarm */
+    { Os_XSigRecv_ShutdownAllCores }, /* OSServiceId_ShutdownAllCores */
+    { Os_XSigRecv_StartScheduleTableAbs }, /* OSServiceId_StartScheduleTableAbs */
+    { Os_XSigRecv_StartScheduleTableRel }, /* OSServiceId_StartScheduleTableRel */
+    { Os_XSigRecv_StopScheduleTable }, /* OSServiceId_StopScheduleTable */
+    { Os_XSigRecv_TerminateApplication }, /* OSServiceId_TerminateApplication */
+    { NULL_PTR }
+  }
+};
+
+/*! X-Signal ISR receive ports reference table: XSignalIsr_OsCore1 */
+CONST(Os_XSigRecvPortConfigRefType, OS_CONST) OsCfg_Isr_XSignalIsr_OsCore1_PortRefs[OS_CFG_NUM_ISR_XSIGNALISR_OSCORE1_PORTS + 1u] =
+{
+  &OsCfg_XSig_XSignalIsr_OsCore1_Recv0,
+  NULL_PTR
+};
+
+/*! X-Signal receiver ISRs reference table: OsCore1 */
+OS_LOCAL CONST(Os_XSigIsrConfigRefType, OS_CONST) OsCfg_XSig_OsCore1_IsrRefs[OS_CFG_NUM_XSIG_OSCORE1_ISRS + 1u] =
+{
+  &OsCfg_Isr_XSignalIsr_OsCore1,
+  NULL_PTR
+};
+
+/*! X-Signal configuration data: OsCore1 */
+CONST(Os_XSigConfigType, OS_CONST) OsCfg_XSig_OsCore1 =
+{
+  /* .XSigSendPorts    = */ 
+  {
+    /* [0] = */ &OsCfg_XSig_OsCore1_Send0, /* OsCore0 */
+    /* [1] = */ NULL_PTR /* OsCore1 */
+  },
+  /* .XSigRecvIsrRefs  = */ OsCfg_XSig_OsCore1_IsrRefs,
+  /* .XSigRecvIsrCount = */ (Os_ObjIdxType)OS_CFG_NUM_XSIG_OSCORE1_ISRS
+};
 
 #define OS_STOP_SEC_CORE1_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */

@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 10.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2026-07-30, 20:42:27        !!!IGNORE-LINE!!!                 **
+**  DATE, TIME: 2026-07-31, 20:00:41        !!!IGNORE-LINE!!!                 **
 **                                                                            **
 **  GENERATOR : Build b191017-0938          !!!IGNORE-LINE!!!                 **
 **                                                                            **
@@ -302,7 +302,7 @@ must be configured as 5.*/
             
 /*This parameter provides the array index for the Hw Unit 0 in the Adc_Hw_Unit
 Data structure of CPU Core0. Value of 0xFF is for an unconfigured Hw Unit */
-#define ADC0_KERNEL_INDEX_CORE0  (0U)
+#define ADC0_KERNEL_INDEX_CORE0  (0xFFU)
 
 /*This parameter provides the array index for the Hw Unit 1 in the Adc_Hw_Unit
 Data structure of CPU Core0. Value of 0xFF is for an unconfigured Hw Unit */
@@ -310,11 +310,11 @@ Data structure of CPU Core0. Value of 0xFF is for an unconfigured Hw Unit */
 
 /*This parameter provides the array index for the Hw Unit 2 in the Adc_Hw_Unit
 Data structure of CPU Core0. Value of 0xFF is for an unconfigured Hw Unit */
-#define ADC2_KERNEL_INDEX_CORE0  (1U)
+#define ADC2_KERNEL_INDEX_CORE0  (0xFFU)
 
 /*This parameter provides the array index for the Hw Unit 3 in the Adc_Hw_Unit
 Data structure of CPU Core0. Value of 0xFF is for an unconfigured Hw Unit */
-#define ADC3_KERNEL_INDEX_CORE0  (2U)
+#define ADC3_KERNEL_INDEX_CORE0  (0xFFU)
 
 /*This parameter provides the array index for the Hw Unit 4 in the Adc_Hw_Unit
 Data structure of CPU Core0. Value of 0xFF is for an unconfigured Hw Unit */
@@ -334,7 +334,7 @@ Data structure of CPU Core0. Value of 0xFF is for an unconfigured Hw Unit */
 
 /*This parameter provides the array index for the Hw Unit 8 in the Adc_Hw_Unit
 Data structure of CPU Core0. Value of 0xFF is for an unconfigured Hw Unit */
-#define ADC8_KERNEL_INDEX_CORE0  (3U)
+#define ADC8_KERNEL_INDEX_CORE0  (0U)
 
 /*This parameter provides the array index for the Hw Unit 9 in the Adc_Hw_Unit
 Data structure of CPU Core0. Value of 0xFF is for an unconfigured Hw Unit */
@@ -342,7 +342,7 @@ Data structure of CPU Core0. Value of 0xFF is for an unconfigured Hw Unit */
   
 /* This parameter stores the maximum number of ADC HW Units configured 
 on CPU Core0 across all configuration sets.*/
-#define ADC_KERNEL_USED_COUNT_CORE0  (4U)
+#define ADC_KERNEL_USED_COUNT_CORE0  (1U)
 
 /*** Group of all the indexes used for all the KERNELs on CPU Core0 ***/
 #define ADCX_KERNEL_INDEX_CORE0 \
@@ -356,10 +356,10 @@ ADC6_KERNEL_INDEX_CORE0 ,\
 ADC7_KERNEL_INDEX_CORE0 ,\
 ADC8_KERNEL_INDEX_CORE0 ,\
 ADC9_KERNEL_INDEX_CORE0 
-
+    
 /*This parameter provides the array index for the Hw Unit 0 in the Adc_Hw_Unit
 Data structure of CPU Core1. Value of 0xFF is for an unconfigured Hw Unit */
-#define ADC0_KERNEL_INDEX_CORE1  (0xFFU)
+#define ADC0_KERNEL_INDEX_CORE1  (0U)
 
 /*This parameter provides the array index for the Hw Unit 1 in the Adc_Hw_Unit
 Data structure of CPU Core1. Value of 0xFF is for an unconfigured Hw Unit */
@@ -367,11 +367,11 @@ Data structure of CPU Core1. Value of 0xFF is for an unconfigured Hw Unit */
 
 /*This parameter provides the array index for the Hw Unit 2 in the Adc_Hw_Unit
 Data structure of CPU Core1. Value of 0xFF is for an unconfigured Hw Unit */
-#define ADC2_KERNEL_INDEX_CORE1  (0xFFU)
+#define ADC2_KERNEL_INDEX_CORE1  (1U)
 
 /*This parameter provides the array index for the Hw Unit 3 in the Adc_Hw_Unit
 Data structure of CPU Core1. Value of 0xFF is for an unconfigured Hw Unit */
-#define ADC3_KERNEL_INDEX_CORE1  (0xFFU)
+#define ADC3_KERNEL_INDEX_CORE1  (2U)
 
 /*This parameter provides the array index for the Hw Unit 4 in the Adc_Hw_Unit
 Data structure of CPU Core1. Value of 0xFF is for an unconfigured Hw Unit */
@@ -399,7 +399,7 @@ Data structure of CPU Core1. Value of 0xFF is for an unconfigured Hw Unit */
   
 /* This parameter stores the maximum number of ADC HW Units configured 
 on CPU Core1 across all configuration sets.*/
-#define ADC_KERNEL_USED_COUNT_CORE1  (0U)
+#define ADC_KERNEL_USED_COUNT_CORE1  (3U)
 
 /*** Group of all the indexes used for all the KERNELs on CPU Core1 ***/
 #define ADCX_KERNEL_INDEX_CORE1 \

@@ -283,8 +283,8 @@ TASK(Default_MotorInitTask) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unrea
 
 /**********************************************************************************************************************
  * Task:     MotorTask
- * Priority: 0
- * Schedule: NON
+ * Priority: 100
+ * Schedule: FULL
  *********************************************************************************************************************/
 TASK(MotorTask) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unreachable */
 {
@@ -296,19 +296,19 @@ TASK(MotorTask) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unreachable */
     (void)GetEvent(MotorTask, &ev); /* PRQA S 3417 */ /* MD_Rte_Os */
     (void)ClearEvent(ev & (Rte_Ev_Cyclic_MotorTask_0_1ms | Rte_Ev_Run_MotorCdd_AdcSampleReady_Rp_AdcSampleReady_AdcSampleReady)); /* PRQA S 3417 */ /* MD_Rte_Os */
 
+    if ((ev & Rte_Ev_Cyclic_MotorTask_0_1ms) != (EventMaskType)0)
+    {
+      /* call runnable */
+      MotorCdd_MainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+
+      /* call runnable */
+      MotorControll_MainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+    }
+
     if ((ev & Rte_Ev_Run_MotorCdd_AdcSampleReady_Rp_AdcSampleReady_AdcSampleReady) != (EventMaskType)0)
     {
       /* call runnable */
       AdcSampleReady(); /* PRQA S 2987 */ /* MD_Rte_2987 */
-    }
-
-    if ((ev & Rte_Ev_Cyclic_MotorTask_0_1ms) != (EventMaskType)0)
-    {
-      /* call runnable */
-      MotorControll_MainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
-
-      /* call runnable */
-      MotorCdd_MainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
     }
   }
 } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */

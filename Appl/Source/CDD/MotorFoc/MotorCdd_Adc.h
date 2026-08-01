@@ -46,6 +46,7 @@ void MotorCdd_AdcSetTriggerTick(uint32 triggerTick);
 void MotorCdd_AdcSynchronizePwmTriggerCounter(void);
 void MotorCdd_AdcGroup0Notification(void);
 
+void Adc_9183SenseVo1andVro_Notification(void);
 void MotorCdd_AdcRunFastLoop(void);
 /* RTE stub when fast loop is in ISR; kept for Generate compatibility. */
 void MotorCdd_AdcOnSampleReady(void);

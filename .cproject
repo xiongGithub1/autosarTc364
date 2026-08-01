@@ -149,8 +149,14 @@
 							<tool id="com.tasking.ctc.lk.abs.debug.1208404899" name="Linker" superClass="com.tasking.ctc.lk.abs.debug">
 								<option id="com.tasking.ctc.lk.lslFile.126693106" name="Linker script file:" superClass="com.tasking.ctc.lk.lslFile" value="E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\vLinkGen_Template.lsl" valueType="string"/>
 								<option id="com.tasking.ctc.lk.outputFormat.ihex.280923246" name="Generate Intel Hex format file" superClass="com.tasking.ctc.lk.outputFormat.ihex" value="true" valueType="boolean"/>
-								<option id="com.tasking.ctc.lk.mapFile.mapFile.1524954951" name="Generate map file (.map)" superClass="com.tasking.ctc.lk.mapFile.mapFile" value="false" valueType="boolean"/>
-								<option id="com.tasking.ctc.lk.userProvidedInitCode.1962405070" superClass="com.tasking.ctc.lk.userProvidedInitCode" value="true" valueType="boolean"/>
+								<option id="com.tasking.ctc.lk.mapFile.mapFile.1524954951" name="Generate map file (.map)" superClass="com.tasking.ctc.lk.mapFile.mapFile" value="true" valueType="boolean"/>
+								<option id="com.tasking.ctc.lk.userProvidedInitCode.1962405070" name="Do not use standard copy table for initialization" superClass="com.tasking.ctc.lk.userProvidedInitCode" value="true" valueType="boolean"/>
+								<option id="com.tasking.ctc.lk.noDefaultLibraries.425714454" name="Link default libraries" superClass="com.tasking.ctc.lk.noDefaultLibraries" value="false" valueType="boolean"/>
+								<option id="com.tasking.ctc.lk.library.1825527806" name="Libraries" superClass="com.tasking.ctc.lk.library" valueType="stringList">
+									<listOptionValue builtIn="false" value="-lc_fpu"/>
+									<listOptionValue builtIn="false" value="-lfp_fpu"/>
+									<listOptionValue builtIn="false" value="-lrt"/>
+								</option>
 								<inputType id="com.tasking.ctc.lkObjInputType.1392396374" name="OBJ" superClass="com.tasking.ctc.lkObjInputType"/>
 								<inputType id="com.tasking.ctc.lkLibInputType.2145697086" name="LIB" superClass="com.tasking.ctc.lkLibInputType"/>
 							</tool>
@@ -311,9 +317,10 @@
 								<inputType id="com.tasking.ctc.asmInputType.1814977596" name="ASM" superClass="com.tasking.ctc.asmInputType"/>
 							</tool>
 							<tool id="com.tasking.ctc.lk.abs.release.1705973276" name="Linker" superClass="com.tasking.ctc.lk.abs.release">
-								<option id="com.tasking.ctc.lk.lslFile.2036782495" name="Linker script file:" superClass="com.tasking.ctc.lk.lslFile" value="E:\workFiles\TC367\TC367\workspace\last364\Appl\newTc364.lsl" valueType="string"/>
+								<option id="com.tasking.ctc.lk.lslFile.2036782495" name="Linker script file:" superClass="com.tasking.ctc.lk.lslFile" value="E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\vLinkGen_Template.lsl" valueType="string"/>
 								<option id="com.tasking.ctc.lk.outputFormat.ihex.1122383127" name="Generate Intel Hex format file" superClass="com.tasking.ctc.lk.outputFormat.ihex" value="true" valueType="boolean"/>
 								<option id="com.tasking.ctc.lk.mapFile.mapFile.1488010132" name="Generate map file (.map)" superClass="com.tasking.ctc.lk.mapFile.mapFile" value="true" valueType="boolean"/>
+								<option id="com.tasking.ctc.lk.userProvidedInitCode.9182736450" name="Do not use standard copy table for initialization" superClass="com.tasking.ctc.lk.userProvidedInitCode" value="true" valueType="boolean"/>
 								<inputType id="com.tasking.ctc.lkObjInputType.886648603" name="OBJ" superClass="com.tasking.ctc.lkObjInputType"/>
 								<inputType id="com.tasking.ctc.lkLibInputType.2036880252" name="LIB" superClass="com.tasking.ctc.lkLibInputType"/>
 							</tool>

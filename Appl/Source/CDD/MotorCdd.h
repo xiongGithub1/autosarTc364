@@ -10,4 +10,7 @@
 #include "Std_Types.h"
 
 FUNC(void, MotorCdd_CODE) MotorCdd_MainFunction(void);
+
+extern uint32 MotorCdd_Os1msCounter;
+
 #endif /* APPL_SOURCE_CDD_MOTORCDD_H_ */

@@ -402,24 +402,6 @@ Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenDat
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\inc\Dio_Cfg.h" :
 Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Components\Rte_EcuM_Type.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Components\Rte_EcuM_Type.h" :
-Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\MotorFoc\MotorCdd_Foc.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\MotorFoc\MotorCdd_Foc.h" :
-Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\MotorFoc\MotorFoc_Types.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\MotorFoc\MotorFoc_Types.h" :
-Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\MotorFoc\MotorFoc_Config.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\MotorFoc\MotorFoc_Config.h" :
-Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\MotorFoc\MotorFoc_Pid.h" :
-Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE9180\Tle9180_Driver.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE9180\Tle9180_Driver.h" :
-Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE5012\Tle5012bd_Driver.h" :
-Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE5012\TLE5012\tle5012b.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE5012\TLE5012\tle5012b.h" :
-Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE5012\TLE5012\tle5012b_reg\tle5012_a.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE5012\TLE5012\tle5012b_reg\tle5012_a.h" :
-Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE5012\TLE5012\tle5012b_reg\tle5012_a_regdef.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\TLE5012\TLE5012\tle5012b_reg\tle5012_a_regdef.h" :
 Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Components\StartApp_MemMap.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Components\StartApp_MemMap.h" :
 Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"

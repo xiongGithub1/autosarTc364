@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Core_Lcfg.c
- *   Generation Time: 2026-07-30 20:09:42
+ *   Generation Time: 2026-07-31 14:18:07
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -239,6 +239,7 @@ OS_LOCAL CONST(Os_IsrConfigRefType, OS_CONST) OsCfg_Core_OsCore0_IsrRefs[OS_CFG_
   OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_AdcIsr_G8), 
   OS_ISR_CASTCONFIG_ISR_2_ISR(OsCfg_Isr_CanIsr_0), 
   OS_TIMER_CASTCONFIG_TIMERISR_2_ISR(OsCfg_Isr_CounterIsr_SystemTimer), 
+  OS_XSIGNAL_CASTCONFIG_XSIGNALISR_2_ISR(OsCfg_Isr_XSignalIsr_OsCore0), 
   NULL_PTR
 };
 
@@ -282,7 +283,7 @@ CONST(Os_CoreAsrConfigType, OS_CONST) OsCfg_Core_OsCore0 =
   /* .StackRefs            = */ OsCfg_Core_OsCore0_StackRefs,
   /* .StackCount           = */ (Os_ObjIdxType)OS_CFG_NUM_CORE_OSCORE0_STACKS,
   /* .CoreIdx              = */ OS_COREASRCOREIDX_0,
-  /* .XSignal              = */ NULL_PTR,
+  /* .XSignal              = */ &OsCfg_XSig_OsCore0,
   /* .IocRefs              = */ OsCfg_Core_OsCore0_IocRefs,
   /* .IocCount             = */ (Os_ObjIdxType)OS_CFG_NUM_CORE_OSCORE0_IOCS,
   /* .Barrier              = */ &OsCfg_Barrier_OsCore0,
@@ -357,6 +358,7 @@ OS_LOCAL CONST(Os_StackConfigRefType, OS_CONST) OsCfg_Core_OsCore1_StackRefs[OS_
 OS_LOCAL CONST(Os_IsrConfigRefType, OS_CONST) OsCfg_Core_OsCore1_IsrRefs[OS_CFG_NUM_CORE_OSCORE1_ISRS + 1u] =
 {
   OS_TIMER_CASTCONFIG_TIMERISR_2_ISR(OsCfg_Isr_CounterIsr_SystemTimer1), 
+  OS_XSIGNAL_CASTCONFIG_XSIGNALISR_2_ISR(OsCfg_Isr_XSignalIsr_OsCore1), 
   NULL_PTR
 };
 
@@ -400,7 +402,7 @@ CONST(Os_CoreAsrConfigType, OS_CONST) OsCfg_Core_OsCore1 =
   /* .StackRefs            = */ OsCfg_Core_OsCore1_StackRefs,
   /* .StackCount           = */ (Os_ObjIdxType)OS_CFG_NUM_CORE_OSCORE1_STACKS,
   /* .CoreIdx              = */ OS_COREASRCOREIDX_1,
-  /* .XSignal              = */ NULL_PTR,
+  /* .XSignal              = */ &OsCfg_XSig_OsCore1,
   /* .IocRefs              = */ OsCfg_Core_OsCore1_IocRefs,
   /* .IocCount             = */ (Os_ObjIdxType)OS_CFG_NUM_CORE_OSCORE1_IOCS,
   /* .Barrier              = */ &OsCfg_Barrier_OsCore1,

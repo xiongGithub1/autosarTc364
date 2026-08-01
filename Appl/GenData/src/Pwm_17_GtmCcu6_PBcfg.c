@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 20.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2026-07-30, 20:42:28              !!!IGNORE-LINE!!!           **
+**  DATE, TIME: 2026-07-31, 20:00:42              !!!IGNORE-LINE!!!           **
 **                                                                            **
 **  GENERATOR : Build b191017-0938                !!!IGNORE-LINE!!!           **
 **                                                                            **
@@ -158,14 +158,14 @@ in generated code due to Autosar Naming constraints.*/
 in generated code due to Autosar Naming constraints.*/
 /* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going beyond 32 chars.
 in generated code due to Autosar Naming constraints.*/
-#define PWM_17_GTMCCU6_START_SEC_CONFIG_DATA_ASIL_B_CORE0_UNSPECIFIED
+#define PWM_17_GTMCCU6_START_SEC_CONFIG_DATA_ASIL_B_CORE1_UNSPECIFIED
 /* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
 without safegaurd. It complies to Autosar guidelines. */
 /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration of notification function 
 before MemMap inclusion It complies to Autosar guidelines. */
 #include "Pwm_17_GtmCcu6_MemMap.h"
         
-static const Mcu_17_Gtm_TomAtomChConfigType Pwm_kChannelConfigGtm_Core0[4] = 
+static const Mcu_17_Gtm_TomAtomChConfigType Pwm_kChannelConfigGtm_Core1[4] = 
 {
   {
     MCU_GTM_TIMER_ATOM, /* Timer Type (TOM/ATOM)*/
@@ -217,7 +217,7 @@ static const Mcu_17_Gtm_TomAtomChConfigType Pwm_kChannelConfigGtm_Core0[4] =
   },
 };
       
-static const Pwm_17_GtmCcu6_ChannelConfigType Pwm_kChannelConfigurationCore0[] =
+static const Pwm_17_GtmCcu6_ChannelConfigType Pwm_kChannelConfigurationCore1[] =
 {
 /*******************************************************************************
 *  Channel Number        : 0
@@ -238,7 +238,7 @@ static const Pwm_17_GtmCcu6_ChannelConfigType Pwm_kChannelConfigurationCore0[] =
     (Pwm_17_GtmCcu6_PeriodType)0x2710, /* Default Period */
     (uint32)0x0, /* Default Duty Cycle */
     (uint32)0x0, /* Shift Value */
-    (const void*)&Pwm_kChannelConfigGtm_Core0[0]
+    (const void*)&Pwm_kChannelConfigGtm_Core1[0]
     /* MISRA2012_RULE_11_3_JUSTIFICATION: SFR access. No side effects foreseen
     * by violating this MISRA rule. */
   },
@@ -261,7 +261,7 @@ static const Pwm_17_GtmCcu6_ChannelConfigType Pwm_kChannelConfigurationCore0[] =
     (Pwm_17_GtmCcu6_PeriodType)0x2710, /* Default Period */
     (uint32)0x0, /* Default Duty Cycle */
     (uint32)0x1388, /* Shift Value */
-    (const void*)&Pwm_kChannelConfigGtm_Core0[1]
+    (const void*)&Pwm_kChannelConfigGtm_Core1[1]
     /* MISRA2012_RULE_11_3_JUSTIFICATION: SFR access. No side effects foreseen
     * by violating this MISRA rule. */
   },
@@ -284,7 +284,7 @@ static const Pwm_17_GtmCcu6_ChannelConfigType Pwm_kChannelConfigurationCore0[] =
     (Pwm_17_GtmCcu6_PeriodType)0x2710, /* Default Period */
     (uint32)0x0, /* Default Duty Cycle */
     (uint32)0x1388, /* Shift Value */
-    (const void*)&Pwm_kChannelConfigGtm_Core0[2]
+    (const void*)&Pwm_kChannelConfigGtm_Core1[2]
     /* MISRA2012_RULE_11_3_JUSTIFICATION: SFR access. No side effects foreseen
     * by violating this MISRA rule. */
   },
@@ -307,16 +307,16 @@ static const Pwm_17_GtmCcu6_ChannelConfigType Pwm_kChannelConfigurationCore0[] =
     (Pwm_17_GtmCcu6_PeriodType)0x2710, /* Default Period */
     (uint32)0x0, /* Default Duty Cycle */
     (uint32)0x1388, /* Shift Value */
-    (const void*)&Pwm_kChannelConfigGtm_Core0[3]
+    (const void*)&Pwm_kChannelConfigGtm_Core1[3]
     /* MISRA2012_RULE_11_3_JUSTIFICATION: SFR access. No side effects foreseen
     * by violating this MISRA rule. */
   },
 };
       
-static const Pwm_17_GtmCcu6_CoreConfigType Pwm_CoreConfigCore0 =
+static const Pwm_17_GtmCcu6_CoreConfigType Pwm_CoreConfigCore1 =
 { 
   (Pwm_17_GtmCcu6_ChannelType)4U,
-  (const Pwm_17_GtmCcu6_ChannelConfigType*)&Pwm_kChannelConfigurationCore0[0]
+  (const Pwm_17_GtmCcu6_ChannelConfigType*)&Pwm_kChannelConfigurationCore1[0]
 };
 /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers going beyond 32 chars.
 in generated code due to Autosar Naming constraints.*/
@@ -326,7 +326,7 @@ in generated code due to Autosar Naming constraints.*/
 in generated code due to Autosar Naming constraints.*/
 /* MISRA2012_RULE_5_5_JUSTIFICATION: External identifiers going beyond 32 chars.
 in generated code due to Autosar Naming constraints.*/
-#define PWM_17_GTMCCU6_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_UNSPECIFIED
+#define PWM_17_GTMCCU6_STOP_SEC_CONFIG_DATA_ASIL_B_CORE1_UNSPECIFIED
 /* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
 without safegaurd. It complies to Autosar guidelines. */
 /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration of notification function 
@@ -351,14 +351,14 @@ const Pwm_17_GtmCcu6_ConfigType Pwm_17_GtmCcu6_Config =
 {
   {
 
+    NULL_PTR,
     /* MISRA2012_RULE_11_8_JUSTIFICATION: This typecast is in-line with the data type of the structure member PwmCoreAdd, MISRA is reported becasue of structure Pwm_CoreConfigCore,
     which is defined as constant to be allocated in Read only memory, Hence no side effects foreseen by violating this MISRA rule */
 
-    (Pwm_17_GtmCcu6_CoreConfigType*)&Pwm_CoreConfigCore0,
+    (Pwm_17_GtmCcu6_CoreConfigType*)&Pwm_CoreConfigCore1
     /* MISRA2012_RULE_11_8_JUSTIFICATION: This typecast is in-line with the data type of the structure member PwmCoreAdd, MISRA is reported becasue of structure Pwm_CoreConfigCore,
     which is defined as constant to be allocated in Read only memory, Hence no side effects foreseen by violating this MISRA rule */
 
-    NULL_PTR
   },
   /* MISRA2012_RULE_11_8_JUSTIFICATION: This typecast is in-line with the data type of structure member PwmChannelIdxmapPtr, MISRA is reported becasue of data type Pwm_ChannelIndexMap,
   which is defined as constant to be allocated in Read only memory, Hence no side effects foreseen by violating this MISRA rule */

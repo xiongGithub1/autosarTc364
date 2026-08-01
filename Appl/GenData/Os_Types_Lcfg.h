@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Types_Lcfg.h
- *   Generation Time: 2026-07-30 20:09:43
+ *   Generation Time: 2026-07-31 14:18:08
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -90,6 +90,8 @@
 #define CanIsr_0 CanIsr_0
 #define CounterIsr_SystemTimer CounterIsr_SystemTimer
 #define CounterIsr_SystemTimer1 CounterIsr_SystemTimer1
+#define XSignalIsr_OsCore0 XSignalIsr_OsCore0
+#define XSignalIsr_OsCore1 XSignalIsr_OsCore1
 
 /* Alarm identifiers. */
 #define Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_10ms Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_10ms
@@ -185,7 +187,9 @@ typedef enum
   CanIsr_0 = 1,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
   CounterIsr_SystemTimer = 2,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
   CounterIsr_SystemTimer1 = 3,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  OS_ISRID_COUNT = 4,
+  XSignalIsr_OsCore0 = 4,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  XSignalIsr_OsCore1 = 5,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  OS_ISRID_COUNT = 6,
   INVALID_ISR = OS_ISRID_COUNT
 } ISRType;
 

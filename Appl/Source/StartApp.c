@@ -56,11 +56,7 @@ uint32 StartApp_Cyclic250msCounter = 0U;
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of include and declaration area >>        DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
-#include "MotorCdd_Foc.h"
-#include "MotorControll.h"
 
-#include "Tle9180_Driver.h"
-#include "Tle5012bd_Driver.h"
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of include and declaration area >>          DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -150,9 +146,9 @@ FUNC(void, StartApp_CODE) StartApp_Cyclic1ms(void) /* PRQA S 0624, 3206 */ /* MD
  * Symbol: StartApp_Cyclic1ms
  *********************************************************************************************************************/
   /* 9180, 5012 startup polling, and ZeroCal run in the 1 ms task. */
-  Tle9180_Driver_MainFunction();
+//  Tle9180_Driver_MainFunction();
 
-  MotorControll_MainFunction();
+//  MotorControll_MainFunction();
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/

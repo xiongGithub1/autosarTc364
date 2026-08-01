@@ -15,7 +15,7 @@
 **                                                                            **
 **  VERSION   : 17.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2026-07-30, 20:42:28  !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2026-07-31, 20:00:42  !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  GENERATOR : Build b191017-0938      !!!IGNORE-LINE!!!                   **
 **                                                                            **
@@ -101,9 +101,9 @@ names
   static const uint8 SequenceLookupIndex[3] =
 {
   /* Physical index value for Sequence SpiSequence_9183 Sequence ID 0 */
-  2U,
-    /* Physical index value for Sequence SpiSequence_5012BD Sequence ID 1 */
   1U,
+    /* Physical index value for Sequence SpiSequence_5012BD Sequence ID 1 */
+  0U,
     /* Physical index value for Sequence SpiSequence_35584 Sequence ID 2 */
   0U  
 };
@@ -112,9 +112,9 @@ names
 static const uint16 JobLookupIndex[3] =
 {
   /* Physical index value for Job SpiJob_9183 Job ID 0 */
-  2U,
-    /* Physical index value for Job SpiJob_5012BD Job ID 1 */
   1U,
+    /* Physical index value for Job SpiJob_5012BD Job ID 1 */
+  0U,
     /* Physical index value for Job SpiJob_35584 Job ID 2 */
   0U  
 };
@@ -123,9 +123,9 @@ static const uint16 JobLookupIndex[3] =
 static const uint8 ChannelLookupIndex[3] =
 {
   /* Physical index value for channel SpiChannel_9183 channel ID 0 */
-  2U,
-    /* Physical index value for channel SpiChannel_5012BD1 channel ID 1 */
   1U,
+    /* Physical index value for channel SpiChannel_5012BD1 channel ID 1 */
+  0U,
     /* Physical index value for channel SpiChannel_35584 channel ID 2 */
   0U  
 };
@@ -134,14 +134,14 @@ static const uint8 ChannelLookupIndex[3] =
 
 static const Spi_JobType SpiSequence_9183_JobLinkPtr_Physical[] =
 {
-  2U, /* Physical index value for Job SpiJob_9183 Job ID 0 */
+  1U, /* Physical index value for Job SpiJob_9183 Job ID 0 */
   
   SPI_JOB_DELIMITER
 };
 
 static const Spi_JobType SpiSequence_5012BD_JobLinkPtr_Physical[] =
 {
-  1U, /* Physical index value for Job SpiJob_5012BD Job ID 1 */
+  0U, /* Physical index value for Job SpiJob_5012BD Job ID 1 */
   
   SPI_JOB_DELIMITER
 };
@@ -156,14 +156,14 @@ static const Spi_JobType SpiSequence_35584_JobLinkPtr_Physical[] =
 
 static const Spi_ChannelType SpiJob_9183_ChannelLinkPtr_Physical[] =
 {
-  2U, /* Physical index value for Channel SpiChannel_9183 Channel ID 0 */
+  1U, /* Physical index value for Channel SpiChannel_9183 Channel ID 0 */
   
   SPI_CHANNEL_DELIMITER
 };
 
 static const Spi_ChannelType SpiJob_5012BD_ChannelLinkPtr_Physical[] =
 {
-  1U, /* Physical index value for Channel SpiChannel_5012BD1 Channel ID 1 */
+  0U, /* Physical index value for Channel SpiChannel_5012BD1 Channel ID 1 */
   
   SPI_CHANNEL_DELIMITER
 };
@@ -228,6 +228,48 @@ static const Spi_SequenceConfigType Spi_kSequenceConfig_Core0[] =
         
               0U /* Sync Sequence */
       },
+};
+
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+names
+* because of AS naming convention*/
+#define SPI_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+* without include guard. This is as per AUTOSAR */
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+* this is due to inclusion of memmap.h to specify the location to which
+* the variable has to be placed. */
+#include "Spi_MemMap.h"
+/***************** CORE0 SEQUENCE CONFIGURATION MEMMAP SECTION END *************/
+    
+ /******************* CORE1 SEQUENCE CONFIGURATION MEMMAP SECTION *************/
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+names
+* because of AS naming convention*/
+#define SPI_START_SEC_CONFIG_DATA_ASIL_B_CORE1_32
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+* without include guard. This is as per AUTOSAR */
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+* this is due to inclusion of memmap.h to specify the location to which
+* the variable has to be placed. */
+#include "Spi_MemMap.h"
+
+static const Spi_SequenceConfigType Spi_kSequenceConfig_Core1[] =
+{
     /* Synchronous Sequence[s] */
     /* Sequence:SpiSequence_5012BD */
   {
@@ -253,7 +295,8 @@ static const Spi_SequenceConfigType Spi_kSequenceConfig_Core0[] =
     0x03U,
         
               0U /* Sync Sequence */
-      }};
+      },
+};
 
 /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
 * because of AS naming convention*/
@@ -265,15 +308,14 @@ shall be distinct
 /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
 names
 * because of AS naming convention*/
-#define SPI_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+#define SPI_STOP_SEC_CONFIG_DATA_ASIL_B_CORE1_32
 /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
 * without include guard. This is as per AUTOSAR */
 /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
 * this is due to inclusion of memmap.h to specify the location to which
 * the variable has to be placed. */
 #include "Spi_MemMap.h"
-/***************** CORE0 SEQUENCE CONFIGURATION MEMMAP SECTION END *************/
-    
+/***************** CORE1 SEQUENCE CONFIGURATION MEMMAP SECTION END *************/
     
 /******************* CORE0 JOB CONFIGURATION MEMMAP SECTION *************/
 
@@ -323,7 +365,50 @@ static const Spi_JobConfigType Spi_kJobConfig_Core0[] =
     SPI_PARITY_UNUSED,        /* Parity support */
     (0U)                    /*Frame based CS is disabled*/
   },
-  /* Synchronous Job[s] */
+};
+
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+names
+* because of AS naming convention*/
+#define SPI_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+* without include guard. This is as per AUTOSAR */
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+* this is due to inclusion of memmap.h to specify the location to which
+* the variable has to be placed. */
+#include "Spi_MemMap.h"
+/***************** CORE0 JOB CONFIGURATION MemMap SECTION END *************/
+    
+/******************* CORE1 JOB CONFIGURATION MEMMAP SECTION *************/
+
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+names
+* because of AS naming convention*/
+#define SPI_START_SEC_CONFIG_DATA_ASIL_B_CORE1_32
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+* without include guard. This is as per AUTOSAR */
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+* this is due to inclusion of memmap.h to specify the location to which
+* the variable has to be placed. */
+#include "Spi_MemMap.h"
+
+static const Spi_JobConfigType Spi_kJobConfig_Core1[] =
+{
+      /* Synchronous Job[s] */
   /* Job:SpiJob_5012BD */
   {
     SpiConf_SpiJob_SpiJob_5012BD,
@@ -374,7 +459,8 @@ static const Spi_JobConfigType Spi_kJobConfig_Core0[] =
     (uint8)((SPI_QSPI_CHANNEL12 << 4U)|SPI_QSPI3_INDEX),
     SPI_PARITY_UNUSED,        /* Parity support */
     (0U)                    /*Frame based CS is disabled*/
-  }};
+  },
+};
 
 /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
 * because of AS naming convention*/
@@ -386,15 +472,14 @@ shall be distinct
 /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
 names
 * because of AS naming convention*/
-#define SPI_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+#define SPI_STOP_SEC_CONFIG_DATA_ASIL_B_CORE1_32
 /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
 * without include guard. This is as per AUTOSAR */
 /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
 * this is due to inclusion of memmap.h to specify the location to which
 * the variable has to be placed. */
 #include "Spi_MemMap.h"
-/***************** CORE0 JOB CONFIGURATION MemMap SECTION END *************/
-    
+/***************** CORE1 JOB CONFIGURATION MemMap SECTION END *************/
     
 /******************* CORE0 CHANNEL CONFIGURATION MEMMAP SECTION *************/
 
@@ -427,24 +512,7 @@ static const Spi_ChannelConfigType Spi_kChannelConfig_Core0[] =
     0x20U,            /* LSB[7], DataWidth=32[6:0] */
     SpiConf_SpiChannel_SpiChannel_35584
   },
-  /* EB Chnl[s] on QSPI2 core0*/
-  /* Channel:SpiChannel_5012BD1 */
-  {
-    0x00000000U,     /* Default data */
-    0x1ffeU,         /* Number of Data Elements */
-    SPI_EB_CHANNEL,  /* External Buffer Channel */
-    0xa0U,            /* MSB[7], DataWidth=32[6:0] */
-    SpiConf_SpiChannel_SpiChannel_5012BD1
-  },
-  /* EB Chnl[s] on QSPI3 core0*/
-  /* Channel:SpiChannel_9183 */
-  {
-    0x00000000U,     /* Default data */
-    0x1ffeU,         /* Number of Data Elements */
-    SPI_EB_CHANNEL,  /* External Buffer Channel */
-    0x98U,            /* MSB[7], DataWidth=24[6:0] */
-    SpiConf_SpiChannel_SpiChannel_9183
-  }};
+};
 
 /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
 * because of AS naming convention*/
@@ -465,6 +533,66 @@ names
 #include "Spi_MemMap.h"
 /***************** CORE0 JOB CONFIGURATION MemMap SECTION END *************/
     
+/******************* CORE1 CHANNEL CONFIGURATION MEMMAP SECTION *************/
+
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+names
+* because of AS naming convention*/
+#define SPI_START_SEC_CONFIG_DATA_ASIL_B_CORE1_32
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+* without include guard. This is as per AUTOSAR */
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+* this is due to inclusion of memmap.h to specify the location to which
+* the variable has to be placed. */
+#include "Spi_MemMap.h"
+
+static const Spi_ChannelConfigType Spi_kChannelConfig_Core1[] =
+{
+      /* EB Chnl[s] on QSPI2 core1*/
+  /* Channel:SpiChannel_5012BD1 */
+  {
+    0x00000000U,     /* Default data */
+    0x1ffeU,         /* Number of Data Elements */
+    SPI_EB_CHANNEL,  /* External Buffer Channel */
+    0xa0U,            /* MSB[7], DataWidth=32[6:0] */
+    SpiConf_SpiChannel_SpiChannel_5012BD1
+  },
+  /* EB Chnl[s] on QSPI3 core1*/
+  /* Channel:SpiChannel_9183 */
+  {
+    0x00000000U,     /* Default data */
+    0x1ffeU,         /* Number of Data Elements */
+    SPI_EB_CHANNEL,  /* External Buffer Channel */
+    0x98U,            /* MSB[7], DataWidth=24[6:0] */
+    SpiConf_SpiChannel_SpiChannel_9183
+  },
+};
+
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+names
+* because of AS naming convention*/
+#define SPI_STOP_SEC_CONFIG_DATA_ASIL_B_CORE1_32
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+* without include guard. This is as per AUTOSAR */
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+* this is due to inclusion of memmap.h to specify the location to which
+* the variable has to be placed. */
+#include "Spi_MemMap.h"
+/***************** CORE1 JOB CONFIGURATION MemMap SECTION END *************/
       /******************* CORE0 QSPI1 CONFIGURATION MEMMAP SECTION *************/
 /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
 * because of AS naming convention*/
@@ -513,7 +641,7 @@ names
 * the variable has to be placed. */
 #include "Spi_MemMap.h"
 /***************** CORE0 QSPI1 CONFIGURATION MemMap SECTION END *************/
-      /******************* CORE0 QSPI2 CONFIGURATION MEMMAP SECTION *************/
+                        /******************* CORE1 QSPI2 CONFIGURATION MEMMAP SECTION *************/
 /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
 * because of AS naming convention*/
 /* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
@@ -524,7 +652,7 @@ shall be distinct
 /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
 names
 * because of AS naming convention*/
-#define SPI_START_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+#define SPI_START_SEC_CONFIG_DATA_ASIL_B_CORE1_32
 /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
 * without include guard. This is as per AUTOSAR */
 /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
@@ -553,15 +681,15 @@ shall be distinct
 /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
 names
 * because of AS naming convention*/
-#define SPI_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+#define SPI_STOP_SEC_CONFIG_DATA_ASIL_B_CORE1_32
 /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
 * without include guard. This is as per AUTOSAR */
 /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
 * this is due to inclusion of memmap.h to specify the location to which
 * the variable has to be placed. */
 #include "Spi_MemMap.h"
-/***************** CORE0 QSPI2 CONFIGURATION MemMap SECTION END *************/
-      /******************* CORE0 QSPI3 CONFIGURATION MEMMAP SECTION *************/
+/***************** CORE1 QSPI2 CONFIGURATION MemMap SECTION END *************/
+      /******************* CORE1 QSPI3 CONFIGURATION MEMMAP SECTION *************/
 /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
 * because of AS naming convention*/
 /* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
@@ -572,7 +700,7 @@ shall be distinct
 /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
 names
 * because of AS naming convention*/
-#define SPI_START_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+#define SPI_START_SEC_CONFIG_DATA_ASIL_B_CORE1_32
 /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
 * without include guard. This is as per AUTOSAR */
 /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
@@ -601,15 +729,15 @@ shall be distinct
 /* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
 names
 * because of AS naming convention*/
-#define SPI_STOP_SEC_CONFIG_DATA_ASIL_B_CORE0_32
+#define SPI_STOP_SEC_CONFIG_DATA_ASIL_B_CORE1_32
 /* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
 * without include guard. This is as per AUTOSAR */
 /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
 * this is due to inclusion of memmap.h to specify the location to which
 * the variable has to be placed. */
 #include "Spi_MemMap.h"
-/***************** CORE0 QSPI3 CONFIGURATION MemMap SECTION END *************/
-                  
+/***************** CORE1 QSPI3 CONFIGURATION MemMap SECTION END *************/
+
 /********************CORE0 RX/TX BUFFERS MEMMAP SECTION***********************/
 /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
 * because of AS naming convention*/
@@ -634,8 +762,6 @@ Index - Represents channel number, 1st element - Offset in buffer, 2nd element -
 static const Spi_CoreChannelOffsetType Spi_ChannelOffsets_Core0[SPI_NUM_IB_CHANNELS_CORE0 +  SPI_NUM_EB_CHANNELS_CORE0 + 1U] =
 {
   {0, 0},    /*SpiChannel_35584*/
-  {0, 0},    /*SpiChannel_5012BD1*/
-  {0, 0},    /*SpiChannel_9183*/
   {0xFFFF, 0xFFFF}
 };
 
@@ -657,6 +783,53 @@ names
 * the variable has to be placed. */
 #include "Spi_MemMap.h"
 /********************CORE0 RX/TX BUFFERS MEMMAP SECTION***********************/
+
+/********************CORE1 RX/TX BUFFERS MEMMAP SECTION***********************/
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+names
+* because of AS naming convention*/
+#define SPI_START_SEC_CONFIG_DATA_ASIL_B_CORE1_32
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+* without include guard. This is as per AUTOSAR */
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+* this is due to inclusion of memmap.h to specify the location to which
+* the variable has to be placed. */
+#include "Spi_MemMap.h"
+/* Lookup table to hold the offset in buffer and total elements to be transferred for all IB channels.
+Index - Represents channel number, 1st element - Offset in buffer, 2nd element - Total elements to be transmitted */
+
+static const Spi_CoreChannelOffsetType Spi_ChannelOffsets_Core1[SPI_NUM_IB_CHANNELS_CORE1 +  SPI_NUM_EB_CHANNELS_CORE1 + 1U] =
+{
+  {0, 0},    /*SpiChannel_5012BD1*/
+  {0, 0},    /*SpiChannel_9183*/
+  {0xFFFF, 0xFFFF}
+};
+
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+names
+* because of AS naming convention*/
+#define SPI_STOP_SEC_CONFIG_DATA_ASIL_B_CORE1_32
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+* without include guard. This is as per AUTOSAR */
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+* this is due to inclusion of memmap.h to specify the location to which
+* the variable has to be placed. */
+#include "Spi_MemMap.h"
+/********************CORE1 RX/TX BUFFERS MEMMAP SECTION***********************/
     
 /******************* CORE0 Spi_Config_Core CONFIGURATION MEMMAP SECTION *************/
 
@@ -694,8 +867,8 @@ const Spi_CoreConfigType Spi_Config_Core0 =
   {
     NULL_PTR,
     &Spi_kQspiHwConfigQSPI1,
-    &Spi_kQspiHwConfigQSPI2,
-    &Spi_kQspiHwConfigQSPI3,
+    NULL_PTR,
+    NULL_PTR,
     
   },
   /* Hw Map Index */      
@@ -706,17 +879,17 @@ const Spi_CoreConfigType Spi_Config_Core0 =
   (011 QSPI configured for core0)
   QSPI5 - 0
   QSPI4 - 0
-  QSPI3 - 1
-  QSPI2 - 1
+  QSPI3 - 0
+  QSPI2 - 0
   QSPI1 - 1
   QSPI0 - 0*/
-  0x00248U,
+  0x00008U,
   /* No. of Sequences configured */
-  3U,
+  1U,
   /* No. of Jobs configured */
-  3U,
+  1U,
   /* No. of Channels configured */
-  3U
+  1U
 };
 
 /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
@@ -738,7 +911,86 @@ names
 #include "Spi_MemMap.h"
 /***************** CORE0 Spi_Config_Core CONFIGURATION MemMap SECTION END *************/
           
+/******************* CORE1 Spi_Config_Core CONFIGURATION MEMMAP SECTION *************/
 
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+names
+* because of AS naming convention*/
+#define SPI_START_SEC_CONFIG_DATA_ASIL_B_CORE1_32
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+* without include guard. This is as per AUTOSAR */
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+* this is due to inclusion of memmap.h to specify the location to which
+* the variable has to be placed. */
+#include "Spi_MemMap.h"
+/* MISRA2012_RULE_8_7_JUSTIFICATION: Spi_Config_Core1 is used outside
+* of this file and therefore it is not declared as static */
+/* MISRA2012_RULE_8_4_JUSTIFICATION: Agreed violation */
+
+const Spi_CoreConfigType Spi_Config_Core1 =
+{
+  /* Sequence Configuration */
+  Spi_kSequenceConfig_Core1,
+  /* Job configuration */
+  Spi_kJobConfig_Core1,
+  /* Channel Configuration */
+  Spi_kChannelConfig_Core1,
+  Spi_ChannelOffsets_Core1,
+  /* QSPI Hw configuration */
+  {
+    NULL_PTR,
+    NULL_PTR,
+    &Spi_kQspiHwConfigQSPI2,
+    &Spi_kQspiHwConfigQSPI3,
+    
+  },
+  /* Hw Map Index */      
+  /*
+  (000 QSPI not configured for core1)
+  (001 QSPI configured as Sync for core1)
+  (010 QSPI configured as Async for core1)
+  (011 QSPI configured for core1)
+  QSPI5 - 0
+  QSPI4 - 0
+  QSPI3 - 1
+  QSPI2 - 1
+  QSPI1 - 0
+  QSPI0 - 0*/
+  0x00240U,
+  /* No. of Sequences configured */
+  2U,
+  /* No. of Jobs configured */
+  2U,
+  /* No. of Channels configured */
+  2U
+};
+
+/* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
+shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_4_JUSTIFICATION: Macro identifiers shall be distinct
+* because of AS naming convention*/
+/* MISRA2012_RULE_5_5_JUSTIFICATION: Identifiers shall be distinct from macro
+names
+* because of AS naming convention*/
+#define SPI_STOP_SEC_CONFIG_DATA_ASIL_B_CORE1_32
+/* MISRA2012_RULE_4_10_JUSTIFICATION: Spi_Memmap.h is repeatedly included
+* without include guard. This is as per AUTOSAR */
+/* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration before #include,
+* this is due to inclusion of memmap.h to specify the location to which
+* the variable has to be placed. */
+#include "Spi_MemMap.h"
+/***************** CORE1 Spi_Config_Core CONFIGURATION MemMap SECTION END *************/
+      
 /* MISRA2012_RULE_5_1_JUSTIFICATION: External identifiers shall be distinct
 * because of AS naming convention*/
 /* MISRA2012_RULE_5_2_JUSTIFICATION: Identifiers declared in the same scope
@@ -761,7 +1013,7 @@ const Spi_ConfigType Spi_Config =
 {
   {
     &Spi_Config_Core0,
-    NULL_PTR
+    &Spi_Config_Core1
   },
   SequenceLookupIndex,
   JobLookupIndex,

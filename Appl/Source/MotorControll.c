@@ -362,10 +362,10 @@ uint8 MotorControll_IsOutputEnabled(void)
 
 void MotorControll_MainFunction(void)
 {
-//  MotorMode_Type motorMode;
-//
-//  MotorControll_MainCounter++;
-//
+  MotorMode_Type motorMode;
+
+  MotorControll_MainCounter++;
+
 //  if (MotorControll_OpenLoopEnable != 0U)
 //  {
 //    motorMode = MOTOR_MODE_OPEN_LOOP;

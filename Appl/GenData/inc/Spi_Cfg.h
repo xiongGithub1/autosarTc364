@@ -15,7 +15,7 @@
 **                                                                            **
 **  VERSION   : 16.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2026-07-30, 20:42:28  !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2026-07-31, 20:00:42  !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  GENERATOR : Build b191017-0938       !!!IGNORE-LINE!!!                  **
 **                                                                            **
@@ -148,6 +148,7 @@ Module enters sleep mode upon sleep request         */
 #define SPI_QSPI_HW_DELIMITER                 ((uint8)0xFFU)
 
 #define SPI_IB_BUFFER_SIZE_CORE0           (0U)
+#define SPI_IB_BUFFER_SIZE_CORE1           (0U)
 
 /* Job Queue Length for QSPI1 */
 
@@ -184,16 +185,20 @@ Module enters sleep mode upon sleep request         */
 
 #define SPI_NUM_IB_CHANNELS_CORE0            (0U)
 
+#define SPI_NUM_IB_CHANNELS_CORE1            (0U)
+
 
 #define SPI_CORE0_ENABLE     STD_ON
-#define SPI_CORE1_ENABLE     STD_OFF
+#define SPI_CORE1_ENABLE     STD_ON
 
 /* Number of EB channels */
 /*kernel 1*/
 /*Kernel 2*/
 /*Kernel 3*/
 
-#define SPI_NUM_EB_CHANNELS_CORE0            (3U)
+#define SPI_NUM_EB_CHANNELS_CORE0            (1U)
+
+#define SPI_NUM_EB_CHANNELS_CORE1            (2U)
 
 #define SPI_DMA_MAX_TCS_NUM_QSPI1 (0U)
 #define SPI_DMA_MAX_TCS_NUM_QSPI2 (0U)
@@ -281,19 +286,19 @@ convention followed for symbolic names, defined as per AUTOSAR  */
 /* Physical Job ID *//* Channel ID *//*end Physical*/
 
 
-#define SPI_SEQUENCE_COUNT_CORE0      3U
+#define SPI_SEQUENCE_COUNT_CORE0      1U
 
 
-#define SPI_SEQUENCE_COUNT_CORE1      0U
+#define SPI_SEQUENCE_COUNT_CORE1      2U
 
 
-#define SPI_JOB_COUNT_CORE0       3U
+#define SPI_JOB_COUNT_CORE0       1U
 
 
-#define SPI_JOB_COUNT_CORE1       0U
+#define SPI_JOB_COUNT_CORE1       2U
 #define SPI_QSPI1_CORE          0
-#define SPI_QSPI2_CORE          0
-#define SPI_QSPI3_CORE          0
+#define SPI_QSPI2_CORE          1
+#define SPI_QSPI3_CORE          1
 
 #define SPI_INIT_DEINIT_API_MODE              SPI_MCAL_SUPERVISOR
 

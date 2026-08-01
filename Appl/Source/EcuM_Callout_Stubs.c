@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Callout_Stubs.c
- *   Generation Time: 2026-07-30 14:52:38
+ *   Generation Time: 2026-08-01 11:44:58
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -92,7 +92,6 @@
 #include "Mcu.h" 
 #include "Port.h" 
 #include "Adc.h" 
-#include "Pwm_17_GtmCcu6.h" 
 #include "Dma.h" 
 #include "Fls_17_Dmu.h" 
 #include "Fee.h" 
@@ -103,6 +102,8 @@
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK User Includes>                          DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
+#include "Irq.h"
+#include "Pwm_17_GtmCcu6.h"
 #include "IfxQspi_bf.h"
 #include "IfxQspi_reg.h"
 #include "IfxSrc_reg.h"
@@ -306,7 +307,6 @@ FUNC(void, ECUM_CODE) EcuM_AL_DriverInitOne(void)
     Mcu_DistributePllClock();
     Port_Init( &Port_Config );
     Adc_Init( &Adc_Config );
-    Pwm_17_GtmCcu6_Init( &Pwm_17_GtmCcu6_Config );
     Dma_Init( &Dma_Config );
     IpduM_Init( IpduM_Config_Ptr );
     PduR_PreInit( PduR_Config_Ptr );
@@ -333,15 +333,29 @@ FUNC(void, ECUM_CODE) EcuM_AL_DriverInitOne(void)
 //  SRC_QSPI2PT.B.SRE = 1U;
 //  SRC_DMACH4.B.SRE = 1U;
 //  SRC_DMACH5.B.SRE = 1U;
-  IrqAdc_Init();
-  SRC_VADC_G0_SR0.B.SRE = 1U;
-#if (ADC_STARTUP_CALIB_API == STD_ON)
-  (void)Adc_TriggerStartupCal();
-  while (Adc_GetStartupCalStatus() != ADC_STARTUP_CALIB_OVER)
+  /* ADC is owned by BSW core (Core0): Adc_Init runs only when GetCoreID()==ECUM_CORE_ID_BSW.
+     Do not call Adc_* from Core1 ??? Adc_ConfigPtr is NULL there ??? MPU null-address trap (0x10006). */
+  if (GetCoreID() == ECUM_CORE_ID_BSW)
   {
-    /* Keep the ADC result path inactive until calibration has completed. */
-  }
+    IrqAdc_Init();
+    SRC_VADC_G0_SR0.B.SRE = 1U;
+#if (ADC_STARTUP_CALIB_API == STD_ON)
+    (void)Adc_TriggerStartupCal();
+    while (Adc_GetStartupCalStatus() != ADC_STARTUP_CALIB_OVER)
+    {
+      /* Keep the ADC result path inactive until calibration has completed. */
+    }
 #endif
+  }
+  if(GetCoreID() == 1U)
+  {
+    /* QSPI2/QSPI3 (9183/5012) owned by Core1 in ResourceM; Spi_Init is per-core. */
+    Spi_Init(&Spi_Config);
+    IrqGtm_Init();
+    Pwm_17_GtmCcu6_Init(&Pwm_17_GtmCcu6_Config);
+  }
+
+
 
   return;
 /**********************************************************************************************************************
@@ -829,7 +843,7 @@ FUNC(void, ECUM_CODE) EcuM_OnRTEStartup(void)
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK EcuM_OnRTEStartup>                      DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
   /* Add implementation of EcuM_OnRTEStartup() */
-  
+
   return;
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>                                       DO NOT CHANGE THIS COMMENT!

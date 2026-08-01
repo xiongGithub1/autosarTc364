@@ -66,6 +66,8 @@
 #define MOTORCDD_DTM_TOUTSEL0_VALUE         (0x28882222UL)
 
 volatile uint8 MotorCdd_PwmComplementaryInitDone = 0U;
+uint32 MotorCdd_Os1msCounter = 0U;
+static volatile uint8 MotorCdd_InitComplete = 0U;
 
 static void MotorCdd_PwmComplementaryInit(void);
 
@@ -134,9 +136,13 @@ FUNC(void, MotorCdd_CODE) MotorCdd_MainFunction(void) /* PRQA S 0624, 3206 */ /*
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
  * Symbol: MotorCDDMainFunction
  *********************************************************************************************************************/
-  /* Backup cmd mirror only. 9180 Sync Init/steps run in StartApp 1 ms 鈥� not MotorTask. */
+  MotorCdd_Os1msCounter++;
+  if (MotorCdd_InitComplete == 0U)
+  {
+    return;
+  }
   MotorCdd_FocUpdateCmdMirror();
-
+  Tle9180_Driver_MainFunction();
   MotorZeroCal_MainFunction();
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
@@ -220,6 +226,7 @@ FUNC(void, MotorCdd_CODE) MotorCdd_Init(void) /* PRQA S 0624, 3206 */ /* MD_Rte_
   MotorCdd_PwmComplementaryInit();
   MotorCdd_AdcHwTriggerInit();
   MotorCdd_FocInit();
+  MotorCdd_InitComplete = 1U;
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!

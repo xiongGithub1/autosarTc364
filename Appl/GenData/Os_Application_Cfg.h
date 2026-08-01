@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Application_Cfg.h
- *   Generation Time: 2026-07-30 20:09:42
+ *   Generation Time: 2026-07-31 14:18:07
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -60,7 +60,7 @@
 # define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_ALARMS             (2u)
 # define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_COUNTERS           (1u)
 # define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_HOOKS              (0u)
-# define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_ISRS               (1u)
+# define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_ISRS               (2u)
 # define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_CAT1ISRS           (1u)
 # define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_SCHTS              (0u)
 # define OS_CFG_NUM_APP_OSAPPLICATION_OSCORE1_TASKS              (6u)
@@ -70,7 +70,7 @@
 # define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_ALARMS             (7u)
 # define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_COUNTERS           (1u)
 # define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_HOOKS              (0u)
-# define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_ISRS               (3u)
+# define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_ISRS               (4u)
 # define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_CAT1ISRS           (0u)
 # define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_SCHTS              (0u)
 # define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_TASKS              (6u)
