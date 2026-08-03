@@ -1,5 +1,16 @@
 /**********************************************************************************************************************
- *  Tle5012bd_Driver.c
+ *  Tle5012bd_Driver.c — TLE5012B 角度传感器驱动（QSPI2 直读，无 MCAL 开销）
+ *  -------------------------------------------------------------------------------------------------------------------
+ *  数据约定（与 IPB 项目一致）：
+ *    - Original_Angle : 15bit 机械角原始值（0..32767，含 ANG_BASE 偏置）
+ *    - Angle          : 13bit 电角度索引 = v % 8192（8192 步/电角度圈，0.044°/LSB）
+ *    - anglePi        : 电角度弧度（Angle × 2π/8192）
+ *    - RPM            : 机械转速 = 电角速度 × 9.5493 / 极对数（差分 + 滤波）
+ *  读取策略（10 kHz 快速环内同步读）：
+ *    - RD_AV=1：新角度帧，按快速环计数器差值计算真实帧间隔 dt 用于转速
+ *    - RD_AV=0：无新数据（读得比传感器更新快），保持旧角度，计数 AngleNoUpdateCount
+ *    - 0xFFFF / SPI 错误：真实故障，SafetyBit++，AngleReadFailCount++
+ *  状态：TLE5012BD_STATE_UNINIT / READY（Init 后即 READY）。
  **********************************************************************************************************************/
 #include "Tle5012bd_Driver.h"
 #include "MotorCdd_Foc.h"
@@ -112,8 +123,8 @@ void Tle5012bd_Driver_ReadAngleSpeed(Tle5012 *sensor)
 
 float32 Tle5012bd_Driver_GetElectricalAngleRad(void)
 {
-  float32 electricalAngle = Tle5012bd_Sensor.anglePi *
-                            (float32)Tle5012bd_Sensor.polePairs;
+  /* anglePi is already the electrical angle in rad (v % 8192 convention). */
+  float32 electricalAngle = Tle5012bd_Sensor.anglePi;
 
   while (electricalAngle >= M_TWOPI)
   {

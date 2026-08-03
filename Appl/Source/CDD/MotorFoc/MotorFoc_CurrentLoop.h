@@ -3,25 +3,87 @@
 
 #include "MotorFoc_Types.h"
 
-extern volatile float32 MotorFoc_CurrentLoopMaxCurrentA;
-extern volatile float32 MotorFoc_CurrentLoopMinVdcRunV;
-extern volatile uint16 MotorFoc_CurrentLoopStartupBlankingCount;
-extern volatile uint16 MotorFoc_CurrentLoopStartupBlankingLeft;
-extern volatile uint16 MotorFoc_CurrentLoopUndervoltConfirmCount;
-extern volatile uint16 MotorFoc_CurrentLoopUndervoltCounter;
-extern volatile uint16 MotorFoc_CurrentLoopOverCurrentConfirmCount;
-extern volatile uint16 MotorFoc_CurrentLoopOverCurrentCounter;
-extern volatile uint8 MotorFoc_CurrentLoopFault;
-extern volatile uint8 MotorFoc_CurrentLoopFaultReason;
-extern volatile uint8 MotorFoc_CurrentLoopFaultClearRequest;
-extern volatile float32 MotorFoc_CurrentLoopFaultIuA;
-extern volatile float32 MotorFoc_CurrentLoopFaultIvA;
-extern volatile float32 MotorFoc_CurrentLoopFaultIwA;
-extern volatile float32 MotorFoc_CurrentLoopFaultVdcV;
+/* ---------------------------------------------------------------------------
+ * Protection observation object  (UDE: watch "MotorFoc_ProtObs")
+ *   cfg      : thresholds / debounce settings (runtime tunable)
+ *   cnt      : debounce / blanking counters (running state)
+ *   fault    : latched fault flag + snapshot at fault time
+ *   peak     : running peak phase currents
+ *   runCount : 10 kHz protection run counter
+ * ------------------------------------------------------------------------- */
 
-#define MOTORFOC_CURRENT_FAULT_NONE         (0U)
-#define MOTORFOC_CURRENT_FAULT_UNDERVOLT    (1U)
-#define MOTORFOC_CURRENT_FAULT_OVERCURRENT  (2U)
+typedef struct
+{
+  float32 instantTripCurrentA;       /* OC1 hard trip threshold            */
+  float32 maxCurrentA;               /* OC2 confirmed trip threshold       */
+  float32 overCurrentTripSec;        /* OC2 sustained trip time (s)         */
+  float32 overCurrentRecoverSec;     /* OC auto-recover hold time (s)       */
+  float32 overCurrentRecoverHystA;   /* OC recover when |I| <= max - hyst   */
+  uint8   overCurrentAutoRecover;    /* 1 = auto-clear OC faults            */
+  float32 minVdcRunV;                /* UV trip threshold                  */
+  float32 vdcHysteresisV;            /* UV recovery hysteresis             */
+  uint16  undervoltConfirmCount;     /* UV debounce (loops)                */
+  uint16  undervoltRecoverCount;     /* UV stable-bus loops before clear   */
+  uint8   uvAutoRecover;             /* 1 = auto-clear UV fault            */
+  uint16  startupBlankingCount;      /* startup blanking length (loops)    */
+} MotorFoc_ProtCfgType;
+
+typedef struct
+{
+  uint16 startupBlankingLeft;        /* remaining blanking loops           */
+  uint16 undervoltCounter;           /* UV debounce counter (trip)         */
+  uint16 uvRecoverCounter;           /* UV recovery counter                */
+  uint32 overCurrentCounter;         /* OC2 sustained trip counter (beats)  */
+  uint32 overCurrentRecoverCounter;  /* OC auto-recover counter (beats)     */
+  uint8  state;                      /* CURRENTLOOP_STATE_*                */
+} MotorFoc_ProtCntType;
+
+typedef struct
+{
+  uint8   active;                    /* latched fault flag                 */
+  uint8   reason;                    /* CURRENT_FAULT_*                    */
+  uint8   clearRequest;              /* explicit clear request             */
+  uint32  runCount;                  /* protection run counter at fault    */
+  float32 iuA;                       /* fault snapshot                     */
+  float32 ivA;
+  float32 iwA;
+  float32 vdcV;
+  float32 idA;
+  float32 iqA;
+  float32 vdV;
+  float32 vqV;
+  uint32  pwmU;
+  uint32  pwmV;
+  uint32  pwmW;
+} MotorFoc_ProtFaultType;
+
+typedef struct
+{
+  float32 iuA;                       /* running peak phase currents        */
+  float32 ivA;
+  float32 iwA;
+} MotorFoc_ProtPeakType;
+
+typedef struct
+{
+  MotorFoc_ProtCfgType   cfg;
+  MotorFoc_ProtCntType   cnt;
+  MotorFoc_ProtFaultType fault;
+  MotorFoc_ProtPeakType  peak;
+  uint32 runCount;
+} MotorFoc_ProtObsType;
+
+extern volatile MotorFoc_ProtObsType MotorFoc_ProtObs;
+
+#define MOTORFOC_CURRENT_FAULT_NONE          (0U)
+#define MOTORFOC_CURRENT_FAULT_UNDERVOLT     (1U)
+#define MOTORFOC_CURRENT_FAULT_OVERCURRENT   (2U)  /* confirmed overcurrent (OC2) */
+#define MOTORFOC_CURRENT_FAULT_OVERCURRENT_INST (3U) /* instantaneous overcurrent (OC1) */
+
+#define MOTORFOC_CURRENTLOOP_STATE_IDLE      (0U)
+#define MOTORFOC_CURRENTLOOP_STATE_RUN       (1U)
+#define MOTORFOC_CURRENTLOOP_STATE_BLANKING  (2U)
+#define MOTORFOC_CURRENTLOOP_STATE_FAULT     (3U)
 
 void MotorFoc_CurrentLoopInit(MotorFoc_ContextType* ctx);
 void MotorFoc_SetIdRef(MotorFoc_ContextType* ctx, float32 idRef);

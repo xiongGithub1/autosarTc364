@@ -298,11 +298,11 @@ TASK(MotorTask) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unreachable */
 
     if ((ev & Rte_Ev_Cyclic_MotorTask_0_1ms) != (EventMaskType)0)
     {
-      /* ASW publishes Mode/Id/Iq via RTE; CDD reads mirror for fast loop. */
-      MotorControll_MainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
-
-      /* CDD: 9180 poll, ZeroCal, feedback RTE, cmd mirror sync. */
+      /* call runnable */
       MotorCdd_MainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+
+      /* call runnable */
+      MotorControll_MainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
     }
 
     if ((ev & Rte_Ev_Run_MotorCdd_AdcSampleReady_Rp_AdcSampleReady_AdcSampleReady) != (EventMaskType)0)

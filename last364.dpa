@@ -228,6 +228,8 @@
                 <Setting Value="false" Name="Dio"/>
                 <Setting Value="false" Name="Dma"/>
                 <Setting Value="false" Name="E2EXf"/>
+                <Setting Value="false" Name="EcuC"/>
+                <Setting Value="false" Name="EcuM"/>
                 <Setting Value="false" Name="Fee"/>
                 <Setting Value="false" Name="Fls"/>
                 <Setting Value="false" Name="IpduM"/>
@@ -237,12 +239,15 @@
                 <Setting Value="false" Name="MemIf"/>
                 <Setting Value="false" Name="MemMap"/>
                 <Setting Value="false" Name="NvM"/>
+                <Setting Value="false" Name="Os"/>
                 <Setting Value="false" Name="PduR"/>
                 <Setting Value="false" Name="Port"/>
                 <Setting Value="false" Name="Pwm"/>
+                <Setting Value="false" Name="Rte"/>
                 <Setting Value="false" Name="Sbc"/>
                 <Setting Value="false" Name="Spi"/>
                 <Setting Value="false" Name="vBRS"/>
+                <Setting Value="false" Name="vLinkGen"/>
                 <Setting Value="false" Name="vSet"/>
             </Settings>
             <Settings Name="com.vector.cfg.gui.core.generators.GenerationTarget">
@@ -437,7 +442,7 @@
                 </Settings>
             </Settings>
             <Settings Name="com.vector.cfg.gen.core.gencore.internal.aov.AutomaticOnDemandValidationConfigurationService">
-                <Setting Value="rO0ABXNyAGpjb20udmVjdG9yLmNmZy5nZW4uY29yZS5nZW5jb3JlLmludGVybmFsLmFvdi5BdXRv&#xA;bWF0aWNPbkRlbWFuZFZhbGlkYXRpb25Db25maWd1cmF0aW9uU2VydmljZSRQZXJzaXN0ZWREYXRh&#xA;pcjrmQ6cuakCAAJaAAlhY3RpdmF0ZWRMABJkZWFjdGl2YXRlZE1vZHVsZXN0ABZMamF2YS91dGls&#xA;L0NvbGxlY3Rpb247eHABc3IANmNvbS5nb29nbGUuY29tbW9uLmNvbGxlY3QuSW1tdXRhYmxlTGlz&#xA;dCRTZXJpYWxpemVkRm9ybQAAAAAAAAAAAgABWwAIZWxlbWVudHN0ABNbTGphdmEvbGFuZy9PYmpl&#xA;Y3Q7eHB1cgATW0xqYXZhLmxhbmcuT2JqZWN0O5DOWJ8QcylsAgAAeHAAAAATc3IANWNvbS52ZWN0&#xA;b3IuY2ZnLm1vZGVsLmFjY2Vzcy5EZWZSZWYkU2VyaWFsaXphdGlvblByb3h5NnUB4bS2W7ACAAJM&#xA;AB5kZWZSZWZTdHJpbmdXaXRob3V0UGFja2FnZVBhcnR0ABJMamF2YS9sYW5nL1N0cmluZztMABlw&#xA;YWNrYWdlUGFydE9mRGVmUmVmU3RyaW5ncQB+AAl4cHQAA1NwaXQAES9BVVJJWDJHL0VjdWNEZWZz&#xA;c3EAfgAIdAAEUG9ydHEAfgAMc3EAfgAIdAADRGlvcQB+AAxzcQB+AAh0AANBZGNxAH4ADHNxAH4A&#xA;CHQAA0lycXEAfgAMc3EAfgAIdAAEdkJSU3QACS9NSUNST1NBUnNxAH4ACHQAB01jYWxMaWJxAH4A&#xA;DHNxAH4ACHQAA0ZlZXEAfgAMc3EAfgAIdAAFRTJFUFdxAH4AF3NxAH4ACHQAA0RtYXEAfgAMc3EA&#xA;fgAIdAADQ3JjcQB+AAxzcQB+AAh0AANQd21xAH4ADHNxAH4ACHQAA0Zsc3EAfgAMc3EAfgAIdAAD&#xA;Q2FudAAZL01JQ1JPU0FSL0Nhbl9NcGM1NzAwTWNhbnNxAH4ACHQAA1NiY3QAFi9NSUNST1NBUi9T&#xA;YmNfVGxmMzU1ODRzcQB+AAh0AAZNZW1NYXBxAH4AF3NxAH4ACHQABHZTZXRxAH4AF3NxAH4ACHQA&#xA;A01jdXEAfgAMc3EAfgAIdAAFTWVtSWZxAH4AFw==" Name="Data"/>
+                <Setting Value="rO0ABXNyAGpjb20udmVjdG9yLmNmZy5nZW4uY29yZS5nZW5jb3JlLmludGVybmFsLmFvdi5BdXRv&#xA;bWF0aWNPbkRlbWFuZFZhbGlkYXRpb25Db25maWd1cmF0aW9uU2VydmljZSRQZXJzaXN0ZWREYXRh&#xA;pcjrmQ6cuakCAAJaAAlhY3RpdmF0ZWRMABJkZWFjdGl2YXRlZE1vZHVsZXN0ABZMamF2YS91dGls&#xA;L0NvbGxlY3Rpb247eHABc3IANmNvbS5nb29nbGUuY29tbW9uLmNvbGxlY3QuSW1tdXRhYmxlTGlz&#xA;dCRTZXJpYWxpemVkRm9ybQAAAAAAAAAAAgABWwAIZWxlbWVudHN0ABNbTGphdmEvbGFuZy9PYmpl&#xA;Y3Q7eHB1cgATW0xqYXZhLmxhbmcuT2JqZWN0O5DOWJ8QcylsAgAAeHAAAAAUc3IANWNvbS52ZWN0&#xA;b3IuY2ZnLm1vZGVsLmFjY2Vzcy5EZWZSZWYkU2VyaWFsaXphdGlvblByb3h5NnUB4bS2W7ACAAJM&#xA;AB5kZWZSZWZTdHJpbmdXaXRob3V0UGFja2FnZVBhcnR0ABJMamF2YS9sYW5nL1N0cmluZztMABlw&#xA;YWNrYWdlUGFydE9mRGVmUmVmU3RyaW5ncQB+AAl4cHQAA0Zsc3QAES9BVVJJWDJHL0VjdWNEZWZz&#xA;c3EAfgAIdAADUHdtcQB+AAxzcQB+AAh0AANGZWVxAH4ADHNxAH4ACHQAA0NhbnQAGS9NSUNST1NB&#xA;Ui9DYW5fTXBjNTcwME1jYW5zcQB+AAh0AANEaW9xAH4ADHNxAH4ACHQAA0lycXEAfgAMc3EAfgAI&#xA;dAAERWN1Q3QACS9NSUNST1NBUnNxAH4ACHQAA0FkY3EAfgAMc3EAfgAIdAADTWN1cQB+AAxzcQB+&#xA;AAh0AAVNZW1JZnEAfgAac3EAfgAIdAAEdkJSU3EAfgAac3EAfgAIdAADQ3JjcQB+AAxzcQB+AAh0&#xA;AANTcGlxAH4ADHNxAH4ACHQAA0RtYXEAfgAMc3EAfgAIdAAEUG9ydHEAfgAMc3EAfgAIdAAHTWNh&#xA;bExpYnEAfgAMc3EAfgAIdAAEdlNldHEAfgAac3EAfgAIdAADU2JjdAAWL01JQ1JPU0FSL1NiY19U&#xA;bGYzNTU4NHNxAH4ACHQABUUyRVBXcQB+ABpzcQB+AAh0AAZNZW1NYXBxAH4AGg==" Name="Data"/>
             </Settings>
             <Settings Name="com.vector.cfg.gui.pse.pages.generators">
                 <Settings Name="BuildVipProject"/>

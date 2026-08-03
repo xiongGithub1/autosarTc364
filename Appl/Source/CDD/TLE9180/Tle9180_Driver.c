@@ -1,5 +1,16 @@
 /**********************************************************************************************************************
- *  Tle9180_Driver.c - TLE9180 init sequence (ported from legacy TLE9180.c, AUTOSAR MCAL)
+ *  Tle9180_Driver.c — TLE9180 三相栅极驱动器（QSPI3 + 控制引脚）
+ *  -------------------------------------------------------------------------------------------------------------------
+ *  初始化（MotorCdd_Init 内同步执行，每步重试 10 次，失败锁 FAULT）：
+ *    1 PORT      : INH/SOFF/ENA 复位时序，等待 ERR 引脚拉高（20 ms 超时）
+ *    2 SPI_TEST  : 0x32 NOP 帧回读校验（确认 QSPI3 通信）
+ *    3 ERR_STARTUP : 读错误状态并清除（EN 复位）
+ *    4 ERR_AGAIN : 复查错误位
+ *    5 LOAD_CONTROL : 加载控制寄存器并回读校验
+ *    6 LOAD_STARTUP : 加载 20 条启动配置（CRC8 校验），等待 CONFVALID，进入 NORMAL
+ *  状态机：TLE9180_DRV_STATE_UNINIT / READY / FAULT；错误码见 Tle9180_GetLastInitError。
+ *  运行：Tle9180_Driver_MainFunction 由 1 ms 任务调用（READY 后直接返回）。
+ *  输出使能：Tle9180_Driver_EnableOutput(TRUE/FALSE) 由 MotorControll 门控调用。
  **********************************************************************************************************************/
 #include "Tle9180_Driver.h"
 #include "Tle9180_AutosarPort.h"

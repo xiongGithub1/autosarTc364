@@ -95,8 +95,8 @@ static void MotorFoc_OpenLoopCan_BuildControlPage(void)
   MotorFoc_OpenLoopCan_ClearData();
   MotorFoc_OpenLoopCan_Data[0U] = MOTORFOC_OPENLOOPCAN_PAGE_CONTROL;
   MotorFoc_OpenLoopCan_Data[1U] = MotorFoc_OpenLoopCan_CurrentMode;
-  MotorFoc_OpenLoopCan_Data[2U] = MotorFoc_CurrentLoopFault;
-  MotorFoc_OpenLoopCan_Data[3U] = MotorFoc_CurrentLoopFaultReason;
+  MotorFoc_OpenLoopCan_Data[2U] = MotorFoc_ProtObs.fault.active;
+  MotorFoc_OpenLoopCan_Data[3U] = MotorFoc_ProtObs.fault.reason;
   MotorFoc_OpenLoopCan_PutU16(4U, MotorFoc_OpenLoopCan_Sequence);
 
   MotorFoc_OpenLoopCan_PutS16(6U, MotorControll_IdRefOut,
@@ -133,8 +133,8 @@ static void MotorFoc_OpenLoopCan_BuildPwmPage(void)
   MotorFoc_OpenLoopCan_ClearData();
   MotorFoc_OpenLoopCan_Data[0U] = MOTORFOC_OPENLOOPCAN_PAGE_PWM;
   MotorFoc_OpenLoopCan_Data[1U] = MotorFoc_OpenLoopCan_CurrentMode;
-  MotorFoc_OpenLoopCan_Data[2U] = MotorFoc_CurrentLoopFault;
-  MotorFoc_OpenLoopCan_Data[3U] = MotorFoc_CurrentLoopFaultReason;
+  MotorFoc_OpenLoopCan_Data[2U] = MotorFoc_ProtObs.fault.active;
+  MotorFoc_OpenLoopCan_Data[3U] = MotorFoc_ProtObs.fault.reason;
   MotorFoc_OpenLoopCan_PutU16(4U, MotorFoc_OpenLoopCan_Sequence);
 
   MotorFoc_OpenLoopCan_PutS16(6U, ctx->vdqRef.real,
@@ -155,13 +155,13 @@ static void MotorFoc_OpenLoopCan_BuildPwmPage(void)
                               MotorFoc_OpenLoopCan_ClampU16((uint32)ctx->Tpwm.Tpwm));
   MotorFoc_OpenLoopCan_PutS16(22U, ctx->i_motor.vdcMax,
                               MOTORFOC_OPENLOOPCAN_VDC_SCALE);
-  MotorFoc_OpenLoopCan_PutS16(24U, MotorFoc_CurrentLoopFaultIuA,
+  MotorFoc_OpenLoopCan_PutS16(24U, MotorFoc_ProtObs.fault.iuA,
                               MOTORFOC_OPENLOOPCAN_CURRENT_SCALE);
-  MotorFoc_OpenLoopCan_PutS16(26U, MotorFoc_CurrentLoopFaultIvA,
+  MotorFoc_OpenLoopCan_PutS16(26U, MotorFoc_ProtObs.fault.ivA,
                               MOTORFOC_OPENLOOPCAN_CURRENT_SCALE);
-  MotorFoc_OpenLoopCan_PutS16(28U, MotorFoc_CurrentLoopFaultIwA,
+  MotorFoc_OpenLoopCan_PutS16(28U, MotorFoc_ProtObs.fault.iwA,
                               MOTORFOC_OPENLOOPCAN_CURRENT_SCALE);
-  MotorFoc_OpenLoopCan_PutS16(30U, MotorFoc_CurrentLoopFaultVdcV,
+  MotorFoc_OpenLoopCan_PutS16(30U, MotorFoc_ProtObs.fault.vdcV,
                               MOTORFOC_OPENLOOPCAN_VDC_SCALE);
 }
 

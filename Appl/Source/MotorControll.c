@@ -11,6 +11,18 @@
  *
  *      Description:  C-Code implementation template for SW-C <MotorControll>
  *********************************************************************************************************************/
+/* ===================================================================================================================
+ *  MotorControll.c — 电机模式状态机（1 ms，Core1 MotorTask）
+ *  -------------------------------------------------------------------------------------------------------------------
+ *  职责（每 1 ms 一拍）：
+ *    1) 模式判定：MotorControll_MotorModeCmd（UDE/上层命令）或 OpenLoopEnable 覆盖
+ *    2) 模式切换处理（HandleModeTransition）：进入/退出动作、标定启动、开环复位、故障清除
+ *    3) 电流参考计算（ComputeCurrentRefs）：按模式生成 Id/Iq 参考，含斜坡/限幅
+ *    4) 输出使能门控（ApplyOutputGating）：IDLE/STOP 关输出；栅驱未就绪/欠压/故障禁止使能
+ *    5) 反馈发布（RTE）：电角度、母线电压、栅驱状态
+ *  与快速环的关系：本模块只生成参考并写入 RTE 镜像，10 kHz 电流环在 ADC 中断
+ *  （MotorCdd_FocFastLoop）读取镜像执行，二者通过 volatile 镜像解耦。
+ * =================================================================================================================== */
 
 /* PRQA S 0777, 0779 EOF */ /* MD_MSR_Rule5.1, MD_MSR_Rule5.2 */
 /* PRQA S 0857 EOF */ /* MD_MSR_Dir1.1 */
@@ -121,7 +133,8 @@ uint8 MotorControll_IsOutputEnabled(void)
   return MotorControll_OutputEnabled;
 }
 
-void MotorControll_MainFunction(void)
+/* 1 ms 电机主函数：模式判定 → 切换处理 → 参考计算 → 发布 → 输出门控。
+   由 MotorTask 的 1ms TimingEvent 调用（Rte_OsApplication_OsCore1.c）。 */void MotorControll_MainFunction(void)
 {
   MotorMode_Type motorMode;
 
@@ -134,11 +147,11 @@ void MotorControll_MainFunction(void)
   MotorControll_UpdateGateDriverObservation();
 
   if ((motorMode == MOTOR_MODE_IDLE) &&
-      (MotorFoc_CurrentLoopFault != 0U) &&
-      (MotorFoc_CurrentLoopFaultReason == MOTORFOC_CURRENT_FAULT_UNDERVOLT))
+      (MotorFoc_ProtObs.fault.active != 0U) &&
+      (MotorFoc_ProtObs.fault.reason == MOTORFOC_CURRENT_FAULT_UNDERVOLT))
   {
     const MotorCdd_AdcPhysicalType* adcPhysical = MotorCdd_GetAdcPhysical();
-    float32 minVdc = MotorFoc_CurrentLoopMinVdcRunV;
+    float32 minVdc = MotorFoc_ProtObs.cfg.minVdcRunV;
 
     if (minVdc < 0.0F)
     {
@@ -200,7 +213,7 @@ static uint8 MotorControll_TryStartCalibration(void)
   float32 minVdc;
 
   adcPhysical = MotorCdd_GetAdcPhysical();
-  minVdc = MotorFoc_CurrentLoopMinVdcRunV;
+  minVdc = MotorFoc_ProtObs.cfg.minVdcRunV;
   if (minVdc < 0.0F)
   {
     minVdc = 0.0F;
@@ -230,7 +243,12 @@ static uint8 MotorControll_TryStartCalibration(void)
   return 1U;
 }
 
-static void MotorControll_ComputeCurrentRefs(MotorMode_Type motorMode)
+/* 按模式生成 Id/Iq 参考：
+   - OPEN_LOOP  ：外部命令 Id/Iq 限幅到 OpenLoopCurrentLimitA（斜坡由快速环开环状态机执行）
+   - FOC_SPEED  ：运行速度环（1ms）产生 Iq
+   - FOC_CURRENT：直接透传 Id/Iq 命令
+   - CALIBRATION：使用零点标定的对齐电流 Id
+   其余模式参考为 0。 */static void MotorControll_ComputeCurrentRefs(MotorMode_Type motorMode)
 {
   float32 idRef = 0.0F;
   float32 iqRef = 0.0F;
@@ -294,7 +312,10 @@ static void MotorControll_ComputeCurrentRefs(MotorMode_Type motorMode)
   MotorControll_IqRefOut = iqRef;
 }
 
-static void MotorControll_HandleModeTransition(MotorMode_Type motorMode,
+/* 模式切换动作（仅在模式变化或标定重试时执行）：
+   - 进入 CALIBRATION：检查 VDC 稳定/标定条件，不满足回 IDLE
+   - CALIBRATION_ERASE / SAVE：擦除/保存 DFlash，随后回 IDLE
+   - 进入 OPEN_LOOP：复位开环状态机并清故障 */static void MotorControll_HandleModeTransition(MotorMode_Type motorMode,
                                                MotorMode_Type* activeMode)
 {
   if (motorMode != MotorControll_PrevMotorMode)
@@ -356,7 +377,11 @@ static void MotorControll_HandleModeTransition(MotorMode_Type motorMode,
   }
 }
 
-static void MotorControll_ApplyOutputGating(MotorMode_Type motorMode)
+/* 输出使能门控（每 1 ms）：
+   - IDLE/STOP/SAVING：禁止输出（StopPwm，清 OutputEnabled）
+   - 栅驱未 READY、存在故障、开环母线不足：禁止使能并计数
+   - 满足条件且电流零偏已就绪：PrepareOutputEnable(中性占空比+清故障+挂 blanking)
+     后使能 TLE9180 输出（软启动）。 */static void MotorControll_ApplyOutputGating(MotorMode_Type motorMode)
 {
   if ((motorMode == MOTOR_MODE_IDLE) ||
       (motorMode == MOTOR_MODE_STOP) ||
@@ -383,7 +408,7 @@ static void MotorControll_ApplyOutputGating(MotorMode_Type motorMode)
   if (motorMode == MOTOR_MODE_OPEN_LOOP)
   {
     const MotorCdd_AdcPhysicalType* adcPhysical = MotorCdd_GetAdcPhysical();
-    float32 minVdc = MotorFoc_CurrentLoopMinVdcRunV;
+    float32 minVdc = MotorFoc_ProtObs.cfg.minVdcRunV;
 
     if (minVdc < 0.0F)
     {

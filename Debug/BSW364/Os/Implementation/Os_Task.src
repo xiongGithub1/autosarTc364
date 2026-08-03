@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
-	.compiler_invocation	"ctc -f cc17432a --dep-file=BSW364\\Os\\Implementation\\.Os_Task.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -DBRS_COMP_TASKING -DBRS_PLATFORM_AURIX -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Include -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=BSW364\\Os\\Implementation\\Os_Task.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW364\\Os\\Implementation\\Os_Task.src ..\\BSW364\\Os\\Implementation\\Os_Task.c"
+	.compiler_invocation	"ctc -f cc7052a --dep-file=BSW364\\Os\\Implementation\\.Os_Task.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -DBRS_COMP_TASKING -DBRS_PLATFORM_AURIX -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Include -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=BSW364\\Os\\Implementation\\Os_Task.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW364\\Os\\Implementation\\Os_Task.src ..\\BSW364\\Os\\Implementation\\Os_Task.c"
 	.compiler_name		"ctc"
 	;source	'..\\BSW364\\Os\\Implementation\\Os_Task.c'
 
@@ -131850,19 +131850,19 @@ __Os_TaskCallPreTaskHook_function_end:
 	.word	0,0
 .L910:
 	.word	0,0
-.L821:
-	.word	-1,.L164,.L820-.L164,.L817-.L164
-	.half	1
-	.byte	95
-	.word	.L170-.L164,.L416-.L164
-	.half	1
-	.byte	95
-	.word	0,0
 .L844:
 	.word	-1,.L164,.L843-.L164,.L840-.L164
 	.half	1
 	.byte	95
 	.word	.L166-.L164,.L461-.L164
+	.half	1
+	.byte	95
+	.word	0,0
+.L821:
+	.word	-1,.L164,.L820-.L164,.L817-.L164
+	.half	1
+	.byte	95
+	.word	.L170-.L164,.L416-.L164
 	.half	1
 	.byte	95
 	.word	0,0
@@ -131934,13 +131934,13 @@ __Os_TaskCallPreTaskHook_function_end:
 	.half	1
 	.byte	111
 	.word	0,0
-.L906:
-	.word	-1,.L164,.L1600-.L164,.L406-.L164
+.L889:
+	.word	-1,.L164,.L1591-.L164,.L1592-.L164
 	.half	1
 	.byte	95
 	.word	0,0
-.L889:
-	.word	-1,.L164,.L1591-.L164,.L1592-.L164
+.L906:
+	.word	-1,.L164,.L1600-.L164,.L406-.L164
 	.half	1
 	.byte	95
 	.word	0,0
@@ -132355,14 +132355,6 @@ __Os_TaskCallPreTaskHook_function_end:
 	.word	0,0
 .L1118:
 	.word	0,0
-.L1113:
-	.word	-1,.L206,.L1112-.L206,.L1110-.L206
-	.half	1
-	.byte	95
-	.word	.L166-.L206,.L461-.L206
-	.half	1
-	.byte	95
-	.word	0,0
 .L1140:
 	.word	-1,.L206,.L1139-.L206,.L1143-.L206
 	.half	1
@@ -132381,6 +132373,14 @@ __Os_TaskCallPreTaskHook_function_end:
 	.half	1
 	.byte	95
 	.word	.L1144-.L206,.L1147-.L206
+	.half	1
+	.byte	95
+	.word	0,0
+.L1113:
+	.word	-1,.L206,.L1112-.L206,.L1110-.L206
+	.half	1
+	.byte	95
+	.word	.L166-.L206,.L461-.L206
 	.half	1
 	.byte	95
 	.word	0,0
@@ -132492,6 +132492,21 @@ __Os_TaskCallPreTaskHook_function_end:
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
+.L1158:
+	.word	-1,.L206,.L1659-.L206,.L1660-.L206
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L1194:
+	.word	-1,.L206,.L1670-.L206,.L1671-.L206
+	.half	1
+	.byte	95
+	.word	0,0
+.L1186:
+	.word	-1,.L206,.L1666-.L206,.L1667-.L206
+	.half	1
+	.byte	95
+	.word	0,0
 .L1202:
 	.word	-1,.L206,.L1675-.L206,.L1676-.L206
 	.half	1
@@ -132499,21 +132514,6 @@ __Os_TaskCallPreTaskHook_function_end:
 	.word	0,0
 .L1205:
 	.word	-1,.L206,.L1677-.L206,.L1678-.L206
-	.half	5
-	.byte	144,32,157,32,0
-	.word	0,0
-.L1186:
-	.word	-1,.L206,.L1666-.L206,.L1667-.L206
-	.half	1
-	.byte	95
-	.word	0,0
-.L1194:
-	.word	-1,.L206,.L1670-.L206,.L1671-.L206
-	.half	1
-	.byte	95
-	.word	0,0
-.L1158:
-	.word	-1,.L206,.L1659-.L206,.L1660-.L206
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
@@ -132690,6 +132690,8 @@ __Os_TaskCallPreTaskHook_function_end:
 	.half	1
 	.byte	89
 	.word	0,0
+.L1115:
+	.word	0,0
 .L1131:
 	.word	-1,.L206,.L1651-.L206,.L74-.L206
 	.half	1
@@ -132735,8 +132737,6 @@ __Os_TaskCallPreTaskHook_function_end:
 	.byte	88
 	.word	0,0
 .L1105:
-	.word	0,0
-.L1115:
 	.word	0,0
 .L1127:
 	.word	-1,.L206,.L1117-.L206,.L77-.L206
@@ -132945,13 +132945,13 @@ __Os_TaskCallPreTaskHook_function_end:
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
-.L1252:
-	.word	-1,.L212,.L1600-.L212,.L406-.L212
+.L1264:
+	.word	-1,.L212,.L1687-.L212,.L1688-.L212
 	.half	1
 	.byte	95
 	.word	0,0
-.L1264:
-	.word	-1,.L212,.L1687-.L212,.L1688-.L212
+.L1252:
+	.word	-1,.L212,.L1600-.L212,.L406-.L212
 	.half	1
 	.byte	95
 	.word	0,0
@@ -133128,7 +133128,7 @@ __Os_TaskCallPreTaskHook_function_end:
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
-.L1038:
+.L1063:
 	.word	-1,.L186,.L152-.L186,.L476-.L186
 	.half	5
 	.byte	144,32,157,32,0
@@ -133136,7 +133136,7 @@ __Os_TaskCallPreTaskHook_function_end:
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
-.L1063:
+.L1038:
 	.word	-1,.L186,.L152-.L186,.L476-.L186
 	.half	5
 	.byte	144,32,157,32,0
@@ -133246,16 +133246,16 @@ __Os_TaskCallPreTaskHook_function_end:
 	.half	1
 	.byte	95
 	.word	0,0
+.L937:
+	.word	-1,.L186,.L1608-.L186,.L1609-.L186
+	.half	1
+	.byte	95
+	.word	0,0
 .L1002:
 	.word	-1,.L186,.L190-.L186,.L426-.L186
 	.half	1
 	.byte	95
 	.word	.L1001-.L186,.L1004-.L186
-	.half	1
-	.byte	95
-	.word	0,0
-.L937:
-	.word	-1,.L186,.L1608-.L186,.L1609-.L186
 	.half	1
 	.byte	95
 	.word	0,0
@@ -133318,6 +133318,11 @@ __Os_TaskCallPreTaskHook_function_end:
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
+.L1047:
+	.word	-1,.L186,.L1600-.L186,.L406-.L186
+	.half	1
+	.byte	95
+	.word	0,0
 .L1016:
 	.word	-1,.L186,.L1621-.L186,.L1622-.L186
 	.half	5
@@ -133329,11 +133334,6 @@ __Os_TaskCallPreTaskHook_function_end:
 	.byte	95
 	.word	0,0
 .L1056:
-	.word	-1,.L186,.L1600-.L186,.L406-.L186
-	.half	1
-	.byte	95
-	.word	0,0
-.L1047:
 	.word	-1,.L186,.L1600-.L186,.L406-.L186
 	.half	1
 	.byte	95
@@ -133518,16 +133518,16 @@ __Os_TaskCallPreTaskHook_function_end:
 	.word	0,0
 .L607:
 	.word	0,0
-.L604:
-	.word	-1,.L222,.L598-.L222,.L1698-.L222
-	.half	1
-	.byte	95
-	.word	0,0
 .L570:
 	.word	-1,.L222,.L569-.L222,.L552-.L222
 	.half	1
 	.byte	95
 	.word	.L166-.L222,.L461-.L222
+	.half	1
+	.byte	95
+	.word	0,0
+.L604:
+	.word	-1,.L222,.L598-.L222,.L1698-.L222
 	.half	1
 	.byte	95
 	.word	0,0
@@ -133833,12 +133833,12 @@ __Os_TaskCallPreTaskHook_function_end:
 	.word	0,0
 .L1467:
 	.word	0,0
-.L1519:
+.L1506:
 	.word	-1,.L156,.L1554-.L156,.L411-.L156
 	.half	1
 	.byte	95
 	.word	0,0
-.L1506:
+.L1519:
 	.word	-1,.L156,.L1554-.L156,.L411-.L156
 	.half	1
 	.byte	95
@@ -134039,29 +134039,6 @@ __Os_TaskCallPreTaskHook_function_end:
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
-.L766:
-	.word	-1,.L230,.L1717-.L230,.L1718-.L230
-	.half	1
-	.byte	82
-	.word	.L152-.L230,.L476-.L230
-	.half	1
-	.byte	82
-	.word	.L204-.L230,.L1629-.L230
-	.half	1
-	.byte	82
-	.word	.L142-.L230,.L481-.L230
-	.half	1
-	.byte	82
-	.word	.L1546-.L230,.L481-.L230
-	.half	5
-	.byte	144,32,157,32,0
-	.word	.L194-.L230,.L366-.L230
-	.half	5
-	.byte	144,32,157,32,0
-	.word	.L1718-.L230,.L133-.L230
-	.half	5
-	.byte	144,32,157,32,0
-	.word	0,0
 .L805:
 	.word	-1,.L230,.L1724-.L230,.L1722-.L230
 	.half	1
@@ -134085,6 +134062,29 @@ __Os_TaskCallPreTaskHook_function_end:
 	.half	5
 	.byte	144,32,157,32,0
 	.word	.L1722-.L230,.L134-.L230
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L766:
+	.word	-1,.L230,.L1717-.L230,.L1718-.L230
+	.half	1
+	.byte	82
+	.word	.L152-.L230,.L476-.L230
+	.half	1
+	.byte	82
+	.word	.L204-.L230,.L1629-.L230
+	.half	1
+	.byte	82
+	.word	.L142-.L230,.L481-.L230
+	.half	1
+	.byte	82
+	.word	.L1546-.L230,.L481-.L230
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L194-.L230,.L366-.L230
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L1718-.L230,.L133-.L230
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
@@ -134119,13 +134119,13 @@ __Os_TaskCallPreTaskHook_function_end:
 	.half	1
 	.byte	95
 	.word	0,0
-.L656:
-	.word	-1,.L230,.L647-.L230,.L1710-.L230
+.L683:
+	.word	-1,.L230,.L682-.L230,.L690-.L230
 	.half	1
 	.byte	95
 	.word	0,0
-.L683:
-	.word	-1,.L230,.L682-.L230,.L690-.L230
+.L656:
+	.word	-1,.L230,.L647-.L230,.L1710-.L230
 	.half	1
 	.byte	95
 	.word	0,0
@@ -134212,12 +134212,17 @@ __Os_TaskCallPreTaskHook_function_end:
 	.half	2
 	.byte	145,104
 	.word	0,0
+.L781:
+	.word	-1,.L230,.L1600-.L230,.L406-.L230
+	.half	1
+	.byte	95
+	.word	0,0
 .L807:
 	.word	-1,.L230,.L1600-.L230,.L406-.L230
 	.half	1
 	.byte	95
 	.word	0,0
-.L781:
+.L794:
 	.word	-1,.L230,.L1600-.L230,.L406-.L230
 	.half	1
 	.byte	95
@@ -134226,11 +134231,6 @@ __Os_TaskCallPreTaskHook_function_end:
 	.word	-1,.L230,.L1715-.L230,.L1716-.L230
 	.half	5
 	.byte	144,32,157,32,0
-	.word	0,0
-.L794:
-	.word	-1,.L230,.L1600-.L230,.L406-.L230
-	.half	1
-	.byte	95
 	.word	0,0
 .L680:
 	.word	-1,.L230,.L1711-.L230,.L690-.L230
@@ -134354,6 +134354,26 @@ __Os_TaskCallPreTaskHook_function_end:
 	.word	0,0
 .L1301:
 	.word	0,0
+.L1416:
+	.word	-1,.L136,.L1530-.L136,.L346-.L136
+	.half	1
+	.byte	82
+	.word	.L1531-.L136,.L346-.L136
+	.half	1
+	.byte	98
+	.word	.L146-.L136,.L411-.L136
+	.half	1
+	.byte	98
+	.word	.L146-.L136,.L411-.L136
+	.half	1
+	.byte	82
+	.word	.L1555-.L136,.L1556-.L136
+	.half	1
+	.byte	98
+	.word	.L1555-.L136,.L1557-.L136
+	.half	1
+	.byte	82
+	.word	0,0
 .L1369:
 	.word	-1,.L136,.L1530-.L136,.L346-.L136
 	.half	1
@@ -134380,26 +134400,6 @@ __Os_TaskCallPreTaskHook_function_end:
 	.half	1
 	.byte	82
 	.word	.L150-.L136,.L1540-.L136
-	.half	1
-	.byte	82
-	.word	0,0
-.L1416:
-	.word	-1,.L136,.L1530-.L136,.L346-.L136
-	.half	1
-	.byte	82
-	.word	.L1531-.L136,.L346-.L136
-	.half	1
-	.byte	98
-	.word	.L146-.L136,.L411-.L136
-	.half	1
-	.byte	98
-	.word	.L146-.L136,.L411-.L136
-	.half	1
-	.byte	82
-	.word	.L1555-.L136,.L1556-.L136
-	.half	1
-	.byte	98
-	.word	.L1555-.L136,.L1557-.L136
 	.half	1
 	.byte	82
 	.word	0,0
@@ -134690,6 +134690,21 @@ __Os_TaskCallPreTaskHook_function_end:
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
+.L1418:
+	.word	-1,.L136,.L1554-.L136,.L411-.L136
+	.half	1
+	.byte	95
+	.word	0,0
+.L1395:
+	.word	-1,.L136,.L1528-.L136,.L456-.L136
+	.half	1
+	.byte	95
+	.word	0,0
+.L1375:
+	.word	-1,.L136,.L1528-.L136,.L456-.L136
+	.half	1
+	.byte	95
+	.word	0,0
 .L1431:
 	.word	-1,.L136,.L1554-.L136,.L411-.L136
 	.half	1
@@ -134700,27 +134715,7 @@ __Os_TaskCallPreTaskHook_function_end:
 	.half	1
 	.byte	95
 	.word	0,0
-.L1384:
-	.word	-1,.L136,.L1528-.L136,.L456-.L136
-	.half	1
-	.byte	95
-	.word	0,0
-.L1418:
-	.word	-1,.L136,.L1554-.L136,.L411-.L136
-	.half	1
-	.byte	95
-	.word	0,0
-.L1375:
-	.word	-1,.L136,.L1528-.L136,.L456-.L136
-	.half	1
-	.byte	95
-	.word	0,0
-.L1373:
-	.word	-1,.L136,.L1528-.L136,.L456-.L136
-	.half	1
-	.byte	95
-	.word	0,0
-.L1395:
+.L1397:
 	.word	-1,.L136,.L1528-.L136,.L456-.L136
 	.half	1
 	.byte	95
@@ -134730,7 +134725,12 @@ __Os_TaskCallPreTaskHook_function_end:
 	.half	1
 	.byte	95
 	.word	0,0
-.L1397:
+.L1384:
+	.word	-1,.L136,.L1528-.L136,.L456-.L136
+	.half	1
+	.byte	95
+	.word	0,0
+.L1373:
 	.word	-1,.L136,.L1528-.L136,.L456-.L136
 	.half	1
 	.byte	95

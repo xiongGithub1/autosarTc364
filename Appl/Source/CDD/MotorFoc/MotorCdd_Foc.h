@@ -16,10 +16,10 @@ void MotorCdd_FocFastLoop(void);
 void MotorCdd_FocSetCmdMirror(uint8 motorMode, float32 idRef, float32 iqRef);
 /* CDD main backup sync from RTE ports into the same mirror. */
 void MotorCdd_FocUpdateCmdMirror(void);
-/* Publish electrical angle from slow path (after SPI); fast loop only reads cache. */
-void MotorCdd_FocPublishAngleCache(float32 electricalAngleRaw,
-                                   float32 electricalAngleRad);
-void MotorCdd_FocUpdateAngleCacheFromSensor(void);
+/* Publish electrical angle from the latest SPI frame; fast loop uses it immediately. */
+void MotorCdd_FocPublishLatestAngle(float32 electricalAngleRaw,
+                                    float32 electricalAngleRad);
+void MotorCdd_FocUpdateLatestAngleFromSensor(void);
 void MotorCdd_FocPrepareOutputEnable(void);
 void MotorCdd_FocStopOutput(void);
 void MotorCdd_FocClearFault(void);

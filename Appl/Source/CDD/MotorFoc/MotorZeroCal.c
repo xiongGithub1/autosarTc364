@@ -1,4 +1,13 @@
-#include "MotorZeroCal.h"
+/**********************************************************************************************************************
+ *  MotorZeroCal.c — TLE5012 零点标定（电角度 0 对齐）并持久化到 DFlash
+ *  -------------------------------------------------------------------------------------------------------------------
+ *  流程：MOTOR_MODE_CALIBRATION 触发
+ *    ALIGN_RAMP(Id 斜坡到对齐电流) → ALIGN_HOLD(保持) → READ_ANGLE(读传感器)
+ *    → 若电角度≈0 成功；否则写 MOD_3.ANG_BASE(ChangeAngleBasic) 重试（最多 10 次）
+ *    → 成功后 RAM 生效 → NvM/Fee 写 DFlash（magic 0xA5A4 + ANG_BASE）
+ *  上电：Fee 空闲后 NvM_ReadBlock 恢复 ANG_BASE（MOTORZEROCAL_BOOT_NVM_READ=1）
+ *  状态/阶段/故障原因均为 volatile，UDE 可观察（见 MotorZeroCal.h）。
+ **********************************************************************************************************************/#include "MotorZeroCal.h"
 #include "MotorMode.h"
 #include "MotorControll.h"
 #include "MotorFoc_CurrentLoop.h"
@@ -479,7 +488,7 @@ static void MotorZeroCal_RunCalibrationStep(void)
     return;
   }
 
-  if (MotorFoc_CurrentLoopFault != 0U)
+  if (MotorFoc_ProtObs.fault.active != 0U)
   {
     MotorZeroCal_SetCalibratedFlag(0U);
     MotorZeroCal_EnterFault(MOTORZEROCAL_FAULT_CURRENT);
@@ -616,7 +625,7 @@ uint8 MotorZeroCal_CanStart(void)
   }
 
   adcPhysical = MotorCdd_GetAdcPhysical();
-  minVdc = MotorFoc_CurrentLoopMinVdcRunV;
+  minVdc = MotorFoc_ProtObs.cfg.minVdcRunV;
   if (minVdc < 0.0F)
   {
     minVdc = 0.0F;

@@ -15,7 +15,7 @@
 **                                                                            **
 **  VERSION   : 17.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2026-07-31, 20:00:42  !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2026-08-03, 11:46:17  !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  GENERATOR : Build b191017-0938      !!!IGNORE-LINE!!!                   **
 **                                                                            **
@@ -420,9 +420,9 @@ static const Spi_JobConfigType Spi_kJobConfig_Core1[] =
     (0x00U)                    /*  PAREN        */
     ),
     Spi_IdleLeadTrailParam(
-    (1U), (5U), /* IPRE,IDLE:   IdleA/B delay = 3.0E-7s */
-    (1U), (5U), /* LPRE,LEAD:   Lead delay    = 3.0E-7s */
-    (1U), (5U),/* TPRE, TRAIL: Trail delay   = 3.0E-7s */
+    (2U), (2U), /* IPRE,IDLE:   IdleA/B delay = 6.0E-7s */
+    (2U), (2U), /* LPRE,LEAD:   Lead delay    = 6.0E-7s */
+    (2U), (2U),/* TPRE, TRAIL: Trail delay   = 6.0E-7s */
     (1U)
     ),
     SpiJob_5012BD_ChannelLinkPtr_Physical, /* Channel linked list Physical*/
@@ -446,9 +446,9 @@ static const Spi_JobConfigType Spi_kJobConfig_Core1[] =
     (0x00U)                    /*  PAREN        */
     ),
     Spi_IdleLeadTrailParam(
-    (1U), (1U), /* IPRE,IDLE:   IdleA/B delay = 1.0E-7s */
-    (1U), (1U), /* LPRE,LEAD:   Lead delay    = 1.0E-7s */
-    (1U), (1U),/* TPRE, TRAIL: Trail delay   = 1.0E-7s */
+    (2U), (2U), /* IPRE,IDLE:   IdleA/B delay = 6.0E-7s */
+    (2U), (2U), /* LPRE,LEAD:   Lead delay    = 6.0E-7s */
+    (2U), (2U),/* TPRE, TRAIL: Trail delay   = 6.0E-7s */
     (1U)
     ),
     SpiJob_9183_ChannelLinkPtr_Physical, /* Channel linked list Physical*/

@@ -1,4 +1,18 @@
-#include "MotorCdd_Adc.h"
+/**********************************************************************************************************************
+ *  MotorCdd_Adc.c — 三相电流 / 母线电压采样与快速环入口（Core1）
+ *  -------------------------------------------------------------------------------------------------------------------
+ *  硬件链路：
+ *    GTM ATOM0 CH7（周期 10000 ticks @100 MHz = 10 kHz）触发 EVADC 同步组
+ *    G0(RES0=VO1, RES1=VRO) / G2(RES0=VO2, RES1=VINV) / G3(RES0=VO3)
+ *    采样点默认 5000 ticks（周期中心，避开开关沿，采样 PWM 平均电流）
+ *  中断链路：
+ *    ADC 组通知(Adc_9183SenseVo1andVro_Notification)
+ *      → MotorCdd_AdcGroup0Notification（直读 RES 寄存器）
+ *      → MotorCdd_AdcRunFastLoop（电流换算 → 滤波 → MotorCdd_FocFastLoop）
+ *  电流换算：i = (VRO - VOx - offset) × CURR_CON_FACTOR（分流电阻+增益）
+ *  offset：PWM 关闭零电流状态下累计 100 拍平均值，滤除运放/ADC 零偏。
+ *  滤波：一阶低通 alpha=0.3857（约 1 kHz，可 UDE 调，0=关）。
+ **********************************************************************************************************************/#include "MotorCdd_Adc.h"
 #include "MotorCdd_Foc.h"
 #include "Adc_Cfg.h"
 #include "Mcu_17_TimerIp.h"
@@ -232,7 +246,8 @@ void MotorCdd_AdcHwTriggerInit(void)
   SRC_VADCG0SR0.B.SRE = 1U;
 }
 
-void MotorCdd_AdcRunFastLoop(void)
+/* 快速环入口（ADC 中断上下文，10 kHz）：
+   先做 ADC 原始值→物理量换算（电流/母线电压），再调用 FOC 快速环。 */void MotorCdd_AdcRunFastLoop(void)
 {
 
   MotorCdd_AdcConvertToPhysical();
@@ -240,7 +255,9 @@ void MotorCdd_AdcRunFastLoop(void)
 
 }
 
-void MotorCdd_AdcGroup0Notification(void)
+/* ADC 组 G0/G2/G3 同步转换完成通知（中断上下文）：
+   直读 EVADC RES 寄存器 → 更新原始值 → 立即执行快速环。
+   采样与 FOC 在同一中断内完成，保证电流与 PWM 同拍。 */void MotorCdd_AdcGroup0Notification(void)
 {
 
 //  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_LOW);

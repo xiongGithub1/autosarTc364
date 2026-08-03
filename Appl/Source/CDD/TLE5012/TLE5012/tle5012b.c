@@ -123,19 +123,27 @@ Std_ReturnType tle5012b_process_angle_raw(Tle5012 *tle5012, uint16 avalRaw)
   /* RD_AV=bit15, ANG_VAL=bits14:0. Never use :15 bitfield — TASKING treats it
    * as signed, so ANG_VAL>=16384 becomes negative / uint16 0xCxxx, Angle locks
    * into 4096..8191 and the old delta>2048 filter then rejects half the circle. */
-  if ((avalRaw == 0xFFFFU) || ((avalRaw & 0x8000U) == 0U))
+  if (avalRaw == 0xFFFFU)
   {
+    /* All-ones frame: real communication failure. */
     tle5012->SafetyBit++;
     return E_NOT_OK;
   }
 
+  if ((avalRaw & 0x8000U) == 0U)
+  {
+    /* RD_AV=0: no new angle since the last read. Normal when reading faster
+       than the sensor update rate; keep the current angle. */
+    return E_OK;
+  }
+
   angle = (uint16)(avalRaw & 0x7FFFU); /* 0..32767 full mechanical circle */
   tle5012->Original_Angle = (float32)angle;
-  /* 15-bit → 13-bit for FOC sin/cos table (0..8191). */
-  angle = (uint16)((angle >> 2U) & 0x1FFFU);
+  /* 15-bit mechanical -> 13-bit electrical angle index: v % 8192 (IPB convention). */
+  angle = (uint16)(angle % 8192U);
   tle5012->Angle = (float32)angle;
   angleOldPi = tle5012->anglePi;
-  tle5012->anglePi = tle5012->Angle * 7.66429044544767e-4F;
+  tle5012->anglePi = tle5012->Angle * 7.6699039394287e-4F; /* 2*pi/8192 */
   error = tle5012->anglePi - angleOldPi;
   if (error > M_PI) { error -= M_TWOPI; }
   else if (error < -M_PI) { error += M_TWOPI; }
@@ -144,8 +152,9 @@ Std_ReturnType tle5012b_process_angle_raw(Tle5012 *tle5012, uint16 avalRaw)
   {
     tle5012->AngleSpeed = error / tle5012->DisTimer;
     tle5012->AngleSpeedFilter = (tle5012->AngleSpeedFilter * 0.9F) + (tle5012->AngleSpeed * 0.1F);
-    /* anglePi is mechanical angle, therefore this is already mechanical RPM. */
-    tle5012->RPM = tle5012->AngleSpeedFilter * 9.5493F;
+    /* anglePi is now the electrical angle: divide by pole pairs for RPM. */
+    tle5012->RPM = tle5012->AngleSpeedFilter * 9.5493F /
+                   (float32)((tle5012->polePairs != 0U) ? tle5012->polePairs : 1U);
   }
   return E_OK;
 }
