@@ -229,7 +229,8 @@ static void MotorFoc_LimitDqVoltageVector(MotorFoc_ContextType* ctx)
 }
 
 /* dq 电流 PI：先按母线电压刷新输出限幅（电压矢量限幅），再分别计算
-   vd/vq，最后对 dq 电压矢量做模长限幅（六边形内切圆，避免过调制）。 */static void MotorFoc_DoCurrentPid(MotorFoc_ContextType* ctx)
+   vd/vq，最后对 dq 电压矢量做模长限幅（六边形内切圆，避免过调制）。 */
+static void MotorFoc_DoCurrentPid(MotorFoc_ContextType* ctx)
 {
   MotorFoc_UpdatePidVoltageLimit(ctx);
   MotorFoc_CurrentPidIdealCalc(ctx->idqRef.real,

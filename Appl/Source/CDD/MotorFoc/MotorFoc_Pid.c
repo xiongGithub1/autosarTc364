@@ -62,7 +62,8 @@ void MotorFoc_SpeedPidInit(MotorFoc_SpeedPidType* pi)
    1) ui = I_Gain × DisTimer × Error 累加，仅当上一拍输出未饱和时积分（Out==v1）
    2) v1 = P_Gain × (Error + ui)（PI 并联形式）
    3) 输出限幅到 [Min_output, Max_output]，饱和时冻结积分（防止积分饱和）
-   参数由 MotorFoc_CurrentPidInit 按带宽 w 生成：P = w·Lm，I = w·Rs */void MotorFoc_CurrentPidIdealCalc(float32 ref, float32 fdb, float32* out, MotorFoc_CurrentPidType* pi)
+   参数由 MotorFoc_CurrentPidInit 按带宽 w 生成：P = w·Lm，I = w·Rs */
+void MotorFoc_CurrentPidIdealCalc(float32 ref, float32 fdb, float32* out, MotorFoc_CurrentPidType* pi)
 {
   pi->Error = ref - fdb;
   pi->ui = (pi->Out == pi->v1) ? ((pi->I_Gain * pi->DisTimer * pi->Error) + pi->i1) : pi->i1;

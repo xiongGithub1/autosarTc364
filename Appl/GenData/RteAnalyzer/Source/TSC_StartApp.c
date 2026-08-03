@@ -149,6 +149,14 @@
 
 
      /* Service calls */
+Std_ReturnType TSC_StartApp_Rte_Call_ComM_UserRequest_RequestComMode(ComM_ModeType ComMode)
+{
+  return Rte_Call_ComM_UserRequest_RequestComMode(ComMode);
+}
+Std_ReturnType TSC_StartApp_Rte_Call_EcuM_StateRequest_RequestRUN(void)
+{
+  return Rte_Call_EcuM_StateRequest_RequestRUN();
+}
 
 
      /* Mode Interfaces */

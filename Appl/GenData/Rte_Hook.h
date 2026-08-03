@@ -28,6 +28,10 @@
  *
  * Not configured:
  *
+ *  Rte_CallHook_StartApp_ComM_UserRequest_RequestComMode_Return
+ *  Rte_CallHook_StartApp_ComM_UserRequest_RequestComMode_Start
+ *  Rte_CallHook_StartApp_EcuM_StateRequest_RequestRUN_Return
+ *  Rte_CallHook_StartApp_EcuM_StateRequest_RequestRUN_Start
  *  Rte_ReadHook_MotorCdd_Pp_MotorCtrlCmd_MotorMode_Return
  *  Rte_ReadHook_MotorCdd_Pp_MotorCtrlCmd_MotorMode_Start
  *  Rte_ReadHook_MotorCdd_Pp_MotorCurrentRef_Id_Ref_Return

@@ -1,7 +1,13 @@
 Appl\Source\StartApp.o :	..\Appl\Source\StartApp.c
 ..\Appl\Source\StartApp.c :
-Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\MotorCdd.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\MotorCdd.h" :
+Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Components\Rte_StartApp.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Components\Rte_StartApp.h" :
+Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Components\Rte_StartApp_Type.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Components\Rte_StartApp_Type.h" :
+Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_Type.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_Type.h" :
+Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte.h" :
 Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\Std_Types.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\Std_Types.h" :
 Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\Platform_Types.h"
@@ -20,18 +26,6 @@ Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenDat
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\E2EXf_Compiler_Cfg.h" :
 Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Compiler_Cfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Compiler_Cfg.h" :
-Appl\Source\StartApp.o :	..\Appl\Source\MotorControll.h
-..\Appl\Source\MotorControll.h :
-Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\MotorFoc\MotorMode.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\MotorFoc\MotorMode.h" :
-Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Components\Rte_StartApp.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Components\Rte_StartApp.h" :
-Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Components\Rte_StartApp_Type.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Components\Rte_StartApp_Type.h" :
-Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_Type.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_Type.h" :
-Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte.h" :
 Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_UserTypes.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_UserTypes.h" :
 Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\ComStack_Types.h"
@@ -40,6 +34,14 @@ Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenDat
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComStack_Cfg.h" :
 Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_DataHandleType.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_DataHandleType.h" :
+Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h" :
+Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h" :
+Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h" :
+Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h" :
 Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h" :
 Appl\Source\StartApp.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h"

@@ -466,6 +466,28 @@
                                     <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/MotorCdd/Pp_MotorCurrentRef</TARGET-R-PORT-REF>
                                   </REQUESTER-IREF>
                                 </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="0bebfc11-7195-40c0-a739-f9eb7117b04d">
+                                  <SHORT-NAME>EcuM_StateRequest_EcuMConf_EcuMFixedUserConfig_EcuMFixedUserConfig_StartApp_EcuM_StateRequest</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/EcuM</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/StateRequest_EcuMConf_EcuMFixedUserConfig_EcuMFixedUserConfig</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/StartApp</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/StartApp/EcuM_StateRequest</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="6879a599-4838-4218-ac0b-32c5fc8a7fc5">
+                                  <SHORT-NAME>ComM_UR_CN_CAN00_06ecbb07_StartApp_ComM_UserRequest</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComM</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR/ComM_swc/ComponentTypes/ComM/UR_CN_CAN00_06ecbb07</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/StartApp</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/StartApp/ComM_UserRequest</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
                               </CONNECTORS>
                             </COMPOSITION-SW-COMPONENT-TYPE>
                             <END-TO-END-PROTECTION-SET UUID="a4e3eb1b-8c6e-4ff7-b0ed-a62ec0c16680">
@@ -552,8 +574,10 @@
                                     <SD GID="9545fe9e-3389-4b58-a7c5-529393280d37">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE</SD>
                                     <SD GID="2ecfeaa2-6c30-4d7d-8e6e-2421a5350db7">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</SD>
                                     <SD GID="6c3406dc-c4d5-4eda-bc42-ce411a5da1f2">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComM</SD>
+                                    <SD GID="6879a599-4838-4218-ac0b-32c5fc8a7fc5">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComM_UR_CN_CAN00_06ecbb07_StartApp_ComM_UserRequest</SD>
                                     <SD GID="1d01c276-c949-40ad-b899-b7a0bca03263">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Det</SD>
                                     <SD GID="01417f96-3c12-42fd-86bd-abe761c339df">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/EcuM</SD>
+                                    <SD GID="0bebfc11-7195-40c0-a739-f9eb7117b04d">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/EcuM_StateRequest_EcuMConf_EcuMFixedUserConfig_EcuMFixedUserConfig_StartApp_EcuM_StateRequest</SD>
                                     <SD GID="163e5d64-ff37-4d5f-aa46-cd3b6ac685f1">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/MotorCdd</SD>
                                     <SD GID="5b71db1c-5482-4880-9de4-87a61bb32127">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/MotorControll</SD>
                                     <SD GID="4b07cdd5-9de1-4feb-a75a-b5222977948d">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/NvM</SD>
@@ -586,6 +610,8 @@
                                     <SD GID="7F37CA7B-2F9F-476F-B242-6111124E4705">/ComponentTypes/MotorControll/Pp_MotorFaultStatus</SD>
                                     <SD GID="73EC42D7-3EB6-44A8-8C2C-771753EEC94B">/ComponentTypes/MotorControll_Implementation</SD>
                                     <SD GID="29CEE414-8C92-4098-9D33-043FB99C2C62">/ComponentTypes/StartApp</SD>
+                                    <SD GID="94470FD1-1033-423C-A3E9-29ADDD90663F">/ComponentTypes/StartApp/ComM_UserRequest</SD>
+                                    <SD GID="5A0A749E-DF3E-4E87-A67E-88E1FDA8F8AC">/ComponentTypes/StartApp/EcuM_StateRequest</SD>
                                     <SD GID="4B91D2A3-5D8E-47D6-8D7E-568156A99AA3">/ComponentTypes/StartApp/StartApp_InternalBehavior/StartApp_InitEvent</SD>
                                     <SD GID="2CB13980-9513-4715-8BB3-44E46DD2B497">/ComponentTypes/StartApp/StartApp_InternalBehavior/TMT_StartApp_Cyclic1000ms</SD>
                                     <SD GID="234C70B8-B8B0-44AA-92AB-BB05A13F7A80">/ComponentTypes/StartApp/StartApp_InternalBehavior/TMT_StartApp_Cyclic10ms</SD>
@@ -615,6 +641,7 @@
                                     <SD GID="5b573112-53a0-4c4f-8226-91b1de094585">/MICROSAR/Can_Mpc5700Mcan_ib_bswmd/BswModuleDescriptions/Can/Can_Can_Mpc5700McanBehavior/Can_MainFunction_WriteTimingEvent0</SD>
                                     <SD GID="a5b7821e-8ce5-4944-ae3d-18d6d5e4f248">/MICROSAR/Can_Mpc5700Mcan_ib_bswmd/BswModuleDescriptions/Can_MainFunction_Read</SD>
                                     <SD GID="6cb5f158-5901-45fc-a9cb-997d4e5d14a2">/MICROSAR/Can_Mpc5700Mcan_ib_bswmd/BswModuleDescriptions/Can_MainFunction_Write</SD>
+                                    <SD GID="bab80ed2-4430-40b8-8228-49320cf0c062">/MICROSAR/ComM_swc/ComponentTypes/ComM/UR_CN_CAN00_06ecbb07</SD>
                                     <SD GID="1f19f14b-abbd-41cc-a8e9-30e23f69c54e">/MICROSAR/ComM_swc/ComponentTypes/ComMImplementation/ComMResourceConsumption/ComM_START_SEC_VAR_INIT_UNSPECIFIED</SD>
                                     <SD GID="fe3d000d-5317-47c5-a890-975265e4f8ad">/MICROSAR/ComM_swc/ComponentTypes/ComMImplementation/ComMResourceConsumption/ComM_START_SEC_VAR_NOINIT_UNSPECIFIED</SD>
                                     <SD GID="db23bc7f-7f7e-4293-bdf2-e9dc47b958a3">/MICROSAR/ComM_swc/ComponentTypes/ComMImplementation/ComMResourceConsumption/ComM_START_SEC_VAR_ZERO_INIT_UNSPECIFIED</SD>
@@ -669,7 +696,6 @@
                                     <SD GID="de340770-63a7-41e6-b7d8-28624d311332">/MICROSAR/EcuM_swc/Interfaces/EcuM_StateRequest</SD>
                                     <SD GID="7a74dacc-7c66-48f0-a67e-56f6d0d72ffe">/MICROSAR/EcuM_swc/Interfaces/EcuM_StateRequest/E_NOT_OK</SD>
                                     <SD GID="d3078fe2-b034-4579-b393-233de636027b">/MICROSAR/EcuM_swc/Interfaces/EcuM_StateRequest/GetStateWrapper</SD>
-                                    <SD GID="7e9bd741-36e2-4f6a-8736-2133ef60d3c4">/MICROSAR/EcuM_swc/Interfaces/EcuM_StateRequest/GetStateWrapper/state</SD>
                                     <SD GID="c387d1bd-18d5-44f1-838f-950ceffc2084">/MICROSAR/EcuM_swc/Interfaces/EcuM_StateRequest/ReleasePOSTRUN</SD>
                                     <SD GID="7c122fdb-ecbe-47f4-abed-a81edd5cfd30">/MICROSAR/EcuM_swc/Interfaces/EcuM_StateRequest/ReleaseRUN</SD>
                                     <SD GID="df400d7a-a982-4d73-9e86-200a9024a784">/MICROSAR/EcuM_swc/Interfaces/EcuM_StateRequest/RequestPOSTRUN</SD>
