@@ -58,7 +58,6 @@
 #include "SchM_EcuM.h"
 #include "SchM_Fee.h"
 #include "SchM_Fls_17_Dmu.h"
-#include "SchM_IpduM.h"
 #include "SchM_Irq.h"
 #include "SchM_McalLib.h"
 #include "SchM_Mcu.h"
@@ -68,6 +67,7 @@
 #include "SchM_Pwm_17_GtmCcu6.h"
 #include "SchM_Sbc_30_Tlf35584.h"
 #include "SchM_Spi.h"
+#include "SchM_Xcp.h"
 
 #include "Rte_Hook.h"
 

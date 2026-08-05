@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Can_Lcfg.c
- *   Generation Time: 2024-08-03 19:52:21
+ *   Generation Time: 2024-08-04 12:44:09
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -405,7 +405,7 @@ CONST(Can_OsIsrType, CAN_CONST) Can_IsrOsId[1] = {  /* PRQA S 1514, 1533 */  /* 
 /*lint -restore */
 CONST(Can_MailboxType, CAN_CONST) Can_Mailbox[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
     /* Index    ActiveSendObject  ControllerConfigIdx                                                        FdPadding  HwHandle  IDValue  MailboxSize  MailboxType                                MaxDataLen  MemorySectionsIndex        Comment                            Referable Keys */
-  { /*     0 */               0u,                  0u  /* /ActiveEcuC/Can/CanConfigSet/CT_CAN00_9df8a959 */,        0u,       0u,   0x00u,          1u, CAN_TX_BASICCAN_TYPE_MAILBOXTYPEOFMAILBOX,        32u,                 32u },  /* [CN_CAN00_5e566ad9_Tx] */  /* [/ActiveEcuC/Can/CanConfigSet/CN_CAN00_5e566ad9_Tx (DefRef: /MICROSAR/Can_Mpc5700Mcan/Can/CanConfigSet/CanHardwareObject), /ActiveEcuC/Can/CanConfigSet/CT_CAN00_9df8a959, TX_BASICCAN_TYPE/ActiveEcuC/Can/CanConfigSet/CT_CAN00_9df8a959 (DefRef: /MICROSAR/Can_Mpc5700Mcan/Can/CanConfigSet/CanController)] */
+  { /*     0 */               0u,                  0u  /* /ActiveEcuC/Can/CanConfigSet/CT_CAN00_9df8a959 */,        0u,       0u,   0x00u,          1u, CAN_TX_BASICCAN_TYPE_MAILBOXTYPEOFMAILBOX,        12u,                 32u },  /* [CN_CAN00_5e566ad9_Tx] */  /* [/ActiveEcuC/Can/CanConfigSet/CN_CAN00_5e566ad9_Tx (DefRef: /MICROSAR/Can_Mpc5700Mcan/Can/CanConfigSet/CanHardwareObject), /ActiveEcuC/Can/CanConfigSet/CT_CAN00_9df8a959, TX_BASICCAN_TYPE/ActiveEcuC/Can/CanConfigSet/CT_CAN00_9df8a959 (DefRef: /MICROSAR/Can_Mpc5700Mcan/Can/CanConfigSet/CanController)] */
   { /*     1 */               0u,                  0u  /* /ActiveEcuC/Can/CanConfigSet/CT_CAN00_9df8a959 */,        0u,       0u,   0x00u,          6u, CAN_RX_BASICCAN_TYPE_MAILBOXTYPEOFMAILBOX,         8u,                 32u }   /* [CN_CAN00_770af0b0_Rx] */  /* [/ActiveEcuC/Can/CanConfigSet/CN_CAN00_770af0b0_Rx (DefRef: /MICROSAR/Can_Mpc5700Mcan/Can/CanConfigSet/CanHardwareObject), /ActiveEcuC/Can/CanConfigSet/CT_CAN00_9df8a959, RX_BASICCAN_TYPE/ActiveEcuC/Can/CanConfigSet/CT_CAN00_9df8a959 (DefRef: /MICROSAR/Can_Mpc5700Mcan/Can/CanConfigSet/CanController)] */
 };
 #define CAN_STOP_SEC_CONST_UNSPECIFIED
@@ -582,7 +582,7 @@ CONST(Can_SRN_AddressType, CAN_CONST) Can_SRN_Address[1] = {  /* PRQA S 1514, 15
 /*lint -restore */
 CONST(Can_ShmAdrType, CAN_CONST) Can_ShmAdr[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
     /* Index    RXBA                           RXF0A                           RXF1A                          SIDFA                          StartAdr     StopAdr      TXBA                            TXEFA                          XIDFA                                Comment */
-  { /*     0 */ 0xF0200000u  /* Size[B]: 0 */, 0xF0200004u  /* Size[B]: 96 */, 0xF0200000u  /* Size[B]: 0 */, 0xF0200000u  /* Size[B]: 4 */, 0xF0200000u, 0xF020008Du, 0xF0200064u  /* Size[B]: 40 */, 0xF0200000u  /* Size[B]: 0 */, 0xF0200000u  /* Size[B]: 0 */ }   /* [CT_CAN00_9df8a959] */
+  { /*     0 */ 0xF0200000u  /* Size[B]: 0 */, 0xF0200004u  /* Size[B]: 96 */, 0xF0200000u  /* Size[B]: 0 */, 0xF0200000u  /* Size[B]: 4 */, 0xF0200000u, 0xF0200079u, 0xF0200064u  /* Size[B]: 20 */, 0xF0200000u  /* Size[B]: 0 */, 0xF0200000u  /* Size[B]: 0 */ }   /* [CT_CAN00_9df8a959] */
 };
 #define CAN_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -609,7 +609,7 @@ CONST(Can_ShmAdrType, CAN_CONST) Can_ShmAdr[1] = {  /* PRQA S 1514, 1533 */  /* 
 /*lint -restore */
 CONST(Can_ShmElementSizeType, CAN_CONST) Can_ShmElementSize[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
     /* Index    F0DS                 F1DS                 RBDS                 TBDS                  TEFBDS                        Comment */
-  { /*     0 */ 0x00u  /* F0DS 8 */, 0x00u  /* F1DS 8 */, 0x00u  /* RBDS 8 */, 0x05u  /* TBDS 32 */,  0x00u  /* EFTBDS 8 */ }   /* [CT_CAN00_9df8a959] */
+  { /*     0 */ 0x00u  /* F0DS 8 */, 0x00u  /* F1DS 8 */, 0x00u  /* RBDS 8 */, 0x01u  /* TBDS 12 */,  0x00u  /* EFTBDS 8 */ }   /* [CT_CAN00_9df8a959] */
 };
 #define CAN_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */

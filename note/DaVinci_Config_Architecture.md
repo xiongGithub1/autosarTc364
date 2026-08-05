@@ -2,7 +2,8 @@
 
 > 工程：`last364.dpa`（AURIX TC364，Vector MICROSAR 4.2.2，Infineon MCAL 20.10.0，TASKING TriCore v6.2r2）
 > 定位：本文档说明**配置的架构**——AUTOSAR 分层、DaVinci 配置工程组织、模块间引用关系、双核划分、生成/构建链路、数据流，以及按架构层归纳的**问题解决总结**。
-> 逐模块“怎么配”请见姊妹文档 [DaVinci_Motor_Config_Guide.md](DaVinci_Motor_Config_Guide.md)。
+> 逐模块“怎么配”请见姊妹文档 [DaVinci_Motor_Config_Guide.md](DaVinci_Motor_Config_Guide.md)；
+> 每个模块另有独立配置文档（操作步骤 + 截图位），入口见 [DaVinci_Modules/README.md](DaVinci_Modules/README.md)。
 
 ---
 
@@ -241,6 +242,32 @@ last364/
 | Os 报警/事件 → 任务 | 事件丢失/ErrorHook | `Rte_Al_*` ↔ `Rte_Ev_*` ↔ Task |
 
 ---
+
+### 4.4 逐模块配置文档入口
+
+电机工程涉及的各模块均有一份独立配置文档（DaVinci 路径、参数表、引用关系、注意事项、截图位），可在总指南中按模块直接打开：
+
+| 模块 | 详细配置文档 | 配置要点 |
+| --- | --- | --- |
+| Mcu | [DaVinci_Mcu.md](DaVinci_Modules/DaVinci_Mcu.md) | 时钟/PLL、GTM 通道、ADC 触发、资源分配 |
+| Port | [DaVinci_Port.md](DaVinci_Modules/DaVinci_Port.md) | 引脚复用、初始电平 |
+| Pwm | [DaVinci_Pwm.md](DaVinci_Modules/DaVinci_Pwm.md) | ATOM0 CH1/2/3 周期/中心对齐 |
+| Adc | [DaVinci_Adc.md](DaVinci_Modules/DaVinci_Adc.md) | G0/G2/G3 同步采样、GTM 触发、通知 |
+| Spi | [DaVinci_Spi.md](DaVinci_Modules/DaVinci_Spi.md) | QSPI1/2/3 外设、通道、Job/Sequence |
+| Dio | [DaVinci_Dio.md](DaVinci_Modules/DaVinci_Dio.md) | 9183 控制脚、CAN/LED |
+| Irq | [DaVinci_Irq.md](DaVinci_Modules/DaVinci_Irq.md) | 中断类别/优先级/核归属 |
+| Os | [DaVinci_Os.md](DaVinci_Modules/DaVinci_Os.md) | 双核任务/报警/ISR/X-Signal |
+| EcuM | [DaVinci_EcuM.md](DaVinci_Modules/DaVinci_EcuM.md) | 启动序列、驱动初始化列表、callout |
+| BswM | [DaVinci_BswM.md](DaVinci_Modules/DaVinci_BswM.md) | 初始化动作表、CAN PDU 组规则 |
+| Can | [DaVinci_Can.md](DaVinci_Modules/DaVinci_Can.md) | MCAN0 波特率/FD |
+| CanIf | [DaVinci_CanIf.md](DaVinci_Modules/DaVinci_CanIf.md) | PDU（0x511/0x200/0x210）、Tx 缓冲 |
+| Com | [DaVinci_Com.md](DaVinci_Modules/DaVinci_Com.md) | 信号/IPdu 组、0x511 映射 |
+| NvM | [DaVinci_NvM.md](DaVinci_Modules/DaVinci_NvM.md) | NvM 块（MotorZeroCal） |
+| Fee | [DaVinci_Fee.md](DaVinci_Modules/DaVinci_Fee.md) | Fee 块/页/扇区 |
+| Fls | [DaVinci_Fls.md](DaVinci_Modules/DaVinci_Fls.md) | DFlash 基址/容量/模式 |
+| ResourceM | [DaVinci_ResourceM.md](DaVinci_Modules/DaVinci_ResourceM.md) | MCAL 资源 → Core0/Core1 |
+| Sbc | [DaVinci_Sbc.md](DaVinci_Modules/DaVinci_Sbc.md) | TLF35584 SPI 引用、ERR 监控 |
+| Rte | [DaVinci_Rte.md](DaVinci_Modules/DaVinci_Rte.md) | SW-C 映射、事件/数据一致性 |
 
 ## 5. 双核配置架构
 
@@ -507,6 +534,7 @@ ADC0/2/3 归属 Core1，但 `Adc_Init` 第一次发生在 Core0（EcuM）。Core
 | 文档 | 内容 |
 | --- | --- |
 | [DaVinci_Motor_Config_Guide.md](DaVinci_Motor_Config_Guide.md) | 逐模块配置参数（Mcu/Port/Pwm/Adc/Spi/Dio/Irq/Os/EcuM/BswM/Can/Com/NvM/Fee/Fls/ResourceM/Sbc/Rte） |
+| [DaVinci_Modules/README.md](DaVinci_Modules/README.md) | 逐模块配置文档索引（19 个模块，每模块一份独立配置说明） |
 | [DualCore_vLinkGen_MemMap_问题总结.md](DualCore_vLinkGen_MemMap_问题总结.md) | 双核迁移：链接错误、vBRS/vLinkGen、X-Signal、TicksPerBase、启动竞态 |
 | [Sbc_30_Tlf35584_Fix.md](Sbc_30_Tlf35584_Fix.md) | SBC 编译修复（MemMap/Compiler_Cfg/SPI 类型） |
 | [MotorZeroCal_DFlash.md](MotorZeroCal_DFlash.md) | 零位标定与 DFlash 持久化 |

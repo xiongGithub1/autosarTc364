@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanIf_Cfg.h
- *   Generation Time: 2024-08-03 19:52:20
+ *   Generation Time: 2026-08-04 12:24:48
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -104,7 +104,7 @@
 #define CANIF_META_DATA_TX_SUPPORT                         STD_OFF
 #define CANIF_J1939_DYN_ADDR_SUPPORT                       CANIF_J1939_DYN_ADDR_DISABLED
 #define CANIF_MULTIPLE_CANDRV_SUPPORT                      STD_OFF
-#define CANIF_RX_SEARCH_CONSIDER_MSG_TYPE                  STD_OFF
+#define CANIF_RX_SEARCH_CONSIDER_MSG_TYPE                  STD_ON
 #define CANIF_ECUC_SAFE_BSW_CHECKS                         STD_OFF
 #define CANIF_EXTENDED_RAM_CHECK_SUPPORT                   STD_OFF
 #define CANIF_DATA_CHECKSUM_RX_SUPPORT                     STD_OFF
@@ -230,8 +230,9 @@ typedef uint8 CanIf_TxBufferSizeType;
   \def  Tx PDU handles
 **********************************************************************************************************************/
 
-#define CanIfTxPduHnd_msg_MyECU_Lamp_oCAN00_41befc25_Tx                                             0u
-#define CanIfTxPduHnd_msg_Transmit_oCAN00_29db34a4_Tx                                               1u
+#define CanIfTxPduHnd_msg_XCP_Request_Tx                                                            0u
+#define CanIfTxPduHnd_msg_MotorStatus_oCAN00_41e9a736_Tx                                            1u
+#define CanIfTxPduHnd_msg_Transmit_oCAN00_29db34a4_Tx                                               2u
 
 
 /**********************************************************************************************************************
@@ -242,6 +243,8 @@ typedef uint8 CanIf_TxBufferSizeType;
 /* Assigned to: NULL_PTR*/
 /* Assigned to: PduR_CanIfRxIndication*/
 #define CanIfRxPduHnd_msg_Receive_oCAN00_76f25845_Rx                                                0u
+/* Assigned to: Xcp_CanIfRxIndication*/
+#define CanIfRxPduHnd_msg_XCP_Request_Rx                                                            0u
 
 
 
@@ -249,15 +252,17 @@ typedef uint8 CanIf_TxBufferSizeType;
   \def  AUTOSAR Tx PDU handles
 **********************************************************************************************************************/
 
-#define CanIfConf_CanIfTxPduCfg_msg_MyECU_Lamp_oCAN00_41befc25_Tx                                   0u
-#define CanIfConf_CanIfTxPduCfg_msg_Transmit_oCAN00_29db34a4_Tx                                     1u
+#define CanIfConf_CanIfTxPduCfg_msg_XCP_Request_Tx                                                  0u
+#define CanIfConf_CanIfTxPduCfg_msg_MotorStatus_oCAN00_41e9a736_Tx                                  1u
+#define CanIfConf_CanIfTxPduCfg_msg_Transmit_oCAN00_29db34a4_Tx                                     2u
 
 
 /**********************************************************************************************************************
   \def  AUTOSAR Rx PDU handles
 **********************************************************************************************************************/
 
-#define CanIfConf_CanIfRxPduCfg_msg_Receive_oCAN00_76f25845_Rx                                      0u
+#define CanIfConf_CanIfRxPduCfg_msg_XCP_Request_Rx                                                  0u
+#define CanIfConf_CanIfRxPduCfg_msg_Receive_oCAN00_76f25845_Rx                                      1u
 
 
 
@@ -372,7 +377,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CANIF_CANIFRXPDUIDOFRXPDUCONFIG                                                             STD_OFF  /**< Deactivateable: 'CanIf_RxPduConfig.CanIfRxPduId' Reason: '"CanIfDataChecksumRxSupport" is deactivated.' */
 #define CANIF_ISCANNMRXPDUOFRXPDUCONFIG                                                             STD_OFF  /**< Deactivateable: 'CanIf_RxPduConfig.IsCanNmRxPdu' Reason: 'Wakeup validation only by CAN-Nm Rx-PDUs is deactivated.' */
 #define CANIF_ISDATACHECKSUMRXPDUOFRXPDUCONFIG                                                      STD_OFF  /**< Deactivateable: 'CanIf_RxPduConfig.IsDataChecksumRxPdu' Reason: '"CanIfDataChecksumRxSupport" is deactivated.' */
-#define CANIF_MSGTYPEOFRXPDUCONFIG                                                                  STD_OFF  /**< Deactivateable: 'CanIf_RxPduConfig.MsgType' Reason: '"CanIfRxSearchConsiderMsgType" is deactivated.' */
+#define CANIF_MSGTYPEOFRXPDUCONFIG                                                                  STD_ON
 #define CANIF_RXINDICATIONFCTLISTIDXOFRXPDUCONFIG                                                   STD_ON
 #define CANIF_RXMETADATALENGTHOFRXPDUCONFIG                                                         STD_OFF  /**< Deactivateable: 'CanIf_RxPduConfig.RxMetaDataLength' Reason: 'Rx meta data support is deactivated.' */
 #define CANIF_RXPDUCANIDOFRXPDUCONFIG                                                               STD_ON
@@ -565,6 +570,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CANIF_ISDEF_MAILBOXCONFIGIDXOFMAPPEDTXBUFFERSCONFIG                                         STD_OFF
 #define CANIF_ISDEF_RXINDICATIONFCTOFRXINDICATIONFCTLIST                                            STD_OFF
 #define CANIF_ISDEF_RXINDICATIONLAYOUTOFRXINDICATIONFCTLIST                                         STD_OFF
+#define CANIF_ISDEF_MSGTYPEOFRXPDUCONFIG                                                            STD_OFF
 #define CANIF_ISDEF_RXINDICATIONFCTLISTIDXOFRXPDUCONFIG                                             STD_OFF
 #define CANIF_ISDEF_RXPDUCANIDOFRXPDUCONFIG                                                         STD_OFF
 #define CANIF_ISDEF_RXPDUDLCOFRXPDUCONFIG                                                           STD_OFF
@@ -631,6 +637,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CANIF_EQ2_MAILBOXCONFIGIDXOFMAPPEDTXBUFFERSCONFIG                                           
 #define CANIF_EQ2_RXINDICATIONFCTOFRXINDICATIONFCTLIST                                              
 #define CANIF_EQ2_RXINDICATIONLAYOUTOFRXINDICATIONFCTLIST                                           
+#define CANIF_EQ2_MSGTYPEOFRXPDUCONFIG                                                              
 #define CANIF_EQ2_RXINDICATIONFCTLISTIDXOFRXPDUCONFIG                                               
 #define CANIF_EQ2_RXPDUCANIDOFRXPDUCONFIG                                                           
 #define CANIF_EQ2_RXPDUDLCOFRXPDUCONFIG                                                             
@@ -766,17 +773,17 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CanIf_GetSizeOfCtrlStatesOfPCConfig()                                                       1u  /**< the number of accomplishable value elements in CanIf_CtrlStates */
 #define CanIf_GetSizeOfMailBoxConfigOfPCConfig()                                                    2u  /**< the number of accomplishable value elements in CanIf_MailBoxConfig */
 #define CanIf_GetSizeOfMappedTxBuffersConfigOfPCConfig()                                            1u  /**< the number of accomplishable value elements in CanIf_MappedTxBuffersConfig */
-#define CanIf_GetSizeOfRxIndicationFctListOfPCConfig()                                              2u  /**< the number of accomplishable value elements in CanIf_RxIndicationFctList */
-#define CanIf_GetSizeOfRxPduConfigOfPCConfig()                                                      1u  /**< the number of accomplishable value elements in CanIf_RxPduConfig */
+#define CanIf_GetSizeOfRxIndicationFctListOfPCConfig()                                              3u  /**< the number of accomplishable value elements in CanIf_RxIndicationFctList */
+#define CanIf_GetSizeOfRxPduConfigOfPCConfig()                                                      2u  /**< the number of accomplishable value elements in CanIf_RxPduConfig */
 #define CanIf_GetSizeOfTxBufferPrioByCanIdBaseOfPCConfig()                                          1u  /**< the number of accomplishable value elements in CanIf_TxBufferPrioByCanIdBase */
 #define CanIf_GetSizeOfTxBufferPrioByCanIdByteQueueConfigOfPCConfig()                               1u  /**< the number of accomplishable value elements in CanIf_TxBufferPrioByCanIdByteQueueConfig */
-#define CanIf_GetSizeOfTxBufferPrioByCanIdByteQueueMappedTxPdusOfPCConfig()                         2u  /**< the number of accomplishable value elements in CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdus */
-#define CanIf_GetSizeOfTxConfirmationFctListOfPCConfig()                                            2u  /**< the number of accomplishable value elements in CanIf_TxConfirmationFctList */
-#define CanIf_GetSizeOfTxPduConfigOfPCConfig()                                                      2u  /**< the number of accomplishable value elements in CanIf_TxPduConfig */
-#define CanIf_GetSizeOfTxPduQueueIndexOfPCConfig()                                                  2u  /**< the number of accomplishable value elements in CanIf_TxPduQueueIndex */
-#define CanIf_GetSizeOfTxQueueDataOfPCConfig()                                                      33u  /**< the number of accomplishable value elements in CanIf_TxQueueData */
-#define CanIf_GetSizeOfTxQueueIndex2DataStartStopOfPCConfig()                                       2u  /**< the number of accomplishable value elements in CanIf_TxQueueIndex2DataStartStop */
-#define CanIf_GetSizeOfTxQueueOfPCConfig()                                                          2u  /**< the number of accomplishable value elements in CanIf_TxQueue */
+#define CanIf_GetSizeOfTxBufferPrioByCanIdByteQueueMappedTxPdusOfPCConfig()                         3u  /**< the number of accomplishable value elements in CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdus */
+#define CanIf_GetSizeOfTxConfirmationFctListOfPCConfig()                                            3u  /**< the number of accomplishable value elements in CanIf_TxConfirmationFctList */
+#define CanIf_GetSizeOfTxPduConfigOfPCConfig()                                                      3u  /**< the number of accomplishable value elements in CanIf_TxPduConfig */
+#define CanIf_GetSizeOfTxPduQueueIndexOfPCConfig()                                                  3u  /**< the number of accomplishable value elements in CanIf_TxPduQueueIndex */
+#define CanIf_GetSizeOfTxQueueDataOfPCConfig()                                                      21u  /**< the number of accomplishable value elements in CanIf_TxQueueData */
+#define CanIf_GetSizeOfTxQueueIndex2DataStartStopOfPCConfig()                                       3u  /**< the number of accomplishable value elements in CanIf_TxQueueIndex2DataStartStop */
+#define CanIf_GetSizeOfTxQueueOfPCConfig()                                                          3u  /**< the number of accomplishable value elements in CanIf_TxQueue */
 #define CanIf_GetTxBufferPrioByCanIdBaseOfPCConfig()                                                CanIf_TxBufferPrioByCanIdBase.raw  /**< the pointer to CanIf_TxBufferPrioByCanIdBase */
 #define CanIf_GetTxBufferPrioByCanIdByteQueueConfigOfPCConfig()                                     CanIf_TxBufferPrioByCanIdByteQueueConfig  /**< the pointer to CanIf_TxBufferPrioByCanIdByteQueueConfig */
 #define CanIf_GetTxBufferPrioByCanIdByteQueueMappedTxPdusOfPCConfig()                               CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdus  /**< the pointer to CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdus */
@@ -811,6 +818,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CanIf_GetMailBoxConfigIdxOfMappedTxBuffersConfig(Index)                                     (CanIf_GetMappedTxBuffersConfigOfPCConfig()[(Index)].MailBoxConfigIdxOfMappedTxBuffersConfig)
 #define CanIf_GetRxIndicationFctOfRxIndicationFctList(Index)                                        (CanIf_GetRxIndicationFctListOfPCConfig()[(Index)].RxIndicationFctOfRxIndicationFctList)
 #define CanIf_GetRxIndicationLayoutOfRxIndicationFctList(Index)                                     (CanIf_GetRxIndicationFctListOfPCConfig()[(Index)].RxIndicationLayoutOfRxIndicationFctList)
+#define CanIf_GetMsgTypeOfRxPduConfig(Index)                                                        (CanIf_GetRxPduConfigOfPCConfig()[(Index)].MsgTypeOfRxPduConfig)
 #define CanIf_GetRxIndicationFctListIdxOfRxPduConfig(Index)                                         (CanIf_GetRxPduConfigOfPCConfig()[(Index)].RxIndicationFctListIdxOfRxPduConfig)
 #define CanIf_GetRxPduCanIdOfRxPduConfig(Index)                                                     (CanIf_GetRxPduConfigOfPCConfig()[(Index)].RxPduCanIdOfRxPduConfig)
 #define CanIf_GetRxPduDlcOfRxPduConfig(Index)                                                       (CanIf_GetRxPduConfigOfPCConfig()[(Index)].RxPduDlcOfRxPduConfig)
@@ -926,6 +934,7 @@ typedef uint8 CanIf_TxBufferSizeType;
 #define CanIf_HasRxIndicationFctOfRxIndicationFctList()                                             (TRUE != FALSE)
 #define CanIf_HasRxIndicationLayoutOfRxIndicationFctList()                                          (TRUE != FALSE)
 #define CanIf_HasRxPduConfig()                                                                      (TRUE != FALSE)
+#define CanIf_HasMsgTypeOfRxPduConfig()                                                             (TRUE != FALSE)
 #define CanIf_HasRxIndicationFctListIdxOfRxPduConfig()                                              (TRUE != FALSE)
 #define CanIf_HasRxPduCanIdOfRxPduConfig()                                                          (TRUE != FALSE)
 #define CanIf_HasRxPduDlcOfRxPduConfig()                                                            (TRUE != FALSE)
@@ -1404,6 +1413,7 @@ typedef struct sCanIf_RxPduConfigType
   CanIf_UpperPduIdOfRxPduConfigType UpperPduIdOfRxPduConfig;  /**< PDU ID defined by upper layer. */
   CanIf_RxIndicationFctListIdxOfRxPduConfigType RxIndicationFctListIdxOfRxPduConfig;  /**< the index of the 1:1 relation pointing to CanIf_RxIndicationFctList */
   CanIf_RxPduDlcOfRxPduConfigType RxPduDlcOfRxPduConfig;  /**< Rx-PDU length (DLC). */
+  CanIf_MsgType MsgTypeOfRxPduConfig;  /**< Type of CAN message: *CAN (both 2.0 or FD), *FD_CAN (only FD), *NO_FD_CAN (only 2.0). */
 } CanIf_RxPduConfigType;
 
 /**   \brief  type used in CanIf_TxBufferPrioByCanIdByteQueueConfig */
@@ -1494,14 +1504,16 @@ typedef struct CanIf_TxBufferPrioByCanIdBaseStructSTag
 /**   \brief  type to be used as symbolic data element access to CanIf_TxQueue */
 typedef struct CanIf_TxQueueStructSTag
 {
-  CanIf_TxPrioByCanIdByteQueueType msg_MyECU_Lamp_oCAN00_41befc25_Tx;
+  CanIf_TxPrioByCanIdByteQueueType msg_XCP_Request_Tx;
+  CanIf_TxPrioByCanIdByteQueueType msg_MotorStatus_oCAN00_41e9a736_Tx;
   CanIf_TxPrioByCanIdByteQueueType msg_Transmit_oCAN00_29db34a4_Tx;
 } CanIf_TxQueueStructSType;
 
 /**   \brief  type to be used as symbolic data element access to CanIf_TxQueueData */
 typedef struct CanIf_TxQueueDataStructSTag
 {
-  CanIf_TxQueueDataType msg_MyECU_Lamp_oCAN00_41befc25_Tx[32];
+  CanIf_TxQueueDataType msg_XCP_Request_Tx[8];
+  CanIf_TxQueueDataType msg_MotorStatus_oCAN00_41e9a736_Tx[12];
   CanIf_TxQueueDataType msg_Transmit_oCAN00_29db34a4_Tx;
 } CanIf_TxQueueDataStructSType;
 
@@ -1531,14 +1543,14 @@ typedef union CanIf_TxBufferPrioByCanIdBaseUTag
 /**   \brief  type to access CanIf_TxQueue in an index and symbol based style. */
 typedef union CanIf_TxQueueUTag
 {  /* PRQA S 0750 */  /* MD_CSL_Union */
-  CanIf_TxPrioByCanIdByteQueueType raw[2];
+  CanIf_TxPrioByCanIdByteQueueType raw[3];
   CanIf_TxQueueStructSType str;
 } CanIf_TxQueueUType;
 
 /**   \brief  type to access CanIf_TxQueueData in an index and symbol based style. */
 typedef union CanIf_TxQueueDataUTag
 {  /* PRQA S 0750 */  /* MD_CSL_Union */
-  CanIf_TxQueueDataType raw[33];
+  CanIf_TxQueueDataType raw[21];
   CanIf_TxQueueDataStructSType str;
 } CanIf_TxQueueDataUType;
 
@@ -1749,7 +1761,7 @@ extern CONST(CanIf_MappedTxBuffersConfigType, CANIF_CONST) CanIf_MappedTxBuffers
 /*lint -save -esym(961, 19.1) */
 #include "CanIf_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-extern CONST(CanIf_RxIndicationFctListType, CANIF_CONST) CanIf_RxIndicationFctList[2];
+extern CONST(CanIf_RxIndicationFctListType, CANIF_CONST) CanIf_RxIndicationFctList[3];
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "CanIf_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
@@ -1768,12 +1780,13 @@ extern CONST(CanIf_RxIndicationFctListType, CANIF_CONST) CanIf_RxIndicationFctLi
   UpperPduId                PDU ID defined by upper layer.
   RxIndicationFctListIdx    the index of the 1:1 relation pointing to CanIf_RxIndicationFctList
   RxPduDlc                  Rx-PDU length (DLC).
+  MsgType                   Type of CAN message: *CAN (both 2.0 or FD), *FD_CAN (only FD), *NO_FD_CAN (only 2.0).
 */ 
 #define CANIF_START_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "CanIf_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-extern CONST(CanIf_RxPduConfigType, CANIF_CONST) CanIf_RxPduConfig[1];
+extern CONST(CanIf_RxPduConfigType, CANIF_CONST) CanIf_RxPduConfig[2];
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "CanIf_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
@@ -1816,7 +1829,7 @@ extern CONST(CanIf_TxBufferPrioByCanIdByteQueueConfigType, CANIF_CONST) CanIf_Tx
 /*lint -save -esym(961, 19.1) */
 #include "CanIf_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-extern CONST(CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusType, CANIF_CONST) CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdus[2];  /* PRQA S 0777 */  /* MD_MSR_Rule5.1 */
+extern CONST(CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusType, CANIF_CONST) CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdus[3];  /* PRQA S 0777 */  /* MD_MSR_Rule5.1 */
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "CanIf_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
@@ -1833,7 +1846,7 @@ extern CONST(CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusType, CANIF_CONST) Ca
 /*lint -save -esym(961, 19.1) */
 #include "CanIf_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-extern CONST(CanIf_TxConfirmationFctType, CANIF_CONST) CanIf_TxConfirmationFctList[2];
+extern CONST(CanIf_TxConfirmationFctType, CANIF_CONST) CanIf_TxConfirmationFctList[3];
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "CanIf_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
@@ -1859,7 +1872,7 @@ extern CONST(CanIf_TxConfirmationFctType, CANIF_CONST) CanIf_TxConfirmationFctLi
 /*lint -save -esym(961, 19.1) */
 #include "CanIf_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-extern CONST(CanIf_TxPduConfigType, CANIF_CONST) CanIf_TxPduConfig[2];
+extern CONST(CanIf_TxPduConfigType, CANIF_CONST) CanIf_TxPduConfig[3];
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "CanIf_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
@@ -1881,7 +1894,7 @@ extern CONST(CanIf_TxPduConfigType, CANIF_CONST) CanIf_TxPduConfig[2];
 /*lint -save -esym(961, 19.1) */
 #include "CanIf_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-extern CONST(CanIf_TxPduQueueIndexType, CANIF_CONST) CanIf_TxPduQueueIndex[2];
+extern CONST(CanIf_TxPduQueueIndexType, CANIF_CONST) CanIf_TxPduQueueIndex[3];
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "CanIf_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
@@ -1902,7 +1915,7 @@ extern CONST(CanIf_TxPduQueueIndexType, CANIF_CONST) CanIf_TxPduQueueIndex[2];
 /*lint -save -esym(961, 19.1) */
 #include "CanIf_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-extern CONST(CanIf_TxQueueIndex2DataStartStopType, CANIF_CONST) CanIf_TxQueueIndex2DataStartStop[2];  /* PRQA S 0777 */  /* MD_MSR_Rule5.1 */
+extern CONST(CanIf_TxQueueIndex2DataStartStopType, CANIF_CONST) CanIf_TxQueueIndex2DataStartStop[3];  /* PRQA S 0777 */  /* MD_MSR_Rule5.1 */
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "CanIf_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */

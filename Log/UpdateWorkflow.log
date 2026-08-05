@@ -1,111 +1,78 @@
-2024-07-15 - 20:13:39
-20:13:39 - Workflow Step 'Update workflow' started.
+2024-08-03 - 21:29:07
+21:29:07 - Workflow Step 'Update workflow' started.
 Using DaVinci Configurator Classic (beta) 5.25.37 SP2 (x86_64).
-20:13:40 - Workflow Step 'Validate workflow environment' started.
-20:13:40 - Workflow Step 'Validate dpa file' started.
-20:13:41 - Workflow Step 'Validate dpa file' finished.
-20:13:41 - Workflow Step 'SLP conformance check' started.
-20:13:41 - Workflow Step 'SLP conformance check' finished.
-20:13:41 - Workflow Step 'Validate workflow environment' finished.
-20:13:41 - Workflow Step 'Input File Pre-Processing' started.
-20:13:41 - Workflow Step 'Converting legacy file(s) to AUTOSAR files' started.
-              [ERROR] Legacy Converter finished with errors.
-Convert legacy file(s) to System Description
-Used executable: E:\workFiles\TC367\TC367\CBD2200508_D00\CBD2200508_D00\Misc\LegacyDb2SystemDescrConverter\Application\LegacyDb2SystemDescrConverter.exe
-Arguments: E:\workFiles\TC367\TC367\workspace\last364\Config_Vector\CANFD364.dbc -o "C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\LegacyConverterResults\1721045621786-0\ConvertedLegacy" -r 00048 -e -v 19
-Vector Legacy Database Converter
-Version: 1.8.67.0
-Copyright (c) 2018 Vector Informatik GmbH.
-SIP License found as E:\workFiles\TC367\TC367\CBD2200508_D00\CBD2200508_D00\DaVinciConfigurator\ComponentLicense_DaVinciConfigurator.lic
-Command line: E:\workFiles\TC367\TC367\CBD2200508_D00\CBD2200508_D00\Misc\LegacyDb2SystemDescrConverter\Application\LegacyDb2SystemDescrConverter.exe E:\workFiles\TC367\TC367\workspace\last364\Config_Vector\CANFD364.dbc -o "C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\LegacyConverterResults\1721045621786-0\ConvertedLegacy" -r 00048 -e -v 19
-Converting DBC file E:\workFiles\TC367\TC367\workspace\last364\Config_Vector\CANFD364.dbc
-              [ERROR] DBC attribute definition GenMsgSendType has unknown default value cyclicX
-              [ERROR] DBC attribute definition GenSigSendType has unknown default value cyclicX
-Writing System Description...
-Writing 3 ECU Extracts...
-C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\LegacyConverterResults\1721045621786-0\ConvertedLegacy.arxml
-C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\LegacyConverterResults\1721045621786-0\ConvertedLegacy_MyECU.arxml
-C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\LegacyConverterResults\1721045621786-0\ConvertedLegacy_RearECU.arxml
-C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\LegacyConverterResults\1721045621786-0\ConvertedLegacy_Tester.arxml
-Elapsed time: 1.668 seconds
-2 Errors
-0 Warnings
-20:13:43 - Workflow Step 'Converting legacy file(s) to AUTOSAR files' finished.
-20:13:43 - Workflow Step 'Load arxml file after preprocessing' started.
-Load arxml file from path: C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\LegacyConverterResults\1721045621786-0\ConvertedLegacy_MyECU.arxml
-20:13:44 - Workflow Step 'Load arxml file after preprocessing' finished.
-20:13:44 - Workflow Step 'Evaluate system extract paths' started.
-20:13:44 - Workflow Step 'Evaluate system extract paths' finished.
-Checking if the file preprocessing result is a valid ECU extract...
-Input File Pre-Processing finished with error(s).
-20:13:45 - Workflow Step 'Input File Pre-Processing' finished.
-20:13:46 - Workflow Step 'Create copy of the Project' started.
-Copy project 'E:\workFiles\TC367\TC367\workspace\last364' to 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0'...
+21:29:07 - Workflow Step 'Validate workflow environment' started.
+21:29:07 - Workflow Step 'Validate dpa file' started.
+21:29:08 - Workflow Step 'Validate dpa file' finished.
+21:29:08 - Workflow Step 'SLP conformance check' started.
+21:29:08 - Workflow Step 'SLP conformance check' finished.
+21:29:08 - Workflow Step 'Validate workflow environment' finished.
+21:29:08 - Workflow Step 'Create copy of the Project' started.
+Copy project 'E:\workFiles\TC367\TC367\workspace\last364' to 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-2583806\Workflow\1722691748594-0'...
 Adjusting DPA file of copied project...
-20:13:46 - Workflow Step 'Create copy of the Project' finished.
-20:13:46 - Workflow Step 'Analyse Bswmd's of the current project' started.
-20:13:46 - Workflow Step 'Analyse Bswmd's of the current project' finished.
-20:13:46 - Workflow Step 'Close Project' started.
-20:13:47 - Workflow Step 'Close Project' finished.
-20:13:55 - Workflow Step 'Prepare DaVinci Developer update data' started.
-20:13:55 - Workflow Step 'Prepare DaVinci Developer update data' finished.
-20:13:55 - Workflow Step 'Prepare System Extract' started.
-20:13:56 - Workflow Step 'Preprocessing System Extract' started.
-20:13:56 - Workflow Step 'Preprocessing System Extract' finished.
-20:13:56 - Workflow Step 'Create OEM Communication Extract' started.
-20:13:57 - Workflow Step 'Create OEM Communication Extract' finished.
-20:13:57 - Workflow Step 'Prepare System Extract' finished.
-20:13:57 - Workflow Step 'Updating the project' started.
-20:14:05 - Workflow Step 'Create ECU configuration' started.
-20:14:17 - Workflow Step 'Create ECU configuration' finished.
-20:14:17 - Workflow Step 'Update ECU configuration' started.
-No Package path available for module configuration: com.vector.cfg.workflow.ecucupdater.model.internal.ModuleKey@20474d06. Default /ActiveEcuC is used instead.
-20:14:40 - Workflow Step 'Update ECU configuration' finished.
-20:14:40 - Workflow Step 'Updating the project' finished.
-20:14:40 - Workflow Step 'Generate update report' started.
-20:15:04 - Workflow Step 'Generate update report' finished.
-20:15:04 - Workflow Step 'Execute Solving Actions' started.
+21:29:08 - Workflow Step 'Create copy of the Project' finished.
+21:29:08 - Workflow Step 'Analyse Bswmd's of the current project' started.
+21:29:08 - Workflow Step 'Analyse Bswmd's of the current project' finished.
+21:29:08 - Workflow Step 'Close Project' started.
+21:29:09 - Workflow Step 'Close Project' finished.
+21:29:15 - Workflow Step 'Prepare DaVinci Developer update data' started.
+21:29:15 - Workflow Step 'Prepare DaVinci Developer update data' finished.
+21:29:15 - Workflow Step 'Prepare System Extract' started.
+21:29:16 - Workflow Step 'Preprocessing System Extract' started.
+21:29:16 - Workflow Step 'Preprocessing System Extract' finished.
+21:29:16 - Workflow Step 'Create OEM Communication Extract' started.
+21:29:16 - Workflow Step 'Create OEM Communication Extract' finished.
+21:29:16 - Workflow Step 'Prepare System Extract' finished.
+21:29:16 - Workflow Step 'Updating the project' started.
+21:29:23 - Workflow Step 'Create ECU configuration' started.
+21:29:34 - Workflow Step 'Create ECU configuration' finished.
+21:29:34 - Workflow Step 'Update ECU configuration' started.
+21:29:51 - Workflow Step 'Update ECU configuration' finished.
+21:29:51 - Workflow Step 'Updating the project' finished.
+21:29:51 - Workflow Step 'Generate update report' started.
+21:30:16 - Workflow Step 'Generate update report' finished.
+21:30:16 - Workflow Step 'Execute Solving Actions' started.
 Executing Auto-Solving-Actions...
 Auto-Solving-Actions done.
 Executing update specific Preferred-Solving-Actions...
 Update specific Preferred-Solving-Actions done.
-20:15:13 - Workflow Step 'Execute Solving Actions' finished.
-20:15:13 - Workflow Step 'Update DaVinci Developer Workspace' started.
-Opening workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Config\Developer\last364.dcf'...
-Loading file PlatformTypes_AR4.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Config\AUTOSAR\PlatformTypes_AR4.arxml)
-Loading file BswM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Config\ServiceComponents\BswM_swc.arxml)
-Loading file ComM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Config\ServiceComponents\ComM_swc.arxml)
-Loading file Det_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Config\ServiceComponents\Det_swc.arxml)
-Loading file EcuM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Config\ServiceComponents\EcuM_swc.arxml)
-Loading file Os_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Config\ServiceComponents\Os_swc.arxml)
-Loading file Communication.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Update\DevData\Communication.arxml)
-Loading file DataTypes.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Config\Developer\DataTypes.arxml)
-Loading file IowHA.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Config\Developer\IowHA.arxml)
-Loading file last364.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Config\Developer\last364.arxml)
-Loading file MotorCdd.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Config\Developer\MotorCdd.arxml)
-Loading file MotorControll.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Config\Developer\MotorControll.arxml)
-Loading file Packages.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Config\Developer\Packages.arxml)
-Loading file PortInterfaces.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Config\Developer\PortInterfaces.arxml)
-Loading file StartApp.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Config\Developer\StartApp.arxml)
-Opened workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Config\Developer\last364.dcf' successfully.
+21:30:26 - Workflow Step 'Execute Solving Actions' finished.
+21:30:27 - Workflow Step 'Update DaVinci Developer Workspace' started.
+Opening workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\last364.dcf'...
+Loading file PlatformTypes_AR4.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\AUTOSAR\PlatformTypes_AR4.arxml)
+Loading file BswM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\ServiceComponents\BswM_swc.arxml)
+Loading file ComM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\ServiceComponents\ComM_swc.arxml)
+Loading file Det_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\ServiceComponents\Det_swc.arxml)
+Loading file EcuM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\ServiceComponents\EcuM_swc.arxml)
+Loading file NvM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\ServiceComponents\NvM_swc.arxml)
+Loading file Os_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\ServiceComponents\Os_swc.arxml)
+Loading file Communication.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Update\DevData\Communication.arxml)
+Loading file DataTypes.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\DataTypes.arxml)
+Loading file IowHA.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\IowHA.arxml)
+Loading file last364.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\last364.arxml)
+Loading file MotorCdd.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\MotorCdd.arxml)
+Loading file MotorControll.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\MotorControll.arxml)
+Loading file Packages.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\Packages.arxml)
+Loading file PortInterfaces.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\PortInterfaces.arxml)
+Loading file StartApp.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\StartApp.arxml)
+Opened workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\last364.dcf' successfully.
 Start import
-Importing file (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Config\System\SystemExtract.arxml).
+Importing file (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\System\SystemExtract.arxml).
 Merging imported data
 Finished import
-Saving workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Config\Developer\last364.dcf'...
-Saving file DataTypes.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Config\Developer\DataTypes.arxml)
-Saving file Packages.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Config\Developer\Packages.arxml)
-Saved workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Config\Developer\last364.dcf' successfully.
-Closing workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Config\Developer\last364.dcf'...
-Closed workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-5245435\Workflow\1721045626283-0\Config\Developer\last364.dcf' successfully.
+Saving workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\last364.dcf'...
+Saving file DataTypes.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\DataTypes.arxml)
+Saved workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\last364.dcf' successfully.
+Closing workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\last364.dcf'...
+Closed workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\last364.dcf' successfully.
 Result of DaVinci Developer workspace update.
               OK
-20:15:33 - Workflow Step 'Update DaVinci Developer Workspace' finished.
-20:15:33 - Workflow Step 'Update RTE configuration' started.
-20:15:35 - Workflow Step 'Update RTE configuration' finished.
-20:15:35 - Workflow Step 'Align differences after successful update' started.
-20:15:35 - Workflow Step 'Align differences after successful update' finished.
-20:15:35 - Workflow Step 'Clean up update data' started.
-20:15:35 - Workflow Step 'Clean up update data' finished.
-Update workflow finished with error(s).
-20:15:43 - Workflow Step 'Update workflow' finished.
+21:30:43 - Workflow Step 'Update DaVinci Developer Workspace' finished.
+21:30:43 - Workflow Step 'Update RTE configuration' started.
+21:30:44 - Workflow Step 'Update RTE configuration' finished.
+21:30:44 - Workflow Step 'Align differences after successful update' started.
+21:30:44 - Workflow Step 'Align differences after successful update' finished.
+21:30:44 - Workflow Step 'Clean up update data' started.
+21:30:44 - Workflow Step 'Clean up update data' finished.
+Update workflow finished sucessfully.
+21:30:52 - Workflow Step 'Update workflow' finished.

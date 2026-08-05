@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Callout_Stubs.c
- *   Generation Time: 2026-08-01 11:44:58
+ *   Generation Time: 2024-08-04 12:51:45
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -88,7 +88,7 @@
 #include "Det.h" 
 #include "PduR.h" 
 #include "Rte_Main.h" 
-#include "IpduM.h" 
+#include "CanXcp.h" 
 #include "Mcu.h" 
 #include "Port.h" 
 #include "Adc.h" 
@@ -280,7 +280,7 @@ FUNC(void, ECUM_CODE) EcuM_AL_DriverInitZero(void)
     PduR_InitMemory();
     Rte_InitMemory();
     BswM_PreInit( BswM_Config_Ptr );
-    IpduM_InitMemory();
+    CanXcp_InitMemory();
   }
 
 /**********************************************************************************************************************
@@ -308,13 +308,13 @@ FUNC(void, ECUM_CODE) EcuM_AL_DriverInitOne(void)
     Port_Init( &Port_Config );
     Adc_Init( &Adc_Config );
     Dma_Init( &Dma_Config );
-    IpduM_Init( IpduM_Config_Ptr );
     PduR_PreInit( PduR_Config_Ptr );
     Fls_17_Dmu_Init( &Fls_17_Dmu_Config );
     Fee_Init( &Fee_Config );
     IrqDma_Init();
     IrqSpi_Init();
     Spi_Init( &Spi_Config );
+    CanXcp_Init( NULL_PTR );
   }
 
 /**********************************************************************************************************************

@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 32.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-08-03, 19:52:14       !!!IGNORE-LINE!!!                  **
+**  DATE, TIME: 2026-08-05, 14:11:22       !!!IGNORE-LINE!!!                  **
 **                                                                            **
 **  GENERATOR : Build b191017-0938           !!!IGNORE-LINE!!!                **
 **                                                                            **
@@ -387,7 +387,7 @@ static const Mcu_GtmConfigType Mcu_kGtmConfiguration_Config =
   {
     /*Configuration of ToutSel*/
     /*Toutsel 0 value*/
-    0x02222220U,
+    0x00002220U,
     /*Toutsel 1 value*/
     0x00000000U,
     /*Toutsel 2 value*/
@@ -424,7 +424,7 @@ static const Mcu_GtmConfigType Mcu_kGtmConfiguration_Config =
   /*Mask for TOUTSEL configuration. SELx used will be generated as 0xF*/
   {
     /*Toutsel 0 mask value*/
-    0x0ffffff0U,
+    0x0000fff0U,
     /*Toutsel 1 mask value*/
     0x00000000U,
     /*Toutsel 2 mask value*/

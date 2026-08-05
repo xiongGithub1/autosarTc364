@@ -108,18 +108,6 @@ Std_ReturnType Tle5012bd_Driver_ReadAngle(Tle5012 *sensor)
   return Tle5012bd_Driver_ReadAngleInternal(sensor, 0.0001F);
 }
 
-Std_ReturnType Tle5012bd_Driver_ReadAngleSlow(Tle5012 *sensor)
-{
-  return Tle5012bd_Driver_ReadAngleInternal(sensor, 0.001F);
-}
-
-void Tle5012bd_Driver_ReadAngleSpeed(Tle5012 *sensor)
-{
-  if ((sensor != NULL_PTR) && (Tle5012bd_State == TLE5012BD_STATE_READY))
-  {
-    tle5012b_read_AngleSpeed(sensor);
-  }
-}
 
 float32 Tle5012bd_Driver_GetElectricalAngleRad(void)
 {

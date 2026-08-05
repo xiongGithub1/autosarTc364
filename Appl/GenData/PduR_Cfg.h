@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: PduR_Cfg.h
- *   Generation Time: 2024-08-03 19:52:20
+ *   Generation Time: 2024-08-04 12:44:09
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -123,10 +123,7 @@
 #define PDUR_FCT_CANIFTX 0x09u 
 #define PDUR_FCT_CANIFTXCFM 0x02u 
 #define PDUR_FCT_COMTX 0x89u 
-#define PDUR_FCT_IPDUMRXIND 0xA1u 
-#define PDUR_FCT_IPDUMTX 0xA9u 
-#define PDUR_FCT_IPDUMTXCFM 0xA2u 
- /*   PduR_CanIfIfRxIndication  PduR_CanIfTransmit  PduR_CanIfTxConfirmation  PduR_ComTransmit  PduR_IpduMIfRxIndication  PduR_IpduMTransmit  PduR_IpduMTxConfirmation  */ 
+ /*   PduR_CanIfIfRxIndication  PduR_CanIfTransmit  PduR_CanIfTxConfirmation  PduR_ComTransmit  */ 
 
 
 
@@ -160,12 +157,8 @@
 
 /* Handle IDs active in all predefined variants (the application has not to take the active variant into account) */
 /*      Symbolic Name                                                 Value   Active in predefined variant(s) */
-#define PduRConf_PduRSrcPdu_PduRSrcPdu_8e8b997f                       4u
-#define PduRConf_PduRSrcPdu_PduRSrcPdu_087fd70d                       5u
-#define PduRConf_PduRSrcPdu_PduRSrcPdu_991c8b02                       0u
-#define PduRConf_PduRSrcPdu_PduRSrcPdu_289484a7                       3u
-#define PduRConf_PduRSrcPdu_PduRSrcPdu_e44218bb                       2u
-#define PduRConf_PduRSrcPdu_PduRSrcPdu_f7c31f09                       1u
+#define PduRConf_PduRSrcPdu_PduRSrcPdu_96a7407f                       0u
+#define PduRConf_PduRSrcPdu_PduRSrcPdu_087fd70d                       1u
 /**\} */
 
 /**
@@ -176,12 +169,8 @@
 
 /* Handle IDs active in all predefined variants (the application has not to take the active variant into account) */
 /*      Symbolic Name                                                 Value   Active in predefined variant(s) */
-#define PduRConf_PduRDestPdu_msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx   0u
-#define PduRConf_PduRDestPdu_msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx   1u
-#define PduRConf_PduRDestPdu_msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx   2u
-#define PduRConf_PduRDestPdu_msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx     3u
-#define PduRConf_PduRDestPdu_msg_MyECU_Lamp_oCAN00_26f3473b_Tx        4u
-#define PduRConf_PduRDestPdu_msg_Transmit_oCAN00_9631a86b_Tx          5u
+#define PduRConf_PduRDestPdu_msg_MotorStatus_oCAN00_a6063320_Tx       0u
+#define PduRConf_PduRDestPdu_msg_Transmit_oCAN00_9631a86b_Tx          1u
 /**\} */
 
 

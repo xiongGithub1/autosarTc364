@@ -154,9 +154,6 @@
         <Splitter File=".\Config\ECUC\last364_Sbc_Sbc_ecuc.arxml">
             <Module Name="Sbc"/>
         </Splitter>
-        <Splitter File=".\Config\ECUC\last364_IpduM_IpduM_ecuc.arxml">
-            <Module Name="IpduM"/>
-        </Splitter>
         <Splitter File=".\Config\ECUC\last364_MemIf_MemIf_ecuc.arxml">
             <Module Name="MemIf"/>
         </Splitter>
@@ -175,12 +172,15 @@
         <Splitter File=".\Config\ECUC\last364_vLinkGen_vLinkGen_ecuc.arxml">
             <Module Name="vLinkGen"/>
         </Splitter>
+        <Splitter File=".\Config\ECUC\last364_Xcp_Xcp_ecuc.arxml">
+            <Module Name="Xcp"/>
+        </Splitter>
         <OwnFolderForEachSplitter>false</OwnFolderForEachSplitter>
         <OwnFileForEachInstance>true</OwnFileForEachInstance>
     </EcucSplitter>
     <Display LastVersion="5.25.37 SP2">
-        <FileSet Id="" CS="7de5a928">
-            <File Order="0" EcuInstance="MyECU" Hash="f1aeb6f212a78f6dd8e796e6b5bcba7c" FileCategory="legacy_communication_data">$(DpaProjectFolder)\Config_Vector\CANFD364.dbc</File>
+        <FileSet Id="" CS="c4bef738">
+            <File Order="0" EcuInstance="MyECU" Hash="3b7de897aaac46dc24c074c7541287a9" FileCategory="legacy_communication_data">$(DpaProjectFolder)\Config_Vector\CANFD364.dbc</File>
         </FileSet>
         <Merge>
             <Path Id="ECU-INSTANCE" ARPath="/ECU/MyECU"/>
@@ -232,7 +232,6 @@
                 <Setting Value="false" Name="EcuM"/>
                 <Setting Value="false" Name="Fee"/>
                 <Setting Value="false" Name="Fls"/>
-                <Setting Value="false" Name="IpduM"/>
                 <Setting Value="false" Name="Irq"/>
                 <Setting Value="false" Name="McalLib"/>
                 <Setting Value="false" Name="Mcu"/>
@@ -439,7 +438,7 @@
                 </Settings>
             </Settings>
             <Settings Name="com.vector.cfg.gen.core.gencore.internal.aov.AutomaticOnDemandValidationConfigurationService">
-                <Setting Value="rO0ABXNyAGpjb20udmVjdG9yLmNmZy5nZW4uY29yZS5nZW5jb3JlLmludGVybmFsLmFvdi5BdXRv&#xA;bWF0aWNPbkRlbWFuZFZhbGlkYXRpb25Db25maWd1cmF0aW9uU2VydmljZSRQZXJzaXN0ZWREYXRh&#xA;pcjrmQ6cuakCAAJaAAlhY3RpdmF0ZWRMABJkZWFjdGl2YXRlZE1vZHVsZXN0ABZMamF2YS91dGls&#xA;L0NvbGxlY3Rpb247eHABc3IANmNvbS5nb29nbGUuY29tbW9uLmNvbGxlY3QuSW1tdXRhYmxlTGlz&#xA;dCRTZXJpYWxpemVkRm9ybQAAAAAAAAAAAgABWwAIZWxlbWVudHN0ABNbTGphdmEvbGFuZy9PYmpl&#xA;Y3Q7eHB1cgATW0xqYXZhLmxhbmcuT2JqZWN0O5DOWJ8QcylsAgAAeHAAAAAUc3IANWNvbS52ZWN0&#xA;b3IuY2ZnLm1vZGVsLmFjY2Vzcy5EZWZSZWYkU2VyaWFsaXphdGlvblByb3h5NnUB4bS2W7ACAAJM&#xA;AB5kZWZSZWZTdHJpbmdXaXRob3V0UGFja2FnZVBhcnR0ABJMamF2YS9sYW5nL1N0cmluZztMABlw&#xA;YWNrYWdlUGFydE9mRGVmUmVmU3RyaW5ncQB+AAl4cHQAA0NhbnQAGS9NSUNST1NBUi9DYW5fTXBj&#xA;NTcwME1jYW5zcQB+AAh0AANTcGl0ABEvQVVSSVgyRy9FY3VjRGVmc3NxAH4ACHQABEVjdUN0AAkv&#xA;TUlDUk9TQVJzcQB+AAh0AANJcnFxAH4AD3NxAH4ACHQAA0FkY3EAfgAPc3EAfgAIdAADTWN1cQB+&#xA;AA9zcQB+AAh0AANGZWVxAH4AD3NxAH4ACHQABk1lbU1hcHEAfgASc3EAfgAIdAAFRTJFUFdxAH4A&#xA;EnNxAH4ACHQABU1lbUlmcQB+ABJzcQB+AAh0AAdNY2FsTGlicQB+AA9zcQB+AAh0AAR2QlJTcQB+&#xA;ABJzcQB+AAh0AANDcmNxAH4AD3NxAH4ACHQAA1NiY3QAFi9NSUNST1NBUi9TYmNfVGxmMzU1ODRz&#xA;cQB+AAh0AANEbWFxAH4AD3NxAH4ACHQAA0Zsc3EAfgAPc3EAfgAIdAAEUG9ydHEAfgAPc3EAfgAI&#xA;dAADRGlvcQB+AA9zcQB+AAh0AAR2U2V0cQB+ABJzcQB+AAh0AANQd21xAH4ADw==" Name="Data"/>
+                <Setting Value="rO0ABXNyAGpjb20udmVjdG9yLmNmZy5nZW4uY29yZS5nZW5jb3JlLmludGVybmFsLmFvdi5BdXRv&#xA;bWF0aWNPbkRlbWFuZFZhbGlkYXRpb25Db25maWd1cmF0aW9uU2VydmljZSRQZXJzaXN0ZWREYXRh&#xA;pcjrmQ6cuakCAAJaAAlhY3RpdmF0ZWRMABJkZWFjdGl2YXRlZE1vZHVsZXN0ABZMamF2YS91dGls&#xA;L0NvbGxlY3Rpb247eHABc3IANmNvbS5nb29nbGUuY29tbW9uLmNvbGxlY3QuSW1tdXRhYmxlTGlz&#xA;dCRTZXJpYWxpemVkRm9ybQAAAAAAAAAAAgABWwAIZWxlbWVudHN0ABNbTGphdmEvbGFuZy9PYmpl&#xA;Y3Q7eHB1cgATW0xqYXZhLmxhbmcuT2JqZWN0O5DOWJ8QcylsAgAAeHAAAAAUc3IANWNvbS52ZWN0&#xA;b3IuY2ZnLm1vZGVsLmFjY2Vzcy5EZWZSZWYkU2VyaWFsaXphdGlvblByb3h5NnUB4bS2W7ACAAJM&#xA;AB5kZWZSZWZTdHJpbmdXaXRob3V0UGFja2FnZVBhcnR0ABJMamF2YS9sYW5nL1N0cmluZztMABlw&#xA;YWNrYWdlUGFydE9mRGVmUmVmU3RyaW5ncQB+AAl4cHQABk1lbU1hcHQACS9NSUNST1NBUnNxAH4A&#xA;CHQAA01jdXQAES9BVVJJWDJHL0VjdWNEZWZzc3EAfgAIdAAHTWNhbExpYnEAfgAPc3EAfgAIdAAE&#xA;RWN1Q3EAfgAMc3EAfgAIdAADUHdtcQB+AA9zcQB+AAh0AANBZGNxAH4AD3NxAH4ACHQAA0Rpb3EA&#xA;fgAPc3EAfgAIdAADRmxzcQB+AA9zcQB+AAh0AARQb3J0cQB+AA9zcQB+AAh0AANEbWFxAH4AD3Nx&#xA;AH4ACHQAA0lycXEAfgAPc3EAfgAIdAAFRTJFUFdxAH4ADHNxAH4ACHQAA0NhbnQAGS9NSUNST1NB&#xA;Ui9DYW5fTXBjNTcwME1jYW5zcQB+AAh0AAR2QlJTcQB+AAxzcQB+AAh0AANTcGlxAH4AD3NxAH4A&#xA;CHQAA0ZlZXEAfgAPc3EAfgAIdAAFTWVtSWZxAH4ADHNxAH4ACHQAA1NiY3QAFi9NSUNST1NBUi9T&#xA;YmNfVGxmMzU1ODRzcQB+AAh0AAR2U2V0cQB+AAxzcQB+AAh0AANDcmNxAH4ADw==" Name="Data"/>
             </Settings>
             <Settings Name="com.vector.cfg.gui.pse.pages.generators">
                 <Settings Name="BuildVipProject"/>
@@ -457,6 +456,9 @@
     <Miscellaneous>
         <AmdGenerateDebugData>false</AmdGenerateDebugData>
         <AutomaticSyncSystemDescription>false</AutomaticSyncSystemDescription>
+        <A2LGenerator>
+            <A2LMasterFile>E:\workFiles\TC367\TC367\workspace\last364\Config\McData\Master.a2l</A2LMasterFile>
+        </A2LGenerator>
     </Miscellaneous>
     <SwctGeneration>
         <Component Name="StartApp" GenerationEnabled="true"/>

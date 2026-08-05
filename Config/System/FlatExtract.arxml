@@ -36,16 +36,10 @@
                                   <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU-GROUP">/IPDUGroup/MyECU_oCAN00_Tx</FIBEX-ELEMENT-REF>
                                 </FIBEX-ELEMENT-REF-CONDITIONAL>
                                 <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
                                   <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_Receive_oCAN00</FIBEX-ELEMENT-REF>
                                 </FIBEX-ELEMENT-REF-CONDITIONAL>
                                 <FIBEX-ELEMENT-REF-CONDITIONAL>
                                   <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_Transmit_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="MULTIPLEXED-I-PDU">/PDU/msg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
                                 </FIBEX-ELEMENT-REF-CONDITIONAL>
                                 <FIBEX-ELEMENT-REF-CONDITIONAL>
                                   <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/PDU/msg_Receive_oCAN00</FIBEX-ELEMENT-REF>
@@ -66,178 +60,28 @@
                                   <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/sig_State_RearRightDoor_omsg_Receive_oCAN00</FIBEX-ELEMENT-REF>
                                 </FIBEX-ELEMENT-REF-CONDITIONAL>
                                 <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/PDU/msg_MyECU_Lamp_Mx_oCAN00</FIBEX-ELEMENT-REF>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_MotorStatus_oCAN00</FIBEX-ELEMENT-REF>
                                 </FIBEX-ELEMENT-REF-CONDITIONAL>
                                 <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/PDU/msg_MyECU_Lamp_MxA0_oCAN00</FIBEX-ELEMENT-REF>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/PDU/msg_MotorStatus_oCAN00</FIBEX-ELEMENT-REF>
                                 </FIBEX-ELEMENT-REF-CONDITIONAL>
                                 <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/PDU/msg_MyECU_Lamp_MxA1_oCAN00</FIBEX-ELEMENT-REF>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/ElectricAngle_omsg_MotorStatus_oCAN00</FIBEX-ELEMENT-REF>
                                 </FIBEX-ELEMENT-REF-CONDITIONAL>
                                 <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/PDU/msg_MyECU_Lamp_MxA2_oCAN00</FIBEX-ELEMENT-REF>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/Id_Ref_omsg_MotorStatus_oCAN00</FIBEX-ELEMENT-REF>
                                 </FIBEX-ELEMENT-REF-CONDITIONAL>
                                 <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_AdcFilterAlpha_MxA2_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/Iq_Ref_omsg_MotorStatus_oCAN00</FIBEX-ELEMENT-REF>
                                 </FIBEX-ELEMENT-REF-CONDITIONAL>
                                 <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_AdcFilterEnabled_MxA2_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorMode_omsg_MotorStatus_oCAN00</FIBEX-ELEMENT-REF>
                                 </FIBEX-ELEMENT-REF-CONDITIONAL>
                                 <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_AdcFilterReady_MxA2_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/tle9180_Ov_Fault_omsg_MotorStatus_oCAN00</FIBEX-ELEMENT-REF>
                                 </FIBEX-ELEMENT-REF-CONDITIONAL>
                                 <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_AdcOffsetSampleCount_MxA2_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_AdcOffsetVo1_MxA2_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_AdcOffsetVo2_MxA2_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_AdcOffsetVo3_MxA2_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_AdcSyncCounter_MxA2_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_AngleRaw_MxA0_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_CurrentOffsetReady_MxA0_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_CurrentOffsetSampleCount_MxA0_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_ElectricalAngle_rad_MxA0_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_Fault_MxA0_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_FaultIu_A_MxA1_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_FaultIv_A_MxA1_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_FaultIw_A_MxA1_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_FaultPwm_MxA1_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_FaultReason_MxA0_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_FaultReasonPwm_MxA1_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_FaultVdc_V_MxA1_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_GateDriverOutputEnabled_MxA0_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_GateDriverState_MxA0_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_Id_A_MxA0_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_IdRef_A_MxA0_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_Iq_A_MxA0_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_IqRef_A_MxA0_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_Iu_A_MxA0_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_IuFiltered_A_MxA2_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_IuRaw_A_MxA2_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_Iv_A_MxA0_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_IvFiltered_A_MxA2_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_IvRaw_A_MxA2_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_Iw_A_MxA0_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_IwFiltered_A_MxA2_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_IwRaw_A_MxA2_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_MechanicalSpeed_rpm_MxA0_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_MotorMode_MxA0_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_MotorModePwm_MxA1_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_Page_MxA0_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_Page_MxA1_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_Page_MxA2_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_PwmPeriod_MxA1_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_PwmU_MxA1_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_PwmV_MxA1_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_PwmW_MxA1_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_Sequence_Mx_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_ValphaRef_V_MxA1_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_VbetaRef_V_MxA1_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_Vdc_V_MxA0_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_VdcMax_V_MxA1_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_VdRef_V_MxA1_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_Vinv_V_MxA2_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_VqRef_V_MxA1_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
-                                </FIBEX-ELEMENT-REF-CONDITIONAL>
-                                <FIBEX-ELEMENT-REF-CONDITIONAL>
-                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/MotorFoc_Vro_V_MxA2_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/Vbus_omsg_MotorStatus_oCAN00</FIBEX-ELEMENT-REF>
                                 </FIBEX-ELEMENT-REF-CONDITIONAL>
                               </FIBEX-ELEMENTS>
                               <MAPPINGS>
@@ -783,6 +627,23 @@
                                     <SD GID="938f993f-b885-4bac-90cb-00bf183b2141">/MICROSAR/Sbc_ib_bswmd/BswModuleDescriptions/Sbc/Sbc_Behavior/SBC_EXCLUSIVE_AREA_2</SD>
                                     <SD GID="2be0f6d7-83ce-4e5b-be07-fb69cfd7ce49">/MICROSAR/Sbc_ib_bswmd/BswModuleDescriptions/Sbc/Sbc_Behavior/SBC_EXCLUSIVE_AREA_3</SD>
                                     <SD GID="76d404ef-996c-47fc-8c1c-8eb6234aa018">/MICROSAR/Sbc_ib_bswmd/BswModuleDescriptions/Sbc/Sbc_Behavior/SBC_EXCLUSIVE_AREA_4</SD>
+                                    <SD GID="ee8e3989-3921-43ef-be1f-c4ec1052e197">/MICROSAR/Xcp_ib_bswmd</SD>
+                                    <SD GID="3765e3b4-dea9-465f-9cf9-dbd6917537ad">/MICROSAR/Xcp_ib_bswmd/BswModuleDescriptions</SD>
+                                    <SD GID="c2b34deb-5bd4-4fda-85ed-7051baec2596">/MICROSAR/Xcp_ib_bswmd/BswModuleDescriptions/CanXcp_MainFunction</SD>
+                                    <SD GID="605a4317-9900-4727-ae54-dbf2e5d0c350">/MICROSAR/Xcp_ib_bswmd/BswModuleDescriptions/Xcp/XcpBehavior</SD>
+                                    <SD GID="1c6e15d7-79fd-43ab-abb0-cf9ebe4aeaa5">/MICROSAR/Xcp_ib_bswmd/BswModuleDescriptions/Xcp/XcpBehavior/CANXCP_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="272f5728-718c-44d2-9d1f-7365f7910255">/MICROSAR/Xcp_ib_bswmd/BswModuleDescriptions/Xcp/XcpBehavior/CanXcp_MainFunction</SD>
+                                    <SD GID="97ef31b3-6cb8-401d-9393-3b8c5f76b70b">/MICROSAR/Xcp_ib_bswmd/BswModuleDescriptions/Xcp/XcpBehavior/CanXcp_MainFunctionTimingEvent0</SD>
+                                    <SD GID="8f97e3a3-35b6-4274-bf40-2ff3aecfe8ca">/MICROSAR/Xcp_ib_bswmd/BswModuleDescriptions/Xcp/XcpBehavior/FRXCP_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="9fedbb1a-94e1-4b20-8d51-1ae55428ca34">/MICROSAR/Xcp_ib_bswmd/BswModuleDescriptions/Xcp/XcpBehavior/FRXCP_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="f834510b-78c6-429e-8738-6893eba1d90f">/MICROSAR/Xcp_ib_bswmd/BswModuleDescriptions/Xcp/XcpBehavior/FRXCP_EXCLUSIVE_AREA_2</SD>
+                                    <SD GID="246bbec5-d408-4ae6-ac19-1381b0e2f8dd">/MICROSAR/Xcp_ib_bswmd/BswModuleDescriptions/Xcp/XcpBehavior/TCPIPXCP_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="1e537dbb-152a-464c-b11a-4be266342962">/MICROSAR/Xcp_ib_bswmd/BswModuleDescriptions/Xcp/XcpBehavior/XCP_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="77705264-83bf-4061-ad00-11b004b6f8b5">/MICROSAR/Xcp_ib_bswmd/BswModuleDescriptions/Xcp/XcpBehavior/XCP_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="6846fde1-956b-42ab-acff-caabe34aa7f9">/MICROSAR/Xcp_ib_bswmd/BswModuleDescriptions/Xcp/XcpBehavior/XCP_EXCLUSIVE_AREA_2</SD>
+                                    <SD GID="19cffbd3-fefe-4e9a-afd3-36cebe56c0f6">/MICROSAR/Xcp_ib_bswmd/BswModuleDescriptions/Xcp/XcpBehavior/Xcp_MainFunction</SD>
+                                    <SD GID="40a9d5c5-9247-461c-96f8-3244872d88eb">/MICROSAR/Xcp_ib_bswmd/BswModuleDescriptions/Xcp/XcpBehavior/Xcp_MainFunctionTimingEvent0</SD>
+                                    <SD GID="c55f90e6-cb83-4161-ab0b-a320a517de7f">/MICROSAR/Xcp_ib_bswmd/BswModuleDescriptions/Xcp_MainFunction</SD>
                                     <SD GID="{AF35D1D4-4362-4055-B014-780FA6F9E75B}">/Predefined_DEV/CompuMethods/Dem_UdsStatusByteType</SD>
                                     <SD GID="F2570AA0-D6E5-4217-80F7-5F60B8778133">/Predefined_DEV/CompuMethods/NvM_RequestResultType</SD>
                                     <SD GID="007B24D3-5C46-4986-B3CA-31D71FEDD510">/Predefined_DEV/CompuMethods/NvM_ServiceIdType</SD>

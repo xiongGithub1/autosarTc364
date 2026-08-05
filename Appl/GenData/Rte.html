@@ -174,7 +174,6 @@ SchM_E2EXf.h<br>
 SchM_EcuM.h<br>
 SchM_Fee.h<br>
 SchM_Fls_17_Dmu.h<br>
-SchM_IpduM.h<br>
 SchM_Irq.h<br>
 SchM_McalLib.h<br>
 SchM_Mcu.h<br>
@@ -184,6 +183,7 @@ SchM_Port.h<br>
 SchM_Pwm_17_GtmCcu6.h<br>
 SchM_Sbc_30_Tlf35584.h<br>
 SchM_Spi.h<br>
+SchM_Xcp.h<br>
 SchM_Adc_Type.h<br>
 SchM_BswM_Type.h<br>
 SchM_Can_Type.h<br>
@@ -200,7 +200,6 @@ SchM_E2EXf_Type.h<br>
 SchM_EcuM_Type.h<br>
 SchM_Fee_Type.h<br>
 SchM_Fls_17_Dmu_Type.h<br>
-SchM_IpduM_Type.h<br>
 SchM_Irq_Type.h<br>
 SchM_McalLib_Type.h<br>
 SchM_Mcu_Type.h<br>
@@ -210,6 +209,7 @@ SchM_Port_Type.h<br>
 SchM_Pwm_17_GtmCcu6_Type.h<br>
 SchM_Sbc_30_Tlf35584_Type.h<br>
 SchM_Spi_Type.h<br>
+SchM_Xcp_Type.h<br>
 Rte.oil<br>
 Rte_Needs.ecuc.arxml<br>
 <br>
@@ -692,20 +692,6 @@ CONST Size: 0 Bytes<br>
 </TR>
 <TR>
 <TD><B>TimingEvent</B> Cyclic 10ms</TD>
-<TD>IpduM_MainFunctionRx</TD>
-<TD>n/a</TD>
-<TD>n/a</TD>
-<TD>n/a</TD>
-</TR>
-<TR>
-<TD><B>TimingEvent</B> Cyclic 10ms</TD>
-<TD>IpduM_MainFunctionTx</TD>
-<TD>n/a</TD>
-<TD>n/a</TD>
-<TD>n/a</TD>
-</TR>
-<TR>
-<TD><B>TimingEvent</B> Cyclic 10ms</TD>
 <TD>NvM_MainFunction</TD>
 <TD>Default_BSW_ASync_Task_10ms</TD>
 <TD>Rte_Ev_Cyclic2_Default_BSW_ASync_Task_10ms_0_10ms</TD>
@@ -721,6 +707,20 @@ CONST Size: 0 Bytes<br>
 <TR>
 <TD><B>TimingEvent</B> Cyclic 5ms</TD>
 <TD>Spi_MainFunction_Handling</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+</TR>
+<TR>
+<TD><B>TimingEvent</B> Cyclic 5ms</TD>
+<TD>CanXcp_MainFunction</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+</TR>
+<TR>
+<TD><B>TimingEvent</B> Cyclic 5ms</TD>
+<TD>Xcp_MainFunction</TD>
 <TD>n/a</TD>
 <TD>n/a</TD>
 <TD>n/a</TD>

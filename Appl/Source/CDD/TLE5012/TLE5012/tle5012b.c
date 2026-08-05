@@ -92,24 +92,6 @@ uint16 tle5012b_read_fast(uint8 address)
   return tle5012b_spi_transfer(tle5012b_build_tx(address, 0U, FALSE));
 }
 
-void tle5012b_read_AngleSpeed(Tle5012 *tle5012)
-{
-  uint16 angleSpeed;
-
-  if (tle5012 == NULL_PTR)
-  {
-    return;
-  }
-
-  tle5012_sfr.ASPD_Type.U = tle5012b_read_fast(ASPD);
-
-  if (tle5012_sfr.ASPD_Type.B.RD_AS != 0U)
-  {
-    angleSpeed = tle5012_sfr.ASPD_Type.B.ANG_SPD;
-    tle5012->AngleSpeed = (float32)(angleSpeed & 0x3FFFU);
-    tle5012->Direction = ((angleSpeed & 0x4000U) == 0x4000U) ? TRUE : FALSE;
-  }
-}
 
 Std_ReturnType tle5012b_process_angle_raw(Tle5012 *tle5012, uint16 avalRaw)
 {
@@ -159,14 +141,7 @@ Std_ReturnType tle5012b_process_angle_raw(Tle5012 *tle5012, uint16 avalRaw)
   return E_OK;
 }
 
-Std_ReturnType tle5012b_read_angle(Tle5012 *tle5012)
-{
-  uint16 avalRaw;
-  if (tle5012 == NULL_PTR) { return E_NOT_OK; }
-  avalRaw = tle5012b_read_fast(AVAL);
-  if (Tle5012bd_SpiLastResult != E_OK) { return E_NOT_OK; }
-  return tle5012b_process_angle_raw(tle5012, avalRaw);
-}
+
 boolean tle5012b_ChangeAngleDirection(boolean Dir)
 {
   tle5012_sfr.MOD_2_Type.U = tle5012b_read_fast(MOD_2) & 0x7FFCU;

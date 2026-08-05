@@ -47,6 +47,7 @@ volatile uint32 MotorZeroCal_NvPendingTicks = 0UL;
 static uint8 MotorZeroCal_TimedNvWriteActive = 0U;
 /* 1 = Init wants one boot ReadBlock after Fee becomes IDLE. */
 static uint8 MotorZeroCal_NvBootReadRequest = 0U;
+volatile uint8 MotorZeroCal_SpiBusy = 0U;
 
 extern volatile MotorMode_Type MotorControll_MotorModeCmd;
 
@@ -59,7 +60,7 @@ volatile uint32 MotorZeroCal_TimerMs = 0U;
 volatile uint32 MotorZeroCal_ElapsedMs = 0UL;
 volatile uint8 MotorZeroCal_RetryCount = 0U;
 volatile float32 MotorZeroCal_IdRefA = 0.0F;
-volatile float32 MotorZeroCal_IdRefTargetA = MOTORZEROCAL_ID_REF_A;
+volatile float32 MotorZeroCal_IdRefTargetA = 2.0f;
 volatile float32 MotorZeroCal_IdRefRampStepA = MOTORZEROCAL_ID_RAMP_STEP_A;
 volatile uint8 MotorZeroCal_StartRejectReason = MOTORZEROCAL_START_REJECT_NONE;
 volatile uint8 MotorZeroCal_FaultReason = MOTORZEROCAL_FAULT_NONE;
@@ -89,10 +90,28 @@ static void MotorZeroCal_EnterFault(uint8 reason)
 
 static void MotorZeroCal_ApplyAngBase(uint16 angBase)
 {
+  uint16 mod2;
+
   Tle5012bd_Sensor.ANG_BASE = angBase;
 #if (MOTORZEROCAL_SPI_ENABLE == 1U)
+  /* TLE5012B 的 ANG_BASE(MOD_3) 只有在 MOD_2.ANG_BASE_EN(bit0) 产生 0→1 沿时
+     才会真正传输到内部角度计算；直接写 MOD_3 只改了寄存器，传感器内部仍用旧零位。
+     恢复标定值必须与标定时(tle5012b_ChangeAngleBasic)一致的三步：
+       1) 清 ANG_BASE_EN(bit0) -> 2) 写 MOD_3 -> 3) 置 ANG_BASE_EN */
+  MotorZeroCal_SpiBusy = 1U;
+  mod2 = (uint16)(tle5012b_read_fast(MOD_2) & 0x7FFCU);
+  tle5012b_write_fast(MOD_2, mod2);
+  tle5012b_delay_us(2U);
+
   tle5012b_write_fast(MOD_3, angBase);
+  tle5012b_delay_us(2U);
+
+  mod2 |= 0x1U;
+  tle5012b_write_fast(MOD_2, mod2);
+  tle5012b_delay_us(2U);
+
   tle5012b_read_all();
+  MotorZeroCal_SpiBusy = 0U;
 #endif
 }
 
@@ -455,9 +474,12 @@ static void MotorZeroCal_ChangeAngleBasicFromAval(void)
 #if (MOTORZEROCAL_SPI_ENABLE == 1U)
   uint16 angleBasic;
 
-  tle5012b_read_angle(&Tle5012bd_Sensor);
+  /* Original_Angle 由快速环最新一帧写入；写 ANG_BASE 期间置 SpiBusy，
+     让快速环暂停读，保证 QSPI2 写序列不被抢占。 */
   angleBasic = (uint16)Tle5012bd_Sensor.Original_Angle;
+  MotorZeroCal_SpiBusy = 1U;
   tle5012b_ChangeAngleBasic(&Tle5012bd_Sensor, angleBasic);
+  MotorZeroCal_SpiBusy = 0U;
 #else
   /* SPI bring-up: skip sensor write path. */
 #endif
@@ -522,8 +544,8 @@ static void MotorZeroCal_RunCalibrationStep(void)
   }
 
   MotorZeroCal_Stage = MOTORZEROCAL_STAGE_READ_ANGLE;
-  /* Read the aligned encoder position. */
-  tle5012b_read_angle(&Tle5012bd_Sensor);
+  /* 角度由 10 kHz 快速环每拍读取（MotorCdd_FocServiceAngleSpi），
+     这里直接用 RAM 镜像，不在 1ms 任务发 SPI。 */
   angle = Tle5012bd_Sensor.Angle;
 
   if (MotorZeroCal_IsEncoderAtZero(angle) != 0U)
@@ -588,6 +610,7 @@ void MotorZeroCal_Init(void)
   MotorZeroCal_DflashReadComplete = 0U;
   MotorZeroCal_NvSaveRequest = 0U;
   MotorZeroCal_TimedNvWriteActive = 0U;
+  MotorZeroCal_SpiBusy = 0U;
   MotorZeroCal_SetCalibratedFlag(0U);
 #if (MOTORZEROCAL_BOOT_NVM_READ == 1U)
   /* Do not ReadBlock until Fee leaves INITGC/BUSY — otherwise job stays PENDING forever. */

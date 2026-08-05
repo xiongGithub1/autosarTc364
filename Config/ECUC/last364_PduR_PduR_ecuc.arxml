@@ -158,106 +158,6 @@
                   <SHORT-NAME>PduRRoutingTable</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable</DEFINITION-REF>
                   <SUB-CONTAINERS>
-                    <ECUC-CONTAINER-VALUE UUID="8dc67dc5-8d3c-3117-bc44-63cd8f85f546">
-                      <SHORT-NAME>msg_MyECU_Lamp_oCAN00_818e1651_Tx</SHORT-NAME>
-                      <LONG-NAME>
-                        <L-4 L="FOR-ALL">msg_MyECU_Lamp_oCAN00</L-4>
-                      </LONG-NAME>
-                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath</DEFINITION-REF>
-                      <PARAMETER-VALUES>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRRoutingPathCommunicationType</DEFINITION-REF>
-                          <VALUE>COMMUNICATION_INTERFACE</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRMulticoreRoutingPath</DEFINITION-REF>
-                          <VALUE>false</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                      </PARAMETER-VALUES>
-                      <REFERENCE-VALUES>
-                        <ECUC-REFERENCE-VALUE>
-                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRLockRef</DEFINITION-REF>
-                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/PduR/PduRRoutingTables/PduRLock_PduRExclusiveArea</VALUE-REF>
-                        </ECUC-REFERENCE-VALUE>
-                      </REFERENCE-VALUES>
-                      <SUB-CONTAINERS>
-                        <ECUC-CONTAINER-VALUE UUID="b2204421-9071-3ca7-af28-cbc74ef2eadd">
-                          <SHORT-NAME>PduRSrcPdu_8e8b997f</SHORT-NAME>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSourcePduHandleId</DEFINITION-REF>
-                              <VALUE>4</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSrcPduDirection</DEFINITION-REF>
-                              <VALUE>TRANSMIT</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                          <REFERENCE-VALUES>
-                            <ECUC-REFERENCE-VALUE>
-                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSrcPduRef</DEFINITION-REF>
-                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/EcuC/EcucPduCollection/msg_MyECU_Lamp_oCAN00_818e1651_Tx</VALUE-REF>
-                            </ECUC-REFERENCE-VALUE>
-                            <ECUC-REFERENCE-VALUE>
-                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSrcPduPduRBswModulesRef</DEFINITION-REF>
-                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/PduR/IpduM</VALUE-REF>
-                            </ECUC-REFERENCE-VALUE>
-                          </REFERENCE-VALUES>
-                        </ECUC-CONTAINER-VALUE>
-                        <ECUC-CONTAINER-VALUE UUID="49c02ce7-25cb-3967-a57c-fcaf16a54d44">
-                          <SHORT-NAME>msg_MyECU_Lamp_oCAN00_26f3473b_Tx</SHORT-NAME>
-                          <LONG-NAME>
-                            <L-4 L="FOR-ALL">msg_MyECU_Lamp_oCAN00</L-4>
-                          </LONG-NAME>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduHandleId</DEFINITION-REF>
-                              <VALUE>4</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduDirection</DEFINITION-REF>
-                              <VALUE>TRANSMIT</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduRoutingType</DEFINITION-REF>
-                              <VALUE>API_FORWARDING</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduDataProcessing</DEFINITION-REF>
-                              <VALUE>IMMEDIATE</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRPduLengthHandlingStrategy</DEFINITION-REF>
-                              <VALUE>IGNORE</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduCrossPartitionDestination</DEFINITION-REF>
-                              <VALUE>false</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduDataProvision</DEFINITION-REF>
-                              <VALUE>PDUR_DIRECT</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRTransmissionConfirmation</DEFINITION-REF>
-                              <VALUE>true</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                          <REFERENCE-VALUES>
-                            <ECUC-REFERENCE-VALUE>
-                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduRef</DEFINITION-REF>
-                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/EcuC/EcucPduCollection/msg_MyECU_Lamp_oCAN00_26f3473b_Tx</VALUE-REF>
-                            </ECUC-REFERENCE-VALUE>
-                            <ECUC-REFERENCE-VALUE>
-                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduPduRBswModulesRef</DEFINITION-REF>
-                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/PduR/CanIf</VALUE-REF>
-                            </ECUC-REFERENCE-VALUE>
-                          </REFERENCE-VALUES>
-                        </ECUC-CONTAINER-VALUE>
-                      </SUB-CONTAINERS>
-                    </ECUC-CONTAINER-VALUE>
                     <ECUC-CONTAINER-VALUE UUID="49a07786-7d69-3bfc-ae35-f0e57619a578">
                       <SHORT-NAME>msg_Receive_oCAN00_3867e0b8_Rx</SHORT-NAME>
                       <LONG-NAME>
@@ -380,7 +280,7 @@
                           <PARAMETER-VALUES>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSourcePduHandleId</DEFINITION-REF>
-                              <VALUE>5</VALUE>
+                              <VALUE>1</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSrcPduDirection</DEFINITION-REF>
@@ -407,7 +307,7 @@
                           <PARAMETER-VALUES>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduHandleId</DEFINITION-REF>
-                              <VALUE>5</VALUE>
+                              <VALUE>1</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduDirection</DEFINITION-REF>
@@ -451,10 +351,10 @@
                         </ECUC-CONTAINER-VALUE>
                       </SUB-CONTAINERS>
                     </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE UUID="e801901c-cd7b-3bbd-bebf-427350b8790e">
-                      <SHORT-NAME>msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx</SHORT-NAME>
+                    <ECUC-CONTAINER-VALUE UUID="0a53251c-97fb-3fbc-be86-fbe60a6cd408">
+                      <SHORT-NAME>msg_MotorStatus_oCAN00_71118836_Tx</SHORT-NAME>
                       <LONG-NAME>
-                        <L-4 L="FOR-ALL">msg_MyECU_Lamp_Mx_oCAN00</L-4>
+                        <L-4 L="FOR-ALL">msg_MotorStatus_oCAN00</L-4>
                       </LONG-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -474,210 +374,10 @@
                         </ECUC-REFERENCE-VALUE>
                       </REFERENCE-VALUES>
                       <SUB-CONTAINERS>
-                        <ECUC-CONTAINER-VALUE UUID="883b97d1-45c9-3bbd-aaf2-ab766165109f">
-                          <SHORT-NAME>msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx</SHORT-NAME>
+                        <ECUC-CONTAINER-VALUE UUID="5e5f7679-cb3b-350f-bd21-34d83c8547f7">
+                          <SHORT-NAME>msg_MotorStatus_oCAN00_a6063320_Tx</SHORT-NAME>
                           <LONG-NAME>
-                            <L-4 L="FOR-ALL">msg_MyECU_Lamp_Mx_oCAN00</L-4>
-                          </LONG-NAME>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduHandleId</DEFINITION-REF>
-                              <VALUE>3</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduDirection</DEFINITION-REF>
-                              <VALUE>TRANSMIT</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduRoutingType</DEFINITION-REF>
-                              <VALUE>API_FORWARDING</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduDataProcessing</DEFINITION-REF>
-                              <VALUE>IMMEDIATE</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRPduLengthHandlingStrategy</DEFINITION-REF>
-                              <VALUE>IGNORE</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduCrossPartitionDestination</DEFINITION-REF>
-                              <VALUE>false</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduDataProvision</DEFINITION-REF>
-                              <VALUE>PDUR_DIRECT</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRTransmissionConfirmation</DEFINITION-REF>
-                              <VALUE>true</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                          <REFERENCE-VALUES>
-                            <ECUC-REFERENCE-VALUE>
-                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduRef</DEFINITION-REF>
-                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/EcuC/EcucPduCollection/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx</VALUE-REF>
-                            </ECUC-REFERENCE-VALUE>
-                            <ECUC-REFERENCE-VALUE>
-                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduPduRBswModulesRef</DEFINITION-REF>
-                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/PduR/IpduM</VALUE-REF>
-                            </ECUC-REFERENCE-VALUE>
-                          </REFERENCE-VALUES>
-                        </ECUC-CONTAINER-VALUE>
-                        <ECUC-CONTAINER-VALUE UUID="3040bae1-eba5-355a-a69e-6d64be5a1cd5">
-                          <SHORT-NAME>PduRSrcPdu_289484a7</SHORT-NAME>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSourcePduHandleId</DEFINITION-REF>
-                              <VALUE>3</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSrcPduDirection</DEFINITION-REF>
-                              <VALUE>TRANSMIT</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                          <REFERENCE-VALUES>
-                            <ECUC-REFERENCE-VALUE>
-                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSrcPduRef</DEFINITION-REF>
-                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/EcuC/EcucPduCollection/msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx</VALUE-REF>
-                            </ECUC-REFERENCE-VALUE>
-                            <ECUC-REFERENCE-VALUE>
-                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSrcPduPduRBswModulesRef</DEFINITION-REF>
-                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/PduR/Com</VALUE-REF>
-                            </ECUC-REFERENCE-VALUE>
-                          </REFERENCE-VALUES>
-                        </ECUC-CONTAINER-VALUE>
-                      </SUB-CONTAINERS>
-                    </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE UUID="5b3bbbab-085a-393e-af8f-7dc8b00c965c">
-                      <SHORT-NAME>msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx</SHORT-NAME>
-                      <LONG-NAME>
-                        <L-4 L="FOR-ALL">msg_MyECU_Lamp_MxA1_oCAN00</L-4>
-                      </LONG-NAME>
-                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath</DEFINITION-REF>
-                      <PARAMETER-VALUES>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRRoutingPathCommunicationType</DEFINITION-REF>
-                          <VALUE>COMMUNICATION_INTERFACE</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRMulticoreRoutingPath</DEFINITION-REF>
-                          <VALUE>false</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                      </PARAMETER-VALUES>
-                      <REFERENCE-VALUES>
-                        <ECUC-REFERENCE-VALUE>
-                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRLockRef</DEFINITION-REF>
-                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/PduR/PduRRoutingTables/PduRLock_PduRExclusiveArea</VALUE-REF>
-                        </ECUC-REFERENCE-VALUE>
-                      </REFERENCE-VALUES>
-                      <SUB-CONTAINERS>
-                        <ECUC-CONTAINER-VALUE UUID="4373797f-09ac-3fa9-a202-40be9efe45d5">
-                          <SHORT-NAME>PduRSrcPdu_f7c31f09</SHORT-NAME>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSourcePduHandleId</DEFINITION-REF>
-                              <VALUE>1</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSrcPduDirection</DEFINITION-REF>
-                              <VALUE>TRANSMIT</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                          <REFERENCE-VALUES>
-                            <ECUC-REFERENCE-VALUE>
-                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSrcPduRef</DEFINITION-REF>
-                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/EcuC/EcucPduCollection/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx</VALUE-REF>
-                            </ECUC-REFERENCE-VALUE>
-                            <ECUC-REFERENCE-VALUE>
-                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSrcPduPduRBswModulesRef</DEFINITION-REF>
-                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/PduR/Com</VALUE-REF>
-                            </ECUC-REFERENCE-VALUE>
-                          </REFERENCE-VALUES>
-                        </ECUC-CONTAINER-VALUE>
-                        <ECUC-CONTAINER-VALUE UUID="d608f95a-6ee7-3edd-a9d7-c0495a8ac597">
-                          <SHORT-NAME>msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx</SHORT-NAME>
-                          <LONG-NAME>
-                            <L-4 L="FOR-ALL">msg_MyECU_Lamp_MxA1_oCAN00</L-4>
-                          </LONG-NAME>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduHandleId</DEFINITION-REF>
-                              <VALUE>1</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduDirection</DEFINITION-REF>
-                              <VALUE>TRANSMIT</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduRoutingType</DEFINITION-REF>
-                              <VALUE>API_FORWARDING</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduDataProcessing</DEFINITION-REF>
-                              <VALUE>IMMEDIATE</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRPduLengthHandlingStrategy</DEFINITION-REF>
-                              <VALUE>IGNORE</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduCrossPartitionDestination</DEFINITION-REF>
-                              <VALUE>false</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduDataProvision</DEFINITION-REF>
-                              <VALUE>PDUR_DIRECT</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRTransmissionConfirmation</DEFINITION-REF>
-                              <VALUE>true</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                          <REFERENCE-VALUES>
-                            <ECUC-REFERENCE-VALUE>
-                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduRef</DEFINITION-REF>
-                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/EcuC/EcucPduCollection/msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx</VALUE-REF>
-                            </ECUC-REFERENCE-VALUE>
-                            <ECUC-REFERENCE-VALUE>
-                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduPduRBswModulesRef</DEFINITION-REF>
-                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/PduR/IpduM</VALUE-REF>
-                            </ECUC-REFERENCE-VALUE>
-                          </REFERENCE-VALUES>
-                        </ECUC-CONTAINER-VALUE>
-                      </SUB-CONTAINERS>
-                    </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE UUID="5810c674-6617-3760-9a78-ed42746f6d9e">
-                      <SHORT-NAME>msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx</SHORT-NAME>
-                      <LONG-NAME>
-                        <L-4 L="FOR-ALL">msg_MyECU_Lamp_MxA0_oCAN00</L-4>
-                      </LONG-NAME>
-                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath</DEFINITION-REF>
-                      <PARAMETER-VALUES>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRRoutingPathCommunicationType</DEFINITION-REF>
-                          <VALUE>COMMUNICATION_INTERFACE</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRMulticoreRoutingPath</DEFINITION-REF>
-                          <VALUE>false</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                      </PARAMETER-VALUES>
-                      <REFERENCE-VALUES>
-                        <ECUC-REFERENCE-VALUE>
-                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRLockRef</DEFINITION-REF>
-                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/PduR/PduRRoutingTables/PduRLock_PduRExclusiveArea</VALUE-REF>
-                        </ECUC-REFERENCE-VALUE>
-                      </REFERENCE-VALUES>
-                      <SUB-CONTAINERS>
-                        <ECUC-CONTAINER-VALUE UUID="3f6c2331-cb86-358d-ad14-4264d00e08eb">
-                          <SHORT-NAME>msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx</SHORT-NAME>
-                          <LONG-NAME>
-                            <L-4 L="FOR-ALL">msg_MyECU_Lamp_MxA0_oCAN00</L-4>
+                            <L-4 L="FOR-ALL">msg_MotorStatus_oCAN00</L-4>
                           </LONG-NAME>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu</DEFINITION-REF>
                           <PARAMETER-VALUES>
@@ -717,16 +417,16 @@
                           <REFERENCE-VALUES>
                             <ECUC-REFERENCE-VALUE>
                               <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduRef</DEFINITION-REF>
-                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/EcuC/EcucPduCollection/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx</VALUE-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/EcuC/EcucPduCollection/msg_MotorStatus_oCAN00_a6063320_Tx</VALUE-REF>
                             </ECUC-REFERENCE-VALUE>
                             <ECUC-REFERENCE-VALUE>
                               <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduPduRBswModulesRef</DEFINITION-REF>
-                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/PduR/IpduM</VALUE-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/PduR/CanIf</VALUE-REF>
                             </ECUC-REFERENCE-VALUE>
                           </REFERENCE-VALUES>
                         </ECUC-CONTAINER-VALUE>
-                        <ECUC-CONTAINER-VALUE UUID="6b08de0a-0f38-355e-b6a4-fd4dac2395c4">
-                          <SHORT-NAME>PduRSrcPdu_991c8b02</SHORT-NAME>
+                        <ECUC-CONTAINER-VALUE UUID="0dfa034e-39d6-3b74-b41a-9c77936e974b">
+                          <SHORT-NAME>PduRSrcPdu_96a7407f</SHORT-NAME>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu</DEFINITION-REF>
                           <PARAMETER-VALUES>
                             <ECUC-NUMERICAL-PARAM-VALUE>
@@ -741,111 +441,11 @@
                           <REFERENCE-VALUES>
                             <ECUC-REFERENCE-VALUE>
                               <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSrcPduRef</DEFINITION-REF>
-                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/EcuC/EcucPduCollection/msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx</VALUE-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/EcuC/EcucPduCollection/msg_MotorStatus_oCAN00_71118836_Tx</VALUE-REF>
                             </ECUC-REFERENCE-VALUE>
                             <ECUC-REFERENCE-VALUE>
                               <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSrcPduPduRBswModulesRef</DEFINITION-REF>
                               <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/PduR/Com</VALUE-REF>
-                            </ECUC-REFERENCE-VALUE>
-                          </REFERENCE-VALUES>
-                        </ECUC-CONTAINER-VALUE>
-                      </SUB-CONTAINERS>
-                    </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE UUID="6fb7b9b5-c157-3403-a436-4b95d5b042f3">
-                      <SHORT-NAME>msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx</SHORT-NAME>
-                      <LONG-NAME>
-                        <L-4 L="FOR-ALL">msg_MyECU_Lamp_MxA2_oCAN00</L-4>
-                      </LONG-NAME>
-                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath</DEFINITION-REF>
-                      <PARAMETER-VALUES>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRRoutingPathCommunicationType</DEFINITION-REF>
-                          <VALUE>COMMUNICATION_INTERFACE</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRMulticoreRoutingPath</DEFINITION-REF>
-                          <VALUE>false</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                      </PARAMETER-VALUES>
-                      <REFERENCE-VALUES>
-                        <ECUC-REFERENCE-VALUE>
-                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRLockRef</DEFINITION-REF>
-                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/PduR/PduRRoutingTables/PduRLock_PduRExclusiveArea</VALUE-REF>
-                        </ECUC-REFERENCE-VALUE>
-                      </REFERENCE-VALUES>
-                      <SUB-CONTAINERS>
-                        <ECUC-CONTAINER-VALUE UUID="10bb20fb-93b2-35b9-adc8-8281d3bd913e">
-                          <SHORT-NAME>PduRSrcPdu_e44218bb</SHORT-NAME>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSourcePduHandleId</DEFINITION-REF>
-                              <VALUE>2</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSrcPduDirection</DEFINITION-REF>
-                              <VALUE>TRANSMIT</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                          <REFERENCE-VALUES>
-                            <ECUC-REFERENCE-VALUE>
-                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSrcPduRef</DEFINITION-REF>
-                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/EcuC/EcucPduCollection/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx</VALUE-REF>
-                            </ECUC-REFERENCE-VALUE>
-                            <ECUC-REFERENCE-VALUE>
-                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRSrcPdu/PduRSrcPduPduRBswModulesRef</DEFINITION-REF>
-                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/PduR/Com</VALUE-REF>
-                            </ECUC-REFERENCE-VALUE>
-                          </REFERENCE-VALUES>
-                        </ECUC-CONTAINER-VALUE>
-                        <ECUC-CONTAINER-VALUE UUID="2585fc3e-4166-3387-985d-d76ded1492ef">
-                          <SHORT-NAME>msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx</SHORT-NAME>
-                          <LONG-NAME>
-                            <L-4 L="FOR-ALL">msg_MyECU_Lamp_MxA2_oCAN00</L-4>
-                          </LONG-NAME>
-                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu</DEFINITION-REF>
-                          <PARAMETER-VALUES>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduHandleId</DEFINITION-REF>
-                              <VALUE>2</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduDirection</DEFINITION-REF>
-                              <VALUE>TRANSMIT</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduRoutingType</DEFINITION-REF>
-                              <VALUE>API_FORWARDING</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduDataProcessing</DEFINITION-REF>
-                              <VALUE>IMMEDIATE</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRPduLengthHandlingStrategy</DEFINITION-REF>
-                              <VALUE>IGNORE</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduCrossPartitionDestination</DEFINITION-REF>
-                              <VALUE>false</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                            <ECUC-TEXTUAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduDataProvision</DEFINITION-REF>
-                              <VALUE>PDUR_DIRECT</VALUE>
-                            </ECUC-TEXTUAL-PARAM-VALUE>
-                            <ECUC-NUMERICAL-PARAM-VALUE>
-                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRTransmissionConfirmation</DEFINITION-REF>
-                              <VALUE>true</VALUE>
-                            </ECUC-NUMERICAL-PARAM-VALUE>
-                          </PARAMETER-VALUES>
-                          <REFERENCE-VALUES>
-                            <ECUC-REFERENCE-VALUE>
-                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduRef</DEFINITION-REF>
-                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/EcuC/EcucPduCollection/msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx</VALUE-REF>
-                            </ECUC-REFERENCE-VALUE>
-                            <ECUC-REFERENCE-VALUE>
-                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/PduR/PduRRoutingTables/PduRRoutingTable/PduRRoutingPath/PduRDestPdu/PduRDestPduPduRBswModulesRef</DEFINITION-REF>
-                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/PduR/IpduM</VALUE-REF>
                             </ECUC-REFERENCE-VALUE>
                           </REFERENCE-VALUES>
                         </ECUC-CONTAINER-VALUE>
@@ -972,58 +572,6 @@
                 <ECUC-REFERENCE-VALUE>
                   <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/PduR/PduRBswModules/PduRBswModuleRef</DEFINITION-REF>
                   <VALUE-REF DEST="ECUC-MODULE-CONFIGURATION-VALUES">/ActiveEcuC/Com</VALUE-REF>
-                </ECUC-REFERENCE-VALUE>
-              </REFERENCE-VALUES>
-            </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="a42d809a-0234-4456-a510-8de383892b7a">
-              <SHORT-NAME>IpduM</SHORT-NAME>
-              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/PduR/PduRBswModules</DEFINITION-REF>
-              <PARAMETER-VALUES>
-                <ECUC-NUMERICAL-PARAM-VALUE>
-                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/PduR/PduRBswModules/PduRCancelReceive</DEFINITION-REF>
-                  <VALUE>false</VALUE>
-                </ECUC-NUMERICAL-PARAM-VALUE>
-                <ECUC-NUMERICAL-PARAM-VALUE>
-                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/PduR/PduRBswModules/PduRCancelTransmit</DEFINITION-REF>
-                  <VALUE>false</VALUE>
-                </ECUC-NUMERICAL-PARAM-VALUE>
-                <ECUC-NUMERICAL-PARAM-VALUE>
-                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/PduR/PduRBswModules/PduRChangeParameterRequestApi</DEFINITION-REF>
-                  <VALUE>false</VALUE>
-                </ECUC-NUMERICAL-PARAM-VALUE>
-                <ECUC-NUMERICAL-PARAM-VALUE>
-                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/PduR/PduRBswModules/PduRCommunicationInterface</DEFINITION-REF>
-                  <VALUE>true</VALUE>
-                </ECUC-NUMERICAL-PARAM-VALUE>
-                <ECUC-NUMERICAL-PARAM-VALUE>
-                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/PduR/PduRBswModules/PduRLowerModule</DEFINITION-REF>
-                  <VALUE>true</VALUE>
-                </ECUC-NUMERICAL-PARAM-VALUE>
-                <ECUC-NUMERICAL-PARAM-VALUE>
-                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/PduR/PduRBswModules/PduRTransportProtocol</DEFINITION-REF>
-                  <VALUE>false</VALUE>
-                </ECUC-NUMERICAL-PARAM-VALUE>
-                <ECUC-NUMERICAL-PARAM-VALUE>
-                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/PduR/PduRBswModules/PduRTriggertransmit</DEFINITION-REF>
-                  <VALUE>false</VALUE>
-                </ECUC-NUMERICAL-PARAM-VALUE>
-                <ECUC-NUMERICAL-PARAM-VALUE>
-                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/PduR/PduRBswModules/PduRTxConfirmation</DEFINITION-REF>
-                  <VALUE>true</VALUE>
-                </ECUC-NUMERICAL-PARAM-VALUE>
-                <ECUC-NUMERICAL-PARAM-VALUE>
-                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/PduR/PduRBswModules/PduRUpperModule</DEFINITION-REF>
-                  <VALUE>true</VALUE>
-                </ECUC-NUMERICAL-PARAM-VALUE>
-                <ECUC-NUMERICAL-PARAM-VALUE>
-                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/PduR/PduRBswModules/PduRUseTag</DEFINITION-REF>
-                  <VALUE>false</VALUE>
-                </ECUC-NUMERICAL-PARAM-VALUE>
-              </PARAMETER-VALUES>
-              <REFERENCE-VALUES>
-                <ECUC-REFERENCE-VALUE>
-                  <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/PduR/PduRBswModules/PduRBswModuleRef</DEFINITION-REF>
-                  <VALUE-REF DEST="ECUC-MODULE-CONFIGURATION-VALUES">/ActiveEcuC/IpduM</VALUE-REF>
                 </ECUC-REFERENCE-VALUE>
               </REFERENCE-VALUES>
             </ECUC-CONTAINER-VALUE>

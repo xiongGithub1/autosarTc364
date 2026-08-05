@@ -113,8 +113,8 @@ void MotorCdd_FocUpdateLatestAngleFromSensor(void)
 static uint8 MotorCdd_FocAngleSpiAllowedInFastLoop(uint8 motorMode)
 {
   /* ZeroCal / open-loop use forced angle or own SPI in StartApp ??avoid QSPI2 clash. */
-  if ((motorMode == (uint8)MOTOR_MODE_CALIBRATION) ||
-      (motorMode == (uint8)MOTOR_MODE_CALIBRATION_ERASE) ||
+  /* 标定模式现在依赖快速环读数（零点判定），必须允许；开环/擦除/保存跳过。 */
+  if ((motorMode == (uint8)MOTOR_MODE_CALIBRATION_ERASE) ||
       (motorMode == (uint8)MOTOR_MODE_CALIBRATION_SAVE) ||
       (motorMode == (uint8)MOTOR_MODE_OPEN_LOOP))
   {
@@ -129,6 +129,8 @@ static uint8 MotorCdd_FocAngleSpiAllowedInFastLoop(uint8 motorMode)
  */
 static void MotorCdd_FocServiceAngleSpi(void)
 {
+  uint8 motorMode = MotorCdd_CmdMirror.mode;
+
   if (MotorCdd_AngleSpiBootBlankLeft > 0U)
   {
     MotorCdd_AngleSpiBootBlankLeft--;
@@ -141,10 +143,17 @@ static void MotorCdd_FocServiceAngleSpi(void)
   }
 
   /* ZeroCal / open-loop use forced angle — skip 5012 SPI. */
-//  if (MotorCdd_FocAngleSpiAllowedInFastLoop(motorMode) == 0U)
-//  {
-//    return;
-//  }
+  /* 标定/开环使用强制角度：跳过每拍 SPI，避免与 1ms 标定读取争抢 QSPI2。 */
+  if (MotorCdd_FocAngleSpiAllowedInFastLoop(motorMode) == 0U)
+  {
+    return;
+  }
+
+  /* 1ms 标定正在写 ANG_BASE(ChangeAngleBasic) 时独占 QSPI2：本拍跳过读取。 */
+  if (MotorZeroCal_SpiBusy != 0U)
+  {
+    return;
+  }
 
 //  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_HIGH);
   if (Tle5012bd_Driver_ReadAngle(&Tle5012bd_Sensor) == E_OK)

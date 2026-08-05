@@ -49,7 +49,7 @@
 #include "MotorFoc_SpeedLoop.h"
 #include "MotorZeroCal.h"
 #include "MotorFoc_OpenLoop.h"
-#include "CDD/MotorFoc/MotorFoc_OpenLoopCan.h"
+
 #include "CDD/MotorFoc/MotorFoc_CurrentLoop.h"
 #include "CDD/MotorFoc/MotorCdd_Adc.h"
 #include "CDD/TLE9180/Tle9180_Driver.h"
@@ -109,7 +109,7 @@ FUNC(void, MotorControll_CODE) MotorControll_Init(void)
   MotorControll_MotorModeCmd = MOTOR_MODE_DEFAULT;
   MotorControll_PrevMotorMode = MOTOR_MODE_DEFAULT;
   MotorControll_CalVdcStableMs = 0U;
-  MotorFoc_OpenLoopCan_Init();
+
 
   (void)Rte_Write_Pp_MotorCtrlCmd_MotorMode((uint8)MOTOR_MODE_IDLE);
   (void)Rte_Write_Pp_MotorCurrentRef_Id_Ref(0.0F);
@@ -134,7 +134,8 @@ uint8 MotorControll_IsOutputEnabled(void)
 }
 
 /* 1 ms 电机主函数：模式判定 → 切换处理 → 参考计算 → 发布 → 输出门控。
-   由 MotorTask 的 1ms TimingEvent 调用（Rte_OsApplication_OsCore1.c）。 */void MotorControll_MainFunction(void)
+   由 MotorTask 的 1ms TimingEvent 调用（Rte_OsApplication_OsCore1.c）。 */
+void MotorControll_MainFunction(void)
 {
   MotorMode_Type motorMode;
 
@@ -171,7 +172,6 @@ uint8 MotorControll_IsOutputEnabled(void)
   (void)Rte_Write_Pp_MotorCurrentRef_Id_Ref(MotorControll_IdRefOut);
   (void)Rte_Write_Pp_MotorCurrentRef_Iq_Ref(MotorControll_IqRefOut);
 
-  MotorFoc_OpenLoopCan_MainFunction(motorMode);
   MotorControll_PrevMotorMode = motorMode;
   MotorControll_ApplyOutputGating(motorMode);
 }

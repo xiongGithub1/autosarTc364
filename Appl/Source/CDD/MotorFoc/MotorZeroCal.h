@@ -4,21 +4,26 @@
 #include "Std_Types.h"
 
 #define MOTORZEROCAL_STORAGE_MAGIC      (0xA5A4U)
-#define MOTORZEROCAL_ID_REF_A           (1.0F)
 /* 0.002 A per 10 kHz fast-loop tick: 1 A is reached in about 50 ms. */
 #define MOTORZEROCAL_ID_RAMP_STEP_A     (0.002F)
 #define MOTORZEROCAL_ID_REACHED_EPS_A   (0.02F)
 #define MOTORZEROCAL_ALIGN_ANGLE_DEG    (0.0F)
-#define MOTORZEROCAL_ANGLE_OK_LOW       (3.0F)
-#define MOTORZEROCAL_ANGLE_OK_HIGH      (8190.0F)
+/* 判定容差（Angle 现为电角度 v%8192，8192 计数 = 360° 电角度）：
+   ±1° 电角度 ≈ ±23 计数。此前沿用机械角时代的 ±3 计数（= ±0.13° 电角度），
+   对齐抖动/传感器噪声很容易超过导致 FAULT_ALIGN。 */
+#define MOTORZEROCAL_ANGLE_OK_LOW       (5.0F)
+#define MOTORZEROCAL_ANGLE_OK_HIGH      (8186.0F)
 /* Keep Id at target for 1.5 s before reading the encoder. */
 #define MOTORZEROCAL_DELAY_MS           (1500U)
 /* Settle after each ANG_BASE retry. */
-#define MOTORZEROCAL_RETRY_DELAY_MS     (200U)
+#define MOTORZEROCAL_RETRY_DELAY_MS     (300U)
 #define MOTORZEROCAL_ANG_BASE_APPLY_DELAY_MS (500U)
-#define MOTORZEROCAL_MAX_RETRY          (10U)
-/* Whole align→RAM procedure must finish within this (Flash is separate). */
-#define MOTORZEROCAL_TOTAL_TIMEOUT_MS   (8000U)
+/* 判定容差为 ±1° 电角度，转子抖动/噪声可能让单帧读数偶尔超差，
+   重试次数太少容易 FAULT_ALIGN。 */
+#define MOTORZEROCAL_MAX_RETRY          (30U)
+/* Whole align→RAM procedure must finish within this (Flash is separate).
+   1.5 s 首次对齐 + 29 次 × 0.3 s ≈ 10.2 s，留足余量。 */
+#define MOTORZEROCAL_TOTAL_TIMEOUT_MS   (20000U)
 
 #define MOTORZEROCAL_START_REJECT_NONE           (0U)
 #define MOTORZEROCAL_START_REJECT_VDC_LOW        (1U)
@@ -37,6 +42,9 @@
 #ifndef MOTORZEROCAL_SPI_ENABLE
 #define MOTORZEROCAL_SPI_ENABLE     (1U)
 #endif
+
+/* 1ms 标定写 ANG_BASE 期间置 1；10 kHz 快速环检测到后跳过该拍 SPI 读取。 */
+extern volatile uint8 MotorZeroCal_SpiBusy;
 
 typedef enum
 {

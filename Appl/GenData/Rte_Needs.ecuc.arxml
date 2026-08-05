@@ -287,20 +287,6 @@
                             </SUB-CONTAINERS>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                            <SHORT-NAME>IpduM</SHORT-NAME>
-                            <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance</DEFINITION-REF>
-                            <SUB-CONTAINERS>
-                                <ECUC-CONTAINER-VALUE>
-                                    <SHORT-NAME>IpduM_MainFunctionRxTimingEvent0</SHORT-NAME>
-                                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswEventToTaskMapping</DEFINITION-REF>
-                                </ECUC-CONTAINER-VALUE>
-                                <ECUC-CONTAINER-VALUE>
-                                    <SHORT-NAME>IpduM_MainFunctionTxTimingEvent0</SHORT-NAME>
-                                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswEventToTaskMapping</DEFINITION-REF>
-                                </ECUC-CONTAINER-VALUE>
-                            </SUB-CONTAINERS>
-                        </ECUC-CONTAINER-VALUE>
-                        <ECUC-CONTAINER-VALUE>
                             <SHORT-NAME>Irq</SHORT-NAME>
                             <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance</DEFINITION-REF>
                             <SUB-CONTAINERS>
@@ -368,6 +354,20 @@
                             <SUB-CONTAINERS>
                                 <ECUC-CONTAINER-VALUE>
                                     <SHORT-NAME>Spi_MainFunction_HandlingTimingEvent0</SHORT-NAME>
+                                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswEventToTaskMapping</DEFINITION-REF>
+                                </ECUC-CONTAINER-VALUE>
+                            </SUB-CONTAINERS>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                            <SHORT-NAME>Xcp</SHORT-NAME>
+                            <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance</DEFINITION-REF>
+                            <SUB-CONTAINERS>
+                                <ECUC-CONTAINER-VALUE>
+                                    <SHORT-NAME>CanXcp_MainFunctionTimingEvent0</SHORT-NAME>
+                                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswEventToTaskMapping</DEFINITION-REF>
+                                </ECUC-CONTAINER-VALUE>
+                                <ECUC-CONTAINER-VALUE>
+                                    <SHORT-NAME>Xcp_MainFunctionTimingEvent0</SHORT-NAME>
                                     <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswEventToTaskMapping</DEFINITION-REF>
                                 </ECUC-CONTAINER-VALUE>
                             </SUB-CONTAINERS>

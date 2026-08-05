@@ -434,6 +434,12 @@
           <BASE-TYPE-SIZE>16</BASE-TYPE-SIZE>
           <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
         </SW-BASE-TYPE>
+        <SW-BASE-TYPE UUID="A876402B-2296-460E-A837-578B88447A26">
+          <SHORT-NAME>uint8_8_none</SHORT-NAME>
+          <CATEGORY>FIXED_LENGTH</CATEGORY>
+          <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+          <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+        </SW-BASE-TYPE>
       </ELEMENTS>
       <AR-PACKAGES>
         <AR-PACKAGE UUID="7F6168FF-3305-4D05-82F7-37FE508C42BC">
@@ -1134,6 +1140,94 @@
             </DATA-CONSTR>
             <DATA-CONSTR UUID="ED9B5055-0500-4D97-BD58-77F89E3A293F">
               <SHORT-NAME>DC_MotorFoc_Vro_V</SHORT-NAME>
+              <DATA-CONSTR-RULES>
+                <DATA-CONSTR-RULE>
+                  <INTERNAL-CONSTRS>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-32768</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">32767</UPPER-LIMIT>
+                  </INTERNAL-CONSTRS>
+                </DATA-CONSTR-RULE>
+              </DATA-CONSTR-RULES>
+            </DATA-CONSTR>
+            <DATA-CONSTR UUID="668535AC-B967-4F79-85CF-DB6924CA6BE9">
+              <SHORT-NAME>DC_ElectricAngle</SHORT-NAME>
+              <DATA-CONSTR-RULES>
+                <DATA-CONSTR-RULE>
+                  <INTERNAL-CONSTRS>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-32768</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">32767</UPPER-LIMIT>
+                  </INTERNAL-CONSTRS>
+                </DATA-CONSTR-RULE>
+              </DATA-CONSTR-RULES>
+            </DATA-CONSTR>
+            <DATA-CONSTR UUID="94ED8511-CDFE-4BFB-B3BB-9E7412C44008">
+              <SHORT-NAME>DC_Id_Ref</SHORT-NAME>
+              <DATA-CONSTR-RULES>
+                <DATA-CONSTR-RULE>
+                  <INTERNAL-CONSTRS>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-32768</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">32767</UPPER-LIMIT>
+                  </INTERNAL-CONSTRS>
+                </DATA-CONSTR-RULE>
+              </DATA-CONSTR-RULES>
+            </DATA-CONSTR>
+            <DATA-CONSTR UUID="C80A0421-DA75-4751-B351-C6525FE63BAD">
+              <SHORT-NAME>DC_Iq_Ref</SHORT-NAME>
+              <DATA-CONSTR-RULES>
+                <DATA-CONSTR-RULE>
+                  <INTERNAL-CONSTRS>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-32768</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">32767</UPPER-LIMIT>
+                  </INTERNAL-CONSTRS>
+                </DATA-CONSTR-RULE>
+              </DATA-CONSTR-RULES>
+            </DATA-CONSTR>
+            <DATA-CONSTR UUID="F2EE76A1-6AEA-4650-BA06-C3C1A3EB6BE4">
+              <SHORT-NAME>DC_MotorMode</SHORT-NAME>
+              <DATA-CONSTR-RULES>
+                <DATA-CONSTR-RULE>
+                  <INTERNAL-CONSTRS>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">7</UPPER-LIMIT>
+                  </INTERNAL-CONSTRS>
+                </DATA-CONSTR-RULE>
+              </DATA-CONSTR-RULES>
+            </DATA-CONSTR>
+            <DATA-CONSTR UUID="3E1180F2-158D-4D89-BC8A-286695506128">
+              <SHORT-NAME>DC_Signal_XCP_Request_MyECU</SHORT-NAME>
+              <DATA-CONSTR-RULES>
+                <DATA-CONSTR-RULE>
+                  <INTERNAL-CONSTRS>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">18446744073709551615</UPPER-LIMIT>
+                  </INTERNAL-CONSTRS>
+                </DATA-CONSTR-RULE>
+              </DATA-CONSTR-RULES>
+            </DATA-CONSTR>
+            <DATA-CONSTR UUID="2E7AD87A-6CA8-435D-BCCC-6B1DBA25E385">
+              <SHORT-NAME>DC_Signal_XCP_Response_MyECU</SHORT-NAME>
+              <DATA-CONSTR-RULES>
+                <DATA-CONSTR-RULE>
+                  <INTERNAL-CONSTRS>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">18446744073709551615</UPPER-LIMIT>
+                  </INTERNAL-CONSTRS>
+                </DATA-CONSTR-RULE>
+              </DATA-CONSTR-RULES>
+            </DATA-CONSTR>
+            <DATA-CONSTR UUID="DB54792E-0523-4AF8-BEC9-84C7CDF912DE">
+              <SHORT-NAME>DC_tle9180_Ov_Fault</SHORT-NAME>
+              <DATA-CONSTR-RULES>
+                <DATA-CONSTR-RULE>
+                  <INTERNAL-CONSTRS>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                  </INTERNAL-CONSTRS>
+                </DATA-CONSTR-RULE>
+              </DATA-CONSTR-RULES>
+            </DATA-CONSTR>
+            <DATA-CONSTR UUID="FFA7CAC2-53AF-427F-AC22-330118E3E585">
+              <SHORT-NAME>DC_Vbus</SHORT-NAME>
               <DATA-CONSTR-RULES>
                 <DATA-CONSTR-RULE>
                   <INTERNAL-CONSTRS>
@@ -2139,6 +2233,218 @@
                 </COMPU-SCALES>
               </COMPU-INTERNAL-TO-PHYS>
             </COMPU-METHOD>
+            <COMPU-METHOD UUID="39AF119E-50C9-4C3D-BD56-B40BBCF26001">
+              <SHORT-NAME>CM_ElectricAngle</SHORT-NAME>
+              <CATEGORY>LINEAR</CATEGORY>
+              <UNIT-REF DEST="UNIT">/DataType/Unit/U_rad</UNIT-REF>
+              <COMPU-INTERNAL-TO-PHYS>
+                <COMPU-SCALES>
+                  <COMPU-SCALE>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-32768</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">32767</UPPER-LIMIT>
+                    <COMPU-RATIONAL-COEFFS>
+                      <COMPU-NUMERATOR>
+                        <V>0</V>
+                        <V>0.001</V>
+                      </COMPU-NUMERATOR>
+                      <COMPU-DENOMINATOR>
+                        <V>1</V>
+                      </COMPU-DENOMINATOR>
+                    </COMPU-RATIONAL-COEFFS>
+                  </COMPU-SCALE>
+                </COMPU-SCALES>
+              </COMPU-INTERNAL-TO-PHYS>
+            </COMPU-METHOD>
+            <COMPU-METHOD UUID="74D7635A-055A-4A96-AF47-5308099A372D">
+              <SHORT-NAME>CM_Id_Ref</SHORT-NAME>
+              <CATEGORY>LINEAR</CATEGORY>
+              <UNIT-REF DEST="UNIT">/DataType/Unit/U_A</UNIT-REF>
+              <COMPU-INTERNAL-TO-PHYS>
+                <COMPU-SCALES>
+                  <COMPU-SCALE>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-32768</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">32767</UPPER-LIMIT>
+                    <COMPU-RATIONAL-COEFFS>
+                      <COMPU-NUMERATOR>
+                        <V>0</V>
+                        <V>0.01</V>
+                      </COMPU-NUMERATOR>
+                      <COMPU-DENOMINATOR>
+                        <V>1</V>
+                      </COMPU-DENOMINATOR>
+                    </COMPU-RATIONAL-COEFFS>
+                  </COMPU-SCALE>
+                </COMPU-SCALES>
+              </COMPU-INTERNAL-TO-PHYS>
+            </COMPU-METHOD>
+            <COMPU-METHOD UUID="7F88C0CE-6527-4A72-A61D-3472750FF60D">
+              <SHORT-NAME>CM_Iq_Ref</SHORT-NAME>
+              <CATEGORY>LINEAR</CATEGORY>
+              <UNIT-REF DEST="UNIT">/DataType/Unit/U_A</UNIT-REF>
+              <COMPU-INTERNAL-TO-PHYS>
+                <COMPU-SCALES>
+                  <COMPU-SCALE>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-32768</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">32767</UPPER-LIMIT>
+                    <COMPU-RATIONAL-COEFFS>
+                      <COMPU-NUMERATOR>
+                        <V>0</V>
+                        <V>0.01</V>
+                      </COMPU-NUMERATOR>
+                      <COMPU-DENOMINATOR>
+                        <V>1</V>
+                      </COMPU-DENOMINATOR>
+                    </COMPU-RATIONAL-COEFFS>
+                  </COMPU-SCALE>
+                </COMPU-SCALES>
+              </COMPU-INTERNAL-TO-PHYS>
+            </COMPU-METHOD>
+            <COMPU-METHOD UUID="7F2A4CB1-6D0B-46FD-9C63-E9951F7576B3">
+              <SHORT-NAME>CM_MotorMode</SHORT-NAME>
+              <CATEGORY>TEXTTABLE</CATEGORY>
+              <COMPU-INTERNAL-TO-PHYS>
+                <COMPU-SCALES>
+                  <COMPU-SCALE>
+                    <DESC>
+                      <L-2 L="FOR-ALL">Idle</L-2>
+                    </DESC>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                    <COMPU-CONST>
+                      <VT>Cx00_Idle</VT>
+                    </COMPU-CONST>
+                  </COMPU-SCALE>
+                  <COMPU-SCALE>
+                    <DESC>
+                      <L-2 L="FOR-ALL">Stop</L-2>
+                    </DESC>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                    <COMPU-CONST>
+                      <VT>Cx01_Stop</VT>
+                    </COMPU-CONST>
+                  </COMPU-SCALE>
+                  <COMPU-SCALE>
+                    <DESC>
+                      <L-2 L="FOR-ALL">FocSpeed</L-2>
+                    </DESC>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">2</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                    <COMPU-CONST>
+                      <VT>Cx02_FocSpeed</VT>
+                    </COMPU-CONST>
+                  </COMPU-SCALE>
+                  <COMPU-SCALE>
+                    <DESC>
+                      <L-2 L="FOR-ALL">FocCurrent</L-2>
+                    </DESC>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">3</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                    <COMPU-CONST>
+                      <VT>Cx03_FocCurrent</VT>
+                    </COMPU-CONST>
+                  </COMPU-SCALE>
+                  <COMPU-SCALE>
+                    <DESC>
+                      <L-2 L="FOR-ALL">OpenLoop</L-2>
+                    </DESC>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">4</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                    <COMPU-CONST>
+                      <VT>Cx04_OpenLoop</VT>
+                    </COMPU-CONST>
+                  </COMPU-SCALE>
+                  <COMPU-SCALE>
+                    <DESC>
+                      <L-2 L="FOR-ALL">Calibration</L-2>
+                    </DESC>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">5</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">5</UPPER-LIMIT>
+                    <COMPU-CONST>
+                      <VT>Cx05_Calibration</VT>
+                    </COMPU-CONST>
+                  </COMPU-SCALE>
+                  <COMPU-SCALE>
+                    <DESC>
+                      <L-2 L="FOR-ALL">CalibrationErase</L-2>
+                    </DESC>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">6</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">6</UPPER-LIMIT>
+                    <COMPU-CONST>
+                      <VT>Cx06_CalibrationErase</VT>
+                    </COMPU-CONST>
+                  </COMPU-SCALE>
+                  <COMPU-SCALE>
+                    <DESC>
+                      <L-2 L="FOR-ALL">CalibrationSave</L-2>
+                    </DESC>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">7</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">7</UPPER-LIMIT>
+                    <COMPU-CONST>
+                      <VT>Cx07_CalibrationSave</VT>
+                    </COMPU-CONST>
+                  </COMPU-SCALE>
+                </COMPU-SCALES>
+              </COMPU-INTERNAL-TO-PHYS>
+            </COMPU-METHOD>
+            <COMPU-METHOD UUID="0995B80E-1747-4A6E-9754-DB0CADFFBAF6">
+              <SHORT-NAME>CM_Signal_XCP_Request_MyECU</SHORT-NAME>
+              <CATEGORY>IDENTICAL</CATEGORY>
+            </COMPU-METHOD>
+            <COMPU-METHOD UUID="13250DEA-5209-4DD0-BA5E-E7E2D3CD7869">
+              <SHORT-NAME>CM_Signal_XCP_Response_MyECU</SHORT-NAME>
+              <CATEGORY>IDENTICAL</CATEGORY>
+            </COMPU-METHOD>
+            <COMPU-METHOD UUID="1B66DD58-0254-4BC0-96F5-7CD34E3AE82A">
+              <SHORT-NAME>CM_tle9180_Ov_Fault</SHORT-NAME>
+              <CATEGORY>TEXTTABLE</CATEGORY>
+              <COMPU-INTERNAL-TO-PHYS>
+                <COMPU-SCALES>
+                  <COMPU-SCALE>
+                    <DESC>
+                      <L-2 L="FOR-ALL">NoFault</L-2>
+                    </DESC>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                    <COMPU-CONST>
+                      <VT>Cx0_NoFault</VT>
+                    </COMPU-CONST>
+                  </COMPU-SCALE>
+                  <COMPU-SCALE>
+                    <DESC>
+                      <L-2 L="FOR-ALL">OverVoltageFault</L-2>
+                    </DESC>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                    <COMPU-CONST>
+                      <VT>Cx1_OverVoltageFault</VT>
+                    </COMPU-CONST>
+                  </COMPU-SCALE>
+                </COMPU-SCALES>
+              </COMPU-INTERNAL-TO-PHYS>
+            </COMPU-METHOD>
+            <COMPU-METHOD UUID="C0F06C26-71A4-4C24-B440-1382FC87FC06">
+              <SHORT-NAME>CM_Vbus</SHORT-NAME>
+              <CATEGORY>LINEAR</CATEGORY>
+              <UNIT-REF DEST="UNIT">/DataType/Unit/U_V</UNIT-REF>
+              <COMPU-INTERNAL-TO-PHYS>
+                <COMPU-SCALES>
+                  <COMPU-SCALE>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-32768</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">32767</UPPER-LIMIT>
+                    <COMPU-RATIONAL-COEFFS>
+                      <COMPU-NUMERATOR>
+                        <V>0</V>
+                        <V>0.1</V>
+                      </COMPU-NUMERATOR>
+                      <COMPU-DENOMINATOR>
+                        <V>1</V>
+                      </COMPU-DENOMINATOR>
+                    </COMPU-RATIONAL-COEFFS>
+                  </COMPU-SCALE>
+                </COMPU-SCALES>
+              </COMPU-INTERNAL-TO-PHYS>
+            </COMPU-METHOD>
           </ELEMENTS>
         </AR-PACKAGE>
         <AR-PACKAGE UUID="33634748-70E5-4352-A145-FB5D4C1A10D7">
@@ -2147,6 +2453,8 @@
             <UNIT UUID="1EBDFA23-9850-4E19-AA4F-CB0B588CF620">
               <SHORT-NAME>U_A</SHORT-NAME>
               <DISPLAY-NAME>A</DISPLAY-NAME>
+              <FACTOR-SI-TO-UNIT>1</FACTOR-SI-TO-UNIT>
+              <OFFSET-SI-TO-UNIT>0</OFFSET-SI-TO-UNIT>
             </UNIT>
             <UNIT UUID="E3F9B30C-F8A6-461C-94FF-36F6036430F5">
               <SHORT-NAME>U_count</SHORT-NAME>
@@ -2155,6 +2463,8 @@
             <UNIT UUID="44B62C80-2EEE-4CA0-B2C5-9B3C9C3CD1EA">
               <SHORT-NAME>U_rad</SHORT-NAME>
               <DISPLAY-NAME>rad</DISPLAY-NAME>
+              <FACTOR-SI-TO-UNIT>1</FACTOR-SI-TO-UNIT>
+              <OFFSET-SI-TO-UNIT>0</OFFSET-SI-TO-UNIT>
             </UNIT>
             <UNIT UUID="FB4081E7-72F1-42E4-AA78-9C76440EA36E">
               <SHORT-NAME>U_rpm</SHORT-NAME>
@@ -2171,6 +2481,8 @@
             <UNIT UUID="63F98A86-C139-4543-9B9A-C6A31E0F3106">
               <SHORT-NAME>U_V</SHORT-NAME>
               <DISPLAY-NAME>V</DISPLAY-NAME>
+              <FACTOR-SI-TO-UNIT>1</FACTOR-SI-TO-UNIT>
+              <OFFSET-SI-TO-UNIT>0</OFFSET-SI-TO-UNIT>
             </UNIT>
           </ELEMENTS>
         </AR-PACKAGE>
@@ -2276,7 +2588,7 @@
           <SW-DATA-DEF-PROPS>
             <SW-DATA-DEF-PROPS-VARIANTS>
               <SW-DATA-DEF-PROPS-CONDITIONAL>
-                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
               </SW-DATA-DEF-PROPS-CONDITIONAL>
             </SW-DATA-DEF-PROPS-VARIANTS>
           </SW-DATA-DEF-PROPS>

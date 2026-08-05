@@ -884,30 +884,6 @@ BSW364\Com\Implementation\Com_Buffers.o :	"E:\workFiles\TC367\TC367\workspace\la
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
 BSW364\Com\Implementation\Com_Buffers.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
-BSW364\Com\Implementation\Com_Buffers.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
-"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
-BSW364\Com\Implementation\Com_Buffers.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
-"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
-BSW364\Com\Implementation\Com_Buffers.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
-BSW364\Com\Implementation\Com_Buffers.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
-BSW364\Com\Implementation\Com_Buffers.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
-"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
-BSW364\Com\Implementation\Com_Buffers.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
-BSW364\Com\Implementation\Com_Buffers.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
-"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
-BSW364\Com\Implementation\Com_Buffers.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
-"E:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
-BSW364\Com\Implementation\Com_Buffers.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
-BSW364\Com\Implementation\Com_Buffers.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
-BSW364\Com\Implementation\Com_Buffers.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
-"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
-BSW364\Com\Implementation\Com_Buffers.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
-"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 BSW364\Com\Implementation\Com_Buffers.o :	..\BSW364\Com\Implementation\Com_RxProcessing.h
 ..\BSW364\Com\Implementation\Com_RxProcessing.h :
 BSW364\Com\Implementation\Com_Buffers.o :	..\BSW364\Com\Implementation\Com.h

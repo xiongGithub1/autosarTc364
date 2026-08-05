@@ -266,8 +266,6 @@
  *  SchM_EnterHook_Fls_17_Dmu_UserContentCount_Start
  *  SchM_EnterHook_Fls_17_Dmu_Write_Return
  *  SchM_EnterHook_Fls_17_Dmu_Write_Start
- *  SchM_EnterHook_IpduM_IPDUM_EXCLUSIVE_AREA_0_Return
- *  SchM_EnterHook_IpduM_IPDUM_EXCLUSIVE_AREA_0_Start
  *  SchM_EnterHook_McalLib_CpuEndInit_Return
  *  SchM_EnterHook_McalLib_CpuEndInit_Start
  *  SchM_EnterHook_McalLib_PeripheralEndInit_Return
@@ -320,6 +318,22 @@
  *  SchM_EnterHook_Spi_Queue_Update_Start
  *  SchM_EnterHook_Spi_SyncLock_Return
  *  SchM_EnterHook_Spi_SyncLock_Start
+ *  SchM_EnterHook_Xcp_CANXCP_EXCLUSIVE_AREA_0_Return
+ *  SchM_EnterHook_Xcp_CANXCP_EXCLUSIVE_AREA_0_Start
+ *  SchM_EnterHook_Xcp_FRXCP_EXCLUSIVE_AREA_0_Return
+ *  SchM_EnterHook_Xcp_FRXCP_EXCLUSIVE_AREA_0_Start
+ *  SchM_EnterHook_Xcp_FRXCP_EXCLUSIVE_AREA_1_Return
+ *  SchM_EnterHook_Xcp_FRXCP_EXCLUSIVE_AREA_1_Start
+ *  SchM_EnterHook_Xcp_FRXCP_EXCLUSIVE_AREA_2_Return
+ *  SchM_EnterHook_Xcp_FRXCP_EXCLUSIVE_AREA_2_Start
+ *  SchM_EnterHook_Xcp_TCPIPXCP_EXCLUSIVE_AREA_0_Return
+ *  SchM_EnterHook_Xcp_TCPIPXCP_EXCLUSIVE_AREA_0_Start
+ *  SchM_EnterHook_Xcp_XCP_EXCLUSIVE_AREA_0_Return
+ *  SchM_EnterHook_Xcp_XCP_EXCLUSIVE_AREA_0_Start
+ *  SchM_EnterHook_Xcp_XCP_EXCLUSIVE_AREA_1_Return
+ *  SchM_EnterHook_Xcp_XCP_EXCLUSIVE_AREA_1_Start
+ *  SchM_EnterHook_Xcp_XCP_EXCLUSIVE_AREA_2_Return
+ *  SchM_EnterHook_Xcp_XCP_EXCLUSIVE_AREA_2_Start
  *  SchM_ExitHook_Adc_KernelData_Return
  *  SchM_ExitHook_Adc_KernelData_Start
  *  SchM_ExitHook_Adc_SrcRegAccess_Return
@@ -434,8 +448,6 @@
  *  SchM_ExitHook_Fls_17_Dmu_UserContentCount_Start
  *  SchM_ExitHook_Fls_17_Dmu_Write_Return
  *  SchM_ExitHook_Fls_17_Dmu_Write_Start
- *  SchM_ExitHook_IpduM_IPDUM_EXCLUSIVE_AREA_0_Return
- *  SchM_ExitHook_IpduM_IPDUM_EXCLUSIVE_AREA_0_Start
  *  SchM_ExitHook_McalLib_CpuEndInit_Return
  *  SchM_ExitHook_McalLib_CpuEndInit_Start
  *  SchM_ExitHook_McalLib_PeripheralEndInit_Return
@@ -488,6 +500,22 @@
  *  SchM_ExitHook_Spi_Queue_Update_Start
  *  SchM_ExitHook_Spi_SyncLock_Return
  *  SchM_ExitHook_Spi_SyncLock_Start
+ *  SchM_ExitHook_Xcp_CANXCP_EXCLUSIVE_AREA_0_Return
+ *  SchM_ExitHook_Xcp_CANXCP_EXCLUSIVE_AREA_0_Start
+ *  SchM_ExitHook_Xcp_FRXCP_EXCLUSIVE_AREA_0_Return
+ *  SchM_ExitHook_Xcp_FRXCP_EXCLUSIVE_AREA_0_Start
+ *  SchM_ExitHook_Xcp_FRXCP_EXCLUSIVE_AREA_1_Return
+ *  SchM_ExitHook_Xcp_FRXCP_EXCLUSIVE_AREA_1_Start
+ *  SchM_ExitHook_Xcp_FRXCP_EXCLUSIVE_AREA_2_Return
+ *  SchM_ExitHook_Xcp_FRXCP_EXCLUSIVE_AREA_2_Start
+ *  SchM_ExitHook_Xcp_TCPIPXCP_EXCLUSIVE_AREA_0_Return
+ *  SchM_ExitHook_Xcp_TCPIPXCP_EXCLUSIVE_AREA_0_Start
+ *  SchM_ExitHook_Xcp_XCP_EXCLUSIVE_AREA_0_Return
+ *  SchM_ExitHook_Xcp_XCP_EXCLUSIVE_AREA_0_Start
+ *  SchM_ExitHook_Xcp_XCP_EXCLUSIVE_AREA_1_Return
+ *  SchM_ExitHook_Xcp_XCP_EXCLUSIVE_AREA_1_Start
+ *  SchM_ExitHook_Xcp_XCP_EXCLUSIVE_AREA_2_Return
+ *  SchM_ExitHook_Xcp_XCP_EXCLUSIVE_AREA_2_Start
  *  SchM_Schedulable_BswM_BswM_MainFunction_Return
  *  SchM_Schedulable_BswM_BswM_MainFunction_Start
  *  SchM_Schedulable_CanSM_CanSM_MainFunction_Return
@@ -514,16 +542,16 @@
  *  SchM_Schedulable_Fee_Fee_MainFunction_Start
  *  SchM_Schedulable_Fls_17_Dmu_Fls_17_Dmu_MainFunction_Return
  *  SchM_Schedulable_Fls_17_Dmu_Fls_17_Dmu_MainFunction_Start
- *  SchM_Schedulable_IpduM_IpduM_MainFunctionRx_Return
- *  SchM_Schedulable_IpduM_IpduM_MainFunctionRx_Start
- *  SchM_Schedulable_IpduM_IpduM_MainFunctionTx_Return
- *  SchM_Schedulable_IpduM_IpduM_MainFunctionTx_Start
  *  SchM_Schedulable_NvM_NvM_MainFunction_Return
  *  SchM_Schedulable_NvM_NvM_MainFunction_Start
  *  SchM_Schedulable_Rte_Rte_ComSendSignalProxyPeriodic_Return
  *  SchM_Schedulable_Rte_Rte_ComSendSignalProxyPeriodic_Start
  *  SchM_Schedulable_Spi_Spi_MainFunction_Handling_Return
  *  SchM_Schedulable_Spi_Spi_MainFunction_Handling_Start
+ *  SchM_Schedulable_Xcp_CanXcp_MainFunction_Return
+ *  SchM_Schedulable_Xcp_CanXcp_MainFunction_Start
+ *  SchM_Schedulable_Xcp_Xcp_MainFunction_Return
+ *  SchM_Schedulable_Xcp_Xcp_MainFunction_Start
  *
  *********************************************************************************************************************/
 

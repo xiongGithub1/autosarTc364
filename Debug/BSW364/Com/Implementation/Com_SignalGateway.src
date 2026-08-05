@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
-	.compiler_invocation	"ctc -f cc20232a --dep-file=BSW364\\Com\\Implementation\\.Com_SignalGateway.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -DBRS_COMP_TASKING -DBRS_PLATFORM_AURIX -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Include -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=BSW364\\Com\\Implementation\\Com_SignalGateway.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW364\\Com\\Implementation\\Com_SignalGateway.src ..\\BSW364\\Com\\Implementation\\Com_SignalGateway.c"
+	.compiler_invocation	"ctc -f cc18448a --dep-file=BSW364\\Com\\Implementation\\.Com_SignalGateway.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -DBRS_COMP_TASKING -DBRS_PLATFORM_AURIX -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanXcp\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Xcp -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Xcp\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Include -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=BSW364\\Com\\Implementation\\Com_SignalGateway.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o BSW364\\Com\\Implementation\\Com_SignalGateway.src ..\\BSW364\\Com\\Implementation\\Com_SignalGateway.c"
 	.compiler_name		"ctc"
 	;source	'..\\BSW364\\Com\\Implementation\\Com_SignalGateway.c'
 
@@ -10,7 +10,7 @@ $TC162
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L3:
-	.word	16661
+	.word	15791
 	.half	3
 	.word	.L4
 	.byte	4
@@ -95,238 +95,226 @@ $TC162
 	.byte	'TpDataStateType',0,5,226,1,3
 	.word	664
 	.byte	4
-	.byte	'Com_IPduGroupInfoIterType',0,6,134,23,21
+	.byte	'Com_IPduGroupInfoIterType',0,6,249,22,21
 	.word	185
 	.byte	4
-	.byte	'Com_RxPduInfoIterType',0,6,173,23,21
+	.byte	'Com_RxPduInfoIterType',0,6,160,23,21
 	.word	185
 	.byte	4
-	.byte	'Com_TxModeInfoIterType',0,6,206,23,21
+	.byte	'Com_TxModeInfoIterType',0,6,193,23,21
 	.word	185
 	.byte	4
-	.byte	'Com_TxPduInfoIterType',0,6,212,23,22
+	.byte	'Com_TxPduInfoIterType',0,6,199,23,22
 	.word	232
 	.byte	4
-	.byte	'Com_ConstValueUInt8Type',0,6,147,24,15
+	.byte	'Com_ConstValueUInt8Type',0,6,134,24,15
 	.word	185
 	.byte	4
-	.byte	'Com_CurrentTxModeType',0,6,150,24,17
+	.byte	'Com_CurrentTxModeType',0,6,137,24,17
 	.word	185
 	.byte	4
-	.byte	'Com_CycleTimeCntType',0,6,153,24,15
+	.byte	'Com_CycleTimeCntType',0,6,140,24,15
 	.word	185
 	.byte	4
-	.byte	'Com_CyclicSendRequestType',0,6,156,24,17
+	.byte	'Com_CyclicSendRequestType',0,6,143,24,17
 	.word	185
 	.byte	4
-	.byte	'Com_HandleRxPduDeferredType',0,6,159,24,23
+	.byte	'Com_HandleRxPduDeferredType',0,6,146,24,23
 	.word	185
 	.byte	4
-	.byte	'Com_IPduGroupInfoToSubIPduGroupsIndStartIdxOfIPduGroupInfoType',0,6,165,24,15
+	.byte	'Com_IPduGroupInfoToSubIPduGroupsIndStartIdxOfIPduGroupInfoType',0,6,152,24,15
 	.word	185
 	.byte	4
-	.byte	'Com_PartitionsRxStructIdxOfIPduGroupInfoType',0,6,171,24,15
+	.byte	'Com_PartitionsRxStructIdxOfIPduGroupInfoType',0,6,158,24,15
 	.word	185
 	.byte	4
-	.byte	'Com_PartitionsTxStructIdxOfIPduGroupInfoType',0,6,177,24,15
+	.byte	'Com_PartitionsTxStructIdxOfIPduGroupInfoType',0,6,164,24,15
 	.word	185
 	.byte	4
-	.byte	'Com_RxPduInfoIndEndIdxOfIPduGroupInfoType',0,6,183,24,15
+	.byte	'Com_RxPduInfoIndEndIdxOfIPduGroupInfoType',0,6,170,24,15
 	.word	185
 	.byte	4
-	.byte	'Com_RxPduInfoIndStartIdxOfIPduGroupInfoType',0,6,186,24,15
+	.byte	'Com_RxPduInfoIndStartIdxOfIPduGroupInfoType',0,6,173,24,15
 	.word	185
 	.byte	4
-	.byte	'Com_TxPduInfoIndEndIdxOfIPduGroupInfoType',0,6,192,24,15
+	.byte	'Com_TxPduInfoIndEndIdxOfIPduGroupInfoType',0,6,179,24,15
 	.word	185
 	.byte	4
-	.byte	'Com_TxPduInfoIndStartIdxOfIPduGroupInfoType',0,6,195,24,15
+	.byte	'Com_TxPduInfoIndStartIdxOfIPduGroupInfoType',0,6,182,24,15
 	.word	185
 	.byte	4
-	.byte	'Com_IPduGroupInfoOfRxPduInfoIndType',0,6,201,24,15
+	.byte	'Com_IPduGroupInfoOfRxPduInfoIndType',0,6,188,24,15
 	.word	185
 	.byte	4
-	.byte	'Com_IPduGroupInfoOfTxPduInfoIndType',0,6,204,24,15
+	.byte	'Com_IPduGroupInfoOfTxPduInfoIndType',0,6,191,24,15
 	.word	185
 	.byte	4
-	.byte	'Com_IPduGroupInfoToSubIPduGroupsIndType',0,6,207,24,15
+	.byte	'Com_IPduGroupInfoToSubIPduGroupsIndType',0,6,194,24,15
 	.word	185
 	.byte	4
-	.byte	'Com_IPduGroupStateType',0,6,210,24,15
+	.byte	'Com_IPduGroupStateType',0,6,197,24,15
 	.word	185
 	.byte	4
-	.byte	'Com_InitializedType',0,6,213,24,17
+	.byte	'Com_InitializedType',0,6,200,24,17
 	.word	185
 	.byte	4
-	.byte	'Com_RxPduInfoOfMainFunctionRxIndStartIdxOfMainFunctionRxStructType',0,6,222,24,15
+	.byte	'Com_RxPduInfoOfMainFunctionRxIndStartIdxOfMainFunctionRxStructType',0,6,209,24,15
 	.word	185
 	.byte	4
-	.byte	'Com_TxCyclicPduOfMainFunctionTxIndStartIdxOfMainFunctionTxStructType',0,6,231,24,15
+	.byte	'Com_TxCyclicPduOfMainFunctionTxIndStartIdxOfMainFunctionTxStructType',0,6,218,24,15
 	.word	185
 	.byte	4
-	.byte	'Com_TxPduInfoOfMainFunctionTxIndStartIdxOfMainFunctionTxStructType',0,6,240,24,15
+	.byte	'Com_TxPduInfoOfMainFunctionTxIndStartIdxOfMainFunctionTxStructType',0,6,227,24,15
 	.word	185
 	.byte	4
-	.byte	'Com_BufferIdxOfRxAccessInfoType',0,6,139,25,15
+	.byte	'Com_BufferIdxOfRxAccessInfoType',0,6,254,24,15
 	.word	185
 	.byte	4
-	.byte	'Com_BufferOfRxAccessInfoType',0,6,142,25,15
+	.byte	'Com_BufferOfRxAccessInfoType',0,6,129,25,15
 	.word	185
 	.byte	4
-	.byte	'Com_DynSignalOfRxAccessInfoType',0,6,157,25,17
+	.byte	'Com_DynSignalOfRxAccessInfoType',0,6,144,25,17
 	.word	185
 	.byte	4
-	.byte	'Com_InitValueIdxOfRxAccessInfoType',0,6,160,25,15
+	.byte	'Com_InitValueIdxOfRxAccessInfoType',0,6,147,25,15
 	.word	185
 	.byte	4
-	.byte	'Com_SignalLengthInByteOfRxAccessInfoType',0,6,172,25,15
+	.byte	'Com_SignalLengthInByteOfRxAccessInfoType',0,6,159,25,15
 	.word	185
 	.byte	4
-	.byte	'Com_RxAccessInfoIndType',0,6,178,25,15
+	.byte	'Com_RxAccessInfoIndType',0,6,165,25,15
 	.word	185
 	.byte	4
-	.byte	'Com_RxDefPduBufferType',0,6,181,25,15
+	.byte	'Com_RxDefPduBufferType',0,6,168,25,15
 	.word	185
 	.byte	4
-	.byte	'Com_RxIPduGroupISRLockCounterType',0,6,184,25,16
+	.byte	'Com_RxIPduGroupISRLockCounterType',0,6,171,25,16
 	.word	232
 	.byte	4
-	.byte	'Com_RxMainFunctionProcessingISRLockCounterType',0,6,190,25,16
+	.byte	'Com_RxMainFunctionProcessingISRLockCounterType',0,6,177,25,16
 	.word	232
 	.byte	4
-	.byte	'Com_RxPduGrpActiveType',0,6,196,25,17
+	.byte	'Com_RxPduGrpActiveType',0,6,183,25,17
 	.word	185
 	.byte	4
-	.byte	'Com_HandleRxPduDeferredIdxOfRxPduInfoType',0,6,199,25,15
+	.byte	'Com_HandleRxPduDeferredIdxOfRxPduInfoType',0,6,186,25,15
 	.word	185
 	.byte	4
-	.byte	'Com_IPduGroupInfoOfRxPduInfoIndStartIdxOfRxPduInfoType',0,6,208,25,15
+	.byte	'Com_IPduGroupInfoOfRxPduInfoIndStartIdxOfRxPduInfoType',0,6,195,25,15
 	.word	185
 	.byte	4
-	.byte	'Com_MainFunctionRxStructIdxOfRxPduInfoType',0,6,214,25,15
+	.byte	'Com_MainFunctionRxStructIdxOfRxPduInfoType',0,6,201,25,15
 	.word	185
 	.byte	4
-	.byte	'Com_RxAccessInfoIndStartIdxOfRxPduInfoType',0,6,226,25,15
+	.byte	'Com_RxAccessInfoIndStartIdxOfRxPduInfoType',0,6,213,25,15
 	.word	185
 	.byte	4
-	.byte	'Com_RxDefPduBufferLengthOfRxPduInfoType',0,6,235,25,15
+	.byte	'Com_RxDefPduBufferLengthOfRxPduInfoType',0,6,222,25,15
 	.word	185
 	.byte	4
-	.byte	'Com_RxSigInfoStartIdxOfRxPduInfoType',0,6,247,25,15
+	.byte	'Com_RxSigInfoStartIdxOfRxPduInfoType',0,6,234,25,15
 	.word	185
 	.byte	4
-	.byte	'Com_RxPduInfoIndType',0,6,131,26,15
+	.byte	'Com_RxPduInfoIndType',0,6,246,25,15
 	.word	185
 	.byte	4
-	.byte	'Com_RxPduInfoOfMainFunctionRxIndType',0,6,134,26,15
+	.byte	'Com_RxPduInfoOfMainFunctionRxIndType',0,6,249,25,15
 	.word	185
 	.byte	4
-	.byte	'Com_RxSigBufferUInt8Type',0,6,137,26,15
+	.byte	'Com_RxSigBufferUInt8Type',0,6,252,25,15
 	.word	185
 	.byte	4
-	.byte	'Com_ValidDlcOfRxSigInfoType',0,6,146,26,15
+	.byte	'Com_ValidDlcOfRxSigInfoType',0,6,133,26,15
 	.word	185
 	.byte	4
-	.byte	'Com_TransmitRequestType',0,6,149,26,17
+	.byte	'Com_TransmitRequestType',0,6,136,26,17
 	.word	185
 	.byte	4
-	.byte	'Com_TxSigInfoIdxOfTxAccessInfoType',0,6,152,26,15
+	.byte	'Com_TxSigInfoIdxOfTxAccessInfoType',0,6,139,26,15
 	.word	185
 	.byte	4
-	.byte	'Com_TxBufferType',0,6,158,26,15
+	.byte	'Com_TxBufferType',0,6,145,26,15
 	.word	185
 	.byte	4
-	.byte	'Com_TxPduInfoIdxOfTxCyclicPduType',0,6,161,26,15
+	.byte	'Com_TxCyclicPduOfMainFunctionTxIndType',0,6,151,26,15
 	.word	185
 	.byte	4
-	.byte	'Com_TxCyclicPduOfMainFunctionTxIndType',0,6,164,26,15
-	.word	185
-	.byte	4
-	.byte	'Com_TxIPduGroupISRLockCounterType',0,6,167,26,16
+	.byte	'Com_TxIPduGroupISRLockCounterType',0,6,154,26,16
 	.word	232
 	.byte	4
-	.byte	'Com_TimePeriodOfTxModeFalseType',0,6,176,26,15
+	.byte	'Com_PeriodicOfTxModeFalseType',0,6,160,26,17
 	.word	185
 	.byte	4
-	.byte	'Com_InitModeOfTxModeInfoType',0,6,179,26,17
+	.byte	'Com_TimePeriodOfTxModeFalseType',0,6,163,26,15
 	.word	185
 	.byte	4
-	.byte	'Com_TxModeFalseIdxOfTxModeInfoType',0,6,182,26,15
+	.byte	'Com_InitModeOfTxModeInfoType',0,6,166,26,17
 	.word	185
 	.byte	4
-	.byte	'Com_PeriodicOfTxModeTrueType',0,6,191,26,17
+	.byte	'Com_PeriodicOfTxModeTrueType',0,6,175,26,17
 	.word	185
 	.byte	4
-	.byte	'Com_TimeOffsetOfTxModeTrueType',0,6,194,26,15
+	.byte	'Com_TimePeriodOfTxModeTrueType',0,6,178,26,15
 	.word	185
 	.byte	4
-	.byte	'Com_TimePeriodOfTxModeTrueType',0,6,197,26,15
+	.byte	'Com_TxPduGrpActiveType',0,6,181,26,17
 	.word	185
 	.byte	4
-	.byte	'Com_TxPduGrpActiveType',0,6,200,26,17
+	.byte	'Com_IPduGroupInfoOfTxPduInfoIndStartIdxOfTxPduInfoType',0,6,190,26,15
 	.word	185
 	.byte	4
-	.byte	'Com_ExternalIdOfTxPduInfoType',0,6,203,26,15
+	.byte	'Com_PartitionsTxStructIdxOfTxPduInfoType',0,6,199,26,15
 	.word	185
 	.byte	4
-	.byte	'Com_IPduGroupInfoOfTxPduInfoIndStartIdxOfTxPduInfoType',0,6,209,26,15
+	.byte	'Com_TxBufferLengthOfTxPduInfoType',0,6,208,26,15
 	.word	185
 	.byte	4
-	.byte	'Com_PartitionsTxStructIdxOfTxPduInfoType',0,6,218,26,15
+	.byte	'Com_TxPduInitValueStartIdxOfTxPduInfoType',0,6,223,26,15
 	.word	185
 	.byte	4
-	.byte	'Com_TxBufferLengthOfTxPduInfoType',0,6,227,26,15
+	.byte	'Com_TxPduInfoIndType',0,6,232,26,15
 	.word	185
 	.byte	4
-	.byte	'Com_TxPduInitValueEndIdxOfTxPduInfoType',0,6,239,26,15
+	.byte	'Com_TxPduInfoOfMainFunctionTxIndType',0,6,235,26,15
 	.word	185
 	.byte	4
-	.byte	'Com_TxPduInitValueStartIdxOfTxPduInfoType',0,6,242,26,15
+	.byte	'Com_TxPduInitValueType',0,6,238,26,15
 	.word	185
 	.byte	4
-	.byte	'Com_TxPduInfoIndType',0,6,251,26,15
-	.word	185
-	.byte	4
-	.byte	'Com_TxPduInfoOfMainFunctionTxIndType',0,6,254,26,15
-	.word	185
-	.byte	4
-	.byte	'Com_TxPduInitValueType',0,6,129,27,15
-	.word	185
-	.byte	4
-	.byte	'Com_TxProcessingISRLockCounterType',0,6,132,27,16
+	.byte	'Com_TxProcessingISRLockCounterType',0,6,241,26,16
 	.word	232
 	.byte	4
-	.byte	'Com_TxSduLengthType',0,6,138,27,23
+	.byte	'Com_TxSduLengthType',0,6,247,26,23
 	.word	185
 	.byte	4
-	.byte	'Com_ApplTypeOfTxSigInfoType',0,6,141,27,15
+	.byte	'Com_ApplTypeOfTxSigInfoType',0,6,250,26,15
 	.word	185
 	.byte	4
-	.byte	'Com_BitLengthOfTxSigInfoType',0,6,144,27,15
+	.byte	'Com_BitLengthOfTxSigInfoType',0,6,253,26,15
 	.word	185
 	.byte	4
-	.byte	'Com_BitPositionOfTxSigInfoType',0,6,147,27,15
+	.byte	'Com_BitPositionOfTxSigInfoType',0,6,128,27,15
 	.word	185
 	.byte	4
-	.byte	'Com_ByteLengthOfTxSigInfoType',0,6,153,27,15
+	.byte	'Com_ByteLengthOfTxSigInfoType',0,6,134,27,15
 	.word	185
 	.byte	4
-	.byte	'Com_DynSignalOfTxSigInfoType',0,6,159,27,17
+	.byte	'Com_DynSignalOfTxSigInfoType',0,6,140,27,17
 	.word	185
 	.byte	4
-	.byte	'Com_StartByteInPduPositionOfTxSigInfoType',0,6,162,27,15
+	.byte	'Com_StartByteInPduPositionOfTxSigInfoType',0,6,143,27,15
 	.word	185
 	.byte	4
-	.byte	'Com_TxBufferEndIdxOfTxSigInfoType',0,6,171,27,15
+	.byte	'Com_TxBufferEndIdxOfTxSigInfoType',0,6,149,27,15
 	.word	185
 	.byte	4
-	.byte	'Com_TxBufferStartIdxOfTxSigInfoType',0,6,177,27,15
+	.byte	'Com_TxBufferStartIdxOfTxSigInfoType',0,6,155,27,15
 	.word	185
 	.byte	4
-	.byte	'Com_TxPduInfoIdxOfTxSigInfoType',0,6,183,27,15
+	.byte	'Com_TxPduInfoIdxOfTxSigInfoType',0,6,161,27,15
 	.word	185
 	.byte	10
-	.byte	'sCom_IPduGroupInfoType',0,6,199,27,16,8,7
+	.byte	'sCom_IPduGroupInfoType',0,6,177,27,16,8,7
 	.byte	'IPduGroupInfoToSubIPduGroupsIndStartIdxOfIPduGroupInfo',0
 	.word	185
 	.byte	1,2,35,0,7
@@ -348,41 +336,41 @@ $TC162
 	.byte	'TxPduInfoIndStartIdxOfIPduGroupInfo',0
 	.word	185
 	.byte	1,2,35,6,0,4
-	.byte	'Com_IPduGroupInfoType',0,6,208,27,3
-	.word	4085
+	.byte	'Com_IPduGroupInfoType',0,6,186,27,3
+	.word	3909
 	.byte	10
-	.byte	'sCom_MainFunctionRxStructType',0,6,211,27,16,1,7
+	.byte	'sCom_MainFunctionRxStructType',0,6,189,27,16,1,7
 	.byte	'RxPduInfoOfMainFunctionRxIndStartIdxOfMainFunctionRxStruct',0
 	.word	185
 	.byte	1,2,35,0,0,4
-	.byte	'Com_MainFunctionRxStructType',0,6,214,27,3
-	.word	4478
+	.byte	'Com_MainFunctionRxStructType',0,6,192,27,3
+	.word	4302
 	.byte	10
-	.byte	'sCom_MainFunctionTxStructType',0,6,217,27,16,2,7
+	.byte	'sCom_MainFunctionTxStructType',0,6,195,27,16,2,7
 	.byte	'TxCyclicPduOfMainFunctionTxIndStartIdxOfMainFunctionTxStruct',0
 	.word	185
 	.byte	1,2,35,0,7
 	.byte	'TxPduInfoOfMainFunctionTxIndStartIdxOfMainFunctionTxStruct',0
 	.word	185
 	.byte	1,2,35,1,0,4
-	.byte	'Com_MainFunctionTxStructType',0,6,221,27,3
-	.word	4621
+	.byte	'Com_MainFunctionTxStructType',0,6,199,27,3
+	.word	4445
 	.byte	10
-	.byte	'sCom_PartitionsRxStructType',0,6,224,27,16,1,7
+	.byte	'sCom_PartitionsRxStructType',0,6,202,27,16,1,7
 	.byte	'Com_PartitionsRxStructNeverUsed',0
 	.word	185
 	.byte	1,2,35,0,0,4
-	.byte	'Com_PartitionsRxStructType',0,6,227,27,3
-	.word	4834
+	.byte	'Com_PartitionsRxStructType',0,6,205,27,3
+	.word	4658
 	.byte	10
-	.byte	'sCom_PartitionsTxStructType',0,6,230,27,16,1,7
+	.byte	'sCom_PartitionsTxStructType',0,6,208,27,16,1,7
 	.byte	'Com_PartitionsTxStructNeverUsed',0
 	.word	185
 	.byte	1,2,35,0,0,4
-	.byte	'Com_PartitionsTxStructType',0,6,233,27,3
-	.word	4946
+	.byte	'Com_PartitionsTxStructType',0,6,211,27,3
+	.word	4770
 	.byte	10
-	.byte	'sCom_RxAccessInfoType',0,6,236,27,16,6,7
+	.byte	'sCom_RxAccessInfoType',0,6,214,27,16,6,7
 	.byte	'DynSignalOfRxAccessInfo',0
 	.word	185
 	.byte	1,2,35,0,7
@@ -398,10 +386,10 @@ $TC162
 	.byte	'SignalLengthInByteOfRxAccessInfo',0
 	.word	185
 	.byte	1,2,35,4,0,4
-	.byte	'Com_RxAccessInfoType',0,6,243,27,3
-	.word	5058
+	.byte	'Com_RxAccessInfoType',0,6,221,27,3
+	.word	4882
 	.byte	10
-	.byte	'sCom_RxPduInfoType',0,6,246,27,16,6,7
+	.byte	'sCom_RxPduInfoType',0,6,224,27,16,6,7
 	.byte	'HandleRxPduDeferredIdxOfRxPduInfo',0
 	.word	185
 	.byte	1,2,35,0,7
@@ -420,83 +408,74 @@ $TC162
 	.byte	'RxSigInfoStartIdxOfRxPduInfo',0
 	.word	185
 	.byte	1,2,35,5,0,4
-	.byte	'Com_RxPduInfoType',0,6,254,27,3
-	.word	5291
+	.byte	'Com_RxPduInfoType',0,6,232,27,3
+	.word	5115
 	.byte	10
-	.byte	'sCom_RxSigInfoType',0,6,129,28,16,1,7
+	.byte	'sCom_RxSigInfoType',0,6,235,27,16,1,7
 	.byte	'ValidDlcOfRxSigInfo',0
 	.word	185
 	.byte	1,2,35,0,0,4
-	.byte	'Com_RxSigInfoType',0,6,132,28,3
-	.word	5610
+	.byte	'Com_RxSigInfoType',0,6,238,27,3
+	.word	5434
 	.byte	10
-	.byte	'sCom_TxAccessInfoType',0,6,135,28,16,1,7
+	.byte	'sCom_TxAccessInfoType',0,6,241,27,16,1,7
 	.byte	'TxSigInfoIdxOfTxAccessInfo',0
 	.word	185
 	.byte	1,2,35,0,0,4
-	.byte	'Com_TxAccessInfoType',0,6,138,28,3
-	.word	5692
+	.byte	'Com_TxAccessInfoType',0,6,244,27,3
+	.word	5516
 	.byte	10
-	.byte	'sCom_TxCyclicPduType',0,6,141,28,16,1,7
-	.byte	'TxPduInfoIdxOfTxCyclicPdu',0
+	.byte	'sCom_TxCyclicPduType',0,6,247,27,16,1,7
+	.byte	'Com_TxCyclicPduNeverUsed',0
 	.word	185
 	.byte	1,2,35,0,0,4
-	.byte	'Com_TxCyclicPduType',0,6,144,28,3
-	.word	5787
+	.byte	'Com_TxCyclicPduType',0,6,250,27,3
+	.word	5611
 	.byte	10
-	.byte	'sCom_TxModeFalseType',0,6,147,28,16,1,7
-	.byte	'TimePeriodOfTxModeFalse',0
-	.word	185
-	.byte	1,2,35,0,0,4
-	.byte	'Com_TxModeFalseType',0,6,150,28,3
-	.word	5879
-	.byte	10
-	.byte	'sCom_TxModeInfoType',0,6,153,28,16,2,7
-	.byte	'InitModeOfTxModeInfo',0
+	.byte	'sCom_TxModeFalseType',0,6,253,27,16,2,7
+	.byte	'PeriodicOfTxModeFalse',0
 	.word	185
 	.byte	1,2,35,0,7
-	.byte	'TxModeFalseIdxOfTxModeInfo',0
+	.byte	'TimePeriodOfTxModeFalse',0
 	.word	185
 	.byte	1,2,35,1,0,4
-	.byte	'Com_TxModeInfoType',0,6,157,28,3
-	.word	5969
+	.byte	'Com_TxModeFalseType',0,6,129,28,3
+	.word	5702
 	.byte	10
-	.byte	'sCom_TxModeTrueType',0,6,160,28,16,4,7
+	.byte	'sCom_TxModeInfoType',0,6,132,28,16,1,7
+	.byte	'InitModeOfTxModeInfo',0
+	.word	185
+	.byte	1,2,35,0,0,4
+	.byte	'Com_TxModeInfoType',0,6,135,28,3
+	.word	5823
+	.byte	10
+	.byte	'sCom_TxModeTrueType',0,6,138,28,16,2,7
 	.byte	'PeriodicOfTxModeTrue',0
 	.word	185
 	.byte	1,2,35,0,7
-	.byte	'TimeOffsetOfTxModeTrue',0
-	.word	185
-	.byte	1,2,35,1,7
 	.byte	'TimePeriodOfTxModeTrue',0
 	.word	185
-	.byte	1,2,35,2,0,4
-	.byte	'Com_TxModeTrueType',0,6,165,28,3
-	.word	6090
+	.byte	1,2,35,1,0,4
+	.byte	'Com_TxModeTrueType',0,6,142,28,3
+	.word	5908
 	.byte	10
-	.byte	'sCom_TxPduInfoType',0,6,168,28,16,6,7
-	.byte	'ExternalIdOfTxPduInfo',0
-	.word	185
-	.byte	1,2,35,0,7
+	.byte	'sCom_TxPduInfoType',0,6,145,28,16,4,7
 	.byte	'IPduGroupInfoOfTxPduInfoIndStartIdxOfTxPduInfo',0
 	.word	185
-	.byte	1,2,35,1,7
+	.byte	1,2,35,0,7
 	.byte	'PartitionsTxStructIdxOfTxPduInfo',0
 	.word	185
-	.byte	1,2,35,2,7
+	.byte	1,2,35,1,7
 	.byte	'TxBufferLengthOfTxPduInfo',0
 	.word	185
-	.byte	1,2,35,3,7
-	.byte	'TxPduInitValueEndIdxOfTxPduInfo',0
-	.word	185
-	.byte	1,2,35,4,7
+	.byte	1,2,35,2,7
 	.byte	'TxPduInitValueStartIdxOfTxPduInfo',0
 	.word	185
-	.byte	1,2,35,5,0,4
-	.byte	'Com_TxPduInfoType',0,6,176,28,3
-	.word	6239
+	.byte	1,2,35,3,0,4
+	.byte	'Com_TxPduInfoType',0,6,151,28,3
+	.word	6025
 	.byte	10
-	.byte	'sCom_TxSigInfoType',0,6,179,28,16,12,7
+	.byte	'sCom_TxSigInfoType',0,6,154,28,16,12,7
 	.byte	'DynSignalOfTxSigInfo',0
 	.word	185
 	.byte	1,2,35,0,7
@@ -524,140 +503,104 @@ $TC162
 	.byte	'TxPduInfoIdxOfTxSigInfo',0
 	.word	185
 	.byte	1,2,35,8,0,4
-	.byte	'Com_TxSigInfoType',0,6,190,28,3
-	.word	6540
+	.byte	'Com_TxSigInfoType',0,6,165,28,3
+	.word	6254
 	.byte	10
-	.byte	'Com_CurrentTxModeStructSTag',0,6,202,28,16,6,7
-	.byte	'msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx',0
+	.byte	'Com_CurrentTxModeStructSTag',0,6,177,28,16,2,7
+	.byte	'msg_MotorStatus_oCAN00_71118836_Tx',0
 	.word	185
 	.byte	1,2,35,0,7
-	.byte	'msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx',0
-	.word	185
-	.byte	1,2,35,1,7
-	.byte	'msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx',0
-	.word	185
-	.byte	1,2,35,2,7
-	.byte	'msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx',0
-	.word	185
-	.byte	1,2,35,3,7
 	.byte	'msg_Transmit_oCAN00_0723e95e_Tx',0
 	.word	185
-	.byte	1,2,35,4,0,4
-	.byte	'Com_CurrentTxModeStructSType',0,6,209,28,3
-	.word	6893
+	.byte	1,2,35,1,0,4
+	.byte	'Com_CurrentTxModeStructSType',0,6,181,28,3
+	.word	6607
 	.byte	10
-	.byte	'Com_CycleTimeCntStructSTag',0,6,212,28,16,6,7
-	.byte	'msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx',0
+	.byte	'Com_CycleTimeCntStructSTag',0,6,184,28,16,2,7
+	.byte	'msg_MotorStatus_oCAN00_71118836_Tx',0
 	.word	185
 	.byte	1,2,35,0,7
-	.byte	'msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx',0
-	.word	185
-	.byte	1,2,35,1,7
-	.byte	'msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx',0
-	.word	185
-	.byte	1,2,35,2,7
-	.byte	'msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx',0
-	.word	185
-	.byte	1,2,35,3,7
 	.byte	'msg_Transmit_oCAN00_0723e95e_Tx',0
 	.word	185
-	.byte	1,2,35,4,0,4
-	.byte	'Com_CycleTimeCntStructSType',0,6,219,28,3
-	.word	7197
+	.byte	1,2,35,1,0,4
+	.byte	'Com_CycleTimeCntStructSType',0,6,188,28,3
+	.word	6765
 	.byte	10
-	.byte	'Com_CyclicSendRequestStructSTag',0,6,222,28,16,6,7
-	.byte	'msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx',0
+	.byte	'Com_CyclicSendRequestStructSTag',0,6,191,28,16,2,7
+	.byte	'msg_MotorStatus_oCAN00_71118836_Tx',0
 	.word	185
 	.byte	1,2,35,0,7
-	.byte	'msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx',0
-	.word	185
-	.byte	1,2,35,1,7
-	.byte	'msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx',0
-	.word	185
-	.byte	1,2,35,2,7
-	.byte	'msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx',0
-	.word	185
-	.byte	1,2,35,3,7
 	.byte	'msg_Transmit_oCAN00_0723e95e_Tx',0
 	.word	185
-	.byte	1,2,35,4,0,4
-	.byte	'Com_CyclicSendRequestStructSType',0,6,229,28,3
-	.word	7499
+	.byte	1,2,35,1,0,4
+	.byte	'Com_CyclicSendRequestStructSType',0,6,195,28,3
+	.word	6921
 	.byte	10
-	.byte	'Com_HandleRxPduDeferredStructSTag',0,6,232,28,16,1,7
+	.byte	'Com_HandleRxPduDeferredStructSTag',0,6,198,28,16,1,7
 	.byte	'msg_Receive_oCAN00_2b456e3f_Rx',0
 	.word	185
 	.byte	1,2,35,0,0,4
-	.byte	'Com_HandleRxPduDeferredStructSType',0,6,235,28,3
-	.word	7811
+	.byte	'Com_HandleRxPduDeferredStructSType',0,6,201,28,3
+	.word	7087
 	.byte	10
-	.byte	'Com_RxDefPduBufferStructSTag',0,6,238,28,16,1,7
+	.byte	'Com_RxDefPduBufferStructSTag',0,6,204,28,16,1,7
 	.byte	'msg_Receive_oCAN00_2b456e3f_Rx',0
 	.word	185
 	.byte	1,2,35,0,0,4
-	.byte	'Com_RxDefPduBufferStructSType',0,6,241,28,3
-	.word	7936
+	.byte	'Com_RxDefPduBufferStructSType',0,6,207,28,3
+	.word	7212
 	.byte	10
-	.byte	'Com_RxIPduGroupISRLockCounterStructSTag',0,6,244,28,16,2,7
+	.byte	'Com_RxIPduGroupISRLockCounterStructSTag',0,6,210,28,16,2,7
 	.byte	'noPartition',0
 	.word	232
 	.byte	2,2,35,0,0,4
-	.byte	'Com_RxIPduGroupISRLockCounterStructSType',0,6,247,28,3
-	.word	8051
+	.byte	'Com_RxIPduGroupISRLockCounterStructSType',0,6,213,28,3
+	.word	7327
 	.byte	10
-	.byte	'Com_RxMainFunctionProcessingISRLockCounterStructSTag',0,6,250,28,16,2,7
+	.byte	'Com_RxMainFunctionProcessingISRLockCounterStructSTag',0,6,216,28,16,2,7
 	.byte	'ComMainFunctionRx',0
 	.word	232
 	.byte	2,2,35,0,0,4
-	.byte	'Com_RxMainFunctionProcessingISRLockCounterStructSType',0,6,253,28,3
-	.word	8169
+	.byte	'Com_RxMainFunctionProcessingISRLockCounterStructSType',0,6,219,28,3
+	.word	7445
 	.byte	10
-	.byte	'Com_TransmitRequestStructSTag',0,6,128,29,16,6,7
-	.byte	'msg_MyECU_Lamp_MxA0_oCAN00_b76f77a4_Tx',0
+	.byte	'Com_TransmitRequestStructSTag',0,6,222,28,16,2,7
+	.byte	'msg_MotorStatus_oCAN00_71118836_Tx',0
 	.word	185
 	.byte	1,2,35,0,7
-	.byte	'msg_MyECU_Lamp_MxA1_oCAN00_7bc5773a_Tx',0
-	.word	185
-	.byte	1,2,35,1,7
-	.byte	'msg_MyECU_Lamp_MxA2_oCAN00_f54a70d9_Tx',0
-	.word	185
-	.byte	1,2,35,2,7
-	.byte	'msg_MyECU_Lamp_Mx_oCAN00_e57ca999_Tx',0
-	.word	185
-	.byte	1,2,35,3,7
 	.byte	'msg_Transmit_oCAN00_0723e95e_Tx',0
 	.word	185
-	.byte	1,2,35,4,0,4
-	.byte	'Com_TransmitRequestStructSType',0,6,135,29,3
-	.word	8319
+	.byte	1,2,35,1,0,4
+	.byte	'Com_TransmitRequestStructSType',0,6,226,28,3
+	.word	7595
 	.byte	10
-	.byte	'Com_TxIPduGroupISRLockCounterStructSTag',0,6,138,29,16,2,7
+	.byte	'Com_TxIPduGroupISRLockCounterStructSTag',0,6,229,28,16,2,7
 	.byte	'noPartition',0
 	.word	232
 	.byte	2,2,35,0,0,4
-	.byte	'Com_TxIPduGroupISRLockCounterStructSType',0,6,141,29,3
-	.word	8627
+	.byte	'Com_TxIPduGroupISRLockCounterStructSType',0,6,232,28,3
+	.word	7757
 	.byte	10
-	.byte	'Com_TxProcessingISRLockCounterStructSTag',0,6,144,29,16,2,7
+	.byte	'Com_TxProcessingISRLockCounterStructSTag',0,6,235,28,16,2,7
 	.byte	'ComMainFunctionTx',0
 	.word	232
 	.byte	2,2,35,0,0,4
-	.byte	'Com_TxProcessingISRLockCounterStructSType',0,6,147,29,3
-	.word	8745
+	.byte	'Com_TxProcessingISRLockCounterStructSType',0,6,238,28,3
+	.word	7875
 	.byte	10
-	.byte	'sCom_PCConfigType',0,6,248,30,16,1,7
+	.byte	'sCom_PCConfigType',0,6,211,30,16,1,7
 	.byte	'Com_PCConfigNeverUsed',0
 	.word	185
 	.byte	1,2,35,0,0,4
-	.byte	'Com_PCConfigType',0,6,251,30,3
-	.word	8871
+	.byte	'Com_PCConfigType',0,6,214,30,3
+	.word	8001
 	.byte	10
 	.byte	'sDet_PCConfigType',0,7,238,1,16,1,7
 	.byte	'Det_PCConfigNeverUsed',0
 	.word	185
 	.byte	1,2,35,0,0,4
 	.byte	'Det_PCConfigType',0,7,241,1,3
-	.word	8953
+	.word	8083
 	.byte	8,8,165,1,9,1,9
 	.byte	'BswCore1Task',0,0,9
 	.byte	'Default_Appl_Init_Task',0,1,9
@@ -674,16 +617,16 @@ $TC162
 	.byte	'INVALID_TASK',0,12,9
 	.byte	'OS_TASKID_COUNT',0,12,0,4
 	.byte	'TaskType',0,8,181,1,3
-	.word	9035
+	.word	8165
 	.byte	11,64
 	.word	296
 	.byte	12,15,0,10
 	.byte	'Os_ExceptionContextType_Tag',0,9,71,8,160,1,7
 	.byte	'AddressRegisters',0
-	.word	9366
+	.word	8496
 	.byte	64,2,35,0,7
 	.byte	'DataRegisters',0
-	.word	9366
+	.word	8496
 	.byte	64,2,35,64,7
 	.byte	'Ra',0
 	.word	296
@@ -710,7 +653,7 @@ $TC162
 	.word	296
 	.byte	4,3,35,156,1,0,4
 	.byte	'Os_ExceptionContextType',0,10,59,44
-	.word	9375
+	.word	8505
 	.byte	4
 	.byte	'Os_InterruptSourceIdType',0,11,236,1,16
 	.word	296
@@ -723,7 +666,7 @@ $TC162
 	.byte	'WAITING',0,2,9
 	.byte	'SUSPENDED',0,3,0,4
 	.byte	'TaskStateType',0,11,173,2,3
-	.word	9723
+	.word	8853
 	.byte	4
 	.byte	'EventMaskType',0,11,180,2,16
 	.word	394
@@ -744,13 +687,13 @@ $TC162
 	.word	296
 	.byte	4,2,35,8,0,4
 	.byte	'AlarmBaseType',0,11,226,2,2
-	.word	9855
+	.word	8985
 	.byte	8,11,254,2,9,1,9
 	.byte	'APPLICATION_TERMINATED',0,0,9
 	.byte	'APPLICATION_RESTARTING',0,1,9
 	.byte	'APPLICATION_ACCESSIBLE',0,2,0,4
 	.byte	'ApplicationStateType',0,11,131,3,3
-	.word	9950
+	.word	9080
 	.byte	8,11,175,3,9,1,9
 	.byte	'OSServiceId_GetApplicationID',0,0,9
 	.byte	'OSServiceId_GetISRID',0,1,9
@@ -853,7 +796,7 @@ $TC162
 	.byte	'OSServiceId_ReleaseResource',0,233,1,9
 	.byte	'OSSERVICEID_COUNT',0,255,1,0,4
 	.byte	'OSServiceIdType',0,11,155,4,3
-	.word	10062
+	.word	9192
 	.byte	8,11,171,4,9,2,9
 	.byte	'OS_STATUS_OK',0,0,9
 	.byte	'OS_STATUS_CALLEVEL',0,2,9
@@ -943,19 +886,19 @@ $TC162
 	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,9
 	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0,4
 	.byte	'Os_StatusType',0,11,231,5,3
-	.word	13279
+	.word	12409
 	.byte	6,11,132,6,9,4,7
 	.byte	'Service',0
-	.word	10062
+	.word	9192
 	.byte	1,2,35,0,7
 	.byte	'Error',0
 	.word	185
 	.byte	1,2,35,1,7
 	.byte	'DetailedError',0
-	.word	13279
+	.word	12409
 	.byte	2,2,35,2,0,4
 	.byte	'Os_ErrorInformationType',0,11,142,6,3
-	.word	15809
+	.word	14939
 	.byte	8,11,174,6,9,1,9
 	.byte	'SCHEDULETABLE_STOPPED',0,0,9
 	.byte	'SCHEDULETABLE_NEXT',0,1,9
@@ -963,7 +906,7 @@ $TC162
 	.byte	'SCHEDULETABLE_RUNNING',0,3,9
 	.byte	'SCHEDULETABLE_RUNNING_AND_SYNCHRONOUS',0,4,0,4
 	.byte	'ScheduleTableStatusType',0,11,191,6,3
-	.word	15904
+	.word	15034
 	.byte	8,11,203,6,9,1,9
 	.byte	'OS_MEM_ACCESS_TYPE_NON',0,0,9
 	.byte	'OS_MEM_ACCESS_TYPE_R',0,1,9
@@ -986,7 +929,7 @@ $TC162
 	.byte	'OS_MEM_ACCESS_TYPE_WXS',0,14,9
 	.byte	'OS_MEM_ACCESS_TYPE_RWXS',0,15,0,4
 	.byte	'Os_MemAccessType',0,11,225,6,3
-	.word	16077
+	.word	15207
 	.byte	4
 	.byte	'Os_Hal_AddressType',0,12,99,16
 	.word	296

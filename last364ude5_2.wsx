@@ -5,7 +5,7 @@
 	<ProdInfo type="bin" size="52">vQTv/gAAAQAIAAMAkz8CAAIABQAAAAAAPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAA==</ProdInfo>
 	<ProdInfoString type="string">5.2</ProdInfoString>
 	<CreationDate type="string">31.07.2026 09:31:02:000</CreationDate>
-	<LastWriteDate type="string">03.08.2026 11:09:08:000</LastWriteDate>
+	<LastWriteDate type="string">04.08.2026 20:25:59:000</LastWriteDate>
 	<MainFrame type="key">
 		<VisibilityGroupsMgr type="key">
 			<EnableVisibilityGroups type="flag">0</EnableVisibilityGroups>
@@ -113,7 +113,7 @@
 							<UniqueIdentifier>MainFrame.UDEProgressWin.OPEN_VIEW</UniqueIdentifier>
 						</UniqueControlIdDockingControlData>
 						<UniqueControlIdDockingControlData>
-							<DockedDimension>478</DockedDimension>
+							<DockedDimension>431</DockedDimension>
 							<Cancelled>false</Cancelled>
 							<DockingType>Right</DockingType>
 							<FloatingBounds>
@@ -635,7 +635,7 @@
 							<UniqueIdentifier>Core0.ViewSrv.TriCoreCpuWin.OPEN_VIEW</UniqueIdentifier>
 						</UniqueControlIdDockingControlData>
 						<UniqueControlIdDockingControlData>
-							<DockedDimension>1912</DockedDimension>
+							<DockedDimension>803</DockedDimension>
 							<Cancelled>false</Cancelled>
 							<DockingType>Bottom</DockingType>
 							<FloatingBounds>
@@ -689,7 +689,7 @@
 							<UniqueIdentifier>Core0.ViewSrv.StdUDESymbolExplWin.OPEN_VIEW</UniqueIdentifier>
 						</UniqueControlIdDockingControlData>
 						<UniqueControlIdDockingControlData>
-							<DockedDimension>478</DockedDimension>
+							<DockedDimension>431</DockedDimension>
 							<Cancelled>false</Cancelled>
 							<DockingType>Right</DockingType>
 							<FloatingBounds>
@@ -1355,7 +1355,7 @@
 							<UniqueIdentifier>Core1.ViewSrv.StdUDESymbolExplWin.OPEN_VIEW</UniqueIdentifier>
 						</UniqueControlIdDockingControlData>
 						<UniqueControlIdDockingControlData>
-							<DockedDimension>478</DockedDimension>
+							<DockedDimension>431</DockedDimension>
 							<Cancelled>false</Cancelled>
 							<DockingType>Right</DockingType>
 							<FloatingBounds>
@@ -1476,7 +1476,7 @@
 									<Width>111</Width>
 									<Height>25</Height>
 								</Bounds>
-								<Name>Window Toolbar</Name>
+								<Name>Show Toolbar</Name>
 								<AlwaysUnvisible>false</AlwaysUnvisible>
 								<Visible>false</Visible>
 								<ToolItemData>
@@ -1593,7 +1593,7 @@
 									<Width>111</Width>
 									<Height>25</Height>
 								</Bounds>
-								<Name>Show Toolbar</Name>
+								<Name>Window Toolbar</Name>
 								<AlwaysUnvisible>false</AlwaysUnvisible>
 								<Visible>false</Visible>
 								<ToolItemData>
@@ -2322,7 +2322,7 @@
 									<ToolItemPersistData>
 										<Name></Name>
 										<Visible>true</Visible>
-										<Text>Core0</Text>
+										<Text>Core1</Text>
 										<DisplayStyle>ImageAndText</DisplayStyle>
 										<AppendAccelerator>false</AppendAccelerator>
 									</ToolItemPersistData>
@@ -2336,14 +2336,14 @@
 									<ToolItemPersistData>
 										<Name></Name>
 										<Visible>true</Visible>
-										<Text>Core0 halted by reset</Text>
+										<Text>Core1 running</Text>
 										<DisplayStyle>ImageAndText</DisplayStyle>
 										<AppendAccelerator>false</AppendAccelerator>
 									</ToolItemPersistData>
 									<ToolItemPersistData>
 										<Name></Name>
 										<Visible>true</Visible>
-										<Text>&lt;    160ns</Text>
+										<Text></Text>
 										<DisplayStyle>ImageAndText</DisplayStyle>
 										<AppendAccelerator>false</AppendAccelerator>
 									</ToolItemPersistData>
@@ -2608,7 +2608,7 @@
 		<UDE.Script type="key">
 			<MacroGuiEntries type="key">
 				<LastScriptFilePath type="string">C:\Users\Qxiong\Documents\pls\UDE 5.2</LastScriptFilePath>
-				<Macro_01_08_26_20_41_36_0 type="key">
+				<Macro_03_08_26_11_09_08_0 type="key">
 					<ScriptDescription type="string">The script contains a collection of macros to save memory content into different file formats 
 and fill target memory ranges</ScriptDescription>
 					<ScriptPath type="string">V:\UDE\AddOns\Macro\MacroLibrary\StdMacros1.dsm</ScriptPath>
@@ -2888,7 +2888,7 @@ End Sub</ScriptSource>
 					<ScriptFromStg type="flag">1</ScriptFromStg>
 					<LocalComputerName type="string">WS_CORE_DUO</LocalComputerName>
 					<ExternalScriptPath type="string"></ExternalScriptPath>
-					<NextNodeName type="string">Macro_03_08_26_11_09_08_0</NextNodeName>
+					<NextNodeName type="string">Macro_04_08_26_20_25_58_0</NextNodeName>
 					<UnAss type="key">
 						<GUIEntry type="key">
 							<MenuID type="int">10</MenuID>
@@ -2945,7 +2945,7 @@ End Sub</ScriptSource>
 						<GUIEntryDescription type="string"></GUIEntryDescription>
 					</FillDWord>
 					<NoOfFunctions type="int">5</NoOfFunctions>
-				</Macro_01_08_26_20_41_36_0>
+				</Macro_03_08_26_11_09_08_0>
 			</MacroGuiEntries>
 			<LastSelectedMacro type="string"></LastSelectedMacro>
 		</UDE.Script>
@@ -3495,7 +3495,7 @@ Group Member</LastSelectedPropPage>
 							</Watch2>
 							<Watch3 type="key">
 								<Name type="string">OsCfg_Core_OsCore0_Dyn (global) @1</Name>
-								<Status type="string">#0#0,5$-1,0$#0,7$-1,0$#0,8$-1,0$#0,9#0,10#</Status>
+								<Status type="string">#0#0,5$0,0$#0,7$0,0$#0,8$0,0$#0,9#0,10#</Status>
 								<RunningPeriod3 type="int">25</RunningPeriod3>
 								<HoldedPeriod3 type="int">100</HoldedPeriod3>
 							</Watch3>
@@ -3749,7 +3749,7 @@ s.ms</Label>
 								<MaxRange type="double">1</MaxRange>
 								<Font type="string">Arial,Dh,0,0,0,400,0,0,0,1,2,1,4,0</Font>
 								<TitleFont type="string">Arial,Eh,0,0,0,700,0,0,0,1,2,1,4,0</TitleFont>
-								<DisplayFmt type="string">%5.2f</DisplayFmt>
+								<DisplayFmt type="string">%5.1f</DisplayFmt>
 								<Label type="string"></Label>
 								<FmtSwitchPower type="int">6</FmtSwitchPower>
 								<ValueAxisFmtMode type="int">0</ValueAxisFmtMode>
@@ -5247,8 +5247,8 @@ WAIT 5
 				<OPEN_VIEW00 type="key">
 					<FrameCreated type="string">31.07.2026 10:11:09:245</FrameCreated>
 					<ViewSrv type="key">
-						<TopIndex type="int">80</TopIndex>
-						<CaretIndex type="int">65</CaretIndex>
+						<TopIndex type="int">34</TopIndex>
+						<CaretIndex type="int">42</CaretIndex>
 						<NameWidth type="int">529</NameWidth>
 						<AddressWidth type="int">0</AddressWidth>
 						<ValueWidth type="int">367</ValueWidth>
@@ -5291,7 +5291,9 @@ WAIT 5
 							</Watch7>
 							<Watch8 type="key">
 								<Name type="string">MotorCdd_FocContext (global) @1</Name>
-								<Status type="string">#0#0,1#</Status>
+								<Status type="string">#0#0,0#0,1#0,3#</Status>
+								<RunningPeriod8 type="int">25</RunningPeriod8>
+								<HoldedPeriod8 type="int">100</HoldedPeriod8>
 							</Watch8>
 							<Watch9 type="key">
 								<Name type="string">tle5012_sfr (global) @1</Name>

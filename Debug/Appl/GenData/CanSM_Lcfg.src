@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
-	.compiler_invocation	"ctc -f cc14896a --dep-file=Appl\\GenData\\.CanSM_Lcfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -DBRS_COMP_TASKING -DBRS_PLATFORM_AURIX -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Include -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\IpduM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=Appl\\GenData\\CanSM_Lcfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\CanSM_Lcfg.src ..\\Appl\\GenData\\CanSM_Lcfg.c"
+	.compiler_invocation	"ctc -f cc12800a --dep-file=Appl\\GenData\\.CanSM_Lcfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -DBRS_COMP_TASKING -DBRS_PLATFORM_AURIX -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanXcp\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Xcp -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Xcp\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Include -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=Appl\\GenData\\CanSM_Lcfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\CanSM_Lcfg.src ..\\Appl\\GenData\\CanSM_Lcfg.c"
 	.compiler_name		"ctc"
 	;source	'..\\Appl\\GenData\\CanSM_Lcfg.c'
 
@@ -17,7 +17,7 @@ CanSM_ChannelVarRecord:	.type	object
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L3:
-	.word	19078
+	.word	19277
 	.half	3
 	.word	.L4
 	.byte	4
@@ -1141,26 +1141,32 @@ CanSM_ChannelVarRecord:	.type	object
 	.byte	'CanIf_CddRxIndicationLayout',0,3,0,4
 	.byte	'CanIf_RxIndicationLayoutType',0,13,244,2,3
 	.word	11611
+	.byte	8,13,145,3,9,1,9
+	.byte	'CANIF_MSG_TYPE_CAN',0,0,9
+	.byte	'CANIF_MSG_TYPE_FD_CAN',0,1,9
+	.byte	'CANIF_MSG_TYPE_NO_FD_CAN',0,2,0,4
+	.byte	'CanIf_MsgType',0,13,150,3,3
+	.word	11787
 	.byte	18,1,1,19
 	.word	165
 	.byte	0,3
-	.word	11787
+	.word	11889
 	.byte	4
 	.byte	'CanIf_TxConfirmationFctType',0,13,172,3,9
-	.word	11796
+	.word	11898
 	.byte	20
 	.word	165
 	.byte	3
-	.word	11838
+	.word	11940
 	.byte	18,1,1,19
 	.word	165
 	.byte	19
-	.word	11843
+	.word	11945
 	.byte	0,3
-	.word	11848
+	.word	11950
 	.byte	4
 	.byte	'CanIf_SimpleRxIndicationFctType',0,13,178,3,9
-	.word	11862
+	.word	11964
 	.byte	6,5,197,1,9,8,7
 	.byte	'SduDataPtr',0
 	.word	614
@@ -1168,232 +1174,232 @@ CanSM_ChannelVarRecord:	.type	object
 	.byte	'SduLength',0
 	.word	165
 	.byte	1,2,35,4,0,20
-	.word	11908
+	.word	12010
 	.byte	3
-	.word	11954
+	.word	12056
 	.byte	18,1,1,19
 	.word	165
 	.byte	19
-	.word	11959
+	.word	12061
 	.byte	0,3
-	.word	11964
+	.word	12066
 	.byte	4
 	.byte	'CanIf_AdvancedRxIndicationFctType',0,13,183,3,9
-	.word	11978
+	.word	12080
 	.byte	3
 	.word	165
 	.byte	18,1,1,19
 	.word	165
 	.byte	19
-	.word	11843
+	.word	11945
 	.byte	19
 	.word	240
 	.byte	0,3
-	.word	12031
+	.word	12133
 	.byte	4
 	.byte	'CanIf_NmOsekRxIndicationFctType',0,13,187,3,9
-	.word	12050
+	.word	12152
 	.byte	18,1,1,19
 	.word	165
 	.byte	19
-	.word	11959
+	.word	12061
 	.byte	19
 	.word	240
 	.byte	0,3
-	.word	12096
+	.word	12198
 	.byte	4
 	.byte	'CanIf_CddRxIndicationFctType',0,13,191,3,9
-	.word	12115
+	.word	12217
 	.byte	18,1,1,19
 	.word	165
 	.byte	19
 	.word	11110
 	.byte	0,3
-	.word	12158
+	.word	12260
 	.byte	4
 	.byte	'CanIf_CtrlModeIndicationFctType',0,13,195,3,9
-	.word	12172
+	.word	12274
 	.byte	4
 	.byte	'CanIf_BusOffNotificationFctType',0,13,199,3,9
-	.word	11796
+	.word	11898
 	.byte	15,13,210,4,9,4,7
 	.byte	'eSimpleRxIndicationType',0
-	.word	11867
+	.word	11969
 	.byte	4,2,35,0,7
 	.byte	'eAdvancedRxIndicationType',0
-	.word	11983
+	.word	12085
 	.byte	4,2,35,0,7
 	.byte	'eNmOsekRxIndicationType',0
-	.word	12055
+	.word	12157
 	.byte	4,2,35,0,7
 	.byte	'eCddRxIndicationType',0
-	.word	12120
+	.word	12222
 	.byte	4,2,35,0,0,4
 	.byte	'CanIf_RxIndicationFctType',0,13,216,4,3
-	.word	12259
+	.word	12361
 	.byte	3
-	.word	11848
+	.word	11950
 	.byte	3
-	.word	11964
+	.word	12066
 	.byte	3
-	.word	12031
+	.word	12133
 	.byte	3
-	.word	12096
+	.word	12198
 	.byte	10
 	.byte	'sCanIf_TxQueueBaseType',0,13,221,4,16,1,7
 	.byte	'eSduLength',0
 	.word	165
 	.byte	1,2,35,0,0,4
 	.byte	'CanIf_TxQueueBaseType',0,13,227,4,3
-	.word	12452
+	.word	12554
 	.byte	10
 	.byte	'sCanIf_TxQueueBaseWithDataType',0,13,230,4,16,1,7
 	.byte	'eBaseParams',0
-	.word	12452
+	.word	12554
 	.byte	1,2,35,0,0,4
 	.byte	'CanIf_TxQueueBaseWithDataType',0,13,236,4,3
-	.word	12533
+	.word	12635
 	.byte	10
 	.byte	'sCanIf_TxPrioByCanIdByteQueueType',0,13,241,4,16,2,7
 	.byte	'eQueueParams',0
-	.word	12533
+	.word	12635
 	.byte	1,2,35,0,7
 	.byte	'eQueued',0
 	.word	165
 	.byte	1,2,35,1,0,4
 	.byte	'CanIf_TxPrioByCanIdByteQueueType',0,13,245,4,3
-	.word	12631
+	.word	12733
 	.byte	10
 	.byte	'sCanIf_TxBufferPrioByCanIdBaseType',0,13,255,4,16,1,7
 	.byte	'eQueueCounter',0
 	.word	165
 	.byte	1,2,35,0,0,4
 	.byte	'CanIf_TxBufferPrioByCanIdBaseType',0,13,130,5,3
-	.word	12753
+	.word	12855
 	.byte	4
-	.byte	'CanIf_MappedTxBuffersConfigEndIdxOfCanIfCtrlId2MappedTxBuffersConfigType',0,12,148,9,15
+	.byte	'CanIf_MappedTxBuffersConfigEndIdxOfCanIfCtrlId2MappedTxBuffersConfigType',0,12,157,9,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_MappedTxBuffersConfigStartIdxOfCanIfCtrlId2MappedTxBuffersConfigType',0,12,151,9,15
+	.byte	'CanIf_MappedTxBuffersConfigStartIdxOfCanIfCtrlId2MappedTxBuffersConfigType',0,12,160,9,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_CtrlStatesIdxOfMailBoxConfigType',0,12,160,9,15
+	.byte	'CanIf_CtrlStatesIdxOfMailBoxConfigType',0,12,169,9,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_PduIdFirstOfMailBoxConfigType',0,12,163,9,15
+	.byte	'CanIf_PduIdFirstOfMailBoxConfigType',0,12,172,9,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_PduIdLastOfMailBoxConfigType',0,12,166,9,15
+	.byte	'CanIf_PduIdLastOfMailBoxConfigType',0,12,175,9,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_TxBufferCfgIdxOfMailBoxConfigType',0,12,169,9,15
+	.byte	'CanIf_TxBufferCfgIdxOfMailBoxConfigType',0,12,178,9,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_TxBufferCfgOfMailBoxConfigType',0,12,172,9,15
+	.byte	'CanIf_TxBufferCfgOfMailBoxConfigType',0,12,181,9,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_TxBufferHandlingTypeOfMailBoxConfigType',0,12,178,9,15
+	.byte	'CanIf_TxBufferHandlingTypeOfMailBoxConfigType',0,12,187,9,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_MailBoxConfigIdxOfMappedTxBuffersConfigType',0,12,181,9,15
+	.byte	'CanIf_MailBoxConfigIdxOfMappedTxBuffersConfigType',0,12,190,9,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_RxIndicationFctListIdxOfRxPduConfigType',0,12,184,9,15
+	.byte	'CanIf_RxIndicationFctListIdxOfRxPduConfigType',0,12,193,9,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_RxPduCanIdOfRxPduConfigType',0,12,187,9,16
+	.byte	'CanIf_RxPduCanIdOfRxPduConfigType',0,12,196,9,16
 	.word	240
 	.byte	4
-	.byte	'CanIf_RxPduDlcOfRxPduConfigType',0,12,190,9,15
+	.byte	'CanIf_RxPduDlcOfRxPduConfigType',0,12,199,9,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_RxPduMaskOfRxPduConfigType',0,12,193,9,16
+	.byte	'CanIf_RxPduMaskOfRxPduConfigType',0,12,202,9,16
 	.word	240
 	.byte	4
-	.byte	'CanIf_UpperPduIdOfRxPduConfigType',0,12,196,9,19
+	.byte	'CanIf_UpperPduIdOfRxPduConfigType',0,12,205,9,19
 	.word	165
 	.byte	4
-	.byte	'CanIf_TxBufferPrioByCanIdBaseIdxOfTxBufferPrioByCanIdByteQueueConfigType',0,12,244,9,15
+	.byte	'CanIf_TxBufferPrioByCanIdBaseIdxOfTxBufferPrioByCanIdByteQueueConfigType',0,12,253,9,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusEndIdxOfTxBufferPrioByCanIdByteQueueConfigType',0,12,247
-	.byte	9,15
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusEndIdxOfTxBufferPrioByCanIdByteQueueConfigType',0,12,128
+	.byte	10,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusLengthOfTxBufferPrioByCanIdByteQueueConfigType',0,12,250
-	.byte	9,15
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusLengthOfTxBufferPrioByCanIdByteQueueConfigType',0,12,131
+	.byte	10,15
 	.word	165
 	.byte	4
 	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusStartIdxOfTxBufferPrioByCanIdByteQueueConfigType',0,12
-	.byte	253,9,15
+	.byte	134,10,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_TxPduConfigIdxOfTxBufferPrioByCanIdByteQueueMappedTxPdusType',0,12,128,10,15
+	.byte	'CanIf_TxPduConfigIdxOfTxBufferPrioByCanIdByteQueueMappedTxPdusType',0,12,137,10,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_CanIdOfTxPduConfigType',0,12,131,10,16
+	.byte	'CanIf_CanIdOfTxPduConfigType',0,12,140,10,16
 	.word	240
 	.byte	4
-	.byte	'CanIf_CtrlStatesIdxOfTxPduConfigType',0,12,134,10,15
+	.byte	'CanIf_CtrlStatesIdxOfTxPduConfigType',0,12,143,10,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_IsTxPduTruncationOfTxPduConfigType',0,12,137,10,17
+	.byte	'CanIf_IsTxPduTruncationOfTxPduConfigType',0,12,146,10,17
 	.word	165
 	.byte	4
-	.byte	'CanIf_MailBoxConfigIdxOfTxPduConfigType',0,12,140,10,15
+	.byte	'CanIf_MailBoxConfigIdxOfTxPduConfigType',0,12,149,10,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_TxConfirmationFctListIdxOfTxPduConfigType',0,12,143,10,15
+	.byte	'CanIf_TxConfirmationFctListIdxOfTxPduConfigType',0,12,152,10,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_TxPduLengthOfTxPduConfigType',0,12,146,10,15
+	.byte	'CanIf_TxPduLengthOfTxPduConfigType',0,12,155,10,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_UpperLayerTxPduIdOfTxPduConfigType',0,12,149,10,19
+	.byte	'CanIf_UpperLayerTxPduIdOfTxPduConfigType',0,12,158,10,19
 	.word	165
 	.byte	4
-	.byte	'CanIf_TxQueueIdxOfTxPduQueueIndexType',0,12,152,10,15
+	.byte	'CanIf_TxQueueIdxOfTxPduQueueIndexType',0,12,161,10,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_TxQueueIndex2DataStartStopIdxOfTxPduQueueIndexType',0,12,155,10,15
+	.byte	'CanIf_TxQueueIndex2DataStartStopIdxOfTxPduQueueIndexType',0,12,164,10,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_TxQueueOfTxPduQueueIndexType',0,12,161,10,15
+	.byte	'CanIf_TxQueueOfTxPduQueueIndexType',0,12,170,10,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_TxQueueDataType',0,12,167,10,15
+	.byte	'CanIf_TxQueueDataType',0,12,176,10,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_TxQueueDataEndIdxOfTxQueueIndex2DataStartStopType',0,12,170,10,15
+	.byte	'CanIf_TxQueueDataEndIdxOfTxQueueIndex2DataStartStopType',0,12,179,10,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_TxQueueDataLengthOfTxQueueIndex2DataStartStopType',0,12,173,10,15
+	.byte	'CanIf_TxQueueDataLengthOfTxQueueIndex2DataStartStopType',0,12,182,10,15
 	.word	165
 	.byte	4
-	.byte	'CanIf_TxQueueDataStartIdxOfTxQueueIndex2DataStartStopType',0,12,176,10,15
+	.byte	'CanIf_TxQueueDataStartIdxOfTxQueueIndex2DataStartStopType',0,12,185,10,15
 	.word	165
 	.byte	10
-	.byte	'sCanIf_CanIfCtrlId2MappedTxBuffersConfigType',0,12,199,10,16,2,7
+	.byte	'sCanIf_CanIfCtrlId2MappedTxBuffersConfigType',0,12,208,10,16,2,7
 	.byte	'MappedTxBuffersConfigEndIdxOfCanIfCtrlId2MappedTxBuffersConfig',0
 	.word	165
 	.byte	1,2,35,0,7
 	.byte	'MappedTxBuffersConfigStartIdxOfCanIfCtrlId2MappedTxBuffersConfig',0
 	.word	165
 	.byte	1,2,35,1,0,4
-	.byte	'CanIf_CanIfCtrlId2MappedTxBuffersConfigType',0,12,203,10,3
-	.word	14782
+	.byte	'CanIf_CanIfCtrlId2MappedTxBuffersConfigType',0,12,212,10,3
+	.word	14884
 	.byte	10
-	.byte	'sCanIf_CtrlStatesType',0,12,206,10,16,2,7
+	.byte	'sCanIf_CtrlStatesType',0,12,215,10,16,2,7
 	.byte	'CtrlModeOfCtrlStates',0
 	.word	11110
 	.byte	1,2,35,0,7
 	.byte	'PduModeOfCtrlStates',0
 	.word	11224
 	.byte	1,2,35,1,0,4
-	.byte	'CanIf_CtrlStatesType',0,12,210,10,3
-	.word	15033
+	.byte	'CanIf_CtrlStatesType',0,12,219,10,3
+	.word	15135
 	.byte	10
-	.byte	'sCanIf_MailBoxConfigType',0,12,217,10,16,8,7
+	.byte	'sCanIf_MailBoxConfigType',0,12,226,10,16,8,7
 	.byte	'CtrlStatesIdxOfMailBoxConfig',0
 	.word	165
 	.byte	1,2,35,0,7
@@ -1415,27 +1421,27 @@ CanSM_ChannelVarRecord:	.type	object
 	.byte	'MailBoxTypeOfMailBoxConfig',0
 	.word	11446
 	.byte	1,2,35,6,0,4
-	.byte	'CanIf_MailBoxConfigType',0,12,226,10,3
-	.word	15151
+	.byte	'CanIf_MailBoxConfigType',0,12,235,10,3
+	.word	15253
 	.byte	10
-	.byte	'sCanIf_MappedTxBuffersConfigType',0,12,232,10,16,1,7
+	.byte	'sCanIf_MappedTxBuffersConfigType',0,12,241,10,16,1,7
 	.byte	'MailBoxConfigIdxOfMappedTxBuffersConfig',0
 	.word	165
 	.byte	1,2,35,0,0,4
-	.byte	'CanIf_MappedTxBuffersConfigType',0,12,235,10,3
-	.word	15479
+	.byte	'CanIf_MappedTxBuffersConfigType',0,12,244,10,3
+	.word	15581
 	.byte	10
-	.byte	'sCanIf_RxIndicationFctListType',0,12,238,10,16,8,7
+	.byte	'sCanIf_RxIndicationFctListType',0,12,247,10,16,8,7
 	.byte	'RxIndicationFctOfRxIndicationFctList',0
-	.word	12259
+	.word	12361
 	.byte	4,2,35,0,7
 	.byte	'RxIndicationLayoutOfRxIndicationFctList',0
 	.word	11611
 	.byte	1,2,35,4,0,4
-	.byte	'CanIf_RxIndicationFctListType',0,12,242,10,3
-	.word	15609
+	.byte	'CanIf_RxIndicationFctListType',0,12,251,10,3
+	.word	15711
 	.byte	10
-	.byte	'sCanIf_RxPduConfigType',0,12,248,10,16,8,7
+	.byte	'sCanIf_RxPduConfigType',0,12,129,11,16,8,7
 	.byte	'RxPduCanIdOfRxPduConfig',0
 	.word	240
 	.byte	2,2,35,0,7
@@ -1450,11 +1456,14 @@ CanSM_ChannelVarRecord:	.type	object
 	.byte	1,2,35,5,7
 	.byte	'RxPduDlcOfRxPduConfig',0
 	.word	165
-	.byte	1,2,35,6,0,4
-	.byte	'CanIf_RxPduConfigType',0,12,255,10,3
-	.word	15781
+	.byte	1,2,35,6,7
+	.byte	'MsgTypeOfRxPduConfig',0
+	.word	11787
+	.byte	1,2,35,7,0,4
+	.byte	'CanIf_RxPduConfigType',0,12,137,11,3
+	.word	15883
 	.byte	10
-	.byte	'sCanIf_TxBufferPrioByCanIdByteQueueConfigType',0,12,135,11,16,4,7
+	.byte	'sCanIf_TxBufferPrioByCanIdByteQueueConfigType',0,12,145,11,16,4,7
 	.byte	'TxBufferPrioByCanIdBaseIdxOfTxBufferPrioByCanIdByteQueueConfig',0
 	.word	165
 	.byte	1,2,35,0,7
@@ -1467,17 +1476,17 @@ CanSM_ChannelVarRecord:	.type	object
 	.byte	'TxBufferPrioByCanIdByteQueueMappedTxPdusStartIdxOfTxBufferPrioByCanIdByteQueueConfig',0
 	.word	165
 	.byte	1,2,35,3,0,4
-	.byte	'CanIf_TxBufferPrioByCanIdByteQueueConfigType',0,12,141,11,3
-	.word	16016
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueConfigType',0,12,151,11,3
+	.word	16148
 	.byte	10
-	.byte	'sCanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusType',0,12,147,11,16,1,7
+	.byte	'sCanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusType',0,12,157,11,16,1,7
 	.byte	'TxPduConfigIdxOfTxBufferPrioByCanIdByteQueueMappedTxPdus',0
 	.word	165
 	.byte	1,2,35,0,0,4
-	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusType',0,12,150,11,3
-	.word	16473
+	.byte	'CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusType',0,12,160,11,3
+	.word	16605
 	.byte	10
-	.byte	'sCanIf_TxPduConfigType',0,12,158,11,16,8,7
+	.byte	'sCanIf_TxPduConfigType',0,12,168,11,16,8,7
 	.byte	'CanIdOfTxPduConfig',0
 	.word	240
 	.byte	2,2,35,0,7
@@ -1499,10 +1508,10 @@ CanSM_ChannelVarRecord:	.type	object
 	.byte	'TxPduLengthOfTxPduConfig',0
 	.word	165
 	.byte	1,2,35,7,0,4
-	.byte	'CanIf_TxPduConfigType',0,12,167,11,3
-	.word	16658
+	.byte	'CanIf_TxPduConfigType',0,12,177,11,3
+	.word	16790
 	.byte	10
-	.byte	'sCanIf_TxPduQueueIndexType',0,12,174,11,16,4,7
+	.byte	'sCanIf_TxPduQueueIndexType',0,12,184,11,16,4,7
 	.byte	'TxQueueOfTxPduQueueIndex',0
 	.word	165
 	.byte	1,2,35,0,7
@@ -1512,10 +1521,10 @@ CanSM_ChannelVarRecord:	.type	object
 	.byte	'TxQueueIndex2DataStartStopIdxOfTxPduQueueIndex',0
 	.word	165
 	.byte	1,2,35,2,0,4
-	.byte	'CanIf_TxPduQueueIndexType',0,12,179,11,3
-	.word	16983
+	.byte	'CanIf_TxPduQueueIndexType',0,12,189,11,3
+	.word	17115
 	.byte	10
-	.byte	'sCanIf_TxQueueIndex2DataStartStopType',0,12,186,11,16,4,7
+	.byte	'sCanIf_TxQueueIndex2DataStartStopType',0,12,196,11,16,4,7
 	.byte	'TxQueueDataEndIdxOfTxQueueIndex2DataStartStop',0
 	.word	165
 	.byte	1,2,35,0,7
@@ -1525,68 +1534,76 @@ CanSM_ChannelVarRecord:	.type	object
 	.byte	'TxQueueDataStartIdxOfTxQueueIndex2DataStartStop',0
 	.word	165
 	.byte	1,2,35,2,0,4
-	.byte	'CanIf_TxQueueIndex2DataStartStopType',0,12,191,11,3
-	.word	17179
+	.byte	'CanIf_TxQueueIndex2DataStartStopType',0,12,201,11,3
+	.word	17311
 	.byte	10
-	.byte	'CanIf_CtrlStatesStructSTag',0,12,203,11,16,2,7
+	.byte	'CanIf_CtrlStatesStructSTag',0,12,213,11,16,2,7
 	.byte	'CT_CAN00_9df8a959',0
-	.word	15033
+	.word	15135
 	.byte	2,2,35,0,0,4
-	.byte	'CanIf_CtrlStatesStructSType',0,12,206,11,3
-	.word	17437
+	.byte	'CanIf_CtrlStatesStructSType',0,12,216,11,3
+	.word	17569
 	.byte	10
-	.byte	'CanIf_TxBufferPrioByCanIdBaseStructSTag',0,12,209,11,16,1,7
+	.byte	'CanIf_TxBufferPrioByCanIdBaseStructSTag',0,12,219,11,16,1,7
 	.byte	'CHNL_0fb271d2',0
-	.word	12753
+	.word	12855
 	.byte	1,2,35,0,0,4
-	.byte	'CanIf_TxBufferPrioByCanIdBaseStructSType',0,12,212,11,3
-	.word	17535
+	.byte	'CanIf_TxBufferPrioByCanIdBaseStructSType',0,12,222,11,3
+	.word	17667
 	.byte	10
-	.byte	'CanIf_TxQueueStructSTag',0,12,215,11,16,4,7
-	.byte	'msg_MyECU_Lamp_oCAN00_41befc25_Tx',0
-	.word	12631
+	.byte	'CanIf_TxQueueStructSTag',0,12,225,11,16,6,7
+	.byte	'msg_XCP_Request_Tx',0
+	.word	12733
 	.byte	2,2,35,0,7
+	.byte	'msg_MotorStatus_oCAN00_41e9a736_Tx',0
+	.word	12733
+	.byte	2,2,35,2,7
 	.byte	'msg_Transmit_oCAN00_29db34a4_Tx',0
-	.word	12631
-	.byte	2,2,35,2,0,4
-	.byte	'CanIf_TxQueueStructSType',0,12,219,11,3
-	.word	17655
-	.byte	11,32
+	.word	12733
+	.byte	2,2,35,4,0,4
+	.byte	'CanIf_TxQueueStructSType',0,12,230,11,3
+	.word	17787
+	.byte	11,8
 	.word	165
-	.byte	12,31,0,10
-	.byte	'CanIf_TxQueueDataStructSTag',0,12,222,11,16,36,7
-	.byte	'msg_MyECU_Lamp_oCAN00_41befc25_Tx',0
-	.word	17804
-	.byte	32,2,35,0,7
+	.byte	12,7,0,11,12
+	.word	165
+	.byte	12,11,0,10
+	.byte	'CanIf_TxQueueDataStructSTag',0,12,233,11,16,24,7
+	.byte	'msg_XCP_Request_Tx',0
+	.word	17965
+	.byte	8,2,35,0,7
+	.byte	'msg_MotorStatus_oCAN00_41e9a736_Tx',0
+	.word	17974
+	.byte	12,2,35,8,7
 	.byte	'msg_Transmit_oCAN00_29db34a4_Tx',0
 	.word	165
-	.byte	1,2,35,32,0,4
-	.byte	'CanIf_TxQueueDataStructSType',0,12,226,11,3
-	.word	17813
+	.byte	1,2,35,20,0,4
+	.byte	'CanIf_TxQueueDataStructSType',0,12,238,11,3
+	.word	17983
 	.byte	10
-	.byte	'sCanIf_PCConfigType',0,12,207,12,16,1,7
+	.byte	'sCanIf_PCConfigType',0,12,219,12,16,1,7
 	.byte	'CanIf_PCConfigNeverUsed',0
 	.word	165
 	.byte	1,2,35,0,0,4
-	.byte	'CanIf_PCConfigType',0,12,210,12,3
-	.word	17970
+	.byte	'CanIf_PCConfigType',0,12,222,12,3
+	.word	18169
 	.byte	13
 	.word	277
 	.byte	4
 	.byte	'EcuM_CoreStatusType',0,14,151,1,25
-	.word	18058
+	.word	18257
 	.byte	13
 	.word	277
 	.byte	3
-	.word	18092
+	.word	18291
 	.byte	4
 	.byte	'EcuM_CoreStatusArrayType',0,14,152,1,30
-	.word	18097
+	.word	18296
 	.byte	21,1,1,3
-	.word	18136
+	.word	18335
 	.byte	4
 	.byte	'EcuM_DriverFuncType',0,14,177,3,9
-	.word	18139
+	.word	18338
 	.byte	4
 	.byte	'EcuM_ComMChannelsType',0,14,144,4,15
 	.word	165
@@ -1617,47 +1634,47 @@ CanSM_ChannelVarRecord:	.type	object
 	.byte	10
 	.byte	'sEcuM_DriverInitOneType',0,14,208,4,16,4,7
 	.byte	'FunctionOfDriverInitOne',0
-	.word	18144
+	.word	18343
 	.byte	4,2,35,0,0,4
 	.byte	'EcuM_DriverInitOneType',0,14,211,4,3
-	.word	18494
+	.word	18693
 	.byte	3
-	.word	18136
+	.word	18335
 	.byte	10
 	.byte	'sEcuM_DriverInitThreeType',0,14,214,4,16,4,7
 	.byte	'FunctionOfDriverInitThree',0
-	.word	18144
+	.word	18343
 	.byte	4,2,35,0,0,4
 	.byte	'EcuM_DriverInitThreeType',0,14,217,4,3
-	.word	18595
+	.word	18794
 	.byte	10
 	.byte	'sEcuM_DriverInitTwoType',0,14,220,4,16,4,7
 	.byte	'FunctionOfDriverInitTwo',0
-	.word	18144
+	.word	18343
 	.byte	4,2,35,0,0,4
 	.byte	'EcuM_DriverInitTwoType',0,14,223,4,3
-	.word	18697
+	.word	18896
 	.byte	10
 	.byte	'sEcuM_PartitionDataType',0,14,226,4,16,1,7
 	.byte	'ApplicationOfPartitionData',0
 	.word	165
 	.byte	1,2,35,0,0,4
 	.byte	'EcuM_PartitionDataType',0,14,229,4,3
-	.word	18793
+	.word	18992
 	.byte	10
 	.byte	'sEcuM_WakeupSourceListType',0,14,232,4,16,1,7
 	.byte	'ChannelOfWakeupSourceList',0
 	.word	165
 	.byte	1,2,35,0,0,4
 	.byte	'EcuM_WakeupSourceListType',0,14,235,4,3
-	.word	18892
+	.word	19091
 	.byte	10
 	.byte	'sEcuM_PCConfigType',0,14,176,5,16,1,7
 	.byte	'EcuM_PCConfigNeverUsed',0
 	.word	165
 	.byte	1,2,35,0,0,4
 	.byte	'EcuM_PCConfigType',0,14,179,5,3
-	.word	18996
+	.word	19195
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -1744,7 +1761,7 @@ CanSM_ChannelVarRecord:	.type	object
 ; ..\Appl\GenData\CanSM_Lcfg.c	    21   *  FILE DESCRIPTION
 ; ..\Appl\GenData\CanSM_Lcfg.c	    22   *  -------------------------------------------------------------------------------------------------------------------
 ; ..\Appl\GenData\CanSM_Lcfg.c	    23   *              File: CanSM_Lcfg.c
-; ..\Appl\GenData\CanSM_Lcfg.c	    24   *   Generation Time: 2026-07-30 17:52:16
+; ..\Appl\GenData\CanSM_Lcfg.c	    24   *   Generation Time: 2024-08-03 19:52:21
 ; ..\Appl\GenData\CanSM_Lcfg.c	    25   *           Project: last364 - Version 1.0
 ; ..\Appl\GenData\CanSM_Lcfg.c	    26   *          Delivery: CBD2200508_D00
 ; ..\Appl\GenData\CanSM_Lcfg.c	    27   *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2

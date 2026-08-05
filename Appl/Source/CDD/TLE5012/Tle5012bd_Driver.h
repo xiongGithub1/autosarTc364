@@ -16,8 +16,7 @@ typedef enum
 void Tle5012bd_Driver_Init(void);
 Tle5012bd_StateType Tle5012bd_Driver_GetState(void);
 Std_ReturnType Tle5012bd_Driver_ReadAngle(Tle5012 *sensor);
-Std_ReturnType Tle5012bd_Driver_ReadAngleSlow(Tle5012 *sensor);
-void Tle5012bd_Driver_ReadAngleSpeed(Tle5012 *sensor);
+
 float32 Tle5012bd_Driver_GetElectricalAngleRad(void);
 float32 Tle5012bd_Driver_GetMechanicalRpm(void);
 
