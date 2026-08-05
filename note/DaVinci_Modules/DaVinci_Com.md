@@ -54,10 +54,8 @@ BSW Editor → 模块树选择 `Com` → `ComConfig`（信号/PDU 一般由 DBC 
 
 📷 图片位 M3：Com MainFunction 事件/报警截图。
 
-<!--
-![Com MainFunction 事件](../image/DaVinci_Modules/13_com_mainfunction.png)
--->
-
+![1785924772744](image/DaVinci_Com/1785924772744.png)
+<!-- ![20260805181258](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805181258.png) -->
 ---
 
 ## 3. 与其它模块的引用关系

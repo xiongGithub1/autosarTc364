@@ -535,11 +535,6 @@ ADC0/2/3 归属 Core1，但 `Adc_Init` 第一次发生在 Core0（EcuM）。Core
 | --- | --- |
 | [DaVinci_Motor_Config_Guide.md](DaVinci_Motor_Config_Guide.md) | 逐模块配置参数（Mcu/Port/Pwm/Adc/Spi/Dio/Irq/Os/EcuM/BswM/Can/Com/NvM/Fee/Fls/ResourceM/Sbc/Rte） |
 | [DaVinci_Modules/README.md](DaVinci_Modules/README.md) | 逐模块配置文档索引（19 个模块，每模块一份独立配置说明） |
-| [DualCore_vLinkGen_MemMap_问题总结.md](DualCore_vLinkGen_MemMap_问题总结.md) | 双核迁移：链接错误、vBRS/vLinkGen、X-Signal、TicksPerBase、启动竞态 |
-| [Sbc_30_Tlf35584_Fix.md](Sbc_30_Tlf35584_Fix.md) | SBC 编译修复（MemMap/Compiler_Cfg/SPI 类型） |
-| [MotorZeroCal_DFlash.md](MotorZeroCal_DFlash.md) | 零位标定与 DFlash 持久化 |
-| [FOC_OpenLoop_Startup.md](FOC_OpenLoop_Startup.md) | 开环启动流程与台架调试顺序 |
-| [CurrentLoop_Protection.md](CurrentLoop_Protection.md) | 过流/欠压保护设计（OC1/OC2/迟滞/blanking） |
 | `Config/ECUC/*.arxml` | 配置“源代码”，最终以实际 arxml 为准 |
 
 
