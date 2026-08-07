@@ -1,78 +1,588 @@
-2024-08-03 - 21:29:07
-21:29:07 - Workflow Step 'Update workflow' started.
+2024-08-05 - 21:33:13
+21:33:13 - Workflow Step 'Update workflow' started.
 Using DaVinci Configurator Classic (beta) 5.25.37 SP2 (x86_64).
-21:29:07 - Workflow Step 'Validate workflow environment' started.
-21:29:07 - Workflow Step 'Validate dpa file' started.
-21:29:08 - Workflow Step 'Validate dpa file' finished.
-21:29:08 - Workflow Step 'SLP conformance check' started.
-21:29:08 - Workflow Step 'SLP conformance check' finished.
-21:29:08 - Workflow Step 'Validate workflow environment' finished.
-21:29:08 - Workflow Step 'Create copy of the Project' started.
-Copy project 'E:\workFiles\TC367\TC367\workspace\last364' to 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-2583806\Workflow\1722691748594-0'...
+21:33:13 - Workflow Step 'Validate workflow environment' started.
+21:33:13 - Workflow Step 'Validate dpa file' started.
+21:33:14 - Workflow Step 'Validate dpa file' finished.
+21:33:14 - Workflow Step 'SLP conformance check' started.
+21:33:14 - Workflow Step 'SLP conformance check' finished.
+21:33:14 - Workflow Step 'Validate workflow environment' finished.
+21:33:14 - Workflow Step 'Input File Pre-Processing' started.
+21:33:14 - Workflow Step 'Converting legacy file(s) to AUTOSAR files' started.
+              [ERROR] Legacy Converter finished with errors.
+Convert legacy file(s) to System Description
+Used executable: E:\workFiles\TC367\TC367\CBD2200508_D00\CBD2200508_D00\Misc\LegacyDb2SystemDescrConverter\Application\LegacyDb2SystemDescrConverter.exe
+Arguments: E:\workFiles\TC367\TC367\workspace\last364\Config_Vector\CANFD364.dbc -o "C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-0422637\LegacyConverterResults\1722864795350-0\ConvertedLegacy" -r 00048 -e -v 19
+Vector Legacy Database Converter
+Version: 1.8.67.0
+Copyright (c) 2018 Vector Informatik GmbH.
+SIP License found as E:\workFiles\TC367\TC367\CBD2200508_D00\CBD2200508_D00\DaVinciConfigurator\ComponentLicense_DaVinciConfigurator.lic
+Command line: E:\workFiles\TC367\TC367\CBD2200508_D00\CBD2200508_D00\Misc\LegacyDb2SystemDescrConverter\Application\LegacyDb2SystemDescrConverter.exe E:\workFiles\TC367\TC367\workspace\last364\Config_Vector\CANFD364.dbc -o "C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-0422637\LegacyConverterResults\1722864795350-0\ConvertedLegacy" -r 00048 -e -v 19
+Converting DBC file E:\workFiles\TC367\TC367\workspace\last364\Config_Vector\CANFD364.dbc
+              [WARNING] DBC attribute Manufacturer has unknown value 'CLBT'
+==> Use Manufacturer='Vector' as attribute value
+              [ERROR] DBC attribute definition GenMsgSendType has unknown default value cyclicX
+              [ERROR] DBC attribute definition GenSigSendType has unknown default value cyclicX
+Writing System Description...
+Writing 3 ECU Extracts...
+C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-0422637\LegacyConverterResults\1722864795350-0\ConvertedLegacy.arxml
+C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-0422637\LegacyConverterResults\1722864795350-0\ConvertedLegacy_MyECU.arxml
+C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-0422637\LegacyConverterResults\1722864795350-0\ConvertedLegacy_RearECU.arxml
+C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-0422637\LegacyConverterResults\1722864795350-0\ConvertedLegacy_Tester.arxml
+Elapsed time: 1.409 seconds
+2 Errors
+1 Warnings
+21:33:16 - Workflow Step 'Converting legacy file(s) to AUTOSAR files' finished.
+21:33:16 - Workflow Step 'Load arxml file after preprocessing' started.
+Load arxml file from path: C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-0422637\LegacyConverterResults\1722864795350-0\ConvertedLegacy_MyECU.arxml
+21:33:17 - Workflow Step 'Load arxml file after preprocessing' finished.
+21:33:17 - Workflow Step 'Evaluate system extract paths' started.
+21:33:17 - Workflow Step 'Evaluate system extract paths' finished.
+21:33:17 - Workflow Step 'Converting legacy diagnostics file(s) to AUTOSAR files' started.
+nfo   ----> Process of diagnostic specification
+nfo   DDM-Version: 21.2.1 (Release)
+nfo   Importing CDD file E:\workFiles\TC367\TC367\workspace\last364\Config_Vector\MyEcu.cdd, ECU: MyEcu, variant: CommonDiagnostics
+arn   Migrate DIDs: DID "Example: WriteOnlyDID", 0x0004 and DID Diagnostic Instance "qpath:/Demo_FlexrayOnly/Stored_Data/Example_WriteOnlyDID" have different identifier: 0x4 <> 0x3
+arn   Migrate DIDs:  Use identifier of Diagnostic Instance 0x3
+arn   Migrate DIDs: DID "Example: WriteOnlyDID", 0x0004 and DID Diagnostic Instance "qpath:/Demo_Without_2A_UUDT/Stored_Data/Example_WriteOnlyDID" have different identifier: 0x4 <> 0x3
+arn   Migrate DIDs:  Use identifier of Diagnostic Instance 0x3
+arn   Migrate DIDs: DID "Example: IO Control", 0x0003 and DID Diagnostic Instance "qpath:/OBD/IOControl/Example_IO_Control" have different identifier: 0x3 <> 0x10
+arn   Migrate DIDs:  Use identifier of Diagnostic Instance 0x10
+nfo   Selecting ECU 'MyEcu'  Variant 'CommonDiagnostics'.
+nfo   Selecting Manufacturer 'Vector'.
+nfo   'Vector' was selected and 'Vector' was detected.
+nfo   Importing Database information.
+nfo   ----> Importing Variants
+nfo   <---- Importing Variants
+nfo   ----> Importing StateGroups
+nfo   Importing StateMachine information.
+nfo   <---- Importing StateGroups
+nfo   ----> Importing Services
+nfo   Importing Service '1001'.
+nfo   Importing Service '1002'.
+nfo   Importing Service '1003'.
+nfo   Importing Service '1101'.
+nfo   Importing Service '14'.
+nfo   Importing Service '1901'.
+nfo   Importing Service '1902'.
+nfo   Importing Service '1903'.
+nfo   Importing Service '1904'.
+nfo   Importing Service '1906'.
+nfo   Importing Service '1907'.
+nfo   Importing Service '1908'.
+nfo   Importing Service '1909'.
+nfo   Importing Service '190A'.
+nfo   Importing Service '190C'.
+nfo   Importing Service '190D'.
+nfo   Importing Service '1914'.
+nfo   Importing Service '220003'.
+nfo   Importing Service '220100'.
+nfo   Importing Service '220101'.
+nfo   Importing Service '22F180'.
+nfo   Importing Service '22F187'.
+nfo   Importing Service '22F189'.
+nfo   Importing Service '22F18C'.
+nfo   Importing Service '22F190'.
+nfo   Importing Service '22F193'.
+nfo   Importing Service '2701'.
+nfo   Importing Service '2702'.
+nfo   Importing Service '2703'.
+nfo   Importing Service '2704'.
+nfo   Importing Service '2800'.
+nfo   Importing Service '2801'.
+nfo   Importing Service '2802'.
+nfo   Importing Service '2803'.
+nfo   Importing Service '2E0100'.
+nfo   Importing Service '2E0101'.
+nfo   Importing Service '2EF180'.
+nfo   Importing Service '2EF187'.
+nfo   Importing Service '2EF189'.
+nfo   Importing Service '2EF18C'.
+nfo   Importing Service '2EF190'.
+nfo   Importing Service '2EF193'.
+nfo   Importing Service '2F000300'.
+nfo   Importing Service '2F000301'.
+nfo   Importing Service '2F000302'.
+nfo   Importing Service '2F000303'.
+nfo   Importing Service '31010100'.
+nfo   Importing Service '31010104'.
+nfo   Importing Service '31020100'.
+nfo   Importing Service '31030100'.
+nfo   Importing Service '31030104'.
+nfo   Importing Service '3E00'.
+nfo   Importing Service '8501'.
+nfo   Importing Service '8502'.
+nfo   <---- Importing Services
+nfo   ----> Importing FaultMemory
+nfo   Importing FaultMemory.
+arn   Could not extract DTC format.
+nfo   <---- Importing FaultMemory
+nfo   ----> Importing EnvironmentalConditions
+nfo   <---- Importing EnvironmentalConditions
+nfo   ----> Importing FreezeFrame
+nfo   <---- Importing FreezeFrame
+nfo   ----> Importing DiagSettings
+nfo   Importing DiagSettings
+nfo   <---- Importing DiagSettings
+nfo   ----> Importing DataCompProps
+nfo   <---- Importing DataCompProps
+nfo   <<<<<<<<<<<<< CDD Import finished successfully after 0.422
+nfo   Shaping imported model for diagnostic OEM 'Vector'
+nfo    - Used Diagnostic OEM:  Vector
+nfo    - OBD2-Support   (DCM): true
+nfo    - OBD2-Support   (DEM): true
+nfo    - WWHOBD-Support (DCM): true
+nfo    - Microsar:             true
+nfo    - Meta-Ecuc-Export:     true
+nfo   >>>>>>>>>>>>> SHAPING preparation >>>>>>>>>>>>>
+nfo   <<<<<<<<<<<<< SHAPING ready after 0.015s (15ms) <<<<<<<<<<<<<
+nfo   >>>>>>>>>>>>> SHAPING started >>>>>>>>>>>>>
+nfo   >>>>>>>>>>>>> ShapingStep ServiceSelection >>>>>>>>>>>>>
+nfo   <<<<<<<<<<<<< ShapingStep ServiceSelection (completed in 0.000s (0ms) <<<<<<<<<<<<<
+nfo   >>>>>>>>>>>>> ShapingStep DataPreparation >>>>>>>>>>>>>
+nfo   * Shape Data Comp Collections
+nfo   * Shape Compu-Methods
+nfo   * Fix Unsigned Boolean
+nfo   * Convert XInt24/XInt64 to Byte-Array
+nfo   * Set Compu-Scale Symbols
+nfo   <<<<<<<<<<<<< ShapingStep DataPreparation (completed in 0.016s (16ms) <<<<<<<<<<<<<
+nfo   >>>>>>>>>>>>> ShapingStep ServiceDefinition >>>>>>>>>>>>>
+nfo   * Looking for duplicated services
+nfo   * Destroying duplicated services
+nfo     - Service 0x19 - 'FaultMemory_ReadNumber deleted - cause: duplicate
+nfo   At Service 0x85
+nfo     - Set 'control option record present' to 'false'
+nfo   * Looking for duplicated sub-services
+nfo   <<<<<<<<<<<<< ShapingStep ServiceDefinition (completed in 0.016s (16ms) <<<<<<<<<<<<<
+nfo   >>>>>>>>>>>>> ShapingStep DataDefinition >>>>>>>>>>>>>
+nfo   At Ecu
+nfo     - Service: '0x2e 0x100 DevelopmentData_Write' shared data components linked to Service: '0x22 0x100 DevelopmentData_Read' !!!
+nfo     - Service: '0x2e 0x101 DataDiagnosticIdentifier_DID_Write' shared data components linked to Service: '0x22 0x101 DataDiagnosticIdentifier_DID_Read' !!!
+nfo     - Service: '0x2e 0xf180 Boot_Software_Write' shared data components linked to Service: '0x22 0xf180 Boot_Software_Read' !!!
+nfo     - Service: '0x2e 0xf187 Spare_Part_Number_Write' shared data components linked to Service: '0x22 0xf187 Spare_Part_Number_Read' !!!
+nfo     - Service: '0x2e 0xf189 EcuIdentification_Write' shared data components linked to Service: '0x22 0xf189 EcuIdentification_Read' !!!
+nfo     - Service: '0x2e 0xf18c SerialNumber_Write' shared data components linked to Service: '0x22 0xf18c SerialNumber_Read' !!!
+nfo     - Service: '0x2e 0xf190 Vehicle_Identification_Write' shared data components linked to Service: '0x22 0xf190 Vehicle_Identification_Read' !!!
+nfo     - Service: '0x2e 0xf193 Hardware_Version_Write' shared data components linked to Service: '0x22 0xf193 Hardware_Version_Read' !!!
+nfo   * Combine Pid Parameters
+nfo   * Building Service Dids
+nfo   * Building Routines
+nfo     - Routine 'SampleRoutineControl' created
+nfo     - Routine 'SampleRoutineControl_StartOnly' created
+nfo   * Shape Routine Parameter Names
+nfo   <<<<<<<<<<<<< ShapingStep DataDefinition (completed in 0.000s (0ms) <<<<<<<<<<<<<
+nfo   >>>>>>>>>>>>> ShapingStep DataIdentifier >>>>>>>>>>>>>
+nfo   At Did 0xf190 - 'Vehicle_Identification'
+nfo     - Set DID property 'IsVIN' to 'true'
+nfo   <<<<<<<<<<<<< ShapingStep DataIdentifier (completed in 0.000s (0ms) <<<<<<<<<<<<<
+nfo   >>>>>>>>>>>>> ShapingStep Service >>>>>>>>>>>>>
+nfo   * Building Diagnostic Event Memories
+nfo   * Checking Diagnostic Event Memories (DTC)
+nfo   * Checking Diagnostic Event Memories (EDR)
+nfo   * Checking Diagnostic Event Memories (SSR)
+nfo   At Service 0x10
+nfo     - Qualifier changed from 'DefaultSession_Start' to 'DiagSessionControl'
+nfo     - Service action qualifier set to 'SessionControl'
+nfo   At Service 0x10 SubService 0x1
+nfo     - SubService action qualifier set to 'StartSession'
+nfo   At Service 0x10 SubService 0x2
+nfo     - SubService action qualifier set to 'StartSession'
+nfo   At Service 0x10 SubService 0x3
+nfo     - SubService action qualifier set to 'StartSession'
+nfo   At Service 0x10 SubService 0x1
+nfo     - Qualifier changed from 'DefaultSession_Start' to 'Default'
+nfo   At Service 0x10 SubService 0x2
+nfo     - Qualifier changed from 'ProgrammingSession_Start' to 'Programming'
+nfo   At Service 0x10 SubService 0x3
+nfo     - Qualifier changed from 'ExtendedDiagnosticSession_Start' to 'Extended'
+nfo   At Service 0x11
+nfo     - Qualifier changed from 'Hard_Reset_Reset' to 'EcuReset'
+nfo   At Service 0x11 SubService 0x1
+nfo     - SubService action qualifier set to 'EcuReset'
+nfo   At Service 0x11 SubService 0x1
+nfo     - Qualifier changed from 'Hard_Reset_Reset' to 'Hard'
+nfo   At Service 0x14
+nfo     - Qualifier changed from 'FaultMemory_Clear' to 'ClearDiagInfo'
+nfo   At Service 0x14 SubService
+nfo     - SubService action qualifier set to 'Clear'
+nfo     - Qualifier changed from 'FaultMemory_Clear' to 'ClearDiagInfo'
+nfo   At Service 0x19
+nfo     - Qualifier changed from 'FaultMemory_ReadAllIdentified' to 'ReadDtcInfo'
+nfo   At Service 0x19 SubService 0x2
+nfo     - SubService action qualifier set to 'ReadDtc'
+nfo   At Service 0x19 SubService 0x1
+nfo     - SubService action qualifier set to 'ReadDtc'
+nfo   At Service 0x19 SubService 0x3
+nfo     - SubService action qualifier set to 'ReadDtc'
+nfo   At Service 0x19 SubService 0x4
+nfo     - SubService action qualifier set to 'ReadDtc'
+nfo   At Service 0x19 SubService 0x6
+nfo     - SubService action qualifier set to 'ReadDtc'
+nfo   At Service 0x19 SubService 0x7
+nfo     - SubService action qualifier set to 'ReadDtc'
+nfo   At Service 0x19 SubService 0x8
+nfo     - SubService action qualifier set to 'ReadDtc'
+nfo   At Service 0x19 SubService 0x9
+nfo     - SubService action qualifier set to 'ReadDtc'
+nfo   At Service 0x19 SubService 0xa
+nfo     - SubService action qualifier set to 'ReadDtc'
+nfo   At Service 0x19 SubService 0xc
+nfo     - SubService action qualifier set to 'ReadDtc'
+nfo   At Service 0x19 SubService 0xd
+nfo     - SubService action qualifier set to 'ReadDtc'
+nfo   At Service 0x19 SubService 0x14
+nfo     - SubService action qualifier set to 'ReadDtc'
+nfo   At Service 0x19 SubService 0x1
+nfo     - Qualifier changed from 'FaultMemory_ReadNumber' to 'RNODTCBSM'
+nfo   At Service 0x19 SubService 0x2
+nfo     - Qualifier changed from 'FaultMemory_ReadAllIdentified' to 'RDTCBSM'
+nfo   At Service 0x19 SubService 0x3
+nfo     - Qualifier changed from 'FaultMemory_Read_snapshot_ID' to 'RDTCSSI'
+nfo   At Service 0x19 SubService 0x4
+nfo     - Qualifier changed from 'FaultMemory_Read_snapshot' to 'RDTCSSBDTC'
+nfo   At Service 0x19 SubService 0x6
+nfo     - Qualifier changed from 'FaultMemory_Read_extended' to 'RDTCEDRBDN'
+nfo   At Service 0x19 SubService 0x7
+nfo     - Qualifier changed from 'FaultMemory_Report_nbr_of_DTC_bei_severity' to 'RNODTCBSMR'
+nfo   At Service 0x19 SubService 0x8
+nfo     - Qualifier changed from 'FaultMemory_Read_DTC_by_severity' to 'RDTCBSMR'
+nfo   At Service 0x19 SubService 0x9
+nfo     - Qualifier changed from 'FaultMemory_Read_severity_information' to 'RSIODTC'
+nfo   At Service 0x19 SubService 0xa
+nfo     - Qualifier changed from 'FaultMemory_ReadAllSupported' to 'RSUPDTC'
+nfo   At Service 0x19 SubService 0xc
+nfo     - Qualifier changed from 'FaultMemory_Read_first_confirmed_DTC' to 'RFCDTC'
+nfo   At Service 0x19 SubService 0xd
+nfo     - Qualifier changed from 'FaultMemory_Read_most_recent_test_failed_DTC' to 'RMRTFDTC'
+nfo   At Service 0x19 SubService 0x14
+nfo     - Qualifier changed from 'FaultMemory_Read_fault_detection_counter' to 'RDTCFDC'
+nfo   At Service 0x22
+nfo     - Spec changed from '8' to 'Other'(12)
+nfo     - Qualifier changed from 'SampleIoControl_Read' to 'ReadDataById'
+nfo     - Service action qualifier set to 'Read'
+nfo   At Service 0x22 SubService 0x3
+nfo     - SubService action qualifier set to 'ReadDid'
+nfo   At Service 0x22 SubService 0x100
+nfo     - SubService action qualifier set to 'ReadDid'
+nfo   At Service 0x22 SubService 0x101
+nfo     - SubService action qualifier set to 'ReadDid'
+nfo   At Service 0x22 SubService 0xf180
+nfo     - SubService action qualifier set to 'ReadDid'
+nfo   At Service 0x22 SubService 0xf187
+nfo     - SubService action qualifier set to 'ReadDid'
+nfo   At Service 0x22 SubService 0xf189
+nfo     - SubService action qualifier set to 'ReadDid'
+nfo   At Service 0x22 SubService 0xf18c
+nfo     - SubService action qualifier set to 'ReadDid'
+nfo   At Service 0x22 SubService 0xf190
+nfo     - SubService action qualifier set to 'ReadDid'
+nfo   At Service 0x22 SubService 0xf193
+nfo     - SubService action qualifier set to 'ReadDid'
+nfo   At Service 0x27
+nfo     - Qualifier changed from 'SeedLevel1_Request' to 'SecurityAccess'
+nfo     - Service action qualifier set to 'SecurityAccess'
+nfo   At Service 0x27 SubService 0x2
+nfo     - SubService action qualifier set to 'SendKey'
+nfo   At Service 0x27 SubService 0x4
+nfo     - SubService action qualifier set to 'SendKey'
+nfo   At Service 0x27 SubService 0x1
+nfo     - SubService action qualifier set to 'GetSeed'
+nfo   At Service 0x27 SubService 0x3
+nfo     - SubService action qualifier set to 'GetSeed'
+nfo   At Service 0x28
+nfo     - Qualifier changed from 'EnableRxAndEnableTx_Control' to 'CommunicationControl'
+nfo   At Service 0x28 SubService 0x0
+nfo     - SubService action qualifier set to 'CommCtrl'
+nfo   At Service 0x28 SubService 0x1
+nfo     - SubService action qualifier set to 'CommCtrl'
+nfo   At Service 0x28 SubService 0x2
+nfo     - SubService action qualifier set to 'CommCtrl'
+nfo   At Service 0x28 SubService 0x3
+nfo     - SubService action qualifier set to 'CommCtrl'
+nfo   At Service 0x28 SubService 0x0
+nfo     - Qualifier changed from 'EnableRxAndEnableTx_Control' to 'EnableRxAndTx'
+nfo   At Service 0x28 SubService 0x1
+nfo     - Qualifier changed from 'EnableRxAndDisableTx_Control' to 'EnableRxAndDisableTx'
+nfo   At Service 0x28 SubService 0x2
+nfo     - Qualifier changed from 'DisableRxAndEnableTx_Control' to 'DisableRxAndEnableTx'
+nfo   At Service 0x28 SubService 0x3
+nfo     - Qualifier changed from 'DisableRxAndDisableTx_Control' to 'DisableRxAndTx'
+nfo   At Service 0x2e
+nfo     - Qualifier changed from 'DevelopmentData_Write' to 'WriteDataById'
+nfo     - Service action qualifier set to 'Write'
+nfo   At Service 0x2e SubService 0x100
+nfo     - SubService action qualifier set to 'WriteDid'
+nfo   At Service 0x2e SubService 0x101
+nfo     - SubService action qualifier set to 'WriteDid'
+nfo   At Service 0x2e SubService 0xf180
+nfo     - SubService action qualifier set to 'WriteDid'
+nfo   At Service 0x2e SubService 0xf187
+nfo     - SubService action qualifier set to 'WriteDid'
+nfo   At Service 0x2e SubService 0xf189
+nfo     - SubService action qualifier set to 'WriteDid'
+nfo   At Service 0x2e SubService 0xf18c
+nfo     - SubService action qualifier set to 'WriteDid'
+nfo   At Service 0x2e SubService 0xf190
+nfo     - SubService action qualifier set to 'WriteDid'
+nfo   At Service 0x2e SubService 0xf193
+nfo     - SubService action qualifier set to 'WriteDid'
+nfo   At Service 0x2f
+nfo     - Qualifier changed from 'SampleIoControl_ReturnControl' to 'IoControlById'
+nfo     - Service action qualifier set to 'IoCtrl'
+nfo   At Service 0x2f SubService 0x3 0x0
+nfo     - SubService action qualifier set to 'IoCtrlRetCtrlToEcu'
+nfo   At Service 0x2f SubService 0x3 0x1
+nfo     - SubService action qualifier set to 'IoCtrlRstToDefault'
+nfo   At Service 0x2f SubService 0x3 0x2
+nfo     - SubService action qualifier set to 'IoCtrlFrzCurrState'
+nfo   At Service 0x2f SubService 0x3 0x3
+nfo     - SubService action qualifier set to 'IoCtrlShortTermAdj'
+nfo   At Service 0x31
+nfo     - Spec changed from '8' to 'RoutineControl'(9)
+nfo     - Qualifier changed from 'SampleRoutineControl_Start' to 'RoutineControl'
+nfo   At Service 0x31 SubService 0x1
+nfo     - SubService action qualifier set to 'RtnCtrlStart'
+nfo   At Service 0x31 SubService 0x1
+nfo     - SubService action qualifier set to 'RtnCtrlStart'
+nfo   At Service 0x31 SubService 0x2
+nfo     - SubService action qualifier set to 'RtnCtrlStop'
+nfo   At Service 0x31 SubService 0x3
+nfo     - SubService action qualifier set to 'RtnCtrlReqRes'
+nfo   At Service 0x31 SubService 0x3
+nfo     - SubService action qualifier set to 'RtnCtrlReqRes'
+nfo   At Service 0x3e
+nfo     - Qualifier changed from 'TesterPresent_Send' to 'TesterPresent'
+nfo   At Service 0x3e SubService 0x0
+nfo     - SubService action qualifier set to 'Send'
+nfo     - Qualifier changed from 'TesterPresent_Send' to 'TesterPresent'
+nfo   At Service 0x85
+nfo     - Spec changed from '12' to 'FaultMemory'(2)
+nfo     - Qualifier changed from 'ControlDTCSetting_On' to 'ControlDtcSetting'
+nfo   At Service 0x85 SubService 0x1
+nfo     - SubService action qualifier set to 'ControlDtcSetting'
+nfo   At Service 0x85 SubService 0x2
+nfo     - SubService action qualifier set to 'ControlDtcSetting'
+nfo   At Service 0x85 SubService 0x1
+nfo     - Qualifier changed from 'ControlDTCSetting_On' to 'Enable'
+nfo   At Service 0x85 SubService 0x2
+nfo     - Qualifier changed from 'ControlDTCSetting_Off' to 'Disable'
+nfo   <<<<<<<<<<<<< ShapingStep Service (completed in 0.062s (62ms) <<<<<<<<<<<<<
+nfo   >>>>>>>>>>>>> ShapingStep StateMachine >>>>>>>>>>>>>
+nfo   * Merging Environmental Modes
+nfo   * Merging Environmental Dids
+nfo   * Merging Environmental Rules
+nfo   * Merging Access Conditions
+nfo   * Checking Diagnostic Sessions
+nfo   * Building Diagnostic Sessions
+nfo     - Session 'Default' created
+nfo     - Session 'Programming' created
+nfo     - Session 'Extended' created
+nfo   * Checking Diagnostic Securities
+              [WARNING] - Service 0x27 0x2 not allowed in its own state 'UnlockedL1'
+The service execution for this session state will be enabled
+              [WARNING] - Service 0x27 0x2 misses a transition from state 'Level_01' to state 'UnlockedL1'
+The required transition will be added
+              [WARNING] - Service 0x27 0x4 not allowed in its own state 'Level_3'
+The service execution for this session state will be enabled
+              [WARNING] - Security state 'Level_01' has no assigned security service
+Security state 'Level_01' deleted
+nfo   * Building Diagnostic Securities
+nfo     - Security 'UnlockedL1' created
+nfo     - Security 'Level_3' created
+nfo   * Checking Authorizations
+nfo   * Building Authorizations
+nfo   * Checking Environmental Conditions
+nfo   * Building Environmental Conditions
+nfo   * Building Access Conditions
+nfo     - Access Cond '|' created
+nfo     - Access Cond 'S02;S03|' created
+nfo     - Access Cond 'S03|' created
+nfo   <<<<<<<<<<<<< ShapingStep StateMachine (completed in 0.000s (0ms) <<<<<<<<<<<<<
+nfo   >>>>>>>>>>>>> ShapingStep StateMachine2 >>>>>>>>>>>>>
+nfo   At Security 0x1 [serviceAttr(MaxAttemptsToDelay):  exists]
+nfo     - Set property 'NumFailed' to '3'
+nfo   At Security 0x1 [serviceAttr(DelayTimeMs):  exists]
+nfo     - Set property 'DelayTime' to '10000'
+nfo   At Security 0x1 [serviceAttr(DelayTimeOnPowerOnMs):  exists]
+nfo     - Set property 'BootDelayTime' to '0'
+nfo   At Security 0x2 [serviceAttr(MaxAttemptsToDelay):  exists]
+nfo     - Set property 'NumFailed' to '3'
+nfo   At Security 0x2 [serviceAttr(DelayTimeMs):  exists]
+nfo     - Set property 'DelayTime' to '10000'
+nfo   <<<<<<<<<<<<< ShapingStep StateMachine2 (completed in 0.000s (0ms) <<<<<<<<<<<<<
+nfo   >>>>>>>>>>>>> ShapingStep StateMachine3 >>>>>>>>>>>>>
+nfo   At Session 0x1 [P2Time is Null]
+nfo     - Set property 'P2Time' to '50'
+nfo   At Session 0x1 [P2ExTime is Null]
+nfo     - Set property 'P2ExTime' to '5000'
+nfo   At Session 0x2 [P2Time is Null]
+nfo     - Set property 'P2Time' to '50'
+nfo   At Session 0x2 [P2ExTime is Null]
+nfo     - Set property 'P2ExTime' to '5000'
+nfo   At Session 0x3 [P2Time is Null]
+nfo     - Set property 'P2Time' to '50'
+nfo   At Session 0x3 [P2ExTime is Null]
+nfo     - Set property 'P2ExTime' to '5000'
+nfo   At Session 0x1 [JumpToBoot is Null]
+nfo     - Set property 'JumpToBoot' to 'noBoot'
+nfo     - Set property 'Reset-to-FBL' to false
+nfo   At Session 0x3 [JumpToBoot is Null]
+nfo     - Set property 'JumpToBoot' to 'noBoot'
+nfo   <<<<<<<<<<<<< ShapingStep StateMachine3 (completed in 0.000s (0ms) <<<<<<<<<<<<<
+nfo   >>>>>>>>>>>>> ShapingStep Settings >>>>>>>>>>>>>
+nfo   At Ecu 'MyEcu'
+nfo     - Set 'periodic rate slow' to '1000'
+nfo     - Set 'periodic rate medium' to '100'
+nfo     - Set 'periodic rate fast' to '20'
+nfo     - Set 'maximum number of dynamically defined dids' to '5'
+nfo   <<<<<<<<<<<<< ShapingStep Settings (completed in 0.000s (0ms) <<<<<<<<<<<<<
+nfo   >>>>>>>>>>>>> ShapingStep FaultMemory >>>>>>>>>>>>>
+nfo   At DTC 0x2
+nfo     - Set DTC-Prop 'DtcType' to default 'Fault'
+nfo     - Set DTC-Prop 'Priority' to '2'
+nfo     - Set DTC-Prop 'AgingCycle' to 'DEM_IGNITION'
+nfo     - Set DTC-Prop 'AgingCount' to '100'
+nfo   At DTC 0x2 DTC_SHORTNAME exists
+nfo     - Set DTC-Prop 'Qualifier' to 'DTC_0x000002'
+nfo   At DTC 0x2 DTC_AGING_SUPPORTED == not supported
+nfo     - Set DTC-Prop 'AgingAllowed' to 'false'
+nfo   At DTC 0x2 DTC_SEVERITY_VALUE == noSeverity
+nfo     - Set DTC-Prop 'Severity' to '0'
+nfo   At DTC 0x3
+nfo     - Set DTC-Prop 'DtcType' to default 'Fault'
+nfo     - Set DTC-Prop 'Priority' to '1'
+nfo     - Set DTC-Prop 'AgingCycle' to 'DEM_WARMUP'
+nfo     - Set DTC-Prop 'AgingCount' to '40'
+nfo   At DTC 0x3 DTC_SHORTNAME exists
+nfo     - Set DTC-Prop 'Qualifier' to 'DTC_0x000003'
+nfo   At DTC 0x3 DTC_AGING_SUPPORTED == supported
+nfo     - Set DTC-Prop 'AgingAllowed' to 'true'
+nfo   At DTC 0x3 DTC_SEVERITY_VALUE == noSeverity
+nfo     - Set DTC-Prop 'Severity' to '0'
+nfo   At Faultmemory
+nfo     - Set fault memory property 'ecgNaming' to 'singleElem'
+nfo   At Service 0x19 SubService 0x2
+nfo     - Set primary memory property 'StatAvailMask' to '255'
+nfo   At Event-Memory
+nfo     - Set primary memory property 'ssrUpdatable' to 'true'
+nfo   <<<<<<<<<<<<< ShapingStep FaultMemory (completed in 0.000s (0ms) <<<<<<<<<<<<<
+nfo   >>>>>>>>>>>>> ShapingStep FaultMemory1 >>>>>>>>>>>>>
+nfo   <<<<<<<<<<<<< ShapingStep FaultMemory1 (completed in 0.000s (0ms) <<<<<<<<<<<<<
+nfo   >>>>>>>>>>>>> ShapingStep FaultMemory2 >>>>>>>>>>>>>
+nfo   * Building DidSets
+nfo   * Building Events
+nfo   At Event-Memory  SSR-Numeration is Null
+nfo     - Set primary memory property 'SsrNumeration' to 'calculated'
+nfo   At Occurrence_Counter
+nfo     - Set property 'DemDataType' to 'OccCtr'
+nfo   At Event 'DTC_0x000002_Event' EventKind is Null
+nfo     - Set Event-Prop 'EventKind' to 'SWC' using 'updatable'
+nfo   At Event 'DTC_0x000002_Event' EventImport: false
+nfo     - Set Event-Prop 'OpCycle' to 'DEM_POWER'
+nfo     - Set Event-Prop 'EventFailureCount' to '0'
+nfo   At Event 'DTC_0x000003_Event' EventKind is Null
+nfo     - Set Event-Prop 'EventKind' to 'SWC' using 'updatable'
+nfo   At Event 'DTC_0x000003_Event' EventImport: false
+nfo     - Set Event-Prop 'OpCycle' to 'DEM_OBD_DCY'
+nfo     - Set Event-Prop 'EventFailureCount' to '2'
+nfo   At DTC 0x2 DTC_INIT_MONITOR_REQUIRED == required
+nfo     - Set Event-Prop 'InitMonitor' to 'true'
+nfo   At DTC 0x2 IsAnyObd == false EventImport: false DTC_WARNING_INDICATOR_FLAG == supported
+nfo     - Warning Indicator 'WarningIndicator' with type 'Warning' created
+nfo     - Set Event-Prop 'WarnIndicator' to 'WarningIndicator' using 'Warning'
+nfo   At DTC 0x3 DTC_INIT_MONITOR_REQUIRED == not required
+nfo     - Set Event-Prop 'InitMonitor' to 'false'
+nfo   At DTC 0x3 IsAnyObd == false EventImport: false DTC_WARNING_INDICATOR_FLAG == supported
+nfo     - Set Event-Prop 'WarnIndicator' to 'WarningIndicator' using 'Warning'
+nfo   <<<<<<<<<<<<< ShapingStep FaultMemory2 (completed in 0.000s (0ms) <<<<<<<<<<<<<
+nfo   >>>>>>>>>>>>> ShapingStep FaultMemory3 >>>>>>>>>>>>>
+nfo   At DTC 0x2 SsrNumerationType == calculated MaxSsrCount is Null
+nfo     - Set DTC-Prop 'MaxSsrCount' to '1'
+nfo   At DTC 0x2 EventImport: false DTC_DEBOUNCING_ALGORITHM == Counter based DTC_JUMP_DOWN_PREPASSED == (Not NULL) DTC_JUMP_UP_PREFAILED == (Not NULL) DTC_STEP_SIZE_PREFAILED == (Not NULL) DTC_STEP_SIZE_PREPASSED == (Not NULL)
+nfo     - Set Event-Prop 'DebounceType' to 'Counter'
+nfo   At DTC 0x3 SsrNumerationType == calculated MaxSsrCount is Null
+nfo     - Set DTC-Prop 'MaxSsrCount' to '1'
+nfo   At DTC 0x3 EventImport: false DTC_DEBOUNCING_ALGORITHM == Counter based DTC_JUMP_DOWN_PREPASSED == (Not NULL) DTC_JUMP_UP_PREFAILED == (Not NULL) DTC_STEP_SIZE_PREFAILED == (Not NULL) DTC_STEP_SIZE_PREPASSED == (Not NULL)
+nfo     - Set Event-Prop 'DebounceType' to 'Counter'
+nfo   At Event 'DTC_0x000002_Event' EventImport: false DebounceType == Counter
+nfo     - Set Event-Prop 'JumpUp' to 'Yes'
+nfo     - Set Event-Prop 'JumpDown' to 'No'
+nfo     - Set Event-Prop 'IncStepSize' to '1'
+nfo     - Set Event-Prop 'DecStepSize' to '1'
+nfo     - Set Event-Prop 'Register' to default 'NULL'
+nfo   At Event 'DTC_0x000003_Event' EventImport: false DebounceType == Counter
+nfo     - Set Event-Prop 'JumpUp' to 'Yes'
+nfo     - Set Event-Prop 'JumpDown' to 'No'
+nfo     - Set Event-Prop 'IncStepSize' to '1'
+nfo     - Set Event-Prop 'DecStepSize' to '1'
+nfo     - Set Event-Prop 'Register' to default 'NULL'
+nfo   <<<<<<<<<<<<< ShapingStep FaultMemory3 (completed in 0.000s (0ms) <<<<<<<<<<<<<
+nfo   >>>>>>>>>>>>> ShapingStep FaultMemory4 >>>>>>>>>>>>>
+nfo   At Event 'DTC_0x000002_Event' Microsar: true
+nfo     - Set Event-Prop 'HealingCycle' to 'DEM_POWER' using 'Power'
+nfo   At Event 'DTC_0x000003_Event' Microsar: true
+nfo     - Set Event-Prop 'HealingCycle' to 'DEM_OBD_DCY' using 'ObdDcy'
+nfo   <<<<<<<<<<<<< ShapingStep FaultMemory4 (completed in 0.000s (0ms) <<<<<<<<<<<<<
+nfo   >>>>>>>>>>>>> ShapingStep FaultMemory5 >>>>>>>>>>>>>
+nfo   At DTC 0x2
+nfo     - Set DTC-Prop 'AltQualifier' to ''
+nfo   At DTC 0x3
+nfo     - Set DTC-Prop 'AltQualifier' to ''
+nfo   * Merging Debounce Algorithms
+nfo        - Algorithm 'DTC_0x000002_DebounceAlgorithmProperties' has 1 dublicate(s)
+nfo   * Merging Operation Cycles
+nfo   * Merging Warning Indicators
+nfo   * Merging Enable/Storage/Clear Conditions
+nfo   <<<<<<<<<<<<< ShapingStep FaultMemory5 (completed in 0.000s (0ms) <<<<<<<<<<<<<
+nfo   >>>>>>>>>>>>> ShapingStep Obd >>>>>>>>>>>>>
+nfo   * Building OBD Service Pids
+nfo   * Building OBD Service Monitor Identifier
+nfo   * Building OBD Service Rids
+nfo   * Building OBD Service Vehicle Infos
+nfo   <<<<<<<<<<<<< ShapingStep Obd (completed in 0.000s (0ms) <<<<<<<<<<<<<
+nfo   >>>>>>>>>>>>> ShapingStep CleanUp >>>>>>>>>>>>>
+nfo   * Finding duplicated sub-services in clean-up...
+nfo   * Shaping Memory Identifiers, use prefix: true
+nfo   <<<<<<<<<<<<< ShapingStep CleanUp (completed in 0.000s (0ms) <<<<<<<<<<<<<
+nfo   <<<<<<<<<<<<< SHAPING finished after 0.140s (140ms) <<<<<<<<<<<<<
+arn   Calling obsolete AR-Shaper
+nfo   Exporting ECUC module configurations to file: C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-0422637\DiagnosticsImportService\1722864802808-0\DiagnosticsDescriptionData7141454553145223709.xml
+nfo   ----> Create ECUC from imported diagnostic data.
+ote   Using EcucEx-Parameter 'DemDidQualifierMode' = 'R19' (default)
+ote   Using EcucEx-Parameter 'DcmQualifierMode' = 'R19' (default)
+nfo   ----> STEP 1: Create ECUC model.
+nfo   Creating Dcm module configuration...
+nfo   Creating Dem module configuration...
+nfo   <---- STEP 1: Finished.
+nfo   ----> STEP 2: Postprocess created ECUC model.
+nfo   ----> Transform imported object qualifiers/shortnames to match AUTOSAR IDENTIFIER pattern restriction (except length limit)
+nfo   <---- Finished transforming shortnames
+nfo   ----> Ensure uniqueness of container shortnames within their scope
+nfo   <---- Finished ensuring uniqueness of container shortnames
+nfo   ----> Truncate shortnames whose length exceeds the 128 character limit for AUTOSAR shortnames
+nfo   <---- Finished truncating shortnames
+nfo   ----> Resolve reference parameters
+nfo   <---- Finished resolving reference parameters
+nfo   <---- STEP 2: Finished.
+nfo   ----> STEP 3: Serialize ECUC model to XML.
+nfo   <---- STEP 3: Finished.
+nfo   <---- Finished creation of ECUC from imported diagnostic data.
+nfo   <<<<<<<<<<<<< Meta-EcuC Export finished after 0.032
+nfo   <---- Process of diagnostic specification.
+21:33:23 - Workflow Step 'Converting legacy diagnostics file(s) to AUTOSAR files' finished.
+Checking if the file preprocessing result is a valid ECU extract...
+Input File Pre-Processing finished with error(s).
+21:33:24 - Workflow Step 'Input File Pre-Processing' finished.
+21:33:24 - Workflow Step 'Create copy of the Project' started.
+Copy project 'E:\workFiles\TC367\TC367\workspace\last364' to 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-0422637\Workflow\1722864804320-0'...
 Adjusting DPA file of copied project...
-21:29:08 - Workflow Step 'Create copy of the Project' finished.
-21:29:08 - Workflow Step 'Analyse Bswmd's of the current project' started.
-21:29:08 - Workflow Step 'Analyse Bswmd's of the current project' finished.
-21:29:08 - Workflow Step 'Close Project' started.
-21:29:09 - Workflow Step 'Close Project' finished.
-21:29:15 - Workflow Step 'Prepare DaVinci Developer update data' started.
-21:29:15 - Workflow Step 'Prepare DaVinci Developer update data' finished.
-21:29:15 - Workflow Step 'Prepare System Extract' started.
-21:29:16 - Workflow Step 'Preprocessing System Extract' started.
-21:29:16 - Workflow Step 'Preprocessing System Extract' finished.
-21:29:16 - Workflow Step 'Create OEM Communication Extract' started.
-21:29:16 - Workflow Step 'Create OEM Communication Extract' finished.
-21:29:16 - Workflow Step 'Prepare System Extract' finished.
-21:29:16 - Workflow Step 'Updating the project' started.
-21:29:23 - Workflow Step 'Create ECU configuration' started.
-21:29:34 - Workflow Step 'Create ECU configuration' finished.
-21:29:34 - Workflow Step 'Update ECU configuration' started.
-21:29:51 - Workflow Step 'Update ECU configuration' finished.
-21:29:51 - Workflow Step 'Updating the project' finished.
-21:29:51 - Workflow Step 'Generate update report' started.
-21:30:16 - Workflow Step 'Generate update report' finished.
-21:30:16 - Workflow Step 'Execute Solving Actions' started.
-Executing Auto-Solving-Actions...
-Auto-Solving-Actions done.
-Executing update specific Preferred-Solving-Actions...
-Update specific Preferred-Solving-Actions done.
-21:30:26 - Workflow Step 'Execute Solving Actions' finished.
-21:30:27 - Workflow Step 'Update DaVinci Developer Workspace' started.
-Opening workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\last364.dcf'...
-Loading file PlatformTypes_AR4.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\AUTOSAR\PlatformTypes_AR4.arxml)
-Loading file BswM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\ServiceComponents\BswM_swc.arxml)
-Loading file ComM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\ServiceComponents\ComM_swc.arxml)
-Loading file Det_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\ServiceComponents\Det_swc.arxml)
-Loading file EcuM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\ServiceComponents\EcuM_swc.arxml)
-Loading file NvM_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\ServiceComponents\NvM_swc.arxml)
-Loading file Os_swc.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\ServiceComponents\Os_swc.arxml)
-Loading file Communication.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Update\DevData\Communication.arxml)
-Loading file DataTypes.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\DataTypes.arxml)
-Loading file IowHA.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\IowHA.arxml)
-Loading file last364.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\last364.arxml)
-Loading file MotorCdd.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\MotorCdd.arxml)
-Loading file MotorControll.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\MotorControll.arxml)
-Loading file Packages.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\Packages.arxml)
-Loading file PortInterfaces.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\PortInterfaces.arxml)
-Loading file StartApp.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\StartApp.arxml)
-Opened workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\last364.dcf' successfully.
-Start import
-Importing file (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\System\SystemExtract.arxml).
-Merging imported data
-Finished import
-Saving workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\last364.dcf'...
-Saving file DataTypes.arxml (C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\DataTypes.arxml)
-Saved workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\last364.dcf' successfully.
-Closing workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\last364.dcf'...
-Closed workspace 'C:\Users\Qxiong\AppData\Local\Temp\DaVinci\Cfg-6573632\Workflow\1722688329921-0\Config\Developer\last364.dcf' successfully.
-Result of DaVinci Developer workspace update.
-              OK
-21:30:43 - Workflow Step 'Update DaVinci Developer Workspace' finished.
-21:30:43 - Workflow Step 'Update RTE configuration' started.
-21:30:44 - Workflow Step 'Update RTE configuration' finished.
-21:30:44 - Workflow Step 'Align differences after successful update' started.
-21:30:44 - Workflow Step 'Align differences after successful update' finished.
-21:30:44 - Workflow Step 'Clean up update data' started.
-21:30:44 - Workflow Step 'Clean up update data' finished.
-Update workflow finished sucessfully.
-21:30:52 - Workflow Step 'Update workflow' finished.
+21:33:24 - Workflow Step 'Create copy of the Project' finished.
+21:33:24 - Workflow Step 'Analyse Bswmd's of the current project' started.
+21:33:24 - Workflow Step 'Analyse Bswmd's of the current project' finished.
+21:33:24 - Workflow Step 'Close Project' started.
+21:33:24 - Workflow Step 'Close Project' failed.
+              Workflow Step 'Close Project' failed. Detailed error description:
+The save of project last364 failed: java.io.FileNotFoundException: E:\workFiles\TC367\TC367\workspace\last364\last364.dpa (请求的操作无法在使用用户映射区域打开的文件上执行。)
+21:33:24 - Workflow Step 'Update workflow' failed.
+              Workflow Step 'Update workflow' failed. Detailed error description:
+[Error] The save of project last364 failed: java.io.FileNotFoundException: E:\workFiles\TC367\TC367\workspace\last364\last364.dpa (请求的操作无法在使用用户映射区域打开的文件上执行。)

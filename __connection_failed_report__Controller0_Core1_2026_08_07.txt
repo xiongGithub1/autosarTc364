@@ -1,0 +1,106 @@
+----------------------------------------------------------
+
+  Connection Failed Report from
+  Basic UDE Target Interface, Version: 1.17.3
+  created: 08/07/26, 15:45:19
+
+----------------------------------------------------------
+
+Windows version:
+  Win8 ()
+  Admin: yes
+
+UDE version:
+  Release:  5.00.05
+  Build:    8214
+  Path:     C:\Program Files (x86)\pls\UDE Starterkit 5.0
+
+Target configuration file:
+  C:\Users\Qxiong\Documents\pls\UDESTK 5.0\tc\TriBoard_TC36xA_das.cfg
+
+Error messages:
+  Tc2CoreTargIntf: Connection to target lost !
+  Tc2CoreTargIntf: Read memory block 0x00000000700009C0-0x00000000700009C0 failed !
+
+Settings:
+  PortType:  DAS
+  CommDevSel:  
+  TargetPort:  Default
+  TargetPortId:  553582592
+  DasIsDefault:  n
+  MaxJtagClk:  10000
+  CheckJtagId:  y
+  ScanJTAG:  n
+  Ocds1ViaPod:  n
+  EtksArbiterMode:  None
+  EtksWaitAfterArbitrationTime:  0
+  RefreshJtag:  n
+  RefreshHarr:  n
+  ReenableOcds:  y
+  ReduceJtagClock:  n
+  UseDap:  y
+  DapMode:  2PIN
+  JtagMuxPort:  -1
+  UseNewJtagEngine:  y
+  ConnOption:  Default
+  SetDebugEnableAb1DisablePin:  n
+  ResetWaitTime:  500
+  ResetMode:  Default
+  OpenDrainReset:  n
+  DiswdtOnReset:  n
+  SetPllOnReset:  0x00000000
+  SetPllOnReset2:  0x00000000
+  ExpectedEntryPoint:  
+  MaxTry:  1
+  ForceEdMode:  -1
+  UseDflashAccessFilter:  y
+  DetectResetWhileHalted:  n
+  UseTranslateAddr:  y
+  SimioAddr:  g_JtagSimioAccess
+  UseStmForPtm:  1
+  ExecOnStartCmds:  n
+  OnStartScript Script:
+    Script is empty
+  ExecOnHaltCmds:  n
+  OnHaltScript Script:
+    
+    
+  ExecOnHaltCmdsWhileHaltedPeriod:  0
+  UseTriggerToBreak:  y
+  UseTL2OnHalt:  y
+  UseOstateStable:  y
+  AllowJtagResetWhileRunning:  y
+  MaxAccRetry:  1
+  AccRetryDelay:  10
+  DefOcdsReserved:  
+  UseRestartWhileRunningHandling:  n
+  IgnoreEmemAccessErrors:  n
+  RemapEmemAccess:  n
+  ReadPmcsrWhileRunning:  n
+  MultiChipDbgMode:  0
+  MultiChipDbgInp:  1
+  MultiChipDbgOut:  6
+  MultiChipDbgCtl:  7
+  IvIcacheOnHalt:  y
+  IvPlbOnHalt:  y
+  SuspendSlaveCores:  n
+  FilterMemAcc:  y
+
+JTAG target infos:
+  JTAG-ID:           0x00000000
+  UsedJtagClk:       0 MHz
+  ExtVoltage:        0.0 V
+  IntVoltageUsed:    n
+
+DAS related information:
+  DAS DLL Version:        
+  Server started by UDE:  C:\Program Files\DAS64\servers\udas\udas.exe
+  Server name:            UDAS
+  Server manufacturer:    Infineon
+  Server version:         V3.12
+  DAS-API version:        V4.2
+  Server lib version:     V3.0
+  last DAS error:         256
+  last DAS function:      send_list
+
+

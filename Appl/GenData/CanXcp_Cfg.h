@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanXcp_Cfg.h
- *   Generation Time: 2026-08-04 12:24:48
+ *   Generation Time: 2024-08-07 10:49:29
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -150,6 +150,7 @@
 #define CANXCP_MULTI_CONN_PROT_DISABLED
 #define CANXCP_TRANSPORT_LAYER_VERSION       0x0100u
 #define CANXCP_VARIABLE_DLC_DISABLED
+#define kXcpSendQueueMinSize                 1u
 /* Enable/Disable transport layer activation control API */
 #define CANXCP_ENABLE_CONTROL                STD_ON
 #define CANXCP_NUMBER_OF_CHANNELS            1u

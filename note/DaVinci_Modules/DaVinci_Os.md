@@ -28,7 +28,6 @@ BSW Editor → 模块树选择 `Os`（Vector Os）。先配计数器/任务/ISR�
 📷 图片位 O1：模块树选中 `Os` 的截图。
 
 ![1785915947038](image/DaVinci_Os/1785915947038.png)
-<!-- ![20260805154606](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805154606.png) -->
 
 ### 2.2 计数器
 
@@ -42,10 +41,8 @@ BSW Editor → 模块树选择 `Os`（Vector Os）。先配计数器/任务/ISR�
 📷 图片位 O2：`SystemTimer` / `SystemTimer1` 计数器配置截图。
 
 ![1785916015948](image/DaVinci_Os/1785916015948.png)
-<!-- ![20260805154659](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805154659.png) -->
 
 ![1785916038757](image/DaVinci_Os/1785916038757.png)
-<!-- ![20260805154722](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805154722.png) -->
 ### 2.3 任务
 
 | 任务 | 核 | 优先级 | 周期/事件 | 内容 |
@@ -63,10 +60,8 @@ BSW Editor → 模块树选择 `Os`（Vector Os）。先配计数器/任务/ISR�
 
 📷 图片位 O3：Core0 任务列表截图。
 ![1785916183709](image/DaVinci_Os/1785916183709.png)
-<!-- ![20260805154936](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805154936.png) -->
 📷 图片位 O4：Core1 任务列表（MotorTask/BswCore1Task）截图。
 ![1785916200277](image/DaVinci_Os/1785916200277.png)
-<!-- ![20260805155005](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805155005.png) -->
 
 
 ### 2.4 中断（ISR）
@@ -82,16 +77,12 @@ BSW Editor → 模块树选择 `Os`（Vector Os）。先配计数器/任务/ISR�
 
 📷 图片位 O5：ISR 列表（含 `AdcIsr_G0`、`CounterIsr_SystemTimer1`）截图。
 ![1785916272037](image/DaVinci_Os/1785916272037.png)
-<!-- ![20260805155115](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805155115.png) -->
 
 ![1785916327730](image/DaVinci_Os/1785916327730.png)
-<!-- ![20260805155211](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805155211.png) -->
 
 ![1785916308613](image/DaVinci_Os/1785916308613.png)
-<!-- ![20260805155142](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805155142.png) -->
 
 ![1785916360198](image/DaVinci_Os/1785916360198.png)
-<!-- ![20260805155244](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805155244.png) -->
 ### 2.5 X-Signal（跨核）
 
 | 对象 | 方向 | 说明 |
@@ -105,15 +96,11 @@ BSW Editor → 模块树选择 `Os`（Vector Os）。先配计数器/任务/ISR�
 📷 图片位 O6：X-Signal Channel/ISR 配置截图。
 
 ![1785916420438](image/DaVinci_Os/1785916420438.png)
-<!-- ![20260805155344](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805155344.png) -->
 
 ![1785916478261](image/DaVinci_Os/1785916478261.png)
-<!-- ![20260805155405](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805155405.png) -->
 
 ![1785916470206](image/DaVinci_Os/1785916470206.png)
-<!-- ![20260805155424](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805155424.png) -->
 ![1785916520814](image/DaVinci_Os/1785916520814.png)
-<!-- ![20260805155524](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805155524.png) -->
 ### 2.6 核与启动
 
 - `OsCore0`：入口 `_start_tc0`（自启动）；`OsCore1`：入口 `brsStartupEntry`（非自启动，由 Core0 通过 XSignal/启动流程拉起）。

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="33022ff3-f082-4548-ab3c-90793765f2d3">
+      <SHORT-NAME>AURIX2G</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="7e118c10-0a18-49f2-9978-33759fe5e7c2">
+          <SHORT-NAME>EcucDefs</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="83c3e136-d156-437a-812f-9de0d27481ac">
+              <SHORT-NAME>Uart_ib_bswmd</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE UUID="9fef39a9-f33e-4242-b82c-7648614fbf8d">
+                  <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+                  <ELEMENTS>
+                    <BSW-MODULE-DESCRIPTION UUID="1f434338-cdb4-4624-9e2f-aeffa893a50a">
+                      <SHORT-NAME>Uart</SHORT-NAME>
+                      <PROVIDED-ENTRYS>
+                        <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                          <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G/EcucDefs/Uart_ib_bswmd/BswModuleDescriptions/Uart_MainFunction_Read</BSW-MODULE-ENTRY-REF>
+                        </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                        <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                          <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G/EcucDefs/Uart_ib_bswmd/BswModuleDescriptions/Uart_MainFunction_Write</BSW-MODULE-ENTRY-REF>
+                        </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                      </PROVIDED-ENTRYS>
+                      <INTERNAL-BEHAVIORS>
+                        <BSW-INTERNAL-BEHAVIOR UUID="0706329a-de6b-478f-bf60-590da5d47c9d">
+                          <SHORT-NAME>UartBehavior</SHORT-NAME>
+                          <ENTITYS>
+                            <BSW-SCHEDULABLE-ENTITY UUID="0ed8d5e0-03da-4b4f-88d0-bcf5511df238">
+                              <SHORT-NAME>Uart_MainFunction_Read</SHORT-NAME>
+                              <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G/EcucDefs/Uart_ib_bswmd/BswModuleDescriptions/Uart_MainFunction_Read</IMPLEMENTED-ENTRY-REF>
+                            </BSW-SCHEDULABLE-ENTITY>
+                            <BSW-SCHEDULABLE-ENTITY UUID="d0794333-3a60-4647-97f5-3d1c7443019a">
+                              <SHORT-NAME>Uart_MainFunction_Write</SHORT-NAME>
+                              <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G/EcucDefs/Uart_ib_bswmd/BswModuleDescriptions/Uart_MainFunction_Write</IMPLEMENTED-ENTRY-REF>
+                            </BSW-SCHEDULABLE-ENTITY>
+                          </ENTITYS>
+                          <EVENTS>
+                            <BSW-TIMING-EVENT UUID="ddf8231e-bb80-4322-9788-eebb43495472">
+                              <SHORT-NAME>Uart_MainFunction_ReadTimingEvent0</SHORT-NAME>
+                              <STARTS-ON-EVENT-REF DEST="BSW-SCHEDULABLE-ENTITY">/AURIX2G/EcucDefs/Uart_ib_bswmd/BswModuleDescriptions/Uart/UartBehavior/Uart_MainFunction_Read</STARTS-ON-EVENT-REF>
+                              <PERIOD>0.005</PERIOD>
+                            </BSW-TIMING-EVENT>
+                            <BSW-TIMING-EVENT UUID="e0dd9d5d-3a42-4239-ab98-46e4e848540f">
+                              <SHORT-NAME>Uart_MainFunction_WriteTimingEvent0</SHORT-NAME>
+                              <STARTS-ON-EVENT-REF DEST="BSW-SCHEDULABLE-ENTITY">/AURIX2G/EcucDefs/Uart_ib_bswmd/BswModuleDescriptions/Uart/UartBehavior/Uart_MainFunction_Write</STARTS-ON-EVENT-REF>
+                              <PERIOD>0.005</PERIOD>
+                            </BSW-TIMING-EVENT>
+                          </EVENTS>
+                        </BSW-INTERNAL-BEHAVIOR>
+                      </INTERNAL-BEHAVIORS>
+                    </BSW-MODULE-DESCRIPTION>
+                    <BSW-MODULE-ENTRY UUID="0b6577e0-73e9-46a4-b363-9696ff6fc21a">
+                      <SHORT-NAME>Uart_MainFunction_Read</SHORT-NAME>
+                      <CALL-TYPE>SCHEDULED</CALL-TYPE>
+                      <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+                    </BSW-MODULE-ENTRY>
+                    <BSW-MODULE-ENTRY UUID="906e5714-68f1-4b1c-8cfd-cdd4c78da4b5">
+                      <SHORT-NAME>Uart_MainFunction_Write</SHORT-NAME>
+                      <CALL-TYPE>SCHEDULED</CALL-TYPE>
+                      <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+                    </BSW-MODULE-ENTRY>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

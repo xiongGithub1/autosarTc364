@@ -33,7 +33,6 @@ BSW Editor → 模块树选择 `BswM` → `BswMModeControl`。
 📷 图片位 B1：模块树选中 `BswM` 的截图。
 
 ![1785917193016](image/DaVinci_BswM/1785917193016.png)
-<!-- ![20260805160637](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805160637.png) -->
 
 ### 2.2 初始化动作表
 
@@ -44,7 +43,6 @@ BSW Editor → 模块树选择 `BswM` → `BswMModeControl`。
 📷 图片位 B2：`INIT_AL_Initialize` 动作表截图。
 
 ![1785917246125](image/DaVinci_BswM/1785917246125.png)
-<!-- ![20260805160729](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805160729.png) -->
 
 ### 2.3 CAN 通道规则
 
@@ -57,7 +55,6 @@ BSW Editor → 模块树选择 `BswM` → `BswMModeControl`。
 📷 图片位 B3：CAN 通道规则截图。
 
 ![1785917340125](image/DaVinci_BswM/1785917340125.png)
-<!-- ![20260805160906](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805160906.png) -->
 
 ---
 

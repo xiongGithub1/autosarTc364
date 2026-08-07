@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Alarm_Lcfg.h
- *   Generation Time: 2024-08-03 19:52:21
+ *   Generation Time: 2026-08-06 18:44:41
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -92,8 +92,8 @@ extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE2_Defaul
 /*! Alarm configuration data: Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_20ms */
 extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_20ms;
 
-/*! Alarm configuration data: Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx */
-extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx;
+/*! Alarm configuration data: Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_5ms */
+extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_5ms;
 
 /*! Alarm configuration data: Rte_Al_TE_StartApp_StartApp_Cyclic1000ms */
 extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_StartApp_StartApp_Cyclic1000ms;

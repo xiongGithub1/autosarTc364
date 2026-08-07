@@ -5371,6 +5371,54 @@
                 </ECUC-CONTAINER-VALUE>
               </SUB-CONTAINERS>
             </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="46faf5aa-b1d9-42d2-83ae-aa2dbc5e840f">
+              <SHORT-NAME>SWC_Dcm</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/MemMap/MemMapAllocation</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="b04e5d16-f366-49b8-a8f8-0f49586edee3">
+                  <SHORT-NAME>Dcm_START_SEC_VAR_NOINIT_UNSPECIFIED</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/MemMap/MemMapAllocation/MemMapSectionSpecificMapping</DEFINITION-REF>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/MemMap/MemMapAllocation/MemMapSectionSpecificMapping/MemMapAddressingModeSetRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_NOINIT</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/MemMap/MemMapAllocation/MemMapSectionSpecificMapping/MemMapMemorySectionRef</DEFINITION-REF>
+                      <VALUE-REF DEST="MEMORY-SECTION">/MICROSAR/Dcm_swc/ComponentTypes/DcmImplementation/DcmResourceConsumption/Dcm_START_SEC_VAR_NOINIT_UNSPECIFIED</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="4f2bca20-35d0-4906-b6aa-eaa7da3f9b40">
+                  <SHORT-NAME>Dcm_START_SEC_VAR_INIT_UNSPECIFIED</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/MemMap/MemMapAllocation/MemMapSectionSpecificMapping</DEFINITION-REF>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/MemMap/MemMapAllocation/MemMapSectionSpecificMapping/MemMapAddressingModeSetRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_INIT</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/MemMap/MemMapAllocation/MemMapSectionSpecificMapping/MemMapMemorySectionRef</DEFINITION-REF>
+                      <VALUE-REF DEST="MEMORY-SECTION">/MICROSAR/Dcm_swc/ComponentTypes/DcmImplementation/DcmResourceConsumption/Dcm_START_SEC_VAR_INIT_UNSPECIFIED</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="061d14f7-0a61-47ff-ab2f-c8a614621ed8">
+                  <SHORT-NAME>Dcm_START_SEC_VAR_ZERO_INIT_UNSPECIFIED</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/MemMap/MemMapAllocation/MemMapSectionSpecificMapping</DEFINITION-REF>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/MemMap/MemMapAllocation/MemMapSectionSpecificMapping/MemMapAddressingModeSetRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/MemMap/OS_SystemApplication_OsCore0_VAR_ZERO_INIT</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/MemMap/MemMapAllocation/MemMapSectionSpecificMapping/MemMapMemorySectionRef</DEFINITION-REF>
+                      <VALUE-REF DEST="MEMORY-SECTION">/MICROSAR/Dcm_swc/ComponentTypes/DcmImplementation/DcmResourceConsumption/Dcm_START_SEC_VAR_ZERO_INIT_UNSPECIFIED</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
           </CONTAINERS>
         </ECUC-MODULE-CONFIGURATION-VALUES>
       </ELEMENTS>

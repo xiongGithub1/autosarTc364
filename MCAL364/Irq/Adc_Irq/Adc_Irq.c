@@ -112,7 +112,7 @@ ISR(ADC0SR0_ISR)
 {
   /* Enable Global Interrupts */
 //  ENABLE();
-	Dio_FlipChannel(DioConf_DioChannel_DioChannel_test);
+
 //  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_HIGH);
   #ifdef  APP_SW
   #if (APP_SW == TEST_APP)

@@ -30,7 +30,6 @@ BSW Editor → 模块树选择 `Can` → `CanConfigSet > CT_CAN00_9df8a959`。
 📷 图片位 C1：模块树选中 `Can` 的截图。
 
 ![1785917388031](image/DaVinci_Can/1785917388031.png)
-<!-- ![20260805160952](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805160952.png) -->
 
 ### 2.2 控制器参数
 
@@ -45,17 +44,13 @@ BSW Editor → 模块树选择 `Can` → `CanConfigSet > CT_CAN00_9df8a959`。
 
 📷 图片位 C2：控制器 `CT_CAN00_9df8a959` 参数截图。
 ![1785917445053](image/DaVinci_Can/1785917445053.png)
-<!-- ![20260805161048](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805161048.png) -->
 ![1785917474023](image/DaVinci_Can/1785917474023.png)
-<!-- ![20260805161117](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805161117.png) -->
 📷 图片位 C3：经典/FD 波特率位时间参数截图。
 
 
 ![1785917508148](image/DaVinci_Can/1785917508148.png)
-<!-- ![20260805161202](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805161202.png) -->
 
 ![1785917539702](image/DaVinci_Can/1785917539702.png)
-<!-- ![20260805161223](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805161223.png) -->
 
 ---
 

@@ -30,7 +30,6 @@ BSW Editor → 模块树选择 `Sbc`（`Sbc_30_Tlf35584`）。
 📷 图片位 S1：模块树选中 `Sbc` 的截图。
 
 ![1785919030905](image/DaVinci_Sbc/1785919030905.png)
-<!-- ![20260805163749](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805163749.png) -->
 ### 2.2 参数
 
 | 参数 | 值 |
@@ -44,10 +43,8 @@ BSW Editor → 模块树选择 `Sbc`（`Sbc_30_Tlf35584`）。
 📷 图片位 S2：Sbc 参数（SPI 引用/ERR 监控/上电输出）截图。
 
 ![1785919101608](image/DaVinci_Sbc/1785919101608.png)
-<!-- ![20260805163825](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805163825.png) -->
 
 ![1785919122448](image/DaVinci_Sbc/1785919122448.png)
-<!-- ![20260805163845](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805163845.png) -->
 ---
 
 ## 3. 与其它模块的引用关系

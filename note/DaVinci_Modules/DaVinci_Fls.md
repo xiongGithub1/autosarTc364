@@ -30,7 +30,6 @@ BSW Editor → 模块树选择 `Fls`（`Fls_17_Dmu`）→ `FlsGeneral`。
 📷 图片位 F1：模块树选中 `Fls` 的截图。
 
 ![1785918755424](image/DaVinci_Fls/1785918755424.png)
-<!-- ![20260805163239](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805163239.png) -->
 
 ### 2.2 参数
 
@@ -45,7 +44,6 @@ BSW Editor → 模块树选择 `Fls`（`Fls_17_Dmu`）→ `FlsGeneral`。
 📷 图片位 F2：`FlsGeneral` 参数截图。
 
 ![1785918781360](image/DaVinci_Fls/1785918781360.png)
-<!-- ![20260805163316](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805163316.png) -->
 
 ---
 

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Callout_Stubs.c
- *   Generation Time: 2024-08-04 12:51:45
+ *   Generation Time: 2026-08-06 19:41:34
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -97,6 +97,7 @@
 #include "Fee.h" 
 #include "Irq.h" 
 #include "Spi.h" 
+#include "Dem.h" 
 
 
 /**********************************************************************************************************************
@@ -279,7 +280,6 @@ FUNC(void, ECUM_CODE) EcuM_AL_DriverInitZero(void)
     Det_InitMemory();
     PduR_InitMemory();
     Rte_InitMemory();
-    BswM_PreInit( BswM_Config_Ptr );
     CanXcp_InitMemory();
   }
 
@@ -315,6 +315,8 @@ FUNC(void, ECUM_CODE) EcuM_AL_DriverInitOne(void)
     IrqSpi_Init();
     Spi_Init( &Spi_Config );
     CanXcp_Init( NULL_PTR );
+    Dem_PreInit( Dem_Config_Ptr );
+    BswM_PreInit( BswM_Config_Ptr );
   }
 
 /**********************************************************************************************************************

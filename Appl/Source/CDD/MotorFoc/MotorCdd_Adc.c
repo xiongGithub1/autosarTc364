@@ -101,6 +101,11 @@ static uint32 MotorCdd_AdcClampTriggerTick(uint32 triggerTick)
   return triggerTick;
 }
 
+/* 设置 ADC 触发点（ATOM0 CH7，周期 10000 ticks @100MHz = 10 kHz）：
+ *   GTM_ATOM0_CH7_SR1 ：影子比较值（下次更新点生效）
+ *   Mcu_17_Gtm_AtomChannelShadowTransfer ：MCAL 封装的影子传输（SR1→CM1）
+ *   GTM_ATOM0_CH7_CM1 ：更新后的实际比较值（回读确认）
+ * 默认 5000 ticks = 周期中心，避开开关沿，采样 PWM 平均电流。 */
 void MotorCdd_AdcSetTriggerTick(uint32 triggerTick)
 {
   uint32 appliedTick = MotorCdd_AdcClampTriggerTick(triggerTick);
@@ -112,9 +117,11 @@ void MotorCdd_AdcSetTriggerTick(uint32 triggerTick)
   MotorCdd_AdcTriggerTickApplied = GTM_ATOM0_CH7_CM1.U;
 }
 
+/* 使能输出前把 PWM(CH1/2/3) 与 ADC 触发(CH7) 的计数器 CN0 全部清零，
+ * 让采样点与 PWM 周期从同一相位起点开始（CN0 为通道自由运行计数器）。 */
 void MotorCdd_AdcSynchronizePwmTriggerCounter(void)
 {
-  /* PWM CH1/2/3 and the ADC trigger CH7 use ATOM0 and CMU clock 0. */
+  /* PWM CH1/2/3 与 ADC 触发 CH7 共用 ATOM0 + CMU CLK0。 */
   GTM_ATOM0_CH1_CN0.U = 0U;
   GTM_ATOM0_CH2_CN0.U = 0U;
   GTM_ATOM0_CH3_CN0.U = 0U;
@@ -196,16 +203,29 @@ void MotorCdd_AdcResetCurrentFilter(void)
   MotorCdd_AdcCurrentFilterReady = 0U;
 }
 
+/* 直读 EVADC 结果寄存器（IfxEvadc_reg.h GxRES，位定义见 Ifx_EVADC_G_RES_Bits）：
+ *   RESULT [15:0] ：最近一次转换结果（本工程 12 位有效，掩码 0x0FFF）
+ *   DRC    [19:16]：数据缩减计数器（多次采样累加时用）
+ *   CHNR   [24:20]：完成转换的通道号
+ *   EMUX   [27:25]：外部多路选择设置
+ *   CRS    [29:28]：转换请求源（硬件触发等）
+ *   VF     [31]   ：有效标志（1=该结果已更新）
+ * G0 为主组（同步触发），G2/G3 为同步从组，结果在 G0 中断时已全部就绪。 */
 static void MotorCdd_AdcFillRawFromHwRegs(MotorCdd_AdcRawType* rawOut)
 {
+  /* G0.RES[0] = VO1（U 相电流分流电压） */
   rawOut->vo1 = (Adc_ValueGroupType)(MODULE_EVADC.G[0].RES[0].U &
                                      MOTORCDD_ADC_RES_VALUE_MASK);
+  /* G0.RES[1] = VRO（分流参考电压） */
   rawOut->vro = (Adc_ValueGroupType)(MODULE_EVADC.G[0].RES[1].U &
                                      MOTORCDD_ADC_RES_VALUE_MASK);
+  /* G2.RES[0] = VO2（V 相电流分流电压） */
   rawOut->vo2 = (Adc_ValueGroupType)(MODULE_EVADC.G[2].RES[0].U &
                                      MOTORCDD_ADC_RES_VALUE_MASK);
+  /* G2.RES[1] = VINV（母线电压分压） */
   rawOut->vinv = (Adc_ValueGroupType)(MODULE_EVADC.G[2].RES[1].U &
                                       MOTORCDD_ADC_RES_VALUE_MASK);
+  /* G3.RES[0] = VO3（W 相电流分流电压） */
   rawOut->vo3 = (Adc_ValueGroupType)(MODULE_EVADC.G[3].RES[0].U &
                                      MOTORCDD_ADC_RES_VALUE_MASK);
 }
@@ -243,7 +263,11 @@ void MotorCdd_AdcHwTriggerInit(void)
 
   Adc_EnableGroupNotification(AdcConf_AdcGroup_AdcGroup_9183Sense);
 
-  /* IrqAdc_Init runs on Core0 and may clear SRE; G0 SR0 TOS=CPU1 (Irq_Cfg.h). */
+  /* SRC_VADCG0SR0（Ifx_SRC_SRCR_Bits）：
+   *   SRPN [7:0]   ：服务请求优先级号（由 Irq 配置）
+   *   SRE  [10]    ：服务请求使能（1=允许该中断源触发）
+   *   TOS  [13:11] ：服务类型（=CPU1，ADC 中断进 Core1）
+   * IrqAdc_Init 在 Core0 运行可能清掉 SRE，这里补一次使能。 */
   SRC_VADCG0SR0.B.SRE = 1U;
 }
 

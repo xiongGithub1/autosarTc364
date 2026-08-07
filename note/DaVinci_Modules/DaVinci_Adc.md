@@ -28,7 +28,6 @@ BSW Editor → 模块树选择 `Adc` → `AdcConfigSet`。
 📷 图片位 A1：模块树选中 `Adc` 的截图。
 
 ![1785913171123](image/DaVinci_Adc/1785913171123.png)
-<!-- ![20260805145935](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805145935.png) -->
 
 
 ### 2.2 硬件单元
@@ -54,59 +53,43 @@ BSW Editor → 模块树选择 `Adc` → `AdcConfigSet`。
 
 AdcHwUnit_ADC0:
 ![1785913234642](image/DaVinci_Adc/1785913234642.png)
-<!-- ![20260805150038](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805150038.png) -->
 
 AdcChannels:
 ![1785913475596](image/DaVinci_Adc/1785913475596.png)
-<!-- ![20260805150439](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805150439.png) -->
 ![1785913501779](image/DaVinci_Adc/1785913501779.png)
-<!-- ![20260805150455](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805150455.png) -->
 
 AdcGroups:
 ![1785913599171](image/DaVinci_Adc/1785913599171.png)
-<!-- ![20260805150644](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805150644.png) -->
 
 ![1785913618395](image/DaVinci_Adc/1785913618395.png)
-<!-- ![20260805150702](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805150702.png) -->
 
 
 
 AdcHwUnit_ADC2:
 ![1785913780660](image/DaVinci_Adc/1785913780660.png)
-<!-- ![20260805150945](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805150945.png) -->
 AdcChannels:
 ![1785913823811](image/DaVinci_Adc/1785913823811.png)
-<!-- ![20260805151028](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805151028.png) -->
 ![1785913844963](image/DaVinci_Adc/1785913844963.png)
-<!-- ![20260805151048](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805151048.png) -->
 AdcGroups:
 ![1785913881364](image/DaVinci_Adc/1785913881364.png)
-<!-- ![20260805151124](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805151124.png) -->
 
 ![1785913901783](image/DaVinci_Adc/1785913901783.png)
-<!-- ![20260805151147](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805151147.png) -->
 AdcHwUnit_ADC3:
 ![1785913986548](image/DaVinci_Adc/1785913986548.png)
-<!-- ![20260805151310](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805151310.png) -->
 AdcChannels:
 ![1785914015956](image/DaVinci_Adc/1785914015956.png)
-<!-- ![20260805151341](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805151341.png) -->
 AdcGroups:
 ![1785914040038](image/DaVinci_Adc/1785914040038.png)
-<!-- ![20260805151403](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805151403.png) -->
 
 ![1785914059580](image/DaVinci_Adc/1785914059580.png)
-<!-- ![20260805151423](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805151423.png) -->
 📷 图片位 A3：输入类参数截图。
 
 
 其他组类似ADC0:
 AdcHwUinitInputClass:
 ![1785913711274](image/DaVinci_Adc/1785913711274.png)
-<!-- ![20260805150837](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805150837.png) -->
 
 ![1785913739245](image/DaVinci_Adc/1785913739245.png)
-<!-- ![20260805150902](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805150902.png) -->
 
 
 
@@ -151,13 +134,10 @@ AdcHwUinitInputClass:
 📷 图片位 A4：G0 组 + `GtmTriggerTimerConfig` 截图。
 
 ![1785914266140](image/DaVinci_Adc/1785914266140.png)
-<!-- ![20260805151749](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805151749.png) -->
 📷 图片位 A5：G2/G3/G8 组截图。
 
 ![1785914344165](image/DaVinci_Adc/1785914344165.png)
-<!-- ![20260805151913](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805151913.png) -->
 ![1785914379749](image/DaVinci_Adc/1785914379749.png)
-<!-- ![20260805151943](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805151943.png) -->
 其他组类似
 
 ### 2.4 公共参数
@@ -173,14 +153,9 @@ AdcHwUinitInputClass:
 
 📷 图片位 A6：`AdcGeneral` 公共参数截图。
 
-<!--
-![Adc 公共参数](../image/DaVinci_Modules/04_adc_general.png)
--->
 ![1785914416299](image/DaVinci_Adc/1785914416299.png)
-<!-- ![20260805152020](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805152020.png) -->
 
 ![1785914439803](image/DaVinci_Adc/1785914439803.png)
-<!-- ![20260805152048](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805152048.png) -->
 ---
 
 ## 3. 与其它模块的引用关系

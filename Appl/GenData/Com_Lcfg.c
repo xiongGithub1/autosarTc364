@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Com_Lcfg.c
- *   Generation Time: 2024-08-04 12:44:09
+ *   Generation Time: 2026-08-05 21:47:39
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -572,7 +572,7 @@ VAR(Com_CyclicSendRequestUType, COM_VAR_NO_INIT) Com_CyclicSendRequest;  /* PRQA
   \var    Com_HandleRxPduDeferred
   \brief  Array indicating received Rx I-PDUs to be processed deferred within the next call of Com_MainfunctionRx().
 */ 
-#define COM_START_SEC_VAR_NO_INIT_8
+#define COM_START_SEC_VAR_NO_INIT_16
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
@@ -580,7 +580,7 @@ VAR(Com_HandleRxPduDeferredUType, COM_VAR_NO_INIT) Com_HandleRxPduDeferred;  /* 
   /* Index        Referable Keys */
   /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_Receive_oCAN00_2b456e3f_Rx] */
 
-#define COM_STOP_SEC_VAR_NO_INIT_8
+#define COM_STOP_SEC_VAR_NO_INIT_16
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
@@ -825,7 +825,7 @@ VAR(Com_TxProcessingISRLockCounterUType, COM_VAR_NO_INIT) Com_TxProcessingISRLoc
   \var    Com_TxSduLength
   \brief  This var Array contains the Com Ipdu Length.
 */ 
-#define COM_START_SEC_VAR_NO_INIT_8
+#define COM_START_SEC_VAR_NO_INIT_16
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
@@ -834,7 +834,7 @@ VAR(Com_TxSduLengthType, COM_VAR_NO_INIT) Com_TxSduLength[2];  /* PRQA S 1514, 1
   /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
   /*     1 */  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
 
-#define COM_STOP_SEC_VAR_NO_INIT_8
+#define COM_STOP_SEC_VAR_NO_INIT_16
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */

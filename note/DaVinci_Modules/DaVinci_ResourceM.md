@@ -32,7 +32,6 @@ BSW Editor → 模块树选择 `ResourceM` → `ResourceMMcalConfig_0`。
 📷 图片位 R1：模块树选中 `ResourceM` 的截图。
 
 ![1785918858601](image/DaVinci_ResourceM/1785918858601.png)
-<!-- ![20260805163422](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805163422.png) -->
 
 ### 2.2 核归属表
 
@@ -47,11 +46,9 @@ BSW Editor → 模块树选择 `ResourceM` → `ResourceMMcalConfig_0`。
 📷 图片位 R2：`ResourceMMcalConfig_0` 归属列表截图。
 
 ![1785918960491](image/DaVinci_ResourceM/1785918960491.png)
-<!-- ![20260805163604](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805163604.png) -->
 
 
 ![1785918918159](image/DaVinci_ResourceM/1785918918159.png)
-<!-- ![20260805163529](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805163529.png) -->
 
 ---
 

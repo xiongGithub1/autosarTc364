@@ -29,11 +29,7 @@ DaVinci Configurator 打开 `last364.dpa` → 进入 **BSW Editor** → 左侧�
 
 模块树中选中 `Mcu` 的截图。
 
-<!-- 自插图片：取消注释并放入图片后删除本占位
-![选择 Mcu 模块](../image/DaVinci_Modules/01_mcu_module_tree.png)
--->
 ![1785902033896](image/DaVinci_Mcu/1785902033896.png)
-<!-- ![20260805115538](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805115538.png) -->
 
 ### 2.2 时钟设置（McuClockSettingConfig_0）
 
@@ -59,16 +55,12 @@ DaVinci Configurator 打开 `last364.dpa` → 进入 **BSW Editor** → 左侧�
 
 `McuClockSettingConfig_0` 整页截图（PLL 参数）。
 ![1785902398926](image/DaVinci_Mcu/1785902398926.png)
-<!-- ![20260805120005](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805120005.png) -->
 ![1785909688359](image/DaVinci_Mcu/1785909688359.png)
-<!-- ![20260805140137](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805140137.png) -->
 `McuPllDistributionSettingConfig` 时钟分配截图。
 
 ![1785902216400](image/DaVinci_Mcu/1785902216400.png)
-<!-- ![20260805115725](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805115725.png) -->
 
 ![1785909746355](image/DaVinci_Mcu/1785909746355.png)
-<!-- ![20260805140233](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805140233.png) -->
 ### 2.3 时钟参考点（必须与各模块引用一致）
 
 时钟参考点列表（电机相关）：
@@ -82,7 +74,6 @@ DaVinci Configurator 打开 `last364.dpa` → 进入 **BSW Editor** → 左侧�
 时钟参考点列表截图。
 
 ![1785909804952](image/DaVinci_Mcu/1785909804952.png)
-<!-- ![20260805140330](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805140330.png) -->
 
 ### 2.4 GTM 通道配置
 
@@ -116,13 +107,10 @@ DaVinci Configurator 打开 `last364.dpa` → 进入 **BSW Editor** → 左侧�
 
 ATOM0 通道列表截图（CH0~CH7）。
 ![1785910456679](image/DaVinci_Mcu/1785910456679.png)
-<!-- ![20260805141423](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805141423.png) -->
 `McuGtmClockManagementConf` + `GtmTriggerForAdc_0` 截图。
 ![1785910670608](image/DaVinci_Mcu/1785910670608.png)
-<!-- ![20260805141757](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805141757.png) -->
 
 ![1785910829713](image/DaVinci_Mcu/1785910829713.png)
-<!-- ![20260805141906](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805141906.png) -->
 
 ### 2.5 硬件资源分配
 
@@ -137,7 +125,6 @@ ATOM0 通道列表截图（CH0~CH7）。
 其余（CCU6、GPT12、ERU、TOM、TIM、DMA 通道等）均未分配。
 `McuGtmAtomAllocationConf_0` 分配截图。
 ![1785910873720](image/DaVinci_Mcu/1785910873720.png)
-<!-- ![01_mcu_atom_allocation](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805142124.png) -->
 
 
 ---

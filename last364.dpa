@@ -64,6 +64,7 @@
         <FlatECUEX>Config\System\FlatExtract.arxml</FlatECUEX>
         <OEMCommunicationExtract>Config\System\Communication.arxml</OEMCommunicationExtract>
         <EcucFileReferences/>
+        <DiagECUC>Config\System\DiagnosticsDescriptionData.arxml</DiagECUC>
     </References>
     <EcucSplitter>
         <Configuration>Config\ECUC\last364.ecuc.arxml</Configuration>
@@ -175,12 +176,31 @@
         <Splitter File=".\Config\ECUC\last364_Xcp_Xcp_ecuc.arxml">
             <Module Name="Xcp"/>
         </Splitter>
+        <Splitter File=".\Config\ECUC\last364_Dcm_Dcm_ecuc.arxml">
+            <Module Name="Dcm"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\last364_CanTp_CanTp_ecuc.arxml">
+            <Module Name="CanTp"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\last364_Dem_Dem_ecuc.arxml">
+            <Module Name="Dem"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\last364_Uart_Uart_ecuc.arxml">
+            <Module Name="Uart"/>
+        </Splitter>
         <OwnFolderForEachSplitter>false</OwnFolderForEachSplitter>
         <OwnFileForEachInstance>true</OwnFileForEachInstance>
     </EcucSplitter>
     <Display LastVersion="5.25.37 SP2">
-        <FileSet Id="" CS="c4bef738">
-            <File Order="0" EcuInstance="MyECU" Hash="3b7de897aaac46dc24c074c7541287a9" FileCategory="legacy_communication_data">$(DpaProjectFolder)\Config_Vector\CANFD364.dbc</File>
+        <FileSet Id="" CS="2b60c198">
+            <File Order="0" EcuInstance="MyECU" Hash="fd1b523d8a34a62f78d82f4e08df8215" FileCategory="legacy_communication_data">$(DpaProjectFolder)\Config_Vector\CANFD364.dbc</File>
+            <Diagnostic>
+                <Description Order="1" Hash="5e33850266f48ef5498bb1b3fcc6ca87">$(DpaProjectFolder)\Config_Vector\MyEcu.cdd</Description>
+                <Ecu>MyEcu</Ecu>
+                <Variant>CommonDiagnostics</Variant>
+                <UseLegacySignalImport>false</UseLegacySignalImport>
+                <UseGenericImport>false</UseGenericImport>
+            </Diagnostic>
         </FileSet>
         <Merge>
             <Path Id="ECU-INSTANCE" ARPath="/ECU/MyECU"/>
@@ -220,16 +240,18 @@
                 <Setting Value="false" Name="Can"/>
                 <Setting Value="false" Name="CanIf"/>
                 <Setting Value="false" Name="CanSM"/>
+                <Setting Value="false" Name="CanTp"/>
                 <Setting Value="false" Name="Com"/>
                 <Setting Value="false" Name="ComM"/>
                 <Setting Value="false" Name="ComXf"/>
                 <Setting Value="false" Name="Crc"/>
+                <Setting Value="false" Name="Dcm"/>
+                <Setting Value="false" Name="Dem"/>
                 <Setting Value="false" Name="Det"/>
                 <Setting Value="false" Name="Dio"/>
                 <Setting Value="false" Name="Dma"/>
                 <Setting Value="false" Name="E2EXf"/>
                 <Setting Value="false" Name="EcuC"/>
-                <Setting Value="false" Name="EcuM"/>
                 <Setting Value="false" Name="Fee"/>
                 <Setting Value="false" Name="Fls"/>
                 <Setting Value="false" Name="Irq"/>
@@ -243,6 +265,7 @@
                 <Setting Value="false" Name="Pwm"/>
                 <Setting Value="false" Name="Sbc"/>
                 <Setting Value="false" Name="Spi"/>
+                <Setting Value="false" Name="Xcp"/>
                 <Setting Value="false" Name="vBRS"/>
                 <Setting Value="false" Name="vSet"/>
             </Settings>
@@ -438,12 +461,13 @@
                 </Settings>
             </Settings>
             <Settings Name="com.vector.cfg.gen.core.gencore.internal.aov.AutomaticOnDemandValidationConfigurationService">
-                <Setting Value="rO0ABXNyAGpjb20udmVjdG9yLmNmZy5nZW4uY29yZS5nZW5jb3JlLmludGVybmFsLmFvdi5BdXRv&#xA;bWF0aWNPbkRlbWFuZFZhbGlkYXRpb25Db25maWd1cmF0aW9uU2VydmljZSRQZXJzaXN0ZWREYXRh&#xA;pcjrmQ6cuakCAAJaAAlhY3RpdmF0ZWRMABJkZWFjdGl2YXRlZE1vZHVsZXN0ABZMamF2YS91dGls&#xA;L0NvbGxlY3Rpb247eHABc3IANmNvbS5nb29nbGUuY29tbW9uLmNvbGxlY3QuSW1tdXRhYmxlTGlz&#xA;dCRTZXJpYWxpemVkRm9ybQAAAAAAAAAAAgABWwAIZWxlbWVudHN0ABNbTGphdmEvbGFuZy9PYmpl&#xA;Y3Q7eHB1cgATW0xqYXZhLmxhbmcuT2JqZWN0O5DOWJ8QcylsAgAAeHAAAAAUc3IANWNvbS52ZWN0&#xA;b3IuY2ZnLm1vZGVsLmFjY2Vzcy5EZWZSZWYkU2VyaWFsaXphdGlvblByb3h5NnUB4bS2W7ACAAJM&#xA;AB5kZWZSZWZTdHJpbmdXaXRob3V0UGFja2FnZVBhcnR0ABJMamF2YS9sYW5nL1N0cmluZztMABlw&#xA;YWNrYWdlUGFydE9mRGVmUmVmU3RyaW5ncQB+AAl4cHQABk1lbU1hcHQACS9NSUNST1NBUnNxAH4A&#xA;CHQAA01jdXQAES9BVVJJWDJHL0VjdWNEZWZzc3EAfgAIdAAHTWNhbExpYnEAfgAPc3EAfgAIdAAE&#xA;RWN1Q3EAfgAMc3EAfgAIdAADUHdtcQB+AA9zcQB+AAh0AANBZGNxAH4AD3NxAH4ACHQAA0Rpb3EA&#xA;fgAPc3EAfgAIdAADRmxzcQB+AA9zcQB+AAh0AARQb3J0cQB+AA9zcQB+AAh0AANEbWFxAH4AD3Nx&#xA;AH4ACHQAA0lycXEAfgAPc3EAfgAIdAAFRTJFUFdxAH4ADHNxAH4ACHQAA0NhbnQAGS9NSUNST1NB&#xA;Ui9DYW5fTXBjNTcwME1jYW5zcQB+AAh0AAR2QlJTcQB+AAxzcQB+AAh0AANTcGlxAH4AD3NxAH4A&#xA;CHQAA0ZlZXEAfgAPc3EAfgAIdAAFTWVtSWZxAH4ADHNxAH4ACHQAA1NiY3QAFi9NSUNST1NBUi9T&#xA;YmNfVGxmMzU1ODRzcQB+AAh0AAR2U2V0cQB+AAxzcQB+AAh0AANDcmNxAH4ADw==" Name="Data"/>
+                <Setting Value="rO0ABXNyAGpjb20udmVjdG9yLmNmZy5nZW4uY29yZS5nZW5jb3JlLmludGVybmFsLmFvdi5BdXRv&#xA;bWF0aWNPbkRlbWFuZFZhbGlkYXRpb25Db25maWd1cmF0aW9uU2VydmljZSRQZXJzaXN0ZWREYXRh&#xA;pcjrmQ6cuakCAAJaAAlhY3RpdmF0ZWRMABJkZWFjdGl2YXRlZE1vZHVsZXN0ABZMamF2YS91dGls&#xA;L0NvbGxlY3Rpb247eHABc3IANmNvbS5nb29nbGUuY29tbW9uLmNvbGxlY3QuSW1tdXRhYmxlTGlz&#xA;dCRTZXJpYWxpemVkRm9ybQAAAAAAAAAAAgABWwAIZWxlbWVudHN0ABNbTGphdmEvbGFuZy9PYmpl&#xA;Y3Q7eHB1cgATW0xqYXZhLmxhbmcuT2JqZWN0O5DOWJ8QcylsAgAAeHAAAAAVc3IANWNvbS52ZWN0&#xA;b3IuY2ZnLm1vZGVsLmFjY2Vzcy5EZWZSZWYkU2VyaWFsaXphdGlvblByb3h5NnUB4bS2W7ACAAJM&#xA;AB5kZWZSZWZTdHJpbmdXaXRob3V0UGFja2FnZVBhcnR0ABJMamF2YS9sYW5nL1N0cmluZztMABlw&#xA;YWNrYWdlUGFydE9mRGVmUmVmU3RyaW5ncQB+AAl4cHQABHZCUlN0AAkvTUlDUk9TQVJzcQB+AAh0&#xA;AAZNZW1NYXBxAH4ADHNxAH4ACHQABHZTZXRxAH4ADHNxAH4ACHQAA1NwaXQAES9BVVJJWDJHL0Vj&#xA;dWNEZWZzc3EAfgAIdAADQ2FudAAZL01JQ1JPU0FSL0Nhbl9NcGM1NzAwTWNhbnNxAH4ACHQABUUy&#xA;RVBXcQB+AAxzcQB+AAh0AAdNY2FsTGlicQB+ABNzcQB+AAh0AANEbWFxAH4AE3NxAH4ACHQABU1l&#xA;bUlmcQB+AAxzcQB+AAh0AANJcnFxAH4AE3NxAH4ACHQAA0ZlZXEAfgATc3EAfgAIdAADUHdtcQB+&#xA;ABNzcQB+AAh0AANEaW9xAH4AE3NxAH4ACHQAA0RjbXEAfgAMc3EAfgAIdAADQWRjcQB+ABNzcQB+&#xA;AAh0AANNY3VxAH4AE3NxAH4ACHQAA0NyY3EAfgATc3EAfgAIdAAEUG9ydHEAfgATc3EAfgAIdAAD&#xA;U2JjdAAWL01JQ1JPU0FSL1NiY19UbGYzNTU4NHNxAH4ACHQABEVjdUNxAH4ADHNxAH4ACHQAA0Zs&#xA;c3EAfgAT" Name="Data"/>
             </Settings>
             <Settings Name="com.vector.cfg.gui.pse.pages.generators">
                 <Settings Name="BuildVipProject"/>
                 <Settings Name="CustomWorkflowExecution"/>
             </Settings>
+            <Settings Name="com.vector.cfg.interop.tats"/>
             <Settings Name="com.vector.cfg.persistency.internal.folder">
                 <Settings Name="TargetFolderManager"/>
             </Settings>

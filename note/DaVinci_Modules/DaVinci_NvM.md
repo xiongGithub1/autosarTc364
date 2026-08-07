@@ -31,7 +31,6 @@ BSW Editor → 模块树选择 `NvM` → `NvMBlockDescriptor` / `NvMCommon`。
 
 
 ![1785918359528](image/DaVinci_NvM/1785918359528.png)
-<!-- ![20260805162603](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805162603.png) -->
 ### 2.2 NvM 块
 
 | 块 | Block Id | 类型 | 长度 | CRC |
@@ -49,19 +48,14 @@ BSW Editor → 模块树选择 `NvM` → `NvMBlockDescriptor` / `NvMCommon`。
 
 📷 图片位 N2：NvM 块列表截图。
 ![1785918469145](image/DaVinci_NvM/1785918469145.png)
-<!-- ![20260805162753](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805162753.png) -->
 
 ![1785918497831](image/DaVinci_NvM/1785918497831.png)
-<!-- ![20260805162821](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805162821.png) -->
 
 ![1785918520979](image/DaVinci_NvM/1785918520979.png)
-<!-- ![20260805162844](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805162844.png) -->
 ![1785918538290](image/DaVinci_NvM/1785918538290.png)
-<!-- ![20260805162912](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805162912.png) -->
 📷 图片位 N3：`NvMCommon` 参数截图。
 
 ![1785918423633](image/DaVinci_NvM/1785918423633.png)
-<!-- ![20260805162707](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805162707.png) -->
 
 ---
 

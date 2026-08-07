@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: BswM_Cfg.h
- *   Generation Time: 2024-08-03 19:52:21
+ *   Generation Time: 2026-08-05 21:47:40
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -52,6 +52,7 @@
 #include "ComStack_Types.h" 
 #include "BswM_ComM.h"
 #include "BswM_CanSM.h"
+#include "BswM_Dcm.h"
 #include "BswM_EcuM.h"
 #include "BswM_NvM.h"
 
@@ -131,7 +132,7 @@
 #define BSWM_ENABLE_ETHIF                    STD_OFF
 #define BSWM_ENABLE_ETHSM                    STD_OFF
 #define BSWM_ENABLE_LINTP                    STD_OFF
-#define BSWM_ENABLE_DCM                      STD_OFF
+#define BSWM_ENABLE_DCM                      STD_ON
 #define BSWM_ENABLE_NVM                      STD_ON
 #define BSWM_ENABLE_ECUM                     STD_ON
 #define BSWM_ENABLE_COMM                     STD_ON

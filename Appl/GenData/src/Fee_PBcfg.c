@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION     : 12.0.0                                                      **
 **                                                                            **
-**  DATE, TIME  : 2024-08-04, 19:10:54   !!!IGNORE-LINE!!!                **
+**  DATE, TIME  : 2024-08-07, 14:16:15   !!!IGNORE-LINE!!!                **
 **                                                                            **
 **  GENERATOR   : Build b191017-0938                                        **
 **                                                                            **
@@ -129,6 +129,116 @@ to the initializer {0} which may be used to initialize an aggregate.
 Here it is defined as enum and first element initialized to 0.
 */
   },
+  {
+    0U, /* Block Cycle Count */
+    (uint8)FEE_NORMAL_DATA,  /* Block type is Normal */
+    48U, /* Block number */
+    34U, /* Fee Block Size */
+/*MISRA2012_RULE_10_3_JUSTIFICATION: Exception MISRA 10_3 is not applicable
+to the initializer {0} which may be used to initialize an aggregate.
+Here it is defined as enum and first element initialized to 0.
+*/
+  },
+  {
+    0U, /* Block Cycle Count */
+    (uint8)FEE_NORMAL_DATA,  /* Block type is Normal */
+    49U, /* Block number */
+    34U, /* Fee Block Size */
+/*MISRA2012_RULE_10_3_JUSTIFICATION: Exception MISRA 10_3 is not applicable
+to the initializer {0} which may be used to initialize an aggregate.
+Here it is defined as enum and first element initialized to 0.
+*/
+  },
+  {
+    0U, /* Block Cycle Count */
+    (uint8)FEE_NORMAL_DATA,  /* Block type is Normal */
+    64U, /* Block number */
+    3U, /* Fee Block Size */
+/*MISRA2012_RULE_10_3_JUSTIFICATION: Exception MISRA 10_3 is not applicable
+to the initializer {0} which may be used to initialize an aggregate.
+Here it is defined as enum and first element initialized to 0.
+*/
+  },
+  {
+    0U, /* Block Cycle Count */
+    (uint8)FEE_NORMAL_DATA,  /* Block type is Normal */
+    80U, /* Block number */
+    3U, /* Fee Block Size */
+/*MISRA2012_RULE_10_3_JUSTIFICATION: Exception MISRA 10_3 is not applicable
+to the initializer {0} which may be used to initialize an aggregate.
+Here it is defined as enum and first element initialized to 0.
+*/
+  },
+  {
+    0U, /* Block Cycle Count */
+    (uint8)FEE_NORMAL_DATA,  /* Block type is Normal */
+    96U, /* Block number */
+    3U, /* Fee Block Size */
+/*MISRA2012_RULE_10_3_JUSTIFICATION: Exception MISRA 10_3 is not applicable
+to the initializer {0} which may be used to initialize an aggregate.
+Here it is defined as enum and first element initialized to 0.
+*/
+  },
+  {
+    0U, /* Block Cycle Count */
+    (uint8)FEE_NORMAL_DATA,  /* Block type is Normal */
+    112U, /* Block number */
+    3U, /* Fee Block Size */
+/*MISRA2012_RULE_10_3_JUSTIFICATION: Exception MISRA 10_3 is not applicable
+to the initializer {0} which may be used to initialize an aggregate.
+Here it is defined as enum and first element initialized to 0.
+*/
+  },
+  {
+    0U, /* Block Cycle Count */
+    (uint8)FEE_NORMAL_DATA,  /* Block type is Normal */
+    128U, /* Block number */
+    3U, /* Fee Block Size */
+/*MISRA2012_RULE_10_3_JUSTIFICATION: Exception MISRA 10_3 is not applicable
+to the initializer {0} which may be used to initialize an aggregate.
+Here it is defined as enum and first element initialized to 0.
+*/
+  },
+  {
+    0U, /* Block Cycle Count */
+    (uint8)FEE_NORMAL_DATA,  /* Block type is Normal */
+    144U, /* Block number */
+    3U, /* Fee Block Size */
+/*MISRA2012_RULE_10_3_JUSTIFICATION: Exception MISRA 10_3 is not applicable
+to the initializer {0} which may be used to initialize an aggregate.
+Here it is defined as enum and first element initialized to 0.
+*/
+  },
+  {
+    0U, /* Block Cycle Count */
+    (uint8)FEE_NORMAL_DATA,  /* Block type is Normal */
+    160U, /* Block number */
+    3U, /* Fee Block Size */
+/*MISRA2012_RULE_10_3_JUSTIFICATION: Exception MISRA 10_3 is not applicable
+to the initializer {0} which may be used to initialize an aggregate.
+Here it is defined as enum and first element initialized to 0.
+*/
+  },
+  {
+    0U, /* Block Cycle Count */
+    (uint8)FEE_NORMAL_DATA,  /* Block type is Normal */
+    176U, /* Block number */
+    3U, /* Fee Block Size */
+/*MISRA2012_RULE_10_3_JUSTIFICATION: Exception MISRA 10_3 is not applicable
+to the initializer {0} which may be used to initialize an aggregate.
+Here it is defined as enum and first element initialized to 0.
+*/
+  },
+  {
+    0U, /* Block Cycle Count */
+    (uint8)FEE_NORMAL_DATA,  /* Block type is Normal */
+    192U, /* Block number */
+    3U, /* Fee Block Size */
+/*MISRA2012_RULE_10_3_JUSTIFICATION: Exception MISRA 10_3 is not applicable
+to the initializer {0} which may be used to initialize an aggregate.
+Here it is defined as enum and first element initialized to 0.
+*/
+  },
 };
 const Fee_ConfigType Fee_Config =
 {  
@@ -160,7 +270,7 @@ function will not be required. The function is correctly getting assigned to NUL
   /* Fee threshold value */
   200U,
   /* Number of blocks configured */
-  3U,
+  14U,
   {
     /* Ignore the unconfigured blocks */
     FEE_UNCONFIG_BLOCK_IGNORE,

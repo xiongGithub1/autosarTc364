@@ -3,7 +3,7 @@
 > 工程：`last364.dpa`（AURIX TC364，Vector MICROSAR 4.2.2，Infineon MCAL 20.10.0，TASKING TriCore v6.2r2）
 > 定位：本文档说明**配置的架构**——AUTOSAR 分层、DaVinci 配置工程组织、模块间引用关系、双核划分、生成/构建链路、数据流，以及按架构层归纳的**问题解决总结**。
 > 逐模块“怎么配”请见姊妹文档 [DaVinci_Motor_Config_Guide.md](DaVinci_Motor_Config_Guide.md)；
-> 每个模块另有独立配置文档（操作步骤 + 截图位），入口见 [DaVinci_Modules/README.md](DaVinci_Modules/README.md)。
+> 每个模块另有独立配置文档（操作步骤 + 截图），入口见 [DaVinci_Modules/README.md](DaVinci_Modules/README.md)。
 
 ---
 
@@ -36,11 +36,11 @@
 
 读者：接手本工程并需要在 DaVinci Configurator 中改配置、或排查配置相关问题的嵌入式工程师。
 
-### 1.1 图片插入约定（用户自插截图）
+### 1.1 图片插入约定
 
 本文档预留了若干“📷 图片位”占位块，方便把 DaVinci 界面截图直接补进对应章节：
 
-- 图片统一放在 `last364/note/image/DaVinci_Arch/`（命名规则见该目录 [README](image/DaVinci_Arch/README.md)）。
+- 图片统一放在 `last364/note/DaVinci_Modules/image/`（命名规则见该目录 [README](image/DaVinci_Arch/README.md)）。
 - 路径以 `last364/note/` 为基准写相对路径，GitHub/Markdown 均可渲染。
 - 插入方式：把占位块内 `<!--` 与 `-->` 之间的 `![...](...)` 行取消注释，放好图片后删除占位说明。
 
@@ -75,13 +75,11 @@
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
-📷 **图片位 1（可选）**：DaVinci BSW Editor 左侧模块树截图，对应 2.1 分层总览。
+📷 **图片位 1**：DaVinci BSW Editor 左侧模块树截图，对应 2.1 分层总览。
 
-<!-- 自插图片：取消下面注释并放入图片后，删除本占位块
-![DaVinci BSW 模块树](image/DaVinci_Arch/01_davinci_module_tree.png)
--->
+![1722905497963](image/DaVinci_Config_Architecture/1722905497963.png)
 
-建议文件名 `01_davinci_module_tree.png`。
+
 
 ### 2.2 工具链与各工具职责
 
@@ -147,13 +145,10 @@ last364/
 └── note/                           # 本文档 + 各专题文档
 ```
 
-📷 **图片位 2（可选）**：工程目录/工作区截图，对应 3.1 目录地图（也可放 DaVinci 工程浏览器视图）。
+📷 **图片位 2**：工程目录/工作区截图，对应 3.1 目录地图。
 
-<!-- 自插图片：取消下面注释并放入图片后，删除本占位块
-![工程目录结构](image/DaVinci_Arch/02_project_layout.png)
--->
+![1722905420083](image/DaVinci_Config_Architecture/1722905420083.png)
 
-建议文件名 `02_project_layout.png`。
 
 ### 3.2 配置的“源代码”与再生
 
@@ -220,13 +215,9 @@ last364/
    Rte：MotorControll ↔ MotorCdd 数据镜像（Mode/Id/Iq/Angle）
 ```
 
-📷 **图片位 3（可选）**：Mcu 时钟参考点 / GTM 资源分配截图，对应 4.2 引用关系图。
+📷 **图片位 3**：Mcu 时钟参考点 / GTM 资源分配截图参考对应的mcu 模块配置。
 
-<!-- 自插图片：取消下面注释并放入图片后，删除本占位块
-![Mcu GTM 资源分配](image/DaVinci_Arch/03_mcu_gtm_alloc.png)
--->
 
-建议文件名 `03_mcu_gtm_alloc.png`。
 
 ### 4.3 容易“断链”的引用
 
@@ -293,14 +284,17 @@ last364/
 | 启动竞态 | `BrsMain.c` Core0 `Default_Init_Task` 等待 `Rte_InitState_1==INIT`（ESCAN00078832），`OsTaskSchedule=FULL` |
 | 定时一致性 | `SystemTimer` 与 `SystemTimer1` 均 `OsCounterTicksPerBase=100000`、`OsSecondsPerTick=0.001` |
 
-📷 **图片位 4（可选）**：Os 双核配置截图（任务/ISR/X-Signal），对应 5.2/5.3。
+📷 **图片位 4**：Os 双核配置截图（任务/ISR/X-Signal），对应 5.2/5.3。
+Task
+![1722905196837](image/DaVinci_Config_Architecture/1722905196837.png)
 
-<!-- 自插图片：取消下面注释并放入图片后，删除本占位块
-![Os 双核任务配置](image/DaVinci_Arch/04_os_dualcore.png)
--->
+Isr
+![1722905230883](image/DaVinci_Config_Architecture/1722905230883.png)
 
-建议文件名 `04_os_dualcore.png`。
+X-Signal
+![1722905295875](image/DaVinci_Config_Architecture/1722905295875.png)
 
+![1722905277819](image/DaVinci_Config_Architecture/1722905277819.png)
 ### 5.3 双核初始化顺序（配置→运行）
 
 ```text
@@ -340,15 +334,26 @@ GTM ATOM0 CH7（CMU0=100MHz，10000 ticks）
       · 互补输出 IL1/2/3 由 GTM CDTM（DTM4，死区 200 ticks）生成
 ```
 
-📷 **图片位 5（可选）**：Adc 组 / GtmTriggerTimer 与 Pwm 通道配置截图，对应 6.1 快速环链路。
+📷 **图片位 5**：Adc 组 / GtmTriggerTimer 与 Pwm 通道配置截图，对应 6.1 快速环链路。
+Trigger select:
+![1722904799116](image/DaVinci_Config_Architecture/1722904799116.png)
 
-<!-- 自插图片：取消下面注释并放入图片后，删除本占位块
-![Adc 触发配置](image/DaVinci_Arch/05_adc_groups.png)
-![Pwm 通道配置](image/DaVinci_Arch/06_pwm_channels.png)
--->
+![1722904876644](image/DaVinci_Config_Architecture/1722904876644.png)
 
-建议文件名 `05_adc_groups.png`、`06_pwm_channels.png`。
+![1722904902683](image/DaVinci_Config_Architecture/1722904902683.png)
 
+GtmTriggerTimer
+![1722905008892](image/DaVinci_Config_Architecture/1722905008892.png)
+只用设置adc0 。
+
+pwm GtmTriggerTimer:
+![1722905091757](image/DaVinci_Config_Architecture/1722905091757.png)
+
+![1722905106965](image/DaVinci_Config_Architecture/1722905106965.png)
+
+![1722905121051](image/DaVinci_Config_Architecture/1722905121051.png)
+
+![1722905134031](image/DaVinci_Config_Architecture/1722905134031.png)
 ### 6.2 1 ms 慢环（任务路径）
 
 ```text
@@ -392,13 +397,10 @@ TASKING 构建（.cproject）
 last364.elf / .hex → UDE 下载调试
 ```
 
-📷 **图片位 6（可选）**：DaVinci Generate 日志 / TASKING 构建输出截图，对应 7.1/7.2。
+📷 **图片位 6**：DaVinci Generate 日志 / TASKING 构建输出截图，对应 7.1/7.2。
 
-<!-- 自插图片：取消下面注释并放入图片后，删除本占位块
-![Generate 日志](image/DaVinci_Arch/07_generate_log.png)
--->
+![1722904724983](image/DaVinci_Config_Architecture/1722904724983.png)
 
-建议文件名 `07_generate_log.png`。
 
 ### 7.2 构建关键设置（`.cproject`）
 
@@ -522,7 +524,7 @@ ADC0/2/3 归属 Core1，但 `Adc_Init` 第一次发生在 Core0（EcuM）。Core
 
 ### 10.2 上板后
 
-- [ ] `Rte_InitState_1` 快速到 3；`StartApp_Cyclic1msCounter` 与 `MotorCdd_Os1msCounter` 约 1:1 增长
+- [x] `Rte_InitState_1` 快速到 3；`StartApp_Cyclic1msCounter` 与 `MotorCdd_Os1msCounter` 约 1:1 增长
 - [ ] `SetRelAlarm(Rte_Al_TE_MotorTask_0_1ms)` 返回 `E_OK`；无 ErrorHook
 - [ ] ADC0 SR0（10 kHz）计数正常；PWM 10 kHz 波形、互补死区正确
 - [ ] 0x511 调试帧周期可达；零位读写成功（`NvLastResult=NVM_REQ_OK`）

@@ -207,7 +207,7 @@
                       <PARAMETER-VALUES>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Mcu/McuHardwareResourceAllocationConf/McuAscLinAllocationConf/McuAscLinChannelAllocationConf/McuAscLinChannelAllocationConf</DEFINITION-REF>
-                          <VALUE>ASCLIN_CH_NOT_USED</VALUE>
+                          <VALUE>ASCLIN_CH_USED_BY_UART_DRIVER</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Mcu/McuHardwareResourceAllocationConf/McuAscLinAllocationConf/McuAscLinChannelAllocationConf/McuAscLinKernelId</DEFINITION-REF>
@@ -4557,7 +4557,7 @@
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePointConfig/McuPllDistributionSettingConfig/McuAscLinSlowClockSourceSelection</DEFINITION-REF>
-                              <VALUE>ASCLINS_CLOCK_SOURCE_DISABLED_SEL0</VALUE>
+                              <VALUE>ASCLINS_CLOCK_SOURCE_ASCLINSI_SEL1</VALUE>
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/AURIX2G/EcucDefs/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePointConfig/McuPllDistributionSettingConfig/McuAscLinSlowFrequency</DEFINITION-REF>

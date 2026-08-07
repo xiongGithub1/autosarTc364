@@ -26,6 +26,14 @@
 								<option id="com.tasking.ctc.cc.noTaskingSfr.1001861997" name="Automatic inclusion of '.sfr' file" superClass="com.tasking.ctc.cc.noTaskingSfr" value="false" valueType="boolean"/>
 								<option id="com.tasking.ctc.cc.includePaths.1439296800" name="Include paths" superClass="com.tasking.ctc.cc.includePaths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Appl}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/MCAL364/Irq/AscLin_Irq}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/MCAL364/Uart/ssc/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/MCAL364/Uart/ssc/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/MCAL364/Lin_17_AscLin/ssc/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/MCAL364/Lin_17_AscLin/ssc/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/BSW364/CanTp/Implementation}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/BSW364/Dcm/Implementation}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/BSW364/Dem/Implementation}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/BSW364/CanXcp/Implementation}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/BSW364/Xcp}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/BSW364/Xcp/Implementation}&quot;"/>
@@ -136,12 +144,14 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/MCAL364/TC36xA}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/MCAL364/TC36xA/_Reg}&quot;"/>
 								</option>
-								<option id="com.tasking.ctc.cc.enableCache.1309564060" name="Cache generated code to improve the compilation speed" superClass="com.tasking.ctc.cc.enableCache" value="false" valueType="boolean"/>
+								<option id="com.tasking.ctc.cc.enableCache.1309564060" name="Cache generated code to improve the compilation speed" superClass="com.tasking.ctc.cc.enableCache" value="true" valueType="boolean"/>
 								<option id="com.tasking.ctc.c.allocation.nearSize.297661927" name="Threshold for putting data in __near:" superClass="com.tasking.ctc.c.allocation.nearSize" value="0" valueType="string"/>
 								<option id="com.tasking.ctc.cc.definedSymbols.1618884797" name="Defined symbols" superClass="com.tasking.ctc.cc.definedSymbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="BRS_COMP_TASKING "/>
 									<listOptionValue builtIn="false" value="BRS_PLATFORM_AURIX"/>
 								</option>
+								<option id="com.tasking.ctc.cc.optimize.1267085115" name="Optimization level:" superClass="com.tasking.ctc.cc.optimize" value="com.tasking.ctc.cc.optimize.1" valueType="enumerated"/>
+								<option id="com.tasking.ctc.cc.tradeoff.458686605" name="Trade-off between speed and size:" superClass="com.tasking.ctc.cc.tradeoff" value="com.tasking.ctc.cc.tradeoff.0" valueType="enumerated"/>
 								<inputType id="com.tasking.ctc.cppInputType.2018539661" name="C++" superClass="com.tasking.ctc.cppInputType"/>
 								<inputType id="com.tasking.ctc.cpp.cInputType.384961694" name="C" superClass="com.tasking.ctc.cpp.cInputType"/>
 								<inputType id="com.tasking.ctc.cc.msInputType.994567686" name="MS" superClass="com.tasking.ctc.cc.msInputType"/>
@@ -174,6 +184,7 @@
 			<storageModule addStartupFiles="false" moduleId="com.tasking.processor"/>
 			<storageModule moduleId="com.tasking.toolInfo">
 				<toolInfo>TASKING VX-toolset for TriCore: control program v6.2r2 Build 19032145</toolInfo>
+				<toolInfo>TASKING VX-toolset for TriCore: expire cache utility v6.2r2 Build 18041957</toolInfo>
 				<toolInfo>TASKING program builder v6.2r2 Build 18041957</toolInfo>
 				<toolInfo>TASKING VX-toolset for TriCore: object link v6.2r2 Build 18041957 SN 53216552</toolInfo>
 				<toolInfo>TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552</toolInfo>

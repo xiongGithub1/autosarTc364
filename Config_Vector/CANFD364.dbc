@@ -72,13 +72,25 @@ BO_ 528 msg_Receive: 1 RearECU
  SG_ sig_State_RearLeftDoor : 0|1@1+ (1,0) [0|1] ""  MyECU
  SG_ sig_State_RearInteriorLight : 2|1@1+ (1,0) [0|1] ""  MyECU
 
+BO_ 1868 msg_diag_Request_MyECU: 8 Tester
+ SG_ Signal_DiagRequestMyECU : 0|64@1+ (1,0) [0|1.8446744074E+019] ""  MyECU
+
+BO_ 1884 msg_diag_Response_MyECU: 8 MyECU
+ SG_ Signal_DiagResponseMyECU : 0|64@1+ (1,0) [0|1.8446744074E+019] ""  Tester
+
+BO_ 2015 msg_diag_RequestGlobal: 8 Tester
+ SG_ Signal_DiagRequestGlobal : 0|64@1+ (1,0) [0|1.8446744074E+019] ""  MyECU
 
 
-CM_ "AUTOSAR series communication matrix (application + NM). Calibration/XCP is NOT part of this matrix; see CANFD364_XCP_Dev.dbc and configure Xcp PDU in DaVinci/EcuC only.";
+
+CM_ "AUTOSAR series communication matrix (application + NM + UDS diag 0x74C/0x75C/0x7DF). Calibration/XCP is NOT part of this matrix; see CANFD364_XCP_Dev.dbc and configure Xcp PDU in DaVinci/EcuC only.";
 CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
 CM_ BO_ 1297 "MyECU TX motor status (Com). Cycle 5 ms, CAN FD. Signals align with RTE: MotorMode, tle9180_Ov_Fault, Id_Ref, Iq_Ref, Vbus, ElectricAngle. Observation only; mode/current commands via XCP RAM write, not Com Rx.";
 CM_ BO_ 512 "Legacy demo TX frame (kept for existing CanIf/Com). Prefer remove in later series cleanup if unused.";
 CM_ BO_ 528 "Legacy demo RX frame (kept for existing CanIf/Com). Prefer remove in later series cleanup if unused.";
+CM_ BO_ 1868 "UDS physical request (ID 0x74C, Tester -> MyECU), 8 bytes classic CAN. Dcm Rx PDU (physical addressing).";
+CM_ BO_ 1884 "UDS physical response (ID 0x75C, MyECU -> Tester), 8 bytes classic CAN. Dcm Tx PDU.";
+CM_ BO_ 2015 "UDS functional request (ID 0x7DF, broadcast), 8 bytes classic CAN. Dcm Rx PDU (functional addressing).";
 CM_ SG_ 1297 MotorMode "Aligned with MotorMode_Type in MotorMode.h (0..7).";
 CM_ SG_ 1297 Id_Ref "Actual Id current reference after clamp [A].";
 CM_ SG_ 1297 Iq_Ref "Actual Iq current reference after clamp [A].";
@@ -104,6 +116,10 @@ BA_DEF_  "IlTxTimeout" INT 0 65535;
 BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
 BA_DEF_ BU_  "NodeLayerModules" STRING ;
 BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagConnection" INT 0 65535;
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagUUDTResponse" ENUM  "No","Yes";
 BA_DEF_REL_ BU_SG_REL_  "GenSigTimeoutTime" INT 0 65535;
 BA_DEF_DEF_  "VFrameFormat" "StandardCAN_FD";
 BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
@@ -126,6 +142,10 @@ BA_DEF_DEF_  "IlTxTimeout" 0;
 BA_DEF_DEF_  "ILUsed" "Yes";
 BA_DEF_DEF_  "NodeLayerModules" "";
 BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "DiagConnection" 0;
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "DiagUUDTResponse" "No";
 BA_DEF_DEF_REL_ "GenSigTimeoutTime" 0;
 
 BA_ "Manufacturer" "CLBT";
@@ -152,6 +172,27 @@ BA_ "GenMsgILSupport" BO_ 528 1;
 BA_ "VFrameFormat" BO_ 528 0;
 BA_ "GenMsgSendType" BO_ 528 0;
 BA_ "GenMsgCycleTime" BO_ 528 100;
+
+BA_ "GenMsgILSupport" BO_ 1868 1;
+BA_ "VFrameFormat" BO_ 1868 0;
+BA_ "GenMsgSendType" BO_ 1868 1;
+BA_ "GenMsgCycleTime" BO_ 1868 0;
+BA_ "DiagConnection" BO_ 1868 57345;
+BA_ "DiagRequest" BO_ 1868 1;
+
+BA_ "GenMsgILSupport" BO_ 1884 1;
+BA_ "VFrameFormat" BO_ 1884 0;
+BA_ "GenMsgSendType" BO_ 1884 1;
+BA_ "GenMsgCycleTime" BO_ 1884 0;
+BA_ "DiagConnection" BO_ 1884 57345;
+BA_ "DiagResponse" BO_ 1884 1;
+
+BA_ "GenMsgILSupport" BO_ 2015 1;
+BA_ "VFrameFormat" BO_ 2015 0;
+BA_ "GenMsgSendType" BO_ 2015 1;
+BA_ "GenMsgCycleTime" BO_ 2015 0;
+BA_ "DiagConnection" BO_ 2015 57345;
+BA_ "DiagRequest" BO_ 2015 1;
 
 BA_ "GenSigSendType" SG_ 3221225472 sig_nm_RearECU 0;
 BA_ "GenSigCycleTime" SG_ 3221225472 sig_nm_RearECU 100;

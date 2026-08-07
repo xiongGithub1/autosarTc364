@@ -34,7 +34,6 @@ BSW Editor → 模块树选择 `Com` → `ComConfig`（信号/PDU 一般由 DBC 
 📷 图片位 M1：模块树选中 `Com` 的截图。
 
 ![1785918153474](image/DaVinci_Com/1785918153474.png)
-<!-- ![20260805162237](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805162237.png) -->
 
 ### 2.2 IPdu 组与信号
 
@@ -43,11 +42,8 @@ BSW Editor → 模块树选择 `Com` → `ComConfig`（信号/PDU 一般由 DBC 
 
 📷 图片位 M2：Com IPdu/信号列表截图。
 ![1785918263071](image/DaVinci_Com/1785918263071.png)
-<!-- ![20260805162426](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805162426.png) -->
 ![1785918280832](image/DaVinci_Com/1785918280832.png)
-<!-- ![20260805162444](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805162444.png) -->
 ![1785918297646](image/DaVinci_Com/1785918297646.png)
-<!-- ![20260805162501](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805162501.png) -->
 ### 2.3 MainFunction 周期
 
 - `ComMainFunctionTx` 事件挂到 `Default_BSW_ASync_Task_10ms`（10 ms 报警 `Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx`）。
@@ -55,7 +51,6 @@ BSW Editor → 模块树选择 `Com` → `ComConfig`（信号/PDU 一般由 DBC 
 📷 图片位 M3：Com MainFunction 事件/报警截图。
 
 ![1785924772744](image/DaVinci_Com/1785924772744.png)
-<!-- ![20260805181258](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805181258.png) -->
 ---
 
 ## 3. 与其它模块的引用关系

@@ -16,7 +16,7 @@
 **                                                                           **
 **  VERSION   : 11.0.0                                                       **
 **                                                                           **
-**  DATE, TIME: 2024-08-04, 19:10:52      !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2026-08-07, 16:02:43      !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  GENERATOR : Build b191017-0938        !!!IGNORE-LINE!!!                   **
 **                                                                           **
@@ -56,6 +56,9 @@
               <CATEGORY>BSW_MODULE</CATEGORY>
               <MODULE-ID>255</MODULE-ID>
               <PROVIDED-ENTRYS>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Irq/BswModuleEntrys/IrqAsclin_Init</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
                 <BSW-MODULE-ENTRY-REF-CONDITIONAL>
                   <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Irq/BswModuleEntrys/Irq_ClearAllInterruptFlags</BSW-MODULE-ENTRY-REF>
                 </BSW-MODULE-ENTRY-REF-CONDITIONAL>
@@ -106,6 +109,11 @@
                       <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Irq/BswModuleEntrys/IrqSpi_Init</IMPLEMENTED-ENTRY-REF>
                     </BSW-CALLED-ENTITY>
                     <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>IrqAsclin_Init</SHORT-NAME>
+                      <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Irq/BswModuleEntrys/IrqAsclin_Init</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                    <BSW-CALLED-ENTITY>
                       <SHORT-NAME>IrqAdc_Init</SHORT-NAME>
                       <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                       <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Irq/BswModuleEntrys/IrqAdc_Init</IMPLEMENTED-ENTRY-REF>
@@ -135,6 +143,14 @@
           <SHORT-NAME>BswModuleEntrys</SHORT-NAME>
           <CATEGORY>STANDARD</CATEGORY>
           <ELEMENTS>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>IrqAsclin_Init</SHORT-NAME>
+              <IS-REENTRANT>false</IS-REENTRANT>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>REGULAR</CALL-TYPE>
+              <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+            </BSW-MODULE-ENTRY>
             <BSW-MODULE-ENTRY>
               <SHORT-NAME>Irq_ClearAllInterruptFlags</SHORT-NAME>
               <IS-REENTRANT>false</IS-REENTRANT>

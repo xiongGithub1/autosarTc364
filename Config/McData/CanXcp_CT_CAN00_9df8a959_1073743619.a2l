@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanXcp_CT_CAN00_9df8a959_1073743619.a2l
- *   Generation Time: 2026-08-05 14:11:25
+ *   Generation Time: 2024-08-07 10:49:29
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -79,6 +79,26 @@
         OPTIONAL_CMD SET_MTA
         OPTIONAL_CMD UPLOAD
         OPTIONAL_CMD SHORT_UPLOAD
+        OPTIONAL_CMD DOWNLOAD
+        OPTIONAL_CMD DOWNLOAD_NEXT
+        OPTIONAL_CMD SHORT_DOWNLOAD
+        OPTIONAL_CMD MODIFY_BITS
+        OPTIONAL_CMD SET_DAQ_PTR
+        OPTIONAL_CMD WRITE_DAQ
+        OPTIONAL_CMD SET_DAQ_LIST_MODE
+        OPTIONAL_CMD GET_DAQ_LIST_MODE
+        OPTIONAL_CMD START_STOP_DAQ_LIST
+        OPTIONAL_CMD START_STOP_SYNCH
+        OPTIONAL_CMD GET_DAQ_PROCESSOR_INFO
+        OPTIONAL_CMD FREE_DAQ
+        OPTIONAL_CMD ALLOC_DAQ
+        OPTIONAL_CMD ALLOC_ODT
+        OPTIONAL_CMD ALLOC_ODT_ENTRY
+        OPTIONAL_CMD PROGRAM_START
+        OPTIONAL_CMD PROGRAM_CLEAR
+        OPTIONAL_CMD PROGRAM
+        OPTIONAL_CMD PROGRAM_RESET
+        COMMUNICATION_MODE_SUPPORTED  BLOCK  MASTER  43  0
       /end PROTOCOL_LAYER        
     /end XCP_ON_CAN
 

@@ -23,7 +23,6 @@ BSW Editor → 模块树选择 `EcuM` → `EcuMCommonConfiguration`。
 📷 图片位 E1：模块树选中 `EcuM` 的截图。
 
 ![1785916608744](image/DaVinci_EcuM/1785916608744.png)
-<!-- ![20260805155653](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805155653.png) -->
 
 ### 2.2 驱动初始化列表
 
@@ -37,11 +36,9 @@ BSW Editor → 模块树选择 `EcuM` → `EcuMCommonConfiguration`。
 
 📷 图片位 E2：`EcuMDriverInitListZero` 截图。
 ![1785916649571](image/DaVinci_EcuM/1785916649571.png)
-<!-- ![20260805155734](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805155734.png) -->
 
 📷 图片位 E3：`EcuMDriverInitListOne` 截图。
 ![1785916691119](image/DaVinci_EcuM/1785916691119.png)
-<!-- ![20260805155814](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805155814.png) -->
 
 
 ### 2.3 多核 Callout（`EcuM_AL_DriverInitOne`）
@@ -167,9 +164,7 @@ FUNC(void, ECUM_CODE) EcuM_AL_DriverInitOne(void)
 📷 图片位 E5：`EcuMCommonConfiguration` 其它参数截图。
 
 ![1785917082822](image/DaVinci_EcuM/1785917082822.png)
-<!-- ![20260805160450](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805160450.png) -->
 ![1785917105750](image/DaVinci_EcuM/1785917105750.png)
-<!-- ![20260805160509](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805160509.png) -->
 
 ---
 

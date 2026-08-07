@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: NvM_Cfg.h
- *   Generation Time: 2024-08-03 19:52:21
+ *   Generation Time: 2026-08-05 21:47:40
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -105,10 +105,10 @@ typedef union
 #define NVM_DATA_INTEGRITY_INT_BUFFER         (STD_ON)
 
 /* number of defined NV blocks */
-#define NVM_TOTAL_NUM_OF_NVRAM_BLOCKS         (3u)
+#define NVM_TOTAL_NUM_OF_NVRAM_BLOCKS         (13u)
 
 /* internal buffer size */
-#define NVM_INTERNAL_BUFFER_LENGTH            6u
+#define NVM_INTERNAL_BUFFER_LENGTH            34u
 
 /* version info api switch */
 #define NVM_VERSION_INFO_API                  (STD_OFF)
@@ -147,6 +147,16 @@ typedef union
 #define NvMConf___MultiBlockRequest (0u) 
 #define NvMConf_NvMBlockDescriptor_NvMConfigBlock (1u) 
 #define NvMConf_NvMBlockDescriptor_NvMBlock_MotorZeroCal (2u) 
+#define NvMConf_NvMBlockDescriptor_NvMBlock_DemAdmin (3u) 
+#define NvMConf_NvMBlockDescriptor_NvMBlock_DemPrimary1 (4u) 
+#define NvMConf_NvMBlockDescriptor_NvMBlock_DemPrimary2 (5u) 
+#define NvMConf_NvMBlockDescriptor_NvMBlock_DemPrimary3 (6u) 
+#define NvMConf_NvMBlockDescriptor_NvMBlock_DemPrimary4 (7u) 
+#define NvMConf_NvMBlockDescriptor_NvMBlock_DemPrimary5 (8u) 
+#define NvMConf_NvMBlockDescriptor_NvMBlock_DemPrimary6 (9u) 
+#define NvMConf_NvMBlockDescriptor_NvMBlock_DemPrimary7 (10u) 
+#define NvMConf_NvMBlockDescriptor_NvMBlock_DemPrimary8 (11u) 
+#define NvMConf_NvMBlockDescriptor_NvMBlock_DemPrimary9 (12u) 
 
 
 /* CONST_DESCRIPTOR_TABLE contains all block relevant data, including the compiled config ID

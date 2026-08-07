@@ -34,6 +34,9 @@
 
 #include "Rte_BswM.h"
 #include "Rte_ComM.h"
+#include "Rte_Dcm.h"
+#include "Rte_DemMaster_0.h"
+#include "Rte_DemSatellite_0.h"
 #include "Rte_Det.h"
 #include "Rte_EcuM.h"
 #include "Rte_MotorCdd.h"
@@ -47,10 +50,13 @@
 #include "SchM_Can.h"
 #include "SchM_CanIf.h"
 #include "SchM_CanSM.h"
+#include "SchM_CanTp.h"
 #include "SchM_Com.h"
 #include "SchM_ComM.h"
 #include "SchM_ComXf.h"
 #include "SchM_Crc.h"
+#include "SchM_Dcm.h"
+#include "SchM_Dem.h"
 #include "SchM_Det.h"
 #include "SchM_Dio.h"
 #include "SchM_Dma.h"
@@ -67,6 +73,7 @@
 #include "SchM_Pwm_17_GtmCcu6.h"
 #include "SchM_Sbc_30_Tlf35584.h"
 #include "SchM_Spi.h"
+#include "SchM_Uart.h"
 #include "SchM_Xcp.h"
 
 #include "Rte_Hook.h"
@@ -255,7 +262,7 @@ FUNC(void, RTE_CODE) SchM_StartTimingCore0(void)
   /* activate the alarms used for TimingEvents */
   (void)SetRelAlarm(Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_10ms, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(10U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
   (void)SetRelAlarm(Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_20ms, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(20U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
-  (void)SetRelAlarm(Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(5U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
+  (void)SetRelAlarm(Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_5ms, RTE_MSEC_SystemTimer(0U) + (TickType)1U, RTE_MSEC_SystemTimer(5U)); /* PRQA S 3417, 1840 */ /* MD_Rte_Os, MD_Rte_Os */
 
 }
 
@@ -330,7 +337,7 @@ FUNC(void, RTE_CODE) SchM_Deinit(void)
     /* deactivate alarms */
     (void)CancelAlarm(Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_10ms); /* PRQA S 3417 */ /* MD_Rte_Os */
     (void)CancelAlarm(Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_20ms); /* PRQA S 3417 */ /* MD_Rte_Os */
-    (void)CancelAlarm(Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx); /* PRQA S 3417 */ /* MD_Rte_Os */
+    (void)CancelAlarm(Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_5ms); /* PRQA S 3417 */ /* MD_Rte_Os */
 
     Rte_InitState = RTE_STATE_UNINIT;
   }

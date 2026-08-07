@@ -36,7 +36,6 @@ BSW Editor → 模块树选择 `Dio` → `DioConfig`。
 📷 图片位 D1：模块树选中 `Dio` 的截图。
 
 ![1785914939509](image/DaVinci_Dio/1785914939509.png)
-<!-- ![20260805152903](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805152903.png) -->
 
 
 ### 2.2 通道配置
@@ -60,13 +59,11 @@ BSW Editor → 模块树选择 `Dio` → `DioConfig`。
 
 📷 图片位 D2：Dio 通道列表截图。
 ![1785914979708](image/DaVinci_Dio/1785914979708.png)
-<!-- ![20260805152943](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805152943.png) -->
 p00.2 channel id 为2 就是对应的通道 
 
 📷 图片位 D3：`DioGeneral` 公共参数截图。
 
 ![1785915114619](image/DaVinci_Dio/1785915114619.png)
-<!-- ![20260805153158](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805153158.png) -->
 
 ---
 

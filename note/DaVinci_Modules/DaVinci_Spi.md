@@ -28,7 +28,6 @@ BSW Editor → 模块树选择 `Spi` → `SpiDriver`。
 
 
 ![1785914665831](image/DaVinci_Spi/1785914665831.png)
-<!-- ![20260805152430](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805152430.png) -->
 ### 2.2 通道 / 外设 / Job / Sequence
 
 | 对象 | 参数 | 值 |
@@ -62,21 +61,16 @@ BSW Editor → 模块树选择 `Spi` → `SpiDriver`。
 
 📷 图片位 S2：3 个 `SpiExternalDevice` 列表截图。
 ![1785914712075](image/DaVinci_Spi/1785914712075.png)
-<!-- ![20260805152518](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805152518.png) -->
 
 ![1785914740924](image/DaVinci_Spi/1785914740924.png)
-<!-- ![20260805152545](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805152545.png) -->
 📷 图片位 S3：`SpiChannel`（9183/5012BD1/35584）截图。
 ![1785914769981](image/DaVinci_Spi/1785914769981.png)
-<!-- ![20260805152613](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805152613.png) -->
 📷 图片位 S4：`SpiJob` / `SpiSequence` 列表截图。
 
 ![1785914817966](image/DaVinci_Spi/1785914817966.png)
-<!-- ![20260805152724](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805152724.png) -->
 
 
 ![1785914874461](image/DaVinci_Spi/1785914874461.png)
-<!-- ![20260805152758](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805152758.png) -->
 
 
 ### 2.3 硬件配置（`SpiHwConfiguration`）
@@ -90,9 +84,6 @@ BSW Editor → 模块树选择 `Spi` → `SpiDriver`。
 
 📷 图片位 S5：`SpiHwConfiguration` 截图。
 
-<!--
-![Spi 硬件配置](../image/DaVinci_Modules/05_spi_hw_config.png)
--->
 
 ---
 

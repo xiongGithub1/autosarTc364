@@ -1238,10 +1238,9 @@ ASAP2_VERSION 1 70
       /end XCP_ON_CAN
     /end IF_DATA
 
-    /include "E:\workFiles\TC367\TC367\workspace\last364\Config\McData\Xcp.a2l"
-
-    /include "E:\workFiles\TC367\TC367\workspace\last364\Config\McData\CanXcp_CT_CAN00_9df8a959_1073743619.a2l"
-
+    /* Do NOT /include Xcp.a2l or CanXcp_CT_*.a2l here:
+       PROTOCOL_LAYER / XCP_ON_CAN must stay inside IF_DATA XCPplus above.
+       Including those fragments at MODULE level causes ASAP2 parser error at Xcp.a2l line 45. */
     /include "E:\workFiles\TC367\TC367\workspace\last364\Config\McData\McData.a2l"
 
     /begin MEASUREMENT MotorCdd_FocContext.i_motor.u ""

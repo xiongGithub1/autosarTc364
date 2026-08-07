@@ -30,7 +30,6 @@ BSW Editor → 模块树选择 `Fee` → `FeeBlockConfiguration` / `FeeGeneral`�
 📷 图片位 E1：模块树选中 `Fee` 的截图。
 
 ![1785918639536](image/DaVinci_Fee/1785918639536.png)
-<!-- ![20260805163043](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805163043.png) -->
 
 ### 2.2 Fee 块
 
@@ -50,10 +49,8 @@ BSW Editor → 模块树选择 `Fee` → `FeeBlockConfiguration` / `FeeGeneral`�
 
 📷 图片位 E2：Fee 块列表截图。
 ![1785918681649](image/DaVinci_Fee/1785918681649.png)
-<!-- ![20260805163124](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805163124.png) -->
 📷 图片位 E3：`FeeGeneral` 参数截图。
 ![1785918704448](image/DaVinci_Fee/1785918704448.png)
-<!-- ![20260805163148](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805163148.png) -->
 
 
 

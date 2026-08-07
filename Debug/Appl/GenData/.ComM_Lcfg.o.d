@@ -168,6 +168,22 @@ Appl\GenData\ComM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
 Appl\GenData\ComM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\ComM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\ComM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\ComM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\ComM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\ComM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\ComM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+Appl\GenData\ComM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+Appl\GenData\ComM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 Appl\GenData\ComM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_OsInt.h"
 "E:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_Hal_OsInt.h" :
 Appl\GenData\ComM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_Lcfg.h"
@@ -270,12 +286,20 @@ Appl\GenData\ComM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenD
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComM_MemMap.h" :
 Appl\GenData\ComM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComM_MemMap.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComM_MemMap.h" :
+Appl\GenData\ComM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComM_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComM_MemMap.h" :
+Appl\GenData\ComM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComM_MemMap.h"
+"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComM_MemMap.h" :
 Appl\GenData\ComM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComM_Cfg.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComM_Cfg.h" :
 Appl\GenData\ComM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComM_MemMap.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComM_MemMap.h" :
 Appl\GenData\ComM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComM_MemMap.h"
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComM_MemMap.h" :
+Appl\GenData\ComM_Lcfg.o :	..\Appl\GenData\ComM_MemMap.h
+..\Appl\GenData\ComM_MemMap.h :
+Appl\GenData\ComM_Lcfg.o :	..\Appl\GenData\ComM_MemMap.h
+..\Appl\GenData\ComM_MemMap.h :
 Appl\GenData\ComM_Lcfg.o :	..\Appl\GenData\ComM_MemMap.h
 ..\Appl\GenData\ComM_MemMap.h :
 Appl\GenData\ComM_Lcfg.o :	..\Appl\GenData\ComM_MemMap.h
@@ -1218,6 +1242,10 @@ Appl\GenData\ComM_Lcfg.o :	"E:\workFiles\TC367\TC367\workspace\last364\Appl\GenD
 "E:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\ComM_MemMap.h" :
 Appl\GenData\ComM_Lcfg.o :	..\Appl\GenData\ComM_Lcfg.h
 ..\Appl\GenData\ComM_Lcfg.h :
+Appl\GenData\ComM_Lcfg.o :	..\Appl\GenData\ComM_MemMap.h
+..\Appl\GenData\ComM_MemMap.h :
+Appl\GenData\ComM_Lcfg.o :	..\Appl\GenData\ComM_MemMap.h
+..\Appl\GenData\ComM_MemMap.h :
 Appl\GenData\ComM_Lcfg.o :	..\Appl\GenData\ComM_MemMap.h
 ..\Appl\GenData\ComM_MemMap.h :
 Appl\GenData\ComM_Lcfg.o :	..\Appl\GenData\ComM_MemMap.h

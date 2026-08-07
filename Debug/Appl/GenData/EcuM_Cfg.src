@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
-	.compiler_invocation	"ctc -f cc10184a --dep-file=Appl\\GenData\\.EcuM_Cfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -DBRS_COMP_TASKING -DBRS_PLATFORM_AURIX -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanXcp\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Xcp -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Xcp\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Include -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=Appl\\GenData\\EcuM_Cfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\GenData\\EcuM_Cfg.src ..\\Appl\\GenData\\EcuM_Cfg.c"
+	.compiler_invocation	"ctc -f cc22252a --dep-file=Appl\\GenData\\.EcuM_Cfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -DBRS_COMP_TASKING -DBRS_PLATFORM_AURIX -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Uart\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Uart\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanTp\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Dcm\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Dem\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanXcp\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Xcp -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Xcp\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Include -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=Appl\\GenData\\EcuM_Cfg.o -t0 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O1 --default-a1-size=0 --default-a0-size=0 --source --align=0 --cache=E:\\workFiles\\TC367\\TC367\\workspace\\last364\\.cache --switch=auto --error-limit=42 -o Appl\\GenData\\EcuM_Cfg.src ..\\Appl\\GenData\\EcuM_Cfg.c"
 	.compiler_name		"ctc"
 	;source	'..\\Appl\\GenData\\EcuM_Cfg.c'
 
@@ -109,7 +109,7 @@ EcuM_UserTable:	.type	object
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L3:
-	.word	14201
+	.word	14825
 	.half	3
 	.word	.L4
 	.byte	4
@@ -120,9 +120,9 @@ EcuM_UserTable:	.type	object
 	.byte	'E:\\workFiles\\TC367\\TC367\\workspace\\last364\\Debug\\',0,12,1
 	.word	.L5
 	.byte	2
-	.byte	'EcuM_AL_DriverInitOne',0,1,181,8,30,1,1,1,1,2
-	.byte	'EcuM_AL_DriverInitTwo',0,1,185,8,30,1,1,1,1,2
-	.byte	'EcuM_AL_DriverInitThree',0,1,186,8,30,1,1,1,1,3
+	.byte	'EcuM_AL_DriverInitOne',0,1,189,8,30,1,1,1,1,2
+	.byte	'EcuM_AL_DriverInitTwo',0,1,193,8,30,1,1,1,1,2
+	.byte	'EcuM_AL_DriverInitThree',0,1,194,8,30,1,1,1,1,3
 	.byte	'__INDIRECT__',0,2,1,1,1,1,1,4,1,5
 	.word	253
 	.byte	6
@@ -169,8 +169,8 @@ EcuM_UserTable:	.type	object
 	.byte	'Std_TransformerClass',0,4,137,1,15
 	.word	278
 	.byte	6
-	.byte	'PduLengthType',0,5,65,15
-	.word	278
+	.byte	'PduLengthType',0,5,65,16
+	.word	325
 	.byte	5
 	.word	278
 	.byte	6
@@ -183,109 +183,130 @@ EcuM_UserTable:	.type	object
 	.byte	'TpDataStateType',0,6,226,1,3
 	.word	643
 	.byte	6
-	.byte	'ComM_InhibitionStatusType',0,7,45,15
+	.byte	'ComM_InhibitionStatusType',0,7,69,15
 	.word	278
 	.byte	6
-	.byte	'ComM_ModeType',0,7,57,15
+	.byte	'Dcm_RequestDataOut_SampleRoutineControl_Out_ResultPrimitiveType',0,7,78,16
+	.word	325
+	.byte	6
+	.byte	'Dcm_RequestDataOut_SampleRoutineControl_StartOnly_Out_ResultPrimitiveType',0,7,84,16
+	.word	389
+	.byte	6
+	.byte	'Dcm_StartDataIn_SampleRoutineControl_In_Option0PrimitiveType',0,7,90,15
 	.word	278
 	.byte	6
-	.byte	'EcuM_ModeType',0,7,63,15
+	.byte	'Dcm_StartDataIn_SampleRoutineControl_StartOnly_In_Option1ArrayType',0,7,96,15
 	.word	278
 	.byte	6
-	.byte	'EcuM_StateType',0,7,69,15
+	.byte	'Dcm_StartDataOut_SampleRoutineControl_Out_InitStatePrimitiveType',0,7,99,16
+	.word	389
+	.byte	6
+	.byte	'Dcm_StopDataOut_SampleRoutineControl_Out_StopStatePrimitiveType',0,7,105,16
+	.word	389
+	.byte	6
+	.byte	'ComM_ModeType',0,7,129,1,15
 	.word	278
 	.byte	6
-	.byte	'EcuM_UserType',0,7,72,15
+	.byte	'EcuM_ModeType',0,7,216,1,15
+	.word	278
+	.byte	6
+	.byte	'EcuM_StateType',0,7,222,1,15
+	.word	278
+	.byte	6
+	.byte	'EcuM_UserType',0,7,225,1,15
 	.word	278
 	.byte	10
 	.word	389
 	.byte	6
 	.byte	'EcuM_CoreStatusType',0,8,151,1,25
-	.word	844
+	.word	1291
 	.byte	10
 	.word	389
 	.byte	5
-	.word	878
+	.word	1325
 	.byte	6
 	.byte	'EcuM_CoreStatusArrayType',0,8,152,1,30
-	.word	883
+	.word	1330
 	.byte	11,1,1,5
-	.word	922
+	.word	1369
 	.byte	6
-	.byte	'EcuM_DriverFuncType',0,8,177,3,9
-	.word	925
+	.byte	'EcuM_DriverFuncType',0,8,184,3,9
+	.word	1372
 	.byte	6
-	.byte	'EcuM_ComMChannelsType',0,8,144,4,15
+	.byte	'EcuM_ComMChannelsType',0,8,157,4,15
 	.word	278
 	.byte	6
-	.byte	'EcuM_DefaultAppModeType',0,8,147,4,16
+	.byte	'EcuM_ComM_ComAllowedListType',0,8,160,4,15
+	.word	278
+	.byte	6
+	.byte	'EcuM_DefaultAppModeType',0,8,163,4,16
 	.word	389
 	.byte	6
-	.byte	'EcuM_KillAllInProgressType',0,8,162,4,15
+	.byte	'EcuM_KillAllInProgressType',0,8,178,4,15
 	.word	278
 	.byte	6
-	.byte	'EcuM_NormalMcuModeType',0,8,168,4,16
+	.byte	'EcuM_NormalMcuModeType',0,8,184,4,16
 	.word	389
 	.byte	6
-	.byte	'EcuM_ApplicationOfPartitionDataType',0,8,174,4,15
+	.byte	'EcuM_ApplicationOfPartitionDataType',0,8,190,4,15
 	.word	278
 	.byte	6
-	.byte	'EcuM_PostRunRequestCounterType',0,8,180,4,15
+	.byte	'EcuM_PostRunRequestCounterType',0,8,196,4,15
 	.word	278
 	.byte	6
-	.byte	'EcuM_RunRequestCounterType',0,8,183,4,15
+	.byte	'EcuM_RunRequestCounterType',0,8,199,4,15
 	.word	278
 	.byte	6
-	.byte	'EcuM_TimerType',0,8,189,4,16
+	.byte	'EcuM_TimerType',0,8,205,4,16
 	.word	325
 	.byte	6
-	.byte	'EcuM_ChannelOfWakeupSourceListType',0,8,192,4,15
+	.byte	'EcuM_ChannelOfWakeupSourceListType',0,8,208,4,15
 	.word	278
 	.byte	12
-	.byte	'sEcuM_DriverInitOneType',0,8,208,4,16,4,13
+	.byte	'sEcuM_DriverInitOneType',0,8,224,4,16,4,13
 	.byte	'FunctionOfDriverInitOne',0
-	.word	930
+	.word	1377
 	.byte	4,2,35,0,0,6
-	.byte	'EcuM_DriverInitOneType',0,8,211,4,3
-	.word	1280
+	.byte	'EcuM_DriverInitOneType',0,8,227,4,3
+	.word	1765
 	.byte	5
-	.word	922
+	.word	1369
 	.byte	12
-	.byte	'sEcuM_DriverInitThreeType',0,8,214,4,16,4,13
+	.byte	'sEcuM_DriverInitThreeType',0,8,230,4,16,4,13
 	.byte	'FunctionOfDriverInitThree',0
-	.word	930
+	.word	1377
 	.byte	4,2,35,0,0,6
-	.byte	'EcuM_DriverInitThreeType',0,8,217,4,3
-	.word	1381
+	.byte	'EcuM_DriverInitThreeType',0,8,233,4,3
+	.word	1866
 	.byte	12
-	.byte	'sEcuM_DriverInitTwoType',0,8,220,4,16,4,13
+	.byte	'sEcuM_DriverInitTwoType',0,8,236,4,16,4,13
 	.byte	'FunctionOfDriverInitTwo',0
-	.word	930
+	.word	1377
 	.byte	4,2,35,0,0,6
-	.byte	'EcuM_DriverInitTwoType',0,8,223,4,3
-	.word	1483
+	.byte	'EcuM_DriverInitTwoType',0,8,239,4,3
+	.word	1968
 	.byte	12
-	.byte	'sEcuM_PartitionDataType',0,8,226,4,16,1,13
+	.byte	'sEcuM_PartitionDataType',0,8,242,4,16,1,13
 	.byte	'ApplicationOfPartitionData',0
 	.word	278
 	.byte	1,2,35,0,0,6
-	.byte	'EcuM_PartitionDataType',0,8,229,4,3
-	.word	1579
+	.byte	'EcuM_PartitionDataType',0,8,245,4,3
+	.word	2064
 	.byte	12
-	.byte	'sEcuM_WakeupSourceListType',0,8,232,4,16,1,13
+	.byte	'sEcuM_WakeupSourceListType',0,8,248,4,16,1,13
 	.byte	'ChannelOfWakeupSourceList',0
 	.word	278
 	.byte	1,2,35,0,0,6
-	.byte	'EcuM_WakeupSourceListType',0,8,235,4,3
-	.word	1678
+	.byte	'EcuM_WakeupSourceListType',0,8,251,4,3
+	.word	2163
 	.byte	12
-	.byte	'sEcuM_PCConfigType',0,8,176,5,16,1,13
+	.byte	'sEcuM_PCConfigType',0,8,195,5,16,1,13
 	.byte	'EcuM_PCConfigNeverUsed',0
 	.word	278
 	.byte	1,2,35,0,0,6
-	.byte	'EcuM_PCConfigType',0,8,179,5,3
-	.word	1782
-	.byte	8,9,165,1,9,1,9
+	.byte	'EcuM_PCConfigType',0,8,198,5,3
+	.word	2267
+	.byte	8,9,167,1,9,1,9
 	.byte	'BswCore1Task',0,0,9
 	.byte	'Default_Appl_Init_Task',0,1,9
 	.byte	'Default_Appl_Task',0,2,9
@@ -300,17 +321,17 @@ EcuM_UserTable:	.type	object
 	.byte	'MotorTask',0,11,9
 	.byte	'INVALID_TASK',0,12,9
 	.byte	'OS_TASKID_COUNT',0,12,0,6
-	.byte	'TaskType',0,9,181,1,3
-	.word	1867
+	.byte	'TaskType',0,9,183,1,3
+	.word	2352
 	.byte	14,64
 	.word	389
 	.byte	15,15,0,12
 	.byte	'Os_ExceptionContextType_Tag',0,10,71,8,160,1,13
 	.byte	'AddressRegisters',0
-	.word	2198
+	.word	2683
 	.byte	64,2,35,0,13
 	.byte	'DataRegisters',0
-	.word	2198
+	.word	2683
 	.byte	64,2,35,64,13
 	.byte	'Ra',0
 	.word	389
@@ -337,7 +358,7 @@ EcuM_UserTable:	.type	object
 	.word	389
 	.byte	4,3,35,156,1,0,6
 	.byte	'Os_ExceptionContextType',0,11,59,44
-	.word	2207
+	.word	2692
 	.byte	6
 	.byte	'Os_InterruptSourceIdType',0,12,236,1,16
 	.word	389
@@ -350,7 +371,7 @@ EcuM_UserTable:	.type	object
 	.byte	'WAITING',0,2,9
 	.byte	'SUSPENDED',0,3,0,6
 	.byte	'TaskStateType',0,12,173,2,3
-	.word	2555
+	.word	3040
 	.byte	6
 	.byte	'EventMaskType',0,12,180,2,16
 	.word	445
@@ -371,13 +392,13 @@ EcuM_UserTable:	.type	object
 	.word	389
 	.byte	4,2,35,8,0,6
 	.byte	'AlarmBaseType',0,12,226,2,2
-	.word	2687
+	.word	3172
 	.byte	8,12,254,2,9,1,9
 	.byte	'APPLICATION_TERMINATED',0,0,9
 	.byte	'APPLICATION_RESTARTING',0,1,9
 	.byte	'APPLICATION_ACCESSIBLE',0,2,0,6
 	.byte	'ApplicationStateType',0,12,131,3,3
-	.word	2782
+	.word	3267
 	.byte	8,12,175,3,9,1,9
 	.byte	'OSServiceId_GetApplicationID',0,0,9
 	.byte	'OSServiceId_GetISRID',0,1,9
@@ -480,7 +501,7 @@ EcuM_UserTable:	.type	object
 	.byte	'OSServiceId_ReleaseResource',0,233,1,9
 	.byte	'OSSERVICEID_COUNT',0,255,1,0,6
 	.byte	'OSServiceIdType',0,12,155,4,3
-	.word	2894
+	.word	3379
 	.byte	8,12,171,4,9,2,9
 	.byte	'OS_STATUS_OK',0,0,9
 	.byte	'OS_STATUS_CALLEVEL',0,2,9
@@ -570,19 +591,19 @@ EcuM_UserTable:	.type	object
 	.byte	'OS_STATUS_VALUE_IS_TOO_LOW_3',0,136,20,9
 	.byte	'OS_STATUS_VALUE_IS_NOT_BOOLEAN',0,136,22,0,6
 	.byte	'Os_StatusType',0,12,231,5,3
-	.word	6111
+	.word	6596
 	.byte	16,12,132,6,9,4,13
 	.byte	'Service',0
-	.word	2894
+	.word	3379
 	.byte	1,2,35,0,13
 	.byte	'Error',0
 	.word	278
 	.byte	1,2,35,1,13
 	.byte	'DetailedError',0
-	.word	6111
+	.word	6596
 	.byte	2,2,35,2,0,6
 	.byte	'Os_ErrorInformationType',0,12,142,6,3
-	.word	8641
+	.word	9126
 	.byte	8,12,174,6,9,1,9
 	.byte	'SCHEDULETABLE_STOPPED',0,0,9
 	.byte	'SCHEDULETABLE_NEXT',0,1,9
@@ -590,7 +611,7 @@ EcuM_UserTable:	.type	object
 	.byte	'SCHEDULETABLE_RUNNING',0,3,9
 	.byte	'SCHEDULETABLE_RUNNING_AND_SYNCHRONOUS',0,4,0,6
 	.byte	'ScheduleTableStatusType',0,12,191,6,3
-	.word	8736
+	.word	9221
 	.byte	8,12,203,6,9,1,9
 	.byte	'OS_MEM_ACCESS_TYPE_NON',0,0,9
 	.byte	'OS_MEM_ACCESS_TYPE_R',0,1,9
@@ -613,7 +634,7 @@ EcuM_UserTable:	.type	object
 	.byte	'OS_MEM_ACCESS_TYPE_WXS',0,14,9
 	.byte	'OS_MEM_ACCESS_TYPE_RWXS',0,15,0,6
 	.byte	'Os_MemAccessType',0,12,225,6,3
-	.word	8909
+	.word	9394
 	.byte	6
 	.byte	'Os_Hal_AddressType',0,13,99,16
 	.word	389
@@ -623,7 +644,7 @@ EcuM_UserTable:	.type	object
 	.byte	7
 	.byte	'unsigned int',0,4,7,6
 	.byte	'unsigned_int',0,15,75,22
-	.word	9496
+	.word	9981
 	.byte	6
 	.byte	'Mcu_ExternalClockConfigType',0,16,212,1,18
 	.word	389
@@ -635,10 +656,10 @@ EcuM_UserTable:	.type	object
 	.word	389
 	.byte	17
 	.byte	'void',0,5
-	.word	9621
+	.word	10106
 	.byte	6
 	.byte	'Mcu_RamBaseAdrType',0,16,233,1,18
-	.word	9627
+	.word	10112
 	.byte	6
 	.byte	'Mcu_RamSizeType',0,16,237,1,18
 	.word	389
@@ -665,7 +686,7 @@ EcuM_UserTable:	.type	object
 	.word	325
 	.byte	16,0,2,35,2,0,6
 	.byte	'Mcu_SystemPllConfigType',0,16,235,2,3
-	.word	9713
+	.word	10198
 	.byte	16,16,243,2,9,4,18
 	.byte	'PerPllNDiv',0,1
 	.word	278
@@ -686,7 +707,7 @@ EcuM_UserTable:	.type	object
 	.word	325
 	.byte	15,0,2,35,2,0,6
 	.byte	'Mcu_PeripheralPllConfigType',0,16,251,2,3
-	.word	9887
+	.word	10372
 	.byte	14,8
 	.word	389
 	.byte	15,1,0,16,16,131,3,9,24,13
@@ -703,20 +724,20 @@ EcuM_UserTable:	.type	object
 	.word	389
 	.byte	4,2,35,12,13
 	.byte	'CcuconCpu',0
-	.word	10064
+	.word	10549
 	.byte	8,2,35,16,0,6
 	.byte	'Mcu_PllDistributionConfigType',0,16,143,3,3
-	.word	10073
+	.word	10558
 	.byte	19
-	.word	10073
+	.word	10558
 	.byte	5
-	.word	10206
+	.word	10691
 	.byte	16,16,151,3,9,44,13
 	.byte	'SystemPllCfg',0
-	.word	9713
+	.word	10198
 	.byte	4,2,35,0,13
 	.byte	'PeripheralPllCfg',0
-	.word	9887
+	.word	10372
 	.byte	4,2,35,4,13
 	.byte	'SysPllK2DivStepUpChangeDelay',0
 	.word	389
@@ -737,7 +758,7 @@ EcuM_UserTable:	.type	object
 	.word	389
 	.byte	4,2,35,28,13
 	.byte	'PllDistributionCfgPtr',0
-	.word	10211
+	.word	10696
 	.byte	4,2,35,32,13
 	.byte	'ExternalClockCfg',0
 	.word	389
@@ -749,10 +770,10 @@ EcuM_UserTable:	.type	object
 	.word	278
 	.byte	1,2,35,42,0,6
 	.byte	'Mcu_ClockConfigType',0,16,177,3,3
-	.word	10216
+	.word	10701
 	.byte	16,16,184,3,9,16,13
 	.byte	'RamBaseAdrPtr',0
-	.word	9632
+	.word	10117
 	.byte	4,2,35,0,13
 	.byte	'RamSize',0
 	.word	389
@@ -761,9 +782,9 @@ EcuM_UserTable:	.type	object
 	.word	445
 	.byte	8,2,35,8,0,6
 	.byte	'Mcu_RamConfigType',0,16,193,3,3
-	.word	10658
+	.word	11143
 	.byte	5
-	.word	9621
+	.word	10106
 	.byte	16,16,201,3,9,4,18
 	.byte	'McuMode',0,1
 	.word	278
@@ -772,13 +793,13 @@ EcuM_UserTable:	.type	object
 	.word	278
 	.byte	1,4,2,35,0,18
 	.byte	'Reserved',0,4
-	.word	9496
+	.word	9981
 	.byte	28,0,2,35,0,0,6
 	.byte	'Mcu_ModeEvrcCtrlType',0,16,206,3,3
-	.word	10758
+	.word	11243
 	.byte	16,16,223,3,9,28,13
 	.byte	'MaxModeEvrcCtrl',0
-	.word	10758
+	.word	11243
 	.byte	4,2,35,0,13
 	.byte	'Pmswcr0',0
 	.word	389
@@ -799,7 +820,7 @@ EcuM_UserTable:	.type	object
 	.word	389
 	.byte	4,2,35,24,0,6
 	.byte	'Mcu_LowPowerModeType',0,16,242,3,3
-	.word	10862
+	.word	11347
 	.byte	16,16,250,3,9,8,13
 	.byte	'GtmCmuExtClockNum',0
 	.word	389
@@ -808,11 +829,11 @@ EcuM_UserTable:	.type	object
 	.word	389
 	.byte	4,2,35,4,0,6
 	.byte	'Mcu_GtmExtClkType',0,16,128,4,3
-	.word	11030
+	.word	11515
 	.byte	14,32
 	.word	389
 	.byte	15,7,0,14,24
-	.word	11030
+	.word	11515
 	.byte	15,2,0,16,16,135,4,9,76,13
 	.byte	'GtmCmuClockEnable',0
 	.word	389
@@ -824,7 +845,7 @@ EcuM_UserTable:	.type	object
 	.word	389
 	.byte	4,2,35,8,13
 	.byte	'GtmCmuConfClkCtrl',0
-	.word	11118
+	.word	11603
 	.byte	32,2,35,12,13
 	.byte	'GtmCmuFixedClkCtrl',0
 	.word	389
@@ -833,10 +854,10 @@ EcuM_UserTable:	.type	object
 	.word	389
 	.byte	4,2,35,48,13
 	.byte	'GtmEclkCtrl',0
-	.word	11127
+	.word	11612
 	.byte	24,2,35,52,0,6
 	.byte	'Mcu_GtmClockSettingType',0,16,151,4,3
-	.word	11136
+	.word	11621
 	.byte	16,16,158,4,9,12,13
 	.byte	'GtmCcmCfg',0
 	.word	389
@@ -848,7 +869,7 @@ EcuM_UserTable:	.type	object
 	.word	389
 	.byte	4,2,35,8,0,6
 	.byte	'Mcu_GtmClusterConfigType',0,16,166,4,3
-	.word	11367
+	.word	11852
 	.byte	16,16,173,4,9,8,13
 	.byte	'TomTgcIntTrigRstCn0',0
 	.word	389
@@ -857,7 +878,7 @@ EcuM_UserTable:	.type	object
 	.word	389
 	.byte	4,2,35,4,0,6
 	.byte	'Mcu_GtmTomConfigType',0,16,188,4,3
-	.word	11484
+	.word	11969
 	.byte	16,16,195,4,9,8,13
 	.byte	'AtomAgcIntTrigRstCn0',0
 	.word	389
@@ -866,7 +887,7 @@ EcuM_UserTable:	.type	object
 	.word	389
 	.byte	4,2,35,4,0,6
 	.byte	'Mcu_GtmAtomConfigType',0,16,210,4,3
-	.word	11571
+	.word	12056
 	.byte	16,16,217,4,9,8,13
 	.byte	'GtmAdcTrigOut0',0
 	.word	389
@@ -875,7 +896,7 @@ EcuM_UserTable:	.type	object
 	.word	389
 	.byte	4,2,35,4,0,6
 	.byte	'Mcu_GtmAdcTrigType',0,16,221,4,3
-	.word	11661
+	.word	12146
 	.byte	16,16,225,4,9,8,13
 	.byte	'GtmDsadcTrigOut0',0
 	.word	389
@@ -884,54 +905,54 @@ EcuM_UserTable:	.type	object
 	.word	389
 	.byte	4,2,35,4,0,6
 	.byte	'Mcu_GtmDsadcTrigType',0,16,229,4,3
-	.word	11744
+	.word	12229
 	.byte	19
-	.word	11136
+	.word	11621
 	.byte	5
-	.word	11833
+	.word	12318
 	.byte	19
-	.word	11367
+	.word	11852
 	.byte	5
-	.word	11843
+	.word	12328
 	.byte	14,32
-	.word	11484
+	.word	11969
 	.byte	15,3,0,14,32
-	.word	11571
+	.word	12056
 	.byte	15,3,0,14,40
-	.word	11661
+	.word	12146
 	.byte	15,4,0,14,32
-	.word	11744
+	.word	12229
 	.byte	15,3,0,14,68
 	.word	389
 	.byte	15,16,0,14,12
 	.word	389
 	.byte	15,2,0,16,16,237,4,9,176,2,13
 	.byte	'GtmClockCfgPtr',0
-	.word	11838
+	.word	12323
 	.byte	4,2,35,0,13
 	.byte	'GtmClusterCfgPtr',0
-	.word	11848
+	.word	12333
 	.byte	4,2,35,4,13
 	.byte	'GtmTomCfg',0
-	.word	11853
+	.word	12338
 	.byte	32,2,35,8,13
 	.byte	'GtmAtomCfg',0
-	.word	11862
+	.word	12347
 	.byte	32,2,35,40,13
 	.byte	'GtmAdcTrigCfg',0
-	.word	11871
+	.word	12356
 	.byte	40,2,35,72,13
 	.byte	'GtmDsadcTrigCfg',0
-	.word	11880
+	.word	12365
 	.byte	32,2,35,112,13
 	.byte	'GtmToutSelCfg',0
-	.word	11889
+	.word	12374
 	.byte	68,3,35,144,1,13
 	.byte	'GtmToutSelCfgMsk',0
-	.word	11889
+	.word	12374
 	.byte	68,3,35,212,1,13
 	.byte	'GtmTimInSelCfg',0
-	.word	11898
+	.word	12383
 	.byte	12,3,35,152,2,13
 	.byte	'GtmTbuCfg',0
 	.word	389
@@ -946,54 +967,54 @@ EcuM_UserTable:	.type	object
 	.word	278
 	.byte	1,3,35,172,2,0,6
 	.byte	'Mcu_GtmConfigType',0,16,137,5,3
-	.word	11907
+	.word	12392
 	.byte	12
 	.byte	'sDet_PCConfigType',0,17,238,1,16,1,13
 	.byte	'Det_PCConfigNeverUsed',0
 	.word	278
 	.byte	1,2,35,0,0,6
 	.byte	'Det_PCConfigType',0,17,241,1,3
-	.word	12264
+	.word	12749
 	.byte	14,8
-	.word	888
+	.word	1335
 	.byte	15,1,0
 .L34:
 	.byte	19
-	.word	12346
+	.word	12831
 	.byte	10
 	.word	389
 	.byte	5
-	.word	12360
+	.word	12845
 	.byte	14,4
-	.word	1280
+	.word	1765
 	.byte	15,0,0
 .L35:
 	.byte	19
-	.word	12370
+	.word	12855
 	.byte	14,4
-	.word	1381
+	.word	1866
 	.byte	15,0,0
 .L36:
 	.byte	19
-	.word	12384
+	.word	12869
 	.byte	14,4
-	.word	1483
+	.word	1968
 	.byte	15,0,0
 .L37:
 	.byte	19
-	.word	12398
+	.word	12883
 	.byte	14,2
-	.word	1579
+	.word	2064
 	.byte	15,1,0
 .L38:
 	.byte	19
-	.word	12412
+	.word	12897
 	.byte	14,6
-	.word	1678
+	.word	2163
 	.byte	15,5,0
 .L39:
 	.byte	19
-	.word	12426
+	.word	12911
 .L42:
 	.byte	14,1
 	.word	278
@@ -1008,10 +1029,10 @@ EcuM_UserTable:	.type	object
 	.word	325
 	.byte	2,2,35,2,13
 	.byte	'ComM_InhibitionStatus',0
-	.word	12449
+	.word	12934
 	.byte	1,2,35,4,0,6
 	.byte	'ComM_InhibitionType',0,18,60,3
-	.word	12458
+	.word	12943
 	.byte	6
 	.byte	'ComM_InitStatusType',0,19,84,15
 	.word	278
@@ -1025,10 +1046,10 @@ EcuM_UserTable:	.type	object
 	.byte	21
 	.word	278
 	.byte	0,5
-	.word	12659
+	.word	13144
 	.byte	6
-	.byte	'RequestBusSMModeApiType',0,20,176,4,9
-	.word	12677
+	.byte	'RequestBusSMModeApiType',0,20,181,4,9
+	.word	13162
 	.byte	5
 	.word	278
 	.byte	20
@@ -1036,120 +1057,130 @@ EcuM_UserTable:	.type	object
 	.byte	1,1,21
 	.word	278
 	.byte	21
-	.word	12715
+	.word	13200
 	.byte	0,5
-	.word	12720
+	.word	13205
 	.byte	6
-	.byte	'GetCurrentBusSMModeApiType',0,20,177,4,9
-	.word	12738
+	.byte	'GetCurrentBusSMModeApiType',0,20,182,4,9
+	.word	13223
 	.byte	6
-	.byte	'ComM_ChannelIterType',0,20,236,4,21
+	.byte	'ComM_ChannelIterType',0,20,244,4,21
 	.word	278
 	.byte	6
-	.byte	'ComM_ComAllowedType',0,20,186,5,17
+	.byte	'ComM_ComAllowedType',0,20,197,5,17
 	.word	278
 	.byte	6
-	.byte	'ComM_PCPartitionConfigIdxOfPartitionIdentifiersType',0,20,189,5,15
+	.byte	'ComM_DcmRequestActiveType',0,20,200,5,17
 	.word	278
 	.byte	6
-	.byte	'ComM_PartitionSNVOfPartitionIdentifiersType',0,20,192,5,16
+	.byte	'ComM_PCPartitionConfigIdxOfPartitionIdentifiersType',0,20,203,5,15
+	.word	278
+	.byte	6
+	.byte	'ComM_PartitionSNVOfPartitionIdentifiersType',0,20,206,5,16
 	.word	389
 	.byte	6
-	.byte	'ComM_PostInitializedType',0,20,195,5,17
+	.byte	'ComM_PostInitializedType',0,20,209,5,17
 	.word	278
 	.byte	6
-	.byte	'ComM_PncUserOfUserType',0,20,198,5,17
+	.byte	'ComM_PncUserOfUserType',0,20,212,5,17
 	.word	278
 	.byte	6
-	.byte	'ComM_UserReqFullComType',0,20,222,5,15
+	.byte	'ComM_UserReqFullComType',0,20,236,5,15
 	.word	278
 	.byte	12
-	.byte	'sComM_ChannelType',0,20,251,5,16,8,13
+	.byte	'sComM_ChannelType',0,20,137,6,16,8,13
 	.byte	'GetCurrentBusSMModeApiOfChannel',0
-	.word	12743
+	.word	13228
 	.byte	4,2,35,0,13
 	.byte	'RequestBusSMModeApiOfChannel',0
-	.word	12682
+	.word	13167
 	.byte	4,2,35,4,0,6
-	.byte	'ComM_ChannelType',0,20,255,5,3
-	.word	13051
+	.byte	'ComM_ChannelType',0,20,141,6,3
+	.word	13571
 	.byte	5
-	.word	12720
+	.word	13205
 	.byte	5
-	.word	12659
+	.word	13144
 	.byte	12
-	.byte	'sComM_ChannelPbType',0,20,130,6,16,1,13
+	.byte	'sComM_ChannelPbType',0,20,144,6,16,1,13
 	.byte	'ComM_ChannelPbNeverUsed',0
 	.word	278
 	.byte	1,2,35,0,0,6
-	.byte	'ComM_ChannelPbType',0,20,133,6,3
-	.word	13191
+	.byte	'ComM_ChannelPbType',0,20,147,6,3
+	.word	13711
 	.byte	12
-	.byte	'sComM_PartitionIdentifiersType',0,20,136,6,16,6,13
+	.byte	'sComM_PartitionIdentifiersType',0,20,150,6,16,6,13
 	.byte	'PartitionSNVOfPartitionIdentifiers',0
 	.word	389
 	.byte	4,2,35,0,13
 	.byte	'PCPartitionConfigIdxOfPartitionIdentifiers',0
 	.word	278
 	.byte	1,2,35,4,0,6
-	.byte	'ComM_PartitionIdentifiersType',0,20,140,6,3
-	.word	13279
+	.byte	'ComM_PartitionIdentifiersType',0,20,154,6,3
+	.word	13799
 	.byte	12
-	.byte	'sComM_UserType',0,20,143,6,16,1,13
+	.byte	'sComM_UserType',0,20,157,6,16,1,13
 	.byte	'PncUserOfUser',0
 	.word	278
 	.byte	1,2,35,0,0,6
-	.byte	'ComM_UserType',0,20,146,6,3
-	.word	13452
+	.byte	'ComM_UserType',0,20,160,6,3
+	.word	13972
 	.byte	12
-	.byte	'sComM_UserByteMaskType',0,20,149,6,16,1,13
+	.byte	'sComM_UserByteMaskType',0,20,163,6,16,1,13
 	.byte	'ComM_UserByteMaskNeverUsed',0
 	.word	278
 	.byte	1,2,35,0,0,6
-	.byte	'ComM_UserByteMaskType',0,20,152,6,3
-	.word	13520
+	.byte	'ComM_UserByteMaskType',0,20,166,6,3
+	.word	14040
 	.byte	12
-	.byte	'ComM_ActiveComModeStructSTag',0,20,164,6,16,1,13
+	.byte	'ComM_ActiveComModeStructSTag',0,20,178,6,16,1,13
 	.byte	'ComMChannel_0',0
 	.word	278
 	.byte	1,2,35,0,0,6
-	.byte	'ComM_ActiveComModeStructSType',0,20,167,6,3
-	.word	13617
+	.byte	'ComM_ActiveComModeStructSType',0,20,181,6,3
+	.word	14137
 	.byte	12
-	.byte	'ComM_BusComModeReqStructSTag',0,20,170,6,16,1,13
+	.byte	'ComM_BusComModeReqStructSTag',0,20,184,6,16,1,13
 	.byte	'ComMChannel_0',0
 	.word	278
 	.byte	1,2,35,0,0,6
-	.byte	'ComM_BusComModeReqStructSType',0,20,173,6,3
-	.word	13715
+	.byte	'ComM_BusComModeReqStructSType',0,20,187,6,3
+	.word	14235
 	.byte	12
-	.byte	'ComM_BusSmStateStructSTag',0,20,176,6,16,1,13
+	.byte	'ComM_BusSmStateStructSTag',0,20,190,6,16,1,13
 	.byte	'ComMChannel_0',0
 	.word	278
 	.byte	1,2,35,0,0,6
-	.byte	'ComM_BusSmStateStructSType',0,20,179,6,3
-	.word	13813
+	.byte	'ComM_BusSmStateStructSType',0,20,193,6,3
+	.word	14333
 	.byte	12
-	.byte	'ComM_ComAllowedStructSTag',0,20,182,6,16,1,13
+	.byte	'ComM_ComAllowedStructSTag',0,20,196,6,16,1,13
 	.byte	'ComMChannel_0',0
 	.word	278
 	.byte	1,2,35,0,0,6
-	.byte	'ComM_ComAllowedStructSType',0,20,185,6,3
-	.word	13905
+	.byte	'ComM_ComAllowedStructSType',0,20,199,6,3
+	.word	14425
 	.byte	12
-	.byte	'sComM_PCPartitionConfigType',0,20,154,7,16,1,13
+	.byte	'ComM_DcmRequestActiveStructSTag',0,20,202,6,16,1,13
+	.byte	'ComMChannel_0',0
+	.word	278
+	.byte	1,2,35,0,0,6
+	.byte	'ComM_DcmRequestActiveStructSType',0,20,205,6,3
+	.word	14517
+	.byte	12
+	.byte	'sComM_PCPartitionConfigType',0,20,184,7,16,1,13
 	.byte	'ComM_PCPartitionConfigNeverUsed',0
 	.word	278
 	.byte	1,2,35,0,0,6
-	.byte	'ComM_PCPartitionConfigType',0,20,157,7,3
-	.word	13997
+	.byte	'ComM_PCPartitionConfigType',0,20,187,7,3
+	.word	14621
 	.byte	12
-	.byte	'sComM_PCConfigType',0,20,172,7,16,1,13
+	.byte	'sComM_PCConfigType',0,20,202,7,16,1,13
 	.byte	'ComM_PCConfigNeverUsed',0
 	.word	278
 	.byte	1,2,35,0,0,6
-	.byte	'ComM_PCConfigType',0,20,175,7,3
-	.word	14109
+	.byte	'ComM_PCConfigType',0,20,205,7,3
+	.word	14733
 .L43:
 	.byte	10
 	.word	389

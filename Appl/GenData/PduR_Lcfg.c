@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: PduR_Lcfg.c
- *   Generation Time: 2024-08-04 12:44:09
+ *   Generation Time: 2026-08-05 22:06:45
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -68,6 +68,8 @@
 /* Include headers with callbacks */
 #include "PduR_CanIf.h"
 #include "PduR_Com.h"
+#include "PduR_CanTp.h"
+#include "PduR_Dcm.h"
 
 
 /**********************************************************************************************************************
@@ -206,20 +208,29 @@ CONST(PduR_LockRomType, PDUR_CONST) PduR_LockRom[1] = {  /* PRQA S 1514, 1533 */
   \var    PduR_MmRom
   \brief  Module manager: Contains all function pointers of the bordering modules.
   \details
-  Element                     Description
-  MaskedBits                  contains bitcoded the boolean data of PduR_LoIfOfMmRom, PduR_UpIfOfMmRom
-  UpIfRxIndicationFctPtr      Upper layer communication interface Rx indication function pointers.
-  UpIfTxConfirmationFctPtr    Upper layer communication interface Tx confimation function pointers
-  LoIfTransmitFctPtr          Lower layer If transmit function pointers
+  Element                       Description
+  MaskedBits                    contains bitcoded the boolean data of PduR_LoIfOfMmRom, PduR_LoTpOfMmRom, PduR_TpCancelTransmitSupportedOfMmRom, PduR_UpIfOfMmRom, PduR_UpTpOfMmRom
+  LoTpCancelTransmitFctPtr      Lower layer cancel transmit function pointers.
+  UpTpCopyRxDataFctPtr          Transport protocol CopyRxData function pointers
+  UpTpCopyTxDataFctPtr          Transport protocol CopyTxData function pointers
+  UpIfRxIndicationFctPtr        Upper layer communication interface Rx indication function pointers.
+  UpIfTxConfirmationFctPtr      Upper layer communication interface Tx confimation function pointers
+  UpTpStartOfReceptionFctPtr    Transport protocol StartOfReception function pointers
+  UpTpTpRxIndicationFctPtr      Transport protocol TpRxIndication function pointers
+  UpTpTpTxConfirmationFctPtr    Transport protocol TpTxConfimation function pointers
+  LoIfTransmitFctPtr            Lower layer If transmit function pointers
+  LoTpTransmitFctPtr            Lower layer Tp transmit function pointers
 */ 
 #define PDUR_START_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "PduR_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-CONST(PduR_MmRomType, PDUR_CONST) PduR_MmRom[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-    /* Index    MaskedBits  UpIfRxIndicationFctPtr  UpIfTxConfirmationFctPtr  LoIfTransmitFctPtr        Referable Keys */
-  { /*     0 */      0x02u, NULL_PTR              , NULL_PTR                , CanIf_Transmit     },  /* [/ActiveEcuC/PduR/CanIf] */
-  { /*     1 */      0x01u, Com_RxIndication      , Com_TxConfirmation      , NULL_PTR           }   /* [/ActiveEcuC/PduR/Com] */
+CONST(PduR_MmRomType, PDUR_CONST) PduR_MmRom[4] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+    /* Index    MaskedBits  LoTpCancelTransmitFctPtr  UpTpCopyRxDataFctPtr  UpTpCopyTxDataFctPtr  UpIfRxIndicationFctPtr  UpIfTxConfirmationFctPtr  UpTpStartOfReceptionFctPtr  UpTpTpRxIndicationFctPtr  UpTpTpTxConfirmationFctPtr  LoIfTransmitFctPtr  LoTpTransmitFctPtr        Referable Keys */
+  { /*     0 */      0x10u, NULL_PTR                , NULL_PTR            , NULL_PTR            , NULL_PTR              , NULL_PTR                , NULL_PTR                  , NULL_PTR                , NULL_PTR                  , CanIf_Transmit    , NULL_PTR           },  /* [/ActiveEcuC/PduR/CanIf] */
+  { /*     1 */      0x0Cu, CanTp_CancelTransmit    , NULL_PTR            , NULL_PTR            , NULL_PTR              , NULL_PTR                , NULL_PTR                  , NULL_PTR                , NULL_PTR                  , NULL_PTR          , CanTp_Transmit     },  /* [/ActiveEcuC/PduR/CanTp] */
+  { /*     2 */      0x02u, NULL_PTR                , NULL_PTR            , NULL_PTR            , Com_RxIndication      , Com_TxConfirmation      , NULL_PTR                  , NULL_PTR                , NULL_PTR                  , NULL_PTR          , NULL_PTR           },  /* [/ActiveEcuC/PduR/Com] */
+  { /*     3 */      0x01u, NULL_PTR                , Dcm_CopyRxData      , Dcm_CopyTxData      , NULL_PTR              , NULL_PTR                , Dcm_StartOfReception      , Dcm_TpRxIndication      , Dcm_TpTxConfirmation      , NULL_PTR          , NULL_PTR           }   /* [/ActiveEcuC/PduR/Dcm] */
 };
 #define PDUR_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -266,11 +277,14 @@ CONST(PduR_PartitionIdentifiersType, PDUR_CONST) PduR_PartitionIdentifiers[1] = 
 /*lint -save -esym(961, 19.1) */
 #include "PduR_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-CONST(PduR_RmDestRomType, PDUR_CONST) PduR_RmDestRom[3] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-    /* Index    PduLengthHandlingStrategy                         RmGDestRomIdx  RmSrcRomIdx  RoutingType                                                 Comment                                                               Referable Keys */
-  { /*     0 */ PDUR_IGNORE_PDULENGTHHANDLINGSTRATEGYOFRMDESTROM,            2u,          2u, PDUR_IF_UNBUFFERED_TX_API_FWD_ROUTINGTYPEOFRMDESTROM },  /* [PduRDestPdu: msg_Transmit_oCAN00_9631a86b_Tx]            */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_Transmit_oCAN00_0723e95e_Tx/PduRSrcPdu_087fd70d, /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_Transmit_oCAN00_0723e95e_Tx/msg_Transmit_oCAN00_9631a86b_Tx] */
-  { /*     1 */ PDUR_IGNORE_PDULENGTHHANDLINGSTRATEGYOFRMDESTROM,            1u,          0u, PDUR_IF_UNBUFFERED_RX_API_FWD_ROUTINGTYPEOFRMDESTROM },  /* [PduRDestPdu: msg_Receive_oCAN00_3867e0b8_Rx_16740ed0_Rx] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_Receive_oCAN00_3867e0b8_Rx/PduRSrcPdu_16740ed0, /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_Receive_oCAN00_3867e0b8_Rx/msg_Receive_oCAN00_3867e0b8_Rx_16740ed0_Rx] */
-  { /*     2 */ PDUR_IGNORE_PDULENGTHHANDLINGSTRATEGYOFRMDESTROM,            0u,          1u, PDUR_IF_UNBUFFERED_TX_API_FWD_ROUTINGTYPEOFRMDESTROM }   /* [PduRDestPdu: msg_MotorStatus_oCAN00_a6063320_Tx]         */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_MotorStatus_oCAN00_71118836_Tx/PduRSrcPdu_96a7407f, /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_MotorStatus_oCAN00_71118836_Tx/msg_MotorStatus_oCAN00_a6063320_Tx] */
+CONST(PduR_RmDestRomType, PDUR_CONST) PduR_RmDestRom[6] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+    /* Index    PduLengthHandlingStrategy                         RmGDestRomIdx  RmSrcRomIdx  RoutingType                                                 Comment                                                                          Referable Keys */
+  { /*     0 */ PDUR_IGNORE_PDULENGTHHANDLINGSTRATEGYOFRMDESTROM,            2u,          4u, PDUR_IF_UNBUFFERED_TX_API_FWD_ROUTINGTYPEOFRMDESTROM },  /* [PduRDestPdu: msg_Transmit_oCAN00_9631a86b_Tx]                       */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_Transmit_oCAN00_0723e95e_Tx/PduRSrcPdu_087fd70d, /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_Transmit_oCAN00_0723e95e_Tx/msg_Transmit_oCAN00_9631a86b_Tx] */
+  { /*     1 */ PDUR_UNUSED_PDULENGTHHANDLINGSTRATEGYOFRMDESTROM,            4u,          2u, PDUR_TP_UNBUFFERED_RX_API_FWD_ROUTINGTYPEOFRMDESTROM },  /* [PduRDestPdu: msg_diag_Request_MyECU_oCAN00_a823f7ba_Rx_11d927ad_Rx] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_diag_Request_MyECU_oCAN00_a823f7ba_Rx/PduRSrcPdu_11d927ad, /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_diag_Request_MyECU_oCAN00_a823f7ba_Rx/msg_diag_Request_MyECU_oCAN00_a823f7ba_Rx_11d927ad_Rx] */
+  { /*     2 */ PDUR_IGNORE_PDULENGTHHANDLINGSTRATEGYOFRMDESTROM,            1u,          0u, PDUR_IF_UNBUFFERED_RX_API_FWD_ROUTINGTYPEOFRMDESTROM },  /* [PduRDestPdu: msg_Receive_oCAN00_3867e0b8_Rx_16740ed0_Rx]            */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_Receive_oCAN00_3867e0b8_Rx/PduRSrcPdu_16740ed0, /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_Receive_oCAN00_3867e0b8_Rx/msg_Receive_oCAN00_3867e0b8_Rx_16740ed0_Rx] */
+  { /*     3 */ PDUR_IGNORE_PDULENGTHHANDLINGSTRATEGYOFRMDESTROM,            0u,          3u, PDUR_IF_UNBUFFERED_TX_API_FWD_ROUTINGTYPEOFRMDESTROM },  /* [PduRDestPdu: msg_MotorStatus_oCAN00_a6063320_Tx]                    */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_MotorStatus_oCAN00_71118836_Tx/PduRSrcPdu_96a7407f, /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_MotorStatus_oCAN00_71118836_Tx/msg_MotorStatus_oCAN00_a6063320_Tx] */
+  { /*     4 */ PDUR_UNUSED_PDULENGTHHANDLINGSTRATEGYOFRMDESTROM,            5u,          5u, PDUR_TP_UNBUFFERED_TX_API_FWD_ROUTINGTYPEOFRMDESTROM },  /* [PduRDestPdu: msg_diag_Response_MyECU_oCAN00_45311294_Tx]            */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_diag_Response_MyECU_oCAN00_f4dcbbcd_Tx/PduRSrcPdu_f4835c60, /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_diag_Response_MyECU_oCAN00_f4dcbbcd_Tx/msg_diag_Response_MyECU_oCAN00_45311294_Tx] */
+  { /*     5 */ PDUR_UNUSED_PDULENGTHHANDLINGSTRATEGYOFRMDESTROM,            3u,          1u, PDUR_TP_UNBUFFERED_RX_API_FWD_ROUTINGTYPEOFRMDESTROM }   /* [PduRDestPdu: msg_diag_RequestGlobal_oCAN00_38f4a687_Rx_fdd5755a_Rx] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_diag_RequestGlobal_oCAN00_38f4a687_Rx/PduRSrcPdu_fdd5755a, /ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_diag_RequestGlobal_oCAN00_38f4a687_Rx/msg_diag_RequestGlobal_oCAN00_38f4a687_Rx_fdd5755a_Rx] */
 };
 #define PDUR_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -296,11 +310,14 @@ CONST(PduR_RmDestRomType, PDUR_CONST) PduR_RmDestRom[3] = {  /* PRQA S 1514, 153
 /*lint -save -esym(961, 19.1) */
 #include "PduR_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-CONST(PduR_RmGDestRomType, PDUR_CONST) PduR_RmGDestRom[3] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-    /* Index    DestHnd                                                     Direction                      LockRomIdx  MaxPduLength  MmRomIdx  RmDestRomIdx        Comment                                                              Referable Keys */
-  { /*     0 */ CanIfConf_CanIfTxPduCfg_msg_MotorStatus_oCAN00_41e9a736_Tx, PDUR_TX_DIRECTIONOFRMGDESTROM,         0u,          12u,       0u,           2u },  /* [Global PduRDestPdu: msg_MotorStatus_oCAN00_a6063320_Tx] */  /* [/ActiveEcuC/EcuC/EcucPduCollection/msg_MotorStatus_oCAN00_a6063320_Tx, /ActiveEcuC/PduR/CanIf, PduRSinglePartitionDummy] */
-  { /*     1 */             ComConf_ComIPdu_msg_Receive_oCAN00_2b456e3f_Rx, PDUR_RX_DIRECTIONOFRMGDESTROM,         0u,           1u,       1u,           1u },  /* [Global PduRDestPdu: msg_Receive_oCAN00_2b456e3f_Rx]     */  /* [/ActiveEcuC/EcuC/EcucPduCollection/msg_Receive_oCAN00_2b456e3f_Rx, /ActiveEcuC/PduR/Com, PduRSinglePartitionDummy] */
-  { /*     2 */    CanIfConf_CanIfTxPduCfg_msg_Transmit_oCAN00_29db34a4_Tx, PDUR_TX_DIRECTIONOFRMGDESTROM,         0u,           1u,       0u,           0u }   /* [Global PduRDestPdu: msg_Transmit_oCAN00_9631a86b_Tx]    */  /* [/ActiveEcuC/EcuC/EcucPduCollection/msg_Transmit_oCAN00_9631a86b_Tx, /ActiveEcuC/PduR/CanIf, PduRSinglePartitionDummy] */
+CONST(PduR_RmGDestRomType, PDUR_CONST) PduR_RmGDestRom[6] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+    /* Index    DestHnd                                                                      Direction                      LockRomIdx  MaxPduLength  MmRomIdx  RmDestRomIdx        Comment                                                                      Referable Keys */
+  { /*     0 */                  CanIfConf_CanIfTxPduCfg_msg_MotorStatus_oCAN00_41e9a736_Tx, PDUR_TX_DIRECTIONOFRMGDESTROM,         0u,          12u,       0u,           3u },  /* [Global PduRDestPdu: msg_MotorStatus_oCAN00_a6063320_Tx]         */  /* [/ActiveEcuC/EcuC/EcucPduCollection/msg_MotorStatus_oCAN00_a6063320_Tx, /ActiveEcuC/PduR/CanIf, PduRSinglePartitionDummy] */
+  { /*     1 */                              ComConf_ComIPdu_msg_Receive_oCAN00_2b456e3f_Rx, PDUR_RX_DIRECTIONOFRMGDESTROM,         0u,           1u,       2u,           2u },  /* [Global PduRDestPdu: msg_Receive_oCAN00_2b456e3f_Rx]             */  /* [/ActiveEcuC/EcuC/EcucPduCollection/msg_Receive_oCAN00_2b456e3f_Rx, /ActiveEcuC/PduR/Com, PduRSinglePartitionDummy] */
+  { /*     2 */                     CanIfConf_CanIfTxPduCfg_msg_Transmit_oCAN00_29db34a4_Tx, PDUR_TX_DIRECTIONOFRMGDESTROM,         0u,           1u,       0u,           0u },  /* [Global PduRDestPdu: msg_Transmit_oCAN00_9631a86b_Tx]            */  /* [/ActiveEcuC/EcuC/EcucPduCollection/msg_Transmit_oCAN00_9631a86b_Tx, /ActiveEcuC/PduR/CanIf, PduRSinglePartitionDummy] */
+  { /*     3 */                                   DcmConf_DcmDslProtocolRx_DcmDslProtocolRx, PDUR_RX_DIRECTIONOFRMGDESTROM,         0u,           8u,       3u,           5u },  /* [Global PduRDestPdu: msg_diag_RequestGlobal_oCAN00_25be229e_Rx]  */  /* [/ActiveEcuC/EcuC/EcucPduCollection/msg_diag_RequestGlobal_oCAN00_25be229e_Rx, /ActiveEcuC/PduR/Dcm, PduRSinglePartitionDummy] */
+  { /*     4 */ DcmConf_DcmDslProtocolRx_msg_diag_Request_MyECU_oCAN00_956934ec_Rx_b73501b5, PDUR_RX_DIRECTIONOFRMGDESTROM,         0u,           8u,       3u,           1u },  /* [Global PduRDestPdu: msg_diag_Request_MyECU_oCAN00_956934ec_Rx]  */  /* [/ActiveEcuC/EcuC/EcucPduCollection/msg_diag_Request_MyECU_oCAN00_956934ec_Rx, /ActiveEcuC/PduR/Dcm, PduRSinglePartitionDummy] */
+  { /*     5 */                                  CanTpConf_CanTpTxNSdu_CanTpTxNSdu_550eef02, PDUR_TX_DIRECTIONOFRMGDESTROM,         0u,           8u,       1u,           4u }   /* [Global PduRDestPdu: msg_diag_Response_MyECU_oCAN00_45311294_Tx] */  /* [/ActiveEcuC/EcuC/EcucPduCollection/msg_diag_Response_MyECU_oCAN00_45311294_Tx, /ActiveEcuC/PduR/CanTp, PduRSinglePartitionDummy] */
 };
 #define PDUR_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -324,11 +341,14 @@ CONST(PduR_RmGDestRomType, PDUR_CONST) PduR_RmGDestRom[3] = {  /* PRQA S 1514, 1
 /*lint -save -esym(961, 19.1) */
 #include "PduR_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-CONST(PduR_RmSrcRomType, PDUR_CONST) PduR_RmSrcRom[3] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-    /* Index    LockRomIdx  MmRomIdx  RmDestRomStartIdx  SrcHnd                                                    Comment                                       Referable Keys */
-  { /*     0 */         0u,       0u,                1u,                           PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_16740ed0] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_Receive_oCAN00_3867e0b8_Rx/PduRSrcPdu_16740ed0] */
-  { /*     1 */         0u,       1u,                2u, ComConf_ComIPdu_msg_MotorStatus_oCAN00_71118836_Tx },  /* [PduRSrcPdu: PduRSrcPdu_96a7407f] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_MotorStatus_oCAN00_71118836_Tx/PduRSrcPdu_96a7407f] */
-  { /*     2 */         0u,       1u,                0u,    ComConf_ComIPdu_msg_Transmit_oCAN00_0723e95e_Tx }   /* [PduRSrcPdu: PduRSrcPdu_087fd70d] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_Transmit_oCAN00_0723e95e_Tx/PduRSrcPdu_087fd70d] */
+CONST(PduR_RmSrcRomType, PDUR_CONST) PduR_RmSrcRom[6] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+    /* Index    LockRomIdx  MmRomIdx  RmDestRomStartIdx  SrcHnd                                                                              Comment                                       Referable Keys */
+  { /*     0 */         0u,       0u,                2u,                                                     PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_16740ed0] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_Receive_oCAN00_3867e0b8_Rx/PduRSrcPdu_16740ed0] */
+  { /*     1 */         0u,       1u,                5u,                                                     PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_fdd5755a] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_diag_RequestGlobal_oCAN00_38f4a687_Rx/PduRSrcPdu_fdd5755a] */
+  { /*     2 */         0u,       1u,                1u,                                                     PDUR_NO_SRCHNDOFRMSRCROM },  /* [PduRSrcPdu: PduRSrcPdu_11d927ad] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_diag_Request_MyECU_oCAN00_a823f7ba_Rx/PduRSrcPdu_11d927ad] */
+  { /*     3 */         0u,       2u,                3u,                           ComConf_ComIPdu_msg_MotorStatus_oCAN00_71118836_Tx },  /* [PduRSrcPdu: PduRSrcPdu_96a7407f] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_MotorStatus_oCAN00_71118836_Tx/PduRSrcPdu_96a7407f] */
+  { /*     4 */         0u,       2u,                0u,                              ComConf_ComIPdu_msg_Transmit_oCAN00_0723e95e_Tx },  /* [PduRSrcPdu: PduRSrcPdu_087fd70d] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_Transmit_oCAN00_0723e95e_Tx/PduRSrcPdu_087fd70d] */
+  { /*     5 */         0u,       3u,                4u, DcmConf_DcmDslProtocolTx_msg_diag_Response_MyECU_oCAN00_f4dcbbcd_Tx_c184e7e6 }   /* [PduRSrcPdu: PduRSrcPdu_f4835c60] */  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_diag_Response_MyECU_oCAN00_f4dcbbcd_Tx/PduRSrcPdu_f4835c60] */
 };
 #define PDUR_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -346,9 +366,10 @@ CONST(PduR_RmSrcRomType, PDUR_CONST) PduR_RmSrcRom[3] = {  /* PRQA S 1514, 1533 
 /*lint -save -esym(961, 19.1) */
 #include "PduR_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-CONST(PduR_RmTransmitFctPtrType, PDUR_CONST) PduR_RmTransmitFctPtr[1] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-  /* Index     RmTransmitFctPtr        Referable Keys */
-  /*     0 */ PduR_RmIf_RoutePdu    /* [PduR_RmIf_RoutePdu] */
+CONST(PduR_RmTransmitFctPtrType, PDUR_CONST) PduR_RmTransmitFctPtr[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+  /* Index     RmTransmitFctPtr                  Referable Keys */
+  /*     0 */ PduR_RmIf_RoutePdu           ,  /* [PduR_RmIf_RoutePdu] */
+  /*     1 */ PduR_RmTp_Transmit_MultiDest    /* [PduR_RmTp_Transmit_MultiDest] */
 };
 #define PDUR_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -370,10 +391,11 @@ CONST(PduR_RmTransmitFctPtrType, PDUR_CONST) PduR_RmTransmitFctPtr[1] = {  /* PR
 /*lint -save -esym(961, 19.1) */
 #include "PduR_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-CONST(PduR_Tx2LoType, PDUR_CONST) PduR_Tx2Lo[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+CONST(PduR_Tx2LoType, PDUR_CONST) PduR_Tx2Lo[3] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
     /* Index    RmSrcRomIdx  RmTransmitFctPtrIdx        Referable Keys */
-  { /*     0 */          1u,                  0u },  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_MotorStatus_oCAN00_71118836_Tx/PduRSrcPdu_96a7407f] */
-  { /*     1 */          2u,                  0u }   /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_Transmit_oCAN00_0723e95e_Tx/PduRSrcPdu_087fd70d] */
+  { /*     0 */          3u,                  0u },  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_MotorStatus_oCAN00_71118836_Tx/PduRSrcPdu_96a7407f] */
+  { /*     1 */          4u,                  0u },  /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_Transmit_oCAN00_0723e95e_Tx/PduRSrcPdu_087fd70d] */
+  { /*     2 */          5u,                  1u }   /* [/ActiveEcuC/PduR/PduRRoutingTables/PduRRoutingTable/msg_diag_Response_MyECU_oCAN00_f4dcbbcd_Tx/PduRSrcPdu_f4835c60] */
 };
 #define PDUR_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -518,6 +540,31 @@ FUNC(Std_ReturnType, PDUR_CODE) PduR_ComTransmit(PduIdType id, P2CONST(PduInfoTy
 }
 
 
+/**********************************************************************************************************************
+ * PduR_DcmTransmit
+ *********************************************************************************************************************/
+/*!
+ * \internal
+ * - call upper layer Transmit function. 
+ * \endinternal
+ *********************************************************************************************************************/
+FUNC(Std_ReturnType, PDUR_CODE) PduR_DcmTransmit(PduIdType id, P2CONST(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) info) /* COV_PDUR_WRAPPER_FUNC */
+{
+  Std_ReturnType retVal = E_NOT_OK;        /* PRQA S 2981 */ /* MD_MSR_RetVal */
+  
+#if (PDUR_TX2LO == STD_ON) /* COV_PDUR_RX_OR_TX_ONLY_CONFIG */
+  retVal = PduR_UpTransmit(id, info); /* SBSW_PDUR_EXTERNAL_API_CALL_FORWARDING_ONLY */
+#else
+  PduR_Det_ReportError(PDUR_FCT_TX, PDUR_E_PDU_ID_INVALID);
+#endif
+
+  PDUR_DUMMY_STATEMENT(id);     /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+  PDUR_DUMMY_STATEMENT(info);   /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+
+  return retVal;
+}
+
+
 /* Communication Interface APIs */
 
 /**********************************************************************************************************************
@@ -561,6 +608,128 @@ FUNC(void, PDUR_CODE) PduR_CanIfTxConfirmation(PduIdType TxPduId) /* COV_PDUR_WR
 
 /* Transport Protocol APIs */
 
+/**********************************************************************************************************************
+ * PduR_CanTpStartOfReception
+ *********************************************************************************************************************/
+ /*!
+ * \internal
+ * - call transport protocoll StartOfReception function.  
+ * \endinternal
+ *********************************************************************************************************************/
+FUNC(BufReq_ReturnType, PDUR_CODE) PduR_CanTpStartOfReception(PduIdType id, P2VAR(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) info, PduLengthType TpSduLength, P2VAR(PduLengthType, AUTOMATIC, PDUR_APPL_DATA) bufferSizePtr) /* COV_PDUR_WRAPPER_FUNC */
+{
+  BufReq_ReturnType retVal = BUFREQ_E_NOT_OK;        /* PRQA S 2981 */ /* MD_MSR_RetVal */
+
+#if (PDUR_RXTP2DEST == STD_ON) /* COV_PDUR_RX_OR_TX_ONLY_CONFIG */
+  retVal = PduR_LoTpStartOfReception(id, info, TpSduLength, bufferSizePtr); /* SBSW_PDUR_EXTERNAL_API_CALL_FORWARDING_ONLY */
+#else
+  PduR_Det_ReportError(PDUR_FCT_SOR, PDUR_E_PDU_ID_INVALID);
+#endif
+
+  PDUR_DUMMY_STATEMENT(id);     		/* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+  PDUR_DUMMY_STATEMENT(info);   		/* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+  PDUR_DUMMY_STATEMENT(TpSduLength);    /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+  PDUR_DUMMY_STATEMENT(bufferSizePtr);  /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+
+  return retVal;
+}
+
+
+/**********************************************************************************************************************
+ * PduR_CanTpCopyRxData
+ *********************************************************************************************************************/
+/*!
+ * \internal
+ * - call internal general CopyRxData.
+ * \endinternal
+ *********************************************************************************************************************/
+FUNC(BufReq_ReturnType, PDUR_CODE) PduR_CanTpCopyRxData(PduIdType id, P2VAR(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) info, P2VAR(PduLengthType, AUTOMATIC, PDUR_APPL_DATA) bufferSizePtr) /* COV_PDUR_WRAPPER_FUNC */
+{
+  BufReq_ReturnType retVal = BUFREQ_E_NOT_OK;        /* PRQA S 2981 */ /* MD_MSR_RetVal */
+  
+#if (PDUR_RXTP2DEST == STD_ON) /* COV_PDUR_RX_OR_TX_ONLY_CONFIG */
+  retVal = PduR_LoTpCopyRxData(id, info, bufferSizePtr); /* SBSW_PDUR_EXTERNAL_API_CALL_FORWARDING_ONLY */
+#else
+  PduR_Det_ReportError(PDUR_FCT_CPYRX, PDUR_E_PDU_ID_INVALID);
+#endif
+
+  PDUR_DUMMY_STATEMENT(id);     		/* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+  PDUR_DUMMY_STATEMENT(info);  			/* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+  PDUR_DUMMY_STATEMENT(bufferSizePtr);  /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+  
+  return retVal;
+}
+
+
+/**********************************************************************************************************************
+ * PduR_CanTpCopyTxData
+ *********************************************************************************************************************/
+/*!
+ * \internal
+ * - call internal general CopyTxData.
+ * \endinternal
+ *********************************************************************************************************************/
+FUNC(BufReq_ReturnType, PDUR_CODE) PduR_CanTpCopyTxData(PduIdType id, P2VAR(PduInfoType, AUTOMATIC, PDUR_APPL_DATA) info, P2VAR(RetryInfoType, AUTOMATIC, PDUR_APPL_DATA) retry, P2VAR(PduLengthType, AUTOMATIC, PDUR_APPL_DATA) availableDataPtr) /* COV_PDUR_WRAPPER_FUNC */
+{
+  BufReq_ReturnType retVal = BUFREQ_E_NOT_OK;        /* PRQA S 2981 */ /* MD_MSR_RetVal */
+  
+#if(PDUR_TXTP2SRC == STD_ON) /* COV_PDUR_RX_OR_TX_ONLY_CONFIG */
+  retVal = PduR_LoTpCopyTxData(id, info, retry, availableDataPtr); /* SBSW_PDUR_EXTERNAL_API_CALL_FORWARDING_ONLY */
+#else
+  PduR_Det_ReportError(PDUR_FCT_CPYTX, PDUR_E_PDU_ID_INVALID);
+#endif
+
+  PDUR_DUMMY_STATEMENT(id);     				/* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+  PDUR_DUMMY_STATEMENT(info);  					/* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+  PDUR_DUMMY_STATEMENT(retry);  				/* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+  PDUR_DUMMY_STATEMENT(availableDataPtr);       /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+  
+  return retVal;
+}
+
+
+/**********************************************************************************************************************
+ * PduR_CanTpRxIndication
+ *********************************************************************************************************************/
+/*!
+ * \internal
+ * - call Tp RxIndication function.
+ * \endinternal
+ *********************************************************************************************************************/
+FUNC(void, PDUR_CODE) PduR_CanTpRxIndication(PduIdType id, Std_ReturnType result) /* COV_PDUR_WRAPPER_FUNC */
+{
+#if (PDUR_RXTP2DEST == STD_ON) /* COV_PDUR_RX_OR_TX_ONLY_CONFIG */
+  PduR_LoTpRxIndication(id, result);
+#else
+  PduR_Det_ReportError(PDUR_FCT_TPRXIND, PDUR_E_PDU_ID_INVALID);
+#endif
+
+  PDUR_DUMMY_STATEMENT(id);     /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+  PDUR_DUMMY_STATEMENT(result); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+}
+
+
+/**********************************************************************************************************************
+ * PduR_CanTpTxConfirmation
+ *********************************************************************************************************************/
+/*!
+ * \internal
+ * - call Tp TxConfirmation function 
+ * \endinternal
+ *********************************************************************************************************************/
+FUNC(void, PDUR_CODE) PduR_CanTpTxConfirmation(PduIdType id, Std_ReturnType result) /* COV_PDUR_WRAPPER_FUNC */
+{
+#if (PDUR_TXTP2SRC == STD_ON) /* COV_PDUR_RX_OR_TX_ONLY_CONFIG */
+  PduR_LoTpTxConfirmation(id, result);
+#else
+  PduR_Det_ReportError(PDUR_FCT_TPTXCFM, PDUR_E_PDU_ID_INVALID);
+#endif
+
+  PDUR_DUMMY_STATEMENT(id);     /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+  PDUR_DUMMY_STATEMENT(result); /* PRQA S 1338, 2983, 3112 */ /* MD_MSR_DummyStmt */ /* lint -e{438} */
+}
+
+
 /* CancelReceive global without UseTag API */
 
 /* ChangeParameter global without UseTag  API */
@@ -568,6 +737,20 @@ FUNC(void, PDUR_CODE) PduR_CanIfTxConfirmation(PduIdType TxPduId) /* COV_PDUR_WR
 /* Communication Interface / Transport Protocol APIs */
 
 /* Communication Interface / Transport Protocol APIs */
+
+/**********************************************************************************************************************
+ * PduR_DcmCancelTransmit
+ *********************************************************************************************************************/
+/*!
+ * \internal
+ * - call internal general CancelTransmit function.
+ * \endinternal
+ *********************************************************************************************************************/
+FUNC(Std_ReturnType, PDUR_CODE) PduR_DcmCancelTransmit(PduIdType id)
+{
+  return PduR_CancelTransmit(id); /* SBSW_PDUR_EXTERNAL_API_CALL_FORWARDING_ONLY */
+}
+
 
 /**********************************************************************************************************************
   CONFIGURATION CLASS: LINK

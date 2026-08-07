@@ -5,7 +5,7 @@
 	<ProdInfo type="bin" size="52">vQTv/gAAAQAIAAMAkz8CAAIABQAAAAAAPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAA==</ProdInfo>
 	<ProdInfoString type="string">5.2</ProdInfoString>
 	<CreationDate type="string">31.07.2026 09:31:02:000</CreationDate>
-	<LastWriteDate type="string">04.08.2026 20:25:59:000</LastWriteDate>
+	<LastWriteDate type="string">07.08.2026 10:52:46:000</LastWriteDate>
 	<MainFrame type="key">
 		<VisibilityGroupsMgr type="key">
 			<EnableVisibilityGroups type="flag">0</EnableVisibilityGroups>
@@ -707,7 +707,7 @@
 							<UniqueIdentifier>Core0.ViewSrv.UDEStackWin.OPEN_VIEW</UniqueIdentifier>
 						</UniqueControlIdDockingControlData>
 						<UniqueControlIdDockingControlData>
-							<DockedDimension>478</DockedDimension>
+							<DockedDimension>431</DockedDimension>
 							<Cancelled>false</Cancelled>
 							<DockingType>Right</DockingType>
 							<FloatingBounds>
@@ -1476,7 +1476,7 @@
 									<Width>111</Width>
 									<Height>25</Height>
 								</Bounds>
-								<Name>Show Toolbar</Name>
+								<Name>Window Toolbar</Name>
 								<AlwaysUnvisible>false</AlwaysUnvisible>
 								<Visible>false</Visible>
 								<ToolItemData>
@@ -1593,7 +1593,7 @@
 									<Width>111</Width>
 									<Height>25</Height>
 								</Bounds>
-								<Name>Window Toolbar</Name>
+								<Name>Show Toolbar</Name>
 								<AlwaysUnvisible>false</AlwaysUnvisible>
 								<Visible>false</Visible>
 								<ToolItemData>
@@ -2322,7 +2322,7 @@
 									<ToolItemPersistData>
 										<Name></Name>
 										<Visible>true</Visible>
-										<Text>Core1</Text>
+										<Text>Core0</Text>
 										<DisplayStyle>ImageAndText</DisplayStyle>
 										<AppendAccelerator>false</AppendAccelerator>
 									</ToolItemPersistData>
@@ -2336,7 +2336,7 @@
 									<ToolItemPersistData>
 										<Name></Name>
 										<Visible>true</Visible>
-										<Text>Core1 running</Text>
+										<Text>Core0 not connected</Text>
 										<DisplayStyle>ImageAndText</DisplayStyle>
 										<AppendAccelerator>false</AppendAccelerator>
 									</ToolItemPersistData>
@@ -2608,7 +2608,7 @@
 		<UDE.Script type="key">
 			<MacroGuiEntries type="key">
 				<LastScriptFilePath type="string">C:\Users\Qxiong\Documents\pls\UDE 5.2</LastScriptFilePath>
-				<Macro_03_08_26_11_09_08_0 type="key">
+				<Macro_06_08_26_20_46_55_0 type="key">
 					<ScriptDescription type="string">The script contains a collection of macros to save memory content into different file formats 
 and fill target memory ranges</ScriptDescription>
 					<ScriptPath type="string">V:\UDE\AddOns\Macro\MacroLibrary\StdMacros1.dsm</ScriptPath>
@@ -2888,7 +2888,7 @@ End Sub</ScriptSource>
 					<ScriptFromStg type="flag">1</ScriptFromStg>
 					<LocalComputerName type="string">WS_CORE_DUO</LocalComputerName>
 					<ExternalScriptPath type="string"></ExternalScriptPath>
-					<NextNodeName type="string">Macro_04_08_26_20_25_58_0</NextNodeName>
+					<NextNodeName type="string">Macro_07_08_26_10_52_46_0</NextNodeName>
 					<UnAss type="key">
 						<GUIEntry type="key">
 							<MenuID type="int">10</MenuID>
@@ -2945,7 +2945,7 @@ End Sub</ScriptSource>
 						<GUIEntryDescription type="string"></GUIEntryDescription>
 					</FillDWord>
 					<NoOfFunctions type="int">5</NoOfFunctions>
-				</Macro_03_08_26_11_09_08_0>
+				</Macro_06_08_26_20_46_55_0>
 			</MacroGuiEntries>
 			<LastSelectedMacro type="string"></LastSelectedMacro>
 		</UDE.Script>
@@ -3012,7 +3012,7 @@ Group Member</LastSelectedPropPage>
 							<HoldedPeriod type="int">0</HoldedPeriod>
 						</AnimateQueue>
 					</ViewSrv>
-					<SourceFile type="string">code &lt;0x80000000-0x800003FF&gt;</SourceFile>
+					<SourceFile type="string">code &lt;0x7FFFFE00-0x800001FF&gt;</SourceFile>
 					<SourceFileInstFlag type="int">4</SourceFileInstFlag>
 					<NETFrameMode type="int">73728</NETFrameMode>
 					<NETFrameSaveIndex type="int">5</NETFrameSaveIndex>
@@ -3465,7 +3465,7 @@ Group Member</LastSelectedPropPage>
 					<FrameCreated type="string">31.07.2026 10:10:52:209</FrameCreated>
 					<ViewSrv type="key">
 						<TopIndex type="int">0</TopIndex>
-						<CaretIndex type="int">23</CaretIndex>
+						<CaretIndex type="int">0</CaretIndex>
 						<NameWidth type="int">456</NameWidth>
 						<AddressWidth type="int">0</AddressWidth>
 						<ValueWidth type="int">456</ValueWidth>
@@ -3745,8 +3745,8 @@ s.ms</Label>
 								<GridStyle type="int">0</GridStyle>
 								<GridColor type="string">150,150,150</GridColor>
 								<AxisColor type="string">0,0,0</AxisColor>
-								<MinRange type="double">-1</MinRange>
-								<MaxRange type="double">1</MaxRange>
+								<MinRange type="double">-0.2176195681095123291</MinRange>
+								<MaxRange type="double">0.18653106689453125</MaxRange>
 								<Font type="string">Arial,Dh,0,0,0,400,0,0,0,1,2,1,4,0</Font>
 								<TitleFont type="string">Arial,Eh,0,0,0,700,0,0,0,1,2,1,4,0</TitleFont>
 								<DisplayFmt type="string">%5.1f</DisplayFmt>
@@ -4281,8 +4281,8 @@ s.ms</Label>
 			<UDE.TriCoreArchSrv type="key">
 				<UDE.Tc2CoreTargIntf type="key">
 					<Setup type="key">
-						<PortType type="string">UAD2</PortType>
-						<CommDevSel type="string">DeviceNumber=617436,PortType=USB,Type=UAD2</CommDevSel>
+						<PortType type="string">DAS</PortType>
+						<CommDevSel type="string"></CommDevSel>
 						<TargetPort type="string">Default</TargetPort>
 						<MaxJtagClk type="int">5000</MaxJtagClk>
 						<CheckJtagId type="flag">1</CheckJtagId>
@@ -4642,8 +4642,24 @@ WAIT 5
 				<TimerValue type="double">0.00071263999999999995318</TimerValue>
 			</TargetStateHndlStg>
 			<breakpointsV3 type="key">
-				<collectionStr type="string"></collectionStr>
-				<collection type="key"></collection>
+				<collectionStr type="string">_0,</collectionStr>
+				<collection type="key">
+					<_0 type="key">
+						<breakpointType type="string">code</breakpointType>
+						<label type="string">'Det_ReportError {E:\workFiles\TC367\TC367\workspace\last364\BSW364\Det\Implementation\Det.c} .656';Det.c;1;64;;</label>
+						<enable type="flag">1</enable>
+						<address type="string">'Det_ReportError {E:\workFiles\TC367\TC367\workspace\last364\BSW364\Det\Implementation\Det.c} .656';Det.c;1;64;;</address>
+						<multiCore type="flag">0</multiCore>
+						<enableCondition type="flag">0</enableCondition>
+						<condition type="string"></condition>
+						<enableLoopCounter type="flag">0</enableLoopCounter>
+						<loopCounter type="string">0</loopCounter>
+						<loopGoal type="string">0</loopGoal>
+						<enableMacro type="flag">0</enableMacro>
+						<macro type="string"></macro>
+						<codeBreakpointType type="string">hardware</codeBreakpointType>
+					</_0>
+				</collection>
 			</breakpointsV3>
 		</UDE.StdDbgSrv>
 	</Core0>
@@ -4694,7 +4710,7 @@ WAIT 5
 							<HoldedPeriod type="int">0</HoldedPeriod>
 						</AnimateQueue>
 					</ViewSrv>
-					<SourceFile type="string">code &lt;0x8001CFC8-0x8001D3C7&gt;</SourceFile>
+					<SourceFile type="string">code &lt;0x8002BDF6-0x8002C1F5&gt;</SourceFile>
 					<SourceFileInstFlag type="int">4</SourceFileInstFlag>
 					<NETFrameMode type="int">73728</NETFrameMode>
 					<NETFrameSaveIndex type="int">39</NETFrameSaveIndex>
@@ -5247,8 +5263,8 @@ WAIT 5
 				<OPEN_VIEW00 type="key">
 					<FrameCreated type="string">31.07.2026 10:11:09:245</FrameCreated>
 					<ViewSrv type="key">
-						<TopIndex type="int">34</TopIndex>
-						<CaretIndex type="int">42</CaretIndex>
+						<TopIndex type="int">97</TopIndex>
+						<CaretIndex type="int">91</CaretIndex>
 						<NameWidth type="int">529</NameWidth>
 						<AddressWidth type="int">0</AddressWidth>
 						<ValueWidth type="int">367</ValueWidth>
@@ -5291,7 +5307,7 @@ WAIT 5
 							</Watch7>
 							<Watch8 type="key">
 								<Name type="string">MotorCdd_FocContext (global) @1</Name>
-								<Status type="string">#0#0,0#0,1#0,3#</Status>
+								<Status type="string">#0#0,0#</Status>
 								<RunningPeriod8 type="int">25</RunningPeriod8>
 								<HoldedPeriod8 type="int">100</HoldedPeriod8>
 							</Watch8>

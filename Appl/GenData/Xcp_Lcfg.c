@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Xcp_Lcfg.c
- *   Generation Time: 2026-08-04 12:24:48
+ *   Generation Time: 2024-08-07 10:49:29
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -52,6 +52,7 @@
 # define XCP_START_SEC_VAR_NOCACHE_NOINIT_32BIT
 # include "MemMap.h" /* PRQA S 5087 */  /* MD_MSR_MemMap */
 
+XCP_LOCAL VAR(uint8, XCP_VAR_NOINIT_NOCACHE) Xcp_SendQueue_Core0[XCP_NUMBER_OF_CHANNELS][256u];
 
 # define XCP_STOP_SEC_VAR_NOCACHE_NOINIT_32BIT
 # include "MemMap.h" /* PRQA S 5087 */  /* MD_MSR_MemMap */
@@ -73,6 +74,10 @@ CONST(uint32, XCP_CONST) Xcp_SendQueueSize[XCP_NUMBER_OF_CORES] =
 
 CONST(Xcp_ECcIDType, XCP_CONST) Xcp_ECcIdMapping[XCP_MAX_EVENT] = /* PRQA S 1533 */ /* MD_XCP_1533 */
 {
+  {
+    0u, 
+    0u
+  }
 };
 #endif
 

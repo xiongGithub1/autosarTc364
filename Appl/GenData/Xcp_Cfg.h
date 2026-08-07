@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Xcp_Cfg.h
- *   Generation Time: 2026-08-04 12:24:48
+ *   Generation Time: 2024-08-07 10:49:29
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -129,33 +129,33 @@
 #define kXcpChecksumBlockSize                (0u)
 
 /*  - Calibration commands */
-#define XCP_CALIBRATION                      STD_OFF
-#define XCP_BLOCK_DOWNLOAD                   STD_OFF
-#define XCP_MODIFY_BITS                      STD_OFF
-#define XCP_SHORT_DOWNLOAD                   STD_OFF
+#define XCP_CALIBRATION                      STD_ON
+#define XCP_BLOCK_DOWNLOAD                   STD_ON
+#define XCP_MODIFY_BITS                      STD_ON
+#define XCP_SHORT_DOWNLOAD                   STD_ON
 #define XCP_BLOCK_DOWNLOAD_MIN_ST            (0u)
 
 /*  - Synchronous Data Acquisition (DAQ) commands */
-#define XCP_DAQ                              STD_OFF
-#define XCP_NUMBER_OF_CORES                  (0u)
+#define XCP_DAQ                              STD_ON
+#define XCP_NUMBER_OF_CORES                  (1u)
 #define XCP_DAQ_COMPLEMENTARY_CHANNEL        STD_OFF
 #define XCP_STIM                             STD_OFF
 #define XCP_DAQ_PRESCALER                    STD_OFF
-#define XCP_DAQ_OVERRUN_INDICATION           STD_OFF
+#define XCP_DAQ_OVERRUN_INDICATION           STD_ON
 #define XCP_WRITE_DAQ_MULTIPLE               STD_OFF
-#define XCP_DAQ_HDR_ODT_DAQ                  STD_OFF
+#define XCP_DAQ_HDR_LEN                      (0x00u + 1U)
 #define XCP_DAQ_RESUME                       STD_OFF
-#define XCP_DAQ_PROCESSOR_INFO               STD_OFF
+#define XCP_DAQ_PROCESSOR_INFO               STD_ON
 #define XCP_DAQ_RESOLUTION_INFO              STD_OFF
 
-#define XCP_MAX_DAQ                          (0u)
-#define XCP_MAX_ODT_DAQ                      (0u)
-#define XCP_MAX_ODT_ENTRIES                  (0u)
+#define XCP_MAX_DAQ                          (1U)
+#define XCP_MAX_ODT_DAQ                      (123u)
+#define XCP_MAX_ODT_ENTRIES                  (124u)
 #define XCP_MAX_ODT_STIM                     (0u)
 
 /*    - DAQ event Info */
 #define XCP_DAQ_EVENT_INFO                   STD_OFF
-#define XCP_MAX_EVENT                        (0u)
+#define XCP_MAX_EVENT                        (1u)
 
 /*    - DAQ Timestamp */
 #define XCP_DAQ_TIMESTAMP_FIXED              STD_OFF
@@ -173,11 +173,11 @@
 #define XCP_COPY_CAL_PAGE                    STD_OFF
 
 /*  - Programming */
-#define XCP_PROGRAM                          STD_OFF
+#define XCP_PROGRAM                          STD_ON
+#define kXcpProgramMinStPgm                  (0u)
 #define XCP_PROGRAMMING_WRITE_PROTECTION     STD_OFF
 #define XCP_MAX_SECTOR                       (0u)
 #define XCP_PROGRAM_INFO                     STD_OFF
-#define kXcpProgramMinStPgm                  (0u)
 
 #ifndef XCP_AUTOSARVERSION
 #define XCP_AUTOSARVERSION                   (4u) 

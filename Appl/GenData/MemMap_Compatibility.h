@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: MemMap_Compatibility.h
- *   Generation Time: 2024-08-04 12:44:09
+ *   Generation Time: 2026-08-05 21:47:40
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -3940,6 +3940,93 @@
 /* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
 
 # undef RTE_STOP_SEC_MOTORTASK_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined RTE_START_SEC_DCM_APPL_CODE
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using RTE_START_SEC_DCM_APPL_CODE is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define RTE_DCM_APPL_CODE_OPEN
+
+/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+
+# undef RTE_START_SEC_DCM_APPL_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined RTE_STOP_SEC_DCM_APPL_CODE
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using RTE_STOP_SEC_DCM_APPL_CODE is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef RTE_DCM_APPL_CODE_OPEN
+#  error Using RTE_STOP_SEC_DCM_APPL_CODE is not possible as the corresponding memory section has not been opened.
+# endif
+# undef RTE_DCM_APPL_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+
+# undef RTE_STOP_SEC_DCM_APPL_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined RTE_START_SEC_DEMMASTER_0_APPL_CODE
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using RTE_START_SEC_DEMMASTER_0_APPL_CODE is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define RTE_DEMMASTER_0_APPL_CODE_OPEN
+
+/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+
+# undef RTE_START_SEC_DEMMASTER_0_APPL_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined RTE_STOP_SEC_DEMMASTER_0_APPL_CODE
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using RTE_STOP_SEC_DEMMASTER_0_APPL_CODE is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef RTE_DEMMASTER_0_APPL_CODE_OPEN
+#  error Using RTE_STOP_SEC_DEMMASTER_0_APPL_CODE is not possible as the corresponding memory section has not been opened.
+# endif
+# undef RTE_DEMMASTER_0_APPL_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+
+# undef RTE_STOP_SEC_DEMMASTER_0_APPL_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined RTE_START_SEC_DEMSATELLITE_0_APPL_CODE
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using RTE_START_SEC_DEMSATELLITE_0_APPL_CODE is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define RTE_DEMSATELLITE_0_APPL_CODE_OPEN
+
+/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+
+# undef RTE_START_SEC_DEMSATELLITE_0_APPL_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined RTE_STOP_SEC_DEMSATELLITE_0_APPL_CODE
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using RTE_STOP_SEC_DEMSATELLITE_0_APPL_CODE is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef RTE_DEMSATELLITE_0_APPL_CODE_OPEN
+#  error Using RTE_STOP_SEC_DEMSATELLITE_0_APPL_CODE is not possible as the corresponding memory section has not been opened.
+# endif
+# undef RTE_DEMSATELLITE_0_APPL_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+
+# undef RTE_STOP_SEC_DEMSATELLITE_0_APPL_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
 
 /* -------------------------------------------------------------------------------- */
@@ -15049,6 +15136,652 @@
 
 # undef NvM_STOP_SEC_VAR_ZERO_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined DCM_START_SEC_CALLOUT_CODE
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using DCM_START_SEC_CALLOUT_CODE is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define DCM_CALLOUT_CODE_OPEN
+
+/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+
+# undef DCM_START_SEC_CALLOUT_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined DCM_STOP_SEC_CALLOUT_CODE
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using DCM_STOP_SEC_CALLOUT_CODE is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef DCM_CALLOUT_CODE_OPEN
+#  error Using DCM_STOP_SEC_CALLOUT_CODE is not possible as the corresponding memory section has not been opened.
+# endif
+# undef DCM_CALLOUT_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+
+# undef DCM_STOP_SEC_CALLOUT_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined DCM_START_SEC_CODE
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using DCM_START_SEC_CODE is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define DCM_CODE_OPEN
+
+/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+
+# undef DCM_START_SEC_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined DCM_STOP_SEC_CODE
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using DCM_STOP_SEC_CODE is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef DCM_CODE_OPEN
+#  error Using DCM_STOP_SEC_CODE is not possible as the corresponding memory section has not been opened.
+# endif
+# undef DCM_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+
+# undef DCM_STOP_SEC_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined DCM_START_SEC_APPL_CODE
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using DCM_START_SEC_APPL_CODE is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define DCM_APPL_CODE_OPEN
+
+/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+
+# undef DCM_START_SEC_APPL_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined DCM_STOP_SEC_APPL_CODE
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using DCM_STOP_SEC_APPL_CODE is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef DCM_APPL_CODE_OPEN
+#  error Using DCM_STOP_SEC_APPL_CODE is not possible as the corresponding memory section has not been opened.
+# endif
+# undef DCM_APPL_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Generation of pragmas is not possible as neither a start/stop pragma nor a valid vLinkGen logical group reference is given. */
+
+# undef DCM_STOP_SEC_APPL_CODE /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined DCM_START_SEC_CONST_8
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using DCM_START_SEC_CONST_8 is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define DCM_CONST_8_OPEN
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom "MSR_CONST" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_START_SEC_CONST_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined DCM_STOP_SEC_CONST_8
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using DCM_STOP_SEC_CONST_8 is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef DCM_CONST_8_OPEN
+#  error Using DCM_STOP_SEC_CONST_8 is not possible as the corresponding memory section has not been opened.
+# endif
+# undef DCM_CONST_8_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_STOP_SEC_CONST_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined DCM_START_SEC_CONST_16
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using DCM_START_SEC_CONST_16 is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define DCM_CONST_16_OPEN
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom "MSR_CONST" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_START_SEC_CONST_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined DCM_STOP_SEC_CONST_16
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using DCM_STOP_SEC_CONST_16 is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef DCM_CONST_16_OPEN
+#  error Using DCM_STOP_SEC_CONST_16 is not possible as the corresponding memory section has not been opened.
+# endif
+# undef DCM_CONST_16_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_STOP_SEC_CONST_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined DCM_START_SEC_CONST_32
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using DCM_START_SEC_CONST_32 is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define DCM_CONST_32_OPEN
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom "MSR_CONST" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_START_SEC_CONST_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined DCM_STOP_SEC_CONST_32
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using DCM_STOP_SEC_CONST_32 is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef DCM_CONST_32_OPEN
+#  error Using DCM_STOP_SEC_CONST_32 is not possible as the corresponding memory section has not been opened.
+# endif
+# undef DCM_CONST_32_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_STOP_SEC_CONST_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined DCM_START_SEC_CONST_UNSPECIFIED
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using DCM_START_SEC_CONST_UNSPECIFIED is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define DCM_CONST_UNSPECIFIED_OPEN
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom "MSR_CONST" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_START_SEC_CONST_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined DCM_STOP_SEC_CONST_UNSPECIFIED
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using DCM_STOP_SEC_CONST_UNSPECIFIED is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef DCM_CONST_UNSPECIFIED_OPEN
+#  error Using DCM_STOP_SEC_CONST_UNSPECIFIED is not possible as the corresponding memory section has not been opened.
+# endif
+# undef DCM_CONST_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_STOP_SEC_CONST_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined DCM_START_SEC_PBCFG
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using DCM_START_SEC_PBCFG is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define DCM_PBCFG_OPEN
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_PBCFG_CONST/MSR_PBCFG_CONST */
+# pragma section farrom "MSR_PBCFG_CONST" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_START_SEC_PBCFG /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined DCM_STOP_SEC_PBCFG
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using DCM_STOP_SEC_PBCFG is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef DCM_PBCFG_OPEN
+#  error Using DCM_STOP_SEC_PBCFG is not possible as the corresponding memory section has not been opened.
+# endif
+# undef DCM_PBCFG_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_PBCFG_CONST/MSR_PBCFG_CONST */
+# pragma section farrom restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_STOP_SEC_PBCFG /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined DCM_START_SEC_VAR_INIT_8
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using DCM_START_SEC_VAR_INIT_8 is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define DCM_VAR_INIT_8_OPEN
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_START_SEC_VAR_INIT_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined DCM_STOP_SEC_VAR_INIT_8
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using DCM_STOP_SEC_VAR_INIT_8 is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef DCM_VAR_INIT_8_OPEN
+#  error Using DCM_STOP_SEC_VAR_INIT_8 is not possible as the corresponding memory section has not been opened.
+# endif
+# undef DCM_VAR_INIT_8_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_STOP_SEC_VAR_INIT_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined DCM_START_SEC_VAR_INIT_16
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using DCM_START_SEC_VAR_INIT_16 is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define DCM_VAR_INIT_16_OPEN
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_START_SEC_VAR_INIT_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined DCM_STOP_SEC_VAR_INIT_16
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using DCM_STOP_SEC_VAR_INIT_16 is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef DCM_VAR_INIT_16_OPEN
+#  error Using DCM_STOP_SEC_VAR_INIT_16 is not possible as the corresponding memory section has not been opened.
+# endif
+# undef DCM_VAR_INIT_16_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_STOP_SEC_VAR_INIT_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined DCM_START_SEC_VAR_INIT_32
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using DCM_START_SEC_VAR_INIT_32 is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define DCM_VAR_INIT_32_OPEN
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_START_SEC_VAR_INIT_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined DCM_STOP_SEC_VAR_INIT_32
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using DCM_STOP_SEC_VAR_INIT_32 is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef DCM_VAR_INIT_32_OPEN
+#  error Using DCM_STOP_SEC_VAR_INIT_32 is not possible as the corresponding memory section has not been opened.
+# endif
+# undef DCM_VAR_INIT_32_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_INIT/MSR_VAR_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_STOP_SEC_VAR_INIT_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined DCM_START_SEC_VAR_NO_INIT_8
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using DCM_START_SEC_VAR_NO_INIT_8 is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define DCM_VAR_NO_INIT_8_OPEN
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_START_SEC_VAR_NO_INIT_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined DCM_STOP_SEC_VAR_NO_INIT_8
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using DCM_STOP_SEC_VAR_NO_INIT_8 is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef DCM_VAR_NO_INIT_8_OPEN
+#  error Using DCM_STOP_SEC_VAR_NO_INIT_8 is not possible as the corresponding memory section has not been opened.
+# endif
+# undef DCM_VAR_NO_INIT_8_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_STOP_SEC_VAR_NO_INIT_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined DCM_START_SEC_VAR_NO_INIT_16
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using DCM_START_SEC_VAR_NO_INIT_16 is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define DCM_VAR_NO_INIT_16_OPEN
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_START_SEC_VAR_NO_INIT_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined DCM_STOP_SEC_VAR_NO_INIT_16
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using DCM_STOP_SEC_VAR_NO_INIT_16 is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef DCM_VAR_NO_INIT_16_OPEN
+#  error Using DCM_STOP_SEC_VAR_NO_INIT_16 is not possible as the corresponding memory section has not been opened.
+# endif
+# undef DCM_VAR_NO_INIT_16_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_STOP_SEC_VAR_NO_INIT_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined DCM_START_SEC_VAR_NO_INIT_32
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using DCM_START_SEC_VAR_NO_INIT_32 is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define DCM_VAR_NO_INIT_32_OPEN
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_START_SEC_VAR_NO_INIT_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined DCM_STOP_SEC_VAR_NO_INIT_32
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using DCM_STOP_SEC_VAR_NO_INIT_32 is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef DCM_VAR_NO_INIT_32_OPEN
+#  error Using DCM_STOP_SEC_VAR_NO_INIT_32 is not possible as the corresponding memory section has not been opened.
+# endif
+# undef DCM_VAR_NO_INIT_32_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_STOP_SEC_VAR_NO_INIT_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined DCM_START_SEC_VAR_NO_INIT_UNSPECIFIED
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using DCM_START_SEC_VAR_NO_INIT_UNSPECIFIED is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define DCM_VAR_NO_INIT_UNSPECIFIED_OPEN
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_VAR_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_START_SEC_VAR_NO_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined DCM_STOP_SEC_VAR_NO_INIT_UNSPECIFIED
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using DCM_STOP_SEC_VAR_NO_INIT_UNSPECIFIED is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef DCM_VAR_NO_INIT_UNSPECIFIED_OPEN
+#  error Using DCM_STOP_SEC_VAR_NO_INIT_UNSPECIFIED is not possible as the corresponding memory section has not been opened.
+# endif
+# undef DCM_VAR_NO_INIT_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_VAR_NO_INIT/MSR_VAR_NO_INIT */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_STOP_SEC_VAR_NO_INIT_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined DCM_START_SEC_VAR_PBCFG
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using DCM_START_SEC_VAR_PBCFG is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define DCM_VAR_PBCFG_OPEN
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_PBCFG_VAR/MSR_PBCFG_VAR */
+# pragma section farnoclear "MSR_PBCFG_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss "MSR_PBCFG_VAR_NO_INIT" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata "MSR_PBCFG_VAR" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_START_SEC_VAR_PBCFG /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined DCM_STOP_SEC_VAR_PBCFG
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using DCM_STOP_SEC_VAR_PBCFG is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef DCM_VAR_PBCFG_OPEN
+#  error Using DCM_STOP_SEC_VAR_PBCFG is not possible as the corresponding memory section has not been opened.
+# endif
+# undef DCM_VAR_PBCFG_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_PBCFG_VAR/MSR_PBCFG_VAR */
+# pragma section farnoclear restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section farbss restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+# pragma section fardata restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_STOP_SEC_VAR_PBCFG /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined DCM_START_SEC_CALIB_8
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using DCM_START_SEC_CALIB_8 is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define DCM_CALIB_8_OPEN
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom "MSR_CONST" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_START_SEC_CALIB_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined DCM_STOP_SEC_CALIB_8
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using DCM_STOP_SEC_CALIB_8 is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef DCM_CALIB_8_OPEN
+#  error Using DCM_STOP_SEC_CALIB_8 is not possible as the corresponding memory section has not been opened.
+# endif
+# undef DCM_CALIB_8_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_STOP_SEC_CALIB_8 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined DCM_START_SEC_CALIB_16
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using DCM_START_SEC_CALIB_16 is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define DCM_CALIB_16_OPEN
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom "MSR_CONST" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_START_SEC_CALIB_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined DCM_STOP_SEC_CALIB_16
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using DCM_STOP_SEC_CALIB_16 is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef DCM_CALIB_16_OPEN
+#  error Using DCM_STOP_SEC_CALIB_16 is not possible as the corresponding memory section has not been opened.
+# endif
+# undef DCM_CALIB_16_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_STOP_SEC_CALIB_16 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined DCM_START_SEC_CALIB_32
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using DCM_START_SEC_CALIB_32 is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define DCM_CALIB_32_OPEN
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom "MSR_CONST" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_START_SEC_CALIB_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined DCM_STOP_SEC_CALIB_32
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using DCM_STOP_SEC_CALIB_32 is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef DCM_CALIB_32_OPEN
+#  error Using DCM_STOP_SEC_CALIB_32 is not possible as the corresponding memory section has not been opened.
+# endif
+# undef DCM_CALIB_32_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_STOP_SEC_CALIB_32 /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* -------------------------------------------------------------------------------- */
+
+#elif defined DCM_START_SEC_CALIB_UNSPECIFIED
+# ifdef MEMMAP_SECTION_OPEN
+#  error Using DCM_START_SEC_CALIB_UNSPECIFIED is not possible as a memory section has already been opened. Nesting is not supported.
+# endif
+# define MEMMAP_SECTION_OPEN
+# define DCM_CALIB_UNSPECIFIED_OPEN
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom "MSR_CONST" /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_START_SEC_CALIB_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+#elif defined DCM_STOP_SEC_CALIB_UNSPECIFIED
+# ifndef MEMMAP_SECTION_OPEN
+#  error Using DCM_STOP_SEC_CALIB_UNSPECIFIED is not possible as no memory section has been opened.
+# endif
+# undef MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+# ifndef DCM_CALIB_UNSPECIFIED_OPEN
+#  error Using DCM_STOP_SEC_CALIB_UNSPECIFIED is not possible as the corresponding memory section has not been opened.
+# endif
+# undef DCM_CALIB_UNSPECIFIED_OPEN /* PRQA S 0841 */ /* MD_MSR_Undef */
+
+/* Pragmas generated automatically. Related MemMapAddressingMode: /ActiveEcuC/MemMap/MSR_CONST/MSR_CONST */
+# pragma section farrom restore /* PRQA S 3116 */ /* MD_MSR_Pragma */
+
+# undef DCM_STOP_SEC_CALIB_UNSPECIFIED /* PRQA S 0841 */ /* MD_MSR_Undef */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_Undef */
 #endif
 
 /* -------------------------------------------------------------------------------- */
@@ -15759,6 +16492,24 @@
 #endif
 #ifdef RTE_STOP_SEC_MOTORTASK_CODE
 # error Using RTE_STOP_SEC_MOTORTASK_CODE is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef RTE_START_SEC_DCM_APPL_CODE
+# error Using RTE_START_SEC_DCM_APPL_CODE is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef RTE_STOP_SEC_DCM_APPL_CODE
+# error Using RTE_STOP_SEC_DCM_APPL_CODE is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef RTE_START_SEC_DEMMASTER_0_APPL_CODE
+# error Using RTE_START_SEC_DEMMASTER_0_APPL_CODE is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef RTE_STOP_SEC_DEMMASTER_0_APPL_CODE
+# error Using RTE_STOP_SEC_DEMMASTER_0_APPL_CODE is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef RTE_START_SEC_DEMSATELLITE_0_APPL_CODE
+# error Using RTE_START_SEC_DEMSATELLITE_0_APPL_CODE is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef RTE_STOP_SEC_DEMSATELLITE_0_APPL_CODE
+# error Using RTE_STOP_SEC_DEMSATELLITE_0_APPL_CODE is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
 #endif
 #ifdef COMXF_START_SEC_CODE
 # error Using COMXF_START_SEC_CODE is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
@@ -17703,6 +18454,126 @@
 #endif
 #ifdef NvM_STOP_SEC_VAR_ZERO_INIT_UNSPECIFIED
 # error Using NvM_STOP_SEC_VAR_ZERO_INIT_UNSPECIFIED is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_START_SEC_CALLOUT_CODE
+# error Using DCM_START_SEC_CALLOUT_CODE is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_STOP_SEC_CALLOUT_CODE
+# error Using DCM_STOP_SEC_CALLOUT_CODE is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_START_SEC_CODE
+# error Using DCM_START_SEC_CODE is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_STOP_SEC_CODE
+# error Using DCM_STOP_SEC_CODE is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_START_SEC_APPL_CODE
+# error Using DCM_START_SEC_APPL_CODE is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_STOP_SEC_APPL_CODE
+# error Using DCM_STOP_SEC_APPL_CODE is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_START_SEC_CONST_8
+# error Using DCM_START_SEC_CONST_8 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_STOP_SEC_CONST_8
+# error Using DCM_STOP_SEC_CONST_8 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_START_SEC_CONST_16
+# error Using DCM_START_SEC_CONST_16 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_STOP_SEC_CONST_16
+# error Using DCM_STOP_SEC_CONST_16 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_START_SEC_CONST_32
+# error Using DCM_START_SEC_CONST_32 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_STOP_SEC_CONST_32
+# error Using DCM_STOP_SEC_CONST_32 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_START_SEC_CONST_UNSPECIFIED
+# error Using DCM_START_SEC_CONST_UNSPECIFIED is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_STOP_SEC_CONST_UNSPECIFIED
+# error Using DCM_STOP_SEC_CONST_UNSPECIFIED is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_START_SEC_PBCFG
+# error Using DCM_START_SEC_PBCFG is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_STOP_SEC_PBCFG
+# error Using DCM_STOP_SEC_PBCFG is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_START_SEC_VAR_INIT_8
+# error Using DCM_START_SEC_VAR_INIT_8 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_STOP_SEC_VAR_INIT_8
+# error Using DCM_STOP_SEC_VAR_INIT_8 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_START_SEC_VAR_INIT_16
+# error Using DCM_START_SEC_VAR_INIT_16 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_STOP_SEC_VAR_INIT_16
+# error Using DCM_STOP_SEC_VAR_INIT_16 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_START_SEC_VAR_INIT_32
+# error Using DCM_START_SEC_VAR_INIT_32 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_STOP_SEC_VAR_INIT_32
+# error Using DCM_STOP_SEC_VAR_INIT_32 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_START_SEC_VAR_NO_INIT_8
+# error Using DCM_START_SEC_VAR_NO_INIT_8 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_STOP_SEC_VAR_NO_INIT_8
+# error Using DCM_STOP_SEC_VAR_NO_INIT_8 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_START_SEC_VAR_NO_INIT_16
+# error Using DCM_START_SEC_VAR_NO_INIT_16 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_STOP_SEC_VAR_NO_INIT_16
+# error Using DCM_STOP_SEC_VAR_NO_INIT_16 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_START_SEC_VAR_NO_INIT_32
+# error Using DCM_START_SEC_VAR_NO_INIT_32 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_STOP_SEC_VAR_NO_INIT_32
+# error Using DCM_STOP_SEC_VAR_NO_INIT_32 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_START_SEC_VAR_NO_INIT_UNSPECIFIED
+# error Using DCM_START_SEC_VAR_NO_INIT_UNSPECIFIED is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_STOP_SEC_VAR_NO_INIT_UNSPECIFIED
+# error Using DCM_STOP_SEC_VAR_NO_INIT_UNSPECIFIED is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_START_SEC_VAR_PBCFG
+# error Using DCM_START_SEC_VAR_PBCFG is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_STOP_SEC_VAR_PBCFG
+# error Using DCM_STOP_SEC_VAR_PBCFG is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_START_SEC_CALIB_8
+# error Using DCM_START_SEC_CALIB_8 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_STOP_SEC_CALIB_8
+# error Using DCM_STOP_SEC_CALIB_8 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_START_SEC_CALIB_16
+# error Using DCM_START_SEC_CALIB_16 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_STOP_SEC_CALIB_16
+# error Using DCM_STOP_SEC_CALIB_16 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_START_SEC_CALIB_32
+# error Using DCM_START_SEC_CALIB_32 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_STOP_SEC_CALIB_32
+# error Using DCM_STOP_SEC_CALIB_32 is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_START_SEC_CALIB_UNSPECIFIED
+# error Using DCM_START_SEC_CALIB_UNSPECIFIED is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
+#endif
+#ifdef DCM_STOP_SEC_CALIB_UNSPECIFIED
+# error Using DCM_STOP_SEC_CALIB_UNSPECIFIED is not possible as multiple memory allocation keywords are defined. Include the MemMap separately for each one.
 #endif
 
 

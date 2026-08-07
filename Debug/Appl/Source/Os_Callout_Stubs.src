@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 53216552"
-	.compiler_invocation	"ctc -f cc19068a --dep-file=Appl\\Source\\.Os_Callout_Stubs.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -DBRS_COMP_TASKING -DBRS_PLATFORM_AURIX -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanXcp\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Xcp -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Xcp\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Include -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=Appl\\Source\\Os_Callout_Stubs.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o Appl\\Source\\Os_Callout_Stubs.src ..\\Appl\\Source\\Os_Callout_Stubs.c"
+	.compiler_invocation	"ctc -f cc21920a --dep-file=Appl\\Source\\.Os_Callout_Stubs.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc36x -D__CPU_TC36X__ --core=tc1.6.2 --fp-model=+float -DBRS_COMP_TASKING -DBRS_PLATFORM_AURIX -IE:\\workFiles\\TC367\\TC367\\workspace\\last364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Uart\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Uart\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanTp\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Dcm\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Dem\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanXcp\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Xcp -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Xcp\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Include -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\Components -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenData\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\GenDataVtt -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\MotorFoc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE5012\\TLE5012\\tle5012b_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\Appl\\Source\\CDD\\TLE9180\\TLE9180_reg -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\_Common\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\BswM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Can\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\CanSM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Com\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\ComXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Det\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\E2EXf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\EcuM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Mcal_Tc3xx\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\MemIf\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\NvM\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Os\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\PduR\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\Sbc_30_Tlf35584\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\BSW364\\VStdLib\\Implementation -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Adc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Crc\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dio\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Dma\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fee\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Fls_17_Dmu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Adc_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Dma_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\Spi_Irq -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Irq\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\inc\\AS422 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\McalLib\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Mcu\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Port\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6 -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Pwm_17_GtmCcu6\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\inc -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\Spi\\ssc\\src -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA -IE:\\workFiles\\TC367\\TC367\\workspace\\last364\\MCAL364\\TC36xA\\_Reg -g2 --make-target=Appl\\Source\\Os_Callout_Stubs.o -t0 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O1 --default-a1-size=0 --default-a0-size=0 --source --align=0 --cache=E:\\workFiles\\TC367\\TC367\\workspace\\last364\\.cache --switch=auto --error-limit=42 -o Appl\\Source\\Os_Callout_Stubs.src ..\\Appl\\Source\\Os_Callout_Stubs.c"
 	.compiler_name		"ctc"
 	;source	'..\\Appl\\Source\\Os_Callout_Stubs.c'
 
@@ -193,50 +193,52 @@ ErrorHook:	.type	func
 ; ..\Appl\Source\Os_Callout_Stubs.c	   136    Os_ErrorInformationType CurrentError;
 ; ..\Appl\Source\Os_Callout_Stubs.c	   137    volatile uint8 endless = 1u;
 	mov	d15,#1
-	st.b	[a10]4,d15
 .L92:
+	st.b	[a10]4,d15
+.L93:
 
 ; ..\Appl\Source\Os_Callout_Stubs.c	   138  
 ; ..\Appl\Source\Os_Callout_Stubs.c	   139    Os_Callout_LastError = Error;
 	movh.a	a15,#@his(Os_Callout_LastError)
-	lea	a15,[a15]@los(Os_Callout_LastError)
-.L93:
-	st.b	[a15],d4
 .L94:
+	st.b	[a15]@los(Os_Callout_LastError),d4
+.L95:
 
 ; ..\Appl\Source\Os_Callout_Stubs.c	   140    if (Os_GetDetailedError(&CurrentError) == E_OK)
 	mov.aa	a4,a10
 	call	Os_GetDetailedError
 .L73:
 	jne	d2,#0,.L2
-.L95:
+.L96:
 
 ; ..\Appl\Source\Os_Callout_Stubs.c	   141    {
 ; ..\Appl\Source\Os_Callout_Stubs.c	   142      Os_Callout_LastErrorService = CurrentError.Service;
-	movh.a	a2,#@his(Os_Callout_LastErrorService)
-.L96:
-	ld.bu	d15,[a10]
+	movh.a	a15,#@his(Os_Callout_LastErrorService)
 .L97:
-	st.b	[a2]@los(Os_Callout_LastErrorService),d15
+	ld.bu	d15,[a10]
 .L98:
+	st.b	[a15]@los(Os_Callout_LastErrorService),d15
+.L99:
 
 ; ..\Appl\Source\Os_Callout_Stubs.c	   143      Os_Callout_LastError = CurrentError.Error;
-	ld.bu	d15,[a10]1
-.L99:
-	st.b	[a15],d15
+	movh.a	a15,#@his(Os_Callout_LastError)
 .L100:
+	ld.bu	d15,[a10]1
+.L101:
+	st.b	[a15]@los(Os_Callout_LastError),d15
+.L102:
 
 ; ..\Appl\Source\Os_Callout_Stubs.c	   144      Os_Callout_LastErrorStatus = CurrentError.DetailedError;
 	movh.a	a15,#@his(Os_Callout_LastErrorStatus)
-.L101:
-	ld.h	d15,[a10]2
-.L102:
-	st.h	[a15]@los(Os_Callout_LastErrorStatus),d15
 .L103:
+	ld.h	d15,[a10]2
+.L104:
+	st.h	[a15]@los(Os_Callout_LastErrorStatus),d15
+.L105:
 
 ; ..\Appl\Source\Os_Callout_Stubs.c	   145      Os_Callout_LastDetailedError = (uint32)CurrentError.DetailedError;
 	movh.a	a15,#@his(Os_Callout_LastDetailedError)
-.L104:
+.L106:
 	st.w	[a15]@los(Os_Callout_LastDetailedError),d15
 .L2:
 
@@ -245,9 +247,9 @@ ErrorHook:	.type	func
 ; ..\Appl\Source\Os_Callout_Stubs.c	   148    while (endless != 0u)
 .L3:
 	ld.bu	d15,[a10]4
-.L105:
+.L107:
 	jne	d15,#0,.L3
-.L106:
+.L108:
 
 ; ..\Appl\Source\Os_Callout_Stubs.c	   149    {
 ; ..\Appl\Source\Os_Callout_Stubs.c	   150      /* breakpoint here for OS API / status errors (NOT KernelPanic) */
@@ -368,41 +370,43 @@ Os_PanicHook:	.type	func
 ; ..\Appl\Source\Os_Callout_Stubs.c	   247    /* Do not call Os_GetUnhandledIrq/Os_GetUnhandledExc here: OS is already inconsistent and those APIs
 ; ..\Appl\Source\Os_Callout_Stubs.c	   248       may trigger a second KernelPanic via Os_ErrApplicationError. Read core-local data directly instead. */
 ; ..\Appl\Source\Os_Callout_Stubs.c	   249    Os_Callout_UnhandledIrq = OsCfg_Core_OsCore0_Dyn.LastUnhandledIrq;
-	movh.a	a15,#@his(OsCfg_Core_OsCore0_Dyn)
-	lea	a15,[a15]@los(OsCfg_Core_OsCore0_Dyn)
-.L111:
-	movh.a	a2,#@his(Os_Callout_UnhandledIrq)
-.L112:
-	ld.w	d15,[a15]112
+	movh.a	a15,#@his(Os_Callout_UnhandledIrq)
 .L113:
-	st.w	[a2]@los(Os_Callout_UnhandledIrq),d15
+	movh.a	a2,#@his(OsCfg_Core_OsCore0_Dyn+120)
 .L114:
+	ld.w	d15,[a2]@los(OsCfg_Core_OsCore0_Dyn+120)
+.L115:
+	st.w	[a15]@los(Os_Callout_UnhandledIrq),d15
+.L116:
 
 ; ..\Appl\Source\Os_Callout_Stubs.c	   250    Os_Callout_UnhandledExc = OsCfg_Core_OsCore0_Dyn.LastUnhandledExc;
-	movh.a	a2,#@his(Os_Callout_UnhandledExc)
-.L115:
-	ld.w	d15,[a15]118
-.L116:
-	st.w	[a2]@los(Os_Callout_UnhandledExc),d15
+	movh.a	a15,#@his(Os_Callout_UnhandledExc)
 .L117:
+	movh.a	a2,#@his(OsCfg_Core_OsCore0_Dyn+126)
+.L118:
+	ld.w	d15,[a2]@los(OsCfg_Core_OsCore0_Dyn+126)
+.L119:
+	st.w	[a15]@los(Os_Callout_UnhandledExc),d15
+.L120:
 
 ; ..\Appl\Source\Os_Callout_Stubs.c	   251    Os_Callout_UnhandledIrq_Core1 = OsCfg_Core_OsCore1_Dyn.LastUnhandledIrq;
-	movh.a	a15,#@his(OsCfg_Core_OsCore1_Dyn)
-	lea	a15,[a15]@los(OsCfg_Core_OsCore1_Dyn)
-.L118:
-	movh.a	a2,#@his(Os_Callout_UnhandledIrq_Core1)
-.L119:
-	ld.w	d15,[a15]112
-.L120:
-	st.w	[a2]@los(Os_Callout_UnhandledIrq_Core1),d15
+	movh.a	a15,#@his(Os_Callout_UnhandledIrq_Core1)
 .L121:
+	movh.a	a2,#@his(OsCfg_Core_OsCore1_Dyn+120)
+.L122:
+	ld.w	d15,[a2]@los(OsCfg_Core_OsCore1_Dyn+120)
+.L123:
+	st.w	[a15]@los(Os_Callout_UnhandledIrq_Core1),d15
+.L124:
 
 ; ..\Appl\Source\Os_Callout_Stubs.c	   252    Os_Callout_UnhandledExc_Core1 = OsCfg_Core_OsCore1_Dyn.LastUnhandledExc;
-	movh.a	a2,#@his(Os_Callout_UnhandledExc_Core1)
-.L122:
-	ld.w	d15,[a15]118
-.L123:
-	st.w	[a2]@los(Os_Callout_UnhandledExc_Core1),d15
+	movh.a	a15,#@his(Os_Callout_UnhandledExc_Core1)
+.L125:
+	movh.a	a2,#@his(OsCfg_Core_OsCore1_Dyn+126)
+.L126:
+	ld.w	d15,[a2]@los(OsCfg_Core_OsCore1_Dyn+126)
+.L127:
+	st.w	[a15]@los(Os_Callout_UnhandledExc_Core1),d15
 
 ; ..\Appl\Source\Os_Callout_Stubs.c	   253    while (1U)
 .L4:
@@ -481,7 +485,7 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L14:
-	.word	23676
+	.word	24199
 	.half	3
 	.word	.L15
 	.byte	4
@@ -777,28 +781,28 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.byte	'Std_TransformerClass',0,6,137,1,15
 	.word	145
 	.byte	9
-	.byte	'Os_AppAccessMaskType',0,7,135,1,17
+	.byte	'Os_AppAccessMaskType',0,7,137,1,17
 	.word	6196
-	.byte	3,7,138,1,9,1,4
+	.byte	3,7,140,1,9,1,4
 	.byte	'OsApplication_OsCore1',0,0,4
 	.byte	'SystemApplication_OsCore0',0,1,4
 	.byte	'INVALID_OSAPPLICATION',0,2,4
 	.byte	'OS_APPID_COUNT',0,2,0,9
-	.byte	'ApplicationType',0,7,144,1,3
+	.byte	'ApplicationType',0,7,146,1,3
 	.word	6599
-	.byte	3,7,147,1,9,1,4
+	.byte	3,7,149,1,9,1,4
 	.byte	'OS_TRUSTEDFUNCTIONID_COUNT',0,0,0,9
-	.byte	'TrustedFunctionIndexType',0,7,150,1,3
+	.byte	'TrustedFunctionIndexType',0,7,152,1,3
 	.word	6724
-	.byte	3,7,153,1,9,1,4
+	.byte	3,7,155,1,9,1,4
 	.byte	'OS_NONTRUSTEDFUNCTIONID_COUNT',0,0,0,9
-	.byte	'Os_NonTrustedFunctionIndexType',0,7,156,1,3
+	.byte	'Os_NonTrustedFunctionIndexType',0,7,158,1,3
 	.word	6794
-	.byte	3,7,159,1,9,1,4
+	.byte	3,7,161,1,9,1,4
 	.byte	'OS_FASTTRUSTEDFUNCTIONID_COUNT',0,0,0,9
-	.byte	'Os_FastTrustedFunctionIndexType',0,7,162,1,3
+	.byte	'Os_FastTrustedFunctionIndexType',0,7,164,1,3
 	.word	6873
-	.byte	3,7,165,1,9,1,4
+	.byte	3,7,167,1,9,1,4
 	.byte	'BswCore1Task',0,0,4
 	.byte	'Default_Appl_Init_Task',0,1,4
 	.byte	'Default_Appl_Task',0,2,4
@@ -813,69 +817,71 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.byte	'MotorTask',0,11,4
 	.byte	'INVALID_TASK',0,12,4
 	.byte	'OS_TASKID_COUNT',0,12,0,9
-	.byte	'TaskType',0,7,181,1,3
+	.byte	'TaskType',0,7,183,1,3
 	.word	6954
-	.byte	3,7,184,1,9,1,4
+	.byte	3,7,186,1,9,1,4
 	.byte	'AdcIsr_G8',0,0,4
 	.byte	'CanIsr_0',0,1,4
 	.byte	'CounterIsr_SystemTimer',0,2,4
 	.byte	'CounterIsr_SystemTimer1',0,3,4
-	.byte	'XSignalIsr_OsCore0',0,4,4
-	.byte	'XSignalIsr_OsCore1',0,5,4
-	.byte	'INVALID_ISR',0,6,4
-	.byte	'OS_ISRID_COUNT',0,6,0,9
-	.byte	'ISRType',0,7,194,1,3
+	.byte	'Uart_ASCLIN0RX_ISR',0,4,4
+	.byte	'Uart_ASCLIN0TX_ISR',0,5,4
+	.byte	'XSignalIsr_OsCore0',0,6,4
+	.byte	'XSignalIsr_OsCore1',0,7,4
+	.byte	'INVALID_ISR',0,8,4
+	.byte	'OS_ISRID_COUNT',0,8,0,9
+	.byte	'ISRType',0,7,198,1,3
 	.word	7285
-	.byte	3,7,197,1,9,1,4
+	.byte	3,7,201,1,9,1,4
 	.byte	'Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_10ms',0,0,4
 	.byte	'Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_20ms',0,1,4
-	.byte	'Rte_Al_TE2_EcuM_EcuM_MainFunction',0,2,4
-	.byte	'Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx',0,3,4
+	.byte	'Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_5ms',0,2,4
+	.byte	'Rte_Al_TE2_EcuM_EcuM_MainFunction',0,3,4
 	.byte	'Rte_Al_TE_MotorTask_0_1ms',0,4,4
 	.byte	'Rte_Al_TE_StartApp_StartApp_Cyclic1000ms',0,5,4
 	.byte	'Rte_Al_TE_StartApp_StartApp_Cyclic10ms',0,6,4
 	.byte	'Rte_Al_TE_StartApp_StartApp_Cyclic1ms',0,7,4
 	.byte	'Rte_Al_TE_StartApp_StartApp_Cyclic250ms',0,8,4
 	.byte	'OS_ALARMID_COUNT',0,9,0,9
-	.byte	'AlarmType',0,7,209,1,3
-	.word	7456
-	.byte	3,7,212,1,9,1,4
+	.byte	'AlarmType',0,7,213,1,3
+	.word	7498
+	.byte	3,7,216,1,9,1,4
 	.byte	'SystemTimer',0,0,4
 	.byte	'SystemTimer1',0,1,4
 	.byte	'OS_COUNTERID_COUNT',0,2,0,9
-	.byte	'CounterType',0,7,217,1,3
-	.word	7880
-	.byte	3,7,220,1,9,1,4
+	.byte	'CounterType',0,7,221,1,3
+	.word	7916
+	.byte	3,7,224,1,9,1,4
 	.byte	'OS_SCHTID_COUNT',0,0,0,9
-	.byte	'ScheduleTableType',0,7,223,1,3
-	.word	7958
-	.byte	3,7,226,1,9,1,4
+	.byte	'ScheduleTableType',0,7,227,1,3
+	.word	7994
+	.byte	3,7,230,1,9,1,4
 	.byte	'OsResource_EcuM',0,0,4
 	.byte	'OS_RESOURCEID_COUNT',0,1,0,9
-	.byte	'ResourceType',0,7,230,1,3
-	.word	8010
-	.byte	3,7,233,1,9,1,4
+	.byte	'ResourceType',0,7,234,1,3
+	.word	8046
+	.byte	3,7,237,1,9,1,4
 	.byte	'INVALID_SPINLOCK',0,0,4
 	.byte	'OS_SPINLOCKID_COUNT',0,0,0,9
-	.byte	'SpinlockIdType',0,7,237,1,3
-	.word	8079
-	.byte	3,7,240,1,9,1,4
+	.byte	'SpinlockIdType',0,7,241,1,3
+	.word	8115
+	.byte	3,7,244,1,9,1,4
 	.byte	'OS_PERIPHERALID_COUNT',0,0,0,9
-	.byte	'Os_PeripheralIdType',0,7,243,1,3
-	.word	8151
-	.byte	3,7,246,1,9,1,4
+	.byte	'Os_PeripheralIdType',0,7,247,1,3
+	.word	8187
+	.byte	3,7,250,1,9,1,4
 	.byte	'OS_BARRIERID_COUNT',0,0,0,9
-	.byte	'Os_BarrierIdType',0,7,249,1,3
-	.word	8211
+	.byte	'Os_BarrierIdType',0,7,253,1,3
+	.word	8247
 	.byte	14,64
 	.word	6196
 	.byte	15,15,0,16
 	.byte	'Os_ExceptionContextType_Tag',0,8,71,8,160,1,6
 	.byte	'AddressRegisters',0
-	.word	8265
+	.word	8301
 	.byte	64,2,35,0,6
 	.byte	'DataRegisters',0
-	.word	8265
+	.word	8301
 	.byte	64,2,35,64,6
 	.byte	'Ra',0
 	.word	6196
@@ -902,19 +908,19 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.word	6196
 	.byte	4,3,35,156,1,0,9
 	.byte	'Os_ExceptionContextType',0,9,59,44
-	.word	8274
+	.word	8310
 	.byte	17
 	.byte	'void',0,8
-	.word	8554
+	.word	8590
 	.byte	9
 	.byte	'TrustedFunctionParameterRefType',0,1,202,1,44
-	.word	8560
+	.word	8596
 	.byte	9
 	.byte	'Os_NonTrustedFunctionParameterRefType',0,1,205,1,44
-	.word	8560
+	.word	8596
 	.byte	9
 	.byte	'Os_FastTrustedFunctionParameterRefType',0,1,208,1,44
-	.word	8560
+	.word	8596
 	.byte	9
 	.byte	'AppModeType',0,1,214,1,16
 	.word	145
@@ -922,7 +928,7 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.byte	'IDLE_NO_HALT',0,0,4
 	.byte	'OS_IDLEMODE_COUNT',0,1,0,9
 	.byte	'IdleModeType',0,1,232,1,3
-	.word	8722
+	.word	8758
 	.byte	9
 	.byte	'Os_InterruptSourceIdType',0,1,236,1,16
 	.word	6196
@@ -930,7 +936,7 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.word	6196
 	.byte	9
 	.byte	'Os_InterruptSourceIdRefType',0,1,240,1,61
-	.word	8820
+	.word	8856
 	.byte	9
 	.byte	'Os_ExceptionSourceIdType',0,1,244,1,16
 	.word	6196
@@ -938,34 +944,34 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.word	6196
 	.byte	9
 	.byte	'Os_ExceptionSourceIdRefType',0,1,248,1,61
-	.word	8896
+	.word	8932
 	.byte	8
-	.word	8274
+	.word	8310
 	.byte	9
 	.byte	'Os_ExceptionContextRefType',0,1,252,1,60
-	.word	8938
+	.word	8974
 	.byte	3,1,136,2,9,1,4
 	.byte	'TRYTOGETSPINLOCK_SUCCESS',0,0,4
 	.byte	'TRYTOGETSPINLOCK_NOSUCCESS',0,1,0,9
 	.byte	'TryToGetSpinlockType',0,1,140,2,2
-	.word	8979
+	.word	9015
 	.byte	8
 	.word	6954
 	.byte	9
 	.byte	'TaskRefType',0,1,150,2,56
-	.word	9072
+	.word	9108
 	.byte	3,1,159,2,9,1,4
 	.byte	'RUNNING',0,0,4
 	.byte	'READY',0,1,4
 	.byte	'WAITING',0,2,4
 	.byte	'SUSPENDED',0,3,0,9
 	.byte	'TaskStateType',0,1,173,2,3
-	.word	9098
+	.word	9134
 	.byte	8
-	.word	9098
+	.word	9134
 	.byte	9
 	.byte	'TaskStateRefType',0,1,176,2,61
-	.word	9168
+	.word	9204
 	.byte	9
 	.byte	'EventMaskType',0,1,180,2,16
 	.word	6273
@@ -973,7 +979,7 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.word	6273
 	.byte	9
 	.byte	'EventMaskRefType',0,1,183,2,56
-	.word	9222
+	.word	9258
 	.byte	9
 	.byte	'Os_TickType',0,1,198,2,19
 	.word	6196
@@ -984,7 +990,7 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.word	6196
 	.byte	9
 	.byte	'TickRefType',0,1,208,2,56
-	.word	9292
+	.word	9328
 	.byte	5,1,218,2,9,12,6
 	.byte	'maxallowedvalue',0
 	.word	6196
@@ -996,24 +1002,24 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.word	6196
 	.byte	4,2,35,8,0,9
 	.byte	'AlarmBaseType',0,1,226,2,2
-	.word	9318
+	.word	9354
 	.byte	8
-	.word	9318
+	.word	9354
 	.byte	9
 	.byte	'AlarmBaseRefType',0,1,229,2,61
-	.word	9413
+	.word	9449
 	.byte	3,1,242,2,9,1,4
 	.byte	'RESTART',0,0,4
 	.byte	'NO_RESTART',0,1,4
 	.byte	'OS_RESTARTTYPE_COUNT',0,2,0,9
 	.byte	'RestartType',0,1,247,2,3
-	.word	9444
+	.word	9480
 	.byte	3,1,254,2,9,1,4
 	.byte	'APPLICATION_TERMINATED',0,0,4
 	.byte	'APPLICATION_RESTARTING',0,1,4
 	.byte	'APPLICATION_ACCESSIBLE',0,2,0,9
 	.byte	'ApplicationStateType',0,1,131,3,3
-	.word	9518
+	.word	9554
 	.byte	3,1,136,3,9,1,4
 	.byte	'OBJECT_TASK',0,0,4
 	.byte	'OBJECT_ISR',0,1,4
@@ -1023,15 +1029,15 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.byte	'OBJECT_SCHEDULETABLE',0,5,4
 	.byte	'OBJECT_SPINLOCK',0,6,0,9
 	.byte	'ObjectTypeType',0,1,145,3,3
-	.word	9630
+	.word	9666
 	.byte	9
 	.byte	'Os_ObjectIdType',0,1,149,3,16
 	.word	6196
 	.byte	8
-	.word	9518
+	.word	9554
 	.byte	9
 	.byte	'ApplicationStateRefType',0,1,161,3,68
-	.word	9804
+	.word	9840
 	.byte	9
 	.byte	'OSServiceIdType',0,1,155,4,3
 	.word	162
@@ -1048,19 +1054,19 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.byte	'SCHEDULETABLE_RUNNING',0,3,4
 	.byte	'SCHEDULETABLE_RUNNING_AND_SYNCHRONOUS',0,4,0,9
 	.byte	'ScheduleTableStatusType',0,1,191,6,3
-	.word	9923
+	.word	9959
 	.byte	8
-	.word	9923
+	.word	9959
 	.byte	9
 	.byte	'ScheduleTableStatusRefType',0,1,194,6,34
-	.word	10096
+	.word	10132
 	.byte	18
-	.word	8554
+	.word	8590
 	.byte	8
-	.word	10137
+	.word	10173
 	.byte	9
 	.byte	'MemoryStartAddressType',0,1,199,6,49
-	.word	10142
+	.word	10178
 	.byte	3,1,203,6,9,1,4
 	.byte	'OS_MEM_ACCESS_TYPE_NON',0,0,4
 	.byte	'OS_MEM_ACCESS_TYPE_R',0,1,4
@@ -1083,10 +1089,10 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.byte	'OS_MEM_ACCESS_TYPE_WXS',0,14,4
 	.byte	'OS_MEM_ACCESS_TYPE_RWXS',0,15,0,9
 	.byte	'Os_MemAccessType',0,1,225,6,3
-	.word	10179
+	.word	10215
 	.byte	9
 	.byte	'Os_AddressOfConstType',0,1,233,6,43
-	.word	10142
+	.word	10178
 	.byte	3,1,242,6,9,1,4
 	.byte	'OS_CORESTARTSTATE_START_UNREQUESTED',0,0,4
 	.byte	'OS_CORESTARTSTATE_START_REQUESTED_ASR',0,1,4
@@ -1094,14 +1100,14 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.byte	'OS_CORESTARTSTATE_STARTED_ASR',0,3,4
 	.byte	'OS_CORESTARTSTATE_STARTED_NONASR',0,4,0,9
 	.byte	'Os_CoreStartStateType',0,1,254,6,2
-	.word	10739
+	.word	10775
 	.byte	3,10,87,9,1,4
 	.byte	'OS_CORE_ID_0',0,0,4
 	.byte	'OS_CORE_ID_MASTER',0,0,4
 	.byte	'OS_CORE_ID_1',0,1,4
 	.byte	'OS_COREID_COUNT',0,2,0,9
 	.byte	'CoreIdType',0,10,93,3
-	.word	10965
+	.word	11001
 	.byte	9
 	.byte	'Os_Hal_AddressType',0,10,99,16
 	.word	6196
@@ -1118,27 +1124,27 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.byte	'OS_CORESTATE_INACTIVE',0,0,4
 	.byte	'OS_CORESTATE_ACTIVATED_ASR',0,1,4
 	.byte	'OS_CORESTATE_ACTIVATED_NONASR',0,2,0,14,2
-	.word	11165
+	.word	11201
 	.byte	15,1,0,16
 	.byte	'Os_CoreStatusType_Tag',0,12,167,1,8,4,6
 	.byte	'ActivationState',0
-	.word	11165
+	.word	11201
 	.byte	1,2,35,0,6
 	.byte	'CoreStartRequests',0
-	.word	11257
+	.word	11293
 	.byte	2,2,35,1,0,9
 	.byte	'Os_CoreStatusType',0,13,61,38
-	.word	11266
+	.word	11302
 	.byte	3,12,155,1,9,1,4
 	.byte	'OS_COREOSSTATE_INITIALZE',0,0,4
 	.byte	'OS_COREOSSTATE_PRESTARTTASK',0,1,4
 	.byte	'OS_COREOSSTATE_STARTED',0,2,0,16
 	.byte	'Os_CoreAsrStatusType_Tag',0,12,179,1,8,12,6
 	.byte	'Core',0
-	.word	11266
+	.word	11302
 	.byte	4,2,35,0,6
 	.byte	'OsState',0
-	.word	11373
+	.word	11409
 	.byte	1,2,35,4,6
 	.byte	'ApplicationMode',0
 	.word	145
@@ -1147,11 +1153,11 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.word	6196
 	.byte	4,2,35,6,0,9
 	.byte	'Os_CoreAsrStatusType',0,13,64,41
-	.word	11462
+	.word	11498
 	.byte	7
-	.word	11266
+	.word	11302
 	.byte	8
-	.word	11608
+	.word	11644
 	.byte	16
 	.byte	'Os_Hal_CoreConfigType_Tag',0,14,99,8,24,6
 	.byte	'CoreId',0
@@ -1172,43 +1178,43 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.byte	'BOOTCONRegister',0
 	.word	6196
 	.byte	4,2,35,20,0,18
-	.word	11618
+	.word	11654
 	.byte	8
-	.word	11806
+	.word	11842
 	.byte	19
 	.byte	'Os_IsrHwConfigType_Tag',0,15,53,8,1,18
-	.word	11816
+	.word	11852
 	.byte	8
-	.word	11844
+	.word	11880
 	.byte	9
 	.byte	'Os_InterruptSourceConfigRefType',0,12,216,1,56
-	.word	11849
+	.word	11885
 	.byte	18
-	.word	11854
+	.word	11890
 	.byte	8
-	.word	11895
+	.word	11931
 	.byte	19
 	.byte	'Os_TraceCoreType_Tag',0,16,65,8,1,8
-	.word	11905
+	.word	11941
 	.byte	16
 	.byte	'Os_CoreConfigType_Tag',0,12,220,1,8,24,6
 	.byte	'Status',0
-	.word	11613
+	.word	11649
 	.byte	4,2,35,0,6
 	.byte	'HwConfig',0
-	.word	11811
+	.word	11847
 	.byte	4,2,35,4,6
 	.byte	'InterruptSourceRefs',0
-	.word	11900
+	.word	11936
 	.byte	4,2,35,8,6
 	.byte	'InterruptSourceCount',0
 	.word	6132
 	.byte	2,2,35,12,6
 	.byte	'Id',0
-	.word	10965
+	.word	11001
 	.byte	1,2,35,14,6
 	.byte	'Trace',0
-	.word	11931
+	.word	11967
 	.byte	4,2,35,16,6
 	.byte	'IsAsrCore',0
 	.word	145
@@ -1223,11 +1229,11 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.word	145
 	.byte	1,2,35,23,0,9
 	.byte	'Os_CoreConfigType',0,13,67,38
-	.word	11936
+	.word	11972
 	.byte	18
-	.word	11816
+	.word	11852
 	.byte	8
-	.word	12209
+	.word	12245
 	.byte	5,18,67,9,8,6
 	.byte	'Global',0
 	.word	6196
@@ -1246,13 +1252,13 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.byte	2,2,35,4,0,16
 	.byte	'Os_IntApiStateType_Tag',0,17,90,8,28,6
 	.byte	'SuspendAllPrevState',0
-	.word	12219
+	.word	12255
 	.byte	8,2,35,0,6
 	.byte	'SuspendOsPrevState',0
-	.word	12219
+	.word	12255
 	.byte	8,2,35,8,6
 	.byte	'Os_IntLockingState',0
-	.word	12256
+	.word	12292
 	.byte	6,2,35,16,6
 	.byte	'SuspendAllSnapshot',0
 	.word	6132
@@ -1261,44 +1267,44 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.word	6132
 	.byte	2,2,35,24,0,19
 	.byte	'Os_ThreadConfigType_Tag',0,19,180,3,8,1,18
-	.word	12508
+	.word	12544
 	.byte	8
-	.word	12538
+	.word	12574
 	.byte	9
 	.byte	'Os_CoreInterruptedThreadsType',0,12,208,1,57
-	.word	12543
-	.byte	14,48
-	.word	12548
-	.byte	15,11,0,8
+	.word	12579
+	.byte	14,56
+	.word	12584
+	.byte	15,13,0,8
 	.word	145
 	.byte	8
 	.word	145
 	.byte	8
 	.word	6356
 	.byte	8
-	.word	8979
+	.word	9015
 	.byte	18
-	.word	8979
+	.word	9015
 	.byte	8
-	.word	12616
+	.word	12652
 	.byte	8
-	.word	10739
+	.word	10775
 	.byte	21
 	.byte	'Os_ParamType_Tag',0,21,89,7,8,6
 	.byte	'ParamAlarmBaseRefType',0
-	.word	9418
+	.word	9454
 	.byte	4,2,35,0,6
 	.byte	'ParamAlarmType',0
-	.word	7456
+	.word	7498
 	.byte	1,2,35,0,6
 	.byte	'ParamAppModeType',0
 	.word	145
 	.byte	1,2,35,0,6
 	.byte	'ParamApplicationStateRefType',0
-	.word	9809
+	.word	9845
 	.byte	4,2,35,0,6
 	.byte	'ParamApplicationStateType',0
-	.word	9518
+	.word	9554
 	.byte	1,2,35,0,6
 	.byte	'ParamApplicationType',0
 	.word	6599
@@ -1307,73 +1313,73 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.word	145
 	.byte	1,2,35,0,6
 	.byte	'ParambooleanRefType',0
-	.word	12596
+	.word	12632
 	.byte	4,2,35,0,6
 	.byte	'ParamCoreIdType',0
-	.word	10965
+	.word	11001
 	.byte	1,2,35,0,6
 	.byte	'ParamCounterType',0
-	.word	7880
+	.word	7916
 	.byte	1,2,35,0,6
 	.byte	'ParamEventMaskType',0
 	.word	6273
 	.byte	8,2,35,0,6
 	.byte	'ParamEventMaskRefType',0
-	.word	9222
+	.word	9258
 	.byte	4,2,35,0,6
 	.byte	'ParamISRType',0
 	.word	7285
 	.byte	1,2,35,0,6
 	.byte	'ParamIdleModeType',0
-	.word	8722
+	.word	8758
 	.byte	1,2,35,0,6
 	.byte	'ParamMemorySizeType',0
 	.word	6196
 	.byte	4,2,35,0,6
 	.byte	'ParamMemoryStartAddressType',0
-	.word	10147
+	.word	10183
 	.byte	4,2,35,0,6
 	.byte	'ParamResourceType',0
-	.word	8010
+	.word	8046
 	.byte	1,2,35,0,6
 	.byte	'ParamRestartType',0
-	.word	9444
+	.word	9480
 	.byte	1,2,35,0,6
 	.byte	'ParamScheduleTableStatusRefType',0
-	.word	10101
+	.word	10137
 	.byte	4,2,35,0,6
 	.byte	'ParamScheduleTableStatusType',0
-	.word	9923
+	.word	9959
 	.byte	1,2,35,0,6
 	.byte	'ParamScheduleTableType',0
-	.word	7958
+	.word	7994
 	.byte	1,2,35,0,6
 	.byte	'ParamSpinlockIdType',0
-	.word	8079
+	.word	8115
 	.byte	1,2,35,0,6
 	.byte	'ParamStatusType',0
 	.word	145
 	.byte	1,2,35,0,6
 	.byte	'ParamStatusRefType',0
-	.word	12601
+	.word	12637
 	.byte	4,2,35,0,6
 	.byte	'ParamStd_VersionInfoRefType',0
-	.word	12606
+	.word	12642
 	.byte	4,2,35,0,6
 	.byte	'ParamTaskRefType',0
-	.word	9077
+	.word	9113
 	.byte	4,2,35,0,6
 	.byte	'ParamTaskStateRefType',0
-	.word	9173
+	.word	9209
 	.byte	4,2,35,0,6
 	.byte	'ParamTaskStateType',0
-	.word	9098
+	.word	9134
 	.byte	1,2,35,0,6
 	.byte	'ParamTaskType',0
 	.word	6954
 	.byte	1,2,35,0,6
 	.byte	'ParamTickRefType',0
-	.word	9297
+	.word	9333
 	.byte	4,2,35,0,6
 	.byte	'ParamTickType',0
 	.word	6196
@@ -1382,34 +1388,34 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.word	6724
 	.byte	1,2,35,0,6
 	.byte	'ParamTrustedFunctionParameterRefType',0
-	.word	8565
+	.word	8601
 	.byte	4,2,35,0,6
 	.byte	'ParamTryToGetSpinlockRefType',0
-	.word	12611
+	.word	12647
 	.byte	4,2,35,0,6
 	.byte	'ParamTryToGetSpinlockConstRefType',0
-	.word	12621
+	.word	12657
 	.byte	4,2,35,0,6
 	.byte	'Paramuint32',0
 	.word	6196
 	.byte	4,2,35,0,6
 	.byte	'ParamVoidRefType',0
-	.word	10142
+	.word	10178
 	.byte	4,2,35,0,6
 	.byte	'ParamObjectTypeType',0
-	.word	9630
+	.word	9666
 	.byte	1,2,35,0,6
 	.byte	'ParamOs_NonTrustedFunctionIndexType',0
 	.word	6794
 	.byte	1,2,35,0,6
 	.byte	'ParamOs_NonTrustedFunctionParameterRefType',0
-	.word	8606
+	.word	8642
 	.byte	4,2,35,0,6
 	.byte	'ParamOs_FastTrustedFunctionIndexType',0
 	.word	6873
 	.byte	1,2,35,0,6
 	.byte	'ParamOs_FastTrustedFunctionParameterRefType',0
-	.word	8653
+	.word	8689
 	.byte	4,2,35,0,6
 	.byte	'ParamExceptionSourceIdType',0
 	.word	6196
@@ -1418,16 +1424,16 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.word	6196
 	.byte	4,2,35,0,6
 	.byte	'ParamExceptionSourceIdRefType',0
-	.word	8901
+	.word	8937
 	.byte	4,2,35,0,6
 	.byte	'ParamInterruptSourceIdRefType',0
-	.word	8825
+	.word	8861
 	.byte	4,2,35,0,6
 	.byte	'ParamObjectIdType',0
 	.word	6196
 	.byte	4,2,35,0,6
 	.byte	'ParamPeripheralIdType',0
-	.word	8151
+	.word	8187
 	.byte	1,2,35,0,6
 	.byte	'ParamErrorInformationRefType',0
 	.word	5933
@@ -1436,29 +1442,29 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.word	6196
 	.byte	4,2,35,0,6
 	.byte	'ParamBarrierIdType',0
-	.word	8211
+	.word	8247
 	.byte	1,2,35,0,6
 	.byte	'ParamExceptionContextRefType',0
-	.word	8943
+	.word	8979
 	.byte	4,2,35,0,6
 	.byte	'ParamCoreStartStateRefType',0
-	.word	12626
+	.word	12662
 	.byte	4,2,35,0,0,14,24
-	.word	12631
+	.word	12667
 	.byte	15,2,0,16
 	.byte	'Os_ErrorParamsType_Tag',0,20,71,8,24,6
 	.byte	'Parameter',0
-	.word	14365
+	.word	14401
 	.byte	24,2,35,0,0,16
 	.byte	'Os_ErrorType_Tag',0,20,77,8,32,6
 	.byte	'ErrorDetails',0
 	.word	5861
 	.byte	4,2,35,0,6
 	.byte	'Parameters',0
-	.word	14374
+	.word	14410
 	.byte	24,2,35,4,6
 	.byte	'ExceptionInstructionAddress',0
-	.word	10708
+	.word	10744
 	.byte	4,2,35,28,0,3,13,97,9,1,4
 	.byte	'OS_UNHANDLEDEVENTREPORT_NOTAVAILABLE',0,0,4
 	.byte	'OS_UNHANDLEDEVENTREPORT_AVAILABLE',0,1,0,5,22,123,9,4,6
@@ -1469,109 +1475,109 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.byte	16
 	.byte	'Os_StackConfigType_Tag',0,23,84,8,8,6
 	.byte	'LowAddress',0
-	.word	14632
+	.word	14668
 	.byte	4,2,35,0,6
 	.byte	'HighAddress',0
-	.word	14632
+	.word	14668
 	.byte	4,2,35,4,0,18
-	.word	14637
+	.word	14673
 	.byte	8
-	.word	14707
+	.word	14743
 	.byte	9
 	.byte	'Os_StackConfigRefType',0,12,200,1,56
-	.word	14712
+	.word	14748
 	.byte	16
-	.byte	'Os_CoreAsrType_Tag',0,12,129,2,8,132,1,6
+	.byte	'Os_CoreAsrType_Tag',0,12,129,2,8,140,1,6
 	.byte	'IntApiState',0
-	.word	12339
+	.word	12375
 	.byte	28,2,35,0,6
 	.byte	'InterruptedThreadsCounter',0
 	.word	6104
 	.byte	2,2,35,28,6
 	.byte	'InterruptedThreads',0
-	.word	12587
-	.byte	48,2,35,32,6
+	.word	12623
+	.byte	56,2,35,32,6
 	.byte	'LastError',0
-	.word	14422
-	.byte	32,2,35,80,6
+	.word	14458
+	.byte	32,2,35,88,6
 	.byte	'LastUnhandledIrq',0
 	.word	6196
-	.byte	4,2,35,112,6
+	.byte	4,2,35,120,6
 	.byte	'UnhandledIrqReported',0
-	.word	14524
-	.byte	1,2,35,116,6
+	.word	14560
+	.byte	1,2,35,124,6
 	.byte	'LastUnhandledExc',0
 	.word	6196
-	.byte	4,2,35,118,6
+	.byte	4,2,35,126,6
 	.byte	'UnhandledExcReported',0
-	.word	14524
-	.byte	1,2,35,122,6
+	.word	14560
+	.byte	1,3,35,130,1,6
 	.byte	'IdleMode',0
-	.word	8722
-	.byte	1,2,35,123,6
+	.word	8758
+	.byte	1,3,35,131,1,6
 	.byte	'HookInfo',0
-	.word	14605
-	.byte	4,2,35,124,6
+	.word	14641
+	.byte	4,3,35,132,1,6
 	.byte	'CurrentStack',0
-	.word	14717
-	.byte	4,3,35,128,1,0,9
+	.word	14753
+	.byte	4,3,35,136,1,0,9
 	.byte	'Os_CoreAsrType',0,13,70,35
-	.word	14748
+	.word	14784
 	.byte	18
-	.word	12508
+	.word	12544
 	.byte	8
-	.word	15072
+	.word	15111
 	.byte	8
-	.word	9318
+	.word	9354
 	.byte	8
-	.word	9518
+	.word	9554
 	.byte	18
-	.word	8554
+	.word	8590
 	.byte	8
-	.word	15092
+	.word	15131
 	.byte	8
-	.word	9923
+	.word	9959
 	.byte	8
 	.word	6954
 	.byte	8
-	.word	9098
+	.word	9134
 	.byte	8
 	.word	6196
 	.byte	8
-	.word	8554
+	.word	8590
 	.byte	8
-	.word	8554
+	.word	8590
 	.byte	8
-	.word	8554
-	.byte	8
-	.word	6196
+	.word	8590
 	.byte	8
 	.word	6196
 	.byte	8
-	.word	8274
+	.word	6196
+	.byte	8
+	.word	8310
 	.byte	18
-	.word	8554
+	.word	8590
 	.byte	8
-	.word	15152
+	.word	15191
 	.byte	18
-	.word	14637
+	.word	14673
 	.byte	8
-	.word	15162
+	.word	15201
 	.byte	8
-	.word	14748
+	.word	14784
 	.byte	5,25,89,9,4,6
 	.byte	'AllocationMask',0
 	.word	6196
 	.byte	4,2,35,0,0,8
-	.word	15177
+	.word	15216
 	.byte	8
 	.word	6196
 	.byte	5,25,98,9,12,6
 	.byte	'Dyn',0
-	.word	15207
+	.word	15246
 	.byte	4,2,35,0,6
 	.byte	'Data',0
-	.word	15212
+	.word	15251
 	.byte	4,2,35,4,6
 	.byte	'Size',0
 	.word	6132
@@ -1580,24 +1586,24 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.word	6132
 	.byte	2,2,35,10,0,19
 	.byte	'Os_TaskConfigType_Tag',0,26,55,8,1,18
-	.word	15283
+	.word	15322
 	.byte	8
-	.word	15310
+	.word	15349
 	.byte	16
 	.byte	'Os_SchedulerType_Tag',0,24,71,8,16,6
 	.byte	'NextPriority',0
 	.word	6132
 	.byte	2,2,35,0,6
 	.byte	'NextTask',0
-	.word	15315
+	.word	15354
 	.byte	4,2,35,4,6
 	.byte	'CurrentPriority',0
 	.word	6132
 	.byte	2,2,35,8,6
 	.byte	'CurrentTask',0
-	.word	15315
+	.word	15354
 	.byte	4,2,35,12,0,8
-	.word	15320
+	.word	15359
 	.byte	5,27,66,9,8,6
 	.byte	'ReadIdx',0
 	.word	6196
@@ -1605,103 +1611,103 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.byte	'WriteIdx',0
 	.word	6196
 	.byte	4,2,35,4,0,8
-	.word	15438
+	.word	15477
 	.byte	5,27,76,9,4,6
 	.byte	'Value',0
-	.word	15315
+	.word	15354
 	.byte	4,2,35,0,0,8
-	.word	15484
+	.word	15523
 	.byte	5,27,83,9,12,6
 	.byte	'Dyn',0
-	.word	15479
+	.word	15518
 	.byte	4,2,35,0,6
 	.byte	'Buffer',0
-	.word	15505
+	.word	15544
 	.byte	4,2,35,4,6
 	.byte	'Size',0
 	.word	6196
 	.byte	4,2,35,8,0,18
-	.word	15510
+	.word	15549
 	.byte	8
-	.word	15559
+	.word	15598
 	.byte	16
 	.byte	'Os_SchedulerConfigType_Tag',0,24,86,8,24,6
 	.byte	'BitArray',0
-	.word	15217
+	.word	15256
 	.byte	12,2,35,0,6
 	.byte	'Dyn',0
-	.word	15433
+	.word	15472
 	.byte	4,2,35,12,6
 	.byte	'TaskQueues',0
-	.word	15564
+	.word	15603
 	.byte	4,2,35,16,6
 	.byte	'NumberOfPriorities',0
 	.word	6132
 	.byte	2,2,35,20,0,18
-	.word	15569
+	.word	15608
 	.byte	8
-	.word	15681
+	.word	15720
 	.byte	19
 	.byte	'Os_AppConfigType_Tag',0,28,78,8,1,18
-	.word	15691
+	.word	15730
 	.byte	8
-	.word	15717
+	.word	15756
 	.byte	22,1,1,8
-	.word	15727
+	.word	15766
 	.byte	9
 	.byte	'Os_TaskVoidTaskCbkType',0,26,64,9
-	.word	15730
+	.word	15769
 	.byte	19
 	.byte	'Os_HookCallbackConfigType_Tag',0,22,111,8,1,18
-	.word	15766
+	.word	15805
 	.byte	8
-	.word	15801
+	.word	15840
 	.byte	19
 	.byte	'Os_HookStatusHookConfigType_Tag',0,22,108,8,1,18
-	.word	15811
+	.word	15850
 	.byte	8
-	.word	15848
+	.word	15887
 	.byte	19
 	.byte	'Os_HookProtectionHookConfigType_Tag',0,22,114,8,1,18
-	.word	15858
+	.word	15897
 	.byte	8
-	.word	15899
+	.word	15938
 	.byte	19
 	.byte	'Os_HookInitHookConfigType_Tag',0,22,117,8,1,18
-	.word	15909
+	.word	15948
 	.byte	8
-	.word	15944
+	.word	15983
 	.byte	19
 	.byte	'Os_HookConfigType_Tag',0,22,105,8,1,18
-	.word	15954
+	.word	15993
 	.byte	8
-	.word	15981
+	.word	16020
 	.byte	9
 	.byte	'Os_HookConfigRefType',0,22,133,1,55
-	.word	15986
+	.word	16025
 	.byte	18
-	.word	15991
-	.byte	8
-	.word	16021
-	.byte	9
-	.byte	'Os_AppConfigRefType',0,12,172,2,54
-	.word	15722
-	.byte	18
-	.word	16031
+	.word	16030
 	.byte	8
 	.word	16060
-	.byte	19
-	.byte	'Os_ResourceConfigType_Tag',0,29,63,8,1,18
+	.byte	9
+	.byte	'Os_AppConfigRefType',0,12,172,2,54
+	.word	15761
+	.byte	18
 	.word	16070
 	.byte	8
-	.word	16101
+	.word	16099
+	.byte	19
+	.byte	'Os_ResourceConfigType_Tag',0,29,63,8,1,18
+	.word	16109
+	.byte	8
+	.word	16140
 	.byte	9
 	.byte	'Os_ResourceConfigRefType',0,12,168,2,59
-	.word	16106
-	.byte	18
-	.word	16111
-	.byte	8
 	.word	16145
+	.byte	18
+	.word	16150
+	.byte	8
+	.word	16184
 	.byte	16
 	.byte	'Os_Hal_CoreAsrConfigType_Tag',0,14,127,8,12,6
 	.byte	'CoreId',0
@@ -1713,249 +1719,249 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.byte	'AddressOfInterruptTable',0
 	.word	6196
 	.byte	4,2,35,8,0,18
-	.word	16155
-	.byte	8
-	.word	16272
-	.byte	19
-	.byte	'Os_MpCoreConfigType_Tag',0,30,56,8,1,18
-	.word	16282
+	.word	16194
 	.byte	8
 	.word	16311
 	.byte	19
-	.byte	'Os_TpConfigType_Tag',0,31,71,8,1,18
+	.byte	'Os_MpCoreConfigType_Tag',0,30,56,8,1,18
 	.word	16321
 	.byte	8
-	.word	16346
-	.byte	18
-	.word	14717
+	.word	16350
+	.byte	19
+	.byte	'Os_TpConfigType_Tag',0,31,71,8,1,18
+	.word	16360
 	.byte	8
-	.word	16356
+	.word	16385
+	.byte	18
+	.word	14753
+	.byte	8
+	.word	16395
 	.byte	3,32,86,9,1,4
 	.byte	'OS_COREASRCOREIDX_0',0,0,4
 	.byte	'OS_COREASRCOREIDX_1',0,1,4
 	.byte	'OS_COREASRCOREIDX_COUNT',0,2,0,19
 	.byte	'Os_XSigConfigType_Tag',0,33,63,8,1,18
-	.word	16442
+	.word	16481
 	.byte	8
-	.word	16469
+	.word	16508
 	.byte	19
 	.byte	'Os_IocConfigType_Tag',0,34,83,16,1,18
-	.word	16479
-	.byte	8
-	.word	16505
-	.byte	9
-	.byte	'Os_IocConfigRefType',0,12,204,1,54
-	.word	16510
-	.byte	18
-	.word	16515
+	.word	16518
 	.byte	8
 	.word	16544
+	.byte	9
+	.byte	'Os_IocConfigRefType',0,12,204,1,54
+	.word	16549
+	.byte	18
+	.word	16554
+	.byte	8
+	.word	16583
 	.byte	3,35,79,9,1,4
 	.byte	'OS_BARRIERATTENDEESTATE_DETACHED',0,0,4
 	.byte	'OS_BARRIERATTENDEESTATE_ATTACHED',0,1,0,16
 	.byte	'Os_BarrierBaseType_Tag',0,35,93,8,2,6
 	.byte	'AttendeeState',0
-	.word	16554
+	.word	16593
 	.byte	1,2,35,0,6
 	.byte	'Counter',0
 	.word	145
 	.byte	1,2,35,1,0,7
-	.word	16630
+	.word	16669
 	.byte	8
-	.word	16699
+	.word	16738
 	.byte	9
 	.byte	'Os_BarrierAttendeeRefType',0,35,77,69
 	.word	.L74-.L14
 	.byte	18
-	.word	16709
+	.word	16748
 	.byte	8
-	.word	16743
+	.word	16782
 	.byte	16
 	.byte	'Os_BarrierBaseConfigType_Tag',0,35,104,8,16,6
 	.byte	'Dyn',0
-	.word	16704
+	.word	16743
 	.byte	4,2,35,0,6
 	.byte	'AttendeeRefs',0
-	.word	16748
+	.word	16787
 	.byte	4,2,35,4,6
 	.byte	'AttendeeCount',0
 	.word	145
 	.byte	1,2,35,8,6
 	.byte	'TaskPtr',0
-	.word	15315
+	.word	15354
 	.byte	4,2,35,12,0,18
-	.word	16753
+	.word	16792
 .L74:
 	.byte	8
-	.word	16863
+	.word	16902
 	.byte	9
 	.byte	'Os_BarrierBaseConfigRefType',0,36,62,62
-	.word	16868
+	.word	16907
 	.byte	18
-	.word	16873
+	.word	16912
 	.byte	8
-	.word	16909
+	.word	16948
 	.byte	19
 	.byte	'Os_ThreadClassType_Tag',0,19,183,3,16,1,8
-	.word	16919
+	.word	16958
 	.byte	19
 	.byte	'Os_IsrConfigType_Tag',0,15,59,8,1,18
-	.word	16953
+	.word	16992
 	.byte	8
-	.word	16979
+	.word	17018
 	.byte	9
 	.byte	'Os_IsrConfigRefType',0,15,66,54
-	.word	16984
+	.word	17023
 	.byte	18
-	.word	16989
+	.word	17028
 	.byte	8
-	.word	17017
+	.word	17056
 	.byte	16
 	.byte	'Os_CoreAsrConfigType_Tag',0,12,177,2,8,152,1,6
 	.byte	'Core',0
-	.word	11936
+	.word	11972
 	.byte	24,2,35,0,6
 	.byte	'Dyn',0
-	.word	15172
+	.word	15211
 	.byte	4,2,35,24,6
 	.byte	'Scheduler',0
-	.word	15686
+	.word	15725
 	.byte	4,2,35,28,6
 	.byte	'IdleTask',0
-	.word	15315
+	.word	15354
 	.byte	4,2,35,32,6
 	.byte	'KernelApp',0
-	.word	15722
+	.word	15761
 	.byte	4,2,35,36,6
 	.byte	'KernelStack',0
-	.word	14712
+	.word	14748
 	.byte	4,2,35,40,6
 	.byte	'PreStartTask',0
-	.word	15315
+	.word	15354
 	.byte	4,2,35,44,6
 	.byte	'PreStartTaskCallback',0
-	.word	15735
+	.word	15774
 	.byte	4,2,35,48,6
 	.byte	'StartupHookRef',0
-	.word	15806
+	.word	15845
 	.byte	4,2,35,52,6
 	.byte	'ShutdownHookRef',0
-	.word	15853
+	.word	15892
 	.byte	4,2,35,56,6
 	.byte	'ErrorHookRef',0
-	.word	15853
+	.word	15892
 	.byte	4,2,35,60,6
 	.byte	'ProtectionHookRef',0
-	.word	15904
+	.word	15943
 	.byte	4,2,35,64,6
 	.byte	'InitHookRef',0
-	.word	15949
+	.word	15988
 	.byte	4,2,35,68,6
 	.byte	'HookRefs',0
-	.word	16026
+	.word	16065
 	.byte	4,2,35,72,6
 	.byte	'HookCount',0
 	.word	6132
 	.byte	2,2,35,76,6
 	.byte	'AppRefs',0
-	.word	16065
+	.word	16104
 	.byte	4,2,35,80,6
 	.byte	'AppCount',0
 	.word	6132
 	.byte	2,2,35,84,6
 	.byte	'ResourceRefs',0
-	.word	16150
+	.word	16189
 	.byte	4,2,35,88,6
 	.byte	'ResourceCount',0
 	.word	6132
 	.byte	2,2,35,92,6
 	.byte	'HwConfig',0
-	.word	16277
+	.word	16316
 	.byte	4,2,35,96,6
 	.byte	'MemoryProtection',0
-	.word	16316
+	.word	16355
 	.byte	4,2,35,100,6
 	.byte	'TimingProtection',0
-	.word	16351
+	.word	16390
 	.byte	4,2,35,104,6
 	.byte	'StackRefs',0
-	.word	16361
+	.word	16400
 	.byte	4,2,35,108,6
 	.byte	'StackCount',0
 	.word	6132
 	.byte	2,2,35,112,6
 	.byte	'CoreIdx',0
-	.word	16366
+	.word	16405
 	.byte	1,2,35,114,6
 	.byte	'XSignal',0
-	.word	16474
+	.word	16513
 	.byte	4,2,35,116,6
 	.byte	'IocRefs',0
-	.word	16549
+	.word	16588
 	.byte	4,2,35,120,6
 	.byte	'IocCount',0
 	.word	6132
 	.byte	2,2,35,124,6
 	.byte	'Barrier',0
-	.word	16868
+	.word	16907
 	.byte	4,3,35,128,1,6
 	.byte	'BarrierRefs',0
-	.word	16914
+	.word	16953
 	.byte	4,3,35,132,1,6
 	.byte	'BarrierCount',0
 	.word	6132
 	.byte	2,3,35,136,1,6
 	.byte	'ThreadClass',0
-	.word	16948
+	.word	16987
 	.byte	4,3,35,140,1,6
 	.byte	'IsrRefs',0
-	.word	17022
+	.word	17061
 	.byte	4,3,35,144,1,6
 	.byte	'IsrCount',0
 	.word	6132
 	.byte	2,3,35,148,1,0,9
 	.byte	'Os_CoreAsrConfigType',0,13,73,41
-	.word	17027
+	.word	17066
 	.byte	8
-	.word	15727
+	.word	15766
 	.byte	18
-	.word	15954
+	.word	15993
 	.byte	8
-	.word	17786
+	.word	17825
 	.byte	18
-	.word	15691
+	.word	15730
 	.byte	8
-	.word	17796
+	.word	17835
 	.byte	18
-	.word	16070
+	.word	16109
 	.byte	8
-	.word	17806
+	.word	17845
 	.byte	18
-	.word	16479
+	.word	16518
 	.byte	8
-	.word	17816
+	.word	17855
 	.byte	18
-	.word	16753
+	.word	16792
 	.byte	8
-	.word	17826
+	.word	17865
 	.byte	18
-	.word	16753
+	.word	16792
 	.byte	8
-	.word	17836
+	.word	17875
 	.byte	18
-	.word	16953
+	.word	16992
 	.byte	8
-	.word	17846
+	.word	17885
 	.byte	18
 	.word	.L75-.L14
 	.byte	8
-	.word	17856
+	.word	17895
 	.byte	16
 	.byte	'Os_LockType_Tag',0,38,82,8,4,6
 	.byte	'Next',0
-	.word	17861
+	.word	17900
 	.byte	4,2,35,0,0,8
-	.word	17866
+	.word	17905
 	.byte	3,38,73,9,1,4
 	.byte	'OS_LOCKTYPE_RESOURCE_STANDARD',0,0,4
 	.byte	'OS_LOCKTYPE_RESOURCE_INTERRUPT',0,1,4
@@ -1964,13 +1970,13 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.byte	16
 	.byte	'Os_LockConfigType_Tag',0,38,92,8,12,6
 	.byte	'Dyn',0
-	.word	17902
+	.word	17941
 	.byte	4,2,35,0,6
 	.byte	'AccessingApplications',0
 	.word	6196
 	.byte	4,2,35,4,6
 	.byte	'Type',0
-	.word	17907
+	.word	17946
 	.byte	1,2,35,8,0,3,37,90,9,1,4
 	.byte	'OS_SPINLOCKMETHOD_ALL_INT',0,0,4
 	.byte	'OS_SPINLOCKMETHOD_CAT2',0,1,4
@@ -1983,105 +1989,105 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.byte	'OS_SPINLOCKCHECK_DISABLED',0,0,4
 	.byte	'OS_SPINLOCKCHECK_ENABLED',0,1,0,19
 	.byte	'Os_TraceSpinlockConfigType_Tag',0,16,68,8,1,18
-	.word	18385
+	.word	18424
 	.byte	8
-	.word	18421
+	.word	18460
 	.byte	16
 	.byte	'Os_SpinlockConfigType_Tag',0,37,169,1,8,24,6
 	.byte	'Lock',0
-	.word	18001
+	.word	18040
 	.byte	12,2,35,0,6
 	.byte	'Method',0
-	.word	18087
+	.word	18126
 	.byte	1,2,35,12,6
 	.byte	'CeilingPriority',0
 	.word	6132
 	.byte	2,2,35,14,6
 	.byte	'Mode',0
-	.word	18204
+	.word	18243
 	.byte	1,2,35,16,6
 	.byte	'Trace',0
-	.word	18262
+	.word	18301
 	.byte	1,2,35,17,6
 	.byte	'Checks',0
-	.word	18323
+	.word	18362
 	.byte	1,2,35,18,6
 	.byte	'Order',0
 	.word	145
 	.byte	1,2,35,19,6
 	.byte	'TimingHookTrace',0
-	.word	18426
+	.word	18465
 	.byte	4,2,35,20,0,18
-	.word	18431
+	.word	18470
 	.byte	8
-	.word	18604
+	.word	18643
 	.byte	9
 	.byte	'Os_SpinlockConfigRefType',0,12,196,1,59
-	.word	18609
-	.byte	18
-	.word	18614
-	.byte	8
 	.word	18648
+	.byte	18
+	.word	18653
+	.byte	8
+	.word	18687
 	.byte	18
 	.word	6196
 	.byte	8
-	.word	18658
+	.word	18697
 	.byte	19
 	.byte	'Os_MpSystemConfigType_Tag',0,30,53,8,1,18
-	.word	18668
+	.word	18707
 	.byte	8
-	.word	18699
+	.word	18738
 	.byte	16
 	.byte	'Os_Hal_Core2ThreadType_Tag',0,14,137,1,8,4,6
 	.byte	'Thread',0
-	.word	12543
+	.word	12579
 	.byte	4,2,35,0,0,8
-	.word	18709
+	.word	18748
 	.byte	14,8
-	.word	18759
+	.word	18798
 	.byte	15,1,0,16
 	.byte	'Os_Hal_Core2ThreadConfigType_Tag',0,14,145,1,8,8,6
 	.byte	'Core2Thread',0
-	.word	18764
+	.word	18803
 	.byte	8,2,35,0,0,18
-	.word	18773
+	.word	18812
 	.byte	8
-	.word	18834
+	.word	18873
 	.byte	16
 	.byte	'Os_SystemConfigType_Tag',0,12,157,3,8,40,6
 	.byte	'VersionInfo',0
 	.word	6356
 	.byte	8,2,35,0,6
 	.byte	'NumberOfAsrCores',0
-	.word	16366
+	.word	16405
 	.byte	1,2,35,8,6
 	.byte	'SpinlockRefs',0
-	.word	18653
+	.word	18692
 	.byte	4,2,35,12,6
 	.byte	'SpinlockCount',0
 	.word	6132
 	.byte	2,2,35,16,6
 	.byte	'HwConfig',0
-	.word	18663
+	.word	18702
 	.byte	4,2,35,20,6
 	.byte	'MemoryProtection',0
-	.word	18704
+	.word	18743
 	.byte	4,2,35,24,6
 	.byte	'InterruptSourceRefs',0
-	.word	11900
+	.word	11936
 	.byte	4,2,35,28,6
 	.byte	'InterruptSourceCount',0
 	.word	6132
 	.byte	2,2,35,32,6
 	.byte	'Core2Thread',0
-	.word	18839
+	.word	18878
 	.byte	4,2,35,36,0,9
 	.byte	'Os_SystemConfigType',0,13,76,40
-	.word	18844
+	.word	18883
 	.byte	18
-	.word	18431
+	.word	18470
 	.byte	8
-	.word	19119
+	.word	19158
 	.byte	9
 	.byte	'Os_CorePhysicalIdType',0,13,82,16
 	.word	6196
@@ -2090,59 +2096,59 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.word	6196
 	.byte	9
 	.byte	'Os_UnhandledEventReportType',0,13,104,3
-	.word	14524
+	.word	14560
 	.byte	19
 	.byte	'Os_Hal_ContextType_Tag',0,39,65,8,1,9
 	.byte	'Os_Hal_ContextType',0,39,66,39
-	.word	19233
+	.word	19272
 	.byte	19
 	.byte	'Os_Hal_ContextConfigType_Tag',0,39,69,8,1,9
 	.byte	'Os_Hal_ContextConfigType',0,39,70,45
-	.word	19288
+	.word	19327
 	.byte	9
 	.byte	'Os_CoreAsrCoreIdx',0,32,91,3
-	.word	16366
+	.word	16405
 	.byte	23
 	.byte	'OsCfg_Core_OsCore0_Dyn',0,40,84,43
-	.word	14748
+	.word	14784
 	.byte	1,1,23
 	.byte	'OsCfg_Core_OsCore1_Dyn',0,40,94,43
-	.word	14748
+	.word	14784
 	.byte	1,1,9
 	.byte	'Os_TaskPrioType',0,41,76,16
 	.word	6132
 	.byte	9
 	.byte	'Os_SchedulerType',0,41,83,37
-	.word	15320
+	.word	15359
 	.byte	9
 	.byte	'Os_SchedulerConfigType',0,41,86,43
-	.word	15569
+	.word	15608
 	.byte	9
 	.byte	'Os_LockType',0,42,58,32
-	.word	17866
+	.word	17905
 	.byte	9
 	.byte	'Os_LockConfigType',0,42,61,38
-	.word	18001
+	.word	18040
 	.byte	9
 	.byte	'Os_LockListType',0,42,65,55
-	.word	17861
+	.word	17900
 	.byte	9
 	.byte	'Os_ResourceConfigType',0,29,64,42
-	.word	16070
+	.word	16109
 	.byte	9
 	.byte	'Os_AppConfigType',0,28,79,37
-	.word	15691
+	.word	15730
 	.byte	19
 	.byte	'Os_ServiceCallType_Tag',0,43,62,8,1,9
 	.byte	'Os_ServiceCallType',0,43,63,39
-	.word	19652
+	.word	19691
 	.byte	2
 	.byte	'unsigned int',0,4,7,9
 	.byte	'Os_StdReturnType',0,44,74,22
-	.word	19707
+	.word	19746
 	.byte	9
 	.byte	'Os_WordType',0,44,77,22
-	.word	19707
+	.word	19746
 	.byte	9
 	.byte	'Os_ObjIdxType',0,44,80,16
 	.word	6132
@@ -2151,71 +2157,71 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.word	6132
 	.byte	9
 	.byte	'Os_ParamType',0,44,84,32
-	.word	12631
+	.word	12667
 	.byte	9
 	.byte	'Os_HookConfigType',0,22,106,38
-	.word	15954
+	.word	15993
 	.byte	9
 	.byte	'Os_HookStatusHookConfigType',0,22,109,48
-	.word	15811
+	.word	15850
 	.byte	9
 	.byte	'Os_HookCallbackConfigType',0,22,112,46
-	.word	15766
+	.word	15805
 	.byte	9
 	.byte	'Os_HookProtectionHookConfigType',0,22,115,52
-	.word	15858
+	.word	15897
 	.byte	9
 	.byte	'Os_HookInitHookConfigType',0,22,118,46
-	.word	15909
+	.word	15948
 	.byte	9
 	.byte	'Os_HookFlagType',0,22,120,16
 	.word	6196
 	.byte	9
 	.byte	'Os_HookInfoType',0,22,127,3
-	.word	14605
+	.word	14641
 	.byte	9
 	.byte	'Os_HookIdType',0,22,130,1,16
 	.word	6196
 	.byte	9
 	.byte	'Os_XSigConfigType',0,33,64,38
-	.word	16442
+	.word	16481
 	.byte	19
 	.byte	'Os_XSigIsrConfigType_Tag',0,33,66,8,1,9
 	.byte	'Os_XSigIsrConfigType',0,33,67,41
-	.word	20109
+	.word	20148
 	.byte	19
 	.byte	'Os_XSigRecvPortConfigType_Tag',0,33,82,8,1,9
 	.byte	'Os_XSigRecvPortConfigType',0,33,83,46
-	.word	20168
+	.word	20207
 	.byte	9
 	.byte	'Os_TpConfigType',0,31,72,36
-	.word	16321
+	.word	16360
 	.byte	19
 	.byte	'Os_TpBudgetConfigType_Tag',0,31,80,8,1,9
 	.byte	'Os_TpBudgetConfigType',0,31,81,42
-	.word	20261
+	.word	20300
 	.byte	9
 	.byte	'Os_IocConfigType',0,34,83,37
-	.word	16479
+	.word	16518
 	.byte	9
 	.byte	'Os_IsrHwConfigType',0,15,54,39
-	.word	11816
+	.word	11852
 	.byte	9
 	.byte	'Os_IsrConfigType',0,15,60,37
-	.word	16953
+	.word	16992
 	.byte	19
 	.byte	'Os_IsrCat1ConfigType_Tag',0,15,62,8,1,9
 	.byte	'Os_IsrCat1ConfigType',0,15,63,41
-	.word	20399
+	.word	20438
 	.byte	9
 	.byte	'Os_ErrorType',0,45,56,33
-	.word	14422
+	.word	14458
 	.byte	9
 	.byte	'Os_ErrorParamsType',0,45,58,39
-	.word	14374
+	.word	14410
 	.byte	9
 	.byte	'Os_TaskConfigType',0,26,61,38
-	.word	15283
+	.word	15322
 	.byte	9
 	.byte	'Os_Hal_BitFieldType',0,46,87,16
 	.word	6196
@@ -2227,16 +2233,16 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.word	6196
 	.byte	9
 	.byte	'Os_Hal_CoreConfigType',0,46,97,42
-	.word	11618
+	.word	11654
 	.byte	9
 	.byte	'Os_Hal_Core2ThreadType',0,46,100,43
-	.word	18709
+	.word	18748
 	.byte	9
 	.byte	'Os_Hal_Core2ThreadConfigType',0,46,103,49
-	.word	18773
+	.word	18812
 	.byte	9
 	.byte	'Os_Hal_CoreAsrConfigType',0,46,107,45
-	.word	16155
+	.word	16194
 	.byte	9
 	.byte	'Os_Hal_SystemConfigType',0,46,109,16
 	.word	6196
@@ -2251,22 +2257,22 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.byte	'CoreAssignment',0
 	.word	145
 	.byte	1,2,35,8,0,18
-	.word	20785
+	.word	20824
 	.byte	8
-	.word	20874
+	.word	20913
 	.byte	16
 	.byte	'Os_Hal_XSigInterruptConfigType_Tag',0,14,151,1,8,4,6
 	.byte	'ConfigData',0
-	.word	20879
+	.word	20918
 	.byte	4,2,35,0,0,9
 	.byte	'Os_Hal_XSigInterruptConfigType',0,46,113,51
-	.word	20884
+	.word	20923
 	.byte	9
 	.byte	'Os_ThreadClassType',0,19,183,3,39
-	.word	16919
+	.word	16958
 	.byte	9
 	.byte	'Os_ThreadConfigType',0,19,189,3,40
-	.word	12508
+	.word	12544
 	.byte	9
 	.byte	'Os_CallContextType',0,19,193,3,23
 	.word	6132
@@ -2287,14 +2293,14 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.word	6196
 	.byte	9
 	.byte	'Os_Hal_IntIsrConfigType',0,48,99,44
-	.word	20785
+	.word	20824
 	.byte	16
 	.byte	'Os_Hal_IntIsrMapConfigType_Tag',0,47,132,1,8,4,6
 	.byte	'dummy',0
 	.word	6196
 	.byte	4,2,35,0,0,9
 	.byte	'Os_Hal_IntIsrMapConfigType',0,48,103,47
-	.word	21253
+	.word	21292
 	.byte	9
 	.byte	'Os_BitIndexType',0,49,80,15
 	.word	145
@@ -2306,91 +2312,91 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.word	6132
 	.byte	9
 	.byte	'Os_BitArrayType',0,25,94,2
-	.word	15177
+	.word	15216
 	.byte	9
 	.byte	'Os_BitArrayConfigType',0,25,108,2
-	.word	15217
+	.word	15256
 	.byte	9
 	.byte	'Os_DequeType',0,27,73,2
-	.word	15438
+	.word	15477
 	.byte	9
 	.byte	'Os_DequeNodeType',0,27,79,2
-	.word	15484
+	.word	15523
 	.byte	9
 	.byte	'Os_DequeConfigType',0,27,95,2
-	.word	15510
+	.word	15549
 	.byte	9
 	.byte	'Os_IntApiStateType',0,18,64,39
-	.word	12339
+	.word	12375
 	.byte	9
 	.byte	'Os_IntStateType',0,18,74,3
-	.word	12219
+	.word	12255
 	.byte	9
 	.byte	'Os_IntApiCntType',0,17,79,16
 	.word	6132
 	.byte	9
 	.byte	'Os_IntLockingStateType',0,17,87,3
-	.word	12256
+	.word	12292
 	.byte	9
 	.byte	'Os_StackConfigType',0,50,140,1,39
-	.word	14637
+	.word	14673
 	.byte	7
 	.word	6196
 	.byte	16
 	.byte	'Os_SpinlockType_Tag',0,37,144,1,8,20,6
 	.byte	'Lock',0
-	.word	17866
+	.word	17905
 	.byte	4,2,35,0,6
 	.byte	'OwnerThread',0
-	.word	12543
+	.word	12579
 	.byte	4,2,35,4,6
 	.byte	'PreviousSpinlock',0
-	.word	18609
+	.word	18648
 	.byte	4,2,35,8,6
 	.byte	'Spinlock',0
-	.word	21680
+	.word	21719
 	.byte	4,2,35,12,6
 	.byte	'PreviousPriority',0
 	.word	6132
 	.byte	2,2,35,16,0,9
 	.byte	'Os_SpinlockType',0,51,54,36
-	.word	21685
+	.word	21724
 	.byte	9
 	.byte	'Os_SpinlockConfigType',0,51,58,42
-	.word	18431
+	.word	18470
 	.byte	9
 	.byte	'Os_SpinlockListType',0,51,62,59
-	.word	18609
+	.word	18648
 	.byte	9
 	.byte	'Os_LockTypeType',0,38,78,3
-	.word	17907
+	.word	17946
 	.byte	9
 	.byte	'Os_TraceCoreType',0,16,66,37
-	.word	11905
+	.word	11941
 	.byte	9
 	.byte	'Os_TraceSpinlockConfigType',0,16,69,47
-	.word	18385
+	.word	18424
 	.byte	9
 	.byte	'Os_SpinlockMethodType',0,37,100,2
-	.word	18087
+	.word	18126
 	.byte	9
 	.byte	'Os_SpinlockModeType',0,37,111,2
-	.word	18204
+	.word	18243
 	.byte	9
 	.byte	'Os_SpinlockTraceType',0,37,124,2
-	.word	18262
+	.word	18301
 	.byte	9
 	.byte	'Os_SpinlockCheckType',0,37,135,1,2
-	.word	18323
+	.word	18362
 	.byte	9
 	.byte	'Os_SpinlockOrderType',0,37,139,1,15
 	.word	145
 	.byte	9
 	.byte	'Os_BarrierBaseType',0,36,58,39
-	.word	16630
+	.word	16669
 	.byte	9
 	.byte	'Os_BarrierBaseConfigType',0,36,60,45
-	.word	16753
+	.word	16792
 	.byte	9
 	.byte	'Os_BarrierAttendeeIdxType',0,35,72,15
 	.word	145
@@ -2399,131 +2405,152 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.word	145
 	.byte	9
 	.byte	'Os_BarrierAttendeeStateType',0,35,86,2
-	.word	16554
+	.word	16593
 	.byte	9
 	.byte	'Os_MpSystemConfigType',0,30,54,42
-	.word	18668
+	.word	18707
 	.byte	9
 	.byte	'Os_MpCoreConfigType',0,30,57,40
-	.word	16282
+	.word	16321
 	.byte	9
 	.byte	'Os_CoreStateType',0,12,147,1,2
-	.word	11165
+	.word	11201
 	.byte	9
 	.byte	'Os_CoreOsStateType',0,12,163,1,2
-	.word	11373
+	.word	11409
 	.byte	9
 	.byte	'Os_CoreThreadIdx',0,12,212,1,16
 	.word	6104
 	.byte	9
-	.byte	'PduLengthType',0,52,65,15
-	.word	145
+	.byte	'PduLengthType',0,52,65,16
+	.word	6132
 	.byte	8
 	.word	145
 	.byte	9
 	.byte	'SduDataPtrType',0,53,196,1,54
-	.word	22450
+	.word	22489
 	.byte	3,53,219,1,9,1,4
 	.byte	'TP_DATACONF',0,0,4
 	.byte	'TP_DATARETRY',0,1,4
 	.byte	'TP_CONFPENDING',0,2,0,9
 	.byte	'TpDataStateType',0,53,226,1,3
-	.word	22479
+	.word	22518
 	.byte	9
-	.byte	'EcuM_ModeType',0,54,63,15
+	.byte	'Dcm_RequestDataOut_SampleRoutineControl_Out_ResultPrimitiveType',0,54,78,16
+	.word	6132
+	.byte	9
+	.byte	'Dcm_RequestDataOut_SampleRoutineControl_StartOnly_Out_ResultPrimitiveType',0,54,84,16
+	.word	6196
+	.byte	9
+	.byte	'Dcm_StartDataIn_SampleRoutineControl_In_Option0PrimitiveType',0,54,90,15
 	.word	145
 	.byte	9
-	.byte	'EcuM_StateType',0,54,69,15
+	.byte	'Dcm_StartDataIn_SampleRoutineControl_StartOnly_In_Option1ArrayType',0,54,96,15
 	.word	145
 	.byte	9
-	.byte	'EcuM_UserType',0,54,72,15
+	.byte	'Dcm_StartDataOut_SampleRoutineControl_Out_InitStatePrimitiveType',0,54,99,16
+	.word	6196
+	.byte	9
+	.byte	'Dcm_StopDataOut_SampleRoutineControl_Out_StopStatePrimitiveType',0,54,105,16
+	.word	6196
+	.byte	9
+	.byte	'EcuM_ModeType',0,54,216,1,15
+	.word	145
+	.byte	9
+	.byte	'EcuM_StateType',0,54,222,1,15
+	.word	145
+	.byte	9
+	.byte	'EcuM_UserType',0,54,225,1,15
 	.word	145
 	.byte	7
 	.word	6196
 	.byte	9
 	.byte	'EcuM_CoreStatusType',0,55,151,1,25
-	.word	22624
+	.word	23109
 	.byte	7
 	.word	6196
 	.byte	8
-	.word	22658
+	.word	23143
 	.byte	9
 	.byte	'EcuM_CoreStatusArrayType',0,55,152,1,30
-	.word	22663
+	.word	23148
 	.byte	9
-	.byte	'EcuM_DriverFuncType',0,55,177,3,9
-	.word	15730
+	.byte	'EcuM_DriverFuncType',0,55,184,3,9
+	.word	15769
 	.byte	9
-	.byte	'EcuM_ComMChannelsType',0,55,144,4,15
+	.byte	'EcuM_ComMChannelsType',0,55,157,4,15
 	.word	145
 	.byte	9
-	.byte	'EcuM_DefaultAppModeType',0,55,147,4,16
+	.byte	'EcuM_ComM_ComAllowedListType',0,55,160,4,15
+	.word	145
+	.byte	9
+	.byte	'EcuM_DefaultAppModeType',0,55,163,4,16
 	.word	6196
 	.byte	9
-	.byte	'EcuM_KillAllInProgressType',0,55,162,4,15
+	.byte	'EcuM_KillAllInProgressType',0,55,178,4,15
 	.word	145
 	.byte	9
-	.byte	'EcuM_NormalMcuModeType',0,55,168,4,16
+	.byte	'EcuM_NormalMcuModeType',0,55,184,4,16
 	.word	6196
 	.byte	9
-	.byte	'EcuM_ApplicationOfPartitionDataType',0,55,174,4,15
+	.byte	'EcuM_ApplicationOfPartitionDataType',0,55,190,4,15
 	.word	145
 	.byte	9
-	.byte	'EcuM_PostRunRequestCounterType',0,55,180,4,15
+	.byte	'EcuM_PostRunRequestCounterType',0,55,196,4,15
 	.word	145
 	.byte	9
-	.byte	'EcuM_RunRequestCounterType',0,55,183,4,15
+	.byte	'EcuM_RunRequestCounterType',0,55,199,4,15
 	.word	145
 	.byte	9
-	.byte	'EcuM_TimerType',0,55,189,4,16
+	.byte	'EcuM_TimerType',0,55,205,4,16
 	.word	6132
 	.byte	9
-	.byte	'EcuM_ChannelOfWakeupSourceListType',0,55,192,4,15
+	.byte	'EcuM_ChannelOfWakeupSourceListType',0,55,208,4,15
 	.word	145
 	.byte	16
-	.byte	'sEcuM_DriverInitOneType',0,55,208,4,16,4,6
+	.byte	'sEcuM_DriverInitOneType',0,55,224,4,16,4,6
 	.byte	'FunctionOfDriverInitOne',0
-	.word	22702
+	.word	23187
 	.byte	4,2,35,0,0,9
-	.byte	'EcuM_DriverInitOneType',0,55,211,4,3
-	.word	23052
+	.byte	'EcuM_DriverInitOneType',0,55,227,4,3
+	.word	23575
 	.byte	8
-	.word	15727
+	.word	15766
 	.byte	16
-	.byte	'sEcuM_DriverInitThreeType',0,55,214,4,16,4,6
+	.byte	'sEcuM_DriverInitThreeType',0,55,230,4,16,4,6
 	.byte	'FunctionOfDriverInitThree',0
-	.word	22702
+	.word	23187
 	.byte	4,2,35,0,0,9
-	.byte	'EcuM_DriverInitThreeType',0,55,217,4,3
-	.word	23153
+	.byte	'EcuM_DriverInitThreeType',0,55,233,4,3
+	.word	23676
 	.byte	16
-	.byte	'sEcuM_DriverInitTwoType',0,55,220,4,16,4,6
+	.byte	'sEcuM_DriverInitTwoType',0,55,236,4,16,4,6
 	.byte	'FunctionOfDriverInitTwo',0
-	.word	22702
+	.word	23187
 	.byte	4,2,35,0,0,9
-	.byte	'EcuM_DriverInitTwoType',0,55,223,4,3
-	.word	23255
+	.byte	'EcuM_DriverInitTwoType',0,55,239,4,3
+	.word	23778
 	.byte	16
-	.byte	'sEcuM_PartitionDataType',0,55,226,4,16,1,6
+	.byte	'sEcuM_PartitionDataType',0,55,242,4,16,1,6
 	.byte	'ApplicationOfPartitionData',0
 	.word	145
 	.byte	1,2,35,0,0,9
-	.byte	'EcuM_PartitionDataType',0,55,229,4,3
-	.word	23351
+	.byte	'EcuM_PartitionDataType',0,55,245,4,3
+	.word	23874
 	.byte	16
-	.byte	'sEcuM_WakeupSourceListType',0,55,232,4,16,1,6
+	.byte	'sEcuM_WakeupSourceListType',0,55,248,4,16,1,6
 	.byte	'ChannelOfWakeupSourceList',0
 	.word	145
 	.byte	1,2,35,0,0,9
-	.byte	'EcuM_WakeupSourceListType',0,55,235,4,3
-	.word	23450
+	.byte	'EcuM_WakeupSourceListType',0,55,251,4,3
+	.word	23973
 	.byte	16
-	.byte	'sEcuM_PCConfigType',0,55,176,5,16,1,6
+	.byte	'sEcuM_PCConfigType',0,55,195,5,16,1,6
 	.byte	'EcuM_PCConfigNeverUsed',0
 	.word	145
 	.byte	1,2,35,0,0,9
-	.byte	'EcuM_PCConfigType',0,55,179,5,3
-	.word	23554
+	.byte	'EcuM_PCConfigType',0,55,198,5,3
+	.word	24077
 .L64:
 	.byte	7
 	.word	145
@@ -2772,42 +2799,46 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.word	.L10
 	.byte	3,130,1,1,5,28,9
 	.half	.L72-.L10
-	.byte	3,6,1,5,26,1,5,3,9
+	.byte	3,6,1,5,26,9
 	.half	.L92-.L72
-	.byte	3,2,1,5,24,9
+	.byte	1,5,3,9
 	.half	.L93-.L92
-	.byte	1,5,28,9
+	.byte	3,2,1,5,24,9
 	.half	.L94-.L93
+	.byte	1,5,28,9
+	.half	.L95-.L94
 	.byte	3,1,1,5,3,9
-	.half	.L73-.L94
+	.half	.L73-.L95
 	.byte	1,5,5,7,9
-	.half	.L95-.L73
+	.half	.L96-.L73
 	.byte	3,2,1,5,47,9
-	.half	.L96-.L95
-	.byte	1,5,33,9
 	.half	.L97-.L96
-	.byte	1,5,40,9
+	.byte	1,5,33,9
 	.half	.L98-.L97
-	.byte	3,1,1,5,26,9
+	.byte	1,5,5,9
 	.half	.L99-.L98
-	.byte	1,5,5,9
+	.byte	3,1,1,5,40,9
 	.half	.L100-.L99
-	.byte	3,1,1,5,46,9
+	.byte	1,5,26,9
 	.half	.L101-.L100
-	.byte	1,5,32,9
-	.half	.L102-.L101
 	.byte	1,5,5,9
+	.half	.L102-.L101
+	.byte	3,1,1,5,46,9
 	.half	.L103-.L102
-	.byte	3,1,1,5,34,9
+	.byte	1,5,32,9
 	.half	.L104-.L103
-	.byte	1,5,10,9
-	.half	.L3-.L104
-	.byte	3,3,1,5,23,9
-	.half	.L105-.L3
-	.byte	1,5,1,7,9
+	.byte	1,5,5,9
+	.half	.L105-.L104
+	.byte	3,1,1,5,34,9
 	.half	.L106-.L105
+	.byte	1,5,10,9
+	.half	.L3-.L106
+	.byte	3,3,1,5,23,9
+	.half	.L107-.L3
+	.byte	1,5,1,7,9
+	.half	.L108-.L107
 	.byte	3,8,1,7,9
-	.half	.L31-.L106
+	.half	.L31-.L108
 	.byte	0,1,1
 .L89:
 	.sdecl	'.debug_ranges',debug,cluster('ErrorHook')
@@ -2841,48 +2872,52 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.sdecl	'.debug_line',debug,cluster('Os_PanicHook')
 	.sect	'.debug_line'
 .L34:
-	.word	.L108-.L107
-.L107:
-	.half	3
 	.word	.L110-.L109
 .L109:
+	.half	3
+	.word	.L112-.L111
+.L111:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'..\\Appl\\Source\\Os_Callout_Stubs.c',0,0,0,0,0
-.L110:
-	.byte	5,29,7,0,5,2
+.L112:
+	.byte	5,3,7,0,5,2
 	.word	.L12
-	.byte	3,248,1,1,5,3,9
-	.half	.L111-.L12
+	.byte	3,248,1,1,5,29,9
+	.half	.L113-.L12
 	.byte	1,5,51,9
-	.half	.L112-.L111
-	.byte	1,5,27,9
-	.half	.L113-.L112
-	.byte	1,5,3,9
 	.half	.L114-.L113
-	.byte	3,1,1,5,51,9
-	.half	.L115-.L114
 	.byte	1,5,27,9
-	.half	.L116-.L115
-	.byte	1,5,35,9
-	.half	.L117-.L116
-	.byte	3,1,1,5,3,9
-	.half	.L118-.L117
-	.byte	1,5,57,9
-	.half	.L119-.L118
-	.byte	1,5,33,9
-	.half	.L120-.L119
+	.half	.L115-.L114
 	.byte	1,5,3,9
+	.half	.L116-.L115
+	.byte	3,1,1,5,29,9
+	.half	.L117-.L116
+	.byte	1,5,51,9
+	.half	.L118-.L117
+	.byte	1,5,27,9
+	.half	.L119-.L118
+	.byte	1,5,3,9
+	.half	.L120-.L119
+	.byte	3,1,1,5,35,9
 	.half	.L121-.L120
-	.byte	3,1,1,5,57,9
+	.byte	1,5,57,9
 	.half	.L122-.L121
 	.byte	1,5,33,9
 	.half	.L123-.L122
+	.byte	1,5,3,9
+	.half	.L124-.L123
+	.byte	3,1,1,5,35,9
+	.half	.L125-.L124
+	.byte	1,5,57,9
+	.half	.L126-.L125
+	.byte	1,5,33,9
+	.half	.L127-.L126
 	.byte	1,5,12,9
-	.half	.L4-.L123
+	.half	.L4-.L127
 	.byte	3,1,1,5,1,9
 	.half	.L36-.L4
 	.byte	3,8,0,1,1
-.L108:
+.L110:
 	.sdecl	'.debug_ranges',debug,cluster('Os_PanicHook')
 	.sect	'.debug_ranges'
 .L35:
@@ -3119,7 +3154,7 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L124:
+.L128:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
@@ -3127,16 +3162,16 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('StartupHook')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L124,.L6,.L53-.L6
+	.word	.L128,.L6,.L53-.L6
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('ShutdownHook')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L124,.L8,.L54-.L8
+	.word	.L128,.L8,.L54-.L8
 	.sdecl	'.debug_frame',debug,cluster('ErrorHook')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L124,.L10,.L57-.L10
+	.word	.L128,.L10,.L57-.L10
 	.byte	4
 	.word	(.L72-.L10)/2
 	.byte	19,8,22,26,3,19,138,8,4
@@ -3145,7 +3180,7 @@ Os_Callout_UnhandledExc_Core1:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('Os_PanicHook')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L124,.L12,.L63-.L12
+	.word	.L128,.L12,.L63-.L12
 	.byte	8,19,8,20,8,21,8,22,8,23,0,0
 
 ; ..\Appl\Source\Os_Callout_Stubs.c	   254    {

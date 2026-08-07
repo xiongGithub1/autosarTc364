@@ -37,14 +37,11 @@ Rte 把应用 SW-C（StartApp / MotorControll / MotorCdd）与 RTE 事件、端�
 📷 图片位 R1：Rte 中 SW-C 与 Runnable 列表截图。
 MotorCdd
 ![1785920292330](image/DaVinci_Rte/1785920292330.png)
-<!-- ![20260805165816](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805165816.png) -->
 MotorControll
 ![1785920318266](image/DaVinci_Rte/1785920318266.png)
-<!-- ![20260805165841](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805165841.png) -->
 
 StartAPP
 ![1785920341435](image/DaVinci_Rte/1785920341435.png)
-<!-- ![20260805165904](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805165904.png) -->
 ### 2.2 关键 RTE 数据
 
 | 数据 | 方向 | 说明 |
@@ -60,24 +57,19 @@ StartAPP
 MotorCdd：
 Application Ports
 ![1785919982865](image/DaVinci_Rte/1785919982865.png)
-<!-- ![20260805165306](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805165306.png) -->
 
 
 Service Ports
 ![1785920111331](image/DaVinci_Rte/1785920111331.png)
-<!-- ![20260805165514](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805165514.png) -->
 MotorControll：
 Application Ports
 ![1785919961410](image/DaVinci_Rte/1785919961410.png)
-<!-- ![20260805165235](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805165235.png) -->
 Service Ports
 ![1785920021249](image/DaVinci_Rte/1785920021249.png)
-<!-- ![20260805165344](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805165344.png) -->
 
 StartApp
 Service Ports
 ![1785920069592](image/DaVinci_Rte/1785920069592.png)
-<!-- ![20260805165433](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805165433.png) -->
 ### 2.3 事件与报警
 
 - 1 ms 事件 `Rte_Ev_Cyclic_MotorTask_0_1ms` ↔ 报警 `Rte_Al_TE_MotorTask_0_1ms`（SystemTimer1，Core1）；
@@ -86,7 +78,6 @@ Service Ports
 📷 图片位 R3：RTE 事件/报警对应截图。
 
 ![1785919802633](image/DaVinci_Rte/1785919802633.png)
-<!-- ![20260805165007](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805165007.png) -->
 ---
 
 ## 3. 与其它模块的引用关系

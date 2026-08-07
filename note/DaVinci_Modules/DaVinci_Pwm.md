@@ -28,7 +28,6 @@ BSW Editor → 模块树选择 `Pwm`（`Pwm_17_GtmCcu6`）→ `PwmChannelConfigS
 
 📷 图片位 W1：模块树选中 `Pwm` 的截图。
 ![1785912817307](image/DaVinci_Pwm/1785912817307.png)
-<!-- ![20260805145350](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805145350.png) -->
 
 
 ### 2.2 通道配置
@@ -51,17 +50,13 @@ BSW Editor → 模块树选择 `Pwm`（`Pwm_17_GtmCcu6`）→ `PwmChannelConfigS
 
 📷 图片位 W2：4 个 `PwmChannel` 列表截图。
 ![1785912903064](image/DaVinci_Pwm/1785912903064.png)
-<!-- ![20260805145506](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805145506.png) -->
 
 ![1785912949066](image/DaVinci_Pwm/1785912949066.png)
-<!-- ![20260805145552](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805145552.png) -->
 📷 图片位 W3：某个通道的 `GtmTimerOutputModuleConfiguration` 截图。
 
 ![1785912984715](image/DaVinci_Pwm/1785912984715.png)
-<!-- ![20260805145639](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805145639.png) -->
 
 ![1785913026419](image/DaVinci_Pwm/1785913026419.png)
-<!-- ![20260805145710](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805145710.png) -->
 
 ### 2.3 公共参数
 
@@ -78,7 +73,6 @@ BSW Editor → 模块树选择 `Pwm`（`Pwm_17_GtmCcu6`）→ `PwmChannelConfigS
 
 
 ![1785913075651](image/DaVinci_Pwm/1785913075651.png)
-<!-- ![20260805145800](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805145800.png) -->
 ---
 
 ## 3. 与其它模块的引用关系

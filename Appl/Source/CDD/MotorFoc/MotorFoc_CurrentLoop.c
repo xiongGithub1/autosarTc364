@@ -94,6 +94,22 @@ static float32 MotorFoc_CurrentLoopRawIuA = 0.0F;
 static float32 MotorFoc_CurrentLoopRawIvA = 0.0F;
 static float32 MotorFoc_CurrentLoopRawIwA = 0.0F;
 
+/* ===========================================================================
+ * ATOM0 中心对齐 PWM 影子寄存器换算与写入
+ * ---------------------------------------------------------------------------
+ * ATOM CH 寄存器（IfxGtm_reg.h / IfxGtm_regdef.h）：
+ *   CM0/CM1：当前比较值（硬件运行）；SR0/SR1：影子比较值（软件写）
+ *   影子更新时机：在 ATOM 通道的更新点由 AGC 统一触发；
+ *   ATOM0_AGC_GLB_CTRL.UPEN_CTRLx[2bit] 控制每通道是否允许影子更新：
+ *     00=不改变，01=禁止更新，10=允许更新，11=保留
+ *   （UPEN_CTRL0[17:16]=CH0，UPEN_CTRL1[19:18]=CH1，UPEN_CTRL2[21:20]=CH2，
+ *     UPEN_CTRL3[23:22]=CH3，…）
+ * ---------------------------------------------------------------------------
+ * 把占空比 scaledDuty ∈ [0, Tpwm] 换算成中心对齐的 SR0/SR1：
+ *   SR0=(Tpwm-duty)/2，SR1=SR0+duty → 高电平在周期中点两侧对称展开。
+ *   边界：duty=0 → SR0=0xFFFFFF/SR1=0（整周期低）；
+ *         duty=Tpwm → SR0=0/SR1=0xFFFFFF（整周期高）。
+ * =========================================================================== */
 static void MotorFoc_CalcCenterAlignedSr(uint32 scaledDuty,
                                          uint32* sr0,
                                          uint32* sr1)
@@ -118,10 +134,11 @@ static void MotorFoc_CalcCenterAlignedSr(uint32 scaledDuty,
   }
 }
 
-/* Direct ATOM0 CH1/2/3 shadow update (center-aligned, coherent). */
-/* 直接写 ATOM0 CH1/2/3 影子寄存器（中心对齐，三相一致更新）：
-   - scaledDuty ∈ [0, Tpwm]；SR0/SR1 对称分布于周期两侧
-   - 通过 AGC GLB_CTRL UPEN 先禁止、后使能 CH1/2/3 更新，保证三相同时生效 */
+
+/* 直接写 ATOM0 CH1/2/3 影子寄存器（中心对齐、三相一致更新）：
+ *   1) AGC GLB_CTRL.UPEN_CTRL1/2 = 01 → 禁止 CH1/CH2 影子更新（写 SR 不生效）
+ *   2) 写入 CH1/2/3 的 SR0/SR1 影子比较值
+ *   3) AGC GLB_CTRL.UPEN_CTRL1/2 = 10 → 允许更新，在 ATOM 更新点三相同步生效 */
 static void MotorFoc_ApplyAtomDuties(uint32 scaledDutyU,
                                      uint32 scaledDutyV,
                                      uint32 scaledDutyW)
@@ -137,13 +154,16 @@ static void MotorFoc_ApplyAtomDuties(uint32 scaledDutyU,
   MotorFoc_CalcCenterAlignedSr(scaledDutyV, &sr0v, &sr1v);
   MotorFoc_CalcCenterAlignedSr(scaledDutyW, &sr0w, &sr1w);
 
+  /* UPEN_CTRL1[19:18]=01、UPEN_CTRL2[21:20]=01：先禁止 CH1/CH2 更新。 */
   GTM_ATOM0_AGC_GLB_CTRL.U = MOTORFOC_PWM_ATOM_UPEN_DIS_CH123;
+  /* 写影子比较值（本拍不生效，等 UPEN 使能后的更新点）。 */
   GTM_ATOM0_CH1_SR0.U = sr0u;
   GTM_ATOM0_CH1_SR1.U = sr1u;
   GTM_ATOM0_CH2_SR0.U = sr0v;
   GTM_ATOM0_CH2_SR1.U = sr1v;
   GTM_ATOM0_CH3_SR0.U = sr0w;
   GTM_ATOM0_CH3_SR1.U = sr1w;
+  /* UPEN_CTRL1[19:18]=10、UPEN_CTRL2[21:20]=10：允许更新，三相同步生效。 */
   GTM_ATOM0_AGC_GLB_CTRL.U = MOTORFOC_PWM_ATOM_UPEN_EN_CH123;
 }
 
@@ -586,7 +606,8 @@ static uint8 MotorFoc_CheckUvRecovered(MotorFoc_ContextType* ctx)
 /* 六扇区 SVPWM：αβ 电压 → 中心对齐比较值 tCmp ∈ [0, Tpwm/2]。
    - 先按母线电压限制矢量模长（√3/3 × vdc × pwmMinTimes）
    - vdc 过低(<MOTORFOC_VDC_SVPWM_MIN_V)时输出中性占空比并返回，避免除零
-   - 零矢量时保持 25% 半周期（50% 占空比，零平均电压） */static void MotorFoc_DoSvpwm(MotorFoc_ContextType* ctx)
+   - 零矢量时保持 25% 半周期（50% 占空比，零平均电压） */
+static void MotorFoc_DoSvpwm(MotorFoc_ContextType* ctx)
 {
   uint8 sectorCode = 0U;
   float32 sA;

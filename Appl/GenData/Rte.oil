@@ -113,7 +113,7 @@
       AUTOSTART = FALSE:"@RO@";
       EVENT = Rte_Ev_Cyclic2_Default_BSW_ASync_Task_10ms_0_10ms:"@RO@";
       EVENT = Rte_Ev_Cyclic2_Default_BSW_ASync_Task_10ms_0_20ms:"@RO@";
-      EVENT = Rte_Ev_Run_Com_Com_MainFunctionTx_ComMainFunctionTx:"@RO@";
+      EVENT = Rte_Ev_Cyclic2_Default_BSW_ASync_Task_10ms_0_5ms:"@RO@";
    }:"@RO@@NR@";
 
    ALARM Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_10ms {
@@ -136,12 +136,12 @@
       AUTOSTART = FALSE:"@RO@";
    }:"@RO@@NR@";
 
-   ALARM Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx {
+   ALARM Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_5ms {
       COUNTER = SystemTimer;
       ACTION = SETEVENT
       {
          TASK = Default_BSW_ASync_Task_10ms;
-         EVENT = Rte_Ev_Run_Com_Com_MainFunctionTx_ComMainFunctionTx;
+         EVENT = Rte_Ev_Cyclic2_Default_BSW_ASync_Task_10ms_0_5ms;
       }:"@ROC@";
       AUTOSTART = FALSE:"@RO@";
    }:"@RO@@NR@";
@@ -183,11 +183,11 @@
       MASK = AUTO;
    }:"@ROC@@NR@";
 
-   EVENT Rte_Ev_Cyclic_MotorTask_0_1ms {
+   EVENT Rte_Ev_Cyclic2_Default_BSW_ASync_Task_10ms_0_5ms {
       MASK = AUTO;
    }:"@ROC@@NR@";
 
-   EVENT Rte_Ev_Run_Com_Com_MainFunctionTx_ComMainFunctionTx {
+   EVENT Rte_Ev_Cyclic_MotorTask_0_1ms {
       MASK = AUTO;
    }:"@ROC@@NR@";
 
@@ -245,6 +245,6 @@
       TASK = Default_BSW_ASync_Task_10ms;
       ALARM = Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_10ms;
       ALARM = Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_20ms;
-      ALARM = Rte_Al_TE_Com_Com_MainFunctionTx_ComMainFunctionTx;
+      ALARM = Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_5ms;
       CORE = 0;
   };

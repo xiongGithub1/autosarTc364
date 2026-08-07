@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Cfg.h
- *   Generation Time: 2024-08-03 19:52:21
+ *   Generation Time: 2026-08-06 18:44:41
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -146,7 +146,7 @@
 
 #define ECUM_BSWM_CONFIG_POINTER                                      BswM_Config_Ptr
 #define ECUM_SCHM_CONFIG_POINTER                                      
-#define ECUM_DEM_CONFIG_POINTER                                       
+#define ECUM_DEM_CONFIG_POINTER                                       Dem_Config_Ptr
 
 typedef volatile uint32 EcuM_CoreStatusType;
 typedef EcuM_CoreStatusType *EcuM_CoreStatusArrayType;
@@ -201,7 +201,7 @@ typedef EcuM_CoreStatusType *EcuM_CoreStatusArrayType;
 #define ECUM_COMMCHANNELS                                                                           STD_ON
 #define ECUM_COMMPNCS                                                                               STD_OFF  /**< Deactivateable: 'EcuM_ComMPNCs' Reason: 'the struct is deactivated because all elements are deactivated.' */
 #define ECUM_PNCOFCOMMPNCS                                                                          STD_OFF  /**< Deactivateable: 'EcuM_ComMPNCs.PNC' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
-#define ECUM_COMM_COMALLOWEDLIST                                                                    STD_OFF  /**< Deactivateable: 'EcuM_ComM_ComAllowedList' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
+#define ECUM_COMM_COMALLOWEDLIST                                                                    STD_ON
 #define ECUM_CORESTATUS                                                                             STD_ON
 #define ECUM_DEFAULTAPPMODE                                                                         STD_ON
 #define ECUM_DEFAULTSHUTDOWNMODE                                                                    STD_ON
@@ -239,6 +239,7 @@ typedef EcuM_CoreStatusType *EcuM_CoreStatusArrayType;
 #define ECUM_RUNREQUESTCOUNTER                                                                      STD_ON
 #define ECUM_SELFRUNREQUESTTIMEOUT                                                                  STD_ON
 #define ECUM_SIZEOFCOMMCHANNELS                                                                     STD_ON
+#define ECUM_SIZEOFCOMM_COMALLOWEDLIST                                                              STD_ON
 #define ECUM_SIZEOFCORESTATUS                                                                       STD_ON
 #define ECUM_SIZEOFDRIVERINITONE                                                                    STD_ON
 #define ECUM_SIZEOFDRIVERINITTHREE                                                                  STD_ON
@@ -266,6 +267,7 @@ typedef EcuM_CoreStatusType *EcuM_CoreStatusArrayType;
 #define ECUM_VALIDATIONTIMEOFWAKEUPSOURCELIST                                                       STD_OFF  /**< Deactivateable: 'EcuM_WakeupSourceList.ValidationTime' Reason: 'the value of EcuM_ValidationTimeOfWakeupSourceList is always '0' due to this, the array is deactivated.' */
 #define ECUM_PCCONFIG                                                                               STD_ON
 #define ECUM_COMMCHANNELSOFPCCONFIG                                                                 STD_ON
+#define ECUM_COMM_COMALLOWEDLISTOFPCCONFIG                                                          STD_ON
 #define ECUM_CORESTATUSOFPCCONFIG                                                                   STD_ON
 #define ECUM_DEFAULTAPPMODEOFPCCONFIG                                                               STD_ON
 #define ECUM_DEFAULTSHUTDOWNMODEOFPCCONFIG                                                          STD_ON
@@ -289,6 +291,7 @@ typedef EcuM_CoreStatusType *EcuM_CoreStatusArrayType;
 #define ECUM_RUNREQUESTCOUNTEROFPCCONFIG                                                            STD_ON
 #define ECUM_SELFRUNREQUESTTIMEOUTOFPCCONFIG                                                        STD_ON
 #define ECUM_SIZEOFCOMMCHANNELSOFPCCONFIG                                                           STD_ON
+#define ECUM_SIZEOFCOMM_COMALLOWEDLISTOFPCCONFIG                                                    STD_ON
 #define ECUM_SIZEOFCORESTATUSOFPCCONFIG                                                             STD_ON
 #define ECUM_SIZEOFDRIVERINITONEOFPCCONFIG                                                          STD_ON
 #define ECUM_SIZEOFDRIVERINITTHREEOFPCCONFIG                                                        STD_ON
@@ -335,6 +338,7 @@ typedef EcuM_CoreStatusType *EcuM_CoreStatusArrayType;
   \{
 */ 
 #define ECUM_ISDEF_COMMCHANNELS                                                                     STD_ON
+#define ECUM_ISDEF_COMM_COMALLOWEDLIST                                                              STD_ON
 #define ECUM_ISDEF_CORESTATUS                                                                       STD_OFF
 #define ECUM_ISDEF_FUNCTIONOFDRIVERINITONE                                                          STD_OFF
 #define ECUM_ISDEF_FUNCTIONOFDRIVERINITTHREE                                                        STD_OFF
@@ -343,6 +347,7 @@ typedef EcuM_CoreStatusType *EcuM_CoreStatusArrayType;
 #define ECUM_ISDEF_ECUMPARTITIONOFPARTITIONDATA                                                     STD_ON
 #define ECUM_ISDEF_CHANNELOFWAKEUPSOURCELIST                                                        STD_OFF
 #define ECUM_ISDEF_COMMCHANNELSOFPCCONFIG                                                           STD_ON
+#define ECUM_ISDEF_COMM_COMALLOWEDLISTOFPCCONFIG                                                    STD_ON
 #define ECUM_ISDEF_CORESTATUSOFPCCONFIG                                                             STD_ON
 #define ECUM_ISDEF_DRIVERINITONEOFPCCONFIG                                                          STD_ON
 #define ECUM_ISDEF_DRIVERINITTHREEOFPCCONFIG                                                        STD_ON
@@ -365,6 +370,7 @@ typedef EcuM_CoreStatusType *EcuM_CoreStatusArrayType;
   \{
 */ 
 #define ECUM_EQ2_COMMCHANNELS                                                                       0u
+#define ECUM_EQ2_COMM_COMALLOWEDLIST                                                                0u
 #define ECUM_EQ2_CORESTATUS                                                                         
 #define ECUM_EQ2_FUNCTIONOFDRIVERINITONE                                                            
 #define ECUM_EQ2_FUNCTIONOFDRIVERINITTHREE                                                          
@@ -373,6 +379,7 @@ typedef EcuM_CoreStatusType *EcuM_CoreStatusArrayType;
 #define ECUM_EQ2_ECUMPARTITIONOFPARTITIONDATA                                                       TRUE
 #define ECUM_EQ2_CHANNELOFWAKEUPSOURCELIST                                                          
 #define ECUM_EQ2_COMMCHANNELSOFPCCONFIG                                                             EcuM_ComMChannels
+#define ECUM_EQ2_COMM_COMALLOWEDLISTOFPCCONFIG                                                      EcuM_ComM_ComAllowedList
 #define ECUM_EQ2_CORESTATUSOFPCCONFIG                                                               EcuM_CoreStatus
 #define ECUM_EQ2_DRIVERINITONEOFPCCONFIG                                                            EcuM_DriverInitOne
 #define ECUM_EQ2_DRIVERINITTHREEOFPCCONFIG                                                          EcuM_DriverInitThree
@@ -457,6 +464,9 @@ typedef P2FUNC ( void, ECUM_CODE, EcuM_DriverFuncType)( void );
 /**   \brief  value based type definition for EcuM_SizeOfComMChannels */
 typedef uint8 EcuM_SizeOfComMChannelsType;
 
+/**   \brief  value based type definition for EcuM_SizeOfComM_ComAllowedList */
+typedef uint8 EcuM_SizeOfComM_ComAllowedListType;
+
 /**   \brief  value based type definition for EcuM_SizeOfCoreStatus */
 typedef uint8 EcuM_SizeOfCoreStatusType;
 
@@ -494,6 +504,9 @@ typedef uint8 EcuM_SizeOfWakeupSourceListType;
 /**   \brief  type used to iterate EcuM_ComMChannels */
 typedef uint8_least EcuM_ComMChannelsIterType;
 
+/**   \brief  type used to iterate EcuM_ComM_ComAllowedList */
+typedef uint8_least EcuM_ComM_ComAllowedListIterType;
+
 /**   \brief  type used to iterate EcuM_CoreStatus */
 typedef uint8_least EcuM_CoreStatusIterType;
 
@@ -526,6 +539,9 @@ typedef uint8_least EcuM_WakeupSourceListIterType;
 */ 
 /**   \brief  value based type definition for EcuM_ComMChannels */
 typedef uint8 EcuM_ComMChannelsType;
+
+/**   \brief  value based type definition for EcuM_ComM_ComAllowedList */
+typedef uint8 EcuM_ComM_ComAllowedListType;
 
 /**   \brief  value based type definition for EcuM_DefaultAppMode */
 typedef uint32 EcuM_DefaultAppModeType;
@@ -629,6 +645,9 @@ typedef struct sEcuM_WakeupSourceListType
 */ 
 /**   \brief  type used to point to EcuM_ComMChannels */
 typedef P2CONST(EcuM_ComMChannelsType, TYPEDEF, ECUM_CONST) EcuM_ComMChannelsPtrType;
+
+/**   \brief  type used to point to EcuM_ComM_ComAllowedList */
+typedef P2CONST(EcuM_ComM_ComAllowedListType, TYPEDEF, ECUM_CONST) EcuM_ComM_ComAllowedListPtrType;
 
 /**   \brief  type used to point to EcuM_CoreStatus */
 typedef P2CONST(EcuM_CoreStatusArrayType, TYPEDEF, ECUM_CONST) EcuM_CoreStatusPtrType;

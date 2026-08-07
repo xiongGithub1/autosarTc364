@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: ComStack_Cfg.h
- *   Generation Time: 2024-08-03 19:52:20
+ *   Generation Time: 2026-08-05 21:47:39
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -62,7 +62,7 @@
  *********************************************************************************************************************/
 typedef uint8 PduIdType;   /**< /ActiveEcuC/EcuC/EcucPduCollection[0:PduIdTypeEnum] */
 
-typedef uint8 PduLengthType;   /**< /ActiveEcuC/EcuC/EcucPduCollection[0:PduLengthTypeEnum] */
+typedef uint16 PduLengthType;   /**< /ActiveEcuC/EcuC/EcucPduCollection[0:PduLengthTypeEnum] */
 
 /**********************************************************************************************************************
  *  GLOBAL DATA PROTOTYPES

@@ -30,7 +30,6 @@ BSW Editor → 模块树选择 `Port` → `PortConfigSet`。工程按 `PortConta
 
 
 ![1785911204138](image/DaVinci_Port/1785911204138.png)
-<!-- ![20260805142655](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805142655.png) -->
 
 ### 2.2 电机相关引脚参数表
 
@@ -71,63 +70,45 @@ BSW Editor → 模块树选择 `Port` → `PortConfigSet`。工程按 `PortConta
 📷 图片位 P2：9183 三相 PWM + 控制脚引脚（P00/P02 组）截图。
 p00
 ![1785911373602](image/DaVinci_Port/1785911373602.png)
-<!-- ![20260805142942](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805142942.png) -->
 ![1785911421113](image/DaVinci_Port/1785911421113.png)
-<!-- ![20260805143302](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805143302.png) -->
 ![1785911524586](image/DaVinci_Port/1785911524586.png)
-<!-- ![20260805143213](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805143213.png) -->
 p02
 ![1785911672250](image/DaVinci_Port/1785911672250.png)
-<!-- ![20260805143436](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805143436.png) -->
 ![1785911728241](image/DaVinci_Port/1785911728241.png)
 
-<!-- ![20260805143552](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805143552.png) -->
 
 ![1785911779785](image/DaVinci_Port/1785911779785.png)
-<!-- ![20260805143624](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805143624.png) -->
 
 📷 图片位 P3：QSPI2/3 与 SBC（P14/P15/P22/P03 组）截图。
 tle35584 SPI Port:
 ![1785912040072](image/DaVinci_Port/1785912040072.png)
-<!-- ![20260805144047](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805144047.png) -->
 
 ![1785912078985](image/DaVinci_Port/1785912078985.png)
-<!-- ![20260805144124](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805144124.png) -->
 
 ![1785912122474](image/DaVinci_Port/1785912122474.png)
-<!-- ![20260805144206](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805144206.png) -->
 
 tle5012 SPI Port And Can2 Port:
 
 ![1785912210531](image/DaVinci_Port/1785912210531.png)
-<!-- ![20260805144333](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805144333.png) -->
 
 ![1785912235380](image/DaVinci_Port/1785912235380.png)
-<!-- ![20260805144359](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805144359.png) -->
 
 ![1785912276546](image/DaVinci_Port/1785912276546.png)
-<!-- ![20260805144429](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805144429.png) -->
 
 9183 SPI port:
 ![1785912518433](image/DaVinci_Port/1785912518433.png)
-<!-- ![20260805144842](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805144842.png) -->
 
 ![1785912559228](image/DaVinci_Port/1785912559228.png)
-<!-- ![20260805144925](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805144925.png) -->
 📷 图片位 P4：CAN 收发器与 LED/测试点（P20/P33/P15）截图。
 
 can1 Port:
 ![1785912431349](image/DaVinci_Port/1785912431349.png)
-<!-- ![20260805144715](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805144715.png) -->
 
 ![1785912478262](image/DaVinci_Port/1785912478262.png)
-<!-- ![20260805144805](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805144805.png) -->
 Led Port:
 ![1785912614411](image/DaVinci_Port/1785912614411.png)
-<!-- ![20260805145019](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805145019.png) -->
 
 ![1785912695361](image/DaVinci_Port/1785912695361.png)
-<!-- ![20260805145158](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805145158.png) -->
 ---
 
 ## 3. 与其它模块的引用关系

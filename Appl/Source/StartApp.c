@@ -46,7 +46,6 @@
 #include "EcuM_Cfg.h"
 #include "ComM.h"
 #include "ComM_Cfg.h"
-#include "Dio.h"
 #include "Dio_Cfg.h"
 #include "Rte_EcuM_Type.h"
 uint32 StartApp_Cyclic1msCounter = 0U;
@@ -79,7 +78,6 @@ FUNC(void, StartApp_CODE) StartApp_Cyclic1000ms(void) /* PRQA S 0624, 3206 */ /*
  * Symbol: StartApp_Cyclic1000ms
  *********************************************************************************************************************/
 
-	Dio_FlipChannel(DioConf_DioChannel_DioChannel_led2);
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -111,7 +109,7 @@ FUNC(void, StartApp_CODE) StartApp_Cyclic10ms(void) /* PRQA S 0624, 3206 */ /* M
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
  * Symbol: StartApp_Cyclic10ms
  *********************************************************************************************************************/
-	Dio_FlipChannel(DioConf_DioChannel_DioChannel_test2);
+
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -178,7 +176,7 @@ FUNC(void, StartApp_CODE) StartApp_Cyclic250ms(void) /* PRQA S 0624, 3206 */ /* 
  * Symbol: StartApp_Cyclic500ms
  *********************************************************************************************************************/
 
- Dio_FlipChannel(DioConf_DioChannel_DioChannel_led1);
+
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!

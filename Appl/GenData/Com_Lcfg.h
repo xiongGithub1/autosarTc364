@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Com_Lcfg.h
- *   Generation Time: 2024-08-04 12:44:11
+ *   Generation Time: 2026-08-05 21:47:42
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -1077,7 +1077,7 @@
   \{
 */ 
 #define COM_MAX_CYCLETIMECNT                                                                        255u
-#define COM_MAX_HANDLERXPDUDEFERRED                                                                 255u
+#define COM_MAX_HANDLERXPDUDEFERRED                                                                 65535u
 #define COM_MAX_RXDEFPDUBUFFER                                                                      255u
 #define COM_MAX_RXIPDUGROUPISRLOCKCOUNTER                                                           65535u
 #define COM_MAX_RXMAINFUNCTIONPROCESSINGISRLOCKCOUNTER                                              65535u
@@ -1085,7 +1085,7 @@
 #define COM_MAX_TXBUFFER                                                                            255u
 #define COM_MAX_TXIPDUGROUPISRLOCKCOUNTER                                                           65535u
 #define COM_MAX_TXPROCESSINGISRLOCKCOUNTER                                                          65535u
-#define COM_MAX_TXSDULENGTH                                                                         255u
+#define COM_MAX_TXSDULENGTH                                                                         65535u
 /** 
   \}
 */ 
@@ -4329,12 +4329,12 @@ extern VAR(Com_CyclicSendRequestUType, COM_VAR_NO_INIT) Com_CyclicSendRequest;  
   \var    Com_HandleRxPduDeferred
   \brief  Array indicating received Rx I-PDUs to be processed deferred within the next call of Com_MainfunctionRx().
 */ 
-#define COM_START_SEC_VAR_NO_INIT_8
+#define COM_START_SEC_VAR_NO_INIT_16
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
 extern VAR(Com_HandleRxPduDeferredUType, COM_VAR_NO_INIT) Com_HandleRxPduDeferred;  /* PRQA S 0759 */  /* MD_CSL_Union */
-#define COM_STOP_SEC_VAR_NO_INIT_8
+#define COM_STOP_SEC_VAR_NO_INIT_16
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
@@ -4530,12 +4530,12 @@ extern VAR(Com_TxProcessingISRLockCounterUType, COM_VAR_NO_INIT) Com_TxProcessin
   \var    Com_TxSduLength
   \brief  This var Array contains the Com Ipdu Length.
 */ 
-#define COM_START_SEC_VAR_NO_INIT_8
+#define COM_START_SEC_VAR_NO_INIT_16
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
 extern VAR(Com_TxSduLengthType, COM_VAR_NO_INIT) Com_TxSduLength[2];
-#define COM_STOP_SEC_VAR_NO_INIT_8
+#define COM_STOP_SEC_VAR_NO_INIT_16
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */

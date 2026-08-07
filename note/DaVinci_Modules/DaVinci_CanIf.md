@@ -34,7 +34,6 @@ BSW Editor → 模块树选择 `CanIf` → Tx/Rx PDU 列表。
 📷 图片位 F1：模块树选中 `CanIf` 的截图。
 
 ![1785917839327](image/DaVinci_CanIf/1785917839327.png)
-<!-- ![20260805161712](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805161712.png) -->
 
 ### 2.2 PDU 配置
 
@@ -49,24 +48,18 @@ Tx 缓冲：`CHNL_0fb271d2`（size 2、最大 PDU 长度 32、`PRIO_BY_CANID`）
 📷 图片位 F2：Tx/Rx PDU 列表截图。
 Rx PDU
 ![1785917887571](image/DaVinci_CanIf/1785917887571.png)
-<!-- ![20260805161758](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805161758.png) -->
 
 ![1785917904914](image/DaVinci_CanIf/1785917904914.png)
-<!-- ![20260805161829](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805161829.png) -->
 
 Tx PDU:
 ![1785917963835](image/DaVinci_CanIf/1785917963835.png)
-<!-- ![20260805161908](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805161908.png) -->
 
 ![1785917978847](image/DaVinci_CanIf/1785917978847.png)
-<!-- ![20260805161943](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805161943.png) -->
 
 ![1785918011808](image/DaVinci_CanIf/1785918011808.png)
-<!-- ![20260805162015](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805162015.png) -->
 📷 图片位 F3：Tx 缓冲通道 `CHNL_0fb271d2` 截图。
 
 ![1785918089930](image/DaVinci_CanIf/1785918089930.png)
-<!-- ![20260805162133](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805162133.png) -->
 
 ---
 

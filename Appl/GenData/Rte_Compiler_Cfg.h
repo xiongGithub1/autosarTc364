@@ -263,6 +263,183 @@
  *********************************************************************************************************************/
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
+ * Symbol: RTE_DCM_APPL
+ *********************************************************************************************************************/
+
+/* used for references on application variables */
+# define RTE_DCM_APPL_VAR
+
+/* used for references on application data (constants or variables) */
+# define RTE_DCM_APPL_DATA
+
+/* used for references on application functions */
+# define RTE_DCM_APPL_CODE
+
+/* used for references on application constants */
+# define RTE_DCM_APPL_CONST
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
+ * Symbol: Dcm_CODE
+ *********************************************************************************************************************/
+
+/* used for SWC specific code */
+# define Dcm_CODE
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
+ * Symbol: Dcm_CONST
+ *********************************************************************************************************************/
+
+/* used for global or static SWC specific constants */
+# define Dcm_CONST
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
+ * Symbol: Dcm_VAR
+ *********************************************************************************************************************/
+
+/* used for all global or static SWC specific variables that are not initialized by the startup code of the compiler */
+# define Dcm_VAR_NOINIT
+
+/* used for global or static SWC specific variables that are initialized by the startup code of the compiler */
+# define Dcm_VAR_INIT
+
+/* used for global or static SWC specific variables that are initialized with zero by the startup code of the compiler */
+# define Dcm_VAR_ZERO_INIT
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
+ * Symbol: RTE_DEMMASTER_0_APPL
+ *********************************************************************************************************************/
+
+/* used for references on application variables */
+# define RTE_DEMMASTER_0_APPL_VAR
+
+/* used for references on application data (constants or variables) */
+# define RTE_DEMMASTER_0_APPL_DATA
+
+/* used for references on application functions */
+# define RTE_DEMMASTER_0_APPL_CODE
+
+/* used for references on application constants */
+# define RTE_DEMMASTER_0_APPL_CONST
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
+ * Symbol: DemMaster_0_CODE
+ *********************************************************************************************************************/
+
+/* used for SWC specific code */
+# define DemMaster_0_CODE
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
+ * Symbol: DemMaster_0_CONST
+ *********************************************************************************************************************/
+
+/* used for global or static SWC specific constants */
+# define DemMaster_0_CONST
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
+ * Symbol: DemMaster_0_VAR
+ *********************************************************************************************************************/
+
+/* used for all global or static SWC specific variables that are not initialized by the startup code of the compiler */
+# define DemMaster_0_VAR_NOINIT
+
+/* used for global or static SWC specific variables that are initialized by the startup code of the compiler */
+# define DemMaster_0_VAR_INIT
+
+/* used for global or static SWC specific variables that are initialized with zero by the startup code of the compiler */
+# define DemMaster_0_VAR_ZERO_INIT
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
+ * Symbol: RTE_DEMSATELLITE_0_APPL
+ *********************************************************************************************************************/
+
+/* used for references on application variables */
+# define RTE_DEMSATELLITE_0_APPL_VAR
+
+/* used for references on application data (constants or variables) */
+# define RTE_DEMSATELLITE_0_APPL_DATA
+
+/* used for references on application functions */
+# define RTE_DEMSATELLITE_0_APPL_CODE
+
+/* used for references on application constants */
+# define RTE_DEMSATELLITE_0_APPL_CONST
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
+ * Symbol: DemSatellite_0_CODE
+ *********************************************************************************************************************/
+
+/* used for SWC specific code */
+# define DemSatellite_0_CODE
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
+ * Symbol: DemSatellite_0_CONST
+ *********************************************************************************************************************/
+
+/* used for global or static SWC specific constants */
+# define DemSatellite_0_CONST
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
+ * Symbol: DemSatellite_0_VAR
+ *********************************************************************************************************************/
+
+/* used for all global or static SWC specific variables that are not initialized by the startup code of the compiler */
+# define DemSatellite_0_VAR_NOINIT
+
+/* used for global or static SWC specific variables that are initialized by the startup code of the compiler */
+# define DemSatellite_0_VAR_INIT
+
+/* used for global or static SWC specific variables that are initialized with zero by the startup code of the compiler */
+# define DemSatellite_0_VAR_ZERO_INIT
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
  * Symbol: RTE_DET_APPL
  *********************************************************************************************************************/
 

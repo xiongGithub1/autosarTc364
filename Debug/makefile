@@ -23,9 +23,12 @@ all :
 -include "BSW364\Can\Implementation\subdir.mk"
 -include "BSW364\CanIf\Implementation\subdir.mk"
 -include "BSW364\CanSM\Implementation\subdir.mk"
+-include "BSW364\CanTp\Implementation\subdir.mk"
 -include "BSW364\CanXcp\Implementation\subdir.mk"
 -include "BSW364\Com\Implementation\subdir.mk"
 -include "BSW364\ComM\Implementation\subdir.mk"
+-include "BSW364\Dcm\Implementation\subdir.mk"
+-include "BSW364\Dem\Implementation\subdir.mk"
 -include "BSW364\Det\Implementation\subdir.mk"
 -include "BSW364\E2EXf\Implementation\subdir.mk"
 -include "BSW364\EcuM\Implementation\subdir.mk"
@@ -44,6 +47,7 @@ all :
 -include "MCAL364\Fee\ssc\src\subdir.mk"
 -include "MCAL364\Fls_17_Dmu\ssc\src\subdir.mk"
 -include "MCAL364\Irq\Adc_Irq\subdir.mk"
+-include "MCAL364\Irq\AscLin_Irq\subdir.mk"
 -include "MCAL364\Irq\Dma_Irq\subdir.mk"
 -include "MCAL364\Irq\Spi_Irq\subdir.mk"
 -include "MCAL364\Irq\ssc\src\subdir.mk"
@@ -52,6 +56,7 @@ all :
 -include "MCAL364\Port\ssc\src\subdir.mk"
 -include "MCAL364\Pwm_17_GtmCcu6\ssc\src\subdir.mk"
 -include "MCAL364\Spi\ssc\src\subdir.mk"
+-include "MCAL364\Uart\ssc\src\subdir.mk"
 -include "..\makefile.defs"
 
 PCP_FILES :=
@@ -72,6 +77,13 @@ $(EXT_LIBRARIES) : .dummy
 
 GENERATED_FILES += "last364.elf" "last364*.sre" "last364*.hex" "last364.map*" "last364.mdf" ".last364.elf.opt" ".last364.elf.d"
 -include "..\makefile.targets"
+
+
+all : cleanup_cache
+
+cleanup_cache: $(OBJ_FILES)
+	@echo Cleaning up compiler cache
+	@"${PRODDIR}\bin\expiretc" --days=7 "E:\workFiles\TC367\TC367\workspace\last364\.cache"
 
 
 clean : ".clean.opt"

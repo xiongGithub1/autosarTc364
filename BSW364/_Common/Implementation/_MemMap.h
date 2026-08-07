@@ -1042,6 +1042,11 @@
 # define START_SEC_VAR_NOINIT_UNSPECIFIED
 #endif
 
+#if defined (DEM_START_SEC_0_VAR_ZERO_INIT_UNSPECIFIED)
+# undef DEM_START_SEC_0_VAR_ZERO_INIT_UNSPECIFIED                              /* PRQA S 0841 */ /* MD_MSR_Undef */
+# define START_SEC_VAR_ZERO_INIT_UNSPECIFIED
+#endif
+
 #if defined (DEM_START_SEC_CONST_SAVED_RECOVERY_ZONE0)
 # undef DEM_START_SEC_CONST_SAVED_RECOVERY_ZONE0                               /* PRQA S 0841 */ /* MD_MSR_Undef */
 # define START_SEC_CONST_UNSPECIFIED
@@ -1185,6 +1190,11 @@
 
 #if defined (DEM_STOP_SEC_VAR_SAVED_ZONE0_UNSPECIFIED)
 # undef DEM_STOP_SEC_VAR_SAVED_ZONE0_UNSPECIFIED                               /* PRQA S 0841 */ /* MD_MSR_Undef */
+# define STOP_SEC_VAR
+#endif
+
+#if defined (DEM_STOP_SEC_0_VAR_ZERO_INIT_UNSPECIFIED)
+# undef DEM_STOP_SEC_0_VAR_ZERO_INIT_UNSPECIFIED                               /* PRQA S 0841 */ /* MD_MSR_Undef */
 # define STOP_SEC_VAR
 #endif
 

@@ -33,7 +33,6 @@ BSW Editor → 模块树选择 `Irq`，按外设分组配置（`IrqAdcConfig_0`�
 
 
 ![1785915155604](image/DaVinci_Irq/1785915155604.png)
-<!-- ![20260805153240](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805153240.png) -->
 ### 2.2 中断配置表
 
 | 中断 | 配置项 | 当前值 |
@@ -48,53 +47,38 @@ BSW Editor → 模块树选择 `Irq`，按外设分组配置（`IrqAdcConfig_0`�
 📷 图片位 I2：`IrqAdcConfig_0`（ADC0/ADC8 SR0）截图。
 adc0
 ![1785915219645](image/DaVinci_Irq/1785915219645.png)
-<!-- ![20260805153343](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805153343.png) -->
 
 ![1785915257773](image/DaVinci_Irq/1785915257773.png)
-<!-- ![20260805153422](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805153422.png) -->
 
 ![1785915277511](image/DaVinci_Irq/1785915277511.png)
-<!-- ![20260805153441](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805153441.png) -->
 
 adc2和adc3都是通过adc0中断触发所以这些都是原始值
 ![1785915326270](image/DaVinci_Irq/1785915326270.png)
-<!-- ![20260805153602](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805153602.png) -->
 
 ![1785915385422](image/DaVinci_Irq/1785915385422.png)
-<!-- ![20260805153629](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805153629.png) -->
 ![1785915404589](image/DaVinci_Irq/1785915404589.png)
-<!-- ![20260805153648](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805153648.png) -->
 
 📷 图片位 I3：`IrqStmConfig_0` / `IrqCanConfig_0` 截图。
 IrqStm0Config：
 ![1785915619542](image/DaVinci_Irq/1785915619542.png)
-<!-- ![20260805154027](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805154027.png) -->
 
 ![1785915644053](image/DaVinci_Irq/1785915644053.png)
-<!-- ![20260805154047](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805154047.png) -->
 
 ![1785915665549](image/DaVinci_Irq/1785915665549.png)
-<!-- ![20260805154109](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805154109.png) -->
 IrqStm1Config：
 ![1785915693135](image/DaVinci_Irq/1785915693135.png)
-<!-- ![20260805154139](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805154139.png) -->
 
 ![1785915715860](image/DaVinci_Irq/1785915715860.png)
-<!-- ![20260805154159](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805154159.png) -->
 
 ![1785915736329](image/DaVinci_Irq/1785915736329.png)
-<!-- ![20260805154219](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805154219.png) -->
 
 IrqCan0Config：
 
 ![1785915800078](image/DaVinci_Irq/1785915800078.png)
-<!-- ![20260805154326](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805154326.png) -->
 
 ![1785915821806](image/DaVinci_Irq/1785915821806.png)
-<!-- ![20260805154345](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805154345.png) -->
 
 ![1785915856230](image/DaVinci_Irq/1785915856230.png)
-<!-- ![20260805154420](https://cdn.jsdelivr.net/gh/xiongGithub1/picGoUpload/image/20260805154420.png) -->
 ---
 
 ## 3. 与其它模块的引用关系

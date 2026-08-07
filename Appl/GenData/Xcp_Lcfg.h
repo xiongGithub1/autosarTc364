@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Xcp_Lcfg.h
- *   Generation Time: 2026-08-04 12:24:48
+ *   Generation Time: 2024-08-07 10:49:29
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -64,6 +64,17 @@ extern CONST(Xcp_TlApiType, XCP_CONST) Xcp_TlApi[1];
 /* Event Channel SNV IDs */
 
 
+
+/**
+ * \defgroup XcpHandleIdsEventChannelHandleIDs Handle IDs of handle space EventChannel Handle IDs.
+ * \brief Symbolic Name Values (SNVs) for EventChannel Handles
+ * \{
+ */
+
+/* Handle IDs active in all predefined variants (the application has not to take the active variant into account) */
+/*      Symbolic Name                                                 Value   Active in predefined variant(s) */
+#define XcpConf_XcpEventChannel_XcpEventChannel                       0
+/**\} */
 
 
 /* Flash programming */

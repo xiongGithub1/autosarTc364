@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProjectAssistant>
+    <Tools>
+        <LegacyConverter Version="1.8.67.0"/>
+        <DDM Version="21.2.1.12"/>
+    </Tools>
+    <Input>
+        <ECUEX>.workflow\Update\PreProcessing\System\SystemExtract.arxml</ECUEX>
+    </Input>
+    <References>
+        <DiagECUC>.workflow\Update\PreProcessing\System\DiagnosticsDescriptionData.arxml</DiagECUC>
+    </References>
+    <Display>
+        <FileSet Id="" CS="9f3c356b">
+            <File Order="0" EcuInstance="MyECU" Hash="fd1b523d8a34a62f78d82f4e08df8215" FileCategory="legacy_communication_data">$(DpaProjectFolder)\Config_Vector\CANFD364.dbc</File>
+            <Diagnostic>
+                <Description Order="1" Hash="f2275f136be6b467d555e4ceadac1209">$(DpaProjectFolder)\Config_Vector\MyEcu.cdd</Description>
+                <Ecu>MyEcu</Ecu>
+                <Variant>CommonDiagnostics</Variant>
+                <UseLegacySignalImport>false</UseLegacySignalImport>
+                <UseGenericImport>false</UseGenericImport>
+            </Diagnostic>
+        </FileSet>
+        <Merge>
+            <Path Id="ECU-INSTANCE" ARPath="/ECU/MyECU"/>
+            <Path Id="SYSTEM" ARPath="/VehicleProject/System"/>
+        </Merge>
+        <SelectiveUpdate Active="false" CS="ecd6502d"/>
+    </Display>
+</ProjectAssistant>
