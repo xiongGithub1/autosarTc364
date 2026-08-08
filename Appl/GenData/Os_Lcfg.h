@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Lcfg.h
- *   Generation Time: 2026-08-07 16:09:31
+ *   Generation Time: 2026-08-07 19:21:41
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -217,6 +217,18 @@ extern FUNC(void, OS_MOTORTASK_CODE) Os_Task_MotorTask(void);
 extern FUNC(void, OS_ADC8SR0_ISR_CODE) Os_Isr_ADC8SR0_ISR(void);
 
 # define OS_STOP_SEC_ADC8SR0_ISR_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_ASCLIN0ERR_ISR_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/**********************************************************************************************************************
+ *  ASCLIN0ERR_ISR()
+ *********************************************************************************************************************/
+extern FUNC(void, OS_ASCLIN0ERR_ISR_CODE) Os_Isr_ASCLIN0ERR_ISR(void);
+
+# define OS_STOP_SEC_ASCLIN0ERR_ISR_CODE
 # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 

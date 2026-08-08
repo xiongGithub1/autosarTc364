@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Types_Lcfg.h
- *   Generation Time: 2026-08-07 16:02:45
+ *   Generation Time: 2026-08-07 19:21:41
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -90,6 +90,7 @@
 #define CanIsr_0 CanIsr_0
 #define CounterIsr_SystemTimer CounterIsr_SystemTimer
 #define CounterIsr_SystemTimer1 CounterIsr_SystemTimer1
+#define Uart_ASCLIN0ERR_ISR Uart_ASCLIN0ERR_ISR
 #define Uart_ASCLIN0RX_ISR Uart_ASCLIN0RX_ISR
 #define Uart_ASCLIN0TX_ISR Uart_ASCLIN0TX_ISR
 #define XSignalIsr_OsCore0 XSignalIsr_OsCore0
@@ -189,11 +190,12 @@ typedef enum
   CanIsr_0 = 1,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
   CounterIsr_SystemTimer = 2,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
   CounterIsr_SystemTimer1 = 3,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Uart_ASCLIN0RX_ISR = 4,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Uart_ASCLIN0TX_ISR = 5,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  XSignalIsr_OsCore0 = 6,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  XSignalIsr_OsCore1 = 7,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  OS_ISRID_COUNT = 8,
+  Uart_ASCLIN0ERR_ISR = 4,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Uart_ASCLIN0RX_ISR = 5,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Uart_ASCLIN0TX_ISR = 6,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  XSignalIsr_OsCore0 = 7,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  XSignalIsr_OsCore1 = 8,   /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  OS_ISRID_COUNT = 9,
   INVALID_ISR = OS_ISRID_COUNT
 } ISRType;
 

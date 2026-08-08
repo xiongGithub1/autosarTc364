@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Isr_Lcfg.h
- *   Generation Time: 2026-08-07 16:02:45
+ *   Generation Time: 2026-08-07 19:21:41
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -96,6 +96,10 @@ extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_CanIsr_0;
 /*! ISR configuration data: CounterIsr_SystemTimer */
 extern CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Isr_CounterIsr_SystemTimer_HwConfig;
 extern CONST(Os_TimerIsrConfigType, OS_CONST) OsCfg_Isr_CounterIsr_SystemTimer;
+
+/*! ISR configuration data: Uart_ASCLIN0ERR_ISR */
+extern CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Isr_Uart_ASCLIN0ERR_ISR_HwConfig;
+extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_Uart_ASCLIN0ERR_ISR;
 
 /*! ISR configuration data: Uart_ASCLIN0RX_ISR */
 extern CONST(Os_IsrHwConfigType, OS_CONST) OsCfg_Isr_Uart_ASCLIN0RX_ISR_HwConfig;

@@ -252,6 +252,7 @@
                 <Setting Value="false" Name="Dma"/>
                 <Setting Value="false" Name="E2EXf"/>
                 <Setting Value="false" Name="EcuC"/>
+                <Setting Value="false" Name="EcuM"/>
                 <Setting Value="false" Name="Fee"/>
                 <Setting Value="false" Name="Fls"/>
                 <Setting Value="false" Name="Irq"/>
@@ -265,6 +266,7 @@
                 <Setting Value="false" Name="Pwm"/>
                 <Setting Value="false" Name="Sbc"/>
                 <Setting Value="false" Name="Spi"/>
+                <Setting Value="false" Name="Uart"/>
                 <Setting Value="false" Name="Xcp"/>
                 <Setting Value="false" Name="vBRS"/>
                 <Setting Value="false" Name="vSet"/>
@@ -461,7 +463,7 @@
                 </Settings>
             </Settings>
             <Settings Name="com.vector.cfg.gen.core.gencore.internal.aov.AutomaticOnDemandValidationConfigurationService">
-                <Setting Value="rO0ABXNyAGpjb20udmVjdG9yLmNmZy5nZW4uY29yZS5nZW5jb3JlLmludGVybmFsLmFvdi5BdXRv&#xA;bWF0aWNPbkRlbWFuZFZhbGlkYXRpb25Db25maWd1cmF0aW9uU2VydmljZSRQZXJzaXN0ZWREYXRh&#xA;pcjrmQ6cuakCAAJaAAlhY3RpdmF0ZWRMABJkZWFjdGl2YXRlZE1vZHVsZXN0ABZMamF2YS91dGls&#xA;L0NvbGxlY3Rpb247eHABc3IANmNvbS5nb29nbGUuY29tbW9uLmNvbGxlY3QuSW1tdXRhYmxlTGlz&#xA;dCRTZXJpYWxpemVkRm9ybQAAAAAAAAAAAgABWwAIZWxlbWVudHN0ABNbTGphdmEvbGFuZy9PYmpl&#xA;Y3Q7eHB1cgATW0xqYXZhLmxhbmcuT2JqZWN0O5DOWJ8QcylsAgAAeHAAAAAVc3IANWNvbS52ZWN0&#xA;b3IuY2ZnLm1vZGVsLmFjY2Vzcy5EZWZSZWYkU2VyaWFsaXphdGlvblByb3h5NnUB4bS2W7ACAAJM&#xA;AB5kZWZSZWZTdHJpbmdXaXRob3V0UGFja2FnZVBhcnR0ABJMamF2YS9sYW5nL1N0cmluZztMABlw&#xA;YWNrYWdlUGFydE9mRGVmUmVmU3RyaW5ncQB+AAl4cHQABHZCUlN0AAkvTUlDUk9TQVJzcQB+AAh0&#xA;AAZNZW1NYXBxAH4ADHNxAH4ACHQABHZTZXRxAH4ADHNxAH4ACHQAA1NwaXQAES9BVVJJWDJHL0Vj&#xA;dWNEZWZzc3EAfgAIdAADQ2FudAAZL01JQ1JPU0FSL0Nhbl9NcGM1NzAwTWNhbnNxAH4ACHQABUUy&#xA;RVBXcQB+AAxzcQB+AAh0AAdNY2FsTGlicQB+ABNzcQB+AAh0AANEbWFxAH4AE3NxAH4ACHQABU1l&#xA;bUlmcQB+AAxzcQB+AAh0AANJcnFxAH4AE3NxAH4ACHQAA0ZlZXEAfgATc3EAfgAIdAADUHdtcQB+&#xA;ABNzcQB+AAh0AANEaW9xAH4AE3NxAH4ACHQAA0RjbXEAfgAMc3EAfgAIdAADQWRjcQB+ABNzcQB+&#xA;AAh0AANNY3VxAH4AE3NxAH4ACHQAA0NyY3EAfgATc3EAfgAIdAAEUG9ydHEAfgATc3EAfgAIdAAD&#xA;U2JjdAAWL01JQ1JPU0FSL1NiY19UbGYzNTU4NHNxAH4ACHQABEVjdUNxAH4ADHNxAH4ACHQAA0Zs&#xA;c3EAfgAT" Name="Data"/>
+                <Setting Value="rO0ABXNyAGpjb20udmVjdG9yLmNmZy5nZW4uY29yZS5nZW5jb3JlLmludGVybmFsLmFvdi5BdXRv&#xA;bWF0aWNPbkRlbWFuZFZhbGlkYXRpb25Db25maWd1cmF0aW9uU2VydmljZSRQZXJzaXN0ZWREYXRh&#xA;pcjrmQ6cuakCAAJaAAlhY3RpdmF0ZWRMABJkZWFjdGl2YXRlZE1vZHVsZXN0ABZMamF2YS91dGls&#xA;L0NvbGxlY3Rpb247eHABc3IANmNvbS5nb29nbGUuY29tbW9uLmNvbGxlY3QuSW1tdXRhYmxlTGlz&#xA;dCRTZXJpYWxpemVkRm9ybQAAAAAAAAAAAgABWwAIZWxlbWVudHN0ABNbTGphdmEvbGFuZy9PYmpl&#xA;Y3Q7eHB1cgATW0xqYXZhLmxhbmcuT2JqZWN0O5DOWJ8QcylsAgAAeHAAAAAWc3IANWNvbS52ZWN0&#xA;b3IuY2ZnLm1vZGVsLmFjY2Vzcy5EZWZSZWYkU2VyaWFsaXphdGlvblByb3h5NnUB4bS2W7ACAAJM&#xA;AB5kZWZSZWZTdHJpbmdXaXRob3V0UGFja2FnZVBhcnR0ABJMamF2YS9sYW5nL1N0cmluZztMABlw&#xA;YWNrYWdlUGFydE9mRGVmUmVmU3RyaW5ncQB+AAl4cHQABHZCUlN0AAkvTUlDUk9TQVJzcQB+AAh0&#xA;AANBZGN0ABEvQVVSSVgyRy9FY3VjRGVmc3NxAH4ACHQABU1lbUlmcQB+AAxzcQB+AAh0AANEaW9x&#xA;AH4AD3NxAH4ACHQAA0ZlZXEAfgAPc3EAfgAIdAADTWN1cQB+AA9zcQB+AAh0AANQd21xAH4AD3Nx&#xA;AH4ACHQABUUyRVBXcQB+AAxzcQB+AAh0AANTYmN0ABYvTUlDUk9TQVIvU2JjX1RsZjM1NTg0c3EA&#xA;fgAIdAADQ3JjcQB+AA9zcQB+AAh0AANGbHNxAH4AD3NxAH4ACHQAA0lycXEAfgAPc3EAfgAIdAAD&#xA;RGNtcQB+AAxzcQB+AAh0AANDYW50ABkvTUlDUk9TQVIvQ2FuX01wYzU3MDBNY2Fuc3EAfgAIdAAE&#xA;VWFydHEAfgAPc3EAfgAIdAADRG1hcQB+AA9zcQB+AAh0AANTcGlxAH4AD3NxAH4ACHQAB01jYWxM&#xA;aWJxAH4AD3NxAH4ACHQABk1lbU1hcHEAfgAMc3EAfgAIdAAEUG9ydHEAfgAPc3EAfgAIdAAERWN1&#xA;Q3EAfgAMc3EAfgAIdAAEdlNldHEAfgAM" Name="Data"/>
             </Settings>
             <Settings Name="com.vector.cfg.gui.pse.pages.generators">
                 <Settings Name="BuildVipProject"/>

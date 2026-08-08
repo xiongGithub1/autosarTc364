@@ -15,7 +15,7 @@
 **                                                                            **
 **  VERSION   : 8.0.0                                                         **
 **                                                                            **
-**  DATE, TIME: 2026-08-07, 16:02:43      !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2026-08-07, 19:21:40      !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  GENERATOR : Build b191017-0938        !!!IGNORE-LINE!!!                   **
 **                                                                            **
@@ -1884,7 +1884,7 @@ Container : IrqAsclin interruptConfiguration
 #define IRQ_ASCLIN9_RX_TOS            (IRQ_TOS_CPU0)
 
 /* Asclin Err interrupt Category Setting*/
-#define IRQ_ASCLIN0_ERR_CAT           (IRQ_CAT1)
+#define IRQ_ASCLIN0_ERR_CAT           (IRQ_CAT2)
 #define IRQ_ASCLIN10_ERR_CAT           (IRQ_CAT1)
 #define IRQ_ASCLIN11_ERR_CAT           (IRQ_CAT1)
 #define IRQ_ASCLIN12_ERR_CAT           (IRQ_CAT1)
@@ -1910,7 +1910,7 @@ Container : IrqAsclin interruptConfiguration
 #define IRQ_ASCLIN9_ERR_CAT           (IRQ_CAT1)
 
 /* Asclin Err interrupt Priority Setting*/
-#define IRQ_ASCLIN0_ERR_PRIO          0x0
+#define IRQ_ASCLIN0_ERR_PRIO          0xd
 #define IRQ_ASCLIN10_ERR_PRIO          0x0
 #define IRQ_ASCLIN11_ERR_PRIO          0x0
 #define IRQ_ASCLIN12_ERR_PRIO          0x0

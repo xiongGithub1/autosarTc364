@@ -15,7 +15,7 @@
 **                                                                            **
 **  VERSION   : 17.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-08-07, 14:16:15  !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2026-08-08, 09:31:19  !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  GENERATOR : Build b191017-0938      !!!IGNORE-LINE!!!                   **
 **                                                                            **
@@ -347,7 +347,7 @@ static const Spi_JobConfigType Spi_kJobConfig_Core0[] =
     (0x13U), (0x00U),          /* TQ , LoopBack */
     (0x01U), (0x00U),          /*  Q , A        */
     (0x00U), (0x01U),          /*  B , C        */
-    (0x01U), (0x00U),          /*  CPH , CPOL   */
+    (0x00U), (0x00U),          /*  CPH , CPOL   */
     (0x00U)                    /*  PAREN        */
     ),
     Spi_IdleLeadTrailParam(
@@ -509,7 +509,7 @@ static const Spi_ChannelConfigType Spi_kChannelConfig_Core0[] =
     0x00000000U,     /* Default data */
     0x1ffeU,         /* Number of Data Elements */
     SPI_EB_CHANNEL,  /* External Buffer Channel */
-    0x20U,            /* LSB[7], DataWidth=32[6:0] */
+    0x90U,            /* MSB[7], DataWidth=16[6:0] */
     SpiConf_SpiChannel_SpiChannel_35584
   },
 };

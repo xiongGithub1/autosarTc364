@@ -1238,82 +1238,85 @@ ASAP2_VERSION 1 70
       /end XCP_ON_CAN
     /end IF_DATA
 
-    /* Do NOT /include Xcp.a2l or CanXcp_CT_*.a2l here:
-       PROTOCOL_LAYER / XCP_ON_CAN must stay inside IF_DATA XCPplus above.
-       Including those fragments at MODULE level causes ASAP2 parser error at Xcp.a2l line 45. */
     /include "E:\workFiles\TC367\TC367\workspace\last364\Config\McData\McData.a2l"
 
     /begin MEASUREMENT MotorCdd_FocContext.i_motor.u ""
-      FLOAT32_IEEE NO_COMPU_METHOD 0 0 -3.40282346639E+38 3.40282346639E+38
-      ECU_ADDRESS 0x70000AC8
+      FLOAT32_IEEE NO_COMPU_METHOD 0 0 -100 100
+      ECU_ADDRESS 0x70000B48
       SYMBOL_LINK "MotorCdd_FocContext.i_motor.u" 0
     /end MEASUREMENT
 
     /begin MEASUREMENT MotorCdd_FocContext.i_motor.v ""
-      FLOAT32_IEEE NO_COMPU_METHOD 0 0 -3.40282346639E+38 3.40282346639E+38
-      ECU_ADDRESS 0x70000ACC
+      FLOAT32_IEEE NO_COMPU_METHOD 0 0 -100 100
+      ECU_ADDRESS 0x70000B4C
       SYMBOL_LINK "MotorCdd_FocContext.i_motor.v" 0
     /end MEASUREMENT
 
     /begin MEASUREMENT MotorCdd_FocContext.i_motor.vdc ""
-      FLOAT32_IEEE NO_COMPU_METHOD 0 0 -3.40282346639E+38 3.40282346639E+38
-      ECU_ADDRESS 0x70000AD4
+      FLOAT32_IEEE NO_COMPU_METHOD 0 0 -100 100
+      ECU_ADDRESS 0x70000B54
       SYMBOL_LINK "MotorCdd_FocContext.i_motor.vdc" 0
     /end MEASUREMENT
 
     /begin MEASUREMENT MotorCdd_FocContext.i_motor.vdcMax ""
-      FLOAT32_IEEE NO_COMPU_METHOD 0 0 -3.40282346639E+38 3.40282346639E+38
-      ECU_ADDRESS 0x70000AD8
+      FLOAT32_IEEE NO_COMPU_METHOD 0 0 -100 100
+      ECU_ADDRESS 0x70000B58
       SYMBOL_LINK "MotorCdd_FocContext.i_motor.vdcMax" 0
     /end MEASUREMENT
 
     /begin MEASUREMENT MotorCdd_FocContext.i_motor.w ""
-      FLOAT32_IEEE NO_COMPU_METHOD 0 0 -3.40282346639E+38 3.40282346639E+38
-      ECU_ADDRESS 0x70000AD0
+      FLOAT32_IEEE NO_COMPU_METHOD 0 0 -100 100
+      ECU_ADDRESS 0x70000B50
       SYMBOL_LINK "MotorCdd_FocContext.i_motor.w" 0
     /end MEASUREMENT
 
     /begin MEASUREMENT MotorCdd_FocContext.idqMeas.imag ""
-      FLOAT32_IEEE NO_COMPU_METHOD 0 0 -3.40282346639E+38 3.40282346639E+38
-      ECU_ADDRESS 0x70000B00
+      FLOAT32_IEEE NO_COMPU_METHOD 0 0 -100 100
+      ECU_ADDRESS 0x70000B80
       SYMBOL_LINK "MotorCdd_FocContext.idqMeas.imag" 0
     /end MEASUREMENT
 
     /begin MEASUREMENT MotorCdd_FocContext.idqMeas.real ""
-      FLOAT32_IEEE NO_COMPU_METHOD 0 0 -3.40282346639E+38 3.40282346639E+38
-      ECU_ADDRESS 0x70000AFC
+      FLOAT32_IEEE NO_COMPU_METHOD 0 0 -100 100
+      ECU_ADDRESS 0x70000B7C
       SYMBOL_LINK "MotorCdd_FocContext.idqMeas.real" 0
     /end MEASUREMENT
 
     /begin MEASUREMENT MotorCdd_FocContext.idqRef.imag ""
-      FLOAT32_IEEE NO_COMPU_METHOD 0 0 -3.40282346639E+38 3.40282346639E+38
-      ECU_ADDRESS 0x70000AF8
+      FLOAT32_IEEE NO_COMPU_METHOD 0 0 -100 100
+      ECU_ADDRESS 0x70000B78
       SYMBOL_LINK "MotorCdd_FocContext.idqRef.imag" 0
     /end MEASUREMENT
 
     /begin MEASUREMENT MotorCdd_FocContext.idqRef.real ""
-      FLOAT32_IEEE NO_COMPU_METHOD 0 0 -3.40282346639E+38 3.40282346639E+38
-      ECU_ADDRESS 0x70000AF4
+      FLOAT32_IEEE NO_COMPU_METHOD 0 0 -100 100
+      ECU_ADDRESS 0x70000B74
       SYMBOL_LINK "MotorCdd_FocContext.idqRef.real" 0
     /end MEASUREMENT
 
     /begin CHARACTERISTIC MotorControll_IdRefCmd ""
-      VALUE 0x70001094 __Float32_Value 0 NO_COMPU_METHOD -3.40282346639E+38 3.40282346639E+38
+      VALUE 0x70001114 __Float32_Value 0 NO_COMPU_METHOD -100 100
       EXTENDED_LIMITS -3.40282346639E+38 3.40282346639E+38
       SYMBOL_LINK "MotorControll_IdRefCmd" 0
     /end CHARACTERISTIC
 
     /begin CHARACTERISTIC MotorControll_IqRefCmd ""
-      VALUE 0x7000109C __Float32_Value 0 NO_COMPU_METHOD -3.40282346639E+38 3.40282346639E+38
+      VALUE 0x7000111C __Float32_Value 0 NO_COMPU_METHOD -100 100
       EXTENDED_LIMITS -3.40282346639E+38 3.40282346639E+38
       SYMBOL_LINK "MotorControll_IqRefCmd" 0
     /end CHARACTERISTIC
 
     /begin CHARACTERISTIC MotorControll_MotorModeCmd ""
-      VALUE 0x70001207 __SByte_Value 0 Table_492 -128 127
+      VALUE 0x70001287 __SByte_Value 0 Table_492 -128 127
       EXTENDED_LIMITS -128 127
       SYMBOL_LINK "MotorControll_MotorModeCmd" 0
     /end CHARACTERISTIC
+
+    /begin MEASUREMENT MotorControll_MotorModeCmd_Me ""
+      SBYTE Table_492 0 0 -128 127
+      ECU_ADDRESS 0x70001287
+      SYMBOL_LINK "MotorControll_MotorModeCmd" 0
+    /end MEASUREMENT
 
     /begin COMPU_METHOD Table_492 ""
       TAB_VERB "%6.3" ""

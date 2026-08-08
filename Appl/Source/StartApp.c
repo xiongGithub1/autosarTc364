@@ -48,6 +48,7 @@
 #include "ComM_Cfg.h"
 #include "Dio_Cfg.h"
 #include "Rte_EcuM_Type.h"
+#include "UartTest.h"
 uint32 StartApp_Cyclic1msCounter = 0U;
 uint32 StartApp_Cyclic250msCounter = 0U;
 
@@ -77,6 +78,7 @@ FUNC(void, StartApp_CODE) StartApp_Cyclic1000ms(void) /* PRQA S 0624, 3206 */ /*
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
  * Symbol: StartApp_Cyclic1000ms
  *********************************************************************************************************************/
+  UartTest_MainFunction();
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
@@ -212,6 +214,8 @@ FUNC(void, StartApp_CODE) StartApp_Init(void) /* PRQA S 0624, 3206 */ /* MD_Rte_
 
 
 	Rte_Call_ComM_UserRequest_RequestComMode(COMM_FULL_COMMUNICATION);
+
+  UartTest_Init();
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/

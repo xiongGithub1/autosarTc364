@@ -40,14 +40,22 @@ if ($null -eq $resolved) {
 }
 
 $now = Get-Date
+$updated = 0
+$skipped = 0
 $files = Get-ChildItem -Path $resolved.GenDataPath -Recurse -Include *.c,*.h -File
 foreach ($file in $files) {
-    $file.LastWriteTime = $now
+    if ($file.LastWriteTime.Year -eq 2024) {
+        $file.LastWriteTime = $now
+        $updated++
+    } else {
+        $skipped++
+    }
 }
 
-Write-Host "TouchGenData - refresh GenData .c/.h timestamps"
+Write-Host "TouchGenData - refresh 2024 GenData .c/.h timestamps"
 Write-Host "Project root : $($resolved.ProjectRoot)"
 Write-Host "GenData path : $($resolved.GenDataPath)"
 Write-Host "Timestamp    : $($now.ToString('yyyy-MM-dd HH:mm:ss'))"
-Write-Host "Files updated: $($files.Count)"
+Write-Host "Updated      : $updated"
+Write-Host "Skipped      : $skipped"
 Write-Host "Done."

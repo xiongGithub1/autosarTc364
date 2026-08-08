@@ -28,18 +28,29 @@ namespace Last364Tools
 
             string genDataPath = Path.Combine(projectRoot, "Appl", "GenData");
             DateTime now = DateTime.Now;
-            int count = 0;
+            int updated = 0;
+            int skipped = 0;
 
             try
             {
                 foreach (string file in Directory.EnumerateFiles(genDataPath, "*.*", SearchOption.AllDirectories))
                 {
                     string ext = Path.GetExtension(file);
-                    if (ext.Equals(".c", StringComparison.OrdinalIgnoreCase) ||
-                        ext.Equals(".h", StringComparison.OrdinalIgnoreCase))
+                    if (!ext.Equals(".c", StringComparison.OrdinalIgnoreCase) &&
+                        !ext.Equals(".h", StringComparison.OrdinalIgnoreCase))
+                    {
+                        continue;
+                    }
+
+                    DateTime writeTime = File.GetLastWriteTime(file);
+                    if (writeTime.Year == 2024)
                     {
                         File.SetLastWriteTime(file, now);
-                        count++;
+                        updated++;
+                    }
+                    else
+                    {
+                        skipped++;
                     }
                 }
             }
@@ -52,9 +63,18 @@ namespace Last364Tools
                 return 1;
             }
 
+            if (updated == 0)
+            {
+                ShowNotify(
+                    "更新 GenData 时间戳",
+                    "未发现 2024 时间戳的文件\n已跳过 " + skipped + " 个",
+                    false);
+                return 0;
+            }
+
             ShowNotify(
                 "更新 GenData 时间戳",
-                "已更新 " + count + " 个文件\n" + now.ToString("yyyy-MM-dd HH:mm:ss"),
+                "已更新 " + updated + " 个，跳过 " + skipped + " 个\n" + now.ToString("yyyy-MM-dd HH:mm:ss"),
                 false);
             return 0;
         }

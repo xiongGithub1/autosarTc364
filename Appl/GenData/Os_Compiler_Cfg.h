@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Compiler_Cfg.h
- *   Generation Time: 2026-08-07 16:09:31
+ *   Generation Time: 2026-08-07 19:21:41
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -49,6 +49,7 @@
  *********************************************************************************************************************/
 
 # define OS_ADC8SR0_ISR_CODE
+# define OS_ASCLIN0ERR_ISR_CODE
 # define OS_ASCLIN0RX_ISR_CODE
 # define OS_ASCLIN0TX_ISR_CODE
 # define OS_BSWCORE1TASK_CODE
