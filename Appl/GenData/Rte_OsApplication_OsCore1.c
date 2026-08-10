@@ -38,6 +38,7 @@
 #include "Rte_DemMaster_0.h"
 #include "Rte_DemSatellite_0.h"
 #include "Rte_Det.h"
+#include "Rte_DigApp.h"
 #include "Rte_EcuM.h"
 #include "Rte_MotorCdd.h"
 #include "Rte_MotorControll.h"
