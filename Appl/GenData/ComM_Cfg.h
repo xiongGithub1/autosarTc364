@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: ComM_Cfg.h
- *   Generation Time: 2026-08-05 21:47:40
+ *   Generation Time: 2024-08-11 18:29:26
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -134,7 +134,7 @@
 #define COMM_BUS_TYPE_INTERNAL_PRESENT                                    STD_OFF
 #define COMM_BUS_TYPE_FR_PRESENT                                          STD_OFF
 #define COMM_BUS_TYPE_LIN_PRESENT                                         STD_OFF
-#define COMM_EXISTS_ONLY_NONE_NMTYPEOFCHANNEL                             STD_ON
+#define COMM_EXISTS_ONLY_NONE_NMTYPEOFCHANNEL                             STD_OFF
 
 #define COMM_FULL_COMM_REQUEST_NOTIF                                      STD_OFF
 #define COMM_MAX_NUMBER_OF_USERS                                          1u
@@ -206,14 +206,14 @@
 #define COMM_MINFULLCOMTIMEOFCHANNEL                                                                STD_OFF  /**< Deactivateable: 'ComM_Channel.MinFullComTime' Reason: 'the value of ComM_MinFullComTimeOfChannel is always '0' due to this, the array is deactivated.' */
 #define COMM_NMLIGHTDURATIONOFCHANNEL                                                               STD_OFF  /**< Deactivateable: 'ComM_Channel.NmLightDuration' Reason: 'the value of ComM_NmLightDurationOfChannel is always '0' due to this, the array is deactivated.' */
 #define COMM_NMLIGHTSILENTDURATIONOFCHANNEL                                                         STD_OFF  /**< Deactivateable: 'ComM_Channel.NmLightSilentDuration' Reason: 'the value of ComM_NmLightSilentDurationOfChannel is always '0' due to this, the array is deactivated.' */
-#define COMM_NMSUPPORTOFCHANNEL                                                                     STD_OFF  /**< Deactivateable: 'ComM_Channel.NmSupport' Reason: 'the value of ComM_NmSupportOfChannel is always 'false' due to this, the array is deactivated.' */
+#define COMM_NMSUPPORTOFCHANNEL                                                                     STD_ON
 #define COMM_NMTYPEOFCHANNEL                                                                        STD_ON
 #define COMM_PARTITIONCONFIGIDXOFCHANNEL                                                            STD_ON
 #define COMM_PASSIVEORLINSLAVEOFCHANNEL                                                             STD_OFF  /**< Deactivateable: 'ComM_Channel.PassiveOrLinSlave' Reason: 'the value of ComM_PassiveOrLinSlaveOfChannel is always 'false' due to this, the array is deactivated.' */
 #define COMM_PNCNMREQUESTOFCHANNEL                                                                  STD_OFF  /**< Deactivateable: 'ComM_Channel.PncNmRequest' Reason: 'PNC Support is disabled' */
 #define COMM_REQUESTBUSSMMODEAPIOFCHANNEL                                                           STD_ON
 #define COMM_RESETAFTERFORCINGNOCOMMOFCHANNEL                                                       STD_OFF  /**< Deactivateable: 'ComM_Channel.ResetAfterForcingNoComm' Reason: 'the value of ComM_ResetAfterForcingNoCommOfChannel is always 'false' due to this, the array is deactivated.' */
-#define COMM_SILENTSUPPORTOFCHANNEL                                                                 STD_OFF  /**< Deactivateable: 'ComM_Channel.SilentSupport' Reason: 'the value of ComM_SilentSupportOfChannel is always 'false' due to this, the array is deactivated.' */
+#define COMM_SILENTSUPPORTOFCHANNEL                                                                 STD_ON
 #define COMM_WAKEUPSTATEOFCHANNEL                                                                   STD_ON
 #define COMM_CHANNELPB                                                                              STD_ON
 #define COMM_PNCPBINDENDIDXOFCHANNELPB                                                              STD_OFF  /**< Deactivateable: 'ComM_ChannelPb.PncPbIndEndIdx' Reason: 'the optional indirection is deactivated because PncPbIndUsedOfChannelPb is always 'FALSE' and the target of the indirection is of the Configuration Class 'PRE_COMPILE'.' */
@@ -224,7 +224,7 @@
 #define COMM_USERREQFULLCOMUSEDOFCHANNELPB                                                          STD_ON
 #define COMM_COMALLOWED                                                                             STD_ON
 #define COMM_DCMREQUESTACTIVE                                                                       STD_ON
-#define COMM_ECUMWAKEUPINDICATED                                                                    STD_OFF  /**< Deactivateable: 'ComM_EcuMWakeUpIndicated' Reason: 'Synchronous WakeUp is disabled or no Nm Support is present or no channel is assigned to the master partition.' */
+#define COMM_ECUMWAKEUPINDICATED                                                                    STD_ON
 #define COMM_EIRATXSIGNALINDIRECTION                                                                STD_OFF  /**< Deactivateable: 'ComM_EiraTxSignalIndirection' Reason: 'the struct is deactivated because all elements are deactivated.' */
 #define COMM_SYMBOLICNAMEVALUEOFEIRATXSIGNALINDIRECTION                                             STD_OFF  /**< Deactivateable: 'ComM_EiraTxSignalIndirection.SymbolicNameValue' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
 #define COMM_FINALMAGICNUMBER                                                                       STD_OFF  /**< Deactivateable: 'ComM_FinalMagicNumber' Reason: 'the module configuration does not support flashing of data.' */
@@ -237,7 +237,7 @@
 #define COMM_LASTSTATECHANGE                                                                        STD_OFF  /**< Deactivateable: 'ComM_LastStateChange' Reason: 'No user mode Notification configured.' */
 #define COMM_MINFULLCOMMODETIMER                                                                    STD_OFF  /**< Deactivateable: 'ComM_MinFullComModeTimer' Reason: 'Min Full Com Timer is disabled' */
 #define COMM_NMLIGHTTIMER                                                                           STD_OFF  /**< Deactivateable: 'ComM_NmLightTimer' Reason: 'Nm Light and Nm Light Silent Timers are disabled' */
-#define COMM_NMSTARTUPINDICATED                                                                     STD_OFF  /**< Deactivateable: 'ComM_NmStartUpIndicated' Reason: 'Synchronous WakeUp is disabled or no Nm Support is present or no channel is assigned to the master partition.' */
+#define COMM_NMSTARTUPINDICATED                                                                     STD_ON
 #define COMM_NOTIFYPNCSTATECHANGE                                                                   STD_OFF  /**< Deactivateable: 'ComM_NotifyPncStateChange' Reason: 'No user mode Notification configured.' */
 #define COMM_NVMSTOREREQ                                                                            STD_OFF  /**< Deactivateable: 'ComM_NvMStoreReq' Reason: 'NvM support is disabled' */
 #define COMM_PARTITIONIDENTIFIERS                                                                   STD_ON
@@ -286,6 +286,8 @@
 #define COMM_SIZEOFCHANNELPB                                                                        STD_ON
 #define COMM_SIZEOFCOMALLOWED                                                                       STD_ON
 #define COMM_SIZEOFDCMREQUESTACTIVE                                                                 STD_ON
+#define COMM_SIZEOFECUMWAKEUPINDICATED                                                              STD_ON
+#define COMM_SIZEOFNMSTARTUPINDICATED                                                               STD_ON
 #define COMM_SIZEOFPARTITIONIDENTIFIERS                                                             STD_ON
 #define COMM_SIZEOFPOSTINITIALIZED                                                                  STD_ON
 #define COMM_SIZEOFUSER                                                                             STD_ON
@@ -329,8 +331,10 @@
 #define COMM_CHANNELPBOFPCPARTITIONCONFIG                                                           STD_ON
 #define COMM_COMALLOWEDOFPCPARTITIONCONFIG                                                          STD_ON
 #define COMM_DCMREQUESTACTIVEOFPCPARTITIONCONFIG                                                    STD_ON
+#define COMM_ECUMWAKEUPINDICATEDOFPCPARTITIONCONFIG                                                 STD_ON
 #define COMM_INHIBITIONOFPCPARTITIONCONFIG                                                          STD_ON
 #define COMM_INITSTATUSOFPCPARTITIONCONFIG                                                          STD_ON
+#define COMM_NMSTARTUPINDICATEDOFPCPARTITIONCONFIG                                                  STD_ON
 #define COMM_POSTINITIALIZEDOFPCPARTITIONCONFIG                                                     STD_ON
 #define COMM_SIZEOFACTIVECOMMODEOFPCPARTITIONCONFIG                                                 STD_ON
 #define COMM_SIZEOFBUSCOMMODEREQOFPCPARTITIONCONFIG                                                 STD_ON
@@ -339,6 +343,8 @@
 #define COMM_SIZEOFCHANNELPBOFPCPARTITIONCONFIG                                                     STD_ON
 #define COMM_SIZEOFCOMALLOWEDOFPCPARTITIONCONFIG                                                    STD_ON
 #define COMM_SIZEOFDCMREQUESTACTIVEOFPCPARTITIONCONFIG                                              STD_ON
+#define COMM_SIZEOFECUMWAKEUPINDICATEDOFPCPARTITIONCONFIG                                           STD_ON
+#define COMM_SIZEOFNMSTARTUPINDICATEDOFPCPARTITIONCONFIG                                            STD_ON
 #define COMM_SIZEOFPOSTINITIALIZEDOFPCPARTITIONCONFIG                                               STD_ON
 #define COMM_SIZEOFUSERBYTEMASKOFPCPARTITIONCONFIG                                                  STD_ON
 #define COMM_SIZEOFUSEROFPCPARTITIONCONFIG                                                          STD_ON
@@ -389,10 +395,10 @@
   \{
 */ 
 #define COMM_EXISTS_NOT_USED_IN_THIS_VARIANT_NMTYPEOFCHANNEL                                        STD_OFF
-#define COMM_EXISTS_FULL_NMTYPEOFCHANNEL                                                            STD_OFF
+#define COMM_EXISTS_FULL_NMTYPEOFCHANNEL                                                            STD_ON
 #define COMM_EXISTS_PASSIVE_NMTYPEOFCHANNEL                                                         STD_OFF
 #define COMM_EXISTS_LIGHT_NMTYPEOFCHANNEL                                                           STD_OFF
-#define COMM_EXISTS_NONE_NMTYPEOFCHANNEL                                                            STD_ON
+#define COMM_EXISTS_NONE_NMTYPEOFCHANNEL                                                            STD_OFF
 #define COMM_EXISTS_LINSLAVE_NMTYPEOFCHANNEL                                                        STD_OFF
 #define COMM_EXISTS_EIRA_RX_TYPEOFPNCSIGNAL                                                         STD_OFF  /**< Deactivateable: 'ComM_PncSignal.Type' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
 #define COMM_EXISTS_EIRA_TX_TYPEOFPNCSIGNAL                                                         STD_OFF  /**< Deactivateable: 'ComM_PncSignal.Type' Reason: 'the array is deactivated because the size is 0 and the piece of data is in the configuration class: PRE_COMPILE' */
@@ -407,7 +413,7 @@
   \brief  These defines are the enumeration values of enumeration based CONST and VAR data.
   \{
 */ 
-#define COMM_NONE_NMTYPEOFCHANNEL                                                                   0x04u
+#define COMM_FULL_NMTYPEOFCHANNEL                                                                   0x01u
 /** 
   \}
 */ 
@@ -421,9 +427,11 @@
 #define COMM_ISDEF_GETCURRENTBUSSMMODEAPIOFCHANNEL                                                  STD_OFF
 #define COMM_ISDEF_GWTYPEOFCHANNEL                                                                  STD_ON
 #define COMM_ISDEF_INHIBITIONINITVALUEOFCHANNEL                                                     STD_ON
+#define COMM_ISDEF_NMSUPPORTOFCHANNEL                                                               STD_ON
 #define COMM_ISDEF_NMTYPEOFCHANNEL                                                                  STD_ON
 #define COMM_ISDEF_PARTITIONCONFIGIDXOFCHANNEL                                                      STD_ON
 #define COMM_ISDEF_REQUESTBUSSMMODEAPIOFCHANNEL                                                     STD_OFF
+#define COMM_ISDEF_SILENTSUPPORTOFCHANNEL                                                           STD_ON
 #define COMM_ISDEF_WAKEUPSTATEOFCHANNEL                                                             STD_ON
 #define COMM_ISDEF_USERREQFULLCOMENDIDXOFCHANNELPB                                                  STD_ON
 #define COMM_ISDEF_USERREQFULLCOMSTARTIDXOFCHANNELPB                                                STD_ON
@@ -447,8 +455,10 @@
 #define COMM_ISDEF_CHANNELPBOFPCPARTITIONCONFIG                                                     STD_ON
 #define COMM_ISDEF_COMALLOWEDOFPCPARTITIONCONFIG                                                    STD_ON
 #define COMM_ISDEF_DCMREQUESTACTIVEOFPCPARTITIONCONFIG                                              STD_ON
+#define COMM_ISDEF_ECUMWAKEUPINDICATEDOFPCPARTITIONCONFIG                                           STD_ON
 #define COMM_ISDEF_INHIBITIONOFPCPARTITIONCONFIG                                                    STD_ON
 #define COMM_ISDEF_INITSTATUSOFPCPARTITIONCONFIG                                                    STD_ON
+#define COMM_ISDEF_NMSTARTUPINDICATEDOFPCPARTITIONCONFIG                                            STD_ON
 #define COMM_ISDEF_POSTINITIALIZEDOFPCPARTITIONCONFIG                                               STD_ON
 #define COMM_ISDEF_USERBYTEMASKOFPCPARTITIONCONFIG                                                  STD_ON
 #define COMM_ISDEF_USEROFPCPARTITIONCONFIG                                                          STD_ON
@@ -466,10 +476,12 @@
 #define COMM_EQ2_GETCURRENTBUSSMMODEAPIOFCHANNEL                                                    
 #define COMM_EQ2_GWTYPEOFCHANNEL                                                                    COMM_GATEWAY_TYPE_NONE
 #define COMM_EQ2_INHIBITIONINITVALUEOFCHANNEL                                                       0x00u
-#define COMM_EQ2_NMTYPEOFCHANNEL                                                                    COMM_NONE_NMTYPEOFCHANNEL
+#define COMM_EQ2_NMSUPPORTOFCHANNEL                                                                 TRUE
+#define COMM_EQ2_NMTYPEOFCHANNEL                                                                    COMM_FULL_NMTYPEOFCHANNEL
 #define COMM_EQ2_PARTITIONCONFIGIDXOFCHANNEL                                                        0u
 #define COMM_EQ2_REQUESTBUSSMMODEAPIOFCHANNEL                                                       
-#define COMM_EQ2_WAKEUPSTATEOFCHANNEL                                                               COMM_FULL_COM_NETWORK_REQUESTED
+#define COMM_EQ2_SILENTSUPPORTOFCHANNEL                                                             TRUE
+#define COMM_EQ2_WAKEUPSTATEOFCHANNEL                                                               COMM_FULL_COM_READY_SLEEP
 #define COMM_EQ2_USERREQFULLCOMENDIDXOFCHANNELPB                                                    1u
 #define COMM_EQ2_USERREQFULLCOMSTARTIDXOFCHANNELPB                                                  0u
 #define COMM_EQ2_USERREQFULLCOMUSEDOFCHANNELPB                                                      TRUE
@@ -492,8 +504,10 @@
 #define COMM_EQ2_CHANNELPBOFPCPARTITIONCONFIG                                                       ComM_ChannelPb
 #define COMM_EQ2_COMALLOWEDOFPCPARTITIONCONFIG                                                      ComM_ComAllowed.raw
 #define COMM_EQ2_DCMREQUESTACTIVEOFPCPARTITIONCONFIG                                                ComM_DcmRequestActive.raw
+#define COMM_EQ2_ECUMWAKEUPINDICATEDOFPCPARTITIONCONFIG                                             ComM_EcuMWakeUpIndicated
 #define COMM_EQ2_INHIBITIONOFPCPARTITIONCONFIG                                                      (&(ComM_Inhibition))
 #define COMM_EQ2_INITSTATUSOFPCPARTITIONCONFIG                                                      (&(ComM_InitStatus))
+#define COMM_EQ2_NMSTARTUPINDICATEDOFPCPARTITIONCONFIG                                              ComM_NmStartUpIndicated
 #define COMM_EQ2_POSTINITIALIZEDOFPCPARTITIONCONFIG                                                 ComM_PostInitialized
 #define COMM_EQ2_USERBYTEMASKOFPCPARTITIONCONFIG                                                    ComM_UserByteMask
 #define COMM_EQ2_USEROFPCPARTITIONCONFIG                                                            ComM_User
@@ -596,6 +610,12 @@ typedef uint8 ComM_SizeOfComAllowedType;
 /**   \brief  value based type definition for ComM_SizeOfDcmRequestActive */
 typedef uint8 ComM_SizeOfDcmRequestActiveType;
 
+/**   \brief  value based type definition for ComM_SizeOfEcuMWakeUpIndicated */
+typedef uint8 ComM_SizeOfEcuMWakeUpIndicatedType;
+
+/**   \brief  value based type definition for ComM_SizeOfNmStartUpIndicated */
+typedef uint8 ComM_SizeOfNmStartUpIndicatedType;
+
 /**   \brief  value based type definition for ComM_SizeOfPartitionIdentifiers */
 typedef uint8 ComM_SizeOfPartitionIdentifiersType;
 
@@ -629,6 +649,12 @@ typedef uint8_least ComM_ChannelIterType;
 
 /**   \brief  type used to iterate ComM_ChannelPb */
 typedef uint8_least ComM_ChannelPbIterType;
+
+/**   \brief  type used to iterate ComM_EcuMWakeUpIndicated */
+typedef uint8_least ComM_EcuMWakeUpIndicatedIterType;
+
+/**   \brief  type used to iterate ComM_NmStartUpIndicated */
+typedef uint8_least ComM_NmStartUpIndicatedIterType;
 
 /**   \brief  type used to iterate ComM_PartitionIdentifiers */
 typedef uint8_least ComM_PartitionIdentifiersIterType;
@@ -687,11 +713,17 @@ typedef uint8 ComM_GwTypeOfChannelType;
 /**   \brief  value based type definition for ComM_InhibitionInitValueOfChannel */
 typedef uint8 ComM_InhibitionInitValueOfChannelType;
 
+/**   \brief  value based type definition for ComM_NmSupportOfChannel */
+typedef boolean ComM_NmSupportOfChannelType;
+
 /**   \brief  value based type definition for ComM_NmTypeOfChannel */
 typedef uint8 ComM_NmTypeOfChannelType;
 
 /**   \brief  value based type definition for ComM_PartitionConfigIdxOfChannel */
 typedef uint8 ComM_PartitionConfigIdxOfChannelType;
+
+/**   \brief  value based type definition for ComM_SilentSupportOfChannel */
+typedef boolean ComM_SilentSupportOfChannelType;
 
 /**   \brief  value based type definition for ComM_WakeupStateOfChannel */
 typedef uint8 ComM_WakeupStateOfChannelType;
@@ -710,6 +742,12 @@ typedef boolean ComM_ComAllowedType;
 
 /**   \brief  value based type definition for ComM_DcmRequestActive */
 typedef boolean ComM_DcmRequestActiveType;
+
+/**   \brief  value based type definition for ComM_EcuMWakeUpIndicated */
+typedef boolean ComM_EcuMWakeUpIndicatedType;
+
+/**   \brief  value based type definition for ComM_NmStartUpIndicated */
+typedef boolean ComM_NmStartUpIndicatedType;
 
 /**   \brief  value based type definition for ComM_PCPartitionConfigIdxOfPartitionIdentifiers */
 typedef uint8 ComM_PCPartitionConfigIdxOfPartitionIdentifiersType;
@@ -918,11 +956,17 @@ typedef P2VAR(ComM_ComAllowedType, TYPEDEF, COMM_VAR_NO_INIT) ComM_ComAllowedPtr
 /**   \brief  type used to point to ComM_DcmRequestActive */
 typedef P2VAR(ComM_DcmRequestActiveType, TYPEDEF, COMM_VAR_NO_INIT) ComM_DcmRequestActivePtrType;
 
+/**   \brief  type used to point to ComM_EcuMWakeUpIndicated */
+typedef P2VAR(volatile ComM_EcuMWakeUpIndicatedType, TYPEDEF, COMM_VAR_NO_INIT) ComM_EcuMWakeUpIndicatedPtrType;
+
 /**   \brief  type used to point to ComM_Inhibition */
 typedef P2VAR(ComM_InhibitionType, TYPEDEF, COMM_NVM_DATA_NO_INIT) ComM_InhibitionPtrType;
 
 /**   \brief  type used to point to ComM_InitStatus */
 typedef P2VAR(ComM_InitStatusType, TYPEDEF, COMM_VAR_NO_INIT) ComM_InitStatusPtrType;
+
+/**   \brief  type used to point to ComM_NmStartUpIndicated */
+typedef P2VAR(volatile ComM_NmStartUpIndicatedType, TYPEDEF, COMM_VAR_NO_INIT) ComM_NmStartUpIndicatedPtrType;
 
 /**   \brief  type used to point to ComM_PartitionIdentifiers */
 typedef P2CONST(ComM_PartitionIdentifiersType, TYPEDEF, COMM_CONST) ComM_PartitionIdentifiersPtrType;
@@ -1144,6 +1188,23 @@ extern VAR(ComM_DcmRequestActiveUType, COMM_VAR_NO_INIT) ComM_DcmRequestActive; 
 /*lint -restore */
 
 /**********************************************************************************************************************
+  ComM_EcuMWakeUpIndicated
+**********************************************************************************************************************/
+/** 
+  \var    ComM_EcuMWakeUpIndicated
+  \brief  Passive Wakeup indicated by EcuM (ComM_EcuM_WakeUpIndication()). TRUE if indicated, FALSE otherwise.
+*/ 
+#define COMM_START_SEC_VAR_NOCACHE_NO_INIT_8
+/*lint -save -esym(961, 19.1) */
+#include "ComM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+extern volatile VAR(ComM_EcuMWakeUpIndicatedType, COMM_VAR_NO_INIT) ComM_EcuMWakeUpIndicated[1];
+#define COMM_STOP_SEC_VAR_NOCACHE_NO_INIT_8
+/*lint -save -esym(961, 19.1) */
+#include "ComM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+
+/**********************************************************************************************************************
   ComM_Inhibition
 **********************************************************************************************************************/
 /** 
@@ -1173,6 +1234,23 @@ extern VAR(ComM_InhibitionType, COMM_NVM_DATA_NO_INIT) ComM_Inhibition;
 /*lint -restore */
 extern VAR(ComM_InitStatusType, COMM_VAR_NO_INIT) ComM_InitStatus;
 #define COMM_STOP_SEC_VAR_NO_INIT_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "ComM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  ComM_NmStartUpIndicated
+**********************************************************************************************************************/
+/** 
+  \var    ComM_NmStartUpIndicated
+  \brief  Passive Wakeup indicated by Nm (ComM_Nm_NetworkStartIndication() or ComM_Nm_RestartIndication()). TRUE if indicated, FALSE otherwise.
+*/ 
+#define COMM_START_SEC_VAR_NOCACHE_NO_INIT_8
+/*lint -save -esym(961, 19.1) */
+#include "ComM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+extern volatile VAR(ComM_NmStartUpIndicatedType, COMM_VAR_NO_INIT) ComM_NmStartUpIndicated[1];
+#define COMM_STOP_SEC_VAR_NOCACHE_NO_INIT_8
 /*lint -save -esym(961, 19.1) */
 #include "ComM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Dcm_Cfg.h
- *   Generation Time: 2026-08-05 22:06:48
+ *   Generation Time: 2024-08-11 18:29:27
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -180,7 +180,7 @@
 /*! Support memory transfer via FBL */
 # define DCM_FBLMGR_SUPPORT_ENABLED                                            STD_OFF
 /*! Support manager for OBD and UDS IDs */
-# define DCM_OBDUDSIDMGR_SUPPORT_ENABLED                                       STD_ON
+# define DCM_OBDUDSIDMGR_SUPPORT_ENABLED                                       STD_OFF
 /*! Support calibration for OBD and UDS IDs */
 # define DCM_OBDUDSIDMGR_CALIBRATION_ENABLED                                   STD_OFF
 /*! Support UDS MIDs provided by DEM module */
@@ -602,19 +602,19 @@
 /*! Maximum size of an IO control DIDs CEMR to be passed to the application */
 # define DCM_DIDMGR_IODID_MAX_EXT_CEMR_SIZE                                       1u
 /*! Size of table Dcm_CfgDidMgrDidLookUpTable */
-# define DCM_CFGDIDMGRDIDLOOKUPTABLE_SIZE                                      16u
+# define DCM_CFGDIDMGRDIDLOOKUPTABLE_SIZE                                      10u
 /*! Size of table Dcm_CfgDidMgrDidRanges */
 # define DCM_CFGDIDMGRDIDRANGES_SIZE                                            1u
 /*! Size of table Dcm_CfgDidMgrRangeDidInfoRefs */
 # define DCM_CFGDIDMGRRANGEDIDINFOREFS_SIZE                                     1u
 /*! Size of table Dcm_CfgDidMgrDidInfo */
-# define DCM_CFGDIDMGRDIDINFO_SIZE                                             15u
+# define DCM_CFGDIDMGRDIDINFO_SIZE                                              9u
 /*! Size of table Dcm_CfgDidMgrDidOpInfo */
-# define DCM_CFGDIDMGRDIDOPINFO_SIZE                                           25u
+# define DCM_CFGDIDMGRDIDOPINFO_SIZE                                           18u
 /*! Size of table Dcm_CfgDidMgrDidOpClassInfo */
-# define DCM_CFGDIDMGRDIDOPCLASSINFO_SIZE                                      42u
+# define DCM_CFGDIDMGRDIDOPCLASSINFO_SIZE                                      30u
 /*! Size of table Dcm_CfgDidMgrSignalOpClassInfo */
-# define DCM_CFGDIDMGRSIGNALOPCLASSINFO_SIZE                                   56u
+# define DCM_CFGDIDMGRSIGNALOPCLASSINFO_SIZE                                   44u
 /*! Size of table Dcm_CfgDidMgrOpInfoIoControl */
 # define DCM_CFGDIDMGROPINFOIOCONTROL_SIZE                                      1u
 /*! Size of table Dcm_CfgDidMgrOpInfoCombined */
@@ -637,8 +637,6 @@
 # define DCM_PROCESS_TRANSFER_DATA_WRITE                                       Dcm_ProcessTransferDataWrite
 /*! Call out function for service 0x37 */
 # define DCM_PROCESS_REQUEST_TRANSFER_EXIT                                     Dcm_ProcessRequestTransferExit
-/*! Size of table Dcm_CfgSvc22SupportedIdMask */
-# define DCM_CFGSVC22SUPPORTEDIDMASK_SIZE                                       1u
 /*! Configured main function period time */
 # define DCM_TASK_CYCLE_MS                                                       10u
 /*! Configured keep alive time */

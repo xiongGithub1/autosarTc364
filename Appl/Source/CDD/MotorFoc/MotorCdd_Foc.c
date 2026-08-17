@@ -28,6 +28,7 @@
 #include "MotorFoc_SpeedLoop.h"
 #include "MotorFoc_SinCosTable.h"
 #include "Dio.h"
+#include "UartTest.h"
 typedef struct
 {
   uint8 mode;
@@ -112,11 +113,9 @@ void MotorCdd_FocUpdateLatestAngleFromSensor(void)
 
 static uint8 MotorCdd_FocAngleSpiAllowedInFastLoop(uint8 motorMode)
 {
-  /* ZeroCal / open-loop use forced angle or own SPI in StartApp ??avoid QSPI2 clash. */
-  /* 标定模式现在依赖快速环读数（零点判定），必须允许；开环/擦除/保存跳过。 */
+  /* 擦除/保存标定会独占 QSPI2；开环也读 5012，便于和强制角对比。 */
   if ((motorMode == (uint8)MOTOR_MODE_CALIBRATION_ERASE) ||
-      (motorMode == (uint8)MOTOR_MODE_CALIBRATION_SAVE) ||
-      (motorMode == (uint8)MOTOR_MODE_OPEN_LOOP))
+      (motorMode == (uint8)MOTOR_MODE_CALIBRATION_SAVE))
   {
     return 0U;
   }
@@ -142,8 +141,7 @@ static void MotorCdd_FocServiceAngleSpi(void)
     return;
   }
 
-  /* ZeroCal / open-loop use forced angle — skip 5012 SPI. */
-  /* 标定/开环使用强制角度：跳过每拍 SPI，避免与 1ms 标定读取争抢 QSPI2。 */
+  /* 擦除/保存标定独占 QSPI2 时跳过；开环仍读 5012 做角度对比。 */
   if (MotorCdd_FocAngleSpiAllowedInFastLoop(motorMode) == 0U)
   {
     return;
@@ -343,5 +341,8 @@ void MotorCdd_FocFastLoop(void)
 
       break;
   }
+
+  /* Snapshot only on Core1. Uart_Write runs on Core0 (StartApp 1 ms). */
+  UartTest_CaptureFromFoc();
 }
 

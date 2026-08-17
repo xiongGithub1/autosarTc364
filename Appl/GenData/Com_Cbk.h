@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Com_Cbk.h
- *   Generation Time: 2024-08-04 12:44:09
+ *   Generation Time: 2024-08-11 18:29:24
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -81,6 +81,7 @@
 /*      Symbolic Name                                                 Value   Active in predefined variant(s) */
 #define ComConf_ComIPdu_msg_MotorStatus_oCAN00_71118836_Tx            0u
 #define ComConf_ComIPdu_msg_Transmit_oCAN00_0723e95e_Tx               1u
+#define ComConf_ComIPdu_msg_nm_MyECU_oCAN00_92bb24c1_Tx               2u
 /**\} */
 
 /**********************************************************************************************************************
@@ -132,6 +133,37 @@ FUNC(void, COM_CODE) Com_RxIndication(PduIdType RxPduId, P2CONST(PduInfoType, AU
 **********************************************************************************************************************/
 FUNC(void, COM_CODE) Com_TxConfirmation(PduIdType TxPduId);
 
+/**********************************************************************************************************************
+  Com_TriggerTransmit
+**********************************************************************************************************************/
+/** \brief          This function is called by the lower layer when an AUTOSAR COM I-PDU shall be transmitted.
+                    Within this function, AUTOSAR COM shall copy the contents of its I-PDU transmit buffer
+                    to the L-PDU buffer given by SduPtr.
+                    Use case:
+                    This function is used e.g. by the LIN Master for sending out a LIN frame. In this case, the trigger transmit
+                    can be initiated by the Master schedule table itself or a received LIN header.
+                    This function is also used by the FlexRay Interface for requesting PDUs to be sent in static part
+                    (synchronous to the FlexRay global time). Once the I-PDU has been successfully sent by the lower layer
+                    (PDU-Router), the lower layer must call Com_TxConfirmation().
+    \param[in]      TxPduId       ID of AUTOSAR COM I-PDU that is requested to be transmitted by AUTOSAR COM.
+    \param[in,out]  PduInfoPtr    Contains a pointer to a buffer (SduDataPtr) where the SDU
+                                  data shall be copied to, and the available buffer size in SduLengh.
+                                  On return, the service will indicate the length of the copied SDU
+                                  data in SduLength.
+    \return         E_OK          SDU has been copied and SduLength indicates the number of copied bytes.
+    \return         E_NOT_OK      No data has been copied, because
+                                  Com is not initialized
+                                  or TxPduId is not valid
+                                  or PduInfoPtr is NULL_PTR
+                                  or SduDataPtr is NULL_PTR
+                                  or SduLength is too small.
+    \context        TASK|ISR2
+    \synchronous    TRUE
+    \reentrant      TRUE, for different Handles
+    \trace          SPEC-2737022, SPEC-2737023, SPEC-2737024
+    \note           The function is called by the lower layer.
+**********************************************************************************************************************/
+FUNC(Std_ReturnType, COM_CODE) Com_TriggerTransmit(PduIdType TxPduId, P2VAR(PduInfoType, AUTOMATIC, COM_APPL_VAR) PduInfoPtr);
 
 
 #define COM_STOP_SEC_CODE

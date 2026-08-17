@@ -50,6 +50,7 @@
 #include "SchM_BswM.h"
 #include "SchM_Can.h"
 #include "SchM_CanIf.h"
+#include "SchM_CanNm.h"
 #include "SchM_CanSM.h"
 #include "SchM_CanTp.h"
 #include "SchM_Com.h"
@@ -68,6 +69,7 @@
 #include "SchM_Irq.h"
 #include "SchM_McalLib.h"
 #include "SchM_Mcu.h"
+#include "SchM_Nm.h"
 #include "SchM_NvM.h"
 #include "SchM_PduR.h"
 #include "SchM_Port.h"
@@ -375,18 +377,6 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Call_Dcm_DataServices_DevelopmentData_Transpo
   return ret;
 }
 
-FUNC(Std_ReturnType, RTE_CODE) Rte_Call_Dcm_DataServices_Example_WriteOnlyDID_DID_DataObject_WriteData(P2CONST(uint8, AUTOMATIC, RTE_DCM_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DCM_APPL_VAR) ErrorCode) /* PRQA S 1505, 3206, 3673 */ /* MD_MSR_Rule8.7, MD_Rte_3206, MD_Rte_Qac */
-{
-  Std_ReturnType ret = RTE_E_UNCONNECTED; /* PRQA S 2981 */ /* MD_MSR_RetVal */
-
-  Data = Data; /* PRQA S 2983, 1338 */ /* MD_MSR_DummyStmt, MD_MSR_DummyStmt */
-  OpStatus = OpStatus; /* PRQA S 2983, 1338 */ /* MD_MSR_DummyStmt, MD_MSR_DummyStmt */
-  ErrorCode = ErrorCode; /* PRQA S 2983, 1338 */ /* MD_MSR_DummyStmt, MD_MSR_DummyStmt */
-  /* call to server runnable removed as client is never triggered */
-
-  return ret;
-}
-
 FUNC(Std_ReturnType, RTE_CODE) Rte_Call_DemMaster_0_CBInitEvt_DTC_0x000002_InitMonitorForEvent(Dem_InitMonitorReasonType InitMonitorReason) /* PRQA S 1505, 3206, 3673 */ /* MD_MSR_Rule8.7, MD_Rte_3206, MD_Rte_Qac */
 {
   Std_ReturnType ret = RTE_E_UNCONNECTED; /* PRQA S 2981 */ /* MD_MSR_RetVal */
@@ -555,7 +545,7 @@ TASK(Default_Appl_Init_Task) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_Unre
   StartApp_Init(); /* PRQA S 2987 */ /* MD_Rte_2987 */
 
   /* call runnable */
-  Dig_Init(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+  DigInit(); /* PRQA S 2987 */ /* MD_Rte_2987 */
 
   (void)TerminateTask(); /* PRQA S 3417 */ /* MD_Rte_Os */
 } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */

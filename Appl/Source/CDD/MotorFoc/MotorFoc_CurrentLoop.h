@@ -74,6 +74,8 @@ typedef struct
 } MotorFoc_ProtObsType;
 
 extern volatile MotorFoc_ProtObsType MotorFoc_ProtObs;
+/* SVPWM sector N (1..6). Low-speed Tcmp spikes often align with sector edges. */
+extern volatile uint8 MotorFoc_SvpwmSector;
 
 #define MOTORFOC_CURRENT_FAULT_NONE          (0U)
 #define MOTORFOC_CURRENT_FAULT_UNDERVOLT     (1U)

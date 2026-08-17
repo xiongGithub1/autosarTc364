@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Dem_Lcfg.c
- *   Generation Time: 2026-08-05 21:47:41
+ *   Generation Time: 2024-08-11 18:29:27
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -176,9 +176,9 @@ CONST(Dem_Cfg_DataCollectionTableType, DEM_CONST) Dem_Cfg_DataCollectionTable[5]
     /* Index    IdNumber  CollectionSize  DataElementTableCol2ElmtIndEndIdx                                  DataElementTableCol2ElmtIndStartIdx                                  StorageKind                       Referable Keys */
   { /*     0 */  0x0000u,             0u, DEM_CFG_NO_DATAELEMENTTABLECOL2ELMTINDENDIDXOFDATACOLLECTIONTABLE, DEM_CFG_NO_DATAELEMENTTABLECOL2ELMTINDSTARTIDXOFDATACOLLECTIONTABLE, DEM_CFG_EREC_TYPE_GLOBAL   },  /* [#NoDataCollectionConfigured] */
   { /*     1 */  0x0001u,             1u,                                                                1u,                                                                  0u, DEM_CFG_EREC_TYPE_INTERNAL },  /* [#EdrOccurrenceCounter, Ext:ExtendedDataClass_83dcefb7, #ExtendedDataRecord] */
-  { /*     2 */  0xF412u,             2u,                                                                2u,                                                                  1u, DEM_CFG_EREC_TYPE_USER     },  /* [#DidDID_0xF412, Ffm:FreezeFrameClass_89a2d1a5] */
-  { /*     3 */  0xF413u,             2u,                                                                3u,                                                                  2u, DEM_CFG_EREC_TYPE_USER     },  /* [#DidDID_0xF413, Ffm:FreezeFrameClass_89a2d1a5] */
-  { /*     4 */  0x0001u,             6u,                                                                4u,                                                                  3u, DEM_CFG_EREC_TYPE_USER     }   /* [#DidExample_ReadOnlyDID, Ffm:FreezeFrameClass_7d61125a, Ffm:FreezeFrameClass_89a2d1a5] */
+  { /*     2 */  0x0001u,             6u,                                                                2u,                                                                  1u, DEM_CFG_EREC_TYPE_USER     },  /* [#DidDID_0x0001, Ffm:FreezeFrameClass_7d61125a, Ffm:FreezeFrameClass_89a2d1a5] */
+  { /*     3 */  0xF412u,             2u,                                                                3u,                                                                  2u, DEM_CFG_EREC_TYPE_USER     },  /* [#DidDID_0xf412, Ffm:FreezeFrameClass_89a2d1a5] */
+  { /*     4 */  0xF413u,             2u,                                                                4u,                                                                  3u, DEM_CFG_EREC_TYPE_USER     }   /* [#DidDID_0xf413, Ffm:FreezeFrameClass_89a2d1a5] */
 };
 #define DEM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -198,10 +198,10 @@ CONST(Dem_Cfg_DataCollectionTableType, DEM_CONST) Dem_Cfg_DataCollectionTable[5]
 /*lint -restore */
 CONST(Dem_Cfg_DataCollectionTableFfm2CollIndType, DEM_CONST) Dem_Cfg_DataCollectionTableFfm2CollInd[4] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
   /* Index     DataCollectionTableFfm2CollInd      Referable Keys */
-  /*     0 */                              4u,  /* [Ffm:FreezeFrameClass_7d61125a] */
-  /*     1 */                              4u,  /* [Ffm:FreezeFrameClass_89a2d1a5] */
-  /*     2 */                              2u,  /* [Ffm:FreezeFrameClass_89a2d1a5] */
-  /*     3 */                              3u   /* [Ffm:FreezeFrameClass_89a2d1a5] */
+  /*     0 */                              2u,  /* [Ffm:FreezeFrameClass_7d61125a] */
+  /*     1 */                              2u,  /* [Ffm:FreezeFrameClass_89a2d1a5] */
+  /*     2 */                              3u,  /* [Ffm:FreezeFrameClass_89a2d1a5] */
+  /*     3 */                              4u   /* [Ffm:FreezeFrameClass_89a2d1a5] */
 };
 #define DEM_STOP_SEC_CONST_8BIT
 /*lint -save -esym(961, 19.1) */
@@ -228,9 +228,9 @@ CONST(Dem_Cfg_DataElementTableType, DEM_CONST) Dem_Cfg_DataElementTable[5] = {  
     /* Index    ElementDataType            ElementKind                  ElementSize  ReadDataFunc                                                                                                                Referable Keys */
   { /*     0 */ DEM_CFG_DATA_TYPE_UINT8_N, DEM_CFG_DATAELEMENT_INVALID,          0u,  (Dem_ReadDataFPtrType) /* PRQA S 0313 */ /* MD_DEM_11.1 */ NULL_PTR                                                 },  /* [#NoDataElementConfigured] */
   { /*     1 */ DEM_CFG_DATA_TYPE_UINT8  , DEM_CFG_DATA_FROM_OCCCTR   ,          1u,  (Dem_ReadDataFPtrType) /* PRQA S 0313 */ /* MD_DEM_11.1 */ NULL_PTR                                                 },  /* [#OccurrenceCounter_Occurrence_Counter, EdrOccurrenceCounter] */
-  { /*     2 */ DEM_CFG_DATA_TYPE_UINT16 , DEM_CFG_DATA_FROM_CS_PORT  ,          2u,  (Dem_ReadDataFPtrType) /* PRQA S 0313 */ /* MD_DEM_11.1 */ Rte_Call_CBReadData_PID_0x12_DID_Data_ReadData           },  /* [#PID_0x12_DID_Data, DidDID_0xF412] */
-  { /*     3 */ DEM_CFG_DATA_TYPE_UINT8_N, DEM_CFG_DATA_FROM_CS_PORT  ,          6u,  (Dem_ReadDataFPtrType) /* PRQA S 0313 */ /* MD_DEM_11.1 */ Rte_Call_CBReadData_DID_0x1_DID_Data_GlobalTime_ReadData },  /* [#DID_0x1_DID_Data_GlobalTime, DidExample_ReadOnlyDID] */
-  { /*     4 */ DEM_CFG_DATA_TYPE_UINT16 , DEM_CFG_DATA_FROM_CS_PORT  ,          2u,  (Dem_ReadDataFPtrType) /* PRQA S 0313 */ /* MD_DEM_11.1 */ Rte_Call_CBReadData_PID_0x13_DID_Data_ReadData           }   /* [#PID_0x13_DID_Data, DidDID_0xF413] */
+  { /*     2 */ DEM_CFG_DATA_TYPE_UINT16 , DEM_CFG_DATA_FROM_CS_PORT  ,          2u,  (Dem_ReadDataFPtrType) /* PRQA S 0313 */ /* MD_DEM_11.1 */ Rte_Call_CBReadData_PID_0x12_DID_Data_ReadData           },  /* [#PID_0x12_DID_Data, DidDID_0xf412] */
+  { /*     3 */ DEM_CFG_DATA_TYPE_UINT8_N, DEM_CFG_DATA_FROM_CS_PORT  ,          6u,  (Dem_ReadDataFPtrType) /* PRQA S 0313 */ /* MD_DEM_11.1 */ Rte_Call_CBReadData_DID_0x1_DID_Data_GlobalTime_ReadData },  /* [#DID_0x1_DID_Data_GlobalTime, DidDID_0x0001] */
+  { /*     4 */ DEM_CFG_DATA_TYPE_UINT16 , DEM_CFG_DATA_FROM_CS_PORT  ,          2u,  (Dem_ReadDataFPtrType) /* PRQA S 0313 */ /* MD_DEM_11.1 */ Rte_Call_CBReadData_PID_0x13_DID_Data_ReadData           }   /* [#PID_0x13_DID_Data, DidDID_0xf413] */
 };
 #define DEM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -251,9 +251,9 @@ CONST(Dem_Cfg_DataElementTableType, DEM_CONST) Dem_Cfg_DataElementTable[5] = {  
 CONST(Dem_Cfg_DataElementTableCol2ElmtIndType, DEM_CONST) Dem_Cfg_DataElementTableCol2ElmtInd[4] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
   /* Index     DataElementTableCol2ElmtInd      Referable Keys */
   /*     0 */                           1u,  /* [EdrOccurrenceCounter] */
-  /*     1 */                           2u,  /* [DidDID_0xF412] */
-  /*     2 */                           4u,  /* [DidDID_0xF413] */
-  /*     3 */                           3u   /* [DidExample_ReadOnlyDID] */
+  /*     1 */                           3u,  /* [DidDID_0x0001] */
+  /*     2 */                           2u,  /* [DidDID_0xf412] */
+  /*     3 */                           4u   /* [DidDID_0xf413] */
 };
 #define DEM_STOP_SEC_CONST_8BIT
 /*lint -save -esym(961, 19.1) */

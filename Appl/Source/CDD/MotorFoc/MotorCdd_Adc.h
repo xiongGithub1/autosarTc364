@@ -36,6 +36,10 @@ extern volatile uint16 MotorCdd_AdcOffsetSampleCount;
 extern volatile uint8 MotorCdd_AdcCurrentFilterEnabled;
 extern volatile uint8 MotorCdd_AdcCurrentFilterReady;
 extern volatile float32 MotorCdd_AdcCurrentFilterAlpha;
+/* 1=on: rebuild one phase via iu+iv+iw=0 (default W=-(U+V)). */
+extern volatile uint8 MotorCdd_AdcReconstructEnable;
+/* 0→U, 1→V, 2→W (default). */
+extern volatile uint8 MotorCdd_AdcReconstructPhase;
 extern volatile uint32 MotorCdd_AdcTriggerTick;
 extern volatile uint32 MotorCdd_AdcTriggerTickApplied;
 extern volatile uint32 MotorCdd_AdcPwmCounterSyncCount;

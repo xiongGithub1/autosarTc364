@@ -59,9 +59,6 @@ typedef uint8 Dcm_Data2ByteType[2];
 # define Rte_TypeDef_Dcm_Data4ByteType
 typedef uint8 Dcm_Data4ByteType[4];
 
-# define Rte_TypeDef_Dcm_Data6ByteType
-typedef uint8 Dcm_Data6ByteType[6];
-
 # define Rte_TypeDef_Dem_MaxDataValueType
 typedef uint8 Dem_MaxDataValueType[6];
 

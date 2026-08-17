@@ -29,6 +29,8 @@ extern volatile uint16 MotorFoc_OpenLoop_AccelerationTicks;
 extern volatile float32 MotorFoc_OpenLoop_AlignAngleDeg;
 extern volatile float32 MotorFoc_OpenLoop_AlignCurrentA;
 extern volatile float32 MotorFoc_OpenLoop_CurrentRampStepA;
+/* UDE 直接写目标机械转速 (rpm)；内部换算 TargetAngleStep。 */
+extern volatile float32 MotorFoc_OpenLoop_TargetRpmCmd;
 
 /* UDE observation variables. Do not modify them while PWM is enabled. */
 extern volatile MotorFoc_OpenLoopStageType MotorFoc_OpenLoop_Stage;
@@ -38,6 +40,8 @@ extern volatile uint16 MotorFoc_OpenLoop_ActiveAngleStep;
 extern volatile float32 MotorFoc_OpenLoop_ForcedAngleRad;
 extern volatile float32 MotorFoc_OpenLoop_IdRefOut;
 extern volatile float32 MotorFoc_OpenLoop_IqRefOut;
+/* 由 ActiveAngleStep 推算的当前开环机械转速 (rpm)。 */
+extern volatile float32 MotorFoc_OpenLoop_EstRpm;
 
 void MotorFoc_OpenLoop_Init(void);
 void MotorFoc_OpenLoop_Reset(void);

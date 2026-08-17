@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: PduR_Cfg.h
- *   Generation Time: 2026-08-05 22:06:45
+ *   Generation Time: 2024-08-11 18:29:24
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -131,7 +131,11 @@
 #define PDUR_FCT_CANTPCPYTX 0x07u 
 #define PDUR_FCT_DCMTX 0x99u 
 #define PDUR_FCT_DCMCTX 0x9Au 
- /*   PduR_CanIfIfRxIndication  PduR_CanIfTransmit  PduR_CanIfTxConfirmation  PduR_ComTransmit  PduR_CanTpTpRxIndication  PduR_CanTpTransmit  PduR_CanTpTxConfirmation  PduR_CanTpStartOfReception  PduR_CanTpCopyRxData  PduR_CanTpCopyTxData  PduR_DcmTransmit  PduR_DcmCancelTransmit  */ 
+#define PDUR_FCT_CANNMRXIND 0x11u 
+#define PDUR_FCT_CANNMTX 0x19u 
+#define PDUR_FCT_CANNMTXCFM 0x12u 
+#define PDUR_FCT_CANNMTT 0x13u 
+ /*   PduR_CanIfIfRxIndication  PduR_CanIfTransmit  PduR_CanIfTxConfirmation  PduR_ComTransmit  PduR_CanTpTpRxIndication  PduR_CanTpTransmit  PduR_CanTpTxConfirmation  PduR_CanTpStartOfReception  PduR_CanTpCopyRxData  PduR_CanTpCopyTxData  PduR_DcmTransmit  PduR_DcmCancelTransmit  PduR_CanNmIfRxIndication  PduR_CanNmTransmit  PduR_CanNmTxConfirmation  PduR_CanNmTriggerTransmit  */ 
 
 
 
@@ -167,6 +171,7 @@
 /*      Symbolic Name                                                 Value   Active in predefined variant(s) */
 #define PduRConf_PduRSrcPdu_PduRSrcPdu_96a7407f                       0u
 #define PduRConf_PduRSrcPdu_PduRSrcPdu_087fd70d                       1u
+#define PduRConf_PduRSrcPdu_PduRSrcPdu_f11d45ed                       3u
 #define PduRConf_PduRSrcPdu_PduRSrcPdu_f4835c60                       2u
 /**\} */
 
@@ -180,6 +185,7 @@
 /*      Symbolic Name                                                 Value   Active in predefined variant(s) */
 #define PduRConf_PduRDestPdu_msg_MotorStatus_oCAN00_a6063320_Tx       0u
 #define PduRConf_PduRDestPdu_msg_Transmit_oCAN00_9631a86b_Tx          1u
+#define PduRConf_PduRDestPdu_msg_nm_MyECU_oCAN00_92bb24c1_Tx_f11d45ed_Tx 2u
 /**\} */
 
 /**

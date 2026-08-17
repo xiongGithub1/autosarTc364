@@ -9,7 +9,8 @@
  *    - Clarke：iα = iu，iβ = (iv - iw)/√3（三相平衡）
  *    - Park：id = iα·cosθ + iβ·sinθ，iq = iβ·cosθ - iα·sinθ
  *    - 反 Park：vα = vd·cosθ - vq·sinθ，vβ = vd·sinθ + vq·cosθ
- *    - SVPWM：pwm_OutX 为半周期比较值 [0, Tpwm/2]，写入 SR0/SR1 实现中心对齐占空比
+ *    - SVPWM：pwm_OutX 为半周期比较值 [0, Tpwm/2]；
+ *      写入 ATOM 时 ScaledDuty = 2*pwm_Out（中心对齐，Period=10000）
  *  保护：见本文件 “OVERCURRENT / UNDERVOLTAGE PROTECTION” 段，完整流程见
  *        note/CurrentLoop_Protection.md
  **********************************************************************************************************************/#include "MotorFoc_CurrentLoop.h"
@@ -41,9 +42,19 @@
 /* ATOM0 CH1/2/3 center-aligned period (matches Pwm PBCfg 0x2710). */
 #define MOTORFOC_PWM_ATOM_PERIOD           (10000U)
 #define MOTORFOC_PWM_ATOM_MAX_TIMER        (0xFFFFFFU)
-/* AGC GLB_CTRL UPEN_CTRL1/2/3: write 01=disable, 10=enable (no-change=00). */
-#define MOTORFOC_PWM_ATOM_UPEN_DIS_CH123   (0x00140000U)
-#define MOTORFOC_PWM_ATOM_UPEN_EN_CH123    (0x00280000U)
+/* AGC GLB_CTRL UPEN_CTRLx: write 01=disable, 10=enable (00=no change).
+   CH1 [19:18], CH2 [21:20], CH3 [23:22] must all be updated together. */
+#define MOTORFOC_PWM_ATOM_UPEN_DIS_CH123   (0x00540000U)
+#define MOTORFOC_PWM_ATOM_UPEN_EN_CH123    (0x00A80000U)
+/* SVPWM sector-boundary hysteresis (volts in sA/sB/sC space).
+ * Low speed: PI noise flips sector for one beat → single-sample Tcmp spike. */
+#define MOTORFOC_SVPWM_SECTOR_HYST_FRAC    (0.03F)
+#define MOTORFOC_SVPWM_SECTOR_HYST_MIN_V   (0.05F)
+
+/* UDE/VOFA: last SVPWM sector code N in {1..6}, 0 = invalid/zero. */
+volatile uint8 MotorFoc_SvpwmSector = 0U;
+/* Last A/B/C sign bits packed as N (for hysteresis). */
+static uint8 MotorFoc_SvpwmSectorBits = 3U;
 
 /* Aggregate protection observation object (UDE: watch "MotorFoc_ProtObs"). */
 volatile MotorFoc_ProtObsType MotorFoc_ProtObs =
@@ -136,9 +147,9 @@ static void MotorFoc_CalcCenterAlignedSr(uint32 scaledDuty,
 
 
 /* 直接写 ATOM0 CH1/2/3 影子寄存器（中心对齐、三相一致更新）：
- *   1) AGC GLB_CTRL.UPEN_CTRL1/2 = 01 → 禁止 CH1/CH2 影子更新（写 SR 不生效）
+ *   1) AGC GLB_CTRL.UPEN_CTRL1/2/3 = 01 → 禁止 CH1/CH2/CH3 影子更新
  *   2) 写入 CH1/2/3 的 SR0/SR1 影子比较值
- *   3) AGC GLB_CTRL.UPEN_CTRL1/2 = 10 → 允许更新，在 ATOM 更新点三相同步生效 */
+ *   3) AGC GLB_CTRL.UPEN_CTRL1/2/3 = 10 → 允许更新，三相同步生效 */
 static void MotorFoc_ApplyAtomDuties(uint32 scaledDutyU,
                                      uint32 scaledDutyV,
                                      uint32 scaledDutyW)
@@ -154,7 +165,7 @@ static void MotorFoc_ApplyAtomDuties(uint32 scaledDutyU,
   MotorFoc_CalcCenterAlignedSr(scaledDutyV, &sr0v, &sr1v);
   MotorFoc_CalcCenterAlignedSr(scaledDutyW, &sr0w, &sr1w);
 
-  /* UPEN_CTRL1[19:18]=01、UPEN_CTRL2[21:20]=01：先禁止 CH1/CH2 更新。 */
+  /* UPEN_CTRL1/2/3 = 01：先禁止 CH1/CH2/CH3 更新。 */
   GTM_ATOM0_AGC_GLB_CTRL.U = MOTORFOC_PWM_ATOM_UPEN_DIS_CH123;
   /* 写影子比较值（本拍不生效，等 UPEN 使能后的更新点）。 */
   GTM_ATOM0_CH1_SR0.U = sr0u;
@@ -163,7 +174,7 @@ static void MotorFoc_ApplyAtomDuties(uint32 scaledDutyU,
   GTM_ATOM0_CH2_SR1.U = sr1v;
   GTM_ATOM0_CH3_SR0.U = sr0w;
   GTM_ATOM0_CH3_SR1.U = sr1w;
-  /* UPEN_CTRL1[19:18]=10、UPEN_CTRL2[21:20]=10：允许更新，三相同步生效。 */
+  /* UPEN_CTRL1/2/3 = 10：允许更新，三相同步生效。 */
   GTM_ATOM0_AGC_GLB_CTRL.U = MOTORFOC_PWM_ATOM_UPEN_EN_CH123;
 }
 
@@ -220,7 +231,7 @@ static float32 MotorFoc_GetVoltageVectorLimit(MotorFoc_ContextType* ctx)
   {
     vdc = 0.0F;
   }
-  return MOTORFOC_SQRT3_3 * vdc * ctx->Tpwm.pwmMinTimes*0.8F;
+  return MOTORFOC_SQRT3_3 * vdc * ctx->Tpwm.pwmMinTimes * 0.9F;
 }
 
 static void MotorFoc_UpdatePidVoltageLimit(MotorFoc_ContextType* ctx)
@@ -603,13 +614,30 @@ static uint8 MotorFoc_CheckUvRecovered(MotorFoc_ContextType* ctx)
   return (MotorFoc_ProtObs.cnt.uvRecoverCounter >= recoverCount) ? 1U : 0U;
 }
 
+static uint8 MotorFoc_SvpwmSignBitHyst(float32 value, uint8 prevBit, float32 hyst)
+{
+  if (value > hyst)
+  {
+    return 1U;
+  }
+  if (value < -hyst)
+  {
+    return 0U;
+  }
+  return prevBit;
+}
+
 /* 六扇区 SVPWM：αβ 电压 → 中心对齐比较值 tCmp ∈ [0, Tpwm/2]。
    - 先按母线电压限制矢量模长（√3/3 × vdc × pwmMinTimes）
    - vdc 过低(<MOTORFOC_VDC_SVPWM_MIN_V)时输出中性占空比并返回，避免除零
-   - 零矢量时保持 25% 半周期（50% 占空比，零平均电压） */
+   - 零矢量时保持 25% 半周期（50% 占空比，零平均电压）
+   - 扇区比较带滞回，抑制低速电流环噪声引起的单拍扇区翻转尖刺 */
 static void MotorFoc_DoSvpwm(MotorFoc_ContextType* ctx)
 {
   uint8 sectorCode = 0U;
+  uint8 bitA;
+  uint8 bitB;
+  uint8 bitC;
   float32 sA;
   float32 sB;
   float32 sC;
@@ -625,6 +653,7 @@ static void MotorFoc_DoSvpwm(MotorFoc_ContextType* ctx)
   float32 voltageLimit;
   float32 voltageMagnitude;
   float32 scale;
+  float32 hyst;
 
   voltageLimit = MOTORFOC_SQRT3_3 * ctx->i_motor.vdc * ctx->Tpwm.pwmMinTimes;
   voltageMagnitude = sqrtf((ctx->vabRef.real * ctx->vabRef.real) +
@@ -634,6 +663,7 @@ static void MotorFoc_DoSvpwm(MotorFoc_ContextType* ctx)
     scale = voltageLimit / voltageMagnitude;
     ctx->vabRef.real *= scale;
     ctx->vabRef.imag *= scale;
+    voltageMagnitude = voltageLimit;
   }
 
   if (ctx->i_motor.vdc < MOTORFOC_VDC_SVPWM_MIN_V)
@@ -642,6 +672,7 @@ static void MotorFoc_DoSvpwm(MotorFoc_ContextType* ctx)
     ctx->Tpwm.pwm_OutU = (uint32)(ctx->Tpwm.Tpwm * 0.25F);
     ctx->Tpwm.pwm_OutV = (uint32)(ctx->Tpwm.Tpwm * 0.25F);
     ctx->Tpwm.pwm_OutW = (uint32)(ctx->Tpwm.Tpwm * 0.25F);
+    MotorFoc_SvpwmSector = 0U;
     return;
   }
 
@@ -650,17 +681,43 @@ static void MotorFoc_DoSvpwm(MotorFoc_ContextType* ctx)
   sB = (MOTORFOC_SQRT3 * ctx->vabRef.real - ctx->vabRef.imag) * 0.5F;
   sC = (-MOTORFOC_SQRT3 * ctx->vabRef.real - ctx->vabRef.imag) * 0.5F;
 
-  if (sA > 0.0F)
+  hyst = (MOTORFOC_SVPWM_SECTOR_HYST_FRAC * voltageMagnitude);
+  if (hyst < MOTORFOC_SVPWM_SECTOR_HYST_MIN_V)
+  {
+    hyst = MOTORFOC_SVPWM_SECTOR_HYST_MIN_V;
+  }
+
+  bitA = MotorFoc_SvpwmSignBitHyst(sA, (uint8)(MotorFoc_SvpwmSectorBits & 0x01U), hyst);
+  bitB = MotorFoc_SvpwmSignBitHyst(sB, (uint8)((MotorFoc_SvpwmSectorBits >> 1) & 0x01U), hyst);
+  bitC = MotorFoc_SvpwmSignBitHyst(sC, (uint8)((MotorFoc_SvpwmSectorBits >> 2) & 0x01U), hyst);
+
+  if (bitA != 0U)
   {
     sectorCode = 1U;
   }
-  if (sB > 0.0F)
+  if (bitB != 0U)
   {
     sectorCode += 2U;
   }
-  if (sC > 0.0F)
+  if (bitC != 0U)
   {
     sectorCode += 4U;
+  }
+
+  /* N==0 is invalid for a non-zero vector; keep previous valid sector. */
+  if ((sectorCode == 0U) && (MotorFoc_SvpwmSectorBits >= 1U) && (MotorFoc_SvpwmSectorBits <= 6U))
+  {
+    sectorCode = MotorFoc_SvpwmSectorBits;
+  }
+
+  if ((sectorCode >= 1U) && (sectorCode <= 6U))
+  {
+    MotorFoc_SvpwmSectorBits = sectorCode;
+    MotorFoc_SvpwmSector = sectorCode;
+  }
+  else
+  {
+    MotorFoc_SvpwmSector = 0U;
   }
 
   scale = MOTORFOC_SQRT3 * ctx->Tpwm.Tpwm / ctx->i_motor.vdc;
@@ -735,6 +792,19 @@ static void MotorFoc_DoSvpwm(MotorFoc_ContextType* ctx)
       break;
   }
 
+  if (tCmpU < 0.0F)
+  {
+    tCmpU = 0.0F;
+  }
+  if (tCmpV < 0.0F)
+  {
+    tCmpV = 0.0F;
+  }
+  if (tCmpW < 0.0F)
+  {
+    tCmpW = 0.0F;
+  }
+
   ctx->Tpwm.pwm_OutU = (uint32)tCmpU;
   ctx->Tpwm.pwm_OutV = (uint32)tCmpV;
   ctx->Tpwm.pwm_OutW = (uint32)tCmpW;
@@ -775,7 +845,9 @@ static void MotorFoc_ApplyPwm(MotorFoc_ContextType* ctx)
     ctx->Tpwm.pwm_OutW = dutyMin;
   }
 
-  /* pwm_Out is half-period tick; ScaledDuty = 2 * pwm_Out when Period == Tpwm. */
+  /* pwm_Out is half-period Tcmp; ScaledDuty = 2 * pwm_Out (Period == 10000).
+   * last364 ATOM is center-aligned (MCAL); do NOT use upperComputer edge-aligned
+   * (SR1=Tcmp, SR0=Tpwm-Tcmp) mapping — that inverts duty on this hardware. */
   MotorFoc_ApplyAtomDuties(ctx->Tpwm.pwm_OutU << 1U,
                            ctx->Tpwm.pwm_OutV << 1U,
                            ctx->Tpwm.pwm_OutW << 1U);
@@ -934,6 +1006,83 @@ void MotorFoc_RunCurrentLoop(MotorFoc_ContextType* ctx)
   MotorFoc_UpdateSinCos(ctx);
   MotorFoc_DoPark(ctx);
   MotorFoc_DoCurrentPid(ctx);
+  MotorFoc_DoInversePark(ctx);
+  MotorFoc_DoSvpwm(ctx);
+  MotorFoc_ApplyPwm(ctx);
+}
+
+/* Voltage open-loop (forced angle already in ctx): no current PI.
+   Used after open-loop align so SVPWM/saddle is not modulated by current noise. */
+void MotorFoc_RunVoltageOpenLoop(MotorFoc_ContextType* ctx,
+                                 float32 vdRef,
+                                 float32 vqRef)
+{
+  MotorFoc_ProtObs.runCount++;
+
+  if (MotorFoc_ProtObs.fault.clearRequest != 0U)
+  {
+    MotorFoc_ProtObs.fault.clearRequest = 0U;
+    MotorFoc_CurrentLoopClearFault();
+  }
+
+  if (MotorFoc_ProtObs.fault.active != 0U)
+  {
+    if (MotorFoc_ProtObs.fault.reason == MOTORFOC_CURRENT_FAULT_UNDERVOLT)
+    {
+      if ((MotorFoc_ProtObs.cfg.uvAutoRecover != 0U) &&
+          (MotorFoc_CheckUvRecovered(ctx) != 0U))
+      {
+        MotorFoc_CurrentLoopClearFault();
+      }
+    }
+    else if (MotorFoc_ProtObs.cfg.overCurrentAutoRecover != 0U)
+    {
+      if (MotorFoc_CheckOverCurrentRecovered(ctx) != 0U)
+      {
+        MotorFoc_CurrentLoopClearFault();
+      }
+    }
+    MotorFoc_CurrentLoopStop(ctx);
+    return;
+  }
+
+  MotorFoc_UpdatePeakCurrents();
+
+  if (MotorFoc_CheckInstantOverCurrent() != 0U)
+  {
+    MotorFoc_SetFault(ctx, MOTORFOC_CURRENT_FAULT_OVERCURRENT_INST);
+    MotorFoc_CurrentLoopStop(ctx);
+    return;
+  }
+
+  if (MotorFoc_ConsumeStartupBlanking() == 0U)
+  {
+    if (MotorFoc_CheckOverCurrentFault(ctx) != 0U)
+    {
+      MotorFoc_SetFault(ctx, MOTORFOC_CURRENT_FAULT_OVERCURRENT);
+      MotorFoc_CurrentLoopStop(ctx);
+      return;
+    }
+
+    if (MotorFoc_CheckUndervoltFault(ctx) != 0U)
+    {
+      MotorFoc_SetFault(ctx, MOTORFOC_CURRENT_FAULT_UNDERVOLT);
+      MotorFoc_CurrentLoopStop(ctx);
+      return;
+    }
+  }
+
+  /* Keep idqMeas for UDE/VOFA; freeze current PI so it cannot fight voltage cmds. */
+  MotorFoc_DoClarke(ctx);
+  MotorFoc_UpdateSinCos(ctx);
+  MotorFoc_DoPark(ctx);
+  MotorFoc_ResetCurrentPidState(ctx);
+
+  ctx->idqRef.real = 0.0F;
+  ctx->idqRef.imag = 0.0F;
+  ctx->vdqRef.real = vdRef;
+  ctx->vdqRef.imag = vqRef;
+  MotorFoc_LimitDqVoltageVector(ctx);
   MotorFoc_DoInversePark(ctx);
   MotorFoc_DoSvpwm(ctx);
   MotorFoc_ApplyPwm(ctx);

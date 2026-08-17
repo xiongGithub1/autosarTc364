@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Com_Cfg.h
- *   Generation Time: 2024-08-04 12:44:09
+ *   Generation Time: 2024-08-11 18:29:24
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -111,7 +111,7 @@
 #define COM_COMMUNICATION_INTERFACE          STD_ON  /**< /ActiveEcuC/PduR/Com[0:PduRCommunicationInterface] */
 #define COM_TRANSPORT_PROTOCOL               STD_OFF  /**< /ActiveEcuC/PduR/Com[0:PduRTransportProtocol] */
 
-#define COM_TRIGGER_TRANSMIT_API             STD_OFF  /**< /ActiveEcuC/PduR/Com[0:PduRTriggertransmit] */
+#define COM_TRIGGER_TRANSMIT_API             STD_ON  /**< /ActiveEcuC/PduR/Com[0:PduRTriggertransmit] */
 #define COM_TX_CONFIRMATION_API              STD_ON  /**< /ActiveEcuC/PduR/Com[0:PduRTxConfirmation] */
 #define COM_TRIGGER_IPDU_SEND_WITH_META_DATA_API    STD_OFF  /**< /ActiveEcuC/Com/ComGeneral[0:ComMetaDataSupport] */
 #define COM_MAIN_FUNCTION_ROUTE_SIGNALS_API  STD_OFF  /**< /ActiveEcuC/Com/ComGeneral[0:ComSignalGateway] || /ActiveEcuC/Com/ComGeneral[0:ComDescriptionGateway] */
@@ -166,8 +166,14 @@
 #define ComConf_ComSignal_Iq_Ref_omsg_MotorStatus_oCAN00_64246970_Tx  2u
 #define ComConf_ComSignal_MotorMode_omsg_MotorStatus_oCAN00_b2c82a54_Tx 3u
 #define ComConf_ComSignal_Vbus_omsg_MotorStatus_oCAN00_85810386_Tx    4u
-#define ComConf_ComSignal_sig_RearInteriorLight_omsg_Transmit_oCAN00_49a633c1_Tx 5u
-#define ComConf_ComSignal_tle9180_Ov_Fault_omsg_MotorStatus_oCAN00_fd6f0927_Tx 6u
+#define ComConf_ComSignal_sig_NM_MyECU_UserData_0_omsg_nm_MyECU_oCAN00_acc1931e_Tx 5u
+#define ComConf_ComSignal_sig_NM_MyECU_UserData_1_omsg_nm_MyECU_oCAN00_bbe9f7de_Tx 6u
+#define ComConf_ComSignal_sig_NM_MyECU_UserData_2_omsg_nm_MyECU_oCAN00_82915a9e_Tx 7u
+#define ComConf_ComSignal_sig_NM_MyECU_UserData_3_omsg_nm_MyECU_oCAN00_95b93e5e_Tx 8u
+#define ComConf_ComSignal_sig_NM_MyECU_UserData_4_omsg_nm_MyECU_oCAN00_f060001e_Tx 9u
+#define ComConf_ComSignal_sig_NM_MyECU_UserData_5_omsg_nm_MyECU_oCAN00_e74864de_Tx 10u
+#define ComConf_ComSignal_sig_RearInteriorLight_omsg_Transmit_oCAN00_49a633c1_Tx 11u
+#define ComConf_ComSignal_tle9180_Ov_Fault_omsg_MotorStatus_oCAN00_fd6f0927_Tx 12u
 /**\} */
 
 

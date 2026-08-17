@@ -6,7 +6,8 @@ void MotorFoc_ConfigInit(MotorFoc_MotorParamType* motor)
   motor->rs = 0.0225F;
   motor->lm = 0.000038F;
   motor->polePairs = 4U;
-  motor->w_i_dq = 6283.1852F;
+  /* 400 Hz: stronger than 200 Hz (tracking), quieter than 600 Hz (less PWM chatter). */
+  motor->w_i_dq = 2513.2741F; /* 2*pi*400 */
   motor->w_speed = 628.0F;
 }
 

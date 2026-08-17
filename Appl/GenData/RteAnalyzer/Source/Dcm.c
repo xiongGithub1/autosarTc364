@@ -315,7 +315,6 @@ typedef P2FUNC(Std_ReturnType, RTE_CODE, FncPtrType)(void);
  * Dcm_Data1ByteType: Array with 1 element(s) of type uint8
  * Dcm_Data2ByteType: Array with 2 element(s) of type uint8
  * Dcm_Data4ByteType: Array with 4 element(s) of type uint8
- * Dcm_Data6ByteType: Array with 6 element(s) of type uint8
  * Dcm_StartDataIn_SampleRoutineControl_StartOnly_In_Option1Type: Array with 3 element(s) of type Dcm_StartDataIn_SampleRoutineControl_StartOnly_In_Option1ArrayType
  *
  *********************************************************************************************************************/
@@ -400,27 +399,6 @@ typedef P2FUNC(Std_ReturnType, RTE_CODE, FncPtrType)(void);
  *     Argument Data: uint8* is of type Dcm_Data1ByteType
  *     Synchronous Service Invocation. Timeout: None
  *     Returned Application Errors: RTE_E_DataServices_Boot_Software_NumberOfModules_DCM_E_PENDING, RTE_E_DataServices_Boot_Software_NumberOfModules_E_NOT_OK
- *   Std_ReturnType Rte_Call_DataServices_DID_0xF410_DID_Data_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
- *     Synchronous Service Invocation. Timeout: None
- *     Returned Application Errors: RTE_E_DataServices_DID_0xF410_DID_Data_DCM_E_PENDING, RTE_E_DataServices_DID_0xF410_DID_Data_E_NOT_OK
- *   Std_ReturnType Rte_Call_DataServices_DID_0xF410_DID_Data_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
- *     Argument Data: uint8* is of type Dcm_Data2ByteType
- *     Synchronous Service Invocation. Timeout: None
- *     Returned Application Errors: RTE_E_DataServices_DID_0xF410_DID_Data_DCM_E_PENDING, RTE_E_DataServices_DID_0xF410_DID_Data_E_NOT_OK
- *   Std_ReturnType Rte_Call_DataServices_DID_0xF412_DID_Data_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
- *     Synchronous Service Invocation. Timeout: None
- *     Returned Application Errors: RTE_E_DataServices_DID_0xF412_DID_Data_DCM_E_PENDING, RTE_E_DataServices_DID_0xF412_DID_Data_E_NOT_OK
- *   Std_ReturnType Rte_Call_DataServices_DID_0xF412_DID_Data_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
- *     Argument Data: uint8* is of type Dcm_Data2ByteType
- *     Synchronous Service Invocation. Timeout: None
- *     Returned Application Errors: RTE_E_DataServices_DID_0xF412_DID_Data_DCM_E_PENDING, RTE_E_DataServices_DID_0xF412_DID_Data_E_NOT_OK
- *   Std_ReturnType Rte_Call_DataServices_DID_0xF413_DID_Data_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
- *     Synchronous Service Invocation. Timeout: None
- *     Returned Application Errors: RTE_E_DataServices_DID_0xF413_DID_Data_DCM_E_PENDING, RTE_E_DataServices_DID_0xF413_DID_Data_E_NOT_OK
- *   Std_ReturnType Rte_Call_DataServices_DID_0xF413_DID_Data_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
- *     Argument Data: uint8* is of type Dcm_Data2ByteType
- *     Synchronous Service Invocation. Timeout: None
- *     Returned Application Errors: RTE_E_DataServices_DID_0xF413_DID_Data_DCM_E_PENDING, RTE_E_DataServices_DID_0xF413_DID_Data_E_NOT_OK
  *   Std_ReturnType Rte_Call_DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
  *     Synchronous Service Invocation. Timeout: None
  *     Returned Application Errors: RTE_E_DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier_DCM_E_PENDING, RTE_E_DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier_E_NOT_OK
@@ -498,28 +476,6 @@ typedef P2FUNC(Std_ReturnType, RTE_CODE, FncPtrType)(void);
  *     Argument Data: uint8* is of type Dcm_Data13ByteType
  *     Synchronous Service Invocation. Timeout: None
  *     Returned Application Errors: RTE_E_DataServices_EcuIdentification_Part_Number_DCM_E_PENDING, RTE_E_DataServices_EcuIdentification_Part_Number_E_NOT_OK
- *   Std_ReturnType Rte_Call_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
- *     Synchronous Service Invocation. Timeout: None
- *     Returned Application Errors: RTE_E_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_DCM_E_PENDING, RTE_E_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_E_NOT_OK
- *   Std_ReturnType Rte_Call_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
- *     Argument Data: uint8* is of type Dcm_Data6ByteType
- *     Synchronous Service Invocation. Timeout: None
- *     Returned Application Errors: RTE_E_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_DCM_E_PENDING, RTE_E_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_E_NOT_OK
- *   Std_ReturnType Rte_Call_DataServices_Example_ReadWriteData_GlobalTime_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
- *     Synchronous Service Invocation. Timeout: None
- *     Returned Application Errors: RTE_E_DataServices_Example_ReadWriteData_GlobalTime_DCM_E_PENDING, RTE_E_DataServices_Example_ReadWriteData_GlobalTime_E_NOT_OK
- *   Std_ReturnType Rte_Call_DataServices_Example_ReadWriteData_GlobalTime_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
- *     Argument Data: uint8* is of type Dcm_Data4ByteType
- *     Synchronous Service Invocation. Timeout: None
- *     Returned Application Errors: RTE_E_DataServices_Example_ReadWriteData_GlobalTime_DCM_E_PENDING, RTE_E_DataServices_Example_ReadWriteData_GlobalTime_E_NOT_OK
- *   Std_ReturnType Rte_Call_DataServices_Example_ReadWriteData_GlobalTime_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
- *     Argument Data: uint8* is of type Dcm_Data4ByteType
- *     Synchronous Service Invocation. Timeout: None
- *     Returned Application Errors: RTE_E_DataServices_Example_ReadWriteData_GlobalTime_DCM_E_PENDING, RTE_E_DataServices_Example_ReadWriteData_GlobalTime_E_NOT_OK
- *   Std_ReturnType Rte_Call_DataServices_Example_WriteOnlyDID_DID_DataObject_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
- *     Argument Data: uint8* is of type Dcm_Data1ByteType
- *     Synchronous Service Invocation. Timeout: None
- *     Returned Application Errors: RTE_E_DataServices_Example_WriteOnlyDID_DID_DataObject_DCM_E_PENDING, RTE_E_DataServices_Example_WriteOnlyDID_DID_DataObject_E_NOT_OK
  *   Std_ReturnType Rte_Call_DataServices_Hardware_Version_Hardware_Version_Number_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
  *     Synchronous Service Invocation. Timeout: None
  *     Returned Application Errors: RTE_E_DataServices_Hardware_Version_Hardware_Version_Number_DCM_E_PENDING, RTE_E_DataServices_Hardware_Version_Hardware_Version_Number_E_NOT_OK
@@ -657,18 +613,6 @@ FUNC(void, Dcm_CODE) Dcm_MainFunction(void) /* PRQA S 0624, 3206 */ /* MD_Rte_06
   0U
 };
   Dcm_NegativeResponseCodeType Call_DataServices_Boot_Software_NumberOfModules_WriteData_ErrorCode = 0U;
-  Dcm_NegativeResponseCodeType Call_DataServices_DID_0xF410_DID_Data_ConditionCheckRead_ErrorCode = 0U;
-  Dcm_Data2ByteType Call_DataServices_DID_0xF410_DID_Data_ReadData_Data = {
-  0U, 0U
-};
-  Dcm_NegativeResponseCodeType Call_DataServices_DID_0xF412_DID_Data_ConditionCheckRead_ErrorCode = 0U;
-  Dcm_Data2ByteType Call_DataServices_DID_0xF412_DID_Data_ReadData_Data = {
-  0U, 0U
-};
-  Dcm_NegativeResponseCodeType Call_DataServices_DID_0xF413_DID_Data_ConditionCheckRead_ErrorCode = 0U;
-  Dcm_Data2ByteType Call_DataServices_DID_0xF413_DID_Data_ReadData_Data = {
-  0U, 0U
-};
   Dcm_NegativeResponseCodeType Call_DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier_ConditionCheckRead_ErrorCode = 0U;
   Dcm_Data2ByteType Call_DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier_ReadData_Data = {
   0U, 0U
@@ -725,22 +669,6 @@ FUNC(void, Dcm_CODE) Dcm_MainFunction(void) /* PRQA S 0624, 3206 */ /* MD_Rte_06
   0U, 0U, 0U, 0U, 0U, 0U, 0U, 0U, 0U, 0U, 0U, 0U, 0U
 };
   Dcm_NegativeResponseCodeType Call_DataServices_EcuIdentification_Part_Number_WriteData_ErrorCode = 0U;
-  Dcm_NegativeResponseCodeType Call_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ConditionCheckRead_ErrorCode = 0U;
-  Dcm_Data6ByteType Call_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ReadData_Data = {
-  0U, 0U, 0U, 0U, 0U, 0U
-};
-  Dcm_NegativeResponseCodeType Call_DataServices_Example_ReadWriteData_GlobalTime_ConditionCheckRead_ErrorCode = 0U;
-  Dcm_Data4ByteType Call_DataServices_Example_ReadWriteData_GlobalTime_ReadData_Data = {
-  0U, 0U, 0U, 0U
-};
-  Dcm_Data4ByteType Call_DataServices_Example_ReadWriteData_GlobalTime_WriteData_Data = {
-  0U, 0U, 0U, 0U
-};
-  Dcm_NegativeResponseCodeType Call_DataServices_Example_ReadWriteData_GlobalTime_WriteData_ErrorCode = 0U;
-  Dcm_Data1ByteType Call_DataServices_Example_WriteOnlyDID_DID_DataObject_WriteData_Data = {
-  0U
-};
-  Dcm_NegativeResponseCodeType Call_DataServices_Example_WriteOnlyDID_DID_DataObject_WriteData_ErrorCode = 0U;
   Dcm_NegativeResponseCodeType Call_DataServices_Hardware_Version_Hardware_Version_Number_ConditionCheckRead_ErrorCode = 0U;
   Dcm_Data4ByteType Call_DataServices_Hardware_Version_Hardware_Version_Number_ReadData_Data = {
   0U, 0U, 0U, 0U
@@ -1016,150 +944,6 @@ FUNC(void, Dcm_CODE) Dcm_MainFunction(void) /* PRQA S 0624, 3206 */ /* MD_Rte_06
       fct_error = TRUE;
       break;
     case RTE_E_DataServices_Boot_Software_NumberOfModules_E_NOT_OK:
-      fct_error = TRUE;
-      break;
-  }
-
-  {
-    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
-    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DID_0xF410_DID_Data_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
-  }
-  fct_status = TSC_Dcm_Rte_Call_DataServices_DID_0xF410_DID_Data_ConditionCheckRead(0U, &Call_DataServices_DID_0xF410_DID_Data_ConditionCheckRead_ErrorCode); /* PRQA S 0315, 3226 */ /* MD_Rte_0315, MD_Rte_3226 */
-  switch (fct_status)
-  {
-    case RTE_E_OK:
-      fct_error = FALSE;
-      break;
-    case RTE_E_UNCONNECTED:
-      fct_error = TRUE;
-      break;
-    case RTE_E_TIMEOUT:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_DID_0xF410_DID_Data_DCM_E_PENDING:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_DID_0xF410_DID_Data_E_NOT_OK:
-      fct_error = TRUE;
-      break;
-  }
-
-  {
-    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
-    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DID_0xF410_DID_Data_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
-  }
-  fct_status = TSC_Dcm_Rte_Call_DataServices_DID_0xF410_DID_Data_ReadData(0U, Call_DataServices_DID_0xF410_DID_Data_ReadData_Data); /* PRQA S 0315, 3226 */ /* MD_Rte_0315, MD_Rte_3226 */
-  switch (fct_status)
-  {
-    case RTE_E_OK:
-      fct_error = FALSE;
-      break;
-    case RTE_E_UNCONNECTED:
-      fct_error = TRUE;
-      break;
-    case RTE_E_TIMEOUT:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_DID_0xF410_DID_Data_DCM_E_PENDING:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_DID_0xF410_DID_Data_E_NOT_OK:
-      fct_error = TRUE;
-      break;
-  }
-
-  {
-    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
-    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DID_0xF412_DID_Data_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
-  }
-  fct_status = TSC_Dcm_Rte_Call_DataServices_DID_0xF412_DID_Data_ConditionCheckRead(0U, &Call_DataServices_DID_0xF412_DID_Data_ConditionCheckRead_ErrorCode); /* PRQA S 0315, 3226 */ /* MD_Rte_0315, MD_Rte_3226 */
-  switch (fct_status)
-  {
-    case RTE_E_OK:
-      fct_error = FALSE;
-      break;
-    case RTE_E_UNCONNECTED:
-      fct_error = TRUE;
-      break;
-    case RTE_E_TIMEOUT:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_DID_0xF412_DID_Data_DCM_E_PENDING:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_DID_0xF412_DID_Data_E_NOT_OK:
-      fct_error = TRUE;
-      break;
-  }
-
-  {
-    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
-    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DID_0xF412_DID_Data_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
-  }
-  fct_status = TSC_Dcm_Rte_Call_DataServices_DID_0xF412_DID_Data_ReadData(0U, Call_DataServices_DID_0xF412_DID_Data_ReadData_Data); /* PRQA S 0315, 3226 */ /* MD_Rte_0315, MD_Rte_3226 */
-  switch (fct_status)
-  {
-    case RTE_E_OK:
-      fct_error = FALSE;
-      break;
-    case RTE_E_UNCONNECTED:
-      fct_error = TRUE;
-      break;
-    case RTE_E_TIMEOUT:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_DID_0xF412_DID_Data_DCM_E_PENDING:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_DID_0xF412_DID_Data_E_NOT_OK:
-      fct_error = TRUE;
-      break;
-  }
-
-  {
-    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
-    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DID_0xF413_DID_Data_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
-  }
-  fct_status = TSC_Dcm_Rte_Call_DataServices_DID_0xF413_DID_Data_ConditionCheckRead(0U, &Call_DataServices_DID_0xF413_DID_Data_ConditionCheckRead_ErrorCode); /* PRQA S 0315, 3226 */ /* MD_Rte_0315, MD_Rte_3226 */
-  switch (fct_status)
-  {
-    case RTE_E_OK:
-      fct_error = FALSE;
-      break;
-    case RTE_E_UNCONNECTED:
-      fct_error = TRUE;
-      break;
-    case RTE_E_TIMEOUT:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_DID_0xF413_DID_Data_DCM_E_PENDING:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_DID_0xF413_DID_Data_E_NOT_OK:
-      fct_error = TRUE;
-      break;
-  }
-
-  {
-    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
-    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_DID_0xF413_DID_Data_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
-  }
-  fct_status = TSC_Dcm_Rte_Call_DataServices_DID_0xF413_DID_Data_ReadData(0U, Call_DataServices_DID_0xF413_DID_Data_ReadData_Data); /* PRQA S 0315, 3226 */ /* MD_Rte_0315, MD_Rte_3226 */
-  switch (fct_status)
-  {
-    case RTE_E_OK:
-      fct_error = FALSE;
-      break;
-    case RTE_E_UNCONNECTED:
-      fct_error = TRUE;
-      break;
-    case RTE_E_TIMEOUT:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_DID_0xF413_DID_Data_DCM_E_PENDING:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_DID_0xF413_DID_Data_E_NOT_OK:
       fct_error = TRUE;
       break;
   }
@@ -1664,150 +1448,6 @@ FUNC(void, Dcm_CODE) Dcm_MainFunction(void) /* PRQA S 0624, 3206 */ /* MD_Rte_06
       fct_error = TRUE;
       break;
     case RTE_E_DataServices_EcuIdentification_Part_Number_E_NOT_OK:
-      fct_error = TRUE;
-      break;
-  }
-
-  {
-    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
-    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
-  }
-  fct_status = TSC_Dcm_Rte_Call_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ConditionCheckRead(0U, &Call_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ConditionCheckRead_ErrorCode); /* PRQA S 0315, 3226 */ /* MD_Rte_0315, MD_Rte_3226 */
-  switch (fct_status)
-  {
-    case RTE_E_OK:
-      fct_error = FALSE;
-      break;
-    case RTE_E_UNCONNECTED:
-      fct_error = TRUE;
-      break;
-    case RTE_E_TIMEOUT:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_DCM_E_PENDING:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_E_NOT_OK:
-      fct_error = TRUE;
-      break;
-  }
-
-  {
-    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
-    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
-  }
-  fct_status = TSC_Dcm_Rte_Call_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ReadData(0U, Call_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ReadData_Data); /* PRQA S 0315, 3226 */ /* MD_Rte_0315, MD_Rte_3226 */
-  switch (fct_status)
-  {
-    case RTE_E_OK:
-      fct_error = FALSE;
-      break;
-    case RTE_E_UNCONNECTED:
-      fct_error = TRUE;
-      break;
-    case RTE_E_TIMEOUT:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_DCM_E_PENDING:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_E_NOT_OK:
-      fct_error = TRUE;
-      break;
-  }
-
-  {
-    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
-    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_Example_ReadWriteData_GlobalTime_ConditionCheckRead; /* PRQA S 0313 */ /* MD_Rte_TestCode */
-  }
-  fct_status = TSC_Dcm_Rte_Call_DataServices_Example_ReadWriteData_GlobalTime_ConditionCheckRead(0U, &Call_DataServices_Example_ReadWriteData_GlobalTime_ConditionCheckRead_ErrorCode); /* PRQA S 0315, 3226 */ /* MD_Rte_0315, MD_Rte_3226 */
-  switch (fct_status)
-  {
-    case RTE_E_OK:
-      fct_error = FALSE;
-      break;
-    case RTE_E_UNCONNECTED:
-      fct_error = TRUE;
-      break;
-    case RTE_E_TIMEOUT:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_Example_ReadWriteData_GlobalTime_DCM_E_PENDING:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_Example_ReadWriteData_GlobalTime_E_NOT_OK:
-      fct_error = TRUE;
-      break;
-  }
-
-  {
-    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
-    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_Example_ReadWriteData_GlobalTime_ReadData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
-  }
-  fct_status = TSC_Dcm_Rte_Call_DataServices_Example_ReadWriteData_GlobalTime_ReadData(0U, Call_DataServices_Example_ReadWriteData_GlobalTime_ReadData_Data); /* PRQA S 0315, 3226 */ /* MD_Rte_0315, MD_Rte_3226 */
-  switch (fct_status)
-  {
-    case RTE_E_OK:
-      fct_error = FALSE;
-      break;
-    case RTE_E_UNCONNECTED:
-      fct_error = TRUE;
-      break;
-    case RTE_E_TIMEOUT:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_Example_ReadWriteData_GlobalTime_DCM_E_PENDING:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_Example_ReadWriteData_GlobalTime_E_NOT_OK:
-      fct_error = TRUE;
-      break;
-  }
-
-  {
-    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
-    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_Example_ReadWriteData_GlobalTime_WriteData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
-  }
-  fct_status = TSC_Dcm_Rte_Call_DataServices_Example_ReadWriteData_GlobalTime_WriteData(Call_DataServices_Example_ReadWriteData_GlobalTime_WriteData_Data, 0U, &Call_DataServices_Example_ReadWriteData_GlobalTime_WriteData_ErrorCode); /* PRQA S 0315, 3226 */ /* MD_Rte_0315, MD_Rte_3226 */
-  switch (fct_status)
-  {
-    case RTE_E_OK:
-      fct_error = FALSE;
-      break;
-    case RTE_E_UNCONNECTED:
-      fct_error = TRUE;
-      break;
-    case RTE_E_TIMEOUT:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_Example_ReadWriteData_GlobalTime_DCM_E_PENDING:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_Example_ReadWriteData_GlobalTime_E_NOT_OK:
-      fct_error = TRUE;
-      break;
-  }
-
-  {
-    FncPtrType Dcm_FctPtr; /* PRQA S 3408 */ /* MD_Rte_TestCode */
-    Dcm_FctPtr = (FncPtrType)TSC_Dcm_Rte_Call_DataServices_Example_WriteOnlyDID_DID_DataObject_WriteData; /* PRQA S 0313 */ /* MD_Rte_TestCode */
-  }
-  fct_status = TSC_Dcm_Rte_Call_DataServices_Example_WriteOnlyDID_DID_DataObject_WriteData(Call_DataServices_Example_WriteOnlyDID_DID_DataObject_WriteData_Data, 0U, &Call_DataServices_Example_WriteOnlyDID_DID_DataObject_WriteData_ErrorCode); /* PRQA S 0315, 3226 */ /* MD_Rte_0315, MD_Rte_3226 */
-  switch (fct_status)
-  {
-    case RTE_E_OK:
-      fct_error = FALSE;
-      break;
-    case RTE_E_UNCONNECTED:
-      fct_error = TRUE;
-      break;
-    case RTE_E_TIMEOUT:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_Example_WriteOnlyDID_DID_DataObject_DCM_E_PENDING:
-      fct_error = TRUE;
-      break;
-    case RTE_E_DataServices_Example_WriteOnlyDID_DID_DataObject_E_NOT_OK:
       fct_error = TRUE;
       break;
   }

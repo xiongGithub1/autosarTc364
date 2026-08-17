@@ -100,69 +100,6 @@
               </PROVIDED-COM-SPECS>
               <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier</PROVIDED-INTERFACE-TREF>
             </P-PORT-PROTOTYPE>
-            <P-PORT-PROTOTYPE UUID="7F5BA402-B5ED-4C8F-9234-7912AF9F686E">
-              <SHORT-NAME>DataServices_DID_0xF410_DID_Data</SHORT-NAME>
-              <ADMIN-DATA>
-                <SDGS>
-                  <SDG GID="DV:DEV">
-                    <SD GID="DV:ImportModePreset">Keep</SD>
-                  </SDG>
-                </SDGS>
-              </ADMIN-DATA>
-              <PROVIDED-COM-SPECS>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF410_DID_Data/ConditionCheckRead</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF410_DID_Data/ReadData</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-              </PROVIDED-COM-SPECS>
-              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF410_DID_Data</PROVIDED-INTERFACE-TREF>
-            </P-PORT-PROTOTYPE>
-            <P-PORT-PROTOTYPE UUID="EAF8ED5D-1F1B-4B84-9B02-230CC40A65A5">
-              <SHORT-NAME>DataServices_DID_0xF412_DID_Data</SHORT-NAME>
-              <ADMIN-DATA>
-                <SDGS>
-                  <SDG GID="DV:DEV">
-                    <SD GID="DV:ImportModePreset">Keep</SD>
-                  </SDG>
-                </SDGS>
-              </ADMIN-DATA>
-              <PROVIDED-COM-SPECS>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF412_DID_Data/ConditionCheckRead</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF412_DID_Data/ReadData</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-              </PROVIDED-COM-SPECS>
-              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF412_DID_Data</PROVIDED-INTERFACE-TREF>
-            </P-PORT-PROTOTYPE>
-            <P-PORT-PROTOTYPE UUID="7FB02DE8-1B61-43E8-AD16-1131FBD4797F">
-              <SHORT-NAME>DataServices_DID_0xF413_DID_Data</SHORT-NAME>
-              <ADMIN-DATA>
-                <SDGS>
-                  <SDG GID="DV:DEV">
-                    <SD GID="DV:ImportModePreset">Keep</SD>
-                  </SDG>
-                </SDGS>
-              </ADMIN-DATA>
-              <PROVIDED-COM-SPECS>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF413_DID_Data/ConditionCheckRead</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF413_DID_Data/ReadData</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-              </PROVIDED-COM-SPECS>
-              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF413_DID_Data</PROVIDED-INTERFACE-TREF>
-            </P-PORT-PROTOTYPE>
             <P-PORT-PROTOTYPE UUID="B6F5E142-CDEC-4893-86D8-AEB762A150F8">
               <SHORT-NAME>DataServices_EcuIdentification_Part_Number</SHORT-NAME>
               <ADMIN-DATA>
@@ -187,52 +124,6 @@
                 </SERVER-COM-SPEC>
               </PROVIDED-COM-SPECS>
               <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_EcuIdentification_Part_Number</PROVIDED-INTERFACE-TREF>
-            </P-PORT-PROTOTYPE>
-            <P-PORT-PROTOTYPE UUID="3F422A20-12EC-4C31-B97F-5A35BEBF24B6">
-              <SHORT-NAME>DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime</SHORT-NAME>
-              <ADMIN-DATA>
-                <SDGS>
-                  <SDG GID="DV:DEV">
-                    <SD GID="DV:ImportModePreset">Keep</SD>
-                  </SDG>
-                </SDGS>
-              </ADMIN-DATA>
-              <PROVIDED-COM-SPECS>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime/ConditionCheckRead</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime/ReadData</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-              </PROVIDED-COM-SPECS>
-              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime</PROVIDED-INTERFACE-TREF>
-            </P-PORT-PROTOTYPE>
-            <P-PORT-PROTOTYPE UUID="5894DB6C-BE32-4169-BEFA-3517FAEAC94C">
-              <SHORT-NAME>DataServices_Example_ReadWriteData_GlobalTime</SHORT-NAME>
-              <ADMIN-DATA>
-                <SDGS>
-                  <SDG GID="DV:DEV">
-                    <SD GID="DV:ImportModePreset">Keep</SD>
-                  </SDG>
-                </SDGS>
-              </ADMIN-DATA>
-              <PROVIDED-COM-SPECS>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadWriteData_GlobalTime/WriteData</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadWriteData_GlobalTime/ConditionCheckRead</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadWriteData_GlobalTime/ReadData</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-              </PROVIDED-COM-SPECS>
-              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadWriteData_GlobalTime</PROVIDED-INTERFACE-TREF>
             </P-PORT-PROTOTYPE>
             <P-PORT-PROTOTYPE UUID="E9EE678A-040B-4544-8F50-29F5FD59F24A">
               <SHORT-NAME>DataServices_Hardware_Version_Hardware_Version_Number</SHORT-NAME>
@@ -460,10 +351,6 @@
             <SWC-INTERNAL-BEHAVIOR UUID="E00CF0A3-FAD5-41C0-B5E0-B070A07FF40F">
               <SHORT-NAME>DigApp_InternalBehavior</SHORT-NAME>
               <EVENTS>
-                <INIT-EVENT UUID="5787793D-E2BE-491E-902E-05C3CC33C9C8">
-                  <SHORT-NAME>Dig_InitEvent</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DigApp/DigApp_InternalBehavior/Dig_Init</START-ON-EVENT-REF>
-                </INIT-EVENT>
                 <OPERATION-INVOKED-EVENT UUID="F317403D-645A-48F7-87B3-30F362AFD382">
                   <SHORT-NAME>OIT_DataServices_Spare_Part_Number_Spare_Part_Number_WriteData_DataServices_Spare_Part_Number_Spare_Part_Number_WriteData</SHORT-NAME>
                   <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DigApp/DigApp_InternalBehavior/DataServices_Spare_Part_Number_Spare_Part_Number_WriteData</START-ON-EVENT-REF>
@@ -528,22 +415,6 @@
                     <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_UnlockedL1/GetSeed</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT UUID="EA960EAC-B7B2-44F2-92A0-B98D4E4EFAA6">
-                  <SHORT-NAME>OIT_DataServices_DID_0xF413_DID_Data_ConditionCheckRead_DataServices_DID_0xF413_DID_Data_ConditionCheckRead</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DigApp/DigApp_InternalBehavior/DataServices_DID_0xF413_DID_Data_ConditionCheckRead</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DigApp/DataServices_DID_0xF413_DID_Data</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF413_DID_Data/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT UUID="FC84E093-06D7-4F7F-AD5C-7315C41795F5">
-                  <SHORT-NAME>OIT_DataServices_DID_0xF413_DID_Data_ReadData_DataServices_DID_0xF413_DID_Data_ReadData</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DigApp/DigApp_InternalBehavior/DataServices_DID_0xF413_DID_Data_ReadData</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DigApp/DataServices_DID_0xF413_DID_Data</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF413_DID_Data/ReadData</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT UUID="5414E548-2A46-46F2-8BAF-BA6410CD5A67">
                   <SHORT-NAME>OIT_DataServices_Boot_Software_NumberOfModules_WriteData_DataServices_Boot_Software_NumberOfModules_WriteData</SHORT-NAME>
                   <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DigApp/DigApp_InternalBehavior/DataServices_Boot_Software_NumberOfModules_WriteData</START-ON-EVENT-REF>
@@ -566,22 +437,6 @@
                   <OPERATION-IREF>
                     <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DigApp/DataServices_Boot_Software_NumberOfModules</CONTEXT-P-PORT-REF>
                     <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_NumberOfModules/ReadData</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT UUID="87A41230-F39A-4231-A960-7C83590E2FAA">
-                  <SHORT-NAME>OIT_DataServices_DID_0xF412_DID_Data_ConditionCheckRead_DataServices_DID_0xF412_DID_Data_ConditionCheckRead</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DigApp/DigApp_InternalBehavior/DataServices_DID_0xF412_DID_Data_ConditionCheckRead</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DigApp/DataServices_DID_0xF412_DID_Data</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF412_DID_Data/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT UUID="0A431205-FE63-47B9-84B7-7B4740BA2F82">
-                  <SHORT-NAME>OIT_DataServices_DID_0xF412_DID_Data_ReadData_DataServices_DID_0xF412_DID_Data_ReadData</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DigApp/DigApp_InternalBehavior/DataServices_DID_0xF412_DID_Data_ReadData</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DigApp/DataServices_DID_0xF412_DID_Data</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF412_DID_Data/ReadData</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT UUID="0FBDA38F-C3CA-423B-8340-E9F2A4C592A8">
@@ -744,22 +599,6 @@
                     <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/RoutineServices_SampleRoutineControl_StartOnly/Start</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT UUID="F9935EEA-6C2A-4D97-A766-D7045D6C54DC">
-                  <SHORT-NAME>OIT_DataServices_DID_0xF410_DID_Data_ConditionCheckRead_DataServices_DID_0xF410_DID_Data_ConditionCheckRead</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DigApp/DigApp_InternalBehavior/DataServices_DID_0xF410_DID_Data_ConditionCheckRead</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DigApp/DataServices_DID_0xF410_DID_Data</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF410_DID_Data/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT UUID="7F14B876-66B3-45FF-9279-86C326115E63">
-                  <SHORT-NAME>OIT_DataServices_DID_0xF410_DID_Data_ReadData_DataServices_DID_0xF410_DID_Data_ReadData</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DigApp/DigApp_InternalBehavior/DataServices_DID_0xF410_DID_Data_ReadData</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DigApp/DataServices_DID_0xF410_DID_Data</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF410_DID_Data/ReadData</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT UUID="70647BE2-5E98-4828-876C-3DECEF521769">
                   <SHORT-NAME>OIT_DataServices_EcuIdentification_Part_Number_WriteData_DataServices_EcuIdentification_Part_Number_WriteData</SHORT-NAME>
                   <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DigApp/DigApp_InternalBehavior/DataServices_EcuIdentification_Part_Number_WriteData</START-ON-EVENT-REF>
@@ -782,22 +621,6 @@
                   <OPERATION-IREF>
                     <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DigApp/DataServices_EcuIdentification_Part_Number</CONTEXT-P-PORT-REF>
                     <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_EcuIdentification_Part_Number/ReadData</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT UUID="D4E8940F-4B3C-4BBF-A409-33572AEE79A2">
-                  <SHORT-NAME>OIT_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ConditionCheckRead_DataServices_Example_ReadOnlyDID_DID_Data_GlF3340FE2</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DigApp/DigApp_InternalBehavior/DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ConditionCheckRead</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DigApp/DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT UUID="9B28F3E5-4449-4AA8-A73B-6DA2875ECC87">
-                  <SHORT-NAME>OIT_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ReadData_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ReadData</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DigApp/DigApp_InternalBehavior/DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ReadData</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DigApp/DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime/ReadData</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT UUID="379A0408-5618-41BA-AE39-A7284AFEF1DB">
@@ -840,42 +663,12 @@
                     <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_Boot_Software_Identification/ReadData</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT UUID="6107B0CE-848B-4744-BA2C-BC410371F3D9">
-                  <SHORT-NAME>OIT_DataServices_Example_ReadWriteData_GlobalTime_WriteData_DataServices_Example_ReadWriteData_GlobalTime_WriteData</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DigApp/DigApp_InternalBehavior/DataServices_Example_ReadWriteData_GlobalTime_WriteData</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DigApp/DataServices_Example_ReadWriteData_GlobalTime</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadWriteData_GlobalTime/WriteData</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT UUID="6942D8EE-6FC5-427F-9E4D-9AF4587AE8B6">
-                  <SHORT-NAME>OIT_DataServices_Example_ReadWriteData_GlobalTime_ConditionCheckRead_DataServices_Example_ReadWriteData_GlobalTime_Condi7133933A</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DigApp/DigApp_InternalBehavior/DataServices_Example_ReadWriteData_GlobalTime_ConditionCheckRead</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DigApp/DataServices_Example_ReadWriteData_GlobalTime</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadWriteData_GlobalTime/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT UUID="778A6024-112F-4B8E-80B9-0303CC069C88">
-                  <SHORT-NAME>OIT_DataServices_Example_ReadWriteData_GlobalTime_ReadData_DataServices_Example_ReadWriteData_GlobalTime_ReadData</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DigApp/DigApp_InternalBehavior/DataServices_Example_ReadWriteData_GlobalTime_ReadData</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/DigApp/DataServices_Example_ReadWriteData_GlobalTime</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadWriteData_GlobalTime/ReadData</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
+                <INIT-EVENT UUID="D0CB7C8C-5544-41F1-92A0-874A8290E508">
+                  <SHORT-NAME>DigInitEvent</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/DigApp/DigApp_InternalBehavior/DigInit</START-ON-EVENT-REF>
+                </INIT-EVENT>
               </EVENTS>
               <RUNNABLES>
-                <RUNNABLE-ENTITY UUID="8490A8FE-E7A4-448D-87C3-9262C4F12CE5">
-                  <SHORT-NAME>Dig_Init</SHORT-NAME>
-                  <ADMIN-DATA>
-                    <SDGS>
-                      <SDG GID="edve:RunnableKind">
-                        <SD>InitRunnable</SD>
-                      </SDG>
-                    </SDGS>
-                  </ADMIN-DATA>
-                </RUNNABLE-ENTITY>
                 <RUNNABLE-ENTITY UUID="E6849A54-7300-485D-A086-E9DB03EFE75B">
                   <SHORT-NAME>DataServices_Spare_Part_Number_Spare_Part_Number_WriteData</SHORT-NAME>
                 </RUNNABLE-ENTITY>
@@ -900,12 +693,6 @@
                 <RUNNABLE-ENTITY UUID="2B95C14D-54E7-4575-ADFE-D7CA4B20CA0B">
                   <SHORT-NAME>SecurityAccess_UnlockedL1_GetSeed</SHORT-NAME>
                 </RUNNABLE-ENTITY>
-                <RUNNABLE-ENTITY UUID="72E5737D-C6D6-461E-BEE1-0269F1A04DBE">
-                  <SHORT-NAME>DataServices_DID_0xF413_DID_Data_ConditionCheckRead</SHORT-NAME>
-                </RUNNABLE-ENTITY>
-                <RUNNABLE-ENTITY UUID="894FBB58-C8E2-4681-A4CC-325E31594A0A">
-                  <SHORT-NAME>DataServices_DID_0xF413_DID_Data_ReadData</SHORT-NAME>
-                </RUNNABLE-ENTITY>
                 <RUNNABLE-ENTITY UUID="BB7BE17C-3A42-4AB6-AA1E-E03E4A741FB2">
                   <SHORT-NAME>DataServices_Boot_Software_NumberOfModules_WriteData</SHORT-NAME>
                 </RUNNABLE-ENTITY>
@@ -914,12 +701,6 @@
                 </RUNNABLE-ENTITY>
                 <RUNNABLE-ENTITY UUID="430436A7-E7DD-41FB-A900-B7BA44083549">
                   <SHORT-NAME>DataServices_Boot_Software_NumberOfModules_ReadData</SHORT-NAME>
-                </RUNNABLE-ENTITY>
-                <RUNNABLE-ENTITY UUID="7A3ACBDD-3E80-409B-93C8-19D708390E4D">
-                  <SHORT-NAME>DataServices_DID_0xF412_DID_Data_ConditionCheckRead</SHORT-NAME>
-                </RUNNABLE-ENTITY>
-                <RUNNABLE-ENTITY UUID="C7AF167D-AD15-4011-8BA1-FC1DEA48987E">
-                  <SHORT-NAME>DataServices_DID_0xF412_DID_Data_ReadData</SHORT-NAME>
                 </RUNNABLE-ENTITY>
                 <RUNNABLE-ENTITY UUID="597B092F-58FC-49A6-8CE1-5A64AD4FA617">
                   <SHORT-NAME>DataServices_SerialNumber_SerialNumber_WriteData</SHORT-NAME>
@@ -981,12 +762,6 @@
                 <RUNNABLE-ENTITY UUID="8166930F-085A-4BB8-A9DC-269B02BE3875">
                   <SHORT-NAME>RoutineServices_SampleRoutineControl_StartOnly_Start</SHORT-NAME>
                 </RUNNABLE-ENTITY>
-                <RUNNABLE-ENTITY UUID="B02DEEE5-129E-41D9-A5D8-AF1CBAD41D86">
-                  <SHORT-NAME>DataServices_DID_0xF410_DID_Data_ConditionCheckRead</SHORT-NAME>
-                </RUNNABLE-ENTITY>
-                <RUNNABLE-ENTITY UUID="51DDCE17-45F0-4BA0-BBC6-3B08EA0A5E80">
-                  <SHORT-NAME>DataServices_DID_0xF410_DID_Data_ReadData</SHORT-NAME>
-                </RUNNABLE-ENTITY>
                 <RUNNABLE-ENTITY UUID="1295BDD9-A7A4-4532-B384-16BC9712F96E">
                   <SHORT-NAME>DataServices_EcuIdentification_Part_Number_WriteData</SHORT-NAME>
                 </RUNNABLE-ENTITY>
@@ -995,12 +770,6 @@
                 </RUNNABLE-ENTITY>
                 <RUNNABLE-ENTITY UUID="D59CF339-5C14-4302-9033-27D169AFA522">
                   <SHORT-NAME>DataServices_EcuIdentification_Part_Number_ReadData</SHORT-NAME>
-                </RUNNABLE-ENTITY>
-                <RUNNABLE-ENTITY UUID="73D61574-D6F0-4E60-BEEA-900A7297858D">
-                  <SHORT-NAME>DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ConditionCheckRead</SHORT-NAME>
-                </RUNNABLE-ENTITY>
-                <RUNNABLE-ENTITY UUID="AAC14B44-3516-4FB2-B80D-2BC595C7A590">
-                  <SHORT-NAME>DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ReadData</SHORT-NAME>
                 </RUNNABLE-ENTITY>
                 <RUNNABLE-ENTITY UUID="88ECD51C-9739-4479-9D26-D7BD238830FC">
                   <SHORT-NAME>SecurityAccess_Level_3_CompareKey</SHORT-NAME>
@@ -1017,14 +786,15 @@
                 <RUNNABLE-ENTITY UUID="AA548C51-2EC5-4401-A2ED-CE989F772ECF">
                   <SHORT-NAME>DataServices_Boot_Software_Boot_Software_Identification_ReadData</SHORT-NAME>
                 </RUNNABLE-ENTITY>
-                <RUNNABLE-ENTITY UUID="E9173890-433E-4B9C-9F1E-DF67706B7429">
-                  <SHORT-NAME>DataServices_Example_ReadWriteData_GlobalTime_WriteData</SHORT-NAME>
-                </RUNNABLE-ENTITY>
-                <RUNNABLE-ENTITY UUID="D0D82392-9D96-4C49-A47C-C8CE9CD69C66">
-                  <SHORT-NAME>DataServices_Example_ReadWriteData_GlobalTime_ConditionCheckRead</SHORT-NAME>
-                </RUNNABLE-ENTITY>
-                <RUNNABLE-ENTITY UUID="FAB612EF-9784-4D42-BFBA-37472EE55D24">
-                  <SHORT-NAME>DataServices_Example_ReadWriteData_GlobalTime_ReadData</SHORT-NAME>
+                <RUNNABLE-ENTITY UUID="F2F150A8-BC13-43E0-9A56-EFD414B59BD5">
+                  <SHORT-NAME>DigInit</SHORT-NAME>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="edve:RunnableKind">
+                        <SD>InitRunnable</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
                 </RUNNABLE-ENTITY>
               </RUNNABLES>
               <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>

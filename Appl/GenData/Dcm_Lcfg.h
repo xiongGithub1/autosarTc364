@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Dcm_Lcfg.h
- *   Generation Time: 2026-08-05 22:06:48
+ *   Generation Time: 2024-08-11 18:29:27
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -93,7 +93,6 @@
 # define Dcm_CfgWrapRidMgrRidLookUpTable(index)                                (Dcm_CfgRidMgrRidLookUpTable[(index)])                                /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
 # define Dcm_CfgWrapRidMgrRidInfo(index)                                       (Dcm_CfgRidMgrRidInfo[(index)])                                       /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
 # define Dcm_CfgWrapRidMgrOpInfo(index)                                        (Dcm_CfgRidMgrOpInfo[(index)])                                        /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
-# define Dcm_CfgWrapSvc22SupportedIdMask(index)                                (&Dcm_CfgSvc22SupportedIdMask[(index)])                               /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
 # define Dcm_CfgWrapDiagSvcIdExecPrecondTable(index)                           (Dcm_CfgDiagSvcIdExecPrecondTable[(index)])                           /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
 # define Dcm_CfgWrapSvc11SubFuncInfo(index)                                    (&Dcm_CfgSvc11SubFuncInfo[(index)])                                   /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
 # define Dcm_CfgWrapSvc19SubFuncInfo(index)                                    (&Dcm_CfgSvc19SubFuncInfo[(index)])                                   /* PRQA S 3453 */ /* MD_MSR_FctLikeMacro */
@@ -2669,17 +2668,10 @@ extern CONST(uint8, DCM_CONST) Dcm_CfgSvc85SubFuncLookUpTable[3];
 # define DCM_START_SEC_CONST_16
 # include "Dcm_MemMap.h"                                                                                                                             /* PRQA S 5087 */ /* MD_MSR_MemMap */
 /*! DID look up table  */
-extern CONST(uint16, DCM_CONST) Dcm_CfgDidMgrDidLookUpTable[16];
+extern CONST(uint16, DCM_CONST) Dcm_CfgDidMgrDidLookUpTable[10];
 /*! RID look up table  */
 extern CONST(uint16, DCM_CONST) Dcm_CfgRidMgrRidLookUpTable[3];
 # define DCM_STOP_SEC_CONST_16
-# include "Dcm_MemMap.h"                                                                                                                             /* PRQA S 5087 */ /* MD_MSR_MemMap */
-
-# define DCM_START_SEC_CONST_32
-# include "Dcm_MemMap.h"                                                                                                                             /* PRQA S 5087 */ /* MD_MSR_MemMap */
-/*! Service 0x22 supported ID table  */
-extern CONST(uint32, DCM_CONST) Dcm_CfgSvc22SupportedIdMask[1];
-# define DCM_STOP_SEC_CONST_32
 # include "Dcm_MemMap.h"                                                                                                                             /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 # define DCM_START_SEC_CONST_UNSPECIFIED
@@ -2713,13 +2705,13 @@ extern CONST(Dcm_CfgDidMgrDidRangeType, DCM_CONST) Dcm_CfgDidMgrDidRanges[1];
 /*! DID ranges to DID info map */
 extern CONST(Dcm_CfgDidMgrDidInfoRefType, DCM_CONST) Dcm_CfgDidMgrRangeDidInfoRefs[1];
 /*! DID properties */
-extern CONST(Dcm_CfgDidMgrDidInfoType, DCM_CONST) Dcm_CfgDidMgrDidInfo[15];
+extern CONST(Dcm_CfgDidMgrDidInfoType, DCM_CONST) Dcm_CfgDidMgrDidInfo[9];
 /*! DID operation properties */
-extern CONST(Dcm_CfgDidMgrDidOpInfoType, DCM_CONST) Dcm_CfgDidMgrDidOpInfo[25];
+extern CONST(Dcm_CfgDidMgrDidOpInfoType, DCM_CONST) Dcm_CfgDidMgrDidOpInfo[18];
 /*! DID operation classes */
-extern CONST(Dcm_CfgDidMgrDidOpClassInfoType, DCM_CONST) Dcm_CfgDidMgrDidOpClassInfo[42];
+extern CONST(Dcm_CfgDidMgrDidOpClassInfoType, DCM_CONST) Dcm_CfgDidMgrDidOpClassInfo[30];
 /*! DID signal operation classes */
-extern CONST(Dcm_CfgDidMgrSignalOpClassInfoType, DCM_CONST) Dcm_CfgDidMgrSignalOpClassInfo[56];
+extern CONST(Dcm_CfgDidMgrSignalOpClassInfoType, DCM_CONST) Dcm_CfgDidMgrSignalOpClassInfo[44];
 /*! IO control DID operation properties */
 extern CONST(Dcm_CfgDidMgrOpInfoIoControlType, DCM_CONST) Dcm_CfgDidMgrOpInfoIoControl[1];
 /*! Bridge for combined DID operation properties */

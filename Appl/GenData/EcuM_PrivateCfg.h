@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_PrivateCfg.h
- *   Generation Time: 2026-08-10 12:08:44
+ *   Generation Time: 2024-08-11 18:29:27
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -97,8 +97,8 @@
 #define EcuM_GetDriverInitOneOfPCConfig()                                                           EcuM_DriverInitOne  /**< the pointer to EcuM_DriverInitOne */
 #define EcuM_GetDriverInitThreeOfPCConfig()                                                         EcuM_DriverInitThree  /**< the pointer to EcuM_DriverInitThree */
 #define EcuM_GetDriverInitTwoOfPCConfig()                                                           EcuM_DriverInitTwo  /**< the pointer to EcuM_DriverInitTwo */
-#define EcuM_GetEcuM_CRCHash_LowerOfPCConfig()                                                      0xF49019D8u
-#define EcuM_GetEcuM_CRCHash_UpperOfPCConfig()                                                      0x2FC53224u
+#define EcuM_GetEcuM_CRCHash_LowerOfPCConfig()                                                      0xA0FD6EC6u
+#define EcuM_GetEcuM_CRCHash_UpperOfPCConfig()                                                      0x95D0A8ECu
 #define EcuM_GetGeneratorCompatibilityVersionOfPCConfig()                                           3072u
 #define EcuM_GetKillAllInProgressOfPCConfig()                                                       (&(EcuM_KillAllInProgress))  /**< the pointer to EcuM_KillAllInProgress */
 #define EcuM_GetMaxWakeupSourceCountOfPCConfig()                                                    6u  /**< Max Wakeup source count. */

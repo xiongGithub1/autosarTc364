@@ -11,7 +11,7 @@
  *      → MotorCdd_AdcRunFastLoop（电流换算 → 滤波 → MotorCdd_FocFastLoop）
  *  电流换算：i = (VRO - VOx - offset) × CURR_CON_FACTOR（分流电阻+增益）
  *  offset：PWM 关闭零电流状态下累计 100 拍平均值，滤除运放/ADC 零偏。
- *  滤波：一阶低通 alpha=0.3857（约 1 kHz，可 UDE 调，0=关）。
+ *  滤波：一阶低通 y+=α(x-y)；默认 α=0.611（fc=fs/4=2500 Hz @10 kHz），UDE 可改。
  **********************************************************************************************************************/
 #include "MotorCdd_Adc.h"
 #include "MotorCdd_Foc.h"
@@ -39,8 +39,17 @@
 #define MOTORCDD_ADC_VRO_CON_FACTOR            (0.0012210012210012F)
 #define MOTORCDD_ADC_VINV_CON_FACTOR           (0.0095238095238095F)
 #define MOTORCDD_ADC_OFFSET_AVG_COUNT          (100U)
-/* TC364 reference: 10 kHz sample rate, first-order LPF near 1 kHz. */
-#define MOTORCDD_ADC_CURRENT_FILTER_ALPHA_DEFAULT (0.3857F)
+/*
+ * First-order LPF @ fs=10 kHz (same form as upperComputer):
+ *   y += α * (x - y) ,  α = 2π·fc·Ts / (1 + 2π·fc·Ts)
+ * Defaults to fc = fs/4 = 2500 Hz → α = 0.6110
+ * For fc = fs/3 ≈ 3333 Hz set MotorCdd_AdcCurrentFilterAlpha = 0.6768 in UDE.
+ * (Old 0.1116 was ~400 Hz — too heavy for current loop.)
+ */
+#define MOTORCDD_ADC_CURRENT_FILTER_ALPHA_FS_DIV4  (0.6110F) /* fc=2500 Hz */
+#define MOTORCDD_ADC_CURRENT_FILTER_ALPHA_FS_DIV3  (0.6768F) /* fc≈3333 Hz */
+#define MOTORCDD_ADC_CURRENT_FILTER_ALPHA_DEFAULT  \
+    (MOTORCDD_ADC_CURRENT_FILTER_ALPHA_FS_DIV4)
 
 /* ADC HW trigger is GTM ATOM0 channel 7, shared with PWM ATOM0 CH1/2/3. */
 #define MOTORCDD_ADC_TRIGGER_ATOM_MODULE        (0U)
@@ -69,6 +78,10 @@ volatile uint8 MotorCdd_AdcCurrentFilterEnabled = 1U;
 volatile uint8 MotorCdd_AdcCurrentFilterReady = 0U;
 volatile float32 MotorCdd_AdcCurrentFilterAlpha =
     MOTORCDD_ADC_CURRENT_FILTER_ALPHA_DEFAULT;
+/* 1 = reconstruct one phase by iu+iv+iw=0 (default: W from U+V). */
+volatile uint8 MotorCdd_AdcReconstructEnable = 1U;
+/* 0=U=-(V+W), 1=V=-(U+W), 2=W=-(U+V). Prefer 2: U/V on G0/G2 sync. */
+volatile uint8 MotorCdd_AdcReconstructPhase = 2U;
 volatile uint32 MotorCdd_AdcTriggerTick = MOTORCDD_ADC_TRIGGER_DEFAULT_TICKS;
 volatile uint32 MotorCdd_AdcTriggerTickApplied = 0U;
 volatile uint32 MotorCdd_AdcPwmCounterSyncCount = 0U;
@@ -183,6 +196,55 @@ static void MotorCdd_AdcFilterPhaseCurrents(void)
   MotorCdd_AdcPhysical.iu_A = MotorCdd_AdcCurrentFilterIuA;
   MotorCdd_AdcPhysical.iv_A = MotorCdd_AdcCurrentFilterIvA;
   MotorCdd_AdcPhysical.iw_A = MotorCdd_AdcCurrentFilterIwA;
+}
+
+/* Three-wire motor: iu+iv+iw must be ~0. Subtract common-mode to kill
+ * sensor/ADC bias that otherwise shifts all three phases below (or above) 0.
+ * Skipped when third phase is reconstructed (sum is already forced to 0). */
+static void MotorCdd_AdcRemoveCommonMode(void)
+{
+  float32 common;
+
+  if (MotorCdd_AdcReconstructEnable != 0U)
+  {
+    return;
+  }
+
+  common =
+      (MotorCdd_AdcPhysical.iu_A + MotorCdd_AdcPhysical.iv_A +
+       MotorCdd_AdcPhysical.iw_A) *
+      (1.0F / 3.0F);
+
+  MotorCdd_AdcPhysical.iu_A -= common;
+  MotorCdd_AdcPhysical.iv_A -= common;
+  MotorCdd_AdcPhysical.iw_A -= common;
+}
+
+/* Reconstruct one phase from the other two (Kirchhoff). Default: measure
+ * U(VO1)+V(VO2) on G0/G2 sync group, set W = -(U+V). */
+static void MotorCdd_AdcReconstructThirdPhase(void)
+{
+  if (MotorCdd_AdcReconstructEnable == 0U)
+  {
+    return;
+  }
+
+  switch (MotorCdd_AdcReconstructPhase)
+  {
+    case 0U:
+      MotorCdd_AdcPhysical.iuRaw_A =
+          -(MotorCdd_AdcPhysical.ivRaw_A + MotorCdd_AdcPhysical.iwRaw_A);
+      break;
+    case 1U:
+      MotorCdd_AdcPhysical.ivRaw_A =
+          -(MotorCdd_AdcPhysical.iuRaw_A + MotorCdd_AdcPhysical.iwRaw_A);
+      break;
+    case 2U:
+    default:
+      MotorCdd_AdcPhysical.iwRaw_A =
+          -(MotorCdd_AdcPhysical.iuRaw_A + MotorCdd_AdcPhysical.ivRaw_A);
+      break;
+  }
 }
 
 static void MotorCdd_AdcResetOffsetAccumulator(void)
@@ -313,7 +375,10 @@ void MotorCdd_AdcConvertToPhysical(void)
   MotorCdd_AdcPhysical.iwRaw_A = MotorCdd_AdcRawToCurrent(MotorCdd_AdcRaw.vo3,
                                                           MotorCdd_AdcRaw.vro,
                                                           MotorCdd_AdcPhaseOffsetVo3);
+  /* U/V on G0/G2 sync; default rebuild W so FOC never uses lone G3 sample. */
+  MotorCdd_AdcReconstructThirdPhase();
   MotorCdd_AdcFilterPhaseCurrents();
+  MotorCdd_AdcRemoveCommonMode();
   MotorCdd_AdcPhysical.vro_V = ((float32)MotorCdd_AdcRaw.vro * MOTORCDD_ADC_VRO_CON_FACTOR);
   MotorCdd_AdcPhysical.vinv_V = ((float32)MotorCdd_AdcRaw.vinv * MOTORCDD_ADC_VINV_CON_FACTOR);
 }

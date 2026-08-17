@@ -65,30 +65,6 @@ Std_ReturnType TSC_Dcm_Rte_Call_DataServices_Boot_Software_NumberOfModules_Write
 {
   return Rte_Call_DataServices_Boot_Software_NumberOfModules_WriteData(Data, OpStatus, ErrorCode);
 }
-Std_ReturnType TSC_Dcm_Rte_Call_DataServices_DID_0xF410_DID_Data_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
-{
-  return Rte_Call_DataServices_DID_0xF410_DID_Data_ConditionCheckRead(OpStatus, ErrorCode);
-}
-Std_ReturnType TSC_Dcm_Rte_Call_DataServices_DID_0xF410_DID_Data_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
-{
-  return Rte_Call_DataServices_DID_0xF410_DID_Data_ReadData(OpStatus, Data);
-}
-Std_ReturnType TSC_Dcm_Rte_Call_DataServices_DID_0xF412_DID_Data_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
-{
-  return Rte_Call_DataServices_DID_0xF412_DID_Data_ConditionCheckRead(OpStatus, ErrorCode);
-}
-Std_ReturnType TSC_Dcm_Rte_Call_DataServices_DID_0xF412_DID_Data_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
-{
-  return Rte_Call_DataServices_DID_0xF412_DID_Data_ReadData(OpStatus, Data);
-}
-Std_ReturnType TSC_Dcm_Rte_Call_DataServices_DID_0xF413_DID_Data_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
-{
-  return Rte_Call_DataServices_DID_0xF413_DID_Data_ConditionCheckRead(OpStatus, ErrorCode);
-}
-Std_ReturnType TSC_Dcm_Rte_Call_DataServices_DID_0xF413_DID_Data_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
-{
-  return Rte_Call_DataServices_DID_0xF413_DID_Data_ReadData(OpStatus, Data);
-}
 Std_ReturnType TSC_Dcm_Rte_Call_DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
 {
   return Rte_Call_DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier_ConditionCheckRead(OpStatus, ErrorCode);
@@ -172,30 +148,6 @@ Std_ReturnType TSC_Dcm_Rte_Call_DataServices_EcuIdentification_Part_Number_ReadD
 Std_ReturnType TSC_Dcm_Rte_Call_DataServices_EcuIdentification_Part_Number_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
 {
   return Rte_Call_DataServices_EcuIdentification_Part_Number_WriteData(Data, OpStatus, ErrorCode);
-}
-Std_ReturnType TSC_Dcm_Rte_Call_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
-{
-  return Rte_Call_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ConditionCheckRead(OpStatus, ErrorCode);
-}
-Std_ReturnType TSC_Dcm_Rte_Call_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
-{
-  return Rte_Call_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ReadData(OpStatus, Data);
-}
-Std_ReturnType TSC_Dcm_Rte_Call_DataServices_Example_ReadWriteData_GlobalTime_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
-{
-  return Rte_Call_DataServices_Example_ReadWriteData_GlobalTime_ConditionCheckRead(OpStatus, ErrorCode);
-}
-Std_ReturnType TSC_Dcm_Rte_Call_DataServices_Example_ReadWriteData_GlobalTime_ReadData(Dcm_OpStatusType OpStatus, uint8 *Data)
-{
-  return Rte_Call_DataServices_Example_ReadWriteData_GlobalTime_ReadData(OpStatus, Data);
-}
-Std_ReturnType TSC_Dcm_Rte_Call_DataServices_Example_ReadWriteData_GlobalTime_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
-{
-  return Rte_Call_DataServices_Example_ReadWriteData_GlobalTime_WriteData(Data, OpStatus, ErrorCode);
-}
-Std_ReturnType TSC_Dcm_Rte_Call_DataServices_Example_WriteOnlyDID_DID_DataObject_WriteData(const uint8 *Data, Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
-{
-  return Rte_Call_DataServices_Example_WriteOnlyDID_DID_DataObject_WriteData(Data, OpStatus, ErrorCode);
 }
 Std_ReturnType TSC_Dcm_Rte_Call_DataServices_Hardware_Version_Hardware_Version_Number_ConditionCheckRead(Dcm_OpStatusType OpStatus, Dcm_NegativeResponseCodeType *ErrorCode)
 {

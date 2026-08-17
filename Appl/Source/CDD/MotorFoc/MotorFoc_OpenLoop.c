@@ -7,7 +7,8 @@
  *  阶段：ALIGN_RAMP(Id 斜坡) → ALIGN_HOLD(保持对齐) → RAMP(角度加速+参考过渡) → RUN(匀速推进)
  *  时间单位：本文件计数均为快速环拍数（10 kHz，一拍 = 100 µs）。
  *  参数全部为 volatile，可由 UDE 在线调整（见 MotorFoc_OpenLoop.h）。
- **********************************************************************************************************************/#include "MotorFoc_OpenLoop.h"
+ **********************************************************************************************************************/
+#include "MotorFoc_OpenLoop.h"
 
 #define MOTORFOC_OL_TWO_PI                     (6.2831853071795864769F)
 #define MOTORFOC_OL_DEG_TO_RAD                 (0.01745329251994329577F)
@@ -19,6 +20,10 @@
 #define MOTORFOC_OL_ACCEL_TICKS_DEFAULT         (100U)
 #define MOTORFOC_OL_ALIGN_CURRENT_A_DEFAULT     (1.0F)
 #define MOTORFOC_OL_CURRENT_RAMP_STEP_A_DEFAULT (0.002F)
+#define MOTORFOC_OL_FAST_LOOP_HZ               (10000U)
+#define MOTORFOC_OL_POLE_PAIRS                 (4U)
+#define MOTORFOC_OL_ANGLE_TABLE_SIZE           (8192.0F)
+#define MOTORFOC_OL_TARGET_RPM_DEFAULT         (0.0F)
 
 volatile uint8 MotorFoc_OpenLoop_Direction = 0U;
 volatile uint16 MotorFoc_OpenLoop_TargetAngleStep = MOTORFOC_OL_TARGET_ANGLE_STEP_DEFAULT;
@@ -28,6 +33,7 @@ volatile uint16 MotorFoc_OpenLoop_AccelerationTicks = MOTORFOC_OL_ACCEL_TICKS_DE
 volatile float32 MotorFoc_OpenLoop_AlignAngleDeg = 0.0F;
 volatile float32 MotorFoc_OpenLoop_AlignCurrentA = MOTORFOC_OL_ALIGN_CURRENT_A_DEFAULT;
 volatile float32 MotorFoc_OpenLoop_CurrentRampStepA = MOTORFOC_OL_CURRENT_RAMP_STEP_A_DEFAULT;
+volatile float32 MotorFoc_OpenLoop_TargetRpmCmd = MOTORFOC_OL_TARGET_RPM_DEFAULT;
 
 volatile MotorFoc_OpenLoopStageType MotorFoc_OpenLoop_Stage = MOTORFOC_OPENLOOP_STAGE_ALIGN_RAMP;
 volatile uint32 MotorFoc_OpenLoop_StageCounter = 0UL;
@@ -36,6 +42,7 @@ volatile uint16 MotorFoc_OpenLoop_ActiveAngleStep = 0U;
 volatile float32 MotorFoc_OpenLoop_ForcedAngleRad = 0.0F;
 volatile float32 MotorFoc_OpenLoop_IdRefOut = 0.0F;
 volatile float32 MotorFoc_OpenLoop_IqRefOut = 0.0F;
+volatile float32 MotorFoc_OpenLoop_EstRpm = 0.0F;
 
 static uint16 MotorFoc_OpenLoop_StepDividerCounter = 0U;
 static uint16 MotorFoc_OpenLoop_AccelerationCounter = 0U;
@@ -120,15 +127,60 @@ static void MotorFoc_OpenLoop_AdvanceAngle(void)
   MotorFoc_OpenLoop_UpdateAngleRad();
 }
 
+static void MotorFoc_OpenLoop_ApplyRpmCmd(void)
+{
+  float32 rpm = MotorFoc_OpenLoop_TargetRpmCmd;
+  uint16 divider = MotorFoc_OpenLoop_StepDivider;
+  float32 stepF;
+  uint32 step;
+
+  if (rpm < 0.0F)
+  {
+    rpm = 0.0F;
+  }
+  if (divider == 0U)
+  {
+    divider = 1U;
+  }
+
+  /* RPM = step * FastLoopHz * 60 / (8192 * divider * polePairs)
+   * step = RPM * 8192 * divider * polePairs / (60 * FastLoopHz) */
+  stepF = (rpm * MOTORFOC_OL_ANGLE_TABLE_SIZE * (float32)divider *
+           (float32)MOTORFOC_OL_POLE_PAIRS) /
+          (60.0F * (float32)MOTORFOC_OL_FAST_LOOP_HZ);
+  if (stepF < 0.0F)
+  {
+    stepF = 0.0F;
+  }
+  step = (uint32)(stepF + 0.5F);
+  if (step > 65535UL)
+  {
+    step = 65535UL;
+  }
+  MotorFoc_OpenLoop_TargetAngleStep = (uint16)step;
+}
+
+static void MotorFoc_OpenLoop_UpdateEstRpm(void)
+{
+  uint16 divider = MotorFoc_OpenLoop_StepDivider;
+
+  if (divider == 0U)
+  {
+    divider = 1U;
+  }
+
+  MotorFoc_OpenLoop_EstRpm =
+      ((float32)MotorFoc_OpenLoop_ActiveAngleStep * 60.0F *
+       (float32)MOTORFOC_OL_FAST_LOOP_HZ) /
+      (MOTORFOC_OL_ANGLE_TABLE_SIZE * (float32)divider *
+       (float32)MOTORFOC_OL_POLE_PAIRS);
+}
+
 static void MotorFoc_OpenLoop_Accelerate(void)
 {
   uint16 target = MotorFoc_OpenLoop_TargetAngleStep;
   uint16 period = MotorFoc_OpenLoop_AccelerationTicks;
 
-  if (target == 0U)
-  {
-    target = 1U;
-  }
   if (period == 0U)
   {
     period = 1U;
@@ -143,6 +195,19 @@ static void MotorFoc_OpenLoop_Accelerate(void)
       MotorFoc_OpenLoop_ActiveAngleStep++;
     }
   }
+  else if (MotorFoc_OpenLoop_ActiveAngleStep > target)
+  {
+    MotorFoc_OpenLoop_AccelerationCounter++;
+    if (MotorFoc_OpenLoop_AccelerationCounter >= period)
+    {
+      MotorFoc_OpenLoop_AccelerationCounter = 0U;
+      MotorFoc_OpenLoop_ActiveAngleStep--;
+    }
+  }
+  else
+  {
+    MotorFoc_OpenLoop_AccelerationCounter = 0U;
+  }
 }
 
 void MotorFoc_OpenLoop_Init(void)
@@ -155,6 +220,8 @@ void MotorFoc_OpenLoop_Init(void)
   MotorFoc_OpenLoop_AlignAngleDeg = 0.0F;
   MotorFoc_OpenLoop_AlignCurrentA = MOTORFOC_OL_ALIGN_CURRENT_A_DEFAULT;
   MotorFoc_OpenLoop_CurrentRampStepA = MOTORFOC_OL_CURRENT_RAMP_STEP_A_DEFAULT;
+  MotorFoc_OpenLoop_TargetRpmCmd = MOTORFOC_OL_TARGET_RPM_DEFAULT;
+  MotorFoc_OpenLoop_EstRpm = 0.0F;
   MotorFoc_OpenLoop_Reset();
 }
 
@@ -167,12 +234,20 @@ void MotorFoc_OpenLoop_Reset(void)
   MotorFoc_OpenLoop_IqRefOut = 0.0F;
   MotorFoc_OpenLoop_StepDividerCounter = 0U;
   MotorFoc_OpenLoop_AccelerationCounter = 0U;
+  MotorFoc_OpenLoop_EstRpm = 0.0F;
   MotorFoc_OpenLoop_SetAlignAngle();
 }
 
 void MotorFoc_OpenLoop_FastLoopStep(float32 idRequestA, float32 iqRequestA)
 {
   float32 alignCurrent = MotorFoc_OpenLoop_Abs(MotorFoc_OpenLoop_AlignCurrentA);
+
+  /* UDE TargetRpmCmd > 0 时覆盖 TargetAngleStep；=0 时保留手动改的步长。 */
+  if (MotorFoc_OpenLoop_TargetRpmCmd > 0.0F)
+  {
+    MotorFoc_OpenLoop_ApplyRpmCmd();
+  }
+  MotorFoc_OpenLoop_UpdateEstRpm();
 
   switch (MotorFoc_OpenLoop_Stage)
   {
@@ -220,6 +295,8 @@ void MotorFoc_OpenLoop_FastLoopStep(float32 idRequestA, float32 iqRequestA)
           MotorFoc_OpenLoop_IdRefOut, idRequestA, MotorFoc_OpenLoop_CurrentRampStepA);
       MotorFoc_OpenLoop_IqRefOut = MotorFoc_OpenLoop_Slew(
           MotorFoc_OpenLoop_IqRefOut, iqRequestA, MotorFoc_OpenLoop_CurrentRampStepA);
+      /* RUN 中也可跟 TargetRpmCmd 升降速。 */
+      MotorFoc_OpenLoop_Accelerate();
       MotorFoc_OpenLoop_AdvanceAngle();
       break;
   }

@@ -1,4 +1,4 @@
-VERSION "1.1.0"
+VERSION "1.2.0"
 
 
 NS_ : 
@@ -37,24 +37,6 @@ BU_: Tester RearECU MyECU
 
 
 BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
- SG_ sig_nm_RearECU : 0|64@1+ (1,0) [0|1.8446744074E+019] "" Vector__XXX
- SG_ sig_nm_MyECU : 0|64@1+ (1,0) [0|1.8446744074E+019] "" Vector__XXX
- SG_ sig_NM_MyECU_NID : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ sig_NM_MyECU_CBV : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ sig_NM_MyECU_UserData_0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ sig_NM_MyECU_UserData_1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ sig_NM_MyECU_UserData_2 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ sig_NM_MyECU_UserData_3 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ sig_NM_MyECU_UserData_4 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ sig_NM_MyECU_UserData_5 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ sig_NM_RearECU_NID : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ sig_NM_RearECU_CBV : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ sig_NM_RearECU_UserData_0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ sig_NM_RearECU_UserData_1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ sig_NM_RearECU_UserData_2 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ sig_NM_RearECU_UserData_3 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ sig_NM_RearECU_UserData_4 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ sig_NM_RearECU_UserData_5 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 1297 msg_MotorStatus: 12 MyECU
  SG_ MotorMode : 0|8@1+ (1,0) [0|7] ""  Tester
@@ -72,6 +54,14 @@ BO_ 528 msg_Receive: 1 RearECU
  SG_ sig_State_RearLeftDoor : 0|1@1+ (1,0) [0|1] ""  MyECU
  SG_ sig_State_RearInteriorLight : 2|1@1+ (1,0) [0|1] ""  MyECU
 
+BO_ 1536 msg_nm_MyECU: 8 MyECU
+ SG_ Nm_MyECU_SNI : 0|8@1+ (1,0) [0|255] ""  RearECU
+ SG_ Nm_MyECU_CBV : 8|8@1+ (1,0) [0|255] ""  RearECU
+
+BO_ 1537 msg_nm_RearECU: 8 RearECU
+ SG_ Nm_RearECU_SNI : 0|8@1+ (1,0) [0|255] ""  MyECU
+ SG_ Nm_RearECU_CBV : 8|8@1+ (1,0) [0|255] ""  MyECU
+
 BO_ 1868 msg_diag_Request_MyECU: 8 Tester
  SG_ Signal_DiagRequestMyECU : 0|64@1+ (1,0) [0|1.8446744074E+019] ""  MyECU
 
@@ -83,17 +73,23 @@ BO_ 2015 msg_diag_RequestGlobal: 8 Tester
 
 
 
-CM_ "AUTOSAR series communication matrix (application + NM + UDS diag 0x74C/0x75C/0x7DF). Calibration/XCP is NOT part of this matrix; see CANFD364_XCP_Dev.dbc and configure Xcp PDU in DaVinci/EcuC only.";
+CM_ "AUTOSAR series communication matrix (application + CanNm ASR 0x600-0x6FF + UDS diag 0x74C/0x75C/0x7DF). Calibration/XCP is NOT part of this matrix; see CANFD364_XCP_Dev.dbc and configure Xcp PDU in DaVinci/EcuC only.";
 CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
 CM_ BO_ 1297 "MyECU TX motor status (Com). Cycle 5 ms, CAN FD. Signals align with RTE: MotorMode, tle9180_Ov_Fault, Id_Ref, Iq_Ref, Vbus, ElectricAngle. Observation only; mode/current commands via XCP RAM write, not Com Rx.";
 CM_ BO_ 512 "Legacy demo TX frame (kept for existing CanIf/Com). Prefer remove in later series cleanup if unused.";
 CM_ BO_ 528 "Legacy demo RX frame (kept for existing CanIf/Com). Prefer remove in later series cleanup if unused.";
+CM_ BO_ 1536 "CanNm ASR TX MyECU ID=0x600. 8B frame: byte0=SNI/NID, byte1=CBV (CanNm). No UserData signals; turn OFF CanNmComUserDataSupport.";
+CM_ BO_ 1537 "CanNm ASR TX RearECU ID=0x601. Same layout (SNI+CBV only). MyECU RX via CanNm range 0x600-0x6FF.";
 CM_ BO_ 1868 "UDS physical request (ID 0x74C, Tester -> MyECU), 8 bytes classic CAN. Dcm Rx PDU (physical addressing).";
 CM_ BO_ 1884 "UDS physical response (ID 0x75C, MyECU -> Tester), 8 bytes classic CAN. Dcm Tx PDU.";
 CM_ BO_ 2015 "UDS functional request (ID 0x7DF, broadcast), 8 bytes classic CAN. Dcm Rx PDU (functional addressing).";
 CM_ SG_ 1297 MotorMode "Aligned with MotorMode_Type in MotorMode.h (0..7).";
 CM_ SG_ 1297 Id_Ref "Actual Id current reference after clamp [A].";
 CM_ SG_ 1297 Iq_Ref "Actual Iq current reference after clamp [A].";
+CM_ SG_ 1536 Nm_MyECU_SNI "Source Node Identifier (byte0). CanNmPduNidPosition=BYTE_0.";
+CM_ SG_ 1536 Nm_MyECU_CBV "Control Bit Vector (byte1). CanNmPduCbvPosition=BYTE_1.";
+CM_ SG_ 1537 Nm_RearECU_SNI "Source Node Identifier (byte0).";
+CM_ SG_ 1537 Nm_RearECU_CBV "Control Bit Vector (byte1).";
 
 BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
 BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
@@ -112,6 +108,18 @@ BA_DEF_  "BusType" STRING ;
 BA_DEF_  "Manufacturer" STRING ;
 BA_DEF_  "DbName" STRING ;
 BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_  "NmAsrWaitBusSleepTime" INT 0 65535;
+BA_DEF_  "NmAsrTimeoutTime" INT 0 65535;
+BA_DEF_  "NmAsrRepeatMessageTime" INT 0 65535;
+BA_DEF_ BU_  "NmAsrNodeIdentifier" INT 0 255;
+BA_DEF_ BU_  "NmAsrNode" ENUM  "no","yes";
+BA_DEF_  "NmAsrMessageCount" INT 0 256;
+BA_DEF_ BO_  "NmAsrMessage" ENUM  "no","yes";
+BA_DEF_ BU_  "NmAsrCanMsgReducedTime" INT 0 65535;
+BA_DEF_  "NmAsrCanMsgCycleTime" INT 0 65535;
+BA_DEF_ BU_  "NmAsrCanMsgCycleOffset" INT 0 65535;
+BA_DEF_  "NmAsrBaseAddress" HEX 0 65535;
 BA_DEF_  "IlTxTimeout" INT 0 65535;
 BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
 BA_DEF_ BU_  "NodeLayerModules" STRING ;
@@ -138,6 +146,18 @@ BA_DEF_DEF_  "BusType" "CAN FD";
 BA_DEF_DEF_  "Manufacturer" "CLBT";
 BA_DEF_DEF_  "DbName" "CANFD364";
 BA_DEF_DEF_  "ProtocolType" "StandardCAN";
+BA_DEF_DEF_  "NmType" "";
+BA_DEF_DEF_  "NmAsrWaitBusSleepTime" 750;
+BA_DEF_DEF_  "NmAsrTimeoutTime" 1000;
+BA_DEF_DEF_  "NmAsrRepeatMessageTime" 400;
+BA_DEF_DEF_  "NmAsrNodeIdentifier" 0;
+BA_DEF_DEF_  "NmAsrNode" "yes";
+BA_DEF_DEF_  "NmAsrMessageCount" 256;
+BA_DEF_DEF_  "NmAsrMessage" "no";
+BA_DEF_DEF_  "NmAsrCanMsgReducedTime" 50;
+BA_DEF_DEF_  "NmAsrCanMsgCycleTime" 100;
+BA_DEF_DEF_  "NmAsrCanMsgCycleOffset" 0;
+BA_DEF_DEF_  "NmAsrBaseAddress" 1536;
 BA_DEF_DEF_  "IlTxTimeout" 0;
 BA_DEF_DEF_  "ILUsed" "Yes";
 BA_DEF_DEF_  "NodeLayerModules" "";
@@ -153,10 +173,26 @@ BA_ "DbName" "CANFD364";
 BA_ "BusType" "CAN FD";
 BA_ "Baudrate" 500000;
 BA_ "ProtocolType" "StandardCAN";
+BA_ "NmType" "NmAsr";
+BA_ "NmAsrBaseAddress" 1536;
+BA_ "NmAsrMessageCount" 256;
+BA_ "NmAsrCanMsgCycleTime" 100;
+BA_ "NmAsrTimeoutTime" 1000;
+BA_ "NmAsrRepeatMessageTime" 400;
+BA_ "NmAsrWaitBusSleepTime" 750;
 
 BA_ "ILUsed" BU_ MyECU 1;
 BA_ "ILUsed" BU_ Tester 1;
 BA_ "ILUsed" BU_ RearECU 1;
+BA_ "NmAsrNode" BU_ Tester 0;
+BA_ "NmAsrNode" BU_ MyECU 1;
+BA_ "NmAsrNodeIdentifier" BU_ MyECU 0;
+BA_ "NmAsrNode" BU_ RearECU 1;
+BA_ "NmAsrNodeIdentifier" BU_ RearECU 1;
+BA_ "NmAsrCanMsgCycleOffset" BU_ MyECU 0;
+BA_ "NmAsrCanMsgReducedTime" BU_ MyECU 50;
+BA_ "NmAsrCanMsgCycleOffset" BU_ RearECU 0;
+BA_ "NmAsrCanMsgReducedTime" BU_ RearECU 50;
 
 BA_ "GenMsgILSupport" BO_ 1297 1;
 BA_ "GenMsgSendType" BO_ 1297 0;
@@ -172,6 +208,18 @@ BA_ "GenMsgILSupport" BO_ 528 1;
 BA_ "VFrameFormat" BO_ 528 0;
 BA_ "GenMsgSendType" BO_ 528 0;
 BA_ "GenMsgCycleTime" BO_ 528 100;
+
+BA_ "GenMsgILSupport" BO_ 1536 0;
+BA_ "NmAsrMessage" BO_ 1536 1;
+BA_ "VFrameFormat" BO_ 1536 0;
+BA_ "GenMsgSendType" BO_ 1536 0;
+BA_ "GenMsgCycleTime" BO_ 1536 100;
+
+BA_ "GenMsgILSupport" BO_ 1537 0;
+BA_ "NmAsrMessage" BO_ 1537 1;
+BA_ "VFrameFormat" BO_ 1537 0;
+BA_ "GenMsgSendType" BO_ 1537 0;
+BA_ "GenMsgCycleTime" BO_ 1537 100;
 
 BA_ "GenMsgILSupport" BO_ 1868 1;
 BA_ "VFrameFormat" BO_ 1868 0;
@@ -194,60 +242,6 @@ BA_ "GenMsgCycleTime" BO_ 2015 0;
 BA_ "DiagConnection" BO_ 2015 57345;
 BA_ "DiagRequest" BO_ 2015 1;
 
-BA_ "GenSigSendType" SG_ 3221225472 sig_nm_RearECU 0;
-BA_ "GenSigCycleTime" SG_ 3221225472 sig_nm_RearECU 100;
-BA_ "GenSigCycleTimeActive" SG_ 3221225472 sig_nm_RearECU 100;
-BA_ "GenSigSendType" SG_ 3221225472 sig_nm_MyECU 0;
-BA_ "GenSigCycleTime" SG_ 3221225472 sig_nm_MyECU 100;
-BA_ "GenSigCycleTimeActive" SG_ 3221225472 sig_nm_MyECU 100;
-BA_ "GenSigSendType" SG_ 3221225472 sig_NM_MyECU_NID 0;
-BA_ "GenSigCycleTime" SG_ 3221225472 sig_NM_MyECU_NID 100;
-BA_ "GenSigCycleTimeActive" SG_ 3221225472 sig_NM_MyECU_NID 100;
-BA_ "GenSigSendType" SG_ 3221225472 sig_NM_MyECU_CBV 0;
-BA_ "GenSigCycleTime" SG_ 3221225472 sig_NM_MyECU_CBV 100;
-BA_ "GenSigCycleTimeActive" SG_ 3221225472 sig_NM_MyECU_CBV 100;
-BA_ "GenSigSendType" SG_ 3221225472 sig_NM_MyECU_UserData_0 0;
-BA_ "GenSigCycleTime" SG_ 3221225472 sig_NM_MyECU_UserData_0 100;
-BA_ "GenSigCycleTimeActive" SG_ 3221225472 sig_NM_MyECU_UserData_0 100;
-BA_ "GenSigSendType" SG_ 3221225472 sig_NM_MyECU_UserData_1 0;
-BA_ "GenSigCycleTime" SG_ 3221225472 sig_NM_MyECU_UserData_1 100;
-BA_ "GenSigCycleTimeActive" SG_ 3221225472 sig_NM_MyECU_UserData_1 100;
-BA_ "GenSigSendType" SG_ 3221225472 sig_NM_MyECU_UserData_2 0;
-BA_ "GenSigCycleTime" SG_ 3221225472 sig_NM_MyECU_UserData_2 100;
-BA_ "GenSigCycleTimeActive" SG_ 3221225472 sig_NM_MyECU_UserData_2 100;
-BA_ "GenSigSendType" SG_ 3221225472 sig_NM_MyECU_UserData_3 0;
-BA_ "GenSigCycleTime" SG_ 3221225472 sig_NM_MyECU_UserData_3 100;
-BA_ "GenSigCycleTimeActive" SG_ 3221225472 sig_NM_MyECU_UserData_3 100;
-BA_ "GenSigSendType" SG_ 3221225472 sig_NM_MyECU_UserData_4 0;
-BA_ "GenSigCycleTime" SG_ 3221225472 sig_NM_MyECU_UserData_4 100;
-BA_ "GenSigCycleTimeActive" SG_ 3221225472 sig_NM_MyECU_UserData_4 100;
-BA_ "GenSigSendType" SG_ 3221225472 sig_NM_MyECU_UserData_5 0;
-BA_ "GenSigCycleTime" SG_ 3221225472 sig_NM_MyECU_UserData_5 100;
-BA_ "GenSigCycleTimeActive" SG_ 3221225472 sig_NM_MyECU_UserData_5 100;
-BA_ "GenSigSendType" SG_ 3221225472 sig_NM_RearECU_NID 0;
-BA_ "GenSigCycleTime" SG_ 3221225472 sig_NM_RearECU_NID 100;
-BA_ "GenSigCycleTimeActive" SG_ 3221225472 sig_NM_RearECU_NID 100;
-BA_ "GenSigSendType" SG_ 3221225472 sig_NM_RearECU_CBV 0;
-BA_ "GenSigCycleTime" SG_ 3221225472 sig_NM_RearECU_CBV 100;
-BA_ "GenSigCycleTimeActive" SG_ 3221225472 sig_NM_RearECU_CBV 100;
-BA_ "GenSigSendType" SG_ 3221225472 sig_NM_RearECU_UserData_0 0;
-BA_ "GenSigCycleTime" SG_ 3221225472 sig_NM_RearECU_UserData_0 100;
-BA_ "GenSigCycleTimeActive" SG_ 3221225472 sig_NM_RearECU_UserData_0 100;
-BA_ "GenSigSendType" SG_ 3221225472 sig_NM_RearECU_UserData_1 0;
-BA_ "GenSigCycleTime" SG_ 3221225472 sig_NM_RearECU_UserData_1 100;
-BA_ "GenSigCycleTimeActive" SG_ 3221225472 sig_NM_RearECU_UserData_1 100;
-BA_ "GenSigSendType" SG_ 3221225472 sig_NM_RearECU_UserData_2 0;
-BA_ "GenSigCycleTime" SG_ 3221225472 sig_NM_RearECU_UserData_2 100;
-BA_ "GenSigCycleTimeActive" SG_ 3221225472 sig_NM_RearECU_UserData_2 100;
-BA_ "GenSigSendType" SG_ 3221225472 sig_NM_RearECU_UserData_3 0;
-BA_ "GenSigCycleTime" SG_ 3221225472 sig_NM_RearECU_UserData_3 100;
-BA_ "GenSigCycleTimeActive" SG_ 3221225472 sig_NM_RearECU_UserData_3 100;
-BA_ "GenSigSendType" SG_ 3221225472 sig_NM_RearECU_UserData_4 0;
-BA_ "GenSigCycleTime" SG_ 3221225472 sig_NM_RearECU_UserData_4 100;
-BA_ "GenSigCycleTimeActive" SG_ 3221225472 sig_NM_RearECU_UserData_4 100;
-BA_ "GenSigSendType" SG_ 3221225472 sig_NM_RearECU_UserData_5 0;
-BA_ "GenSigCycleTime" SG_ 3221225472 sig_NM_RearECU_UserData_5 100;
-BA_ "GenSigCycleTimeActive" SG_ 3221225472 sig_NM_RearECU_UserData_5 100;
 BA_ "GenSigSendType" SG_ 512 sig_RearInteriorLight 0;
 BA_ "GenSigCycleTime" SG_ 512 sig_RearInteriorLight 100;
 BA_ "GenSigCycleTimeActive" SG_ 512 sig_RearInteriorLight 100;
@@ -260,6 +254,18 @@ BA_ "GenSigCycleTimeActive" SG_ 528 sig_State_RearLeftDoor 100;
 BA_ "GenSigSendType" SG_ 528 sig_State_RearInteriorLight 0;
 BA_ "GenSigCycleTime" SG_ 528 sig_State_RearInteriorLight 100;
 BA_ "GenSigCycleTimeActive" SG_ 528 sig_State_RearInteriorLight 100;
+BA_ "GenSigSendType" SG_ 1536 Nm_MyECU_SNI 0;
+BA_ "GenSigCycleTime" SG_ 1536 Nm_MyECU_SNI 100;
+BA_ "GenSigCycleTimeActive" SG_ 1536 Nm_MyECU_SNI 100;
+BA_ "GenSigSendType" SG_ 1536 Nm_MyECU_CBV 0;
+BA_ "GenSigCycleTime" SG_ 1536 Nm_MyECU_CBV 100;
+BA_ "GenSigCycleTimeActive" SG_ 1536 Nm_MyECU_CBV 100;
+BA_ "GenSigSendType" SG_ 1537 Nm_RearECU_SNI 0;
+BA_ "GenSigCycleTime" SG_ 1537 Nm_RearECU_SNI 100;
+BA_ "GenSigCycleTimeActive" SG_ 1537 Nm_RearECU_SNI 100;
+BA_ "GenSigSendType" SG_ 1537 Nm_RearECU_CBV 0;
+BA_ "GenSigCycleTime" SG_ 1537 Nm_RearECU_CBV 100;
+BA_ "GenSigCycleTimeActive" SG_ 1537 Nm_RearECU_CBV 100;
 
 VAL_ 1297 MotorMode 0 "Idle" 1 "Stop" 2 "FocSpeed" 3 "FocCurrent" 4 "OpenLoop" 5 "Calibration" 6 "CalibrationErase" 7 "CalibrationSave";
 VAL_ 1297 tle9180_Ov_Fault 0 "NoFault" 1 "OverVoltageFault";

@@ -1,126 +1,159 @@
 /**********************************************************************************************************************
  *  FILE: UartTest.c
- *  DESC: Periodic UART test frame on ASCLIN0 (Uart channel 0).
- *        Call UartTest_Init() once after BswM Uart_Init(), then UartTest_MainFunction() cyclically.
+ *  DESC: VOFA+ JustFloat FOC telemetry (ASCLIN0).
+ *
+ *  Capture: Core1 FOC beat into a ring (unique samples).
+ *  Transmit: Core0 1 ms drains as many unique frames as UART allows.
+ *
+ *  Frame: 8 * float32 LE + 00 00 80 7F = 36 B.
+ *
+ *  Channel map (VOFA JustFloat):
+ *    f0  i_motor.u          ← 三相电流页只用 f0/f1/f2
+ *    f1  i_motor.v
+ *    f2  i_motor.w
+ *    f3  pwm_OutU           ← 马鞍波页只用 f3/f4/f5（中心约 2500）
+ *    f4  pwm_OutV
+ *    f5  pwm_OutW
+ *    f6  FOC 运行电角度 (0..8192 计数，开环=强制角 / 闭环=控制用角)
+ *    f7  TLE5012 真实电角度 (0..8192 计数)
  *********************************************************************************************************************/
 #include "UartTest.h"
 #include "Uart.h"
+#include "MotorCdd_Foc.h"
+#include "Tle5012bd_Driver.h"
 
-#define UARTTEST_CHANNEL              (0U)
-#define UARTTEST_TX_BUF_SIZE          (48U)
-
-#define UARTTEST_MSG_PREFIX           "TC364 UART test #"
-#define UARTTEST_MSG_SUFFIX           "\r\n"
+#define UARTTEST_CHANNEL                 (0U)
+#define UARTTEST_CH_COUNT                (8U)
+#define UARTTEST_TX_BUF_SIZE             ((UARTTEST_CH_COUNT * 4U) + 4U)
+#define UARTTEST_RING_DEPTH              (32U)
+#define UARTTEST_BURST_PER_1MS           (8U)
 
 volatile uint32 UartTest_TxOkCount = 0U;
 volatile uint32 UartTest_TxBusyCount = 0U;
 volatile uint32 UartTest_TxFailCount = 0U;
 volatile uint32 UartTest_AbortRecoverCount = 0U;
 volatile uint32 UartTest_LastStatus = 0U;
+volatile uint32 UartTest_CaptureCount = 0U;
+volatile uint32 UartTest_DropCount = 0U;
 
 static Uart_MemType UartTest_TxBuf[UARTTEST_TX_BUF_SIZE];
-static uint32 UartTest_Sequence = 0U;
-static uint32 UartTest_BusyStreak = 0U;
+static float32 UartTest_Ring[UARTTEST_RING_DEPTH][UARTTEST_CH_COUNT];
+static volatile uint8 UartTest_WrIdx = 0U;
+static volatile uint8 UartTest_RdIdx = 0U;
+static volatile uint8 UartTest_Count = 0U;
 
-#define UARTTEST_BUSY_ABORT_THRESHOLD   (2U)
-
-static uint8 UartTest_AppendU32Dec(Uart_MemType *const buf, uint8 pos, uint32 value)
+static void UartTest_PutFloat(uint8 *const buf, uint16 *const pos, const float32 value)
 {
-  Uart_MemType tmp[10];
-  uint8 len = 0U;
-  uint8 i;
+  const uint8 *raw = (const uint8 *)&value;
+  uint16 i;
+  uint16 p = *pos;
 
-  if (value == 0U)
+  for (i = 0U; i < 4U; i++)
   {
-    buf[pos] = (Uart_MemType)'0';
-    return (uint8)(pos + 1U);
+    buf[p + i] = raw[i];
   }
-
-  while (value > 0U)
-  {
-    tmp[len] = (Uart_MemType)((value % 10U) + (uint32)'0');
-    value /= 10U;
-    len++;
-  }
-
-  for (i = 0U; i < len; i++)
-  {
-    buf[pos + i] = tmp[(len - 1U) - i];
-  }
-
-  return (uint8)(pos + len);
+  *pos = (uint16)(p + 4U);
 }
 
-static void UartTest_AppendString(Uart_MemType *const buf, uint8 *pos, const char *str)
+static void UartTest_FillSnap(float32 *const dst)
 {
-  while ((*str != '\0') && (*pos < UARTTEST_TX_BUF_SIZE))
-  {
-    buf[*pos] = (Uart_MemType)(*str);
-    (*pos)++;
-    str++;
-  }
-}
+  const MotorFoc_ContextType *ctx = &MotorCdd_FocContext;
 
-static Uart_SizeType UartTest_BuildTxMessage(uint32 seq)
-{
-  const char *prefix = UARTTEST_MSG_PREFIX;
-  const char *suffix = UARTTEST_MSG_SUFFIX;
-  uint8 pos = 0U;
-
-  UartTest_AppendString(UartTest_TxBuf, &pos, prefix);
-  pos = UartTest_AppendU32Dec(UartTest_TxBuf, pos, seq);
-  UartTest_AppendString(UartTest_TxBuf, &pos, suffix);
-
-  return (Uart_SizeType)pos;
+  dst[0] = ctx->i_motor.u;
+  dst[1] = ctx->i_motor.v;
+  dst[2] = ctx->i_motor.w;
+  dst[3] = (float32)ctx->Tpwm.pwm_OutU;
+  dst[4] = (float32)ctx->Tpwm.pwm_OutV;
+  dst[5] = (float32)ctx->Tpwm.pwm_OutW;
+  /* Same 8192-count electrical scale for overlay on VOFA. */
+  dst[6] = ctx->angle.angleRaw;
+  dst[7] = Tle5012bd_Sensor.Angle;
 }
 
 void UartTest_Init(void)
 {
-  UartTest_Sequence = 0U;
-  UartTest_BusyStreak = 0U;
+  UartTest_WrIdx = 0U;
+  UartTest_RdIdx = 0U;
+  UartTest_Count = 0U;
+}
+
+void UartTest_CaptureFromFoc(void)
+{
+  uint8 wr;
+  uint8 count;
+
+  wr = UartTest_WrIdx;
+  UartTest_FillSnap(&UartTest_Ring[wr][0]);
+  UartTest_WrIdx = (uint8)((wr + 1U) % UARTTEST_RING_DEPTH);
+
+  count = UartTest_Count;
+  if (count < UARTTEST_RING_DEPTH)
+  {
+    UartTest_Count = (uint8)(count + 1U);
+  }
+  else
+  {
+    /* Overwrite oldest unread sample. */
+    UartTest_RdIdx = (uint8)((UartTest_RdIdx + 1U) % UARTTEST_RING_DEPTH);
+    UartTest_DropCount++;
+  }
+  UartTest_CaptureCount++;
 }
 
 void UartTest_MainFunction(void)
 {
   Uart_ReturnType retVal;
-  Uart_SizeType txLen;
   Uart_StatusType status;
+  uint16 pos;
+  uint8 rd;
+  uint8 ch;
+  uint8 burst;
+  uint8 count;
 
-  status = Uart_GetStatus(UARTTEST_CHANNEL);
-  UartTest_LastStatus = (uint32)status;
-
-  if (status != UART_IDLE)
+  for (burst = 0U; burst < UARTTEST_BURST_PER_1MS; burst++)
   {
-    UartTest_TxBusyCount++;
-    UartTest_BusyStreak++;
-
-    /* Workaround: TX complete is handled in ASCLIN0ERR_ISR; if ERR IRQ is disabled
-       the driver stays BUSY_TRANSMIT forever. Abort to allow next frame. */
-    if (UartTest_BusyStreak >= UARTTEST_BUSY_ABORT_THRESHOLD)
+    count = UartTest_Count;
+    if (count == 0U)
     {
-      (void)Uart_AbortWrite(UARTTEST_CHANNEL);
-      UartTest_AbortRecoverCount++;
-      UartTest_BusyStreak = 0U;
+      break;
     }
-    return;
-  }
 
-  UartTest_BusyStreak = 0U;
+    status = Uart_GetStatus(UARTTEST_CHANNEL);
+    UartTest_LastStatus = (uint32)status;
+    if (status != UART_IDLE)
+    {
+      UartTest_TxBusyCount++;
+      break;
+    }
 
-  txLen = UartTest_BuildTxMessage(UartTest_Sequence);
-  UartTest_Sequence++;
+    rd = UartTest_RdIdx;
+    pos = 0U;
+    for (ch = 0U; ch < UARTTEST_CH_COUNT; ch++)
+    {
+      UartTest_PutFloat(UartTest_TxBuf, &pos, UartTest_Ring[rd][ch]);
+    }
 
-  retVal = Uart_Write(UARTTEST_CHANNEL, UartTest_TxBuf, txLen);
-  if (retVal == UART_E_OK)
-  {
-    UartTest_TxOkCount++;
-  }
-  else if (retVal == UART_E_BUSY)
-  {
-    UartTest_TxBusyCount++;
-  }
-  else
-  {
-    UartTest_TxFailCount++;
+    UartTest_TxBuf[pos++] = 0x00U;
+    UartTest_TxBuf[pos++] = 0x00U;
+    UartTest_TxBuf[pos++] = 0x80U;
+    UartTest_TxBuf[pos++] = 0x7FU;
+
+    retVal = Uart_Write(UARTTEST_CHANNEL, UartTest_TxBuf, (Uart_SizeType)pos);
+    if (retVal == UART_E_OK)
+    {
+      UartTest_TxOkCount++;
+      UartTest_RdIdx = (uint8)((rd + 1U) % UARTTEST_RING_DEPTH);
+      UartTest_Count = (uint8)(count - 1U);
+    }
+    else if (retVal == UART_E_BUSY)
+    {
+      UartTest_TxBusyCount++;
+      break;
+    }
+    else
+    {
+      UartTest_TxFailCount++;
+      break;
+    }
   }
 }

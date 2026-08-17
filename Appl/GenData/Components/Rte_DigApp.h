@@ -61,23 +61,12 @@ extern "C"
 #  define RTE_RUNNABLE_DataServices_Boot_Software_NumberOfModules_ConditionCheckRead DataServices_Boot_Software_NumberOfModules_ConditionCheckRead
 #  define RTE_RUNNABLE_DataServices_Boot_Software_NumberOfModules_ReadData DataServices_Boot_Software_NumberOfModules_ReadData
 #  define RTE_RUNNABLE_DataServices_Boot_Software_NumberOfModules_WriteData DataServices_Boot_Software_NumberOfModules_WriteData
-#  define RTE_RUNNABLE_DataServices_DID_0xF410_DID_Data_ConditionCheckRead DataServices_DID_0xF410_DID_Data_ConditionCheckRead
-#  define RTE_RUNNABLE_DataServices_DID_0xF410_DID_Data_ReadData DataServices_DID_0xF410_DID_Data_ReadData
-#  define RTE_RUNNABLE_DataServices_DID_0xF412_DID_Data_ConditionCheckRead DataServices_DID_0xF412_DID_Data_ConditionCheckRead
-#  define RTE_RUNNABLE_DataServices_DID_0xF412_DID_Data_ReadData DataServices_DID_0xF412_DID_Data_ReadData
-#  define RTE_RUNNABLE_DataServices_DID_0xF413_DID_Data_ConditionCheckRead DataServices_DID_0xF413_DID_Data_ConditionCheckRead
-#  define RTE_RUNNABLE_DataServices_DID_0xF413_DID_Data_ReadData DataServices_DID_0xF413_DID_Data_ReadData
 #  define RTE_RUNNABLE_DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier_ConditionCheckRead DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier_ConditionCheckRead
 #  define RTE_RUNNABLE_DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier_ReadData DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier_ReadData
 #  define RTE_RUNNABLE_DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier_WriteData DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier_WriteData
 #  define RTE_RUNNABLE_DataServices_EcuIdentification_Part_Number_ConditionCheckRead DataServices_EcuIdentification_Part_Number_ConditionCheckRead
 #  define RTE_RUNNABLE_DataServices_EcuIdentification_Part_Number_ReadData DataServices_EcuIdentification_Part_Number_ReadData
 #  define RTE_RUNNABLE_DataServices_EcuIdentification_Part_Number_WriteData DataServices_EcuIdentification_Part_Number_WriteData
-#  define RTE_RUNNABLE_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ConditionCheckRead DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ConditionCheckRead
-#  define RTE_RUNNABLE_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ReadData DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ReadData
-#  define RTE_RUNNABLE_DataServices_Example_ReadWriteData_GlobalTime_ConditionCheckRead DataServices_Example_ReadWriteData_GlobalTime_ConditionCheckRead
-#  define RTE_RUNNABLE_DataServices_Example_ReadWriteData_GlobalTime_ReadData DataServices_Example_ReadWriteData_GlobalTime_ReadData
-#  define RTE_RUNNABLE_DataServices_Example_ReadWriteData_GlobalTime_WriteData DataServices_Example_ReadWriteData_GlobalTime_WriteData
 #  define RTE_RUNNABLE_DataServices_Hardware_Version_Hardware_Version_Number_ConditionCheckRead DataServices_Hardware_Version_Hardware_Version_Number_ConditionCheckRead
 #  define RTE_RUNNABLE_DataServices_Hardware_Version_Hardware_Version_Number_ReadData DataServices_Hardware_Version_Hardware_Version_Number_ReadData
 #  define RTE_RUNNABLE_DataServices_Hardware_Version_Hardware_Version_Number_WriteData DataServices_Hardware_Version_Hardware_Version_Number_WriteData
@@ -95,7 +84,7 @@ extern "C"
 #  define RTE_RUNNABLE_DataServices_Vehicle_Identification_VIN_ConditionCheckRead DataServices_Vehicle_Identification_VIN_ConditionCheckRead
 #  define RTE_RUNNABLE_DataServices_Vehicle_Identification_VIN_ReadData DataServices_Vehicle_Identification_VIN_ReadData
 #  define RTE_RUNNABLE_DataServices_Vehicle_Identification_VIN_WriteData DataServices_Vehicle_Identification_VIN_WriteData
-#  define RTE_RUNNABLE_Dig_Init Dig_Init
+#  define RTE_RUNNABLE_DigInit DigInit
 #  define RTE_RUNNABLE_RoutineServices_SampleRoutineControl_RequestResults RoutineServices_SampleRoutineControl_RequestResults
 #  define RTE_RUNNABLE_RoutineServices_SampleRoutineControl_Start RoutineServices_SampleRoutineControl_Start
 #  define RTE_RUNNABLE_RoutineServices_SampleRoutineControl_StartOnly_RequestResults RoutineServices_SampleRoutineControl_StartOnly_RequestResults
@@ -134,24 +123,6 @@ FUNC(Std_ReturnType, DigApp_CODE) DataServices_Boot_Software_NumberOfModules_Wri
 # else
 FUNC(Std_ReturnType, DigApp_CODE) DataServices_Boot_Software_NumberOfModules_WriteData(P2CONST(Dcm_Data1ByteType, AUTOMATIC, RTE_DIGAPP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) ErrorCode); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
 # endif
-FUNC(Std_ReturnType, DigApp_CODE) DataServices_DID_0xF410_DID_Data_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) ErrorCode); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
-# ifndef RTE_PTR2ARRAYTYPE_PASSING
-FUNC(Std_ReturnType, DigApp_CODE) DataServices_DID_0xF410_DID_Data_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_DIGAPP_APPL_VAR) Data); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
-# else
-FUNC(Std_ReturnType, DigApp_CODE) DataServices_DID_0xF410_DID_Data_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data2ByteType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) Data); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
-# endif
-FUNC(Std_ReturnType, DigApp_CODE) DataServices_DID_0xF412_DID_Data_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) ErrorCode); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
-# ifndef RTE_PTR2ARRAYTYPE_PASSING
-FUNC(Std_ReturnType, DigApp_CODE) DataServices_DID_0xF412_DID_Data_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_DIGAPP_APPL_VAR) Data); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
-# else
-FUNC(Std_ReturnType, DigApp_CODE) DataServices_DID_0xF412_DID_Data_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data2ByteType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) Data); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
-# endif
-FUNC(Std_ReturnType, DigApp_CODE) DataServices_DID_0xF413_DID_Data_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) ErrorCode); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
-# ifndef RTE_PTR2ARRAYTYPE_PASSING
-FUNC(Std_ReturnType, DigApp_CODE) DataServices_DID_0xF413_DID_Data_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_DIGAPP_APPL_VAR) Data); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
-# else
-FUNC(Std_ReturnType, DigApp_CODE) DataServices_DID_0xF413_DID_Data_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data2ByteType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) Data); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
-# endif
 FUNC(Std_ReturnType, DigApp_CODE) DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) ErrorCode); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
 # ifndef RTE_PTR2ARRAYTYPE_PASSING
 FUNC(Std_ReturnType, DigApp_CODE) DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_DIGAPP_APPL_VAR) Data); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
@@ -173,23 +144,6 @@ FUNC(Std_ReturnType, DigApp_CODE) DataServices_EcuIdentification_Part_Number_Rea
 FUNC(Std_ReturnType, DigApp_CODE) DataServices_EcuIdentification_Part_Number_WriteData(P2CONST(uint8, AUTOMATIC, RTE_DIGAPP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) ErrorCode); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
 # else
 FUNC(Std_ReturnType, DigApp_CODE) DataServices_EcuIdentification_Part_Number_WriteData(P2CONST(Dcm_Data13ByteType, AUTOMATIC, RTE_DIGAPP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) ErrorCode); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
-# endif
-FUNC(Std_ReturnType, DigApp_CODE) DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) ErrorCode); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
-# ifndef RTE_PTR2ARRAYTYPE_PASSING
-FUNC(Std_ReturnType, DigApp_CODE) DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_DIGAPP_APPL_VAR) Data); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
-# else
-FUNC(Std_ReturnType, DigApp_CODE) DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data6ByteType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) Data); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
-# endif
-FUNC(Std_ReturnType, DigApp_CODE) DataServices_Example_ReadWriteData_GlobalTime_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) ErrorCode); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
-# ifndef RTE_PTR2ARRAYTYPE_PASSING
-FUNC(Std_ReturnType, DigApp_CODE) DataServices_Example_ReadWriteData_GlobalTime_ReadData(Dcm_OpStatusType OpStatus, P2VAR(uint8, AUTOMATIC, RTE_DIGAPP_APPL_VAR) Data); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
-# else
-FUNC(Std_ReturnType, DigApp_CODE) DataServices_Example_ReadWriteData_GlobalTime_ReadData(Dcm_OpStatusType OpStatus, P2VAR(Dcm_Data4ByteType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) Data); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
-# endif
-# ifndef RTE_PTR2ARRAYTYPE_PASSING
-FUNC(Std_ReturnType, DigApp_CODE) DataServices_Example_ReadWriteData_GlobalTime_WriteData(P2CONST(uint8, AUTOMATIC, RTE_DIGAPP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) ErrorCode); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
-# else
-FUNC(Std_ReturnType, DigApp_CODE) DataServices_Example_ReadWriteData_GlobalTime_WriteData(P2CONST(Dcm_Data4ByteType, AUTOMATIC, RTE_DIGAPP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) ErrorCode); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
 # endif
 FUNC(Std_ReturnType, DigApp_CODE) DataServices_Hardware_Version_Hardware_Version_Number_ConditionCheckRead(Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) ErrorCode); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
 # ifndef RTE_PTR2ARRAYTYPE_PASSING
@@ -248,7 +202,7 @@ FUNC(Std_ReturnType, DigApp_CODE) DataServices_Vehicle_Identification_VIN_WriteD
 # else
 FUNC(Std_ReturnType, DigApp_CODE) DataServices_Vehicle_Identification_VIN_WriteData(P2CONST(Dcm_Data17ByteType, AUTOMATIC, RTE_DIGAPP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) ErrorCode); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
 # endif
-FUNC(void, DigApp_CODE) Dig_Init(void); /* PRQA S 3451, 0786, 3449 */ /* MD_Rte_3451, MD_Rte_0786, MD_Rte_3449 */
+FUNC(void, DigApp_CODE) DigInit(void); /* PRQA S 3451, 0786, 3449 */ /* MD_Rte_3451, MD_Rte_0786, MD_Rte_3449 */
 FUNC(Std_ReturnType, DigApp_CODE) RoutineServices_SampleRoutineControl_RequestResults(Dcm_OpStatusType OpStatus, P2VAR(Dcm_RequestDataOut_SampleRoutineControl_Out_ResultType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) Out_Result, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) ErrorCode); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
 FUNC(Std_ReturnType, DigApp_CODE) RoutineServices_SampleRoutineControl_Start(Dcm_StartDataIn_SampleRoutineControl_In_Option0Type In_Option0, Dcm_OpStatusType OpStatus, P2VAR(Dcm_StartDataOut_SampleRoutineControl_Out_InitStateType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) Out_InitState, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) ErrorCode); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
 FUNC(Std_ReturnType, DigApp_CODE) RoutineServices_SampleRoutineControl_StartOnly_RequestResults(Dcm_OpStatusType OpStatus, P2VAR(Dcm_RequestDataOut_SampleRoutineControl_StartOnly_Out_ResultType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) Out_Result, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) ErrorCode); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
@@ -298,18 +252,6 @@ FUNC(Std_ReturnType, DigApp_CODE) SecurityAccess_UnlockedL1_GetSeed(Dcm_OpStatus
 
 #  define RTE_E_DataServices_Boot_Software_NumberOfModules_E_NOT_OK (1U)
 
-#  define RTE_E_DataServices_DID_0xF410_DID_Data_DCM_E_PENDING (10U)
-
-#  define RTE_E_DataServices_DID_0xF410_DID_Data_E_NOT_OK (1U)
-
-#  define RTE_E_DataServices_DID_0xF412_DID_Data_DCM_E_PENDING (10U)
-
-#  define RTE_E_DataServices_DID_0xF412_DID_Data_E_NOT_OK (1U)
-
-#  define RTE_E_DataServices_DID_0xF413_DID_Data_DCM_E_PENDING (10U)
-
-#  define RTE_E_DataServices_DID_0xF413_DID_Data_E_NOT_OK (1U)
-
 #  define RTE_E_DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier_DCM_E_PENDING (10U)
 
 #  define RTE_E_DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier_E_NOT_OK (1U)
@@ -317,14 +259,6 @@ FUNC(Std_ReturnType, DigApp_CODE) SecurityAccess_UnlockedL1_GetSeed(Dcm_OpStatus
 #  define RTE_E_DataServices_EcuIdentification_Part_Number_DCM_E_PENDING (10U)
 
 #  define RTE_E_DataServices_EcuIdentification_Part_Number_E_NOT_OK (1U)
-
-#  define RTE_E_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_DCM_E_PENDING (10U)
-
-#  define RTE_E_DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime_E_NOT_OK (1U)
-
-#  define RTE_E_DataServices_Example_ReadWriteData_GlobalTime_DCM_E_PENDING (10U)
-
-#  define RTE_E_DataServices_Example_ReadWriteData_GlobalTime_E_NOT_OK (1U)
 
 #  define RTE_E_DataServices_Hardware_Version_Hardware_Version_Number_DCM_E_PENDING (10U)
 

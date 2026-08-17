@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Com_Lcfg.c
- *   Generation Time: 2026-08-05 21:47:39
+ *   Generation Time: 2024-08-11 18:29:24
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -317,15 +317,21 @@ CONST(Com_RxSigInfoType, COM_CONST) Com_RxSigInfo[2] = {  /* PRQA S 1514, 1533 *
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-CONST(Com_TxAccessInfoType, COM_CONST) Com_TxAccessInfo[7] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+CONST(Com_TxAccessInfoType, COM_CONST) Com_TxAccessInfo[13] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
     /* Index    TxSigInfoIdx        Referable Keys */
   { /*     0 */           0u },  /* [/ActiveEcuC/Com/ComConfig/ElectricAngle_omsg_MotorStatus_oCAN00_59d7c624_Tx] */
   { /*     1 */           1u },  /* [/ActiveEcuC/Com/ComConfig/Id_Ref_omsg_MotorStatus_oCAN00_d6855f80_Tx] */
   { /*     2 */           2u },  /* [/ActiveEcuC/Com/ComConfig/Iq_Ref_omsg_MotorStatus_oCAN00_64246970_Tx] */
   { /*     3 */           3u },  /* [/ActiveEcuC/Com/ComConfig/MotorMode_omsg_MotorStatus_oCAN00_b2c82a54_Tx] */
   { /*     4 */           4u },  /* [/ActiveEcuC/Com/ComConfig/Vbus_omsg_MotorStatus_oCAN00_85810386_Tx] */
-  { /*     5 */           5u },  /* [/ActiveEcuC/Com/ComConfig/sig_RearInteriorLight_omsg_Transmit_oCAN00_49a633c1_Tx] */
-  { /*     6 */           6u }   /* [/ActiveEcuC/Com/ComConfig/tle9180_Ov_Fault_omsg_MotorStatus_oCAN00_fd6f0927_Tx] */
+  { /*     5 */           5u },  /* [/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_0_omsg_nm_MyECU_oCAN00_acc1931e_Tx] */
+  { /*     6 */           6u },  /* [/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_1_omsg_nm_MyECU_oCAN00_bbe9f7de_Tx] */
+  { /*     7 */           7u },  /* [/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_2_omsg_nm_MyECU_oCAN00_82915a9e_Tx] */
+  { /*     8 */           8u },  /* [/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_3_omsg_nm_MyECU_oCAN00_95b93e5e_Tx] */
+  { /*     9 */           9u },  /* [/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_4_omsg_nm_MyECU_oCAN00_f060001e_Tx] */
+  { /*    10 */          10u },  /* [/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_5_omsg_nm_MyECU_oCAN00_e74864de_Tx] */
+  { /*    11 */          11u },  /* [/ActiveEcuC/Com/ComConfig/sig_RearInteriorLight_omsg_Transmit_oCAN00_49a633c1_Tx] */
+  { /*    12 */          12u }   /* [/ActiveEcuC/Com/ComConfig/tle9180_Ov_Fault_omsg_MotorStatus_oCAN00_fd6f0927_Tx] */
 };
 #define COM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -340,17 +346,17 @@ CONST(Com_TxAccessInfoType, COM_CONST) Com_TxAccessInfo[7] = {  /* PRQA S 1514, 
   \brief  Contains all relevant information for transmission mode false.
   \details
   Element       Description
-  Periodic      TRUE if transmission mode contains a cyclic part.
   TimePeriod    Cycle time factor.
 */ 
 #define COM_START_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-CONST(Com_TxModeFalseType, COM_CONST) Com_TxModeFalse[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-    /* Index    Periodic  TimePeriod        Referable Keys */
-  { /*     0 */     TRUE,         1u },  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx] */
-  { /*     1 */     TRUE,        20u }   /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+CONST(Com_TxModeFalseType, COM_CONST) Com_TxModeFalse[3] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+    /* Index    TimePeriod        Referable Keys */
+  { /*     0 */         1u },  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx] */
+  { /*     1 */        20u },  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+  { /*     2 */         0u }   /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx] */
 };
 #define COM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -371,10 +377,11 @@ CONST(Com_TxModeFalseType, COM_CONST) Com_TxModeFalse[2] = {  /* PRQA S 1514, 15
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-CONST(Com_TxModeInfoType, COM_CONST) Com_TxModeInfo[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+CONST(Com_TxModeInfoType, COM_CONST) Com_TxModeInfo[3] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
     /* Index    InitMode        Referable Keys */
   { /*     0 */     TRUE },  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx] */
-  { /*     1 */     TRUE }   /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+  { /*     1 */     TRUE },  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+  { /*     2 */     TRUE }   /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx] */
 };
 #define COM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -389,17 +396,17 @@ CONST(Com_TxModeInfoType, COM_CONST) Com_TxModeInfo[2] = {  /* PRQA S 1514, 1533
   \brief  Contains all relevant information for transmission mode true.
   \details
   Element       Description
-  Periodic      TRUE if transmission mode contains a cyclic part.
   TimePeriod    Cycle time factor.
 */ 
 #define COM_START_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-CONST(Com_TxModeTrueType, COM_CONST) Com_TxModeTrue[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-    /* Index    Periodic  TimePeriod        Referable Keys */
-  { /*     0 */     TRUE,         1u },  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx] */
-  { /*     1 */     TRUE,        20u }   /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+CONST(Com_TxModeTrueType, COM_CONST) Com_TxModeTrue[3] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+    /* Index    TimePeriod        Referable Keys */
+  { /*     0 */         1u },  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx] */
+  { /*     1 */        20u },  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+  { /*     2 */         0u }   /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx] */
 };
 #define COM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -414,19 +421,23 @@ CONST(Com_TxModeTrueType, COM_CONST) Com_TxModeTrue[2] = {  /* PRQA S 1514, 1533
   \brief  Contains all relevant information for Tx I-PDUs.
   \details
   Element                                Description
+  ExternalId                             External ID used to call PduR_ComTransmit().
+  IPduGroupInfoOfTxPduInfoIndEndIdx      the end index of the 0:n relation pointing to Com_IPduGroupInfoOfTxPduInfoInd
   IPduGroupInfoOfTxPduInfoIndStartIdx    the start index of the 0:n relation pointing to Com_IPduGroupInfoOfTxPduInfoInd
   PartitionsTxStructIdx                  the index of the 1:1 relation pointing to Com_PartitionsTxStruct
   TxBufferLength                         the number of relations pointing to Com_TxBuffer
+  TxPduInitValueEndIdx                   the end index of the 0:n relation pointing to Com_TxPduInitValue
   TxPduInitValueStartIdx                 the start index of the 0:n relation pointing to Com_TxPduInitValue
 */ 
 #define COM_START_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-CONST(Com_TxPduInfoType, COM_CONST) Com_TxPduInfo[2] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
-    /* Index    IPduGroupInfoOfTxPduInfoIndStartIdx  PartitionsTxStructIdx  TxBufferLength  TxPduInitValueStartIdx        Referable Keys */
-  { /*     0 */                                  0u,                    0u,            12u,                     0u },  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
-  { /*     1 */                                  1u,                    0u,             1u,                    12u }   /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+CONST(Com_TxPduInfoType, COM_CONST) Com_TxPduInfo[3] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+    /* Index    ExternalId                               IPduGroupInfoOfTxPduInfoIndEndIdx                    IPduGroupInfoOfTxPduInfoIndStartIdx                    PartitionsTxStructIdx  TxBufferLength  TxPduInitValueEndIdx  TxPduInitValueStartIdx        Referable Keys */
+  { /*     0 */ PduRConf_PduRSrcPdu_PduRSrcPdu_96a7407f,                                                  1u,                                                    0u,                    0u,            12u,                  12u,                     0u },  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+  { /*     1 */ PduRConf_PduRSrcPdu_PduRSrcPdu_087fd70d,                                                  2u,                                                    1u,                    0u,             1u,                  13u,                    12u },  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+  { /*     2 */ PduRConf_PduRSrcPdu_PduRSrcPdu_f11d45ed, COM_NO_IPDUGROUPINFOOFTXPDUINFOINDENDIDXOFTXPDUINFO, COM_NO_IPDUGROUPINFOOFTXPDUINFOINDSTARTIDXOFTXPDUINFO,                    0u,             7u,                  20u,                    13u }   /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx, ComMainFunctionTx] */
 };
 #define COM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -444,7 +455,7 @@ CONST(Com_TxPduInfoType, COM_CONST) Com_TxPduInfo[2] = {  /* PRQA S 1514, 1533 *
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-CONST(Com_TxPduInitValueType, COM_CONST) Com_TxPduInitValue[13] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+CONST(Com_TxPduInitValueType, COM_CONST) Com_TxPduInitValue[20] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
   /* Index     TxPduInitValue      Referable Keys */
   /*     0 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx] */
   /*     1 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx] */
@@ -458,7 +469,14 @@ CONST(Com_TxPduInitValueType, COM_CONST) Com_TxPduInitValue[13] = {  /* PRQA S 1
   /*     9 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx] */
   /*    10 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx] */
   /*    11 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx] */
-  /*    12 */           0x00u   /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+  /*    12 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+  /*    13 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx] */
+  /*    14 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx] */
+  /*    15 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx] */
+  /*    16 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx] */
+  /*    17 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx] */
+  /*    18 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx] */
+  /*    19 */           0x00u   /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx] */
 };
 #define COM_STOP_SEC_CONST_8
 /*lint -save -esym(961, 19.1) */
@@ -487,15 +505,21 @@ CONST(Com_TxPduInitValueType, COM_CONST) Com_TxPduInitValue[13] = {  /* PRQA S 1
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-CONST(Com_TxSigInfoType, COM_CONST) Com_TxSigInfo[7] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+CONST(Com_TxSigInfoType, COM_CONST) Com_TxSigInfo[13] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
     /* Index    DynSignal  ApplType                        BitLength  BitPosition  ByteLength  StartByteInPduPosition  TxBufferEndIdx  TxBufferStartIdx  TxPduInfoIdx        Referable Keys */
   { /*     0 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,         64u,         2u,                     8u,            10u,               8u,           0u },  /* [/ActiveEcuC/Com/ComConfig/ElectricAngle_omsg_MotorStatus_oCAN00_59d7c624_Tx] */
   { /*     1 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,         16u,         2u,                     2u,             4u,               2u,           0u },  /* [/ActiveEcuC/Com/ComConfig/Id_Ref_omsg_MotorStatus_oCAN00_d6855f80_Tx] */
   { /*     2 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,         32u,         2u,                     4u,             6u,               4u,           0u },  /* [/ActiveEcuC/Com/ComConfig/Iq_Ref_omsg_MotorStatus_oCAN00_64246970_Tx] */
   { /*     3 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        8u,          0u,         1u,                     0u,             1u,               0u,           0u },  /* [/ActiveEcuC/Com/ComConfig/MotorMode_omsg_MotorStatus_oCAN00_b2c82a54_Tx] */
   { /*     4 */     FALSE, COM_SINT16_APPLTYPEOFTXSIGINFO,       16u,         48u,         2u,                     6u,             8u,               6u,           0u },  /* [/ActiveEcuC/Com/ComConfig/Vbus_omsg_MotorStatus_oCAN00_85810386_Tx] */
-  { /*     5 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        1u,          0u,         0u,                     0u,            13u,              12u,           1u },  /* [/ActiveEcuC/Com/ComConfig/sig_RearInteriorLight_omsg_Transmit_oCAN00_49a633c1_Tx] */
-  { /*     6 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        1u,          8u,         0u,                     1u,             2u,               1u,           0u }   /* [/ActiveEcuC/Com/ComConfig/tle9180_Ov_Fault_omsg_MotorStatus_oCAN00_fd6f0927_Tx] */
+  { /*     5 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        8u,          8u,         1u,                     1u,            15u,              14u,           2u },  /* [/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_0_omsg_nm_MyECU_oCAN00_acc1931e_Tx] */
+  { /*     6 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        8u,         16u,         1u,                     2u,            16u,              15u,           2u },  /* [/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_1_omsg_nm_MyECU_oCAN00_bbe9f7de_Tx] */
+  { /*     7 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        8u,         24u,         1u,                     3u,            17u,              16u,           2u },  /* [/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_2_omsg_nm_MyECU_oCAN00_82915a9e_Tx] */
+  { /*     8 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        8u,         32u,         1u,                     4u,            18u,              17u,           2u },  /* [/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_3_omsg_nm_MyECU_oCAN00_95b93e5e_Tx] */
+  { /*     9 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        8u,         40u,         1u,                     5u,            19u,              18u,           2u },  /* [/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_4_omsg_nm_MyECU_oCAN00_f060001e_Tx] */
+  { /*    10 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        8u,         48u,         1u,                     6u,            20u,              19u,           2u },  /* [/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_5_omsg_nm_MyECU_oCAN00_e74864de_Tx] */
+  { /*    11 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        1u,          0u,         0u,                     0u,            13u,              12u,           1u },  /* [/ActiveEcuC/Com/ComConfig/sig_RearInteriorLight_omsg_Transmit_oCAN00_49a633c1_Tx] */
+  { /*    12 */     FALSE,  COM_UINT8_APPLTYPEOFTXSIGINFO,        1u,          8u,         0u,                     1u,             2u,               1u,           0u }   /* [/ActiveEcuC/Com/ComConfig/tle9180_Ov_Fault_omsg_MotorStatus_oCAN00_fd6f0927_Tx] */
 };
 #define COM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -517,6 +541,7 @@ VAR(Com_CurrentTxModeUType, COM_VAR_NO_INIT) Com_CurrentTxMode;  /* PRQA S 0759,
   /* Index        Referable Keys */
   /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx] */
   /*     1 */  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+  /*     2 */  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx] */
 
 #define COM_STOP_SEC_VAR_NO_INIT_8
 /*lint -save -esym(961, 19.1) */
@@ -538,6 +563,7 @@ VAR(Com_CycleTimeCntUType, COM_VAR_NO_INIT) Com_CycleTimeCnt;  /* PRQA S 0759, 1
   /* Index        Referable Keys */
   /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx] */
   /*     1 */  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+  /*     2 */  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx] */
 
 #define COM_STOP_SEC_VAR_NO_INIT_8
 /*lint -save -esym(961, 19.1) */
@@ -559,6 +585,7 @@ VAR(Com_CyclicSendRequestUType, COM_VAR_NO_INIT) Com_CyclicSendRequest;  /* PRQA
   /* Index        Referable Keys */
   /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx] */
   /*     1 */  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+  /*     2 */  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx] */
 
 #define COM_STOP_SEC_VAR_NO_INIT_8
 /*lint -save -esym(961, 19.1) */
@@ -727,6 +754,7 @@ VAR(Com_TransmitRequestUType, COM_VAR_NO_INIT) Com_TransmitRequest;  /* PRQA S 0
   /* Index        Referable Keys */
   /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx] */
   /*     1 */  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx] */
+  /*     2 */  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx] */
 
 #define COM_STOP_SEC_VAR_NO_INIT_8
 /*lint -save -esym(961, 19.1) */
@@ -744,7 +772,7 @@ VAR(Com_TransmitRequestUType, COM_VAR_NO_INIT) Com_TransmitRequest;  /* PRQA S 0
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-VAR(Com_TxBufferType, COM_VAR_NO_INIT) Com_TxBuffer[13];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+VAR(Com_TxBufferType, COM_VAR_NO_INIT) Com_TxBuffer[20];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
   /* Index        Referable Keys */
   /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx, /ActiveEcuC/Com/ComConfig/MotorMode_omsg_MotorStatus_oCAN00_b2c82a54_Tx] */
   /*     1 */  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx, /ActiveEcuC/Com/ComConfig/tle9180_Ov_Fault_omsg_MotorStatus_oCAN00_fd6f0927_Tx] */
@@ -759,6 +787,13 @@ VAR(Com_TxBufferType, COM_VAR_NO_INIT) Com_TxBuffer[13];  /* PRQA S 1514, 1533 *
   /*    10 */  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx] */
   /*    11 */  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx] */
   /*    12 */  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx, /ActiveEcuC/Com/ComConfig/sig_RearInteriorLight_omsg_Transmit_oCAN00_49a633c1_Tx] */
+  /*    13 */  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx] */
+  /*    14 */  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx, /ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_0_omsg_nm_MyECU_oCAN00_acc1931e_Tx] */
+  /*    15 */  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx, /ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_1_omsg_nm_MyECU_oCAN00_bbe9f7de_Tx] */
+  /*    16 */  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx, /ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_2_omsg_nm_MyECU_oCAN00_82915a9e_Tx] */
+  /*    17 */  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx, /ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_3_omsg_nm_MyECU_oCAN00_95b93e5e_Tx] */
+  /*    18 */  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx, /ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_4_omsg_nm_MyECU_oCAN00_f060001e_Tx] */
+  /*    19 */  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx, /ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_5_omsg_nm_MyECU_oCAN00_e74864de_Tx] */
 
 #define COM_STOP_SEC_VAR_NO_INIT_8
 /*lint -save -esym(961, 19.1) */
@@ -792,10 +827,11 @@ VAR(Com_TxIPduGroupISRLockCounterUType, COM_VAR_NO_INIT) Com_TxIPduGroupISRLockC
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-VAR(Com_TxPduGrpActiveType, COM_VAR_NO_INIT) Com_TxPduGrpActive[2];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+VAR(Com_TxPduGrpActiveType, COM_VAR_NO_INIT) Com_TxPduGrpActive[3];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
   /* Index        Referable Keys */
   /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
   /*     1 */  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+  /*     2 */  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx, ComMainFunctionTx] */
 
 #define COM_STOP_SEC_VAR_NO_INIT_8
 /*lint -save -esym(961, 19.1) */
@@ -829,10 +865,11 @@ VAR(Com_TxProcessingISRLockCounterUType, COM_VAR_NO_INIT) Com_TxProcessingISRLoc
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-VAR(Com_TxSduLengthType, COM_VAR_NO_INIT) Com_TxSduLength[2];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+VAR(Com_TxSduLengthType, COM_VAR_NO_INIT) Com_TxSduLength[3];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
   /* Index        Referable Keys */
   /*     0 */  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
   /*     1 */  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
+  /*     2 */  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx, ComMainFunctionTx] */
 
 #define COM_STOP_SEC_VAR_NO_INIT_16
 /*lint -save -esym(961, 19.1) */

@@ -385,6 +385,12 @@
                   <SDG GID="CanTrcv_30_Tja1145_Init">
                     <SDX-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSet/vSetBswInitialization/CanTrcv_30_Tja1145_Init</SDX-REF>
                   </SDG>
+                  <SDG GID="CanTrcv_30_Sbc_InitMemory">
+                    <SDX-REF DEST="AR-ELEMENT">/ActiveEcuC/vSet/vSetBswInitialization/CanTrcv_30_Sbc_InitMemory</SDX-REF>
+                  </SDG>
+                  <SDG GID="CanTrcv_30_Sbc_Init">
+                    <SDX-REF DEST="AR-ELEMENT">/ActiveEcuC/vSet/vSetBswInitialization/CanTrcv_30_Sbc_Init</SDX-REF>
+                  </SDG>
                 </SDG>
                 <SDG GID=".ActiveEcuC.CanTrcv.CanTrcv_30_Tja1145_InitMemory">
                   <SDG GID="vSetInitFunctionInstance">
@@ -681,6 +687,16 @@
                 <SDG GID=".ActiveEcuC.Uart.Uart_Init">
                   <SDG GID="vSetInitFunctionInstance">
                     <SDX-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/vSet/vSetBswInitialization/Uart_Init/vSetInitFunctionInstance</SDX-REF>
+                  </SDG>
+                </SDG>
+                <SDG GID=".ActiveEcuC.CanTrcv.CanTrcv_30_Sbc_InitMemory">
+                  <SDG GID="vSetInitFunctionInstance">
+                    <SDX-REF DEST="AR-ELEMENT">/ActiveEcuC/vSet/vSetBswInitialization/CanTrcv_30_Sbc_InitMemory/vSetInitFunctionInstance</SDX-REF>
+                  </SDG>
+                </SDG>
+                <SDG GID=".ActiveEcuC.CanTrcv.CanTrcv_30_Sbc_Init">
+                  <SDG GID="vSetInitFunctionInstance">
+                    <SDX-REF DEST="AR-ELEMENT">/ActiveEcuC/vSet/vSetBswInitialization/CanTrcv_30_Sbc_Init/vSetInitFunctionInstance</SDX-REF>
                   </SDG>
                 </SDG>
               </SDG>
@@ -2457,106 +2473,6 @@
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetInitFunctionInstance/vSetConfigPtrName</DEFINITION-REF>
                           <VALUE>PduR_Config_Ptr</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                      </PARAMETER-VALUES>
-                    </ECUC-CONTAINER-VALUE>
-                  </SUB-CONTAINERS>
-                </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="0d678a26-ce51-4900-a8d5-8295c033755c">
-                  <SHORT-NAME>CanTrcv_30_Tja1145_InitMemory</SHORT-NAME>
-                  <ANNOTATIONS>
-                    <ANNOTATION>
-                      <LABEL>
-                        <L-4 L="FOR-ALL">/ActiveEcuC/CanTrcv</L-4>
-                      </LABEL>
-                      <ANNOTATION-ORIGIN>DV:vSetBswInitFunction</ANNOTATION-ORIGIN>
-                      <ANNOTATION-TEXT>
-                        <P>
-                          <L-1 L="FOR-ALL">PLAIN_TEXT</L-1>
-                        </P>
-                        <P>
-                          <L-1 L="FOR-ALL">InitMemory function description of CanTrcv_30_Tja1145 in UnfilteredViewInInvariantProject (UnfilteredInvariantProjectModelView) .</L-1>
-                        </P>
-                      </ANNOTATION-TEXT>
-                    </ANNOTATION>
-                  </ANNOTATIONS>
-                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction</DEFINITION-REF>
-                  <PARAMETER-VALUES>
-                    <ECUC-TEXTUAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetHeader</DEFINITION-REF>
-                      <VALUE>CanTrcv_30_Tja1145.h</VALUE>
-                    </ECUC-TEXTUAL-PARAM-VALUE>
-                  </PARAMETER-VALUES>
-                  <REFERENCE-VALUES>
-                    <ECUC-REFERENCE-VALUE>
-                      <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetModuleRef</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-MODULE-CONFIGURATION-VALUES">/ActiveEcuC/CanTrcv</VALUE-REF>
-                    </ECUC-REFERENCE-VALUE>
-                  </REFERENCE-VALUES>
-                  <SUB-CONTAINERS>
-                    <ECUC-CONTAINER-VALUE UUID="521b9332-bdea-4e3f-862e-ffee771c8023">
-                      <SHORT-NAME>vSetInitFunctionInstance</SHORT-NAME>
-                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetInitFunctionInstance</DEFINITION-REF>
-                      <PARAMETER-VALUES>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetInitFunctionInstance/vSetInitPhase</DEFINITION-REF>
-                          <VALUE>INIT_MEMORY</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                      </PARAMETER-VALUES>
-                    </ECUC-CONTAINER-VALUE>
-                  </SUB-CONTAINERS>
-                </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="cf1d0279-cce6-4140-93e2-eda98acc9fb2">
-                  <SHORT-NAME>CanTrcv_30_Tja1145_Init</SHORT-NAME>
-                  <ANNOTATIONS>
-                    <ANNOTATION>
-                      <LABEL>
-                        <L-4 L="FOR-ALL">/ActiveEcuC/CanTrcv</L-4>
-                      </LABEL>
-                      <ANNOTATION-ORIGIN>DV:vSetBswInitFunction</ANNOTATION-ORIGIN>
-                      <ANNOTATION-TEXT>
-                        <P>
-                          <L-1 L="FOR-ALL">PLAIN_TEXT</L-1>
-                        </P>
-                        <P>
-                          <L-1 L="FOR-ALL">Init function description of CanTrcv_30_Tja1145 in UnfilteredViewInInvariantProject (UnfilteredInvariantProjectModelView) .</L-1>
-                        </P>
-                      </ANNOTATION-TEXT>
-                    </ANNOTATION>
-                  </ANNOTATIONS>
-                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction</DEFINITION-REF>
-                  <PARAMETER-VALUES>
-                    <ECUC-TEXTUAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetHeader</DEFINITION-REF>
-                      <VALUE>CanTrcv_30_Tja1145.h</VALUE>
-                    </ECUC-TEXTUAL-PARAM-VALUE>
-                    <ECUC-TEXTUAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetConfigType</DEFINITION-REF>
-                      <VALUE>CanTrcv_30_Tja1145_ConfigType</VALUE>
-                    </ECUC-TEXTUAL-PARAM-VALUE>
-                    <ECUC-TEXTUAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetConfigPtrClass</DEFINITION-REF>
-                      <VALUE>CANTRCV_30_TJA1145_INIT_DATA</VALUE>
-                    </ECUC-TEXTUAL-PARAM-VALUE>
-                  </PARAMETER-VALUES>
-                  <REFERENCE-VALUES>
-                    <ECUC-REFERENCE-VALUE>
-                      <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetModuleRef</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-MODULE-CONFIGURATION-VALUES">/ActiveEcuC/CanTrcv</VALUE-REF>
-                    </ECUC-REFERENCE-VALUE>
-                  </REFERENCE-VALUES>
-                  <SUB-CONTAINERS>
-                    <ECUC-CONTAINER-VALUE UUID="1237ff30-d548-4326-a0be-ba1fe318fa1d">
-                      <SHORT-NAME>vSetInitFunctionInstance</SHORT-NAME>
-                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetInitFunctionInstance</DEFINITION-REF>
-                      <PARAMETER-VALUES>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetInitFunctionInstance/vSetInitPhase</DEFINITION-REF>
-                          <VALUE>INIT_TWO_TRCV</VALUE>
-                        </ECUC-TEXTUAL-PARAM-VALUE>
-                        <ECUC-TEXTUAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/MICROSAR/vSet/vSetBswInitialization/vSetInitFunction/vSetInitFunctionInstance/vSetConfigPtrName</DEFINITION-REF>
-                          <VALUE>CanTrcv_30_Tja1145_Config_Ptr</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>

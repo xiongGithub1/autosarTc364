@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: ComM_Lcfg.c
- *   Generation Time: 2026-08-05 21:47:41
+ *   Generation Time: 2024-08-11 18:29:27
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -268,6 +268,23 @@ VAR(ComM_DcmRequestActiveUType, COMM_VAR_NO_INIT) ComM_DcmRequestActive;  /* PRQ
 /*lint -restore */
 
 /**********************************************************************************************************************
+  ComM_EcuMWakeUpIndicated
+**********************************************************************************************************************/
+/** 
+  \var    ComM_EcuMWakeUpIndicated
+  \brief  Passive Wakeup indicated by EcuM (ComM_EcuM_WakeUpIndication()). TRUE if indicated, FALSE otherwise.
+*/ 
+#define COMM_START_SEC_VAR_NOCACHE_NO_INIT_8
+/*lint -save -esym(961, 19.1) */
+#include "ComM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+volatile VAR(ComM_EcuMWakeUpIndicatedType, COMM_VAR_NO_INIT) ComM_EcuMWakeUpIndicated[1];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+#define COMM_STOP_SEC_VAR_NOCACHE_NO_INIT_8
+/*lint -save -esym(961, 19.1) */
+#include "ComM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+
+/**********************************************************************************************************************
   ComM_Inhibition
 **********************************************************************************************************************/
 /** 
@@ -297,6 +314,23 @@ VAR(ComM_InhibitionType, COMM_NVM_DATA_NO_INIT) ComM_Inhibition;  /* PRQA S 1514
 /*lint -restore */
 VAR(ComM_InitStatusType, COMM_VAR_NO_INIT) ComM_InitStatus;  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
 #define COMM_STOP_SEC_VAR_NO_INIT_UNSPECIFIED
+/*lint -save -esym(961, 19.1) */
+#include "ComM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+
+/**********************************************************************************************************************
+  ComM_NmStartUpIndicated
+**********************************************************************************************************************/
+/** 
+  \var    ComM_NmStartUpIndicated
+  \brief  Passive Wakeup indicated by Nm (ComM_Nm_NetworkStartIndication() or ComM_Nm_RestartIndication()). TRUE if indicated, FALSE otherwise.
+*/ 
+#define COMM_START_SEC_VAR_NOCACHE_NO_INIT_8
+/*lint -save -esym(961, 19.1) */
+#include "ComM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
+/*lint -restore */
+volatile VAR(ComM_NmStartUpIndicatedType, COMM_VAR_NO_INIT) ComM_NmStartUpIndicated[1];  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+#define COMM_STOP_SEC_VAR_NOCACHE_NO_INIT_8
 /*lint -save -esym(961, 19.1) */
 #include "ComM_MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
