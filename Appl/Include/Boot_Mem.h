@@ -54,8 +54,8 @@ typedef struct
   uint32 length;
   uint32 crc32;
   uint32 version;
-  uint32 reserved0;
-  uint32 reserved1;
+  uint32 intVec;    /* APP interrupt vector table base (BIV); 0 = no check */
+  uint32 trapVec;   /* APP trap vector table base (BTV); 0 = no check */
   uint32 reserved2;
 } Boot_AppHdrType;
 

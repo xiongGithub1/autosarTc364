@@ -9,6 +9,9 @@
 #include "BrsHw.h"
 
 extern void brsStartupEntry(void);
+/* APP OS vector tables — Boot validates intVec/trapVec against these. */
+extern uint8 osIsrLevel_0_Core0[];
+extern uint8 osTrap_0_Core0[];
 
 typedef char Appl_HdrSizeCheck[(sizeof(Boot_AppHdrType) == BOOT_APP_HDR_SIZE) ? 1 : -1];
 typedef char Appl_HsSizeCheck[(sizeof(Boot_HandshakeType) == BOOT_HS_SIZE) ? 1 : -1];
@@ -28,8 +31,8 @@ const Boot_AppHdrType Appl_BootHeader __at(0x80020000u) =
   0u, /* length: patch_app_header.py */
   0u, /* crc32:  patch_app_header.py */
   0x00010000u,
-  0u,
-  0u,
+  (uint32)&osIsrLevel_0_Core0, /* intVec  — BIV base, 8 KB aligned */
+  (uint32)&osTrap_0_Core0,     /* trapVec — BTV base, 256 B aligned */
   0u
 };
 #if defined (BRS_COMP_TASKING)

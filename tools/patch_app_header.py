@@ -9,6 +9,8 @@ Boot (Boot_App_IsImageValid):
     with header crc32 field forced to 0 while computing
   - length must be >= 32 and multiple of 32
   - Unprogrammed bytes inside length are treated as erased PFlash 0x00 (TC3xx)
+  - Optional intVec/trapVec (header +16/+20): if non-zero, both set, in APP,
+    trap 256-aligned, int 8KB-aligned
 
 Usage (from Debug/ or Release/ after link):
   python ..\\Tools\\patch_app_header.py last364.hex
