@@ -3,19 +3,21 @@
  *  DESC: VOFA+ JustFloat FOC telemetry (ASCLIN0).
  *
  *  Capture: Core1 FOC beat into a ring (unique samples).
- *  Transmit: Core0 1 ms drains as many unique frames as UART allows.
+ *  Transmit: Core0 1 ms packs up to 10 JustFloat frames into one async Uart_Write.
+ *  Do not WaitIdle between frames — Default_Appl_Task is NON and shares Core0
+ *  with NvM/Fee/Fls; spinning starved Fee InitGC.
  *
- *  Frame: 8 * float32 LE + 00 00 80 7F = 36 B.
+ *  Frame (JCom): AA 55 + 8 * float32 LE + 00 00 80 7F = 38 B.
  *
  *  Channel map (VOFA JustFloat):
- *    f0  i_motor.u          ← 三相电流页只用 f0/f1/f2
+ *    f0  i_motor.u          鈫� 涓夌浉鐢垫祦椤靛彧鐢� f0/f1/f2
  *    f1  i_motor.v
  *    f2  i_motor.w
- *    f3  pwm_OutU           ← 马鞍波页只用 f3/f4/f5（中心约 2500）
+ *    f3  pwm_OutU           鈫� 椹瀺娉㈤〉鍙敤 f3/f4/f5锛堜腑蹇冪害 2500锛�
  *    f4  pwm_OutV
  *    f5  pwm_OutW
- *    f6  FOC 运行电角度 (0..8192 计数，开环=强制角 / 闭环=控制用角)
- *    f7  TLE5012 真实电角度 (0..8192 计数)
+ *    f6  FOC 杩愯鐢佃搴� (0..8192 璁℃暟锛屽紑鐜�=寮哄埗瑙� / 闂幆=鎺у埗鐢ㄨ)
+ *    f7  TLE5012 鐪熷疄鐢佃搴� (0..8192 璁℃暟)
  *********************************************************************************************************************/
 #include "UartTest.h"
 #include "Uart.h"
@@ -24,9 +26,12 @@
 
 #define UARTTEST_CHANNEL                 (0U)
 #define UARTTEST_CH_COUNT                (8U)
-#define UARTTEST_TX_BUF_SIZE             ((UARTTEST_CH_COUNT * 4U) + 4U)
+#define UARTTEST_HDR_SIZE                (0U)
+#define UARTTEST_TAIL_SIZE               (4U)
+#define UARTTEST_FRAME_SIZE              (UARTTEST_HDR_SIZE + (UARTTEST_CH_COUNT * 4U) + UARTTEST_TAIL_SIZE)
 #define UARTTEST_RING_DEPTH              (32U)
-#define UARTTEST_BURST_PER_1MS           (8U)
+#define UARTTEST_BURST_PER_1MS           (10U)
+#define UARTTEST_TX_BUF_SIZE             (UARTTEST_FRAME_SIZE * UARTTEST_BURST_PER_1MS)
 
 volatile uint32 UartTest_TxOkCount = 0U;
 volatile uint32 UartTest_TxBusyCount = 0U;
@@ -68,6 +73,8 @@ static void UartTest_FillSnap(float32 *const dst)
   /* Same 8192-count electrical scale for overlay on VOFA. */
   dst[6] = ctx->angle.angleRaw;
   dst[7] = Tle5012bd_Sensor.Angle;
+//  dst[6]=ctx->idqRef.imag;
+//  dst[7]=ctx->idqMeas.imag;
 }
 
 void UartTest_Init(void)
@@ -107,53 +114,58 @@ void UartTest_MainFunction(void)
   uint16 pos;
   uint8 rd;
   uint8 ch;
-  uint8 burst;
+  uint8 n;
+  uint8 packed;
   uint8 count;
 
-  for (burst = 0U; burst < UARTTEST_BURST_PER_1MS; burst++)
+  count = UartTest_Count;
+  if (count == 0U)
   {
-    count = UartTest_Count;
-    if (count == 0U)
-    {
-      break;
-    }
+    return;
+  }
 
-    status = Uart_GetStatus(UARTTEST_CHANNEL);
-    UartTest_LastStatus = (uint32)status;
-    if (status != UART_IDLE)
-    {
-      UartTest_TxBusyCount++;
-      break;
-    }
+  status = Uart_GetStatus(UARTTEST_CHANNEL);
+  UartTest_LastStatus = (uint32)status;
+  if (status != UART_IDLE)
+  {
+    UartTest_TxBusyCount++;
+    return;
+  }
 
-    rd = UartTest_RdIdx;
-    pos = 0U;
+  packed = count;
+  if (packed > UARTTEST_BURST_PER_1MS)
+  {
+    packed = UARTTEST_BURST_PER_1MS;
+  }
+
+  pos = 0U;
+  rd = UartTest_RdIdx;
+  for (n = 0U; n < packed; n++)
+  {
     for (ch = 0U; ch < UARTTEST_CH_COUNT; ch++)
     {
       UartTest_PutFloat(UartTest_TxBuf, &pos, UartTest_Ring[rd][ch]);
     }
-
     UartTest_TxBuf[pos++] = 0x00U;
     UartTest_TxBuf[pos++] = 0x00U;
     UartTest_TxBuf[pos++] = 0x80U;
     UartTest_TxBuf[pos++] = 0x7FU;
+    rd = (uint8)((rd + 1U) % UARTTEST_RING_DEPTH);
+  }
 
-    retVal = Uart_Write(UARTTEST_CHANNEL, UartTest_TxBuf, (Uart_SizeType)pos);
-    if (retVal == UART_E_OK)
-    {
-      UartTest_TxOkCount++;
-      UartTest_RdIdx = (uint8)((rd + 1U) % UARTTEST_RING_DEPTH);
-      UartTest_Count = (uint8)(count - 1U);
-    }
-    else if (retVal == UART_E_BUSY)
-    {
-      UartTest_TxBusyCount++;
-      break;
-    }
-    else
-    {
-      UartTest_TxFailCount++;
-      break;
-    }
+  retVal = Uart_Write(UARTTEST_CHANNEL, UartTest_TxBuf, (Uart_SizeType)pos);
+  if (retVal == UART_E_OK)
+  {
+    UartTest_TxOkCount += (uint32)packed;
+    UartTest_RdIdx = rd;
+    UartTest_Count = (uint8)(count - packed);
+  }
+  else if (retVal == UART_E_BUSY)
+  {
+    UartTest_TxBusyCount++;
+  }
+  else
+  {
+    UartTest_TxFailCount++;
   }
 }

@@ -2,13 +2,22 @@
 **** Build of configuration Debug for project last364 ****
 
 "D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
-Compiling MotorFoc_CurrentLoop.c
-ctc W536: ["..\Appl\Source\CDD\MotorFoc\MotorFoc_CurrentLoop.c" 386/14] unused static function "MotorFoc_IsVdcUsable"
-0 errors, 1 warnings
+Compiling Appl_BootCompat.c
 Linking to last364.elf
 Cleaning up compiler cache
+ltc W159: LSL: section ".rodata.Appl_BootCompat.Appl_BootHeader" (variable Appl_BootHeader) was not selected because it already has an absolute restriction
 
-Time consumed: 14843 ms
+"D:\\Program Files (x86)\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 post-build 
+Patch APP header length/crc32
+"E:/workFiles/TC367/TC367/workspace/last364/Tools/patch_app_header.bat" "E:/workFiles/TC367/TC367/workspace/last364/Debug/last364.hex"
+[patch_app_header] last364.hex
+  magic  = 0xa5c3b007
+  entry  = 0x80065160
+  length = 0x56480 (353408 bytes)
+  crc32  = 0x07fe049c
+  out    = E:\workFiles\TC367\TC367\workspace\last364\Debug\last364.hex
+
+Time consumed: 20304 ms
 **** End of build ****
 
 Tool info: 

@@ -25,7 +25,8 @@
 #define MOTORFOC_VDC_SVPWM_MIN_V        (0.5F)
 #define MOTORFOC_CURRENT_MAX_A_DEFAULT  (65.0F)
 #define MOTORFOC_CURRENT_STARTUP_BLANKING_COUNT_DEFAULT    (100U)
-#define MOTORFOC_CURRENT_UNDERVOLT_CONFIRM_COUNT_DEFAULT   (20U)
+/* 20 ms @ 10 kHz. Old 20 ticks (2 ms) false-tripped on VINV ADC glitches at PWM edges. */
+#define MOTORFOC_CURRENT_UNDERVOLT_CONFIRM_COUNT_DEFAULT   (200U)
 /* OC1: instantaneous hard trip = 2x rated, no debounce, always armed. */
 #define MOTORFOC_CURRENT_INSTANT_TRIP_A_DEFAULT  (2.0F * MOTORFOC_CURRENT_MAX_A_DEFAULT)
 /* OC2: 持续超限时间（秒）；10 kHz 一拍 = 100 µs。 */
@@ -528,7 +529,7 @@ static uint8 MotorFoc_CheckUndervoltFault(MotorFoc_ContextType* ctx)
  *    6) OC2  sustained overcurrent: |I| > MaxCurrentA for
  *           overCurrentTripSec (default 20 s) continuously -> latch
  *    7) UV   undervoltage (vdc < MinVdcRunV for
- *           UndervoltConfirmCount loops, ~2 ms)            -> latch
+ *           UndervoltConfirmCount loops, default 20 ms)    -> latch
  *
  *  Fault policy:
  *    - overcurrent (OC1/OC2): auto-clears (if overCurrentAutoRecover == 1)

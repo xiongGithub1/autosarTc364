@@ -4,8 +4,8 @@
 #include "Std_Types.h"
 
 #define MOTORZEROCAL_STORAGE_MAGIC      (0xA5A4U)
-/* 0.002 A per 10 kHz fast-loop tick: 1 A is reached in about 50 ms. */
-#define MOTORZEROCAL_ID_RAMP_STEP_A     (0.002F)
+/* 0.0002 A per 10 kHz fast-loop tick: 5 A is reached in about 0.5 s. */
+#define MOTORZEROCAL_ID_RAMP_STEP_A     (0.0001F)
 #define MOTORZEROCAL_ID_REACHED_EPS_A   (0.02F)
 #define MOTORZEROCAL_ALIGN_ANGLE_DEG    (0.0F)
 /* 判定容差（Angle 现为电角度 v%8192，8192 计数 = 360° 电角度）：

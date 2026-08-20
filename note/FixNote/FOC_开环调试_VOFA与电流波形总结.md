@@ -171,7 +171,8 @@ RUN 阶段也可跟 `TargetRpmCmd` 升降速（按 `AccelerationTicks` 斜坡）
 5. 低速先看 **f6 是否笔直**：笔直则强制角 OK；f7 鼓包先加 Iq。  
 6. 开环稳定后再做零点标定与闭环切换。  
 
-相关文档：`note/Guides/FOC_OpenLoop_Startup.md`
+相关文档：`note/Guides/FOC_OpenLoop_Startup.md`  
+本轮零点 / DFlash / UART 占核 / 欠压：`note/FixNote/零点标定_DFlash_UART与欠压总结.md`
 
 ---
 

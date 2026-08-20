@@ -62,15 +62,15 @@ derivative mpe
   {
     mau = 8;
     type = ram;
-    size = 159728; /* 156 KiB */
-    map (dest=bus:local_bus, dest_offset = 0x70000000, size = 159728);
+    size = 159616; /* 156 KiB */
+    map (dest=bus:local_bus, dest_offset = 0x70000000, size = 159616);
   }
   memory Variables_Shared
   {
     mau = 8;
     type = ram;
-    size = 16; /* 16 Byte */
-    map (dest=bus:local_bus, dest_offset = 0x70026FF0, size = 16);
+    size = 128; /* 128 Byte */
+    map (dest=bus:local_bus, dest_offset = 0x70026F80, size = 128);
   }
   memory StartupStack_Shared
   {
@@ -79,38 +79,52 @@ derivative mpe
     size = 36864; /* 36 KiB */
     map (dest=bus:local_bus, dest_offset = 0x70027000, size = 36864);
   }
-  memory StartupCode_FirstExecInst
-  {
-    mau = 8;
-    type = rom;
-    size = 1280; /* 1 KiB */
-    map (dest=bus:local_bus, dest_offset = 0x80000000, size = 1280);
-  }
-  memory CoreExceptions_FirstExecInst
-  {
-    mau = 8;
-    type = rom;
-    size = 512; /* 512 Byte */
-    map (dest=bus:local_bus, dest_offset = 0x80000500, size = 512);
-  }
   memory PFlash0_Cached
   {
     mau = 8;
     type = rom;
-    size = 2095360; /* 2 MiB */
-    map (dest=bus:local_bus, dest_offset = 0x80000700, size = 2095360);
-  }
-  memory BMHD0
-  {
-    mau = 8;
-    type = rom;
-    size = 512; /* 512 Byte */
-    map (dest=bus:local_bus, dest_offset = 0xAF400000, size = 512);
+    size = 1966080; /* 2 MiB */
+    map (dest=bus:local_bus, dest_offset = 0x80020000, size = 1966080);
   }
 }
 
 section_layout mpe:vtc:linear
 {
+  /* APP header @ 0x80020000: absolute in Appl_BootCompat.c (__at). Keep this
+   * group first so PFlash packing leaves the low 32 B free / consistent. */
+  group App_BootHeader_GROUP (ordered, contiguous, fill, run_addr = mem:mpe:PFlash0_Cached)
+  {
+    group App_BootHeader (ordered, contiguous, fill)
+    {
+      section "App_BootHeader_SEC" (fill, blocksize = 2, attributes = rx)
+      {
+        select "[.]rodata.AppBootHdr";
+      }
+    }
+    "_App_BootHeader_START" = "_lc_gb_App_BootHeader";
+    "_App_BootHeader_END" = ("_lc_ge_App_BootHeader" == 0) ? 0 : "_lc_ge_App_BootHeader" - 1;
+    "_App_BootHeader_LIMIT" = "_lc_ge_App_BootHeader";
+  }
+
+  group Brs_ExcVect_GROUP (ordered, contiguous, fill, run_addr = mem:mpe:PFlash0_Cached)
+  {
+    group Brs_ExcVect (ordered, contiguous, fill, align = 256)
+    {
+      section "Brs_ExcVect_SEC" (fill, blocksize = 2, attributes = rx)
+      {
+        select "[.]text.brsExcVect";
+        select "[.]rodata.brsExcVectConst";
+      }
+    }
+    "_Brs_ExcVect_START" = "_lc_gb_Brs_ExcVect";
+    "_Brs_ExcVect_END" = ("_lc_ge_Brs_ExcVect" == 0) ? 0 : "_lc_ge_Brs_ExcVect" - 1;
+    "_Brs_ExcVect_LIMIT" = "_lc_ge_Brs_ExcVect";
+
+    "_Brs_ExcVect_ALL_START" = "_Brs_ExcVect_START";
+    "_Brs_ExcVect_ALL_END" = "_Brs_ExcVect_END";
+    "_Brs_ExcVect_ALL_LIMIT" = "_Brs_ExcVect_LIMIT";
+  }
+
   group OS_STACKS_CORE0_VAR_GROUP (ordered, contiguous, fill, run_addr = mem:mpe:DSPR_Core0)
   {
     group OS_STACKS_CORE0_VAR_NOINIT (ordered, contiguous, fill, align = 16)
@@ -177,76 +191,6 @@ section_layout mpe:vtc:linear
     "_OS_STACKS_CORE1_VAR_ALL_LIMIT" = "_OS_STACKS_CORE1_VAR_NOINIT_LIMIT";
   }
 
-  group Brs_ExcVect_GROUP (ordered, contiguous, fill, run_addr = mem:mpe:CoreExceptions_FirstExecInst)
-  {
-    group Brs_ExcVect (ordered, contiguous, fill, align = 256)
-    {
-      section "Brs_ExcVect_SEC" (fill, blocksize = 2, attributes = rx)
-      {
-        select "[.]text.brsExcVect";
-        select "[.]rodata.brsExcVectConst";
-      }
-    }
-    group Brs_ExcVect_PAD (align = 8)
-    {
-      reserved "Brs_ExcVect_PAD" (size = 16);
-    }
-    "_Brs_ExcVect_START" = "_lc_gb_Brs_ExcVect";
-    "_Brs_ExcVect_END" = ("_lc_gb_Brs_ExcVect_PAD" == 0) ? 0 : "_lc_gb_Brs_ExcVect_PAD" - 1;
-    "_Brs_ExcVect_LIMIT" = "_lc_gb_Brs_ExcVect_PAD";
-
-    "_Brs_ExcVect_ALL_START" = "_Brs_ExcVect_START";
-    "_Brs_ExcVect_ALL_END" = "_Brs_ExcVect_END";
-    "_Brs_ExcVect_ALL_LIMIT" = "_Brs_ExcVect_LIMIT";
-  }
-
-  group Brs_Startup_Code_GROUP (ordered, contiguous, fill, run_addr = mem:mpe:StartupCode_FirstExecInst)
-  {
-    group Brs_Startup_Code (ordered, contiguous, fill)
-    {
-      section "Brs_Startup_Code_SEC" (fill, blocksize = 2, attributes = rx)
-      {
-        select "[.]text.brsStartup";
-      }
-    }
-    "_Brs_Startup_Code_START" = "_lc_gb_Brs_Startup_Code";
-    "_Brs_Startup_Code_END" = ("_lc_ge_Brs_Startup_Code" == 0) ? 0 : "_lc_ge_Brs_Startup_Code" - 1;
-    "_Brs_Startup_Code_LIMIT" = "_lc_ge_Brs_Startup_Code";
-
-    group BrsMain_Startup_Code (ordered, contiguous, fill)
-    {
-      section "BrsMain_Startup_Code_SEC" (fill, blocksize = 2, attributes = rx)
-      {
-        select "[.]text.brsMainStartup";
-      }
-    }
-    "_BrsMain_Startup_Code_START" = "_lc_gb_BrsMain_Startup_Code";
-    "_BrsMain_Startup_Code_END" = ("_lc_ge_BrsMain_Startup_Code" == 0) ? 0 : "_lc_ge_BrsMain_Startup_Code" - 1;
-    "_BrsMain_Startup_Code_LIMIT" = "_lc_ge_BrsMain_Startup_Code";
-
-    "_Brs_Startup_Code_ALL_START" = "_Brs_Startup_Code_START";
-    "_Brs_Startup_Code_ALL_END" = "_BrsMain_Startup_Code_END";
-    "_Brs_Startup_Code_ALL_LIMIT" = "_BrsMain_Startup_Code_LIMIT";
-  }
-
-  group BMHD0_GROUP (ordered, contiguous, fill, run_addr = mem:mpe:BMHD0)
-  {
-    group BMHD0 (ordered, contiguous, fill)
-    {
-      section "BMHD0_SEC" (fill, blocksize = 2, attributes = rx)
-      {
-        select "[.]rodata.BMHD0";
-      }
-    }
-    "_BMHD0_START" = "_lc_gb_BMHD0";
-    "_BMHD0_END" = ("_lc_ge_BMHD0" == 0) ? 0 : "_lc_ge_BMHD0" - 1;
-    "_BMHD0_LIMIT" = "_lc_ge_BMHD0";
-
-    "_BMHD0_ALL_START" = "_BMHD0_START";
-    "_BMHD0_ALL_END" = "_BMHD0_END";
-    "_BMHD0_ALL_LIMIT" = "_BMHD0_LIMIT";
-  }
-
   group Brs_Shared_Const_GROUP (ordered, contiguous, fill, run_addr = mem:mpe:PFlash0_Cached)
   {
     group Brs_Shared_Const (ordered, contiguous, fill)
@@ -281,6 +225,25 @@ section_layout mpe:vtc:linear
     "_Brs_Shared_Var_ALL_START" = "_Brs_Shared_Var_START";
     "_Brs_Shared_Var_ALL_END" = "_Brs_Shared_Var_END";
     "_Brs_Shared_Var_ALL_LIMIT" = "_Brs_Shared_Var_LIMIT";
+  }
+
+  group Brs_Startup_Code_GROUP (ordered, contiguous, fill, run_addr = mem:mpe:PFlash0_Cached)
+  {
+    group Brs_Startup_Code (ordered, contiguous, fill)
+    {
+      section "Brs_Startup_Code_SEC" (fill, blocksize = 2, attributes = rx)
+      {
+        select "[.]text.brsMainStartup";
+        select "[.]text.brsStartup";
+      }
+    }
+    "_Brs_Startup_Code_START" = "_lc_gb_Brs_Startup_Code";
+    "_Brs_Startup_Code_END" = ("_lc_ge_Brs_Startup_Code" == 0) ? 0 : "_lc_ge_Brs_Startup_Code" - 1;
+    "_Brs_Startup_Code_LIMIT" = "_lc_ge_Brs_Startup_Code";
+
+    "_Brs_Startup_Code_ALL_START" = "_Brs_Startup_Code_START";
+    "_Brs_Startup_Code_ALL_END" = "_Brs_Startup_Code_END";
+    "_Brs_Startup_Code_ALL_LIMIT" = "_Brs_Startup_Code_LIMIT";
   }
 
   "__HEAP" = 8;

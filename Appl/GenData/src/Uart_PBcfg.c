@@ -15,7 +15,7 @@
 **                                                                            **
 **  VERSION   : 12.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2026-08-17, 18:30:51  !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2026-08-18, 15:29:30  !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  GENERATOR : Build b191017-0938      !!!IGNORE-LINE!!!                   **
 **                                                                            **
@@ -104,9 +104,9 @@ static const Uart_ChannelConfigType  Uart_ChannelConfig[1] =
       /* Call-back notification function for streaming operation */
       NULL_PTR,
     },
-    /* BaudRate : 4000000 Hz  */
+    /* BaudRate : 6000000 Hz  */
     /* Channel baud rate numerator */
-    450U,
+    270U,
     /* Channel baud rate denominator */
     1000U,
     /* Channel baud rate prescalar */

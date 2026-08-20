@@ -147,8 +147,10 @@ static void MotorCdd_FocServiceAngleSpi(void)
     return;
   }
 
-  /* 1ms 标定正在写 ANG_BASE(ChangeAngleBasic) 时独占 QSPI2：本拍跳过读取。 */
-  if (MotorZeroCal_SpiBusy != 0U)
+  /* 写 ANG_BASE / 保存 Flash 时独占 QSPI2，否则 10 kHz 读会把零点写坏。 */
+  if ((MotorZeroCal_SpiBusy != 0U) ||
+      (MotorZeroCal_Stage == MOTORZEROCAL_STAGE_APPLY_OFFSET) ||
+      (MotorZeroCal_State == MOTORZEROCAL_STATE_SAVING))
   {
     return;
   }
@@ -293,12 +295,19 @@ void MotorCdd_FocFastLoop(void)
   {
     case MOTOR_MODE_CALIBRATION:
       MotorZeroCal_FastLoopStep();
+      /* Same as open-loop: do not keep a 2 A Id command while PWM is off or
+         still in startup blanking, or the first enabled beat spikes the DC link. */
       if ((Tle9180_Driver_GetState() == TLE9180_DRV_STATE_READY) &&
           (MotorCdd_AdcIsCurrentOffsetReady() != 0U) &&
           (MotorControll_IsOutputEnabled() != 0U) &&
-          (MotorFoc_ProtObs.fault.active == 0U))
+          (MotorFoc_ProtObs.fault.active == 0U) &&
+          (MotorFoc_ProtObs.cnt.startupBlankingLeft == 0U))
       {
         MotorZeroCal_RampAlignCurrentStep();
+      }
+      else
+      {
+        MotorZeroCal_IdRefA = 0.0F;
       }
       MotorCdd_RunFocCurrentControl(MotorZeroCal_GetAlignCurrentA(),
                                     0.0F,
@@ -307,8 +316,18 @@ void MotorCdd_FocFastLoop(void)
       break;
 
     case MOTOR_MODE_OPEN_LOOP:
-      /* The open-loop module owns startup sequencing and reference ramps. */
-      MotorFoc_OpenLoop_FastLoopStep(idRef, iqRef);
+      /* Ramp Id/Iq and advance forced angle only while the inverter is on.
+         Otherwise ALIGN/RAMP finish with PWM off, then the first enabled beat
+         sees IdRef already at 3 A → PI dumps voltage → 10 A+ spike and UV. */
+      if (MotorControll_IsOutputEnabled() != 0U)
+      {
+        MotorFoc_OpenLoop_FastLoopStep(idRef, iqRef);
+      }
+      else
+      {
+        MotorFoc_OpenLoop_IdRefOut = 0.0F;
+        MotorFoc_OpenLoop_IqRefOut = 0.0F;
+      }
       MotorCdd_RunFocCurrentControl(MotorFoc_OpenLoop_GetIdRefA(),
                                     MotorFoc_OpenLoop_GetIqRefA(),
                                     1U,

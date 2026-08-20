@@ -15,6 +15,7 @@
  **********************************************************************************************************************/
 #include "MotorCdd_Adc.h"
 #include "MotorCdd_Foc.h"
+#include "MotorZeroCal.h"
 #include "Adc_Cfg.h"
 #include "Mcu_17_TimerIp.h"
 #include "IfxGtm_reg.h"
@@ -67,6 +68,10 @@ static MotorCdd_AdcPhysicalType MotorCdd_AdcPhysical;
 static float32 MotorCdd_AdcCurrentFilterIuA;
 static float32 MotorCdd_AdcCurrentFilterIvA;
 static float32 MotorCdd_AdcCurrentFilterIwA;
+/* fc≈100 Hz @ 10 kHz: hide PWM-edge VINV spikes from UV. */
+#define MOTORCDD_ADC_VINV_FILTER_ALPHA         (0.06F)
+static float32 MotorCdd_AdcVinvFilterV = 0.0F;
+static uint8 MotorCdd_AdcVinvFilterReady = 0U;
 volatile sint32 MotorCdd_AdcPhaseOffsetVo1;
 volatile sint32 MotorCdd_AdcPhaseOffsetVo2;
 volatile sint32 MotorCdd_AdcPhaseOffsetVo3;
@@ -224,6 +229,12 @@ static void MotorCdd_AdcRemoveCommonMode(void)
  * U(VO1)+V(VO2) on G0/G2 sync group, set W = -(U+V). */
 static void MotorCdd_AdcReconstructThirdPhase(void)
 {
+  /* 零点对齐靠 Id 把转子拉到固定电角度，必须用三路实测电流。 */
+  if (MotorZeroCal_State == MOTORZEROCAL_STATE_RUNNING)
+  {
+    return;
+  }
+
   if (MotorCdd_AdcReconstructEnable == 0U)
   {
     return;
@@ -263,6 +274,8 @@ void MotorCdd_AdcResetCurrentFilter(void)
   MotorCdd_AdcCurrentFilterIvA = 0.0F;
   MotorCdd_AdcCurrentFilterIwA = 0.0F;
   MotorCdd_AdcCurrentFilterReady = 0U;
+  MotorCdd_AdcVinvFilterV = 0.0F;
+  MotorCdd_AdcVinvFilterReady = 0U;
 }
 
 /* 直读 EVADC 结果寄存器（IfxEvadc_reg.h GxRES，位定义见 Ifx_EVADC_G_RES_Bits）：
@@ -380,7 +393,20 @@ void MotorCdd_AdcConvertToPhysical(void)
   MotorCdd_AdcFilterPhaseCurrents();
   MotorCdd_AdcRemoveCommonMode();
   MotorCdd_AdcPhysical.vro_V = ((float32)MotorCdd_AdcRaw.vro * MOTORCDD_ADC_VRO_CON_FACTOR);
-  MotorCdd_AdcPhysical.vinv_V = ((float32)MotorCdd_AdcRaw.vinv * MOTORCDD_ADC_VINV_CON_FACTOR);
+  {
+    float32 vinvRaw = ((float32)MotorCdd_AdcRaw.vinv * MOTORCDD_ADC_VINV_CON_FACTOR);
+    if (MotorCdd_AdcVinvFilterReady == 0U)
+    {
+      MotorCdd_AdcVinvFilterV = vinvRaw;
+      MotorCdd_AdcVinvFilterReady = 1U;
+    }
+    else
+    {
+      MotorCdd_AdcVinvFilterV +=
+          MOTORCDD_ADC_VINV_FILTER_ALPHA * (vinvRaw - MotorCdd_AdcVinvFilterV);
+    }
+    MotorCdd_AdcPhysical.vinv_V = MotorCdd_AdcVinvFilterV;
+  }
 }
 
 void MotorCdd_AdcCaptureCurrentOffset(void)

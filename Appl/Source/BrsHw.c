@@ -114,6 +114,8 @@ const Brs_WdtRegTypes kBrsWdtCon0Addresses[8] = {
 #endif
 
 #if defined (BRS_FIRST_EXECUTION_INSTANCE)
+/* BMHD must live only in Boot. last364 is the APP image behind Boot. */
+# if 0
 /* This code is only needed for the first instance/executable in the system */
 # if defined (BRS_COMP_TASKING)
 #pragma protect
@@ -176,6 +178,7 @@ volatile const uint32 bmiField0[128] =
 # if defined (BRS_COMP_TASKING)
 #pragma section farrom restore
 # endif
+# endif /* 0: BMHD disabled for APP */
 #endif /*BRS_FIRST_EXECUTION_INSTANCE*/
 
 /**********************************************************************************************************************

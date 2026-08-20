@@ -19,6 +19,7 @@
 #include "NvM_Cfg.h"
 #include "Fee.h"
 #include "MemIf.h"
+#include "Os.h"
 
 /* 0 = skip power-on NvM_ReadBlock (use while debugging Fee/NvM write).
  * 1 = normal production: read DFlash after Fee IDLE. */
@@ -29,6 +30,11 @@
 /* Fee_StateVar.FeeInitGCState: 5=COMPLETE, 6=FAIL (FAIL still reports MEMIF_IDLE). */
 #define MOTORZEROCAL_FEE_INITGC_COMPLETE  (5U)
 #define MOTORZEROCAL_FEE_INITGC_FAIL      (6U)
+/* Fee InitGC 卡住时，超过此时长仍允许标定（按无有效 DFlash 记录处理）。 */
+#define MOTORZEROCAL_BOOT_READ_WAIT_MS    (3000UL)
+/* Fee 未 IDLE/COMPLETE 时最多等这么久就报 FLASH，不再吃 20 s 对齐预算。 */
+#define MOTORZEROCAL_FEE_WAIT_MS          (3000UL)
+#define MOTORZEROCAL_NV_WRITE_WAIT_MS     (5000UL)
 
 typedef struct
 {
@@ -47,6 +53,8 @@ volatile uint32 MotorZeroCal_NvPendingTicks = 0UL;
 static uint8 MotorZeroCal_TimedNvWriteActive = 0U;
 /* 1 = Init wants one boot ReadBlock after Fee becomes IDLE. */
 static uint8 MotorZeroCal_NvBootReadRequest = 0U;
+static uint32 MotorZeroCal_NvBootWaitMs = 0UL;
+static uint32 MotorZeroCal_NvSaveWaitMs = 0UL;
 volatile uint8 MotorZeroCal_SpiBusy = 0U;
 
 extern volatile MotorMode_Type MotorControll_MotorModeCmd;
@@ -60,7 +68,7 @@ volatile uint32 MotorZeroCal_TimerMs = 0U;
 volatile uint32 MotorZeroCal_ElapsedMs = 0UL;
 volatile uint8 MotorZeroCal_RetryCount = 0U;
 volatile float32 MotorZeroCal_IdRefA = 0.0F;
-volatile float32 MotorZeroCal_IdRefTargetA = 2.0f;
+volatile float32 MotorZeroCal_IdRefTargetA = 3.0f;
 volatile float32 MotorZeroCal_IdRefRampStepA = MOTORZEROCAL_ID_RAMP_STEP_A;
 volatile uint8 MotorZeroCal_StartRejectReason = MOTORZEROCAL_START_REJECT_NONE;
 volatile uint8 MotorZeroCal_FaultReason = MOTORZEROCAL_FAULT_NONE;
@@ -99,6 +107,7 @@ static void MotorZeroCal_ApplyAngBase(uint16 angBase)
      恢复标定值必须与标定时(tle5012b_ChangeAngleBasic)一致的三步：
        1) 清 ANG_BASE_EN(bit0) -> 2) 写 MOD_3 -> 3) 置 ANG_BASE_EN */
   MotorZeroCal_SpiBusy = 1U;
+  SuspendAllInterrupts();
   mod2 = (uint16)(tle5012b_read_fast(MOD_2) & 0x7FFCU);
   tle5012b_write_fast(MOD_2, mod2);
   tle5012b_delay_us(2U);
@@ -111,6 +120,7 @@ static void MotorZeroCal_ApplyAngBase(uint16 angBase)
   tle5012b_delay_us(2U);
 
   tle5012b_read_all();
+  ResumeAllInterrupts();
   MotorZeroCal_SpiBusy = 0U;
 #endif
 }
@@ -242,7 +252,7 @@ static uint8 MotorZeroCal_RequestNvWrite(void)
 
 void MotorZeroCal_SaveToFlash(void)
 {
-  /* Motortask-safe entry: only queue. NvM_WriteBlock runs in StartApp 1 ms. */
+  /* Queue only. NvM_WriteBlock is issued in MotorZeroCal_MainFunction (Core1 1 ms). */
   if (MotorControll_IsOutputEnabled() != 0U)
   {
     MotorControll_StopPwm();
@@ -252,6 +262,7 @@ void MotorZeroCal_SaveToFlash(void)
   MotorZeroCal_SaveToStorage();
 
   MotorZeroCal_NvSaveRequest = 1U;
+  MotorZeroCal_NvSaveWaitMs = 0UL;
   MotorZeroCal_FaultReason = MOTORZEROCAL_FAULT_NONE;
   if (MotorZeroCal_State != MOTORZEROCAL_STATE_SAVING)
   {
@@ -259,7 +270,7 @@ void MotorZeroCal_SaveToFlash(void)
   }
 }
 
-/* Must run in StartApp 1 ms (not MotorTask): queues NvM_WriteBlock. */
+/* Core1 MotorCdd 1 ms: issue NvM_WriteBlock after PWM is off. */
 static void MotorZeroCal_ProcessSaveRequest(void)
 {
   extern Fee_StateDataType Fee_StateVar;
@@ -283,12 +294,19 @@ static void MotorZeroCal_ProcessSaveRequest(void)
     return;
   }
 
-  /* Wait until Fee idle and InitGC complete. */
+  /* Wait until Fee idle and InitGC complete — fail fast, do not burn 20 s align. */
   if ((Fee_GetStatus() != MEMIF_IDLE) ||
       (Fee_StateVar.FeeInitGCState != MOTORZEROCAL_FEE_INITGC_COMPLETE))
   {
+    MotorZeroCal_NvSaveWaitMs++;
+    if (MotorZeroCal_NvSaveWaitMs >= MOTORZEROCAL_FEE_WAIT_MS)
+    {
+      MotorZeroCal_NvSaveRequest = 0U;
+      MotorZeroCal_EnterFault(MOTORZEROCAL_FAULT_FLASH);
+    }
     return;
   }
+  MotorZeroCal_NvSaveWaitMs = 0UL;
 
   /* Previous write still open — wait. */
   if (MotorZeroCal_NvWritePending != 0U)
@@ -403,6 +421,18 @@ static void MotorZeroCal_ProcessNvJobs(void)
       {
         MotorZeroCal_NvPendingTicks++;
         MotorZeroCal_NvLastResult = (uint8)requestResult;
+        if (MotorZeroCal_NvPendingTicks > MOTORZEROCAL_NV_WRITE_WAIT_MS)
+        {
+          (void)NvM_CancelJobs(NvMConf_NvMBlockDescriptor_NvMBlock_MotorZeroCal);
+          MotorZeroCal_NvWritePending = 0U;
+          MotorZeroCal_TimedNvWriteActive = 0U;
+          MotorZeroCal_NvPendingTicks = 0UL;
+          MotorZeroCal_NvLastResult = (uint8)NVM_REQ_NOT_OK;
+          if (MotorZeroCal_State == MOTORZEROCAL_STATE_SAVING)
+          {
+            MotorZeroCal_EnterFault(MOTORZEROCAL_FAULT_FLASH);
+          }
+        }
       }
     }
   }
@@ -474,11 +504,13 @@ static void MotorZeroCal_ChangeAngleBasicFromAval(void)
 #if (MOTORZEROCAL_SPI_ENABLE == 1U)
   uint16 angleBasic;
 
-  /* Original_Angle 由快速环最新一帧写入；写 ANG_BASE 期间置 SpiBusy，
-     让快速环暂停读，保证 QSPI2 写序列不被抢占。 */
+  /* Original_Angle 由快速环最新一帧写入；关中断 + SpiBusy，避免 10 kHz
+     FOC 读角打断 MOD_2/MOD_3 写序列，导致 ANG_BASE 写不进去、零点永远判不过。 */
   angleBasic = (uint16)Tle5012bd_Sensor.Original_Angle;
   MotorZeroCal_SpiBusy = 1U;
+  SuspendAllInterrupts();
   tle5012b_ChangeAngleBasic(&Tle5012bd_Sensor, angleBasic);
+  ResumeAllInterrupts();
   MotorZeroCal_SpiBusy = 0U;
 #else
   /* SPI bring-up: skip sensor write path. */
@@ -487,7 +519,7 @@ static void MotorZeroCal_ChangeAngleBasicFromAval(void)
 
 static void MotorZeroCal_OnAlignSuccess(void)
 {
-  /* Align OK: RAM first, then queue DFlash write (NvM_WriteBlock in StartApp 1 ms). */
+  /* Align OK: RAM first, then queue DFlash write (NvM_WriteBlock in Core1 1 ms). */
   MotorZeroCal_AngBase = Tle5012bd_Sensor.ANG_BASE;
   MotorZeroCal_SetCalibratedFlag(1U);
   MotorZeroCal_DflashValid = 1U;
@@ -512,9 +544,14 @@ static void MotorZeroCal_RunCalibrationStep(void)
 
   if (MotorFoc_ProtObs.fault.active != 0U)
   {
-    MotorZeroCal_SetCalibratedFlag(0U);
-    MotorZeroCal_EnterFault(MOTORZEROCAL_FAULT_CURRENT);
-    return;
+    /* UV is often a VINV sample glitch / brief sag; PWM already dropped.
+       Do not abort the whole calibration as FAULT_CURRENT. Overcurrent still does. */
+    if (MotorFoc_ProtObs.fault.reason != MOTORFOC_CURRENT_FAULT_UNDERVOLT)
+    {
+      MotorZeroCal_SetCalibratedFlag(0U);
+      MotorZeroCal_EnterFault(MOTORZEROCAL_FAULT_CURRENT);
+      return;
+    }
   }
 
   if (MotorZeroCal_IsAlignCurrentReached() == 0U)
@@ -573,8 +610,8 @@ static void MotorZeroCal_RunCalibrationStep(void)
 
 static void MotorZeroCal_CheckTotalTimeout(void)
 {
-  if ((MotorZeroCal_State == MOTORZEROCAL_STATE_RUNNING) ||
-      (MotorZeroCal_State == MOTORZEROCAL_STATE_SAVING))
+  /* 只统计对齐阶段。SAVING 等 Fee/NvM 有独立 3 s/5 s，不再占用 20 s。 */
+  if (MotorZeroCal_State == MOTORZEROCAL_STATE_RUNNING)
   {
     MotorZeroCal_ElapsedMs++;
     if (MotorZeroCal_ElapsedMs > MOTORZEROCAL_TOTAL_TIMEOUT_MS)
@@ -610,8 +647,10 @@ void MotorZeroCal_Init(void)
   MotorZeroCal_DflashReadComplete = 0U;
   MotorZeroCal_NvSaveRequest = 0U;
   MotorZeroCal_TimedNvWriteActive = 0U;
+  MotorZeroCal_NvSaveWaitMs = 0UL;
   MotorZeroCal_SpiBusy = 0U;
   MotorZeroCal_SetCalibratedFlag(0U);
+  MotorZeroCal_NvBootWaitMs = 0UL;
 #if (MOTORZEROCAL_BOOT_NVM_READ == 1U)
   /* Do not ReadBlock until Fee leaves INITGC/BUSY — otherwise job stays PENDING forever. */
   MotorZeroCal_NvBootReadRequest = 1U;
@@ -752,20 +791,34 @@ void MotorZeroCal_MainFunction(void)
 {
   extern Fee_StateDataType Fee_StateVar;
 
-  /* Power-on read only after Fee InitGC COMPLETE (FAIL also reports IDLE). */
+  if (MotorZeroCal_DflashReadComplete == 0U)
+  {
+    MotorZeroCal_NvBootWaitMs++;
+  }
+
   if ((MotorZeroCal_NvBootReadRequest != 0U) &&
       (MotorZeroCal_NvReadPending == 0U) &&
       (MotorZeroCal_NvWritePending == 0U) &&
       (Fee_GetStatus() == MEMIF_IDLE) &&
-      (Fee_StateVar.FeeInitGCState == MOTORZEROCAL_FEE_INITGC_COMPLETE))
+      ((Fee_StateVar.FeeInitGCState == MOTORZEROCAL_FEE_INITGC_COMPLETE) ||
+       (Fee_StateVar.FeeInitGCState == MOTORZEROCAL_FEE_INITGC_FAIL)))
   {
     MotorZeroCal_NvBootReadRequest = 0U;
     MotorZeroCal_RequestNvRead();
   }
 
+  if ((MotorZeroCal_DflashReadComplete == 0U) &&
+      (MotorZeroCal_NvReadPending == 0U) &&
+      (MotorZeroCal_NvBootWaitMs >= MOTORZEROCAL_BOOT_READ_WAIT_MS))
+  {
+    MotorZeroCal_NvBootReadRequest = 0U;
+    MotorZeroCal_Storage.magic = 0U;
+    MotorZeroCal_Storage.angBase = 0U;
+    MotorZeroCal_LoadFromStorage();
+  }
+
   MotorZeroCal_ProcessNvJobs();
   MotorZeroCal_ProcessDeferredAngBase();
-
   MotorZeroCal_CheckTotalTimeout();
 
   if (MotorZeroCal_State == MOTORZEROCAL_STATE_RUNNING)
@@ -773,12 +826,10 @@ void MotorZeroCal_MainFunction(void)
     MotorZeroCal_RunCalibrationStep();
   }
 
-  /* After align success SaveToFlash() — issue NvM_WriteBlock same 1 ms if PWM off. */
   MotorZeroCal_ProcessSaveRequest();
 
   if (MotorZeroCal_State == MOTORZEROCAL_STATE_DONE)
   {
-    /* Align+Flash done → STOP. */
     if (MotorControll_MotorModeCmd == MOTOR_MODE_CALIBRATION)
     {
       MotorControll_MotorModeCmd = MOTOR_MODE_STOP;
@@ -792,6 +843,6 @@ void MotorZeroCal_MainFunction(void)
   }
   else
   {
-    /* IDLE / RUNNING / SAVING: no exit action. */
+    /* IDLE / RUNNING / SAVING */
   }
 }

@@ -39,15 +39,17 @@ angBase          // TLE5012 MOD_3.ANG_BASE
 
 ## 时间和默认参数
 
-- 对齐电流默认 `1.0 A`；先确认安全后再增加。
-- 初次对齐保持 `1.5 s`；每次重试保持 `200 ms`。
-- 最大重试 10 次。
-- `MotorZeroCal_ElapsedMs` 从标定开始到 DFlash 写入结束只使用一个总时间预算：`8 s`。
-- 超过 8 秒会停止并置 `MOTORZEROCAL_FAULT_TIMEOUT`；不会无限等待 Flash。
+以代码为准，细节见 `note/FixNote/零点标定_DFlash_UART与欠压总结.md`。
+
+- 对齐电流默认 `IdRefTargetA = 3 A`（UDE 可改）。
+- Id 斜坡：`0.0001 A` / 10 kHz 拍（3 A 约 3 s），**不算**在下面的保持时间里。
+- 初次对齐保持 `1.5 s`；每次重试保持 `0.3 s`。
+- 最大重试 30 次。
+- `ElapsedMs` **只统计对齐 RUNNING**，总预算 `20 s`。写 Flash 单独 3 s（等 Fee）/ 5 s（写 PENDING）。
 
 ## 成功、失败与擦除
 
-- 成功：先把新 `ANG_BASE` 和有效标志放进 RAM 镜像，关闭 PWM 后由 StartApp 1 ms 异步调用 `NvM_WriteBlock()`；只有 NvM 返回 `NVM_REQ_OK` 才进入 COMPLETE。
+- 成功：先把新 `ANG_BASE` 和有效标志放进 RAM 镜像，关闭 PWM 后由 **Core1** `MotorZeroCal_MainFunction` 异步 `NvM_WriteBlock()`；只有 NvM 返回 `NVM_REQ_OK` 才进入 COMPLETE。
 - 写 Flash 失败：当前会话保留 RAM 内标定结果，但 DFlash 不视为更新成功；下次上电按旧记录/无效记录处理。
 - 擦除：`MOTOR_MODE_CALIBRATION_ERASE` 将 `ANG_BASE=0` 和有效标志=0 写入 DFlash。重启后 `MotorZeroCal_IsCalibrationRequired()` 应返回 1。
 

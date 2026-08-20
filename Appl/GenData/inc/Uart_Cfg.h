@@ -15,7 +15,7 @@
 **                                                                            **
 **  VERSION   : 9.0.0                                                         **
 **                                                                            **
-**  DATE, TIME: 2026-08-17, 18:30:52  !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2026-08-18, 15:29:30  !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  GENERATOR : Build b191017-0938      !!!IGNORE-LINE!!!                   **
 **                                                                            **
@@ -235,7 +235,7 @@ kernels */
     - if UART_CSRREG_CLKSEL_SLOWCLK, ASCLIN peripheral frequency for slow mode is selected.
     (Derived from PLL1 frequency upto 80 MHz)
 */
-#define UART_CSRREG_CLKSEL_CLC (UART_CSRREG_CLKSEL_SLOWCLK)
+#define UART_CSRREG_CLKSEL_CLC (UART_CSRREG_CLKSEL_FASTCLK)
 
 /* Maximum of number of channels configured. */
 /* [cover parentID={344C50A8-3C3B-451c-BDC1-91765B6418CA}]

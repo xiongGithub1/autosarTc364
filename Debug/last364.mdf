@@ -1,20 +1,14 @@
 # space <name> <id> <mau size>
 space	mpe:vtc:linear	1	8
 # chip <name> <id> <mau size> <size> <type>
+chip	mpe:PFlash0_Cached	4	8	1966080	rom
+chip	mpe:DSPR_Core0	1	8	159616	ram
 chip	mpe:StartupStack_Shared	3	8	36864	ram
-chip	mpe:StartupCode_FirstExecInst	4	8	1280	rom
-chip	mpe:CoreExceptions_FirstExecInst	5	8	512	rom
-chip	mpe:DSPR_Core0	1	8	159728	ram
-chip	mpe:Variables_Shared	2	8	16	ram
-chip	mpe:PFlash0_Cached	6	8	2095360	rom
-chip	mpe:BMHD0	7	8	512	rom
+chip	mpe:Variables_Shared	2	8	128	ram
 chip	mpe:DSPR_Core1	0	8	196608	ram
 # map <space id> <start in space> <size in space> <chip id> <start on chip>
 map	1	1610612736	196608	0	0
-map	1	1879048192	159728	1	0
-map	1	1879207920	16	2	0
+map	1	1879048192	159616	1	0
+map	1	1879207808	128	2	0
 map	1	1879207936	36864	3	0
-map	1	2147483648	1280	4	0
-map	1	2147484928	512	5	0
-map	1	2147485440	2095360	6	0
-map	1	2940207104	512	7	0
+map	1	2147614720	1966080	4	0

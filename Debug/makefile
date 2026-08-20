@@ -62,6 +62,10 @@ all :
 -include "..\makefile.defs"
 
 PCP_FILES :=
+post-build:
+	@echo Patch APP header length/crc32
+	"E:/workFiles/TC367/TC367/workspace/last364/Tools/patch_app_header.bat" "E:/workFiles/TC367/TC367/workspace/last364/Debug/last364.hex"
+
 EXT_LIBRARIES =
 
 all : "last364.elf"

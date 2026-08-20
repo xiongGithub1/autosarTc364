@@ -147,8 +147,9 @@ void MotorControll_MainFunction(void)
   MotorControll_UpdateFeedbackObservation();
   MotorControll_UpdateGateDriverObservation();
 
-  if ((motorMode == MOTOR_MODE_IDLE) &&
-      (MotorFoc_ProtObs.fault.active != 0U) &&
+  /* UV recover in every mode. RunCurrentLoop does not run while OutputEnabled=0,
+     so a 2 ms VINV glitch used to latch UV forever during cal/open-loop. */
+  if ((MotorFoc_ProtObs.fault.active != 0U) &&
       (MotorFoc_ProtObs.fault.reason == MOTORFOC_CURRENT_FAULT_UNDERVOLT))
   {
     const MotorCdd_AdcPhysicalType* adcPhysical = MotorCdd_GetAdcPhysical();
