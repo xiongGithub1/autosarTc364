@@ -90,22 +90,6 @@ derivative mpe
 
 section_layout mpe:vtc:linear
 {
-  /* APP header @ 0x80020000: absolute in Appl_BootCompat.c (__at). Keep this
-   * group first so PFlash packing leaves the low 32 B free / consistent. */
-  group App_BootHeader_GROUP (ordered, contiguous, fill, run_addr = mem:mpe:PFlash0_Cached)
-  {
-    group App_BootHeader (ordered, contiguous, fill)
-    {
-      section "App_BootHeader_SEC" (fill, blocksize = 2, attributes = rx)
-      {
-        select "[.]rodata.AppBootHdr";
-      }
-    }
-    "_App_BootHeader_START" = "_lc_gb_App_BootHeader";
-    "_App_BootHeader_END" = ("_lc_ge_App_BootHeader" == 0) ? 0 : "_lc_ge_App_BootHeader" - 1;
-    "_App_BootHeader_LIMIT" = "_lc_ge_App_BootHeader";
-  }
-
   group Brs_ExcVect_GROUP (ordered, contiguous, fill, run_addr = mem:mpe:PFlash0_Cached)
   {
     group Brs_ExcVect (ordered, contiguous, fill, align = 256)

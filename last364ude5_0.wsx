@@ -3,7 +3,7 @@
 	<OriginalWsp type="string">last364ude5_0.wsx</OriginalWsp>
 	<BackupWspFlag type="flag">0</BackupWspFlag>
 	<UseWspCnt type="int">0</UseWspCnt>
-	<WspCloseCnt type="int">24</WspCloseCnt>
+	<WspCloseCnt type="int">25</WspCloseCnt>
 	<ProdInfo type="bin" size="52">vQTv/gAAAQAGAAMAFiAEAAAABQAAAAAAPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAA==</ProdInfo>
 	<ProdInfoString type="string">5.0</ProdInfoString>
 	<CreationDate type="string">25.07.2026 20:24:28:000</CreationDate>
@@ -73,7 +73,7 @@
 							<UniqueIdentifier>MainFrame.StdTargetManagerWin.OPEN_VIEW</UniqueIdentifier>
 						</UniqueControlIdDockingControlData>
 						<UniqueControlIdDockingControlData>
-							<DockedDimension>1071</DockedDimension>
+							<DockedDimension>1072</DockedDimension>
 							<Cancelled>false</Cancelled>
 							<DockingType>Bottom</DockingType>
 							<FloatingBounds>
@@ -91,7 +91,7 @@
 							<UniqueIdentifier>MainFrame.StdUDEMessageWin.OPEN_VIEW</UniqueIdentifier>
 						</UniqueControlIdDockingControlData>
 						<UniqueControlIdDockingControlData>
-							<DockedDimension>847</DockedDimension>
+							<DockedDimension>846</DockedDimension>
 							<Cancelled>false</Cancelled>
 							<DockingType>Bottom</DockingType>
 							<FloatingBounds>
@@ -109,7 +109,7 @@
 							<UniqueIdentifier>MainFrame.UDEProgressWin.OPEN_VIEW</UniqueIdentifier>
 						</UniqueControlIdDockingControlData>
 						<UniqueControlIdDockingControlData>
-							<DockedDimension>691</DockedDimension>
+							<DockedDimension>431</DockedDimension>
 							<Cancelled>false</Cancelled>
 							<DockingType>Left</DockingType>
 							<FloatingBounds>
@@ -123,7 +123,7 @@
 							<DockingIndex>1</DockingIndex>
 							<PanelIndex>0</PanelIndex>
 							<ContainerType>DockPanel</ContainerType>
-							<Selected>true</Selected>
+							<Selected>false</Selected>
 							<UniqueIdentifier>Core0.ViewSrv.StdUDESymbolExplWin.OPEN_VIEW</UniqueIdentifier>
 						</UniqueControlIdDockingControlData>
 						<UniqueControlIdDockingControlData>
@@ -249,7 +249,7 @@
 							<DockingIndex>10</DockingIndex>
 							<PanelIndex>-1</PanelIndex>
 							<ContainerType>TabbedDocument</ContainerType>
-							<Selected>true</Selected>
+							<Selected>false</Selected>
 							<UniqueIdentifier>Core0.ViewSrv.StdUDEProgWin.OPEN_VIEW02</UniqueIdentifier>
 						</UniqueControlIdDockingControlData>
 						<UniqueControlIdDockingControlData>
@@ -357,7 +357,7 @@
 							<DockingIndex>2</DockingIndex>
 							<PanelIndex>0</PanelIndex>
 							<ContainerType>DockPanel</ContainerType>
-							<Selected>false</Selected>
+							<Selected>true</Selected>
 							<UniqueIdentifier>Core1.ViewSrv.StdUDESymbolExplWin.OPEN_VIEW</UniqueIdentifier>
 						</UniqueControlIdDockingControlData>
 						<UniqueControlIdDockingControlData>
@@ -501,7 +501,7 @@
 							<DockingIndex>1</DockingIndex>
 							<PanelIndex>-1</PanelIndex>
 							<ContainerType>TabbedDocument</ContainerType>
-							<Selected>false</Selected>
+							<Selected>true</Selected>
 							<UniqueIdentifier>Core1.ViewSrv.StdUDEProgWin.OPEN_VIEW05</UniqueIdentifier>
 						</UniqueControlIdDockingControlData>
 						<UniqueControlIdDockingControlData>
@@ -595,7 +595,7 @@
 									<Width>111</Width>
 									<Height>25</Height>
 								</Bounds>
-								<Name>Window Toolbar</Name>
+								<Name>Show Toolbar</Name>
 								<AlwaysUnvisible>false</AlwaysUnvisible>
 								<Visible>false</Visible>
 								<ToolItemData>
@@ -712,7 +712,7 @@
 									<Width>111</Width>
 									<Height>25</Height>
 								</Bounds>
-								<Name>Show Toolbar</Name>
+								<Name>Window Toolbar</Name>
 								<AlwaysUnvisible>false</AlwaysUnvisible>
 								<Visible>false</Visible>
 								<ToolItemData>
@@ -1406,21 +1406,21 @@
 									<ToolItemPersistData>
 										<Name></Name>
 										<Visible>true</Visible>
-										<Text>Core0</Text>
+										<Text>Core1</Text>
 										<DisplayStyle>ImageAndText</DisplayStyle>
 										<AppendAccelerator>false</AppendAccelerator>
 									</ToolItemPersistData>
 									<ToolItemPersistData>
 										<Name></Name>
 										<Visible>true</Visible>
-										<Text>C:\...\tc\TriBoard_TC36xA_das.cfg</Text>
+										<Text>F:\...\\TriBoard_TC36xA_das.cfg</Text>
 										<DisplayStyle>ImageAndText</DisplayStyle>
 										<AppendAccelerator>false</AppendAccelerator>
 									</ToolItemPersistData>
 									<ToolItemPersistData>
 										<Name></Name>
 										<Visible>true</Visible>
-										<Text>Core0 halted by reset</Text>
+										<Text>Core1 not connected</Text>
 										<DisplayStyle>ImageAndText</DisplayStyle>
 										<AppendAccelerator>false</AppendAccelerator>
 									</ToolItemPersistData>
@@ -1488,22 +1488,6 @@
 					<Screens>
 						<ScreenControlData>
 							<Bounds>
-								<X>1920</X>
-								<Y>0</Y>
-								<Width>1920</Width>
-								<Height>1080</Height>
-							</Bounds>
-							<WorkingArea>
-								<X>1920</X>
-								<Y>0</Y>
-								<Width>1920</Width>
-								<Height>1040</Height>
-							</WorkingArea>
-							<Primary>false</Primary>
-							<DeviceName>\\.\DISPLAY1</DeviceName>
-						</ScreenControlData>
-						<ScreenControlData>
-							<Bounds>
 								<X>0</X>
 								<Y>0</Y>
 								<Width>1920</Width>
@@ -1516,7 +1500,7 @@
 								<Height>1040</Height>
 							</WorkingArea>
 							<Primary>true</Primary>
-							<DeviceName>\\.\DISPLAY2</DeviceName>
+							<DeviceName>\\.\DISPLAY1</DeviceName>
 						</ScreenControlData>
 					</Screens>
 				</ScreensControlData>
@@ -1527,7 +1511,7 @@
 				<FrameCreated type="string">25.07.2026 20:24:55:564</FrameCreated>
 				<ViewSrv type="key">
 					<TargetBrowserView type="key">
-						<SplitterRatio type="int">52</SplitterRatio>
+						<SplitterRatio type="int">55</SplitterRatio>
 						<ShowTargetState type="flag">1</ShowTargetState>
 						<SetDebuggerFocus type="flag">1</SetDebuggerFocus>
 						<ShowSymbolsOnHalt type="flag">1</ShowSymbolsOnHalt>
@@ -1603,7 +1587,7 @@
 			<OPEN_VIEW type="key">
 				<FrameCreated type="string">25.07.2026 20:24:55:631</FrameCreated>
 				<ViewSrv type="key">
-					<_ExtentX type="bin" size="8">IFcAAA==</_ExtentX>
+					<_ExtentX type="bin" size="8">BlcAAA==</_ExtentX>
 					<_ExtentY type="bin" size="8">ZhIAAA==</_ExtentY>
 					<_StockProps type="bin" size="8">AAAAAA==</_StockProps>
 					<Columns type="bin" size="8">CAAAAA==</Columns>
@@ -1654,7 +1638,7 @@
 		<UDEUECUseCaseParameterView type="key">
 			<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
 		</UDEUECUseCaseParameterView>
-		<SelectedPrinter type="string">RICOH SP 221S DDST (云盒_69 USB1)</SelectedPrinter>
+		<SelectedPrinter type="string">EPSON WF-7720 Series</SelectedPrinter>
 		<BreakpointWin type="key">
 			<SAVED_VIEW_OBJS type="int">0</SAVED_VIEW_OBJS>
 		</BreakpointWin>
@@ -1689,7 +1673,7 @@
 			<MacroLib type="string">C:\Program Files (x86)\pls\UDE Starterkit 5.0\StdLibrary.mso</MacroLib>
 		</Macro>
 		<PLACEMENT type="key">
-			<MULTICORELOADERDLG type="string">2540,3221,397,644</MULTICORELOADERDLG>
+			<MULTICORELOADERDLG type="string">620,1301,397,644</MULTICORELOADERDLG>
 			<SFRSelectDlg type="string">2708,3053,359,682</SFRSelectDlg>
 			<EnumSelectDlg type="string">2708,3053,359,682</EnumSelectDlg>
 		</PLACEMENT>
@@ -1741,7 +1725,7 @@
 		<UDESTK.Script type="key">
 			<MacroGuiEntries type="key">
 				<LastScriptFilePath type="string">C:\Users\Qxiong\Documents\pls\UDESTK 5.0</LastScriptFilePath>
-				<Macro_18_08_26_17_36_27_0 type="key">
+				<Macro_19_08_26_16_01_17_0 type="key">
 					<ScriptDescription type="string">The script contains a collection of macros to save memory content into different file formats 
 and fill target memory ranges</ScriptDescription>
 					<ScriptPath type="string">V:\UDE\AddOns\Macro\MacroLibrary\StdMacros1.dsm</ScriptPath>
@@ -2021,7 +2005,7 @@ End Sub</ScriptSource>
 					<ScriptFromStg type="flag">1</ScriptFromStg>
 					<LocalComputerName type="string">WS_CORE_DUO</LocalComputerName>
 					<ExternalScriptPath type="string"></ExternalScriptPath>
-					<NextNodeName type="string">Macro_19_08_26_16_01_17_0</NextNodeName>
+					<NextNodeName type="string">Macro_21_08_26_13_23_12_0</NextNodeName>
 					<UnAss type="key">
 						<GUIEntry type="key">
 							<MenuID type="int">10</MenuID>
@@ -2078,7 +2062,7 @@ End Sub</ScriptSource>
 						<GUIEntryDescription type="string"></GUIEntryDescription>
 					</FillDWord>
 					<NoOfFunctions type="int">5</NoOfFunctions>
-				</Macro_18_08_26_17_36_27_0>
+				</Macro_19_08_26_16_01_17_0>
 			</MacroGuiEntries>
 			<LastSelectedMacro type="string"></LastSelectedMacro>
 		</UDESTK.Script>
@@ -3000,8 +2984,8 @@ Group Member</LastSelectedPropPage>
 				<OPEN_VIEW00 type="key">
 					<FrameCreated type="string">25.07.2026 20:25:54:848</FrameCreated>
 					<ViewSrv type="key">
-						<TopIndex type="int">26</TopIndex>
-						<CaretIndex type="int">43</CaretIndex>
+						<TopIndex type="int">0</TopIndex>
+						<CaretIndex type="int">0</CaretIndex>
 						<LastSelectedPropPage type="string">Color Properties
 Color</LastSelectedPropPage>
 						<NameWidth type="int">332</NameWidth>
@@ -3677,11 +3661,10 @@ SET 0xF0001E54 0x200
 WAIT 5
 SET 0xF0001E54 0x400
 WAIT 5
-
-
 </InitScript>
 						<ExecOnConnectCmds type="flag">0</ExecOnConnectCmds>
-						<OnConnectScript type="string"></OnConnectScript>
+						<OnConnectScript type="string">
+						</OnConnectScript>
 						<ExecOnExtRstCmds type="flag">0</ExecOnExtRstCmds>
 						<FailOnResetMalfunction type="flag">0</FailOnResetMalfunction>
 						<ResetPulseLen type="int">10</ResetPulseLen>
@@ -3716,9 +3699,11 @@ WAIT 5
 						<SimioAddr type="string">g_JtagSimioAccess</SimioAddr>
 						<UseStmForPtm type="int">1</UseStmForPtm>
 						<ExecOnStartCmds type="flag">0</ExecOnStartCmds>
-						<OnStartScript type="string"></OnStartScript>
+						<OnStartScript type="string">
+						</OnStartScript>
 						<ExecOnHaltCmds type="flag">0</ExecOnHaltCmds>
-						<OnHaltScript type="string"></OnHaltScript>
+						<OnHaltScript type="string">
+						</OnHaltScript>
 						<ExecOnHaltCmdsWhileHaltedPeriod type="int">0</ExecOnHaltCmdsWhileHaltedPeriod>
 						<UseTriggerToBreak type="flag">1</UseTriggerToBreak>
 						<UseTL2OnHalt type="flag">1</UseTL2OnHalt>
@@ -4213,7 +4198,7 @@ WAIT 5
 			</breakpointsV3>
 		</UDE.StdDbgSrv>
 		<MRUSourceFileList type="key">
-			<NoOfMRUSrcFileEntries type="int">15</NoOfMRUSrcFileEntries>
+			<NoOfMRUSrcFileEntries type="int">14</NoOfMRUSrcFileEntries>
 			<MRUSrcFile0 type="string">Appl\Source\BrsHwStartup.c</MRUSrcFile0>
 			<MRUSrcFile1 type="string">BSW364\Os\Implementation\Os_Hal_Core_162_P.h</MRUSrcFile1>
 			<MRUSrcFile2 type="string">BSW364\Os\Implementation\Os_Hook.c</MRUSrcFile2>
@@ -4224,11 +4209,10 @@ WAIT 5
 			<MRUSrcFile7 type="string">BSW364\Os\Implementation\Os_Trap.c</MRUSrcFile7>
 			<MRUSrcFile8 type="string">Appl\Source\EcuM_Callout_Stubs.c</MRUSrcFile8>
 			<MRUSrcFile9 type="string">Appl\Source\BrsMain.c</MRUSrcFile9>
-			<MRUSrcFile10 type="string">code &lt;0x80000000-0x800003FF&gt;</MRUSrcFile10>
-			<MRUSrcFile11 type="string">BSW364\Os\Implementation\Os_Barrier.c</MRUSrcFile11>
-			<MRUSrcFile12 type="string">BSW364\Os\Implementation\Os_Hal_Core.h</MRUSrcFile12>
-			<MRUSrcFile13 type="string">BSW364\Os\Implementation\Os_Core.c</MRUSrcFile13>
-			<MRUSrcFile14 type="string">Appl\Source\StartApp.c</MRUSrcFile14>
+			<MRUSrcFile10 type="string">BSW364\Os\Implementation\Os_Barrier.c</MRUSrcFile10>
+			<MRUSrcFile11 type="string">BSW364\Os\Implementation\Os_Hal_Core.h</MRUSrcFile11>
+			<MRUSrcFile12 type="string">BSW364\Os\Implementation\Os_Core.c</MRUSrcFile12>
+			<MRUSrcFile13 type="string">Appl\Source\StartApp.c</MRUSrcFile13>
 		</MRUSourceFileList>
 	</Core0>
 	<Core1 type="key">
@@ -4964,8 +4948,8 @@ WAIT 5
 		<DontClearLogOnCloseWorkspace type="flag">0</DontClearLogOnCloseWorkspace>
 		<SaveAndCopyWithoutTimeStamps type="flag">0</SaveAndCopyWithoutTimeStamps>
 	</Logging>
-	<TargetInfoFile type="string">C:\Users\Qxiong\Documents\pls\UDESTK 5.0\tc\TriBoard_TC36xA_das.cfg</TargetInfoFile>
-	<LastWriteDate type="string">19.08.2026 16:01:17:000</LastWriteDate>
+	<TargetInfoFile type="string">..\..\..\..\ude5_0Files\TriBoard_TC36xA_das.cfg</TargetInfoFile>
+	<LastWriteDate type="string">21.08.2026 13:23:12:000</LastWriteDate>
 	<MemtoolManager type="key"></MemtoolManager>
 	<TraceFramework type="key"></TraceFramework>
 	<RecentlyUsedRootNode type="key"></RecentlyUsedRootNode>
