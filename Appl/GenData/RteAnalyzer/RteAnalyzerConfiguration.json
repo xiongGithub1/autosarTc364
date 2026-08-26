@@ -1337,6 +1337,18 @@
    ],
    "TaskList" : [
       {
+         "OsApplication" : "SystemApplication_OsCore0",
+         "Preemptive" : "1",
+         "Priority" : "2",
+         "TaskName" : "BrsMainBackgroundTask"
+      },
+      {
+         "OsApplication" : "SystemApplication_OsCore0",
+         "Preemptive" : "1",
+         "Priority" : "39",
+         "TaskName" : "BrsMainTask"
+      },
+      {
          "OsApplication" : "OsApplication_OsCore1",
          "Preemptive" : "0",
          "Priority" : "20",

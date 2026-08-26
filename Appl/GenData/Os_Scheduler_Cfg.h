@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Scheduler_Cfg.h
- *   Generation Time: 2024-08-03 19:52:22
+ *   Generation Time: 2026-08-26 14:56:25
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -60,18 +60,20 @@
 # define OS_CFG_SCHEDULE_ROUND_ROB_ENABLED       (STD_OFF)
 
 /*! Defines the number of all task queues. */
-# define OS_CFG_NUM_TASKQUEUES                   (9u)
+# define OS_CFG_NUM_TASKQUEUES                   (11u)
 
 /* Number of task queue activation slots: OsCore0 */
 # define OS_CFG_NUM_TASKQUEUE0_OSCORE0_SLOTS     (2u)
 # define OS_CFG_NUM_TASKQUEUE1_OSCORE0_SLOTS     (2u)
 # define OS_CFG_NUM_TASKQUEUE2_OSCORE0_SLOTS     (2u)
 # define OS_CFG_NUM_TASKQUEUE3_OSCORE0_SLOTS     (2u)
-# define OS_CFG_NUM_TASKQUEUE4_OSCORE0_SLOTS     (3u)
-# define OS_CFG_NUM_TASKQUEUE5_OSCORE0_SLOTS     (1u)
-# define OS_CFG_NUM_TASKQUEUE6_OSCORE0_SLOTS     (2u)
-# define OS_CFG_NUM_TASKQUEUE7_OSCORE0_SLOTS     (1u)
+# define OS_CFG_NUM_TASKQUEUE4_OSCORE0_SLOTS     (2u)
+# define OS_CFG_NUM_TASKQUEUE5_OSCORE0_SLOTS     (3u)
+# define OS_CFG_NUM_TASKQUEUE6_OSCORE0_SLOTS     (1u)
+# define OS_CFG_NUM_TASKQUEUE7_OSCORE0_SLOTS     (2u)
 # define OS_CFG_NUM_TASKQUEUE8_OSCORE0_SLOTS     (2u)
+# define OS_CFG_NUM_TASKQUEUE9_OSCORE0_SLOTS     (1u)
+# define OS_CFG_NUM_TASKQUEUE10_OSCORE0_SLOTS     (2u)
 
 /* Number of task queue activation slots: OsCore1 */
 # define OS_CFG_NUM_TASKQUEUE0_OSCORE1_SLOTS     (3u)
@@ -79,10 +81,12 @@
 # define OS_CFG_NUM_TASKQUEUE2_OSCORE1_SLOTS     (2u)
 # define OS_CFG_NUM_TASKQUEUE3_OSCORE1_SLOTS     (1u)
 # define OS_CFG_NUM_TASKQUEUE4_OSCORE1_SLOTS     (1u)
-# define OS_CFG_NUM_TASKQUEUE5_OSCORE1_SLOTS     (2u)
-# define OS_CFG_NUM_TASKQUEUE6_OSCORE1_SLOTS     (1u)
-# define OS_CFG_NUM_TASKQUEUE7_OSCORE1_SLOTS     (2u)
-# define OS_CFG_NUM_TASKQUEUE8_OSCORE1_SLOTS     (2u)
+# define OS_CFG_NUM_TASKQUEUE5_OSCORE1_SLOTS     (1u)
+# define OS_CFG_NUM_TASKQUEUE6_OSCORE1_SLOTS     (2u)
+# define OS_CFG_NUM_TASKQUEUE7_OSCORE1_SLOTS     (1u)
+# define OS_CFG_NUM_TASKQUEUE8_OSCORE1_SLOTS     (1u)
+# define OS_CFG_NUM_TASKQUEUE9_OSCORE1_SLOTS     (2u)
+# define OS_CFG_NUM_TASKQUEUE10_OSCORE1_SLOTS     (2u)
 
 
 /**********************************************************************************************************************

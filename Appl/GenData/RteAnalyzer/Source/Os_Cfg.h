@@ -54,11 +54,12 @@
 # define Rte_Ev_Cyclic2_Default_BSW_ASync_Task_10ms_0_20ms (0x02ULL)
 # define Rte_Ev_Cyclic2_Default_BSW_ASync_Task_10ms_0_5ms (0x04ULL)
 # define Rte_Ev_Cyclic_MotorTask_0_1ms (0x01ULL)
+# define Rte_Ev_Run_DigApp_DcmEcuReset_ModeSwitch (0x01ULL)
 # define Rte_Ev_Run_MotorCdd_AdcSampleReady_Rp_AdcSampleReady_AdcSampleReady (0x02ULL)
-# define Rte_Ev_Run_StartApp_StartApp_Cyclic1000ms (0x01ULL)
-# define Rte_Ev_Run_StartApp_StartApp_Cyclic10ms (0x02ULL)
-# define Rte_Ev_Run_StartApp_StartApp_Cyclic1ms (0x04ULL)
-# define Rte_Ev_Run_StartApp_StartApp_Cyclic250ms (0x08ULL)
+# define Rte_Ev_Run_StartApp_StartApp_Cyclic1000ms (0x02ULL)
+# define Rte_Ev_Run_StartApp_StartApp_Cyclic10ms (0x04ULL)
+# define Rte_Ev_Run_StartApp_StartApp_Cyclic1ms (0x08ULL)
+# define Rte_Ev_Run_StartApp_StartApp_Cyclic250ms (0x10ULL)
 
 /* Spinlocks */
 

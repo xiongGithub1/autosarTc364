@@ -47,6 +47,15 @@ FUNC(void, RTE_CODE) Rte_InitMemory(void);
 FUNC(void, RTE_CODE) Rte_InitMemory_OsApplication_OsCore1(void);
 FUNC(void, RTE_CODE) Rte_InitMemory_SystemApplication_OsCore0(void);
 
+
+# ifdef RTE_CORE
+/* RTE internal IOC replacements */
+FUNC(Std_ReturnType, RTE_CODE) Rte_IocSend_Rte_M_Dcm_DcmEcuReset_DcmEcuReset(CONST(uint8, RTE_CONST) data0);
+FUNC(Std_ReturnType, RTE_CODE) Rte_IocReceive_Rte_M_Dcm_DcmEcuReset_DcmEcuReset(P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) data0);
+/* RTE mode management prototypes */
+FUNC(Rte_EventMaskType, RTE_CODE) Rte_GetModeEntryEventMask_Dcm_DcmEcuReset_DcmEcuReset(Dcm_EcuResetType mode);
+# endif
+
 # define RTE_STOP_SEC_CODE
 # include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 

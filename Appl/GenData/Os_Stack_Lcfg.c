@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Stack_Lcfg.c
- *   Generation Time: 2026-08-07 19:21:41
+ *   Generation Time: 2026-08-26 14:56:25
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -81,6 +81,17 @@
 /**********************************************************************************************************************
  *  GLOBAL DATA
  *********************************************************************************************************************/
+
+#define OS_START_SEC_STACK_BRSMAINTASK_VAR_NOINIT_UNSPECIFIED
+#include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/* Task stack: BrsMainTask */
+/* User: [BrsMainTask] */
+OS_STACK_DECLARE(OsCfg_Stack_BrsMainTask_Dyn, OS_CFG_SIZE_BRSMAINTASK_STACK);
+
+#define OS_STOP_SEC_STACK_BRSMAINTASK_VAR_NOINIT_UNSPECIFIED
+#include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
 
 #define OS_START_SEC_STACK_DEFAULT_APPL_TASK_VAR_NOINIT_UNSPECIFIED
 #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
@@ -178,6 +189,17 @@ OS_STACK_DECLARE(OsCfg_Stack_OsCore0_Shutdown_Dyn, OS_CFG_SIZE_OSCORE0_SHUTDOWN_
 OS_STACK_DECLARE(OsCfg_Stack_OsCore0_Startup_Dyn, OS_CFG_SIZE_OSCORE0_STARTUP_STACK);
 
 #define OS_STOP_SEC_STACK_OSCORE0_STARTUP_VAR_NOINIT_UNSPECIFIED
+#include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+#define OS_START_SEC_STACK_OSCORE0_TASK_PRIO2_VAR_NOINIT_UNSPECIFIED
+#include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/* Shared Task stack: OsCore0_Task_Prio2 */
+/* User: [BrsMainBackgroundTask] */
+OS_STACK_DECLARE(OsCfg_Stack_OsCore0_Task_Prio2_Dyn, OS_CFG_SIZE_OSCORE0_TASK_PRIO2_STACK);
+
+#define OS_STOP_SEC_STACK_OSCORE0_TASK_PRIO2_VAR_NOINIT_UNSPECIFIED
 #include "Os_MemMap_Stacks.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
 
@@ -353,6 +375,13 @@ OS_STACK_DECLARE(OsCfg_Stack_OsCore1_Task_Prio50_Dyn, OS_CFG_SIZE_OSCORE1_TASK_P
 #define OS_START_SEC_CORE0_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
+/*! Stack configuration data: BrsMainTask */
+CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_BrsMainTask =
+{
+  /* .LowAddress  = */ OS_STACK_GETLOWADDRESS(OsCfg_Stack_BrsMainTask_Dyn),
+  /* .HighAddress = */ OS_STACK_GETHIGHADDRESS(OsCfg_Stack_BrsMainTask_Dyn)
+};
+
 /*! Stack configuration data: Default_Appl_Task */
 CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_Default_Appl_Task =
 {
@@ -407,6 +436,13 @@ CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore0_Startup =
 {
   /* .LowAddress  = */ OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore0_Startup_Dyn),
   /* .HighAddress = */ OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore0_Startup_Dyn)
+};
+
+/*! Stack configuration data: OsCore0_Task_Prio2 */
+CONST(Os_StackConfigType, OS_CONST) OsCfg_Stack_OsCore0_Task_Prio2 =
+{
+  /* .LowAddress  = */ OS_STACK_GETLOWADDRESS(OsCfg_Stack_OsCore0_Task_Prio2_Dyn),
+  /* .HighAddress = */ OS_STACK_GETHIGHADDRESS(OsCfg_Stack_OsCore0_Task_Prio2_Dyn)
 };
 
 /*! Stack configuration data: OsCore0_Task_Prio4294967295 */

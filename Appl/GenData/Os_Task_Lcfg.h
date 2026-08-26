@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Task_Lcfg.h
- *   Generation Time: 2024-08-03 19:52:22
+ *   Generation Time: 2026-08-26 14:56:25
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -83,6 +83,12 @@
 
 # define OS_START_SEC_CORE0_CONST_UNSPECIFIED
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/*! Task configuration data: BrsMainBackgroundTask */
+extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_BrsMainBackgroundTask;
+
+/*! Task configuration data: BrsMainTask */
+extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_BrsMainTask;
 
 /*! Task configuration data: Default_Appl_Init_Task */
 extern CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_Default_Appl_Init_Task;

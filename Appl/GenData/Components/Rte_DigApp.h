@@ -84,6 +84,7 @@ extern "C"
 #  define RTE_RUNNABLE_DataServices_Vehicle_Identification_VIN_ConditionCheckRead DataServices_Vehicle_Identification_VIN_ConditionCheckRead
 #  define RTE_RUNNABLE_DataServices_Vehicle_Identification_VIN_ReadData DataServices_Vehicle_Identification_VIN_ReadData
 #  define RTE_RUNNABLE_DataServices_Vehicle_Identification_VIN_WriteData DataServices_Vehicle_Identification_VIN_WriteData
+#  define RTE_RUNNABLE_DcmEcuReset_ModeSwitch DcmEcuReset_ModeSwitch
 #  define RTE_RUNNABLE_DigInit DigInit
 #  define RTE_RUNNABLE_RoutineServices_SampleRoutineControl_RequestResults RoutineServices_SampleRoutineControl_RequestResults
 #  define RTE_RUNNABLE_RoutineServices_SampleRoutineControl_Start RoutineServices_SampleRoutineControl_Start
@@ -202,6 +203,7 @@ FUNC(Std_ReturnType, DigApp_CODE) DataServices_Vehicle_Identification_VIN_WriteD
 # else
 FUNC(Std_ReturnType, DigApp_CODE) DataServices_Vehicle_Identification_VIN_WriteData(P2CONST(Dcm_Data17ByteType, AUTOMATIC, RTE_DIGAPP_APPL_DATA) Data, Dcm_OpStatusType OpStatus, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) ErrorCode); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
 # endif
+FUNC(void, DigApp_CODE) DcmEcuReset_ModeSwitch(void); /* PRQA S 3451, 0786, 3449 */ /* MD_Rte_3451, MD_Rte_0786, MD_Rte_3449 */
 FUNC(void, DigApp_CODE) DigInit(void); /* PRQA S 3451, 0786, 3449 */ /* MD_Rte_3451, MD_Rte_0786, MD_Rte_3449 */
 FUNC(Std_ReturnType, DigApp_CODE) RoutineServices_SampleRoutineControl_RequestResults(Dcm_OpStatusType OpStatus, P2VAR(Dcm_RequestDataOut_SampleRoutineControl_Out_ResultType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) Out_Result, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) ErrorCode); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */
 FUNC(Std_ReturnType, DigApp_CODE) RoutineServices_SampleRoutineControl_Start(Dcm_StartDataIn_SampleRoutineControl_In_Option0Type In_Option0, Dcm_OpStatusType OpStatus, P2VAR(Dcm_StartDataOut_SampleRoutineControl_Out_InitStateType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) Out_InitState, P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_DIGAPP_APPL_VAR) ErrorCode); /* PRQA S 0786, 3449, 0624 */ /* MD_Rte_0786, MD_Rte_3449, MD_Rte_0624 */

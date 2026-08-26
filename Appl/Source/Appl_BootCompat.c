@@ -45,16 +45,13 @@ static volatile Boot_HandshakeType* Appl_Hs(void)
   return (volatile Boot_HandshakeType*)BOOT_HS_BASE;
 }
 
-void Appl_RequestBoot(void)
+void Appl_ArmRequestBoot(void)
 {
   volatile Boot_HandshakeType* hs = Appl_Hs();
   uint32 i;
 
   /* Touch header so the link cannot treat it as dead even without __attribute__((used)). */
-  if (Appl_BootHeader.magic != BOOT_APP_HDR_MAGIC)
-  {
-    return;
-  }
+  (void)Appl_BootHeader.magic;
 
   hs->magic = BOOT_HS_MAGIC;
   hs->cmd = BOOT_HS_CMD_REQUEST_BOOT;
@@ -62,6 +59,10 @@ void Appl_RequestBoot(void)
   {
     hs->reserved[i] = 0u;
   }
+}
 
-  BrsHwSoftwareResetECU();
+void Appl_RequestBoot(void)
+{
+  Appl_ArmRequestBoot();
+  BrsHwSoftwareResetECU(); /* does not return */
 }

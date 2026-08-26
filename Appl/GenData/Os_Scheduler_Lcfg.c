@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Scheduler_Lcfg.c
- *   Generation Time: 2024-08-03 19:52:22
+ *   Generation Time: 2026-08-26 14:56:25
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -117,6 +117,12 @@ OS_LOCAL VAR(Os_DequeNodeType, OS_VAR_NOINIT)
 OS_LOCAL VAR(Os_DequeType, OS_VAR_NOINIT) OsCfg_TaskQueue8_OsCore0_Dyn;
 OS_LOCAL VAR(Os_DequeNodeType, OS_VAR_NOINIT)
   OsCfg_TaskQueueNodes8_OsCore0_Dyn[OS_CFG_NUM_TASKQUEUE8_OSCORE0_SLOTS];
+OS_LOCAL VAR(Os_DequeType, OS_VAR_NOINIT) OsCfg_TaskQueue9_OsCore0_Dyn;
+OS_LOCAL VAR(Os_DequeNodeType, OS_VAR_NOINIT)
+  OsCfg_TaskQueueNodes9_OsCore0_Dyn[OS_CFG_NUM_TASKQUEUE9_OSCORE0_SLOTS];
+OS_LOCAL VAR(Os_DequeType, OS_VAR_NOINIT) OsCfg_TaskQueue10_OsCore0_Dyn;
+OS_LOCAL VAR(Os_DequeNodeType, OS_VAR_NOINIT)
+  OsCfg_TaskQueueNodes10_OsCore0_Dyn[OS_CFG_NUM_TASKQUEUE10_OSCORE0_SLOTS];
 
 #define OS_STOP_SEC_CORE0_VAR_NOINIT_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
@@ -158,6 +164,12 @@ OS_LOCAL VAR(Os_DequeNodeType, OS_VAR_NOINIT)
 OS_LOCAL VAR(Os_DequeType, OS_VAR_NOINIT) OsCfg_TaskQueue8_OsCore1_Dyn;
 OS_LOCAL VAR(Os_DequeNodeType, OS_VAR_NOINIT)
   OsCfg_TaskQueueNodes8_OsCore1_Dyn[OS_CFG_NUM_TASKQUEUE8_OSCORE1_SLOTS];
+OS_LOCAL VAR(Os_DequeType, OS_VAR_NOINIT) OsCfg_TaskQueue9_OsCore1_Dyn;
+OS_LOCAL VAR(Os_DequeNodeType, OS_VAR_NOINIT)
+  OsCfg_TaskQueueNodes9_OsCore1_Dyn[OS_CFG_NUM_TASKQUEUE9_OSCORE1_SLOTS];
+OS_LOCAL VAR(Os_DequeType, OS_VAR_NOINIT) OsCfg_TaskQueue10_OsCore1_Dyn;
+OS_LOCAL VAR(Os_DequeNodeType, OS_VAR_NOINIT)
+  OsCfg_TaskQueueNodes10_OsCore1_Dyn[OS_CFG_NUM_TASKQUEUE10_OSCORE1_SLOTS];
 
 #define OS_STOP_SEC_CORE1_VAR_NOINIT_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
@@ -230,6 +242,18 @@ OS_LOCAL CONST(Os_DequeConfigType, OS_CONST) OsCfg_Scheduler_OsCore0_TaskQueues[
     /* .Dyn    = */ &OsCfg_TaskQueue8_OsCore0_Dyn,
     /* .Buffer = */ OsCfg_TaskQueueNodes8_OsCore0_Dyn,
     /* .Size   = */ OS_CFG_NUM_TASKQUEUE8_OSCORE0_SLOTS
+  },
+  /* [9] = */
+  {
+    /* .Dyn    = */ &OsCfg_TaskQueue9_OsCore0_Dyn,
+    /* .Buffer = */ OsCfg_TaskQueueNodes9_OsCore0_Dyn,
+    /* .Size   = */ OS_CFG_NUM_TASKQUEUE9_OSCORE0_SLOTS
+  },
+  /* [10] = */
+  {
+    /* .Dyn    = */ &OsCfg_TaskQueue10_OsCore0_Dyn,
+    /* .Buffer = */ OsCfg_TaskQueueNodes10_OsCore0_Dyn,
+    /* .Size   = */ OS_CFG_NUM_TASKQUEUE10_OSCORE0_SLOTS
   }
 };
 
@@ -311,6 +335,18 @@ OS_LOCAL CONST(Os_DequeConfigType, OS_CONST) OsCfg_Scheduler_OsCore1_TaskQueues[
     /* .Dyn    = */ &OsCfg_TaskQueue8_OsCore1_Dyn,
     /* .Buffer = */ OsCfg_TaskQueueNodes8_OsCore1_Dyn,
     /* .Size   = */ OS_CFG_NUM_TASKQUEUE8_OSCORE1_SLOTS
+  },
+  /* [9] = */
+  {
+    /* .Dyn    = */ &OsCfg_TaskQueue9_OsCore1_Dyn,
+    /* .Buffer = */ OsCfg_TaskQueueNodes9_OsCore1_Dyn,
+    /* .Size   = */ OS_CFG_NUM_TASKQUEUE9_OSCORE1_SLOTS
+  },
+  /* [10] = */
+  {
+    /* .Dyn    = */ &OsCfg_TaskQueue10_OsCore1_Dyn,
+    /* .Buffer = */ OsCfg_TaskQueueNodes10_OsCore1_Dyn,
+    /* .Size   = */ OS_CFG_NUM_TASKQUEUE10_OSCORE1_SLOTS
   }
 };
 

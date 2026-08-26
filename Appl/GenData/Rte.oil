@@ -59,6 +59,7 @@
       SCHEDULE = NON:"@RO@";
 // TIMING_PROTECTION = FALSE|TRUE; (AUTOSAR OS only)
       AUTOSTART = FALSE:"@RO@";
+      EVENT = Rte_Ev_Run_DigApp_DcmEcuReset_ModeSwitch:"@RO@";
       EVENT = Rte_Ev_Run_StartApp_StartApp_Cyclic1000ms:"@RO@";
       EVENT = Rte_Ev_Run_StartApp_StartApp_Cyclic10ms:"@RO@";
       EVENT = Rte_Ev_Run_StartApp_StartApp_Cyclic1ms:"@RO@";
@@ -188,6 +189,10 @@
    }:"@ROC@@NR@";
 
    EVENT Rte_Ev_Cyclic_MotorTask_0_1ms {
+      MASK = AUTO;
+   }:"@ROC@@NR@";
+
+   EVENT Rte_Ev_Run_DigApp_DcmEcuReset_ModeSwitch {
       MASK = AUTO;
    }:"@ROC@@NR@";
 

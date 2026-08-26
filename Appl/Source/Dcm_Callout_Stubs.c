@@ -64,6 +64,10 @@
 **********************************************************************************************************************/
 #include "Dcm.h"
 #include "Dcm_Cfg.h"
+#if (DCM_DIAG_JUMPTOFBL_ENABLED   == STD_ON) || \
+    (DCM_DIAG_JUMPFROMFBL_ENABLED == STD_ON)
+# include "Appl_BootCompat.h"
+#endif
 
 /**********************************************************************************************************************
   LOCAL FUNCTIONS
@@ -86,8 +90,10 @@ FUNC(void, DCM_CALLOUT_CODE) Dcm_Confirmation(Dcm_IdContextType idContext
     (DCM_DIAG_JUMPFROMFBL_ENABLED == STD_ON)
 FUNC(Std_ReturnType, DCM_CALLOUT_CODE) Dcm_SetProgConditions(Dcm_ProgConditionsPtrType progConditions)
 {
-  /* This Callout is called during first call of Dcm_Mainfunction().
-     If it returns DCM_E_NOT_OK, a Det-Error would be hit (0x35,0x00,0xf0,0x06) */
+  /* HIS JumpToBoot (DCM_SYS_BOOT): arm StayInBoot handshake before EXECUTE reset.
+   * Do NOT reset here — Dcm later ModeSwitch(EXECUTE) → Appl_DcmEcuReset_Switch. */
+  (void)progConditions;
+  Appl_ArmRequestBoot();
   return DCM_E_OK;
 }
 #endif

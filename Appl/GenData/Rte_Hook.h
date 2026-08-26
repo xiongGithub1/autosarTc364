@@ -336,6 +336,8 @@
  *  Rte_Runnable_DigApp_DataServices_Vehicle_Identification_VIN_ReadData_Start
  *  Rte_Runnable_DigApp_DataServices_Vehicle_Identification_VIN_WriteData_Return
  *  Rte_Runnable_DigApp_DataServices_Vehicle_Identification_VIN_WriteData_Start
+ *  Rte_Runnable_DigApp_DcmEcuReset_ModeSwitch_Return
+ *  Rte_Runnable_DigApp_DcmEcuReset_ModeSwitch_Start
  *  Rte_Runnable_DigApp_DigInit_Return
  *  Rte_Runnable_DigApp_DigInit_Start
  *  Rte_Runnable_DigApp_RoutineServices_SampleRoutineControl_RequestResults_Return

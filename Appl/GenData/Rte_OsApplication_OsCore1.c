@@ -156,6 +156,15 @@ VAR(float32, RTE_VAR_INIT) Rte_MotorControll_Pp_MotorCurrentRef_Iq_Ref = 0.0F;
 #define RTE_COM_SENDSIGNALPROXY_INVALIDATE     (2U)
 
 
+#define RTE_START_SEC_CODE
+#include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+FUNC(void, RTE_CODE) Rte_MemClr(P2VAR(void, AUTOMATIC, RTE_VAR_NOINIT) ptr, uint32_least num);
+FUNC(uint8, RTE_CODE) Rte_GetInternalModeIndex_Dcm_DcmEcuReset(Dcm_EcuResetType mode); /* PRQA S 3408 */ /* MD_Rte_3408 */
+
+#define RTE_STOP_SEC_CODE
+#include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
 
 /**********************************************************************************************************************
  * Timer handling

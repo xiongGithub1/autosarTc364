@@ -1111,6 +1111,33 @@
 
 
 
+
+
+
+
+
+
+     /* Client Server Interfaces: */
+
+
+     /* Service calls */
+
+
+     /* Mode Interfaces */
+
+
+
+
+     /* Trigger Interfaces */
+
+     /* Inter-Runnable variables */
+
+
+
+
+
+
+
      /* DigApp */
       /* DigApp */
 

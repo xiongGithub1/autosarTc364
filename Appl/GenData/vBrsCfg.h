@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: .\vBrsCfg.h
- *   Generation Time: 2024-08-03 19:52:20
+ *   Generation Time: 2026-08-26 14:55:27
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -58,6 +58,11 @@
 # include "Std_Types.h"
 #endif
 
+#if !defined (BRS_INCLUDED_BY_ASM_FILE)
+/* TogglePin support enabled and Dio configured */
+# include "Dio.h"
+#endif
+
 /**********************************************************************************************************************
   GLOBAL CONSTANT MACROS
 **********************************************************************************************************************/
@@ -79,7 +84,13 @@
 
 /* TCC support is disabled (#define BRS_ENABLE_TCC_COMIF_SUPPORT) */
 
-/* LED support is disabled (#define BRS_ENABLE_SUPPORT_LEDS) */
+/* Use the functionality of a blinking live-LED for the used EvalBoard. */
+#define BRS_ENABLE_SUPPORT_LEDS
+#if !defined (BRS_INCLUDED_BY_ASM_FILE)
+# if defined (_BRSMAIN_C_) /* only to be used within BrsMain.c, to prevent multiply-defined-errors */
+Dio_ChannelType BrsHw_DioChannel_ToggleLED = DioConf_DioChannel_DioChannel_led1;
+# endif
+#endif
 
 /* Toggle custom pin support is disabled (#define BRS_ENABLE_SUPPORT_TOGGLE_CUSTOM_PIN) */
 

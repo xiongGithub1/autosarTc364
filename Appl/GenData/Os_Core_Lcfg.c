@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Core_Lcfg.c
- *   Generation Time: 2026-08-07 19:21:41
+ *   Generation Time: 2026-08-26 14:56:25
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -218,6 +218,7 @@ OS_LOCAL CONST(Os_ResourceConfigRefType, OS_CONST) OsCfg_Core_OsCore0_ResourceRe
 /*! Object reference table for core stacks: OsCore0 */
 OS_LOCAL CONST(Os_StackConfigRefType, OS_CONST) OsCfg_Core_OsCore0_StackRefs[OS_CFG_NUM_CORE_OSCORE0_STACKS + 1u] =
 {
+  (Os_StackConfigRefType) &OsCfg_Stack_BrsMainTask,
   (Os_StackConfigRefType) &OsCfg_Stack_Default_Appl_Task,
   (Os_StackConfigRefType) &OsCfg_Stack_Default_BSW_ASync_Task_10ms,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Error,
@@ -226,6 +227,7 @@ OS_LOCAL CONST(Os_StackConfigRefType, OS_CONST) OsCfg_Core_OsCore0_StackRefs[OS_
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Kernel,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Shutdown,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Startup,
+  (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Task_Prio2,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Task_Prio4294967295,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Task_Prio45,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Task_Prio49,

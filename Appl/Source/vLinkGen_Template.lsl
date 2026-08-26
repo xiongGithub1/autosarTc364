@@ -115,6 +115,7 @@ section_layout mpe:vtc:linear
     {
       section "OS_STACKS_CORE0_VAR_NOINIT_SEC" (blocksize = 2, attributes = rw)
       {
+        select "[.]bss.OS_STACK_BRSMAINTASK_VAR_NOINIT";
         select "[.]bss.OS_STACK_DEFAULT_APPL_TASK_VAR_NOINIT";
         select "[.]bss.OS_STACK_DEFAULT_BSW_ASYNC_TASK_10MS_VAR_NOINIT";
         select "[.]bss.OS_STACK_OSCORE0_ERROR_VAR_NOINIT";
@@ -123,6 +124,7 @@ section_layout mpe:vtc:linear
         select "[.]bss.OS_STACK_OSCORE0_KERNEL_VAR_NOINIT";
         select "[.]bss.OS_STACK_OSCORE0_SHUTDOWN_VAR_NOINIT";
         select "[.]bss.OS_STACK_OSCORE0_STARTUP_VAR_NOINIT";
+        select "[.]bss.OS_STACK_OSCORE0_TASK_PRIO2_VAR_NOINIT";
         select "[.]bss.OS_STACK_OSCORE0_TASK_PRIO4294967295_VAR_NOINIT";
         select "[.]bss.OS_STACK_OSCORE0_TASK_PRIO45_VAR_NOINIT";
         select "[.]bss.OS_STACK_OSCORE0_TASK_PRIO49_VAR_NOINIT";
@@ -1514,6 +1516,8 @@ section_layout mpe:vtc:linear
         select "[.]text.OS_ASCLIN0ERR_ISR_CODE";
         select "[.]text.OS_ASCLIN0RX_ISR_CODE";
         select "[.]text.OS_ASCLIN0TX_ISR_CODE";
+        select "[.]text.OS_BrsMainBackgroundTask_CODE";
+        select "[.]text.OS_BrsMainTask_CODE";
         select "[.]text.OS_BswCore1Task_CODE";
         select "[.]text.OS_CanIsr_0_CODE";
         select "[.]text.OS_Default_Appl_Init_Task_CODE";

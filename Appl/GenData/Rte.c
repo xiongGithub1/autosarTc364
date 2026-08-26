@@ -149,6 +149,65 @@ volatile VAR(uint8, RTE_VAR_ZERO_INIT_NOCACHE) Rte_InitState_1 = RTE_STATE_UNINI
 #define RTE_COM_SENDSIGNALPROXY_INVALIDATE     (2U)
 
 
+#define RTE_START_SEC_CODE
+#include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+FUNC(void, RTE_CODE) Rte_MemClr(P2VAR(void, AUTOMATIC, RTE_VAR_NOINIT) ptr, uint32_least num);
+FUNC(uint8, RTE_CODE) Rte_GetInternalModeIndex_Dcm_DcmEcuReset(Dcm_EcuResetType mode); /* PRQA S 3408 */ /* MD_Rte_3408 */
+
+#define RTE_STOP_SEC_CODE
+#include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+#define RTE_START_SEC_CODE
+#include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/**********************************************************************************************************************
+ * Helper functions for mode management
+ *********************************************************************************************************************/
+FUNC(uint8, RTE_CODE) Rte_GetInternalModeIndex_Dcm_DcmEcuReset(Dcm_EcuResetType mode) /* PRQA S 3408 */ /* MD_Rte_3408 */
+{
+  uint8 ret;
+
+  if (mode == 0U)
+  {
+    ret = 5U;
+  }
+  else if (mode == 1U)
+  {
+    ret = 1U;
+  }
+  else if (mode == 2U)
+  {
+    ret = 4U;
+  }
+  else if (mode == 3U)
+  {
+    ret = 6U;
+  }
+  else if (mode == 4U)
+  {
+    ret = 2U;
+  }
+  else if (mode == 5U)
+  {
+    ret = 3U;
+  }
+  else if (mode == 6U)
+  {
+    ret = 0U;
+  }
+  else
+  {
+    ret = 7U;
+  }
+
+  return ret;
+} /* PRQA S 6080 */ /* MD_MSR_STMIF */
+
+#define RTE_STOP_SEC_CODE
+#include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
 
 /**********************************************************************************************************************
  * Timer handling
@@ -217,6 +276,16 @@ volatile VAR(uint8, RTE_VAR_ZERO_INIT_NOCACHE) Rte_InitState_1 = RTE_STATE_UNINI
 
 #define RTE_START_SEC_CODE
 #include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+FUNC(void, RTE_CODE) Rte_MemClr(P2VAR(void, AUTOMATIC, RTE_VAR_NOINIT) ptr, uint32_least num)
+{
+  P2VAR(uint8, AUTOMATIC, RTE_VAR_NOINIT) dst = (P2VAR(uint8, AUTOMATIC, RTE_VAR_NOINIT))ptr; /* PRQA S 0316 */ /* MD_Rte_0316 */
+  uint32_least i;
+  for (i = 0; i < num; i++)
+  {
+    dst[i] = 0;
+  }
+}
 
 FUNC(void, RTE_CODE) SchM_Start(void)
 {
@@ -799,6 +868,11 @@ FUNC(void, RTE_CODE) SchM_Exit_Spi_SyncLock(void)
  *********************************************************************************************************************/
 
 /* module specific MISRA deviations:
+   MD_Rte_0316:  MISRA rule: Dir1.1
+     Reason:     Pointer cast to uint8* because a direct byte access is necessary.
+     Risk:       No functional risk. Only a cast to uint8* is performed.
+     Prevention: Not required.
+
    MD_Rte_1514:  MISRA rule: Rule8.9
      Reason:     Because of external definition, misra does not see the call.
      Risk:       No functional risk. There is no side effect.

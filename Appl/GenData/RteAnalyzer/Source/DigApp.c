@@ -1656,6 +1656,43 @@ FUNC(Std_ReturnType, DigApp_CODE) DataServices_Vehicle_Identification_VIN_WriteD
 
 /**********************************************************************************************************************
  *
+ * Runnable Entity Name: DcmEcuReset_ModeSwitch
+ *
+ *---------------------------------------------------------------------------------------------------------------------
+ *
+ * Executed if at least one of the following trigger conditions occurred:
+ *   - triggered on entering of Mode <EXECUTE> of ModeDeclarationGroupPrototype <DcmEcuReset> of PortPrototype <DcmEcuReset>
+ *   - triggered on entering of Mode <JUMPTOSYSSUPPLIERBOOTLOADER> of ModeDeclarationGroupPrototype <DcmEcuReset> of PortPrototype <DcmEcuReset>
+ *   - triggered on entering of Mode <SOFT> of ModeDeclarationGroupPrototype <DcmEcuReset> of PortPrototype <DcmEcuReset>
+ *   - triggered on entering of Mode <HARD> of ModeDeclarationGroupPrototype <DcmEcuReset> of PortPrototype <DcmEcuReset>
+ *   - triggered on entering of Mode <KEYONOFF> of ModeDeclarationGroupPrototype <DcmEcuReset> of PortPrototype <DcmEcuReset>
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: DcmEcuReset_ModeSwitch_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(void, DigApp_CODE) DcmEcuReset_ModeSwitch(void) /* PRQA S 0624, 3206 */ /* MD_Rte_0624, MD_Rte_3206 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: DcmEcuReset_ModeSwitch
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+/**********************************************************************************************************************
+ *
  * Runnable Entity Name: DigInit
  *
  *---------------------------------------------------------------------------------------------------------------------
@@ -2207,6 +2244,17 @@ static void DigApp_TestDefines(void)
   Dcm_OpStatusType Test_Dcm_OpStatusType_V_3 = DCM_CANCEL;
   Dcm_OpStatusType Test_Dcm_OpStatusType_V_4 = DCM_FORCE_RCRRP_OK;
   Dcm_OpStatusType Test_Dcm_OpStatusType_V_5 = DCM_FORCE_RCRRP_NOT_OK;
+
+  /* Modes */
+
+  uint8 Test_DcmEcuReset_MV_1 = RTE_MODE_DcmEcuReset_NONE;
+  uint8 Test_DcmEcuReset_MV_2 = RTE_MODE_DcmEcuReset_HARD;
+  uint8 Test_DcmEcuReset_MV_3 = RTE_MODE_DcmEcuReset_KEYONOFF;
+  uint8 Test_DcmEcuReset_MV_4 = RTE_MODE_DcmEcuReset_SOFT;
+  uint8 Test_DcmEcuReset_MV_5 = RTE_MODE_DcmEcuReset_JUMPTOBOOTLOADER;
+  uint8 Test_DcmEcuReset_MV_6 = RTE_MODE_DcmEcuReset_JUMPTOSYSSUPPLIERBOOTLOADER;
+  uint8 Test_DcmEcuReset_MV_7 = RTE_MODE_DcmEcuReset_EXECUTE;
+  uint8 Test_DcmEcuReset_TV = RTE_TRANSITION_DcmEcuReset;
 }
 
 /**********************************************************************************************************************

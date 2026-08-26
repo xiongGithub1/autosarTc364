@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Lcfg.h
- *   Generation Time: 2026-08-07 19:21:41
+ *   Generation Time: 2026-08-26 14:56:25
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -87,6 +87,30 @@
 /**********************************************************************************************************************
  *  GLOBAL FUNCTION PROTOTYPES
  *********************************************************************************************************************/
+
+# define OS_START_SEC_BrsMainBackgroundTask_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/**********************************************************************************************************************
+ *  BrsMainBackgroundTask()
+ *********************************************************************************************************************/
+extern FUNC(void, OS_BRSMAINBACKGROUNDTASK_CODE) Os_Task_BrsMainBackgroundTask(void);
+
+# define OS_STOP_SEC_BrsMainBackgroundTask_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+# define OS_START_SEC_BrsMainTask_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+/**********************************************************************************************************************
+ *  BrsMainTask()
+ *********************************************************************************************************************/
+extern FUNC(void, OS_BRSMAINTASK_CODE) Os_Task_BrsMainTask(void);
+
+# define OS_STOP_SEC_BrsMainTask_CODE
+# include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
 
 # define OS_START_SEC_BswCore1Task_CODE
 # include "Os_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */

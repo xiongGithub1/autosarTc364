@@ -566,6 +566,17 @@
                                     <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/RoutineServices_SampleRoutineControl</TARGET-R-PORT-REF>
                                   </REQUESTER-IREF>
                                 </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="5851e1fa-beb4-463b-8bc3-b6233dc57304">
+                                  <SHORT-NAME>Dcm_DcmEcuReset_DigApp_DcmEcuReset</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmEcuReset</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/DigApp</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/DigApp/DcmEcuReset</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
                               </CONNECTORS>
                             </COMPOSITION-SW-COMPONENT-TYPE>
                             <END-TO-END-PROTECTION-SET UUID="a4e3eb1b-8c6e-4ff7-b0ed-a62ec0c16680">
@@ -660,6 +671,7 @@
                                     <SD GID="2ecfeaa2-6c30-4d7d-8e6e-2421a5350db7">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</SD>
                                     <SD GID="6c3406dc-c4d5-4eda-bc42-ce411a5da1f2">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComM</SD>
                                     <SD GID="26709838-88b0-4ef4-bcb0-18db6ac00653">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</SD>
+                                    <SD GID="5851e1fa-beb4-463b-8bc3-b6233dc57304">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm_DcmEcuReset_DigApp_DcmEcuReset</SD>
                                     <SD GID="2b339b07-fb8c-47ee-abcb-b642a60d9b46">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/DemMaster_0</SD>
                                     <SD GID="c02eb4b4-160d-43f2-a270-7327144f2cc8">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/DemSatellite_0</SD>
                                     <SD GID="1d01c276-c949-40ad-b899-b7a0bca03263">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Det</SD>
@@ -685,7 +697,13 @@
                                     <SD GID="37DE9C3A-B137-478F-9218-CD06FFF04F0D">/ComponentTypes/DigApp/DataServices_SerialNumber_SerialNumber</SD>
                                     <SD GID="D8F21317-3B92-411D-90F4-635608C8A3FB">/ComponentTypes/DigApp/DataServices_Spare_Part_Number_Spare_Part_Number</SD>
                                     <SD GID="10FD525D-3906-4538-B0BE-A9D09FA05CCD">/ComponentTypes/DigApp/DataServices_Vehicle_Identification_VIN</SD>
+                                    <SD GID="906EDB1C-9199-4633-9B0B-2DDD9022365A">/ComponentTypes/DigApp/DcmEcuReset</SD>
                                     <SD GID="D0CB7C8C-5544-41F1-92A0-874A8290E508">/ComponentTypes/DigApp/DigApp_InternalBehavior/DigInitEvent</SD>
+                                    <SD GID="57C713D9-21B7-461C-A581-7E61719BE7CC">/ComponentTypes/DigApp/DigApp_InternalBehavior/MST_DcmEcuReset_ModeSwitch_0</SD>
+                                    <SD GID="7BAA6FDA-1FEF-4F8F-AA52-B5E368312ECF">/ComponentTypes/DigApp/DigApp_InternalBehavior/MST_DcmEcuReset_ModeSwitch_1</SD>
+                                    <SD GID="2470D8F1-E4FF-42EB-8780-7439DDFB922A">/ComponentTypes/DigApp/DigApp_InternalBehavior/MST_DcmEcuReset_ModeSwitch_2</SD>
+                                    <SD GID="E033E81E-76BB-4F93-8DE1-C597AA3DD5F2">/ComponentTypes/DigApp/DigApp_InternalBehavior/MST_DcmEcuReset_ModeSwitch_3</SD>
+                                    <SD GID="B812F34D-69D6-426D-ACB9-B98368A2F6E8">/ComponentTypes/DigApp/DigApp_InternalBehavior/MST_DcmEcuReset_ModeSwitch_4</SD>
                                     <SD GID="C721821C-A167-4552-B7BF-E21B9BC08155">/ComponentTypes/DigApp/DigApp_InternalBehavior/OIT_CSDataServices_DID_0x1_DID_Data_GlobalTime_ReadData_CSDataServices_DID_0x1_DID_Data_GlobalTime_ReadData</SD>
                                     <SD GID="137D14B6-A3EF-49B1-9E52-0CC6AF01E186">/ComponentTypes/DigApp/DigApp_InternalBehavior/OIT_DataServices_Boot_Software_Boot_Software_Identification_ConditionCheckRead_DataServices_Boot_Software_Boot_Software_F4268183</SD>
                                     <SD GID="53508D11-8EBA-44E8-B989-563F4E7B5630">/ComponentTypes/DigApp/DigApp_InternalBehavior/OIT_DataServices_Boot_Software_Boot_Software_Identification_ReadData_DataServices_Boot_Software_Boot_Software_Identifica719A6842</SD>

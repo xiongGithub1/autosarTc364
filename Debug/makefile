@@ -3,7 +3,7 @@
 ################################################################################
 
 PROJ 	= last364
-PRODDIR = D:\Program Files (x86)\TASKING\TriCore v6.2r2\ctc
+PRODDIR = F:\Program Files (x86)\tasking\ctc
 
 -include "..\makefile.init"
 
@@ -64,7 +64,7 @@ all :
 PCP_FILES :=
 post-build:
 	@echo Patch APP header length/crc32
-	"E:/workFiles/TC367/TC367/workspace/last364/Tools/patch_app_header.bat" "E:/workFiles/TC367/TC367/workspace/last364/Debug/last364.hex"
+	"F:/workFiles/TC367/TC367/workspace/last364/Tools/patch_app_header.bat" "F:/workFiles/TC367/TC367/workspace/last364/Debug/last364.hex"
 
 EXT_LIBRARIES =
 
@@ -75,7 +75,7 @@ all : "last364.elf"
 	@"${PRODDIR}\bin\cctc" -f ".last364.elf.opt"
 
 ".last364.elf.opt" : .refresh
-	@argfile ".last364.elf.opt" -o "last364.elf" $(OBJ_FILES) $(EXT_LIBRARIES) $(PCP_FILES)  -Ctc36x --lsl-core=vtc -t -I"E:\workFiles\TC367\TC367\workspace\last364" -Wl-o"${PROJ}.hex":IHEX:4 --hex-format=s --no-default-libraries -lc_fpu -lfp_fpu -lrt "E:\workFiles\TC367\TC367\workspace\last364\Appl\Source\vLinkGen_Template.lsl" -Wl-OtxycL -Wl--map-file="${PROJ}.mapxml":XML -Wl-mcrfiklSmNOduQ -Wl--error-limit=42 --user-provided-initialization-code -g --fp-model=3 -Wl--dep-file=".last364.elf.d" -Wl--make-target="last364.elf"
+	@argfile ".last364.elf.opt" -o "last364.elf" $(OBJ_FILES) $(EXT_LIBRARIES) $(PCP_FILES)  -Ctc36x --lsl-core=vtc -t -I"F:\workFiles\TC367\TC367\workspace\last364" -Wl-o"${PROJ}.hex":IHEX:4 --hex-format=s --no-default-libraries -lc_fpu -lfp_fpu -lrt "F:\workFiles\TC367\TC367\workspace\last364\Appl\Source\vLinkGen_Template.lsl" -Wl-OtxycL -Wl--map-file="${PROJ}.mapxml":XML -Wl-mcrfiklSmNOduQ -Wl--error-limit=42 --user-provided-initialization-code -g --fp-model=3 -Wl--dep-file=".last364.elf.d" -Wl--make-target="last364.elf"
 DEPENDENCY_FILES += ".last364.elf.d"
 -include $(DEPENDENCY_FILES)
 
@@ -89,7 +89,7 @@ all : cleanup_cache
 
 cleanup_cache: $(OBJ_FILES)
 	@echo Cleaning up compiler cache
-	@"${PRODDIR}\bin\expiretc" --days=7 "E:\workFiles\TC367\TC367\workspace\last364\.cache"
+	@"${PRODDIR}\bin\expiretc" --days=7 "F:\workFiles\TC367\TC367\workspace\last364\.cache"
 
 
 clean : ".clean.opt"

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Types_Lcfg.h
- *   Generation Time: 2026-08-07 19:21:41
+ *   Generation Time: 2026-08-26 14:56:25
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -72,6 +72,8 @@
 /* Fast trusted function identifiers. */
 
 /* Task identifiers. */
+#define BrsMainBackgroundTask BrsMainBackgroundTask
+#define BrsMainTask BrsMainTask
 #define BswCore1Task BswCore1Task
 #define Default_Appl_Init_Task Default_Appl_Init_Task
 #define Default_Appl_Task Default_Appl_Task
@@ -97,6 +99,7 @@
 #define XSignalIsr_OsCore1 XSignalIsr_OsCore1
 
 /* Alarm identifiers. */
+#define BrsCyclicAlarm_1ms BrsCyclicAlarm_1ms
 #define Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_10ms Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_10ms
 #define Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_20ms Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_20ms
 #define Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_5ms Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_5ms
@@ -167,19 +170,21 @@ typedef enum
 /*! Task identifiers. */
 typedef enum
 {
-  BswCore1Task = 0,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Default_Appl_Init_Task = 1,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Default_Appl_Task = 2,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Default_BSW_ASync_Task_10ms = 3,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Default_Init_Task = 4,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Default_Init_Task_Core1 = 5,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Default_Init_Task_Core1_Trusted = 6,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Default_Init_Task_Trusted = 7,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Default_MotorInitTask = 8,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  IdleTask_OsCore0 = 9,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  IdleTask_OsCore_1 = 10,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  MotorTask = 11,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  OS_TASKID_COUNT = 12,
+  BrsMainBackgroundTask = 0,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  BrsMainTask = 1,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  BswCore1Task = 2,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Default_Appl_Init_Task = 3,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Default_Appl_Task = 4,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Default_BSW_ASync_Task_10ms = 5,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Default_Init_Task = 6,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Default_Init_Task_Core1 = 7,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Default_Init_Task_Core1_Trusted = 8,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Default_Init_Task_Trusted = 9,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Default_MotorInitTask = 10,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  IdleTask_OsCore0 = 11,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  IdleTask_OsCore_1 = 12,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  MotorTask = 13,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  OS_TASKID_COUNT = 14,
   INVALID_TASK = OS_TASKID_COUNT
 } TaskType;
 
@@ -202,16 +207,17 @@ typedef enum
 /*! Alarm identifiers. */
 typedef enum
 {
-  Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_10ms = 0,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_20ms = 1,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_5ms = 2,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Rte_Al_TE2_EcuM_EcuM_MainFunction = 3,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Rte_Al_TE_MotorTask_0_1ms = 4,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Rte_Al_TE_StartApp_StartApp_Cyclic1000ms = 5,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Rte_Al_TE_StartApp_StartApp_Cyclic10ms = 6,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Rte_Al_TE_StartApp_StartApp_Cyclic1ms = 7,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  Rte_Al_TE_StartApp_StartApp_Cyclic250ms = 8,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
-  OS_ALARMID_COUNT = 9
+  BrsCyclicAlarm_1ms = 0,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_10ms = 1,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_20ms = 2,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_5ms = 3,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE2_EcuM_EcuM_MainFunction = 4,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE_MotorTask_0_1ms = 5,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE_StartApp_StartApp_Cyclic1000ms = 6,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE_StartApp_StartApp_Cyclic10ms = 7,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE_StartApp_StartApp_Cyclic1ms = 8,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  Rte_Al_TE_StartApp_StartApp_Cyclic250ms = 9,  /* PRQA S 0784 */ /* MD_Os_Rule5.5_0784 */
+  OS_ALARMID_COUNT = 10
 } AlarmType;
 
 /*! Counter identifiers. */

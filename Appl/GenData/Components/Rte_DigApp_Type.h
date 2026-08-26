@@ -328,6 +328,48 @@ extern "C"
 
 # endif /* RTE_CORE */
 
+
+/**********************************************************************************************************************
+ * Definitions for Mode Management
+ *********************************************************************************************************************/
+# ifndef RTE_MODETYPE_DcmEcuReset
+#  define RTE_MODETYPE_DcmEcuReset
+typedef uint8 Rte_ModeType_DcmEcuReset;
+# endif
+
+# define RTE_MODE_DigApp_DcmEcuReset_NONE (0U)
+# ifndef RTE_MODE_DcmEcuReset_NONE
+#  define RTE_MODE_DcmEcuReset_NONE (0U)
+# endif
+# define RTE_MODE_DigApp_DcmEcuReset_HARD (1U)
+# ifndef RTE_MODE_DcmEcuReset_HARD
+#  define RTE_MODE_DcmEcuReset_HARD (1U)
+# endif
+# define RTE_MODE_DigApp_DcmEcuReset_KEYONOFF (2U)
+# ifndef RTE_MODE_DcmEcuReset_KEYONOFF
+#  define RTE_MODE_DcmEcuReset_KEYONOFF (2U)
+# endif
+# define RTE_MODE_DigApp_DcmEcuReset_SOFT (3U)
+# ifndef RTE_MODE_DcmEcuReset_SOFT
+#  define RTE_MODE_DcmEcuReset_SOFT (3U)
+# endif
+# define RTE_MODE_DigApp_DcmEcuReset_JUMPTOBOOTLOADER (4U)
+# ifndef RTE_MODE_DcmEcuReset_JUMPTOBOOTLOADER
+#  define RTE_MODE_DcmEcuReset_JUMPTOBOOTLOADER (4U)
+# endif
+# define RTE_MODE_DigApp_DcmEcuReset_JUMPTOSYSSUPPLIERBOOTLOADER (5U)
+# ifndef RTE_MODE_DcmEcuReset_JUMPTOSYSSUPPLIERBOOTLOADER
+#  define RTE_MODE_DcmEcuReset_JUMPTOSYSSUPPLIERBOOTLOADER (5U)
+# endif
+# define RTE_MODE_DigApp_DcmEcuReset_EXECUTE (6U)
+# ifndef RTE_MODE_DcmEcuReset_EXECUTE
+#  define RTE_MODE_DcmEcuReset_EXECUTE (6U)
+# endif
+# define RTE_TRANSITION_DigApp_DcmEcuReset (7U)
+# ifndef RTE_TRANSITION_DcmEcuReset
+#  define RTE_TRANSITION_DcmEcuReset (7U)
+# endif
+
 # ifdef __cplusplus
 } /* extern "C" */
 # endif /* __cplusplus */
