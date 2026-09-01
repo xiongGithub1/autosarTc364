@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: PduR_Lcfg.h
- *   Generation Time: 2024-08-11 18:29:26
+ *   Generation Time: 2026-08-27 16:11:53
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -781,7 +781,7 @@
 
 /** BroadcastDummy */
 
-#define PDUR_MAX_TRIGGER_TRANSMIT_PDU_SIZE 7
+#define PDUR_MAX_TRIGGER_TRANSMIT_PDU_SIZE 6
 
 /**********************************************************************************************************************
  * GLOBAL FUNCTION MACROS

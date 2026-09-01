@@ -34,6 +34,8 @@ MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -48,6 +50,8 @@ MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -64,6 +68,8 @@ MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -78,6 +84,8 @@ MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -96,6 +104,8 @@ MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -110,6 +120,8 @@ MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -178,6 +190,8 @@ MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -192,6 +206,8 @@ MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -206,6 +222,8 @@ MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -220,6 +238,8 @@ MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -234,6 +254,8 @@ MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -248,6 +270,8 @@ MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -262,6 +286,8 @@ MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -276,6 +302,8 @@ MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -290,6 +318,8 @@ MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -304,6 +334,8 @@ MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -318,6 +350,8 @@ MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -332,6 +366,8 @@ MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Dma\ssc\src\Dma.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"

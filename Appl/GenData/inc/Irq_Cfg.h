@@ -15,7 +15,7 @@
 **                                                                            **
 **  VERSION   : 8.0.0                                                         **
 **                                                                            **
-**  DATE, TIME: 2024-08-11, 18:29:19      !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2026-08-27, 16:11:46      !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  GENERATOR : Build b191017-0938        !!!IGNORE-LINE!!!                   **
 **                                                                            **
@@ -1697,11 +1697,11 @@ Container : IrqSTMinterruptConfiguration
 */
 /* STM0 interrupt Category Setting */
 #define IRQ_STM0_SR0_CAT            (IRQ_CAT1)
-#define IRQ_STM0_SR1_CAT            (IRQ_CAT1)
+#define IRQ_STM0_SR1_CAT            (IRQ_CAT2)
 
 /* STM0 interrupt Priority Setting */
 #define IRQ_STM0_SR0_PRIO           0x0
-#define IRQ_STM0_SR1_PRIO           0x0
+#define IRQ_STM0_SR1_PRIO           0x28
 
 /* STM0 interrupt type of service Setting */
 #define IRQ_STM0_SR0_TOS            (IRQ_TOS_CPU0)
@@ -2259,7 +2259,7 @@ Container : I2C interrupt Configuration
 #define IRQ_GPT12_EXIST               (STD_ON)
 #define IRQ_GPT120_EXIST            (STD_ON)
 
-#define IRQ_STM_EXIST               (STD_OFF)
+#define IRQ_STM_EXIST               (STD_ON)
 #define IRQ_STM0_EXIST              (STD_ON)
 #define IRQ_STM1_EXIST              (STD_ON)
 #define IRQ_STM2_EXIST              (STD_OFF)

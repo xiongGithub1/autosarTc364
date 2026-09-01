@@ -21,7 +21,7 @@
 # #  FILE DESCRIPTION
 # #  -------------------------------------------------------------------------------------------------------------------
 # #              File: BswM_rules_generated.mak
-# #   Generation Time: 2026-08-12 18:20:15
+# #   Generation Time: 2026-09-01 09:29:45
 # #           Project: last364 - Version 1.0
 # #          Delivery: CBD2200508_D00
 # #      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2

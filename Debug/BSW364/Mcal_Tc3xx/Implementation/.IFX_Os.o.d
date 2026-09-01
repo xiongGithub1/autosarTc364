@@ -38,6 +38,8 @@ BSW364\Mcal_Tc3xx\Implementation\IFX_Os.o :	"F:\workFiles\TC367\TC367\workspace\
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 BSW364\Mcal_Tc3xx\Implementation\IFX_Os.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+BSW364\Mcal_Tc3xx\Implementation\IFX_Os.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 BSW364\Mcal_Tc3xx\Implementation\IFX_Os.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 BSW364\Mcal_Tc3xx\Implementation\IFX_Os.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -52,6 +54,8 @@ BSW364\Mcal_Tc3xx\Implementation\IFX_Os.o :	"F:\workFiles\TC367\TC367\workspace\
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 BSW364\Mcal_Tc3xx\Implementation\IFX_Os.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+BSW364\Mcal_Tc3xx\Implementation\IFX_Os.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 BSW364\Mcal_Tc3xx\Implementation\IFX_Os.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 BSW364\Mcal_Tc3xx\Implementation\IFX_Os.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"

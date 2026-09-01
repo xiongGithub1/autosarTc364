@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Com_Lcfg.h
- *   Generation Time: 2024-08-11 18:29:27
+ *   Generation Time: 2026-08-27 16:11:54
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -41,6 +41,24 @@
  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 **********************************************************************************************************************/
 
+/**********************************************************************************************************************
+ * WARNING: This code has been generated with reduced-severity errors. 
+ * The created output files contain errors that have been ignored. Usage of the created files can lead to unpredictable behavior of the embedded code.
+ * Usage of the created files happens at own risk!
+ * 
+ * [Warning] COM02205 - Inconsistent signal layout. 
+ * - [Reduced Severity due to User-Defined Parameter] /ActiveEcuC/EcuC/EcucPduCollection/msg_nm_MyECU_oCAN00_92bb24c1_Tx[0:PduLength](value=6) of /ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx cannot hold contained ComSignals / ComGroupSignals.
+ * 
+ * Exceeding signals:
+ * /ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_5_omsg_nm_MyECU_oCAN00_e74864de_Tx
+ * Erroneous configuration elements:
+ * /ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_5_omsg_nm_MyECU_oCAN00_e74864de_Tx[0:ComBitPosition](value=48) (DefRef: /MICROSAR/Com/ComConfig/ComSignal/ComBitPosition)
+ * /ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_5_omsg_nm_MyECU_oCAN00_e74864de_Tx[0:ComBitSize](value=8) (DefRef: /MICROSAR/Com/ComConfig/ComSignal/ComBitSize)
+ * /ActiveEcuC/EcuC/EcucPduCollection/msg_nm_MyECU_oCAN00_92bb24c1_Tx[0:PduLength](value=6) (DefRef: /MICROSAR/EcuC/EcucPduCollection/Pdu/PduLength)
+ * /ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx[5:ComIPduSignalRef](value=/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_5_omsg_nm_MyECU_oCAN00_e74864de_Tx) (DefRef: /MICROSAR/Com/ComConfig/ComIPdu/ComIPduSignalRef)
+ * /ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_5_omsg_nm_MyECU_oCAN00_e74864de_Tx[0:ComSignalEndianness](value=LITTLE_ENDIAN) (DefRef: /MICROSAR/Com/ComConfig/ComSignal/ComSignalEndianness)
+ * /ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_5_omsg_nm_MyECU_oCAN00_e74864de_Tx[0:ComSignalType](value=UINT8) (DefRef: /MICROSAR/Com/ComConfig/ComSignal/ComSignalType)
+ *********************************************************************************************************************/
 
 #if !defined (COM_LCFG_H)
 # define COM_LCFG_H
@@ -2110,7 +2128,7 @@
 #define Com_GetSizeOfTxPduInfoIndOfPCConfig()                                                       2u  /**< the number of accomplishable value elements in Com_TxPduInfoInd */
 #define Com_GetSizeOfTxPduInfoOfMainFunctionTxIndOfPCConfig()                                       3u  /**< the number of accomplishable value elements in Com_TxPduInfoOfMainFunctionTxInd */
 #define Com_GetSizeOfTxPduInfoOfPCConfig()                                                          3u  /**< the number of accomplishable value elements in Com_TxPduInfo */
-#define Com_GetSizeOfTxPduInitValueOfPCConfig()                                                     20u  /**< the number of accomplishable value elements in Com_TxPduInitValue */
+#define Com_GetSizeOfTxPduInitValueOfPCConfig()                                                     19u  /**< the number of accomplishable value elements in Com_TxPduInitValue */
 #define Com_GetSizeOfTxProcessingISRLockCounterOfPCConfig()                                         1u  /**< the number of accomplishable value elements in Com_TxProcessingISRLockCounter */
 #define Com_GetSizeOfTxSigInfoOfPCConfig()                                                          13u  /**< the number of accomplishable value elements in Com_TxSigInfo */
 #define Com_GetTransmitRequestOfPCConfig()                                                          Com_TransmitRequest.raw  /**< the pointer to Com_TransmitRequest */
@@ -4318,7 +4336,7 @@ extern CONST(Com_TxPduInfoType, COM_CONST) Com_TxPduInfo[3];
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-extern CONST(Com_TxPduInitValueType, COM_CONST) Com_TxPduInitValue[20];
+extern CONST(Com_TxPduInitValueType, COM_CONST) Com_TxPduInitValue[19];
 #define COM_STOP_SEC_CONST_8
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */

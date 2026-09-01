@@ -9,7 +9,8 @@
  * Shared RAM (must match Boot vLinkGen):
  *   DSPR_Core0         0x70000000  size 159616
  *   Variables_Shared   0x70026F80  size 128
- *     handshake @      0x70026FC0  size 64   (leave low 64 B for BRS brsSharedVar)
+ *     brsSharedVar @   0x70026F90  size 48   (BRS)
+ *     handshake @      0x70026FC0  size 64   (Boot stay-in-boot)
  *   StartupStack       0x70027000
  *********************************************************************************************************************/
 #ifndef BOOT_MEM_H

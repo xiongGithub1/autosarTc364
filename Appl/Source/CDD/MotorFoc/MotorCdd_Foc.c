@@ -28,7 +28,6 @@
 #include "MotorFoc_SpeedLoop.h"
 #include "MotorFoc_SinCosTable.h"
 #include "Dio.h"
-#include "UartTest.h"
 typedef struct
 {
   uint8 mode;
@@ -361,7 +360,5 @@ void MotorCdd_FocFastLoop(void)
       break;
   }
 
-  /* Snapshot only on Core1. Uart_Write runs on Core0 (StartApp 1 ms). */
-  UartTest_CaptureFromFoc();
 }
 

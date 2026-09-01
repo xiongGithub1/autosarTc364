@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 22.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-08-11, 18:29:19     !!!IGNORE-LINE!!!                    **
+**  DATE, TIME: 2026-09-01, 09:13:44     !!!IGNORE-LINE!!!                    **
 **                                                                            **
 **  GENERATOR : Build b191017-0938         !!!IGNORE-LINE!!!                  **
 **                                                                            **
@@ -295,7 +295,7 @@ The extern declaration is present in Mcu_17_TimerIp_Local.h. Hence can't
 be made block scope. No side effects foreseen by violating this MISRA rule. */
 const uint32 Mcu_17_Stm_ChUserData[MCU_17_STM_NO_OF_TIMERS] =
 {
-  0x00000000,
+  0x02020000,
   0x00000000
 };
 

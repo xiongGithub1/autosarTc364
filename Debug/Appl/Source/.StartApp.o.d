@@ -56,6 +56,8 @@ Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Com
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -70,6 +72,8 @@ Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Com
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -400,6 +404,8 @@ Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Com
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -414,6 +420,8 @@ Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Com
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -424,14 +432,20 @@ Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenDat
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Components\Rte_EcuM_Type.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Components\Rte_EcuM_Type.h" :
-Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\UartTest.h"
-"F:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\UartTest.h" :
+Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\Include\Appl_Printf.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\Include\Appl_Printf.h" :
+Appl\Source\StartApp.o :	"F:\Program Files (x86)\tasking\ctc\include\stdio.h"
+"F:\Program Files (x86)\tasking\ctc\include\stdio.h" :
+Appl\Source\StartApp.o :	"F:\Program Files (x86)\tasking\ctc\include\stdarg.h"
+"F:\Program Files (x86)\tasking\ctc\include\stdarg.h" :
 Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Components\StartApp_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Components\StartApp_MemMap.h" :
 Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -446,6 +460,8 @@ Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Com
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"

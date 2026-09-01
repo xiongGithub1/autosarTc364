@@ -16,7 +16,7 @@
 **                                                                           **
 **  VERSION   : 11.0.0                                                       **
 **                                                                           **
-**  DATE, TIME: 2024-08-11, 18:29:19      !!!IGNORE-LINE!!!                   **
+**  DATE, TIME: 2026-08-27, 16:11:46      !!!IGNORE-LINE!!!                   **
 **                                                                            **
 **  GENERATOR : Build b191017-0938        !!!IGNORE-LINE!!!                   **
 **                                                                           **
@@ -83,6 +83,9 @@
                 <BSW-MODULE-ENTRY-REF-CONDITIONAL>
                   <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Irq/BswModuleEntrys/IrqSpi_Init</BSW-MODULE-ENTRY-REF>
                 </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Irq/BswModuleEntrys/IrqStm_Init</BSW-MODULE-ENTRY-REF>
+                </BSW-MODULE-ENTRY-REF-CONDITIONAL>
               </PROVIDED-ENTRYS>
               <INTERNAL-BEHAVIORS>
                 <BSW-INTERNAL-BEHAVIOR>
@@ -127,6 +130,11 @@
                       <SHORT-NAME>IrqDmu_Init</SHORT-NAME>
                       <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
                       <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Irq/BswModuleEntrys/IrqDmu_Init</IMPLEMENTED-ENTRY-REF>
+                    </BSW-CALLED-ENTITY>
+                    <BSW-CALLED-ENTITY>
+                      <SHORT-NAME>IrqStm_Init</SHORT-NAME>
+                      <REENTRANCY-LEVEL>NON-REENTRANT</REENTRANCY-LEVEL>
+                      <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/AURIX2G_Irq/BswModuleEntrys/IrqStm_Init</IMPLEMENTED-ENTRY-REF>
                     </BSW-CALLED-ENTITY>
                     <BSW-CALLED-ENTITY>
                       <SHORT-NAME>Irq_ClearAllInterruptFlags</SHORT-NAME>
@@ -209,6 +217,14 @@
             </BSW-MODULE-ENTRY>
             <BSW-MODULE-ENTRY>
               <SHORT-NAME>IrqSpi_Init</SHORT-NAME>
+              <IS-REENTRANT>false</IS-REENTRANT>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>REGULAR</CALL-TYPE>
+              <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>IrqStm_Init</SHORT-NAME>
               <IS-REENTRANT>false</IS-REENTRANT>
               <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
               <CALL-TYPE>REGULAR</CALL-TYPE>

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Com_Lcfg.c
- *   Generation Time: 2024-08-11 18:29:24
+ *   Generation Time: 2026-08-27 16:11:51
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -41,6 +41,24 @@
  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 **********************************************************************************************************************/
 
+/**********************************************************************************************************************
+ * WARNING: This code has been generated with reduced-severity errors. 
+ * The created output files contain errors that have been ignored. Usage of the created files can lead to unpredictable behavior of the embedded code.
+ * Usage of the created files happens at own risk!
+ * 
+ * [Warning] COM02205 - Inconsistent signal layout. 
+ * - [Reduced Severity due to User-Defined Parameter] /ActiveEcuC/EcuC/EcucPduCollection/msg_nm_MyECU_oCAN00_92bb24c1_Tx[0:PduLength](value=6) of /ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx cannot hold contained ComSignals / ComGroupSignals.
+ * 
+ * Exceeding signals:
+ * /ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_5_omsg_nm_MyECU_oCAN00_e74864de_Tx
+ * Erroneous configuration elements:
+ * /ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_5_omsg_nm_MyECU_oCAN00_e74864de_Tx[0:ComBitPosition](value=48) (DefRef: /MICROSAR/Com/ComConfig/ComSignal/ComBitPosition)
+ * /ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_5_omsg_nm_MyECU_oCAN00_e74864de_Tx[0:ComBitSize](value=8) (DefRef: /MICROSAR/Com/ComConfig/ComSignal/ComBitSize)
+ * /ActiveEcuC/EcuC/EcucPduCollection/msg_nm_MyECU_oCAN00_92bb24c1_Tx[0:PduLength](value=6) (DefRef: /MICROSAR/EcuC/EcucPduCollection/Pdu/PduLength)
+ * /ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx[5:ComIPduSignalRef](value=/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_5_omsg_nm_MyECU_oCAN00_e74864de_Tx) (DefRef: /MICROSAR/Com/ComConfig/ComIPdu/ComIPduSignalRef)
+ * /ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_5_omsg_nm_MyECU_oCAN00_e74864de_Tx[0:ComSignalEndianness](value=LITTLE_ENDIAN) (DefRef: /MICROSAR/Com/ComConfig/ComSignal/ComSignalEndianness)
+ * /ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_5_omsg_nm_MyECU_oCAN00_e74864de_Tx[0:ComSignalType](value=UINT8) (DefRef: /MICROSAR/Com/ComConfig/ComSignal/ComSignalType)
+ *********************************************************************************************************************/
 
 /**********************************************************************************************************************
   MISRA / PClint JUSTIFICATIONS
@@ -437,7 +455,7 @@ CONST(Com_TxPduInfoType, COM_CONST) Com_TxPduInfo[3] = {  /* PRQA S 1514, 1533 *
     /* Index    ExternalId                               IPduGroupInfoOfTxPduInfoIndEndIdx                    IPduGroupInfoOfTxPduInfoIndStartIdx                    PartitionsTxStructIdx  TxBufferLength  TxPduInitValueEndIdx  TxPduInitValueStartIdx        Referable Keys */
   { /*     0 */ PduRConf_PduRSrcPdu_PduRSrcPdu_96a7407f,                                                  1u,                                                    0u,                    0u,            12u,                  12u,                     0u },  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
   { /*     1 */ PduRConf_PduRSrcPdu_PduRSrcPdu_087fd70d,                                                  2u,                                                    1u,                    0u,             1u,                  13u,                    12u },  /* [/ActiveEcuC/Com/ComConfig/msg_Transmit_oCAN00_0723e95e_Tx, /ActiveEcuC/Com/ComConfig/MyECU_oCAN00_Tx_1ae5d671, ComMainFunctionTx] */
-  { /*     2 */ PduRConf_PduRSrcPdu_PduRSrcPdu_f11d45ed, COM_NO_IPDUGROUPINFOOFTXPDUINFOINDENDIDXOFTXPDUINFO, COM_NO_IPDUGROUPINFOOFTXPDUINFOINDSTARTIDXOFTXPDUINFO,                    0u,             7u,                  20u,                    13u }   /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx, ComMainFunctionTx] */
+  { /*     2 */ PduRConf_PduRSrcPdu_PduRSrcPdu_f11d45ed, COM_NO_IPDUGROUPINFOOFTXPDUINFOINDENDIDXOFTXPDUINFO, COM_NO_IPDUGROUPINFOOFTXPDUINFOINDSTARTIDXOFTXPDUINFO,                    0u,             6u,                  19u,                    13u }   /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx, ComMainFunctionTx] */
 };
 #define COM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -455,7 +473,7 @@ CONST(Com_TxPduInfoType, COM_CONST) Com_TxPduInfo[3] = {  /* PRQA S 1514, 1533 *
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-CONST(Com_TxPduInitValueType, COM_CONST) Com_TxPduInitValue[20] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
+CONST(Com_TxPduInitValueType, COM_CONST) Com_TxPduInitValue[19] = {  /* PRQA S 1514, 1533 */  /* MD_CSL_ObjectOnlyAccessedOnce */
   /* Index     TxPduInitValue      Referable Keys */
   /*     0 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx] */
   /*     1 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_MotorStatus_oCAN00_71118836_Tx] */
@@ -475,8 +493,7 @@ CONST(Com_TxPduInitValueType, COM_CONST) Com_TxPduInitValue[20] = {  /* PRQA S 1
   /*    15 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx] */
   /*    16 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx] */
   /*    17 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx] */
-  /*    18 */           0x00u,  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx] */
-  /*    19 */           0x00u   /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx] */
+  /*    18 */           0x00u   /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx] */
 };
 #define COM_STOP_SEC_CONST_8
 /*lint -save -esym(961, 19.1) */
@@ -793,7 +810,7 @@ VAR(Com_TxBufferType, COM_VAR_NO_INIT) Com_TxBuffer[20];  /* PRQA S 1514, 1533 *
   /*    16 */  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx, /ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_2_omsg_nm_MyECU_oCAN00_82915a9e_Tx] */
   /*    17 */  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx, /ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_3_omsg_nm_MyECU_oCAN00_95b93e5e_Tx] */
   /*    18 */  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx, /ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_4_omsg_nm_MyECU_oCAN00_f060001e_Tx] */
-  /*    19 */  /* [/ActiveEcuC/Com/ComConfig/msg_nm_MyECU_oCAN00_92bb24c1_Tx, /ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_5_omsg_nm_MyECU_oCAN00_e74864de_Tx] */
+  /*    19 */  /* [/ActiveEcuC/Com/ComConfig/sig_NM_MyECU_UserData_5_omsg_nm_MyECU_oCAN00_e74864de_Tx] */
 
 #define COM_STOP_SEC_VAR_NO_INIT_8
 /*lint -save -esym(961, 19.1) */

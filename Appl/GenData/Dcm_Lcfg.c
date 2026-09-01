@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Dcm_Lcfg.c
- *   Generation Time: 2026-08-26 09:45:45
+ *   Generation Time: 2026-08-28 14:21:49
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -446,10 +446,11 @@ CONST(NetworkHandleType, DCM_CONST) Dcm_CfgNetNetworkHandleLookUpTable[2]=
   ,ComMConf_ComMChannel_CN_CAN00_5e566ad9
 };
 /*! Diagnostic service execution conditions */
-CONST(Dcm_CfgStatePreconditionInfoType, DCM_CONST) Dcm_CfgStatePreconditions[3]=
+CONST(Dcm_CfgStatePreconditionInfoType, DCM_CONST) Dcm_CfgStatePreconditions[4]=
 {
    { { 0x07u,0x07u}}
   ,{ { 0x06u,0x07u}}
+  ,{ { 0x05u,0x07u}}
   ,{ { 0x04u,0x07u}}
 };
 /*! Session state properties */
@@ -502,7 +503,7 @@ CONST(Dcm_CfgDidMgrDidInfoType, DCM_CONST) Dcm_CfgDidMgrDidInfo[9]=
 CONST(Dcm_CfgDidMgrDidOpInfoType, DCM_CONST) Dcm_CfgDidMgrDidOpInfo[18]=
 {
    {    0u,   0u,0x01u} /* DID: 0x0003 */
-  ,{    2u,   1u,0x0Fu} /* DID: 0x0003 */
+  ,{    3u,   1u,0x0Fu} /* DID: 0x0003 */
   ,{    0u,   5u,0x05u} /* DID: 0x0100 */
   ,{    0u,   7u,0x01u} /* DID: 0x0100 */
   ,{    0u,   8u,0x05u} /* DID: 0x0101 */
@@ -605,7 +606,7 @@ CONST(Dcm_CfgDidMgrSignalOpClassInfoType, DCM_CONST) Dcm_CfgDidMgrSignalOpClassI
 /*! IO control DID operation properties */
 CONST(Dcm_CfgDidMgrOpInfoIoControlType, DCM_CONST) Dcm_CfgDidMgrOpInfoIoControl[1]=
 {
-   {    1u,   2u, 0u, 0u} /* DID: 0x0003 */
+   {    1u,   3u, 0u, 0u} /* DID: 0x0003 */
 };
 /*! Bridge for combined DID operation properties */
 CONST(Dcm_CfgDidMgrOpInfoCombinedType, DCM_CONST) Dcm_CfgDidMgrOpInfoCombined[1]=
@@ -662,7 +663,7 @@ CONST(Dcm_CfgStateRefMemType, DCM_CONST) Dcm_CfgDiagSvcIdExecPrecondTable[12]=
   ,   1u /* SID: 0x27 */
   ,   1u /* SID: 0x28 */
   ,   0u /* SID: 0x2E */
-  ,   2u /* SID: 0x2F */
+  ,   3u /* SID: 0x2F */
   ,   1u /* SID: 0x31 */
   ,   0u /* SID: 0x3E */
   ,   0u /* SID: 0x85 */
@@ -736,8 +737,8 @@ CONST(Dcm_CfgSvc10SubFuncInfoType, DCM_CONST) Dcm_CfgSvc10SubFuncInfo[3]=
 CONST(Dcm_CfgStateRefMemType, DCM_CONST) Dcm_CfgSvc10SubFuncExecPrecondTable[3]=
 {
       0u /* Session ID: 0x01 */
-  ,   0u /* Session ID: 0x02 */
-  ,   0u /* Session ID: 0x03 */
+  ,   1u /* Session ID: 0x02 */
+  ,   2u /* Session ID: 0x03 */
 };
 /*! Service 0x11 sub-service properties table  */
 CONST(Dcm_CfgSvc11SubFuncInfoType, DCM_CONST) Dcm_CfgSvc11SubFuncInfo[1]=

@@ -46,6 +46,7 @@
 #include "Rte_Os_OsCore0_swc.h"
 #include "Rte_Os_OsCore1_swc.h"
 #include "Rte_StartApp.h"
+#include "Rte_WdgM_SystemApplication_OsCore0.h"
 #include "SchM_Adc.h"
 #include "SchM_BswM.h"
 #include "SchM_Can.h"
@@ -77,6 +78,8 @@
 #include "SchM_Sbc_30_Tlf35584.h"
 #include "SchM_Spi.h"
 #include "SchM_Uart.h"
+#include "SchM_WdgM.h"
+#include "SchM_Wdg_17_Scu.h"
 #include "SchM_Xcp.h"
 
 #include "Rte_Hook.h"
@@ -737,6 +740,29 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Switch_EcuM_currentMode_currentMode(EcuM_Stat
   return ret;
 }
 
+
+/**********************************************************************************************************************
+ * Mode Switch API (Rte_Switch)
+ *********************************************************************************************************************/
+
+FUNC(Std_ReturnType, RTE_CODE) Rte_Switch_WdgM_SystemApplication_OsCore0_globalmode_Core0_currentMode(WdgMMode nextMode) /* PRQA S 1505, 3206 */ /* MD_MSR_Rule8.7, MD_Rte_3206 */
+{
+  Std_ReturnType ret = RTE_E_OK; /* PRQA S 2981 */ /* MD_MSR_RetVal */
+
+  nextMode = nextMode; /* PRQA S 2983, 1338 */ /* MD_MSR_DummyStmt, MD_MSR_DummyStmt */
+
+  return ret;
+}
+
+FUNC(Std_ReturnType, RTE_CODE) Rte_Switch_WdgM_SystemApplication_OsCore0_mode_WdgMSupervisedEntity_currentMode(WdgMMode nextMode) /* PRQA S 1505, 3206 */ /* MD_MSR_Rule8.7, MD_Rte_3206 */
+{
+  Std_ReturnType ret = RTE_E_OK; /* PRQA S 2981 */ /* MD_MSR_RetVal */
+
+  nextMode = nextMode; /* PRQA S 2983, 1338 */ /* MD_MSR_DummyStmt, MD_MSR_DummyStmt */
+
+  return ret;
+}
+
 #define RTE_STOP_SEC_SYSTEMAPPLICATION_OSCORE0_CODE
 #include "Rte_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
 
@@ -929,6 +955,9 @@ TASK(Default_BSW_ASync_Task_10ms) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR
 
       /* call runnable */
       Dem_SatelliteMainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
+
+      /* call runnable */
+      WdgM_MainFunction(); /* PRQA S 2987 */ /* MD_Rte_2987 */
     }
   }
 } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */

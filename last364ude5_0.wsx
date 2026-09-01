@@ -2,8 +2,8 @@
 <stg format="2.0">
 	<OriginalWsp type="string">last364ude5_0.wsx</OriginalWsp>
 	<BackupWspFlag type="flag">0</BackupWspFlag>
-	<UseWspCnt type="int">0</UseWspCnt>
-	<WspCloseCnt type="int">25</WspCloseCnt>
+	<UseWspCnt type="int">1</UseWspCnt>
+	<WspCloseCnt type="int">26</WspCloseCnt>
 	<ProdInfo type="bin" size="52">vQTv/gAAAQAGAAMAFiAEAAAABQAAAAAAPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAA==</ProdInfo>
 	<ProdInfoString type="string">5.0</ProdInfoString>
 	<CreationDate type="string">25.07.2026 20:24:28:000</CreationDate>
@@ -73,7 +73,7 @@
 							<UniqueIdentifier>MainFrame.StdTargetManagerWin.OPEN_VIEW</UniqueIdentifier>
 						</UniqueControlIdDockingControlData>
 						<UniqueControlIdDockingControlData>
-							<DockedDimension>1072</DockedDimension>
+							<DockedDimension>1073</DockedDimension>
 							<Cancelled>false</Cancelled>
 							<DockingType>Bottom</DockingType>
 							<FloatingBounds>
@@ -91,7 +91,7 @@
 							<UniqueIdentifier>MainFrame.StdUDEMessageWin.OPEN_VIEW</UniqueIdentifier>
 						</UniqueControlIdDockingControlData>
 						<UniqueControlIdDockingControlData>
-							<DockedDimension>846</DockedDimension>
+							<DockedDimension>845</DockedDimension>
 							<Cancelled>false</Cancelled>
 							<DockingType>Bottom</DockingType>
 							<FloatingBounds>
@@ -595,7 +595,7 @@
 									<Width>111</Width>
 									<Height>25</Height>
 								</Bounds>
-								<Name>Show Toolbar</Name>
+								<Name>Window Toolbar</Name>
 								<AlwaysUnvisible>false</AlwaysUnvisible>
 								<Visible>false</Visible>
 								<ToolItemData>
@@ -712,7 +712,7 @@
 									<Width>111</Width>
 									<Height>25</Height>
 								</Bounds>
-								<Name>Window Toolbar</Name>
+								<Name>Show Toolbar</Name>
 								<AlwaysUnvisible>false</AlwaysUnvisible>
 								<Visible>false</Visible>
 								<ToolItemData>
@@ -1502,6 +1502,22 @@
 							<Primary>true</Primary>
 							<DeviceName>\\.\DISPLAY1</DeviceName>
 						</ScreenControlData>
+						<ScreenControlData>
+							<Bounds>
+								<X>-1920</X>
+								<Y>0</Y>
+								<Width>1920</Width>
+								<Height>1080</Height>
+							</Bounds>
+							<WorkingArea>
+								<X>-1920</X>
+								<Y>0</Y>
+								<Width>1920</Width>
+								<Height>1040</Height>
+							</WorkingArea>
+							<Primary>false</Primary>
+							<DeviceName>\\.\DISPLAY4</DeviceName>
+						</ScreenControlData>
 					</Screens>
 				</ScreensControlData>
 			</ScreensControlData>
@@ -1511,7 +1527,7 @@
 				<FrameCreated type="string">25.07.2026 20:24:55:564</FrameCreated>
 				<ViewSrv type="key">
 					<TargetBrowserView type="key">
-						<SplitterRatio type="int">55</SplitterRatio>
+						<SplitterRatio type="int">58</SplitterRatio>
 						<ShowTargetState type="flag">1</ShowTargetState>
 						<SetDebuggerFocus type="flag">1</SetDebuggerFocus>
 						<ShowSymbolsOnHalt type="flag">1</ShowSymbolsOnHalt>
@@ -1587,7 +1603,7 @@
 			<OPEN_VIEW type="key">
 				<FrameCreated type="string">25.07.2026 20:24:55:631</FrameCreated>
 				<ViewSrv type="key">
-					<_ExtentX type="bin" size="8">BlcAAA==</_ExtentX>
+					<_ExtentX type="bin" size="8">61YAAA==</_ExtentX>
 					<_ExtentY type="bin" size="8">ZhIAAA==</_ExtentY>
 					<_StockProps type="bin" size="8">AAAAAA==</_StockProps>
 					<Columns type="bin" size="8">CAAAAA==</Columns>
@@ -1725,7 +1741,7 @@
 		<UDESTK.Script type="key">
 			<MacroGuiEntries type="key">
 				<LastScriptFilePath type="string">C:\Users\Qxiong\Documents\pls\UDESTK 5.0</LastScriptFilePath>
-				<Macro_19_08_26_16_01_17_0 type="key">
+				<Macro_21_08_26_13_23_12_0 type="key">
 					<ScriptDescription type="string">The script contains a collection of macros to save memory content into different file formats 
 and fill target memory ranges</ScriptDescription>
 					<ScriptPath type="string">V:\UDE\AddOns\Macro\MacroLibrary\StdMacros1.dsm</ScriptPath>
@@ -2005,7 +2021,7 @@ End Sub</ScriptSource>
 					<ScriptFromStg type="flag">1</ScriptFromStg>
 					<LocalComputerName type="string">WS_CORE_DUO</LocalComputerName>
 					<ExternalScriptPath type="string"></ExternalScriptPath>
-					<NextNodeName type="string">Macro_21_08_26_13_23_12_0</NextNodeName>
+					<NextNodeName type="string">Macro_27_08_26_14_14_06_0</NextNodeName>
 					<UnAss type="key">
 						<GUIEntry type="key">
 							<MenuID type="int">10</MenuID>
@@ -2062,7 +2078,7 @@ End Sub</ScriptSource>
 						<GUIEntryDescription type="string"></GUIEntryDescription>
 					</FillDWord>
 					<NoOfFunctions type="int">5</NoOfFunctions>
-				</Macro_19_08_26_16_01_17_0>
+				</Macro_21_08_26_13_23_12_0>
 			</MacroGuiEntries>
 			<LastSelectedMacro type="string"></LastSelectedMacro>
 		</UDESTK.Script>
@@ -3663,8 +3679,7 @@ SET 0xF0001E54 0x400
 WAIT 5
 </InitScript>
 						<ExecOnConnectCmds type="flag">0</ExecOnConnectCmds>
-						<OnConnectScript type="string">
-						</OnConnectScript>
+						<OnConnectScript type="string"></OnConnectScript>
 						<ExecOnExtRstCmds type="flag">0</ExecOnExtRstCmds>
 						<FailOnResetMalfunction type="flag">0</FailOnResetMalfunction>
 						<ResetPulseLen type="int">10</ResetPulseLen>
@@ -3699,11 +3714,9 @@ WAIT 5
 						<SimioAddr type="string">g_JtagSimioAccess</SimioAddr>
 						<UseStmForPtm type="int">1</UseStmForPtm>
 						<ExecOnStartCmds type="flag">0</ExecOnStartCmds>
-						<OnStartScript type="string">
-						</OnStartScript>
+						<OnStartScript type="string"></OnStartScript>
 						<ExecOnHaltCmds type="flag">0</ExecOnHaltCmds>
-						<OnHaltScript type="string">
-						</OnHaltScript>
+						<OnHaltScript type="string"></OnHaltScript>
 						<ExecOnHaltCmdsWhileHaltedPeriod type="int">0</ExecOnHaltCmdsWhileHaltedPeriod>
 						<UseTriggerToBreak type="flag">1</UseTriggerToBreak>
 						<UseTL2OnHalt type="flag">1</UseTL2OnHalt>
@@ -4949,7 +4962,7 @@ WAIT 5
 		<SaveAndCopyWithoutTimeStamps type="flag">0</SaveAndCopyWithoutTimeStamps>
 	</Logging>
 	<TargetInfoFile type="string">..\..\..\..\ude5_0Files\TriBoard_TC36xA_das.cfg</TargetInfoFile>
-	<LastWriteDate type="string">21.08.2026 13:23:12:000</LastWriteDate>
+	<LastWriteDate type="string">27.08.2026 14:14:05:999</LastWriteDate>
 	<MemtoolManager type="key"></MemtoolManager>
 	<TraceFramework type="key"></TraceFramework>
 	<RecentlyUsedRootNode type="key"></RecentlyUsedRootNode>
@@ -4996,4 +5009,5 @@ WAIT 5
 			</FSISFRS>
 		</Controller0>
 	</TargInfoFlags>
+	<BackupWsp type="string">last364ude5_0_090126092645.wsx</BackupWsp>
 </stg>

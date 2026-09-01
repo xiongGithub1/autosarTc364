@@ -122,6 +122,15 @@ typedef uint32 EcuM_TimeType;
 # define Rte_TypeDef_TimeInMicrosecondsType
 typedef uint32 TimeInMicrosecondsType;
 
+# define Rte_TypeDef_WdgM_CheckpointIdType
+typedef uint16 WdgM_CheckpointIdType;
+
+# define Rte_TypeDef_WdgM_ModeType
+typedef uint8 WdgM_ModeType;
+
+# define Rte_TypeDef_WdgM_SupervisedEntityIdType
+typedef uint16 WdgM_SupervisedEntityIdType;
+
 # define Rte_TypeDef_ComM_ModeType
 typedef uint8 ComM_ModeType;
 
@@ -220,6 +229,15 @@ typedef uint8 EcuM_StateType;
 
 # define Rte_TypeDef_EcuM_UserType
 typedef uint8 EcuM_UserType;
+
+# define Rte_TypeDef_WdgMMode
+typedef uint8 WdgMMode;
+
+# define Rte_TypeDef_WdgM_GlobalStatusType
+typedef uint8 WdgM_GlobalStatusType;
+
+# define Rte_TypeDef_WdgM_LocalStatusType
+typedef uint8 WdgM_LocalStatusType;
 
 # define Rte_TypeDef_Dcm_StartDataIn_SampleRoutineControl_StartOnly_In_Option1Type
 typedef Dcm_StartDataIn_SampleRoutineControl_StartOnly_In_Option1ArrayType Dcm_StartDataIn_SampleRoutineControl_StartOnly_In_Option1Type[3];

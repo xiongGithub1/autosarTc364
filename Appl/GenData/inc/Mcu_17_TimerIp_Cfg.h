@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 11.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-08-11, 18:29:19       !!!IGNORE-LINE!!!                  **
+**  DATE, TIME: 2026-09-01, 09:13:44       !!!IGNORE-LINE!!!                  **
 **                                                                            **
 **  GENERATOR : Build b191017-0938           !!!IGNORE-LINE!!!                **
 **                                                                            **
@@ -83,7 +83,7 @@
 #define MCU_17_STM_NO_OF_TIMERS                   (0x2U)
 
 #define MCU_17_TIMERIP_ADC_USER       (STD_ON)
-#define MCU_17_TIMERIP_WDG_USER       (STD_OFF)
+#define MCU_17_TIMERIP_WDG_USER       (STD_ON)
 #define MCU_17_TIMERIP_PWM_USER       (STD_ON)
 #define MCU_17_TIMERIP_GPT_USER       (STD_OFF)
 #define MCU_17_TIMERIP_OCU_USER       (STD_OFF)

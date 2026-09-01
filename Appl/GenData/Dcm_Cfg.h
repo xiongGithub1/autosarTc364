@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Dcm_Cfg.h
- *   Generation Time: 2026-08-26 14:45:27
+ *   Generation Time: 2026-08-28 14:21:49
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -572,7 +572,7 @@
 /*! Number of security levels (all security states except the "locked" one) */
 # define DCM_STATE_SECURITY_NUM_LEVELS                                          2u
 /*! Size of table Dcm_CfgStatePreconditions */
-# define DCM_CFGSTATEPRECONDITIONS_SIZE                                         3u
+# define DCM_CFGSTATEPRECONDITIONS_SIZE                                         4u
 /*! Size of table Dcm_CfgStateSessionInfo */
 # define DCM_CFGSTATESESSIONINFO_SIZE                                           3u
 /*! Size of table Dcm_CfgStateSecurityInfo */

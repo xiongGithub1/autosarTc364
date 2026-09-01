@@ -46,6 +46,7 @@
 #include "Rte_Os_OsCore0_swc.h"
 #include "Rte_Os_OsCore1_swc.h"
 #include "Rte_StartApp.h"
+#include "Rte_WdgM_SystemApplication_OsCore0.h"
 #include "SchM_Adc.h"
 #include "SchM_BswM.h"
 #include "SchM_Can.h"
@@ -77,6 +78,8 @@
 #include "SchM_Sbc_30_Tlf35584.h"
 #include "SchM_Spi.h"
 #include "SchM_Uart.h"
+#include "SchM_WdgM.h"
+#include "SchM_Wdg_17_Scu.h"
 #include "SchM_Xcp.h"
 
 #include "Rte_Hook.h"

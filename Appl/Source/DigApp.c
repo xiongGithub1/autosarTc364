@@ -99,6 +99,10 @@
  *********************************************************************************************************************/
 
 #include "string.h"
+#include "Appl_DcmEcuReset.h"
+
+/* RTE applies ModeMachine after this ModeSwitch runnable; pending mode sits in IOC queue. */
+extern VAR(uint8, RTE_VAR_NOINIT) Rte_ioc_Rte_M_Dcm_DcmEcuReset_DcmEcuReset_Queue[1];
 
 static void DigApp_TestDefines(void);
 
@@ -1684,8 +1688,12 @@ FUNC(void, DigApp_CODE) DcmEcuReset_ModeSwitch(void) /* PRQA S 0624, 3206 */ /* 
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
  * Symbol: DcmEcuReset_ModeSwitch
  *********************************************************************************************************************/
-
-	BrsHwSoftwareResetECU();
+  /* Do NOT reset on JUMP*: Dcm arms handshake then Switch(EXECUTE) and resets
+   * without APP 50 02 (HIS). Boot must send 50 02 after stay-in-boot.
+   * Peek pending mode from RTE IOC (ModeMachine is updated after this runnable). */
+  Dcm_EcuResetType nextMode =
+      (Dcm_EcuResetType)Rte_ioc_Rte_M_Dcm_DcmEcuReset_DcmEcuReset_Queue[0];
+  (void)Appl_DcmEcuReset_Switch(nextMode);
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/

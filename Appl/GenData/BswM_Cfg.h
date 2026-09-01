@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: BswM_Cfg.h
- *   Generation Time: 2026-08-05 21:47:40
+ *   Generation Time: 2026-09-01 09:29:45
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -141,7 +141,7 @@
 #define BSWM_ENABLE_SD                       STD_OFF
 #define BSWM_ENABLE_NM                       STD_OFF
 #define BSWM_ENABLE_PDUR                     STD_OFF
-#define BSWM_ENABLE_WDGM                     STD_OFF
+#define BSWM_ENABLE_WDGM                     STD_ON
 #define BSWM_ENABLE_RULE_CONTROL             STD_OFF
 #define BSWM_VERSION_INFO_API                STD_OFF
 #define BSWM_COMM_PNC_SUPPORT                STD_OFF

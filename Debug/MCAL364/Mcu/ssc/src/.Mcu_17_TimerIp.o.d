@@ -34,6 +34,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -48,6 +50,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -64,6 +68,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -78,6 +84,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -94,6 +102,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -108,6 +118,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -132,6 +144,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -146,6 +160,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -160,6 +176,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -174,6 +192,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -190,6 +210,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -204,6 +226,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -218,6 +242,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -232,6 +258,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -270,6 +298,40 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Rte_MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\MCAL364\TC36xA\_Reg\IfxGtm_bf.h"
 "F:\workFiles\TC367\TC367\workspace\last364\MCAL364\TC36xA\_Reg\IfxGtm_bf.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\MCAL364\Wdg_17_Scu\ssc\inc\Wdg_17_Scu_Cbk.h"
+"F:\workFiles\TC367\TC367\workspace\last364\MCAL364\Wdg_17_Scu\ssc\inc\Wdg_17_Scu_Cbk.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Wdg_17_Scu_MemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Wdg_17_Scu_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Wdg_17_Scu_MemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\BSW364\Mcal_Tc3xx\Implementation\Wdg_17_Scu_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\BSW364\Os\Implementation\Os_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Os_MemMapInt.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\MCAL364\Pwm_17_GtmCcu6\ssc\inc\Pwm_17_GtmCcu6_Cbk.h"
 "F:\workFiles\TC367\TC367\workspace\last364\MCAL364\Pwm_17_GtmCcu6\ssc\inc\Pwm_17_GtmCcu6_Cbk.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\MCAL364\Pwm_17_GtmCcu6\ssc\inc\Pwm_17_GtmCcu6.h"
@@ -284,6 +346,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -298,6 +362,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -314,6 +380,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -328,6 +396,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -342,6 +412,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -356,6 +428,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -394,6 +468,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -408,6 +484,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -422,6 +500,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -436,6 +516,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -450,6 +532,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -464,6 +548,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -478,6 +564,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -492,6 +580,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -506,6 +596,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"
@@ -520,6 +612,8 @@ MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last3
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\MemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h"
 "F:\workFiles\TC367\TC367\workspace\last364\BSW364\_Common\Implementation\_MemMap.h" :
+MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\WdgM_OsMemMap.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Compatibility.h" :
 MCAL364\Mcu\ssc\src\Mcu_17_TimerIp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\MemMap_Common.h"

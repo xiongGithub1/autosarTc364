@@ -130,6 +130,7 @@ Rte_NvM.h<br>
 Rte_Os_OsCore0_swc.h<br>
 Rte_Os_OsCore1_swc.h<br>
 Rte_StartApp.h<br>
+Rte_WdgM_SystemApplication_OsCore0.h<br>
 Rte_BswM_Type.h<br>
 Rte_ComM_Type.h<br>
 Rte_Dcm_Type.h<br>
@@ -144,6 +145,7 @@ Rte_NvM_Type.h<br>
 Rte_Os_OsCore0_swc_Type.h<br>
 Rte_Os_OsCore1_swc_Type.h<br>
 Rte_StartApp_Type.h<br>
+Rte_WdgM_SystemApplication_OsCore0_Type.h<br>
 Rte_Main.h<br>
 Rte_Type.h<br>
 Rte_DataHandleType.h<br>
@@ -160,6 +162,7 @@ MotorControll_MemMap.h<br>
 Os_OsCore0_swc_MemMap.h<br>
 Os_OsCore1_swc_MemMap.h<br>
 StartApp_MemMap.h<br>
+WdgM_SystemApplication_OsCore0_MemMap.h<br>
 Rte_Compiler_Cfg.h<br>
 usrostyp.h<br>
 Rte.c<br>
@@ -200,6 +203,8 @@ SchM_Pwm_17_GtmCcu6.h<br>
 SchM_Sbc_30_Tlf35584.h<br>
 SchM_Spi.h<br>
 SchM_Uart.h<br>
+SchM_WdgM.h<br>
+SchM_Wdg_17_Scu.h<br>
 SchM_Xcp.h<br>
 SchM_Adc_Type.h<br>
 SchM_BswM_Type.h<br>
@@ -232,6 +237,8 @@ SchM_Pwm_17_GtmCcu6_Type.h<br>
 SchM_Sbc_30_Tlf35584_Type.h<br>
 SchM_Spi_Type.h<br>
 SchM_Uart_Type.h<br>
+SchM_WdgM_Type.h<br>
+SchM_Wdg_17_Scu_Type.h<br>
 SchM_Xcp_Type.h<br>
 Rte.oil<br>
 Rte_Needs.ecuc.arxml<br>
@@ -1550,6 +1557,69 @@ CONST Size: 0 Bytes<br>
 <TD>n/a</TD>
 <TD>n/a</TD>
 </TR>
+<TR>
+<TD><B>OperationInvokedEvent</B> WdgM_SystemApplication_OsCore0::alive_WdgMSupervisedEntity::CheckpointReached</TD>
+<TD>CheckpointReached</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+</TR>
+<TR>
+<TD><B>OperationInvokedEvent</B> WdgM_SystemApplication_OsCore0::general_Core0::GetFirstExpiredSEID</TD>
+<TD>GetFirstExpiredSEID</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+</TR>
+<TR>
+<TD><B>OperationInvokedEvent</B> WdgM_SystemApplication_OsCore0::general_Core0::GetGlobalStatus</TD>
+<TD>GetGlobalStatus</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+</TR>
+<TR>
+<TD><B>OperationInvokedEvent</B> WdgM_SystemApplication_OsCore0::general_Core0::GetLocalStatus</TD>
+<TD>GetLocalStatus</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+</TR>
+<TR>
+<TD><B>OperationInvokedEvent</B> WdgM_SystemApplication_OsCore0::localStatus_WdgMSupervisedEntity::GetLocalStatus</TD>
+<TD>GetLocalStatus</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+</TR>
+<TR>
+<TD><B>OperationInvokedEvent</B> WdgM_SystemApplication_OsCore0::general_Core0::GetMode</TD>
+<TD>GetMode</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+</TR>
+<TR>
+<TD><B>OperationInvokedEvent</B> WdgM_SystemApplication_OsCore0::general_Core0::PerformReset</TD>
+<TD>PerformReset</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+</TR>
+<TR>
+<TD><B>OperationInvokedEvent</B> WdgM_SystemApplication_OsCore0::general_Core0::SetMode</TD>
+<TD>SetMode</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+<TD>n/a</TD>
+</TR>
+<TR>
+<TD><B>TimingEvent</B> Cyclic 10ms</TD>
+<TD>WdgM_MainFunction</TD>
+<TD>Default_BSW_ASync_Task_10ms</TD>
+<TD>Rte_Ev_Cyclic2_Default_BSW_ASync_Task_10ms_0_10ms</TD>
+<TD>Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_10ms</TD>
+</TR>
 </TABLE>
 <br>
 <TABLE BORDER=1>
@@ -1727,6 +1797,13 @@ CONST Size: 0 Bytes<br>
 <TD>n/a</TD>
 <TD>n/a</TD>
 <TD>n/a</TD>
+</TR>
+<TR>
+<TD><B>TimingEvent</B> Cyclic 10ms</TD>
+<TD>WdgM_MainFunction</TD>
+<TD>Default_BSW_ASync_Task_10ms</TD>
+<TD>Rte_Ev_Cyclic2_Default_BSW_ASync_Task_10ms_0_10ms</TD>
+<TD>Rte_Al_TE2_Default_BSW_ASync_Task_10ms_0_10ms</TD>
 </TR>
 <TR>
 <TD><B>TimingEvent</B> Cyclic 5ms</TD>

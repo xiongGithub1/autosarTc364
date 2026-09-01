@@ -416,6 +416,22 @@
  *  Rte_Runnable_StartApp_StartApp_Cyclic250ms_Start
  *  Rte_Runnable_StartApp_StartApp_Init_Return
  *  Rte_Runnable_StartApp_StartApp_Init_Start
+ *  Rte_Runnable_WdgM_SystemApplication_OsCore0_CheckpointReached_Return
+ *  Rte_Runnable_WdgM_SystemApplication_OsCore0_CheckpointReached_Start
+ *  Rte_Runnable_WdgM_SystemApplication_OsCore0_GetFirstExpiredSEID_Return
+ *  Rte_Runnable_WdgM_SystemApplication_OsCore0_GetFirstExpiredSEID_Start
+ *  Rte_Runnable_WdgM_SystemApplication_OsCore0_GetGlobalStatus_Return
+ *  Rte_Runnable_WdgM_SystemApplication_OsCore0_GetGlobalStatus_Start
+ *  Rte_Runnable_WdgM_SystemApplication_OsCore0_GetLocalStatus_Return
+ *  Rte_Runnable_WdgM_SystemApplication_OsCore0_GetLocalStatus_Start
+ *  Rte_Runnable_WdgM_SystemApplication_OsCore0_GetMode_Return
+ *  Rte_Runnable_WdgM_SystemApplication_OsCore0_GetMode_Start
+ *  Rte_Runnable_WdgM_SystemApplication_OsCore0_PerformReset_Return
+ *  Rte_Runnable_WdgM_SystemApplication_OsCore0_PerformReset_Start
+ *  Rte_Runnable_WdgM_SystemApplication_OsCore0_SetMode_Return
+ *  Rte_Runnable_WdgM_SystemApplication_OsCore0_SetMode_Start
+ *  Rte_Runnable_WdgM_SystemApplication_OsCore0_WdgM_MainFunction_Return
+ *  Rte_Runnable_WdgM_SystemApplication_OsCore0_WdgM_MainFunction_Start
  *  Rte_SwitchAckHook_Dcm_DcmEcuReset_DcmEcuReset_Return
  *  Rte_SwitchAckHook_Dcm_DcmEcuReset_DcmEcuReset_Start
  *  Rte_SwitchAckHook_EcuM_currentMode_currentMode_Return
@@ -430,6 +446,10 @@
  *  Rte_SwitchHook_Dcm_DcmEcuReset_DcmEcuReset_Start
  *  Rte_SwitchHook_EcuM_currentMode_currentMode_Return
  *  Rte_SwitchHook_EcuM_currentMode_currentMode_Start
+ *  Rte_SwitchHook_WdgM_SystemApplication_OsCore0_globalmode_Core0_currentMode_Return
+ *  Rte_SwitchHook_WdgM_SystemApplication_OsCore0_globalmode_Core0_currentMode_Start
+ *  Rte_SwitchHook_WdgM_SystemApplication_OsCore0_mode_WdgMSupervisedEntity_currentMode_Return
+ *  Rte_SwitchHook_WdgM_SystemApplication_OsCore0_mode_WdgMSupervisedEntity_currentMode_Start
  *  Rte_Task_Activate
  *  Rte_Task_Dispatch
  *  Rte_Task_SetEvent
@@ -652,6 +672,16 @@
  *  SchM_EnterHook_Spi_Queue_Update_Start
  *  SchM_EnterHook_Spi_SyncLock_Return
  *  SchM_EnterHook_Spi_SyncLock_Start
+ *  SchM_EnterHook_WdgM_WDGM_EXCLUSIVE_AREA_0_Return
+ *  SchM_EnterHook_WdgM_WDGM_EXCLUSIVE_AREA_0_Start
+ *  SchM_EnterHook_Wdg_17_Scu_ChangeMode_Return
+ *  SchM_EnterHook_Wdg_17_Scu_ChangeMode_Start
+ *  SchM_EnterHook_Wdg_17_Scu_CpuEndInit_Return
+ *  SchM_EnterHook_Wdg_17_Scu_CpuEndInit_Start
+ *  SchM_EnterHook_Wdg_17_Scu_TimerHandling_Return
+ *  SchM_EnterHook_Wdg_17_Scu_TimerHandling_Start
+ *  SchM_EnterHook_Wdg_17_Scu_Trigger_Return
+ *  SchM_EnterHook_Wdg_17_Scu_Trigger_Start
  *  SchM_EnterHook_Xcp_CANXCP_EXCLUSIVE_AREA_0_Return
  *  SchM_EnterHook_Xcp_CANXCP_EXCLUSIVE_AREA_0_Start
  *  SchM_EnterHook_Xcp_FRXCP_EXCLUSIVE_AREA_0_Return
@@ -870,6 +900,16 @@
  *  SchM_ExitHook_Spi_Queue_Update_Start
  *  SchM_ExitHook_Spi_SyncLock_Return
  *  SchM_ExitHook_Spi_SyncLock_Start
+ *  SchM_ExitHook_WdgM_WDGM_EXCLUSIVE_AREA_0_Return
+ *  SchM_ExitHook_WdgM_WDGM_EXCLUSIVE_AREA_0_Start
+ *  SchM_ExitHook_Wdg_17_Scu_ChangeMode_Return
+ *  SchM_ExitHook_Wdg_17_Scu_ChangeMode_Start
+ *  SchM_ExitHook_Wdg_17_Scu_CpuEndInit_Return
+ *  SchM_ExitHook_Wdg_17_Scu_CpuEndInit_Start
+ *  SchM_ExitHook_Wdg_17_Scu_TimerHandling_Return
+ *  SchM_ExitHook_Wdg_17_Scu_TimerHandling_Start
+ *  SchM_ExitHook_Wdg_17_Scu_Trigger_Return
+ *  SchM_ExitHook_Wdg_17_Scu_Trigger_Start
  *  SchM_ExitHook_Xcp_CANXCP_EXCLUSIVE_AREA_0_Return
  *  SchM_ExitHook_Xcp_CANXCP_EXCLUSIVE_AREA_0_Start
  *  SchM_ExitHook_Xcp_FRXCP_EXCLUSIVE_AREA_0_Return
@@ -932,6 +972,8 @@
  *  SchM_Schedulable_Uart_Uart_MainFunction_Read_Start
  *  SchM_Schedulable_Uart_Uart_MainFunction_Write_Return
  *  SchM_Schedulable_Uart_Uart_MainFunction_Write_Start
+ *  SchM_Schedulable_WdgM_WdgM_MainFunction_Return
+ *  SchM_Schedulable_WdgM_WdgM_MainFunction_Start
  *  SchM_Schedulable_Xcp_CanXcp_MainFunction_Return
  *  SchM_Schedulable_Xcp_CanXcp_MainFunction_Start
  *  SchM_Schedulable_Xcp_Xcp_MainFunction_Return

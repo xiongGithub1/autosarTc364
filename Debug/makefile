@@ -41,6 +41,8 @@ all :
 -include "BSW364\PduR\Implementation\subdir.mk"
 -include "BSW364\Sbc_30_Tlf35584\Implementation\subdir.mk"
 -include "BSW364\VStdLib\Implementation\subdir.mk"
+-include "BSW364\WdgIf\Implementation\subdir.mk"
+-include "BSW364\WdgM\Implementation\subdir.mk"
 -include "BSW364\Xcp\Implementation\subdir.mk"
 -include "MCAL364\Adc\ssc\src\subdir.mk"
 -include "MCAL364\Crc\ssc\src\subdir.mk"
@@ -53,12 +55,14 @@ all :
 -include "MCAL364\Irq\Dma_Irq\subdir.mk"
 -include "MCAL364\Irq\Spi_Irq\subdir.mk"
 -include "MCAL364\Irq\ssc\src\subdir.mk"
+-include "MCAL364\Irq\Stm_Irq\subdir.mk"
 -include "MCAL364\McalLib\ssc\src\subdir.mk"
 -include "MCAL364\Mcu\ssc\src\subdir.mk"
 -include "MCAL364\Port\ssc\src\subdir.mk"
 -include "MCAL364\Pwm_17_GtmCcu6\ssc\src\subdir.mk"
 -include "MCAL364\Spi\ssc\src\subdir.mk"
 -include "MCAL364\Uart\ssc\src\subdir.mk"
+-include "MCAL364\Wdg_17_Scu\ssc\src\subdir.mk"
 -include "..\makefile.defs"
 
 PCP_FILES :=

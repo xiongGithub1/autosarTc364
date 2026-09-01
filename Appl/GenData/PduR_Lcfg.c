@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: PduR_Lcfg.c
- *   Generation Time: 2024-08-11 18:29:24
+ *   Generation Time: 2026-08-27 16:11:51
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -322,7 +322,7 @@ CONST(PduR_RmGDestRomType, PDUR_CONST) PduR_RmGDestRom[7] = {  /* PRQA S 1514, 1
   { /*     3 */                                   DcmConf_DcmDslProtocolRx_DcmDslProtocolRx, PDUR_RX_DIRECTIONOFRMGDESTROM,         0u,           8u,       4u,           6u },  /* [Global PduRDestPdu: msg_diag_RequestGlobal_oCAN00_25be229e_Rx]  */  /* [/ActiveEcuC/EcuC/EcucPduCollection/msg_diag_RequestGlobal_oCAN00_25be229e_Rx, /ActiveEcuC/PduR/Dcm, PduRSinglePartitionDummy] */
   { /*     4 */ DcmConf_DcmDslProtocolRx_msg_diag_Request_MyECU_oCAN00_956934ec_Rx_b73501b5, PDUR_RX_DIRECTIONOFRMGDESTROM,         0u,           8u,       4u,           1u },  /* [Global PduRDestPdu: msg_diag_Request_MyECU_oCAN00_956934ec_Rx]  */  /* [/ActiveEcuC/EcuC/EcucPduCollection/msg_diag_Request_MyECU_oCAN00_956934ec_Rx, /ActiveEcuC/PduR/Dcm, PduRSinglePartitionDummy] */
   { /*     5 */                                  CanTpConf_CanTpTxNSdu_CanTpTxNSdu_550eef02, PDUR_TX_DIRECTIONOFRMGDESTROM,         0u,           8u,       2u,           5u },  /* [Global PduRDestPdu: msg_diag_Response_MyECU_oCAN00_45311294_Tx] */  /* [/ActiveEcuC/EcuC/EcucPduCollection/msg_diag_Response_MyECU_oCAN00_45311294_Tx, /ActiveEcuC/PduR/CanTp, PduRSinglePartitionDummy] */
-  { /*     6 */                   CanNmConf_CanNmUserDataTxPdu_msg_nm_MyECU_oCAN00_c5c68178, PDUR_TX_DIRECTIONOFRMGDESTROM,         0u,           7u,       1u,           4u }   /* [Global PduRDestPdu: msg_nm_MyECU_oCAN00_92bb24c1_Tx]            */  /* [/ActiveEcuC/EcuC/EcucPduCollection/msg_nm_MyECU_oCAN00_92bb24c1_Tx, /ActiveEcuC/PduR/CanNm, PduRSinglePartitionDummy] */
+  { /*     6 */                   CanNmConf_CanNmUserDataTxPdu_msg_nm_MyECU_oCAN00_c5c68178, PDUR_TX_DIRECTIONOFRMGDESTROM,         0u,           6u,       1u,           4u }   /* [Global PduRDestPdu: msg_nm_MyECU_oCAN00_92bb24c1_Tx]            */  /* [/ActiveEcuC/EcuC/EcucPduCollection/msg_nm_MyECU_oCAN00_92bb24c1_Tx, /ActiveEcuC/PduR/CanNm, PduRSinglePartitionDummy] */
 };
 #define PDUR_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */

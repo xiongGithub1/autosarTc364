@@ -68,6 +68,22 @@
                         </ECUC-REFERENCE-VALUE>
                       </REFERENCE-VALUES>
                     </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="b6bd8480-4c02-48bf-9a8f-865e82ec8486">
+                      <SHORT-NAME>ResourceMAllocation_002</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/ResourceM/ResourceMMcalConfig/ResourceMMcalCore/ResourceMAllocation</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/ResourceM/ResourceMMcalConfig/ResourceMMcalCore/ResourceMAllocation/ResourceMModuleName</DEFINITION-REF>
+                          <VALUE>STM</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AURIX2G/EcucDefs/ResourceM/ResourceMMcalConfig/ResourceMMcalCore/ResourceMAllocation/ResourceMResourceRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Mcu/Mcu/McuHardwareResourceAllocationConf_0/McuStmAllocationConf_0</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
                   </SUB-CONTAINERS>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE UUID="1e5dad8e-0101-4989-9adf-f0c739ed7c90">
