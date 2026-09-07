@@ -4,7 +4,7 @@
  *   0x80000000 ─┬─ Boot (BMHD + Startup + FBL)     128 KB
  *   0x8001FFFF ─┘
  *   0x80020000 ─┬─ APP header (32 B) + APP image
- *   0x801FFFFF ─┘
+ *   0x801FFFFF ─┘  (TC364 4MB / SWAP 2MB·2MB：逻辑窗至 PF0 末)
  *
  * Shared RAM (must match Boot vLinkGen):
  *   DSPR_Core0         0x70000000  size 159616

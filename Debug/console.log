@@ -2,36 +2,8 @@
 **** Build of configuration Debug for project last364 ****
 
 "F:\\Program Files (x86)\\tasking\\ctc\\bin\\amk" -j8 all 
-Compiling BswM_Lcfg.c
-Compiling WdgIf_Lcfg.c
-Compiling Wdg_17_Scu_PBcfg.c
-Compiling BswM_Callout_Stubs.c
-Compiling EcuM_Callout_Stubs.c
-Compiling BswM.c
-Compiling EcuM.c
-Compiling Wdg_17_Scu.c
-ctc W537: ["..\BSW364\EcuM\Implementation\EcuM.c" 5118/9] unused variable "errorId"
-ctc W549: ["..\BSW364\EcuM\Implementation\EcuM.c" 3366/15] condition is always false
-0 errors, 2 warnings
-ctc W557: ["..\Appl\Source\EcuM_Callout_Stubs.c" 156/12] possible infinite loop
-ctc W557: ["..\Appl\Source\EcuM_Callout_Stubs.c" 165/12] possible infinite loop
-ctc W557: ["..\Appl\Source\EcuM_Callout_Stubs.c" 877/12] possible infinite loop
-0 errors, 3 warnings
-ctc W537: ["..\BSW364\BswM\Implementation\BswM.c" 1202/9] unused variable "errorId"
-ctc W537: ["..\BSW364\BswM\Implementation\BswM.c" 1681/55] unused variable "partitionIdx"
-ctc W537: ["..\BSW364\BswM\Implementation\BswM.c" 1765/55] unused variable "partitionIdx"
-ctc W537: ["..\BSW364\BswM\Implementation\BswM.c" 1906/55] unused variable "partitionIdx"
-ctc W537: ["..\BSW364\BswM\Implementation\BswM.c" 2125/55] unused variable "partitionIdx"
-ctc W537: ["..\BSW364\BswM\Implementation\BswM.c" 2189/55] unused variable "partitionIdx"
-ctc W537: ["..\BSW364\BswM\Implementation\BswM.c" 3034/55] unused variable "partitionIdx"
-ctc W537: ["..\BSW364\BswM\Implementation\BswM.c" 3130/55] unused variable "partitionIdx"
-ctc W537: ["..\BSW364\BswM\Implementation\BswM.c" 3203/55] unused variable "partitionIdx"
-ctc W537: ["..\BSW364\BswM\Implementation\BswM.c" 3375/55] unused variable "partitionIdx"
-ctc W537: ["..\BSW364\BswM\Implementation\BswM.c" 3451/55] unused variable "partitionIdx"
-ctc W537: ["..\BSW364\BswM\Implementation\BswM.c" 4321/55] unused variable "partitionIdx"
-ctc W549: ["..\BSW364\BswM\Implementation\BswM.c" 2302/77] condition is always true
-ctc W549: ["..\BSW364\BswM\Implementation\BswM.c" 2300/38] condition is always true
-0 errors, 14 warnings
+Compiling Appl_BootCompat.c
+Compiling Dcm_Callout_Stubs.c
 Linking to last364.elf
 Cleaning up compiler cache
 ltc W159: LSL: section ".rodata.Appl_BootCompat.Appl_BootHeader" (variable Appl_BootHeader) was not selected because it already has an absolute restriction
@@ -46,7 +18,7 @@ Patch APP header length/crc32
   crc32  = 0xedec0fc3
   out    = F:\workFiles\TC367\TC367\workspace\last364\Debug\last364.hex
 
-Time consumed: 29212 ms
+Time consumed: 25164 ms
 **** End of build ****
 
 Tool info: 
