@@ -63,6 +63,7 @@
 #include "SchM_Det.h"
 #include "SchM_Dio.h"
 #include "SchM_Dma.h"
+#include "SchM_Dsadc.h"
 #include "SchM_E2EXf.h"
 #include "SchM_EcuM.h"
 #include "SchM_Fee.h"

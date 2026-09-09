@@ -6,7 +6,7 @@
  *      → MotorCdd_AdcGroup0Notification / MotorCdd_AdcRunFastLoop（采样转物理量）
  *      → 本文件 MotorCdd_FocFastLoop
  *  FocFastLoop 每拍职责：
- *    1) 读取 TLE5012 最新角度（QSPI2 直读，同步 32bit 帧）
+ *    1) 读取角度：TLE5012（QSPI2）或 TLE5501 旋变（DSADC），由 MotorCdd_AngleSource 切换
  *    2) 转换为 13bit 电角度索引（v % 8192，0.044°/LSB，见 tle5012b.c）
  *    3) 按 MotorMode 选择角度源（开环/标定=强制角度；闭环=传感器角度）与电流参考
  *    4) 调用 MotorFoc_RunCurrentLoop（保护 → Clarke/Park/PI/SVPWM → ATOM0 CH1/2/3 占空比）
@@ -15,7 +15,8 @@
  *    MotorCdd_LatestAngle  : 最新一帧电角度（本拍读到、本拍电流环直接使用，无缓存滞后）
  *    MotorCdd_AngleFailStreak: 角度连续失败计数（≥10 拍才关输出，容忍单帧抖动）
  *    MotorCdd_FocContext   : 电流环上下文（角度/电流/dq 电压/PWM 输出）
- **********************************************************************************************************************/#include "MotorCdd_Foc.h"
+ **********************************************************************************************************************/
+#include "MotorCdd_Foc.h"
 #include "Rte_MotorCdd.h"
 #include "MotorMode.h"
 #include "MotorControll.h"
@@ -24,9 +25,11 @@
 #include "MotorFoc_OpenLoop.h"
 #include "TLE5012/Tle5012bd_Driver.h"
 #include "TLE9180/Tle9180_Driver.h"
+#include "DsadcRdc.h"
 #include "MotorFoc_CurrentLoop.h"
 #include "MotorFoc_SpeedLoop.h"
 #include "MotorFoc_SinCosTable.h"
+#include "UartTest.h"
 #include "Dio.h"
 typedef struct
 {
@@ -56,6 +59,7 @@ static volatile MotorCdd_LatestAngleType MotorCdd_LatestAngle;
 static uint16 MotorCdd_AngleSpiBootBlankLeft = MOTORCDD_FOC_ANGLE_SPI_BOOT_BLANK_LOOPS;
 volatile uint32 MotorCdd_AngleSpiFastLoopCount = 0U;
 static volatile uint16 MotorCdd_AngleFailStreak = 0U;
+volatile MotorCdd_AngleSourceType MotorCdd_AngleSource = MOTORCDD_ANGLE_SRC_TLE5012;
 
 
 void MotorCdd_FocInit(void)
@@ -110,6 +114,11 @@ void MotorCdd_FocUpdateLatestAngleFromSensor(void)
                                  Tle5012bd_Sensor.Angle / MOTORFOC_SINCOS_RAD_TO_IDX);
 }
 
+static void MotorCdd_FocUpdateLatestAngleFromResolver(uint16 angleRaw8192, float32 angleRad)
+{
+  MotorCdd_FocPublishLatestAngle((float32)angleRaw8192, angleRad);
+}
+
 static uint8 MotorCdd_FocAngleSpiAllowedInFastLoop(uint8 motorMode)
 {
   /* 擦除/保存标定会独占 QSPI2；开环也读 5012，便于和强制角对比。 */
@@ -122,12 +131,34 @@ static uint8 MotorCdd_FocAngleSpiAllowedInFastLoop(uint8 motorMode)
 }
 
 /*
- * QSPI2 SFR exchange (no MCAL SyncTransmit). Reads the latest TLE5012 frame;
- * the current loop consumes it in the same fast-loop beat.
+ * Update electrical angle from TLE5012 (QSPI2) or TLE5501 (DSADC).
+ * Exclusive: MotorCdd_AngleSource selects one source for FOC.
  */
-static void MotorCdd_FocServiceAngleSpi(void)
+static void MotorCdd_FocServiceAngleSensor(void)
 {
   uint8 motorMode = MotorCdd_CmdMirror.mode;
+
+  if (MotorCdd_AngleSource == MOTORCDD_ANGLE_SRC_RESOLVER)
+  {
+    uint16 resolverRaw = 0U;
+    float32 resolverRad = 0.0F;
+
+    DsadcRdc_MainFunction();
+    if (DsadcRdc_GetElectricalAngle(&resolverRaw, &resolverRad) == E_OK)
+    {
+      MotorCdd_AngleFailStreak = 0U;
+      MotorCdd_FocUpdateLatestAngleFromResolver(resolverRaw, resolverRad);
+      MotorCdd_AngleSpiFastLoopCount++;
+    }
+    else
+    {
+      if (MotorCdd_AngleFailStreak < 0xFFFFU)
+      {
+        MotorCdd_AngleFailStreak++;
+      }
+    }
+    return;
+  }
 
   if (MotorCdd_AngleSpiBootBlankLeft > 0U)
   {
@@ -154,7 +185,6 @@ static void MotorCdd_FocServiceAngleSpi(void)
     return;
   }
 
-//  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_HIGH);
   if (Tle5012bd_Driver_ReadAngle(&Tle5012bd_Sensor) == E_OK)
   {
     MotorCdd_AngleFailStreak = 0U;
@@ -168,7 +198,6 @@ static void MotorCdd_FocServiceAngleSpi(void)
       MotorCdd_AngleFailStreak++;
     }
   }
-//  Dio_WriteChannel(DioConf_DioChannel_DioChannel_test2, STD_LOW);
 }
 
 void MotorCdd_FocPrepareOutputEnable(void)
@@ -287,8 +316,8 @@ void MotorCdd_FocFastLoop(void)
   iqRef = MotorCdd_CmdMirror.iqRef;
 
 
-  /* Get the latest TLE5012 frame; the current loop uses it in this beat. */
-  MotorCdd_FocServiceAngleSpi();
+  /* Get the latest angle (TLE5012 or resolver); current loop uses it this beat. */
+  MotorCdd_FocServiceAngleSensor();
 
   switch (motorMode)
   {
@@ -334,10 +363,13 @@ void MotorCdd_FocFastLoop(void)
       break;
 
     case MOTOR_MODE_FOC_SPEED:
-    	break;
+      /* 1 ms speed loop sets idRef/iqRef in CmdMirror; run closed-loop FOC here. */
+      MotorCdd_RunFocCurrentControl(idRef, iqRef, 0U, 0.0F);
+      break;
+
     case MOTOR_MODE_FOC_CURRENT:
       /* Latest TLE5012 frame read above; run the current loop on it directly. */
-      MotorCdd_RunFocCurrentControl(0, iqRef, 0U, 0.0F);
+      MotorCdd_RunFocCurrentControl(idRef, iqRef, 0U, 0.0F);
       break;
 
     case MOTOR_MODE_STOP:
@@ -360,5 +392,6 @@ void MotorCdd_FocFastLoop(void)
       break;
   }
 
+  UartTest_CaptureFromFoc();
 }
 

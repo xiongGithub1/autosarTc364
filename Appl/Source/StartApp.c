@@ -49,6 +49,7 @@
 #include "Dio_Cfg.h"
 #include "Rte_EcuM_Type.h"
 #include "Appl_Printf.h"
+#include "UartTest.h"
 #include <stdio.h>
 uint32 StartApp_Cyclic1msCounter = 0U;
 uint32 StartApp_Cyclic250msCounter = 0U;
@@ -144,8 +145,8 @@ FUNC(void, StartApp_CODE) StartApp_Cyclic1ms(void) /* PRQA S 0624, 3206 */ /* MD
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
  * Symbol: StartApp_Cyclic1ms
  *********************************************************************************************************************/
-  Appl_Printf_MainFunction();
-//  UartTest_MainFunction();
+//  Appl_Printf_MainFunction();
+  UartTest_MainFunction();
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -216,8 +217,10 @@ FUNC(void, StartApp_CODE) StartApp_Init(void) /* PRQA S 0624, 3206 */ /* MD_Rte_
 
 	Rte_Call_ComM_UserRequest_RequestComMode(COMM_FULL_COMMUNICATION);
 
-  Appl_Printf_Init();
-  (void)printf("Appl ready\r\n");
+//  Appl_Printf_Init();
+
+//  (void)printf("Appl ready\r\n");
+	UartTest_Init();
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/

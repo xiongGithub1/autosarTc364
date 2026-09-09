@@ -83,7 +83,7 @@ derivative mpe
   {
     mau = 8;
     type = rom;
-    size = 1966080; /* 1920 KiB = 0x1E0000 (0x80020000..0x801FFFFF) */
+    size = 1966080; /* 2 MiB */
     map (dest=bus:local_bus, dest_offset = 0x80020000, size = 1966080);
   }
 }

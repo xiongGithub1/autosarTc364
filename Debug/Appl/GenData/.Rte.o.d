@@ -958,6 +958,14 @@ Appl\GenData\Rte.o :	..\Appl\GenData\Rte_MemMap.h
 ..\Appl\GenData\Rte_MemMap.h :
 Appl\GenData\Rte.o :	..\Appl\GenData\Rte_MemMap.h
 ..\Appl\GenData\Rte_MemMap.h :
+Appl\GenData\Rte.o :	..\Appl\GenData\SchM_Dsadc.h
+..\Appl\GenData\SchM_Dsadc.h :
+Appl\GenData\Rte.o :	..\Appl\GenData\SchM_Dsadc_Type.h
+..\Appl\GenData\SchM_Dsadc_Type.h :
+Appl\GenData\Rte.o :	..\Appl\GenData\Rte_MemMap.h
+..\Appl\GenData\Rte_MemMap.h :
+Appl\GenData\Rte.o :	..\Appl\GenData\Rte_MemMap.h
+..\Appl\GenData\Rte_MemMap.h :
 Appl\GenData\Rte.o :	..\Appl\GenData\SchM_E2EXf.h
 ..\Appl\GenData\SchM_E2EXf.h :
 Appl\GenData\Rte.o :	..\Appl\GenData\SchM_E2EXf_Type.h

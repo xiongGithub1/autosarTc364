@@ -51,6 +51,7 @@
 #include "Tle9180_Driver.h"
 #include "MotorCdd_Adc.h"
 #include "Tle5012bd_Driver.h"
+#include "DsadcRdc.h"
 #include "MotorCdd_Foc.h"
 #include "IfxGtm_reg.h"
 #include "MotorZeroCal.h"
@@ -226,6 +227,8 @@ FUNC(void, MotorCdd_CODE) MotorCdd_Init(void) /* PRQA S 0624, 3206 */ /* MD_Rte_
   /* 9180 first (QSPI3 Sync Init steps continue in MotorCDDMainFunction). */
   Tle9180_Driver_Init();
   Tle5012bd_Driver_Init();
+  /* BswM already called Dsadc_Init(). Start modulation + read on this core (Core1). */
+  DsadcRdc_Init();
   MotorCdd_PwmComplementaryInit();
   MotorCdd_AdcHwTriggerInit();
   MotorCdd_FocInit();
@@ -259,7 +262,18 @@ static void MotorCdd_PublishFeedback(void)
     (void)Rte_Write_Pp_MotorDcBusVoltage_Vbus(adcPhysical->vinv_V);
   }
 
-  angleRad = Tle5012bd_Driver_GetElectricalAngleRad();
+  if (MotorCdd_AngleSource == MOTORCDD_ANGLE_SRC_RESOLVER)
+  {
+    uint16 resolverRaw = 0U;
+    if (DsadcRdc_GetElectricalAngle(&resolverRaw, &angleRad) != E_OK)
+    {
+      angleRad = 0.0F;
+    }
+  }
+  else
+  {
+    angleRad = Tle5012bd_Driver_GetElectricalAngleRad();
+  }
   (void)Rte_Write_Pp_MotorElectricalAngle_ElectricAngle(angleRad);
 
   /* OV latch from 9180 status can be wired here when register read is available. */

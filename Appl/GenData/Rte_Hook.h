@@ -592,6 +592,10 @@
  *  SchM_EnterHook_Dma_InterruptStatus_Start
  *  SchM_EnterHook_Dma_MEErrorStatus_Return
  *  SchM_EnterHook_Dma_MEErrorStatus_Start
+ *  SchM_EnterHook_Dsadc_ChannelData_Return
+ *  SchM_EnterHook_Dsadc_ChannelData_Start
+ *  SchM_EnterHook_Dsadc_IntegratorRestart_Return
+ *  SchM_EnterHook_Dsadc_IntegratorRestart_Start
  *  SchM_EnterHook_EcuM_ECUM_EXCLUSIVE_AREA_0_Return
  *  SchM_EnterHook_EcuM_ECUM_EXCLUSIVE_AREA_0_Start
  *  SchM_EnterHook_EcuM_ECUM_EXCLUSIVE_AREA_1_Return
@@ -820,6 +824,10 @@
  *  SchM_ExitHook_Dma_InterruptStatus_Start
  *  SchM_ExitHook_Dma_MEErrorStatus_Return
  *  SchM_ExitHook_Dma_MEErrorStatus_Start
+ *  SchM_ExitHook_Dsadc_ChannelData_Return
+ *  SchM_ExitHook_Dsadc_ChannelData_Start
+ *  SchM_ExitHook_Dsadc_IntegratorRestart_Return
+ *  SchM_ExitHook_Dsadc_IntegratorRestart_Start
  *  SchM_ExitHook_EcuM_ECUM_EXCLUSIVE_AREA_0_Return
  *  SchM_ExitHook_EcuM_ECUM_EXCLUSIVE_AREA_0_Start
  *  SchM_ExitHook_EcuM_ECUM_EXCLUSIVE_AREA_1_Return

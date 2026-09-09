@@ -4,11 +4,17 @@
 #include "Std_Types.h"
 #include "MotorFoc_Types.h"
 
-
+typedef enum
+{
+  MOTORCDD_ANGLE_SRC_TLE5012 = 0U,
+  MOTORCDD_ANGLE_SRC_RESOLVER = 1U
+} MotorCdd_AngleSourceType;
 
 extern MotorFoc_ContextType MotorCdd_FocContext;
 extern volatile uint32 MotorCdd_FocLoopCounter;
 extern volatile uint32 MotorCdd_AngleSpiFastLoopCount;
+/* UDE: 0 = TLE5012, 1 = TLE5501 resolver (DSADC). Exclusive source for FOC. */
+extern volatile MotorCdd_AngleSourceType MotorCdd_AngleSource;
 
 void MotorCdd_FocInit(void);
 void MotorCdd_FocFastLoop(void);

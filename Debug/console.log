@@ -2,8 +2,7 @@
 **** Build of configuration Debug for project last364 ****
 
 "F:\\Program Files (x86)\\tasking\\ctc\\bin\\amk" -j8 all 
-Compiling Appl_BootCompat.c
-Compiling Dcm_Callout_Stubs.c
+Compiling UartTest.c
 Linking to last364.elf
 Cleaning up compiler cache
 ltc W159: LSL: section ".rodata.Appl_BootCompat.Appl_BootHeader" (variable Appl_BootHeader) was not selected because it already has an absolute restriction
@@ -13,12 +12,12 @@ Patch APP header length/crc32
 "F:/workFiles/TC367/TC367/workspace/last364/Tools/patch_app_header.bat" "F:/workFiles/TC367/TC367/workspace/last364/Debug/last364.hex"
 [patch_app_header] last364.hex
   magic  = 0xa5c3b007
-  entry  = 0x80067b60
-  length = 0x58580 (361856 bytes)
-  crc32  = 0xedec0fc3
+  entry  = 0x80068d60
+  length = 0x5a660 (370272 bytes)
+  crc32  = 0xb4666705
   out    = F:\workFiles\TC367\TC367\workspace\last364\Debug\last364.hex
 
-Time consumed: 25164 ms
+Time consumed: 42959 ms
 **** End of build ****
 
 Tool info: 

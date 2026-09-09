@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: BswM_Private_Cfg.h
- *   Generation Time: 2026-09-01 09:29:45
+ *   Generation Time: 2026-09-07 19:08:36
  *           Project: last364 - Version 1.0
  *          Delivery: CBD2200508_D00
  *      Tool Version: DaVinci Configurator Classic (beta) 5.25.37 SP2
@@ -69,6 +69,7 @@
 #include "Nm.h" 
 #include "Wdg_17_Scu.h" 
 #include "WdgM.h" 
+#include "Dsadc.h" 
 
 
 

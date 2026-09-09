@@ -352,6 +352,11 @@ static uint8 MotorControll_TryStartCalibration(void)
       MotorControll_IdRefOut = 0.0F;
       MotorControll_IqRefOut = 0.0F;
     }
+    else if (motorMode == MOTOR_MODE_FOC_SPEED)
+    {
+      MotorFoc_SpeedLoopInit(&MotorCdd_FocContext);
+      MotorCdd_FocClearFault();
+    }
     else
     {
       MotorControll_CalVdcStableMs = 0U;

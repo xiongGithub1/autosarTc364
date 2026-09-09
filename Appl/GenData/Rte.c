@@ -63,6 +63,7 @@
 #include "SchM_Det.h"
 #include "SchM_Dio.h"
 #include "SchM_Dma.h"
+#include "SchM_Dsadc.h"
 #include "SchM_E2EXf.h"
 #include "SchM_EcuM.h"
 #include "SchM_Fee.h"
@@ -587,6 +588,32 @@ FUNC(void, RTE_CODE) SchM_Exit_Dma_MEErrorStatus(void)
 {
   /* RteAnalyzer(ExclusiveArea, OS_INTERRUPT_BLOCKING) */
   ResumeOSInterrupts();
+}
+
+
+FUNC(void, RTE_CODE) SchM_Enter_Dsadc_ChannelData(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  SuspendAllInterrupts();
+}
+
+FUNC(void, RTE_CODE) SchM_Exit_Dsadc_ChannelData(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  ResumeAllInterrupts();
+}
+
+
+FUNC(void, RTE_CODE) SchM_Enter_Dsadc_IntegratorRestart(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  SuspendAllInterrupts();
+}
+
+FUNC(void, RTE_CODE) SchM_Exit_Dsadc_IntegratorRestart(void)
+{
+  /* RteAnalyzer(ExclusiveArea, ALL_INTERRUPT_BLOCKING) */
+  ResumeAllInterrupts();
 }
 
 

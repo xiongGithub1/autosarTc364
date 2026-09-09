@@ -1,10 +1,10 @@
 /**********************************************************************************************************************
  *  MotorZeroCal.c — TLE5012 零点标定（电角度 0 对齐）并持久化到 DFlash
  *  -------------------------------------------------------------------------------------------------------------------
- *  流程：MOTOR_MODE_CALIBRATION 触发
- *    ALIGN_RAMP(Id 斜坡到对齐电流) → ALIGN_HOLD(保持) → READ_ANGLE(读传感器)
- *    → 若电角度≈0 成功；否则写 MOD_3.ANG_BASE(ChangeAngleBasic) 重试（最多 10 次）
- *    → 成功后 RAM 生效 → NvM/Fee 写 DFlash（magic 0xA5A4 + ANG_BASE）
+ *  流程：MOTOR_MODE_CALIBRATION 触发（MotorCdd_AngleSource 选传感器）
+ *    TLE5012：读 Angle，写芯片 MOD_3.ANG_BASE
+ *    TAS2143：读 DsadcRdc_AngleRaw8192，写软件偏置 Tas2143.offset8192
+ *    成功后 NvM/Fee 写 DFlash（magic 0xA5A4=5012 / 0xA5B4=旋变 + 偏置）
  *  上电：Fee 空闲后 NvM_ReadBlock 恢复 ANG_BASE（MOTORZEROCAL_BOOT_NVM_READ=1）
  *  状态/阶段/故障原因均为 volatile，UDE 可观察（见 MotorZeroCal.h）。
  **********************************************************************************************************************/#include "MotorZeroCal.h"
@@ -12,6 +12,8 @@
 #include "MotorControll.h"
 #include "MotorFoc_CurrentLoop.h"
 #include "MotorCdd_Adc.h"
+#include "MotorCdd_Foc.h"
+#include "DsadcRdc.h"
 #include "CDD/TLE5012/Tle5012bd_Driver.h"
 #include "CDD/TLE5012/TLE5012/tle5012b.h"
 #include "CDD/TLE9180/Tle9180_Driver.h"
@@ -57,8 +59,6 @@ static uint32 MotorZeroCal_NvBootWaitMs = 0UL;
 static uint32 MotorZeroCal_NvSaveWaitMs = 0UL;
 volatile uint8 MotorZeroCal_SpiBusy = 0U;
 
-extern volatile MotorMode_Type MotorControll_MotorModeCmd;
-
 volatile MotorZeroCal_StateType MotorZeroCal_State = MOTORZEROCAL_STATE_IDLE;
 volatile MotorZeroCal_StageType MotorZeroCal_Stage = MOTORZEROCAL_STAGE_IDLE;
 volatile uint8 MotorZeroCal_Calibrated = 0U;
@@ -68,7 +68,7 @@ volatile uint32 MotorZeroCal_TimerMs = 0U;
 volatile uint32 MotorZeroCal_ElapsedMs = 0UL;
 volatile uint8 MotorZeroCal_RetryCount = 0U;
 volatile float32 MotorZeroCal_IdRefA = 0.0F;
-volatile float32 MotorZeroCal_IdRefTargetA = 3.0f;
+volatile float32 MotorZeroCal_IdRefTargetA = 10.0f;
 volatile float32 MotorZeroCal_IdRefRampStepA = MOTORZEROCAL_ID_RAMP_STEP_A;
 volatile uint8 MotorZeroCal_StartRejectReason = MOTORZEROCAL_START_REJECT_NONE;
 volatile uint8 MotorZeroCal_FaultReason = MOTORZEROCAL_FAULT_NONE;
@@ -81,6 +81,29 @@ volatile uint8 MotorZeroCal_NvSaveRequest = 0U;
 static uint8 MotorZeroCal_AngBasePendingApply = 0U;
 static uint16 MotorZeroCal_PendingAngBase = 0U;
 static uint32 MotorZeroCal_AngBaseApplyDelayMs = 0UL;
+
+static uint8 MotorZeroCal_UseResolver(void)
+{
+  return (MotorCdd_AngleSource == MOTORCDD_ANGLE_SRC_RESOLVER) ? 1U : 0U;
+}
+
+static float32 MotorZeroCal_ReadElectricalAngle(void)
+{
+  if (MotorZeroCal_UseResolver() != 0U)
+  {
+    return (float32)Tas2143.angleRaw8192;
+  }
+  return Tle5012bd_Sensor.Angle;
+}
+
+static void MotorZeroCal_ApplyResolverOffset(void)
+{
+  uint16 add;
+
+  /* AngleRaw already includes Offset8192. Shift origin so displayed electrical = 0. */
+  add = (uint16)((8192U - (uint32)Tas2143.angleRaw8192) & 8191U);
+  Tas2143.offset8192 = (uint16)(((uint32)Tas2143.offset8192 + add) & 8191U);
+}
 
 static void MotorZeroCal_SetCalibratedFlag(uint8 value)
 {
@@ -170,7 +193,16 @@ static void MotorZeroCal_LoadFromStorage(void)
     MotorZeroCal_DflashValid = 1U;
     MotorZeroCal_NvDirty = 0U;
     MotorZeroCal_AngBase = MotorZeroCal_Storage.angBase;
+    Tas2143.offset8192 = 0U;
     MotorZeroCal_QueueAngBaseApply(MotorZeroCal_AngBase);
+  }
+  else if (MotorZeroCal_Storage.magic == MOTORZEROCAL_STORAGE_MAGIC_RDC)
+  {
+    MotorZeroCal_SetCalibratedFlag(1U);
+    MotorZeroCal_DflashValid = 1U;
+    MotorZeroCal_NvDirty = 0U;
+    MotorZeroCal_AngBase = MotorZeroCal_Storage.angBase;
+    Tas2143.offset8192 = MotorZeroCal_AngBase;
   }
   else
   {
@@ -179,6 +211,7 @@ static void MotorZeroCal_LoadFromStorage(void)
     MotorZeroCal_NvDirty = 0U;
     MotorZeroCal_AngBase = 0U;
     Tle5012bd_Sensor.ANG_BASE = 0U;
+    Tas2143.offset8192 = 0U;
 #if (MOTORZEROCAL_SPI_ENABLE == 1U)
     tle5012b_read_all();
 #endif
@@ -189,8 +222,18 @@ static void MotorZeroCal_LoadFromStorage(void)
 
 static void MotorZeroCal_SaveToStorage(void)
 {
-  MotorZeroCal_Storage.magic = (MotorZeroCal_DflashValid != 0U) ?
-      MOTORZEROCAL_STORAGE_MAGIC : 0U;
+  if (MotorZeroCal_DflashValid == 0U)
+  {
+    MotorZeroCal_Storage.magic = 0U;
+  }
+  else if (MotorZeroCal_UseResolver() != 0U)
+  {
+    MotorZeroCal_Storage.magic = MOTORZEROCAL_STORAGE_MAGIC_RDC;
+  }
+  else
+  {
+    MotorZeroCal_Storage.magic = MOTORZEROCAL_STORAGE_MAGIC;
+  }
   MotorZeroCal_Storage.angBase = MotorZeroCal_AngBase;
   MotorZeroCal_NvDirty = 1U;
 }
@@ -520,7 +563,14 @@ static void MotorZeroCal_ChangeAngleBasicFromAval(void)
 static void MotorZeroCal_OnAlignSuccess(void)
 {
   /* Align OK: RAM first, then queue DFlash write (NvM_WriteBlock in Core1 1 ms). */
-  MotorZeroCal_AngBase = Tle5012bd_Sensor.ANG_BASE;
+  if (MotorZeroCal_UseResolver() != 0U)
+  {
+    MotorZeroCal_AngBase = Tas2143.offset8192;
+  }
+  else
+  {
+    MotorZeroCal_AngBase = Tle5012bd_Sensor.ANG_BASE;
+  }
   MotorZeroCal_SetCalibratedFlag(1U);
   MotorZeroCal_DflashValid = 1U;
   MotorZeroCal_Stage = MOTORZEROCAL_STAGE_SAVE_DFLASH;
@@ -581,9 +631,7 @@ static void MotorZeroCal_RunCalibrationStep(void)
   }
 
   MotorZeroCal_Stage = MOTORZEROCAL_STAGE_READ_ANGLE;
-  /* 角度由 10 kHz 快速环每拍读取（MotorCdd_FocServiceAngleSpi），
-     这里直接用 RAM 镜像，不在 1ms 任务发 SPI。 */
-  angle = Tle5012bd_Sensor.Angle;
+  angle = MotorZeroCal_ReadElectricalAngle();
 
   if (MotorZeroCal_IsEncoderAtZero(angle) != 0U)
   {
@@ -592,8 +640,14 @@ static void MotorZeroCal_RunCalibrationStep(void)
   }
 
   MotorZeroCal_Stage = MOTORZEROCAL_STAGE_APPLY_OFFSET;
-  /* The rotor is aligned, but the encoder origin is not: update MOD_3.ANG_BASE. */
-  MotorZeroCal_ChangeAngleBasicFromAval();
+  if (MotorZeroCal_UseResolver() != 0U)
+  {
+    MotorZeroCal_ApplyResolverOffset();
+  }
+  else
+  {
+    MotorZeroCal_ChangeAngleBasicFromAval();
+  }
   MotorZeroCal_RetryCount++;
 
   if (MotorZeroCal_RetryCount >= MOTORZEROCAL_MAX_RETRY)
@@ -604,7 +658,7 @@ static void MotorZeroCal_RunCalibrationStep(void)
     return;
   }
 
-  /* Let TLE5012 apply the new ANG_BASE before verifying it. */
+  /* Settle after offset (TLE5012 ANG_BASE or resolver Offset8192) then re-read. */
   MotorZeroCal_TimerMs = 0U;
 }
 
@@ -726,6 +780,7 @@ void MotorZeroCal_Erase(void)
   MotorZeroCal_AngBase = 0U;
   MotorZeroCal_IdRefA = 0.0F;
   Tle5012bd_Sensor.ANG_BASE = 0U;
+  Tas2143.offset8192 = 0U;
   MotorZeroCal_State = MOTORZEROCAL_STATE_IDLE;
   MotorZeroCal_TimerMs = 0U;
   MotorZeroCal_ElapsedMs = 0UL;

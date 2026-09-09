@@ -434,6 +434,8 @@ Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\GenDat
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\GenData\Components\Rte_EcuM_Type.h" :
 Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\Include\Appl_Printf.h"
 "F:\workFiles\TC367\TC367\workspace\last364\Appl\Include\Appl_Printf.h" :
+Appl\Source\StartApp.o :	"F:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\UartTest.h"
+"F:\workFiles\TC367\TC367\workspace\last364\Appl\Source\CDD\UartTest.h" :
 Appl\Source\StartApp.o :	"F:\Program Files (x86)\tasking\ctc\include\stdio.h"
 "F:\Program Files (x86)\tasking\ctc\include\stdio.h" :
 Appl\Source\StartApp.o :	"F:\Program Files (x86)\tasking\ctc\include\stdarg.h"

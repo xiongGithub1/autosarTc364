@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ActiveEcuC</SHORT-NAME>
+      <ELEMENTS>
+        <ECUC-MODULE-CONFIGURATION-VALUES UUID="a21f1b4b-d5bc-49d3-a84b-49a04221e153">
+          <SHORT-NAME>Dsadc</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="DV:CfgPostBuild">
+                <SD GID="DV:postBuildVariantSupport">false</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <DEFINITION-REF DEST="ECUC-MODULE-DEF">/AURIX2G/EcucDefs/Dsadc</DEFINITION-REF>
+          <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-POST-BUILD-LOADABLE</IMPLEMENTATION-CONFIG-VARIANT>
+          <MODULE-DESCRIPTION-REF DEST="BSW-IMPLEMENTATION">/AURIX2G/EcucDefs/Dsadc_Impl</MODULE-DESCRIPTION-REF>
+          <CONTAINERS>
+            <ECUC-CONTAINER-VALUE UUID="b974ad75-37c3-40f3-9b8c-00ba558548d8">
+              <SHORT-NAME>DsadcGeneral</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcGeneral</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcGeneral/DsadcDevErrorDetect</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcGeneral/DsadcSafetyEnable</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcGeneral/DsadcDeInitApi</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcGeneral/DsadcInitCheckApi</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcGeneral/DsadcVersionInfoApi</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcGeneral/DsadcInitDeInitApiMode</DEFINITION-REF>
+                  <VALUE>DSADC_MCAL_SUPERVISOR</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcGeneral/DsadcRuntimeApiMode</DEFINITION-REF>
+                  <VALUE>DSADC_MCAL_SUPERVISOR</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcGeneral/DsadcRestartIntegratorApi</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="3588a47e-7621-4751-8275-6658b6a53402">
+              <SHORT-NAME>CommonPublishedInformation</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/CommonPublishedInformation</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/CommonPublishedInformation/ArMajorVersion</DEFINITION-REF>
+                  <VALUE>4</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/CommonPublishedInformation/ArMinorVersion</DEFINITION-REF>
+                  <VALUE>2</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/CommonPublishedInformation/ArPatchVersion</DEFINITION-REF>
+                  <VALUE>2</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/CommonPublishedInformation/SwMajorVersion</DEFINITION-REF>
+                  <VALUE>20</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/CommonPublishedInformation/SwMinorVersion</DEFINITION-REF>
+                  <VALUE>10</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/CommonPublishedInformation/SwPatchVersion</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/CommonPublishedInformation/ModuleId</DEFINITION-REF>
+                  <VALUE>255</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/CommonPublishedInformation/VendorId</DEFINITION-REF>
+                  <VALUE>17</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/CommonPublishedInformation/Release</DEFINITION-REF>
+                  <VALUE>_TRICORE_TC364_TQFP</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="d6b9b709-462e-4146-8fdf-831a7acef0fd">
+              <SHORT-NAME>DsadcConfigSet</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="e36958e7-a1a5-4fef-b4e4-27168f77db78">
+                  <SHORT-NAME>DsadcGlobalConfiguration</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcGlobalConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcGlobalConfiguration/DsadcDitheringTrimValue</DEFINITION-REF>
+                      <VALUE>DSADC_DITHERING_MIN_50_MILVLT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcGlobalConfiguration/DsadcSleepMode</DEFINITION-REF>
+                      <VALUE>SLEEP_ENABLE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcGlobalConfiguration/DsadcSupplyVoltageLevel</DEFINITION-REF>
+                      <VALUE>VOLTAGESUPPLY_5V</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcGlobalConfiguration/DsadcSyncClockGen</DEFINITION-REF>
+                      <VALUE>UNSYNCHRONIZED_MODE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="38eaf8c7-4539-45db-94a2-36781ea486d9">
+                  <SHORT-NAME>DsadcCarrierGeneratorConfiguration</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcCarrierGeneratorConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcCarrierGeneratorConfiguration/DsadcPwmGenerationMode</DEFINITION-REF>
+                      <VALUE>DSADC_NORMAL_MODE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcCarrierGeneratorConfiguration/DsadcCarrierFrequencyClockDiv</DEFINITION-REF>
+                      <VALUE>DSADC_CG_CLOCKDIVIDER_DIV2</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcCarrierGeneratorConfiguration/DsadcCarrierSignalPolarity</DEFINITION-REF>
+                      <VALUE>DSADC_CARR_SIG_NORMAL</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcCarrierGeneratorConfiguration/DsadcCarrierSignalType</DEFINITION-REF>
+                      <VALUE>DSADC_CARR_SIG_STOPPED</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="b03e80da-c4d3-47c1-87e7-894822042c22">
+                  <SHORT-NAME>DsadcChannel_TLE5501_COSP</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcChannelId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcHwChannelNum</DEFINITION-REF>
+                      <VALUE>DSADC_CHANNEL_0</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcAccessMode</DEFINITION-REF>
+                      <VALUE>DSADC_SINGLE_READ</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcTriggerMode</DEFINITION-REF>
+                      <VALUE>DSADC_TRIGGER_MODE_NORMAL</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcTimestampFeature</DEFINITION-REF>
+                      <VALUE>DSADC_TIMESTAMP_DISABLED</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcGateActiveLevel</DEFINITION-REF>
+                      <VALUE>DSADC_GATE_LOW_LEVEL</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcBufferFullNotification</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcNewResultNotification</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcWindowCloseNotification</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="b4a9b48b-3933-4968-9d70-ddcf904421ce">
+                      <SHORT-NAME>DsadcModulatorConfiguration</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcModulatorConfiguration</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcModulatorConfiguration/DsadcAnalogClockSyncDelay</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcModulatorConfiguration/DsadcClockDivider</DEFINITION-REF>
+                          <VALUE>DSADC_CLOCKDIVIDER_DIV4</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcModulatorConfiguration/DsadcDitheringEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcModulatorConfiguration/DsadcInputGain</DEFINITION-REF>
+                          <VALUE>DSADC_INPUT_GAIN_FACTOR_1</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcModulatorConfiguration/DsadcInputMuxActionMode</DEFINITION-REF>
+                          <VALUE>DSADC_INPUTMUX_PRESET_MODE</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcModulatorConfiguration/DsadcInputMuxControlMode</DEFINITION-REF>
+                          <VALUE>DSADC_INMUX_SOFTWARE_CONTROL</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcModulatorConfiguration/DsadcInputPinSelection</DEFINITION-REF>
+                          <VALUE>INPUT_PIN_0_AN2_AN3</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcModulatorConfiguration/DsadcIntegratorResetEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcModulatorConfiguration/DsadcNegativeInputLine</DEFINITION-REF>
+                          <VALUE>DSADC_NEG_INPUT_PIN</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcModulatorConfiguration/DsadcPositiveInputLine</DEFINITION-REF>
+                          <VALUE>DSADC_POS_INPUT_PIN</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="713a17fc-06e3-42cf-a603-1b5ac8d81d42">
+                      <SHORT-NAME>DsadcDemodulatorConfiguration</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcDemodulatorConfiguration</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcDemodulatorConfiguration/DsadcIntegratorTriggerMode</DEFINITION-REF>
+                          <VALUE>DSADC_INTR_BYPASSED</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcDemodulatorConfiguration/DsadcResultDisplayMode</DEFINITION-REF>
+                          <VALUE>DSADC_RES_SIGNED_MODE</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcDemodulatorConfiguration/DsadcTriggerSelect</DEFINITION-REF>
+                          <VALUE>TRIGGER_0_NO_DSADC_TRIG</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="3fbe15b6-50cb-4d9e-8e99-82fa4435529a">
+                      <SHORT-NAME>DsadcCommonModeVoltConfig</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcCommonModeVoltConfig</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcCommonModeVoltConfig/DsadcCommonModeVoltageEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcCommonModeVoltConfig/DsadcCommonModeVoltageSelect</DEFINITION-REF>
+                          <VALUE>DSADC_VCM_VREFX_2</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcCommonModeVoltConfig/DsadcComModeVoltPosAEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcCommonModeVoltConfig/DsadcComModeVoltPosBEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcCommonModeVoltConfig/DsadcComModeVoltPosCEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcCommonModeVoltConfig/DsadcComModeVoltPosDEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcCommonModeVoltConfig/DsadcComModeVoltNegAEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcCommonModeVoltConfig/DsadcComModeVoltNegBEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcCommonModeVoltConfig/DsadcComModeVoltNegCEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcCommonModeVoltConfig/DsadcComModeVoltNegDEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="6bfb71fa-1401-4141-82ce-d1c5578fdfad">
+                      <SHORT-NAME>DsadcFilterConfiguration</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcFIR0FilterEnable</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcFIR1FilterEnable</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcFIR1FilterDecimationEnable</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcPreFilterEnable</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcOvershootCompensationEn</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcCICFilterDecimationFactor</DEFINITION-REF>
+                          <VALUE>32</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcCICFilterStartValue</DEFINITION-REF>
+                          <VALUE>32</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcAlternateServiceReq</DEFINITION-REF>
+                          <VALUE>DSADC_ALT_SERVICE_DISABLE</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcOffsetCompFilterEnable</DEFINITION-REF>
+                          <VALUE>DSADC_OFFCOMP_FILTER_DISABLE</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcOffsetCompValueProtect</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcOffsetCompValue</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="f07bad6f-5587-4043-bf2e-f3f1cf05dad7">
+                          <SHORT-NAME>DsadcAuxFilterConfig</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcAuxFilterConfig</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcAuxFilterConfig/DsadcAuxCicFilterEnable</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcAuxFilterConfig/DsadcAuxFilterCicDecimationFactor</DEFINITION-REF>
+                              <VALUE>DSADC_AUXCIC_OSR_16</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE UUID="cce5051b-ea3b-4182-8098-a5b316432f4a">
+                          <SHORT-NAME>DsadcGainCalibConfig</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcGainCalibConfig</DEFINITION-REF>
+                          <SUB-CONTAINERS>
+                            <ECUC-CONTAINER-VALUE UUID="d473c2af-fbfa-4185-babe-d2eb8bb5fc6b">
+                              <SHORT-NAME>DsadcGainCorrConfig</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcGainCalibConfig/DsadcGainCorrConfig</DEFINITION-REF>
+                              <PARAMETER-VALUES>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcGainCalibConfig/DsadcGainCorrConfig/DsadcCICFilterOutputShiftPos</DEFINITION-REF>
+                                  <VALUE>BITS_15_TO_31</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcGainCalibConfig/DsadcGainCorrConfig/DsadcGainCorrMulFactor</DEFINITION-REF>
+                                  <VALUE>1.0983</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                              </PARAMETER-VALUES>
+                            </ECUC-CONTAINER-VALUE>
+                            <ECUC-CONTAINER-VALUE UUID="9f93ebe9-2479-473c-954c-5a6f74f8acf3">
+                              <SHORT-NAME>DsadcCalibAlgoConfig</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcGainCalibConfig/DsadcCalibAlgoConfig</DEFINITION-REF>
+                              <PARAMETER-VALUES>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcGainCalibConfig/DsadcCalibAlgoConfig/DsadcCalibCICFilterOutputShiftPos</DEFINITION-REF>
+                                  <VALUE>BITS_27_TO_43</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcGainCalibConfig/DsadcCalibAlgoConfig/DsadcCalibGainCorrMulFactor</DEFINITION-REF>
+                                  <VALUE>1.406</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcGainCalibConfig/DsadcCalibAlgoConfig/DsadcCICDecimationRate</DEFINITION-REF>
+                                  <VALUE>DSADC_CIC_DECIMATION_RATE_512</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcGainCalibConfig/DsadcCalibAlgoConfig/DsadcGainCalibMulFactor</DEFINITION-REF>
+                                  <VALUE>1</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcGainCalibConfig/DsadcCalibAlgoConfig/DsadcCalibAlgoTargetValue</DEFINITION-REF>
+                                  <VALUE>25000</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                              </PARAMETER-VALUES>
+                            </ECUC-CONTAINER-VALUE>
+                          </SUB-CONTAINERS>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE UUID="b553aa6b-7802-4e6a-a7d8-b834bff8a28d">
+                          <SHORT-NAME>DsadcComparatorConfiguration</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcComparatorConfiguration</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcComparatorConfiguration/DsadcComparatorEventSelect</DEFINITION-REF>
+                              <VALUE>DSADC_RESULT_ALWAYS</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcComparatorConfiguration/DsadcLowerBoundaryValue</DEFINITION-REF>
+                              <VALUE>-25000</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcComparatorConfiguration/DsadcUpperBoundaryValue</DEFINITION-REF>
+                              <VALUE>25000</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="3ad65ef8-79ac-4e39-9d84-7c3b6ff4c157">
+                  <SHORT-NAME>DsadcChannel_TLE5501_SIN</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcChannelId</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcHwChannelNum</DEFINITION-REF>
+                      <VALUE>DSADC_CHANNEL_1</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcAccessMode</DEFINITION-REF>
+                      <VALUE>DSADC_SINGLE_READ</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcTriggerMode</DEFINITION-REF>
+                      <VALUE>DSADC_TRIGGER_MODE_NORMAL</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcTimestampFeature</DEFINITION-REF>
+                      <VALUE>DSADC_TIMESTAMP_DISABLED</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcGateActiveLevel</DEFINITION-REF>
+                      <VALUE>DSADC_GATE_LOW_LEVEL</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcBufferFullNotification</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcNewResultNotification</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcWindowCloseNotification</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="ab81e92d-d307-4c78-a158-cb61b6c4fe46">
+                      <SHORT-NAME>DsadcModulatorConfiguration</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcModulatorConfiguration</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcModulatorConfiguration/DsadcAnalogClockSyncDelay</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcModulatorConfiguration/DsadcClockDivider</DEFINITION-REF>
+                          <VALUE>DSADC_CLOCKDIVIDER_DIV4</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcModulatorConfiguration/DsadcDitheringEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcModulatorConfiguration/DsadcInputGain</DEFINITION-REF>
+                          <VALUE>DSADC_INPUT_GAIN_FACTOR_1</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcModulatorConfiguration/DsadcInputMuxActionMode</DEFINITION-REF>
+                          <VALUE>DSADC_INPUTMUX_PRESET_MODE</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcModulatorConfiguration/DsadcInputMuxControlMode</DEFINITION-REF>
+                          <VALUE>DSADC_INMUX_SOFTWARE_CONTROL</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcModulatorConfiguration/DsadcInputPinSelection</DEFINITION-REF>
+                          <VALUE>INPUT_PIN_0_AN36_AN37</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcModulatorConfiguration/DsadcIntegratorResetEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcModulatorConfiguration/DsadcNegativeInputLine</DEFINITION-REF>
+                          <VALUE>DSADC_NEG_INPUT_PIN</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcModulatorConfiguration/DsadcPositiveInputLine</DEFINITION-REF>
+                          <VALUE>DSADC_POS_INPUT_PIN</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="5b871035-f20d-478a-bbc9-cc7d0b5103dd">
+                      <SHORT-NAME>DsadcDemodulatorConfiguration</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcDemodulatorConfiguration</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcDemodulatorConfiguration/DsadcIntegratorTriggerMode</DEFINITION-REF>
+                          <VALUE>DSADC_INTR_BYPASSED</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcDemodulatorConfiguration/DsadcResultDisplayMode</DEFINITION-REF>
+                          <VALUE>DSADC_RES_SIGNED_MODE</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcDemodulatorConfiguration/DsadcTriggerSelect</DEFINITION-REF>
+                          <VALUE>TRIGGER_0_NO_DSADC_TRIG</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="ec8afee7-fcc1-4ea0-a655-e6b6db756ffc">
+                      <SHORT-NAME>DsadcCommonModeVoltConfig</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcCommonModeVoltConfig</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcCommonModeVoltConfig/DsadcCommonModeVoltageEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcCommonModeVoltConfig/DsadcCommonModeVoltageSelect</DEFINITION-REF>
+                          <VALUE>DSADC_VCM_VREFX_2</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcCommonModeVoltConfig/DsadcComModeVoltPosAEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcCommonModeVoltConfig/DsadcComModeVoltPosBEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcCommonModeVoltConfig/DsadcComModeVoltPosCEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcCommonModeVoltConfig/DsadcComModeVoltPosDEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcCommonModeVoltConfig/DsadcComModeVoltNegAEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcCommonModeVoltConfig/DsadcComModeVoltNegBEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcCommonModeVoltConfig/DsadcComModeVoltNegCEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcCommonModeVoltConfig/DsadcComModeVoltNegDEnable</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="3c417f18-c386-4c2f-9395-5dd3d144c021">
+                      <SHORT-NAME>DsadcFilterConfiguration</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcFIR0FilterEnable</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcFIR1FilterEnable</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcFIR1FilterDecimationEnable</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcPreFilterEnable</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcOvershootCompensationEn</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcCICFilterDecimationFactor</DEFINITION-REF>
+                          <VALUE>32</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcCICFilterStartValue</DEFINITION-REF>
+                          <VALUE>32</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcAlternateServiceReq</DEFINITION-REF>
+                          <VALUE>DSADC_ALT_SERVICE_DISABLE</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcOffsetCompFilterEnable</DEFINITION-REF>
+                          <VALUE>DSADC_OFFCOMP_FILTER_DISABLE</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcOffsetCompValueProtect</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcOffsetCompValue</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="1c2ea0a0-30d6-4a1f-a160-5953e213c7a0">
+                          <SHORT-NAME>DsadcAuxFilterConfig</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcAuxFilterConfig</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcAuxFilterConfig/DsadcAuxCicFilterEnable</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcAuxFilterConfig/DsadcAuxFilterCicDecimationFactor</DEFINITION-REF>
+                              <VALUE>DSADC_AUXCIC_OSR_16</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE UUID="042a9817-e000-4ce4-91af-038f546ffd25">
+                          <SHORT-NAME>DsadcGainCalibConfig</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcGainCalibConfig</DEFINITION-REF>
+                          <SUB-CONTAINERS>
+                            <ECUC-CONTAINER-VALUE UUID="30ca2d11-eab1-4aab-8bad-4cebdcbb53cc">
+                              <SHORT-NAME>DsadcGainCorrConfig</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcGainCalibConfig/DsadcGainCorrConfig</DEFINITION-REF>
+                              <PARAMETER-VALUES>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcGainCalibConfig/DsadcGainCorrConfig/DsadcCICFilterOutputShiftPos</DEFINITION-REF>
+                                  <VALUE>BITS_15_TO_31</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcGainCalibConfig/DsadcGainCorrConfig/DsadcGainCorrMulFactor</DEFINITION-REF>
+                                  <VALUE>1.0983</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                              </PARAMETER-VALUES>
+                            </ECUC-CONTAINER-VALUE>
+                            <ECUC-CONTAINER-VALUE UUID="4c5e3a3d-bdff-4568-a883-921a6a44d648">
+                              <SHORT-NAME>DsadcCalibAlgoConfig</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcGainCalibConfig/DsadcCalibAlgoConfig</DEFINITION-REF>
+                              <PARAMETER-VALUES>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcGainCalibConfig/DsadcCalibAlgoConfig/DsadcCalibCICFilterOutputShiftPos</DEFINITION-REF>
+                                  <VALUE>BITS_27_TO_43</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcGainCalibConfig/DsadcCalibAlgoConfig/DsadcCalibGainCorrMulFactor</DEFINITION-REF>
+                                  <VALUE>1.406</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcGainCalibConfig/DsadcCalibAlgoConfig/DsadcCICDecimationRate</DEFINITION-REF>
+                                  <VALUE>DSADC_CIC_DECIMATION_RATE_512</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcGainCalibConfig/DsadcCalibAlgoConfig/DsadcGainCalibMulFactor</DEFINITION-REF>
+                                  <VALUE>1</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcGainCalibConfig/DsadcCalibAlgoConfig/DsadcCalibAlgoTargetValue</DEFINITION-REF>
+                                  <VALUE>25000</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                              </PARAMETER-VALUES>
+                            </ECUC-CONTAINER-VALUE>
+                          </SUB-CONTAINERS>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE UUID="2334d3fe-6fc6-4a8d-a731-488ff62605a1">
+                          <SHORT-NAME>DsadcComparatorConfiguration</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcComparatorConfiguration</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcComparatorConfiguration/DsadcComparatorEventSelect</DEFINITION-REF>
+                              <VALUE>DSADC_RESULT_ALWAYS</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcComparatorConfiguration/DsadcLowerBoundaryValue</DEFINITION-REF>
+                              <VALUE>-25000</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AURIX2G/EcucDefs/Dsadc/DsadcConfigSet/DsadcChannelConfiguration/DsadcFilterConfiguration/DsadcComparatorConfiguration/DsadcUpperBoundaryValue</DEFINITION-REF>
+                              <VALUE>25000</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+          </CONTAINERS>
+        </ECUC-MODULE-CONFIGURATION-VALUES>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

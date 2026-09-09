@@ -21,6 +21,7 @@
  *********************************************************************************************************************/
 #include "UartTest.h"
 #include "Uart.h"
+#include "DsadcRdc.h"
 #include "MotorCdd_Foc.h"
 #include "Tle5012bd_Driver.h"
 
@@ -67,12 +68,19 @@ static void UartTest_FillSnap(float32 *const dst)
   dst[0] = ctx->i_motor.u;
   dst[1] = ctx->i_motor.v;
   dst[2] = ctx->i_motor.w;
-  dst[3] = (float32)ctx->Tpwm.pwm_OutU;
-  dst[4] = (float32)ctx->Tpwm.pwm_OutV;
+  dst[3] = (float32)ctx->speedControl.refSpeedRPM;
+  dst[4] = (float32)ctx->speedControl.measSpeedRPM;
   dst[5] = (float32)ctx->Tpwm.pwm_OutW;
   /* Same 8192-count electrical scale for overlay on VOFA. */
   dst[6] = ctx->angle.angleRaw;
-  dst[7] = Tle5012bd_Sensor.Angle;
+  if (MotorCdd_AngleSource == MOTORCDD_ANGLE_SRC_RESOLVER)
+  {
+    dst[7] = (float32)Tas2143.angleRaw8192;
+  }
+  else
+  {
+    dst[7] = Tle5012bd_Sensor.Angle;
+  }
 //  dst[6]=ctx->idqRef.imag;
 //  dst[7]=ctx->idqMeas.imag;
 }

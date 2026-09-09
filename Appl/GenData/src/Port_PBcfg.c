@@ -14,7 +14,7 @@
 **                                                                            **
 **  VERSION   : 14.0.0                                                        **
 **                                                                            **
-**  DATE, TIME: 2024-09-03, 08:47:40          !!!IGNORE-LINE!!!               **
+**  DATE, TIME: 2026-09-08, 09:00:03          !!!IGNORE-LINE!!!               **
 **                                                                            **
 **  GENERATOR : Build b191017-0938            !!!IGNORE-LINE!!!               **
 **                                                                            **
@@ -1784,11 +1784,11 @@ static const Port_n_ConfigType Port_kConfiguration[] =
     /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
     control bit field for each port pin located  as register bytes. Hence
     typecasting is done for each port pin to uint8*/
-    ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 6*/
+    ((uint8)PORT_PIN_IN | PORT_PIN_IN_NO_PULL | PORT_PIN_MODE_GPIO),/*Pin 6*/
     /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
     control bit field for each port pin located  as register bytes. Hence
     typecasting is done for each port pin to uint8*/
-    ((uint8)PORT_PIN_IN | PORT_PIN_IN_PULL_UP | PORT_PIN_MODE_GPIO),/*Pin 7*/
+    ((uint8)PORT_PIN_IN | PORT_PIN_IN_NO_PULL | PORT_PIN_MODE_GPIO),/*Pin 7*/
     /* MISRA2012_RULE_10_3_JUSTIFICATION: The port IOCR registers has the
     control bit field for each port pin located  as register bytes. Hence
     typecasting is done for each port pin to uint8*/
@@ -1899,8 +1899,8 @@ static const uint32 Port_DiscSet[] =
     PORT_PIN_ANALOG_INPUT_DISABLE,/* Pin 3 */
     PORT_PIN_ANALOG_INPUT_DISABLE,/* Pin 4 */
     PORT_PIN_ANALOG_INPUT_DISABLE,/* Pin 5 */
-    PORT_PIN_ANALOG_INPUT_DISABLE,/* Pin 6 */
-    PORT_PIN_ANALOG_INPUT_DISABLE,/* Pin 7 */
+    PORT_PIN_ANALOG_INPUT_ENABLE,/* Pin 6 */
+    PORT_PIN_ANALOG_INPUT_ENABLE,/* Pin 7 */
     PORT_PIN_ANALOG_INPUT_DISABLE,/* Pin 8 */
     PORT_PIN_ANALOG_INPUT_DISABLE,/* Pin 9 */
     PORT_PIN_ANALOG_INPUT_DISABLE,/* Pin 10 */
